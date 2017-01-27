@@ -1,6 +1,6 @@
 ---
 description: Learn how the Pointer Lock API can access raw mouse movement, locking the target of mouse events to a single element.
-title: Dev guide: Pointer lock - Microsoft Edge Development
+title: Dev guide - Pointer lock - Microsoft Edge Development
 author: abbycar
 ---
 

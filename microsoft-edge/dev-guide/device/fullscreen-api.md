@@ -1,6 +1,6 @@
 ---
 description: Learn how the Fullscreen API can be used to direct a user’s attention to specific elements by presenting content in the browser’s full screen mode.
-title: Dev guide: Fullscreen API - Microsoft Edge Development
+title: Dev guide - Fullscreen API - Microsoft Edge Development
 author: abbycar
 ---
 

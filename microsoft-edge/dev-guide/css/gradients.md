@@ -1,6 +1,6 @@
 ---
 description: Learn how to use CSS Gradients to make linear, circular, and elliptical gradients.
-title: Dev guide: Gradients - Microsoft Edge Development
+title: Dev guide - Gradients - Microsoft Edge Development
 author: libbymc
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: This article is a policy describing supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer.
-title: Extensions: Microsoft browser extension policy - Microsoft Edge Development
+title: Extensions - Microsoft browser extension policy - Microsoft Edge Development
 author: abbycar
 ---
 

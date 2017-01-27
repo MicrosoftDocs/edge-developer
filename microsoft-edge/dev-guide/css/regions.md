@@ -1,6 +1,6 @@
 ---
 description: See how CSS Regions can be used to achieve flexible, magazine-like, content flows through specified regions of the page.
-title: Dev guide: Regions - Microsoft Edge Development
+title: Dev guide - Regions - Microsoft Edge Development
 author: libbymc
 ---
 

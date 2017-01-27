@@ -1,6 +1,6 @@
 ---
 description: Learn how to analyze your web scenario performance data using the Windows Performance Analyzer.
-title: Performance analysis: Analyzing a trace - Microsoft Edge Development
+title: Performance analysis - Analyzing a trace - Microsoft Edge Development
 author: erikadoyle
 ---
 

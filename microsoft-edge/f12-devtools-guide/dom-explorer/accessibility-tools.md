@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the accessibility tools within the DOM Explorer tool to help you verify and test the accessibility of your website.
-title: F12 devtools guide: Accessibility Tools - Microsoft Edge Development
+title: F12 devtools guide - Accessibility Tools - Microsoft Edge Development
 author: erikadoyle
 ---
 

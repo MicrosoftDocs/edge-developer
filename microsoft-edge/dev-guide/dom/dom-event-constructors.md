@@ -1,6 +1,6 @@
 ---
 description: Learn how the DOM4 event constructor pattern can be used to easily create synthetic events.
-title: Dev guide: Dom event constructors - Microsoft Edge Development
+title: Dev guide - Dom event constructors - Microsoft Edge Development
 author: erikadoyle
 ---
 

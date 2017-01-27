@@ -1,6 +1,6 @@
 ---
 description: Learn how about how HTTP/2 can do header compression, utilize multiplexing, and enable prioritizing while making multiple HTTP requests to a domain.
-title: Dev guide: HTTP2 - Microsoft Edge Development
+title: Dev guide - HTTP2 - Microsoft Edge Development
 author: erikadoyle
 ---
 

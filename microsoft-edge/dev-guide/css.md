@@ -1,6 +1,6 @@
 ---
 description: See guides for CSS features in Microsoft Edge like animation and filter effects.
-title: Dev guide: CSS - Microsoft Edge Development
+title: Dev guide - CSS - Microsoft Edge Development
 author: libbymc
 ---
 

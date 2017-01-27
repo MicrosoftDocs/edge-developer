@@ -1,6 +1,6 @@
 ---
 description: Learn how the Geolocation API can be used determine latitude and longitude on the computer or device running the browser.
-title: Dev guide: Geolocation - Microsoft Edge Development
+title: Dev guide - Geolocation - Microsoft Edge Development
 author: abbycar
 ---
 

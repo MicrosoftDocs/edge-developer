@@ -1,6 +1,6 @@
 ---
 description: Find information on current progress towards completing the Microsoft Edge extension API.
-title: Extensions: Extension API roadmap - Microsoft Edge Development
+title: Extensions - Extension API roadmap - Microsoft Edge Development
 author: abbycar
 ---
 

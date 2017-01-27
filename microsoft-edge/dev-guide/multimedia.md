@@ -1,6 +1,6 @@
 ---
 description: Guides on Microsoft Edge APIs and extensions for media like Web Speech and Encrypted Media Extensions.
-title: Dev guide: Multimedia - Microsoft Edge Development
+title: Dev guide - Multimedia - Microsoft Edge Development
 author: libbymc
 ---
 

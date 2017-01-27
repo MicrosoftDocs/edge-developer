@@ -1,6 +1,6 @@
 ---
 description: Learn how the Xpath API can be used to locate and process elements in an eml document.
-title: Dev guide: Xpath - Microsoft Edge Development
+title: Dev guide - Xpath - Microsoft Edge Development
 author: abbycar
 ---
 

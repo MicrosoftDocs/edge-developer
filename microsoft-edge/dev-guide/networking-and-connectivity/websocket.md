@@ -1,6 +1,6 @@
 ---
 description: Learn how the WebSocket API provides a protocol for two-way communication between browser and server.
-title: Dev guide: WebSocket - Microsoft Edge Development
+title: Dev guide - WebSocket - Microsoft Edge Development
 author: erikadoyle
 ---
 

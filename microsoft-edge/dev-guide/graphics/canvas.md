@@ -1,6 +1,6 @@
 ---
 description: Learn how to draw, render, and manipulate images and graphics on a document with the Canvas API.
-title: Dev guide: Canvas - Microsoft Edge Development
+title: Dev guide - Canvas - Microsoft Edge Development
 author: abbycar
 ---
 

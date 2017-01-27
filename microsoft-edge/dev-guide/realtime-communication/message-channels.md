@@ -1,6 +1,6 @@
 ---
 description: See how channel messaging lets code in different browsing contexts communicate directly via ports in a way designed to avoid cross-site scripting attacks.
-title: Dev guide: Message channels - Microsoft Edge Development
+title: Dev guide - Message channels - Microsoft Edge Development
 author: abbycar
 ---
 

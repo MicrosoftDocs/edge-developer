@@ -1,6 +1,6 @@
 ---
 description: Learn how WebGL can be used to create dynamic 2D and 3D graphics for games and interactive content that harness the power of modern GPUs.
-title: Dev guide: WebGL - Microsoft Edge Development
+title: Dev guide - WebGL - Microsoft Edge Development
 author: abbycar
 ---
 

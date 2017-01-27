@@ -1,6 +1,6 @@
 ---
 description: Learn how the Gamepag API can enable web-based games to take advantage of the specialized input functionality of gamepad devices.
-title: Dev guide: Gamepad API - Microsoft Edge Development
+title: Dev guide - Gamepad API - Microsoft Edge Development
 author: erikadoyle
 ---
 

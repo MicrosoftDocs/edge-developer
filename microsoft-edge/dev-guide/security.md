@@ -1,6 +1,6 @@
 ---
 description: Guides about security policies, protocols, and API within Microsoft Edge.
-title: Dev guide: Security - Microsoft Edge Development
+title: Dev guide - Security - Microsoft Edge Development
 author: abbycar
 ---
 

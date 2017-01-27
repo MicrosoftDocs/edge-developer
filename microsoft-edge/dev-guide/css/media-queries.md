@@ -1,6 +1,6 @@
 ---
 description: Learn how Media Queries enable you to scope a stylesheet to a set of precise device capabilities.
-title: Dev guide: Media queries - Microsoft Edge Development
+title: Dev guide - Media queries - Microsoft Edge Development
 author: libbymc
 ---
 

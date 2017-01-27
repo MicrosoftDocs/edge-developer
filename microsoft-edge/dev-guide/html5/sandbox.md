@@ -1,6 +1,6 @@
 ---
 description: Learn how the sandbox attribute can enhance security by preventing untrusted content from performing actions that can lead to potentially malicious behavior.
-title: Dev guide: Sandbox - Microsoft Edge Development
+title: Dev guide - Sandbox - Microsoft Edge Development
 author: abbycar
 ---
 

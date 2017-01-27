@@ -1,6 +1,6 @@
 ---
 description: Learn how prerender and prefetch can be used to improve your website's navigation.
-title: Dev guide: Prerender and prefetch support - Microsoft Edge Development
+title: Dev guide - Prerender and prefetch support - Microsoft Edge Development
 author: erikadoyle
 ---
 

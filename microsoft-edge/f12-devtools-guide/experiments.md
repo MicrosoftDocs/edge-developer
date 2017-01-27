@@ -1,6 +1,6 @@
 ---
 description: Learn how to edit any JavaScript file in the debugger source viewer by enablind experiments.
-title: F12 devtools guide: Experiments - Microsoft Edge Development
+title: F12 devtools guide - Experiments - Microsoft Edge Development
 author: erikadoyle
 ---
 

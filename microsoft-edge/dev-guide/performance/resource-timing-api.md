@@ -1,6 +1,6 @@
 ---
 description: Learn how the Resource Timing API allows web applications to access network timing information.
-title: Dev guide: Resource Timing API - Microsoft Edge Development
+title: Dev guide - Resource Timing API - Microsoft Edge Development
 author: erikadoyle
 ---
 

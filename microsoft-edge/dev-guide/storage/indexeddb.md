@@ -1,6 +1,6 @@
 ---
 description: This article provides info on the Indexed Database API (IndexedDB), which enables you to store structured data.
-title: Dev guide: IndexedDB - Microsoft Edge Development
+title: Dev guide - IndexedDB - Microsoft Edge Development
 author: abbycar
 ---
 

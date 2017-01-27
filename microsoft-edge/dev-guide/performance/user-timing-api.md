@@ -1,6 +1,6 @@
 ---
 description: Learn how the User Timing API enables you to accurately measure requests and report on performance.
-title: Dev guide: User Timing API - Microsoft Edge Development
+title: Dev guide - User Timing API - Microsoft Edge Development
 author: erikadoyle
 ---
 

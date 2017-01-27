@@ -1,6 +1,6 @@
 ---
 description: Learn how the HTML5 track element enables you to add timed text tracks, such as closed captioning, translations, or text commentary, to HTML5 video elements.
-title: Dev guide: Timed text tracks - Microsoft Edge Development
+title: Dev guide - Timed text tracks - Microsoft Edge Development
 author: libbymc
 ---
 

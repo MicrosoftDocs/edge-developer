@@ -1,6 +1,6 @@
 ---
 description: Find information on current and future APIs as well their known issues/Chrome incompatibilities.
-title: Extensions: Supported APIs - Microsoft Edge Development
+title: Extensions - Supported APIs - Microsoft Edge Development
 author: abbycar
 ---
 

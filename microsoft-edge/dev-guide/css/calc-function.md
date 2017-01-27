@@ -1,6 +1,6 @@
 ---
 description: Learn how the calc function can be used to do simple math right in native CSS.
-title: Dev guide: Calc function - Microsoft Edge Development
+title: Dev guide - Calc function - Microsoft Edge Development
 author: libbymc
 ---
 

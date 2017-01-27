@@ -1,6 +1,6 @@
 ---
 description: This article covers issues that may be experienced while loading unpacked extensions.
-title: Extensions: Troubleshooting - Microsoft Edge Development
+title: Extensions - Troubleshooting - Microsoft Edge Development
 author: abbycar
 ---
 

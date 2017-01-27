@@ -1,6 +1,6 @@
 ---
 description: Learn how to specify what information about a webpage should be passed in the HTTP header to any request sent from the page.
-title: Dev guide: Meta referrer - Microsoft Edge Development
+title: Dev guide - Meta referrer - Microsoft Edge Development
 author: libbymc
 ---
 

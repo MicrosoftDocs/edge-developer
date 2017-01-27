@@ -1,6 +1,6 @@
 ---
 description: Learn how to cache resources locally with the App Cache (Application Cache) API.
-title: Dev guide: Application cache - Microsoft Edge Development
+title: Dev guide - Application cache - Microsoft Edge Development
 author: erikadoyle
 ---
 

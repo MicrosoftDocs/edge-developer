@@ -1,6 +1,6 @@
 ---
 description: Learn how Object Real-Time Communications (ORTC) enables media to be streamed in real-time directly between web browsers, mobile devices, or servers.
-title: Dev guide: Object RTC API - Microsoft Edge Development
+title: Dev guide - Object RTC API - Microsoft Edge Development
 author: abbycar
 ---
 

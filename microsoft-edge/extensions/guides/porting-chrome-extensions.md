@@ -1,6 +1,6 @@
 ---
 description: Learn how to port your Chrome extension to Microsoft Edge using the Microsoft Edge Extension Toolkit.
-title: Extensions: Porting Chrome extensions - Microsoft Edge Development
+title: Extensions - Porting Chrome extensions - Microsoft Edge Development
 author: abbycar
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Network tool to view communication between the browser and server(s), inspect request and reply headers, see response codes, and debug AJAX.
-title: F12 devtools guide: Network - Microsoft Edge Development
+title: F12 devtools guide - Network - Microsoft Edge Development
 author: erikadoyle
 ---
 

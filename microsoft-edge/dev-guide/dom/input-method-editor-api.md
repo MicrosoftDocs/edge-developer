@@ -1,6 +1,6 @@
 ---
 description: Learn how the Input Method Editor API provides composition information for auto-complete or search suggestions, and enables you to avoid user interface collisions.
-title: Dev guide: Input Method Editor API - Microsoft Edge Development
+title: Dev guide - Input Method Editor API - Microsoft Edge Development
 author: abbycar
 ---
 

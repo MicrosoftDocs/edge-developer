@@ -1,6 +1,6 @@
 ---
 description: Learn how to profile your web scenario with the Windows Performance Recorder.
-title: Performance analysis: Recording a trace - Microsoft Edge Development
+title: Performance analysis - Recording a trace - Microsoft Edge Development
 author: erikadoyle
 ---
 

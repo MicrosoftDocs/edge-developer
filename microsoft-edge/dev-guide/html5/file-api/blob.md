@@ -1,6 +1,6 @@
 ---
 description: See how the blob constructor allows you to easily create and manipulate a blob (typically equivalent to a file) directly on the client.
-title: Dev guide: Blob - Microsoft Edge Development
+title: Dev guide - Blob - Microsoft Edge Development
 author: abbycar
 ---
 

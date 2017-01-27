@@ -1,6 +1,6 @@
 ---
 description: Learn how to save files of arbitrary size locally by using the Indexed Database API (often abbreviated IndexedDB or IDB).
-title: Dev guide: Saving large files locally - Microsoft Edge Development
+title: Dev guide - Saving large files locally - Microsoft Edge Development
 author: abbycar
 ---
 

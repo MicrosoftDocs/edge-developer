@@ -1,6 +1,6 @@
 ---
 description: Find information on supported manifest keys as well as their known issues/Chrome incompatibilities.
-title: Extensions: Supported manifest keys - Microsoft Edge Development
+title: Extensions - Supported manifest keys - Microsoft Edge Development
 author: abbycar
 ---
 

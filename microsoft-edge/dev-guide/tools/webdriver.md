@@ -1,6 +1,6 @@
 ---
 description: This article provides info on how to get started with WebDriver in Microsoft Edge.
-title: Dev guide: WebDriver - Microsoft Edge Development
+title: Dev guide - WebDriver - Microsoft Edge Development
 author: erikadoyle
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: Learn how the Scalable Vector Graphics language can be used to describe two-dimensional vector and mixed vector/raster graphics in an XML format.
-title: Dev guide: SVG - Microsoft Edge Development
+title: Dev guide - SVG - Microsoft Edge Development
 author: abbycar
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: See how CSS Exclusions define how inline content flow around elements, extending the content wrapping ability of floats to any block-level element.
-title: Dev guide: Exclusions - Microsoft Edge Development
+title: Dev guide - Exclusions - Microsoft Edge Development
 author: libbymc
 ---
 

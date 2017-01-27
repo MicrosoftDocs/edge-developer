@@ -1,6 +1,6 @@
 ---
 description: Learn useful information about window-related commands for the WebDriver API.
-title: Webdriver commands: Window - Microsoft Edge Development
+title: Webdriver commands - Window - Microsoft Edge Development
 author: erikadoyle
 ---
 

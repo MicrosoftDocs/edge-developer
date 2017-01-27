@@ -1,6 +1,6 @@
 ---
 description: See how Microsoft Edge provides a reading view for webpages to enable add-free reading.
-title: Dev guide: Reading view - Microsoft Edge Development
+title: Dev guide - Reading view - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -95,9 +95,3 @@ If you feel your content is not a good fit for Reading view, you can use the fol
 ```
 
 With this tag, the **Reading view** button will not appear in the address bar when your users view your page.
-
- 
-
- 
-
-

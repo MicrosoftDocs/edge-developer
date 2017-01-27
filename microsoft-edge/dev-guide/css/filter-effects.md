@@ -1,6 +1,6 @@
 ---
 description: See how CSS Filter Effects allow you to manipulate graphics directly in the browser with blur effects, brightness adjustements, and more.
-title: Dev guide: Filter effects - Microsoft Edge Development
+title: Dev guide - Filter effects - Microsoft Edge Development
 author: libbymc
 ---
 

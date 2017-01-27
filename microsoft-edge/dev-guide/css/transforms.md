@@ -1,6 +1,6 @@
 ---
 description: Learn how CSS Transforms enable you to rotate, scale, move, skew, and translate page elements in 2D and 3D space.
-title: Dev guide: Transforms - Microsoft Edge Development
+title: Dev guide - Transforms - Microsoft Edge Development
 author: libbymc
 ---
 

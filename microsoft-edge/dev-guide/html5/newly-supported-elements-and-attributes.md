@@ -1,6 +1,6 @@
 ---
 description: Check out the newly supported HTML5 elements and attributes for Edge.
-title: Dev guide: Newly supported elements and attributes - Microsoft Edge Development
+title: Dev guide - Newly supported elements and attributes - Microsoft Edge Development
 author: libbymc
 ---
 

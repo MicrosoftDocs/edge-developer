@@ -1,6 +1,6 @@
 ---
 description: Learn how CSS Transitions enable you to gradually change CSS property values over a specified time duration without need for script.
-title: Dev guide: Transitions - Microsoft Edge Development
+title: Dev guide - Transitions - Microsoft Edge Development
 author: libbymc
 ---
 

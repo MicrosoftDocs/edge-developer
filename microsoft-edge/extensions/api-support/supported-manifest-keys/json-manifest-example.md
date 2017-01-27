@@ -1,6 +1,6 @@
 ---
 description: See an example of a Microsoft Edge JSON manifest to see possible field values.
-title: Extensions: JSON manifest example - Microsoft Edge Development
+title: Extensions - JSON manifest example - Microsoft Edge Development
 author: abbycar
 ---
 

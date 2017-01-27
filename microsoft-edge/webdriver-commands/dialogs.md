@@ -1,6 +1,6 @@
 ---
 description: Learn useful information about the commands that interact with alert dialogs for the WebDriver API.
-title: Webdriver commands: Dialogs - Microsoft Edge Development
+title: Webdriver commands - Dialogs - Microsoft Edge Development
 author: erikadoyle
 ---
 

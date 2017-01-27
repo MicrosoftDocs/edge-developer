@@ -1,6 +1,6 @@
 ---
 description: Learn about how you can use native messaging to have your extension communicate with a companion UWP app.
-title: Extensions: Native messaging - Microsoft Edge Development
+title: Extensions - Native messaging - Microsoft Edge Development
 author: abbycar
 ---
 

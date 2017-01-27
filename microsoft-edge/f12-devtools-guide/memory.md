@@ -1,6 +1,6 @@
 ---
 description: Learn how use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
-title: F12 devtools guide: Memory - Microsoft Edge Development
+title: F12 devtools guide - Memory - Microsoft Edge Development
 author: erikadoyle
 ---
 
