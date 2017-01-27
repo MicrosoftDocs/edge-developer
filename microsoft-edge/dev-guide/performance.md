@@ -1,6 +1,6 @@
 ---
-description: Guides for perfromance APIs and features within Microsoft Edge.
-title: Performance
+description: See guides for perfromance APIs and features within Microsoft Edge like the Animation Timing API.
+title: Dev guide: Realtime communication - Microsoft Edge Development
 author: erikadoyle
 ---
 

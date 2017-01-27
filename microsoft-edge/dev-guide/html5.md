@@ -1,6 +1,6 @@
 ---
-description: Guides for HTML5 APIs.
-title: HTML5
+description: See guides for HTML5 APIs suppoorted in Microsoft Edge like the File and Selection APIs.
+title: Dev guide: HTML5 - Microsoft Edge Development
 author: libbymc
 ---
 

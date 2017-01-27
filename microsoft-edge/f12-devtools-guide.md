@@ -1,10 +1,10 @@
 ---
-description: Learn how to use new and old features in F12 developer tools.
-title: F12 devtools guide
+description: Learn how to use new and old features in Microsoft Edge's F12 developer tools.
+title: F12 devtools guide - Microsoft Edge Development
 author: erikadoyle
 ---
 
-# Meet the Microsoft Edge Developer Tools
+# Meet the Microsoft Edge F12 Dev Tools
 
 Microsoft Edge introduces great new improvements to F12 developer tools, including some of the most requested features from [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  The new tools are built in TypeScript, and are always running, so no reloads are required. In addition, F12 developer tools documentation is now fully available on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation). From this point on, the docs will not only be influenced by your feedback, but you're invited to contribute and help shape our documentation.
 
@@ -22,12 +22,12 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 ![Edge DOM Explorer](./f12-devtools-guide/media/Edge_DOMExplorer.png)
 
 **Features** in the DOM Explorer tool include:
- - IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.		+|IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.|
- - Drag DOM nodes to rearrange them.		+|Drag DOM nodes to rearrange them.|
- - Support for compiled CSS sourcemaps		+|Support for compiled CSS sourcemaps|
+ - IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.
+ - Drag DOM nodes to rearrange them and edit nodes as HTML.
+ - Support for compiled CSS sourcemaps.
 
 **Development and debugging tasks it makes easier:**
-  - Determining why an element is not displaying at the right place or right size.
+ - Determining why an element is not displaying at the right place or right size.
  - Figuring out which CSS styles and media queries are being applied to an element.
  - Testing a series of different colors for an element to see which looks best.
 
@@ -38,21 +38,21 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 
 The [Console tool](./f12-devtools-guide/console.md) provides a way to interact with your running code:
 
-  - change variable values or inject code into a live site with the Console's command line.
-  - use the [Console Debugging API](./f12-devtools-guide/console/using-the-console-api.md) to send out debug information.
-  - see browser error messages and status codes.
+  - Change variable values or inject code into a live site with the Console's command line.
+  - Use the [Console Debugging API](./f12-devtools-guide/console/using-the-console-api.md) to send out debug information.
+  - See browser error messages and status codes.
 
 **Features** in the [Console tool](./f12-devtools-guide/console.md) include:
 
-  - Open the Console at the bottom of any other tool with the Console button or CTRL + `.
+  - Open the Console at the bottom of any other tool with the Console button or ``CTRL + ` ``.
   - [Console Debugging API](./f12-devtools-guide/console/using-the-console-api.md) methods for timing, counting, grouping, and more.
   - IntelliSense autocompletion suggestions on the command line speed up input, reduce typos, and help you discover aspects of JavaScript APIs.
 
 **Development and debugging tasks it makes easier:**
 
-  - targeting specific iFrames.
-  - timing code execution down to the statement with new timing methods.
-  - changing the value of a variable in running code without reloading.
+  - Targeting specific iFrames.
+  - Timing code execution down to the statement with new timing methods.
+  - Changing the value of a variable in running code without reloading.
 
 [Learn more about the Console tool.](./f12-devtools-guide/console.md)
 
@@ -72,7 +72,7 @@ You use the [Debugger tool](./f12-devtools-guide/debugger.md) to examine what yo
   - Seeing what led to a function call using the Call stack.
   - Making compressed or minified code more readable using source maps.
   - Monitoring web worker creation and execution.
-  - 
+
 [Learn more about the Debugger tool.](./f12-devtools-guide/debugger.md)
 
 ## The Network tool (CTRL+4)
@@ -103,7 +103,7 @@ Some interesting features are:
   - Testing code optimizations.
   - Speeding up your webpages.
 
-[Learn more about the Performance tool.](./f12-devtools-guide/performance.md) 
+[Learn more about the Performance tool.](./f12-devtools-guide/performance.md)
 
 ## The Memory tool (CTRL+6)
 ![Edge Memory Tool](./f12-devtools-guide/media/Edge_Memory.png)
@@ -127,11 +127,11 @@ Some interesting features are:
 ## The Emulation tool (CTRL+7)
 ![Edge Emulation Tool](./f12-devtools-guide/media/Edge_Emulation.png)
 
-The [Emulation](./f12-devtools-guide/emulation.md) helps you test how your webpages run on different screen sizes and hardware features, and how they respond to different user agent strings.
+The [Emulation tool](./f12-devtools-guide/emulation.md) helps you test how your webpages run on different screen sizes and hardware features, and how they respond to different user agent strings.
 
 Some interesting features are:
 
-  - You can emulate different screen sizes and resolutions.
+  - Emulating different screen sizes and resolutions.
   - GPS simulation.
 
 **Development and debugging tasks it makes easier:**

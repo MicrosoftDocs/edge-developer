@@ -1,6 +1,6 @@
 ---
-description: Learn how the Streams API can be used to create, process, and consume streams of data. 
-title: Streams API
+description: Learn how the Streams API can be used to create, process, and consume streams of data.
+title: Dev guide: Streams API - Microsoft Edge Development
 author: abbycar
 ---
 

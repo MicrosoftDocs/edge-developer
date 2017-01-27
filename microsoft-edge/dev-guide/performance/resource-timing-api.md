@@ -1,16 +1,18 @@
 ---
-description: Learn how to use the Resource Timing API, which allows web applications to access network timing information regarding how long it takes for resources to load in a document.
-title: Resource Timing API
+description: Learn how the Resource Timing API allows web applications to access network timing information.
+title: Dev guide: Resource Timing API - Microsoft Edge Development
 author: erikadoyle
 ---
 
 # Resource Timing API
 
-The [*Resource Timing API*](https://www.w3.org/TR/resource-timing/) allows web applications to access network timing information regarding how long it takes for resources to load in a document (such as images, CSS files, Javascript files, etc). These timing metrics are helpful to measure user latency, crucial for benchmarking, and toward optimizing a web application's performance.
+The [*Resource Timing API*](https://www.w3.org/TR/resource-timing/) allows web applications to access network timing information regarding how long it takes for resources to load in a document (such as images, CSS files, Javascript files, etc). These timing metrics are helpful to measure user latency, crucial for benchmarking, and toward optimizing a web application's performance. 
 
-> NOTE: The [Resource Timing API Specification](http://www.w3.org/TR/resource-timing/) is a W3C Candidate Recommendation with most significant features locked in, but as minor changes occur, there may be divergence in the browser implementation. Currently Microsoft Edge build 10240+ offers unprefixed standard support.
+> [!NOTE]
+> The [Resource Timing API Specification](http://www.w3.org/TR/resource-timing/) is a W3C Candidate Recommendation with most significant features locked in, but as minor changes occur, there may be divergence in the browser implementation. Currently Microsoft Edge build 10240+ offers unprefixed standard support. 
 
-Similar to the [*Navigation Timing API*](./navigation-timing-api.md), the Resource Timing API is unique in that it creates a resource loading timeline providing the name and type of each resource, timestamps for network events such as redirect start and end times, fetch start, DNS lookup start and end times, response start and end times, and calculates duration for you (using [`responseEnd`](https://msdn.microsoft.com/library/ff974730.aspx) - [`startTime`](https://msdn.microsoft.com/library/jj585581.aspx)). The Resource Timing API offers a more complete picture of performance than most JavaScript-based mechanisms due to it's ability to provide a complete end-to-end latency picture, accounting for external resources (such as CDN libraries, external images or videos) that need to be accurately measured to determine what may be slowing down page load and in need of optimization.
+
+Similar to the [*Navigation Timing API*](./navigation-timing.md), the Resource Timing API is unique in that it creates a resource loading timeline providing the name and type of each resource, timestamps for network events such as redirect start and end times, fetch start, DNS lookup start and end times, response start and end times, and calculates duration for you (using [`responseEnd`](https://msdn.microsoft.com/library/ff974730.aspx) - [`startTime`](https://msdn.microsoft.com/library/jj585581.aspx)). The Resource Timing API offers a more complete picture of performance than most JavaScript-based mechanisms due to it's ability to provide a complete end-to-end latency picture, accounting for external resources (such as CDN libraries, external images or videos) that need to be accurately measured to determine what may be slowing down page load and in need of optimization.
 
 ## Exposing the Resource Timing API
 
@@ -49,7 +51,9 @@ responseEnd | The time immediately after receiving the last byte of the response
 
 The Resource Timing API returns time in the form of a `DOMHighResTimeStamp` enabling reliable, high-resolution timing of client-side performance. Unlike regular timestamps created with [`Date.now()`](https://msdn.microsoft.com/library/hh973355), a high resolution timestamp represents a time in milliseconds accurate to a thousandth of a millisecond*.
 
-> NOTE: While `Date.now()` returns the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC, `performance.now()` returns the number of milliseconds, with microseconds in the fractional part, from `performance.timing.navigationStart()`, the start of navigation of the document, to the `performance.now()` call. `DOMTimeStamp` has millisecond precision, but `DOMHighResTimeStamp` actually has a minimal precision of five microseconds (5 µs). However, not all browsers are able to provide a time value accurate to 5 microseconds, because hardware or software constraints may interfere. The browser then represents the value as a time in milliseconds accurate to a millisecond.
+> [!NOTE]
+> While `Date.now()` returns the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC, `performance.now()` returns the number of milliseconds, with microseconds in the fractional part, from `performance.timing.navigationStart()`, the start of navigation of the document, to the `performance.now()` call. `DOMTimeStamp` has millisecond precision, but `DOMHighResTimeStamp` actually has a minimal precision of five microseconds (5 µs). However, not all browsers are able to provide a time value accurate to 5 microseconds, because hardware or software constraints may interfere. The browser then represents the value as a time in milliseconds accurate to a millisecond.
+
 
 This level of precision can be very useful when testing code that needs to run really fast. Try retrieving a `DOMHighResTimeStamp` using the [`now`](https://msdn.microsoft.com/library/hh973355) method on the [`performance`](https://msdn.microsoft.com/library/ff974680) object in the F12 Console Tool:
 ```JS
@@ -61,10 +65,10 @@ Note the results of `performance.now()` compared to `Date.now()` below.
 Date.now()         //result:  1337376068250
 performance.now()  //result:  20303.427000007
 ```
-
+ 
  `performance.now()` is a measurement of floating point milliseconds since that particular page started to load (the `performance.navigationStart` to be specific).
 
-### Example performance test
+### Example performance test 
 
 The following is a simple test to measure a function's performance utilizing High Resolution Time Stamps... just insert your own functions in place of foo() and bar().
 

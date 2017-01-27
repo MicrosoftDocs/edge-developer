@@ -1,6 +1,6 @@
 ---
 description: Learn how the DOM4 event constructor pattern can be used to easily create synthetic events.
-title: DOM event constructors
+title: Dev guide: Dom event constructors - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -60,7 +60,9 @@ mycheckbox.dispatchEvent(clicker);
 
 The first parameter is an event type and the second parameter is an *optional* dictionary of event properties. The most common are `bubbles` and `cancelable`, but for different events you can add event-specific properties, such as `clientX` and `clientY` for a [MouseEvent](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/apireference/interfaces/MouseEvent/). In the optional dictionary, the last 14 parameters of the [`initMouseEvent()`](https://msdn.microsoft.com/library/ff975292(v=vs.85).aspx) are duplicated. Instead of a confusing sequence of numbers and booleans that require you to refer to documentation to be sure to get in the right order, the dictionary makes the code much more readable and maintainable.
 
-> NOTE:  Although deprecated, the `createEvent()`/`initEvent()` syntax remains functional at this time to support backward compatibility.
+> [!NOTE]
+>  Although deprecated, the `createEvent()`/`initEvent()` syntax remains functional at this time to support backward compatibility.
+
 
 ## History
 

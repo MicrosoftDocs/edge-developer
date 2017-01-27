@@ -1,6 +1,6 @@
 ---
 description: Learn how the Selection API object represents an active selection, and how its methods can be used.
-title: Selection API
+title: Dev guide: Selection API - Microsoft Edge Development
 author: abbycar
 ---
 

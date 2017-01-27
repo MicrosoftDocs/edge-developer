@@ -1,6 +1,6 @@
 ---
-description: Learn aboute Web Cryptography API updates in Microsoft Edge.
-title: Web Cryptography API
+description: Learn about what the Web Cryptography API does and the updates new to Microsoft Edge.
+title: Dev guide: Web Cryptography API - Microsoft Edge Development
 author: libbymc
 ---
 

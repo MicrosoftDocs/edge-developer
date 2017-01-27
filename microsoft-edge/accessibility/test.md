@@ -1,6 +1,6 @@
 ---
-description: Accessibility testing is a form of usability testing to verify your website is usable by all people. This article provides tools and testing procedures to evaluate a website's accessibility.
-title: Test
+description: Check out tools and testing procedures that help evaluate a website's accessibility.
+title: Accessibility: Test - Microsoft Edge Development
 author: libbymc
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: Learn how multi-column Layout can make content flow into multiple columns, which retain a gap and an optional rule between them.
-title: Multi-column Layout
+title: Dev guide: Multi column layout - Microsoft Edge Development
 author: libbymc
 ---
 

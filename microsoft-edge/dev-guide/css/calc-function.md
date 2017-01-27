@@ -1,6 +1,6 @@
 ---
 description: Learn how the calc function can be used to do simple math right in native CSS.
-title: Calc function
+title: Dev guide: Calc function - Microsoft Edge Development
 author: libbymc
 ---
 
@@ -34,7 +34,9 @@ Example | Operator | Result
 100% * 1 / 4 | Multiplication | Product of taking 1/4th of total (25%)
 100vw / 2 | Division | Quotient of 100 viewport width and 2
 
-> NOTE:  The + and - operators must always be surrounded by whitespace. For example, `calc(100% -25px)` is parsed as a percentage followed by a negative length, an invalid expression, while `calc(100% - 25px)` is a percentage followed by a minus sign and a length. Negative lengths can be used, for example, `calc(25px + -50%)` is treated as a length followed by a plus sign and a negative percentage.
+> [!NOTE]
+>  The + and - operators must always be surrounded by whitespace. For example, `calc(100% -25px)` is parsed as a percentage followed by a negative length, an invalid expression, while `calc(100% - 25px)` is a percentage followed by a minus sign and a length. Negative lengths can be used, for example, `calc(25px + -50%)` is treated as a length followed by a plus sign and a negative percentage.
+
 
 ## Using calc() to find the vertical center
 

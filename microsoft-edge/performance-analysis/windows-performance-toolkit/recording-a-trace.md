@@ -1,6 +1,6 @@
 ---
 description: Learn how to profile your web scenario with the Windows Performance Recorder.
-title: 1 recording a trace
+title: Performance analysis: Recording a trace - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -33,4 +33,4 @@ The WPR tool will indicate that your trace information was saved successfully:
 ![Windows Performance Record Start](./../media/wprui-savecomplete.png)
 
 ## 4. Analyze the trace
-Now that you've gathered your performance data, you can [analyze the trace using Windows Performance Analyzer](./2-analyzing-a-trace.md) to see what optimizations can be made.
+Now that you've gathered your performance data, you can [analyze the trace using Windows Performance Analyzer](./1-analyzing-a-trace.md) to see what optimizations can be made.

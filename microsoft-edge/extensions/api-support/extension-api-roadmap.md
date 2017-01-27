@@ -1,14 +1,58 @@
 ---
 description: Find information on current progress towards completing the Microsoft Edge extension API.
-title: Extension API roadmap
+title: Extensions: Extension API roadmap - Microsoft Edge Development
 author: abbycar
 ---
 
 # Microsoft Edge extension API roadmap
 
-In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation.  Check out the table below for descriptions on how these classes can empower your extensions.
+In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is suported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
 
-This table also details our current progress towards completing the Microsoft Edge extension API. Status updates will be made here as classes move through development towards completion.
+> [!NOTE]
+> This page was last updated January 18th, 2017.
+
+
+## Windows 10 Insider Preview builds
+The following new APIs and features are available/in development for [Windows 10 Insider Preview](https://insider.windows.com/) builds:
+
+| API/Feature        | Status — Build Number
+|---------------|--------------|
+bookmarks.create | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.remove | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.getTree | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.move | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.remove | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.removeTree | Supported — Microsoft Edge (38) / Windows 10 (15002)
+bookmarks.update | Supported — Microsoft Edge (38) / Windows 10 (15002)
+browserAction.setTitle | Supported — Microsoft Edge (38) / Windows 10 (14926)
+Custom CSP | Supported — Microsoft Edge (38) / Windows 10 (15002)
+Popup debugging | Supported — Microsoft Edge (38) / Windows 10 (14971)
+port.disconnect |In Development
+port.onDisconnect |In Development
+port.postMessage | Supported — Microsoft Edge (38) / Windows 10 (15002)
+runtime.connectNative | Supported — Microsoft Edge (38) / Windows 10 (15002)
+runtime.onConnect | In Development
+runtime.sendMessage | Supported — Microsoft Edge (38) / Windows 10 (15002)
+runtime.sendNativeMessage | In Development
+runtime.setUninstallUrl | Supported — Microsoft Edge (38) / Windows 10 (14971)
+Shared cookies (Fix for [8438075](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8438075/)) |In Development
+storage.sync.get |In Development
+storage.sync.onChanged |In Development
+storage.sync.remove |In Development
+storage.sync.set |In Development
+Support for CSP field in manifest.json | Supported — Microsoft Edge (38) / Windows 10 (14986)
+tabs.captureVisibleTab | Supported — Microsoft Edge (38) / Windows 10 (14971)
+tabs.connect |In Development
+tabs.onAttached | Supported — Microsoft Edge (38) / Windows 10 (14936)
+tabs.onDetatched | Supported — Microsoft Edge (38) / Windows 10 (14936)
+unlimitedStorage for browser.storage APIs |Supported — Microsoft Edge (38) / Windows 10 (14986)
+
+
+
+
+## Publicly available builds
+
+The following table details our current progress towards completing the Microsoft Edge extension API. Status updates will be made here as classes move through development towards completion.
 
 > [!NOTE]
 > Native messaging is currently in development.
@@ -34,3 +78,4 @@ tabs          | Interacts with Microsoft Edge's tab system by creating, modifyin
 webNavigation | Used to receive notifications about the status of navigation requests in-flight. | Supported — Microsoft Edge (38) / Windows 10 (14393)
 webRequest    | Enables use of the webRequest API to observe and analyze traffic and to intercept, block, or modify requests in-flight. | Supported — Microsoft Edge (38) / Windows 10 (14393)
 windows       | Interacts with the browser by creating, modifying, and rearranging windows. | Supported — Microsoft Edge (38) / Windows 10 (14393)
+

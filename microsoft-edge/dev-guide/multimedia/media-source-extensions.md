@@ -1,6 +1,6 @@
 ---
 description: Learn how Media Source Extensions extends HTML5 video and audio elements to enable streaming without the need for plugins or special servers.
-title: Media Source Extensions
+title: Dev guide: Media Source Extensions - Microsoft Edge Development
 author: libbymc
 ---
 
@@ -18,7 +18,7 @@ You can also dynamically splice videos together. This allows to you insert ads o
 Microsoft Edge introduced enhanced support for MSE to align with the current [W3C Media Source Extensions](http://go.microsoft.com/fwlink/p/?LinkID=386463) specification.  This includes:
 * Updates to the [`VideoPlaybackQuality`](https://msdn.microsoft.com/library/dn270592(v=vs.85).aspx) object with new support for the [`corruptedVideoFrame`](https://msdn.microsoft.com/library/dn903680(v=vs.85).aspx) property
 * Support for the [`mode`](https://msdn.microsoft.com/library/dn903679(v=vs.85).aspx) property for the [`SourceBuffer`](https://msdn.microsoft.com/library/dn255049(v=vs.85).aspx) object
-* Support for [**VideoTracks**]().
+* Support for [`VideoTracks`](https://msdn.microsoft.com/library/dn806264(v=vs.85).aspx).
 
 ## MPEG-DASH and streaming reference and resources
 

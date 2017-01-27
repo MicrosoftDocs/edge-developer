@@ -1,6 +1,6 @@
 ---
-description: Learn how to use the Animation TIming API which provides a smoother and more efficient way to create animated webpages by calling the animation frame when the system is ready to paint the frame.
-title: Animation Timing API
+description: Learn how to use the Animation Timing API to create animated webpages.
+title: Dev guide: Animation Timing API - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -82,7 +82,9 @@ The [`addEventListener`](https://msdn.microsoft.com/library/ff975245(v=vs.85).as
 
 You can use the callback function to animate almost anything, for example, SVG, Canvas, or as we show here, CSS properties. The callback function has one incoming *time* parameter, which represents the time the callback function is called. This is a `DOMHighResTimeStamp`, a high resolution time measured from the beginning of the navigation of the page. `DOMHighResTimeStamp` is measured in milliseconds accurate to a thousandth of a millisecond. This time value isn't directly comparable with `Date.now()`, which measures time in milliseconds since 01 January 1970. If you want to compare the *time* parameter with the current time, use [`window.performance.now`](https://msdn.microsoft.com/library/hh973355(v=vs.85).aspx) for the current time.
 
-> NOTE: Changing the time value from `DOMTimeStamp` to `DOMHighResTimeStamp` was a change in 2012 (see Editors Draft of the [W3C Timing control for script-based animation](http://go.microsoft.com/fwlink/p/?LinkID=229562) specification). Earlier versions of the W3C specification used the DOMTimeStamp, which allowed you to use `Date.now` for the current time. The difference being `DOMTimeStamp` has a millisecond precision and `DOMHighResTimeStamp` has a minimal precision of ten microseconds.
+> [!NOTE]
+> Changing the time value from `DOMTimeStamp` to `DOMHighResTimeStamp` was a change in 2012 (see Editors Draft of the [W3C Timing control for script-based animation](http://go.microsoft.com/fwlink/p/?LinkID=229562) specification). Earlier versions of the W3C specification used the DOMTimeStamp, which allowed you to use `Date.now` for the current time. The difference being `DOMTimeStamp` has a millisecond precision and `DOMHighResTimeStamp` has a minimal precision of ten microseconds.
+
 
 ## Browser support
 

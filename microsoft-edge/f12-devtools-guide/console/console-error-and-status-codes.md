@@ -1,12 +1,12 @@
 ---
 description: Learn about the common console error codes, their associated messages, and their suggested fixes.
-title: Console error and status codes
+title: F12 devtools guide: Console error and status codes - Microsoft Edge Development
 author: erikadoyle
 ---
 
 # Console error and status codes
 
-Use this reference to interpret error messages shown in the  [Console](../console.md) and the [Debugger](./../debugger.md) in Microsoft Edge.
+Use this reference to interpret error messages shown in the  [Console](../) and the [Debugger](./../debugger.md) in Microsoft Edge.
 
 #### Introduction
 When you're debugging with F12 developer tools, error codes such as `SEC7111` or `HTML1114` are shown in the Console and the Debugger tools.

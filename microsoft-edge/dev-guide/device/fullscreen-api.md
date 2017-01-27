@@ -1,6 +1,6 @@
 ---
-description: Learn how the Fullscreen API can be used to direct a user’s attention to specific elements while you hide distracting backgrounds or other apps, presenting content in the browser’s full screen mode.
-title: Fullscreen API
+description: Learn how the Fullscreen API can be used to direct a user’s attention to specific elements by presenting content in the browser’s full screen mode.
+title: Dev guide: Fullscreen API - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -8,7 +8,9 @@ author: abbycar
 
 Using the Fullscreen API, you can direct a user's attention to specific elements while you hide distracting backgrounds or other apps, presenting content in the browser's full screen (kiosk) mode.
 
-> NOTE:  As of Microsoft Edge (build 10240+), this API is unprefixed. Because the W3C fullscreen specification is not yet final, most browser vendors prefix the API with a unique identifier. It's a good idea to have a single function that requests full-screen mode across all prefixes, like most of the examples shown here. For better performance, put the W3C API name first, followed by the prefixed versions.
+> [!NOTE]
+>  As of Microsoft Edge (build 10240+), this API is unprefixed. Because the W3C fullscreen specification is not yet final, most browser vendors prefix the API with a unique identifier. It's a good idea to have a single function that requests full-screen mode across all prefixes, like most of the examples shown here. For better performance, put the W3C API name first, followed by the prefixed versions.
+
 
 This table shows the JavaScript and CSS members of the Fullscreen API.
 
@@ -71,7 +73,9 @@ Other actions can force an element out of full-screen mode, like when a user:
 -  Swiped down from the top of the screen.
 -  Swiped up from the bottom of the screen.
 
-> NOTE:  If an element loses focus while it's in full-screen mode, it doesn't exit full-screen mode.
+> [!NOTE]
+>  If an element loses focus while it's in full-screen mode, it doesn't exit full-screen mode.
+
 
 ## Find an element in full-screen mode
 
@@ -137,7 +141,9 @@ else if (document.msRequestFullscreen) {
 
 The `fullscreenChange` event is fired after an element enters or exits full-screen mode, so you can get the current state. In the code sample, we check the `fullscreenElement` to see if any elements are in full screen. If an element is in full-screen mode, the element is returned, otherwise `fullscreenElement` returns null.
 
-> NOTE:  Press F12 to open the Microsoft Edge developer tools to access the [Console Tool](https://developer.microsoft.com/microsoft-edge/platform/documentation/f12-devtools-guide/console/) and see the messages. When the example goes into full screen mode, you'll see "Went full screen", and when it exits, you'll see "Exited full screen."
+> [!NOTE]
+>  Press F12 to open the Microsoft Edge developer tools to access the [Console Tool](https://developer.microsoft.com/microsoft-edge/platform/documentation/f12-devtools-guide/console/) and see the messages. When the example goes into full screen mode, you'll see "Went full screen", and when it exits, you'll see "Exited full screen."
+
 
 ## Catch full-screen mode errors
 

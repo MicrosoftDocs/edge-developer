@@ -1,6 +1,6 @@
 ---
 description: Learn how the Scalable Vector Graphics language can be used to describe two-dimensional vector and mixed vector/raster graphics in an XML format.
-title: SVG
+title: Dev guide: SVG - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -12,7 +12,9 @@ Scalable Vector Graphics (SVG), an XML markup language for describing two-dimens
 
 Microsoft Edge build 10240+ supports [CSS Transitions & Animations for SVG elements](http://dev.w3.org/csswg/css-animations-1/). SVG elements blur the line between content / structure (HTML) and look / style (CSS). SVG elements can be coded into HTML with [presentation attributes](https://msdn.microsoft.com/library/hh801971(v=vs.85).aspx), *(note that they are case-sensitive)*. Some of these presentation attributes are unique to SVG, such as `fill`, `stroke` and `stroke-width`, others are  are shared with CSS, such as `opacity` or `font-size`. The [SVG specification](http://www.w3.org/TR/SVG/propidx.html) lists the SVG attributes that may be set as CSS properties.
 
+> [!NOTE]
 > In the [SVG 2 specification](http://www.w3.org/TR/SVG2/styling.html#SVGStylingProperties), this list will include `x`, `y`, `width`, `height`, `cx`, and `cy`. Microsoft Edge support is currently [under consideration](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/svg2?filter=f3f0000bf&search=svg%202).
+
 
 Most CSS selectors can be used to select SVG elements, including class and ID selectors, as well as pseudo-classes, including `:hover`, `:active`, `:focus`, `:first-child`, `:visited`, `:link` and `:lang` (but not including `::before` and `::after`). SVGs can be animated the same way that HTML elements can, using CSS transitions or CSS keyframes.
 
@@ -21,7 +23,9 @@ The following CSS presentation attributes are supported on SVG. *Find [a full li
 fill, fill-opacity, stroke, stroke-width, stroke-opacity, opacity, position (top, right, bottom, left, z-index), font-size; font-weight, letter-spacing, ...
 ```
 
+> [!NOTE]
 > Currently CSS transforms are not supported on SVG elements by Microsoft Edge, but this support is [in the development backlog](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6820655-add-css-transforms-on-svg-elements).
+
 
 Some SVG properties cannot be animated through CSS. An SVG path, for example, comes with a set of data (a d="" attribute) that defines the shape of the path. This data can be modified and animated through [SMIL](https://msdn.microsoft.com/library/gg193979(v=vs.85).aspx), but not CSS. *More CSS friendly SVG attributes may be coming soon: [See SVG2 Styling Properties Spec](https://www.w3.org/TR/SVG2/styling.html#SVGStylingProperties). Visit Microsoft Edge [platform status for SVG2 updates](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?filter=f3f0000bf&search=svg2).*
 
@@ -44,7 +48,9 @@ The following is an example of using the `animation` shorthand property to set t
 	animation: sample 3s ease-out 2s alternate 4 none paused;
 ```
 
+> [!NOTE]
 > If there are multiple animations specifying behavior for the same property at the same time, the animation which occurs last in the value of `animation-name` will override the other animations at that point.
+
 
 ## The @keyframes Rule
 
@@ -117,11 +123,13 @@ For more information on `foreignObject` properties, go to the [`foreignObject` A
 ## feBlend
 Microsoft Edge also introduces full support for [`<feBlend>`](https://msdn.microsoft.com/library/hh773211(v=vs.85).aspx) blend modes, providing filter effects to blend together two inputs (similar to image layers). The new blend modes expand the existing values normal, multiply, screen, overlay, darken, and lighten with color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity.
 
+> [!NOTE]
 > The [W3C Filter Effects spec](http://www.w3.org/TR/2014/WD-filter-effects-1-20141125/#element-attrdef-feblend-mode) extended `<feBlend>` to support all blend modes per the [CSS compositing and blending specification](http://www.w3.org/TR/compositing-1/#ltblendmodegt).
+
 
 To use the new modes just specify the desired mode in the `<feBlend>` element. For example:
 ```html
-<feBlend mode=’luminosity’ in2=’SourceGraphic’ />
+<feBlend mode='luminosity’ in2=’SourceGraphic' />
 ```
 
 #### Microsoft Edge

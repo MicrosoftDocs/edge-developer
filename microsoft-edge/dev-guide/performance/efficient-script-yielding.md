@@ -1,6 +1,6 @@
 ---
-description: Learn how to use the setImmediate method to break apart long running JavaScript operations and receive a callback immediately after the browser has processed outstanding work.
-title: Efficient script yielding
+description: Learn how to use the setImmediate method to break apart long running JavaScript operations.
+title: Dev guide: Efficient script yielding - Microsoft Edge Development
 author: erikadoyle
 ---
 

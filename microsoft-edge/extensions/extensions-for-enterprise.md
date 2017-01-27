@@ -1,6 +1,6 @@
 ---
-description: Microsoft Edge extensions have a similar workflow when compared to other enterprise UWP apps. This article detailis enterprise specific aspects of Microsoft Edge Extensions.
-title: Extensions for enterprise
+description: Find out about the enterprise specific aspects of Microsoft Edge Extensions, and see how they're similar to UWP apps.
+title: Extensions: Extensions for enterprise - Microsoft Edge Development
 author: abbycar
 ---
 

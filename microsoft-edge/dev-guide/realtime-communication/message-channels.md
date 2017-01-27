@@ -1,6 +1,6 @@
 ---
-description: Learn how channel messaging enables code in different browsing contexts to communicate directly via ports, regardless of source domain, in a way designed to avoid cross-site scripting attacks.
-title: Message channels
+description: See how channel messaging lets code in different browsing contexts communicate directly via ports in a way designed to avoid cross-site scripting attacks.
+title: Dev guide: Message channels - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -8,7 +8,9 @@ author: abbycar
 
 Channel messaging enables code in different browsing contexts to communicate directly via ports, regardless of source domain, in a way designed to avoid cross-site scripting attacks. After the ports are created, the endpoints communicate by using a combination of the [`postMessage`](https://msdn.microsoft.com/library/jj160614.aspx) method and the [`onmessage`](http://go.microsoft.com/fwlink/p/?LinkID=128221) event.
 
-> NOTE: Based on the [HTML5 Web Messaging](https://html.spec.whatwg.org/multipage/comms.html#channel-messaging) standard, Message Channels are supported in Microsoft Edge build 10240+.
+> [!NOTE]
+> Based on the [HTML5 Web Messaging](https://html.spec.whatwg.org/multipage/comms.html#channel-messaging) standard, Message Channels are supported in Microsoft Edge build 10240+.
+
 
 
 [MessageChannel()](https://msdn.microsoft.com/library/hh772432.aspx) creates a connection (two "entangled" ports) to enable independent pieces of code (running in different browsing contexts) to communicate directly. Communication channels are implemented as two-ways pipes, with a port at each end. Messages sent in one port are delivered at the other port, and vice-versa. Messages are delivered as DOM events, without interrupting or blocking running tasks.

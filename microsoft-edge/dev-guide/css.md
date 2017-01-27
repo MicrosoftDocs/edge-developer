@@ -1,6 +1,6 @@
 ---
-description: Guides for CSS features in Microsoft Edge.
-title: CSS
+description: See guides for CSS features in Microsoft Edge like animation and filter effects.
+title: Dev guide: CSS - Microsoft Edge Development
 author: libbymc
 ---
 
@@ -13,10 +13,10 @@ CSS [Animations](./css/animations.md) enable you to create visually appealing ri
 The ['calc()' function](./css/calc-function.md) can be used wherever length values are allowed: it's a way to do simple math right in your native CSS. The expression within the parentheses is computed at the same time as 'em' lengths are computed.
 
 ## Exclusions
-CSS [Exclusions](./css/exclusions.md) define how inline content flow around elements, extending the content wrapping ability of floats to any block-level element.
+CSS [Exclusions](./css/exclusions.md) define how inline content flow around elements, extending the content wrapping ability of floats to any block-level element. 
 
 ## Filter Effects
-CSS [Filter Effects](./css/filter-effects.md) allow you to manipulate graphics directly in the browser. You can add a blur, adjust the brightness, change an image to grayscale, and more.
+CSS [Filter Effects](./css/filter-effects.md) allow you to manipulate graphics directly in the browser. You can add a blur, adjust the brightness, change an image to grayscale, and more. 
 
 ## Flexbox
 With [Flexible Box Layout ('Flexbox')](./css/flexbox.md), you can lay out complex webpages more easily and make the relative position and size of elements adjust as screen and browser window sizes change. Flexbox can lessen the reliance on floats and table-based layouts, which are more complicated to position and size correctly.
@@ -37,7 +37,7 @@ Measurements and positions in CSS properties are indicated in [length units](./c
 [Media Query Listeners](./css/media-query-listeners.md) enable evaluating a media query at runtime using JavaScript and subscribing listeners to changes in the media query's evaluation.
 
 ## Multi-column Layout
-[Multi-column Layout](./css/multi-column-layout.md) allows content to flow into multiple columns, which retain a gap and an optional rule between them. It also makes it possible to vary the number of columns based on the size of the browser window.
+[Multi-column Layout](./css/multi-column-layout.md) allows content to flow into multiple columns, which retain a gap and an optional rule between them. It also makes it possible to vary the number of columns based on the size of the browser window. 
 
 ## Newly supported CSS properties and pseudo-classes
 Check out the [latest CSS properties and pseudo-classes](./css/newly-supported-properties-and-pseudo-classes.md) supported by Microsoft Edge.
@@ -49,7 +49,7 @@ CSS [Regions](./css/regions.md) is a layout feature used to achieve more flexibl
 The [`@supports` CSS rule](./css/supports-at-rule.md) gives you the ability to perform a CSS feature query, checking whether a browser supports a feature, then applying the styles for those elements if the condition is met. CSS `@supports` is complemented by the JavaScript `window.CSS.supports()` API.  
 
 ## Transforms
-CSS [Transforms](./css/transforms.md) enable you to rotate, scale, move, skew, and translate page elements in 2D and 3D space.
+CSS [Transforms](./css/transforms.md) enable you to rotate, scale, move, skew, and translate page elements in 2D and 3D space. 
 
 ## Transitions
 CSS [Transitions](./css/transitions.md) enable you to gradually change CSS property values over a specified time duration without need for script.

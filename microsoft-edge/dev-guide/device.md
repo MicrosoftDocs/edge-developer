@@ -1,6 +1,6 @@
 ---
-description: Guides for device APIs and features in Microsoft Edge.
-title: Device
+description: See guides for device APIs and features in Microsoft Edge like the Fullscreen API and High DPI support.
+title: Dev guide: Device - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -17,6 +17,10 @@ The [Geolocation API](./device/Geolocation.md) is a built-in location provider t
 
 ## High-DPI support
 Microsoft Edge brings enhanced scaling for [high DPI](./device/high-DPI-support.md) screens and small slates, ensuring the consistency of your website’s text, touch targets, and layout across devices.
+
+## Payment Request API
+The [Payment Request API](./device/Payment-Request-API.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud.
+
 
 ## Screen Orientation API
 The [Screen Orientation API](./device/screen-Orientation-API.md) enables you to prevent or override the browser from automatically reflowing your web app's content during changes to the orientation of your user's device. You can also lock the display so that your user's device orientation and motion sensor data is accurate.

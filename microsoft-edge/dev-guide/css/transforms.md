@@ -1,6 +1,6 @@
 ---
 description: Learn how CSS Transforms enable you to rotate, scale, move, skew, and translate page elements in 2D and 3D space.
-title: Transforms
+title: Dev guide: Transforms - Microsoft Edge Development
 author: libbymc
 ---
 
@@ -42,7 +42,9 @@ The units of <*length*> are the same as supplied to any of the translation funct
 
 
 
-> NOTE: The perspective property doesn't affect how the element is rendered; it simply enables a 3D-space for child elements. This is the main difference between the `transform: perspective()` function and the `perspective` property. The first gives element depth while the later creates a 3D-space shared by all its transformed children.
+> [!NOTE]
+> The perspective property doesn't affect how the element is rendered; it simply enables a 3D-space for child elements. This is the main difference between the `transform: perspective()` function and the `perspective` property. The first gives element depth while the later creates a 3D-space shared by all its transformed children.
+
 
 ### 3-D matrix
 

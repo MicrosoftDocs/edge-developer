@@ -1,6 +1,6 @@
 ---
 description: Learn how to add and remove extensions, as well as move an extension’s button next to the address bar.
-title: Adding and removing extensions
+title: Extensions: Adding and removing extensions - Microsoft Edge Development
 author: abbycar
 ---
 

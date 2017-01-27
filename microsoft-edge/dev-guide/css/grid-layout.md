@@ -1,3 +1,8 @@
+---
+description: Learn how to use CSS Grid Layout to make fluid layouts for your website.
+title: Dev guide: Grid layout - Microsoft Edge Development
+author: libbymc
+---
 
 # Grid layout
 

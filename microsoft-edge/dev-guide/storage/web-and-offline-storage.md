@@ -1,6 +1,6 @@
 ---
-description: This article provides info on the Web Storage API, which  includes two related mechanisms for persisting client-side data in a secure manner using the Document Object Model (DOM), sessionStorage and localStorage.
-title: Web and offline storage
+description: Learn how the Web Storage API can persist client-side data in a secure manner using the Document Object Model (DOM), sessionStorage and localStorage.
+title: Dev guide: Web and offline storage - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -63,7 +63,9 @@ For example, a Web site can display a count of how many times the user has visit
 </script> 
 ```
 
-> NOTE:  Before incrementing `pageLoadCount` it must first be converted to a number with the [`parseInt` Method (JScript 5.6)](https://msdn.microsoft.com/library/x53yedee).
+> [!NOTE]
+>  Before incrementing `pageLoadCount` it must first be converted to a number with the [`parseInt` Method (JScript 5.6)](https://msdn.microsoft.com/library/x53yedee).
+
  
 Each domain and subdomain has its own separate local storage area. Domains can access the storage areas of subdomains, and subdomains can access the storage areas of parent domains. For example, `localStorage['example.com']` is accessible to example.com and any of its subdomains. The subdomain `localStorage['www.example.com']` is accessible to example.com, but not to other subdomains, such as mail.example.com. The storage limits in Microsoft Edge are:
 

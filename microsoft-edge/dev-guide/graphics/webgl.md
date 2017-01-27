@@ -1,6 +1,6 @@
 ---
 description: Learn how WebGL can be used to create dynamic 2D and 3D graphics for games and interactive content that harness the power of modern GPUs.
-title: WebGL
+title: Dev guide: WebGL - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -10,7 +10,9 @@ author: abbycar
 Use [WebGL](https://www.khronos.org/registry/webgl/specs/latest/1.0/) in Microsoft Edge to create dynamic 2D and 3D graphics for games and interactive content. With WebGL you can create 2D and 3D experiences powered by the computer's graphics processing unit (GPU). Since WebGL is a web standard, you can write content that works across browsers and devices.
 
 
-> WARNING: There are memory limits that affect WebGL for Windows Phone 8. See [App memory limits for Windows Phone 8](http://go.microsoft.com/fwlink/p/?LinkID=511858) for more info.
+> [!WARNING]
+> There are memory limits that affect WebGL for Windows Phone 8. See [App memory limits for Windows Phone 8](http://go.microsoft.com/fwlink/p/?LinkID=511858) for more info.
+
 
 ## Create WebGL content on your page
 

@@ -1,5 +1,5 @@
 ---
-description: Guides about real-time communication features in Microsoft Edge.
+description: See guides about real-time communication features in Microsoft Edge like ORTC.
 title: Realtime communication
 author: abbycar
 ---

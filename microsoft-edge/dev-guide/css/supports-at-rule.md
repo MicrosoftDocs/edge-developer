@@ -1,6 +1,6 @@
 ---
 description: Learn how @supports and CSS.supports can be used to detect browser support for a given style directive.
-title: Support at rule
+title: Dev guide: Supports at rule - Microsoft Edge Development
 author: libbymc
 ---
 

@@ -1,6 +1,6 @@
 ---
-description: Creating an inclusive design makes technology usable by all people no matter their age, education, geographic location, language, or disability. This article contains resources for inclusive design tools and best practices.
-title: Design
+description: Read up on resources for inclusive design tools and best practices.
+title: Accessibility: Design - Microsoft Edge Development
 author: libbymc
 ---
 

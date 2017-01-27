@@ -1,6 +1,6 @@
 ---
-description: The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. This section details the the commands that Microsoft Edge supports.
-title: Webdriver commands
+description: See the WebDriver API commands that Microsoft Edge currently supports.
+title: Webdriver commands - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -9,48 +9,53 @@ The WebDriver API is a platform and language-neutral interface and wire protocol
 # WebDriver Server Command Line Flags
 List of command line flags for the WebDriver server.
 
-Name | Description | Example
+Name|Description|Available Release
 :----------------| :-------------| :------------
-host|Specify the host the server should use|--host=localhost|
-port|Specify the port the server should use|--port=17556|
-package|Specify the application id of the UWP app to be launched with WebDriver|--package=applicationId|
-verbose|Enable verbose log output from the server|--verbose|
+host|Host IP to use for the WebDriver server (default: localhost)|14393|
+port|Port to use for the WebDriver server (default: 17556)|14393|
+package|ApplicationUserModelId (AUMID) for the application to be launched by the WebDriver server|14393|
+verbose|Outputs requests received and responses sent by the WebDriver server|14393|
+silent|Outputs nothing|Insiders|
 
 # [W3C WebDriver Specification Support](https://w3c.github.io/webdriver/webdriver-spec.html)
-The support on a per command basis for the W3C WebDriver Spectication.
+The support on a per command basis for the W3C WebDriver Specification.
 
-Locator Strategies | Status | Available Build
+Locator Strategies| Status|Available Release
 :---------------| :----------- | :--------------
 [CSS selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-css-selector)|Supported|10240|
 [Link text selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-link-text)|Supported|10240|
 [Partial link text selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-partial-link-text)|Supported|10240|
 [XPath selector](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-xpath-selector)|Supported|10586|
 
-Method|URI Template|Command|Status|Available Build/Priority
+Method|URI Template|Command|Status|Available Release/Priority
 :---------------| :------------ | :----------- | :----------- | :--------------
 POST|/session|[New Session](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-new-session)|Supported|10240|
 DELETE|/session/{session id}|[Delete Session](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-session)|Supported|10240|
+GET|/status|[Status](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-status)|Supported|10240|
+GET|/session/{session id}/timeouts|[Get Timeouts](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-timeout)|Not Supported|Priority 3|
+POST|/session/{session id}/timeouts|[Set Timeouts](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-set-timeouts)|Supported|10240|
 POST|/session/{session id}/url|[Go](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-go)|Supported|10240|
 GET|/session/{session id}/url|[Get Current URL](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-current-url)|Supported|10240|
 POST|/session/{session id}/back|[Back](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-back)|Supported|10240|
 POST|/session/{session id}/forward|[Forward](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-forward)|Supported|10240|
 POST|/session/{session id}/refresh|[Refresh](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-refresh)|Supported|10240|
 GET|/session/{session id}/title|[Get Title](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-title)|Supported|10240|
-GET|/session/{session id}/window|[Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handle)|Not&nbsp;Supported|Priority 2|
+GET|/session/{session id}/window|[Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handle)|Supported|Insiders|
 DELETE|/session/{session id}/window|[Close Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-close-window)|Supported|10586|
 POST|/session/{session id}/window|[Switch to Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-switch-to-window)|Supported|10586|
-GET|/session/{session id}/window/handles|[Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles)|Not&nbsp;Supported|Priority 2|
-POST|/session/{session id}/window/fullscreen|[Fullscreen Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-fullscreen-window)|Not&nbsp;Supported|Priority 4|
-POST|/session/{session id}/window/maximize|[Maximize Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-maximize-window)|Not&nbsp;Supported|Priority 2|
-POST|/session/{session id}/window/size|[Set Window Size](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-set-window-size)|Not&nbsp;Supported|Priority 2|
-GET|/session/{session id}/window/size|[Get Window Size](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-size)|Not&nbsp;Supported|Priority 2|
+GET|/session/{session id}/window/handles|[Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles)|Supported|Insiders|
 POST|/session/{session id}/frame|[Switch To Frame](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-switch-to-frame)|Supported|10586|
 POST|/session/{session id}/frame/parent|[Switch to Parent Frame](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-switch-to-parent-frame)|Supported|10586|
-POST|/session/{session id}/element|[Find Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-element)|Supported|10586|
-POST|/session/{session id}/element/{element id}/element|[Find Element From Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-element-from-element)|Supported|10586|
-POST|/session/{session id}/elements|[Find Elements](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-elements)|Supported|10586|
-POST|/session/{session id}/element/{element id}/elements|[Find Elements From Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-elements-from-element)|Supported|10586|
+GET|/session/{session id}/window/rect|[Get Window Rect](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-rect)|Not&nbsp;Supported|Priority 3|
+POST|/session/{session id}/window/rect|[Set Window Rect](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-set-window-rect)|Not&nbsp;Supported|Priority 3|
+POST|/session/{session id}/window/maximize|[Maximize Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-maximize-window)|Not&nbsp;Supported|Priority 3|
+POST|/session/{session id}/window/minimize|[Minimize Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-minimize-window)|Not&nbsp;Supported|Priority 3|
+POST|/session/{session id}/window/fullscreen|[Fullscreen Window](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-fullscreen-window)|Not&nbsp;Supported|Priority 4|
 GET|/session/{session id}/element/active|[Get Active Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-active-element)|Supported|10586|
+POST|/session/{session id}/element|[Find Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-element)|Supported|10586|
+POST|/session/{session id}/elements|[Find Elements](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-elements)|Supported|10586|
+POST|/session/{session id}/element/{element id}/element|[Find Element From Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-element-from-element)|Supported|10586|
+POST|/session/{session id}/element/{element id}/elements|[Find Elements From Element](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-find-elements-from-element)|Supported|10586|
 GET|/session/{session id}/element/{element id}/selected|[Is Element Selected](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-is-element-selected)|Supported|10240|
 GET|/session/{session id}/element/{element id}/attribute/{name}|[Get Element Attribute](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-attribute)|Supported|10240|
 GET|/session/{session id}/element/{element id}/property/{name}|[Get Element Property](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-property)|Not&nbsp;Supported|Priority 2|
@@ -59,30 +64,30 @@ GET|/session/{session id}/element/{element id}/text|[Get Element Text](https://w
 GET|/session/{session id}/element/{element id}/name|[Get Element Tag Name](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-tag-name)|Supported|10240|
 GET|/session/{session id}/element/{element id}/rect|[Get Element Rect](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-element-rect)|Supported|10586|
 GET|/session/{session id}/element/{element id}/enabled|[Is Element Enabled](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-is-element-enabled)|Supported|10240|
-GET|/session/{session id}/source|[Get Page Source](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-page-source)|Supported|10586|
-POST|/session/{session id}/execute/sync|[Execute Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script)|Not&nbsp;Supported|Priority 2|
-POST|/session/{session id}/execute/async|[Execute Async Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script)|Not&nbsp;Supported|Priority 2|
-GET|/session/{session id}/cookie/{name}|[Get Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-cookie)|Supported|10240|
-POST|/session/{session id}/cookie|[Add Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-add-cookie)|Supported|10240|
-DELETE|/session/{session id}/cookie/{name}|[Delete Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-cookie)|Supported|10240|
-DELETE|/session/{session id}/cookie|[Delete All Cookies](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-all-cookies)|Supported|10586|
-POST|/session/{session id}/timeouts|[Set Timeout](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-set-timeout)|Supported|10240|
-POST|/session/{session id}/actions|[Perform Actions](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-perform-actions)|Not&nbsp;Supported|Priority 3|
-DELETE|/session/{session id}/actions|Releasing Actions|Not&nbsp;Supported|Priority 3|
 POST|/session/{session id}/element/{element id}/click|[Element Click](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-element-click)|Supported|10240|
 POST|/session/{session id}/element/{element id}/clear|[Element Clear](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-element-clear)|Supported|10240|
 POST|/session/{session id}/element/{element id}/sendKeys|[Element Send Keys](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-element-send-keys)|Not&nbsp;Supported|Priority 2|
-POST|/session/{session id}/alert/dismiss|[Dismiss Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert)|Not&nbsp;Supported|Priority 2|
-POST|/session/{session id}/alert/accept|[Accept Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert)|Not&nbsp;Supported|Priority 2|
-GET|/session/{session id}/alert/text|[Get Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text)|Not&nbsp;Supported|Priority 2|
-POST|/session/{session id}/alert/text|[Send Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text)|Not&nbsp;Supported|Priority 2|
+GET|/session/{session id}/source|[Get Page Source](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-page-source)|Supported|10586|
+POST|/session/{session id}/execute/sync|[Execute Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-script)|Supported|Insiders|
+POST|/session/{session id}/execute/async|[Execute Async Script](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-execute-async-script)|Supported|Insiders|
+GET|/session/{session id}/cookie|[Get All Cookies](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-all-cookies)|Supported|10240|
+GET|/session/{session id}/cookie/{name}|[Get Named Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-cookie)|Supported|10240|
+POST|/session/{session id}/cookie|[Add Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-add-cookie)|Supported|10240|
+DELETE|/session/{session id}/cookie/{name}|[Delete Cookie](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-cookie)|Supported|10240|
+DELETE|/session/{session id}/cookie|[Delete All Cookies](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-delete-all-cookies)|Supported|10586|
+POST|/session/{session id}/actions|[Perform Actions](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-perform-actions)|Not&nbsp;Supported|Priority 3|
+DELETE|/session/{session id}/actions|[Release Actions](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-release-actions)|Not&nbsp;Supported|Priority 3|
+POST|/session/{session id}/alert/dismiss|[Dismiss Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-dismiss-alert)|Supported|Insiders|
+POST|/session/{session id}/alert/accept|[Accept Alert](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-accept-alert)|Supported|Insiders|
+GET|/session/{session id}/alert/text|[Get Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-alert-text)|Supported|Insiders|
+POST|/session/{session id}/alert/text|[Send Alert Text](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text)|Supported|Insiders|
 GET|/session/{session id}/screenshot|[Take Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-screenshot)|Supported|10240|
 GET|/session/{session id}/element/{element id}/screenshot|[Take Element Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-element-screenshot)|Supported|10240|
 
 # [JSON Wire Protocol Support](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)
 The support on a per command basis for the JSON Wire Protocol.
 
-HTTP Method|Path|Status|Available Build/Priority
+HTTP Method|Path|Status|Available Release/Priority
 :---------------| :------------ | :----------- | :--------------
 GET|[/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#status)|Supported|10240|
 POST|[/session](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#session-1)|Supported|10240|

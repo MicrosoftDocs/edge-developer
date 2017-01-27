@@ -1,12 +1,12 @@
 ---
-description: Learn how to ue the Console tool to view errors and other messages, send debug output, inspect JavaScript objects and XML nodes, and to run JavaScript in the context of the selected window or frame.
-title: Using the Console API
+description: Learn how to use the Console tool to view errors/messages, send debug output, and inspect JavaScript objects/XML nodes.
+title: F12 devtools guide: Console - Microsoft Edge Development
 author: erikadoyle
 ---
 
 # Console Tool
 
-Use the **Console** tool to view errors and other messages, send debug output, inspect JavaScript objects and XML nodes, and to run JavaScript in the context of the selected window or frame.
+Use the **Console** tool to view errors and other messages, send debug output, inspect JavaScript objects and XML nodes, and run JavaScript in the context of the selected window or frame.
 
 ## A window into your code
 
@@ -16,7 +16,7 @@ The primary use for the **Console** tool is to communicate into and out of runni
 
 *In the image above, as the JavaScript command to reload the page is entered in, the IntelliSense auto code completion pops up. Once the reload method is selected, the page reloads and the console sends JavaScript debugging messages out.*
 
-   - **In:** Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of the Microsoft Edge [IntelliSense](https://msdn.microsoft.com/library/hcw1s69b.aspx) auto code completion.
+   - **In:** Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of Microsoft Edge [IntelliSense](https://msdn.microsoft.com/library/hcw1s69b.aspx) auto code completion.
 
    - **Out:** Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./console/using-the-console-api.md).
 
@@ -33,17 +33,17 @@ These messages can be filtered out of the Console output. The icons for each mes
 
 When you click the file name that follows a message, you open the **[Debugger](./debugger.md)** tool and load the file in the script pane.
 
-When the **Clear on navigate** icon is highlighted, the console clears every time the browser navigates to a new webpage. When it isn't highlighted, the browser preserves the contents of the **Console**, but messages from prior webpages are grayed out to better visually indicate they are not from the current page.
+When the **Clear on navigate** icon is highlighted, the console clears every time the browser navigates to a new webpage (including refresh). When it isn't highlighted, the browser preserves the contents of the **Console**, but messages from prior webpages are grayed out to better visually indicate they are not from the current page.
 
 ### Selecting your execution target
 The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
 
 
 
-*In the image above, the Target iframe is selected, then the page reloads to output only Error messages, the file name is clicked to follow the error to the script file where it is located in the Debugger. Returning to the Console, the Error Code itself is clicked, opening the documentation page for that error code.*
+*In the image above, the Target iframe is selected, then the page reloads to output only Error messages. The file name is then clicked to follow the error to the script file where it is located in the Debugger. Returning to the Console, the Error Code itself is clicked, opening the documentation page for that error code.*
 
 ### Sending JavaScript into the Console
-The console not only displays output from code, but provides an interface to execute code as well. Just enter any valid JavaScript at the bottom of the Console, in the command line pane.
+The console not only displays output from code, but provides an interface to execute code as well. Enter any valid JavaScript at the bottom of the Console, in the command line pane, and run the script (enter).
 
 
 
@@ -53,18 +53,7 @@ Generally, all script entered in the command line executes in the [global scope]
 
 If your webpage is built with a **[frameset](https://msdn.microsoft.com/library/ms535251.aspx)** or **[iframes](https://msdn.microsoft.com/library/ms535258.aspx)**, those frames load their own documents in their own windows.
 
-To target the window of a frameset frame or an iframe, use the `cd()` command, with the frame/iframe's name or ID attribute as the argument. For example, you have a frame with the name microsoftFrame and you're loading the Microsoft homepage in it.
-
-   **JavaScript**
-   ```js
-   cd(microsoftFrame);
-   ```
-   ```
-   Current window: www.microsoft.com/default.aspx
-   ```
-
-**Important**  Note that there were no quotes around the name of the frame. Only pass the unquoted name or ID value as the parameter.
-To return to the top level window, use `cd()` with no argument.
+To target the window of a frameset frame or an iframe, select the frame you want to target in the Target dropdown to the right of the console filter icons.
 
 ### Selecting elements in the Console
 Console selectors provide simple shorthands for quickly selecting elements in your DOM structure. They are:
@@ -78,7 +67,7 @@ Console selectors provide simple shorthands for quickly selecting elements in yo
 
 ### The multiline command line
 
-Sending in single line commands is useful, but some tasks require executing longer scripts. Click the double up-arrow symbol to expand the command line. In multiline mode, enter as many lines as you need, then click the green arrow symbol to execute it in the console.
+Sending in single line commands is useful, but some tasks require executing longer scripts. Click the double up-arrow symbol (`Ctrl+Shift+M`) to expand the command line. In multiline mode, enter as many lines as you need, then click the green arrow symbol to execute it in the console (`Ctrl+Enter`). You can also clear the script by clicking the clear symbol (`Esc`).
 
 ![F12 Console Multiline Command Line](./media/f12blueconsolecommandmultiple.png)
 

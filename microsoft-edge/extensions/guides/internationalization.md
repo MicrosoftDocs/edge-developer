@@ -1,6 +1,6 @@
 ---
 description: Make your extension accessible for different languages and test your language strings with the internationalization guide.
-title: Internationalization
+title: Extensions: Internationalization - Microsoft Edge Development
 author: abbycar
 ---
 

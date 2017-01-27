@@ -1,6 +1,6 @@
 ---
 description: See how CSS Animations can be used to create visually appealing rich applications with smooth, fluid, animated experiences.
-title: Animations
+title: Dev guide: Animations - Microsoft Edge Development
 author: libbymc
 ---
 

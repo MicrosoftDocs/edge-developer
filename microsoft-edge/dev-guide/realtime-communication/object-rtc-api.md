@@ -1,6 +1,6 @@
 ---
-description: Learn how Object Real-Time Communications (ORTC) enables media (audio and/or video) to be streamed (sent and received) in real-time directly between web browsers, mobile devices, or servers.
-title: Object RTC API
+description: Learn how Object Real-Time Communications (ORTC) enables media to be streamed in real-time directly between web browsers, mobile devices, or servers.
+title: Dev guide: Object RTC API - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -8,7 +8,9 @@ author: abbycar
 
 Object Real-Time Communications (ORTC) enables media (audio and/or video) to be streamed (sent and received) in real-time directly between web browsers, mobile devices, and servers via native Javascript APIs.
 
-> NOTE: Microsoft Edge now implements ORTC for Windows 10 devices. However, this implementation differs from the most recent version of the [ORTC API](http://go.microsoft.com/fwlink/p/?LinkID=690096). ORTC has continued to evolve since the development and release of Microsoft Edge -- the browser does not implement every object or method within the ORTC API, and includes extensions not currently incorporated within the specification. Further development will continue with the goal to enable developers around the world to build experiences that include the ability to talk to Skype users and other WebRTC compatible communication services.
+> [!NOTE]
+> Microsoft Edge now implements ORTC for Windows 10 devices. However, this implementation differs from the most recent version of the [ORTC API](http://go.microsoft.com/fwlink/p/?LinkID=690096). ORTC has continued to evolve since the development and release of Microsoft Edge -- the browser does not implement every object or method within the ORTC API, and includes extensions not currently incorporated within the specification. Further development will continue with the goal to enable developers around the world to build experiences that include the ability to talk to Skype users and other WebRTC compatible communication services.
+
 
 
 To get a hands-on experience with ORTC, try out these demos on Test Drive:
@@ -34,7 +36,9 @@ The [`RTCDtlsTransport`](https://msdn.microsoft.com/library/Mt502495) and [`RTCS
 
 Several other objects also play a role. The [`RTCIceGatherer`](https://msdn.microsoft.com/library/Mt433107) gathers local ICE candidates for use by a single [`RTCIceTransport`](https://msdn.microsoft.com/library/Mt433112) object. Remaining sections of the API fill in details relating to RTP *capabilities* and *parameters*, *operational statistics* and compatibility with the [WebRTC 1.0 API](http://go.microsoft.com/fwlink/p/?LinkID=627573).
 
-> NOTE: Since Microsoft Edge does not implement the data channel, the `RTCDataChannel` and `RTCSctpTransport` objects are not supported.
+> [!NOTE]
+> Since Microsoft Edge does not implement the data channel, the `RTCDataChannel` and `RTCSctpTransport` objects are not supported.
+
 
  
 
@@ -46,7 +50,9 @@ Several other objects also play a role. The [`RTCIceGatherer`](https://msdn.micr
 * **STUN/TURN/ICE support.** STUN [(RFC 5389)](http://go.microsoft.com/fwlink/p/?LinkID=627619), TURN [(RFC 5766)](http://go.microsoft.com/fwlink/p/?LinkID=627620) as well as ICE [(RFC 5245)](http://go.microsoft.com/fwlink/p/?LinkID=627621), are supported. Within ICE, regular nomination is supported, with aggressive nomination partially supported (as a receiver). DTLS-SRTP [(RFC 5764)](http://go.microsoft.com/fwlink/p/?LinkID=627622) is supported, based on DTLS 1.0 [(RFC4347)](http://go.microsoft.com/fwlink/p/?LinkID=627629).
 * **Codec support.** For [audio codecs](https://msdn.microsoft.com/library/Mt599587), we support G.711, G.722, Opus and SILK. We also support Comfort Noise (CN) and DTMF according to the RTCWEB audio requirements. For video we currently support the [`H.264UC`](https://msdn.microsoft.com/library/Mt589706) codec used by Skype services, supporting advanced features such as simulcast, scalable video coding and forward error correction. We're working toward to enabling interoperable video with H.264.
 
-> NOTE: If you are familiar with WebRTC 1.0 implementations, and are interested in the evolution of object support within WebRTC 1.0 and ORTC, we recommend the following presentation by Google, Microsoft, and Hookflash from the 2014 IIT RTC Conference: “[ORTC API Update](http://go.microsoft.com/fwlink/p/?LinkID=627631).”
+> [!NOTE]
+> If you are familiar with WebRTC 1.0 implementations, and are interested in the evolution of object support within WebRTC 1.0 and ORTC, we recommend the following presentation by Google, Microsoft, and Hookflash from the 2014 IIT RTC Conference: “[ORTC API Update](http://www.rtc-conference.com/2016/wp-content/uploads/gravity_forms/2-2f7a537445fa703985ab4d2372ac42ca/2014/10/ORTC_API_Update.pdf).”
+
 
  
 

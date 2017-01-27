@@ -1,6 +1,6 @@
 ---
 description: Learn how use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
-title: Memory
+title: F12 devtools guide: Memory - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -36,9 +36,9 @@ Each snapshot shows a thumbnail of the webpage as it appeared at the time the sn
 
 In the second snapshot and later, the number of new objects created and old objects removed are shown below the object count. If these numbers are high, you might have a performance problem. When the amount of memory you use isn't bad, but a lot of objects are being created and removed, you create work for the *garbage collector* process which frees up memory. Garbage collecting uses processing power, however, so it's best to find ways to reuse or recycle these objects and give the *garbage collector* a break.
 
-#### Tip  To see how much work the *garbage collector* is doing, profile your webpage with the Performance tool.
+> To see how much work the *garbage collector* is doing, profile your webpage with the Performance tool.
 
-If you click the memory usage numbers, you see a detailed view of that snapshot. If you click the memory change numbers, you see a comparison view highlighting the objects that have been added or modified. In the image above, **Snapshot #2**  includes a **more info** icon (a circle with an "i" in it) and the number 30 next to it. This number represents objects the **Memory** tool has identified as potential memory issues.
+If you click the memory usage numbers, you'll see a detailed view of that snapshot. If you click the memory change numbers, you'll see a comparison view highlighting the objects that have been added or modified. In the image above, **Snapshot #2**  includes a **more info** icon (a circle with an "i" in it) and the number 30 next to it. This number represents objects the **Memory** tool has identified as potential memory issues.
 
 ### Something to look for
 
@@ -60,15 +60,15 @@ If you click the object, you'll see the objects referring to it in the bottom po
 
 ### The three view types
 
-  - **Dominators** view breaks out all individual HTML elements, DOM nodes, and JavaScript objects your code creates. This is the most detailed of the views.
-
   - **Types** view groups objects by their constructor function and gives a count of each type. This makes it easier to know how many arrays you have, how many strings, and so on. Those groups can be expanded to view individual objects.
 
   - **Roots** view shows the major root objects that you can expand to see the child objects associated with them.
+  
+  - **Dominators** view breaks out all individual HTML elements, DOM nodes, and JavaScript objects your code creates. This is the most detailed of the views.
 
 In all three views, there are column headings for an object's size and retained size. The **Size** column documents the amount of memory the object itself uses. The **Retained size** column documents the amount of memory used by the object and its child nodes. For example, an [**HTMLDivElement**](https://msdn.microsoft.com/library/hh869694.aspx) might only consume tens of bytes itself, but might have a retained size in the megabytes because a large image or video is one of its child elements.
 
-In large, complex pages, only the first two thousand objects are loaded, sorted by their retained size. In that case a filtering option is provided to help you narrow down the object set.
+> In large, complex pages, only the first two thousand objects are loaded, sorted by their retained size. In that case a filtering option is provided to help you narrow down the object set.
 
 ### Additional options
 
@@ -82,7 +82,7 @@ You can change settings for the detailed display using a drop-down menu in the u
 
 When an object representing a function is displayed in the **Memory** tool, it is linked to its location in the source code and the color is changed to blue. Clicking on the function name or clicking its line and pressing ENTER switches you to the [**Debugger**](./debugger.md) and focuses on that function's location in the corresponding script.
 
-**Note**   The **Memory** tool displays function names as they exist in memory. If you're using JavaScript that's been compressed or compiled from another language, and you have a **source map**, you could click on a function named `t` in the **Memory** tool, but find the [**Debugger**](./debugger.md) tool focused on a function named `setOrigination`. If this happens and it bothers you, try toggling off **source map** support for that file in the Debugger.
+> The **Memory** tool displays function names as they exist in memory. If you're using JavaScript that's been compressed or compiled from another language, and you have a **source map**, you could click on a function named `t` in the **Memory** tool, but find the [**Debugger**](./debugger.md) tool focused on a function named `setOrigination`. If this happens and it bothers you, try toggling off **source map** support for that file in the Debugger.
 
 ### The comparison view
 
@@ -90,7 +90,7 @@ In snapshots where a change in memory use or object count is shown, click the am
 
 ![Edge Memory Tool Comparison View](./media/Edge_Memory_compare.png)
 
-The comparison view works like the snapshot details view, except :
+The comparison view works like the snapshot details view, except:
 
   - Columns showing the difference in **Size** and **Retained size** are added.
   - The **Scope** menu is added. **Scope** shows you different views of the comparison and is particularly useful when combined with a **three-snapshot method** for memory analysis.

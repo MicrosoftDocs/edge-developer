@@ -1,6 +1,6 @@
 ---
-description: Guides for graphics features in Microsoft Edge.
-title: Graphics
+description: See guides for graphics features in Microsoft Edge like SVG and WebGL.
+title: Dev guide: Graphics - Microsoft Edge Development
 author: abbycar
 ---
 

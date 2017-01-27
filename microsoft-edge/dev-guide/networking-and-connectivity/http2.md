@@ -1,6 +1,6 @@
 ---
-description: Learn how about how HTTP/2 can do header compression and server push, utilize multiplexing, enable prioritizing while making multiple HTTP requests to a domain, and use binary protocol
-title: HTTP2
+description: Learn how about how HTTP/2 can do header compression, utilize multiplexing, and enable prioritizing while making multiple HTTP requests to a domain.
+title: Dev guide: HTTP2 - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -8,7 +8,9 @@ author: erikadoyle
 
 HTTP/2, the first significant rework of the Hypertext Transfer Protocol since 1999, improves web performance, enabling a more efficient use of network resources and reducing the perception of latency. HTTP/2 introduces header compression (eliminating entire roundtrips of unnecessary network latency), Server Push (an unsolicited push of representations from servers to clients), utilizes multiplexing (allowing multiple concurrent exchanges on the same connection), enables prioritizing while making multiple HTTP requests to a domain, and uses binary protocol (whereas HTTP/1.1 uses text protocol). HTTP/2 does not require any changes to the way that existing web applications work, but adds new features that new applications can take advantage of for increased speed.
 
-> NOTE: Microsoft Edge implements the HTTP/2 standard and has removed support for the experimental SPDY/3 protocol. SPDY/3, also known as [TCP Connection Sharing](https://msdn.microsoft.com/library/dn265035(v=vs.85).aspx), was an experimental precursor to HTTP/2 that implemented some network use optimizations.
+> [!NOTE]
+> Microsoft Edge implements the HTTP/2 standard and has removed support for the experimental SPDY/3 protocol. SPDY/3, also known as [TCP Connection Sharing](https://msdn.microsoft.com/library/dn265035(v=vs.85).aspx), was an experimental precursor to HTTP/2 that implemented some network use optimizations.
+
 
 ## Can I use HTTP/2 now?
 

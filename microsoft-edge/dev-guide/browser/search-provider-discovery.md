@@ -1,6 +1,6 @@
 ---
 description: If you are a search provider, see how to ensure that Microsoft Edge supports your service.
-title: Search provider discovery
+title: Dev guide: Search provider discovery - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -9,9 +9,10 @@ author: erikadoyle
 
 Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites. Microsoft Edge follows the [OpenSearch 1.1](http://go.microsoft.com/fwlink/p/?LinkID=208582) specification to discover and use web search providers. If you are a search provider, here's how to ensure that Microsoft Edge supports your service.
 
-
-
- 
+**For user security and privacy, Microsoft Edge requires all searches be conducted over SSL.** The following resources must be specified as `https` URLs to enable Microsoft Edge integration of your search engine:
+* The site that contains the reference to the description document
+* The URL to the description document itself
+* The search query template 
 
 1.  Provide an OpenSearch description file, which contains the name of the search provider, and the template to use to construct the search. Here is an example document:
 	```html
@@ -37,15 +38,4 @@ Rich search integration is built into the Microsoft Edge address bar, including 
 
 When a user browses to your search service, your OpenSearch description will be automatically picked up and saved for later use. The user will then be able to go to Microsoft Edge settings and choose to add your search service to his or her list of search providers for the Microsoft Edge address bar.
 
-For user security and privacy, Microsoft Edge requires that all searches be conducted over SSL. Therefore, the following pages and URLs must be https URLs:
-* The site that contains the reference to the description document
-* The URL to the description document itself
-* The search query template
-
- 
-
- 
-
- 
-
-
+See the [OpenSearch 1.1](http://go.microsoft.com/fwlink/p/?LinkID=208582) specification for further details on creating your OpenSearch description document.

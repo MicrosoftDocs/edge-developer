@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Beacon API to efficiently send beacons of critical information to a server.
-title: Beacon API
+title: Dev guide: Beacon API - Microsoft Edge Development
 author: abbycar
 ---
 

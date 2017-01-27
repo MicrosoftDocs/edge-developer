@@ -1,6 +1,6 @@
 ---
 description: Learn how to create a tag cloud using the Indexed Database (IndexedDB) API.
-title: How to create create a tag cloud using IndexedDB
+title: Dev guide: How to create a tag cloud using IndexedDB - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -10,13 +10,13 @@ Many websites organize their content using keywords, also known as tags. In addi
 
 Imagine that you're creating a photo gallery and you want your visitors to be able to add custom titles, descriptions, and tags to your images. You also want to create a tag cloud that provides your visitors with a custom search experience, one based on their input.
 
-This guide and it's examples will walk you though how to create a tag cloud using the [Indexed Database (IndexedDB) API](http://go.microsoft.com/fwlink/p/?LinkId=224519), which is a standard for storing data on a user's device. By utilizing this API and its objects, you'll be able to track images and tags.
+This guide and it's examples will walk you though how to create a tag cloud using the [Indexed Database (IndexedDB) API](http://go.microsoft.com/fwlink/p/?LinkId=224519), which is a standard for storing data on a user's device. By utilizing this API and its objects, you'll be able to track images and tags. 
 
 
 
 ## Determining database needs
 
-In some respects, database projects are like the classic "chicken or the egg" question. You can't save data until you have a place to store it and you can't create the storage area until you understand what needs to be saved. In such cases, it helps to look at how the user might enter and update the data. We need to determine how users interact with the webpage to associate tags, define custom titles, and so on. After nailing this down, we're able to make a framework to determine data requirements.
+In some respects, database projects are like the classic "chicken or the egg" question. You can't save data until you have a place to store it and you can't create the storage area until you understand what needs to be saved. In such cases, it helps to look at how the user might enter and update the data. We need to determine how users interact with the webpage to associate tags, define custom titles, and so on. After nailing this down, we're able to make a framework to determine data requirements. 
 
 
 ### Gathering user input
@@ -42,15 +42,15 @@ When people visit your photo gallery, they'll view individual images in a webpag
    <div id="divDataForm"><form id="fImageDetails">
       <img id="iGalleryImage" src="images/default.jpg" />
 
-      <label for="inImgTitle">Title:</label>
+      <label for="inImgTitle">Title:</label> 
       <input id="inIImgTitle" name="newimage" type="text" /><br/>
 
-      <label for="inImgDesc">Description:</label>
+      <label for="inImgDesc">Description:</label> 
       <textarea id="inImgDesc"></textArea><br/>
 
-      <label for="inImgTags">Tags (comma separated):</label>
+      <label for="inImgTags">Tags (comma separated):</label> 
       <input id="inImgTags" type="text" /><br/>
-
+  
       <input type="submit" value="Save" />
       <input type="reset" value="Reset" />
    </form></div><br />
@@ -72,7 +72,7 @@ This code snippet defines three functions:
 
 ```javascript
 function collectFormData ( strImageURL ) {
-// Gathers information from the form and packages it
+// Gathers information from the form and packages it 
 // for the database.
 
    var d = document;
@@ -85,7 +85,7 @@ function collectFormData ( strImageURL ) {
    var sTagCDL = d.getElementById( 'inImgTags' ).value;
    var aImageTags = sTagCDL.split( /\s*,\s*/ );
    saveImageDetails( oImageDetails, aImageTags );
-}
+} 
 
 function updateFormData( oImageDetails, aImageTags ) {
 // Updates the form with data passed through the parameters.
@@ -178,9 +178,9 @@ Use the [**window.indexedDB**](https://msdn.microsoft.com/library/hh772512(v=vs.
 
 ```javascript
 var oIndexDB = null;
-  if ( window.indexedDB ) {
+  if ( window.indexedDB ) { 
      oIndexDB = window.indexedDB
-  }
+  } 
   if ( oIndexDB == null ) {
      handleError();
   }
@@ -202,12 +202,12 @@ For local use, the "file://" URI scheme is also supported.
 try {
 
   // hDB is a global variable.
-  hDb = null;
+  hDb = null; 
   if (window.indexedDB) {
 
     var req = window.indexedDB.open( "IxImageGallery", 1.0 );
 
-    req.onsuccess = function(evt) {
+    req.onsuccess = function(evt) { 
        hDB = evt.target.result;
     }      
 
@@ -216,12 +216,12 @@ try {
 
     req.onupgradeneeded = function(evt) {
        createDatabaseObjects( evt.target.result );
-    }
+    } 
   } catch( ex ) {
     handleException( ex );
   }
  ```
-
+ 
 As implemented by Internet Explorer 10, **IndexedDB** is an asynchronous API. Instead of receiving results from a statement, you receive a *request object*. You then define event handlers for the request object to respond to different types of results. If the request succeeds, a [**success**](https://msdn.microsoft.com/library/Hh772617) event is fired. If a problem occurs, an [**error**](https://msdn.microsoft.com/library/Hh972900) event fires.
 
 In this snippet, the value returned by the `open` method is an [**IDBOpenDBRequest**](https://msdn.microsoft.com/library/Hh972899) object. When the database is successfully opened, a handle to the open database is returned as the [**target.result**](https://msdn.microsoft.com/library/Hh772623) property of the event object passed to the success event handler.
@@ -231,7 +231,7 @@ Additional handlers for different request results are also defined. If an error 
 
 The [**upgradeneeded**](https://msdn.microsoft.com/library/Hh772611) event allows you to create database objects, such as object stores and indexes; it's triggered when you open a database with a higher version number than the one previously used to open the database. If the database doesn't exist, it's created and then opened. As with the success handler, the event object passed to the **upgradeneeded** event also includes a handle to the database in the **target.result** property. The anonymous function in this example passes that handle to a function called `createDatabaseObjects.`
 
-You can only create object stores and indexes in the context of an [**upgradeneeded**](https://msdn.microsoft.com/library/Hh772611) event, which occurs in the context of a "version change" transaction. A *transaction* is a group of operations that must all succeed or they all fail.
+You can only create object stores and indexes in the context of an [**upgradeneeded**](https://msdn.microsoft.com/library/Hh772611) event, which occurs in the context of a "version change" transaction. A *transaction* is a group of operations that must all succeed or they all fail. For more info, see [Managing data with transactions](./how-to-create-a-tag-cloud-using-indexeddb/managing_data_with_transactions.md).
 
 
 You'll also notice that the **upgradeneeded** event doesn't refer to the global variable when calling the function. Because the **upgradeneeded** event fires before the **success** event, the global variable has not yet been assigned the database handle. Attempting to access the global variable would generate an exception and prevent the database from being created or opened.
@@ -248,7 +248,7 @@ function createDatabaseObjects( dbHandle ) {
    if ( dbHandle == null ) {
       updateResults( "Can't create database objects; the database is not open." );
    } else {
-
+   
       var oOptions = { keyPath : "RecordID", autoIncrement : true };
       var oStore = dbHandle.createObjectStore( "ImageDetails", oOptions );
 
@@ -260,8 +260,8 @@ function createDatabaseObjects( dbHandle ) {
       oStore.createIndex( "IxTagsByWord", "TagWord", oIxOptions );
       oStore.createIndex( "IxTagsByImage", "ImageID", oIxOptions );
 
- } catch (ex) {
-     handleError(ex.message);
+ } catch (ex) { 
+     handleError(ex.message); 
  }
 }
 ```
@@ -278,7 +278,7 @@ The design of your object stores and indexes is critical for the success of your
 
 ## Managing data with transactions
 
-A *transaction* is a group of related operations that either all succeed or all fail. In order to open **IndexedDB** object stores and use them to retrieve and save data, you need an understanding of all **IndexedDB** data operations that occur within the context of a transaction.
+A *transaction* is a group of related operations that either all succeed or all fail. In order to open **IndexedDB** object stores and use them to retrieve and save data, you need an understanding of all **IndexedDB** data operations that occur within the context of a transaction. 
 
 ### Understanding transactions
 
@@ -309,7 +309,7 @@ function saveRecord( oNewRecord ) {
    if ( hDB == null ) {
       updateResults( "Can't save data; the database is not open." );
    } else {
-
+   
      var hTransaction = hDB.transaction( ""ObjectStoreName", "readwrite" );
      var hObjectStore = hTransaction.objectStore( "ObjectStoreName" );
      var hImageReq = hObjectStore.put( oNewRecord );
@@ -330,7 +330,7 @@ Also, assume that you use the image gallery form to update the description of th
 if ( hDB == null ) {
       updateResults( "Can't save data; the database is not open." );
    } else {
-
+   
      var hTransaction = hDB.transaction( "ImageDetails", "readwrite" );
      var hObjectStore = hTransaction.objectStore( "ImageDetails" );
 
@@ -342,9 +342,9 @@ if ( hDB == null ) {
      hIndexReq._NewRecord = oNewRecord;
      hIndexReq.onerror = handleRequestEvent;
      hIndexReq.onsuccess = function( evt ) {
-
+        
         var oRecord = this._NewRecord ];
-        var oTarget = evt.target;
+        var oTarget = evt.target; 
         if ( oTarget.result != null ) {
            var sKeyPath = oTarget.source.objectStore.keyPath;
            oRecord[ sKeyPath ] = oTarget.result.primaryKey;
@@ -380,7 +380,7 @@ var aImageTags = getImageTags();
    var hObjectStore = hTransaction.objectStore( "ImageTags" );
    for ( var iArrayIndex = 0; iArrayIndex < ( iArraySize ); iArrayIndex++ ) {
 
-      var oRecord = { imageid : iImageID,
+      var oRecord = { imageid : iImageID, 
                       tag : aImageTags[ iArrayIndex ] };
       var hRequest = hObjectStore.put( oRecord );
       hRequest.onsuccess = handleRequestEvent;
@@ -440,10 +440,10 @@ var aNewTags = getNewTags();
    hRequest._ImageID = iImageID;
    hRequest.onerror = handleRequestEvent;
    hRequest.onsuccess = function( evt ) {
-
+   
       var oCursor = evt.target.result;
-      if ( oCursor ) {
-
+      if ( oCursor ) { 
+      
          var sTag = oCursor.value.name;
          var iIndexNo = this._LocalTags.indexOf( sTag );
          if ( iIndexNo == -1 ) {
@@ -454,14 +454,14 @@ var aNewTags = getNewTags();
             this._LocalTags[ iIndexNo ] = "";   
          }
          oCursor.continue();
-
+         
       } else {
-
+      
            // add remaining tags to objectstore.
            for (var iIndex = 0; iIndex < this._LocalTags.length; iIndex++) {
               var sNewTag = this._LocalTags[ iIndex ];
-              if ( sNewTag != "" ) {
-                 var oNewTag = { indexid : this_ImageID,
+              if ( sNewTag != "" ) { 
+                 var oNewTag = { indexid : this_ImageID, 
                                  tagword : sNewTag };
                  var reqTagAdd = evt.target.source.objectStore.add( oNewTag );
                  reqNewAdd.onsuccess = handleRequestEvent;
@@ -491,7 +491,7 @@ function getImageDetails( sFilename ) {
    if ( hDB == null ) {
       hDB = openImageDatabase();
    } else {
-
+   
      var hTransaction = hDB.transaction( [ "ImageDetails", "ImageTags" ], "readonly" );
      var hDetails = hTransaction.objectStore( "ImageDetails" );
      var hIdxImage = hDetails.index( "IxImagesByName" );
@@ -551,7 +551,7 @@ Transactions are the key to getting to data stored in **IndexedDB** object store
    var hRequest = hIdxWords.openCursor();
 
    hRequest.onsuccess = function( evt ) {
-
+   
       var oCursor = evt.target.result;
       if ( oCursor ) {
          var sTagWord = oCursor.value.TagWord;
@@ -588,7 +588,7 @@ try
    while ( oCloud.hasChildNodes() ) {
       oCloud.removeChild( oCloud.childNodes[ 0 ] );
    }
-
+   
    // Create and add span elements for each tag
    for (var sTagAttr in oTagWords )
    {   
@@ -601,8 +601,8 @@ try
       // Add white space between each span.
       oCloud.appendChild( oSpace.cloneNode() );
    }
- } catch (ex) {
-     handleError( ex.message );
+ } catch (ex) { 
+     handleError( ex.message ); 
  }
 }
 
@@ -624,10 +624,10 @@ The assignment of the style depends on the application and the expected number o
 The styles can be fairly simple, as shown in the following example:
 
 ```css
-  #divTagCloud {
+  #divTagCloud { 
      border : 1px solid #000000;
   }
-
+ 
   #divTagCloud span { padding : 2px; }
   .tagSize1 { font-size : x-small; }
   .tagSize2 { font-size : small; }
@@ -646,13 +646,13 @@ This value is then combined with the *IdxTagsByWord* index to determine the matc
 This code snippet shows the entire process:
 
 ```javascript
-function showTagImages( evt ) {
+function showTagImages( evt ) { 
 
  try {
    if ( hDB == null ) {
       updateResults( "Can't show results; the database is not open." );
    } else {
-
+   
 
      // Clear previous results and create new list for results
      var oResults = getElementObject( "divTagResults" );
@@ -668,15 +668,15 @@ function showTagImages( evt ) {
      // Find the IDs of the images using the selected tag.
      var hTransaction = hDB.transaction( [ "ImageDetails", "ImageTags" ], "read" );
      var hObjectStore = hTransaction.objectStore( "ImageTags" );
-     var hIndex = hObjectStore.index( "IxTagsByWord" );
-
+     var hIndex = hObjectStore.index( "IxTagsByWord" ); 
+    
      var hRequest = hIndex.openCursor( sTagWord );
      hResult._parentList = oList;
      hRequest.onerror = handleRequestEvent;
      hRequest.onsuccess = function( evt ) {
-
+     
         var oCursor = evt.target.result;
-        if ( oCursor ) {
+        if ( oCursor ) { 
 
            // For each matching ID, locate the corresponding image record.
            hImageStore = hTransaction.objectStore( "ImageDetails", "readonly" );
@@ -685,11 +685,11 @@ function showTagImages( evt ) {
            hReqImage._parentList = this._parentList;
            hReqImage.onerror = handleRequestEvent;
            hReqImage.onsuccess = function( evt ) {
-
-              // Now that we have the image details, create an anchor (link)
+     
+              // Now that we have the image details, create an anchor (link) 
               // element and a list item, and then add them to the list.
               var oCursor = evt.target.result;
-              if ( oCursor ) {
+              if ( oCursor ) { 
 
               var oRecord = oCursor.value;
               var oListElement = document.createElement( "li" );
@@ -697,11 +697,11 @@ function showTagImages( evt ) {
 
               // Base the target URL on the current page
               var oLocation = window.location;
-              var sTarget = oLocation.protocol + "//" +
+              var sTarget = oLocation.protocol + "//" + 
                              oLocation.host + oLocation.pathname;
               sTarget += "?newimage=" + oRecord.FileName;
-
-
+                              
+                             
               oLinkElement.textContent = oRecord.ImageTitle;
               oLinkElement.href = sTarget;
               oListElement.appendChild( oLinkElement );
@@ -710,8 +710,8 @@ function showTagImages( evt ) {
          }
       }    
    }
-} catch (ex) {
-     handleError( "List Results Exception: " + ex.message);
+} catch (ex) { 
+     handleError( "List Results Exception: " + ex.message); 
  }
 }
 ```
@@ -752,7 +752,7 @@ function doPageSetup() {
       // assume images are stored in a child directory named 'images'
       oImage.src = 'images/' + sFilename;
    }
-
+   
    getImageDetails( sFilename );
 }
 ```

@@ -1,6 +1,6 @@
 ---
-description: Learn how the Console API can be used to send meaningful information to the Console from within an application and obtain diagnostic information from within the Console tool.
-title: Console
+description: Learn how the Console API can be used to send info to the Console from within an application and obtain diagnostics.
+title: F12 devtools guide: Using the console API - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -42,7 +42,7 @@ console.log(mytext);
 ```javascript
 var mytext = 'pieces';
 var myval = 0;
-console.log("The number of " + mytext + "is " + myval);
+console.log("The number of " + mytext + " is " + myval);
 ```
 >`The number of pieces is 0`
 
@@ -74,7 +74,7 @@ To display an inspectable JavaScript object, send it to the console using [`cons
 
 To display an inspectable DOM node, send it to the console using [`console.dirxml()`](https://msdn.microsoft.com/library/dn265067.aspx)
 
-Open this codepen sample with the F12 tool, click the "show it" button to display both objects and nodes in the console.
+Open the F12 tools for this page, then click the "show it" button in the codepen sample below to display both objects and nodes in the console.
 
 <div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="PNEKQX?editors=1010" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/PNEKQX?editors=1010">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 

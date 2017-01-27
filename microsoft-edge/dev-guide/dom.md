@@ -1,6 +1,6 @@
 ---
-description: Guides for DOM APIs and features.
-title: DOM
+description: See guides for DOM APIs and features like the Gamepad API and pointer events.
+title: Dev guide: DOM - Microsoft Edge Development
 author: erikadoyle
 ---
 

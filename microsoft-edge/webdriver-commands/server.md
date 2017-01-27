@@ -1,6 +1,6 @@
 ---
-description: This article contains information about server-related commands.
-title: Server
+description: Learn useful information about server-related commands for the WebDriver API.
+title: Webdriver commands: Server - Microsoft Edge Development
 author: erikadoyle
 ---
 

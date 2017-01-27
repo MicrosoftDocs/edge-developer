@@ -1,6 +1,6 @@
 ---
 description: See how Microsoft Edge brings enhanced scaling for high DPI screens with properties like devicePixelRatio.
-title: High DPI support
+title: Dev guide: High DPI support - Microsoft Edge Development
 author: abbycar
 ---
 

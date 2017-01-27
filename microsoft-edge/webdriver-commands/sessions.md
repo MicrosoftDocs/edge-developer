@@ -1,6 +1,6 @@
 ---
-description: This article contains information about session-related commands.
-title: Sessions
+description: Learn useful information about session-related commands for the WebDriver API.
+title: Webdriver commands: Sessions - Microsoft Edge Development
 author: erikadoyle
 ---
 

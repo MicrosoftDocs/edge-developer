@@ -1,6 +1,6 @@
 ---
 description: Analyze your website with the Windows Performance Toolkit. This article explains how to install the toolkit and record/analyze a performance trace.
-title: Windows Performance Toolkit
+title: Performance analysis: Windows performance toolkit - Microsoft Edge Development
 author: erikadoyle
 ---
 

@@ -1,6 +1,6 @@
 ---
-description: This article contains information about window-related commands.
-title: Window
+description: Learn useful information about window-related commands for the WebDriver API.
+title: Webdriver commands: Window - Microsoft Edge Development
 author: erikadoyle
 ---
 

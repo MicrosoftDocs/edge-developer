@@ -1,6 +1,6 @@
 ---
 description: Learn how the Web Notifications API can be used to let websites send users notifications outside the context of the Microsoft Edge browser.
-title: Web Notifications API
+title: Dev guide: Web Notifications API - Microsoft Edge Development
 author: abbycar
 ---
 

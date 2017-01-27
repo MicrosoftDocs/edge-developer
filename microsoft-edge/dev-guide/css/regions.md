@@ -1,6 +1,6 @@
 ---
-description: See how CSS Regions can be used to achieve more flexible, magazine-like, content flow through specified regions of the page (for example, flowing text along the contour of a mountain).
-title: Regions
+description: See how CSS Regions can be used to achieve flexible, magazine-like, content flows through specified regions of the page.
+title: Dev guide: Regions - Microsoft Edge Development
 author: libbymc
 ---
 

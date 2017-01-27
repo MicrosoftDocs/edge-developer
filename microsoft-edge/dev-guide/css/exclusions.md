@@ -1,6 +1,6 @@
 ---
 description: See how CSS Exclusions define how inline content flow around elements, extending the content wrapping ability of floats to any block-level element.
-title: Exclusions
+title: Dev guide: Exclusions - Microsoft Edge Development
 author: libbymc
 ---
 
@@ -9,12 +9,14 @@ author: libbymc
 [CSS Exclusions](https://msdn.microsoft.com/library/hh772711?f=255&MSPPError=-2147217396) define how inline content flow around elements, extending the content wrapping ability of floats to any block-level element. CSS Exclusions include the following properties:
 
 Property | Description
-:------------ | :-------------
+:------------ | :------------- 
 [-ms-wrap-flow](https://msdn.microsoft.com/library/hh772045.aspx) | Gets or sets a value that specifies how exclusions impact inline content within block-level elements.
 [-ms-wrap-margin](https://msdn.microsoft.com/library/hh772042.aspx) | Gets or sets a value that is used to offset the inner wrap shape from other shapes.
 [-ms-wrap-through](https://msdn.microsoft.com/library/hh771900.aspx) | Gets or sets a value that specifies how content should wrap around an exclusion element.
 
-> NOTE: CSS Exclusions currently have **-ms prefixed** support in Microsoft Edge build 10240+.
+> [!NOTE]
+> CSS Exclusions currently have **-ms prefixed** support in Microsoft Edge build 10240+. 
+
 
 
 Web authors can now wrap text so that it completely surrounds elements, thereby avoiding the traditional limitations of floats. Instead of limiting elements to floating either to the left or right relative to their position in the document flow, *CSS Exclusions* can be positioned at a specified distance from the top, bottom, left, or right sides of a containing block, while remaining part of the document flow.
@@ -23,7 +25,7 @@ Support for CSS Exclusions enables scenarios like the one illustrated in the fol
 
 ![CSS Exclusions Example](./../media/exclusions_example.png)
 
-Furthermore, you can combine *CSS Exclusions* with other layout features, such as [CSS Grid](./grid-layout.md), [CSS Multi-column](./multi-column-layout.md), and [CSS Flexbox](./flexbox.md). The following subsections provide a brief overview of *CSS Exclusions* and how to implement them.
+Furthermore, you can combine *CSS Exclusions* with other layout features, such as [CSS Grid](./grid-layout.md), [CSS Multi-column](./multi-column.md), and [CSS Flexbox](./flexbox.md). The following subsections provide a brief overview of *CSS Exclusions* and how to implement them.
 
 ## Exclusion terms defined
 

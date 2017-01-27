@@ -1,6 +1,6 @@
 ---
-description: See how Microsoft Edge provides a reading view for webpages.
-title: Reading view
+description: See how Microsoft Edge provides a reading view for webpages to enable add-free reading.
+title: Dev guide: Reading view - Microsoft Edge Development
 author: erikadoyle
 ---
 

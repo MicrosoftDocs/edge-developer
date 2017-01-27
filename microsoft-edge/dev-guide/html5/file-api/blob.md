@@ -1,6 +1,6 @@
 ---
 description: See how the blob constructor allows you to easily create and manipulate a blob (typically equivalent to a file) directly on the client.
-title: Blob
+title: Dev guide: Blob - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -59,7 +59,9 @@ We next copy the content from `blobObject` and save it to a text file (which is 
 window.navigator.msSaveBlob(blobObject, 'msSaveBlob_testFile.txt');`
 ```
 
-> NOTE: In Microsoft Edge, the download is started automatically.
+> [!NOTE]
+> In Microsoft Edge, the download is started automatically.
+
 
 ### `Blob` feature detection
 

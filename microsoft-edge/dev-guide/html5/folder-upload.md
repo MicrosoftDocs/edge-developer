@@ -1,6 +1,6 @@
 ---
-description: Learn how to add support for folder uploading to your website.
-title: Folder upload
+description: Learn how to add support for folder uploading to your website by using a picker or drag-and-drop.
+title: Dev guide: Folder upload - Microsoft Edge Development
 author: erikadoyle
 ---
 

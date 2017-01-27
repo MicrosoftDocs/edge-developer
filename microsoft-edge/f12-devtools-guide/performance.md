@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Performance tool to profile your webpage’s frame rate and JavaScript execution times.
-title: Performance
+title: F12 devtools guide: Performance - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -66,7 +66,7 @@ The **Timeline details** look deeper into the recorded events, breaking down the
 
 In the previous image, The `DOMContentLoaded` event has a very short *exclusive duration* time, which is the time it took for the event itself to fire. The longer *inclusive duration* includes not only the event, but several processes launched as a result of the event.
 
-The **event type filter** offers filters for **background activity**, **network traffic**, **UI activity** and **user measures**. When one of those options is selected, that kind of event is filtered out of the **Timeline details**. For example, while a page is loading, the details can be overwhelmed by **HTTP request** events. Click the **event type filter** and uncheck **network traffic** to make them disappear from view. 
+The **event type filter** offers filters for **background activity**, **network traffic**, **UI activity** and **user measures**. When one of those options is unselected, that kind of event is filtered out of the **Timeline details**. For example, while a page is loading, the details can be overwhelmed by **HTTP request** events. Click the **event type filter** and uncheck **network traffic** to make them disappear from view. 
 
 In the image below, at the bottom of the dialog, a time filter is shown as set to filter out all events taking less than 1 millisecond, and a text box at the top is set to filter by text in the event's name.
 

@@ -1,6 +1,6 @@
 ---
 description: Learn how the Xpath API can be used to locate and process elements in an eml document.
-title: Xpath
+title: Dev guide: Xpath - Microsoft Edge Development
 author: abbycar
 ---
 
@@ -15,7 +15,7 @@ In older versions of Windows Internet Explorer, developers had to use 3rd party 
 For more information about XPath, check out [Improving interoperability with DOM L3 XPath](http://blogs.windows.com/msedgedev/2015/03/19/improving-interoperability-with-dom-l3-xpath/) on the Microsoft Edge dev blog.
 
 ## Example
-The code below demonstrates a use of the new XPath functionality. It delivers the same results across all major browsers: logging the appropriate numbers within the `span` elements to the developer [console](../../f12-devtools-guide/console.md).
+The code below demonstrates a use of the new XPath functionality. It delivers the same results across all major browsers: logging the appropriate numbers within the `span` elements to the developer [console](./../f12-devtools-guide/console.md).
 
 <div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="eZEjBN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/eZEjBN">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -26,3 +26,5 @@ The code below demonstrates a use of the new XPath functionality. It delivers th
 
 ## Specification
 [Document Object Model (DOM) Level 3 XPath Specification](http://go.microsoft.com/fwlink/p/?LinkId=524495)
+
+

@@ -1,12 +1,16 @@
 ---
 description: Find information on current and future APIs as well their known issues/Chrome incompatibilities.
-title: Supported APIs
+title: Extensions: Supported APIs - Microsoft Edge Development
 author: abbycar
 ---
 
 #  Supported APIs
 
 The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
+
+> [!NOTE]
+> For Microsoft Edge, all extension APIs are under the `browser` namespace, e.g. `browser.browserAction.disable()`.
+
 
 ## Overarching issues
 
@@ -31,7 +35,7 @@ The following `browserAction` APIs are supported:
 | [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | | |
 | [browserAction.setPopup](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction/setPopup)  | | |
 | [browserAction.getBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeText)   | | |
-| [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. | |
+| [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. <br/><br/> The `imageData` parameter is not supported. <br/><br/> `path` is a required parameter.| |
 
 ## contextMenus
 
@@ -109,7 +113,7 @@ API | Known issues | Chrome incompatibilities
 [pageAction.getTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/getTitle) | | |
 [pageAction.hide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/hide) | | |
 [pageAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/onClicked) | | |
-[pageAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setIcon) | | `ImageData` is not supported. |
+[pageAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setIcon) | | The `imageData` parameter is not supported. <br/><br/> `path` is a required parameter. |
 [pageAction.setPopup](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setPopup) | | |
 [pageAction.setTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setTitle) | | |
 [pageAction.show](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/show) | | |
@@ -142,7 +146,7 @@ API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :------------------------
 [storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage) |  | |
 [storage.local.get](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/get)  | | |
-[storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | `storage` has a 1MB limit per value. |
+[storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [storage.local.remove](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/remove)  | | |
 [storage.local.clear](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [storage.local.getBytesInUse](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`.  <br/><br/>Ex: `storage.local.set({ "k": { "s": "âas" } }` returns 13 in Chrome and 50 in Microsoft Edge.|

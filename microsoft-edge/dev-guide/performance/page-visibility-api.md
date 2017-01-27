@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Page Visibility API to determine the current visibility of a document (or whether the page is in focus) and be notified when the visibility changes.
-title: Page Visibility API
+title: Dev guide: Page Visibility API - Microsoft Edge Development
 author: abbycar
 ---
 

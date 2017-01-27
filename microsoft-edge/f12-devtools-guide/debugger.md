@@ -1,6 +1,6 @@
 ---
-description: Learn how to use the Debugger tool to navigate your code as it runs, set watches and breakpoints, view call stacks, and improve the readability of compiled/minified JavaScript.
-title: Debugger
+description: Learn how to use the Debugger tool to navigate your code as it runs, set watches and breakpoints, and view call stacks.
+title: F12 devtools guide: Debugger - Microsoft Edge Development
 author: erikadoyle
 ---
 
@@ -11,15 +11,15 @@ Use the **Debugger tool** to navigate your code as it runs, set watches and brea
 ## When do you need the Debugger tool?
 The **Debugger tool** helps you figure out why pieces of your code are:
 
-  - not running as expected.
-  - not running when expected.
-  - running when they shouldn't.
+  - Not running as expected.
+  - Not running when expected.
+  - Running when they shouldn't.
 
 The **Debugger tool** pauses code mid-execution, lets you back up and repeat blocks of code, and lets you inspect your code from different angles to see:
 
-  - how the JavaScript engine got there.
-  - what the values of certain variables are mid-execution.
-  - how things are changing, step-by-step.
+  - How the JavaScript engine got there.
+  - What the values of certain variables are mid-execution.
+  - How things are changing, step-by-step.
 
 ## Starting the Debugger tool
 Load the problematic webpage in Microsoft Edge and open F12 developer tools by pressing the **F12** key or selecting the **F12 developer tools** option from the **More Actions** menu. Click the **Debugger** menu item or press CTRL + 3 to open the tool.
@@ -121,7 +121,7 @@ A number of compilers and compressors now provide source maps; intermediate file
 //# sourceMappingURL=myfile.min.js.map
 ```
 
-When you open a file with **Debugger tool** that has this kind of comment, the tool looks for the map file. If found, the last [toolbar](#controlling-session-flow) icon on the right ![Edge Debugger Execution Control Icons](./media/gdr_f12_SourceMapsIcon.png) is enabled as a toggle. When the icon is toggled on and the source file is where the map indicates, your source code is displayed instead of the compiled/compressed JavaScript or CSS. If the source file cannot be found, the **Debugger tool** displays an error message.
+When you open a file with **Debugger tool** that has this kind of comment, the tool looks for the map file. If found, the last [toolbar](./debugger#controlling-session-flow.md) icon on the right ![Edge Debugger Execution Control Icons](./media/gdr_f12_SourceMapsIcon.png) is enabled as a toggle. When the icon is toggled on and the source file is where the map indicates, your source code is displayed instead of the compiled/compressed JavaScript or CSS. If the source file cannot be found, the **Debugger tool** displays an error message.
 
 If the map isn't found automatically, you can choose a source map for a file. Right click the file's tab to find this option. This is useful for code where comments like the one with the source map's location have been stripped out.
 
@@ -135,14 +135,12 @@ The **Debugger tool** won't display an error if the map is not found. In many ca
 Different types of points allow you to instruct the **Debugger tool** to do different things when it reaches them.
 
   - **Regular breakpoints** are the easiest to set if you have one statement per line. In the shaded leftmost margin of the script pane, click next to a line number. A dot appears and the breakpoint is set.
-
-On lines with multiple statements, you can set breakpoints for individual statements. Right-click on a statement and set a breakpoint from the context menu or put the cursor inside the statement and click F9.
+  On lines with multiple statements, you can set breakpoints for individual statements. Right-click on a statement and set a breakpoint from the context menu or put the cursor inside the statement and click F9.
 
   - **Conditional breakpoints** only break if a condition you set evaluates to true. For example, let's assume there's a students variable in your code and you only want to break when the value of students is greater than 20.
 Right-click the breakpoint or statement and click Condition from the context menu, or press ALT + F9. In the condition dialogue, enter `students > 20` and submit the condition. `A + symbol` appears on your breakpoint and your code only breaks on it when `students > 20` evaluates to true.
 
   - **Tracepoints** act like temporary `console.log()` commands.
-
 To set one, right-click a statement and click **Insert tracepoint** from the context menu. In the dialog, enter a message in the same format you would use for an argument of the `console.log()` command. It has access to the same local and global variables the statement you clicked on does.
 
   - **Event Breakpoints and Tracepoints** work like the breakpoints and tracepoints above, but instead of being triggered when a specific block of code is executed, they are triggered by specific events. Each has an optional conditional filter to help you narrow down their scope to the specific instance of an event you want to inspect. They can be added using the **Add event breakpoint** and **Add event tracepoint** icons highlighted in the image below.
@@ -224,13 +222,15 @@ Just my code lets you indicate that certain scripts are third-party libraries th
 
 To indicate a file is library code you want excluded from debugging, the following methods are available:
 
-  - place your mouse over its name in the script pane's file list. The Just my code icon appears next to the file name. Click the icon or type CTRL + L to toggle it on or off.
+  - Place your mouse over its name in the script pane's file list. The Just my code icon appears next to the file name. Click the icon or type CTRL + L to toggle it on or off.
 
   - Right-click the script's tab at the top of the pane and select "Library code" from the context menu.
 
   - Right click an item in the **Call stack** and select "Library code" from the context menu to mark its parent script as library code.
 
-> NOTE:   Because the icon displays when you mouse over the file's name, it continues to display after being toggled off if the mouse pointer is still over the file's line in the list. To check that it's been toggled off, move the mouse over another file.
+> [!NOTE]
+>   Because the icon displays when you mouse over the file's name, it continues to display after being toggled off if the mouse pointer is still over the file's line in the list. To check that it's been toggled off, move the mouse over another file.
+
 
 The **Just my code** icon in the **Debugger tool**'s icon bar acts as a toggle to include or exclude all the files that have been marked as library code. When **Just my code** is enabled, if library code is part of the **Call stack** when execution pauses, the **Just my code** icon in the upper right corner of the **Call stack** pane toggles the details of that execution frame on and off. Double-clicking on a "[Library code]" line in the **Call stack** pane expands its details.
 
