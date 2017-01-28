@@ -8,7 +8,7 @@ author: abbycar
 
 This guide walks through how to localize your Microsoft Edge extension so that it's ready for multiple locales upon release. To fully localize your extension, you'll need to follow the steps for both Windows and the Windows Store.
 
-If you want to localize your extension resources for Microsoft Edge, you can learn how to use the i18n framework in the [Internationalization guide](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/extensions/guides/internationalization/).
+If you want to localize your extension resources for Microsoft Edge, you can learn how to use the i18n framework in the [Internationalization guide](../internationalization.md).
 
 
 > [!NOTE]
