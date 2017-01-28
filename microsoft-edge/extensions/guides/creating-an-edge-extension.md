@@ -66,7 +66,7 @@ the extension will work with Microsoft Edge:
 
 **manifest.json**
 
-- Remove the following [unsupported manifest keys](https://developer.microsoft.com/microsoft-edge/platform/documentation/extensions/api-support/supported-manifest-keys/):
+- Remove the following [unsupported manifest keys](../api-support/supported-manifest-keys.md):
    - `"manifest_version"`
    - `"applications"`
    -  `"homepage_url"`
