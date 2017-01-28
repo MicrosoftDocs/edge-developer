@@ -125,7 +125,7 @@ Edge uses the same construct as Chrome’s native messaging API to allow Edge ex
 This means that Edge will use the same Package Family Name as the extension, in addition to the `AppService` name specified in the API, to uniquely identify the provider of the app service.  
 
 > [!NOTE]
-> This will not be easily converted by the [Microsoft Edge Extension Toolkit](https://developer.microsoft.com/microsoft-edge/platform/documentation/extensions/guides/porting-Chrome-extensions/). Any extensions that specifies the `"nativeMessaging"` permission will be flagged as requiring manual conversion for this component.
+> This will not be easily converted by the [Microsoft Edge Extension Toolkit](./porting-chrome-extensions.md). Any extensions that specifies the `"nativeMessaging"` permission will be flagged as requiring manual conversion for this component.
 
 
 
@@ -312,4 +312,4 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
 
 ## Testing your extension
 
-See the [Creating and testing extensions](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/extensions/guides/packaging/creating-and-testing-Microsoft-Edge-extension-packages/#testing-an-appx-package) guide for info on how to test and deploy your packaged extension.
+See the [Creating and testing extensions](./packaging/creating-and-testing-microsoft-edge-extension-packages/#testing-an-appx-package.md) guide for info on how to test and deploy your packaged extension.
