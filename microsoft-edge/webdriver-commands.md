@@ -4,7 +4,7 @@ title: Webdriver commands - Microsoft Edge Development
 author: erikadoyle
 ---
 
-The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. The Microsoft Edge implementation of WebDriver supports commands from both the W3C WebDriver Specification and the JSON Wire Protocol. Here's how to [get started with WebDriver for Microsoft Edge](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/tools/webdriver/).
+The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. The Microsoft Edge implementation of WebDriver supports commands from both the W3C WebDriver Specification and the JSON Wire Protocol. Here's how to [get started with WebDriver for Microsoft Edge](./dev-guide/tools/webdriver.md).
 
 # WebDriver Server Command Line Flags
 List of command line flags for the WebDriver server.
