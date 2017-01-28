@@ -131,7 +131,7 @@ function checkAudioCompat() {
 
 ## Dolby Audio
 
-Microsoft Edge includes support for the Dolby Audio format in HTML5 media, [Media Source Extensions (MSE)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/multimedia/media-source-extensions/), and [Encrypted Media Extensions (EME)](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/multimedia/encrypted-media-extensions/), providing rich, multi-channel audio support that works well with AVC/H.264 video and HLS and DASH streaming. You can feature detect support for Dolby Audio formats using [`canPlayType`](https://msdn.microsoft.com/en-us/library/ff975191(v=vs.85).aspx) (HTML5 media) and `isTypeSupported` (MSE)/(EME) with the following strings:
+Microsoft Edge includes support for the Dolby Audio format in HTML5 media, [Media Source Extensions (MSE)](../multimedia/media-source-extensions.md), and [Encrypted Media Extensions (EME)](../multimedia/encrypted-media-extensions.md), providing rich, multi-channel audio support that works well with AVC/H.264 video and HLS and DASH streaming. You can feature detect support for Dolby Audio formats using [`canPlayType`](https://msdn.microsoft.com/en-us/library/ff975191(v=vs.85).aspx) (HTML5 media) and `isTypeSupported` (MSE)/(EME) with the following strings:
 
 **Dolby Digital Plus (Enhanced AC-3)**: `'audio/mp4; codecs="ec-3"'`
 **Digital Plus (AC-3)**: `'audio/mp4; codecs="ac-3"'` 
