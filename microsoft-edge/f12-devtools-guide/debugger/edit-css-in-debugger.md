@@ -6,7 +6,7 @@ author: erikadoyle
 
 # Editing CSS in the Debugger
 
-The [**Debugger tool**](../) enables you to edit your page styles by enabling CSS files to be accessed in the file picker by clicking the folder icon or pressing CTRL + O.
+The [**Debugger tool**](../debugger.md) enables you to edit your page styles by enabling CSS files to be accessed in the file picker by clicking the folder icon or pressing CTRL + O.
 
 ![Editing CSS files with Edge Debugger](../media/edge_debugger_css.png)
 
