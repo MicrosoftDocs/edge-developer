@@ -14,7 +14,7 @@ The following video goes through a buggy Microsoft Edge extension, walking thoug
 
 
 > [!NOTE]
-> In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](./../adding-and-removing-extensions.md) for details on how to do this.
+> In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](./adding-and-removing-extensions.md) for details on how to do this.
 
 
 ## Background script debugging
