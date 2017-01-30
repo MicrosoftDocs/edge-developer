@@ -28,7 +28,6 @@ Once you have Node, from a command line (preferably PowerShell), run the followi
 
 To verify that you've correctly installed ManifoldJS, run `manifoldjs` from the command line. If ManifoldJS wasn't recognized, add `%APPDATA%\npm` to your PATH variables.
 
-
 ## Packaging with ManifoldJS
 
 To start the packaging process, you'll need to open a command line and change directories to a folder that will be the destination for your packaged extension.
@@ -91,4 +90,4 @@ Once your appxmanifest.xml file is sorted out, run the following command to crea
 
 `manifoldjs -l debug -p edgeextension package <EXTENSION NAME>\edgeextension\manifest\`
 
-Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing Microsoft Edge extension packages' [testing](./creating-and-testing-Microsoft-Edge-extension-packages.md#testing-an-appx-package) section for info on how to sideload your new package.
+Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing Microsoft Edge extension packages' [testing](./creating-and-testing-microsoft-edge-extension-packages.md#testing-an-appx-package) section for info on how to sideload your new package.
