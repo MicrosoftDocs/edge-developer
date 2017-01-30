@@ -216,7 +216,7 @@ You should now have one resources.pri file in your root folder:
 
 Once you try to upload your complete, localized package, the Windows Dev Center will detect that more than one language is supported and check that you have corresponding localized names and descriptions for each. If any of the localized values are missing, your submission will be blocked until you provide the values.
 
-If you are only interested in providing a localized name and description for the Windows Store (and not Windows), you can do so by [reserving all the localized names for your extension](./extensions-in-the-windows-dev-center#name-reservation.md).
+If you are only interested in providing a localized name and description for the Windows Store (and not Windows), you can do so by [reserving all the localized names for your extension](./extensions-in-the-windows-dev-center.md#name-reservation).
 
 
 Once you've reserved additional localized names, you can create an updated submission. In the description section you can manage additional languages for your Windows Store listing:
