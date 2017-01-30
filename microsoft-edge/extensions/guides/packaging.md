@@ -21,22 +21,22 @@ Use the process outline below to map out your packaging adventure!
 
 No matter which package creation route you choose, manual or ManifoldJS, the first step is registering for a Windows Developer account and reserving the name(s) of your extension.
 
-Once you've done this, you can either move on to [Creating and testing Microsoft Edge extension packages](./packaging/creating-and-testing-Microsoft-Edge-extension-packages.md) to learn how AppXs are created and manually package your extension, or go the easier route and jump to [Using ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md).
+Once you've done this, you can either move on to [Creating and testing Microsoft Edge extension packages](./packaging/creating-and-testing-microsoft-edge-extension-packages.md) to learn how AppXs are created and manually package your extension, or go the easier route and jump to [Using ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md).
 
-## [Creating and testing Microsoft Edge extension packages](./packaging/creating-and-testing-Microsoft-Edge-extension-packages.md)
+## [Creating and testing Microsoft Edge extension packages](./packaging/creating-and-testing-microsoft-edge-extension-packages.md)
 
-This section of the guide walks through manual extension package creation once [you've set up your Windows Developer account and reserved your extension name(s)](./packaging/extensions-in-the-Windows-Dev-Center.md). If you're curious about the finer details of packaging an extension, give this a read.
+This section of the guide walks through manual extension package creation once [you've set up your Windows Developer account and reserved your extension name(s)](./packaging/extensions-in-the-windows-Dev-Center.md). If you're curious about the finer details of packaging an extension, give this a read.
 
-Also included is info on how to [test and unpack a packaged extension](./packaging/creating-and-testing-Microsoft-Edge-extension-packages#testing-an-appx-package.md). This info is relevant even if you've gone the ManifoldJS packaging route.
+Also included is info on how to [test and unpack a packaged extension](./packaging/creating-and-testing-microsoft-edge-extension-packages.md#testing-an-appx-package). This info is relevant even if you've gone the ManifoldJS packaging route.
 
 ## [Localizing extension packages](./packaging/localizing-extension-packages.md)
 The package localization step falls between creating your appxmanifest.xml file and running the final command to package your extension.
 This allows you to indicate which languages your extensions supports in your Windows Store listing, and what language your extension's name appears in in Windows.
 
-You can jump to [Localizing name and description for the Windows Store](./packaging/localizing-extension-packages#localizing-name-and-description-in-the-windows-store.md) in this section of the guide if your extension doesn't support multiple languages.
+You can jump to [Localizing name and description for the Windows Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-windows-store) in this section of the guide if your extension doesn't support multiple languages.
 
 ## [Using ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md)
 
 The tool route for packaging your extension, ManifoldJS will package up your extension in a snap with minimal effort on your end. Provide a few Windows/Windows Store assets after filling out some AppXManifest properties and you're extension will be packaged in no time.
 
-Once your extension is packaged, see the [testing](./packaging/creating-and-testing-Microsoft-Edge-extension-packages#testing-an-appx-package.md) section of Creating and testing your Microsoft Edge extension to learn how to sideload or unpack it.
+Once your extension is packaged, see the [testing](./packaging/creating-and-testing-microsoft-edge-extension-packages.md#testing-an-appx-package) section of Creating and testing your Microsoft Edge extension to learn how to sideload or unpack it.
