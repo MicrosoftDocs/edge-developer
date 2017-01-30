@@ -84,11 +84,11 @@ will have a manifest folder that live in \<CURRENT DIRECTORY>\MSGappName\edgeext
 
 In the AppXManifest file, you'll need to:
  -	Replace the required Identity fields and PublisherDisplayName field.
- -	Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design#icons-for-packaging.md) guide for information about where these icons are used.
- - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Windows Store](./localizing-extension-packages#localizing-name-and-description-in-the-windows-store.md) section.
+ -	Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design.md#icons-for-packaging) guide for information about where these icons are used.
+ - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Windows Store](./localizing-extension-packages.md#localizing-name-and-description-in-the-windows-store) section.
 
 Once your appxmanifest.xml file is sorted out, run the following command to create your package:
 
 `manifoldjs -l debug -p edgeextension package <EXTENSION NAME>\edgeextension\manifest\`
 
-Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing Microsoft Edge extension packages' [testing](./creating-and-testing-Microsoft-Edge-extension-packages#testing-an-appx-package.md) section for info on how to sideload your new package.
+Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing Microsoft Edge extension packages' [testing](./creating-and-testing-Microsoft-Edge-extension-packages.md#testing-an-appx-package) section for info on how to sideload your new package.
