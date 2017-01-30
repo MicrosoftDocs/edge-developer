@@ -117,7 +117,7 @@ The name of the extension that shows up in the Settings app in Windows comes fro
 
 
 > [!NOTE]
-> If you want to use localized names for your Microsoft Edge Extension in Windows, make sure the localized names are also [available and reserved](./extensions-in-the-windows-dev-center#name-reservation.md) before you make the changes in the AppXManifest file. If the names are not reserved, you'll get the following error when you upload the final package to Windows Dev Center:</br></br>
+> If you want to use localized names for your Microsoft Edge Extension in Windows, make sure the localized names are also [available and reserved](./extensions-in-the-windows-dev-center.md#name-reservation) before you make the changes in the AppXManifest file. If the names are not reserved, you'll get the following error when you upload the final package to Windows Dev Center:</br></br>
 
 ![language error](./../../media/language-error.png)</br></br>
 
