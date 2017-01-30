@@ -25,7 +25,7 @@ Support for CSS Exclusions enables scenarios like the one illustrated in the fol
 
 ![CSS Exclusions Example](./../media/exclusions_example.png)
 
-Furthermore, you can combine *CSS Exclusions* with other layout features, such as [CSS Grid](./grid-layout.md), [CSS Multi-column](./multi-column.md), and [CSS Flexbox](./flexbox.md). The following subsections provide a brief overview of *CSS Exclusions* and how to implement them.
+Furthermore, you can combine *CSS Exclusions* with other layout features, such as [CSS Grid](./grid-layout.md), [CSS Multi-column](./multi-column-layout.md), and [CSS Flexbox](./flexbox.md). The following subsections provide a brief overview of *CSS Exclusions* and how to implement them.
 
 ## Exclusion terms defined
 
