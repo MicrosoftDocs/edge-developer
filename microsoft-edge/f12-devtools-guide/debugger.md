@@ -121,7 +121,7 @@ A number of compilers and compressors now provide source maps; intermediate file
 //# sourceMappingURL=myfile.min.js.map
 ```
 
-When you open a file with **Debugger tool** that has this kind of comment, the tool looks for the map file. If found, the last [toolbar](./debugger#controlling-session-flow.md) icon on the right ![Edge Debugger Execution Control Icons](./media/gdr_f12_SourceMapsIcon.png) is enabled as a toggle. When the icon is toggled on and the source file is where the map indicates, your source code is displayed instead of the compiled/compressed JavaScript or CSS. If the source file cannot be found, the **Debugger tool** displays an error message.
+When you open a file with **Debugger tool** that has this kind of comment, the tool looks for the map file. If found, the last [toolbar](./debugger.md#controlling-session-flow) icon on the right ![Edge Debugger Execution Control Icons](./media/gdr_f12_SourceMapsIcon.png) is enabled as a toggle. When the icon is toggled on and the source file is where the map indicates, your source code is displayed instead of the compiled/compressed JavaScript or CSS. If the source file cannot be found, the **Debugger tool** displays an error message.
 
 If the map isn't found automatically, you can choose a source map for a file. Right click the file's tab to find this option. This is useful for code where comments like the one with the source map's location have been stripped out.
 
