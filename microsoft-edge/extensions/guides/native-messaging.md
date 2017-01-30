@@ -312,4 +312,4 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
 
 ## Testing your extension
 
-See the [Creating and testing extensions](./packaging/creating-and-testing-microsoft-edge-extension-packages/#testing-an-appx-package.md) guide for info on how to test and deploy your packaged extension.
+See the [Creating and testing extensions](./packaging/creating-and-testing-microsoft-edge-extension-packages.md#testing-an-appx-package) guide for info on how to test and deploy your packaged extension.
