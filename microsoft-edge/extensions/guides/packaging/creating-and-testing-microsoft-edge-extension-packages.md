@@ -86,7 +86,7 @@ Developers can use the following template for their AppXManifest.xml file:
 ```
 
 #### App identity template values
-Once you've [reserved the name of you extension](./extensions-in-the-windows-dev-center#name-reservation.md) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
+Once you've [reserved the name of you extension](./extensions-in-the-windows-dev-center.md#name-reservation) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
 
 - `Name`
 - `Publisher`
