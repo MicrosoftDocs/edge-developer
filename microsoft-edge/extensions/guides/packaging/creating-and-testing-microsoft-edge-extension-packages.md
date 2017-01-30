@@ -8,7 +8,7 @@ author: abbycar
 
 Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows Apps are packaged. As of Windows 10 Anniversary Update, a new schema has been introduced for AppX that allows an AppX to include a Microsoft Edge extension as its content.
 
-If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-ManifoldJS-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
+If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
@@ -150,7 +150,7 @@ Some values in the AppXManifest need to match those that are defined in the JSON
 
 ### Assets folder
 
-Within the Assets folder you will need three different icon sizes. These icons will be used in the Windows Store and the Windows UI. For more information on these icons, see the [Design](./../design#icons-for-packaging.md) guide.
+Within the Assets folder you will need three different icon sizes. These icons will be used in the Windows Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
 
 ![assets folder with three icon sizes in it](./../../media/assets-folder.png)
 
