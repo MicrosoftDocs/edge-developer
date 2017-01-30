@@ -47,7 +47,7 @@ Examples of computed values:
 #### Change Bars
 As you make changes to your properties, **Change Bars** display different colors next to changed (yellow), added (green), and deleted (red) properties.
 
-![Display all styles button](./media/changebars.jpg.md)
+![Display all styles button](./media/changebars.jpg)
 
 ### Layout
 The **Layout** tab shows a box model diagram for the selected element's positioning with colors matching the highlight around a selected element. You can edit any value in the diagram by clicking it.
