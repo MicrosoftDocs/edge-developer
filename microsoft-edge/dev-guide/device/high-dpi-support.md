@@ -24,7 +24,7 @@ Windows 10 consumers and OEMs  (Original Equipment Manufacturers) get more flexi
 
 ## Unified optical zooming model
 
-With Microsoft Edge all zooming is now handled with optical zoom, making the experience across zooming scenarios (such as [Pinch zoom](https://msdn.microsoft.com/library/windows/desktop/Dn742468#inter_touch_image5), [Keyboard / mouse shortcuts](http://go.microsoft.com/fwlink/p/?LinkId=619896), [`@-ms-viewport`](https://msdn.microsoft.com/library/Hh869615), and [`msContentZoomFactor`](http://msdn.microsoft.com/library/ie/hh772066)) much simpler and more predictable.
+With Microsoft Edge all zooming is now handled with optical zoom, making the experience across zooming scenarios (such as [Pinch zoom](https://msdn.microsoft.com/library/windows/desktop/Dn742468#inter_touch_image5), Keyboard / mouse shortcuts, [`@-ms-viewport`](https://msdn.microsoft.com/library/Hh869615), and [`msContentZoomFactor`](http://msdn.microsoft.com/library/ie/hh772066)) much simpler and more predictable.
 
 
 
