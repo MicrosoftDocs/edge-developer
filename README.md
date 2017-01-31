@@ -1,14 +1,31 @@
+
 ---
 description: Here's the info you need to develop on Microsoft Edge.
 title: Microsoft Edge documentation
 author: erikadoyle
 ---
 
+##Legal Notices
+Microsoft and any contributors grant you a license to the Microsoft documentation and other content
+in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
+see the [LICENSE](LICENSE) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
+[LICENSE-CODE](LICENSE-CODE) file.
+
+Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
+may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
+The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
+Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+
+Privacy information can be found at https://privacy.microsoft.com/en-us/
+
+Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
+or trademarks, whether by implication, estoppel or otherwise.
+
 # Microsoft Edge documentation
 
-This is the repository for Microsoft Edge **documentation** hosted at [https://dev.windows.com/en-us/microsoft-edge/platform/documentation/](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/).
+This is the repository for Microsoft Edge **documentation** hosted at [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/).
 
-Over the coming months, we will add new sections and content to enhance the documentation experience. If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
+If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
 
 Find the data for the [`Status`](https://dev.windows.com/en-us/microsoft-edge/platform/status/) page at: https://github.com/MicrosoftEdge/Status. The `Status` page provides the latest implementation status and future plans for web platform features in Microsoft Edge.
 
@@ -16,10 +33,8 @@ Find the data for the [`Status`](https://dev.windows.com/en-us/microsoft-edge/pl
 
   - Docs are grouped by folders (the structure parallels the information architecture (IA) on the site)
   - A folder can contain more folders or a `readme.md`
-  - One `.md` file per folder
   - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the Microsoft Edge Dev site. Don't use underscores or PascalCase/camelCase.
-  - Relative links are formatted with only the folder name of the referenced readme doc. E.g.,   `../performance/`  (not `../performance/readme.md`)
-  - Section headers require a space after hashes, formatted as  `## Section Heading` *(not `##Section Heading`)*. Otherwise, the markdown doesn't parse correctly into the site.
+
 
 # Styling
 
