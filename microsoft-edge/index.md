@@ -1,4 +1,4 @@
- ---
+---
 description: The info you need to develop on Microsoft Edge.
 title: Microsoft Edge documentation - Microsoft Edge Development
 author: erikadoyle
