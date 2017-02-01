@@ -25,7 +25,8 @@
         "externalReference": [],
         "globalMetadata": {
             "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
-            "uhfHeaderId": "MSDocsHeader-MSEdge"
+            "uhfHeaderId": "MSDocsHeader-MSEdge",
+            "extendBreadcrumb":true
         },
         "fileMetadata": {},
         "template": ["docs.html"],
