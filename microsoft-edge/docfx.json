@@ -24,7 +24,8 @@
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
-            "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json"
+            "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
+            "uhfHeaderId": "MSDocsHeader-MSEdge"
         },
         "fileMetadata": {},
         "template": ["docs.html"],
