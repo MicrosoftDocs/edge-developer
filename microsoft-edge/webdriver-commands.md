@@ -9,9 +9,11 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
+# WebDriver commands
+
 The WebDriver API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. The Microsoft Edge implementation of WebDriver supports commands from both the W3C WebDriver Specification and the JSON Wire Protocol. Here's how to [get started with WebDriver for Microsoft Edge](./dev-guide/tools/webdriver.md).
 
-# WebDriver Server Command Line Flags
+## WebDriver server command line flags
 List of command line flags for the WebDriver server.
 
 Name|Description|Available Release
@@ -22,7 +24,7 @@ package|ApplicationUserModelId (AUMID) for the application to be launched by the
 verbose|Outputs requests received and responses sent by the WebDriver server|14393|
 silent|Outputs nothing|Insiders|
 
-## [W3C WebDriver Specification Support](https://w3c.github.io/webdriver/webdriver-spec.html)
+## [W3C WebDriver specification support](https://w3c.github.io/webdriver/webdriver-spec.html)
 The support on a per command basis for the W3C WebDriver Specification.
 
 Locator Strategies| Status|Available Release
@@ -89,7 +91,7 @@ POST|/session/{session id}/alert/text|[Send Alert Text](https://w3c.github.io/we
 GET|/session/{session id}/screenshot|[Take Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-screenshot)|Supported|10240|
 GET|/session/{session id}/element/{element id}/screenshot|[Take Element Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-element-screenshot)|Supported|10240|
 
-# [JSON Wire Protocol Support](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)
+# [JSON wire protocol support](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)
 The support on a per command basis for the JSON Wire Protocol.
 
 HTTP Method|Path|Status|Available Release/Priority
