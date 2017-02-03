@@ -3,7 +3,7 @@ layout: LandingPage
 ---
 # Microsoft Edge developer documentation
 
-Microsoft Edge is the new broswer built for Windows 10. With Microsoft Edge in Windows 10, you get a browser built for fast, safe, and productive web experiences. You can search directly from the address bar or take advantage of integration with Cortana to make your search easier. The Hub saves your favorites, a reading list, your browsing history, and downloads. Make a Web Note on a page to save for later or share with others, and enable roaming so that your favorites and settings follow you to any PC or Windows 10 Mobile device.
+Microsoft Edge is the new broswer built for Windows 10. With Microsoft Edge in Windows 10, you get a browser built for fast, safe, and productive web experiences. The Microsoft Edge developer docs provide information on features and standards included in Microsoft Edge.  Learn about topics ranging from the latest supported APIs, building extensions, debugging with the F12 Dev Tools, and more.
 
 <ul class="panelContent cardsFTitle">
     <li>
