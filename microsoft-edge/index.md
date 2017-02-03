@@ -3,7 +3,7 @@ layout: LandingPage
 ---
 # Microsoft Edge developer documentation
 
-Microsoft Edge is the new broswer built for Windows 10. With Microsoft Edge in Windows 10, you get a browser built for fast, safe, and productive web experiences. The Microsoft Edge developer docs provide information on features and standards included in Microsoft Edge.  Learn about topics ranging from the latest supported APIs, building extensions, debugging with the F12 Dev Tools, and more.
+Microsoft Edge is the new broswer built for Windows 10, providing fast, safe, and productive web experiences. The developer docs offer information on features and standards included in Microsoft Edge.  Learn about topics ranging from the latest supported APIs, building extensions, debugging with the F12 Dev Tools, and more.
 
 <ul class="panelContent cardsFTitle">
     <li>
