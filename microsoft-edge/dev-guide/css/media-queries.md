@@ -1,7 +1,12 @@
 ---
 description: Learn how Media Queries enable you to scope a stylesheet to a set of precise device capabilities.
-title: Media Queries
+title: Dev guide - Media queries - Microsoft Edge Development
 author: libbymc
+ms.author: libbymc
+ms.date: 02/08/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 
 # Media Queries 
@@ -9,7 +14,7 @@ author: libbymc
 Media Queries enable you to scope a stylesheet to a set of precise device capabilities. Through media query listeners, you can also use script to react to changes in the media or environment in which your page is running.
 
 
-# Using media queries
+## Using media queries
 
 Media queries enable you to design pages differently for users browsing on a mobile device (very small screen, limited color palette, low resolution, etc.) versus a netbook (small screen, full color palette, high resolution, etc.) versus a standard computer (large screen, full color palette, high resolution, etc.). A media query is a logical expression that is either true or false. You can add keywords like `and`, `not`, `only`, or use comma-separated lists to make more targeted media queries. 
 

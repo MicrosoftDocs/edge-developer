@@ -1,7 +1,12 @@
 ---
-description: This article provides info on the Console Logging API, which is used to let you communicate from your app to the F12 developer tools console.
-title: WebDriver
+description: Learn how the Console Logging API can be used to let you communicate from your app to the F12 developer tools console.
+title: Dev guide - Console logging API - Microsoft Edge Development
 author: erikadoyle
+ms.author: edoyle
+ms.date: 02/08/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 
 # Console Logging API

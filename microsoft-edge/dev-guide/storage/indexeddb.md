@@ -1,7 +1,12 @@
 ---
-description: This article provides info on the Indexed Database API (IndexedDB), which enables you to store structured data.
-title: IndexedDB
+description: Learn about how you can store structured data with the Indexed Database API (IndexedDB) and the changes introduced in Edge.
+title: Dev guide - IndexedDB - Microsoft Edge Development
 author: abbycar
+ms.author: abigailc
+ms.date: 02/08/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 
 # IndexedDB
@@ -113,7 +118,9 @@ In this example, the [`onsuccess`](http://go.microsoft.com/fwlink/p/?LinkId=2277
 ## Using requests to open a database
 Microsoft Edge can use the `indexedDB` property to access supported features of the Indexed Database API spec.
 
-> NOTE: For security reasons, support for the `indexedDB` property is limited to Windows Store apps and to webpages loaded using the "http://" or "https://" protocols. `"file://"` is also supported for local use.
+> [!NOTE]
+> For security reasons, support for the `indexedDB` property is limited to Windows Store apps and to webpages loaded using the "http://" or "https://" protocols. `"file://"` is also supported for local use.
+
 
 For best results, use feature detection to access the IndexedDB API, as shown in the following example:
 ```js
@@ -139,7 +146,7 @@ Request objects execute when they go out of scope; that is, when the current Jav
 
 
 ## API reference
-[IndexedDB](https://msdn.microsoft.com/library/hh77265)
+[IndexedDB](https://msdn.microsoft.com/library/hh772651)
 
 
 ## Demos

@@ -1,7 +1,12 @@
 ---
-description: This article provides info on how to get started with WebDriver in Microsoft Edge.
-title: WebDriver
+description: Learn how to get started with WebDriver, a wire protocol that allows programs and scripts to control web browser behavior. 
+title: Dev guide - WebDriver - Microsoft Edge Development
 author: erikadoyle
+ms.author: edoyle
+ms.date: 02/08/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 
 # WebDriver
@@ -11,7 +16,7 @@ WebDriver enables developers to create automated tests that simulate user intera
 
 Here's how to get started with WebDriver for Microsoft Edge.
 
-The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](http://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests. Check out the [WebDriver Status and Commands](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/) page for more details on supported commands.
+The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](http://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests. Check out the [WebDriver Status and Commands](../../webdriver-commands.md) page for more details on supported commands.
 
 ## Getting started with WebDriver for Microsoft Edge
 * Install Windows 10.

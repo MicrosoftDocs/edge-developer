@@ -1,7 +1,12 @@
 ---
-description: This article covers issues that may be experienced while loading unpacked extensions.
-title: Troubleshooting
+description: Get the answers to common questions you may have while loading unpacked extensions.
+title: Extensions - Troubleshooting - Microsoft Edge Development
 author: abbycar
+ms.author: abigailc
+ms.date: 02/08/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 
 ## Troubleshooting

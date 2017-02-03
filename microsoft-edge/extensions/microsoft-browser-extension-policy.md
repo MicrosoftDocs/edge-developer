@@ -1,7 +1,12 @@
 ---
-description: This article is a policy describing supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer.
-title: Microsoft browser extension policy
+description: Read the legal policy describing supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer.
+title: Extensions - Microsoft browser extension policy - Microsoft Edge Development
 author: abbycar
+ms.author: abigailc
+ms.date: 02/08/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 
 # Microsoft browser extension policy

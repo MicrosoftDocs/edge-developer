@@ -1,34 +1,32 @@
 {
     "build": {
-        "content": [
-            {
-                "files": [
-                    "**/*.md", "**/**.yml"
-                ],
-                "exclude": [
-                    "**/obj/**",
-                    "microsoft-edge/**",
-                    "**/includes/**"
-                ]
-            }
-        ],
-        "resource": [
-            {
-                "files": [
-                    "**/*.png",
-                    "**/*.jpg"
-                ],
-                "exclude": [
-                    "**/obj/**",
-                    "microsoft-edge/**",
-                    "**/includes/**"
-                ]
-            }
-        ],
+        "content": [{
+            "files": [
+                "**/*.md", "**/**.yml"
+            ],
+            "exclude": [
+                "**/obj/**",
+                "microsoft-edge/**",
+                "**/includes/**"
+            ]
+        }],
+        "resource": [{
+            "files": [
+                "**/*.png",
+                "**/*.jpg"
+            ],
+            "exclude": [
+                "**/obj/**",
+                "microsoft-edge/**",
+                "**/includes/**"
+            ]
+        }],
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
-            "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json"
+            "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
+            "uhfHeaderId": "MSDocsHeader-MSEdge",
+            "extendBreadcrumb":true
         },
         "fileMetadata": {},
         "template": ["docs.html"],
