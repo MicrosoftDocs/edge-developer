@@ -19,7 +19,7 @@ Microsoft Edge includes support for the [Indexed Database API (`IndexedDB`)](htt
 Microsoft Edge brings a number of improvements to the [IndexedDB](https://msdn.microsoft.com/library/hh772651) API, including:
 * **Local use**: Added support for webpages loaded via a `"file://"` URI scheme. This allows developers accessing files from disk to use these APIs.
 * **Removal of soft limits**: `IndexedDB` will not request user authorization to use more than 10 megabytes of space.
-* **Changes to default hard limits**: Indexed Database limits are removed for Windows Store apps using JavaScript. Additionally, Microsoft Edge now considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
+* **Changes to default hard limits**: Indexed Database limits are removed for UWP apps using JavaScript. Additionally, Microsoft Edge now considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
 
 Volume size | Per domain | Total limit
 :---------- | :---------- | :-----------
@@ -119,7 +119,7 @@ In this example, the [`onsuccess`](http://go.microsoft.com/fwlink/p/?LinkId=2277
 Microsoft Edge can use the `indexedDB` property to access supported features of the Indexed Database API spec.
 
 > [!NOTE]
-> For security reasons, support for the `indexedDB` property is limited to Windows Store apps and to webpages loaded using the "http://" or "https://" protocols. `"file://"` is also supported for local use.
+> For security reasons, support for the `indexedDB` property is limited to UWP apps and to webpages loaded using the "http://" or "https://" protocols. `"file://"` is also supported for local use.
 
 
 For best results, use feature detection to access the IndexedDB API, as shown in the following example:
