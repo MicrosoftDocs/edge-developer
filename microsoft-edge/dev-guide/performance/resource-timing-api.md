@@ -95,8 +95,6 @@ console.debug("Test2 time: " + (test2 - test1));
 
 ## API Reference
 
-[PerformanceResourceTiming API](https://developer.microsoft.com/microsoft-edge/platform/documentation/apireference/interfaces/performanceresourcetiming/)
-
 [Timing and Performance APIs](https://msdn.microsoft.com/library/hh772738)
 
 [Objects](https://msdn.microsoft.com/library/hh772729)
