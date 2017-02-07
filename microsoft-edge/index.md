@@ -6,6 +6,7 @@ author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017
 ms.prod: microsoft-edge
+ms.topic: article
 keywords: edge, web development, html, css, javascript, developer
 ---
 # Microsoft Edge developer documentation
