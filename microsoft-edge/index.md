@@ -6,7 +6,7 @@ layout: LandingPage
 Microsoft Edge is the new browser built for Windows 10, providing fast, safe, and productive web experiences. The developer docs offer information on features and standards included in Microsoft Edge. Learn about the latest supported APIs, building extensions, debugging with the F12 Dev Tools, and more.
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/microsoft-edge-test/dev-guide">
+        <a href="/microsoft-edge/dev-guide">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -24,7 +24,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
         </a>
     </li>
     <li>
-        <a href="https://developer.microsoft.com/microsoft-edge/platform/documentation/extensions/guides/creating-an-edge-extension/">
+        <a href="https://developer.microsoft.com/microsoft-edge/platform/documentation/extensions/guides/creating-an-extension/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
