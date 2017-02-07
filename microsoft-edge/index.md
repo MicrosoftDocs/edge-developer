@@ -1,5 +1,12 @@
 ---
 layout: LandingPage
+description: The info you need to develop on and for Microsoft Edge.
+title: Microsoft Edge documentation
+author: erikadoyle
+ms.author: edoyle
+ms.date: 02/08/2017
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
 ---
 # Microsoft Edge developer documentation
 
