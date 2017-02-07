@@ -9,11 +9,11 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-## Troubleshooting
+# Troubleshooting
 
 If you are trying to load unpacked extensions and are experiencing issues, the info below may help:
 
-### 1. I see the error "We couldn't load this extension"
+## 1. I see the error "We couldn't load this extension"
 
 This usually means that Microsoft Edge cannot access the extension folder you attempted to load.
 
@@ -37,7 +37,7 @@ Manifest parsing error: Only one `"browser_action"` or `"page_action"` can be de
 Unspecified error: `<error>` | Generic catch-all error message. `<error>` will be replaced by the specified error.
 
 
-### 2. I don't see the "Load extension" button
+## 2. I don't see the "Load extension" button
 Until extensions are available via the Windows Store, this button *should* be visible by default. If you open the "More" (...) menu, select the "Extensions" menu item and don't see the button, follow these steps:
 
 1. In the address bar type **"about:flags"** and press the **"Enter"** key.

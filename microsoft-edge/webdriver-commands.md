@@ -91,7 +91,7 @@ POST|/session/{session id}/alert/text|[Send Alert Text](https://w3c.github.io/we
 GET|/session/{session id}/screenshot|[Take Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-screenshot)|Supported|10240|
 GET|/session/{session id}/element/{element id}/screenshot|[Take Element Screenshot](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-take-element-screenshot)|Supported|10240|
 
-# [JSON wire protocol support](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)
+## [JSON wire protocol support](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol)
 The support on a per command basis for the JSON Wire Protocol.
 
 HTTP Method|Path|Status|Available Release/Priority
