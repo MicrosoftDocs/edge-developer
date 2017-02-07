@@ -1,5 +1,5 @@
 ---description: Learn useful information about server-related commands for the WebDriver API.
-title: Webdriver commands - Server - Microsoft Edge Development
+title: Webdriver commands - Server
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: Learn how to localize your Edge extension package so that it's ready for multiple locales upon release.
-title: Extensions - Localizing extension packages - Microsoft Edge Development
+title: Extensions - Localizing extension packages
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

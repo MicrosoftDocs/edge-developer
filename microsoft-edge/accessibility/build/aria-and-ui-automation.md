@@ -1,5 +1,5 @@
 ---description: Learn how Edge can recognize ARIA info, then expose it to assistive technologies that can then use Microsoft UI Automation APIs.
-title: Accessibility - ARIA and UI automation - Microsoft Edge Development
+title: Accessibility - ARIA and UI automation
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

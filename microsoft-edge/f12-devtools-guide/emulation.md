@@ -1,5 +1,5 @@
 ---description: Learn how to use the Emulation tool to test how webpages work with different browser profiles, user agents, screen sizes and resolutions, and GPS location coordinates.
-title: F12 devtools guide - Emulation - Microsoft Edge Development
+title: F12 devtools guide - Emulation
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

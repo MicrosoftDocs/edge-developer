@@ -1,5 +1,5 @@
 ---description: See guides about storing structued data and other storage mechanisms for data.
-title: Dev guide - Storage - Microsoft Edge Development
+title: Dev guide - Storage
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: See guides for caching, domain info, and the communication API in Microsoft Edge.
-title: Dev guide - Networking and connectivity - Microsoft Edge Development
+title: Dev guide - Networking and connectivity
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

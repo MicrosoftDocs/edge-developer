@@ -1,5 +1,5 @@
 ---description: Learn how the Console API can be used to send info to the Console from within an application and obtain diagnostics.
-title: F12 devtools guide - Using the console API - Microsoft Edge Development
+title: F12 devtools guide - Using the console API
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

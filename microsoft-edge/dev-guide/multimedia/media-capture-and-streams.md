@@ -1,5 +1,5 @@
 ---description: Learn how the Media Capture and Streams API allows webpages to access media capture devices like webcams or microphones with permission from the user.
-title: Dev guide - Media Capture and Streams - Microsoft Edge Development
+title: Dev guide - Media Capture and Streams
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

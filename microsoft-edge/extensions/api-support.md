@@ -1,5 +1,5 @@
 ---description: Find information on current and future APIs and manifest keys for Edge extensions.
-title: Extensions - API support - Microsoft Edge Development
+title: Extensions - API support
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

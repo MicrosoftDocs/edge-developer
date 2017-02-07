@@ -1,5 +1,5 @@
 ---description: Learn how to create a tag cloud using the Indexed Database (IndexedDB) API.
-title: Dev guide - How to create a tag cloud using IndexedDB - Microsoft Edge Development
+title: Dev guide - How to create a tag cloud using IndexedDB
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: See guides for device APIs and features in Microsoft Edge like the Fullscreen API and High DPI support.
-title: Dev guide - Device - Microsoft Edge Development
+title: Dev guide - Device
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

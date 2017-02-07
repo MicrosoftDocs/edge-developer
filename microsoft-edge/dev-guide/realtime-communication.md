@@ -1,6 +1,6 @@
 ---
 description: See guides about real-time communication features in Microsoft Edge like ORTC.
-title: Dev guide - Realtime communication - Microsoft Edge Development
+title: Dev guide - Realtime communication
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

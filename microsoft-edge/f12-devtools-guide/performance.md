@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Performance tool to profile your webpage’s frame rate and JavaScript execution times.
-title: F12 devtools guide - Performance - Microsoft Edge Development
+title: F12 devtools guide - Performance
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

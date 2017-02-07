@@ -1,5 +1,5 @@
 ---description: Learn useful information about the commands used for simulating user input.
-title: Webdriver commands - Input - Microsoft Edge Development
+title: Webdriver commands - Input
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: The Navigation Timing API makes it easy to measure the real-world speed and performance of websites, and locate problem areas that need tuning.
-title: Dev guide - Navigation Timing API - Microsoft Edge Development
+title: Dev guide - Navigation Timing API
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

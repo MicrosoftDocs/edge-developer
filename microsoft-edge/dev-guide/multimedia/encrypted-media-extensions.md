@@ -1,5 +1,5 @@
 ---description: Learn how Encrypted Media Extensions extends the video and audio elements to enable Digital Rights Management (DRM) protected content without using plug-ins.
-title: Dev guide - Encrypted Media Extensions - Microsoft Edge Development
+title: Dev guide - Encrypted Media Extensions
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

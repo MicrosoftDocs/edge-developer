@@ -23,6 +23,7 @@
         }],
         "overwrite": [],
         "externalReference": [],
+		  "titleSuffix": "Microsoft Edge Development",
         "globalMetadata": {
             "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
             "uhfHeaderId": "MSDocsHeader-MSEdge",

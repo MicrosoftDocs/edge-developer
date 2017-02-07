@@ -1,6 +1,6 @@
 ---
 description: Learn about the common console error codes, their associated messages, and their suggested fixes.
-title: F12 devtools guide - Console error and status codes - Microsoft Edge Development
+title: F12 devtools guide - Console error and status codes
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

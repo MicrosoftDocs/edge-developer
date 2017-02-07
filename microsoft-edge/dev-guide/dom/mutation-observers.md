@@ -1,5 +1,5 @@
 ---description: Learn how the Mutation Observers API can efficiently detect and react to changes in the DOM, such as addition or removal of child nodes and attribute changes.
-title: Dev guide - Mutation observers - Microsoft Edge Development
+title: Dev guide - Mutation observers
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

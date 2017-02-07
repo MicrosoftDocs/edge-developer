@@ -1,5 +1,5 @@
 ---description: Walk through how best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
-title: Accessibility - Build - Microsoft Edge Development
+title: Accessibility - Build
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

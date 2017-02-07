@@ -1,5 +1,5 @@
 ---description: Learn how the Web Speech API can be used to support speech synthesis within Edge.
-title: Dev guide - Web Speech API - Microsoft Edge Development
+title: Dev guide - Web Speech API
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

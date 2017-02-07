@@ -1,5 +1,5 @@
 ---description: Learn about how to package up your Edge extension manually and test it to see if it's packaged correctly.
-title: Extensions - Creating and testing extension packages - Microsoft Edge Development
+title: Extensions - Creating and testing extension packages
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

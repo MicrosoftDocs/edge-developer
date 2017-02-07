@@ -1,5 +1,5 @@
 ---description: Learn how to change the settings of Edge Developer Tools to fit your scenario.
-title: F12 devtools guide - Settings - Microsoft Edge Development
+title: F12 devtools guide - Settings
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

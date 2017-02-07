@@ -1,5 +1,5 @@
 ---description: See an example of a Microsoft Edge JSON manifest to see possible field values.
-title: Extensions - JSON manifest example - Microsoft Edge Development
+title: Extensions - JSON manifest example
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

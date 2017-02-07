@@ -1,5 +1,5 @@
 ---description: Learn how about the relative and absolute units of measurement in CSS.
-title: Dev guide - Length units relative and absolute - Microsoft Edge Development
+title: Dev guide - Length units relative and absolute
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

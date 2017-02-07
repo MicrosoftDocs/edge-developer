@@ -1,6 +1,6 @@
 ---
 description: Learn how HTTP Strict Transport Security (HSTS) can ensure that users connect to secure sites in a secure way to help prevent a variety of attack scenarios.
-title: Dev guide - HSTS - Microsoft Edge Development
+title: Dev guide - HSTS
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

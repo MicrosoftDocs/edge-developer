@@ -1,5 +1,5 @@
 ---description: Learn how to the Fetch API, which is XMLHttpRequest's modern-day replacement.
-title: Dev guide - Fetch API - Microsoft Edge Development
+title: Dev guide - Fetch API
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

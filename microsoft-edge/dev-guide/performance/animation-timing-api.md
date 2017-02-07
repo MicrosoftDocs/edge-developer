@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Animation Timing API to create animated webpages.
-title: Dev guide - Animation Timing API - Microsoft Edge Development
+title: Dev guide - Animation Timing API
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

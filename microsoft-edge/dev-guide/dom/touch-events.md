@@ -1,5 +1,5 @@
 ---description: Learn how Touch Events allow you to interpret user interaction with a touch screen via finger, stylus, or trackpad, including multi-touch interactions.
-title: Dev guide - Touch events - Microsoft Edge Development
+title: Dev guide - Touch events
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

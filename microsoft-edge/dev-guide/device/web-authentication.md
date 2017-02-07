@@ -1,5 +1,5 @@
 ---description: Learn how the Web Authentication API can be used to enable web applications to use Windows Hello biometrics for user authentication.
-title: Dev guide - Web authentication - Microsoft Edge Development
+title: Dev guide - Web authentication
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017
