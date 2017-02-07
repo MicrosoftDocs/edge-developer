@@ -20,15 +20,14 @@ or trademarks, whether by implication, estoppel or otherwise.
 
 This is the repository for Microsoft Edge **documentation** hosted at [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/).
 
-If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
+If you would like to see new coverage or have feedback, please consider [**contributing**](/CONTRIBUTING.md).  You can edit the existing content, add new content, or simply create new [issues](https://github.com/MicrosoftDocs/edge-developer/issues). We’ll take a look at your suggestions and will work together to incorporate them into the docs.
 
 Find the data for the [`Status`](https://dev.windows.com/en-us/microsoft-edge/platform/status/) page at: https://github.com/MicrosoftEdge/Status. The `Status` page provides the latest implementation status and future plans for web platform features in Microsoft Edge.
 
 # Conventions
-
-  - Docs are grouped by folders (the structure parallels the information architecture (IA) on the site)
-  - A folder can contain more folders or a `readme.md`
-  - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the Microsoft Edge Dev site. Don't use underscores or PascalCase/camelCase.
+  - When adding a page, you must add an entry for it in [toc.md](microsoft-edge/toc.md) for it to appear.
+  - A folder can contain more folders or `readme.md`s
+  - Folder/directory names are dash-separated (e.g., `f12-tools`) and lowercase. They are used in URLs on the docs.microsoft.com site. Don't use underscores or PascalCase/camelCase.
 
 
 ## Other text elements
@@ -73,12 +72,15 @@ body {
 
 Use notes sparingly. They are blocks designed to highlight "don't-miss-it" information.
 
-We have three different versions of notes currently styled:
-
+We have four different versions of notes currently styled:
+- NOTE
+- WARNING
+- TIP
+- IMPORTANT
 
 Respectively, those look like:
 
-![Note patterns](media/notes.png)
+![Note patterns](./media/notes.png)
 
 ```
 > [!WARNING]
@@ -91,6 +93,9 @@ For multi-line blockquote notes, use a > in front of each line of the notes as s
 
 ## Images
 
+Images should be stored in a `media` folder and referenced with a relative path:
+
+`![Note patterns](media/notes.png)`
 
 
 ## Code of Conduct
