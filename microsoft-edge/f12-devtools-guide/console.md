@@ -1,5 +1,5 @@
 ---description: Learn how to use the Console tool to view errors/messages, send debug output, and inspect JavaScript objects/XML nodes.
-title: F12 devtools guide - Console - Microsoft Edge Development
+title: F12 devtools guide - Console
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

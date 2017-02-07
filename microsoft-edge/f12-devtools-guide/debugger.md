@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Debugger tool to navigate your code as it runs, set watches and breakpoints, and view call stacks.
-title: F12 devtools guide - Debugger - Microsoft Edge Development
+title: F12 devtools guide - Debugger
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

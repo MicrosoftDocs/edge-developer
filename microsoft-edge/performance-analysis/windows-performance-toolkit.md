@@ -1,6 +1,6 @@
 ---
 description: Learn how to install and use the Windows Performance Toolkit which enables you to record/analyze a performance trace. 
-title: Performance analysis - Windows performance toolkit - Microsoft Edge Development
+title: Performance analysis - Windows performance toolkit
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

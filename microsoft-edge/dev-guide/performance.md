@@ -1,5 +1,5 @@
 ---description: See guides for perfromance APIs and features within Microsoft Edge like the Animation Timing API.
-title: Dev guide - Realtime communication - Microsoft Edge Development
+title: Dev guide - Realtime communication
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

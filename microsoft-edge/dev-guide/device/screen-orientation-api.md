@@ -1,5 +1,5 @@
 ---description: See how the Screen Orientation API can prevent or override the browser from automatically reflowing your web app’s content during device orientation changes.
-title: Dev guide - Screen Orientation API - Microsoft Edge Development
+title: Dev guide - Screen Orientation API
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: Learn how XMLHttpRequest supports a variety of developer scenarios involving transferring data to and from a server by sending requests.
-title: Dev guide - XMLHttpRequest - Microsoft Edge Development
+title: Dev guide - XMLHttpRequest
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

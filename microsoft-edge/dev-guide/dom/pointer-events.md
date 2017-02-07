@@ -1,5 +1,5 @@
 ---description: See how Pointer Events can be used to create a seamless user experience across user input methods.
-title: Dev guide - Pointer events - Microsoft Edge Development
+title: Dev guide - Pointer events
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

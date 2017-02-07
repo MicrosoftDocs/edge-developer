@@ -1,5 +1,5 @@
 ---description: Learn how the audio element can be used to embed simple sound effects, background audio, or more sophisticated audio engines to your webpage.
-title: Dev guide - Audio - Microsoft Edge Development
+title: Dev guide - Audio
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

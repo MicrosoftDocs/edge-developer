@@ -1,6 +1,6 @@
 ---
 description: See the WebDriver API commands that Microsoft Edge currently supports.
-title: Webdriver commands - Microsoft Edge Development
+title: Webdriver commands
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

@@ -1,6 +1,6 @@
 ---
 description: Learn about how you can store structured data with the Indexed Database API (IndexedDB) and the changes introduced in Edge.
-title: Dev guide - IndexedDB - Microsoft Edge Development
+title: Dev guide - IndexedDB
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

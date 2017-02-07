@@ -1,5 +1,5 @@
 ---description: Learn how to use the Debugger tool to view cookies and session/local storage data.
-title: F12 devtools guide - Webstorage in debugger - Microsoft Edge Development
+title: F12 devtools guide - Webstorage in debugger
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

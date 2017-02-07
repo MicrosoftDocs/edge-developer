@@ -1,5 +1,5 @@
 ---description: Learn how the File API can be used to access local files on the client machine in a secure way without the need for extensions or plugins.
-title: Dev guide - File API - Microsoft Edge Development
+title: Dev guide - File API
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: Learn how the FileReader object ca be used to catch errors, know when a load is complete, and monitor the read progress of files.
-title: Dev guide - FileReader - Microsoft Edge Development
+title: Dev guide - FileReader
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

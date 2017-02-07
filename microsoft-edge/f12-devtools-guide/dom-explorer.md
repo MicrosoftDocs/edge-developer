@@ -1,5 +1,5 @@
 ---description: Find out how to use the DOM Explorer tool to see the state of your webpage’s DOM, examine HTML structure and CSS styles, and test changes.
-title: F12 devtools guide - DOM explorer - Microsoft Edge Development
+title: F12 devtools guide - DOM explorer
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

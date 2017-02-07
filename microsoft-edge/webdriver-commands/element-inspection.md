@@ -1,5 +1,5 @@
 ---description: Learn useful information about the commands used for inspecting elements for the WebDriver API.
-title: Webdriver commands - Element inspection - Microsoft Edge Development
+title: Webdriver commands - Element inspection
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

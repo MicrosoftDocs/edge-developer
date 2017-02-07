@@ -1,6 +1,6 @@
 ---
 description: Get the answers to common questions you may have while loading unpacked extensions.
-title: Extensions - Troubleshooting - Microsoft Edge Development
+title: Extensions - Troubleshooting
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

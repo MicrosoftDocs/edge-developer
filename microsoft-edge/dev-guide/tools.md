@@ -1,5 +1,5 @@
 ---description: See guides for testing and debugging tools and API for Microsoft Edge.
-title: Dev guide - Tools - Microsoft Edge Development
+title: Dev guide - Tools
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

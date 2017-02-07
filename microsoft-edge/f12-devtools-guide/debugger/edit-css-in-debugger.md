@@ -1,6 +1,6 @@
 ---
 description: Learn how to use the Debugger tool to edit your page styles by enabling CSS files to be accessed in the file picker.
-title: F12 devtools guide - Edit CSS in debugger - Microsoft Edge Development
+title: F12 devtools guide - Edit CSS in debugger
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

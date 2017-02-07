@@ -1,5 +1,5 @@
 ---description: Learn how to use keyboard shortcuts to navigate the F12 developer tools directly from your keyboard.
-title: F12 devtools guide - Developer tools keyboard shortcuts - Microsoft Edge Development
+title: F12 devtools guide - Developer tools keyboard shortcuts
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

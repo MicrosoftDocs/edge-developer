@@ -1,5 +1,5 @@
 ---description: Learn useful information about the commands used for navigation for the WebDriver API.
-title: Webdriver commands - Navigation - Microsoft Edge Development
+title: Webdriver commands - Navigation
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

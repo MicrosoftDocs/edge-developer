@@ -1,6 +1,6 @@
 ---
 description: See how to package your Edge extension in a snap with ManifoldJS, the Node.js open source tool.
-title: Extensions - Using ManifoldJS to package extensions - Microsoft Edge Development
+title: Extensions - Using ManifoldJS to package extensions
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

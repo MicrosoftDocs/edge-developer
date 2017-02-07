@@ -1,5 +1,5 @@
 ---description: Learn how Media Source Extensions extends HTML5 video and audio elements to enable streaming without the need for plugins or special servers.
-title: Dev guide - Media Source Extensions - Microsoft Edge Development
+title: Dev guide - Media Source Extensions
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

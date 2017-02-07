@@ -1,5 +1,5 @@
 ---description: Use F12 developer tools to analyze the general performance of websites.
-title: Performance analysis - Microsoft Edge Development
+title: Performance analysis
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

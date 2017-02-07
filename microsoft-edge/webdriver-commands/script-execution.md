@@ -1,5 +1,5 @@
 ---description: Learn useful information about the commands used for script execution for the WebDriver API.
-title: Webdriver commands - Script execution - Microsoft Edge Development
+title: Webdriver commands - Script execution
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

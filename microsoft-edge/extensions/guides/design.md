@@ -1,5 +1,5 @@
 ---description: Learn about the various design aspects and UI behavior to consider when creating Edge extensions.
-title: Extensions - Design - Microsoft Edge Development
+title: Extensions - Design
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

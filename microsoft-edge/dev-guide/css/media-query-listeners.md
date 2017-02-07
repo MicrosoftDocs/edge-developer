@@ -1,5 +1,5 @@
 ---description: Learn how Media Query Listeners enable evaluating a media query at runtime using JavaScript and subscribing listeners to changes in the media query’s evaluation.
-title: Dev guide - Media query listeners - Microsoft Edge Development
+title: Dev guide - Media query listeners
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

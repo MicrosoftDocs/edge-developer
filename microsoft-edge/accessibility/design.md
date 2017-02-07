@@ -1,5 +1,5 @@
 ---description: Read up on resources for inclusive design tools and best practices.
-title: Accessibility - Design - Microsoft Edge Development
+title: Accessibility - Design
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

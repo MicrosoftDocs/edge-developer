@@ -1,5 +1,5 @@
 ---description: Learn useful information about the commands used for taking screenshots  for the WebDriver API.
-title: Webdriver commands - Screenshots - Microsoft Edge Development
+title: Webdriver commands - Screenshots
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

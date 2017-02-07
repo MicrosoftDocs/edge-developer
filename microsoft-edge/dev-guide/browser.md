@@ -1,5 +1,5 @@
 ---description: Guides for browser features in Microsoft Edge.
-title: Dev guide - Browser - Microsoft Edge Development
+title: Dev guide - Browser
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

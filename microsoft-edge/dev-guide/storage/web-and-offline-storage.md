@@ -1,5 +1,5 @@
 ---description: Learn how the Web Storage API can persist client-side data in a secure manner using the Document Object Model (DOM), sessionStorage and localStorage.
-title: Dev guide - Web and offline storage - Microsoft Edge Development
+title: Dev guide - Web and offline storage
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

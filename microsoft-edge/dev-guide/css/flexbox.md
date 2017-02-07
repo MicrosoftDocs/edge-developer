@@ -1,5 +1,5 @@
 ---description: See how Flexible Box Layout can be used to make the relative position and size of elements adjust as screen and browser window sizes change.
-title: Dev guide - Flexbox - Microsoft Edge Development
+title: Dev guide - Flexbox
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

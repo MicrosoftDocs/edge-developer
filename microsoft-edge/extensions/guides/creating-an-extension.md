@@ -1,5 +1,5 @@
 ---description: Learn how to create an Edge extension with some helpful tutorials and videos!
-title: Extensions - Creating an extension - Microsoft Edge Development
+title: Extensions - Creating an extension
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

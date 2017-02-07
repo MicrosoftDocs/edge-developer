@@ -1,5 +1,5 @@
 ---description: Learn how the Web Audio API can be used to process and synthesize audio in web applications.
-title: Dev guide - Web Audio - Microsoft Edge Development
+title: Dev guide - Web Audio
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

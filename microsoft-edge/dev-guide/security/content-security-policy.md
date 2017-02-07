@@ -1,5 +1,5 @@
 ---description: Learn how the Content Security Policy enables control of resources that a particular page can fetch or execute with the aim of preventing code injection attacks.
-title: Dev guide - Content Security Policy - Microsoft Edge Development
+title: Dev guide - Content Security Policy
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

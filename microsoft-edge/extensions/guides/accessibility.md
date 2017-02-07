@@ -1,5 +1,5 @@
 ---description: To ensure your extension’s icon is visible while in both light and dark mode, follow the accessibility guide.
-title: Extensions - Accessibility - Microsoft Edge Development
+title: Extensions - Accessibility
 author: abbycar
 ms.author: abigailc
 ms.date: 02/08/2017

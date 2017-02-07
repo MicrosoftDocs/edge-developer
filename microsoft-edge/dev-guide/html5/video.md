@@ -1,5 +1,5 @@
 ---description: Learn how you can use HTML5 video to embed a full featured video player on your webpage without requiring a third-party plug-in or JavaScript.
-title: Dev guide - Video - Microsoft Edge Development
+title: Dev guide - Video
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

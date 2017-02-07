@@ -1,5 +1,5 @@
 ---description: Check out tools and testing procedures that help evaluate a website's accessibility.
-title: Accessibility - Test - Microsoft Edge Development
+title: Accessibility - Test
 author: libbymc
 ms.author: libbymc
 ms.date: 02/08/2017

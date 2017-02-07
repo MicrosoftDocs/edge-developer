@@ -1,5 +1,5 @@
 ---description: If you are a search provider, see how to ensure that Microsoft Edge supports your service.
-title: Dev guide - Search provider discovery - Microsoft Edge Development
+title: Dev guide - Search provider discovery
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017

@@ -1,5 +1,5 @@
 ---description: Learn how to use new and old features in Microsoft Edge's F12 developer tools.
-title: F12 devtools guide - Microsoft Edge Development
+title: F12 devtools guide
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017
