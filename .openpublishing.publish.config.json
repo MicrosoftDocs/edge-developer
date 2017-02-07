@@ -8,7 +8,7 @@
       "build_output_subfolder": "edge-developer",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -30,5 +30,7 @@
       "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/edge-developer",
+  "git_repository_branch_open_to_public_contributors": "docs"
 }
