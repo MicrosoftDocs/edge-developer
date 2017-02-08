@@ -1,4 +1,5 @@
 ---
+ms.assetid: 961ca575-6b93-4367-a72b-f3f02e5b9568
 description: Learn about the common console error codes, their associated messages, and their suggested fixes.
 title: F12 devtools guide - Console error and status codes
 author: erikadoyle

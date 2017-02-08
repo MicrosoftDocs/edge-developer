@@ -1,4 +1,5 @@
 ---
+ms.assetid: 3144faaf-1d0a-4c14-bdca-00c4dae7bf81
 layout: LandingPage
 description: The info you need to develop on and for Microsoft Edge.
 title: Microsoft Edge documentation

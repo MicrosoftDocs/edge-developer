@@ -1,4 +1,5 @@
 ---
+ms.assetid: a6b51650-30b8-4900-9dce-287ecb677e6c
 description: Learn how Media Queries enable you to scope a stylesheet to a set of precise device capabilities.
 title: Dev guide - Media queries
 author: libbymc

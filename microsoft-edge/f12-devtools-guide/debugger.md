@@ -1,4 +1,5 @@
 ---
+ms.assetid: 4d997971-268e-43e2-bd4b-0ea207e71aa3
 description: Learn how to use the Debugger tool to navigate your code as it runs, set watches and breakpoints, and view call stacks.
 title: F12 devtools guide - Debugger
 author: erikadoyle

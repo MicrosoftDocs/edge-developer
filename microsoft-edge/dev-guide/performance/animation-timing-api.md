@@ -1,4 +1,5 @@
 ---
+ms.assetid: 00983da8-bf8d-4766-863c-478d78a32c64
 description: Learn how to use the Animation Timing API to create animated webpages.
 title: Dev guide - Animation Timing API
 author: erikadoyle

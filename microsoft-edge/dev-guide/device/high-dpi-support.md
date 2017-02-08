@@ -1,4 +1,5 @@
 ---
+ms.assetid: e4b0876d-0fc0-4835-9f25-61da1b3ccd8b
 description: See how Microsoft Edge brings enhanced scaling for high DPI screens with properties like devicePixelRatio.
 title: Dev guide - High DPI support
 author: abbycar
