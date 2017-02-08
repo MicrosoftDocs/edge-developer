@@ -1,4 +1,5 @@
 ---
+ms.assetid: b84224f4-450b-48eb-ba98-7fcecf96b8e3
 description: Learn how to install and use the Windows Performance Toolkit which enables you to record/analyze a performance trace. 
 title: Performance analysis - Windows performance toolkit
 author: erikadoyle

@@ -1,4 +1,5 @@
 ---
+ms.assetid: dd0aec98-b507-4213-a9f8-8722023ea27e
 description: Learn how about how HTTP/2 can do header compression, utilize multiplexing, and enable prioritizing while making multiple HTTP requests to a domain.
 title: Dev guide - HTTP2
 author: erikadoyle

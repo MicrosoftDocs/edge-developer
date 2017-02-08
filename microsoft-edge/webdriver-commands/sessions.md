@@ -1,4 +1,5 @@
 ---
+ms.assetid: 84c83d6e-b05c-4dc8-a310-d1977c998e6c
 description: Learn useful information about session-related commands for the WebDriver API.
 title: Webdriver commands - Sessions
 author: erikadoyle

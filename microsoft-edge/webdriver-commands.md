@@ -1,4 +1,5 @@
 ---
+ms.assetid: e56172c0-b635-4c02-8e0c-56bf8cb4c164
 description: See the WebDriver API commands that Microsoft Edge currently supports.
 title: Webdriver commands
 author: erikadoyle

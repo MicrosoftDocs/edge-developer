@@ -1,4 +1,5 @@
 ---
+ms.assetid: 2c258f9f-1c53-4ae0-8ad6-31d53eb072f7
 description: See guides about real-time communication features in Microsoft Edge like ORTC.
 title: Dev guide - Realtime communication
 author: abbycar

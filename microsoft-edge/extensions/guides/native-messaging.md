@@ -1,4 +1,5 @@
 ---
+ms.assetid: 419043db-a093-4d00-a4c0-ad6d658bd057
 description: Learn about how you can use native messaging to have your extension communicate with a companion UWP app.
 title: Extensions - Native messaging
 author: abbycar

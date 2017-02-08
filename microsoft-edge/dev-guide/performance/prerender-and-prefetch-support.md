@@ -1,4 +1,5 @@
 ---
+ms.assetid: 6840de61-267a-4415-ae62-aede3b3c4a88
 description: Learn how prerender and prefetch can be used to improve your website's navigation.
 title: Dev guide - Prerender and prefetch support
 author: erikadoyle

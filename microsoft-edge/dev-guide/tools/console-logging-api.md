@@ -1,4 +1,5 @@
 ---
+ms.assetid: 18614966-15ca-41d2-9f36-71ec3877c412
 description: Learn how the Console Logging API can be used to let you communicate from your app to the F12 developer tools console.
 title: Dev guide - Console logging API
 author: erikadoyle

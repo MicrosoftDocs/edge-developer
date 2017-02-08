@@ -1,4 +1,5 @@
 ---
+ms.assetid: 75aa2c28-f3dd-4609-a431-6ddd2fe9412a
 description: Learn how HTTP Strict Transport Security (HSTS) can ensure that users connect to secure sites in a secure way to help prevent a variety of attack scenarios.
 title: Dev guide - HSTS
 author: abbycar

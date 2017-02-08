@@ -1,4 +1,5 @@
 ---
+ms.assetid: b2b19215-516e-45d3-9c8b-4513dafcfd1a
 description: Learn how the Resource Timing API allows web applications to access network timing information.
 title: Dev guide - Resource Timing API
 author: erikadoyle

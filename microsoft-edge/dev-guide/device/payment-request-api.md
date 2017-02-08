@@ -1,4 +1,5 @@
 ---
+ms.assetid: a69c3151-9711-4bf1-8a7b-c1ba64b02f08
 description: Learn how the Payment Request API enables Edge to act as an intermediary between merchants, consumers, and consumer payment methods stored in the cloud.
 title: Dev guide - Payment Request API
 author: libbymc

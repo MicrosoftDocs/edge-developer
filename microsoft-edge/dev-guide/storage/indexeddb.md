@@ -1,4 +1,5 @@
 ---
+ms.assetid: 56d5d00d-287f-4ee0-8d40-dbe8bc871c66
 description: Learn about how you can store structured data with the Indexed Database API (IndexedDB) and the changes introduced in Edge.
 title: Dev guide - IndexedDB
 author: abbycar

@@ -1,4 +1,5 @@
 ---
+ms.assetid: ee7cfe4e-a399-4d0f-a765-7c92b152f89f
 description: Read the legal policy describing supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer.
 title: Extensions - Microsoft browser extension policy
 author: abbycar

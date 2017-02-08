@@ -1,4 +1,5 @@
 ---
+ms.assetid: 2a78cf0e-cc19-409d-a1d8-fb9fa7935d93
 description: See how Flexible Box Layout can be used to make the relative position and size of elements adjust as screen and browser window sizes change.
 title: Dev guide - Flexbox
 author: libbymc

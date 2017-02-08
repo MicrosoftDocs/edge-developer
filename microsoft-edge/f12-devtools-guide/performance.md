@@ -1,4 +1,5 @@
 ---
+ms.assetid: 6c0907d1-631c-4a1c-9167-3319d424597e
 description: Learn how to use the Performance tool to profile your webpage’s frame rate and JavaScript execution times.
 title: F12 devtools guide - Performance
 author: erikadoyle
