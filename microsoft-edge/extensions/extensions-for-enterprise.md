@@ -24,7 +24,6 @@ To disable extensions for employees, configure Group Policy and Microsoft Intune
 
 Before an enterprise can distribute an extension to its employees, it must first be packaged. Instructions on packaging extensions are available in the [Packaging](./guides/packaging.md) guide.
 
-Once packaged, the extension can then be [deployed](./guides/packaging/creating-and-testing-extension-packages.md#deploying) using the same methods that are used for AppXs.
 
 ## Distributing extensions
 
