@@ -22,7 +22,7 @@ To disable extensions for employees, configure Group Policy and Microsoft Intune
 
 ## Packaging extensions
 
-Before an enterprise can distribute an extension to its employees, it must first be packaged. Instructions on packaging extensions are available through the Technology Adoption Program (TAP).
+Before an enterprise can distribute an extension to its employees, it must first be packaged. Instructions on packaging extensions are available in the [Packaging](./guides/packaging.md) guide.
 
 
 ## Distributing extensions
