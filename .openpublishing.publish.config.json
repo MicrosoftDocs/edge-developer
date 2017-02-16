@@ -32,5 +32,5 @@
   ],
   "need_generate_pdf_url_template": false,
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/edge-developer",
-  "git_repository_branch_open_to_public_contributors": "docs"
+  "git_repository_branch_open_to_public_contributors": "stage"
 }
