@@ -85,7 +85,7 @@ For example, a manifest.json file with the following `"name"` field:
 
 `"name" : "__MSG_appName__"`
 
-will have a manifest folder that live in \<CURRENT DIRECTORY>\MSGappName\edgeextension\manifest.
+will have a manifest folder that lives in `\<CURRENT DIRECTORY>\MSGappName\edgeextension\manifest`.
 
 In the AppXManifest file, you'll need to:
  -	Replace the required Identity fields and PublisherDisplayName field.
