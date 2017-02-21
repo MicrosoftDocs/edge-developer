@@ -18,6 +18,8 @@ In the Windows Dev Center dashboard, you can find a direct link to your extensio
 
 
 After logging in to the Windows Dev Center and navigating to your extension through the dashboard, on the App identity page you’ll find the link in the **Store protocol link** row:
+
+![store protocol link](./media/store-link.png)
  
 ## Make sure you’re following the Windows Store Policy
 When creating your extension, make sure you keep in mind the guidelines for submitting to the Windows Store highlighted in the [Windows Store Policy](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx). 
@@ -29,14 +31,6 @@ You can add keywords to your extension submission to imporove its discoverabilit
 
 ![Submitting a response to a review](./media/keywords.png)
 
-## Checkout your ratings and reviews
-Log in regularly to check your user reviews and ratings. While the Windows Store app will only have info on the current user market, logging into the Windows Dev Center will display average rating across all markets.
-
-## Respond to user reviews
-You can respond to user reviews in the Windows Store through the Windows Dev Center's dashboard. Navigate to your extension and under Analytics select **Reviews**. A link will appear underneath each review that will allow you to respond directly to the customer. This channel of communication enables you to offer feedback, resolutions, or send a thank you for the review!
-
-![Submitting a response to a review](./media/reviews.png)
-
 ## Automate your submission to the Windows Store
 You can automate and streamline your submissions to the Windows Store by using the new Windows Store Submission API, which allows you to update apps/games, add-ons (in-app purchases), and package flights through a REST API. Checkout the [documentation and samples](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) or use the open source [Submission API VSTS extension](https://github.com/Microsoft/windows-dev-center-vsts-extension) to get started.
 
@@ -45,3 +39,10 @@ You can automate and streamline your submissions to the Windows Store by using t
 You can direct users to the Windows Feedback Hub subcategory for your extension by embedding a link that points to it. This link can be found...
 
 
+## Checkout your ratings and reviews
+Log in regularly to check your user reviews and ratings. While the Windows Store app will only have info on the current user market, logging into the Windows Dev Center will display average rating across all markets.
+
+## Respond to user reviews
+You can respond to user reviews in the Windows Store through the Windows Dev Center's dashboard. Navigate to your extension and under Analytics select **Reviews**. A link will appear underneath each review that will allow you to respond directly to the customer. This channel of communication enables you to offer feedback, resolutions, or send a thank you for the review!
+
+![Submitting a response to a review](./media/reviews.png)
