@@ -4,10 +4,10 @@ description: Learn about how to package up your Edge extension manually and test
 title: Extensions - Creating and testing extension packages
 author: abbycar
 ms.author: abigailc
-ms.date: 02/08/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: edge, web development, html, css, javascript, developer, packaging
 ---
 
 # Creating and testing a Microsoft Edge extension AppX package
@@ -245,3 +245,18 @@ The certID is the serial number of the certificate. To determine the certificate
 You can deploy the Microsoft Edge Extension AppX package by running the following command in PowerShell (as administrator):
 
 `Add-AppxPackage [path to AppX]`
+
+## Automated testing with WebDriver
+
+With WebDriver, you can programatically sideload your extension, enabling automated testing for extensions when Edge is launched in WebDriver mode.
+Setting up automated tests can prove helpful for extensions that manipulate content on a page, and varifying that the correct behavior is exhibited.
+
+The Windows 10 Creator Update is the first step towards establishing end to end WebDriver testing of extensions by enabling the testing of content/background scripts and the [`browseraction.onclicked`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/onClicked) event.
+
+> [!NOTE]
+> WebDriver support for [browserAction](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction) popup testing is currently in development.
+
+
+To sideload your extension for automated testing, you'll need to store your extension's folder under `localappdata/packages/<myapppackage>/localstate`. Once your extension is in local state, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object and pass an array of absolute paths.
+
+To see code on a way to automate sideloading an extension, Check out the following [sample](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs).
