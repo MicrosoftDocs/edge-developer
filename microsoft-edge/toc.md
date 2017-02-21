@@ -119,6 +119,7 @@
 #### [Porting Chrome extensions](extensions/guides/porting-Chrome-extensions.md)
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
+### [Tips and tricks](extensions/tips-and-tricks.md)
 ## [F12 devtools guide](f12-devtools-guide.md)
 ### [Console](f12-devtools-guide/console.md)
 #### [Console error and status codes](f12-devtools-guide/console/console-error-and-status-codes.md)
