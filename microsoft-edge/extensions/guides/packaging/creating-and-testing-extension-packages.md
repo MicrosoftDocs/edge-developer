@@ -248,15 +248,8 @@ You can deploy the Microsoft Edge Extension AppX package by running the followin
 
 ## Automated testing with WebDriver
 
-With WebDriver, you can programatically sideload your extension, enabling automated testing for extensions when Edge is launched in WebDriver mode.
-Setting up automated tests can prove helpful for extensions that manipulate content on a page, and varifying that the correct behavior is exhibited.
+As of the Anniversary Update, you can programatically sideload your extension in Edge with WebDriver, enabling automated testing of extensions when Edge is launched in WebDriver mode. This will allow you to set up automated tests for any extension that manipulates content on a page and verify that the correct behavior is exhibited.
 
-The Windows 10 Creator Update is the first step towards establishing end to end WebDriver testing of extensions by enabling the testing of content/background scripts and the [`browseraction.onclicked`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/onClicked) event.
+To sideload your extension for automated testing, you'll need to store your extension's folder under `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\`. Once your extension is in the `LocalState` directory, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object, and add the `extensionPaths` capability to it. The value of this capability is an array of absolute paths to the extensions (in the `LocalState` directory) you wish to have side loaded when Edge starts in WebDriver mode.
 
-> [!NOTE]
-> WebDriver support for [browserAction](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction) popup testing is currently in development.
-
-
-To sideload your extension for automated testing, you'll need to store your extension's folder under `localappdata/packages/<myapppackage>/localstate`. Once your extension is in local state, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object and pass an array of absolute paths.
-
-To see code on a way to automate sideloading an extension, check out the following [sample](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs).
+Check out the following [C# file](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs) for a complete sample on side loading extensions in Edge with WebDriver.
