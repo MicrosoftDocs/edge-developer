@@ -259,4 +259,4 @@ The Windows 10 Creator Update is the first step towards establishing end to end 
 
 To sideload your extension for automated testing, you'll need to store your extension's folder under `localappdata/packages/<myapppackage>/localstate`. Once your extension is in local state, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object and pass an array of absolute paths.
 
-To see code on a way to automate sideloading an extension, Check out the following [sample](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs).
+To see code on a way to automate sideloading an extension, check out the following [sample](https://github.com/scottlow/Ignite2016/blob/master/Ignite%202016%20WebDriver%20Demo/IgniteWebDriverDemo/Program.cs).
