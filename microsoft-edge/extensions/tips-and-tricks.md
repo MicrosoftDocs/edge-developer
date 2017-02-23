@@ -34,7 +34,7 @@ This can be be done in the Windows Dev Center under the description section of y
 ![Submitting a response to a review](./media/keywords.png)
 
 ## Automate your submission to the Windows Store
-You can automate and streamline your submissions to the Windows Store by using the new Windows Store Submission API, which allows you to update apps/games, add-ons (in-app purchases), and package flights through a REST API. Checkout the [documentation and samples](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) or use the open source [Submission API VSTS extension](https://github.com/Microsoft/windows-dev-center-vsts-extension) to get started.
+You can automate and streamline your submissions to the Windows Store by using the new Windows Store Submission API, which allows you to update apps/games, add-ons (in-app purchases), and package flights through a REST API. Check out the [documentation and samples](https://docs.microsoft.com/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) or use the open source [Submission API VSTS extension](https://github.com/Microsoft/windows-dev-center-vsts-extension) to get started.
 
 ## Use the Windows Feedback Hub to gather feedback/reviews/feature requests
 
@@ -44,7 +44,7 @@ You can direct users to the Windows Feedback Hub subcategory for your extension 
 
 You will need to substitute `<PFN>` with the Package Family Name of you extension. This can be found under the **App identity** section for your extension in the Windows Dev Center.
 
-## Checkout your ratings and reviews
+## Check out your ratings and reviews
 Log in regularly to check your user reviews and ratings. While the Windows Store app will only have info on the current user market, logging into the Windows Dev Center will display average rating across all markets.
 
 ## Respond to user reviews
