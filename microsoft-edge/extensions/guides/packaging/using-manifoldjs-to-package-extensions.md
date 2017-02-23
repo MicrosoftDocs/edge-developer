@@ -12,11 +12,9 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Using ManifoldJS to create extension AppX packages
 
-The other sections in the packaging guide provide detailed explanations of why each step of the packaging process is needed and how to localize your extension for Windows and the Windows Store.
+ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Windows Store.
 
-The majority of the sections in this guide can be skipped thanks to added support for Microsoft Edge extensions into ManifoldJS. This open source Node.js tool allows you to quickly and painlessly create a package that you can then use for submission to the Windows Store.
-
-You will still need to read up on the following articles:
+Before getting started, you will still need to read up on the following articles:
 
 - [Extensions in the Windows Dev Center](./extensions-in-the-windows-dev-center.md)
 - [Localizing extension packages](./localizing-extension-packages.md)
