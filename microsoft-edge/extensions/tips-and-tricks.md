@@ -27,7 +27,9 @@ When creating your extension, make sure you keep in mind the guidelines for subm
 Edge extensions also have an additional set of policies to follow seen [here](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).
 
 ## Improve your extension’s discoverability in the Windows Store
-You can add keywords to your extension submission to imporove its discoverability through searches. For example, "Edge Extensions" and "name of my extension".
+You can add keywords to your extension submission to imporove its discoverability through searches. For example, "Edge Extensions" and "name of my extension". 
+
+This can be be done in the Windows Dev Center under the description section of your extension. These keywords will need to be added for every language your extension supports.
 
 ![Submitting a response to a review](./media/keywords.png)
 
@@ -36,8 +38,11 @@ You can automate and streamline your submissions to the Windows Store by using t
 
 ## Use the Windows Feedback Hub to gather feedback/reviews/feature requests
 
-You can direct users to the Windows Feedback Hub subcategory for your extension by embedding a link that points to it. This link can be found...
+You can direct users to the Windows Feedback Hub subcategory for your extension by embedding a link that points to it. This link will need to be created using the follwing format: 
 
+`feedback-hub://?tabid=2&appid=<PFN>!App`
+
+You will need to substitute `<PFN>` with the Package Family Name of you extension. This can be found under the **App identity** section for your extension in the Windows Dev Center.
 
 ## Checkout your ratings and reviews
 Log in regularly to check your user reviews and ratings. While the Windows Store app will only have info on the current user market, logging into the Windows Dev Center will display average rating across all markets.
