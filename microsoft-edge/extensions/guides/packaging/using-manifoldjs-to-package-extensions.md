@@ -88,7 +88,7 @@ For example, a manifest.json file with the following `"name"` field:
 will have a manifest folder that lives in `\<CURRENT DIRECTORY>\MSGappName\edgeextension\manifest`.
 
 In the AppXManifest file, you'll need to:
- -	Replace the required Identity fields and PublisherDisplayName field.
+ -	Replace the required Identity fields and PublisherDisplayName field as outlined [here](./creating-and-testing-extension-packages.md#app-identity-template-values).
  -	Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design.md#icons-for-packaging) guide for information about where these icons are used.
  - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Windows Store](./localizing-extension-packages.md#localizing-name-and-description-in-the-windows-store) section.
 
