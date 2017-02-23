@@ -118,6 +118,7 @@
 ##### [Using ManifoldJS to package extensions](extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md)
 #### [Porting Chrome extensions](extensions/guides/porting-Chrome-extensions.md)
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
+### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [F12 devtools guide](f12-devtools-guide.md)
 ### [Console](f12-devtools-guide/console.md)
