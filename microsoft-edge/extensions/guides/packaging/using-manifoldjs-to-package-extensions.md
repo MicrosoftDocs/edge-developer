@@ -12,11 +12,9 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Using ManifoldJS to create extension AppX packages
 
-The other sections in the packaging guide provide detailed explanations of why each step of the packaging process is needed and how to localize your extension for Windows and the Windows Store.
+ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Windows Store.
 
-The majority of the sections in this guide can be skipped thanks to added support for Microsoft Edge extensions into ManifoldJS. This open source Node.js tool allows you to quickly and painlessly create a package that you can then use for submission to the Windows Store.
-
-You will still need to read up on the following articles:
+Before getting started, you will still need to read up on the following articles:
 
 - [Extensions in the Windows Dev Center](./extensions-in-the-windows-dev-center.md)
 - [Localizing extension packages](./localizing-extension-packages.md)
@@ -76,10 +74,10 @@ After ManifoldJS has finished running, you'll have a folder with the following c
                     ...
                 ...
 
-The generationInfo.json file is a log produced by running ManifoldJS and won't be included in your extension package. Only the contents of the **manifest** folder will be packaged. Within the manifest folder, the Assets folder contains the images that will be used in the Windows and Windows Store UI, while the Extension folder has the contents of your extension within it. 
+The generationInfo.json file is a log produced by running ManifoldJS and won't be included in your extension package. Only the contents of the **manifest** folder will be packaged. Within the manifest folder, the Assets folder contains the images that will be used in the Windows and Windows Store UI, while the Extension folder has the contents of your extension within it.
 
 
-Now that you have the correct files, you'll need to edit the generated AppXManifest file within the **manifest** folder. If the extension’s manifest.json file has an internationalized string for the "name" field, once ManifoldJS is run, the most top layer folder’s name will have no underscores and include "MSG". 
+Now that you have the correct files, you'll need to edit the generated AppXManifest file within the **manifest** folder. If the extension’s manifest.json file has an internationalized string for the "name" field, once ManifoldJS is run, the most top layer folder’s name will have no underscores and include "MSG".
 
 For example, a manifest.json file with the following `"name"` field:
 
@@ -88,7 +86,7 @@ For example, a manifest.json file with the following `"name"` field:
 will have a manifest folder that lives in `\<CURRENT DIRECTORY>\MSGappName\edgeextension\manifest`.
 
 In the AppXManifest file, you'll need to:
- -	Replace the required Identity fields and PublisherDisplayName field as outlined [here](./creating-and-testing-extension-packages.md#app-identity-template-values).
+ -	Replace the required Identity fields and PublisherDisplayName field as outlined [here](./creating-and-testing-extension-packages.md#app-identity-template-values). Note that if you're only packaging for testing purposes or for enterprise distribution, you can use placeholder values instead of registering for a Windows Dev Center account.
  -	Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design.md#icons-for-packaging) guide for information about where these icons are used.
  - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Windows Store](./localizing-extension-packages.md#localizing-name-and-description-in-the-windows-store) section.
 

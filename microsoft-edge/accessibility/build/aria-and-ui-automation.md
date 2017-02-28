@@ -14,7 +14,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 The W3C defines Accessible Rich Internet Applications (ARIA) as a syntax for making dynamic web content and custom UI accessible. Microsoft Edge recognizes the ARIA role, state, and property information and exposes it to assistive technologies, which in turn can use the [Microsoft UI Automation](https://blogs.msdn.microsoft.com/winuiautomation/) APIs to retrieve the information.
 
-The Microsoft Edge rending engine (EdgeHTML) builds an accessible projection of web pages, conforming to the following W3C specifications:
+The Microsoft Edge rendering engine (EdgeHTML) builds an accessible projection of web pages, conforming to the following W3C specifications:
 
 1. The [HTML Accessibility API Mappings](http://www.w3.org/TR/html-aam-1.0/) specification defines how HTML elements and attributes map to ARIA and UI Automation objects.
   * [Working draft](http://www.w3.org/TR/html-aam-1.0/) - stable version of the specification
