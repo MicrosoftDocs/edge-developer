@@ -12,9 +12,9 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Microsoft Edge extension API roadmap
 
-In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is suported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
+In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is supported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
 
-Not seeing an API your extension needs? We're always listening on [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too!
+Not seeing an API your extension needs? We're always listening on [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or create a new feedback item so that other developers can upvote it!
 
 > [!NOTE]
 > This page was last updated February 23rd, 2017.
@@ -30,7 +30,7 @@ The following new APIs and features are available/in development for [Windows 10
 [bookmarks.getTree](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/getTree) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [bookmarks.move](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/move) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [bookmarks.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/remove) | Supported — Microsoft Edge (38) / Windows 10 (15002)
-[bookmarks.removeTree](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/remove) | Supported — Microsoft Edge (38) / Windows 10 (15002)
+[bookmarks.removeTree](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/removeTree) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [bookmarks.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/update) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [browserAction.setTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setTitle) | Supported — Microsoft Edge (38) / Windows 10 (14926)
 Custom CSP | Supported — Microsoft Edge (38) / Windows 10 (15002)
@@ -84,4 +84,3 @@ permissions   | Allows users to select what optional permissions they would like
 [webNavigation](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation) | Used to receive notifications about the status of navigation requests in-flight. | Supported — Microsoft Edge (38) / Windows 10 (14393)
 [webRequest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest)    | Enables use of the webRequest API to observe and analyze traffic and to intercept, block, or modify requests in-flight. | Supported — Microsoft Edge (38) / Windows 10 (14393)
 [windows](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows)       | Interacts with the browser by creating, modifying, and rearranging windows. | Supported — Microsoft Edge (38) / Windows 10 (14393)
-
