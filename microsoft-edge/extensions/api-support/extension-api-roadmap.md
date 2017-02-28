@@ -14,6 +14,8 @@ keywords: edge, web development, html, css, javascript, developer
 
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is suported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
 
+Not seeing an API your extension needs? We're always listening on [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too!
+
 > [!NOTE]
 > This page was last updated February 23rd, 2017.
 
