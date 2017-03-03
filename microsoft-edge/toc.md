@@ -109,6 +109,7 @@
 #### [Creating an extension](extensions/guides/creating-an-extension.md)
 #### [Debugging extensions](extensions/guides/debugging-extensions.md)
 #### [Design](extensions/guides/design.md)
+#### [Getting started](extensions/guides/getting-started.md)
 #### [Internationalization](extensions/guides/internationalization.md)
 #### [Native messaging](extensions/guides/native-messaging.md)
 #### [Packaging](extensions/guides/packaging.md)
