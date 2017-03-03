@@ -103,6 +103,7 @@
 #### [Supported manifest keys](extensions/API-support/supported-manifest-keys.md)
 ##### [JSON manifest example](extensions/API-support/supported-manifest-keys/json-manifest-example.md)
 ### [Extensions for enterprise](extensions/extensions-for-enterprise.md)
+### [Getting started](extensions/getting-started.md)
 ### [Guides](extensions/guides.md)
 #### [Accessibility](extensions/guides/accessibility.md)
 #### [Adding and removing extensions](extensions/guides/adding-and-removing-extensions.md)
