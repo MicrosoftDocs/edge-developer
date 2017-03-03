@@ -18,7 +18,6 @@ The first step of this journey is to create an Edge extension: 
 - New to extensions? Check out our [guide on how to create extensions](./creating-an-extension.md) for information on how to build your first browser extension! 
 - Already familiar with extension APIs? Check out our [API support documentation](../api-support.md) for the latest info on which APIs are supported/in development. 
 - Have a Chrome extension that you want to port to Microsoft Edge? Try the [Microsoft Edge Extension Toolkit](./porting-chrome-extensions.md)!
-
 ## Loading and debugging 
 Once you have an extension that works in Edge, you'll want to side load it to see it in action. The first step to do this is to ensure that you have [extension developer features enabled](./adding-and-removing-extensions.md). This will allow you to side load extension files in Edge so that you can test your extension while developing it. Should you run into any issues, the F12 developer tools allow you to [debug the various contexts of your extension](./debugging-extensions.md) to determine exactly what's going on. Still running into issues? Our [troubleshooting guide](../troubleshooting.md) has solutions to several common gotchas. 
 
@@ -68,5 +67,5 @@ The Windows Store also allows you to [control the visibility of your extension](
 - Publishing a second beta version of their extension as hidden in the Windows Store.
 - Initially publishing their extension as hidden to monitor initial telemetry before eventually changing its status to visible once a certain level of confidence is reached.
  
-## That's It! 
+## That's it! 
 If you've reached the bottom of this guide, you've completed the process of developing an extension for Edge! Be sure to check out our [tips and tricks](../tips-and-tricks.md) page for ideas on how to market your extension and interact with your users.  
