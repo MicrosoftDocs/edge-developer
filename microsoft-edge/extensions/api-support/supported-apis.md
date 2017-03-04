@@ -36,7 +36,7 @@ The following `browserAction` APIs are supported:
 | [browserAction.disable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/disable) | | |
 | [browserAction.enable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/enable) | | |
 | [browserAction.getBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeBackgroundColor) |  | |
-| [browserAction.setBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeBackgroundColor) | | |
+| [browserAction.setBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeBackgroundColor) | | Only `ColorArray` and hexidecimal values are supported. CSS color names (i.e. `blue`) are not. |
 | [browserAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/onClicked) | | |
 | [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | | |
 | [browserAction.setPopup](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction/setPopup)  | | |
