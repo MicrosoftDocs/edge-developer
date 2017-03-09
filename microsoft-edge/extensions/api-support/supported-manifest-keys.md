@@ -65,7 +65,7 @@ The following [permissions](https://developer.mozilla.org/en-US/docs/Mozilla/Add
 
 Permission | Description
 :---------- | :------------
-\<any url\> | Allows content scripts to run.
+\<all_urls\> | Allows content scripts to run.
 contextMenus | Gives access to `contextMenus` API. This enables adding items to Microsoft Edge's context menu.
 cookies | Gives access to the `cookies` API. This enable querying and modifying cookies as well as being notified when they change.
 geolocation | Allow the extension to use the HTML5 `geolocation` API without prompting the user for permission.
