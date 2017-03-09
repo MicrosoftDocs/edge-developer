@@ -44,7 +44,8 @@ To start debugging the content script of your extension:
 1. Launch F12 by either navigating to the **More (...)** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
 2. Navigate to and select your extension's content script. Content scripts for extensions currently running will be depicted by a different folder for each extension.
 
- >note Only running content scripts will appear.
+> [!NOTE]
+> Only running content scripts will appear.
 
 3. Place breakpoints for debugging by clicking to the left of the source code line number.  
  ![f12 with content script being debugged](./../media/debug-content-f12.png)
@@ -54,15 +55,30 @@ To start debugging the content script of your extension:
 
 
 ## Extension page debugging
-To start debugging extension pages like the options page or the popup of your extension:
+
+There are two methods that can be used for accessing the source code of your extension page for debugging. One method applies to a variety of pages while the other only works for popup pages.
+
+### Debugging any extension page
+The following method works for all extension pages like the options page and popups:
+
 
 1. Right-click on the background of your page.
 2. Select **"View source"**.
 
    ![popup debugging with f12](./../media/debug-popup-select.png)
+
 3. Once F12 opens, place breakpoints within the file you want to debug.
 
    ![popup debugging with f12](./../media/debug-popup-f12.png)
 4. Select the **Console** tab and execute the command `location.reload()`. This will re-execute the page script, allowing you to step through your code.  
-   
+
    ![console with location.reload entered](./../media/debug-f12-background-console.png)
+
+### Debugging a popup extension page
+While the method for debugging extension pages also applies to popup extension pages, the following steps outline another way to debug your popup:
+
+1. Right-click your extension's icon.
+2. Select **"Inspect popup"**.
+
+ ![popup debug inspect](./../media/debug-popup-inspect.png)
+3. Follow steps 3 and 4 above for placing breakpoints and reloading the popup.
