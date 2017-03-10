@@ -92,7 +92,7 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 If the 150px icon for the Windows Store has a transparent background, the accent color of the user's device will appear as the icon's background color.
 
 
-For example, if the user has selected pink as their accent color, the transparent background of our store icon will appear as pink to them.
+For example, if the user has selected pink as their accent color, the transparent background of your store icon will appear as pink to them.
 
 ![Windows accent color](./../media/windows-accent-color.png)
 ![Background color auto selected](./../media/store-icon-with-transparent-background.png)
