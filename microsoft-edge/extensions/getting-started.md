@@ -39,7 +39,7 @@ As of the Windows Anniversary Update, [Microsoft WebDriver](../dev-guide/tools/w
 So your extension works in Edge. What happens next? Before you continue packaging your extension, we strongly recommend you to check out these guides to ensure that your extension is following our best-practice policies: 
 - Make sure your extension icons are [correctly sized](./guides/design.md) and [accessible](./guides/accessibility.md) (meaning they're visible in both light and dark themes of Edge as well as in high contrast mode). 
 - If your extension needs to support multiple languages, please make sure you've taken a look over our [internationalization guide](./guides/internationalization.md). 
- 
+
 ## Packaging an extension
 
 Now your extension is finally polished up and is ready to be packaged. Since our extensions platform is still in its infancy, we're purposely allowing only small numbers of extensions into the Windows Store at a time so that we can focus on delivering a quality experience for our users and developers. If you want to get your extension packaged in preparation for submission, however, or if you want to package it for ease of distribution within your development/testing teams, there are plenty of resources available to help you: 
