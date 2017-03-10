@@ -39,7 +39,7 @@ As of the Windows Anniversary Update, [Microsoft WebDriver](../dev-guide/tools/w
 So your extension works in Edge. What happens next? Before you continue packaging your extension, we strongly recommend you to check out these guides to ensure that your extension is following our best-practice policies: 
 - Make sure your extension icons are [correctly sized](./guides/design.md) and [accessible](./guides/accessibility.md) (meaning they're visible in both light and dark themes of Edge as well as in high contrast mode). 
 - If your extension needs to support multiple languages, please make sure you've taken a look over our [internationalization guide](./guides/internationalization.md). 
- 
+
 ## Packaging an extension
 
 Now your extension is finally polished up and is ready to be packaged. Since our extensions platform is still in its infancy, we're purposely allowing only small numbers of extensions into the Windows Store at a time so that we can focus on delivering a quality experience for our users and developers. If you want to get your extension packaged in preparation for submission, however, or if you want to package it for ease of distribution within your development/testing teams, there are plenty of resources available to help you: 
@@ -61,11 +61,11 @@ Once we've reached out to you, the first step of the publishing process is to ma
 
 Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Once this is done, you'll be able to submit your extension to the Windows Store where it will undergo manual review and automated performance testing to ensure that it does not negatively impact page load time or browser memory consumption.  
  
-> [!NOTE] 
+> [!NOTE]
 The process for publishing an extension to the Windows Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
 > - Your screenshots are correctly sized and are of your extension running in Microsoft Edge 
 > - Your extension description references "Microsoft Edge" instead of "Edge" (this is a legal requirement) 
-> - Your 150x150 icon in your extension package does not have a transparent background (The Windows Store client does not correctly render images with transparent backgrounds) 
+> - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#windows-store-icon) (The Windows Store client does not correctly render images with transparent backgrounds) 
 
 
 In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Edge. While the Windows Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Windows Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
@@ -73,7 +73,7 @@ In addition to the above, and if applicable, please ensure that any platform ava
 The Windows Store also allows you to [control the visibility of your extension](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) in the Windows Store catalog. Some of our partners have taken advantage of this functionality to achieve the following: 
 - Publishing a second beta version of their extension as hidden in the Windows Store.
 - Initially publishing their extension as hidden to monitor initial telemetry before eventually changing its status to visible once a certain level of confidence is reached.
- 
+
 ## That's it!
 
 If you've reached the bottom of this guide, you've completed the process of developing an extension for Edge! Be sure to check out our [tips and tricks](./tips-and-tricks.md) page for ideas on how to market your extension and interact with your users.  

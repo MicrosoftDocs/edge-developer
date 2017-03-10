@@ -1,13 +1,12 @@
 ---
-ms.assetid: 9d5d6b03-290d-4032-a565-18862020e323
 description: Learn about the various design aspects and UI behavior to consider when creating Edge extensions.
 title: Extensions - Design
 author: abbycar
 ms.author: abigailc
-ms.date: 02/08/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: edge, web development, javascript, design, icons, developer
 ---
 
 # Design guidelines for Microsoft Edge extensions
@@ -16,11 +15,11 @@ The following page contains various design aspects and UI behavior to consider w
 
 ## Icons
 
-It's recommended that you make the icons of your extension using a vector graphic. You'll need a few different sizes of your icon for your extension, and three additional sizes if you want to package your extension.
+It's recommended that you make the icons of your extension using a vector graphic. You'll need a few different sizes of your icon for your extension, and three additional sizes if you want to package your extension. Edge extensions don't support .svg icons.
 
 Before you create your extension icons, we recommend that you review the [accessibility](./accessibility.md) guide to ensure that your icons have high enough contrast and are visible in both the light and dark themes of Microsoft Edge.
 
-While any webkit image format is supported, PNG is recommended for transparency support.
+While any webkit image format is supported, PNG is recommended for transparency support.  
 
 
 ### Icons for your extension
@@ -87,8 +86,20 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 
 - 44px - Used in the Windows UI (App List, Settings->System->Apps & features)
 - 50px - Packaging requirement (not visible anywhere)
-- 150px - This icon will be used by the Windows Store. If the background is transparent, the theme of the device will become the background color. Use an opaque background if you want to select your own background color. 
+- 150px - Icon for the Windows Store
+
+#### Windows Store icon
+If the 150px icon for the Windows Store has a transparent background, the accent color of the user's device will appear as the icon's background color.
+
+
+For example, if the user has selected pink as their accent color, the transparent background of your store icon will appear as pink to them.
+
+![Windows accent color](./../media/windows-accent-color.png)
+![Background color auto selected](./../media/store-icon-with-transparent-background.png)
+
+ If you want to pick your own background color for your Windows Store, you'll need to make the background opaque.
+
+
 
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
-
