@@ -73,7 +73,7 @@ In addition to the above, and if applicable, please ensure that any platform ava
 The Windows Store also allows you to [control the visibility of your extension](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) in the Windows Store catalog. Some of our partners have taken advantage of this functionality to achieve the following: 
 - Publishing a second beta version of their extension as hidden in the Windows Store.
 - Initially publishing their extension as hidden to monitor initial telemetry before eventually changing its status to visible once a certain level of confidence is reached.
- 
+
 ## That's it!
 
 If you've reached the bottom of this guide, you've completed the process of developing an extension for Edge! Be sure to check out our [tips and tricks](./tips-and-tricks.md) page for ideas on how to market your extension and interact with your users.  
