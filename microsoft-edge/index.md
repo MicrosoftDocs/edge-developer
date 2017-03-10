@@ -33,7 +33,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
         </a>
     </li>
     <li>
-        <a href="https://developer.microsoft.com/microsoft-edge/platform/documentation/extensions/guides/creating-an-extension/">
+        <a href="/microsoft-edge/extensions/getting-started">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
