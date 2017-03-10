@@ -61,11 +61,11 @@ Once we've reached out to you, the first step of the publishing process is to ma
 
 Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Once this is done, you'll be able to submit your extension to the Windows Store where it will undergo manual review and automated performance testing to ensure that it does not negatively impact page load time or browser memory consumption.  
  
-> [!NOTE] 
+> [!NOTE]
 The process for publishing an extension to the Windows Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
 > - Your screenshots are correctly sized and are of your extension running in Microsoft Edge 
 > - Your extension description references "Microsoft Edge" instead of "Edge" (this is a legal requirement) 
-> - Your 150x150 icon in your extension package does not have a transparent background (The Windows Store client does not correctly render images with transparent backgrounds) 
+> - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#windows-store-icon) (The Windows Store client does not correctly render images with transparent backgrounds) 
 
 
 In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Edge. While the Windows Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Windows Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
