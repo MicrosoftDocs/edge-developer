@@ -1,13 +1,12 @@
 ---
-ms.assetid: e2cd0477-7d97-43a4-a10e-68c0ca8627e6
 description: Find information on current progress towards completing the Microsoft Edge extension API.
 title: Extensions - Extension API roadmap
 author: abbycar
 ms.author: abigailc
-ms.date: 02/08/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: edge, web development, html, api, extensions, javascript, developer
 ---
 
 # Microsoft Edge extension API roadmap
@@ -15,9 +14,6 @@ keywords: edge, web development, html, css, javascript, developer
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The two tables on this page detail what is supported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.
 
 Not seeing an API your extension needs? We're always listening on [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or create a new feedback item so that other developers can upvote it!
-
-> [!NOTE]
-> This page was last updated February 23rd, 2017.
 
 
 ## Windows 10 Insider Preview builds
@@ -32,6 +28,7 @@ The following new APIs and features are available/in development for [Windows 10
 [bookmarks.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/remove) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [bookmarks.removeTree](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/removeTree) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [bookmarks.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/update) | Supported — Microsoft Edge (38) / Windows 10 (15002)
+[browserAction.getTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getTitle) | Supported — Microsoft Edge (38) / Windows 10 (14926)
 [browserAction.setTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setTitle) | Supported — Microsoft Edge (38) / Windows 10 (14926)
 Custom CSP | Supported — Microsoft Edge (38) / Windows 10 (15002)
 Popup debugging | Supported — Microsoft Edge (38) / Windows 10 (14971)
@@ -39,6 +36,7 @@ Popup debugging | Supported — Microsoft Edge (38) / Windows 10 (14971)
 [port.onDisconnect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port#Type) |In Development
 [port.postMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port#Type) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.connectNative](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/connectNative) | Supported — Microsoft Edge (38) / Windows 10 (15002)
+[runtime.reload](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/reload) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.sendMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendMessage) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.sendNativeMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendNativeMessage) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.setUninstallUrl](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/setUninstallURL) | Supported — Microsoft Edge (38) / Windows 10 (14971)
