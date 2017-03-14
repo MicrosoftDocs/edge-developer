@@ -1,5 +1,4 @@
 ---
-ms.assetid: 419043db-a093-4d00-a4c0-ad6d658bd057
 description: Learn about how you can use native messaging to have your extension communicate with a companion UWP app.
 title: Extensions - Native messaging
 author: abbycar
@@ -7,7 +6,7 @@ ms.author: abigailc
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
 ---
 
 # Native messaging in Microsoft Edge
@@ -158,6 +157,7 @@ Chrome starts each native messaging host in a separate process and communicates 
 
 
 For Edge, the background task/main app that implements the app service will be started by the platform. On startup, the background task’s `Run` method will be invoked:  
+
 ```csharp
 public void Run(IBackgroundTaskInstance taskInstance)    
 {
@@ -171,6 +171,7 @@ public void Run(IBackgroundTaskInstance taskInstance)    
 	appServiceconnection.RequestReceived += OnRequestReceived;
 }
 ```
+
 When your extension sends a message to your UWP app, the [`onRequestReceived`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection.requestreceived) event will be raised. This JSON formatted message will then be stringified into the first KeyValue pair of a [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) object. :
 
 ```csharp
@@ -329,6 +330,78 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
 </Extensions>
 ```
 
-## Testing your extension
+
+## Deploying
+
+The goal of the deployment is to set up an `AppX` folder with all the necessary files, which will include:
+
+-	`Extension` folder
+-	`AppXManifest.xml` (with the right properties for extension)
+-	UWP binaries (exe, dlls) and visual assets (Assets and Properties folders)
+-	Desktop Bridge binaries (exe, dlls) if you added a Desktop Bridge component
+
+This can be done with one or two steps in Visual Studio, depending on your components:
+
+1.	Build and deploy the UWP app.
+	
+	![build inprocess project](../media/native-message-uwp-debug.png)
+	
+	This will generate:
+	-	Necessary binaries and files needed for the UWP app.
+	-	The `AppX` folder.
+	-	The `AppXManifest.xml` based on the content of `package.manifest`. (The content of `package.manifest` in this sample has been edited to include the necessary entries for Edge extensions).
+2. If you have a Desktop Bridge component, build it.
+
+	![build desktop bridge](../media/native-message-desktop-debug.png)
+	
+	This will:
+	-	Build the binaries for this project
+	-	Trigger a post-build event that will copy the output of the exe to the `AppX` folder and copy the `Extension` folder to the `AppX` folder. The following is an example script to add in the Build Events section of your Desktop Bridge's Properties:
+		```
+		xcopy /y /s "$(SolutionDir)MyDesktopBridge\bin\$(ConfigurationName)\MyDesktopBridge.exe" "$(SolutionDir)\MyUWPApp\bin\x64\$(ConfigurationName)\AppX\"
+		xcopy /y /s "$(SolutionDir)MyDesktopBridge\bin\$(ConfigurationName)\MyDesktopBridge.exe" "$(SolutionDir)\MyUWPApp\bin\x86\$(ConfigurationName)\AppX\"
+		xcopy /y /s "$(SolutionDir)Extension" "$(SolutionDir)\MyUWPApp\bin\x64\$(ConfigurationName)\AppX\Extension\"
+		xcopy /y /s "$(SolutionDir)Extension" "$(SolutionDir)\MyUWPApp\bin\x86\$(ConfigurationName)\AppX\Extension\"    
+		```
+
+Now that the files are all ready to go, you will need to register the AppX. There are two ways to accomplish this:
+
+-	Run `Add-AppxPackage` from PowerShell:
+`Add-AppxPackage -register [Path to AppX folder]\AppxManifest.xml`
+
+	or
+
+-	Deploy the UWP app project. Visual Studio will run the same PowerShell script to register the AppX from the folder.
+
+Once the solution is correctly deployed, you should see your extension in Edge.
+
+![extension showing in Edge](../media/secureextension.png)
+
+
+## Debugging
+The instructions for debugging vary depending on which component you want to test out:
+
+### Debugging the extension
+Once the solution is deployed, the extension will be installed in Edge. Checkout the [Debugging](./debugging-extensions.md) guide for info on how to debug an extension.
+
+
+### Debugging the UWP app
+The UWP app will launch when the extension tries to connect to it using [native messaging APIs](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative). You’ll need to debug the UWP app only once the process starts. This can be configured via the project’s Property page:
+
+1.	In Visual Studio, right click your UWP app project
+2.	Select Properties
+3.	Check "Do not launch, but debug my code when it starts"
+ 
+	![selecting do not launch box](../media/native-message-do-not-launch.png)
+
+In Visual Studio you can now set breakpoints in the code where you want to debug, then launch the debugger by pressing F5. Once you interact with the extension to connect to the UWP app, Visual Studio will automatically attach to the process.
+
+
+### Debugging the Desktop Bridge
+Even though there are various [methods for debugging a Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-debug) (converted Win32 app), the only one applicable for this scenarios is the PLMDebug option. You could also add debugging code to the startup function to perform a wait for a specific time, allowing you to attach Visual Studio to the process.
+
+
+
+## Packaging and testing your extension
 
 See the [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) guide for info on how to test and deploy your packaged extension.
