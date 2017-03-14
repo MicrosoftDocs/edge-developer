@@ -36,7 +36,7 @@ Popup debugging | Supported — Microsoft Edge (38) / Windows 10 (14971)
 [port.onDisconnect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port#Type) |In Development
 [port.postMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port#Type) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.connectNative](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/connectNative) | Supported — Microsoft Edge (38) / Windows 10 (15002)
-[runtime.onMessagereload](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/reload) | Supported — Microsoft Edge (38) / Windows 10 (15002)
+[runtime.reload](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/reload) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.sendMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendMessage) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.sendNativeMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/sendNativeMessage) | Supported — Microsoft Edge (38) / Windows 10 (15002)
 [runtime.setUninstallUrl](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/setUninstallURL) | Supported — Microsoft Edge (38) / Windows 10 (14971)
