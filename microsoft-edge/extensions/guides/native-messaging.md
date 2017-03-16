@@ -346,7 +346,7 @@ If your native messaging program consists of only a UWP app component, follow th
 
 1.	Build and deploy the UWP app.
 
-	![build inprocess project](../media/native-message-uwp-debug.png)
+	![build inprocess project](../media/native-message-uwp-debug.PNG)
 
 	This will generate:
 	-	Necessary binaries and files needed for the UWP app.
@@ -359,10 +359,10 @@ If your native messaging program consists of only a UWP app component, follow th
 
 1.	Build and deploy the UWP app.
 
-	![build inprocess project](../media/native-message-uwp-debug.png)
+	![build inprocess project](../media/native-message-uwp-debug.PNG)
 2. Build your Desktop Bridge component
 
-   ![build desktop bridge](../media/native-message-desktop-debug.png)
+   ![build desktop bridge](../media/native-message-desktop-debug.PNG)
 
 	This will:
 	-	Build the binaries for this project
