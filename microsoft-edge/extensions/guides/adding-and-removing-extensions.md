@@ -21,7 +21,7 @@ Also included are details on how to move here your extension icon appears in the
 
    ![about:flags turn on developer features](./../media/sideload-aboutflags.png)
    > [!NOTE]
-   > If you don't have the Windows 10 Anniversary Update or later, this option will now be available.
+   > If you don't have the Windows 10 Anniversary Update or later, this option will not be available.
 
 3. Select **More (...)** to open the menu.
 
