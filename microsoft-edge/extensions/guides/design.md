@@ -68,7 +68,7 @@ When users navigate to the extensions pane by going to the "More(...)" menu and 
 
 You can specify the following icon sizes:
 - 24px - Icon for standard displays
-- 44px - Icon for high resolution displays
+- 48px - Icon for high resolution displays
 
 ```json
 "icons": {
