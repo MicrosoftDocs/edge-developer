@@ -40,6 +40,11 @@ Open a video, image, or other element in full-screen mode by calling the `reques
 document.getElementById("myImage").requestFullscreen();
 ```
 
+
+<p data-height="454" data-theme-id="23761" data-slug-hash="qZdVYy" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen video demo" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/MicrosoftEdgeDocumentation/pen/qZdVYy/">Fullscreen video demo</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
 To prevent untrusted content from opening in full-screen mode, call `requestFullscreen` from a user-initiated event, such as a button click, rather than automatically from script. When content enters full-screen mode, the browser will ask the user for permission to open it. Assuming the user accepts, the content opens, and is surrounded by a black background so that the content is the only thing visible on the screen. If the user has more than one monitor, the full-screen display fills only one monitor.
 
 ```js
@@ -68,7 +73,8 @@ To prevent untrusted content from opening in full-screen mode, call `requestFull
 
 Users can easily leave full-screen mode at any time by pressing the 'ESC' key. To exit full-screen mode under program control, use the `exitFullscreen` method. Unlike `requestFullscreen` which applies to an element, `exitFullscreen` applies to the document element, so it doesn't matter which element is currently open in full-screen mode. Using this example you can open an element in full-screen mode when you click it, then return the element to its original size when you click again.
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="vGEwQr" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/vGEwQr">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="300" data-theme-id="23761" data-slug-hash="vGEwQr" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen API Test1" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/vGEwQr/">Fullscreen API Test1</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Other actions can force an element out of full-screen mode, like when a user:
 -  Selects a charm.
@@ -89,9 +95,10 @@ You can find the top element that's currently displayed in full-screen mode usin
 
 This example shows two elements that when clicked, print the `FullscreenElement` to their `innerHTML`.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/dMoWZR">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="300" data-theme-id="23761" data-slug-hash="dMoWZR" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen API Test2" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/dMoWZR/">Fullscreen API Test2</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-Click the yellow box to open in full-screen mode, and the element ID (Element1) is printed in the div's [`innerHTML'](https://msdn.microsoft.com/library/ms533897). Click again to exit full-screen mode. Click the red box, it doesn't go into full-screen mode, and the word 'undefined' is displayed in the box.
+Click the blue box to open in full-screen mode, and the element ID (Element1) is printed in the div's [`innerHTML'](https://msdn.microsoft.com/library/ms533897). Click again to exit full-screen mode. Click the grey box, it doesn't go into full-screen mode, and the word 'undefined' is displayed in the box.
 
 ## Using an iframe in full-screen mode
 
@@ -101,7 +108,8 @@ One exception is with Adobe Flash. When a Flash control is embedded via an ifram
 
 This example shows how setting `allowfullscreen` affects how an iframe displays full-screen content. The two iframes each show the exact same webpage. When you click the buttons marked Frame 1 or Frame 2, an iframe opens in full-screen mode. The content displayed in each iframe is the same HTML page for both frames. Because only the first iframe has the `allowfullscreen` attribute set, only the content in the first iframe can go into full-screen mode. The second iframe's content stays original size when clicked, and an `fullscreenError` event is fired.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/yONzew">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="346" data-theme-id="23761" data-slug-hash="yONzew" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen API Test3" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/yONzew/">Fullscreen API Test3</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Determining if full-screen mode is possible
 
@@ -167,19 +175,11 @@ Using the [`:fullscreen`](https://msdn.microsoft.com/library/dn312073) CSS pseud
 
 Except for the video element, elements in full-screen mode stay the same size and are surrounded by a black background. You can change the background using the `::backdrop` pseudo element. This can be an image, another color, or a border. Backgrounds for a video element displayed in letterbox or pillarbox are not affected by `::backdrop`.
 
-The example below initially displays a blue box. When clicked, the box expands to full-screen mode, moving 200 pixels down and 200 pixels over, and its color changes to green. This is done by detecting full-screen mode using the `:fullscreen` pseudo class and applying new styles. The background around the box changes color to magenta using the `::backdrop` pseudo element.
-
-
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/QNbOyw">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 How an element appears in full-screen mode varies from browser to browser. Other browsers may expand the element to fill the screen, and not support the background pseudo element.
 
 You can use `:fullscreen` to change behavior so that the element expands to fill the screen, losing the black background. When the element goes into full-screen mode, you can set the CSS width and height properties to 100% to fit the window.
 
-This example expands a small box to fill the full screen. It also contains the Webkit equivalent of :fullscreen.
-
-
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/qZdVYy">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 ## API Reference
