@@ -66,7 +66,6 @@ The following `cookies` APIs are supported:
 | [cookies.get](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/get)    |  | |
 | [cookies.getAll](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/getAll) |   | If no URL is provided, cookies are retrieved only for URLs in currently opened tabs. In Chrome, this gets all cookies on a user’s machine. |
 | [cookies.getAllCookieStores](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/getAllCookieStores)  | | Always returns the same default cookie store with ID “0”. All cookies belong to this store. |
-| [cookies.onChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/onChanged)    | | Not supported. |
 | [cookies.remove](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/remove) |  | |
 | [cookies.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/set)    |  | |
 
