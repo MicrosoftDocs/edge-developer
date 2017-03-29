@@ -24,11 +24,13 @@ The first step of this journey is to create an Edge extension: 
 
 Once you have an extension that works in Edge, you'll want to side load it to see it in action. The first step to do this is to ensure that you have [extension developer features enabled](./guides/adding-and-removing-extensions.md). This will allow you to side load extension files in Edge so that you can test your extension while developing it. Should you run into any issues, the F12 developer tools allow you to [debug the various contexts of your extension](./guides/debugging-extensions.md) to determine exactly what's going on. Still running into issues? Our [troubleshooting guide](./troubleshooting.md) has solutions to several common gotchas. 
 
-## Reporting bugs
+## Reporting bugs and getting help
 
 Think you've found a bug in our extensions platform? If the issue is specific to Edge, please search for it on our [Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) to see if it's already been reported. If it has, great! You can press the "+ Me too" button to upvote the bug and the "Watch this issue for updates" button to be alerted to any changes on the issue. If you can't find the issue you're running into, feel free to open a new issue and provide as much information as possible so our developers can look into it. 
 
 Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! 
+
+Do you have a question that you can't find answer to in the documentation? We strongly recommend you join the [Microsoft Edge Extensions community](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) on Stack Overflow and ask it there!
 
 ## Testing your extension
 
@@ -76,4 +78,4 @@ The Windows Store also allows you to [control the visibility of your extension](
 
 ## That's it!
 
-If you've reached the bottom of this guide, you've completed the process of developing an extension for Edge! Be sure to check out our [tips and tricks](./tips-and-tricks.md) page for ideas on how to market your extension and interact with your users.  
+If you've reached the bottom of this guide, you've completed the process of developing an extension for Microsoft Edge! Be sure to check out our [tips and tricks](./tips-and-tricks.md) page for ideas on how to market your extension and interact with your users.
