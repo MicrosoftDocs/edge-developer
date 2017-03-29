@@ -30,7 +30,7 @@ Think you've found a bug in our extensions platform? If the issue is specific to
 
 Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! 
 
-Do you have a question that you can't find answer to in the documentation? We strongly recommend you join the [Microsoft Edge Extensions community](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) on Stack Overflow and ask it there!
+Do you have a question that you can't find an answer to in the documentation? We strongly recommend you join the [Microsoft Edge Extensions community](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) on Stack Overflow and ask it there!
 
 ## Testing your extension
 
