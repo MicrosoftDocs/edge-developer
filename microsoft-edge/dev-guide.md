@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer
 # Microsoft Edge Developer Guide
 
 > [!TIP]
-> **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/instant-testing/)**:
+> **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/)**:
 > We partnered with BrowserStack to get free live and automated testing on Microsoft Edge.
 
 This guide provides an overview of the developer features and standards included in Microsoft Edge.
