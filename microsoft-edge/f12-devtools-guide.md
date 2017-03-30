@@ -12,6 +12,10 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Meet the Microsoft Edge F12 Dev Tools
 
+> [!TIP]
+> **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/)**:
+> We partnered with BrowserStack to get free live and automated testing on Microsoft Edge.
+
 Microsoft Edge introduces great new improvements to F12 developer tools, including some of the most requested features from [UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  The new tools are built in TypeScript, and are always running, so no reloads are required. In addition, F12 developer tools documentation is now fully available on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation). From this point on, the docs will not only be influenced by your feedback, but you're invited to contribute and help shape our documentation.
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Microsoft-Edge-F12-tools/player]
