@@ -11,11 +11,12 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 
 # Microsoft Edge Developer Guide
-This guide provides an overview of the developer features and standards included in Microsoft Edge.
 
 > [!TIP]
 > **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/instant-testing/)**:
 > We partnered with BrowserStack to get free live and automated testing on Microsoft Edge.
+
+This guide provides an overview of the developer features and standards included in Microsoft Edge.
 
 ## What's New
 This list highlights new documentation for new web platform features in Microsoft Edge. To compare the current stable releases, latest Windows Insider Preview builds, and previous releases to see when new platform features and major fixes were introduced in Microsoft Edge for PC and mobile, see the [Changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
