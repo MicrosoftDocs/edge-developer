@@ -41,8 +41,8 @@ document.getElementById("myImage").requestFullscreen();
 ```
 
 
-<p data-height="454" data-theme-id="23761" data-slug-hash="qZdVYy" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen video demo" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/MicrosoftEdgeDocumentation/pen/qZdVYy/">Fullscreen video demo</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height='433' scrolling='no' title='Fullscreen video demo' src='//codepen.io/MicrosoftEdgeDocumentation/embed/qZdVYy/?height=433&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/qZdVYy/'>Fullscreen video demo</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 
 To prevent untrusted content from opening in full-screen mode, call `requestFullscreen` from a user-initiated event, such as a button click, rather than automatically from script. When content enters full-screen mode, the browser will ask the user for permission to open it. Assuming the user accepts, the content opens, and is surrounded by a black background so that the content is the only thing visible on the screen. If the user has more than one monitor, the full-screen display fills only one monitor.
