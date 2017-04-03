@@ -1,5 +1,4 @@
 ---
-ms.assetid: b452821a-4dc4-4914-86c2-ef9f67d85c7f
 description: Make your extension accessible for different languages and test your language strings with the internationalization guide.
 title: Extensions - Internationalization
 author: abbycar
@@ -37,4 +36,5 @@ By using the [NavigatorLanguage.language](https://developer.mozilla.org/en-US/do
 
 Click the button in the CodePen below to see the display language of your browser.
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="VaRWwR" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/VaRWwR">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='Get locale' src='//codepen.io/MicrosoftEdgeDocumentation/embed/VaRWwR/?height=300&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/VaRWwR/'>Get locale</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
