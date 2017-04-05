@@ -23,7 +23,7 @@ If you already know how Microsoft Edge extension AppXs are created, you can skip
 
 ## Preparing the submission folder
 
-To prepare you extension for submission, you need to create a folder with the following structure:
+To prepare your extension for submission, you need to create a folder with the following structure:
 
 ![image of folder structure. Inside My Extension folder is AppxManifest.xml, Extension folder, and Assets folder](./../../media/packaging_folder-structure.png)
 
@@ -92,7 +92,7 @@ Developers can use the following template for their AppXManifest.xml file:
 ```
 
 #### App identity template values
-Once you've [reserved the name of you extension](./extensions-in-the-windows-dev-center.md#name-reservation) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
+Once you've [reserved the name of your extension](./extensions-in-the-windows-dev-center.md#name-reservation) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
 
 - `Name`
 - `Publisher`
