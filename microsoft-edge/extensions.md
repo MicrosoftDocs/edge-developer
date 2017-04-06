@@ -38,7 +38,7 @@ To get a an overview of the end to end journey of creating an Edge extension fro
   </tr>
   <tr>
     <td><a href = "./extensions/guides/packaging.md">Packaging</a></td>
-    <td>Learn how to package up you extension after you've finished development.</td>
+    <td>Learn how to package up your extension after you've finished development.</td>
 
   </tr>
   <tr>
