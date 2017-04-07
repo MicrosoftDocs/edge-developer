@@ -62,7 +62,7 @@ Once you've confirmed that your extension follows the policies, you will need to
 
 `Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.`
 
-Once you've submitted a request, we'll receive a notification and will try to get to your submission as soon as possible. This may take a bit due to the high volume of submissions we've received, but we'll notify you via email the moment you're approved! Once you've received the mail, you'll be able to submit your extension AppX to the Windows Store via Dev Center.
+Once you've submitted a request, we'll receive a notification and will try to get to your submission as soon as possible. This may take a bit due to the high volume of submissions we've received, but we'll notify you via email the moment you're approved! Once you've received the mail, you'll be able to submit your extension AppX to the Windows Store via Dev Center. Please note that you do not have to sign your AppX before submitting it; the Windows Store ingestion process will take care of that for you!
  
 > [!NOTE]
 The process for publishing an extension to the Windows Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
