@@ -17,7 +17,7 @@ Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows
 If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
 
 
 
@@ -225,6 +225,9 @@ You can test your Microsoft Edge extension AppX package by sideloading it in Mic
 
 ### Signing
 See [How to create an app package signing certificate](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
+
+> [!NOTE]
+> You do not need to sign an extension package before submitting it to the Windows Store; the Store ingestion process will take care of that for you!
 
 After you’ve signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
 
