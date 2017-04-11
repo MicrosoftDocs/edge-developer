@@ -115,7 +115,9 @@ For more info and the status of other WebDriver features, check out [WebDriver c
 
 View the table below for a list of new APIs supported in EdgeHTML 15.
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="evRjjZ" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height='349' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=349&theme-id=23761&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'>New EdgeHTML15 APIs</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
 
 
 ## Previous EdgeHTML releases
