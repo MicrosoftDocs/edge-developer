@@ -18,7 +18,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 ## What's new in EdgeHTML 15
 Here are the changes shipped with the current release of the Microsoft Edge platform,
- as of the [Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edge-15/) (04/2017). For changes in Windows Insider Preview builds, see
+ as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017). For changes in Windows Insider Preview builds, see
  the [Microsoft Edge Changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
 
 ### New features
