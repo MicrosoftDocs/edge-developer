@@ -44,7 +44,7 @@ So your extension works in Edge. What happens next? Before you continue packagin
 
 ## Packaging an extension
 
-Now your extension is finally polished up and is ready to be packaged. Since our extensions platform is still in its infancy, we're purposely allowing only small numbers of extensions into the Windows Store at a time so that we can focus on delivering a quality experience for our users and developers. If you want to get your extension packaged in preparation for submission, however, or if you want to package it for ease of distribution within your development/testing teams, there are plenty of resources available to help you: 
+Now your extension is finally polished up and ready to be packaged. Whether you wish to package it to prepare for submission to the Windows Store, or to make it easier to distribute within your development/testing teams, there are plenty of resources available to help you: 
 
 - Our recommended solution for creating an extension package is to follow our [ManifoldJS packaging guide](./guides/packaging/using-manifoldjs-to-package-extensions.md) which will walk you through the steps of using a Node.js based tool to easily package your extension no matter what platform you develop on. If you want a more manual and in-depth look into our extension packaging format, please refer to our [AppX package creation guide](./guides/packaging/creating-and-testing-extension-packages.md#preparing-the-submission-folder). 
 - If your extension supports multiple languages, you'll also need to follow our guide on [localizing extension packages](./guides/packaging/localizing-extension-packages.md) so that the languages you have in your extension are correctly registered after packaging. 
@@ -53,22 +53,22 @@ If you're an enterprise customer looking to distribute your packaged extensions 
 
 ## Publishing to the Windows Store
 
-As stated above, we're purposely allowing only a small numbers of extensions into the Windows Store at a time so that we can focus on quality.
-
-> [!NOTE]  
-> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
-
+Since our extensions platform is still in its infancy, we're purposely managing extension submissions to the Windows Store so that we can focus on delivering a quality experience for our users and developers. That being said, we want to make it as easy as possible for developers to publish their extensions. As a result, we have recently launched a new [extension submission form](http://aka.ms/extension-request) where developers can request permission to submit their extension AppX to the Windows Store.
  
-Once we've reached out to you, the first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Edge extensions section of the Windows Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
 
-Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Once this is done, you'll be able to submit your extension to the Windows Store where it will undergo manual review and automated performance testing to ensure that it does not negatively impact page load time or browser memory consumption.  
+The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Edge extensions section of the Windows Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
+
+Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](http://aka.ms/extension-request) in order to request permission to publish to the Windows Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
+
+`Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.`
+
+Once you've submitted a request, we'll receive a notification and will try to get to your submission as soon as possible. This may take a bit due to the high volume of submissions we've received, but we'll notify you via email the moment you're approved! Once you've received the mail, you'll be able to submit your extension AppX to the Windows Store via Dev Center. Please note that you do not have to sign your AppX before submitting it; the Windows Store ingestion process will take care of that for you!
  
 > [!NOTE]
 The process for publishing an extension to the Windows Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
 > - Your screenshots are correctly sized and are of your extension running in Microsoft Edge 
 > - Your extension description references "Microsoft Edge" instead of "Edge" (this is a legal requirement) 
 > - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#windows-store-icon) (The Windows Store client does not correctly render images with transparent backgrounds) 
-
 
 In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Edge. While the Windows Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Windows Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
 
