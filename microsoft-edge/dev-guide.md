@@ -38,8 +38,6 @@ h1 {
    color: var(--default-color); 
 }
 ```  
-You can test out CSS Custom Properties in Microsoft Edge build #####+. 
-
 
 #### Intersection Observer
 EdgeHTML 15 introduces the [Intersection Observer API](https://wicg.github.io/IntersectionObserver/) specification. The Intersection Observer API allows you to asynchronously query the position and visibility of DOM elements relative to other elements or the global viewport. This API eliminates the need for custom expensive code by creating a method to efficiently notify elements when they are in view. 
