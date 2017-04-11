@@ -4,7 +4,7 @@ description: Find information on current and future APIs as well their known iss
 title: Extensions - Supported APIs
 author: abbycar
 ms.author: abigailc
-ms.date: 02/08/2017
+ms.date: 04/11/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -22,8 +22,26 @@ The following is a detailed list of API members that are supported. Development 
 
 The following known issues span across the extension platform and will be fixed in the near future:
 
+- Regardless of any `catch()` statements, exceptions thown in the content script context by predefined JavaScript methods (such as `document.querySelector()`) will be dispatched to both the content script's and page's `window.onerror` handlers.
 - When using the CSS `url()` property, absolute URLs using `ms-browser-extension://` will not work like they do in Chrome. To bypass this issue, use relative paths to resources (starting in the root extension directory) instead.
 - `window.open()` does not work in extension background scripts. Please use `browser.windows.create()` instead.
+- Shared cookies are supported, however the extension background script will not have access to session cookies set in the tab before the extension is enabled. This issue does not affect persistent cookies.
+
+
+## bookmarks
+
+The following `bookmarks` APIs are supported:
+
+| API                                   | Known issues                                             | Chrome incompatibilities
+|---------------------------------------|----------------------------------------------------------|--------------------------|
+| [bookmarks](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks) | | |
+| [bookmarks.create](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/create) | | |
+| [bookmarks.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/remove) | | |
+| [bookmarks.getTree](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/getTree) |  | |
+| [bookmarks.move](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/move) | | |
+| [bookmarks.removeTree](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/removeTree) | | |
+| [bookmarks.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/update)            | | |
+
 
 ## browserAction
 
@@ -35,12 +53,14 @@ The following `browserAction` APIs are supported:
 | [browserAction.disable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/disable) | | |
 | [browserAction.enable](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/enable) | | |
 | [browserAction.getBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeBackgroundColor) |  | |
-| [browserAction.setBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeBackgroundColor) | | Only `ColorArray` and hexidecimal values are supported. CSS color names (i.e. `blue`) are not. |
+| [browserAction.setBadgeBackgroundColor](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeBackgroundColor) | | |
 | [browserAction.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/onClicked) | | |
 | [browserAction.setBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setBadgeText)            | | |
 | [browserAction.setPopup](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction/setPopup)  | | |
 | [browserAction.getBadgeText](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getBadgeText)   | | |
 | [browserAction.setIcon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setIcon) | `browserAction.setIcon` is not persisted. <br/><br/> The `imageData` parameter is not supported. <br/><br/> `path` is a required parameter.| |
+| [browserAction.getTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/getTitle) | | |
+| [browserAction.setTitle](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/setTitle) | | |
 
 ## contextMenus
 
@@ -66,6 +86,7 @@ The following `cookies` APIs are supported:
 | [cookies.get](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/get)    |  | |
 | [cookies.getAll](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/getAll) |   | If no URL is provided, cookies are retrieved only for URLs in currently opened tabs. In Chrome, this gets all cookies on a user’s machine. |
 | [cookies.getAllCookieStores](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/getAllCookieStores)  | | Always returns the same default cookie store with ID “0”. All cookies belong to this store. |
+| [cookies.onChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/onChanged)    | | Not supported. |
 | [cookies.remove](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/remove) |  | |
 | [cookies.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/cookies/set)    |  | |
 
@@ -131,16 +152,23 @@ The following `runtime` APIs are supported:
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :-------------------
 [runtime](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime) | | |
+[runtime.port.disconnect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port) | | |
+[runtime.port.onDisconnect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port) | | |
+[runtime.port.postMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/Port) | | |
 [runtime.connect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/connect) | | |
+[runtime.connectNative](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/connectNative) | | |
 [runtime.id](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/id) | | |
 [runtime.getBackgroundPage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/getBackgroundPage) | | |
 [runtime.getManifest](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/getManifest) | | |
 [runtime.getURL](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/getURL) | | |
 [runtime.lastError](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/lastError) | | |
+[runtime.reload](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/reload) | | |
+[runtime.sendMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendMessage) | Microsoft Edge extension pages can use `runtime.sendMessage`/`onMessage` to send messages to themselves. <br/><br/> `runtime.sendmessage` is not supported from site pages. | Microsoft Edge does not support the `options` parameter.|
+[runtime.sendNativeMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendNativeMessage) | | |
+[runtime.setUninstallUrl](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/setUninstallUrl) | | |
 [runtime.onConnect](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/onConnect) | | |
 [runtime.onInstalled](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onInstalled) | | |
 [runtime.onMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onMessage) | `tab` object in `runtime.onMessage` event is not fully implemented. | `MessageSender.tlsChannelId` is not supported in Microsoft Edge.|
-[runtime.sendMessage](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendMessage) | Microsoft Edge extension pages can use `runtime.sendMessage`/`onMessage` to send messages to themselves. <br/><br/> `runtime.sendmessage` is not supported from site pages. | Microsoft Edge does not support the `options` parameter.|
 
 ## storage
 
@@ -150,10 +178,13 @@ API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :------------------------
 [storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage) |  | |
 [storage.local.get](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/get)  | | |
-[storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [storage.local.remove](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/remove)  | | |
+[storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [storage.local.clear](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [storage.local.getBytesInUse](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`.  <br/><br/>Ex: `storage.local.set({ "k": { "s": "âas" } }` returns 13 in Chrome and 50 in Microsoft Edge.|
+[storage.sync.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | | |
+[storage.sync.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/remove) | | |
+[storage.sync.set](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/set) | | |
 [storage.onChanged](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/onChanged) | | |
 
 ## tabs
@@ -163,6 +194,7 @@ The following `tabs` APIs are supported:
 API | Known issues | Chrome incompatibilities
 :------------ | :------------- | :----------------
 [tabs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs) | | |
+[tabs.captureVisibleTab](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/captureVisibleTab) | | |
 [tabs.create](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/create) | | `selected`, `pinned`, and `openerTabId` are not supported. |
 [tabs.detectLanguage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/detectLanguage) | | |
 [tabs.executeScript](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` is ignored, though checked.| |
@@ -171,7 +203,9 @@ API | Known issues | Chrome incompatibilities
 [tabs.insertCSS](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` is ignored, though checked. | |
 [tabs.update](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/update) | | |
 [tabs.onActivated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onActivated) | | |
+[tabs.onAttached](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onAttached) | | |
 [tabs.onCreated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
+[tabs.onDetached](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs) | | |
 [tabs.onRemoved](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onRemoved) | | |
 [tabs.onReplaced](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/onReplaced) | | |
 [tabs.onUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onUpdated) | After uninstall/reinstall, the URL is not received until Microsoft Edge is restarted. | |
