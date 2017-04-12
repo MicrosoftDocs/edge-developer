@@ -14,7 +14,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 E-commerce sales continue growing at a rapid pace. According to [eMarketer](https://www.emarketer.com/), by 2018 digital sales are forecasted to increase by 23% from the levels measured in 2013.  While consumers and businesses enjoy the convenience of e-commerce sales, challenges remain.  Today each e-commerce website owner needs to invest time to develop high quality payment checkout flows and validation rules.  Consumers need to navigate different payment checkout flows and re-enter the same payment and shipping information on every site where they shop.  This can be time consuming and frustrating for consumers, leading to a high rate of shopping cart abandonment and decreased sales for merchants. Merchants [estimate](http://baymard.com/lists/cart-abandonment-rate) between 60% and 70% of shopping carts are abandoned.      
 
-The [Payment Request API](http://www.w3.org/TR/payment-request/) standardizes the payment checkout process. This API requires less customization for web developers and provides a faster, more consistent, and therefore, less confusing experience for consumers.  Because consumers can select payment instruments and shipping addresses from the **Microsoft Wallet**, they are required to enter less data to complete purchases which reduces the time and data entry required to complete a payment.   
+The [Payment Request API](http://www.w3.org/TR/payment-request/) standardizes the payment checkout process. This API requires less customization for web developers and provides a faster, more consistent, and therefore, less confusing experience for consumers.  Because consumers can select payment instruments and shipping addresses from their **Microsoft account**, they are required to enter less data to complete purchases which reduces the time and data entry required to complete a payment.   
 
 The [Payment Request API](http://www.w3.org/TR/payment-request/) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. 
   
@@ -41,12 +41,12 @@ var payment = new PaymentRequest (
 ); 
 ```
 
-The [`methodData`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter contains a list of the payment methods and networks accepted by the website and any associated payment method specific data. In Microsoft Edge, this list is matched with the supported payment methods supported by **Microsoft Wallet** and results in the "pay with" list in the **Wallet** user experience. 
+The [`methodData`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter contains a list of the payment methods and networks accepted by the website and any associated payment method specific data. In Microsoft Edge, this list is matched with the supported payment methods that the shopper has saved in their **Microsoft account** and results in the "pay with" list in the payment user experience.
 
 ![The "pay with" list in the Microsoft Wallet user experience](./../media/pay_with.png)
 
 ### Test Mode in Microsoft Edge
-For the purposes of pre-release testing, "test" mode is supported by setting the environment parameter in the data supplied in [`supportedMethods`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentMethodData) data. When set to "TEST", the payment app (**Microsoft Wallet**) will construct a fake **Payment Request** and response to emulate the integration of the developer's website and the payment app while protecting customer data. 
+For the purposes of pre-release testing, "test" mode is supported by setting the environment parameter in the data supplied in [`supportedMethods`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentMethodData) data. When set to "TEST", the Microsoft payment app will construct a fake **Payment Request** and response to emulate the integration of the developer's website and the payment app while protecting customer data. 
 
 ```js
 var supportedInstruments = [{
@@ -91,7 +91,6 @@ var details = {
 
 The browser will render the labels as you define them and automatically render the correct currency formatting based on the customer's locale. Note that the labels should be rendered in the same language as your content. 
 
-The [`options`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter defines data the web page wants returned from the **Payment Request**. This is also what **Microsoft Wallet** needs to collect, including if shipping, email address, and/or phone number are required.
 
 ![Email address drop down](./../media/email_snippet.png)
 
@@ -152,7 +151,7 @@ Once the payment is complete, the web page calls the [`complete()`](https://msdn
 
 ### Shipping Address
 
-For sales that require shipping physical goods, a shipping address is required.  To instruct the **Microsoft Wallet** that shipping is required, `requestShipping = True` needs to be added to the [`options`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter of the request.   
+For sales that require shipping physical goods, a shipping address is required.  To include a shipping address, set `requestShipping = True` in the [`options`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter of the request.   
 
 When the user selects or updates the shipping address, the [`onshippingaddresschange`](https://msdn.microsoft.com/en-us/library/mt790442) event will run.  The website, using an event listener, will be aware of the change and can then validate the address, re-calculate shipping costs and taxes, and update [`shippingOptions`](https://msdn.microsoft.com/en-us/library/mt790440) to reflect the changed costs and shipping options available for the address selected (if applicable). 
 
