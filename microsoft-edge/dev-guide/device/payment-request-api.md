@@ -91,6 +91,7 @@ var details = {
 
 The browser will render the labels as you define them and automatically render the correct currency formatting based on the customer's locale. Note that the labels should be rendered in the same language as your content. 
 
+The [`options`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter defines data the web page wants returned from the **Payment Request**. This also defines the data that needs to be collected, including if shipping, email address, and/or phone number are required.
 
 ![Email address drop down](./../media/email_snippet.png)
 
