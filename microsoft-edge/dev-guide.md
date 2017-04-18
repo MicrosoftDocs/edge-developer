@@ -1,3 +1,4 @@
+
 ---
 ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
@@ -20,6 +21,8 @@ keywords: edge, web development, html, css, javascript, developer
 Here are the changes shipped with the current release of the Microsoft Edge platform,
  as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017). For changes in Windows Insider Preview builds, see
  the [Microsoft Edge Changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
+ 
+Here is the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)
 
 ### New features
 
