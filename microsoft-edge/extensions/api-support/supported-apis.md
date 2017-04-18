@@ -26,6 +26,7 @@ The following known issues span across the extension platform and will be fixed 
 - When using the CSS `url()` property, absolute URLs using `ms-browser-extension://` will not work like they do in Chrome. To bypass this issue, use relative paths to resources (starting in the root extension directory) instead.
 - `window.open()` does not work in extension background scripts. Please use `browser.windows.create()` instead.
 - Shared cookies are supported, however the extension background script will not have access to session cookies set in the tab before the extension is enabled. This issue does not affect persistent cookies.
+- If only unsupported permissions are specified for an extension, i.e `activeTab`, attempting to sideload the extension will result in the extension being uninstalled with the following message displayed: "Something went wrong with your extensions, so we had to reinstall them. You'll need to turn them on again."
 
 
 ## bookmarks
