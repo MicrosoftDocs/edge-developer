@@ -74,17 +74,19 @@ the extension will work with Microsoft Edge:
 
 - Remove the following [unsupported manifest keys](../api-support/supported-manifest-keys.md):
    - `"manifest_version"`
-   - `"applications"`
-   -  `"homepage_url"`
+   -  `"homepage_url"` </br>
 While these keys aren't supported, if you don't remove them Microsoft Edge will ignore them.
-- Add the `"author"` key. This is required in Microsoft Edge.
-- Since [`activeTab`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions#activeTab_permission) is unsupported, as a workaround you can remove the [`"permissions"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions) key and replace it with the [`"content_scripts"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts) key:
+- Add the `"author"` key. </br>This is required in Microsoft Edge.
+- Since [`activeTab`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions#activeTab_permission) is unsupported, as a workaround you can replace the [`"permissions"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions) key with the following snippet that also adds the [`"content_scripts"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts) key:
 
  ```json
+"permissions": [
+    "*://*/*"
+], 
 "content_scripts": [{
    "js": ["content_scripts/beastify.js"],
    "matches": ["*://*/*"]
-}]
+}],
 ```
 
 You should end up with a manifest.json file that looks similar to this:
@@ -99,10 +101,14 @@ You should end up with a manifest.json file that looks similar to this:
       "20": "icons/beasts-20.png",
       "40": "icons/beasts_40.png"
    },
-   "content_scripts": [{
-       "js": ["content_scripts/beastify.js"],
-       "matches": ["*://*/*"]
-    }],
+"permissions": [
+   "*://*/*"
+],
+
+"content_scripts": [{
+   "js": ["content_scripts/beastify.js"],
+   "matches": ["*://*/*"]
+}],
 
    "browser_action": {
       "default_icon": {
@@ -124,7 +130,20 @@ You should end up with a manifest.json file that looks similar to this:
 
 **JavaScript**
 
-The Beastify example uses promises which aren't currently supported for Microsoft Edge extensions. You'll need to change these to callbacks for the extension to run correctly. You can do this by replacing `document.addEventListener` in the choose_beast.js file with the following code:
+
+Since Edge doesn't support `browser.tabs.reload()`, you'll need to swap out the `else if (e.target.classList.contains("clear)) {...}` block of **choose_beast.js** with the following code. This will find the current active tab in Edge and "reset" it using `window.location.reload()`:
+
+```javascript
+  else if (e.target.classList.contains("clear")) {
+    browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      browser.tabs.executeScript(tabs[0].id, { code: 'window.location.reload();' });
+    });
+    return;
+  }
+```
+
+
+The Beastify example uses promises which aren't currently supported for Microsoft Edge extensions. You'll need to change these to callbacks for the extension to run correctly. You can do this by replacing `document.addEventListener` in the **choose_beast.js** file with the following code:
  ```js
 document.addEventListener("click", function(e) {
       if (e.target.classList.contains("beast")) {
@@ -142,13 +161,14 @@ document.addEventListener("click", function(e) {
           return;
       }
       else if (e.target.classList.contains("clear")) {
-          browser.tabs.reload();
-          window.close();
-
+          browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+          browser.tabs.executeScript(tabs[0].id, { code: 'window.location.reload();' });
+          });
           return;
       }
 });
 ```
+
 
 **CSS**
 
