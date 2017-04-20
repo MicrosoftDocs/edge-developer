@@ -39,7 +39,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/landing/windows/win_edge-2.svg" alt="" />
+                            <img src="/media/common/i_get-started.svg" alt="Get started with extensions icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +57,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/landing/windows/win_edge-3.svg" alt="" />
+                            <img src="/media/common/i_api.svg" alt="Edge API icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,11 +75,47 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/landing/windows/win_edge-4.svg" alt="" />
+                            <img src="/media/common/i_web-apps.svg" alt="Windows Web Apps icon" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Web apps on Windows 10</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="media/common/i_test.svg" alt="BrowserStack icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Free testing with BrowserStack</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="../deploy">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_deploy.svg" alt="IT Pro Edge Deploy icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>IT pro documentation for Microsoft Edge</h3>
                     </div>
                 </div>
             </div>
