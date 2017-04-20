@@ -1,10 +1,9 @@
 ---
-ms.assetid: dc79bb0d-4fd8-4988-86d6-af60bec62b10
 description: Find information on current and future APIs as well their known issues/Chrome incompatibilities.
 title: Extensions - Supported APIs
 author: abbycar
 ms.author: abigailc
-ms.date: 04/11/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -26,6 +25,7 @@ The following known issues span across the extension platform and will be fixed 
 - `window.open()` does not work in extension background scripts. Please use `browser.windows.create()` instead.
 - Shared cookies are supported, however the extension background script will not have access to session cookies set in the tab before the extension is enabled. This issue does not affect persistent cookies.
 - If only unsupported permissions are specified for an extension, i.e `activeTab`, attempting to sideload the extension will result in the extension being uninstalled with the following message displayed: "Something went wrong with your extensions, so we had to reinstall them. You'll need to turn them on again."
+- Triggering a download via a hidden anchor tag will fail from background scripts. This should be done from an extension page (content script or options page) instead.
 
 
 ## bookmarks
