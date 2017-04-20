@@ -75,7 +75,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/lcommonanding/windows/win_edge-4.svg" alt="" />
+                            <img src="/media/common/windows/win_edge-4.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="" />
+                            <img src="/media/common/logo_edge.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
