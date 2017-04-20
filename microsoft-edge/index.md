@@ -105,7 +105,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
         </a>
     </li>
     <li>
-        <a href="../deploy">
+        <a href="/microsoft-edge/deploy">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
