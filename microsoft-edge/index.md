@@ -93,7 +93,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="media/common/i_test.svg" alt="BrowserStack icon" />
+                            <img src="/media/common/i_test.svg" alt="BrowserStack icon" />
                         </div>
                     </div>
                     <div class="cardText">
