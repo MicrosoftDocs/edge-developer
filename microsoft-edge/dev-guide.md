@@ -19,10 +19,12 @@ keywords: edge, web development, html, css, javascript, developer
 
 ## What's new in EdgeHTML 15
 Here are the changes shipped with the current release of the Microsoft Edge platform,
- as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017). For changes in Windows Insider Preview builds, see
+ as of the [Windows 10 Creators Update (Build 15063)](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017). For an overview of changes to the overall Microsoft Edge browser, see [What’s new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97)
+ 
+For changes in subsequent Windows Insider Preview builds, see
  the [Microsoft Edge Changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
  
-Here is the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)
+Here's the permalink for the following list of changes: **[https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)**
 
 ### New features
 
@@ -46,6 +48,9 @@ EdgeHTML 15 introduces the [Intersection Observer API](https://wicg.github.io/In
 
 #### Payment Request API
 The [Payment Request API](http://www.w3.org/TR/payment-request/) is now supported, enabling simpler checkout and payments on the web with Microsoft Wallet on Windows 10 PCs and Phones. This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) and the [Payment Request API](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/device/payment-request-api) developer guide.
+
+#### TCP Fast Open (TFO)
+TCP Fast Open is a feature that reduces the number of round trips required to open a TCP connection, improving browser networking performance. For more details, see [Building a faster and more secure web with TCP Fast Open](https://blogs.windows.com/msedgedev/2016/06/15/building-a-faster-and-more-secure-web-with-tcp-fast-open-tls-false-start-and-tls-1-3/#eQMauReErmIRXYqh.97). Due to interoperability differences in various network topologies, this features is not enabled by default in Microsoft Edge. To enable it, type `about:flags` in your address bar, and select the checkbox for **Enable TCP Fast Open** under the *Networking* section. 
 
 #### WebRTC and interoperable RTC video codec support
 
@@ -115,7 +120,8 @@ For more info and the status of other WebDriver features, check out [WebDriver c
 
 ## New APIs in EdgeHTML 15
 
-View the table below for a list of new APIs supported in EdgeHTML 15.
+Here's the full list of new APIs in EdgeHTML 15. They are listed in the format of **[interface name].[api name]**.
+ 
  
 <iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'>New EdgeHTML15 APIs</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  
  
