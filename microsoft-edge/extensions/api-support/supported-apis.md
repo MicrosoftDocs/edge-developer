@@ -124,7 +124,6 @@ API | Known issues | Chrome incompatibilities
 [idle](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle) | | |
 [idle.setDetectionInterval](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle/setDetectionInterval) | | |
 [idle.queryState](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle/queryState) | | |
-[idle.onStateChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle/onStateChanged) | | |
 
 
 ## pageAction
