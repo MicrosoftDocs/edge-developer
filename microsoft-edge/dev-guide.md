@@ -72,7 +72,8 @@ To get a feel for what it looks like to work with the API, here’s some basic c
 
 See the [WebVR API reference](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx) and [Gamepad API reference](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) for details.
 
- > [!NOTE] Since the WebVR spec is still in development, Edge's implementation may change later down the line.
+ > [!NOTE] 
+ > Since the WebVR spec is still in development, Edge's implementation may change later down the line.
 
 ### Updated features
 
