@@ -10,7 +10,7 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 
 
-# What's New in EdgeHTML for developers
+# What's New in EdgeHTML
 
 Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https://insider.windows.com/)! The [Windows Insider Program](https://insider.windows.com/) provides the latest Windows 10 builds as soon as they're available.  
 
