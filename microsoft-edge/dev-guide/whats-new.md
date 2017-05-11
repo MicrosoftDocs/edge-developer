@@ -1,3 +1,15 @@
+---
+description: This page provides an overview of what's new in EdgeHTML preview builds for developers.
+title: What's New in EdgeHTML for developers
+author: libbymc
+ms.author: libbymc
+ms.date: 05/11/2017
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
+---
+
+
 # What's New in EdgeHTML for developers
 
 Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https://insider.windows.com/)! The [Windows Insider Program](https://insider.windows.com/) provides the latest Windows 10 builds as soon as they're available.  
