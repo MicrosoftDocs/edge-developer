@@ -16,7 +16,7 @@ Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https:
 
 ## Preview Build 16190
 
-Here's a full list of new and upated EdgeHTML APIs in Windows 10 Preivew Build 16190. They are listed in the format of **[interface name].[api name]**.
+Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preivew Build 16190. They are listed in the format of **[interface name].[api name]**.
  
 
 <iframe height='582' scrolling='no' title='EdgeHTML Preview Build 16190' src='//codepen.io/MicrosoftEdgeDocumentation/embed/dWzRRq/?height=300&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/dWzRRq/'>EdgeHTML Preview Build 16190</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>
