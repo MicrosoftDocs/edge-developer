@@ -96,6 +96,7 @@
 ### [Tools](dev-guide/tools.md)
 #### [Console logging API](dev-guide/tools/console-logging-API.md)
 #### [WebDriver](dev-guide/tools/webDriver.md)
+### [What's New in EdgeHTML for developers](dev-guide/whats-new.md)
 ## [Extensions](extensions.md)
 ### [API support](extensions/API-support.md)
 #### [Extension API roadmap](extensions/API-support/extension-API-roadmap.md)
