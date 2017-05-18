@@ -35,6 +35,7 @@ Key | Known issues | Chrome incompatibilities
 [description](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/description) | | |
 [manifest_version](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/manifest_version) | | Currently ignored in Microsoft Edge.
 [icons](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | | |
+[default_locale](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/default_locale)| | |
 
 ## browser_action or page_action keys
 
