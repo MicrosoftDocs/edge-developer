@@ -343,9 +343,9 @@ The goal of the deployment is to set up an `AppX` folder with all the necessary 
 -	UWP binaries (exe, dlls) and visual assets (Assets and Properties folders)
 -	Desktop Bridge binaries (exe, dlls) if you added a Desktop Bridge component
 
-If your native messaging program consists of only a UWP app component, follow the steps in [UWP app preperation](#uwp-app-preperation). If you have both a UWP app and Desktop Bridge component, you'll need to follow [UWP app with Desktop Bridge preperation](#uwp-app-with-desktop-bridge-preperation).
+If your native messaging program consists of only a UWP app component, follow the steps in [UWP app preparation](#uwp-app-preparation). If you have both a UWP app and Desktop Bridge component, you'll need to follow [UWP app with Desktop Bridge preparation](#uwp-app-with-desktop-bridge-preparation).
 
-### UWP app preperation
+### UWP app preparation
 
 1.	Build and deploy the UWP app.
 
@@ -358,7 +358,7 @@ If your native messaging program consists of only a UWP app component, follow th
 
 2. Copy the `Extension` folder to the created `AppX` folder.
 
-### UWP app with Desktop Bridge preperation
+### UWP app with Desktop Bridge preparation
 
 1.	Build and deploy the UWP app.
 
@@ -380,7 +380,7 @@ If your native messaging program consists of only a UWP app component, follow th
 	```
 
 
-
+### Final steps
 Now that the files are ready to go, you will need to register the AppX. There are two ways to accomplish this:
 
 -	Run `Add-AppxPackage` from PowerShell:
