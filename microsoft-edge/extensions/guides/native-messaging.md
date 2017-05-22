@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer, native, messa
  
 ## Native messaging architecture overview
 
-With the upcoming Windows 10 Creators Update, Edge extensions will be able to use native messaging to communicate with a companion Universal Windows Platform (UWP) app.  At a high level, Edge extensions use the same APIs for native messaging as Chrome and Firefox extensions. However, the native messaging host will need to be implemented using the Universal Windows Platform.
+With the Windows 10 Creators Update, Edge extensions are able to use native messaging to communicate with a companion Universal Windows Platform (UWP) app.  At a high level, Edge extensions use the same APIs for native messaging as Chrome and Firefox extensions. However, the native messaging host will need to be implemented using the Universal Windows Platform.
 
 > [!NOTE]
 > The method outlined below (connecting to a UWP app via AppService) is the only supported mechanism for enabling communication between Edge extensions and native components. Please see the [Adding a Desktop Bridge component](#adding-a-desktop-bridge-component) section of this guide for more information on how to enable communication with legacy Win32 components. 
