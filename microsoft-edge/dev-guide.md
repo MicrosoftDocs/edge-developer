@@ -19,7 +19,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 ## What's new in EdgeHTML 15
 Here are the changes shipped with the current release of the Microsoft Edge platform,
- as of the [Windows 10 Creators Update (Build 15063)](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017). For an overview of changes to the overall Microsoft Edge browser, see [What’s new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97)
+ as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017, Build 15063). For an overview of changes to the overall Microsoft Edge browser, see [What’s new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97)
  
 For changes in subsequent Windows Insider Preview builds, see
  the [Microsoft Edge Changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/).
@@ -127,8 +127,8 @@ Here's the full list of new APIs in EdgeHTML 15. They are listed in the format o
 <iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'>New EdgeHTML15 APIs</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  
  
 ## Previous EdgeHTML releases
-[EdgeHTML 12 / Windows build 10240 (7/2015)](https://blogs.windows.com/msedgedev/2015/02/26/a-break-from-the-past-the-birth-of-microsofts-new-web-rendering-engine/#sOYXhltpE4HUWcOP.97) *See also:* [A break from the past, part 2: Saying goodbye to ActiveX, VBScript, attachEvent…](https://blogs.windows.com/msedgedev/2015/05/06/a-break-from-the-past-part-2-saying-goodbye-to-activex-vbscript-attachevent/#cdgT4Yebl738X0ol.97)
+[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)
 
-[EdgeHTML 13 / Windows build 10586 (11/2015)](https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/#TuusgqsWj8X6pDcD.97)
+[EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
 
-[EdgeHTML 14 / Windows build 14393 (8/2016)](https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/#6xVDezg4bfyDyIWJ.97)
+[EdgeHTML 14 / Windows build 14393 (8/2016)](https://aka.ms/devguide_edgehtml_14)
