@@ -1,5 +1,6 @@
 ---
 description: This page provides an overview of what's new in EdgeHTML 14.
+title: What's New in EdgeHTML 14
 author: libbymc
 ms.author: libbymc
 ms.date: 5/30/2017
