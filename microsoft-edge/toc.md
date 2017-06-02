@@ -43,7 +43,7 @@
 #### [Video](dev-guide/HTML5/video.md)
 ##### [Timed text tracks](dev-guide/HTML5/video/timed-text-tracks.md)
 ### [Browser](dev-guide/browser.md)
-#### [Flash Click-to-Run](dev-guide/browser/flash-click-to-run.md)
+#### [Flash](dev-guide/browser/flash.md)
 #### [Reading view](dev-guide/browser/reading-view.md)
 #### [Search provider discovery](dev-guide/browser/search-provider-discovery.md)
 ### [Device](dev-guide/device.md)
