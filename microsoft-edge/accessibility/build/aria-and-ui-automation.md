@@ -4,15 +4,17 @@ description: Learn how Edge can recognize ARIA info, then expose it to assistive
 title: Accessibility - ARIA and UI automation
 author: libbymc
 ms.author: libbymc
-ms.date: 02/08/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
 
 # ARIA and UI Automation in Microsoft Edge
 
 The W3C defines Accessible Rich Internet Applications (ARIA) as a syntax for making dynamic web content and custom UI accessible. Microsoft Edge recognizes the ARIA role, state, and property information and exposes it to assistive technologies, which in turn can use the [Microsoft UI Automation](https://blogs.msdn.microsoft.com/winuiautomation/) APIs to retrieve the information.
+
+Visit [HTML5Accessibility](http://html5accessibility.com/) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
 
 The Microsoft Edge rendering engine (EdgeHTML) builds an accessible projection of web pages, conforming to the following W3C specifications:
 
@@ -29,4 +31,4 @@ The Microsoft Edge rendering engine (EdgeHTML) builds an accessible projection o
   * [Working draft](http://www.w3.org/TR/accname-aam-1.1/) - stable version of the specification  
   * [Editor’s draft](http://w3c.github.io/aria/accname-aam/accname-aam.html) - work in progress. Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.   
 
-For more information about the accessibility architecture in Microsoft Edge, check out the [Building a more accessible web platform](https://blogs.windows.com/msedgedev/2016/04/20/building-a-more-accessible-web-platform/#GaJGYkSzOImPK41w.97) blog post.
+For more information about the accessibility architecture in Microsoft Edge, check out the [Building a more accessible web platform](https://blogs.windows.com/msedgedev/2016/04/20/building-a-more-accessible-web-platform/) blog post.  For examples of how the new architecture improves the end user’s experience, and specifically how markup defines the experience of navigating with assistive technologies like screen readers, visit [Building a more accessible user experience with HTML5 and UIA](https://blogs.windows.com/msedgedev/2016/05/12/accessible-ux-with-html5-and-uia/).

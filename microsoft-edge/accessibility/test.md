@@ -4,10 +4,10 @@ description: Check out tools and testing procedures that help evaluate a website
 title: Accessibility - Test
 author: libbymc
 ms.author: libbymc
-ms.date: 02/08/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
 
 # Accessibility Testing
@@ -26,6 +26,9 @@ A series of quick checks by the WAI that help you asses the accessibility of a w
 
 #### [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
 A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.
+
+#### [HTML5Accessibility](http://html5accessibility.com/)
+This site tests which new HTML5 features are accessibly supported by major browsers. 
 
 #### [Site Scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/)
 The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.

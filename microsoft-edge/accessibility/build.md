@@ -4,14 +4,16 @@ description: Walk through how best practices and Accessible Rich Internet Applic
 title: Accessibility - Build
 author: libbymc
 ms.author: libbymc
-ms.date: 02/08/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
 
 # Building Accessible Websites
 The web is filled with dynamic and complex websites, applications, and user interfaces built using a combination of HTML, CSS, and JavaScript.  However, when designed and built without accessibility in mind, these complex websites are difficult to use by people who rely on [assistive technologies](http://webaim.org/articles/motor/assistive) to browse the web. Building websites that are accessible to people with disabilities requires semantic information about the user interface. This allows for assistive technologies, like screen readers, to convey the necessary information to help people with a range of abilities use the website.
+
+Visit [HTML5Accessibility](http://html5accessibility.com/) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
 
 ## How Accessibility Works
 

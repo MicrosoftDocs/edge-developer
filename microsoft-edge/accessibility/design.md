@@ -4,10 +4,10 @@ description: Read up on resources for inclusive design tools and best practices.
 title: Accessibility - Design
 author: libbymc
 ms.author: libbymc
-ms.date: 02/08/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
 
 # Designing Accessible Websites
