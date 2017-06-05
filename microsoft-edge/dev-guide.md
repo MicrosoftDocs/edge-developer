@@ -132,5 +132,3 @@ Here's the full list of new APIs in EdgeHTML 15. They are listed in the format o
 [EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
 
 [EdgeHTML 14 / Windows build 14393 (8/2016)](https://aka.ms/devguide_edgehtml_14)
-
-Hello
