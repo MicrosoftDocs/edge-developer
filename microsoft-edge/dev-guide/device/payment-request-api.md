@@ -27,7 +27,7 @@ The browser authenticates the user, enables the user to select a supported payme
 
 To see the Payment Request API in action, as well as get an overview of how to use it, check out this video.
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Using-the-Payments-Request-API/player]
 
 
 > [!NOTE]
