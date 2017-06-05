@@ -1,10 +1,9 @@
----
-ms.assetid: a69c3151-9711-4bf1-8a7b-c1ba64b02f08
+﻿---
 description: Learn how the Payment Request API enables Edge to act as an intermediary between merchants, consumers, and consumer payment methods stored in the cloud.
 title: Dev guide - Payment Request API
 author: libbymc
 ms.author: libbymc
-ms.date: 02/08/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -25,6 +24,11 @@ In summary, when using the [Payment Request API](http://www.w3.org/TR/payment-re
 The browser authenticates the user, enables the user to select a supported payment method on file, and processes the payment details. The browser then sends the payment information details back to the merchant website, so that the merchant can complete the payment.  In addition to receiving payment information, the merchant can also elect to receive shipping information as part of the **Payment Request**.  
 
 ![Payment response construct](./../media/payment_response_construct.png)
+
+To see the Payment Request API in action, as well as get an overview of how to use it, check out this video.
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]
+
 
 > [!NOTE]
 > The Payment Request API is supported in Microsoft Edge build 14992+.
