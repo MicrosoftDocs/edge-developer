@@ -14,7 +14,8 @@ keywords: edge, web development, html, css, javascript, developer
 The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
 
 > [!NOTE]
-> For Microsoft Edge, all extension APIs are under the `browser` namespace, e.g. `browser.browserAction.disable()`.
+>  - For Microsoft Edge, all extension APIs are under the `browser` namespace, e.g. `browser.browserAction.disable()`.
+>  - Microsoft Edge extension APIs use callbacks, not promises.
 
 
 ## Overarching issues
