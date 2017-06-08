@@ -31,7 +31,7 @@ The following keys are recommended:
 
 Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-browser_specific_settings | | Indicates the extension's preferred state in the browser. The browser may or may not choose to respect it in a future release, depending on factors such as the reputation of the extension, or the total number of buttons already in the user's address bar. This can be used to indicate the default position of the `browserAction` icon. Not supported in Chrome. </br></br> `"browser_specific_settings": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;`"edge": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"browser_action_next_to_addressbar": true`</br>&nbsp;&nbsp;&nbsp;&nbsp;`}`</br>`}` |
+browser_specific_settings | | Indicates the extension's preferred state in the browser. The browser may or may not choose to respect it in a future release, depending on factors such as the reputation of the extension, or the total number of buttons already in the user's address bar. This can be used to indicate the default position of the `browserAction` icon. </br></br> `"browser_specific_settings": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;`"edge": {`</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"browser_action_next_to_addressbar": true`</br>&nbsp;&nbsp;&nbsp;&nbsp;`}`</br>`}` </br></br> Not supported in Chrome.|
 [default_locale](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/default_locale)| | |
 [description](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/description) | | |
 [icons](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | | |
