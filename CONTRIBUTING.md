@@ -39,7 +39,7 @@ Once you are ready to add your changes to the remote repo so that they will be s
 - `git push origin <yourbranchname>`: This command pushes your changes to the remote repo that you forked on GitHub (the "origin") into the branch that you have specified. Because you have forked the repo to your own GitHub account, you are welcome to do your work in the **Master** branch. 
 
 When you are happy with your changes and ready to submit a PR:
-- Go to your fork of the minecraft-marketplace repo: https://github.com/your-github-alias/edge-developer.
+- Go to your fork of the edge-develop repo: https://github.com/your-github-alias/edge-developer.
 - Click the "New pull request" button. (The "base fork:" will be listed as "MicrosoftDocs/edge-developer", the "head fork:" should show your fork of the repo and the branch in which you made your changes.) You can review your changes here as well. 
 - Click the green "Create pull request" button. You will then be asked to give your Pull Request a title and description, then click the "Create pull request" button once more.
 
@@ -57,7 +57,7 @@ When making contributions, please submit your Pull Request (PR) to the **Master*
 
 **For internal Microsoft employees**: If you have content to contribute that is confidential or needs to be held back for future release, please email the Web Docs team at [webdocs@microsoft.com](webdocs@microsoft.com).
 
-## Using issues to provide feedback on Minecraft Marketplace documentation
+## Using issues to provide feedback on Microsoft Edge documentation
 
 To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/edge-developer/issues).
 
