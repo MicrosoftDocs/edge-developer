@@ -14,7 +14,8 @@ keywords: edge, web development, html, css, javascript, developer, what's new in
 
 Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https://insider.windows.com/)! The [Windows Insider Program](https://insider.windows.com/) provides the latest Windows 10 builds as soon as they're available.  
 
-[!WARNING] Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!WARNING] 
+> Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ### Preview Build 16226
 
