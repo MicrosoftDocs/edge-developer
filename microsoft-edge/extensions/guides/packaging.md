@@ -29,6 +29,10 @@ No matter which package creation route you choose, manual or ManifoldJS, the fir
 
 Once you've done this, you can either move on to [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md) to learn how AppXs are created and manually package your extension, or go the easier route and jump to [Using ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md).
 
+> [!NOTE]
+> Once you've reached out to us and have been approved to have your extension in the Windows Store, check out the [app submission checklist](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+
+
 ## [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md)
 
 This section of the guide walks through manual extension package creation once [you've set up your Windows Developer account and reserved your extension name(s)](./packaging/extensions-in-the-windows-Dev-Center.md). If you're curious about the finer details of packaging an extension, give this a read.
