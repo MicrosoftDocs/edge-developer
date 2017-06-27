@@ -1,6 +1,6 @@
 ---
 description: Learn about the Windows App Certification Kit. This gives your extension a better chance of getting published.
-title: Extensions - Using ManifoldJS to package extensions
+title: Extensions - Running the Windows App Certification Kit
 author: abbycar
 ms.author: abigailc
 ms.date: 06/27/2017
