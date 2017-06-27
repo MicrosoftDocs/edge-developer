@@ -1,5 +1,4 @@
 ---
-ms.assetid: df27dcce-4bc8-4c9e-8857-dd861da79dfe
 description: Learn how to sign up for a Windows Developer account and reserve a name for your Edge extension.
 title: Extensions - Extensions in the Window Dev Center
 author: abbycar
@@ -37,3 +36,6 @@ It's recommended that you [reserve the name of your extension](https://msdn.micr
 
 
 You can also [reserve additional names to use for your extension](https://msdn.microsoft.com/en-us/windows/uwp/publish/manage-app-names), which is especially useful if you are offering the extension in multiple languages and want to use different names for different languages. You can find more information on localization in [Localizing extension packages](./localizing-extension-packages.md).
+
+> [!NOTE]
+> Once you've [reached out to us](http://aka.ms/extension-request) and have been approved to have your extension in the Windows Store, check out the [app submission checklist](https://docs.microsoft.com/windows/uwp/publish/app-submissions).

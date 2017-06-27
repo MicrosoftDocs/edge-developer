@@ -122,6 +122,7 @@
 ##### [Extensions in the Windows Dev Center](extensions/guides/packaging/extensions-in-the-windows-dev-center.md)
 ##### [Localizing extension packages](extensions/guides/packaging/localizing-extension-packages.md)
 ##### [Using ManifoldJS to package extensions](extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md)
+##### [Running the Windows App Certification Kit](extensions/guides/packaging/running-the-windows-app-certification-kit.md)
 #### [Porting Chrome extensions](extensions/guides/porting-Chrome-extensions.md)
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
 ### [Tips and tricks](extensions/tips-and-tricks.md)

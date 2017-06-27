@@ -29,6 +29,10 @@ No matter which package creation route you choose, manual or ManifoldJS, the fir
 
 Once you've done this, you can either move on to [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md) to learn how AppXs are created and manually package your extension, or go the easier route and jump to [Using ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md).
 
+> [!NOTE]
+> Once you've reached out to us and have been approved to have your extension in the Windows Store, check out the [app submission checklist](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+
+
 ## [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md)
 
 This section of the guide walks through manual extension package creation once [you've set up your Windows Developer account and reserved your extension name(s)](./packaging/extensions-in-the-windows-Dev-Center.md). If you're curious about the finer details of packaging an extension, give this a read.
@@ -46,3 +50,8 @@ You can jump to [Localizing name and description for the Windows Store](./packag
 The tool route for packaging your extension, ManifoldJS will package up your extension in a snap with minimal effort on your end. Provide a few Windows/Windows Store assets after filling out some AppXManifest properties and you're extension will be packaged in no time.
 
 Once your extension is packaged, see the [testing](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) section of Creating and testing your Microsoft Edge extension to learn how to sideload or unpack it.
+
+
+## [Running the Windows App Certification Kit](./packaging/running-the-windows-app-certification-kit.md)
+
+Once you have a packaged extension, you can then run it through the Windows App Certification Kit. Doing so will run a number of tests on your extension package to ensure that it's ready for the Windows Store.
