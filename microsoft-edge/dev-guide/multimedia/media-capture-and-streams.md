@@ -115,7 +115,7 @@ videoTracks[0].stop();
 
 ## Related topics
 
-[Announcing media capture functionaliry in Microsoft Edge](http://go.microsoft.com/fwlink/p/?LinkId=613637)
+[Announcing media capture functionality in Microsoft Edge](http://go.microsoft.com/fwlink/p/?LinkId=613637)
 
 ## Specification
 
