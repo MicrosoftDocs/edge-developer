@@ -36,7 +36,7 @@ Once you are ready to add your changes to the remote repo so that they will be s
 - `git status`: This command will show you what files you have changed so that you can confirm that you intended to make those changes. 
 - `git add -A`: This command tells git to add ALL of your changes. If you would prefer to only add the changes you have made to one particular file, instead enter the command: `git add <file.md>`, where "file.md" represents the name the file containing your changes.
 - `git commit -m “Fixed a few typos”`: This command tells git to commit the changes that you added in the previous step, along with a short message describing the changes that you made.
-- `git push origin <yourbranchname>`: This command pushes your changes to the remote repo that you forked on GitHub (the "origin") into the branch that you have specified. Because you have forked the repo to your own GitHub account, you are welcome to do your work in the **Master** branch. 
+- `git push origin <yourbranchname>`: This command pushes your changes to the remote repo that you forked on GitHub (the "origin") into the branch that you have specified. Because you have forked the repo to your own GitHub account, you are welcome to do your work in the **Develop** branch. 
 
 When you are happy with your changes and ready to submit a PR:
 - Go to your fork of the edge-develop repo: https://github.com/your-github-alias/edge-developer.
@@ -47,13 +47,13 @@ After pushing your contribution to the remote repo, you will be sent an email fr
 
 Once you have reviewed your contribution on the [Microsoft Edge Docs staging site](https://review.docs.microsoft.com/en-us/microsoft-edge/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
 
-Once your PR is submitted, a member of the Microsoft Edge docs team will review. When it is accepted, you will be able to view your changes on the[ ]staging site]https://review.docs.microsoft.com/en-us/microsoft-edge). These updates will eventually be published live to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge).
+Once your PR is submitted, a member of the Microsoft Edge docs team will review. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge). These updates will eventually be published live to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge).
 
 ## Working with Branches
 
 The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/en-us/microsoft-edge). 
 
-When making contributions, please submit your Pull Request (PR) to the **Master** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
+When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 
 **For internal Microsoft employees**: If you have content to contribute that is confidential or needs to be held back for future release, please email the Web Docs team at [webdocs@microsoft.com](webdocs@microsoft.com).
 
