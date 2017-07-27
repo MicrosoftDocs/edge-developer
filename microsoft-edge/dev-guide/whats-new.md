@@ -19,6 +19,12 @@ Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are l
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+## Preview Build 16251
+Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 16251. 
+
+<iframe height='334' scrolling='no' title='EdgeHTML Preview Build 16251' src='//codepen.io/MicrosoftEdgeDocumentation/embed/brVGQN/?height=334&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/brVGQN/'>EdgeHTML Preview Build 16251</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+
+
 ## Preview Build 16241
 Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 16241. 
 
