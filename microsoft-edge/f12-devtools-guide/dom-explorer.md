@@ -12,6 +12,9 @@ keywords: edge, web development, html, css, javascript, developer
 
 # DOM Explorer
 
+> [!NOTE]
+> The **DOM Explorer** tool is now called **Elements** in [Windows Insider](https://insider.windows.com/) preview builds. 
+
 Use the DOM Explorer tool to see the state of your webpage's DOM (Document Object Model), examine HTML structure and CSS styles, and test changes to solve display issues.
 
 ## Enter the DOM
