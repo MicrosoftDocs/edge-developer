@@ -28,6 +28,9 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 
 ## The DOM Explorer tool (CTRL+1)
 
+> [!NOTE]
+> The **DOM Explorer** tool is now called **Elements** in [Windows Insider](https://insider.windows.com/) preview builds. 
+
 [The DOM Explorer tool](./f12-devtools-guide/dom-explorer.md) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
 ![Edge DOM Explorer](./f12-devtools-guide/media/Edge_DOMExplorer.png)
 

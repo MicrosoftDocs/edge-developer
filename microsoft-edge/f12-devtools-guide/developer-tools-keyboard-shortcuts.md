@@ -23,6 +23,7 @@ These shortcuts either control the F12 tools window or work across all tools.
 
 Action | Shortcut
 :------------ | :-------------
+Launch F12 developer tools | CTRL+SHIFT+I
 Show/hide Console at the bottom of any other tool  | CTRL+**`**
 Switch to DOM Explorer | CTRL+1
 Switch to Console |  CTRL+2
@@ -46,8 +47,8 @@ Previous match in Search box | SHIFT+F3
 Find in search box | CTRL+F
 Give focus to console at the bottom | ALT+SHIFT+I
 Dock/undock tools (toggle docking) | CTRL+P  
-
-Refresh the page <br>**Note:** if you're debugging and paused at a breakpoint,<br> this resumes execution first. | CTRL+SHIFT+F5 <br>or CTRL+R
+Launch Console | CTRL+SHIFT+J
+Refresh the page. **Note:** if you're debugging and paused at a breakpoint, this resumes execution first. | CTRL+SHIFT+F5 or CTRL+R
 
 ## Console shortcuts
 These shortcuts work with both the main Console panel and the Console you can open in other tools. They only work when focus is on the Console's input area.
@@ -63,9 +64,14 @@ Clear input | ESC
 
 ## DOM Explorer Shortcuts
 
+> [!NOTE]
+> The **DOM Explorer** tool is now called **Elements** in [Windows Insider](https://insider.windows.com/) preview builds. 
+
+
 Action | Shortcut
 :------------ | :-------------
 Open/close Color Picker tool  | CTRL+K
+Element highlighting | CTRL+SHIFT+L
 
 ## Debugger Shortcuts
 The Debugger is one of the most complex tools in F12 tools and has the largest set of shortcuts.
