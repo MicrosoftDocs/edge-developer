@@ -21,7 +21,7 @@ The **Network** tool in F12 developer tools helps you inspect page load times, r
 
 The top row of icons in the **Network** tool control the recording of network traffic and give you tools to provide better accuracy, manage your results, and search through the traffic you capture.
 
-![Edge F12 Network Toolbar](./media/network-icons.png)
+![Microsoft Edge F12 Network Toolbar](./media/network-icons.png)
 
 From left to right, the tools are:
 
@@ -34,7 +34,7 @@ From left to right, the tools are:
   - **Clear cache** removes saved files from the browser's cache. Browsers commonly save page elements to disk and use them again for faster reloads. When you're trying to get the true measure of a page's load time, clearing the cache makes sure all elements are being downloaded from the network.
 
   - **Clear cookies** ensures that all cookies are removed, so that you get the experience of loading the page for the first time.
-    > note.warning This will clear *all* cookies associated with Edge.
+    > note.warning This will clear *all* cookies associated with Microsoft Edge.
 
   - **Clear entries on navigate** is a toggle switch with on and off states. When in the off state, network traffic for a window or tab is recorded continuously as the browser moves from page to page. When in the on state, recorded traffic is cleared each time you navigate to a new page. This is turned on by default.
 
@@ -46,12 +46,12 @@ From left to right, the tools are:
 
 By default, a summary view is displayed, as seen here.
 
-![Edge F12 Network Toolbar](./media/Edge_Network_files.png)
+![Microsoft Edge F12 Network Toolbar](./media/Edge_Network_files.png)
 
 ## Reading and interpreting the data
 The **Network** tool includes two views of network traffic. The **Summary** view gives a quick look at all captured info for a tab or webpage, and the **Details** view gives you details of each connection, such as request and response headers and detailed timing info. You can view the details of any file/connection by clicking on it--the summary will expand out from the side.
 
-![Edge F12 Network Summary Details](./media/Edge_Network_details.png)
+![Microsoft Edge F12 Network Summary Details](./media/Edge_Network_details.png)
 
 ### Summary view
 The Summary view shows all network traffic for a page in a table. By default, the info is presented chronologically, but you can sort the table differently by clicking the header of any column. This table describes the type of info you can view.

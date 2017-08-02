@@ -1,6 +1,6 @@
 ---
 ms.assetid: c39301c7-9b5c-432d-865d-71381362f9c3
-description: Learn useful information about the commands used for taking screenshots  for the WebDriver API.
+description: Learn useful information about the commands used for taking screenshots for the WebDriver API.
 title: Webdriver commands - Screenshots
 author: erikadoyle
 ms.author: edoyle

@@ -32,7 +32,7 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 > The **DOM Explorer** tool is now called **Elements** in [Windows Insider](https://insider.windows.com/) preview builds. 
 
 [The DOM Explorer tool](./f12-devtools-guide/dom-explorer.md) shows the structure of your webpage as it's being rendered in the browser and makes it possible to edit your HTML and styles in a live page. You can do this without having to edit and reload your sources, so you can quickly solve display issues or experiment with new ideas.
-![Edge DOM Explorer](./f12-devtools-guide/media/Edge_DOMExplorer.png)
+![Microsoft Edge DOM Explorer](./f12-devtools-guide/media/Edge_DOMExplorer.png)
 
 **Features** in the DOM Explorer tool include:
  - IntelliSense autocompletion suggestions when editing HTML attributes and CSS properties.
@@ -47,7 +47,7 @@ There are seven distinct tools, each with their own tab in the F12 tools interfa
 [Learn more about the DOM Explorer tool.](./f12-devtools-guide/dom-explorer.md)
 
 ## The Console tool (CTRL+2)
-![Edge Console Tool](./f12-devtools-guide/media/Edge_Console.png)
+![Microsoft Edge Console Tool](./f12-devtools-guide/media/Edge_Console.png)
 
 The [Console tool](./f12-devtools-guide/console.md) provides a way to interact with your running code:
 
@@ -70,7 +70,7 @@ The [Console tool](./f12-devtools-guide/console.md) provides a way to interact w
 [Learn more about the Console tool.](./f12-devtools-guide/console.md)
 
 ## The Debugger tool (CTRL+3)
-![Edge Debugger Tool](./f12-devtools-guide/media/Edge_Debugger.png)
+![Microsoft Edge Debugger Tool](./f12-devtools-guide/media/Edge_Debugger.png)
 
 You use the [Debugger tool](./f12-devtools-guide/debugger.md) to examine what your code is doing, when it's doing it, and how it's doing it. Pause code in mid-execution, step through it line-by-line, and watch the state of variables and objects at each step.
 
@@ -89,7 +89,7 @@ You use the [Debugger tool](./f12-devtools-guide/debugger.md) to examine what yo
 [Learn more about the Debugger tool.](./f12-devtools-guide/debugger.md)
 
 ## The Network tool (CTRL+4)
-![Edge Network Tool](./f12-devtools-guide/media/Edge_Network_details.png)
+![Microsoft Edge Network Tool](./f12-devtools-guide/media/Edge_Network_details.png)
 
 The [Network tool](./f12-devtools-guide/network.md) gives you the fine details of any network requests involved in the loading and operation of your webpages.
 
@@ -101,7 +101,7 @@ The [Network tool](./f12-devtools-guide/network.md) gives you the fine details o
 [Learn more about the Network tool.](./f12-devtools-guide/network.md)
 
 ## The Performance Tool (CTRL+5)
-![Edge Performance Tool](./f12-devtools-guide/media/Edge_Performance.png)
+![Microsoft Edge Performance Tool](./f12-devtools-guide/media/Edge_Performance.png)
 
 The [Performance tool](./f12-devtools-guide/performance.md) helps you dig into what is happening when your page slows down. Using it to profile specific points of slowness shows the operations that are causing them. In Microsoft Edge, the Performance tool combines the previous **UI Responsiveness** and **Profiler** tools to create an end-to-end view of your scripting and painting performance.
 
@@ -119,7 +119,7 @@ Some interesting features are:
 [Learn more about the Performance tool.](./f12-devtools-guide/performance.md)
 
 ## The Memory tool (CTRL+6)
-![Edge Memory Tool](./f12-devtools-guide/media/Edge_Memory.png)
+![Microsoft Edge Memory Tool](./f12-devtools-guide/media/Edge_Memory.png)
 
 When a webpage starts out fast and slows down after you use it for a while, the culprit is usually a memory leak. The [Memory tool](./f12-devtools-guide/memory.md) tracks the memory use of your webpage, helping you identify where memory use is growing, why it's growing, and how to fix it.
 
@@ -138,7 +138,7 @@ Some interesting features are:
 [Learn more about the Memory tool.](./f12-devtools-guide/memory.md)
 
 ## The Emulation tool (CTRL+7)
-![Edge Emulation Tool](./f12-devtools-guide/media/Edge_Emulation.png)
+![Microsoft Edge Emulation Tool](./f12-devtools-guide/media/Edge_Emulation.png)
 
 The [Emulation tool](./f12-devtools-guide/emulation.md) helps you test how your webpages run on different screen sizes and hardware features, and how they respond to different user agent strings.
 

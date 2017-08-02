@@ -13,9 +13,9 @@ keywords: edge, web development, html, css, javascript, developer, extensions
 
 Extensions are small programs that can be used to add new features to Microsoft Edge or modify the existing functionality. Extensions are intended to improve a user’s day-to-day browsing experience by providing niche functionality that is important to targeted audiences.
 
-Microsoft Edge supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Edge with minimal changes.
+Microsoft Edge supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes.
 
-To get a an overview of the end to end journey of creating an Edge extension from development to publishing, check out the [Getting started guide](./extensions/getting-started.md)!
+To get a an overview of the end to end journey of creating a Microsoft Edge extension from development to publishing, check out the [Getting started guide](./extensions/getting-started.md)!
 
 
 ## Popular articles
@@ -23,7 +23,7 @@ To get a an overview of the end to end journey of creating an Edge extension fro
 <table>
   <tr>
     <td><a href = "./extensions/api-support/extension-api-roadmap.md">Extension API roadmap</a></td>
-    <td>Check out what APIs are supported/in development for Windows 10 Insider Preview and publicly released builds of Edge.</td>
+    <td>Check out what APIs are supported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.</td>
  
   </tr>
   <tr>
@@ -43,7 +43,7 @@ To get a an overview of the end to end journey of creating an Edge extension fro
   </tr>
   <tr>
     <td><a href = "./extensions/guides/porting-chrome-extensions.md">Porting Chrome extensions</a></td>
-    <td>Created a Chrome extension you'd like to see on Edge? See how to port it with the Microsoft Edge Extension Toolkit.</td>
+    <td>Created a Chrome extension you'd like to see on Microsoft Edge? See how to port it with the Microsoft Edge Extension Toolkit.</td>
 
   </tr>
 </table>
