@@ -61,7 +61,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Edge API catalog</h3>
+                        <h3>Microsoft Edge API catalog</h3>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_deploy.svg" alt="IT Pro Edge Deploy icon" />
+                            <img src="/media/common/i_deploy.svg" alt="IT Pro Microsoft Edge Deploy icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -136,7 +136,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                         <h3>Resources</h3>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/changelog/">Changelog</a></p>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/status/">Platform feature status</a></p>
-                        <p><a href="/microsoft-edge/deploy">Edge for IT pros</a></p>
+                        <p><a href="/microsoft-edge/deploy">Microsoft Edge for IT pros</a></p>
                         <p><a href="https://msdn.microsoft.com/library/hh772401(v=vs.85).aspx">MSDN documentation for IE</a></p>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/testdrive/">TestDrive demos</a></p>
                         </div>

@@ -1,5 +1,5 @@
 ---
-description: Learn about the various design aspects and UI behavior to consider when creating Edge extensions.
+description: Learn about the various design aspects and UI behavior to consider when creating Microsoft Edge extensions.
 title: Extensions - Design
 author: abbycar
 ms.author: abigailc
@@ -15,7 +15,7 @@ The following page contains various design aspects and UI behavior to consider w
 
 ## Icons
 
-It's recommended that you make the icons of your extension using a vector graphic. You'll need a few different sizes of your icon for your extension, and three additional sizes if you want to package your extension. Edge extensions don't support .svg icons.
+It's recommended that you make the icons of your extension using a vector graphic. You'll need a few different sizes of your icon for your extension, and three additional sizes if you want to package your extension. Microsoft Edge extensions don't support .svg icons.
 
 Before you create your extension icons, we recommend that you review the [accessibility](./accessibility.md) guide to ensure that your icons have high enough contrast and are visible in both the light and dark themes of Microsoft Edge.
 

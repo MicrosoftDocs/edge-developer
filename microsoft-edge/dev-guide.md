@@ -64,23 +64,23 @@ For more info, see [Introducing WebRTC 1.0 and interoperable real-time communica
 
 #### WebVR
 
-Microsoft Edge now has support for [WebVR](https://w3c.github.io/webvr/archive/prerelease/1.1/), an experimental API that connects Windows Mixed Reality head mounted displays and Edge. This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
+Microsoft Edge now has support for [WebVR](https://w3c.github.io/webvr/archive/prerelease/1.1/), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge. This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
 
-Virtual reality in Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](./dev-guide/dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
+Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](./dev-guide/dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
 
 To get a feel for what it looks like to work with the API, here’s some basic code to [render a frame to both eyes](https://w3c.github.io/webvr/archive/prerelease/1.1/#example-471f1826) of a Windows Mixed Reality device.
 
 See the [WebVR API reference](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx) and [Gamepad API reference](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) for details.
 
  > [!NOTE] 
- > Since the WebVR spec is still in development, Edge's implementation may change later down the line.
+ > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.
 
 ### Updated features
 
 #### Content Security Policy (Level 2)
 Sites already using CSP 1 should continue to work with Microsoft Edge support for CSP 2, however it's best to switch any `frame-src` directives that load worker scripts to the new `child-src` directive to future-proof your site. (In CSP 3, `frame-src` will no longer apply to workers.) CSP 2 also adds the following:
 
-1. New directives: `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`. See [Edge supported CSP directives](./dev-guide/security/content-security-policy.md) for more.
+1. New directives: `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`. See [Microsoft Edge supported CSP directives](./dev-guide/security/content-security-policy.md) for more.
 
 2. Workers support: Background worker scripts are governed by their own policy, separate from the policy of the document loading them. As with host documents, you can set the CSP for a worker in the response header. Also new in CSP 2 is that  `allow-scripts` and `allow-same-origin` flags of the `sandbox` directive now affect worker thread creation.
 
@@ -89,10 +89,10 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
 4. CSP violation reporting: A new event, SecurityPolicyViolationEvent is now fired upon CSP violations. The earlier mechanism for CSP reporting, `report-uri`, continues to be supported. Several new fields have been added to the violation reports common to both, including `effectiveDirective` (the policy that was violated), `statusCode` (the HTTP response code), `sourceFile` (the URL of the offending resource), `lineNumber`, and `columnNumber`.
 
 #### Web Authentication
-Edge support for the emerging [Web Authentication API](./dev-guide/device/web-authentication.md) using [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics has been updated with the following changes:
+Microsoft Edge support for the emerging [Web Authentication API](./dev-guide/device/web-authentication.md) using [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics has been updated with the following changes:
 - The initial implementation of the experimental Web Authentication API introduced in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/#TVSCzKDkG4jCI5mt.97) (Windows 10 Anniversary Update, build 10240, 7/2016) was exposed through MS- prefixed APIs (the [MSCredentials](https://msdn.microsoft.com/library/mt697639) interface). While these APIs are still available in EdgeHTML 15, they are now deprecated in favor of the non-prefixed, standards-based APIs and behaviors defined in a more [recent snapshot](http://www.w3.org/TR/2016/WD-webauthn-20160928) of the specification, and are likely to continue changing as the spec matures toward standardization.
 
-- The latest Edge implementation is turned off by default and ships behind a flag (type `about:flags` in your address bar to turn on the feature).
+- The latest Microsoft Edge implementation is turned off by default and ships behind a flag (type `about:flags` in your address bar to turn on the feature).
 
 - Microsoft Edge does not yet support external credentials like USB keys or Bluetooth devices. The current API is limited to embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device.
 

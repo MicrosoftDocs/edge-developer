@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Viewing and editing web storage in the Debugger
 
-Key/value pairs can be saved and retrieved in the Edge browser's web storage in three ways:
+Key/value pairs can be saved and retrieved in the Microsoft Edge browser's web storage in three ways:
 - [Cookies](#cookies)
 - [Session storage](#session-and-local-storage)
 - [Local storage](#session-and-local-storage)

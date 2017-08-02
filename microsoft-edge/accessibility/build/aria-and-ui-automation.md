@@ -1,6 +1,6 @@
 ---
 ms.assetid: ffd1bc60-2ef1-4f11-8156-b63544cede77
-description: Learn how Edge can recognize ARIA info, then expose it to assistive technologies that can then use Microsoft UI Automation APIs.
+description: Learn how Microsoft Edge can recognize ARIA info, then expose it to assistive technologies that can then use Microsoft UI Automation APIs.
 title: Accessibility - ARIA and UI automation
 author: libbymc
 ms.author: libbymc

@@ -1,6 +1,6 @@
 ---
 ms.assetid: b417d1f6-f363-474f-aab3-c8c276dde93a
-description: Find information on current and future APIs and manifest keys for Edge extensions.
+description: Find information on current and future APIs and manifest keys for Microsoft Edge extensions.
 title: Extensions - API support
 author: abbycar
 ms.author: abigailc

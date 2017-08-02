@@ -248,7 +248,7 @@ Microsoft Edge implementation is still early, expect the feature set to continue
 
 [ORTC API is now available in Microsoft Edge](http://go.microsoft.com/fwlink/p/?LinkID=627564)
 
-[SimpleWebRTC: Use Edge's ORTC API and the WebRTC APIs in Chrome and Firefox to make cross-browser conference calls.](http://go.microsoft.com/fwlink/p/?LinkID=629636)
+[SimpleWebRTC: Use Microsoft Edge's ORTC API and the WebRTC APIs in Chrome and Firefox to make cross-browser conference calls.](http://go.microsoft.com/fwlink/p/?LinkID=629636)
 
 [Enabling Seamless Communication Experiences for the Web with Skype, Skype for Business, and Microsoft Edge.](http://go.microsoft.com/fwlink/p/?LinkID=671722)
 
