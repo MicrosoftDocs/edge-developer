@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Registering for a Windows Developer account and reserving names in the Windows Dev Center
 
-The Windows Dev Center dashboard lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/en-us/store/register), and refer to the [opening a developer account documentation](https://developer.microsoft.com/en-us/store/register) for any questions you may have about the sign up process.
+The Windows Dev Center dashboard lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/en-us/store/register), and refer to the [opening a developer account documentation](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for any questions you may have about the sign up process.
 > [!NOTE]
 > You will need a [Microsoft account](https://login.live.com/) to sign up for a developer account.
 
