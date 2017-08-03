@@ -47,7 +47,7 @@ Examples of computed values:
 
   - **Precise calculations / relative to absolute values:** All properties without hardcoded measures, such as calc() expressions, percentages, em or rem units, are shown with the pixel values calculated for them.
 
-    ![Edge Computed Sizes](./media/Edge_DOMExplorer_computedstyles.PNG)
+    ![Microsoft Edge Computed Sizes](./media/Edge_DOMExplorer_computedstyles.PNG)
 
   - **Implied and default values:** The **Computed** styles tab has a **Display user styles only** button ![Display all styles button](./media/F12BlueDOMExplorerDisplayStyles.png).
 
@@ -61,7 +61,7 @@ As you make changes to your properties, **Change Bars** display different colors
 ### Layout
 The **Layout** tab shows a box model diagram for the selected element's positioning with colors matching the highlight around a selected element. You can edit any value in the diagram by clicking it.
 
-![Edge Layout Tab](./media/Edge_DOMExplorer_layout.PNG)
+![Microsoft Edge Layout Tab](./media/Edge_DOMExplorer_layout.PNG)
 
 ### Events
 The **Events** tab shows the element's DOM events or CSS selectors that have handlers assigned to them in JavaScript. The file names can be clicked to show the file in [the Debugger](./debugger.md).

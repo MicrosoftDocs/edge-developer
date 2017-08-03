@@ -10,7 +10,7 @@ keywords: edge, web development, html, css, javascript, developer, extension
 ---
 
 # Adding, moving, and removing extensions for Microsoft Edge
-Edge support for extensions was introduced in the **Windows 10 Anniversary Update**. If you're developing an Edge extension and want to load it up, or if you already have and now want to remove it, check out the steps below.
+Microsoft Edge support for extensions was introduced in the **Windows 10 Anniversary Update**. If you're developing an Microsoft Edge extension and want to load it up, or if you already have and now want to remove it, check out the steps below.
 Also included are details on how to move here your extension icon appears in the browser.
 
 ## Adding an extension

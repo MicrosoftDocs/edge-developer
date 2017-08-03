@@ -1,6 +1,6 @@
 ---
 ms.assetid: b686da21-330c-4a60-83de-a978919668ed
-description: Learn how to change the settings of Edge Developer Tools to fit your scenario.
+description: Learn how to change the settings of Microsoft Edge Developer Tools to fit your scenario.
 title: F12 devtools guide - Settings
 author: erikadoyle
 ms.author: edoyle
@@ -10,7 +10,7 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Settings for the Edge Developer Tools
+# Settings for the Microsoft Edge Developer Tools
 
 ## about:flags
 
@@ -24,4 +24,4 @@ Type 'about:flags' into the address bar in Microsoft Edge to open the Developer 
 - Open the Microsoft Edge F12 developer tools by pressing the F12 key or from the more (`...`) menu.
 - Change the Developer Settings by visiting about:flags and checking `Show "View Source" and "Inspect Element" in the context menu`, as illustrated below.
 
-![Edge developer tool settings in about:flags](./media/Edge_Settings_F12AboutFlags.png)
+![Microsoft Edge developer tool settings in about:flags](./media/Edge_Settings_F12AboutFlags.png)

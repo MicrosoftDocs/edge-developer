@@ -1,6 +1,6 @@
 ---
 ms.assetid: b40e36a9-0e17-4561-819c-8ec51e5229a1
-description: Learn how to create an Edge extension with some helpful tutorials and videos!
+description: Learn how to create a Microsoft Edge extension with some helpful tutorials and videos!
 title: Extensions - Creating an extension
 author: abbycar
 ms.author: abigailc
@@ -22,7 +22,7 @@ If you'd prefer a video walkthrough of creating a Microsoft Edge extension, chec
 
 
 ## Icon differences
-In Microsoft Edge, preferred extension icon sizes are 20px, 25px, 30px, 40px. Other supported sizes are 19px, 35px, 38px. These icon sizes are ideal for Edge's frame. Other sizes will be scaled which may cause issues. In the following MDN tutorials, different icon sizes are used and should be swapped out with preferred/supported icon sizes.
+In Microsoft Edge, preferred extension icon sizes are 20px, 25px, 30px, 40px. Other supported sizes are 19px, 35px, 38px. These icon sizes are ideal for Microsoft Edge's frame. Other sizes will be scaled which may cause issues. In the following MDN tutorials, different icon sizes are used and should be swapped out with preferred/supported icon sizes.
 
 For more info on icon sizes and best practices, see the [Design](./design.md) guide.
 
@@ -131,7 +131,7 @@ You should end up with a manifest.json file that looks similar to this:
 **JavaScript**
 
 
-Since Edge doesn't support `browser.tabs.reload()`, you'll need to swap out the `else if (e.target.classList.contains("clear)) {...}` block of **choose_beast.js** with the following code. This will find the current active tab in Edge and "reset" it using `window.location.reload()`:
+Since Microsoft Edge doesn't support `browser.tabs.reload()`, you'll need to swap out the `else if (e.target.classList.contains("clear)) {...}` block of **choose_beast.js** with the following code. This will find the current active tab in Microsoft Edge and "reset" it using `window.location.reload()`:
 
 ```javascript
   else if (e.target.classList.contains("clear")) {

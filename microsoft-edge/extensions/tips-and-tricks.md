@@ -1,5 +1,5 @@
 ---
-description: Learn about some handy tips and tricks regarding Edge extensions
+description: Learn about some handy tips and tricks regarding Microsoft Edge extensions
 title: Extensions - Tips and tricks
 author: abbycar
 ms.author: abigailc
@@ -24,10 +24,10 @@ After logging in to the Windows Dev Center and navigating to your extension thro
 ## Make sure you’re following the Windows Store Policy
 When creating your extension, make sure you keep in mind the guidelines for submitting to the Windows Store highlighted in the [Windows Store Policy](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx). 
  
-Edge extensions also have an additional set of policies to follow seen [here](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).
+Microsoft Edge extensions also have an additional set of policies to follow seen [here](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).
 
 ## Improve your extension’s discoverability in the Windows Store
-You can add keywords to your extension submission to imporove its discoverability through searches. For example, "Edge Extensions" and "name of my extension". 
+You can add keywords to your extension submission to imporove its discoverability through searches. For example, "Microsoft Edge Extensions" and "name of my extension". 
 
 This can be be done in the Windows Dev Center under the description section of your extension. These keywords will need to be added for every language your extension supports.
 

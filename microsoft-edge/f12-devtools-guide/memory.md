@@ -28,7 +28,7 @@ If your problem is high memory usage from the start, but not memory growth, take
 
 After you've started profiling and taken some snapshots, you'll see a summary of the session that looks similar to this:
 
-![Edge Memory Tool](./media/Edge_Memory.png)
+![Microsoft Edge Memory Tool](./media/Edge_Memory.png)
 
 When you begin recording a session, the **Total memory** timeline shows the memory use by the current browser tab's processes as a graph over time. 
 
@@ -56,7 +56,7 @@ In the set of snapshots above, it shows that each time we ran the process we sus
 
 Click one of the measurement numbers on a snapshot to see details of that measurement. The image below shows the view when you click on the memory issues number in a snapshot.
 
-![Edge Memory Tool Details](./media/Edge_Memory_details.png)
+![Microsoft Edge Memory Tool Details](./media/Edge_Memory_details.png)
 
 In the view above, you see the **Dominators** view of the snapshot's details, sorted so the issues are displayed first. 
 
@@ -94,7 +94,7 @@ When an object representing a function is displayed in the **Memory** tool, it i
 
 In snapshots where a change in memory use or object count is shown, click the amount of the change to see a comparison between that snapshot and the snapshot before it. 
 
-![Edge Memory Tool Comparison View](./media/Edge_Memory_compare.png)
+![Microsoft Edge Memory Tool Comparison View](./media/Edge_Memory_compare.png)
 
 The comparison view works like the snapshot details view, except:
 

@@ -1,5 +1,5 @@
 ---
-description: Get an end to end overview of the journey from beginning development to packaging of Edge extensions.
+description: Get an end to end overview of the journey from beginning development to packaging of Microsoft Edge extensions.
 title: Extensions - Getting started
 author: abbycar
 ms.author: abigailc
@@ -15,18 +15,18 @@ Whether you're a new developer wanting to familiarize yourself with extensions o
 
 ## Developing an extension
 
-The first step of this journey is to create an Edge extension: 
+The first step of this journey is to create a Microsoft Edge extension: 
 - New to extensions? Check out our [guide on how to create extensions](./guides/creating-an-extension.md) for information on how to build your first browser extension! 
 - Already familiar with extension APIs? Check out our [API support documentation](./api-support.md) for the latest info on which APIs are supported/in development. 
 - Have a Chrome extension that you want to port to Microsoft Edge? Try the [Microsoft Edge Extension Toolkit](./guides/porting-chrome-extensions.md)!
 
 ## Loading and debugging
 
-Once you have an extension that works in Edge, you'll want to side load it to see it in action. The first step to do this is to ensure that you have [extension developer features enabled](./guides/adding-and-removing-extensions.md). This will allow you to side load extension files in Edge so that you can test your extension while developing it. Should you run into any issues, the F12 developer tools allow you to [debug the various contexts of your extension](./guides/debugging-extensions.md) to determine exactly what's going on. Still running into issues? Our [troubleshooting guide](./troubleshooting.md) has solutions to several common gotchas. 
+Once you have an extension that works in Microsoft Edge, you'll want to side load it to see it in action. The first step to do this is to ensure that you have [extension developer features enabled](./guides/adding-and-removing-extensions.md). This will allow you to side load extension files in Microsoft Edge so that you can test your extension while developing it. Should you run into any issues, the F12 developer tools allow you to [debug the various contexts of your extension](./guides/debugging-extensions.md) to determine exactly what's going on. Still running into issues? Our [troubleshooting guide](./troubleshooting.md) has solutions to several common gotchas. 
 
 ## Reporting bugs and getting help
 
-Think you've found a bug in our extensions platform? If the issue is specific to Edge, please search for it on our [Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) to see if it's already been reported. If it has, great! You can press the "+ Me too" button to upvote the bug and the "Watch this issue for updates" button to be alerted to any changes on the issue. If you can't find the issue you're running into, feel free to open a new issue and provide as much information as possible so our developers can look into it. 
+Think you've found a bug in our extensions platform? If the issue is specific to Microsoft Edge, please search for it on our [Microsoft Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) to see if it's already been reported. If it has, great! You can press the "+ Me too" button to upvote the bug and the "Watch this issue for updates" button to be alerted to any changes on the issue. If you can't find the issue you're running into, feel free to open a new issue and provide as much information as possible so our developers can look into it. 
 
 Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! 
 
@@ -34,12 +34,12 @@ Do you have a question that you can't find an answer to in the documentation? We
 
 ## Testing your extension
 
-As of the Windows Anniversary Update, [Microsoft WebDriver](../dev-guide/tools/webdriver.md) supports the automated side loading of extensions in Edge sessions. This will allow you to write simple tests to ensure that any extension that is meant to modify a page does so in the expected manner. You can find more info on how to do this in our [testing guide](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Also, stay tuned for updates as we plan to add more extension-specific features to Microsoft WebDriver in the future.
+As of the Windows Anniversary Update, [Microsoft WebDriver](../dev-guide/tools/webdriver.md) supports the automated side loading of extensions in Microsoft Edge sessions. This will allow you to write simple tests to ensure that any extension that is meant to modify a page does so in the expected manner. You can find more info on how to do this in our [testing guide](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Also, stay tuned for updates as we plan to add more extension-specific features to Microsoft WebDriver in the future.
 
 ## Adding the final touches
 
-So your extension works in Edge. What happens next? Before you continue packaging your extension, we strongly recommend you to check out these guides to ensure that your extension is following our best-practice policies: 
-- Make sure your extension icons are [correctly sized](./guides/design.md) and [accessible](./guides/accessibility.md) (meaning they're visible in both light and dark themes of Edge as well as in high contrast mode). 
+So your extension works in Microsoft Edge. What happens next? Before you continue packaging your extension, we strongly recommend you to check out these guides to ensure that your extension is following our best-practice policies: 
+- Make sure your extension icons are [correctly sized](./guides/design.md) and [accessible](./guides/accessibility.md) (meaning they're visible in both light and dark themes of Microsoft Edge as well as in high contrast mode). 
 - If your extension needs to support multiple languages, please make sure you've taken a look over our [internationalization guide](./guides/internationalization.md). 
 
 ## Packaging an extension
@@ -56,7 +56,7 @@ If you're an enterprise customer looking to distribute your packaged extensions 
 Since our extensions platform is still in its infancy, we're purposely managing extension submissions to the Windows Store so that we can focus on delivering a quality experience for our users and developers. That being said, we want to make it as easy as possible for developers to publish their extensions. As a result, we have recently launched a new [extension submission form](http://aka.ms/extension-request) where developers can request permission to submit their extension AppX to the Windows Store.
  
 
-The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Edge extensions section of the Windows Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
+The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Microsoft Edge extensions section of the Windows Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
 
 Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](http://aka.ms/extension-request) in order to request permission to publish to the Windows Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
 
@@ -70,7 +70,7 @@ The process for publishing an extension to the Windows Store (whether it's a bra
 > - Your extension description references "Microsoft Edge" instead of "Edge" (this is a legal requirement) 
 > - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#windows-store-icon) (The Windows Store client does not correctly render images with transparent backgrounds) 
 
-In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Edge. While the Windows Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Windows Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
+In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Microsoft Edge. While the Windows Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Windows Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
 
 The Windows Store also allows you to [control the visibility of your extension](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) in the Windows Store catalog. Some of our partners have taken advantage of this functionality to achieve the following: 
 - Publishing a second beta version of their extension as hidden in the Windows Store.

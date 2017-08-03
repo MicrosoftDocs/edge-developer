@@ -14,10 +14,10 @@ keywords: edge, web development, html, css, javascript, developer
 
 The [**Debugger tool**](../debugger.md) enables you to edit your page styles by enabling CSS files to be accessed in the file picker by clicking the folder icon or pressing CTRL + O.
 
-![Editing CSS files with Edge Debugger](../media/edge_debugger_css.png)
+![Editing CSS files with Microsoft Edge Debugger](../media/edge_debugger_css.png)
 
 Selecting a file allows you to edit directly on the Debugger's text editor. New style changes can be applied via the save button or CTRL + S. 
 
- ![Saving edited CSS files with Edge Debugger](../media/edge_debugger_css_save.png)
+ ![Saving edited CSS files with Microsoft Edge Debugger](../media/edge_debugger_css_save.png)
 
 

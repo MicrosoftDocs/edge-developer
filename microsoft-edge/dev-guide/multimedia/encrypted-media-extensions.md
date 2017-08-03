@@ -39,7 +39,7 @@ In the code below, we feature detect to see if [`requestMediaKeySystemAccess`](h
 
 ``` js
 if (window.navigator.requestMediaKeySystemAccess) {
-	// unprefixed EME (Edge/Chrome)
+	// unprefixed EME (Microsoft Edge/Chrome)
 	videoElement.addEventListener('encrypted', this.getNewKeySession, false);
 }
 else {
