@@ -276,9 +276,9 @@ To create your extension with native messaging in Visual Studio:
 2. [Add `AppService` to your UWP app](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
  - You can optionally [configure `AppService` to be hosted in the main app](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) instead of as a background task at this point.
 3. Build and test your UWP project.
- - You can optionally add a [Desktop Bridge component](#desktop-bridge-component).
+ - You can optionally add a [Desktop Bridge component](#adding-a-desktop-bridge-component).
 4. Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app. The extension files can be added into a folder named `Extension` in the UWP project. All of the files underneath this folder, including subfolders, need to have their properties configured such that `Build Action=Content` and `Copy to Output Directory=Copy Always`. Make sure `manifest.json` is also configured with these properties.
-5. Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app:
+5. Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app by adding `AppListEntry="none"`:
 ```xml
 <Package
 xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
@@ -314,7 +314,7 @@ xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
 </Application>
 ```
 6. Use the `AppService` name configured for the UWP in the native messaging APIs.
-7. Build and deploy the UWP project (with the optional Desktop Bridge component)
+7. Build and deploy the UWP project (with the optional Desktop Bridge component).
 
 
  
@@ -325,7 +325,7 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
 
 2. Set the Win32 project as a dependent project for the UWP project:
 
-![setting up project dependencies](./../media/project-dependencies.png)
+![setting up project dependencies](./../media/project-dependencies.PNG)
 
 3. Create a `Win32` folder within the UWP project. Copy the necessary binaries for the `Win32` project to this folder. Configure the properties of all the binaries such that `Build Action=Content` and `Copy to Output Directory=Copy Always`.
 
@@ -360,7 +360,7 @@ Once the solution is correctly deployed, you should see your extension in Micros
 
 ## Packaging
 You can generate a Store package for submission to DevCenter using the built-in Visual Studio functionality:
-![Creating Store package](../media/create-store-package.png)
+![Creating Store package](../media/create-store-package.PNG)
 
 ## Debugging
 The instructions for debugging vary depending on which component you want to test out:
