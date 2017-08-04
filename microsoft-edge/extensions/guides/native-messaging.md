@@ -314,8 +314,11 @@ xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
 </Application>
 ```
 6. Use the `AppService` name configured for the UWP in the native messaging APIs.
-7. Build and deploy the UWP project (with the optional Desktop Bridge component).
+7. Build and [deploy](#deploying) the UWP project (with the optional Desktop Bridge component).
+8. [Package](#packaging) your native messaging extension once it's ready for Store submission
 
+> [!NOTE]
+> Reference the [Demos](#demos) section for an example of a complete native messaging extension.
 
  
 ## Adding a Desktop Bridge component 
@@ -324,12 +327,12 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
 1. Add the Win32 project to the same solution as the UWP project. 
 
 2. Set the Win32 project as a dependent project for the UWP project:
-
-![setting up project dependencies](./../media/project-dependencies.PNG)
+	
+	![setting up project dependencies](./../media/project-dependencies.PNG)
 
 3. Create a `Win32` folder within the UWP project. Copy the necessary binaries for the `Win32` project to this folder. Configure the properties of all the binaries such that `Build Action=Content` and `Copy to Output Directory=Copy Always`.
-
-![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
+	
+	![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
 
 4. Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder everytime the solution is rebuilt.
  ```xml
@@ -359,7 +362,14 @@ Once the solution is correctly deployed, you should see your extension in Micros
 ![extension showing in Microsoft Edge](../media/secureextension.png)
 
 ## Packaging
-You can generate a Store package for submission to DevCenter using the built-in Visual Studio functionality:
+
+> [!NOTE]
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
+
+
+You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:
+
+
 ![Creating Store package](../media/create-store-package.PNG)
 
 ## Debugging
