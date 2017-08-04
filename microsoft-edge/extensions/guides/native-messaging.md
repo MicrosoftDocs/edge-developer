@@ -279,40 +279,42 @@ To create your extension with native messaging in Visual Studio:
  - You can optionally add a [Desktop Bridge component](#adding-a-desktop-bridge-component).
 4. Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app. The extension files can be added into a folder named `Extension` in the UWP project. All of the files underneath this folder, including subfolders, need to have their properties configured such that `Build Action=Content` and `Copy to Output Directory=Copy Always`. Make sure `manifest.json` is also configured with these properties.
 5. Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app by adding `AppListEntry="none"`:
-```xml
-<Package
-xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
-xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" 
-xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
-xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
-xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-IgnorableNamespaces="uap uap3 mp rescap build" 
-xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
- 
-<Dependencies>
-	<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.15063.0" MaxVersionTested="10.0.15063.0" />
-</Dependencies>
- 
-   <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NativeMessagingHostInProcess.App">
-      <uap:VisualElements AppListEntry="none"
-		DisplayName="SecureInput"
-		Square150x150Logo="Assets\Square150x150Logo.png"
-		Square44x44Logo="Assets\Square44x44Logo.png"
-		Description="NativeMessagingHostInProcess"
-		BackgroundColor="transparent">
-      </uap:VisualElements>
-      <Extensions>
-		<uap3:Extension Category="windows.appExtension">
-			<uap3:AppExtension
-				Name="com.microsoft.edge.extension"
-				Id="EdgeExtension"
-				PublicFolder="Extension"
-				DisplayName="ms-resource:DisplayName">
-			</uap3:AppExtension>
-		</uap3:Extension>
-      </Extensions>
-</Application>
-```
+
+
+	```xml
+	<Package
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
+	xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" 
+	xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
+	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+	xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+	IgnorableNamespaces="uap uap3 mp rescap build" 
+	xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.15063.0" MaxVersionTested="10.0.15063.0" />
+	</Dependencies>
+
+	   <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NativeMessagingHostInProcess.App">
+	      <uap:VisualElements AppListEntry="none"
+			DisplayName="SecureInput"
+			Square150x150Logo="Assets\Square150x150Logo.png"
+			Square44x44Logo="Assets\Square44x44Logo.png"
+			Description="NativeMessagingHostInProcess"
+			BackgroundColor="transparent">
+	      </uap:VisualElements>
+	      <Extensions>
+			<uap3:Extension Category="windows.appExtension">
+				<uap3:AppExtension
+					Name="com.microsoft.edge.extension"
+					Id="EdgeExtension"
+					PublicFolder="Extension"
+					DisplayName="ms-resource:DisplayName">
+				</uap3:AppExtension>
+			</uap3:Extension>
+	      </Extensions>
+	</Application>
+	```
 6. Use the `AppService` name configured for the UWP in the native messaging APIs.
 7. Build and [deploy](#deploying) the UWP project (with the optional Desktop Bridge component).
 8. [Package](#packaging) your native messaging extension once it's ready for Store submission
