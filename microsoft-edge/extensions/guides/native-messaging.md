@@ -267,7 +267,7 @@ The memory allocated to an app service is taken out of the quota allocated to Mi
 
 ## Creating an extension with native messaging
 
-In order to test native messaging, your extension needs a Package Family Name. Microsoft Edge uses this to determine the native message host identity, which means your extension should be packaged. See the [Packaging guide](./packaging.md) for info on how to do this.
+In order to test native messaging, your extension needs a Package Family Name. Microsoft Edge uses this to determine the native message host identity, which means your extension should be packaged. 
 
 
 To create your extension with native messaging in Visual Studio:
@@ -276,124 +276,105 @@ To create your extension with native messaging in Visual Studio:
 2. [Add `AppService` to your UWP app](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
  - You can optionally [configure `AppService` to be hosted in the main app](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) instead of as a background task at this point.
 3. Build and test your UWP project.
- - You can optionally add a [Desktop Bridge component](#desktop-bridge-component).
-4. Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app.
-5. Use the `AppService` name configured for the UWP in the native messaging APIs.
-6. Deploy the UWP project (with the optional Desktop Bridge component)
-7. Go to the UWP deployment folder. This is usually at `ProjectFolder\bin\x86\Release\AppX`.
-8. Create an Extension folder.
-9. Copy all your extension files into the Extension folder.
-10. Modify the `AppXManifest` file in the AppX folder to include extension metadata and convert it to a headless app:
+ - You can optionally add a [Desktop Bridge component](#adding-a-desktop-bridge-component).
+4. Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app. The extension files can be added into a folder named `Extension` in the UWP project. All of the files underneath this folder, including subfolders, need to have their properties configured such that `Build Action=Content` and `Copy to Output Directory=Copy Always`. Make sure `manifest.json` is also configured with these properties.
+5. Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app by adding `AppListEntry="none"`:
 
-```xml
-<Package
-xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
-xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" 
-xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
-xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
-xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-IgnorableNamespaces="uap uap3 mp rescap build" 
-xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
- 
-<Dependencies>
-	<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.15002.0" MaxVersionTested="10.0.15002.0" />
-</Dependencies>
- 
-   <Application Id="App" Executable="MessagingHost1.exe"
-	EntryPoint="MessagingHost1.App">
-      <uap:VisualElements AppListEntry="none" DisplayName="MessagingHost1"
-	Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MessagingHost1" BackgroundColor="transparent">
-      </uap:VisualElements>
-      <Extensions>
-		<uap3:Extension Category="windows.appExtension">
-			<uap3:AppExtension
-				Name="com.microsoft.edge.extension"
-				Id="EdgeExtension"
-				PublicFolder="Extension"
-				DisplayName="ms-resource:DisplayName">
-			</uap3:AppExtension>
-		</uap3:Extension>
-      </Extensions>
-</Application>
-```
+    ```xml
+    <Package
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
+	xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" 
+	xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
+	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+	xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+	IgnorableNamespaces="uap uap3 mp rescap build" 
+	xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.15063.0" MaxVersionTested="10.0.15063.0" />
+	</Dependencies>
+
+	   <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NativeMessagingHostInProcess.App">
+	      <uap:VisualElements AppListEntry="none"
+			DisplayName="SecureInput"
+			Square150x150Logo="Assets\Square150x150Logo.png"
+			Square44x44Logo="Assets\Square44x44Logo.png"
+			Description="NativeMessagingHostInProcess"
+			BackgroundColor="transparent">
+	      </uap:VisualElements>
+	      <Extensions>
+			<uap3:Extension Category="windows.appExtension">
+				<uap3:AppExtension
+					Name="com.microsoft.edge.extension"
+					Id="EdgeExtension"
+					PublicFolder="Extension"
+					DisplayName="ms-resource:DisplayName">
+				</uap3:AppExtension>
+			</uap3:Extension>
+	      </Extensions>
+	</Application>
+    ```
+    
+6. Use the `AppService` name configured for the UWP in the native messaging APIs.
+7. Build and [deploy](#deploying) the UWP project (with the optional Desktop Bridge component).
+8. [Package](#packaging) your native messaging extension once it's ready for Store submission
+
+> [!NOTE]
+> Reference the [Demos](#demos) section for an example of a complete native messaging extension.
+
  
 ## Adding a Desktop Bridge component 
 If you want to add a Desktop Bridge component to your package, you'll need to create and build your Win32 project in Visual Studio. For info on how to convert your win32 app to UWP, see [Porting apps to Windows 10 via Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root). Once built in Visual Studio, you can add the Win32 executable to the package by doing the following steps:
 
-1. Add the Win32 executable and UWP app to the folder where all the other components are laid out:
+1. Add the Win32 project to the same solution as the UWP project. 
 
- ![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
+2. Set the Win32 project as a dependent project for the UWP project:
+	
+	![setting up project dependencies](./../media/project-dependencies.PNG)
 
-2. Modify appxmanifest.xml by adding the &lt;desktop:Extension&gt; element to the &lt;Extensions&gt; element:
+3. Create a `Win32` folder within the UWP project. Copy the necessary binaries for the `Win32` project to this folder. Configure the properties of all the binaries such that `Build Action=Content` and `Copy to Output Directory=Copy Always`.
+	
+	![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
 
-```xml
-<Extensions>
-	<desktop:Extension Category="windows.fullTrustProcess"Executable="Centennial(Win32).exe"
+4. Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder everytime the solution is rebuilt.
+
+    ```xml
+    <Target Name="AfterBuild">
+	<Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.exe" DestinationFolder="win32" />
+	<Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.exe.config" DestinationFolder="win32" />
+	<Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.pdb" DestinationFolder="win32" />
+    </Target>
+    ```
+
+  
+6. Modify `package.manifest.xml` by adding the `<desktop:Extension>` element to the `<Extensions>` element:
+
+    ```xml
+    <Extensions>
+	<desktop:Extension Category="windows.fullTrustProcess"Executable="Win32\PasswordInputProtection.exe"
 	xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" />
-</Extensions>
-```
-
+    </Extensions>
+    ```
 
 ## Deploying
+Once you have configured your UWP project (and optionally Win32 project) as outlined above, you are ready to deploy the solution using Visual Studio.
 
-The goal of the deployment is to set up an `AppX` folder with all the necessary files, which will include:
-
--	`Extension` folder
--	`AppXManifest.xml` (with the right properties for extension)
--	UWP binaries (exe, dlls) and visual assets (Assets and Properties folders)
--	Desktop Bridge binaries (exe, dlls) if you added a Desktop Bridge component
-
-If your native messaging program consists of only a UWP app component, follow the steps in [UWP app preparation](#uwp-app-preparation). If you have both a UWP app and Desktop Bridge component, you'll need to follow [UWP app with Desktop Bridge preparation](#uwp-app-with-desktop-bridge-preparation).
-
-### UWP app preparation
-
-1.	Build and deploy the UWP app.
-
-	![build inprocess project](../media/native-message-uwp-debug.PNG)
-
-	This will generate:
-	-	Necessary binaries and files needed for the UWP app.
-	-	The `AppX` folder.
-	-	The `AppXManifest.xml` based on the content of `package.manifest`. (The content of `package.manifest` in this sample has been edited to include the necessary entries for Microsoft Edge extensions).
-
-2. Copy the `Extension` folder to the created `AppX` folder.
-
-### UWP app with Desktop Bridge preparation
-
-1.	Build and deploy the UWP app.
-
-	![build inprocess project](../media/native-message-uwp-debug.PNG)
-2. Build your Desktop Bridge component
-
-   ![build desktop bridge](../media/native-message-desktop-debug.PNG)
-
-	This will:
-	-	Build the binaries for this project
-	-	Trigger any specified post-build events.</br>
-
-3. Tweak the example script below to include your files and add it to the Build Events section of your Desktop Bridge's Properties. This will copy the output of the exe to the `AppX` folder and copy the `Extension` folder to the `AppX` folder:
-	```
-	xcopy /y /s "$(SolutionDir)MyDesktopBridge\bin\$(ConfigurationName)\MyDesktopBridge.exe" "$(SolutionDir)\MyUWPApp\bin\x64\$(ConfigurationName)\AppX\"
-	xcopy /y /s "$(SolutionDir)MyDesktopBridge\bin\$(ConfigurationName)\MyDesktopBridge.exe" "$(SolutionDir)\MyUWPApp\bin\x86\$(ConfigurationName)\AppX\"
-	xcopy /y /s "$(SolutionDir)Extension" "$(SolutionDir)\MyUWPApp\bin\x64\$(ConfigurationName)\AppX\Extension\"
-	xcopy /y /s "$(SolutionDir)Extension" "$(SolutionDir)\MyUWPApp\bin\x86\$(ConfigurationName)\AppX\Extension\"    
-	```
-
-
-### Final steps
-Now that the files are ready to go, you will need to register the AppX. There are two ways to accomplish this:
-
--	Run `Add-AppxPackage` from PowerShell:
-`Add-AppxPackage -register [Path to AppX folder]\AppxManifest.xml`
-
-	or
-
--	Deploy the UWP app project. Visual Studio will run the same PowerShell script to register the AppX from the folder.
+![build inprocess project](../media/native-message-uwp-debug.PNG)
 
 Once the solution is correctly deployed, you should see your extension in Microsoft Edge.
 
 ![extension showing in Microsoft Edge](../media/secureextension.png)
 
+## Packaging
+
+> [!NOTE]
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
+
+
+You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:
+
+
+![Creating Store package](../media/create-store-package.PNG)
 
 ## Debugging
 The instructions for debugging vary depending on which component you want to test out:
@@ -419,6 +400,3 @@ Even though there are various [methods for debugging a Desktop Bridge](https://m
 
 
 
-## Packaging and testing your extension
-
-See the [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) guide for info on how to test and deploy your packaged extension.

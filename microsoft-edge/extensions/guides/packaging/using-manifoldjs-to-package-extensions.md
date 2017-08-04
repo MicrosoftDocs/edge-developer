@@ -14,6 +14,8 @@ keywords: edge, web development, html, css, javascript, developer
 
 ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Windows Store.
 
+If you use native messaging in your extension, you should skip this and go to [Native messaging in Microsoft Edge](../native-messaging.md#Creating-an-extension-with-native-messaging) for packaging instruction. 
+
 Before getting started, you will still need to read up on the following articles:
 
 - [Extensions in the Windows Dev Center](./extensions-in-the-windows-dev-center.md)
