@@ -114,7 +114,7 @@ function sj_ce(n, t, i) {
 }
 ```
 
-  - **Word wrap** breakslong lines to fit them within the script pane so you don't have to scroll horizontally to see the full line.
+  - **Word wrap** breaks long lines to fit them within the script pane so you don't have to scroll horizontally to see the full line.
 
 ### Source maps
 When you've written code in a language that compiles to JavaScript or CSS and/or you've used a compressor, the code running in the browser is very different from the code you wrote. That can make debugging very difficult. Even compressed code that's been made more readable with **Pretty print** may have function, selector, and variable names that are much different than in your original source code. Debugging is much easier when errors point to where the issues are in your original source code, rather than a highly modified file running in the browser.
