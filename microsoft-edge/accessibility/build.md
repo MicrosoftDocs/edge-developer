@@ -80,7 +80,7 @@ Practical ARIA examples to enhance your application accessibility
 #### [OpenAjax Examples](http://oaa-accessibility.org/)
 The OpenAjax Alliance website is an excellent resource for verifying the rules for WAI-ARIA and provides a number of examples of WAI-ARIA implementations.
 
-#### [Patterns](http://a11yproject.com/patterns/)
+#### [Patterns](http://a11yproject.com/patterns.html)
 [The A11Y Project](http://a11yproject.com/) offers a library of accessible widgets and patterns like menus, buttons, tooltips, and more.
 
 ### Accessibility Techniques & Tools
