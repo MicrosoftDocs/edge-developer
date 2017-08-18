@@ -10,7 +10,7 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Microsoft browser extension policy
+# Microsoft browser extension policy  
 This document describes the supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer, or the content displayed by these browsers. Any technique not explicitly listed in this document is considered **unsupported**.
 
 These supported extension mechanisms are designed to ensure that users are able to customize and extend their browser with software of their choice, while maintaining safe and uninterrupted use of their browser and PC.
@@ -67,8 +67,7 @@ Software must respect a user’s ability to enable or disable any browser extens
 
 Toolbars must provide users with a close icon to permanently disable the toolbar. Toolbars must also provide an entry in the Add or Remove Programs dialog within Windows.
 
-> [!NOTE]
-> The requirements of this section do not apply to modifications to Internet Explorer that are approved by a system administrator on a device under the control of an organization.
+**Note -** The requirements of this section do not apply to modifications to Internet Explorer that are approved by a system administrator on a device under the control of an organization.
 
 ### Capabilities and Execution
 
