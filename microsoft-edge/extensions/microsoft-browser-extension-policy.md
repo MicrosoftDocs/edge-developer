@@ -11,7 +11,6 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 
 # Microsoft browser extension policy
-
 This document describes the supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer, or the content displayed by these browsers. Any technique not explicitly listed in this document is considered **unsupported**.
 
 These supported extension mechanisms are designed to ensure that users are able to customize and extend their browser with software of their choice, while maintaining safe and uninterrupted use of their browser and PC.
