@@ -10,8 +10,7 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Microsoft browser extension policy
-
+# Microsoft browser extension policy  
 This document describes the supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer, or the content displayed by these browsers. Any technique not explicitly listed in this document is considered **unsupported**.
 
 These supported extension mechanisms are designed to ensure that users are able to customize and extend their browser with software of their choice, while maintaining safe and uninterrupted use of their browser and PC.
@@ -46,6 +45,8 @@ Microsoft Edge uses the registry and other local or cloud storage mechanisms to 
 
 Software may not make any direct or indirect changes to any of these settings for any reason. All changes to settings must be initiated by the user via the Microsoft Edge user experience. Software may not influence or guide user’s choices via overlays or other user experience modification, or provide alternate consent experiences.
 
+Microsoft supports Group Policy and MDM Policy to customize specific behavior of Microsoft Edge on devices that are under the control of an organization. These policies may only be configured by an administrator of the organization. Software that uses these policies in other contexts may be subject to being blocked or removed by anti-malware software.
+
 ### Network traffic modification
 
 Some software modifies the content shown in browsers and other apps by modifying the network traffic, via various mechanisms including, but not limited to, Proxy installation or DNS changes.
@@ -66,12 +67,19 @@ Software must respect a user’s ability to enable or disable any browser extens
 
 Toolbars must provide users with a close icon to permanently disable the toolbar. Toolbars must also provide an entry in the Add or Remove Programs dialog within Windows.
 
+**Note -** The requirements of this section do not apply to modifications to Internet Explorer that are approved by a system administrator on a device under the control of an organization.
+
 ### Capabilities and Execution
 
 Extensions must only use supported Internet Explorer and Windows APIs.  
 
-Extensions must not programmatically alter or limit access to browser features including but not limited to: the address bar, homepage, search box, new tab page, or favorites.
+Software (e.g. extensions) must not programmatically alter or limit access to browser features including but not limited to: the address bar, homepage, search box, new tab page, or favorites.
 
 Network-based (e.g. DNS or Proxy) traffic modification must only be used for the purposes of Virtual Private Networks or filtering web content (e.g. the removal of advertising, unsafe, or objectionable content).
 
 Starting with Internet Explorer 11, extensions must be compatible with Enhanced Protected Mode (EPM). Software must not lower Internet Explorer security settings.
+
+#### Change Log 
+- April 2016: Document Published
+- October 2016: Updated for publishing Microsoft Edge extensions to Windows Store 
+- August 2017: Clarification for managed devices
