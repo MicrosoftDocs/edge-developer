@@ -15,7 +15,13 @@ keywords: edge, web development, f12 developer tools
 > **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/)**:
 > We partnered with BrowserStack to provide free live and automated testing on Microsoft Edge.
 
-Browser tooling has come a long way since the days of Internet Explorer! The F12 Developer Tools in Microsoft Edge are built with [TypeScript](http://www.typescriptlang.org/), powered by [Visual Studio](https://www.visualstudio.com/), and optimized for modern front-end workflows. Please add and upvote your tooling requests to our [UserVoice forum](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) to help shape the future of the F12 Developer Tools.
+Browser tooling has come a long way since the days of Internet Explorer! The F12 Developer Tools in Microsoft Edge are built with [TypeScript](http://www.typescriptlang.org/), powered by [Visual Studio](https://www.visualstudio.com/), and optimized for modern front-end workflows. 
+
+Please send us your feedback as you use the tools so we can continue improving them for you. Just click this button:
+
+![Button for sending feedback on F12 Tools](./f12-devtools-guide/media/send_feedback.png)
+
+You can also add and upvote tooling requests to our [UserVoice forum](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) and become a [Windows Insider](https://insider.windows.com/en-us/) to preview the [latest features coming to F12 Tools](./f12-devtools-guide/whats-new.md).
 
 The F12 Developer Tools include:
 
