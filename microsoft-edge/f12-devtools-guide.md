@@ -45,7 +45,7 @@ Clicking on a specific service worker entry will open up the **Service Worker Ov
 Please note the following about service worker debugging:
 
  - Although F12 tools are instantiated on a per-tab basis, service workers can be shared across multiple tabs and thus get their own dedicated debugger instances. 
- - The [Elements](./elements.md) and [Emulation](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
+ - The [Elements](./f12-devtools-guide/elements.md) and [Emulation](./f12-devtools-guide/emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
  - Currently network traffic for a service worker is only reported from the F12 debugging instance for that worker, and not from the central F12 instance for the page itself.
 
 ![Service Worker debugging instance](/f12-devtools-guide/media/debugger_sw_inspect.png)
@@ -103,13 +103,13 @@ We also added these improvments:
  -  Use `SHIFT + ENTER` to add an aditional line to a command before executing it with `ENTER`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
-    - [console.table(*object*)](./f12-devtools-guide/console/console_api.md#organizing-log-output) method
-    - [getEventListeners(*object*)](./f12-devtools-guide/console/command_line.md#event-listeners) command
-    - [keys(*object*)](./f12-devtools-guide/console/command_line.md#object-inspection) command
-    - [values(*object*)](./f12-devtools-guide/console/command_line.md#object-inspection) command
-    - [$x(*xpath expression*)](./f12-devtools-guide/console/command_line.md#dom-selectors) selector
+    - [console.table(*object*)]() method
+    - [getEventListeners(*object*)]() command
+    - [keys(*object*)]() command
+    - [values(*object*)]() command
+    - [$x(*xpath expression*)]() selector
 
- - The [%c](./f12-devtools-guide/console/console_api.md#logging-custom-messages) formatting parameter is now supported
+ - The [%c]() formatting parameter is now supported
 
 ### Debugging improvements
 
