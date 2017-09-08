@@ -116,4 +116,4 @@ Please be aware of the following constraints:
 
 ## Shortcuts
 
-You can now launch F12 Tools with `CTRL+SHIFT+I` and `CTRL+SHIFT+J` just like you would on other popular browsers!
+You can now launch F12 Tools with `CTRL+SHIFT+I` and `CTRL+SHIFT+J` just like you would on other major browsers!
