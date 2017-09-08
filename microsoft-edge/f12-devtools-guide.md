@@ -48,17 +48,17 @@ Please note the following about service worker debugging:
  - The [Elements](./f12-devtools-guide/elements.md) and [Emulation](./f12-devtools-guide/emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
  - Currently network traffic for a service worker is only reported from the F12 debugging instance for that worker, and not from the central F12 instance for the page itself.
 
-![Service Worker debugging instance](/f12-devtools-guide/media/debugger_sw_inspect.png)
+![Service Worker debugging instance](./f12-devtools-guide/media/debugger_sw_inspect.png)
 
 Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
 
-![Cache management pane](/f12-devtools-guide/media/debugger_cache.png)
+![Cache management pane](./f12-devtools-guide/media/debugger_cache.png)
 
 ### Ancestor event listeners 
 
 The **Events** pane now adds the option to view event listeners registered on any ancestor of the currently selected element (in the **Elements** panel), in addition to those on the element itself. Additionally, you can now group the event listener display by either *Event* or *Element*. 
 
-![Event listener inspection pane](/f12-devtools-guide/media/elements_ancestor_events.png)
+![Event listener inspection pane](./f12-devtools-guide/media/elements_ancestor_events.png)
 
 ### DOM mutation breakpoints
 
@@ -70,19 +70,19 @@ You can now set DOM mutation breakpoints to break into the Debugger whenever a s
 
 You can manage your mutation breakpoints from the **DOM breakpoints** pane.
 
-![DOM breakpoints pane](/f12-devtools-guide/media/elements_dom_breakpoints.png)
+![DOM breakpoints pane](./f12-devtools-guide/media/elements_dom_breakpoints.png)
 
 ### CSS at-rule support
 
 CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** tab, including `@keyframes` percentages (currently limited to read-only), `@supports` feature queries, and `@media` queries.
 
-![CSS at-rules inspection from the F12 Style pane](/f12-devtools-guide/media/elements_at_rules.png)
+![CSS at-rules inspection from the F12 Style pane](./f12-devtools-guide/media/elements_at_rules.png)
 
 ### CSS fonts pane
 
 CSS `@font-face` rules now have their own dedicated **Fonts** tab that displays where the font is loaded from (*Local* or *Network*) and how many characters are using it. If a font is laoded from the network, F12 will display the rule that imported it along with its alias and font type.
 
-![CSS font information](/f12-devtools-guide/media/elements_fonts.png)
+![CSS font information](./f12-devtools-guide/media/elements_fonts.png)
 
 ### CSS pseudo-element support
 
@@ -103,13 +103,13 @@ We also added these improvments:
  -  Use `SHIFT + ENTER` to add an aditional line to a command before executing it with `ENTER`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
-    - [console.table(*object*)]() method
-    - [getEventListeners(*object*)]() command
-    - [keys(*object*)]() command
-    - [values(*object*)]() command
-    - [$x(*xpath expression*)]() selector
+    - **console.table(***object***)** method
+    - **getEventListeners(***object***)** command
+    - **keys(***object***)** command
+    - **values(***object***)** command
+    - **$x(***xpath expression***)** selector
 
- - The [%c]() formatting parameter is now supported
+ - The **%c()** formatting parameter is now supported
 
 ### Debugging improvements
 
@@ -123,7 +123,7 @@ Even when a resource, such as a file loaded from CDN, is referenced multiple tim
 
 You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** tab, edit, then click **Save** (or `CTRL+S`) to test your changes next time that section of code runs. Click the **Compare document to original** button to view the diff of what you changed.
 
-![The debugger enables you to live edit script and diff the changes](/f12-devtools-guide/media/debugger_edit_code.png) 
+![The debugger enables you to live edit script and diff the changes](./f12-devtools-guide/media/debugger_edit_code.png) 
 
 Please be aware of the following constraints:
 
