@@ -128,6 +128,7 @@
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [F12 devtools guide](f12-devtools-guide.md)
+### [What's new](f12-devtools-guide/whats-new.md)
 ### [Console](f12-devtools-guide/console.md)
 #### [Console error and status codes](f12-devtools-guide/console/console-error-and-status-codes.md)
 #### [Using the console API](f12-devtools-guide/console/using-the-console-api.md)
