@@ -15,28 +15,6 @@ With this release we started a major F12 Tools refactoring effort for improved r
 
 Here are the latest F12 features coming with the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features) and available now on [Windows Insider Preview](https://insider.windows.com/en-us/) builds.
 
-## Progressive Web App debuggging
-
-Test out the experimental support for Progressive Web Apps (PWAs) in Microsoft Edge and F12 Tools by selecting the **Enable service workers** option from `about:flags` (and restarting Microsoft Edge). If a site makes use of **Service Workers** and/or the **Cache** API, F12 will populate entries in the **Debugger** panel for each origin, similar to how web storage and cookie inspection work:
-
-![F12 Debugger panel with Service Workers and Cache entries](./media/debugger_sw_and_cache.png)
-
-Clicking on a specific service worker entry will open up the **Service Worker Overview**, where you can manage the service worker registration for the given scope and force a test push notification. You can also **Stop**/**Start** individual service workers and **Inspect** them from a separate debugger window:
-
-![Service Worker Overview pane](./media/debugger_sw_overview.png)
-
-Please note the following about service worker debugging:
-
- - Although F12 tools are instantiated on a per-tab basis, service workers can be shared across multiple tabs and thus get their own dedicated debugger instances. 
- - The [Elements](./elements.md) and [Emulation](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
- - Currently network traffic for a service worker is only reported from the F12 debugging instance for that worker, and not from the central F12 instance for the page itself.
-
-![Service Worker debugging instance](./media/debugger_sw_inspect.png)
-
-Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
-
-![Cache management pane](./media/debugger_cache.png)
-
 ## Ancestor event listeners 
 
 The **Events** pane now adds the option to view event listeners registered on any ancestor of the currently selected element (in the **Elements** panel), in addition to those on the element itself. Additionally, you can now group the event listener display by either *Event* or *Element*. 
@@ -51,7 +29,7 @@ You can now set DOM mutation breakpoints to break into the Debugger whenever a s
  - Break on Subtree modified
  - Break on Attribute modified
 
-You can manage your mutation breakpoints from the **DOM breakpoints** pane.
+You can manage your mutation breakpoints from the **DOM breakpoints** pane in the **Elements** or **Debugger** panels.
 
 ![DOM breakpoints pane](./media/elements_dom_breakpoints.png)
 
@@ -70,6 +48,12 @@ CSS `@font-face` rules now have their own dedicated **Fonts** tab that displays 
 ## CSS pseudo-element support
 
 The **Styles** pane now groups pseudo-elements under their own headings and no longer displays their content as crossed out.
+
+**Before:**
+![Generated content was previously crossed out](./media/gc_before.png)
+
+**After:**
+![Generated content longer displayed with a strikethrough](./media/gc_after.png)
 
 ## Console improvements
 
@@ -104,9 +88,13 @@ Even when a resource, such as a file loaded from CDN, is referenced multiple tim
 
 ### Live edit JavaScript with *Edit-on-idle*
 
-You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** tab, edit, then click **Save** (or `CTRL+S`) to test your changes next time that section of code runs. Click the **Compare document to original** button to view the diff of what you changed.
+You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** tab, edit, then click **Save** (or `CTRL+S`) to test your changes next time that section of code runs. 
 
-![The debugger enables you to live edit script and diff the changes](./media/debugger_edit_code.png) 
+![The debugger enables you to live edit script and diff the changes](./media/debugger_edit_buttons.png) 
+
+Click the **Compare document to original** button to view the diff of what you changed.
+
+![Diff view of edited code in the Debugger](./media/debugger_edit_code.png) 
 
 Please be aware of the following constraints:
 
@@ -116,4 +104,26 @@ Please be aware of the following constraints:
 
 ## Shortcuts
 
-You can now launch F12 Tools with `CTRL+SHIFT+I` and `CTRL+SHIFT+J` just like you would on other major browsers!
+You can now launch F12 Tools to the Console (`CTRL+SHIFT+J`) or the Network (`CTRL+SHIFT+I`) just like you would on other major browsers.
+
+## Progressive Web App debuggging
+
+Test out the experimental support for Progressive Web Apps (PWAs) in Microsoft Edge and F12 Tools by selecting the **Enable service workers** option from `about:flags` (and restarting Microsoft Edge). If a site makes use of **Service Workers** and/or the **Cache** API, F12 will populate entries in the **Debugger** panel for each origin, similar to how web storage and cookie inspection work:
+
+![F12 Debugger panel with Service Workers and Cache entries](./media/debugger_sw_and_cache.png)
+
+Clicking on a specific service worker entry will open up the **Service Worker Overview**, where you can manage the service worker registration for the given scope and force a test push notification. You can also **Stop**/**Start** individual service workers and **Inspect** them from a separate debugger window:
+
+![Service Worker Overview pane](./media/debugger_sw_overview.png)
+
+Please note the following about service worker debugging:
+
+ - Debugging a service worker will launch a new instance of the F12 tools separate from the page's F12 tools because service workers can be shared across multiple tabs 
+ - The [Elements](./elements.md) and [Emulation](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
+ - Currently network traffic for a service worker is only reported from the F12 debugging instance for that worker, and not from the central F12 instance for the page itself.
+
+![Service Worker debugging instance](./media/debugger_sw_inspect.png)
+
+Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
+
+![Cache management pane](./media/debugger_cache.png)
