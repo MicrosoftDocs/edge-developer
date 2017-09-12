@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer, microsoft edg
 
 # What's Coming in EdgeHTML 16
 
-Here's a list of the new and updated features coming in EdgeHTML 16.  These features are available in the latest [Windows Insider](https://insider.windows.com/) Preview builds, with general availability in October as part of the [Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/05/11/build-2017-sparking-the-next-wave-of-creativity-with-the-windows-10-fall-creators-update). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/).
+Here's a list of the new and updated features coming in EdgeHTML 16.  These features are available in the latest [Windows Insider](https://insider.windows.com/) Preview builds, with general availability in October as part of the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](../whats-new.md).
  
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16)
 
@@ -32,13 +32,13 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 
 ### F12 Developer Tools
 
-The underlying architecture of F12 Tools was completely refactored for improved robustness and future extensibility. These improvements, plus new F12 Tools features like added functionality for debugging Progressive Web Apps, are available now in [Windows Insider](https://insider.windows.com/) builds.  Check out [Microsoft Edge F12 Developer Tools](./../f12/f12-devtools-guide.md) for more information on what's changed!
+This release we started a major F12 DevTools refactoring effort for improved robustness and future extensibility, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out [Microsoft Edge F12 Developer Tools](../../f12-devtools-guide/whats-new.md) for more on what's changed!
 
-![Motion controllers](./../media/debugger_sw_inspect.PNG)
+![Experimental service worker debugging support in F12 DevTools](../../f12-devtools-guide/media/debugger_sw_inspect.PNG)
 
 ### Payment Request API
 
-The [Payment Request API](https://docs.microsoft.com/microsoft-edge/dev-guide/device/payment-request-api) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
+The [Payment Request API](../dev-guide/device/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
 * Support for the `canMakePayment()` method
 * Support for the `requestId` property
 * Support for the `id` property
@@ -46,7 +46,7 @@ The [Payment Request API](https://docs.microsoft.com/microsoft-edge/dev-guide/de
 
 ### Service Workers
 
-[Service Workers](http://www.w3.org/TR/service-workers-1/) are event-driven scripts that run in the background of a web page. Service workers enable functionality previously only available with native apps like intercepting and handling requests from the network, managing and handling background sync, local storage, and push notifications. Support for service worker is still in development, but you can test out your PWA in Microsoft Edge with the preliminary implementation of service worker by enabling the functionality in **about:flags**.
+[Service Workers](http://www.w3.org/TR/service-workers-1/) are event-driven scripts that run in the background of a web page. Service workers enable functionality previously only available with native apps like intercepting and handling requests from the network, managing and handling background sync, local storage, and push notifications. Support for service worker is still in development, but you can test out your PWA in Microsoft Edge with our experimental service worker support by enabling the service worker feature in **about:flags**.
 
 ### WebVR
 WebVR for Microsoft Edge has added support for [motion controllers](https://developer.microsoft.com/windows/mixed-reality/motion_controllers). These controllers have a precise position in space, allowing for fine grained interaction with digital objects in virtual reality.
@@ -68,7 +68,7 @@ For more info about the upcoming Windows Mixed Reality updates, check out the [W
 Here's the full list of new APIs in EdgeHTML 16. They are listed in the format of **[interface name].[api name]**.
 
 > [!NOTE] 
-> Although the following APIs are exposed in the DOM, the end-to-end behavior of the APIs might still be in development.
+> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
 
 <iframe height='559' scrolling='no' title='New APIs in EdgeHTML 16' src='//codepen.io/MicrosoftEdgeDocumentation/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/jLGZZY/'>New APIs in EdgeHTML 16</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
  
