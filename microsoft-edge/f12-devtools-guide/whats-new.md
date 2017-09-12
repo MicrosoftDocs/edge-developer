@@ -35,13 +35,13 @@ You can manage your mutation breakpoints from the **DOM breakpoints** pane in th
 
 ## CSS at-rule support
 
-CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** tab, including `@keyframes` percentages (currently limited to read-only), `@supports` feature queries, and `@media` queries.
+CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including `@keyframes` percentages (currently limited to read-only), `@supports` feature queries, and `@media` queries.
 
 ![CSS at-rules inspection from the F12 Style pane](./media/elements_at_rules.png)
 
 ## CSS fonts pane
 
-CSS `@font-face` rules now have their own dedicated **Fonts** tab that displays where the font is loaded from (*Local* or *Network*) and how many characters are using it. If a font is laoded from the network, F12 will display the rule that imported it along with its alias and font type.
+CSS `@font-face` rules now have their own dedicated **Fonts** pane that displays where the font is loaded from (*Local* or *Network*) and how many characters are using it. If a font is loaded from the network, F12 will display the rule that imported it along with its alias and font type.
 
 ![CSS font information](./media/elements_fonts.png)
 
@@ -65,9 +65,9 @@ The **Console** panel got a UX overhaul for improved usability and a faster, ric
 **After:**
 ![New F12 Console](./media/console_new.png)
 
-We also added these improvments:
+We also added these improvements:
 
- -  Use `Shift + Enter` to add an aditional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
+ -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
     - **console.table(***object***)** method
@@ -88,7 +88,7 @@ Even when a resource, such as a file loaded from CDN, is referenced multiple tim
 
 ### Live edit JavaScript with *Edit-on-idle*
 
-You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** tab, edit, then click **Save** (or `Ctrl+S`) to test your changes next time that section of code runs. 
+You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** panel, edit, then click **Save** (or `Ctrl+S`) to test your changes next time that section of code runs. 
 
 ![The debugger enables you to live edit script and diff the changes](./media/debugger_edit_buttons.png) 
 
@@ -106,7 +106,7 @@ Please be aware of the following constraints:
 
 You can now launch F12 Tools to the last viewed panel (`Ctrl+Shift+I`) or directly to the Console (`Ctrl+Shift+J`) just like you would on other major browsers.
 
-## Progressive Web App debuggging
+## Progressive Web App debugging
 
 Test out the experimental support for Progressive Web Apps (PWAs) in Microsoft Edge and F12 Tools by selecting the **Enable service workers** option from `about:flags` (and restarting Microsoft Edge). If a site makes use of **Service Workers** and/or the **Cache** API, F12 will populate entries in the **Debugger** panel for each origin, similar to how web storage and cookie inspection work:
 
