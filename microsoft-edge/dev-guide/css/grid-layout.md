@@ -4,7 +4,7 @@ description: Learn how to use CSS Grid Layout to make fluid layouts for your web
 title: Dev guide - Grid layout
 author: libbymc
 ms.author: libbymc
-ms.date: 02/08/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -12,6 +12,8 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Grid layout
 
+> [!NOTE]
+> Microsoft Edge now supports the unprefixed implementation of CSS Grid in [Windows Insider](https://insider.windows.com/) Preview Builds 16237+.
 
 Cascading Style Sheets, Level 3 (CSS3) [Grid Layout](https://msdn.microsoft.com/library/Hh772052) ("the Grid") enables more layout fluidity than is possible with positioning using floats or scripts. You're able to divide space for major regions of a webpage or web application, and define relationships between the parts of an HTML control in terms of size, position, and layer. This removes the need to create a fixed layout, which can't take advantage of available space within the browser window.
 
