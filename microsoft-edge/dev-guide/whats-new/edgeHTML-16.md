@@ -38,7 +38,7 @@ This release we started a major F12 DevTools refactoring effort for improved rob
 
 ### Payment Request API
 
-The [Payment Request API](../dev-guide/device/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
+The [Payment Request API](../device/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
 * Support for the `canMakePayment()` method
 * Support for the `requestId` property
 * Support for the `id` property
