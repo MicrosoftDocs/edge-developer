@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge F12 Developer Tools
 title: F12 Developer Tools
 author: erikadoyle
 ms.author: edoyle
-ms.date: 09/01/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, f12 developer tools
@@ -30,7 +30,7 @@ The Microsoft Edge F12 DevTools include:
  - A [Debugger](./f12-devtools-guide/debugger.md) to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches
  - A [Network](./f12-devtools-guide/network.md) panel to monitor and inspect requests and responses from the network and browser cache 
  - A [Performance](./f12-devtools-guide/performance.md) panel to profile the time and system resources required by your site
- - A [Memory](./f12-devtools-guide/memory.md) panel to meassure your use of memory resources and compare heap snapshots at different states of code execution
+ - A [Memory](./f12-devtools-guide/memory.md) panel to measure your use of memory resources and compare heap snapshots at different states of code execution
  - An [Emulation](./f12-devtools-guide/emulation.md) panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates
 
 ## General Shortcuts
