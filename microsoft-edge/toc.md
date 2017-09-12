@@ -98,6 +98,7 @@
 #### [Console logging API](dev-guide/tools/console-logging-API.md)
 #### [WebDriver](dev-guide/tools/webDriver.md)
 ### [What's New in EdgeHTML](dev-guide/whats-new.md)
+#### [What's Coming in EdgeHTML 16](dev-guide/whats-new/edgeHTML-16.md)
 #### [What's New in EdgeHTML 14](dev-guide/whats-new/edgeHTML-14.md)
 #### [What's New in EdgeHTML 13](dev-guide/whats-new/edgeHTML-13.md)
 #### [What's New in EdgeHTML 12](dev-guide/whats-new/edgeHTML-12.md)
