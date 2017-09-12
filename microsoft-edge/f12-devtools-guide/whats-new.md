@@ -67,7 +67,7 @@ The **Console** panel got a UX overhaul for improved usability and a faster, ric
 
 We also added these improvments:
 
- -  Use `SHIFT + ENTER` to add an aditional line to a command before executing it with `ENTER`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
+ -  Use `Shift + Enter` to add an aditional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
     - **console.table(***object***)** method
@@ -88,7 +88,7 @@ Even when a resource, such as a file loaded from CDN, is referenced multiple tim
 
 ### Live edit JavaScript with *Edit-on-idle*
 
-You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** tab, edit, then click **Save** (or `CTRL+S`) to test your changes next time that section of code runs. 
+You can now edit your JavaScript live during a debugging session. This feature was experimentally available (behind a flag) in the [previous](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (*Windows 10 Creators Update*) release and now its a permanent feature. Simply select any script file from the **Debugger** tab, edit, then click **Save** (or `Ctrl+S`) to test your changes next time that section of code runs. 
 
 ![The debugger enables you to live edit script and diff the changes](./media/debugger_edit_buttons.png) 
 
@@ -104,7 +104,7 @@ Please be aware of the following constraints:
 
 ## Shortcuts
 
-You can now launch F12 Tools to the Console (`CTRL+SHIFT+J`) or the Network (`CTRL+SHIFT+I`) just like you would on other major browsers.
+You can now launch F12 Tools to the last viewed panel (`Ctrl+Shift+I`) or directly to the Console (`Ctrl+Shift+J`) just like you would on other major browsers.
 
 ## Progressive Web App debuggging
 

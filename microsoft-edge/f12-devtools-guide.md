@@ -39,7 +39,7 @@ These shortcuts control the main F12 DevTools window and/or work across all tool
 
 Action | Shortcut
 :------------ | :-------------
-Show/Hide F12 DevTools | F12
+Show/Hide F12 DevTools (opens to last viewed panel) | F12, Ctrl+Shift+I
 Show/hide Console at the bottom of any other tool  | Ctrl+**`**
 Switch to Elements (DOM Explorer) | Ctrl+1
 Switch to Console |  Ctrl+2
