@@ -16,6 +16,7 @@ Here's a list of the new and updated features coming in EdgeHTML 16.  These feat
  
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16)
 
+
 ## New and updated features
 
 ### CSS Grid Layout
@@ -25,6 +26,7 @@ Microsoft Edge now supports the unprefixed implementation of [CSS Grid Layout](h
 
 <iframe height='303' scrolling='no' title='CSS Grid Layout' src='//codepen.io/MicrosoftEdgeDocumentation/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/mMQqZX/'>CSS Grid Layout</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
 
 ### CSS `object-fit` and `object-position`
 
@@ -62,7 +64,10 @@ Both setups will support the same immersive video and gaming experiences.
  
 For more info about the upcoming Windows Mixed Reality updates, check out the [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update/) holiday update blog post. 
 
+For guides and demos, head over to the [WebVR Developer Guide](https://docs.microsoft.com/microsoft-edge/webvr/).
 
+ > [!NOTE] 
+ > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.
 ## New APIs in EdgeHTML 16
 
 Here's the full list of new APIs in EdgeHTML 16. They are listed in the format of **[interface name].[api name]**.
