@@ -6,7 +6,7 @@ ms.author: edoyle
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, f12 developer tools
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
 
 # Coming with the Windows 10 Fall Creators Update
