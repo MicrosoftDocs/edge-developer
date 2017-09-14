@@ -17,7 +17,7 @@ Use the F12 DevTools **Console** for interactive debugging and adhoc testing. It
  - Generating custom debug logs from the [Console API](./console/console_api.md) calls you include in your code
  - Providing a [command line](./console/command_line.md) and interactive tree view for inspecting current return values of key variables and functions
 
-![The F12 DevTools console](./media/console.png)
+![The Microsoft Edge F12 DevTools console](./media/console.png)
 
 1. The **Errors** / **Warnings** / **Info** / **Logs** buttons filter console output by the specified type. You can multi-select them by holding down the `Ctrl` key. The **All** button clears all filters.
 

@@ -15,19 +15,19 @@ The *Emulation* panel helps you to:
  - Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)
  - Test different [geolocation settings and coordinates](#geolocation)
 
-![Sections of the Emulation panel: Device, Mode, Display, and Geolocation](./media/emulation.png)
+![The Microsoft Edge F12 DevTools Emulation panel](./media/emulation.png)
 
-When any of these options are changed from the default, the *Emulation* tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.
+1. The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the F12 DevTools. 
 
-![Emulation mode indicator](./media/emulation_indicator.png)
+2. The **Reset Emulation settings** button will reset your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.
 
-TBD **NOTE** The *Persist Emulation settings* button at the top left-hand corner of the *Emulation* tab is not currently operational. Any settings you change will reset to the defaults upon closing the F12 tools and/or Microsoft Edge.
+3. When any of these options are changed from the default, the **Emulation** tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.
 
-## Device
+## 4. Device
 
 Pick from a preset list of Windows device profiles which  automatically configure the other emulation options or specify your own *Custom* configuation. Switch back to *Default* to reset all the emulation tools.
 
-## Mode
+## 5. Mode
 
 ### Browser profile
 A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to *Windows Phone*.
@@ -42,21 +42,21 @@ The problem with browser detection is that it's often used to scale back or chan
 
 If changing your user agent string clears up the problem, browser detection is likely culprit.
 
-### Display
+## 6. Display
 
 Display emulation lets you preview your site on different screen sizes and resolutions: from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
 
 Emulations are adapted to try and match the physical dimensions of the screens being emulated. Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements. Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.
 
-#### Orientation
+### Orientation
 
 Choose from *Landscape* or *Portrait* mode.
 
-#### Resolution
+### Resolution
 
 Choose from a preset list of popular device resolutions, or specify your own *Custom* config. Resolutions of up to 80 inches and 3820 x 2160 are supported.
 
-## Geolocation
+## 7. Geolocation
 
 If your site uses the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
 
