@@ -53,30 +53,30 @@ The **Styles** pane now groups pseudo-elements under their own headings and no l
 ![Generated content was previously crossed out](./media/gc_before.png)
 
 **After:**
-![Generated content longer displayed with a strikethrough](./media/gc_after.png)
+![Generated content no longer displays with a strikethrough](./media/gc_after.png)
 
 ## Console improvements
 
 The **Console** panel got a UX overhaul for improved usability and a faster, richer Intellisense experience.
 
 **Before:**
-![Previous F12 Console](./media/console_old.png)
+![Previous console](./media/console_old.png)
 
 **After:**
-![New F12 Console](./media/console_new.png)
+![New console](./media/console_new.png)
 
 We also added these improvements:
 
  -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
-    - **console.table(***object***)** method
-    - **getEventListeners(***object***)** command
-    - **keys(***object***)** command
-    - **values(***object***)** command
-    - **$x(***xpath expression***)** selector
+    - [**console.table(***object***)**](./console/console-api.md#organizing-log-output) method
+    - [**getEventListeners(***object***)**](./console/command-line.md#event-listeners) command
+    - [**keys(***object***)**](./console/command-line.md#object-inspection) command
+    - [**values(***object***)**](./console/command-line.md#object-inspection) command
+    - [**$x(***xpath expression***)**](./console/command-line.md#dom-selectors) selector
 
- - The **%c()** formatting parameter is now supported
+ - The [**%c()**](./console/console-api.md#logging-custom-messages) formatting parameter is now supported
 
 ## Debugging improvements
 
