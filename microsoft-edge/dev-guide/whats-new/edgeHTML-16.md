@@ -68,6 +68,7 @@ For guides and demos, head over to the [WebVR Developer Guide](https://docs.micr
 
  > [!NOTE] 
  > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.
+ 
 ## New APIs in EdgeHTML 16
 
 Here's the full list of new APIs in EdgeHTML 16. They are listed in the format of **[interface name].[api name]**.
