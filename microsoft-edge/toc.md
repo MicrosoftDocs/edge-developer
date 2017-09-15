@@ -128,7 +128,7 @@
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
-## [F12 devtools guide](f12-devtools-guide.md)
+## [Microsoft Edge F12 DevTools](f12-devtools-guide.md)
 ### [What's new](f12-devtools-guide/whats-new.md)
 ### [Elements](f12-devtools-guide/elements.md)
 ### [Console](f12-devtools-guide/console.md)
