@@ -22,9 +22,9 @@ The **Elements** panel helps you to:
 * [View your page from a screen reader's point of view](#accessibility) to verify and test accessibility 
 * [Review a running diff of the CSS changes](#changes) you make as you debug the UI of your page
 
-![The Microsoft Edge F12 DevTools Elements panel](./media/elements.png)
-
 ## HTML tree viewer
+
+![The Microsoft Edge F12 DevTools Elements panel](./media/elements.png)
 
 1. Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.
 
