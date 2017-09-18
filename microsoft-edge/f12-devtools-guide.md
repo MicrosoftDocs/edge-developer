@@ -25,7 +25,7 @@ You can also add and upvote tooling requests to our [UserVoice forum](https://wp
 
 The Microsoft Edge F12 DevTools include:
 
- - An [Elements](./f12-devtools-guide/dom-explorer.md) panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints
+ - An [Elements](./f12-devtools-guide/elements.md) panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints
  - A [Console](./f12-devtools-guide/console.md) to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame
  - A [Debugger](./f12-devtools-guide/debugger.md) to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches
  - A [Network](./f12-devtools-guide/network.md) panel to monitor and inspect requests and responses from the network and browser cache 
