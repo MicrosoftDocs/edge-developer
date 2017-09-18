@@ -23,11 +23,11 @@ The *Emulation* panel helps you to:
 
 3. When any of these options are changed from the default, the **Emulation** tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.
 
-## 4. Device
+## Device
 
 Pick from a preset list of Windows device profiles which  automatically configure the other emulation options or specify your own *Custom* configuation. Switch back to *Default* to reset all the emulation tools.
 
-## 5. Mode
+## Mode
 
 ### Browser profile
 A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to *Windows Phone*.
@@ -42,7 +42,7 @@ The problem with browser detection is that it's often used to scale back or chan
 
 If changing your user agent string clears up the problem, browser detection is likely culprit.
 
-## 6. Display
+## Display
 
 Display emulation lets you preview your site on different screen sizes and resolutions: from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
 
@@ -56,7 +56,7 @@ Choose from *Landscape* or *Portrait* mode.
 
 Choose from a preset list of popular device resolutions, or specify your own *Custom* config. Resolutions of up to 80 inches and 3820 x 2160 are supported.
 
-## 7. Geolocation
+## Geolocation
 
 If your site uses the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
 
