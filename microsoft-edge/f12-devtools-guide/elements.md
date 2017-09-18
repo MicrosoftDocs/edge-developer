@@ -32,9 +32,7 @@ The **Elements** panel helps you to:
 
 3. Open the **Color picker** (`Ctrl+K`) tool to see a list of the colors in use on the current page. Clicking on a color on the list will provide further details (Hue, Saturation, Lightness, Alpha). The *Color picker* also opens when you click on the colored square next to a color value in the **Styles** pane, allowing you to edit the color of a page element and immediately see the results.
 
-4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree* pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader. Clicking on a node in the *Accessibility tree* view will also select it in the *HTML tree* view, and vice-versa. Selecting an accessible element from either the *HTML* or *Accessibility* tree views will also populate further accessibility property details in the [**Accessibility**](#accessibility) tool pane. 
-
-![Accessibility tree view](./media/elements_accessibility_tree.png)
+4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](#accessibility) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.
 
 5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching by its tag name, attributes, or text content.
 
@@ -147,6 +145,15 @@ For fonts loaded from the network, F12 DevTools will display the rule that impor
 View the accessible properties assigned to the selected element. Hover over any of the property names for a description of how its used by assistive technologies. You can also right-click any property to copy its value to the clipboard.
 
 ![Accessibility pane](./media/elements_accessibility.png)
+
+Its useful to open the [**Accessibility tree**](#html-tree-viewer) to navigate around your page as a screenreader would, and then use the *Accessiblity* pane to inspect details about accessibility properties of interest.
+
+#### Accessibility tree
+The [Accessibility tree](#accessibility) pane shows the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.
+
+Clicking on a node in the *Accessibility tree* view will also select it in the *HTML tree* view, and vice-versa. Selecting an accessible element from either the *HTML* or *Accessibility* tree views will also populate further accessibility property details in the [**Accessibility**](#accessibility) tool pane. 
+
+![Accessibility tree view](./media/elements_accessibility_tree.png)
 
 Here are further resources on [Accessibility with Microsoft Edge](../accessibility.md).
 
