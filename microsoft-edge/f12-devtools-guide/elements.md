@@ -139,7 +139,7 @@ View information about your CSS `@font-face` rules, including where fonts are be
 
 For fonts loaded from the network, F12 DevTools will display the rule that imported it along with alias and font type.
 
-![Fonts pane](./media/elements_fonts.PNG)
+![Fonts pane](./media/elements_fonts.png)
 
 ### Accessibility
 View the accessible properties assigned to the selected element. Hover over any of the property names for a description of how its used by assistive technologies. You can also right-click any property to copy its value to the clipboard.
