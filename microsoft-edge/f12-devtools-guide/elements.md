@@ -24,6 +24,8 @@ The **Elements** panel helps you to:
 
 ![The Microsoft Edge F12 DevTools Elements panel](./media/elements.png)
 
+## HTML tree viewer
+
 1. Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.
 
 2. Use the **Element higlighting** (Ctrl+Shift+L`) tool to locate an element on the page by hovering over it in the **HTML tree view**.
@@ -36,7 +38,7 @@ The **Elements** panel helps you to:
 
 5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching by its tag name, attributes, or text content.
 
-## Editing elements
+### Editing elements
 
 You can edit an element by right-clicking on it within the HTML tree view and selecting **Edit as HTML** from the context menu. The context menu also provides options to delete, cut, copy, paste, set CSS pseudo-classes (*:active*, *:focus*, *:hover*, *:visited*) and add attributes. Another way to edit an attribute and/or its value is to double-click it from the HTML tree view.
 
