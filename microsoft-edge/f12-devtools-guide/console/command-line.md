@@ -17,7 +17,7 @@ Simply enter any valid JavaScript at the command line prompt and press `Enter` t
 
  - [Selecting DOM objects](#dom-selectors)
  - [Inspecting object properties](#object-inspection)
- - [Finding all the event listners on a given object](#event-listeners)
+ - [Finding all the event listeners on a given object](#event-listeners)
 
 Script entered in the command line executes in the [global scope](https://docs.microsoft.com/en-us/scripting/javascript/advanced/variable-scope-javascript) of the currently selected window, unless the page is paused at a breakpoint. Console commands entered while the page is paused will execute in the [local scope](https://docs.microsoft.com/en-us/scripting/javascript/advanced/variable-scope-javascript) of the current function within the call stack.
 

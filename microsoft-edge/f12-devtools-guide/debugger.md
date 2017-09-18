@@ -10,3 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, debugger
 ---
 
 # Debugger
+
+## DOM breakpoints
+
+![DOM breakpoints](./media/debugger_dom_breakpoints.PNG)
