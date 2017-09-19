@@ -28,7 +28,7 @@ The **Elements** panel helps you to:
 
 1. Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.
 
-2. Use the **Element higlighting** (Ctrl+Shift+L`) tool to locate an element on the page by hovering over it in the **HTML tree view**.
+2. Use the **Element higlighting** (`Ctrl+Shift+L`) tool to locate an element on the page by hovering over it in the **HTML tree view**.
 
 3. Open the **Color picker** (`Ctrl+K`) tool to see a list of the colors in use on the current page. Clicking on a color on the list will provide further details (Hue, Saturation, Lightness, Alpha). The *Color picker* also opens when you click on the colored square next to a color value in the **Styles** pane, allowing you to edit the color of a page element and immediately see the results.
 
