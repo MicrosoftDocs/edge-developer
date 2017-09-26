@@ -24,6 +24,8 @@ Use the **Network** panel to monitor, inspect and profile the requests and respo
 
 When you open F12 DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different F12 DevTools panel than *Network*.
 
+![In-progress network profiling indicator](./media/network_profile_indicator.png)
+
 ### Toolbar
 
 The toolbar provides controls for profiling and filtering the network activity of your page. 
