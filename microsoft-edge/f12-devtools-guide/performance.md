@@ -14,8 +14,8 @@ keywords: microsoft edge, web development, f12 tools, devtools, performance, pro
 The **Performance** panel offers tools for profiling and analyzing the responsiveness of your UI during the course of user interaction. With it, you can:
 
  - [Measure execution times]((#recording-a-profile)) of the various components of your page 
- - [Focus in on where you're spending the most CPU cycles]((#timeline-ruler)) to run your page and the resulting visual effect for your users
- - [Get a play-by-play breakdown of the processes]((#timeline-details)) consuming page execution time 
+ - [Drill down to where you're spending the most CPU cycles]((#timeline-ruler)) to run your page and the resulting visual effect for your users
+ - [Get a step-by-step breakdown of the processes]((#timeline-details)) consuming page execution time 
  - [Walk your JavaScript call stacks]((#javascript-call-stacks)) to identify costly operations, such as those requiring layout recalculations 
 
 ![F12 DevTools Performance panel](./media/performance.png)
@@ -30,13 +30,13 @@ Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate an
 
 ![Performance panel toolbar](./media/performance_toolbar.png)
 
-A performance report will generate upon stopping the profile. You can choose to save it to disk (`Ctrl+S`) and reload (`Ctrl+O`) in F12 DevTools at a later time.
+A performance report will generate upon stopping the profile. You can choose to save it to disk (`Ctrl+S`) and reload (`Ctrl+O`) in F12 DevTools at a later time. F12 DevTools diagnostic sessions are saved with the *.diagsession* extension.
 
 Here are some things to keep in mind when recording a profile:
 
 - Perform the fewest actions you need to capture the scenario you're trying to analyze. Extraneous actions with the page will produce extra data and clutter your results.
 
-- The profiler will automatically mark major app lifecycle events in the report, such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load). You can add custom markers by calling the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code. 
+- The profiler will automatically mark major app lifecycle events in the report, such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load). You can add custom markers by calling the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the console. 
 
 - If initial page load times are important to your analysis, make sure to clear your browser cache (from the [Network](./network.md) panel) to ensure all page resources are loading from the network.
 
@@ -50,7 +50,7 @@ You will see two types of markers on the ruler:
 
  - **App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load)) are automatically logged as you record a profile.
 
- - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code. You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure) method. 
+ - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the F12 DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure) method. 
 
 Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected). These controls are also available from the right-click context menu.
 
