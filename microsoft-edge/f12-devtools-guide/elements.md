@@ -17,7 +17,7 @@ The **Elements** panel helps you to:
 * [Inspect and modify CSS](./elements/styles.md) on the page, including pseudo-states and pseudo-elements
 * [Understand the CSS layout and style cascade](./elements/computed.md) happening on the page
 * [Track down rogue event handlers](./elements/events.md) so you can debug them
-* [Set debugging breakpoints for visual changes to your UI](./elements/dom-breakpoints.md) to jump into the code causing your page to break
+* [Set debugging breakpoints for unexpected visual changes](./elements/dom-breakpoints.md) to jump into the code causing them
 * [Get detailed information about the fonts used on the page](./elements/fonts.md) and where they're loading from
 * [View your page from a screen reader's point of view](./elements/accessibility.md) to verify and test accessibility 
 * [Review a running diff of the CSS changes](./elements/changes.md) you make as you debug the UI of your page
@@ -34,7 +34,7 @@ The **Elements** panel helps you to:
 
 4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](#accessibility) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.
 
-5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching by its tag name, attributes, or text content.
+5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching for its tag name, attributes, or text content.
 
 ### Editing elements
 

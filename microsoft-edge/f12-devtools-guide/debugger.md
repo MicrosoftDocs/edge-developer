@@ -89,7 +89,7 @@ You can direct the debugger to ignore certain files with the **Mark as library c
 
 For keeping track of libraries across debugging sessions, you can edit these files to maintain a default list or add wildcards for a domain or file type:
 
-```
+```JavaScript
 %APPDATA%\..\LocalLow\Microsoft\F12\header\MyCode.json and %APPDATA%\..\Local\Microsoft\F12\header\MyCode.json
 ```
 
@@ -155,7 +155,7 @@ You can track the value of specific variables as they pass in and out of scope b
 
 ## Details
 
-The *Details* pane includes the [**Callstack**](#call-stack), [**Breakpoints**](#breakpoints) and [**DOM breakpoints**](dom-breakpoints) tabs.
+The *Details* pane includes the [**Callstack**](#call-stack), [**Breakpoints**](#breakpoints) and [**DOM breakpoints**](#dom-breakpoints) tabs.
 
 ### Call stack
 

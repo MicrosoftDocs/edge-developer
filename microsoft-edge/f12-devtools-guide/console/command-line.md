@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console command 
 
 # Console command line
 
-Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visula Studio [*IntelliSense*](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) auto code completion. 
+Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visual Studio [*IntelliSense*](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) auto code completion. 
 
 Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current F12 DevTools session. In addition to standard JavaScript and the [Console API](./console_api.md), the Console also supports the following commands for:
 
@@ -41,7 +41,7 @@ Example: Open the console and type `$$('.container')` to return all the div obje
 ![Example use of '$$' selector](../media/console_cmd_$$.png)
 
 ### $0, $1, $2,...
-Returns the last elements selected in the [**Elements**](../elements.md) panel, where `$0` represents the most recently selected item, `$1` was the selected item before that, and so on.
+Returns the last elements selected in the [**Elements**](../elements.md) panel, where `$0` represents the currently selected item, `$1` was the selected item before that, and so on.
 
 Example: Open F12 DevTools to the **Elements** tab, press `CTRL + B` to activate the **Select element** tool and click some area on this page with your mouse. Now open the Console and type `$0` to return the element you just clicked.
 

@@ -58,10 +58,10 @@ console.log("The number of %s is %d.", myText, myVal);
 And here's how you might add a green highlight effect to a log message with inline CSS (`%c`):
 
 ```
-console.log("%cHighlight this log mesage in green", "background-color: #10ff00; text-transform: uppercase;");
+console.log("%cHighlight this log message in green", "background-color: #10ff00; text-transform: uppercase;");
 ```
 
-![Console log with inline styles](../media/console_cmd_$.png)
+![Console log with inline styles](../media/console_api_css.png)
 
 ## Inspecting objects and elements
 

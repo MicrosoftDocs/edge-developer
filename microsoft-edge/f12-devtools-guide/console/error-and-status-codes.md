@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console codes
 
 # Console error and status codes
 
-This reference helps you interpret error and status messages from the F12 DeTools [Console](../console.md). Use the following table to look up codes by their prefix (where `x` represents a `0-9` digit):
+This reference helps you interpret error and status messages from the F12 DevTools [Console](../console.md). Use the following table to look up codes by their prefix (where `x` represents a `0-9` digit):
 
 Code Prefix | Area | Description
 :---------- | :--- | :-----
@@ -193,9 +193,9 @@ HTTP502 | BAD GATEWAY | The server, while acting as a gateway or proxy, received
 HTTP503 | SERVICE UNAVAILABLE | The service is temporarily overloaded.
 HTTP504 | GATEWAY TIMEOUT | The request was timed out waiting for a gateway.
 HTTP505 | VERSION NOT SUPPORTED | The server does not support, or refuses to support, the HTTP protocol version that was used in the request message.
-HTTP506 | VARIANT ALSO NEGOTIATES | Transparent conent negotiation for the request resulted in circular references.
+HTTP506 | VARIANT ALSO NEGOTIATES | Transparent content negotiation for the request resulted in circular references.
 HTTP507 | INSUFFICIENT STORAGE | The server is unable to store the representation needed to complete the request.
-HTTP508 | LOOP DETECTED | The server detected an infinite lop while servicing the request.
+HTTP508 | LOOP DETECTED | The server detected an infinite loop while servicing the request.
 HTTP510 | NOT EXTENDED | Further extensions to the request are required for the server to fulfill it.
 HTTP511 | NETWORK AUTHENTICATION REQUIRED | The client must authenticate to gain network access.
 
@@ -225,7 +225,8 @@ SEC7130 | "Potential cross-site scripting detected in [URL]. The content has bee
 SEC7131 | "Security of a sandboxed iframe is potentially compromised by allowing script and same origin access." | If the content in a sandboxed iframe comes from an untrusted or insecure source, it could escape the sandbox when script and same origin access are both allowed. | This is an informational warning message and should not impact functionality. It's recommended that you avoid combining these permissions unless you're sure of what will be run in the iframe.
 SEC7132 | "The certificate protecting this web site uses weak cryptography" | The TLS security certificate used by this website uses weak cryptography | Update the server’s TLS certificate
 
-**Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
+> Note
+> For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
 ## SVG codes
 F12 tools don't currently support extensive Scalable Vector Graphics (SVG) debugging, but some console messages are provided to help with debugging.

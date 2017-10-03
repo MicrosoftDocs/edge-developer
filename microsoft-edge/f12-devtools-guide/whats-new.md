@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # What's new in the Windows 10 Fall Creators Update (EdgeHTML 16)
 
-With this release we started a major F12 DevTools refactoring effort for improved robustness and future extensibility, and also added a bunch of new features you can start using today! 
+With this release we started a major F12 DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today! 
 
 Here are the latest Microsoft Edge F12 DevTools features coming with the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features) and available now on [Windows Insider Preview](https://insider.windows.com/en-us/) builds.
 
@@ -35,7 +35,7 @@ You can manage your mutation breakpoints from the **DOM breakpoints** pane in th
 
 ## CSS at-rule support
 
-CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including `@keyframes` percentages (currently limited to read-only), `@supports` feature queries, and `@media` queries.
+CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including animation `@keyframes` rules (currently limited to read-only), `@supports` feature queries, and `@media` queries.
 
 ![CSS at-rules inspection from the F12 DevTools Style pane](./media/elements_at_rules.png)
 

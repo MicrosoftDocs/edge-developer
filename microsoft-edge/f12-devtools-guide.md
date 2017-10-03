@@ -17,13 +17,13 @@ Browser tooling has come a long way since the days of Internet Explorer! The Mic
 
 The Microsoft Edge F12 DevTools include:
 
- - An [Elements](./f12-devtools-guide/elements.md) panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints
- - A [Console](./f12-devtools-guide/console.md) to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame
- - A [Debugger](./f12-devtools-guide/debugger.md) to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches
- - A [Network](./f12-devtools-guide/network.md) panel to monitor and inspect requests and responses from the network and browser cache 
- - A [Performance](./f12-devtools-guide/performance.md) panel to profile the time and system resources required by your site
- - A [Memory](./f12-devtools-guide/memory.md) panel to measure your use of memory resources and compare heap snapshots at different states of code execution
- - An [Emulation](./f12-devtools-guide/emulation.md) panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates
+ - An [**Elements**](./f12-devtools-guide/elements.md) panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints
+ - A [**Console**](./f12-devtools-guide/console.md) to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame
+ - A [**Debugger**](./f12-devtools-guide/debugger.md) to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches
+ - A [**Network**](./f12-devtools-guide/network.md) panel to monitor and inspect requests and responses from the network and browser cache 
+ - A [**Performance**](./f12-devtools-guide/performance.md) panel to profile the time and system resources required by your site
+ - A [**Memory**](./f12-devtools-guide/memory.md) panel to measure your use of memory resources and compare heap snapshots at different states of code execution
+ - An [**Emulation**](./f12-devtools-guide/emulation.md) panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates
 
 There's also [much more to come](./f12-devtools-guide/whats-new.md), so please keep sending us your [feedback and feature requests](#feedback)!
 

@@ -25,13 +25,13 @@ Use the F12 DevTools **Console** for interactive debugging and adhoc testing. It
 
 3. Ticking the **Preserve Log** checkbox will persist your console output across page refreshes and closing / reopening F12 DevTools. Console history will only clear when the tab is closed or you manually clear the Console.
 
-4. Use the **Target** dropdown selector to switch to different execution context, such as an `<iframe>` in your page or a running extension. By default, the top-level frame of your page is selected. Hovering over a selected frame will display a tooltip with the full URL for that resource.
+4. Use the **Target** dropdown selector to switch to a different execution context, such as an `<iframe>` in your page or a running extension. By default, the top-level frame of your page is selected. Hovering over a selected frame will display a tooltip with the full URL for that resource.
 
 5. In addition to the Console panel, you can use the console from the bottom of any other F12 DevTools panel by pressing the **Show / Hide Console** button (`Ctrl+` ` ). The button has no effect when the DevTools are open to the Console panel.
 
 6. You can also **Filter logs** (`Ctrl+F`) with a specific text string in the searchbox.
 
-7. Clicking on any blue source links will open the F12 DevTools **Debugger** to that line particular line of code for further inspection.
+7. Clicking on any blue source links will open the F12 DevTools **Debugger** to that particular line of code for further inspection.
 
 ## Shortcuts
 
