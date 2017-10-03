@@ -44,8 +44,8 @@ The toolbar provides controls for profiling and filtering the network activity o
 
 6. Clear buttons
 
-   - **Clear cache**: Removes all resources stored in the browser cache (and emulates a first-time experience loading the page)
-   - **Clear cookies**: Removes all cookies for the given domain (and emulates a first-time experience of the site)
+   - **Clear cache**: Removes all resources stored in the browser cache (and emulates a first-time experience loading the page).
+   - **Clear cookies**: Removes all cookies for the given domain (and emulates a first-time experience of the site).
    - **Clear entries on navigate**: Recorded traffic is cleared upon page navigation. This is turned on by default.
    - **Clear session**: Clears all network request entries from the **Network summary** list.
 

@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 
-# Coming with the Windows 10 Fall Creators Update
+# What's new in the Windows 10 Fall Creators Update (EdgeHTML 16)
 
 With this release we started a major F12 DevTools refactoring effort for improved robustness and future extensibility, and also added a bunch of new features you can start using today! 
 
