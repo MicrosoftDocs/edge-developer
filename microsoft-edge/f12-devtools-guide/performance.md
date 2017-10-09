@@ -13,10 +13,10 @@ keywords: microsoft edge, web development, f12 tools, devtools, performance, pro
 
 The **Performance** panel offers tools for profiling and analyzing the responsiveness of your UI during the course of user interaction. With it, you can:
 
- - [Measure execution times]((#recording-a-profile)) of the various components of your page 
- - [Drill down to where you're spending the most CPU cycles]((#timeline-ruler)) to run your page and the resulting visual effect for your users
- - [Get a step-by-step breakdown of the processes]((#timeline-details)) consuming page execution time 
- - [Walk your JavaScript call stacks]((#javascript-call-stacks)) to identify costly operations, such as those requiring layout recalculations 
+ - [Measure execution times](#recording-a-profile) of the various components of your page 
+ - [Drill down to where you're spending the most CPU cycles](#timeline-ruler) to run your page and the resulting visual effect for your users
+ - [Get a step-by-step breakdown of the processes](#timeline-details) consuming page execution time 
+ - [Walk your JavaScript call stacks](#javascript-call-stacks) to identify costly operations, such as those requiring layout recalculations 
 
 ![F12 DevTools Performance panel](./media/performance.png)
 
