@@ -32,7 +32,7 @@ The **Elements** panel helps you to:
 
 3. Open the **Color picker** (`Ctrl+K`) tool to see a list of the colors in use on the current page. Clicking on a color on the list will provide further details (Hue, Saturation, Lightness, Alpha). The *Color picker* also opens when you click on the colored square next to a color value in the **Styles** pane, allowing you to edit the color of a page element and immediately see the results.
 
-4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](#accessibility) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.
+4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](./elements/accessibility.md) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.
 
 5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching for its tag name, attributes, or text content.
 
@@ -45,7 +45,7 @@ You can edit an element by right-clicking on it within the HTML tree view and se
 > [!NOTE]
 > Editing the HTML tree does not affect the underlying source markup. Refreshing the page will revert your changes and render only the layout determined by the page source. You can **Copy** your modified HTML to the clipboard by right-clicking the desired element (or the global `html` element, if you want the entire page) to open up the context menu. (**Cut** and **Paste** options are also available).
 
-From the [Styles](#styles) pane you can also add/delete/edit CSS pseudo-states and pseudo-elements.
+From the [Styles](./elements/styles.md) pane you can also add/delete/edit CSS pseudo-states and pseudo-elements.
 
 ## Tool Panes
 

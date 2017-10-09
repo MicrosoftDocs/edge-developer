@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console command 
 
 Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visual Studio [*IntelliSense*](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) auto code completion. 
 
-Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current F12 DevTools session. In addition to standard JavaScript and the [Console API](./console_api.md), the Console also supports the following commands for:
+Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current F12 DevTools session. In addition to standard JavaScript and the [Console API](./console-api.md), the Console also supports the following commands for:
 
  - [Selecting DOM objects](#dom-selectors)
  - [Inspecting object properties](#object-inspection)

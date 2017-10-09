@@ -35,4 +35,4 @@ When the page is reloaded or the DevTools are closed and reopened, F12 DevTools 
 
 ![Unbound breakpoint indicator](../media/elements_dom_breakpoint_unbound.png)
 
-In addition to this *DOM breakpoints* pane, you can also manage your [DOM breakpoints](../debugger#dom-breakpoints) from within the **Debugger**.
+In addition to this *DOM breakpoints* pane, you can also manage your [DOM breakpoints](../debugger.md#dom-breakpoints) from within the **Debugger**.

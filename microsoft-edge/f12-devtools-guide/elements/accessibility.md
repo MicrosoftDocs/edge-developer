@@ -23,4 +23,4 @@ Clicking on a node in the tree view will also select it in the [**HTML tree**](.
 
 ![Accessibility tree view](../media/elements_accessibility_tree.png)
 
-Here are further resources on [Accessibility with Microsoft Edge](../accessibility.md).
+Here are further resources on [Accessibility with Microsoft Edge](../../accessibility.md).

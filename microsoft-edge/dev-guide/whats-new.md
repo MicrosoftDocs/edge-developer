@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer, what's new in
 
 Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https://insider.windows.com/)! The [Windows Insider Program](https://insider.windows.com/) provides the latest Windows 10 builds as soon as they're available. 
 
-Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are listed in the format of **[interface name].[api name]**. For a full list of new Microsoft Edge and platform features, check out the [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's Coming in EdgeHTML 16](./whats-new/edgeHTML-16.md).
+Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are listed in the format of **[interface name].[api name]**. For a full list of new Microsoft Edge and platform features, check out the [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/).
 
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
