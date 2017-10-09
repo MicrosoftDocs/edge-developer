@@ -29,7 +29,7 @@ Method | Description
 [removeRange](https://msdn.microsoft.com/library/ff975179) | Removes a range from a selection.
 [setBaseAndExtent](https://msdn.microsoft.com/library/dn903953) | Sets the *anchor* (base) and *focus* (extent) boundary points for the selection.
 
-For `setBaseAndExtent`, an *anchor* is the start of a selection, a the *focus* is where the selection ends. Both ignore direction, meaning an anchor/focus could be at either the beginning or end of a seleciton.
+For `setBaseAndExtent`, an *anchor* is the start of a selection and the *focus* is where the selection ends. Both ignore direction, meaning an anchor/focus could be at either the beginning or end of a selection.
 
 In this code sample, `removeAllRanges` is used to clear the selection range on a page:
 

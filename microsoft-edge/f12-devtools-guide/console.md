@@ -1,84 +1,50 @@
 ---
-ms.assetid: 443ae047-103f-4770-9a0f-08077bdc9652
-description: Learn how to use the Console tool to view errors/messages, send debug output, and inspect JavaScript objects/XML nodes.
-title: F12 devtools guide - Console
+description: Use the Console for interactive debugging and adhoc testing
+title: Microsoft Edge F12 DevTools - Console
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, web development, f12 tools, devtools, console
 ---
 
-# Console Tool
+# Console
 
-Use the **Console** tool to view errors and other messages, send debug output, inspect JavaScript objects and XML nodes, and run JavaScript in the context of the selected window or frame.
+Use the F12 DevTools **Console** for interactive debugging and adhoc testing. It allows you to communicate into and out of a running web page by:
 
-## A window into your code
+ - Posting standard [error and status codes](./console/error_and_status_codes.md) and informational messages as your code runs
+ - Generating custom debug logs from the [Console API](./console/console_api.md) calls you include in your code
+ - Providing a [command line](./console/command_line.md) and interactive tree view for inspecting current return values of key variables and functions
 
-The primary use for the **Console** tool is to communicate into and out of running webpages.
+![The Microsoft Edge F12 DevTools console](./media/console.png)
 
+1. The **Errors** / **Warnings** / **Info** / **Logs** buttons filter console output by the specified type. You can multi-select them by holding down the `Ctrl` key. The **All** button clears all filters.
 
+2. The **Clear** button (`Ctrl+L`) clears the current console display.
 
-*In the image above, as the JavaScript command to reload the page is entered in, the IntelliSense auto code completion pops up. Once the reload method is selected, the page reloads and the console sends JavaScript debugging messages out.*
+3. Ticking the **Preserve Log** checkbox will persist your console output across page refreshes and closing / reopening F12 DevTools. Console history will only clear when the tab is closed or you manually clear the Console.
 
-   - **In:** Run JavaScript to view and change values in running webpages, add functions to running code, and run debug code on the fly, all while taking advantage of Microsoft Edge [IntelliSense](https://msdn.microsoft.com/library/hcw1s69b.aspx) auto code completion.
+4. Use the **Target** dropdown selector to switch to a different execution context, such as an `<iframe>` in your page or a running extension. By default, the top-level frame of your page is selected. Hovering over a selected frame will display a tooltip with the full URL for that resource.
 
-   - **Out:** Microsoft Edge and JavaScript code deliver status, error, and debug messages to developers, including inspectable JavaScript objects and DOM Nodes. For more on how to send debug information and other messages to the console from your code, read up on [Using the Console API](./console/using-the-console-api.md).
+5. In addition to the Console panel, you can use the console from the bottom of any other F12 DevTools panel by pressing the **Show / Hide Console** button (`Ctrl+` ` ). The button has no effect when the DevTools are open to the Console panel.
 
-### Messages Microsoft Edge sends to the console
+6. You can also **Filter logs** (`Ctrl+F`) with a specific text string in the searchbox.
 
-The Console has three categories:
-   - **Error:** Critical errors that cause code not to run. For more info, see a list of [error codes](./console/console-error-and-status-codes.md) used in the console.
-   - **Warning:** Possible errors in your webpage that don't necessarily break it, but may cause unexpected behavior.
-   - **Information:** Non-critical information you might want to know.
+7. Clicking on any blue source links will open the F12 DevTools **Debugger** to that particular line of code for further inspection.
 
+## Shortcuts
 
-
-These messages can be filtered out of the Console output. The icons for each message type at the top of the Console pane act as toggles. Click one to remove its associated message type, then again to return it. You can also right-click in the Console output and find check boxes for each type in the context menu.
-
-When you click the file name that follows a message, you open the **[Debugger](./debugger.md)** tool and load the file in the script pane.
-
-When the **Clear on navigate** icon is highlighted, the console clears every time the browser navigates to a new webpage (including refresh). When it isn't highlighted, the browser preserves the contents of the **Console**, but messages from prior webpages are grayed out to better visually indicate they are not from the current page.
-
-### Selecting your execution target
-The **Console** has a **Target** drop-down menu just above the **Console** output pane. If the webpage you're viewing has an [iframe element]() in it, select the iframe from the **Target** menu to run **Console** commands solely in the scope of the iframe. If your webpage has no iframes, the only selection will be "_top."
-
-
-
-*In the image above, the Target iframe is selected, then the page reloads to output only Error messages. The file name is then clicked to follow the error to the script file where it is located in the Debugger. Returning to the Console, the Error Code itself is clicked, opening the documentation page for that error code.*
-
-### Sending JavaScript into the Console
-The console not only displays output from code, but provides an interface to execute code as well. Enter any valid JavaScript at the bottom of the Console, in the command line pane, and run the script (enter).
-
-
-
-Generally, all script entered in the command line executes in the [global scope](https://msdn.microsoft.com/library/bzt2dkta.aspx) of the currently selected window. However, if your script is currently paused (for instance, because you set a breakpoint), script executes in the [local scope](https://msdn.microsoft.com/library/bzt2dkta.aspx) of the current function within the call stack.
-
-![F12 Console Command Line local scope](./media/Edge_Console_local_scope.png)
-
-If your webpage is built with a **[frameset](https://msdn.microsoft.com/library/ms535251.aspx)** or **[iframes](https://msdn.microsoft.com/library/ms535258.aspx)**, those frames load their own documents in their own windows.
-
-To target the window of a frameset frame or an iframe, select the frame you want to target in the Target dropdown to the right of the console filter icons.
-
-### Selecting elements in the Console
-Console selectors provide simple shorthands for quickly selecting elements in your DOM structure. They are:
-
-   - **$()** is a shorthand for [**`document.querySelector()`**](https://msdn.microsoft.com/library/cc288169.aspx).
-   - **$$()** is a shorthand for [**`document.querySelectorAll()`**](https://msdn.microsoft.com/library/cc304115.aspx).
-   - **$_()** is a shorthand for the last selected element or object.
-   - **$0, $1, $2, $3, $4** return the last items selected in the [**DOM Explorer tool**](./dom-explorer.md).
-
-**Important**  If code in a webpage assigns a function to **$** or **$$**, that function overrides the console selector functions while the console is interacting with that page or its frames.
-
-### The multiline command line
-
-Sending in single line commands is useful, but some tasks require executing longer scripts. Click the double up-arrow symbol (`Ctrl+Shift+M`) to expand the command line. In multiline mode, enter as many lines as you need, then click the green arrow symbol to execute it in the console (`Ctrl+Enter`). You can also clear the script by clicking the clear symbol (`Esc`).
-
-![F12 Console Multiline Command Line](./media/f12blueconsolecommandmultiple.png)
-
-## Related topics
-
-[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
-
-[Using the Console API](./console/using-the-console-api.md)
+Action | Shortcut
+:------------ | :-------------
+Launch F12 DevTools with Console in focus | `CTRL` + `SHIFT` + `J`
+Switch to Console | `CTRL` + `2`
+Show/Hide Console from another F12 tab | `CTRL` + ` (backtick)
+Execute (single line command) | `ENTER`
+Line-break without executing (multi-line command) | `SHIFT` + `ENTER`
+""  | `CTRL` + `ENTER`
+Clear the Console of all messages | `CTRL` + `L`
+Filter logs (set focus to search box) | `CTRL` + `F` 
+Accept auto-completion suggestion (when in focus) | `ENTER`
+"" | `TAB`
+Previous / Next auto-completion suggestion | up / down arrow keys

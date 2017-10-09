@@ -1,86 +1,73 @@
 ---
-ms.assetid: 67b76a4f-a000-44b4-8738-af065d1f907d
-description: Learn how to use the Emulation tool to test how webpages work with different browser profiles, user agents, screen sizes and resolutions, and GPS location coordinates.
-title: F12 devtools guide - Emulation
+description: Use the Emulation panel to test different browser profiles, screen sizes and resolutions, and GPS location coordinates
+title: Microsoft Edge F12 DevTools - Emulation
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, web development, f12 tools, devtools, device emulation, responsive design, geolocation, resolution
 ---
 
 # Emulation
 
-Use the Emulation tools to test how webpages work with different browser profiles, user agents, screen sizes and resolutions, and GPS location coordinates.
+The *Emulation* panel helps you to:
+ - Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)
+ - Test different [geolocation settings and coordinates](#geolocation)
 
-Use the options in the Device dropdown to apply configurations for popular devices to those emulation tools.
+![The Microsoft Edge F12 DevTools Emulation panel](./media/emulation.png)
 
+1. The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the F12 DevTools. 
 
-## Testing early and testing often
+2. The **Reset Emulation settings** button will reset your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.
 
-Designing and developing for the modern web means building webpages that work on a wide range of devices and platforms. Using the Emulation tool in F12 developer tools, you can emulate different environments that your webpages can be viewed in. This makes it easier to catch and debug issues early in the development cycle.
+3. When any of these options are changed from the default, the **Emulation** tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.
 
-The tool is split into four sections: Device, Mode, Display, and Geolocation:
+## Device
 
-![Microsoft Edge Emulation](./media/Edge_Emulation.png)
+Pick from a preset list of Windows device profiles which  automatically configure the other emulation options or specify your own *Custom* configuation. Switch back to *Default* to reset all the emulation tools.
 
-  - [Device](#device): Applies configurations to the other tools which map to popular devices.
-  - [Mode](#mode): Desktop vs. Windows Phone browser profiles, and use User agent string emulation to debug errors caused by browser sniffing.
-  - [Display](#display): Emulate different screen sizes and resolutions to see how webpages render.
-  - [Geolocation](#geolocation): Simulate a GPS receiver and enter GPS coordinates to test location-aware features in a webpage.
+## Mode
 
-Whenever any of these options are changed from the defaults, the **Emulation tool** icon in the F12 sidebar will have a small informational alert icon overlaid on it to let you know that some portion of your browser's behavior is being emulated.
-
-### Device
-
-Pick from a list of device profiles which will automatically configure the other emulation options. Switch back to Default to reset all the emulation tools.
-
-### Mode
-#### Browser profile
-
-If you want to see how your webpages perform on a Windows Phone 8 device, the browser profile selection helps you change a variety of settings to emulate the device quickly and easily, then change back to the default Desktop profile just as easily.
+### Browser profile
+A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to *Windows Phone*.
 
 #### User agent string
 
-Changing your user agent string is a good first step in debugging errors that are only happening in Microsoft Edge, but not in other browsers. It's basically a way of telling Microsoft Edge to identify itself as a different browser.
+Modifing your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge. 
 
-Front end and/or back end scripts sometimes try to detect which browser you're using. And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.
+Front end and/or back end scripts sometimes use the user agent string  to detect which browser you're using. And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.
 
-The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do [using feature detection](https://msdn.microsoft.com/library/hh273397.aspx). This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge; or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.
+The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do using feature detection. This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge; or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.
 
-If changing your user agent string clears up a problem, it's likely browser detection is the cause.
+If changing your user agent string clears up the problem, browser detection is likely culprit.
 
-### Display
+## Display
 
-Display emulation helps developers preview their webpages on different screen sizes and different resolutions. It helps identify issues as webpages transition from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
+Display emulation lets you preview your site on different screen sizes and resolutions: from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
 
-**Important**  Emulations are adapted to try and match the physical dimensions of the screens being emulated. Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements. Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.
+Emulations are adapted to try and match the physical dimensions of the screens being emulated. Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements. Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.
 
-#### Orientation
+### Orientation
 
-The standard options are available:
-  - Portrait: the screen is taller than it is wide. This tends to be the orientation for most mobile screens.
-  - Landscape: the screen is wider than it is tall. This tends to be the orientation for most laptop screens and desktop monitors.
+Choose from *Landscape* or *Portrait* mode.
 
-#### Resolution
+### Resolution
 
-![Microsoft Edge Emulation Resolutions](./media/F12BlueEmulationResolution.png)
-
-A selection of physical dimensions and resolutions is provided. If none of those meet your needs, you can set a custom size and resolution by selecting **Custom** from the menu.
-
-Custom sizes of up to 80 inches and 3820 x 2160 are supported.
+Choose from a preset list of popular device resolutions, or specify your own *Custom* config. Resolutions of up to 80 inches and 3820 x 2160 are supported.
 
 ## Geolocation
 
-Many mobile devices make it possible to determine a user's physical location and deliver information or services tailored to that.
+If your site uses the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
 
-There are three options to **simulate GPS**. They are **Off**, **On**, and **On but no signal** which can be used for testing different device states. When set to **On**, the **latitude** and **longitude** you enter will be provided to your webpage.
+As with any usage of personal data on the web, your users will first need to grant your site permission to use their location. You can test how your site behaves with and without location permissions from the Microsoft Edge *Settings* panel:
 
-## Related topics
+**...** > **Settings** > **View advanced settings** > **Website permissions** > **Manage**
 
-[Strategies for building adaptive sites](https://msdn.microsoft.com/library/jj583806.aspx)
+![Manage website permissions from the Microsoft Edge Settings panel](./media/settings_manage_permissions.png)
 
-[Geolocation API](https://msdn.microsoft.com/library/hh772290.aspx)
+## Shortcuts
 
-[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
+Action | Shortcut
+:------------ | :-------------
+Reset Emulation settings | `CTRL` + `SHIFT` + `L`
