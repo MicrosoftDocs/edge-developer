@@ -38,7 +38,7 @@ From the *Storage list* table you can:
 
  - **Inspect and sort** your key/value pairs by clicking on either column name in the table.
  - **Edit** the *Key* and *Value* of an existing entry by clicking in the cell.
- - **Delete** (`Del`) an entry from the right-click [context menu](#context-menu) option, *Delete item*.
+ - **Delete** (`Del`) an entry from the right-click context menu option, *Delete item*.
  - **Add** a new key/value pair by clicking on the empty row at the bottom of the table.
 
 
