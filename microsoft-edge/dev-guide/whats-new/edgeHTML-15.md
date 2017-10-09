@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer
 Here are the changes shipped with the current release of the Microsoft Edge platform,
  as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017, Build 15063). For an overview of changes to the overall Microsoft Edge browser, see [What’s new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97)
  
-For changes in subsequent Windows Insider Preview builds, see [What's New in EdgeHTML](.,/whats-new.md).
+For changes in subsequent Windows Insider Preview builds, see [What's New in EdgeHTML](../whats-new.md).
  
 Here's the permalink for the following list of changes: **[https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)**.
 
