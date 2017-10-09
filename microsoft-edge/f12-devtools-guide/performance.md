@@ -44,7 +44,7 @@ Here are some things to keep in mind when recording a profile:
 
 ## Timeline ruler
 
-The timeline works as a sliding ruler. Use it to limit the scope of the report to the particular timeframe (or span of events) of interest. Drag the black **slide controls** to limit the time range you wish to investigate and filter out extraneous profiling data from the [Timeline](#timeline) and [JavaScript call stacks](#javascript-call-stacks) reports in the lower *Details pane*. 
+The timeline works as a sliding ruler. Use it to limit the scope of the report to the particular timeframe (or span of events) of interest. Drag the black **slide controls** to limit the time range you wish to investigate and filter out extraneous profiling data from the [Timeline](#timeline-details) and [JavaScript call stacks](#javascript-call-stacks) reports in the lower *Details pane*. 
 
 You will see two types of markers on the ruler:
 
@@ -61,7 +61,7 @@ Once you have selected a time range, you can further **Zoom in** from the toolba
 The **CPU utilization %** timeline graph describes the processing resources consumed by the various browser subsystems required to run the page, broken out by category:
 
 #### Loading
-Indicates time spent retrieving app resources and parsing HTML and CSS. This can include network requests. The following associated events are logged in the [Timeline](#timeline):
+Indicates time spent retrieving app resources and parsing HTML and CSS. This can include network requests. The following associated events are logged in the [Timeline](#timeline-details):
 
 Event | Description
 :------------ | :-------------
@@ -72,7 +72,7 @@ HtmlSpeculativeDownloading | The page's HTML content was being searched for requ
 
 
 #### Scripting
-Indicates time spent parsing and executing JavaScript. This includes DOM events, timers, script evaluation, and animation frame callbacks. The following associated events are logged in the [Timeline](#timeline):
+Indicates time spent parsing and executing JavaScript. This includes DOM events, timers, script evaluation, and animation frame callbacks. The following associated events are logged in the [Timeline](#timeline-details):
 
 Event | Description
 :------------ | :-------------
@@ -88,14 +88,14 @@ WindowsRuntimeAsyncCallback | An async operation was completed by a Windows Runt
 WindowsRuntimeEvent | An event was fired on a Windows Runtime object which triggered a registered listener.
 
 #### GC
-Indicates time spent collecting memory for objects that are no longer in use. The following associated events are logged in the [Timeline](#timeline):
+Indicates time spent collecting memory for objects that are no longer in use. The following associated events are logged in the [Timeline](#timeline-details):
 
 Event | Description
 :------------ | :-------------
 GarbageCollection | The JavaScript runtime audited the app's current memory usage in order to determine which objects aren't being referenced anymore and could therefore be collected.
 
 #### Styling
-Indicates time spent calculating element presentation and layout. The following associated events are logged in the [Timeline](#timeline):
+Indicates time spent calculating element presentation and layout. The following associated events are logged in the [Timeline](#timeline-details):
 
 Event | Description
 :------------ | :-------------
@@ -104,7 +104,7 @@ CssCalculation | Changes were made to the DOM or new CSS content was added, requ
 Layout | Changes were made to the DOM that required the size and/or position of all affected elements to be computed.
 
 #### Rendering
-Indicates time spent in painting the screen. The following associated events are logged in the [Timeline](#timeline):
+Indicates time spent in painting the screen. The following associated events are logged in the [Timeline](#timeline-details):
 
 Event | Description
 :------------ | :-------------
@@ -112,7 +112,7 @@ Paint | Visual changes were made to the DOM that required all affected portions 
 RenderLayer | Visual changes were made to an independently rendered fragment of the DOM (called a layer) which required its respective portion of the page to be redrawn.
 
 #### Image decoding
-Indicates time spent decompressing and decoding images. The following associated events are logged in the [Timeline](#timeline):
+Indicates time spent decompressing and decoding images. The following associated events are logged in the [Timeline](#timeline-details):
 
 Event | Description
 :------------ | :-------------
