@@ -1,177 +1,191 @@
 ---
-ms.assetid: 6c0907d1-631c-4a1c-9167-3319d424597e
-description: Learn how to use the Performance tool to profile your webpage’s frame rate and JavaScript execution times.
-title: F12 devtools guide - Performance
+description: Use the Performance panel to analyze the responsivenes of your page during user interaction
+title: Microsoft Edge F12 DevTools - Performance
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, web development, f12 tools, devtools, performance, profile, frame rate, fps, CPU utilization, JavaScript execution
 ---
 
 # Performance
 
-Using the **Performance** tool, profile your webpage's frame rate with the Timeline and JavaScript execution times with the JavaScript call stacks. The reports on different types of CPU usage and JavaScript execution profiling help you analyze UI performance problems.
+The **Performance** panel offers tools for profiling and analyzing the responsiveness of your UI during the course of user interaction. With it, you can:
 
-## Speed matters
+ - [Measure execution times]((#recording-a-profile)) of the various components of your page 
+ - [Drill down to where you're spending the most CPU cycles]((#timeline-ruler)) to run your page and the resulting visual effect for your users
+ - [Get a step-by-step breakdown of the processes]((#timeline-details)) consuming page execution time 
+ - [Walk your JavaScript call stacks]((#javascript-call-stacks)) to identify costly operations, such as those requiring layout recalculations 
 
-Whether it's a jittery animation or user interface elements that respond slowly, a user's experience on your site is diminished when the UI isn't smooth and responsive. The new **Performance** profiler helps you see what's happening behind the scenes when your pages are slowing down. This info can give clues to improve speed.
+![F12 DevTools Performance panel](./media/performance.png)
 
-![Microsoft Edge F12 Tools Performance](./media/Edge_Performance.png)
+ ## Recording a profile
 
-### Recording a profiling session
+The first step to analyzing the performance of your page is to capture a profile as you perform a particular user scenario, such as the repro steps of a performance bug you're trying to fix, or a typical use case you want to optimize for a better user experience. 
 
-When you first load the **Performance** tool, you'll see an instruction to **start profiling to begin a performance session** in the main pane. Click the instruction link or the arrow icon at the top of the tool to start profiling.
+### Toolbar
 
-During profiling, perform the fewest actions you need to capture the slowness you're trying to analyze. Extra interactions with the page produce extra data, which clutters results. 
+Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate and conclude your performance trace. A green indicator will apear on the **Performance** tab to indicate a recording is in progress. 
 
-If you need accurate page load times in the report, visit the [**Network tool**](./network.md) and use its **clear browser cache** option before profiling. Using the **Network tool** ensures you're loading all page resources from the network, and then reloads the page as soon as you start profiling.
+![Performance panel toolbar](./media/performance_toolbar.png)
 
-The **Performance** tool automatically marks **app lifecycle events**, such as [**DOMContentLoaded**](https://msdn.microsoft.com/library/hh869434.aspx). Use the [`performance.mark()`](https://msdn.microsoft.com/library/jj585593.aspx) method to set custom **user marks** from within your code.
+A performance report will generate upon stopping the profile. You can choose to save it to disk (`Ctrl+S`) and reload (`Ctrl+O`) in F12 DevTools at a later time. F12 DevTools diagnostic sessions are saved with the *.diagsession* extension.
 
-When you've captured the behavior you want to profile, click **stop profiling to generate a report** or the square icon at the top of the tool.
+Here are some things to keep in mind when recording a profile:
 
-Perhaps you don't have time to dig into the information now or want to look at the results of a prior profiling session. The import (folder icon or CTRL + O) and export (disk icon or CTRL + S) functions make it possible to inspect a profiling session at a later date without having to keep the browser and F12 developer tools open the whole time.
+- Perform the fewest actions you need to capture the scenario you're trying to analyze. Extraneous actions with the page will produce extra data and clutter your results.
 
-## The performance session report
+- The profiler will automatically mark major app lifecycle events in the report, such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load). You can add custom markers by calling the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the console. 
 
-### The ruler
+- If initial page load times are important to your analysis, make sure to clear your browser cache (from the [Network](./network.md) panel) to ensure all page resources are loading from the network.
 
-![Microsoft Edge F12 Tools Ruler](./media/F12BlueResponsivenessRuler.png)
+- Sometimes it helps to record multiple sessions and/or sample the same scenario across different machines to better understand the performance isue in the wild.
 
-The ruler displays the amount of time the session ran as well as **app lifecycle events** and **user marks**. Hovering over events and marks displays their labels and helps orient yourself within a session. 
+## Timeline ruler
 
-User marks can be given labels by using a string for the argument of the `performance.mark()` method.
+The timeline works as a sliding ruler. Use it to limit the scope of the report to the particular timeframe (or span of events) of interest. Drag the black **slide controls** to limit the time range you wish to investigate and filter out extraneous profiling data from the [Timeline](#timeline) and [JavaScript call stacks](#javascript-call-stacks) reports in the lower *Details pane*. 
 
-**User marks** are made more useful with the [`performance.measure()`](https://msdn.microsoft.com/library/jj585594.aspx) API. After you have set **user marks**, set a **user measure** to group the events that happened between the two marks. For example, if you have two **user marks** labeled "Begin Rotation" and "End Rotation," use the following code to group them and label the group as "box cycler."
+You will see two types of markers on the ruler:
 
-```javascript
-performance.measure("box cycler","Begin Rotation","End Rotation");
-```
+ - **App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load)) are automatically logged as you record a profile.
 
-![Microsoft Edge F12 Tools Performance Measure](./media/Edge_Performance_measure.png)
+ - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the F12 DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure) method. 
 
-### The timeline
+Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected). These controls are also available from the right-click context menu.
 
-![Microsoft Edge F12 Tools Performance Measure](./media/gdr_f12_ResponsivenessTimeline.png)
+![Performance panel timeline](./media/performance_timeline.png)
 
-The **timeline** shows two different measures: 
+### CPU utilization
 
+The **CPU utilization %** timeline graph describes the processing resources consumed by the various browser subsystems required to run the page, broken out by category:
 
-  - **CPU utilization** shows the amounts and types of activity occurring, broken down into color -coded categories. For a more detailed breakdown of the categories, see [Event categories](#event-categories-and-definitions).
-  - **Visual throughput** shows the estimated frames-per-second display. Dips in the frame rate indicate where slowdowns are happening and a frame rate of zero means frames are being dropped.
+#### Loading
+Indicates time spent retrieving app resources and parsing HTML and CSS. This can include network requests. The following associated events are logged in the [Timeline](#timeline):
 
-Click and drag horizontally across an area on the **timeline** to highlight it. This filters the **Timeline details** to show just the details of the highlighted area. Zoom for more details. To the right of the zoom controls, at the top of the **Performance** tool is a **clear selection** icon that removes the highlight.
+Event | Description
+:------------ | :-------------
+CssParsing  | New CSS content was encountered that needed to be parsed.
+HtmlParsing | New HTML content was encountered that needed to be parsed into nodes and inserted into the DOM.
+HttpRequest | A remote resource was encountered in the DOM or an XMLHttpRequest was created that required an HTTP request to be made.
+HtmlSpeculativeDownloading | The page's HTML content was being searched for required resources so that the HTTP requests for them could be scheduled as quickly as possible.
 
-### The timeline details
 
-![Microsoft Edge F12 Tools Performance Timeline Details](./media/gdr_f12_ResponsivenessTimelineDetails.png)
+#### Scripting
+Indicates time spent parsing and executing JavaScript. This includes DOM events, timers, script evaluation, and animation frame callbacks. The following associated events are logged in the [Timeline](#timeline):
 
-The **Timeline details** look deeper into the recorded events, breaking down the categories into their component events. This info provides details about the DOM elements they impact or the code they cause to run.
+Event | Description
+:------------ | :-------------
+DomEvent | An event was fired on a DOM object.
+EvaluatingScript | A new `<script>` element was encountered in the DOM and needed to be parsed and executed.
+EventHandler | A registered event listener was triggered in response to a DOM event being fired.
+Frame | While a new frame was being prepared a registered callback was triggered so that it could contribute visual changes.
+Measure | An app-specific scenario was measured using the `performance.measure()` method.
+MediaQueryListener | A registered media query was invalidated which resulted in the execution of its associated listener(s).
+MutationObserver | One or more observed DOM elements were modified which resulted in the execution of a MutationObserver's associated callback.
+TimerFired | A scheduled timer elapsed which resulted in the execution of its associated callback.
+WindowsRuntimeAsyncCallback | An async operation was completed by a Windows Runtime object which triggered a `Promise` callback.
+WindowsRuntimeEvent | An event was fired on a Windows Runtime object which triggered a registered listener.
 
-In the previous image, The `DOMContentLoaded` event has a very short *exclusive duration* time, which is the time it took for the event itself to fire. The longer *inclusive duration* includes not only the event, but several processes launched as a result of the event.
+#### GC
+Indicates time spent collecting memory for objects that are no longer in use. The following associated events are logged in the [Timeline](#timeline):
 
-The **event type filter** offers filters for **background activity**, **network traffic**, **UI activity** and **user measures**. When one of those options is unselected, that kind of event is filtered out of the **Timeline details**. For example, while a page is loading, the details can be overwhelmed by **HTTP request** events. Click the **event type filter** and uncheck **network traffic** to make them disappear from view. 
+Event | Description
+:------------ | :-------------
+GarbageCollection | The JavaScript runtime audited the app's current memory usage in order to determine which objects aren't being referenced anymore and could therefore be collected.
 
-In the image below, at the bottom of the dialog, a time filter is shown as set to filter out all events taking less than 1 millisecond, and a text box at the top is set to filter by text in the event's name.
+#### Styling
+Indicates time spent calculating element presentation and layout. The following associated events are logged in the [Timeline](#timeline):
 
-![Microsoft Edge F12 Tools Performance Timeline Filter](./media/Edge_Performance_filters.png)
+Event | Description
+:------------ | :-------------
+AlignedBeat | Pending visual changes that were made to the DOM were processed so that the app's display could be updated.
+CssCalculation | Changes were made to the DOM or new CSS content was added, requiring the style properties of all affected elements to be recalculated.
+Layout | Changes were made to the DOM that required the size and/or position of all affected elements to be computed.
 
-To the left of the updated filters button is the **Group top level events by frames** button, or **frame grouping**. This creates a set of pseudo-events based on the measured frame rate and groups events under them. When you're trying to determine why you're dropping frames in an animation, this helps break units of work by frame and identify where frames are taking longer to execute than others.
+#### Rendering
+Indicates time spent in painting the screen. The following associated events are logged in the [Timeline](#timeline):
 
-![Microsoft Edge F12 Tools Performance Timeline Grouping](./media/Edge_Performance_grouping.png)
+Event | Description
+:------------ | :-------------
+Paint | Visual changes were made to the DOM that required all affected portions of the page to be redrawn.
+RenderLayer | Visual changes were made to an independently rendered fragment of the DOM (called a layer) which required its respective portion of the page to be redrawn.
 
-For a quick overview of events that contributed to the inclusive duration, the event details pane shows a circular chart using the same color coding as the timeline. Because the colors represent categories of events, the chart might contain multiple segments in the same color. Placing your mouse over a segment shows a tooltip with its event label.
+#### Image decoding
+Indicates time spent decompressing and decoding images. The following associated events are logged in the [Timeline](#timeline):
 
-### Filtering to an event
+Event | Description
+:------------ | :-------------
+ImageDecoded | An image was included into the DOM and needed be to decompressed from its original format into a bitmap.
 
-Right-click events to see a context menu with three options:
+### Visual throughput
 
-  - **Filter to event** sets the zoom level to the event's inclusive time, so just the event and any events that happened at the same time are displayed.
+The **Visual throughput (FPS)** graph shows the estimated *frames per second* (FPS) during the course of the profiling scenario, where 60 FPS is the ideal display rate. Dips in the frame rate indicate performance bottlenecks and a frame rate of zero means that frames are getting dropped entirely.
 
-  - **Clear selection** zooms out again.
+## Timeline details
 
-  - **View Source** is only enabled for **Scripting** events. It switches to the [**Debugger**](./debugger.md), opens the file containing the code that generated the event, and moves the cursor to the point in the code where the event was generated.
+Use the lowermost details pane to get the full breakdown of what happened on the page. The **Timeline details** tab provides a breakdown of events that occured within the various browser subsystems.
 
-### The details of the details
+![Performance timeline details pane](./media/performance_details_timeline.png)
 
-Each element in the **Timeline details** shows different info, depending on its type.
+1. **Event list sort control**
 
-![Microsoft Edge F12 Tools Performance Timer Details](./media/F12BlueResponsivenessTimerDetails.png)
+    Use the **Sort by** dropdown control to toggle the [Event list](#event-list) order between *Start time* or *Duration (inclusive*). This also changes the view of the [Selected timeline details](#selected-timeline-details).
 
-This timer was invoked by a [`setTimeout()`](https://msdn.microsoft.com/library/ms536753.aspx) which called the **autoNextSlide** function in **script.jsx**. When you click the file name, it opens in the [**Debugger tool**](./debugger.md) and navigates to the function for inspection.
+2. **Group events by frame**
 
-The circular chart at the bottom shows that while **Scripting** made up a large part of the event's time, **Styling** took up a fair portion. Expanding the timer's event in the **Timeline details** shows more about the different **Styling** operations that contributed to the time it required.
+    Use the **Group top level events by frames** toggle to group top-level events (*HTML parsing, Layout, DOM event,* etc.) into their corresponding unit of work (or "frame") during periods of time where animations/visual updates were occurring. The frames are treated like other events, so they can be sorted/filtered and provide an *Inclusive time* summary when clicked in the [Event list](#event-list).
 
-When you select a portion of the timeline, that selection's summary information is presented in the event details pane like a timeline event until you select an event from the **Timeline details**.
+3. **Event list filter controls**
 
-![Microsoft Edge F12 Tools Performance Selection Summary](./media/Edge_Performance_selectionSummary.png)
+    Use the **Filter events** menu to configure the types of events shown in the [timeline details](#timeline-details). 
 
-## Event categories and definitions
-The Responsiveness tool uses 7 main event categories on the timeline. These break down into a selection of events in **Timeline details**.
+    ![Control to filter performance events](./media/performance_filter_events.png) 
+    
+    The following filters are available:
 
-  - **Loading** contains events related to bootstrapping and loading a webpage's resources. This is recorded for the primary window and any frames within it. The events gathered within **Loading** are:
-    - **CSS parsing**: New CSS content was found and needs to be analyzed. The details include the URL of the content or inline in parentheses after the event if the CSS is hardcoded into the webpage.
-    - **HTML parsing**: New HTML content was found that needs to be divided into nodes and added to the DOM.
-    - **HTTP request:** Makes an HTTP request to a server and receives the response. More than one response can appear at the same time and not consume significant resources. However, rendering might be delayed by waiting for a large or slow HTTP request to complete. The URL of the request and the response code are the type of details shown here.
-    - **Speculative downloading**: The webpage's HTML content is searched for required resources so HTTP requests can be scheduled as quickly as possible.
+    - **Image decoding**: Show events which occurred on a background thread (e.g. Image decoding, GC). 
+    - **Network traffic**: Show HTTP requests which were network-bound.
+    - **UI activity**: Show events which occurred on the UI thread and/or render thread (e.g. DOM event handlers, Layout).
+    - **User measures**: Show custom events which indicate calls to the performance.measure() method.
+ 
+    You can further filter top-level events by their inclusive duration.
 
-  - **Scripting** contains events related to processing and executing JavaScript. These events are gathered within **Scripting**:
-    - **Animation frame callback**: A new frame was being prepared and a registered callback was triggered so that it could contribute any visual changes. Details include the location of the callback within the webpage or external scripts.
-    - **DOM event**: A [**DOM event**](https://msdn.microsoft.com/library/hh771866.aspx) was fired. Event listeners attached to it are shown as children of the event.
-    - **Script evaluation**: Processing content within `<script>` elements. Details include the URL of the script or **inline** if it's part of the webpage.
-    - **Timer**: An [interval](https://msdn.microsoft.com/library/ms536749.aspx) or [timeout](https://msdn.microsoft.com/library/ms536753.aspx) completed and triggered execution of its callback. The details include the location of the timer within the webpage or external scripts, the time it took, and the name of its callback function (if any). Actions triggered by the callback are shown as children of the event.
-    - [**Media query listener**](https://msdn.microsoft.com/library/hh772369.aspx): When script that responds to a media query event runs, this is broken out as its own category.
-    - [**Mutation observer**](https://msdn.microsoft.com/library/dn265034.aspx): Script responding to events fired by mutation observers is broken out as a category.
+### Event list
 
-When a change is explicitly made to a style object via JavaScript (i.e. `element.style.height="20px"`), requiring the DOM to be updated, the individual changes and their exclusive times are shown as descendants of the Scripting event that caused them.
+The *Event list* gives you a chronological list of [browser subsystem events](#cpu-utilization) that occured during the selected span of time. 
 
-  - **GC**, garbage collection, is the identification and removal of items from memory when they are no longer needed. It's referred to by its full name in **Timeline details**.
+Click on any entry to populate the **Selected event details** chart for that item. Entries with nested events / functions will show their **inclusive** (time spent executing the function *and* any other functions it called) and **exclusive** (time spent only within the body of the calling function itself) times displayed in the chart.
 
-  - **Styling** contains events related to CSS styles and element positioning. The events gathered within **Styling** are:
+Right-click on any entry to open the context menu to filter the timeline to only that event and view the source code responsible for the event in the [**Debugger**](./debugger.md) (or [**Elements**](./elements.md) panel, if applicable).
 
-    - **Layout**: Changes were made to the DOM that required the size and/or position of all affected elements to be computed.
-    - **Style calculation**: Changes were made to the DOM or new CSS content was added, requiring the style properties of all affected elements to be recalculated.
+### Selected timeline details
 
-  - **Rendering** contains events related to putting elements on the screen. The events gathered within **Rendering** are:
-    - **Paint**: Visual changes were made to the DOM that required all affected portions of the page to be redrawn. **Render layer** events may appear as child events and indicate a specific fragment of the DOM was redrawn. The coordinates (x,y) and dimensions of the layer impacted by a **Render layer** event are included in the details.
+The *Selected timeline details* provides a detailed bar graph of inclusive/exclusive event times during the selected time span. When you sort by *Duration (inclusive)* using the **Event list sort control**, the longest running events will visually stand out in this chart. 
 
-  - **Image Decoding** is the activity of turning compressed image file formats into the sequences of colored pixels that are painted to the screen. It's referred to by its name in **Timeline details**.
+### Selected event details
 
-  - **Other**: Miscellaneous browser-related computing. Computing categorized as **Other** doesn't get displayed in **Timeline details**. In Windows 8.1 Update, **Other** is removed from the categories.
+This report provides further information about the selected event, including *Start time*, the executing thread type (for example, *Download*, *UI*, *Render*), and other contextual details specific to the specific event type. For example, *Event listener* types provide debugger links to the *Callback function* and *Scheduling call stack*.
 
-For a more specific demonstration of using the Performance tool, check out our demo and code sample: [Improving animation performance with the Performance tool](http://samples.msdn.microsoft.com/workshop/samples/UIPerformance/default.html).
+## JavaScript call stacks
 
-## JavaScript Call Stacks
-If you remember the F12 tools in Internet Explorer 11, you'll remember the **JavaScript profiler** tool. In Microsoft Edge, it's combined with the prior **UI responsiveness** tool to make the **Performance** tool. We found that the information for both tools was often needed together, so now whenever a **Performance** report is generated, the JavaScript call stack is timed and that profiling information is presented in the **JavaScript call stacks** tab.
+![Performance timings for JavaScript call stacks](./media/performance_details_javascript.png)
 
-![Microsoft Edge F12 Tools Performance Timeline Grouping](./media/Edge_Performance_callstacks.png)
+The **JavaScript call stacks** tab provides CPU usage information and timings for the script functions that ran during the selected time range:
 
-The image above shows the initial load of the Microsoft homepage, a little navigation around it, and the JavaScript functions that were invoked. 
+ Column | Description
+:------------ | :-------------
+Function name | Name of browser or user-defined function.
+Inclusive CPU (%) | Percentage of selected CPU activity in this function and in functions called by this function.
+Exclusive CPU (%) | Percentage of selected CPU activity in this function, excluding activity in functions called by this function.
+Inclusive CPU (ms) | CPU time spent executing code in this function and in functions called by this function.
+Exclusive CPU (ms) | CPU time spent executing code in this function, excluding time in functions called by this function.
+URL | URL(s) where stack frame occurred. Function calls originating from the browser (standards-based web APIs) are labeled as *[DOM]*.
 
-  - The **Inclusive CPU** (both % and ms) represent the amount of CPU resources and time to execute required both by that function and the other functions called as a result of running it.
+## Shortcuts
 
-  - The **Exclusive CPU** (both % and ms) represent the amount of CPU resources and time to execute required speficically by that function alone.
-
-  - The **URL** provides the URL of the script where that function exists. Because of functions in your code calling libraries that reside in different files, you may see multiple URLs owning the child functions in a call stack.
-
-
-## Performance profiling tips
-**Test more than once**: The results you'll see in a profiling report are not just based on your code. They're influenced by other processes on your system competing for your processor and memory. A moment of slowness or a bad overall test might be due to a virus scan running in the background or too many tabs being open on your browser. Alternatively, if you test on a new machine under laboratory conditions, it might be so fast, your code just runs great. It's important to make sure you can reproduce slowness reliably, just like reproducing a bug. Then you can diagnose the cause.
-
-**Consistency feels faster**: The **Performance** profiler's visual map of your frame rate over time can be very useful. Uneven frame rates or skipped frames can make your site feel slow. If it reduces skips and helps keep the frame rate consistent, slowing down your animation could make it feel faster. ["The secret to silky smooth JavaScript animations"](http://creativejs.com/resources/requestanimationframe/) provides a couple of suggestions for reducing frame rate while getting the power-saving and anti-skipping benefits of using [`window.requestAnimationFrame()`](https://msdn.microsoft.com/library/hh773174.aspx).
-
-**How much of this CSS is necessary?** Many sites use a site-wide style sheet to make pages load faster. It can reduce the number of network requests and take advantage of caching on subsequent loads. However, every style in a style sheet must be parsed and adds to the complexity of **Styling** calculations whether the style is used in the page or not.
-
-For most sites, this never becomes a problem. In very large sites with complex styling, lots of pages, lots of UI animations, and gigantic site-wide style sheets, you'll often see **Styling** operations become a primary cause of performance lags because of the overhead created by unused styles.
-
-At this point, the question to ask is: is the cost of the unused styles bigger than the benefit of the single style sheet? Try a few different solutions and profile them. You'll have your answer soon enough.
-
-## Related topics
-
-[Improving animation performance with the Performance tool](http://samples.msdn.microsoft.com/workshop/samples/UIPerformance/default.html)
-
-[The Performance tool in Visual Studio](https://msdn.microsoft.com/library/dn194502.aspx)
-
-[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
+ Action | Shortcut
+:------------ | :-------------
+Start / Stop profiling session  | `Ctrl` + `E`
+Import profiling session | `Ctrl` + `O`
+Export profiling session | `Ctrl` + `S`

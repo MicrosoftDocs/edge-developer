@@ -1,263 +1,255 @@
 ---
-ms.assetid: 4d997971-268e-43e2-bd4b-0ea207e71aa3
-description: Learn how to use the Debugger tool to navigate your code as it runs, set watches and breakpoints, and view call stacks.
-title: F12 devtools guide - Debugger
+description: Use the Debugger to step through and troubleshoot your code.
+title: Microsoft Edge F12 DevTools - Debugger
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
 ---
 
 # Debugger
 
-Use the **Debugger tool** to navigate your code as it runs, set watches and breakpoints, view call stacks, and improve the readability of compiled/minified JavaScript.
+Use the **Debugger** to step through code, set watches and breakpoints, live edit your code and inspect your caches. Test and troubleshoot your code by:
 
-## When do you need the Debugger tool?
-The **Debugger tool** helps you figure out why pieces of your code are:
+- [Browsing and searching all the code files](#resource-picker) that are currently loaded
+- [Controlling the execution flow](#toolbar) as you step through your code
+- [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
+- [Setting breakpoints and live editing](#debug-window) your code as it runs
+- [Tracking and editing local variables](#watches) as you debug
+- [Hiding or showing asynchronous code and library code](#callstack) from your callstack as needed
+- [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
 
-  - Not running as expected.
-  - Not running when expected.
-  - Running when they shouldn't.
+![The Microsoft Edge F12 DevTools Debugger](./media/debugger.png)
 
-The **Debugger tool** pauses code mid-execution, lets you back up and repeat blocks of code, and lets you inspect your code from different angles to see:
-
-  - How the JavaScript engine got there.
-  - What the values of certain variables are mid-execution.
-  - How things are changing, step-by-step.
-
-## Starting the Debugger tool
-Load the problematic webpage in Microsoft Edge and open F12 developer tools by pressing the **F12** key or selecting the **F12 developer tools** option from the **More Actions** menu. Click the **Debugger** menu item or press CTRL + 3 to open the tool.
-
-### The Debugger tool layout
-The default layout of the **Debugger tool** shows three panes with adjustable widths and/or heights.
-
-![Microsoft Edge Debugger](./media/Edge_Debugger.png)
-
-  - The *script* pane (left) shows the source of the webpage's HTML and JavaScript in a tabbed interface. The script pane's scroll bar area also highlights the location of breakpoints and matches for search terms.
-
-  - The **Watches** pane (upper right) displays variable values. When you're in break mode, it shows the local variables for your current location in code, called locals, and specific variables you've asked it to track, called watches.
-
-  - The **Callstack and Breakpoints** pane in the lower right includes:
-    - **Callstack**: This mode shows the chain of function calls that led to the current point in execution. For example, if function *a()* called function *b()*, which called function *c()*, and execution paused in *c()*, it would show the path from *a()* to *b()* to *c()*.
-
-    - **Breakpoints**: This mode shows a list of the breakpoints and tracepoints you've set and provides functions to delete, toggle, and edit breakpoints.
-
-The **Console** icon (next to the **Help** icon at the top of the F12 tools) or CTRL + ` opens the [**Console tool**](./console.md) in a fourth pane below the *script* pane. Open it when you want to view **Console** output, or use the **Console** command line.
-
-### Starting a debugging session
 There are three ways to begin a debugging session.
 
-  - [Set a breakpoint](#setting-and-managing-breakpoints). When the execution of your code reaches it, you enter break mode and can start running code step-by-step.
+1. **Set a breakpoint.** When the execution of your code reaches it, you'll enter the debugger and be able to step through your code.
+2. **Initiate a break in code.** Click the [**Break**](#toolbar) (*pause* icon) toolbar button or `Ctrl+Shift+B`. The debugger will break on the next statement of execution.
+3. **Set exception behavior.** Use the [**Change exception behavior**](#toolbar) menu (`Ctrl+Shift+E`) to break into the debugger when your code throws an exception. By default, the debugger is set to *Never break on exceptions*, but they are logged to the console.
 
-  - Initiate a break in code. Click the **Break** icon (two vertical parallel lines) at the top of the tool or press CTRL + SHIFT + B. The **Debugger tool** breaks on the next statement executed.
+## Resource picker
 
-  - Set the **Exception control** to break on unhandled exceptions and run your webpage's code until an exception is hit.
+Often the first step in debugging is to set breakpoints in the code you're looking to troubleshoot. You can find all the code files currently loaded by the page from the *Resource picker* pane, including *.html, .css* and *.js* files.
 
-The **Debugger tool** debugs without requiring a page refresh, preserving state.
+By default the pane is expanded and pinned to the left of the [Debug window](#debug-window), but you can minimize it with the **Unpin/Pin** button (and use the **Open document** (`Ctrl+O`) button when you need it again).
 
-### Controlling session flow
-After the **Debugger tool** reaches a breakpoint and you're ready to move on from it, you can use the execution control icons to decide what to do next.
+![Debugger resource picker](./media/debugger_resource_picker.png)
 
-![Microsoft Edge Debugger Execution Control Icons](./media/gdr_f12_DebuggerIcons.png)
+Find the code files you're looking for by browsing the folders or with a file name search string in the **File name filter**. Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *f12-devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
 
-From left to right, the icons are:
+From the *Resource picker*, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
 
-  - **Continue** (F5 or F8): Leaves break mode and continues to the next breakpoint. Holding down F5 will repeatedly move past breaks until you release it.
-  - **Break** (CTRL + SHIFT + B): Breaks on the next statement run.
-  - **Step into** (F11): Steps into the function being called, or if not at a function, to the next statement.
-  - **Step over** (F10): Steps over the function being called, or if not at a function, to the next statement.
-  - **Step out** (SHIFT + F11): Steps out of the current function and into the calling function.
-  - **Break on new worker** (CTRL + SHIFT + W): Breaks on the creation of a new web worker.
-  - **Exception control** (CTRL+ SHIFT + E):
+### Cache managers
 
-![Microsoft Edge Debugger Execution Control Icons](./media/F12BlueDebuggerUnhandledException.png)
+The *Resource picker* is also the place where you can manage various page storage types, including:
 
-By default this ignores exceptions and they're just logged to the [**Console tool**](./console.md). You can choose to break on all exceptions, or just those not being handled by try... catch exception handlers in your code.
+ - [Service Workers and the Cache](./debugger/progressive-web-apps.md) for Progressive Web App debugging
+ - [Web storage](./debugger/web-storage.md) (*Local* and *Session* storage)
+ - [Cookies](./debugger/cookies.md) for the domain 
 
-**Note**  Be careful about breaking on unhandled exceptions when you have one or more large JavaScript libraries included in your webpage and you're not excluding them via Just my code. You might find yourself stepping through a lot of minified code that isn't yours.
+Expand any of those categories and click on a child entry to open its resource manager tab in the *Debug window*.
 
-Additionally, after you've broken on a statement, you can right-click in the script pane to expose three additional controls:
+## Debug window
 
-  - **Show next statement**: Puts the highlight on the next statement to be run by clicking Step into.
-  - **Run to cursor** (CTRL + F10): Resumes execution and breaks at the point in code where your cursor is, so long as it's a valid place to break.
-  - **Set next statement** (CTRL + SHIFT + F10): This lets you skip over statements in a function without having to step out of it, somewhat like commenting out the statements temporarily. You can also skip backwards to a statement that already ran. You won't rewind the webpage when you do this. You just repeat your code from that point.
+The *Debug window* is where you set your breakpoints, step through code, and live edit your script as you debug. Click to the left of any script command to add (or remove) a **Breakpoint**. Use the right-click context menu or [**Breakpoints**](#breakpoints) pane to *Add a condition* to the breakpoint by supplying a logical expression that causes the debugger to break if it evaluates *True* at that location.
 
-### Formatting code for readability
-The two icons to the right of **Exception control** make large blocks of code easier to read in the *script* pane.
+![Debug window commands](./media/debugger_window.png)
 
-  - **Pretty print** takes a compressed or minified block of JavaScript, HTML, or CSS and formats it for readability. This:
+Other features of the debug window include controls for:
 
-###### *JavaScript*
-```javascript
-function _ge(n){return _d.getElementById(n)}function sj_wf(n)
-{var t=arguments;return function(){n.apply(null,[].slice.apply(t).slice(1))}}
-function sj_ce(n,t,i){var r=_d.createElement(n);return t&&(r.id=t),i&&(r.className=i),r}
+### 1. Code editing
+
+You can edit your JavaScript live during a debugging session. Once you make your changes, click **Save** (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (*) will appear before the file name in the *Debug window* tab.
+
+Click the **Compare document to original** button to view the diff of what you changed.
+
+![Diff view of edited code in the Debugger](./media/debugger_edit_code.png) 
+
+Please be aware of the following constraints:
+
+- Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
+- Edits are saved in memory and flushed when the document is reloaded, thus you won’t be able to run edits inside a `DOMContentLoaded` handler, for example
+- Currently there’s no way (such as a **Save As** option) to save your edits to disk from F12 DevTools
+
+### 2.Code formatting
+
+Use these controls to format minified code for better readability as you debug:
+
+ #### Pretty print (`Ctrl+Shift+P`) 
+ Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
+
+ #### Word wrap (`Alt+W`)
+ Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
+
+### 3. Code scoping
+
+You can direct the debugger to ignore certain files with the **Mark as library code** (`Ctrl+L`) button. By default, the [**Debug just my code**](#toolbar) toolbar button is on, meaning that the debugger will skip over any files that you mark as *library code* and they will not appear in the debugger [call stack](#call-stack). Depressing the button (**Mark as my code**, `Ctrl+L`) will remove this flag.
+
+For keeping track of libraries across debugging sessions, you can edit these files to maintain a default list or add wildcards for a domain or file type:
+
+```JavaScript
+%APPDATA%\..\LocalLow\Microsoft\F12\header\MyCode.json and %APPDATA%\..\Local\Microsoft\F12\header\MyCode.json
 ```
 
-Becomes this:
+#### Source maps
 
-```javascript
-function _ge(n) {
-  return _d.getElementById(n);
-}
-function sj_wf(n) {
-  var t = arguments;
-  return function () {
-    n.apply(null, [].slice.apply(t).slice(1));
-  };
-}
-function sj_ce(n, t, i) {
-  var r = _d.createElement(n);
-  return t && (r.id = t) , i && (r.className = i) , r;
-}
-```
+You will see the **Toggle source maps** button enabled for code written in a language that compiles to JavaScript or CSS and that provides a *source map* (an intermediate file mapping to the original source). This option directs the debugger to present the original source to use for debugging (rather than the compiled file that's *actually* running in the browser).
 
-  - **Word wrap** breaks long lines to fit them within the script pane so you don't have to scroll horizontally to see the full line.
+The F12 DevTools will check if the compiler that generated the JavaScript file included a comment with the name of the map file. For example, if a compiler compressed *myfile.js* to *myfile.min.js*, it might also generate a map file, *myfile.min.js.map* and include a comment in the compressed file like this:
 
-### Source maps
-When you've written code in a language that compiles to JavaScript or CSS and/or you've used a compressor, the code running in the browser is very different from the code you wrote. That can make debugging very difficult. Even compressed code that's been made more readable with **Pretty print** may have function, selector, and variable names that are much different than in your original source code. Debugging is much easier when errors point to where the issues are in your original source code, rather than a highly modified file running in the browser.
-
-A number of compilers and compressors now provide source maps; intermediate files that map the compiled JavaScript or CSS back to the original source. When the compiled or compressed JavaScript or CSS contains a pointer to a source map, all files are present, and source map functionality is enabled, the Debugger tool shows the original source and maps breakpoints and errors to it.
-
-**How do I enable source maps?** The compiler or compressor generating the JavaScript includes a comment with the name of the map file. For example, if `myfile.js` was compressed to `myfile.min.js` by a compressor that supported source maps, it would generate a map file called `myfile.min.js.map` and put a comment in `myfile.min.js` like this:
-
-```javascript
+```JavaScript
 //# sourceMappingURL=myfile.min.js.map
 ```
 
-When you open a file with **Debugger tool** that has this kind of comment, the tool looks for the map file. If found, the last [toolbar](./debugger.md#controlling-session-flow) icon on the right ![Microsoft Edge Debugger Execution Control Icons](./media/gdr_f12_SourceMapsIcon.png) is enabled as a toggle. When the icon is toggled on and the source file is where the map indicates, your source code is displayed instead of the compiled/compressed JavaScript or CSS. If the source file cannot be found, the **Debugger tool** displays an error message.
+![Debug file tab context menu](./media/debug_file_contextmenu.png)
 
-If the map isn't found automatically, you can choose a source map for a file. Right click the file's tab to find this option. This is useful for code where comments like the one with the source map's location have been stripped out.
+If the F12 DevTools can't find the map automatically, you can choose a source map for that file. Right-click the file's tab to find the **Choose source map** option. 
 
-![Microsoft Edge Debugger Source Map](./media/sourcemapdesignate.png)
+## Toolbar
 
-The **Debugger tool** won't display an error if the map is not found. In many cases people download compressed or compiled libraries, such as jQuery, and don't plan to or want to debug them. If the map file is not where the comment says it will be, the comment is ignored and the feature is not enabled
+Use the debugger *Toolbar* to control how you step through code, and what code to step through or ignore. From here you can also do a full text search across your code files for specific strings.
 
-**Mapping is not 100% perfect.** Call stacks and inspector functions show the compiled/compressed variable's name as it is used in the running code, not in the original source. Also, the quality of source maps varies based on the software producing them. The quality of the mapping is affected by the quality of the map.
+![Debugger toolbar](./media/debugger_toolbar.png)
 
-## Setting and managing breakpoints
-Different types of points allow you to instruct the **Debugger tool** to do different things when it reaches them.
+### 1. Continue (`F5`) / Break (`Ctrl+Shift+B`)
+ **Continue** (`F5`) continues code execution to the next breakpoint. Holding down `F5` will repeatedly move past breaks until you release it. 
+ 
+ **Break** (`Ctrl+Shift+B`) will break into the debugger after running the next statement.
 
-  - **Regular breakpoints** are the easiest to set if you have one statement per line. In the shaded leftmost margin of the script pane, click next to a line number. A dot appears and the breakpoint is set.
-  On lines with multiple statements, you can set breakpoints for individual statements. Right-click on a statement and set a breakpoint from the context menu or put the cursor inside the statement and click F9.
+### 2. Step functions (`F11`, `Ctrl+F10`, `Shift+F11`)
+ **Step into** (`F11`) steps into the function being called. 
+ 
+ **Step over** (`Ctrl+F10`) steps over the function being called. 
+ 
+ **Step out** (`Shift+F11`) steps out of the current function and into the calling function. 
+ 
+ The debugger will step to the next statement if it is not at a function when these commands are used.
 
-  - **Conditional breakpoints** only break if a condition you set evaluates to true. For example, let's assume there's a students variable in your code and you only want to break when the value of students is greater than 20.
-Right-click the breakpoint or statement and click Condition from the context menu, or press ALT + F9. In the condition dialogue, enter `students > 20` and submit the condition. `A + symbol` appears on your breakpoint and your code only breaks on it when `students > 20` evaluates to true.
+### 3. Break on new worker (`Ctrl+Shift+W`)
+ Breaks on the creation of a new [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
 
-  - **Tracepoints** act like temporary `console.log()` commands.
-To set one, right-click a statement and click **Insert tracepoint** from the context menu. In the dialog, enter a message in the same format you would use for an argument of the `console.log()` command. It has access to the same local and global variables the statement you clicked on does.
+### 4. Exception control
+**Change exception behavior** (`Ctrl+Shift+E`) opens options to change how the debugger reacts to exceptions. By default exceptions are ignored by the debugger and logged to the [**Console**](./console.md). You can choose to *Break on all exceptions*, or just those not being handled by `try...catch` statements in your code (*Break on unhandled exceptions*).
 
-  - **Event Breakpoints and Tracepoints** work like the breakpoints and tracepoints above, but instead of being triggered when a specific block of code is executed, they are triggered by specific events. Each has an optional conditional filter to help you narrow down their scope to the specific instance of an event you want to inspect. They can be added using the **Add event breakpoint** and **Add event tracepoint** icons highlighted in the image below.
+### 5. View search results
+(Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files) search results.
 
-![Add event breakpoint](./media/eventpoints.png)
+### 6. Find in files (`Ctrl+F`)
+ **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
 
-  - **XHR Breakpoints** set a breakpoint that breaks whenever an XHR request has been fulfilled and use the **Watches** pane to inspect the XHR object that received the response.
+### 7. Debug just my code (`Ctrl+J`)
+ **Debug just my code** (`Ctrl+J`) acts as a toggle to include or exclude all the files that have been marked as [library code](#3-code-scoping) as you step through the debugger.
 
-![Microsoft Edge Debugger XHR Breakpoints](./media/Edge_Debugger_breakpoints.png)
+### 8. Debugger connection
+**Disconnect/Connect debugger** is essentially the on/off switch for the debugger.
 
-### The Breakpoints pane
-Besides appearing next to statements in the script pane, the full collection of breakpoints show in the **Breakpoints** pane.
+## Watches
 
-![Breakpoints Pane](./media/F12BlueDebuggerBreakpoints.png)
+Use the **Watches** pane to browse a catalog of all objects and variables (**Locals**), both in the local and global scope, available to the statement that is the focus of the current break in the debugger.
 
-You can manage multiple points in the **Breakpoints** pane. Right-click anywhere in it to get context menu options to delete all points or toggle them on or off. The options also appear as icons in the upper-right of the pane, and to the left and right of individual breakpoints. Right-clicking any individual point presents a **Condition** or **Trace message** option in the context menu to let you change the message or make the breakpoint conditional.
+![Watches pane](./media/debugger_watches.png)
 
-The panel can trace many breakpoints from many different scripts that may be feeding your pages. Clicking any breakpoint's associated file name makes that the active file in the *script* pane and scrolls to the appropriate line.
+You can track the value of specific variables as they pass in and out of scope by adding a watch (**Add watch**, `Ctrl+W`) and modify any editable values by double-clicking on it or by selecting **Edit value** from the *Context menu*. Clear your watches using the **Delete** (`Ctrl+D`) / **Delete all** buttons or from the context menu. 
 
-Breakpoints used to be session based in Windows Internet Explorer, but in Microsoft Edge the behavior was changed so they are kept and no longer disappear when you close the browser. This means you no longer have to set them every time you open the browser to debug, but it also means you might want to manually delete them when you're done debugging. The easiest way is to open a script file and click the **delete all** icon in the upper-right of the **Breakpoints** pane.
+## Details
 
-Multiple breakpoints can be selected using `CTRL + CLICK, SHIFT + CLICK, or CTRL + A` methods.
+The *Details* pane includes the [**Callstack**](#call-stack), [**Breakpoints**](#breakpoints) and [**DOM breakpoints**](#dom-breakpoints) tabs.
 
-## Inspecting objects and variables
-After you've set your breakpoints and stepped into your code, the Debugger tool gives you several ways to see what's going on.
+### Call stack
 
-![Microsoft Edge Debugger Inspector](./media/Edge_Debugger_inspect.png)
+The **Call stack** tab shows the chain of functions that led to the current point of execution. The current function appears at the top, and the calling functions appear below it in reverse order.
 
-  - In the *script* pane, when the debugger is paused on a statement, hover your mouse over any variable, function, or object to see more info in an overlay. Move your mouse down into the overlay to expand and inspect objects much like you can if you log them to the [**Console**](./console.md) with the [**dirxml()**](https://msdn.microsoft.com/library/dn265067.aspx) method.
-Click **Add watch** at the bottom of the overlay to add the variable or object to the **Watches** pane.
+![Call stack pane](./media/debugger_callstack.png)
 
-  - The **locals** node in the **Watches** gives you a catalog of all objects and variables, both in the local and global scope, available to the statement that is the focus of the current break. This can help identify variables that are in the wrong scope.
+The **Show/Hide library frames** button (`Ctrl+Shift+J`) toggles the output of [library code](#3-code-scoping) from the call stack. Use the **Library code** option (`Ctrl+L`) from the right-click *Context menu* to mark (or unmark) the source of the selected frame as library code. 
 
-  - A variable or object added to the **Watches** pane with the **Add watch** command appears beneath the **locals** node and it is monitored at every step in break mode, even if the current breakpoint is in a different scope. Autocomplete functions give you suggestions of known variables when adding watches.
+The **Show/Hide async frames** button toggles the display of roots for asynchronous function calls.
 
-  - It's fairly common for a function to be called unexpectedly. This can cause data corruption and speed issues. The **Callstack** pane shows the route the JavaScript engine took to get to the function. The current function appears at the top, and the calling functions appear below it in reverse order.
+### Breakpoints
 
-  - To help you trace where a function was called when it's been called asynchronously, the **Callstack** pane displays a call's asynchronous roots.
+From the **Breakpoints** tab, you can manage you breakpoints and event tracepoints, including setting conditions, disabling and deleting them.
 
-![Microsoft Edge Debugger Call Stack](./media/async.png)
+![Breakpoints tab](./media/debugger_breakpoints.png)
 
-The image above shows a very simple asynchronous call, created by running the following code in the console.
+Here's a summary of the different types of breakpoints you can use for debugging.
 
-```javascript
-function getReturn(){
-  debugger;
-}
-function setup(){
-  window.setTimeout(getReturn, 1000);
-}
-setup();
-```
+Breakpoint type | Description | How to set it
+:------------ | :------------ | :--------
+**Breakpoint** | Breaks into the debugger just before the specified line of code is executed. Regular breakpoints are easiest to set if you have one statement per line. | From the [Debug window](#debug-window), click in the left margin next to any line number in the code. A red dot appears and the breakpoint is set. You can jump into the source of any breakpoint by clicking on its blue text.
+**Conditional breakpoint** | Breaks if the specified condition evaluates to *true*. This is essentially an `if(condition)`  for breaking into the debugger.  | From the [Breakpoints](#breakpoints) tab, hover over an existing breakpoint and click the "pencil" button (*Add a condition to this breakpoint*), right-click an existing breakpoint and select **Condition...** from the context menu. Specify the "if" condition to be evaluated at the breakpoint location. 
+**XMLHttpRequest breakpoint** (w/optional condition) | Breaks whenever a XMLHttpRequest (XHR) request has been fulfilled. You can inspect the XHR `response` object from the [**Watches**](#watches) pane. | From the [Breakpoints](#breakpoints) tab, click the *XMLHttpRequest breakpoint* button (circle with up/down arrows). You can turn it into a *Conditional breakpoint* as described above.
+**Event tracepoint** | Calls [`console.log()`](./console/console-api.md#logging-custom-messages) with a specified string in response to a specific event. Use this for temporary console logging statements that you don't want to save directly in your event handler code. | From the [Breakpoints](#breakpoints) tab, click the *Event tracepoint* button (diamond with lightning bolt). Select an **Event** type for the trigger and a **Trace** statement for logging.
+**Event breakpoint** (w/optional condition) | Breaks whenever a specified event is fired. | From the [Breakpoints](#breakpoints) tab, click the *Event breakpoint* button (circle with lightning bolt). Select an **Event** type for the trigger and optionally, specify a **Condition** statement. 
+**DOM breakpoint** | Breaks whenever a specified element on the page is mutated, such as when its subtree is modified, its attributes change, or when it is detached from the DOM. | From the [Elements](./elements/dom-breakpoints.md) tab, right-click on a source element and select from the *DOM Breakpoints* options. Use the [**DOM breakpoints**](#dom-breakpoints) tab in either the *Debugger* or *Elements* panels to manage your breakpoints. 
 
-  - When breaking on a function with a **return value**, step into the function until you've stepped to the closing curly bracket. The return value will be displayed in the **Locals** portion of the **Watches** pane. Step again and the value will be returned to the code that called for it.
+Conditional breakpoints and tracepoints have access to all the local and global variables currently in scope when they break into the debugger.
 
-For a quick demonstration, try this code in the **Console**:
+### DOM breakpoints
 
-```
-function showval() { var x = 0; x++; debugger; return x; } showval();
-```
+Manage your DOM mutation breakpoints from the **DOM breakpoints** tab, including disabling, deleting and rebinding them.  [DOM breakpoints can be set](./elements/dom-breakpoints.md) from the *HTML tree view* in the **Elements** panel.
 
-It will call the function, `break on debugger`, and you can step into it to see the return value.
+![DOM breakpoints tab](./media/debugger_dom_breakpoints.png)
 
-## Managing multiple scripts
-The *script* pane in the **Debugger tool** provides a tabbed interface where you can select open files by clicking their tabs and quickly navigate through open tabs using `CTRL + TAB`.
+The *DOM breakpoints* tab in the **Debugger** provides equivalent functionality to the *DOM breakpoints** tab on the **Elements** panel.
 
-![Microsoft Edge Debugger Script Pane](./media/gdr_f12_DebuggerFileOpen.png)
+Here's more on the different types of [DOM breakpoints](./elements/dom-breakpoints.md).
 
-Open files by clicking the folder icon or pressing `CTRL + O` to open the file list. In the file list, documents are grouped into nodes under the primary document of the frame or window in which they're running. Hover over an individual file to show the file's full URI.
+## Shortcuts
 
-Web Workers are displayed as separate nodes from the documents(s) that created them. Iframes are displayed as child nodes of the main document.
+### Toolbar shortcuts
+Action | Shortcut
+:------------ | :-------------
+Find | `Ctrl` + `F`
+Continue (from breakpoint) | `F5` or `F8`
+Fast continue | Hold `F5` or `F8`
+Continue and refresh | `Ctrl` + `Shift` + `F5`
+Break | `Ctrl` + `Shift` + `B`
+Step into | `F11`
+Step over | `F10`
+Step out | `Shift` + `F11`
+Break on new worker | `Ctrl` + `Shift` + `W`
+Change exception behavior (opens menu) | `Ctrl` + `Shift` + `E`
+Debug just my code | `Ctrl` + `J`
 
-The **Type to filter** box at the top of the file list will filter the available files by filename. To run a text search through all available files, use the **Find in files** `CTRL + F` box in the upper right of the F12 tools. If your text is found, it opens the first file where the search text is matched, and maps the matches in that file on the scrollbar of the *script* pane. Pressing `F3` takes you to the next match.
+### Resource picker shortcuts
+Action | Shortcut
+:------------ | :-------------
+Mark as my code / library code | `Ctrl` + `L`
+Open document | `Ctrl` + `O`
 
-A list of which files you have open while debugging a webpage is recorded when you leave the page or close the browser. When you return to the webpage, the files you had open will re-open in the debugger.
+### Debug window shortcuts
 
-## Just my code
-Just my code lets you indicate that certain scripts are third-party libraries that should be ignored while debugging. This prevents the **Debugger tool** from stepping into code you didn't write and don't plan to change.
+Action | Shortcut
+:------------ | :-------------
+Remove breakpoint | `F9`
+Disable breakpoint | `Ctrl` + `F9`
+Conditional breakpoint... | `Alt` + `F9`
+Copy | `Ctrl` + `C`
+Save | `Ctrl` + `S`
+Go to line... | `Ctrl` + `G`
+Show next statement | `Alt` + `Num` + `*`
+Run to cursor | `Ctrl` + `F10`
+Set next statement | `Ctrl` + `Shift` + `F10`
+Show in file picker | `Ctrl` + `Alt` + `P`
+Go to definition in file | `Ctrl`+`D`
+Find references in file | `Ctrl` + `Shift` + `D`
+Pretty print | `Ctrl` + `Shift` + `P`
+Word wrap | `Alt` + `W`
+Mark as my code / library code | `Ctrl` + `L`
 
-To indicate a file is library code you want excluded from debugging, the following methods are available:
 
-  - Place your mouse over its name in the script pane's file list. The Just my code icon appears next to the file name. Click the icon or type CTRL + L to toggle it on or off.
+### Shortcuts for Watches pane
 
-  - Right-click the script's tab at the top of the pane and select "Library code" from the context menu.
+Action | Shortcut
+:------------ | :-------------
+Add watch | `Ctrl` + `W`
+Delete watch | `Ctrl` + `D`
 
-  - Right click an item in the **Call stack** and select "Library code" from the context menu to mark its parent script as library code.
+### Shortcuts for Details pane
 
-> [!NOTE]
->   Because the icon displays when you mouse over the file's name, it continues to display after being toggled off if the mouse pointer is still over the file's line in the list. To check that it's been toggled off, move the mouse over another file.
-
-
-The **Just my code** icon in the **Debugger tool**'s icon bar acts as a toggle to include or exclude all the files that have been marked as library code. When **Just my code** is enabled, if library code is part of the **Call stack** when execution pauses, the **Just my code** icon in the upper right corner of the **Call stack** pane toggles the details of that execution frame on and off. Double-clicking on a "[Library code]" line in the **Call stack** pane expands its details.
-
-Keeping track of libraries between sessions is one of the features of **Just my code**. This is managed via JSON files located at `%APPDATA%\..\LocalLow\Microsoft\F12\header\MyCode.json` and `%APPDATA%\..\Local\Microsoft\F12\header\MyCode.json`.
-
-You can edit the files to maintain a default list or add wildcards for a domain or file type. For example, the expression `*.min.js` is used to mark all files ending with `.min.js` as library code automatically.
-
-## Debugging and In Private Browsing
-In [Private Browsing](http://windows.microsoft.com/internet-explorer/products/ie-9/features/in-private) lets you browse without leaving a persisting trail in your browser history, but if you debug while using In Private Browsing, the Debugger might save some information that will persist.
-
-The Debugger saves info about the pages and files you debug when you add a breakpoint in a file, mark a file as library code with the Just My Code feature, or open a file in the Debugger that isn't the root page (such as an external CSS or JavaScript file). These are saved to provide debugging functionality across sessions, are separate from the browser history, and are not cleared at the end of an In Private Browsing session.
-
-If you have any privacy concerns, you can remove this info by clearing any breakpoints you set, closing all files you've opened in the debugger, and you can delete your **Just My Code** settings by deleting the files at `%APPDATA%\LocalLow\Microsoft\F12\header\MyCode.json` and `%APPDATA%\Local\Microsoft\F12\header\MyCode.json`.
-
-## Don't debug and performance profile
-Because of the additional overhead needed to run the Debugger and Performance tools at the same time, the values in your Performance report will not reflect the actual load and running time of your code. Trying to run both of these tools at once is not supported.
-
-## Related topics
-
-[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
-
-[Edit CSS in the Debugger](./debugger/edit-css-in-debugger.md)
-
-[Webstorage in the Debugger](./debugger/webstorage-in-debugger.md)
+Action | Shortcut
+:------------ | :-------------
+Show/Hide frames from library code | `Ctrl` + `Shift` + `J`
+Enable all breakpoints | `Ctrl` + `Shift` + `F11`

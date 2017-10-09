@@ -6,12 +6,12 @@ ms.author: edoyle
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, f12 developer tools
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
 
-# Coming with the Windows 10 Fall Creators Update
+# What's new in the Windows 10 Fall Creators Update (EdgeHTML 16)
 
-With this release we started a major F12 DevTools refactoring effort for improved robustness and future extensibility, and also added a bunch of new features you can start using today! 
+With this release we started a major F12 DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today! 
 
 Here are the latest Microsoft Edge F12 DevTools features coming with the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features) and available now on [Windows Insider Preview](https://insider.windows.com/en-us/) builds.
 
@@ -35,7 +35,7 @@ You can manage your mutation breakpoints from the **DOM breakpoints** pane in th
 
 ## CSS at-rule support
 
-CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including `@keyframes` percentages (currently limited to read-only), `@supports` feature queries, and `@media` queries.
+CSS "at" (@) rules are now represented among other CSS rule declarations on the **Styles** pane, including animation `@keyframes` rules (currently limited to read-only), `@supports` feature queries, and `@media` queries.
 
 ![CSS at-rules inspection from the F12 DevTools Style pane](./media/elements_at_rules.png)
 
@@ -53,30 +53,30 @@ The **Styles** pane now groups pseudo-elements under their own headings and no l
 ![Generated content was previously crossed out](./media/gc_before.png)
 
 **After:**
-![Generated content longer displayed with a strikethrough](./media/gc_after.png)
+![Generated content no longer displays with a strikethrough](./media/gc_after.png)
 
 ## Console improvements
 
 The **Console** panel got a UX overhaul for improved usability and a faster, richer Intellisense experience.
 
 **Before:**
-![Previous F12 Console](./media/console_old.png)
+![Previous console](./media/console_old.png)
 
 **After:**
-![New F12 Console](./media/console_new.png)
+![New console](./media/console_new.png)
 
 We also added these improvements:
 
  -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
-    - **console.table(***object***)** method
-    - **getEventListeners(***object***)** command
-    - **keys(***object***)** command
-    - **values(***object***)** command
-    - **$x(***xpath expression***)** selector
+    - [**console.table(***object***)**](./console/console-api.md#organizing-log-output) method
+    - [**getEventListeners(***object***)**](./console/command-line.md#event-listeners) command
+    - [**keys(***object***)**](./console/command-line.md#object-inspection) command
+    - [**values(***object***)**](./console/command-line.md#object-inspection) command
+    - [**$x(***xpath expression***)**](./console/command-line.md#dom-selectors) selector
 
- - The **%c()** formatting parameter is now supported
+ - The [**%c()**](./console/console-api.md#logging-custom-messages) formatting parameter is now supported
 
 ## Debugging improvements
 

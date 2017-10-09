@@ -1,101 +1,163 @@
 ---
-ms.assetid: f039c259-0503-45ca-96b8-725491238fe5
-description: Learn how to use the Network tool to view communication between the browser and server(s), inspect request and reply headers, see response codes, and debug AJAX.
-title: F12 devtools guide - Network
+description: Use the Network panel to monitor and profile page resource requests
+title: Microsoft Edge F12 DevTools - Network
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
 ---
 
 # Network
 
-Use the Network tool to view communication between the browser and server(s), inspect request and reply headers, see response codes, and debug AJAX.
+Use the **Network** panel to monitor, inspect and profile the requests and responses sent over the wire. With it, you can:
 
-## Monitor your browser's communications
-The **Network** tool in F12 developer tools helps you inspect page load times, responses to AJAX requests, and all network activity used to load and run modern webpages and applications.
+ - [Browse a record of all the resource requests](#network-summary) made by the page
+ - [Measure the load time of your site](#summary-bar) for new and returning users 
+ - [Inspect the headers, message bodies, parameters, and cookies](#request-details) exchanged between your page and the network
+ - [Identify the network events causing bottlenecks](#timings) in the load time of your site
 
-**Start with the top row**
+![The Microsoft Edge F12 DevTools Network panel](./media/network.png)
 
-The top row of icons in the **Network** tool control the recording of network traffic and give you tools to provide better accuracy, manage your results, and search through the traffic you capture.
+ ## Network summary
 
-![Microsoft Edge F12 Network Toolbar](./media/network-icons.png)
+When you open F12 DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different F12 DevTools panel than *Network*.
 
-From left to right, the tools are:
+![In-progress network profiling indicator](./media/network_profile_indicator.png)
 
-  - **Enable/Disable network traffic capturing (CTRL + E)** starts and stops the recording of network traffic.
+### Toolbar
 
-  - **Export captured traffic as a HAR (CTRL + S)** saves the data you've recorded to a .har file (HTTP Archive specification) which captures page loading information in a JSON format.
+The toolbar provides controls for profiling and filtering the network activity of your page. 
 
-  - **Always refresh from server** is a toggle switch with on and off states. When on, Microsoft Edge downloads all page elements from the remote server, not from the browser cache.
+![Network profiler toolbar](./media/network_toolbar.png)
 
-  - **Clear cache** removes saved files from the browser's cache. Browsers commonly save page elements to disk and use them again for faster reloads. When you're trying to get the true measure of a page's load time, clearing the cache makes sure all elements are being downloaded from the network.
+1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-profiler) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
 
-  - **Clear cookies** ensures that all cookies are removed, so that you get the experience of loading the page for the first time.
-    > note.warning This will clear *all* cookies associated with Microsoft Edge.
+2. **Export as HAR**: You can save the current network profiling session (`Ctrl+S`) as a JSON-formatted [HTTP Archive (HAR)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) file. 
 
-  - **Clear entries on navigate** is a toggle switch with on and off states. When in the off state, network traffic for a window or tab is recorded continuously as the browser moves from page to page. When in the on state, recorded traffic is cleared each time you navigate to a new page. This is turned on by default.
+3. **Content type filter**: Filter the network request list by specific content requests (*Documents, Style sheets, Images, Scripts, Media, Fonts, XHR, Other*). By default all content types are shown.
 
-  - **Clear session** clears all recorded network traffic from the tool.
+4. **Find**: Filter (`Ctrl+F`) the network request list by entry names (resource paths) containing a specified search string.
 
-  - **Content type filter** lets you restrict the type of content displayed. Click for a drop down menu of content types, currently offering: Documents, Style sheets, Images, Scripts, Media, Fonts, XHR, and Other. The default is to show all, but you can limit it to any combination of those you choose.
- 
-  - **Find (CTRL + F)** (far right, not pictured) provides a text search in the item paths, so you can easily find specific files.
+5. **Always refresh from server**: Depressing this button will force page resources to load from the network rather than the browser cache. You can refresh the page from  network a single time by pressing `Ctrl+F5`.
 
-By default, a summary view is displayed, as seen here.
+6. Clear buttons
 
-![Microsoft Edge F12 Network Toolbar](./media/Edge_Network_files.png)
+   - **Clear cache**: Removes all resources stored in the browser cache (and emulates a first-time experience loading the page).
+   - **Clear cookies**: Removes all cookies for the given domain (and emulates a first-time experience of the site).
+   - **Clear entries on navigate**: Recorded traffic is cleared upon page navigation. This is turned on by default.
+   - **Clear session**: Clears all network request entries from the **Network summary** list.
 
-## Reading and interpreting the data
-The **Network** tool includes two views of network traffic. The **Summary** view gives a quick look at all captured info for a tab or webpage, and the **Details** view gives you details of each connection, such as request and response headers and detailed timing info. You can view the details of any file/connection by clicking on it--the summary will expand out from the side.
+### Network request list
 
-![Microsoft Edge F12 Network Summary Details](./media/Edge_Network_details.png)
+All network traffic is recorded to a list (until cleared upon navigation, manually cleared, or F12 DevTools are closed). Clicking on any entry will open a more [detailed view of the request](#request-details).
 
-### Summary view
-The Summary view shows all network traffic for a page in a table. By default, the info is presented chronologically, but you can sort the table differently by clicking the header of any column. This table describes the type of info you can view.
+![Network request list](./media/network_request_list.png)
 
+The network request list includes the following info: 
 
-Column header | Description 
+Column | Description 
 :------------ | :------------- 
-**Name/Path** | The filename and/or path of the item loaded.
-**Protocol** |	The connection protocol. For example, connections to a standard web server use HTTP, while encrypted connections generally use HTTPS. Microsoft Edge supports a number of connection protocols.
-**Method** |	The HTTP method verb (for example, `POST` or `GET`).
-**Result/Description** |	The HTTP response code and a brief description of what it means.
-**Content Type** |	The type of content that's received.
-**Received** | The total amount of data that's received, in bytes.
-**Taken** |	The total time elapsed to receive the content, in milliseconds.
-**Initiator** |	The type of browser action or DOM node that prompted the network request. Where possible, this is linked to the place in the code where the download was called for or initiated, and clicking it will navigate to the Debugger tool with that file loaded and queued up to that place.
-**Timings** |	A timeline of the network events.
+**Name** | Name and URL path of the request
+**Protocol** |	Type of protocol for the request (such as *HTTPS, HTTP/2*)
+**Method** |	[HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used for the request
+**Result** |	[HTTP response status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)  code
+**Content type** |	Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
+**Received** | Size of the response as delivered by the server (not calculated for cached responses)
+**Time** |	Time to load the server response (not calculated for cached responses)
+**Initiator** |	Subsystem responsible for initiating the request (such as *Parser, Redirect, Script, Other*)
+**Timeline** | Visual timeline for the network events of the request (such as *Stalled, Resolving(DNS), Connecting(TCP), SSL, Sending, Waiting(TTFB), Downloading*). Hovering over the chart provides the more granular breakdown of network [network timings](#timings)).
 
-### Details view
-The **Details** view provides info about a specific request. To see the details, click an entry in the Summary view. You will find this info in each tab of the **Details** view.
+ ### Summary bar
 
-Tab | Description 
-:------------ | :------------- 
-**Headers** | Displays the request headers that are sent to the server and the response headers received from the server.
-**Body** | Indicates the body data sent to and received from the server. If the response data is an image, the image is shown. If the response is binary, a link to save the content to disk is shown. Otherwise, the response text is shown in a scrollable text area.
-**Parameters** | The query string parameters of GET requests. While POST requests put the parameters in the headers, GET requests include them in the URL. They're broken out here for easier reading.
-**Cookies** | Indicates the cookies that are sent or received. There are eight columns in the Cookies tab. <table>
-Column header |	Details
-**Direction**  |	The cookie that is sent or received.	
-**Key**  |	The identifier of the Key-Value pair.	
-**Value**  |	The value of the Key-Value pair.	
-**Expires**  |	The cookie expiry date.	
-**Domain**  |	The cookie domain.	
-**Path**  |	The cookie path.	
-**Secure**  |	Indicates if the cookie is accessible only through Secure Hypertext Transfer Protocol (HTTPS) connections.	
-**HTTP Only**  |	Indicates if the cookie is accessible only through HTTP (not JavaScript). </table> |
-**Timings** | 	Lists events and their corresponding times that are relevant to the request. The timing info is displayed as table and a graphical timeline. The following events are captured: Wait, Start, Request, Response, Gap, DOMContentLoaded, and Load. Clicking an event in the table or the timeline highlights it and shows an explanation of the event type.
+The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since F12 DevTools were opened and recording network traffic).
 
-## Limitations
-Microsoft Edge captures and reports network traffic efficiently, but there are some limitations. The network traffic measured and displayed in the **Network** tool has similar characteristics to unmeasured traffic, but the timings don't precisely match the unmonitored results.
+![Network summary bar](./media/network_summary_bar.png)
 
-HTTP traffic is captured only for the process associated with the Microsoft Edge window/tab that is open when you start capturing traffic in the Network tool. To debug two windows/tabs at the same time, you must open a **F12 developer tools** window for each. The network tools also cannot monitor network traffic for tabs that create multiple processes.
+**Elapsed time** means the time between the start of the profiling session and when the last resource was downloaded from the network. Resources fetched from the browser cache do not accrue time to this number. 
 
-## Related Topics
+**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
 
-[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
+**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/en-US/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
 
-[A look at new feedback-driven improvements to the network tool in our F12 Developer Tools](https://blogs.windows.com/msedgedev/2015/05/08/updates-for-the-f12-developer-tools-in-windows-insider-preview-10074/) 
+ ## Request details
+
+Clicking on any entry in the [**Network summary**](#network-summary) list will open the [**Request details**](#request-details) pane with further information in each of the following tabs.
+
+![Network request details pane](./media/network_request_details.png)
+
+ ### Headers
+Displays the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+
+ ### Body
+Displays the body data (if available) of the request and response payloads.
+
+Image content is displayed with dimensions and size data.
+
+Text content appears in a (read-only) editor with options to format minified content with **Pretty print** and/or **Word wrap** for easier readability.
+
+![Body tab of the request details pane](./media/network_details_body.png)
+
+ ### Parameters
+Displays query string parameters for GET requests. While the parameters of POST requests are sent in the headers, GET requests include them in the URL. They're broken out here for easier reading.
+
+Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+
+ ### Cookies
+Displays cookies that are sent or received as key/value pairs.
+
+Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+
+You can clear the stored cookies for the given domain from the [Toolbar](#network-summary) (**Clear cookies** button). 
+
+### Timings
+
+The **Timings** tab provides a timeline of network events involved in the loading of the selected resource. This is similar to the information found in the *Timeline* column of the [Network request list](#network-request-list), but also includes the events leading up to the request being sent over the wire, such as time spent waiting (*Stalled*) in the request queue, DNS resolution, and establishing the TCP connection. 
+
+![Timings tab of the request details pane](./media/network_details_timings.png)
+
+Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request-summary) pane.
+
+Resouces loaded from the cache are not affected by network latency, so no network *Timings* chart will display.
+
+![Redirected resource loaded from the cache](./media/network_details_timings_cache_redirect.png)
+
+Here are the different network events you might see for a given resource, in chronological order:
+
+#### Stalled
+
+Time spent waiting for an available network connection in the request queue. Microsoft Edge allows a maximum of ## simultaneous connections per hostname. 
+
+#### Resolving (DNS)
+
+Time spent looking up the IP address for the hostname of the resource in the DNS ([Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System)).
+
+#### Connecting (TCP)
+
+Time spent establishing the TCP ([Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)) connection.
+
+#### SSL
+
+Time spent negotiating a SSL ([Secure Sockets Layer](https://en.wikipedia.org/wiki/Transport_Layer_Security))  connection with the [proxy server](https://en.wikipedia.org/wiki/Proxy_server) for the host.
+
+#### Sending
+
+Time spent sending the resource request.
+
+#### Waiting (TTFB)
+
+Time spent waiting for the first byte of the response from the host server ("time to first byte", or *TTFB*).
+
+#### Downloading
+
+Time spent reading the response from the server.
+
+ ## Shortcuts
+
+ Action | Shortcut
+:------------ | :-------------
+Start / Stop profiling session  | `Ctrl` + `E`
+Export as HAR | `Ctrl` + `S`
+Find | `Ctrl` + `F`
+Copy | `Ctrl` + `C`

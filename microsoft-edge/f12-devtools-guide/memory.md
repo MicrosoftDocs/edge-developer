@@ -1,133 +1,149 @@
 ---
-ms.assetid: 75770896-95c8-4c78-b814-7f134c4964f9
-description: Learn how use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
-title: F12 devtools guide - Memory
+description: Use the Memory panel to 
+title: Microsoft Edge F12 DevTools - Memory
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, web development, f12 tools, devtools, memory, heap, GC, garbage collection, retained size, dominators  
 ---
 
 # Memory
 
-Use the Memory tool to diagnose memory issues that can impact the speed and stability of webpages.
+Use the **Memory** panel to measure your use of system resources and compare heap snapshots at different states of code execution. With it, you can:
 
-## Memory matters
+- [Graph the memory consumption of your page in real time](#memory-usage-timeline) and take snapshots of the heap
+- [Identify potential memory issues](#shapshot-summary) in your code, such as retained objects not attached to the DOM
+- [Review memory usage data](#snapshot-details) by object type, instance count, size, and references to help isolate issues
+- [Apply snapshot data filters](#filters) to reduce the noise of non-actionable information
+- [Identify the memory cost of a specific object](#object-references) and the references keeping it alive
+- [Diff the heap at different phases of your investigation](#snapshot-comparison) to track down the source of memory leaks and other problems
 
-If your webpage is performing well when it first loads, but gradually slows and sometimes crashes, the page's memory use might be the problem.
+![The Microsoft Edge F12 DevTools Memory panel](./media/memory.png)
 
-## Diagnosing a memory issue
 
-After you've loaded your webpage in the browser, open the F12 developer tools and open the **Memory** tool (CTRL + 6). You can start profiling from this screen and take heap snapshots during the profiling session. 
+## Toolbar
 
-If your problem is high memory usage from the start, but not memory growth, take one snapshot and examine it to find your bigger areas of memory use. If your memory use grows over time, you can compare snapshots to look at the areas where memory is growing.
+1. **Start/Stop profiling session (Ctrl+E)**: Turning on the profiler enables you to track memory usage and take snapshots of the heap.
+2. **Import profiling session (Ctrl+O)**: Load a saved F12 DevTools memory diagnostic session.
+3. **Export profiling session (Ctrl+S)**: Save the current diagnostic session to disk.
+4. **Take heap snapshot (Ctrl+Shift+T)**: Record current memory allocations for a given point of time.
 
-### The Summary View
 
-After you've started profiling and taken some snapshots, you'll see a summary of the session that looks similar to this:
+## Memory usage timeline
 
-![Microsoft Edge Memory Tool](./media/Edge_Memory.png)
+Memory problems can be a major culprit of performance issues, causing your page to become increasingly unresponsive and laggy over time.
 
-When you begin recording a session, the **Total memory** timeline shows the memory use by the current browser tab's processes as a graph over time. 
+The first step to analyzing the memory usage of your page is to [start a profiling session](#toolbar) in order to take before/after snapshots of the heap as you repro the steps causing memory bloat or a suspected memory leak.
 
-You can add custom **User marks** to the timeline using the `performance.mark()` method in your JavaScript, with a label for the mark as the argument. You can add specific events this way. The label is displayed as a tool tip when the mouse pointer is hovered over the mark on the timeline.
+When you start the memory profiler, you will see a process memory graph that allows you to observe the overall private working set (the amount of memory consumed by the page) over time. The memory graph shows you a live view of the tab's process memory, which includes private bytes, native memory, and the JavaScript heap. 
 
-Below the timeline, you'll see summaries of the **heap snapshots**.
+![Memory usage timeline](./media/memory_timeline.png)
 
-### What the snapshots summaries tell you
+ The graph gives you an indication of the memory trend for the page which enables you to judge when it is appropriate to [take a heap snapshot](#toolbar) for later comparison, such as when you see periods of unexpected memory retention.
 
-Each snapshot shows a thumbnail of the webpage as it appeared at the time the snapshot was taken and specifics about the memory usage of your code. After the first snapshot, subsequent snapshots add a summary of changes in memory use and object count. 
+### Performance.mark()
 
-In the second snapshot and later, the number of new objects created and old objects removed are shown below the object count. If these numbers are high, you might have a performance problem. When the amount of memory you use isn't bad, but a lot of objects are being created and removed, you create work for the *garbage collector* process which frees up memory. Garbage collecting uses processing power, however, so it's best to find ways to reuse or recycle these objects and give the *garbage collector* a break.
+You can add custom **User marks** to the timeline to help identify  key events during the course of your analysis session by calling the [`Performance.mark()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the F12 DevTools [**Console**](./console.md).
 
-> To see how much work the *garbage collector* is doing, profile your webpage with the Performance tool.
+### Console.takeheapSnapshot()
 
-If you click the memory usage numbers, you'll see a detailed view of that snapshot. If you click the memory change numbers, you'll see a comparison view highlighting the objects that have been added or modified. In the image above, **Snapshot #2**  includes a **more info** icon (a circle with an "i" in it) and the number 30 next to it. This number represents objects the **Memory** tool has identified as potential memory issues.
+Sometimes you need to take snapshots at very specific points in time, such as immediately before a large mutation of the DOM. In these cases,you can take snapshots programmatically with [`Console.takeHeapSnapshot()`](./console/console-api.md#taking-heap-snapshots).
 
-### Something to look for
+## Snapshot summary
 
-Another important factor to keep in mind is the difference between the number of objects being added and objects being removed. This is displayed in your second snapshot and beyond in the upper right in a "+x/-y" format. 
+[Taking a snapshot](#toolbar) will generate a summary tile that indicates the size of the JavaScript heap at the time the snapshot was taken, along with the number of objects allocated and a screenshot of the page. You can continue to take snapshots at any time as you run through the user scenario requiring analysis. The snapshots generate additional tiles, each of which indicates the difference in JavaScript memory from the previous snapshot.
 
-In the set of snapshots above, it shows that each time we ran the process we suspected of having a memory issue, we increased the number of objects by 90, but only removed 9. This is a strong clue that there's a memory leak in the process. Memory leaks will keep expanding the memory use of your webpage during a user's session with it, causing slowness or even instability if the memory use grows too big.
+![Heap snapshot](./media/memory_snapshot.png)
 
-### The snapshot details view
+Clicking on the values in the summary tile will switch to the pane showing [details of the snapshot data](#snapshot-details). Potential [memory issues are indicated](#snapshot-details) with a blue informational ("i") icon.
 
-Click one of the measurement numbers on a snapshot to see details of that measurement. The image below shows the view when you click on the memory issues number in a snapshot.
+## Snapshot details
 
-![Microsoft Edge Memory Tool Details](./media/Edge_Memory_details.png)
+The data in the *Snapshot* pane shows the objects created by your page along with any memory allocated by JavaScript frameworks you may be consuming.
 
-In the view above, you see the **Dominators** view of the snapshot's details, sorted so the issues are displayed first. 
+![Snapshot details table](./media/memory_details.png)
 
-If you hover over the more info icon, you'll see a tooltip indicating why this item is a potential issue. In the example above, the DOM node is not attached to the DOM. This can happen when the node has been removed from the DOM, but is referred to elsewhere. 
+The three tabs represent different views of the data:
 
-If you click the object, you'll see the objects referring to it in the bottom portion of the screen. In this case, an array called nodeholder contains a reference that is keeping the node in memory. If this is not what you expected, you can investigate further.
+#### Types
 
-### The three view types
+Shows the instance count and total size of objects on the heap, grouped by object type. By default, these are sorted by instance count.
 
-  - **Types** view groups objects by their constructor function and gives a count of each type. This makes it easier to know how many arrays you have, how many strings, and so on. Those groups can be expanded to view individual objects.
+When you select an object in the upper *Types* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.
 
-  - **Roots** view shows the major root objects that you can expand to see the child objects associated with them.
-  
-  - **Dominators** view breaks out all individual HTML elements, DOM nodes, and JavaScript objects your code creates. This is the most detailed of the views.
+#### Roots
 
-In all three views, there are column headings for an object's size and retained size. The **Size** column documents the amount of memory the object itself uses. The **Retained size** column documents the amount of memory used by the object and its child nodes. For example, an [**HTMLDivElement**](https://msdn.microsoft.com/library/hh869694.aspx) might only consume tens of bytes itself, but might have a retained size in the megabytes because a large image or video is one of its child elements.
+Shows a hierarchical view of child references to describe how objects are rooted to the global object, thus preventing them from being garbage-collected.
 
-> In large, complex pages, only the first two thousand objects are loaded, sorted by their retained size. In that case a filtering option is provided to help you narrow down the object set.
+By default, the child nodes are sorted by the retained size column, with the largest at the top.
 
-### Additional options
+#### Dominators
 
-You can change settings for the detailed display using a drop-down menu in the upper right of the Snapshot details.
+Shows a list of objects on the heap that have exclusive references to other objects. Dominators are sorted by retained size to indicate the  the objects consuming the most memory that are potentially easiest to free.
 
-  - **Show built-ins** shows internal objects created for a webpage by the browser that weren't created by the page itself. We don't show these by default, so you don't get distracted from your own code. However, sometimes it's helpful to see.
+Here's how to interpret the columns in the *Types, Roots* and *Dominators* views:
 
-  - **Display object IDs** helps identify objects that have more than one reference. For example, the jQuery object often uses both jQuery and $ as references. Both references are shown with the same amount of memory usage, but they're using the same memory and the same object ID. Using object IDs can help separate unique objects from objects with multiple references.
+Column | Description
+:------------ | :-------------
+Identifier(s) | Name that best identifies the object. For example, for HTML elements the snapshot details show the ID attribute value, if one is used.
+Type | Object type (for example, *HTMLDivElement*).
+Size | Object size, not including the size of any referenced objects.
+Retained size | Object size plus the size of all child objects that have no other parents. For practical purposes, this is the amount of memory retained by the object, so if you delete the object you reclaim the specified amount of memory.
+Count | Number of object instances. This value appears only in the Types view.
 
-**Circular references**: In its simplest form, a circular reference happens when one object refers to another object that refers back to it, creating a loop. In more complex forms, the circular reference path can go through many objects. The **Memory** tool performs automatic filtering of circular references, indicating where they occur and trimming them. This makes it easier to dig deeper into object roots without getting lost in circular paths.
+When you select an object in the upper *Dominators* pane, the [Object references](#object-references) table in the lower pane will list all the objects that point to that object.
 
-When an object representing a function is displayed in the **Memory** tool, it is linked to its location in the source code and the color is changed to blue. Clicking on the function name or clicking its line and pressing ENTER switches you to the [**Debugger**](./debugger.md) and focuses on that function's location in the corresponding script.
+### Filters
 
-> The **Memory** tool displays function names as they exist in memory. If you're using JavaScript that's been compressed or compiled from another language, and you have a **source map**, you could click on a function named `t` in the **Memory** tool, but find the [**Debugger**](./debugger.md) tool focused on a function named `setOrigination`. If this happens and it bothers you, try toggling off **source map** support for that file in the Debugger.
+You can further adjust data in the table with the following:
 
-### The comparison view
+![Filter for built-ins and object IDs](./media/memory_filter.png)
 
-In snapshots where a change in memory use or object count is shown, click the amount of the change to see a comparison between that snapshot and the snapshot before it. 
+1. **Identifier filter**: Filter out data by searching for a particular object identifier
+2. **Group by dominator**: Only objects with *exclusive* references to other objects are shown in the top-level view of objects (this is the default view in the *Dominators* tab).
+3. **Built-ins / IDs filter**: By default, [JavaScript built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) are included in the list. Listing object IDs can be useful if there are multiple anonymous objects which need to be differentiated.
 
-![Microsoft Edge Memory Tool Comparison View](./media/Edge_Memory_compare.png)
+The *Types, Roots* and *Dominators* views each has its own filter, so the filter isn't preserved when you switch to another view.
 
-The comparison view works like the snapshot details view, except:
+### Object references
 
-  - Columns showing the difference in **Size** and **Retained size** are added.
-  - The **Scope** menu is added. **Scope** shows you different views of the comparison and is particularly useful when combined with a **three-snapshot method** for memory analysis.
+In the [**Types**](#types) and [**Dominators**](#dominators) views, the lower pane contains an **Object references** list that displays shared references. When you choose an object in the upper pane, this list displays all objects that point to that object--in other words, the objects that are keeping the seleted object alive.
 
-The **three-snapshot method** works as follows:
+Circular references are shown with an asterisk (*) and informational tooltip, and cannot be expanded. Otherwise, they would prevent you from walking up the reference tree and identifying objects that are retaining memory.
 
-  - Load the page and use it normally for a few minutes.
-  - Begin recording the session and take the first snapshot as a baseline.
-  - Go through the scenario you think is causing a memory problem. Take the second snapshot.
-  - Go through the scenario again. Take the third snapshot and then stop recording.
+To quickly identify equivalent objects, tick the [*Display object IDs*](#filters) filter option to display object IDs next to object names in the *Identifier(s)* column. Objects that have the same ID are shared references.
 
-Click the numbers representing the increase in memory use or increase/removal of objects on **Snapshot #3** to see its comparison with **Snapshot #2**. In that comparison view, the **Scope** menu gives you three choices:
+### Snapshot comparison
 
-  - Objects left over from **Snapshot #2**.
-  - Objects added between **Snapshot #2** and **#3**.
-  - All objects in **Snapshot #3**.
+Clicking on a [snapshot comparison tab](#snapshot-details) or comparison link on the [snapshot summary tile](#snapshot-summary)  will show a diff of information between the two snapshots. In the comparison pane, the *Dominators, Types* and *Roots* views provide the same [*snapshot details*](#snapshot-details) you would see for a single snapshots, with these additional values:
 
-When you compare **Snapshot #1** to **Snapshot #2**, the **Objects left over from Snapshot #1** option will include all the objects in the page that were there in the baseline. Most of those are elements used to build the page and just create clutter. They're always part of the webpage's memory use, not sources of the increase in memory use.
+Column | Description
+:------------ | :-------------
+Size diff. | Difference between the size of the object in the current snapshot and its size in the previous snapshot, not including the size of any referenced objects.
+Retained size diff. | Difference between the retained size of the object in the current snapshot and its retained size in the previous snapshot. The retained size includes the object size plus the size of all its child objects that have no other parents. For practical purposes, the retained size is the amount of memory retained by the object, so if you delete the object you reclaim the specified amount of memory.
 
-When you compare **Snapshot #2** to **Snapshot #3**, the **Objects left over from Snapshot #2** option identifies only the objects added in **Snapshot #2** and still exist in **Snapshot #3**. Now you see the objects that were not only added after the baseline, but which persist after running the scenario a second time. These objects are worth inspecting more closely as you search for the source of your webpage's memory use problem.
+You can use the **Scope** dropdown to filter differential info between snapshots:
 
-## Loading and saving sessions
+![Scoping filter for snapshot comparisions](./media/memory_comparison_scope_filter.png)
 
-You shouldn't have to reproduce your test case every time you want to analyze the data it produced. The import (folder) and export (disk) icons on the tool's icon bar let you save and load memory profiling sessions for later inspection.
+ - **Objects left over from Snapshot #<number>**: Shows the diff between the objects added to the heap and removed from the heap from the baseline snapshot to the previous snapshot. For example, if the snapshot summary shows *+205 / -195* in the object count, this filter will show you the ten objects that were added but not removed.
 
-## ECMAScript 6 containers
+ - **Objects added between Snapshot #<number> and #<number>**: Shows all objects added to the heap from the previous snapshot.
 
-Microsoft Edge supports [**`Set`**](https://msdn.microsoft.com/library/dn251547.aspx), [**`Map`**](https://msdn.microsoft.com/library/dn263029.aspx), and [**`WeakMap`**](https://msdn.microsoft.com/library/dn251546.aspx) container objects in the **Memory** tool, making it easier to inspect the details of their memory use.
+ - **All objects in Snapshot #<number>**: Shows all objects on the heap (in other words, an *unfiltered* view).
 
-## Related topics
+By default, the *Show non-matching references* filter is applied to the comparison view to indicate object references that don't match the current Scope filter. You can turn it off from the dropdown menu:
 
-[Understanding and Solving Internet Explorer Leak Patterns](https://msdn.microsoft.com/library/bb250448.aspx)
+![Non-matching references filter for snapshot comparisons](./media/memory_comparison_matching_filter.png)
 
-[Microsoft Edge Developer Tools on Twitter: Find helpful F12 hints and news updates](https://twitter.com/EdgeDevTools)
+
+## Shortcuts
+
+ Action | Shortcut
+:------------ | :-------------
+Start / Stop profiling session  | `Ctrl` + `E`
+Import profiling session | `Ctrl` + `O`
+Export profiling session | `Ctrl` + `S`
+Take heap snapshot | `Ctrl` + `Shift` + `T`
