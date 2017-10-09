@@ -13,9 +13,9 @@ keywords: microsoft edge, web development, f12 tools, devtools, console
 
 Use the F12 DevTools **Console** for interactive debugging and adhoc testing. It allows you to communicate into and out of a running web page by:
 
- - Posting standard [error and status codes](./console/error_and_status_codes.md) and informational messages as your code runs
- - Generating custom debug logs from the [Console API](./console/console_api.md) calls you include in your code
- - Providing a [command line](./console/command_line.md) and interactive tree view for inspecting current return values of key variables and functions
+ - Posting standard [error and status codes](./console/error-and-status-codes.md) and informational messages as your code runs
+ - Generating custom debug logs from the [Console API](./console/console-api.md) calls you include in your code
+ - Providing a [command line](./console/command-line.md) and interactive tree view for inspecting current return values of key variables and functions
 
 ![The Microsoft Edge F12 DevTools console](./media/console.png)
 
