@@ -20,7 +20,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 Here's a list of the new and updated features in EdgeHTML 16.  These features are available in the latest [Windows Insider](https://insider.windows.com/) Preview builds, with general availability in October as part of the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
  
-Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16)
+Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16).
 
 ## New and updated features
 
@@ -41,7 +41,7 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 
 This release we started a major F12 DevTools refactoring effort for improved robustness and future extensibility, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out [Microsoft Edge F12 Developer Tools](./f12-devtools-guide/whats-new.md) for more on what's changed!
 
-![Experimental service worker debugging support in F12 DevTools](./f12-devtools-guide/media/debugger_sw_inspect.PNG)
+![Experimental service worker debugging support in F12 DevTools](./f12-devtools-guide/media/debugger_sw_inspect.png)
 
 ### Payment Request API
 

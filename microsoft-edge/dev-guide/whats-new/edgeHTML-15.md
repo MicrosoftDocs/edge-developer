@@ -13,9 +13,9 @@ keywords: edge, web development, html, css, javascript, developer
 Here are the changes shipped with the current release of the Microsoft Edge platform,
  as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017, Build 15063). For an overview of changes to the overall Microsoft Edge browser, see [What’s new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97)
  
-For changes in subsequent Windows Insider Preview builds, see [What's New in EdgeHTML](./dev-guide/whats-new.md).
+For changes in subsequent Windows Insider Preview builds, see [What's New in EdgeHTML](.,/whats-new.md).
  
-Here's the permalink for the following list of changes: **[https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)**
+Here's the permalink for the following list of changes: **[https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)**.
 
 ## New features
 
@@ -47,7 +47,7 @@ TCP Fast Open is a feature that reduces the number of round trips required to op
 
 EdgeHTML 15 supports a subset of the WebRTC 1.0 API for interoperability with applications built with earlier versions of the W3C WebRTC-PC API circa 2015. See the [WebRTC API reference](https://msdn.microsoft.com/library/mt806139(v=vs.85).aspx) for details.
 
-To take advantage of our most advanced features in peer-to-peer audio and video communication, we recommend using the [Object Real-Time Communication) API](./dev-guide/realtime-communication/object-rtc-api.md). The ORTC API is better suited for situations where you want to set up group audio and video calls, or directly control individual transport, sender, and receiver objects.
+To take advantage of our most advanced features in peer-to-peer audio and video communication, we recommend using the [Object Real-Time Communication) API](../realtime-communication/object-rtc-api.md). The ORTC API is better suited for situations where you want to set up group audio and video calls, or directly control individual transport, sender, and receiver objects.
 
 The Microsoft Edge supports both H.264/AVC and VP8 video with ORTC and WebRTC 1.0, and provides the following features in support of both codec types: [abs-send-time](https://webrtc.org/experiments/rtp-hdrext/abs-send-time/), [goog-remb](https://tools.ietf.org/html/draft-alvestrand-rmcat-remb-03), [Picture Loss Indication and Generic NACK feedback](https://tools.ietf.org/html/rfc4585), [RTP Retransmission](https://tools.ietf.org/html/rfc4588).
 
@@ -57,7 +57,7 @@ For more info, see [Introducing WebRTC 1.0 and interoperable real-time communica
 
 Microsoft Edge now has support for [WebVR](https://w3c.github.io/webvr/archive/prerelease/1.1/), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge. This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
 
-Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](./dev-guide/dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
+Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
 
 To get a feel for what it looks like to work with the API, here’s some basic code to [render a frame to both eyes](https://w3c.github.io/webvr/archive/prerelease/1.1/#example-471f1826) of a Windows Mixed Reality device.
 
@@ -73,7 +73,7 @@ See the [WebVR API reference](https://msdn.microsoft.com/library/mt806281(v=vs.8
 ### Content Security Policy (Level 2)
 Sites already using CSP 1 should continue to work with Microsoft Edge support for CSP 2, however it's best to switch any `frame-src` directives that load worker scripts to the new `child-src` directive to future-proof your site. (In CSP 3, `frame-src` will no longer apply to workers.) CSP 2 also adds the following:
 
-1. New directives: `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`. See [Microsoft Edge supported CSP directives](./dev-guide/security/content-security-policy.md) for more.
+1. New directives: `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`. See [Microsoft Edge supported CSP directives](../security/content-security-policy.md) for more.
 
 2. Workers support: Background worker scripts are governed by their own policy, separate from the policy of the document loading them. As with host documents, you can set the CSP for a worker in the response header. Also new in CSP 2 is that  `allow-scripts` and `allow-same-origin` flags of the `sandbox` directive now affect worker thread creation.
 
@@ -82,7 +82,7 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
 4. CSP violation reporting: A new event, SecurityPolicyViolationEvent is now fired upon CSP violations. The earlier mechanism for CSP reporting, `report-uri`, continues to be supported. Several new fields have been added to the violation reports common to both, including `effectiveDirective` (the policy that was violated), `statusCode` (the HTTP response code), `sourceFile` (the URL of the offending resource), `lineNumber`, and `columnNumber`.
 
 ### Web Authentication
-Microsoft Edge support for the emerging [Web Authentication API](./dev-guide/device/web-authentication.md) using [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics has been updated with the following changes:
+Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics has been updated with the following changes:
 - The initial implementation of the experimental Web Authentication API introduced in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/#TVSCzKDkG4jCI5mt.97) (Windows 10 Anniversary Update, build 10240, 7/2016) was exposed through MS- prefixed APIs (the [MSCredentials](https://msdn.microsoft.com/library/mt697639) interface). While these APIs are still available in EdgeHTML 15, they are now deprecated in favor of the non-prefixed, standards-based APIs and behaviors defined in a more [recent snapshot](http://www.w3.org/TR/2016/WD-webauthn-20160928) of the specification, and are likely to continue changing as the spec matures toward standardization.
 
 - The latest Microsoft Edge implementation is turned off by default and ships behind a flag (type `about:flags` in your address bar to turn on the feature).
@@ -110,7 +110,7 @@ POST | /session/{session id}/execute/sync | [Execute Script](https://w3c.github.
 GET | /session/{session id}/window | [Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle)
 GET | /session/{session id}/window/handles | [Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles)
 
-For more info and the status of other WebDriver features, check out [WebDriver commands](./webdriver-commands.md).
+For more info and the status of other WebDriver features, check out [WebDriver commands](../../webdriver-commands.md).
 
 ## New APIs in EdgeHTML 15
 
