@@ -165,7 +165,7 @@ Full-screen mode has its own error event, [`fullscreenError`](https://msdn.micro
 
 ```javascript
 document.addEventListener("MSFullscreenError", function (evt) {
-  console.error("full screen error has occured " + evt.target);
+  console.error("full screen error has occurred " + evt.target);
 }, true);
 ```
 

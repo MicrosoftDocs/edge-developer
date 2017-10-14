@@ -18,7 +18,7 @@ With support for the W3C [Screen Orientation API](https://www.w3.org/TR/2014/WD-
 The Screen Orientation API enables you to prevent or override the browser from automatically reflowing your web app's content during changes to the orientation of your user's device. When using [device orientation events](./device-orientation-and-motion-events.md), you can also use the Screen Orientation API to lock the display so that your user's device orientation and motion sensor data is accurate, and not invalidated or complicated by random screen orientation changes made by the user.
 
 > [!NOTE]
-> This implementation for Screen Orientation API uses the `ms` prefix. Syntax seen in the [latest Screen Orieantation API spec](https://www.w3.org/TR/screen-orientation/)(i.e. `screen.orientation.lock` instead of `screen.lockOrientation`) is not supported.
+> This implementation for Screen Orientation API uses the `ms` prefix. Syntax seen in the [latest Screen Orientation API spec](https://www.w3.org/TR/screen-orientation/)(i.e. `screen.orientation.lock` instead of `screen.lockOrientation`) is not supported.
 
 
 ## Orientation values

@@ -25,7 +25,7 @@ With [Content Security Policy](./security/content-Security-Policy.md), you creat
 The [meta name="referrer"](./security/meta-referrer.md) tag lets you specify what information about a webpage should be passed in the HTTP header to any request sent from the page.
 
 ## Web Cryptography API
-[Web Crytography API](./security/web-Cryptography-API.md) provides basic cryptographic operations in web applications, such as hashing, signature generation and verification, and encryption and decryption.
+[Web Cryptography API](./security/web-Cryptography-API.md) provides basic cryptographic operations in web applications, such as hashing, signature generation and verification, and encryption and decryption.
 
 ## Transport Layer Security (TLS)
 
