@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Media Source Extensions (MSE)
 
-Microsoft Edge supports [MPEG-DASH](http://go.microsoft.com/fwlink/p/?LinkID=533900) media streaming through [Media Source Extensions](Http://go.microsoft.com/fwlink/p/?LinkID=301313) (MSE). MSE extends the `HTMLMediaElement` ([`video`](https://msdn.microsoft.com/library/hh772959(v=vs.85).aspx) and [`audio`](https://msdn.microsoft.com/library/hh772923(v=vs.85).aspx) elements) to allow audio and video streaming without the need for plugins or special servers. MSE allows adapative media streaming, live streaming, splicing videos, video editing, and more. 
+Microsoft Edge supports [MPEG-DASH](http://go.microsoft.com/fwlink/p/?LinkID=533900) media streaming through [Media Source Extensions](Http://go.microsoft.com/fwlink/p/?LinkID=301313) (MSE). MSE extends the `HTMLMediaElement` ([`video`](https://msdn.microsoft.com/library/hh772959(v=vs.85).aspx) and [`audio`](https://msdn.microsoft.com/library/hh772923(v=vs.85).aspx) elements) to allow audio and video streaming without the need for plugins or special servers. MSE allows adaptive media streaming, live streaming, splicing videos, video editing, and more. 
 
 You can build custom adaptive streaming solutions using Media Source Extensions. An adaptive streaming solution would look for the optimal bit rate, based on network bandwidth and CPU utilization, to provide the highest quality streaming experience. For example, if the network bandwidth drops, you can use MSE to programmatically switch the video stream to a lower bit rate. This reduces the quality of the image, but allows the video to keep playing without interruptions.
 
