@@ -6,6 +6,7 @@
 ### [Test](accessibility/test.md)
 ## [Dev Guide](dev-guide.md)
 ### [What’s new in EdgeHTML](dev-guide/whats-new.md)
+#### [EdgeHTML 16](dev-guide.md)
 #### [EdgeHTML 15](dev-guide/whats-new/edgeHTML-15.md)
 #### [EdgeHTML 14](dev-guide/whats-new/edgeHTML-14.md)
 #### [EdgeHTML 13](dev-guide/whats-new/edgeHTML-13.md)
