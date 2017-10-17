@@ -14,7 +14,7 @@
 #### [Payment Request API](dev-guide/windows-integration/Payment-Request-API.md)
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md)
 #### [Web authentication](dev-guide/windows-integration/web-authentication.md)
-### [Browser features] (dev-guide/browser-features.md)
+### [Browser features](dev-guide/browser-features.md)
 #### [Flash](dev-guide/browser-features/flash.md)
 #### [Reading view](dev-guide/browser-features/reading-view.md)
 #### [Search provider discovery](dev-guide/browser-features/search-provider-discovery.md)
