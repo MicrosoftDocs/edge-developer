@@ -17,7 +17,7 @@ WebDriver enables developers to create automated tests that simulate user intera
 
 Here's how to get started with WebDriver for Microsoft Edge.
 
-The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](http://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests. Check out the [WebDriver Status and Commands](../../webdriver.md) page for more details on supported commands.
+The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](http://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests.
 
 ## Getting started with WebDriver for Microsoft Edge
 * Install Windows 10.
