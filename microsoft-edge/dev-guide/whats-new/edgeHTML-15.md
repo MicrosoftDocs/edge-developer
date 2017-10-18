@@ -110,7 +110,7 @@ POST | /session/{session id}/execute/sync | [Execute Script](https://w3c.github.
 GET | /session/{session id}/window | [Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle)
 GET | /session/{session id}/window/handles | [Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles)
 
-For more info and the status of other WebDriver features, check out [WebDriver commands](../../webdriver-commands.md).
+For more info and the status of other WebDriver features, check out [WebDriver](../../webdriver.md).
 
 ## New APIs in EdgeHTML 15
 

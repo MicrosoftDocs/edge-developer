@@ -4,7 +4,7 @@ description: This guide provides an overview of the developer features and stand
 title: Dev guide
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/10/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -13,12 +13,12 @@ keywords: edge, web development, html, css, javascript, developer
 # Microsoft Edge Developer Guide
 
 > [!TIP]
-> **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/)**:
-> We partnered with BrowserStack to get free live and automated testing on Microsoft Edge.
+> We've [partnered](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/) with other browsers and the web community in adopting [MDN Web Docs](https://developer.mozilla.org/) as the definitive place for useful, unbiased, browser-agnostic documentation for current and emerging standards-based web technologies. You can find details about EdgeHTML API support directly in each page of the [MDN web reference library](https://developer.mozilla.org/docs/Web). Visit Microsoft Edge's [Platform status](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release) for the latest features supported in Microsoft Edge. 
+
 
 ## What's new in EdgeHTML 16
 
-Here's a list of the new and updated features in EdgeHTML 16.  These features are available in the latest [Windows Insider](https://insider.windows.com/) Preview builds, with general availability in October as part of the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
+Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/) (10/2017, Build 16299). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
  
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16).
 
@@ -39,7 +39,7 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 
 ### F12 Developer Tools
 
-This release we started a major F12 DevTools refactoring effort for improved robustness and future extensibility, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out [Microsoft Edge F12 Developer Tools](./f12-devtools-guide/whats-new.md) for more on what's changed!
+This release we started a major F12 DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out [Microsoft Edge F12 Developer Tools](./f12-devtools-guide/whats-new.md) for more on what's changed!
 
 ![Experimental service worker debugging support in F12 DevTools](./f12-devtools-guide/media/debugger_sw_inspect.png)
 
