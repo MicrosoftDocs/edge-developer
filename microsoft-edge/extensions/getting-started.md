@@ -68,9 +68,9 @@ Once you've submitted a request, we'll receive a notification and will try to ge
 The process for publishing an extension to the Microsoft Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
 > - Your screenshots are correctly sized and are of your extension running in Microsoft Edge 
 > - Your extension description references "Microsoft Edge" instead of "Edge" (this is a legal requirement) 
-> - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#windows-store-icon) (The Microsoft Store client does not correctly render images with transparent backgrounds) 
+> - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#microsoft-store-icon) (The Microsoft Store client does not correctly render images with transparent backgrounds) 
 
-In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Microsoft Edge. While the Microsoft Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Microsoft Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
+In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Microsoft Edge. While the Microsoft Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Microsoft Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-microsoft-store) to make it easy for users to acquire it. 
 
 The Microsoft Store also allows you to [control the visibility of your extension](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) in the Microsoft Store catalog. Some of our partners have taken advantage of this functionality to achieve the following: 
 - Publishing a second beta version of their extension as hidden in the Microsoft Store.
