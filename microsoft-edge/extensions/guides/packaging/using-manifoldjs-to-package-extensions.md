@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Using ManifoldJS to create extension AppX packages
 
-ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Microsoft Store.
+ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Windows Store.
 
 If you use native messaging in your extension, you should skip this and go to [Native messaging in Microsoft Edge](../native-messaging.md#creating-an-extension-with-native-messaging) for packaging instruction. 
 
@@ -22,7 +22,7 @@ Before getting started, you will still need to read up on the following articles
 - [Localizing extension packages](./localizing-extension-packages.md)
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
 
 
 ## Installing Node.js and ManifoldJS
@@ -76,7 +76,7 @@ After ManifoldJS has finished running, you'll have a folder with the following c
                     ...
                 ...
 
-The generationInfo.json file is a log produced by running ManifoldJS and won't be included in your extension package. Only the contents of the **manifest** folder will be packaged. Within the manifest folder, the Assets folder contains the images that will be used in the Windows and Microsoft Store UI, while the Extension folder has the contents of your extension within it.
+The generationInfo.json file is a log produced by running ManifoldJS and won't be included in your extension package. Only the contents of the **manifest** folder will be packaged. Within the manifest folder, the Assets folder contains the images that will be used in the Windows and Windows Store UI, while the Extension folder has the contents of your extension within it.
 
 
 Now that you have the correct files, you'll need to edit the generated AppXManifest file within the **manifest** folder. If the extension’s manifest.json file has an internationalized string for the "name" field, once ManifoldJS is run, the most top layer folder’s name will have no underscores and include "MSG".
@@ -90,7 +90,7 @@ will have a manifest folder that lives in `\<CURRENT DIRECTORY>\MSGappName\edgee
 In the AppXManifest file, you'll need to:
  -	Replace the required Identity fields and PublisherDisplayName field as outlined [here](./creating-and-testing-extension-packages.md#app-identity-template-values). Note that if you're only packaging for testing purposes or for enterprise distribution, you can use placeholder values instead of registering for a Windows Dev Center account.
  -	Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design.md#icons-for-packaging) guide for information about where these icons are used.
- - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Microsoft Store](./localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) section.
+ - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Windows Store](./localizing-extension-packages.md#localizing-name-and-description-in-the-windows-store) section.
 
 Once your appxmanifest.xml file is sorted out, run the following command to create your package:
 
@@ -98,4 +98,4 @@ Once your appxmanifest.xml file is sorted out, run the following command to crea
 
 Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing extension packages' [testing](./creating-and-testing-extension-packages.md#testing-an-appx-package) section for info on how to sideload your new package.
 
-Once your package has been tested, feel free to submit a request on our [extension submission form](http://aka.ms/extension-request) in order to be considered for publication to the Microsoft Store.
+Once your package has been tested, feel free to submit a request on our [extension submission form](http://aka.ms/extension-request) in order to be considered for publication to the Windows Store.

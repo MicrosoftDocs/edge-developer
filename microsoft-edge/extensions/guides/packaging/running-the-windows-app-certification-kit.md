@@ -11,11 +11,11 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Running the Windows App Certification Kit
 
-To improve the chances of your extension getting published to the Microsoft Store, you'll need to install and run the [Windows App Certification Kit](http://go.microsoft.com/fwlink/p/?LinkID=309666).
-This runs a [series of tests](https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit-tests) on your extension package to ensure that it's ready for the Microsoft Store.
+To improve the chances of your extension getting published to the Windows Store, you'll need to install and run the [Windows App Certification Kit](http://go.microsoft.com/fwlink/p/?LinkID=309666).
+This runs a [series of tests](https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit-tests) on your extension package to ensure that it's ready for the Windows Store.
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
 
 Before learning about how to use the kit, make sure you meet the following prerequisites: 
 
