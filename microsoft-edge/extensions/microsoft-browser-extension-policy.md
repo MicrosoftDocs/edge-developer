@@ -23,21 +23,21 @@ Software that uses unsupported techniques or practices to extend or modify the b
 
  Microsoft Edge is designed to be secure, reliable, fast and responsive by default, and to ensure that the user is always in control of their experience.  
 
-Microsoft Edge Extensions, available exclusively from the Microsoft Store, are the **only supported** mechanism to modify the end-user experience of Microsoft Edge, including the browser configuration and the content displayed in the browser.
+Microsoft Edge Extensions, available exclusively from the Windows Store, are the **only supported** mechanism to modify the end-user experience of Microsoft Edge, including the browser configuration and the content displayed in the browser.
 
 Any other mechanism that impacts the configuration of Microsoft Edge, or the content that the browser displays, unless explicitly listed in this document is **unsupported**.  
 
 ### Installation, Management, and Removal
 
-All extensions for Microsoft Edge must be deployed from the Microsoft Store. The installation must be initiated and completed by the user, using only the user experience provided by Microsoft Edge and the Microsoft Store. Software may refer to the extension in the Microsoft Store, but may not change the experience of acquiring the extension, or otherwise apply undue influence or false pretenses to the user to make them install the extension.  
+All extensions for Microsoft Edge must be deployed from the Windows Store. The installation must be initiated and completed by the user, using only the user experience provided by Microsoft Edge and the Windows Store. Software may refer to the extension in the Windows Store, but may not change the experience of acquiring the extension, or otherwise apply undue influence or false pretenses to the user to make them install the extension.  
 
 Software may not interfere with the user’s ability to disable, or remove any extension, or modify in any way the extension management user experience of Microsoft Edge.
 
-All extensions must follow the current Microsoft Store policy for Microsoft Edge extensions.
+All extensions must follow the current Windows Store policy for Microsoft Edge extensions.
 
 ### Extension development
 
-An exception to the Microsoft Store requirement is provided only for developers and testers of in-development extensions. These may be loaded into an instance of Microsoft Edge temporarily with full knowledge of the user, who will be alerted to their presence. Extensions will be disabled automatically if the user does not consent to their ongoing presence.
+An exception to the Windows Store requirement is provided only for developers and testers of in-development extensions. These may be loaded into an instance of Microsoft Edge temporarily with full knowledge of the user, who will be alerted to their presence. Extensions will be disabled automatically if the user does not consent to their ongoing presence.
 
 ### Modification of Microsoft Edge settings
 
@@ -81,5 +81,5 @@ Starting with Internet Explorer 11, extensions must be compatible with Enhanced 
 
 #### Change Log 
 - April 2016: Document Published
-- October 2016: Updated for publishing Microsoft Edge extensions to Microsoft Store 
+- October 2016: Updated for publishing Microsoft Edge extensions to Windows Store 
 - August 2017: Clarification for managed devices

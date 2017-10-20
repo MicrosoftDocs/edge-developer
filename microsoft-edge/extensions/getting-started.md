@@ -44,36 +44,36 @@ So your extension works in Microsoft Edge. What happens next? Before you continu
 
 ## Packaging an extension
 
-Now your extension is finally polished up and ready to be packaged. Whether you wish to package it to prepare for submission to the Microsoft Store, or to make it easier to distribute within your development/testing teams, there are plenty of resources available to help you: 
+Now your extension is finally polished up and ready to be packaged. Whether you wish to package it to prepare for submission to the Windows Store, or to make it easier to distribute within your development/testing teams, there are plenty of resources available to help you: 
 
 - Our recommended solution for creating an extension package is to follow our [ManifoldJS packaging guide](./guides/packaging/using-manifoldjs-to-package-extensions.md) which will walk you through the steps of using a Node.js based tool to easily package your extension no matter what platform you develop on. If you want a more manual and in-depth look into our extension packaging format, please refer to our [AppX package creation guide](./guides/packaging/creating-and-testing-extension-packages.md#preparing-the-submission-folder). 
 - If your extension supports multiple languages, you'll also need to follow our guide on [localizing extension packages](./guides/packaging/localizing-extension-packages.md) so that the languages you have in your extension are correctly registered after packaging. 
 
 If you're an enterprise customer looking to distribute your packaged extensions via internal channels, please see our [extensions for enterprise guide](./extensions-for-enterprise.md) to see how to do this.  
 
-## Publishing to the Microsoft Store
+## Publishing to the Windows Store
 
-Since our extensions platform is still in its infancy, we're purposely managing extension submissions to the Microsoft Store so that we can focus on delivering a quality experience for our users and developers. That being said, we want to make it as easy as possible for developers to publish their extensions. As a result, we have recently launched a new [extension submission form](http://aka.ms/extension-request) where developers can request permission to submit their extension AppX to the Microsoft Store.
+Since our extensions platform is still in its infancy, we're purposely managing extension submissions to the Windows Store so that we can focus on delivering a quality experience for our users and developers. That being said, we want to make it as easy as possible for developers to publish their extensions. As a result, we have recently launched a new [extension submission form](http://aka.ms/extension-request) where developers can request permission to submit their extension AppX to the Windows Store.
  
 
-The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Microsoft Edge extensions section of the Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
+The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Microsoft Edge extensions section of the Windows Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
 
-Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](http://aka.ms/extension-request) in order to request permission to publish to the Microsoft Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
+Once you've confirmed that your extension follows the policies, you will need to register for a [Windows Dev Center account and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](http://aka.ms/extension-request) in order to request permission to publish to the Windows Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
 
 `Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.`
 
-Once you've submitted a request, we'll receive a notification and will try to get to your submission as soon as possible. This may take a bit due to the high volume of submissions we've received, but we'll notify you via email the moment you're approved! Once you've received the mail, you'll be able to submit your extension AppX to the Microsoft Store via Dev Center. Please note that you do not have to sign your AppX before submitting it; the Microsoft Store ingestion process will take care of that for you!
+Once you've submitted a request, we'll receive a notification and will try to get to your submission as soon as possible. This may take a bit due to the high volume of submissions we've received, but we'll notify you via email the moment you're approved! Once you've received the mail, you'll be able to submit your extension AppX to the Windows Store via Dev Center. Please note that you do not have to sign your AppX before submitting it; the Windows Store ingestion process will take care of that for you!
  
 > [!NOTE]
-The process for publishing an extension to the Microsoft Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
+The process for publishing an extension to the Windows Store (whether it's a brand new extension or an update to an existing one) can take up to 72 hours to complete. In order to expedite this process, please ensure you have verified these common gotchas before submitting to avoid having to resubmit later: 
 > - Your screenshots are correctly sized and are of your extension running in Microsoft Edge 
 > - Your extension description references "Microsoft Edge" instead of "Edge" (this is a legal requirement) 
-> - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#microsoft-store-icon) (The Microsoft Store client does not correctly render images with transparent backgrounds) 
+> - Your 150x150 icon in your extension package [does not have a transparent background](./guides/design.md#windows-store-icon) (The Windows Store client does not correctly render images with transparent backgrounds) 
 
-In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Microsoft Edge. While the Microsoft Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Microsoft Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-microsoft-store) to make it easy for users to acquire it. 
+In addition to the above, and if applicable, please ensure that any platform availability information on your website correctly mentions your extension's availability on Microsoft Edge. While the Windows Store does not allow for one-click inline extension installs, you can [deep-link to your extension in the Windows Store](./tips-and-tricks.md#get-a-direct-link-to-your-extension-in-the-windows-store) to make it easy for users to acquire it. 
 
-The Microsoft Store also allows you to [control the visibility of your extension](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) in the Microsoft Store catalog. Some of our partners have taken advantage of this functionality to achieve the following: 
-- Publishing a second beta version of their extension as hidden in the Microsoft Store.
+The Windows Store also allows you to [control the visibility of your extension](https://blogs.windows.com/buildingapps/2015/09/10/managing-hidden-apps-beta-apps-and-visibility-of-in-app-purchases-in-dev-center/) in the Windows Store catalog. Some of our partners have taken advantage of this functionality to achieve the following: 
+- Publishing a second beta version of their extension as hidden in the Windows Store.
 - Initially publishing their extension as hidden to monitor initial telemetry before eventually changing its status to visible once a certain level of confidence is reached.
 
 ## That's it!

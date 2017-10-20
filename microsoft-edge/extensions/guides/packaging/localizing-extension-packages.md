@@ -10,15 +10,15 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Localizing Microsoft Edge extensions for Windows and the Microsoft Store
+# Localizing Microsoft Edge extensions for Windows and the Windows Store
 
-This guide walks through how to localize your Microsoft Edge extension so that it's ready for multiple locales upon release. To fully localize your extension, you'll need to follow the steps for both Windows and the Microsoft Store.
+This guide walks through how to localize your Microsoft Edge extension so that it's ready for multiple locales upon release. To fully localize your extension, you'll need to follow the steps for both Windows and the Windows Store.
 
 If you want to localize your extension resources for Microsoft Edge, you can learn how to use the i18n framework in the [Internationalization guide](../internationalization.md).
 
 
 > [!NOTE]
-> If your extension doesn't support multiple languages, you can skip to [Localizing name and description in the Microsoft Store](#localizing-name-and-description-in-the-windows-store).
+> If your extension doesn't support multiple languages, you can skip to [Localizing name and description in the Windows Store](#localizing-name-and-description-in-the-windows-store).
 
 
 
@@ -26,7 +26,7 @@ If you want to localize your extension resources for Microsoft Edge, you can lea
 
 ## The localization process overview
 
-The first step towards getting your extension available to a wide audience is to [configure its AppxManifest](#configuring-the-appxmanifest) for multiple languages. In the Microsoft Store, this will show users what languages your extension supports. Certain fields in the AppxManifest will also need to be changed if you want the name of your extension to be [localized in the Windows UI and the Microsoft Store](#localizing-extension-resources-for-windows-and-the-windows-store).
+The first step towards getting your extension available to a wide audience is to [configure its AppxManifest](#configuring-the-appxmanifest) for multiple languages. In the Windows Store, this will show users what languages your extension supports. Certain fields in the AppxManifest will also need to be changed if you want the name of your extension to be [localized in the Windows UI and the Windows Store](#localizing-extension-resources-for-windows-and-the-windows-store).
 
 
 Once your AppxManifest is configured, you'll need to [create JSON string resources](#creating-json-string-resources) for the languages that you indicated as supported. This requires creating a .resjson file for each language, where each file has all the UI strings of that language within it.
@@ -35,21 +35,21 @@ Once your AppxManifest is configured, you'll need to [create JSON string resourc
 After the .resjson files for the supported languages have been made, a [.pri resource file will need to be created](#creating-the-resources-file). This will be created by using a configuration file to the **MakePRI** tool that comes with the Windows 10 SDK.
 
 
-Once you've uploaded your extension, the final step is to [localize the name and description in the Microsoft Store](#localizing-name-and-description-in-the-windows-store).
+Once you've uploaded your extension, the final step is to [localize the name and description in the Windows Store](#localizing-name-and-description-in-the-windows-store).
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
 
 
 
 ## Configuring the AppXManifest
 
-Your extension's "Supported languages" list in the Microsoft Store is generated based on its AppXManifest values. This list is specified using the `Resource` element.
+Your extension's "Supported languages" list in the Windows Store is generated based on its AppXManifest values. This list is specified using the `Resource` element.
 
 
 ![settings image](./../../media/language-app-details.png)
 
-To specify the list of languages that are supported by your extension, you can add a `Resource` element in the format seen below (this `Resource` element will show support for English, German, and French in the Microsoft Store):
+To specify the list of languages that are supported by your extension, you can add a `Resource` element in the format seen below (this `Resource` element will show support for English, German, and French in the Windows Store):
 ```xml
 <Resources>
     <Resource Language="en-us"/>
@@ -58,7 +58,7 @@ To specify the list of languages that are supported by your extension, you can a
 </Resources>
 ```
 
-See [Supported languages](https://msdn.microsoft.com/windows/uwp/publish/supported-languages) for info on the languages/language codes that the Microsoft Store supports.
+See [Supported languages](https://msdn.microsoft.com/windows/uwp/publish/supported-languages) for info on the languages/language codes that the Windows Store supports.
 
 
 In order to specify localized strings for all publically visible elements in the AppxManifest, you'll have to use a resource identifier in the format of `ms-resource:<resource id>`.
@@ -108,9 +108,9 @@ The snippets below make a complete AppxManifest. The following values should be 
 ```
 
 
-## Localizing extension resources for Windows and the Microsoft Store
+## Localizing extension resources for Windows and the Windows Store
 
-Now that your AppxManifest is configured for multiple languages, there are some key differences you should know between localizing the UI within your extension and localizing your extension for Windows and the Microsoft Store.
+Now that your AppxManifest is configured for multiple languages, there are some key differences you should know between localizing the UI within your extension and localizing your extension for Windows and the Windows Store.
 
 While Microsoft Edge extensions don't run outside of Microsoft Edge, the management of them can occur within Windows. For example, users can manage their extensions in the Settings app:
 
@@ -130,7 +130,7 @@ The name of the extension that shows up in the Settings app in Windows comes fro
 
 The i18n based localization infrastructure that's defined for JavaScript extensions is only applicable within the Microsoft Edge environment.
 
-Outside of Microsoft Edge, within Windows and the Microsoft Store, the only supported localization framework is based on the Universal Windows Platform (UWP) localization framework.
+Outside of Microsoft Edge, within Windows and the Windows Store, the only supported localization framework is based on the Universal Windows Platform (UWP) localization framework.
 
 While we do support JSON based resources for HTML based Windows apps, the schema for the JSON resources doesn't match the one defined for JavaScript extensions.
 
@@ -218,24 +218,24 @@ You should now have one resources.pri file in your root folder:
 ![resources folder](./../../media/resources.png)
 
 
-## Localizing name and description in the Microsoft Store
+## Localizing name and description in the Windows Store
 
 Once you try to upload your complete, localized package, the Windows Dev Center will detect that more than one language is supported and check that you have corresponding localized names and descriptions for each. If any of the localized values are missing, your submission will be blocked until you provide the values.
 
-If you are only interested in providing a localized name and description for the Microsoft Store (and not Windows), you can do so by [reserving all the localized names for your extension](./extensions-in-the-windows-dev-center.md#name-reservation).
+If you are only interested in providing a localized name and description for the Windows Store (and not Windows), you can do so by [reserving all the localized names for your extension](./extensions-in-the-windows-dev-center.md#name-reservation).
 
 
-Once you've reserved additional localized names, you can create an updated submission. In the description section you can manage additional languages for your Microsoft Store listing:
+Once you've reserved additional localized names, you can create an updated submission. In the description section you can manage additional languages for your Windows Store listing:
 
 ![japanese app description](./../../media/manage-description-languages.png)
 
-Once you've selected "Manage additional languages", you'll get to select which languages you want to add to your Microsoft Store listing. The new language will show up as 'Additional description language' in the "Description" section.
+Once you've selected "Manage additional languages", you'll get to select which languages you want to add to your Windows Store listing. The new language will show up as 'Additional description language' in the "Description" section.
 
-You can click on the individual link in the "Description" section to provide a localized name and description, release notes, and visual assets for each language. The description for the Microsoft Store is not extracted from the AppXManifest. Each localized description needs to be manually entered in the Windows Dev Center:
+You can click on the individual link in the "Description" section to provide a localized name and description, release notes, and visual assets for each language. The description for the Windows Store is not extracted from the AppXManifest. Each localized description needs to be manually entered in the Windows Dev Center:
 
 ![japanese app description](./../../media/japanese-app-description.png)
 
-Once the localized descriptions are submitted and the extension is published, anyone accessing a localized page of the extension in the Microsoft Store will see the following UI:
+Once the localized descriptions are submitted and the extension is published, anyone accessing a localized page of the extension in the Windows Store will see the following UI:
 
 ![japanese windows store](./../../media/japanese-windows-store.png)
  

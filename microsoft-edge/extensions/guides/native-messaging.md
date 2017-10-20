@@ -34,7 +34,7 @@ Native messaging adds a whole new layer to your extension. By implementing a UWP
 There are a few instances where native messaging can't be used due to security or policy restrictions:
 
 * Modifying user settings in either Microsoft Edge or Windows, e.g. changing the default browser or search provider.
-* Actions that violate Microsoft Store policies for both apps and extensions.
+* Actions that violate Windows Store policies for both apps and extensions.
 * Transferring data to remote endpoint via native message host.
 * Allowing other apps to download content that changes extension behavior.
 
@@ -368,7 +368,7 @@ Once the solution is correctly deployed, you should see your extension in Micros
 ## Packaging
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
 
 
 You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:
