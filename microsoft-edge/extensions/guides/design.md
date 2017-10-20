@@ -86,10 +86,10 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 
 - 44px - Used in the Windows UI (App List, Settings->System->Apps & features)
 - 50px - Packaging requirement (not visible anywhere)
-- 150px - Icon for the Windows Store
+- 150px - Icon for the Microsoft Store
 
-#### Windows Store icon
-If the 150px icon for the Windows Store has a transparent background, the accent color of the user's device will appear as the icon's background color.
+#### Microsoft Store icon
+If the 150px icon for the Microsoft Store has a transparent background, the accent color of the user's device will appear as the icon's background color.
 
 
 For example, if the user has selected pink as their accent color, the transparent background of your store icon will appear as pink to them.
@@ -97,9 +97,9 @@ For example, if the user has selected pink as their accent color, the transparen
 ![Windows accent color](./../media/windows-accent-color.png)
 ![Background color auto selected](./../media/store-icon-with-transparent-background.png)
 
- If you want to pick your own background color for your Windows Store, you'll need to make the background opaque.
+ If you want to pick your own background color for your Microsoft Store, you'll need to make the background opaque.
 
 
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Windows Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
