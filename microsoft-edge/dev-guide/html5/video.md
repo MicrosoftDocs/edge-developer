@@ -48,14 +48,14 @@ var myAudioTracks = myVideo.audioTracks[0];
 
 You also can access information about the multiple audio tracks using properties like [`enabled`](https://msdn.microsoft.com/library/hh772492(v=vs.85).aspx), [`id`](https://msdn.microsoft.com/library/hh772686(v=vs.85).aspx), [`language`](https://msdn.microsoft.com/library/hh772495(v=vs.85).aspx), and [`sourceBuffer`](https://msdn.microsoft.com/library/dn254952(v=vs.85).aspx).
 
-Similarily, a `video` element can also have more than one associated video track.  The [`videoTrackList`](https://msdn.microsoft.com/library/dn806262(v=vs.85).aspx) object represents a list of [`videoTrack`](https://msdn.microsoft.com/library/dn806264(v=vs.85).aspx) objects. 
+Similarly, a `video` element can also have more than one associated video track.  The [`videoTrackList`](https://msdn.microsoft.com/library/dn806262(v=vs.85).aspx) object represents a list of [`videoTrack`](https://msdn.microsoft.com/library/dn806264(v=vs.85).aspx) objects. 
 
 ``` javascript
 // Returns the video track with ID = "english"
 var myVideoTrack = myVideo.videoTracks.getTrackByID("english");
 ```
 
-You also have the ability to get information about the multiple video tracks, and switch between them using the [`selected`](https://msdn.microsoft.com/library/dn806261(v=vs.85).aspx) proprety. 
+You also have the ability to get information about the multiple video tracks, and switch between them using the [`selected`](https://msdn.microsoft.com/library/dn806261(v=vs.85).aspx) property. 
 
 ## HLS and DASH
 
@@ -91,7 +91,7 @@ Video Motion JPEG | .mjpeg | video/x-motion-jpeg
 
 > Updates to Microsoft Edge introduce support for HLS, DASH, and MJPEG. 
 
-To test other browser support of video file formats, use the [`canPlayType`](https://msdn.microsoft.com/library/ff975191(v=vs.85).aspx) method. This method returns  *probably*, *maybe*, or an empty string depending on whether or not the client can play a given media resource type. The example below demostrates how to use the `canPlayType` method.
+To test other browser support of video file formats, use the [`canPlayType`](https://msdn.microsoft.com/library/ff975191(v=vs.85).aspx) method. This method returns  *probably*, *maybe*, or an empty string depending on whether or not the client can play a given media resource type. The example below demonstrates how to use the `canPlayType` method.
 
 ``` javascript
 function checkVideoCompat() {

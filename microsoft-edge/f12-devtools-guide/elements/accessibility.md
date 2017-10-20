@@ -14,7 +14,7 @@ View the accessible properties assigned to the selected element. Hover over any 
 
 ![Accessibility pane](../media/elements_accessibility.png)
 
-Its useful to open the [Accessibility tree](#accessibility-tree) to navigate around your page as a screenreader would, and then use the *Accessiblity* pane to inspect details about accessibility properties of interest.
+Its useful to open the [Accessibility tree](#accessibility-tree) to navigate around your page as a screenreader would, and then use the *Accessibility* pane to inspect details about accessibility properties of interest.
 
 ## Accessibility tree
 The **Accessibility tree** pane shows the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.

@@ -137,7 +137,7 @@ textTrackCue.[`pauseOnExit`](https://msdn.microsoft.com/library/hh772688) | Indi
 textTrackCue.[`text`](https://msdn.microsoft.com/library/hh968258) | Returns the text value of a TextTrackCue.
 textTrackCue.[`track`](https://msdn.microsoft.com/library/hh781507) | Returns the text track object to which the textTrackCue belongs, or "null" otherwise. 
  
-The following methods are also availabe:
+The following methods are also available:
 
 | Method  | Description | 
 | ------------ | --------------------- |
