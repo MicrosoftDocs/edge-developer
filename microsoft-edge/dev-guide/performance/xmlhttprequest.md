@@ -25,12 +25,12 @@ XHR supports binary data. When the [`responseType`](https://msdn.microsoft.com/e
 The code below shows how to use XHR to download an image to a blob object and then assign the result to an image element on the webpage.
 
 ```javascript
-var req = new XMLHttpReqest();
+var req = new XMLHttpRequest();
 xhr.open("GET", "download?name=" + name, true);
 xhr.responseType = "blob";
 xhr.onreadystatechange = function () {
   if (xhr.readyState == xhr.DONE) {
-    var blob = xhr.reponse;
+    var blob = xhr.response;
     var image = document.getElementById("my-image");
     image.addEventListener("load", function (evt) {
       URL.revokeObjectURL(evt.target.src);
@@ -44,12 +44,12 @@ xhr.send();
 When the `responseType` property is set to `"ms-stream"` for download requests, content can be handled on the fly, as shown in the following example.
 
 ```javascript
-var xhr = new XMLHttpReqest();
+var xhr = new XMLHttpRequest();
 xhr.open("GET", "download?name=" + name, true);
 xhr.responseType = "ms-stream";
 xhr.onreadystatechange = function () {
   if (xhr.readyState == xhr.LOADING) {
-    var stream = xhr.reponse;
+    var stream = xhr.response;
     var video = document.getElementById("my-video");
     video.addEventListener("loadeddata", function (evt) {
       URL.revokeObjectURL(evt.target.src);

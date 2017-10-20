@@ -109,7 +109,7 @@ The *Types, Roots* and *Dominators* views each has its own filter, so the filter
 
 ### Object references
 
-In the [**Types**](#types) and [**Dominators**](#dominators) views, the lower pane contains an **Object references** list that displays shared references. When you choose an object in the upper pane, this list displays all objects that point to that object--in other words, the objects that are keeping the seleted object alive.
+In the [**Types**](#types) and [**Dominators**](#dominators) views, the lower pane contains an **Object references** list that displays shared references. When you choose an object in the upper pane, this list displays all objects that point to that object--in other words, the objects that are keeping the selected object alive.
 
 Circular references are shown with an asterisk (*) and informational tooltip, and cannot be expanded. Otherwise, they would prevent you from walking up the reference tree and identifying objects that are retaining memory.
 

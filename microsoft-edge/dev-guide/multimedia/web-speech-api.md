@@ -28,7 +28,7 @@ window.speechSynthesis.speak(new SpeechSynthesisUtterance("Hello world!"));
 
 In this example, you create a new instance of the [`SpeechSynthesisUtterance`](https://msdn.microsoft.com/en-us/library/mt718742(v=vs.85).aspx) object and pass it the text to synthesize: hello world! This text is then spoken using the system’s default voice. 
 
-The [`SpeechSynthesis`](https://msdn.microsoft.com/en-us/library/mt718509(v=vs.85).aspx) object controls the text to speech output and contains a queue of utterances, or the text to be spoken. After calling `speechSyntehsis.speak`, the first utterance in the queue will begin speaking, and if there are additional utterances in the queue, the remaining utterances will speak after the first utterance is completed.  
+The [`SpeechSynthesis`](https://msdn.microsoft.com/en-us/library/mt718509(v=vs.85).aspx) object controls the text to speech output and contains a queue of utterances, or the text to be spoken. After calling `speechSynthesis.speak`, the first utterance in the queue will begin speaking, and if there are additional utterances in the queue, the remaining utterances will speak after the first utterance is completed.  
 
 The text to be synthesized, using `speechSynthesis.text`, can simply be plain text, like "hello world", or you can use a well-formed [Speech Synthesis Markup Language (SSML)](http://www.w3.org/TR/speech-synthesis/) document.
 

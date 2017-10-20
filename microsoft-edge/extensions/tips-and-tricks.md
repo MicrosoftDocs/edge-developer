@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer, extensions
 
 # Tips and tricks
 
-Whether you're currently working on a Micrsoft Edge extension or have already published one, the following tips and tricks might come in handy.
+Whether you're currently working on a Microsoft Edge extension or have already published one, the following tips and tricks might come in handy.
 
 ## Get a direct link to your extension in the Microsoft Store
 In the Windows Dev Center dashboard, you can find a direct link to your extension in the Microsoft Store. This link can be useful for advertising and sharing out your extension.
@@ -27,6 +27,7 @@ When creating your extension, make sure you keep in mind the guidelines for subm
 Microsoft Edge extensions also have an additional set of policies to follow seen [here](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12).
 
 ## Improve your extension’s discoverability in the Microsoft Store
+
 You can add keywords to your extension submission to imporove its discoverability through searches. For example, "Microsoft Edge Extensions" and "name of my extension". 
 
 This can be be done in the Windows Dev Center under the description section of your extension. These keywords will need to be added for every language your extension supports.
@@ -38,7 +39,7 @@ You can automate and streamline your submissions to the Microsoft Store by using
 
 ## Use the Windows Feedback Hub to gather feedback/reviews/feature requests
 
-You can direct users to the Windows Feedback Hub subcategory for your extension by embedding a link that points to it. This link will need to be created using the follwing format: 
+You can direct users to the Windows Feedback Hub subcategory for your extension by embedding a link that points to it. This link will need to be created using the following format: 
 
 `feedback-hub://?tabid=2&appid=<PFN>!App`
 
