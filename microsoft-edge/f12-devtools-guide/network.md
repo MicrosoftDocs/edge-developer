@@ -127,7 +127,7 @@ Here are the different network events you might see for a given resource, in chr
 
 #### Stalled
 
-Time spent waiting for an available network connection in the request queue. Microsoft Edge allows a maximum of ## simultaneous connections per hostname. 
+Time spent waiting for an available network connection in the request queue. For HTTP 1.0/1.1, Microsoft Edge allows a maximum of six (6) simultaneous TCP connections per hostname. 
 
 #### Resolving (DNS)
 
