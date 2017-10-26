@@ -88,5 +88,5 @@ HTTPS is not a magic bullet, but an serve to make hijacking secure information a
 
 [Content Security Policy(CSP)](./content-Security-Policy.md)
 
-[Securityheadders.io: Scan your site security now](https://securityheaders.io/)
+[Securityheaders.io: Scan your site security now](https://securityheaders.io/)
 

@@ -40,7 +40,7 @@ Here are some things to keep in mind when recording a profile:
 
 - If initial page load times are important to your analysis, make sure to clear your browser cache (from the [Network](./network.md) panel) to ensure all page resources are loading from the network.
 
-- Sometimes it helps to record multiple sessions and/or sample the same scenario across different machines to better understand the performance isue in the wild.
+- Sometimes it helps to record multiple sessions and/or sample the same scenario across different machines to better understand the performance issue in the wild.
 
 ## Timeline ruler
 
@@ -124,7 +124,7 @@ The **Visual throughput (FPS)** graph shows the estimated *frames per second* (F
 
 ## Timeline details
 
-Use the lowermost details pane to get the full breakdown of what happened on the page. The **Timeline details** tab provides a breakdown of events that occured within the various browser subsystems.
+Use the lowermost details pane to get the full breakdown of what happened on the page. The **Timeline details** tab provides a breakdown of events that occurred within the various browser subsystems.
 
 ![Performance timeline details pane](./media/performance_details_timeline.png)
 

@@ -125,7 +125,7 @@ Function | Description
 `updateFormData` | Takes the details passed in the parameters and updates the form on the webpage with the appropriate information.
 `reduceFilename` | A utility function that extracts the filename from a fully-qualified URL.
 
-Other utility fuctions that will appear in this guide include functions that perform common JavaScript operations, such as error handling, user notification, feature detection, and so on as detailed below:
+Other utility functions that will appear in this guide include functions that perform common JavaScript operations, such as error handling, user notification, feature detection, and so on as detailed below:
 
 Function | Description
 :----------- | :-------------

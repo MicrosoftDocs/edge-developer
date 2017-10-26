@@ -17,7 +17,7 @@ Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows
 If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Windows Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
 
 
 
@@ -29,7 +29,7 @@ To prepare your extension for submission, you need to create a folder with the f
 
 At the root of the folder, you should include an AppXManifest.xml file. This file is used to specify the contents and layout of the package.
 
-You should also have an Assets folder which contains the UI assets to be used in the Windows Store, and an Extension folder that contains your extension's files (scripts, icons, etc).
+You should also have an Assets folder which contains the UI assets to be used in the Microsoft Store, and an Extension folder that contains your extension's files (scripts, icons, etc).
 
 >important You can create a different folder structure for your package, but the folder structure must match the AppXManifest values.
 
@@ -131,7 +131,7 @@ You can now populate the AppXManifest template with values from the App identity
 #### JSON manifest template values
 Some values in the AppXManifest need to match those that are defined in the JSON manifest. Please update the following values in appxmanifest.xml based on your extension JSON manifest:
 
-- `Verison` - This is the version listed in your extension's JSON manifest. The string needs to match the X.X.X.X format where the last integer has to be 0. E.g. 1.2.3.0
+- `Version` - This is the version listed in your extension's JSON manifest. The string needs to match the X.X.X.X format where the last integer has to be 0. E.g. 1.2.3.0
 
    ```xml
    <Identity
@@ -156,7 +156,7 @@ Some values in the AppXManifest need to match those that are defined in the JSON
 
 ### Assets folder
 
-Within the Assets folder you will need three different icon sizes. These icons will be used in the Windows Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
+Within the Assets folder you will need three different icon sizes. These icons will be used in the Microsoft Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
 
 ![assets folder with three icon sizes in it](./../../media/assets-folder.png)
 
@@ -188,7 +188,7 @@ Copy your extension files (keeping the folder structure) into the Extension fold
 
 
 ### Supporting more than one locale
-If your extension supports more than one language, you may want to configure the AppX package with all the locales that you need so that the correct localized icon and description appear in the Windows Store. See [Localizing extension packages](./localizing-extension-packages.md) for more information.
+If your extension supports more than one language, you may want to configure the AppX package with all the locales that you need so that the correct localized icon and description appear in the Microsoft Store. See [Localizing extension packages](./localizing-extension-packages.md) for more information.
 
 ### Creating an Appx
 
@@ -227,7 +227,7 @@ You can test your Microsoft Edge extension AppX package by sideloading it in Mic
 See [How to create an app package signing certificate](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
 
 > [!NOTE]
-> You do not need to sign an extension package before submitting it to the Windows Store; the Store ingestion process will take care of that for you!
+> You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!
 
 After you’ve signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
 
@@ -251,7 +251,7 @@ You can deploy the Microsoft Edge Extension AppX package by running the followin
 
 ## Automated testing with WebDriver
 
-As of the Anniversary Update, you can programatically sideload your extension in Microsoft Edge with WebDriver, enabling automated testing of extensions when Microsoft Edge is launched in WebDriver mode. This will allow you to set up automated tests for any extension that manipulates content on a page and verify that the correct behavior is exhibited.
+As of the Anniversary Update, you can programmatically sideload your extension in Microsoft Edge with WebDriver, enabling automated testing of extensions when Microsoft Edge is launched in WebDriver mode. This will allow you to set up automated tests for any extension that manipulates content on a page and verify that the correct behavior is exhibited.
 
 To sideload your extension for automated testing, you'll need to store your extension's folder under `%LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\`. Once your extension is in the `LocalState` directory, you'll need to create an [`EdgeOptions`](https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Edge_EdgeOptions.htm) object, and add the `extensionPaths` capability to it. The value of this capability is an array of absolute paths to the extensions (in the `LocalState` directory) you wish to have side loaded when Microsoft Edge starts in WebDriver mode.
 

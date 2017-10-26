@@ -81,7 +81,7 @@ svg {
 ```
 
 
-Utilzing more steps in the Keyframe.
+Utilizing more steps in the Keyframe.
 
 ```CSS
 @keyframes example {

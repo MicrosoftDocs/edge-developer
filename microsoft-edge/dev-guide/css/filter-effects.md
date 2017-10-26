@@ -99,7 +99,7 @@ You can add multiple filter effects to an element by adding a space between the 
 }
 ```
 
-![An image of a dog with mulitple filter effects](./../media/filter_effects_mulitple.png)
+![An image of a dog with multiple filter effects](./../media/filter_effects_mulitple.png)
 
 ## API Reference
 

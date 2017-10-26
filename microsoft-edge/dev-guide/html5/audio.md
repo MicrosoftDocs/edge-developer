@@ -12,9 +12,9 @@ keywords: edge, web development, html, css, javascript, developer
 
 # HTML5 Audio
 
-You can use the `audio` element to embed simple sound effects, background audio, or more sophisticated audio engies to your webpage without requiring script or add-on controls.
+You can use the `audio` element to embed simple sound effects, background audio, or more sophisticated audio engines to your webpage without requiring script or add-on controls.
 
-To do more complex processing and syntehsizing of audio in web applications, check out the [Web Audio API](./../multimedia/web-Audio.md). 
+To do more complex processing and synthesizing of audio in web applications, check out the [Web Audio API](./../multimedia/web-Audio.md). 
 
 ## Adding an audio element
 

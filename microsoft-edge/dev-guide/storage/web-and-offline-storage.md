@@ -116,7 +116,7 @@ Here are some things to consider:
 
 Access to the session storage area is restricted by the top-level browsing context. Script running in one top-level browsing context has no access to storage created in another. Sites can add data to the session storage, and it will be accessible to any page from that hostname opened in the same window.
 
-> WANRING: The port and protocol/scheme are not evaluated as a part of this check.
+> WARNING: The port and protocol/scheme are not evaluated as a part of this check.
 
 ### Origin Determines Storage Limits
 

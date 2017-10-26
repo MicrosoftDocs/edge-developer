@@ -34,7 +34,7 @@ A quick way to simulate your page running on a Windows Phone device is to change
 
 #### User agent string
 
-Modifing your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge. 
+Modifying your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge. 
 
 Front end and/or back end scripts sometimes use the user agent string  to detect which browser you're using. And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.
 
