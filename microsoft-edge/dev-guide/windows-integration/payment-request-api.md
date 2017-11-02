@@ -49,17 +49,12 @@ The [`methodData`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequ
 
 ![The "pay with" list in the Microsoft Wallet user experience](./../media/pay_with.png)
 
-### Test Mode in Microsoft Edge
-For the purposes of pre-release testing, "test" mode is supported by setting the environment parameter in the data supplied in [`supportedMethods`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentMethodData) data. When set to "TEST", the Microsoft payment app will construct a fake **Payment Request** and response to emulate the integration of the developer's website and the payment app while protecting customer data. 
-
 ```js
 var supportedInstruments = [{
     supportedMethods: ['basic-card'],
     data: {
         supportedNetworks: ['visa', 'mastercard', 'amex'],
         supportedTypes: ['credit'] 
-        //for test transactions uncomment the test flag below
-        //environment: 'TEST'
     }         
 }]; 
 ```
