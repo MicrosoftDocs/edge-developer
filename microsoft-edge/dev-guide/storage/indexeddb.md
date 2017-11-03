@@ -14,13 +14,12 @@ keywords: edge, web development, html, css, javascript, developer
 
 Microsoft Edge includes support for the [Indexed Database API (`IndexedDB`)](https://msdn.microsoft.com/library/hh772651). `IndexedDB` enables you to store structured data. Unlike cookies and DOM Storage, `IndexedDB` provides features that enable you to group, iterate, search, and filter JavaScript objects.
 
+## Limits
+Unlike with the earlier Internet Explorer `IndexedDB` implementation, Microsoft Edge  will not request user authorization to use more than 10 megabytes of space.
 
-## New in Microsoft Edge
+Windows 10 UWP apps using JavaScript are not subject to an IndexedDB storage limit. However, earlier *Windows Store apps using JavaScript* (Windows 8 and Windows 8.1 JavaScript apps) running on Windows 10 share their storage quotas with Microsoft Edge and are subject to the limits described in the tble below.
 
-Microsoft Edge brings a number of improvements to the [IndexedDB](https://msdn.microsoft.com/library/hh772651) API, including:
-* **Local use**: Added support for webpages loaded via a `"file://"` URI scheme. This allows developers accessing files from disk to use these APIs.
-* **Removal of soft limits**: `IndexedDB` will not request user authorization to use more than 10 megabytes of space.
-* **Changes to default hard limits**: Indexed Database limits are removed for UWP apps using JavaScript. Additionally, Microsoft Edge now considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
+Microsoft Edge considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
 
 Volume size | Per domain | Total limit
 :---------- | :---------- | :-----------
@@ -145,6 +144,8 @@ Request objects support events such as [`onsuccess`](https://msdn.microsoft.com/
 Request objects execute when they go out of scope; that is, when the current JavaScript block finishes.
 
 
+## Local use
+Microsoft Edge supports webpages loaded with a `"file://"` URI scheme. This allows developers accessing files from disk to use these APIs.
 
 ## API reference
 [IndexedDB](https://msdn.microsoft.com/library/hh772651)
