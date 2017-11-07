@@ -17,7 +17,7 @@ Microsoft Edge includes support for the [Indexed Database API (`IndexedDB`)](htt
 ## Limits
 Unlike with the earlier Internet Explorer `IndexedDB` implementation, Microsoft Edge  will not request user authorization to use more than 10 megabytes of space.
 
-Windows 10 UWP apps using JavaScript are not subject to an IndexedDB storage limit. However, earlier *Windows Store apps using JavaScript* (Windows 8 and Windows 8.1 JavaScript apps) running on Windows 10 share their storage quotas with Microsoft Edge and are subject to the limits described in the tble below.
+Windows 10 UWP apps using JavaScript are not subject to an IndexedDB storage limit. However, earlier *Windows Store apps using JavaScript* (Windows 8 and Windows 8.1 JavaScript apps) running on Windows 10 share their storage quotas with Microsoft Edge and are subject to the limits described in the table below.
 
 Microsoft Edge considers the volume size in determining the per-domain and per-total limit on how much disk space can be used. The table below applies to both phone and desktop versions of Microsoft Edge.
 
