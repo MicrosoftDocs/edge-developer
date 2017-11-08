@@ -26,7 +26,7 @@ If you want a deeper analysis of browser performance, the Microsoft Edge team us
 
 To get started with using the Windows Performance Toolkit to analyze your website, you'll first need to download the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Select the *Windows Performance Toolkit* option during installation:
 
-![ADK Installation Options](./media/ADK-InstallOptions.PNG)
+![ADK Installation Options](./media/ADK-InstallOptions.png)
 
 Here we'll cover how to record and analyze a perfomance trace. 
 To learn more about what's included in the Windows Performance Toolkit, check out the full [WPT documentation](https://docs.microsoft.com/windows-hardware/test/wpt/index).
