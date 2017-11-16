@@ -1,6 +1,6 @@
 ---
 description: Use the Memory panel to 
-title: Microsoft Edge F12 DevTools - Memory
+title: Microsoft Edge DevTools - Memory
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -20,13 +20,13 @@ Use the **Memory** panel to measure your use of system resources and compare hea
 - [Identify the memory cost of a specific object](#object-references) and the references keeping it alive
 - [Diff the heap at different phases of your investigation](#snapshot-comparison) to track down the source of memory leaks and other problems
 
-![The Microsoft Edge F12 DevTools Memory panel](./media/memory.png)
+![The Microsoft Edge  DevTools Memory panel](./media/memory.png)
 
 
 ## Toolbar
 
 1. **Start/Stop profiling session (Ctrl+E)**: Turning on the profiler enables you to track memory usage and take snapshots of the heap.
-2. **Import profiling session (Ctrl+O)**: Load a saved F12 DevTools memory diagnostic session.
+2. **Import profiling session (Ctrl+O)**: Load a saved  DevTools memory diagnostic session.
 3. **Export profiling session (Ctrl+S)**: Save the current diagnostic session to disk.
 4. **Take heap snapshot (Ctrl+Shift+T)**: Record current memory allocations for a given point of time.
 
@@ -45,7 +45,7 @@ When you start the memory profiler, you will see a process memory graph that all
 
 ### Performance.mark()
 
-You can add custom **User marks** to the timeline to help identify  key events during the course of your analysis session by calling the [`Performance.mark()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the F12 DevTools [**Console**](./console.md).
+You can add custom **User marks** to the timeline to help identify  key events during the course of your analysis session by calling the [`Performance.mark()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md).
 
 ### Console.takeheapSnapshot()
 

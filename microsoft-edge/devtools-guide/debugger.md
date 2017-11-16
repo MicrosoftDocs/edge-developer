@@ -1,6 +1,6 @@
 ---
 description: Use the Debugger to step through and troubleshoot your code.
-title: Microsoft Edge F12 DevTools - Debugger
+title: Microsoft Edge DevTools - Debugger
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -21,7 +21,7 @@ Use the **Debugger** to step through code, set watches and breakpoints, live edi
 - [Hiding or showing asynchronous code and library code](#callstack) from your callstack as needed
 - [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
 
-![The Microsoft Edge F12 DevTools Debugger](./media/debugger.png)
+![The Microsoft Edge DevTools Debugger](./media/debugger.png)
 
 There are three ways to begin a debugging session.
 
@@ -71,7 +71,7 @@ Please be aware of the following constraints:
 
 - Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
 - Edits are saved in memory and flushed when the document is reloaded, thus you won’t be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there’s no way (such as a **Save As** option) to save your edits to disk from F12 DevTools
+- Currently there’s no way (such as a **Save As** option) to save your edits to disk from the DevTools
 
 ### 2.Code formatting
 
@@ -97,7 +97,7 @@ For keeping track of libraries across debugging sessions, you can edit these fil
 
 You will see the **Toggle source maps** button enabled for code written in a language that compiles to JavaScript or CSS and that provides a *source map* (an intermediate file mapping to the original source). This option directs the debugger to present the original source to use for debugging (rather than the compiled file that's *actually* running in the browser).
 
-The F12 DevTools will check if the compiler that generated the JavaScript file included a comment with the name of the map file. For example, if a compiler compressed *myfile.js* to *myfile.min.js*, it might also generate a map file, *myfile.min.js.map* and include a comment in the compressed file like this:
+The DevTools will check if the compiler that generated the JavaScript file included a comment with the name of the map file. For example, if a compiler compressed *myfile.js* to *myfile.min.js*, it might also generate a map file, *myfile.min.js.map* and include a comment in the compressed file like this:
 
 ```JavaScript
 //# sourceMappingURL=myfile.min.js.map
@@ -105,7 +105,7 @@ The F12 DevTools will check if the compiler that generated the JavaScript file i
 
 ![Debug file tab context menu](./media/debug_file_contextmenu.png)
 
-If the F12 DevTools can't find the map automatically, you can choose a source map for that file. Right-click the file's tab to find the **Choose source map** option. 
+If the DevTools can't find the map automatically, you can choose a source map for that file. Right-click the file's tab to find the **Choose source map** option. 
 
 ## Toolbar
 

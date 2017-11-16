@@ -1,6 +1,6 @@
 ---
 description: Use the Performance panel to analyze the responsivenes of your page during user interaction
-title: Microsoft Edge F12 DevTools - Performance
+title: Microsoft Edge DevTools - Performance
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -18,7 +18,7 @@ The **Performance** panel offers tools for profiling and analyzing the responsiv
  - [Get a step-by-step breakdown of the processes](#timeline-details) consuming page execution time 
  - [Walk your JavaScript call stacks](#javascript-call-stacks) to identify costly operations, such as those requiring layout recalculations 
 
-![F12 DevTools Performance panel](./media/performance.png)
+![ DevTools Performance panel](./media/performance.png)
 
  ## Recording a profile
 
@@ -30,7 +30,7 @@ Use the **Start** / **Stop** buttons on the toolbar (or `Ctrl+E`) to initiate an
 
 ![Performance panel toolbar](./media/performance_toolbar.png)
 
-A performance report will generate upon stopping the profile. You can choose to save it to disk (`Ctrl+S`) and reload (`Ctrl+O`) in F12 DevTools at a later time. F12 DevTools diagnostic sessions are saved with the *.diagsession* extension.
+A performance report will generate upon stopping the profile. You can choose to save it to disk (`Ctrl+S`) and reload (`Ctrl+O`) in  DevTools at a later time.  DevTools diagnostic sessions are saved with the *.diagsession* extension.
 
 Here are some things to keep in mind when recording a profile:
 
@@ -50,7 +50,7 @@ You will see two types of markers on the ruler:
 
  - **App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load)) are automatically logged as you record a profile.
 
- - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the F12 DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure) method. 
+ - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure) method. 
 
 Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected). These controls are also available from the right-click context menu.
 

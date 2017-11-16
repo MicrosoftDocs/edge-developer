@@ -1,6 +1,6 @@
 ---
 description: Use the Emulation panel to test different browser profiles, screen sizes and resolutions, and GPS location coordinates
-title: Microsoft Edge F12 DevTools - Emulation
+title: Microsoft Edge DevTools - Emulation
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -15,9 +15,9 @@ The *Emulation* panel helps you to:
  - Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)
  - Test different [geolocation settings and coordinates](#geolocation)
 
-![The Microsoft Edge F12 DevTools Emulation panel](./media/emulation.png)
+![The Microsoft Edge DevTools Emulation panel](./media/emulation.png)
 
-1. The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the F12 DevTools. 
+1. The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools. 
 
 2. The **Reset Emulation settings** button will reset your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.
 

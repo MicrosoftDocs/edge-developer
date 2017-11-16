@@ -1,6 +1,6 @@
 ---
 description: Use the Network panel to monitor and profile page resource requests
-title: Microsoft Edge F12 DevTools - Network
+title: Microsoft Edge DevTools - Network
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -18,11 +18,11 @@ Use the **Network** panel to monitor, inspect and profile the requests and respo
  - [Inspect the headers, message bodies, parameters, and cookies](#request-details) exchanged between your page and the network
  - [Identify the network events causing bottlenecks](#timings) in the load time of your site
 
-![The Microsoft Edge F12 DevTools Network panel](./media/network.png)
+![The Microsoft Edge  DevTools Network panel](./media/network.png)
 
  ## Network summary
 
-When you open F12 DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different F12 DevTools panel than *Network*.
+When you open  DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different  DevTools panel than *Network*.
 
 ![In-progress network profiling indicator](./media/network_profile_indicator.png)
 
@@ -51,7 +51,7 @@ The toolbar provides controls for profiling and filtering the network activity o
 
 ### Network request list
 
-All network traffic is recorded to a list (until cleared upon navigation, manually cleared, or F12 DevTools are closed). Clicking on any entry will open a more [detailed view of the request](#request-details).
+All network traffic is recorded to a list (until cleared upon navigation, manually cleared, or  DevTools are closed). Clicking on any entry will open a more [detailed view of the request](#request-details).
 
 ![Network request list](./media/network_request_list.png)
 
@@ -71,7 +71,7 @@ Column | Description
 
  ### Summary bar
 
-The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since F12 DevTools were opened and recording network traffic).
+The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since  DevTools were opened and recording network traffic).
 
 ![Network summary bar](./media/network_summary_bar.png)
 

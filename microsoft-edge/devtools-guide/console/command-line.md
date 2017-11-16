@@ -1,6 +1,6 @@
 ---
 description: Use the Console command line to interact with a running page
-title: Microsoft Edge F12 DevTools - Console - Command Line
+title: Microsoft Edge DevTools - Console - Command Line
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console command 
 
 Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visual Studio [*IntelliSense*](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) auto code completion. 
 
-Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current F12 DevTools session. In addition to standard JavaScript and the [Console API](./console-api.md), the Console also supports the following commands for:
+Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current  DevTools session. In addition to standard JavaScript and the [Console API](./console-api.md), the Console also supports the following commands for:
 
  - [Selecting DOM objects](#dom-selectors)
  - [Inspecting object properties](#object-inspection)
@@ -43,7 +43,7 @@ Example: Open the console and type `$$('.container')` to return all the div obje
 ### $0, $1, $2,...
 Returns the last elements selected in the [**Elements**](../elements.md) panel, where `$0` represents the currently selected item, `$1` was the selected item before that, and so on.
 
-Example: Open F12 DevTools to the **Elements** tab, press `CTRL + B` to activate the **Select element** tool and click some area on this page with your mouse. Now open the Console and type `$0` to return the element you just clicked.
+Example: Open  DevTools to the **Elements** tab, press `CTRL + B` to activate the **Select element** tool and click some area on this page with your mouse. Now open the Console and type `$0` to return the element you just clicked.
 
 ![Example use of '$0' selector](../media/console_cmd_$0.png)
 
@@ -81,7 +81,7 @@ Example: Open the console and type `values(window)` to return the values of all 
 
 ## Event listeners
 
-This command allows you to inspect the event listeners registered to a given object. The specified object must either be defined in the global namespace or the current scope of the F12 debugger.
+This command allows you to inspect the event listeners registered to a given object. The specified object must either be defined in the global namespace or the current scope of the  debugger.
 
 ### getEventListeners(*object*)
 Returns an object containing a key for each registered event type on the given object. The value of each key is an array of event listeners and their related info. 
