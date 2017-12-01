@@ -78,3 +78,4 @@
 ### [Server](webdriver/server.md)
 ### [Sessions](webdriver/sessions.md)
 ### [Window](webdriver/window.md)
+## [Microsoft Edge DevTools Protocol](devtools-protocol/toc.md)
