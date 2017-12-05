@@ -13,3 +13,4 @@
 ### [Methods](debugger.md#methods)
 ### [Events](debugger.md#events)
 ### [Types](debugger.md#types)
+### [Dependencies](debugger.md#dependencies)
