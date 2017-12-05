@@ -8,11 +8,11 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ---
 # Edge DevTools Protocol (v1.2) Domains
-## [Schema](domains/schema.md)
+## [Schema](schema.md)
 Provides information about the protocol schema.
-## [Page](domains/page.md)
+## [Page](page.md)
 Actions and events related to the inspected page belong to the page domain.
-## [Runtime](domains/runtime.md)
+## [Runtime](runtime.md)
 Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released or are released along with the other objects in their object group.
-## [Debugger](domains/debugger.md)
+## [Debugger](debugger.md)
 Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
