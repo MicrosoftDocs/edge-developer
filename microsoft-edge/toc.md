@@ -67,6 +67,7 @@
 ### [Performance](devtools-guide/performance.md)
 ### [Memory](devtools-guide/memory.md)
 ### [Emulation](devtools-guide/emulation.md)
+## [Microsoft Edge DevTools Protocol](devtools-protocol/toc.md)
 ## [Performance analysis](performance-analysis.md)
 ## [WebDriver](webdriver.md)
 ### [Dialogs](webdriver/dialogs.md)
@@ -78,4 +79,3 @@
 ### [Server](webdriver/server.md)
 ### [Sessions](webdriver/sessions.md)
 ### [Window](webdriver/window.md)
-## [Microsoft Edge DevTools Protocol](devtools-protocol/toc.md)
