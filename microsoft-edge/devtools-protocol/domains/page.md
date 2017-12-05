@@ -37,22 +37,43 @@ Navigates current page to the given URL.
 
 </p>
 
-| Parameters | | |
-|-|-|-|
-| url | `string` | URL to navigate the page to. |
-
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>url</td>
+            <td><code class="flyout">string</code></td>
+            <td>URL to navigate the page to.</td>
+        </tr>
+    </tbody>
+</table>
 </p>
 
-| Returns | | |
-|-|-|-|
-| frameId | [`FrameId`](#frameid) | Frame id that will be navigated. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span> |
-
+<table>
+    <thead>
+        <tr>
+            <th>Returns</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>frameId</td>
+            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
+            <td>Frame id that will be navigated. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+        </tr>
+    </tbody>
+</table>
 </p>
 
 ---
-
-## Events
-
 
 ## Types
 
@@ -63,6 +84,3 @@ Unique frame identifier.
 </p>
 
 ---
-
-## Dependencies
-
