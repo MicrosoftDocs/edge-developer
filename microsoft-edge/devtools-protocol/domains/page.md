@@ -12,10 +12,8 @@ Actions and events related to the inspected page belong to the page domain.
 
 | | |
 |-|-|
-| [Methods](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |
-| [Events](#events) |  |
-| [Types](#types) | [FrameId](#frameid) |
-| [Dependencies](#dependencies) |  |
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |
+| [**Types**](#types) | [FrameId](#frameid) |
 ## Methods
 
 ### enable

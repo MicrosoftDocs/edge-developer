@@ -12,10 +12,8 @@ Provides information about the protocol schema.
 
 | | |
 |-|-|
-| [Methods](#methods) | [getDomains](#getdomains) |
-| [Events](#events) |  |
-| [Types](#types) | [Domain](#domain) |
-| [Dependencies](#dependencies) |  |
+| [**Methods**](#methods) | [getDomains](#getdomains) |
+| [**Types**](#types) | [Domain](#domain) |
 ## Methods
 
 ### getDomains

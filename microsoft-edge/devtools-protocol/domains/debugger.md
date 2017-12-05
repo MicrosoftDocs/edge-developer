@@ -12,10 +12,10 @@ Debugger domain exposes JavaScript debugging capabilities. It allows setting and
 
 | | |
 |-|-|
-| [Methods](#methods) | [enable](#enable), [disable](#disable), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [Events](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |
-| [Types](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [ScriptPosition](#scriptposition), [CallFrame](#callframe), [Scope](#scope) |
-| [Dependencies](#dependencies) | [Runtime](runtime.md) |
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
+| [**Events**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |
+| [**Types**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [ScriptPosition](#scriptposition), [CallFrame](#callframe), [Scope](#scope) |
+| [**Dependencies**](#dependencies) | [Runtime](runtime.md) |
 ## Methods
 
 ### enable
