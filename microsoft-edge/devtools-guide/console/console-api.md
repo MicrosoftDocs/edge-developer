@@ -1,6 +1,6 @@
 ---
 description: Use the Console API to programmatically debug and profile your code
-title: Microsoft Edge F12 DevTools - Console - Console API
+title: Microsoft Edge DevTools - Console - Console API
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console api
 
 # Console API
 
-The *Console API* provides command-line and programmatic access to the F12 DevTools Console through the global `console` object, allowing you to:
+The *Console API* provides command-line and programmatic access to the  DevTools Console through the global `console` object, allowing you to:
 
  - [Log custom messages](#logging-custom-messages) from you code
  - [Inspect objects and elements](#inspecting-objects-and-elements) and log their information
@@ -34,7 +34,7 @@ Message type  | &nbsp;   |
 [**log()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
 
    
-You can group and filter these along with the other messages generated from Microsoft Edge from the F12 Console panel. All custom message methods require a string (message) parameter and optional format substitution parameters. Microsoft Edge supports the following formatting options:
+You can group and filter these along with the other messages generated from Microsoft Edge from the  Console panel. All custom message methods require a string (message) parameter and optional format substitution parameters. Microsoft Edge supports the following formatting options:
 
 Format parameter | &nbsp;
 :------------------- | :--- |
@@ -143,7 +143,7 @@ Command | &nbsp;
 :------------ | :-------------
 **takeHeapSnapshot()** | Captures details about the current JavaScript heap and its allocated objects.
 
-The F12 DevTools [memory profiler](../memory.md#toolbar) must be running in order to take heap snapshots. Each snapshot will appear as a tile in the [*Snapshot summary*](../memory.md#snapshot-summary) of the [**Memory**](../memory.md) panel for further inspection.
+The  DevTools [memory profiler](../memory.md#toolbar) must be running in order to take heap snapshots. Each snapshot will appear as a tile in the [*Snapshot summary*](../memory.md#snapshot-summary) of the [**Memory**](../memory.md) panel for further inspection.
 
 ## Tracing callstacks
 

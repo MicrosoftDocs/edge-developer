@@ -1,6 +1,6 @@
 ---
 description: Use the Elements panel to inspect the HTML, CSS, DOM, and accessibility of your page.
-title: Microsoft Edge F12 DevTools - Elements
+title: Microsoft Edge DevTools - Elements
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -24,7 +24,7 @@ The **Elements** panel helps you to:
 
 ## HTML tree view
 
-![The Microsoft Edge F12 DevTools Elements panel](./media/elements.png)
+![The Microsoft Edge DevTools Elements panel](./media/elements.png)
 
 1. Use the **Select element** (`Ctrl+B`) tool to locate an element in the **HTML tree view** by clicking on it in the page.
 

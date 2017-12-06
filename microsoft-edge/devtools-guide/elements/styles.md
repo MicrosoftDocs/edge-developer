@@ -1,6 +1,6 @@
 ---
 description: Use the Styles pane to view and edit currently applied styles and pseudo elements
-title: Microsoft Edge F12 DevTools - Elements - Styles
+title: Microsoft Edge DevTools - Elements - Styles
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
