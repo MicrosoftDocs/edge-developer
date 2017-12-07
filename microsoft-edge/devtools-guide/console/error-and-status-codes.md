@@ -1,7 +1,7 @@
 ---
 ms.assetid: 961ca575-6b93-4367-a72b-f3f02e5b9568
 description: Reference common Console codes and suggested fixes
-title: Microsoft Edge F12 DevTools - Console error and status codes
+title: Microsoft Edge DevTools - Console error and status codes
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console codes
 
 # Console error and status codes
 
-This reference helps you interpret error and status messages from the F12 DevTools [Console](../console.md). Use the following table to look up codes by their prefix (where `x` represents a `0-9` digit):
+This reference helps you interpret error and status messages from the  DevTools [Console](../console.md). Use the following table to look up codes by their prefix (where `x` represents a `0-9` digit):
 
 Code Prefix | Area | Description
 :---------- | :--- | :-----
@@ -24,12 +24,12 @@ Code Prefix | Area | Description
 [SCRIPT10xx](https://docs.microsoft.com/en-us/scripting/javascript/reference/javascript-syntax-errors) | JavaScript syntax errors | Occur when the structure of one of your JavaScript statements violates one or more of the syntactic rules. 
 [SCRIPT50xx](https://docs.microsoft.com/en-us/scripting/javascript/reference/javascript-run-time-errors) | JavaScript runtime errors | Occur when your script attempts to perform an action that the system cannot execute. 
 [SEC71xx](#security-codes) | Security | Reflect security conditions that Microsoft Edge enforces, such as *Mixed Content* and *Tracking Protection*.
-[SVG560x](#svg-codes) | Scalable Vector Graphics | F12 doesn't currently support extensive SVG debugging, but some console messages are provided for debugging purposes.
+[SVG560x](#svg-codes) | Scalable Vector Graphics |  doesn't currently support extensive SVG debugging, but some console messages are provided for debugging purposes.
 WebGL11_xxx | WebGL | Error messages from the WebGL context. See also [GLSL errors](https://msdn.microsoft.com/library/dn611835.aspx).
 [XML5xxx](#xml-codes) | XML | Errors with XML parsing and validation.
 
 ## CSP codes
-Resources blocked by the use of a `Content-Security-Policy` HTTP header are reported through the F12 DevTools Console and optionally as a report back to the server.
+Resources blocked by the use of a `Content-Security-Policy` HTTP header are reported through the  DevTools Console and optionally as a report back to the server.
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
@@ -91,7 +91,7 @@ HTML1300 | "Navigation occurred" | A new page was navigated to, or the current p
 ## HTML5 parser warnings
 The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs.
 
-Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning, F12 will include line and character offset information along with a link pointing to the location where the problem was found.
+Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning,  will include line and character offset information along with a link pointing to the location where the problem was found.
 
 Code | Message
 :------------ | :-------------
@@ -229,7 +229,7 @@ SEC7132 | "The certificate protecting this web site uses weak cryptography" | Th
 > For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
 ## SVG codes
-F12 tools don't currently support extensive Scalable Vector Graphics (SVG) debugging, but some console messages are provided to help with debugging.
+ tools don't currently support extensive Scalable Vector Graphics (SVG) debugging, but some console messages are provided to help with debugging.
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------

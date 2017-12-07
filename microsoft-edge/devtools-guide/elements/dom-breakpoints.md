@@ -1,6 +1,6 @@
 ---
 description: Use DOM breakpoints to visually debug layout glitches on your page
-title: Microsoft Edge F12 DevTools - Elements - DOM breakpoints
+title: Microsoft Edge DevTools - Elements - DOM breakpoints
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -31,7 +31,7 @@ The **DOM breakpoints** pane will then list the selected element (by generating 
 
 ![DOM breakpoints pane](../media/elements_dom_breakpoints.png)
 
-When the page is reloaded or the DevTools are closed and reopened, F12 DevTools will attempt to rebind your breakpoints to their associated elements. If there are no elements to match the selector, you can wait to rebind the element manually (using the **Rebind breakpoint** button and/or context menu option) once a corresponding element appears in the DOM (and the breakpoint icon no longer shows the warning indicator).
+When the page is reloaded or the DevTools are closed and reopened,  DevTools will attempt to rebind your breakpoints to their associated elements. If there are no elements to match the selector, you can wait to rebind the element manually (using the **Rebind breakpoint** button and/or context menu option) once a corresponding element appears in the DOM (and the breakpoint icon no longer shows the warning indicator).
 
 ![Unbound breakpoint indicator](../media/elements_dom_breakpoint_unbound.png)
 

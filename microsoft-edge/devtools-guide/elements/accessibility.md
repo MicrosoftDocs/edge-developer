@@ -1,6 +1,6 @@
 ---
 description: Use the Accessibility tools to view verify and test page accessibility
-title: Microsoft Edge F12 DevTools - Elements - Accessibility
+title: Microsoft Edge DevTools - Elements - Accessibility
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017

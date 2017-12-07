@@ -1,0 +1,114 @@
+{ 
+  "redirections": [ 
+    {   
+        "source_path": "microsoft-edge/f12-devtools-guide.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide", 
+        "redirect_document_id": true 
+    }, 
+    {   
+        "source_path": "microsoft-edge/f12-devtools-guide/console/command-line.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/console/command-line", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/console/console-api.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/console/console-api", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/console/error-and-status-codes.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/console/error-and-status-codes", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/debugger/cookies.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/debugger/cookies", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/debugger/progressive-web-apps", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/debugger/web-storage.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/debugger/web-storage", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/accessibility.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/accessibility", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/changes.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/changes", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/computed.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/computed", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/dom-breakpoints.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/dom-breakpoints", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/events.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/events", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/fonts.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/fonts", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements/styles.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements/styles", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/console.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/console", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/debugger.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/debugger", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/elements.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/elements", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/emulation.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/emulation", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/memory.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/memory", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/network.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/network", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/performance.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/performance", 
+        "redirect_document_id": true 
+    },
+	{   
+        "source_path": "microsoft-edge/f12-devtools-guide/whats-new.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/whats-new", 
+        "redirect_document_id": true 
+    }
+  ] 
+}
