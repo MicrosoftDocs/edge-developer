@@ -1,6 +1,6 @@
 ---
-description: Get to know the Microsoft Edge F12 Developer Tools
-title: Microsoft Edge F12 Developer Tools
+description: Get to know the Microsoft Edge Developer Tools
+title: Microsoft Edge Developer Tools
 author: erikadoyle
 ms.author: edoyle
 ms.date: 09/12/2017
@@ -9,13 +9,13 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 
-# Microsoft Edge F12 Developer Tools
+# Microsoft Edge Developer Tools
 
-Browser tooling has come a long way since the days of Internet Explorer! The Microsoft Edge F12 DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), and optimized for modern front-end workflows. 
+Browser tooling has come a long way since the days of Internet Explorer! The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), and optimized for modern front-end workflows. 
 
-![Microsoft Edge F12 DevTools](./devtools-guide/media/devtools.png)
+![Microsoft Edge DevTools](./devtools-guide/media/devtools.png)
 
-The Microsoft Edge F12 DevTools include:
+The Microsoft Edge DevTools include:
 
  - An [**Elements**](./devtools-guide/elements.md) panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints
  - A [**Console**](./devtools-guide/console.md) to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame
@@ -33,17 +33,17 @@ There's also [much more to come](./devtools-guide/whats-new.md), so please keep 
 
 ## Feedback
 
-Please send us your feedback so we can continue improving the Microsoft Edge F12 DevTools for you! Simply open the tools (`F12`) and click the [**Send feedback**](#microsoft-edge-f12-developer-tools) button.
+Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply open the tools (`F12`) and click the [**Send feedback**](#microsoft-edge-f12-developer-tools) button.
 
-You can also add and upvote tooling requests to our [UserVoice forum](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) and become a [Windows Insider](https://insider.windows.com/en-us/) to preview the [latest features coming to F12 Tools](./devtools-guide/whats-new.md). Use the Windows **Feedback Hub** app to post, upvote, track and get support for general Windows suggestions and problems.
+You can also add and upvote tooling requests to our [UserVoice forum](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) and become a [Windows Insider](https://insider.windows.com/en-us/) to preview the [latest features coming to the DevTools](./devtools-guide/whats-new.md). Use the Windows **Feedback Hub** app to post, upvote, track and get support for general Windows suggestions and problems.
 
 ## General Shortcuts
 
-These shortcuts control the main F12 DevTools window and/or work across all tools.
+These shortcuts control the main DevTools window and/or work across all tools.
 
 Action | Shortcut
 :------------ | :-------------
-Show/Hide F12 DevTools (opens to last viewed panel) | F12, Ctrl+Shift+I
+Show/Hide DevTools (opens to last viewed panel) | F12, Ctrl+Shift+I
 Show/hide Console at the bottom of any other tool  | Ctrl+**`**
 Switch to Elements (DOM Explorer) | Ctrl+1
 Switch to Console |  Ctrl+2
@@ -64,5 +64,5 @@ Previous match in Search box | Shift+F3
 Find in search box | Ctrl+F
 Give focus to console at the bottom | Alt+Shift+I
 Dock/undock tools (toggle docking) | Ctrl+P  
-Launch F12 DevTools to Console | Ctrl+Shift+J
+Launch DevTools to Console | Ctrl+Shift+J
 Refresh the page. **Note:** if you're debugging and paused at a breakpoint, this resumes execution first. | Ctrl+Shift+F5 or Ctrl+R
