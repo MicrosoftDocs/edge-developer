@@ -11,8 +11,6 @@ keywords: progressive web apps, PWA, edge, Windows, Microsoft Store
 
 # Progressive Web Apps on Windows
 
-- waht is a PWA?
-  - where can I learn more?
 - How do PWAs work on WIndows?
 - How can I convert my web app into a PWA?
 - How can I tailor my app for Windows?
