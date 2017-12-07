@@ -26,9 +26,9 @@ With Progressive Web Apps (or *PWAs*), you dont have to decide between using ope
 
 By building (or converting your existing web app as) a PWA, you can better engage your existing audience with push notifications and offline/low-network support. At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.
 
-You can also grow your audience by distributing your PWA through the Microsoft Store. TODO: Windows 10 install base.
+You can also grow your audience by distributing your PWA through the Microsoft Store. TODO: Windows 10 install base. What's more PWAs have access to Windows S.
 
-PWAs running on Windows have access (with the end-user permission) to native (Windows Runtime, or *WinRT*) APIs, such as for device camera, calendar, and speech interaction.  
+PWAs running on Windows 10 have access (with the end-user permission) to native (Windows Runtime, or *WinRT*) APIs, such as for device camera, calendar, and speech interaction.  
 
 ## PWA prerequisites
   - manifest
@@ -43,10 +43,4 @@ PWAs running on Windows have access (with the end-user permission) to native (Wi
   - Packaged web apps, HWAs explainer
   - Windows S?
 
-## Convert your web app to a PWA
-
-## Tailor your PWA for Windows
- - What native windows APIs (WinRT) are available for web apps
-
-## Manage and measure your PWA through the Microsoft Store
 

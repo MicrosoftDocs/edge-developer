@@ -70,7 +70,7 @@
 ## [Performance analysis](performance-analysis.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
 ### [Add PWA features to your app](progressive-web-apps/progressive-enhancement.md)
-### [Tailor your PWA for Windows](progressive-web-apps/using-windows-apis.md)
+### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
 ## [WebDriver](webdriver.md)
 ### [Dialogs](webdriver/dialogs.md)
