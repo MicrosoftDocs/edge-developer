@@ -90,4 +90,4 @@ Here's the full list of new APIs in EdgeHTML 16. They are listed in the format o
 
 [EdgeHTML 14 / Windows build 14393 (8/2016)](https://aka.ms/devguide_edgehtml_14)
 
-[EdgeHTML 15 / Windows build 14393 (4/2017)](https://aka.ms/devguide_edgehtml_15)
+[EdgeHTML 15 / Windows build 15063 (4/2017)](https://aka.ms/devguide_edgehtml_15)
