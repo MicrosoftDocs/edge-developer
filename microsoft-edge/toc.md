@@ -69,7 +69,7 @@
 ### [Emulation](devtools-guide/emulation.md)
 ## [Performance analysis](performance-analysis.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
-### [Add PWA features to your app](progressive-web-apps/progressive-enhancement.md)
+### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
 ## [WebDriver](webdriver.md)
