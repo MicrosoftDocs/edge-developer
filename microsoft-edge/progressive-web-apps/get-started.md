@@ -26,7 +26,7 @@ PWA Builder resource | Why its useful| Futher resources
 A web application manifest | Generates W3C-compliant JSON metadata for installing and launching your PWA from its host device.  | [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) <br /> (MDN web docs)
 Platform-ready app icons | Generates a set of images optimized for various PWA device home screens / app stores.  | PWA Builder [App-Image-Generator](https://github.com/pwa-builder/App-Image-Generator/tree/master/AppImageGenerator/App_Data) <br /> (GitHub)
 A basic service worker script for handling offline scenarios | Generates a script that installs and registers a service worker to handle offline scenarios according to a strategy of your choosing.   | [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)  and [Service Worker Cookbook](https://serviceworke.rs/) <br />(MDN web docs)
-A *Windows 10* app package and installation script | Generates an installable app (`.appx`) package using the Windows app packaging tool (`MakeAppx.exe`) and a PowerShell script for sideloading your app in *Developer Mode*. | [Create an app package with the MakeApp.exe tool](https://docs.microsoft.com/en-us/windows/uwp/packaging/create-app-package-with-makeappx-tool) and [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) <br />(Windows Dev Center)
+A *Windows 10* app and installation script | Generates an installable app using the Windows app packaging tool (`MakeAppx.exe`) and a PowerShell script for sideloading your app in *Developer Mode*. | [Create an app package with the MakeApp.exe tool](https://docs.microsoft.com/en-us/windows/uwp/packaging/create-app-package-with-makeappx-tool) and [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) <br />(Windows Dev Center)
 
 Once you've reached step 3 ("Publish PWA)" of the PWA Builder wizard, click the **Download** button under the *Windows* heading, and unzip the folder.
 
@@ -58,7 +58,7 @@ Browsers that support PWAs have built-in debugging support for **Service Workers
 
 Check out [*Progressive Web App debugging*](..\devtools-guide\debugger\progressive-web-apps.md) for more on using these tools in Microsoft Edge.
 
-For similar functionality in Chrome DevTools, see [*Tools for PWA Developers*](https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#simulate_mobile_devices). For Firefox Developer Tools, check out the [*about:debugging*](https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Workers) and [*Storage Inspector*](https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector) from Mozilla's docs.
+For similar functionality in Chrome DevTools, see [*Tools for PWA Developers*](https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#simulate_mobile_devices). For Firefox Developer Tools, check out the [*about:debugging*](https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Workers) and [*Storage Inspector*](https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector).
 
 #### Local debugging with Edge DevTools
 
@@ -66,7 +66,7 @@ To debug a local PWA instance running in your desktop dev environment, ...
 
 TODO: Chase down UX details/screenshot for Edge DevTools chooser (and Store install?).
 
-From there, you can use the Microsoft Edge DevTools [**Emulation**](.\devtools-guide\emulation.md) panel ( [*Device Mode*](https://developers.google.com/web/tools/chrome-devtools/device-mode/) in Chrome, [*Responsive Design Mode*](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode) in Firefox) to test out the responsiveness of your layout on different screen resolutions and display orientations.
+From there, you can use the Microsoft Edge DevTools [**Emulation**](.\devtools-guide\emulation.md) panel to test out the responsiveness of your layout on different screen resolutions and display orientations.
 
 #### Remote debugging with Edge DevTools Protocol
 
@@ -82,12 +82,16 @@ You can extend your PWA to increase customer engagement and provide a more seaml
 
 ### Push notifications
 
-Set up a push messaging service, service worker handler, and custom toast and home screen tile notifications to re-engage your users. Check out the Push API / Notification API examples in [*Service Workers: Going beyond the page*](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/#8mU5rebKOuTt5HwG.97) to get started.
+Set up a push messaging service, service worker handler, and custom toast notifications to re-engage your users. Check out the Push API / Notification API examples in [*Service Workers: Going beyond the page*](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/#8mU5rebKOuTt5HwG.97) to get started.
 
 TODO: repurpose these to an evergreen push doc
 
-For more on customizing Windows **Start** menu (home screen) tiles, see [*Tailor your PWA for Windows*](./windows-features.md).
+### Windows tailoring
 
-## Register a file handler
+Using some simple feature detection, your PWA can be further tailored for Windows 10 customers through native [Windows Runtime](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) APIs, such as those for customizing Windows **Start** menu (home screen) tiles, using Cortana voice commands, and accessing the device camera (to name only a few!)
+ 
+Check out [*Tailor your PWA for Windows*](./windows-features.md) to get started.
 
-TODO: repurpose info here http://bthack.azurewebsites.net/stories/1/123_BONUS-APP-Links/
+### Submitting to the Microsoft Store
+
+To learn more about the benefits of app store distribution and how to submit your PWA, see [*Progressive Web Apps in the Microsoft Store*](./microsoft-store.md)
