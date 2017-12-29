@@ -11,6 +11,7 @@ keywords: progressive web apps, PWA, edge, Windows, Microsoft Store
 
 # Progressive Web Apps on Windows
 
+- Recap for testing/debugging on Windows (shortcut for existing PWAs): VS, manifold
 - Feature detection
 - Native APIs available for JS
 - Common scenarios
