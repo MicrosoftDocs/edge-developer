@@ -66,14 +66,17 @@ If page action is specified in the [JSON manifest](./../API-support/supported-ma
 
 When users navigate to the extensions pane by going to the "More(...)" menu and selecting "Extensions", an icon will be displayed next to the name of the extension.
 
-You can specify the following icon sizes:
-- 24px - Icon for standard displays
-- 48px - Icon for high resolution displays
+You should specify the following icon sizes:
+- 48px - Icon for standard resolution displays
+- 128px – Icon for high resolution displays
+- 176px - Icon for even higher resolution displays
+
 
 ```json
 "icons": {
-	"24": "images/icon_24.png",
-	"48": "images/icon_48.png"
+	"48": "images/icon_48.png",
+	"128": "images/icon_128.png",
+	"176": "images/icon_176.png"
 },
 ```
 
