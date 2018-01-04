@@ -3,7 +3,7 @@ description: Learn about the various design aspects and UI behavior to consider 
 title: Extensions - Design
 author: abbycar
 ms.author: abigailc
-ms.date: 03/09/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, javascript, design, icons, developer
