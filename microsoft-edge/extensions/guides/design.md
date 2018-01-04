@@ -91,6 +91,9 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 - 50px - Packaging requirement (not visible anywhere)
 - 150px - Icon for the Microsoft Store
 
+
+See either the [manual packaging guide](./packaging/creating-and-testing-extension-packages.md#assets-folder) or the [ManifoldJS packaging guide](./packaging/using-manifoldjs-to-package-extensions.md#packaging-with-manifoldjs) to determine where these icons will be placed. This will depend on which packaging method you choose.
+
 #### Microsoft Store icon
 If the 150px icon for the Microsoft Store has a transparent background, the accent color of the user's device will appear as the icon's background color.
 
