@@ -66,14 +66,17 @@ If page action is specified in the [JSON manifest](./../API-support/supported-ma
 
 When users navigate to the extensions pane by going to the "More(...)" menu and selecting "Extensions", an icon will be displayed next to the name of the extension.
 
-You can specify the following icon sizes:
-- 24px - Icon for standard displays
-- 48px - Icon for high resolution displays
+You should specify the following icon sizes:
+- 48px - Icon for standard resolution displays
+- 128px – Icon for high resolution displays
+- 176px - Icon for even higher resolution displays
+
 
 ```json
 "icons": {
-	"24": "images/icon_24.png",
-	"48": "images/icon_48.png"
+	"48": "images/icon_48.png",
+	"128": "images/icon_128.png",
+	"176": "images/icon_176.png"
 },
 ```
 
@@ -87,6 +90,9 @@ Once your extension is ready to be packaged, you'll need to have three additiona
 - 44px - Used in the Windows UI (App List, Settings->System->Apps & features)
 - 50px - Packaging requirement (not visible anywhere)
 - 150px - Icon for the Microsoft Store
+
+
+See either the [manual packaging guide](./packaging/creating-and-testing-extension-packages.md#assets-folder) or the [ManifoldJS packaging guide](./packaging/using-manifoldjs-to-package-extensions.md#packaging-with-manifoldjs) to determine where these icons will be placed. This will depend on which packaging method you choose.
 
 #### Microsoft Store icon
 If the 150px icon for the Microsoft Store has a transparent background, the accent color of the user's device will appear as the icon's background color.
