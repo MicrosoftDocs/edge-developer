@@ -6,7 +6,7 @@ ms.author: edoyle
 ms.date: 1/10/2018
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, edge, Windows, Microsoft Store, Bing PWA index
+keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
 ---
 
 # Progressive Web Apps in the Microsoft Store
@@ -97,7 +97,7 @@ pwabuilder package -p windows10 -l debug
 
 The file will be generated to `PWA\Store packages\windows10\package\windows.appx`.
 
-### 5. Upload your package and complete your submission
+### 5. Upload your package and complete the submission
 
 Log back into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview) and expand the **Submissions** > **Submisison 1** panel. Follow the checklist to complete the [required store listing information](https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions) and [upload your app package](https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages).
 
