@@ -16,44 +16,44 @@ With Progressive Web Apps (or simply *PWAs*), you dont have to decide between us
 <table style="border:none;">
   <tr style="height:150px">
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_search.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Discoverable">Discoverable</a></div>
       <div style="font-size:0.9em">From web search results and supporting app stores</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg"/>
+      <img style="display:block" src="./progressive-web-apps/media/i_package.svg"/>
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Installable">Installable</a></div>
       <div style="font-size:0.9em">Pin and launch from the home screen</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_push-notification.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Re-engageable">Re-engageable</a></div>
       <div style="font-size:0.9em">Send push notifications, even when the app isn't active</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_offline.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Network_independent">Network Independent</a></div>
       <div style="font-size:0.9em">Works offline and in low-network conditions </div>
     </td>
   </tr>
   <tr style="height:150px">
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_progressive.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Progressive">Progressive</a></div>
       <div style="font-size:0.9em">Experience scales up (or down) with device capabilities</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_security.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Safe">Safe</a></div>
       <div style="font-size:0.9em">Provides a secure HTTPS endpoint and other user safeguards</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_responsive.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Responsive">Responsive</a></div>
       <div style="font-size:0.9em">Adapts to the user's screen size / orientation and input method</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="../media/common/i_get-started.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_link.svg" />
       <div style="font-weight:bold;"><a href="content hasn’t been ">Linkable</a></div>
       <div style="font-size:0.9em">Share and launch from a standard hyperlink</div>
     </td>
