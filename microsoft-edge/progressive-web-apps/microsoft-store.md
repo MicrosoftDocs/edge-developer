@@ -55,7 +55,7 @@ Here's how to do it.
 
 To generate a set of native app wrappers for your PWA, run the *pwabuilder* command on the URL of your PWA (specified here w/ optional debug logging):
 
-```Command Prompt
+```
 pwabuilder https://samplepwa.azurewebsites.net -l debug
 ```
 
