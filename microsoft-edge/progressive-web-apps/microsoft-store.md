@@ -91,7 +91,7 @@ Next locate the `PWA\Store packages\windows10\manifest\appxmanifest.xml` file an
 
 Now you're ready to compile all your PWA resources into a single `.appx` file you can upload to the Microsoft Store. From a command prompt, navigate to the directory of your web manifest and create a Windows 10 package (specified below w/ optional debug logging):
 
-```Command Prompt
+```
 pwabuilder package -p windows10 -l debug
 ```
 
