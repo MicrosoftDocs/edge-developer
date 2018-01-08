@@ -61,9 +61,9 @@ pwabuilder https://samplepwa.azurewebsites.net -l debug
 
 This will generate a folder in the current directory named after your PWA (as specified in your web app manifest). If you're using a Windows 10 machine, you can test out your PWA by sideloading it in developer mode:
 
- 1. Turn on **Developer mode** from the Windows *Settings* menu (press Windows **Start** key and search for "Use developer features")
+ a. Turn on **Developer mode** from the Windows *Settings* menu (press Windows **Start** key and search for "Use developer features")
 
- 2. Locate the script at `PWA\Store packages\windows10\test_install.ps`, right-click and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu. For more, see [*Test and debug your PWA on Windows*](./get-started#test-and-debug-your-pwa-on-windows).
+ b. Locate the script at `PWA\Store packages\windows10\test_install.ps`, right-click and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu. For more, see [*Test and debug your PWA on Windows*](./get-started#test-and-debug-your-pwa-on-windows).
 
     > [!NOTE]
     > To uninstall your PWA, simply comment out (`#`) this line of the *test_install.ps1* script and re-run: `# Add-AppxPackage -Register $appxmanifest`
