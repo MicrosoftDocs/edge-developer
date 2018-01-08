@@ -118,7 +118,7 @@ Windows app feature | PWA samples
 **Notifications** | Start screen tiles, Tile badges, Scheduled tile updates, Toast notifications
 **OS integration** | File handler registration, App launch at startup, Handling activation, Native messaging
 **Windows UX customizations** | [App title bar](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/app-titlebar.md), [App context menu](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/app-context-menu.md), Desktop taskbar commands
-**Other tasks** | Background tasks, Caching and data storage, Cortana voice commands, Hosting HTMLWebView, Using a custom WinRT component, Web authentication broker
+**Other tasks** | Background tasks, Caching and data storage, [Cortana voice commands](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/cortana-voice-commands.md), Hosting HTMLWebView, Using a custom WinRT component, Web authentication broker
 
 You can [browse the full collection]() and download the zip from GitHub.
 
