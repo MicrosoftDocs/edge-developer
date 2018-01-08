@@ -49,7 +49,7 @@ Here's how to do it.
 ### 1. Generate your Windows 10 app 
 
 > [!NOTE]
-> You can skip this step if you've already generated your PWA and Windows 10 app using the [PWABuilder](http://manifoldjs.com/generator) web interface, as covered in [*Get started with Progressive Web Apps*](.\get-started.md).
+> You can skip this step if you've already generated your PWA and Windows 10 app using the [PWABuilder](http://manifoldjs.com/generator) web interface, as covered in [*Get started with Progressive Web Apps*](./get-started.md).
 
 [PWABuilder](https://www.npmjs.com/package/pwabuilder) (formerly *ManifoldJS*) enables you to package your web experience as a native app for Windows 10 and other app platforms directly from the command prompt.
 

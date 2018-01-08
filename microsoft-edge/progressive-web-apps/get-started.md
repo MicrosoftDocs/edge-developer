@@ -55,9 +55,9 @@ Debug your server-side logic the same way you would any web app, using the IDE a
 
 Browsers that support PWAs have built-in debugging support for **Service Workers** and **Cache** inspection. In [Microsoft Edge DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide), you can access both inspection tools from the **Debugger** panel.
 
-![Edge DevTools Service Workers and Cache inspection](..\devtools-guide\media\debugger_sw_and_cache.png)
+![Edge DevTools Service Workers and Cache inspection](../devtools-guide/media/debugger_sw_and_cache.png)
 
-Check out [*Progressive Web App debugging*](..\devtools-guide\debugger\progressive-web-apps.md) for more on using these tools in Microsoft Edge.
+Check out [*Progressive Web App debugging*](../devtools-guide/debugger/progressive-web-apps.md) for more on using these tools in Microsoft Edge.
 
 For similar functionality in Chrome DevTools, see [*Tools for PWA Developers*](https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#simulate_mobile_devices). For Firefox Developer Tools, check out the [*about:debugging*](https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Workers) and [*Storage Inspector*](https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector).
 
@@ -67,7 +67,7 @@ To debug a local PWA instance running in your desktop dev environment, ...
 
 TODO: Chase down UX details/screenshot for Edge DevTools chooser (and Store install?).
 
-From there, you can use the Microsoft Edge DevTools [**Emulation**](..\devtools-guide\emulation.md) panel to test out the responsiveness of your layout on different screen resolutions and display orientations.
+From there, you can use the Microsoft Edge DevTools [**Emulation**](../devtools-guide/emulation.md) panel to test out the responsiveness of your layout on different screen resolutions and display orientations.
 
 #### Remote debugging with Edge DevTools Protocol
 

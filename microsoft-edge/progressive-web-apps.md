@@ -16,44 +16,44 @@ With Progressive Web Apps (or simply *PWAs*), you dont have to decide between us
 <table style="border:none;">
   <tr style="height:150px">
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_search.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_search.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Discoverable">Discoverable</a></div>
       <div style="font-size:0.9em">From web search results and supporting app stores</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_package.svg"/>
+      <img style="display:block" src="./progressive-web-apps/media/i_package.svg"/>
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Installable">Installable</a></div>
       <div style="font-size:0.9em">Pin and launch from the home screen</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_push-notification.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_push-notification.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Re-engageable">Re-engageable</a></div>
       <div style="font-size:0.9em">Send push notifications, even when the app isn't active</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_offline.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_offline.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Network_independent">Network Independent</a></div>
       <div style="font-size:0.9em">Works offline and in low-network conditions </div>
     </td>
   </tr>
   <tr style="height:150px">
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_progressive.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_progressive.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Progressive">Progressive</a></div>
       <div style="font-size:0.9em">Experience scales up (or down) with device capabilities</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_security.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_security.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Safe">Safe</a></div>
       <div style="font-size:0.9em">Provides a secure HTTPS endpoint and other user safeguards</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_responsive.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_responsive.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Responsive">Responsive</a></div>
       <div style="font-size:0.9em">Adapts to the user's screen size / orientation and input method</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src=".\progressive-web-apps\media\i_link.svg" />
+      <img style="display:block" src="./progressive-web-apps/media/i_link.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Linkable">Linkable</a></div>
       <div style="font-size:0.9em">Share and launch from a standard hyperlink</div>
     </td>
@@ -90,7 +90,7 @@ To be a *great* PWA, your app will also need:
 
   - [X] [**Cross-browser compatibility**](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing). Ensure your PWA works in [different browsers and environments](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/). For Windows 10, be sure to test your web app both in the Microsoft Edge browser and also in its full PWA experience: as an installed, standalone Windows 10 app (powered by the *EdgeHTML* engine). 
   
-  - [X] [**Responsive design**](https://en.wikipedia.org/wiki/Responsive_web_design). Employ fluid layouts and flexible images with CSS [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and/or [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries), and [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) to adapt your UX to your user's device. Use device [emulation tools](.\devtools-guide\emulation.md) from your browser to test locally, or set up a [remote debugging session](./progressive-web-apps/get-started.md#remote-debugging-with-edge-devtools-protocol) to test directly on a target device. On Windows 10, PWAs can also be [tailored for form factors](https://docs.microsoft.com/en-us/windows/uwp/design/devices/index#windows-iot-devices) beyond desktop, phone and tablet, including: [Xbox and TV](https://docs.microsoft.com/en-us/windows/uwp/design/devices/designing-for-tv), [Surface Hub](https://developer.microsoft.com/en-us/windows/surfacehub), [Windows IoT](https://developer.microsoft.com/en-us/windows/iot) and [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/mixed-reality) devices.
+  - [X] [**Responsive design**](https://en.wikipedia.org/wiki/Responsive_web_design). Employ fluid layouts and flexible images with CSS [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and/or [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries), and [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) to adapt your UX to your user's device. Use device [emulation tools](./devtools-guide/emulation.md) from your browser to test locally, or set up a [remote debugging session](./progressive-web-apps/get-started.md#remote-debugging-with-edge-devtools-protocol) to test directly on a target device. On Windows 10, PWAs can also be [tailored for form factors](https://docs.microsoft.com/en-us/windows/uwp/design/devices/index#windows-iot-devices) beyond desktop, phone and tablet, including: [Xbox and TV](https://docs.microsoft.com/en-us/windows/uwp/design/devices/designing-for-tv), [Surface Hub](https://developer.microsoft.com/en-us/windows/surfacehub), [Windows IoT](https://developer.microsoft.com/en-us/windows/iot) and [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/mixed-reality) devices.
   
   - [X] [**Deep linking**](https://en.wikipedia.org/wiki/Deep_linking). Route each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.
 
@@ -103,7 +103,7 @@ To submit your *Progressive Web App* to the [Microsoft Store](https://developer.
 
 Coming soon, existing PWAs on the web meeting specific criteria will be auto-indexed by the Bing search engine into the Microsoft Store (where developers will have the option to directly manage them their Windows 10 audience).
 
-Check out [PWAs in the Microsoft Store](.\progressive-web-apps\microsoft-store.md) for further details.
+Check out [PWAs in the Microsoft Store](./progressive-web-apps/microsoft-store.md) for further details.
 
 ## Current availability
 
@@ -125,5 +125,5 @@ Here's the current status of *Microsoft Store* support for PWAs on Windows 10:
 
 Store submission method | Status | Details
 | - | - | -
-Manual (developer initiated) | Available | Check out [*PWAs in the Microsoft Store*](.\progressive-web-apps\microsoft-store.md) to get started. 
-Automatic (auto-indexed with Bing) | Coming soon | We're piloting the PWA onboarding process with selected app partners. Check out [*PWA indexing with Bing*](.\progressive-web-apps\microsoft-store.md#indexing-requirements) to learn more about Microsoft Store requirements for automatic PWA listings. 
+Manual (developer initiated) | Available | Check out [*PWAs in the Microsoft Store*](./progressive-web-apps/microsoft-store.md) to get started. 
+Automatic (auto-indexed with Bing) | Coming soon | We're piloting the PWA onboarding process with selected app partners. Check out [*PWA indexing with Bing*](./progressive-web-apps/microsoft-store.md#indexing-requirements) to learn more about Microsoft Store requirements for automatic PWA listings. 
