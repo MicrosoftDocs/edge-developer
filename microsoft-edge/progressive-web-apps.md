@@ -16,7 +16,7 @@ With Progressive Web Apps (or simply *PWAs*), you dont have to decide between us
 <table style="border:none;">
   <tr style="height:150px">
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_search.svg" />
+      <img style="display:block" src="/progressive-web-apps/media/i_search.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Discoverable">Discoverable</a></div>
       <div style="font-size:0.9em">From web search results and supporting app stores</div>
     </td>
