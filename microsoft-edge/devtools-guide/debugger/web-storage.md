@@ -1,6 +1,6 @@
 ---
 description: Use the Web Storage manager to inspect your Local and Session storage caches 
-title: Microsoft Edge F12 DevTools - Debugger - Web Storage manager
+title: Microsoft Edge DevTools - Debugger - Web Storage manager
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -13,10 +13,10 @@ keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugg
 
 Use the [Debugger](../debugger.md) *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
 
-The **Local Storage** and **Session Storage** folders inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the F12 DevTools [Storage list](#storage-list)).
+The **Local Storage** and **Session Storage** folders inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
 
-![F12 DevTools Cookies manager](../media/debugger_web_storage.png)
+![DevTools Cookies manager](../media/debugger_web_storage.png)
 
 From the *Local Storage* and *Session Storage* tab toolbars you can:
 

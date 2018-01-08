@@ -1,6 +1,6 @@
 ---
 description: Use the Cookies manager to inspect cookie usage  
-title: Microsoft Edge F12 DevTools - Debugger - Cookies manager
+title: Microsoft Edge DevTools - Debugger - Cookies manager
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
@@ -15,7 +15,7 @@ Use the [Debugger](../debugger.md) *Cookies manager* to inspect and manage the c
 
 The **Cookies** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie).
 
-![F12 DevTools Cookies manager](../media/debugger_cookies.png)
+![DevTools Cookies manager](../media/debugger_cookies.png)
 
 From the *Cookies* tab toolbar you can:
 
