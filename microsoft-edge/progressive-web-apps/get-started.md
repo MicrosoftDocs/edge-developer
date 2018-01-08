@@ -48,13 +48,14 @@ With the minimum requirements met, you have a basic *Progressive Web App* instal
 
 Debug your server-side logic the same way you would any web app, using the IDE and workflow of your choosing. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to reinstall).
 
-> [!NOTE] You can test your changes locally within the Microsoft Edge browser. However, while service workers, Cache API, and Push API will work from `localhost` in the browser, your app will not have access to native WinRT APIs or run in a standalone window as it would in the full (installed) Windows PWA experience.
+> [!NOTE]
+> You can test your changes locally within the Microsoft Edge browser. However, while service workers, Cache API, and Push API will work from `localhost` in the browser, your app will not have access to native WinRT APIs or run in a standalone window as it would in the full (installed) Windows PWA experience.
 
 ### Frontend debugging
 
 Browsers that support PWAs have built-in debugging support for **Service Workers** and **Cache** inspection. In [Microsoft Edge DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide), you can access both inspection tools from the **Debugger** panel.
 
-![Edge DevTools Service Workers and Cache inspection](..\f12-devtools-guide\media\debugger_sw_and_cache.png)
+![Edge DevTools Service Workers and Cache inspection](..\devtools-guide\media\debugger_sw_and_cache.png)
 
 Check out [*Progressive Web App debugging*](..\devtools-guide\debugger\progressive-web-apps.md) for more on using these tools in Microsoft Edge.
 
@@ -66,7 +67,7 @@ To debug a local PWA instance running in your desktop dev environment, ...
 
 TODO: Chase down UX details/screenshot for Edge DevTools chooser (and Store install?).
 
-From there, you can use the Microsoft Edge DevTools [**Emulation**](.\devtools-guide\emulation.md) panel to test out the responsiveness of your layout on different screen resolutions and display orientations.
+From there, you can use the Microsoft Edge DevTools [**Emulation**](..\devtools-guide\emulation.md) panel to test out the responsiveness of your layout on different screen resolutions and display orientations.
 
 #### Remote debugging with Edge DevTools Protocol
 
