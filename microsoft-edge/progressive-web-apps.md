@@ -126,4 +126,4 @@ Here's the current status of *Microsoft Store* support for PWAs on Windows 10:
 Store submission method | Status | Details
 | - | - | -
 Manual (developer initiated) | Available | Check out [*PWAs in the Microsoft Store*](./progressive-web-apps/microsoft-store.md) to get started. 
-Automatic (auto-indexed with Bing) | Coming soon | We're piloting the PWA onboarding process with selected app partners. Check out [*PWA indexing with Bing*](./progressive-web-apps/microsoft-store.md#indexing-requirements) to learn more about Microsoft Store requirements for automatic PWA listings. 
+Automatic (auto-indexed with Bing) | Coming soon | We're piloting the PWA onboarding process with selected app partners. Check out [*PWA indexing with Bing*](./progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission) to learn more about Microsoft Store requirements for automatic PWA listings. 
