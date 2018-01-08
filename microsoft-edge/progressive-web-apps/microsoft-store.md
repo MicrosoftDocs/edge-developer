@@ -49,7 +49,7 @@ Here's how to do it.
 ### 1. Generate your Windows 10 app 
 
 > [!NOTE]
-> You can skip this step if you've already generated your PWA and Windows 10 app using the [PWABuilder](http://manifoldjs.com/generator) web interface, as discussed in [*Get started with Progressive Web Apps*](./get-started-with-progressive-web-apps.md).
+> You can skip this step if you've already generated your PWA and Windows 10 app using the [PWABuilder](http://manifoldjs.com/generator) web interface, as covered in [*Get started with Progressive Web Apps*](.\get-started.md).
 
 [PWABuilder](https://www.npmjs.com/package/pwabuilder) (formerly *ManifoldJS*) enables you to package your web experience as a native app for Windows 10 and other app platforms directly from the command prompt.
 
@@ -63,7 +63,7 @@ This will generate a folder in the current directory named after your PWA (as sp
 
  a. Turn on **Developer mode** from the Windows *Settings* menu (press Windows **Start** key and search for "Use developer features")
 
- b. Locate the script at `PWA\Store packages\windows10\test_install.ps`, right-click and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu. For more, see [*Test and debug your PWA on Windows*](./get-started#test-and-debug-your-pwa-on-windows).
+ b. Locate the script at `PWA\Store packages\windows10\test_install.ps`, right-click and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu. For more, see [*Test and debug your PWA on Windows*](.\get-started.md#test-and-debug-your-pwa-on-windows).
 
     > [!NOTE]
     > To uninstall your PWA, simply comment out (`#`) this line of the *test_install.ps1* script and re-run: `# Add-AppxPackage -Register $appxmanifest`
