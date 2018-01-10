@@ -14,6 +14,10 @@ keywords: edge, web development, html, css, javascript, developer
 
 You can learn how to create extensions by following the [Borderify](https://developer.mozilla.org/Add-ons/WebExtensions/Your_first_WebExtension) and [Beastify](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension) tutorials on Mozilla Developer Network (MDN). This page highlights the changes you'd need to make to get these samples running in Microsoft Edge.
 
+> [!IMPORTANT]
+> The Borderify and Beastify examples use Promises instead of callbacks. Microsoft Edge only supports callbacks. If you don't want to convert the Promises to callbacks so that these examples will run, you can reference the [Quick Print](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/quick_print) and [Text Swap](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/text_swap) extensions that already use callbacks. You can walkthrough the Quick Print example in the video below.  
+
+
 Once you've created an extension or two and implemented the code tweaks for Microsoft Edge support, jump to the [Next steps](#next-steps) section for info on how to sideload and package extensions.
 
 If you'd prefer a video walkthrough of creating a Microsoft Edge extension, check out the video below on how to make a basic extension with a background script!
@@ -34,6 +38,10 @@ Learn how to make a very basic extension and ease into the world of extensions b
 Borderify is a simple extension that draws a red border around pages that match a URL pattern that you specify. The border code is handled with a [content script](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Content_scripts), while the URL match pattern is specified in your [manifest.json](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json) file within the [`"content_scripts"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts) field.
 
 ### Code differences
+
+> [!IMPORTANT]
+> Along with the following changes, you'll need to convert any Promises to callbacks. 
+
 
 While making your way though the tutorial, the following adjustments should be made so that
 the extension will work with Microsoft Edge:
@@ -66,6 +74,9 @@ The [Beastify](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Your_se
 
 
 ### Code differences
+
+> [!IMPORTANT]
+> Along with the following changes, you'll need to convert any Promises to callbacks.  
 
 While making your way through the tutorial, the following adjustments should be made so that
 the extension will work with Microsoft Edge:
