@@ -1,5 +1,5 @@
 ---
-description: Reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released or are released along with the other objects in their object group.
+description: Reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
 title: Runtime Domain - Microsoft Edge DevTools
 author: pelavall
 ms.author: pelavall
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ---
 # Runtime
-Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released or are released along with the other objects in their object group.
+Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
 
 | | |
 |-|-|
@@ -18,14 +18,14 @@ Runtime domain exposes JavaScript runtime by means of remote evaluation and mirr
 ## Methods
 
 ### enable
-Enables reporting of execution contexts creation by means of <code>executionContextCreated</code> event. When the reporting gets enabled the event will be sent immediately for each existing execution context. 
+Enables reporting of the <code>executionContextsCleared</code> event. 
 
 </p>
 
 ---
 
 ### disable
-Disables reporting of execution contexts creation. 
+Disables reporting of the <code>executionContextsCleared</code> event. 
 
 </p>
 
@@ -51,16 +51,6 @@ Evaluates expression on global object.
             <td>Expression to evaluate.</td>
         </tr>
         <tr>
-            <td>objectGroup <br/> <i>optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Symbolic group name that can be used to release multiple objects.</td>
-        </tr>
-        <tr>
-            <td>includeCommandLineAPI <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Determines whether Command Line API should be available during the evaluation.</td>
-        </tr>
-        <tr>
             <td>silent <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>In silent mode exceptions thrown during evaluation are not reported and do not pause execution. Overrides <code>setPauseOnException</code> state.</td>
@@ -74,16 +64,6 @@ Evaluates expression on global object.
             <td>returnByValue <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether the result is expected to be a JSON object that should be sent by value.</td>
-        </tr>
-        <tr>
-            <td>generatePreview <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether preview should be generated for the result. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
-            <td>userGesture <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether execution should be treated as initiated by user in the UI. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
         <tr>
             <td>awaitPromise <br/> <i>optional</i></td>
@@ -107,11 +87,6 @@ Evaluates expression on global object.
             <td>result</td>
             <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
             <td>Evaluation result.</td>
-        </tr>
-        <tr>
-            <td>exceptionDetails <br/> <i>optional</i></td>
-            <td><a href="#exceptiondetails"><code class="flyout">ExceptionDetails</code></a></td>
-            <td>Exception details.</td>
         </tr>
     </tbody>
 </table>
@@ -141,7 +116,7 @@ Calls function with given declaration on the given object. Object group of the r
         <tr>
             <td>objectId <br/> <i>optional</i></td>
             <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identifier of the object to call function on. Either objectId or executionContextId should be specified.</td>
+            <td>Identifier of the object to call function on. Either objectId or executionContextId should be specified.  objectId must be from the Runtime.evaluate() function.</td>
         </tr>
         <tr>
             <td>arguments <br/> <i>optional</i></td>
@@ -159,29 +134,9 @@ Calls function with given declaration on the given object. Object group of the r
             <td>Whether the result is expected to be a JSON object which should be sent by value.</td>
         </tr>
         <tr>
-            <td>generatePreview <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether preview should be generated for the result. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
-            <td>userGesture <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether execution should be treated as initiated by user in the UI. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
             <td>awaitPromise <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether execution should <code>await</code> for resulting value and return once awaited promise is resolved.</td>
-        </tr>
-        <tr>
-            <td>executionContextId <br/> <i>optional</i></td>
-            <td><a href="#executioncontextid"><code class="flyout">ExecutionContextId</code></a></td>
-            <td>Specifies execution context which global object will be used to call function on. Either executionContextId or objectId should be specified.</td>
-        </tr>
-        <tr>
-            <td>objectGroup <br/> <i>optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Symbolic group name that can be used to release multiple objects. If objectGroup is not specified and objectId is, objectGroup will be inherited from object.</td>
         </tr>
     </tbody>
 </table>
@@ -200,11 +155,6 @@ Calls function with given declaration on the given object. Object group of the r
             <td>result</td>
             <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
             <td>Call result.</td>
-        </tr>
-        <tr>
-            <td>exceptionDetails <br/> <i>optional</i></td>
-            <td><a href="#exceptiondetails"><code class="flyout">ExceptionDetails</code></a></td>
-            <td>Exception details.</td>
         </tr>
     </tbody>
 </table>
@@ -229,7 +179,7 @@ Returns properties of a given object. Object group of the result is inherited fr
         <tr>
             <td>objectId</td>
             <td><a href="#remoteobjectid"><code class="flyout">RemoteObjectId</code></a></td>
-            <td>Identifier of the object to return properties for.</td>
+            <td>Identifier of the object to return properties for.  objectId must be from the Debugger.evaluateOnCallFrame() function.</td>
         </tr>
         <tr>
             <td>ownProperties <br/> <i>optional</i></td>
@@ -240,11 +190,6 @@ Returns properties of a given object. Object group of the result is inherited fr
             <td>accessorPropertiesOnly <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>If true, returns accessor properties (with getter/setter) only; internal properties are not returned either. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
-            <td>generatePreview <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether preview should be generated for the results. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
     </tbody>
 </table>
@@ -263,11 +208,6 @@ Returns properties of a given object. Object group of the result is inherited fr
             <td>result</td>
             <td><a href="#propertydescriptor"><code class="flyout">PropertyDescriptor[]</code></a></td>
             <td>Object properties.</td>
-        </tr>
-        <tr>
-            <td>exceptionDetails <br/> <i>optional</i></td>
-            <td><a href="#exceptiondetails"><code class="flyout">ExceptionDetails</code></a></td>
-            <td>Exception details.</td>
         </tr>
     </tbody>
 </table>
@@ -393,16 +333,6 @@ Mirror object referencing original JavaScript object.
             <td>Unique object identifier (for non-primitive values).</td>
         </tr>
         <tr>
-            <td>preview <br/> <i>optional</i></td>
-            <td><a href="#objectpreview"><code class="flyout">ObjectPreview</code></a></td>
-            <td>Preview containing abbreviated property values. Specified for <code>object</code> type values only. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
-            <td>customPreview <br/> <i>optional</i></td>
-            <td><a href="#custompreview"><code class="flyout">CustomPreview</code></a></td>
-            <td> <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
             <td>msDebuggerPropertyId <br/> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
             <td>Microsoft: The associated debugger property id for this object. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
@@ -474,14 +404,14 @@ Object property descriptor.
             <td>True if the property is owned for the object.</td>
         </tr>
         <tr>
-            <td>symbol <br/> <i>optional</i></td>
-            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Property symbol object, if the property is of the <code>symbol</code> type.</td>
-        </tr>
-        <tr>
             <td>msReturnValue <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Microsoft: True if the property is a return value. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+        </tr>
+        <tr>
+            <td>symbol <br/> <i>optional</i></td>
+            <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
+            <td>Property symbol object, if the property is of the `symbol` type. </td>
         </tr>
     </tbody>
 </table>
@@ -599,7 +529,7 @@ Detailed information about exception (or error) that was thrown during script co
 
 ---
 
-### <a name="timestamp"></a> Timestamp `number`
+### <a name="timestamp"></a> Timestamp `integer`
 
 Number of milliseconds since epoch.
 
@@ -682,11 +612,6 @@ Call frames for assertions or error messages.
             <td>parent <br/> <i>optional</i></td>
             <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
             <td>Asynchronous JavaScript stack trace that preceded this stack, if available.</td>
-        </tr>
-        <tr>
-            <td>promiseCreationFrame <br/> <i>optional</i></td>
-            <td><a href="#callframe"><code class="flyout">CallFrame</code></a></td>
-            <td>Creation frame of the Promise which produced the next synchronous trace when resolved, if available. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
     </tbody>
 </table>

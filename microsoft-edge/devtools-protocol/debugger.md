@@ -12,9 +12,9 @@ Debugger domain exposes JavaScript debugging capabilities. It allows setting and
 
 | | |
 |-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
 | [**Events**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |
-| [**Types**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [ScriptPosition](#scriptposition), [CallFrame](#callframe), [Scope](#scope) |
+| [**Types**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
 | [**Dependencies**](#dependencies) | [Runtime](runtime.md) |
 ## Methods
 
@@ -28,6 +28,54 @@ Enables debugger for the given page. Clients should not assume that the debuggin
 ### disable
 Disables debugger for given page. 
 
+</p>
+
+---
+
+### getPossibleBreakpoints
+Returns possible locations for breakpoint. scriptId in start and end range locations should be the same. 
+
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>start</td>
+            <td><a href="#location"><code class="flyout">Location</code></a></td>
+            <td>Start of range to search possible breakpoint locations in.</td>
+        </tr>
+        <tr>
+            <td>end</td>
+            <td><a href="#location"><code class="flyout">Location</code></a></td>
+            <td>End of range to search possible breakpoint locations in (excluding). When not specified, end of scripts is used as end of range.</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Returns</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>locations</td>
+            <td><a href="#breaklocation"><code class="flyout">BreakLocation</code></a></td>
+            <td>List of the possible breakpoint locations.</td>
+        </tr>
+    </tbody>
+</table>
 </p>
 
 ---
@@ -85,11 +133,6 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
             <td>urlRegex <br/> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
             <td>Regex pattern for the URLs of the resources to set breakpoints on. Either <code>url</code> or <code>urlRegex</code> must be specified.</td>
-        </tr>
-        <tr>
-            <td>scriptHash <br/> <i>optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Script hash of the resources to set breakpoint on. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
         <tr>
             <td>columnNumber <br/> <i>optional</i></td>
@@ -335,36 +378,6 @@ Evaluates expression on a given call frame.
             <td><code class="flyout">string</code></td>
             <td>Expression to evaluate.</td>
         </tr>
-        <tr>
-            <td>objectGroup <br/> <i>optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>String object group name to put result into (allows rapid releasing resulting object handles using <code>releaseObjectGroup</code>).</td>
-        </tr>
-        <tr>
-            <td>includeCommandLineAPI <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Specifies whether command line API should be available to the evaluated expression, defaults to false.</td>
-        </tr>
-        <tr>
-            <td>silent <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>In silent mode exceptions thrown during evaluation are not reported and do not pause execution. Overrides <code>setPauseOnException</code> state.</td>
-        </tr>
-        <tr>
-            <td>returnByValue <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether the result is expected to be a JSON object that should be sent by value.</td>
-        </tr>
-        <tr>
-            <td>generatePreview <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether preview should be generated for the result. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
-            <td>throwOnSideEffect <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>Whether to throw an exception if side effect cannot be ruled out during evaluation. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
     </tbody>
 </table>
 </p>
@@ -382,11 +395,6 @@ Evaluates expression on a given call frame.
             <td>result</td>
             <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
             <td>Object wrapper for the evaluation result.</td>
-        </tr>
-        <tr>
-            <td>exceptionDetails <br/> <i>optional</i></td>
-            <td><a href="runtime.md#exceptiondetails"><code class="flyout">Runtime.ExceptionDetails</code></a></td>
-            <td>Exception details.</td>
         </tr>
     </tbody>
 </table>
@@ -435,7 +443,7 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
 ---
 
 ### setBlackboxPatterns
-Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. VM will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span>
+Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span>
 
 </p>
 
@@ -492,7 +500,7 @@ Microsoft: Sets the specified debugger property to the specified value. <span st
 ## Events
 
 ### scriptParsed
-Fired when virtual machine parses script. This event is also fired for all known and uncollected scripts upon enabling debugger. 
+Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger. 
 
 </p>
 
@@ -541,34 +549,9 @@ Fired when virtual machine parses script. This event is also fired for all known
             <td>Specifies script creation context.</td>
         </tr>
         <tr>
-            <td>hash</td>
-            <td><code class="flyout">string</code></td>
-            <td>Content hash of the script.</td>
-        </tr>
-        <tr>
-            <td>executionContextAuxData <br/> <i>optional</i></td>
-            <td><code class="flyout">object</code></td>
-            <td>Embedder-specific auxiliary data.</td>
-        </tr>
-        <tr>
-            <td>isLiveEdit <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True, if this script is generated as a result of the live edit operation. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
             <td>sourceMapURL <br/> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
             <td>URL of source map associated with script (if any).</td>
-        </tr>
-        <tr>
-            <td>hasSourceURL <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True, if this script has sourceURL. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
-        </tr>
-        <tr>
-            <td>isModule <br/> <i>optional</i></td>
-            <td><code class="flyout">boolean</code></td>
-            <td>True, if this script is ES6 module. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
         <tr>
             <td>length <br/> <i>optional</i></td>
@@ -576,9 +559,24 @@ Fired when virtual machine parses script. This event is also fired for all known
             <td>This script length. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
         <tr>
-            <td>stackTrace <br/> <i>optional</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>JavaScript top stack frame of where the script parsed event was triggered if available. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td>msParentId <br/> <i>optional</i></td>
+            <td><code class="flyout">string</code></td>
+            <td>This is the parent document ID. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+        </tr>
+        <tr>
+            <td>msMimeType <br/> <i>optional</i></td>
+            <td><code class="flyout">string</code></td>
+            <td>This is the mime type. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+        </tr>
+        <tr>
+            <td>msIsDynamicCode <br/> <i>optional</i></td>
+            <td><code class="flyout">boolean</code></td>
+            <td>This indicates whether it is dynamic code. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+        </tr>
+        <tr>
+            <td>msLongDocumentId <br/> <i>optional</i></td>
+            <td><code class="flyout">integer</code></td>
+            <td>This is the long document ID. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
     </tbody>
 </table>
@@ -622,7 +620,7 @@ Fired when breakpoint is resolved to an actual script and location.
 ---
 
 ### paused
-Fired when the virtual machine stopped on breakpoint or exception or any other stop criteria. 
+Fired when the debuggers breaks for a breakpoint or exception. 
 
 </p>
 
@@ -638,11 +636,11 @@ Fired when the virtual machine stopped on breakpoint or exception or any other s
         <tr>
             <td>callFrames</td>
             <td><a href="#callframe"><code class="flyout">CallFrame[]</code></a></td>
-            <td>Call stack the virtual machine stopped on.</td>
+            <td>Call stack the debugger stopped on.</td>
         </tr>
         <tr>
             <td>reason</td>
-            <td><code class="flyout">string</code>  <br/> <i>Allowed values: XHR, DOM, EventListener, exception, assert, debugCommand, promiseRejection, OOM, other, ambiguous</i></td>
+            <td><code class="flyout">string</code>  <br/> <i>Allowed values: breakpoint, step, exception, other</i></td>
             <td>Pause reason.</td>
         </tr>
         <tr>
@@ -655,11 +653,6 @@ Fired when the virtual machine stopped on breakpoint or exception or any other s
             <td><code class="flyout">string[]</code></td>
             <td>Hit breakpoints IDs</td>
         </tr>
-        <tr>
-            <td>asyncStackTrace <br/> <i>optional</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>Async stack trace, if any.</td>
-        </tr>
     </tbody>
 </table>
 </p>
@@ -667,7 +660,7 @@ Fired when the virtual machine stopped on breakpoint or exception or any other s
 ---
 
 ### resumed
-Fired when the virtual machine resumed execution. 
+Fired when the debugger resumes execution. 
 
 </p>
 
@@ -721,15 +714,20 @@ Location in the source code.
             <td><code class="flyout">integer</code></td>
             <td>Column number in the script (0-based).</td>
         </tr>
+        <tr>
+            <td>msLength</td>
+            <td><code class="flyout">integer</code></td>
+            <td>Microsoft: Length of code (i.e. number of characters) at this call frame.</td>
+        </tr>
     </tbody>
 </table>
 </p>
 
 ---
 
-### <a name="scriptposition"></a> ScriptPosition `object`
-<span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span> <br/>
-Location in the source code.
+### <a name="breaklocation"></a> BreakLocation `object`
+
+Break location in the source code.
 
 </p>
 
@@ -743,14 +741,29 @@ Location in the source code.
     </thead>
     <tbody>
         <tr>
-            <td>lineNumber</td>
-            <td><code class="flyout">integer</code></td>
-            <td></td>
+            <td>scriptId</td>
+            <td><a href="runtime.md#scriptid"><code class="flyout">Runtime.ScriptId</code></a></td>
+            <td>Script identifier as reported in the <code>Debugger.scriptParsed</code>.</td>
         </tr>
         <tr>
-            <td>columnNumber</td>
+            <td>lineNumber</td>
             <td><code class="flyout">integer</code></td>
-            <td></td>
+            <td>Line number in the script (0-based).</td>
+        </tr>
+        <tr>
+            <td>columnNumber <br/> <i>optional</i></td>
+            <td><code class="flyout">integer</code></td>
+            <td>Column number in the script (0-based).</td>
+        </tr>
+        <tr>
+            <td>msLength</td>
+            <td><code class="flyout">integer</code></td>
+            <td>Microsoft: Length of code (i.e. number of characters) at this call frame.</td>
+        </tr>
+        <tr>
+            <td>type <br/> <i>optional</i></td>
+            <td><code class="flyout">string</code></td>
+            <td>Allowed values: debuggerStatement, call, return.</td>
         </tr>
     </tbody>
 </table>
@@ -776,7 +789,7 @@ JavaScript call frame. Array of call frames form the call stack.
         <tr>
             <td>callFrameId</td>
             <td><a href="#callframeid"><code class="flyout">CallFrameId</code></a></td>
-            <td>Call frame identifier. This identifier is only valid while the virtual machine is paused.</td>
+            <td>Call frame identifier. This identifier is only valid while the debugger is paused.</td>
         </tr>
         <tr>
             <td>functionName</td>
@@ -807,11 +820,6 @@ JavaScript call frame. Array of call frames form the call stack.
             <td>this</td>
             <td><a href="runtime.md#remoteobject"><code class="flyout">Runtime.RemoteObject</code></a></td>
             <td><code>this</code> object for this call frame.</td>
-        </tr>
-        <tr>
-            <td>msLength <br/> <i>optional</i></td>
-            <td><code class="flyout">integer</code></td>
-            <td>Microsoft: Length of code (i.e. number of characters) at this call frame. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
         </tr>
         <tr>
             <td>returnValue <br/> <i>optional</i></td>
