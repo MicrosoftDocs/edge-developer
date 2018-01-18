@@ -17,7 +17,7 @@ Provides information about the protocol schema.
 ## Methods
 
 ### getDomains
-Returns supported domains. 
+Returns supported domains.
 
 </p>
 

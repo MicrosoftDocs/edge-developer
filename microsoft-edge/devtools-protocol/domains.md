@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
-# Edge DevTools Protocol (v1.2) Domains
+# Edge DevTools Protocol (v0.1) Domains
 ## [Schema](schema.md)
 Provides information about the protocol schema.
 ## [Page](page.md)

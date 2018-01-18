@@ -18,21 +18,21 @@ Runtime domain exposes JavaScript runtime by means of remote evaluation and mirr
 ## Methods
 
 ### enable
-Enables reporting of the <code>executionContextsCleared</code> event. 
+Enables reporting of the <code>executionContextsCleared</code> event.
 
 </p>
 
 ---
 
 ### disable
-Disables reporting of the <code>executionContextsCleared</code> event. 
+Disables reporting of the <code>executionContextsCleared</code> event.
 
 </p>
 
 ---
 
 ### evaluate
-Evaluates expression on global object. 
+Evaluates expression on global object.
 
 </p>
 
@@ -95,7 +95,7 @@ Evaluates expression on global object.
 ---
 
 ### callFunctionOn
-Calls function with given declaration on the given object. Object group of the result is inherited from the target object. 
+Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
 
 </p>
 
@@ -163,7 +163,7 @@ Calls function with given declaration on the given object. Object group of the r
 ---
 
 ### getProperties
-Returns properties of a given object. Object group of the result is inherited from the target object. 
+Returns properties of a given object. Object group of the result is inherited from the target object.
 
 </p>
 
@@ -189,7 +189,7 @@ Returns properties of a given object. Object group of the result is inherited fr
         <tr>
             <td>accessorPropertiesOnly <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
-            <td>If true, returns accessor properties (with getter/setter) only; internal properties are not returned either. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>If true, returns accessor properties (with getter/setter) only; internal properties are not returned either.</td>
         </tr>
     </tbody>
 </table>
@@ -218,14 +218,14 @@ Returns properties of a given object. Object group of the result is inherited fr
 ## Events
 
 ### executionContextsCleared
-Issued when all executionContexts were cleared in browser 
+Issued when all executionContexts were cleared in browser
 
 </p>
 
 ---
 
 ### exceptionThrown
-Issued when exception was thrown and unhandled. 
+Issued when exception was thrown and unhandled.
 
 </p>
 
@@ -335,7 +335,7 @@ Mirror object referencing original JavaScript object.
         <tr>
             <td>msDebuggerPropertyId <br/> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
-            <td>Microsoft: The associated debugger property id for this object. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>Microsoft: The associated debugger property id for this object.</td>
         </tr>
     </tbody>
 </table>
@@ -406,7 +406,7 @@ Object property descriptor.
         <tr>
             <td>msReturnValue <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
-            <td>Microsoft: True if the property is a return value. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>Microsoft: True if the property is a return value.</td>
         </tr>
         <tr>
             <td>symbol <br/> <i>optional</i></td>

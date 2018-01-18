@@ -19,21 +19,21 @@ Debugger domain exposes JavaScript debugging capabilities. It allows setting and
 ## Methods
 
 ### enable
-Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received. 
+Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.
 
 </p>
 
 ---
 
 ### disable
-Disables debugger for given page. 
+Disables debugger for given page.
 
 </p>
 
 ---
 
 ### getPossibleBreakpoints
-Returns possible locations for breakpoint. scriptId in start and end range locations should be the same. 
+Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
 
 </p>
 
@@ -81,7 +81,7 @@ Returns possible locations for breakpoint. scriptId in start and end range locat
 ---
 
 ### setBreakpointsActive
-Activates / deactivates all breakpoints on the page. 
+Activates / deactivates all breakpoints on the page.
 
 </p>
 
@@ -106,7 +106,7 @@ Activates / deactivates all breakpoints on the page.
 ---
 
 ### setBreakpointByUrl
-Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads. 
+Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
 
 </p>
 
@@ -174,7 +174,7 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
 ---
 
 ### setBreakpoint
-Sets JavaScript breakpoint at a given location. 
+Sets JavaScript breakpoint at a given location.
 
 </p>
 
@@ -227,7 +227,7 @@ Sets JavaScript breakpoint at a given location.
 ---
 
 ### removeBreakpoint
-Removes JavaScript breakpoint. 
+Removes JavaScript breakpoint.
 
 </p>
 
@@ -252,42 +252,42 @@ Removes JavaScript breakpoint.
 ---
 
 ### stepOver
-Steps over the statement. 
+Steps over the statement.
 
 </p>
 
 ---
 
 ### stepInto
-Steps into the function call. 
+Steps into the function call.
 
 </p>
 
 ---
 
 ### stepOut
-Steps out of the function call. 
+Steps out of the function call.
 
 </p>
 
 ---
 
 ### pause
-Stops on the next JavaScript statement. 
+Stops on the next JavaScript statement.
 
 </p>
 
 ---
 
 ### resume
-Resumes JavaScript execution. 
+Resumes JavaScript execution.
 
 </p>
 
 ---
 
 ### getScriptSource
-Returns source for the script with given id. 
+Returns source for the script with given id.
 
 </p>
 
@@ -330,7 +330,7 @@ Returns source for the script with given id.
 ---
 
 ### setPauseOnExceptions
-Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>. 
+Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
 
 </p>
 
@@ -355,7 +355,7 @@ Defines pause on exceptions state. Can be set to stop on all exceptions, uncaugh
 ---
 
 ### evaluateOnCallFrame
-Evaluates expression on a given call frame. 
+Evaluates expression on a given call frame.
 
 </p>
 
@@ -403,7 +403,7 @@ Evaluates expression on a given call frame.
 ---
 
 ### setVariableValue
-Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually. 
+Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
 
 </p>
 
@@ -443,7 +443,7 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
 ---
 
 ### setBlackboxPatterns
-Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span>
+<span><b>Experimental. </b></span>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
 
 </p>
 
@@ -468,7 +468,7 @@ Replace previous blackbox patterns with passed ones. Forces backend to skip step
 ---
 
 ### msSetDebuggerPropertyValue
-Microsoft: Sets the specified debugger property to the specified value. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span>
+<span><b>Experimental. </b></span>Microsoft: Sets the specified debugger property to the specified value.
 
 </p>
 
@@ -500,7 +500,7 @@ Microsoft: Sets the specified debugger property to the specified value. <span st
 ## Events
 
 ### scriptParsed
-Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger. 
+Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger.
 
 </p>
 
@@ -556,27 +556,27 @@ Fired when the script is parsed. This event is also fired for all known and unco
         <tr>
             <td>length <br/> <i>optional</i></td>
             <td><code class="flyout">integer</code></td>
-            <td>This script length. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>This script length.</td>
         </tr>
         <tr>
             <td>msParentId <br/> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
-            <td>This is the parent document ID. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>This is the parent document ID.</td>
         </tr>
         <tr>
             <td>msMimeType <br/> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
-            <td>This is the mime type. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>This is the mime type.</td>
         </tr>
         <tr>
             <td>msIsDynamicCode <br/> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
-            <td>This indicates whether it is dynamic code. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>This indicates whether it is dynamic code.</td>
         </tr>
         <tr>
             <td>msLongDocumentId <br/> <i>optional</i></td>
             <td><code class="flyout">integer</code></td>
-            <td>This is the long document ID. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>This is the long document ID.</td>
         </tr>
     </tbody>
 </table>
@@ -585,7 +585,7 @@ Fired when the script is parsed. This event is also fired for all known and unco
 ---
 
 ### breakpointResolved
-Fired when breakpoint is resolved to an actual script and location. 
+Fired when breakpoint is resolved to an actual script and location.
 
 </p>
 
@@ -611,7 +611,7 @@ Fired when breakpoint is resolved to an actual script and location.
         <tr>
             <td>msLength <br/> <i>optional</i></td>
             <td><code class="flyout">integer</code></td>
-            <td>Microsoft: Length of code (i.e. number of characters) at the breakpoint location. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>Microsoft: Length of code (i.e. number of characters) at the breakpoint location.</td>
         </tr>
     </tbody>
 </table>
@@ -620,7 +620,7 @@ Fired when breakpoint is resolved to an actual script and location.
 ---
 
 ### paused
-Fired when the debuggers breaks for a breakpoint or exception. 
+Fired when the debuggers breaks for a breakpoint or exception.
 
 </p>
 
@@ -660,7 +660,7 @@ Fired when the debuggers breaks for a breakpoint or exception.
 ---
 
 ### resumed
-Fired when the debugger resumes execution. 
+Fired when the debugger resumes execution.
 
 </p>
 
@@ -799,7 +799,7 @@ JavaScript call frame. Array of call frames form the call stack.
         <tr>
             <td>functionLocation <br/> <i>optional</i></td>
             <td><a href="#location"><code class="flyout">Location</code></a></td>
-            <td>Location in the source code. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>Location in the source code.</td>
         </tr>
         <tr>
             <td>location</td>

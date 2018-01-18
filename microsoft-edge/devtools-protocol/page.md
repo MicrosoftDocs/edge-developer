@@ -17,21 +17,21 @@ Actions and events related to the inspected page belong to the page domain.
 ## Methods
 
 ### enable
-Enables page domain notifications. 
+Enables page domain notifications.
 
 </p>
 
 ---
 
 ### disable
-Disables page domain notifications. 
+Disables page domain notifications.
 
 </p>
 
 ---
 
 ### navigate
-Navigates current page to the given URL. 
+Navigates current page to the given URL.
 
 </p>
 
@@ -65,7 +65,7 @@ Navigates current page to the given URL.
         <tr>
             <td>frameId</td>
             <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Frame id that will be navigated. <span style="color:white;background-color:Tomato;padding-left: 4px;padding-right:4px;padding-top:1px;padding-bottom:1px">EXPERIMENTAL</span></td>
+            <td><span><b>Experimental. </b></span>Frame id that will be navigated.</td>
         </tr>
     </tbody>
 </table>
