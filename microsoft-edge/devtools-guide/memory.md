@@ -156,24 +156,20 @@ If you see this error message: **An error occurred while starting the profiling 
 
 1. Press `Windows Key` + `R`
 
-2. In the Run dialog, enter **services.msc**
-
+2. In the Run dialog, enter **services.msc** 
 ![known-issues-1](./media/memory_known_issues_1.PNG)
 
-3. In the Services dialog, locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it
-
+3. In the Services dialog, locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it 
 ![known-issues-2](./media/memory_known_issues_2.PNG)
 
-4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**
-
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service** 
 ![known-issues-3](./media/memory_known_issues_3.PNG)
 
 5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`
 
-6. You should now be able to begin profiling.
-
+6. You should now be able to begin profiling. 
 ![known-issues-4](./media/memory_known_issues_4.PNG)
 
-Still running into problems? Please send us your feedback using the **Send feedback** icon!
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
 ![known-issues-5](./media/memory_known_issues_5.PNG)
