@@ -6,7 +6,7 @@ ms.author: libbymc
 ms.date: 1/3/2018
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge
+keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
 ---
 
 # What's New in EdgeHTML
