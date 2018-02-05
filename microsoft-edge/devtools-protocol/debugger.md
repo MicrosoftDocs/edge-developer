@@ -1,6 +1,6 @@
 ---
 description: Reference for the Debugger Domain. Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
-title: Debugger Domain - Microsoft Edge DevTools
+title: Debugger Domain - Microsoft Edge DevTools Protocol
 author: pelavall
 ms.author: pelavall
 ms.date: 12/15/2017
