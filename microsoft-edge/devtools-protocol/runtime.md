@@ -34,8 +34,6 @@ Disables reporting of the <code>executionContextsCleared</code> event.
 ### evaluate
 Evaluates expression on global object.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -72,8 +70,6 @@ Evaluates expression on global object.
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -96,8 +92,6 @@ Evaluates expression on global object.
 
 ### callFunctionOn
 Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
-
-</p>
 
 <table>
     <thead>
@@ -140,8 +134,6 @@ Calls function with given declaration on the given object. Object group of the r
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -164,8 +156,6 @@ Calls function with given declaration on the given object. Object group of the r
 
 ### getProperties
 Returns properties of a given object. Object group of the result is inherited from the target object.
-
-</p>
 
 <table>
     <thead>
@@ -193,8 +183,6 @@ Returns properties of a given object. Object group of the result is inherited fr
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -226,8 +214,6 @@ Issued when all executionContexts were cleared in browser
 
 ### exceptionThrown
 Issued when exception was thrown and unhandled.
-
-</p>
 
 <table>
     <thead>
@@ -286,8 +272,6 @@ Infinity, NaN, -Infinity, -0
 
 Mirror object referencing original JavaScript object.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -299,12 +283,12 @@ Mirror object referencing original JavaScript object.
     <tbody>
         <tr>
             <td>type</td>
-            <td><code class="flyout">string</code>  <br/> <i>Allowed values: object, function, undefined, string, number, boolean, symbol</i></td>
+            <td><code class="flyout">string</code> <br/> <i>Allowed values: object, function, undefined, string, number, boolean, symbol</i></td>
             <td>Object type.</td>
         </tr>
         <tr>
             <td>subtype <br/> <i>optional</i></td>
-            <td><code class="flyout">string</code>  <br/> <i>Allowed values: null, error, promise</i></td>
+            <td><code class="flyout">string</code> <br/> <i>Allowed values: null, error, promise</i></td>
             <td>Object subtype hint. Specified for <code>object</code> type values only.</td>
         </tr>
         <tr>
@@ -346,8 +330,6 @@ Mirror object referencing original JavaScript object.
 ### <a name="propertydescriptor"></a> PropertyDescriptor `object`
 
 Object property descriptor.
-
-</p>
 
 <table>
     <thead>
@@ -423,8 +405,6 @@ Object property descriptor.
 
 Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -466,8 +446,6 @@ Id of an execution context.
 ### <a name="exceptiondetails"></a> ExceptionDetails `object`
 
 Detailed information about exception (or error) that was thrown during script compilation or execution.
-
-</p>
 
 <table>
     <thead>
@@ -541,8 +519,6 @@ Number of milliseconds since epoch.
 
 Stack entry for runtime errors and assertions.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -586,8 +562,6 @@ Stack entry for runtime errors and assertions.
 ### <a name="stacktrace"></a> StackTrace `object`
 
 Call frames for assertions or error messages.
-
-</p>
 
 <table>
     <thead>

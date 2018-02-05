@@ -19,8 +19,6 @@ Provides information about the protocol schema.
 ### getDomains
 Returns supported domains.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -46,8 +44,6 @@ Returns supported domains.
 ### <a name="domain"></a> Domain `object`
 
 Description of the protocol domain.
-
-</p>
 
 <table>
     <thead>

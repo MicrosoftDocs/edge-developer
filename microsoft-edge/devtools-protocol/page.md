@@ -33,8 +33,6 @@ Disables page domain notifications.
 ### navigate
 Navigates current page to the given URL.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -51,8 +49,6 @@ Navigates current page to the given URL.
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>

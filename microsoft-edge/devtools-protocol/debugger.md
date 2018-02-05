@@ -35,8 +35,6 @@ Disables debugger for given page.
 ### getPossibleBreakpoints
 Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -58,8 +56,6 @@ Returns possible locations for breakpoint. scriptId in start and end range locat
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -83,8 +79,6 @@ Returns possible locations for breakpoint. scriptId in start and end range locat
 ### setBreakpointsActive
 Activates / deactivates all breakpoints on the page.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -107,8 +101,6 @@ Activates / deactivates all breakpoints on the page.
 
 ### setBreakpointByUrl
 Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
-
-</p>
 
 <table>
     <thead>
@@ -146,8 +138,6 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -176,8 +166,6 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
 ### setBreakpoint
 Sets JavaScript breakpoint at a given location.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -199,8 +187,6 @@ Sets JavaScript breakpoint at a given location.
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -228,8 +214,6 @@ Sets JavaScript breakpoint at a given location.
 
 ### removeBreakpoint
 Removes JavaScript breakpoint.
-
-</p>
 
 <table>
     <thead>
@@ -289,8 +273,6 @@ Resumes JavaScript execution.
 ### getScriptSource
 Returns source for the script with given id.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -307,8 +289,6 @@ Returns source for the script with given id.
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -332,8 +312,6 @@ Returns source for the script with given id.
 ### setPauseOnExceptions
 Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -345,7 +323,7 @@ Defines pause on exceptions state. Can be set to stop on all exceptions, uncaugh
     <tbody>
         <tr>
             <td>state</td>
-            <td><code class="flyout">string</code>  <br/> <i>Allowed values: none, uncaught, all</i></td>
+            <td><code class="flyout">string</code> <br/> <i>Allowed values: none, uncaught, all</i></td>
             <td>Pause on exceptions mode.</td>
         </tr>
     </tbody>
@@ -356,8 +334,6 @@ Defines pause on exceptions state. Can be set to stop on all exceptions, uncaugh
 
 ### evaluateOnCallFrame
 Evaluates expression on a given call frame.
-
-</p>
 
 <table>
     <thead>
@@ -380,8 +356,6 @@ Evaluates expression on a given call frame.
         </tr>
     </tbody>
 </table>
-</p>
-
 <table>
     <thead>
         <tr>
@@ -404,8 +378,6 @@ Evaluates expression on a given call frame.
 
 ### setVariableValue
 Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
-
-</p>
 
 <table>
     <thead>
@@ -445,8 +417,6 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
 ### setBlackboxPatterns
 <span><b>Experimental. </b></span>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -469,8 +439,6 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
 
 ### msSetDebuggerPropertyValue
 <span><b>Experimental. </b></span>Microsoft: Sets the specified debugger property to the specified value.
-
-</p>
 
 <table>
     <thead>
@@ -501,8 +469,6 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
 
 ### scriptParsed
 Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger.
-
-</p>
 
 <table>
     <thead>
@@ -587,8 +553,6 @@ Fired when the script is parsed. This event is also fired for all known and unco
 ### breakpointResolved
 Fired when breakpoint is resolved to an actual script and location.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -622,8 +586,6 @@ Fired when breakpoint is resolved to an actual script and location.
 ### paused
 Fired when the debuggers breaks for a breakpoint or exception.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -640,7 +602,7 @@ Fired when the debuggers breaks for a breakpoint or exception.
         </tr>
         <tr>
             <td>reason</td>
-            <td><code class="flyout">string</code>  <br/> <i>Allowed values: breakpoint, step, exception, other</i></td>
+            <td><code class="flyout">string</code> <br/> <i>Allowed values: breakpoint, step, exception, other</i></td>
             <td>Pause reason.</td>
         </tr>
         <tr>
@@ -688,8 +650,6 @@ Call frame identifier.
 
 Location in the source code.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -728,8 +688,6 @@ Location in the source code.
 ### <a name="breaklocation"></a> BreakLocation `object`
 
 Break location in the source code.
-
-</p>
 
 <table>
     <thead>
@@ -774,8 +732,6 @@ Break location in the source code.
 ### <a name="callframe"></a> CallFrame `object`
 
 JavaScript call frame. Array of call frames form the call stack.
-
-</p>
 
 <table>
     <thead>
@@ -836,8 +792,6 @@ JavaScript call frame. Array of call frames form the call stack.
 
 Scope description.
 
-</p>
-
 <table>
     <thead>
         <tr>
@@ -849,7 +803,7 @@ Scope description.
     <tbody>
         <tr>
             <td>type</td>
-            <td><code class="flyout">string</code>  <br/> <i>Allowed values: global, local, with, closure, catch, block, script, eval, module</i></td>
+            <td><code class="flyout">string</code> <br/> <i>Allowed values: global, local, with, closure, catch, block, script, eval, module</i></td>
             <td>Scope type.</td>
         </tr>
         <tr>
