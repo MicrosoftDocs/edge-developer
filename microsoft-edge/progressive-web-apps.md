@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 # Progressive Web Apps on Windows
 
-With Progressive Web Apps (or simply *PWAs*), you dont have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their particular device. That's because PWAs are just websites that are [*progressively enhanced*](https://alistapart.com/article/understandingprogressiveenhancement) to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps. 
+With Progressive Web Apps (or simply *PWA*s) you dont have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device. That's because PWAs are just websites that are [*progressively enhanced*](https://alistapart.com/article/understandingprogressiveenhancement) to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps. 
 
 <table style="border:none;">
   <tr style="height:150px">
@@ -60,21 +60,25 @@ With Progressive Web Apps (or simply *PWAs*), you dont have to decide between us
   </tr>
 </table>
 
-By building (or converting your existing web app as) a PWA, you can better engage your existing audience with push notifications and offline/low-network support. At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.
+By building or converting your existing site to a PWA, you can better engage your existing audience with push notifications and offline support. At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.
 
 ## PWAs on Windows 10
 
-When you distribute your *Progressive Web App* through the [Microsoft Store](https://developer.microsoft.com/en-us/store), the entire Windows 10 install base of 600 million active monthly users is your potential app audience! As [Universal Windows Platform (UWP)](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) apps, PWAs have exclusive access on [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/projects/campaigns/windows-mixed-reality) devices like the [Microsoft Hololens](https://www.microsoft.com/en-us/hololens) and ultra lightweight [Windows 10 S](https://www.microsoft.com/en-us/windows/windows-10-s) devices, where traditional desktop apps arn't supported.
+When you distribute your *Progressive Web App* through the [Microsoft Store](https://developer.microsoft.com/en-us/store), the entire Windows 10 install base of 600 million active monthly users is your potential app audience!
 
-When installed on Windows 10, PWAs run as *Universal Windows Platform* apps and gain these technical advantages over running in the browser:
+When installed on Windows 10, PWAs run as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) apps and gain these technical advantages over running in the browser:
 
  - Standalone window
+
  - Independent process from browser (isolated cache, less overhead)
+
  - No storage quota (for IndexedDB, local storage, etc.)
+
  - Offline and background processes
+
  - Access to [Windows Runtime (WinRT)](https://docs.microsoft.com/en-us/uwp/api/) APIs via JavaScript (for device camera, calendar, speech interaction,...)
 
- [Here's how to get started]() converting your web app to a PWA, making sure it works great on Windows 10, and distributing it in the Microsoft Store.
+ [Here's how to get started](./progressive-web-apps/get-started.md) converting your web app to a PWA, making sure it works great on Windows 10, and distributing it in the Microsoft Store.
 
 ## Requirements
 
@@ -88,7 +92,7 @@ To be a *Progressive Web App*, your server-hosted web app will at minimum requir
 
 To be a *great* PWA, your app will also need:
 
-  - [X] [**Cross-browser compatibility**](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing). Ensure your PWA works in [different browsers and environments](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/). For Windows 10, be sure to test your web app both in the Microsoft Edge browser and also in its full PWA experience: as an installed, standalone Windows 10 app (powered by the *EdgeHTML* engine). 
+  - [X] [**Cross-browser compatibility**](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing). Ensure your PWA works by [testing](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/) in different browsers and environments. On Windows 10, be sure to test your app both in the Microsoft Edge browser and also in its full PWA experience: as an installed, standalone Windows 10 app (powered by the *EdgeHTML* engine). 
   
   - [X] [**Responsive design**](https://en.wikipedia.org/wiki/Responsive_web_design). Employ fluid layouts and flexible images with CSS [grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) and/or [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries), and [responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) to adapt your UX to your user's device. Use device [emulation tools](./devtools-guide/emulation.md) from your browser to test locally, or set up a [remote debugging session](./progressive-web-apps/get-started.md#remote-debugging-with-edge-devtools-protocol) to test directly on a target device. On Windows 10, PWAs can also be [tailored for form factors](https://docs.microsoft.com/en-us/windows/uwp/design/devices/index#windows-iot-devices) beyond desktop, phone and tablet, including: [Xbox and TV](https://docs.microsoft.com/en-us/windows/uwp/design/devices/designing-for-tv), [Surface Hub](https://developer.microsoft.com/en-us/windows/surfacehub), [Windows IoT](https://developer.microsoft.com/en-us/windows/iot) and [Windows Mixed Reality](https://developer.microsoft.com/en-us/windows/mixed-reality) devices.
   
@@ -101,7 +105,7 @@ To submit your *Progressive Web App* to the [Microsoft Store](https://developer.
  - [X] A [Microsoft developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account)
  - [X] Completed [steps for publishing a Windows app](https://docs.microsoft.com/en-us/windows/uwp/publish/)
 
-Coming soon, existing PWAs on the web meeting specific criteria will be auto-indexed by the Bing search engine into the Microsoft Store (where developers will have the option to directly manage them their Windows 10 audience).
+In the coming months, existing PWAs on the web meeting [specific criteria](./progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission) will be auto-indexed by the Bing search engine into the Microsoft Store (where developers can directly manage them for their Windows 10 audience).
 
 Check out [PWAs in the Microsoft Store](./progressive-web-apps/microsoft-store.md) for further details.
 
@@ -126,4 +130,4 @@ Here's the current status of *Microsoft Store* support for PWAs on Windows 10:
 Store submission method | Status | Details
 | - | - | -
 Manual (developer initiated) | Available | Check out [*PWAs in the Microsoft Store*](./progressive-web-apps/microsoft-store.md) to get started. 
-Automatic (auto-indexed with Bing) | Coming soon | We're piloting the PWA onboarding process with selected app partners. Check out [*PWA indexing with Bing*](./progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission) to learn more about Microsoft Store requirements for automatic PWA listings. 
+Automatic (auto-indexed with Bing) | Just starting | We're currently piloting the PWA onboarding process with a limited subset of app partners. In the coming months we'll be welcoming PWAs across the mainstream web to the Microsoft Store. Check out [*PWA indexing with Bing*](./progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission) to learn more about Microsoft Store requirements for automatic PWA listings. 
