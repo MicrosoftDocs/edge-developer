@@ -87,11 +87,9 @@ Microsoft Edge support for the emerging [Web Authentication API](../device/web-a
 
 - The latest Microsoft Edge implementation is turned off by default and ships behind a flag (type `about:flags` in your address bar to turn on the feature).
 
-- Microsoft Edge does not yet support external credentials like USB keys or Bluetooth devices. The current API is limited to embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device.
+- Microsoft Edge support external credentials stored in USB keys and doesn't support credentials in Bluetooth devices yet. The current API also supports embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device.
 
-- The currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
-
-- Of the [predefined extensions](http://www.w3.org/TR/webauthn/#extension-predef) described in the spec, Microsoft Edge only supports the [FIDO AppId](http://www.w3.org/TR/webauthn/#extension-appid) (`webauthn_txAuthSimple`) at this time.
+- If the developer specifies to use embeded credentials, the currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
 
 - The `timeoutSeconds` option is not currently evaluated
 
