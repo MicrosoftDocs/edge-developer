@@ -14,46 +14,46 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 With Progressive Web Apps (or simply *PWA*s) you dont have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device. That's because PWAs are just websites that are [*progressively enhanced*](https://alistapart.com/article/understandingprogressiveenhancement) to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps. 
 
 <table style="border:none;">
-  <tr style="height:150px">
+  <tr>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_search.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_search.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Discoverable">Discoverable</a></div>
       <div style="font-size:0.9em">From web search results and supporting app stores</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_package.svg"/>
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_package.svg"/>
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Installable">Installable</a></div>
       <div style="font-size:0.9em">Pin and launch from the home screen</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_push-notification.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_push-notification.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Re-engageable">Re-engageable</a></div>
       <div style="font-size:0.9em">Send push notifications, even when the app isn't active</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_offline.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_offline.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Network_independent">Network Independent</a></div>
       <div style="font-size:0.9em">Works offline and in low-network conditions </div>
     </td>
   </tr>
   <tr style="height:150px">
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_progressive.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_progressive.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Progressive">Progressive</a></div>
       <div style="font-size:0.9em">Experience scales up (or down) with device capabilities</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_security.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_security.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Safe">Safe</a></div>
       <div style="font-size:0.9em">Provides a secure HTTPS endpoint and other user safeguards</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_responsive.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_responsive.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Modern/Responsive">Responsive</a></div>
       <div style="font-size:0.9em">Adapts to the user's screen size / orientation and input method</div>
     </td>
     <td style="vertical-align:top;">
-      <img style="display:block" src="./progressive-web-apps/media/i_link.svg" />
+      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_link.svg" />
       <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Linkable">Linkable</a></div>
       <div style="font-size:0.9em">Share and launch from a standard hyperlink</div>
     </td>
