@@ -50,9 +50,11 @@ CSS `@font-face` rules now have their own dedicated **Fonts** pane that displays
 The **Styles** pane now groups pseudo-elements under their own headings and no longer displays their content as crossed out.
 
 **Before:**
+<br>
 ![Generated content was previously crossed out](./media/gc_before.png)
 
 **After:**
+<br>
 ![Generated content no longer displays with a strikethrough](./media/gc_after.png)
 
 ## Console improvements
