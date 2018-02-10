@@ -459,7 +459,7 @@ This method does not return a value.
 
 ### buildLocalStreamUri
 
-Creates a URI that you can pass to [navigateToLocalStreamUri](./webview#methods).
+Creates a URI that you can pass to [navigateToLocalStreamUri](#methods).
 
 ```js
 var string = webview.buildLocalStreamUri(contentIdentifier, relativePath);
@@ -501,7 +501,7 @@ This method has no parameters.
 #### Return value
 Type: **MSWebViewAsyncOperation**
 
-An **MSWebViewAsyncOperation** object that, when it completes, provides a **Blob** object that contains the image. When using **capturePreviewToBlobAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call the start method on the [MSWebViewAsyncOperation](./MSWebViewAsyncOperation.md) object to execute the operation.
+An **MSWebViewAsyncOperation** object that, when it completes, provides a **Blob** object that contains the image. When using **capturePreviewToBlobAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call the start method on the [MSWebViewAsyncOperation](./webview/MSWebViewAsyncOperation.md) object to execute the operation.
 
 ### captureSelectedContentToDataPackageAsync
 
