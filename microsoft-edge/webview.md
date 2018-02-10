@@ -58,7 +58,7 @@ webview.removeEventListener("departingFocus", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [FocusNavigationEvent](./FocusNavigationEvent.md) |
+|**Interface** | [FocusNavigationEvent](./webview/FocusNavigationEvent.md) |
 |**Synchronous** |Yes |    
 |**Bubbles**     |Yes |   
 |**Cancelable**  |No |            
@@ -100,7 +100,7 @@ webview.removeEventListener("MSWebViewContentLoading", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |    
@@ -122,7 +122,7 @@ webview.removeEventListener("MSWebViewDOMContentLoaded", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
@@ -143,7 +143,7 @@ webview.removeEventListener("MSWebViewFrameContentLoading", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
@@ -164,7 +164,7 @@ webview.removeEventListener("MSWebViewFrameDOMContentLoaded", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |    
@@ -186,7 +186,7 @@ webview.removeEventListener("MSWebViewFrameNavigationCompleted", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationCompletedEvent](./NavigationCompletedEvent.md) |
+|**Interface** | [NavigationCompletedEvent](./webview/NavigationCompletedEvent.md) |
 |**Synchronous** |Yes |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |       
@@ -208,7 +208,7 @@ webview.removeEventListener("MSWebViewFrameNavigationStarting", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |Yes |                 
@@ -229,7 +229,7 @@ webview.removeEventListener("MSWebViewLongRunningScriptDetected", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [LongRunningScriptDetectedEvent](./LongRunningScriptDetectedEvent.md) |
+|**Interface** | [LongRunningScriptDetectedEvent](./webview/LongRunningScriptDetectedEvent.md) |
 |**Synchronous** |Yes |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |            
@@ -250,7 +250,7 @@ webview.removeEventListener("MSWebViewNavigationCompleted", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationCompletedEvent](./NavigationCompletedEvent.md) |
+|**Interface** | [NavigationCompletedEvent](./webview/NavigationCompletedEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
@@ -272,7 +272,7 @@ webview.removeEventListener("MSWebViewNavigationStarting", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |No  |    
 |**Bubbles**     |Yes |   
 |**Cancelable**  |Yes |      
@@ -293,7 +293,7 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEventWithReferrer](./NavigationEventWithReferrer.md) |
+|**Interface** | [NavigationEventWithReferrer](./webview/NavigationEventWithReferrer.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
@@ -315,7 +315,7 @@ webview.removeEventListener("MSWebViewPermissionRequested", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [PermissionRequest](./PermissionRequest.md) |
+|**Interface** | [PermissionRequest](./webview/PermissionRequest.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |    
@@ -358,7 +358,7 @@ webview.removeEventListener("MSWebViewScriptNotify", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [ScriptNotifyEvent](./ScriptNotifyEvent.md) |
+|**Interface** | [ScriptNotifyEvent](./webview/ScriptNotifyEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |      
@@ -400,7 +400,7 @@ webview.removeEventListener("MSWebViewUnsupportedUriSchemeIdentified", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [NavigationEvent](./NavigationEvent.md) |
+|**Interface** | [NavigationEvent](./webview/NavigationEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |Yes |     
@@ -421,7 +421,7 @@ webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [UnviewableContentIdentifiedEvent](./UnviewableContentIdentifiedEvent.md) |
+|**Interface** | [UnviewableContentIdentifiedEvent](./webview/UnviewableContentIdentifiedEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
@@ -570,7 +570,7 @@ var sequence<PermissionRequest> = x-ms-webview.getDeferredPermissionRequests();
 This method has no parameters.
 
 #### Return value
-Type: [DeferredPermissionRequest](./DeferredPermissionRequest.md)
+Type: [DeferredPermissionRequest](./webview/DeferredPermissionRequest.md)
 
 The specified deferred permission request.
 
@@ -596,7 +596,7 @@ var deferredPermissionRequest = x-ms-webview.getDeferredPermissionRequestById(id
 * The ID of the deferred permission request you wish to get.
 
 #### Return value
-Type: [DeferredPermissionRequest](./DeferredPermissionRequest.md)
+Type: [DeferredPermissionRequest](./webview/DeferredPermissionRequest.md)
 
 The specified deferred permission request.
 
@@ -835,7 +835,7 @@ The height of the **webview**.
 
 ### settings
 
-Gets a [MSWebViewSettings](./MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.
+Gets a [MSWebViewSettings](./webview/MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.
 
 This property is read-only.
 
@@ -846,9 +846,9 @@ webview.settings = settings;
 ```
 
 #### Property value
-Type: [MSWebViewSettings](./MSWebViewSettings.md)
+Type: [MSWebViewSettings](./webview/MSWebViewSettings.md)
 
-A [MSWebViewSettings](./MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.
+A [MSWebViewSettings](./webview/MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.
 
 ### src
 
