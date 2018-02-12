@@ -4,9 +4,9 @@ Title: Understanding and Solving Internet Explorer Leak Patterns
 ms:assetid: 'VS\|IETechCol\|~\\dnwebgen\\ie\_leak\_patterns.htm'
 ms:contentKeyID: 6272631
 ms:mtpsurl: 'https://msdn.microsoft.com/en-us/library/Bb250448(v=VS.85)'
-description: This page provides an overview of what's new in EdgeHTML preview builds for developers.
-author: libbymc
-ms.author: libbymc
+description: This page provides an understanding and solving of Internet Explorer leak patterns
+author: 
+ms.author: 
 ms.date: 
 ms.topic: article
 ms.prod: microsoft-edge
@@ -16,10 +16,10 @@ keywords: edge, web development, html, css, javascript, developer, what's new in
 # Understanding and Solving Internet Explorer Leak Patterns
 
 
-
-As of December 2011, this topic has been archived. As a result, it is no longer actively maintained. For more information, see [Archived
-Content](http://go.microsoft.com/fwlink/?linkid=236039). For information, recommendations, and guidance regarding the current version
-of Internet Explorer, see [IE Developer Center](http://go.microsoft.com/fwlink/?linkid=204313).
+> [!WARNING] 
+> As of December 2011, this topic has been archived. As a result, it is no longer actively maintained. For more information, see [Archived
+> Content](http://go.microsoft.com/fwlink/?linkid=236039). For information, recommendations, and guidance regarding the current version
+> of Internet Explorer, see [IE Developer Center](http://go.microsoft.com/fwlink/?linkid=204313).
 
 Justin Rogers  
 Microsoft Corporation
@@ -146,7 +146,7 @@ With normal circular references there were two solid objects holding references 
 
 Closures are also created per call, so calling this function twice will create two individual closures, each holding references to the parameters passed in each time. Because of this transparent nature it is really easy to leak closures. The following example provides the most basic of leaks using closures:
 
-```js
+```html
 <html>
     <head>
         <script language="JScript">
