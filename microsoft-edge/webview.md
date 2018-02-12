@@ -11,7 +11,14 @@ keywords: webview, windows 10 apps, uwp, edge
 
 # Microsoft Edge WebView for Windows 10 apps
 
-The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ apps) or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
+The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ apps) or an HTML element for JavaScript-based Windows 10 apps, as described here.
+
+## Syntax
+
+```js
+// Creates a new MSHTMLWebView object
+var webview = document.createElement("x-ms-webview"); 
+```
 
 | | |
 |-|-|
@@ -19,11 +26,6 @@ The Microsoft Edge WebView control enables you to host web content in your Windo
 | [**Methods**](#methods) | [addWebAllowedObject](#addweballowedobject), [buildlocalStreamUri](#buildlocalstreamuri), [capturePreviewToBlobAsync](#capturepreviewtoblobasync), [captureSelectedContentToDataPackageAsync](#captureselectedcontenttodatapackageasync), [invokeScriptAsync](#invokescriptasync), [getDeferredPermissionRequests](#getdeferredpermissionrequests), [getDeferredPermissionRequestById](#getdeferredpermissionrequestbyid), [goBack](#goback), [goForward](#goforward), [navigate](#navigate), [navigateFocus](#navigatefocus), [navigateTolocalStreamUri](#navigatetolocalstreamuri), [navigateToString](#navigatetostring), [navigateWithHttpRequestMessage](#navigatewithhttprequestmessage), [refresh](#refresh), [stop](#stop) |
 | [**Properties**](#properties) | [canGoBack](#cangoback), [canGoForward](#cangoforward), [containsFullScreenElement](#containsfullscreenelement), [documentTitle](#documenttitle), [height](#height), [settings](#settings), [src](#src), [width](#width) |
 
-## Syntax
-
-```js
-var webview = document.createElement("x-ms-webview"); 
-```
 ## Remarks
 When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`. 
 
