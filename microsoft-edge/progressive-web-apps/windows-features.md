@@ -29,12 +29,12 @@ In order to call Windows Runtime APIs from your PWA, you'll need to [establish t
 
 If your app requires programmatic access to user resources like pictures or music, or to device features like the camera or microphone, you'll also need to add [app capability declarations](#app-capability-declarations) to your app package manifest in order for Windows to prompt the user for permission.
 
+> [!NOTE]
+> If you used [*PWA Builder*](https://github.com/pwa-builder/ManifoldJS) to generate your Windows 10 app, you'll find your app package manifest file at  `PWA\Store packages\windows10\manifest\appxmanifest.xml`
+
 ### Application Content URI Rules (ACURs)
 
 Through ACURs, otherwise known as a *URL allow list*, you are able to give the URLs of your PWA direct access to Windows Runtime APIs. At the Windows OS level, the right policy bounds will be set to allow code hosted on your web server to directly call platform APIs. You define these bounds in the app package manifest (`.appxmanifest`) file when you specify your PWA's URLs as `ApplicationContentUriRules`.
-
-> [!NOTE]
-> If you used [*PWA Builder*](https://github.com/pwa-builder/ManifoldJS) to generate your Windows 10 app, you'll find your app package manifest file at  `PWA\Store packages\windows10\manifest\appxmanifest.xml`
 
 Your rules should include your app’s start page and any other pages you want included as app pages. If your user navigates to a URL that is *not* included in your rules, Windows will open the target URL in the Microsoft Edge browser rather than your standalone PWA window (`WWAHost.exe` process). You can also exclude specific URLs. 
 
@@ -69,7 +69,7 @@ URLs defined within the app's ACURs can be granted permission to the Windows Run
 
 ### App capability declarations
 
-If your app needs programmatic access to user resources like pictures or music, or to devices like a camera or a microphone, you'll need to declare the appropriate capability. There are three app capability declaration categories: 
+If your app needs programmatic access to user resources like pictures or music, or to devices like a camera or a microphone, you'll need to declare the appropriate capability in your app package manifest (`.appxmanifest`) file. There are three app capability declaration categories: 
 
 - [General-use capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) that apply to most common app scenarios. 
 - [Device capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) that allow your app to access peripheral and internal devices. 
@@ -125,7 +125,7 @@ You can [browse the full collection]() and download the zip from GitHub.
 
 Native Windows Runtime (WinRT) APIs provide additional app functionality in all of the following areas.
 
-Windows Runtime (WinRT) Namespace | Description
+WinRT Namespace | Description
 :--- | :----
 [AI](https://docs.microsoft.com/en-us/uwp/api/windows.AI.MachineLearning.Preview) (Preview) | Contains classes that enable apps to load machine learning models, bind data as inputs, and evaluate the results.
 [ApplicationModel](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel) | Provides an app with access to core system functionality and run-time information about its app package, and handles suspend operations.
