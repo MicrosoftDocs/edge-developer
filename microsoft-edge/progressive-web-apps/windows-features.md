@@ -73,23 +73,21 @@ If your app needs programmatic access to user resources like pictures or music, 
 
 - [General-use capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) that apply to most common app scenarios. 
 - [Device capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) that allow your app to access peripheral and internal devices. 
-- [Special-use capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that support enterprise scenarios and require a Microsoft Store *company account*. 
+- [Special-use capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that support enterprise scenarios and require a Microsoft Store *company account*. For more info about company accounts, see [*Account types, locations, and fees*](https://docs.microsoft.com/en-us/windows/uwp/publish/account-types-locations-and-fees).
 
-For more info about company accounts, see [*Account types, locations, and fees*](https://docs.microsoft.com/en-us/windows/uwp/publish/account-types-locations-and-fees).
+You request access by declaring capabilities in your app’s [package manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest). For more information, see [*App capability declarations*](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) and [*Packaging for Universal Windows Platform (UWP) apps*](https://docs.microsoft.com/en-us/windows/uwp/packaging/index).
 
 > [!NOTE]
 > Your app's Microsoft Store page will list all the capabilities you declare in your app package manifest. Be sure to only specify the capabilities that your app actually uses.
-
-You request access by declaring capabilities in your app’s [package manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest). For more information, see these articles on [App capability declarations](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) and [Packaging for Universal Windows Platform (UWP) apps](https://docs.microsoft.com/en-us/windows/uwp/packaging/index).
 
 Some capabilities provide apps access to a sensitive resource. These resources are considered sensitive because they can access the user’s personal data or cost the user money. Privacy settings, managed by the Windows 10 [**Settings**](https://binged.it/2lOGSH0) app, let the user dynamically control access to sensitive resources. Thus, it’s important that your app doesn’t assume a sensitive resource is always available. For more info about accessing sensitive resources, see [*Guidelines for privacy-aware apps*](https://msdn.microsoft.com/library/windows/apps/hh768223.aspx).
 
 
 ## Find and use WinRT APIs in JavaScript
 
-The power of PWAs is that you can use [*progressive enhancement*](https://en.wikipedia.org/wiki/Progressive_enhancement) to scale up (or down) the user experience according to the capabilities of the device that your web app is running on. When your [PWA is installed as a Windows 10 app](./microsoft-store.md#1-generate-your-windows-10-app), it has the ability to call Windows Runtime APIs and provide native app features while still providing your non-Windows customers with a  default experience that works across browsers. 
+The power of PWAs is that you can use [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) to scale up (or down) the user experience according to the capabilities of the device that your web app is running on. When your [PWA is installed as a Windows 10 app](./microsoft-store.md#1-generate-your-windows-10-app), it has the ability to call Windows Runtime APIs and provide native app features while still providing your non-Windows customers with a  default experience that works across browsers. 
 
-The key to is to use [*feature detection*](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) to test for support of a given feature before using it. This allows you to write JavaScript on your page that will only be executed in the context where the APIs are available. In this case, it will only execute while inside a Windows PWA.
+The key to is to use [feature detection](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) to test for support of a given feature before using it. This allows you to write JavaScript on your page that will only be executed in the context where the APIs are available. In this case, it will only execute while inside a Windows PWA.
 
 Feature detection can be as simple as looking for the `Windows` object (the entrypoint to the [WinRT namespace](https://docs.microsoft.com/en-us/uwp/api/)) as below:
 
@@ -125,9 +123,28 @@ You can [browse the full collection]() and download the zip from GitHub.
 
 ### WinRT APIs available in JavaScript
 
-TODO: serialize interfaces off of Windows object as searchable/sortable JSON table. It will look like this (with 100% iframe, which will be fixed in Docs publishing system):
+Native Windows Runtime (WinRT) APIs provide additional app functionality in all of the following areas.
 
-<iframe height='559' scrolling='no' title='New APIs in EdgeHTML 16' src='//codepen.io/MicrosoftEdgeDocumentation/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/jLGZZY/'>New APIs in EdgeHTML 16</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+Windows Runtime (WinRT) Namespace | Description
+:--- | :----
+[AI](https://docs.microsoft.com/en-us/uwp/api/windows.AI.MachineLearning.Preview) (Preview) | Contains classes that enable apps to load machine learning models, bind data as inputs, and evaluate the results.
+[ApplicationModel](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel) | Provides an app with access to core system functionality and run-time information about its app package, and handles suspend operations.
+[Data](https://docs.microsoft.com/en-us/uwp/api/windows.data.html) | Provides utility classes for working with various data formats, including HTML, JSON, PDF, text and XML.
+[Devices](https://docs.microsoft.com/en-us/uwp/api/windows.devices) | This namespace provides access to the low level device providers, including ADC, GPIO, I2 C, PWM and SPI.
+[Foundation](https://docs.microsoft.com/en-us/uwp/api/windows.foundation) | Enables fundamental Windows Runtime functionality, including managing asynchronous operations and accessing property stores. This namespace also defines common value types that represent Uniform Resource Identifier (URI), dates and times, 2-D measurements, and other basic values.
+[Gaming](https://docs.microsoft.com/en-us/uwp/api/windows.gaming.input) |Provides access to game controller input, the Game bar, game monitoring, and game chat.
+[Globalization](https://docs.microsoft.com/en-us/uwp/api/windows.globalization) | Provides globalization support for language profiles, geographic regions, and international calendars.
+[Graphics](https://docs.microsoft.com/en-us/uwp/api/windows.graphics) | Provides basic data types that contain info on how to draw graphics. These data structs are commonly used to define how large surfaces are drawn when using the CompositionVirtualDrawingSurface class.
+[Management](https://docs.microsoft.com/en-us/uwp/api/windows.management) | Provides capabilities to force a sync from an Mobile Device Management (MDM) device to the server. This MDM sync protocol is based on the Open Mobile Alliance - Device Management standard.
+[Media](https://docs.microsoft.com/en-us/uwp/api/windows.media) |Provides classes for creating and working with media such as photos, audio recordings and videos.
+[Networking](https://docs.microsoft.com/en-us/uwp/api/windows.networking) |Provides access to hostnames and endpoints used by network apps.
+[Perception](https://docs.microsoft.com/en-us/uwp/api/windows.perception) |Contains classes for perceiving the user's surroundings, letting apps locate and reason about the device relative to the surfaces and holograms around the user.
+[Security](https://docs.microsoft.com/en-us/uwp/api/windows.security.authentication.identity) | Provides classes for user authentication, credentials management, cryptographic operations and enterprise data protection features.
+[Services](https://docs.microsoft.com/en-us/uwp/api/windows.services.cortana) |Provides access to Microsoft services for Cortana, Maps, Microsoft Store and Targeted (subscription) content.
+[Storage](https://docs.microsoft.com/en-us/uwp/api/windows.storage) |Provides classes for managing files, folders, and application settings.
+[System](https://docs.microsoft.com/en-us/uwp/api/windows.system) |Enables system functionality such as launching apps, obtaining information about a user, and memory profiling.
+[UI](https://docs.microsoft.com/en-us/uwp/api/windows.ui) | Provides an app with access to core system functionality and run-time information about its UI.
+[Web](https://docs.microsoft.com/en-us/uwp/api/windows.web) | Provides information on errors resulting from web service operations.
 
 ## Learn more about WinRT
 

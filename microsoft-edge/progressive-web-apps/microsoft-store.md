@@ -29,7 +29,7 @@ There are two options for getting your PWA into the Microsoft Store:
 
 1. You can [manually submit it](#submitting-your-PWA-manually), or
 
-2. If your PWA meets [certain criteria](#criteria-for-automatic-submission), it can be [automatically submitted](#automatic-pwa-importing-with-bing). (You also have the option to [opt-out](#opting-out-of-automatic-microsoft-store-import) of auto-submission.)
+2. If your PWA meets [certain criteria](#criteria-for-automatic-submission), it can be [automatically indexed](#automatic-pwa-importing-with-bing) by the Bing web crawler. (You also have the option to [opt-out](#opting-out-of-automatic-microsoft-store-import) of auto-submission.)
 
 Regardless of submission method, once your PWA is accepted to the Microsoft Store you'll gain immediate access to all the benefits outlined above.
 
@@ -65,8 +65,8 @@ This will generate a folder in the current directory named after your PWA (as sp
 
  b. Locate the script at `PWA\Store packages\windows10\test_install.ps`, right-click and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu. For more, see [*Test and debug your PWA on Windows*](.\get-started.md#test-and-debug-your-pwa-on-windows).
 
-    > [!NOTE]
-    > To uninstall your PWA, simply comment out (`#`) this line of the *test_install.ps1* script and re-run: `# Add-AppxPackage -Register $appxmanifest`
+> [!NOTE]
+> To uninstall your PWA, simply comment out (`#`) this line of the *test_install.ps1* script and re-run: `# Add-AppxPackage -Register $appxmanifest`
 
 ### 2. Reserve your app name for the Microsoft Store
 
@@ -117,22 +117,17 @@ To be automatically packaged and listed for the Microsoft Store, your PWA will n
 
   - Name
   - Description
-  - App icon icon that is at least 192 x 192 pixels
+  - App icon icon that is at least 512 x 512 pixels
 
 - [X] Unique core logic (not minimally modified code from an [app boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code) template)
 
-- [X] HTTPS
+- [X] To be served over a secure connection (HTTPS)
 
 - [X] Service worker script(s)
 
-- [X] To pass automated tests for quality and accessibility
-    - TODO: find more details about the test process/criteria
-
-- [X] To be offered free of charge
-
 - [X] To not violate any laws or [Microsoft Store policies](https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies).
 
-Additionally, PWAs with the highest amounts of web traffic will be prioritized in the PWA indexing process.
+We won’t ingest every app that meets these criteria, but will be including them in our considerations for candidates as we gradually expand our program.
 
 ### Claiming your PWA
 
