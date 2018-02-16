@@ -129,10 +129,6 @@ To be automatically packaged and listed for the Microsoft Store, your PWA will n
 
 We won’t ingest every app that meets these criteria, but will be including them in our considerations for candidates as we gradually expand our program.
 
-### Claiming your PWA
-
-TODO: Chase down details here
-
 ### Opting out of automatic Microsoft Store import
 
 Your PWA can opt out of automatic import to the Microsoft Store by serving a `robot.txt` file containing the following:
