@@ -64,17 +64,22 @@ For similar functionality in Chrome DevTools, see [Tools for PWA Developers](htt
 
 #### Local debugging with Edge DevTools
 
-To debug an installed PWA running on your local dev machine, you'll first need to install the standalone [Microsoft Edge DevTools Preview]() from the Microsoft Store. Then launch the **Microsoft Edge DevTools Preview** app and select your PWA from the list of running browser tabs and PWA instances:
+To debug an installed PWA running on your local dev machine, you'll first need to install the standalone [Microsoft Edge DevTools Preview]() from the Microsoft Store. Once installed, simply press `F12` from your PWA to launch the DevTools for debugging.
 
-![Microsoft Edge DevTools chooser](./media/.png)
+Alternately, you can launch the **Microsoft Edge DevTools Preview** app and then select your PWA from the list of running browser tabs and PWA instances:
 
-From the DevTools, you can use the [**Emulation**](../devtools-guide/emulation.md) panel to test out the responsiveness of your layout on different screen resolutions and display orientations.
+![Microsoft Edge DevTools chooser, Local targets](./media/.png)
 
 #### Remote debugging with Edge DevTools Protocol
 
-You can also debug a PWA running on a remote Windows device from your desktop dev machine. You'll need to install the standalone [Microsoft Edge DevTools Preview]() from the Microsoft Store on your dev machine, and the [Device Portal]() plugin on the debugging device running your PWA. With that, you'll be able to launch the **Microsoft Edge DevTools Preview** app and select your PWA from the list of remote debugging targets:
+You can also debug a PWA running on a remote Windows device from your desktop dev machine. You'll need to install the standalone [Microsoft Edge DevTools Preview]() from the Microsoft Store on both your dev machine and your test device, and additionally:
 
-![Microsoft Edge DevTools chooser for remote targets](./media/.png)
+ - The [Device Portal]() plugin on your remote test device
+ - The [SSL certificate for your test device]() on your dev machine
+ 
+ With that, you'll be able to launch the **Microsoft Edge DevTools Preview** app on your dev machine and select your PWA from the list of remote debugging targets:
+
+![Microsoft Edge DevTools chooser, Remote targets](./media/.png)
 
 For more details, see [Remote debugging with Microsoft Edge DevTools](../devtools-guide/remote-debugging.md).
 
