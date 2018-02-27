@@ -58,6 +58,8 @@ Browsers that support PWAs have built-in debugging support for **Service Workers
 
 ![Edge DevTools Service Workers and Cache inspection](../devtools-guide/media/debugger_sw_and_cache.png)
 
+You can also inspect and manage your [Web storage](../devtools-guide/debugger/web-storage.md) and [IndexedDB](../devtools-guide/debugger/indexeddb.md) caches.
+
 Check out [Progressive Web App debugging](../devtools-guide/debugger/progressive-web-apps.md) for more on using these tools in Microsoft Edge.
 
 For similar functionality in Chrome DevTools, see [Tools for PWA Developers](https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#simulate_mobile_devices). For Firefox Developer Tools, check out the [about:debugging](https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Workers) and [Storage Inspector](https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector) topics.
@@ -72,16 +74,9 @@ Alternately, you can launch the **Microsoft Edge DevTools Preview** app and then
 
 #### Remote debugging with Edge DevTools Protocol
 
-You can also debug a PWA running on a remote Windows device from your desktop dev machine. You'll need to install the standalone [Microsoft Edge DevTools Preview]() from the Microsoft Store on both your dev machine and your test device, and additionally:
+[EdgeHTML 17 introduces](../devtools-guide/whats-new.md) basic remote debugging support. While only core [**Debugger**](../devtools-guide/debugger.md) functionality is available now, full PWA debugging support (including *Service Workers* and cache managers) and additional Edge DevTools panels (such as *Console*, *Elements*, *Network*, etc.) will be added with upcoming releases. 
 
- - The [Device Portal]() plugin on your remote test device
- - The [SSL certificate for your test device]() on your dev machine
- 
- With that, you'll be able to launch the **Microsoft Edge DevTools Preview** app on your dev machine and select your PWA from the list of remote debugging targets:
-
-![Microsoft Edge DevTools chooser, Remote targets](./media/.png)
-
-For more details, see [Remote debugging with Microsoft Edge DevTools](../devtools-guide/remote-debugging.md).
+See [*Remote debugging*](../devtools-guide/remote-debugging.md) in the *Edge DevTools* guide to get started.
 
 For PWA debugging on Android mobile devices, check out the [*Debugging Firefox for Android over WiFi*](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_Firefox_for_Android_over_Wifi) and Chrome's [*Get Started with Remote Debugging Android Devices*](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) guide.
 
