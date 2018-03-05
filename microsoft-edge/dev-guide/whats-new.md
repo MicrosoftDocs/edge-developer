@@ -22,14 +22,14 @@ Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are l
 ## Preview Build 17074 
 Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17074.
 
-<iframe height='350' scrolling='no' title='EdgeHTML Preview Build 17074' src='//codepen.io/MicrosoftEdgeDocumentation/embed/xpNvYv/?height=350&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/xpNvYv/'>EdgeHTML Preview Build 17074</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='350' scrolling='no' title='EdgeHTML Preview Build 17074' src='//codepen.io/MSEdgeDev/embed/xpNvYv/?height=350&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/xpNvYv/'>EdgeHTML Preview Build 17074</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 
 ## Preview Build 17063 
 Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17063.
 
-<iframe style='width: 100%;' height='572' scrolling='no' title='EdgeHTML Preview Build 17063' src='//codepen.io/MicrosoftEdgeDocumentation/embed/Zadarz/?height=572&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/Zadarz/'>EdgeHTML Preview Build 17063</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+<iframe style='width: 100%;' height='572' scrolling='no' title='EdgeHTML Preview Build 17063' src='//codepen.io/MSEdgeDev/embed/Zadarz/?height=572&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/Zadarz/'>EdgeHTML Preview Build 17063</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
 ## Preview Build 17046 
 No API changes.
