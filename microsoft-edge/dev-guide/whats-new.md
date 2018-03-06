@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML preview bu
 title: What's New in EdgeHTML for developers
 author: libbymc
 ms.author: libbymc
-ms.date: 1/3/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
