@@ -10,32 +10,41 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Extensions for enterprise
+# Extensions for Enterprise
 Microsoft Edge extensions have a similar workflow when compared to other enterprise UWP apps. The information below details enterprise specific aspects of Microsoft Edge extensions.
 
+## Prerequisites
+The following items are suggested to develop, package, and deploy a Microsoft Edge extension for enterprise:
+
++ Windows Developer Portal account, to sign and release the extension to the enterprise private store. See [Opening a developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account) for more details.
++ Microsoft Store for Business or Education, to distribute the application to the enterprise. See the [Microsoft Store for Business and Education documentation](https://docs.microsoft.com/en-us/microsoft-store/) for more details.
++ Identify which versions of Windows 10 will be running the Microsoft Edge extension. See [Windows 10 release information](https://www.microsoft.com/en-us/itpro/windows-10/release-information) for a listing of existing Windows 10 releases.
+
+> [!NOTE]
+> Sideloading can be considered an alternative to using the Windows Developer Portal to sign the release the extension. See the behaviour of sideloading extensions below for more details.
 
 ## Windows Information Protection
 Microsoft Edge extensions currently don't honor Windows Information Protection (WIP) settings. If an enterprise is concerned about data protection, extensions support should not be enabled for Microsoft Edge.
 
 To disable extensions for employees, configure Group Policy and Microsoft Intune settings. For more info on which policies to configure, see [Available policies for Microsoft Edge](https://technet.microsoft.com/en-us/itpro/microsoft-edge/available-policies).
 
-
-## Packaging extensions
-
+## Packaging Extensions
 Before an enterprise can distribute an extension to its employees, it must first be packaged. Instructions on packaging extensions are available in the [Packaging](./guides/packaging.md) guide.
 
+> [!TIP]
+> Be sure to test installing and running your extension on all the versions of Windows 10 to ensure it will work as expected before distributing.
 
-## Distributing extensions
-
+## Distributing Extensions
 Once an extension has been packaged, it can be distributed to employees through the Microsoft Store, Microsoft Store for Business, or by sideloading.
 
 Extensions distributed though the Microsoft Store for Business can either be assigned to employees, or added to a private store where all employees can access them. This can be done by following the [Distribute "Line-of-Business" (LOB) apps to enterprises](https://msdn.microsoft.com/windows/uwp/publish/distribute-lob-apps-to-enterprises) guide.
 
 To sideload extensions, devices (unmanaged or managed) must be unlocked for sideloading. See [Sideload LOB apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10) for more info on how to sideload packaged extensions.
 
+> [!IMPORTANT]
+> If the enterprise is both developing and distributing the extension internally, the enterprise will require both the Microsoft Store for Business (or Education) and a Windows Developer Portal account.
 
-### Behavior of sideloaded extensions
-
+### Behavior of Sideloaded Extensions
 Unlike extensions distributed through the Microsoft Store (or the Microsoft Store for Business), sideloaded extensions are treated differently in Microsoft Edge.
 
 The first difference affects how sideloaded extensions behave after installation. Unlike extensions from the Microsoft Store, sideloaded extensions do not immediately display the "You have a new extension" notification and need to be manually turned on by the user.
