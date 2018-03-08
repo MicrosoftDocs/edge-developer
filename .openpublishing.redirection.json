@@ -109,6 +109,87 @@
         "source_path": "microsoft-edge/f12-devtools-guide/whats-new.md", 
         "redirect_url": "/microsoft-edge/devtools-guide/whats-new", 
         "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/browser/flash.md", 
+        "redirect_url": "/microsoft-edge/dev-guide/browser-features/flash", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/browser/reading-view.md", 
+        "redirect_url": "/microsoft-edge/dev-guide/browser-features/reading-view", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/browser/search-provider-discovery.md", 
+        "redirect_url": "/microsoft-edge/dev-guide/browser-features/search-provider-discovery", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/browser.md", 
+        "redirect_url": "/microsoft-edge/dev-guide/browser-features", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/css.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/css/exclusions.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/css/newly-supported-properties-and-pseudo-classes.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/css/regions.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/device.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/device/device-orientation-and-motion-events.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/device/payment-request-api.md", 
+        "redirect_url": "/microsoft-edge/dev-guide/windows-integration/payment-request-api", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/device/web-notifications-api.md", 
+        "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-notifications-api", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/html5/newly-supported-elements-and-attributes.md", 
+        "redirect_url": "/microsoft-edge/dev-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/tools.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/tools/console-logging-api.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide/console/console-api", 
+        "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/tools/webdriver.md", 
+        "redirect_url": "/microsoft-edge/webdriver", 
+        "redirect_document_id": true 
     }
+
   ] 
 }
