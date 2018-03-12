@@ -74,9 +74,9 @@ Alternately, you can launch the **Microsoft Edge DevTools Preview** app and then
 
 #### Remote debugging with Edge DevTools Protocol
 
-[EdgeHTML 17 introduces](../devtools-guide/whats-new.md) basic remote debugging support. While only core [**Debugger**](../devtools-guide/debugger.md) functionality is available now, full PWA debugging support (including *Service Workers* and cache managers) and additional Edge DevTools panels (such as *Console*, *Elements*, *Network*, etc.) will be added with upcoming releases. 
+[EdgeHTML 17 introduces](../devtools-guide/whats-new.md) basic remote debugging support. While only core [**Debugger**](../devtools-guide/debugger.md) functionality is currently available, full PWA debugging support (including *Service Workers* and cache managers) and additional Edge DevTools panels (such as *Console*, *Elements*, *Network*, etc.) will be added with upcoming releases. 
 
-See [*Remote debugging*](../devtools-guide/remote-debugging.md) in the *Edge DevTools* guide to get started.
+See [*Remote debugging*](../devtools-protocol/clients/edge-devtools.md#remote-debugging) in the Edge *DevTools Protocol* docs to get started.
 
 For PWA debugging on Android mobile devices, check out the [*Debugging Firefox for Android over WiFi*](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_Firefox_for_Android_over_Wifi) and Chrome's [*Get Started with Remote Debugging Android Devices*](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) guide.
 
