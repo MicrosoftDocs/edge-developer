@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # DevTools in the latest Windows 10 update (EdgeHTML 17)
 
-The latest release of Microsoft Edge DevTools ships with a number of major features, including support for [remote debugging](#remote-debugging) (via our new [*DevTools Protocol*](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-cache-management) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) from EdgeHTML 16 as part of ongoing investments in performance and reliability.
+The latest release of Microsoft Edge DevTools ships with a number of major features, including basic support for [remote debugging](#remote-debugging) (via our new [*DevTools Protocol*](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-cache-management) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) from EdgeHTML 16 as part of ongoing investments in performance and reliability.
 
 Here are the latest Microsoft Edge DevTools features coming with the next [Windows 10 update]() and available now on [Windows Insider Preview](https://insider.windows.com/) builds.
 
