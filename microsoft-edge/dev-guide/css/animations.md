@@ -233,7 +233,7 @@ The [`animationiteration`](https://msdn.microsoft.com/library/dn632680(v=vs.85).
 
 This example animates a `<div>` element, and fires the `animationstart`, `animationend`, and `animationiteration` events to change the text in the box. 
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="oxpmgy?editors=1100" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/oxpmgy?editors=1100">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="oxpmgy?editors=1100" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/oxpmgy?editors=1100">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
