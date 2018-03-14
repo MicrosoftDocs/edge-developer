@@ -30,7 +30,7 @@ A drag and drop(dnd) feature is an easy to use method for gathering local files 
 See this example for how to select text files and display their contents using [`FileReader`](https://msdn.microsoft.com/library/hh772310). 
 Using Windows Explorer (or similar), select one or more text files (directories are not allowed), and then drag them to the drop box below. The contents of the selected text files will be displayed in alerts:
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="KzzNaZ" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/KzzNaZ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="KzzNaZ" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/KzzNaZ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 

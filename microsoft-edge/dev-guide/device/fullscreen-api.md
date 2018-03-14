@@ -41,7 +41,7 @@ document.getElementById("myImage").requestFullscreen();
 ```
 
 
-<iframe height='433' scrolling='no' title='Fullscreen video demo' src='//codepen.io/MSEdgeDev/embed/qZdVYy/?height=433&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MSEdgeDev/pen/qZdVYy/'>Fullscreen video demo</a>by MSEdgeDev (<a href='http://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='433' scrolling='no' title='Fullscreen video demo' src='//codepen.io/MicrosoftEdgeDocumentation/embed/qZdVYy/?height=433&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/qZdVYy/'>Fullscreen video demo</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 
@@ -73,7 +73,7 @@ To prevent untrusted content from opening in full-screen mode, call `requestFull
 
 Users can easily leave full-screen mode at any time by pressing the 'ESC' key. To exit full-screen mode under program control, use the `exitFullscreen` method. Unlike `requestFullscreen` which applies to an element, `exitFullscreen` applies to the document element, so it doesn't matter which element is currently open in full-screen mode. Using this example you can open an element in full-screen mode when you click it, then return the element to its original size when you click again.
 
-<p data-height="300" data-theme-id="23761" data-slug-hash="vGEwQr" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-pen-title="Fullscreen API Test1" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MSEdgeDev/pen/vGEwQr/">Fullscreen API Test1</a>by MSEdgeDev (<a href="http://codepen.io/MSEdgeDev">@MSEdgeDev</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="23761" data-slug-hash="vGEwQr" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen API Test1" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/vGEwQr/">Fullscreen API Test1</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Other actions can force an element out of full-screen mode, like when a user:
@@ -95,7 +95,7 @@ You can find the top element that's currently displayed in full-screen mode usin
 
 This example shows two elements that when clicked, print the `FullscreenElement` to their `innerHTML`.
 
-<p data-height="300" data-theme-id="23761" data-slug-hash="dMoWZR" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-pen-title="Fullscreen API Test2" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MSEdgeDev/pen/dMoWZR/">Fullscreen API Test2</a>by MSEdgeDev (<a href="http://codepen.io/MSEdgeDev">@MSEdgeDev</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="23761" data-slug-hash="dMoWZR" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen API Test2" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/dMoWZR/">Fullscreen API Test2</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Click the blue box to open in full-screen mode, and the element ID (Element1) is printed in the div's [`innerHTML'](https://msdn.microsoft.com/library/ms533897). Click again to exit full-screen mode. Click the grey box, it doesn't go into full-screen mode, and the word 'undefined' is displayed in the box.
@@ -108,7 +108,7 @@ One exception is with Adobe Flash. When a Flash control is embedded via an ifram
 
 This example shows how setting `allowfullscreen` affects how an iframe displays full-screen content. The two iframes each show the exact same webpage. When you click the buttons marked Frame 1 or Frame 2, an iframe opens in full-screen mode. The content displayed in each iframe is the same HTML page for both frames. Because only the first iframe has the `allowfullscreen` attribute set, only the content in the first iframe can go into full-screen mode. The second iframe's content stays original size when clicked, and an `fullscreenError` event is fired.
 
-<p data-height="346" data-theme-id="23761" data-slug-hash="yONzew" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-pen-title="Fullscreen API Test3" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MSEdgeDev/pen/yONzew/">Fullscreen API Test3</a>by MSEdgeDev (<a href="http://codepen.io/MSEdgeDev">@MSEdgeDev</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="346" data-theme-id="23761" data-slug-hash="yONzew" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-pen-title="Fullscreen API Test3" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/yONzew/">Fullscreen API Test3</a> by Microsoft Edge Docs (<a href="http://codepen.io/MicrosoftEdgeDocumentation">@MicrosoftEdgeDocumentation</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Determining if full-screen mode is possible
@@ -205,7 +205,7 @@ You can use `:fullscreen` to change behavior so that the element expands to fill
 
 ## Demos
 
-[Fullscreen API Codepen demos](https://codepen.io/MSEdgeDev/pen/qZdVYy)
+[Fullscreen API Codepen demos](https://codepen.io/MicrosoftEdgeDocumentation/pen/qZdVYy)
 
 ## Specification
 

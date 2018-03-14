@@ -30,7 +30,7 @@ button {
 }
 ```
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/LNNNwN">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/LNNNwN">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 *Be aware that, when you interrupt a transition, it reverses automatically.*
 
@@ -103,7 +103,7 @@ See the following video and CodePen for examples of using the `transition` prope
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Getting-Started-with-CSS-Transitions/player]
 
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/pyWJEL">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/pyWJEL">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Transitions DOM Events
 
@@ -126,7 +126,7 @@ The [`transitionend`](https://msdn.microsoft.com/library/dn632682(v=vs.85).aspx)
 -   Context Info: [`propertyName`](https://msdn.microsoft.com/library/hh772142(v=vs.85).aspx), [`elapsedTime`](https://msdn.microsoft.com/library/hh772074(v=vs.85).aspx) ([`transitionEvent`](https://msdn.microsoft.com/library/hh772135(v=vs.85).aspx))
 
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/wGraWJ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/wGraWJ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 This example applies transitions to a `<div>` element, and fires the `transitionstart` and `transitionend` events to change the text in the box.
 

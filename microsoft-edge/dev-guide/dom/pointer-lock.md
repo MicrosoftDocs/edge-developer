@@ -75,7 +75,7 @@ The Pointer Lock API can only lock one iframe at a time. To avoid errors when us
 ## Pointer Lock CodePen Demo
 In this demo, click on the canvas and your mouse will directly control the ball inside the canvas, not your mouse pointer. Press escape to return to the standard mouse state.
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="zqYBbb" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/zqYBbb">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="zqYBbb" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/zqYBbb">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
@@ -95,7 +95,7 @@ In this demo, click on the canvas and your mouse will directly control the ball 
 
 ## Demo
 
-[Pointer Lock Demo on CodePen](https://codepen.io/MSEdgeDev/pen/zqYBbb)
+[Pointer Lock Demo on CodePen](https://codepen.io/MicrosoftEdgeDocumentation/pen/zqYBbb)
 
 ## Related Topics
 

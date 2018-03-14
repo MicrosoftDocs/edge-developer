@@ -93,9 +93,9 @@ audio.play();
 
 The [`audio`](https://msdn.microsoft.com/library/hh772923(v=vs.85).aspx) object in HTML5 provides methods, properties, and events that you can use to control playback from JavaScript. While an audio file is playing, the [`currentTime`](https://msdn.microsoft.com/library/ff974748(v=vs.85).aspx) property tracks where the playback is in the audio clip. By changing the value of `currentTime`, you can skip forward, backward, or restart the playback. 
 
-Using a progress bar created with the [`canvas`](https://msdn.microsoft.com/library/ff975062(v=vs.85).aspx) element, this [example](https://codepen.io/MSEdgeDev/pen/wGGGRp) uses three functions to increment the value of `currentTime` (fast forward), decrement the value of `currentTime` (rewind), and set the value of `currentTime` to zero (restart). 
+Using a progress bar created with the [`canvas`](https://msdn.microsoft.com/library/ff975062(v=vs.85).aspx) element, this [example](https://codepen.io/MicrosoftEdgeDocumentation/pen/wGGGRp) uses three functions to increment the value of `currentTime` (fast forward), decrement the value of `currentTime` (rewind), and set the value of `currentTime` to zero (restart). 
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="wGGGRp" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/wGGGRp">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="wGGGRp" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/wGGGRp">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Supported audio file formats 
 

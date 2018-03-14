@@ -46,7 +46,7 @@ In this code snippet, the following selector has added the column-width property
 
 In this example, paragraphs will be put into multiple columns. The number of columns depends on the `column-width`. Go ahead and play around with the CSS!
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="wGMEZo" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/wGMEZo">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="wGMEZo" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/wGMEZo">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Column count
 
@@ -70,7 +70,7 @@ The following code snippet shows a selector with an added `column-count` propert
 
 Check out this live example!
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/dMGqBx">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/dMGqBx">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Columns property
 
@@ -96,7 +96,7 @@ This code snippet has a `columns` property that is set to "auto 22em". This mean
 
 In this example, the number of columns is set to auto. Resize the window to change the number of 22em wide columns to get a feel for the `columns` property.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/JXGaqx">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/JXGaqx">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Specifying column gaps and rules
 
@@ -127,7 +127,7 @@ This code snippet shows most of these properties within a selector:
 
 In the CSS of this example, we've set a gap and rule. The gap is 2em wide, and the rule is 1em wide. This results in a a 1em wide line with a .5em wide gap on either side of it.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/Wwrgmp">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/Wwrgmp">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
@@ -177,7 +177,7 @@ In this example, all [`h2`](http://go.microsoft.com/fwlink/p/?LinkID=215639) ele
 
 Check out `break-before` and `break-inside` in this example!
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/pygOGW">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/pygOGW">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 In this example, we do a column break before h2s . If this break wasn't here, the h2 would appear in the first column.
 We also do a `break-inside: avoid-column`. As you can see, this keeps the blockquote all in one column. Try removing the CSS for "#multicol5 blockquote" to see the blockquote without a break.
@@ -214,7 +214,7 @@ The following code snippet shows an example of spanning:
 
 In this case, all `h2` elements span all columns, and have a blue background.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/oxbPKr">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/oxbPKr">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Balancing column content
 
@@ -240,7 +240,7 @@ Here is a code snippet showing `balance`:
 
 In this case, the `column-fill` property has been set to `balance`, which means that column lengths are as balanced as possible.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/bpExOB">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="LNNNwN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/bpExOB">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## API reference
 

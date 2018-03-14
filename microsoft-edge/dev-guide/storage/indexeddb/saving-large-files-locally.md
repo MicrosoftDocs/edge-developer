@@ -23,7 +23,7 @@ This page demonstrates how to save files of arbitrary size locally by using the 
 
 Indexed Database API is relatively complex. To help mitigate some of this complexity, the example below provides a skeletal framework from which to build from.
 
-<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="EKKejm" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/EKKejm">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="325" data-theme-id="23761" data-slug-hash="EKKejm" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/EKKejm">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Let's take a closer look at the code:
 
@@ -159,7 +159,7 @@ When the **Populate DB** button is clicked, the `<input type="file">` element is
 
 In the following final example, we flesh out the remaining "empty" functions from the previous example.
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="WwZQmV" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/YqqOLd">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="WwZQmV" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/YqqOLd">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Now lets take a closer look at the code once more:
 

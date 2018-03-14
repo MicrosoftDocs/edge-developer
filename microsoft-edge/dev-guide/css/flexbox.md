@@ -24,7 +24,7 @@ Flexbox layout makes it easier to:
 
 This example shows how Flexbox can be used to create a classic three-column page layout for wider screens that compresses into a single column layout for narrower displays.
 
-See the Flexbox example on [CodePen](https://codepen.io/MSEdgeDev/pen/BKKKxd). Resize your browser to see how the flexbox layout changes based on your browser window size. 
+See the Flexbox example on [CodePen](https://codepen.io/MicrosoftEdgeDocumentation/pen/BKKKxd). Resize your browser to see how the flexbox layout changes based on your browser window size. 
 
 ## Flexbox container and flex items
 
@@ -105,7 +105,7 @@ Microsoft Edge matches the latest [W3C CSS Flexible Box Layout Module](http://go
 [Flexible Box ("Flexbox") Layout](https://msdn.microsoft.com/library/hh772069(v=vs.85).aspx)
 
 ## Demos
-[CSS Flexbox sample on CodePen](https://codepen.io/MSEdgeDev/pen/BKKKxd)
+[CSS Flexbox sample on CodePen](https://codepen.io/MicrosoftEdgeDocumentation/pen/BKKKxd)
 
 
 ## Specification
