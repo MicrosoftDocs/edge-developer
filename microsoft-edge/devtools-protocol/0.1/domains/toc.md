@@ -1,4 +1,0 @@
-# [Schema](schema.md)
-# [Page](page.md)
-# [Runtime](runtime.md)
-# [Debugger](debugger.md)
