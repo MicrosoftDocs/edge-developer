@@ -2,29 +2,31 @@
 
 Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser and other hosts of the EdgeHTML, such as Progressive Web Apps (PWAs that run in the *WWAHost.exe* process) and the Universal Windows Platform webview control. It provides a set of methods and events that are organized into different [Domains]() of EdgeHTML engine instrumentation.
 
- You can call these methods and monitor these events through raw JSON messages passed across a web socket connection between a remote (debuggee) and host (debugger) process. Microsoft Edge DevTools uses this protocol to enable [remote debugging](./devtools-protocol/clients/edge-devtools.md#remote-debugging) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store]().
+ You can call these methods and monitor these events through raw JSON messages passed across a web socket connection between a remote (debuggee) and host (debugger) process. Microsoft Edge DevTools uses this protocol to enable [remote debugging](0.1/clients.md#microsoft-edge-devtools) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store]().
 
 The Microsoft Edge DevTools Protocol is designed to be interoperable with the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
 
 ## Using the protocol
 
-Here's how to attach a custom tooling client to a running instance of Microsoft Edge. See the [remote debugging](devtools-protocol/clients.md#microsoft-edge-devtools) instructions if you're using Microsoft Edge DevTools as your client.
+Here's how to attach a custom tooling client to a running instance of Microsoft Edge. See the [remote debugging](0.1/clients.md#microsoft-edge-devtools) instructions if you're using Microsoft Edge DevTools as your client.
 
 1. Launch Microsoft Edge with the remote debugging port open, specifying the URL you wish to open. For example:
 
     ```cmd line
     MicrosoftEdge.exe --devtools-server-port 9222 https://www.bing.com
     ```
+
     If Edge is already launched, the URL parameter is optional. A  button will appear next to the browser address bar to indicate  the **Developer tools server** has started:
 
-    ![Developer tools server](devtools-protocol/media/developer-tools-server.png) 
+    ![Developer tools server](media/developer-tools-server.png) 
 
 2. Use this [HTTP endpoint](devtools-protocol/v0.1/http.md#/json/list) to get a list of attachable page targets:
 
     ```
     http://localhost:9222/json/list
     ```
-3. Connect to the listed `webSocketDebuggerUrl` of the desired page to issue further [protocol commands](devtools-protocol/v0.1/domains.md) and receive event messages through the devtools socket server.
+
+3. Connect to the listed `webSocketDebuggerUrl` of the desired page to issue further [protocol commands](0.1/index.md) and receive event messages through the devtools socket server.
 
 ## Status and feedback
 
@@ -38,7 +40,7 @@ Thanks for trying the Edge DevTools Protocol! We'd love to hear your feedback at
 
  - [**EdgeHTML Issue Tracker**](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/): Protocol, DevTools, and EdgeHTML platform bugs and issues
 
- ## FAQ
+## FAQ
 
 #### Can multiple clients connect to the same Edge host process?
 
