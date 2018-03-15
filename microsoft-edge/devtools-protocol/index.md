@@ -12,7 +12,7 @@ Here's how to attach a custom tooling client to a running instance of Microsoft 
 
 1. Launch Microsoft Edge with the remote debugging port open, specifying the URL you wish to open. For example:
 
-    ```cmd line
+    ```
     MicrosoftEdge.exe --devtools-server-port 9222 https://www.bing.com
     ```
 
@@ -20,7 +20,7 @@ Here's how to attach a custom tooling client to a running instance of Microsoft 
 
     ![Developer tools server](media/developer-tools-server.png) 
 
-2. Use this [HTTP endpoint](0.1/http.md#/json/list) to get a list of attachable page targets:
+2. Use this [HTTP endpoint](0.1/http.md) to get a list of attachable page targets:
 
     ```
     http://localhost:9222/json/list
