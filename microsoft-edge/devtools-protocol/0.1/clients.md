@@ -1,3 +1,13 @@
+---
+description: Microsoft Edge DevTools Protocol Version 0.1 supports the following tooling clients.
+title: Microsoft Edge DevTools Protocol Version 0.1 Clients
+author: erikadoyle
+ms.author: edoyle
+ms.date: 3/21/2018
+ms.topic: reference
+ms.prod: microsoft-edge
+---
+
 # DevTools Protocol Clients
 
 The **Microsoft Edge DevTools Protocol Version 0.1** supports the following tooling clients. 

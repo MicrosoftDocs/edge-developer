@@ -1,3 +1,13 @@
+---
+description: Microsoft Edge DevTools Protocol Version 0.1 supports the following HTTP endpoints.
+title: Microsoft Edge DevTools Protocol Version 0.1 HTTP Endpoints
+author: erikadoyle
+ms.author: edoyle
+ms.date: 3/21/2018
+ms.topic: reference
+ms.prod: microsoft-edge
+---
+
 # HTTP Endpoints
 
 **Microsoft Edge DevTools Protocol Version 0.1** supports the following HTTP endpoints. See [using the protocol](../index.md#using-the-protocol) for more on connecting to a browser content process and the [Domains](index.md) documentation for the full web sockets-based devtools protocol API.

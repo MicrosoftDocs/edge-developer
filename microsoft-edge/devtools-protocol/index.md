@@ -1,6 +1,16 @@
+---
+description: Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge browser and other hosts of EdgeHTML.
+title: Microsoft Edge DevTools Protocol
+author: erikadoyle
+ms.author: edoyle
+ms.date: 3/21/2018
+ms.topic: reference
+ms.prod: microsoft-edge
+---
+
 # Microsoft Edge DevTools Protocol
 
-Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser and other hosts of the EdgeHTML, such as Progressive Web Apps (PWAs that run in the *WWAHost.exe* process) and the Universal Windows Platform webview control. It provides a set of methods and events that are organized into different [Domains]() of EdgeHTML engine instrumentation.
+Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser and other hosts of the EdgeHTML engine, such as Progressive Web Apps (PWAs that run in the *WWAHost.exe* process) and the Universal Windows Platform webview control. It provides a set of methods and events that are organized into different [Domains]() of EdgeHTML engine instrumentation.
 
  You can call these methods and monitor these events through raw JSON messages passed across a web socket connection between a remote (debuggee) and host (debugger) process. Microsoft Edge DevTools uses this protocol to enable [remote debugging](0.1/clients.md#microsoft-edge-devtools) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store]().
 
