@@ -33,7 +33,7 @@ For `setBaseAndExtent`, an *anchor* is the start of a selection and the *focus* 
 
 In this code sample, `removeAllRanges` is used to clear the selection range on a page:
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="WwZQmV" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/WwZQmV">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="WwZQmV" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/WwZQmV">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 > Currently, Microsoft Edge doesn't support multiple or disjointed selections. A selection always has one [range](https://msdn.microsoft.com/library/hh772133).
 
@@ -51,7 +51,7 @@ Method | Description
 The following code snippet shows [`collapseToEnd`](https://msdn.microsoft.com/library/ff975174) being used to put the caret at the end of a selection made by the user upon pressing a button:
 
 
-<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="WwZQmV" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/NNaGmQ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="300" data-theme-id="23761" data-slug-hash="WwZQmV" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/NNaGmQ">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Node manipulation
 

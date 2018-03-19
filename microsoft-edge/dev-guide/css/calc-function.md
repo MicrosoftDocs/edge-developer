@@ -64,7 +64,7 @@ To position an element halfway down the height of the viewport of a screen, use 
 
 ## Demo
 
-[CSS calc() CodePen Demo: Vertically centering an element on the page](https://codepen.io/MicrosoftEdgeDocumentation/pen/eZOjOV?editors=1100#0)
+[CSS calc() CodePen Demo: Vertically centering an element on the page](https://codepen.io/MSEdgeDev/pen/eZOjOV?editors=1100#0)
 
 ## Specification
 
