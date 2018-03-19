@@ -37,7 +37,7 @@ By default the pane is expanded and pinned to the left of the [Debug window](#de
 
 ![Debugger resource picker](./media/debugger_resource_picker.png)
 
-Find the code files you're looking for by browsing the folders or with a file name search string in the **File name filter**. Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *f12-devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
+Find the code files you're looking for by browsing the folders or with a file name search string in the **File name filter**. Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
 
 From the *Resource picker*, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
 

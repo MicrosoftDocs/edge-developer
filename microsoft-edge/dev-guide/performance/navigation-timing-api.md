@@ -16,7 +16,7 @@ The [Navigation Timing API](https://msdn.microsoft.com/library/hh772738.aspx) ma
 
 ## Measuring navigation timing
 
-You can measure navigation timing in many different ways. Let's look at a few, beginning by opening up the [F12 Console Tool](../../f12-devtools-guide/console.md) and exposing the [`PerformanceTiming`](https://msdn.microsoft.com/library/ff975075.aspx) object containing latency-related performance information. 
+You can measure navigation timing in many different ways. Let's look at a few, beginning by opening up the [F12 Console Tool](../../devtools-guide/console.md) and exposing the [`PerformanceTiming`](https://msdn.microsoft.com/library/ff975075.aspx) object containing latency-related performance information. 
 
 ```js
 //open the F12 tool and enter the following in the console to expose the PerformanceTiming object

@@ -20,7 +20,7 @@ HTTP/2, the first significant rework of the Hypertext Transfer Protocol since 19
 
 ## Can I use HTTP/2 now?
 
-HTTP/2 will be used by Microsoft Edge on SSL/TLS connections (https) when supported by the host server. Microsoft Edge will fall back to HTTP/1.1 when HTTP/2 is not available or the connection is not secure. Client-side developers will see HTTP/2 noted in the [F12 developer tools Network tool](../../f12-devtools-guide/network.md) where applicable. To see a list of over thirty independent implementations of the HTTP/2 protocol by clients, servers, intermediaries, and network tools, visit the [HTTP/2 Implementations Wiki](https://github.com/http2/http2-spec/wiki/Implementations) on GitHub.
+HTTP/2 will be used by Microsoft Edge on SSL/TLS connections (https) when supported by the host server. Microsoft Edge will fall back to HTTP/1.1 when HTTP/2 is not available or the connection is not secure. Client-side developers will see HTTP/2 noted in the [F12 developer tools Network tool](../../devtools-guide/network.md) where applicable. To see a list of over thirty independent implementations of the HTTP/2 protocol by clients, servers, intermediaries, and network tools, visit the [HTTP/2 Implementations Wiki](https://github.com/http2/http2-spec/wiki/Implementations) on GitHub.
 
 ![HTTP/2 in the F12 Network Tool](./../media/http2.png)
 

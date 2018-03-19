@@ -22,7 +22,7 @@ Similar to the [*Navigation Timing API*](./navigation-timing-api.md), the Resour
 
 ## Exposing the Resource Timing API
 
-The Resource Timing API is exposed through the [`performance`](https://msdn.microsoft.com/library/ff974680) property of the [`window`](https://msdn.microsoft.com/library/ms535873) object. The information collected for each resource can be retrieved using the [`getEntriesByType()`](https://msdn.microsoft.com/library/jj585590) method. Try entering the code below in the [F12 Developer Tools Console](../../f12-devtools-guide/console.md) to expose the performance of all of the resources on a page open in your browser.
+The Resource Timing API is exposed through the [`performance`](https://msdn.microsoft.com/library/ff974680) property of the [`window`](https://msdn.microsoft.com/library/ms535873) object. The information collected for each resource can be retrieved using the [`getEntriesByType()`](https://msdn.microsoft.com/library/jj585590) method. Try entering the code below in the [F12 Developer Tools Console](../../devtools-guide/console.md) to expose the performance of all of the resources on a page open in your browser.
 
 ```JS
 window.performance.getEntriesByType("resource")
