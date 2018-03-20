@@ -8,4 +8,4 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ---
 
-# Release Notes
+# DevTools Protocol Release Notes
