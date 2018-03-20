@@ -50,6 +50,8 @@ Thanks for trying the Edge DevTools Protocol! We'd love to hear your feedback at
 
  - [**EdgeHTML Issue Tracker**](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/): Protocol, DevTools, and EdgeHTML platform bugs and issues
 
+ - [**Microsoft Edge DevTools Feedback Hub**](feedback-hub:?referrer=microsoftEdge&tabID=2&newFeedback=true&ContextId=344): Protocol and DevTools problems and suggestions through the Feedback Hub app
+
 ## FAQ
 
 #### Can multiple clients connect to the same Edge host process?
