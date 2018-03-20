@@ -12,7 +12,7 @@ ms.prod: microsoft-edge
 
 **DevTools Protocol 0.1** supports the following tooling clients.
 
-[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools) [![Visual Studio 15.7 Preview 1](../media/visual-studio-2017.png)](#visual-studio) [![Visual Studio Code](../media/visual-studio-code.png)](#visual-studio-code)
+[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Visual Studio 15.7 Preview 1](../media/visual-studio-2017.png)](#visual-studio) [![Visual Studio Code](../media/visual-studio-code.png)](#visual-studio-code)
 
 ## Microsoft Edge DevTools Preview
 

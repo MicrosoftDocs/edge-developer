@@ -36,7 +36,7 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
     http://localhost:9222/json/list
     ```
 
-3. Connect to the listed `webSocketDebuggerUrl` of the desired page to issue further [protocol commands](0.1/index.md) and receive event messages through the devtools socket server.
+3. Connect to the listed `webSocketDebuggerUrl` of the desired page to issue further [protocol commands](0.1/domains/index.md) and receive event messages through the devtools socket server.
 
 ## Status and feedback
 
