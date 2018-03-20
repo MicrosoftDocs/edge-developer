@@ -54,16 +54,17 @@ Thanks for trying the Edge DevTools Protocol! We'd love to hear your feedback at
 
 ## FAQ
 
-#### Can multiple clients connect to the same Edge host process?
+#### Can multiple clients connect to the same DevTools Server?
 Yes, but not simultanously. The last client to connect will kick off the previous one.
 
-#### Do I have to use 9222 as the devtools server port?
+#### Do I have to use 9222 as the DevTools Server port?
 No. You can specify any port, though be sure to pick one that isn't already in use. Port 9222 for remote debugging is used by convention.
 
-#### How do I connect my custom tooling client to a remote instance of Microsoft Edge running the DevTools Server?
-See [*Using the protocol*](#using-the-protocol) instructions above.
+#### How do I connect my custom tooling client to Microsoft Edge running the DevTools Server?
+See [*Using the protocol*](#using-the-protocol) instructions above for attaching to Edge running on the local machine. If you're looking to support remote debugging, you'll need to devise a user workflow for installing the host machine's SSL certificate on the client, for example with an install dialog as [Edge DevTools](./0.1/clients.md#microsoft-edge-devtools) uses.
 
-#### When remote debugging using Edge DevTools, do I need to start the host Microsoft Edge process with the *--devtools-server-port* cmd line switch? 
-No. If you're setting up [remote debugging using Edge DevTools](./0.1/clients.md#microsoft-edge-devtools), the `--devtools-server-port` command line switch is not necessary for starting the browser. In this case, Windows *Device Portal* is hosting the DevTools socket server on behalf of the browser.
+#### If I'm remote debugging using Edge DevTools, do I need to start the host browser process with *--devtools-server-port* cmd line switch? 
+No. If you're setting up [remote debugging using Edge DevTools](./0.1/clients.md#microsoft-edge-devtools), the `--devtools-server-port` command line switch is not necessary for starting Edge. In this case, Windows *Device Portal* is hosting the DevTools socket server on behalf of the browser.
 
-#### How do I open the remote debugging port for a WWAHost.exe or webview control process? 
+#### Can I use the DevTools Server to remotely debug a WWAHost.exe or webview control process?
+Not yet...stay tuned!
