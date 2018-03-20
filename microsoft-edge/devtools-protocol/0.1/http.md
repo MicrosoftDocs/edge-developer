@@ -40,7 +40,7 @@ Provides the entire protocol API surface serialized as JSON.
 
 **Return object**
 
-*Contents of [`protocol.json`](), the available API surface for current version of the protocol.* 
+JSON object which represents the available API surface for current version of the protocol.
 
 ## /json/list
 
@@ -48,7 +48,7 @@ Provides a candidate list of page targets for debugging.
 
 **Parameters**
 
-None 
+*None*
 
 **Return object**
 
