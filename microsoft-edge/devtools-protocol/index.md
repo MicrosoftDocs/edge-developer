@@ -10,7 +10,7 @@ ms.prod: microsoft-edge
 
 # Microsoft Edge DevTools Protocol
 
-Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser and other hosts of the EdgeHTML engine, such as Progressive Web Apps (PWAs that run in the *WWAHost.exe* process) and the Universal Windows Platform webview control. It provides a set of methods and events that are organized into different [Domains]() of EdgeHTML engine instrumentation.
+Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser and other hosts of the EdgeHTML engine, such as Progressive Web Apps (PWAs that run in the *WWAHost.exe* process) and the Universal Windows Platform webview control. It provides a set of methods and events that are organized into different [Domains](0.1/domains/index.md) of EdgeHTML engine instrumentation.
 
  You can call these methods and monitor these events through raw JSON messages passed across a web socket connection between a remote (debuggee) and host (debugger) process. Microsoft Edge DevTools uses this protocol to enable [remote debugging](0.1/clients.md#microsoft-edge-devtools) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store]().
 
@@ -40,7 +40,7 @@ Here's how to attach a custom tooling client to a running instance of Microsoft 
 
 ## Status and feedback
 
-The preliminary release ([Version 0.1]()) of the Microsoft Edge DevTools Protocol provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB).
+The preliminary release ([Version 0.1](0.1/index.md)) of the Microsoft Edge DevTools Protocol provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB).
 
 Further platform instrumentation will be available in future releases of the protocol.
 
