@@ -1,6 +1,6 @@
 ---
 description: Reference for the Schema Domain. Provides information about the protocol schema.
-title: Schema Domain - Microsoft Edge DevTools Protocol 0.1
+title: Schema Domain - Microsoft Edge DevTools Protocol Version 0.1
 author: pelavall
 ms.author: pelavall
 ms.date: 12/15/2017
