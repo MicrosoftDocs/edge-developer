@@ -66,5 +66,5 @@ See [*Using the protocol*](#using-the-protocol) instructions above for attaching
 #### If I'm remote debugging using Edge DevTools, do I need to start the host browser process with *--devtools-server-port* cmd line switch? 
 No. If you're setting up [remote debugging using Microsoft Edge DevTools Preview](./0.1/clients.md#microsoft-edge-devtools-preview), the `--devtools-server-port` command line switch is not necessary for starting Edge. In this case, Windows *Device Portal* is hosting the DevTools socket server on behalf of the browser.
 
-#### Can I use the DevTools Server to remotely debug a WWAHost.exe or webview control process?
-Not yet...stay tuned!
+#### Can I use the DevTools Server to remotely debug a WWAHost.exe or webview process?
+Not yet, but stay tuned...
