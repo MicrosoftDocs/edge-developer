@@ -156,7 +156,7 @@ else if (document.msRequestFullscreen) {
 The `fullscreenChange` event is fired after an element enters or exits full-screen mode, so you can get the current state. In the code sample, we check the `fullscreenElement` to see if any elements are in full screen. If an element is in full-screen mode, the element is returned, otherwise `fullscreenElement` returns null.
 
 > [!NOTE]
->  Press F12 to open the Microsoft Edge developer tools to access the [Console Tool](../../f12-devtools-guide/console.md) and see the messages. When the example goes into full screen mode, you'll see "Went full screen", and when it exits, you'll see "Exited full screen."
+>  Press F12 to open the Microsoft Edge developer tools to access the [Console Tool](../../devtools-guide/console.md) and see the messages. When the example goes into full screen mode, you'll see "Went full screen", and when it exits, you'll see "Exited full screen."
 
 
 ## Catch full-screen mode errors
