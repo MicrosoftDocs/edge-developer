@@ -45,7 +45,7 @@
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
-## [Microsoft Edge DevTools](devtools-guide.md)
+## [DevTools](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 ### [Elements](devtools-guide/elements.md)
 #### [Styles](devtools-guide/elements/styles.md)
