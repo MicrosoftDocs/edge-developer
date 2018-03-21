@@ -10,10 +10,10 @@ ms.prod: microsoft-edge
 
 # DevTools Protocol Clients
 
-**DevTools Protocol 0.1** supports the following tooling clients.
-
 > [!NOTE]
 > The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds. 
+
+**DevTools Protocol 0.1** supports the following tooling clients.
 
 [![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Microsoft Visual Studio 15.7 Preview 2](../media/visual-studio-2017.png)](#microsoft-visual-studio-preview)
 
