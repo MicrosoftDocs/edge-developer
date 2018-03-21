@@ -14,9 +14,12 @@ Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and 
 
  Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools server* hosted on the EdgeHTML process to be debugged. Microsoft Edge DevTools uses this protocol to enable [remote debugging](0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj).
 
-The Microsoft Edge DevTools Protocol is designed to be interoperable with the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). 
+The Microsoft Edge DevTools Protocol is designed to be interoperable with the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/).
 
 ## Using the protocol
+
+> [!NOTE]
+> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds. 
 
 Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge. See the [remote debugging](0.1/clients.md#microsoft-edge-devtools-preview) instructions if you're using Microsoft Edge DevTools as your client.
 
