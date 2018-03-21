@@ -23,7 +23,7 @@ You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.mic
 
 This preliminary Version 0.1 release of the DevTools Protocol provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB). Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
 
-Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol is in preview and requires both the host and client machines to be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
+Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol is in preview and requires the host machine be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build. The Edge DevTools Preview app will run on Fall Creators Update (version 1709) and Windows Insider Preview builds.
 
 **On the host (debugee) machine...**
 
@@ -33,7 +33,7 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
     b. Enable [**Device Portal**](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal) (*Turn on remote diagnostics over local area network connections*).
 
-    c. Optionally, turn on **Authentication** and supply a username / password.
+    c. Turn on **Authentication** and supply a username / password.
 
     d. Note the machine IP address and connection port (50443) displayed.
 
@@ -43,13 +43,15 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
 1.  Install and launch the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app from the Microsoft Store.
 
-2. Open the **Remote** panel and enter the network location (URL and port) of the host machine and click **Connect**. Supply username/password if authentication is enabled.
+2. Open the **Remote** panel and enter the network location (URL and port) of the host machine and click **Connect**.
 
 3. **Install** the host machine's certificate from the *Untrusted Certificate* dialog that appears.
 
-4. The *Remote* panel will load a list of debuggable page targets on the host machine. Select one to start debugging.
+4. Supply the username/password you designated for Device Portal authentication.
 
-5. Use the **Refresh** button to update and reload the list of remote page targets on the host machine. Click the **Disconnect** button to return to the *Connect to a remote device* screen and attach to a different host.
+5. The *Remote* panel will load a list of debuggable page targets on the host machine. Select one to start debugging.
+
+6. Use the **Refresh** button to update and reload the list of remote page targets on the host machine. Click the **Disconnect** button to return to the *Connect to a remote device* screen and attach to a different host.
 
 ## Microsoft Visual Studio Preview
 

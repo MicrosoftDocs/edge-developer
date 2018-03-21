@@ -10,7 +10,10 @@ ms.prod: microsoft-edge
 
 # DevTools Protocol Version 0.1 Release Notes
 
-Version 0.1 of the Microsoft Edge **DevTools Protocol** provides an early preview for testing EdgeHTML instrumentation and basic remote debugging in the new standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app. As such, it requires you to be running a recent [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
+> [!NOTE]
+> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
+
+Version 0.1 of the Microsoft **Edge DevTools Protocol** provides an early preview for testing EdgeHTML instrumentation and basic remote debugging in the new standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app. As such, it requires you to be running a recent [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
 
 The goals behind the DevTools Protocol are three-fold:
 

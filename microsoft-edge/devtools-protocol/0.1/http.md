@@ -10,10 +10,10 @@ ms.prod: microsoft-edge
 
 # DevTools Protocol HTTP Endpoints
 
-**DevTools Protocol 0.1** supports the following HTTP endpoints. See [using the protocol](../index.md#using-the-protocol) for more on connecting to a browser content process and the [Domains](domains/index.md) documentation for the full web sockets-based devtools protocol API.
-
 > [!NOTE]
-> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds. 
+> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
+
+**DevTools Protocol 0.1** supports the following HTTP endpoints. See [using the protocol](../index.md#using-the-protocol) for more on connecting to a browser content process and the [Domains](domains/index.md) documentation for the full web sockets-based devtools protocol API.
 
 ## /json/version
 Provides information on the host machine's browser and which version of the DevTools Protocol it supports.
@@ -25,10 +25,10 @@ Provides information on the host machine's browser and which version of the DevT
 **Return object**
 
 ```json
-{ 
-   "Browser": string, 
-   "Protocol-Version": string, 
-   "User-Agent": string
+{
+    "Browser":"Edge/17.17627",
+    "Protocol-Version":"0.1",
+    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17627"
 }
 ```
 
@@ -55,12 +55,12 @@ Provides a candidate list of page targets for debugging.
 **Return object**
 
 ```json
-[{ 
-    "id": string, 
-    "title": string 
-    "type": "Page", 
-    "url": string, 
-    "webSocketDebuggerUrl": string 
+[{
+    "id":"000001F5-87EE-4D55-0091-C4C08A1F30C8",
+    "title":"Microsoft Edge Developer website - Microsoft Edge Development",
+    "type":"Page",
+    "url":"https://developer.microsoft.com/en-us/microsoft-edge/",
+    "webSocketDebuggerUrl":"ws://localhost:9222/target/000001F5-87EE-4D55-0091-C4C08A1F30C8"
 }, … ]
 ```
 
