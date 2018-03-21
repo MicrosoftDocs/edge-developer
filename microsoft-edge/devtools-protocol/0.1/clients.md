@@ -10,9 +10,9 @@ ms.prod: microsoft-edge
 
 # DevTools Protocol Clients
 
-**DevTools Protocol 0.1** supports the following tooling clients.
+**DevTools Protocol 0.1** supports the following tooling clients when running on a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build. 
 
-[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Visual Studio 15.7 Preview 2](../media/visual-studio-2017.png)](#visual-studio-preview)
+[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Microsoft Visual Studio 15.7 Preview 2](../media/visual-studio-2017.png)](#microsoft-visual-studio-preview)
 
 ## Microsoft Edge DevTools Preview
 
@@ -20,7 +20,7 @@ You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.mic
 
 This preliminary Version 0.1 release of the DevTools Protocol provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB). Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
 
-Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app.
+Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol is in preview and requires both the host and client machines to be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
 
 **On the host (debugee) machine...**
 
@@ -48,15 +48,15 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
 5. Use the **Refresh** button to update and reload the list of remote page targets on the host machine. Click the **Disconnect** button to return to the *Connect to a remote device* screen and attach to a different host.
 
-## Visual Studio Preview
+## Microsoft Visual Studio Preview
 
-Using the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (VS 15.7 Preview 2 or later), you can launch and debug Edge from your IDE on any ASP.NET project.
+Using the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (VS 15.7 Preview 1 or later), you can launch and debug Edge from the IDE on any ASP.NET or .NET Core project. The DevTools Protocol is currently in preview and requires you to be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
 
 Here's how to set up Edge debugging with Visual Studio:
 
-1.  Install and launch the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (VS 15.7 Preview 2 or later).
+1.  Install and launch the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (VS 15.7 Preview 1 or later).
 
-2. Open an existing ASP.NET project or **Create new project...** using any of the **Visual C#** templates for **ASP.NET**.
+2. Open an existing ASP.NET or .NET Core project or **Create new project...** using one of the **Visual C#** templates.
 
 3. In the project **Solution Explorer**, open the JavaScript files you wish to debug and set breakpoints within the IDE just as you would with server-side code.
 
