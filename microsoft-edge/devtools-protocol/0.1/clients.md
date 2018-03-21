@@ -10,7 +10,10 @@ ms.prod: microsoft-edge
 
 # DevTools Protocol Clients
 
-**DevTools Protocol 0.1** supports the following tooling clients when running on a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build. 
+**DevTools Protocol 0.1** supports the following tooling clients.
+
+> [!NOTE]
+> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds. 
 
 [![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Microsoft Visual Studio 15.7 Preview 2](../media/visual-studio-2017.png)](#microsoft-visual-studio-preview)
 
@@ -56,7 +59,7 @@ Here's how to set up Edge debugging with Visual Studio:
 
 1.  Install and launch the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (VS 15.7 Preview 1 or later).
 
-2. Open an existing ASP.NET or .NET Core project or **Create new project...** using one of the **Visual C#** templates.
+2. Open an existing ASP.NET or .NET Core project or **Create new project...** using one of the **Visual C#** .NET templates.
 
 3. In the project **Solution Explorer**, open the JavaScript files you wish to debug and set breakpoints within the IDE just as you would with server-side code.
 
