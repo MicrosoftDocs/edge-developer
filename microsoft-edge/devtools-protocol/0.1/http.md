@@ -12,6 +12,8 @@ ms.prod: microsoft-edge
 
 **DevTools Protocol 0.1** supports the following HTTP endpoints. See [using the protocol](../index.md#using-the-protocol) for more on connecting to a browser content process and the [Domains](domains/index.md) documentation for the full web sockets-based devtools protocol API.
 
+> [!NOTE]
+> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds. 
 
 ## /json/version
 Provides information on the host machine's browser and which version of the DevTools Protocol it supports.
