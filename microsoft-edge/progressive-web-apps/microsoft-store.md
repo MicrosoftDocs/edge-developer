@@ -131,7 +131,7 @@ We won’t ingest every app that meets these criteria, but will be including the
 
 ### Opting out of automatic Microsoft Store import
 
-Your PWA can opt out of automatic import to the Microsoft Store by serving a `robot.txt` file containing the following:
+Your PWA can opt out of automatic import to the Microsoft Store by serving a `robots.txt` file containing the following:
 
 ```
 User-agent: bingbot
