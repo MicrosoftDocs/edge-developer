@@ -123,7 +123,7 @@ Here's how to test for [`Blob`](https://msdn.microsoft.com/library/hh772298) sup
 After a file has been saved to the client, the next step is to retrieve data from the saved file. The following example allows you to create a simple [`canvas`](https://msdn.microsoft.com/library/ff975062)-based drawing, save it to a local file, and load such a saved drawing.
 
 
-<div class="codepen-wrap"><p data-height="475" data-theme-id="23761" data-slug-hash="NNNLoN" data-default-tab="result" data-user="MicrosoftEdgeDocumentation" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MicrosoftEdgeDocumentation">Microsoft Edge Docs</a> on <a href="https://codepen.io/MicrosoftEdgeDocumentation/pen/NNNLoN">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-wrap"><p data-height="475" data-theme-id="23761" data-slug-hash="NNNLoN" data-default-tab="result" data-user="MSEdgeDev" data-embed-version="2" data-editable="true" class="codepen">See this example by <a href="https://codepen.io/MSEdgeDev">Microsoft Edge Docs</a> on <a href="https://codepen.io/MSEdgeDev/pen/NNNLoN">CodePen</a>.</p></div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Here we use `canvas.msToBlob()` instead of `canvas.toDataURL()`. If we were to use `canvas.toDataURL()`, we'd preclude the possibility of easily using another application to view a saved drawing. Saving the drawing as a [PNG file](http://go.microsoft.com/fwlink/p/?LinkId=248923) has the benefit of allowing a number of standard applications, including the browser, to display the drawing. By using `canvas.msToBlob()`, we can save the file directly to PNG format as highlighted in this excerpt:
 

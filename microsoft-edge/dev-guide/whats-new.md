@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML preview bu
 title: What's New in EdgeHTML for developers
 author: libbymc
 ms.author: libbymc
-ms.date: 1/3/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
@@ -18,18 +18,37 @@ Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are l
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+## Preview Build 17604
+No API changes. 
+
+## Preview Build 17112
+No API changes.
+
+## Preview Build 17107
+Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17107.
+
+<iframe height='231' scrolling='no' title='EdgeHTML Preview Build 17107' src='//codepen.io/MSEdgeDev/embed/jZgBXo/?height=231&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/jZgBXo/'>EdgeHTML Preview Build 17107</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+
+## Preview Build 17101
+No API changes.
+
+## Preview Build 17093
+No API changes.
+
+## Preview Build 17083
+No API changes.
 
 ## Preview Build 17074 
 Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17074.
 
-<iframe height='350' scrolling='no' title='EdgeHTML Preview Build 17074' src='//codepen.io/MicrosoftEdgeDocumentation/embed/xpNvYv/?height=350&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/xpNvYv/'>EdgeHTML Preview Build 17074</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='350' scrolling='no' title='EdgeHTML Preview Build 17074' src='//codepen.io/MSEdgeDev/embed/xpNvYv/?height=350&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/xpNvYv/'>EdgeHTML Preview Build 17074</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 
 ## Preview Build 17063 
 Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17063.
 
-<iframe style='width: 100%;' height='572' scrolling='no' title='EdgeHTML Preview Build 17063' src='//codepen.io/MicrosoftEdgeDocumentation/embed/Zadarz/?height=572&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/Zadarz/'>EdgeHTML Preview Build 17063</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+<iframe height='572' scrolling='no' title='EdgeHTML Preview Build 17063' src='//codepen.io/MSEdgeDev/embed/Zadarz/?height=572&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/Zadarz/'>EdgeHTML Preview Build 17063</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
 ## Preview Build 17046 
 No API changes.

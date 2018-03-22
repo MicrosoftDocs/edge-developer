@@ -29,6 +29,9 @@
             "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
             "titleSuffix": "Microsoft Edge Development",
             "uhfHeaderId": "MSDocsHeader-MSEdge",
+            "feedback_system": "GitHub",
+            "feedback_github_repo": "MicrosoftDocs/edge-developer",
+            "feedback_product_url": "https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer",
             "extendBreadcrumb":true
         },
         "fileMetadata": {},

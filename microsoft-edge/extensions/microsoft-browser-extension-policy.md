@@ -1,4 +1,5 @@
 ---
+redirect_url: https://docs.microsoft.com/en-us/legal/windows/agreements/microsoft-browser-extension-policy
 layout: LandingPage
 description: Read the legal policy describing supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer.
 title: Extensions - Microsoft browser extension policy

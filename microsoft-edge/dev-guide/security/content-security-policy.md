@@ -99,8 +99,8 @@ Unless explicitly whitelisted via nonce or hash (or the entire blocking mechanis
 
 ## CSP error codes and reporting blocked resources
 
-Resources blocked by CSP are reported through F12 tools and, optionally, as a report back to the server. For a list of CSP error codes, see the [Console error and status codes](../../f12-devtools-guide/console/error-and-status-codes.md) page of the F12 devtools guide.
-[![CSP errors](https://i.imgur.com/KzyzDle.png)](../../f12-devtools-guide/console/error-and-status-codes.md)
+Resources blocked by CSP are reported through F12 tools and, optionally, as a report back to the server. For a list of CSP error codes, see the [Console error and status codes](../../devtools-guide/console/error-and-status-codes.md) page of the F12 devtools guide.
+[![CSP errors](https://i.imgur.com/KzyzDle.png)](../../devtools-guide/console/error-and-status-codes.md)
 
 > [!NOTE]
 > For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
