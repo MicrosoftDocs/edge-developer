@@ -31,7 +31,7 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
     a. Toggle on **Developer Mode**. This will install the *Developer Mode* package, enabling remote tooling for desktop.
 
-    b. Enable [**Device Portal**](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal) (*Turn on remote diagnostics over local area network connections*).
+    b. Enable [**Device Portal**](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal) (*Turn on remote diagnostics over local area network connections*) and **Device discovery** (*Make your device visible to USB connections and your local network*).
 
     c. Turn on **Authentication** and supply a username / password.
 
