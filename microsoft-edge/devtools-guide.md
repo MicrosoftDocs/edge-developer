@@ -11,7 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Microsoft Edge Developer Tools
 
-Browser tooling has come a long way since the days of Internet Explorer! The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), and optimized for modern front-end workflows. 
+The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), optimized for modern front-end workflows, and now available as a [standalone Windows 10 app](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) in the Microsoft Store!
+
+For more on the latest features, check out [*DevTools in the latest update of Windows 10 (EdgeHTML 17)*](./devtools-guide/whats-new.md).
 
 ![Microsoft Edge DevTools](./devtools-guide/media/devtools.png)
 
@@ -25,7 +27,7 @@ The Microsoft Edge DevTools include:
  - A [**Memory**](./devtools-guide/memory.md) panel to measure your use of memory resources and compare heap snapshots at different states of code execution
  - An [**Emulation**](./devtools-guide/emulation.md) panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates
 
-There's also [much more to come](./devtools-guide/whats-new.md), so please keep sending us your [feedback and feature requests](#feedback)!
+Please keep sending your [feedback and feature requests](#feedback)!
 
 > [!TIP]
 > **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/)**:
