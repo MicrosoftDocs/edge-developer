@@ -30,7 +30,7 @@ Decoupling the DevTools from Edge provides these UX and architectural advantages
 - We're able to instrument the *EdgeHTML* browser engine and open it to the larger devtools ecosystem with [cross-browser APIs](https://github.com/WICG/devtools-protocol/).
 - We can ship DevTools updates independently from the Windows (and EdgeHTML) release cycle.
 
-Check out the *DevTools guide* to get started with [local and remote debugging using the DevTools app](../devtools-guide.md).
+Check out the *DevTools guide* for more on [local and remote debugging using the DevTools app](../devtools-guide.md).
 
 ## DevTools Protocol
 
@@ -49,13 +49,10 @@ TODO: New doc (debugger/indexeddb.md) w/screenshots. Can use this demo: https://
 For more, see [Indexed DB Manager](./debugger/indexed-db.md)
 
 ## PWA debugging
-- Launch from PWA
-- On by default
-- SW: attach to debug (inspect), force update, simulate push
-- Cache API updates
-- IndexedDB
 
-TODO: Update PWA debugging page for RS4
+Support for [debugging Progressive Web Apps (PWAs)](./debugger/progressive-web-apps.md) is now enabled by default, providing tool tabs for [**Service Workers**](./debugger/progressive-web-apps.md#service-workers-manager), [**Cache API**](./debugger/progressive-web-apps.md#cache-manager), and [**Indexed DB**](./debugger/indexed-db.md) management.
+
+You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/get-started.md#test-and-debug-your-pwa-on-windows) by selecting it from the list of [**Local**](../../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
 
 ## Vertical window docking
 
