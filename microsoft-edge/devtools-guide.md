@@ -15,6 +15,8 @@ The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlan
 
 For more on the latest features, check out [*DevTools in the latest update of Windows 10 (EdgeHTML 17)*](./devtools-guide/whats-new.md).
 
+## Core tools
+
 ![Microsoft Edge DevTools](./devtools-guide/media/devtools.png)
 
 The Microsoft Edge DevTools include:
@@ -32,6 +34,24 @@ Please keep sending your [feedback and feature requests](#feedback)!
 > [!TIP]
 > **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/)**:
 > We partnered with [BrowserStack](https://www.browserstack.com/test-on-microsoft-edge-browser#live-cloud) to provide free live and automated testing on Microsoft Edge.
+
+## Microsoft Store app
+
+The **Microsoft Edge DevTools** are [now available](./devtools-guide/whats-new.md) as a standalone [Windows 10 app from the Microsoft Store](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab), in addition to the in-browser (`F12`) tooling experience. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.
+
+### Local debugging
+
+To debug a page locally, simply launch the *Microsoft Edge DevTools* app. The **Local** panel of the chooser will display all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs](./progressive-web-apps.md) (*WWAHost.exe* processes), and [webview](./webview.md) controls. Click on your desired target to attach and open a new tab instance of the DevTools.
+
+![DevTools app Local panel](./devtools-guide/media/chooser_local.png)
+
+### Remote debugging
+
+The *Microsoft Edge DevTools* app introduces basic support for debugging pages on a remote machine via our newly released [*DevTools Protocol*](#devtools-protocol). With this release comes remote access to core funtionality in the [**Debugger**](./debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB). Remote debugging is limited to *Microsoft Edge* running *desktop* hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.
+
+To get started, check out the [*Microsoft Edge DevTools*](./devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) section of our new [DevTools Protocol](./devtools-protocol/index.md) docs.
+
+![DevTools app Remote panel](./devtools-guide/media/chooser_remote.png)
 
 ## Feedback
 
