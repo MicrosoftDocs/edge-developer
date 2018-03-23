@@ -66,6 +66,7 @@ These shortcuts control the main DevTools window and/or work across all tools.
 Action | Shortcut
 :------------ | :-------------
 Show/Hide DevTools (opens to last viewed panel) | F12, Ctrl+Shift+I
+Toggle docking (Undock/Bottom/Right) | Ctrl+Shift+D 
 Show non-editable HTML source code in Debugger | Ctrl+U
 Show/hide Console at the bottom of any other tool  | Ctrl+**`**
 Switch to Elements (DOM Explorer) | Ctrl+1
