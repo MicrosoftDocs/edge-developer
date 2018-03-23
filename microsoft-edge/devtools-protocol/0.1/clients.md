@@ -27,7 +27,11 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
 **On the host (debugee) machine...**
 
-1. Open the **For developers** control panel in Windows *Settings* (search for *developer* and click on *Use developer features*), and: 
+1. If you're on a WiFi network, ensure the network is marked as either **Domain** or **Private**. You can verify this by opening the [**Windows Defender Security Center**](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) app, clicking on **Firewall & network protection** and checking if your network is listed as a *Domain network* or *Private network*. 
+
+    If its listed as *Public*, go to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network and toggle the *Network profile* button to **Private**.
+
+2. Open the **For developers** control panel in Windows *Settings* (search for *developer* and click on *Use developer features*), and: 
 
     a. Toggle on **Developer Mode**. This will install the *Developer Mode* package, enabling remote tooling for desktop.
 
@@ -37,7 +41,7 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
     d. Note the machine IP address and connection port (50443) displayed.
 
-2. Open tabs in Microsoft Edge that you wish to debug from the client machine.
+3. Open tabs in Microsoft Edge that you wish to debug from the client machine.
 
 **On the client (debugger) machine...**
 
