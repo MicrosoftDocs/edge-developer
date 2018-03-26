@@ -50,6 +50,10 @@ New to the [**Debugger**](./debugger.md) this release is an [Indexed DB Manager]
 
 Support for [debugging Progressive Web Apps (PWAs)](./debugger/progressive-web-apps.md) is now enabled by default, providing tool tabs for [**Service Workers**](./debugger/progressive-web-apps.md#service-workers-manager), [**Cache API**](./debugger/progressive-web-apps.md#cache-manager), and [**Indexed DB**](./debugger/indexed-db.md) management.
 
+Additionally, the [Network panel toolbar](./network.md#toolbar) has a new button, **Bypass Service Worker for all network requests**, to toggle on/off your registered service workers as network proxies:
+
+![Network toolbar button: Bypass Service Worker for all network requests](./media/network_toolbar_bypass_sw.png)
+
 You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/get-started.md#test-and-debug-your-pwa-on-windows) by selecting it from the list of [**Local**](../../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
 
 ## Vertical window docking
