@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and now as a standalone [Windows 10 app](#devtools-windows-10-app) from the Microsoft Store!
 
-The tools have been updated with a number of major features, including basic support for [remote debugging](#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-cache-management), [vertical docking](#vertical-window-docking) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
+The tools have been updated with a number of major features, including basic support for [remote debugging](#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-management), [vertical docking](#vertical-window-docking) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
 Here are the latest Microsoft Edge DevTools features coming with the next [Windows 10 update]() and available now on [Windows Insider Preview](https://insider.windows.com/) builds.
 
@@ -42,11 +42,9 @@ Developer tools can use the [**Microsoft Edge DevTools Protocol**](../devtools-p
  
  The latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) builds (Visual Studio 15.7 Preview 1 or later) use the DevTools Protocol to enable launching and debugging Edge (JavaScript code) from within the Visual Studio IDE of any ASP.NET or .NET Core project.
 
-## IndexedDB cache management
+## IndexedDB inspection
 
-TODO: New doc (debugger/indexeddb.md) w/screenshots. Can use this demo: https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/audiomixer/
-
-For more, see [Indexed DB Manager](./debugger/indexed-db.md)
+New to the [**Debugger**](./debugger.md) this release is an [Indexed DB Manager](./debugger/indexed-db.md) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
 
 ## PWA debugging
 
