@@ -72,13 +72,13 @@ We also added these improvements:
  -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
  - The following new APIs are supported:
-    - [**console.table(***object***)**](./console/console-api.md#organizing-log-output) method
-    - [**getEventListeners(***object***)**](./console/command-line.md#event-listeners) command
-    - [**keys(***object***)**](./console/command-line.md#object-inspection) command
-    - [**values(***object***)**](./console/command-line.md#object-inspection) command
-    - [**$x(***xpath expression***)**](./console/command-line.md#dom-selectors) selector
+    - [**console.table(***object***)**](../console/console-api.md#organizing-log-output) method
+    - [**getEventListeners(***object***)**](../console/command-line.md#event-listeners) command
+    - [**keys(***object***)**](../console/command-line.md#object-inspection) command
+    - [**values(***object***)**](../console/command-line.md#object-inspection) command
+    - [**$x(***xpath expression***)**](../console/command-line.md#dom-selectors) selector
 
- - The [**%c()**](./console/console-api.md#logging-custom-messages) formatting parameter is now supported
+ - The [**%c()**](../console/console-api.md#logging-custom-messages) formatting parameter is now supported
 
 ## Debugging improvements
 
@@ -121,7 +121,7 @@ Clicking on a specific service worker entry will open up the **Service Worker Ov
 Please note the following about service worker debugging:
 
  - Debugging a service worker will launch a new instance of the DevTools separate from the page's tools because service workers can be shared across multiple tabs. 
- - The [Elements](./elements.md) and [Emulation](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
+ - The [Elements](../elements.md) and [Emulation](../emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
  - Currently network traffic for a service worker is only reported from the DevTools debugging instance for that worker, and not from the central instance for the page itself.
 
 ![Service Worker debugging instance](../media/debugger_sw_inspect.png)
