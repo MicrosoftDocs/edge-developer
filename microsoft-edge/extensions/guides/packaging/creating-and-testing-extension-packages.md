@@ -31,7 +31,8 @@ At the root of the folder, you should include an AppXManifest.xml file. This fil
 
 You should also have an Assets folder which contains the UI assets to be used in the Microsoft Store, and an Extension folder that contains your extension's files (scripts, icons, etc).
 
->important You can create a different folder structure for your package, but the folder structure must match the AppXManifest values.
+> [!IMPORTANT]
+> You can create a different folder structure for your package, but the folder structure must match the AppXManifest values.
 
 ### AppXManifest.xml
 The AppXManifest file is an XML document that contains info the system needs to deploy, display, or update a Windows app. This file also includes package identity, capabilities, and visual elements. Every app package must include one AppXManifest file.
