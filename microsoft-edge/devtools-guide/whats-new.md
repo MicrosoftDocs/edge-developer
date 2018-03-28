@@ -69,16 +69,16 @@ The **Console** panel got a UX overhaul for improved usability and a faster, ric
 
 We also added these improvements:
 
- -  Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
+- Use `Shift + Enter` to add an additional line to a command before executing it with `Enter`. (Formerly there was a *Switch to multiline/single-line mode* toggle button.)
 
- - The following new APIs are supported:
-    - [**console.table(***object***)**](./console/console-api.md#organizing-log-output) method
-    - [**getEventListeners(***object***)**](./console/command-line.md#event-listeners) command
-    - [**keys(***object***)**](./console/command-line.md#object-inspection) command
-    - [**values(***object***)**](./console/command-line.md#object-inspection) command
-    - [**$x(***xpath expression***)**](./console/command-line.md#dom-selectors) selector
+- The following new APIs are supported:
+  - [**console.table(***object***)**](./console/console-api.md#organizing-log-output) method
+  - [**getEventListeners(***object***)**](./console/command-line.md#event-listeners) command
+  - [**keys(***object***)**](./console/command-line.md#object-inspection) command
+  - [**values(***object***)**](./console/command-line.md#object-inspection) command
+  - [**$x(***xpath expression***)**](./console/command-line.md#dom-selectors) selector
 
- - The [**%c()**](./console/console-api.md#logging-custom-messages) formatting parameter is now supported
+- The [**%c()**](./console/console-api.md#logging-custom-messages) formatting parameter is now supported
 
 ## Debugging improvements
 

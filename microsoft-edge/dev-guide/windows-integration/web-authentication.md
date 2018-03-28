@@ -165,7 +165,6 @@ var fidoAuthenticator = {
          return verify.verify(jwkToPem(JSON.parse(publicKey)), signature, 'base64');
      }
 };   
-
 ```
 
 ## Differences between Microsoft Edge and the spec

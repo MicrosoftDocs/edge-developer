@@ -25,7 +25,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What's new in EdgeHTML</h3>
+                        <h3>What&#39;s new in EdgeHTML</h3>
                     </div>
                 </div>
             </div>

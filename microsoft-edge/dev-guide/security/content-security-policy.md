@@ -55,19 +55,19 @@ style-src | Defines valid sources of stylesheets.
 
 All of the directives that end with `-src` and also `frame-ancestors` support values known as a "source list". Multiple source list values can be space separated with the exception of 'none' which should be the only value.
 
-Source Value | Example | Description
-:------------ | :------------- | :-------------
-* | img-src * | Wildcard, allows any URL except data: blob: filesystem: schemes.
-'none' | object-src 'none' | Prevents loading resources from any source.
-'self' | script-src 'self' | Allows loading resources from the same origin (same scheme, host and port).
-data: | img-src 'self' data: | Allows loading resources via the data scheme (eg Base64 encoded images).
-domain.foo.com | img-src img.foo.com | Allows loading resources from the specified domain name.
-*.foo.com | img-src *.foo.com | Allows loading resources from the any subdomain under foo.com.
-`https://img.foo.com` | img-src `https://img.foo.com` | Allows loading resources only over HTTPS matching the given domain.
-https: | img-src https: | Allows loading resources only over HTTPS on any domain.
-'unsafe-inline' | script-src 'unsafe-inline' | Allows use of inline source elements such as style attribute, onclick, or script tag bodies (depends on the context of the source it is applied to)
-'unsafe-eval' | script-src 'unsafe-eval' | Allows unsafe dynamic code evaluation such as JavaScript eval()
 
+| Source Value          | Example                       | Description                                                                                                                                         |
+|:----------------------|:------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
+| *                     | img-src *                     | Wildcard, allows any URL except data: blob: filesystem: schemes.                                                                                    |
+| 'none'                | object-src 'none'             | Prevents loading resources from any source.                                                                                                         |
+| 'self'                | script-src 'self'             | Allows loading resources from the same origin (same scheme, host and port).                                                                         |
+| data:                 | img-src 'self' data:          | Allows loading resources via the data scheme (eg Base64 encoded images).                                                                            |
+| domain.foo.com        | img-src img.foo.com           | Allows loading resources from the specified domain name.                                                                                            |
+| *.foo.com             | img-src *.foo.com             | Allows loading resources from the any subdomain under foo.com.                                                                                      |
+| `https://img.foo.com` | img-src `https://img.foo.com` | Allows loading resources only over HTTPS matching the given domain.                                                                                 |
+| https:                | img-src https:                | Allows loading resources only over HTTPS on any domain.                                                                                             |
+| 'unsafe-inline'       | script-src 'unsafe-inline'    | Allows use of inline source elements such as style attribute, onclick, or script tag bodies (depends on the context of the source it is applied to) |
+| 'unsafe-eval'         | script-src 'unsafe-eval'      | Allows unsafe dynamic code evaluation such as JavaScript eval()                                                                                     |
 
 ## CSP Examples
 Here a few common scenarios for content security policies:

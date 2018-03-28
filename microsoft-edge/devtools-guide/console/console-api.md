@@ -172,9 +172,9 @@ a();
 d();
 ```
 . . . will output the following stack traces:
->console.trace() at c (eval code:8:3) at a (eval code:2:3) at eval code (eval code:14:1)
-
->console.trace() at c (eval code:8:3) at b (eval code:5:3) at d (eval code:11:3) at eval code (eval code:15:1)
+> console.trace() at c (eval code:8:3) at a (eval code:2:3) at eval code (eval code:14:1)
+> 
+> console.trace() at c (eval code:8:3) at b (eval code:5:3) at d (eval code:11:3) at eval code (eval code:15:1)
 
 ## Organizing log output
 

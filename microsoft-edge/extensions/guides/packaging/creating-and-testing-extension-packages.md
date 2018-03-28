@@ -106,10 +106,10 @@ You can access your App identity page using the following steps:
 3. Navigate to the Dashboard.
 4. Select the name of your extension.
 
- ![extension list](./../../media/select-app.png)
+   ![extension list](./../../media/select-app.png)
 5. Navigate to the App identity page which is under the App management section (after you've registered your app).
 
- ![app identity page](./../../media/app-identity.png)
+   ![app identity page](./../../media/app-identity.png)
 
 
 You can now populate the AppXManifest template with values from the App identity page, as indicated in the template:

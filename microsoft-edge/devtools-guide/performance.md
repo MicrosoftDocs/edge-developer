@@ -141,15 +141,15 @@ Use the lowermost details pane to get the full breakdown of what happened on the
     Use the **Filter events** menu to configure the types of events shown in the [timeline details](#timeline-details). 
 
     ![Control to filter performance events](./media/performance_filter_events.png) 
-    
+
     The following filters are available:
 
-    - **Image decoding**: Show events which occurred on a background thread (e.g. Image decoding, GC). 
-    - **Network traffic**: Show HTTP requests which were network-bound.
-    - **UI activity**: Show events which occurred on the UI thread and/or render thread (e.g. DOM event handlers, Layout).
-    - **User measures**: Show custom events which indicate calls to the performance.measure() method.
- 
-    You can further filter top-level events by their inclusive duration.
+   - **Image decoding**: Show events which occurred on a background thread (e.g. Image decoding, GC). 
+   - **Network traffic**: Show HTTP requests which were network-bound.
+   - **UI activity**: Show events which occurred on the UI thread and/or render thread (e.g. DOM event handlers, Layout).
+   - **User measures**: Show custom events which indicate calls to the performance.measure() method.
+
+     You can further filter top-level events by their inclusive duration.
 
 ### Event list
 
@@ -184,8 +184,9 @@ URL | URL(s) where stack frame occurred. Function calls originating from the bro
 
 ## Shortcuts
 
- Action | Shortcut
-:------------ | :-------------
-Start / Stop profiling session  | `Ctrl` + `E`
-Import profiling session | `Ctrl` + `O`
-Export profiling session | `Ctrl` + `S`
+| Action                         | Shortcut     |
+|:-------------------------------|:-------------|
+| Start / Stop profiling session | `Ctrl` + `E` |
+| Import profiling session       | `Ctrl` + `O` |
+| Export profiling session       | `Ctrl` + `S` |
+

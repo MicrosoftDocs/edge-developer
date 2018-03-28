@@ -41,29 +41,31 @@ You can also add and upvote tooling requests to our [UserVoice forum](https://wp
 
 These shortcuts control the main DevTools window and/or work across all tools.
 
-Action | Shortcut
-:------------ | :-------------
-Show/Hide DevTools (opens to last viewed panel) | F12, Ctrl+Shift+I
-Show non-editable HTML source code in Debugger | Ctrl+U
-Show/hide Console at the bottom of any other tool  | Ctrl+**`**
-Switch to Elements (DOM Explorer) | Ctrl+1
-Switch to Console |  Ctrl+2
-Switch to Debugger | Ctrl+3
-Switch to Network | Ctrl+4
-Switch to Performance | Ctrl+5
-Switch to Memory | Ctrl+6
-Switch to Emulation | Ctrl+7
-Help Document | F1
-Next tool | Ctrl+F6
-Previous tool | Ctrl+Shift+F6
-Previous tool (from history) | Ctrl+Shift+[
-Next tool (from history) | Ctrl+Shift+]
-Next Subframe 	  | F6
-Previous Subframe | Shift+F6
-Next match in Search box | F3
-Previous match in Search box | Shift+F3
-Find in search box | Ctrl+F
-Give focus to console at the bottom | Alt+Shift+I
-Dock/undock tools (toggle docking) | Ctrl+P  
-Launch DevTools to Console | Ctrl+Shift+J
-Refresh the page. **Note:** if you're debugging and paused at a breakpoint, this resumes execution first. | Ctrl+Shift+F5 or Ctrl+R
+
+| Action                                                                                                                 | Shortcut                |
+|:-----------------------------------------------------------------------------------------------------------------------|:------------------------|
+| Show/Hide DevTools (opens to last viewed panel)                                                                        | F12, Ctrl+Shift+I       |
+| Show non-editable HTML source code in Debugger                                                                         | Ctrl+U                  |
+| Show/hide Console at the bottom of any other tool                                                                      | Ctrl+<strong>`</strong> |
+| Switch to Elements (DOM Explorer)                                                                                      | Ctrl+1                  |
+| Switch to Console                                                                                                      | Ctrl+2                  |
+| Switch to Debugger                                                                                                     | Ctrl+3                  |
+| Switch to Network                                                                                                      | Ctrl+4                  |
+| Switch to Performance                                                                                                  | Ctrl+5                  |
+| Switch to Memory                                                                                                       | Ctrl+6                  |
+| Switch to Emulation                                                                                                    | Ctrl+7                  |
+| Help Document                                                                                                          | F1                      |
+| Next tool                                                                                                              | Ctrl+F6                 |
+| Previous tool                                                                                                          | Ctrl+Shift+F6           |
+| Previous tool (from history)                                                                                           | Ctrl+Shift+[            |
+| Next tool (from history)                                                                                               | Ctrl+Shift+]            |
+| Next Subframe                                                                                                          | F6                      |
+| Previous Subframe                                                                                                      | Shift+F6                |
+| Next match in Search box                                                                                               | F3                      |
+| Previous match in Search box                                                                                           | Shift+F3                |
+| Find in search box                                                                                                     | Ctrl+F                  |
+| Give focus to console at the bottom                                                                                    | Alt+Shift+I             |
+| Dock/undock tools (toggle docking)                                                                                     | Ctrl+P                  |
+| Launch DevTools to Console                                                                                             | Ctrl+Shift+J            |
+| Refresh the page. <strong>Note:</strong> if you're debugging and paused at a breakpoint, this resumes execution first. | Ctrl+Shift+F5 or Ctrl+R |
+

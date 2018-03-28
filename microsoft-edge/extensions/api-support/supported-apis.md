@@ -219,22 +219,23 @@ API | Known issues | Chrome incompatibilities
 
 The following `webNavigation` APIs are supported:
 
-API | Known issues | Chrome incompatibilities
-:------ | :----- | :-------
-[webNavigation](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation) | Tab ids are incorrect. | Filtering, TransitionTypes and TransitionQualifiers not supported. <br/><br/> For a tab, all `processIds` will be the same. |
-[webNavigation.getAllFrames](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/getAllFrames) | Does not include object-as-iframe elements. | |
-[webNavigation.getFrame](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/getFrame) | | |
-[webNavigation.onBeforeNavigate](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onBeforeNavigate) | | |
-[webNavigation.onCommited](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation/onCommitted) | | |
-[webNavigation.onCompleted](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCompleted) | | |
-[webNavigation.onCreatedNavigationTarget](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCreatedNavigationTarget) | | |
-[webNavigation.onDOMContentLoaded](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onDOMContentLoaded) | | |
-[webNavigation.onErrorOccurred](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onErrorOccurred) | | |
-[webNavigation.onHistoryStateUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onHistoryStateUpdated) | | |
-[webNavigation.onReferenceFragmentUpdated](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation/onReferenceFragmentUpdated) | | |
-[webNavigation.onTabReplaced](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onTabReplaced) | | Not supported. | |
-[webNavigation.TransitionType](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/TransitionType) | | |
-[webNavigation.TransitionQualifier](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/TransitionQualifier) | | |
+
+| API                                                                                                                                                           | Known issues                                | Chrome incompatibilities                                                                                                    |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
+| [webNavigation](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation)                                                     | Tab ids are incorrect.                      | Filtering, TransitionTypes and TransitionQualifiers not supported. <br/><br/> For a tab, all `processIds` will be the same. |
+| [webNavigation.getAllFrames](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/getAllFrames)                           | Does not include object-as-iframe elements. |                                                                                                                             |
+| [webNavigation.getFrame](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/getFrame)                                   |                                             |                                                                                                                             |
+| [webNavigation.onBeforeNavigate](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onBeforeNavigate)                   |                                             |                                                                                                                             |
+| [webNavigation.onCommited](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation/onCommitted)                                           |                                             |                                                                                                                             |
+| [webNavigation.onCompleted](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCompleted)                             |                                             |                                                                                                                             |
+| [webNavigation.onCreatedNavigationTarget](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onCreatedNavigationTarget) |                                             |                                                                                                                             |
+| [webNavigation.onDOMContentLoaded](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onDOMContentLoaded)               |                                             |                                                                                                                             |
+| [webNavigation.onErrorOccurred](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onErrorOccurred)                     |                                             |                                                                                                                             |
+| [webNavigation.onHistoryStateUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onHistoryStateUpdated)         |                                             |                                                                                                                             |
+| [webNavigation.onReferenceFragmentUpdated](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webNavigation/onReferenceFragmentUpdated)            |                                             |                                                                                                                             |
+| [webNavigation.onTabReplaced](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/onTabReplaced)                         |                                             | Not supported.                                                                                                              |
+| [webNavigation.TransitionType](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/TransitionType)                       |                                             |                                                                                                                             |
+| [webNavigation.TransitionQualifier](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation/TransitionQualifier)             |                                             |                                                                                                                             |
 
 ## webRequest
 
@@ -258,19 +259,21 @@ API | Known issues | Chrome incompatibilities
 
 The following `windows` APIs are supported:
 
-API | Known issues | Chrome incompatibilities
-:------------ | :------------- | :-------------------
-[windows](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows) | | `Window` objects do not support `alwaysOnTop` property in Microsoft Edge. <br/><br/>InPrivate is not supported.|
-[windows.CreateType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/CreateType) | | `"panel"` and `"detached_panel"` are not supported in Microsoft Edge. |
-[windows.create](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/create) | | `tabId` parameter for tearing off a tab is not supported. |
-[windows.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/get) | | |
-[windows.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll) | `windows.getAll({populate: true})` is missing `tabs` property. | | |
-[windows.getCurrent](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getCurrent) | | |
-[windows.getLastFocused](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getLastFocused) | | |
-[windows.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/update) | Specifying position is not supported. | `"minimized"`/`"maximized"`/`"fullscreen"` and `drawAttention` are not supported in Microsoft Edge. |
-[windows.onCreated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/onCreated) | | `WindowType` filter is not supported. |
-[windows.onFocusChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/onFocusChanged) | | `WindowType` filter is not supported. |
-[windows.WindowState](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowState) | `"minimized"`,`"maximized"`, `"fullscreen"` are not supported.| `"docked"` is not supported in Microsoft Edge. |
-[windows.WindowType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowType) | | `"panel"`, `"app"`, and `"devtools"` are not supported in Microsoft Edge. |
-[windows.WINDOW_ID_CURRENT](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/WINDOW_ID_CURRENT) | | |
-[windows.WINDOW_ID_NONE](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/WINDOW_ID_NONE) | | |
+
+| API                                                                                                                               | Known issues                                                   | Chrome incompatibilities                                                                                        |
+|:----------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
+| [windows](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows)                                     |                                                                | `Window` objects do not support `alwaysOnTop` property in Microsoft Edge. <br/><br/>InPrivate is not supported. |
+| [windows.CreateType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/CreateType)                            |                                                                | `"panel"` and `"detached_panel"` are not supported in Microsoft Edge.                                           |
+| [windows.create](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/create)                                    |                                                                | `tabId` parameter for tearing off a tab is not supported.                                                       |
+| [windows.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/get)                             |                                                                |                                                                                                                 |
+| [windows.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getAll)                       | `windows.getAll({populate: true})` is missing `tabs` property. |                                                                                                                 |
+| [windows.getCurrent](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getCurrent)               |                                                                |                                                                                                                 |
+| [windows.getLastFocused](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/getLastFocused)       |                                                                |                                                                                                                 |
+| [windows.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/update)                       | Specifying position is not supported.                          | `"minimized"`/`"maximized"`/`"fullscreen"` and `drawAttention` are not supported in Microsoft Edge.             |
+| [windows.onCreated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/onCreated)                 |                                                                | `WindowType` filter is not supported.                                                                           |
+| [windows.onFocusChanged](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/onFocusChanged)                    |                                                                | `WindowType` filter is not supported.                                                                           |
+| [windows.WindowState](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowState)                          | `"minimized"`,`"maximized"`, `"fullscreen"` are not supported. | `"docked"` is not supported in Microsoft Edge.                                                                  |
+| [windows.WindowType](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/windows/WindowType)                            |                                                                | `"panel"`, `"app"`, and `"devtools"` are not supported in Microsoft Edge.                                       |
+| [windows.WINDOW_ID_CURRENT](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/WINDOW_ID_CURRENT) |                                                                |                                                                                                                 |
+| [windows.WINDOW_ID_NONE](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/windows/WINDOW_ID_NONE)       |                                                                |                                                                                                                 |
+

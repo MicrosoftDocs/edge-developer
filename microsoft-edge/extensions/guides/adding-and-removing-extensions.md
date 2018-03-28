@@ -33,10 +33,10 @@ Also included are details on how to change your extension icon's location in the
 
    ![selecting load extension](./../media/sideload-load-extension.png)
 
-7. Navigate to your extension's folder and select the  **Select folder** button.
+6. Navigate to your extension's folder and select the  **Select folder** button.
    ![selecting extension folder to load](./../media/sideload-select-extension.png)
-> [!NOTE]
-> If you encounter an error message when loading your extension, refer to the [troubleshooting](./../troubleshooting.md) page for guidance.
+   > [!NOTE]
+   > If you encounter an error message when loading your extension, refer to the [troubleshooting](./../troubleshooting.md) page for guidance.
 
 
 **You're all set! You should now see the extension listed in Microsoft Edge's extension pane.**

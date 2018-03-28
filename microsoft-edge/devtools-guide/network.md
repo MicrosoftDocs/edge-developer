@@ -60,13 +60,13 @@ The network request list includes the following info:
 Column | Description 
 :------------ | :------------- 
 **Name** | Name and URL path of the request
-**Protocol** |	Type of protocol for the request (such as *HTTPS, HTTP/2*)
-**Method** |	[HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used for the request
-**Result** |	[HTTP response status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)  code
-**Content type** |	Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
+**Protocol** |  Type of protocol for the request (such as *HTTPS, HTTP/2*)
+**Method** |    [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used for the request
+**Result** |    [HTTP response status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)  code
+**Content type** |  Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
 **Received** | Size of the response as delivered by the server (not calculated for cached responses)
-**Time** |	Time to load the server response (not calculated for cached responses)
-**Initiator** |	Subsystem responsible for initiating the request (such as *Parser, Redirect, Script, Other*)
+**Time** |  Time to load the server response (not calculated for cached responses)
+**Initiator** | Subsystem responsible for initiating the request (such as *Parser, Redirect, Script, Other*)
 **Timeline** | Visual timeline for the network events of the request (such as *Stalled, Resolving(DNS), Connecting(TCP), SSL, Sending, Waiting(TTFB), Downloading*). Hovering over the chart provides the more granular breakdown of network [network timings](#timings)).
 
  ### Summary bar
@@ -155,9 +155,10 @@ Time spent reading the response from the server.
 
  ## Shortcuts
 
- Action | Shortcut
-:------------ | :-------------
-Start / Stop profiling session  | `Ctrl` + `E`
-Export as HAR | `Ctrl` + `S`
-Find | `Ctrl` + `F`
-Copy | `Ctrl` + `C`
+| Action                         | Shortcut     |
+|:-------------------------------|:-------------|
+| Start / Stop profiling session | `Ctrl` + `E` |
+| Export as HAR                  | `Ctrl` + `S` |
+| Find                           | `Ctrl` + `F` |
+| Copy                           | `Ctrl` + `C` |
+

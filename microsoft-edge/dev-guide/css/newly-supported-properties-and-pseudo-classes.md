@@ -36,7 +36,9 @@ For a list of all CSS properties supported in Microsoft Edge, see [CSS styles](h
 [`:out-of-range`](https://msdn.microsoft.com/library/mt574721(v=vs.85).aspx) | Applies one or more styles to specified input fields when the fields are out of range.
 
 ## Keywords
-| Keyword  | Description | 
-|-------------|-----------------|
-initial | Applies the initial value of a property to the specified element.
-unset | Erases all values declared earlier in the cascade
+
+| Keyword |                            Description                            |
+|---------|-------------------------------------------------------------------|
+| initial | Applies the initial value of a property to the specified element. |
+|  unset  |         Erases all values declared earlier in the cascade         |
+

@@ -1,41 +1,49 @@
 {
-    "build": {
-        "content": [{
-            "files": [
-                "**/*.md", "**/**.yml"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "microsoft-edge/**",
-                "**/includes/**"
-            ]
-        }],
-        "resource": [{
-            "files": [
-                "**/*.png",
-                "**/*.jpg",
-                "**/*.svg",
-                "**/*.gif"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "microsoft-edge/**",
-                "**/includes/**"
-            ]
-        }],
-        "overwrite": [],
-        "externalReference": [],
-        "globalMetadata": {
-            "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
-            "titleSuffix": "Microsoft Edge Development",
-            "uhfHeaderId": "MSDocsHeader-MSEdge",
-            "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/edge-developer",
-            "feedback_product_url": "https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer",
-            "extendBreadcrumb":true
-        },
-        "fileMetadata": {},
-        "template": ["docs.html"],
-        "dest": "microsoft-edge"
-    }
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "microsoft-edge/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "microsoft-edge/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
+      "titleSuffix": "Microsoft Edge Development",
+      "uhfHeaderId": "MSDocsHeader-MSEdge",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/edge-developer",
+      "feedback_product_url": "https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer",
+      "extendBreadcrumb": true
+    },
+    "fileMetadata": {},
+    "template": [
+      "docs.html"
+    ],
+    "dest": "microsoft-edge",
+    "markdownEngineName": "markdig"
+  }
 }

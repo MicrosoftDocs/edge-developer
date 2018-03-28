@@ -12,9 +12,9 @@ keywords: edge, web development, html, css, javascript, developer
 # What's new in EdgeHTML 15
 Here are the changes shipped with the current release of the Microsoft Edge platform,
  as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) (04/2017, Build 15063). For an overview of changes to the overall Microsoft Edge browser, see [What’s new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/#DrVEvmPU6TPq3tMK.97)
- 
+
 For changes in subsequent Windows Insider Preview builds, see [What's New in EdgeHTML](../whats-new.md).
- 
+
 Here's the permalink for the following list of changes: **[https://aka.ms/devguide_edgehtml_15](https://aka.ms/devguide_edgehtml_15)**.
 
 ## New features
@@ -57,7 +57,7 @@ For more info, see [Introducing WebRTC 1.0 and interoperable real-time communica
 
 Microsoft Edge now has support for [WebVR](https://w3c.github.io/webvr/archive/prerelease/1.1/), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge. This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
 
-Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
+Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
 
 To get a feel for what it looks like to work with the API, here’s some basic code to [render a frame to both eyes](https://w3c.github.io/webvr/archive/prerelease/1.1/#example-471f1826) of a Windows Mixed Reality device.
 
@@ -113,12 +113,11 @@ For more info and the status of other WebDriver features, check out [WebDriver](
 ## New APIs in EdgeHTML 15
 
 Here's the full list of new APIs in EdgeHTML 15. They are listed in the format of **[interface name].[api name]**.
- 
- 
-<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MSEdgeDev/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MSEdgeDev/pen/evRjjZ/'>New EdgeHTML15 APIs</a>by MSEdgeDev (<a href='http://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  
- 
-## Previous EdgeHTML releases
-[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)
+
+
+<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MSEdgeDev/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MSEdgeDev/pen/evRjjZ/'>New EdgeHTML15 APIs</a>by MSEdgeDev (<a href='http://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  </p>
+<h2 id="previous-edgehtml-releases">Previous EdgeHTML releases</h2>
+<p><a href="https://aka.ms/devguide_edgehtml_12" data-raw-source="[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)">EdgeHTML 12 / Windows build 10240 (7/2015)</a>
 
 [EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
 

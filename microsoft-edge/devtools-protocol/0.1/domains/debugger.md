@@ -10,12 +10,14 @@ ms.prod: microsoft-edge
 # Debugger
 Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**Events**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |
-| [**Types**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Dependencies**](#dependencies) | [Runtime](runtime.md) |
+
+|                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      [**Methods**](#methods)      | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
+|       [**Events**](#events)       |                                                                                                                                                                                                                                                                  [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed)                                                                                                                                                                                                                                                                  |
+|        [**Types**](#types)        |                                                                                                                                                                                                                                            [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope)                                                                                                                                                                                                                                            |
+| [**Dependencies**](#dependencies) |                                                                                                                                                                                                                                                                                                               [Runtime](runtime.md)                                                                                                                                                                                                                                                                                                                |
+
 ## Methods
 
 ### enable
@@ -35,7 +37,7 @@ Disables debugger for given page.
 ### getPossibleBreakpoints
 Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -72,14 +74,14 @@ Returns possible locations for breakpoint. scriptId in start and end range locat
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### setBreakpointsActive
 Activates / deactivates all breakpoints on the page.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -95,14 +97,14 @@ Activates / deactivates all breakpoints on the page.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### setBreakpointByUrl
 Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -159,14 +161,14 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### setBreakpoint
 Sets JavaScript breakpoint at a given location.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -208,14 +210,14 @@ Sets JavaScript breakpoint at a given location.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### removeBreakpoint
 Removes JavaScript breakpoint.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -231,7 +233,7 @@ Removes JavaScript breakpoint.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
@@ -273,7 +275,7 @@ Resumes JavaScript execution.
 ### getScriptSource
 Returns source for the script with given id.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -305,14 +307,14 @@ Returns source for the script with given id.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### setPauseOnExceptions
 Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -328,14 +330,14 @@ Defines pause on exceptions state. Can be set to stop on all exceptions, uncaugh
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### evaluateOnCallFrame
 Evaluates expression on a given call frame.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -372,14 +374,14 @@ Evaluates expression on a given call frame.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### setVariableValue
 Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -391,7 +393,7 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
         <tr>
             <td>scopeNumber</td>
             <td><code class="flyout">integer</code></td>
-            <td>0-based number of scope as was listed in scope chain. Only 'local', 'closure' and 'catch' scope types are allowed. Other scopes could be manipulated manually.</td>
+            <td>0-based number of scope as was listed in scope chain. Only &#39;local&#39;, &#39;closure&#39; and &#39;catch&#39; scope types are allowed. Other scopes could be manipulated manually.</td>
         </tr>
         <tr>
             <td>variableName</td>
@@ -410,14 +412,14 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### setBlackboxPatterns
 <span><b>Experimental. </b></span>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -433,14 +435,14 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### msSetDebuggerPropertyValue
 <span><b>Experimental. </b></span>Microsoft: Sets the specified debugger property to the specified value.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -461,7 +463,7 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
@@ -470,7 +472,7 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
 ### scriptParsed
 Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -546,14 +548,14 @@ Fired when the script is parsed. This event is also fired for all known and unco
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### breakpointResolved
 Fired when breakpoint is resolved to an actual script and location.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -579,14 +581,14 @@ Fired when breakpoint is resolved to an actual script and location.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
 ### paused
 Fired when the debuggers breaks for a breakpoint or exception.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -617,7 +619,7 @@ Fired when the debuggers breaks for a breakpoint or exception.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
@@ -650,7 +652,7 @@ Call frame identifier.
 
 Location in the source code.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Properties</th>
@@ -681,7 +683,7 @@ Location in the source code.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
@@ -689,7 +691,7 @@ Location in the source code.
 
 Break location in the source code.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Properties</th>
@@ -725,7 +727,7 @@ Break location in the source code.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
@@ -733,7 +735,7 @@ Break location in the source code.
 
 JavaScript call frame. Array of call frames form the call stack.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Properties</th>
@@ -784,7 +786,7 @@ JavaScript call frame. Array of call frames form the call stack.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 
@@ -792,7 +794,7 @@ JavaScript call frame. Array of call frames form the call stack.
 
 Scope description.
 
-<table>
+ble>
     <thead>
         <tr>
             <th>Properties</th>
@@ -828,7 +830,7 @@ Scope description.
         </tr>
     </tbody>
 </table>
-</p>
+
 
 ---
 

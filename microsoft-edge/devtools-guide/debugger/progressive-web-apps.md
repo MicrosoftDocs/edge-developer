@@ -41,7 +41,7 @@ Here are some general things to keep in mind when using service workers:
 
 - **Overrides *App Cache*.** App Cache will be ignored when service workers are in use. The Service Worker API is intended to entirely supplant App Cache  by giving more granular control to the web developer.
 
- - **Script can’t be on CDN.** The JavaScript file for the service worker can’t be hosted on a Content Distribution Network (CDN), it must be on the same domain as the page. However, if you like, you can import scripts from your CDN.
+  - **Script can’t be on CDN.** The JavaScript file for the service worker can’t be hosted on a Content Distribution Network (CDN), it must be on the same domain as the page. However, if you like, you can import scripts from your CDN.
 
 - **Can be terminated any time.** Service workers are meant to be short-lived and their lifetime is tied to events. In particular, service workers have a time limit in which they must finish executing their event handlers. In other cases, the browser or the operating system may choose to terminate a service worker that impacts the battery, CPU, or memory consumption. In either case, avoid relying on global variables in the service worker script in case a different service worker instance is used on a subsequent event that’s being handled.
 
@@ -58,9 +58,11 @@ Clicking on a specific cache entry will open up the **Cache** manager, where you
 ## Shortcuts
 
 ### Cache manager
-Action | Shortcut
-:------------ | :-------------
-Refresh | `Ctrl` + `F5`
-Delete item | `Del`
-Copy selected items | `Ctrl` + `C`
-Select all | `Ctrl` + `A`
+
+| Action              | Shortcut      |
+|:--------------------|:--------------|
+| Refresh             | `Ctrl` + `F5` |
+| Delete item         | `Del`         |
+| Copy selected items | `Ctrl` + `C`  |
+| Select all          | `Ctrl` + `A`  |
+
