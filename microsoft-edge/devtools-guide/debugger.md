@@ -61,7 +61,7 @@ Other features of the debug window include controls for:
 
 ### 1. Code editing
 
-You can edit your JavaScript live during a debugging session. Once you make your changes, click **Save** (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (*) will appear before the file name in the *Debug window* tab.
+You can edit your JavaScript live during a debugging session. Once you make your changes, click <strong>Save</strong> (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (<em>) will appear before the file name in the *Debug window</em> tab.
 
 Click the **Compare document to original** button to view the diff of what you changed.
 
@@ -115,16 +115,16 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
 
 ### 1. Continue (`F5`) / Break (`Ctrl+Shift+B`)
  **Continue** (`F5`) continues code execution to the next breakpoint. Holding down `F5` will repeatedly move past breaks until you release it. 
- 
+
  **Break** (`Ctrl+Shift+B`) will break into the debugger after running the next statement.
 
 ### 2. Step functions (`F11`, `Ctrl+F10`, `Shift+F11`)
  **Step into** (`F11`) steps into the function being called. 
- 
+
  **Step over** (`Ctrl+F10`) steps over the function being called. 
- 
+
  **Step out** (`Shift+F11`) steps out of the current function and into the calling function. 
- 
+
  The debugger will step to the next statement if it is not at a function when these commands are used.
 
 ### 3. Break on new worker (`Ctrl+Shift+W`)
@@ -199,6 +199,7 @@ Here's more on the different types of [DOM breakpoints](./elements/dom-breakpoin
 ## Shortcuts
 
 ### Toolbar shortcuts
+
 Action | Shortcut
 :------------ | :-------------
 Find | `Ctrl` + `F`
@@ -214,6 +215,7 @@ Change exception behavior (opens menu) | `Ctrl` + `Shift` + `E`
 Debug just my code | `Ctrl` + `J`
 
 ### Resource picker shortcuts
+
 Action | Shortcut
 :------------ | :-------------
 Mark as my code / library code | `Ctrl` + `L`
@@ -249,7 +251,8 @@ Delete watch | `Ctrl` + `D`
 
 ### Shortcuts for Details pane
 
-Action | Shortcut
-:------------ | :-------------
-Show/Hide frames from library code | `Ctrl` + `Shift` + `J`
-Enable all breakpoints | `Ctrl` + `Shift` + `F11`
+| Action                             | Shortcut                 |
+|:-----------------------------------|:-------------------------|
+| Show/Hide frames from library code | `Ctrl` + `Shift` + `J`   |
+| Enable all breakpoints             | `Ctrl` + `Shift` + `F11` |
+

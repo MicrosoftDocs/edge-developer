@@ -86,19 +86,19 @@ the extension will work with Microsoft Edge:
 - Remove the following [unsupported manifest keys](../api-support/supported-manifest-keys.md):
    - `"manifest_version"`
    -  `"homepage_url"` </br>
-While these keys aren't supported, if you don't remove them Microsoft Edge will ignore them.
+  While these keys aren't supported, if you don't remove them Microsoft Edge will ignore them.
 - Add the `"author"` key. </br>This is required in Microsoft Edge.
 - Since [`activeTab`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions#activeTab_permission) is unsupported, as a workaround you can replace the [`"permissions"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions) key with the following snippet that also adds the [`"content_scripts"`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts) key:
 
- ```json
-"permissions": [
+  ```json
+  "permissions": [
     "*://*/*"
-], 
-"content_scripts": [{
+  ], 
+  "content_scripts": [{
    "js": ["content_scripts/beastify.js"],
    "matches": ["*://*/*"]
-}],
-```
+  }],
+  ```
 
 You should end up with a manifest.json file that looks similar to this:
 

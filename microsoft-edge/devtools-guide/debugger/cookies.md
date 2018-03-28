@@ -54,11 +54,12 @@ In addition to the *Cookies* tab [toolbar](#cookies-manager), you can also manag
 
 ## Shortcuts
 
-Action | Shortcut
-:------------ | :-------------
-Refresh | `Ctrl` + `F5`
-Delete cookie | `Del`
-Delete all cookies | `Ctrl` + `Shift` + `Del`
-Delete all session cookies | `Ctrl` + `Del`
-Copy selected items | `Ctrl` + `C`
-Select all | `Ctrl` + `A`
+| Action                     | Shortcut                 |
+|:---------------------------|:-------------------------|
+| Refresh                    | `Ctrl` + `F5`            |
+| Delete cookie              | `Del`                    |
+| Delete all cookies         | `Ctrl` + `Shift` + `Del` |
+| Delete all session cookies | `Ctrl` + `Del`           |
+| Copy selected items        | `Ctrl` + `C`             |
+| Select all                 | `Ctrl` + `A`             |
+

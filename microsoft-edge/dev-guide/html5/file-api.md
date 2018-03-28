@@ -62,4 +62,3 @@ When you get `MSStream` from HTML5 API (like an [`XmlHttpRequest`](https://msdn.
 
 [File API](http://go.microsoft.com/fwlink/p/?LinkID=210224)
 
-

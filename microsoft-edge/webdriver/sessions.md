@@ -60,6 +60,7 @@ Microsoft Edge supports the following session-related WebDriver commands:
 ```
 
 ## Sessions
+
 | **Name** | Sessions |
 | :------- | :------- |
 | **Description** | Returns a list of the currently active sessions. |
@@ -92,6 +93,7 @@ None.
 ```
 
 ## Delete Session
+
 | **Name** | Delete Session |
 | :------- | :------- |
 | **Description** | Deletes the specified session. |
@@ -111,6 +113,7 @@ None.
 ```
 
 ## Get Capabilities
+
 | **Name** | Get Capabilities |
 | :------- | :------- |
 | **Description** | Retrieves the capabilities of the specified session. |
@@ -140,6 +143,7 @@ None.
 ```
 
 ## Set Timeout
+
 | **Name** | Set Timeout |
 | :------- | :------- |
 | **Description** | Configures the amount of time a particular type of operation can execute before it's aborted. |

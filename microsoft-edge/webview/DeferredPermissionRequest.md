@@ -87,8 +87,9 @@ Type: **String**
 
 ## Requirements
 
-|            |      |
-|------------|------|
-|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
-|**Minimum supported server** |Not supported |   
-|**Minimum supported phone**  |Not supported |       
+|                                           |                                      |
+|-------------------------------------------|--------------------------------------|
+| <strong>Minimum supported client</strong> | Windows 10 [Windows Store apps only] |
+| <strong>Minimum supported server</strong> |            Not supported             |
+| <strong>Minimum supported phone</strong>  |            Not supported             |
+

@@ -141,5 +141,3 @@ function saveCanvas() {
 ## Specification
 [File API](https://w3c.github.io/FileAPI/#dfn-Blob)
 
-
-

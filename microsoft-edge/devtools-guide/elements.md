@@ -69,10 +69,11 @@ Once you have selected a page element of interest, you can use the tool panes to
 
 ## Shortcuts
 
-Action | Shortcut
-:------------ | :-------------
-Elements panel | `Ctrl` + `1`
-Element highlighting | `Ctrl` + `Shift` + `L`
-Select element | `Ctrl` + `B`
-Color picker  | `Ctrl` + `K`
-Accessibility tree | `Ctrl` + `Shift` + `A`
+| Action               | Shortcut               |
+|:---------------------|:-----------------------|
+| Elements panel       | `Ctrl` + `1`           |
+| Element highlighting | `Ctrl` + `Shift` + `L` |
+| Select element       | `Ctrl` + `B`           |
+| Color picker         | `Ctrl` + `K`           |
+| Accessibility tree   | `Ctrl` + `Shift` + `A` |
+

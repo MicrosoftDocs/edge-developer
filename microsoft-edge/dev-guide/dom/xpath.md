@@ -32,5 +32,3 @@ The code below demonstrates a use of the new XPath functionality. It delivers th
 
 ## Specification
 [Document Object Model (DOM) Level 3 XPath Specification](http://go.microsoft.com/fwlink/p/?LinkId=524495)
-
-

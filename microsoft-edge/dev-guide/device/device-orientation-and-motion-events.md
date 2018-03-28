@@ -98,5 +98,3 @@ For mobile devices with a built-in accelerometer, try this CodePen demo and see 
 
 [DeviceOrientation Event Specification](http://go.microsoft.com/fwlink/p/?LinkID=316395)
 
-
-

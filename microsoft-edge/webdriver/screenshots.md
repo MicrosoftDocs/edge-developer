@@ -19,6 +19,7 @@ Microsoft Edge supports the following WebDriver commands for taking screenshots:
 | /session/{sessionId}/screenshot| [Take Screenshot](#take-screenshot)|
 
 ## Take Element Screenshot
+
 | **Name** | Take Element Screenshot |
 | :------- | :------- |
 | **Description** | Takes a screenshot of the currently selected element. |
