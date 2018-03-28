@@ -20,6 +20,7 @@ Microsoft Edge supports the following WebDriver commands for script execution:
 | /session/{sessionId}/execute}| [Execute Script](#execute-script)|
 
 ## Add Cookie
+
 | **Name** | Add Cookie |
 | :------- | :------- |
 | **Description** | Adds a cookie. |
@@ -46,6 +47,7 @@ Microsoft Edge supports the following WebDriver commands for script execution:
 ```
 
 ## Delete Cookies
+
 | **Name** | Delete Cookies |
 | :------- | :------- |
 | **Description** | Delete all cookies visible to the current page. |
@@ -95,12 +97,13 @@ None.
 ```
 
 ## Delete Cookie
-| **Name** | Delete Cookie |
-| :------- | :------- |
-| **Description** | Deletes the cookie with the given name. |
-| **Spec** | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#DELETE_/session/:sessionId/cookie/:name
-) |
-| **HTTP Request** | `DELETE /session/{sessionId}/cookie/{name}` |
+
+| <strong>Name</strong>         | Delete Cookie                                                                                                                                                                                             |
+|:------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Description</strong>  | Deletes the cookie with the given name.                                                                                                                                                                   |
+| <strong>Spec</strong>         | [W3C WebDriver](https://w3c.github.io/webdriver/webdriver-spec.html#delete-cookie), [JSON Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#DELETE_/session/:sessionId/cookie/:name |
+| )                             |                                                                                                                                                                                                           |
+| <strong>HTTP Request</strong> | `DELETE /session/{sessionId}/cookie/{name}`                                                                                                                                                               |
 
 **JSON Parameters**
 None.
@@ -123,6 +126,7 @@ None.
 ```
 
 ## Get Cookie
+
 | **Name** | Get Cookie |
 | :------- | :------- |
 | **Description** | Retrieves the cookie with the given name. |

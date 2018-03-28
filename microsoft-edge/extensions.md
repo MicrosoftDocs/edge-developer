@@ -23,9 +23,8 @@ To get a an overview of the end to end journey of creating a Microsoft Edge exte
 <table>
   <tr>
     <td><a href = "./extensions/api-support/extension-api-roadmap.md">Extension API roadmap</a></td>
-    <td>Check out what APIs are supported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.</td>
- 
-  </tr>
+    <td>Check out what APIs are supported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.</td></p>
+<p>  </tr>
   <tr>
     <td><a href = "./extensions/api-support/supported-apis.md">Supported APIs</a></td>
     <td>Get info on our supported APIs including known issues and Chrome incompatibilities.</td>
@@ -38,12 +37,12 @@ To get a an overview of the end to end journey of creating a Microsoft Edge exte
   </tr>
   <tr>
     <td><a href = "./extensions/guides/packaging.md">Packaging</a></td>
-    <td>Learn how to package up your extension after you've finished development.</td>
+    <td>Learn how to package up your extension after you&#39;ve finished development.</td>
 
   </tr>
   <tr>
     <td><a href = "./extensions/guides/porting-chrome-extensions.md">Porting Chrome extensions</a></td>
-    <td>Created a Chrome extension you'd like to see on Microsoft Edge? See how to port it with the Microsoft Edge Extension Toolkit.</td>
+    <td>Created a Chrome extension you&#39;d like to see on Microsoft Edge? See how to port it with the Microsoft Edge Extension Toolkit.</td>
 
   </tr>
 </table>

@@ -76,7 +76,6 @@ function sendXhr() {
    xhr.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
    xhr.send(Date.now().toString());
 }
-
 ```
 
 To see this code in action with a Node server, head over to [GitHub](https://github.com/MicrosoftEdge/Demos/tree/master/beacon) and download the project.

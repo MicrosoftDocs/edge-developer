@@ -37,21 +37,22 @@ Some SVG properties cannot be animated through CSS. An SVG path, for example, co
 
 SVG elements can be animated with CSS using the following properties:
 
-Property | Description
-:------------ | :-------------
-[animation](https://msdn.microsoft.com/library/hh772212.aspx) |  Shorthand values that define animation properties for object properties identified in the @keyframes at-rule of the animations-name property. Typically ordered as `animation`: `animation-name` `animation-duration` `animation-timing-function` `animation-delay` `animation-iteration-count` `animation-direction;`.
-[animation-name](https://msdn.microsoft.com/library/hh772236.aspx) | Declares the name of the @keyframes at-rule to manipulate.
-[animation-duration](https://msdn.microsoft.com/library/hh772219.aspx) |  Specifies the length of time it takes for an animation to complete one cycle.
-[animation-timing-function](https://msdn.microsoft.com/library/hh772240.aspx) | Establishes preset acceleration curves, such as ease (gradually increases speed at the start, then gradually decreases speed at the end, equivalent to `cubic-bezier(0.25,0.1,0.25,1)`; or linear (consistent speed from start to end, equivalent to `cubic-bezier(0,0,1,1)`.
-[animation-delay](https://msdn.microsoft.com/library/hh772215.aspx) |  The offset time between the element being loaded and the start of the animation sequence. Value listed in seconds `s` or milliseconds `ms`.
-[animation-direction](https://msdn.microsoft.com/library/hh772217.aspx) | Sets the direction of the animation after the cycle. Its default resets on each cycle.
-[animation-iteration-count](https://msdn.microsoft.com/library/hh772233.aspx) |  Specifies the number of times an animation cycle is played. Value can be a number or `infinite`.
-[animation-fill-mode](https://msdn.microsoft.com/library/hh772232.aspx) | Specifies whether the effects of an animation are visible before or after it plays. Value can be `forwards` (final property value as defined in the last @keyframes rule is maintained after the animation completes), `backwards` (beginning property value applied before the animation), `both`, or `none` (no change to value except during animation).
-[animation-play-state](https://msdn.microsoft.com/library/hh772238.aspx) | Specifies whether an animation is playing or paused. Values can be `running` or `paused`.
+
+| Property                                                                      | Description                                                                                                                                                                                                                                                                                                                                                 |
+|:------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [animation](https://msdn.microsoft.com/library/hh772212.aspx)                 | Shorthand values that define animation properties for object properties identified in the @keyframes at-rule of the animations-name property. Typically ordered as `animation`: `animation-name` `animation-duration` `animation-timing-function` `animation-delay` `animation-iteration-count` `animation-direction;`.                                     |
+| [animation-name](https://msdn.microsoft.com/library/hh772236.aspx)            | Declares the name of the @keyframes at-rule to manipulate.                                                                                                                                                                                                                                                                                                  |
+| [animation-duration](https://msdn.microsoft.com/library/hh772219.aspx)        | Specifies the length of time it takes for an animation to complete one cycle.                                                                                                                                                                                                                                                                               |
+| [animation-timing-function](https://msdn.microsoft.com/library/hh772240.aspx) | Establishes preset acceleration curves, such as ease (gradually increases speed at the start, then gradually decreases speed at the end, equivalent to `cubic-bezier(0.25,0.1,0.25,1)`; or linear (consistent speed from start to end, equivalent to `cubic-bezier(0,0,1,1)`.                                                                               |
+| [animation-delay](https://msdn.microsoft.com/library/hh772215.aspx)           | The offset time between the element being loaded and the start of the animation sequence. Value listed in seconds `s` or milliseconds `ms`.                                                                                                                                                                                                                 |
+| [animation-direction](https://msdn.microsoft.com/library/hh772217.aspx)       | Sets the direction of the animation after the cycle. Its default resets on each cycle.                                                                                                                                                                                                                                                                      |
+| [animation-iteration-count](https://msdn.microsoft.com/library/hh772233.aspx) | Specifies the number of times an animation cycle is played. Value can be a number or `infinite`.                                                                                                                                                                                                                                                            |
+| [animation-fill-mode](https://msdn.microsoft.com/library/hh772232.aspx)       | Specifies whether the effects of an animation are visible before or after it plays. Value can be `forwards` (final property value as defined in the last @keyframes rule is maintained after the animation completes), `backwards` (beginning property value applied before the animation), `both`, or `none` (no change to value except during animation). |
+| [animation-play-state](https://msdn.microsoft.com/library/hh772238.aspx)      | Specifies whether an animation is playing or paused. Values can be `running` or `paused`.                                                                                                                                                                                                                                                                   |
 
 The following is an example of using the `animation` shorthand property to set the animation-name of 'sample' with a 3 second duration, an animation-timing-function of 'ease-out', a delay of 2 seconds before beginning, alternating direction back-and-forth, with 4 iterations, no values held before or after the animation, currently in a paused play-state.
 ```CSS
-	animation: sample 3s ease-out 2s alternate 4 none paused;
+    animation: sample 3s ease-out 2s alternate 4 none paused;
 ```
 
 > [!NOTE]
@@ -152,29 +153,29 @@ For example, you can now reference a shape defined in the **same document** usin
 ### Legacy support
 
 Microsoft Edge supports the following SVG implementation:
- - Most SVG document structure, interactivity (scripting events), and styling (inline and through CSS)
- - Many presentation elements and their corresponding attributes and DOM interfaces, including:
-	 - basic shapes
-	 - filling, stroking, marker, and color
-	 - gradients and patterns
-	 - paths
-	 - text
-	 - the following methods to display SVG markup:
- 		- SVG fragments in HTML5 embedding, without using a foreign object (that is, simply include an **`<svg>`** tag within your HTML)
- 		- SVG as full document type (with .svg file extension)
- 		- SVG in XML or XHTML (similar to the HTML5 method, only with XML or XHTML files)
- 		- SVG as a CSS image
- 		- SVG using the **object** element, as in the following (note the type, height, and width attributes):
-		```html
-		 <object data="rect2.svg" width="100%" height="400px"
-		    type="image/svg+xml"></object>
-		```
+- Most SVG document structure, interactivity (scripting events), and styling (inline and through CSS)
+- Many presentation elements and their corresponding attributes and DOM interfaces, including:
+  - basic shapes
+  - filling, stroking, marker, and color
+  - gradients and patterns
+  - paths
+  - text
+  - the following methods to display SVG markup:
+    - SVG fragments in HTML5 embedding, without using a foreign object (that is, simply include an **`<svg>`** tag within your HTML)
+    - SVG as full document type (with .svg file extension)
+    - SVG in XML or XHTML (similar to the HTML5 method, only with XML or XHTML files)
+    - SVG as a CSS image
+    - SVG using the **object** element, as in the following (note the type, height, and width attributes):
+      ```html
+      <object data="rect2.svg" width="100%" height="400px"
+        type="image/svg+xml"></object>
+      ```
 
-		 - SVG using the **img**, **embed**, **iframe**, or **frame** elements, as in the following:
+      - SVG using the **img**, **embed**, **iframe**, or **frame** elements, as in the following:
 
-		```html
-		<embed id="Smiley" src="smiley.svg" type="image/svg+xml">
-		```
+      ```html
+      <embed id="Smiley" src="smiley.svg" type="image/svg+xml">
+      ```
 
 
 

@@ -68,6 +68,7 @@ As with any usage of personal data on the web, your users will first need to gra
 
 ## Shortcuts
 
-Action | Shortcut
-:------------ | :-------------
-Reset Emulation settings | `CTRL` + `SHIFT` + `L`
+| Action                   | Shortcut               |
+|:-------------------------|:-----------------------|
+| Reset Emulation settings | `CTRL` + `SHIFT` + `L` |
+

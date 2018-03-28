@@ -40,7 +40,7 @@ Up to 4GB | 10MB | 50MB |
 4GB to 16GB | 50MB | 500MB | 
 16GB to 32 GB | 50MB | 1GB |
 
-All Windows 10 apps are intended to use the same AppCache quota model, so the available disk storage limitation applies to both desktop and phone apps. The is also a hard limit after pages loaded inside **WebView** together have consumed 1 GB of *AppCache* space; requests for additional *AppCache* storage above this limit will be denied. 
+All Windows 10 apps are intended to use the same AppCache quota model, so the available disk storage limitation applies to both desktop and phone apps. The is also a hard limit after pages loaded inside **WebView** together have consumed 1 GB of *AppCache* space; requests for additional *AppCache* storage above this limit will be denied. 
 
 ## Events
 
@@ -50,7 +50,7 @@ Indicates the focus departing from the **webview** into the app.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("departingFocus", handler);
 webview.removeEventListener("departingFocus", handler);
@@ -71,7 +71,7 @@ Occurs when the status changes of whether or not the **webview** currently conta
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewContainsFullScreenElementChanged", handler);
 webview.removeEventListener("MSWebViewContainsFullScreenElementChanged", handler);
@@ -92,7 +92,7 @@ Indicates that the HTML content is downloaded and is being loaded into the contr
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewContentLoading", handler);
 webview.removeEventListener("MSWebViewContentLoading", handler);
@@ -114,7 +114,7 @@ Indicates that the main DOM elements have finished loading.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewDOMContentLoaded", handler);
 webview.removeEventListener("MSWebViewDOMContentLoaded", handler);
@@ -135,7 +135,7 @@ Indicates that the HTML content downloaded and is being loaded into the `<iframe
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewFrameContentLoading", handler);
 webview.removeEventListener("MSWebViewFrameContentLoading", handler);
@@ -156,7 +156,7 @@ Indicates that the main DOM elements have finished loading in the `<iframe>`.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewFrameDOMContentLoaded", handler);
 webview.removeEventListener("MSWebViewFrameDOMContentLoaded", handler);
@@ -178,7 +178,7 @@ Indicates the navigation is complete, and all media elements are rendered in the
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewFrameNavigationCompleted", handler);
 webview.removeEventListener("MSWebViewFrameNavigationCompleted", handler);
@@ -200,7 +200,7 @@ Indicates a `<iframe>` within a **webview** is starting to navigate.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewFrameNavigationStarting", handler);
 webview.removeEventListener("MSWebViewFrameNavigationStarting", handler);
@@ -214,14 +214,14 @@ webview.removeEventListener("MSWebViewFrameNavigationStarting", handler);
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |Yes |                 
-          
+
 ### MSWebViewLongRunningScriptDetected
 
 Occurs periodically while the **webview** executes JavaScript, letting you halt the script.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewLongRunningScriptDetected", handler);
 webview.removeEventListener("MSWebViewLongRunningScriptDetected", handler);
@@ -242,7 +242,7 @@ Indicates the navigation is complete, and all media elements are rendered.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewNavigationCompleted", handler);
 webview.removeEventListener("MSWebViewNavigationCompleted", handler);
@@ -256,7 +256,7 @@ webview.removeEventListener("MSWebViewNavigationCompleted", handler);
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
-         
+
 
 ### MSWebViewNavigationStarting
 Indicates the **webview** is starting to navigate **MSWebViewContentLoading** and the HTML content is downloaded and is being loaded into the control.
@@ -264,7 +264,7 @@ Indicates the **webview** is starting to navigate **MSWebViewContentLoading** an
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewNavigationStarting", handler);
 webview.removeEventListener("MSWebViewNavigationStarting", handler);
@@ -285,7 +285,7 @@ Raised when content in **webview** is trying to open a new window.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewNewWindowRequested", handler);
 webview.removeEventListener("MSWebViewNewWindowRequested", handler);
@@ -299,7 +299,7 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
-           
+
 
 ### MSWebViewPermissionRequested
 
@@ -307,7 +307,7 @@ Indicates that content in the **webview**  is trying to access functionality (su
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewPermissionRequested", handler);
 webview.removeEventListener("MSWebViewPermissionRequested", handler);
@@ -329,7 +329,7 @@ Indicates that the **webview** component process crashsed.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewProcessExited", handler);
 webview.removeEventListener("MSWebViewProcessExited", handler);
@@ -350,7 +350,7 @@ Raised when a page inside the **webview** element calls the **window.external.no
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewScriptNotify", handler);
 webview.removeEventListener("MSWebViewScriptNotify", handler);
@@ -371,7 +371,7 @@ Occurs when the **webview** shows a warning page for content that was reported a
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewUnsafeContentWarningDisplaying", handler);
 webview.removeEventListener("MSWebViewUnsafeContentWarningDisplaying", handler);
@@ -392,7 +392,7 @@ Raised when there is navigation to an Uniform Resource Identifier (URI) that the
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewUnsupportedUriSchemeIdentified", handler);
 webview.removeEventListener("MSWebViewUnsupportedUriSchemeIdentified", handler);
@@ -413,7 +413,7 @@ Raised when the **webview** cannot find the content.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
- 
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewUnviewableContentIdentified", handler);
 webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
@@ -427,7 +427,7 @@ webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
-         
+
 
 ### Methods
 
@@ -455,7 +455,7 @@ This method does not return a value.
 
 |            |      |
 |------------|------|
-|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
+|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
 |**Minimum supported server** |None supported |   
 |**Minimum supported phone**  |None supported |  
 
@@ -487,7 +487,7 @@ The following example illustrates a typical use case.
 ```js
 var webview = document.createElement("x-ms-webview"); //Instantiate the webview element
 var localStreamUri = webview.buildLocalStreamUri(contentIdentifier, relativePath); //Create URI to pass to navigateToLocalStreamUri method
-webview.navigateToLocalStreamUri(localStreamUri, streamResolver); //Load the local web content	
+webview.navigateToLocalStreamUri(localStreamUri, streamResolver); //Load the local web content  
 ```  
 
 ### capturePreviewToBlobAsync
@@ -529,7 +529,6 @@ An **MSWebViewAsyncOperation** object that, when it completes, provides a [DataP
         document.getElementById('webviewPreview').src = url;
     };
     operation.start();  
-
 ```
 
 ### invokeScriptAsync
@@ -580,7 +579,7 @@ The specified deferred permission request.
 
 |            |      |
 |------------|------|
-|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
+|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
 |**Minimum supported server** |None supported|   
 |**Minimum supported phone**  |None supported |    
 
@@ -606,7 +605,7 @@ The specified deferred permission request.
 
 |            |      |
 |------------|------|
-|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
+|**Minimum supported client** |Windows 10 [Windows Store apps only] |    
 |**Minimum supported server** |None supported|   
 |**Minimum supported phone**  |None supported | 
 
@@ -827,7 +826,6 @@ Gets or sets the height of the **webview**.
 ```js
 var height = webview.height;
 webview.height = height;
-
 ```
 
 #### Property value
@@ -844,7 +842,6 @@ This property is read-only.
 ```js
 var settings = webview.settings;
 webview.settings = settings;
-
 ```
 
 #### Property value

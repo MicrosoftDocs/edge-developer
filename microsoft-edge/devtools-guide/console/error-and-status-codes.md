@@ -31,43 +31,44 @@ WebGL11_xxx | WebGL | Error messages from the WebGL context. See also [GLSL erro
 ## CSP codes
 Resources blocked by the use of a `Content-Security-Policy` HTTP header are reported through the  DevTools Console and optionally as a report back to the server.
 
-Code | Message | Description | Suggested fix
-:------------ | :------------- | :------------- | :-------------
-| CSP14301 | “Failed parsing [the policy type] because `<the reason for canceling the operation>` --  policy will be ignored.” | The security policy type specified (ie. script-src, base-uri, etc) failed for the reason identified and will be ignored. | Be sure to list all required resources of a specific type in a single directive. For example, in this: `script-src https://host1.com; script-src https://host2.com` the second directive would be ignored. The following would correctly specify both origins as valid: `script-src https://host1.com https://host2.com`. |
-| CSP14302 | "Failed parsing source in[policy type] for directive[directive type] at [source URL] -- source will be ignored." | Most CSP directives require one or more content sources (indicating a URL that content can be loaded from). This error points out a policy with a directive that contains a source URL that failed when parsing was attempted. | Check the content source (most often a URL) that is defined in the specified directive which you can find in the specified policy type. Correct or replace the source URL or remove the directive. <br> **Your policy should include a default-src policy directive, which is a fallback for other resource types when they don't have policies of their own.* |
-| CSP14303 | "[Policy type] policy was empty." | The policy type (ie. Content-Security-Policy in the HTTP header) is empty. | A quick reference for setting up a Content Security Policy can be found at [http://content-security-policy.com/](http://content-security-policy.com/) |
-| CSP14304 | "Unknown source [source URL] for directive [directive type] in [policy type] source will be ignored." | The sources for approved (safe) content in the directive identified are unknown and will be ignored. | Check the content source identified (often this is a URL) to be sure it is correct. |
-| CSP14305 | "Unsupported source[source URL] for directive[directive type] in [policy type] source will be ignored." | The source (URL, Keyword, or Data) listed in this directive is not supported and will be ignored. | The source site's address may include an optional leading wildcard (the asterisk character, '*'). For example, http://*.foo.com or mail.foo.com:*. The hosts are space-delimited. Sources may also be keywords (none, self, unsafe-inline, and unsafe-eval are supported) or data (data:URIs, mediastream:URIs). |
-| CSP14306 | "No sources given for directive [directive type] for[policy type] -- this is equivalent to using 'none' and will prevent the downloading of all resources of this type." | Giving a directive and not listing any sources for safe content to access is the same as not allowing any resources of the type specified in the directive to be downloaded. | A source can be one or more Internet host names or IP addresses, as well as an optional URL scheme and/or port number. |
-| CSP14307 | "Source [source URL]was already provided for directive [directive type] for[policy type]." | A duplicate source (URL, Keyword, or Data) has been listed in this directive and will be ignored. | Remove the duplicate source identified. |
-| CSP14308 | "Failed parsing directive in[policy type] at [directive name]." | The directive identified failed. For a reference list of how to write supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). | Directives must be separated with semicolons. If, for example, you have an application that loads all of it’s resources from a content delivery network, e.g. `https://cdn.example.net`, and know that you don’t need framed content or any plugins, then your policy might look like: `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` **While directives are separated with semicolons, sources within a directive are not, but should only be separated with a space.* |
-| CSP14309 | "Unknown directive in[directive name] in [policy type] -- directive will be ignored." | The directive set in the CSP policy is not known and will be ignored. | For a list of supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). |
-| CSP14310 | "Unsupported directive[directive name] in [policy type] -- directive will be ignored." | A directive was found during parsing in the policy type (ie.`Content-Security-policy-Report-Only` header field) that is not supported and will be ignored. For supported directives, see [http://content-security-policy.com](http://content-security-policy.com/). | Remove the unsupported directive. *Some directives are not supported in the `<meta>` element or in the `Content-Security-policy-Report-Only` header field. |
-| CSP14311 | "Directive [directive name]was already provided in[policy type] -- duplicate directive will be ignored." | A duplicate directive was found during parsing, the second directive and its source-expressions will be ignored. | Remove the duplicate script. |
-| CSP14312 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will be blocked." | In this example: "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked." | An inline script (target uri) was blocked due to the directive `'script-src ms-appx: data: 'unsafe-eval'` in the 'host defined' policy.<br> Authors need to move all inline script and style out-of-line because the user agent cannot determine whether an inline script was injected by an attacker. Remove inline script and place it in an external file. |
-| CSP14313 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will not be blocked due to policy being report-only." | A resource was identified that violates the directive specified in the `Content-Security-policy-Report-Only` header field. Because it is in a `Report-Only` policy type, the resource will not be blocked. | Move the directive into a Content-Security-policy header field if this resource should be blocked in order to protect your site. |
-| CSP14314 | "Failed to send policy violation report to [target destination uri] because [reason for canceling the operation]." | There was a problem with reporting a policy violation, the target destination where the report is designated to be sent and the reason for not sending it should be identified. | The `report-uri` directive specifies a URL where a browser will send reports when a content security policy is violated. **It cant be used in `<meta>` tags.* |
-| CSP14315 | "Failed to enforce sandbox directive in [policy type] because [reason for canceling the operation]." | The sandbox directive failed for the reasons specified. This directive places restrictions on actions the page can take, rather than on resources that the page can load. If the sandbox directive is present, the page will be treated as though it was loaded inside of an iframe. It can prevent popups, plugins and block script execution. | Keep the sandbox value empty to keep all restrictions in place, or add values: `allow-forms` `allow-same-origin` `allow-scripts`, and `allow-top-navigation`. **The sandbox directive is not supported in the `<meta>` element or in the `Content-Security-policy-Report-Only` header field.* |
-| CSP14316 | "Script eval being allowed due to host override." | When either the `script-src` or the `default-src` directive is included, inline script and `eval()` are disabled unless you specify 'unsafe-inline' and 'unsafe-eval', respectively. | `'unsafe-eval'` allows the use of `eval()` and similar methods for creating code from strings. You must include the single quotes. *Note: This is unsafe and can open your web site up to cross-site scripting vulnerabilities.* |
-| CSP14317 | "Frame [source name] being allowed due to host override." | The source frame identified has been allowed due to an override set in the host CSP policy. | A policy may contain a nonce-source expression, meaning that the source can only be used on one occasion and the server must generate a fresh value for the directive each time it transmits a policy. Nonces override the restrictions in the directive in which they are present. |
+
+| Code     | Message                                                                                                                                                                  | Description                                                                                                                                                                                                                                                                                                                                     | Suggested fix                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|:---------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CSP14301 | “Failed parsing [the policy type] because `<the reason for canceling the operation>` --  policy will be ignored.”                                                        | The security policy type specified (ie. script-src, base-uri, etc) failed for the reason identified and will be ignored.                                                                                                                                                                                                                        | Be sure to list all required resources of a specific type in a single directive. For example, in this: `script-src https://host1.com; script-src https://host2.com` the second directive would be ignored. The following would correctly specify both origins as valid: `script-src https://host1.com https://host2.com`.                                                                                                                                                                                                            |
+| CSP14302 | "Failed parsing source in[policy type] for directive[directive type] at [source URL] -- source will be ignored."                                                         | Most CSP directives require one or more content sources (indicating a URL that content can be loaded from). This error points out a policy with a directive that contains a source URL that failed when parsing was attempted.                                                                                                                  | Check the content source (most often a URL) that is defined in the specified directive which you can find in the specified policy type. Correct or replace the source URL or remove the directive. <br> <em>*Your policy should include a default-src policy directive, which is a fallback for other resource types when they don't have policies of their own.</em>                                                                                                                                                                |
+| CSP14303 | "[Policy type] policy was empty."                                                                                                                                        | The policy type (ie. Content-Security-Policy in the HTTP header) is empty.                                                                                                                                                                                                                                                                      | A quick reference for setting up a Content Security Policy can be found at [http://content-security-policy.com/](http://content-security-policy.com/)                                                                                                                                                                                                                                                                                                                                                                                |
+| CSP14304 | "Unknown source [source URL] for directive [directive type] in [policy type] source will be ignored."                                                                    | The sources for approved (safe) content in the directive identified are unknown and will be ignored.                                                                                                                                                                                                                                            | Check the content source identified (often this is a URL) to be sure it is correct.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| CSP14305 | "Unsupported source[source URL] for directive[directive type] in [policy type] source will be ignored."                                                                  | The source (URL, Keyword, or Data) listed in this directive is not supported and will be ignored.                                                                                                                                                                                                                                               | The source site's address may include an optional leading wildcard (the asterisk character, '<em>'). For example, http://</em>.foo.com or mail.foo.com:*. The hosts are space-delimited. Sources may also be keywords (none, self, unsafe-inline, and unsafe-eval are supported) or data (data:URIs, mediastream:URIs).                                                                                                                                                                                                              |
+| CSP14306 | "No sources given for directive [directive type] for[policy type] -- this is equivalent to using 'none' and will prevent the downloading of all resources of this type." | Giving a directive and not listing any sources for safe content to access is the same as not allowing any resources of the type specified in the directive to be downloaded.                                                                                                                                                                    | A source can be one or more Internet host names or IP addresses, as well as an optional URL scheme and/or port number.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| CSP14307 | "Source [source URL]was already provided for directive [directive type] for[policy type]."                                                                               | A duplicate source (URL, Keyword, or Data) has been listed in this directive and will be ignored.                                                                                                                                                                                                                                               | Remove the duplicate source identified.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| CSP14308 | "Failed parsing directive in[policy type] at [directive name]."                                                                                                          | The directive identified failed. For a reference list of how to write supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                                                                                                                      | Directives must be separated with semicolons. If, for example, you have an application that loads all of it’s resources from a content delivery network, e.g. `https://cdn.example.net`, and know that you don’t need framed content or any plugins, then your policy might look like: `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` <em>*While directives are separated with semicolons, sources within a directive are not, but should only be separated with a space.</em> |
+| CSP14309 | "Unknown directive in[directive name] in [policy type] -- directive will be ignored."                                                                                    | The directive set in the CSP policy is not known and will be ignored.                                                                                                                                                                                                                                                                           | For a list of supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| CSP14310 | "Unsupported directive[directive name] in [policy type] -- directive will be ignored."                                                                                   | A directive was found during parsing in the policy type (ie.`Content-Security-policy-Report-Only` header field) that is not supported and will be ignored. For supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                             | Remove the unsupported directive. *Some directives are not supported in the `<meta>` element or in the `Content-Security-policy-Report-Only` header field.                                                                                                                                                                                                                                                                                                                                                                           |
+| CSP14311 | "Directive [directive name]was already provided in[policy type] -- duplicate directive will be ignored."                                                                 | A duplicate directive was found during parsing, the second directive and its source-expressions will be ignored.                                                                                                                                                                                                                                | Remove the duplicate script.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| CSP14312 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will be blocked."                                                                  | In this example: "Resource violated directive 'script-src ms-appx: data: 'unsafe-eval' in Host Defined Policy: inline script. Resource will be blocked."                                                                                                                                                                                        | An inline script (target uri) was blocked due to the directive `'script-src ms-appx: data: 'unsafe-eval'` in the 'host defined' policy.<br> Authors need to move all inline script and style out-of-line because the user agent cannot determine whether an inline script was injected by an attacker. Remove inline script and place it in an external file.                                                                                                                                                                        |
+| CSP14313 | "Resource violated directive[directive name] in [policy type]: [target uri]. Resource will not be blocked due to policy being report-only."                              | A resource was identified that violates the directive specified in the `Content-Security-policy-Report-Only` header field. Because it is in a `Report-Only` policy type, the resource will not be blocked.                                                                                                                                      | Move the directive into a Content-Security-policy header field if this resource should be blocked in order to protect your site.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| CSP14314 | "Failed to send policy violation report to [target destination uri] because [reason for canceling the operation]."                                                       | There was a problem with reporting a policy violation, the target destination where the report is designated to be sent and the reason for not sending it should be identified.                                                                                                                                                                 | The `report-uri` directive specifies a URL where a browser will send reports when a content security policy is violated. <em>*It cant be used in `<meta>` tags.</em>                                                                                                                                                                                                                                                                                                                                                                 |
+| CSP14315 | "Failed to enforce sandbox directive in [policy type] because [reason for canceling the operation]."                                                                     | The sandbox directive failed for the reasons specified. This directive places restrictions on actions the page can take, rather than on resources that the page can load. If the sandbox directive is present, the page will be treated as though it was loaded inside of an iframe. It can prevent popups, plugins and block script execution. | Keep the sandbox value empty to keep all restrictions in place, or add values: `allow-forms` `allow-same-origin` `allow-scripts`, and `allow-top-navigation`. <em>*The sandbox directive is not supported in the `<meta>` element or in the `Content-Security-policy-Report-Only` header field.</em>                                                                                                                                                                                                                                 |
+| CSP14316 | "Script eval being allowed due to host override."                                                                                                                        | When either the `script-src` or the `default-src` directive is included, inline script and `eval()` are disabled unless you specify 'unsafe-inline' and 'unsafe-eval', respectively.                                                                                                                                                            | `'unsafe-eval'` allows the use of `eval()` and similar methods for creating code from strings. You must include the single quotes. <em>Note: This is unsafe and can open your web site up to cross-site scripting vulnerabilities.</em>                                                                                                                                                                                                                                                                                              |
+| CSP14317 | "Frame [source name] being allowed due to host override."                                                                                                                | The source frame identified has been allowed due to an override set in the host CSP policy.                                                                                                                                                                                                                                                     | A policy may contain a nonce-source expression, meaning that the source can only be used on one occasion and the server must generate a fresh value for the directive each time it transmits a policy. Nonces override the restrictions in the directive in which they are present.                                                                                                                                                                                                                                                  |
 
 **Note** For websites in a user's trusted security zone, Microsoft Edge won't check the MIME type of a style sheet.
 
 ## CSS codes
 These errors are in the form CSS31xx and are related to *Web Open Font Format* (WOFF), and *Embedded OpenType* (EOT) font source and host server problems..
 
-Code | Message | Description | Suggested fix
-:------------ | :------------- | :------------- | :-------------
-CSS3111 | "@font-face encountered unknown error" | An unknown problem was encountered with the "Web Open Font Format (WOFF)", and "Embedded OpenType font (EOT)" of the Cascading Style Sheets (CSS) font. | Check source of "WOFF" fonts. Try alternate font face or source to see if you can reproduce the problem.
-CSS3112 | "@font-face failed WOFF integrity check" | The "Web Open Font Format (WOFF)" font is possibly corrupted, incomplete, or not the correct format. | Check source of the fonts. Try a known good font face or source to see if you can reproduce the problem.
-CSS3113 | "@font-face mismatch between document origin and EOT root string" | The font cannot be used because the URL(rootstring) in the "Embedded OpenType font (EOT)" doesn't match the domain of the document using the font. | The URL checksum in the "EOT" rootstring might be incorrect, indicating a corrupted or altered URL for the font. Make sure that the font is licensed or has permissions for the website where the fonts are being used.
-CSS3114 | "@font-face failed OpenType embedding permission check. Permission must be Installable." | The font-face doesn't have permissions to install with the current webpage. | Get the correct permission or licenses for embedding the font.
-CSS3115 | "@font-face unable to load invalid OpenType font." | The font-face is not valid for this use. | Get the permission or licenses for the current and valid font-face.
-CSS3116 | "@font-face failed cross-origin request. No Access-Control-Allow-Origin header." | The font might not be configured for cross-domain access. | The font isn't served from the same origin as the document. Make sure that the host serving the font allows the use of this font by using the "Access-Control-Allow-Origin"HTTP header.
-CSS3117 | "@font-face failed cross-origin request. Resource access is restricted." | The "Access-Control-Allow-Origin" header might not be configured correctly or the font host might not allow this font to be used by your page. | Make sure that the resource has correct permissions and a correctly configured HTTP response header that has cross-domain access origin on the host serving the fonts.
-CSS3118 | "Failed to create new stylesheet. There are more than [maximum] stylesheets in the document." | Microsoft Edge has created more than 4095 stylesheet objects during the process of rendering your page. | This might be an out-of-control JavaScript process or a build system error. Reduce the number of stylesheet objects being generated.
-CSS3119 | "The media query -ms-view-state has been deprecated. -ms-view-state media queries may be altered or unavailable for releases after Windows 8.1. Instead, use max-width and min-width queries." | Your CSS contains an `-ms-view-state` media query. | Use max-width and min-width.
 
+| Code    | Message                                                                                                                                                                                        | Description                                                                                                                                             | Suggested fix                                                                                                                                                                                                           |
+|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CSS3111 | "@font-face encountered unknown error"                                                                                                                                                         | An unknown problem was encountered with the "Web Open Font Format (WOFF)", and "Embedded OpenType font (EOT)" of the Cascading Style Sheets (CSS) font. | Check source of "WOFF" fonts. Try alternate font face or source to see if you can reproduce the problem.                                                                                                                |
+| CSS3112 | "@font-face failed WOFF integrity check"                                                                                                                                                       | The "Web Open Font Format (WOFF)" font is possibly corrupted, incomplete, or not the correct format.                                                    | Check source of the fonts. Try a known good font face or source to see if you can reproduce the problem.                                                                                                                |
+| CSS3113 | "@font-face mismatch between document origin and EOT root string"                                                                                                                              | The font cannot be used because the URL(rootstring) in the "Embedded OpenType font (EOT)" doesn't match the domain of the document using the font.      | The URL checksum in the "EOT" rootstring might be incorrect, indicating a corrupted or altered URL for the font. Make sure that the font is licensed or has permissions for the website where the fonts are being used. |
+| CSS3114 | "@font-face failed OpenType embedding permission check. Permission must be Installable."                                                                                                       | The font-face doesn't have permissions to install with the current webpage.                                                                             | Get the correct permission or licenses for embedding the font.                                                                                                                                                          |
+| CSS3115 | "@font-face unable to load invalid OpenType font."                                                                                                                                             | The font-face is not valid for this use.                                                                                                                | Get the permission or licenses for the current and valid font-face.                                                                                                                                                     |
+| CSS3116 | "@font-face failed cross-origin request. No Access-Control-Allow-Origin header."                                                                                                               | The font might not be configured for cross-domain access.                                                                                               | The font isn't served from the same origin as the document. Make sure that the host serving the font allows the use of this font by using the "Access-Control-Allow-Origin"HTTP header.                                 |
+| CSS3117 | "@font-face failed cross-origin request. Resource access is restricted."                                                                                                                       | The "Access-Control-Allow-Origin" header might not be configured correctly or the font host might not allow this font to be used by your page.          | Make sure that the resource has correct permissions and a correctly configured HTTP response header that has cross-domain access origin on the host serving the fonts.                                                  |
+| CSS3118 | "Failed to create new stylesheet. There are more than [maximum] stylesheets in the document."                                                                                                  | Microsoft Edge has created more than 4095 stylesheet objects during the process of rendering your page.                                                 | This might be an out-of-control JavaScript process or a build system error. Reduce the number of stylesheet objects being generated.                                                                                    |
+| CSS3119 | "The media query -ms-view-state has been deprecated. -ms-view-state media queries may be altered or unavailable for releases after Windows 8.1. Instead, use max-width and min-width queries." | Your CSS contains an `-ms-view-state` media query.                                                                                                      | Use max-width and min-width.                                                                                                                                                                                            |
 
 ## HTML codes
 
@@ -93,66 +94,67 @@ The following warnings can occur as part of the validation performed during HTML
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning,  will include line and character offset information along with a link pointing to the location where the problem was found.
 
-Code | Message
-:------------ | :-------------
-HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."
-HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expected [0-9], [a-f], or [A-F]."
-HTML1402 | "Character reference is missing an ending semicolon ";"."
-HTML1403 | "Numeric character reference does not resolve to a valid character."
-HTML1404 | "Unrecognized named character reference."
-HTML1405 | "Invalid character: U+0000 NULL. Null characters should not be used."
-HTML1406 | "Invalid tag start: `<?`. Question marks should not start tags."
-HTML1407 | "Invalid tag name. First character should match [a-zA-Z]."
-HTML1408 | "Invalid end tag `</>`. End tags should not be empty."
-HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)."
-HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)."
-HTML1411 | "Unexpected end of file."
-HTML1412 | "Malformed comment. Comments should start with `<!-- `."
-HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)"
-HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)"
-HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)"
-HTML1416 | "Unexpected character in comment end. Expected "-->"."
-HTML1417 | "Empty DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`."
-HTML1418 | "Unexpected character in DOCTYPE."
-HTML1419 | "Unexpected keyword in DOCTYPE. Expected "PUBLIC" or "SYSTEM"."
-HTML1420 | "Unexpected quote after "PUBLIC" or "SYSTEM" keyword. Expected whitespace."
-HTML1421 | "Malformed end tag. End tags should not contain attributes."
-HTML1422 | "Malformed start tag. A self closing slash should be followed by a U+003E GREATER-THAN SIGN (>)."
-HTML1423 | "Malformed start tag. Attributes should be separated by whitespace."
-HTML1424 | "Invalid character	"
-HTML1500 | "Tag cannot be self-closing. Use an explicit closing tag."
-HTML1501 | "Unexpected end of file."
-HTML1502 | "Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements."
-HTML1503 | "Unexpected start tag."
-HTML1504 | "Unexpected end tag."
-HTML1505 | "Unexpected character token."
-HTML1506 | "Unexpected token."
-HTML1507 | "Unexpected character: U+0000 NULL. Null characters should not be used."
-HTML1508 | "Unmatched end tag."
-HTML1509 | "Unmatched end tag."
-HTML1510 | "Required nodes not in scope."
-HTML1511 | "Unexpected head-level element encountered outside of `<head>`."
-HTML1512 | "Unmatched end tag."
-HTML1513 | "Extra `<html>` tag found. Only one `<html>` tag should exist per document."
-HTML1514 | "Extra `<body>` tag found. Only one `<body>` tag should exist per document."
-HTML1515 | "Found `<frameset>` too far down in the document. This tag should occur before a `<body>` is created."
-HTML1516 | "Invalid nesting. A header tag such as `<h1>` or `<h2>` should not be placed within another header tag."
-HTML1517 | "Invalid nesting. A `<form>` tag should not be placed within another `<form>`."
-HTML1518 | "Invalid nesting. A `<button>` tag should not be placed within another `<button>`."
-HTML1519 | "Invalid nesting. An `<a>` tag should not be placed within another `<a>`."
-HTML1520 | "Unexpected start tag: The `<isindex>` element is deprecated and should not be used."
-HTML1521 | "Unexpected `</body>` or end of file. All open elements should be closed before the end of the document."
-HTML1522 | "Invalid end tag: `</br>`. Use `<br>` or `<br/>` instead."
-HTML1523 | "Overlapping end tag. Tags should be structured like `<b><i></i></b>` instead of `<b><i></b></i>`."
-HTML1524 | "Invalid DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`."
-HTML1525 | "Unexpected HTML tag found inside foreign content (MathML/SVG)."
-HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another `<nobr>`."
-HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`."
-HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead."
-HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "http://www.w3.org/1999/xlink"."
-HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements."
-HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "http://www.w3.org/2000/svg/"."
-HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "http://www.w3.org/1998/Math/MathML/".
+
+| Code     | Message                                                                                                                       |
+|:---------|:------------------------------------------------------------------------------------------------------------------------------|
+| HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."                                               |
+| HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expected [0-9], [a-f], or [A-F]."                  |
+| HTML1402 | "Character reference is missing an ending semicolon ";"."                                                                     |
+| HTML1403 | "Numeric character reference does not resolve to a valid character."                                                          |
+| HTML1404 | "Unrecognized named character reference."                                                                                     |
+| HTML1405 | "Invalid character: U+0000 NULL. Null characters should not be used."                                                         |
+| HTML1406 | "Invalid tag start: `<?`. Question marks should not start tags."                                                              |
+| HTML1407 | "Invalid tag name. First character should match [a-zA-Z]."                                                                    |
+| HTML1408 | "Invalid end tag `</>`. End tags should not be empty."                                                                        |
+| HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)."                                   |
+| HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)."                  |
+| HTML1411 | "Unexpected end of file."                                                                                                     |
+| HTML1412 | "Malformed comment. Comments should start with `<!-- `."                                                                      |
+| HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)"                                                                          |
+| HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)"                                                                           |
+| HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)"                                                                               |
+| HTML1416 | "Unexpected character in comment end. Expected "-->"."                                                                        |
+| HTML1417 | "Empty DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`."                                                             |
+| HTML1418 | "Unexpected character in DOCTYPE."                                                                                            |
+| HTML1419 | "Unexpected keyword in DOCTYPE. Expected "PUBLIC" or "SYSTEM"."                                                               |
+| HTML1420 | "Unexpected quote after "PUBLIC" or "SYSTEM" keyword. Expected whitespace."                                                   |
+| HTML1421 | "Malformed end tag. End tags should not contain attributes."                                                                  |
+| HTML1422 | "Malformed start tag. A self closing slash should be followed by a U+003E GREATER-THAN SIGN (>)."                             |
+| HTML1423 | "Malformed start tag. Attributes should be separated by whitespace."                                                          |
+| HTML1424 | "Invalid character   "                                                                                                        |
+| HTML1500 | "Tag cannot be self-closing. Use an explicit closing tag."                                                                    |
+| HTML1501 | "Unexpected end of file."                                                                                                     |
+| HTML1502 | "Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements."                                      |
+| HTML1503 | "Unexpected start tag."                                                                                                       |
+| HTML1504 | "Unexpected end tag."                                                                                                         |
+| HTML1505 | "Unexpected character token."                                                                                                 |
+| HTML1506 | "Unexpected token."                                                                                                           |
+| HTML1507 | "Unexpected character: U+0000 NULL. Null characters should not be used."                                                      |
+| HTML1508 | "Unmatched end tag."                                                                                                          |
+| HTML1509 | "Unmatched end tag."                                                                                                          |
+| HTML1510 | "Required nodes not in scope."                                                                                                |
+| HTML1511 | "Unexpected head-level element encountered outside of `<head>`."                                                              |
+| HTML1512 | "Unmatched end tag."                                                                                                          |
+| HTML1513 | "Extra `<html>` tag found. Only one `<html>` tag should exist per document."                                                  |
+| HTML1514 | "Extra `<body>` tag found. Only one `<body>` tag should exist per document."                                                  |
+| HTML1515 | "Found `<frameset>` too far down in the document. This tag should occur before a `<body>` is created."                        |
+| HTML1516 | "Invalid nesting. A header tag such as `<h1>` or `<h2>` should not be placed within another header tag."                      |
+| HTML1517 | "Invalid nesting. A `<form>` tag should not be placed within another `<form>`."                                               |
+| HTML1518 | "Invalid nesting. A `<button>` tag should not be placed within another `<button>`."                                           |
+| HTML1519 | "Invalid nesting. An `<a>` tag should not be placed within another `<a>`."                                                    |
+| HTML1520 | "Unexpected start tag: The `<isindex>` element is deprecated and should not be used."                                         |
+| HTML1521 | "Unexpected `</body>` or end of file. All open elements should be closed before the end of the document."                     |
+| HTML1522 | "Invalid end tag: `</br>`. Use `<br>` or `<br/>` instead."                                                                    |
+| HTML1523 | "Overlapping end tag. Tags should be structured like `<b><i></i></b>` instead of `<b><i></b></i>`."                           |
+| HTML1524 | "Invalid DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`."                                                           |
+| HTML1525 | "Unexpected HTML tag found inside foreign content (MathML/SVG)."                                                              |
+| HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another `<nobr>`."                                               |
+| HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`."                                                          |
+| HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead."                                                                  |
+| HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "<http://www.w3.org/1999/xlink>"."                                    |
+| HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." |
+| HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "<http://www.w3.org/2000/svg/>"."                          |
+| HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "<http://www.w3.org/1998/Math/MathML/>".                |
 
 ## HTTP Codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page/document specified in the URI.
@@ -239,92 +241,94 @@ SVG5602 | "SVG Point list has incorrect format and could not be completely parse
 ## XML codes
 XML codes are in the form of XML5xxx, such as XML5603.
 
-Code | Message
-:------------ | :-------------
-XML5001 | "Applying Integrated XSLT Handling."
-XML5601 | "MX_E_MX"
-XML5602 | "Unexpected end of input."
-XML5603 | "Unrecognized encoding."
-XML5604 | "Unable to switch the encoding."
-XML5605 | "Unrecognized input encoding signature."
-XML5606 | "WC_E_WC"
-XML5607 | "Whitespace expected."
-XML5608 | "Semicolon expected."
-XML5609 | "Expected ">"."
-XML5610 | "Quote character expected."
-XML5611 | "Expected "="."
-XML5612 | "The < character is not allowed in attributes values."
-XML5613 | "Hexadecimal digit expected."
-XML5614 | "Decimal digit expected."
-XML5615 | "Expected "["."
-XML5616 | "Expected "("."
-XML5617 | "Illegal XML character."
-XML5618 | "Illegal name character."
-XML5619 | "Incorrect document syntax."
-XML5620 | "Incorrect CDATA section syntax."
-XML5621 | "Incorrect comment syntax."
-XML5622 | "Incorrect conditional section syntax."
-XML5623 | "Incorrect ATTLIST declaration syntax."
-XML5624 | "Incorrect DOCTYPE declaration syntax."
-XML5625 | "Incorrect ELEMENT declaration syntax."
-XML5626 | "Incorrect ENTITY declaration syntax."
-XML5627 | "Incorrect NOTATION declaration syntax."
-XML5628 | "Expected "NDATA"."
-XML5629 | "Expected "PUBLIC"."
-XML5630 | "Expected "SYSTEM"."
-XML5631 | "Invalid name."
-XML5632 | "Only one root element is allowed."
-XML5633 | "End-tag name does not match the corresponding start-tag name."
-XML5634 | "An attribute with the same name already exists on this element."
-XML5635 | "An XML declaration is only allowed at the beginning of the file."
-XML5636 | "Leading "xml"."
-XML5637 | "Incorrect text declaration syntax."
-XML5638 | "Incorrect XML declaration syntax."
-XML5639 | "Incorrect encoding name syntax."
-XML5640 | "Incorrect public identifier syntax."
-XML5641 | "Parameter entity references are not allowed within markup declarations in an internal DTD subset."
-XML5642 | "The replacement text for parameter entity references used between markup declarations must itself contain a series of complete markup declarations."
-XML5643 | "A parsed entity must not contain a direct or indirect reference to itself."
-XML5644 | "The content of the specified entity is not well-formed."
-XML5645 | "The specified entity has not been declared."
-XML5646 | "Entity reference cannot contain the name of an unparsed entity."
-XML5647 | "Attribute values must not contain direct or indirect references to external entities."
-XML5648 | "Incorrect processing instruction syntax."
-XML5649 | "Incorrect system identifier syntax."
-XML5650 | "Expected a question mark (?)."
-XML5651 | "The CDATA-section-close delimiter "]]>" must not be used in element content."
-XML5652 | "Not all chunks of data have been read."
-XML5653 | "DTD was found but is prohibited."
-XML5654 | "Found xml:space attribute with invalid value. Valid values are "preserve" or "default"."
-XML5655 | "NC_E_NC"
-XML5656 | "Illegal qualified name character."
-XML5657 | "Multiple colons ":" must not occur in a qualified name."
-XML5658 | "A colon ":" must not occur in a name."
-XML5659 | "Declared prefix."
-XML5660 | "The specified prefix has not been declared."
-XML5661 | "Non-default namespace declarations must not have an empty URI."
-XML5662 | "The "xml" prefix is reserved and must have the URI "http://www.w3.org/XML/1998/namespace/"."
-XML5663 | "The "xmlns" prefix is reserved for use by XML."
-XML5664 | "The xml namespace URI (http://www.w3.org/XML/1998/namespace/) must only be assigned to the prefix "xml"."
-XML5665 | "The xmlns namespace URI (http://www.w3.org/2000/xmlns/) is reserved and must not be used."
-XML5666 | "SC_E_SC"
-XML5667 | "Exceeded maximum depth of nested elements."
-XML5668 | "Exceeded maximum number of entity expansions."
-XML5669 | "WR_E_WR"
-XML5670 | "WR_E_NONWHITESPACE: writer: specified string is not whitespace."
-XML5671 | "WR_E_NSPREFIXDECLARED: writer: namespace prefix is already declared with a different namespace."
-XML5672 | "WR_E_NSPREFIXWITHEMPTYNSURI: writer: cannot use prefix with empty namespace URI."
-XML5673 | "WR_E_DUPLICATEATTRIBUTE: writer: duplicate attribute."
-XML5674 | "WR_E_XMLNSPREFIXDECLARATION: writer: can not redefine the xmlns prefix."
-XML5675 | "WR_E_XMLPREFIXDECLARATION: writer: xml prefix must have the http://www.w3.org/XML/1998/namespace/ URI."
-XML5676 | "WR_E_XMLURIDECLARATION: writer: xml namespace URI (http://www.w3.org/XML/1998/namespace/) must be assigned only to prefix "xml"."
-XML5677 | "WR_E_XMLNSURIDECLARATION: writer: xmlns namespace URI (http://www.w3.org/2000/xmlns/) is reserved and must not be used."
-XML5678 | "WR_E_NAMESPACEUNDECLARED: writer: namespace is not declared."
-XML5679 | "WR_E_INVALIDXMLSPACE: writer: invalid value of xml:space attribute (allowed values are "default" and "preserve")."
-XML5680 | "WR_E_INVALIDACTION: writer: performing the requested action would result in invalid XML document."
-XML5681 | "WR_E_INVALIDSURROGATEPAIR: writer: input contains invalid or incomplete surrogate pair."
-XML5682 | "Unexpected character in character entity. Expected a decimal digit."
-XML5683 | "Unexpected character in character entity. Expected a hexadecimal digit."
-XML5684 | "The Unicode value of the specified character entity is invalid."
-XML5685 | "Invalid encoding."
-XML5686 | "Unspecified XML error."
+
+| Code    | Message                                                                                                                                               |
+|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+| XML5001 | "Applying Integrated XSLT Handling."                                                                                                                  |
+| XML5601 | "MX_E_MX"                                                                                                                                             |
+| XML5602 | "Unexpected end of input."                                                                                                                            |
+| XML5603 | "Unrecognized encoding."                                                                                                                              |
+| XML5604 | "Unable to switch the encoding."                                                                                                                      |
+| XML5605 | "Unrecognized input encoding signature."                                                                                                              |
+| XML5606 | "WC_E_WC"                                                                                                                                             |
+| XML5607 | "Whitespace expected."                                                                                                                                |
+| XML5608 | "Semicolon expected."                                                                                                                                 |
+| XML5609 | "Expected ">"."                                                                                                                                       |
+| XML5610 | "Quote character expected."                                                                                                                           |
+| XML5611 | "Expected "="."                                                                                                                                       |
+| XML5612 | "The < character is not allowed in attributes values."                                                                                                |
+| XML5613 | "Hexadecimal digit expected."                                                                                                                         |
+| XML5614 | "Decimal digit expected."                                                                                                                             |
+| XML5615 | "Expected "["."                                                                                                                                       |
+| XML5616 | "Expected "("."                                                                                                                                       |
+| XML5617 | "Illegal XML character."                                                                                                                              |
+| XML5618 | "Illegal name character."                                                                                                                             |
+| XML5619 | "Incorrect document syntax."                                                                                                                          |
+| XML5620 | "Incorrect CDATA section syntax."                                                                                                                     |
+| XML5621 | "Incorrect comment syntax."                                                                                                                           |
+| XML5622 | "Incorrect conditional section syntax."                                                                                                               |
+| XML5623 | "Incorrect ATTLIST declaration syntax."                                                                                                               |
+| XML5624 | "Incorrect DOCTYPE declaration syntax."                                                                                                               |
+| XML5625 | "Incorrect ELEMENT declaration syntax."                                                                                                               |
+| XML5626 | "Incorrect ENTITY declaration syntax."                                                                                                                |
+| XML5627 | "Incorrect NOTATION declaration syntax."                                                                                                              |
+| XML5628 | "Expected "NDATA"."                                                                                                                                   |
+| XML5629 | "Expected "PUBLIC"."                                                                                                                                  |
+| XML5630 | "Expected "SYSTEM"."                                                                                                                                  |
+| XML5631 | "Invalid name."                                                                                                                                       |
+| XML5632 | "Only one root element is allowed."                                                                                                                   |
+| XML5633 | "End-tag name does not match the corresponding start-tag name."                                                                                       |
+| XML5634 | "An attribute with the same name already exists on this element."                                                                                     |
+| XML5635 | "An XML declaration is only allowed at the beginning of the file."                                                                                    |
+| XML5636 | "Leading "xml"."                                                                                                                                      |
+| XML5637 | "Incorrect text declaration syntax."                                                                                                                  |
+| XML5638 | "Incorrect XML declaration syntax."                                                                                                                   |
+| XML5639 | "Incorrect encoding name syntax."                                                                                                                     |
+| XML5640 | "Incorrect public identifier syntax."                                                                                                                 |
+| XML5641 | "Parameter entity references are not allowed within markup declarations in an internal DTD subset."                                                   |
+| XML5642 | "The replacement text for parameter entity references used between markup declarations must itself contain a series of complete markup declarations." |
+| XML5643 | "A parsed entity must not contain a direct or indirect reference to itself."                                                                          |
+| XML5644 | "The content of the specified entity is not well-formed."                                                                                             |
+| XML5645 | "The specified entity has not been declared."                                                                                                         |
+| XML5646 | "Entity reference cannot contain the name of an unparsed entity."                                                                                     |
+| XML5647 | "Attribute values must not contain direct or indirect references to external entities."                                                               |
+| XML5648 | "Incorrect processing instruction syntax."                                                                                                            |
+| XML5649 | "Incorrect system identifier syntax."                                                                                                                 |
+| XML5650 | "Expected a question mark (?)."                                                                                                                       |
+| XML5651 | "The CDATA-section-close delimiter "]]>" must not be used in element content."                                                                        |
+| XML5652 | "Not all chunks of data have been read."                                                                                                              |
+| XML5653 | "DTD was found but is prohibited."                                                                                                                    |
+| XML5654 | "Found xml:space attribute with invalid value. Valid values are "preserve" or "default"."                                                             |
+| XML5655 | "NC_E_NC"                                                                                                                                             |
+| XML5656 | "Illegal qualified name character."                                                                                                                   |
+| XML5657 | "Multiple colons ":" must not occur in a qualified name."                                                                                             |
+| XML5658 | "A colon ":" must not occur in a name."                                                                                                               |
+| XML5659 | "Declared prefix."                                                                                                                                    |
+| XML5660 | "The specified prefix has not been declared."                                                                                                         |
+| XML5661 | "Non-default namespace declarations must not have an empty URI."                                                                                      |
+| XML5662 | "The "xml" prefix is reserved and must have the URI "<http://www.w3.org/XML/1998/namespace/>"."                                                       |
+| XML5663 | "The "xmlns" prefix is reserved for use by XML."                                                                                                      |
+| XML5664 | "The xml namespace URI (<http://www.w3.org/XML/1998/namespace/>) must only be assigned to the prefix "xml"."                                          |
+| XML5665 | "The xmlns namespace URI (<http://www.w3.org/2000/xmlns/>) is reserved and must not be used."                                                         |
+| XML5666 | "SC_E_SC"                                                                                                                                             |
+| XML5667 | "Exceeded maximum depth of nested elements."                                                                                                          |
+| XML5668 | "Exceeded maximum number of entity expansions."                                                                                                       |
+| XML5669 | "WR_E_WR"                                                                                                                                             |
+| XML5670 | "WR_E_NONWHITESPACE: writer: specified string is not whitespace."                                                                                     |
+| XML5671 | "WR_E_NSPREFIXDECLARED: writer: namespace prefix is already declared with a different namespace."                                                     |
+| XML5672 | "WR_E_NSPREFIXWITHEMPTYNSURI: writer: cannot use prefix with empty namespace URI."                                                                    |
+| XML5673 | "WR_E_DUPLICATEATTRIBUTE: writer: duplicate attribute."                                                                                               |
+| XML5674 | "WR_E_XMLNSPREFIXDECLARATION: writer: can not redefine the xmlns prefix."                                                                             |
+| XML5675 | "WR_E_XMLPREFIXDECLARATION: writer: xml prefix must have the <http://www.w3.org/XML/1998/namespace/> URI."                                            |
+| XML5676 | "WR_E_XMLURIDECLARATION: writer: xml namespace URI (<http://www.w3.org/XML/1998/namespace/>) must be assigned only to prefix "xml"."                  |
+| XML5677 | "WR_E_XMLNSURIDECLARATION: writer: xmlns namespace URI (<http://www.w3.org/2000/xmlns/>) is reserved and must not be used."                           |
+| XML5678 | "WR_E_NAMESPACEUNDECLARED: writer: namespace is not declared."                                                                                        |
+| XML5679 | "WR_E_INVALIDXMLSPACE: writer: invalid value of xml:space attribute (allowed values are "default" and "preserve")."                                   |
+| XML5680 | "WR_E_INVALIDACTION: writer: performing the requested action would result in invalid XML document."                                                   |
+| XML5681 | "WR_E_INVALIDSURROGATEPAIR: writer: input contains invalid or incomplete surrogate pair."                                                             |
+| XML5682 | "Unexpected character in character entity. Expected a decimal digit."                                                                                 |
+| XML5683 | "Unexpected character in character entity. Expected a hexadecimal digit."                                                                             |
+| XML5684 | "The Unicode value of the specified character entity is invalid."                                                                                     |
+| XML5685 | "Invalid encoding."                                                                                                                                   |
+| XML5686 | "Unspecified XML error."                                                                                                                              |
+

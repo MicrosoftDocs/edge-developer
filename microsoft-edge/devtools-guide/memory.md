@@ -128,11 +128,11 @@ You can use the **Scope** dropdown to filter differential info between snapshots
 
 ![Scoping filter for snapshot comparisions](./media/memory_comparison_scope_filter.png)
 
- - **Objects left over from Snapshot #<number>**: Shows the diff between the objects added to the heap and removed from the heap from the baseline snapshot to the previous snapshot. For example, if the snapshot summary shows *+205 / -195* in the object count, this filter will show you the ten objects that were added but not removed.
+- <strong>Objects left over from Snapshot #<number></strong>: Shows the diff between the objects added to the heap and removed from the heap from the baseline snapshot to the previous snapshot. For example, if the snapshot summary shows <em>+205 / -195</em> in the object count, this filter will show you the ten objects that were added but not removed.
 
- - **Objects added between Snapshot #<number> and #<number>**: Shows all objects added to the heap from the previous snapshot.
+- <strong>Objects added between Snapshot #<number> and #<number></strong>: Shows all objects added to the heap from the previous snapshot.
 
- - **All objects in Snapshot #<number>**: Shows all objects on the heap (in other words, an *unfiltered* view).
+- <strong>All objects in Snapshot #<number></strong>: Shows all objects on the heap (in other words, an <em>unfiltered</em> view).
 
 By default, the *Show non-matching references* filter is applied to the comparison view to indicate object references that don't match the current Scope filter. You can turn it off from the dropdown menu:
 

@@ -95,21 +95,21 @@ To test other browser support of video file formats, use the [`canPlayType`](htt
 
 ``` javascript
 function checkVideoCompat() {
-	var myvideo = document.createElement('video');
-	var msg = document.getElementById("display");
-	
-	msg.innerHTML = "";
-	
-	if (myvideo.canPlayType) {
-		// CanPlayType returns maybe, probably, or an empty string.
-		playMsg = myvideo.canPlayType('video/webm; codecs="vp8, vorbis"');
-		if ("" != playMsg) {
-			msg.innerHTML += "webm is " + playMsg + " supported<br/>";
-		}
-	}
-	else {
-		// File type is not supported
-	}
+    var myvideo = document.createElement('video');
+    var msg = document.getElementById("display");
+
+    msg.innerHTML = "";
+
+    if (myvideo.canPlayType) {
+        // CanPlayType returns maybe, probably, or an empty string.
+        playMsg = myvideo.canPlayType('video/webm; codecs="vp8, vorbis"');
+        if ("" != playMsg) {
+            msg.innerHTML += "webm is " + playMsg + " supported<br/>";
+        }
+    }
+    else {
+        // File type is not supported
+    }
 }
 
 ```
@@ -118,31 +118,29 @@ function checkVideoCompat() {
 
 The following table shows keyboard shortcuts for controlling the `video` element in Microsoft Edge. 
 
-| Key | Action | 
-| ------- | ----------------- |
-Space | Toggle play / pause
-M | Mute
-Down | Volume down
-Up | Volume up
-Home or Control + Left | Go to the beginning of the file
-End or Control + Right | Go to the end of the file
-Left | Rewind back 10 seconds
-Right | Skip forward 10 seconds
-Shift + Left | Rewind back 30 seconds
-Shift + Right | Skip forward 30 seconds
-+ | Increase play speed
-- | Decrease play speed
-T | Toggle controls visibility
-K | Skip forward one frame
-J | Rewind back one frame
-U | Show available tracks
-A | Show available subtitles 
-Z | Toggle zoom mode
-Alt + Enter | Toggle full screen
-Escape | Exit full screen
 
-
-
+|          Key           |             Action              |
+|------------------------|---------------------------------|
+|         Space          |       Toggle play / pause       |
+|           M            |              Mute               |
+|          Down          |           Volume down           |
+|           Up           |            Volume up            |
+| Home or Control + Left | Go to the beginning of the file |
+| End or Control + Right |    Go to the end of the file    |
+|          Left          |     Rewind back 10 seconds      |
+|         Right          |     Skip forward 10 seconds     |
+|      Shift + Left      |     Rewind back 30 seconds      |
+|     Shift + Right      |     Skip forward 30 seconds     |
+|           +            |       Increase play speed       |
+|           -            |       Decrease play speed       |
+|           T            |   Toggle controls visibility    |
+|           K            |     Skip forward one frame      |
+|           J            |      Rewind back one frame      |
+|           U            |      Show available tracks      |
+|           A            |    Show available subtitles     |
+|           Z            |        Toggle zoom mode         |
+|      Alt + Enter       |       Toggle full screen        |
+|         Escape         |        Exit full screen         |
 
 ## API reference
 [HTML5 Audio and Video](https://msdn.microsoft.com/library/hh772500(v=vs.85).aspx)

@@ -44,9 +44,10 @@ From the *Storage list* table you can:
 
 ## Shortcuts
 
-Action | Shortcut
-:------------ | :-------------
-Refresh | `Ctrl` + `F5`
-Delete item | `Del`
-Copy selected items | `Ctrl` + `C`
-Select all | `Ctrl` + `A`
+| Action              | Shortcut      |
+|:--------------------|:--------------|
+| Refresh             | `Ctrl` + `F5` |
+| Delete item         | `Del`         |
+| Copy selected items | `Ctrl` + `C`  |
+| Select all          | `Ctrl` + `A`  |
+

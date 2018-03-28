@@ -110,7 +110,7 @@ Audio WebM | webm | audio/webm
 Audio WAV | wav | audio/wav, audio/wave, audio/x-wave, audio/vnd.wave 
 
 > WebM audio and video files can be supported by installing the WebM components from [The WebM project](http://go.microsoft.com/fwlink/p/?LinkID=218894). 
-
+> 
 > Audio WAV support was introduced in Microsoft Edge.
 
 To test other browser support of audio file formats, use the [`canPlayType`](https://msdn.microsoft.com/library/ff975191(v=vs.85).aspx) method. This method returns `probably`, `maybe`, or an empty string depending on whether or not the client can play a given media resource type. The example below demonstrates how to use the `canPlayType` method.

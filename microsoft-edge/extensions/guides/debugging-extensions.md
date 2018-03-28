@@ -80,5 +80,5 @@ While the method for debugging extension pages also applies to popup extension p
 1. Right-click your extension's icon.
 2. Select **"Inspect popup"**.
 
- ![popup debug inspect](./../media/debug-popup-inspect.png)
+   ![popup debug inspect](./../media/debug-popup-inspect.png)
 3. Follow steps 3 and 4 above for placing breakpoints and reloading the popup.
