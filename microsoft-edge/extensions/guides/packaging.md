@@ -47,7 +47,7 @@ You can jump to [Localizing name and description for the Microsoft Store](./pack
 
 ## [Using ManifoldJS to package extensions](./packaging/using-ManifoldJS-to-package-extensions.md)
 
-The tool route for packaging your extension, ManifoldJS will package up your extension in a snap with minimal effort on your end. Provide a few Windows/Microsoft Store assets after filling out some AppXManifest properties and you're extension will be packaged in no time.
+The tool route for packaging your extension, ManifoldJS will package up your extension in a snap with minimal effort on your end. Provide a few Windows/Microsoft Store assets after filling out some AppXManifest properties and your extension will be packaged in no time.
 
 Once your extension is packaged, see the [testing](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) section of Creating and testing your Microsoft Edge extension to learn how to sideload or unpack it.
 
