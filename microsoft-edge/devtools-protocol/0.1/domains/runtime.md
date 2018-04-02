@@ -10,33 +10,29 @@ ms.prod: microsoft-edge
 # Runtime
 Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
 
-
-|                         |                                                                                                                                                                                                                                                                                                                                                                               |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Methods**](#methods) |                                                                                                                       [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties)                                                                                                                       |
-|  [**Events**](#events)  |                                                                                                                                          [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown)                                                                                                                                           |
-|   [**Types**](#types)   | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
-
+| | |
+|-|-|
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties) |
+| [**Events**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |
+| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
 ## Methods
 
 ### enable
 Enables reporting of the <code>executionContextsCleared</code> event.
 
-</p>
 
 ---
 
 ### disable
 Disables reporting of the <code>executionContextsCleared</code> event.
 
-</p>
 
 ---
 
 ### evaluate
 Evaluates expression on global object.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -89,13 +85,12 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ### callFunctionOn
 Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -153,13 +148,12 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ### getProperties
 Returns properties of a given object. Object group of the result is inherited from the target object.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -202,7 +196,6 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ## Events
@@ -210,14 +203,13 @@ ble>
 ### executionContextsCleared
 Issued when all executionContexts were cleared in browser
 
-</p>
 
 ---
 
 ### exceptionThrown
 Issued when exception was thrown and unhandled.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -239,7 +231,6 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ## Types
@@ -248,7 +239,6 @@ ble>
 
 Unique script identifier.
 
-</p>
 
 ---
 
@@ -256,7 +246,6 @@ Unique script identifier.
 
 Unique object identifier.
 
-</p>
 
 ---
 
@@ -266,7 +255,6 @@ Primitive value which cannot be JSON-stringified.
 
 ##### Allowed Values
 Infinity, NaN, -Infinity, -0
-</p>
 
 ---
 
@@ -274,7 +262,7 @@ Infinity, NaN, -Infinity, -0
 
 Mirror object referencing original JavaScript object.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -326,14 +314,13 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ### <a name="propertydescriptor"></a> PropertyDescriptor `object`
 
 Object property descriptor.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -395,11 +382,10 @@ ble>
         <tr>
             <td>symbol <br/> <i>optional</i></td>
             <td><a href="#remoteobject"><code class="flyout">RemoteObject</code></a></td>
-            <td>Property symbol object, if the property is of the <code>symbol</code> type. </td>
+            <td>Property symbol object, if the property is of the `symbol` type. </td>
         </tr>
     </tbody>
 </table>
-
 
 ---
 
@@ -407,7 +393,7 @@ ble>
 
 Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -434,14 +420,12 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ### <a name="executioncontextid"></a> ExecutionContextId `integer`
 
 Id of an execution context.
 
-</p>
 
 ---
 
@@ -449,7 +433,7 @@ Id of an execution context.
 
 Detailed information about exception (or error) that was thrown during script compilation or execution.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -506,14 +490,12 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ### <a name="timestamp"></a> Timestamp `integer`
 
 Number of milliseconds since epoch.
 
-</p>
 
 ---
 
@@ -521,7 +503,7 @@ Number of milliseconds since epoch.
 
 Stack entry for runtime errors and assertions.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -558,14 +540,13 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ### <a name="stacktrace"></a> StackTrace `object`
 
 Call frames for assertions or error messages.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -591,6 +572,5 @@ ble>
         </tr>
     </tbody>
 </table>
-
 
 ---
