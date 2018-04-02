@@ -10,32 +10,28 @@ ms.prod: microsoft-edge
 # Page
 Actions and events related to the inspected page belong to the page domain.
 
-
-|                         |                                                               |
-|-------------------------|---------------------------------------------------------------|
+| | |
+|-|-|
 | [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |
-|   [**Types**](#types)   |                      [FrameId](#frameid)                      |
-
+| [**Types**](#types) | [FrameId](#frameid) |
 ## Methods
 
 ### enable
 Enables page domain notifications.
 
-</p>
 
 ---
 
 ### disable
 Disables page domain notifications.
 
-</p>
 
 ---
 
 ### navigate
 Navigates current page to the given URL.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Parameters</th>
@@ -68,7 +64,6 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ## Types
@@ -77,6 +72,5 @@ ble>
 
 Unique frame identifier.
 
-</p>
 
 ---

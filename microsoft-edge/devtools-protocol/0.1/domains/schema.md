@@ -10,18 +10,16 @@ ms.prod: microsoft-edge
 # Schema
 Provides information about the protocol schema.
 
-
-|                         |                           |
-|-------------------------|---------------------------|
+| | |
+|-|-|
 | [**Methods**](#methods) | [getDomains](#getdomains) |
-|   [**Types**](#types)   |     [Domain](#domain)     |
-
+| [**Types**](#types) | [Domain](#domain) |
 ## Methods
 
 ### getDomains
 Returns supported domains.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Returns</th>
@@ -38,7 +36,6 @@ ble>
     </tbody>
 </table>
 
-
 ---
 
 ## Types
@@ -47,7 +44,7 @@ ble>
 
 Description of the protocol domain.
 
-ble>
+<table>
     <thead>
         <tr>
             <th>Properties</th>
@@ -68,6 +65,5 @@ ble>
         </tr>
     </tbody>
 </table>
-
 
 ---
