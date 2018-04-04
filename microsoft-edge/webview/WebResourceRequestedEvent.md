@@ -17,13 +17,13 @@ An event that is fired when an HTTP request is made.
 
 ### args
 
-Information about the **WebResourceRequestedEvent**.
+Information about the resource request. 
 
 This property is read-only.
 
 ```js
 var args = webview.args;
-webview.args  = args;
+webview.args = args;
 ```
 
 #### Property value

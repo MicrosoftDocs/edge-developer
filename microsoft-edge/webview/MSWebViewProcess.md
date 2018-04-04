@@ -11,7 +11,7 @@ keywords: webview, windows 10 apps, uwp, edge
 
 # MSWebViewProcess object
 
-Represents a **webview**  process.
+Represents a [webview](../webview.md) process.
 
 ### enterpriseId
 
@@ -30,7 +30,7 @@ Type: **DOMString**
 
 ### isPrivateNetworkClientServerCapabilityEnabled
 
-Gets a value that indicates whether the **webview** has privateNetworkClientServer capabilitiy enabled in this process.
+Gets a value that indicates whether the [webview](../webview.md) has privateNetworkClientServer capabilitiy enabled in this process.
 
 ```js
 var privateNetwork = webview.isPrivateNetworkClientServerCapabilityEnabled;

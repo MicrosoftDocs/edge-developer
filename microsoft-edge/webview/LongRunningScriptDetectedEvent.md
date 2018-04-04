@@ -11,7 +11,7 @@ keywords: webview, windows 10 apps, uwp, edge
 
 # LongRunningScriptDetectedEvent object
 
-Provides information for [MSWebViewLongRunningScriptDetected](../webview.md)
+Provides information for [MSWebViewLongRunningScriptDetected](../webview.md#mswebviewlongrunningscriptdetected).
 
 ## Properties
 
