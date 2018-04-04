@@ -4,7 +4,7 @@ description: Check out tools and testing procedures that help evaluate a website
 title: Accessibility - Test
 author: libbymc
 ms.author: libbymc
-ms.date: 06/02/2017
+ms.date: 4/10/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -32,6 +32,9 @@ This site tests which new HTML5 features are accessibly supported by major brows
 
 #### [Site Scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/)
 The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.
+
+#### [sonarwhal](https://sonarwhal.com/)
+Use [sonarwhal](https://sonarwhal.com/) to improve your webiste's accessibility with [aXe](https://sonarwhal.com/docs/user-guide/rules/rule-axe/) integration.
 
 #### [Web Accessibility Checker](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
 A Visual Studio extension that performs accessibility checks on any ASP.NET web application.
