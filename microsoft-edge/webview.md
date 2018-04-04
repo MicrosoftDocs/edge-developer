@@ -3,7 +3,7 @@ description: Host web content in your Windows 10 app with the Microsoft Edge Web
 title: Microsoft Edge WebView for Windows 10 apps
 author: libbymc
 ms.author: libbymc
-ms.date: 4/3/2018
+ms.date: 4/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
