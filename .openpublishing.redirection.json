@@ -191,9 +191,9 @@
         "redirect_document_id": true 
     },
     {   
-        "source_path": "microsoft-edge/dev-guide/css/animations", 
+        "source_path": "microsoft-edge/dev-guide/css/animations.md", 
         "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations", 
-        "redirect_document_id": true 
+        "redirect_document_id": false 
     }
   ] 
 }
