@@ -189,7 +189,11 @@
         "source_path": "microsoft-edge/dev-guide/tools/webdriver.md", 
         "redirect_url": "/microsoft-edge/webdriver", 
         "redirect_document_id": true 
+    },
+    {   
+        "source_path": "microsoft-edge/dev-guide/css/animations", 
+        "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations", 
+        "redirect_document_id": true 
     }
-
   ] 
 }
