@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP
 
 # Tailor your PWA for Windows
 
-You can enhance a Progressive Web App (PWA) with Windows native app features while still ensuring cross-browser compatibility. PWAs installed on Windows 10 are [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps protected by Windows security with full accces to [Windows Runtime](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) APIs, including those for:
+You can enhance a Progressive Web App (PWA) with Windows native app features while still ensuring cross-browser compatibility. PWAs installed on Windows 10 are [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps protected by Windows security with full access to [Windows Runtime](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) APIs, including those for:
 - Controlling device features (such as camera, microphone, and GPS)
 - Accessing user resources (such as calendar, contacts, documents, and music) 
 - Launching / navigating your app through Cortana voice commands
