@@ -8,6 +8,7 @@ ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+redirect_url: https://developer.mozilla.org/docs/Web/API/File_and_Directory_Entries_API
 ---
 
 # Folder upload
