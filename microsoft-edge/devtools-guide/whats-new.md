@@ -34,7 +34,7 @@ Check out the *DevTools guide* for more on [local and remote debugging using the
 
 ## DevTools Protocol
 
-Developer tools can use the [**Microsoft Edge DevTools Protocol**](../devtools-protocol/index.md) to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](0.1/domains/index.md) of EdgeHTML engine instrumentation.
+Developer tools can use the [**Microsoft Edge DevTools Protocol**](../devtools-protocol/index.md) to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](../devtools-protocol/0.1/domains/index.md) of EdgeHTML engine instrumentation.
 
  Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Edge or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal). 
  
