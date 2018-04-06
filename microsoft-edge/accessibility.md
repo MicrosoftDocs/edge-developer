@@ -4,7 +4,7 @@ description: Learn how to build, design, and test accessible websites within Mic
 title: Accessibility
 author: libbymc
 ms.author: libbymc
-ms.date: 06/02/2017
+ms.date: 4/10/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -33,9 +33,7 @@ The Microsoft Edge team works with the W3C and other browser vendors on an ongoi
 
 
 ## New in Microsoft Edge
-The [Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11/introducing-edgehtml-15/) introduced advanced support for UIA Text Pattern and improved support for web accessibility patterns, built on top of the accessible Web Platform core introduced in the [Windows 10 Anniversary Update](https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14).
-
-Check out the blog post [Accessibility improvements in EdgeHTML 15](https://blogs.windows.com/msedgedev/2017/05/25/accessibility-improvements-edgehtml-15/) to learn more about accessibility improvements in Microsoft Edge.
+EdgeHTML 17 now includes support for roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1](http://www.w3.org/TR/wai-aria-1.1/) specification, including [banner](http://www.w3.org/TR/wai-aria-1.1/#banner), [complementary](http://www.w3.org/TR/wai-aria-1.1/#complementary), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more. 
 
 For information on which new HTML5 features are accessibly supported by Microsoft Edge, visit [HTML5Accessibility](http://html5accessibility.com/).  
 
