@@ -21,7 +21,7 @@ PWAs in the Microsoft Store enjoy a number of advantages:
 
 - **Frictionless install** - The Microsoft Store provides a consistent and user friendly install experience across [all Windows 10 apps](https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps), making it easy for all customers to install your PWA, regardless of technical comfort level.
 
-- **Business insights** - The [Windows Dev Center dashboard](https://docs.microsoft.com/en-us/windows/uwp/publish/using-the-windows-dev-center-dashboard) for the Microsoft Store provides you with [detailed analytics](https://docs.microsoft.com/en-us/windows/uwp/publish/analytics) about everything from how many Windows customers your PWA has reached to how they're using it and what they have to say. You can also find metrics on app health, ad usage, and more.
+- **Business insights** - The [Windows Dev Center dashboard](https://docs.microsoft.com/en-us/windows/uwp/publish/using-the-windows-dev-center-dashboard) for the Microsoft Store provides you with [detailed analytics](https://docs.microsoft.com/en-us/windows/uwp/publish/analytics) about everything from how many Windows customers your PWA has reached to how they're using it and what they have to say. You can also find metrics and telemetry data on app health, ad usage, and more.
 
 - **Monetization, promotional, and engagement opportunities** - The [Store Services](https://docs.microsoft.com/en-us/windows/uwp/monetize/) and [Microsoft Advertising](https://developer.microsoft.com/en-us/store/monetize/ads-in-apps) SDKs provide a host of options to [monetize](https://developer.microsoft.com/en-us/store/monetize) and [promote](https://developer.microsoft.com/en-us/store/promote-your-apps) your app and [engage](https://developer.microsoft.com/en-us/store/engage) with your customers on Windows. In-app purchases, Microsoft Store add campaigns, A/B feature testing experiments, and detailed customer feedback and bug reporting are just some of the many tools you have at your disposal.
 
@@ -101,7 +101,7 @@ For more on the all the features and services available to Microsoft Store app d
 
 Just as your PWA's [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a signal to supporting platforms that your app is offline-capable and ready to be presented as a fully integrated app experience, it's also a hint to the Bing web crawler that your PWA should be considered for automatic inclusion in the Microsoft Store. 
 
-If your PWA meets the requirements below, the Bing indexing service will automatically package your PWA in the [`.appx`](#submitting-your-pwa-manually) format required for installation on Windows 10 and assemble your app's store product page based on the metadata in its web app manifest. After [claiming your PWA](#claiming-your-pwa), you'll be able to further customize your store page and gain access to user analytics and other app management tools throug the Windows Dev Center dashboard.
+If your PWA meets the requirements below, the Bing indexing service will automatically package your PWA in the [*.appx*](#submitting-your-pwa-manually) format required for installation on Windows 10 and assemble your app's store product page based on the metadata in its web app manifest. After claiming your PWA, you'll be able to further customize your store page and gain access to user analytics and other app management tools throug the Windows Dev Center dashboard.
 
 ### Criteria for automatic submission
 

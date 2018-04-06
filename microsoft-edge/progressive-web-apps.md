@@ -78,6 +78,8 @@ When installed on Windows 10, PWAs run as [Universal Windows Platform](https://d
 
  - Access to native [Windows Runtime (WinRT)](https://docs.microsoft.com/en-us/uwp/api/) APIs via JavaScript
 
+ - Appearance in "app" contexts such as the Windows Start menu and Cortana search results
+
 [Here's how to get started](./progressive-web-apps/get-started.md) converting your web app to a PWA, testing it on Windows 10, and distributing it in the Microsoft Store.
 
 ## Requirements
