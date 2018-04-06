@@ -3,7 +3,7 @@ description: Reach the world of Windows 10 customers by distributing your PWA th
 title: Progressive Web Apps in the Microsoft Store
 author: erikadoyle
 ms.author: edoyle
-ms.date: 1/10/2018
+ms.date: 4/10/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA in
 
 # Progressive Web Apps in the Microsoft Store
 
-When you publish your Progressive Web App (PWA) to the [Microsoft Store](https://developer.microsoft.com/en-us/store), your potential app audience expands to the entire Windows 10 install base of 600 million active monthly users! 
+When you publish your Progressive Web App (PWA) to the [Microsoft Store](https://developer.microsoft.com/en-us/store), your potential app audience expands to the entire Windows 10 install base of nearly 700 million active monthly users! 
 
 PWAs in the Microsoft Store enjoy a number of advantages:
 
@@ -35,38 +35,20 @@ Regardless of submission method, once your PWA is accepted to the Microsoft Stor
 
 ## Submitting your PWA manually
 
-In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (`.appx` file). For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrappper (`WWAHost.exe` process), independent from the Microsoft Edge browser window.
+In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file). For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrappper (*WWAHost.exe* process), independent from the Microsoft Edge browser window.
 
 Here's how to do it.
 
 ### Prerequisites
 
 - **An existing PWA**. [Here's an easy way](./get-started.md) to convert your web app into a PWA if it isn't one already. 
-- [**Node.js**](https://nodejs.org/en/). *PWABuilder* (below) runs on Node. Installation includes [NPM](https://www.npmjs.com/).
-- [**PWABuilder CLI**](https://www.pwabuilder.com/). Install it using NPM (`npm install pwabuilder -g`).
+- **A Windows APPX packaging tool for PWAs**. You can either use [PWA Builder](./get-started.md#pwa-builder) or the [Visual Studio](./get-started.md#visual-studio) *Progressive Web App* template.
 - [**Microsoft Store app developer account**](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account). There is a [one-time fee](https://docs.microsoft.com/en-us/windows/uwp/publish/account-types-locations-and-fees) depending on your chosen account type and location, and registration requires a valid [Microsoft Account](https://account.microsoft.com/).
 
 ### 1. Generate your Windows 10 app 
 
-> [!NOTE]
-> You can skip this step if you've already generated your PWA and Windows 10 app using the [PWABuilder](http://manifoldjs.com/generator) web interface, as covered in [*Get started with Progressive Web Apps*](./get-started.md).
+Head over to [*Get started with Progressive Web Apps*](./get-started.md) if you haven't already converted your web app as a PWA and have it running as a standalone Windows 10 app.
 
-[PWABuilder](https://www.npmjs.com/package/pwabuilder) (formerly *ManifoldJS*) enables you to package your web experience as a native app for Windows 10 and other app platforms directly from the command prompt.
-
-To generate a set of native app wrappers for your PWA, run the *pwabuilder* command on the URL of your PWA (specified here w/ optional debug logging):
-
-```
-pwabuilder https://samplepwa.azurewebsites.net -l debug
-```
-
-This will generate a folder in the current directory named after your PWA (as specified in your web app manifest). If you're using a Windows 10 machine, you can test out your PWA by sideloading it in developer mode:
-
- a. Turn on **Developer mode** from the Windows *Settings* menu (press Windows **Start** key and search for "Use developer features")
-
- b. Locate the script at `PWA\Store packages\windows10\test_install.ps`, right-click and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu. For more, see [*Test and debug your PWA on Windows*](.\get-started.md#test-and-debug-your-pwa-on-windows).
-
-> [!NOTE]
-> To uninstall your PWA, simply comment out (`#`) this line of the *test_install.ps1* script and re-run: `# Add-AppxPackage -Register $appxmanifest`
 
 ### 2. Reserve your app name for the Microsoft Store
 
@@ -80,22 +62,34 @@ Log into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-u
 
 ![Windows Dev Center dashboard, App identity settings](./media/dashboard-app-identity.png)
 
-Next locate the `PWA\Store packages\windows10\manifest\appxmanifest.xml` file and open it in a text editor. Replace the following values with the ones assigned in the Windows Dev Center dashboard:
+Next, locate your `appxmanifest.xml` file and open it in a text editor. Replace the following values with the ones assigned in the Windows Dev Center dashboard:
 
  - `<Identity Name="`*Package/Identity/Name*`"`
  - `<Identity Publisher="`*Package/Identity/Publisher*`"`
  - `<DisplayName>`*Name you reserved for your app*`</DisplayName>`
  - `<PublisherDisplayName>`*Package/Properties/PublisherDisplayName*`</PublisherDisplayName>`
 
-### 4. Compile your app to an *.appx* file
+### 4. Package your app for the Microsoft Store
 
-Now you're ready to compile all your PWA resources into a single `.appx` file you can upload to the Microsoft Store. From a command prompt, navigate to the directory of your web manifest and create a Windows 10 package (specified below w/ optional debug logging):
+Now you're ready to compile all your PWA resources into a single `.appx` (PWA Builder) or `.appxupload` (Visual Studio) file you can upload to the Microsoft Store. 
+
+#### If you're using PWA Builder
+
+From a command prompt, navigate to the directory of your web manifest and create a Windows 10 package (specified below w/ optional debug logging):
 
 ```
 pwabuilder package -p windows10 -l debug
 ```
 
-The file will be generated to `PWA\Store packages\windows10\package\windows.appx`.
+Your .appx file will be generated to this location: `PWA\Store packages\windows10\package\windows.appx`.
+
+Before you upload your app for submisison to the Microsoft Store, its a good idea to test your app for compliance with Microsoft Store policies. You can do this by downloading the [**Windows App Certification Kit**](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit), launching it, and then selecting your app's *.appx* file for testing. You will receive a report of areas to address once all the tests are complete.
+
+#### If you're using the Visual Studio *Progressive Web App* template
+
+Follow these steps to [create an app package upload file](https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps#create-an-app-package-upload-file) for your PWA in Visual Studio. See [*Package a UWP app with Visual Studio*](https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) for a more general overview of this process.
+
+These steps will also guide you through running the [**Windows App Certification Kit**](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit) to test your app for compliance with Microsoft Store requirements.
 
 ### 5. Upload your package and complete the submission
 

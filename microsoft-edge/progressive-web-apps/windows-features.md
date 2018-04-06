@@ -20,7 +20,7 @@ You can enhance a Progressive Web App (PWA) with Windows native app features whi
 ...and these are only a few examples of the added capabilities of PWAs running on Windows! This guide will help you get started differentiating your PWA for Windows through progressive enhancement.
 
 > [!NOTE]
-> These instructions assume you've already set up your web app as an [installable PWA for Windows 10](./get-started.md#enhance-your-web-app-into-a-pwa) and are ready to [test and debug your PWA on Windows](./get-started.md/#test-and-debug-your-pwa-on-windows).
+> These instructions assume you've already set up your web app as an [installable PWA for Windows 10](./get-started.md#enhance-your-web-app-into-a-pwa) and are ready to [test and debug your PWA on Windows](./get-started.md#test-and-debug-your-pwa-on-windows).
 
 
 ## Set app permissions
