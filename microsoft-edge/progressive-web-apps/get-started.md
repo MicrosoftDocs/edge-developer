@@ -1,99 +1,118 @@
----
-description: Here's how to turn your web app into a PWA for Windows and other platforms
-title: Get started with Progressive Web Apps on Windows
-author: erikadoyle
-ms.author: edoyle
-ms.date: 1/10/2018
-ms.topic: article
-ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, appx, web manifest, DevTools
----
-
 # Get started with Progressive Web Apps
 
-Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as installation / home screen launch, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
+Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
 
-Here's how to turn your web app into an installable PWA for Windows 10 and other PWA environments.
-
-## Enhance your web app into a PWA
-
-The minimum [requirements for installable PWAs on Windows 10](../progressive-web-apps.md#requirements) are: *HTTPS*, a *web app manifest*, and use of *service workers*. While HTTPS and app manifest are technical Windows 10 requirements for running web apps independent of the browser (in the *WWAHost.exe* process), the use of service workers to support an offline experience is a philosophical PWA requirement and highly encouraged but not strictly required for Windows 10 apps.
-
-Once your web app host server is configured to use HTTPS, you can use  [**PWA Builder**](http://docs.pwabuilder.com/) tools ([web](https://www.pwabuilder.com/generator) / [CLI](http://docs.pwabuilder.com/quickstart/quick-start-pwa-using-cli-tools/) version) to generate the rest, including:
-
-PWA Builder resource | Why its useful| Futher resources
-:--- | :-- | :----
-A web application manifest | Generates W3C-compliant JSON metadata for installing and launching your PWA from its host device.  | [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) <br /> (MDN web docs)
-Platform-ready app icons | Generates a set of images optimized for various PWA device home screens / app stores.  | PWA Builder [App-Image-Generator](https://github.com/pwa-builder/App-Image-Generator/tree/master/AppImageGenerator/App_Data) <br /> (GitHub)
-A basic service worker script for handling offline scenarios | Generates a script that installs and registers a service worker to handle offline scenarios according to a strategy of your choosing.   | [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)  and [Service Worker Cookbook](https://serviceworke.rs/) <br />(MDN web docs)
-
-Once you've reached step 3 "Publish PWA" of the PWA Builder wizard, click the **Download** button under the *Windows* heading, and unzip the folder.
+Follow this guide to turn a simple, *localhost* web app into an installable PWA for testing and debugging on Windows with Visual Studio.
 
 > [!TIP]
-> *PWA Builder* can also [generate polyfills for platforms which lack PWA support](http://docs.pwabuilder.com/quickstart/quick-start-polyfills/) , such as iOS, Mac, and Windows 7. Android supports PWAs directly through the browser, but you can also use PWA Builder to generate a [polyfill app for the *Google Play* store](http://docs.pwabuilder.com/tools/how-to-package-android/). 
+> If you have an existing live site and want to convert it to a PWA for  Windows 10 and other app platforms, check out [PWA Builder](https://www.pwabuilder.com/). 
 
-Follow the instructions in the `\projects\PWA\Web-next-steps.md` file to incorporate the generated PWA assets for your web app.
+## Prerequisites
 
-Once you've republished your app with PWA content, right-click on the `\projects\PWA\Store packages\windows10\test_install.ps` script and select **Run with PowerShell** from the context menu. Once installed, you can launch your PWA from its tile in the Windows **Start** menu.
+1. Download the (free) [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). You can also use the *Professional*, *Enterprise*, or [*Preview*](https://www.visualstudio.com/vs/preview/) editions).
 
-> [!NOTE]
-> To uninstall your PWA, simply comment out (with *#*) this line of the *test_install.ps1* script: 
-> `# Add-AppxPackage -Register $appxmanifest`
-> . . . and re-run the script.
+2. From the *Visual Studio Installer*, choose the following Workloads:
 
-## Test and debug your PWA on Windows
+    - **Universal Windows Platform development**
+    - **Node.js development**
 
-With the minimum requirements met, you have a basic *Progressive Web App* installed and running on Windows! Now you're ready to test and debug your app for cross-platform and cross-device compatibility to ensure a great app experience for all your customers.
+## 1. Set up a basic web app
 
-### Backend debugging
+For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs) template to create a basic, localhost web app that serves up an *index.html* page. Imagine this as a placeholder for the awesome web app you'll be developing as a PWA.
 
-Debug your server-side PWA code the same way you would any web app, using your regular IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to reinstall).
+1. Launch Visual Studio, and start a new project (**File** > **New** > **Project...** *or* Ctrl+Shift+N).
 
-> [!NOTE]
-> Service workers, Cache API, and Push API will work from *localhost* in Microsoft Edge, however deploying changes to your remote server will allow you to run your PWA from a secure (HTTPS) connection, allowing you to debug it as a standalone installed Windows 10 app with full access to native WinRT APIs.
+2. Under **JavaScript**, select **Basic Node.js Express 4 Application**. Set the name and location and click **OK**.
 
-### Frontend debugging
+    ![Selecting the Node.js Express 4 project template in Visual Studio](./media/vs-nodejs-express-template.png)
 
-Browsers that support PWAs have built-in debugging support for **Service Workers** and **Cache** inspection. In [Microsoft Edge DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide), you can access both inspection tools from the **Debugger** panel.
+3. Once your new project loads, **Build** (Ctrl+Shift+B) and **Start Debugging** (F5). Verify that your *index.html* file is loading on *http://localhost:1337*.
 
-![Edge DevTools Service Workers and Cache inspection](../devtools-guide/media/debugger_sw_and_cache.png)
+    ![Running your new site on localhost](./media/vs-nodejs-express-index.png)
 
-You can also inspect and manage your [Web storage](../devtools-guide/debugger/web-storage.md) and [IndexedDB](../devtools-guide/debugger/indexeddb.md) caches.
+## 2. Turn your app into a PWA
 
-Check out [Progressive Web App debugging](../devtools-guide/debugger/progressive-web-apps.md) for more on using these tools in Microsoft Edge.
+Now its time to wire up the basic [PWA requirements](../progressive-web-apps.md#requirements) for your web app: a *Web App Manifest*, *HTTPS* and *Service Workers*.
 
-For similar functionality in Chrome DevTools, see [Tools for PWA Developers](https://developers.google.com/web/ilt/pwa/tools-for-pwa-developers#simulate_mobile_devices). For Firefox Developer Tools, check out the [about:debugging](https://developer.mozilla.org/en-US/docs/Tools/about:debugging#Workers) and [Storage Inspector](https://developer.mozilla.org/en-US/docs/Tools/Storage_Inspector) topics.
+### Web App Manifest
 
-#### Local debugging with Edge DevTools
 
-To debug an installed PWA running on your local dev machine, you'll first need to install the standalone [Microsoft Edge DevTools Preview]() from the Microsoft Store. Once installed, simply press `F12` from your PWA to launch the DevTools for debugging.
+### HTTPS
 
-Alternately, you can launch the **Microsoft Edge DevTools Preview** app and then select your PWA from the list of running browser tabs and PWA instances:
+[Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and other key PWA technologies that work with service workers (such as the [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache), [Push](https://developer.mozilla.org/en-US/docs/Web/API/Push_API), and [Background Sync](https://developer.mozilla.org/en-US/docs/Web/API/SyncManager) APIs) only work across secure connections, which means [*HTTPS*](https://en.wikipedia.org/wiki/HTTPS) for live sites or *localhost* for  debugging purposes.
 
-![Microsoft Edge DevTools chooser, Local targets](./media/.png)
+If you were to [publish this web app as a live site](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/en-us/free/)), you'll want to ensure your server is configured for HTTPS. If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/web/) to host your site, it will will be served over HTTPS by default.
 
-#### Remote debugging with Edge DevTools Protocol
+For this guide we'll continue using *http://localhost* as a placeholder for a live site served over *https://*.
 
-[EdgeHTML 17 introduces](../devtools-guide/whats-new.md) basic remote debugging support. While only core [**Debugger**](../devtools-guide/debugger.md) functionality is currently available, full PWA debugging support (including *Service Workers* and cache managers) and additional Edge DevTools panels (such as *Console*, *Elements*, *Network*, etc.) will be added with upcoming releases. 
+### Service Workers
 
-See [*Remote debugging*](../devtools-protocol/clients/edge-devtools.md#remote-debugging) in the Edge *DevTools Protocol* docs to get started.
+*Service Workers* is the key technology behind PWAs. They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks.
 
-For PWA debugging on Android mobile devices, check out the [*Debugging Firefox for Android over WiFi*](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_Firefox_for_Android_over_Wifi) and Chrome's [*Get Started with Remote Debugging Android Devices*](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/) guide.
+Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app. You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) reference.
+
+For this tutorial, we'll use a ready-made "Offline page" service worker script courtesy of [PWA Builder](https://www.pwabuilder.com/serviceworker). Mozilla's [Service Worker Cookbook](https://serviceworke.rs/) also features a number of useful service worker "recipes" you can try out and modify for your needs.
+
+1. Open https://www.pwabuilder.com/serviceworker and select the (default) **Offline page** service worker and click the **Download service worker** button.
+
+2. Open the download folder and copy these two files:
+
+    - ServiceWorker1\pwabuilder-sw-register.js
+    - ServiceWorker1\pwabuilder-sw.js
+    
+    ...to the *public* folder of your Visual Studio web app project. (From Visual Studio, use Ctrl+O to open file explorer to your project and navigate to the *public* folder). 
+
+    Its worth reviewing the code in both of these files, to get the jist of how to register a service worker that caches a designated page (*offline.html*) and serves it when a network fetch fails. Next, we need to create a simple "offline.html" page as a placeholder for our app's offline functionality.
+
+3. In *Solution Explorer*, right-click on the *public* folder and select **Add** > **HTML file**. Name it **offline.html**, and add a `<title>` and some body content, for example:
+
+    ```HTML
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Offline mode</title>
+    </head>
+    <body>
+        You are now offline.
+    </body>
+    </html>
+    ```
+    At this point, your *public* folder should have three new files:
+
+    ![Files added to the solution's public folder](./media/vs-nodejs-express-public.png)
+
+4. In *Solution Explorer*, open the *routes\index.js* file, and add the following code just before the final command (`module.exports = router;`):
+
+    ```JavaScript
+    router.get('/offline.html', function (req, res) {
+        res.sendFile('public/offline.html');
+    });
+    ```
+
+    ...this instructs your app to serve the *offline.html* file (when your service worker fetches it for the offline cache).
+
+5. Let's test out your PWA! Build (Ctrl+Shift+B) and Run (F5) your web app to launch Microsoft Edge and open your *localhost* page. Then,
+
+    1. Open the Edge DevTools **Console** (Ctrl+Shift+J) and verify your *Service worker has been registered*.
+    2. In the **Debugger** panel, expand the **Service Workers** control and click on your origin. In the *Service Worker Overview*, verify your service worker is activated and running:
+
+        ![Edge DevTools Service Worker overview](./media/devtools-sw-overview.png)
+    3. Still in the Debugger, expand the **Cache** control and verify that the *offline.html* page has been cached.
+
+        ![Edge DevTools service worker Cache](./media/devtools-cache.png)
+
+6. Time to try your PWA as an offline app! In Visual Studio, **Stop Debugging** (Shift+F5) your web app, then open Microsoft Edge (or reload) to your website's localhost address. It should now load the *offline.html* page (thanks to your service worker and offline cache)!
+
+    ![offline.html from http://localhost:1337 loaded in Microsoft Edge](./media/offline-html.png)
 
 ## Going further
 
-You can extend your PWA to increase customer engagement and provide a more seamless, OS-integrated app experience.
+Check out the PWA guides in these areas to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience:
 
-### Push notifications
+ - **Push notifications.** Set up a push messaging service, service worker handler, and custom toast notifications to re-engage your users. Check out the Push API / Notification API examples in [*Service Workers: Going beyond the page*](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/#8mU5rebKOuTt5HwG.97) to get started.
 
-Set up a push messaging service, service worker handler, and custom toast notifications to re-engage your users. Check out the Push API / Notification API examples in [*Service Workers: Going beyond the page*](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/#8mU5rebKOuTt5HwG.97) to get started.
+ - [**Windows tailoring.**](./windows-features.md) Using simple feature detection, your PWA can be progressively enhanced for Windows 10 customers through native Windows Runtime (WinRT) APIs, such as those for customizing Windows **Start** menu tile notifications and taskbar jumplists, and (upon permission) working with user resources, such as photos, music and calendar.
 
-### Windows tailoring
-
-Using some simple feature detection, your PWA can be further tailored for Windows 10 customers through native [Windows Runtime](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) APIs, such as those for customizing Windows **Start** menu (home screen) tiles, using Cortana voice commands, and accessing the device camera (to name only a few!)
- 
-Check out [*Tailor your PWA for Windows*](./windows-features.md) to get started.
-
-### Submitting to the Microsoft Store
-
-To learn more about the benefits of app store distribution and how to submit your PWA, see [*Progressive Web Apps in the Microsoft Store*](./microsoft-store.md)
+ - [**PWAs in the Microsoft Store.**](./microsoft-store.md) Learn more about the benefits of app store distribution and how to submit your PWA..
