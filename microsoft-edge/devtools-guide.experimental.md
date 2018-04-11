@@ -3,15 +3,18 @@ description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools
 author: erikadoyle
 ms.author: edoyle
-ms.date: 09/12/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
-experimental: true
+experimental: false
 experiment_id: "51fe4b97-3e55-41"
 ---
 
 # Microsoft Edge Developer Tools
+
+> [!NOTE]
+> The Microsoft Edge DevTools help web developers build and test their websites. If you accidentally opened the DevTools, just click the "X" button to close them.
 
 Browser tooling has come a long way since the days of Internet Explorer! The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), and optimized for modern front-end workflows. 
 
