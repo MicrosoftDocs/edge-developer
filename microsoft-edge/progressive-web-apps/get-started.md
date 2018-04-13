@@ -9,9 +9,7 @@ This guide will give you an overview of PWA basics by building a simple *localho
 
 ## Prerequisites
 
-1. Download the (free) [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). You can also use the *Professional*, *Enterprise*, or [*Preview*](https://www.visualstudio.com/vs/preview/) editions).
-
-2. From the *Visual Studio Installer*, choose the following Workloads:
+- Download the (free) [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). You can also use the *Professional*, *Enterprise*, or [*Preview*](https://www.visualstudio.com/vs/preview/) editions). From the *Visual Studio Installer*, choose the following Workloads:
 
     - **Universal Windows Platform development**
     - **Node.js development**
@@ -62,12 +60,12 @@ If this were an existing live site, you could quickly generate a web app manifes
         "icons": []
     }
     ```
-    If this were a real PWA, you'd obviously want to customize at least the *name*, *start_url*, *short_name*, and *description*, as well as the *icons* (which we'll get to next). 
+    If this were a real PWA, you'd obviously want to customize at least the *name*, *start_url*, *short_name*, and *description*, as well as the *icons* (we'll get to those next...). 
 
     See the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest
 ) reference on *MDN web docs* to learn more about the different member values and their purpose.
 
-3. Next we need to fill in the empty `icons` array with actual image paths. For that, we'll use PWA Builder's *App Image Generator*.
+3. Next, let's fill in the empty `icons` array with actual image paths. For that, we'll use PWA Builder's *App Image Generator*.
 
     1. Save down this [sample 512x512 PWA image]() from your web browser.
 
@@ -97,9 +95,11 @@ And one of your icons:
 
 If your app were published live (with an actual `start_url`), the Bing search engine could now identify it as a candidate for [automatic packaging and submission to the Microsoft Store](./microsoft-store.md) as an installable Windows 10 app. Just make sure that your manifest includes the [*Quality signals for Progressive Web Apps*](https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#4UOdrDJj3124VIkc.97) that Bing will be scanning for:
 
- - name
- - description
- - at least one icon larger than 512px square
+ - `name`
+
+ - `description`
+ 
+ - At least one icon 512px square or larger (to ensure an image source of sufficient resolution for auto-generating you app's splash screen, store listing, tile image, etc.)
 
  ...in addition to being [HTTPS](#https), using [service workers](#service-workers), complying with [Microsoft Store Policies](https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies).
 
@@ -157,7 +157,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
     });
     ```
 
-    ...this instructs your app to serve the *offline.html* file (when your service worker fetches it for the offline cache).
+    This instructs your app to serve the *offline.html* file (when your service worker fetches it for the offline cache).
 
 5. Let's test out your PWA! Build (Ctrl+Shift+B) and Run (F5) your web app to launch Microsoft Edge and open your *localhost* page. Then,
 
@@ -175,7 +175,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
  Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements), including responsive design, deep-linking, cross-browser testing and other best practices (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started with PWA development.
 
-This guide demonstrated how PWAs run in the Microsoft Edge browser. Check out the [*Tailor your PWA for Windows*](./windows-features.md) guide to install and run your PWA as a standalone Windows 10 app.
+This guide demonstrated how PWAs run in the Microsoft Edge browser. Check out the [*Tailor your PWA for Windows*](./windows-features.md) guide to install, run, and enhance your PWA as a standalone Windows 10 app.
 
 If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
 
