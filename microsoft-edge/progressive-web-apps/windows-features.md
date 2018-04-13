@@ -67,8 +67,7 @@ First let's set up our Windows app development environment in Visual Studio.
 
     This will generate the basic visual assets for installing, running, launching, and distributing your app in the store. 
     
-    > [!NOTE]
-    > If you see any red ('X') errors indicating missing images, you can click on the **...** buttons to manually select a file from the generated images.
+    If you see any red ('X') errors indicating missing images, you can click on the **...** buttons to manually select a file from the generated images.
 
 6. In the manifest designer **Content URIs** panel, replace *http://example.com* with the location of your PWA (such that **Rule** = *include* and **WinRT Access** = *All*). 
 
@@ -77,6 +76,8 @@ First let's set up our Windows app development environment in Visual Studio.
     You're ready run and debug your PWA as a Windows 10 app. If you're using a localhost site to step through this guide, make sure its running. Then,
 
 7. **Build** (Ctrl+Shift+F5) and **Run** (F5) your PWA project. Your website should now launch in a standalone app window. Not only is it  a *hosted web app*; it's running as a *Progressive Web App* installed on Windows 10!
+
+    ![PWA running in a WWAHost.exe window](./media/wwahost.png)
 
 ## Debug your PWA as a Windows app
 
@@ -104,8 +105,8 @@ Here's how to set up debugging for your PWA.
     window.Windows
     ```
 
-    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#call-native-windows-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
-    exposed to web apps that run as Windows 10 apps (i.e., running outside the browser, in a *WWAHost.exe* process).
+    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-(winrt)-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
+    exposed to web apps that run as Windows 10 apps (running outside the browser, in a *WWAHost.exe* process).
 
 ## Find Windows Runtime (WinRT) APIs
 
@@ -113,7 +114,7 @@ As an installed Windows app, your PWA has full access to native *Windows Runtime
 
 Let's walk through this process to add a progressive enhancement for Windows desktop users of your PWA.
 
-WinRT APIs can provide additional functionality to web apps in all  the following areas.
+WinRT APIs can provide additional functionality to web apps in all  the following areas:
 
 WinRT Namespace | Description
 :--- | :----
@@ -151,7 +152,7 @@ For more details, see [*Using the Windows Runtime in JavaScript*](https://docs.m
 
 ### UWP code samples
 
-Check out the [Universal Windows Platform (UWP) Code Samples](https://developer.microsoft.com/en-us/windows/samples) repo to browse JavaScript examples for common Windows 10 app scenarios. Although the JS versions of these samples use the [WinJS](https://github.com/winjs/winjs) library to structure the sample template, WinJS is not required for calling the WinRT APIs demonstrated by these samples. Note that if you need to listen for the app's [`activated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiapplication.activated) event, you can do this using the following WinRT API:
+Check out the [Universal Windows Platform (UWP) Code Samples](https://developer.microsoft.com/en-us/windows/samples) repo to browse JavaScript examples for common Windows 10 app scenarios. Although the JS versions of these samples use the [WinJS](https://github.com/winjs/winjs) library to structure the sample template, WinJS is not required for calling the WinRT APIs demonstrated by these samples. Note that if you need to listen for the app's [`activated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiapplication.activated) event, you can do this using the following native WinRT API:
 
 **USE THIS**
 ```JavaScript
@@ -159,7 +160,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activa
     // Check activatedEventArgs.kind and respond as needed
 });
 ```
-...as opposed to using this type of WinJS call in the sample:
+...as opposed this type of WinJS call used in the samples:
 
 **NOT THIS**
 ```JavaScript
@@ -181,7 +182,7 @@ Windows app feature | PWA samples
 **Windows UX customizations** | [App title bar](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/title-bar.md), [App context menu](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/context-menu.md), Desktop taskbar commands 
 **Other tasks** | Background tasks, Caching and data storage, [Cortana voice commands](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/cortana-voice-commands.md), Hosting HTMLWebView, Using a custom WinRT component, [Web authentication broker](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/web-authentication-broker.md) 
 
-### Call WinRT APIs in your PWA
+## Call WinRT APIs from your PWA
 
 At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
 
@@ -219,9 +220,9 @@ StartPage="https://contoso.com/home">
 
 URLs defined within the app's ACURs can be granted permission to the Windows Runtime through the `WindowsRuntimeAccess` attribute, which accepts the following values:
 
-- **`all`**: Remote JavaScript code has access to all WinRT APIs and any local packaged components. The [`Windows`](https://docs.microsoft.com/en-us/uwp/api/) namespace will be injected and present in the script engine
-- **`allowForWeb`**: Remote JavaScript code access is limited to local packaged components, including custom C++/C# components.
-- **`none`**: Default. The specified URL has no platform access.
+- **all**: Remote JavaScript code has access to all WinRT APIs and any local packaged components. The [Windows](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) namespace will be injected and present in the script engine
+- **allowForWeb**: Remote JavaScript code access is limited to local packaged components, including custom C++/C# components.
+- **none**: Default. The specified URL has no platform access.
 
 In this tutorial, we've already set the only ACUR we need (*Step 6* of the previous [*Set up and run your app*](#set-up-and-run-your-universal-windows-app) section) for our "single-page app". You can confirm this from the **Content URIs** panel of the Visual Studio *package.appxmanifest* designer.
 
@@ -281,48 +282,48 @@ With that background, we're ready to add some WinRT code to implement a custom c
 
 4. Name your file: *site.js*, and copy in the following code:
 
-```JavaScript
-if (window.Windows && Windows.UI.Popups) {
-    document.addEventListener('contextmenu', function (e) {
+    ```JavaScript
+    if (window.Windows && Windows.UI.Popups) {
+        document.addEventListener('contextmenu', function (e) {
 
-        // Build the context menu
-        var menu = new Windows.UI.Popups.PopupMenu();
-        menu.commands.append(new Windows.UI.Popups.UICommand("Option 1", null, 1));
-        menu.commands.append(new Windows.UI.Popups.UICommandSeparator);
-        menu.commands.append(new Windows.UI.Popups.UICommand("Option 2", null, 2));
+            // Build the context menu
+            var menu = new Windows.UI.Popups.PopupMenu();
+            menu.commands.append(new Windows.UI.Popups.UICommand("Option 1", null, 1));
+            menu.commands.append(new Windows.UI.Popups.UICommandSeparator);
+            menu.commands.append(new Windows.UI.Popups.UICommand("Option 2", null, 2));
 
-        // Convert from webpage to WinRT coordinates
-        function pageToWinRT(pageX, pageY) {
-            var zoomFactor = document.documentElement.msContentZoomFactor;
-            return {
-                x: (pageX - window.pageXOffset) * zoomFactor,
-                y: (pageY - window.pageYOffset) * zoomFactor
-            };
-        }
-
-        // When the menu is invoked, execute the requested command
-        menu.showAsync(pageToWinRT(e.pageX, e.pageY)).done(function (invokedCommand) {
-            if (invokedCommand !== null) {
-                switch (invokedCommand.id) {
-                    case 1:
-                        console.log('Option 1 selected');
-                        // Invoke code for option 1
-                        break;
-                    case 2:
-                        console.log('Option 2 selected');
-                        // Invoke code for option 2
-                        break;
-                    default:
-                        break;
-                }
-            } else {
-                // The command is null if no command was invoked.
-                console.log("Context menu dismissed");
+            // Convert from webpage to WinRT coordinates
+            function pageToWinRT(pageX, pageY) {
+                var zoomFactor = document.documentElement.msContentZoomFactor;
+                return {
+                    x: (pageX - window.pageXOffset) * zoomFactor,
+                    y: (pageY - window.pageYOffset) * zoomFactor
+                };
             }
-        });
-    }, false);
-}
-```
+
+            // When the menu is invoked, execute the requested command
+            menu.showAsync(pageToWinRT(e.pageX, e.pageY)).done(function (invokedCommand) {
+                if (invokedCommand !== null) {
+                    switch (invokedCommand.id) {
+                        case 1:
+                            console.log('Option 1 selected');
+                            // Invoke code for option 1
+                            break;
+                        case 2:
+                            console.log('Option 2 selected');
+                            // Invoke code for option 2
+                            break;
+                        default:
+                            break;
+                    }
+                } else {
+                    // The command is null if no command was invoked.
+                    console.log("Context menu dismissed");
+                }
+            });
+        }, false);
+    }
+    ```
 
 5. Compare the context menu behavior when you run your PWA in the browser (*F5* from your PWA site project) versus from inside its Windows app window (*F5* from your *Universal Windows* app project). In the browser, right-clicking gives you the Edge's default context menu, whereas in the *WWAHost.exe* process, your custom menu now appears.
 
@@ -330,7 +331,7 @@ if (window.Windows && Windows.UI.Popups) {
     :--- | :---- 
     ![Browser default context menu](./media/browser-context-menu.png) | ![App custom context menu](./media/app-context-menu.png)
 
-Hopefully this provided you with a solid foundation to start progressively enhancing your PWAs for Windows. If you run into questions or anything is unclear, please drop us a comment!
+Hopefully you now have a solid foundation for progressively enhancing your PWAs for Windows. If you run into questions or anything is unclear, please drop us a comment!
 
 ## Going further
 
