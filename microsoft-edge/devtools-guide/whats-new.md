@@ -56,7 +56,7 @@ Additionally, the [Network panel toolbar](./network.md#toolbar) has a new button
 
 ![Network toolbar button: Bypass Service Worker for all network requests](./media/network_toolbar_bypass_sw.png)
 
-You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/get-started.md#test-and-debug-your-pwa-on-windows) by selecting it from the list of [**Local**](../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../devtools-guide.md#microsoft-store-app).
+You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/windows-features.md) by selecting it from the list of [**Local**](../../progressive-web-apps/windows-features.md#debug-your-pwa-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../devtools-guide.md#microsoft-store-app).
 
 ## Vertical window docking
 
