@@ -83,6 +83,8 @@
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
+### [API Surface](progressive-web-apps/api-surface.md)
+#### [MSApp](progressive-web-apps/api-surface/msapp.md)
 ## [WebDriver](webdriver.md)
 ## [WebView](webview.md)
 ### [DeferredPermissionRequest](webview/DeferredPermissionRequest.md)

@@ -326,6 +326,8 @@ Hopefully you now have a solid foundation for progressively enhancing your PWAs 
 
 ## Going further
 
+For an overview of the entire Windows API surface at your PWA's disposal, see [*API Surface of PWAs on Windows*](./api-surface.md).
+
 The [**Windows Dev Center**](https://developer.microsoft.com/en-us/windows/apps) is your complete reference for all stages of Windows app building, from [getting started](https://developer.microsoft.com/en-us/windows/apps/getstarted), to [designing](https://developer.microsoft.com/windows/apps/design), [developing](https://developer.microsoft.com/windows/apps/develop), and [publishing](https://developer.microsoft.com/store/publish-apps) to the Microsoft Store.
 
 For a general overview on the Universal Windows Platform (UWP) and how to target different Windows 10 device families, see [*Intro to the Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide).
