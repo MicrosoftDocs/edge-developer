@@ -21,7 +21,9 @@ Here are the latest Microsoft Edge DevTools features coming with the next [Windo
 
 ![Microsoft Edge DevTools app](../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
+The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../webview.md), and [Windows-installed PWAs](../progressive-web-apps/windows-features.md)).
+
+The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
 
 Decoupling the DevTools from Edge provides these UX and architectural advantages:
 
