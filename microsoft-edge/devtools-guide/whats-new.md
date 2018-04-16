@@ -38,7 +38,7 @@ Developer tools can use the [**Microsoft Edge DevTools Protocol**](../devtools-p
 
  Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Edge or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal). 
  
- Microsoft Edge DevTools uses this protocol to enable [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store.
+ Microsoft Edge DevTools uses this protocol to enable [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store. Currently this preview support is limited to JS debugging of another Edge on another desktop device or VM. Over time, we’ll add support for the full set of DevTools against any EdgeHTML instance on any Windows 10 device.  
  
  The latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) builds (Visual Studio 15.7 Preview 1 or later) use the DevTools Protocol to enable launching and debugging Edge (JavaScript code) from within the Visual Studio IDE of any ASP.NET or .NET Core project.
 
