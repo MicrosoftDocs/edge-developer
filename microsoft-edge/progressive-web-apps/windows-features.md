@@ -171,17 +171,6 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activa
     });
 ```
 
-### Windows PWA snippets
-
-You can also browse (and contribute!) code snippets for common PWA tasks on Windows, including:
-
-Windows app feature | PWA samples
-:--- | :---- 
-**Notifications** | Start screen tiles, Tile badges, Scheduled tile updates, Toast notifications 
-**OS integration** | File handler registration, App launch at startup, Handling activation, Native messaging 
-**Windows UX customizations** | [App title bar](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/title-bar.md), [App context menu](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/context-menu.md), Desktop taskbar commands 
-**Other tasks** | Background tasks, Caching and data storage, [Cortana voice commands](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/cortana-voice-commands.md), Hosting HTMLWebView, Using a custom WinRT component, [Web authentication broker](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/web-authentication-broker.md) 
-
 ## Call WinRT APIs from your PWA
 
 At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
