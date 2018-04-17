@@ -67,7 +67,7 @@ If this were an existing live site, you could quickly generate a web app manifes
 
 3. Next, let's fill in the empty `icons` array with actual image paths. For that, we'll use PWA Builder's *App Image Generator*.
 
-    1. Save down this [sample 512x512 PWA image]() from your web browser.
+    1. Save down this [sample 512x512 PWA image](./media/pwa.png) from your web browser.
 
     2. Go to the PWA Builder [App Image Generator](https://appimagegenerator-prod.azurewebsites.net/), and select the *pwa.png* image you just saved as the **Input Image** and then click the **Download** button.
 
