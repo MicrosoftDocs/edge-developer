@@ -27,6 +27,8 @@ Clicking on a specific service worker entry will open up the **Service Worker Ov
 
 ![Service Worker Overview pane](../media/debugger_sw_overview.png)
 
+![Service Worker debugging instance](../media/debugger_sw_inspect.png)
+
 Please note the following about service worker debugging in Edge DevTools:
 
  - Debugging a service worker will launch a new instance of the  DevTools separate from the page's tools because service workers can be shared across multiple tabs.
@@ -38,8 +40,6 @@ Please note the following about service worker debugging in Edge DevTools:
        console.log(event.data.text());
    });
    ```
-
-![Service Worker debugging instance](../media/debugger_sw_inspect.png)
 
 Here are some general things to keep in mind when using service workers:
 
