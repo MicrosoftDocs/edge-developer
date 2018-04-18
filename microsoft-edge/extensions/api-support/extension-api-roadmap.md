@@ -3,7 +3,7 @@ description: Find information on current progress towards completing the Microso
 title: Extensions - Extension API roadmap
 author: abbycar
 ms.author: abigailc
-ms.date: 04/11/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, api, extensions, javascript, developer
@@ -25,7 +25,7 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 |    history    |                                         Interacts with the browser's record of visited pages.                                         |                 Under consideration                  |
 |     i18n      |                                         Implements internationalization across an extension.                                          | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |     idle      |                                       Used to detect when the machine's idle state is changed.                                        | Supported — Microsoft Edge (38) / Windows 10 (14393) |
-| notifications |                      Allows creation of notifications using templates to be displayed in the user's system tray.                      |                 Under consideration                  |
+| notifications |                      Allows creation of notifications using templates to be displayed in the user's system tray.                      | Supported - Microsoft Edge (##) / ###                |
 |  pageAction   |                                      Enables extensions to add a button inside the address bar.                                       | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |  permissions  |                   Allows users to select what optional permissions they would like to grant an extension access to.                   |                 Under consideration                  |
 |    runtime    | Retrieves the background page, returns details about the manifest, and listens for and responds to events in the extension lifecycle. | Supported — Microsoft Edge (38) / Windows 10 (14393) |
