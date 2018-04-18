@@ -156,7 +156,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
     ![Files added to the solution's public folder](./media/vs-nodejs-express-public.png)
 
-5. In *Solution Explorer*, open the *routes\index.js* file, and add the following code just before the final command (`module.exports = router;`):
+5. From *Solution Explorer*, open the *routes\index.js* file, and add the following code just before the final command (`module.exports = router;`):
 
     ```JavaScript
     router.get('/offline.html', function (req, res) {
