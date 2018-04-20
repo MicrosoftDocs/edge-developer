@@ -94,7 +94,6 @@ The following warnings can occur as part of the validation performed during HTML
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning,  will include line and character offset information along with a link pointing to the location where the problem was found.
 
-
 | Code     | Message                                                                                                                       |
 |:---------|:------------------------------------------------------------------------------------------------------------------------------|
 | HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."                                               |
