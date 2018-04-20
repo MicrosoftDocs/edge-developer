@@ -96,7 +96,7 @@ Common causes of these warnings include missing or additional characters, and mi
 
 
  Code     | Message                                                                                                                       
-:---------|:--------------------------------------------------------------------------------------------
+:---------| :--------------------------------------------------------------------------------------------
  HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."                                               
  HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expected [0-9], [a-f], or [A-F]."                  
  HTML1402 | "Character reference is missing an ending semicolon ";"."                                                                     
