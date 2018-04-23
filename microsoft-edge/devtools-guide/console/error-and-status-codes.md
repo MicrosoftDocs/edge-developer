@@ -94,9 +94,9 @@ The following warnings can occur as part of the validation performed during HTML
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning,  will include line and character offset information along with a link pointing to the location where the problem was found.
 
-| Code     | Message |
+| Code     | Message 
 :---------| :--------------------------------------------
-| HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]." |
+| HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]." 
 | HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expect ed [0-9], [a-f], or [A-F]." |
 | HTML1402 | "Character reference is missing an ending semicolon ";"." |
 | HTML1403 | "Numeric character reference does not resolve to a valid character." |
@@ -106,9 +106,9 @@ Common causes of these warnings include missing or additional characters, and mi
 | HTML1407 | "Invalid tag name. First character should match [a-zA-Z]." |
 | HTML1408 | "Invalid end tag &#60;/&#62;. End tags should not be empty." |
 | HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)." |
-| HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)." |
+| HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (&#96;)." |
 | HTML1411 | "Unexpected end of file." |
-| HTML1412 | "Malformed comment. Comments should start with &#60;!-- `." |
+| HTML1412 | "Malformed comment. Comments should start with &#60;!-- &#96;." |
 | HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)" |
 | HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)" |
 | HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)" |
@@ -144,7 +144,7 @@ Common causes of these warnings include missing or additional characters, and mi
 | HTML1520 | "Unexpected start tag: The &#60;isindex&#62; element is deprecated and should not be used." |
 | HTML1521 | "Unexpected &#60;/body&#62; or end of file. All open elements should be closed before the end of the document." |
 | HTML1522 | "Invalid end tag: &#60;/br&#62;. Use &#60;br&#62; or &#60;br/&#62; instead." |
-| HTML1523 | "Overlapping end tag. Tags should be structured like &#60;b><i></i></b&#62; instead of &#60;b><i></b></i&#62;." |
+| HTML1523 | "Overlapping end tag. Tags should be structured like &#60;b&#62;&#60;i&#62;&#60;/i&#62;&#60;/b&#62; instead of &#60;b&#62;&#60;i&#62;&#60;/b&#62;&#60;/i&#62;." |
 | HTML1524 | "Invalid DOCTYPE. The shortest valid doctype is &#60;!DOCTYPE html&#62;." |
 | HTML1525 | "Unexpected HTML tag found inside foreign content (MathML/SVG)." |
 | HTML1526 | "Invalid nesting. A &#60;nobr&#62; tag should not be placed within another &#60;nobr&#62;." |
