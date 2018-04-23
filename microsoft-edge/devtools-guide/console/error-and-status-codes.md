@@ -159,48 +159,6 @@ Common causes of these warnings include missing or additional characters, and mi
 ## HTTP Codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page/document specified in the URI.
 
-Code | Message | Description
-:------------ | :------------- | :-------------
-HTTP400 | BAD REQUEST | The request could not be processed by the server due to invalid syntax.
-HTTP401 | DENIED | The requested resource requires user authentication.
-HTTP402 | PAYMENT REQUIRED | Not currently implemented in the HTTP protocol.
-HTTP403 | FORBIDDEN | The server understood the request, but is refusing to fulfill it.
-HTTP404 | NOT FOUND | The server has not found anything matching the requested URI (Uniform Resource Identifier).
-HTTP405 | BAD METHOD | The HTTP verb used is not allowed.
-HTTP406 | NONE ACCEPTABLE | No responses acceptable to the client were found.
-HTTP407 | PROXY AUTHENTICATION REQUIRED | Proxy authentication required.
-HTTP408 | REQUEST TIMEOUT | The server timed out waiting for the request.
-HTTP409 | CONFLICT | The request could not be completed due to a conflict with the current state of the resource.
-HTTP410 | GONE | The requested resource is no longer available at the server, and no forwarding address is known.
-HTTP411 | LENGTH REQUIRED | The server refuses to accept the request without a defined content length.
-HTTP412 | PRECONDITION FAILED | The precondition given in one or more of the request header fields evaluated to false when it was tested on the server.
-HTTP413 | PAYLOAD TOO LARGE | The server is refusing to process a request because the request entity is larger than the server is willing or able to process.
-HTTP414 | URI TOO LONG | The server is refusing to service the request because the request URI (Uniform Resource Identifier) is longer than the server is willing to interpret.
-HTTP415 | UNSUPPORTED MEDIA TYPE | The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.
-HTTP416 | REQUESTED RANGE NOT SATISFIABLE | The server cannot provide the portion of the file the client has requested. The portion may extend beyond the end of the file.
-HTTP417 | EXPECTATION FAILED | The server cannot meet the requirements of the Expect request-header field.
-HTTP418 | IM A TEAPOT | The server is a teapot, it cannot brew coffee.
-HTTP419 | AUTHENTICATION TIMEOUT | The previously valid authentication has expired.
-HTTP422 | UNPROCESSABLE ENTITY | The request was well-formed but could not be processed due to semantic errors.
-HTTP423 | LOCKED | The resource being accessed is locked.
-HTTP424 | FAILED DEPENDENCY | The request failed due to the failure of a previous request.
-HTTP426 | UPGRADE REQUIRED | The client must switch to a different protocol.
-HTTP428 | PRECONDITION REQUIRED | The origin server requires the request to be conditional.
-HTTP429 | TOO MANY REQUESTS | The server is refusing to service the request because too many requests have been submitted by the client.
-HTTP431 | REQUEST HEADER FIELDS TOO LARGE | The server is refusing to service the request because a header field, or all header fields collectively, are larger than the server is willing or able to process.
-HTTP449 | RETRY WITH | The request should be retried after doing the appropriate action.
-HTTP500 | SERVER ERROR | The server encountered an unexpected condition that prevented it from fulfilling the request.
-HTTP501 | NOT SUPPORTED | The server does not support the functionality required to fulfill the request.
-HTTP502 | BAD GATEWAY | The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.
-HTTP503 | SERVICE UNAVAILABLE | The service is temporarily overloaded.
-HTTP504 | GATEWAY TIMEOUT | The request was timed out waiting for a gateway.
-HTTP505 | VERSION NOT SUPPORTED | The server does not support, or refuses to support, the HTTP protocol version that was used in the request message.
-HTTP506 | VARIANT ALSO NEGOTIATES | Transparent content negotiation for the request resulted in circular references.
-HTTP507 | INSUFFICIENT STORAGE | The server is unable to store the representation needed to complete the request.
-HTTP508 | LOOP DETECTED | The server detected an infinite loop while servicing the request.
-HTTP510 | NOT EXTENDED | Further extensions to the request are required for the server to fulfill it.
-HTTP511 | NETWORK AUTHENTICATION REQUIRED | The client must authenticate to gain network access.
-
 ## Security codes
 
 Security error codes are in the form `SEC7xxx`, such as `SEC7113`. These reflect security conditions that Microsoft Edge enforces, such as mixed content, and Tracking Protection.
