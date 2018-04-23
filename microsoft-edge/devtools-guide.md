@@ -7,6 +7,8 @@ ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+experimental: true
+experiment_id: "51fe4b97-3e55-41"
 ---
 
 # Microsoft Edge Developer Tools
