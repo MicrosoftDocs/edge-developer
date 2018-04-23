@@ -94,66 +94,66 @@ The following warnings can occur as part of the validation performed during HTML
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning,  will include line and character offset information along with a link pointing to the location where the problem was found.
 
- Code     | Message                                                                                                                       
+Code     | Message                                                                                                                       
 :---------| :--------------------------------------------------------------------------------------------
- HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]." |
- HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expect ed [0-9], [a-f], or [A-F]." |
- HTML1402 | "Character reference is missing an ending semicolon ";"." |
- HTML1403 | "Numeric character reference does not resolve to a valid character." |
- HTML1404 | "Unrecognized named character reference." |
- HTML1405 | "Invalid character: U+0000 NULL. Null characters should not be used." |
- HTML1406 | "Invalid tag start: `<?`. Question marks should not start tags." |
- HTML1407 | "Invalid tag name. First character should match [a-zA-Z]." |
- HTML1408 | "Invalid end tag `</>`. End tags should not be empty." |
- HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)." |
- HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)." |
- HTML1411 | "Unexpected end of file." |
- HTML1412 | "Malformed comment. Comments should start with `<!-- `." |
- HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)" |
- HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)" |
- HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)" |
- HTML1416 | "Unexpected character in comment end. Expected "-->"." |
- HTML1417 | "Empty DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`." |
- HTML1418 | "Unexpected character in DOCTYPE." |
- HTML1419 | "Unexpected keyword in DOCTYPE. Expected "PUBLIC" or "SYSTEM"." |
- HTML1420 | "Unexpected quote after "PUBLIC" or "SYSTEM" keyword. Expected whitespace." |
- HTML1421 | "Malformed end tag. End tags should not contain attributes." |
- HTML1422 | "Malformed start tag. A self closing slash should be followed by a U+003E GREATER-THAN SIGN (>)." |
- HTML1423 | "Malformed start tag. Attributes should be separated by whitespace." |
- HTML1424 | "Invalid character   " |
- HTML1500 | "Tag cannot be self-closing. Use an explicit closing tag."| 
- HTML1501 | "Unexpected end of file." |
- HTML1502 | "Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements." |
- HTML1503 | "Unexpected start tag." |
- HTML1504 | "Unexpected end tag." |
- HTML1505 | "Unexpected character token." |
- HTML1506 | "Unexpected token." |
- HTML1507 | "Unexpected character: U+0000 NULL. Null characters should not be used." |
- HTML1508 | "Unmatched end tag." |
- HTML1509 | "Unmatched end tag." |
- HTML1510 | "Required nodes not in scope." |
- HTML1511 | "Unexpected head-level element encountered outside of `<head>`." |
- HTML1512 | "Unmatched end tag." |
- HTML1513 | "Extra `<html>` tag fond. Only one `<html>` tag should exist per document." |
- HTML1514 | "Extra `<body>` tag found. Only one `<body>` tag should exist per document." |
- HTML1515 | "Found `<frameset>` too far down in the document. This tag should occur before a `<body>` is created." |
- HTML1516 | "Invalid nesting. A header tag such as `<h1>` or `<h2>` should not be placed within another header tag." |
- HTML1517 | "Invalid nesting. A `<form>` tag should not be placed within another `<form>`." |
- HTML1518 | "Invalid nesting. A `<button>` tag should not be placed within another `<button>`." |
- HTML1519 | "Invalid nesting. An `<a>` tag should not be placed within another `<a>`." |
- HTML1520 | "Unexpected start tag: The `<isindex>` element is deprecated and should not be used." |
- HTML1521 | "Unexpected `</body>` or end of file. All open elements should be closed before the end of the document." |
- HTML1522 | "Invalid end tag: `</br>`. Use `<br>` or `<br/>` instead." |
- HTML1523 | "Overlapping end tag. Tags should be structured like `<b><i></i></b>` instead of `<b><i></b></i>`." |
- HTML1524 | "Invalid DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`." |
- HTML1525 | "Unexpected HTML tag found inside foreign content (MathML/SVG)." |
- HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another `<nobr>`." |
- HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`." |
- HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead." |
- HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "<http://www.w3.org/1999/xlink>"." |
- HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." |
- HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "<http://www.w3.org/2000/svg/>"." |
- HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "<http://www.w3.org/1998/Math/MathML/>". |
+HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]." |
+HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expect ed [0-9], [a-f], or [A-F]." |
+HTML1402 | "Character reference is missing an ending semicolon ";"." |
+HTML1403 | "Numeric character reference does not resolve to a valid character." |
+HTML1404 | "Unrecognized named character reference." |
+HTML1405 | "Invalid character: U+0000 NULL. Null characters should not be used." |
+HTML1406 | "Invalid tag start: `<?`. Question marks should not start tags." |
+HTML1407 | "Invalid tag name. First character should match [a-zA-Z]." |
+HTML1408 | "Invalid end tag `</>`. End tags should not be empty." |
+HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)." |
+HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)." |
+HTML1411 | "Unexpected end of file." |
+HTML1412 | "Malformed comment. Comments should start with `<!-- `." |
+HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)" |
+HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)" |
+HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)" |
+HTML1416 | "Unexpected character in comment end. Expected "-->"." |
+HTML1417 | "Empty DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`." |
+HTML1418 | "Unexpected character in DOCTYPE." |
+HTML1419 | "Unexpected keyword in DOCTYPE. Expected "PUBLIC" or "SYSTEM"." |
+HTML1420 | "Unexpected quote after "PUBLIC" or "SYSTEM" keyword. Expected whitespace." |
+HTML1421 | "Malformed end tag. End tags should not contain attributes." |
+HTML1422 | "Malformed start tag. A self closing slash should be followed by a U+003E GREATER-THAN SIGN (>)." |
+HTML1423 | "Malformed start tag. Attributes should be separated by whitespace." |
+HTML1424 | "Invalid character   " |
+HTML1500 | "Tag cannot be self-closing. Use an explicit closing tag."| 
+HTML1501 | "Unexpected end of file." |
+HTML1502 | "Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements." |
+HTML1503 | "Unexpected start tag." |
+HTML1504 | "Unexpected end tag." |
+HTML1505 | "Unexpected character token." |
+HTML1506 | "Unexpected token." |
+HTML1507 | "Unexpected character: U+0000 NULL. Null characters should not be used." |
+HTML1508 | "Unmatched end tag." |
+HTML1509 | "Unmatched end tag." |
+HTML1510 | "Required nodes not in scope." |
+HTML1511 | "Unexpected head-level element encountered outside of `<head>`." |
+HTML1512 | "Unmatched end tag." |
+HTML1513 | "Extra `<html>` tag fond. Only one `<html>` tag should exist per document." |
+HTML1514 | "Extra `<body>` tag found. Only one `<body>` tag should exist per document." |
+HTML1515 | "Found `<frameset>` too far down in the document. This tag should occur before a `<body>` is created." |
+HTML1516 | "Invalid nesting. A header tag such as `<h1>` or `<h2>` should not be placed within another header tag." |
+HTML1517 | "Invalid nesting. A `<form>` tag should not be placed within another `<form>`." |
+HTML1518 | "Invalid nesting. A `<button>` tag should not be placed within another `<button>`." |
+HTML1519 | "Invalid nesting. An `<a>` tag should not be placed within another `<a>`." |
+HTML1520 | "Unexpected start tag: The `<isindex>` element is deprecated and should not be used." |
+HTML1521 | "Unexpected `</body>` or end of file. All open elements should be closed before the end of the document." |
+HTML1522 | "Invalid end tag: `</br>`. Use `<br>` or `<br/>` instead." |
+HTML1523 | "Overlapping end tag. Tags should be structured like `<b><i></i></b>` instead of `<b><i></b></i>`." |
+HTML1524 | "Invalid DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`." |
+HTML1525 | "Unexpected HTML tag found inside foreign content (MathML/SVG)." |
+HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another `<nobr>`." |
+HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`." |
+HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead." |
+HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "<http://www.w3.org/1999/xlink>"." |
+HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." |
+HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "<http://www.w3.org/2000/svg/>"." |
+HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "<http://www.w3.org/1998/Math/MathML/>". |
 
 ## HTTP Codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page/document specified in the URI.
