@@ -93,71 +93,52 @@ HTML1300 | "Navigation occurred" | A new page was navigated to, or the current p
 The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken, but that the provided HTML is invalid per the HTML5 standard. Content created according to earlier versions of the HTML or XHTML specifications might not be valid in HTML5, in particular with respect to the use of DOCTYPEs.
 
 Common causes of these warnings include missing or additional characters, and mismatched tags. When you resolve these warnings, compatibility with older browsers and a webpage’s compliance with the HTML5 standard can improve. To help identify the source of a warning,  will include line and character offset information along with a link pointing to the location where the problem was found.
-
-
- Code     | Message                                                                                                                       
-:---------| :--------------------------------------------------------------------------------------------
- HTML1400 | "Unexpected character at start of numeric character reference. Expected [0-9]."                                               
- HTML1401 | "Unexpected character at start of hexadecimal numeric character reference. Expected [0-9], [a-f], or [A-F]."                  
- HTML1402 | "Character reference is missing an ending semicolon ";"."                                                                     
- HTML1403 | "Numeric character reference does not resolve to a valid character."                                                          
- HTML1404 | "Unrecognized named character reference."                                                                                     
- HTML1405 | "Invalid character: U+0000 NULL. Null characters should not be used."                                                         
- HTML1406 | "Invalid tag start: `<?`. Question marks should not start tags."                                                              
- HTML1407 | "Invalid tag name. First character should match [a-zA-Z]."                                                                    
- HTML1408 | "Invalid end tag `</>`. End tags should not be empty."                                                                        
- HTML1409 | "Invalid attribute name character. Attribute names should not contain ("),('),(<), or (=)."                                   
- HTML1410 | "Invalid unquoted attribute value. Unquoted attribute values should not contain ("), ('), (<), (=), or (`)."                  
- HTML1411 | "Unexpected end of file."                                                                                                     
- HTML1412 | "Malformed comment. Comments should start with `<!-- `."                                                                      
- HTML1413 | "Unexpected character: U+003E GREATER-THAN SIGN (>)"                                                                          
- HTML1414 | "Unexpected character: U+0021 EXCLAMATION MARK (!)"                                                                           
- HTML1415 | "Unexpected character: U+002D HYPHEN-MINUS (-)"                                                                               
- HTML1416 | "Unexpected character in comment end. Expected "-->"."                                                                        
- HTML1417 | "Empty DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`."                                                             
- HTML1418 | "Unexpected character in DOCTYPE."                                                                                            
- HTML1419 | "Unexpected keyword in DOCTYPE. Expected "PUBLIC" or "SYSTEM"."                                                               
- HTML1420 | "Unexpected quote after "PUBLIC" or "SYSTEM" keyword. Expected whitespace."                                                   
- HTML1421 | "Malformed end tag. End tags should not contain attributes."                                                                  
- HTML1422 | "Malformed start tag. A self closing slash should be followed by a U+003E GREATER-THAN SIGN (>)."                             
- HTML1423 | "Malformed start tag. Attributes should be separated by whitespace."                                                          
- HTML1424 | "Invalid character   "                                                                                                        
- HTML1500 | "Tag cannot be self-closing. Use an explicit closing tag."                                                                    
- HTML1501 | "Unexpected end of file."                                                                                                     
- HTML1502 | "Unexpected DOCTYPE. Only one DOCTYPE is allowed and it must occur before any elements."                                      
- HTML1503 | "Unexpected start tag."                                                                                                       
- HTML1504 | "Unexpected end tag."                                                                                                         
- HTML1505 | "Unexpected character token."                                                                                                 
- HTML1506 | "Unexpected token."                                                                                                           
- HTML1507 | "Unexpected character: U+0000 NULL. Null characters should not be used."                                                      
- HTML1508 | "Unmatched end tag."                                                                                                          
- HTML1509 | "Unmatched end tag."                                                                                                          
- HTML1510 | "Required nodes not in scope."                                                                                                
- HTML1511 | "Unexpected head-level element encountered outside of `<head>`."                                                              
- HTML1512 | "Unmatched end tag."                                                                                                          
- HTML1513 | "Extra `<html>` tag found. Only one `<html>` tag should exist per document."                                                  
- HTML1514 | "Extra `<body>` tag found. Only one `<body>` tag should exist per document."                                                  
- HTML1515 | "Found `<frameset>` too far down in the document. This tag should occur before a `<body>` is created."                        
- HTML1516 | "Invalid nesting. A header tag such as `<h1>` or `<h2>` should not be placed within another header tag."                      
- HTML1517 | "Invalid nesting. A `<form>` tag should not be placed within another `<form>`."                                               
- HTML1518 | "Invalid nesting. A `<button>` tag should not be placed within another `<button>`."                                           
- HTML1519 | "Invalid nesting. An `<a>` tag should not be placed within another `<a>`."                                                    
- HTML1520 | "Unexpected start tag: The `<isindex>` element is deprecated and should not be used."                                         
- HTML1521 | "Unexpected `</body>` or end of file. All open elements should be closed before the end of the document."                     
- HTML1522 | "Invalid end tag: `</br>`. Use `<br>` or `<br/>` instead."                                                                    
- HTML1523 | "Overlapping end tag. Tags should be structured like `<b><i></i></b>` instead of `<b><i></b></i>`."                           
- HTML1524 | "Invalid DOCTYPE. The shortest valid doctype is `<!DOCTYPE html>`."                                                           
- HTML1525 | "Unexpected HTML tag found inside foreign content (MathML/SVG)."                                                              
- HTML1526 | "Invalid nesting. A `<nobr>` tag should not be placed within another `<nobr>`."                                               
- HTML1527 | "DOCTYPE expected. The shortest valid doctype is `<!DOCTYPE html>`."                                                          
- HTML1528 | "Unexpected `<image>` in HTML content. Use `<img>` instead."                                                                  
- HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "<http://www.w3.org/1999/xlink>"."                                    
- HTML1530 | "Text found within a structural table element. Table text may only be placed inside `<caption>`, `<td>`, or `<th>` elements." 
- HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "<http://www.w3.org/2000/svg/>"."                          
- HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "<http://www.w3.org/1998/Math/MathML/>".                
+            
 
 ## HTTP Codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page/document specified in the URI.
+
+Code | Message | Description
+:------------ | :------------- | :-------------
+HTTP400 | BAD REQUEST | The request could not be processed by the server due to invalid syntax.
+HTTP401 | DENIED | The requested resource requires user authentication.
+HTTP402 | PAYMENT REQUIRED | Not currently implemented in the HTTP protocol.
+HTTP403 | FORBIDDEN | The server understood the request, but is refusing to fulfill it.
+HTTP404 | NOT FOUND | The server has not found anything matching the requested URI (Uniform Resource Identifier).
+HTTP405 | BAD METHOD | The HTTP verb used is not allowed.
+HTTP406 | NONE ACCEPTABLE | No responses acceptable to the client were found.
+HTTP407 | PROXY AUTHENTICATION REQUIRED | Proxy authentication required.
+HTTP408 | REQUEST TIMEOUT | The server timed out waiting for the request.
+HTTP409 | CONFLICT | The request could not be completed due to a conflict with the current state of the resource.
+HTTP410 | GONE | The requested resource is no longer available at the server, and no forwarding address is known.
+HTTP411 | LENGTH REQUIRED | The server refuses to accept the request without a defined content length.
+HTTP412 | PRECONDITION FAILED | The precondition given in one or more of the request header fields evaluated to false when it was tested on the server.
+HTTP413 | PAYLOAD TOO LARGE | The server is refusing to process a request because the request entity is larger than the server is willing or able to process.
+HTTP414 | URI TOO LONG | The server is refusing to service the request because the request URI (Uniform Resource Identifier) is longer than the server is willing to interpret.
+HTTP415 | UNSUPPORTED MEDIA TYPE | The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.
+HTTP416 | REQUESTED RANGE NOT SATISFIABLE | The server cannot provide the portion of the file the client has requested. The portion may extend beyond the end of the file.
+HTTP417 | EXPECTATION FAILED | The server cannot meet the requirements of the Expect request-header field.
+HTTP418 | IM A TEAPOT | The server is a teapot, it cannot brew coffee.
+HTTP419 | AUTHENTICATION TIMEOUT | The previously valid authentication has expired.
+HTTP422 | UNPROCESSABLE ENTITY | The request was well-formed but could not be processed due to semantic errors.
+HTTP423 | LOCKED | The resource being accessed is locked.
+HTTP424 | FAILED DEPENDENCY | The request failed due to the failure of a previous request.
+HTTP426 | UPGRADE REQUIRED | The client must switch to a different protocol.
+HTTP428 | PRECONDITION REQUIRED | The origin server requires the request to be conditional.
+HTTP429 | TOO MANY REQUESTS | The server is refusing to service the request because too many requests have been submitted by the client.
+HTTP431 | REQUEST HEADER FIELDS TOO LARGE | The server is refusing to service the request because a header field, or all header fields collectively, are larger than the server is willing or able to process.
+HTTP449 | RETRY WITH | The request should be retried after doing the appropriate action.
+HTTP500 | SERVER ERROR | The server encountered an unexpected condition that prevented it from fulfilling the request.
+HTTP501 | NOT SUPPORTED | The server does not support the functionality required to fulfill the request.
+HTTP502 | BAD GATEWAY | The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.
+HTTP503 | SERVICE UNAVAILABLE | The service is temporarily overloaded.
+HTTP504 | GATEWAY TIMEOUT | The request was timed out waiting for a gateway.
+HTTP505 | VERSION NOT SUPPORTED | The server does not support, or refuses to support, the HTTP protocol version that was used in the request message.
+HTTP506 | VARIANT ALSO NEGOTIATES | Transparent content negotiation for the request resulted in circular references.
+HTTP507 | INSUFFICIENT STORAGE | The server is unable to store the representation needed to complete the request.
+HTTP508 | LOOP DETECTED | The server detected an infinite loop while servicing the request.
+HTTP510 | NOT EXTENDED | Further extensions to the request are required for the server to fulfill it.
+HTTP511 | NETWORK AUTHENTICATION REQUIRED | The client must authenticate to gain network access.
 
 ## Security codes
 
