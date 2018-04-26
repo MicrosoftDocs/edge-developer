@@ -186,7 +186,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
 Let's make our PWA even more "app-like" by adding client-side support for push notifications using the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) to subscribe to a messaging service and the [Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to display a toast message upon receiving a message. As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are suppoted. On the server side, we'll use the [Web-Push](https://www.npmjs.com/package/web-push) open-source library to handle the differences involved in delivering push messages to various browsers.
 
-The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html), which has a number of useful *Web Push* recipes for building your PWA.
+The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html), which is worth checking out for a number of other useful *Web Push* and service worker recipes.
 
 1. **Install the NPM *web-push* library.**
 
@@ -195,7 +195,11 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     ```
     .npm install web-push
     ```
-    ... to include the [Web-Push](https://www.npmjs.com/package/web-push) library in your project.
+    ... to install the [Web-Push](https://www.npmjs.com/package/web-push) library. Then, open up your *index.js* file, and add the following line to the top of your file after the other requirement statements:
+
+    ```
+    var webpush = require('web-push');
+    ``` 
 
 2. **Generate VAPID keys for your server.**
 
@@ -205,15 +209,62 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     var webpush = require('web-push');
     webpush.generateVAPIDKeys();
     ```
-    The output should result in a JSON object containing a public and private key. We'll need these in the next step.
+    The output should result in a JSON object containing a public and private key, which we'll copy into our server logic.
+
+    In your *index.js* file, just before the final  (*module.exports = router*) line, add the following:
+
+    ```
+    const vapidKeys = {
+        publicKey: '',
+        privateKey: ''
+    };
+
+    webpush.setVapidDetails(
+        'mailto:pwa@example.com',
+        vapidKeys.publicKey,
+        vapidKeys.privateKey
+    );
+    ```
+    ...and then copy in the *publicKey* and *privateKey* values that you just generated. Feel free to customize the *mailto* address as well (though its not required to run this sample).
 
 3. **Handle push-related server requests.**
 
-    Now its time to set up routes for handling  
+    Now its time to set up routes for handling push-related requests from the PWA client, including serving up the VAPID public key and registering the client to receive pushes.
+
+    In a real scenario, a push notification would likely originate from an event in your server logic. To simplify things here, we'll add a "Push Notification" button to our PWA homepage for generating pushes from our server, and a */sendNotification* server route for handling those requests.
+
+    Still in your *index.js* file, append the following routes just after the VAPID initialization code you added in *Step 2* above.
+
+    ```
+    router.get('/vapidPublicKey', function (req, res) {
+        res.send(vapidKeys.publicKey);
+    });
+
+    router.post('/register', function (req, res) {
+        // A real world application would store the subscription info.
+        res.sendStatus(201);
+    });
+
+    router.post('/sendNotification', function (req, res) {
+        const subscription = req.body.subscription;
+        const payload = 'payload';
+        const options = null;
+
+        webpush.sendNotification(subscription, payload, options)
+            .then(function () {
+                res.sendStatus(201);
+            })
+            .catch(function (error) {
+                res.sendStatus(500);
+                console.log(error);
+            });
+    });
+    ```
+    With the server-side code in place, let's plumb in push notifications on the PWA client.
 
 3. **Subscribe to push notifications.**
 
-    As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. A good time to do this is once your service worker is installed and *active*.
+    As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. A good time to do this is once you know your service worker is installed and *active*. 
 
     In your *pwabuilder-sw-register.js* file, append this code:
 
@@ -264,6 +315,22 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
                 });
             };
         });
+    
+    // Utility function for browser interoperability
+    function urlBase64ToUint8Array(base64String) {
+        var padding = '='.repeat((4 - base64String.length % 4) % 4);
+        var base64 = (base64String + padding)
+            .replace(/\-/g, '+')
+            .replace(/_/g, '/');
+
+        var rawData = window.atob(base64);
+        var outputArray = new Uint8Array(rawData.length);
+
+        for (var i = 0; i < rawData.length; ++i) {
+            outputArray[i] = rawData.charCodeAt(i);
+        }
+        return outputArray;
+    }
 
     ```
 
@@ -275,7 +342,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 7. Try it out
 
-In a real scenario, a push notification would likely originate from an event in your server logic. To simplify things here, we'll add a "Push Notification" button to our PWA homepage for generating pushes from our server.
+
 
 https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service/
 
