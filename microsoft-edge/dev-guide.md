@@ -1,10 +1,9 @@
 ---
-ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
-description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
-title: Dev guide
-author: erikadoyle
-ms.author: edoyle
-ms.date: 10/18/2017
+description: Learn about what's new in EdgeHTML 17. 
+title: What's new in EdgeHTML 17
+author: libbymc
+ms.author: libbymc
+ms.date: 04/30/218
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -16,78 +15,91 @@ keywords: edge, web development, html, css, javascript, developer
 > We've [partnered](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/) with other browsers and the web community in adopting [MDN Web Docs](https://developer.mozilla.org/) as the definitive place for useful, unbiased, browser-agnostic documentation for current and emerging standards-based web technologies. You can find details about EdgeHTML API support directly in each page of the [MDN web reference library](https://developer.mozilla.org/docs/Web). Visit Microsoft Edge's [Platform status](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release) for the latest features supported in Microsoft Edge. 
 
 
-## What's new in EdgeHTML 16
+## What's new in EdgeHTML 17
 
-Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/) (10/2017, Build 16299). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
+Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform. For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](https://docs.microsoft.com/microsoft-edge/dev-guide/whats-new).
 
-Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16).
+Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_17](https://aka.ms/devguide_edgehtml_17).
 
-## New and updated features
+## New and updated features 
 
-### CSS Grid Layout
+### ARIA 1.1 Roles, States, and Events
 
-Microsoft Edge now supports the unprefixed implementation of [CSS Grid Layout](https://www.w3.org/TR/css-grid-1/). [Grid Layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) defines a two-dimensional grid-based layout system which enables more layout fluidity than possible with positioning using floats or scripts. The example below uses CSS Grid Layout to create the structure for a basic web page.
+EdgeHTML 17 now includes support for roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1](http://www.w3.org/TR/wai-aria-1.1/) specification, including [banner](http://www.w3.org/TR/wai-aria-1.1/#banner), [complementary](http://www.w3.org/TR/wai-aria-1.1/#complementary), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more. Take a look at the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge. 
 
+### CSS masking
 
-<iframe height='303' scrolling='no' title='CSS Grid Layout' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'>CSS Grid Layout</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+EdgeHTML 17 includes experimental support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). The partial implementation introduces the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) and [mask-size](https://developer.mozilla.org/docs/Web/CSS/mask-size) properties.  Check the "Enable CSS Masking" flag in about:flags to being experimenting!
 
+### CSS transforms on SVG elements
 
-### CSS `object-fit` and `object-position`
+EdgeHTML 17 now supports CSS transforms on SVG elements and presentation attributes. This allows SVG elements to be visually manipulated, including rotating, scaling, moving, skewing, or translating. 
 
-EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://developer.mozilla.org/docs/Web/CSS/object-fit) and [`object-position`](https://developer.mozilla.org/docs/Web/CSS/object-position).  These properties control the position and size of replaced content within the content box.  
+### Extensions 
 
-### Developer Tools
+Microsoft Edge now supports the [Notification API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications) which displays notifications from extensions. Extension developers can now create different types of notifications (basic, list, image etc.) which support full user interaction. The notifications are also automatically logged into the Action Center. Visit the [notifications sample](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) on how to use this API in your extension.
 
-This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](./devtools-guide/whats-new.md) for more on what's changed!
+EdgeHTML 17 now also supports the `Tabs.reload()` method as part of the standard tabs API class.
 
-![Experimental service worker debugging support in DevTools](./devtools-guide/media/debugger_sw_inspect.png)
+### DevTools
+This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](./devtools-guide/whats-new.md#devtools-windows-10-app) from the Microsoft Store!
 
-### Payment Request API
+![Microsoft Edge DevTools app](./devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The [Payment Request API](./dev-guide/device/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
-* Support for the `canMakePayment()` method
-* Support for the `requestId` property
-* Support for the `id` property
-* The default value for the `complete()` method's `result` parameter changed from " " to "unknown"
+The tools have also been updated with a number of major features, including basic support for [remote debugging](./devtools-guide/whats-new.md#remote-debugging) (via our new [DevTools Protocol](./devtools-guide/whats-new.md#devtools-protocol)), [PWA debugging features](./devtools-guide/whats-new.md#pwa-debugging), [IndexedDB cache management](./devtools-guide/whats-new.md#indexeddb-inspection), [vertical docking](./devtools-guide/whats-new.md#vertical-window-docking) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
-### Service Workers
+Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
 
-[Service Workers](https://www.w3.org/TR/service-workers-1/) are event-driven scripts that run in the background of a web page. Service workers enable functionality previously only available with native apps like intercepting and handling requests from the network, managing and handling background sync, local storage, and push notifications. Support for service worker is still in development, but you can test out your PWA in Microsoft Edge with our experimental service worker support by enabling the service worker feature in **about:flags**.
+### Media element
 
-### WebVR
-WebVR for Microsoft Edge has added support for [motion controllers](https://developer.microsoft.com/windows/mixed-reality/motion_controllers). These controllers have a precise position in space, allowing for fine grained interaction with digital objects in virtual reality.
+EdgeHTML 17 includes updates to [HTMLMediaElement](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) including:
+* The new `preload` attribute on the [`<media>`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) element indicates what data should be preloaded.
+* The addition of the [`setSinkId()`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId) method and [`sinkId`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId) property allow developers to select the audio output device. (**Note**: this is not yet avaiable in RTC)
 
-![Motion controllers](./dev-guide/media/MotionControllers.jpg)
+### Media Capture API 
+Microsoft Edge now supports Screen Capture in RTC via the [Media Capture API](https://w3c.github.io/mediacapture-screen-share/). This feature lets web pages capture output of a user’s display device, commonly used to broadcast a desktop for plugin-free virtual meetings or presentation
 
-WebVR has also been optimized to support two different types of experiences.
+### Progressive Web Apps
+Starting in EdgeHTML 17, Service Workers and push notifications are enabled by default (learn more about these features in the blog post [Service Worker: Going beyond the page](http://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/). This completes the suite of technologies (including Fetch networking and the Push and Cache APIs) that lays the technical foundation for progressive Web Apps (PWAs) on Windows 10.
 
-**Windows Mixed Reality PCs** - Desktops and laptops with integrated graphics.  When plugged into these devices, our immersive headsets will run at 60 frames per second.  
-**Windows Mixed Reality Ultra PCs** - Desktops and laptops with discrete graphics. When plugged into these devices, our immersive headsets will run at 90 frames per second.   
+PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as installation / home screen launch, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
 
-Both setups will support the same immersive video and gaming experiences. 
+Head over to our [Progressive Web Apps on Windows](./progressive-web-apps.md) docs to learn more about PWAs on Windows 10. 
 
-For more info about the upcoming Windows Mixed Reality updates, check out the [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update/) holiday update blog post. 
+### Subresource Integrity
+EdgeHTML 17 introduces support for Subresource Integrity (SRI). [Subresource Integrity](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) is a secuirty feature that allows browsers to verify that fetched resources are delivered without unexpected manipulation. 
 
-For guides and demos, head over to the [WebVR Developer Guide](https://docs.microsoft.com/microsoft-edge/webvr/).
+Add an `integrity` attribute containing a cryptographic hash representation of the resource that you expect to load on your webpage to a `<script>` or `<link>` element, like the example below. Then, Microsoft Edge will compare the requested resource to the hash defined in the `integrity` attribute. If they do not match, Microsoft Edge will not execute the resource and returns an error to the network.
 
- > [!NOTE] 
- > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.
+```html
+<script src="https://example.com/example-framework.js" 
+        integrity="sha384-Li9vy3DqF8tnTXuiaAJuML3ky+er10rcgNR/VqsVpcw+ThHmYcwiB1pbOxEbzJr7" 
+        crossorigin="anonymous"></script>
+```
 
-## New APIs in EdgeHTML 16
+### Variable Fonts
+Full support for Variable Fonts (including CSS [font-variation-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings) and [font-optical-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings)) is available in EdgeHTML 17. 
 
-Here's the full list of new APIs in EdgeHTML 16. They are listed in the format of **[interface name].[api name]**.
+Join us on [an expedition to learn about what variable fonts provide web developers and designers](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts/), and how to use them on your site. And read more about Variable Fonts in the blog post, [Bringing expressive, performant typography to Microsoft Edge with Variable Fonts](https://blogs.windows.com/msedgedev/2018/03/13/bringing-expressive-performant-typography-to-microsoft-edge-with-variable-fonts/).
+
+<iframe height='456' scrolling='no' title='Variable Tides ticket examples' src='//codepen.io/MSEdgeDev/embed/dmYvWg/?height=456&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/dmYvWg/'>Variable Tides ticket examples</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+
+## New APIs in EdgeHTML 17
+
+Here's the full list of new APIs in EdgeHTML 17. They are listed in the format of [interface name].[api name].
 
 > [!NOTE] 
 > Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
 
-<iframe height='559' scrolling='no' title='New APIs in EdgeHTML 16' src='//codepen.io/MSEdgeDev/embed/jLGZZY/?height=559&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/jLGZZY/'>New APIs in EdgeHTML 16</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe></p>
+<iframe height='300' scrolling='no' title='New APIs in EdgeHTML 17' src='//codepen.io/MSEdgeDev/embed/04baab52c44a3a75749b1a80679f6c75/?height=300&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/04baab52c44a3a75749b1a80679f6c75/'>New APIs in EdgeHTML 17</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
-<h2 id="previous-edgehtml-releases">Previous EdgeHTML releases</h2>
-<p><a href="https://aka.ms/devguide_edgehtml_12" data-raw-source="[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)">EdgeHTML 12 / Windows build 10240 (7/2015)</a>
 
 [EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
 
 [EdgeHTML 14 / Windows build 14393 (8/2016)](https://aka.ms/devguide_edgehtml_14)
 
 [EdgeHTML 15 / Windows build 15063 (4/2017)](https://aka.ms/devguide_edgehtml_15)
+
+[EdgeHTML 16 / Windows build 16299 (10/2017)](https://aka.ms/devguide_edgehtml_16)
+
+
