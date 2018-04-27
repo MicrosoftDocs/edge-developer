@@ -2,7 +2,7 @@
 
 Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
 
-This guide will give you an overview of PWA basics by building a simple *localhost* web app as a PWA using *Microsoft Visual Studio* and some *PWA Builder* utilities.
+This guide will give you an overview of PWA basics by building a simple *localhost* web app as a PWA using *Microsoft Visual Studio* and some *PWA Builder* utilities. The "finished" product will work the same across any browser that supports PWAs.
 
 > [!TIP]
 > For a quick way to convert an existing site to a PWA and package it for Windows 10 and other app platforms, check out [PWA Builder](https://www.pwabuilder.com/). 
@@ -14,7 +14,7 @@ This guide will give you an overview of PWA basics by building a simple *localho
     - **Universal Windows Platform development**
     - **Node.js development**
 
-## 1. Set up a basic web app
+## Set up a basic web app
 
 For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs) template to create a basic, localhost web app that serves up an *index.html* page. Imagine this as a placeholder for the awesome web app you'll be developing as a PWA.
 
@@ -28,7 +28,7 @@ For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app
 
     ![Running your new site on localhost](./media/vs-nodejs-express-index.png)
 
-## 2. Turn your app into a PWA
+## Turn your app into a PWA
 
 Now its time to wire up the basic [PWA requirements](../progressive-web-apps.md#requirements) for your web app: a *Web App Manifest*, *HTTPS* and *Service Workers*.
 
@@ -115,7 +115,9 @@ For this guide we'll continue using *http://localhost* as a placeholder for a li
 
 *Service Workers* is the key technology behind PWAs. They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks.
 
-Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app. You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) reference.
+Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app. Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) and a [worker thread](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/postMessage) can communicate using `postMessage()` and `onmessage` event handlers. 
+
+You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) reference.
 
 For this tutorial, we'll use a ready-made "Offline page" service worker script courtesy of [PWA Builder](https://www.pwabuilder.com/serviceworker). Mozilla's [Service Worker Cookbook](https://serviceworke.rs/) also features a number of useful service worker caching "recipes" you can try out and modify according to your needs for performance, network bandwidth, offline, etc.
 
@@ -180,17 +182,178 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
     ![offline.html from http://localhost:1337 loaded in Microsoft Edge](./media/offline-html.png)
 
- Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements), including responsive design, deep-linking, cross-browser testing and other best practices (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started with PWA development.
+## Add push notifications
 
-This guide demonstrated how PWAs run in the Microsoft Edge browser. Check out the [*Tailor your PWA for Windows*](./windows-features.md) guide to install, run, and enhance your PWA as a standalone Windows 10 app.
+Let's make our PWA even more "app-like" by adding client-side support for push notifications using the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) to subscribe to a messaging service and the [Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to display a toast message upon receiving a message. As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are suppoted. On the server side, we'll use the [Web-Push](https://www.npmjs.com/package/web-push) open-source library to handle the differences involved in delivering push messages to various browsers.
 
-If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
+The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html), which is worth checking out for a number of other useful *Web Push* and service worker recipes.
+
+1. **Install the NPM *web-push* library.**
+
+    In Visual Studio *Solution Explorer*, right-click your project and **Open Node.js Interactive Window...**. In it, type: 
+    
+    ```
+    .npm install web-push
+    ```
+    ... to install the [Web-Push](https://www.npmjs.com/package/web-push) library. Then, open up your *index.js* file, and add the following line to the top of your file after the other requirement statements:
+
+    ```
+    var webpush = require('web-push');
+    ``` 
+
+2. **Generate VAPID keys for your server.**
+
+    Next we'll need to generate VAPID (*Voluntary Application Server Identification*) keys for your server to send push messages to the PWA client. You'll only have to do this once (that is, your server only requires a single pair of VAPID keys). In the *Node.js Interactive Window*, type: 
+
+    ```
+    var webpush = require('web-push');
+    webpush.generateVAPIDKeys();
+    ```
+    The output should result in a JSON object containing a public and private key, which we'll copy into our server logic.
+
+    In your *index.js* file, just before the final  (*module.exports = router*) line, add the following:
+
+    ```
+    const vapidKeys = {
+        publicKey: '',
+        privateKey: ''
+    };
+
+    webpush.setVapidDetails(
+        'mailto:pwa@example.com',
+        vapidKeys.publicKey,
+        vapidKeys.privateKey
+    );
+    ```
+    ...and then copy in the *publicKey* and *privateKey* values that you just generated. Feel free to customize the *mailto* address as well (though its not required to run this sample).
+
+3. **Handle push-related server requests.**
+
+    Now its time to set up routes for handling push-related requests from the PWA client, including serving up the VAPID public key and registering the client to receive pushes.
+
+    In a real scenario, a push notification would likely originate from an event in your server logic. To simplify things here, we'll add a "Push Notification" button to our PWA homepage for generating pushes from our server, and a */sendNotification* server route for handling those requests.
+
+    Still in your *index.js* file, append the following routes just after the VAPID initialization code you added in *Step 2* above.
+
+    ```
+    router.get('/vapidPublicKey', function (req, res) {
+        res.send(vapidKeys.publicKey);
+    });
+
+    router.post('/register', function (req, res) {
+        // A real world application would store the subscription info.
+        res.sendStatus(201);
+    });
+
+    router.post('/sendNotification', function (req, res) {
+        const subscription = req.body.subscription;
+        const payload = 'payload';
+        const options = null;
+
+        webpush.sendNotification(subscription, payload, options)
+            .then(function () {
+                res.sendStatus(201);
+            })
+            .catch(function (error) {
+                res.sendStatus(500);
+                console.log(error);
+            });
+    });
+    ```
+    With the server-side code in place, let's plumb in push notifications on the PWA client.
+
+3. **Subscribe to push notifications.**
+
+    As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. Subscribing to push notifications requires an active service worker registration, so you'll first want to check that your service worker is installed and *active* before trying to subscribe it to push notifications.
+
+    Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications. If not, the user will be prompted by the browser for permission. For more on permission management, see [*Push Notifications in Microsoft Edge*](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge/#UAbvU2ymUlHO8EUV.97).
+
+    In your *pwabuilder-sw-register.js* file, append this code:
+
+    ```JavaScript
+    // Subscribe this PWA to push notifications from the server
+    navigator.serviceWorker.ready
+        .then(function (registration) {
+            // Check if the user has an existing subscription
+            return registration.pushManager.getSubscription()
+                .then(async function (subscription) {
+                    if (subscription) {
+                        return subscription;
+                    }
+
+                    // Otherwise subscribe with the server public key
+                    const response = await fetch('./vapidPublicKey');
+                    const vapidPublicKey = await response.text();
+                    const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+
+                    return registration.pushManager.subscribe({
+                        userVisibleOnly: true,
+                        applicationServerKey: convertedVapidKey
+                    });
+                });
+        }).then(function (subscription) {
+            // Send the subscription details to the server
+            fetch('./register', {
+                method: 'post',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({
+                    subscription: subscription
+                }),
+            });
+
+            // Add a handler for our notification-spoofing button
+            document.getElementById('notify').onclick = function () {
+                // Spoof a server-generated push notification 
+                fetch('./sendNotification', {
+                    method: 'post',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        subscription: subscription
+                    }),
+                });
+            };
+        });
+    
+    // Utility function for browser interoperability
+    function urlBase64ToUint8Array(base64String) {
+        var padding = '='.repeat((4 - base64String.length % 4) % 4);
+        var base64 = (base64String + padding)
+            .replace(/\-/g, '+')
+            .replace(/_/g, '/');
+
+        var rawData = window.atob(base64);
+        var outputArray = new Uint8Array(rawData.length);
+
+        for (var i = 0; i < rawData.length; ++i) {
+            outputArray[i] = rawData.charCodeAt(i);
+        }
+        return outputArray;
+    }
+
+    ```
+    Check out the MDN documentation on [`PushManager`](https://developer.mozilla.org/en-US/docs/Web/API/PushManager) and NPM docs on [`Web-Push`](https://www.npmjs.com/package/web-push#usage) for more details on how these APIs work and their various options.
+
+5. **Set up push and notificationclick event handlers.**
+
+    With our push subscription set up, the remainder of the work happens in the service worker. 
+
+6. **Try it out.**
+
+
+
+https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service/
 
 ## Going further
 
-Check out our other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience:
+This guide demonstrated the basic anatomy of a Progressive Web App and Microsoft PWA development tools including Visual Studio, PWA Builder, and Edge DevTools.
 
- - **Push notifications.** Set up a push messaging service, service worker handler, and custom toast notifications to re-engage your users. Check out the Push API / Notification API examples in [*Service Workers: Going beyond the page*](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/#8mU5rebKOuTt5HwG.97) to get started.
+Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements) beyond what we covered, including responsive design, deep-linking, cross-browser testing and other best practices (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
+
+Check out our other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience:
 
  - [**Windows tailoring.**](./windows-features.md) Using simple feature detection, you can progressively enhance your PWA for Windows 10 customers through native Windows Runtime (WinRT) APIs, such as those for customizing Windows **Start** menu tile notifications and taskbar jumplists, and (upon permission) working with user resources, such as photos, music and calendar.
 
