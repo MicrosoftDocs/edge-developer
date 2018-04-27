@@ -17,7 +17,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 ## What's new in EdgeHTML 17
 
-Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform. For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](https://docs.microsoft.com/microsoft-edge/dev-guide/whats-new).
+Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform. For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
 
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_17](https://aka.ms/devguide_edgehtml_17).
 

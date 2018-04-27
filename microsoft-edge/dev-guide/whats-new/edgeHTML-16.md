@@ -33,13 +33,13 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 
 ### Developer Tools
 
-This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](./devtools-guide/whats-new.md) for more on what's changed!
+This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](../devtools-guide/whats-new.md) for more on what's changed!
 
-![Experimental service worker debugging support in DevTools](./devtools-guide/media/debugger_sw_inspect.png)
+![Experimental service worker debugging support in DevTools](../devtools-guide/media/debugger_sw_inspect.png)
 
 ### Payment Request API
 
-The [Payment Request API](./dev-guide/windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
+The [Payment Request API](../windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
 * Support for the `canMakePayment()` method
 * Support for the `requestId` property
 * Support for the `id` property
