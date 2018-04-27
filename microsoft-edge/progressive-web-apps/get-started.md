@@ -264,7 +264,9 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 3. **Subscribe to push notifications.**
 
-    As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. A good time to do this is once you know your service worker is installed and *active*. 
+    As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. Subscribing to push notifications requires an active service worker registration, so you'll first want to check that your service worker is installed and *active* before trying to subscribe it to push notifications.
+
+    Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications. If not, the user will be prompted by the browser for permission. For more on permission management, see [*Push Notifications in Microsoft Edge*](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge/#UAbvU2ymUlHO8EUV.97).
 
     In your *pwabuilder-sw-register.js* file, append this code:
 
@@ -333,14 +335,13 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     }
 
     ```
+    Check out the MDN documentation on [`PushManager`](https://developer.mozilla.org/en-US/docs/Web/API/PushManager) and NPM docs on [`Web-Push`](https://www.npmjs.com/package/web-push#usage) for more details on how these APIs work and their various options.
 
-4. Ask user for permission
+5. **Set up push and notificationclick event handlers.**
 
-5. Set up a push handler
+    With our push subscription set up, the remainder of the work happens in the service worker. 
 
-6. Handle the notification
-
-7. Try it out
+6. **Try it out.**
 
 
 
