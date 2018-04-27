@@ -33,9 +33,9 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 
 ### Developer Tools
 
-This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](../devtools-guide/whats-new.md) for more on what's changed!
+This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](../../devtools-guide/whats-new.md) for more on what's changed!
 
-![Experimental service worker debugging support in DevTools](../devtools-guide/media/debugger_sw_inspect.png)
+![Experimental service worker debugging support in DevTools](../../devtools-guide/media/debugger_sw_inspect.png)
 
 ### Payment Request API
 
