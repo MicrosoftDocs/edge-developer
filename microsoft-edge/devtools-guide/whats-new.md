@@ -11,17 +11,17 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # DevTools in the latest Windows 10 update (EdgeHTML 17)
 
-This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and now as a standalone [Windows 10 app](#devtools-windows-10-app) from the Microsoft Store!
+This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](#microsoft-edge-devtools-app-preview) from the Microsoft Store!
 
 The tools have been updated with a number of major features, including basic support for [remote debugging](#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-management), [vertical docking](#vertical-window-docking) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
 Here are the latest Microsoft Edge DevTools features coming with the next [Windows 10 update]() and available now on [Windows Insider Preview](https://insider.windows.com/) builds.
 
-## DevTools Windows 10 app
+## Microsoft Edge DevTools app preview
 
 ![Microsoft Edge DevTools app](../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../webview.md), and [Windows-installed PWAs](../progressive-web-apps/windows-features.md)).
+The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available for preview as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../webview.md), and [Windows-installed PWAs](../progressive-web-apps/windows-features.md)).
 
 The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
 
