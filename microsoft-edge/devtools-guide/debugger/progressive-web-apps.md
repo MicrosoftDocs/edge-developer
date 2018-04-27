@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugg
 
 With the [latest release](../whats-new.md#pwa-debugging) of the Edge DevTools, support for debugging Progressive Web Apps (PWAs) is now enabled by default.
 
-You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/get-started.md#pwas-on-windows-10) by selecting it from the list of [**Local**](../../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
+You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/get-started.md#debug-your-pwa-as-a-windows-app) by selecting it from the list of [**Local**](../../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
 
  If a site makes use of **Service Workers** and/or the **Cache** API,  DevTools will populate entries in the **Debugger** panel for each origin, similar to how [web storage](./web-storage.md) and [cookies](./cookies.md) inspection work:
 
