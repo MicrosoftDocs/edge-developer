@@ -42,11 +42,11 @@ Microsoft Edge now supports the [Notification API](https://developer.mozilla.org
 EdgeHTML 17 now also supports the `Tabs.reload()` method as part of the standard tabs API class.
 
 ### DevTools
-This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](./devtools-guide/whats-new.md#devtools-windows-10-app) from the Microsoft Store!
+This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](./devtools-guide/whats-new.md#microsoft-edge-devtools-app-preview) from the Microsoft Store!
 
 ![Microsoft Edge DevTools app](./devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The tools have also been updated with a number of major features, including basic support for [remote debugging](./devtools-guide/whats-new.md#remote-debugging) (via our new [DevTools Protocol](./devtools-guide/whats-new.md#devtools-protocol)), [PWA debugging features](./devtools-guide/whats-new.md#pwa-debugging), [IndexedDB cache management](./devtools-guide/whats-new.md#indexeddb-inspection), [vertical docking](./devtools-guide/whats-new.md#vertical-window-docking) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
+The tools have also been updated with a number of major features, including basic support for [remote debugging](./devtools-guide/whats-new.md#devtools-protocol) (via our new [DevTools Protocol](./devtools-guide/whats-new.md#devtools-protocol)), [PWA debugging features](./devtools-guide/whats-new.md#pwa-debugging), [IndexedDB cache management](./devtools-guide/whats-new.md#indexeddb-inspection), [vertical docking](./devtools-guide/whats-new.md#vertical-window-docking) and more! We also continued the overall [refactoring effort](./dev-guide/whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
 Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
 
