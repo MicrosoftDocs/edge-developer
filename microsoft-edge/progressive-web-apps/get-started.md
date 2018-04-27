@@ -2,7 +2,7 @@
 
 Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
 
-This guide will give you an overview of PWA basics by building a simple *localhost* web app as a PWA using *Microsoft Visual Studio* and some *PWA Builder* utilities. The "finished" product will work the same across any browser that supports PWAs.
+This guide will give you an overview of PWA basics by building a simple *localhost* web app as a PWA using *Microsoft Visual Studio* and some *PWA Builder* utilities. The "finished" product will work similarly across any browser that supports PWAs.
 
 > [!TIP]
 > For a quick way to convert an existing site to a PWA and package it for Windows 10 and other app platforms, check out [PWA Builder](https://www.pwabuilder.com/). 
@@ -16,7 +16,7 @@ This guide will give you an overview of PWA basics by building a simple *localho
 
 ## Set up a basic web app
 
-For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs) template to create a basic, localhost web app that serves up an *index.html* page. Imagine this as a placeholder for the awesome web app you'll be developing as a PWA.
+For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs) template to create a basic, localhost web app that serves up an *index.html* page. Imagine this as a placeholder for the compelling, full-featured web app you'll be developing as a PWA.
 
 1. Launch Visual Studio, and start a new project (**File** > **New** > **Project...** *or* Ctrl+Shift+N).
 
@@ -227,6 +227,8 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     ```
     ...and then copy in the *publicKey* and *privateKey* values that you just generated. Feel free to customize the *mailto* address as well (though its not required to run this sample).
 
+    The [Mozilla Services engineering blog](https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service/) has a nice explainer on VAPID and WebPush if you're interested in the details of how it works behind the scenes.
+
 3. **Handle push-related server requests.**
 
     Now its time to set up routes for handling push-related requests from the PWA client, including serving up the VAPID public key and registering the client to receive pushes.
@@ -266,7 +268,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. Subscribing to push notifications requires an active service worker registration, so you'll first want to check that your service worker is installed and *active* before trying to subscribe it to push notifications.
 
-    Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications. If not, the user will be prompted by the browser for permission. For more on permission management, see [*Push Notifications in Microsoft Edge*](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge/#UAbvU2ymUlHO8EUV.97).
+    Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications. If not, the user will be prompted by the browser for permission. If the permission is *denied*, the call to *registration.pushManager.subscribe* will throw a DOMException, so you'll want to handle that. For more on permission management, see [*Push Notifications in Microsoft Edge*](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge/#UAbvU2ymUlHO8EUV.97).
 
     In your *pwabuilder-sw-register.js* file, append this code:
 
@@ -339,13 +341,75 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 5. **Set up push and notificationclick event handlers.**
 
-    With our push subscription set up, the remainder of the work happens in the service worker. 
+    With our push subscription set up, the remainder of the work happens in the service worker. First we need to set up a handler for server-sent push events, and respond with a toast notification (if permission was granted) displaying the push data payload. Next we'll add a click handler for the toast to dismiss the notification and sort through a list of currently open windows to open and/or focus the intended PWA client page.
+
+    In your *pwabuilder-sw.js* file, append the following handlers:
+
+    ```JavaScript
+    //Respond to a server push with a user notification
+    self.addEventListener('push', function (event) {
+        if ("granted" === Notification.permission) {
+            var payload = event.data ? event.data.text() : 'no payload';
+            const promiseChain = self.registration.showNotification('Sample PWA', {
+                body: payload,
+                icon: 'images/windows10/Square44x44Logo.scale-100.png'
+            });
+            //Ensure the toast notification is displayed before exiting this function
+            event.waitUntil(promiseChain);
+        }
+    });
+
+    //Respond to the user clicking the toast notification
+    self.addEventListener('notificationclick', function (event) {
+        console.log('On notification click: ', event.notification.tag);
+        event.notification.close();
+
+        // This looks to see if the current is already open and focuses it
+        event.waitUntil(clients.matchAll({
+            type: 'window'
+        }).then(function (clientList) {
+            for (var i = 0; i < clientList.length; i++) {
+                var client = clientList[i];
+                if (client.url == 'http://localhost:1337/' && 'focus' in client)
+                    return client.focus();
+            }
+            if (clients.openWindow)
+                return clients.openWindow('/');
+        }));
+    });
+    ```
 
 6. **Try it out.**
+    
+    We're almost ready to test push notifications in your PWA. The only thing remaining is to add a button to the page for synthesizing (what in a real-world site would be) a server-generated push event. In our case, the button simply posts a request to the */sendNotification* route we set up in *Step 3*.
 
+    a. In your **index.pug* file, append the following line to the indented *block content*:
 
+    ```HTML
+    input(type='button', id='notify', value='Send Notification')
+    ```
 
-https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service/
+    b. Then Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Service Worker Overview** panel and and **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
+
+    As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:
+
+    ![Permission dialog for enabling notifications](./media/notification-permission.png)
+
+    Click **Yes** to enable toast notifications for your PWA.
+
+    c. From the *Service Worker Overview* pane, try clicking the  **Push** button. A toast notification with the (hard-coded "Test push message from DevTools") payload should appear:
+
+    ![Push a notification from DevTools](./media/devtools-push.png)
+
+    d. Next try clicking the *Send Notification* button on your PWA's homepage. This time a toast with the "payload" from our server will appear:
+
+    ![Push a notification from PWA server](./media/pwa-push.png)
+
+    If you don't click (or *activate*) a toast notification, it will  dismiss itself after several seconds and queue up in your Windows *Action Center*:
+
+    ![Notifications in Windows Action Center](./media/windows-action-center.png)
+
+    ...and with that you have the basics of PWA push notifications!
 
 ## Going further
 
