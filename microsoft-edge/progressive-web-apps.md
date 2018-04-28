@@ -30,60 +30,33 @@ With [Progressive Web Apps](https://developer.mozilla.org/en-US/Apps/Progressive
         Send push notifications, even when the app isn't active
     :::column-end:::
     :::column:::
-        ![Network Independent icon](./progressive-web-apps/media/)
+        ![Network Independent icon](./progressive-web-apps/media/i_offline.png)
         ### [Network Independent](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Network_independent)
         Works offline and in low-network conditions
     :::column-end:::
 :::row-end:::
-
-<br>
-
-<table style="border:none;margin-top:2%;">
-  <tr>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_search.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Discoverable">Discoverable</a></div>
-      <div style="font-size:0.9em">From web search results and supporting app stores</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_package.png"/>
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Installable">Installable</a></div>
-      <div style="font-size:0.9em">Pin and launch from the home screen</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_push-notification.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Re-engageable">Re-engageable</a></div>
-      <div style="font-size:0.9em">Send push notifications, even when the app isn't active</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_offline.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Network_independent">Network Independent</a></div>
-      <div style="font-size:0.9em">Works offline and in low-network conditions </div>
-    </td>
-  </tr>
-  <tr style="height:150px">
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_progressive.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Progressive">Progressive</a></div>
-      <div style="font-size:0.9em">Experience scales up (or down) with device capabilities</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_security.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Safe">Safe</a></div>
-      <div style="font-size:0.9em">Provides a secure HTTPS endpoint and other user safeguards</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_responsive.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Responsive">Responsive</a></div>
-      <div style="font-size:0.9em">Adapts to the user's screen size / orientation and input method</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_link.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Linkable">Linkable</a></div>
-      <div style="font-size:0.9em">Share and launch from a standard hyperlink</div>
-    </td>
-  </tr>
-</table>
+:::row:::
+    :::column:::
+        ![Progressive icon](./progressive-web-apps/media/i_progressive.png)
+        ### [Progressive](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Progressive)
+        Experience scales up (or down) with device capabilities
+    :::column-end:::
+    :::column:::
+        ![Safe icon](./progressive-web-apps/media/i_security.png)
+        ### [Safe](https://developer.mozilla.org/en-USi_responsive.png/Apps/Progressive/Advantages#Safe)
+        Provides a secure HTTPS endpoint and other user safeguards    
+    :::column-end:::
+    :::column:::
+        ![Responsive icon](./progressive-web-apps/media/i_responsive.png)
+        ### [Responsive](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Responsive)
+        Adapts to the user's screen size / orientation and input method
+    :::column-end:::
+    :::column:::
+        ![Linkable icon](./progressive-web-apps/media/i_link.png)
+        ### [Linkable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Linkable)
+        Share and launch from a standard hyperlink
+    :::column-end:::
+:::row-end:::
 
 By building or converting your existing site to a PWA, you can better engage your existing audience with push notifications and offline support. At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.
 
