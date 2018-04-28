@@ -13,6 +13,31 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 With [Progressive Web Apps](https://developer.mozilla.org/en-US/Apps/Progressive) (or simply *PWA*s) you dont have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device. That's because PWAs are just websites that are [progressively enhanced](https://alistapart.com/article/understandingprogressiveenhancement) to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps. 
 
+:::row:::
+    :::column:::
+        ![Discoverable icon](./progressive-web-apps/media/i_search.png)
+        ### [Discoverable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Discoverable)
+        From web search results and supporting app stores
+    :::column-end:::
+    :::column:::
+        ![Installable icon](./progressive-web-apps/media/i_package.png)
+        ### [Installable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Installable)
+        Pin and launch from the home screen
+    :::column-end:::
+    :::column:::
+        ![Re-engageable icon](./progressive-web-apps/media/i_push-notification.png)
+        ### [Re-engageable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Re-engageable)
+        Send push notifications, even when the app isn't active
+    :::column-end:::
+    :::column:::
+        ![Network Independent icon](./progressive-web-apps/media/)
+        ### [Network Independent](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Network_independent)
+        Works offline and in low-network conditions
+    :::column-end:::
+:::row-end:::
+
+<br>
+
 <table style="border:none;margin-top:2%;">
   <tr>
     <td style="vertical-align:top;">
