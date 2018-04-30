@@ -3,7 +3,7 @@ description: See what's new in the Microsoft Edge DevTools
 title: What's new in the Microsoft Edge DevTools
 author: erikadoyle
 ms.author: edoyle
-ms.date: 4/24/2018
+ms.date: 4/30/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -15,7 +15,7 @@ This release of the DevTools ships in two ways: as the traditional in-browser (`
 
 The tools have been updated with a number of major features, including basic support for [remote debugging](#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-management), [vertical docking](#vertical-window-docking) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
-Here are the latest Microsoft Edge DevTools features coming with the next [Windows 10 update]() and available now on [Windows Insider Preview](https://insider.windows.com/) builds.
+Here are the latest Microsoft Edge DevTools features available now in the [Windows 10 April 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](../dev-guide.md)).
 
 ## Microsoft Edge DevTools app preview
 

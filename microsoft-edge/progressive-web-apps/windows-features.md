@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA for Windows
 author: erikadoyle
 ms.author: edoyle
-ms.date: 4/10/2018
+ms.date: 4/30/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP
@@ -32,7 +32,9 @@ This guide will show you how to install, run, and enhance your PWA as a Windows 
  
 ## Set up and run your *Universal Windows* app
 
-First let's set up our Windows app development environment in Visual Studio.
+A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (*WWAHost.exe* process) window. Enabling this simply requries a lightweight "app wrapper" that contains your hosted web app, which you can quickly set up using the Visual Studio *Progressive Web App (Universal Windows)* project template. (All your app logic, including native Windows Runtime API calls, still happens in your original web app code.)
+
+Let's set up our Windows app development environment in Visual Studio.
 
 1. In your Windows **Settings**, turn on [**Developer mode**](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development). (Type "developer mode" in the Windows searchbar to find it.)
 
@@ -81,7 +83,7 @@ First let's set up our Windows app development environment in Visual Studio.
 
 ## Debug your PWA as a Windows app
 
-Debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
+Because a PWA is simply a progressively enhanced *hosted web app*, you can debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
 
 For client-side debugging within your Windows 10 app, you'll need the *Microsoft Edge DevTools Preview* app. This standalone app includes all the functionality of the original in-browser [Microsoft Edge DevTools](../devtools-guide.md) (including [PWA tools](../devtools-guide/debugger/progressive-web-apps.md)), plus basic [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) support and a [*Debug Target* chooser](../devtools-guide.md#microsoft-store-app) for attaching to *any* running instance of the EdgeHTML engine, including add-ins for *Office*, *Cortana*, app webviews, and of course, *PWAs running on Windows*.
 
@@ -320,7 +322,7 @@ With that background, we're ready to add some WinRT code to implement a custom c
     :--- | :---- 
     ![Browser default context menu](./media/browser-context-menu.png) | ![App custom context menu](./media/app-context-menu.png)
 
-Hopefully you now have a solid foundation for progressively enhancing your PWAs for Windows. If you run into questions or anything is unclear, please drop us a comment!
+Hopefully you now have a solid foundation for progressively enhancing your PWAs on Windows. If you run into questions or anything is unclear, please drop us a comment!
 
 ## Going further
 

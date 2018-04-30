@@ -3,7 +3,7 @@ description: Progressive Web Apps run natively on Windows 10. Here's everything 
 title: Progressive Web Apps on Windows
 author: erikadoyle
 ms.author: edoyle
-ms.date: 4/10/2018
+ms.date: 4/30/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
@@ -13,52 +13,50 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 With [Progressive Web Apps](https://developer.mozilla.org/en-US/Apps/Progressive) (or simply *PWA*s) you dont have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device. That's because PWAs are just websites that are [progressively enhanced](https://alistapart.com/article/understandingprogressiveenhancement) to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps. 
 
-<table style="border:none;margin-top:2%;">
-  <tr>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_search.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Discoverable">Discoverable</a></div>
-      <div style="font-size:0.9em">From web search results and supporting app stores</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_package.png"/>
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Installable">Installable</a></div>
-      <div style="font-size:0.9em">Pin and launch from the home screen</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_push-notification.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Re-engageable">Re-engageable</a></div>
-      <div style="font-size:0.9em">Send push notifications, even when the app isn't active</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_offline.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Network_independent">Network Independent</a></div>
-      <div style="font-size:0.9em">Works offline and in low-network conditions </div>
-    </td>
-  </tr>
-  <tr style="height:150px">
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_progressive.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Progressive">Progressive</a></div>
-      <div style="font-size:0.9em">Experience scales up (or down) with device capabilities</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_security.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Safe">Safe</a></div>
-      <div style="font-size:0.9em">Provides a secure HTTPS endpoint and other user safeguards</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_responsive.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Responsive">Responsive</a></div>
-      <div style="font-size:0.9em">Adapts to the user's screen size / orientation and input method</div>
-    </td>
-    <td style="vertical-align:top;">
-      <img style="display:block;width:25%;" src="./progressive-web-apps/media/i_link.png" />
-      <div style="font-weight:bold;"><a href="https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Linkable">Linkable</a></div>
-      <div style="font-size:0.9em">Share and launch from a standard hyperlink</div>
-    </td>
-  </tr>
-</table>
+:::row:::
+    :::column:::
+        ![Discoverable icon](./progressive-web-apps/media/i_search.png)
+        ### [Discoverable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Discoverable)
+        From web search results and supporting app stores
+    :::column-end:::
+    :::column:::
+        ![Installable icon](./progressive-web-apps/media/i_package.png)
+        ### [Installable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Installable)
+        Pin and launch from the home screen
+    :::column-end:::
+    :::column:::
+        ![Re-engageable icon](./progressive-web-apps/media/i_push-notification.png)
+        ### [Re-engageable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Re-engageable)
+        Send push notifications, even when the app isn't active
+    :::column-end:::
+    :::column:::
+        ![Network Independent icon](./progressive-web-apps/media/i_offline.png)
+        ### [Network Independent](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Network_independent)
+        Works offline and in low-network conditions
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        ![Progressive icon](./progressive-web-apps/media/i_progressive.png)
+        ### [Progressive](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Progressive)
+        Experience scales up (or down) with device capabilities
+    :::column-end:::
+    :::column:::
+        ![Safe icon](./progressive-web-apps/media/i_security.png)
+        ### [Safe](https://developer.mozilla.org/en-USi_responsive.png/Apps/Progressive/Advantages#Safe)
+        Provides a secure HTTPS endpoint and other user safeguards    
+    :::column-end:::
+    :::column:::
+        ![Responsive icon](./progressive-web-apps/media/i_responsive.png)
+        ### [Responsive](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Responsive)
+        Adapts to the user's screen size / orientation and input method
+    :::column-end:::
+    :::column:::
+        ![Linkable icon](./progressive-web-apps/media/i_link.png)
+        ### [Linkable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Linkable)
+        Share and launch from a standard hyperlink
+    :::column-end:::
+:::row-end:::
 
 By building or converting your existing site to a PWA, you can better engage your existing audience with push notifications and offline support. At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.
 
@@ -88,7 +86,7 @@ To run as a PWA on Windows 10, your server-hosted web app will at minimum requir
 
   - [X] [**HTTPS**](https://en.wikipedia.org/wiki/HTTPS). Protect your users by providing a secure connection for server/app communication. Service workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes). 
   
-  - [X] [**Service workers**](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, and background data sync.
+  - [X] [**Service workers**](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.
 
   - [X] [**Web app manifest**](https://developer.mozilla.org/en-US/docs/Web/Manifest). Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience. Associating your site with a web app manifest makes it eligible for [automatic inclusion in the Microsoft Store](./progressive-web-apps/microsoft-store.md#automatic-pwa-importing-with-bing) through the Bing indexing service.
 
