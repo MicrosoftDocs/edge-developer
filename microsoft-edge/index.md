@@ -33,24 +33,6 @@ Microsoft Edge is the browser built for Windows 10, providing fast, safe, and pr
         </a>
     </li>
     <li>
-        <a href="/microsoft-edge/devtools-guide">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_tools.svg" alt="Microsoft Edge DevTools icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Microsoft Edge DevTools guide</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
         <a href="/microsoft-edge/progressive-web-apps">
         <div class="cardSize">
             <div class="cardPadding">
@@ -62,6 +44,24 @@ Microsoft Edge is the browser built for Windows 10, providing fast, safe, and pr
                     </div>
                     <div class="cardText">
                         <h3>Progressive Web Apps on Windows</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-edge/devtools-guide">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_tools.svg" alt="Microsoft Edge DevTools icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Edge DevTools guide</h3>
                     </div>
                 </div>
             </div>
