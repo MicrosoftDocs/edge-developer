@@ -1,3 +1,14 @@
+---
+description: This guide will give you an overview of PWA basics and tools for building progressive web apps on Windows.
+title: Get started with Progressive Web Apps
+author: erikadoyle
+ms.author: edoyle
+ms.date: 4/30/2018
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
+---
+
 # Get started with Progressive Web Apps
 
 Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
