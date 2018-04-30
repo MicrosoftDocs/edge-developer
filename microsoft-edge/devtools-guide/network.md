@@ -42,7 +42,9 @@ The toolbar provides controls for profiling and filtering the network activity o
 
 5. **Always refresh from server**: Depressing this button will force page resources to load from the network rather than the browser cache. You can refresh the page from  network a single time by pressing `Ctrl+F5`.
 
-6. Clear buttons
+6. **Bypass Service Worker for all network requests**: Disable your registered service workers as network proxies. 
+
+7. Clear buttons
 
    - **Clear cache**: Removes all resources stored in the browser cache (and emulates a first-time experience loading the page).
    - **Clear cookies**: Removes all cookies for the given domain (and emulates a first-time experience of the site).

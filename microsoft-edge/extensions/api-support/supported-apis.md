@@ -3,7 +3,7 @@ description: Find information on current and future APIs as well their known iss
 title: Extensions - Supported APIs
 author: abbycar
 ms.author: abigailc
-ms.date: 04/20/2017
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -103,6 +103,9 @@ The following `extension` APIs are supported:
 [extension.getBackgroundPage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/extension/getBackgroundPage) | | |
 [extension.getURL](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/extension/getURL) | | |
 [extension.getViews](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/extension/getViews) | | |
+[extension.isAllowedIncognitoAccess](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/isAllowedIncognitoAccess) | | | 
+[extension.inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
+
 
 
 ## i18n
@@ -126,6 +129,24 @@ API | Known issues | Chrome incompatibilities
 [idle.setDetectionInterval](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle/setDetectionInterval) | | |
 [idle.queryState](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/idle/queryState) | | |
 
+## notifications
+
+The following `notifications` APIs are supported:
+
+API | Known issues | Chrome incompatibilities
+:------| :-------- | :---------------------
+[notifications](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications) | | |
+[notifications.NotificationOptions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/NotificationOptions) | | |
+[notifications.TemplateType](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/TemplateType) | | |
+[notifications.clear](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/clear) | | |
+[notifications.create](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/create) | | |
+[notifications.getAll](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/getAll) | | |
+[notifications.update](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/update) | | |
+[notifications.onButtonClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/onButtonClicked) | | |
+[notifications.onClicked](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/onClicked) | | |
+[notifications.onClosed](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/notifications/onClosed) | | |
+notifications.onPermissionLevelChanged | | |
+notifications.getPermissionLevel | | |
 
 ## pageAction
 
@@ -209,6 +230,7 @@ API | Known issues | Chrome incompatibilities
 [tabs.onReplaced](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/onReplaced) | | |
 [tabs.onUpdated](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onUpdated) | After uninstall/reinstall, the URL is not received until Microsoft Edge is restarted. | |
 [tabs.query](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/query) | `pinned`, `audible`, and `muted` are not yet supported. <br/><br/> `"popup"` `windowType` is not yet supported. | `highlighted` is not supported. <br/><br/> `"panel"`, `"app"`, and `"devtools"` `windowType` are not supported. |
+[tabs.reload](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/reload) | | Microsoft Edge does not support promises. |
 [tabs.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/remove) | | |
 [tabs.sendMessage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/sendMessage) | Messaging a specific frame is not yet supported. `tabs.sendMessage` never sends a response after a tab refresh if no `runtime.onMessage` listeners are present on the receiving tab. | |
 [tabs.Tab](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab) | `audible`, `mutedInfo`, `inPrivate`, `width`, and `height` properties are not yet supported. | `openerTabId`, `selected`, and `highlighted` properties are not supported. |

@@ -11,11 +11,15 @@ keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugg
 
 # Progressive Web App debugging
 
-Test out the experimental support for Progressive Web Apps (PWAs) in Microsoft Edge and  DevTools by selecting the **Enable service workers** option from `about:flags` (and restarting Microsoft Edge).
+With the [latest release](../whats-new.md#pwa-debugging) of the Edge DevTools, support for debugging Progressive Web Apps (PWAs) is now enabled by default.
+
+You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/windows-features.md#debug-your-pwa-as-a-windows-app) by selecting it from the list of [**Local**](../../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
 
  If a site makes use of **Service Workers** and/or the **Cache** API,  DevTools will populate entries in the **Debugger** panel for each origin, similar to how [web storage](./web-storage.md) and [cookies](./cookies.md) inspection work:
 
 ![ DevTools Service Workers and Cache managers](../media/debugger_sw_and_cache.png)
+
+The DevTools also provide an [Indexed DB manager](./indexed-db.md) for working with the structured data used by your PWA.
 
 ## Service Workers manager
 
@@ -23,13 +27,19 @@ Clicking on a specific service worker entry will open up the **Service Worker Ov
 
 ![Service Worker Overview pane](../media/debugger_sw_overview.png)
 
+![Service Worker debugging instance](../media/debugger_sw_inspect.png)
+
 Please note the following about service worker debugging in Edge DevTools:
 
- - Debugging a service worker will launch a new instance of the  DevTools separate from the page's tools because service workers can be shared across multiple tabs. 
+ - Debugging a service worker will launch a new instance of the  DevTools separate from the page's tools because service workers can be shared across multiple tabs.
  - The [**Elements**](../elements.md) and [**Emulation**](../emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
  - Currently network traffic for a service worker is only reported from the  DevTools debugging instance for that worker, and not from the debugger instance for the page itself.
-
-![Service Worker debugging instance](../media/debugger_sw_inspect.png)
+ - To simulate a **Push** from the DevTools, you'll need to add a *push* event listener to your service worker in order to observe its effect. The following example will print "Test push message from DevTools" in your service worker **Console**.
+   ```JavaScript
+   self.addEventListener('push', function(event){
+       console.log(event.data.text());
+   });
+   ```
 
 Here are some general things to keep in mind when using service workers:
 

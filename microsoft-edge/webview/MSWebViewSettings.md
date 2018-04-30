@@ -3,7 +3,7 @@ description: Defines properties that enable or disable webview features
 title: MSWebViewSettings object
 author: libbymc
 ms.author: libbymc
-ms.date: 2/12/2018
+ms.date: 4/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
@@ -42,3 +42,17 @@ MSWebViewSettings.isJavaScriptEnabled = isJavaScriptEnabled;
 Type: **boolean**
 
 **True** JavaScript is allowed in the [webview](../webview.md); otherwise, **false**. 
+
+### isScriptNotifyAllowed
+
+Gets or sets a value that indicates whether the use of [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md).
+
+```js
+var isScriptNotifyAllowed = MSWebViewSettings.isScriptNotifyAllowed;
+MSWebViewSettings.isScriptNotifyAllowed = isScriptNotifyAllowed;
+```
+
+#### Property value
+Type: **boolean**
+
+**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md); otherwise, **false**. 
