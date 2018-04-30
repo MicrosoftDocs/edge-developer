@@ -20,6 +20,7 @@ This guide will give you an overview of PWA basics by building a simple *localho
 
 ## Prerequisites
 
+
 - Download the (free) [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). You can also use the *Professional*, *Enterprise*, or [*Preview*](https://www.visualstudio.com/vs/preview/) editions). From the *Visual Studio Installer*, choose the following Workloads:
 
     - **Universal Windows Platform development**
@@ -124,13 +125,13 @@ For this guide we'll continue using *http://localhost* as a placeholder for a li
 
 ### Service Workers
 
-*Service Workers* is the key technology behind PWAs. They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks.
+*Service Workers* is the key technology behind PWAs. They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks. Service workers also open up all kinds of new performance strategies; and website need not even be full-blown web app to take advantage of the service worker cache for fine-tuned page load performance.
 
 Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app. Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) and a [worker thread](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/postMessage) can communicate using `postMessage()` and `onmessage` event handlers. 
 
 You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) reference.
 
-For this tutorial, we'll use a ready-made "Offline page" service worker script courtesy of [PWA Builder](https://www.pwabuilder.com/serviceworker). Mozilla's [Service Worker Cookbook](https://serviceworke.rs/) also features a number of useful service worker caching "recipes" you can try out and modify according to your needs for performance, network bandwidth, offline, etc.
+For this tutorial, we'll use a ready-made "Offline page" service worker script courtesy of [PWA Builder](https://www.pwabuilder.com/serviceworker). From this, you can go on to customize it with more elaborate functionality according to your needs for performance, network bandwidth, etc. Check out Mozilla's [Service Worker Cookbook](https://serviceworke.rs/) for a number of useful service worker caching "recipe" ideas.
 
 1. Open https://www.pwabuilder.com/serviceworker and select the (default) **Offline page** service worker and click the **Download service worker** button.
 
@@ -426,7 +427,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 This guide demonstrated the basic anatomy of a Progressive Web App and Microsoft PWA development tools including Visual Studio, PWA Builder, and Edge DevTools.
 
-Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements) beyond what we covered, including responsive design, deep-linking, cross-browser testing and other best practices (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
+Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements) beyond what we covered, including responsive design, deep-linking, [cross-browser testing](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/) and other [best practices](https://sonarwhal.com/) (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
 
 Check out our other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience:
 

@@ -86,7 +86,7 @@ To run as a PWA on Windows 10, your server-hosted web app will at minimum requir
 
   - [X] [**HTTPS**](https://en.wikipedia.org/wiki/HTTPS). Protect your users by providing a secure connection for server/app communication. Service workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes). 
   
-  - [X] [**Service workers**](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, and background data sync.
+  - [X] [**Service workers**](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.
 
   - [X] [**Web app manifest**](https://developer.mozilla.org/en-US/docs/Web/Manifest). Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience. Associating your site with a web app manifest makes it eligible for [automatic inclusion in the Microsoft Store](./progressive-web-apps/microsoft-store.md#automatic-pwa-importing-with-bing) through the Bing indexing service.
 
