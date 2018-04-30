@@ -20,6 +20,7 @@ This guide will give you an overview of PWA basics by building a simple *localho
 
 ## Prerequisites
 
+You can build PWAs with any web development IDE. The following are only prerequisites for this guide, which will walk you through PWA tooling support in the Windows developer ecosystem.
 
 - Download the (free) [Visual Studio Community 2017](https://www.visualstudio.com/downloads/). You can also use the *Professional*, *Enterprise*, or [*Preview*](https://www.visualstudio.com/vs/preview/) editions). From the *Visual Studio Installer*, choose the following Workloads:
 
