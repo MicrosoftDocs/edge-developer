@@ -21,7 +21,7 @@ Microsoft Edge is the browser built for Windows 10, providing fast, safe, and pr
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/landing/windows/win_edge-1.svg" alt="" />
+                            <img src="/media/common/i-whats-new.svg" alt="What's new in EdgeHTML icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -69,17 +69,17 @@ Microsoft Edge is the browser built for Windows 10, providing fast, safe, and pr
         </a>
     </li>
     <li>
-        <a href="https://developer.microsoft.com/microsoft-edge/platform/catalog/">
+        <a href="https://developer.mozilla.org/en-US/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_api.svg" alt="Edge API icon" />
+                            <img src="/media/common/i_api-reference.svg" alt="API Reference icon" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft Edge API catalog</h3>
+                        <h3>Web API Reference (MDN Web Docs)</h3>
                     </div>
                 </div>
             </div>
@@ -136,8 +136,6 @@ Microsoft Edge is the browser built for Windows 10, providing fast, safe, and pr
                         <h3>Resources</h3>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/changelog/">Changelog</a></p>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/status/">Platform feature status</a></p>
-                        <p><a href="https://developer.mozilla.org/en-US/">Web API reference on MDN Web Docs</a></p>
-                        <p><a href="https://developer.microsoft.com/microsoft-edge/testdrive/">TestDrive demos</a></p>
                         <p><a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/">Internet Explorer documentation archive</a></p>
                         </div>
                     </div>
