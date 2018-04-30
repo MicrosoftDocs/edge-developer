@@ -11,6 +11,9 @@ experimental: false
 experiment_id: "51fe4b97-3e55-41"
 ---
 
+> [!NOTE]
+> The Microsoft Edge DevTools help web developers build and test their websites. If you accidentally opened the DevTools, just press "F12" to close them.
+
 # Microsoft Edge Developer Tools
 
 The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), optimized for modern front-end workflows, and now available as a [standalone Windows 10 app](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) in the Microsoft Store!
