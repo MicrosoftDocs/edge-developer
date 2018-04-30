@@ -17,7 +17,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 ## What's new in EdgeHTML 17
 
-Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform. For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
+Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) (04/30/2018, Build 17134). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
 
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_17](https://aka.ms/devguide_edgehtml_17).
 
@@ -64,10 +64,12 @@ Starting in EdgeHTML 17, Service Workers and push notifications are enabled by d
 
 PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as installation / home screen launch, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
 
-Head over to our [Progressive Web Apps on Windows](./progressive-web-apps.md) docs to learn more about PWAs on Windows 10. 
+Beyond PWAs, Service Workers and the Cache API allow developers the ability to intercept network requests and respond from the cache. A website need not even been a full-blow web app to take advantage of the Service Worker cache for fine-tined page load performance and reliability, as well as the ability to provide an offline experience during periods of no internet or poor-quality connection.  
 
-### Subresource Integrity
-EdgeHTML 17 introduces support for Subresource Integrity (SRI). [Subresource Integrity](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) is a secuirty feature that allows browsers to verify that fetched resources are delivered without unexpected manipulation. 
+Head over to our [Progressive Web Apps on Windows](./progressive-web-apps.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
+
+### Web Security
+EdgeHTML 17 introduces support for Subresource Integrity (SRI). [Subresource Integrity](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) is a secuirty feature that allows browsers to verify that fetched resources (e.g. images, scripts, fonts, etc.) are delivered without unexpected manipulation. 
 
 Add an `integrity` attribute containing a cryptographic hash representation of the resource that you expect to load on your webpage to a `<script>` or `<link>` element, like the example below. Then, Microsoft Edge will compare the requested resource to the hash defined in the `integrity` attribute. If they do not match, Microsoft Edge will not execute the resource and returns an error to the network.
 
@@ -77,8 +79,10 @@ Add an `integrity` attribute containing a cryptographic hash representation of t
         crossorigin="anonymous"></script>
 ```
 
+Also new in EdgeHTML 17, the [Upgrade-Insecure-Requests](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests) request header allows browsers to request a secure browsing experience. This header tells the server that the browser supports upgrading any insecure requests and the user should be redirected to a secure version of the site if available.
+
 ### Variable Fonts
-Full support for Variable Fonts (including CSS [font-variation-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings) and [font-optical-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings)) is available in EdgeHTML 17. 
+Full support for Variable Fonts (including CSS [font-variation-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings) and [font-optical-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings)) is available in EdgeHTML 17. Variable fonts enable developers to achieve the look of seemingly different typefaces with a single font by adjusting various axes – reducing the need for multiple font files and bettering performance.
 
 Join us on [an expedition to learn about what variable fonts provide web developers and designers](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts/), and how to use them on your site. And read more about Variable Fonts in the blog post, [Bringing expressive, performant typography to Microsoft Edge with Variable Fonts](https://blogs.windows.com/msedgedev/2018/03/13/bringing-expressive-performant-typography-to-microsoft-edge-with-variable-fonts/).
 
@@ -91,7 +95,7 @@ Here's the full list of new APIs in EdgeHTML 17. They are listed in the format o
 > [!NOTE] 
 > Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
 
-<iframe height='300' scrolling='no' title='New APIs in EdgeHTML 17' src='//codepen.io/MSEdgeDev/embed/04baab52c44a3a75749b1a80679f6c75/?height=300&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/04baab52c44a3a75749b1a80679f6c75/'>New APIs in EdgeHTML 17</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+<iframe height='608' scrolling='no' title='New APIs in EdgeHTML 17' src='//codepen.io/MSEdgeDev/embed/pLxgdj/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/pLxgdj/'>New APIs in EdgeHTML 17</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
 ## Previous EdgeHTML releases
 
