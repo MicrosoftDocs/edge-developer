@@ -34,7 +34,7 @@ There are two options for getting your PWA into the Microsoft Store:
 Regardless of submission method, once your PWA is accepted to the Microsoft Store you'll gain access to all the benefits outlined above.
 
 > [!NOTE]
-> For a quick way to convert an existing site to a PWA and package it for Windows 10 and other app platforms, check out [PWA Builder](https://www.pwabuilder.com/). 
+> The Microsoft Store requires Progressive Web App (PWA) submissions to be listed as free in all markets. 
 
 ## Submitting your PWA manually
 
