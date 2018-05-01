@@ -318,9 +318,13 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
                 }),
             });
 
-            // Add a handler for our notification-spoofing button
-            document.getElementById('notify').onclick = function () {
-                // Spoof a server-generated push notification 
+            // Create a button to mimic server pushes for testing purposes
+            var button = document.createElement('input');
+            button.type = 'button';
+            button.id = 'notify';
+            button.value = 'Send Notification';
+            document.body.appendChild(button);
+            document.getElementById('notify').addEventListener('click', function () {
                 fetch('./sendNotification', {
                     method: 'post',
                     headers: {
@@ -330,7 +334,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
                         subscription: subscription
                     }),
                 });
-            };
+            });
         });
     
     // Utility function for browser interoperability
@@ -394,15 +398,9 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 6. **Try it out.**
     
-    We're almost ready to test push notifications in your PWA. The only thing remaining is to add a button to the page for synthesizing (what in a real-world site would be) a server-generated push event. In our case, the button simply posts a request to the */sendNotification* route we set up in *Step 3*.
+    Time to test push notifications in your PWA!
 
-    a. In your **index.pug* file, append the following line to the indented *block content*:
-
-    ```HTML
-    input(type='button', id='notify', value='Send Notification')
-    ```
-
-    b. Then Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Service Worker Overview** panel and and **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
+    a. Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Service Worker Overview** panel and and **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
 
     As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:
 
@@ -410,15 +408,15 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     Click **Yes** to enable toast notifications for your PWA.
 
-    c. From the *Service Worker Overview* pane, try clicking the  **Push** button. A toast notification with the (hard-coded "Test push message from DevTools") payload should appear:
+    b. From the *Service Worker Overview* pane, try clicking the  **Push** button. A toast notification with the (hard-coded "Test push message from DevTools") payload should appear:
 
     ![Push a notification from DevTools](./media/devtools-push.png)
 
-    d. Next try clicking the *Send Notification* button on your PWA's homepage. This time a toast with the "payload" from our server will appear:
+    c. Next try clicking the **Send Notification** button on your PWA's homepage. This time a toast with the "payload" from our server will appear:
 
     ![Push a notification from PWA server](./media/pwa-push.png)
 
-    If you don't click (or *activate*) a toast notification, it will  dismiss itself after several seconds and queue up in your Windows *Action Center*:
+    If you don't click (or *activate*) a toast notification, it will dismiss itself after several seconds and queue up in your Windows *Action Center*:
 
     ![Notifications in Windows Action Center](./media/windows-action-center.png)
 
