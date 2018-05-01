@@ -1,6 +1,6 @@
 ---
 title: MSApp API reference
-description: Provides helper functions that enable you to create Blob and MSStream objects. MSApp objects and members are supported for Windows apps using JavaScript (WWAs).
+description: Provides helper functions that enable you to create Blob and MSStream objects. MSApp objects and members are supported for Windows apps using JavaScript.
 author: mattwojo
 ms.author: mattwoj
 ms.date: 4/30/2018
@@ -11,7 +11,7 @@ keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
 
 # MSApp
 
-The MSApp interface provides helper functions that enable you to create [Blob](#) and [MSStream](#) objects.
+The MSApp interface provides helper functions that enable you to create [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/en-us/library/hh772328(v=vs.85).aspx) objects.
 
 ## Syntax
 ```javascript
@@ -24,7 +24,7 @@ var result = MSApp.member;
 
 ## Remarks
 
-The MSApp object and its members are supported only for Windows apps using JavaScript (WWAs). Like many WWA objects, the MSApp object only exists in the local context of a WWA (that is, an HTML document in a WWA loaded via the ms-appx URI scheme); otherwise, the object doesn’t exist (and consequently, none of its methods and properties are available).
+The MSApp object and its members are supported only for Windows apps using JavaScript (including PWAs accessing Windows API features). The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn’t exist (and consequently, none of its methods and properties are available).
 
 ## MSApp Methods
 
