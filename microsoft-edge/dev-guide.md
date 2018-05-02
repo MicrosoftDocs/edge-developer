@@ -46,7 +46,7 @@ This release of the DevTools ships in two ways: as the traditional in-browser (`
 
 ![Microsoft Edge DevTools app](./devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The tools have also been updated with a number of major features, including basic support for [remote debugging](./devtools-guide/whats-new.md#devtools-protocol) (via our new [DevTools Protocol](./devtools-guide/whats-new.md#devtools-protocol)), [PWA debugging features](./devtools-guide/whats-new.md#pwa-debugging), [IndexedDB cache management](./devtools-guide/whats-new.md#indexeddb-inspection), [vertical docking](./devtools-guide/whats-new.md#vertical-window-docking) and more! We also continued the overall [refactoring effort](./dev-guide/whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
+The tools have also been updated with a number of major features, including basic support for [remote debugging](./devtools-guide/whats-new.md#devtools-protocol) (via our new [DevTools Protocol](./devtools-guide/whats-new.md#devtools-protocol)), [PWA debugging features](./devtools-guide/whats-new.md#pwa-debugging), [IndexedDB cache management](./devtools-guide/whats-new.md#indexeddb-inspection), [vertical docking](./devtools-guide/whats-new.md#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./dev-guide/whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
 Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
 
