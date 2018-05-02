@@ -11,7 +11,7 @@ ms.prod: microsoft-edge
 # DevTools Protocol Clients
 
 > [!NOTE]
-> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds. 
+> The Microsoft Edge DevTools Protocol works only on [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
 
 **DevTools Protocol 0.1** supports the following tooling clients.
 
@@ -23,7 +23,7 @@ You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.mic
 
 This preliminary Version 0.1 release of the DevTools Protocol provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB). Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
 
-Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol is in preview and requires the host machine be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build. The Edge DevTools Preview app will run on Fall Creators Update (version 1709) and Windows Insider Preview builds.
+Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol is in preview and requires [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) or a later Windows Insider Preview build on the host (debugee) machine. The Edge DevTools Preview app (used on the debugger machine) will run on Fall Creators Update (version 1709) and Windows Insider Preview builds.
 
 **On the host (debugee) machine...**
 

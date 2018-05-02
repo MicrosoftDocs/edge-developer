@@ -11,7 +11,7 @@ ms.prod: microsoft-edge
 # Microsoft Edge DevTools Protocol
 
 > [!NOTE]
-> The Microsoft Edge DevTools Protocol is currently in preview and works only on [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
+> The Microsoft Edge DevTools Protocol works only on [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
 
 Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](0.1/domains/index.md) of EdgeHTML engine instrumentation.
 
