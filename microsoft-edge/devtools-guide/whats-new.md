@@ -58,8 +58,8 @@ Additionally, the [Network panel toolbar](./network.md#toolbar) has a new button
 
 You can debug your [PWA as an installed Windows 10 app](../progressive-web-apps/windows-features.md) by selecting it from the list of [**Local**](../progressive-web-apps/windows-features.md#debug-your-pwa-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../devtools-guide.md#microsoft-store-app).
 
-## Vertical window docking
+## Docking to the right in Microsoft Edge
 
-You can now vertically dock the DevTools beside the page you're debugging from within Microsoft Edge, in addition to docking at the bottom and undocking the DevTools from the browser window. Use `Ctrl+Shift+D` to toggle between the **Dock Bottom**, **Dock Right**, and **Undock** states, or the UI controls at the top-left corner of the DevTools:
+You can now dock the DevTools to the right of the page you're debugging from within Microsoft Edge, in addition to docking at the bottom and undocking the DevTools from the browser window. Use `Ctrl+Shift+D` to cycle between the **Dock Bottom**, **Dock Right**, and **Undock** positions, or the icons in the top-right corner of the DevTools:
 
 ![DevTools (in undocked state) docking options](./media/docking_buttons.png) 
