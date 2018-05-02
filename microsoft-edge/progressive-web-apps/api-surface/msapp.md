@@ -61,22 +61,22 @@ var retVal = MSApp.createBlobFromRandomAccessStream(type, stream);
 `type` [in]
 |Type | Description |
 |:---- |:--- |
-String | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616.
+|String | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616.
 
 `stream` [in]
 |Type | Description |
 |:---- |:--- |
-Any | [IRandomAccessStream](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
+|Any | [IRandomAccessStream](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
 
 #### Return value
 |Type | Description |
 |:---- |:--- |
-Blob | New blob object that contains the stream.
+|Blob | New blob object that contains the stream.
 
 #### Exceptions
 |Exception | Condition |
 |:---- |:--- |
-TypeMismatchError | The node type is incompatible with the expected parameter type. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
+|TypeMismatchError | The node type is incompatible with the expected parameter type. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
 
 #### Remarks
 Creates a Blob from Windows Runtime types via the MSApp namespace on the window object. This method will create a blob that is essentially a light wrapper over the [`RandomAccessStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) object provided to it. The blob owns the lifetime of this stream and the stream will be closed when the blob is destroyed. 
@@ -103,12 +103,12 @@ var retVal = MSApp.createDataPackage(object);
 
 |Type | Description |
 |:---- |:--- |
-Any | This range can be created either from a selection object, for example: `window.selection.getRangeAt(0)`, or manually.
+|Any | This range can be created either from a selection object, for example: `window.selection.getRangeAt(0)`, or manually.
 
 #### Return value
 |Type | Description |
 |:---- |:--- |
-Any | Contains the HTML markup for the specified range.
+|Any | Contains the HTML markup for the specified range.
 
 #### Remarks
 This method supports only [Document Object Model (DOM) Range](https://developer.mozilla.org/en-US/docs/Web/API/Range), not [TextRange](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.documents.textrange). The returned data package for the specified range contains HTML markup in clipboard format.
@@ -128,7 +128,7 @@ This method has no parameters.
 #### Return value
 |Type | Description |
 |:---- |:--- |
-Any | Contains the HTML markup for the specified range.
+|Any | Contains the HTML markup for the specified range.
 
 #### Remarks
 The returned data package for the selection contains HTML markup in clipboard format. If there is no user selection anywhere within the application’s UI, the `createDataPackageFromSelection` returns null.
@@ -146,12 +146,12 @@ var retVal = MSApp.createFileFromStorageFile(storageFile);
 `storageFile` [in]
 |Type | Description |
 |:---- |:--- |
-Any | Contains the storage file.
+|Any | Contains the storage file.
 
 #### Exceptions
 |Exception | Condition |
 |:---- |:--- |
-TypeMismatchError | The specified W3C file reference is invalid. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
+|TypeMismatchError | The specified W3C file reference is invalid. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
 
 ### createStreamFromInputStream 
 Creates an [`MSStream`](https://msdn.microsoft.com/en-us/library/hh772328) from an [`InputStream`](https://msdn.microsoft.com/en-us/library/hh772327).
@@ -165,12 +165,12 @@ var msStream = MSApp.createStreamFromInputStream("image/jpeg", inputStream);
 `type` [in]
 |Type | Description |
 |:---- |:--- |
-DOMString | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616. ([See MIME types,](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) ie. text/plain, text/html, image/jpeg, image/png, audio/mpeg, audio/ogg, audio/*, video/mp4, etc.). 
+|DOMString | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616. ([See MIME types,](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) ie. text/plain, text/html, image/jpeg, image/png, audio/mpeg, audio/ogg, audio/*, video/mp4, etc.). 
 
 `inputStream` [in]
 |Type | Description |
 |:---- |:--- |
-Any | The [`IInputStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
+|Any | The [`IInputStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
 
 #### Remarks
 This method takes a content-type, and the `IInputStream` reference. The method then verifies that the stream reference passed in is an instance of type `IInputStream` and if not, throws `DOMException TYPE_MISMATCH_ERR`. If no error occurs, `createStreamFromInputStream` creates an `MSStream` (from its inputs).
@@ -195,17 +195,17 @@ MSApp.execAsyncAtPriority(asynchronousCallback, priority, args);
 `asynchronousCallback` [in]
 |Type | Description |
 |:---- |:--- |
-Function | The callback function to run asynchronously, dispatched at the given priority priority.
+|Function | The callback function to run asynchronously, dispatched at the given priority priority.
 
 `priority` [in]
 |Type | Description |
 |:---- |:--- |
-DOMString | The contextual priority value at which the asynchronousCallback callback is run. See MSApp Constants.
+|DOMString | The contextual priority value at which the asynchronousCallback callback is run. See MSApp Constants.
 
 `args` [in]
 |Type | Description |
 |:---- |:--- |
-Any | An optional series of arguments that are passed to the synchronousCallback callback function (as parameters 1 and on).
+|Any | An optional series of arguments that are passed to the synchronousCallback callback function (as parameters 1 and on).
 
 #### Return value
 This method does not return a value.
@@ -228,22 +228,22 @@ var retval = MSApp.execAtPriority(synchronousCallback, priority, args);
 `synchronousCallback` [in]
 |Type | Description |
 |:---- |:--- |
-Function | The callback function to run synchronously at the given priority contextual priority.
+|Function | The callback function to run synchronously at the given priority contextual priority.
 
 `priority` [in]
 |Type | Description |
 |:---- |:--- |
-DOMString | The specified priority value to which the current contextual priority value will be set when running the `synchronousCallback` callback function. See [MSApp Constants](#msapp_constants).
+|DOMString | The specified priority value to which the current contextual priority value will be set when running the `synchronousCallback` callback function. See [MSApp Constants](#msapp_constants).
 
 `args` [in]
 |Type | Description |
 |:---- |:--- |
-Any | An optional series of arguments that are passed to the `synchronousCallback` callback function (as parameters 1 and on).
+|Any | An optional series of arguments that are passed to the `synchronousCallback` callback function (as parameters 1 and on).
 
 #### Return value
 |Type | Description |
 |:---- |:--- |
-Any | Returns the return value of the `synchronousCallback` callback (as applicable).
+|Any | Returns the return value of the `synchronousCallback` callback (as applicable).
 
 #### Remarks
 The provided `synchronousCallback` callback method is execute synchronously. The current contextual priority is changed to the provided priority value (given by the priority argument) for the duration of the provided callback function. Once the callback function finishes executing, priority is returned to the previous value prior to the `execAtPriority` call. The return value from `execAtPriority` is the return value of the callback method (as provided).
@@ -276,7 +276,7 @@ None.
 #### Return value
 |Type | Description |
 |:---- |:--- |
-DOMString | The return value is one of the strings `MSApp.HIGH`, `MSApp.NORMAL`, or `MSApp.IDLE`.
+|DOMString | The return value is one of the strings `MSApp.HIGH`, `MSApp.NORMAL`, or `MSApp.IDLE`.
 
 #### Remarks
 This method returns the current contextual priority (see `MSApp Constants`), which can be changed via `execAtPriority` and `execAsyncAtPriority`.
@@ -298,7 +298,7 @@ Returns the source content that is to be printed.
 `htmlDoc` [in]
 |Type | Description |
 |:---- |:--- |
-Document | The HTML document to be printed. This can be the root document, the document in an iframe, a document fragment, or a SVG document. Be aware that htmlDoc must be a document, not an element.
+|Document | The HTML document to be printed. This can be the root document, the document in an iframe, a document fragment, or a SVG document. Be aware that htmlDoc must be a document, not an element.
 
 #### Example 1
 ```javascript
@@ -385,12 +385,12 @@ var retval = MSApp.isTaskScheduledAtPriorityOrHigher(priority);
 `priority` [in]
 |Type | Description |
 |:---- |:--- |
-DOMString | A priority value (see [MSApp Constants](#msapp_constants)) specifying the priority level and above to query for any outstanding queued work.
+|DOMString | A priority value (see [MSApp Constants](#msapp_constants)) specifying the priority level and above to query for any outstanding queued work.
 
 #### Return value
 |Type | Description |
 |:---- |:--- |
-Boolean | Returns `true` if there is any queued work at the specified priority level or above, `false` otherwise.
+|Boolean | Returns `true` if there is any queued work at the specified priority level or above, `false` otherwise.
 
 #### Remarks
 The `isTaskScheduledAtPriorityOrHigher` method provides a means for JavaScript code to determine if there is pending work at the various priority levels (or above) with the intent that the calling JavaScript code can then decide to yield to higher priority work.
@@ -427,7 +427,7 @@ MSApp.suppressSubdownloadCredentialPrompts(suppress);
 `suppress` [in]
 |Type | Description |
 |:---- |:--- |
-Boolean | A value of true suppresses potential authentication prompts. A value of false does not suppress any potential authentication prompts from the user.
+|Boolean | A value of true suppresses potential authentication prompts. A value of false does not suppress any potential authentication prompts from the user.
 
 #### Returan value
 None.
@@ -461,7 +461,7 @@ MSApp.terminateApp(error);
 `error` [in]
 Type | Description |
 |:---- |:--- |
-Error | An `Error` object that you can use to describe the error that triggered the termination. The `Error` object must contain the number, description, and stack properties; a failure report won't be generated if the object doesn't contain these properties.
+|Error | An `Error` object that you can use to describe the error that triggered the termination. The `Error` object must contain the number, description, and stack properties; a failure report won't be generated if the object doesn't contain these properties.
 
 #### Return value
 None.
@@ -489,25 +489,25 @@ Allowed priority values associated with `execAsyncAtPriority`, `execAtPriority`,
 `current`
 |Type | Description |
 |:---- |:--- |
-DOMString | When `current` is used with the appropriate method (See also section), the method will use the current contextual priority when executing the requested operation.
+|DOMString | When `current` is used with the appropriate method (See also section), the method will use the current contextual priority when executing the requested operation.
 
 #### High
 `high`
 |Type | Description |
 |:---- |:--- |
-DOMString | When `high` is used with the appropriate method (See also section), the method will use higher than normal priority when executing the requested operation and will be dispatch the operation before any existing normal priority work.
+|DOMString | When `high` is used with the appropriate method (See also section), the method will use higher than normal priority when executing the requested operation and will be dispatch the operation before any existing normal priority work.
 
 #### Idle
 `idle`
 |Type | Description |
 |:---- |:--- |
-DOMString | When `ideal` is used with the appropriate method (See also section), the method will use lower than normal priority when executing the requested operation and will be dispatch the operation after any existing normal priority work.
+|DOMString | When `ideal` is used with the appropriate method (See also section), the method will use lower than normal priority when executing the requested operation and will be dispatch the operation after any existing normal priority work.
 
 #### Normal
 `normal`
 |Type | Description |
 |:---- |:--- |
-DOMString | When `normal` is used with the appropriate method (See also section), the method will use the normal existing priority when executing the requested operation.
+|DOMString | When `normal` is used with the appropriate method (See also section), the method will use the normal existing priority when executing the requested operation.
 
 #### Example
 ```javascript
@@ -546,7 +546,7 @@ None.
 `error` property
 |Type | Description |
 |:---- |:--- |
-DOMError | Represents an error in `MSAppAsyncOperation`.
+|DOMError | Represents an error in `MSAppAsyncOperation`.
 
 ```javascript
 p = object.error
@@ -555,7 +555,7 @@ p = object.error
 `oncomplete` property
 |Type | Description |
 |:---- |:--- |
-EventHandler | Property for setting an event handler on completion of `MSAppAsyncOperation`.
+|EventHandler | Property for setting an event handler on completion of `MSAppAsyncOperation`.
 
 ```javascript
 p = object.oncomplete
@@ -564,7 +564,7 @@ p = object.oncomplete
 `onerror` property
 |Type | Description |
 |:---- |:--- |
-EventHandler | Property for setting an event handler upon an error during `MSAppAsyncOperation`.
+|EventHandler | Property for setting an event handler upon an error during `MSAppAsyncOperation`.
 
 ```javascript
 p = object.onerror
@@ -573,7 +573,7 @@ p = object.onerror
 `readyState` property
 |Type | Description |
 |:---- |:--- |
-Number | Represents the state of the asynchronous operation within the Windows app using JavaScript. Values include: Started[0], Completed[1], Error[2].
+|Number | Represents the state of the asynchronous operation within the Windows app using JavaScript. Values include: Started[0], Completed[1], Error[2].
 
 ```javascript
 p = object.readyState
@@ -582,7 +582,7 @@ p = object.readyState
 `result` property
 |Type | Description |
 |:---- |:--- |
-Any |Represents the result of `MSAppAsyncOperation`.
+|Any |Represents the result of `MSAppAsyncOperation`.
 
 ```javascript
 p = object.result
