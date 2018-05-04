@@ -3,7 +3,7 @@ description: Host web content in your Windows 10 app with the Microsoft Edge Web
 title: Microsoft Edge WebView for Windows 10 apps
 author: libbymc
 ms.author: libbymc
-ms.date: 5/4/2018
+ms.date: 4/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
@@ -11,11 +11,11 @@ keywords: webview, windows 10 apps, uwp, edge
 
 # Microsoft Edge WebView for Windows 10 apps
 
-The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ apps) or an HTML element (`<x-ms-webview>`)/DOM object (MSHTMLWebViewElement) for JavaScript-based Windows 10 apps, as described below.
+The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ apps) or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
 
 | | |
 |-|-|
-| [**Events**](#events) | [departingFocus](#departingfocus), [MSWebViewContainsFullScreenElementChanged](#mswebviewcontainsfullscreenelementchanged), [MSWebViewContentLoading](#mswebviewcontentloading), [MSWebViewDOMContentLoaded](#mswebviewdomcontentloaded), [MSWebViewFrameContentLoading](#mswebviewframecontentloading), [MSWebViewFrameDOMContentLoaded](#mswebviewframedomcontentloaded), [MSWebViewFrameNavigationCompleted](#mswebviewframenavigationcompleted), [MSWebViewFrameNavigationStarting](#mswebviewframenavigationstarting), [MSWebViewLongRunningScriptDetected](#mswebviewlongrunningscriptdetected), [MSWebViewNavigationCompleted](#mswebviewnavigationcompleted), [MSWebViewNavigationStarting](#mswebviewnavigationstarting), [MSWebViewNewWindowRequested](#mswebviewnewwindowrequested), [MSWebViewPermissionRequested](#mswebviewpermissionrequested), [MSWebViewProcessExited](#mswebviewprocessexited), [MSWebViewWebResourceRequested](#mswebviewwebresourcerequested), [MSWebViewScriptNotify](#mswebviewscriptnotify), [MSWebViewUnsafeContentWarningDisplaying](#mswebviewunsafecontentwarningdisplaying), [MSWebViewUnsupportedUriSchemeIdentified](#mswebviewunsupportedurischemeidentified), [MSWebViewUnviewableContentIdentified](#mswebviewunviewablecontentidentified), [MSWebViewWebResourceRequested](#mswebviewwebresourcerequested)
+| [**Events**](#events) | [departingFocus](#departingfocus), [MSWebViewContainsFullScreenElementChanged](#mswebviewcontainsfullscreenelementchanged), [MSWebViewContentLoading](#mswebviewcontentloading), [MSWebViewDOMContentLoaded](#mswebviewdomcontentloaded), [MSWebViewFrameContentLoading](#mswebviewframecontentloading), [MSWebViewFrameDOMContentLoaded](#mswebviewframedomcontentloaded), [MSWebViewFrameNavigationCompleted](#mswebviewframenavigationcompleted), [MSWebViewFrameNavigationStarting](#mswebviewframenavigationstarting), [MSWebViewLongRunningScriptDetected](#mswebviewlongrunningscriptdetected), [MSWebViewNavigationCompleted](#mswebviewnavigationcompleted), [MSWebViewNavigationStarting](#mswebviewnavigationstarting), [MSWebViewNewWindowRequested](#mswebviewnewwindowrequested), [MSWebViewPermissionRequested](#mswebviewpermissionrequested), [MSWebViewProcessExited](#mswebviewprocessexited), [MSWebViewWebResourceRequested](#mswebviewwebresourcerequested), [MSWebViewScriptNotify](#mswebviewscriptnotify), [MSWebViewUnsafeContentWarningDisplaying](#mswebviewunsafecontentwarningdisplaying), [MSWebViewUnsupportedUriSchemeIdentified](#mswebviewunsupportedurischemeidentified), [MSWebViewUnviewableContentIdentified](#mswebviewunviewablecontentidentified)
 | [**Methods**](#methods) | [addWebAllowedObject](#addweballowedobject), [buildlocalStreamUri](#buildlocalstreamuri), [capturePreviewToBlobAsync](#capturepreviewtoblobasync), [captureSelectedContentToDataPackageAsync](#captureselectedcontenttodatapackageasync), [invokeScriptAsync](#invokescriptasync), [getDeferredPermissionRequests](#getdeferredpermissionrequests), [getDeferredPermissionRequestById](#getdeferredpermissionrequestbyid), [goBack](#goback), [goForward](#goforward), [navigate](#navigate), [navigateFocus](#navigatefocus), [navigateTolocalStreamUri](#navigatetolocalstreamuri), [navigateToString](#navigatetostring), [navigateWithHttpRequestMessage](#navigatewithhttprequestmessage), [refresh](#refresh), [stop](#stop) |
 | [**Properties**](#properties) | [canGoBack](#cangoback), [canGoForward](#cangoforward), [containsFullScreenElement](#containsfullscreenelement), [documentTitle](#documenttitle), [height](#height), [process](#process), [settings](#settings), [src](#src), [width](#width) |
 
@@ -449,27 +449,7 @@ webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
-
-## MSWebViewWebResourceRequested
-
-Raised when an HTTP request is made.
-
-```js
-function handler(eventInfo) { /* Your code */ }
- 
-// addEventListener syntax
-webview.addEventListener("MSWebViewWebResourceRequested", handler);
-webview.removeEventListener("MSWebViewWebResourceRequested", handler);
-```
-
-#### Event Information
-
-|            |      |
-|------------|------|
-|**Interface** | WebResourceRequestedEvent ([Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)) |
-|**Synchronous** |Yes |    
-|**Bubbles**     |No |   
-|**Cancelable**  |No |     
+         
 
 ## Methods
 
