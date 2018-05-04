@@ -419,7 +419,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     ![Notifications in Windows Action Center](./media/windows-action-center.png)
 
-    ...and with that you have the basics of PWA push notifications!
+    ...and with that you have the basics of PWA push notifications. In a real app, the next steps would be to implement a way to manage and store push subscriptions and to properly [encrypt](https://www.npmjs.com/package/web-push#encryptuserpublickey-userauth-payload-contentencoding) payload data being sent across the wire.
 
 ## Going further
 
