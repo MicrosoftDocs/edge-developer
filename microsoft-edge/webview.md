@@ -695,7 +695,7 @@ This method does not return a value.
 
 ### navigateToLocalStreamUri
 
-Loads local web content at the specified URI using an **UriToStreamResolver**.
+Loads local web content at the specified URI using a [**UriToStreamResolver**](https://docs.microsoft.com/en-us/uwp/api/windows.web.iuritostreamresolver.uritostreamasync).
 
 ```js
 webview.navigateToLocalStreamUri(source, streamResolver); 
@@ -704,7 +704,7 @@ webview.navigateToLocalStreamUri(source, streamResolver);
 
 *source*
 * Type: **String**
-* An ms-local-stream URI identifying the local HTML content to load. Create this string using **buildLocalStreamUri**.
+* An ms-local-stream URI identifying the local HTML content to load. Create this string using [**buildLocalStreamUri**](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri).
 
 *streamResolver*
 * Type: any
