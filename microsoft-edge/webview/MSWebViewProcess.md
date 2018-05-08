@@ -34,7 +34,7 @@ Type: **DOMString**
 
 ### isPrivateNetworkClientServerCapabilityEnabled
 
-Gets a value that indicates whether the [webview](../webview.md) has privateNetworkClientServer capabilitiy enabled in this process.
+Gets a value indicating whether the [webview](../webview.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.
 
 ```js
 var privateNetwork = wvprocess.isPrivateNetworkClientServerCapabilityEnabled;
