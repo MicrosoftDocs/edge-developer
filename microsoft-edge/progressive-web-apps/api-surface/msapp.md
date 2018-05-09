@@ -59,11 +59,13 @@ var retVal = MSApp.createBlobFromRandomAccessStream(type, stream);
 #### Parameters
 
 `type` [in]
+
 |Type | Description |
 |:---- |:--- |
 |String | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616.
 
 `stream` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Any | [IRandomAccessStream](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
@@ -144,6 +146,7 @@ var retVal = MSApp.createFileFromStorageFile(storageFile);
 
 #### Parameters
 `storageFile` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Any | Contains the storage file.
@@ -163,11 +166,13 @@ var msStream = MSApp.createStreamFromInputStream("image/jpeg", inputStream);
 
 #### Parameters
 `type` [in]
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616. ([See MIME types,](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) ie. text/plain, text/html, image/jpeg, image/png, audio/mpeg, audio/ogg, audio/*, video/mp4, etc.). 
 
 `inputStream` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Any | The [`IInputStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
@@ -193,16 +198,19 @@ MSApp.execAsyncAtPriority(asynchronousCallback, priority, args);
 
 #### Parameters
 `asynchronousCallback` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Function | The callback function to run asynchronously, dispatched at the given priority priority.
 
 `priority` [in]
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | The contextual priority value at which the asynchronousCallback callback is run. See MSApp Constants.
 
 `args` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Any | An optional series of arguments that are passed to the synchronousCallback callback function (as parameters 1 and on).
@@ -226,16 +234,19 @@ var retval = MSApp.execAtPriority(synchronousCallback, priority, args);
 
 #### Parameters
 `synchronousCallback` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Function | The callback function to run synchronously at the given priority contextual priority.
 
 `priority` [in]
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | The specified priority value to which the current contextual priority value will be set when running the `synchronousCallback` callback function. See [MSApp Constants](#msapp_constants).
 
 `args` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Any | An optional series of arguments that are passed to the `synchronousCallback` callback function (as parameters 1 and on).
@@ -296,6 +307,7 @@ Returns the source content that is to be printed.
 
 #### Parameters
 `htmlDoc` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Document | The HTML document to be printed. This can be the root document, the document in an iframe, a document fragment, or a SVG document. Be aware that htmlDoc must be a document, not an element.
@@ -383,6 +395,7 @@ var retval = MSApp.isTaskScheduledAtPriorityOrHigher(priority);
 
 #### Parameters
 `priority` [in]
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | A priority value (see [MSApp Constants](#msapp_constants)) specifying the priority level and above to query for any outstanding queued work.
@@ -425,6 +438,7 @@ MSApp.suppressSubdownloadCredentialPrompts(suppress);
 
 #### Parameters
 `suppress` [in]
+
 |Type | Description |
 |:---- |:--- |
 |Boolean | A value of true suppresses potential authentication prompts. A value of false does not suppress any potential authentication prompts from the user.
@@ -459,6 +473,7 @@ MSApp.terminateApp(error);
 
 #### Parameters
 `error` [in]
+
 Type | Description |
 |:---- |:--- |
 |Error | An `Error` object that you can use to describe the error that triggered the termination. The `Error` object must contain the number, description, and stack properties; a failure report won't be generated if the object doesn't contain these properties.
@@ -487,24 +502,28 @@ Allowed priority values associated with `execAsyncAtPriority`, `execAtPriority`,
 
 #### Current
 `current`
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | When `current` is used with the appropriate method (See also section), the method will use the current contextual priority when executing the requested operation.
 
 #### High
 `high`
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | When `high` is used with the appropriate method (See also section), the method will use higher than normal priority when executing the requested operation and will be dispatch the operation before any existing normal priority work.
 
 #### Idle
 `idle`
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | When `ideal` is used with the appropriate method (See also section), the method will use lower than normal priority when executing the requested operation and will be dispatch the operation after any existing normal priority work.
 
 #### Normal
 `normal`
+
 |Type | Description |
 |:---- |:--- |
 |DOMString | When `normal` is used with the appropriate method (See also section), the method will use the normal existing priority when executing the requested operation.
@@ -544,6 +563,7 @@ None.
 
 #### Properties
 `error` property
+
 |Type | Description |
 |:---- |:--- |
 |DOMError | Represents an error in `MSAppAsyncOperation`.
@@ -553,6 +573,7 @@ p = object.error
 ```
 
 `oncomplete` property
+
 |Type | Description |
 |:---- |:--- |
 |EventHandler | Property for setting an event handler on completion of `MSAppAsyncOperation`.
@@ -562,6 +583,7 @@ p = object.oncomplete
 ```
 
 `onerror` property
+
 |Type | Description |
 |:---- |:--- |
 |EventHandler | Property for setting an event handler upon an error during `MSAppAsyncOperation`.
@@ -571,6 +593,7 @@ p = object.onerror
 ```
 
 `readyState` property
+
 |Type | Description |
 |:---- |:--- |
 |Number | Represents the state of the asynchronous operation within the Windows app using JavaScript. Values include: Started[0], Completed[1], Error[2].
@@ -580,6 +603,7 @@ p = object.readyState
 ```
 
 `result` property
+
 |Type | Description |
 |:---- |:--- |
 |Any |Represents the result of `MSAppAsyncOperation`.
