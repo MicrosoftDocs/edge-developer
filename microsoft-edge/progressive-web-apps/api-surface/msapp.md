@@ -20,7 +20,7 @@ var result = MSApp.member;
 
 | | |
 | :--- | :--- |
-| [**Methods**](#MSApp_methods) | [clearTemporaryWebDataAsync](#clearTemporaryWebDataAsync), [createBlobFromRandomAccessStream ](#createBlobFromRandomAccessStream), [createDataPackage ](#createDataPackage), [createDataPackageFromSelection](#createDataPackageFromSelection), [createFileFromStorageFile](#createFileFromStorageFile), [createStreamFromInputStream](#createStreamFromInputStream), [execAsyncAtPriority](#execAsyncAtPriority), [execAtPriority](#execAtPriority), [getCurrentPriority](#getCurrentPriority), [getHtmlPrintDocumentSource](#getHtmlPrintDocumentSource), [isTaskScheduledAtPriorityOrHigher](#isTaskScheduledAtPriorityOrHigher), [suppressSubdownloadCredentialPrompts](#suppressSubdownloadCredentialPrompts), [terminateApp](#terminateApp).
+| [**Methods**](#msapp_methods) | [cleartemporarywebdataasync](#cleartemporarywebdataasync), [createblobfromrandomaccessstream ](#createblobfromrandomaccessstream), [createdatapackage ](#createdatapackage), [createdatapackagefromselection](#createdatapackagefromselection), [createfilefromstoragefile](#createfilefromstoragefile), [createstreamfrominputstream](#createstreamfrominputstream), [execasyncatpriority](#execasyncatpriority), [execatpriority](#execatpriority), [getcurrentpriority](#getcurrentpriority), [gethtmlprintdocumentsource](#gethtmlprintdocumentsource), [istaskscheduledatpriorityorhigher](#istaskscheduledatpriorityorhigher), [suppresssubdownloadcredentialprompts](#suppresssubdownloadcredentialprompts), [terminateapp](#terminateapp).
 
 ## Remarks
 
