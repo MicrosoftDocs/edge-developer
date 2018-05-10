@@ -80,7 +80,7 @@ If this were an existing live site, you could quickly generate a web app manifes
 
 3. Next, let's fill in the empty `icons` array with actual image paths. For that, we'll use PWA Builder's *App Image Generator*.
 
-    1. Save down this [sample 512x512 PWA image](./media/pwa.png) from your web browser.
+    1. Using a web browser, download this [sample 512x512 PWA image](./media/pwa.png).
 
     2. Go to the PWA Builder [App Image Generator](https://appimagegenerator-prod.azurewebsites.net/), and select the *pwa.png* image you just saved as the **Input Image** and then click the **Download** button.
 
@@ -106,7 +106,7 @@ And one of your icons:
 
 ![Square71x71Logo app logo loading from localhost](./media/vs-nodejs-express-icon.png)
 
-If your app were published live (with an actual `start_url`), the Bing search engine could now identify it as a candidate for [automatic packaging and submission to the Microsoft Store](./microsoft-store.md) as an installable Windows 10 app. Just make sure that your manifest includes the [*Quality signals for Progressive Web Apps*](https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#4UOdrDJj3124VIkc.97) that Bing will be scanning for:
+If you publish the app live (with an actual `start_url`), the Bing search engine could now identify it as a candidate for [automatic packaging and submission to the Microsoft Store](./microsoft-store.md) as an installable Windows 10 app. Just make sure that your manifest includes the [*Quality signals for Progressive Web Apps*](https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#4UOdrDJj3124VIkc.97) that Bing will be scanning for:
 
  - `name`
 
@@ -143,7 +143,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
     
     ...to the *public* folder of your Visual Studio web app project. (From Visual Studio, use Ctrl+O to open file explorer to your project and navigate to the *public* folder). 
 
-    Its worth reviewing the code in both of these files, to get the jist of how to register a service worker that caches a designated page (*offline.html*) and serves it when a network fetch fails. Next, we need to create a simple "offline.html" page as a placeholder for our app's offline functionality.
+    Its worth reviewing the code in both of these files, to get the gist of how to register a service worker that caches a designated page (*offline.html*) and serves it when a network fetch fails. Next, we need to create a simple "offline.html" page as a placeholder for our app's offline functionality.
 
 3. In *Solution Explorer*, open the *views/layout.pug* file, and add the following line below your link tags:
 
@@ -171,7 +171,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
     ![Files added to the solution's public folder](./media/vs-nodejs-express-public.png)
 
-5. From *Solution Explorer*, open the *routes\index.js* file, and add the following code just before the final command (`module.exports = router;`):
+5. In *Solution Explorer*, open the *routes\index.js* file, and add the following code just before the final command (`module.exports = router;`):
 
     ```JavaScript
     router.get('/offline.html', function (req, res) {
@@ -183,7 +183,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
 6. Let's test out your PWA! Build (Ctrl+Shift+B) and Run (F5) your web app to launch Microsoft Edge and open your *localhost* page. Then,
 
-    1. Open the Edge DevTools **Console** (Ctrl+Shift+J) and verify your *Service worker has been registered*.
+    1. Open the Edge DevTools **Console** (Ctrl+Shift+J) and verify the *Service worker was registered*.
     2. In the **Debugger** panel, expand the **Service Workers** control and click on your origin. In the *Service Worker Overview*, verify your service worker is activated and running:
 
         ![Edge DevTools Service Worker overview](./media/devtools-sw-overview.png)
