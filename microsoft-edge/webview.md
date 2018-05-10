@@ -6,12 +6,12 @@ ms.author: libbymc
 ms.date: 4/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge
-keywords: webview, windows 10 apps, uwp, edge
+keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
 ---
 
 # Microsoft Edge WebView for Windows 10 apps
 
-The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ apps) or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
+The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ Windows 10 apps, [Windows Forms and WPF desktop applications](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/controls/webview)), or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
 
 | | |
 |-|-|
@@ -695,7 +695,7 @@ This method does not return a value.
 
 ### navigateToLocalStreamUri
 
-Loads local web content at the specified URI using an **UriToStreamResolver**.
+Loads local web content at the specified URI using a [**UriToStreamResolver**](https://docs.microsoft.com/en-us/uwp/api/windows.web.iuritostreamresolver.uritostreamasync).
 
 ```js
 webview.navigateToLocalStreamUri(source, streamResolver); 
@@ -704,7 +704,7 @@ webview.navigateToLocalStreamUri(source, streamResolver);
 
 *source*
 * Type: **String**
-* An ms-local-stream URI identifying the local HTML content to load. Create this string using **buildLocalStreamUri**.
+* An ms-local-stream URI identifying the local HTML content to load. Create this string using [**buildLocalStreamUri**](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri).
 
 *streamResolver*
 * Type: any
