@@ -676,19 +676,26 @@ This  method does not return a value.
 
 ### navigateFocus
 
-Navigates focus onto the **webview**.
+Navigates focus onto the **webview**. Fires the webview's top level document's window's navigatingfocus event. The FocusNavigationEvent args used in the navigatingfocus event match the parameters provided to navigateFocus except the origin parameters are translated from the host document's coordinate space to the coordinate space of the webview's top level document. See the [TVJS's Direction Navigation library](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) for an example of an implementation of focus navigation via keyboard or gamepad that uses this method.
 
 ```js
-webview.addWebAllowedObject(name, applicationObject);
+const activeElementBounds = document.activeElement.getBoundingClientRect();
+const origin = { 
+    originLeft: activeElementBounds.left,
+    originTop: activeElementBounds.top,
+    originWidth: activeElementBounds.width,
+    originHeight: activeElementBounds.height
+};
+webview.navigateFocus(navigationReason, origin);
 ```
 #### Parameters
 *navigationReason*
 * Type: **String**
-* The reason for the navigation.
+* The reason for the navigation. The value should be either "left", "up", "right", or "down". It is the direction in which focus is moving away from the currently focused element.
 
 *origin*
 * Type: **Object**
-* The origin of the navigation.
+* The origin of the navigation. This is a JavaScript object with properties "originLeft", "originTop", "originWidth", and "originHeight". These values should describe the position and size of the currently focused element away from which focus is moving.
 
 #### Return value
 This method does not return a value.
