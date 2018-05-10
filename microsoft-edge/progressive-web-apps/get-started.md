@@ -197,7 +197,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
 ## Add push notifications
 
-Let's make our PWA even more "app-like" by adding client-side support for push notifications using the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) to subscribe to a messaging service and the [Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to display a toast message upon receiving a message. As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are suppoted. On the server side, we'll use the [Web-Push](https://www.npmjs.com/package/web-push) open-source library to handle the differences involved in delivering push messages to various browsers.
+Let's make our PWA even more "app-like" by adding client-side support for push notifications using the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) to subscribe to a messaging service and the [Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to display a toast message upon receiving a message. As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are supported. On the server side, we'll use the [Web-Push](https://www.npmjs.com/package/web-push) open-source library to handle the differences involved in delivering push messages to various browsers.
 
 The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html), which is worth checking out for a number of other useful *Web Push* and service worker recipes.
 
