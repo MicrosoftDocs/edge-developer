@@ -152,7 +152,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
     ```
    So that your site will load and run your service worker registration script.
    
-4. In *Solution Explorer*, right-click on the *public* folder and select **Add** > **HTML file**. Name it **offline.html**, and add a `<title>` and some body content, for example:
+4. In *Solution Explorer*, right-click on the *public* folder and select **Add** > **New File...**. Name it **offline.html**, and add a `<title>` and some body content, for example:
 
     ```HTML
     <!DOCTYPE html>
