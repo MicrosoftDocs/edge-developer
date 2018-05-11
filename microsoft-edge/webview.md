@@ -27,6 +27,8 @@ var webview = document.createElement("x-ms-webview");
 ## Remarks
 When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`. 
 
+Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-webview>` markup creates a WebView on a new unique thread in the app's process. Running on a new unique thread means that long running script from one WebView is unable to hang the app or other WebViews. Creating a WebView via the `new MSWebView()` constructor creates a WebView in a separate WebView process. Running in a unique process means that in addition to protection from long running script, the app is also protected from web content that crashes the WebView process. Creating a WebView via the [`MSWebViewProcess.createWebViewAsync`](./webview/MSWebViewProcess.md#createwebviewasync) method also creates a WebView in a seperate process but allows the caller more control over process settings and grouping WebViews in WebView processes. See `MSWebViewProcess` for more information. 
+
 For more information, see the [HTML WebView control sample](http://go.microsoft.com/fwlink/p/?linkid=309825).
 
 ### AppCache storage limitations
