@@ -195,15 +195,20 @@ webview.removeEventListener("MSWebViewFrameNavigationCompleted", handler);
 
 ### MSWebViewFrameNavigationStarting
 
-Indicates a `<iframe>` within a **webview** is starting to navigate.
+Indicates a `<iframe>` within a **webview** is starting to navigate. This is fired before obtaining any resources from the network for the navigation. The navigation is not started until all MSWebViewFrameNavigationStarting event handlers complete. This event is cancellable via calling `eventArgs.preventDefault()`. If cancelled, the WebView will not perform the navigation.
 
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function frameNavigationStartingHandler(navigationEventArgs) {
+    // Cancel all navigations that don't meet some criteria.
+    if (!navigationEventArgs.uri.startsWith("https://example.com/")) {
+        navigationEventArgs.preventDefault();
+    }
+}
  
 // addEventListener syntax
-webview.addEventListener("MSWebViewFrameNavigationStarting", handler);
-webview.removeEventListener("MSWebViewFrameNavigationStarting", handler);
+webview.addEventListener("MSWebViewFrameNavigationStarting", frameNavigationStartingHandler);
+webview.removeEventListener("MSWebViewFrameNavigationStarting", frameNavigationStartingHandler);
 ```
 
 #### Event Information
@@ -260,15 +265,20 @@ webview.removeEventListener("MSWebViewNavigationCompleted", handler);
 
 ### MSWebViewNavigationStarting
 
-Indicates the **webview** is starting to navigate **MSWebViewContentLoading** and the HTML content is downloaded and is being loaded into the control.
+Indicates the **webview** is starting to navigate. This is fired before obtaining any resources from the network for the navigation. The navigation is not started until all MSWebViewNavigationStarting event handlers complete. This event is cancellable via calling `eventArgs.preventDefault()`. If cancelled, the WebView will not perform the navigation.
 
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function navigationStartingHandler(navigationEventArgs) {
+    // Cancel all navigations that don't meet some criteria.
+    if (!navigationEventArgs.uri.startsWith("https://example.com/")) {
+        navigationEventArgs.preventDefault();
+    }
+}
  
 // addEventListener syntax
-webview.addEventListener("MSWebViewNavigationStarting", handler);
-webview.removeEventListener("MSWebViewNavigationStarting", handler);
+webview.addEventListener("MSWebViewNavigationStarting", navigationStartingHandler);
+webview.removeEventListener("MSWebViewNavigationStarting", navigationStartingHandler);
 ```
 
 #### Event Information
