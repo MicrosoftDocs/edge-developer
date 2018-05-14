@@ -21,7 +21,8 @@ var result = MSApp.method;
 
 | | |
 | :--- | :--- |
-| [**Methods**](#msapp_methods) | [cleartemporarywebdataasync](#cleartemporarywebdataasync), [createblobfromrandomaccessstream ](#createblobfromrandomaccessstream), [createdatapackage ](#createdatapackage), [createdatapackagefromselection](#createdatapackagefromselection), [createfilefromstoragefile](#createfilefromstoragefile), [createstreamfrominputstream](#createstreamfrominputstream), [execasyncatpriority](#execasyncatpriority), [execatpriority](#execatpriority), [getcurrentpriority](#getcurrentpriority), [gethtmlprintdocumentsource](#gethtmlprintdocumentsource), [getViewId](#getViewId), [istaskscheduledatpriorityorhigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppresssubdownloadcredentialprompts](#suppresssubdownloadcredentialprompts), [terminateapp](#terminateapp).
+| [**Methods**](#msapp_methods) | [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage
+](#createdatapackage), [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getViewId](#getViewId), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp).
 
 | | |
 | :--- | :--- |
@@ -30,8 +31,6 @@ var result = MSApp.method;
 | | |
 | :--- | :--- |
 | [MSAppAsyncOperation](#msappasyncoperation) | [start](#start) |
-
-
 
 ## MSApp Methods
 
@@ -48,13 +47,6 @@ This method has no parameters.
 Type: [`IAsyncAction`](https://docs.microsoft.com/en-us/uwp/api/windows.foundation.iasyncaction)
 
 Represents an asynchronous action.
-
-### pageHandlesAllApplicationActivations
-
-|Type | Description |
-|:---- |:--- |
-Boolean | Use `MSApp.pageHandlesAllApplicationActivations(true)` to always skip navigating to the StartPage and instead always jump straight to firing the `WebUIApplication` activated event. Requires that all pages handle all activation kinds about which any part of your app are concerned.
-
 
 ### createBlobFromRandomAccessStream
 Creates a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) from an [`IRandomAccessStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) object. This method should be used when dealing with `IRandomAccessStream` objects in apps in order to create a W3C based object from the stream. Once the blob is created, it can be used with the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader), [URL APIs](https://developer.mozilla.org/en-US/docs/Web/API/URL), and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). 
@@ -493,7 +485,7 @@ Used to avoid a refresh of the start path (page reload) before every activate ev
 
 |Type | Description |
 |:---- |:--- |
-|Boolean | Any time your app starts, it will refresh the start path (reload the webpage) by default, for single-page applications, you may wish to avoid reloading. By defining this method as `true`, clicking an activated event (like a notificaiton) will not trigger the reload.
+Boolean | Use `MSApp.pageHandlesAllApplicationActivations(true)` to always skip refreshing the start path (page reload) and instead jump straight to firing the `WebUIApplication` activated event. Requires that all pages handle activation events separately. By defining this method as `true`, clicking an activated event (like a notificaiton) will not trigger the reload, an essential for single-page apps wishing to avoid page reloads.
 
 #### Example 
 ```javascript
