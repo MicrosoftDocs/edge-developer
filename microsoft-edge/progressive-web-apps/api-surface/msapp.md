@@ -11,20 +11,27 @@ keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
 
 # MSApp
 
-The MSApp interface provides helper functions that enable you to create [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/en-us/library/hh772328(v=vs.85).aspx) objects.
+The MSApp object and its members are supported only for Windows apps using JavaScript (including PWAs accessing Windows API features). The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn’t exist (and consequently, none of its methods and properties are available).
 
-## Syntax
+It provides helper functions that enable you to create [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/en-us/library/hh772328(v=vs.85).aspx) objects.
+
 ```javascript
-var result = MSApp.member;
+var result = MSApp.method;
 ```
 
 | | |
 | :--- | :--- |
-| [**Methods**](#msapp_methods) | [cleartemporarywebdataasync](#cleartemporarywebdataasync), [createblobfromrandomaccessstream ](#createblobfromrandomaccessstream), [createdatapackage ](#createdatapackage), [createdatapackagefromselection](#createdatapackagefromselection), [createfilefromstoragefile](#createfilefromstoragefile), [createstreamfrominputstream](#createstreamfrominputstream), [execasyncatpriority](#execasyncatpriority), [execatpriority](#execatpriority), [getcurrentpriority](#getcurrentpriority), [gethtmlprintdocumentsource](#gethtmlprintdocumentsource), [istaskscheduledatpriorityorhigher](#istaskscheduledatpriorityorhigher), [suppresssubdownloadcredentialprompts](#suppresssubdownloadcredentialprompts), [terminateapp](#terminateapp).
+| [**Methods**](#msapp_methods) | [cleartemporarywebdataasync](#cleartemporarywebdataasync), [createblobfromrandomaccessstream ](#createblobfromrandomaccessstream), [createdatapackage ](#createdatapackage), [createdatapackagefromselection](#createdatapackagefromselection), [createfilefromstoragefile](#createfilefromstoragefile), [createstreamfrominputstream](#createstreamfrominputstream), [execasyncatpriority](#execasyncatpriority), [execatpriority](#execatpriority), [getcurrentpriority](#getcurrentpriority), [gethtmlprintdocumentsource](#gethtmlprintdocumentsource), [getViewId](#getViewId), [istaskscheduledatpriorityorhigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppresssubdownloadcredentialprompts](#suppresssubdownloadcredentialprompts), [terminateapp](#terminateapp).
 
-## Remarks
+| | |
+| :--- | :--- |
+| [**Constants**](#msapp-constants) | [current](#current), [high](#high), [idle](#idle), [normal](#normal).|
 
-The MSApp object and its members are supported only for Windows apps using JavaScript (including PWAs accessing Windows API features). The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn’t exist (and consequently, none of its methods and properties are available).
+| | |
+| :--- | :--- |
+| [MSAppAsyncOperation](#msappasyncoperation) | [start](#start) |
+
+
 
 ## MSApp Methods
 
@@ -207,7 +214,7 @@ MSApp.execAsyncAtPriority(asynchronousCallback, priority, args);
 
 |Type | Description |
 |:---- |:--- |
-|DOMString | The contextual priority value at which the asynchronousCallback callback is run. See MSApp Constants.
+|DOMString | The contextual priority value at which the asynchronousCallback callback is run. See [MSApp Constants](#msapp-constants).
 
 `args` [in]
 
@@ -290,7 +297,7 @@ None.
 |DOMString | The return value is one of the strings `MSApp.HIGH`, `MSApp.NORMAL`, or `MSApp.IDLE`.
 
 #### Remarks
-This method returns the current contextual priority (see `MSApp Constants`), which can be changed via `execAtPriority` and `execAsyncAtPriority`.
+This method returns the current contextual priority (see [`MSApp Constants`](#msapp-constants)), which can be changed via `execAtPriority` and `execAsyncAtPriority`.
 
 #### Example
 ```javascript
@@ -386,6 +393,57 @@ var printTask = event.request.createPrintTask(title, function (args) {
     }
 ```
 
+### getViewId 
+Support for multiple windows. 
+
+> [!NOTE] 
+> In Win8.1 JavaScript UWP apps supported multiple windows using MSApp DOM APIs which are now depricated. For Windows 10, use `window.open`, `window`, and the new `MSApp.getViewId`.
+
+Description |Windows 10 | Windows 8.1 |
+|:---- |:---- |:--- |
+|Create new window | [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) | [`MSApp.createNewView`](https://msdn.microsoft.com/en-us/library/dn254975(v=vs.85).aspx) |
+|New window object | [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) |[`MSAppView`](https://msdn.microsoft.com/en-us/library/dn268315(v=vs.85).aspx) |
+
+```javascript
+var retval = MSApp.getViewId(window); 
+```
+
+#### Parameters
+`window`
+
+|Type | Description |
+|:---- |:--- |
+|DOMString | An object representing a window containing a DOM document. | 
+
+#### Return value
+
+`viewId`
+|Type | Description |
+|:---- |:--- |
+|Number | Can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
+
+#### Remarks
+Use [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) and [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) for creating new windows, but then to interact with WinRT APIs, add the `MSApp.getViewId` API. It takes a `window` object as a parameter and returns a `viewId` number that can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
+
+##### Delaying Visibility 
+Views in WinRT normally start hidden and the end developer uses something like `TryShowAsStandaloneAsync` to display the view once it is fully prepared. In the web world, `window.open` shows a window immediately and the end user can watch as content is loaded and rendered. To have your new windows act like views in WinRT and not display immediately we have added a `window.open` option. For example:
+`let newWindow = window.open("https://example.com", null, "msHideView=yes");`
+
+##### Primary Window Differences
+The primary window that is initially opened by the OS acts differently than the secondary windows that it opens: 
+
+|Description | Primary | Secondary |
+|:---- |:--- |:--- |
+|window.open | Allowed | Disallowed |
+|window.close | Close app | Close window |
+| Navigation restrictions | ACUR only | No restrictions |
+
+The restriction to not allow secondary windows to open could change in the future depending on [feedback](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).
+
+##### Same Origin Communication Restrictions 
+There is a difficult technical issue preventing proper support for synchronous, same-origin, cross-window, script calls. When you open a window that is same origin, script in one window is allowed to directly call functions in the other window, and some of these calls will fail. `postMessage` calls work just fine and is the recommended way to do things if possible. Work to improve this issue is in progress.
+
+
 ### isTaskScheduledAtPriorityOrHigher 
 Returns a Boolean value indicating whether there is pending work at the given priority level or higher.
 
@@ -427,6 +485,29 @@ function performIdleWork(array_in) {
 
   performIdleWorkHelper();
 } // performIdleWork
+```
+### pageHandlesAllApplicationActivations
+Used to avoid a refresh of the start path (page reload) before every activate event (ie. clicking a notification or a pinned tile). 
+
+#### Parameters
+
+|Type | Description |
+|:---- |:--- |
+|Boolean | Any time your app starts, it will refresh the start path (reload the webpage) by default, for single-page applications, you may wish to avoid reloading. By defining this method as `true`, clicking an activated event (like a notificaiton) will not trigger the reload.
+
+#### Example 
+```javascript
+// Without this, the app will first refresh to the start path before every activate event
+window.MSApp.pageHandlesAllApplicationActivations(true); 
+
+// This must not be deffered so that it can receive the initial `activated` event in time
+window.Windows.UI.WebUI.WebUIApplication.addEventListener(
+    `activated`,
+    e =>
+        microsoftInterface.handleActivatedEvent(e);
+    }),
+    false
+);
 ```
 
 ### suppressSubdownloadCredentialPrompts 
