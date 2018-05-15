@@ -2,6 +2,7 @@
   "redirections": [ 
     {
         "source_path": "microsoft-edge/f12-devtools-guide.md", 
+        "source_path": "microsoft-edge/dev-guide/tools.md",
         "redirect_url": "/microsoft-edge/devtools-guide", 
         "redirect_document_id": true 
     }, 
@@ -150,11 +151,6 @@
     {
         "source_path": "microsoft-edge/dev-guide/device/web-notifications-api.md", 
         "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-notifications-api", 
-        "redirect_document_id": true 
-    },
-    {
-        "source_path": "microsoft-edge/dev-guide/tools.md", 
-        "redirect_url": "/microsoft-edge/devtools-guide", 
         "redirect_document_id": true 
     },
     {
