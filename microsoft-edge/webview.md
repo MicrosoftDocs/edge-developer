@@ -571,27 +571,31 @@ An **MSWebViewAsyncOperation** object that, when it completes, provides a [DataP
 As an asynchronous action, executes the specified script function from the currently loaded HTML, with specific arguments.
 
 ```js
-webview.invokeScriptAsync(scriptName, args)
+webview.invokeScriptAsync(functionName, ...args)
 ```
 #### Parameters
 
-**scriptName**
+**functionName**
 * Type: **String**
-* The name of the script function to invoke.
+* The name of the function to invoke. This is a property name on the global window object of the WebView's top level document. This can be a built-in global function like eval or open, or it can be a script defined function on the global window object. Only functions in the top level document of the WebView may be invoked.
 
 **args**
-* Type: **Object**
-* A string array that packages arguments to the script function. 
+* Type: **String**
+* Optional string parameters to pass to the invoked function. After functionName, any additional parameters to invokeScriptAsync are strings passed to the invoked function.
 
 #### Return value
 Type: **MSWebViewAsyncOperation**
 
-When using **invokeScriptAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call **webview.start** to execute the operation.
+When using **invokeScriptAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call **MSWebViewAsyncOperation.start** to execute the operation. If the MSWebViewAsyncOperation's complete event fires then the MSWebViewAsyncOperation's result property is the string return value from invoking the function. Using the invoked function's return value allows for the WebView content to communication synchronously back to the WebView host. To instead have the WebView content communicate asynchronously back to the WebView host see the MSWebViewScriptNotify event. If the function invoked throws an unhandled exception then the MSWebViewAsyncOperation's error event will fire. 
 
 ```js
-var asyncOp = webView.invokeScriptAsync(scriptName, args);
-asyncOp.oncomplete = completedHandler;
-asyncOp.onerror = errorHandler;
+const functionName = "eval";
+const args = ["'Current URL: ' + document.location.href"];
+
+const asyncOp = webview.invokeScriptAsync(functionName, ...args);
+
+asyncOp.onerror = () => console.error("Error: " + asyncOp.error);
+asyncOp.oncomplete = () => console.log("Result: " + asyncOp.result); // Logs 'Current URL: about:blank'
 asyncOp.start();
 ```
 
