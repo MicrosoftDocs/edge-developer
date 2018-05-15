@@ -107,4 +107,4 @@
 ### [ScriptNotifyEvent](webview/ScriptNotifyEvent.md)
 ### [UnviewableContentIdentifiedEvent](webview/UnviewableContentIdentifiedEvent.md)
 ### [WebResourceRequestedEvent](webview/WebResourceRequestedEvent.md)
-## [WebVR Developer's Guide](https://docs.microsoft.com/en-us/microsoft-edge/webvr/)
+## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
