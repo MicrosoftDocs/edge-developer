@@ -336,7 +336,7 @@ webview.removeEventListener("MSWebViewPermissionRequested", handler);
 
 ### MSWebViewProcessExited
 
-Indicates that the **webview** component process crashsed. 
+Indicates that the **webview** component process crashsed. This is only relevant for an out-of-process WebView. See the Remarks section for how to create an out-of-process WebView as opposed to an in-process WebView. After this event fires, the corresponding WebView is put into a crashed state. Calling most WebView specific methods or accessing most WebView specific properties on a crashed WebView will throw an exception. To recover from this event, remove the crashed WebView from the DOM and replace it with a new WebView.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
