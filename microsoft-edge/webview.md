@@ -380,14 +380,23 @@ webview.removeEventListener("MSWebViewWebResourceRequested", handler);
 
 ### MSWebViewScriptNotify
 
-Raised when a page inside the **webview** element calls the **window.external.notify** method. 
+Raised when a page inside the **webview** element calls the **window.external.notify** method. The window.external.notify method is only available to documents with URIs that match rules in the app's manifest's ApplicationContentUriRules or that has been programatically allowed via setting webview.settings.isScriptNotifyAllowed to true. Additionally window.external.notify is only available to the webview's top level document.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
- 
-// addEventListener syntax
-webview.addEventListener("MSWebViewScriptNotify", handler);
-webview.removeEventListener("MSWebViewScriptNotify", handler);
+webview.addEventListener("MSWebViewScriptNotify", eventInfo => {
+    console.log("The URI " + eventInfo.callingUri + 
+        " has sent notification " + eventInfo.value);
+});
+
+// Allow the next URI to which we navigate access to window.external.notify
+webview.settings.isScriptNotifyAllowed = true;
+webview.navigate("https://example.com/");
+
+webview.addEventListener("MSWebViewNavigationCompleted", () => {
+    // Inject script to the webview that will send a notification back.
+    const asyncOp = webview.invokeScriptAsync("eval", "window.external.notify('example notification')");
+    asyncOp.start();
+});
 ```
 
 #### Event Information
