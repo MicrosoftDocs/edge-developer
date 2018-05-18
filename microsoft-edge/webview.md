@@ -67,14 +67,24 @@ webview.removeEventListener("departingFocus", handler);
 
 ### MSWebViewContainsFullScreenElementChanged
 
-Occurs when the status changes of whether or not the **webview** currently contains a full screen element.
+Occurs when the status changes of whether or not the **webview** currently contains a full screen element. Use the containsFullScreenElement property to the current value. Full screen element here refers to the [Fullscreen DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) notion of a full screen element via the element.requestFullScreen and document.exitFullScreen DOM functions.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function containsFullScreenElementChangedHandler(eventInfo) {
+    const applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
+    if (webview.containsFullScreenElement) {
+        webview.classList.add("fullscreen"); // Have the webview fill the app view
+        applicationView.tryEnterFullScreenMode(); // Have the app view fill the screen
+    }
+    else {
+        webview.classList.remove("fullscreen"); // Return webview to normal
+        applicationView.exitFullScreenMode(); // Return app view to normal
+    }
+}
  
 // addEventListener syntax
-webview.addEventListener("MSWebViewContainsFullScreenElementChanged", handler);
-webview.removeEventListener("MSWebViewContainsFullScreenElementChanged", handler);
+webview.addEventListener("MSWebViewContainsFullScreenElementChanged", containsFullScreenElementChangedHandler);
+webview.removeEventListener("MSWebViewContainsFullScreenElementChanged", containsFullScreenElementChangedHandler);
 ```
 
 #### Event Information
@@ -845,7 +855,7 @@ Type: **Boolean**
 
 ### containsFullScreenElement
 
-Gets a value that indicates whether the **webview** contains an element that supports full screen.
+Gets a value that indicates whether the **webview** contains an element that supports full screen. See the MSWebViewContainsFullScreenElementChanged event for more info.
 
 This property is read-only.
 
