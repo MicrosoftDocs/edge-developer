@@ -143,7 +143,7 @@ In "popup.js", the [tabs](https://developer.mozilla.org/Add-ons/WebExtensions/AP
 
 Now that we have the basic popup functionality, let's add icons to the extension. 
 
-## Icons
+## Adding icons
 
 Icons are used to represent the extension in the browser toolbar, the extensions menu, and other places.  The icons you need for this extension are here on GitHub: [images](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer/images). Visit the [Design](./design.md#icons) guide to read more about extension icons in Microsoft Edge.
 
