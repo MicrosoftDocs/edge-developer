@@ -46,7 +46,7 @@ All Windows 10 apps are intended to use the same AppCache quota model, so the a
 
 ### departingFocus
 
-Indicates the focus departing from the **webview** into the app. 
+Indicates focus departing from the **webview** into the app. Fires when the webview's top level document calls window.departFocus. The FocusNavigationEvent args in the departingFocus event match the parameters provided to departFocus except the origin parameters are translated from the webview's document's coordinate space to the coordinate space of the webview host document. See the webview.navigateFocus method and corresponding window navigatingFocus event for transferring focus from host to webview. See the [TVJS's Direction Navigation library](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) for an example of an implementation of focus navigation via keyboard or gamepad that handles this event.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
@@ -711,7 +711,7 @@ This  method does not return a value.
 
 ### navigateFocus
 
-Navigates focus onto the **webview**. Fires the webview's top level document's window's navigatingfocus event. The FocusNavigationEvent args used in the navigatingfocus event match the parameters provided to navigateFocus except the origin parameters are translated from the host document's coordinate space to the coordinate space of the webview's top level document. See the [TVJS's Direction Navigation library](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) for an example of an implementation of focus navigation via keyboard or gamepad that uses this method.
+Navigates focus onto the **webview**. Fires the webview's top level document's window's navigatingfocus event. The FocusNavigationEvent args used in the navigatingfocus event match the parameters provided to navigateFocus except the origin parameters are translated from the host document's coordinate space to the coordinate space of the webview's top level document. See the webview departingFocus event and corresponding window.departFocus method for transferring focus from the webview to the host. See the [TVJS's Direction Navigation library](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) for an example of an implementation of focus navigation via keyboard or gamepad that uses this method.
 
 ```js
 const activeElementBounds = document.activeElement.getBoundingClientRect();
