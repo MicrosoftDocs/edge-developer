@@ -26,7 +26,7 @@ To begin, create a directory for your extension and name it "color-changer".
 
 Inside the "color-changer" folder, create a file named "manifest.json".  The "manifest.json" file is required for all extensions and provides important information for the extension, ranging from the extension name to its permissions.
 
-> [NOTE!] 
+> [!NOTE] 
 > This guide will walk you through all the manifest keys you'll need for this tutorial, but for a list of all supported and recommended manifest keys, see [Supported manifest keys](../api-support/supported-manifest-keys.md). 
 
 Inside "manifest.json", include the following code.
