@@ -199,7 +199,7 @@ if (url.indexOf("//docs.microsoft.com") <= -1) {
 
 This script gets the URL of the current page through `document.location.href` and checks whether or not the current page is on a [docs.microsoft.com](https://docs.microsoft.com) domain. If the page is not on a [docs.microsoft.com](https://docs.microsoft.com) domain (e.g. [https://www.bing.com/](https://www.bing.com/)), the paths to the inactive icons (grayed out icons) are sent to the background script using [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage).
 
-You also need to update `manifest.json` to include the keys below.
+You also need to update "manifest.json" to include the keys below.
 
 ```json
   "content_scripts": [{
@@ -242,7 +242,7 @@ browser.runtime.onMessage.addListener(
 
 This script also disables the browser action ([`browserAction.disable`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/disable)), so that users cannot click on the browser action outside of a [docs.microsoft.com](https://docs.microsoft.com) page. 
 
-We need to add the background script to `manifest.json`. Add the following to your manifest file.
+We need to add the background script to "manifest.json". Add the following to your manifest file.
 
 ```json
 "background": {
