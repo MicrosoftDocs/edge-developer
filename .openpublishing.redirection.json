@@ -108,6 +108,7 @@
         "redirect_document_id": true 
     },
     {
+        "source_path": "microsoft-edge/f12-devtools-guide/experiments.md",
         "source_path": "microsoft-edge/f12-devtools-guide/whats-new.md", 
         "redirect_url": "/microsoft-edge/devtools-guide/whats-new", 
         "redirect_document_id": true 
