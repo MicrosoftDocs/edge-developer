@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 In this guide, you will learn to create an extension for Microsoft Edge.  This example extension will allow you to manipulate specific CSS for [docs.microsoft.com](https://docs.microsoft.com) pages -- walking you through creation of a manifest file, the user interface, and background and content scripts.
 
-![Docs.microsoft.com header changed to red](./media/color-changer_header.png)
+![Docs.microsoft.com header changed to red](../media/color-changer_header.png)
 
 This tutorial assumes you have basic understanding of what browser extensions are and how they work. Unfamiliar with the building blocks for extensions? Check out the walkthrough, [Anatomy of an extension](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension), first.
 
@@ -26,7 +26,8 @@ To begin, create a directory for your extension and name it "color-changer".
 
 Inside the "color-changer" folder, create a file named "manifest.json".  The "manifest.json" file is required for all extensions and provides important information for the extension, ranging from the extension name to its permissions.
 
-> [NOTE!] This guide will walk you through all the manifest keys you'll need for this tutorial, but for a list of all supported and recommended manifest keys, see [Supported manifest keys](../api-support/supported-manifest-keys.md). 
+> [NOTE!] 
+> This guide will walk you through all the manifest keys you'll need for this tutorial, but for a list of all supported and recommended manifest keys, see [Supported manifest keys](../api-support/supported-manifest-keys.md). 
 
 Inside "manifest.json", include the following code.
 
@@ -68,7 +69,7 @@ Now that we've created the manifest file, we need a user interface for the exten
 
 For this extension, we will create a popup for the user interface, like below.
 
-![The popup interface of the extension](./media/color-changer_popup.png)
+![The popup interface of the extension](../media/color-changer_popup.png)
 
 To do this, create a file called "popup.html" in the root of your "color-changer" folder. Paste the following code in "popup.html".
 
@@ -172,7 +173,7 @@ Now that we've added the user interface and created icons, let's test the extens
 
 After you've added your extension, navigate to any [docs.microsoft.com](https://docs.microsoft.com/) page. You should see the following popup after clicking on the browser action. The color of the [docs.microsoft.com](https://docs.microsoft.com/) header should also change color.
 
-![Docs.microsoft.com header changed to red](./media/color-changer_header_red.png)
+![Docs.microsoft.com header changed to red](../media/color-changer_header_red.png)
 
 If you encounter any errors or functionality that's not working, check out the [Debugging extensions](https://docs.microsoft.com/microsoft-edge/extensions/guides/debugging-extensions) guide or download the full sample here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).
 
