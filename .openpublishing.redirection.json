@@ -113,6 +113,11 @@
         "redirect_document_id": true 
     },
     {
+        "source_path": "microsoft-edge/f12-devtools-guide/developer-tools-keyboard-shortcuts.md", 
+        "redirect_url": "/microsoft-edge/devtools-guide#general-shortcuts", 
+        "redirect_document_id": true 
+    },
+    {
         "source_path": "microsoft-edge/dev-guide/browser/flash.md", 
         "redirect_url": "/microsoft-edge/dev-guide/browser-features/flash", 
         "redirect_document_id": true 
