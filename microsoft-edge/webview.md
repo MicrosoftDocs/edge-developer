@@ -232,10 +232,15 @@ webview.removeEventListener("MSWebViewFrameNavigationStarting", frameNavigationS
           
 ### MSWebViewLongRunningScriptDetected
 
-Occurs periodically while the **webview** executes JavaScript, letting you halt the script.
+Occurs periodically during uninterrupted script execution in the **webview**, letting you halt the script.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function handler(eventInfo) {
+    const stopPageScriptThreshold = 5 * 1000;
+    if (eventInfo.executionTime > stopPageScriptThreshold) {
+        eventInfo.stopPageScriptExecution = true; // Stop the long running script if it goes over our threshold
+    }
+}
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewLongRunningScriptDetected", handler);
@@ -302,10 +307,19 @@ webview.removeEventListener("MSWebViewNavigationStarting", navigationStartingHan
 
 ### MSWebViewNewWindowRequested
 
-Raised when content in **webview** is trying to open a new window. 
+Raised when content in **webview** is trying to open a new window. If the event isn't cancelled the webview will launch the URI of the new window request in the user's default browser.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function handler(eventInfo) {
+    // Prevent the webview from opening URIs in the default browser.
+    eventInfo.preventDefault();
+    
+    // Only allow https://example.com/ to open new windows.
+    if (eventInfo.referer === "https://example.com/") {
+        // Perform some custom handling of the URI.
+        openUri(eventInfo.uri);
+    }
+}
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewNewWindowRequested", handler);
@@ -319,7 +333,7 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 |**Interface** | [NavigationEventWithReferrer](./webview/NavigationEventWithReferrer.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
-|**Cancelable**  |No |                 
+|**Cancelable**  |Yes |                 
            
 
 ### MSWebViewPermissionRequested
