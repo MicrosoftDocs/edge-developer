@@ -158,7 +158,7 @@ Update "manifest.json" to include the icons.
 ```json
   "icons": {
     "25": "images/color-changer25.png",
-    "48": "images/color-changer28.png"
+    "48": "images/color-changer48.png"
   }
 ```
 
