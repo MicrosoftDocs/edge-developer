@@ -25,7 +25,7 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 |    history    |                                         Interacts with the browser's record of visited pages.                                         |                 Under consideration                  |
 |     i18n      |                                         Implements internationalization across an extension.                                          | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |     idle      |                                       Used to detect when the machine's idle state is changed.                                        | Supported — Microsoft Edge (38) / Windows 10 (14393) |
-| notifications |                      Allows creation of notifications using templates to be displayed in the user's system tray.                      | Supported - Microsoft Edge (##) / ###                |
+| notifications |                      Allows creation of notifications using templates to be displayed in the user's system tray.                      | Supported - Microsoft Edge (42) / Windows 10 (17134) |
 |  pageAction   |                                      Enables extensions to add a button inside the address bar.                                       | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |  permissions  |                   Allows users to select what optional permissions they would like to grant an extension access to.                   |                 Under consideration                  |
 |    runtime    | Retrieves the background page, returns details about the manifest, and listens for and responds to events in the extension lifecycle. | Supported — Microsoft Edge (38) / Windows 10 (14393) |
