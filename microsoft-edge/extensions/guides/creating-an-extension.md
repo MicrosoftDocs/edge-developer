@@ -254,7 +254,7 @@ We need to add the background script to "manifest.json". Add the following to yo
 **Key definitions:**
 * [`background`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/background): specifies any background scripts
    * `scripts`: a path to a JavaScript file
-   * `persistent` (required): Microsoft Edge does not support event pages, so `persistent` will always be `true`. 
+   * `persistent` (required): This can be either set to `true` or `false`. If set as `true`, the background script will be loaded and continue to persist for the entire browsing section. If set as `false`, the background script will be **loaded with a delay** and will then persist for the browsing session. 
 
 Reload your extension and test again. To reload your extension: click the "..." for settings and more in Microsoft Edge, click "Extensions", click on your extension, "Color Changer", and click "Reload extension".
 
