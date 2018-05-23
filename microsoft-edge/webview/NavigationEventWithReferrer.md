@@ -28,3 +28,16 @@ Type: **DOMString**
 ```js
 var referer = NavigationEventWithReferrer.referer;
 ```
+
+### uri
+
+The Uniform Resource Identifier (URI) of the destination of the navigation.
+
+This property is read-only.
+
+```js
+var uri = NavigationEventWithReferrer.uri;
+```
+
+#### Property value
+Type: **DOMString**
