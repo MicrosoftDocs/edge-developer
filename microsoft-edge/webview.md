@@ -385,7 +385,42 @@ webview.removeEventListener("MSWebViewProcessExited", handler);
 Raised when a page inside the **webview** element requests a resource.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+// A handler that completes synchronously with a custom HTTP response built from a string.
+function handlerWithSyncString(webResourceRequestedEventArgs) {
+    // Only provide custom HTTP responses for particular HTTP requests
+    if (webResourceRequestedEventArgs.args.request.requestUri.absoluteUri === "https://www.bing.com/") {
+        const Http = Windows.Web.Http;
+        // Create the custom response using a string
+        webResourceRequestedEventArgs.args.response = new Http.HttpResponseMessage(Http.HttpStatusCode.ok);
+        webResourceRequestedEventArgs.args.response.content = new Http.HttpStringContent("<H1>Example</H1>");
+    }
+});
+
+// A more complicated handler that completes asynchronously with a custom HTTP response built from a stream.
+function handlerWithAsyncStream(webResourceRequestedEventArgs) {
+    // Only provide custom HTTP responses for particular HTTP requests
+    if (webResourceRequestedEventArgs.args.request.requestUri.absoluteUri === "https://www.bing.com/") {
+        // Take a deferral on the WebResourceRequested event so that we can create the custom HTTP response asynchronously.
+        const deferral = webResourceRequestedEventArgs.args.getDeferral();
+
+        // Use fetch to get a Blob of the content of the URI
+        fetch("ms-appx:///replacement.html").then(fetchResponse => {
+            return fetchResponse.blob();
+        }).then(fetchResponseBlob => {
+            const Http = Windows.Web.Http;
+            webResourceRequestedEventArgs.args.response = new Http.HttpResponseMessage(
+                Http.HttpStatusCode.ok);
+
+            // Use Blob.msDetachStream to convert the Blob to a Windows.Storage.Streams.IInputStream
+            webResourceRequestedEventArgs.args.response.content = new Http.HttpStreamContent(
+                fetchResponseBlob.msDetachStream());
+
+        }).finally(() => {
+            // Use a finally call to complete the deferral so even if there is an error we will unblock the event.
+            deferral.complete();
+        });
+    }
+});
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewWebResourceRequested", handler);
