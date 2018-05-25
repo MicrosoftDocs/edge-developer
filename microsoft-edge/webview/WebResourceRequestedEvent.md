@@ -17,13 +17,13 @@ An event that is fired when an HTTP request is made.
 
 ### args
 
-Information about the resource request. 
+Information about the resource request. This is a [Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).
 
 This property is read-only.
 
 ```js
-var args = webview.args;
-webview.args = args;
+var args = webResourceRequestedEventArgs.args;
+var request = args.request;
 ```
 
 #### Property value
