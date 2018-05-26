@@ -11,7 +11,7 @@ keywords: webview, windows 10 apps, uwp, edge
 
 # UnviewableContentIdentifiedEvent object
 
-Indicates the [webview](../webview.md) is attempting to download an unsupported file. 
+Indicates the [webview](../webview.md) is attempting to navigate to a file of an unsupported content type. 
 
 ## Properties
 
@@ -23,6 +23,33 @@ This property is read-only
 
 ```js
 var mediaType = UnviewableContentIdentifiedEvent.mediaType;
+```
+
+#### Property value
+Type: **DOMString**
+
+### referer
+
+The Uniform Resource Identifier (URI) of the page in the [webview](../webview.md) requesting navigation.
+
+This property is read-only.
+
+
+```js
+var referer = NavigationEventWithReferrer.referer;
+```
+
+#### Property value
+Type: **DOMString**
+
+### uri
+
+The Uniform Resource Identifier (URI) of the destination of the navigation.
+
+This property is read-only.
+
+```js
+var uri = NavigationEventWithReferrer.uri;
 ```
 
 #### Property value
