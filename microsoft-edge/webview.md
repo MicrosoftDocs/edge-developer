@@ -511,11 +511,15 @@ webview.removeEventListener("MSWebViewUnsupportedUriSchemeIdentified", handler);
 
 ### MSWebViewUnviewableContentIdentified
 
-Raised when the **webview** cannot find the content.
+Raised when the **webview** attempts to navigate to web content with an unsupported content type. For example, PDFs are currently not supported by webview and navigations to PDF documents will not navigate and instead raise this event.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
- 
+function handler(args) {
+    if (args.mediaType === "application/pdf") {
+        Windows.System.Launcher.launchUriAsync(new Windows.Foundation.Uri(args.uri));
+    }
+}
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewUnviewableContentIdentified", handler);
 webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
