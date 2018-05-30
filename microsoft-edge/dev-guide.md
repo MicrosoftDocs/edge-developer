@@ -39,7 +39,9 @@ EdgeHTML 17 now supports CSS transforms on SVG elements and presentation attribu
 
 Microsoft Edge now supports the [Notification API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications) which displays notifications from extensions. Extension developers can now create different types of notifications (basic, list, image etc.) which support full user interaction. The notifications are also automatically logged into the Action Center. Visit the [notifications sample](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) on how to use this API in your extension.
 
-EdgeHTML 17 now also supports the `Tabs.reload()` method as part of the standard tabs API class.
+EdgeHTML 17 now also supports the `Tabs.reload()` method as part of the standard tabs API class. Also new in the Windows 10 April 2018 Update, users can now choose to allow extensions to run during inPrivate browsing.
+
+For more details on extensions updates in this release, head over to the blog post [New features for extensions in the Windows 10 April 2018 Update](https://blogs.windows.com/msedgedev/2018/05/24/new-extension-features-april-2018-update-notifications-inprivate/).
 
 ### DevTools
 This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](./devtools-guide/whats-new.md#microsoft-edge-devtools-app-preview) from the Microsoft Store!
