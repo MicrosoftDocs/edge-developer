@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML 13.
 title: What's New in EdgeHTML 13
 author: libbymc
 ms.author: libbymc
-ms.date: 5/30/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer

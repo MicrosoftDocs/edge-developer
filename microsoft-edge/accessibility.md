@@ -4,7 +4,7 @@ description: Learn how to build, design, and test accessible websites within Mic
 title: Accessibility
 author: libbymc
 ms.author: libbymc
-ms.date: 4/10/2018
+ms.date: 04/10/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation

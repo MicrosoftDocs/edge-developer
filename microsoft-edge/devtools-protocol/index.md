@@ -3,7 +3,7 @@ description: Use the Microsoft Edge DevTools Protocol to inspect and debug the M
 title: Microsoft Edge DevTools Protocol
 author: erikadoyle
 ms.author: edoyle
-ms.date: 3/21/2018
+ms.date: 03/21/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
