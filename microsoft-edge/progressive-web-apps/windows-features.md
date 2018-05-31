@@ -107,7 +107,7 @@ Here's how to set up debugging for your PWA.
     window.Windows
     ```
 
-    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-(winrt)-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
+    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
     exposed to web apps that run as Windows 10 apps (running outside the browser, in a *WWAHost.exe* process).
 
 ## Find Windows Runtime (WinRT) APIs
@@ -177,7 +177,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activa
 
 At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
 
-In order to call any WinRT APIs from our PWA, we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-(acurs)) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
+In order to call any WinRT APIs from our PWA, we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-acurs) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
 
 If any of these API calls involve access to user resources like pictures or music, or to device features like the camera or microphone, we'll also need to add [app capability declarations](#app-capability-declarations) to the app package manifest in order for Windows to prompt the user for permission. If you later publish your PWA to the Microsoft Store, these required [App permissions](https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions) are also noted in your store listing.
 
@@ -251,7 +251,7 @@ if(window.Windows){
 }
 ```
 
-However, given that not all Windows APIs are available on all [Windows 10 device types](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide#device-families), its generally useful to use more specific feature detection to further qualify the namespace of the API you'll be calling:
+However, given that not all Windows APIs are available on all [Windows 10 device types](https://docs.microsoft.com/uwp/extension-sdks/device-families-overview), its generally useful to use more specific feature detection to further qualify the namespace of the API you'll be calling:
 
 ```JavaScript
 if(window.Windows && Windows.Media.SpeechRecognition){

@@ -18,15 +18,12 @@ If you want to localize your extension resources for Microsoft Edge, you can lea
 
 
 > [!NOTE]
-> If your extension doesn't support multiple languages, you can skip to [Localizing name and description in the Microsoft Store](#localizing-name-and-description-in-the-windows-store).
-
-
-
+> If your extension doesn't support multiple languages, you can skip to [Localizing name and description in the Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
 
 
 ## The localization process overview
 
-The first step towards getting your extension available to a wide audience is to [configure its AppxManifest](#configuring-the-appxmanifest) for multiple languages. In the Microsoft Store, this will show users what languages your extension supports. Certain fields in the AppxManifest will also need to be changed if you want the name of your extension to be [localized in the Windows UI and the Microsoft Store](#localizing-extension-resources-for-windows-and-the-windows-store).
+The first step towards getting your extension available to a wide audience is to [configure its AppxManifest](#configuring-the-appxmanifest) for multiple languages. In the Microsoft Store, this will show users what languages your extension supports. Certain fields in the AppxManifest will also need to be changed if you want the name of your extension to be [localized in the Windows UI and the Microsoft Store](#localizing-extension-resources-for-windows-and-the-microsoft-store).
 
 
 Once your AppxManifest is configured, you'll need to [create JSON string resources](#creating-json-string-resources) for the languages that you indicated as supported. This requires creating a .resjson file for each language, where each file has all the UI strings of that language within it.
@@ -35,7 +32,7 @@ Once your AppxManifest is configured, you'll need to [create JSON string resourc
 After the .resjson files for the supported languages have been made, a [.pri resource file will need to be created](#creating-the-resources-file). This will be created by using a configuration file to the **MakePRI** tool that comes with the Windows 10 SDK.
 
 
-Once you've uploaded your extension, the final step is to [localize the name and description in the Microsoft Store](#localizing-name-and-description-in-the-windows-store).
+Once you've uploaded your extension, the final step is to [localize the name and description in the Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
 
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.

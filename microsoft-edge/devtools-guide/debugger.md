@@ -18,7 +18,7 @@ Use the **Debugger** to step through code, set watches and breakpoints, live edi
 - [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
 - [Setting breakpoints and live editing](#debug-window) your code as it runs
 - [Tracking and editing local variables](#watches) as you debug
-- [Hiding or showing asynchronous code and library code](#callstack) from your callstack as needed
+- [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
 - [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
 
 ![The Microsoft Edge DevTools Debugger](./media/debugger.png)
@@ -134,7 +134,7 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
 **Change exception behavior** (`Ctrl+Shift+E`) opens options to change how the debugger reacts to exceptions. By default exceptions are ignored by the debugger and logged to the [**Console**](./console.md). You can choose to *Break on all exceptions*, or just those not being handled by `try...catch` statements in your code (*Break on unhandled exceptions*).
 
 ### 5. View search results
-(Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files) search results.
+(Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files-ctrlf) search results.
 
 ### 6. Find in files (`Ctrl+F`)
  **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
