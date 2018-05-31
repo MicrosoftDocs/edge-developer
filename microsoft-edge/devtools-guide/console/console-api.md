@@ -15,7 +15,7 @@ The *Console API* provides command-line and programmatic access to the  DevTools
 
  - [Log custom messages](#logging-custom-messages) from you code
  - [Inspect objects and elements](#inspecting-objects-and-elements) and log their information
- - [Test and measure your code](#test-and-profile) by setting assertions, timers and counters
+ - [Test and measure your code](#testing-and-measuring) by setting assertions, timers and counters
  - [Take snapshots of the heap](#taking-heap-snapshots) to assess the memory consumption of your running code and identify memory leaks
  - [Trace your callstacks](#tracing-callstacks) to understand where your code is being called from 
  - [Organize your log output](#organizing-log-output) to streamline your debugging

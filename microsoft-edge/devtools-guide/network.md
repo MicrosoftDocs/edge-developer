@@ -32,7 +32,7 @@ The toolbar provides controls for profiling and filtering the network activity o
 
 ![Network profiler toolbar](./media/network_toolbar.png)
 
-1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-profiler) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
+1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-request-list) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
 
 2. **Export as HAR**: You can save the current network profiling session (`Ctrl+S`) as a JSON-formatted [HTTP Archive (HAR)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) file. 
 
@@ -119,7 +119,7 @@ The **Timings** tab provides a timeline of network events involved in the loadin
 
 ![Timings tab of the request details pane](./media/network_details_timings.png)
 
-Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request-summary) pane.
+Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request details) pane.
 
 Resouces loaded from the cache are not affected by network latency, so no network *Timings* chart will display.
 

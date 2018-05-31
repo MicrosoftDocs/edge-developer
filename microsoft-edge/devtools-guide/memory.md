@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, memory, heap, GC
 Use the **Memory** panel to measure your use of system resources and compare heap snapshots at different states of code execution. With it, you can:
 
 - [Graph the memory consumption of your page in real time](#memory-usage-timeline) and take snapshots of the heap
-- [Identify potential memory issues](#shapshot-summary) in your code, such as retained objects not attached to the DOM
+- [Identify potential memory issues](#snapshot-summary) in your code, such as retained objects not attached to the DOM
 - [Review memory usage data](#snapshot-details) by object type, instance count, size, and references to help isolate issues
 - [Apply snapshot data filters](#filters) to reduce the noise of non-actionable information
 - [Identify the memory cost of a specific object](#object-references) and the references keeping it alive
