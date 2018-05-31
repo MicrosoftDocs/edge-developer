@@ -258,10 +258,24 @@ webview.removeEventListener("MSWebViewLongRunningScriptDetected", handler);
 
 ### MSWebViewNavigationCompleted
 
-Indicates the navigation is complete, and all media elements are rendered.
+Indicates the navigation is complete, and all media elements are rendered or there was a navigation error. Check the event args isSuccess property to tell if the navigation was successful and the webErrorStatus property for details on the navigation error. Navigation errors can occur before obtaining any content from the network for instance if the hostname of a URI does not resolve in which case the MSWebViewNavigationStarted event will fire followed by the MSWebViewNavigationCompleted event. Navigation errors may also occur after receiving an error page from a web server, for instance a 404 page from an HTTP server in which case all navigation events will fire, MSWebViewNavigationStarting, MSWebViewContentLoading, MSWebViewDOMContentLoaded, and then MSWebViewNavigationCompleted. To provide an app navigation error page for cases where the web server hasn't provided an error page, you'll need to check if MSWebViewContentLoading hasn't fired for a failed navigation which indicates there is no server provided error page.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+let hasContent = false;
+webview.addEventListener("MSWebViewNavigationStarting", () => { hasContent = false; });
+webview.addEventListener("MSWebViewContentLoading", () => { hasContent = true; });
+
+webview.addEventListener("MSWebViewNavigationCompleted", navigationCompletedEventArgs => {
+    // Navigation failures may or may not come after getting an error page from the web server.
+    // We keep track of the ContentLoading event with hasContent to tell if we have an error page from the server.
+    // So we only navigate to our app error page when there's no server provided error page.
+    if (!navigationCompletedEventArgs.isSuccess && !hasContent) {
+        // Pass our failed URI and error details in the query and the error page script can read it as appropriate.
+        webview.navigate("ms-appx-web:///appErrorPage.html?" + 
+            "uri=" + encodeURIComponent(navigationCompletedEventArgs.uri) + "&" +
+            "webErrorStatus=" + encodeURIComponent(navigationCompletedEventArgs.webErrorStatus));
+    }
+});
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewNavigationCompleted", handler);
