@@ -3,7 +3,7 @@ description: Contains referrer information about the navigation
 title: NavigationEventWithReferrer object
 author: libbymc
 ms.author: libbymc
-ms.date: 2/12/2018
+ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge

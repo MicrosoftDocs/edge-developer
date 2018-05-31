@@ -3,7 +3,7 @@ description: The dispatched object from a focus event containing the navigation 
 title: FocusNavigationEvent object
 author: libbymc
 ms.author: libbymc
-ms.date: 2/12/2018
+ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
