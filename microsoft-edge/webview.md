@@ -352,11 +352,44 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 
 ### MSWebViewPermissionRequested
 
-Indicates that content in the **webview**  is trying to access functionality (such as geolocation, or pointer lock access) that normally requires end-user permissions.
+Indicates that content in the **webview**  is trying to access functionality (such as geolocation, or pointer lock access) that normally requires end-user permissions. If no event handler is registered or if the event handler doesn't call eventArgs.permissionRequest.allow(), defer(), or deny(), then by default the permission request will be denied. If you need to decide if permission is allowed or denied asynchronously for instance if you need to prompt the user, use eventArgs.permissionRequest.defer(). The permission request will be deferred until you use webview.getDeferredPermissionRequestById or webview.getDeferredPermissionRequests and call allow() or deny() on the DeferredPermissionRequest with the corresponding id value.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
- 
+webview.addEventListener("MSWebViewPermissionRequested", e => {
+    switch (e.permissionRequest.state) {
+        case "geolocation":
+        case "media":
+        case "pointerlock":
+        case "webnotifications":
+        case "screen":
+        case "immersiveview":
+            if (e.permissionRequest.uri.startsWith("https://www.example.com/")) {
+                // Implicitly trust particular URI
+                e.permissionRequest.allow();
+            }
+            else if (e.permissionRequest.uri.startsWith("https://")) {
+                // Defer the request so we can ask the user to allow or deny the request
+                e.permissionRequest.defer();
+                // Later we'll need to use webview.getDeferredPermissionRequestById for this
+                // request and call allow or deny.
+                promptUserForDeferredPermissionRequest(
+                    e.permissionRequest.id,
+                    e.permissionRequest.uri,
+                    e.permissionRequest.state);
+            }
+            else {
+                // Implicitly deny non-https URIs
+                e.permissionRequest.deny();
+            }
+            break;
+
+        case "unlimitedIndexedDBQuota":
+        default:
+            e.permissionRequest.deny();
+            break;
+    }
+});
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewPermissionRequested", handler);
 webview.removeEventListener("MSWebViewPermissionRequested", handler);
