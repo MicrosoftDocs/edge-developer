@@ -23,8 +23,6 @@ PWAs in the Microsoft Store enjoy a number of advantages:
 
 - **Business insights** - The [Windows Dev Center dashboard](https://docs.microsoft.com/en-us/windows/uwp/publish/using-the-windows-dev-center-dashboard) for the Microsoft Store provides you with [detailed analytics](https://docs.microsoft.com/en-us/windows/uwp/publish/analytics) about everything from how many Windows customers your PWA has reached to how they're using it and what they have to say. You can also find metrics and telemetry data on app health, ad usage, and more.
 
-- **Monetization, promotional, and engagement opportunities** - The [Store Services](https://docs.microsoft.com/en-us/windows/uwp/monetize/) and [Microsoft Advertising](https://developer.microsoft.com/en-us/store/monetize/ads-in-apps) SDKs provide a host of options to [monetize](https://developer.microsoft.com/en-us/store/monetize) and [promote](https://developer.microsoft.com/en-us/store/promote-your-apps) your app and [engage](https://developer.microsoft.com/en-us/store/engage) with your customers on Windows. In-app purchases, Microsoft Store add campaigns, A/B feature testing experiments, and detailed customer feedback and bug reporting are just some of the many tools you have at your disposal.
-
 There are two options for getting your PWA into the Microsoft Store:
 
 1. You can [manually submit it](#submitting-your-PWA-manually), or
