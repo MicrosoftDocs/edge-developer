@@ -15,7 +15,7 @@ When you publish your Progressive Web App (PWA) to the [Microsoft Store](https:/
 
 PWAs in the Microsoft Store enjoy a number of advantages:
 
-- **Discoverability** - Apps in the Microsoft Store are showcased through different categories, curated collections, and search filters, providing an easy browsing and shopping experience for potential customers of your app. You can even [enhance your Store listing]((https://docs.microsoft.com/en-us/windows/uwp/publish/app-screenshots-and-images)) with screenshots, a hero image, and video trailers!
+- **Discoverability** - Apps in the Microsoft Store are showcased through different categories, curated collections, and search filters, providing an easy browsing and shopping experience for potential customers of your app. You can even [enhance your Store listing](https://docs.microsoft.com/en-us/windows/uwp/publish/app-screenshots-and-images) with screenshots, a hero image, and video trailers!
 
 - **Trustworthiness** - Windows customers know they can trust their Microsoft Store purchases and downloads because they adhere to Microsoft's rigorous [quality and safety standards](https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies).
 
