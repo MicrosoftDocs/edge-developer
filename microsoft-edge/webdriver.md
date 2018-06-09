@@ -64,7 +64,7 @@ InPrivate|"ms:inPrivate"|N/A|Insiders|
 Extension Paths|"ms:extensionPaths"|N/A|Insiders|
 Start Page|"ms:startPage"|N/A|Insiders|
 
-Locator Strategies|Status|Available Release
+Locator Strategy|Status|Available Release
 :---------------| :----------- | :--------------
 [CSS Selectors](https://www.w3.org/TR/webdriver/#css-selectors)|Supported|Insiders|
 [Link Text](https://www.w3.org/TR/webdriver/#link-text)|Supported|Insiders|
