@@ -49,6 +49,7 @@ jwp|Use JSON Wire protocol|Insiders|
 
 ## [W3C WebDriver specification support](https://w3c.github.io/webdriver/webdriver-spec.html)
 The support on a per command basis for the W3C WebDriver Specification.
+
 Capability|Key|Status|Available Release
 :---------------| :----------- | :----------- | :--------------
 Browser Name|"browserName"|Supported|Insiders|
