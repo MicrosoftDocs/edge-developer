@@ -4,7 +4,7 @@ description: Use the WebDriver wire protocol to control web browser behavior for
 title: Webdriver
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/17/2017
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, webdriver, selenium, testing
