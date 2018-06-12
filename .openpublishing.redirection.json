@@ -201,6 +201,51 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-edge/webdriver/dialogs.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/element-inspection.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/input.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/navigation.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/screenshots.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/script-execution.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/server.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/sessions.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webdriver/window.md",
+      "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/css/animations.md",
       "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations",
       "redirect_document_id": false
