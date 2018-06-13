@@ -3,7 +3,6 @@
     {
       "docset_name": "edge-developer",
       "build_source_folder": "microsoft-edge",
-      "build_output_subfolder": "edge-developer",
       "locale": "en-us",
       "open_to_public_contributors": true,
       "type_mapping": {
