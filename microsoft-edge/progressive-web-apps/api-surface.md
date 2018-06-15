@@ -19,6 +19,8 @@ This overview describes the overall API surface available to PWAs on Windows and
 
 ## Windows Runtime APIs
 
+## UWP Toolkit for Notifications in JS
+
 ## webview
 
 ## Additional *MS-* prefix API extensions
