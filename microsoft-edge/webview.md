@@ -11,7 +11,9 @@ keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edg
 
 # Microsoft Edge WebView for Windows 10 apps
 
-The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ Windows 10 apps, [Windows Forms and WPF desktop applications](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/controls/webview)), or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
+The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. 
+
+You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ Windows 10 apps and [Windows Forms and WPF desktop applications](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/controls/webview)), or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
 
 | | |
 |-|-|
@@ -22,9 +24,43 @@ The Microsoft Edge WebView control enables you to host web content in your Windo
 ## Syntax
 
 ```js
-var webview = document.createElement("x-ms-webview"); 
+// Feature detect for webview support
+if (MSHTMLWebViewElement) {
+    let wv = document.createElement('x-ms-webview'); // Use CSS to set width, height and other styles
+    wv.navigate("https://www.example.com");
+    document.body.appendChild(wv);
+}
 ```
+
 ## Remarks
+
+### WebView versus `<iframe>`
+
+Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
+
+ - Load pages and resources from your [ApplicationData](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](https://docs.microsoft.com/en-us/microsoft-edge/webview#buildlocalstreamuri) (*ms-local-stream:///*)
+
+ - Provide browser-like controls: for going [back](https://docs.microsoft.com/en-us/microsoft-edge/webview#goback) and [forward](https://docs.microsoft.com/en-us/microsoft-edge/webview#goforward) in navigation history, and [stopping](https://docs.microsoft.com/en-us/microsoft-edge/webview#stop) or [refreshing](https://docs.microsoft.com/en-us/microsoft-edge/webview#refresh) the current page. 
+
+ - [Capture screenshots of web content](https://docs.microsoft.com/en-us/microsoft-edge/webview#capturepreviewtoblobasync) making it easy to implement the Windows 10 app [Share](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/share-data) contract.
+
+ - Allow JavaScript code running within a webview to raise custom events ([MSWebViewScriptNotify](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewscriptnotify)) to your app, and allow your app to run JavaScript within the webview ([invokeScriptAsync](https://docs.microsoft.com/en-us/microsoft-edge/webview#invokescriptasync)).
+
+ - Provide you with fine-tuned webview content events:
+    
+    WebView DOM event | Description
+    --------- | ------
+    [MSWebViewNavigationStarting](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewnavigationstarting) | Indicates the WebView is starting to navigate
+    [MSWebViewContentLoading](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewcontentloading) | The HTML content is downloaded and is being loaded into the control
+    [MSWebViewDOMContentLoaded](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewdomcontentloaded) | Indicates that the main DOM elements have finished loading
+    [MSWebViewNavigationCompleted](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewnavigationcompleted) | Indicates the navigation is complete, and all media elements are rendered
+    [MSWebViewUnviewableContentIdentified](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewunviewablecontentidentified) | The WebView found the content was not HTML
+    [UnsafeContentWarningDisplaying](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewunsafecontentwarningdisplaying) | The WebView shows a warning page for content that was reported as unsafe by Windows *SmartScreen Filter*.
+
+    ...including corresponding [events](https://docs.microsoft.com/en-us/microsoft-edge/webview#events) for iframe content loaded within a WebView (such as [MSWebView**Frame**NavigationStarting](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewframenavigationstarting) and so on.)
+
+### Printing
+
 When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`. 
 
 Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-webview>` markup creates a WebView on a new unique thread in the app's process. Running on a new unique thread means that long running script from one WebView is unable to hang the app or other WebViews. Creating a WebView via the `new MSWebView()` constructor creates a WebView in a separate WebView process. Running in a unique process means that in addition to protection from long running script, the app is also protected from web content that crashes the WebView process. Creating a WebView via the [`MSWebViewProcess.createWebViewAsync`](./webview/MSWebViewProcess.md#createwebviewasync) method also creates a WebView in a seperate process but allows the caller more control over process settings and grouping WebViews in WebView processes. See `MSWebViewProcess` for more information. 
