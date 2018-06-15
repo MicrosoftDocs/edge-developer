@@ -11,7 +11,7 @@ keywords: webview, windows 10 apps, uwp, edge
 
 # PermissionRequest object
 
-Provides information about a permission request. This object is available from the permissionRequest property of the event args from the [MSWebViewPermissioniRequested](../webview.md#MSWebViewPermissionRequested) webview event.
+Provides information about a permission request. This object is available from the permissionRequest property of the event args from the [MSWebViewPermissionRequested](../webview.md#mswebviewpermissionrequested) webview event.
 
 ```js
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
