@@ -95,6 +95,7 @@
 ### [NavigationEvent](webview/NavigationEvent.md)
 ### [NavigationEventWithReferrer](webview/NavigationEventWithReferrer.md)
 ### [PermissionRequest](webview/PermissionRequest.md)
+### [PermissionRequestedEvent](webview/PermissionRequestedEvent.md)
 ### [ScriptNotifyEvent](webview/ScriptNotifyEvent.md)
 ### [UnviewableContentIdentifiedEvent](webview/UnviewableContentIdentifiedEvent.md)
 ### [WebResourceRequestedEvent](webview/WebResourceRequestedEvent.md)
