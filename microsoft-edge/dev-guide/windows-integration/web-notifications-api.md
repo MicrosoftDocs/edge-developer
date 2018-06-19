@@ -76,4 +76,4 @@ Microsoft Edge allows users to manage notifications permissions for each specifi
 
 ## Specification
 
-[Web Notifications](https://www.w3.org/TR/notifications/)
+[Web Notifications](https://notifications.spec.whatwg.org)
