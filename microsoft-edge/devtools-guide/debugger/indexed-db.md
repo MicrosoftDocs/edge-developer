@@ -24,21 +24,23 @@ The **Indexed DB** folder inside the Debugger's [*Resource picker*](../debugger.
 
 ![DevTools Indexed DB manager](../media/debugger_indexeddb.png)
 
-From the *Indexed DB* tab toolbar you can:
+## Indexed DB Toolbar
 
- - **Refresh** (`Ctrl+F5`) the [](#cookies-list) to see the current set of cookies for the given domain. (The list does not auto-refresh.)
+From the *Indexed DB* toolbar you can:
+
+ - **Refresh** (`Ctrl+F5`) to see the current entries in the object store or index of your database. The IndexedDB manager does not auto-refresh when changes are made to your database.
 
 ## Object store entries list
 
-From the *Object store* table you can:
+From the *Object store* or *Index* table you can:
 
  - **Inspect and sort** your key-value pairs by clicking on any column name in the table.
  - **Refresh** (`Ctrl+F5`)
- - **Delete item** (`Del`) a cookie from the right-click [context menu](#context-menu) option, *Delete cookie*.
- - **Copy selected items** (`Ctrl+C`) a cookie from the right-click [context menu](#context-menu) option, *Delete cookie*.
- - **Select all** (`Ctrl+A`) a cookie from the right-click [context menu](#context-menu) option, *Delete cookie*.
+ - **Delete item** (`Del`) to remove the selected entry in your object store or index. You can also do this from the right-click [context menu](#context-menu) option, *Delete item*.
+ - **Copy selected items** (`Ctrl+C`) to copy the selected item to your clipboard. You can also do this from the right-click [context menu](#context-menu) option, *Copy selected item*.
+ - **Select all** (`Ctrl+A`) to select all the entries in your object store or index. You can also do this from the right-click [context menu](#context-menu) option, *Select all*.
 
-The columns of the *Index* table are sortable:
+The columns of the *Object store* or *Index* table are sortable:
 
 Column | Description
 :------------ | :-------------
@@ -50,7 +52,7 @@ Check out *MDN web docs* for more on [IndexedDB concepts and usage](https://deve
 
 ## Context menu
 
-In addition to the *Cookies* tab [toolbar](#cookies-manager), you can also manage your cookies from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
+In addition to the [*Indexed DB* toolbar](#indexed-db-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
 
 ## Shortcuts
 
