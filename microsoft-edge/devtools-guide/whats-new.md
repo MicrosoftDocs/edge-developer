@@ -46,11 +46,11 @@ Developer tools can use the [**Microsoft Edge DevTools Protocol**](../devtools-p
 
 ## IndexedDB inspection
 
-New to the [**Debugger**](./debugger.md) this release is an [Indexed DB Manager](./debugger/indexed-db.md) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
+New to the [**Debugger**](./debugger.md) this release is an [IndexedDB Manager](./debugger/indexeddb.md) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
 
 ## PWA debugging
 
-Support for [debugging Progressive Web Apps (PWAs)](./debugger/progressive-web-apps.md) is now enabled by default, providing tool tabs for [**Service Workers**](./debugger/progressive-web-apps.md#service-workers-manager), [**Cache API**](./debugger/progressive-web-apps.md#cache-manager), and [**Indexed DB**](./debugger/indexed-db.md) management.
+Support for [debugging Progressive Web Apps (PWAs)](./debugger/progressive-web-apps.md) is now enabled by default, providing tool tabs for [**Service Workers**](./debugger/progressive-web-apps.md#service-workers-manager), [**Cache API**](./debugger/progressive-web-apps.md#cache-manager), and [**IndexedDB**](./debugger/indexeddb.md) management.
 
 Additionally, the [Network panel toolbar](./network.md#toolbar) has a new button, **Bypass Service Worker for all network requests**, to toggle on/off your registered service workers as network proxies:
 
