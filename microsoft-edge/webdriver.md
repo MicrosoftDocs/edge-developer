@@ -62,9 +62,9 @@ The support on a per command basis for the [W3C WebDriver Specification](https:/
 | Window Dimensioning/Positioning  | "setWindowRect"           | Supported          | Insiders          |
 | Session Timeouts Configuration   | "timeouts"                | Supported          | Insiders          |
 | Unhandled Prompt Behavior        | "unhandledPromptBehavior" | Not&nbsp;Supported | N/A               |
-| InPrivate                        | "ms:inPrivate"            | N/A                | Insiders          |
-| Extension Paths                  | "ms:extensionPaths"       | N/A                | Insiders          |
-| Start Page                       | "ms:startPage"            | N/A                | Insiders          |
+| InPrivate                        | "ms:inPrivate"            | Supported          | Insiders          |
+| Extension Paths                  | "ms:extensionPaths"       | Supported          | Insiders          |
+| Start Page                       | "ms:startPage"            | Supported          | Insiders          |
 
 ### Locator Strategies
 | Locator Strategy                                                        | Status    | Available Release |
