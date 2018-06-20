@@ -63,7 +63,7 @@
 ### [Debugger](devtools-guide/debugger.md)
 #### [Progressive Web App debugging](devtools-guide/debugger/progressive-web-apps.md)
 #### [Cookies manager](devtools-guide/debugger/cookies.md)
-#### [Indexed DB manager](devtools-guide/debugger/indexed-db.md)
+#### [IndexedDB manager](devtools-guide/debugger/indexeddb.md)
 #### [Web storage manager](devtools-guide/debugger/web-storage.md)
 ### [Network](devtools-guide/network.md)
 ### [Performance](devtools-guide/performance.md)

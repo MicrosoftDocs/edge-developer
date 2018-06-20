@@ -19,7 +19,7 @@ You can debug your [PWA as an installed Windows 10 app](../../progressive-web-ap
 
 ![ DevTools Service Workers and Cache managers](../media/debugger_sw_and_cache.png)
 
-The DevTools also provide an [Indexed DB manager](./indexed-db.md) for working with the structured data used by your PWA.
+The DevTools also provide an [IndexedDB manager](./indexeddb.md) for working with the structured data used by your PWA.
 
 ## Service Workers manager
 
@@ -55,7 +55,7 @@ Here are some general things to keep in mind when using service workers:
 
 - **Can be terminated any time.** Service workers are meant to be short-lived and their lifetime is tied to events. In particular, service workers have a time limit in which they must finish executing their event handlers. In other cases, the browser or the operating system may choose to terminate a service worker that impacts the battery, CPU, or memory consumption. In either case, avoid relying on global variables in the service worker script in case a different service worker instance is used on a subsequent event that’s being handled.
 
-- **Only asynchronous requests allowed.** Synchronous XHR is not allowed here! Neither is localStorage, so it’s best to make use of Indexed DB and the new Caches API described earlier.
+- **Only asynchronous requests allowed.** Synchronous XHR is not allowed here! Neither is localStorage, so it’s best to make use of IndexedDB and the new Caches API described earlier.
 
 - **Service worker to scope is 1:1.** You’ll only be able to have one service worker per scope. That means if you try to register a different service worker for a scope that already has a service worker, that service worker will be updated.
 
