@@ -1,6 +1,6 @@
 ---
-description: Use the Indexed DB manager to inspect locally stored structured data
-title: Microsoft Edge DevTools - Debugger - Indexed DB manager
+description: Use the IndexedDB manager to inspect locally stored structured data
+title: Microsoft Edge DevTools - Debugger - IndexedDB manager
 author: erikadoyle
 ms.author: edoyle
 ms.date: 4/30/2018
@@ -9,24 +9,24 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, indexeddb, structured data, database
 ---
 
-# Indexed DB manager
+# IndexedDB manager
 
-Use the [Debugger](../debugger.md) **Indexed DB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
+Use the [Debugger](../debugger.md) **IndexedDB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
 
 > [!TIP]
-> You can use our [Audio Mixer](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *Indexed DB manager* in Microsoft Edge DevTools.
+> You can use our [Audio Mixer](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *IndexedDB manager* in Microsoft Edge DevTools.
 
 To delete all the IndexedDB data stored for the current user in Microsoft Edge, use the Microsoft Edge *Settings* menu:
 
 **...** > **Settings** > **Clear browsing data** > **Cookies and saved website data**
 
-The **Indexed DB** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
+The **IndexedDB** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
 
-![DevTools Indexed DB manager](../media/debugger_indexeddb.png)
+![DevTools IndexedDB manager](../media/debugger_indexeddb.png)
 
-## Indexed DB Toolbar
+## IndexedDB Toolbar
 
-From the *Indexed DB* toolbar you can:
+From the *IndexedDB* toolbar you can:
 
  - **Refresh** (`Ctrl+F5`) to see the current entries in the object store or index of your database. The IndexedDB manager does not auto-refresh when changes are made to your database.
 
@@ -52,7 +52,7 @@ Check out *MDN web docs* for more on [IndexedDB concepts and usage](https://deve
 
 ## Context menu
 
-In addition to the [*Indexed DB* toolbar](#indexed-db-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
+In addition to the [*IndexedDB* toolbar](#indexeddb-toolbar), you can also manage your data in object stores or indices from the right-click **Context menu** and/or the keyboard [shortcuts](#shortcuts).
 
 ## Shortcuts
 
