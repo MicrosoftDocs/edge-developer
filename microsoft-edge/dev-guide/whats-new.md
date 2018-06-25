@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML preview bu
 title: What's New in EdgeHTML for developers
 author: libbymc
 ms.author: libbymc
-ms.date: 3/6/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
@@ -18,43 +18,23 @@ Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are l
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-## Preview Build 17604
+## Preview Build 17672
 No API changes. 
 
-## Preview Build 17112
-No API changes.
+## Preview Build 17677
+No API changes. 
 
-## Preview Build 17107
-Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17107.
+## Preview Build 17682
+Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17682.
 
-<iframe height='231' scrolling='no' title='EdgeHTML Preview Build 17107' src='//codepen.io/MSEdgeDev/embed/jZgBXo/?height=231&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/jZgBXo/'>EdgeHTML Preview Build 17107</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
-
-## Preview Build 17101
-No API changes.
-
-## Preview Build 17093
-No API changes.
-
-## Preview Build 17083
-No API changes.
-
-## Preview Build 17074 
-Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17074.
-
-<iframe height='350' scrolling='no' title='EdgeHTML Preview Build 17074' src='//codepen.io/MSEdgeDev/embed/xpNvYv/?height=350&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/xpNvYv/'>EdgeHTML Preview Build 17074</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='341' scrolling='no' title='EdgeHTML Preview Build 17682' src='//codepen.io/MSEdgeDev/embed/mKjNGj/?height=341&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/mKjNGj/'>EdgeHTML Preview Build 17682</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+## Preview Build 17686
+No API changes. 
 
-## Preview Build 17063 
-Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17063.
+## Preview Build 17692
+Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17692. 
 
-<iframe height='572' scrolling='no' title='EdgeHTML Preview Build 17063' src='//codepen.io/MSEdgeDev/embed/Zadarz/?height=572&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/Zadarz/'>EdgeHTML Preview Build 17063</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
-
-## Preview Build 17046 
-No API changes.
-
-## Preview Build 17040 
-No API changes.
-
-## Preview Build 17035 
-No API changes.
+<iframe height='565' scrolling='no' title='EdgeHTML Preview Build 17692' src='//codepen.io/MSEdgeDev/embed/WyKVaV/?height=565&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/WyKVaV/'>EdgeHTML Preview Build 17692</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
