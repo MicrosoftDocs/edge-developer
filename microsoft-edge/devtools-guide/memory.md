@@ -39,7 +39,7 @@ The first step to analyzing the memory usage of your page is to [start a profili
 
 When you start the memory profiler, you will see a process memory graph that allows you to observe the overall private working set (the amount of memory consumed by the page) over time. The memory graph shows you a live view of the tab's process memory, which includes private bytes, native memory, and the JavaScript heap. 
 
-![Memory usage timeline](./media/memory_timeline.png)
+![Memory usage timeline](./media/timeline.png)
 
  The graph gives you an indication of the memory trend for the page which enables you to judge when it is appropriate to [take a heap snapshot](#toolbar) for later comparison, such as when you see periods of unexpected memory retention.
 
@@ -55,7 +55,7 @@ Sometimes you need to take snapshots at very specific points in time, such as im
 
 [Taking a snapshot](#toolbar) will generate a summary tile that indicates the size of the JavaScript heap at the time the snapshot was taken, along with the number of objects allocated and a screenshot of the page. You can continue to take snapshots at any time as you run through the user scenario requiring analysis. The snapshots generate additional tiles, each of which indicates the difference in JavaScript memory from the previous snapshot.
 
-![Heap snapshot](./media/memory_snapshot.png)
+![Heap snapshot](./media/snapshot.png)
 
 Clicking on the values in the summary tile will switch to the pane showing [details of the snapshot data](#snapshot-details). Potential [memory issues are indicated](#snapshot-details) with a blue informational ("i") icon.
 
@@ -63,7 +63,7 @@ Clicking on the values in the summary tile will switch to the pane showing [deta
 
 The data in the *Snapshot* pane shows the objects created by your page along with any memory allocated by JavaScript frameworks you may be consuming.
 
-![Snapshot details table](./media/memory_details.png)
+![Snapshot details table](./media/details.png)
 
 The three tabs represent different views of the data:
 
@@ -99,7 +99,7 @@ When you select an object in the upper *Dominators* pane, the [Object references
 
 You can further adjust data in the table with the following:
 
-![Filter for built-ins and object IDs](./media/memory_filter.png)
+![Filter for built-ins and object IDs](./media/filter.png)
 
 1. **Identifier filter**: Filter out data by searching for a particular object identifier
 2. **Group by dominator**: Only objects with *exclusive* references to other objects are shown in the top-level view of objects (this is the default view in the *Dominators* tab).
@@ -126,7 +126,7 @@ Retained size diff. | Difference between the retained size of the object in the 
 
 You can use the **Scope** dropdown to filter differential info between snapshots:
 
-![Scoping filter for snapshot comparisions](./media/memory_comparison_scope_filter.png)
+![Scoping filter for snapshot comparisions](./media/comparison_scope_filter.png)
 
 - <strong>Objects left over from Snapshot #<number></strong>: Shows the diff between the objects added to the heap and removed from the heap from the baseline snapshot to the previous snapshot. For example, if the snapshot summary shows <em>+205 / -195</em> in the object count, this filter will show you the ten objects that were added but not removed.
 
@@ -136,7 +136,7 @@ You can use the **Scope** dropdown to filter differential info between snapshots
 
 By default, the *Show non-matching references* filter is applied to the comparison view to indicate object references that don't match the current Scope filter. You can turn it off from the dropdown menu:
 
-![Non-matching references filter for snapshot comparisons](./media/memory_comparison_matching_filter.png)
+![Non-matching references filter for snapshot comparisons](./media/comparison_matching_filter.png)
 
 
 ## Shortcuts
@@ -154,22 +154,22 @@ Take heap snapshot | `Ctrl` + `Shift` + `T`
 
 If you see this error message: **An error occurred while starting the profiling session** in the Memory tool, follow these steps for a workaround.
 
-1. Press `Windows Key` + `R`
+1. Press `Windows Key` + `R`.
 
-2. In the Run dialog, enter **services.msc** 
-![known-issues-1](./media/memory_known_issues_1.PNG)
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
 
-3. In the Services dialog, locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it 
-![known-issues-2](./media/memory_known_issues_2.PNG)
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
 
-4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service** 
-![known-issues-3](./media/memory_known_issues_3.PNG)
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
 
-5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
 
 6. You should now be able to begin profiling. 
-![known-issues-4](./media/memory_known_issues_4.PNG)
+![known-issues-4](./media/known_issues_4-memory.PNG)
 
 Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
-![known-issues-5](./media/memory_known_issues_5.PNG)
+![known-issues-5](./media/known_issues_5.PNG)

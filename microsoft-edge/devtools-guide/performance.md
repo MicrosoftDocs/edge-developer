@@ -190,3 +190,53 @@ URL | URL(s) where stack frame occurred. Function calls originating from the bro
 | Import profiling session       | `Ctrl` + `O` |
 | Export profiling session       | `Ctrl` + `S` |
 
+## Known Issues
+
+### An error occurred while starting the profiling session
+
+If you see this error message: **An error occurred while starting the profiling session** in the Performance tool, follow these steps for a workaround.
+
+1. Press `Windows Key` + `R`.
+
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
+
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
+
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
+
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+
+6. You should now be able to begin profiling.
+![known-issues-4](./media/known_issues_4-performance.PNG)
+
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+
+![known-issues-5](./media/known_issues_5.PNG)
+
+### An error occurred while stopping the profiling session.
+
+If you see this error message: **An error occurred while stopping the profiling session** in the Performance tool, follow these steps for a workaround.
+
+1. Press `Windows Key` + `R`.
+
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
+
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
+
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
+
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+
+6. You should now be able to begin profiling.
+![known-issues-4](./media/known_issues_4-performance.PNG)
+
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+
+![known-issues-5](./media/known_issues_5.PNG)
+
