@@ -31,9 +31,6 @@ There are two options for getting your PWA into the Microsoft Store:
 
 Regardless of submission method, once your PWA is accepted to the Microsoft Store you'll gain access to all the benefits outlined above.
 
-> [!NOTE]
-> The Microsoft Store requires Progressive Web App (PWA) submissions to be listed as free in all markets. 
-
 ## Submitting your PWA manually
 
 In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file). For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrappper (*WWAHost.exe* process), independent from the Microsoft Edge browser window.
