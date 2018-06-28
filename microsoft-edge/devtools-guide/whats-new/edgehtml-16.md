@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 16
 
 With this release we started a major DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today! 
 
-Here are the latest Microsoft Edge DevTools features that shipped with the [Windows 10 Fall Creators Update](https://www.microsoft.com/en-us/windows/upcoming-features) ([EdgeHTML 16]( https://aka.ms/devguide_edgehtml_16)).
+Here are the latest Microsoft Edge DevTools features that shipped with the [Windows 10 Fall Creators Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-16299) ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)).
 
 ## Ancestor event listeners 
 

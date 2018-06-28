@@ -32,7 +32,7 @@ The toolbar provides controls for profiling and filtering the network activity o
 
 ![Network profiler toolbar](./media/network_toolbar.png)
 
-1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-profiler) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
+1. **Start / Stop profiling session**: By default, network profiling is turned on, and network traffic will be logged in the [**Network profiler**](#network-request-list) list. You can turn off network capture with the **Stop** (`Ctrl+E`) button.
 
 2. **Export as HAR**: You can save the current network profiling session (`Ctrl+S`) as a JSON-formatted [HTTP Archive (HAR)](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/HAR/Overview.html) file. 
 
@@ -119,7 +119,7 @@ The **Timings** tab provides a timeline of network events involved in the loadin
 
 ![Timings tab of the request details pane](./media/network_details_timings.png)
 
-Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request-summary) pane.
+Redirections to/from other resources are noted, and clicking on the link will set focus to that resource in the network [request details](#request details) pane.
 
 Resouces loaded from the cache are not affected by network latency, so no network *Timings* chart will display.
 
@@ -164,3 +164,52 @@ Time spent reading the response from the server.
 | Find                           | `Ctrl` + `F` |
 | Copy                           | `Ctrl` + `C` |
 
+## Known Issues
+
+### The network collection agent failed to start.
+
+If you see this error message: **The network collection agent failed to start** in the Network tool, follow these steps for a workaround.
+
+1. Press `Windows Key` + `R`.
+
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
+
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
+
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
+
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+
+6. You should now see a Play badge next to **Network** and the network requests for your webpage.
+![known-issues-4](./media/known_issues_4-network.PNG)
+
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+
+![known-issues-5](./media/known_issues_5.PNG)
+
+### The network collection agent failed to stop.
+
+If you see this error message: **The network collection agent failed to stop** in the Network tool, follow these steps for a workaround.
+
+1. Press `Windows Key` + `R`.
+
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
+
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
+
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
+
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
+
+6. You should now see a Play badge next to **Network** and the network requests for your webpage.
+![known-issues-4](./media/known_issues_4-network.PNG)
+
+Still running into problems? Please send us your feedback using the **Send feedback** icon! 
+
+![known-issues-5](./media/known_issues_5.PNG)

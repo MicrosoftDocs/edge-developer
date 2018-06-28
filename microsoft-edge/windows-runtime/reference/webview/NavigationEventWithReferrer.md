@@ -3,7 +3,7 @@ description: Contains referrer information about the navigation
 title: NavigationEventWithReferrer object
 author: libbymc
 ms.author: libbymc
-ms.date: 2/12/2018
+ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
@@ -28,3 +28,16 @@ Type: **DOMString**
 ```js
 var referer = NavigationEventWithReferrer.referer;
 ```
+
+### uri
+
+The Uniform Resource Identifier (URI) of the destination of the navigation.
+
+This property is read-only.
+
+```js
+var uri = NavigationEventWithReferrer.uri;
+```
+
+#### Property value
+Type: **DOMString**

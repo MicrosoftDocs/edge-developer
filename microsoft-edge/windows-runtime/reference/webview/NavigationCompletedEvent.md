@@ -3,7 +3,7 @@ description: Contains information about the completed webview navigation
 title: NavigationCompletedEvent object
 author: libbymc
 ms.author: libbymc
-ms.date: 2/12/2018
+ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
@@ -15,6 +15,19 @@ An object that represents an event fired when the [webview](../webview.md) has f
 
 ## Properties
     
+### uri
+
+The Uniform Resource Identifier (URI) of the navigation.
+
+This property is read-only.
+
+```js
+var uri = NavigationCompletedEvent.uri;
+```
+
+#### Property value
+Type: **DOMString**
+
 ### isSuccess
 
 Gets a value that indicates whether the navigation completed successfully.

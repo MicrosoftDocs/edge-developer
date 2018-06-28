@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA for Windows
 author: erikadoyle
 ms.author: edoyle
-ms.date: 4/10/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP
@@ -32,7 +32,9 @@ This guide will show you how to install, run, and enhance your PWA as a Windows 
  
 ## Set up and run your *Universal Windows* app
 
-First let's set up our Windows app development environment in Visual Studio.
+A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (*WWAHost.exe* process) window. Enabling this simply requries a lightweight "app wrapper" that contains your hosted web app, which you can quickly set up using the Visual Studio *Progressive Web App (Universal Windows)* project template. (All your app logic, including native Windows Runtime API calls, still happens in your original web app code.)
+
+Let's set up our Windows app development environment in Visual Studio.
 
 1. In your Windows **Settings**, turn on [**Developer mode**](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development). (Type "developer mode" in the Windows searchbar to find it.)
 
@@ -81,7 +83,7 @@ First let's set up our Windows app development environment in Visual Studio.
 
 ## Debug your PWA as a Windows app
 
-Debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
+Because a PWA is simply a progressively enhanced *hosted web app*, you can debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
 
 For client-side debugging within your Windows 10 app, you'll need the *Microsoft Edge DevTools Preview* app. This standalone app includes all the functionality of the original in-browser [Microsoft Edge DevTools](../devtools-guide.md) (including [PWA tools](../devtools-guide/debugger/progressive-web-apps.md)), plus basic [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) support and a [*Debug Target* chooser](../devtools-guide.md#microsoft-store-app) for attaching to *any* running instance of the EdgeHTML engine, including add-ins for *Office*, *Cortana*, app webviews, and of course, *PWAs running on Windows*.
 
@@ -105,7 +107,7 @@ Here's how to set up debugging for your PWA.
     window.Windows
     ```
 
-    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-(winrt)-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
+    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
     exposed to web apps that run as Windows 10 apps (running outside the browser, in a *WWAHost.exe* process).
 
 ## Find Windows Runtime (WinRT) APIs
@@ -146,22 +148,11 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activa
     });
 ```
 
-### Windows PWA snippets
-
-You can also browse (and contribute!) code snippets for common PWA tasks on Windows, including:
-
-Windows app feature | PWA samples
-:--- | :---- 
-**Notifications** | Start screen tiles, Tile badges, Scheduled tile updates, Toast notifications 
-**OS integration** | File handler registration, App launch at startup, Handling activation, Native messaging 
-**Windows UX customizations** | [App title bar](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/title-bar.md), [App context menu](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/context-menu.md), Desktop taskbar commands 
-**Other tasks** | Background tasks, Caching and data storage, [Cortana voice commands](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/cortana-voice-commands.md), Hosting HTMLWebView, Using a custom WinRT component, [Web authentication broker](https://github.com/MicrosoftEdge/MicrosoftEdge-Documentation-Private/pwa-samples/tasks/web-authentication-broker.md) 
-
 ## Call WinRT APIs from your PWA
 
 At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
 
-In order to call any WinRT APIs from our PWA, we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-(acurs)) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
+In order to call any WinRT APIs from our PWA, we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-acurs) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
 
 If any of these API calls involve access to user resources like pictures or music, or to device features like the camera or microphone, we'll also need to add [app capability declarations](#app-capability-declarations) to the app package manifest in order for Windows to prompt the user for permission. If you later publish your PWA to the Microsoft Store, these required [App permissions](https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions) are also noted in your store listing.
 
@@ -235,7 +226,7 @@ if(window.Windows){
 }
 ```
 
-However, given that not all Windows APIs are available on all [Windows 10 device types](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide#device-families), its generally useful to use more specific feature detection to further qualify the namespace of the API you'll be calling:
+However, given that not all Windows APIs are available on all [Windows 10 device types](https://docs.microsoft.com/uwp/extension-sdks/device-families-overview), its generally useful to use more specific feature detection to further qualify the namespace of the API you'll be calling:
 
 ```JavaScript
 if(window.Windows && Windows.Media.SpeechRecognition){
@@ -306,7 +297,7 @@ With that background, we're ready to add some WinRT code to implement a custom c
     :--- | :---- 
     ![Browser default context menu](./media/browser-context-menu.png) | ![App custom context menu](./media/app-context-menu.png)
 
-Hopefully you now have a solid foundation for progressively enhancing your PWAs for Windows. If you run into questions or anything is unclear, please drop us a comment!
+Hopefully you now have a solid foundation for progressively enhancing your PWAs on Windows. If you run into questions or anything is unclear, please drop us a comment!
 
 ## Going further
 

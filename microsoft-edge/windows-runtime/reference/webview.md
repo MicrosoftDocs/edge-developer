@@ -6,12 +6,14 @@ ms.author: libbymc
 ms.date: 4/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge
-keywords: webview, windows 10 apps, uwp, edge
+keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
 ---
 
 # Microsoft Edge WebView for Windows 10 apps
 
-The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ apps) or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
+The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. 
+
+You can use it as a [XAML element](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) (for C# and C++ Windows 10 apps and [Windows Forms and WPF desktop applications](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/controls/webview)), or an HTML element (`<x-ms-webview>`)/DOM object (`MSHTMLWebViewElement`) for JavaScript-based Windows 10 apps, as described here.
 
 | | |
 |-|-|
@@ -22,10 +24,46 @@ The Microsoft Edge WebView control enables you to host web content in your Windo
 ## Syntax
 
 ```js
-var webview = document.createElement("x-ms-webview"); 
+// Feature detect for webview support
+if (MSHTMLWebViewElement) {
+    let wv = document.createElement('x-ms-webview'); // Use CSS to set width, height and other styles
+    wv.navigate("https://www.example.com");
+    document.body.appendChild(wv);
+}
 ```
+
 ## Remarks
+
+### WebView versus `<iframe>`
+
+Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
+
+ - Load pages and resources from your [ApplicationData](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](https://docs.microsoft.com/en-us/microsoft-edge/webview#buildlocalstreamuri) (*ms-local-stream:///*)
+
+ - Provide browser-like controls: for going [back](https://docs.microsoft.com/en-us/microsoft-edge/webview#goback) and [forward](https://docs.microsoft.com/en-us/microsoft-edge/webview#goforward) in navigation history, and [stopping](https://docs.microsoft.com/en-us/microsoft-edge/webview#stop) or [refreshing](https://docs.microsoft.com/en-us/microsoft-edge/webview#refresh) the current page. 
+
+ - [Capture screenshots of web content](https://docs.microsoft.com/en-us/microsoft-edge/webview#capturepreviewtoblobasync) making it easy to implement the Windows 10 app [Share](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/share-data) contract.
+
+ - Allow JavaScript code running within a webview to raise custom events ([MSWebViewScriptNotify](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewscriptnotify)) to your app, and allow your app to run JavaScript within the webview ([invokeScriptAsync](https://docs.microsoft.com/en-us/microsoft-edge/webview#invokescriptasync)).
+
+ - Provide you with fine-tuned webview content events:
+    
+    WebView DOM event | Description
+    --------- | ------
+    [MSWebViewNavigationStarting](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewnavigationstarting) | Indicates the WebView is starting to navigate
+    [MSWebViewContentLoading](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewcontentloading) | The HTML content is downloaded and is being loaded into the control
+    [MSWebViewDOMContentLoaded](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewdomcontentloaded) | Indicates that the main DOM elements have finished loading
+    [MSWebViewNavigationCompleted](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewnavigationcompleted) | Indicates the navigation is complete, and all media elements are rendered
+    [MSWebViewUnviewableContentIdentified](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewunviewablecontentidentified) | The WebView found the content was not HTML
+    [UnsafeContentWarningDisplaying](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewunsafecontentwarningdisplaying) | The WebView shows a warning page for content that was reported as unsafe by Windows *SmartScreen Filter*.
+
+    ...including corresponding [events](https://docs.microsoft.com/en-us/microsoft-edge/webview#events) for iframe content loaded within a WebView (such as [MSWebView**Frame**NavigationStarting](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewframenavigationstarting) and so on.)
+
+### Printing
+
 When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`. 
+
+Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-webview>` markup creates a WebView on a new unique thread in the app's process. Running on a new unique thread means that long running script from one WebView is unable to hang the app or other WebViews. Creating a WebView via the `new MSWebView()` constructor creates a WebView in a separate WebView process. Running in a unique process means that in addition to protection from long running script, the app is also protected from web content that crashes the WebView process. Creating a WebView via the [`MSWebViewProcess.createWebViewAsync`](./webview/MSWebViewProcess.md#createwebviewasync) method also creates a WebView in a seperate process but allows the caller more control over process settings and grouping WebViews in WebView processes. See `MSWebViewProcess` for more information. 
 
 For more information, see the [HTML WebView control sample](http://go.microsoft.com/fwlink/p/?linkid=309825).
 
@@ -44,7 +82,7 @@ All Windows 10 apps are intended to use the same AppCache quota model, so the a
 
 ### departingFocus
 
-Indicates the focus departing from the **webview** into the app. 
+Indicates focus departing from the **webview** into the app. Fires when the webview's top level document calls window.departFocus. The FocusNavigationEvent args in the departingFocus event match the parameters provided to departFocus except the origin parameters are translated from the webview's document's coordinate space to the coordinate space of the webview host document. See the webview.navigateFocus method and corresponding window navigatingFocus event for transferring focus from host to webview. See the [TVJS's Direction Navigation library](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) for an example of an implementation of focus navigation via keyboard or gamepad that handles this event.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
@@ -65,14 +103,24 @@ webview.removeEventListener("departingFocus", handler);
 
 ### MSWebViewContainsFullScreenElementChanged
 
-Occurs when the status changes of whether or not the **webview** currently contains a full screen element.
+Occurs when the status changes of whether or not the **webview** currently contains a full screen element. Use the containsFullScreenElement property to the current value. Full screen element here refers to the [Fullscreen DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) notion of a full screen element via the element.requestFullScreen and document.exitFullScreen DOM functions.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function containsFullScreenElementChangedHandler(eventInfo) {
+    const applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
+    if (webview.containsFullScreenElement) {
+        webview.classList.add("fullscreen"); // Have the webview fill the app view
+        applicationView.tryEnterFullScreenMode(); // Have the app view fill the screen
+    }
+    else {
+        webview.classList.remove("fullscreen"); // Return webview to normal
+        applicationView.exitFullScreenMode(); // Return app view to normal
+    }
+}
  
 // addEventListener syntax
-webview.addEventListener("MSWebViewContainsFullScreenElementChanged", handler);
-webview.removeEventListener("MSWebViewContainsFullScreenElementChanged", handler);
+webview.addEventListener("MSWebViewContainsFullScreenElementChanged", containsFullScreenElementChangedHandler);
+webview.removeEventListener("MSWebViewContainsFullScreenElementChanged", containsFullScreenElementChangedHandler);
 ```
 
 #### Event Information
@@ -193,15 +241,20 @@ webview.removeEventListener("MSWebViewFrameNavigationCompleted", handler);
 
 ### MSWebViewFrameNavigationStarting
 
-Indicates a `<iframe>` within a **webview** is starting to navigate.
+Indicates a `<iframe>` within a **webview** is starting to navigate. This is fired before obtaining any resources from the network for the navigation. The navigation is not started until all MSWebViewFrameNavigationStarting event handlers complete. This event is cancellable via calling `eventArgs.preventDefault()`. If cancelled, the WebView will not perform the navigation.
 
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function frameNavigationStartingHandler(navigationEventArgs) {
+    // Cancel all navigations that don't meet some criteria.
+    if (!navigationEventArgs.uri.startsWith("https://example.com/")) {
+        navigationEventArgs.preventDefault();
+    }
+}
  
 // addEventListener syntax
-webview.addEventListener("MSWebViewFrameNavigationStarting", handler);
-webview.removeEventListener("MSWebViewFrameNavigationStarting", handler);
+webview.addEventListener("MSWebViewFrameNavigationStarting", frameNavigationStartingHandler);
+webview.removeEventListener("MSWebViewFrameNavigationStarting", frameNavigationStartingHandler);
 ```
 
 #### Event Information
@@ -215,10 +268,15 @@ webview.removeEventListener("MSWebViewFrameNavigationStarting", handler);
           
 ### MSWebViewLongRunningScriptDetected
 
-Occurs periodically while the **webview** executes JavaScript, letting you halt the script.
+Occurs periodically during uninterrupted script execution in the **webview**, letting you halt the script.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function handler(eventInfo) {
+    const stopPageScriptThreshold = 5 * 1000;
+    if (eventInfo.executionTime > stopPageScriptThreshold) {
+        eventInfo.stopPageScriptExecution = true; // Stop the long running script if it goes over our threshold
+    }
+}
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewLongRunningScriptDetected", handler);
@@ -236,10 +294,24 @@ webview.removeEventListener("MSWebViewLongRunningScriptDetected", handler);
 
 ### MSWebViewNavigationCompleted
 
-Indicates the navigation is complete, and all media elements are rendered.
+Indicates the navigation is complete, and all media elements are rendered or there was a navigation error. Check the event args isSuccess property to tell if the navigation was successful and the webErrorStatus property for details on the navigation error. Navigation errors can occur before obtaining any content from the network for instance if the hostname of a URI does not resolve in which case the MSWebViewNavigationStarted event will fire followed by the MSWebViewNavigationCompleted event. Navigation errors may also occur after receiving an error page from a web server, for instance a 404 page from an HTTP server in which case all navigation events will fire, MSWebViewNavigationStarting, MSWebViewContentLoading, MSWebViewDOMContentLoaded, and then MSWebViewNavigationCompleted. To provide an app navigation error page for cases where the web server hasn't provided an error page, you'll need to check if MSWebViewContentLoading hasn't fired for a failed navigation which indicates there is no server provided error page.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+let hasContent = false;
+webview.addEventListener("MSWebViewNavigationStarting", () => { hasContent = false; });
+webview.addEventListener("MSWebViewContentLoading", () => { hasContent = true; });
+
+webview.addEventListener("MSWebViewNavigationCompleted", navigationCompletedEventArgs => {
+    // Navigation failures may or may not come after getting an error page from the web server.
+    // We keep track of the ContentLoading event with hasContent to tell if we have an error page from the server.
+    // So we only navigate to our app error page when there's no server provided error page.
+    if (!navigationCompletedEventArgs.isSuccess && !hasContent) {
+        // Pass our failed URI and error details in the query and the error page script can read it as appropriate.
+        webview.navigate("ms-appx-web:///appErrorPage.html?" + 
+            "uri=" + encodeURIComponent(navigationCompletedEventArgs.uri) + "&" +
+            "webErrorStatus=" + encodeURIComponent(navigationCompletedEventArgs.webErrorStatus));
+    }
+});
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewNavigationCompleted", handler);
@@ -258,15 +330,20 @@ webview.removeEventListener("MSWebViewNavigationCompleted", handler);
 
 ### MSWebViewNavigationStarting
 
-Indicates the **webview** is starting to navigate **MSWebViewContentLoading** and the HTML content is downloaded and is being loaded into the control.
+Indicates the **webview** is starting to navigate. This is fired before obtaining any resources from the network for the navigation. The navigation is not started until all MSWebViewNavigationStarting event handlers complete. This event is cancellable via calling `eventArgs.preventDefault()`. If cancelled, the WebView will not perform the navigation.
 
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function navigationStartingHandler(navigationEventArgs) {
+    // Cancel all navigations that don't meet some criteria.
+    if (!navigationEventArgs.uri.startsWith("https://example.com/")) {
+        navigationEventArgs.preventDefault();
+    }
+}
  
 // addEventListener syntax
-webview.addEventListener("MSWebViewNavigationStarting", handler);
-webview.removeEventListener("MSWebViewNavigationStarting", handler);
+webview.addEventListener("MSWebViewNavigationStarting", navigationStartingHandler);
+webview.removeEventListener("MSWebViewNavigationStarting", navigationStartingHandler);
 ```
 
 #### Event Information
@@ -280,10 +357,19 @@ webview.removeEventListener("MSWebViewNavigationStarting", handler);
 
 ### MSWebViewNewWindowRequested
 
-Raised when content in **webview** is trying to open a new window. 
+Raised when content in **webview** is trying to open a new window. If the event isn't cancelled the webview will launch the URI of the new window request in the user's default browser.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+function handler(eventInfo) {
+    // Prevent the webview from opening URIs in the default browser.
+    eventInfo.preventDefault();
+    
+    // Only allow https://example.com/ to open new windows.
+    if (eventInfo.referer === "https://example.com/") {
+        // Perform some custom handling of the URI.
+        openUri(eventInfo.uri);
+    }
+}
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewNewWindowRequested", handler);
@@ -297,16 +383,50 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 |**Interface** | [NavigationEventWithReferrer](./webview/NavigationEventWithReferrer.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
-|**Cancelable**  |No |                 
+|**Cancelable**  |Yes |                 
            
 
 ### MSWebViewPermissionRequested
 
-Indicates that content in the **webview**  is trying to access functionality (such as geolocation, or pointer lock access) that normally requires end-user permissions.
+Indicates that content in the **webview**  is trying to access functionality (such as geolocation, or pointer lock access) that normally requires end-user permissions. If no event handler is registered or if the event handler doesn't call eventArgs.permissionRequest.allow(), defer(), or deny(), then by default the permission request will be denied. If you need to decide if permission is allowed or denied asynchronously for instance if you need to prompt the user, use eventArgs.permissionRequest.defer(). The permission request will be deferred until you use webview.getDeferredPermissionRequestById or webview.getDeferredPermissionRequests and call allow() or deny() on the DeferredPermissionRequest with the corresponding id value.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
- 
+webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
+    const permissionRequest = permissionRequestedEventArgs.permissionRequest;
+    switch (permissionRequest.type) {
+        case "geolocation":
+        case "media":
+        case "pointerlock":
+        case "webnotifications":
+        case "screen":
+        case "immersiveview":
+            if (permissionRequest.uri.startsWith("https://www.example.com/")) {
+                // Implicitly trust particular URI
+                permissionRequest.allow();
+            }
+            else if (permissionRequest.uri.startsWith("https://")) {
+                // Defer the request so we can ask the user to allow or deny the request
+                permissionRequest.defer();
+                // Later we'll need to use webview.getDeferredPermissionRequestById for this
+                // request and call allow or deny.
+                promptUserForDeferredPermissionRequest(
+                    permissionRequest.id,
+                    permissionRequest.uri,
+                    permissionRequest.type);
+            }
+            else {
+                // Implicitly deny non-https URIs
+                permissionRequest.deny();
+            }
+            break;
+
+        case "unlimitedIndexedDBQuota":
+        default:
+            permissionRequest.deny();
+            break;
+    }
+});
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewPermissionRequested", handler);
 webview.removeEventListener("MSWebViewPermissionRequested", handler);
@@ -316,7 +436,7 @@ webview.removeEventListener("MSWebViewPermissionRequested", handler);
 
 |            |      |
 |------------|------|
-|**Interface** | [PermissionRequest](./webview/PermissionRequest.md) |
+|**Interface** | [PermissionRequestedEvent](./webview/PermissionRequestedEvent.md) |
 |**Synchronous** |Yes  |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |    
@@ -324,7 +444,7 @@ webview.removeEventListener("MSWebViewPermissionRequested", handler);
 
 ### MSWebViewProcessExited
 
-Indicates that the **webview** component process crashsed. 
+Indicates that the **webview** component process crashsed. This is only relevant for an out-of-process WebView. See the Remarks section for how to create an out-of-process WebView as opposed to an in-process WebView. After this event fires, the corresponding WebView is put into a crashed state. Calling most WebView specific methods or accessing most WebView specific properties on a crashed WebView will throw an exception. To recover from this event, remove the crashed WebView from the DOM and replace it with a new WebView.
 
 ```js
 function handler(eventInfo) { /* Your code */ }
@@ -349,7 +469,42 @@ webview.removeEventListener("MSWebViewProcessExited", handler);
 Raised when a page inside the **webview** element requests a resource.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
+// A handler that completes synchronously with a custom HTTP response built from a string.
+function handlerWithSyncString(webResourceRequestedEventArgs) {
+    // Only provide custom HTTP responses for particular HTTP requests
+    if (webResourceRequestedEventArgs.args.request.requestUri.absoluteUri === "https://www.bing.com/") {
+        const Http = Windows.Web.Http;
+        // Create the custom response using a string
+        webResourceRequestedEventArgs.args.response = new Http.HttpResponseMessage(Http.HttpStatusCode.ok);
+        webResourceRequestedEventArgs.args.response.content = new Http.HttpStringContent("<H1>Example</H1>");
+    }
+});
+
+// A more complicated handler that completes asynchronously with a custom HTTP response built from a stream.
+function handlerWithAsyncStream(webResourceRequestedEventArgs) {
+    // Only provide custom HTTP responses for particular HTTP requests
+    if (webResourceRequestedEventArgs.args.request.requestUri.absoluteUri === "https://www.bing.com/") {
+        // Take a deferral on the WebResourceRequested event so that we can create the custom HTTP response asynchronously.
+        const deferral = webResourceRequestedEventArgs.args.getDeferral();
+
+        // Use fetch to get a Blob of the content of the URI
+        fetch("ms-appx:///replacement.html").then(fetchResponse => {
+            return fetchResponse.blob();
+        }).then(fetchResponseBlob => {
+            const Http = Windows.Web.Http;
+            webResourceRequestedEventArgs.args.response = new Http.HttpResponseMessage(
+                Http.HttpStatusCode.ok);
+
+            // Use Blob.msDetachStream to convert the Blob to a Windows.Storage.Streams.IInputStream
+            webResourceRequestedEventArgs.args.response.content = new Http.HttpStreamContent(
+                fetchResponseBlob.msDetachStream());
+
+        }).finally(() => {
+            // Use a finally call to complete the deferral so even if there is an error we will unblock the event.
+            deferral.complete();
+        });
+    }
+});
  
 // addEventListener syntax
 webview.addEventListener("MSWebViewWebResourceRequested", handler);
@@ -368,14 +523,23 @@ webview.removeEventListener("MSWebViewWebResourceRequested", handler);
 
 ### MSWebViewScriptNotify
 
-Raised when a page inside the **webview** element calls the **window.external.notify** method. 
+Raised when a page inside the **webview** element calls the **window.external.notify** method. The window.external.notify method is only available to documents with URIs that match rules in the app's manifest's ApplicationContentUriRules or that has been programatically allowed via setting webview.settings.isScriptNotifyAllowed to true. Additionally window.external.notify is only available to the webview's top level document.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
- 
-// addEventListener syntax
-webview.addEventListener("MSWebViewScriptNotify", handler);
-webview.removeEventListener("MSWebViewScriptNotify", handler);
+webview.addEventListener("MSWebViewScriptNotify", eventInfo => {
+    console.log("The URI " + eventInfo.callingUri + 
+        " has sent notification " + eventInfo.value);
+});
+
+// Allow the next URI to which we navigate access to window.external.notify
+webview.settings.isScriptNotifyAllowed = true;
+webview.navigate("https://example.com/");
+
+webview.addEventListener("MSWebViewNavigationCompleted", () => {
+    // Inject script to the webview that will send a notification back.
+    const asyncOp = webview.invokeScriptAsync("eval", "window.external.notify('example notification')");
+    asyncOp.start();
+});
 ```
 
 #### Event Information
@@ -431,11 +595,15 @@ webview.removeEventListener("MSWebViewUnsupportedUriSchemeIdentified", handler);
 
 ### MSWebViewUnviewableContentIdentified
 
-Raised when the **webview** cannot find the content.
+Raised when the **webview** attempts to navigate to web content with an unsupported content type. For example, PDFs are currently not supported by webview and navigations to PDF documents will not navigate and instead raise this event.
 
 ```js
-function handler(eventInfo) { /* Your code */ }
- 
+function handler(args) {
+    if (args.mediaType === "application/pdf") {
+        Windows.System.Launcher.launchUriAsync(new Windows.Foundation.Uri(args.uri));
+    }
+}
+
 // addEventListener syntax
 webview.addEventListener("MSWebViewUnviewableContentIdentified", handler);
 webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
@@ -559,27 +727,31 @@ An **MSWebViewAsyncOperation** object that, when it completes, provides a [DataP
 As an asynchronous action, executes the specified script function from the currently loaded HTML, with specific arguments.
 
 ```js
-webview.invokeScriptAsync(scriptName, args)
+webview.invokeScriptAsync(functionName, ...args)
 ```
 #### Parameters
 
-**scriptName**
+**functionName**
 * Type: **String**
-* The name of the script function to invoke.
+* The name of the function to invoke. This is a property name on the global window object of the WebView's top level document. This can be a built-in global function like eval or open, or it can be a script defined function on the global window object. Only functions in the top level document of the WebView may be invoked.
 
 **args**
-* Type: **Object**
-* A string array that packages arguments to the script function. 
+* Type: **String**
+* Optional string parameters to pass to the invoked function. After functionName, any additional parameters to invokeScriptAsync are strings passed to the invoked function.
 
 #### Return value
 Type: **MSWebViewAsyncOperation**
 
-When using **invokeScriptAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call **webview.start** to execute the operation.
+When using **invokeScriptAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call **MSWebViewAsyncOperation.start** to execute the operation. If the MSWebViewAsyncOperation's complete event fires then the MSWebViewAsyncOperation's result property is the string return value from invoking the function. Using the invoked function's return value allows for the WebView content to communication synchronously back to the WebView host. To instead have the WebView content communicate asynchronously back to the WebView host see the MSWebViewScriptNotify event. If the function invoked throws an unhandled exception then the MSWebViewAsyncOperation's error event will fire. 
 
 ```js
-var asyncOp = webView.invokeScriptAsync(scriptName, args);
-asyncOp.oncomplete = completedHandler;
-asyncOp.onerror = errorHandler;
+const functionName = "eval";
+const args = ["'Current URL: ' + document.location.href"];
+
+const asyncOp = webview.invokeScriptAsync(functionName, ...args);
+
+asyncOp.onerror = () => console.error("Error: " + asyncOp.error);
+asyncOp.oncomplete = () => console.log("Result: " + asyncOp.result); // Logs 'Current URL: about:blank'
 asyncOp.start();
 ```
 
@@ -676,26 +848,33 @@ This  method does not return a value.
 
 ### navigateFocus
 
-Navigates focus onto the **webview**.
+Navigates focus onto the **webview**. Fires the webview's top level document's window's navigatingfocus event. The FocusNavigationEvent args used in the navigatingfocus event match the parameters provided to navigateFocus except the origin parameters are translated from the host document's coordinate space to the coordinate space of the webview's top level document. See the webview departingFocus event and corresponding window.departFocus method for transferring focus from the webview to the host. See the [TVJS's Direction Navigation library](https://github.com/Microsoft/TVHelpers/wiki/Using-DirectionalNavigation) for an example of an implementation of focus navigation via keyboard or gamepad that uses this method.
 
 ```js
-webview.addWebAllowedObject(name, applicationObject);
+const activeElementBounds = document.activeElement.getBoundingClientRect();
+const origin = { 
+    originLeft: activeElementBounds.left,
+    originTop: activeElementBounds.top,
+    originWidth: activeElementBounds.width,
+    originHeight: activeElementBounds.height
+};
+webview.navigateFocus(navigationReason, origin);
 ```
 #### Parameters
 *navigationReason*
 * Type: **String**
-* The reason for the navigation.
+* The reason for the navigation. The value should be either "left", "up", "right", or "down". It is the direction in which focus is moving away from the currently focused element.
 
 *origin*
 * Type: **Object**
-* The origin of the navigation.
+* The origin of the navigation. This is a JavaScript object with properties "originLeft", "originTop", "originWidth", and "originHeight". These values should describe the position and size of the currently focused element away from which focus is moving.
 
 #### Return value
 This method does not return a value.
 
 ### navigateToLocalStreamUri
 
-Loads local web content at the specified URI using an **UriToStreamResolver**.
+Loads local web content at the specified URI using a [**UriToStreamResolver**](https://docs.microsoft.com/en-us/uwp/api/windows.web.iuritostreamresolver.uritostreamasync).
 
 ```js
 webview.navigateToLocalStreamUri(source, streamResolver); 
@@ -704,7 +883,7 @@ webview.navigateToLocalStreamUri(source, streamResolver);
 
 *source*
 * Type: **String**
-* An ms-local-stream URI identifying the local HTML content to load. Create this string using **buildLocalStreamUri**.
+* An ms-local-stream URI identifying the local HTML content to load. Create this string using [**buildLocalStreamUri**](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri).
 
 *streamResolver*
 * Type: any
@@ -813,7 +992,7 @@ Type: **Boolean**
 
 ### containsFullScreenElement
 
-Gets a value that indicates whether the **webview** contains an element that supports full screen.
+Gets a value that indicates whether the **webview** contains an element that supports full screen. See the MSWebViewContainsFullScreenElementChanged event for more info.
 
 This property is read-only.
 

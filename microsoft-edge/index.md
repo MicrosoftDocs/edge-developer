@@ -1,18 +1,18 @@
 ---
 ms.assetid: 3144faaf-1d0a-4c14-bdca-00c4dae7bf81
 layout: LandingPage
-description: The info you need to develop on and for Microsoft Edge.
-title: Microsoft Edge documentation
+description: Microsoft Edge information for developers, including PWAs, DevTools, extensions, webdriver, and more.
+title: Microsoft Edge developer documentation
 author: erikadoyle
 ms.author: edoyle
-ms.date: 02/08/2017
+ms.date: 04/30/2018
 ms.prod: microsoft-edge
 ms.topic: landing-page
-keywords: edge, web development, html, css, javascript, developer
+keywords: microsoft edge, edgehtml, devtools, f12 tools, pwa, extensions, webdriver, webview
 ---
 # Microsoft Edge developer documentation
 
-Microsoft Edge is the new browser built for Windows 10, providing fast, safe, and productive web experiences. The developer docs offer information on features and standards included in Microsoft Edge. Learn about the latest supported APIs, building extensions, debugging with the DevTools, and more.
+Microsoft Edge is the browser built for Windows 10, providing fast, safe, and productive web experiences. Here are all the developer features and tools available to you in Microsoft Edge and the EdgeHTML engine.
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/microsoft-edge/dev-guide">
@@ -21,7 +21,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/landing/windows/win_edge-1.svg" alt="" />
+                            <img src="/media/common/i_whats-new.svg" alt="What's new in EdgeHTML icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -33,43 +33,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
         </a>
     </li>
     <li>
-        <a href="/microsoft-edge/extensions/getting-started">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Get started with extensions icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Get started with extensions</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://developer.microsoft.com/microsoft-edge/platform/catalog/">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_api.svg" alt="Edge API icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Microsoft Edge API catalog</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://developer.microsoft.com/windows/bridges/hosted-web-apps">
+        <a href="/microsoft-edge/progressive-web-apps">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -79,7 +43,43 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Web apps on Windows 10</h3>
+                        <h3>Progressive Web Apps on Windows</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/microsoft-edge/devtools-guide">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_tools.svg" alt="Microsoft Edge DevTools icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft Edge DevTools guide</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://developer.mozilla.org/en-US/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_api-reference.svg" alt="API Reference icon" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Web API Reference (MDN Web Docs)</h3>
                     </div>
                 </div>
             </div>
@@ -136,9 +136,7 @@ Microsoft Edge is the new browser built for Windows 10, providing fast, safe, an
                         <h3>Resources</h3>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/changelog/">Changelog</a></p>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/status/">Platform feature status</a></p>
-                        <p><a href="/microsoft-edge/deploy">Microsoft Edge for IT pros</a></p>
-                        <p><a href="https://msdn.microsoft.com/library/hh772401(v=vs.85).aspx">MSDN documentation for IE</a></p>
-                        <p><a href="https://developer.microsoft.com/microsoft-edge/testdrive/">TestDrive demos</a></p>
+                        <p><a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/">Internet Explorer documentation archive</a></p>
                         </div>
                     </div>
                 </div>

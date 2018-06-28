@@ -1,9 +1,9 @@
 ---
 description: Find information on supported manifest keys as well as their known issues/Chrome incompatibilities.
 title: Extensions - Supported manifest keys
-author: abbycar
-ms.author: abigailc
-ms.date: 02/08/2017
+author: libbymc
+ms.author: libbymc
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -21,7 +21,7 @@ The following keys are required:
 
 Key | Known issues | Chrome incompatibilities
 :------------ | :------------- | :--------------
-author  | | Specifies the author. Not supported in Chrome.
+[author](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/author)  | | 
 [name](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/name) | | |
 [version](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/version) | | |
 
@@ -57,6 +57,7 @@ Key | Known issues | Chrome incompatibilities
 [background](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/background) | | Persistent is a required field for Microsoft Edge.
 [content_scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/content_scripts)  | | |
 [content_security_policy](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/content_security_policy)  | The content security policy of a page blocks websockets in content scripts, generating an undefined exception. | Microsoft Edge extensions currently only support [Default Policy Restrictions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Content_Security_Policy#Default_content_security_policy): `script-src 'self'; object-src 'self'` |
+[incognito](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/incognito) | | | 
 key  | | |
 options_page | | |
 [permissions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions)  | | |

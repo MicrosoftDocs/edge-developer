@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, memory, heap, GC
 Use the **Memory** panel to measure your use of system resources and compare heap snapshots at different states of code execution. With it, you can:
 
 - [Graph the memory consumption of your page in real time](#memory-usage-timeline) and take snapshots of the heap
-- [Identify potential memory issues](#shapshot-summary) in your code, such as retained objects not attached to the DOM
+- [Identify potential memory issues](#snapshot-summary) in your code, such as retained objects not attached to the DOM
 - [Review memory usage data](#snapshot-details) by object type, instance count, size, and references to help isolate issues
 - [Apply snapshot data filters](#filters) to reduce the noise of non-actionable information
 - [Identify the memory cost of a specific object](#object-references) and the references keeping it alive
@@ -154,22 +154,22 @@ Take heap snapshot | `Ctrl` + `Shift` + `T`
 
 If you see this error message: **An error occurred while starting the profiling session** in the Memory tool, follow these steps for a workaround.
 
-1. Press `Windows Key` + `R`
+1. Press `Windows Key` + `R`.
 
-2. In the Run dialog, enter **services.msc** 
-![known-issues-1](./media/memory_known_issues_1.PNG)
+2. In the Run dialog, enter **services.msc**.
+![known-issues-1](./media/known_issues_1.PNG)
 
-3. In the Services dialog, locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it 
-![known-issues-2](./media/memory_known_issues_2.PNG)
+3. Locate the **Microsoft (R) Diagnostics Hub Standard Collector Service** and right-click it.
+![known-issues-2](./media/known_issues_2.PNG)
 
-4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service** 
-![known-issues-3](./media/memory_known_issues_3.PNG)
+4. Restart the **Microsoft (R) Diagnostics Hub Standard Collector Service**.
+![known-issues-3](./media/known_issues_3.PNG)
 
-5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`
+5. Close the Microsoft Edge Developer Tools and the tab. Open a new tab, navigate to your page, and press `F12`.
 
 6. You should now be able to begin profiling. 
-![known-issues-4](./media/memory_known_issues_4.PNG)
+![known-issues-4](./media/known_issues_4-memory.PNG)
 
 Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
-![known-issues-5](./media/memory_known_issues_5.PNG)
+![known-issues-5](./media/known_issues_5.PNG)

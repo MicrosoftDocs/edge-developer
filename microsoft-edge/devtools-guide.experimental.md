@@ -3,13 +3,16 @@ description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools
 author: erikadoyle
 ms.author: edoyle
-ms.date: 09/12/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
-experimental: true
+experimental: false
 experiment_id: "51fe4b97-3e55-41"
 ---
+
+> [!NOTE]
+> The Microsoft Edge DevTools help web developers build and test their websites. If you accidentally opened the DevTools, just press "F12" to close them.
 
 # Microsoft Edge Developer Tools
 
@@ -39,7 +42,7 @@ Please keep sending your [feedback and feature requests](#feedback)!
 
 ## Microsoft Store app
 
-The **Microsoft Edge DevTools** are [now available](./devtools-guide/whats-new.md) as a standalone [Windows 10 app from the Microsoft Store](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab), in addition to the in-browser (`F12`) tooling experience. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.
+The **Microsoft Edge DevTools** are [now available for preview](./devtools-guide/whats-new.md) as a standalone [Windows 10 app from the Microsoft Store](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab), in addition to the in-browser (`F12`) tooling experience. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.
 
 ### Local debugging
 
