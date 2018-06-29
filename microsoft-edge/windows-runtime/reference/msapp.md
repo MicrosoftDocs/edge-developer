@@ -409,6 +409,7 @@ var retval = MSApp.getViewId(window);
 #### Return value
 
 `viewId`
+
 |Type | Description |
 |:---- |:--- |
 |Number | Can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
