@@ -34,7 +34,7 @@ var result = MSApp.method;
 ## MSApp Methods
 
 ### clearTemporaryWebDataAsync 
-Clears cache and indexedDB data for the app or [WebView](./webview.md).
+Clears cache and indexedDB data for the app or [WebView](../../webview.md).
 
 ```javascript
 var retval = MSApp.clearTemporaryWebDataAsync(#); 

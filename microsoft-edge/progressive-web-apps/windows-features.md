@@ -112,7 +112,7 @@ Here's how to set up debugging for your PWA.
 
 ## Find Windows Runtime (WinRT) APIs
 
-As an installed Windows app, your PWA has full access to native *Windows Runtime* APIs; its just a matter of identifying what you need to use, obtaining the requisite permissions, and employing feature detection to call that API on supported environments. Let's walk through this process to add a progressive enhancement for Windows desktop users of your PWA.
+As an installed Windows app, your [PWA has full access to native *Windows Runtime* APIs](../windows-runtime.md); its just a matter of identifying what you need to use, obtaining the requisite permissions, and employing feature detection to call that API on supported environments. Let's walk through this process to add a progressive enhancement for Windows desktop users of your PWA.
 
 There are a number of ways to identify the *Universal Windows Platform* APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center](#windows-dev-center), downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows](#windows-pwa-snippets).
 
