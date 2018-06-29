@@ -17,18 +17,6 @@ As a web developer, you can call these native Windows APIs from JavaScript when 
 
 For more details on usage, check out [*Using the Windows Runtime in JavaScript*](./using-the-windows-runtime-in-javascript.md).
 
-## Feature areas
-
-### WebView
-
-The [**Microsoft Edge WebView**](./reference/webview.md) control enables you to host web content within your Windows 10 app. Its similar to using an `<iframe>`, but provides a lot [more features and control](./reference/webview.md#webview-versus-iframe) over the experience.
-
-### MSApp
-
-The [**MSApp**](./reference/msapp.md) global object is 
-
-### Namespaces
-
 Here's an overview of all the top-level WinRT namespaces available to your web app when it runs on Windows 10. 
 
 WinRT Namespace | Description
@@ -51,5 +39,14 @@ WinRT Namespace | Description
 [System](https://docs.microsoft.com/en-us/uwp/api/windows.system) |Enables system functionality such as launching apps, obtaining information about a user, and memory profiling.
 [UI](https://docs.microsoft.com/en-us/uwp/api/windows.ui) | Provides an app with access to core system functionality and run-time information about its UI.
 [Web](https://docs.microsoft.com/en-us/uwp/api/windows.web) | Provides information on errors resulting from web service operations.
+
+## WebView
+
+The [**Microsoft Edge WebView**](./reference/webview.md) control enables you to host web content within your Windows 10 app. Its similar to using an `<iframe>`, but provides a lot [more features and control](./reference/webview.md#webview-versus-iframe) over the experience.
+
+## MSApp
+
+The [**MSApp**](./reference/msapp.md) global object is 
+
 
 
