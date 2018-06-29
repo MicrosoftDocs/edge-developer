@@ -13,9 +13,7 @@ keywords: Windows Runtime, WinRT, PWA, JavaScript
 
 The [Windows Runtime](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis) (or simply *WinRT*) is the collection of native APIs that power the [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps that run across all [Windows 10 device families](https://docs.microsoft.com/en-us/uwp/extension-sdks/device-families-overview). WinRT APIs are projected into a number of different languages, including C#, C++, Visual Basic, and JavaScript.
 
-As a web developer, you can call these native Windows APIs from JavaScript when your web app is [running as an installed Windows 10 app](./progressive-web-apps/windows-features.md#set-up-and-run-your-universal-windows-app) (launched from the *wwahost.exe* process, rather than the browser).
-
-For more details on usage, check out [*Using the Windows Runtime in JavaScript*](./using-the-windows-runtime-in-javascript.md).
+As a web developer, you can call these native Windows APIs from JavaScript when your web app is [running as an installed Windows 10 app](./progressive-web-apps/windows-features.md#set-up-and-run-your-universal-windows-app) (launched from the *wwahost.exe* process, rather than the browser). For more details on usage, check out [*Using the Windows Runtime in JavaScript*](windows-runtime/using-the-windows-runtime-in-javascript.md).
 
 Here's an overview of all the top-level WinRT namespaces available to your web app when it runs on Windows 10. 
 
@@ -42,11 +40,11 @@ WinRT Namespace | Description
 
 ## WebView
 
-The [**Microsoft Edge WebView**](./reference/webview.md) control enables you to host web content within your Windows 10 app. Its similar to using an `<iframe>`, but provides a lot [more features and control](./reference/webview.md#webview-versus-iframe) over the experience.
+The [**Microsoft Edge WebView**](webview.md) control enables you to host web content within your Windows 10 app. Its similar to using an `<iframe>`, but provides a lot [more features and control](webview.md#webview-versus-iframe) over the experience.
 
 ## MSApp
 
-The [**MSApp**](./reference/msapp.md) global object is 
+The [**MSApp**](windows-runtime/reference/msapp.md) global object is 
 
 
 
