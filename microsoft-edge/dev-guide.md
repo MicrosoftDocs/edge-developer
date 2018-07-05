@@ -25,7 +25,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 ### ARIA 1.1 Roles, States, and Events
 
-EdgeHTML 17 now includes support for roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1](http://www.w3.org/TR/wai-aria-1.1/) specification, including [banner](http://www.w3.org/TR/wai-aria-1.1/#banner), [complementary](http://www.w3.org/TR/wai-aria-1.1/#complementary), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more. Take a look at the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge. 
+EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](http://www.w3.org/TR/wai-aria-1.1/), including [feed](https://www.w3.org/TR/wai-aria-1.1/#feed), [form](https://www.w3.org/TR/wai-aria-1.1/#form), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299). With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1. Check out the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge.
 
 ### CSS masking
 
