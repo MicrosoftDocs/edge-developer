@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetTrueValue function"
 ms.assetid: c2a56d48-344b-492b-90b8-f570710f8310
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetTrueValue Function
 Gets the value of `true` in the current script context.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 67f3e51c-acbb-4fff-a414-0868a0dd5051
 caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsTypedArrayType Enumeration
 The type of a typed JavaScript array.  

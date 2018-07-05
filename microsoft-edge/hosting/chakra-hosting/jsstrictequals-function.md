@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsStrictEquals function"
 ms.assetid: b35bc655-7ff8-496a-b678-8950bb976047
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsStrictEquals Function
 Compare two JavaScript values for strict equality.  

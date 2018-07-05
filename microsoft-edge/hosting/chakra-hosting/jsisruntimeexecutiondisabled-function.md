@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsIsRuntimeExecutionDisabled function"
 ms.assetid: 77490280-fb84-4614-a1f0-6ac31e3bd607
 caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsIsRuntimeExecutionDisabled Function
 Returns a value that indicates whether script execution is disabled in the runtime.  

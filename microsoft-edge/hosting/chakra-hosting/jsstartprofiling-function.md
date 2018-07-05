@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsStartProfiling function"
 ms.assetid: 638da395-42dd-4fc5-b581-819e647e887d
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsStartProfiling Function
 Starts profiling in the current context.  

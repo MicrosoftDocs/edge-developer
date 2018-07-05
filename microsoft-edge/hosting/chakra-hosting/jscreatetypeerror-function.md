@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateTypeError function"
 ms.assetid: 8ef7bb77-2c98-482a-bccb-1f0fe2b826f5
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateTypeError Function
 Creates a new JavaScript TypeError error object  

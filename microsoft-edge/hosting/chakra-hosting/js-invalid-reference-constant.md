@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JS_INVALID_REFERENCE constant"
 ms.assetid: 4fade195-bd4f-4f97-a56e-6b987a7bf729
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JS_INVALID_REFERENCE Constant
 An invalid reference.  

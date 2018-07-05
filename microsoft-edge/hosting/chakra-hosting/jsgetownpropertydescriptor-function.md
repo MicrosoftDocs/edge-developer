@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetOwnPropertyDescriptor function"
 ms.assetid: 44c417ce-ab63-44eb-a0ab-19838e3ab34f
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetOwnPropertyDescriptor Function
 Gets a property descriptor for an object's own property.  

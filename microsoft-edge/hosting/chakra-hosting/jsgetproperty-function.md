@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetProperty function"
 ms.assetid: 606bc14f-e849-4f88-a148-6660e923c07b
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetProperty Function
 Gets an object's property.  

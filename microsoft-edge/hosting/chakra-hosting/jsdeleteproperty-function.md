@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsDeleteProperty function"
 ms.assetid: 0f6ac6a7-3576-42f5-98d0-1c06542c8149
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsDeleteProperty Function
 Deletes an object's property.  

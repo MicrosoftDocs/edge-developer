@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c751ccef-20d2-4d41-9568-1c54adf47cdf
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSetProjectionEnqueueCallback Function
 Sets the callback to be used in order to invoke a projection completion back to the callers required thread.  

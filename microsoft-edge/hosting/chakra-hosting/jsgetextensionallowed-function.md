@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetExtensionAllowed function"
 ms.assetid: 839054a1-d643-47d9-89db-6a015bba0d91
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetExtensionAllowed Function
 Returns a value that indicates whether an object is extensible or not.  

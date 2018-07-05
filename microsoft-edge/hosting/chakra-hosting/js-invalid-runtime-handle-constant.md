@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JS_INVALID_RUNTIME_HANDLE constant"
 ms.assetid: ee8c9439-7422-457a-b924-98cf5f126c8c
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JS_INVALID_RUNTIME_HANDLE Constant
 An invalid runtime handle.  

@@ -8,9 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f5d7e446-267a-4a80-a427-6e1b95a3391b
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetContextData Function
 Gets the internal data set on JsrtContext.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateReferenceError function"
 ms.assetid: 1d0b2339-4bea-4dd0-a46a-4dcbf0be3bd8
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateReferenceError Function
 Creates a new JavaScript ReferenceError error object  

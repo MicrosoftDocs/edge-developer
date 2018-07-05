@@ -8,9 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0608d778-f65b-4dc5-a745-364aac57ef59
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsRunSerializedScriptWithCallback Function
 Runs a serialized script.     Provides the ability to lazy load the script source only if/when it is needed.  

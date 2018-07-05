@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateRangeError function"
 ms.assetid: 0ab05de7-57af-4cfd-9aa5-0a69a893cc97
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateRangeError Function
 Creates a new JavaScript RangeError error object  

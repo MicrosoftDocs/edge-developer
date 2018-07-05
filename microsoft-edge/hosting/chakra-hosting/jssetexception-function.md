@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsSetException function"
 ms.assetid: c528793a-2e1b-4ee1-bd2e-e63fd547dc40
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSetException Function
 Sets the runtime of the current context to an exception state.  

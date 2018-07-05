@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateContext function"
 ms.assetid: aceca043-2c73-4029-a06c-8ad6695109cf
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateContext Function
 Creates a script context for running scripts.  

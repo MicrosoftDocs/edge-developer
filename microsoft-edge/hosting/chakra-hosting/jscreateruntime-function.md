@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateRuntime function"
 ms.assetid: 92d09b89-6593-4d73-a562-88f9fec10228
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateRuntime Function
 Creates a new runtime.  

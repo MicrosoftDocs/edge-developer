@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsConvertValueToNumber function"
 ms.assetid: c47b8653-0591-4863-b8b5-33187b315816
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsConvertValueToNumber Function
 Converts the value to number using standard JavaScript semantics.  

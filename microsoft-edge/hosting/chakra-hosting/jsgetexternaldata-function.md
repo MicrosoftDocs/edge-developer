@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetExternalData function"
 ms.assetid: 1919e1da-3ea7-4269-a5fb-a3be06bd029b
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetExternalData Function
 Retrieves the data from an external object.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsSetRuntimeMemoryAllocationCallback function"
 ms.assetid: 6aa7d58d-6456-4df1-815f-1ba36fb4ae14
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSetRuntimeMemoryAllocationCallback Function
 Sets a memory allocation callback for specified runtime  

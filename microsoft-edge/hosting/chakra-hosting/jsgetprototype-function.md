@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetPrototype function"
 ms.assetid: 05d743fc-103e-4a92-86f2-a063f39a2a6f
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetPrototype Function
 Returns the prototype of an object.  

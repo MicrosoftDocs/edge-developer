@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: cee2d86d-ed42-4acb-86ef-95a67e63d0d6
 caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSetIndexedPropertiesToExternalData Function
 Sets an object's indexed properties to external data. The external data will be used as back store for the object's indexed properties and accessed like a typed array.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsSerializeScript function"
 ms.assetid: ca42c194-e1c1-407d-b542-b9d494e3ac4e
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSerializeScript Function
 Serializes a parsed script to a buffer than can be reused.  

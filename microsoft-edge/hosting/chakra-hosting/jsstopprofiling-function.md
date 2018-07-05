@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsStopProfiling function"
 ms.assetid: 3639c04f-a0f9-418b-be39-92f64b4e7ef8
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsStopProfiling Function
 Stops profiling in the current context.  

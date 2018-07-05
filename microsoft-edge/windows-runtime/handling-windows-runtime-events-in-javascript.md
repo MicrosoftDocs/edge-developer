@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "Windows Runtime events [JavaScript]"
 ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
 caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # Handling Windows Runtime Events in JavaScript
 Windows Runtime events are not represented in the same way in JavaScript as they are in C++ or the .NET Framework. They are not class properties, but rather are represented as (lowercased) string identifiers that are passed to the class's `addEventListener` and `removeEventListener` methods. For example, you can add an event handler for the [Geolocator.PositionChanged](https://msdn.microsoft.com/library/windows/apps/xaml/windows.devices.geolocation.geolocator.positionchanged.aspx) event by passing the string "positionchanged" to the `Geolocator.addEventListener` method:  

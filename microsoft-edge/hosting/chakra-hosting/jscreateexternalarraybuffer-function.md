@@ -8,9 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4a02aaec-0f67-4bf9-b37c-71cdb1410ca4
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateExternalArrayBuffer Function
 Creates a Javascript `ArrayBuffer` object to access external memory.  

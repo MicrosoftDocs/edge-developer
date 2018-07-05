@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 712ae298-36a9-47ef-b089-e51835c056bc
 caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetArrayBufferStorage Function
 Obtains the underlying memory storage used by an `ArrayBuffer`.  
