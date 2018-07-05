@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1d15b0b8-516f-4fc6-95aa-2ddd65f8ab75
 caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsObjectToInspectable Function
 Unwraps a JavaScript object to an `IInspectable` pointer  

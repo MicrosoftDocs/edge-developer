@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetRuntime function"
 ms.assetid: 5b62e940-a885-405a-9fdd-0495fb391b95
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetRuntime Function
 Gets the runtime that the context belongs to.  

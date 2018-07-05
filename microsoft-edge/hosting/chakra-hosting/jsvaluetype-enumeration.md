@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsValueType enumeration"
 ms.assetid: 6645e723-e554-41fc-b622-ab54ee044b3d
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsValueType Enumeration
 The JavaScript type of a JsValueRef.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsMemoryEventType enumeration"
 ms.assetid: b4b176b6-b536-472e-8999-95b681a1df55
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsMemoryEventType Enumeration
 Allocation callback event type.  

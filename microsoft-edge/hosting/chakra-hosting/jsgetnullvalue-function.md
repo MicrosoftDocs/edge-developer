@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetNullValue function"
 ms.assetid: 132a1496-8dfe-4d3c-a8f8-389f5b0b50d2
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetNullValue Function
 Gets the value of `null` in the current script context.  

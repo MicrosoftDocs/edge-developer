@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c676db20-3ef1-4f84-8b26-3e06fe0ab2bf
 caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsHasIndexedPropertiesExternalData Function
 Determines whether an object has its indexed properties in external data.  

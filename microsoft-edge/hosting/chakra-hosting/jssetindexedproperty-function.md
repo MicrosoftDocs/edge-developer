@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsSetIndexedProperty function"
 ms.assetid: ccbc5bf4-d99b-485c-ab25-d2bd1ed2142e
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSetIndexedProperty Function
 Set the value at the specified index of an object.  

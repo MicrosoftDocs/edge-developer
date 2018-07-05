@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsEquals function"
 ms.assetid: 8377a7b6-12ff-43e4-8cc8-5a5a198a168b
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsEquals Function
 Compare two JavaScript values for equality.  

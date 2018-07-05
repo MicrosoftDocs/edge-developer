@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 19c1cefb-a7be-4196-b780-9fe6adf35ba5
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsProjectionEnqueueCallback Typedef
 The application callback which is called by JsRT when a projection API is completed on a different thread than the original.  

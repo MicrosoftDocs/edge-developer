@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsConvertValueToObject function"
 ms.assetid: 6528b28a-1d2b-417f-bf78-bf05547c52e1
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsConvertValueToObject Function
 Converts the value to object using standard JavaScript semantics.  

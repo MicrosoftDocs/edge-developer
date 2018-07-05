@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsIsEnumeratingHeap function"
 ms.assetid: 5d14518e-3153-43f2-9a9c-068580cbd54f
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsIsEnumeratingHeap Function
 Returns a value that indicates whether the heap of the current context is being enumerated.  

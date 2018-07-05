@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsRunScript function"
 ms.assetid: 8d6b8c9a-af3a-4e21-a330-5a6b535423a3
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsRunScript Function
 Executes a script.  

@@ -9,9 +9,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # Targeting Edge vs. Legacy Engines in JsRT APIs
 Starting in Windows 10, one of the changes that we've made to Chakra (the JavaScript engine), which is aligned with Windows 10's browser strategy of supporting a new Edge rendering engine, is to support two different Chakra engines:  

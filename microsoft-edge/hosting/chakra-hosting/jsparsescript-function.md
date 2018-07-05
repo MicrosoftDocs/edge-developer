@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsParseScript function"
 ms.assetid: e9d0e363-7cbe-43eb-9dc0-1f47e586c9ab
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsParseScript Function
 Parses a script and returns a function representing the script.  

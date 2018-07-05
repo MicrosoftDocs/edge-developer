@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateFunction function"
 ms.assetid: b298a96a-5ef7-4203-a8c8-55f9bfc6d2bb
 caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateFunction Function
 Creates a new JavaScript function.  

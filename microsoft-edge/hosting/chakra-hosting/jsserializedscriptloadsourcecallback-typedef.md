@@ -8,9 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9406c488-76ac-49e5-b305-39751f3412ea
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSerializedScriptLoadSourceCallback Typedef
 Called by the runtime to load the source code of the serialized script.     The caller must keep the script buffer valid until the `JsSerializedScriptUnloadCallback`.  

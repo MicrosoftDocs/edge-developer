@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsEnableRuntimeExecution function"
 ms.assetid: daa2036b-aef6-497d-a8ce-5a006b6ed13f
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsEnableRuntimeExecution Function
 Enables script execution in a runtime.  

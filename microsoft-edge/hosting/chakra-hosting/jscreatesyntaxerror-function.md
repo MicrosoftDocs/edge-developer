@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateSyntaxError function"
 ms.assetid: 839845fc-60c4-4ffc-bfcc-fd7a8f06126f
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateSyntaxError Function
 Creates a new JavaScript SyntaxError error object  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsDeleteIndexedProperty function"
 ms.assetid: cc876839-2ecd-41a8-82d0-c19b3de944e3
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsDeleteIndexedProperty Function
 Delete the value at the specified index of an object.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetValueType function"
 ms.assetid: f403cf7c-c8c0-4a17-bfa9-0302d00e760e
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetValueType Function
 Gets the JavaScript type of a JsValueRef.  

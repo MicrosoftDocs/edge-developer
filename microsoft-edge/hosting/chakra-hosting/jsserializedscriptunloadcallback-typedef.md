@@ -8,9 +8,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8d18c392-cca0-411e-9f2b-0d788b16161a
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsSerializedScriptUnloadCallback typedef
 Called by the runtime when it is finished with all resources related to the script execution.     The caller should free the source if loaded, the byte code, and the context at this time.  

@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsCreateExternalObject function"
 ms.assetid: 6bcef506-93fb-429b-b06a-a971ff0b71f3
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsCreateExternalObject Function
 Creates a new object that stores some external data.  

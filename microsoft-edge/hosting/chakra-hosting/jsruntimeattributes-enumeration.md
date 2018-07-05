@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsRuntimeAttributes enumeration"
 ms.assetid: f76d82e9-a695-4d6a-96c1-b3a4d27fed68
 caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsRuntimeAttributes Enumeration
 Attributes of a runtime.  

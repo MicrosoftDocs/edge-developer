@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsStartDebugging function"
 ms.assetid: c48ba02d-6d47-466f-a970-02f087d525f3
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsStartDebugging Function
 Starts debugging in the current context.  

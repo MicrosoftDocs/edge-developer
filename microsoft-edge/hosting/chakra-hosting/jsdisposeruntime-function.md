@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsDisposeRuntime function"
 ms.assetid: 0aefde3f-7250-48be-afc5-53ea85c12f30
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsDisposeRuntime Function
 Disposes a runtime.  

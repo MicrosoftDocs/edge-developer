@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsGetRuntimeMemoryUsage function"
 ms.assetid: b9bd4146-bfbc-4cb1-a0e9-a0ded7fb09bd
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsGetRuntimeMemoryUsage Function
 Gets the current memory usage for a runtime.  
