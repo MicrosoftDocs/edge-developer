@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JsNumberToDouble function"
 ms.assetid: 5f52e8b6-2b70-49a3-879a-bd83ebf2ac33
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+author: "erikadoyle"
+ms.author: "edoyle"
+manager: "jken"
 ---
 # JsNumberToDouble Function
 Retrieves the `double` value of a number value.  
