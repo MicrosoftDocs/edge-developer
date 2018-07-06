@@ -52,6 +52,10 @@ The tools have also been updated with a number of major features, including basi
 
 Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
 
+## JavaScript
+
+
+
 ### Media element
 
 EdgeHTML 17 includes updates to [HTMLMediaElement](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) including:
