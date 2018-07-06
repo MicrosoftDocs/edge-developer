@@ -4,7 +4,7 @@ description: Reference common Console codes and suggested fixes
 title: Microsoft Edge DevTools - Console error and status codes
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/10/2017
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
@@ -21,8 +21,8 @@ Code Prefix | Area | Description
 [HTML1112-1300](#html-codes) | HTML | Most of these are legacy codes specific to Internet Explorer concepts such as *Document Mode* and *Compatibility View*
 [HTML1400-1532](#html5-parser-warnings) | HTML5 parsing | Validation warnings thrown by the HTML5 parser. 
 [HTTP](#http-codes) | Server errors and status | Codes returned from remote servers in response to HTTP requests.
-[SCRIPT10xx](https://docs.microsoft.com/en-us/scripting/javascript/reference/javascript-syntax-errors) | JavaScript syntax errors | Occur when the structure of one of your JavaScript statements violates one or more of the syntactic rules. 
-[SCRIPT50xx](https://docs.microsoft.com/en-us/scripting/javascript/reference/javascript-run-time-errors) | JavaScript runtime errors | Occur when your script attempts to perform an action that the system cannot execute. 
+[SCRIPT10xx](#javascript-syntax-errors) | JavaScript syntax errors | Occur when the structure of one of your JavaScript statements violates one or more of the syntactic rules. 
+[SCRIPT50xx](#javascript-runtime-errors) | JavaScript runtime errors | Occur when your script attempts to perform an action that the system cannot execute. 
 [SEC71xx](#security-codes) | Security | Reflect security conditions that Microsoft Edge enforces, such as *Mixed Content* and *Tracking Protection*.
 [SVG560x](#svg-codes) | Scalable Vector Graphics |  doesn't currently support extensive SVG debugging, but some console messages are provided for debugging purposes.
 WebGL11_xxx | WebGL | Error messages from the WebGL context. See also [GLSL errors](https://msdn.microsoft.com/library/dn611835.aspx).
@@ -199,6 +199,99 @@ HTTP507 | INSUFFICIENT STORAGE | The server is unable to store the representatio
 HTTP508 | LOOP DETECTED | The server detected an infinite loop while servicing the request.
 HTTP510 | NOT EXTENDED | Further extensions to the request are required for the server to fulfill it.
 HTTP511 | NETWORK AUTHENTICATION REQUIRED | The client must authenticate to gain network access.
+
+## JavaScript syntax errors
+JavaScript syntax errors occur when the structure of one of your statements violates one or more of the syntactic rules.  
+
+|Error Number|Description|  
+|------------------|-----------------|  
+|1019|[Can't have 'break' outside of loop](../../javascript/misc/can-t-have-break-outside-of-loop.md)|  
+|1020|[Can't have 'continue' outside of loop](../../javascript/misc/can-t-have-continue-outside-of-loop.md)|  
+|1030|[Conditional compilation is turned off](../../javascript/misc/conditional-compilation-is-turned-off.md)|  
+|1027|['default' can only appear once in a 'switch' statement](../../javascript/misc/default-can-only-appear-once-in-a-switch-statement.md)|  
+|1005|[Expected '('](../../javascript/misc/expected-left-parenthesis-javascript.md)|  
+|1006|[Expected ')'](../../javascript/misc/expected-right-parenthesis-javascript.md)|  
+|1012|[Expected '/'](../../javascript/misc/expected-minus.md)|  
+|1003|[Expected ':'](../../javascript/misc/expected-colon.md)|  
+|1004|[Expected ';'](../../javascript/misc/expected-semicolon.md)|  
+|1032|[Expected '@'](../../javascript/misc/expected-at.md)|  
+|1029|[Expected '@end'](../../javascript/misc/expected-at-end.md)|  
+|1007|[Expected '&#93;'](../../javascript/misc/expected-right-square-bracket.md)|  
+|1008|[Expected '{'](../../javascript/misc/expected-left-curly-brace.md)|  
+|1009|[Expected '}'](../../javascript/misc/expected-right-curly-brace.md)|  
+|1011|[Expected '='](../../javascript/misc/expected-equal-javascript.md)|  
+|1033|[Expected 'catch'](../../javascript/misc/expected-catch.md)|  
+|1031|[Expected constant](../../javascript/misc/expected-constant.md)|  
+|1023|[Expected hexadecimal digit](../../javascript/misc/expected-hexadecimal-digit.md)|  
+|1010|[Expected identifier](../../javascript/misc/expected-identifier-javascript.md)|  
+|1028|[Expected identifier, string or number](../../javascript/misc/expected-identifier-string-or-number.md)|  
+|1024|[Expected 'while'](../../javascript/misc/expected-while.md)|  
+|1014|[Invalid character](../../javascript/misc/invalid-character-javascript.md)|  
+|1026|[Label not found](../../javascript/misc/label-not-found.md)|  
+|1025|[Label redefined](../../javascript/misc/label-redefined.md)|  
+|1018|['return' statement outside of function](../../javascript/misc/return-statement-outside-of-function.md)|  
+|1002|[Syntax error](../../javascript/misc/syntax-error-javascript.md)|  
+|1035|[Throw must be followed by an expression on the same source line](../../javascript/misc/throw-must-be-followed-by-an-expression-on-the-same-source-line.md)|  
+|1016|[Unterminated comment](../../javascript/misc/unterminated-comment.md)|  
+|1015|[Unterminated string constant](../../javascript/misc/unterminated-string-constant-javascript.md)|  
+  
+### Script Host Errors  
+
+The following are errors pertaining to the script host, but you may see them occasionally.  
+  
+|Error|HRESULT|Description|  
+|-----------|-------------|-----------------|  
+|SCRIPT_E_RECORDED|0x86664004|An error has been recorded to be passed between script engine and host. The host needs to pass the error code to the caller.|  
+|SCRIPT_E_REPORTED|0x80020101|Script engine has reported an unhandled exception to the host via IActiveScriptSite::OnScriptError. Host can ignore this error.|  
+|SCRIPT_E_PROPAGATE|0x8002010|A script error is being propagated to the caller which might be in a different thread. The host should pass the error code to the caller.|
+
+## JavaScript run-time errors
+
+JavaScript run-time errors are errors that occur when your script attempts to perform an action that the system cannot execute. You may see run-time errors when variable expressions are being evaluated or memory is being allocated.
+
+|Error Number|Description|  
+|------------------|-----------------|  
+|5|[Access is denied](../../javascript/misc/access-is-denied.md)|  
+|438|[Object doesn't support this property or method](../../javascript/misc/object-doesn-t-support-this-property-or-method.md)|  
+|1001|Out of memory|  
+
+### Windows Runtime errors
+
+ If you are using Windows Runtime (WinRT) APIs, you may see JavaScript errors that have been converted from Windows Runtime HRESULTs. Windows Runtime HRESULTs in the range over 0x80070000 are converted to JavaScript errors by taking the hexadecimal value of the low bits and converting it to a decimal. For example, the HRESULT 0x80070032 is converted to the decimal value 50, and the JavaScript error is SCRIPT50. The HRESULT 0x80074005 is converted to the decimal value 16389, and the JavaScript error is SCRIPT16389.
+
+ |Error Number|Description|  
+|------------------|-----------------|  
+|5029|[Array length must be a finite positive integer](../../javascript/misc/array-length-must-be-a-finite-positive-integer.md)|  
+|5030|[Array length must be assigned a finite positive number](../../javascript/misc/array-length-must-be-assigned-a-finite-positive-number.md)|  
+|5028|[Array or arguments object expected](../../javascript/misc/array-or-arguments-object-expected.md)|  
+|5010|[Boolean expected](../../javascript/misc/boolean-expected.md)|  
+|5003|[Cannot assign to a function result](../../javascript/misc/cannot-assign-to-a-function-result.md)|  
+|5000|[Cannot assign to 'this'](../../javascript/misc/cannot-assign-to-this.md)|  
+|5034|[Circular reference in value argument not supported](../../javascript/misc/circular-reference-in-value-argument-not-supported.md)|  
+|5006|[Date object expected](../../javascript/misc/date-object-expected.md)|  
+|5015|[Enumerator object expected](../../javascript/misc/enumerator-object-expected.md)|  
+|5022|[Exception thrown and not caught](../../javascript/misc/exception-thrown-and-not-caught.md)|  
+|5020|[Expected ')' in regular expression](../../javascript/misc/expected-right-parenthesis-in-regular-expression-javascript.md)|  
+|5019|[Expected '&#93;' in regular expression](../../javascript/misc/expected-right-square-bracket-in-regular-expression-javascript.md)|  
+|5023|[Function does not have a valid prototype object](../../javascript/misc/function-does-not-have-a-valid-prototype-object.md)|  
+|5002|[Function expected](../../javascript/misc/function-expected.md)|  
+|5008|[Illegal assignment](../../javascript/misc/illegal-assignment-javascript.md)|  
+|5021|[Invalid range in character set](../../javascript/misc/invalid-range-in-character-set-javascript.md)|  
+|5035|[Invalid replacer argument](../../javascript/misc/invalid-replacer-argument.md)|  
+|5014|[JavaScript object expected](../../javascript/misc/javascript-object-expected.md)|  
+|5001|[Number expected](../../javascript/misc/number-expected.md)|  
+|5007|[Object expected](../../javascript/misc/object-expected.md)|  
+|5012|[Object member expected](../../javascript/misc/object-member-expected.md)|  
+|5016|[Regular Expression object expected](../../javascript/misc/regular-expression-object-expected.md)|  
+|5005|[String expected](../../javascript/misc/string-expected.md)|  
+|5017|[Syntax error in regular expression](../../javascript/misc/syntax-error-in-regular-expression-javascript.md)|  
+|5026|[The number of fractional digits is out of range](../../javascript/misc/the-number-of-fractional-digits-is-out-of-range.md)|  
+|5027|[The precision is out of range](../../javascript/misc/the-precision-is-out-of-range.md)|  
+|5025|[The URI to be decoded is not a valid encoding](../../javascript/misc/the-uri-to-be-decoded-is-not-a-valid-encoding.md)|  
+|5024|[The URI to be encoded contains an invalid character](../../javascript/misc/the-uri-to-be-encoded-contains-an-invalid-character.md)|  
+|5009|[Undefined identifier](../../javascript/misc/undefined-identifier.md)|  
+|5018|[Unexpected quantifier](../../javascript/misc/unexpected-quantifier-javascript.md)|  
+|5013|[VBArray expected](../../javascript/misc/vbarray-expected.md)|  
 
 ## Security codes
 
