@@ -34,6 +34,19 @@ EdgeHTML 13 introduces the following graphics updates:
 * [`<picture>` element](https://developer.microsoft.com/microsoft-edge/platform/status/pictureelement/)
 * [SVG external content](https://developer.microsoft.com/microsoft-edge/platform/status/svgexternalcontent/)
 
+### JavaScript
+EdgeHTML 13 includes [major improvements and new feature support in Chakra](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/), the JavaScript engine powering Microsoft Edge, including:
+
+#### New features (on by default)
+
+* [asm.js](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/asmjs/?q=asm.js) enabled by default ([blog post](http://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [demo](https://dev.windows.com/en-us/microsoft-edge/testdrive/demos/chess/))
+* [Classes](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/asmjs/?q=classes) (ES6)
+
+#### Experimental JavaScript features (enabled with *about:flags*)
+
+* [Async functions](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)
+* [Exponentiation operator](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) (ES2016)
+* [Destructuring](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/destructuringes6/?q=destructuring) (ES6)
 
 ### User Input
 The following features introduced in EdgeHTML 13 improve user input:
