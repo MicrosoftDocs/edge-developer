@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console codes
 
 # Console error and status codes
 
-This reference helps you interpret error and status messages from the  DevTools [Console](../console). Use the following table to look up codes by their prefix (where `x` represents a `0-9` digit):
+This reference helps you interpret error and status messages from the  DevTools [Console](../console.md). Use the following table to look up codes by their prefix (where `x` represents a `0-9` digit):
 
 Code Prefix | Area | Description
 :---------- | :--- | :-----
