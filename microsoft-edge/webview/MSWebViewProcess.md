@@ -3,7 +3,7 @@ description: Represents a webview process.
 title: MSWebViewProcess object
 author: libbymc
 ms.author: libbymc
-ms.date: 04/10/2018
+ms.date: 05/08/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
