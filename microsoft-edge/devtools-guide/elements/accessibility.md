@@ -3,7 +3,7 @@ description: Use the Accessibility tools to view verify and test page accessibil
 title: Microsoft Edge DevTools - Elements - Accessibility
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/10/2017
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, accessibility

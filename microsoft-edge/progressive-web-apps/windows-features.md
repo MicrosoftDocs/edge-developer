@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA for Windows
 author: erikadoyle
 ms.author: edoyle
-ms.date: 04/30/2018
+ms.date: 05/31/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP
