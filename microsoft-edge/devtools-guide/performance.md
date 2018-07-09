@@ -3,7 +3,7 @@ description: Use the Performance panel to analyze the responsivenes of your page
 title: Microsoft Edge DevTools - Performance
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/10/2017
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, performance, profile, frame rate, fps, CPU utilization, JavaScript execution

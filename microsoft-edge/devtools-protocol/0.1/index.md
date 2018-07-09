@@ -3,7 +3,7 @@ description: Release Notes for Microsoft Edge DevTools Protocol Version 0.1
 title: Microsoft Edge DevTools Protocol Version 0.1 Release Notes
 author: erikadoyle
 ms.author: edoyle
-ms.date: 3/21/2018
+ms.date: 05/02/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---

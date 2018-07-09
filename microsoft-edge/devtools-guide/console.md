@@ -3,7 +3,7 @@ description: Use the Console for interactive debugging and adhoc testing
 title: Microsoft Edge DevTools - Console
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/10/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console
