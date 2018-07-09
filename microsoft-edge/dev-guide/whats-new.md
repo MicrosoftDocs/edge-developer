@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML preview bu
 title: What's New in EdgeHTML for developers
 author: libbymc
 ms.author: libbymc
-ms.date: 06/25/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
@@ -19,6 +19,9 @@ Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are l
 
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+## Preview Build 17704
+No API changes. 
 
 ## Preview Build 17692
 Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 17692. 
