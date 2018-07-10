@@ -63,11 +63,18 @@ Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`. 
 
+### Threading model and reliability
+
 Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-webview>` markup creates a WebView on a new unique thread in the app's process. Running on a new unique thread means that long running script from one WebView is unable to hang the app or other WebViews. Creating a WebView via the `new MSWebView()` constructor creates a WebView in a separate WebView process. Running in a unique process means that in addition to protection from long running script, the app is also protected from web content that crashes the WebView process. Creating a WebView via the [`MSWebViewProcess.createWebViewAsync`](./webview/MSWebViewProcess.md#createwebviewasync) method also creates a WebView in a seperate process but allows the caller more control over process settings and grouping WebViews in WebView processes. See `MSWebViewProcess` for more information. 
 
-For more information, see the [HTML WebView control sample](http://go.microsoft.com/fwlink/p/?linkid=309825).
+### WinRT API access
+
+A UWP app may allow HTML documents inside WebViews to have access to WinRT APIs. This is via the WindowsRuntimeAccess attribute of the Rule child elements of the ApplicationContentUriRules element of the AppxManifest.xml of the UWP app. Set WindowsRuntimeAccess to 'all' and HTML documents with matching URIs will be allowed to use WinRT. This is the same as providing WinRT access to HTML content in JavaScript UWP apps so see [Call WinRT APIs from your PWA](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#call-winrt-apis-from-your-pwa) for more information.
+
+UI related WinRT APIs may not work when called from a WebView running on its own thread but may work when called from a WebView running in a separate WebView process. When using a WebView on its own unique thread, that thread is not the app's view thread. Some UI related WinRT APIs require to be called from the app's view thread. WebViews created in a separate WebView process do run on a view thread and so should not face the same restrictions as WebView's running on their own unique thread. If you have trouble with UI related WinRT APIs in a WebView ensure that you're using a WebView in its own WebView process as described above.
 
 ### AppCache storage limitations
+
 Applications using JavaScript support of the Application Cache API (or AppCache), as defined in the [HTML5 specification](http://go.microsoft.com/fwlink/p/?LinkId=228542), to create offline web applications must observe available storage limitations. This is especially true in devices with limited memory space. The practical limits on the size of the AppCache are always a function of available disk storage space. The general guidelines are shown below.
 
 | Volume size         |AppCache per domain | AppCache per user   | 
@@ -77,6 +84,8 @@ Up to 4GB | 10MB | 50MB |
 16GB to 32 GB | 50MB | 1GB |
 
 All Windows 10 apps are intended to use the same AppCache quota model, so the available disk storage limitation applies to both desktop and phone apps. The is also a hard limit after pages loaded inside **WebView** together have consumed 1 GB of *AppCache* space; requests for additional *AppCache* storage above this limit will be denied. 
+
+For more information, see the [HTML WebView control sample](http://go.microsoft.com/fwlink/p/?linkid=309825) and the JSBrowser's [Harnessing the WebView control](https://github.com/MicrosoftEdge/JSBrowser#harnessing-the-webview-control) documentation.
 
 ## Events
 
