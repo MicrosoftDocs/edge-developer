@@ -45,7 +45,7 @@ Additionally, features first previewed in EdgeHTML 15 are now stable and enabled
 
 #### New features (on by default)
 
-* [WebAssembly](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) ([demo](https://webassembly.org/demo/))
+* [WebAssembly](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP ([demo](https://webassembly.org/demo/))
 * [Shared Memory and Atomics](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)
 
 ### Payment Request API
