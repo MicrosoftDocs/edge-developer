@@ -52,7 +52,7 @@ The tools have also been updated with a number of major features, including basi
 
 Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
 
-## JavaScript
+### JavaScript
 
 With EdgeHTML 17 the Chakra JavaScript engine introduces performance improvements in a number of key areas:
 
