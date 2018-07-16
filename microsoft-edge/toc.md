@@ -11,7 +11,7 @@
 #### [EdgeHTML 14](dev-guide/whats-new/edgeHTML-14.md)
 #### [EdgeHTML 13](dev-guide/whats-new/edgeHTML-13.md)
 #### [EdgeHTML 12](dev-guide/whats-new/edgeHTML-12.md)
-#### [JavaScript Version Information](dev-guide/whats-new/javascript-version-information.md)
+##### [JavaScript Version Information](dev-guide/whats-new/javascript-version-information.md)
 ### [Browser features](dev-guide/browser-features.md)
 #### [Flash](dev-guide/browser-features/flash.md)
 #### [Reading view](dev-guide/browser-features/reading-view.md)
