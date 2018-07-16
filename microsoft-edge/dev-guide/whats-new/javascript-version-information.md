@@ -388,6 +388,3 @@ The following table summarizes the JavaScript support across Internet Explorer, 
 |[writeln Function](https://docs.microsoft.com/en-us/scripting/javascript/reference/debug-writeln-function-javascript)|Y|Y|Y|Y|Y|Y|Y|  
   
  \* Supports DOM objects but not user-defined objects. The `enumerable` and `configurable` attributes can be specified, but they are not used.  
-  
-## See Also  
- [Defining Document Compatibility](http://go.microsoft.com/fwlink/?LinkId=208537)
