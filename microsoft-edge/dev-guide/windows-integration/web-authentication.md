@@ -228,7 +228,7 @@ A few things to note when using the Windows Hello authenticator:
 
 ## Demos
 
-[Client and server code sample](https://github.com/ibdamlaj/webauthnsample/)
+[Client and server code sample](https://github.com/MicrosoftEdge/webauthnsample/)
 
 [Windows Hello Test Drive demo](https://webauthnsample.azurewebsites.net/)
 
