@@ -12,252 +12,226 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Web authentication and Windows Hello
 
-The Web Authentication (formerly *FIDO 2.0* ) API in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge (*ms-* prefixed) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future. **This topic will show you how to try out Windows Hello authentication with Microsoft Edge while also future-proofing your code against browser updates.**
+The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
 
-The Web Authentication API is an emerging standard put forth by the [FIDO Alliance](https://fidoalliance.org/) with the aim of providing an interoperable way of doing web authentication using Windows Hello and other biometric devices across browsers. The Web Authentication specification defines two authentication scenarios: password-less and two factor. In the password-less case, the user does not need to log into the web page using a user name or password – they can login solely using Windows Hello. In the two factor case, the user logs in normally using a username and password, but Windows Hello is used as a second factor check to make the overall authentication stronger.
-
-Using Web Authentication combined with Windows Hello, the server sends down a plain text challenge to the browser. Once Microsoft Edge is able to verify the user through Windows Hello, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server. If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely. With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared. Furthermore, the private key can never be moved from modern systems with TPM-enabled hardware.
+Using Web Authentication, the server sends down a plain text challenge to the browser. Once Microsoft Edge is able to verify the user through Windows Hello or an external FIDO2 device, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server. If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely. With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared. Furthermore, the private key can never be moved from secure elements or modern systems with TPM-enabled hardware.
 
 There are two basic steps to using the Web Authentication API:
 
-**1. Register your user with `makeCredential`**
+**1. Register your user with `create`**
 
-**2. Authenticate your user with `getAssertion`**
+**2. Authenticate your user with `get`**
 
-The following will walk you through this flow using the recommended [Webauthn.js polyfill](https://github.com/adrianba/fido-snippets/blob/master/polyfill/webauthn.js). The [complete code](https://github.com/adrianba/fido-snippets/) is available for this server and client side demo. [C#](https://github.com/adrianba/fido-snippets/tree/master/csharp), [PHP](https://github.com/adrianba/fido-snippets/tree/master/php), and [Node.JS](https://github.com/adrianba/fido-snippets/tree/master/nodejs) server side versions are available.
+The following will walk you through this flow using the [WebAuthn Sample App](https://github.com/idamlaj/webauthnsample).
 
 ## Register your user
 
-Acting as an *identity provider*, you will first need to create a Web Authentication credential for your user with the window.webauthn.**makeCredential** method. Before you register that credential to the user on your server, you will need to confirm the identity of the user. This can be done by sending the user an email confirmation or asking them to use their traditional login method.
+Acting as an *identity provider*, you will first need to create a Web Authentication credential for your user with the navigator.credentials.**create** method. Before you register that credential to the user on your server, you will need to confirm the identity of the user. This can be done by sending the user an email confirmation or asking them to use their traditional login method.
 
-The makeCredential method takes the following parameters:
- - **user account information**
 
+The `create` method takes the following parameters:
+
+ - **relying party information**
 ```
-    var userAccountInformation = {
-        rpDisplayName: "fido-demo",
-        displayName: email
-    };
+    rp: {
+        name: "WebAuthn Sample App",
+        icon: "https://example.com/rpIcon.png"
+    },
+```
+
+ - **user account information**
+```
+    user: {
+        id: stringToArrayBuffer("some.user.id"),
+        name: "bob.smith@contoso.com",
+        displayName: "Bob Smith",
+        icon: "https://example.com/userIcon.png"
+    },
 ```
 
  - **crypto parameters**
-
 ```
-    var cryptoParams = [
+    pubKeyCredParams: [
         {
-            type: "ScopedCred",
-            algorithm: "RSASSA-PKCS1-v1_5",
+            //External authenticators support the ES256 algorithm
+            type: "public-key",
+            alg: -7                 
+        }, 
+        {
+            //Windows Hello supports the RS256 algorithm
+            type: "public-key",
+            alg: -257
         }
-    ];
+    ],
 ```
 
-The resulting promise returns an object representing the credential that you then send back to the server for validating future authentications:
+ - **authenticator selection parameters**
+```
+    authenticatorSelection: {
+        //Select authenticators that support username-less flows
+        requireResidentKey: true,
+        //Select authenticators that have a second factor (e.g. PIN, Bio)
+        userVerification: "required",
+        //Selects between bound or detachable authenticators
+        authenticatorAttachment: "platform"
+    },
+```
+
+- **other options**
+```
+    //Since Edge shows UI, it is better to select larger timeout values
+    timeout: 50000,
+    //an opaque challenge that the authenticator signs over
+    challenge: challenge,
+    //prevent re-registration by specifying existing credentials here
+    excludeCredentials: [],
+    //specifies whether you need an attestation statement
+    attestation: "none" 
+```
+
+You can use [credential creation parameters](https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptions) to configure the credential you want to create. In particular, you can choose to create a Windows Hello credential by setting `authenticatorAttachment` is set to `platform`, or a roaming credential on an external FIDO2 device by setting `authenticatorAttachment` to `cross-platform`. 
+
+When you use the create method, Microsoft Edge will first ask the user to verify their presence by scanning their face, fingerprint, PIN, or by taking action an external FIDO2 device. Once this step is completed the authenticator will generate a public/private key pair and store the private key. These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device. 
+
+The resulting promise returns an [attestation object](https://w3c.github.io/webauthn/#sctn-attestation) representing the new credential. The attestation object contains the public key for the credential. You'll send this object to the server for validating future authentications. Before sending back to the server, you'll need to base64-encode the raw data.
 
 **Client**
 ```
-<script src="webauthn.js"><!-- polyfill to map Microsoft Edge experimental implementation to current W3C spec --></script>
 <script>
-    var email = '<%=user.email%>';
-    var name = '<%=user.name%>';
-
-    webauthn.makeCredential(userAccountInformation, cryptoParams)
-        .then(function (creds) {
-            document.getElementById('form-id').value = creds.credential.id;
-            document.getElementById('form-pk').value = JSON.stringify(creds.publicKey);
-            document.getElementById('form-email').value = email;
-            document.getElementById('form-name').value = name;
-            document.getElementById('theform').submit();
-        }).catch(function (err) {
-            // No acceptable authenticator or user refused consent. Handle appropriately.
-            alert(err);
-        });
+    navigator.credentials.create({
+        publicKey: createCredentialOptions
+    }).then(rawAttestation => {
+        var attestation = {
+            id: base64encode(rawAttestation.rawId),
+            clientDataJSON: arrayBufferToString(rawAttestation.response.clientDataJSON),
+            attestationObject: base64encode(rawAttestation.response.attestationObject)
+        };
+        return rest_put("/credentials", attestation);
+    })
 </script>
 ```
 
-When you use the makeCredential method, Microsoft Edge will first ask Windows Hello to use face or fingerprint identification to verify that the user is the same user as the one logged into the Windows account. Once this step is completed, Microsoft Passport will generate a public/private key pair and store the private key in the Trusted Platform Module (TPM), the dedicated crypto processor hardware used to store credentials. If the user doesn’t have a TPM enabled device, these keys will be stored in software. These credentials are created per origin, per Windows account, and will not be roamed because they are tied to the device. This means that you’ll need to make sure the user registers to use Windows Hello for every device they use.
+The server should then decode the attestation object, perform verification steps, extract the public key for this credential, and store it for future authentications. A detailed list of steps can be found in the [credential registration algorithm](https://w3c.github.io/webauthn/#registering-a-new-credential) in the WebAuthn specification.
+
+**Server**
+```
+    attestationObject = cbor.decodeFirstSync(Buffer.from(attestation.attestationObject, 'base64'));
+    authenticatorData = parseAuthenticatorData(attestationObject.authData);
+    var credential = await storage.Credentials.create({
+        id: authenticatorData.attestedCredentialData.credentialId.toString('base64'),
+        publicKeyJwk: authenticatorData.attestedCredentialData.publicKeyJwk,
+        signCount: authenticatorData.signCount
+    });
+```
 
 ## Authenticate your user
 
-Once the credential is created on the client, the next time the user attempts to log into the site you can offer to sign them in using Windows Hello instead of a password with a call to window.webauthn.**getAssertion**.
+Once the credential is created on the client, the next time the user attempts to log into the site you can offer to sign them in using their Web Authentication credential instead of a password with a call to navigator.credentials.**get**.
 
-The getAssertion method takes the *challenge* as its only required parameter. The challenge is the randomly generated quantity that the server will send down to a client to sign with the user's private key. For example:
+The `get` method takes the *challenge* as its only required parameter. The challenge is an opaque sequence of bytes that the server will send down to a client to sign with the user's private key. For example:
 
 **Server**
 ```
-var crypto = require('crypto');
-
-Strategy.prototype.generateChallenge = function() {
-    return this.generateVerifiableString(crypto.randomBytes(32));
-};
-
-Strategy.prototype.generateVerifiableString = function(data) {
-    // Create cipher using secret
-    var d = new Buffer(data);
-    var c = crypto.createCipher('aes192',new Buffer(this._secret));
-
-    // Encrypt data
-    c.update(d);
-
-    // Hash results of encrypting data
-    var hash = crypto.createHash('sha256');
-    hash.update(c.final());
-
-    // Combine original data with hash
-    return d.toString('hex') + string_separator + hash.digest('hex');
-};
+    var jwt = require('jsonwebtoken');
+    var jwt_secret = "defaultsecret";
+    fido.getChallenge = () => {
+        return jwt.sign({}, jwt_secret, {
+            expiresIn: 120 * 1000
+        });
+    };
 ```
 
-Once the getAssertion call is made, Microsoft Edge will show the Windows Hello prompt, which will verify the identity of the user using biometrics. After the user is verified, the challenge will be signed within the TPM and the promise will return with an assertion object that contains the signature and other metadata for you to send to the server:
+After retrieving a challenge from the server, you'll call the get API along with [credential request options](https://w3c.github.io/webauthn/#credentialrequestoptions-extension). Microsoft Edge will show a prompt, which will verify the identity of the user using Windows Hello or an external FIDO2 device. After the user is verified, the challenge will be signed within the TPM or FIDO2 device and the promise will return with an [assertion object](https://w3c.github.io/webauthn/#authenticatorassertionresponse) that contains the signature and other metadata for you to send to the server.
 
 **Client**
 ```
-<script src="webauthn.js"><!-- polyfill to map Microsoft Edge experimental implementation to current W3C spec --></script>
-<script>
-    var challenge = '<%=challenge%>';
+    var credentialRequestOptions = {
+        //specifies which credential IDs are allowed to authenticate the user
+        //if empty, any credential can authenticate the users
+        allowCredentials: allowCredentials,
+        //an opaque challenge that the authenticator signs over
+        challenge: challenge,
+        //Since Edge shows UI, it is better to select larger timeout values
+        timeout: 50000
+    };
 
-    webauthn.getAssertion(challenge)
-    .then(function(assertion) {
-      document.getElementById("form-id").value = assertion.credential.id;
-      document.getElementById("form-type").value = assertion.credential.type;
-      document.getElementById("form-data").value = assertion.clientData;
-      document.getElementById("form-sig").value = assertion.signature;
-      document.getElementById("form-authnr").value = assertion.authenticatorData;
-      document.getElementById("form-challenge").value = challenge;
-      document.getElementById("theform").submit();
+    navigator.credentials.get({
+        publicKey: credentialRequestOptions
+    }).then(rawAssertion => {
+        var assertion = {
+            id: base64encode(rawAssertion.rawId),
+            clientDataJSON: arrayBufferToString(rawAssertion.response.clientDataJSON),
+            userHandle: base64encode(rawAssertion.response.userHandle),
+            signature: base64encode(rawAssertion.response.signature),
+            authenticatorData: base64encode(rawAssertion.response.authenticatorData)
+        };
+        return rest_put("/assertion", assertion);
     })
-    .catch(function(err) {
-      if(err && err.name) {
-        document.getElementById("form-err").value = err.name;
-      } else {
-        document.getElementById("form-err").value = "unknown";
-      }
-      document.getElementById("theform").submit();
-    });
-
-</script>
 ```
 
-Once you receive the assertion on the server, you will need to validate the signature to authenticate the user. For example (in Node.JS):
+Once you receive the assertion on the server, you will need to validate the signature to authenticate the user. The following is some sample code.  A detailed list of steps can be found in the (assertion verification algorithm)[https://w3c.github.io/webauthn/#verifying-assertion] in the WebAuthn specification.
 
 **Server**
-
 ```
-var jwkToPem = require('jwk-to-pem')
-var crypto = require('crypto');
+    var jwkToPem = require('jwk-to-pem')
+    var crypto = require('crypto');
 
-var fidoAuthenticator = {
-     validateSignature: function (publicKey, clientData, authnrData, signature, challenge) {
-         // Make sure the challenge in the client data
-         // matches the expected challenge
-         var c = new Buffer(clientData, 'base64');
-         var cc = JSON.parse(c.toString().replace(/\0/g,''));
-         if(cc.challenge != challenge) return false;
+    ...
 
-         // Hash data with sha256
-         const hash = crypto.createHash('sha256');
-         hash.update(c);
-         var h = hash.digest();
+    // Using credential’s id attribute, look up the corresponding 
+    // credential public key.
+    var credential = await storage.Credentials.findOne({
+        id: assertion.id
+    });
 
-         // Verify signature is correct for authnrData + hash
-         var verify = crypto.createVerify('RSA-SHA256');
-         verify.update(new Buffer(authnrData,'base64'));
-         verify.update(h);
-         return verify.verify(jwkToPem(JSON.parse(publicKey)), signature, 'base64');
-     }
-};   
-```
+    //Refer to sample to see how to verify client data and authenticator data
 
-## Differences between Microsoft Edge and the spec
+    ...
 
-> [!NOTE]
-> When trying out the Web Authentication API with Windows Hello in Microsoft Edge, we recommend using the Webauthn.js polyfill as shown above to avoid having to account for the discrepancies listed here. We'll update this polyfill for every major published version of the specification.
+    //Using the credential public key from lookup, verify that sig is a valid
+    //signature over the binary concatenation of authData and hash.
+    var publicKey = credential.publicKeyJwk;
+    var verify = (publicKey.kty === "RSA") ? crypto.createVerify('RSA-SHA256') : crypto.createVerify('sha256');
+    verify.update(authData);
+    verify.update(hash);
+    if (!verify.verify(jwkToPem(publicKey), sig))
+        throw new Error("Could not verify signature");
 
-
-The current Microsoft Edge implementation is based on an earlier draft of the Web Authentication specification and is likely to change in future builds and as the spec evolves. The current differences include:
-
-- Microsoft Edge APIs are MS- prefixed.
-- Microsoft Edge does not yet support external credentials like USB keys or Bluetooth devices. The current API is limited to embedded credentials stored in the TPM.
-- The currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
-- The Microsoft Edge implementation does not yet support the account picker experience.
-- A second *filters* parameter specifying the credential id is currently required for calls to msCredentials.[getAssertion](https://msdn.microsoft.com/library/mt697640). As such, you’ll need to store your credential ID information in local storage on the client, either in indexDB or localStorage when making your credential. If a user deletes their browsing history, including local storage, they will need to re-register to use Windows Hello the next time they log in.
-- Microsoft Edge does not support all of the options in the current Web Authentication specification draft, such as extensions or timeouts.
-
-On that last point, the specific Microsoft Edge differences are noted in the following Web Authentication spec definitions:
-
-### W3C spec
-```
-partial interface Window {
-    readonly attribute WebAuthentication webauthn; // msCredentials
-};
-
-interface WebAuthentication { // MSCredentials
-    Promise <ScopedCredentialInfo> makeCredential (
-        Account                                 accountInformation,
-        sequence <ScopedCredentialParameters>   cryptoParameters,
-        DOMString                               attestationChallenge, // Optional in Microsoft Edge
-        optional unsigned long                  credentialTimeoutSeconds, // Not yet supported
-        optional sequence <Credential>          blacklist, // Not yet supported
-        optional WebAuthnExtensions             credentialExtensions // Not yet supported
-    );
-
-    Promise <WebAuthnAssertion> getAssertion (
-        DOMString                        assertionChallenge,
-        optional unsigned long           assertionTimeoutSeconds, // Not yet supported
-        optional sequence <Credential>   whitelist, // Not yet supported
-        optional WebAuthnExtensions      assertionExtensions // Not yet supported
-    );
-};
-
-interface ScopedCredentialInfo { // MSAssertion
-    readonly attribute Credential           credential;
-    readonly attribute any                  publicKey;
-    readonly attribute AttestationStatement attestation;
-};
-
-dictionary Account { // MSAccountInfo
-    required DOMString rpDisplayName;
-    required DOMString displayName;
-    DOMString          name; // Not yet supported
-    DOMString          id; // Not yet supported
-    DOMString          imageUri; // Not yet supported
-};
-
-dictionary ScopedCredentialParameters { // MSCredentialParameters
-    required CredentialType        type;
-    required AlgorithmIdentifier   algorithm;
-};
-
-enum CredentialType { // MSCredentialType
-    "ScopedCred" // Must be "FIDO_2_0" in Microsoft Edge
-};
-
-interface Credential { // MSCredentialSpec
-    readonly attribute CredentialType type;
-    readonly attribute DOMString      id;
-};
-
-dictionary WebAuthnExtensions { // Not supported
-};
+    //Verify signCount has increased or is zero 
+    if (authenticatorData.signCount != 0 &&
+        authenticatorData.signCount < credential.signCount) {
+        throw new Error("Received signCount of " + authenticatorData.signCount +
+            " expected signCount > " + credential.signCount);
+    }
 ```
 
+## Implementation notes
+As of July, Microsoft Edge has a complete implementation of the Candidate Recommendation version of the Web Authenthication specification. 
 
+### Supported authenticators
+With the Web Authentication APIs in Microsoft Edge, you can authenticate users with the following technologies:
+- **Windows Hello**, enabling passwordless on-device authentication with  face, fingerprint, or PIN
+- **FIDO2**, enabling passwordless roaming authentication with a removable device and a fingerprint or PIN
+- **U2F**, enabling strong second factor authentication for websites that are not ready to move to a passwordless model
 
-## API Reference
+### Special considerations for Windows Hello 
+A few things to note when using the Windows Hello authenticator:
+- You can detect if Windows Hello is available on a PC by calling the `isUserVerifyingPlatformAuthenticatorAvailable` API. Learn more about this API [here](https://www.w3.org/TR/webauthn/#isUserVerifyingPlatformAuthenticatorAvailable).
+- Windows Hello only supports RS256 (alg -257) as its public key algorithm. Be sure to specify this algorithm when creating a credential.
+- To receive a [TPM attestation statement](https://w3c.github.io/webauthn/#tpm-attestation), set attestation to "direct" when calling the create API. TPM attestation is a best effort. Only PCs with TPM 2.0 will return a TPM attestation statement, and the attestation process could fail for a variety of reasons.
+- Windows Hello employs a variety of ways to protect user credentials. You can by checking which method has been used to protect a credential by consuming the [AAGUID](https://w3c.github.io/webauthn/#sec-attested-credential-data) field in the attestation object returned at credential creation. The following is the list of AAGUIDs that Windows Hello may return: 
+  - Windows Hello software authenticator: `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`
+  - Windows Hello hardware authenticator: `08987058-CADC-4B81-B6E1-30DE50DCBE96`
+  - Windows Hello VBS software authenticator: `6E96969E-A5CF-4AAD-9B56-305FE6C82795`
+  - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
 
-[MSCredentials](https://msdn.microsoft.com/library/mt697639)
-
-[makeCredential](https://msdn.microsoft.com/library/mt697641)
-
-[getAssertion](https://msdn.microsoft.com/library/mt697640)
 
 ## Demos
 
-[Client and server code samples](https://github.com/adrianba/fido-snippets/)
+[Client and server code sample](https://github.com/ibdamlaj/webauthnsample/)
 
-[Webauthn.js polyfill](https://github.com/adrianba/fido-snippets/blob/master/polyfill/webauthn.js)
-
-[Windows Hello Test Drive demo](https://testdrive-fido.azurewebsites.net/)
+[Windows Hello Test Drive demo](https://webauthnsample.azurewebsites.net/)
 
 ## Specification
 
-[Web Authentication: A Web API for accessing scoped credentials 1](http://w3c.github.io/webauthn/)
+[Web Authentication: An API for accessing Public Key Credentials](http://w3c.github.io/webauthn/)
