@@ -1,10 +1,10 @@
 ---
 ms.assetid: 88825563-5f5d-421d-861b-7cec01277dec
-description: Learn how the Web Authentication API can be used to enable web applications to use Windows Hello biometrics for user authentication.
-title: Dev guide - Web authentication
+description: Learn how the Web Authentication API can enable web applications to use Windows Hello and FIDO2 for user authentication.
+title: Dev guide - Web Authentication
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/18/2017
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Web authentication and Windows Hello
 
-The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
+The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
 
 Using Web Authentication, the server sends down a plain text challenge to the browser. Once Microsoft Edge is able to verify the user through Windows Hello or an external FIDO2 device, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server. If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely. With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared. Furthermore, the private key can never be moved from secure elements or modern systems with TPM-enabled hardware.
 
@@ -22,7 +22,7 @@ There are two basic steps to using the Web Authentication API:
 
 **2. Authenticate your user with `get`**
 
-The following will walk you through this flow using the [WebAuthn Sample App](https://github.com/idamlaj/webauthnsample).
+The following will walk you through this flow using the [WebAuthn Sample App](https://github.com/MicrosoftEdge/webauthnsample).
 
 ## Register your user
 
@@ -206,10 +206,15 @@ Once you receive the assertion on the server, you will need to validate the sign
 ```
 
 ## Implementation notes
-As of July, Microsoft Edge has a complete implementation of the Candidate Recommendation version of the Web Authenthication specification. 
+
+### Supported platforms
+- The Candidate Recommendation version of the Web Authentication API can be used from Microsoft Edge in the Fall 2018 Update of Windows 10.
+- The [prefixed, preview version](https://blogs.windows.com/msedgedev/2016/04/12/a-world-without-passwords-windows-hello-in-microsoft-edge/) of the Web Authentication API has been removed and is no longer available.
+- The Web Authentication API is not yet available to UWP apps and PWAs.
+- Internet Explorer does not support the Web Authentication API. 
 
 ### Supported authenticators
-With the Web Authentication APIs in Microsoft Edge, you can authenticate users with the following technologies:
+With the Web Authentication API in Microsoft Edge, you can authenticate users with the following technologies:
 - **Windows Hello**, enabling passwordless on-device authentication with  face, fingerprint, or PIN
 - **FIDO2**, enabling passwordless roaming authentication with a removable device and a fingerprint or PIN
 - **U2F**, enabling strong second factor authentication for websites that are not ready to move to a passwordless model
@@ -217,6 +222,7 @@ With the Web Authentication APIs in Microsoft Edge, you can authenticate users w
 ### Special considerations for Windows Hello 
 A few things to note when using the Windows Hello authenticator:
 - You can detect if Windows Hello is available on a PC by calling the `isUserVerifyingPlatformAuthenticatorAvailable` API. Learn more about this API [here](https://www.w3.org/TR/webauthn/#isUserVerifyingPlatformAuthenticatorAvailable).
+- When creating a credential for Windows Hello, you should set `authenticatorAttachment` to `platform` for the best user experience.
 - Windows Hello only supports RS256 (alg -257) as its public key algorithm. Be sure to specify this algorithm when creating a credential.
 - To receive a [TPM attestation statement](https://w3c.github.io/webauthn/#tpm-attestation), set attestation to "direct" when calling the `create` API. TPM attestation is a best effort. Only PCs with TPM 2.0 will return a TPM attestation statement, and the attestation process could fail for a variety of reasons.
 - Windows Hello employs a variety of ways to protect user credentials. You can check which method has been used to protect a credential by consuming the [AAGUID](https://w3c.github.io/webauthn/#sec-attested-credential-data) field in the attestation object returned at credential creation. The following is the list of AAGUIDs that Windows Hello may return: 
@@ -225,10 +231,15 @@ A few things to note when using the Windows Hello authenticator:
   - Windows Hello VBS software authenticator: `6E96969E-A5CF-4AAD-9B56-305FE6C82795`
   - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
 
+### API surface
+- Microsoft Edge has a complete implementation of the Candidate Recommendation version of the core Web Authentication specification.
+- The [AppID extension](https://w3c.github.io/webauthn/#sctn-appid-extension) is supported. 
+- No other extensions are supported.
+
 
 ## Demos
 
-[Client and server code sample](https://github.com/MicrosoftEdge/webauthnsample/)
+[Client and server code sample](https://github.com/MicrosoftEdge/webauthnsample)
 
 [Windows Hello Test Drive demo](https://webauthnsample.azurewebsites.net/)
 
