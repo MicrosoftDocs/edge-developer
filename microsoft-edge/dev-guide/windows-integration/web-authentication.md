@@ -10,7 +10,7 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Web authentication and Windows Hello
+# Web Authentication and Windows Hello
 
 The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
 
