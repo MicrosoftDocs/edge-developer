@@ -22,7 +22,7 @@ There are two basic steps to using the Web Authentication API:
 
 **2. Authenticate your user with `get`**
 
-The following will walk you through this flow using the [WebAuthn Sample App](https://github.com/MicrosoftEdge/webauthnsample).
+The following dev guide will walk you through this flow using the [WebAuthn Sample App](https://github.com/MicrosoftEdge/webauthnsample).
 
 ## Register your user
 
