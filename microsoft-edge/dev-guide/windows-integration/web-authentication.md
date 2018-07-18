@@ -208,7 +208,7 @@ Once you receive the assertion on the server, you will need to validate the sign
 ## Implementation notes
 
 ### Supported platforms
-- You can use the Candidate Recommendation version of the Web Authentication API in Microsoft Edge beginning in EdgeHTML 18.
+- The Candidate Recommendation version of the Web Authentication API can be used from Microsoft Edge beginning with EdgeHTML 18 (Windows Insider Preview version 17713 and up).
 - The [prefixed, preview version](https://blogs.windows.com/msedgedev/2016/04/12/a-world-without-passwords-windows-hello-in-microsoft-edge/) of the Web Authentication API has been removed and is no longer available.
 - The Web Authentication API is not yet available to UWP apps and PWAs.
 - Internet Explorer does not support the Web Authentication API. 
