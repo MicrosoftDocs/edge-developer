@@ -1,6 +1,6 @@
 ---
 description: Reference for the DOMDebugger Domain. DOM debugging allows setting breakpoints on particular DOM operations and events. JavaScript execution will stop on these operations as if there was a regular breakpoint set.
-title: DOMDebugger Domain - Microsoft Edge DevTools Protocol Version 0.1
+title: DOMDebugger Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
 ms.date: 12/15/2017
