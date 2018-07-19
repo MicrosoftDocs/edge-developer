@@ -12,7 +12,7 @@ Runtime domain exposes JavaScript runtime by means of remote evaluation and mirr
 
 | | |
 |-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [getProperties](#getproperties), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [getProperties](#getproperties), [globalLexicalScopeNames](#globallexicalscopenames), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |
 | [**Events**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |
 | [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExecutionContextDescription](#executioncontextdescription), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
 ## Methods
@@ -261,6 +261,29 @@ Returns properties of a given object. Object group of the result is inherited fr
             <td>result</td>
             <td><a href="#propertydescriptor"><code class="flyout">PropertyDescriptor[]</code></a></td>
             <td>Object properties.</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+
+---
+
+### globalLexicalScopeNames
+Returns all let, const, and class variables from the console global scope.
+
+<table>
+    <thead>
+        <tr>
+            <th>Returns</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>names</td>
+            <td><code class="flyout">string[]</code></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
@@ -778,7 +801,7 @@ Stack entry for runtime errors and assertions.
         <tr>
             <td>scriptId</td>
             <td><a href="#scriptid"><code class="flyout">ScriptId</code></a></td>
-            <td>JavaScript script id.</td>
+            <td>JavaScript script id. ScriptId will be empty if debugger is not enabled.</td>
         </tr>
         <tr>
             <td>url</td>

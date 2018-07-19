@@ -122,6 +122,11 @@ Fired when frame has been attached to its parent.
             <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
             <td>Parent frame identifier.</td>
         </tr>
+        <tr>
+            <td>stack <br/> <i>optional</i></td>
+            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
+            <td>JavaScript stack trace of when frame was attached, only set if frame initiated from script.</td>
+        </tr>
     </tbody>
 </table>
 </p>
