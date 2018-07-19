@@ -316,7 +316,7 @@ CSS rule collection for a single pseudo style.
     <tbody>
         <tr>
             <td>pseudoType</td>
-            <td><a href="dom.md#pseudotype"><code class="flyout">DOM.PseudoType</code></a></td>
+            <td><code class="flyout">DOM.PseudoType</code></td>
             <td>Pseudo element type.</td>
         </tr>
         <tr>

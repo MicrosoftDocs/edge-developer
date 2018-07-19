@@ -75,7 +75,7 @@ Notifies the client that the user has asked to inspect a particular node
     <tbody>
         <tr>
             <td>backendNodeId</td>
-            <td><a href="dom.md#backendnodeid"><code class="flyout">DOM.BackendNodeId</code></a></td>
+            <td><code class="flyout">DOM.BackendNodeId</code></td>
             <td>The backend node ID of node requested</td>
         </tr>
     </tbody>
