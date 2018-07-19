@@ -3,7 +3,7 @@ description: Reference for the DOM Domain. This domain exposes DOM read/write op
 title: DOM Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 12/15/2017
+ms.date: 7/19/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
