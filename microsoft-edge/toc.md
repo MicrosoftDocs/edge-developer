@@ -79,7 +79,7 @@
 ##### [Runtime](devtools-protocol/0.1/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.1/domains/schema.md)
 ### 0.2
-#### [Domains](devtools-protocol/0.2/index.md)
+#### [Domains](devtools-protocol/0.2/domains/index.md)
 ##### [CSS](devtools-protocol/0.2/domains/css.md)
 ##### [DOM](devtools-protocol/0.2/domains/dom.md)
 ##### [DOMDebugger](devtools-protocol/0.2/domains/domdebugger.md)
