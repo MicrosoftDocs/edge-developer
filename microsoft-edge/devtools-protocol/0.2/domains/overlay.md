@@ -3,7 +3,7 @@ description: Reference for the Overlay Domain. Overlay domain exposes visual ado
 title: Overlay Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 7/19/2018
+ms.date: 7/23/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -75,7 +75,7 @@ Notifies the client that the user has asked to inspect a particular node
     <tbody>
         <tr>
             <td>backendNodeId</td>
-            <td><code class="flyout">DOM.BackendNodeId</code></td>
+            <td><a href="dom.md#backendnodeid"><code class="flyout">DOM.BackendNodeId</code></a></td>
             <td>The backend node ID of node requested</td>
         </tr>
     </tbody>

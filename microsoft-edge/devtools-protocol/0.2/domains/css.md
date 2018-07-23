@@ -3,7 +3,7 @@ description: Reference for the CSS Domain. This domain exposes CSS read/write op
 title: CSS Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 7/19/2018
+ms.date: 7/23/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -316,7 +316,7 @@ CSS rule collection for a single pseudo style.
     <tbody>
         <tr>
             <td>pseudoType</td>
-            <td><code class="flyout">DOM.PseudoType</code></td>
+            <td><a href="dom.md#pseudotype"><code class="flyout">DOM.PseudoType</code></a></td>
             <td>Pseudo element type.</td>
         </tr>
         <tr>

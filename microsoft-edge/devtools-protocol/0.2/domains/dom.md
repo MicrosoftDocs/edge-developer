@@ -3,7 +3,7 @@ description: Reference for the DOM Domain. This domain exposes DOM read/write op
 title: DOM Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 7/19/2018
+ms.date: 7/23/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -14,7 +14,7 @@ This domain exposes DOM read/write operations. Each DOM Node is represented with
 |-|-|
 | [**Methods**](#methods) | [enable](#enable), [disable](#disable), [getDocument](#getdocument), [highlightNode](#highlightnode), [hideHighlight](#hidehighlight), [requestChildNodes](#requestchildnodes), [getAttributes](#getattributes), [getOuterHTML](#getouterhtml), [pushNodesByBackendIdsToFrontend](#pushnodesbybackendidstofrontend), [querySelector](#queryselector), [querySelectorAll](#queryselectorall), [requestNode](#requestnode), [resolveNode](#resolvenode), [setInspectedNode](#setinspectednode) |
 | [**Events**](#events) | [setChildNodes](#setchildnodes), [attributeModified](#attributemodified), [attributeRemoved](#attributeremoved), [characterDataModified](#characterdatamodified), [childNodeInserted](#childnodeinserted), [childNodeRemoved](#childnoderemoved), [documentUpdated](#documentupdated) |
-| [**Types**](#types) | [RGBA](#rgba), [HighlightConfig](#highlightconfig), [NodeId](#nodeid), [Node](#node) |
+| [**Types**](#types) | [RGBA](#rgba), [HighlightConfig](#highlightconfig), [NodeId](#nodeid), [Node](#node), [BackendNodeId](#backendnodeid), [PseudoType](#pseudotype) |
 | [**Dependencies**](#dependencies) | [Runtime](runtime.md) |
 ## Methods
 
@@ -891,6 +891,24 @@ Mirror object that represents the actual DOM nodes.
         </tr>
     </tbody>
 </table>
+</p>
+
+---
+
+### <a name="backendnodeid"></a> BackendNodeId `integer`
+
+Unique DOM node identifier used to reference a node that may not have been pushed to the front-end.
+
+</p>
+
+---
+
+### <a name="pseudotype"></a> PseudoType `string`
+
+Pseudo element type.
+
+##### Allowed Values
+first-line, first-letter, before, after, selection
 </p>
 
 ---
