@@ -39,7 +39,7 @@ To open the **Console** developer tool in Microsoft Edge, press the F12 key (or 
 |:-----------------------------------------------  | :----------------- |
 |Launch DevTools with Console in focus             | `CTRL` + `SHIFT` + `J`| 
 |Switch to Console                                 | `CTRL` + `2`         | 
-|Show/Hide Console from another DevTools tab       | `CTRL` + &grave; (backtick)| 
+|Show/Hide Console from another DevTools tab       | `CTRL` + `&grave;` (backtick)| 
 |Execute (single line command)                     | `ENTER`              | 
 |Line-break without executing (multi-line command) | `SHIFT` + `ENTER`    | 
 |""                                                | `CTRL` + `ENTER`     | 
