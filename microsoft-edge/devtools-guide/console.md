@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, console
 
 # Console
 
-Use the DevTools **Console** for interactive debugging and adhoc testing. It allows you to communicate into and out of a running web page by:
+To open the **Console** developer tool in Microsoft Edge, press the F12 key (or right-click and select "Inspect Element"), to access the developer tool window, then navigate to the Console tab at the top of the window. The Console tool logs information associated with a web page, such as JavaScript, network requests, and security errors. It can be used for interactive debugging and adhoc testing. It also allows you to communicate into and out of a running web page by:
 
  - Posting standard [error and status codes](./console/error-and-status-codes.md) and informational messages as your code runs
  - Generating custom debug logs from the [Console API](./console/console-api.md) calls you include in your code
@@ -27,25 +27,25 @@ Use the DevTools **Console** for interactive debugging and adhoc testing. It all
 
 4. Use the **Target** dropdown selector to switch to a different execution context, such as an `<iframe>` in your page or a running extension. By default, the top-level frame of your page is selected. Hovering over a selected frame will display a tooltip with the full URL for that resource.
 
-5. In addition to the Console panel, you can use the console from the bottom of any other DevTools panel by pressing the **Show / Hide Console** button (`Ctrl+` ` ). The button has no effect when the DevTools are open to the Console panel.
-
+5. In addition to the Console panel, you can use the console from the bottom of any other DevTools panel by pressing the **Show / Hide Console** button (`Ctrl+` &grave; ). The button has no effect when the DevTools are open to the Console panel.
+	
 6. You can also **Filter logs** (`Ctrl+F`) with a specific text string in the searchbox.
 
 7. Clicking on any blue source links will open the DevTools **Debugger** to that particular line of code for further inspection.
 
 ## Shortcuts
 
-Action                                            | Shortcut               
-:-------------------------------------------------| :----------------------
-Launch DevTools with Console in focus             | `CTRL` + `SHIFT` + `J` 
-Switch to Console                                 | `CTRL` + `2`           
-Show/Hide Console from another DevTools tab       | `CTRL` + ` (backtick)  
-Execute (single line command)                     | `ENTER`                
-Line-break without executing (multi-line command) | `SHIFT` + `ENTER`      
-""                                                | `CTRL` + `ENTER`       
-Clear the Console of all messages                 | `CTRL` + `L`           
-Filter logs (set focus to search box)             | `CTRL` + `F`           
-Accept auto-completion suggestion (when in focus) | `ENTER`                
-""                                                | `TAB`                  
-Previous / Next auto-completion suggestion        | up / down arrow keys   
+|Action                                            | Shortcut |
+|:-----------------------------------------------  | :----------------- |
+|Launch DevTools with Console in focus             | `CTRL` + `SHIFT` + `J`| 
+|Switch to Console                                 | `CTRL` + `2`         | 
+|Show/Hide Console from another DevTools tab       | `CTRL` + ` (backtick)| 
+|Execute (single line command)                     | `ENTER`              | 
+|Line-break without executing (multi-line command) | `SHIFT` + `ENTER`    | 
+|""                                                | `CTRL` + `ENTER`     | 
+|Clear the Console of all messages                 | `CTRL` + `L`         | 
+|Filter logs (set focus to search box)             | `CTRL` + `F`         | 
+|Accept auto-completion suggestion (when in focus) | `ENTER`              | 
+|""                                                | `TAB`                | 
+|Previous / Next auto-completion suggestion        | up / down arrow keys |
 
