@@ -66,4 +66,4 @@ APPHOST9624: "The app can't use script to load the *url* url because the url lau
 APPHOST9626: "A direct reference to resource file `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` was detected. This reference causes failures when used outside of the debugging environment." | Due to the file path of `logo.scale-140.png`, this PNG file is treated as a localized resource, causing the error in that localized resources cannot be referenced directly. See [Globalizing your app (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465006.aspx) if you intend to use this file as a language resource. Otherwise, try renaming the problematic directory.
   
 ## See Also  
- [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)

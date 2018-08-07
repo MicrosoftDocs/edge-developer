@@ -45,4 +45,4 @@ The following table describes the way JavaScript represents Windows Runtime type
 |Runtime classes|`Object`|Objects in the Windows Runtime can be instances of runtime classes that implement one or more interfaces. Windows Runtime objects are represented in JavaScript as objects. The union of methods, properties, and events defined on all the implemented interfaces of the class represents the named properties in the prototype of the JavaScript object. JavaScript consumers can access any member of the class directly. Windows Runtime objects have a prototype that contains all the members from all the implemented interfaces of the runtime class.|  
   
 ## See Also  
- [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)

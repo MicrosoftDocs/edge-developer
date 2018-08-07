@@ -85,4 +85,4 @@ JavaScript Runtime (JsRT) typedefs, constants, and enumerations support adding s
   
 ## See Also  
  [Hosting the JavaScript Runtime](../chakra-hosting/hosting-the-javascript-runtime.md)   
- [JavaScript Runtime Hosting](../chakra-hosting/javascript-runtime-hosting.md)
+ [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)
