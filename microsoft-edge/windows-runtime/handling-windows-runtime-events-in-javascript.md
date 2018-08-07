@@ -54,4 +54,4 @@ function (ev) {
 >  Windows Runtime features are not available for apps that run in Internet Explorer.  
   
 ## See Also  
- [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)

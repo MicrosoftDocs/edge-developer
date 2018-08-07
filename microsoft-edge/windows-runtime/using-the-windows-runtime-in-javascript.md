@@ -20,7 +20,7 @@ manager: "jken"
 # Using the Windows Runtime in JavaScript
 When you write a Universal Windows Platform (UWP) app, you can use Windows Runtime classes, methods, and properties in much the same way that you would use native JavaScript objects, methods, and properties. This topic provides introductory information and links to topics that explain the basic concepts of using Windows Runtime APIs in JavaScript, including an explanation of how Windows Runtime types are represented, how to use asynchronous Windows Runtime methods, and how to listen to and handle Windows Runtime events.  
   
- You can find JavaScript reference documentation at [JavaScript Language Reference](../javascript/javascript-language-reference.md).  
+For general language documentation, check out MDN's [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) library.  
   
 > [!IMPORTANT]
 >  Windows Runtime features are not available for apps that run in Internet Explorer.  
@@ -53,8 +53,8 @@ When you write a Universal Windows Platform (UWP) app, you can use Windows Runti
     ```  
   
 ## See Also  
- [Considerations when Using the Windows Runtime API](../jswinrt/considerations-when-using-the-windows-runtime-api.md)   
- [Using Windows Runtime Asynchronous Methods](../jswinrt/using-windows-runtime-asynchronous-methods.md)   
- [Handling Windows Runtime Events in JavaScript](../jswinrt/handling-windows-runtime-events-in-javascript.md)   
- [JavaScript Representation of Windows Runtime Types](../jswinrt/javascript-representation-of-windows-runtime-types.md)   
- [JavaScript Projection of Windows Runtime DateTime and TimeSpan](../jswinrt/windows-runtime-datetime-and-timespan-representations.md)
+ [Considerations when Using the Windows Runtime API](./considerations-when-using-the-windows-runtime-api.md)   
+ [Using Windows Runtime Asynchronous Methods](./using-windows-runtime-asynchronous-methods.md)   
+ [Handling Windows Runtime Events in JavaScript](./handling-windows-runtime-events-in-javascript.md)   
+ [JavaScript Representation of Windows Runtime Types](./javascript-representation-of-windows-runtime-types.md)   
+ [JavaScript Projection of Windows Runtime DateTime and TimeSpan](./windows-runtime-datetime-and-timespan-representations.md)

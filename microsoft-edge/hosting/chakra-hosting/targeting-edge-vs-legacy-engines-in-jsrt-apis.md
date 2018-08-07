@@ -155,4 +155,4 @@ public static extern JsErrorCode JsStartDebugging();
      When using C and C++, you will receive a linker error if you try to use the wrong declaration, as long as you're not doing something like calling `LoadLibrary` and then `GetProcAddress`. .NET developers may not find this problem as easily, so double-check your code when using this feature.  
   
 ## See Also  
- [JavaScript Runtime Hosting](../chakra-hosting/javascript-runtime-hosting.md)
+ [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)

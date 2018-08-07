@@ -78,4 +78,4 @@ client.createResourceAsync(uri, description, item)
  For more information about asynchronous programming, see [Asynchronous Programming in JavaScript](https://msdn.microsoft.com/en-us/library/windows/apps/hh700330.aspx).  
   
 ## See Also  
- [Using the Windows Runtime in JavaScript](../jswinrt/using-the-windows-runtime-in-javascript.md)
+ [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)

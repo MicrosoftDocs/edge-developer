@@ -31,7 +31,7 @@ You can use nearly every element of the Windows Runtime API in JavaScript. Howev
   
 -   Arrays: Windows Runtime arrays are not resizable, so methods that resize arrays in JavaScript do not work on Windows Runtime arrays.  
   
--   Arrays: If you pass a JavaScript array value to a Windows Runtime method, the array is copied. The Windows Runtime method is not able to modify the array or its members and return it to your JavaScript app. However, you can use typed arrays (for example, [Int32Array Object](../javascript/reference/int32array-object.md)), which are not copied.  
+-   Arrays: If you pass a JavaScript array value to a Windows Runtime method, the array is copied. The Windows Runtime method is not able to modify the array or its members and return it to your JavaScript app. However, you can use typed arrays (for example, [Int32Array Object](http://docs.microsoft.com/en-us/scripting/javascript/reference/int32array-object)), which are not copied.  
   
 -   Structures: Windows Runtime structures are objects in JavaScript. If you want to pass a Windows Runtime structure to a Windows Runtime method, don't instantiate the structure with the `new` keyword. Instead, create an object and add the relevant members and their values. The names of the members should be in camel case: `SomeStruct.firstMember`.  
   
@@ -99,4 +99,4 @@ You can use nearly every element of the Windows Runtime API in JavaScript. Howev
     var reading = accel.getCurrentReading();            
     ```  
   
- For more information about the JavaScript representation of Windows Runtime basic types, see [JavaScript Representation of Windows Runtime Types](../jswinrt/javascript-representation-of-windows-runtime-types.md).
+ For more information about the JavaScript representation of Windows Runtime basic types, see [JavaScript Representation of Windows Runtime Types](./javascript-representation-of-windows-runtime-types.md).
