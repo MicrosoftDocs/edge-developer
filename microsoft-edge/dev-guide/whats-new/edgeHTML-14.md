@@ -28,16 +28,16 @@ EdgeHTML 14 brings a number of new and experimental features to Chakra, the Java
 
 #### New features (on by default)
 
-* [Default parameters](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) (ES6)
+* [Default parameters](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) (ES2015)
 * [Exponentiation operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) (ES2016)
 * [Array.prototype.includes](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/arrayprototypeincludeses2016) (ES2016)
 * [Object.values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) and [object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) (ES2017)
 
 #### Experimental JavaScript features (enabled with *about:flags*)
 
-* [Modules](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/) (ES6)
+* [Modules](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/) (ES2015)
 * [Async/await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) (ES2017)
-* [Regex symbols](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) (ES6)
+* [Regex symbols](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) (ES2015)
 
 For further details, check out [*Previewing ES6 Modules and more from ES2015, ES2016 and beyond*](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/) and [*Asynchronous code gets easier with ES2016 Async Function support in Chakra and Microsoft Edge*](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/).
 
