@@ -34,7 +34,7 @@ if (MSHTMLWebViewElement) {
 
 ## Remarks
 
-### WebView versus `<iframe>`
+### WebView versus iframe
 
 Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
 

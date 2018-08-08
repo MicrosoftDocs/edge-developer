@@ -52,6 +52,28 @@ The tools have also been updated with a number of major features, including basi
 
 Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
 
+### JavaScript
+
+With EdgeHTML 17 the Chakra JavaScript engine introduces performance improvements in a number of key areas:
+
+**Leaner memory footprint**
+
+ - (Re-)defer parsing for [arrow functions](https://github.com/Microsoft/ChakraCore/pull/4105) and [methods on object literals](https://github.com/Microsoft/ChakraCore/pull/4136)
+ - [RegExp bytecode refactoring](https://github.com/Microsoft/ChakraCore/pull/3915)
+
+**Faster JavaScript built-ins**
+
+ - [Type sharing for Object.create](https://github.com/Microsoft/ChakraCore/pull/3901)
+ - [Polymorphic inline cache for Object.assign](https://github.com/Microsoft/ChakraCore/pull/3792)
+ - [JSON.parse/stringify optimizations](https://github.com/Microsoft/ChakraCore/pull/4077)
+ - [Rewriting Array Iterators in JavaScript and faster for...of](https://github.com/Microsoft/ChakraCore/pull/4095)
+
+**Web Assembly**
+
+ - [Inling support](https://github.com/Microsoft/ChakraCore/pull/3681) 
+
+Check out [*Improved JavaScript and WebAssembly performance in EdgeHTML 17*](https://blogs.windows.com/msedgedev/2018/06/19/improved-javascript-webassembly-performance-edgehtml-17/#I4vzUJK2va54kSWl.97) for all the details.
+
 ### Media element
 
 EdgeHTML 17 includes updates to [HTMLMediaElement](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement) including:

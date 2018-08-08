@@ -37,6 +37,17 @@ This release we started a major Microsoft Edge DevTools refactoring effort for i
 
 ![Experimental service worker debugging support in DevTools](../../devtools-guide/media/debugger_sw_inspect.png)
 
+### JavaScript
+
+[EdgeHTML 16 builds on Javascript performance](https://blogs.windows.com/msedgedev/2017/10/31/optimizations-webassembly-sharedarraybuffer-atomics-edgehtml-16/#FodxEPHxR4WkbtyA.97) optimizations of previous releases by expanding the Chakra engine's ability to defer/re-defer functions, use polymorphic inline caches, and optimize functions with *try/finally* blocks.
+
+Additionally, features first previewed in EdgeHTML 15 are now stable and enabled by default:
+
+#### New features (on by default)
+
+* [WebAssembly](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP ([demo](https://webassembly.org/demo/))
+* [Shared Memory and Atomics](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)
+
 ### Payment Request API
 
 The [Payment Request API](../windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and payment methods (e.g. credit cards) that consumers have stored in the cloud.  The API in EdgeHTML 16 has been updated to match the latest W3C [Payment Request API](https://w3c.github.io/payment-request/) specification. This includes:
