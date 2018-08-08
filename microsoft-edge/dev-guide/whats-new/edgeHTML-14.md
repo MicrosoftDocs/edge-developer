@@ -22,6 +22,25 @@ Extensions are small programs that can be used to add new features to Microsoft 
 ### Fetch API
 The [Fetch API](https://fetch.spec.whatwg.org/#fetch-api) utilizes the `fetch` method for fetching resources. In the past this was achieved with `XMLHttpRequest`. Not only is fetch simpler to use, it also provides lower level access to requests and responses. Read more about the Fetch API in the Microsoft Edge blog post, [Fetch (or the undeniable limitations of XHR)](https://blogs.windows.com/msedgedev/2016/05/24/fetch-and-xhr-limitations/).
 
+### JavaScript
+
+EdgeHTML 14 brings a number of new and experimental features to Chakra, the JavaScript engine powering Microsoft Edge:
+
+#### New features (on by default)
+
+* [Default parameters](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) (ES2015)
+* [Exponentiation operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) (ES2016)
+* [Array.prototype.includes](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/arrayprototypeincludeses2016) (ES2016)
+* [Object.values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) and [object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) (ES2017)
+
+#### Experimental JavaScript features (enabled with *about:flags*)
+
+* [Modules](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/) (ES2015)
+* [Async/await](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctionses2016) (ES2017)
+* [Regex symbols](https://developer.microsoft.com/microsoft-edge/platform/status/regexpbuiltinses6) (ES2015)
+
+For further details, check out [*Previewing ES6 Modules and more from ES2015, ES2016 and beyond*](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/) and [*Asynchronous code gets easier with ES2016 Async Function support in Chakra and Microsoft Edge*](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/).
+
 ### Web Authentication API (FIDO 2.0 Web API)
 The Web Authentication (formerly FIDO 2.0 ) API in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge (ms- prefixed) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future. Read more about Web Authentication: [Web authentication and Windows Hello](https://docs.microsoft.com/microsoft-edge/dev-guide/device/web-authentication).
 
@@ -34,5 +53,9 @@ The [Web Speech API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.ht
 ## New APIs in EdgeHTML 14
 
 Here's the full list of new APIs in EdgeHTML 14. They are listed in the format of **[interface name].[api name]**.
+<<<<<<< HEAD
 <iframe height='585' scrolling='no' title='New APIs in EdgeHTML 14' src='//codepen.io/MicrosoftEdgeDocumentation/embed/oWMEPE/?height=585&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/oWMEPE/'>New APIs in EdgeHTML 14</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.
+=======
+<iframe height='585' scrolling='no' title='New APIs in EdgeHTML 14' src='//codepen.io/MSEdgeDev/embed/oWMEPE/?height=585&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/oWMEPE/'>New APIs in EdgeHTML 14</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
+>>>>>>> master
 </iframe>

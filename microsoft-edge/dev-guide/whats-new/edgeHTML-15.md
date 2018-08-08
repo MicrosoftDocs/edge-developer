@@ -37,6 +37,19 @@ h1 {
 ### Intersection Observer
 EdgeHTML 15 introduces the [Intersection Observer API](https://wicg.github.io/IntersectionObserver/) specification. The Intersection Observer API allows you to asynchronously query the position and visibility of DOM elements relative to other elements or the global viewport. This API eliminates the need for custom expensive code by creating a method to efficiently notify elements when they are in view.
 
+### JavaScript
+
+Performance optimizations take center stage with the EdgeHTML 15 rev of the Chakra JavaScript engine. With the Windows 10 Creators Update, Chakra saves memory by re-deferring functions and optimizing away heap arguments and improves performance for minified code.
+
+Additionally, EdgeHTML 15 introduces the following feature previews:
+
+#### Experimental JavaScript features (enabled with *about:flags*)
+
+* [WebAssembly](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) ([demo](https://webassembly.org/demo/))
+* [Shared Memory and Atomics](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)
+
+See [*Improved JavaScript performance, WebAssembly, and Shared Memory in Microsoft Edge*](https://blogs.windows.com/msedgedev/2017/04/20/improved-javascript-performance-webassembly-shared-memory/#t4gwUKjjtdmstMbs.97) for further details.
+
 ### Payment Request API
 The [Payment Request API](http://www.w3.org/TR/payment-request/) is now supported, enabling simpler checkout and payments on the web on Windows 10 PCs and Phones. This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) and the [Payment Request API](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/device/payment-request-api) developer guide.
 
