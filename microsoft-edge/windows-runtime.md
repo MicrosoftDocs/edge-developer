@@ -43,7 +43,7 @@ For more details on usage, check out [*Using the Windows Runtime in JavaScript*]
 
 ## WebView
 
-The [**Microsoft Edge WebView**](webview.md) control enables you to host web content within your Windows 10 app. Its similar to using an `<iframe>`, but provides a lot [more features and control](webview.md#webview-versus-iframe) over the experience.
+The [**Microsoft Edge WebView**](webview.md) control enables you to host web content within your Windows 10 app. Its similar to using an `<iframe>`, but provides a lot [more features and control](hosting/webview.md#webview-versus-iframe) over the experience.
 
 ## MSApp
 
