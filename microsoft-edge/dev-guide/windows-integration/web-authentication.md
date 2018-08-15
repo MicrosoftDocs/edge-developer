@@ -226,10 +226,13 @@ A few things to note when using the Windows Hello authenticator:
 - Windows Hello only supports RS256 (alg -257) as its public key algorithm. Be sure to specify this algorithm when creating a credential.
 - To receive a [TPM attestation statement](https://w3c.github.io/webauthn/#tpm-attestation), set attestation to "direct" when calling the `create` API. TPM attestation is a best effort. Only PCs with TPM 2.0 will return a TPM attestation statement, and the attestation process could fail for a variety of reasons.
 - Windows Hello employs a variety of ways to protect user credentials. You can check which method has been used to protect a credential by consuming the [AAGUID](https://w3c.github.io/webauthn/#sec-attested-credential-data) field in the attestation object returned at credential creation. The following is the list of AAGUIDs that Windows Hello may return: 
-  - Windows Hello software authenticator: `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`
-  - Windows Hello hardware authenticator: `08987058-CADC-4B81-B6E1-30DE50DCBE96`
-  - Windows Hello VBS software authenticator: `6E96969E-A5CF-4AAD-9B56-305FE6C82795`
-  - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
+  - Software backed authenticators
+    - Windows Hello software authenticator: `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`
+    - Windows Hello VBS software authenticator: `6E96969E-A5CF-4AAD-9B56-305FE6C82795`
+  - Trusted Platform Module (TPM) backed authenticators
+    - Windows Hello hardware authenticator: `08987058-CADC-4B81-B6E1-30DE50DCBE96`
+    - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
+
 
 ### API surface
 - Microsoft Edge has a complete implementation of the Candidate Recommendation version of the core Web Authentication specification.
