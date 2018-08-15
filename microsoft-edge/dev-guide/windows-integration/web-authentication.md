@@ -91,7 +91,7 @@ The `create` method takes the following parameters:
 
 You can use [credential creation parameters](https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptions) to configure the credential you want to create. In particular, you can choose to create a Windows Hello credential by setting `authenticatorAttachment` to `platform`, or a roaming credential on an external FIDO2 device by setting `authenticatorAttachment` to `cross-platform`. 
 
-When you use the `create` method, Microsoft Edge will first ask the user to verify their presence by scanning their face, fingerprint, PIN, or by taking action an external FIDO2 device. Once this step is completed the authenticator will generate a public/private key pair and store the private key. These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device. 
+When you use the `create` method, Microsoft Edge will first ask the user to verify their presence by scanning their face or fingerprint, entering a PIN, or taking action on an external FIDO2 device. Once this step is completed the authenticator will generate a public/private key pair and store the private key. These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device. 
 
 The resulting promise returns an [attestation object](https://w3c.github.io/webauthn/#sctn-attestation) representing the new credential. The attestation object contains the public key for the credential. You'll send this object to the server for validating future authentications. Before sending back to the server, you'll need to base64-encode the raw data.
 
