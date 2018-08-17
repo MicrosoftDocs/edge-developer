@@ -188,7 +188,7 @@ To do this, we first need to create a [content script](https://developer.mozilla
 var url = document.location.href;
 
 // if not on a docs.microsoft.com domain
-if (url.indexOf("//docs.microsoft.com") <= -1) {
+if (url.indexOf("//docs.microsoft.com") === -1) {
     // send inactive icons
     browser.runtime.sendMessage({
         "iconPath20": "images/inactive20.png",

@@ -91,7 +91,7 @@ The `create` method takes the following parameters:
 
 You can use [credential creation parameters](https://w3c.github.io/webauthn/#dictdef-publickeycredentialcreationoptions) to configure the credential you want to create. In particular, you can choose to create a Windows Hello credential by setting `authenticatorAttachment` to `platform`, or a roaming credential on an external FIDO2 device by setting `authenticatorAttachment` to `cross-platform`. 
 
-When you use the `create` method, Microsoft Edge will first ask the user to verify their presence by scanning their face, fingerprint, PIN, or by taking action an external FIDO2 device. Once this step is completed the authenticator will generate a public/private key pair and store the private key. These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device. 
+When you use the `create` method, Microsoft Edge will first ask the user to verify their presence by scanning their face or fingerprint, entering a PIN, or taking action on an external FIDO2 device. Once this step is completed the authenticator will generate a public/private key pair and store the private key. These credentials are created per origin, per account, and cannot be extracted because they are stored securely to the authentication device. 
 
 The resulting promise returns an [attestation object](https://w3c.github.io/webauthn/#sctn-attestation) representing the new credential. The attestation object contains the public key for the credential. You'll send this object to the server for validating future authentications. Before sending back to the server, you'll need to base64-encode the raw data.
 
@@ -226,10 +226,13 @@ A few things to note when using the Windows Hello authenticator:
 - Windows Hello only supports RS256 (alg -257) as its public key algorithm. Be sure to specify this algorithm when creating a credential.
 - To receive a [TPM attestation statement](https://w3c.github.io/webauthn/#tpm-attestation), set attestation to "direct" when calling the `create` API. TPM attestation is a best effort. Only PCs with TPM 2.0 will return a TPM attestation statement, and the attestation process could fail for a variety of reasons.
 - Windows Hello employs a variety of ways to protect user credentials. You can check which method has been used to protect a credential by consuming the [AAGUID](https://w3c.github.io/webauthn/#sec-attested-credential-data) field in the attestation object returned at credential creation. The following is the list of AAGUIDs that Windows Hello may return: 
-  - Windows Hello software authenticator: `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`
-  - Windows Hello hardware authenticator: `08987058-CADC-4B81-B6E1-30DE50DCBE96`
-  - Windows Hello VBS software authenticator: `6E96969E-A5CF-4AAD-9B56-305FE6C82795`
-  - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
+  - Software backed authenticators
+    - Windows Hello software authenticator: `6028B017-B1D4-4C02-B4B3-AFCDAFC96BB2`
+    - Windows Hello VBS software authenticator: `6E96969E-A5CF-4AAD-9B56-305FE6C82795`
+  - Trusted Platform Module (TPM) backed authenticators
+    - Windows Hello hardware authenticator: `08987058-CADC-4B81-B6E1-30DE50DCBE96`
+    - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
+
 
 ### API surface
 - Microsoft Edge has a complete implementation of the Candidate Recommendation version of the core Web Authentication specification.

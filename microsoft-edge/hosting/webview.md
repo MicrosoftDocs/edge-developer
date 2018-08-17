@@ -34,7 +34,7 @@ if (MSHTMLWebViewElement) {
 
 ## Remarks
 
-### WebView versus `<iframe>`
+### WebView versus iframe
 
 Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
 
@@ -634,9 +634,24 @@ webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
 
 Adds a native Windows Runtime object as a global parameter to the top-level document inside of a **webview**.
 
+The object is not injected into the current document, but rather the next top-level document to which the webview navigates. The object is injected before any script from the HTML document runs so you can rely on the object in your document's global script.
+
+You should use addWebAllowedObject either during an MSWebViewNavigationStarting event or before explicitly calling a navigate method. In these cases the object is injected into the document of the corresponding navigation. Calling it in some other context, you don't have a way to be certain into what document you'll inject your object.
+
+Calling addWebAllowedObject multiple times in a row will inject multiple objects into the document. If you call it both before an explicit navigate call and then again during the corresponding MSWebViewNavigationStarting event, both calls will succeed and you'll have multiple objects injected. If you call multiple times with the same name parameter, the last call wins and the previous calls with that name are ignored.
+
+If a navigate fails or is redirected, the addWebAllowedObject calls for that navigation are ignored. If you want to handle redirects you can subscribe to the MSWebViewNavigationStarting event watch for redirects and call addWebAllowedObject again according to whatever criteria is appropriate for your application. Similarly, once a document navigates away any objects injected via addWebAllowedObject for that document will not carry over to the next document and you'll need to explicitly call addWebAllowedObject if you want them to carry over.
+
+If you call addWebAllowedObject for a document that has no WinRT access otherwise, or if it has [AllowForWebOnly access via ApplicationContentUriRules](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-rule) then the object will only be injected if the object has the Windows.Foundation.Metadata.AllowForWeb metadata attribute. Otherwise injection will fail and an error will be reported to the JavaScript developer console. If called on a document that has full WinRT access, then the object will be injected regardless of the AllowForWeb attribute. 
+
+Additionally, the object must implement the IAgileObject interface. This is because the XAML and HTML webview elements run on their app's ASTA view threads and the WebView's JavaScript thread is a different ASTA thread and we want to encourage app developers to ensure their object can run on the JavaScript thread without blocking the app view thread if possible.
+
+The name parameter must be a valid JavaScript property name otherwise the call will fail silently. If the name is of a property that already exists on the global object then that property is overwritten if the property is configurable. Non-configurable properties on the global object are not overwritten and the addWebAllowedObject call fails silently. JavaScript properties created via addWebAllowedObject are writable, configurable, and enumerable.
 
 ```js
+let name = "exampleProperty";
 webview.addWebAllowedObject(name, applicationObject);
+webview.navigate("https://example.com/"); // applicationObject will be available as window.exampleProperty on https://example.com
 ```
 #### Parameters
 *name*

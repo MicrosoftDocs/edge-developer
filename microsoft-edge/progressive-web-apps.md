@@ -98,7 +98,7 @@ To be a *great* PWA, your app will also need:
   
   - [X] [**Deep linking**](https://en.wikipedia.org/wiki/Deep_linking). Route each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.
 
-  - [X] [**Best practices**](https://sonarwhal.com/). Use code quality tools like the [Sonarwhal](https://sonarwhal.com/) linter to optimize the efficiency, robustness, safety and accessibility of your app.
+  - [X] [**Best practices**](https://webhint.io/). Use code quality tools like the [Webhint](https://webhint.io/) linter to optimize the efficiency, robustness, safety, and accessibility of your app.s
 
 To submit your *Progressive Web App* to the [Microsoft Store](https://developer.microsoft.com/en-us/store), you'll need:
 
@@ -117,7 +117,7 @@ Here's the current status of standards-based PWA technologies in EdgeHTML and Wi
 
 Technology | Purpose | Availability | Usage notes
 | - | - | - | -
-[Web Application Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) | Provides app metadata to the host OS for enabling installation and app store promotion. Required for PWAs in the Microsoft Store. | [In development](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webapplicationmanifest/)  | For now, you can use [PWA Builder](https://www.pwabuilder.com/generator) to generate a W3C-compliant JSON manifest and package your app for various OS platforms. For Windows, *PWA Builder* will translate your JSON manifest into the *.appxmanifest* (XML) format required by Windows 10 apps.
+[Web Application Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) | Provides app metadata to the host OS for enabling installation and app store promotion. Required for PWAs in the Microsoft Store. | [In development](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webapplicationmanifest/)  | For now, you can use [PWA Builder](https://www.pwabuilder.com) to generate a W3C-compliant JSON manifest and package your app for various OS platforms. For Windows, *PWA Builder* will translate your JSON manifest into the *.appxmanifest* (XML) format required by Windows 10 apps.
 [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) | Provides asynchronous networking (requests, reponses) for page resources |[EdgeHTML 14+](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/whats-new/edgehtml-14) / Build 14393+ | The *Service Worker API* syntax is based on Fetch-based networking APIs. You can also use Fetch API more generally as a modern alternative to *XMLHttpRequest*. 
 [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) | Provides an offline-capable web app model / network proxy, where event-driven scripts run independent of web pages  | [EdgeHTML17](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide) / Build 17133+ | Experimental support (behind *Enable Service Workers* flag) shipped in EdgeHTML 16. On by default in EdgeHTML 17+ builds.
 [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) | Provides a storage mechanism for network request/response pairs | [EdgeHTML17](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide) / Build 17133+ | See *Service Worker API* note above.
