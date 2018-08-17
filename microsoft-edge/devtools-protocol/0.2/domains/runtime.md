@@ -3,7 +3,7 @@ description: Reference for the Runtime Domain. Runtime domain exposes JavaScript
 title: Runtime Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 7/23/2018
+ms.date: 8/17/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -428,7 +428,7 @@ Issued when exception was thrown and unhandled.
 ---
 
 ### consoleAPICalled
-undefined
+
 
 <table>
     <thead>

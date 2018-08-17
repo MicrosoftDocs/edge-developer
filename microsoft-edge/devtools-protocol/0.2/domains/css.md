@@ -3,7 +3,7 @@ description: Reference for the CSS Domain. This domain exposes CSS read/write op
 title: CSS Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 7/23/2018
+ms.date: 8/17/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -295,7 +295,7 @@ Fired whenever an active document stylesheet is removed.
 
 ### <a name="stylesheetid"></a> StyleSheetId `string`
 
-undefined
+
 
 </p>
 
@@ -528,7 +528,7 @@ Text range within a resource. All numbers are zero-based.
 
 ### <a name="shorthandentry"></a> ShorthandEntry `object`
 
-undefined
+
 
 <table>
     <thead>
@@ -895,7 +895,7 @@ stylesheet rules) this rule came from.</td>
 
 ### <a name="csscomputedstyleproperty"></a> CSSComputedStyleProperty `object`
 
-undefined
+
 
 <table>
     <thead>

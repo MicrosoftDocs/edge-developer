@@ -3,7 +3,7 @@ description: Reference for the DOMDebugger Domain. DOM debugging allows setting 
 title: DOMDebugger Domain - Microsoft Edge DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 7/23/2018
+ms.date: 8/17/2018
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
