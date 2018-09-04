@@ -11,17 +11,17 @@ ms.prod: microsoft-edge
 # Microsoft Edge DevTools Protocol
 
 > [!NOTE]
-> The Microsoft Edge DevTools Protocol works only on [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
+> The Microsoft Edge DevTools Protocol works only on [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) and later builds.
 
-Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](0.1/domains/index.md) of EdgeHTML engine instrumentation.
+Developer tools can use the **Microsoft Edge DevTools Protocol** to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](0.2/domains/index.md) of EdgeHTML engine instrumentation.
 
- Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Edge or the Windows Device Portal. Microsoft Edge DevTools uses this protocol to enable [remote debugging](0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj).
+ Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Edge or the Windows Device Portal. Microsoft Edge DevTools uses this protocol to enable [remote debugging](0.2/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the standalone DevTools client available from the [Microsoft Store](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj).
 
 The Microsoft Edge DevTools Protocol is designed to align closely with the Chrome DevTools Protocol (see the [W3C WICG for DevTools Protocols](https://github.com/WICG/devtools-protocol/)), though there are known interoperability gaps in this release.
 
 ## Using the protocol
 
-Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge. See the [remote debugging](0.1/clients.md#microsoft-edge-devtools-preview) instructions if you're using Microsoft Edge DevTools as your client.
+Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge. See the [remote debugging](0.2/clients.md#microsoft-edge-devtools-preview) instructions if you're using Microsoft Edge DevTools as your client.
 
 1. Launch Microsoft Edge with the remote debugging port open, specifying the URL you wish to open. For example:
 
@@ -33,17 +33,17 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 
     ![Developer tools server](media/developer-tools-server.png) 
 
-2. Use this [HTTP endpoint](0.1/http.md) to get a list of attachable page targets:
+2. Use this [HTTP endpoint](0.2/http.md) to get a list of attachable page targets:
 
     ```
     http://localhost:9222/json/list
     ```
 
-3. Connect to the listed `webSocketDebuggerUrl` of the desired page to issue further [protocol commands](0.1/domains/index.md) and receive event messages through the devtools socket server.
+3. Connect to the listed `webSocketDebuggerUrl` of the desired page to issue further [protocol commands](0.2/domains/index.md) and receive event messages through the devtools socket server.
 
 ## Status and feedback
 
-The preliminary release ([Version 0.1](0.1/index.md)) of the Microsoft Edge DevTools Protocol provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB).
+[Version 0.2](0.2/index.md) of the DevTools Protocol provides new domains for style and layout debugging in addition to the core script debugging functionality introduced in [Version 0.1](0.1/index.html). In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md) and [**Debugger**](../../devtools-guide/debugger.md) panels.
 
 Further platform instrumentation will be available in future releases of the protocol.
 
@@ -64,10 +64,10 @@ No, not simultaneously when the clients are debugging. The last client to connec
 No. You can specify any port, though be sure to pick one that isn't already in use. Port 9222 for remote debugging is used by convention.
 
 #### How do I connect my custom tooling client to Microsoft Edge running the DevTools Server?
-See [*Using the protocol*](#using-the-protocol) instructions above for attaching to Edge running on the local machine. If you're looking to support remote debugging, you'll need to devise a user workflow for installing the host machine's SSL certificate on the client, for example with an install dialog as [Microsoft Edge DevTools Preview](./0.1/clients.md#microsoft-edge-devtools-preview) uses.
+See [*Using the protocol*](#using-the-protocol) instructions above for attaching to Edge running on the local machine. If you're looking to support remote debugging, you'll need to devise a user workflow for installing the host machine's SSL certificate on the client, for example with an install dialog as [Microsoft Edge DevTools Preview](./0.2/clients.md#microsoft-edge-devtools-preview) uses.
 
 #### If I'm remote debugging using Edge DevTools, do I need to start the host browser process with *--devtools-server-port* cmd line switch? 
-No. If you're setting up [remote debugging using Microsoft Edge DevTools Preview](./0.1/clients.md#microsoft-edge-devtools-preview), the `--devtools-server-port` command line switch is not necessary for starting Edge. In this case, Windows *Device Portal* is hosting the DevTools Server on behalf of the browser.
+No. If you're setting up [remote debugging using Microsoft Edge DevTools Preview](./0.2/clients.md#microsoft-edge-devtools-preview), the `--devtools-server-port` command line switch is not necessary for starting Edge. In this case, Windows *Device Portal* is hosting the DevTools Server on behalf of the browser.
 
 #### Can I use the Edge DevTools Protocol to remotely debug a WWAHost.exe or webview process?
 Not yet, but stay tuned...
