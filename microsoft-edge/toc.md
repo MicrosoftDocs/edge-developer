@@ -53,7 +53,7 @@
 ##### [Page](devtools-protocol/0.1/domains/page.md)
 ##### [Runtime](devtools-protocol/0.1/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.1/domains/schema.md)
-### 0.2(devtools-protocol/0.2/index.md)
+### [0.2](devtools-protocol/0.2/index.md)
 #### [Clients](devtools-protocol/0.2/clients.md)
 #### [HTTP endpoints](devtools-protocol/0.2/http.md)
 #### [Domains](devtools-protocol/0.2/domains/index.md)
