@@ -21,6 +21,13 @@ Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are l
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+
+## Preview Build 18204
+Here's a full list of new and updated EdgeHTML APIs in Windows 10 Preview Build 18204.
+
+<iframe height='565' scrolling='no' title=' EdgeHTML Preview Build 18204' src='//codepen.io/MSEdgeDev/embed/da5b2bef3dfdcb6fea3ac324dc434a62/?height=300&theme-id=23761&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/da5b2bef3dfdcb6fea3ac324dc434a62/'> EdgeHTML Preview Build 18204</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 ## Preview Build 17704
 No API changes. 
 
