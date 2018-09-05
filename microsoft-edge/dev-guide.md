@@ -3,7 +3,7 @@ description: Learn about what's new in EdgeHTML 17.
 title: What's new in EdgeHTML 17
 author: libbymc
 ms.author: libbymc
-ms.date: 04/30/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -25,7 +25,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 ### ARIA 1.1 Roles, States, and Events
 
-EdgeHTML 17 now includes support for roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1](http://www.w3.org/TR/wai-aria-1.1/) specification, including [banner](http://www.w3.org/TR/wai-aria-1.1/#banner), [complementary](http://www.w3.org/TR/wai-aria-1.1/#complementary), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more. Take a look at the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge. 
+EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](http://www.w3.org/TR/wai-aria-1.1/), including [feed](https://www.w3.org/TR/wai-aria-1.1/#feed), [form](https://www.w3.org/TR/wai-aria-1.1/#form), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299). With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1. Check out the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge.
 
 ### CSS masking
 
@@ -51,6 +51,28 @@ This release of the DevTools ships in two ways: as the traditional in-browser (`
 The tools have also been updated with a number of major features, including basic support for [remote debugging](./devtools-guide/whats-new.md#devtools-protocol) (via our new [DevTools Protocol](./devtools-guide/whats-new.md#devtools-protocol)), [PWA debugging features](./devtools-guide/whats-new.md#pwa-debugging), [IndexedDB cache management](./devtools-guide/whats-new.md#indexeddb-inspection), [vertical docking](./devtools-guide/whats-new.md#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./dev-guide/whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
 Visit [DevTools in the latest Windows 10 update (EdgeHTML 17)](./devtools-guide/whats-new.md) for more details.
+
+### JavaScript
+
+With EdgeHTML 17 the Chakra JavaScript engine introduces performance improvements in a number of key areas:
+
+**Leaner memory footprint**
+
+ - (Re-)defer parsing for [arrow functions](https://github.com/Microsoft/ChakraCore/pull/4105) and [methods on object literals](https://github.com/Microsoft/ChakraCore/pull/4136)
+ - [RegExp bytecode refactoring](https://github.com/Microsoft/ChakraCore/pull/3915)
+
+**Faster JavaScript built-ins**
+
+ - [Type sharing for Object.create](https://github.com/Microsoft/ChakraCore/pull/3901)
+ - [Polymorphic inline cache for Object.assign](https://github.com/Microsoft/ChakraCore/pull/3792)
+ - [JSON.parse/stringify optimizations](https://github.com/Microsoft/ChakraCore/pull/4077)
+ - [Rewriting Array Iterators in JavaScript and faster for...of](https://github.com/Microsoft/ChakraCore/pull/4095)
+
+**Web Assembly**
+
+ - [Inling support](https://github.com/Microsoft/ChakraCore/pull/3681) 
+
+Check out [*Improved JavaScript and WebAssembly performance in EdgeHTML 17*](https://blogs.windows.com/msedgedev/2018/06/19/improved-javascript-webassembly-performance-edgehtml-17/#I4vzUJK2va54kSWl.97) for all the details.
 
 ### Media element
 

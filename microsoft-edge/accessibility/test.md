@@ -30,11 +30,8 @@ A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirement
 #### [HTML5Accessibility](http://html5accessibility.com/)
 This site tests which new HTML5 features are accessibly supported by major browsers. 
 
-#### [Site Scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/)
-The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.
-
-#### [sonarwhal](https://sonarwhal.com/)
-Use [sonarwhal](https://sonarwhal.com/) to improve your webiste's accessibility with [aXe](https://sonarwhal.com/docs/user-guide/rules/rule-axe/) integration.
+#### [webhint](https://webhint.io/)
+Use [webhint](https://webhint.io/) to check for out-of-date libraries, security improvements, performance problems, accessibility issues and more.
 
 #### [Web Accessibility Checker](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
 A Visual Studio extension that performs accessibility checks on any ASP.NET web application.

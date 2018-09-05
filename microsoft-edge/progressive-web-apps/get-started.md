@@ -3,7 +3,7 @@ description: This guide will give you an overview of PWA basics and tools for bu
 title: Get started with Progressive Web Apps
 author: erikadoyle
 ms.author: edoyle
-ms.date: 04/30/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -82,7 +82,7 @@ If this were an existing live site, you could quickly generate a web app manifes
 
     1. Using a web browser, download this [sample 512x512 PWA image](./media/pwa.png).
 
-    2. Go to the PWA Builder [App Image Generator](https://appimagegenerator-prod.azurewebsites.net/), and select the *pwa.png* image you just saved as the **Input Image** and then click the **Download** button.
+    2. Go to the PWA Builder [App Image Generator](https://www.pwabuilder.com/imageGenerator), and select the *pwa.png* image you just saved as the **Input Image** and then click the **Download** button.
 
     3. **Open** and **Extract** the zip file.
     

@@ -3,7 +3,7 @@ description: Find information on current progress towards completing the Microso
 title: Extensions - Extension API roadmap
 author: abbycar
 ms.author: abigailc
-ms.date: 04/30/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, api, extensions, javascript, developer
@@ -24,7 +24,9 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 |   extension   |                                      Contains utilities that can be used by any extension page.                                       | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |    history    |                                         Interacts with the browser's record of visited pages.                                         |                 Under consideration                  |
 |     i18n      |                                         Implements internationalization across an extension.                                          | Supported — Microsoft Edge (38) / Windows 10 (14393) |
+|   identity    |                                       Used to get an OAuth2 authorization code or access token.                                       |                 Under consideration                  |
 |     idle      |                                       Used to detect when the machine's idle state is changed.                                        | Supported — Microsoft Edge (38) / Windows 10 (14393) |
+|  management   |                                              Gets information about installed add-ons.                                                |                 Under consideration                  |
 | notifications |                      Allows creation of notifications using templates to be displayed in the user's system tray.                      | Supported - Microsoft Edge (42) / Windows 10 (17134) |
 |  pageAction   |                                      Enables extensions to add a button inside the address bar.                                       | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |  permissions  |                   Allows users to select what optional permissions they would like to grant an extension access to.                   |                 Under consideration                  |

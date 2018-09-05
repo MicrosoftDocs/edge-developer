@@ -3,7 +3,7 @@ description: Reach the world of Windows 10 customers by distributing your PWA th
 title: Progressive Web Apps in the Microsoft Store
 author: erikadoyle
 ms.author: edoyle
-ms.date: 04/30/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
@@ -30,9 +30,6 @@ There are two options for getting your PWA into the Microsoft Store:
 2. If your PWA meets [certain criteria](#criteria-for-automatic-submission), it can be [automatically indexed](#automatic-pwa-importing-with-bing) by the Bing web crawler. (You also have the option to [opt-out](#opting-out-of-automatic-microsoft-store-import) of auto-submission.)
 
 Regardless of submission method, once your PWA is accepted to the Microsoft Store you'll gain access to all the benefits outlined above.
-
-> [!NOTE]
-> The Microsoft Store requires Progressive Web App (PWA) submissions to be listed as free in all markets. 
 
 ## Submitting your PWA manually
 

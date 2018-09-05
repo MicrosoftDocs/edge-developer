@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # What's new in EdgeHTML 16
 
-Here's a list of the new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/) (10/2017, Build 16299). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](../whats-new.md).
+Here's a list of the new and updated features shipped in [EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17/edgehtml-16-fall-creators-update/) web platform, as part of the [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/) (10/2017, Build 16299). For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](../whats-new.md).
 
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_16](https://aka.ms/devguide_edgehtml_16).
 
@@ -36,6 +36,17 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](../../devtools-guide/whats-new.md) for more on what's changed!
 
 ![Experimental service worker debugging support in DevTools](../../devtools-guide/media/debugger_sw_inspect.png)
+
+### JavaScript
+
+[EdgeHTML 16 builds on Javascript performance](https://blogs.windows.com/msedgedev/2017/10/31/optimizations-webassembly-sharedarraybuffer-atomics-edgehtml-16/#FodxEPHxR4WkbtyA.97) optimizations of previous releases by expanding the Chakra engine's ability to defer/re-defer functions, use polymorphic inline caches, and optimize functions with *try/finally* blocks.
+
+Additionally, features first previewed in EdgeHTML 15 are now stable and enabled by default:
+
+#### New features (on by default)
+
+* [WebAssembly](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webassemblymvp/?q=WebAssembly) MVP ([demo](https://webassembly.org/demo/))
+* [Shared Memory and Atomics](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/sharedmemoryandatomics/?q=Atomics)
 
 ### Payment Request API
 

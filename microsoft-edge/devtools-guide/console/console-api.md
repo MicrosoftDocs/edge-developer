@@ -3,7 +3,7 @@ description: Use the Console API to programmatically debug and profile your code
 title: Microsoft Edge DevTools - Console - Console API
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/10/2017
+ms.date: 05/31/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console api

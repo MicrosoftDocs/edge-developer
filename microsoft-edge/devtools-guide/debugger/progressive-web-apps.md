@@ -3,7 +3,7 @@ description: Use the Service Workers and Cache managers to debug your PWA
 title: Microsoft Edge DevTools - Debugger - Progressive Web Apps
 author: erikadoyle
 ms.author: edoyle
-ms.date: 04/30/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, pwa, service worker, cache api
