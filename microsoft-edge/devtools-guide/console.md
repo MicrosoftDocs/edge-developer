@@ -35,17 +35,15 @@ To open the **Console** developer tool in Microsoft Edge, press the F12 key (or 
 
 ## Shortcuts
 
-|Action                                            | Shortcut |
-|:-----------------------------------------------  | :----------------- |
-|Launch DevTools with Console in focus             | `CTRL` + `SHIFT` + `J`| 
-|Switch to Console                                 | `CTRL` + `2`         | 
-|Show/Hide Console from another DevTools tab       | `CTRL` + &grave; (backtick)| 
-|Execute (single line command)                     | `ENTER`              | 
-|Line-break without executing (multi-line command) | `SHIFT` + `ENTER`    | 
-|""                                                | `CTRL` + `ENTER`     | 
-|Clear the Console of all messages                 | `CTRL` + `L`         | 
-|Filter logs (set focus to search box)             | `CTRL` + `F`         | 
-|Accept auto-completion suggestion (when in focus) | `ENTER`              | 
-|""                                                | `TAB`                | 
-|Previous / Next auto-completion suggestion        | up / down arrow keys |
+Action                                            | Shortcut               
+:-------------------------------------------------| :----------------------
+Launch DevTools with Console in focus             | `Ctrl` + `Shift` + `J` 
+Switch to Console                                 | `Ctrl` + `2`           
+Show/Hide Console from another DevTools tab       | `Ctrl` + &grave; (backtick)  
+Execute (single line command)                     | `Enter`                
+Line-break without executing (multi-line command) | `Shift` + `Enter` or `Ctrl` + `Enter`      
+Clear the Console of all messages                 | `Ctrl` + `L`           
+Filter logs (set focus to search box)             | `Ctrl` + `F`           
+Accept auto-completion suggestion (when in focus) | `Enter` or `Tab`       
+Previous/Next auto-completion suggestion          | up / down arrow keys   
 

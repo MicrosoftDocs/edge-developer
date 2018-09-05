@@ -239,8 +239,8 @@ Go to definition in file | `Ctrl`+`D`
 Find references in file | `Ctrl` + `Shift` + `D`
 Pretty print | `Ctrl` + `Shift` + `P`
 Word wrap | `Alt` + `W`
-Mark as my code / library code | `Ctrl` + `L`
-
+Mark as my code/library code | `Ctrl` + `L`
+Disable/Enable tabs in the editor. **Note:** if you're using the keyboard to navigate in the Debugger, you won't be able to tab out of the editor until you disable tabbing | `Ctrl` + `M`
 
 ### Shortcuts for Watches pane
 
