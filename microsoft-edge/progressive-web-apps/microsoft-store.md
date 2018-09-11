@@ -99,7 +99,7 @@ To be automatically packaged and listed for the Microsoft Store, your PWA will n
 
   - Name
   - Description
-  - App icon icon that is at least 512 x 512 pixels
+  - App icon that is at least 512 x 512 pixels
 
 - [X] Unique core logic (not minimally modified code from an [app boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code) template)
 
