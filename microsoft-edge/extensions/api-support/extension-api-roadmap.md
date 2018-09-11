@@ -18,6 +18,7 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 |   bookmarks   |                                          Used to create, organize, and manipulate bookmarks.                                          | Supported — Microsoft Edge (40) / Windows 10 (15063) |
 | browserAction |                                 Enables extensions to add a persistent button within Microsoft Edge.                                  | Supported — Microsoft Edge (38) / Windows 10 (14393) |
+| commands      |                                                      Defines keyboard shortcuts.                                                      | Under consideration
 | contextMenus  |                           Adds a context menu item on a specific URL, in a specified context of a webpage.                            | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |    cookies    |                                 Used to query and modify cookies, as well as notify when they change.                                 | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |   downloads   |                           Used to programmatically initiate, monitor, manipulate, and search for downloads.                           |                 Under consideration                  |
