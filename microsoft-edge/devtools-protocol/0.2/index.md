@@ -21,6 +21,4 @@ The goals behind the DevTools Protocol are three-fold:
  - Expand access of DevTools functionality to external tooling clients
  - Enable remote debugging across the range of Windows 10 devices running Micrsoft Edge 
 
-Version 0.2 of the DevTools Protocol provides new domains for style and layout debugging in addition to the core script debugging functionality introduced in Version 0.1. In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md) and [**Debugger**](../../devtools-guide/debugger.md) (minus cache inspection) panels.
-
-Further debugger functionality will be added in upcoming releases, followed by the instrumentation powering other [DevTools](../../devtools-guide.md) panels.
+Version 0.2 of the DevTools Protocol includes new domains for style and layout (read-only) debugging and console APIs, in addition to the core script debugging functionality introduced in Version 0.1. In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md), [**Console**](../../devtools-guide/console.md) and [**Debugger**](../../devtools-guide/debugger.md)  panels.

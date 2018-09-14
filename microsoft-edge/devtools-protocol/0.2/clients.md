@@ -15,13 +15,13 @@ ms.prod: microsoft-edge
 
 **DevTools Protocol 0.2** supports the following tooling clients.
 
-[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Microsoft Visual Studio 15.8](../media/visual-studio-2017.png)](#microsoft-visual-studio)
+[![Microsoft Edge DevTools Preview](../media/microsoft-edge-devtools.png)](#microsoft-edge-devtools-preview) [![Visual Studio Code](../media/visual-studio-code.png)](#visual-studio-code) [![Microsoft Visual Studio 15.8](../media/visual-studio-2017.png)](#microsoft-visual-studio)
 
 ## Microsoft Edge DevTools Preview
 
 You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) Windows 10 app from the Microsoft Store to remotely debug a host device running Microsoft Edge ([EdgeHTML 17](../../dev-guide.md) or later).
 
-Version 0.2 of the DevTools Protocol provides new domains for style and layout debugging in addition to the core script debugging functionality introduced in Version 0.1. In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md) and [**Debugger**](../../devtools-guide/debugger.md) panels. Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
+Version 0.2 of the DevTools Protocol provides new domains for style and layout debugging and console APIs, in addition to the core script debugging functionality introduced in Version 0.1. In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md), [**Console**](../../devtools-guide/console.md) and [**Debugger**](../../devtools-guide/debugger.md) panels. Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
 
 Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol version 0.2 requires [Windows 10 October 2018 Update]() or a later Windows Insider Preview build on the host (debugee) machine. The Edge DevTools Preview app (used on the debugger machine) will run on Windows 10 version 16299 (Windows 10 Fall Creators Update, 10/2017) or higher.
 
@@ -56,6 +56,40 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 5. The *Remote* panel will load a list of debuggable page targets on the host machine. Select one to start debugging.
 
 6. Use the **Refresh** button to update and reload the list of remote page targets on the host machine. Click the **Disconnect** button to return to the *Connect to a remote device* screen and attach to a different host.
+
+## Visual Studio Code
+
+With the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug script running in Microsoft Edge directly in Visual Studio Code. The extension requires you to be serving your web application from localhost, which you can start from either command-line or a [Task](https://code.visualstudio.com/docs/editor/tasks).
+
+To get started:
+
+1. Install the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension.
+
+2. Restart VS Code, open the folder containing the project you wish to debug and set breakpoints in your code.
+
+3. Configure an Edge [launch task](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) to open the desired page of your project: **Debug** > **Add Configuration...**. For example:
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Launch localhost",
+            "type": "edge",
+            "request": "launch",
+            "url": "http://localhost/mypage.html",
+            "webRoot": "${workspaceFolder}/wwwroot"
+        }
+    ]
+}
+```
+
+    [*Using the debugger*](https://github.com/Microsoft/vscode-edge-debug2#using-the-debugger) has more on launch configuration settings. 
+
+4. Start your server on localhost and press the **Start Debugging** (play) button or `F5` to launch Edge. When a breakpoint is hit, you'll break into VS Code and can further inspect and step through code from there.
+
+For more, check out the [VS Code - Debugger for Microsoft Edge](https://github.com/Microsoft/vscode-edge-debug2#----vs-code---debugger-for-microsoft-edge--) documentation.
 
 ## Microsoft Visual Studio
 
