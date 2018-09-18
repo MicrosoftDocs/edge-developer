@@ -43,7 +43,7 @@ With [Progressive Web Apps](https://developer.mozilla.org/en-US/Apps/Progressive
     :::column-end:::
     :::column:::
         ![Safe icon](./progressive-web-apps/media/i_security.png)
-        ### [Safe](https://developer.mozilla.org/en-USi_responsive.png/Apps/Progressive/Advantages#Safe)
+        ### [Safe](https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive/Advantages#Progressive#Safe)
         Provides a secure HTTPS endpoint and other user safeguards    
     :::column-end:::
     :::column:::

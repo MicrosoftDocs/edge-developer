@@ -89,7 +89,7 @@ For more on the all the features and services available to Microsoft Store app d
 
 Just as your PWA's [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a signal to supporting platforms that your app is offline-capable and ready to be presented as a fully integrated app experience, it's also a hint to the Bing web crawler that your PWA should be considered for automatic inclusion in the Microsoft Store. 
 
-If your PWA meets the requirements below, the Bing indexing service will automatically package your PWA in the [*.appx*](#submitting-your-pwa-manually) format required for installation on Windows 10 and assemble your app's store product page based on the metadata in its web app manifest. After claiming your PWA, you'll be able to further customize your store page and gain access to user analytics and other app management tools throug the Windows Dev Center dashboard.
+If your PWA meets the requirements below, the Bing indexing service will automatically package your PWA in the [*.appx*](#submitting-your-pwa-manually) format required for installation on Windows 10 and assemble your app's store product page based on the metadata in its web app manifest. After claiming your PWA, you'll be able to further customize your store page and gain access to user analytics and other app management tools through the Windows Dev Center dashboard.
 
 ### Criteria for automatic submission
 
@@ -99,7 +99,7 @@ To be automatically packaged and listed for the Microsoft Store, your PWA will n
 
   - Name
   - Description
-  - App icon icon that is at least 512 x 512 pixels
+  - App icon that is at least 512 x 512 pixels
 
 - [X] Unique core logic (not minimally modified code from an [app boilerplate](https://en.wikipedia.org/wiki/Boilerplate_code) template)
 
