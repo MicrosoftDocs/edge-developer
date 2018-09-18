@@ -25,7 +25,7 @@ PWAs in the Microsoft Store enjoy a number of advantages:
 
 There are two options for getting your PWA into the Microsoft Store:
 
-1. You can [manually submit it](#submitting-your-PWA-manually), or
+1. You can [manually submit it](#submitting-your-pwa-manually), or
 
 2. If your PWA meets [certain criteria](#criteria-for-automatic-submission), it can be [automatically indexed](#automatic-pwa-importing-with-bing) by the Bing web crawler. (You also have the option to [opt-out](#opting-out-of-automatic-microsoft-store-import) of auto-submission.)
 
