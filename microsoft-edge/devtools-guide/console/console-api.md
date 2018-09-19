@@ -28,10 +28,10 @@ Your code can send several types of custom messages to the console, including:
 
 Message type  | &nbsp;   |
 :------------------- | :------ |
-[**error()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/error) | Critical errors and failures
+[**error()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/error) and [**exception()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/error)| Critical errors and failures
 [**warn()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/warn) | Possible errors or unexpected behavior 
 [**info()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/info) | Useful, but non-critical information
-[**log()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
+[**log()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/log) and [**debug()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
 
    
 You can group and filter these along with the other messages generated from Microsoft Edge from the  Console panel. All custom message methods require a string (message) parameter and optional format substitution parameters. Microsoft Edge supports the following formatting options:
@@ -81,6 +81,23 @@ console.dirxml(document.querySelector('#main'));
 ```
 
 ![Comparison of 'dir' versus 'dirxml' output](../media/console_api_dir.png)
+
+### Selecting an element in the **Elements** panel
+
+You can select an element within the HTML tree context of the page  directly from the console for immediate layout and style debugging.
+
+Command | &nbsp;
+:------------------- | :--- |
+[**select()**]() | Switches to the **Elements** panel and sets focus to the specified element.
+
+For example, if you open the console on this page and type:
+
+```
+console.select(document.querySelector("body"));
+```
+The DevTools will switch to the **Elements** panel (if its not already the current) and set focus in the [*HTML tree view*](../elements.md#html-tree-view) to the specified element.
+
+![Example of the 'select' method](../media/console_api_select.png)
 
 ## Testing and measuring
 
