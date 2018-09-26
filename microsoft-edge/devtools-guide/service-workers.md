@@ -59,20 +59,3 @@ Here are some general things to keep in mind when using service workers:
 
 - **Service worker to scope is 1:1.** You’ll only be able to have one service worker per scope. That means if you try to register a different service worker for a scope that already has a service worker, that service worker will be updated.
 
-## Cache manager
-
-Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
-
-![Cache manager](../media/debugger_cache.png)
-
-## Shortcuts
-
-### Cache manager
-
-| Action              | Shortcut      |
-|:--------------------|:--------------|
-| Refresh             | `Ctrl` + `F5` |
-| Delete item         | `Del`         |
-| Copy selected items | `Ctrl` + `C`  |
-| Select all          | `Ctrl` + `A`  |
-

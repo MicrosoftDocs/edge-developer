@@ -22,6 +22,7 @@
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md) 
 ## [DevTools](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
+#### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
 #### [EdgeHTML 16](devtools-guide/whats-new/edgehtml-16.md)
 ### [Elements](devtools-guide/elements.md)
 #### [Styles](devtools-guide/elements/styles.md)
