@@ -1,21 +1,21 @@
 ---
-description: See what's new in the Microsoft Edge DevTools
-title: What's new in the Microsoft Edge DevTools
+description: Features added to the Microsoft Edge DevTools in the Windows 10 April 2018 Update (EdgeHTML 17)
+title: Microsoft Edge DevTools in the Windows 10 April 2018 Update (EdgeHTML 17)
 author: erikadoyle
 ms.author: edoyle
 ms.date: 06/20/2018
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 17
 ---
 
-# DevTools in the latest Windows 10 update (EdgeHTML 17)
+# DevTools in the Windows 10 April 2018 update (EdgeHTML 17)
 
-This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](#microsoft-edge-devtools-app-preview) from the Microsoft Store!
+The EdgeHTML 17 release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](#microsoft-edge-devtools-app-preview) from the Microsoft Store!
 
 The tools have been updated with a number of major features, including basic support for [remote debugging](https://docs.microsoft.com/microsoft-edge/devtools-guide#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-inspection), [vertical docking](#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
-Here are the latest Microsoft Edge DevTools features available now in the [Windows 10 April 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](../dev-guide.md)).
+Here are the latest Microsoft Edge DevTools features that shipped in the [Windows 10 April 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](https://aka.ms/devguide_edgehtml_17)).
 
 ## Microsoft Edge DevTools app preview
 
@@ -46,11 +46,11 @@ Developer tools can use the [**Microsoft Edge DevTools Protocol**](../devtools-p
 
 ## IndexedDB inspection
 
-New to the [**Debugger**](./debugger.md) this release is an [IndexedDB Manager](./debugger/indexeddb.md) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
+New to the [**Debugger**](./debugger.md) this release is an [IndexedDB Manager](./storage.md#indexeddb-manager) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
 
 ## PWA debugging
 
-Support for [debugging Progressive Web Apps (PWAs)](./debugger/progressive-web-apps.md) is now enabled by default, providing tool tabs for [**Service Workers**](./debugger/progressive-web-apps.md#service-workers-manager), [**Cache API**](./debugger/progressive-web-apps.md#cache-manager), and [**IndexedDB**](./debugger/indexeddb.md) management.
+Support for debugging Progressive Web Apps (PWAs) is now enabled by default, providing tool tabs for [**Service Workers**](./service-workers.md), [**Cache API**](./storage.md#cache-manager), and [**IndexedDB**](./storage.md#indexeddb-manager) management.
 
 Additionally, the [Network panel toolbar](./network.md#toolbar) has a new button, **Bypass Service Worker for all network requests**, to toggle on/off your registered service workers as network proxies:
 

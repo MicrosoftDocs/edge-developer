@@ -11,16 +11,25 @@ keywords: microsoft edge, web development, f12 tools, devtools, web storage, loc
 
 # Storage
 
+Use the **Storage** panel to inspect and manage various locally cached data, including:
+
+ - [Web storage](#local-and-session-storage-managers) (*Local* and *Session* storage) key/values pairs
+ - [Indexed DB](#indexeddb-manager) structured data
+ - [Cookies](#cookies-list) for the domain
+ - [Cache](#.md) (request/response pairs) for service worker debugging
+
+Expand any of those categories and click on a child entry to open its resource manager tab.
+
 ## Local and Session storage managers
 
-Use the [Debugger](../debugger.md) *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
+Use the *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
 
-The **Local Storage** and **Session Storage** folders inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
+The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](../debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
 
-![DevTools Cookies manager](../media/debugger_web_storage.png)
+![DevTools Cookies manager](./media/debugger_web_storage.png)
 
-From the *Local Storage* and *Session Storage* tab toolbars you can:
+From the *Local Storage* and *Session Storage* tabs you can:
 
  - **Refresh** (`Ctrl+F5`) the [storage list](#cookies-list) to see the current set of key/values pairs for the given domain. (The list does not auto-refresh upon script updates.)
  - **Simulate reaching the storage limit** for Microsoft Edge web storage. Each domain and subdomain has its own storage area, however there is a combined limit:
@@ -32,7 +41,7 @@ From the *Local Storage* and *Session Storage* tab toolbars you can:
 
    **Settings** > **Clear browsing data** > **Cookies and saved website data**
 
-![Clear browsing data from the Microsoft Edge Settings panel](../media/settings_clear_browsing_data.png)
+![Clear browsing data from the Microsoft Edge Settings panel](./media/settings_clear_browsing_data.png)
 
 ### Storage list
 
@@ -56,7 +65,7 @@ From the *Storage list* table you can:
 
 ## IndexedDB manager
 
-Use the [Debugger](../debugger.md) **IndexedDB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
+Use the **IndexedDB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
 
 > [!TIP]
 > You can use our [Audio Mixer](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *IndexedDB manager* in Microsoft Edge DevTools.
@@ -67,7 +76,7 @@ To delete all the IndexedDB data stored for the current user in Microsoft Edge, 
 
 The **IndexedDB** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
 
-![DevTools IndexedDB manager](../media/debugger_indexeddb.png)
+![DevTools IndexedDB manager](./media/debugger_indexeddb.png)
 
 ### IndexedDB Toolbar
 
@@ -110,11 +119,11 @@ Select all | `Ctrl` + `A`
 
 ## Cookies manager
 
-Use the [Debugger](../debugger.md) *Cookies manager* to inspect and manage the cookies for the given domain. 
+Use the *Cookies manager* to inspect and manage the cookies for the given domain. 
 
 The **Cookies** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie).
 
-![DevTools Cookies manager](../media/debugger_cookies.png)
+![DevTools Cookies manager](./media/debugger_cookies.png)
 
 From the *Cookies* tab toolbar you can:
 
@@ -166,7 +175,7 @@ In addition to the *Cookies* tab [toolbar](#cookies-manager), you can also manag
 
 Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
 
-![Cache manager](../media/debugger_cache.png)
+![Cache manager](./media/debugger_cache.png)
 
 ### Shortcuts
 

@@ -41,16 +41,6 @@ Find the code files you're looking for by browsing the folders or with a file na
 
 From the *Resource picker*, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
 
-### Cache managers
-
-The *Resource picker* is also the place where you can manage various page storage types, including:
-
- - [Service Workers and the Cache](./debugger/progressive-web-apps.md) for Progressive Web App debugging
- - [Web storage](./debugger/web-storage.md) (*Local* and *Session* storage)
- - [Cookies](./debugger/cookies.md) for the domain 
-
-Expand any of those categories and click on a child entry to open its resource manager tab in the *Debug window*.
-
 ## Debug window
 
 The *Debug window* is where you set your breakpoints, step through code, and live edit your script as you debug. Click to the left of any script command to add (or remove) a **Breakpoint**. Use the right-click context menu or [**Breakpoints**](#breakpoints) pane to *Add a condition* to the breakpoint by supplying a logical expression that causes the debugger to break if it evaluates *True* at that location.
@@ -219,7 +209,8 @@ Debug just my code | `Ctrl` + `J`
 Action | Shortcut
 :------------ | :-------------
 Mark as my code / library code | `Ctrl` + `L`
-Open document | `Ctrl` + `O`
+Open file | `Ctrl` + `O`, `Ctrl` + `P`
+Search all files | `Ctrl` + `Shift` + `F`
 
 ### Debug window shortcuts
 
