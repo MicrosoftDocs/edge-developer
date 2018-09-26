@@ -29,7 +29,7 @@ Microsoft Edge now supports the Web Authentication API (aka WebAuthN), based on 
 
 [Windows Hello](https://www.microsoft.com/en-us/windows/windows-hello) allows users to authenticate without a password on any Windows 10 device, using biometrics—face and fingerprint recognition—or a PIN number to sign in to web sites. With Windows Hello face recognition, users can log in to sites that support Web Authentication in seconds, with just a glance.
 
-![Animation demonstrating web authentication using Windows Hello](/media/windowshello.gif)
+![Animation demonstrating web authentication using Windows Hello](./media/windowshello.gif)
 
 For more information, head over to the blog post [Introducing Web Authentication in Microsoft Edge](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge).
 
