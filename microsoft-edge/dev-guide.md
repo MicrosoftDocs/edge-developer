@@ -41,11 +41,11 @@ Beginning in the October 2018 Update, users can now control whether sites opened
 > [!NOTE]
 > The "Block" setting may break some sites due to the strict enforcement. You may need to click multiple times for some video or audio to play correctly. Some sites may not work at all – in those cases, you can enable or block autoplay on a case-by-case basis from the website permissions pane by clicking the icon next to the address in the Address Bar.
 
-[Media autoplay settings in Microsoft Edge](./devguide/media/media_autoplay.png)
+![Media autoplay settings in Microsoft Edge](./devguide/media/media_autoplay.png)
 
 Microsoft Edge now allows users to control autoplay permissions on a per-site basis. Set media autoplay under the “Website permission” section of the Website Identification pane – just click the information icon or lock icon on the left side of the address bar, then click “manage permissions” to get started.
 
-[Website permissions setting in Microsoft Edge](.\dev-guide\media\website_permissions.png)
+![Website permissions setting in Microsoft Edge](.\dev-guide\media\website_permissions.png)
 
 <!-- ### WebView control 
 
