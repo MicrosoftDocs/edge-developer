@@ -61,7 +61,7 @@ Other features of the debug window include controls for:
 
 ### 1. Code editing
 
-You can edit your JavaScript live during a debugging session. Once you make your changes, click <strong>Save</strong> (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (<em>) will appear before the file name in the *Debug window</em> tab.
+You can edit your JavaScript live during a debugging session. Once you make your changes, click <strong>Save</strong> (`Ctrl+S`) to test your changes next time that section of code runs. If you have unsaved code changes, an asterisk (\*) will appear before the file name in the *Debug window* tab.
 
 Click the **Compare document to original** button to view the diff of what you changed.
 
