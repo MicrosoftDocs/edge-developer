@@ -35,15 +35,13 @@ Often the first step in debugging is to set breakpoints in the code you're looki
 
  Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
 
-
 ![Debugger resource picker](./media/debugger_resource_picker.png)
-
 
 From the *Resource picker* context menu, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
 
 ### File search
 
-Use the *Search all files* command (`Ctrl`+`Shift`+`F`) when you have a specific string of code you're trying to find in the source. The toolbar provides different search options, including regular expressions. Clicking on a search result will focus the *Debug window* on the specified file and line.
+Use the *Find in files* command (`Ctrl`+`Shift`+`F`) when you have a specific string of code you're trying to find in the source. The toolbar provides different search options, including regular expressions. Clicking on a search result will focus the *Debug window* on the specified file and line.
 
 ![Debugger file search pane](./media/debugger_file_search.png)
 

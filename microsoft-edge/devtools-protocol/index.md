@@ -45,8 +45,6 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 
 [Version 0.2](0.2/index.md) of the DevTools Protocol provides new domains for style and layout (read-only) debugging and console APIs, in addition to the core script debugging functionality introduced in [Version 0.1](0.1/index.md). In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../devtools-guide/elements.md), [**Console**](../devtools-guide/console.md) and [**Debugger**](../devtools-guide/debugger.md) panels.
 
-Further platform instrumentation will be available in future releases of the protocol.
-
 Thanks for trying the Edge DevTools Protocol! We'd love to hear your feedback at:
 
  - [**Microsoft Edge Developer UserVoice**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): DevTools feature ideas and requests

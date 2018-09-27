@@ -18,7 +18,7 @@ The **Performance** panel offers tools for profiling and analyzing the responsiv
  - [Get a step-by-step breakdown of the processes](#timeline-details) consuming page execution time 
  - [Walk your JavaScript call stacks](#javascript-call-stacks) to identify costly operations, such as those requiring layout recalculations 
 
-![ DevTools Performance panel](./media/performance.png)
+![DevTools Performance panel](./media/performance.png)
 
  ## Recording a profile
 
