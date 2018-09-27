@@ -1,33 +1,25 @@
 ---
-description: Use the Service Workers and Cache managers to debug your PWA
-title: Microsoft Edge DevTools - Debugger - Progressive Web Apps
+description: Use the Service Workers panel for managing and debugging your service workers
+title: Microsoft Edge DevTools - Debugger - Service Workers
 author: erikadoyle
 ms.author: edoyle
-ms.date: 06/20/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, pwa, service worker, cache api
 ---
 
-# Progressive Web App debugging
+# Service Workers
 
-With the [latest release](../whats-new.md#pwa-debugging) of the Edge DevTools, support for debugging Progressive Web Apps (PWAs) is now enabled by default.
+The **Service Workers** panel has tools for managing and debugging the service workers for your site, to help you:
 
-You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/windows-features.md#debug-your-pwa-as-a-windows-app) by selecting it from the list of [**Local**](../../devtools-guide.md#local-debugging) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
+ - Get an overview of all the service workers associated with your site and details of their scope and status
+ - **Update** and manage (**Unregister**) the service worker registration for the given scope
+ - **Push** a test notification
+ - **Stop**/**Start** individual service workers, and
+ - **Inspect** the selected service worker in a separate debugger window
 
- If a site makes use of **Service Workers** and/or the **Cache** API,  DevTools will populate entries in the **Debugger** panel for each origin, similar to how [web storage](./web-storage.md) and [cookies](./cookies.md) inspection work:
-
-![ DevTools Service Workers and Cache managers](../media/debugger_sw_and_cache.png)
-
-The DevTools also provide an [IndexedDB manager](./indexeddb.md) for working with the structured data used by your PWA.
-
-## Service Workers manager
-
-Clicking on a specific service worker entry will open up the **Service Worker Overview**, where you can force **Update** and manage the service worker registration (**Unregister**) for the given scope and send a test **Push** notification. You can also **Stop**/**Start** individual service workers and **Inspect** them from a separate debugger window:
-
-![Service Worker Overview pane](../media/debugger_sw_overview.png)
-
-![Service Worker debugging instance](../media/debugger_sw_inspect.png)
+![Service Worker Overview pane](./media/debugger_service_worker.png)
 
 Please note the following about service worker debugging in Edge DevTools:
 
