@@ -26,8 +26,7 @@ Use the *Local Storage manager* and *Session Storage manager* to inspect and man
 
 The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](../debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
-
-![DevTools Cookies manager](./media/debugger_web_storage.png)
+![DevTools Cookies manager](./media/storage_web_storage.png)
 
 From the *Local Storage* and *Session Storage* tabs you can:
 
@@ -76,7 +75,7 @@ To delete all the IndexedDB data stored for the current user in Microsoft Edge, 
 
 The **IndexedDB** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
 
-![DevTools IndexedDB manager](./media/debugger_indexeddb.png)
+![DevTools IndexedDB manager](./media/storage_indexeddb.png)
 
 ### IndexedDB Toolbar
 
@@ -123,7 +122,7 @@ Use the *Cookies manager* to inspect and manage the cookies for the given domain
 
 The **Cookies** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie).
 
-![DevTools Cookies manager](./media/debugger_cookies.png)
+![DevTools Cookies manager](./media/storage_cookies.png)
 
 From the *Cookies* tab toolbar you can:
 
@@ -173,9 +172,9 @@ In addition to the *Cookies* tab [toolbar](#cookies-manager), you can also manag
 
 ### Cache manager
 
-Clicking on a specific cache entry will open up the **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
+Clicking on a specific cache entry will open up the service worker **Cache** manager, where you can inspect and optionally delete cache entries (*Request* and *Response* key/value pairs):
 
-![Cache manager](./media/debugger_cache.png)
+![Cache manager](./media/storage_cache.png)
 
 ### Shortcuts
 
