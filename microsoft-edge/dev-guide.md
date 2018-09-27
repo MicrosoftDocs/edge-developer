@@ -45,7 +45,7 @@ Beginning in the October 2018 Update, users can now control whether sites opened
 
 Microsoft Edge now allows users to control autoplay permissions on a per-site basis. Set media autoplay under the “Website permission” section of the Website Identification pane – just click the information icon or lock icon on the left side of the address bar, then click “manage permissions” to get started.
 
-![Website permissions setting in Microsoft Edge](.\dev-guide\media\website_permissions.png)
+![Website permissions setting in Microsoft Edge](.\dev-guide\media\website_permission.png)
 
 <!-- ### WebView control 
 
