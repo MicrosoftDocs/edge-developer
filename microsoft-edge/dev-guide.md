@@ -28,7 +28,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 With the Windows 10 October 2018 Update, Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and converve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionaly, Microsoft Edge automatically suppress autoplay of media in background tabs.
 
-Check out the [Autoplay policies](../browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with the media hosted on your site.
+Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with the media hosted on your site.
 
 ### CSS masking
 
