@@ -13,6 +13,7 @@
 #### [EdgeHTML 12](dev-guide/whats-new/edgeHTML-12.md)
 ##### [JavaScript Version Information](dev-guide/whats-new/javascript-version-information.md)
 ### [Browser features](dev-guide/browser-features.md)
+#### [Autoplay policies](dev-guide/browser-features/autoplay-policies.md)
 #### [Flash](dev-guide/browser-features/flash.md)
 #### [Reading view](dev-guide/browser-features/reading-view.md)
 #### [Search provider discovery](dev-guide/browser-features/search-provider-discovery.md)
