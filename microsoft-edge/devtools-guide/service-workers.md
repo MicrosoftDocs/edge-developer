@@ -19,12 +19,12 @@ The **Service Workers** panel has tools for managing and debugging the service w
  - **Stop**/**Start** individual service workers, and
  - **Inspect** the selected service worker in a separate debugger window
 
-![Service Worker Overview pane](./media/debugger_service_worker.png)
+![Service Worker Overview pane](./media/service_worker.png)
 
 Please note the following about service worker debugging in Edge DevTools:
 
  - Debugging a service worker will launch a new instance of the  DevTools separate from the page's tools because service workers can be shared across multiple tabs.
- - The [**Elements**](../elements.md) and [**Emulation**](../emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
+ - The [**Elements**](./elements.md) and [**Emulation**](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
  - Currently network traffic for a service worker is only reported from the  DevTools debugging instance for that worker, and not from the debugger instance for the page itself.
  - To simulate a **Push** from the DevTools, you'll need to add a *push* event listener to your service worker in order to observe its effect. The following example will print "Test push message from DevTools" in your service worker **Console**.
    ```JavaScript

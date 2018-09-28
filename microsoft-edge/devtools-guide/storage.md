@@ -24,7 +24,7 @@ Expand any of those categories and click on a child entry to open its resource m
 
 Use the *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
 
-The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](../debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
+The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](./debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
 ![DevTools Cookies manager](./media/storage_web_storage.png)
 
@@ -73,7 +73,7 @@ To delete all the IndexedDB data stored for the current user in Microsoft Edge, 
 
 **...** > **Settings** > **Clear browsing data** > **Cookies and saved website data**
 
-The **IndexedDB** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
+The **IndexedDB** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Any IndexedDB (IDB) databases will be listed under the origin, along with their object stores. 
 
 ![DevTools IndexedDB manager](./media/storage_indexeddb.png)
 
@@ -120,7 +120,7 @@ Select all | `Ctrl` + `A`
 
 Use the *Cookies manager* to inspect and manage the cookies for the given domain. 
 
-The **Cookies** folder inside the Debugger's [*Resource picker*](../debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie).
+The **Cookies** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie).
 
 ![DevTools Cookies manager](./media/storage_cookies.png)
 
@@ -130,7 +130,7 @@ From the *Cookies* tab toolbar you can:
  - **Delete all cookies** (`Ctrl+Shift+Del`) (session and permanent) for the path of the current page.
  - **Delete all session cookies** (`Ctrl+Del`) for the path of the current page.
 
-To completely clear your *Cookies list*, you might need to **Clear all cookies for the domain** from the [**Network**](../network.md#toolbar) panel toolbar.
+To completely clear your *Cookies list*, you might need to **Clear all cookies for the domain** from the [**Network**](./network.md#toolbar) panel toolbar.
 
 ### Cookies list
 
