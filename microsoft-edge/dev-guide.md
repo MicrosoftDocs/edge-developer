@@ -1,12 +1,12 @@
 ---
-title: What's new in EdgeHTML 17
+title: What's new in EdgeHTML 18
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
 author: mattwojo
 ms.author: mattwoj
-ms.date: 07/05/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, javascript, developer
+keywords: edge, web development, html, css, javascript, developer, devtools
 ---
 
 # Microsoft Edge Developer Guide
@@ -21,7 +21,24 @@ EdgeHTML 18 includes the following new and updated features shipped in the curre
 
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_18](https://aka.ms/devguide_edgehtml_18).
 
-## New and updated features 
+## New and updated features
+
+
+### Autoplay policies
+
+With the Windows 10 October 2018 Update, Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and converve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionaly, Microsoft Edge automatically suppress autoplay of media in background tabs.
+
+Check out the [Autoplay policies](../browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with the media hosted on your site.
+
+### CSS masking
+
+EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, and `webkitMaskSize`.  
+
+### Developer Tools
+
+The latest update to Microsoft Edge DevTools adds a number of conveniences both to the UI and under the hood, including new dedicated panels for Service Workers and Storage, source file search tools in the Debugger, and new Edge DevTools Protocol domains for style/layout debugging and console APIs.
+
+[DevTools in the latest Windows 10 update (EdgeHTML 18)](./devtools-guide/whats-new.md) has all the details.
 
 ### Web Authentication
 
@@ -31,41 +48,17 @@ Microsoft Edge now includes [unprefixed support for the new Web Authentication A
 
 For more information, head over to the blog post [Introducing Web Authentication in Microsoft Edge](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge).
 
-### Control whether media can play automatically
-
-Beginning in the October 2018 Update, users can now control whether sites opened in Microsoft Edge can autoplay media. Find this setting under "Advanced settings" > "Media autoplay", with options to customize the behavior according to your preferences:
-- “Allow” is the default and will continue to play videos when you open a tab, at the site’s discretion.
-- “Limit” restricts autoplay to only work when videos are muted, so you‘re never surprised by sound. Once you click anywhere on the page, autoplay is re-enabled, and will continue to be allowed within that domain in that tab.
-- “Block” prevents autoplay on all sites until you interact with the media content. 
-
-> [!NOTE]
-> The "Block" setting may break some sites due to the strict enforcement. You may need to click multiple times for some video or audio to play correctly. Some sites may not work at all – in those cases, you can enable or block autoplay on a case-by-case basis from the website permissions pane by clicking the icon next to the address in the Address Bar.
-
-![Media autoplay settings in Microsoft Edge](./dev-guide/media/media_autoplay2.png)
-
-Microsoft Edge now allows users to control autoplay permissions on a per-site basis. Set media autoplay under the “Website permission” section of the Website Identification pane – just click the information icon or lock icon on the left side of the address bar, then click “manage permissions” to get started.
-
-![Website permissions setting in Microsoft Edge](./dev-guide/media/website_permission.png)
-
 <!-- ### WebView control 
 
 Improvements in the [WebView control for Windows 10 apps](https://docs.microsoft.com/microsoft-edge/hosting/webview) -->
 
-### Microsoft WebDriver is now a Feature on Demand
+### WebDriver
 
 WebDriver is now a [Windows Feature on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FoD) making it easier than ever to automate testing in Microsoft Edge and get the right version for your device. You will no longer need to match the build/branch/flavor manually when installing WebDriver, your [WebDriver](https://www.w3.org/TR/webdriver) will automatically update to match any new Windows 10 updates. 
 
 You can install WebDriver by turning on Developer Mode, or install it as a standalone by going to Settings > Apps > Apps & features > Manage optional features. For more information, check out the [WebDriver announcement on the Windows Blog site](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand).
 
-### DevTools
-
-Visit [DevTools in the latest Windows 10 update (EdgeHTML 18)](./devtools-guide/whats-new.md) for more details.
-
-### CSS masking
-
-EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, and `webkitMaskSize` .  
-
-### New Microsoft Edge Group Policies
+### Group Policies
 
 We’ve introduced new Group Policies and MDM settings for IT administrators to manage Microsoft Edge. The new policies include:
 - enabling/disabling full-screen mode, printing, favorites bar, and saving history; 
@@ -76,9 +69,9 @@ We’ve introduced new Group Policies and MDM settings for IT administrators to 
 
 Learn more about the new [Microsoft Edge policies](https://docs.microsoft.com/microsoft-edge/deploy/new-policies).
 
-### Retired XSS Filter
+### XSS Filter is now retired
 
-We are retiring the XSS filter in Microsoft Edge beginning with the October 2018 Update. Our customers remain protected thanks to modern standards like Content Security Policy, which provide more powerful, performant, and secure mechanisms to protect against content injection attacks, with high compatibility across modern browsers.
+We are retiring the XSS filter in Microsoft Edge beginning with the October 2018 Update. Our customers remain protected thanks to modern standards like [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), which provide more powerful, performant, and secure mechanisms to protect against content injection attacks, with high compatibility across modern browsers.
 
 ## New APIs in EdgeHTML 18
 
