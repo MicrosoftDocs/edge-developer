@@ -48,30 +48,19 @@ Microsoft Edge now includes [unprefixed support for the new Web Authentication A
 
 For more information, head over to the blog post [Introducing Web Authentication in Microsoft Edge](https://blogs.windows.com/msedgedev/2018/07/30/introducing-web-authentication-microsoft-edge).
 
-<!-- ### WebView control 
-
-Improvements in the [WebView control for Windows 10 apps](https://docs.microsoft.com/microsoft-edge/hosting/webview) -->
-
 ### WebDriver
 
 WebDriver is now a [Windows Feature on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FoD) making it easier than ever to automate testing in Microsoft Edge and get the right version for your device. You will no longer need to match the build/branch/flavor manually when installing WebDriver, your [WebDriver](https://www.w3.org/TR/webdriver) will automatically update to match any new Windows 10 updates. 
 
 You can install WebDriver by turning on Developer Mode, or install it as a standalone by going to Settings > Apps > Apps & features > Manage optional features. For more information, check out the [WebDriver announcement on the Windows Blog site](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand).
 
-### Group Policies
+<!-- ### WebView -->
 
-We’ve introduced new Group Policies and MDM settings for IT administrators to manage Microsoft Edge. The new policies include:
-- enabling/disabling full-screen mode, printing, favorites bar, and saving history; 
-- prevent certificate error overrides;
-- configuring the Home button and startup options; 
-- setting the New Tab page and Home button URL; and 
-- managing extensions. 
-
-Learn more about the new [Microsoft Edge policies](https://docs.microsoft.com/microsoft-edge/deploy/new-policies).
+## Deprecated features
 
 ### XSS Filter is now retired
 
-We are retiring the XSS filter in Microsoft Edge beginning with the October 2018 Update. Our customers remain protected thanks to modern standards like [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), which provide more powerful, performant, and secure mechanisms to protect against content injection attacks, with high compatibility across modern browsers.
+With EdgeHTML 18, we are retiring the XSS filter in Microsoft Edge. Our customers remain protected thanks to modern standards like [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), which provide more powerful, performant, and secure mechanisms to protect against content injection attacks, with high compatibility across modern browsers.
 
 ## New APIs in EdgeHTML 18
 
