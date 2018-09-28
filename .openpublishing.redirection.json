@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/service-workers.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/devtools-guide/debugger/indexeddb.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/storage.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/devtools-guide/debugger/cookies.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/storage.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/devtools-guide/debugger/web-storage.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/storage.md",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/f12-devtools-guide.md",
       "redirect_url": "/microsoft-edge/devtools-guide",
       "redirect_document_id": true

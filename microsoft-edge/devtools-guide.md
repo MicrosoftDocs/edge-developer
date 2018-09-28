@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools
 author: erikadoyle
 ms.author: edoyle
-ms.date: 04/23/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -15,7 +15,7 @@ experiment_id: "51fe4b97-3e55-41"
 
 The Microsoft Edge DevTools are built with [TypeScript](http://www.typescriptlang.org/), powered by [open source](https://github.com/Microsoft/ChakraCore), optimized for modern front-end workflows, and now available as a [standalone Windows 10 app](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) in the Microsoft Store!
 
-For more on the latest features, check out [*DevTools in the latest update of Windows 10 (EdgeHTML 17)*](./devtools-guide/whats-new.md).
+For more on the latest features, check out [*DevTools in the latest update of Windows 10 (EdgeHTML 18)*](./devtools-guide/whats-new.md).
 
 ## Core tools
 
@@ -29,6 +29,8 @@ The Microsoft Edge DevTools include:
  - A [**Network**](./devtools-guide/network.md) panel to monitor and inspect requests and responses from the network and browser cache 
  - A [**Performance**](./devtools-guide/performance.md) panel to profile the time and system resources required by your site
  - A [**Memory**](./devtools-guide/memory.md) panel to measure your use of memory resources and compare heap snapshots at different states of code execution
+ - A [**Storage**](./devtools-guide/storage.md) panel for inspecting and managing your web storage, IndexedDB, cookies and cache data
+ - A [**Service Workers**](./devtools-guide/service-workers.md) panel for managing and debugging your service workers
  - An [**Emulation**](./devtools-guide/emulation.md) panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates
 
 Please keep sending your [feedback and feature requests](#feedback)!

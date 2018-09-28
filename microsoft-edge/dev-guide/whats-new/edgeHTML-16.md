@@ -35,8 +35,6 @@ EdgeHTML 16 introduces support for CSS properties [`object-fit`](https://develop
 
 This release we started a major Microsoft Edge DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today on [Windows Insider](https://insider.windows.com/) builds.  Check out the [Microsoft Edge DevTools guide](../../devtools-guide/whats-new.md) for more on what's changed!
 
-![Experimental service worker debugging support in DevTools](../../devtools-guide/media/debugger_sw_inspect.png)
-
 ### JavaScript
 
 [EdgeHTML 16 builds on Javascript performance](https://blogs.windows.com/msedgedev/2017/10/31/optimizations-webassembly-sharedarraybuffer-atomics-edgehtml-16/#FodxEPHxR4WkbtyA.97) optimizations of previous releases by expanding the Chakra engine's ability to defer/re-defer functions, use polymorphic inline caches, and optimize functions with *try/finally* blocks.
