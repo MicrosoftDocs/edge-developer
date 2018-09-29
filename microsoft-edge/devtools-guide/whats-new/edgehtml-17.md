@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 17
 
 The EdgeHTML 17 release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](#microsoft-edge-devtools-app-preview) from the Microsoft Store!
 
-The tools have been updated with a number of major features, including basic support for [remote debugging](../devtools-guide.md#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-inspection), [vertical docking](#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./whats-new/edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
+The tools have been updated with a number of major features, including basic support for [remote debugging](../../devtools-guide.md#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-inspection), [vertical docking](#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
 Here are the latest Microsoft Edge DevTools features that shipped in the [Windows 10 April 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](https://aka.ms/devguide_edgehtml_17)).
 
@@ -46,7 +46,7 @@ Developer tools can use the [**Microsoft Edge DevTools Protocol**](../../devtool
 
 ## IndexedDB inspection
 
-New to the [**Debugger**](../debugger.md) this release is an [IndexedDB Manager](./storage.md#indexeddb-manager) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
+New to the [**Debugger**](../debugger.md) this release is an [IndexedDB Manager](../storage.md#indexeddb-manager) with support for inspecting and refreshing your object stores and deleting individual key-value entries. Expect even more functionality in future releases.
 
 ## PWA debugging
 
