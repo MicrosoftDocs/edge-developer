@@ -33,7 +33,7 @@ Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies
 
 EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, `webkitMaskSize`, as well as more complete standards support, adding `maskComposite`, `maskPosition`, `maskPositionX`, `mskPositionY`, and `maskRepeat`.
 
-Determing how an element's background images should blend with each other also receives a standards-based update in this release, [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) will now enabled by default.
+Determining how an element's background images should blend with each other also receives a standards-based update in this release, [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) will now enabled by default.
 
  CSS improvements can also be found in how Microsoft Edge handles what happens when the boundary of a scrolling area is reached, now supporting [`overscroll-behavior`](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior), including `overscroll-behavior-x`, `overscroll-behavior-y`, and [`overflow-wrap`](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap). 
 
