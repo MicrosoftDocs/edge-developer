@@ -13,6 +13,8 @@ keywords: edge, web development, html, css, javascript, developer
 
 Here's a list of the new and updated features shipped in [EdgeHTML 17](https://blogs.windows.com/msedgedev/2018/04/30/edgehtml-17-april-2018-update/) web platform, as part of the [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) (04/2018, Build 17134). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](../whats-new.md).
 
+Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_17](https://aka.ms/devguide_edgehtml_17).
+
 ## New and updated features 
 
 ### ARIA 1.1 Roles, States, and Events

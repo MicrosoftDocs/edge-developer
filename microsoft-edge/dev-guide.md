@@ -29,13 +29,13 @@ With the Windows 10 October 2018 Update, Microsoft Edge provides customers with 
 
 Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with media hosted on your site.
 
-### CSS masking
+### CSS masking, background blend, and overscroll
 
-EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, `webkitMaskSize`, `maskComposite`, `maskPosition`, `maskPositionX`, `mskPositionY`, and `maskRepeat`.
+EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, `webkitMaskSize`, as well as more complete standards support, adding `maskComposite`, `maskPosition`, `maskPositionX`, `mskPositionY`, and `maskRepeat`.
 
-### CSS background blend and overscroll
+Determining how an element's background images should blend with each other also receives a standards-based update in this release, [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) will now be enabled by default.
 
-EdgeHTML 18 includes additional CSS updates, such as enabling [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) by default, improved standard support for [`overscroll-behavior`](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior), including `overscroll-behavior-x`, `overscroll-behavior-y`, and [`overflow-wrap`](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap). 
+ CSS improvements can also be found in how Microsoft Edge handles what happens when the boundary of a scrolling area is reached, now supporting [`overscroll-behavior`](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior), including `overscroll-behavior-x`, `overscroll-behavior-y`, and [`overflow-wrap`](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap). 
 
 ### Developer Tools
 
@@ -61,6 +61,9 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
  Any app activation with the background script as the `StartPage` will rely on the script itself for navigation.
 
+### Service Worker updates
+For a refresher on what Service Workers are and how they work, check out the [Service Worker API]( https://developer.mozilla.org/docs/Web/API/Service_Worker_API) summary written by our partners over at MDN.  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18. The `fetchEvent` enables the Service Worker to use [`preloadResponse`]( https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [`resultingClientId`]( https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the ID of the Client that the current service worker is controlling. 
+The [`NavigationPreloadManager`]( https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) interface provides methods for managing the preloading of resources, allowing you to make a request in parallel while a service worker is booting-up, avoiding any time delay. Check out the [newly supported API properties](#new-apis-in-edgehtml-18) for preloading Service Workers. 
 
 ### Web Authentication
 
@@ -73,6 +76,9 @@ For more information, head over to the blog post [Introducing Web Authentication
 WebDriver is now a [Windows Feature on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FoD) making it easier than ever to automate testing in Microsoft Edge and get the right version for your device. You will no longer need to match the build/branch/flavor manually when installing WebDriver, your [WebDriver](https://www.w3.org/TR/webdriver) will automatically update to match any new Windows 10 updates. 
 
 You can install WebDriver by turning on Developer Mode, or install it as a standalone by going to Settings > Apps > Apps & features > Manage optional features. For more information, check out the [WebDriver announcement on the Windows Blog site](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand).
+
+### Web Notification properties
+Four new properties are now supported for web notifications: [`actions`](https://developer.mozilla.org/docs/Web/API/notification/actions), [`badge`](https://developer.mozilla.org/docs/Web/API/notification/badge), [`image`](https://developer.mozilla.org/docs/Web/API/notification/image), and  `maxActions`, improving our ability to create notifications on the web that are compatible with existing notification systems, while remaining platform-independent.
 
 ### WebView
 
