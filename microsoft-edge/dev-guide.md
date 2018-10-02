@@ -26,19 +26,29 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 ### Autoplay policies
 
-With the Windows 10 October 2018 Update, Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and converve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionaly, Microsoft Edge automatically suppress autoplay of media in background tabs.
+With the Windows 10 October 2018 Update, Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and conserve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionally, Microsoft Edge automatically suppresses autoplay of media in background tabs.
 
 Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with the media hosted on your site.
 
 ### CSS masking
 
-EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, and `webkitMaskSize`.  
+EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, `webkitMaskSize`, `maskComposite`, `maskPosition`, `maskPositionX`, `mskPositionY`, and `maskRepeat`.
+
+### CSS background blend and overscroll
+
+EdgeHTML 18 includes additional CSS updates, such as enabling [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) by default, improved standard support for [`overscroll-behavior`](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior), including `overscroll-behavior-x`, `overscroll-behavior-y`, and [`overflow-wrap`](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap). 
 
 ### Developer Tools
 
 The latest update to Microsoft Edge DevTools adds a number of conveniences both to the UI and under the hood, including new dedicated panels for Service Workers and Storage, source file search tools in the Debugger, and new Edge DevTools Protocol domains for style/layout debugging and console APIs.
 
 [DevTools in the latest Windows 10 update (EdgeHTML 18)](./devtools-guide/whats-new.md) has all the details.
+
+### Listening to your feedback
+
+We really do listen to your feedback and have now implemented support for several requested standards in EdgeHTML 18, including the [`DataTransfer.setDragImage()`](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) method used to set a custom image when dragging and dropping, and [`secureConnectionStart`](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart), a property of the Performance Resource Timing API, which can be used for returning a timestamp immediately before the browser starts the handshake process to secure the current connection. 
+
+In addition, no one likes enumerating the attributes collection, so we've added support for [`Element.getAttributeNames`](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames) to return the attribute names of the element as an Array of strings, as well as, [`Element.toggleAttribute`](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute) to toggle a boolean attribute (removing if present and adding if not).
 
 ### Progressive Web Apps
 
