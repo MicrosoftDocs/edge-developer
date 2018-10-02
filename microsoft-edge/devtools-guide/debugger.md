@@ -3,7 +3,7 @@ description: Use the Debugger to step through and troubleshoot your code.
 title: Microsoft Edge DevTools - Debugger
 author: erikadoyle
 ms.author: edoyle
-ms.date: 05/31/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugg
 
 Use the **Debugger** to step through code, set watches and breakpoints, live edit your code and inspect your caches. Test and troubleshoot your code by:
 
-- [Browsing and searching all the code files](#resource-picker) that are currently loaded
+- [Browsing](#resource-picker) and [searching](#file-search) code from your loaded source files
 - [Controlling the execution flow](#toolbar) as you step through your code
 - [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
 - [Setting breakpoints and live editing](#debug-window) your code as it runs
@@ -33,23 +33,17 @@ There are three ways to begin a debugging session.
 
 Often the first step in debugging is to set breakpoints in the code you're looking to troubleshoot. You can find all the code files currently loaded by the page from the *Resource picker* pane, including *.html, .css* and *.js* files.
 
-By default the pane is expanded and pinned to the left of the [Debug window](#debug-window), but you can minimize it with the **Unpin/Pin** button (and use the **Open document** (`Ctrl+O`) button when you need it again).
+ Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
 
 ![Debugger resource picker](./media/debugger_resource_picker.png)
 
-Find the code files you're looking for by browsing the folders or with a file name search string in the **File name filter**. Clicking on a file entry will open a tab for that file in the [Debug window](#debug-window) and bold the text of the file name to indicate this (as *devtools-guide* file name is in the illustration above). You can then set breakpoints within that file from the [Debug window](#debug-window).
+From the *Resource picker* context menu, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
 
-From the *Resource picker*, you can also mark a file as **library code** (`Ctrl+L`), giving you the option to [skip over that code in the debugger](#debug-window) and [hide it from the **Call stack** pane](#call-stack). Clicking (or `Ctrl+L`) again will toggle the file back to its previous value as *my code* or *library code*.
+### File search
 
-### Cache managers
+Use the *Find in files* command (`Ctrl`+`Shift`+`F`) when you have a specific string of code you're trying to find in the source. The toolbar provides different search options, including regular expressions. Clicking on a search result will focus the *Debug window* on the specified file and line.
 
-The *Resource picker* is also the place where you can manage various page storage types, including:
-
- - [Service Workers and the Cache](./debugger/progressive-web-apps.md) for Progressive Web App debugging
- - [Web storage](./debugger/web-storage.md) (*Local* and *Session* storage)
- - [Cookies](./debugger/cookies.md) for the domain 
-
-Expand any of those categories and click on a child entry to open its resource manager tab in the *Debug window*.
+![Debugger file search pane](./media/debugger_file_search.png)
 
 ## Debug window
 
@@ -65,7 +59,7 @@ You can edit your JavaScript live during a debugging session. Once you make your
 
 Click the **Compare document to original** button to view the diff of what you changed.
 
-![Diff view of edited code in the Debugger](./media/debugger_edit_code.png) 
+![Diff view of edited code in the Debugger](./media/debugger_edit_code.png)
 
 Please be aware of the following constraints:
 
@@ -219,7 +213,8 @@ Debug just my code | `Ctrl` + `J`
 Action | Shortcut
 :------------ | :-------------
 Mark as my code / library code | `Ctrl` + `L`
-Open document | `Ctrl` + `O`
+Open file | `Ctrl` + `O`, `Ctrl` + `P`
+Search all files | `Ctrl` + `Shift` + `F`
 
 ### Debug window shortcuts
 
@@ -239,8 +234,8 @@ Go to definition in file | `Ctrl`+`D`
 Find references in file | `Ctrl` + `Shift` + `D`
 Pretty print | `Ctrl` + `Shift` + `P`
 Word wrap | `Alt` + `W`
-Mark as my code / library code | `Ctrl` + `L`
-
+Mark as my code/library code | `Ctrl` + `L`
+Disable/Enable tabs in the editor. **Note:** if you're using the keyboard to navigate in the Debugger, you won't be able to tab out of the editor until you disable tabbing | `Ctrl` + `M`
 
 ### Shortcuts for Watches pane
 
