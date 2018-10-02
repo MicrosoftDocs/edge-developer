@@ -33,7 +33,7 @@ Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies
 
 EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, `webkitMaskSize`, as well as more complete standards support, adding `maskComposite`, `maskPosition`, `maskPositionX`, `mskPositionY`, and `maskRepeat`.
 
-Determining how an element's background images should blend with each other also receives a standards-based update in this release, [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) will now enabled by default.
+Determining how an element's background images should blend with each other also receives a standards-based update in this release, [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) will now be enabled by default.
 
  CSS improvements can also be found in how Microsoft Edge handles what happens when the boundary of a scrolling area is reached, now supporting [`overscroll-behavior`](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior), including `overscroll-behavior-x`, `overscroll-behavior-y`, and [`overflow-wrap`](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap). 
 
@@ -62,7 +62,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
  Any app activation with the background script as the `StartPage` will rely on the script itself for navigation.
 
 ### Service Worker updates
-For a refresher on what Service Workers are and how they work, check out our MDN partner’s write up on the [Service Worker API]( https://developer.mozilla.org/docs/Web/API/Service_Worker_API).  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18. The `fetchEvent` enables the Service Worker to use [`preloadResponse`]( https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [`resultingClientId`]( https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the id of the Client that the current service worker is controlling. 
+For a refresher on what Service Workers are and how they work, check out the [Service Worker API]( https://developer.mozilla.org/docs/Web/API/Service_Worker_API) summary written by our partners over at MDN.  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18. The `fetchEvent` enables the Service Worker to use [`preloadResponse`]( https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [`resultingClientId`]( https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the ID of the Client that the current service worker is controlling. 
 The [`NavigationPreloadManager`]( https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) interface provides methods for managing the preloading of resources, allowing you to make a request in parallel while a service worker is booting-up, avoiding any time delay. Check out the [newly supported API properties](#new-apis-in-edgehtml-18) for preloading Service Workers. 
 
 ### Web Authentication
