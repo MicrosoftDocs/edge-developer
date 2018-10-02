@@ -28,7 +28,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 With the Windows 10 October 2018 Update, Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and conserve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionally, Microsoft Edge automatically suppresses autoplay of media in background tabs.
 
-Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with the media hosted on your site.
+Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with media hosted on your site.
 
 ### CSS masking
 
@@ -46,7 +46,7 @@ The latest update to Microsoft Edge DevTools adds a number of conveniences both 
 
 ### Listening to your feedback
 
-We really do listen to your feedback and have now implemented support for several requested standards in EdgeHTML 18, including the [`DataTransfer.setDragImage()`](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) method used to set a custom image when dragging and dropping, and [`secureConnectionStart`](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart), a property of the Performance Resource Timing API, which can be used for returning a timestamp immediately before the browser starts the handshake process to secure the current connection. 
+We listen to your feedback and have implemented support for several requested APIs in EdgeHTML 18, including the [`DataTransfer.setDragImage()`](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) method used to set a custom image when dragging and dropping, and [`secureConnectionStart`](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart), a property of the Performance Resource Timing API, which can be used for returning a timestamp immediately before the browser starts the handshake process to secure the current connection. 
 
 In addition, no one likes enumerating the attributes collection, so we've added support for [`Element.getAttributeNames`](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames) to return the attribute names of the element as an Array of strings, as well as, [`Element.toggleAttribute`](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute) to toggle a boolean attribute (removing if present and adding if not).
 
@@ -54,13 +54,13 @@ In addition, no one likes enumerating the attributes collection, so we've added 
 
 Windows 10 JavaScript apps (web apps running in a *WWAHost.exe* process) now support an optional per-application background script that starts before any views are activated and runs for the duration of the process. With this, you can monitor and modify navigations, track state across navigations, monitor navigation errors, and run code before views are activated. 
 
-When specified as the [`StartPage`](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views (windows) are exposed to the script as instances of the new [`WebUIView`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general (Win32) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol). Your app can listen for the [`NewWebUIViewCreated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:
+When specified as the [`StartPage`](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views (windows) are exposed to the script as instances of the new [`WebUIView`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general (Win32) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol). Your script can listen for the [`NewWebUIViewCreated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:
 
 ```JavaScript
 Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWebUIViewCreatedEventHandler);
 ```
 
- Any app activation with the background script as the `StartPage` will  rely on the script itself for navigation.
+ Any app activation with the background script as the `StartPage` will rely on the script itself for navigation.
 
 
 ### Web Authentication
@@ -84,8 +84,35 @@ x64 app architectures require *Neutral* (Any CPU) or *x64* packages, as service 
 
 #### Win32 WebView updates
 
- - desktop app viewer
- - new APIs
+The EdgeHTML [WebViewControl](https://docs.microsoft.com/en-us/windows/communitytoolkit/controls/wpf-winforms/webview) for Windows desktop (Win32) apps has been updated with several new features, including the ability to inject script upon page load before any other scripts on the page are run ([`AddInitializeScript`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)) and know when a particular WebViewControl receives or loses focus ([`GotFocus`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus)/[`LostFocus`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)).
+
+Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). The [`NewWindowRequested`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its  [`NewWindowRequestedEventArgs`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral ([`GetDeferral`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)) in and set a new WebViewControl ([`NewWindow`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)) as the target for the window.open:
+
+```C#
+WebViewControlProcess wvProc;
+WebViewControl webView;
+
+void OnWebViewControlNewWindowRequested(WebViewControl sender, WebViewControlNewWindowRequestedEventArgs args)
+{
+
+    if (args.Uri.Domain == “mydomain.com”)
+    {
+        using deferral = args.GetDeferral();
+        args.NewWindow = await wvProc.CreateWebViewControlAsync(
+            parentWindow, targetWebViewBounds);
+        deferral.Complete();
+    }
+    else
+    {
+        // Prevent WebView from launching in the default browser.
+        args.Handled = true;
+    }
+}
+
+String htmlContent = “<html><script>window.open(‘http://mydomain.com’)</script><body></body></html>”;
+
+webView.NavigateToString(htmlContent);
+```
 
 ## Deprecated features
 
@@ -98,7 +125,7 @@ With EdgeHTML 18, we are retiring the XSS filter in Microsoft Edge. Our customer
 Check out the full list of new APIs in EdgeHTML 18. They are listed in the format of [interface name].[api name].
 
 > [!NOTE] 
-> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
+> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development and hidden behind an experimental flag. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
 
 <iframe height='580' scrolling='no' title='New APIs in EdgeHTML 17' src='//codepen.io/MSEdgeDev/embed/da5b2bef3dfdcb6fea3ac324dc434a62/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/da5b2bef3dfdcb6fea3ac324dc434a62//'>New APIs in EdgeHTML 18</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
