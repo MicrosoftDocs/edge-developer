@@ -29,13 +29,13 @@ With the Windows 10 October 2018 Update, Microsoft Edge provides customers with 
 
 Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with media hosted on your site.
 
-### CSS masking, background blend, and overscroll
+### CSS updates
 
-EdgeHTML 18 improves support for [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking). This implementation further supports the CSS [mask-image](https://developer.mozilla.org/docs/Web/CSS/mask-image) property with improved WebKit support, including  `webkitMask`, `webkitMaskComposite`, `webkitMaskImage`, `webkitMaskPosition`, `webkitMaskPositionX`, `webkitMaskPositionY`, `webkitMaskRepeat`, `webkitMaskSize`, as well as more complete standards support, adding `maskComposite`, `maskPosition`, `maskPositionX`, `mskPositionY`, and `maskRepeat`.
+We've made further progress on our experimental [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) implementation (behind the *Enable CSS Masking* flag) with added support for [mask-composite](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite), [mask-position](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position), and [mask-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat). For site compatibility, Edge also supports the following *-webkit-* properties: -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
 
-Determining how an element's background images should blend with each other also receives a standards-based update in this release, [`background-blend-mode`](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) will now be enabled by default.
+Additionally, Edge now has support for [overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
+) and partial support for [overscroll-behavior](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) (`auto` and `contain` values).
 
- CSS improvements can also be found in how Microsoft Edge handles what happens when the boundary of a scrolling area is reached, now supporting [`overscroll-behavior`](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior), including `overscroll-behavior-x`, `overscroll-behavior-y`, and [`overflow-wrap`](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap). 
 
 ### Developer Tools
 
