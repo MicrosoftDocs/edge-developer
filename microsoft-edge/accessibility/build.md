@@ -87,7 +87,7 @@ The OpenAjax Alliance website is an excellent resource for verifying the rules f
 #### [Accessibility: Creating accessible extension icons for Microsoft Edge](../extensions/guides/accessibility.md)
 Get guidance on creating accessible extensions icons for Microsoft Edge.
 
-#### [Accessible Name and Description: Computation and Mappings 1.1](http://rawgit.com/w3c/aria/master/accname-aam/accname-aam.html)
+#### [Accessible Name and Description: Computation and Mappings 1.1](https://www.w3.org/TR/accname-1.1/)
 This W3C mapping document explains how browsers determine name and descriptions of accessible objects from web content languages and expose them in accessibility APIs.
 
 #### [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html)
