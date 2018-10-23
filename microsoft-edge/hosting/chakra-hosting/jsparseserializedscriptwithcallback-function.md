@@ -3,6 +3,7 @@ description: "Parses a serialized script and returns a function representing the
 title: "JsParseSerializedScriptWithCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
