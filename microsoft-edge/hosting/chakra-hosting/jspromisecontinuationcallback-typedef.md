@@ -18,7 +18,7 @@ A promise continuation callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsPromiseContinuationCallback)(  
   _In_ JsValueRef task,  
   _In_opt_ void *callbackState  

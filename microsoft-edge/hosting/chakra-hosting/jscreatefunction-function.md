@@ -22,7 +22,7 @@ Creates a new JavaScript function.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateFunction(  
    _In_ JsNativeFunction nativeFunction,  
    _In_opt_ void *callbackState,  

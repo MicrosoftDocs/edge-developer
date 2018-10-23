@@ -22,7 +22,7 @@ Performs a full garbage collection.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCollectGarbage(  
    _In_ JsRuntimeHandle runtime  
 );  

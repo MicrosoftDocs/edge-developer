@@ -22,7 +22,7 @@ Retrieves the `bool` value of a Boolean value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsBooleanToBool(  
    _In_ JsValueRef value,  
    _Out_ bool *boolValue  

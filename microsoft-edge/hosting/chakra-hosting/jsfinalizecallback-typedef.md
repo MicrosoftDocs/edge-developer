@@ -18,7 +18,7 @@ A finalizer callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsFinalizeCallback)(  
    _In_opt_ void *data  
 );  

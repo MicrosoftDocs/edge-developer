@@ -22,7 +22,7 @@ Determines whether an object is an external object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsHasExternalData(  
    _In_ JsValueRef object,  
    _Out_ bool *value  

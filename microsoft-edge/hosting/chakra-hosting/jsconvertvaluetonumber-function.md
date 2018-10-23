@@ -22,7 +22,7 @@ Converts the value to number using standard JavaScript semantics.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConvertValueToNumber(  
    _In_ JsValueRef value,  
    _Out_ JsValueRef *numberValue  

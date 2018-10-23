@@ -18,7 +18,7 @@ A property identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef JsRef JsPropertyIdRef;  
 ```  
   

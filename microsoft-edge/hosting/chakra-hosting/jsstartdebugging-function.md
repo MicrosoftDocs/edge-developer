@@ -22,7 +22,7 @@ Starts debugging in the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 // Edge mode signature  
 STDAPI_(JsErrorCode) JsStartDebugging();  
   

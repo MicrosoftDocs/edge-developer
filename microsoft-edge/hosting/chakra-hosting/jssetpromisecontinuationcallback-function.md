@@ -18,7 +18,7 @@ Sets a promise continuation callback function that is called by the context when
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetPromiseContinuationCallback(  
    _In_ JsPromiseContinuationCallback promiseContinuationCallback,  
    _In_opt_ void *callbackState  

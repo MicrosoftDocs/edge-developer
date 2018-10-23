@@ -22,7 +22,7 @@ Sets the current memory limit for a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetRuntimeMemoryLimit(  
    _In_ JsRuntimeHandle runtime,  
    _In_ size_t memoryLimit  

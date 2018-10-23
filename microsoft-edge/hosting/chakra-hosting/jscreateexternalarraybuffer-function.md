@@ -17,7 +17,7 @@ Creates a Javascript `ArrayBuffer` object to access external memory.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(  
   _Pre_maybenull_ _Pre_writable_byte_size_(byteLength) void *data,  
   _In_ unsigned int byteLength,  

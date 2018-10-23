@@ -22,7 +22,7 @@ Converts the value to string using standard JavaScript semantics.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConvertValueToString(  
    _In_ JsValueRef value,  
    _Out_ JsValueRef *stringValue  

@@ -22,7 +22,7 @@ Compare two JavaScript values for equality.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsEquals(  
    _In_ JsValueRef object1,  
    _In_ JsValueRef object2,  

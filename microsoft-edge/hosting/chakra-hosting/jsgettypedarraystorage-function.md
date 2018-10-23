@@ -18,7 +18,7 @@ Obtains the underlying memory storage used by a typed array.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetTypedArrayStorage(  
    _In_ JsValueRef typedArray,  
    _Outptr_result_bytebuffer_(*bufferLength) BYTE **buffer,  

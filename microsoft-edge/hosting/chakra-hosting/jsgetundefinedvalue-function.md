@@ -22,7 +22,7 @@ Gets the value of `undefined` in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetUndefinedValue(  
    _Out_ JsValueRef *undefinedValue  
 );  

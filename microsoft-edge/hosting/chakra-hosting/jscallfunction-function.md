@@ -22,7 +22,7 @@ Invokes a function.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCallFunction(  
    _In_ JsValueRef function,  
    _In_reads_(argumentCount) JsValueRef *arguments,  

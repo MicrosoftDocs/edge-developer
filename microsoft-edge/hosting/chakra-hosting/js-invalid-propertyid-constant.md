@@ -18,7 +18,7 @@ An invalid property identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 const JsPropertyId JS_INVALID_PROPERTYID = 0;  
 ```  
   

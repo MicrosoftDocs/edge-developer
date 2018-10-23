@@ -18,7 +18,7 @@ A background work item callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsBackgroundWorkItemCallback)(  
    _In_opt_ void *callbackData  
 );  

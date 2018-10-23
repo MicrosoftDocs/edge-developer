@@ -22,7 +22,7 @@ Creates a new runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 // Edge mode signature  
 STDAPI_(JsErrorCode) JsCreateRuntime(  
    _In_ JsRuntimeAttributes attributes,  

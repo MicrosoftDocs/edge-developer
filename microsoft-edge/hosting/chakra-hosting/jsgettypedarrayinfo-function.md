@@ -17,7 +17,7 @@ Obtains frequently used properties of a typed array.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetTypedArrayInfo(  
   _In_ JsValueRef typedArray,  
   _Out_opt_ JsTypedArrayType *arrayType,  

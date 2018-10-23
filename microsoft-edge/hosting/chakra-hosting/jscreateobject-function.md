@@ -22,7 +22,7 @@ Creates a new object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateObject(  
    _Out_ JsValueRef *object  
 );  

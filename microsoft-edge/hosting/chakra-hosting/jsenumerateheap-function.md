@@ -22,7 +22,7 @@ Enumerates the heap of the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsEnumerateHeap(  
    _Out_ IActiveScriptProfilerHeapEnum **enumerator  
 );  

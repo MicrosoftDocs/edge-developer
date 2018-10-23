@@ -22,7 +22,7 @@ An error code returned from a Chakra hosting API.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsErrorCode : unsigned int;  
 ```  
   

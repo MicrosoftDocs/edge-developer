@@ -22,7 +22,7 @@ Enables script execution in a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsEnableRuntimeExecution(  
    _In_ JsRuntimeHandle runtime  
 );  

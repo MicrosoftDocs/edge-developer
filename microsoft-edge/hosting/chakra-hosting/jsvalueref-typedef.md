@@ -18,7 +18,7 @@ A reference to a JavaScript value.
   
 ## Syntax  
   
-```  
+```cpp 
 typedef JsRef JsValueRef;  
 ```  
   

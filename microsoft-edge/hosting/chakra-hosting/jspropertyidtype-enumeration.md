@@ -18,7 +18,7 @@ Type enumeration of a JavaScript property.
   
 ## Syntax  
   
-```vb  
+```cpp  
 enum JsPropertyIdType;  
 ```  
   

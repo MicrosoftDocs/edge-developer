@@ -22,7 +22,7 @@ Creates a string value from a string pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsPointerToString(  
    _In_reads_(stringLength) const wchar_t *stringValue,  
    _In_ size_t stringLength,  

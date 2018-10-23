@@ -18,7 +18,7 @@ The application callback which is called by JsRT when a projection API is comple
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsProjectionEnqueueCallback)(  
   _In_ JsProjectionCallback jsCallback,  
   _In_ JsProjectionCallbackContext jsContext,  

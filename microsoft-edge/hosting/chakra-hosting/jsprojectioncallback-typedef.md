@@ -18,7 +18,7 @@ The JsRT callback which should be called with the context passed to `JsProjectio
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsProjectionCallback)(  
   _In_ JsProjectionCallbackContext jsContext  
 );  

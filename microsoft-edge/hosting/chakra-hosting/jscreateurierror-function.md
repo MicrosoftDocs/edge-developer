@@ -22,7 +22,7 @@ Creates a new JavaScript URIError error object
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateURIError(  
    _In_ JsValueRef message,  
    _Out_ JsValueRef *error  

@@ -22,7 +22,7 @@ Gets the current memory limit for a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetRuntimeMemoryLimit(  
    _In_ JsRuntimeHandle runtime,  
    _Out_ size_t *memoryLimit  

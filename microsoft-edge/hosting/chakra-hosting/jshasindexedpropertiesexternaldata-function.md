@@ -18,7 +18,7 @@ Determines whether an object has its indexed properties in external data.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsHasIndexedPropertiesExternalData(  
    _In_ JsValueRef object,  
    _Out_ bool* value  

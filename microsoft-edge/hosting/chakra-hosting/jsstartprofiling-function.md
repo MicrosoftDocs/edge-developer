@@ -22,7 +22,7 @@ Starts profiling in the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsStartProfiling(  
    _In_ IActiveScriptProfilerCallback *callback,  
    _In_ PROFILER_EVENT_MASK eventMask,  

@@ -18,7 +18,7 @@ Gets the property ID associated with the symbol.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPropertyIdFromSymbol(  
    _In_ JsValueRef symbol,  
    _Out_ JsPropertyIdRef *propertyId  

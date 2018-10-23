@@ -22,7 +22,7 @@ Initializes the passed in `VARIANT` as a projection of a JavaScript value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsValueToVariant(  
    _In_ JsValueRef object,  
    _Out_ VARIANT *variant  

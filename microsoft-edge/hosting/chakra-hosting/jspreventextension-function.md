@@ -22,7 +22,7 @@ Makes an object non-extensible.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsPreventExtension(  
    _In_ JsValueRef object  
 );  

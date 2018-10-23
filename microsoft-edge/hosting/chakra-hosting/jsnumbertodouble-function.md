@@ -22,7 +22,7 @@ Retrieves the `double` value of a number value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsNumberToDouble(  
    _In_ JsValueRef value,  
    _Out_ double *doubleValue  

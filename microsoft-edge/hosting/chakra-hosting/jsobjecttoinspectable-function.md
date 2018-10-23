@@ -18,7 +18,7 @@ Unwraps a JavaScript object to an `IInspectable` pointer
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsObjectToInspectable(  
    _In_ JsValueRef value,  
    _Out_ IInspectable  **inspectable  

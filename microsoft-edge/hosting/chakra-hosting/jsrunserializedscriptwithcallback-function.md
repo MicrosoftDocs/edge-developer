@@ -17,7 +17,7 @@ Runs a serialized script.     Provides the ability to lazy load the script sourc
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsRunSerializedScriptWithCallback(  
   _In_ JsSerializedScriptLoadSourceCallback scriptLoadCallback,  
   _In_ JsSerializedScriptUnloadCallback scriptUnloadCallback,  

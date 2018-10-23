@@ -22,7 +22,7 @@ Serializes a parsed script to a buffer than can be reused.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSerializeScript(  
    _In_z_ const wchar_t *script,  
    _Out_writes_to_opt_(*bufferSize,  

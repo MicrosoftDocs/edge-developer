@@ -18,7 +18,7 @@ Sets the prototype of an object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetPrototype(  
    _In_ JsValueRef object,  
    _In_ JsValueRef prototypeObject  

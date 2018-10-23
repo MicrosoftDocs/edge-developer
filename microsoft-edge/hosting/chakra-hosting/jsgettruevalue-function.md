@@ -22,7 +22,7 @@ Gets the value of `true` in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetTrueValue(  
    _Out_ JsValueRef *trueValue  
 );  

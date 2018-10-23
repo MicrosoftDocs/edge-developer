@@ -22,7 +22,7 @@ Gets the current script context on the thread.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetCurrentContext(  
    _Out_ JsContextRef *currentContext  
 );  

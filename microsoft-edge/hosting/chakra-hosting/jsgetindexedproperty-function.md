@@ -22,7 +22,7 @@ Retrieve the value at the specified index of an object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetIndexedProperty(  
    _In_ JsValueRef object,  
    _In_ JsValueRef index,  

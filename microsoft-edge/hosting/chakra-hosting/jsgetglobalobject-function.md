@@ -22,7 +22,7 @@ Gets the global object in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetGlobalObject(  
    _Out_ JsValueRef *globalObject  
 );  

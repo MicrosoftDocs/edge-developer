@@ -17,7 +17,7 @@ Called by the runtime to load the source code of the serialized script.     The 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef bool (CALLBACK * JsSerializedScriptLoadSourceCallback)(  
   _In_ JsSourceContextsourceContext,  
   _Outptr_result_z_ const wchar_t** scriptBuffer  

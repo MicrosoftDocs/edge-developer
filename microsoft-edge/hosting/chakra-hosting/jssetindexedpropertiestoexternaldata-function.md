@@ -18,7 +18,7 @@ Sets an object's indexed properties to external data. The external data will be 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetIndexedPropertiesToExternalData(  
    _In_ JsValueRef object,  
    _In_ void* data,  

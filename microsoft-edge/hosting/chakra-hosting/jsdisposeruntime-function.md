@@ -22,7 +22,7 @@ Disposes a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDisposeRuntime(  
    _In_ JsRuntimeHandle runtime  
 );  

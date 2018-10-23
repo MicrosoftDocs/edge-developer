@@ -18,7 +18,7 @@ Retrieves the `int` value of a number value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsNumberToInt(  
       _In_ JsValueRef value,  
       _Out_ int *intValue  

@@ -22,7 +22,7 @@ Gets the current memory usage for a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetRuntimeMemoryUsage(  
    _In_ JsRuntimeHandle runtime,  
    _Out_ size_t *memoryUsage  

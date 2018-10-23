@@ -18,7 +18,7 @@ A reference to an object owned by the Chakra garbage collector.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void *JsRef;  
 ```  
   

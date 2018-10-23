@@ -22,7 +22,7 @@ Parses a serialized script and returns a function representing the script.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsParseSerializedScript(  
    _In_z_ const wchar_t *script,  
    _In_ BYTE *buffer,  

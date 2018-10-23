@@ -18,7 +18,7 @@ Gets the type of property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPropertyIdType(  
    _In_ JsPropertyIdRef propertyId,  
    _Out_ JsPropertyIdType* propertyIdType  

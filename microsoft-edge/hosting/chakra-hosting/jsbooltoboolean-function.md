@@ -22,7 +22,7 @@ Creates a Boolean value from a `bool` value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode JsBoolToBoolean(  
    _In_ bool value,  
    _Out_ JsValueRef *booleanValue  

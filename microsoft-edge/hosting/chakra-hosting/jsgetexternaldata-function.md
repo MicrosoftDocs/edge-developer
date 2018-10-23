@@ -22,7 +22,7 @@ Retrieves the data from an external object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetExternalData(  
    _In_ JsValueRef object,  
    _Out_ void **externalData  

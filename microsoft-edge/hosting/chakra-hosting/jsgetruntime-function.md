@@ -22,7 +22,7 @@ Gets the runtime that the context belongs to.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetRuntime(  
    _In_ JsContextRef context,  
    _Out_ JsRuntimeHandle *runtime  

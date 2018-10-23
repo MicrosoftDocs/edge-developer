@@ -22,7 +22,7 @@ Retrieves the string pointer of a string value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsStringToPointer(  
    _In_ JsValueRef value,  
    _Outptr_result_buffer_(*stringLength) const wchar_t **stringValue,  

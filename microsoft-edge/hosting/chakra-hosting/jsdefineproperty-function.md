@@ -22,7 +22,7 @@ Defines a new object's own property from a property descriptor.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDefineProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

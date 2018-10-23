@@ -18,7 +18,7 @@ Retrieves an object's indexed properties external data information.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetIndexedPropertiesExternalData(  
    _In_ JsValueRef object,  
    _Out_ void** data,  

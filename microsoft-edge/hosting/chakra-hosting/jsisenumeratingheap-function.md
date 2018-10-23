@@ -22,7 +22,7 @@ Returns a value that indicates whether the heap of the current context is being 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsIsEnumeratingHeap(  
    _Out_ bool *isEnumeratingHeap  
 );  

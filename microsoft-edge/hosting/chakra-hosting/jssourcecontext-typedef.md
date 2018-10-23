@@ -18,7 +18,7 @@ A cookie that identifies a script for debugging purposes.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef DWORD_PTR JsSourceContext;  
 ```  
   

@@ -17,7 +17,7 @@ Gets the script context that the object belongs to..
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetContextOfObject(  
   _In_ JsValueRef object,  
   _Out_ JsContextRef *context  

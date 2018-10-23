@@ -22,7 +22,7 @@ Gets the length of a string value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetStringLength(  
    _In_ JsValueRef stringValue,  
    _Out_ int *length  

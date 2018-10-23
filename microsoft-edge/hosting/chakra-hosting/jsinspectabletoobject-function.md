@@ -18,7 +18,7 @@ Creates a JavaScript value that is a projection of the passed in `IInspectable` 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsInspectableToObject(  
         _In_ IInspectable  *inspectable,  
         _Out_ JsValueRef *value  

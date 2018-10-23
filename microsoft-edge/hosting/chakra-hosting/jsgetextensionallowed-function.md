@@ -22,7 +22,7 @@ Returns a value that indicates whether an object is extensible or not.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetExtensionAllowed(  
    _In_ JsValueRef object,  
    _Out_ bool *value  

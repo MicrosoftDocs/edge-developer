@@ -22,7 +22,7 @@ Tells the runtime to do any idle processing it need to do.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsIdle(  
    _Out_opt_ unsigned int *nextIdleTick  
 );  

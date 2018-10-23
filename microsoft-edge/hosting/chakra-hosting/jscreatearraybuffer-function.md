@@ -18,7 +18,7 @@ Creates a JavaScript `ArrayBuffer` object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateArrayBuffer(  
    _In_ unsigned int byteLength,  
    _Out_ JsValueRef *result  

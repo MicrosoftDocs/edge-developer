@@ -18,7 +18,7 @@ A function callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef _Ret_maybenull_ JsValueRef (CALLBACK * JsNativeFunction)(  
    _In_ JsValueRef callee,  
    _In_ bool isConstructCall,  

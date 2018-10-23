@@ -22,7 +22,7 @@ Creates a Javascript array object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateArray(  
    _In_ unsigned int length,  
    _Out_ JsValueRef *result  

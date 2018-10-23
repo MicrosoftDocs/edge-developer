@@ -22,7 +22,7 @@ Determines whether the runtime of the current context is in an exception state.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsHasException(  
    _Out_ bool *hasException  
 );  

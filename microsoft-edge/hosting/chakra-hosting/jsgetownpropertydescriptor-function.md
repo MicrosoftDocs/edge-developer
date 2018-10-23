@@ -22,7 +22,7 @@ Gets a property descriptor for an object's own property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetOwnPropertyDescriptor(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

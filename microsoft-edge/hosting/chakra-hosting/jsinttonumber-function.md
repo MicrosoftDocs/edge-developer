@@ -18,7 +18,7 @@ Creates a number value from an `int` value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsIntToNumber(  
    _In_ int intValue,  
    _Out_ JsValueRef *value  

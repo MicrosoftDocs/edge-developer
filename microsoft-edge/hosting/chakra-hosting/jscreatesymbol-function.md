@@ -18,7 +18,7 @@ Creates a JavaScript symbol.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateSymbol(  
    _In_ JsValueRef description,  
    _Out_ JsValueRef *result  

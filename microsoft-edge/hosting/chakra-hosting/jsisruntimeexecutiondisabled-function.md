@@ -22,7 +22,7 @@ Returns a value that indicates whether script execution is disabled in the runti
   
 ## Syntax  
   
-```vb  
+```cpp  
 STDAPI_(JsErrorCode) JsIsRuntimeExecutionDisabled(    _In_ JsRuntimeHandle runtime,    _Out_ bool *isDisabled);  
 ```  
   

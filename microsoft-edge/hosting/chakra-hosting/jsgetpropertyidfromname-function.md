@@ -22,7 +22,7 @@ Gets the property ID associated with the name.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPropertyIdFromName(  
    _In_z_ const wchar_t *name,  
    _Out_ JsPropertyIdRef *propertyId  

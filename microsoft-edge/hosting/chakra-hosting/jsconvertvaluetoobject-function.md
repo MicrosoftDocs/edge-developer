@@ -22,7 +22,7 @@ Converts the value to object using standard JavaScript semantics.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConvertValueToObject(  
    _In_ JsValueRef value,  
    _Out_ JsValueRef *object  

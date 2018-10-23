@@ -17,7 +17,7 @@ Called by the runtime when it is finished with all resources related to the scri
   
 ## Syntax  
   
-```  
+```cpp  
  typedef void (CALLBACK * JsSerializedScriptUnloadCallback)(  
   _In_ JsSourceContext sourceContext  
 );  

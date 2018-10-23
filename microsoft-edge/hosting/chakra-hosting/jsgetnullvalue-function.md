@@ -22,7 +22,7 @@ Gets the value of `null` in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetNullValue(  
    _Out_ JsValueRef *nullValue  
 );  

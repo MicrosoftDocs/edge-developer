@@ -17,7 +17,7 @@ Sets the internal data of JsrtContext.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetContextData(  
   _In_ JsContextRef context,  
   _In_ void *data  

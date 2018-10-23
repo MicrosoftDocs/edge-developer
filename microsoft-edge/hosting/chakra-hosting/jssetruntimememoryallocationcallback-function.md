@@ -22,7 +22,7 @@ Sets a memory allocation callback for specified runtime
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetRuntimeMemoryAllocationCallback(  
    _In_ JsRuntimeHandle runtime,  
    _In_opt_ void *callbackState,  

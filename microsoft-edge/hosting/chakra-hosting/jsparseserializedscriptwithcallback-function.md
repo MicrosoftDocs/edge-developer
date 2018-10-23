@@ -17,7 +17,7 @@ Parses a serialized script and returns a function representing the script.     P
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsParseSerializedScriptWithCallback(  
   _In_ JsSerializedScriptLoadSourceCallback scriptLoadCallback,  
   _In_ JsSerializedScriptUnloadCallback scriptUnloadCallback,  

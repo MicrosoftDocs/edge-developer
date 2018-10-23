@@ -22,7 +22,7 @@ Sets the runtime of the current context to an exception state.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetException(  
    _In_ JsValueRef exception  
 );  

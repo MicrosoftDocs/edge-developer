@@ -22,7 +22,7 @@ Sets a callback function that is called by the runtime before garbage collection
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetRuntimeBeforeCollectCallback(  
    _In_ JsRuntimeHandle runtime,  
    _In_opt_ void *callbackState,  

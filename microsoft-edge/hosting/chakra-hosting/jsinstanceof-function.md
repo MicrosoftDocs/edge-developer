@@ -17,7 +17,7 @@ Performs JavaScript "instanceof" operator test.
   
 ## Syntax  
   
-```  
+```cpp  
 JsInstanceOf(   
   _In_ JsValueRef object,  
   _In_ JsValueRef constructor,  

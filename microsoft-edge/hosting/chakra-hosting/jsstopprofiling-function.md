@@ -22,7 +22,7 @@ Stops profiling in the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsStopProfiling(  
    _In_ HRESULT reason  
 );  

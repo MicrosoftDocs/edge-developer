@@ -18,7 +18,7 @@ Project a WinRT namespace.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode)  
    JsProjectWinRTNamespace(  
    _In_z_ const wchar_t *namespaceName  

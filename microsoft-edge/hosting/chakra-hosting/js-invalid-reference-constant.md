@@ -22,7 +22,7 @@ An invalid reference.
   
 ## Syntax  
   
-```  
+```cpp  
 const JsRef JS_INVALID_REFERENCE = NULL;  
 ```  
   

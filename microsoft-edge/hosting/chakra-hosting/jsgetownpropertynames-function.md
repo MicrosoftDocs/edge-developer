@@ -22,7 +22,7 @@ Gets the list of all properties on the object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetOwnPropertyNames(  
    _In_ JsValueRef object,  
    _Out_ JsValueRef *propertyNames  

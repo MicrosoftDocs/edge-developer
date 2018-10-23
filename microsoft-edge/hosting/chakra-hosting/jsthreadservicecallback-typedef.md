@@ -18,7 +18,7 @@ A thread service callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef bool (CALLBACK *JsThreadServiceCallback)(  
    _In_ JsBackgroundWorkItemCallback callback,  
    _In_opt_ void *callbackData  

@@ -22,7 +22,7 @@ Creates a new JavaScript TypeError error object
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateTypeError(  
    _In_ JsValueRef message,  
    _Out_ JsValueRef *error  

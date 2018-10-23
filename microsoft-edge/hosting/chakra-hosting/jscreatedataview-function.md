@@ -18,7 +18,7 @@ Creates a Javascript `DataView` object.
   
 ## Syntax  
   
-```  
+```cpp  
 JsErrorCode  JsCreateDataView(  
    _In_ JsValueRef arrayBuffer,  
    _In_ unsigned int byteOffset,  

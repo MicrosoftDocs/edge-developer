@@ -22,7 +22,7 @@ Version of the runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsRuntimeVersion;  
 ```  
   

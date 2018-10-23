@@ -22,7 +22,7 @@ Returns the exception that caused the runtime of the current context to be in th
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetAndClearException(  
    _Out_ JsValueRef *exception  
 );  

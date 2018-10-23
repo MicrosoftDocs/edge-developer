@@ -18,7 +18,7 @@ Gets the list of all symbol properties on the object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetOwnPropertySymbols(  
    _In_ JsValueRef object,  
    _Out_ JsValueRef *propertySymbols  

@@ -18,7 +18,7 @@ Obtains the underlying memory storage used by an `ArrayBuffer`.
   
 ## Syntax  
   
-```  
+```cpp  
 JsErrorCode STDAPI_ JsGetArrayBufferStorage(  
    _In_ JsValueRef arrayBuffer,  
    _Outptr_result_bytebuffer_(*bufferLength) BYTE **buffer,  

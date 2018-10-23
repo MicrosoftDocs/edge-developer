@@ -22,7 +22,7 @@ Converts the value to Boolean using standard JavaScript semantics.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConvertValueToBoolean(  
    _In_ JsValueRef value,  
    _Out_ JsValueRef *booleanValue  

@@ -22,7 +22,7 @@ Creates a new JavaScript RangeError error object
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateRangeError(  
    _In_ JsValueRef message,  
    _Out_ JsValueRef *error  

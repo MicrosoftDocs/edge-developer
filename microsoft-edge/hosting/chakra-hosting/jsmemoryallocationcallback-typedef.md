@@ -18,7 +18,7 @@ User implemented callback routine for memory allocation events.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef bool (CALLBACK * JsMemoryAllocationCallback)(  
    _In_opt_ void *callbackState,  
    _In_ JsMemoryEventType allocationEvent,  

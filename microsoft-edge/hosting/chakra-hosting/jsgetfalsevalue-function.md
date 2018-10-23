@@ -22,7 +22,7 @@ Gets the value of `false` in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetFalseValue(  
    _Out_ JsValueRef *falseValue  
 );  

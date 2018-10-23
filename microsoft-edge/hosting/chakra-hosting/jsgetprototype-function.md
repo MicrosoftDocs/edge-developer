@@ -22,7 +22,7 @@ Returns the prototype of an object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPrototype(  
    _In_ JsValueRef object,  
    _Out_ JsValueRef *prototypeObject  

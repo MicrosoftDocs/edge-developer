@@ -22,7 +22,7 @@ Runs a serialized script.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsRunSerializedScript(  
    _In_z_ const wchar_t *script,  
    _In_ BYTE *buffer,  

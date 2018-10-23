@@ -22,7 +22,7 @@ Allocation callback event type.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsMemoryEventType;  
 ```  
   

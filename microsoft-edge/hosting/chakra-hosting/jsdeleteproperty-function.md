@@ -22,7 +22,7 @@ Deletes an object's property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDeleteProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

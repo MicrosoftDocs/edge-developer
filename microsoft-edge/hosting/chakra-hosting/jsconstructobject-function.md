@@ -22,7 +22,7 @@ Invokes a function as a constructor.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConstructObject(  
    _In_ JsValueRef function,  
    _In_reads_(argumentCount) JsValueRef *arguments,  

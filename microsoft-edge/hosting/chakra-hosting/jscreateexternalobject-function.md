@@ -22,7 +22,7 @@ Creates a new object that stores some external data.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateExternalObject(  
    _In_opt_ void *data,  
    _In_opt_ JsFinalizeCallback finalizeCallback,  

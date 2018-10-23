@@ -22,7 +22,7 @@ The JavaScript type of a JsValueRef.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsValueType {  
     JsUndefined      = 0,  
     JsNull           = 1,  

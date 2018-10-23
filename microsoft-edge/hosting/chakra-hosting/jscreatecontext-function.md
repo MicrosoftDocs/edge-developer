@@ -22,7 +22,7 @@ Creates a script context for running scripts.
   
 ## Syntax  
   
-```  
+```cpp  
 // Edge mode signature  
 STDAPI_(JsErrorCode) JsCreateContext(  
    _In_ JsRuntimeHandle runtime,  

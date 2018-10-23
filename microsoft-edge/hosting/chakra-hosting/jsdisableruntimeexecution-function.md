@@ -22,7 +22,7 @@ Suspends script execution and terminates any running scripts in a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDisableRuntimeExecution(  
    _In_ JsRuntimeHandle runtime  
 );  

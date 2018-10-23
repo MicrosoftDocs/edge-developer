@@ -18,7 +18,7 @@ A reference to a script context.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef JsRef JsContextRef;  
 ```  
   

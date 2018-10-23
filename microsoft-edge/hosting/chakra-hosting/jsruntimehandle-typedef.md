@@ -18,7 +18,7 @@ A handle to a Chakra runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void *JsRuntimeHandle;  
 ```  
   

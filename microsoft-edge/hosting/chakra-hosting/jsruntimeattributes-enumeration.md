@@ -22,7 +22,7 @@ Attributes of a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsRuntimeAttributes;  
 ```  
   

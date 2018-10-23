@@ -22,7 +22,7 @@ An invalid runtime handle.
   
 ## Syntax  
   
-```  
+```cpp
 const JsRuntimeHandle JS_INVALID_RUNTIME_HANDLE = NULL;  
 ```  
   

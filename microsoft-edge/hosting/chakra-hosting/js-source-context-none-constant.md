@@ -22,7 +22,7 @@ An empty source context.
   
 ## Syntax  
   
-```  
+```cpp  
 const JsSourceContext JS_SOURCE_CONTEXT_NONE = (JsSourceContext)-1;  
 ```  
   

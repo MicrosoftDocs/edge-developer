@@ -22,7 +22,7 @@ Sets the external data on an external object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetExternalData(  
    _In_ JsValueRef object,  
    _In_opt_ void *externalData  

@@ -22,7 +22,7 @@ Gets the JavaScript type of a JsValueRef.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetValueType(  
    _In_ JsValueRef value,  
    _Out_ JsValueType *type  

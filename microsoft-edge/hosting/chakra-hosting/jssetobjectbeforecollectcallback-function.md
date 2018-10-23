@@ -18,7 +18,7 @@ Sets a callback function that is called by the runtime before garbage collection
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetObjectBeforeCollectCallback(  
    _In_ JsRef ref,  
    _In_opt_ void *callbackState,  

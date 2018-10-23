@@ -17,7 +17,7 @@ Gets the internal data set on JsrtContext.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetContextData(  
   _In_ JsContextRef context,  
   _Out_ void **data  
