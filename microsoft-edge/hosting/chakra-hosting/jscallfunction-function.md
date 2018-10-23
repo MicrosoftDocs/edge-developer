@@ -1,4 +1,5 @@
 ---
+description: "Invokes a function."
 title: "JsCallFunction Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

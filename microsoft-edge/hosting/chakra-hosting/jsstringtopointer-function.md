@@ -1,4 +1,5 @@
 ---
+description: "Retrieves the string pointer of a string value."
 title: "JsStringToPointer Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

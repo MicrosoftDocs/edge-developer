@@ -1,4 +1,5 @@
 ---
+description: "Obtains frequently used properties of a typed array."
 title: "JsGetTypedArrayInfo Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

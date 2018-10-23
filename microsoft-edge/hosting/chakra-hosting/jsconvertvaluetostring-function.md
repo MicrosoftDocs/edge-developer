@@ -1,4 +1,5 @@
 ---
+description: "Converts the value to string using standard JavaScript semantics."
 title: "JsConvertValueToString Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

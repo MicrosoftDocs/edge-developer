@@ -1,4 +1,5 @@
 ---
+description: "Creates a Javascript `DataView` object."
 title: "JsCreateDataView Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Gets the list of all symbol properties on the object."
 title: "JsGetOwnPropertySymbols Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "The JavaScript type of a JsValueRef."
 title: "JsValueType Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

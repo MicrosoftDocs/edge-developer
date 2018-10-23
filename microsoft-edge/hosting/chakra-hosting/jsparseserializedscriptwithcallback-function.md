@@ -1,4 +1,5 @@
 ---
+description: "Parses a serialized script and returns a function representing the script. Provides the ability to lazy load the script source only if/when it is needed."
 title: "JsParseSerializedScriptWithCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -13,7 +14,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsParseSerializedScriptWithCallback Function
-Parses a serialized script and returns a function representing the script.     Provides the ability to lazy load the script source only if/when it is needed.  
+Parses a serialized script and returns a function representing the script. Provides the ability to lazy load the script source only if/when it is needed.  
   
 ## Syntax  
   

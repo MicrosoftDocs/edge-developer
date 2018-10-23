@@ -1,4 +1,5 @@
 ---
+description: "User implemented callback routine for memory allocation events."
 title: "JsMemoryAllocationCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

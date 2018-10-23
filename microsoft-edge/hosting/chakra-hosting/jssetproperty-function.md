@@ -1,4 +1,5 @@
 ---
+description: "Puts an object's property."
 title: "JsSetProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

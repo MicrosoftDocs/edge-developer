@@ -1,4 +1,5 @@
 ---
+description: "Creates a string value from a string pointer."
 title: "JsPointerToString Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Compare two JavaScript values for strict equality."
 title: "JsStrictEquals Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

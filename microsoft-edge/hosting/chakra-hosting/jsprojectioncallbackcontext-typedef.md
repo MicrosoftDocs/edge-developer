@@ -1,4 +1,5 @@
 ---
+description: "The context passed into application callback, JsProjectionEnqueueCallback, from JsRT and then passed back to JsRT in the provided callback, `JsProjectionCallback`, by the application on the correct thread."
 title: "JsProjectionCallbackContext Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Serializes a parsed script to a buffer than can be reused."
 title: "JsSerializeScript Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

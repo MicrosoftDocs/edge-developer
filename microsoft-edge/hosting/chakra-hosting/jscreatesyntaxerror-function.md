@@ -1,4 +1,5 @@
 ---
+description: "Creates a new JavaScript SyntaxError error object."
 title: "JsCreateSyntaxError Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateSyntaxError Function
-Creates a new JavaScript SyntaxError error object  
+Creates a new JavaScript SyntaxError error object.  
   
 ## Syntax  
   

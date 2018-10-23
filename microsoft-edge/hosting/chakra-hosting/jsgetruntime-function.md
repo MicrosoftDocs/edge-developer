@@ -1,4 +1,5 @@
 ---
+description: "Gets the runtime that the context belongs to."
 title: "JsGetRuntime Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

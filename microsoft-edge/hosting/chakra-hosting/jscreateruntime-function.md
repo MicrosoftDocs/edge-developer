@@ -1,4 +1,5 @@
 ---
+description: "Creates a new runtime."
 title: "JsCreateRuntime Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateRuntime Function
-Creates a new runtime.  
+Creates a new runtime.
   
 ## Syntax  
   

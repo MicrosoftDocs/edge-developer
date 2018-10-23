@@ -1,4 +1,5 @@
 ---
+description: "Called by the runtime when it is finished with all resources related to the script execution. The caller should free the source if loaded, the byte code, and the context at this time."
 title: "JsSerializedScriptUnloadCallback typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -13,7 +14,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsSerializedScriptUnloadCallback typedef
-Called by the runtime when it is finished with all resources related to the script execution.     The caller should free the source if loaded, the byte code, and the context at this time.  
+Called by the runtime when it is finished with all resources related to the script execution. The caller should free the source if loaded, the byte code, and the context at this time.  
   
 ## Syntax  
   

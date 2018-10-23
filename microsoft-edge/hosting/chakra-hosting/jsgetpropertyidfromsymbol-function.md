@@ -1,4 +1,5 @@
 ---
+description: "Gets the property ID associated with the symbol."
 title: "JsGetPropertyIdFromSymbol Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

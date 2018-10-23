@@ -1,4 +1,5 @@
 ---
+description: "Performs JavaScript `instanceof` operator test."
 title: "JsInstanceOf Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -13,7 +14,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsInstanceOf Function
-Performs JavaScript "instanceof" operator test.  
+Performs JavaScript `instanceof` operator test.  
   
 ## Syntax  
   

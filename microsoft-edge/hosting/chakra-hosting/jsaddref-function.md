@@ -1,4 +1,5 @@
 ---
+description: "Adds a reference to a garbage collected object."
 title: "JsAddRef Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

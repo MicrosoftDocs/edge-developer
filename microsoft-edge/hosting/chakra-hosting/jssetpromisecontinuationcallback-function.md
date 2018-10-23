@@ -1,4 +1,5 @@
 ---
+description: "Sets a promise continuation callback function that is called by the context when a task needs to be queued for future execution."
 title: "JsSetPromiseContinuationCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "A callback called before collecting an object."
 title: "JsObjectBeforeCollectCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

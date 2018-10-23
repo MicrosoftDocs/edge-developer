@@ -1,4 +1,5 @@
 ---
+description: "A thread service callback."
 title: "JsThreadServiceCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

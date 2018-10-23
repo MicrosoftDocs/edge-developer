@@ -1,4 +1,5 @@
 ---
+description: "Creates a script context for running scripts."
 title: "JsCreateContext Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

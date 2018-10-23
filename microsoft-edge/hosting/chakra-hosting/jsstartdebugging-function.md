@@ -1,4 +1,5 @@
 ---
+description: "Starts debugging in the current context."
 title: "JsStartDebugging Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Stops profiling in the current context."
 title: "JsStopProfiling Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

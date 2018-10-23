@@ -1,4 +1,5 @@
 ---
+description: "Gets the value of `null` in the current script context."
 title: "JsGetNullValue Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

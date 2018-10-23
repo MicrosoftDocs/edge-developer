@@ -1,4 +1,5 @@
 ---
+description: "Returns a value that indicates whether an object is extensible or not."
 title: "JsGetExtensionAllowed Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

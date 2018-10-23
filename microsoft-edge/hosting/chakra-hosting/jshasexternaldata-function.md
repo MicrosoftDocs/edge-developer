@@ -1,4 +1,5 @@
 ---
+description: "Determines whether an object is an external object."
 title: "JsHasExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

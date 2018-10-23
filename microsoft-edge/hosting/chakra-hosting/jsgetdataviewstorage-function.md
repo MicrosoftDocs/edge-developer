@@ -1,4 +1,5 @@
 ---
+description: "Obtains the underlying memory storage used by a DataView."
 title: "JsGetDataViewStorage Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

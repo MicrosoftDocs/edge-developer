@@ -1,4 +1,5 @@
 ---
+description: "Initializes the passed in `VARIANT` as a projection of a JavaScript value."
 title: "JsValueToVariant Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

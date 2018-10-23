@@ -1,4 +1,5 @@
 ---
+description: "Creates a new JavaScript ReferenceError error object."
 title: "JsCreateReferenceError Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateReferenceError Function
-Creates a new JavaScript ReferenceError error object  
+Creates a new JavaScript ReferenceError error object.
   
 ## Syntax  
   

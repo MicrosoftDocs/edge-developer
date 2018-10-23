@@ -1,4 +1,5 @@
 ---
+description: "Gets the list of all properties on the object."
 title: "JsGetOwnPropertyNames Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

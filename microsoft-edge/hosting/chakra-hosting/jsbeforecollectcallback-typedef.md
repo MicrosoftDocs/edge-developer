@@ -1,4 +1,5 @@
 ---
+description: "A callback called before collection."
 title: "JsBeforeCollectCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

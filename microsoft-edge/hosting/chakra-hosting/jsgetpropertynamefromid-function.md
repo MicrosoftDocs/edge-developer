@@ -1,4 +1,5 @@
 ---
+description: "Gets the name associated with the property ID."
 title: "JsGetPropertyNameFromId Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

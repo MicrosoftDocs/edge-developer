@@ -1,4 +1,5 @@
 ---
+description: "Retrieves the `bool` value of a Boolean value."
 title: "JsBooleanToBool Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

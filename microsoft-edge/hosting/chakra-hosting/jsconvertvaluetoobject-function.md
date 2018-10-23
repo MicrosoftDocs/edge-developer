@@ -1,4 +1,5 @@
 ---
+description: "Converts the value to object using standard JavaScript semantics."
 title: "JsConvertValueToObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

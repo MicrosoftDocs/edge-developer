@@ -1,4 +1,5 @@
 ---
+description: "Creates a Boolean value from a `bool` value."
 title: "JsBoolToBoolean Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

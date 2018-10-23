@@ -1,4 +1,5 @@
 ---
+description: "Sets the internal data of JsrtContext."
 title: "JsSetContextData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

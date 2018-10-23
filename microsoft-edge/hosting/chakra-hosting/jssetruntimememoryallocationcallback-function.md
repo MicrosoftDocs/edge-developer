@@ -1,4 +1,5 @@
 ---
+description: "Sets a memory allocation callback for specified runtime."
 title: "JsSetRuntimeMemoryAllocationCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsSetRuntimeMemoryAllocationCallback Function
-Sets a memory allocation callback for specified runtime  
+Sets a memory allocation callback for specified runtime.  
   
 ## Syntax  
   

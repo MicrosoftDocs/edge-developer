@@ -1,4 +1,5 @@
 ---
+description: "Creates a new JavaScript URIError error object."
 title: "JsCreateURIError Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateURIError Function
-Creates a new JavaScript URIError error object  
+Creates a new JavaScript URIError error object.  
   
 ## Syntax  
   

@@ -1,4 +1,5 @@
 ---
+description: "Creates a new JavaScript function."
 title: "JsCreateFunction Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateFunction Function
-Creates a new JavaScript function.  
+Creates a new JavaScript function.
   
 ## Syntax  
   

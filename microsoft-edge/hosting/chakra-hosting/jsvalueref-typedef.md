@@ -1,4 +1,5 @@
 ---
+description: "A reference to a JavaScript value."
 title: "JsValueRef Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

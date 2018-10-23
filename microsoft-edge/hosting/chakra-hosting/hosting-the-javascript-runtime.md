@@ -1,4 +1,5 @@
 ---
+description: "Use the standards-based Chakra JavaScript engine to add scripting capabilities to your Windows application."
 title: "Hosting the JavaScript Runtime | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

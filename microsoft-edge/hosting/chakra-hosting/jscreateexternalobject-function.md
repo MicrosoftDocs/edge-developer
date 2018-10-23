@@ -1,4 +1,5 @@
 ---
+description: "Creates a new object that stores some external data."
 title: "JsCreateExternalObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateExternalObject Function
-Creates a new object that stores some external data.  
+Creates a new object that stores some external data.
   
 ## Syntax  
   

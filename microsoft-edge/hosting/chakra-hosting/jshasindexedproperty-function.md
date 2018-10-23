@@ -1,4 +1,5 @@
 ---
+description: "Tests whether an object has a value at the specified index."
 title: "JsHasIndexedProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

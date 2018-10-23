@@ -1,4 +1,5 @@
 ---
+description: "Gets the current script context on the thread."
 title: "JsGetCurrentContext Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

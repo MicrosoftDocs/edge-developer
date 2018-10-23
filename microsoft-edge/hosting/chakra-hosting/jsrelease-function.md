@@ -1,4 +1,5 @@
 ---
+description: "Releases a reference to a garbage collected object."
 title: "JsRelease Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

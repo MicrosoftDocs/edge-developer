@@ -1,4 +1,5 @@
 ---
+description: "A cookie that identifies a script for debugging purposes."
 title: "JsSourceContext Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Executes a script."
 title: "JsRunScript Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

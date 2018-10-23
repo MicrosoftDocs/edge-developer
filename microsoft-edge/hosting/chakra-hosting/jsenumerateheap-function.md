@@ -1,4 +1,5 @@
 ---
+description: "Enumerates the heap of the current context."
 title: "JsEnumerateHeap Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

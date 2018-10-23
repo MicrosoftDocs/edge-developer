@@ -1,4 +1,5 @@
 ---
+description: "Sets the runtime of the current context to an exception state."
 title: "JsSetException Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

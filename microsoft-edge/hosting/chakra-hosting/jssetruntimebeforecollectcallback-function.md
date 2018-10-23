@@ -1,4 +1,5 @@
 ---
+description: "Sets a callback function that is called by the runtime before garbage collection. "
 title: "JsSetRuntimeBeforeCollectCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

@@ -1,4 +1,5 @@
 ---
+description: "Creates a JavaScript symbol."
 title: "JsCreateSymbol Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -14,7 +15,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateSymbol Function
-Creates a JavaScript symbol.  
+Creates a JavaScript symbol.
   
 ## Syntax  
   

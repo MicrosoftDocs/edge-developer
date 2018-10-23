@@ -1,4 +1,5 @@
 ---
+description: "A finalizer callback."
 title: "JsFinalizeCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

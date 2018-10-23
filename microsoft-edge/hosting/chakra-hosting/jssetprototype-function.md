@@ -1,4 +1,5 @@
 ---
+description: "Sets the prototype of an object."
 title: "JsSetPrototype Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

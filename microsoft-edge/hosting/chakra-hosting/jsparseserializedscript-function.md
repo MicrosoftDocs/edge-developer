@@ -1,4 +1,5 @@
 ---
+description: "Parses a serialized script and returns a function representing the script."
 title: "JsParseSerializedScript Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

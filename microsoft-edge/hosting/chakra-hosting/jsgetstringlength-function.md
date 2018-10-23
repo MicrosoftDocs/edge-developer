@@ -1,4 +1,5 @@
 ---
+description: "Gets the length of a string value."
 title: "JsGetStringLength Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

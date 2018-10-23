@@ -1,4 +1,5 @@
 ---
+description: "Creates a number value from a double value."
 title: "JsDoubleToNumber Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

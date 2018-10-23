@@ -1,4 +1,5 @@
 ---
+description: "Retrieves an object's indexed properties external data information."
 title: "JsGetIndexedPropertiesExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

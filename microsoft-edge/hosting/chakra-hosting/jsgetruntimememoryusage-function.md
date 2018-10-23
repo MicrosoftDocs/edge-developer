@@ -1,4 +1,5 @@
 ---
+description: "Gets the current memory usage for a runtime."
 title: "JsGetRuntimeMemoryUsage Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

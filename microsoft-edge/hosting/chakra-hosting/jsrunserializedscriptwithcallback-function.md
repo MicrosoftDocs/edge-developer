@@ -1,4 +1,5 @@
 ---
+description: "Runs a serialized script. Provides the ability to lazy load the script source only if/when it is needed."
 title: "JsRunSerializedScriptWithCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -13,7 +14,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsRunSerializedScriptWithCallback Function
-Runs a serialized script.     Provides the ability to lazy load the script source only if/when it is needed.  
+Runs a serialized script. Provides the ability to lazy load the script source only if/when it is needed.  
   
 ## Syntax  
   

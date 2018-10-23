@@ -1,4 +1,5 @@
 ---
+description: "Gets the type of property."
 title: "JsGetPropertyIdType Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

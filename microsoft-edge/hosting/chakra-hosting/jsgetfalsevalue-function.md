@@ -1,4 +1,5 @@
 ---
+description: "Gets the value of `false` in the current script context."
 title: "JsGetFalseValue Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

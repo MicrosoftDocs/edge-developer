@@ -1,4 +1,5 @@
 ---
+description: "An empty source context."
 title: "JS_SOURCE_CONTEXT_NONE Constant | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

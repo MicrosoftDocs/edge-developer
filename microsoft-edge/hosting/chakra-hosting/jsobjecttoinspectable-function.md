@@ -1,4 +1,5 @@
 ---
+description: "Unwraps a JavaScript object to an `IInspectable` pointer."
 title: "JsObjectToInspectable Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -14,7 +15,7 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsObjectToInspectable Function
-Unwraps a JavaScript object to an `IInspectable` pointer  
+Unwraps a JavaScript object to an `IInspectable` pointer.  
   
 ## Syntax  
   
