@@ -79,7 +79,7 @@ The `create` method takes the following parameters:
 
 - **other options**
 ```javascript
-    //Since Edge shows UI, it is better to select larger timeout values
+    //Select larger timeout values, as Microsoft Edge shows UI
     timeout: 50000,
     //an opaque challenge that the authenticator signs over
     challenge: challenge,
@@ -151,7 +151,7 @@ After retrieving a challenge from the server, you'll call the get API along with
         allowCredentials: allowCredentials,
         //an opaque challenge that the authenticator signs over
         challenge: challenge,
-        //Since Edge shows UI, it is better to select larger timeout values
+        //Select larger timeout values, as Microsoft Edge shows UI
         timeout: 50000
     };
 

@@ -23,7 +23,7 @@ Creates a script context for running scripts.
 ## Syntax  
   
 ```cpp  
-// Edge mode signature  
+// Microsoft Edge mode signature  
 STDAPI_(JsErrorCode) JsCreateContext(  
    _In_ JsRuntimeHandle runtime,  
    _Out_ JsContextRef *newContext);  
@@ -52,7 +52,7 @@ STDAPI_(JsErrorCode) JsCreateContext(
 ## Remarks  
  Each script context has its own global object that is isolated from all other script contexts.  
   
- The `debugApplication` parameter is not supported in Edge mode. For more information on using this API in Edge mode, see [Targeting Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md).  
+ The `debugApplication` parameter is not supported in Microsoft Edge mode. For more information on using this API in Microsoft Edge mode, see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md).  
   
 ## Requirements  
  **Header:** jsrt.h  

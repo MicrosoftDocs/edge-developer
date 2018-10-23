@@ -42,7 +42,7 @@ STDAPI_(JsErrorCode) JsGetDataViewStorage(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

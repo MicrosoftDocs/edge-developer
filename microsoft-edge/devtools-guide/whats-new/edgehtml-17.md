@@ -25,7 +25,7 @@ The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/micros
 
 The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
 
-Decoupling the DevTools from Edge provides these UX and architectural advantages:
+Decoupling the DevTools from the browser provides these UX and architectural advantages:
 
 - The DevTools run in a separate app container sandbox from Microsoft Edge, providing better reliability for both.
 - The app provides easy switching between active DevTools instance tabs (rather than having to switch between open Edge tabs)
@@ -38,7 +38,7 @@ Check out the *DevTools guide* for more on [local and remote debugging using the
 
 Developer tools can use the [**Microsoft Edge DevTools Protocol**](../../devtools-protocol/index.md) to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](../../devtools-protocol/0.1/domains/index.md) of EdgeHTML engine instrumentation.
 
- Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Edge or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal). 
+ Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Microsoft Edge or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal). 
  
  Microsoft Edge DevTools uses this protocol to enable [remote debugging](../../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store. Currently this preview support is limited to JS debugging of another Edge on another desktop device or VM. Over time, we’ll add support for the full set of DevTools against any EdgeHTML instance on any Windows 10 device.  
  

@@ -36,7 +36,7 @@ STDAPI_(JsErrorCode) JsHasIndexedPropertiesExternalData(
  The code `JsNoError` if the operation succeeded, a failure code otherwise.  
   
 ## Remarks  
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

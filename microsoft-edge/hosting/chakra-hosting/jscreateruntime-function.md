@@ -23,7 +23,7 @@ Creates a new runtime.
 ## Syntax  
   
 ```cpp  
-// Edge mode signature  
+// Microsoft Edge mode signature  
 STDAPI_(JsErrorCode) JsCreateRuntime(  
    _In_ JsRuntimeAttributes attributes,  
    _In_opt_ JsThreadServiceCallback threadService,  
@@ -55,7 +55,7 @@ STDAPI_(JsErrorCode) JsCreateRuntime(
  The code `JsNoError` if the operation succeeded, a failure code otherwise.  
   
 ## Remarks  
- The `version` parameter is not supported in Edge mode. For more information on using this API in Edge mode, see [Targeting Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md).  
+ The `version` parameter is not supported in Microsoft Edge mode. For more information on using this API in Microsoft Edge mode, see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md).  
   
 ## Requirements  
  **Header:** jsrt.h  

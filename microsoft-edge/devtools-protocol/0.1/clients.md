@@ -59,9 +59,9 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
 ## Microsoft Visual Studio Preview
 
-Using the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (Visual Studio 15.7 Preview 1 or later), you can launch and debug Edge from the IDE on any ASP.NET or .NET Core project. The DevTools Protocol is currently in preview and requires you to be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
+Using the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (Visual Studio 15.7 Preview 1 or later), you can launch and debug Microsoft Edge from the IDE on any ASP.NET or .NET Core project. The DevTools Protocol is currently in preview and requires you to be running a [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
 
-Here's how to set up Edge debugging with Visual Studio:
+Here's how to set up Microsoft Edge debugging with Visual Studio:
 
 1.  Install and launch the latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) build (Visual Studio 15.7 Preview 1 or later).
 
