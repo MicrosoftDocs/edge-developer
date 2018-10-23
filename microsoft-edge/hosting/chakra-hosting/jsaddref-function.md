@@ -22,7 +22,7 @@ Adds a reference to a garbage collected object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsAddRef(  
    _In_ JsRef ref,  
    _Out_opt_ unsigned int *count  

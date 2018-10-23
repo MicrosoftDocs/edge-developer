@@ -33,7 +33,7 @@ For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app
 
 1. Launch Visual Studio, and start a new project (**File** > **New** > **Project...** *or* Ctrl+Shift+N).
 
-2. Under **JavaScript**, select **Basic Node.js Express 4 Application**. Set the name and location and click **OK**.
+2. Under **javascript**, select **Basic Node.js Express 4 Application**. Set the name and location and click **OK**.
 
     ![Selecting the Node.js Express 4 project template in Visual Studio](./media/vs-nodejs-express-template.png)
 
@@ -94,7 +94,7 @@ If this were an existing live site, you could quickly generate a web app manifes
 
 4. Now we just need to associate our web app manifest with the app itself. Open the *layout.pug* file (in *views* folder) for editing, and add this line right after the stylesheet link. (Its simply Node's [pug](https://pugjs.org/language/attributes.html) template shorthand for `<link rel='manifest' href='/manifest.json'>`).
 
-    ```
+    ```HTML
     link(rel='manifest', href='/manifest.json')
     ``` 
 
@@ -128,7 +128,7 @@ For this guide we'll continue using *http://localhost* as a placeholder for a li
 
 *Service Workers* is the key technology behind PWAs. They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks. Service workers also open up all kinds of new performance strategies; and website need not even be full-blown web app to take advantage of the service worker cache for fine-tuned page load performance.
 
-Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app. Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) and a [worker thread](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/postMessage) can communicate using `postMessage()` and `onmessage` event handlers. 
+Service workers are event-driven background threads that run from javascript files served up alongside the regular scripts that power your web app. Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) and a [worker thread](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/postMessage) can communicate using `postMessage()` and `onmessage` event handlers. 
 
 You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) reference.
 
@@ -173,7 +173,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
 5. In *Solution Explorer*, open the *routes\index.js* file, and add the following code just before the final command (`module.exports = router;`):
 
-    ```JavaScript
+    ```javascript
     router.get('/offline.html', function (req, res) {
         res.sendFile('public/offline.html');
     });
@@ -218,7 +218,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     Next we'll need to generate VAPID (*Voluntary Application Server Identification*) keys for your server to send push messages to the PWA client. You'll only have to do this once (that is, your server only requires a single pair of VAPID keys). In the *Node.js Interactive Window*, type: 
 
-    ```
+    ```javascript
     var webpush = require('web-push');
     webpush.generateVAPIDKeys();
     ```
@@ -226,7 +226,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     In your *index.js* file, just before the final  (*module.exports = router*) line, add the following:
 
-    ```
+    ```javascript
     const vapidKeys = {
         publicKey: '',
         privateKey: ''
@@ -250,7 +250,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     Still in your *index.js* file, append the following routes just after the VAPID initialization code you added in *Step 2* above.
 
-    ```
+    ```javascript
     router.get('/vapidPublicKey', function (req, res) {
         res.send(vapidKeys.publicKey);
     });
@@ -285,7 +285,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     In your *pwabuilder-sw-register.js* file, append this code:
 
-    ```JavaScript
+    ```javascript
     // Subscribe this PWA to push notifications from the server
     navigator.serviceWorker.ready
         .then(function (registration) {
@@ -362,7 +362,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     In your *pwabuilder-sw.js* file, append the following handlers:
 
-    ```JavaScript
+    ```javascript
     //Respond to a server push with a user notification
     self.addEventListener('push', function (event) {
         if ("granted" === Notification.permission) {
