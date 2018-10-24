@@ -6,7 +6,7 @@ ms.author: edoyle
 ms.date: 06/19/2018
 ms.topic: article
 ms.prod: microsoft-edge
-ms.tech: pwa
+ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
 

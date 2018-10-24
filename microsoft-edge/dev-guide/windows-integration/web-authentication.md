@@ -7,7 +7,7 @@ ms.author: edoyle
 ms.date: 07/18/2018
 ms.topic: article
 ms.prod: microsoft-edge
-ms.tech: windows-integration
+ms.technology: windows-integration
 keywords: edge, web development, html, css, javascript, developer
 ---
 

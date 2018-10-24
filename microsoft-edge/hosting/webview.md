@@ -6,7 +6,7 @@ ms.author: libbymc
 ms.date: 06/19/2018
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.tech: webview
+ms.technology: webview
 keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
 ---
 
