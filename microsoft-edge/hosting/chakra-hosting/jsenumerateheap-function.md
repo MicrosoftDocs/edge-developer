@@ -1,4 +1,5 @@
 ---
+description: "Enumerates the heap of the current context."
 title: "JsEnumerateHeap Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Enumerates the heap of the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsEnumerateHeap(  
    _Out_ IActiveScriptProfilerHeapEnum **enumerator  
 );  

@@ -1,4 +1,5 @@
 ---
+description: "A handle to a Chakra runtime."
 title: "JsRuntimeHandle Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A handle to a Chakra runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void *JsRuntimeHandle;  
 ```  
   

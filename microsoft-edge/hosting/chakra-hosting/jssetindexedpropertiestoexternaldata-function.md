@@ -1,4 +1,5 @@
 ---
+description: "Sets an object's indexed properties to external data. The external data will be used as back store for the object's indexed properties and accessed like a typed array."
 title: "JsSetIndexedPropertiesToExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Sets an object's indexed properties to external data. The external data will be 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetIndexedPropertiesToExternalData(  
    _In_ JsValueRef object,  
    _In_ void* data,  

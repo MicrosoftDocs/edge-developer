@@ -1,4 +1,5 @@
 ---
+description: "Creates a JavaScript symbol."
 title: "JsCreateSymbol Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -14,11 +15,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateSymbol Function
-Creates a JavaScript symbol.  
+Creates a JavaScript symbol.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateSymbol(  
    _In_ JsValueRef description,  
    _Out_ JsValueRef *result  
@@ -38,7 +39,7 @@ STDAPI_(JsErrorCode) JsCreateSymbol(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

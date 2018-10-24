@@ -1,4 +1,5 @@
 ---
+description: "An empty source context."
 title: "JS_SOURCE_CONTEXT_NONE Constant | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ An empty source context.
   
 ## Syntax  
   
-```  
+```cpp  
 const JsSourceContext JS_SOURCE_CONTEXT_NONE = (JsSourceContext)-1;  
 ```  
   

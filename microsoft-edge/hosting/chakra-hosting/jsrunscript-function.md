@@ -1,4 +1,5 @@
 ---
+description: "Executes a script."
 title: "JsRunScript Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Executes a script.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsRunScript(  
    _In_z_ const wchar_t *script,  
    _In_ JsSourceContext sourceContext,  

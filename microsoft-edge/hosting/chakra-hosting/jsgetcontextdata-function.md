@@ -1,7 +1,9 @@
 ---
+description: "Gets the internal data set on JsrtContext."
 title: "JsGetContextData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -17,7 +19,7 @@ Gets the internal data set on JsrtContext.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetContextData(  
   _In_ JsContextRef context,  
   _Out_ void **data  

@@ -1,4 +1,5 @@
 ---
+description: "Makes an object non-extensible."
 title: "JsPreventExtension Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Makes an object non-extensible.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsPreventExtension(  
    _In_ JsValueRef object  
 );  

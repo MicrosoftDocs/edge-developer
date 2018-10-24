@@ -1,4 +1,5 @@
 ---
+description: "Gets the global object in the current script context."
 title: "JsGetGlobalObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Gets the global object in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetGlobalObject(  
    _Out_ JsValueRef *globalObject  
 );  

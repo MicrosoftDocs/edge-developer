@@ -1,4 +1,5 @@
 ---
+description: "Gets the property ID associated with the symbol."
 title: "JsGetPropertyIdFromSymbol Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Gets the property ID associated with the symbol.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPropertyIdFromSymbol(  
    _In_ JsValueRef symbol,  
    _Out_ JsPropertyIdRef *propertyId  
@@ -40,7 +41,7 @@ STDAPI_(JsErrorCode) JsGetPropertyIdFromSymbol(
   
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

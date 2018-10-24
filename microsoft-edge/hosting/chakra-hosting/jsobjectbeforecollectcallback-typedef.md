@@ -1,4 +1,5 @@
 ---
+description: "A callback called before collecting an object."
 title: "JsObjectBeforeCollectCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A callback called before collecting an object.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsObjectBeforeCollectCallback)(  
   _In_ JsRef ref,  
   _In_opt_ void *callbackState  

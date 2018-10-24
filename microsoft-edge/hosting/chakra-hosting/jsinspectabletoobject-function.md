@@ -1,4 +1,5 @@
 ---
+description: "Creates a JavaScript value that is a projection of the passed in `IInspectable` pointer."
 title: "JsInspectableToObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Creates a JavaScript value that is a projection of the passed in `IInspectable` 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsInspectableToObject(  
         _In_ IInspectable  *inspectable,  
         _Out_ JsValueRef *value  

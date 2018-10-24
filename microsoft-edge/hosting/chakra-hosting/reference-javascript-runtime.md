@@ -1,4 +1,5 @@
 ---
+description: "JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows."
 title: "Reference (JavaScript Runtime) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

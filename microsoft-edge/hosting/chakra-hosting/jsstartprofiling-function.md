@@ -1,4 +1,5 @@
 ---
+description: "Starts profiling in the current context."
 title: "JsStartProfiling Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Starts profiling in the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsStartProfiling(  
    _In_ IActiveScriptProfilerCallback *callback,  
    _In_ PROFILER_EVENT_MASK eventMask,  

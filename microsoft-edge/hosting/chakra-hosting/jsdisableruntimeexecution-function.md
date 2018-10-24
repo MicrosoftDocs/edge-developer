@@ -1,4 +1,5 @@
 ---
+description: "Suspends script execution and terminates any running scripts in a runtime."
 title: "JsDisableRuntimeExecution Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Suspends script execution and terminates any running scripts in a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDisableRuntimeExecution(  
    _In_ JsRuntimeHandle runtime  
 );  

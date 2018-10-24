@@ -1,4 +1,5 @@
 ---
+description: "Determines whether the runtime of the current context is in an exception state."
 title: "JsHasException Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Determines whether the runtime of the current context is in an exception state.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsHasException(  
    _Out_ bool *hasException  
 );  

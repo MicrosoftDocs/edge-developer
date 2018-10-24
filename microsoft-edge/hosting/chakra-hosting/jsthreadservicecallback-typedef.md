@@ -1,4 +1,5 @@
 ---
+description: "A thread service callback."
 title: "JsThreadServiceCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A thread service callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef bool (CALLBACK *JsThreadServiceCallback)(  
    _In_ JsBackgroundWorkItemCallback callback,  
    _In_opt_ void *callbackData  

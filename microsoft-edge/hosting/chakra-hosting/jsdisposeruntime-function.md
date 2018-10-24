@@ -1,4 +1,5 @@
 ---
+description: "Disposes a runtime."
 title: "JsDisposeRuntime Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Disposes a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDisposeRuntime(  
    _In_ JsRuntimeHandle runtime  
 );  

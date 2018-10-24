@@ -1,7 +1,9 @@
 ---
+description: "Creates a Javascript `ArrayBuffer` object to access external memory."
 title: "JsCreateExternalArrayBuffer Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,11 +15,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateExternalArrayBuffer Function
-Creates a Javascript `ArrayBuffer` object to access external memory.  
+Creates a Javascript `ArrayBuffer` object to access external memory.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(  
   _Pre_maybenull_ _Pre_writable_byte_size_(byteLength) void *data,  
   _In_ unsigned int byteLength,  

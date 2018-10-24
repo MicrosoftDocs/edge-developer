@@ -1,4 +1,5 @@
 ---
+description: "Determines whether an object has a property."
 title: "JsHasProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Determines whether an object has a property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsHasProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

@@ -48,7 +48,7 @@ Format parameter | &nbsp;
 
 For example, here's how you would include string and integer variables in your log message:
 
-```
+```javascript
 var myText = 'pieces';
 var myVal = 5;
 console.log("The number of %s is %d.", myText, myVal);
@@ -57,7 +57,7 @@ console.log("The number of %s is %d.", myText, myVal);
 
 And here's how you might add a green highlight effect to a log message with inline CSS (`%c`):
 
-```
+```javascript
 console.log("%cHighlight this log message in green", "background-color: #10ff00; text-transform: uppercase;");
 ```
 
@@ -75,7 +75,8 @@ Command | &nbsp;
 [**dirxml()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/dirxml) | Displays as inspectable DOM node
 
 For example, try opening the console and compare the following outputs for the `<div id='main'>` element on this page:
-```
+
+```javascript
 console.dir(document.querySelector('#main'));
 console.dirxml(document.querySelector('#main'));
 ```
@@ -92,7 +93,7 @@ Command | &nbsp;
 
 For example, if you open the console on this page and type:
 
-```
+```javascript
 console.select(document.querySelector("body"));
 ```
 The DevTools will switch to the **Elements** panel (if its not already the current) and set focus in the [*HTML tree view*](../elements.md#html-tree-view) to the specified element.
@@ -111,7 +112,7 @@ Command | &nbsp;
 
 In addition to the logical expression you supply as the testable assertion, you can add an optional message and formatting parameters as you would use with other [custom console messages](#logging-custom-messages). For example:
 
-```
+```javascript
 var x = 26.8;
 console.assert(x < 25, 'The value of x is %f (it is NOT less than %i)', x, 25);
 ```
@@ -127,7 +128,8 @@ Command | &nbsp;
 [**countReset()**]() | Resets the count to zero for the given counter label.
 
 For example, executing the following lines in console:
-```
+
+```javascript
 console.count('My Counter');
 console.count('My Counter');
 console.countReset('My Counter');
@@ -147,7 +149,8 @@ Command | &nbsp;
 [**timeStamp()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/timeStamp) | Reports the current system time (in milliseconds).
 
 For example, try executing the following lines in console:
-```
+
+```javascript
 console.time('My Timer');
 console.timeEnd('My Timer');
 ```
@@ -171,7 +174,8 @@ Command | &nbsp;
 [**trace()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace) | Outputs a trace of the current script execution callstack.
 
 For example, running the following code in the console:
-```
+
+```javascript
 function a(){
   c();
 }
@@ -210,7 +214,8 @@ If your code outputs a lot of console messages, you can visually organize them i
 [**groupEnd()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/groupEnd) | Ends the nesting group for the specified label.
 
 For example, try entering the following commands in the console:
-```
+
+```javascript
 console.groupCollapsed('Group 1');
 console.log('In Group 1');
 console.groupCollapsed('Group 1.1');
@@ -231,7 +236,7 @@ Command | &nbsp;
 
 For example, the following object array:
 
-```
+```javascript
 var orders = [{'Size':'XL', 'Quantity':1},{'Size':'M', 'Quantity':3}, {'Size':'L', 'Quantity':2}];
 console.table(orders);
 ```

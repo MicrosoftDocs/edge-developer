@@ -1,7 +1,9 @@
 ---
+description: "Obtains frequently used properties of a typed array."
 title: "JsGetTypedArrayInfo Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -17,7 +19,7 @@ Obtains frequently used properties of a typed array.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetTypedArrayInfo(  
   _In_ JsValueRef typedArray,  
   _Out_opt_ JsTypedArrayType *arrayType,  

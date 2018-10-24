@@ -1,4 +1,5 @@
 ---
+description: "Gets the name associated with the property ID."
 title: "JsGetPropertyNameFromId Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Gets the name associated with the property ID.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPropertyNameFromId(  
    _In_ JsPropertyIdRef propertyId,  
    _Outptr_result_z_ const wchar_t **name  

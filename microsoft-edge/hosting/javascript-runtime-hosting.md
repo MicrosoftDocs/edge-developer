@@ -3,6 +3,7 @@ title: "JavaScript Runtime Hosting | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
 ms.prod: "windows-client-threshold"
+ms.technology: "chakra"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -22,7 +23,7 @@ The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and
  [Hosting the JavaScript Runtime](./chakra-hosting/hosting-the-javascript-runtime.md)  
  Describes the JsRT APIs.  
   
- [Targeting Edge vs. Legacy Engines](./chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md)  
+ [Targeting Microsoft Edge vs. Legacy Engines](./chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md)  
  Describes how to use the JsRT APIs with the new JavaScript engine.  
   
  [Reference (JavaScript Runtime)](./chakra-hosting/reference-javascript-runtime.md)  

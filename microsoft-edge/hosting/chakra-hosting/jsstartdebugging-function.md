@@ -1,4 +1,5 @@
 ---
+description: "Starts debugging in the current context."
 title: "JsStartDebugging Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,8 +23,8 @@ Starts debugging in the current context.
   
 ## Syntax  
   
-```  
-// Edge mode signature  
+```cpp  
+// Microsoft Edge mode signature  
 STDAPI_(JsErrorCode) JsStartDebugging();  
   
 // Legacy mode signature  
@@ -42,7 +43,7 @@ STDAPI_(JsErrorCode)  JsStartDebugging(
 ## Remarks  
  The host should make sure that `CoInitializeEx` is called with `COINIT_MULTITHREADED` or `COINIT_APARTMENTTHREADED` at least once before using this API  
   
- The `debugApplication` parameter is not supported in Edge mode. For more information on using this API in Edge mode, see [Targeting Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md).  
+ The `debugApplication` parameter is not supported in Microsoft Edge mode. For more information on using this API in Microsoft Edge mode, see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md).  
   
 ## Requirements  
  **Header:** jsrt.h  

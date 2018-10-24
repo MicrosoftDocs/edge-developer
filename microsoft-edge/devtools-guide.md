@@ -6,6 +6,7 @@ ms.author: edoyle
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
+ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
 experimental: true
 experiment_id: "51fe4b97-3e55-41"
@@ -51,7 +52,7 @@ To debug a page locally, simply launch the *Microsoft Edge DevTools* app. The **
 
 ### Remote debugging
 
-The *Microsoft Edge DevTools* app introduces basic support for debugging pages on a remote machine via our newly released [**DevTools Protocol**](./devtools-protocol/index.md). With the latest release comes remote access to core funtionality in the [**Debugger**](./devtools-guide/debugger.md), [**Elements**](./devtools-guide/elements.md) (for read-only operations), and [**Console**](./devtools-guide/console.md) panels. Remote debugging is limited to *Microsoft Edge* running *desktop* hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.
+The *Microsoft Edge DevTools* app introduces basic support for debugging pages on a remote machine via our newly released [**DevTools Protocol**](./devtools-protocol/index.md). With the latest release comes remote access to core functionality in the [**Debugger**](./devtools-guide/debugger.md), [**Elements**](./devtools-guide/elements.md) (for read-only operations), and [**Console**](./devtools-guide/console.md) panels. Remote debugging is limited to *Microsoft Edge* running *desktop* hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.
 
 To get started, check out the [*Microsoft Edge DevTools*](./devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) section of the [DevTools Protocol](./devtools-protocol/index.md) docs.
 

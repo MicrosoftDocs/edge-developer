@@ -1,4 +1,5 @@
 ---
+description: "Returns the prototype of an object."
 title: "JsGetPrototype Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Returns the prototype of an object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPrototype(  
    _In_ JsValueRef object,  
    _Out_ JsValueRef *prototypeObject  

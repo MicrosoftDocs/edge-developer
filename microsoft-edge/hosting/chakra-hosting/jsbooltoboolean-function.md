@@ -1,4 +1,5 @@
 ---
+description: "Creates a Boolean value from a `bool` value."
 title: "JsBoolToBoolean Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Creates a Boolean value from a `bool` value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode JsBoolToBoolean(  
    _In_ bool value,  
    _Out_ JsValueRef *booleanValue  

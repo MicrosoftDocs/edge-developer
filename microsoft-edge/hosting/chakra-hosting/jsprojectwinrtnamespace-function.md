@@ -1,4 +1,5 @@
 ---
+description: "Project a WinRT namespace."
 title: "JsProjectWinRTNamespace Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Project a WinRT namespace.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode)  
    JsProjectWinRTNamespace(  
    _In_z_ const wchar_t *namespaceName  

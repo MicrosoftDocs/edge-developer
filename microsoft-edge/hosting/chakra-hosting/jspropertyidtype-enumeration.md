@@ -1,4 +1,6 @@
 ---
+description: "# JsPropertyIdType Enumeration
+Type enumeration of a JavaScript property."
 title: "JsPropertyIdType Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +20,7 @@ Type enumeration of a JavaScript property.
   
 ## Syntax  
   
-```vb  
+```cpp  
 enum JsPropertyIdType;  
 ```  
   

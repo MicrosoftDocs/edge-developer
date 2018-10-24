@@ -1,4 +1,5 @@
 ---
+description: "Obtains the underlying memory storage used by a DataView."
 title: "JsGetDataViewStorage Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -42,7 +43,7 @@ STDAPI_(JsErrorCode) JsGetDataViewStorage(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

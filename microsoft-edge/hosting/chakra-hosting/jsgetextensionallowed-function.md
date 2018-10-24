@@ -1,4 +1,5 @@
 ---
+description: "Returns a value that indicates whether an object is extensible or not."
 title: "JsGetExtensionAllowed Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Returns a value that indicates whether an object is extensible or not.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetExtensionAllowed(  
    _In_ JsValueRef object,  
    _Out_ bool *value  

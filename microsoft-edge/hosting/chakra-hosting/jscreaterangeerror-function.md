@@ -1,4 +1,5 @@
 ---
+description: "Creates a new JavaScript RangeError error object."
 title: "JsCreateRangeError Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,11 +19,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateRangeError Function
-Creates a new JavaScript RangeError error object  
+Creates a new JavaScript RangeError error object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateRangeError(  
    _In_ JsValueRef message,  
    _Out_ JsValueRef *error  

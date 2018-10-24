@@ -1,4 +1,5 @@
 ---
+description: "The JavaScript type of a JsValueRef."
 title: "JsValueType Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ The JavaScript type of a JsValueRef.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsValueType {  
     JsUndefined      = 0,  
     JsNull           = 1,  
@@ -55,10 +56,10 @@ enum JsValueType {
 |`JsFunction`|The value is a JavaScript function object value.|  
 |`JsError`|The value is a JavaScript error object value.|  
 |`JsArray`|The value is a JavaScript array object value.|  
-|`JsSymbol`|The value is a JavaScript symbol value.<br /><br /> This enumeration value is supported only in Edge mode.|  
-|`JsArrayBuffer`|The value is a JavaScript `ArrayBuffer` object value.<br /><br /> This enumeration value is supported only in Edge mode.|  
-|`JsTypedArray`|The value is a JavaScript typed array object value.<br /><br /> This enumeration value is supported only in Edge mode.|  
-|`JsDataView`|The value is a JavaScript `DataView` object value.<br /><br /> This enumeration value is supported only in Edge mode.|  
+|`JsSymbol`|The value is a JavaScript symbol value.<br /><br /> This enumeration value is supported only in Microsoft Edge mode.|  
+|`JsArrayBuffer`|The value is a JavaScript `ArrayBuffer` object value.<br /><br /> This enumeration value is supported only in Microsoft Edge mode.|  
+|`JsTypedArray`|The value is a JavaScript typed array object value.<br /><br /> This enumeration value is supported only in Microsoft Edge mode.|  
+|`JsDataView`|The value is a JavaScript `DataView` object value.<br /><br /> This enumeration value is supported only in Microsoft Edge mode.|  
   
 ## Requirements  
  **Header:** jsrt.h  

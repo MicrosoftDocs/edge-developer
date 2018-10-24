@@ -1,4 +1,5 @@
 ---
+description: "Determines whether an object has its indexed properties in external data."
 title: "JsHasIndexedPropertiesExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Determines whether an object has its indexed properties in external data.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsHasIndexedPropertiesExternalData(  
    _In_ JsValueRef object,  
    _Out_ bool* value  
@@ -36,7 +37,7 @@ STDAPI_(JsErrorCode) JsHasIndexedPropertiesExternalData(
  The code `JsNoError` if the operation succeeded, a failure code otherwise.  
   
 ## Remarks  
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

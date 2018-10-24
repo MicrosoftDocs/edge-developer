@@ -1,4 +1,5 @@
 ---
+description: "Sets the external data on an external object."
 title: "JsSetExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Sets the external data on an external object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetExternalData(  
    _In_ JsValueRef object,  
    _In_opt_ void *externalData  

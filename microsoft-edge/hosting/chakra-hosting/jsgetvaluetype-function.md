@@ -1,4 +1,5 @@
 ---
+description: "Gets the JavaScript type of a JsValueRef."
 title: "JsGetValueType Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Gets the JavaScript type of a JsValueRef.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetValueType(  
    _In_ JsValueRef value,  
    _Out_ JsValueType *type  

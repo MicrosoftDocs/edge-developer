@@ -1,4 +1,5 @@
 ---
+description: "Attributes of a runtime. "
 title: "JsRuntimeAttributes Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Attributes of a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsRuntimeAttributes;  
 ```  
   

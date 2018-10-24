@@ -1,4 +1,5 @@
 ---
+description: "Gets the type of property."
 title: "JsGetPropertyIdType Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Gets the type of property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetPropertyIdType(  
    _In_ JsPropertyIdRef propertyId,  
    _Out_ JsPropertyIdType* propertyIdType  
@@ -38,7 +39,7 @@ STDAPI_(JsErrorCode) JsGetPropertyIdType(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

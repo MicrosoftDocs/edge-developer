@@ -1,4 +1,5 @@
 ---
+description: "Sets the prototype of an object."
 title: "JsSetPrototype Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Sets the prototype of an object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetPrototype(  
    _In_ JsValueRef object,  
    _In_ JsValueRef prototypeObject  

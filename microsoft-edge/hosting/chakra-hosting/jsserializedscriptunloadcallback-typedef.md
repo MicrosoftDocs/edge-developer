@@ -1,7 +1,9 @@
 ---
+description: "Called by the runtime when it is finished with all resources related to the script execution. The caller should free the source if loaded, the byte code, and the context at this time."
 title: "JsSerializedScriptUnloadCallback typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,11 +15,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsSerializedScriptUnloadCallback typedef
-Called by the runtime when it is finished with all resources related to the script execution.     The caller should free the source if loaded, the byte code, and the context at this time.  
+Called by the runtime when it is finished with all resources related to the script execution. The caller should free the source if loaded, the byte code, and the context at this time.  
   
 ## Syntax  
   
-```  
+```cpp  
  typedef void (CALLBACK * JsSerializedScriptUnloadCallback)(  
   _In_ JsSourceContext sourceContext  
 );  

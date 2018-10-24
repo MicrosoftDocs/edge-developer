@@ -1,4 +1,5 @@
 ---
+description: "Creates a string value from a string pointer."
 title: "JsPointerToString Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Creates a string value from a string pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsPointerToString(  
    _In_reads_(stringLength) const wchar_t *stringValue,  
    _In_ size_t stringLength,  

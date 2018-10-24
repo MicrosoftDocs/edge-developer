@@ -1,4 +1,5 @@
 ---
+description: "Obtains the underlying memory storage used by a typed array."
 title: "JsGetTypedArrayStorage Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Obtains the underlying memory storage used by a typed array.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetTypedArrayStorage(  
    _In_ JsValueRef typedArray,  
    _Outptr_result_bytebuffer_(*bufferLength) BYTE **buffer,  
@@ -50,7 +51,7 @@ STDAPI_(JsErrorCode) JsGetTypedArrayStorage(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

@@ -1,4 +1,5 @@
 ---
+description: "Invokes a function as a constructor."
 title: "JsConstructObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Invokes a function as a constructor.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConstructObject(  
    _In_ JsValueRef function,  
    _In_reads_(argumentCount) JsValueRef *arguments,  

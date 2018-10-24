@@ -1,4 +1,5 @@
 ---
+description: "Deletes an object's property."
 title: "JsDeleteProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Deletes an object's property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDeleteProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

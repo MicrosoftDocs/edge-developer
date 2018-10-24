@@ -1,7 +1,9 @@
 ---
+description: "Parses a serialized script and returns a function representing the script. Provides the ability to lazy load the script source only if/when it is needed."
 title: "JsParseSerializedScriptWithCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,11 +15,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsParseSerializedScriptWithCallback Function
-Parses a serialized script and returns a function representing the script.     Provides the ability to lazy load the script source only if/when it is needed.  
+Parses a serialized script and returns a function representing the script. Provides the ability to lazy load the script source only if/when it is needed.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsParseSerializedScriptWithCallback(  
   _In_ JsSerializedScriptLoadSourceCallback scriptLoadCallback,  
   _In_ JsSerializedScriptUnloadCallback scriptUnloadCallback,  

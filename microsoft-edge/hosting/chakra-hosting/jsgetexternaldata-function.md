@@ -1,4 +1,5 @@
 ---
+description: "Retrieves the data from an external object."
 title: "JsGetExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Retrieves the data from an external object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetExternalData(  
    _In_ JsValueRef object,  
    _Out_ void **externalData  

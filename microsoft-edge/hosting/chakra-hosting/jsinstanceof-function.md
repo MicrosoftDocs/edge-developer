@@ -1,7 +1,9 @@
 ---
+description: "Performs JavaScript `instanceof` operator test."
 title: "JsInstanceOf Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,11 +15,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsInstanceOf Function
-Performs JavaScript "instanceof" operator test.  
+Performs JavaScript `instanceof` operator test.  
   
 ## Syntax  
   
-```  
+```cpp  
 JsInstanceOf(   
   _In_ JsValueRef object,  
   _In_ JsValueRef constructor,  

@@ -1,4 +1,5 @@
 ---
+description: "Retrieves an object's indexed properties external data information."
 title: "JsGetIndexedPropertiesExternalData Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Retrieves an object's indexed properties external data information.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetIndexedPropertiesExternalData(  
    _In_ JsValueRef object,  
    _Out_ void** data,  
@@ -44,7 +45,7 @@ STDAPI_(JsErrorCode) JsGetIndexedPropertiesExternalData(
  The code `JsNoError` if the operation succeeded, a failure code otherwise.  
   
 ## Remarks  
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

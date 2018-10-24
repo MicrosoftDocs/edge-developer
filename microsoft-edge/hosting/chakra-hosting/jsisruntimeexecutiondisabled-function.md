@@ -1,4 +1,5 @@
 ---
+description: "Returns a value that indicates whether script execution is disabled in the runtime."
 title: "JsIsRuntimeExecutionDisabled Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Returns a value that indicates whether script execution is disabled in the runti
   
 ## Syntax  
   
-```vb  
+```cpp  
 STDAPI_(JsErrorCode) JsIsRuntimeExecutionDisabled(    _In_ JsRuntimeHandle runtime,    _Out_ bool *isDisabled);  
 ```  
   

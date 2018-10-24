@@ -1,4 +1,5 @@
 ---
+description: "Gets the runtime that the context belongs to."
 title: "JsGetRuntime Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Gets the runtime that the context belongs to.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetRuntime(  
    _In_ JsContextRef context,  
    _Out_ JsRuntimeHandle *runtime  

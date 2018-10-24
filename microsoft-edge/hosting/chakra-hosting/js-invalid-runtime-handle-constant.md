@@ -1,4 +1,5 @@
 ---
+description: "An invalid runtime handle."
 title: "JS_INVALID_RUNTIME_HANDLE Constant | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ An invalid runtime handle.
   
 ## Syntax  
   
-```  
+```cpp
 const JsRuntimeHandle JS_INVALID_RUNTIME_HANDLE = NULL;  
 ```  
   

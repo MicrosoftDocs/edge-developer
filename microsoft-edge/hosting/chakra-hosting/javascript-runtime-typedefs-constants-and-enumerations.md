@@ -1,4 +1,5 @@
 ---
+description: "JavaScript Runtime (JsRT) typedefs, constants, and enumerations support adding scripting capabilities to desktop and server-side applications running on Windows."
 title: "JavaScript Runtime Typedefs, Constants, and Enumerations | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"

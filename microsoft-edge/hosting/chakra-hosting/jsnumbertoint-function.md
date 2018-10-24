@@ -1,4 +1,5 @@
 ---
+description: "Retrieves the `int` value of a number value."
 title: "JsNumberToInt Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Retrieves the `int` value of a number value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsNumberToInt(  
       _In_ JsValueRef value,  
       _Out_ int *intValue  

@@ -1,4 +1,5 @@
 ---
+description: "Creates a number value from a double value."
 title: "JsDoubleToNumber Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Creates a number value from a `double` value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDoubleToNumber(  
    _In_ double doubleValue,  
    _Out_ JsValueRef *value  

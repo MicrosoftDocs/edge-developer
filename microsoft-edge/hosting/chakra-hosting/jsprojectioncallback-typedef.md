@@ -1,4 +1,5 @@
 ---
+description: "The JsRT callback which should be called with the context passed to `JsProjectionEnqueueCallback` on the correct thread."
 title: "JsProjectionCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ The JsRT callback which should be called with the context passed to `JsProjectio
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsProjectionCallback)(  
   _In_ JsProjectionCallbackContext jsContext  
 );  

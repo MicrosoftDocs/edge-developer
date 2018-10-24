@@ -1,4 +1,5 @@
 ---
+description: "A reference to an object owned by the Chakra garbage collector."
 title: "JsRef Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A reference to an object owned by the Chakra garbage collector.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void *JsRef;  
 ```  
   

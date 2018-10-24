@@ -1,4 +1,5 @@
 ---
+description: "Stops profiling in the current context."
 title: "JsStopProfiling Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Stops profiling in the current context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsStopProfiling(  
    _In_ HRESULT reason  
 );  

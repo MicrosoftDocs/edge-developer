@@ -1,4 +1,5 @@
 ---
+description: "Retrieve the value at the specified index of an object."
 title: "JsGetIndexedProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Retrieve the value at the specified index of an object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetIndexedProperty(  
    _In_ JsValueRef object,  
    _In_ JsValueRef index,  

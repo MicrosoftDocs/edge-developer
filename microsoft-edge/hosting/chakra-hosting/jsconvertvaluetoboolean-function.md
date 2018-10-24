@@ -1,4 +1,5 @@
 ---
+description: "Converts the value to Boolean using standard JavaScript semantics."
 title: "JsConvertValueToBoolean Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Converts the value to Boolean using standard JavaScript semantics.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConvertValueToBoolean(  
    _In_ JsValueRef value,  
    _Out_ JsValueRef *booleanValue  

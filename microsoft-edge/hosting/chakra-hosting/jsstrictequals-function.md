@@ -1,4 +1,5 @@
 ---
+description: "Compare two JavaScript values for strict equality."
 title: "JsStrictEquals Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Compare two JavaScript values for strict equality.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsStrictEquals(  
    _In_ JsValueRef object1,  
    _In_ JsValueRef object2,  

@@ -1,4 +1,5 @@
 ---
+description: "Gets the value of `false` in the current script context."
 title: "JsGetFalseValue Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Gets the value of `false` in the current script context.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetFalseValue(  
    _Out_ JsValueRef *falseValue  
 );  

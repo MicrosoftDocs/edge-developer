@@ -1,4 +1,5 @@
 ---
+description: "Creates a JavaScript `ArrayBuffer` object."
 title: "JsCreateArrayBuffer Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Creates a JavaScript `ArrayBuffer` object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateArrayBuffer(  
    _In_ unsigned int byteLength,  
    _Out_ JsValueRef *result  
@@ -38,7 +39,7 @@ STDAPI_(JsErrorCode) JsCreateArrayBuffer(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

@@ -1,4 +1,5 @@
 ---
+description: "Creates a JavaScript value that is a projection of the passed in `VARIANT`."
 title: "JsVariantToValue Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Creates a JavaScript value that is a projection of the passed in `VARIANT`.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsVariantToValue(  
    _In_ VARIANT *variant,  
    _Out_ JsValueRef *value  

@@ -1,4 +1,5 @@
 ---
+description: "Sets the callback to be used in order to invoke a projection completion back to the callers required thread."
 title: "JsSetProjectionEnqueueCallback Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Sets the callback to be used in order to invoke a projection completion back to 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetProjectionEnqueueCallback(  
    _In_ JsProjectionEnqueueCallback projectionEnqueueCallback,  
    _In_opt_ void *projectionEnqueueContext);  

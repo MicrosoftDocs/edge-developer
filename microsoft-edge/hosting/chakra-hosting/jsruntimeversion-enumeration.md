@@ -1,4 +1,5 @@
 ---
+description: "Version of the runtime."
 title: "JsRuntimeVersion Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Version of the runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsRuntimeVersion;  
 ```  
   

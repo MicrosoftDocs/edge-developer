@@ -1,4 +1,5 @@
 ---
+description: "A background work item callback."
 title: "JsBackgroundWorkItemCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A background work item callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsBackgroundWorkItemCallback)(  
    _In_opt_ void *callbackData  
 );  

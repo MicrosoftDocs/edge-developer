@@ -6,6 +6,7 @@ ms.author: libbymc
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: microsoft-edge
+ms.technology: windows-integration
 keywords: edge, web development, html, css, javascript, developer
 ---
 

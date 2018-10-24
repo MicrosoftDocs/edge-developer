@@ -1,4 +1,5 @@
 ---
+description: "Creates a number value from an `int` value."
 title: "JsIntToNumber Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Creates a number value from an `int` value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsIntToNumber(  
    _In_ int intValue,  
    _Out_ JsValueRef *value  

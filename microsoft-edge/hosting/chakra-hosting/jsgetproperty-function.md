@@ -1,4 +1,5 @@
 ---
+description: "Gets an object's property."
 title: "JsGetProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Gets an object's property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsGetProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

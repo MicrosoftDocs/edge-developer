@@ -1,4 +1,5 @@
 ---
+description: "The application callback which is called by JsRT when a projection API is completed on a different thread than the original."
 title: "JsProjectionEnqueueCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ The application callback which is called by JsRT when a projection API is comple
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsProjectionEnqueueCallback)(  
   _In_ JsProjectionCallback jsCallback,  
   _In_ JsProjectionCallbackContext jsContext,  

@@ -291,7 +291,7 @@ With that background, we're ready to add some WinRT code to implement a custom c
     }
     ```
 
-5. Compare the context menu behavior when you run your PWA in the browser (*F5* from your PWA site project) versus from inside its Windows app window (*F5* from your *Universal Windows* app project). In the browser, right-clicking gives you the Edge's default context menu, whereas in the *WWAHost.exe* process, your custom menu now appears.
+5. Compare the context menu behavior when you run your PWA in the browser (*F5* from your PWA site project) versus from inside its Windows app window (*F5* from your *Universal Windows* app project). In the browser, right-clicking gives you Microsoft Edge's default context menu, whereas in the *WWAHost.exe* process, your custom menu now appears.
 
     Microsoft Edge | Windows 10 app
     :--- | :---- 

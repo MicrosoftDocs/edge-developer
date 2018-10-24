@@ -16,7 +16,7 @@ The following table summarizes the JavaScript support across Internet Explorer, 
 > [!IMPORTANT]
 > Experimental features (enabled from *about:flags*) are indicated by "Exp." In some cases, *Store apps* support varies between Windows 8 (v8) and Windows 10 (v10) apps, and Windows desktop (Win) and Windows Phone (Phone), as indicated.
   
-|Language element|Quirks, Internet Explorer 6 Standards, Internet Explorer 7 Standards|Internet Explorer 8 Standards|Internet Explorer 9 Standards|Internet Explorer 10 Standards|Internet Explorer 11 Standards|Edge|Store apps|  
+|Language element|Quirks, Internet Explorer 6 Standards, Internet Explorer 7 Standards|Internet Explorer 8 Standards|Internet Explorer 9 Standards|Internet Explorer 10 Standards|Internet Explorer 11 Standards|Microsoft Edge|Store apps|  
 |----------------------|--------------------------------------------------------------------------|-----------------------------------|-----------------------------------|------------------------------------|------------------------------------|----------|----------------|  
 |[__proto\_\_ Property (Object)](https://docs.microsoft.com/en-us/scripting/javascript/reference/proto-property-object-javascript)|N|N|N|N|Y|Y|v8 (Win): N<br />v8.1 (Win): Y<br />v8.1 (Phone): Y|  
 |[$1...$9 Properties (RegExp)](https://docs.microsoft.com/en-us/scripting/javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript)|Y|Y|Y|Y|Y|Y|Y|  

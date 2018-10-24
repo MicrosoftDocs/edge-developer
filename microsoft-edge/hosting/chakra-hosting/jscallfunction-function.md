@@ -1,4 +1,5 @@
 ---
+description: "Invokes a function."
 title: "JsCallFunction Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Invokes a function.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCallFunction(  
    _In_ JsValueRef function,  
    _In_reads_(argumentCount) JsValueRef *arguments,  

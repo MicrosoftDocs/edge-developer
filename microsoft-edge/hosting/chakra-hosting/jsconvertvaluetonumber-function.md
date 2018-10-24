@@ -1,4 +1,5 @@
 ---
+description: "Converts the value to number using standard JavaScript semantics."
 title: "JsConvertValueToNumber Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Converts the value to number using standard JavaScript semantics.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsConvertValueToNumber(  
    _In_ JsValueRef value,  
    _Out_ JsValueRef *numberValue  

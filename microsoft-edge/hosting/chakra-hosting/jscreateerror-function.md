@@ -1,4 +1,5 @@
 ---
+description: "Creates a new JavaScript error object."
 title: "JsCreateError Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,11 +19,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateError Function
-Creates a new JavaScript error object  
+Creates a new JavaScript error object.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateError(  
    _In_ JsValueRef message,  
    _Out_ JsValueRef *error  

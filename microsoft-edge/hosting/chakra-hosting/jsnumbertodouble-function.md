@@ -1,4 +1,5 @@
 ---
+description: "Retrieves the `double` value of a number value."
 title: "JsNumberToDouble Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Retrieves the `double` value of a number value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsNumberToDouble(  
    _In_ JsValueRef value,  
    _Out_ double *doubleValue  

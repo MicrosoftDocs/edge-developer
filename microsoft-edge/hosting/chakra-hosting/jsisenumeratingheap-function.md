@@ -1,4 +1,5 @@
 ---
+description: "Returns a value that indicates whether the heap of the current context is being enumerated."
 title: "JsIsEnumeratingHeap Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Returns a value that indicates whether the heap of the current context is being 
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsIsEnumeratingHeap(  
    _Out_ bool *isEnumeratingHeap  
 );  

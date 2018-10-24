@@ -7,6 +7,7 @@ ms.author: edoyle
 ms.date: 07/18/2018
 ms.topic: article
 ms.prod: microsoft-edge
+ms.technology: windows-integration
 keywords: edge, web development, html, css, javascript, developer
 ---
 
@@ -32,7 +33,7 @@ Acting as an *identity provider*, you will first need to create a Web Authentica
 The `create` method takes the following parameters:
 
  - **relying party information**
-```
+```javascript
     rp: {
         name: "WebAuthn Sample App",
         icon: "https://example.com/rpIcon.png"
@@ -40,7 +41,7 @@ The `create` method takes the following parameters:
 ```
 
  - **user account information**
-```
+```javascript
     user: {
         id: stringToArrayBuffer("some.user.id"),
         name: "bob.smith@contoso.com",
@@ -50,7 +51,7 @@ The `create` method takes the following parameters:
 ```
 
  - **crypto parameters**
-```
+```javascript
     pubKeyCredParams: [
         {
             //External authenticators support the ES256 algorithm
@@ -66,7 +67,7 @@ The `create` method takes the following parameters:
 ```
 
  - **authenticator selection parameters**
-```
+```javascript
     authenticatorSelection: {
         //Select authenticators that support username-less flows
         requireResidentKey: true,
@@ -78,8 +79,8 @@ The `create` method takes the following parameters:
 ```
 
 - **other options**
-```
-    //Since Edge shows UI, it is better to select larger timeout values
+```javascript
+    //Select larger timeout values, as Microsoft Edge shows UI
     timeout: 50000,
     //an opaque challenge that the authenticator signs over
     challenge: challenge,
@@ -96,7 +97,7 @@ When you use the `create` method, Microsoft Edge will first ask the user to veri
 The resulting promise returns an [attestation object](https://w3c.github.io/webauthn/#sctn-attestation) representing the new credential. The attestation object contains the public key for the credential. You'll send this object to the server for validating future authentications. Before sending back to the server, you'll need to base64-encode the raw data.
 
 **Client**
-```
+```javascript
 <script>
     navigator.credentials.create({
         publicKey: createCredentialOptions
@@ -114,7 +115,7 @@ The resulting promise returns an [attestation object](https://w3c.github.io/weba
 The server should then decode the attestation object, perform verification steps, extract the public key for this credential, and store it for future authentications. A detailed list of steps can be found in the [credential registration algorithm](https://w3c.github.io/webauthn/#registering-a-new-credential) in the WebAuthn specification.
 
 **Server**
-```
+```javascript
     attestationObject = cbor.decodeFirstSync(Buffer.from(attestation.attestationObject, 'base64'));
     authenticatorData = parseAuthenticatorData(attestationObject.authData);
     var credential = await storage.Credentials.create({
@@ -131,7 +132,7 @@ Once the credential is created on the client, the next time the user attempts to
 The `get` method takes the *challenge* as its only required parameter. The challenge is an opaque sequence of bytes that the server will send down to a client to sign with the user's private key. For example:
 
 **Server**
-```
+```javascript
     var jwt = require('jsonwebtoken');
     var jwt_secret = "defaultsecret";
     fido.getChallenge = () => {
@@ -144,14 +145,14 @@ The `get` method takes the *challenge* as its only required parameter. The chall
 After retrieving a challenge from the server, you'll call the get API along with [credential request options](https://w3c.github.io/webauthn/#credentialrequestoptions-extension). Microsoft Edge will show a prompt, which will verify the identity of the user using Windows Hello or an external FIDO2 device. After the user is verified, the challenge will be signed within the TPM or FIDO2 device and the promise will return with an [assertion object](https://w3c.github.io/webauthn/#authenticatorassertionresponse) that contains the signature and other metadata for you to send to the server.
 
 **Client**
-```
+```javascript
     var credentialRequestOptions = {
         //specifies which credential IDs are allowed to authenticate the user
         //if empty, any credential can authenticate the users
         allowCredentials: allowCredentials,
         //an opaque challenge that the authenticator signs over
         challenge: challenge,
-        //Since Edge shows UI, it is better to select larger timeout values
+        //Select larger timeout values, as Microsoft Edge shows UI
         timeout: 50000
     };
 
@@ -172,7 +173,7 @@ After retrieving a challenge from the server, you'll call the get API along with
 Once you receive the assertion on the server, you will need to validate the signature to authenticate the user. The following is some sample code.  A detailed list of steps can be found in the [assertion verification algorithm](https://w3c.github.io/webauthn/#verifying-assertion) in the WebAuthn specification.
 
 **Server**
-```
+```javascript
     var jwkToPem = require('jwk-to-pem')
     var crypto = require('crypto');
 

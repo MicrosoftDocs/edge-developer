@@ -1,4 +1,5 @@
 ---
+description: "A property identifier. "
 title: "JsPropertyIdRef Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A property identifier.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef JsRef JsPropertyIdRef;  
 ```  
   

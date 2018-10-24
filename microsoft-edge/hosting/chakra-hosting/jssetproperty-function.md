@@ -1,4 +1,5 @@
 ---
+description: "Puts an object's property."
 title: "JsSetProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Puts an object's property.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsSetProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

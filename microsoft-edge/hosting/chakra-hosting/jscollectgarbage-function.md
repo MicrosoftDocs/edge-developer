@@ -1,4 +1,5 @@
 ---
+description: "Performs a full garbage collection."
 title: "JsCollectGarbage Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Performs a full garbage collection.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCollectGarbage(  
    _In_ JsRuntimeHandle runtime  
 );  

@@ -1,4 +1,5 @@
 ---
+description: "A promise continuation callback."
 title: "JsPromiseContinuationCallback Typedef | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ A promise continuation callback.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef void (CALLBACK *JsPromiseContinuationCallback)(  
   _In_ JsValueRef task,  
   _In_opt_ void *callbackState  

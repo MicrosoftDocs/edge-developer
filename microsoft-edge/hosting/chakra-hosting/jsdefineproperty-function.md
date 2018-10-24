@@ -1,4 +1,5 @@
 ---
+description: "Defines a new object's own property from a property descriptor."
 title: "JsDefineProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Defines a new object's own property from a property descriptor.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsDefineProperty(  
    _In_ JsValueRef object,  
    _In_ JsPropertyIdRef propertyId,  

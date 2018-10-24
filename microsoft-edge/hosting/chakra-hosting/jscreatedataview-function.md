@@ -1,4 +1,5 @@
 ---
+description: "Creates a Javascript `DataView` object."
 title: "JsCreateDataView Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,7 +19,7 @@ Creates a Javascript `DataView` object.
   
 ## Syntax  
   
-```  
+```cpp  
 JsErrorCode  JsCreateDataView(  
    _In_ JsValueRef arrayBuffer,  
    _In_ unsigned int byteOffset,  
@@ -46,7 +47,7 @@ JsErrorCode  JsCreateDataView(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in Microsoft Edge mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

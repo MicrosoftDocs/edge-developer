@@ -1,4 +1,5 @@
 ---
+description: "Allocation callback event type."
 title: "JsMemoryEventType Enumeration | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Allocation callback event type.
   
 ## Syntax  
   
-```  
+```cpp  
 enum JsMemoryEventType;  
 ```  
   

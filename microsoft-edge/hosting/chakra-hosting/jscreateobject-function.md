@@ -1,4 +1,5 @@
 ---
+description: "Creates a new object."
 title: "JsCreateObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -18,11 +19,11 @@ ms.author: "edoyle"
 manager: "jken"
 ---
 # JsCreateObject Function
-Creates a new object.  
+Creates a new object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateObject(  
    _Out_ JsValueRef *object  
 );  

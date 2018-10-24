@@ -1,4 +1,5 @@
 ---
+description: "Releases a reference to a garbage collected object."
 title: "JsRelease Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Releases a reference to a garbage collected object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsRelease(  
    _In_ JsRef ref,  
    _Out_opt_ unsigned int *count  

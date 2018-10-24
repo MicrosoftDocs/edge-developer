@@ -1,4 +1,5 @@
 ---
+description: "Parses a script and returns a function representing the script."
 title: "JsParseScript Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Parses a script and returns a function representing the script.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsParseScript(  
    _In_z_ const wchar_t *script,  
    _In_ JsSourceContext sourceContext,  

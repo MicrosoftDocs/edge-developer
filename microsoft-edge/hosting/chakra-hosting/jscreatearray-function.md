@@ -1,4 +1,5 @@
 ---
+description: "Creates a Javascript array object."
 title: "JsCreateArray Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Creates a Javascript array object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsCreateArray(  
    _In_ unsigned int length,  
    _Out_ JsValueRef *result  

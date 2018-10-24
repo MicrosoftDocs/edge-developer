@@ -1,4 +1,5 @@
 ---
+description: "Retrieves the `bool` value of a Boolean value."
 title: "JsBooleanToBool Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Retrieves the `bool` value of a Boolean value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsBooleanToBool(  
    _In_ JsValueRef value,  
    _Out_ bool *boolValue  

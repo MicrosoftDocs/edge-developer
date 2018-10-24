@@ -1,4 +1,5 @@
 ---
+description: "Enables script execution in a runtime. "
 title: "JsEnableRuntimeExecution Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
@@ -22,7 +23,7 @@ Enables script execution in a runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI_(JsErrorCode) JsEnableRuntimeExecution(  
    _In_ JsRuntimeHandle runtime  
 );  
