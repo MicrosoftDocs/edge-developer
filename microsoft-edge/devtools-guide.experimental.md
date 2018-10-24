@@ -6,6 +6,7 @@ ms.author: edoyle
 ms.date: 04/11/2018
 ms.topic: article
 ms.prod: microsoft-edge
+ms.tech: edgehtml
 keywords: microsoft edge, web development, f12 tools, devtools
 experimental: false
 experiment_id: "51fe4b97-3e55-41"

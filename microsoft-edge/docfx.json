@@ -44,6 +44,16 @@
       "docs.html"
     ],
     "dest": "microsoft-edge",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "ms.tech":{
+      "dev-guide/**.md": "edgehtml",
+      "devtools-guide/**.md": "devtools",
+      "devtools-protocol/**.md": "devtools",
+      "extensions/**.md": "extensions",
+      "hosting/chakra-hosting/**.md": "chakra",
+      "hosting/webview/**.md": "webview",
+      "progressive-web-apps/**.md": "pwa",
+      "windows-runtime/**.md": "windows-integration"
+    }
   }
 }
