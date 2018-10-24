@@ -35,7 +35,25 @@ STDAPI_(JsErrorCode) JsSetCurrentContext(
   
 ## Return Value  
  The code `JsNoError` if the operation succeeded, a failure code otherwise.  
-  
+
+## Example
+
+```cpp
+JsRuntimeHandle runtime;
+JsContextRef context;
+JsValueRef result;
+unsigned currentSourceContext = 0;
+
+// Create a runtime.
+JsCreateRuntime(JsRuntimeAttributeNone, nullptr, &runtime);
+
+// Create an execution context.
+JsCreateContext(runtime, &context);
+
+// Now set the current execution context.
+JsSetCurrentContext(context);
+```
+
 ## Requirements  
  **Header:** jsrt.h  
   
