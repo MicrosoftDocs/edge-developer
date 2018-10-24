@@ -41,8 +41,6 @@ STDAPI_(JsErrorCode) JsSetCurrentContext(
 ```cpp
 JsRuntimeHandle runtime;
 JsContextRef context;
-JsValueRef result;
-unsigned currentSourceContext = 0;
 
 // Create a runtime.
 JsCreateRuntime(JsRuntimeAttributeNone, nullptr, &runtime);
