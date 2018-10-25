@@ -64,7 +64,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
  Any app activation with the background script as the `StartPage` will rely on the script itself for navigation.
 
-### Text scaling
+#### Text scaling
 
 The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/en-us/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user acessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
 
