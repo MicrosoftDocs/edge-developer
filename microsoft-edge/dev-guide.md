@@ -127,7 +127,15 @@ void OnWebViewControlNewWindowRequested(WebViewControl sender, WebViewControlNew
 String htmlContent = “<html><script>window.open(‘http://mydomain.com’)</script><body></body></html>”;
 
 webView.NavigateToString(htmlContent);
+
 ```
+
+Lastly, power users might notice the apppearance of the *Desktop App Web Viewer* (previously named *Win32WebViewHost*), an internal system app representing the Win32 WebView, in the following places:
+ - In the *Windows 10 Action Center*. The source of these notifications should be understood as from a WebView hosted from a Win32 app.
+- In the device access settings UI (*Settings->Privacy->Camera/Location/Microphone*). Disabling any of these settings denies access from all WebViews hosted in Win32 apps.
+
+![Desktop App Web Viewer device access setting](./dev-guide/media/desktop-app-web-viewer.png)
+
 
 ## Deprecated features
 
