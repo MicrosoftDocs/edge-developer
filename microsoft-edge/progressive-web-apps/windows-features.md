@@ -55,7 +55,10 @@ Let's set up our Windows app development environment in Visual Studio.
 
     When you build your app project, [Visual Studio generates an *AppxManifest.xml*](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/generate-package-manifest) file from this metadata, which will be used for installing and running your app. Whenever you update your *package.appxmanifest* file, be sure to rebuild the project so they are reflected in your *AppxManifest.xml* at runtime.
 
-4. In the manifest designer **Application** panel, enter the URL of your PWA as the **Start page**. 
+4. In the manifest designer **Application** panel, enter the URL of your PWA as the **Start page**.
+
+> [!NOTE]
+> Service workers are supported for all *https* (secure, remote) urls specified as the `StartPage`. They are not supported by default for web apps that specify a local start page. To enable service worker support for these cases, add an explicit [*ApplicationContentUriRules*](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-application-content-uri-rules-acurs) entry to the manifest, for example: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`
 
     ![Application panel of package.appxmanifest designer](./media/vs-manifest-application.png)
 
