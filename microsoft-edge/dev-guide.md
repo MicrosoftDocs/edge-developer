@@ -52,6 +52,8 @@ In addition, no one likes enumerating the attributes collection, so we've added 
 
 ### Progressive Web Apps
 
+#### Lifetime background script
+
 Windows 10 JavaScript apps (web apps running in a *WWAHost.exe* process) now support an optional per-application background script that starts before any views are activated and runs for the duration of the process. With this, you can monitor and modify navigations, track state across navigations, monitor navigation errors, and run code before views are activated. 
 
 When specified as the [`StartPage`](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views (windows) are exposed to the script as instances of the new [`WebUIView`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general (Win32) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol). Your script can listen for the [`NewWebUIViewCreated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:
@@ -61,6 +63,12 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 ```
 
  Any app activation with the background script as the `StartPage` will rely on the script itself for navigation.
+
+#### Text scaling
+
+The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/en-us/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user acessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
+
+ For design guidance, check out the [Text scaling](https://docs.microsoft.com/en-us/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.
 
 ### Service Worker updates	
 
@@ -119,7 +127,15 @@ void OnWebViewControlNewWindowRequested(WebViewControl sender, WebViewControlNew
 String htmlContent = “<html><script>window.open(‘http://mydomain.com’)</script><body></body></html>”;
 
 webView.NavigateToString(htmlContent);
+
 ```
+
+Lastly, power users might notice the apppearance of the *Desktop App Web Viewer* (previously named *Win32WebViewHost*), an internal system app representing the Win32 WebView, in the following places:
+ - In the *Windows 10 Action Center*. The source of these notifications should be understood as from a WebView hosted from a Win32 app.
+- In the device access settings UI (*Settings->Privacy->Camera/Location/Microphone*). Disabling any of these settings denies access from all WebViews hosted in Win32 apps.
+
+![Desktop App Web Viewer device access setting](./dev-guide/media/desktop-app-web-viewer.png)
+
 
 ## Deprecated features
 

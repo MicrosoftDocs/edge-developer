@@ -62,7 +62,13 @@ Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 ### Printing
 
-When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`. 
+When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are transformed into `<iframe>` tags before printing. Besides the normal difference between displaying on screen and rendered for print, CSS styles applied to `<iframe>` elements are then applicable to the `<iframe>` transformed from `<x-ms-webview>`.
+
+### Service workers
+
+Starting with the [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) (EdgeHTML 18), [service workers are supported in the WebView control](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide#service-workers) (in addition to the Microsoft Edge browser and Windows 10 apps with JavaScript).
+
+x64 app architectures require Neutral (Any CPU) or x64 packages, as service workers are not supported in WoW64 processes. (To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.)
 
 ### Threading model and reliability
 
