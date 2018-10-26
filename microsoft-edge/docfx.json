@@ -45,7 +45,7 @@
     ],
     "dest": "microsoft-edge",
     "markdownEngineName": "markdig",
-    "ms.tech":{
+    "ms.technology":{
       "dev-guide/**.md": "edgehtml",
       "devtools-guide/**.md": "devtools",
       "devtools-protocol/**.md": "devtools",
