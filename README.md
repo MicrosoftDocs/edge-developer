@@ -41,11 +41,11 @@ These other text elements have styling available:
 
 * Unordered lists
 * Have regular bullets
-   * You can also nest bullets
+   * You can also nest bullets.
    * Bullets lists should have more than one entry.
 * Pretty standard
 
-1. Ordered lists
+1. Ordered lists.
 2. Use regular ol' western-style numbering.
 3. Should be used only when a list truly has order.
 
