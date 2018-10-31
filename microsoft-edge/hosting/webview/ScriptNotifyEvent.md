@@ -1,8 +1,8 @@
 ---
 description: Represents a notification string passed from webview content to the application
 title: ScriptNotifyEvent object
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge

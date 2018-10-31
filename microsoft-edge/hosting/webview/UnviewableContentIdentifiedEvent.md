@@ -1,8 +1,8 @@
 ---
 description: Indicates the webview is attempting to download an unsupported file. 
 title: UnviewableContentIdentifiedEvent object
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 05/25/2018
 ms.topic: reference
 ms.prod: microsoft-edge

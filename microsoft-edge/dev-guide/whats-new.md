@@ -1,8 +1,8 @@
 ---
 description: This page provides an overview of what's new in EdgeHTML preview builds for developers.
 title: What's New in EdgeHTML for developers
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: microsoft-edge

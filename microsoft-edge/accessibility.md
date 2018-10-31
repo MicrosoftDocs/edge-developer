@@ -2,8 +2,8 @@
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 description: Learn how to build, design, and test accessible websites within Microsoft Edge.
 title: Accessibility
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: microsoft-edge

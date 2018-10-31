@@ -1,8 +1,8 @@
 ---
 description: An event that is fired when an HTTP request is made.
 title: WebResourceRequestedEvent object
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 05/24/2018
 ms.topic: reference
 ms.prod: microsoft-edge

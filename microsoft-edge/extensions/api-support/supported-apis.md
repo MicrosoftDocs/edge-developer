@@ -1,8 +1,8 @@
 ---
 description: Find information on current and future APIs as well their known issues/Chrome incompatibilities.
 title: Extensions - Supported APIs
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: microsoft-edge

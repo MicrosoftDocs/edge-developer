@@ -1,8 +1,8 @@
 ---
 description: Learn how to sign up for a Windows Developer account and reserve a name for your Microsoft Edge extension.
 title: Extensions - Extensions in the Window Dev Center
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

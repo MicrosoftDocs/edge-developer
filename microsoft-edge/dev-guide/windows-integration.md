@@ -1,8 +1,8 @@
 ---
 description: Guides for Windows integration features in Microsoft Edge.
 title: Dev guide - Windows integration features
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 10/18/2017
 ms.topic: article
 ms.technology: windows-integration
