@@ -1,8 +1,8 @@
 ---
 description: Provides information about a permission request
 title: PermissionRequest object
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 06/15/2018
 ms.topic: reference
 ms.prod: microsoft-edge

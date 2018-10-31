@@ -1,8 +1,8 @@
 ---
 description: Provides event information about the current permission request
 title: PermissionRequestedEvent object
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 06/04/2018
 ms.topic: reference
 ms.prod: microsoft-edge

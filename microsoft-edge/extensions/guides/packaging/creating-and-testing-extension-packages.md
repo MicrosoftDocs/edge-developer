@@ -2,8 +2,8 @@
 ms.assetid: 5eefa3d8-8626-4486-bd90-1361400d6468
 description: Learn about how to package up your Microsoft Edge extension manually and test it to see if it's packaged correctly.
 title: Extensions - Creating and testing extension packages
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/21/2017
 ms.topic: article
 ms.prod: microsoft-edge

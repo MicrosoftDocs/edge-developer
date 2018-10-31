@@ -1,8 +1,8 @@
 ---
 description: Find information on supported manifest keys as well as their known issues/Chrome incompatibilities.
 title: Extensions - Supported manifest keys
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 05/29/2018
 ms.topic: article
 ms.prod: microsoft-edge

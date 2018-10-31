@@ -1,8 +1,8 @@
 ---
 description: Learn about some handy tips and tricks regarding Microsoft Edge extensions
 title: Extensions - Tips and tricks
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/21/2017
 ms.topic: article
 ms.prod: microsoft-edge

@@ -1,8 +1,8 @@
 ---
 description: Learn how to develop Microsoft Edge extensions. These small programs can be used to add new features to Microsoft Edge or modify existing functionality.
 title: Extensions
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 03/02/2017
 ms.topic: article
 ms.prod: microsoft-edge

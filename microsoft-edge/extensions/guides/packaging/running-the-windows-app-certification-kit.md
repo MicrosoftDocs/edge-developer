@@ -1,8 +1,8 @@
 ---
 description: Learn about the Windows App Certification Kit. This gives your extension a better chance of getting published.
 title: Extensions - Running the Windows App Certification Kit
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 06/27/2017
 ms.topic: article
 ms.prod: microsoft-edge

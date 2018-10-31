@@ -1,8 +1,8 @@
 ---
 description: This guide provides an overview of the developer features and standards included in EdgeHTML 15.
 title: What's new in EdgeHTML 15
-author: libbymc
-ms.author: libbymc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge

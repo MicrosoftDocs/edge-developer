@@ -2,8 +2,8 @@
 ms.assetid: c4397525-b978-4dc2-89bc-2198b3069742
 description: See how to package your Microsoft Edge extension in a snap with ManifoldJS, the Node.js open source tool.
 title: Extensions - Using ManifoldJS to package extensions
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

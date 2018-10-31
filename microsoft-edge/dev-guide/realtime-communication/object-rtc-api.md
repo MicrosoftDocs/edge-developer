@@ -2,8 +2,8 @@
 ms.assetid: ef705c70-73f8-445b-84ed-4f83679f1980
 description: Learn how Object Real-Time Communications (ORTC) enables media to be streamed in real-time directly between web browsers, mobile devices, or servers.
 title: Dev guide - Object RTC API
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

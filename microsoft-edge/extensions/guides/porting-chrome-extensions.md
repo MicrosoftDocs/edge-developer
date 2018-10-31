@@ -2,8 +2,8 @@
 ms.assetid: 1319a070-c6e3-4592-9f4b-40ce1575851f
 description: Learn how to port your Chrome extension to Microsoft Edge using the Microsoft Edge Extension Toolkit.
 title: Extensions - Porting Chrome extensions
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

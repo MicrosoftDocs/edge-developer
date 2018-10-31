@@ -1,8 +1,8 @@
 ---
 description: Get an end to end overview of the journey from beginning development to packaging of Microsoft Edge extensions.
 title: Extensions - Getting started
-author: abbycar
-ms.author: abigailc
+author: erikadoyle
+ms.author: edoyle
 ms.date: 03/02/2017
 ms.topic: article
 ms.prod: microsoft-edge
