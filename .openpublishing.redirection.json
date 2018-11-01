@@ -2,22 +2,22 @@
   "redirections": [
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps.md",
-      "redirect_url": "/microsoft-edge/devtools-guide/service-workers.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/service-workers",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/indexeddb.md",
-      "redirect_url": "/microsoft-edge/devtools-guide/storage.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/storage",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/cookies.md",
-      "redirect_url": "/microsoft-edge/devtools-guide/storage.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/storage",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/web-storage.md",
-      "redirect_url": "/microsoft-edge/devtools-guide/storage.md",
+      "redirect_url": "/microsoft-edge/devtools-guide/storage",
       "redirect_document_id": true
     },
     {
@@ -612,77 +612,77 @@
     },
     {
       "source_path": "microsoft-edge/webview.md",
-      "redirect_url": "microsoft-edge/hosting/webview.md",
+      "redirect_url": "/microsoft-edge/hosting/webview",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/DeferredPermissionRequest.md",
-      "redirect_url": "microsoft-edge/hosting/webview/DeferredPermissionRequest.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/DeferredPermissionRequest",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/FocusNavigationEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/FocusNavigationEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/FocusNavigationEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/LongRunningScriptDetectedEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/LongRunningScriptDetectedEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/LongRunningScriptDetectedEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/MSWebViewAsyncOperation.md",
-      "redirect_url": "microsoft-edge/hosting/webview/MSWebViewAsyncOperation.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/MSWebViewAsyncOperation",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/MSWebViewProcess.md",
-      "redirect_url": "microsoft-edge/hosting/webview/MSWebViewProcess.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/MSWebViewProcess",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/MSWebViewSettings.md",
-      "redirect_url": "microsoft-edge/hosting/webview/MSWebViewSettings.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/MSWebViewSettings",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/NavigationCompletedEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/NavigationCompletedEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/NavigationCompletedEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/NavigationEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/NavigationEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/NavigationEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/NavigationEventWithReferrer.md",
-      "redirect_url": "microsoft-edge/hosting/webview/NavigationEventWithReferrer.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/NavigationEventWithReferrer",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/PermissionRequest.md",
-      "redirect_url": "microsoft-edge/hosting/webview/PermissionRequest.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/PermissionRequest",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/PermissionRequestedEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/PermissionRequestedEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/PermissionRequestedEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/ScriptNotifyEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/ScriptNotifyEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/ScriptNotifyEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/UnviewableContentIdentifiedEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/UnviewableContentIdentifiedEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/UnviewableContentIdentifiedEvent",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/webview/WebResourceRequestedEvent.md",
-      "redirect_url": "microsoft-edge/hosting/webview/WebResourceRequestedEvent.md",
+      "redirect_url": "/microsoft-edge/hosting/webview/WebResourceRequestedEvent",
       "redirect_document_id": true
     }
   ]
