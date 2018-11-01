@@ -13,12 +13,12 @@
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/cookies.md",
       "redirect_url": "/microsoft-edge/devtools-guide/storage",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/web-storage.md",
       "redirect_url": "/microsoft-edge/devtools-guide/storage",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/f12-devtools-guide.md",
