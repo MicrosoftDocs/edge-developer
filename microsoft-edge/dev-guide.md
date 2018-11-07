@@ -30,6 +30,10 @@ With the Windows 10 October 2018 Update, Microsoft Edge provides customers with 
 
 Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with media hosted on your site.
 
+### Chakra improvements
+
+EdgeHTML 18 includes updates to the Chakra JavaScript engine to support new ES and WASM features in addition to performance and interoperability improvements. Check out the [ChakraCore 1.11 Release Notes](https://github.com/Microsoft/ChakraCore/wiki/Roadmap#chakracore-111) for details.
+
 ### CSS updates
 
 We've made further progress on our experimental [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) implementation (behind the *Enable CSS Masking* flag) with added support for [mask-composite](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite), [mask-position](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position), and [mask-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat). For site compatibility, Edge also supports the following *-webkit-* properties: -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
