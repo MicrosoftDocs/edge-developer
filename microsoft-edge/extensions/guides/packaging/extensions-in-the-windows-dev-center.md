@@ -1,6 +1,6 @@
 ---
 description: Learn how to sign up for a Windows Developer account and reserve a name for your Microsoft Edge extension.
-title: Extensions - Extensions in the Window Dev Center
+title: Extensions - Extensions in Partner Center
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017
@@ -9,15 +9,15 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Registering for a Windows Developer account and reserving names in the Windows Dev Center
+# Registering for a Windows Developer account and reserving names in Partner Center
 
-The Windows Dev Center dashboard lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/en-us/store/register), and refer to the [opening a developer account documentation](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for any questions you may have about the sign up process.
+[Partner Center](https://partner.microsoft.com/dashboard) lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/en-us/store/register), and refer to the [opening a developer account documentation](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for any questions you may have about the sign up process.
 > [!NOTE]
 > You will need a [Microsoft account](https://login.live.com/) to sign up for a developer account.
 
 
 ###	Multi-users organization account management for Microsoft Store
-In a large organization, you may assign different roles to different accounts for managing your Microsoft Edge Extension. You can assign different roles [using Azure Active Directory to manage account users](https://msdn.microsoft.com/en-us/windows/uwp/publish/manage-account-users) in your Dev Center account.
+In a large organization, you may assign different roles to different accounts for managing your Microsoft Edge Extension. You can assign different roles [using Azure Active Directory to manage account users](https://msdn.microsoft.com/en-us/windows/uwp/publish/manage-account-users) in your Partner Center account.
 
 For example, you could set up the following structure:
 - The engineering team is responsible for creating and uploading the package.
@@ -29,7 +29,7 @@ Each user/group/or Azure AD application is assigned a role that gives them a spe
 ###	Name reservation
 
 Reserving a name is the first step towards getting your extension in the Microsoft Store.
-It's recommended that you [reserve the name of your extension](https://msdn.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name) as soon as possible through the Windows Dev Center dashboard before it gets taken by someone else. You can do this even if you haven’t started building your extension yet.
+It's recommended that you [reserve the name of your extension](https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name) as soon as possible through Partner Center before it gets taken by someone else. You can do this even if you haven’t started building your extension yet.
 
 > [!NOTE]
 > The name chosen here has to match the name that is specified in the JSON manifest for the extension. 

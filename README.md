@@ -41,11 +41,11 @@ These other text elements have styling available:
 
 * Unordered lists
 * Have regular bullets
-   * You can also nest bullets
+   * You can also nest bullets.
    * Bullets lists should have more than one entry.
 * Pretty standard
 
-1. Ordered lists
+1. Ordered lists.
 2. Use regular ol' western-style numbering.
 3. Should be used only when a list truly has order.
 
@@ -89,7 +89,7 @@ Respectively, those look like:
 
 ```
 > [!WARNING]
-> Hello.  Yes.  I am a warning note that has been automagically created. My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single (sometimes very long line) in the Markdown itself.```
+> Hello. Yes. I am a warning note that has been automagically created. My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single (sometimes very long line) in the Markdown itself.```
 
 For multi-line blockquote notes, use a > in front of each line of the notes as seen in the example below.
 
