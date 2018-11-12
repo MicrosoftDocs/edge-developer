@@ -71,7 +71,7 @@ For this extension, we will create a popup for the user interface, like below.
 
 ![The popup interface of the extension](../media/color-changer_popup.png)
 
-To do this, create a file called "popup.html" in the root of your "color-changer" folder. Paste the following code in "popup.html".
+To do this, create a file called "popup.html" in the root of your "color-changer" folder. Paste the following code into "popup.html":
 
 ```html
 <!DOCTYPE html>
@@ -154,7 +154,7 @@ The icon that appears in the toolbar is set using `default_icon` inside of the [
 
 The `icons` key defines which icons should be used in the Extensions settings menus. Below, we are specifying multiple icons with different sizes to account for different screen resolutions.  The name of the icons, "25" and "48" are the icons' heights in pixels. 
 
-Update "manifest.json" to include the icons. 
+In ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json), include a top-level key for `icons`:
 
 ```json
   "icons": {
@@ -202,7 +202,7 @@ if (url.indexOf("//docs.microsoft.com") === -1) {
 
 This script gets the URL of the current page through `document.location.href` and checks whether or not the current page is on a [docs.microsoft.com](https://docs.microsoft.com) domain. If the page is not on a [docs.microsoft.com](https://docs.microsoft.com) domain (e.g. [https://www.bing.com/](https://www.bing.com/)), the paths to the inactive icons (grayed out icons) are sent to the background script using [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage).
 
-You also need to update "manifest.json" to include the keys below.
+You also need to update ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json) to include this `content_scripts` key:
 
 ```json
   "content_scripts": [{
@@ -222,7 +222,7 @@ You also need to update "manifest.json" to include the keys below.
 
 Next, we need to create a [background script](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Background_scripts). Background scripts run in the background of the browser, run independently of the lifetime of a web page or browser window, and can communicate with content scripts.
 
-Inside of your "js" folder, create a file called "background.js" and add the code below.
+Inside of your "js" folder, create a file called "background.js" and add this code:
 
 ```JavaScript
 // listen for sendMessage() from content script
@@ -245,7 +245,7 @@ browser.runtime.onMessage.addListener(
 
 This script also disables the browser action ([`browserAction.disable`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/disable)), so that users cannot click on the browser action outside of a [docs.microsoft.com](https://docs.microsoft.com) page. 
 
-We need to add the background script to "manifest.json". Add the following to your manifest file.
+We need to add the background script to ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json). Add the following `background` key to your manifest:
 
 ```json
 "background": {
