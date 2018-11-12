@@ -1,9 +1,9 @@
 ---
-description: Learn how to create a Microsoft Edge extension with some helpful tutorials and videos!
+description: Learn how to create a Microsoft Edge extension
 title: Extensions - Creating an extension
 author: erikadoyle
 ms.author: edoyle
-ms.date: 05/22/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -13,9 +13,9 @@ keywords: edge, web development, html, css, javascript, developer
 
 In this guide, you will learn to create an extension for Microsoft Edge.  This example extension will allow you to manipulate specific CSS for [docs.microsoft.com](https://docs.microsoft.com) pages -- walking you through creation of a manifest file, the user interface, and background and content scripts.
 
-![Docs.microsoft.com header changed to red](../media/color-changer_header.png)
+![Docs.microsoft.com body changed to blue](../media/color-changer_header.png)
 
-This tutorial assumes you have basic understanding of what browser extensions are and how they work. Unfamiliar with the building blocks for extensions? Check out the walkthrough, [Anatomy of an extension](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension), first.
+This tutorial assumes you have basic understanding of what browser extensions are and how they work. Unfamiliar with the building blocks for extensions? Check out [*Anatomy of an extension*](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension).
 
 The code for the full sample is here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).
 
@@ -36,7 +36,7 @@ Inside "manifest.json", include the following code.
   "name": "Color Changer",
   "author": "Microsoft Edge Extension Developer",
   "version": "1.0",
-  "description": "Change the color of the header on docs.microsoft.com",
+  "description": "Change the color of the body on docs.microsoft.com",
   "permissions": [
     "*://docs.microsoft.com/*",
     "tabs"
@@ -82,15 +82,15 @@ To do this, create a file called "popup.html" in the root of your "color-changer
   <body>
     <h1>Creating a Microsoft Edge Extension</h1>
     <p>Color Changer</p>
-    <button id="changeToRed">Red</button>
-    <button id="changeToBlue">Blue</button>
-    <button id="reset">Reset</button>
+    <input id="aliceblue" type="button" value="Aliceblue" />
+    <input id="cornsilk" type="button" value="Cornsilk" />
+    <input id="reset" type="button" value="Reset" />
     <script src="js/popup.js"></script>
   </body>
 </html>
 ```
 
-In "popup.html", we create a title, a paragraph, and three buttons (Red, Blue, and Reset).
+In "popup.html", we create a title, a paragraph, and three buttons (Aliceblue, Cornsilk, and Reset).
 
 Now create a folder called "css" and inside create a file called "styles.css".  Add the styles below.
 
@@ -118,28 +118,29 @@ Next, we need to create the JavaScript file that interacts with the popup. Creat
 
 ```JavaScript
 // get the buttons by id
-let red = document.getElementById('changeToRed');
-let blue = document.getElementById('changeToBlue');
+let aliceblue = document.getElementById('aliceblue');
+let cornsilk = document.getElementById('cornsilk');
 let reset = document.getElementById('reset');
 
 // use tabs.insertCSS to change header color on button click
-// red
-red.onclick = function() {
-  browser.tabs.insertCSS({code: ".c-uhfh .brand-neutral { background: red !important; }"});
+
+// aliceblue
+aliceblue.onclick = () => {
+  browser.tabs.insertCSS({code: "body { background: aliceblue !important; }"});
 };
 
-// blue
-blue.onclick = function() {
-  browser.tabs.insertCSS({code: ".c-uhfh .brand-neutral { background: blue !important; }"});
+// cornsilk
+cornsilk.onclick = () => {
+  browser.tabs.insertCSS({code: "body { background: cornsilk !important; }"});
 };
 
 // back to original
-reset.onclick = function() {
-  browser.tabs.insertCSS({code: ".c-uhfh .brand-neutral { background: #2f2f2f !important; }"});
+reset.onclick = () => {
+  browser.tabs.insertCSS({code: "body { background: none !important; }"});
 };
 ```
 
-In "popup.js", the [tabs](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs) API allows us to interact with the browser's tabs. Using the [tabs.insertCSS()](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs/insertCSS) method, we inject the specified CSS into the page which changes the header on [docs.microsoft.com](https://docs.microsoft.com) to a different color when the specified button is clicked.
+In "popup.js", the [tabs](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs) API allows us to interact with the browser's tabs and inject script and styles into their page content. Using the [`tabs.insertCSS()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs/insertCSS) method, we inject the specified CSS into the page which changes the header on [docs.microsoft.com](https://docs.microsoft.com) to a different color when the specified button is clicked.
 
 Now that we have the basic popup functionality, let's add icons to the extension. 
 
@@ -171,9 +172,11 @@ You'll noticed icons named "inactive##.png" included in the images folder -- we 
 
 Now that we've added the user interface and created icons, let's test the extension. Walk through the steps for [Adding an extension](./adding-and-removing-extensions.md#adding-an-extension) to Microsoft Edge. Then, come back to this guide.
 
-After you've added your extension, navigate to any [docs.microsoft.com](https://docs.microsoft.com/) page. You should see the following popup after clicking on the browser action. The color of the [docs.microsoft.com](https://docs.microsoft.com/) header should also change color.
+After you've added your extension, navigate to any [docs.microsoft.com](https://docs.microsoft.com/) page. You should see the following popup after clicking on the browser action. The color of the [docs.microsoft.com](https://docs.microsoft.com/) body should also change color.
 
-![Docs.microsoft.com header changed to red](../media/color-changer_header_red.png)
+![Docs.microsoft.com header changed to Aliceblue](../media/color-changer_header_aliceblue.png)
+
+![Docs.microsoft.com header changed to Cornsilk](../media/color-changer_header_cornsilk.png)
 
 If you encounter any errors or functionality that's not working, check out the [Debugging extensions](https://docs.microsoft.com/microsoft-edge/extensions/guides/debugging-extensions) guide or download the full sample here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).
 
