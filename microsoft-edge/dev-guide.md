@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
 keywords: edge, web development, html, css, javascript, developer, devtools
+ms.custom: RS5
 ---
 
 # Microsoft Edge Developer Guide
