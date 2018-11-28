@@ -3,7 +3,7 @@ description: "Obtains the underlying memory storage used by a DataView."
 title: "JsGetDataViewStorage Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
+ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

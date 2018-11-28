@@ -3,7 +3,7 @@ description: "Determines whether the runtime of the current context is in an exc
 title: "JsHasException Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
+ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
