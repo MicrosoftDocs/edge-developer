@@ -4,13 +4,19 @@ description: Guides for browser features in Microsoft Edge.
 title: Dev guide - Browser
 author: erikadoyle
 ms.author: edoyle
-ms.date: 10/18/2017
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
 # Browser features
+
+## Autoplay policies
+
+ Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and conserve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionally, Microsoft Edge automatically suppresses autoplay of media in background tabs.
+
+Check out [Autoplay policies](./browser-features/autoplay-policies.md) for details and best practices to ensure a good user experience with media hosted on your site.
 
 ## Flash
 If Flash is used on your page but the user has not enabled it, Microsoft Edge will normally show a puzzle piece icon in the address bar. If you are dynamically adding the Flash control after the page is loaded, the puzzle icon may not display, in which case you'll want to [test if Flash is loaded and provide a graceful fallback experience](./browser-features/flash.md) if its not present.
