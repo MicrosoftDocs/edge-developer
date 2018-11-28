@@ -3,7 +3,7 @@ description: "Creates a new object that stores some external data."
 title: "JsCreateExternalObject Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
+ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

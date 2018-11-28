@@ -3,7 +3,7 @@ description: "Defines a new object's own property from a property descriptor."
 title: "JsDefineProperty Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
+ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""

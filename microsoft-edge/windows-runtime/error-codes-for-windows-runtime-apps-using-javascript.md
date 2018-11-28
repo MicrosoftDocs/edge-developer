@@ -2,7 +2,7 @@
 title: "Error codes for Windows Runtime apps using JavaScript | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/10/2017"
-ms.prod: "windows-client-threshold"
+ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

@@ -2,7 +2,7 @@
 title: "Using the Windows Runtime in JavaScript | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
-ms.prod: "windows-client-threshold"
+ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
