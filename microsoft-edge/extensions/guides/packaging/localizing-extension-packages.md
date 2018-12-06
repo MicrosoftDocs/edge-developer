@@ -1,13 +1,14 @@
 ---
 ms.assetid: c4043c1e-15ac-4210-8851-3804c7708f49
 description: Learn how to localize your Microsoft Edge extension package so that it's ready for multiple locales upon release.
-title: Extensions - Localizing extension packages
+title: Localizing extension packages
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.custom: seodec18
 ---
 
 # Localizing Microsoft Edge extensions for Windows and the Microsoft Store

@@ -1,12 +1,13 @@
 ---
 description: Features added to the Microsoft Edge DevTools in the Windows 10 April 2018 Update (EdgeHTML 17)
-title: Microsoft Edge DevTools in the Windows 10 April 2018 Update (EdgeHTML 17)
+title: DevTools in EdgeHTML 17
 author: erikadoyle
 ms.author: edoyle
 ms.date: 06/20/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 17
+ms.custom: seodec18
 ---
 
 # DevTools in the Windows 10 April 2018 update (EdgeHTML 17)

@@ -1,12 +1,13 @@
 ---
 description: Use the Events pane to inspect registered event listeners on the page
-title: Microsoft Edge DevTools - Elements - Events
+title: DevTools - Elements - Events
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, event listeners, event handlers
+ms.custom: seodec18
 ---
 
 # Events 

@@ -1,12 +1,13 @@
 ---
 description: Use the Emulation panel to test different browser profiles, screen sizes and resolutions, and GPS location coordinates
-title: Microsoft Edge DevTools - Emulation
+title: DevTools - Emulation
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, device emulation, responsive design, geolocation, resolution
+ms.custom: seodec18
 ---
 
 # Emulation

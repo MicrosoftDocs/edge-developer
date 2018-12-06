@@ -1,12 +1,13 @@
 ---
 description: Use the Computed pane to understand how your CSS cascades and computes on page elements
-title: Microsoft Edge DevTools - Elements - Computed
+title: DevTools - Elements - Computed
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, css, computed value, box model
+ms.custom: seodec18
 ---
 
 # Computed

@@ -1,12 +1,13 @@
 ---
 description: Use the Service Workers panel for managing and debugging your service workers
-title: Microsoft Edge DevTools - Debugger - Service Workers
+title: DevTools - Debugger - Service Workers
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, pwa, service worker, cache api
+ms.custom: seodec18
 ---
 
 # Service Workers

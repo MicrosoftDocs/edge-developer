@@ -1,13 +1,14 @@
 ---
 ms.assetid: 961ca575-6b93-4367-a72b-f3f02e5b9568
 description: Reference common Console codes and suggested fixes
-title: Microsoft Edge DevTools - Console error and status codes
+title: DevTools - Console error and status codes
 author: erikadoyle
 ms.author: edoyle
 ms.date: 07/05/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
+ms.custom: seodec18
 ---
 
 # Console error and status codes

@@ -1,6 +1,6 @@
 ---
 description: Reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
-title: Page Domain - Microsoft Edge DevTools Protocol Version 0.2
+title: Page Domain - DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
 ms.date: 8/17/2018
