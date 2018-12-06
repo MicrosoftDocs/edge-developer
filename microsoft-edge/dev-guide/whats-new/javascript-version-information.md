@@ -7,6 +7,7 @@ ms.topic: language-reference
 author: erikadoyle
 ms.author: edoyle
 keywords: edge, ie, chakra, jscript, wwa, store apps
+ms.custom: seodec18
 ---
 # JavaScript Version Information
 JavaScript support varies across Microsoft Edge, Microsoft Store apps, and different document modes of Internet Explorer. For more information about IE document vode versioning, see [*Defining Document Compatibility*](http://go.microsoft.com/fwlink/?LinkId=208537).  
@@ -252,7 +253,7 @@ The following table summarizes the JavaScript support across Internet Explorer, 
 |[Nonidentity Operator (!==)](https://docs.microsoft.com/en-us/scripting/javascript/reference/comparison-operators-javascript)|Y|Y|Y|Y|Y|Y|Y|  
 |[now Function](https://docs.microsoft.com/en-us/scripting/javascript/reference/date-now-function-javascript)|N|N|Y|Y|Y|Y|Y|  
 |[Number Object](https://docs.microsoft.com/en-us/scripting/javascript/reference/number-object-javascript)|Y|Y|Y|Y|Y|Y|Y|  
-|[number Property](https://docs.microsoft.com/en-us/scripting/javascript/reference/number-property-error-javascript)|Y|Y|Y|Y|Y|Y|Y|  
+|[number Property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Microsoft_Extensions/Error.number)|Y|Y|Y|Y|Y|Y|Y|  
 |[Object Object](https://docs.microsoft.com/en-us/scripting/javascript/reference/object-object-javascript)|Y|Y|Y|Y|Y|Y|Y|  
 |[Operator Precedence](https://docs.microsoft.com/en-us/scripting/javascript/operator-subtractprecedence-javascript)|Y|Y|Y|Y|Y|Y|Y|  
 |[Date.parse Function](https://docs.microsoft.com/en-us/scripting/javascript/reference/date-parse-function-javascript)|Y|Y|Y|Y|Y|Y|Y|  

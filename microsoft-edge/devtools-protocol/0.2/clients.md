@@ -6,12 +6,13 @@ ms.author: edoyle
 ms.date: 10/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge
+ms.custom: seodec18
 ---
 
 # DevTools Protocol Clients
 
 > [!NOTE]
-> Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update]() and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
+> Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
 
 **DevTools Protocol 0.2** supports the following tooling clients.
 
@@ -23,7 +24,7 @@ You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.mic
 
 Version 0.2 of the DevTools Protocol provides new domains for style and layout debugging and console APIs, in addition to the core script debugging functionality introduced in Version 0.1. In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md), [**Console**](../../devtools-guide/console.md) and [**Debugger**](../../devtools-guide/debugger.md) panels. Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
 
-Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol version 0.2 requires [Windows 10 October 2018 Update]() or a later Windows Insider Preview build on the host (debugee) machine. The Edge DevTools Preview app (used on the debugger machine) will run on Windows 10 version 16299 (Windows 10 Fall Creators Update, 10/2017) or higher.
+Here's how to set up remote debugging with the Microsoft Edge DevTools Preview app. The DevTools Protocol version 0.2 requires [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) or a later Windows Insider Preview build on the host (debugee) machine. The Edge DevTools Preview app (used on the debugger machine) will run on Windows 10 version 16299 (Windows 10 Fall Creators Update, 10/2017) or higher.
 
 **On the host (debugee) machine...**
 
@@ -93,7 +94,7 @@ For more, check out the [VS Code - Debugger for Microsoft Edge](https://github.c
 
 ## Microsoft Visual Studio
 
-Using the latest [**Visual Studio**](https://www.visualstudio.com) version (Visual Studio 15.8 or later) running on [Windows 10 October 2018 Update](), you can launch and debug Edge from the IDE on any ASP.NET or .NET Core project.
+Using the latest [**Visual Studio**](https://www.visualstudio.com) version (Visual Studio 15.8 or later) running on [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763), you can launch and debug Edge from the IDE on any ASP.NET or .NET Core project.
 
 Here's how to set up Edge debugging with Visual Studio:
 
