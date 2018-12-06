@@ -7,6 +7,7 @@ ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.custom: seodec18
 ---
 
 # What's new in EdgeHTML 15
@@ -35,7 +36,7 @@ h1 {
 ```  
 
 ### Intersection Observer
-EdgeHTML 15 introduces the [Intersection Observer API](https://wicg.github.io/IntersectionObserver/) specification. The Intersection Observer API allows you to asynchronously query the position and visibility of DOM elements relative to other elements or the global viewport. This API eliminates the need for custom expensive code by creating a method to efficiently notify elements when they are in view.
+EdgeHTML 15 introduces the [Intersection Observer API](https://w3c.github.io/IntersectionObserver/) specification. The Intersection Observer API allows you to asynchronously query the position and visibility of DOM elements relative to other elements or the global viewport. This API eliminates the need for custom expensive code by creating a method to efficiently notify elements when they are in view.
 
 ### JavaScript
 
@@ -68,11 +69,9 @@ For more info, see [Introducing WebRTC 1.0 and interoperable real-time communica
 
 ### WebVR
 
-Microsoft Edge now has support for [WebVR](https://w3c.github.io/webvr/archive/prerelease/1.1/), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge. This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
+Microsoft Edge now has support for [WebVR](https://immersive-web.github.io/webxr/), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge. This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
 
 Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics. WebGL applications and applications built with WebGL libraries like BabylonJS are supported. Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset. The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md). This API is on by default, so no need to toggle a flag.
-
-To get a feel for what it looks like to work with the API, here’s some basic code to [render a frame to both eyes](https://w3c.github.io/webvr/archive/prerelease/1.1/#example-471f1826) of a Windows Mixed Reality device.
 
 See the [WebVR API reference](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx) and [Gamepad API reference](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) for details.
 
