@@ -8,6 +8,7 @@ ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.custom: seodec18
 ---
 
 # Building Accessible Websites
@@ -55,7 +56,7 @@ For more information on ARIA, see the ARIA in the [Resources](#resources) sectio
 
 ### Accessibility Basics
 #### [The A11Y Project](http://a11yproject.com/)
-The A11Y Project is a community-driven effort to make web accessibility easier. Check out their accessibility [basics](http://a11yproject.com/#Basics) section to learn about basic accessibility principles, their accessible pattern and widget [library](http://a11yproject.com/patterns/), and their [resources](http://a11yproject.com/resources.html) section for more information on accessibility software, blogs, books, and tools.
+The A11Y Project is a community-driven effort to make web accessibility easier. Check out [The A11Y Project](https://a11yproject.com/) site to learn about basic accessibility principles, their accessible pattern and widget [library](https://a11yproject.com/patterns), and their [resources](http://a11yproject.com/resources.html) on accessibility software, blogs, books, and tools.
 
 #### [Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
 The W3C’s Web Accessibility Initiative (WAI) is an effort to help improve the accessibility of the web. Their site provides a variety of resources for [Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/Overview.html), [Designing for Inclusion](https://www.w3.org/WAI/users/Overview.html), [tutorials and presentations](https://www.w3.org/WAI/train.html), and more.
@@ -99,7 +100,7 @@ Test results showing how different content types and standards behave in assisti
 #### [Building accessible websites just got a lot easier](https://blogs.msdn.microsoft.com/webdev/2016/05/02/building-accessible-websites-just-got-a-lot-easier/)
 This .NET Web Development and Tools blog post describes the Visual Studio extension [Web Accessibility Checker](https://go.microsoft.com/fwlink/p/?linkid=841539).
 
-#### [Core Accessibility API Mappings 1.1](http://rawgit.com/w3c/aria/master/core-aam/core-aam.html)
+#### [Core Accessibility API Mappings 1.1](https://www.w3.org/TR/core-aam-1.1/)
 This W3C mapping document explains how the semantics of web content languages are exposed to accessibility APIs.  
 
 #### [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html)
@@ -108,7 +109,7 @@ A series of quick checks by the WAI that help you asses the accessibility of a w
 #### [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
 A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.
 
-#### [HTML Accessibility API Mappings 1.0](http://rawgit.com/w3c/aria/master/html-aam/html-aam.html)
+#### [HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0/)
 This W3C mappings document explains how HTML5.1 element and attributes map to platform accessibility APIs.
 
 

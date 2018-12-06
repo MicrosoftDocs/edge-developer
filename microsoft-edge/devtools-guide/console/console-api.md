@@ -1,12 +1,13 @@
 ---
 description: Use the Console API to programmatically debug and profile your code
-title: Microsoft Edge DevTools - Console - Console API
+title: DevTools - Console - Console API
 author: erikadoyle
 ms.author: edoyle
 ms.date: 05/31/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console api
+ms.custom: seodec18
 ---
 
 # Console API
@@ -85,11 +86,11 @@ console.dirxml(document.querySelector('#main'));
 
 ### Selecting an element in the **Elements** panel
 
-You can select an element within the HTML tree context of the page  directly from the console for immediate layout and style debugging.
+You can select an element within the HTML tree context of the page directly from the console for immediate layout and style debugging.
 
 Command | &nbsp;
 :------------------- | :--- |
-[**select()**]() | Switches to the **Elements** panel and sets focus to the specified element.
+**select()** | Switches to the **Elements** panel and sets focus to the specified element.
 
 For example, if you open the console on this page and type:
 
@@ -125,7 +126,7 @@ You can set counters in your code to keep track of how many times the surroundin
 Command | &nbsp;
 :------------ | :-------------
 [**count()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/count) | Increments and logs the number of times *count()* for the given label has been executed.
-[**countReset()**]() | Resets the count to zero for the given counter label.
+[**countReset()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/countReset) | Resets the count to zero for the given counter label.
 
 For example, executing the following lines in console:
 

@@ -1,12 +1,13 @@
 ---
 description: Use the Console command line to interact with a running page
-title: Microsoft Edge DevTools - Console - Command Line
+title: DevTools - Console - Command Line
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console command line
+ms.custom: seodec18
 ---
 
 # Console command line

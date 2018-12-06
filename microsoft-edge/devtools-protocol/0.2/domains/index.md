@@ -1,6 +1,6 @@
 ---
 description: List of references for supported domains in Microsoft Edge DevTools Protocol Version 0.2.
-title: Domains - Microsoft Edge DevTools Protocol Version 0.2
+title: Domains - DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
 ms.date: 8/17/2018

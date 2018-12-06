@@ -7,13 +7,14 @@ ms.date: 9/17/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, media, video, audio, autoplay
+ms.custom: seodec18
 ---
 
 # Autoplay Policies
 
 Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and converve bandwidth. Additionaly, Microsoft Edge automatically suppress autoplay of media in background tabs.
 
-Users can customize media behavior with both [global](#global-media-autoplay-settings) and [per-site]() autoplay controls, which provide the following options:
+Users can customize media behavior with both [global](#global-media-autoplay-settings) and [per-site](#per-site-media-autoplay-settings) autoplay controls, which provide the following options:
 
 - **Allow**  is the default and will continue to play videos when a tab is first viewed in the foreground, at the site’s discretion.
 

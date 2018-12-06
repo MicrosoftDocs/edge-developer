@@ -1,12 +1,13 @@
 ---
 description: Use the Elements panel to inspect the HTML, CSS, DOM, and accessibility of your page.
-title: Microsoft Edge DevTools - Elements
+title: DevTools - Elements
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, html, css, dom breakpoints, events, accessibility
+ms.custom: seodec18
 ---
 
 # Elements

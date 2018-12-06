@@ -1,12 +1,13 @@
 ---
 description: Use the Storage panel to inspect your web storage, IndexedDB, cookies, and request/response caches
-title: Microsoft Edge DevTools - Storage
+title: DevTools - Storage
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, web storage, local storage, session storage, indexeddb, cookies, service worker, cache
+ms.custom: seodec18
 ---
 
 # Storage

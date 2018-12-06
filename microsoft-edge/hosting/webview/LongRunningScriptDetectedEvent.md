@@ -1,6 +1,6 @@
 ---
 description: 
-title: MSWebViewProcess object
+title: LongRunningScriptDetectedEvent object
 author: erikadoyle
 ms.author: edoyle
 ms.date: 04/10/2018

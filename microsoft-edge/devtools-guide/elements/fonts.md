@@ -1,12 +1,13 @@
 ---
 description: Use the Fonts pane to inspect fonts used on the page
-title: Microsoft Edge DevTools - Elements - Fonts
+title: DevTools - Elements - Fonts
 author: erikadoyle
 ms.author: edoyle
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, fonts, @font-face
+ms.custom: seodec18
 ---
 
 # Fonts

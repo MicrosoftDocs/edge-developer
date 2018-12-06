@@ -1,12 +1,13 @@
 ---
 description: Learn how to sign up for a Windows Developer account and reserve a name for your Microsoft Edge extension.
-title: Extensions - Extensions in Partner Center
+title: Extensions in Partner Center
 author: erikadoyle
 ms.author: edoyle
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.custom: seodec18
 ---
 
 # Registering for a Windows Developer account and reserving names in Partner Center

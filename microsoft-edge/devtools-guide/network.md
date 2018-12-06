@@ -1,12 +1,13 @@
 ---
 description: Use the Network panel to monitor and profile page resource requests
-title: Microsoft Edge DevTools - Network
+title: DevTools - Network
 author: erikadoyle
 ms.author: edoyle
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
+ms.custom: seodec18
 ---
 
 # Network
