@@ -37,102 +37,103 @@ To get started using WebDriver with Microsoft Edge, check out these samples:
 ## WebDriver server command line flags
 List of command line flags for the WebDriver server.
 
-| Name    | Description                                                                               | Available Release |
-|:--------|:------------------------------------------------------------------------------------------|:------------------|
-| host    | Host IP to use for the WebDriver server (default: localhost)                              | 14393             |
-| port    | Port to use for the WebDriver server (default: 17556)                                     | 14393             |
-| package | ApplicationUserModelId (AUMID) for the application to be launched by the WebDriver server | 14393             |
-| verbose | Outputs requests received and responses sent by the WebDriver server                      | 14393             |
-| silent  | Outputs nothing                                                                           | 15063             |
-| version | Outputs the version of MicrosoftWebDriver.exe                                             | Insiders          |
-| w3c     | Use W3C WebDriver protocol (default option)                                               | Insiders          |
-| jwp     | Use JSON Wire protocol                                                                    | Insiders          |
+| Name    | Description                                                                                                      | Available Release |
+|:--------|:-----------------------------------------------------------------------------------------------------------------|:------------------|
+| host    | Host IP to use for the WebDriver server (default: localhost)                                                     | 14393             |
+| port    | Port to use for the WebDriver server (default: 17556)                                                            | 14393             |
+| package | ApplicationUserModelId (AUMID) for the application to be launched by the WebDriver server                        | 14393             |
+| verbose | Outputs requests received and responses sent by the WebDriver server                                             | 14393             |
+| silent  | Outputs nothing                                                                                                  | 15063             |
+| version | Outputs the version of MicrosoftWebDriver.exe                                                                    | 17763             |
+| w3c     | Use W3C WebDriver protocol (default option)                                                                      | 17763             |
+| jwp     | Use JSON Wire protocol                                                                                           | 17763             |
+| cleanup | Cleanup temporary data and registry keys set by the WebDriver server for --package. Other parameters are ignored | 17763             |
 
 ## W3C WebDriver
 The support on a per command basis for the [W3C WebDriver Specification](https://www.w3.org/TR/webdriver/).
 
 ### Capabilities
-| Capability                       | Key                       | Status             | Available Release |
-|:---------------------------------|:--------------------------|:-------------------|:------------------|
-| Browser Name                     | "browserName"             | Supported          | Insiders          |
-| Browser Version                  | "browserVersion"          | Supported          | Insiders          |
-| Platform Name                    | "platformName"            | Supported          | Insiders          |
-| Accept Insecure TLS Certificates | "acceptInsecureCerts"     | Not&nbsp;Supported | N/A               |
-| Page Load Strategy               | "pageLoadStrategy"        | Supported          | Insiders          |
-| Proxy Configuration              | "proxy"                   | Not&nbsp;Supported | N/A               |
-| Window Dimensioning/Positioning  | "setWindowRect"           | Supported          | Insiders          |
-| Session Timeouts Configuration   | "timeouts"                | Supported          | Insiders          |
-| Unhandled Prompt Behavior        | "unhandledPromptBehavior" | Not&nbsp;Supported | N/A               |
-| InPrivate                        | "ms:inPrivate"            | Supported          | Insiders          |
-| Extension Paths                  | "ms:extensionPaths"       | Supported          | Insiders          |
-| Start Page                       | "ms:startPage"            | Supported          | Insiders          |
+| Capability                       | Key                       | Status                   | Available Release |
+|:---------------------------------|:--------------------------|:-------------------------|:------------------|
+| Browser Name                     | "browserName"             | Supported                | 17763             |
+| Browser Version                  | "browserVersion"          | Supported                | 17763             |
+| Platform Name                    | "platformName"            | Supported                | 17763             |
+| Accept Insecure TLS Certificates | "acceptInsecureCerts"     | Not&nbsp;Supported       | N/A               |
+| Page Load Strategy               | "pageLoadStrategy"        | Supported                | 17763             |
+| Proxy Configuration              | "proxy"                   | Not&nbsp;Supported       | N/A               |
+| Window Dimensioning/Positioning  | "setWindowRect"           | Supported                | 17763             |
+| Session Timeouts Configuration   | "timeouts"                | Supported                | 17763             |
+| Unhandled Prompt Behavior        | "unhandledPromptBehavior" | Partially&nbsp;Supported | 17763             |
+| InPrivate                        | "ms:inPrivate"            | Supported                | 17763             |
+| Extension Paths                  | "ms:extensionPaths"       | Supported                | 17763             |
+| Start Page                       | "ms:startPage"            | Supported                | 17763             |
 
 ### Locator Strategies
 | Locator Strategy                                                        | Status    | Available Release |
 |:------------------------------------------------------------------------|:----------|:------------------|
-| [CSS Selectors](https://www.w3.org/TR/webdriver/#css-selectors)         | Supported | Insiders          |
-| [Link Text](https://www.w3.org/TR/webdriver/#link-text)                 | Supported | Insiders          |
-| [Partial Link Text](https://www.w3.org/TR/webdriver/#partial-link-text) | Supported | Insiders          |
-| [Tag Name](https://www.w3.org/TR/webdriver/#tag-name)                   | Supported | Insiders          |
-| [XPath](https://www.w3.org/TR/webdriver/#xpath)                         | Supported | Insiders          |
+| [CSS Selectors](https://www.w3.org/TR/webdriver/#css-selectors)         | Supported | 17763             |
+| [Link Text](https://www.w3.org/TR/webdriver/#link-text)                 | Supported | 17763             |
+| [Partial Link Text](https://www.w3.org/TR/webdriver/#partial-link-text) | Supported | 17763             |
+| [Tag Name](https://www.w3.org/TR/webdriver/#tag-name)                   | Supported | 17763             |
+| [XPath](https://www.w3.org/TR/webdriver/#xpath)                         | Supported | 17763             |
 
 ### Commands
 | HTTP Method | URI Template                                                   | Command                                                                                   | Status             | Available Release |
 |:------------|:---------------------------------------------------------------|:------------------------------------------------------------------------------------------|:-------------------|:----------------  |
-| POST        | /session                                                       | [New Session](https://www.w3.org/TR/webdriver/#new-session)                               | Supported          | Insiders          |
-| DELETE      | /session/{session id}                                          | [Delete Session](https://www.w3.org/TR/webdriver/#delete-session)                         | Supported          | Insiders          |
-| GET         | /status                                                        | [Status](https://www.w3.org/TR/webdriver/#status)                                         | Supported          | Insiders          |
-| GET         | /session/{session id}/timeouts                                 | [Get Timeouts](https://www.w3.org/TR/webdriver/#get-timeouts)                             | Supported          | Insiders          |
-| POST        | /session/{session id}/timeouts                                 | [Set Timeouts](https://www.w3.org/TR/webdriver/#set-timeouts)                             | Supported          | Insiders          |
-| POST        | /session/{session id}/url                                      | [Navigate To](https://www.w3.org/TR/webdriver/#navigate-to)                               | Supported          | Insiders          |
-| GET         | /session/{session id}/url                                      | [Get Current URL](https://www.w3.org/TR/webdriver/#get-current-url)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/back                                     | [Back](https://www.w3.org/TR/webdriver/#back)                                             | Supported          | Insiders          |
-| POST        | /session/{session id}/forward                                  | [Forward](https://www.w3.org/TR/webdriver/#forward)                                       | Supported          | Insiders          |
-| POST        | /session/{session id}/refresh                                  | [Refresh](https://www.w3.org/TR/webdriver/#refresh)                                       | Supported          | Insiders          |
-| GET         | /session/{session id}/title                                    | [Get Title](https://www.w3.org/TR/webdriver/#get-title)                                   | Supported          | Insiders          |
-| GET         | /session/{session id}/window                                   | [Get Window Handle](https://www.w3.org/TR/webdriver/#get-window-handle)                   | Supported          | Insiders          |
-| DELETE      | /session/{session id}/window                                   | [Close Window](https://www.w3.org/TR/webdriver/#close-window)                             | Supported          | Insiders          |
-| POST        | /session/{session id}/window                                   | [Switch to Window](https://www.w3.org/TR/webdriver/#switch-to-window)                     | Supported          | Insiders          |
-| GET         | /session/{session id}/window/handles                           | [Get Window Handles](https://www.w3.org/TR/webdriver/#get-window-handles)                 | Supported          | Insiders          |
-| POST        | /session/{session id}/frame                                    | [Switch To Frame](https://www.w3.org/TR/webdriver/#switch-to-frame)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/frame/parent                             | [Switch to Parent Frame](https://www.w3.org/TR/webdriver/#switch-to-parent-frame)         | Supported          | Insiders          |
-| GET         | /session/{session id}/window/rect                              | [Get Window Rect](https://www.w3.org/TR/webdriver/#get-window-rect)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/window/rect                              | [Set Window Rect](https://www.w3.org/TR/webdriver/#set-window-rect)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/window/maximize                          | [Maximize Window](https://www.w3.org/TR/webdriver/#maximize-window)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/window/minimize                          | [Minimize Window](https://www.w3.org/TR/webdriver/#minimize-window)                       | Not&nbsp;Supported | N/A               |
+| POST        | /session                                                       | [New Session](https://www.w3.org/TR/webdriver/#new-session)                               | Supported          | 17763             |
+| DELETE      | /session/{session id}                                          | [Delete Session](https://www.w3.org/TR/webdriver/#delete-session)                         | Supported          | 17763             |
+| GET         | /status                                                        | [Status](https://www.w3.org/TR/webdriver/#status)                                         | Supported          | 17763             |
+| GET         | /session/{session id}/timeouts                                 | [Get Timeouts](https://www.w3.org/TR/webdriver/#get-timeouts)                             | Supported          | 17763             |
+| POST        | /session/{session id}/timeouts                                 | [Set Timeouts](https://www.w3.org/TR/webdriver/#set-timeouts)                             | Supported          | 17763             |
+| POST        | /session/{session id}/url                                      | [Navigate To](https://www.w3.org/TR/webdriver/#navigate-to)                               | Supported          | 17763             |
+| GET         | /session/{session id}/url                                      | [Get Current URL](https://www.w3.org/TR/webdriver/#get-current-url)                       | Supported          | 17763             |
+| POST        | /session/{session id}/back                                     | [Back](https://www.w3.org/TR/webdriver/#back)                                             | Supported          | 17763             |
+| POST        | /session/{session id}/forward                                  | [Forward](https://www.w3.org/TR/webdriver/#forward)                                       | Supported          | 17763             |
+| POST        | /session/{session id}/refresh                                  | [Refresh](https://www.w3.org/TR/webdriver/#refresh)                                       | Supported          | 17763             |
+| GET         | /session/{session id}/title                                    | [Get Title](https://www.w3.org/TR/webdriver/#get-title)                                   | Supported          | 17763             |
+| GET         | /session/{session id}/window                                   | [Get Window Handle](https://www.w3.org/TR/webdriver/#get-window-handle)                   | Supported          | 17763             |
+| DELETE      | /session/{session id}/window                                   | [Close Window](https://www.w3.org/TR/webdriver/#close-window)                             | Supported          | 17763             |
+| POST        | /session/{session id}/window                                   | [Switch to Window](https://www.w3.org/TR/webdriver/#switch-to-window)                     | Supported          | 17763             |
+| GET         | /session/{session id}/window/handles                           | [Get Window Handles](https://www.w3.org/TR/webdriver/#get-window-handles)                 | Supported          | 17763             |
+| POST        | /session/{session id}/frame                                    | [Switch To Frame](https://www.w3.org/TR/webdriver/#switch-to-frame)                       | Supported          | 17763             |
+| POST        | /session/{session id}/frame/parent                             | [Switch to Parent Frame](https://www.w3.org/TR/webdriver/#switch-to-parent-frame)         | Supported          | 17763             |
+| GET         | /session/{session id}/window/rect                              | [Get Window Rect](https://www.w3.org/TR/webdriver/#get-window-rect)                       | Supported          | 17763             |
+| POST        | /session/{session id}/window/rect                              | [Set Window Rect](https://www.w3.org/TR/webdriver/#set-window-rect)                       | Supported          | 17763             |
+| POST        | /session/{session id}/window/maximize                          | [Maximize Window](https://www.w3.org/TR/webdriver/#maximize-window)                       | Supported          | 17763             |
+| POST        | /session/{session id}/window/minimize                          | [Minimize Window](https://www.w3.org/TR/webdriver/#minimize-window)                       | Supported          | 17763             |
 | POST        | /session/{session id}/window/fullscreen                        | [Fullscreen Window](https://www.w3.org/TR/webdriver/#fullscreen-window)                   | Not&nbsp;Supported | N/A               |
-| GET         | /session/{session id}/element/active                           | [Get Active Element](https://www.w3.org/TR/webdriver/#get-active-element)                 | Supported          | Insiders          |
-| POST        | /session/{session id}/element                                  | [Find Element](https://www.w3.org/TR/webdriver/#find-element)                             | Supported          | Insiders          |
-| POST        | /session/{session id}/elements                                 | [Find Elements](https://www.w3.org/TR/webdriver/#find-elements)                           | Supported          | Insiders          |
-| POST        | /session/{session id}/element/{element id}/element             | [Find Element From Element](https://www.w3.org/TR/webdriver/#find-element-from-element)   | Supported          | Insiders          |
-| POST        | /session/{session id}/element/{element id}/elements            | [Find Elements From Element](https://www.w3.org/TR/webdriver/#find-elements-from-element) | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/selected            | [Is Element Selected](https://www.w3.org/TR/webdriver/#is-element-selected)               | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/attribute/{name}    | [Get Element Attribute](https://www.w3.org/TR/webdriver/#get-element-attribute)           | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/property/{name}     | [Get Element Property](https://www.w3.org/TR/webdriver/#get-element-property)             | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/css/{property name} | [Get Element CSS Value](https://www.w3.org/TR/webdriver/#get-element-css-value)           | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/text                | [Get Element Text](https://www.w3.org/TR/webdriver/#get-element-text)                     | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/name                | [Get Element Tag Name](https://www.w3.org/TR/webdriver/#get-element-tag-name)             | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/rect                | [Get Element Rect](https://www.w3.org/TR/webdriver/#get-element-rect)                     | Supported          | Insiders          |
-| GET         | /session/{session id}/element/{element id}/enabled             | [Is Element Enabled](https://www.w3.org/TR/webdriver/#is-element-enabled)                 | Supported          | Insiders          |
-| POST        | /session/{session id}/element/{element id}/click               | [Element Click](https://www.w3.org/TR/webdriver/#element-click)                           | Supported          | Insiders          |
-| POST        | /session/{session id}/element/{element id}/clear               | [Element Clear](https://www.w3.org/TR/webdriver/#element-clear)                           | Supported          | Insiders          |
-| POST        | /session/{session id}/element/{element id}/sendKeys            | [Element Send Keys](https://www.w3.org/TR/webdriver/#element-send-keys)                   | Supported          | Insiders          |
-| GET         | /session/{session id}/source                                   | [Get Page Source](https://www.w3.org/TR/webdriver/#get-page-source)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/execute/sync                             | [Execute Script](https://www.w3.org/TR/webdriver/#execute-script)                         | Supported          | Insiders          |
-| POST        | /session/{session id}/execute/async                            | [Execute Async Script](https://www.w3.org/TR/webdriver/#execute-async-script)             | Supported          | Insiders          |
-| GET         | /session/{session id}/cookie                                   | [Get All Cookies](https://www.w3.org/TR/webdriver/#get-all-cookies)                       | Supported          | Insiders          |
-| GET         | /session/{session id}/cookie/{name}                            | [Get Named Cookie](https://www.w3.org/TR/webdriver/#get-named-cookie)                     | Supported          | Insiders          |
-| POST        | /session/{session id}/cookie                                   | [Add Cookie](https://www.w3.org/TR/webdriver/#add-cookie)                                 | Supported          | Insiders          |
-| DELETE      | /session/{session id}/cookie/{name}                            | [Delete Cookie](https://www.w3.org/TR/webdriver/#delete-cookie)                           | Supported          | Insiders          |
-| DELETE      | /session/{session id}/cookie                                   | [Delete All Cookies](https://www.w3.org/TR/webdriver/#delete-all-cookies)                 | Supported          | Insiders          |
-| POST        | /session/{session id}/actions                                  | [Perform Actions](https://www.w3.org/TR/webdriver/#perform-actions)                       | Supported          | Insiders          |
-| DELETE      | /session/{session id}/actions                                  | [Release Actions](https://www.w3.org/TR/webdriver/#release-actions)                       | Supported          | Insiders          |
-| POST        | /session/{session id}/alert/dismiss                            | [Dismiss Alert](https://www.w3.org/TR/webdriver/#dismiss-alert)                           | Supported          | Insiders          |
-| POST        | /session/{session id}/alert/accept                             | [Accept Alert](https://www.w3.org/TR/webdriver/#accept-alert)                             | Supported          | Insiders          |
-| GET         | /session/{session id}/alert/text                               | [Get Alert Text](https://www.w3.org/TR/webdriver/#get-alert-text)                         | Supported          | Insiders          |
-| POST        | /session/{session id}/alert/text                               | [Send Alert Text](https://www.w3.org/TR/webdriver/#send-alert-text)                       | Supported          | Insiders          |
-| GET         | /session/{session id}/screenshot                               | [Take Screenshot](https://www.w3.org/TR/webdriver/#take-screenshot)                       | Supported          | Insiders          |
-| GET         | /session/{session id}/screenshot/{element id}                  | [Take Element Screenshot](https://www.w3.org/TR/webdriver/#take-element-screenshot)       | Supported          | Insiders          |
+| GET         | /session/{session id}/element/active                           | [Get Active Element](https://www.w3.org/TR/webdriver/#get-active-element)                 | Supported          | 17763             |
+| POST        | /session/{session id}/element                                  | [Find Element](https://www.w3.org/TR/webdriver/#find-element)                             | Supported          | 17763             |
+| POST        | /session/{session id}/elements                                 | [Find Elements](https://www.w3.org/TR/webdriver/#find-elements)                           | Supported          | 17763             |
+| POST        | /session/{session id}/element/{element id}/element             | [Find Element From Element](https://www.w3.org/TR/webdriver/#find-element-from-element)   | Supported          | 17763             |
+| POST        | /session/{session id}/element/{element id}/elements            | [Find Elements From Element](https://www.w3.org/TR/webdriver/#find-elements-from-element) | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/selected            | [Is Element Selected](https://www.w3.org/TR/webdriver/#is-element-selected)               | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/attribute/{name}    | [Get Element Attribute](https://www.w3.org/TR/webdriver/#get-element-attribute)           | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/property/{name}     | [Get Element Property](https://www.w3.org/TR/webdriver/#get-element-property)             | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/css/{property name} | [Get Element CSS Value](https://www.w3.org/TR/webdriver/#get-element-css-value)           | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/text                | [Get Element Text](https://www.w3.org/TR/webdriver/#get-element-text)                     | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/name                | [Get Element Tag Name](https://www.w3.org/TR/webdriver/#get-element-tag-name)             | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/rect                | [Get Element Rect](https://www.w3.org/TR/webdriver/#get-element-rect)                     | Supported          | 17763             |
+| GET         | /session/{session id}/element/{element id}/enabled             | [Is Element Enabled](https://www.w3.org/TR/webdriver/#is-element-enabled)                 | Supported          | 17763             |
+| POST        | /session/{session id}/element/{element id}/click               | [Element Click](https://www.w3.org/TR/webdriver/#element-click)                           | Supported          | 17763             |
+| POST        | /session/{session id}/element/{element id}/clear               | [Element Clear](https://www.w3.org/TR/webdriver/#element-clear)                           | Supported          | 17763             |
+| POST        | /session/{session id}/element/{element id}/sendKeys            | [Element Send Keys](https://www.w3.org/TR/webdriver/#element-send-keys)                   | Supported          | 17763             |
+| GET         | /session/{session id}/source                                   | [Get Page Source](https://www.w3.org/TR/webdriver/#get-page-source)                       | Supported          | 17763             |
+| POST        | /session/{session id}/execute/sync                             | [Execute Script](https://www.w3.org/TR/webdriver/#execute-script)                         | Supported          | 17763             |
+| POST        | /session/{session id}/execute/async                            | [Execute Async Script](https://www.w3.org/TR/webdriver/#execute-async-script)             | Supported          | 17763             |
+| GET         | /session/{session id}/cookie                                   | [Get All Cookies](https://www.w3.org/TR/webdriver/#get-all-cookies)                       | Supported          | 17763             |
+| GET         | /session/{session id}/cookie/{name}                            | [Get Named Cookie](https://www.w3.org/TR/webdriver/#get-named-cookie)                     | Supported          | 17763             |
+| POST        | /session/{session id}/cookie                                   | [Add Cookie](https://www.w3.org/TR/webdriver/#add-cookie)                                 | Supported          | 17763             |
+| DELETE      | /session/{session id}/cookie/{name}                            | [Delete Cookie](https://www.w3.org/TR/webdriver/#delete-cookie)                           | Supported          | 17763             |
+| DELETE      | /session/{session id}/cookie                                   | [Delete All Cookies](https://www.w3.org/TR/webdriver/#delete-all-cookies)                 | Supported          | 17763             |
+| POST        | /session/{session id}/actions                                  | [Perform Actions](https://www.w3.org/TR/webdriver/#perform-actions)                       | Supported          | 17763             |
+| DELETE      | /session/{session id}/actions                                  | [Release Actions](https://www.w3.org/TR/webdriver/#release-actions)                       | Supported          | 17763             |
+| POST        | /session/{session id}/alert/dismiss                            | [Dismiss Alert](https://www.w3.org/TR/webdriver/#dismiss-alert)                           | Supported          | 17763             |
+| POST        | /session/{session id}/alert/accept                             | [Accept Alert](https://www.w3.org/TR/webdriver/#accept-alert)                             | Supported          | 17763             |
+| GET         | /session/{session id}/alert/text                               | [Get Alert Text](https://www.w3.org/TR/webdriver/#get-alert-text)                         | Supported          | 17763             |
+| POST        | /session/{session id}/alert/text                               | [Send Alert Text](https://www.w3.org/TR/webdriver/#send-alert-text)                       | Supported          | 17763             |
+| GET         | /session/{session id}/screenshot                               | [Take Screenshot](https://www.w3.org/TR/webdriver/#take-screenshot)                       | Supported          | 17763             |
+| GET         | /session/{session id}/screenshot/{element id}                  | [Take Element Screenshot](https://www.w3.org/TR/webdriver/#take-element-screenshot)       | Supported          | 17763             |
 
 ## JSON Wire Protocol
 The support on a per command basis for the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol).
