@@ -97,6 +97,7 @@
 ## [Progressive Web Apps](progressive-web-apps.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
+#### [PWAs for Xbox](progressive-web-apps/xbox-considerations.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
 ## [WebDriver](webdriver.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
