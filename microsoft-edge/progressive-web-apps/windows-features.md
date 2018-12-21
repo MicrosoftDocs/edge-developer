@@ -40,12 +40,7 @@ Let's set up our Windows app development environment in Visual Studio.
 
 1. Launch *Visual Studio* and **Create new project...**
 
-2. Under the *JavaScript* > *Windows Universal* category, select:
-
-    - **Hosted Web App (Universal Windows)** if you're using a release version of Visual Studio, or
-    - **Progressive Web App (Universal Windows)** if you're using a *Visual Studio Preview* build
-
-    (The underlying project template is the same.)
+2. Under the *JavaScript* > *Windows Universal* category, select **Windows Application Packaging Project**. If you're using a previous version of Visual Studio, you can find the equivalent template under *Hosted Web App (Universal Windows)* or *Progressive Web App (Universal Windows)*.
 
 3. Select the default Windows 10 *Target version* (most recent release) and *Minimum version* (build 10586 or higher) and click **OK**.
 
