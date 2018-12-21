@@ -17,7 +17,7 @@ Use the **Storage** panel to inspect and manage various locally cached data, inc
  - [Web storage](#local-and-session-storage-managers) (*Local* and *Session* storage) key/values pairs
  - [Indexed DB](#indexeddb-manager) structured data
  - [Cookies](#cookies-list) for the domain
- - [Cache](#.md) (request/response pairs) for service worker debugging
+ - [Cache](#cache-manager) (request/response pairs) for service worker debugging
 
 Expand any of those categories and click on a child entry to open its resource manager tab.
 

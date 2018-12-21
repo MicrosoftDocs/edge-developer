@@ -33,7 +33,7 @@ typedef void (CALLBACK *JsPromiseContinuationCallback)(
 ## Remarks  
  The host can specify a promise continuation callback in `JsSetPromiseContinuationCallback`. If a script creates a task to be run later, then the promise continuation callback will be called with the task and the task should be put in a FIFO queue, to be run when the current script is done executing.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 ## Requirements  
  jsrt.h  

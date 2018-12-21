@@ -41,7 +41,7 @@ STDAPI_(JsErrorCode) JsSetProjectionEnqueueCallback(
   
  The call should be coming from a different COM apartment or from a different thread in the same MTA.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 > [!CAUTION]
 >  PInvoke is not currently supported for this API.  

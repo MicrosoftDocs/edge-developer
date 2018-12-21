@@ -23,7 +23,7 @@ Code Prefix | Area | Description
 [HTML1400-1532](#html5-parser-warnings) | HTML5 parsing | Validation warnings thrown by the HTML5 parser. 
 [HTTP](#http-codes) | Server errors and status | Codes returned from remote servers in response to HTTP requests.
 [SCRIPT10xx](#javascript-syntax-errors) | JavaScript syntax errors | Occur when the structure of one of your JavaScript statements violates one or more of the syntactic rules. 
-[SCRIPT50xx](#javascript-runtime-errors) | JavaScript runtime errors | Occur when your script attempts to perform an action that the system cannot execute. 
+[SCRIPT50xx](#javascript-run-time-errors) | JavaScript runtime errors | Occur when your script attempts to perform an action that the system cannot execute. 
 [SEC71xx](#security-codes) | Security | Reflect security conditions that Microsoft Edge enforces, such as *Mixed Content* and *Tracking Protection*.
 [SVG560x](#svg-codes) | Scalable Vector Graphics |  doesn't currently support extensive SVG debugging, but some console messages are provided for debugging purposes.
 WebGL11_xxx | WebGL | Error messages from the WebGL context. See also [GLSL errors](https://msdn.microsoft.com/library/dn611835.aspx).

@@ -38,7 +38,7 @@ EdgeHTML 17 now also supports the `Tabs.reload()` method as part of the standard
 For more details on extensions updates in this release, head over to the blog post [New features for extensions in the Windows 10 April 2018 Update](https://blogs.windows.com/msedgedev/2018/05/24/new-extension-features-april-2018-update-notifications-inprivate/).
 
 ### DevTools
-This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Edge, and previewing as a standalone [Windows 10 app](../../devtools-guide/whats-new/edgehtml-17.md#microsoft-edge-devtools-app-preview) from the Microsoft Store!
+This release of the DevTools ships in two ways: as the traditional in-browser (`F12`) tools for Microsoft Edge, and previewing as a standalone [Windows 10 app](../../devtools-guide/whats-new/edgehtml-17.md#microsoft-edge-devtools-app-preview) from the Microsoft Store!
 
 ![Microsoft Edge DevTools app](../../devtools-protocol/media/microsoft-edge-devtools.png) 
 

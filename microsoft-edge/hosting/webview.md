@@ -39,26 +39,26 @@ if (MSHTMLWebViewElement) {
 
 Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
 
- - Load pages and resources from your [ApplicationData](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](https://docs.microsoft.com/en-us/microsoft-edge/webview#buildlocalstreamuri) (*ms-local-stream:///*)
+ - Load pages and resources from your [ApplicationData](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview#buildlocalstreamuri) (*ms-local-stream:///*)
 
- - Provide browser-like controls: for going [back](https://docs.microsoft.com/en-us/microsoft-edge/webview#goback) and [forward](https://docs.microsoft.com/en-us/microsoft-edge/webview#goforward) in navigation history, and [stopping](https://docs.microsoft.com/en-us/microsoft-edge/webview#stop) or [refreshing](https://docs.microsoft.com/en-us/microsoft-edge/webview#refresh) the current page. 
+ - Provide browser-like controls: for going [back](#goback) and [forward](#goforward) in navigation history, and [stopping](#stop) or [refreshing](#refresh) the current page. 
 
- - [Capture screenshots of web content](https://docs.microsoft.com/en-us/microsoft-edge/webview#capturepreviewtoblobasync) making it easy to implement the Windows 10 app [Share](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/share-data) contract.
+ - [Capture screenshots of web content](#capturepreviewtoblobasync) making it easy to implement the Windows 10 app [Share](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/share-data) contract.
 
- - Allow JavaScript code running within a webview to raise custom events ([MSWebViewScriptNotify](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewscriptnotify)) to your app, and allow your app to run JavaScript within the webview ([invokeScriptAsync](https://docs.microsoft.com/en-us/microsoft-edge/webview#invokescriptasync)).
+ - Allow JavaScript code running within a webview to raise custom events ([MSWebViewScriptNotify](#mswebviewscriptnotify)) to your app, and allow your app to run JavaScript within the webview ([invokeScriptAsync](#invokescriptasync)).
 
  - Provide you with fine-tuned webview content events:
     
     WebView DOM event | Description
     --------- | ------
-    [MSWebViewNavigationStarting](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewnavigationstarting) | Indicates the WebView is starting to navigate
-    [MSWebViewContentLoading](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewcontentloading) | The HTML content is downloaded and is being loaded into the control
-    [MSWebViewDOMContentLoaded](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewdomcontentloaded) | Indicates that the main DOM elements have finished loading
-    [MSWebViewNavigationCompleted](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewnavigationcompleted) | Indicates the navigation is complete, and all media elements are rendered
-    [MSWebViewUnviewableContentIdentified](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewunviewablecontentidentified) | The WebView found the content was not HTML
-    [UnsafeContentWarningDisplaying](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewunsafecontentwarningdisplaying) | The WebView shows a warning page for content that was reported as unsafe by Windows *SmartScreen Filter*.
+    [MSWebViewNavigationStarting](#mswebviewnavigationstarting) | Indicates the WebView is starting to navigate
+    [MSWebViewContentLoading](#mswebviewcontentloading) | The HTML content is downloaded and is being loaded into the control
+    [MSWebViewDOMContentLoaded](#mswebviewdomcontentloaded) | Indicates that the main DOM elements have finished loading
+    [MSWebViewNavigationCompleted](#mswebviewnavigationcompleted) | Indicates the navigation is complete, and all media elements are rendered
+    [MSWebViewUnviewableContentIdentified](#mswebviewunviewablecontentidentified) | The WebView found the content was not HTML
+    [UnsafeContentWarningDisplaying](#mswebviewunsafecontentwarningdisplaying) | The WebView shows a warning page for content that was reported as unsafe by Windows *SmartScreen Filter*.
 
-    ...including corresponding [events](https://docs.microsoft.com/en-us/microsoft-edge/webview#events) for iframe content loaded within a WebView (such as [MSWebView**Frame**NavigationStarting](https://docs.microsoft.com/en-us/microsoft-edge/webview#mswebviewframenavigationstarting) and so on.)
+    ...including corresponding [events](#events) for iframe content loaded within a WebView (such as [MSWebView**Frame**NavigationStarting](#mswebviewframenavigationstarting) and so on.)
 
 ### Printing
 

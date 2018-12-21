@@ -58,7 +58,7 @@ Here's how to use *PWA Builder* to generate an app package for upload to the Win
 
 2. Reserve your app name for the Microsoft Store by logging into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview) with your account info and following the steps to [create your app by reserving a name](https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name). Each reserved name must be unique throughout the Microsoft Store.
 
-3. When you upload your app's packages, the *DisplayName*, *Name*, *Publisher*, and *PublisherDisplayName* values in your *.appxmanifest* file must match the values assigned to your app in the Windows Dev Center dashboard [upon reserving its name](#2-reserve-your-app-name-for-the-microsoft-store). 
+3. When you upload your app's packages, the *DisplayName*, *Name*, *Publisher*, and *PublisherDisplayName* values in your *.appxmanifest* file must match the values assigned to your app in the Windows Dev Center dashboard upon reserving its name. 
 
     Log into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview), and locate your app identity values under **App management** > **App identity**:
 

@@ -6,7 +6,7 @@ ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "javascript"
+  - "windows-integration"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d

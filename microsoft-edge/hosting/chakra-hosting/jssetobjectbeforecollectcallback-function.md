@@ -43,7 +43,7 @@ STDAPI_(JsErrorCode) JsSetObjectBeforeCollectCallback(
 ## Remarks  
  The callback is invoked on the current runtime execution thread, therefore execution is blocked until the callback completes.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 ## Requirements  
  **Header:** jsrt.h  

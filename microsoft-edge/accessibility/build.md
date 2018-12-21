@@ -48,7 +48,7 @@ States do not change the nature of the object, but represent information associa
 <div role="checkbox" aria-checked="false">Accept</div>
 ```
 
-Go to [The Roles Model](https://www.w3.org/TR/wai-aria/roles) by the W3C to see a full list of roles, properties, and states.
+Go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1/#roles) by the W3C to see a full list of roles, properties, and states.
 
 For more information on ARIA, see the ARIA in the [Resources](#resources) section.
 

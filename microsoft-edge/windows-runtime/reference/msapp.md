@@ -21,7 +21,7 @@ var result = MSApp.method;
 
 | | |
 | :--- | :--- |
-| [**Methods**](#msapp_methods) | [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage](#createdatapackage), [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getViewId](#getviewid), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp). |
+| [**Methods**](#msapp-methods) | [clearTemporaryWebDataAsync](#cleartemporarywebdataasync), [createBlobFromRandomAccessSream](#createblobfromrandomaccessstream), [createDataPackage](#createdatapackage), [createDataPackageFromSelection](#createdatapackagefromselection), [createFileFromStorageFile](#createfilefromstoragefile), [createStreamFromInputStream](#createstreamfrominputstream), [execAsyncAtPriority](#execasyncatpriority), [execAtPriority](#execatpriority), [getCurrentPriority](#getcurrentpriority), [getHtmlPrintDocumentSource](#gethtmlprintdocumentsource),[getHtmlPrintDocumentSourceAsynce](#gethtmlprintdocumentsourceasync), [getViewId](#getviewid), [isTaskScheduledAtPriorityOrHigher](#istaskscheduledatpriorityorhigher), [pageHandlesAllApplicationActivations](#pagehandlesallapplicationactivations), [suppressSubdownloadCredentialPrompts](#suppresssubdownloadcredentialprompts), [terminateApp](#terminateapp). |
 
 | | |
 | :--- | :--- |
@@ -29,7 +29,7 @@ var result = MSApp.method;
 
 | | |
 | :--- | :--- |
-| [MSAppAsyncOperation](#msappasyncoperation) | [start](#start) |
+| [**MSAppAsyncOperation** interface](#msappasyncoperation) | [start](#start) |
 
 ## MSApp Methods
 
@@ -241,7 +241,7 @@ var retval = MSApp.execAtPriority(synchronousCallback, priority, args);
 
 |Type | Description |
 |:---- |:--- |
-|DOMString | The specified priority value to which the current contextual priority value will be set when running the `synchronousCallback` callback function. See [MSApp Constants](#msapp_constants).
+|DOMString | The specified priority value to which the current contextual priority value will be set when running the `synchronousCallback` callback function. See [MSApp Constants](#msapp-constants).
 
 `args` [in]
 
@@ -448,7 +448,7 @@ var retval = MSApp.isTaskScheduledAtPriorityOrHigher(priority);
 
 |Type | Description |
 |:---- |:--- |
-|DOMString | A priority value (see [MSApp Constants](#msapp_constants)) specifying the priority level and above to query for any outstanding queued work.
+|DOMString | A priority value (see [MSApp Constants](#msapp-constants)) specifying the priority level and above to query for any outstanding queued work.
 
 #### Return value
 |Type | Description |

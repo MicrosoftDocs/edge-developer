@@ -36,7 +36,7 @@ STDAPI_(JsErrorCode)
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 > [!NOTE]
 >  WinRT was the platform name before Universal Windows Platform (UWP).  

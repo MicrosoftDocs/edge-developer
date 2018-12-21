@@ -46,7 +46,7 @@ The **Microsoft Edge DevTools** are [now available](./devtools-guide/whats-new.m
 
 ### Local debugging
 
-To debug a page locally, simply launch the *Microsoft Edge DevTools* app. The **Local** panel of the chooser will display all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs](./progressive-web-apps.md) (*WWAHost.exe* processes), and [webview](./webview.md) controls. Click on your desired target to attach and open a new tab instance of the DevTools.
+To debug a page locally, simply launch the *Microsoft Edge DevTools* app. The **Local** panel of the chooser will display all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs](./progressive-web-apps.md) (*WWAHost.exe* processes), and [webview](./hosting/webview.md) controls. Click on your desired target to attach and open a new tab instance of the DevTools.
 
 ![DevTools app Local panel](./devtools-guide/media/chooser_local.png)
 
