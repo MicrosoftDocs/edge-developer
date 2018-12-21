@@ -64,7 +64,7 @@ Let's set up our Windows app development environment in Visual Studio.
 
    You can also modify the **Display name** and **Description** as you like.
 
-5. [Save down this file]() (or another 512x512 image of your choosing) locally. 
+5. Save this file (or another 512x512 image of your choosing) to your desktop. 
 
     Then, in the manifest designer **Visual Assets** panel, click on the **Source** field **...** button, select it as your source file, and click **Generate**. (Then click **OK** to overrite the default placeholder images).
 
@@ -88,7 +88,7 @@ Let's set up our Windows app development environment in Visual Studio.
 
 Because a PWA is simply a progressively enhanced *hosted web app*, you can debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
 
-For client-side debugging within your Windows 10 app, you'll need the *Microsoft Edge DevTools Preview* app. This standalone app includes all the functionality of the original in-browser [Microsoft Edge DevTools](../devtools-guide.md) (including [PWA tools](../devtools-guide/debugger/progressive-web-apps.md)), plus basic [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) support and a [*Debug Target* chooser](../devtools-guide.md#microsoft-store-app) for attaching to *any* running instance of the EdgeHTML engine, including add-ins for *Office*, *Cortana*, app webviews, and of course, *PWAs running on Windows*.
+For client-side debugging within your Windows 10 app, you'll need the *Microsoft Edge DevTools Preview* app. This standalone app includes all the functionality of the original in-browser [Microsoft Edge DevTools](../devtools-guide.md) (including [PWA tools](../devtools-guide/service-workers.md)), plus basic [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) support and a [*Debug Target* chooser](../devtools-guide.md#microsoft-store-app) for attaching to *any* running instance of the EdgeHTML engine, including add-ins for *Office*, *Cortana*, app webviews, and of course, *PWAs running on Windows*.
 
 Here's how to set up debugging for your PWA.
 
