@@ -37,9 +37,9 @@ EdgeHTML 18 includes updates to the Chakra JavaScript engine to support new ES a
 
 ### CSS updates
 
-We've made further progress on our experimental [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) implementation (behind the *Enable CSS Masking* flag) with added support for [mask-composite](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite), [mask-position](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position), and [mask-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat). For site compatibility, Edge also supports the following *-webkit-* properties: -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
+We've made further progress on our experimental [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) implementation (behind the *Enable CSS Masking* flag) with added support for [mask-composite](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite), [mask-position](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position), and [mask-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat). For site compatibility, Microsoft Edge also supports the following *-webkit-* properties: -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
 
-Additionally, Edge now has support for [overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
+Additionally, Microsoft Edge now has support for [overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
 ) and partial support for [overscroll-behavior](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) (`auto` and `contain` values).
 
 

@@ -6,7 +6,7 @@ ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "javascript"
+  - "windows-integration"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 

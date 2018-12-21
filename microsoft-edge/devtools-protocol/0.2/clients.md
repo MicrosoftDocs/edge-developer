@@ -68,7 +68,7 @@ To get started:
 
 2. Restart VS Code, open the folder containing the project you wish to debug and set breakpoints in your code.
 
-3. Configure an Edge [launch task](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) to open the desired page of your project: **Debug** > **Add Configuration...**. For example:
+3. Configure a localhost [launch task](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) to open the desired page of your project: **Debug** > **Add Configuration...**. For example:
 
 ```
 {
@@ -88,15 +88,15 @@ To get started:
 
     [*Using the debugger*](https://github.com/Microsoft/vscode-edge-debug2#using-the-debugger) has more on launch configuration settings. 
 
-4. Start your server on localhost and press the **Start Debugging** (play) button or `F5` to launch Edge. When a breakpoint is hit, you'll break into VS Code and can further inspect and step through code from there.
+4. Start your server on localhost and press the **Start Debugging** (play) button or `F5` to launch Microsoft Edge. When a breakpoint is hit, you'll break into VS Code and can further inspect and step through code from there.
 
 For more, check out the [VS Code - Debugger for Microsoft Edge](https://github.com/Microsoft/vscode-edge-debug2#----vs-code---debugger-for-microsoft-edge--) documentation.
 
 ## Microsoft Visual Studio
 
-Using the latest [**Visual Studio**](https://www.visualstudio.com) version (Visual Studio 15.8 or later) running on [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763), you can launch and debug Edge from the IDE on any ASP.NET or .NET Core project.
+Using the latest [**Visual Studio**](https://www.visualstudio.com) version (Visual Studio 15.8 or later) running on [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763), you can launch and debug Microsoft Edge from the IDE on any ASP.NET or .NET Core project.
 
-Here's how to set up Edge debugging with Visual Studio:
+Here's how to set up Microsoft Edge debugging with Visual Studio:
 
 1.  Install and launch the latest [**Visual Studio**](https://www.visualstudio.com/) (Visual Studio 15.8 or later).
 

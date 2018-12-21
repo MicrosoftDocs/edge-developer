@@ -30,7 +30,7 @@ typedef void (CALLBACK *JsProjectionCallback)(
  Requires calling `JsSetProjectionEnqueueCallback` to receive callbacks.  
   
 ## Remarks  
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 ## Requirements  
  jsrt.h  

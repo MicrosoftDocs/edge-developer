@@ -34,7 +34,7 @@ typedef void (CALLBACK *JsObjectBeforeCollectCallback)(
  The state passed to `JsSetObjectBeforeCollectCallback`.  
   
 ## Remarks  
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 ## Requirements  
  jsrt.h  

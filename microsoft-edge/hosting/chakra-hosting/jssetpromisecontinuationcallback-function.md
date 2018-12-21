@@ -39,7 +39,7 @@ STDAPI_(JsErrorCode) JsSetPromiseContinuationCallback(
 ## Remarks  
  Requires an active script context.  
   
- This API is supported only in Edge mode.  
+ This API is supported only in EdgeHTML mode.  
   
 ## Requirements  
  **Header:** jsrt.h  
