@@ -2,8 +2,8 @@
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: Walk through how best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
 title: Accessibility - Build
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge

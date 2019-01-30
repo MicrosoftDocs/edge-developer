@@ -2,8 +2,8 @@
 ms.assetid: 8b7f362f-da09-43db-8a42-cfa128c1808c
 description: Get the answers to common questions you may have while loading unpacked extensions.
 title: Extensions - Troubleshooting
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

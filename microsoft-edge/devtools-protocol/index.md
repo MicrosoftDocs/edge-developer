@@ -1,8 +1,8 @@
 ---
 description: Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge browser.
 title: Microsoft Edge DevTools Protocol
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 03/21/2018
 ms.topic: reference
 ms.prod: microsoft-edge

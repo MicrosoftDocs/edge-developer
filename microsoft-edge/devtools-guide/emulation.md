@@ -1,8 +1,8 @@
 ---
 description: Use the Emulation panel to test different browser profiles, screen sizes and resolutions, and GPS location coordinates
 title: DevTools - Emulation
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge

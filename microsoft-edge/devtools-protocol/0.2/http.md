@@ -1,8 +1,8 @@
 ---
 description: Microsoft Edge DevTools Protocol Version 0.2 supports the following HTTP endpoints.
 title: Microsoft Edge DevTools Protocol Version 0.2 HTTP Endpoints
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge

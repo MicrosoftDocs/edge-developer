@@ -1,8 +1,8 @@
 ---
 description: Use the Storage panel to inspect your web storage, IndexedDB, cookies, and request/response caches
 title: DevTools - Storage
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge

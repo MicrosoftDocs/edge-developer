@@ -1,8 +1,8 @@
 ---
 description: Use the Accessibility tools to view verify and test page accessibility
 title: DevTools - Elements - Accessibility
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: microsoft-edge

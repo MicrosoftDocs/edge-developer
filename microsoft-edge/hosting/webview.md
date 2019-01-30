@@ -1,8 +1,8 @@
 ---
 description: Host web content in your Windows 10 app with the Microsoft Edge WebView control
 title: Microsoft Edge WebView for Windows 10 apps
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/19/2018
 ms.topic: reference
 ms.prod: microsoft-edge

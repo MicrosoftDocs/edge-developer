@@ -4,8 +4,8 @@ description: Compare JavaScript support across Microsoft Edge, Microsoft Store a
 ms.date: https://docs.microsoft.com/en-us/scripting/2018
 ms.prod: microsoft-edge
 ms.topic: language-reference
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 keywords: edge, ie, chakra, jscript, wwa, store apps
 ms.custom: seodec18
 ---

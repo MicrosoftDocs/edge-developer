@@ -1,8 +1,8 @@
 ---
 description: Contains referrer information about the navigation
 title: NavigationEventWithReferrer object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 05/22/2018
 ms.topic: reference
 ms.prod: microsoft-edge

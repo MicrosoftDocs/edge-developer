@@ -1,8 +1,8 @@
 ---
 description: Use the Console command line to interact with a running page
 title: DevTools - Console - Command Line
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge

@@ -1,8 +1,8 @@
 ---
 description: Use the Network panel to monitor and profile page resource requests
 title: DevTools - Network
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: microsoft-edge

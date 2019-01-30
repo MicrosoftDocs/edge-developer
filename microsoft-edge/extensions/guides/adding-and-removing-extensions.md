@@ -1,8 +1,8 @@
 ---
 description: Learn how to add and remove extensions, as well as move an extension’s button next to the address bar.
 title: Adding and removing extensions
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 03/16/2017
 ms.topic: article
 ms.prod: microsoft-edge

@@ -1,8 +1,8 @@
 ---
 description: Ensure media content on your site behaves as intended
 title: Dev guide - Autoplay policies
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 9/17/2018
 ms.topic: article
 ms.prod: microsoft-edge

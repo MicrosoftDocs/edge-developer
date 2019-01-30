@@ -1,8 +1,8 @@
 ---
 description: Contains information about the completed webview navigation
 title: NavigationCompletedEvent object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 05/26/2018
 ms.topic: reference
 ms.prod: microsoft-edge

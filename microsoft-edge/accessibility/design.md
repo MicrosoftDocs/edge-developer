@@ -2,8 +2,8 @@
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 description: Read up on resources for inclusive design tools and best practices.
 title: Accessibility - Design
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/02/2017
 ms.topic: article
 ms.prod: microsoft-edge

@@ -2,8 +2,8 @@
 ms.assetid: 2ecc762c-11a5-4b16-9aed-22606c1d4994
 description: Learn how the Web Notifications API can be used to let websites send users notifications outside the context of the Microsoft Edge browser.
 title: Dev guide - Web Notifications API
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: microsoft-edge

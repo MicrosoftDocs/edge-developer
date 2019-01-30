@@ -3,8 +3,8 @@ ms.assetid: 3144faaf-1d0a-4c14-bdca-00c4dae7bf81
 layout: LandingPage
 description: Microsoft Edge information for developers, including PWAs, DevTools, extensions, webdriver, and more.
 title: Microsoft Edge developer documentation
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 04/30/2018
 ms.prod: microsoft-edge
 ms.topic: landing-page

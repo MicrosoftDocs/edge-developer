@@ -2,8 +2,8 @@
 ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
 title: Dev guide
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: microsoft-edge

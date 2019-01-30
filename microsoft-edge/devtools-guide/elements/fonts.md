@@ -1,8 +1,8 @@
 ---
 description: Use the Fonts pane to inspect fonts used on the page
 title: DevTools - Elements - Fonts
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge

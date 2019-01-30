@@ -1,8 +1,8 @@
 ---
 description: The dispatched object from a focus event containing the navigation reason and location
 title: FocusNavigationEvent object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge

@@ -1,8 +1,8 @@
 ---
 description: Represents a deferred request for user permission to access device functionality
 title: DeferredPermissionRequest object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/15/2018
 ms.topic: reference
 ms.prod: microsoft-edge

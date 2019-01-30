@@ -1,8 +1,8 @@
 ---
 description: Features added to the Microsoft Edge DevTools in the Windows 10 Fall Creators Update (EdgeHTML 16)
 title: DevTools in EdgeHTML 16
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-edge

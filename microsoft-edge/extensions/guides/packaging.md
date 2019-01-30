@@ -2,8 +2,8 @@
 ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
 description: Learn about how you can use native messaging to have your extension communicate with a companion UWP app.
 title: Extensions - Packaging
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

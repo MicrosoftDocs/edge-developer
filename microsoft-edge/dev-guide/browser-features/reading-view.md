@@ -2,8 +2,8 @@
 ms.assetid: 2bc29371-4f2e-4b59-a588-30b107d751f6
 description: See how Microsoft Edge provides a reading view for webpages to enable add-free reading.
 title: Dev guide - Reading view
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: microsoft-edge

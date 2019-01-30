@@ -2,8 +2,8 @@
 ms.assetid: 7a5f9fd0-90a9-43db-b271-178c06da5896
 description: Use F12 developer tools to analyze the general performance of websites.
 title: Performance analysis
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

@@ -2,8 +2,8 @@
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 description: Check out tools and testing procedures that help evaluate a website's accessibility.
 title: Accessibility - Test
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: microsoft-edge
