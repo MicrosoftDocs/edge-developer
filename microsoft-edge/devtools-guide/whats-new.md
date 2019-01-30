@@ -1,8 +1,8 @@
 ---
 description: See what's new in the Microsoft Edge DevTools in the Windows 10 October 2018 Update
 title: What's new in the Microsoft Edge DevTools
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-edge

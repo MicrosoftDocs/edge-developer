@@ -1,8 +1,8 @@
 ---
 description: Use the Computed pane to understand how your CSS cascades and computes on page elements
 title: DevTools - Elements - Computed
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge

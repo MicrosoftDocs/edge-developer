@@ -2,8 +2,8 @@
 ms.assetid: e56172c0-b635-4c02-8e0c-56bf8cb4c164
 description: Use the WebDriver wire protocol to control web browser behavior for test automation
 title: Webdriver
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/12/2018
 ms.topic: article
 ms.prod: microsoft-edge

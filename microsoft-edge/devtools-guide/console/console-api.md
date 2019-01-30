@@ -1,8 +1,8 @@
 ---
 description: Use the Console API to programmatically debug and profile your code
 title: DevTools - Console - Console API
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 05/31/2018
 ms.topic: article
 ms.prod: microsoft-edge

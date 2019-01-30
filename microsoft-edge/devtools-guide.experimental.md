@@ -1,8 +1,8 @@
 ---
 description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 04/11/2018
 ms.topic: article
 ms.prod: microsoft-edge

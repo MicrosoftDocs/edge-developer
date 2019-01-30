@@ -1,8 +1,8 @@
 ---
 description: Progressive Web Apps run natively on Windows 10. Here's everything you need to know as a web developer.
 title: Progressive Web Apps on Windows
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/19/2018
 ms.topic: article
 ms.prod: microsoft-edge

@@ -2,8 +2,8 @@
 ms.assetid: 88825563-5f5d-421d-861b-7cec01277dec
 description: Learn how the Web Authentication API can be used to enable web applications to use Windows Hello biometrics for user authentication.
 title: Dev guide - Web authentication
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

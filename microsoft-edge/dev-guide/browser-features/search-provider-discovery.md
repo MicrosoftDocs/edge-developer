@@ -2,8 +2,8 @@
 ms.assetid: f74760f5-061c-494d-b096-9fb6ecb71a16
 description: If you are a search provider, see how to ensure that Microsoft Edge supports your service.
 title: Dev guide - Search provider discovery
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/18/2017
 ms.topic: article
 ms.prod: microsoft-edge

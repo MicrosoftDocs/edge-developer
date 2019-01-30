@@ -1,8 +1,8 @@
 ---
 description: Use the Styles pane to view and edit currently applied styles and pseudo elements
 title: DevTools - Elements - Styles
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge

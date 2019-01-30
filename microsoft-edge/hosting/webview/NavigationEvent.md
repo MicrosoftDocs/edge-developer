@@ -1,8 +1,8 @@
 ---
 description: Contains information about the webview navigation
 title: NavigationEvent object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/12/2018
 ms.topic: reference
 ms.prod: microsoft-edge

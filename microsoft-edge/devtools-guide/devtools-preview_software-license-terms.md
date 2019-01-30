@@ -1,7 +1,7 @@
 ---
 title: Microsoft Edge Developer Tools Preview - Software License Terms
 description: Microsoft Edge Developer Tools Preview - Software License Terms
-ms.author: edoyle
+ms.author: msedgedevrel
 ms.date: 02/02/2018
 ms.topic: landing-page
 ms.prod: microsoft-edge

@@ -1,8 +1,8 @@
 ---
 description: Represents a webview process.
 title: MSWebViewProcess object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 05/08/2018
 ms.topic: reference
 ms.prod: microsoft-edge

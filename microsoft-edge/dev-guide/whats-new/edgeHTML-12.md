@@ -1,8 +1,8 @@
 ---
 description: This page provides an overview of what's new in EdgeHTML 12.
 title: What's New in EdgeHTML 12
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 05/30/2017
 ms.topic: article
 ms.prod: microsoft-edge

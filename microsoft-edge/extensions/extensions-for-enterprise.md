@@ -2,8 +2,8 @@
 ms.assetid: 8e2f75c4-fb7f-4892-a6c2-23bac081581a
 description: Find out about the enterprise specific aspects of Microsoft Edge Extensions, and see how they're similar to UWP apps.
 title: Extensions for enterprise
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

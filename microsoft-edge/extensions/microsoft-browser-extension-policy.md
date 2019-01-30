@@ -3,8 +3,8 @@ redirect_url: https://docs.microsoft.com/en-us/legal/windows/agreements/microsof
 layout: LandingPage
 description: Read the legal policy describing supported mechanisms for extending or modifying the behavior or user experience of Microsoft Edge and Internet Explorer.
 title: Microsoft browser extension policy
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 02/08/2017
 ms.topic: article
 ms.prod: microsoft-edge

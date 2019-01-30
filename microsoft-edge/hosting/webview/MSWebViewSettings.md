@@ -1,8 +1,8 @@
 ---
 description: Defines properties that enable or disable webview features
 title: MSWebViewSettings object
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 04/10/2018
 ms.topic: reference
 ms.prod: microsoft-edge

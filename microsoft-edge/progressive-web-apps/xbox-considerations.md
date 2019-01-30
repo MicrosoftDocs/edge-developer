@@ -1,8 +1,8 @@
 ---
 description: Ensure your PWA provides a great experience for Xbox
 title: Tailor your PWA for Windows
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 12/20/2018
 ms.topic: article
 ms.prod: microsoft-edge

@@ -2,8 +2,8 @@
 ms.assetid: 4d3fa934-4fa8-4c02-b9b5-88506c76baac
 description: Guides for browser features in Microsoft Edge.
 title: Dev guide - Browser
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 11/28/2018
 ms.topic: article
 ms.prod: microsoft-edge

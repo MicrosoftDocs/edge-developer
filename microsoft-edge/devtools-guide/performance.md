@@ -1,8 +1,8 @@
 ---
 description: Use the Performance panel to analyze the responsivenes of your page during user interaction
 title: DevTools - Performance
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/26/2018
 ms.topic: article
 ms.prod: microsoft-edge

@@ -1,8 +1,8 @@
 ---
 description: Reach the world of Windows 10 customers by distributing your PWA through the Microsoft Store
 title: Progressive Web Apps in the Microsoft Store
-author: erikadoyle
-ms.author: edoyle
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-edge
