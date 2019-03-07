@@ -203,7 +203,7 @@ API | Known issues | Chrome incompatibilities
 [storage.local.set](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/set)  | | |
 [storage.local.clear](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/clear) | | |
 [storage.local.getBytesInUse](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/Storage/StorageArea/getBytesInUse) | | `storage.local` data is persisted in a different format than Chrome, causing a different value to be returned when calling `storage.local.getBytesInUse`.  <br/><br/>Ex: `storage.local.set({ "k": { "s": "âas" } }` returns 13 in Chrome and 50 in Microsoft Edge.|
-[storage.sync.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | | |
+[storage.sync.get](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/get) | If the combined amount of characters in the `name` and `author` manifest fields exceed 31 characters the `storage.sync` namespace may not function. | |
 [storage.sync.remove](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/remove) | | |
 [storage.sync.set](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/StorageArea/set) | | |
 [storage.onChanged](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/onChanged) | | |
