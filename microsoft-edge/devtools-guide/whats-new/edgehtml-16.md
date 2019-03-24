@@ -14,7 +14,7 @@ ms.custom: seodec18
 
 With this release we started a major DevTools refactoring effort for improved robustness and performance, and also added a bunch of new features you can start using today! 
 
-Here are the Microsoft Edge DevTools features that shipped with the [Windows 10 Fall Creators Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-16299) ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)).
+Here are the Microsoft Edge DevTools features that shipped with the [Windows 10 Fall Creators Update](https://docs.microsoft.com/windows/uwp/whats-new/windows-10-build-16299) ([EdgeHTML 16](https://aka.ms/devguide_edgehtml_16)).
 
 ## Ancestor event listeners 
 

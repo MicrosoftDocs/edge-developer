@@ -136,7 +136,7 @@ Microsoft Edge is the browser built for Windows 10, providing fast, safe, and pr
                         <h3>Resources</h3>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/changelog/">Changelog</a></p>
                         <p><a href="https://developer.microsoft.com/microsoft-edge/platform/status/">Platform feature status</a></p>
-                        <p><a href="https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/">Internet Explorer documentation archive</a></p>
+                        <p><a href="https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/">Internet Explorer documentation archive</a></p>
                         </div>
                     </div>
                 </div>

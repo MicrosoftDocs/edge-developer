@@ -16,7 +16,7 @@ To suggest a change to the docs, follow these steps:
 4. Modify the file and use the preview tab to ensure the changes look good.
 5. When you're done, commit your changes and open a pull request.
 
-After you create the pull request, a member of the Microsoft Edge web docs team will review. If your request is accepted, updates are published to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/en-us/microsoft-edge/).
+After you create the pull request, a member of the Microsoft Edge web docs team will review. If your request is accepted, updates are published to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/).
 
 ## Making more substantial changes
 
@@ -51,7 +51,7 @@ Once your PR is submitted, a member of the Microsoft Edge docs team will review.
 
 ## Working with Branches
 
-The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/en-us/microsoft-edge). 
+The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/microsoft-edge). 
 
 When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 

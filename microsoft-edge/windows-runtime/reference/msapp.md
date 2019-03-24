@@ -43,12 +43,12 @@ var retval = MSApp.clearTemporaryWebDataAsync(#);
 This method has no parameters.
 
 #### Return value
-Type: [`IAsyncAction`](https://docs.microsoft.com/en-us/uwp/api/windows.foundation.iasyncaction)
+Type: [`IAsyncAction`](https://docs.microsoft.com/uwp/api/windows.foundation.iasyncaction)
 
 Represents an asynchronous action.
 
 ### createBlobFromRandomAccessStream
-Creates a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) from an [`IRandomAccessStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) object. This method should be used when dealing with `IRandomAccessStream` objects in apps in order to create a W3C based object from the stream. Once the blob is created, it can be used with the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader), [URL APIs](https://developer.mozilla.org/en-US/docs/Web/API/URL), and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). 
+Creates a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) from an [`IRandomAccessStream`](https://docs.microsoft.com/uwp/api/Windows.Storage.Streams.IRandomAccessStream) object. This method should be used when dealing with `IRandomAccessStream` objects in apps in order to create a W3C based object from the stream. Once the blob is created, it can be used with the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader), [URL APIs](https://developer.mozilla.org/en-US/docs/Web/API/URL), and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). 
 
 ```javascript
 var retVal = MSApp.createBlobFromRandomAccessStream(type, stream); 
@@ -66,7 +66,7 @@ var retVal = MSApp.createBlobFromRandomAccessStream(type, stream);
 
 |Type | Description |
 |:---- |:--- |
-|Any | [IRandomAccessStream](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
+|Any | [IRandomAccessStream](https://docs.microsoft.com/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
 
 #### Return value
 |Type | Description |
@@ -79,7 +79,7 @@ var retVal = MSApp.createBlobFromRandomAccessStream(type, stream);
 |TypeMismatchError | The node type is incompatible with the expected parameter type. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
 
 #### Remarks
-Creates a Blob from Windows Runtime types via the MSApp namespace on the window object. This method will create a blob that is essentially a light wrapper over the [`RandomAccessStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) object provided to it. The blob owns the lifetime of this stream and the stream will be closed when the blob is destroyed. 
+Creates a Blob from Windows Runtime types via the MSApp namespace on the window object. This method will create a blob that is essentially a light wrapper over the [`RandomAccessStream`](https://docs.microsoft.com/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) object provided to it. The blob owns the lifetime of this stream and the stream will be closed when the blob is destroyed. 
 
 #### Example
 
@@ -111,7 +111,7 @@ var retVal = MSApp.createDataPackage(object);
 |Any | Contains the HTML markup for the specified range.
 
 #### Remarks
-This method supports only [Document Object Model (DOM) Range](https://developer.mozilla.org/en-US/docs/Web/API/Range), not [TextRange](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.documents.textrange). The returned data package for the specified range contains HTML markup in clipboard format.
+This method supports only [Document Object Model (DOM) Range](https://developer.mozilla.org/en-US/docs/Web/API/Range), not [TextRange](https://docs.microsoft.com/uwp/api/windows.ui.xaml.documents.textrange). The returned data package for the specified range contains HTML markup in clipboard format.
 
 There are no available properties for the returned data package.
 
@@ -136,7 +136,7 @@ The returned data package for the selection contains HTML markup in clipboard fo
 There are no available properties for the returned data package.
  
 ### createFileFromStorageFile 
-Converts a standard W3C [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) object to the [WinRT](https://docs.microsoft.com/en-us/uwp/api/) equivalent [`StorageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile).
+Converts a standard W3C [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) object to the [WinRT](https://docs.microsoft.com/uwp/api/) equivalent [`StorageFile`](https://docs.microsoft.com/uwp/api/windows.storage.storagefile).
 
 ```javascript
 var retVal = MSApp.createFileFromStorageFile(storageFile); 
@@ -173,7 +173,7 @@ var msStream = MSApp.createStreamFromInputStream("image/jpeg", inputStream);
 
 |Type | Description |
 |:---- |:--- |
-|Any | The [`IInputStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
+|Any | The [`IInputStream`](https://docs.microsoft.com/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
 
 #### Remarks
 This method takes a content-type, and the `IInputStream` reference. The method then verifies that the stream reference passed in is an instance of type `IInputStream` and if not, throws `DOMException TYPE_MISMATCH_ERR`. If no error occurs, `createStreamFromInputStream` creates an `MSStream` (from its inputs).
@@ -412,10 +412,10 @@ var retval = MSApp.getViewId(window);
 
 |Type | Description |
 |:---- |:--- |
-|Number | Can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
+|Number | Can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
 
 #### Remarks
-Use [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) and [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) for creating new windows, but then to interact with WinRT APIs, add the `MSApp.getViewId` API. It takes a `window` object as a parameter and returns a `viewId` number that can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
+Use [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) and [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) for creating new windows, but then to interact with WinRT APIs, add the `MSApp.getViewId` API. It takes a `window` object as a parameter and returns a `viewId` number that can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
 
 ##### Delaying Visibility 
 Views in WinRT normally start hidden and the end developer uses something like `TryShowAsStandaloneAsync` to display the view once it is fully prepared. In the web world, `window.open` shows a window immediately and the end user can watch as content is loaded and rendered. To have your new windows act like views in WinRT and not display immediately we have added a `window.open` option. For example:

@@ -17,8 +17,8 @@ Microsoft Edge extensions have a similar workflow when compared to other enterpr
 ## Prerequisites
 The following items are suggested to develop, package, and deploy a Microsoft Edge extension for enterprise:
 
-+ Windows Developer Portal account, to sign and release the extension to the enterprise private store. See [Opening a developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account) for more details.
-+ Microsoft Store for Business or Education, to distribute the application to the enterprise. See the [Microsoft Store for Business and Education documentation](https://docs.microsoft.com/en-us/microsoft-store/) for more details.
++ Windows Developer Portal account, to sign and release the extension to the enterprise private store. See [Opening a developer account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for more details.
++ Microsoft Store for Business or Education, to distribute the application to the enterprise. See the [Microsoft Store for Business and Education documentation](https://docs.microsoft.com/microsoft-store/) for more details.
 + Identify which versions of Windows 10 will be running the Microsoft Edge extension. See [Windows 10 release information](https://www.microsoft.com/en-us/itpro/windows-10/release-information) for a listing of existing Windows 10 releases.
 
 > [!NOTE]

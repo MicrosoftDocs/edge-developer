@@ -30,7 +30,7 @@ Each user/group/or Azure AD application is assigned a role that gives them a spe
 ###	Name reservation
 
 Reserving a name is the first step towards getting your extension in the Microsoft Store.
-It's recommended that you [reserve the name of your extension](https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name) as soon as possible through Partner Center before it gets taken by someone else. You can do this even if you haven’t started building your extension yet.
+It's recommended that you [reserve the name of your extension](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name) as soon as possible through Partner Center before it gets taken by someone else. You can do this even if you haven’t started building your extension yet.
 
 > [!NOTE]
 > The name chosen here has to match the name that is specified in the JSON manifest for the extension. 

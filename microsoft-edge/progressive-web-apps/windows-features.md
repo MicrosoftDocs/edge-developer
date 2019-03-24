@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP
 
 # Tailor your PWA for Windows
 
-PWAs installed on Windows 10 enjoy [all the benefits](../progressive-web-apps.md#pwas-on-windows-10) of running as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps, including protection through Windows app sandboxing security and full access to [Windows Runtime](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) APIs, including those for:
+PWAs installed on Windows 10 enjoy [all the benefits](../progressive-web-apps.md#pwas-on-windows-10) of running as [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps, including protection through Windows app sandboxing security and full access to [Windows Runtime](https://docs.microsoft.com/uwp/api/) (WinRT) APIs, including those for:
 
 - Controlling device features (such as camera, microphone, GPS)
 - Accessing user resources (such as calendar, contacts, documents,  music) 
@@ -36,7 +36,7 @@ A PWA installed as a Windows 10 app runs independently from the browser, in a st
 
 Let's set up our Windows app development environment in Visual Studio.
 
-1. In your Windows **Settings**, turn on [**Developer mode**](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development). (Type "developer mode" in the Windows searchbar to find it.)
+1. In your Windows **Settings**, turn on [**Developer mode**](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development). (Type "developer mode" in the Windows searchbar to find it.)
 
 1. Launch *Visual Studio* and **Create new project...**
 
@@ -48,12 +48,12 @@ Let's set up our Windows app development environment in Visual Studio.
 
     Your new project will then load with the *package.appxmanifest* designer open. This  is where you'll configure the details of your app, including package identity, package dependencies, required capabilities, visual elements, and extensibility points. This is an easily configurable, temporary version of the app package manifest used during app development.
 
-    When you build your app project, [Visual Studio generates an *AppxManifest.xml*](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/generate-package-manifest) file from this metadata, which will be used for installing and running your app. Whenever you update your *package.appxmanifest* file, be sure to rebuild the project so they are reflected in your *AppxManifest.xml* at runtime.
+    When you build your app project, [Visual Studio generates an *AppxManifest.xml*](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/generate-package-manifest) file from this metadata, which will be used for installing and running your app. Whenever you update your *package.appxmanifest* file, be sure to rebuild the project so they are reflected in your *AppxManifest.xml* at runtime.
 
 4. In the manifest designer **Application** panel, enter the URL of your PWA as the **Start page**.
 
     > [!NOTE]
-    > Service workers are supported for all *https* (secure, remote) urls specified as the `StartPage`. They are not supported by default for web apps that specify a local start page. To enable service worker support for these cases, add an explicit [*ApplicationContentUriRules*](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#set-application-content-uri-rules-acurs) entry to the manifest, for example: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`
+    > Service workers are supported for all *https* (secure, remote) urls specified as the `StartPage`. They are not supported by default for web apps that specify a local start page. To enable service worker support for these cases, add an explicit [*ApplicationContentUriRules*](https://docs.microsoft.com/microsoft-edge/progressive-web-apps/windows-features#set-application-content-uri-rules-acurs) entry to the manifest, for example: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`
 
    ![Application panel of package.appxmanifest designer](./media/vs-manifest-application.png)
 
@@ -105,7 +105,7 @@ Here's how to set up debugging for your PWA.
     window.Windows
     ```
 
-    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
+    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/windows/uwp/index), and only
     exposed to web apps that run as Windows 10 apps (running outside the browser, in a *WWAHost.exe* process).
 
 ## Find Windows Runtime (WinRT) APIs
@@ -116,18 +116,18 @@ There are a number of ways to identify the *Universal Windows Platform* APIs you
 
 ### Windows Dev Center
 
-Overall, WinRT APIs work in JavaScript the same way they do in C#, so you can follow the general [Universal Windows Platform documentation](https://docs.microsoft.com/en-us/windows/uwp/index) and [API Reference](https://docs.microsoft.com/en-us/uwp/api/) for usage. However, please note the following differences:
+Overall, WinRT APIs work in JavaScript the same way they do in C#, so you can follow the general [Universal Windows Platform documentation](https://docs.microsoft.com/windows/uwp/index) and [API Reference](https://docs.microsoft.com/uwp/api/) for usage. However, please note the following differences:
 
- - WinRT features in JavaScript use  [different casing conventions](https://docs.microsoft.com/en-us/scripting/jswinrt/using-the-windows-runtime-in-javascript#casing-conventions-with-windows-runtime-features)
- - [Events are represented as string identifiers](https://docs.microsoft.com/en-us/scripting/jswinrt/handling-windows-runtime-events-in-javascript) passed to class `addEventListener`/`removeEventListener` methods
- - [Asynchronous methods](https://docs.microsoft.com/en-us/scripting/jswinrt/using-windows-runtime-asynchronous-methods) use the JavaScript Promise model
- - APIs in the `Windows.UI.Xaml` namespace are not supported for JavaScript apps, which instead use the [EdgeHTML](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/whats-new) engine web rendering stack (HTML, CSS)
+ - WinRT features in JavaScript use  [different casing conventions](https://docs.microsoft.com/scripting/jswinrt/using-the-windows-runtime-in-javascript#casing-conventions-with-windows-runtime-features)
+ - [Events are represented as string identifiers](https://docs.microsoft.com/scripting/jswinrt/handling-windows-runtime-events-in-javascript) passed to class `addEventListener`/`removeEventListener` methods
+ - [Asynchronous methods](https://docs.microsoft.com/scripting/jswinrt/using-windows-runtime-asynchronous-methods) use the JavaScript Promise model
+ - APIs in the `Windows.UI.Xaml` namespace are not supported for JavaScript apps, which instead use the [EdgeHTML](https://docs.microsoft.com/microsoft-edge/dev-guide/whats-new) engine web rendering stack (HTML, CSS)
 
 For more details, see [*Using the Windows Runtime in JavaScript*](../windows-runtime/using-the-windows-runtime-in-javascript.md).
 
 ### UWP code samples
 
-Check out the [Universal Windows Platform (UWP) Code Samples](https://developer.microsoft.com/en-us/windows/samples) repo to browse JavaScript examples for common Windows 10 app scenarios. Although the JS versions of these samples use the [WinJS](https://github.com/winjs/winjs) library to structure the sample template, WinJS is not required for calling the WinRT APIs demonstrated by these samples. Note that if you need to listen for the app's [`activated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiapplication.activated) event, you can do this using the following native WinRT API:
+Check out the [Universal Windows Platform (UWP) Code Samples](https://developer.microsoft.com/en-us/windows/samples) repo to browse JavaScript examples for common Windows 10 app scenarios. Although the JS versions of these samples use the [WinJS](https://github.com/winjs/winjs) library to structure the sample template, WinJS is not required for calling the WinRT APIs demonstrated by these samples. Note that if you need to listen for the app's [`activated`](https://docs.microsoft.com/uwp/api/windows.ui.webui.webuiapplication.activated) event, you can do this using the following native WinRT API:
 
 **USE THIS**
 ```JavaScript
@@ -148,7 +148,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activa
 
 ## Call WinRT APIs from your PWA
 
-At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
+At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/uwp/api/windows.ui.popups) namespace.
 
 In order to call any WinRT APIs from our PWA, we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-acurs) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
 
@@ -184,7 +184,7 @@ StartPage="https://contoso.com/home">
 
 URLs defined within the app's ACURs can be granted permission to the Windows Runtime through the `WindowsRuntimeAccess` attribute, which accepts the following values:
 
-- **all**: Remote JavaScript code has access to all WinRT APIs and any local packaged components. The [Windows](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) namespace will be injected and present in the script engine
+- **all**: Remote JavaScript code has access to all WinRT APIs and any local packaged components. The [Windows](https://docs.microsoft.com/uwp/api/) (WinRT) namespace will be injected and present in the script engine
 - **allowForWeb**: Remote JavaScript code access is limited to local packaged components, including custom C++/C# components.
 - **none**: Default. The specified URL has no platform access.
 
@@ -196,11 +196,11 @@ You can also view the raw XML of your manifest by right-clicking your *package.a
 
 #### App capability declarations
 
-If your app needs programmatic access to user resources like pictures or music, or to devices like a camera or a microphone, you'll need to include the corresponding [*App capability declarations*](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) in your app package manifest file. There are three app capability declaration categories: 
+If your app needs programmatic access to user resources like pictures or music, or to devices like a camera or a microphone, you'll need to include the corresponding [*App capability declarations*](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) in your app package manifest file. There are three app capability declaration categories: 
 
-- [General-use capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) that apply to most common app scenarios. 
-- [Device capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) that allow your app to access peripheral and internal devices. 
-- [Special-use capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that support enterprise scenarios and require a Microsoft Store *company account*. For more info about company accounts, see [*Account types, locations, and fees*](https://docs.microsoft.com/en-us/windows/uwp/publish/account-types-locations-and-fees).
+- [General-use capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) that apply to most common app scenarios. 
+- [Device capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#device-capabilities) that allow your app to access peripheral and internal devices. 
+- [Special-use capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#special-and-restricted-capabilities) that support enterprise scenarios and require a Microsoft Store *company account*. For more info about company accounts, see [*Account types, locations, and fees*](https://docs.microsoft.com/windows/uwp/publish/account-types-locations-and-fees).
 
 Your app's Microsoft Store page will list all the capabilities you declare in your app package manifest, so be sure to only specify the capabilities that your app actually uses.
 
@@ -216,7 +216,7 @@ In this tutorial, we only require the default *Internet (Client)* capability, so
 
 To ensure a quality baseline experience for our PWA audience across all platforms, we'll progressively enhance our PWA experience on Windows using WinRT feature detection. This way, we can be sure our Windows-specific code is only executed in a context where WinRT APIs are available and applicable.
 
-Feature detection can be as simple as looking for the `Windows` object (the entrypoint to the [WinRT namespace](https://docs.microsoft.com/en-us/uwp/api/)) as below:
+Feature detection can be as simple as looking for the `Windows` object (the entrypoint to the [WinRT namespace](https://docs.microsoft.com/uwp/api/)) as below:
 
 ```JavaScript
 if(window.Windows){
@@ -301,6 +301,6 @@ Hopefully you now have a solid foundation for progressively enhancing your PWAs 
 
 The [**Windows Dev Center**](https://developer.microsoft.com/en-us/windows/apps) is your complete reference for all stages of Windows app building, from [getting started](https://developer.microsoft.com/en-us/windows/apps/getstarted), to [designing](https://developer.microsoft.com/windows/apps/design), [developing](https://developer.microsoft.com/windows/apps/develop), and [publishing](https://developer.microsoft.com/store/publish-apps) to the Microsoft Store.
 
-For a general overview on the Universal Windows Platform (UWP) and how to target different Windows 10 device families, see [*Intro to the Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide).
+For a general overview on the Universal Windows Platform (UWP) and how to target different Windows 10 device families, see [*Intro to the Universal Windows Platform*](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide).
 
 And when you're ready, here's how (and why!) to [*Submit your PWA to the Microsoft Store*](./microsoft-store.md).
