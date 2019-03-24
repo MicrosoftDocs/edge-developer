@@ -211,8 +211,9 @@ First you'll need to create the configuration file. This defines the default qua
 Now you can use the configuration file and the MakePRI tool to create the resources.pri file. For this example, the root location for the project will be [Root folder].
 
 
-`MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\AppxManifest.xml /of [Root folder]\resources.pri /o
-`
+```
+MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\AppxManifest.xml /of [Root folder]\resources.pri /o
+```
 
 You should now have one resources.pri file in your root folder:
 
