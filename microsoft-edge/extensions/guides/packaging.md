@@ -41,7 +41,7 @@ Also included is info on how to [test and unpack a packaged extension](./packagi
 
 ## [Localizing extension packages](./packaging/localizing-extension-packages.md)
 The package localization step falls between creating your appxmanifest.xml file and running the final command to package your extension.
-This allows you to indicate which languages your extensions supports in your Microsoft Store listing, and what language your extension's name appears in in Windows.
+This allows you to indicate which languages your extensions supports in your Microsoft Store listing, and what language your extension's name appears in Windows.
 
 You can jump to [Localizing name and description for the Microsoft Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) in this section of the guide if your extension doesn't support multiple languages.
 
