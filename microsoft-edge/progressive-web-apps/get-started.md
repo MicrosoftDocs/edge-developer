@@ -120,7 +120,7 @@ If you publish the app live (with an actual `start_url`), the Bing search engine
 
 [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and other key PWA technologies that work with service workers (such as the [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache), [Push](https://developer.mozilla.org/en-US/docs/Web/API/Push_API), and [Background Sync](https://developer.mozilla.org/en-US/docs/Web/API/SyncManager) APIs) only work across secure connections, which means [*HTTPS*](https://en.wikipedia.org/wiki/HTTPS) for live sites or *localhost* for  debugging purposes.
 
-If you were to [publish this web app as a live site](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/en-us/free/)), you'll want to ensure your server is configured for HTTPS. If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/web/) to host your site, it will will be served over HTTPS by default.
+If you were to [publish this web app as a live site](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/en-us/free/)), you'll want to ensure your server is configured for HTTPS. If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/web/) to host your site, it will be served over HTTPS by default.
 
 For this guide we'll continue using *http://localhost* as a placeholder for a live site served over *https://*.
 
@@ -400,7 +400,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     
     Time to test push notifications in your PWA!
 
-    a. Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Service Worker Overview** panel and and **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
+    a. Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Service Worker Overview** panel and **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
 
     As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:
 
