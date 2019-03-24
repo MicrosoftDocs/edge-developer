@@ -53,7 +53,7 @@ APPHOST9607: "The app can't launch the URI at *uri* because of this error: *fail
 APPHOST9608: "The app couldn't navigate to the about:blank page because of this error: *errorCode*." | 
 APPHOST9610: "The app found an error while preparing to navigate to a custom error page: *errorCode*." |
 APPHOST9611: "The app couldn't navigate to a custom error page because of this error: *errorCode*." |
-APPHOST9613: "The app couldn't navigate to * uri*  because of this error: *errorCode*." | 
+APPHOST9613: "The app couldn't navigate to *uri*  because of this error: *errorCode*." | 
 APPHOST9614: "A document within an iframe requested the *requestedDocMode* doc mode, but the system enforces the *currentDocMode* doc mode. The iframe will use the *currentDocMode* doc mode." | For more info about displaying remote web content, see [How to link to external web pages](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh780594.aspx).
 APPHOST9615: "The app can't download the file at *uri* because it was invoked programmatically outside of the local context." | Occurs when content in the web context tries to programmatically download a file.
 APPHOST9616: "This URI can't use geolocation APIs.  Geolocation APIs can be invoked only from a URI that is part of the package or is included in the ApplicationContentUris element of the manifest." | For more info about what's allowed in the web context, see [Features and restrictions by context](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465373.aspx).
