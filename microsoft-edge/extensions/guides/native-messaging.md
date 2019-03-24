@@ -61,7 +61,7 @@ This section details the differences between how Chrome and Microsoft Edge handl
 In order for your app to be recognized by your extension as a native messaging host, it will need to be registered.
 
 
-For [Chrome native messaging ](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
+For [Chrome native messaging](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
 
 The following JSON is an example of how the config file can be set up:
 ```json
