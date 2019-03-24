@@ -30,7 +30,7 @@ Microsoft Edge extensions also have an additional set of policies to follow seen
 
 You can add keywords to your extension submission to imporove its discoverability through searches. For example, "Microsoft Edge Extensions" and "name of my extension". 
 
-This can be be done in the Windows Dev Center under the description section of your extension. These keywords will need to be added for every language your extension supports.
+This can be done in the Windows Dev Center under the description section of your extension. These keywords will need to be added for every language your extension supports.
 
 ![Submitting a response to a review](./media/keywords.png)
 
