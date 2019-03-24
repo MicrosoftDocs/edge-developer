@@ -18,7 +18,7 @@ Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows
 If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
 
 

@@ -108,4 +108,4 @@ For example, if the user has selected pink as their accent color, the transparen
 
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.

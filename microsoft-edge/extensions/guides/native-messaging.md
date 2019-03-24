@@ -367,7 +367,7 @@ Once the solution is correctly deployed, you should see your extension in Micros
 ## Packaging
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
 
 
 You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:

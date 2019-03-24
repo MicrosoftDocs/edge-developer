@@ -19,7 +19,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 1.  **INSTALLATION AND USE RIGHTS.**
     1. **General.** You may install and use any number of copies of the software on your devices.
     2. **Included Microsoft Applications.** The software may include other Microsoft applications. These license terms apply to those included applications, if any, unless other license terms are provided with the other Microsoft applications.
-    3.  **Third Party Software.** The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at http://aka.ms/thirdpartynotices or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
+    3.  **Third Party Software.** The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at https://aka.ms/thirdpartynotices or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
 
 2. **TIME-SENSITIVE SOFTWARE.**
     1. **Period.** The software is time-sensitive and may stop running on a date that is defined in the software.
@@ -39,7 +39,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
     4. use the software in any way that is against the law or to create or propagate malware; or
     5. share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-7. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit http://aka.ms/exporting.
+7. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit https://aka.ms/exporting.
 
 8. **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 

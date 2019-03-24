@@ -39,4 +39,4 @@ It's recommended that you [reserve the name of your extension](https://docs.micr
 You can also [reserve additional names to use for your extension](https://msdn.microsoft.com/en-us/windows/uwp/publish/manage-app-names), which is especially useful if you are offering the extension in multiple languages and want to use different names for different languages. You can find more information on localization in [Localizing extension packages](./localizing-extension-packages.md).
 
 > [!NOTE]
-> Once you've [reached out to us](http://aka.ms/extension-request) and have been approved to have your extension in the Microsoft Store, check out the [app submission checklist](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+> Once you've [reached out to us](https://aka.ms/extension-request) and have been approved to have your extension in the Microsoft Store, check out the [app submission checklist](https://docs.microsoft.com/windows/uwp/publish/app-submissions).

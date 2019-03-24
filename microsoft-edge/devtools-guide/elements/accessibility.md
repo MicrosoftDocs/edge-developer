@@ -20,7 +20,7 @@ It's useful to open the [Accessibility tree](#accessibility-tree) to navigate ar
 ## Accessibility tree
 The **Accessibility tree** pane shows the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screen reader.
 
-Clicking on a node in the tree view will also select it in the [**HTML tree**](../elements.md#html-tree-view), and vice versa. Selecting an accessible element from either the *HTML* or *Accessibility* tree views will also populate further accessibility property details in the [**Accessibility**](#accessibility) tool pane. 
+Clicking on a node in the tree view will also select it in the [**HTML tree**](../elements.md#html-tree-view), and vice versa. Selecting an accessible element from either the *HTML* or *Accessibility* tree views will also populate further accessibility property details in the **Accessibility** tool pane. 
 
 ![Accessibility tree view](../media/elements_accessibility_tree.png)
 

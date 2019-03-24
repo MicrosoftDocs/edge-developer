@@ -17,7 +17,7 @@ So you've finally completed your extension and are ready to package it up. You m
 The extension packaging guide is comprehensive in that it covers everything you'd want to know about packaging, even the finer, nitty gritty details. If you don't want to learn everything there is to know about packaging your extension, you're in luck. We've added support for extensions to ManifoldJS, an open source Node.js tool that takes the majority of your packaging woes away.
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
 
 
 Use the process outline below to map out your packaging adventure!

@@ -17,7 +17,7 @@ manager: "jken"
 # Reference (JavaScript Runtime)
 JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.  
   
- If you intend to embed [ChakraCore](https://github.com/Microsoft/ChakraCore) in your application, please refer to [ChakraCore Wiki](http://aka.ms/corejsrtref) for JSRT references instead.  
+ If you intend to embed [ChakraCore](https://github.com/Microsoft/ChakraCore) in your application, please refer to [ChakraCore Wiki](https://aka.ms/corejsrtref) for JSRT references instead.  
   
 ## In This Section  
  Typedefs, constants, and enumerations that support JsRT hosting are described here:  

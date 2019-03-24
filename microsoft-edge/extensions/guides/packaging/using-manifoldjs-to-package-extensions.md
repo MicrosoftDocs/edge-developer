@@ -23,7 +23,7 @@ Before getting started, you will still need to read up on the following articles
 - [Localizing extension packages](./localizing-extension-packages.md)
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
 
 ## Installing Node.js and ManifoldJS
@@ -99,4 +99,4 @@ Once your appxmanifest.xml file is sorted out, run the following command to crea
 
 Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing extension packages' [testing](./creating-and-testing-extension-packages.md#testing-an-appx-package) section for info on how to sideload your new package.
 
-Once your package has been tested, feel free to submit a request on our [extension submission form](http://aka.ms/extension-request) in order to be considered for publication to the Microsoft Store.
+Once your package has been tested, feel free to submit a request on our [extension submission form](https://aka.ms/extension-request) in order to be considered for publication to the Microsoft Store.
