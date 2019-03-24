@@ -132,7 +132,7 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
 (Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files-ctrlf) search results.
 
 ### 6. Find in files (`Ctrl+F`)
- **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
+ **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
 
 ### 7. Debug just my code (`Ctrl+J`)
  **Debug just my code** (`Ctrl+J`) acts as a toggle to include or exclude all the files that have been marked as [library code](#3-code-scoping) as you step through the debugger.
