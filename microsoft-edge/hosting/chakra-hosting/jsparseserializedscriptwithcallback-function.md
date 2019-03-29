@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0a93ecfb-4b82-4a85-b24c-6816db2332ea
 caps.latest.revision: 5
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsParseSerializedScriptWithCallback Function
 Parses a serialized script and returns a function representing the script. Provides the ability to lazy load the script source only if/when it is needed.  

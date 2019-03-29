@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsDisableRuntimeExecution function"
 ms.assetid: 4bd4670a-a9da-4f8c-b3fd-1fd366d915c3
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsDisableRuntimeExecution Function
 Suspends script execution and terminates any running scripts in a runtime.  

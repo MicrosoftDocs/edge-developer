@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsBoolToBoolean function"
 ms.assetid: 24322ea3-0638-40a3-9b4c-fc912ebed3ff
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsBoolToBoolean Function
 Creates a Boolean value from a `bool` value.  

@@ -34,9 +34,9 @@ f1_keywords:
   - "VS.WebClient.Help.APPHOST9626"
 ms.assetid: 4c6d4e90-602a-4b56-ae74-3458929da442
 caps.latest.revision: 1
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # Error codes for Windows Runtime apps using JavaScript
 Here are the error codes displayed by the Microsoft Visual Studio console when developing Windows Runtime apps using JavaScript.

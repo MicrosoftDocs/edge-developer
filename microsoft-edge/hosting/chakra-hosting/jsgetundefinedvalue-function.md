@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetUndefinedValue function"
 ms.assetid: e118eaf6-452c-42f2-86b8-e63c7d987cba
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetUndefinedValue Function
 Gets the value of `undefined` in the current script context.  

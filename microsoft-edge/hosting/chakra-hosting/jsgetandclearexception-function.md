@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetAndClearException function"
 ms.assetid: 6aec8a88-41ee-47f6-b5f4-32f3cae6bb7b
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetAndClearException Function
 Returns the exception that caused the runtime of the current context to be in the exception state and resets the exception state for that runtime.  

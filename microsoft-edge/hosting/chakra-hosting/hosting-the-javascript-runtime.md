@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
 caps.latest.revision: 14
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # Hosting the JavaScript Runtime
 The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and server-side applications running on the Windows operating system to add scripting capabilities to the application by using the standards-based Chakra JavaScript engine that is also utilized by Microsoft Edge and Internet Explorer. These APIs are available on Windows 10 and any version of the Windows operating system that has Internet Explorer version 11.0 installed on the machine. For more info, see [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md). For info on using the JsRT in Windows Store apps, see [JsRT and the Universal Windows Platform](#Windows).  
