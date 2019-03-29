@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsCreateArray function"
 ms.assetid: a119949a-e427-4349-9d00-5ec20fb9319c
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCreateArray Function
 Creates a Javascript array object.  

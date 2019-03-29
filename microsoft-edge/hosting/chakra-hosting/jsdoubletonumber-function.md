@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsDoubleToNumber function"
 ms.assetid: 43eb2ee1-2789-4302-954e-c4087e1ee786
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsDoubleToNumber Function
 Creates a number value from a `double` value.  

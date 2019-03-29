@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 992bc4e9-3d06-4ad2-8b6b-88a437360f81
 caps.latest.revision: 3
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetTypedArrayInfo Function
 Obtains frequently used properties of a typed array.  

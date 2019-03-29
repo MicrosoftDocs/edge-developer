@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetGlobalObject function"
 ms.assetid: d3e91e64-1ca3-4d2b-aada-725ded0fd0b1
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetGlobalObject Function
 Gets the global object in the current script context.  

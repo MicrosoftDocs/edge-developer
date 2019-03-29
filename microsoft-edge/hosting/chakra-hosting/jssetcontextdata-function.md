@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: be90aa6a-b001-4a6f-90c5-c2135e913be0
 caps.latest.revision: 4
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetContextData Function
 Sets the internal data of JsrtContext.  

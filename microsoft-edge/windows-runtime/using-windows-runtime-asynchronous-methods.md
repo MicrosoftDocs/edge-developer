@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JavaScript, Windows Runtime asynchronous methods"
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
 caps.latest.revision: 15
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # Using Windows Runtime Asynchronous Methods
 Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous. These methods generally return an asynchronous action or operation (for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`). These methods are represented in JavaScript by the [CommonJS/Promises/A](http://go.microsoft.com/fwlink/p/?LinkId=244434) pattern. That is, they return a Promise object that has a [then](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx) function, for which you must provide a `completed` function that handles the result if the operation succeeds. If you don't want to provide an error handler, you should use the [done](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx) function instead of the `then` function.  

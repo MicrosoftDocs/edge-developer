@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsBooleanToBool function"
 ms.assetid: ab16ac71-fe47-475d-a7ee-46e4643dee60
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsBooleanToBool Function
 Retrieves the `bool` value of a Boolean value.  
