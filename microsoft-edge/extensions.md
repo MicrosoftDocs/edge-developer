@@ -10,13 +10,13 @@ ms.technology: extensions
 keywords: edge, web development, html, css, javascript, developer, extensions
 ---
 
-#  Microsoft Edge extensions
+#  Microsoft Edge (EdgeHTML) extensions
 
-Extensions are small programs that can be used to add new features to Microsoft Edge or modify the existing functionality. Extensions are intended to improve a user’s day-to-day browsing experience by providing niche functionality that is important to targeted audiences.
+Extensions are small programs that can be used to add new features to Microsoft Edge (EdgeHTML) or modify the existing functionality. Extensions are intended to improve a user’s day-to-day browsing experience by providing niche functionality that is important to targeted audiences.
 
-Microsoft Edge supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes.
+Microsoft Edge (EdgeHTML) supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes.
 
-To get an overview of the end to end journey of creating a Microsoft Edge extension from development to publishing, check out the [Getting started guide](./extensions/getting-started.md)!
+To get an overview of the end to end journey of creating a Microsoft Edge (EdgeHTML) extension from development to publishing, check out the [Getting started guide](./extensions/getting-started.md)!
 
 
 ## Popular articles
