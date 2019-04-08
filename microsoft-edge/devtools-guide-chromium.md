@@ -87,7 +87,7 @@ Please send us your feedback so we can continue improving the Microsoft Edge Dev
 
 ![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback.png)
 
-If you want to preview the [latest features coming to the DevTools](./devtools-guide-chromium/whats-new.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com), which builds nightly.
+If you want to preview the [latest features coming to the DevTools](./devtools-guide-chromium/whats-new.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/download), which builds nightly.
 
 ## Shortcuts
 
