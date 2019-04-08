@@ -11,9 +11,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1b8293ca-a040-402d-8ea5-4299390adcd0
 caps.latest.revision: 2
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsPropertyIdType Enumeration
 Type enumeration of a JavaScript property.  

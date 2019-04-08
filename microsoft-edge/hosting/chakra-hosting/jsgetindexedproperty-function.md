@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetIndexedProperty function"
 ms.assetid: f61ea388-0ae6-4a19-b3b5-75ed49a3f32d
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetIndexedProperty Function
 Retrieve the value at the specified index of an object.  

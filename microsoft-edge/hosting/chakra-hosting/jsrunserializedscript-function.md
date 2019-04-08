@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsRunSerializedScript function"
 ms.assetid: 3fd3f6f1-eb3e-4751-92a5-c93b1035f3b2
 caps.latest.revision: 13
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsRunSerializedScript Function
 Runs a serialized script.  

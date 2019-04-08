@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "JavaScript, Windows Runtime API"
 ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
 caps.latest.revision: 8
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # Considerations when Using the Windows Runtime API
 You can use nearly every element of the Windows Runtime API in JavaScript. However, there are some aspects of the JavaScript representation of Windows Runtime elements that you should keep in mind.  
