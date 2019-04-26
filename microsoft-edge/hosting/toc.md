@@ -163,3 +163,4 @@
 ## [ScriptNotifyEvent](webview/ScriptNotifyEvent.md)
 ## [UnviewableContentIdentifiedEvent](webview/UnviewableContentIdentifiedEvent.md)
 ## [WebResourceRequestedEvent](webview/WebResourceRequestedEvent.md)
+# [WebView2](webview2/webview2.md)
