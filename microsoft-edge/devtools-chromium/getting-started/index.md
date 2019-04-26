@@ -33,7 +33,7 @@ Edge DevTools are web developer tools built directly into Microsoft Edge that ca
 
 ## First Steps
 
-To get started with Edge DevTools, browse to the site <a href="https://webapp20190426015338.azurewebsites.net/uspresidents.html" target="_blank">http://uspresidents.azurewebsites.com</a>.  This site simply uses Bootstrap 4 with some static image files. After browsing to the site, you launch Edge DevTools and Windows by pressing the keys Command+Option+C on a Mac or Control+Shift+C (Windows or Linux). Once you've done that, the Edge DevTools will appear on the bottom half of your display as shown below.
+To get started with Edge DevTools, browse to the site [https://webapp20190426015338.azurewebsites.net/uspresidents.html].  This site simply uses Bootstrap 4 with some static image files. After browsing to the site, you launch Edge DevTools and Windows by pressing the keys Command+Option+C on a Mac or Control+Shift+C (Windows or Linux). Once you've done that, the Edge DevTools will appear on the bottom half of your display as shown below.
 
 
 ![Opening Screen](../media/edge_devtools_opening.png)
