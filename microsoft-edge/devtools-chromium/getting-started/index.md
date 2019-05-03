@@ -26,39 +26,39 @@ keywords: microsoft edge, chromium, devtools, f12 tools
 
 
 ## Overview
-Edge DevTools are web developer tools built directly into Microsoft Edge (Chromium) that can help you edit pages as you view them, diagnose and fix problems quickly resulting in faster and better web sites.  With Edge DevTools you can make changes to the behind the scenes HTML that's rendered the page and instantly see the change in your browser. You can also step through and set break points in running JavaScript to figure out why things work as well as discover how to fix those that do not.
+Edge DevTools are web developer tools built directly into Microsoft Edge (Chromium) that can help you edit pages as you view them, diagnose and fix problems quickly resulting in faster and better web sites. With Edge DevTools you can make changes to the behind the scenes HTML that's rendered the page, and you can see instantly the change in your browser display. You can also step through and set break points in running JavaScript to figure out why things work, as well as discover how to fix those that do not.
 
 ## First Steps
 
-To get started with Edge DevTools, browse to the site [USPresidents.azurewebsites.net](https://webapp20190426015338.azurewebsites.net/USPresidents.html).  This site simply uses Bootstrap 4 with some static image files. After browsing to the site, you launch Edge DevTools and Windows by pressing the keys Command+Option+C on a Mac or Control+Shift+C (Windows or Linux). Once you've done that, the Edge DevTools will appear on the bottom half of your display as shown below.
+To get started with Edge DevTools, browse to the site [USPresidents.azurewebsites.net](https://webapp20190426015338.azurewebsites.net/USPresidents.html).  This site simply uses Bootstrap 4 with some static image files. After browsing to the site, you launch Edge DevTools and Windows by pressing the keys `Command+Option+C` on a Mac or `Control+Shift+C` (Windows or Linux). Once you've done that, the Edge DevTools will appear on the bottom half of your display as shown below.
 
 ![Opening Screen](../media/edge_devtools_opening.png)
 
-Immediately, I'm sure you notice the dark theme setting that appears in the Edge DevTools bottom section, and you may like it or you may not.  It's easy to change as well as many other preferences.  Next, we'll  dig deeper into the DevTools settings as well as five of the major sections (tabs) available to you.
+Notice the dark theme setting that appears in the Edge DevTools bottom section. in Edge Devtools this dark theme is configurable. It's easy to change as well as many other preferences.  Next, we'll  dig deeper into the DevTools settings as well as five of the major sections (tabs) available to you.
 
 ![Opening Screen](../media/edge_devtools_tabs.png)
 
-Read on and learn how to start using these features in Edge DevTools.
+Learn how to start using these features in Edge DevTools.
 
 ## Digging Deeper
 
 ### Settings
 
-To change you settings, or more specifically, say you want to change to a different theme, you first have to click on the three dots next to the `x` on the far right of the screen.  You'll get a dialog with one of the choices as settings.
+To change you settings, or more specifically, say you want to change to a different theme, you first have to click on the three dots next to the `x` on the far right of the screen. You'll get a dialog with one of the choices for setting.
 
 ![Opening Screen](../media/edge_devtools_settings-full.png)
 
-Then, you'll get a panel that on top lets you change the appearance (or Theme) to Light, Dark, Light Chromium, or dark Chromium.  Besides Appearance, there are a lot more settings available to you on the other tabs on the left side as shown here.
+After clicking on the three dots, you'll get a panel that on top lets you change the appearance (or Theme) to Light, Dark, Light Chromium, or dark Chromium. Besides Appearance, there are a lot more settings available to you on the other tabs on the left side as shown here.
 
 ![Opening Screen](../media/edge_devtools_settings-detail-full.png)
 
-
-
 ### 1. Elements Tab and Viewing the DOM
 
-If you want to see what HTML elements are created that reflect what you are seeing on the browser display, the Elements tab will do that for you.  Though I've not mentioned it yet, when you click the three dots like you did a moment ago to bring up settings, you can also choose where you want your Edge DevTools to be shown (undocked, left, bottom or right).  I find that for inspecting the DOM, that is, when we use this elements tab, it's most conventient to have these tools docked to the right and not below as was the case earlier when we changed to the dark theme.
+If you want to see what HTML elements are created that reflect what you are seeing on the browser display, the Elements tab will do that for you. Though I've not mentioned it yet, when you click the three dots like you did a moment ago to bring up settings, you can also choose where you want your Edge DevTools to be shown (undocked, left, bottom or right).  
 
-While mousing over an element I'll want to dig into or in other words, inspect that elements HTML. I simply move my cusor to over what I want to inspect, then right mouse button, then choose `Inspect`.  That automatically opens Edge DevTools and takes me directly to its elements tab
+I find that for inspecting the DOM, that is, when we use this elements tab, it's most conventient to have these tools docked to the right and not below as was the case earlier when we changed to the dark theme.
+
+While mousing over an element I'll want to dig into, or in other words, inspect that elements HTML. I simply move my cusor to over what I want to inspect, then right mouse button, then choose `Inspect`. That automatically opens Edge DevTools and takes me directly to its elements tab
 
 ![Opening Screen](../media/edge_devtools_element_inspect.png)
 
@@ -79,7 +79,7 @@ Web developers often log messages to the Console to make sure that their JavaScr
 </html>
 ```
 
-Then, when the browser loads this page with the Edge DevTools open to the console page, the console.log message is output as shown below.
+When the browser loads this page with the Edge DevTools open to the console page, the console.log message is output as shown below.
 
 ![Opening Screen](../media/edge_devtools_consolelog.png)
 
@@ -113,17 +113,30 @@ In addition now, we have access to other tabs of information about the request i
 
 ### 5. Application  (Cookies, Session Info and More)
 
-The Application is very useful when you want to know more about information associated with what you could think of as the web application you are running when you browser to any URL.  That is, what cookies are associated with that URL, is there local, transient data being stored, like a shopping cart, on your behalf, is there a client side database (localdb for example), running on your behalf to make your web page more performant.
+The Application tab is very useful when you want to know more about information associated with what you could think of as the web application you are running when you browser to a URL.  That is, what cookies are associated with that URL, is there local or transient data being stored (like a shopping cart), is there a client side database (localdb for example), running on your behalf to make your web page more performant.  Outlined  below is three types of storage that can be stored alongside any domain in your browser.
 
-Below shows the Application tab selected and we've navigated below to a cookie stored on this page.  As you know, the cookie would have been originally set in the original downloaded web request, but as it's stored, it persists for post back to other requests being served to this URL.
+#### Cookie Storage
+
+You can see here on the left, the cookies that are associated with the domain you have browsed to.  As you know, the cookie would have been originally set in the original downloaded web request, but as it's stored, it persists for post back to other requests being served to this URL.
 
 ![](../media/edge_devtools_application.png)
 
+#### Session Storage
+
+Transient data that is typically associated with a browser session can be vieweed here.  That is data that the server tracks as associated with your current visit of any given domain.  Typically, this is used to track things like a current logged in session.  You may want data saved between post backs to the server and this is a good place to store it.  The Edge DevTools let's you easily view that data as well as insert new data, update existing or delete existing data. Session data is always stored as key/value pairs.
+
+![](../media/edge_devtools_sessionstorage.png)
+
+#### Local Storage
+
+Local Storage is the type of data that can be stored in your browser relative to a given domain for long periods of time. Local Storage is often used a local repository of data so that each time you visit the site, the same data does not need to be downloaded again. It behaves very similarly to browser cache. With the Edge DevTools, this data can be inserted, updated or deleted. Local Storage is always stored as key/value pairs.
 
 
+![](../media/edge_devtools_localstorage.png)
 
+## Summary
 
-
+Edge DevTools are chromium based and have a full suite of capabilities.  This article is just "Getting Started" and takes you through the basic without even touching on much of the capabilities that exist.  For example, we did not even talk about performance analysis, service workers, and many other features.
 
 
 
