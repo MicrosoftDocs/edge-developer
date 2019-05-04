@@ -208,7 +208,7 @@ Press F5 to build and run the app. It will now show URLs before navigating to pa
 
 ![showURL](images/showURL.PNG)
 
-Congratulations, you've just built your first WebView2 app! There are plenty of WebView2 functionalities that are not covered in this walkthrough, please explore [API reference](webview2/reference-webview2) for more details.
+Congratulations, you've just built your first WebView2 app! There are plenty of WebView2 functionalities that are not covered in this walkthrough, please explore [API reference](reference-webview2) for more details.
 
 ## Feedback
 
