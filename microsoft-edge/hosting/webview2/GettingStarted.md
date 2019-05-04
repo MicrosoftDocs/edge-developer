@@ -43,49 +43,20 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![nuget](images/nuget.PNG)
 
-3. Go to `{solution directory}\packages\Microsoft.Web.WebView2.{version number}\build\native` in File Explorer, you should see the layout below.
-
-```txt
-native\
-    |---- include\
-        |---- WebView2.h                   // WebView2 API header
-    |---- x64\
-        |---- WebView2Loader.dll           // 64-bit loader DLL
-        |---- WebView2Loader.dll.lib       // 64-bit loader lib
-    |---- x86\
-        |---- WebView2Loader.dll           // 32-bit loader DLL
-        |---- WebView2Loader.dll.lib       // 32-bit loader lib
-```
-
-Now copy **WebView2.h** to the sample project directory, and **WebView2Loader.dll** and **WebView2Loader.dll.lib** of selected architecture to the output directory.
-
-```txt
-WebView2Sample\
-    |---- WebView2Sample\
-        |---- WebView2.h
-        ...
-    |---- $(Platform)\
-        |---- $(Configuration)\             // typically this is the outDir
-            |---- WebView2Loader.dll
-            |---- WebView2Loader.dll.lib
-            ...
-   ...
-```
-
-4. Go back to Visual Studio to include the WebView2 header. Under the sample project, right click **Header Files** > click **Add** > **Existing Item...**. Navigate to and select the `WebView2.h` in the project directory.
-
-![addHeader](images/addHeader.PNG)
-
-5. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
+3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "../packages/Microsoft.Web.WebView{version}/build/native/include/WebView2.h"` below the lines of `#include`s (`{version}` number should be substituted).
 
 ```cpp
 ...
 #include <wrl.h>
 // include WebView2 header
-#include "WebView2.h"
+#include "../packages/Microsoft.Web.WebView{version}/build/native/include/WebView2.h"
 ```
 
-6. Now add **WebView2Loader.dll.lib** as linker input. Right click the project and click **Properties**. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib`.
+4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)\packages\Microsoft.Web.WebView{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
+
+![copyLoader](images/copyLoader.PNG)
+
+And add the loader lib file as a linker input. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib`.
 
 ![addLib](images/addLib.PNG)
 
