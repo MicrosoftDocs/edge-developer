@@ -43,20 +43,20 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![nuget](images/nuget.PNG)
 
-3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "../packages/Microsoft.Web.WebView{version}/build/native/include/WebView2.h"` below the lines of `#include`s (`{version}` number should be substituted).
+3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"` below the lines of `#include`s. The `{version}` number should be substituted. For example, for version 0.8.149 `WebView2.{version}` should be `WebView2.0.8.149`.
 
 ```cpp
 ...
 #include <wrl.h>
 // include WebView2 header
-#include "../packages/Microsoft.Web.WebView{version}/build/native/include/WebView2.h"
+#include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"
 ```
 
-4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)\packages\Microsoft.Web.WebView{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
+4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)\packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
 
 ![copyLoader](images/copyLoader.PNG)
 
-And add the loader lib file as a linker input. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib`.
+And add the loader lib file as a linker input. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib;`.
 
 ![addLib](images/addLib.PNG)
 
