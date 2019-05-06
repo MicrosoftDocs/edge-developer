@@ -16,7 +16,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 
 ## Globals
 
-- [webview2](reference/webview2.idl.md)
+- [Globals](reference/webview2.idl.md)
 
 ## Interfaces
 

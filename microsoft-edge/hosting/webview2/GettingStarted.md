@@ -12,16 +12,16 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Getting Started with WebView2 (developer preview)
 
-This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](reference-webview2) to learn more about individual APIs.
+This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](reference-webview2) to learn more about individual APIs.
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **The minimum required version is 76.0.147.0, which is available for Canary channel and will come to Dev channel soon. Make sure you have a Canary installation and it is updated.**
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **The minimum required version is 76.0.149.0, which is available for Canary channel and will come to Dev channel soon. Make sure you have a Canary installation and it is updated.**
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
 
-We will start with a basic desktop project containing a single main window. As this is not the main focus of this walkthrough, we will simply use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](https://docs.microsoft.com/en-us/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019). [Download](aka.ms/HelloWebView) the modified sample to get started.
+We will start with a basic desktop project containing a single main window. As this is not the main focus of this walkthrough, we will simply use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](https://docs.microsoft.com/en-us/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019). [Download](https://aka.ms/HelloWebView) the modified sample to get started.
 
 Open **WebView2Sample.sln** in Visual Studio. If you are using an older version of Visual Studio, right click on the **WebView2Sample** project and click **Properties**. Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and VS toolset available to you.
 
@@ -43,49 +43,20 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![nuget](images/nuget.PNG)
 
-3. Go to `{solution directory}\packages\Microsoft.Web.WebView2.{version number}\build\native` in File Explorer, you should see the layout below.
-
-```txt
-native\
-    |---- include\
-        |---- WebView2.h                   // WebView2 API header
-    |---- x64\
-        |---- WebView2Loader.dll           // 64-bit loader DLL
-        |---- WebView2Loader.dll.lib       // 64-bit loader lib
-    |---- x86\
-        |---- WebView2Loader.dll           // 32-bit loader DLL
-        |---- WebView2Loader.dll.lib       // 32-bit loader lib
-```
-
-Now copy **WebView2.h** to the sample project directory, and **WebView2Loader.dll** and **WebView2Loader.dll.lib** of selected architecture to the output directory.
-
-```txt
-WebView2Sample\
-    |---- WebView2Sample\
-        |---- WebView2.h
-        ...
-    |---- $(Platform)\
-        |---- $(Configuration)\             // typically this is the outDir
-            |---- WebView2Loader.dll
-            |---- WebView2Loader.dll.lib
-            ...
-   ...
-```
-
-4. Go back to Visual Studio to include the WebView2 header. Under the sample project, right click **Header Files** > click **Add** > **Existing Item...**. Navigate to and select the `WebView2.h` in the project directory.
-
-![addHeader](images/addHeader.PNG)
-
-5. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
+3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"` below the lines of `#include`s. The `{version}` number should be substituted. For example, for version 0.8.149 `WebView2.{version}` should be `WebView2.0.8.149`.
 
 ```cpp
 ...
 #include <wrl.h>
 // include WebView2 header
-#include "WebView2.h"
+#include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"
 ```
 
-6. Now add **WebView2Loader.dll.lib** as linker input. Right click the project and click **Properties**. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib`.
+4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)\packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
+
+![copyLoader](images/copyLoader.PNG)
+
+And add the loader lib file as a linker input. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib;`.
 
 ![addLib](images/addLib.PNG)
 
@@ -237,7 +208,7 @@ Press F5 to build and run the app. It will now show URLs before navigating to pa
 
 ![showURL](images/showURL.PNG)
 
-Congratulations, you've just built your first WebView2 app! There are plenty of WebView2 functionalities that are not covered in this walkthrough, please explore [API reference](webview2/reference-webview2) for more details.
+Congratulations, you've just built your first WebView2 app! There are plenty of WebView2 functionalities that are not covered in this walkthrough, please explore [API reference](reference-webview2) for more details.
 
 ## Feedback
 
