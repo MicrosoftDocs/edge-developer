@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -27,7 +27,7 @@ Event args for the PermissionRequested event.
 [get_PermissionType](#get_permissiontype) | The type of the permission that is requested.
 [get_IsUserInitiated](#get_isuserinitiated) | True when the permission request was initiated through a user gesture.
 [get_State](#get_state) | The status of a permission request, i.e.
-[put_State](#put_state) | Set the status of a permission request.
+[put_State](#put_state) | Set the State property.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) object.
 
 ## Members
@@ -62,7 +62,7 @@ whether the request is granted. Default value is WEBVIEW2_PERMISSION_STATE_DEFAU
 
 #### put_State 
 
-Set the status of a permission request.
+Set the State property.
 
 > public HRESULT [put_State](#interface_i_web_view2_permission_requested_event_args_1ae857b7a120cb03b9d6a8e3cd2317aea5)(WEBVIEW2_PERMISSION_STATE value)
 

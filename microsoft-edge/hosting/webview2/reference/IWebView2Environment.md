@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -41,45 +41,47 @@ parentWindow is the HWND in which the WebView should be displayed and from which
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow. 
 ```cpp
 
-      Microsoft::WRL::ComPtr<IWebView2Environment> webviewEnvironment;
+        Microsoft::WRL::ComPtr<IWebView2Environment> webviewEnvironment;
 
-      // Use CreateWebView2Environment to create a default WebView environment
-      // using installed version of Edge
-      hr = CreateWebView2Environment(
-          Microsoft::WRL::Callback<
-              IWebView2CreateWebView2EnvironmentCompletedHandler>(
-              [this](HRESULT result,
-                     IWebView2Environment* webviewEnvironment) -> HRESULT {
-                HRESULT hr = E_FAIL;
-                if (SUCCEEDED(result)) {
-                  hr = webviewEnvironment->CreateWebView(
-                      m_hwnd,
-                      Microsoft::WRL::Callback<
-                          IWebView2CreateWebViewCompletedHandler>(
-                          this, &ScenarioProcess::CreateWebViewCompletedHandler)
-                          .Get());
-                }
-                return hr;
-              })
-              .Get());
+        // Use CreateWebView2Environment to create a default WebView environment
+        // using installed version of Edge
+        RETURN_IF_FAILED(CreateWebView2Environment(
+            Microsoft::WRL::Callback<
+            IWebView2CreateWebView2EnvironmentCompletedHandler>(
+                [this](HRESULT result,
+                    IWebView2Environment* webviewEnvironment) -> HRESULT
+        {
+            RETURN_IF_FAILED(result);
+            RETURN_IF_FAILED(webviewEnvironment->CreateWebView(
+                m_hwnd,
+                Microsoft::WRL::Callback<
+                IWebView2CreateWebViewCompletedHandler>(
+                    this, &ScenarioProcess::CreateWebViewCompletedHandler)
+                .Get()));
+            return S_OK;
+        })
+            .Get()));
 
 ```
  It is recommended that the application handles restart manager messages so that it can be restarted gracefully in the case when the app is using Edge for webview from a certain installation and that installation is being uninstalled. For example, if a user installs Edge from Dev channel and opts to use Edge from that channel for testing the app, and then uninstalls Edge from that channel without closing the app, the app will be restarted to allow uninstallation of the dev channel to succeed. 
 ```cpp
-    case WM_QUERYENDSESSION: {
-      // yes, we can shut down
-      *handled = true;
-      // Register how we might be restarted
-      RegisterApplicationRestart(
-          L"--restore", RESTART_NO_CRASH | RESTART_NO_HANG);
-      return TRUE;
-    } break;
-    case WM_ENDSESSION: {
-      if (wParam == TRUE) {
+    case WM_QUERYENDSESSION:
+    {
+        // yes, we can shut down
         *handled = true;
-        // save app state and exit.
-        PostQuitMessage(0);
-      }
+        // Register how we might be restarted
+        RegisterApplicationRestart(
+            L"--restore", RESTART_NO_CRASH | RESTART_NO_HANG);
+        return TRUE;
+    } break;
+    case WM_ENDSESSION:
+    {
+        if (wParam == TRUE)
+        {
+            *handled = true;
+            // save app state and exit.
+            PostQuitMessage(0);
+        }
     } break;
 ```
 
@@ -94,15 +96,17 @@ For information on parameters see [IWebView2WebResourceResponse](IWebView2WebRes
 ```cpp
 HRESULT WebView::WebResourceRequestedEventHandler(
     IWebView2WebView* sender,
-    IWebView2WebResourceRequestedEventArgs* args) {
-  if (block_images_) {
-    ComPtr<IWebView2WebResourceResponse> response;
-    m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
-                                                    &response);
-    args->put_Response(response.Get());
-  }
+    IWebView2WebResourceRequestedEventArgs* args)
+{
+    if (block_images_)
+    {
+        ComPtr<IWebView2WebResourceResponse> response;
+        RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
+            &response));
+        RETURN_IF_FAILED(args->put_Response(response.Get()));
+    }
 
-  return S_OK;
+    return S_OK;
 }
 ```
 
