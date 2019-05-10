@@ -29,7 +29,7 @@ keywords: microsoft edge, chromium, devtools, f12 tools
 
 
 ## Overview
-Edge DevTools are web developer tools built directly into Microsoft Edge that can help you edit pages on the fly, diagnose and fix problems quickly resulting in faster and better web sites.  With Edge DevTools you can make changes to the behind the scenes HTML that's rendered the page and instantly see the change in your browser. You can also step through and set break points in running JavaScript to figure out why things work as well as discover how to fix those that do not.
+Edge DevTools are web developer tools built directly into Microsoft Chromium Edge that can help you edit pages on the fly, diagnose and fix problems quickly resulting in faster and better web sites.  With Edge DevTools you can make changes to the behind the scenes HTML that's rendered the page and instantly see the change in your browser. You can also step through and set break points in running JavaScript to figure out why things work as well as discover how to fix those that do not.
 
 ## First Steps
 
