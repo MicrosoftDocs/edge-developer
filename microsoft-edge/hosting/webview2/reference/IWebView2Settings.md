@@ -17,7 +17,7 @@ interface IWebView2Settings
   : public IUnknown
 ```
 
-Defines properties that enable, disable, or modify WebView features.
+Defines properties that enable, disable, or modify WebView features. Setting changes made after NavigationStarting event will not apply until the next top level navigation. 
 
 ## Summary
 
@@ -134,5 +134,3 @@ When it is allowed, web content such as a video element in the WebView is allowe
 Set the IsFullscreenAllowed property.
 
 > public HRESULT [put_IsFullscreenAllowed](#interface_i_web_view2_settings_1a10ef13244a7db2ce525dfc7502f79d97)(BOOL isFullscreenAllowed)
-
-Changes take effect after new navigation.

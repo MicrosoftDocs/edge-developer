@@ -52,7 +52,7 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 #include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"
 ```
 
-4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)\packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
+4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
 
 ![copyLoader](images/copyLoader.PNG)
 
