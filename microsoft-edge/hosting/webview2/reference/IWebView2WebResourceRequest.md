@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -24,13 +24,13 @@ An HTTP request used with the WebResourceRequested event.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [get_Uri](#get_uri) | The request URI.
-[put_Uri](#put_uri) | Set the requested URI.
+[put_Uri](#put_uri) | Set the Uri property.
 [get_Method](#get_method) | The HTTP request method.
-[put_Method](#put_method) | Set the HTTP request method.
+[put_Method](#put_method) | Set the Method property.
 [get_Content](#get_content) | The HTTP request message body as stream.
-[put_Content](#put_content) | Set the content.
+[put_Content](#put_content) | Set the Content property.
 [get_Headers](#get_headers) | The mutable HTTP request headers as a JSON string.
-[put_Headers](#put_headers) | Set the mutable HTTP request headers as a JSON string.
+[put_Headers](#put_headers) | Set the Headers property.
 
 ## Members
 
@@ -42,7 +42,7 @@ The request URI.
 
 #### put_Uri 
 
-Set the requested URI.
+Set the Uri property.
 
 > public HRESULT [put_Uri](#interface_i_web_view2_web_resource_request_1ae69c484c227b85a19a86b8839e9f05f0)(LPCWSTR uri)
 
@@ -54,7 +54,7 @@ The HTTP request method.
 
 #### put_Method 
 
-Set the HTTP request method.
+Set the Method property.
 
 > public HRESULT [put_Method](#interface_i_web_view2_web_resource_request_1a78d16e3f9f7c5ed0535beeb48e5ab16f)(LPCWSTR method)
 
@@ -68,7 +68,7 @@ POST data would be here. If a stream is set, which will override the message bod
 
 #### put_Content 
 
-Set the content.
+Set the Content property.
 
 > public HRESULT [put_Content](#interface_i_web_view2_web_resource_request_1aa8cee7896752e1ad59829b5cdedab5b3)(IStream * content)
 
@@ -80,7 +80,7 @@ The mutable HTTP request headers as a JSON string.
 
 #### put_Headers 
 
-Set the mutable HTTP request headers as a JSON string.
+Set the Headers property.
 
 > public HRESULT [put_Headers](#interface_i_web_view2_web_resource_request_1aeea75d51d6c52c7a680455f389ce9ce0)(LPCWSTR headers)
 

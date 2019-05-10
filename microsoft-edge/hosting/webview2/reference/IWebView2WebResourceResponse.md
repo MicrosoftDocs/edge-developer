@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -24,13 +24,13 @@ An HTTP response used with the WebResourceRequested event.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [get_Content](#get_content) | HTTP response content as stream.
-[put_Content](#put_content) | Set the content.
+[put_Content](#put_content) | Set the Content property.
 [get_Headers](#get_headers) | Overridden HTTP response headers.
-[put_Headers](#put_headers) | Set the HTTP response headers.
+[put_Headers](#put_headers) | Set the Headers property.
 [get_StatusCode](#get_statuscode) | The HTTP response status code.
-[put_StatusCode](#put_statuscode) | Set the HTTP response status code.
+[put_StatusCode](#put_statuscode) | Set the StatusCode property.
 [get_ReasonPhrase](#get_reasonphrase) | The HTTP response reason phrase.
-[put_ReasonPhrase](#put_reasonphrase) | Set the HTTP response reason phrase.
+[put_ReasonPhrase](#put_reasonphrase) | Set the ReasonPhrase property.
 
 ## Members
 
@@ -44,7 +44,7 @@ Stream must have all the content data available by the time this response's WebR
 
 #### put_Content 
 
-Set the content.
+Set the Content property.
 
 > public HRESULT [put_Content](#interface_i_web_view2_web_resource_response_1ad788c7c4f69d90704a648368df7d7ae2)(IStream * content)
 
@@ -56,7 +56,7 @@ Overridden HTTP response headers.
 
 #### put_Headers 
 
-Set the HTTP response headers.
+Set the Headers property.
 
 > public HRESULT [put_Headers](#interface_i_web_view2_web_resource_response_1a49094f353a193565ed73fb842d14ecc0)(LPCWSTR headers)
 
@@ -68,7 +68,7 @@ The HTTP response status code.
 
 #### put_StatusCode 
 
-Set the HTTP response status code.
+Set the StatusCode property.
 
 > public HRESULT [put_StatusCode](#interface_i_web_view2_web_resource_response_1a70218592959208c7335c7a7894b55d6d)(int statusCode)
 
@@ -80,7 +80,7 @@ The HTTP response reason phrase.
 
 #### put_ReasonPhrase 
 
-Set the HTTP response reason phrase.
+Set the ReasonPhrase property.
 
 > public HRESULT [put_ReasonPhrase](#interface_i_web_view2_web_resource_response_1a6a9607f75b9899546adf005b9ef8a9ab)(LPCWSTR reasonPhrase)
 

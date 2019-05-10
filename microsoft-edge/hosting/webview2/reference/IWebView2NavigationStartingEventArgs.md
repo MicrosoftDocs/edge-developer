@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -28,7 +28,7 @@ Event args for the NavigationStarting event.
 [get_IsRedirected](#get_isredirected) | True when the navigation is redirected.
 [get_RequestHeaders](#get_requestheaders) | The HTTP request headers for the navigation.
 [get_Cancel](#get_cancel) | The host may set this flag to cancel the navigation.
-[put_Cancel](#put_cancel) | Set this flag to cancel the navigation.
+[put_Cancel](#put_cancel) | Set the Cancel property.
 
 ## Members
 
@@ -66,7 +66,7 @@ If set, it will be as if the navigation never happened and the current page's co
 
 #### put_Cancel 
 
-Set this flag to cancel the navigation.
+Set the Cancel property.
 
 > public HRESULT [put_Cancel](#interface_i_web_view2_navigation_starting_event_args_1a2e394e2be9d77286457b5889c76d27d3)(BOOL cancel)
 

@@ -39,7 +39,7 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![manageNugetPackages](images/manageNugetPackages.PNG)
 
-2. Enter **Micrsoft.Web.WebView2** in the search bar, click **Micrsoft.Web.WebView2** from the results, and click **Install** in the right hand side window. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window. Nuget will download the SDK to your machine.
 
 ![nuget](images/nuget.PNG)
 
@@ -73,6 +73,9 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
 ComPtr<IWebView2WebView> webviewWindow;
+
+// Known issue - app needs to run on PerMonitorV2 DPI awareness for WebView to look properly
+SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 
 // Locate the browser and set up the environment for WebView
 // Use CreateWebView2EnvironmentWithDetails if you need to specify browser location, user folder, etc.

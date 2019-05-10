@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -29,7 +29,7 @@ Event args for the [IWebView2WebView::add_ScriptDialogOpening](IWebView2WebView.
 [Accept](#accept) | The host may call this to respond with OK to confirm and prompt dialogs or not call this method to indicate cancel.
 [get_DefaultText](#get_defaulttext) | The second parameter passed to the JavaScript prompt dialog.
 [get_ResultText](#get_resulttext) | The return value from the JavaScript prompt function if Accept is called.
-[put_ResultText](#put_resulttext) | Set the result text.
+[put_ResultText](#put_resulttext) | Set the ResultText property.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) object.
 
 ## Members
@@ -80,7 +80,7 @@ This is ignored for dialog kinds other than prompt. If Accept is not called this
 
 #### put_ResultText 
 
-Set the result text.
+Set the ResultText property.
 
 > public HRESULT [put_ResultText](#interface_i_web_view2_script_dialog_opening_event_args_1a588201fa46a9127161885befbcc53d00)(LPCWSTR resultText)
 
