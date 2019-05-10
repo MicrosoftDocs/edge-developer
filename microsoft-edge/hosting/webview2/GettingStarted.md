@@ -39,7 +39,7 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![manageNugetPackages](images/manageNugetPackages.PNG)
 
-2. Enter **Micrsoft.Web.WebView2** in the search bar, click **Micrsoft.Web.WebView2** from the results, and click **Install** in the right hand side window. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window. Nuget will download the SDK to your machine.
 
 ![nuget](images/nuget.PNG)
 
