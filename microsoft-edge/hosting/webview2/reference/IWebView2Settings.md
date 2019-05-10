@@ -135,3 +135,4 @@ Set the IsFullscreenAllowed property.
 
 > public HRESULT [put_IsFullscreenAllowed](#interface_i_web_view2_settings_1a10ef13244a7db2ce525dfc7502f79d97)(BOOL isFullscreenAllowed)
 
+Changes take effect after new navigation.
