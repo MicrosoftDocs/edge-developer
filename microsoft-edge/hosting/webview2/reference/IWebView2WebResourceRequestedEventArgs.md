@@ -1,6 +1,6 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/28/2019
@@ -25,7 +25,7 @@ Event args for the WebResourceRequested event.
 --------------------------------|---------------------------------------------
 [get_Request](#get_request) | The HTTP request.
 [get_Response](#get_response) | The HTTP response.
-[put_Response](#put_response) | Set the HTTP response.
+[put_Response](#put_response) | Set the Response property.
 [GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) object and put the event into a deferred state.
 
 ## Members
@@ -44,7 +44,7 @@ The HTTP response.
 
 #### put_Response 
 
-Set the HTTP response.
+Set the Response property.
 
 > public HRESULT [put_Response](#interface_i_web_view2_web_resource_requested_event_args_1a5df2fb8d4f7473897cfef1eb841dfcbf)([IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response) * response)
 
