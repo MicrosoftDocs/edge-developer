@@ -136,7 +136,7 @@ The returned data package for the selection contains HTML markup in clipboard fo
 There are no available properties for the returned data package.
  
 ### createFileFromStorageFile 
-Converts a standard W3C [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) object to the [WinRT](https://docs.microsoft.com/en-us/uwp/api/) equivalent [`StorageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile).
+Converts a [WinRT](https://docs.microsoft.com/en-us/uwp/api/) [`StorageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile) to a standard W3C [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) object.
 
 ```javascript
 var retVal = MSApp.createFileFromStorageFile(storageFile); 
