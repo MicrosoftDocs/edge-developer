@@ -24,9 +24,11 @@ Extensions are packaged as a compressed bundle of files, web assets that is, tha
 
 ## Build your first Edge/Chromium Extension
 
-To build an extension simply create an empty directory and place a single file in it named `manifest.json`.  
+### The Required manifest.json file
 
-``` json
+To build an extension simply create an empty directory and place a single file in it named `manifest.json`.  This file includes the name of the extension, which is what will display when the user hovers over the extension launch icon, a version, this is the version the extension author (us) uses keep track of what version is running and a manifest_version. This manifest_version has to do with what level of features are available to this extension as well as some crypto information for how the extension is packaged and installed from an app store to your local browser.
+
+```json
 {
   "name": "Picture of the Day Viewer",
   "version": "1.0",
@@ -34,6 +36,8 @@ To build an extension simply create an empty directory and place a single file i
   "manifest_version": 3
 }
 ```
+
+### Installing the Simple Extension In Edge/Chromium
 
 Then, running the Edge/Chromium browser we can install our new extenion named "Picture of the Day Viewer".  To install the extension from our local computer, we first need to bring up the extensions manager.  Either by typing `edge://extensions` in the URL, or choosing the right menu, then choosing the `Extensions` choice. On that menu, select the `Load Unpacked` link, navigate to the empty directory, and the extension will be loaded.
 
@@ -44,299 +48,269 @@ Browsing over the extension that has been automatically loaded on toolbar, top r
 
 ![](../media/Ext_GettingStarted_ExtLoaded_500w.png)
 
+The extension created here is what's known as a Browser Action. Browser Actions appear as an icon in the toolbar area.  Clicking on the icon, executes the extension, however, we've not given the extension anything to do yet.
 
+### Extending the Extension to Pop Up an Image When Launched
 
+To give this new extension minimal functionality, the `manifest.json` file is updated to include a `browser_action` section.  To this section, a `default_icon` is added which is a png file is copied to the directory that hold the manifest, and also a reference to `popup.html` which is the html file that will be launched when extension icon is pressed.
 
-
-
-
-
-
-
-
-This guide is organized into 6 sections.  
-
-
-## 
-
-The first section describes the purpose of extensions, their capabilities and their uses.
-The second section talks about how extensions are packaged and installed inside of the Edge/Chromium browser.
-The third section discusses what resources are typically used by extension developers
-The fourth section discusses the architecture of a typical extension, that is how the files of a complete extension are organized.
-The fifth section provides a complete example of an extension that checks for the picture of the day from NASA (US Space Program).
-The sixth section is about debugging extensions.
-
-
-
-
- 
-## Building the manifest file
-
-To begin, create a directory for your extension and name it "color-changer". 
-
-Inside the "color-changer" folder, create a file named "manifest.json".  The "manifest.json" file is required for all extensions and provides important information for the extension, ranging from the extension name to its permissions.
-
-> [!NOTE] 
-> This guide will walk you through all the manifest keys you'll need for this tutorial, but for a list of all supported and recommended manifest keys, see [Supported manifest keys](../api-support/supported-manifest-keys.md). 
-
-Inside "manifest.json", include the following code.
-
-```json
+```json 
 {
-  "name": "Color Changer",
-  "author": "Microsoft Edge Extension Developer",
-  "version": "1.0",
-  "description": "Change the color of the body on docs.microsoft.com",
-  "permissions": [
-    "*://docs.microsoft.com/*",
-    "tabs"
-  ], 
-  "browser_action": {
-    "default_icon": {
-      "20": "images/color-changer20.png",
-      "40": "images/color-changer40.png"
-    },
-    "default_title": "Color Changer",
-    "default_popup": "popup.html"
-  }
-}
+     "name": "Picture of the Day Viewer",
+     "version": "1.0",
+     "description": "See Nasa's Picture of the Day!",
+     "manifest_version": 3,
+     "browser_action": {
+       "default_icon": "nasapod32x32.png",
+       "default_popup": "popup.html"
+     }
+   }
 ```
-**Manifest key definitions:**
-* [`name`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/name): the name of the extension
-* [`author`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/author): the author of the extension
-* [`version`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/version): the extension version number
-* [`description`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/description): a description of the extension displayed in the About section of the extension menu in Microsoft Edge
-* [`permissions`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions): an array of strings requesting permissions for the extension. For this extension, we're requesting permissions to see the websites visited ("`tabs`") and to read and change content on URLs matching "`*://docs.microsoft.com/*`".
-* [`browser_action`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/browser_action): places an icon on the Microsoft Edge toolbar, to the right of the address bar
-    * `default_icon`: specifies which icon is used in the toolbar
-    * `default_title`: the text that is displayed when a user hovers over the icon in the toolbar
-    * `default_popup`: The path to the HTML file for the popup
 
-Now that we've created the manifest file, we need a user interface for the extension. 
-
-
-## Creating the popup
-
-For this extension, we will create a popup for the user interface, like below.
-
-![The popup interface of the extension](../media/color-changer_popup.png)
-
-To do this, create a file called "popup.html" in the root of your "color-changer" folder. Paste the following code into "popup.html":
+In the `popup.html` is very simple HTML markup that displays an image (that image, `stars.jpeg` is copied also into our folder with the manifest.json file.
 
 ```html
-<!DOCTYPE html>
-<html>
+<html lang="en">
+     <head>
+       <meta charset="UTF-8" />
+       <title>NASA Picture of the Day</title>
+     </head>
+     <body>
+       <img width="150" src="stars.jpeg" />
+     </body>
+   </html>
+```
+
+To update the plugin that we installed previosly (and have updated with the new `browser_action`), we navigate again to the extensions manager and press the button marked `update`.
+
+
+![](../media/Ext_GettingStarted_ExtManager1_500w.png)
+
+The new extension is loaded and the icon is now a picture of a planet instead of the default, which was just the letter **P** before.  Clicking on the icon, pops up the `star.jpeg` image file that was referenced from the `popup.html`.
+
+
+![](../media/Ext_GettingStarted_ExtManager2_500w.png)
+
+
+With one `manifest.json` and 3 other files, a very simple Browser Action extension has been created. It has a custom icon for launching and when that launch icon is clicked, a single static image pops up that is included in the extension distribution (that is the package that the extension gets distributed in).
+
+![](../media/Ext_GettingStarted_Proj1_500w.png)
+
+
+## Adding jQuery, Ajax and LocalStorage To The Edge/Chromium Extension
+
+### jQuery and Ajax to Popup.html
+
+After seeing this same picture day after day, this extension will get very boring.  NASA has a free service that will give us a URL to a new picture every day, hence the name **Picture of the Day**.
+
+Because extensions are just HTML and JavaScript among other things, everything that works on a web page works in an extension and that includes **jQuery**.  Just like adding jQuery to any HTML file, it's to the `popup.html` file with a script tag in the header.  We plan on creating a parallel JavaScript file to be referenced also by `popup.html` so we add a reference to `popup.js` which will be created next.
+
+```html
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <title>NASA Picture of the Day</title>
+    <script src="lib/jquery.min.js"></script>
+    <script src="popup.js"></script>
   </head>
   <body>
-    <h1>Creating a Microsoft Edge Extension</h1>
-    <p>Color Changer</p>
-    <input id="aliceblue" type="button" value="Aliceblue" />
-    <input id="cornsilk" type="button" value="Cornsilk" />
-    <input id="reset" type="button" value="Reset" />
-    <script src="js/popup.js"></script>
+    <img width="150" src="stars.jpeg" />
   </body>
 </html>
 ```
 
-In "popup.html", we create a title, a paragraph, and three buttons (Aliceblue, Cornsilk, and Reset).
+We also add the physical file to our project in our directory under a lib folder to keep those separate from the files we create ourselves.
 
-Now create a folder called "css" and inside create a file called "styles.css".  Add the styles below.
+In the `popup.js` file, we do a single ajax call to the [NASA API](https://api.nasa.gov/api.html#apod) that gives us the picture of the day. The idea is we make an async request to `.AJAX`, then on completion we replace the `src` tag of the only `img` element on the page with our picture of the day URL downloaded from NASA.
 
-```css
-/* main styles */
-* {
-    font-family: 'Segoe UI';
-}
-
-h1 {
-    font-weight: 600;
-    font-size: .9em;
-}
-
-p {
-    font-weight: 500;
-    font-size: .8em;
-    margin-bottom: 10px;  
-}
+```JAVASCRIPT 
+$(document).ready(function() {
+  $.ajax({
+    url: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+    type: "GET",
+    datatype: "json",
+    success: function(data) {
+      window.localStorage.setItem("apodData", JSON.stringify(data));
+      $("img").attr("src", data.url);
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log("ajax failed");
+    }
+  });
+});
 ```
 
-This CSS gives our extension some basic styles.  Feel free to add more styles to customize your extension. 
 
-Next, we need to create the JavaScript file that interacts with the popup. Create a "js" folder and a file called "popup.js" inside. Update "popup.js" with the code below. 
+### LocalStorage Added For Tracking Picture
 
-```JavaScript
-// get the buttons by id
-let aliceblue = document.getElementById('aliceblue');
-let cornsilk = document.getElementById('cornsilk');
-let reset = document.getElementById('reset');
+Because NASA limits the number of downloads per IP, it is important to call the Ajax all is infrequently as possible.  Now, each time the Edge/Chromium extension activation button is pressed, another Ajax call is generated. That can be rectified by storing the results of the Ajax return in localstorage and then, before calling it the next time, check and see if the values for the picture of the day have been returned already.
 
-// use tabs.insertCSS to change header color on button click
+In the jQuery Ajax success event, `localStorage` is called and a single storage key is updated with the url of the picture of the day for later retrieval. Since this also includes the current day, later, the JavaScript can check to see if the day changed and if the LocalStorage exists but is the wrong day, a new picture will be be retrieved.
 
-// aliceblue
-aliceblue.onclick = () => {
-  browser.tabs.insertCSS({code: "body { background: aliceblue !important; }"});
-};
+The point here is, that our `popup.html` is just plain old HTML and JavaScipt running in a browser. Just like any other web page, it can access remote URL's with Ajax and localStorage with the window object. The code straight forward that does this.
 
-// cornsilk
-cornsilk.onclick = () => {
-  browser.tabs.insertCSS({code: "body { background: cornsilk !important; }"});
-};
+```JAVASCRIPT
+$(document).ready(function() {
+  var localStorageKey = "NASA_POD";
+  var needNewData = true;
 
-// back to original
-reset.onclick = () => {
-  browser.tabs.insertCSS({code: "body { background: none !important; }"});
-};
-```
-
-In "popup.js", the [tabs](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs) API allows us to interact with the browser's tabs and inject script and styles into their page content. Using the [`tabs.insertCSS()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs/insertCSS) method, we inject the specified CSS into the page which changes the header on [docs.microsoft.com](https://docs.microsoft.com) to a different color when the specified button is clicked.
-
-Now that we have the basic popup functionality, let's add icons to the extension. 
-
-## Adding icons
-
-Icons are used to represent the extension in the browser toolbar, the extensions menu, and other places.  The icons you need for this extension are here on GitHub: [images](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer/images). Visit the [Design](./design.md#icons) guide to read more about extension icons in Microsoft Edge.
-
-After you've downloaded the extension icons, save them in an "images" folder inside "color-changer". 
-
-The icon that appears in the toolbar is set using `default_icon` inside of the [`browser_action`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/browser_action) key, which we already added to our manifest file in an earlier section.
-
-The `icons` key defines which icons should be used in the Extensions settings menus. Below, we are specifying multiple icons with different sizes to account for different screen resolutions.  The name of the icons, "25" and "48" are the icons' heights in pixels. 
-
-In ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json), include a top-level key for `icons`:
-
-```json
-  "icons": {
-    "25": "images/color-changer25.png",
-    "48": "images/color-changer48.png"
+  var jsonStringPod = window.localStorage.getItem(localStorageKey);
+  if (jsonStringPod) {
+    var podData = JSON.parse(jsonStringPod);
+    var todayIsoDate = new Date().toISOString().slice(0, 10);
+    if (podData.date === todayIsoDate) {
+      needNewData = false;
+      $("img").attr("src", podData.url);
+    }
   }
+  if (needNewData) {
+    $.ajax({
+      url: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+      type: "GET",
+      datatype: "json",
+      success: function(data) {
+        window.localStorage.setItem(localStorageKey, JSON.stringify(data));
+        $("img").attr("src", data.url);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        console.log("ajax failed");
+      }
+    });
+  }
+});
 ```
 
-**Key definitions:**
-* [`icons`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/icons): specifies the icons for your extenion with key-value pairs of image size in `px` and image path relative to the root directory of the extension.
+Now, the extenstion has been written that when activated, shows the current NASA picture of the day.  When it it's called for the first time, it stores the picture URL in localStorage so that subsequent times, no Ajax call is necessary.  The extension also checks if a new day has happened (by calling the system date function), and if it has, a new Ajax call is made, and a new picture of the day URL is retrieved and cached again.
 
-You'll noticed icons named "inactive##.png" included in the images folder -- we will use these later in this guide.
 
-## Testing the extension
+## Using The Extensions API to Annotate the Launch Icon
 
-Now that we've added the user interface and created icons, let's test the extension. Walk through the steps for [Adding an extension](./adding-and-removing-extensions.md#adding-an-extension) to Microsoft Edge. Then, come back to this guide.
+So far, all the code written for this extension is running in the launched popup HTML page.  That's useful, but not a very extendable architecture.  Edge/Chromium extensions support a loading a background JavaScript that is essentially the event handler for everything about the extension.  It handles all the lifecycle events that are associated with the extension. That includes what happens when the extension is first loaded, what happens everytime a new browser window is created that has reference to the extension as well as processing events of all the tabs in the browser.
 
-After you've added your extension, navigate to any [docs.microsoft.com](https://docs.microsoft.com/) page. You should see the following popup after clicking on the browser action. The color of the [docs.microsoft.com](https://docs.microsoft.com/) body should also change color.
+The idea of this background script is that it's simply events that fire, do the work and finish. Most of the time, the expectation is that the background script lies dormant. 
 
-![Docs.microsoft.com header changed to Aliceblue](../media/color-changer_header_aliceblue.png)
+One other nice feature is that not only, can this background script register for general purpose notifications, it can also participate in timer events.  This will be shown here when a timer event for 10 minutes is set, such that every 10 minutes our Edge/Chromium extension will check to see if there is a new picture of the day, and if so, the background script will run a static method that will take up upcoming, that will annotate the activation icon to let the browser user know they've not seen the latest picture of the day.
 
-![Docs.microsoft.com header changed to Cornsilk](../media/color-changer_header_cornsilk.png)
+### Adding a Background Script to the Manifest.json
 
-If you encounter any errors or functionality that's not working, check out the [Debugging extensions](https://docs.microsoft.com/microsoft-edge/extensions/guides/debugging-extensions) guide or download the full sample here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).
+The most often used name for a background script is `background.js`. That's what is used in this project and for the extension to know about it, that script must be included in the `manifest.json` file. Notice that the `scripts` attribute is an array. In addition to background.js, jquery is also included.  Generated in the background is an `HTML` file that includes both of these JavaScript files so that `background.js` can call methods in `jquery.min.js`.  Below is our new `manifest.json`.
 
-## Adding content and background scripts 
-
-Let's go one step further and add logic to disable the extension from working on pages outside the [docs.microsoft.com](https://docs.microsoft.com/) domain. 
-
-To do this, we first need to create a [content script](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts). Content scripts run in the context of a particular web page, can access the content of a web page, and can communicate with background scripts, which we will create shortly. Inside of your "js" directory, create a file called "content.js".  Add the following code. 
-
-```JavaScript
-// get the URL of the page
-var url = document.location.href;
-
-// if not on a docs.microsoft.com domain
-if (url.indexOf("//docs.microsoft.com") === -1) {
-    // send inactive icons
-    browser.runtime.sendMessage({
-        "iconPath20": "images/inactive20.png",
-        "iconPath40": "images/inactive40.png"
-    });
+```JSON
+{
+  "name": "Picture of the Day Viewer",
+  "version": "1.0",
+  "description": "See Nasa's Picture of the Day!",
+  "manifest_version": 3,
+  "background": {
+    "scripts": ["lib/jquery.min.js","background.js"]
+  },
+  "browser_action": {
+    "default_icon": "nasapod32x32.png",
+    "default_popup": "popup.html"
+  }
 }
 ```
 
-This script gets the URL of the current page through `document.location.href` and checks whether or not the current page is on a [docs.microsoft.com](https://docs.microsoft.com) domain. If the page is not on a [docs.microsoft.com](https://docs.microsoft.com) domain (e.g. [https://www.bing.com/](https://www.bing.com/)), the paths to the inactive icons (grayed out icons) are sent to the background script using [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage).
+### Annotating the Launch Icon using Extension Static Class Methods
 
-You also need to update ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json) to include this `content_scripts` key:
+It would be nice if when there is a Picture of the Day image that as not been seen yet available, that the launch icon would be annotated with the letter _N_ for new. That can be done by updating the background script to include some code that checks to see if a change of the URL is needed, and if so, update the badge icon.
 
-```json
-  "content_scripts": [{
-    "matches": [
-        "<all_urls>"
-    ],
-    "js": ["js/content.js"],
-    "run_at": "document_end"
-}]
-```
+This is a good time to introduce the chrome name space and many of the methods that are available just to running extensions.  All these static methods are available from the `chrome` namespace and are broken down into multiple sections. The specific namespace we want is `chrome.browserAction` and the method we want to call is `setBadgeText`.  The first parameter is the value we want to set to overlay the Extensions launch icon, and the second parameter is the callback function that is executed when that completes.
 
-**Key definitions:**
-* [`content_scripts`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts): specifies which content scripts the browser should load
-   * `matches` (required): specifies the URL pattern to be matched in order for the content script to be loaded 
-   * `js`: the script that should be loaded on matching URLs
-   * `run_at`: specifies where the JavaScript files from the `js` key are injected
 
-Next, we need to create a [background script](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Background_scripts). Background scripts run in the background of the browser, run independently of the lifetime of a web page or browser window, and can communicate with content scripts.
+> [!NOTE] 
+> Pay special attention to calls in the `chrome` namespace that have callbacks. These are async calls which means that if you need the returned value, you will need to wait for the callback before proceeding.
 
-Inside of your "js" folder, create a file called "background.js" and add this code:
+The updated background script now has calls to the `chrome.browserAction` namespace to set the text overlaying the launch icon to "N" when a new picture of the day is available.
 
-```JavaScript
-// listen for sendMessage() from content script
-browser.runtime.onMessage.addListener(
-    function (request, sender, sendResponse) {
-        // set the icon for the browser action from sendMessage() in content script
-        browser.browserAction.setIcon({
-            path: {
-                "20": request.iconPath20,
-                "40": request.iconPath40
-            },
-            tabId: sender.tab.id
-        });
-        // disable browser action for the current tab
-        browser.browserAction.disable(sender.tab.id);
-    });
-```
-
- The [`runtime.onMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/onmessage) method listens for [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage) from the content script.  If the page's domain is not [docs.microsoft.com](https://docs.microsoft.com), then [`browserAction.setIcon()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/setIcon) sets the icon paths to the inactive images. 
-
-This script also disables the browser action ([`browserAction.disable`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/disable)), so that users cannot click on the browser action outside of a [docs.microsoft.com](https://docs.microsoft.com) page. 
-
-We need to add the background script to ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json). Add the following `background` key to your manifest:
-
-```json
-"background": {
-    "scripts": ["js/background.js"],
-    "persistent": true
+```JAVASCRIPT
+$(document).ready(function() {
+  var localStorageKey = "NASA_POD";
+  var needNewData = true;
+  var jsonStringPod = window.localStorage.getItem(localStorageKey);
+  if (jsonStringPod) {
+    var podData = JSON.parse(jsonStringPod);
+    var todayIsoDate = new Date().toISOString().slice(0, 10);
+    if (podData.date === todayIsoDate) {
+      needNewData = false;
+      $("img").attr("src", podData.url);
+    }
   }
+  chrome.browserAction.setBadgeText({ text: "" }); // always clear new flag
+  if (needNewData) {
+    $.ajax({
+      url: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY",
+      type: "GET",
+      datatype: "json",
+      success: function(data) {
+        window.localStorage.setItem(localStorageKey, JSON.stringify(data));
+        $("img").attr("src", data.url);
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        console.log("ajax failed");
+      }
+    });
+  }
+});
 ```
 
-**Key definitions:**
-* [`background`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/background): specifies any background scripts
-   * `scripts`: a path to a JavaScript file
-   * `persistent` (required): This can be either set to `true` or `false`. If set as `true`, the background script will be loaded and continue to persist for the entire browsing section. If set as `false`, the background script will be **loaded with a delay** and will then persist for the browsing session. 
+For this to work completely, it is necessary to also update the `popup.js` such that whenever an image is displayed, the badge text is also cleared.
 
-Reload your extension and test again. To reload your extension: click the "..." for settings and more in Microsoft Edge, click "Extensions", click on your extension, "Color Changer", and click "Reload extension".
+```JAVASCRIPT
+$(document).ready(function() {
+  chrome.browserAction.setBadgeText({ text: "" }); 
+  var localStorageKey = "NASA_POD";
+  //...
+});
+```
 
-Now, open a new tab or refresh an existing tab that's not a [docs.microsoft.com](https://docs.microsoft.com) page.  You should see the inactive icon and not be able to click on the browser action.
 
-Congratulations! You've created an extension for Microsoft Edge! View the full sample here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).  Continue reading to learn more about extensions.
+## Re-organizing For Better Code Reuse and Performance
 
-## Writing a more complex extension
+So far, we have a very flat structure for our Edge/Chromium Extension.  All of our JavaScript is either `popup.js` or `background.js`.  Even though we have a very small trivial extension, there has already been code duplication required that should be unnecessary. In the background script, when a browser tab is opened, a check is made to see if an badge annotation for new should be set on the Extension activation icon.  Then, also, in the `popup.js` code, a similar check is made because it is necessary to know whether localStorage has been used yet.  This duplicate code can be eliminated with a better organization and interaction of the background script and the popup script. In addition, it would be helpful to have a common place to put utility methods as well as another JavaScript to store system wide constants.
 
-Want to write a more complex extension? Take a look at MDN's Beastify extension in the article, [Your second extension](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension). Microsoft Edge's extension model differs slightly from Firefox's, so we've adapted the Beasify extension created in [Your second extension](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension) to function in Microsoft Edge.  Check it out on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/beastify_edge). 
 
-While walking through MDN's article, [Your second extension](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension), keep in mind the following sections. 
+![](../media/Ext_GettingStarted_Proj2.png)
 
-### APIs 
-See the [Supported APIs](../api-support/supported-apis.md) page for a list of supported extensions APIs in Microsoft Edge.
+The suggested organization for this is to add additional JavaScript files to your Extension container and reference them in your `manifest.json`.  All your front end scripts like `popup.js` as well as new backend scripts you may create can reference the common `background.js` script using the method:
 
-### Icon sizes
-Preferred extension icon sizes for Microsoft Edge are 20px, 25px, 30px, 40px. Other supported sizes are 19px, 35px, 38px. For more info on icon sizes and best practices, see the [Design](./design.md) guide.
+```JAVASCRIPT
+var bgpage = chrome.extension.getBackgroundPage();
+```
 
-### JavaScript
-Microsoft Edge's extension model does not support JavaScript Promises.  Instead, use callbacks. For more examples of using callbacks in an extension, take a look at the  [Quick Print](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/quick_print) and [Text Swap](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/text_swap) demos.
+When this is included in `popup.js` a common function can be created that is used in both this file as well as `background.js`.
 
-You can walk through the [Quick Print](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/quick_print) example in the video below.  
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Adding-a-Background-Script-to-you-Edge-Extension/player]
+## Adding a Timer To Poll For Picture of the Day Changes
 
-### Manifest.json
+asdfl;jasfl;kjaslf;asf
 
-* The `author` key is required in Microsoft Edge
-* The `activeTab` key is not supported in Microsoft Edge
+## Debugging The Extension Using Edge/Chromium DevTools
 
-Head over to [MDN web docs](https://developer.mozilla.org/) for more information on [Browser Extensions](https://developer.mozilla.org/Add-ons/WebExtensions). 
+asdfk sad;dsjlfsafksadf a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
