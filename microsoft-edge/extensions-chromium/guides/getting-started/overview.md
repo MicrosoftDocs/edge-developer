@@ -285,6 +285,10 @@ When this is included in `popup.js` a common function can be created that is use
 
 asdfl;jasfl;kjaslf;asf
 
+## Adding an Option Dialog For How Often To Poll Server
+
+asdljfasl;f jalsdkfjlads
+
 ## Debugging The Extension Using Edge/Chromium DevTools
 
 asdfk sad;dsjlfsafksadf a
