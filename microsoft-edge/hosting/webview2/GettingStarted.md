@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **The minimum required version is 76.0.149.0, which is available for Canary channel and will come to Dev channel soon. Make sure you have a Canary installation and it is updated.**
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **The minimum required version is 76.0.149.0.**
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
@@ -52,7 +52,7 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 #include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"
 ```
 
-4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)\packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
+4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
 
 ![copyLoader](images/copyLoader.PNG)
 
