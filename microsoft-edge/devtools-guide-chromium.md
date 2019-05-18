@@ -33,13 +33,13 @@ If you've never used the DevTools before, the Microsoft Edge Developer Tools are
 
 all directly within the browser. These are just examples of a couple features the DevTools provide to make it easier and faster for you to build and test your web sites in Microsoft Edge.
 
-To open the DevTools, you can press the `F12` key or `Ctrl` + `Shift` + `I` on your keyboard. 
+To open the DevTools, you can press the `F12` key or `Ctrl` + `Shift` + `I` on your keyboard on Windows (`Command` + `Option` + `I` on Mac). 
 
-If there's an element on your site that you want to see the HTML and CSS for, you can right-click the element and select **Inspect** to jump into the Elements panel. You can also press `Ctrl` + `Shift` + `C` to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel.
+If there's an element on your site that you want to see the HTML and CSS for, you can right-click the element and select **Inspect** to jump into the Elements panel. You can also press `Ctrl` + `Shift` + `C` on Windows (`Command` + `Option` + `C` on Mac) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel.
 
 <!-- potentially put gif here of Inspect element in action -->
 
-If you want to see logs from your front-end JavaScript code or quickly execute some script, press `Ctrl` + `Shift` + `J` to launch the Console panel in the DevTools.
+If you want to see logs from your front-end JavaScript code or quickly execute some script, press `Ctrl` + `Shift` + `J` on Windows (`Command` + `Option` + `J`) to launch the Console panel in the DevTools.
 
 ## Core tools
 
@@ -83,9 +83,9 @@ Now navigate to the extension you want to add to the DevTools in the [Chrome Web
 
 ## Feedback
 
-Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the `:)` icon next to the `...` button in the top right corner of the browser and enter any feedback or feature requests you have for the DevTools.
+Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the `:)` icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
 
-![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback.png)
+![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback2.png)
 
 If you want to preview the [latest features coming to the DevTools](./devtools-guide-chromium/whats-new.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/download), which builds nightly.
 
@@ -93,26 +93,26 @@ If you want to preview the [latest features coming to the DevTools](./devtools-g
 
 These shortcuts control the main DevTools window and/or work across all tools.
 
-Action | Shortcut
-:------------ | :-------------
-Show/Hide DevTools (opens to last viewed panel) | `F12` or `Ctrl` + `Shift` + `I`
-Show the Console panel | `Ctrl` + `Shift` + `J`
-Show the DevTools in **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel | `Ctrl` + `Shift` + `C`
-Show Settings | `?` or `Fn` + `F1`
-Show the next panel | `Ctrl` + `]`
-Show the previous panel | `Ctrl` + `[`
-Dock the DevTools in the last position used. If the DevTools have been in their default position for the entire session, this shortcut undocks the DevTools into a separate window | `Ctrl` + `Shift` + `D`
-Toggle **Device Mode** | `Ctrl` + `Shift` + `M`
-Toggle **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel | `Ctrl` + `Shift` + `C`
-Show the Command Menu | `Ctrl` + `Shift` + `P`
-Show/Hide the Drawer | `Esc`
-Refresh. This will refresh the page using the cache. **Note:** if you're debugging and paused at a breakpoint, this resumes execution first. | `F5` or `Ctrl` + `R`
-Hard Refresh. This forces Microsoft Edge to download resources again and reload. It is possible that the used resources may come from a cached version | `Ctrl` + `F5` or `Ctrl` + `Shift` + `R`
-Search for text within the current panel. Not supported in the Audits, Application, and Security panels | `Ctrl` + `F`
-Show the Search panel in the Drawer, which lets you search for text across all loaded resources | `Ctrl` + `Shift` + `F`
-Open a file in the Sources panel | `Ctrl` + `O` or `Ctrl` + `P`
-Zoom in | `Ctrl` + `Shift` + `+`
-Zoom out | `Ctrl` + `-`
-Restore default zoom level | `Ctrl` + `0`
-Run snippet | Press `Ctrl` + `O` or `Ctrl` + `P`, type `!` followed by the name of the script, then press `Enter`
-Show non-editable HTML source code in a new tab | `Ctrl` + `U`
+Action | Windows | Mac
+:------------ | :------------- | :-------------
+Show/Hide DevTools (opens to last viewed panel) | `F12` or `Ctrl` + `Shift` + `I` | `Command` + `Option` + `I`
+Show the Console panel | `Ctrl` + `Shift` + `J` | `Command` + `Option` + `J`
+Show the DevTools in **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel | `Ctrl` + `Shift` + `C` | `Command` + `Option` + `C`
+Show Settings | `?` or `Fn` + `F1` | `?` or `Fn` + `F1`
+Show the next panel | `Ctrl` + `]` | `Command` + `]`
+Show the previous panel | `Ctrl` + `[` | `Command` + `[`
+Dock the DevTools in the last position used. If the DevTools have been in their default position for the entire session, this shortcut undocks the DevTools into a separate window | `Ctrl` + `Shift` + `D` | `Command` + `Shift` + `D`
+Toggle **Device Mode** | `Ctrl` + `Shift` + `M` | `Command` + `Shift` + `M`
+Toggle **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel | `Ctrl` + `Shift` + `C` | `Command` + `Shift` + `C`
+Show the Command Menu | `Ctrl` + `Shift` + `P` | `Command` + `Shift` + `P`
+Show/Hide the Drawer | `Esc` | `Esc`
+Refresh. This will refresh the page using the cache. **Note:** if you're debugging and paused at a breakpoint, this resumes execution first. | `F5` or `Ctrl` + `R` | `Command` + `R`
+Hard Refresh. This forces Microsoft Edge to download resources again and reload. It is possible that the used resources may come from a cached version | `Ctrl` + `F5` or `Ctrl` + `Shift` + `R` | `Command` + `Shift` + `R`
+Search for text within the current panel. Not supported in the Audits, Application, and Security panels | `Ctrl` + `F` | `Command` + `F`
+Show the Search panel in the Drawer, which lets you search for text across all loaded resources | `Ctrl` + `Shift` + `F` | `Command` + `Option` + `F`
+Open a file in the Sources panel | `Ctrl` + `O` or `Ctrl` + `P` | `Command` + `O` or `Command` + `P`
+Zoom in | `Ctrl` + `Shift` + `+` | `Command` + `Shift` + `+`
+Zoom out | `Ctrl` + `-` | `Command` + `-`
+Restore default zoom level | `Ctrl` + `0` | `Command` + `0`
+Run snippet | Press `Ctrl` + `O` or `Ctrl` + `P`, type `!` followed by the name of the script, then press `Enter` | Press `Command` + `O` or `Command` + `P`, type `!` followed by the name of the script, then press `Enter`
+Show non-editable HTML source code in a new tab | `Ctrl` + `U` | N/A

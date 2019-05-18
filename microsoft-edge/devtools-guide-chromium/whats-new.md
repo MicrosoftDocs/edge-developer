@@ -23,7 +23,7 @@ If you are checking out the next version of Microsoft Edge and you mainly develo
 
 ## New dark and light themes for the DevTools
 
-We've designed some new dark and light themes for the DevTools that we think you'll love! By default, the Microsoft Edge (Chromium) DevTools will use the Dark theme. To change the theme of the DevTools, press `F1` or navigate to Settings using the `...` button in the top right corner of the DevTools.
+We've designed some new dark and light themes for the DevTools that we think you'll love! By default, the Microsoft Edge (Chromium) DevTools will use the Dark theme. To change the theme of the DevTools, press `Fn` + `F1` on Windows or Mac or navigate to Settings using the `...` button in the top right corner of the DevTools.
 
 ![Microsoft Edge (Chromium) DevTools Main Menu](./media/devtools-main-menu.png)
 
