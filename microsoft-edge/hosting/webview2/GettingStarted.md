@@ -79,11 +79,11 @@ SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 // Use CreateWebView2EnvironmentWithDetails if you need to specify browser location, user folder, etc.
 CreateWebView2Environment(
     Callback<IWebView2CreateWebView2EnvironmentCompletedHandler>(
-        [&webviewWindow, hWnd](HRESULT result, IWebView2Environment* env) -> HRESULT {
+        [hWnd](HRESULT result, IWebView2Environment* env) -> HRESULT {
 
             // Create a WebView, whose parent is the main window hWnd
             env->CreateWebView(hWnd, Callback<IWebView2CreateWebViewCompletedHandler>
-                ([&webviewWindow, hWnd](HRESULT result, IWebView2WebView* webview) -> HRESULT {
+                ([hWnd](HRESULT result, IWebView2WebView* webview) -> HRESULT {
                 if (webview != nullptr) {
                     webviewWindow = webview;
                 }
