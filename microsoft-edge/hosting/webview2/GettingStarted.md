@@ -158,13 +158,13 @@ The hosting app can also inject JavaScript into WebView. You can task WebView to
 Copy the following code below `// Step 5 - Scripting`.
 
 ```cpp
-// Schedule an async task to add initialization script that freezes the window object
-webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(window);", nullptr);
+// Schedule an async task to add initialization script that freezes the Object object
+webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
 // Schedule an async task to print foo
 webviewWindow->ExecuteScript(L"alert(\'foo\');", nullptr);
 ```
 
-Press F5 to build and run the app. WebView will always freeze the window object and print `foo` once.
+Press F5 to build and run the app. WebView will always freeze the Object object and print `foo` once.
 
 ![printFoo](images/printFoo.PNG)
 
