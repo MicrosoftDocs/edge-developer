@@ -27,9 +27,7 @@ Open **WebView2Sample.sln** in Visual Studio. If you are using an older version 
 
 ![toolVersion](images/toolVersion.PNG)
 
-Press F5 to build and run the sample app. You should see an app displaying an empty window.
-
-![emptyApp](images/emptyApp.PNG)
+Visual Studio may show some errors due to missing WebView2 header file, which should go away once Step 2 is completed.
 
 ## Step 2 - Install WebView2 SDK
 
@@ -60,7 +58,9 @@ And add the loader lib file as a linker input. Under **Configuration Properties*
 
 ![addLib](images/addLib.PNG)
 
-You are all set to use and build against the WebView2 API.
+You are all set to use and build against the WebView2 API. Press F5 to build and run the sample app. You should see an app displaying an empty window.
+
+![emptyApp](images/emptyApp.PNG)
 
 ## Step 3 - Create a single WebView within the parent window
 
