@@ -82,8 +82,8 @@ CreateWebView2Environment(
         [hWnd](HRESULT result, IWebView2Environment* env) -> HRESULT {
 
             // Create a WebView, whose parent is the main window hWnd
-            env->CreateWebView(hWnd, Callback<IWebView2CreateWebViewCompletedHandler>
-                ([hWnd](HRESULT result, IWebView2WebView* webview) -> HRESULT {
+            env->CreateWebView(hWnd, Callback<IWebView2CreateWebViewCompletedHandler>(
+                [hWnd](HRESULT result, IWebView2WebView* webview) -> HRESULT {
                 if (webview != nullptr) {
                     webviewWindow = webview;
                 }
@@ -161,12 +161,15 @@ Copy the following code below `// Step 5 - Scripting`.
 // Schedule an async task to add initialization script that freezes the Object object
 webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
 // Schedule an async task to print foo
-webviewWindow->ExecuteScript(L"alert(\'foo\');", nullptr);
+webviewWindow->ExecuteScript(L"window.document.URL;", Callback<IWebView2ExecuteScriptCompletedHandler>(
+    [](HRESULT errorCode, LPCWSTR resultObjectAsJson) -> HRESULT {
+        LPCWSTR URL = resultObjectAsJson;
+        //doSomethingWithURL(URL);
+        return S_OK;
+    }).Get());
 ```
 
-Press F5 to build and run the app. WebView will always freeze the Object object and print `foo` once.
-
-![printFoo](images/printFoo.PNG)
+Now WebView will always freeze the Object object and return the page document once.
 
 **Note that these script injection APIs (and some other WebView2 APIs) are asynchronous, you should use callbacks if code is to be executed in a particular order.**
 
