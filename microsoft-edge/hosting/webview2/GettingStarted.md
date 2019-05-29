@@ -160,7 +160,7 @@ Copy the following code below `// Step 5 - Scripting`.
 ```cpp
 // Schedule an async task to add initialization script that freezes the Object object
 webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
-// Schedule an async task to print foo
+// Schedule an async task to get the document URL
 webviewWindow->ExecuteScript(L"window.document.URL;", Callback<IWebView2ExecuteScriptCompletedHandler>(
     [](HRESULT errorCode, LPCWSTR resultObjectAsJson) -> HRESULT {
         LPCWSTR URL = resultObjectAsJson;
