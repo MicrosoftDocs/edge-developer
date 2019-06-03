@@ -22,7 +22,7 @@ Within IE Mode, the rendering process is entirely based in Internet Explorer 11.
 <!-- Once you get the VM working, take a picture of the badge here -->
 ![IE Mode badge in the address bar](./media/ie-mode-badge.png)
 
-IE Mode will is available on all platforms that currently support Internet Explorer 11 such as Windows 10, Windows 7, Windows Server, etc. <!-- Confirm this with Adrian >
+IE Mode is currently available on Windows 10 Version 1903 (May 2019 Update).
 
 ## Launching the DevTools on a tab in IE Mode
 
@@ -30,8 +30,8 @@ While on a tab in IE Mode, the DevTools are unavailable. Pressing `F12` or `Ctrl
 
 Instead, you will see a message that the DevTools are unavailable for web sites in IE Mode. This is because a number of components in the DevTools (like the Network and Performance tools) would break when the rendering engine switches from Chromium to Internet Explorer 11 in IE Mode.
 
-<!-- Once you get the VM working, take a picture of the message when DevTools launch here -->
-![IE Mode badge in the address bar](./media/ie-mode-devtools.png)
+<!-- TODO: Paul Gildea, add screenshot of message that appears to user when launching DevTools on tab in IE Mode -->
+![DevTools launched in IE Mode](./media/ie-mode-devtools.png)
 
 If you are developing or maintaining an Internet Explorer 11-based web site or application, we recommend navigating to the same page in Internet Explorer 11. On Windows 10, you can find the shortcut for Internet Explorer 11 on the Start Menu underneath Windows Accessories. On Windows 7, you can find Internet Explorer 11 on the main Start Menu. You can now launch the Internet Explorer DevTools by pressing `F12` or `Ctrl`+`Shift`+`I`. To learn more about how to use those tools, click [here](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).
 
@@ -42,5 +42,8 @@ You can launch Microsoft Edge (Chromium) with remote debugging enabled, which is
 `start msedge --remote-debugging-edge=9222`
 
 When Microsoft Edge (Chromium) is launched with this command line argument, IE Mode will be unavailable. You can still navigate to web sites or applications that would otherwise be in IE Mode but the content will render via Chromium, not Internet Explorer 11. You can expect that the parts of those pages that rely on IE11, like ActiveX controls, will not render correctly. The IE Mode badge will still appear in the address bar but it will look like this:
+
+<!-- TODO: Paul Gildea, add screenshot of badge in remote debugging mode -->
+![IE Mode when remote debugging](./media/ie-mode-badge-remote-debugging.png)
 
 IE Mode will remain unavailable until you completely close Microsoft Edge (Chromium).
