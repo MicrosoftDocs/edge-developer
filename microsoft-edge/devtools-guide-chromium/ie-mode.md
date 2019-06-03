@@ -19,7 +19,6 @@ IE Mode is a mechanism by which enterprises may specify a set of websites that, 
 
 Within IE Mode, the rendering process is entirely based in Internet Explorer 11. The Microsoft Edge (Chromium) manager process manages the lifetime of the rendering process, but it is constrained to the tab's lifetime on a given site or application. When a tab is rendering in IE Mode, a badge appears in the address bar for the given tab:
 
-<!-- Once you get the VM working, take a picture of the badge here -->
 ![IE Mode badge in the address bar](./media/ie-mode-badge.png)
 
 IE Mode is currently available on Windows 10 Version 1903 (May 2019 Update).
