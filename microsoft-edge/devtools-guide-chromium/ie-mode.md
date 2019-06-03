@@ -39,7 +39,7 @@ If you are developing or maintaining an Internet Explorer 11-based web site or a
 
 You can launch Microsoft Edge (Chromium) with remote debugging enabled, which is typically how tools like Visual Studio or VS Code launch Edge, from the command line:
 
-`start msedge --remote-debugging-edge=9222`
+`start msedge --remote-debugging-port=9222`
 
 When Microsoft Edge (Chromium) is launched with this command line argument, IE Mode will be unavailable. You can still navigate to web sites or applications that would otherwise be in IE Mode but the content will render via Chromium, not Internet Explorer 11. You can expect that the parts of those pages that rely on IE11, like ActiveX controls, will not render correctly. The IE Mode badge will still appear in the address bar but it will look like this:
 
