@@ -10,8 +10,6 @@ keywords: microsoft edge, web developement, f12 tools, devtools
 
 # DevTools For Beginners: Get Started with CSS 
 
-By: [Katherine Jackson](https://developers.google.com/web/resources/contributors/katjackson) (Technical Writer Intern, Chrome DevTools)
-
 In this tutorial, you learn how to use CSS to style a web page. You also learn how to
 use Microsoft Edge DevTools to experiment with CSS changes.
 
@@ -785,4 +783,4 @@ Congratulations! You're done!
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms 
-  described in the [Creative Commons 3.0 Attribution License](https://creativecommons.org/licenses/by/3.0/). The original page can be found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css).
+  described in the [Creative Commons 3.0 Attribution License](https://creativecommons.org/licenses/by/3.0/). The original page can be found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors/katjackson) (Technical Writer Intern, Chrome DevTools).

@@ -10,8 +10,6 @@ keywords: microsoft edge, web developement, f12 tools, devtools
 
 # DevTools for Beginners: Get Started with HTML and the DOM 
 
-By: [Katherine Jackson](https://developers.google.com/web/resources/contributors/katjackson) (Technical Writer Intern, Chrome DevTools)
-
 This is the first in a series of tutorials that teach you the basics of web
 development. You will also learn about a set of web developer tools called Microsoft Edge
 DevTools that can increase your productivity.
@@ -441,4 +439,4 @@ source code.
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms 
-  described in the [Creative Commons 3.0 Attribution License](https://creativecommons.org/licenses/by/3.0/). The original page can be found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html).
+  described in the [Creative Commons 3.0 Attribution License](https://creativecommons.org/licenses/by/3.0/). The original page can be found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors/katjackson) (Technical Writer Intern, Chrome DevTools).
