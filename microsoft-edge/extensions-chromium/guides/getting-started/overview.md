@@ -18,24 +18,6 @@ ms.custom: xxxxxxx
 
 This "Getting Started" guide is designed as a brief review for those who have build Edge/Chromium extensions before as well as a beginners guide for those who have never built an Edge/Chromium extension (referred to as extensions going forward). It assumes the reader has at least basic JavaScript skills and understands how to create basic HTML pages.
 
-- [What is a Edge/Chromium Extension?](#what-is-a-edge-chromium-extension-)
-- [Build your first Edge/Chromium Extension](#build-your-first-edge-chromium-extension)
-  * [The Required manifest.json file](#the-required-manifestjson-file)
-  * [Installing the Simple Extension In Edge/Chromium](#installing-the-simple-extension-in-edge-chromium)
-  * [Extending the Extension to Pop Up an Image When Launched](#extending-the-extension-to-pop-up-an-image-when-launched)
-- [Adding jQuery, Ajax and LocalStorage To The Edge/Chromium Extension](#adding-jquery--ajax-and-localstorage-to-the-edge-chromium-extension)
-  * [jQuery and Ajax to Popup.html](#jquery-and-ajax-to-popuphtml)
-  * [LocalStorage Added For Tracking Picture](#localstorage-added-for-tracking-picture)
-- [Using The Extensions API to Annotate the Launch Icon](#using-the-extensions-api-to-annotate-the-launch-icon)
-  * [Adding a Background Script to the Manifest.json](#adding-a-background-script-to-the-manifestjson)
-  * [Annotating the Launch Icon using Extension Static Class Methods](#annotating-the-launch-icon-using-extension-static-class-methods)
-- [Re-organizing For Better Code Reuse and Performance](#re-organizing-for-better-code-reuse-and-performance)
-- [Adding a Timer To Poll For Picture of the Day Changes](#adding-a-timer-to-poll-for-picture-of-the-day-changes)
-- [Adding an Option Dialog For How Often To Poll Server](#adding-an-option-dialog-for-how-often-to-poll-server)
-- [Debugging The Extension Using Edge/Chromium DevTools](#debugging-the-extension-using-edge-chromium-devtools)
-
-
-
 ## What is a Edge/Chromium Extension?
 
 An extension can be thought of as a package of web programming assets including typically standard HTML, CSS and JavaScript files that are packaged together and served, by the users web browser.  The extension itself, can do practically everything a local or remote web server can do.  Extensions can be launched from special icons on the browser bar, then can both be started from events on existing pages, the listen for user actions and then modify existing pages, as well as a host of other capabilities.
