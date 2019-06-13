@@ -61,7 +61,7 @@ The Embedded Browser WebView enables you to host web content using the latest Ed
 [put_Bounds](#put_bounds) | Set the Bounds property.
 [get_ZoomFactor](#get_zoomfactor) | The zoom factor for the current page in the WebView.
 [put_ZoomFactor](#put_zoomfactor) | Set the ZoomFactor property.
-[get_IsVisible](#get_isvisible) | Show or hide the browser window.
+[get_IsVisible](#get_isvisible) | The IsVisible property determines whether to show or hide the webview.
 [put_IsVisible](#put_isvisible) | Set the IsVisible property.
 [PostWebMessageAsJson](#postwebmessageasjson) | Post the specified webMessage to the top level document in this [IWebView2WebView](#interface_i_web_view2_web_view).
 [PostWebMessageAsString](#postwebmessageasstring) | This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
@@ -72,6 +72,10 @@ The Embedded Browser WebView enables you to host web content using the latest Ed
 [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived) | Subscribe to a DevToolsProtocol event.
 [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived) | Remove an event handler previously added with add_DevToolsProtocolEventReceived.
 [get_BrowserProcessId](#get_browserprocessid) | The process id of the browser process that hosts the WebView.
+[get_CanGoBack](#get_cangoback) | Can navigate the webview to the previous page in the navigation history.
+[get_CanGoForward](#get_cangoforward) | Can navigate the webview to the next page in the navigation history.
+[GoBack](#goback) | Navigates the webview to the previous page in the navigation history.
+[GoForward](#goforward) | Navigates the webview to the next page in the navigation history.
 [WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#webview2_capture_preview_image_format) | Image format used by the [IWebView2WebView::CapturePreview](#interface_i_web_view2_web_view_1a1d04f117ee7a3f8828bdaad7eecc6668) method.
 [WEBVIEW2_SCRIPT_DIALOG_KIND](#webview2_script_dialog_kind) | Kind of JavaScript dialog used in the [IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#interface_i_web_view2_script_dialog_opening_event_handler) interface.
 [WEBVIEW2_PROCESS_FAILED_KIND](#webview2_process_failed_kind) | Kind of process failure used in the [IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#interface_i_web_view2_process_failed_event_handler) interface.
@@ -521,21 +525,21 @@ Add an event handler for the MoveFocusRequested event.
 MoveFocusRequested fires when user tries to tab out of the WebView. The WebView's focus has not changed when this event is fired.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_MoveFocusRequested(
-        Callback<IWebView2MoveFocusRequestedEventHandler>(
-            [moveFocusOut](
-                IWebView2WebView* sender,
-                IWebView2MoveFocusRequestedEventArgs* args) -> HRESULT
-    {
-        WEBVIEW2_MOVE_FOCUS_REASON reason = WEBVIEW2_MOVE_FOCUS_REASON_PROGRAMMATIC;
-        RETURN_IF_FAILED(args->get_Reason(&reason));
+        CheckFailure(m_webview->add_MoveFocusRequested(
+            Callback<IWebView2MoveFocusRequestedEventHandler>(
+                [this](
+                    IWebView2WebView* sender,
+                    IWebView2MoveFocusRequestedEventArgs* args) -> HRESULT
+        {
+            WEBVIEW2_MOVE_FOCUS_REASON reason = WEBVIEW2_MOVE_FOCUS_REASON_PROGRAMMATIC;
+            RETURN_IF_FAILED(args->get_Reason(&reason));
 
-        // callback to handle move focus out of WebView
-        const bool forward = (reason == WEBVIEW2_MOVE_FOCUS_REASON_NEXT);
-        const bool handled = moveFocusOut(forward);
-        RETURN_IF_FAILED(args->put_Handled(handled ? TRUE : FALSE));
-        return S_OK;
-    }).Get(), &m_moveFocusRequestedToken));
+            // callback to handle move focus out of WebView
+            const bool forward = (reason == WEBVIEW2_MOVE_FOCUS_REASON_NEXT);
+            const bool handled = MoveFocusOut(forward);
+            RETURN_IF_FAILED(args->put_Handled(handled ? TRUE : FALSE));
+            return S_OK;
+        }).Get(), &m_moveFocusRequestedToken));
 ```
 
 ```cpp
@@ -565,15 +569,13 @@ Add an event handler for the GotFocus event.
 GotFocus fires when WebView got focus.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_GotFocus(
-        Callback<IWebView2FocusChangedEventHandler>(
-            [callback](IWebView2WebView* sender, IUnknown* args) -> HRESULT
-    {
-        // notify app that webivew got focus,
-        // do something like update status bar.
-        callback();
-        return S_OK;
-    }).Get(), &m_gotFocusToken));
+        CheckFailure(m_webview->add_GotFocus(
+            Callback<IWebView2FocusChangedEventHandler>(
+                [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
+        {
+            OnGotFocus();
+            return S_OK;
+        }).Get(), &m_gotFocusToken));
 ```
 
 #### remove_GotFocus 
@@ -591,15 +593,13 @@ Add an event handler for the LostFocus event.
 LostFocus fires when WebView lost focus. In the case where MoveFocusRequested event is fired, the focus is still on WebView when MoveFocusRequested event fires. Lost focus only fires afterwards when app's code or default action of MoveFocusRequested event set focus away from WebView.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_LostFocus(
-        Callback<IWebView2FocusChangedEventHandler>(
-            [callback](IWebView2WebView* sender, IUnknown* args) -> HRESULT
-    {
-        // notify app that webivew lost focus,
-        // do something like update status bar.
-        callback();
-        return S_OK;
-    }).Get(), &m_lostFocusToken));
+        CheckFailure(m_webview->add_LostFocus(
+            Callback<IWebView2FocusChangedEventHandler>(
+                [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
+        {
+            OnLostFocus();
+            return S_OK;
+        }).Get(), &m_lostFocusToken));
 ```
 
 #### remove_LostFocus 
@@ -617,28 +617,46 @@ Add an event handler for the WebResourceRequested event.
 Fires when the WebView has performs any HTTP request. Use urlFilter to pass in a list with size filterLength of urls to listen for. Each url entry also supports wildcards: '*': zero or more, '?' exactly one. For each urlFilter entry, provide a matching resourceContextFilter as a bit vector of type of resources WebResourceRequested should fire matching that urlFilter. if filterLength is 0, the event will fire for all network requests. The supported resource contexts are: Document, Stylesheet, Image, Media, Font, Script, XHR, Fetch.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_WebResourceRequested(
-        all_urls, images_filter, 1,
-        Callback<IWebView2WebResourceRequestedEventHandler>(
-            this, &WebView::WebResourceRequestedEventHandler)
-        .Get(),
-        &m_webResourceRequestedToken));
+    PCWSTR all_urls[] = { L"*" };
+    WEBVIEW2_WEB_RESOURCE_CONTEXT images_filter[] = {
+        WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE };
+    m_webview->add_WebResourceRequested(
+      all_urls, images_filter, 1,
+      Callback<IWebView2WebResourceRequestedEventHandler>(
+        this, &AppWindow::OnWebResourceRequested)
+      .Get(),
+      &m_webResourceRequestedToken);
 ```
 
 ```cpp
-HRESULT WebView::WebResourceRequestedEventHandler(
+HRESULT AppWindow::OnWebResourceRequested(
     IWebView2WebView* sender,
-    IWebView2WebResourceRequestedEventArgs* args)
+  IWebView2WebResourceRequestedEventArgs* args)
 {
-    if (block_images_)
-    {
-        ComPtr<IWebView2WebResourceResponse> response;
-        RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
-            &response));
-        RETURN_IF_FAILED(args->put_Response(response.Get()));
-    }
+  ComPtr<IWebView2WebResourceRequest> request;
+  args->get_Request(&request);
+  wil::unique_cotaskmem_string requestUri;
+  request->get_Uri(&requestUri);
+  std::wstring requestUriString = requestUri.get();
+  std::wstring extension = requestUriString.substr(requestUriString.length() - 4);
+  if (m_blockImages && (extension == L".jpg" || extension == L".png"))
+  {
+    ComPtr<IWebView2WebResourceResponse> response;
+    RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
+      &response));
+    ComPtr<IWebView2HttpResponseHeaders> responseHeaders;
+    RETURN_IF_FAILED(response->get_Headers(&responseHeaders));
+    // Fake response with jpeg type.
+    RETURN_IF_FAILED(responseHeaders->AppendHeader(L"Content-Type", L"image/jpeg"));
+    RETURN_IF_FAILED(args->put_Response(response.Get()));
+  }
+  else if (m_changeUserAgent) {
+    ComPtr<IWebView2HttpRequestHeaders> requestHeaders;
+    RETURN_IF_FAILED(request->get_Headers(&requestHeaders));
+    requestHeaders->SetHeader(L"User-Agent", overridingUserAgent.c_str());
+  }
 
-    return S_OK;
+  return S_OK;
 }
 ```
 
@@ -960,7 +978,7 @@ Execute JavaScript code from the javascript parameter in the current top level d
 
 > public HRESULT [ExecuteScript](#interface_i_web_view2_web_view_1a815441aceb1588264e801761085de322)(LPCWSTR javaScript,[IWebView2ExecuteScriptCompletedHandler](IWebView2ExecuteScriptCompletedHandler.md#interface_i_web_view2_execute_script_completed_handler) * handler)
 
-This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. Only basic JavaScript types are supported (string, number, array, etc) and for anything unsupported (`undefined`, `{a:1}`, `document.body`, etc) the string 'null' will be returned. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the call is made while the webview is on one document, and a navigation occurs after the call is made but before the JavaScript is executed, then the ExecuteScript call is ignored.
+This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the call is made while the webview is on one document, and a navigation occurs after the call is made but before the JavaScript is executed, then the script will not be executed and the handler will be called with E_FAIL for its errorCode parameter. If JavaScript is disabled for the current document, then the handler will also be called with E_FAIL.
 
 ```cpp
 HRESULT ScenarioScript::NavigationCompletedEventHandler(
@@ -1050,17 +1068,29 @@ Bounds are relative to the parent HWND. The app has two ways it can position a W
 
 1. Use the app's top most window as the WebView parent HWND. Set the WebView's Bound's top left corner so that the WebView is positioned correctly in the app. The Bound's values are in the host's coordinate space.
 
-```cpp
-    RECT bounds = {};
-    GetClientRect(hwnd, &bounds);
-    return m_webview->put_Bounds(bounds);
-```
-
 #### put_Bounds 
 
 Set the Bounds property.
 
 > public HRESULT [put_Bounds](#interface_i_web_view2_web_view_1abdd3b3f3f40ec9b5fb40550674dec528)(RECT bounds)
+
+```cpp
+void AppWindow::ResizeWebView()
+{
+    if (m_webview)
+    {
+        RECT current_bounds;
+        GetClientRect(m_hostWindow, &current_bounds);
+        RECT desired_bounds = current_bounds;
+        if (m_webViewRatio < 1)
+        {
+            desired_bounds = { 0, 0, (long)(current_bounds.right * m_webViewRatio),
+                              (long)(current_bounds.bottom * m_webViewRatio) };
+        }
+        m_webview->put_Bounds(desired_bounds);
+    }
+}
+```
 
 #### get_ZoomFactor 
 
@@ -1110,32 +1140,40 @@ Set the ZoomFactor property.
 
 #### get_IsVisible 
 
-Show or hide the browser window.
+The IsVisible property determines whether to show or hide the webview.
 
 > public HRESULT [get_IsVisible](#interface_i_web_view2_web_view_1a828193b6c1d597f1a589afc54c49bd3a)(BOOL * isVisible)
 
 If IsVisible is set to false, the webview will be transparent and will not be rendered. However, this will not affect the window containing the webview (the HWND parameter that was passed to CreateWebView). If you want that window to disappear too, call ShowWindow on it directly in addition to modifying the IsVisible property. WebView as a child window won't get window messages when the top window is minimized or restored. For performance reason, developer should set IsVisible property of the WebView to false when the app window is minimized and back to true when app window is restored. App window can do this by handling SC_MINIMIZE and SC_RESTORE command upon receiving WM_SYSCOMMAND message.
 
 ```cpp
-bool WebView::ToggleIsVisible()
+void AppWindow::ToggleVisibility()
 {
-    BOOL setting_value = FALSE;
-    m_webview->get_IsVisible(&setting_value);
-    m_webview->put_IsVisible(!setting_value);
-    return !setting_value;
+    BOOL visible;
+    m_webview->get_IsVisible(&visible);
+    m_isVisible = !visible;
+    m_webview->put_IsVisible(m_isVisible);
+    ShowWindow(m_hostWindow, m_isVisible ? SW_SHOWNA : SW_HIDE);
 }
 ```
 
 ```cpp
     case WM_SYSCOMMAND:
     {
-        if (wParam == SC_MINIMIZE)
+        if (!m_webview) break;
+        BOOL visible;
+        m_webview->get_IsVisible(&visible);
+        // Hide the webview when minimized. Otherwise, show the webview when restored
+        // AND the user didn't toggle visibility off before minimizing.
+        // The webview can be visible on restore if it was in a maximized case for
+        // example so don't toggle it in those cases.
+        if (wParam == SC_MINIMIZE && visible)
         {
-            m_webview->ToggleIsVisible();
+            m_webview->put_IsVisible(FALSE);
         }
-        else if (wParam == SC_RESTORE)
+        else if (wParam == SC_RESTORE && !visible && m_isVisible)
         {
-            m_webview->ToggleIsVisible();
+            m_webview->put_IsVisible(TRUE);
         }
     } break;
 ```
@@ -1270,6 +1308,8 @@ Closes the webview and cleans up the underlying browser instance.
 
 > public HRESULT [Close](#interface_i_web_view2_web_view_1ab89c2d6cf7e33606791af1907d34c9d6)()
 
+Cleaning up the browser instace will release the resources powering the webview. The browser instance will be shut down if there are no other webviews using it.
+
 After calling Close, all method calls will fail and event handlers will stop firing.
 
 ```cpp
@@ -1395,6 +1435,34 @@ Remove an event handler previously added with add_DevToolsProtocolEventReceived.
 The process id of the browser process that hosts the WebView.
 
 > public HRESULT [get_BrowserProcessId](#interface_i_web_view2_web_view_1a42ac0f40e782f3739678a54f02041ea6)(UINT32 * value)
+
+#### get_CanGoBack 
+
+Can navigate the webview to the previous page in the navigation history.
+
+> public HRESULT [get_CanGoBack](#interface_i_web_view2_web_view_1a74df1fb0e0a9eb64c97b7a09773293a6)(BOOL * canGoBack)
+
+get_CanGoBack change value with the DocumentStateChanged event.
+
+#### get_CanGoForward 
+
+Can navigate the webview to the next page in the navigation history.
+
+> public HRESULT [get_CanGoForward](#interface_i_web_view2_web_view_1a82515d39dc69f1b1832db2590284a788)(BOOL * canGoForward)
+
+get_CanGoForward change value with the DocumentStateChanged event.
+
+#### GoBack 
+
+Navigates the webview to the previous page in the navigation history.
+
+> public HRESULT [GoBack](#interface_i_web_view2_web_view_1a5cc0cfe51007a8f55ee7fbf32867bbaf)()
+
+#### GoForward 
+
+Navigates the webview to the next page in the navigation history.
+
+> public HRESULT [GoForward](#interface_i_web_view2_web_view_1aca830d498dc98d8226d85b8040349f6e)()
 
 #### WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT 
 
