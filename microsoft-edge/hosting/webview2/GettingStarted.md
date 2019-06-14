@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **We recommend using the Canary channel and the minimum required version is 77.0.188.0**.
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **We recommend using the Canary channel and the minimum required version is 77.0.190.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app

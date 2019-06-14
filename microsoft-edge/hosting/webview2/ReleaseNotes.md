@@ -16,7 +16,7 @@ Release notes for [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.We
 
 ## 0.8.190
 
-[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190)
+[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190) | minimum Microsoft Edge version 77.0.190.0.
 
 **We made breaking changes in this preview update so existing apps need to be re-compiled.**
 
@@ -32,6 +32,6 @@ Release notes for [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.We
 
 ## 0.8.149
 
-[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.149)
+[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.149) | minimum Microsoft Edge version 76.0.149.0.
 
 Initial developer preview release.
