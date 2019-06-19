@@ -1,3 +1,12 @@
+---
+title: DevTools for Beginners
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 06/04/2019
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: microsoft edge, web developement, f12 tools, devtools
+---
 <!-- Copyright 05/29/2019 Katherine Jackson 
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,15 +20,6 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
----
-title: DevTools for Beginners
-author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 06/04/2019
-ms.topic: article
-ms.prod: microsoft-edge
-keywords: microsoft edge, web developement, f12 tools, devtools
----
 
 # DevTools For Beginners: Get Started with CSS 
 
@@ -798,4 +798,4 @@ Congratulations! You're done!
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms 
   described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The original page can be found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors/katjackson) (Technical Writer Intern, Chrome DevTools).
   
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
