@@ -16,7 +16,11 @@ ms.custom: xxxxxxx
 
 # Getting Started Building an Edge/Chromium Extensions
 
-This "Getting Started" guide is designed as a brief review for those who have build Edge/Chromium extensions before as well as a beginners guide for those who have never built an Edge/Chromium extension (referred to as extensions going forward). It assumes the reader has at least basic JavaScript skills and understands how to create basic HTML pages.
+This "Getting Started" guide is designed as a brief review for those who have build Edge/Chromium extensions before as well as a beginners guide for those who have never built an Edge/Chromium extension (referred to as extensions going forward). It assumes the reader has at least basic JavaScript skills and understands how to create basic HTML pages. It also assumes that those reading it understand the principle of how an internet web server works and the basic HTTP protocol including GET requests.
+
+
+
+
 
 ## What is a Edge/Chromium Extension?
 
