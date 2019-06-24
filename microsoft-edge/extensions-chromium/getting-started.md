@@ -17,7 +17,7 @@ This "Getting Started" Guide will launch you on your way to building your own ex
 
 If you want to jump directly into building your first extension jump in to section 1 below on bulding your first extension. If on the other hand, you are not famaliar with the Extension concepts and architecture, I strongly encourage you to read on here and learn what extensions are all about. It will make building extensions much easiers as you'll understand the motivations behind them.
 
-1.  Build a simple extension that pops up NASA Picture of the day when clicked
+1.  <a href="#" target="_blank">Build a simple extension that pops up NASA Picture of the day when clicked</a>
 2.  Add an options popup to store your NASA API Key in extension storage
 3.  Add localstorage
 
