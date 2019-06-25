@@ -1,5 +1,5 @@
 ---
-description: Get an end to end overview of the journey from beginning development to packaging of Microsoft Edge extensions.
+description: Learn what a Chromium extension is as well as progressively build a complete picture viewing extension that includes options, content injection, background scripts, storage and more.
 title: Extensions - Getting started
 author: Peter Kellner
 ms.author: xxx
@@ -17,7 +17,7 @@ This "Getting Started" Guide will launch you on your way to building your own ex
 
 If you want to jump directly into building your first extension jump in to section 1 below on building your first extension. If on the other hand, you are not familiar with the Extension concepts and architecture, I strongly encourage you to read on here and learn what extensions are all about. It will make building extensions much easier as you'll understand the motivations behind them.
 
-* Build a simple extension that pops up NASA Picture of the day when clicked
+* Build a simple extension that pops up NASA picture of the day
   * Creating a Manifest
   * Assign extension icons
   * Displaying a Popup Window  
@@ -29,8 +29,8 @@ If you want to jump directly into building your first extension jump in to secti
   * Extension Storage API
   * Async callbacks
 
-* Dynamically Insert NASA Picture Below body tag of current tab
-  * Create a content script
+* Dynamically Insert NASA Picture Below the page body tag
+  * Create JavaScript that inserts dynamic content script
   * Define in manifest which pages get content script
   * Inject content script declaratively
   * Add a Button on Popup to send a message to content script
@@ -38,20 +38,17 @@ If you want to jump directly into building your first extension jump in to secti
   * Receive a message inside a content script
   * Staying secure with content scripts
 
-* Add click event to inserted image to remove it from content script on page
+* Adding background.js to update badge text on image close
   * Add click event JavaScript to content script
   * Create background.js to listen for click event from content page on tab
   * Query for active tab from background.js
   * Clear badge text in from background.js
   * PERMISSION???
   
-* Inject CSS create NASA image insertion animation
-
-
-
-1.  Add an options popup to store your NASA API Key in extension storage
-Extension Features Demonstrated: Creating a Manifest; Displaying a Popup Window; Integrating jQuery; LocalStorage Use
-Add localstorage
+* Fade in NASA image with a CSS and dynamic code insertion
+  * Create a declarative CSS Content Script
+  * Add jQuery access to popup.js
+  * Dynamically execute JavaScript on tab page
 
 ## Understanding the browser before Extensions are introduced
 
@@ -69,7 +66,7 @@ PICTURE2
 
 ### All communication from each tab is to remote servers
 
-Understanding that each tab runs in isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript communicated back to the server that can be thought of as the origining server for that first GET request that was entered into the URL bar at the top of the tab.
+Understanding that each tab runs in isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript communicated back to the server that can be thought of as the originating server for that first GET request that was entered into the URL bar at the top of the tab.
 
 ## The Extension model turns everything upside down
 
@@ -89,7 +86,7 @@ PICTURE 3
 
 ### Launching the Extension server
 
-We know that when we deploy to a web server, that web server, whether it's Apache, IIS, NGINX or any other, that put our web bundle at some location and through certificates, configuration file and more, somehow, when a client browser navigates to some URL, typically, the index.html file that is on the web server at that special locations is downloaded with the browsers GET request.  How does our Extension do the same thing? That is, how can the tab pages of our browser get to this zip file (our extension that is), that's installed on this browser? 
+We know that when we deploy to a web server, that web server, whether it's Apache, IIS, NGINX or any other, that put our web bundle at some location and through certificates, configuration file and more, somehow, when a client browser navigates to some URL, typically, the index.html file that is on the web server at that special locations is downloaded with the browsers GET request.  How does our Extension do the same thing? That is, how can the tab pages of our browser get to this zip file (our extension that is)? That's what the extension runtime does for us.
 
 The extension serves it's files all from the URL (remember, uniform resource locator) at the name `chrome-extension://{some-long-unique-identifier}/index.html`. the name I put in brackets, some-long-unique-identifier is a unique identifier assigned to the extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each will have it's on unique identifier that points at the zip file (or Extension bundle) installed inside your browser.
 
@@ -99,17 +96,8 @@ PICTURE 4
 
 The fact that an Extension is a bundle of files that run as a built in web server is the core of an extension but just the beginning of what extensions can do. Extensions can interact with the browsers toolbar, they can manage all the other running tab pages in safe and sane way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser as a message API that allows for communications between the extensions and the tab pages to allow this to happen gracefully. This API, also known as the extensions API gives a lots of capabilities including notification management, storage management and much more.
 
-Just like web servers, Extensions can continually run (or sleep waiting for notications) all the time that the browser is running.  You can think of an extension as an orchestrator for the browser.  Again, the extension itself runs completely isolated from the tab pages, but through the extensions API, and opt-in permissions granted to the extension, can virtually control any and all tab pages running in the browser.
+Just like web servers, Extensions can continually run (or sleep waiting for notifications) all the time that the browser is running.  You can think of an extension as an orchestrator for the browser.  Again, the extension itself runs completely isolated from the tab pages, but through the extensions API, and opt-in permissions granted to the extension, can virtually control any and all tab pages running in the browser.
 
 ### Extensions provide an opt-in at install time security model
 
 Each extension, through a declaration in the `manifest.json` file allows the person installing the extension to give the extension differnet levels of authority. This authority allows extensions to opt-in so that the extension can literally extract any information, hidden or not on a tab, and process through the extension making security considerations very important.
-
-
-
-
-
-
-
-
-
