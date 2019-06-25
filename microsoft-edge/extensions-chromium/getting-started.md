@@ -45,6 +45,8 @@ Understanding that each tab runs in isolated environment means that these tabs a
 
 An extension, just like tab pages, runs in its own thread which is completely isolated from all tab page threads we just talked about. Unlike the tabs whose job is to typically issue a single GET request to a remote server, then display a visualization of that data in the browser, the extension, on the other hand is, the server itself that up until now, only resided on the other end of the internet connection made from a browser tab.
 
+PICTURE
+
 This is really important to understand. Once you create an extension, and install it in your browser, you've created a standalone web server that is living and breathing inside of your browser but still isolated from every tab page running on that browser.
 
 ### The Extension web server bundle
