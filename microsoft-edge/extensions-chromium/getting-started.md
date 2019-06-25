@@ -15,13 +15,43 @@ There is now just one programming model associated with building extensions for 
 
 This "Getting Started" Guide will launch you on your way to building your own extension.  It introduces the major pieces associated with Extensions giving you real examples and discussion.  
 
-If you want to jump directly into building your first extension jump in to section 1 below on bulding your first extension. If on the other hand, you are not famaliar with the Extension concepts and architecture, I strongly encourage you to read on here and learn what extensions are all about. It will make building extensions much easiers as you'll understand the motivations behind them.
+If you want to jump directly into building your first extension jump in to section 1 below on building your first extension. If on the other hand, you are not familiar with the Extension concepts and architecture, I strongly encourage you to read on here and learn what extensions are all about. It will make building extensions much easier as you'll understand the motivations behind them.
 
-1.  <a href="#" target="_blank">Build a simple extension that pops up NASA Picture of the day when clicked</a>
-2.  Add an options popup to store your NASA API Key in extension storage
-3.  Add localstorage
+* Build a simple extension that pops up NASA Picture of the day when clicked
+  * Creating a Manifest
+  * Assign extension icons
+  * Displaying a Popup Window  
+  * Integrating jQuery  
+  * LocalStorage Use  
+
+* Add an options page to store NASA API key
+  * Set options for extension
+  * Extension Storage API
+  * Async callbacks
+
+* Dynamically Insert NASA Picture Below body tag of current tab
+  * Create a content script
+  * Define in manifest which pages get content script
+  * Inject content script declaratively
+  * Add a Button on Popup to send a message to content script
+  * Set badge text on Extension launch button saying day of week of NASA picture
+  * Receive a message inside a content script
+  * Staying secure with content scripts
+
+* Add click event to inserted image to remove it from content script on page
+  * Add click event JavaScript to content script
+  * Create background.js to listen for click event from content page on tab
+  * Query for active tab from background.js
+  * Clear badge text in from background.js
+  * PERMISSION???
+  
+* Inject CSS create NASA image insertion animation
 
 
+
+1.  Add an options popup to store your NASA API Key in extension storage
+Extension Features Demonstrated: Creating a Manifest; Displaying a Popup Window; Integrating jQuery; LocalStorage Use
+Add localstorage
 
 ## Understanding the browser before Extensions are introduced
 
