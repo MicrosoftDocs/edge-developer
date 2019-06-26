@@ -86,7 +86,7 @@ You're going to build your site in an online code editor called Glitch.
        </figcaption>
      </figure>
 
-3. Click **Remix Project**. Glitch creates a copy of the project that you can 
+3. Click **Remix Project**. Glitch creates a copy of the project that you can
    edit and randomly generates a new name for the project. The content is
    the same as before.
 

@@ -124,7 +124,10 @@ In order to start creating your site, you need to set up your code:
 **CSS** is a computer language that determines the layout and styling of web pages. For
 example, here is a paragraph with a border:
 
-<p style="border:1px dashed red; padding:5px">This has been styled with CSS.</p> 
+  <figure>
+    <img src="imgs/css/red_paragraph.msft.png"
+        alt="This has been styled with CSS."/>
+  </figure>
 
 Here is the HTML and CSS code used to create that paragraph:
 
