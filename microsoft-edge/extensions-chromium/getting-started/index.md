@@ -24,11 +24,6 @@ If you want to jump directly into building your first extension jump in to secti
   * Integrating jQuery  
   * LocalStorage Use  
 
-* Add an options page to store NASA API key
-  * Set options for extension
-  * Extension Storage API
-  * Async callbacks
-
 * Dynamically Insert NASA Picture Below the page body tag
   * Create JavaScript that inserts dynamic content script
   * Define in manifest which pages get content script
@@ -37,6 +32,12 @@ If you want to jump directly into building your first extension jump in to secti
   * Set badge text on Extension launch button saying day of week of NASA picture
   * Receive a message inside a content script
   * Staying secure with content scripts
+
+* Add an options page to store NASA API key
+  * Set options for extension
+  * Extension Storage API
+  * Async callbacks
+
 
 * Adding background.js to update badge text on image close
   * Add click event JavaScript to content script
