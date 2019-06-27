@@ -24,7 +24,7 @@ If you want to jump directly into building your first extension jump in to secti
   * Integrating jQuery  
   * LocalStorage Use  
 
-* Dynamically Insert NASA Picture Below the page body tag
+* Dynamically insert NASA  picture below the page body tag
   * Create JavaScript that inserts dynamic content script
   * Define in manifest which pages get content script
   * Inject content script declaratively
