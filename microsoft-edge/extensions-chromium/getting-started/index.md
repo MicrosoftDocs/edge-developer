@@ -24,27 +24,36 @@ If you want to jump directly into building your first extension jump in to secti
   * Integrating jQuery  
   * LocalStorage Use  
 
+* Run your extension locally in your browser while developing it
+  * Launching the extensions manager page in Edge Chromium
+  * Installing your extension locally for the first time
+  * Updating your extension with changes
+  * Debugging your extension
+  * Publishing your extension to the store for public use
+
 * Dynamically insert NASA  picture below the page body tag
   * Create JavaScript that inserts dynamic content script
   * Define in manifest which pages get content script
   * Inject content script declaratively
   * Add a Button on Popup to send a message to content script
-  * Set badge text on Extension launch button saying day of week of NASA picture
+  
   * Receive a message inside a content script
   * Staying secure with content scripts
 
 * Add an options page to store NASA API key
-  * Set options for extension
-  * Extension Storage API
-  * Async callbacks
+  * Create a new options configuration page
+  * Add custom extension permission to use Storage API
+  * Add options JavaScript using Storage API to save settings
+  * On content page show NASA API key from Storage API
+  * Use NASA API to retrieve Actual Picture of the Day
+  * Using browser LocalStorage cache results of NASA API call
 
 
 * Adding background.js to update badge text on image close
-  * Add click event JavaScript to content script
   * Create background.js to listen for click event from content page on tab
-  * Query for active tab from background.js
-  * Clear badge text in from background.js
-  * PERMISSION???
+  * Move image close event from content to background script
+  * set badge text to day of week of current NASA picture of the day
+  * Clear badge text when picture is removed from background.js
   
 * Fade in NASA image with a CSS and dynamic code insertion
   * Create a declarative CSS Content Script
