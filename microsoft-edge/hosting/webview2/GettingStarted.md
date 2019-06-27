@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 06/17/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **The minimum required version is 76.0.149.0.**
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **We recommend using the Canary channel and the minimum required version is 77.0.190.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
@@ -37,26 +37,18 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![manageNugetPackages](images/manageNugetPackages.PNG)
 
-2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
 
 ![nuget](images/nuget.PNG)
 
-3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"` below the lines of `#include`s. The `{version}` number should be substituted. For example, for version 0.8.149 `WebView2.{version}` should be `WebView2.0.8.149`.
+3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
 
 ```cpp
 ...
 #include <wrl.h>
 // include WebView2 header
-#include "../packages/Microsoft.Web.WebView2.{version}/build/native/include/WebView2.h"
+#include "WebView2.h"
 ```
-
-4. Add a pre-build event to copy WebView2 loader DLL/lib files to the outDir. Right click the project and click **Properties**. Under **Configuration Properties** > **Build Events** > **Pre-Build Event** > **Command Line**, add `copy "$(SolutionDir)packages\Microsoft.Web.WebView2.{version}\build\native\$(PlatformTarget)\WebView2Loader.*" "$(OutDir)"` (`{version}` number should be substituted).
-
-![copyLoader](images/copyLoader.PNG)
-
-And add the loader lib file as a linker input. Under **Configuration Properties** > **Linker** > **Input** > **Additional Dependencies**, add `$(OutDir)\WebView2Loader.dll.lib;`.
-
-![addLib](images/addLib.PNG)
 
 You are all set to use and build against the WebView2 API. Press F5 to build and run the sample app. You should see an app displaying an empty window.
 
@@ -76,8 +68,7 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 
 // Locate the browser and set up the environment for WebView
-// Use CreateWebView2EnvironmentWithDetails if you need to specify browser location, user folder, etc.
-CreateWebView2Environment(
+CreateWebView2EnvironmentWithDetails(nullptr, nullptr, WEBVIEW2_RELEASE_CHANNEL_PREFERENCE_CANARY, nullptr,
     Callback<IWebView2CreateWebView2EnvironmentCompletedHandler>(
         [hWnd](HRESULT result, IWebView2Environment* env) -> HRESULT {
 
@@ -160,7 +151,7 @@ Copy the following code below `// Step 5 - Scripting`.
 ```cpp
 // Schedule an async task to add initialization script that freezes the Object object
 webviewWindow->AddScriptToExecuteOnDocumentCreated(L"Object.freeze(Object);", nullptr);
-// Schedule an async task to print foo
+// Schedule an async task to get the document URL
 webviewWindow->ExecuteScript(L"window.document.URL;", Callback<IWebView2ExecuteScriptCompletedHandler>(
     [](HRESULT errorCode, LPCWSTR resultObjectAsJson) -> HRESULT {
         LPCWSTR URL = resultObjectAsJson;

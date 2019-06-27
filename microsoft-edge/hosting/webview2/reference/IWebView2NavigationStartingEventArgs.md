@@ -54,7 +54,7 @@ True when the navigation is redirected.
 
 The HTTP request headers for the navigation.
 
-> public HRESULT [get_RequestHeaders](#interface_i_web_view2_navigation_starting_event_args_1a56153b375b49531a6f1a3f1ea04b414f)(LPWSTR * requestHeaders)
+> public HRESULT [get_RequestHeaders](#interface_i_web_view2_navigation_starting_event_args_1ae264a4ba1a63a441c183046078c2835f)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md#interface_i_web_view2_http_request_headers) ** requestHeaders)
 
 #### get_Cancel 
 
