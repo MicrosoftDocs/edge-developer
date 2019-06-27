@@ -24,7 +24,7 @@
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md)
 ## [DevTools (Chromium)](devtools-guide-chromium.md)
 ### [What's new](devtools-guide-chromium/whats-new.md) 
-### [DevTools for Beginners]
+### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
