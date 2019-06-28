@@ -79,11 +79,11 @@ If you want to jump directly into building your first extension jump in to secti
   * Dynamically execute JavaScript on tab page
 </details>
 
-## Understanding the browser before Extensions are introduced
+## Understanding the browser before extensions are introduced
 
 ### Each browser tab is isolated from every other tab
 
-To understand what an Chromium Extension is, we first need to fully understand what a multi tab browser, like Microsoft Edge, does primarily. To start, each browser tab runs in it's own thread that effectively isolates each tab from other browser tabs.
+To understand what an Chromium extension is, we first need to fully understand what a multi tab browser, like Microsoft Edge, does primarily. To start, each browser tab runs in it's own thread that effectively isolates each tab from other browser tabs.
 
 ![One thread per browser tab](media/index-image1-browsertabs.png)
 
