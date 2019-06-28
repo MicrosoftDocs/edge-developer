@@ -36,17 +36,16 @@ If you want to jump directly into building your first extension jump in to secti
   * Define in manifest which pages get content script
   * Inject content script declaratively
   * Add a Button on Popup to send a message to content script
-  
   * Receive a message inside a content script
   * Staying secure with content scripts
 
-* Add an options page to store NASA API key
+* Add an options page and NASA API key as well cache use to LocalStorage
   * Create a new options configuration page
   * Add custom extension permission to use Storage API
   * Add options JavaScript using Storage API to save settings
   * On content page show NASA API key from Storage API
   * Use NASA API to retrieve Actual Picture of the Day
-  * Using browser LocalStorage cache results of NASA API call
+  * Using browser LocalStorage to cache results of NASA API call
 
 
 * Adding background.js to update badge text on image close
