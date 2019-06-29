@@ -154,9 +154,13 @@ And when launched, with minimal styling, the extension options menu shows us:
 
 ## Updating our content page to asynchronously retrieve configuration data from extension storage
 
-Instead of directly setting the image elements url that is injected into the body of the currently executing tab, we first want to get from the `chrome.storage` extension api, the configuration values saved from the options dialog.  Based on those values, ultimately we will either display our static `stars.jpeg` file from our extension itself, or we will call the NASA API and use the picture of the day URL returned from that to display.
+Instead of directly setting the image elements URL that is injected into the body of the currently executing tab, we first want to get from the `chrome.storage` extension api, the configuration values saved from the options dialog.  
+
+Based on those values, ultimately we will either display our static `stars.jpeg` file from our extension itself, or we will call the NASA API and use the picture of the day URL returned from that to display.
 
 In the below JavaScript, we are not yet calling the NASA API, but instead just outputting to the current tab page the configuration parameters we retrieved from `chrome.storage`.  Notice that we update the content HTML only after the storage api asynchronously returns.
+
+New `content.js` follows.
 
 ```JAVASCRIPT
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -189,13 +193,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 ```
 
 >[!NOTE]
->Near the bottom of the JavaScript, notice the `return true;`. That is subtle but important. Returning true from this function will cause the caller (`chrome.tabs.sendMessage`) to wait for this return. Otherwise, since in our popup where we send a message and then close the window, the popup will have closed before this function returns and cause an error in the extension.
+>Near the bottom of the JavaScript, notice the `return true;`. This is subtle but important. Returning true from this function will cause the caller (`chrome.tabs.sendMessage`) to wait for this return. Otherwise, since in our popup where we send a message and then close the window, the popup will have closed before this function returns and cause an error in the extension.
 
 ## Asynchronously calling the NASA API to get the picture of the day
 
-Now we need to add the logic to our `content.js` to both retrieve data from the NASA API as well as handle the case where the user configuration tells us to use the static `stars.jpeg` instead.  Since `jQuery` is asynchronous and we are using that to make our ajax call to get the picture URL, we need to add some code to make sure that only after completion does the HTML get updated. This code does that for us.
-
-Below, we have replaced just$$$$
+Now we need to add the logic to our `content.js` to both retrieve data from the NASA API as well as handle the case where the user configuration tells us to use the static `stars.jpeg` instead.  Since `jQuery` is asynchronous and we are using that to make our ajax call to get the picture URL, we need to add some code to make sure that only after `jQuery.ajax` completion does the HTML get updated. This code does that for us.
 
 ```JAVASCRIPT
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -249,7 +251,95 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 ```
 
-
-
 ## Cache the data retrieved from the NASA API with browser LocalStorage
 
+In our extension now, every time the extension's launch icon is pressed, a call is made to the NASA API to get the latest URL location of the picture of the day.  Since this is updated just once a day, we really don't need to call it every time.
+
+To solve this, we cache the data object returned from the NASA API in browser LocalStorage.  The logic below that is now in our `content.js` checks the date the last time the data was downloaded and if it's more than 60 minutes ago, makes a fresh call and updates browser LocalStorage with the latest data.
+
+```JAVASCRIPT
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  $("head").prepend(
+    `<style>
+       .slide-image {
+          height: auto;
+          width: 100vw;
+        }
+      </style> `
+  );
+  chrome.storage.sync.get(["useNasaApi", "nasaApiKey"], result => {
+    if (result.useNasaApi && result.useNasaApi === true) {
+      const NASA_POD_LOCALSTORAGE_KEY = "NASA_POD_LOCALSTORAGE_KEY";
+      const dataObjectString = window.localStorage.getItem(
+        NASA_POD_LOCALSTORAGE_KEY
+      );
+      const dataObject = dataObjectString ? JSON.parse(dataObjectString) : {};
+      if (
+        dataObject &&
+        dataObject.localStorageSetDate &&
+        needToUpdateNasaPod(dataObject.localStorageSetDate, 60)
+      ) {
+        const url = `https://api.nasa.gov/planetary/apod?api_key=${
+          result && result.nasaApiKey ? result.nasaApiKey : "DEMO_KEY"
+        }`;
+        $.ajax({
+          url,
+          type: "GET",
+          datatype: "json",
+          success: function(data) {
+            if (data && data.url) {
+              data.localStorageSetDate = new Date().getTime();
+              window.localStorage.setItem(
+                NASA_POD_LOCALSTORAGE_KEY,
+                JSON.stringify(data)
+              );
+              updateHtml(data.url);
+              sendResponse({ fromcontent: "content updated from API" });
+            } else {
+              alert(`api call failed to ${url}`);
+              sendResponse({ fromcontent: "API update failed" });
+            }
+          },
+          error: function(jqXHR) {
+            const errorMessage =
+              jqXHR && jqXHR.responseText
+                ? JSON.parse(jqXHR.responseText).error.message
+                : "error calling NASA API";
+            alert(errorMessage);
+            sendResponse({ fromcontent: `API update failed: ${errorMessage}` });
+          }
+        });
+      } else {
+        // found in cache
+        updateHtml(dataObject.url);
+        sendResponse({ fromcontent: "content update from cache" });
+      }
+      function needToUpdateNasaPod(nasaLastGetDate, minutesToCheckBack) {
+        const currentDateTime = new Date().getTime();
+        const lastCheckDateTime = new Date(nasaLastGetDate).getTime();
+        const minutesSinceLastCheck =
+          (currentDateTime - lastCheckDateTime) / (1000 * 60);
+        return minutesSinceLastCheck > minutesToCheckBack;
+      }
+    } else {
+      updateHtml(request.url);
+      sendResponse({ fromcontent: "content update from static image" });
+    }
+    function updateHtml(imageUrl) {
+      $("body").prepend(
+        `<img  src="${imageUrl}" id="${request.imageDivId}" 
+           class="slide-image" />`
+      );
+      $(`#${request.imageDivId}`).click(function() {
+        $(`#${request.imageDivId}`).remove(`#${request.imageDivId}`);
+      });
+    }
+  });
+  return true; // forces sendMessage to wait for sendMessage before exiting
+});
+```
+
+Now, launch our extension, the most it will check the api for updated data is once an hour.  Since calls to the NASA API are rate limited, this is an example of where this kind of cache is not only important but necessary.
+
+>[!NOTE]
+>take note that when we use the `chrome.storage` API calls, the execution is asynchronous which means that the next line of JavaScript called after that executes immediately, before the `get` or `set` methods are completed.  To work with the returned values, you must pass a second parameter to the calls which is the callback method that gets the results passed into it as a parameter.  The browser LocalStorage methods `setItem` and `getItem` are synchronous meaning that they don't return until they complete.

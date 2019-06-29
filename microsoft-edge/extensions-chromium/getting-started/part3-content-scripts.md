@@ -67,7 +67,7 @@ if (sendMessageId) {
 }
 ```
 
-In the onclick event, what we need to do is first find the current browser tab (if there is only one open it's just that one).  Then, once we find that tab, we use the `chrome.tabs.sendmessage` extension api call to send a message to that tab.  In that message we want to include the url to the image we want to display, and we want to send a unique id that we want assigned to that inserted image.  We could let the content generate that, but for reasons that will become apparent later, we generate that unique id here in `popup.js` and pass that to our not yet created content script.  Here is our updated `popup\popup.js` file.
+In the onclick event, what we need to do is first find the current browser tab (if there is only one open it's just that one).  Then, once we find that tab, we use the `chrome.tabs.sendmessage` extension api call to send a message to that tab.  In that message we want to include the url to the image we want to display, and we want to send a unique id that we want assigned to that inserted image.  We could let the content generate that, but for reasons that will become apparent later, we generate that unique id here in `popup.js` and pass that to our not yet created content script.  Here is our updated `popup\popup.js` file. Also, we are passing in the current tab id, as we will need that later also.
 
 ```JavaScript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -78,7 +78,8 @@ if (sendMessageId) {
         tabs[0].id,
         {
           url: chrome.extension.getURL("images/stars.jpeg"),
-          imageDivId: `${guidGenerator()}`
+          imageDivId: `${guidGenerator()}`,
+          tabId: tabs[0].id
         },
         function(response) {
           window.close();
