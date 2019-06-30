@@ -13,17 +13,17 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 * Extension technologies covered in this part 1.
   * Manifest basics
-  * Icons associated with extension
-  * Default modal popup when extension icon clicked
+  * Icons associated with the extension
+  * Default modal popup when the extension icon is clicked
 
 [Completed Extension Package Source for This Part](extension-source/extension-getting-started-part1.zip)
 
-In part 1, our goal is to build a very simple Chromium extension starting with an empty directory.  Our goal for this extension is the following:
+In part 1, our goal is to build a very simple Edge-Chromium extension starting with an empty directory.  Our goal for this extension is to do the following:
 
-* It has icons associated with it for use by the Chromium extension engine
-* It has a very simple manifest.json file
-* It has a launch icon that when clicked displays a popup window containing the NASA picture of the day
-* It uses the browser LocalStorage to keep from hitting the NASA API to frequently
+* Create icons for the extension that will be used in multiple places and in different sizes
+* Create a simple `manifest.json` file
+* Display a launch icon that when clicked displays a popup window containing the NASA picture of the day
+
 
 Every extension must have a `manifest.json` file in its root.  You can think of this as the blueprint for the extension. It tells the browser engine what version the extension is programmed to, the name and description of the extension and lots of other details, many of which we will get to in this multi-part Extension Getting Started Guide. Since this is just part 1, let's create a minimal extension with just some basic information.
 
