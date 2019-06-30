@@ -21,8 +21,9 @@ If you want to jump directly into building your first extension jump in to secti
 
 Each section has the completed extension source installation package referenced in it.
 
+
 <details>
-<summary>Build a simple extension that pops up NASA picture of the day</summary>
+<summary><a href='./part1-simple-extension.md'>Build a simple extension that pops up NASA picture of the day</a></summary>
 
   * Creating a Manifest
   * Assign extension icons
@@ -43,7 +44,7 @@ Each section has the completed extension source installation package referenced 
 </details>
 
 <details>
-  <summary>Dynamically insert NASA  picture below the page body tag</summary>
+  <summary><a href='./part3-content-scripts.md'>Dynamically insert NASA  picture below the page body tag</a></summary>
 
   * Create JavaScript that inserts dynamic content script
   * Define in manifest which pages get content script
@@ -54,7 +55,7 @@ Each section has the completed extension source installation package referenced 
 </details>
 
 <details>
-  <summary>Add an options page and NASA API key as well cache use to LocalStorage</summary>
+  <summary><a href='./part4-add-options-page.md'>Add an options page and NASA API key as well cache use to LocalStorage</a></summary>
 
   * Create a new options configuration page
   * Add custom extension permission to use Storage API
@@ -65,7 +66,7 @@ Each section has the completed extension source installation package referenced 
 </details>
 
 <details>
-  <summary>Adding background.js to update badge text on image close</summary>
+  <summary><a href='./part5-background-script.md'>Adding background.js to update badge text on image close</a></summary>
 
   * Create background.js to listen for click event from content page on tab
   * Move image close event from content to background script
@@ -74,7 +75,7 @@ Each section has the completed extension source installation package referenced 
 </details>
 
 <details>
-  <summary>Fade in NASA image with a CSS and dynamic code insertion</summary>
+  <summary><a href='./part6-dynamic-content-insertion.md'>Fade in NASA image with a CSS and dynamic code insertion</a></summary>
 
   * Create a declarative CSS Content Script
   * Add jQuery access to popup.js
