@@ -17,9 +17,13 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   
 [Completed Extension Package Source for This Part](extension-source/extension-getting-started-part6.zip)
 
-In this part 6 we will take our completed NASA picture of the day Edge-Chromium extension and change the behavior of how the image appears on the screen when the extension icon launch button is pressed. Specifically, we'll add some static `CSS` to the current browser tab page, then, using `chrome.tabs.executeScript` we'll update the classes assigned to the `body` element of the page to start a slide in animation of our NASA picture of the day.
+## The animation plan
 
-Let's first start out by first creating a new static css file that will contain css classes that will be inserted as content into every browser tab page just like we did previously with the `content_scripts/content.js`.  Let's call this file `content_scripts/content.css` and define it as follows.
+In this part 6 we will take our completed NASA picture of the day Edge Chromium extension and change the behavior of how the image appears on the screen when the extension icon launch button is pressed. Specifically, we'll add some static `CSS` to the current browser tab page, then, using `chrome.tabs.executeScript` we'll update the classes assigned to the `body` element of the page to start a slide in animation of our NASA picture of the day.
+
+## Inserting CSS as a content page
+
+Let's first start out by creating a new static `CSS` file that will contain classes that will be inserted as content into every browser tab page just like we did previously with the `content_scripts/content.js`.  Let's call this file `content_scripts/content.css` and define it as follows.
 
 ```CSS
 html,
@@ -44,9 +48,11 @@ body {
 }
 ```
 
-The idea here is that when our NASA picture of the day is rendered, it will always have associated with it the `slide-image` class. If you remember, we assigned that class and made a reference that we would be using it later.  Now we have used it as promised.  Essentially, all it does is sets the image to fill the full width of the current browser tab.
+The idea here is that when our NASA picture of the day is rendered, it will always have associated with it the `slide-image` class. When we originally created the `img` element, we assigned that class and made a reference that we would be using it later so now we are fulfilling that promise. Essentially, all it does is sets the image to fill the full width of the current browser tab.
 
-The next step is to update our `popup/popup.js` to begin the animation defined in this `CSS` file once the image is displayed on the page.  Since in this popup launch script, we have a function that is called once the image is displayed, we can add to that new functionality to dynamically insert some JavaScript. In the code below, which is our updated `popup/popup.js` we create a string called `codeToInject` and then using the extensions API method `hrome.tabs.executeScript` we inject one line of JavaScript that adds the two classes to our tab page `body` element.  This effectively launches the animation that slides the NASA picture of the day image in from the top.
+## Updating popup to add classes to content
+
+The next step is to update our `popup/popup.js` to begin the animation defined in this `content.css` file once the image is displayed on the page.  Since in this popup launch script, we have a function that is called once the image is displayed, we can add to that new functionality to dynamically insert some `JavaScript`. In the code below, which is our updated `popup/popup.js` we create a string called `codeToInject` and then using the extensions API method `chrome.tabs.executeScript` we inject one line of `JavaScript` that adds the two classes to our tab page `body` element.  This effectively launches the animation that slides the NASA picture of the day image in from the top.
 
 ```JAVASCRIPT
 const sendMessageId = document.getElementById("sendmessageid");
@@ -62,7 +68,7 @@ if (sendMessageId) {
         },
         function (response) {
           const codeToInject = `
-          $("body").addClass("slide slide-anim");       
+          $("body").addClass("slide slide-anim");
         `;
           chrome.tabs.executeScript(tabs[0].id, {code: codeToInject}, function () {
             window.close();
@@ -79,8 +85,9 @@ if (sendMessageId) {
   };
 }
 ```
+## Updating our manifest.json to handle our CSS content
 
-Because we have added a new `CSS` file we want as default content in all our browser tab pages, and we have added the `chrome.tabs.executeScript` method, we need to update our `manifest.json` file.  We need to add the script `content_scripts/content.css` to the content_scripts section, and to have the authority to execute `chrome.tabs.executeScript` we need to add to our permissions entry the permission `activeTab`.  Our new file is below.
+Because we have added a new `CSS` file we want that as default content in all our browser tab pages. In order to add the `chrome.tabs.executeScript` method, we need to update our `manifest.json` file.  We need to add the script `content_scripts/content.css` to the content_scripts section, and to have the authority to execute `chrome.tabs.executeScript` we need to add to our permissions entry the permission `activeTab`.  Our new file is below.
 
 ```JSON
 {
@@ -119,6 +126,8 @@ Because we have added a new `CSS` file we want as default content in all our bro
   }
 }
 ```
+
+## Running the new extension with animation
 
 After making these changes, when we launch or extension by clicking on its badge icon, instead of the NASA picture of the day immediately displaying, it now animates in over 1.5 seconds sliding in from the top.
 

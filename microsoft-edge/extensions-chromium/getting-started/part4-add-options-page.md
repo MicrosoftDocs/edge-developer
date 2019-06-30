@@ -9,21 +9,23 @@ ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# 1. Add an options page and NASA API key as well cache use to LocalStorage
+# Add an options page and NASA API key as well cache use to `LocalStorage`
 
 * Extension technologies covered in this part 4.
-  * An options page to set extension configuration values
-  * Extension API Storage for saving extension specific data
+  * Adding an options page to set extension configuration values
+  * Using the extension API Storage for saving extension specific data
   * Setting extension permissions for security
-  * Using browser LocalStorage for Caching API requests
+  * Using browser `LocalStorage` for Caching API requests
   
 [Completed Extension Package Source for This Part](extension-source/extension-getting-started-part4.zip)
 
-In this part 4 we will extend this NASA picture of the day extension to retrieve from the NASA API, the current picture.  Currently, we are only showing over and over the same static `stars.jpeg` that we statically stored in the extension itself.
+## Overview
 
-Because the NASA API requires a key to access it, we will add a custom extension configuration screen, also known, in extension terms, as an options page. On this options page we will save configuration data including a checkbox that tells the app whether to use the static `stars.jpeg` or the NASA API.
+In this part 4 we will extend this NASA picture of the day extension to retrieve from the NASA API, the current picture.  Currently, we are only showing the same static `stars.jpeg` that we statically stored in the extension itself.
 
-Finally, in our content page JavaScript that we injected into our currently executing tab, we will asynchronously read that configuration from the extension storage api and use it to retrieve a URL from nasa as well as Cache that URL for an hour to avoid calling the NASA API over and over again.
+Because the NASA API requires a key to access it, we will add a text input field to the custom extension configuration screen, also known, in extension terms, as an options page. We will also add aa checkbox that configures the app to use the static `stars.jpeg` file or all the NASA API to get a picture of the day.
+
+Finally, in our content page `JavaScript` that we injected into our currently executing tab, we will asynchronously read that configuration from the extension storage API and use it to retrieve a URL from NASA, as well as Cache that URL for an hour to avoid calling the NASA API repeatedly.
 
 ## Building an options page for our extension
 
@@ -102,7 +104,7 @@ In our new `options` directory, we now have two files.  `options.html` is the fi
 </html>
 ```
 
-The `options.js` does all the work.  When it first runs, it calls the function `restore_options` which in turn, uses the `chrome.storage.sync.get` extension api method to retrieve the two values of our configuration parameters assuming they've been previously saved. If values have not been previously saved, the get method uses it's first parameter as the defaults.
+The `options.js` does all the work.  When it first runs, it calls the function `restore_options` which in turn, uses the `chrome.storage.sync.get` extension api method to retrieve the two values of our configuration parameters assuming they've been previously saved. If values have not been previously saved, the `sync.get` method uses it's first parameter as the defaults.
 
 Notice that this call is asynchronous which means that when it completes, the second parameter of both the get and set, are callbacks which get executed when the functions return their results.
 
@@ -146,11 +148,11 @@ if (elementSave) {
 }
 ```
 
-To activate this options panel, the extensions api automatically add a launch menu in the context (or the right mouse button) of the extensions launch button as is shown here.
+To activate this options panel, the extensions `API` automatically add a launch menu in the context (or the right mouse button) of the extensions launch button as is shown here.
 
 ![Extension Options Context Menu Launcher](media/part4-extension-contextmenu.png)
 
-And when launched, with minimal styling, the extension options menu shows us:
+When launched, with minimal styling, the extension options menu shows the following.
 
 ![Extensions Options Form](media/part4-extensions-options-form.png)
 
@@ -158,7 +160,7 @@ And when launched, with minimal styling, the extension options menu shows us:
 
 Instead of directly setting the image elements URL that is injected into the body of the currently executing tab, we first want to get from the `chrome.storage` extension api, the configuration values saved from the options dialog.  
 
-Based on those values, ultimately we will either display our static `stars.jpeg` file from our extension itself, or we will call the NASA API and use the picture of the day URL returned from that to display.
+Based on those values we will either display our static `stars.jpeg` file from our extension itself, or we will call the NASA API and use the picture of the day URL returned from that online web service to display the image.
 
 In the below JavaScript, we are not yet calling the NASA API, but instead just outputting to the current tab page the configuration parameters we retrieved from `chrome.storage`.  Notice that we update the content HTML only after the storage api asynchronously returns.
 
@@ -195,11 +197,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 ```
 
 >[!NOTE]
->Near the bottom of the JavaScript, notice the `return true;`. This is subtle but important. Returning true from this function will cause the caller (`chrome.tabs.sendMessage`) to wait for this return. Otherwise, since in our popup where we send a message and then close the window, the popup will have closed before this function returns and cause an error in the extension.
+>Near the bottom of the `JavaScript`, notice the `return true;`. This is subtle but very important. Returning true from this listener function will cause the caller (`chrome.tabs.sendMessage`) to wait for this return. Otherwise, since in our popup where we send a message and then close the window, the popup will have closed before this function returns and cause the extension to generate an error.
 
 ## Asynchronously calling the NASA API to get the picture of the day
 
-Now we need to add the logic to our `content.js` to both retrieve data from the NASA API as well as handle the case where the user configuration tells us to use the static `stars.jpeg` instead.  Since `jQuery` is asynchronous and we are using that to make our ajax call to get the picture URL, we need to add some code to make sure that only after `jQuery.ajax` completion does the HTML get updated. This code does that for us.
+Now we need to add the logic to our `content.js` to both retrieve data from the NASA API as well as handle the case where the user configuration tells us to use the static `stars.jpeg` instead.  Since `jQuery` is asynchronous and we are using that to make our ajax call to get the NASA API picture URL, we need to add some code to make sure that only after `jQuery.ajax` completion does the `HTML` get updated. Below is the full `content.js` that does that for us.
 
 ```JAVASCRIPT
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -255,9 +257,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 ## Cache the data retrieved from the NASA API with browser LocalStorage
 
-In our extension now, every time the extension's launch icon is pressed, a call is made to the NASA API to get the latest URL location of the picture of the day.  Since this is updated just once a day, we really don't need to call it every time.
+In our extension, every time the extension's launch icon is pressed, a call is made to the NASA API to get the latest URL location of the picture of the day.  Since that picture is only updated once a day, we really don't need to call it every time a picture is requested.
 
-To solve this, we cache the data object returned from the NASA API in browser LocalStorage.  The logic below that is now in our `content.js` checks the date the last time the data was downloaded and if it's more than 60 minutes ago, makes a fresh call and updates browser LocalStorage with the latest data.
+To solve this, we cache the data object returned from the NASA API in browser `LocalStorage`. The logic below that is now in our `content.js` checks the date the last time the data was downloaded. If the data was from more than 60 minutes ago, the `JavaScript` makes a fresh call and updates the browser LocalStorage with the latest data.
+
+Below is the updated `content.js`.
 
 ```JAVASCRIPT
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -341,7 +345,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 ```
 
-Now, launch our extension, the most it will check the api for updated data is once an hour.  Since calls to the NASA API are rate limited, this is an example of where this kind of cache is not only important but necessary.
+When we launch our extension, the most it will check the NASA API for updated data is once an hour.  Since calls to the NASA API are rate limited this is an example of where this kind of cache is not only important but necessary.
 
 >[!NOTE]
->take note that when we use the `chrome.storage` API calls, the execution is asynchronous which means that the next line of JavaScript called after that executes immediately, before the `get` or `set` methods are completed.  To work with the returned values, you must pass a second parameter to the calls which is the callback method that gets the results passed into it as a parameter.  The browser LocalStorage methods `setItem` and `getItem` are synchronous meaning that they don't return until they complete.
+>Take note that when we use the `chrome.storage` API calls, the execution is asynchronous which means that the next line of JavaScript called after that executes immediately, before the `get` or `set` methods are completed.  To work with the returned values, we must pass a second parameter to the `chrome.storage` calls which is the callback method that gets the results passed into it as a parameter.  The browser `LocalStorage` methods `setItem` and `getItem` are synchronous meaning that they don't return until they complete their set or get operations.

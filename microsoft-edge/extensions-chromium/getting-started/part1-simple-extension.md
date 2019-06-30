@@ -11,12 +11,14 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Build a simple extension that pops up NASA picture of the day
 
-* Extension technologies covered in this part 1.
+## Extension technologies covered in this part 1.
   * Manifest basics
   * Icons associated with the extension
   * Default modal popup when the extension icon is clicked
 
 [Completed Extension Package Source for This Part](extension-source/extension-getting-started-part1.zip)
+
+## Overview
 
 In part 1, our goal is to build a very simple Edge-Chromium extension starting with an empty directory.  Our goal for this extension is to do the following:
 
@@ -24,8 +26,9 @@ In part 1, our goal is to build a very simple Edge-Chromium extension starting w
 * Create a simple `manifest.json` file
 * Display a launch icon that when clicked displays a popup window containing the NASA picture of the day
 
+## The manifest file basics
 
-Every extension must have a `manifest.json` file in its root.  You can think of this as the blueprint for the extension. It tells the browser engine what version the extension is programmed to, the name and description of the extension and lots of other details, many of which we will get to in this multi-part Extension Getting Started Guide. Since this is just part 1, let's create a minimal extension with just some basic information.
+Every extension must have a `manifest.json` file in its root.  You can think of this as the blueprint for the extension. It tells the browser engine what version of the extension API the extension expects, the name and description of the extension, and lots of other details, many of which we will get to in this multi-part Extension Getting Started Guide. Since this is just part 1, let's create a minimal extension with just some basic information. s
 
 Below is the simple  `manifest.json`
 ```JSON
@@ -37,9 +40,11 @@ Below is the simple  `manifest.json`
 }
 ```
 
-Next thing is to some icons to our `manifest.json` file (and create a new `/icons` directory with the files). When we finally create our package to be installed, these icons will be used for things the button the user clicks to launch the extension (if there is one), images in the store that browser users search to find your extension and other places that are appropriate.  
+## Extension icons setup
 
-PNG is the recommended format, but you can also use BMP, GIF, ICO and JPEG. It is recommended to always have at least a 128x128 size icon and the browser will automatically resize it as necessary.
+Next thing is to some icons to our `manifest.json` file (and create a new `/icons` directory with the icons files). When we finally create our package to be installed, these icons will be used for the background image of the button the user clicks to launch the extension (if there is one), images in the store that browser users search to find your extension, and other places that are appropriate.  
+
+`PNG` is the recommended format, but you can also use `BMP`, `GIF`, `ICO` and `JPEG`. It is recommended to always have at least a 128x128 size icon and the browser will automatically resize it as necessary.
 
 Your directory structure will now look like this
 
@@ -68,11 +73,13 @@ and your updated `manifest.json` file is as follows.
 }
 ```
 
-As I said earlier, the `manifest.json` is the blueprint (or brains) of the extension. That said, without doing any custom programming, we can add to the extension an html file that will automatically get run when the user clicks on the extension icon (as shown here).
+## Adding a default popup dialog
+
+As I said earlier, the `manifest.json` is the blueprint (or brains) of the extension. That said, without doing any custom programming, we can add to the extension an `HTML` file that will automatically run when the user clicks on the extension icon as shown here.
 
 ![Toolbar Badge Icon](media/part1-badge1.png)
 
-  The entry we need to add to the `manifest.json` file is `browser_action` and just like `name`, `description`, etc., it's a top level entry. We've named it `popup/popup.html` because, well, it's a popup but we could call it anything.  Clicking on the extension icon launches `popup/popup.html` as  modal dialog that stays up until you click any where outside the dialog.
+  The entry we need to add to the `manifest.json` file is `browser_action` and just like `name` and `description`, it's a top level entry. We've named it `popup/popup.html` because, well, it's a popup but we could call it anything. Clicking on the extension icon launches `popup/popup.html` as modal dialog that stays up until you click outside the dialog.
 
   Adding our `popup/popup.html` as our default popup for our extensions gives us an updated `manifest.json` as follows.
 
@@ -94,9 +101,9 @@ As I said earlier, the `manifest.json` is the blueprint (or brains) of the exten
 }
 ```
 
-In a minute, we'll create our popup.html (in a folder off the root of our extension), but for now, let's also bring into our project an image file `images/stars.jpeg` so we have something built into our extension that we can display in our `popup.html` file.
+Coming up, we'll create our `popup.html` (in a folder off the root of our extension), but for now, let's bring into our project an image file `images/stars.jpeg` so we have something built into our extension that can display in our `popup.html` file.
 
-So, in folder popup, let's add the file `popup.html` and let's just have it render our stars image. Here's the `popup.html` file.
+In folder popup, let's add the file `popup.html` and let's have it render our stars image. Here's the `popup.html` file.
 
 ```HTML
 <html lang="en">
@@ -112,7 +119,7 @@ So, in folder popup, let's add the file `popup.html` and let's just have it rend
 </html>
 ```
 
-Now, our folder structure for our extension is this.
+Our folder structure for our extension is this.
 
 .  
 +-- _manifest.json  
@@ -126,4 +133,15 @@ Now, our folder structure for our extension is this.
 +-- images  
 |   +-- stars.jpeg  
 
-That's everything we need to build a working extension. Now, all we need to do is test it.  In the next section, I'll show you how to load the extension (we call that side loading) into your Edge Chromium browser so you can run it.
+That's everything we need to build a working extension. All that's left to is test it.  
+
+In the next section, I'll show you how to load the extension (we call that side loading) into your Edge Chromium browser so you can test it in your browser.
+
+## Acknowledgements
+
+## $$$ FIX THIS LATER
+
+* Simeon
+* Balaje
+* Suke
+* Jukka
