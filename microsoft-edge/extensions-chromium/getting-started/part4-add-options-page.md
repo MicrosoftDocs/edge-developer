@@ -17,6 +17,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   * Setting extension permissions for security
   * Using browser LocalStorage for Caching API requests
   
+[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part4.zip)
+
 In this part 4 we will extend this NASA picture of the day extension to retrieve from the NASA API, the current picture.  Currently, we are only showing over and over the same static `stars.jpeg` that we statically stored in the extension itself.
 
 Because the NASA API requires a key to access it, we will add a custom extension configuration screen, also known, in extension terms, as an options page. On this options page we will save configuration data including a checkbox that tells the app whether to use the static `stars.jpeg` or the NASA API.

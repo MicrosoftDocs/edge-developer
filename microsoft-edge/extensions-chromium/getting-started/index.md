@@ -15,9 +15,11 @@ There is now just one programming model associated with building extensions for 
 
 This "Getting Started" Guide will launch you on your way to building your own extension.  It introduces the major pieces associated with Extensions giving you real examples and discussion.  
 
-If you want to jump directly into building your first extension jump in to section 1 below on building your first extension. If on the other hand, you are not familiar with the Extension concepts and architecture, I strongly encourage you to read on here and learn what extensions are all about. It will make building extensions much easier as you'll understand the motivations behind them.
+If you want to jump directly into building your first extension jump in to section 1 below. If on the other hand, you are not familiar with the Extension concepts and architecture, I strongly encourage you to read on, and learn what extensions are all about. It will make building extensions much easier as you'll understand the motivations behind them.
 
-## Incrementally build a NASA picture of the day app
+## Incrementally build a NASA picture of the day app across 6 sections
+
+Each section has the completed extension source installation package referenced in it.
 
 <details>
 <summary>Build a simple extension that pops up NASA picture of the day</summary>

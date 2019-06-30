@@ -16,6 +16,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   * Setting and clearing text on the extension launch icon
   * Sending a message from a content script to the background script
   
+[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part5.zip)
+
 In this part 5 we will create a `background.js` script in our extension that is listed in our `manifest.json` file. We can add custom events to that script that correspond to different events that happen during the life of our extension.  Those things can include the extension being installed, the tab page being loaded, messages being sent from tab content pages and more. What's unique about the `background.js` script is that it's always available.
 
 What does always available mean? If you remember, in an early part of this guide when we created the `options.js` file, when the browser user clicked on the "Display" button, the content script had a listener running on it that processes incoming messages and then when processing is complete calls the method `sendResponse` with a result.  What would happen if the `options.html` page happened to be closed when that message was sent? Best case is we'd get an error logged to the extension itself saying "nothing to receive that message", worst case would be something important would not happen.
@@ -149,7 +151,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
           type: "GET",
           datatype: "json",
           success: function(data) {
+            function fixUrlForVideo(data) {
+              return data.media_type && data.media_type === "video" ? `https://img.youtube.com/vi/${
+                data.url.split("/").pop().split("?")[0]
+              }/hqdefault.jpg` : data.url;
+            }
             if (data && data.url) {
+              data.url = fixUrlForVideo(data);
               data.localStorageSetDate = new Date().getTime();
               window.localStorage.setItem(
                 NASA_POD_LOCALSTORAGE_KEY,
@@ -180,6 +188,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       }
 
       function needToUpdateNasaPod(nasaLastGetDate, minutesToCheckBack) {
+        if (!nasaLastGetDate) return true;
         const currentDateTime = new Date().getTime();
         const lastCheckDateTime = new Date(nasaLastGetDate).getTime();
         const minutesSinceLastCheck =

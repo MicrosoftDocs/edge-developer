@@ -16,6 +16,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   * Icons associated with extension
   * Default modal popup when extension icon clicked
 
+[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part1.zip)
+
 In part 1, our goal is to build a very simple Chromium extension starting with an empty directory.  Our goal for this extension is the following:
 
 * It has icons associated with it for use by the Chromium extension engine

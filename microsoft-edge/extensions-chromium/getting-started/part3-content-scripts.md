@@ -17,6 +17,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   * Including content pages in existing chrome tabs
   * Having content pages listen for messages from popups and respond
   
+[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part3.zip)
+
 In this part 3 we will update our pop up menu to not show the static stars image we had before, but to replace that image with a title and a standard HTML button. That button, when clicked, will pass that stars image, which is embedded in the extension, to the content page which is inserted into the active browser tab.
 
 First, let's update our `popup.html` file with some straight forward markup that displays a title and a button that we will program shortly but for now, let's just include a reference to an empty JavaScript file `popup.js`. Here is are update HTML.
