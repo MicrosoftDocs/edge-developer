@@ -29,8 +29,7 @@ An HTTP request used with the WebResourceRequested event.
 [put_Method](#put_method) | Set the Method property.
 [get_Content](#get_content) | The HTTP request message body as stream.
 [put_Content](#put_content) | Set the Content property.
-[get_Headers](#get_headers) | The mutable HTTP request headers as a JSON string.
-[put_Headers](#put_headers) | Set the Headers property.
+[get_Headers](#get_headers) | The mutable HTTP request headers.
 
 ## Members
 
@@ -74,13 +73,7 @@ Set the Content property.
 
 #### get_Headers 
 
-The mutable HTTP request headers as a JSON string.
+The mutable HTTP request headers.
 
-> public HRESULT [get_Headers](#interface_i_web_view2_web_resource_request_1a5d54962f8d5f16276fbfcaf76fba47d9)(LPWSTR * headers)
-
-#### put_Headers 
-
-Set the Headers property.
-
-> public HRESULT [put_Headers](#interface_i_web_view2_web_resource_request_1aeea75d51d6c52c7a680455f389ce9ce0)(LPCWSTR headers)
+> public HRESULT [get_Headers](#interface_i_web_view2_web_resource_request_1a7ccf9a217ed26e1290ac858733f032c9)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md#interface_i_web_view2_http_request_headers) ** headers)
 

@@ -53,5 +53,9 @@ The [Web Speech API](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.ht
 ## New APIs in EdgeHTML 14
 
 Here's the full list of new APIs in EdgeHTML 14. They are listed in the format of **[interface name].[api name]**.
+<<<<<<< HEAD
+<iframe height='585' scrolling='no' title='New APIs in EdgeHTML 14' src='//codepen.io/MicrosoftEdgeDocumentation/embed/oWMEPE/?height=585&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/oWMEPE/'>New APIs in EdgeHTML 14</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.
+=======
 <iframe height='585' scrolling='no' title='New APIs in EdgeHTML 14' src='//codepen.io/MSEdgeDev/embed/oWMEPE/?height=585&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/oWMEPE/'>New APIs in EdgeHTML 14</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
+>>>>>>> master
 </iframe>
