@@ -12,23 +12,8 @@ keywords: microsoft edge, chromium, devtools, f12 tools
 ---
 # Microsoft Edge Chromium Developer Documentation
 
-
-
-  * [Overview](#overview)
-  * [First Steps](#first-steps)
-  * [Digging Deeper](#digging-deeper)
-    + [Settings](#settings) (LINK TO ./SETTING_DETAIL.MD WHICH WILL HAVE A LINK TO DEV.GOOGLE AT THE BOTTOM)
-    + [1. Elements Tab and Viewing the DOM](#1-elements-tab-and-viewing-the-dom) (LINK TO ./ELEMENT_DETAIL.MD WHICH WILL HAVE A LINK TO DEV.GOOGLE AT THE BOTTOM)
-    + [2. Console and Viewing Logged Messages](#2-console-and-viewing-logged-messages)
-    + [3. Sources](#3-sources)
-    + [4. Network Traffic](#4-network-traffic)
-    + [5. Application  Cookies, Session Info and More](#5-application--cookies--session-info-and-more)
-
-
-
-
-
 ## Overview
+
 Edge DevTools are web developer tools built directly into Microsoft Chromium Edge that can help you edit pages on the fly, diagnose and fix problems quickly resulting in faster and better web sites.  With Edge DevTools you can make changes to the behind the scenes HTML that's rendered the page and instantly see the change in your browser. You can also step through and set break points in running JavaScript to figure out why things work as well as discover how to fix those that do not.
 
 ## First Steps
