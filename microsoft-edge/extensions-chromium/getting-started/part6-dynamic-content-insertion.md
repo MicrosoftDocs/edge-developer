@@ -11,6 +11,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Animate in the NASA image with a CSS and dynamic code insertion
 
+By [Peter Kellner](http://peterkellner.net)
+
 * Extension technologies covered in this part 6.
   * Add a static content page to browser tab
   * Use executeScript to dynamically set a class on an element
@@ -85,6 +87,120 @@ if (sendMessageId) {
   };
 }
 ```
+
+## Updating our content script to remove classes on clear
+
+We added the animation CSS classes to our `body` element to cause the sliding animation. When we click on the image to clear it, the image element is removed, but those classes persist.  The `content.js` file needs to have one line added to it to remove those classes. That line is
+
+```JAVASCRIPT
+$("body").removeClass("slide slide-anim");
+```
+
+And the full `content.js` is now
+
+```JAVASCRIPT
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  $("head").prepend(
+    `<style>
+       .slide-image {
+          height: auto;
+          width: 100vw;
+        }
+      </style> `
+  );
+  chrome.storage.sync.get(["useNasaApi", "nasaApiKey"], result => {
+    function updateBadgeText(pictureDate) {
+      const badgeText = pictureDate
+        ? ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][
+          new Date(`${pictureDate}T00:00:00`).getDay()
+          ]
+        : "";
+      chrome.runtime.sendMessage(
+        { action: "setBadgeText", text: badgeText, tabId: request.tabId },
+        function(response) {
+          console.log(response);
+        }
+      );
+    }
+    if (result.useNasaApi && result.useNasaApi === true) {
+      const NASA_POD_LOCALSTORAGE_KEY = "NASA_POD_LOCALSTORAGE_KEY";
+      const dataObjectString = window.localStorage.getItem(
+        NASA_POD_LOCALSTORAGE_KEY
+      );
+      const dataObject = dataObjectString ? JSON.parse(dataObjectString) : {};
+      if (needToUpdateNasaPod(dataObject.localStorageSetDate, 60)) {
+        const url = `https://api.nasa.gov/planetary/apod?api_key=${
+          result && result.nasaApiKey ? result.nasaApiKey : "DEMO_KEY"
+        }`;
+        $.ajax({
+          url,
+          type: "GET",
+          datatype: "json",
+          success: function(data) {
+            function fixUrlForVideo(data) {
+              return data.media_type && data.media_type === "video" ? `https://img.youtube.com/vi/${
+                data.url.split("/").pop().split("?")[0]
+              }/hqdefault.jpg` : data.url;
+            }
+            if (data && data.url) {
+              data.url = fixUrlForVideo(data);
+              data.localStorageSetDate = new Date().getTime();
+              window.localStorage.setItem(
+                NASA_POD_LOCALSTORAGE_KEY,
+                JSON.stringify(data)
+              );
+              updateBadgeText(data.date);
+              updateHtml(data.url);
+              sendResponse({ fromcontent: "content updated from API" });
+            } else {
+              alert(`api call failed to ${url}`);
+              sendResponse({ fromcontent: "API update failed" });
+            }
+          },
+          error: function(jqXHR) {
+            const errorMessage =
+              jqXHR && jqXHR.responseText
+                ? JSON.parse(jqXHR.responseText).error.message
+                : "error calling NASA API";
+            alert(errorMessage);
+            sendResponse({ fromcontent: `API update failed: ${errorMessage}` });
+          }
+        });
+      } else {
+        // found in cache
+        updateBadgeText(dataObject.date);
+        updateHtml(dataObject.url);
+        sendResponse({ fromcontent: "content update from cache" });
+      }
+
+      function needToUpdateNasaPod(nasaLastGetDate, minutesToCheckBack) {
+        if (!nasaLastGetDate) return true;
+        const currentDateTime = new Date().getTime();
+        const lastCheckDateTime = new Date(nasaLastGetDate).getTime();
+        const minutesSinceLastCheck =
+          (currentDateTime - lastCheckDateTime) / (1000 * 60);
+        return minutesSinceLastCheck > minutesToCheckBack;
+      }
+    } else {
+      updateHtml(request.url);
+      sendResponse({ fromcontent: "content update from static image" });
+    }
+    function updateHtml(imageUrl) {
+      $("body").prepend(
+        `<img  src="${imageUrl}" id="${request.imageDivId}"
+           class="slide-image" />`
+      );
+      $(`#${request.imageDivId}`).click(function() {
+        $(`#${request.imageDivId}`).remove(`#${request.imageDivId}`);
+        $("body").removeClass("slide slide-anim");
+        updateBadgeText(); // clear badge text
+      });
+    }
+  });
+  return true; // forces sendMessage to wait for sendMessage before exiting
+});
+```
+
 ## Updating our manifest.json to handle our CSS content
 
 Because we have added a new `CSS` file we want that as default content in all our browser tab pages. In order to add the `chrome.tabs.executeScript` method, we need to update our `manifest.json` file.  We need to add the script `content_scripts/content.css` to the content_scripts section, and to have the authority to execute `chrome.tabs.executeScript` we need to add to our permissions entry the permission `activeTab`.  Our new file is below.

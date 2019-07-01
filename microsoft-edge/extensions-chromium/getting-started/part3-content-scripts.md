@@ -11,6 +11,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Dynamically insert NASA picture below the page body tag using content scripts
 
+By [Peter Kellner](http://peterkellner.net)
+
 * Extension technologies covered in this part 3.
   * Injecting `JavaScript` libraries into extension
   * Exposing extension assets to browser tabs
@@ -62,7 +64,7 @@ After updating our extension and clicking on the extension launch icon, we have 
 
 Before writing any more code, let's talk about what our strategy is going to be to make clicking the display button on this popup bring up the `images/stars.jpeg` image file at the top of the active tab page instead of as a modal popup window.
 
-In the popup modal dialog case, the previous example we built, the thread that is associated with the extension itself launched the modal dialog.  Remeber, each tab page has it's own thread and the extension itself has a thread. That meant that we can simply reference the `src` attribute of the `img` element to point to the local file `images/stars.jpeg` because it's embedded in the extensions package. 
+In the popup modal dialog case, the previous example we built, the thread that is associated with the extension itself launched the modal dialog.  Remeber, each tab page has it's own thread and the extension itself has a thread. That meant that we can simply reference the `src` attribute of the `img` element to point to the local file `images/stars.jpeg` because it's embedded in the extensions package.
 
 Now, we want to inject an `img` element into the tab page itself. We can't do that directly from the `popup.js` because the popup has no direct access to the browser tab pages. What we need to do is first create a content script that's included directly in the browser tab, and then inject that content script into the tab page.  Once we've done that, we want to send a message from our `popup.js` to that content script running on the tab page telling that content script what image to show, and how to show it.  Let's do that now to make it clear what I just explained.
 
@@ -79,9 +81,9 @@ if (sendMessageId) {
 }
 ```
 
-In the onclick event, what we need to do is find the current browser tab (if there is only one open it's that one). Then, once we find that tab, we use the `chrome.tabs.sendmessage` extension `API` call to send a message to that tab. 
+In the onclick event, what we need to do is find the current browser tab (if there is only one open it's that one). Then, once we find that tab, we use the `chrome.tabs.sendmessage` extension `API` call to send a message to that tab.
 
-In that message we want to include the `URL` to the image we want to display, and we want to send a unique id that we want assigned to that inserted image.  We could let the content insertion `JavaScript` generate that, but for reasons that will become apparent later, we generate that unique id here in `popup.js` and pass it to our not yet created content script. 
+In that message we want to include the `URL` to the image we want to display, and we want to send a unique id that we want assigned to that inserted image.  We could let the content insertion `JavaScript` generate that, but for reasons that will become apparent later, we generate that unique id here in `popup.js` and pass it to our not yet created content script.
 
 Here is our updated `popup\popup.js` file. Also, we pass in the current tab id which we will need in a later section but for now, will not be used.
 
@@ -118,7 +120,7 @@ You're probably wondering why, when we pass the `images/stars.jpeg` do we need t
 
  `chrome-extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg`
 
-The reason is that we will be injecting this image using the `img` element's `src` attribute into the content page. The content page is running on a unique thread that is not the same as the thread running the extension. For this to work we will need to expose the static image file as a web asset. 
+The reason is that we will be injecting this image using the `img` element's `src` attribute into the content page. The content page is running on a unique thread that is not the same as the thread running the extension. For this to work we will need to expose the static image file as a web asset.
 
 To do that, we need to add another entry in the `manifest.json` file. We need to declare that we want the image to be  accessible from any browser tab. That entry is as follows (you'll see it in the full `manifest.json` file below when we next add the content script declaration coming up).
 
@@ -163,7 +165,8 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 }
 ```
 
-The section we added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in this `content_scripts` section will be injected into all browser tab pages when they are loaded. The allowable types of files that can be injected here are `js` and `css`.
+The section we added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in this `content_scripts` section will be injected into all browser tab pages when they are loaded. The allowable types of files that can be injected here are `js` and `css`. We've also added `libjquery.min.js`. You can included that from the download mentioned at the top of this section.
+
 
 ## Adding `jQuery` and understanding which thread it is used by
 
@@ -178,7 +181,7 @@ Here is that `content-scripts\content.js` file that gets injected into every bro
 ```JavaScript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   $("body").prepend(
-    `<img  src="${request.url}" id="${request.imageDivId}" 
+    `<img  src="${request.url}" id="${request.imageDivId}"
            class="slide-image" /> `
   );
   $("head").prepend(
@@ -200,8 +203,9 @@ Notice that all the above `JavaScript` does is to register a `listener` using th
 
 The first parameter of the `addListener` method is a function whose first parameter, request, is the details of the message being passed in.  Remember, from `popup.js`, when we called `sendMessage`, those attributes of the first parameter are `url` and `imageDivId`.
 
-When an event is processed by this listener, the function that is the first parameter is executed.  The first parameter of that function is an object that has attibutes as assigned by `sendMessage`. That function simply processes the three `jQuery` script lines.
-* The first dynamically inserts into the DOM header a `<style>` section that we will assign as a class `slide-image` to our `img` element.  
+When an event is processed by this listener, the function that is the first parameter is executed.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`. That function simply processes the three `jQuery` script lines.
+
+* The first dynamically inserts into the DOM header a `<style>` section that we will assign as a class `slide-image` to our `img` element.
 
 * The second, appends an `img` element right below the `body` of our browser tab that has the class `slide-image` assigned as well as the `imageDivId` as the id of that image element.
 
@@ -215,22 +219,6 @@ Now, when we we browse to any page and click on our extension icon, we get the p
 
 When we click on the Display button, we get what's below.  If we click any where on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
-![](media/part3-showingimage)
+![The image showing in browser](media/part3-showingimage)
 
 We've now create an extension that successfully sends a message from the extension icon popup, to the dynamically inserted `JavaScript` running as content on the browser tab.  That injected content set the image element to display our static stars `jpeg`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

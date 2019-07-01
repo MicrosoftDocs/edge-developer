@@ -11,6 +11,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Add an options page and NASA API key as well cache use to `LocalStorage`
 
+By [Peter Kellner](http://peterkellner.net)
+
 * Extension technologies covered in this part 4.
   * Adding an options page to set extension configuration values
   * Using the extension API Storage for saving extension specific data
@@ -179,7 +181,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   chrome.storage.sync.get(["useNasaApi", "nasaApiKey"], result => {
     $("body").prepend(
       `
-        <img  src="${request.url}" id="${request.imageDivId}" 
+        <img  src="${request.url}" id="${request.imageDivId}"
            class="slide-image" />
         <ul>
           <li>useNasaApi:${result.useNasaApi}</li>
@@ -242,7 +244,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
     function updateHtml(imageUrl) {
       $("body").prepend(
-        `<img  src="${imageUrl}" id="${request.imageDivId}" 
+        `<img  src="${imageUrl}" id="${request.imageDivId}"
            class="slide-image" />`
       );
       $(`#${request.imageDivId}`).click(function() {
@@ -333,7 +335,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
     function updateHtml(imageUrl) {
       $("body").prepend(
-        `<img  src="${imageUrl}" id="${request.imageDivId}" 
+        `<img  src="${imageUrl}" id="${request.imageDivId}"
            class="slide-image" />`
       );
       $(`#${request.imageDivId}`).click(function() {

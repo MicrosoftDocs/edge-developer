@@ -11,7 +11,9 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Build a simple extension that pops up NASA picture of the day
 
-## Extension technologies covered in this part 1.
+By [Peter Kellner](http://peterkellner.net)
+
+* Extension technologies covered in this part 1
   * Manifest basics
   * Icons associated with the extension
   * Default modal popup when the extension icon is clicked
@@ -20,7 +22,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 ## Overview
 
-In part 1, our goal is to build a very simple Edge-Chromium extension starting with an empty directory.  Our goal for this extension is to do the following:
+In part 1, our goal is to build a very simple Edge Chromium extension starting with an empty directory.  Our goal for this extension is to do the following:
 
 * Create icons for the extension that will be used in multiple places and in different sizes
 * Create a simple `manifest.json` file
@@ -31,6 +33,7 @@ In part 1, our goal is to build a very simple Edge-Chromium extension starting w
 Every extension must have a `manifest.json` file in its root.  You can think of this as the blueprint for the extension. It tells the browser engine what version of the extension API the extension expects, the name and description of the extension, and lots of other details, many of which we will get to in this multi-part Extension Getting Started Guide. Since this is just part 1, let's create a minimal extension with just some basic information. s
 
 Below is the simple  `manifest.json`
+
 ```JSON
 {
   "name": "NASA Picture of the day viewer",
@@ -72,6 +75,9 @@ and your updated `manifest.json` file is as follows.
   }
 }
 ```
+
+>[!NOTE]
+>The icon `png` files listed above are available in the zip download mentioned at the top of this page.
 
 ## Adding a default popup dialog
 
@@ -133,15 +139,9 @@ Our folder structure for our extension is this.
 +-- images  
 |   +-- stars.jpeg  
 
+>[!NOTE]
+>The `images/stars.jpeg` file listed above is available in the zip download mentioned at the top of this page.
+
 That's everything we need to build a working extension. All that's left to is test it.  
 
-In the next section, I'll show you how to load the extension (we call that side loading) into your Edge Chromium browser so you can test it in your browser.
-
-## Acknowledgements
-
-## $$$ FIX THIS LATER
-
-* Simeon
-* Balaje
-* Suke
-* Jukka
+In the next section, I'll show you how to load the extension (we call that side loading) into your Edge Chromium browser so you can test it in your browser as you develop it.

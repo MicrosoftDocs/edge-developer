@@ -11,6 +11,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Getting started with Chromium Extensions
 
+By [Peter Kellner](http://peterkellner.net)
+
 There is now just one programming model associated with building extensions for the Microsoft Edge-Chromium browser and the Google Chrome browser. It's based on the open source Chromium engine now so all API calls and results will be identical. You'll also be able to submit the same source code bundle to both the Microsoft and Google extension stores, making life easy now when it is time to publish your Extension.
 
 This "Getting Started" Guide will launch you on your way to building your own full functional extension.  It introduces the major pieces associated with Extensions giving you a real examples to build from.
@@ -137,3 +139,10 @@ Just like web servers, extensions can continually run (or sleep waiting for noti
 ### Extensions provide an opt-in at install time security model
 
 Each extension, through a declaration in the `manifest.json` file allows the person installing the extension to give it different levels of authority. This authority allows extensions, when installed by a user, to opt-in so that the extension can literally extract any information, hidden or not on a tab, and process that data through the extension, making security considerations a first class part of extensions.
+
+## Acknowledgements
+
+* Balaje Krishnan, Microsoft Edge Team
+* Simeon Vincent, Google Chrome Team
+* Addy Sukma Bharrata, Graphics Designs [toejoeh.com](toejoeh.com)
+* Jukka Wallasvaara, Microsoft

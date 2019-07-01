@@ -11,10 +11,13 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Adding background.js to update badge text on image close
 
+By [Peter Kellner](http://peterkellner.net)
+
 * Extension technologies covered in this part 5.
   * Creating and registering a background JavaScript listener
   * Setting and clearing badge text on the extension launch icon
   * Sending a message from a content script to the background script
+  * Extension interaction with browser LocalStorage
   
 [Completed Extension Package Source for This Part](extension-source/extension-getting-started-part5.zip)
 
@@ -70,6 +73,7 @@ Let's start out be adding to the root of our extension a new file `background.js
   }
 }
 ```
+
 ## Use background.js or background.html
 
 As an aside, keep in mind that a `background.html` file is created on your behalf even though you don't specify it directly. You can however, instead of referencing the scripts you want directly as we've done here, you can include your own `background.html` file, and then reference the script tags you want included in that `background.html`.  
@@ -146,11 +150,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         NASA_POD_LOCALSTORAGE_KEY
       );
       const dataObject = dataObjectString ? JSON.parse(dataObjectString) : {};
-      if (
-        dataObject &&
-        dataObject.localStorageSetDate &&
-        needToUpdateNasaPod(dataObject.localStorageSetDate, 60)
-      ) {
+      if (needToUpdateNasaPod(dataObject.localStorageSetDate, 60)) {
         const url = `https://api.nasa.gov/planetary/apod?api_key=${
           result && result.nasaApiKey ? result.nasaApiKey : "DEMO_KEY"
         }`;
@@ -209,7 +209,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     }
     function updateHtml(imageUrl) {
       $("body").prepend(
-        `<img  src="${imageUrl}" id="${request.imageDivId}" 
+        `<img  src="${imageUrl}" id="${request.imageDivId}"
            class="slide-image" />`
       );
       $(`#${request.imageDivId}`).click(function() {
@@ -231,5 +231,3 @@ We created an `updateBadgeText` local function so that we can update the text ba
 Here is what a typical invocation of this NASA picture of the day extension method looks like. Uou can see the text 'Sat' on top of the extension launch icon indicating which day of the week the picture of the day was generated on.
 
 ![Running extension with badge text set](media/part5-runningextension.png)
-
-
