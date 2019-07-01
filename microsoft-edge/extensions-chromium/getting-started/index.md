@@ -11,7 +11,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Getting started with Chromium Extensions
 
-By [Peter Kellner](http://peterkellner.net)
+By [Peter Kellner](https://github.com/pkellner)
 
 There is now just one programming model associated with building extensions for the Microsoft Edge-Chromium browser and the Google Chrome browser. It's based on the open source Chromium engine now so all API calls and results will be identical. You'll also be able to submit the same source code bundle to both the Microsoft and Google extension stores, making life easy now when it is time to publish your Extension.
 
@@ -144,5 +144,5 @@ Each extension, through a declaration in the `manifest.json` file allows the per
 
 * Balaje Krishnan, Microsoft Edge Team
 * Simeon Vincent, Google Chrome Team
-* Addy Sukma Bharrata, Graphics Designs [toejoeh.com](toejoeh.com)
+* Addy Sukma Bharrata, Graphics Designs
 * Jukka Wallasvaara, Microsoft
