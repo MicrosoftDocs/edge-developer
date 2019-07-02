@@ -114,11 +114,11 @@ This is really important to understand. Once you create an extension, and instal
 
 ### The Extension web server bundle
 
-So what is an extension? I'm sure you've used extensions developed by other authors and you've likely done that by going to an extension web store and installing that extension "in" your browser.  What did you get when you installed the extension? You got a bundle (OK, let's call it a zip file) of web resources that are no different than what a web developer would publish to a web server.  T
+So what is an extension? I'm sure you've used extensions developed by other authors and you've likely done that by going to an extension web store and installing that extension "in" your browser.  What did you get when you installed the extension? You got a bundle (OK, let's call it a zip file) of web resources that are no different than what a web developer would publish to a web server.
 
 That zip file included HTML, CSS, JavaScript, images and all the necessary assets to make a web page. There is however, one extra file that is required in the root of this zip file, and that file is named `manifest.json`.  More later on that, but suffice it to say, it's the blue print of your extension that includes things like what's the version of your extension, what's the title, what privileges does it need to run and lots more.
 
-PICTURE 3 -THIS SHOULD BE A PICTURE OF THE VSCODE FILEMANGER WHEN EXTENSION IS DONE
+![View of files in zip](media/index-image5-filemanager-view.png)
 
 ### Launching the Extension server
 
@@ -127,8 +127,6 @@ We know that when we deploy to a web server, that web server, whether it's Apach
 The extension serves its files all from the URL (remember, uniform resource locator) at the name `chrome-extension://{some-long-unique-identifier}/index.html`. The name I put in brackets, some-long-unique-identifier is a unique identifier assigned to the extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each will have it's on unique identifier that points at the zip file (or Extension bundle) installed inside your browser.
 
 ![Unique URLS for extensions](media/index-image4-uniqueurls.png)
-
-PICTURE 4
 
 ### Extensions can manage and communicate with tabs and the browser toolbar
 
