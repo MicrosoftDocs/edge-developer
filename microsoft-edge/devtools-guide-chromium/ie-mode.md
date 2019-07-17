@@ -21,7 +21,7 @@ Within IE mode, the rendering process is entirely based in Internet Explorer 11.
 
 ![IE mode badge in the address bar](./media/ie-mode-badge.png)
 
-IE mode is currently available on Windows 10 Version 1903 (May 2019 Update).
+IE mode is currently available on Windows 10 Version 1903 (May 2019 Update) but is coming soon to all supported Windows platforms.
 
 ## Launching the DevTools on a tab in IE mode
 
