@@ -22,7 +22,7 @@ Release notes for [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.We
 
 - Add `Stop` API to stop all navigations and pending resource fetches ([#28](https://github.com/MicrosoftEdge/WebViewFeedback/issues/28)).
 - NuGet package now includes the .tlb file ([#22](https://github.com/MicrosoftEdge/WebViewFeedback/issues/22)).
-- NuGet package can now installable in .NET projects ([#32](https://github.com/MicrosoftEdge/WebViewFeedback/issues/32)).
+- NuGet package is now installable in .NET projects ([#32](https://github.com/MicrosoftEdge/WebViewFeedback/issues/32)).
 
 ## 0.8.190
 
