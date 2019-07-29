@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -94,34 +94,34 @@ Create a new web resource response object.
 The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#interface_i_web_view2_http_response_headers) to construct the headers line by line. For information on other parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response).
 
 ```cpp
-HRESULT AppWindow::OnWebResourceRequested(
-    IWebView2WebView* sender,
-  IWebView2WebResourceRequestedEventArgs* args)
-{
-  ComPtr<IWebView2WebResourceRequest> request;
-  args->get_Request(&request);
-  wil::unique_cotaskmem_string requestUri;
-  request->get_Uri(&requestUri);
-  std::wstring requestUriString = requestUri.get();
-  std::wstring extension = requestUriString.substr(requestUriString.length() - 4);
-  if (m_blockImages && (extension == L".jpg" || extension == L".png"))
-  {
-    ComPtr<IWebView2WebResourceResponse> response;
-    RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
-      &response));
-    ComPtr<IWebView2HttpResponseHeaders> responseHeaders;
-    RETURN_IF_FAILED(response->get_Headers(&responseHeaders));
-    // Fake response with jpeg type.
-    RETURN_IF_FAILED(responseHeaders->AppendHeader(L"Content-Type", L"image/jpeg"));
-    RETURN_IF_FAILED(args->put_Response(response.Get()));
-  }
-  else if (m_changeUserAgent) {
-    ComPtr<IWebView2HttpRequestHeaders> requestHeaders;
-    RETURN_IF_FAILED(request->get_Headers(&requestHeaders));
-    requestHeaders->SetHeader(L"User-Agent", overridingUserAgent.c_str());
-  }
-
-  return S_OK;
-}
+    if (m_blockImages)
+    {
+        // Register a handler for the WebResourceRequested event.
+        // This handler blocks all resources that are in an image context, such
+        // as <img> elements and CSS background-image properties.
+        PCWSTR matchAllUris[] = { L"*" };
+        WEBVIEW2_WEB_RESOURCE_CONTEXT imagesFilter[] = {
+            WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE };
+        CHECK_FAILURE(m_webView->add_WebResourceRequested(
+            matchAllUris, imagesFilter, 1,
+            Callback<IWebView2WebResourceRequestedEventHandler>(
+                [this](IWebView2WebView* sender,
+                       IWebView2WebResourceRequestedEventArgs* args)
+        {
+            // Override the response with an empty one to block the image.
+            // If put_Response is not called, the request will continue as normal.
+            wil::com_ptr<IWebView2WebResourceResponse> response;
+            CHECK_FAILURE(m_webViewEnvironment->CreateWebResourceResponse(
+                nullptr, 200, L"OK", L"",
+                &response));
+            CHECK_FAILURE(args->put_Response(response.get()));
+            return S_OK;
+        }).Get(), &m_webResourceRequestedTokenForImageBlocking));
+    }
+    else
+    {
+        CHECK_FAILURE(m_webView->remove_WebResourceRequested(
+            m_webResourceRequestedTokenForImageBlocking));
+    }
 ```
 

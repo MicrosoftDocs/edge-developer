@@ -203,5 +203,6 @@
 ### [IWebView2WebResourceRequestedEventHandler](webview2/reference/IWebView2WebResourceRequestedEventHandler.md)
 ### [IWebView2WebResourceResponse](webview2/reference/IWebView2WebResourceResponse.md)
 ### [IWebView2WebView](webview2/reference/IWebView2WebView.md)
+### [IWebView2WebView2](webview2/reference/IWebView2WebView2.md)
 ### [IWebView2ZoomFactorChangedEventHandler](webview2/reference/IWebView2ZoomFactorChangedEventHandler.md)
 ### [Globals](webview2/reference/webview2.idl.md)

@@ -56,4 +56,5 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 - [IWebView2WebResourceRequestedEventHandler](reference/IWebView2WebResourceRequestedEventHandler.md)
 - [IWebView2WebResourceResponse](reference/IWebView2WebResourceResponse.md)
 - [IWebView2WebView](reference/IWebView2WebView.md)
+- [IWebView2WebView2](reference/IWebView2WebView2.md)
 - [IWebView2ZoomFactorChangedEventHandler](reference/IWebView2ZoomFactorChangedEventHandler.md)

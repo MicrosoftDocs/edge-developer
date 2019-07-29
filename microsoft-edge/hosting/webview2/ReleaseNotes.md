@@ -14,11 +14,21 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2/).
 
+## 0.8.230
+
+[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230) | minimum Microsoft Edge version 77.0.230.0.
+
+**Re-compile your app after updating the NuGet package.**
+
+- Add `Stop` API to stop all navigations and pending resource fetches ([#28](https://github.com/MicrosoftEdge/WebViewFeedback/issues/28)).
+- NuGet package now includes the .tlb file ([#22](https://github.com/MicrosoftEdge/WebViewFeedback/issues/22)).
+- NuGet package can now be installed in .NET projects ([#32](https://github.com/MicrosoftEdge/WebViewFeedback/issues/32)).
+
 ## 0.8.190
 
 [NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190) | minimum Microsoft Edge version 77.0.190.0.
 
-**We made breaking changes in this preview update so existing apps need to be re-compiled.**
+**Re-compile your app after updating the NuGet package.**
 
 - Add `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control whether end users are able to open DevTools ([#16](https://github.com/MicrosoftEdge/WebViewFeedback/issues/16)).
 - Add `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control whether whether the status bar will be displayed ([#19](https://github.com/MicrosoftEdge/WebViewFeedback/issues/19)).

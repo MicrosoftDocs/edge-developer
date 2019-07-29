@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -169,21 +169,6 @@ The URI of the current top level document.
 This value potentially changes as a part of the DocumentStateChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
 
 ```cpp
-HRESULT ScenarioNavigateAndEvents::DocumentStateChangedEventHandler(
-    IWebView2WebView* sender,
-    IWebView2DocumentStateChangedEventArgs* args)
-{
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(m_webview->get_Source(&uri));
-
-    // The DocumentStateChanged event is the first time during a navigation in
-    // which we have transitioned the top level document to begin displaying
-    // content from the new URI. This is the appropriate time to update our UI
-    // with the new URI.
-    UpdateDisplayedUri(uri.get());
-
-    return S_OK;
-}
 ```
 
 #### Navigate 
@@ -195,24 +180,6 @@ Cause a navigation of the top level document to the specified URI.
 See the navigation events for more information. Note that this starts a navigation and the corresponding NavigationStarting event will fire sometime after this Navigate call completes.
 
 ```cpp
-    // Setup navigation event handlers before calling navigate to avoid any races.
-    RETURN_IF_FAILED(m_webview->add_NavigationStarting(
-        Microsoft::WRL::Callback<IWebView2NavigationStartingEventHandler>(
-            this, &ScenarioNavigateAndEvents::NavigationStartingEventHandler)
-        .Get(), &m_navigationStartingToken));
-
-    RETURN_IF_FAILED(m_webview->add_DocumentStateChanged(
-        Microsoft::WRL::Callback<IWebView2DocumentStateChangedEventHandler>(
-            this, &ScenarioNavigateAndEvents::DocumentStateChangedEventHandler)
-        .Get(),
-        &m_documentStateChangedToken));
-
-    RETURN_IF_FAILED(m_webview->add_NavigationCompleted(
-        Microsoft::WRL::Callback<IWebView2NavigationCompletedEventHandler>(
-            this, &ScenarioNavigateAndEvents::NavigationCompletedEventHandler)
-        .Get(), &m_navigationCompletedToken));
-
-    RETURN_IF_FAILED(m_webview->Navigate(L"https://example.com/"));
 ```
 
 #### MoveFocus 
@@ -250,10 +217,11 @@ WebView will get focus and focus will be set to correspondent element in the pag
         m_addressbarWindow, GWLP_WNDPROC, (LONG_PTR)ChildWndProcStatic);
     SetWindowLongPtr(m_GoWindow, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(this));
     m_originalGoWndProc = (WNDPROC)SetWindowLongPtr(m_GoWindow, GWLP_WNDPROC,
-        (LONG_PTR)ChildWndProcStatic);
+                                                    (LONG_PTR)ChildWndProcStatic);
 ```
 
 ```cpp
+// Handle window messages sent to child windows, such as the address bar and the Go button
 LRESULT CALLBACK AppWindow::ChildWndProcStatic(HWND hWnd,
                                                UINT message,
                                                WPARAM wParam,
@@ -292,7 +260,7 @@ LRESULT CALLBACK AppWindow::ChildWndProc(HWND hWnd,
                 if (shift)
                 {
                     // When Shift-Tab at address bar, tab backwards into WebView.
-                    m_webview->MoveFocus(WEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS);
+                    m_webView->MoveFocus(WEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS);
                 }
                 else
                 {
@@ -310,14 +278,13 @@ LRESULT CALLBACK AppWindow::ChildWndProc(HWND hWnd,
                 else
                 {
                     // When Tab at Go button, tab forwards into WebView
-                    m_webview->MoveFocus(WEBVIEW2_MOVE_FOCUS_REASON_NEXT);
+                    m_webView->MoveFocus(WEBVIEW2_MOVE_FOCUS_REASON_NEXT);
                 }
             }
         }
         else if ((wParam == VK_RETURN) && (hWnd == m_addressbarWindow))
         {
-            // Navigate to the address upon Enter on address bar
-            Navigate();
+            NavigateToAddressBar();
             handled = true;
         }
     }
@@ -356,12 +323,11 @@ Initiates a navigation to htmlContent as source HTML of a new document.
 The htmlContent parameter may not be larger than 2 MB of characters. The origin of the new page will be about:blank.
 
 ```cpp
-            static const PCWSTR htmlContent =
-                L"<h1>Allowed URIs</h1><p>You've attempted to navigate away "
-                L"from "
-                L"the allowed URIs. Go back to <a "
-                L"href='https://example.com/'>example.com</a>.</p>";
-            RETURN_IF_FAILED(m_webview->NavigateToString(htmlContent));
+                static const PCWSTR htmlContent =
+                    L"<h1>Domain Blocked</h1>"
+                    L"<p>You've attempted to navigate to a domain in the blocked "
+                    L"sites list. Press back to return to the previous page.</p>";
+                CHECK_FAILURE(sender->NavigateToString(htmlContent));
 ```
 
 #### add_NavigationStarting 
@@ -373,48 +339,36 @@ Add an event handler for the NavigationStarting event.
 NavigationStarting fires when the WebView main frame is requesting permission to navigate to a different URI. This will fire for redirects as well.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_NavigationStarting(
-        Microsoft::WRL::Callback<IWebView2NavigationStartingEventHandler>(
-            this, &ScenarioNavigateAndEvents::NavigationStartingEventHandler)
-        .Get(), &m_navigationStartingToken));
-```
-
-```cpp
-HRESULT ScenarioNavigateAndEvents::NavigationStartingEventHandler(
-    IWebView2WebView* sender, IWebView2NavigationStartingEventArgs* args)
-{
-    // In this example we want to ensure that the top level document remains on
-    // example.com, but child frames may navigate anywhere so we only subscribe
-    // to the NavigationStarting event and not the FrameNavigationStarting event.
-
-    wil::unique_cotaskmem_string uriAsPWSTR;
-    RETURN_IF_FAILED(args->get_Uri(&uriAsPWSTR));
-
-    // And we check that the URI we're navigating to is still in the
-    // origin we want.
-    const bool inExampleSite = DoesUriMatchDomain(uriAsPWSTR.get(), L"example.com");
-    // Or about:blank for our call to NavigateToString.
-    const bool isAboutBlank = IsUriAboutBlank(uriAsPWSTR.get());
-
-    if (!inExampleSite && !isAboutBlank)
+    // Register a handler for the NavigationStarting event.
+    // This handler will check the domain being navigated to, and if the domain
+    // matches a list of blocked sites, it will cancel the navigation and
+    // possibly display a warning page.
+    CHECK_FAILURE(m_webView->add_NavigationStarting(
+        Callback<IWebView2NavigationStartingEventHandler>(
+            [this](IWebView2WebView* sender,
+                   IWebView2NavigationStartingEventArgs* args) -> HRESULT
     {
-        RETURN_IF_FAILED(args->put_Cancel(TRUE));
-        BOOL userInitiated = FALSE;
+        wil::unique_cotaskmem_string uri;
+        CHECK_FAILURE(args->get_Uri(&uri));
 
-        // If the user was the one attempting to navigate away, warn them.
-        RETURN_IF_FAILED(args->get_IsUserInitiated(&userInitiated));
-        if (userInitiated)
+        if (ShouldBlockUri(uri.get()))
         {
-            static const PCWSTR htmlContent =
-                L"<h1>Allowed URIs</h1><p>You've attempted to navigate away "
-                L"from "
-                L"the allowed URIs. Go back to <a "
-                L"href='https://example.com/'>example.com</a>.</p>";
-            RETURN_IF_FAILED(m_webview->NavigateToString(htmlContent));
+            CHECK_FAILURE(args->put_Cancel(true));
+
+            // If the user clicked a link to navigate, show a warning page.
+            BOOL userInitiated;
+            CHECK_FAILURE(args->get_IsUserInitiated(&userInitiated));
+            if (userInitiated)
+            {
+                static const PCWSTR htmlContent =
+                    L"<h1>Domain Blocked</h1>"
+                    L"<p>You've attempted to navigate to a domain in the blocked "
+                    L"sites list. Press back to return to the previous page.</p>";
+                CHECK_FAILURE(sender->NavigateToString(htmlContent));
+            }
         }
-    }
-    return S_OK;
-}
+        return S_OK;
+    }).Get(), &m_navigationStartingToken));
 ```
 
 #### remove_NavigationStarting 
@@ -432,29 +386,24 @@ Add an event handler for the DocumentStateChanged event.
 DocumentStateChanged fires when new content has started loading on the webview's main frame or if a same page navigation occurs (such as through fragment navigations or history.pushState navigations). This follows the NavigationStarting event and precedes the NavigationCompleted event.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_DocumentStateChanged(
-        Microsoft::WRL::Callback<IWebView2DocumentStateChangedEventHandler>(
-            this, &ScenarioNavigateAndEvents::DocumentStateChangedEventHandler)
-        .Get(),
-        &m_documentStateChangedToken));
-```
+    // Register a handler for the DocumentStateChanged event.
+    // This handler will read the webview's source URI and update
+    // the app's address bar.
+    CHECK_FAILURE(m_webView->add_DocumentStateChanged(
+        Callback<IWebView2DocumentStateChangedEventHandler>(
+            [this](IWebView2WebView* sender,
+                   IWebView2DocumentStateChangedEventArgs* args) -> HRESULT
+    {
+        wil::unique_cotaskmem_string uri;
+        sender->get_Source(&uri);
+        if (wcscmp(uri.get(), L"about:blank") == 0)
+        {
+            uri = wil::make_cotaskmem_string(L"");
+        }
+        SetWindowText(m_addressbarWindow, uri.get());
 
-```cpp
-HRESULT ScenarioNavigateAndEvents::DocumentStateChangedEventHandler(
-    IWebView2WebView* sender,
-    IWebView2DocumentStateChangedEventArgs* args)
-{
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(m_webview->get_Source(&uri));
-
-    // The DocumentStateChanged event is the first time during a navigation in
-    // which we have transitioned the top level document to begin displaying
-    // content from the new URI. This is the appropriate time to update our UI
-    // with the new URI.
-    UpdateDisplayedUri(uri.get());
-
-    return S_OK;
-}
+        return S_OK;
+    }).Get(), &m_documentStateChangedToken));
 ```
 
 #### remove_DocumentStateChanged 
@@ -472,28 +421,37 @@ Add an event handler for the NavigationCompleted event.
 NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_NavigationCompleted(
-        Microsoft::WRL::Callback<IWebView2NavigationCompletedEventHandler>(
-            this, &ScenarioNavigateAndEvents::NavigationCompletedEventHandler)
-        .Get(), &m_navigationCompletedToken));
-```
-
-```cpp
-HRESULT ScenarioNavigateAndEvents::DocumentStateChangedEventHandler(
-    IWebView2WebView* sender,
-    IWebView2DocumentStateChangedEventArgs* args)
-{
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(m_webview->get_Source(&uri));
-
-    // The DocumentStateChanged event is the first time during a navigation in
-    // which we have transitioned the top level document to begin displaying
-    // content from the new URI. This is the appropriate time to update our UI
-    // with the new URI.
-    UpdateDisplayedUri(uri.get());
-
-    return S_OK;
-}
+    // Register a handler for the NavigationCompleted event.
+    // If the navigation was successful, update the back and forward buttons.
+    CHECK_FAILURE(m_webView->add_NavigationCompleted(
+        Callback<IWebView2NavigationCompletedEventHandler>(
+            [this](IWebView2WebView* sender,
+                IWebView2NavigationCompletedEventArgs* args) -> HRESULT
+    {
+        BOOL success;
+        CHECK_FAILURE(args->get_IsSuccess(&success));
+        if (success)
+        {
+            BOOL canGoBack;
+            BOOL canGoForward;
+            sender->get_CanGoBack(&canGoBack);
+            sender->get_CanGoForward(&canGoForward);
+            EnableWindow(m_backWindow, canGoBack);
+            EnableWindow(m_forwardWindow, canGoForward);
+        }
+        else
+        {
+            WEBVIEW2_WEB_ERROR_STATUS webErrorStatus;
+            CHECK_FAILURE(args->get_WebErrorStatus(&webErrorStatus));
+            if (webErrorStatus == WEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
+            {
+                // Do something here if you want to handle a specific error case.
+                // In most cases this isn't necessary, because the WebView will
+                // display its own error page automatically.
+            }
+        }
+        return S_OK;
+    }).Get(), &m_navigationCompletedToken));
 ```
 
 #### remove_NavigationCompleted 
@@ -510,6 +468,25 @@ Add an event handler for the FrameNavigationStarting event.
 
 FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI. This will fire for redirects as well.
 
+```cpp
+    // Register a handler for the FrameNavigationStarting event.
+    // This handler will prevent a frame from navigating to a blocked domain.
+    CHECK_FAILURE(m_webView->add_FrameNavigationStarting(
+        Callback<IWebView2NavigationStartingEventHandler>(
+            [this](IWebView2WebView* sender,
+                   IWebView2NavigationStartingEventArgs* args) -> HRESULT
+    {
+        wil::unique_cotaskmem_string uri;
+        CHECK_FAILURE(args->get_Uri(&uri));
+
+        if (ShouldBlockUri(uri.get()))
+        {
+            CHECK_FAILURE(args->put_Cancel(true));
+        }
+        return S_OK;
+    }).Get(), &m_frameNavigationStartingToken));
+```
+
 #### remove_FrameNavigationStarting 
 
 Remove an event handler previously added with add_FrameNavigationStarting.
@@ -525,33 +502,33 @@ Add an event handler for the MoveFocusRequested event.
 MoveFocusRequested fires when user tries to tab out of the WebView. The WebView's focus has not changed when this event is fired.
 
 ```cpp
-        CheckFailure(m_webview->add_MoveFocusRequested(
-            Callback<IWebView2MoveFocusRequestedEventHandler>(
-                [this](
-                    IWebView2WebView* sender,
-                    IWebView2MoveFocusRequestedEventArgs* args) -> HRESULT
-        {
-            WEBVIEW2_MOVE_FOCUS_REASON reason = WEBVIEW2_MOVE_FOCUS_REASON_PROGRAMMATIC;
-            RETURN_IF_FAILED(args->get_Reason(&reason));
-
-            // callback to handle move focus out of WebView
-            const bool forward = (reason == WEBVIEW2_MOVE_FOCUS_REASON_NEXT);
-            const bool handled = MoveFocusOut(forward);
-            RETURN_IF_FAILED(args->put_Handled(handled ? TRUE : FALSE));
-            return S_OK;
-        }).Get(), &m_moveFocusRequestedToken));
-```
-
-```cpp
-    // in moveFocusOut callback move focus to desired control.
-    bool handled = false;
-    if (!s_autoTabHandle)
+    // Register a handler for the MoveFocusRequested event.
+    // This event will be fired when the user tabs out of the webview.
+    // The handler will focus another window in the app, depending on which
+    // direction the focus is being shifted.
+    CHECK_FAILURE(m_webView->add_MoveFocusRequested(
+        Callback<IWebView2MoveFocusRequestedEventHandler>(
+            [this](
+                IWebView2WebView* sender,
+                IWebView2MoveFocusRequestedEventArgs* args) -> HRESULT
     {
-        HWND toFocus = forward ? m_addressbarWindow : m_GoWindow;
-        SetFocus(toFocus);
-        handled = true;
-    }
-    return handled;
+        if (!s_autoTabHandle)
+        {
+            WEBVIEW2_MOVE_FOCUS_REASON reason;
+            CHECK_FAILURE(args->get_Reason(&reason));
+
+            if (reason == WEBVIEW2_MOVE_FOCUS_REASON_NEXT)
+            {
+                SetFocus(m_addressbarWindow);
+            }
+            else if (reason == WEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS)
+            {
+                SetFocus(m_GoWindow);
+            }
+            CHECK_FAILURE(args->put_Handled(TRUE));
+        }
+        return S_OK;
+    }).Get(), &m_moveFocusRequestedToken));
 ```
 
 #### remove_MoveFocusRequested 
@@ -569,13 +546,15 @@ Add an event handler for the GotFocus event.
 GotFocus fires when WebView got focus.
 
 ```cpp
-        CheckFailure(m_webview->add_GotFocus(
-            Callback<IWebView2FocusChangedEventHandler>(
-                [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
-        {
-            OnGotFocus();
-            return S_OK;
-        }).Get(), &m_gotFocusToken));
+    // Register a handler for the GotFocus event.
+    // This handler just announces the event on the window's title bar.
+    CHECK_FAILURE(m_webView->add_GotFocus(
+        Callback<IWebView2FocusChangedEventHandler>(
+            [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
+    {
+        SetWindowText(m_mainWindow, L"WebView got focus");
+        return S_OK;
+    }).Get(), &m_gotFocusToken));
 ```
 
 #### remove_GotFocus 
@@ -593,13 +572,15 @@ Add an event handler for the LostFocus event.
 LostFocus fires when WebView lost focus. In the case where MoveFocusRequested event is fired, the focus is still on WebView when MoveFocusRequested event fires. Lost focus only fires afterwards when app's code or default action of MoveFocusRequested event set focus away from WebView.
 
 ```cpp
-        CheckFailure(m_webview->add_LostFocus(
-            Callback<IWebView2FocusChangedEventHandler>(
-                [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
-        {
-            OnLostFocus();
-            return S_OK;
-        }).Get(), &m_lostFocusToken));
+    // Register a handler for the LostFocus event.
+    // This handler just announces the event on the window's title bar.
+    CHECK_FAILURE(m_webView->add_LostFocus(
+        Callback<IWebView2FocusChangedEventHandler>(
+            [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
+    {
+        SetWindowText(m_mainWindow, L"WebView lost focus");
+        return S_OK;
+    }).Get(), &m_lostFocusToken));
 ```
 
 #### remove_LostFocus 
@@ -614,50 +595,38 @@ Add an event handler for the WebResourceRequested event.
 
 > public HRESULT [add_WebResourceRequested](#interface_i_web_view2_web_view_1a03a2b5f82defb29dc480326e6460816f)(LPCWSTR *const urlFilter,[WEBVIEW2_WEB_RESOURCE_CONTEXT](#interface_i_web_view2_web_view_1a84d836ed6f6e803de309300b344a3152) *const resourceContextFilter,SIZE_T filterLength,[IWebView2WebResourceRequestedEventHandler](IWebView2WebResourceRequestedEventHandler.md#interface_i_web_view2_web_resource_requested_event_handler) * eventHandler,EventRegistrationToken * token)
 
-Fires when the WebView has performs any HTTP request. Use urlFilter to pass in a list with size filterLength of urls to listen for. Each url entry also supports wildcards: '*': zero or more, '?' exactly one. For each urlFilter entry, provide a matching resourceContextFilter as a bit vector of type of resources WebResourceRequested should fire matching that urlFilter. if filterLength is 0, the event will fire for all network requests. The supported resource contexts are: Document, Stylesheet, Image, Media, Font, Script, XHR, Fetch.
+Fires when the WebView has performs any HTTP request. Use urlFilter to pass in a list with size filterLength of urls to listen for. Each url entry also supports wildcards: '*' matches zero or more characters, and '?' matches exactly one character. For each urlFilter entry, provide a matching resourceContextFilter as a bit vector representing the types of resources for which WebResourceRequested should fire. If filterLength is 0, the event will fire for all network requests. The supported resource contexts are: Document, Stylesheet, Image, Media, Font, Script, XHR, Fetch.
 
 ```cpp
-    PCWSTR all_urls[] = { L"*" };
-    WEBVIEW2_WEB_RESOURCE_CONTEXT images_filter[] = {
-        WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE };
-    m_webview->add_WebResourceRequested(
-      all_urls, images_filter, 1,
-      Callback<IWebView2WebResourceRequestedEventHandler>(
-        this, &AppWindow::OnWebResourceRequested)
-      .Get(),
-      &m_webResourceRequestedToken);
-```
-
-```cpp
-HRESULT AppWindow::OnWebResourceRequested(
-    IWebView2WebView* sender,
-  IWebView2WebResourceRequestedEventArgs* args)
-{
-  ComPtr<IWebView2WebResourceRequest> request;
-  args->get_Request(&request);
-  wil::unique_cotaskmem_string requestUri;
-  request->get_Uri(&requestUri);
-  std::wstring requestUriString = requestUri.get();
-  std::wstring extension = requestUriString.substr(requestUriString.length() - 4);
-  if (m_blockImages && (extension == L".jpg" || extension == L".png"))
-  {
-    ComPtr<IWebView2WebResourceResponse> response;
-    RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
-      &response));
-    ComPtr<IWebView2HttpResponseHeaders> responseHeaders;
-    RETURN_IF_FAILED(response->get_Headers(&responseHeaders));
-    // Fake response with jpeg type.
-    RETURN_IF_FAILED(responseHeaders->AppendHeader(L"Content-Type", L"image/jpeg"));
-    RETURN_IF_FAILED(args->put_Response(response.Get()));
-  }
-  else if (m_changeUserAgent) {
-    ComPtr<IWebView2HttpRequestHeaders> requestHeaders;
-    RETURN_IF_FAILED(request->get_Headers(&requestHeaders));
-    requestHeaders->SetHeader(L"User-Agent", overridingUserAgent.c_str());
-  }
-
-  return S_OK;
-}
+    if (m_blockImages)
+    {
+        // Register a handler for the WebResourceRequested event.
+        // This handler blocks all resources that are in an image context, such
+        // as <img> elements and CSS background-image properties.
+        PCWSTR matchAllUris[] = { L"*" };
+        WEBVIEW2_WEB_RESOURCE_CONTEXT imagesFilter[] = {
+            WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE };
+        CHECK_FAILURE(m_webView->add_WebResourceRequested(
+            matchAllUris, imagesFilter, 1,
+            Callback<IWebView2WebResourceRequestedEventHandler>(
+                [this](IWebView2WebView* sender,
+                       IWebView2WebResourceRequestedEventArgs* args)
+        {
+            // Override the response with an empty one to block the image.
+            // If put_Response is not called, the request will continue as normal.
+            wil::com_ptr<IWebView2WebResourceResponse> response;
+            CHECK_FAILURE(m_webViewEnvironment->CreateWebResourceResponse(
+                nullptr, 200, L"OK", L"",
+                &response));
+            CHECK_FAILURE(args->put_Response(response.get()));
+            return S_OK;
+        }).Get(), &m_webResourceRequestedTokenForImageBlocking));
+    }
+    else
+    {
+        CHECK_FAILURE(m_webView->remove_WebResourceRequested(
+            m_webResourceRequestedTokenForImageBlocking));
+    }
 ```
 
 #### remove_WebResourceRequested 
@@ -774,6 +743,45 @@ Add an event handler for the PermissionRequested event.
 > public HRESULT [add_PermissionRequested](#interface_i_web_view2_web_view_1a56d5be170335da55302e94dc4f98dd3f)([IWebView2PermissionRequestedEventHandler](IWebView2PermissionRequestedEventHandler.md#interface_i_web_view2_permission_requested_event_handler) * eventHandler,EventRegistrationToken * token)
 
 Fires when content in a WebView requests permission to access some privileged resources.
+
+```cpp
+    // Register a handler for the PermissionRequested event.
+    // This handler prompts the user to allow or deny the request.
+    CHECK_FAILURE(m_webView->add_PermissionRequested(
+        Callback<IWebView2PermissionRequestedEventHandler>(
+            [this](
+                IWebView2WebView* sender,
+                IWebView2PermissionRequestedEventArgs* args) -> HRESULT
+    {
+        wil::unique_cotaskmem_string uri;
+        WEBVIEW2_PERMISSION_TYPE type = WEBVIEW2_PERMISSION_TYPE_UNKNOWN_PERMISSION;
+        BOOL userInitiated = FALSE;
+
+        CHECK_FAILURE(args->get_Uri(&uri));
+        CHECK_FAILURE(args->get_PermissionType(&type));
+        CHECK_FAILURE(args->get_IsUserInitiated(&userInitiated));
+
+        std::wstring message = L"Do you want to grant permission for ";
+        message += NameOfPermissionType(type);
+        message += L" to the website at ";
+        message += uri.get();
+        message += L"?\n\n";
+        message += (userInitiated
+            ? L"This request came from a user gesture."
+            : L"This request did not come from a user gesture.");
+
+        int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
+                                   MB_YESNOCANCEL | MB_ICONWARNING);
+
+        WEBVIEW2_PERMISSION_STATE state =
+              response == IDYES ? WEBVIEW2_PERMISSION_STATE_ALLOW
+            : response == IDNO  ? WEBVIEW2_PERMISSION_STATE_DENY
+            :                     WEBVIEW2_PERMISSION_STATE_DEFAULT;
+        CHECK_FAILURE(args->put_State(state));
+
+        return S_OK;
+    }).Get(), &m_permissionRequestedToken));
+```
 
 #### remove_PermissionRequested 
 
@@ -1011,11 +1019,15 @@ Capture an image of what WebView is displaying.
 Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
 
 ```cpp
+// Show the user a file selection dialog, then save a screenshot of the WebView
+// to the selected file.
+void AppWindow::SaveScreenshot()
+{
     OPENFILENAME openFileName = {};
     openFileName.lStructSize = sizeof(openFileName);
     openFileName.hwndOwner = nullptr;
     openFileName.hInstance = nullptr;
-    WCHAR fileName[MAX_PATH] = L"Preview.png";
+    WCHAR fileName[MAX_PATH] = L"WebView2_Screenshot.png";
     openFileName.lpstrFile = fileName;
     openFileName.lpstrFilter = L"PNG File\0*.png\0";
     openFileName.nMaxFile = ARRAYSIZE(fileName);
@@ -1023,8 +1035,8 @@ Specify the format of the image with the imageFormat parameter. The resulting im
 
     if (GetSaveFileName(&openFileName))
     {
-        ComPtr<IStream> stream;
-        RETURN_IF_FAILED(SHCreateStreamOnFileEx(
+        wil::com_ptr<IStream> stream;
+        CHECK_FAILURE(SHCreateStreamOnFileEx(
             fileName,
             STGM_READWRITE | STGM_CREATE,
             FILE_ATTRIBUTE_NORMAL,
@@ -1032,20 +1044,20 @@ Specify the format of the image with the imageFormat parameter. The resulting im
             nullptr,
             &stream));
 
-        RETURN_IF_FAILED(webview->CapturePreview(
+        CHECK_FAILURE(m_webView->CapturePreview(
             WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_PNG,
-            stream.Get(),
-            Microsoft::WRL::Callback<IWebView2CapturePreviewCompletedHandler>(
+            stream.get(),
+            Callback<IWebView2CapturePreviewCompletedHandler>(
                 [](HRESULT error_code) -> HRESULT
         {
-            RETURN_IF_FAILED(error_code);
+            CHECK_FAILURE(error_code);
 
             MessageBox(nullptr, L"Preview Captured", L"Preview Captured",
                         MB_OK);
             return S_OK;
         }).Get()));
     }
-    return S_OK;
+}
 ```
 
 #### Reload 
@@ -1075,20 +1087,18 @@ Set the Bounds property.
 > public HRESULT [put_Bounds](#interface_i_web_view2_web_view_1abdd3b3f3f40ec9b5fb40550674dec528)(RECT bounds)
 
 ```cpp
+// Update the bounds of the WebView window to fit available space.
 void AppWindow::ResizeWebView()
 {
-    if (m_webview)
+    RECT currentBounds;
+    GetClientRect(m_hostWindow, &currentBounds);
+    RECT desiredBounds = currentBounds;
+    if (m_webViewRatio < 1)
     {
-        RECT current_bounds;
-        GetClientRect(m_hostWindow, &current_bounds);
-        RECT desired_bounds = current_bounds;
-        if (m_webViewRatio < 1)
-        {
-            desired_bounds = { 0, 0, (long)(current_bounds.right * m_webViewRatio),
-                              (long)(current_bounds.bottom * m_webViewRatio) };
-        }
-        m_webview->put_Bounds(desired_bounds);
+        desiredBounds = { 0, 0, (long)(currentBounds.right * m_webViewRatio),
+                          (long)(currentBounds.bottom * m_webViewRatio) };
     }
+    m_webView->put_Bounds(desiredBounds);
 }
 ```
 
@@ -1150,32 +1160,11 @@ If IsVisible is set to false, the webview will be transparent and will not be re
 void AppWindow::ToggleVisibility()
 {
     BOOL visible;
-    m_webview->get_IsVisible(&visible);
+    m_webView->get_IsVisible(&visible);
     m_isVisible = !visible;
-    m_webview->put_IsVisible(m_isVisible);
+    m_webView->put_IsVisible(m_isVisible);
     ShowWindow(m_hostWindow, m_isVisible ? SW_SHOWNA : SW_HIDE);
 }
-```
-
-```cpp
-    case WM_SYSCOMMAND:
-    {
-        if (!m_webview) break;
-        BOOL visible;
-        m_webview->get_IsVisible(&visible);
-        // Hide the webview when minimized. Otherwise, show the webview when restored
-        // AND the user didn't toggle visibility off before minimizing.
-        // The webview can be visible on restore if it was in a maximized case for
-        // example so don't toggle it in those cases.
-        if (wParam == SC_MINIMIZE && visible)
-        {
-            m_webview->put_IsVisible(FALSE);
-        }
-        else if (wParam == SC_RESTORE && !visible && m_isVisible)
-        {
-            m_webview->put_IsVisible(TRUE);
-        }
-    } break;
 ```
 
 #### put_IsVisible 
@@ -1183,6 +1172,23 @@ void AppWindow::ToggleVisibility()
 Set the IsVisible property.
 
 > public HRESULT [put_IsVisible](#interface_i_web_view2_web_view_1a7fd9470d593cdd63b3cf46066f5b5bcc)(BOOL isVisible)
+
+```cpp
+    case WM_SYSCOMMAND:
+    {
+        if (!m_webView) break;
+        // Hide the webview when the app window is minimized, and show it when the app
+        // window is restored (unless the user has toggled visiblity off).
+        if (wParam == SC_MINIMIZE)
+        {
+            m_webView->put_IsVisible(FALSE);
+        }
+        else if (wParam == SC_RESTORE && m_isVisible)
+        {
+            m_webView->put_IsVisible(TRUE);
+        }
+    } break;
+```
 
 #### PostWebMessageAsJson 
 
