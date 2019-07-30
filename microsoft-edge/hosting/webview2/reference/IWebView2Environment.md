@@ -91,22 +91,37 @@ Create a new web resource response object.
 
 > public HRESULT [CreateWebResourceResponse](#interface_i_web_view2_environment_1aa1bda3e667feb52bfc218a4a54273439)(IStream * content,int statusCode,LPCWSTR reasonPhrase,LPCWSTR headers,[IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response) ** response)
 
-For information on parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response).
+The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#interface_i_web_view2_http_response_headers) to construct the headers line by line. For information on other parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response).
 
 ```cpp
-HRESULT WebView::WebResourceRequestedEventHandler(
+HRESULT AppWindow::OnWebResourceRequested(
     IWebView2WebView* sender,
-    IWebView2WebResourceRequestedEventArgs* args)
+  IWebView2WebResourceRequestedEventArgs* args)
 {
-    if (block_images_)
-    {
-        ComPtr<IWebView2WebResourceResponse> response;
-        RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
-            &response));
-        RETURN_IF_FAILED(args->put_Response(response.Get()));
-    }
+  ComPtr<IWebView2WebResourceRequest> request;
+  args->get_Request(&request);
+  wil::unique_cotaskmem_string requestUri;
+  request->get_Uri(&requestUri);
+  std::wstring requestUriString = requestUri.get();
+  std::wstring extension = requestUriString.substr(requestUriString.length() - 4);
+  if (m_blockImages && (extension == L".jpg" || extension == L".png"))
+  {
+    ComPtr<IWebView2WebResourceResponse> response;
+    RETURN_IF_FAILED(m_webviewEnvironment->CreateWebResourceResponse(nullptr, 200, L"OK", L"",
+      &response));
+    ComPtr<IWebView2HttpResponseHeaders> responseHeaders;
+    RETURN_IF_FAILED(response->get_Headers(&responseHeaders));
+    // Fake response with jpeg type.
+    RETURN_IF_FAILED(responseHeaders->AppendHeader(L"Content-Type", L"image/jpeg"));
+    RETURN_IF_FAILED(args->put_Response(response.Get()));
+  }
+  else if (m_changeUserAgent) {
+    ComPtr<IWebView2HttpRequestHeaders> requestHeaders;
+    RETURN_IF_FAILED(request->get_Headers(&requestHeaders));
+    requestHeaders->SetHeader(L"User-Agent", overridingUserAgent.c_str());
+  }
 
-    return S_OK;
+  return S_OK;
 }
 ```
 
