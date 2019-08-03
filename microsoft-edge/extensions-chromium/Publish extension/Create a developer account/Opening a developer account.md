@@ -14,6 +14,10 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 To submit browser extensions you’ve developed, you’ll need to set up a Microsoft Edge developer account in Partner Center.
 
+## Do you have a Microsoft account?
+To create a developer account for Microsoft Edge, you’ll need to have a Microsoft account email. If you don’t have a Microsoft account, go to account.microsoft.com, select Sign in, and then choose Create one!
+
+
 ## Registration process
 
 1.	Go to the registration page (link to extensions webpage) and select Sign up.
