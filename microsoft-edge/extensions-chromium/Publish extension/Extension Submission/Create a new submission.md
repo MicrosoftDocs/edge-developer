@@ -37,10 +37,10 @@ Note that if someone already has your extension in a certain market, and you lat
 
     - **Category**: Select a Category that the Microsoft Store should use to list your extension. You must choose the category that best describes your extension.
     - **Privacy policy requirements**: You must indicate whether your extension accesses, collects, or transmits any personal information. If you answer Yes, a privacy policy URL is required. Otherwise, it is optional (though if we determine that your extension requires a privacy policy, and you have not provided one, your submission may fail certification).
-    - **Privacy policy URL**: Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension. To help you determine if your extension requires a privacy policy, review the Microsoft Edge Developer Agreement and the Microsoft Edge Addons Store Developer Policies.
+    - **Privacy policy URL**: Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension. To help you determine if your extension requires a privacy policy, review the [Microsoft Edge Developer Agreement] and the Microsoft Edge Addons Store Developer Policies.
     - **Website URL**: Enter the URL of the web page for your extension. This URL must point to a page on your own website, not your extension’s web listing in the Microsoft Store. This field is optional but recommended.
     - **Support URL/email address**: Enter the URL of the web page where your customers can go for support with your extension, or an email address that customers can contact for support. It is optional but we recommend including this info for all submissions, so that your customers know how to get support if they need it.
-    - **Mature content**:  Check this box if your extension contains any mature content. If you indicate your extension as mature, your extension store listing will available with a separate tag to indicate that the extension contains mature content. To help you determine if your extensions has a mature content, review the Microsoft Edge Addons Store Developer Policies.
+    - **Mature content**:  Check this box if your extension contains any mature content. If you indicate your extension as mature, your extension store listing will available with a separate tag to indicate that the extension contains mature content. To help you determine if your extensions has a mature content, review the [Microsoft Edge Addons Store Developer Policies].
 
 8.	Click **Save** to proceed to **Store listing** section. 
 9.	Add **Store listings** information for your extension such as text, images, etc. This is the information that customers will see when viewing your extension’s listing in the Microsoft Store.  
@@ -65,4 +65,5 @@ Note that if someone already has your extension in a certain market, and you lat
     After completing the above details, click **Publish** to submit your extension to the Store.
 
 [Microsoft Edge developer portal]: https://www.bing.com/
-
+[Microsoft Edge Developer Agreement]: https://www.bing.com/
+[Microsoft Edge Addons Store Developer Policies]: https://www.bing.com/
