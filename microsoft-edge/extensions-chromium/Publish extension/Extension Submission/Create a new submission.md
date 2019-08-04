@@ -11,9 +11,10 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 ---
 # Creating an extension submission
 
-To create an extension submission on Partner Center, the first step is to create a Zip file for your package. When creating the Zip file of your package, ensure that the package contains: 
--The manifest file and it must have extension’s name and version defined
--The images and other files that your extension requires
+To create an extension submission on Partner Center, the first step is to create a Zip file for your package. When creating the Zip file of your package, ensure that the package contains:  
+
+- The manifest file and it must have extension’s name and version defined
+- The images and other files that your extension requires
   
 To create an extension submission on Partner Center, you may follow these steps:
   
@@ -22,16 +23,18 @@ To create an extension submission on Partner Center, you may follow these steps:
 3.	Upload your extension Zip file by dragging the file into the upload field. After you upload the package, you’ll see a few manifest details to review before you click Save to proceed. If there are errors in the package, resolve the issues and try uploading it again.  
 (To update your package, you can drag and drop the new package over your current package)
 
-4.	Select a Visibility option to define the audience who can discover and acquire your extension. Currently, you have two options under visibility:
-    a.	Public: Your extension will be available and discoverable to everyone in the Microsoft Store.
-    b.	Hidden: Your extension can’t be found in the Microsoft Store by customers searching or browsing; you’ll need to share the store listing URL to distribute your extension.
+4.	Select a Visibility option to define the audience who can discover and acquire your extension. Currently, you have two options under visibility:  
+
+    a. Public: Your extension will be available and discoverable to everyone in the Microsoft Store.
+    b. Hidden: Your extension can’t be found in the Microsoft Store by customers searching or browsing; you’ll need to share the store listing URL to distribute your extension.
 
 5.	To define specific markets in which you’d like to offer your extension, select Show options in the Markets section on the Availability page. This will display the Market selection popup window, where you can choose the markets.  
 By default, all markets are selected, including any future markets that we may add later. You can unselect individual markets to exclude them, or you can click Unselect all and then add individual markets of your choice.  
 Note that if someone already has your extension in a certain market, and you later remove that market, the people who already have the extension in that market can continue to use it, but they won’t get the updates you submit.  
 
 6.	Click Save to proceed to Properties section. 
-7.	Select Properties for your extension. 
+7.	Select Properties for your extension.  
+
     a.	Category: Select a Category that the Microsoft Store should use to list your extension. You must choose the category that best describes your extension.
     b.	Privacy policy requirements: You must indicate whether your extension accesses, collects, or transmits any personal information. If you answer Yes, a privacy policy URL is required. Otherwise, it is optional (though if we determine that your extension requires a privacy policy, and you have not provided one, your submission may fail certification).
     c.	Privacy policy URL: Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension. To help you determine if your extension requires a privacy policy, review the Microsoft Edge Developer Agreement and the Microsoft Edge Addons Store Developer Policies.
