@@ -10,10 +10,11 @@ ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
 ---
 
-# Port a Chrome extension to Microsoft Edge
+# Porting Chrome extension to Microsoft Edge
 
-The process of porting a Chrome extension to Microsoft Edge is very straightforward. Extensions written for Chromium will, in most cases, run on Microsoft Edge with minimal changes. The extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge. However, Microsoft Edge doesn’t support these extension APIs: **chrome.gcm, chrome.identity.getAccounts, chrome.identity.getAuthToken, chrome.identity.getProfileUserInfo, chrome.instanceID**. 
-Payments: Microsoft Edge cannot directly support an extension that uses Chrome Web Store payments (<https://developer.chrome.com/webstore/one_time_payments>) as you’ll have to use identity.getAuthtoken to get the token for signed in user to call the REST based licensing API. Since Microsoft Edge doesn’t support getAuthtoken, this flow would not work.
+The process of porting a Chrome extension to Microsoft Edge is very straightforward. Extensions written for Chromium will, in most cases, run on Microsoft Edge with minimal changes. The extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge. However, Microsoft Edge doesn’t support these extension APIs: **chrome.gcm, chrome.identity.getAccounts, chrome.identity.getAuthToken, chrome.identity.getProfileUserInfo, chrome.instanceID**.  
+
+**Payments**: Microsoft Edge cannot directly support an extension that uses Chrome Web Store payments (<https://developer.chrome.com/webstore/one_time_payments>) as you’ll have to use identity.getAuthtoken to get the token for signed in user to call the REST based licensing API. Since Microsoft Edge doesn’t support getAuthtoken, this flow would not work.
 To port your Chrome extension,  follow these steps:  
 
 1.	Review the Chrome extension APIs used in your extensions. If you're using features or APIs that aren't supported by Microsoft Edge, you might not be able to port your extension.
