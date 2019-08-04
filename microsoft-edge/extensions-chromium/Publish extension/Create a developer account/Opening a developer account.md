@@ -23,7 +23,14 @@ To create a developer account for Microsoft Edge, you’ll need to have a Micros
 1.	Go to the [registration][Partner Center URL] page and select **Sign up**.
 2.	If you're not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account. The Microsoft account you use here will be what you use to sign in to your developer account. 
 After sign in, you’ll land on this registration form:  
-    ![alt-text](../../media/img1.png)
+
+    <figure>
+       <img src="../../media/img1.png"
+            alt="The registration page"/>
+       <figcaption>
+         <b>Figure 1</b>. The registration page
+       </figcaption>
+     </figure>
 
 > [!Note]
 > If you are already registered as a Windows app developer with Microsoft, you’ll automatically be registered to Microsoft Edge developer account.  
