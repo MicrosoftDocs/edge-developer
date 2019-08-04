@@ -24,13 +24,13 @@ To create a developer account for Microsoft Edge, you’ll need to have a Micros
 2. If you're not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account. The Microsoft account you use here will be what you use to sign in to your developer account.
 After sign in, you’ll land on this registration form:  
 
-    <figure>
+   <figure>
        <img src="../../media/img1.png"
             alt="The registration page"/>
        <figcaption>
          <b>Figure 1</b>. The registration page
        </figcaption>
-     </figure>
+    </figure>
 
 > [!Note]
 > If you are already registered as a Windows app developer with Microsoft, you’ll automatically be registered to Microsoft Edge developer account.  
@@ -39,7 +39,7 @@ After sign in, you’ll land on this registration form:
 1. Select your **developer account type (individual or company)**. You won't be able to change this later, so be sure to choose the right type of account.
 Here are the essential differences between the two account types -  
 
-    <table style="width:100%">
+   <table style="width:100%">
       <tr>
         <th><b>Individual account</b></th>
         <th><b>Company account</b></th>
