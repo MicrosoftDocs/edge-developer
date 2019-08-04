@@ -98,6 +98,7 @@
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
+#### [Opening a developer account](extensions-chromium/Publish extension/Create a developer accout/Opening a developer account.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
