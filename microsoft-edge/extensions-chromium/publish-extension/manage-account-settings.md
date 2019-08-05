@@ -19,4 +19,3 @@ You can view and update your account settings and Profile details in the Account
 ## Contact Details
 
 ## Other settings
-
