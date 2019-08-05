@@ -11,9 +11,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Run your extension locally in your browser while developing it (side-loading)
 
-By [Peter Kellner](http://peterkellner.net)
-
-The Edge Chromium browser provides a safe and simple way for you to run as well as debug your extensions while you are developing them.  Once developed, you'll want to submit them to the public extensions so everyone can install an use them.
+The Microsoft Edge Chromium browser provides a safe and simple way for you to run as well as debug your extensions while you are developing them.  Once developed, you'll want to submit them to the public extensions so everyone can install and use them.
 
 ## Launching the extensions menu
 
@@ -27,7 +25,7 @@ When you are in the "Extensions" menu as shown below, you click on one of the th
 
 ## Installing and updating side-loaded extensions
 
-The first time you want to install your extension, you choose the option on the same line as "Installed Extensions" titled "Load Unpacked".  This prompts you for a directory where you have your extension assets file by file. That installs the extension as if you had downloaded it from a store.  The next two options, Pack Extension and Update you don't need to worry about until later. Those have to do with deploying your extension to a public store.
+The first time you want to install your extension, you choose the option "Load Unpacked".  This prompts you for a directory where you have your extension assets file by file. That installs the extension as if you had downloaded it from a store.  
 
 Once you've installed your extension, you can update it by clicking on the "Reload" button under your extension listing.
 
