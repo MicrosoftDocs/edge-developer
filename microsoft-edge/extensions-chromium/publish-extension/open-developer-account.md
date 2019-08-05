@@ -54,8 +54,13 @@ Here are the essential differences between the two account types -
       </tr>
     </table>
 
-5. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that if you enter a name that someone else has already selected, or if it appears that someone else has the rights to use that name, we will not allow you to use that name.
-6. Enter the **contact details** for your developer account. For company accounts, be sure to use your organization’s registered email address. Note that we'll use these details to contact you about account-related matters.
+5. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that if you enter a name that someone else has the rights to use, we will not allow you to use that name.
+
+1. Enter the **contact details** for your developer account. For company accounts, be sure to use your organization’s registered email address.
+
+> [!Note]
+> We'll use these details to contact you about account-related matters.  
+
 If you are registering as a company, you'll also need to enter the name, email address, and phone number of the person who will approve your company's account.
 
 7. Review your account details and confirm that everything is correct. Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement].
