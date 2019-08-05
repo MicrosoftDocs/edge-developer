@@ -30,7 +30,7 @@ In part 1, our goal is to build a very simple Edge Chromium extension starting w
 
 ## The manifest file basics
 
-Every extension must have a `manifest.json` file in its root.  You can think of this as the blueprint for the extension. It tells the browser engine what version of the extension API the extension expects, the name and description of the extension, and lots of other details, many of which we will get to in this multi-part Extension Getting Started Guide. Since this is just part 1, let's create a minimal extension with just some basic information. s
+Every extension must have a `manifest.json` file in its root.  You can think of this as the blueprint for the extension. It tells the browser engine what version of the extension API the extension expects, the name and description of the extension, and lots of other details, many of which we will get to in this multi-part Extension Getting Started Guide. Since this is just part 1, let's create a minimal extension with just some basic information.  
 
 Below is the simple  `manifest.json`
 
@@ -45,20 +45,19 @@ Below is the simple  `manifest.json`
 
 ## Extension icons setup
 
-Next thing is to some icons to our `manifest.json` file (and create a new `/icons` directory with the icons files). When we finally create our package to be installed, these icons will be used for the background image of the button the user clicks to launch the extension (if there is one), images in the store that browser users search to find your extension, and other places that are appropriate.  
+Next thing is to add some icons to our `manifest.json` file (and create a new `/icons` directory with the icons files). When we finally create our package to be installed, these icons will be used for the background image of the button the user clicks to launch the extension (if there is one), images in the store that browser users search to find your extension, and other places that are appropriate.  
 
 `PNG` is the recommended format, but you can also use `BMP`, `GIF`, `ICO` and `JPEG`. It is recommended to always have at least a 128x128 size icon and the browser will automatically resize it as necessary.
 
 Your directory structure will now look like this
 
-.  
-+-- _manifest.json  
-+-- icons  
-|   +-- nasapod16x16.png  
-|   +-- nasapod32x32.png  
-|   +-- nasapod48x48.png  
-|   +-- nasapod128x128.png  
-
+_manifest.json  
+<details> icons  
+nasapod16x16.png  
+nasapod32x32.png  
+nasapod48x48.png  
+nasapod128x128.png  
+</details>
 and your updated `manifest.json` file is as follows.
 
 ```JSON
