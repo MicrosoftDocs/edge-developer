@@ -164,7 +164,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 ```
 
 The section we added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in this `content_scripts` section will be injected into all browser tab pages when they are loaded. The allowable types of files that can be injected here are `js` and `css`. We've also added `libjquery.min.js`. You can include that from the download mentioned at the top of this section.
-
+  
 
 ## Adding `jQuery` and understanding which thread it is used by
 
