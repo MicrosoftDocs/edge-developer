@@ -11,16 +11,18 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 ---
 # Creating an extension submission
 
-To create an extension submission on Partner Center, the first step is to create a Zip file for your package. When creating the Zip file of your package, ensure that the package contains:  
-
+To publish your extension on Microsoft Store, you must first create a submission on Partner center and submit it.
+Before starting to create your submission, ensure that the extension is working fine on Microsoft Edge browser and you package contains these files:  
 - The manifest file and it must have extension’s name and version defined
-- The images and other files that your extension requires
+- The images and other files that your extension requires  
   
+
 To create an extension submission on Partner Center, you may follow these steps:
   
 1. Go to [Microsoft Edge developer portal] and sign in to your developer account.
 2. From the **Overview page**, click **Create new**
-3. Upload your extension Zip file by dragging the file into the upload field. After you upload the package, you’ll see a few manifest details to review before you click **Save** to proceed. If there are errors in the package, resolve the issues and try uploading it again.  
+3. Upload your extension Zip file by dragging the file into the upload field.
+After you upload the package, you’ll see a few manifest details to review before you click **Save** to proceed. If there are errors in the package, resolve the issues and try uploading it again.  
 (To update your package, you can drag and drop the new package over your current package)
 
 4. Select a **Visibility** option to define the audience who can discover and acquire your extension. Currently, you have two options under visibility:  
