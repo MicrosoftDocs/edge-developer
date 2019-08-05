@@ -11,8 +11,6 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Dynamically insert NASA picture below the page body tag using content scripts
 
-By [Peter Kellner](http://peterkellner.net)
-
 * Extension technologies covered in this part 3.
   * Injecting `JavaScript` libraries into extension
   * Exposing extension assets to browser tabs
@@ -64,7 +62,7 @@ After updating our extension and clicking on the extension launch icon, we have 
 
 Before writing any more code, let's talk about what our strategy is going to be to make clicking the display button on this popup bring up the `images/stars.jpeg` image file at the top of the active tab page instead of as a modal popup window.
 
-In the popup modal dialog case, the previous example we built, the thread that is associated with the extension itself launched the modal dialog.  Remeber, each tab page has it's own thread and the extension itself has a thread. That meant that we can simply reference the `src` attribute of the `img` element to point to the local file `images/stars.jpeg` because it's embedded in the extensions package.
+In the popup modal dialog case, the previous example we built, the thread that is associated with the extension itself launched the modal dialog.  Remember, each tab page has it's own thread and the extension itself has a thread. That meant that we can simply reference the `src` attribute of the `img` element to point to the local file `images/stars.jpeg` because it's embedded in the extensions package.
 
 Now, we want to inject an `img` element into the tab page itself. We can't do that directly from the `popup.js` because the popup has no direct access to the browser tab pages. What we need to do is first create a content script that's included directly in the browser tab, and then inject that content script into the tab page.  Once we've done that, we want to send a message from our `popup.js` to that content script running on the tab page telling that content script what image to show, and how to show it.  Let's do that now to make it clear what I just explained.
 
@@ -165,7 +163,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 }
 ```
 
-The section we added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in this `content_scripts` section will be injected into all browser tab pages when they are loaded. The allowable types of files that can be injected here are `js` and `css`. We've also added `libjquery.min.js`. You can included that from the download mentioned at the top of this section.
+The section we added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in this `content_scripts` section will be injected into all browser tab pages when they are loaded. The allowable types of files that can be injected here are `js` and `css`. We've also added `libjquery.min.js`. You can include that from the download mentioned at the top of this section.
 
 
 ## Adding `jQuery` and understanding which thread it is used by
