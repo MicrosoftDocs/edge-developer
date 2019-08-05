@@ -11,8 +11,6 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Build a simple extension that pops up NASA picture of the day
 
-By [Peter Kellner](http://peterkellner.net)
-
 * Extension technologies covered in this part 1
   * Manifest basics
   * Icons associated with the extension
