@@ -25,7 +25,7 @@ To create a developer account for Microsoft Edge, you’ll need to have a Micros
 After sign in, you’ll land on this registration form:  
 
    <figure>
-       <img src="../../media/img1.png"
+       <img src="../media/img1.png"
             alt="The registration page"/>
        <figcaption>
          <b>Figure 1</b>. The registration page
