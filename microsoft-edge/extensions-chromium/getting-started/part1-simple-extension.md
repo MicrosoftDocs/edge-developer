@@ -51,13 +51,14 @@ Next thing is to add some icons to our `manifest.json` file (and create a new `/
 
 Your directory structure will now look like this
 
-_manifest.json  
-<details> icons  
-nasapod16x16.png  
-nasapod32x32.png  
-nasapod48x48.png  
-nasapod128x128.png  
-</details>
+.  
++-- _manifest.json  
++-- icons  
+|   +-- nasapod16x16.png  
+|   +-- nasapod32x32.png  
+|   +-- nasapod48x48.png  
+|   +-- nasapod128x128.png  
+
 and your updated `manifest.json` file is as follows.
 
 ```JSON
