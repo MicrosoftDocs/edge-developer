@@ -107,7 +107,7 @@
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
 ## [Visual Studio Code](visual-studio-code/index.md)
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
-### [Elements for Edge](elements-for-edge.md)
+### [Elements for Edge](visual-studio-code/elements-for-edge.md)
 ## [WebDriver](webdriver.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)

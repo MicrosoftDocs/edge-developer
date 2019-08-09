@@ -1,7 +1,7 @@
 ---
 description: How to use Elements for Microsoft Edge (Chromium) from VS Code
 title: Debug Microsoft Edge (Chromium) from VS Code
-author: ericadraud
+author: erdraud
 ms.author: erdraud
 ms.date: 08/08/2019
 ms.topic: article
