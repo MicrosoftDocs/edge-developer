@@ -65,7 +65,6 @@ Add the configuration below to your **launch.json** file:
 Select "Attach to Microsoft Edge and open the Elements tool" from the DEBUG drop-down menu. Next, either press `F5` on Windows or Mac or click the green **Play** button. VS Code will launch the Elements tab, allowing you to access all of its tools.
 
 ## Feedback
-<--edit this to reflect elements-->
 Send us your feedback by [filing an issue](https://github.com/microsoft/vscode-edge-devtools/issues/new) against this extension's [GitHub repo](https://github.com/microsoft/vscode-edge-devtools). 
 
 If you want to help us make this extension better, we welcome your contributions! You can find everything you need to get started in [our GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
