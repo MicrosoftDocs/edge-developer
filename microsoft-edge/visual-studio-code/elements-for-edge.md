@@ -15,15 +15,13 @@ By adding the [Elements for Edge](https://marketplace.visualstudio.com/items?ite
 
 ![GIF of the Elements for Edge VS Code extension at work](./media/elements-for-edge.gif)
 
-## Launching Microsoft Edge
-
-### From the Elements tab
+## Launching Edge From the Elements tab
 
 ![Elements for Edge tab](./media/elements-for-edge-logo.jpg) 
 
 Navigate to Elements (the icon shown above). Next to where it says Elements for Microsoft Edge: Targets, there is a plus sign that will open the browser for your app. If you selected the about:blank option, you will have to navigate to your web app in the browser for it to appear in the Elements panel in VS Code.
 
-### From the Debugger tab
+## Launching Edge from the Debugger tab
 
 If you are accustomed to the Debugger tool, you can access Elements from that tool. Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac). 
 
@@ -47,7 +45,7 @@ If you do not have any configurations in VS Code, press `F5` on Windows or Mac o
 
 Make sure “Launch Microsoft Edge and open the Elements tool” is selected then either press `F5` on Windows or Mac or click the green **Play** button. VS Code will launch the Elements, allowing you to access a screencast of your browser and examine the components of your page.
 
-##Attaching to Microsoft Edge
+## Attaching to Microsoft Edge
 If you'd like to attach VS Code to an instance of Microsoft Edge (Chromium) that you've already launched, run the following command from your teminal:
 
 `start msedge --remote-debugging-port=9222`
@@ -66,7 +64,7 @@ Add the configuration below to your **launch.json** file:
 
 Select "Attach to Microsoft Edge and open the Elements tool" from the DEBUG drop-down menu. Next, either press `F5` on Windows or Mac or click the green **Play** button. VS Code will launch the Elements tab, allowing you to access all of its tools.
 
-##Feedback
+## Feedback
 <--edit this to reflect elements-->
 Send us your feedback by [filing an issue](https://github.com/microsoft/vscode-edge-devtools/issues/new) against this extension's [GitHub repo](https://github.com/microsoft/vscode-edge-devtools). 
 
