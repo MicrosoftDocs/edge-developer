@@ -12,11 +12,11 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 # Web Store hosting and updating
 
-Most extensions are hosted in the Microsoft Store to best protect users from malicious extensions.
+Most extensions are hosted in the [Microsoft Store] to best protect users from malicious extensions.
 
 ## Hosting
 
-All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Microsoft Store are uploaded through the Developer Dashboard as .zip files. The publishing process automatically converts the .zip into a .crx file.
+All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Microsoft Store are uploaded through the [Developer Dashboard] as .zip files. The publishing process automatically converts the .zip into a .crx file.
 
 There are three exceptions to the Microsoft Store hosting rule:
 
@@ -46,4 +46,7 @@ To release an update to an extension, increase the number in the “version” f
     }
 }
 ```
-Convert the updated extension directory into a ZIP file and locate the old version in the Developer Dashboard. Select Edit, upload the new package, and hit Publish. The browser will will automatically update the extension for users after the new version is published.
+Convert the updated extension directory into a ZIP file and locate the old version in the [Developer Dashboard]. Select Edit, upload the new package, and hit Publish. The browser will will automatically update the extension for users after the new version is published.
+
+[Microsoft Store]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions
+[Developer Dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
