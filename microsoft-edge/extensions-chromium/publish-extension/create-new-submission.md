@@ -11,7 +11,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 ---
 # Creating an extension submission
 
-To publish your extension on Microsoft Store, you must first create a submission on Partner center and submit it.  
+To publish your extension on Microsoft Store, you must first create a submission on Partner center and submit it. This document lists all the details that you need to provide to create an extension submission.
 
 ## Before you begin
 
@@ -26,7 +26,7 @@ To create an extension submission on Partner Center, follow these steps.
 
 ## Step 1: Start a new submission
 
-Sign-in to your account. From the **Overview** page (as shown below), click **Create new extension**. 
+Go to your [developer dashboard]. From the **Overview** page (as shown below), click **Create new extension**. 
 
 ![Overview page](../media/img1.png)
 
