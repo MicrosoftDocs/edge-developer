@@ -15,7 +15,7 @@ To publish your extension on Microsoft Store, you must first create a submission
 
 ## Before you begin
 
-1. You must have an active developer account on [Partner center] to submit your extension on Microsoft Store. If you don’t have one, create a new developer account. Now, go to Microsoft Edge developer portal (URL TBD) and sign in to your developer account.
+1. You must have an active developer account on [Partner center] to submit your extension on Microsoft Store. If you don’t have one, create a new developer account. Now, go to [Microsoft Edge developer portal] and sign in to your developer account.
 1. Create a zip file of your extension package and ensure that it contains these files:  
     - The manifest file and it must have extension’s name and version defined
     - The images and other files that your extension requires  
@@ -33,20 +33,21 @@ Go to your [developer dashboard]. From the **Overview** page (as shown below), c
 ## Step 2: Upload your extension Zip file
 
 The **Package** page is where you upload the **zip file** for the extension which you’re submitting. You can only upload one package at a time, so if your extension is not complete you can upload a work-in-progress package and update it anytime before publishing it. Be sure that the package you’re uploading contains `manifest.json` and is working fine on **Microsoft Edge**.  
-Upload the package by dragging it into the upload field. The Package page will validate the extensions zip file and will show you the **upload success or failure status**. If the package passes validation, it will be uploaded successfully and you’ll see a success message. However, if the package fails validation, the package will not be accepted and an error message will be shown. If there are errors in the package, resolve the issues and try uploading it again. You’ll not be able to proceed unless you fix all the errors on your package.  
+Upload the package by dragging it into the upload field or by . The Package page will validate the extensions zip file and will show you upload **success or failure status**. If the package passes validation, it will be uploaded successfully and you’ll see a success message. However, if the package fails validation, the package will not be accepted and an error message will be shown. If there are errors in the package, resolve the issues and try uploading it again.
 
 After successful upload, review your extension details and click **Next** to proceed.
 
-![Overview page](../media/img1.png)
+![Package upload page](../media/img1.png)
 
 ## Step 3: Provide Availability details
 
 ### Visibility
 
-Select a **Visibility** option to define the audience who can discover and acquire your extension. This gives you the option to specify whether people can find your app in the Store or see its Store listing at all. Currently, you have two options under visibility:
+Select a **Visibility** option to define the audience who can discover and acquire your extension. This gives you the option to specify whether people can find your extension in the Store or see its Store listing at all. Currently, you have two options under visibility:
 
-    - **Public**: Your extension will be available and discoverable to everyone in the Microsoft Store.
-    - **Hidden**: Your extension can’t be found in the Microsoft Store by customers searching or browsing; you’ll need to share the store listing URL to distribute your extension.
+- **Public**: Your extension will be available and discoverable to everyone in the Microsoft Store. This is the default option. Leave this option selected if you want your extension to be listed in the Store for customers to find via searching, browsing, and extension’s direct link.
+- **Hidden**: Your extension can’t be found in the Microsoft Store by customers searching or browsing; you’ll need to share the store listing URL to distribute your extension. Any customer with the direct link to the product’s list can download it on Microsoft Edge.  
+(You can find your extension store listing URL under **Extension Overview** page of extension submission.)
 
 > [!Note]
 > If you submit an extension as Public and later change it to Private, the users who already have the extension will continue to use it and would receive the update as well.
@@ -79,12 +80,12 @@ Listing your extension in the right category helps customers find your extension
 
 ### Privacy policy requirements
 
-You must indicate whether your extension accesses, collects, or transmits any personal information. If you answer Yes, a privacy policy URL is required. Otherwise, it is optional (though if we determine that your extension requires a privacy policy, and you have not provided one, your submission may fail certification).
+In this section, you must indicate whether your extension accesses, collects, or transmits any personal information. If you answer **Yes**, a privacy policy URL is required. Otherwise, it is optional (though if we determine that your extension requires a privacy policy, and you have not provided one, your submission may fail certification).
 
 ### Privacy policy URL
 
-You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL here if required.
-You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension. To help you determine if your extension requires a privacy policy, review the [Microsoft Edge Developer Agreement] and the Microsoft Edge Addons Store Developer Policies.
+You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL here, if required.
+You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension. To help you determine if your extension requires a privacy policy, review the [Microsoft Edge Developer Agreement] and the [Microsoft Edge Addons Store Developer Policies].
 
 ### Website URL
 
@@ -96,25 +97,22 @@ Enter the URL of the web page where your customers can go for support with your 
 
 ### Extension Rating
 
-Check this box if your extension contains any mature content. If you indicate your extension as mature, your extension store listing will available with a separate tag to indicate that the extension contains mature content. To help you determine if your extensions has a mature content, review the [Microsoft Edge Addons Store Developer Policies].  
+Extension rating helps us determine the age of the target audience for your extension. Check this box if your extension contains any mature content. If you indicate your extension as mature, your extension store listing will available with a separate tag to indicate that the extension contains mature content. To help you determine if your extensions has a mature content, review the [Microsoft Edge Addons Store Developer Policies].  
 
 Click **Save** to proceed to **Store listing** section.
 
 ## Add Store listings information for your extension
 
-This is the information that customers will see when viewing your extension’s listing in the Microsoft Store.
+This is the information that customers will see when viewing your extension’s listing in the Microsoft Store. Many of the fields in a Store listing are optional, but we suggest providing as much information as possible to make your listing stand out. The minimum required for the Store listings step to be considered complete is a **text description, extension logo and small promotional tile** in each language mentioned in your extension package.
 
 ### Store listing languages
 
-We recommend that you localize your extension package in at least one language and mention default language. If you don’t mention any language in your package, we’ll use English (United States) as your default language and you’ll be asked to provide store listing in English (United States).
-To **add** or **remove** languages for your store listings, you’ll need to modify the list of **languages supported by your extension** package and update the zip under **Package** section
-
-#### Add or edit Store Listing
-
-If your extension is localized in **more than one language**, we’ll show the languages at the top of Store Listing page (as shown) and you must provide Store listing page details in all the languages that your package supports
-To edit a Store listing, select the language name from the drop-down at the top of Store listing page. You must add details or edit each language separately
+If your extension package supports multiple languages, you'll have a Store listing page for each one. You must complete the Store listing details (text description, images etc) for each language separately even if you are using the same content for each language. If your extension is localized in more than one language, we’ll show those languages at the top of Store Listing page (as shown). Select any one language name from Languages drop-down, fill the Store listing details, and click Save. Repeat the procedure for all the languages in the drop-down list to complete this section.
 
 ![Store Listing page](../media/img1.png)
+
+To **add** or **remove** languages for your store listings, you’ll need to modify the list of languages supported by your extension package and update the zip under **Package** section.
+We recommend that you localize your extension package in at least one language. However, if you don’t mention any language in your package, we’ll use English (United States) as your default language and you’ll be asked to provide store listing in English (United States).
 
 ### Store display name
 
@@ -126,22 +124,26 @@ The description field is where you can tell customers what your extension does. 
 
 ### Store logo
 
-You must upload a 1:1 logo image for your extension. The format of the image must be .png. For image size, you have two different options – 128 x 128 or 300 x 300 pixels. We recommend you upload a 300 x 300 pixels logo to help enhance the appearance of your extension.  
+Store logo is a **mandatory** field for completing Store listing page. You must upload a 1:1, .png image for your extension logo. For store logo, we accept these image sizes – 128 x 128 or 150 x 150 or 300 x 300 pixels but we recommend you upload a 300 x 300 pixels logo to help enhance the appearance of your extension.
 
 ### Small promotional tile
 
-A small size promotional tile (440 x 280) is compulsory.  
+A small size promotional tile (440 x 280 pixels, .png file) is **mandatory** for completing this section. This tile will be used to display your extension listing.
 
 ### Media
 
-This section is optional, but we recommend you provide these images to help display your product more effectively.  
-    - **Screenshots**: Screenshots are images of your extension. You have the option to upload up to 10 screenshots and the images must be one of the following: 1280 x 800 or 640 x 400 pixels. If your extension supports multiple locales, you can provide locale-specific screenshots.
-    - **Large promotion tiles**: Optionally, you can provide large size promotional tile (1400 x 560) that the store can use to promote your extension.  
-    - **YouTube video URL** : Enter a valid YouTube video URL for your extension. Video should be of good quality and minimal length (60 seconds or less and less than 2 GB recommended).  
+This section is optional, but we recommend you provide these images to help display your product more effectively.
+
+- **Screenshots**: Screenshots are images of your extension that describes what your extension does. You have the option to upload up to 10 screenshots and the images must be one of the following: 1280 x 800 or 640 x 400 pixels.
+- **Large promotion tiles**: You can provide large size promotional tile (1400 x 560 pixels .png image) if you'd like your extension to be featured more prominently on Microsoft Store.
+- **YouTube video URL** : Enter a valid YouTube video URL for your extension. Video should be of good quality and minimal length (60 seconds or less and less than 2 GB recommended).
+
+Like the other fields on the Store listing page, the YouTube video must pass certification before publishing extension to the Microsoft Store. Be sure that the YouTube video comply with the [Microsoft Edge Addons Store Developer Policies].
 
 ### Short description
 
-It is a shorter, catchy description of your extension. We recommend you provide a short description in your package manifest. For best results, keep your short description under 270 characters.  
+It is a short, catchy description that may be used at the top of your product’s Store listing. If not provided, the first few lines of your longer description will be used instead. Because your description also appears below this text, we recommend providing a short description with different text so that your Store listing isn’t repetitive.
+Short description of extension is picked directly from the manifest file of your package. To edit this, you’ll need to edit it in manifest and upload the Package again under Package section of the submission.
 
 ### Search terms
 
@@ -157,5 +159,7 @@ Click **Publish** and provide these details –
 After completing the above details, click **Publish** to submit your extension to the Store.
 
 [Microsoft Edge developer portal]: https://www.bing.com/
+[Partner center]: https://go.microsoft.com/fwlink/?linkid=2099798
+[developer dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
 [Microsoft Edge Developer Agreement]: https://www.bing.com/
 [Microsoft Edge Addons Store Developer Policies]: https://www.bing.com/
