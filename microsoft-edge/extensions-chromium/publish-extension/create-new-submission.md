@@ -138,7 +138,7 @@ This section is optional, but we recommend you provide these images to help disp
 - **Large promotion tiles**: You can provide large size promotional tile (1400 x 560 pixels .png image) if you'd like your extension to be featured more prominently on Microsoft Store.
 - **YouTube video URL** : Enter a valid YouTube video URL for your extension. Video should be of good quality and minimal length (60 seconds or less and less than 2 GB recommended).
 
-Like the other fields on the Store listing page, the YouTube video must pass certification before publishing extension to the Microsoft Store. Be sure that the YouTube video comply with the [Microsoft Edge Addons Store Developer Policies].
+    Like the other fields on the Store listing page, the YouTube video must pass certification before publishing extension to the Microsoft Store. Be sure that the YouTube video comply with the [Microsoft Edge Addons Store Developer Policies].
 
 ### Short description
 
