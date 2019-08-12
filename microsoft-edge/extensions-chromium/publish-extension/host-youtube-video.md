@@ -25,7 +25,7 @@ You can now upload your YouTube promotional video in the store listing page of y
 Here is the step-wise process on how to upload YouTube video :
 
 1. Locate your video which you want to add to your store listing on YouTube
-1. Under your video, click on Share > Embed. Copy the HTML code which appears in the box
-1. Paste this HTML code in the YouTube URL field of you store listing page.
+1. Under your video, click **Share** > **Embed**. Copy the **HTML code** which appears in the box
+1. Paste this HTML code in the **YouTube URL** field of you store listing page.
 
 [Microsoft Edge Addons Store Developer Policies]: https://www.bing.com/
