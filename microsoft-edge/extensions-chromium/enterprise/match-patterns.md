@@ -98,31 +98,4 @@ Here are some examples of _invalid_ pattern matches:
 | http:/bar | Missing _scheme_ separator ("/" should be "//") |
 | foo://* | Invalid _scheme_ |
 
-<table style="width:100%">
-    <tr>
-        <th><b>Bad pattern</b></th>
-        <th><b>Why it's bad</b></th>
-    </tr>
-    <tr>
-        <th>http://www.google.com</th>
-        <th>No _path_</th>
-    </tr>
-    <tr>
-        <th>http://*foo/bar</th>
-        <th>'*' in the host can be followed only by a '.' or '/'</th>
-    </tr>
-    <tr>
-        <th>http://foo.*.bar/baz</th>
-        <th>If '*' is in the _host_, it must be the first character</th>
-    </tr>
-    <tr>
-        <th>http:/bar</th>
-        <th>Missing _scheme_ separator ("/" should be "//")</th>
-    </tr>
-    <tr>
-        <th>foo://*</th>
-        <th>Invalid _scheme_</th>
-    </tr>
-</table>
-
 Some schemes are not supported in all contexts.
