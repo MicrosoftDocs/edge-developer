@@ -31,3 +31,59 @@ Here's the basic syntax:
 <path> := '/' <any chars>
 ```
 
+The meaning of `*` depends on whether it's in the scheme, host, or path part. If the scheme is `*`, then it matches either `http` or `https`, and not `file`, or `ftp`. If the host is just `*`, then it matches any host. If the host is `*.hostname`, then it matches the specified host or any of its subdomains. In the path section, each `*` matches 0 or more characters. The following table shows some valid patterns.
+
+ <table style="width:100%">
+      <tr>
+        <th><b>Pattern</b></th>
+        <th><b>What it does</b></th>
+        <th><b>Examples of matching URLs</b></th>
+      </tr>
+      <tr>
+        <td>`http://*/*`</td>
+        <td>Matches any URL that uses the http scheme</td>
+        <td>http://www.google.com/
+http://example.org/foo/bar.html</td>
+      </tr>
+    <tr>
+        <td>http://*/foo*</td>
+        <td>Matches any URL that uses the http scheme, on any host, as long as the path starts with /foo</td>
+        <td>http://example.com/foo/bar.html
+http://www.google.com/foo</td>
+      </tr>
+     <tr>
+        <td>https://*.google.com/foo*bar</td>
+        <td>Matches any URL that uses the https scheme, is on a google.com host (such as www.google.com, docs.google.com, or google.com), as long as the path starts with /foo and ends with bar</td>
+        <td>https://www.google.com/foo/baz/bar
+https://docs.google.com/foobar</td>
+      </tr>
+    <tr>
+        <td>http://example.org/foo/bar.html</td>
+        <td>Matches the specified URL</td>
+        <td>http://example.org/foo/bar.html</td>
+      </tr>
+    <tr>
+        <td>file:///foo*</td>
+        <td>Matches any local file whose path starts with /foo</td>
+        <td>file:///foo/bar.html
+file:///foo</td>
+      </tr>
+    <tr>
+        <td>http://127.0.0.1/*</td>
+        <td>Matches any URL that uses the http scheme and is on the host 127.0.0.1</td>
+        <td>http://127.0.0.1/
+http://127.0.0.1/foo/bar.html</td>
+      </tr>
+    <tr>
+        <td>*://mail.google.com/*</td>
+        <td>Matches any URL that starts with http://mail.google.com or https://mail.google.com.</td>
+        <td>http://mail.google.com/foo/baz/bar
+https://mail.google.com/foobar</td>
+      </tr>
+    <tr>
+        <td><all_urls></td>
+        <td>Matches any URL that uses a permitted scheme. (See the beginning of this section for the list of permitted schemes.)</td>
+        <td>http://example.org/foo/bar.html
+file:///bar/baz.html</td>
+      </tr>
+    </table>
