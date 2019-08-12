@@ -81,7 +81,7 @@ http://127.0.0.1/foo/bar.html</td>
 https://mail.google.com/foobar</td>
       </tr>
     <tr>
-        <td>/<all_urls/></td>
+        <td>&ltall_urls&gt</td>
         <td>Matches any URL that uses a permitted scheme. (See the beginning of this section for the list of permitted schemes.)</td>
         <td>http://example.org/foo/bar.html
 file:///bar/baz.html</td>
