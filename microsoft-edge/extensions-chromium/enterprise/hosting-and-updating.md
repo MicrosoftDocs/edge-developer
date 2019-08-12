@@ -50,3 +50,10 @@ Convert the updated extension directory into a ZIP file and locate the old versi
 
 [Microsoft Store]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions
 [Developer Dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google] and used according to terms described in the [Creative Commons Attribution 4.0 International License]. The original page can be found [here].
+
+[shared by Google]: https://developers.google.com/terms/site-policies
+[Creative Commons Attribution 4.0 International License]: https://creativecommons.org/licenses/by/4.0/
+[here]: https://developer.chrome.com/extensions/hosting
