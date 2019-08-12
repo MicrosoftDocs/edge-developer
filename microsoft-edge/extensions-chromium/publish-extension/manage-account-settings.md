@@ -1,8 +1,7 @@
 ---
-ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
 description: Learn how to manage account details for Microsoft Edge Program to Partner center.
-title: Opening a developer account
-author: MSEdgeTeam
+title: Managing developer account details
+author: Shahina
 ms.author: shahina
 ms.date: 01/08/2019
 ms.topic: article
