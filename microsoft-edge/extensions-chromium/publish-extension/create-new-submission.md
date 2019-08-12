@@ -1,9 +1,8 @@
 ---
-ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
 description: Learn how to create a new submission for publishing extension on Microsoft Edge Addons Store.
 title: create-new-submission
-author: MSEdgeTeam
-ms.author: msedgedevrel
+author: Shahina
+ms.author: shahina
 ms.date: 01/08/2019
 ms.topic: article
 ms.prod: microsoft-edge
