@@ -40,7 +40,7 @@ The meaning of `*` depends on whether it's in the scheme, host, or path part. If
         <th><b>Examples of matching URLs</b></th>
       </tr>
       <tr>
-        <td>`http://*/*`</td>
+        <td>http://*/*</td>
         <td>Matches any URL that uses the http scheme</td>
         <td>http://www.google.com/
 http://example.org/foo/bar.html</td>
@@ -81,7 +81,7 @@ http://127.0.0.1/foo/bar.html</td>
 https://mail.google.com/foobar</td>
       </tr>
     <tr>
-        <td><all_urls></td>
+        <td>/<all_urls/></td>
         <td>Matches any URL that uses a permitted scheme. (See the beginning of this section for the list of permitted schemes.)</td>
         <td>http://example.org/foo/bar.html
 file:///bar/baz.html</td>
