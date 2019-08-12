@@ -18,11 +18,14 @@ The process of porting a Chrome extension to Microsoft Edge is very straightforw
 To port your Chrome extension,  follow these steps:  
 
 1. Review the Chrome extension APIs used in your extensions. If you're using features or APIs that aren't supported by Microsoft Edge, you might not be able to port your extension.
-Note: getAuthToken API doesn’t work with Microsoft Edge, however you can use launchWebAuthFlow to fetch OAuth2 token to authenticate users.
-2. If you are using “Chrome” in the name or description of your extension, rebrand the extension for Microsoft Edge. It is mandatory to pass the certification process
-3. To test your extension your extension on Microsoft Edge, turn on Developer mode >  Load unpacked and then select the directory in which your extension files live.
-4. If you have any issues, debug your extensions in Microsoft Edge by using F12 Developer Tools, or contact us @ ExtensionPartnerOps@microsoft.com
-5. Your extension is now ready to be published on the Microsoft Store!
+
+> [!Note]
+> getAuthToken API doesn’t work with Microsoft Edge, however you can use launchWebAuthFlow to fetch OAuth2 token to authenticate users.
+
+1. If you are using **“Chrome”** in the name or description of your extension, re-brand the extension for **Microsoft Edge**. It is **mandatory** to pass the certification process
+1. To test your extension on Microsoft Edge, turn on Developer mode >  Load unpacked and then select the directory in which your extension files live.
+1. If you have any issues, debug your extensions in Microsoft Edge by using F12 Developer Tools, or contact us @ **ExtensionPartnerOps@microsoft.com**.
+1. Your extension is now ready to be published on the Microsoft Store!
   
 > [!Note]
 >If your extension exchanges messages with a native application using chrome.runtime.connectNative API, ensure that you add chrome-extension://[Microsoft-Store-extensionID] as your allowedorigins into the native messaging host manifest file. This enables the app to identify the extension.
