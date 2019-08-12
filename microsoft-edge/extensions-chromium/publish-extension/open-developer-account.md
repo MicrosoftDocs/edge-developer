@@ -54,7 +54,7 @@ Here are the essential differences between the two account types -
       </tr>
     </table>
 
-5. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that if you enter a name that someone else has the rights to use, we will not allow you to use that name.
+1. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that you can use a name only if it is available and someone else doesn't has the rights to use it.
 
 1. Enter the **contact details** for your developer account. For company accounts, be sure to use your organization’s registered email address.
 
