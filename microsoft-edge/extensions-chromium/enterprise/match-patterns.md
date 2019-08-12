@@ -99,3 +99,10 @@ Here are some examples of _invalid_ pattern matches:
 | foo://* | Invalid _scheme_ |
 
 Some schemes are not supported in all contexts.
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google] and used according to terms described in the [Creative Commons Attribution 4.0 International License]. The original page can be found [here].
+
+[shared by Google]: https://developers.google.com/terms/site-policies
+[Creative Commons Attribution 4.0 International License]: https://creativecommons.org/licenses/by/4.0/
+[here]: https://developer.chrome.com/extensions/match_patterns
