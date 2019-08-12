@@ -1,5 +1,4 @@
 ---
-ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
 description: Learn how to host extension YouTube video on Microsoft Store wile creating extension submission on Partner center.
 title: How to Host YouTube video to Microsoft Store
 author: Shahina
