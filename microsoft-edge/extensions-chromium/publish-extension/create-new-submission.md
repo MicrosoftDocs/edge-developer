@@ -136,7 +136,7 @@ This section is optional, but we recommend you provide these images to help disp
 
 - **Screenshots**: Screenshots are images of your extension that describes what your extension does. You have the option to upload up to 10 screenshots and the images must be one of the following: 1280 x 800 or 640 x 400 pixels.
 - **Large promotion tiles**: You can provide large size promotional tile (1400 x 560 pixels .png image) if you'd like your extension to be featured more prominently on Microsoft Store.
-- **YouTube video URL** : Enter a valid YouTube video URL for your extension. Video should be of good quality and minimal length (60 seconds or less and less than 2 GB recommended).
+- **YouTube video URL** : Enter a valid YouTube video URL for your extension. Video should be of good quality and minimal length (60 seconds or less and less than 2 GB recommended). For more detail, see [How to submit a promotional YouTube video in the store listing]
 
     Like the other fields on the Store listing page, the YouTube video must pass certification before publishing extension to the Microsoft Store. Be sure that the YouTube video comply with the [Microsoft Edge Addons Store Developer Policies].
 
@@ -163,3 +163,4 @@ After completing the above details, click **Publish** to submit your extension t
 [developer dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
 [Microsoft Edge Developer Agreement]: https://www.bing.com/
 [Microsoft Edge Addons Store Developer Policies]: https://www.bing.com/
+[How to submit a promotional YouTube video in the store listing]: https://www.bing.com/
