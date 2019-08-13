@@ -1,6 +1,6 @@
 ---
 description: How to use Elements for Microsoft Edge (Chromium) from VS Code
-title: Debug Microsoft Edge (Chromium) from VS Code
+title: Elements for Microsoft Edge (Chromium) from VS Code
 author: erdraud
 ms.author: erdraud
 ms.date: 08/08/2019
@@ -15,15 +15,13 @@ By adding the [Elements for Edge](https://marketplace.visualstudio.com/items?ite
 
 ![GIF of the Elements for Edge VS Code extension at work](./media/elements-for-edge.gif)
 
-## Launching Edge From the Elements tab
+## Launching Edge From the Elements tab 
 
-![Elements for Edge tab](./media/elements-for-edge-logo.jpg) 
-
-Navigate to Elements (the icon shown above). Next to where it says Elements for Microsoft Edge: Targets, there is a plus sign that will open the browser for your app. If you selected the about:blank option, you will have to navigate to your web app in the browser for it to appear in the Elements panel in VS Code.
+Navigate to Elements (the icon shown above). Next to where it says Elements for Microsoft Edge: Targets, there is a plus sign that will open the browser for your app. If you selected the *about:blank* option, you will have to navigate to your web app in the browser for it to appear in the Elements panel in VS Code.
 
 ## Launching Edge from the Debugger tab
 
-If you are accustomed to the Debugger tool, you can access Elements from that tool. Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac). 
+If you are accustomed to using the Debug pane in Visual Studio Code, you can access Elements from that tool. Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac). 
 
 If you do not have any configurations in VS Code, press `F5` on Windows or Mac or click the green **Play** button. Select "Edge" in the dropdown. You will now see a **launch.json** file with the following configuration:
 
@@ -43,14 +41,14 @@ If you do not have any configurations in VS Code, press `F5` on Windows or Mac o
 }
 ```
 
-Make sure “Launch Microsoft Edge and open the Elements tool” is selected then either press `F5` on Windows or Mac or click the green **Play** button. VS Code will launch the Elements, allowing you to access a screencast of your browser and examine the components of your page.
+Now that you have loaded the correct configuration, either press `F5` on Windows or Mac or click the green **Play** button. The Elements tool you are familiar with from the Microsoft Edge browser will now launch in VS Code, allowing you to access a screencast of your browser and examine the components of your page.
 
 ## Attaching to Microsoft Edge
-If you'd like to attach VS Code to an instance of Microsoft Edge (Chromium) that you've already launched, run the following command from your teminal:
+If you'd like to attach VS Code to an instance of Microsoft Edge (Chromium), you must start the browser by running the following command from your teminal:
 
 `start msedge --remote-debugging-port=9222`
 
-Add the configuration below to your **launch.json** file:
+Once the app has launched, add the configuration below to your **launch.json** file:
 
 ```json
 {
@@ -58,11 +56,12 @@ Add the configuration below to your **launch.json** file:
     "request": "attach",
     "name": "Attach to Microsoft Edge and open the Elements tool",
     "url": "http://localhost:3000/",
-    "webRoot": "${workspaceFolder}/out"
+    "webRoot": "${workspaceFolder}/out",
+    "port": 9222
 }
 ```
 
-Select "Attach to Microsoft Edge and open the Elements tool" from the DEBUG drop-down menu. Next, either press `F5` on Windows or Mac or click the green **Play** button. VS Code will launch the Elements tab, allowing you to access all of its tools.
+Select "Attach to Microsoft Edge and open the Elements tool" from the Debugger drop-down menu. Next, either press `F5` on Windows or Mac or click the green **Play** button. VS Code will launch the Elements tool, allowing you to access a screencast of your browser, inspect the DOM, and the styling of the components on your page.
 
 ## Feedback
 Send us your feedback by [filing an issue](https://github.com/microsoft/vscode-edge-devtools/issues/new) against this extension's [GitHub repo](https://github.com/microsoft/vscode-edge-devtools). 
