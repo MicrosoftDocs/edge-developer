@@ -15,13 +15,13 @@ By adding the [Elements for Edge](https://marketplace.visualstudio.com/items?ite
 
 ![GIF of the Elements for Edge VS Code extension at work](./media/elements-for-edge.gif)
 
-## Launching Edge From the Elements tab 
+## Launching Edge From the Elements view 
 
-Navigate to Elements (the icon shown above). Next to where it says Elements for Microsoft Edge: Targets, there is a plus sign that will open the browser for your app. If you selected the *about:blank* option, you will have to navigate to your web app in the browser for it to appear in the Elements panel in VS Code.
+Navigate to Elements in the **Activity Bar**. Next to where it says Elements for Microsoft Edge: Targets, there is a plus sign that will open the browser for your app. If you selected the *about:blank* option, you will have to navigate to your web app in the browser for it to appear in the Elements panel in VS Code.
 
-## Launching Edge from the Debugger tab
+## Launching Edge from the Debugger view
 
-If you are accustomed to using the Debug pane in Visual Studio Code, you can access Elements from that tool. Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac). 
+If you are accustomed to using the Debug view in Visual Studio Code, you can access Elements from that tool. Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac). 
 
 If you do not have any configurations in VS Code, press `F5` on Windows or Mac or click the green **Play** button. Select "Edge" in the dropdown. You will now see a **launch.json** file with the following configuration:
 
