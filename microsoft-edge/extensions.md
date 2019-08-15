@@ -16,11 +16,14 @@ Extensions are small programs that you can use to add new features to Microsoft 
 
 Microsoft Edge (EdgeHTML) supports a new extension model that's based on HTML, JavaScript, and CSS. The new extension model is Chrome-compatible. Chrome extension developers can migrate their extensions to Microsoft Edge (EdgeHTML) with minimal changes.
 
+## Get started
+
 To get an overview of the end-to-end journey of creating a Microsoft Edge (EdgeHTML) extension from development to publishing, check out the [Get started guide](./extensions/getting-started.md)!
 
 
 ## Popular articles
 
+See these articles for more information about how to work with extensions in Microsoft Edge:
         
 | Article | Description | 
 | :------------------- | :------------------- |
