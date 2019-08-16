@@ -23,7 +23,7 @@ Search the Marketplace for the specific extension and select **Install**.
 
 ![Installing the Debugger for Edge VS Code extension](./media/vscode-debugger-install.png)
 
-### Debugger for Edge
+## Debugger for Edge
 
 ![Debugger for Edge VS Code extension](./media/debugger-for-edge-logo.jpg) 
 
@@ -33,7 +33,7 @@ This extensions gives you the ability to launch or attach to both Microsoft Edge
 
 ![GIF of the Debugger for Edge VS Code extension in action!](./media/debugger-for-edge.gif)
 
-### Elements for Edge
+## Elements for Edge
 
 ![Elements for Edge VS Code extension](./media/elements-for-edge-logo.jpg) 
 
