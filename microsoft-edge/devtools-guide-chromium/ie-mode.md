@@ -27,14 +27,12 @@ IE mode is currently available on Windows 10 Version 1903 (May 2019 Update) but 
 
 If you are trying to view the document mode of a web site in IE mode, you can click on the badge in the address bar.
 
-<!-- TODO: Paul Gildea, add screenshot of document mode via IE mode badge -->
 ![View document mode via IE mode badge](./media/ie-mode-badge-doc-mode.png)
 
-While on a tab in IE mode, the DevTools are unavailable. Pressing `F12` or `Ctrl`+`Shift`+`I` will not launch the Microsoft Edge (Chromium) DevTools or the Internet Explorer 11 DevTools. **View Source** will launch Notepad and **Inspect Element** will not be visible in the context menu in IE mode.
+While on a tab in IE mode, the DevTools will not work. Pressing `F12` or `Ctrl`+`Shift`+`I` will only launch a blank instance of the Microsoft Edge (Chromium) DevTools with a message that reads: "Developer Tools are not available in Internet Explorer mode. To debug the page, open it in Internet Explorer 11." **View Source** will launch Notepad and **Inspect Element** will not be visible in the context menu in IE mode.
 
-Instead, you will see a message that the DevTools are unavailable for web sites in IE mode. This is because a number of components in the DevTools (like the Network and Performance tools) would break when the rendering engine switches from Chromium to Internet Explorer 11 in IE mode.
+This is because a number of components in the DevTools (like the Network and Performance tools) would break when the rendering engine switches from Chromium to Internet Explorer 11 in IE mode. To give us feedback, click the `:)` icon.
 
-<!-- TODO: Paul Gildea, add screenshot of message that appears to user when launching DevTools on tab in IE mode -->
 ![DevTools launched in IE mode](./media/ie-mode-devtools.png)
 
 If you are developing or maintaining an Internet Explorer 11-based web site or application, we recommend navigating to the same page in Internet Explorer 11. On Windows 10, you can find the shortcut for Internet Explorer 11 on the Start Menu underneath Windows Accessories. On Windows 7, you can find Internet Explorer 11 on the main Start Menu. You can then launch the Internet Explorer DevTools by pressing `F12` or clicking **Inspect element** in the context menu. To learn more about how to use those tools, click [here](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).
