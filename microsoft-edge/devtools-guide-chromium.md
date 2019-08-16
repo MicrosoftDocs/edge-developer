@@ -55,7 +55,7 @@ The Microsoft Edge (Chromium) DevTools include:
  - A **Memory** panel to measure your use of memory resources and compare heap snapshots at different states of code execution
  - An **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches. You can also inspect and manage storage, databases, and caches from this panel.
  - A **Security** panel to debug security issues and ensure that you have properly implemented HTTPS on your web site. HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.
- - An **Audits** panel to run an audit of your web site. The results of the audit will help you improve the quality of your site, catching common errors around making your web site accessible, secure, performant, building a PWA, etc. and helping you fix them. **Note:** 
+ - An **Audits** panel to run an audit of your web site. The results of the audit will help you improve the quality of your site, catching common errors around making your web site accessible, secure, performant, building a PWA, etc. and helping you fix them. 
 
 > [!NOTE]
 > The **Audits** panel provides links to content hosted on third-party websites. Microsoft is not responsible for and has no control over the content of these sites and any data they might collect.
@@ -66,20 +66,18 @@ Please keep sending your [feedback and feature requests](#feedback)!
 
 You may have used extensions to the DevTools to help you diagnose and debug issues when building your web sites or apps. You can acquire extensions for Microsoft Edge from [the Microsoft Edge Insider Addons](https://www.microsoft.com/en-us/microsoft-edge/insider-addons/category/EdgeExtensions) page.
 
-However, we do not have any extensions to the DevTools on that page. To acquire extensions to the DevTools, navigate to Extensions page in Microsoft Edge by clicking the `...` button in the top right corner of the browser and selecting **Extensions**.
+However, we do not have any extensions to the DevTools on that page. To acquire extensions to the DevTools, navigate to the extension you want to add to the DevTools in the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). 
 
-![Navigating to the Extensions page in Microsoft Edge](./devtools-guide-chromium/media/edge-extensions-page.png)
+![Chrome Web Store in Microsoft Edge](./devtools-guide-chromium/media/allow-extensions-from-stores-v2.png)
 
-In the bottom left corner of the browser, click **Allow extensions from other stores** to turn that setting on. Select **Allow** in the dialog that appears. 
+At the top, click **Allow extensions from other stores** and then select **Allow** in the dialog that appears. 
 
 > [!NOTE]
 > Extensions installed from sources other than the Microsoft Store are unverified, and may affect browser performance.
 
-![Allowing extensions from other stores on the Extensions page](./devtools-guide-chromium/media/allow-extensions-from-stores.png)
+Click on **Add to Chrome** and your DevTools extension will be added to Microsoft Edge!
 
-Now navigate to the extension you want to add to the DevTools in the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). Select **Add to Chrome** and your DevTools extension will be added to Microsoft Edge!
-
-![Allowing extensions from other stores on the Extensions page](./devtools-guide-chromium/media/install-extension-from-chrome-store.png)
+![Adding extension from Chrome Web Store to Microsoft Edge](./devtools-guide-chromium/media/install-extension-from-chrome-store-v2.png)
 
 ## Feedback
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,7 +17,7 @@ interface IWebView2Settings
   : public IUnknown
 ```
 
-Defines properties that enable, disable, or modify WebView features. Setting changes made after NavigationStarting event will not apply until the next top level navigation. 
+Defines properties that enable, disable, or modify WebView features.
 
 ## Summary
 
@@ -31,6 +31,12 @@ Defines properties that enable, disable, or modify WebView features. Setting cha
 [put_AreDefaultScriptDialogsEnabled](#put_aredefaultscriptdialogsenabled) | Set the AreDefaultScriptDialogsEnabled property.
 [get_IsFullscreenAllowed](#get_isfullscreenallowed) | Controls if fullscreen is allowed for the WebView.
 [put_IsFullscreenAllowed](#put_isfullscreenallowed) | Set the IsFullscreenAllowed property.
+[get_IsStatusBarEnabled](#get_isstatusbarenabled) | IsStatusBarEnabled controls whether the status bar will be displayed.
+[put_IsStatusBarEnabled](#put_isstatusbarenabled) | Set the IsStatusBarEnabled property.
+[get_AreDevToolsEnabled](#get_aredevtoolsenabled) | AreDevToolsEnabled controls whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
+[put_AreDevToolsEnabled](#put_aredevtoolsenabled) | Set the AreDevToolsEnabled property.
+
+Setting changes made after NavigationStarting event will not apply until the next top level navigation.
 
 ## Members
 
@@ -134,3 +140,32 @@ When it is allowed, web content such as a video element in the WebView is allowe
 Set the IsFullscreenAllowed property.
 
 > public HRESULT [put_IsFullscreenAllowed](#interface_i_web_view2_settings_1a10ef13244a7db2ce525dfc7502f79d97)(BOOL isFullscreenAllowed)
+
+#### get_IsStatusBarEnabled 
+
+IsStatusBarEnabled controls whether the status bar will be displayed.
+
+> public HRESULT [get_IsStatusBarEnabled](#interface_i_web_view2_settings_1aecb1e72271f79648d6e43222fbfd4b92)(BOOL * isStatusBarEnabled)
+
+The status bar is usually displayed in the lower left of the WebView and shows things such as the URI of a link when the user hovers over it and other information. It is true by default.
+
+#### put_IsStatusBarEnabled 
+
+Set the IsStatusBarEnabled property.
+
+> public HRESULT [put_IsStatusBarEnabled](#interface_i_web_view2_settings_1add5a9baf43e11d25c9026e5a66755d88)(BOOL isStatusBarEnabled)
+
+#### get_AreDevToolsEnabled 
+
+AreDevToolsEnabled controls whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
+
+> public HRESULT [get_AreDevToolsEnabled](#interface_i_web_view2_settings_1ac0e6be5025993e7315633c260330550e)(BOOL * areDevToolsEnabled)
+
+It is true by default.
+
+#### put_AreDevToolsEnabled 
+
+Set the AreDevToolsEnabled property.
+
+> public HRESULT [put_AreDevToolsEnabled](#interface_i_web_view2_settings_1a45881677f4d90f73f65f4ce76635cb7b)(BOOL areDevToolsEnabled)
+

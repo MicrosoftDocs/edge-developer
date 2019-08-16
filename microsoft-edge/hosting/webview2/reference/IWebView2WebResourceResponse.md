@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,7 +26,6 @@ An HTTP response used with the WebResourceRequested event.
 [get_Content](#get_content) | HTTP response content as stream.
 [put_Content](#put_content) | Set the Content property.
 [get_Headers](#get_headers) | Overridden HTTP response headers.
-[put_Headers](#put_headers) | Set the Headers property.
 [get_StatusCode](#get_statuscode) | The HTTP response status code.
 [put_StatusCode](#put_statuscode) | Set the StatusCode property.
 [get_ReasonPhrase](#get_reasonphrase) | The HTTP response reason phrase.
@@ -52,13 +51,7 @@ Set the Content property.
 
 Overridden HTTP response headers.
 
-> public HRESULT [get_Headers](#interface_i_web_view2_web_resource_response_1ae03300de4c2c0bb72149916b3b31ddd8)(LPWSTR * headers)
-
-#### put_Headers 
-
-Set the Headers property.
-
-> public HRESULT [put_Headers](#interface_i_web_view2_web_resource_response_1a49094f353a193565ed73fb842d14ecc0)(LPCWSTR headers)
+> public HRESULT [get_Headers](#interface_i_web_view2_web_resource_response_1abfb232e76c9174eec6e9322fe4019eac)([IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#interface_i_web_view2_http_response_headers) ** headers)
 
 #### get_StatusCode 
 

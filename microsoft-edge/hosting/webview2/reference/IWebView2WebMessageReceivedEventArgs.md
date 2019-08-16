@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -46,9 +46,9 @@ Use this to communicate via JavaScript objects.
 For example the following postMessage calls result in the following WebMessageAsJson values:
 
 ```cpp
-postMessage({'a': 'b'})      L"{'a': 'b'}"
+postMessage({'a': 'b'})      L"{\"a\": \"b\"}"
 postMessage(1.2)             L"1.2"
-postMessage('example')       L"'example'"
+postMessage('example')       L"\"example\""
 ```
 
 #### get_WebMessageAsString 

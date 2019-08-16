@@ -99,9 +99,11 @@ Microsoft Edge support for the emerging [Web Authentication API](../device/web-a
 
 - The latest Microsoft Edge implementation is turned off by default and ships behind a flag (type `about:flags` in your address bar to turn on the feature).
 
-- Microsoft Edge supports external credentials stored in USB keys, however does not yet support credentials in Bluetooth devices. The current API also supports embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device. 
+- Microsoft Edge does not yet support external credentials like USB keys or Bluetooth devices. The current API is limited to embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device.
 
-- If the developer specifies to use embeded credentials, the currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
+- The currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
+
+- Of the [predefined extensions](http://www.w3.org/TR/webauthn/#extension-predef) described in the spec, Microsoft Edge only supports the [FIDO AppId](http://www.w3.org/TR/webauthn/#extension-appid) (`webauthn_txAuthSimple`) at this time.
 
 - The `timeoutSeconds` option is not currently evaluated
 
@@ -126,10 +128,10 @@ For more info and the status of other WebDriver features, check out [WebDriver](
 
 Here's the full list of new APIs in EdgeHTML 15. They are listed in the format of **[interface name].[api name]**.
 
+<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'>New EdgeHTML15 APIs</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  
 
-<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MSEdgeDev/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MSEdgeDev/pen/evRjjZ/'>New EdgeHTML15 APIs</a>by MSEdgeDev (<a href='http://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  </p>
-<h2 id="previous-edgehtml-releases">Previous EdgeHTML releases</h2>
-<p><a href="https://aka.ms/devguide_edgehtml_12" data-raw-source="[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)">EdgeHTML 12 / Windows build 10240 (7/2015)</a>
+## Previous EdgeHTML releases
+[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)
 
 [EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
 

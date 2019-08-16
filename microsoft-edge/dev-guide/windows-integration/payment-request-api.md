@@ -39,10 +39,10 @@ To see the Payment Request API in action, as well as get an overview of how to u
 Web pages create a **Payment Request** typically when the user initiates a payment process by clicking a "buy" button.  The **Payment Request** [constructor](https://msdn.microsoft.com/en-us/library/mt790440) includes methodData, details, and options. 
 
 ```js
-var request = new PaymentRequest(
-  methodData,  // required payment method data including payment method identifiers 
-  details,     // required transaction information 
-  options      // optional information like shipping or contact info to be returned 
+var payment = new PaymentRequest ( 
+    methodData,  // required payment method data including payment method identifiers 
+    details,     // required transaction information 
+    options      // optional information like shipping or contact info to be returned 
 ); 
 ```
 
@@ -51,17 +51,14 @@ The [`methodData`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequ
 ![The "pay with" list in the Microsoft Wallet user experience](./../media/pay_with.png)
 
 ```js
-var methodData = [{
-  supportedMethods: 'basic-card',
-  data: {
-    supportedNetworks: ['visa', 'mastercard', 'amex'],
-    supportedTypes: ['credit']
-    //for test transactions uncomment the test flag below
-    //environment: 'TEST'
-  }
+var supportedInstruments = [{
+    supportedMethods: ['basic-card'],
+    data: {
+        supportedNetworks: ['visa', 'mastercard', 'amex'],
+        supportedTypes: ['credit'] 
+    }         
 }]; 
 ```
-
 The [`details`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter contains information that the merchant wishes to convey to the customer about the transaction.  These include order summary items like total, tax, shipping amount, and other summary level items impacting the payment amount. These are not intended to be order line items. 
   
 The [`details`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter is also used to define shipping options available to the customer when required.  More details are included in the **Payment Request** with Shipping section below. 
@@ -76,17 +73,17 @@ Each [`detail`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest
 
 ```js
 var details = {
-  total: {
-    label: 'Total',
-    amount: { currency: 'USD', value: '193.98' }
-  },
-  displayItems: [{
-    label: 'Subtotal',
-    amount: { currency: 'USD', value: '174.99' }
-  }, {
-    label: 'Taxes',
-    amount: { currency: "USD", value: '18.99' }
-  }],
+    total: {
+        label: 'Total (USD)',
+        amount: {currency: 'USD', value: '193.98'}
+    },
+    displayItems: [{
+        label: 'Subtotal',
+        amount: {currency: 'USD', value: '174.99'}
+    }, {
+        label: 'Taxes',
+        amount: {currency: "USD", '18.99'}
+    }],
 };  
 ```
 
@@ -99,11 +96,11 @@ The [`options`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest
 ![Email address drop down](./../media/email_snippet.png)
 
 
-
 ```js
-var options = {
-  requestPayerEmail: true
-}; 
+var options =
+    {
+        requestPayerEmail: true
+    }; 
 ``` 
 
 ## Showing the Payment Request
@@ -111,13 +108,12 @@ var options = {
 The [`show()`](https://msdn.microsoft.com/en-us/library/mt790448) method is called by the web page to allow the user to interact with the **Payment Request** user interface.  The [`show()`](https://msdn.microsoft.com/en-us/library/mt790448) method returns a Promise that will be resolved when the user authorizes the payment request.  
 
 ```js
-request.show()
-  .then(response => {
-    response.complete('success');
-  })
-  .catch(err => console.error(err));
-```
+paymentRequest.show().then(paymentInstrumentResponse => {
 
+paymentInstrumentResponse.complete('success').then((); }).catch(error {
+   handlePaymentRequestError(error); 
+});
+```
 ![Confirm and pay details](./../media/pay_screen_default.png)
 
 ## Aborting a Payment Request
@@ -125,7 +121,7 @@ request.show()
 The [`abort()`](https://msdn.microsoft.com/en-us/library/mt790437) method can be called by the web page any time after the [`show()`](https://msdn.microsoft.com/en-us/library/mt790448) method is called, up until the point where the Promise is resolved.  The [`abort()`](https://msdn.microsoft.com/en-us/library/mt790437) method will cause the browser to abort the **Payment Request** and close the **Payment Request** user interface.  For example, a web page may choose to abort if the user did not complete the transaction in the required amount of time.
 
 ```js
-request.abort();
+payment.abort();
 ``` 
 
 ## Payment Response
@@ -165,39 +161,39 @@ When the user selects or updates the shipping address, the [`onshippingaddressch
 Shipping options can be presented to the customer by adding [`shippingOptions`](https://msdn.microsoft.com/en-us/library/mt790440) to the [`details`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter.  A default can be established by setting `selected = True` for one of the shipping options. 
  
 When the user selects or updates the shippingOptions, the [`onshippingoptionchange`](https://msdn.microsoft.com/en-us/library/mt790436) event will run.  The website, using an event listener, will be aware of the change and can update the [`details`](https://msdn.microsoft.com/en-us/library/mt790440#PaymentRequest_params) parameter with the correct shipping amount.   
-
 ```js
 var details = {
-  total: {
-    label: 'Total (USD)',
-    amount: { currency: 'USD', value: '193.98' }
-  },
-  displayItems: [{
-    label: 'Subtotal',
-    amount: { currency: 'USD', value: '174.99' }
-  }, {
-    label: 'Shipping',
-    amount: { currency: 'USD', value: '0.00' }
-  }, {
-    label: 'Taxes',
-    amount: { currency: "USD", '18.99'}
-  }],
-  shippingOptions: [{
-    id: 'STANDARD',
-    label: 'Standard – FREE (5-6 Business days)',
-    amount: { currency: 'USD', value: '0.00' },
-    selected: true
-  }, {
-    id: 'EXPEDITED',
-    label: 'Two-Day Shipping',
-    amount: { currency: 'USD', value: '7.00' }
-  }]
+    total: {
+        label: 'Total (USD)',
+        amount: {currency: 'USD', value: '193.98'}
+    },
+    displayItems: [{
+         label: 'Subtotal',
+         amount: {currency: 'USD', value: '174.99'}
+        }, {
+            label: 'Shipping',
+            amount: {currency: 'USD', value: '0.00'}
+        }, {
+            label: 'Taxes',
+            amount: {currency: "USD", '18.99'}
+    }],
+    shippingOptions: [{
+        id: 'STANDARD',
+        label: 'Standard – FREE (5-6 Business days)',
+        amount: {currency: 'USD', value: '0.00'},
+        selected: true
+    }, {
+        id: 'EXPEDITED',
+        label: 'Two-Day Shipping',
+        amount: {currency: 'USD', value: '7.00'}
+    }]
 };
-
+        
 var options = {
-  requestShipping: true,
-  requestPayerEmail: true
-};
+    requestShipping: true,
+    requestPayerEmail: true
+}; 
+ 
 ```
 
 ## API Reference

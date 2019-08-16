@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Reference (WebView2)
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/) as the rendering engine. See [WebView2](../webview2.md) for an overview and [Getting Started](gettingstarted) for a quick start. [IWebView2WebView](reference/IWebView2WebView.md) is a great place to start learning the details of the API.
+The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/) as the rendering engine. See [WebView2](../webview2.md) for an overview and [Getting Started](GettingStarted) for a quick start. [IWebView2WebView](reference/IWebView2WebView.md) is a great place to start learning the details of the API.
 
 ## Globals
 
@@ -33,7 +33,9 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 - [IWebView2Environment](reference/IWebView2Environment.md)
 - [IWebView2ExecuteScriptCompletedHandler](reference/IWebView2ExecuteScriptCompletedHandler.md)
 - [IWebView2FocusChangedEventHandler](reference/IWebView2FocusChangedEventHandler.md)
-- [IWebView2HttpHeadersCollection](reference/IWebView2HttpHeadersCollection.md)
+- [IWebView2HttpHeadersCollectionIterator](reference/IWebView2HttpHeadersCollectionIterator.md)
+- [IWebView2HttpRequestHeaders](reference/IWebView2HttpRequestHeaders.md)
+- [IWebView2HttpResponseHeaders](reference/IWebView2HttpResponseHeaders.md)
 - [IWebView2MoveFocusRequestedEventArgs](reference/IWebView2MoveFocusRequestedEventArgs.md)
 - [IWebView2MoveFocusRequestedEventHandler](reference/IWebView2MoveFocusRequestedEventHandler.md)
 - [IWebView2NavigationCompletedEventArgs](reference/IWebView2NavigationCompletedEventArgs.md)
@@ -54,4 +56,5 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 - [IWebView2WebResourceRequestedEventHandler](reference/IWebView2WebResourceRequestedEventHandler.md)
 - [IWebView2WebResourceResponse](reference/IWebView2WebResourceResponse.md)
 - [IWebView2WebView](reference/IWebView2WebView.md)
+- [IWebView2WebView2](reference/IWebView2WebView2.md)
 - [IWebView2ZoomFactorChangedEventHandler](reference/IWebView2ZoomFactorChangedEventHandler.md)

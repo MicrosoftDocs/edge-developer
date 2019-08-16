@@ -1,6 +1,6 @@
 ---
 ms.assetid: e56172c0-b635-4c02-8e0c-56bf8cb4c164
-description: Use the WebDriver wire protocol to control web browser behavior for test automation
+description: Learn how to get started with WebDriver, a wire protocol that allows programs and scripts to control web browser behavior.
 title: Webdriver
 author: MSEdgeTeam
 ms.author: msedgedevrel
