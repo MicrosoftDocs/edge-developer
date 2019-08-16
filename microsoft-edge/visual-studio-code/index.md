@@ -35,7 +35,7 @@ This extensions gives you the ability to launch or attach to both Microsoft Edge
 
 ## Elements for Edge
 
-![Elements for Edge VS Code extension](./media/elements-for-edge-logo.jpg) 
+![Elements for Edge VS Code extension](./media/elements-for-edge-logo.png) 
 
 By adding the [Elements for Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) VS Code extension, you can use the browser's Elements tool from within Visual Studio Code. By either launching or attaching, the Elements tool will connect to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.
 
