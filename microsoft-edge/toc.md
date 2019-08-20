@@ -99,7 +99,7 @@
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [Extensions (Chromium)](extensions-chromium.md)
-### [Getting Started](extensions-chromium/getting-started/index.md)
+#### [Getting Started](extensions-chromium/getting-started/index.md)
 #### [Build a simple extension](extensions-chromium/getting-started/part1-simple-extension.md)
 #### [Sideload your extension](extensions-chromium/getting-started/part2-running-dev-time.md)
 #### [Part 3 - Build your extension](extensions-chromium/getting-started/part3-content-scripts.md)
