@@ -107,7 +107,7 @@
 #### [Part 5 - Build your extension](extensions-chromium/getting-started/part5-background-script.md)
 #### [Part 6 - Build your extension](extensions-chromium/getting-started/part6-dynamic-content-insertion.md)
 ### [Porting Chrome extensions](extensions-chromium/porting-chrome-extension.md)
-#### [Create a new submission](extensions-chromium/publish-extension/publish-extension.md)
+### [Create a new submission](extensions-chromium/publish-extension.md)
 #### [Create a new submission](extensions-chromium/publish-extension/host-youtube-video.md)
 #### [Create a new submission](extensions-chromium/publish-extension/manage-account-settings.md)
 #### [Create a new submission](extensions-chromium/publish-extension/update-extension.md)
