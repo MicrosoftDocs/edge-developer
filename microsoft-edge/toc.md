@@ -99,6 +99,7 @@
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [Extensions (Chromium)](extensions-chromium.md)
+### [Porting Chrome extensions](extensions-chromium/porting-chrome-extension.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
