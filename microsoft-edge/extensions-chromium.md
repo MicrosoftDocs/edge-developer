@@ -32,7 +32,7 @@ To get an overview of the end to end journey of creating a Microsoft Edge (Chrom
 
   </tr>
   <tr>
-    <td><a href = "./extensions-chromium/porting-chrome-extension.md">Port Chrome extension</a></td>
+    <td><a href = "./extensions-chromium/porting-chrome-extension.md">Porting Chrome extension to Microsoft Edge</a></td>
     <td>Created a Chrome extension you&#39;d like to see on Microsoft Edge? See how to port it with minimal or no effort</td>
 
   </tr>
