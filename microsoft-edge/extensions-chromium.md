@@ -23,16 +23,16 @@ To get an overview of the end to end journey of creating a Microsoft Edge (Chrom
 
 <table>
   <tr>
-    <td><a href = "./extensions-chromium/publish-extension/create-new-submission.md">Create extension submission</a></td>
+    <td><a href = "./extensions-chromium/publish-extension/create-new-submission.md">Creating an extension submission</a></td>
     <td>Learn how to publish your extension on Microsoft store after you&#39;ve finished development</td></p>
 <p>  </tr>
   <tr>
-    <td><a href = "./extensions-chromium/publish-extension/open-developer-account.md">Create developer account</a></td>
+    <td><a href = "./extensions-chromium/publish-extension/open-developer-account.md">Opening a developer account</a></td>
     <td>Learn how to create a developer account for publishing extension</td>
 
   </tr>
   <tr>
-    <td><a href = "./extensions-chromium/porting-chrome-extensions.md">Port Chrome extension</a></td>
+    <td><a href = "./extensions-chromium/porting-chrome-extension.md">Port Chrome extension</a></td>
     <td>Created a Chrome extension you&#39;d like to see on Microsoft Edge? See how to port it with minimal or no effort</td>
 
   </tr>
