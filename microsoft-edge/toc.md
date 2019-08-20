@@ -98,6 +98,7 @@
 ### [Microsoft browser extension policy](extensions/microsoft-browser-extension-policy.md)
 ### [Tips and tricks](extensions/tips-and-tricks.md)
 ### [Troubleshooting](extensions/troubleshooting.md)
+## [Extensions (Chromium)](extensions-chromium.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
