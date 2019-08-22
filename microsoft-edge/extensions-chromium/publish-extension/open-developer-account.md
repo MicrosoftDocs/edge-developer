@@ -44,9 +44,7 @@ After sign in, you’ll land on this registration form:
 
 > [!Note]
 > We'll use these details to contact you about account-related matters. For example, you'll receive an email confirmation after you complete your registration. After that, we'll send messages if you need to fix something with your account.
-
-
-    If you are registering as a company, you'll also need to enter the name, email address, and phone number of the person who will approve your company's account.
+> If you are registering as a company, you'll also need to enter the name, email address, and phone number of the person who will approve your company's account.
 
 7. Review your account details and confirm that everything is correct. Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement].
 
@@ -58,7 +56,7 @@ The Microsoft Edge program in Partner Center offers both individual and company 
 
 Company accounts are intended for organizations and businesses. For company accounts, we require greater [verification](#account-verification) to confirm that you’re authorized to set up the account for your company. Individual accounts are usually appropriate for a single developer working on their own.
 
-> [! Important]
+> [!Important]
 > You can't change the account type once you make your selection, so be sure to choose the right type.
 
 Here are the essential differences between the two account types.
