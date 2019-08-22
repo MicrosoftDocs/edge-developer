@@ -68,6 +68,6 @@ If you are registering as a company, you'll also need to enter the name, email a
 
 [account.microsoft.com]: https://account.microsoft.com/account/Account?refd=support.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dsupport.microsoft.com&destrt=home-index
 
-[Partner Center URL]: https://www.bing.com/
+[Partner Center URL]: https://go.microsoft.com/fwlink/?linkid=2099798
 
-[Microsoft Edge Developer Agreement]: https://www.bing.com/
+[Microsoft Edge Developer Agreement]: https://docs.microsoft.com/en-us/legal/windows/agreements/app-developer-agreement
