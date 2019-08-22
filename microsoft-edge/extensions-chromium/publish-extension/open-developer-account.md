@@ -23,6 +23,7 @@ To submit browser extensions you’ve developed, you’ll need to set up a Micro
 2. If you're not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account. The Microsoft account you use here will be what you use to sign in to your developer account.
 After sign in, you’ll land on this registration form:  
 
+
    <figure>
        <img src="../media/img1.png"
             alt="The registration page"/>
