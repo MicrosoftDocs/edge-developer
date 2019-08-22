@@ -161,8 +161,18 @@ By default, we'll publish your submission as soon as it passes certification. Yo
 - **Publish your submission as soon as it passes certification**: It is the default selection, and means that your submission will begin the publishing process as soon as it passes certification
 - **Start publishing your submission on a certain date**: Choose Start publishing this submission on to ensure that the submission is not published until a certain date. With this option, your submission will be released as soon as possible on or after the date you specify. The date must be at least 24 hours in the future. Along with the date, you can also specify the time at which the submission should begin to be published.
 
-- **Publish** hold options to hold on publishing your submission until a certain date
-- **Notes for certification** to provide additional info to the certification testers.  
+### Notes for certification
+
+As you submit your extension, you have the option to use the Notes for certification page to provide additional information to the certification testers. This information can help ensure that your extension is tested correctly. If we can't fully test your submission, it may fail certification.
+
+Make sure to include the following (if applicable for your extension):
+
+- User names and passwords for test accounts
+- Steps to access hidden or locked features
+- Expected differences in behavior based on region or other customer settings
+- Information about what's changed in an app update
+- Anything else you think testers will need to understand about your submission
+
 After completing the above details, click **Publish** to submit your extension to the Store.
 
 [Microsoft Edge developer portal]: https://developer.microsoft.com/en-us/microsoft-edge/extensions/
