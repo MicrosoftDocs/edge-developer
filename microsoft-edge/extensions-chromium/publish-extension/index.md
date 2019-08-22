@@ -1,6 +1,6 @@
 ---
 description: Learn how to create a new submission for publishing extension on Microsoft Edge Addons Store.
-title: create-new-submission
+title: Publish extensions
 author: Shahina
 ms.author: shahina
 ms.date: 01/08/2019
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
 ---
-# Creating an extension submission
+# Publish extension to Microsoft Store
 
 To publish your extension on Microsoft Store, you must first create a submission on Partner center and submit it. This document lists all the details that you need to provide to create an extension submission.
 
@@ -157,9 +157,9 @@ Click **Publish** and provide these details –
 - **Notes for certification** to provide additional info to the certification testers.  
 After completing the above details, click **Publish** to submit your extension to the Store.
 
-[Microsoft Edge developer portal]: https://www.bing.com/
+[Microsoft Edge developer portal]: https://developer.microsoft.com/en-us/microsoft-edge/extensions/
 [Partner center]: https://go.microsoft.com/fwlink/?linkid=2099798
 [developer dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
-[Microsoft Edge Developer Agreement]: https://www.bing.com/
+[Microsoft Edge Developer Agreement]: https://docs.microsoft.com/en-us/legal/windows/agreements/app-developer-agreement
 [Microsoft Edge Addons Store Developer Policies]: https://www.bing.com/
-[How to submit a promotional YouTube video in the store listing]: https://www.bing.com/
+[How to submit a promotional YouTube video in the store listing]: ../host-youtube-video.md
