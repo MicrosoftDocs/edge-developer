@@ -36,7 +36,7 @@ After sign in, you’ll land on this registration form:
 > If you are already registered as a Windows app developer with Microsoft, you’ll automatically be registered to Microsoft Edge developer account.  
   
 3. Select the **country/region** in which you live, or where your business is located. You won't be able to change this later.
-1. Select your **[developer account type](#account-types) (individual or company)**. You won't be able to change this later, so be sure to choose the right type of account.
+1. Select your [developer account type](#account-types) **(individual or company)**. You won't be able to change this later, so be sure to choose the right type of account.
 
 
 1. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that you can use a name only if it is available and someone else doesn't has the rights to use it.
