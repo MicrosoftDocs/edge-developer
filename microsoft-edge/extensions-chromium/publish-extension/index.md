@@ -32,7 +32,7 @@ Go to your [developer dashboard]. From the **Overview** page (as shown below), c
 ## Step 2: Upload your extension Zip file
 
 The **Package** page is where you upload the **zip file** for the extension which you’re submitting. You can only upload one package at a time, so if your extension is not complete you can upload a work-in-progress package and update it anytime before publishing it. Be sure that the package you’re uploading contains `manifest.json` and is working fine on **Microsoft Edge**.  
-Upload the package by dragging it into the upload field or by . The Package page will validate the extensions zip file and will show you upload **success or failure status**. If the package passes validation, it will be uploaded successfully and you’ll see a success message. However, if the package fails validation, the package will not be accepted and an error message will be shown. If there are errors in the package, resolve the issues and try uploading it again.
+Upload the package by dragging it into the upload field or by selecting **Browse your files**. The Package page will validate the extensions zip file and will show you upload **success or failure status**. If the package passes validation, it will be uploaded successfully and you’ll see a success message. However, if the package fails validation, the package will not be accepted and an error message will be shown. If there are errors in the package, resolve the issues and try uploading it again.
 
 After successful upload, review your extension details and click **Next** to proceed.
 
