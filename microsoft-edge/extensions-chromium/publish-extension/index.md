@@ -14,18 +14,18 @@ To publish your extension on Microsoft Store, you must first create a submission
 
 ## Before you begin
 
-1. You must have an active developer account on [Partner center] to submit your extension on Microsoft Store. If you don’t have one, create a new developer account. Now, go to [Microsoft Edge developer portal] and sign in to your developer account.
+1. You must have an active developer account on Partner center to submit your extension on Microsoft Store. If you don’t have one, [create a new developer account](../open-developer-account.md).
 1. Create a zip file of your extension package and ensure that it contains these files:  
     - The manifest file and it must have extension’s name and version defined
     - The images and other files that your extension requires  
 
-If you haven’t yet started on building an extension, you may refer [Getting Started] tutorial for building an Edge Chromium extension  
+If you haven’t yet started building an extension, you may refer [Getting Started](../../getting-started/index.md) tutorial for building an Edge Chromium extension  
 
 To create an extension submission on Partner Center, follow these steps.  
 
 ## Step 1: Start a new submission
 
-Go to your [developer dashboard]. From the **Overview** page (as shown below), click **Create new extension**. 
+Go to your [developer dashboard]. From the **Overview** page (as shown below), click **Create new extension**.
 
 ![Overview page](../media/img1.png)
 
