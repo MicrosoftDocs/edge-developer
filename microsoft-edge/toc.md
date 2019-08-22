@@ -112,7 +112,6 @@
 #### [Opening a developer account](extensions-chromium/publish-extension/open-developer-account.md)
 #### [Update an extension](extensions-chromium/publish-extension/update-extension.md)
 #### [Manage account settings](extensions-chromium/publish-extension/manage-account-settings.md)
-### [Hosting and Updating]()
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
