@@ -37,7 +37,31 @@ After sign in, you’ll land on this registration form:
 3. Select the **country/region** in which you live, or where your business is located. You won't be able to change this later.
 1. Select your **developer account type (individual or company)**. You won't be able to change this later, so be sure to choose the right type of account.
 
-### Types of accounts
+
+1. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that you can use a name only if it is available and someone else doesn't has the rights to use it.
+
+1. Enter the **contact details** for your developer account. For company accounts, be sure to use your organization’s registered email address.
+
+> [!Note]
+> We'll use these details to contact you about account-related matters. For example, you'll receive an email confirmation after you complete your registration. After that, we'll send messages if you need to fix something with your account.
+
+
+    If you are registering as a company, you'll also need to enter the name, email address, and phone number of the person who will approve your company's account.
+
+7. Review your account details and confirm that everything is correct. Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement].
+
+8. Click **Finish** to confirm your registration.
+
+## Account Types
+
+The Microsoft Edge program in Partner Center offers both individual and company accounts. Either type of account gives you access to publish extensions to the Store and to participate in additional Microsoft programs.  
+
+Company accounts are intended for organizations and businesses. For company accounts, we require greater [verification](#account-verification) to confirm that you’re authorized to set up the account for your company. Individual accounts are usually appropriate for a single developer working on their own.
+
+> [! Important]
+> You can't change the account type once you make your selection, so be sure to choose the right type.
+
+Here are the essential differences between the two account types.
 
    <table style="width:100%">
       <tr>
@@ -54,21 +78,11 @@ After sign in, you’ll land on this registration form:
       </tr>
     </table>
 
-1. Enter the **publisher display name** that you wish to use (50 characters or fewer). Select this carefully, as customers will see this name when browsing your extensions. For company accounts, be sure to use your organization's registered business name. Note that you can use a name only if it is available and someone else doesn't has the rights to use it.
+## Account verification
 
-1. Enter the **contact details** for your developer account. For company accounts, be sure to use your organization’s registered email address.
+After you've completed the registration process, your account will go through verification. For individual accounts, we check the availability of your publisher display name. For company accounts, the process takes a little longer, as we also need to confirm that you’re authorized to set up the account for your company. This verification can take from a few days to a couple of weeks, and it often includes a phone call to your company. You can't submit extensions from a company account until it's been verified, but while you're waiting, you can  continue building, testing and work on getting your submissions ready.  
 
-> [!Note]
-> We'll use these details to contact you about account-related matters. For example, you'll receive an email confirmation after you complete your registration. After that, we'll send messages if you need to fix something with your account.
-
-
-If you are registering as a company, you'll also need to enter the name, email address, and phone number of the person who will approve your company's account.
-
-7. Review your account details and confirm that everything is correct. Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement].
-
-8. Click **Finish** to confirm your registration.
-
-After you've signed up, your account will go through verification. For individual accounts, we check the availability of your publisher display name. For company accounts, the process takes a little longer, as we also need to confirm that you’re authorized to set up the account for your company. This verification can take from a few days to a couple of weeks, and it often includes a phone call to your company. You can check your verification status on the **Account settings** page.
+You can check your verification status on the **Account settings** page.
 
 [account.microsoft.com]: https://account.microsoft.com/account/Account?refd=support.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dsupport.microsoft.com&destrt=home-index
 
