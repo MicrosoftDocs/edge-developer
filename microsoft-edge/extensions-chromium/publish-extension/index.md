@@ -1,6 +1,6 @@
 ---
 description: Learn how to create a new submission for publishing extension on Microsoft Edge Addons Store.
-title: Publish extensions
+title: Publish extension
 author: Shahina
 ms.author: shahina
 ms.date: 01/08/2019
@@ -44,12 +44,12 @@ After successful upload, review your extension details and click **Next** to pro
 
 Select a **Visibility** option to define the audience who can discover and acquire your extension. This gives you the option to specify whether people can find your extension in the Store or see its Store listing at all. Currently, you have two options under visibility:
 
-- **Public**: Your extension will be available and discoverable to everyone in the Microsoft Store. This is the default option. Leave this option selected if you want your extension to be listed in the Store for customers to find via searching, browsing, and extension’s direct link.
-- **Hidden**: Your extension can’t be found in the Microsoft Store by customers searching or browsing; you’ll need to share the store listing URL to distribute your extension. Any customer with the direct link to the product’s list can download it on Microsoft Edge.  
+- **Public**: If you select Public, your extension will be available and discoverable to everyone in the Microsoft Store. This is the default option. Leave this option selected if you want your extension to be listed in the Store for customers to find via searching, browsing, and extension’s direct link.
+- **Hidden**: If you select Hidden, your extension can’t be found in the Microsoft Store by customers searching or browsing; you’ll need to share the store listing URL to distribute your extension. Any customer with the direct link to the product’s list can download it on Microsoft Edge.  
 (You can find your extension store listing URL under **Extension Overview** page of extension submission.)
 
 > [!Note]
-> If you submit an extension as Public and later change it to Private, the users who already have the extension will continue to use it and would receive the update as well.
+> If you submit an extension as Public and later change it to Private, the users who already have the extension will continue to use it and receive updates you submit.
 
 ### Markets
 
@@ -59,7 +59,7 @@ Note that if someone already has your extension in a certain market, and you lat
 
 Click **Save** to proceed to **Properties** section.
 
-## Select Properties for your extension
+## Step 4: Select Properties for your extension
 
 ### Category
 
@@ -100,9 +100,9 @@ Extension rating helps us determine the age of the target audience for your exte
 
 Click **Save** to proceed to **Store listing** section.
 
-## Add Store listings information for your extension
+## Step 5: Add Store listings information for your extension
 
-This is the information that customers will see when viewing your extension’s listing in the Microsoft Store. Many of the fields in a Store listing are optional, but we suggest providing as much information as possible to make your listing stand out. The minimum required for the Store listings step to be considered complete is a **text description, extension logo and small promotional tile** in each language mentioned in your extension package.
+This is the information that customers will see when viewing your extension’s listing in the Microsoft Store. Many of the fields in a Store listing are optional, but we suggest providing as much information as possible to make your listing stand out. The minimum required for the Store listings step to be considered complete is the **text description, extension logo and small promotional tile** in each language mentioned in your extension package.
 
 ### Store listing languages
 
