@@ -14,7 +14,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 To submit browser extensions you’ve developed, you’ll need to set up a Microsoft Edge developer account in Partner Center.
 
 >[!Note]
-> **DO you have a Microsoft Account?**
+> Do you have a Microsoft Account?  
 > To create a developer account for Microsoft Edge, you’ll need to have a Microsoft account email. If you don’t have a Microsoft account, go to [account.microsoft.com], select **Sign in**, and then choose **Create one!**
 
 ## Registration process
@@ -36,8 +36,8 @@ After sign in, you’ll land on this registration form:
   
 3. Select the **country/region** in which you live, or where your business is located. You won't be able to change this later.
 1. Select your **developer account type (individual or company)**. You won't be able to change this later, so be sure to choose the right type of account.
-    Here are the essential differences between the two account types -  
-    ### Types of accounts
+
+### Types of accounts
 
    <table style="width:100%">
       <tr>
@@ -59,13 +59,16 @@ After sign in, you’ll land on this registration form:
 1. Enter the **contact details** for your developer account. For company accounts, be sure to use your organization’s registered email address.
 
 > [!Note]
-> We'll use these details to contact you about account-related matters.  
+> We'll use these details to contact you about account-related matters. For example, you'll receive an email confirmation after you complete your registration. After that, we'll send messages if you need to fix something with your account.
+
 
 If you are registering as a company, you'll also need to enter the name, email address, and phone number of the person who will approve your company's account.
 
 7. Review your account details and confirm that everything is correct. Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement].
 
 8. Click **Finish** to confirm your registration.
+
+After you've signed up, your account will go through verification. For individual accounts, we check the availability of your publisher display name. For company accounts, the process takes a little longer, as we also need to confirm that you’re authorized to set up the account for your company. This verification can take from a few days to a couple of weeks, and it often includes a phone call to your company. You can check your verification status on the **Account settings** page.
 
 [account.microsoft.com]: https://account.microsoft.com/account/Account?refd=support.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2F%3Frefd%3Dsupport.microsoft.com&destrt=home-index
 
