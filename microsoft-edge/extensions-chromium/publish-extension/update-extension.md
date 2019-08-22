@@ -25,4 +25,11 @@ To update the Microsoft Store listing for your extension, follow these steps:
 
 ## Update an extension which is at certification step
 
+You can edit and update your extension submission after submitting, as long as it hasn’t entered the Publish step yet. You can check the status of your extension on **Extension Overview** page of your extension listing on [Partner center].  
 
+To edit your submission, you may follow these steps:
+1. 
+
+
+[developer dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
+[Partner center]: https://go.microsoft.com/fwlink/?linkid=2099798
