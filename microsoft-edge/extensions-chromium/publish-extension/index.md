@@ -148,11 +148,19 @@ Short description of extension is picked directly from the manifest file of your
 
 Search terms are single words or short phrases that are not displayed to customers but can help your make your extension discoverable in the store when customers search using those terms. You can include up to 7 search terms with a maximum of 30 characters each and can use no more than 21 separate words across all search terms.  
 
-Click **Save** to proceed to save you **Store listing** section
+Click **Save** to proceed to save you **Store listing** section. Click **Publish** to provide submission details
 
-## Complete your submission
+## Step 5: Complete your submission and click Publish
 
-Click **Publish** and provide these details –
+The Submission options page of the extension submission process is where you can provide more information to help us test your product properly. This is an optional step, but is recommended for many submissions.
+
+### Publishing hold options
+
+By default, we'll publish your submission as soon as it passes certification. You can optionally choose to place a hold on publishing your submission until a certain date. The options in this section are described below.
+
+- **Publish your submission as soon as it passes certification**: It is the default selection, and means that your submission will begin the publishing process as soon as it passes certification
+- **Start publishing your submission on a certain date**: Choose Start publishing this submission on to ensure that the submission is not published until a certain date. With this option, your submission will be released as soon as possible on or after the date you specify. The date must be at least 24 hours in the future. Along with the date, you can also specify the time at which the submission should begin to be published.
+
 - **Publish** hold options to hold on publishing your submission until a certain date
 - **Notes for certification** to provide additional info to the certification testers.  
 After completing the above details, click **Publish** to submit your extension to the Store.
