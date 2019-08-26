@@ -49,7 +49,7 @@ To remove your extension from Microsoft Store, do the following:
 
 1. Click **Unpublish**. This unpublishes the listing from the Microsoft Store.  
 
-These steps remove the extension from store, that means no new user will be able to find the extension or install it afresh but the users who have the extension will continue to use it.
+These steps remove the extension from the store, that means no new user will be able to find the extension or install it afresh but the users who have already installed the extension will continue to use it.
 
 [developer dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
 [Partner center]: https://go.microsoft.com/fwlink/?linkid=2099798
