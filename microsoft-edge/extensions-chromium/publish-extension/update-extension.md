@@ -43,7 +43,7 @@ To edit your submission, you may follow these steps:
 
 To remove your extension from Microsoft Store, do the following:
 
-1. Go to your [developer dashboard]. From the **Overview** page, click the extension listing which you want to remove. T
+1. Go to your [developer dashboard]. From the **Overview** page, click the extension listing which you want to remove.
 
 1. Open **Extension Overview** page of your extension listing
 
