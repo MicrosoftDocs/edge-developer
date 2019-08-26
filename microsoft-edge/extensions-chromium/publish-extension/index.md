@@ -170,12 +170,13 @@ Make sure to include the following (if applicable for your extension):
 - User names and passwords for test accounts
 - Steps to access hidden or locked features
 - Expected differences in behavior based on region or other customer settings
-- Information about what's changed in an app update
+- Information about what's changed in the extension update
+- Explain the functionality and the purpose of unique or complicated extension, or those with very limited UI
 - Anything else you think testers will need to understand about your submission
 
 After completing the above details, click **Publish** to submit your extension to the Store.  
 
-When you finish creating your extension's submission and click **Publish**, the submission enters the certification step. This process usually is completed within a few hours, though in some cases it may take up to three business days. After your submission passes certification, the extension will be published to the store unless you've used Publishing hold options to specify that it should not be released until a certain date. You'll be notified when your submission is published, and the extension's status in the dashboard will change to In the Store.
+When you finish creating your extension's submission and click Publish, the submission enters the *certification step*. This process usually is completed within a few hours, though in some cases it may take up to three business days. After your submission passes certification, the extension will be published to the store unless you've used Publishing hold options to specify that it should not be released until a certain date. You'll be notified when your submission is published, and the extension's status in the dashboard will change to **In the Store**.
 
 [Microsoft Edge developer portal]: https://developer.microsoft.com/en-us/microsoft-edge/extensions/
 [Partner center]: https://go.microsoft.com/fwlink/?linkid=2099798
