@@ -5,7 +5,7 @@ ms.author:
 ms.date: 08/27/2019
 ms.topic: 
 ms.prod: microsoft-edge
-keywords: microsoft edge, web developement, f12 tools, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
 
 
@@ -20,12 +20,12 @@ keywords: microsoft edge, web developement, f12 tools, devtools
 
 Use the Microsoft Edge DevTools **Sources** panel to:
 
-* [View files](#files).
-* [Edit CSS and JavaScript](#edit).
-* [Create and save **Snippets** of JavaScript](#snippets), which you can run on any page.
+* [View files](#view-files).
+* [Edit CSS and JavaScript](#edit-css-and-javascript).
+* [Create and save **Snippets** of JavaScript](#create-and-save-snippets-of-javascript), which you can run on any page.
   **Snippets** are similar to bookmarklets.
-* [Debug JavaScript](#debug).
-* [Set up a Workspace](#workspace), so that changes you make in DevTools get saved to the code on
+* [Debug JavaScript](#debug-javascript).
+* [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on
   your file system.
 
 ## View files 
@@ -74,7 +74,7 @@ page to run your new code. For example, if you edit the `background-color` of an
 see that change take effect immediately.
 
 <figure>
-  <img src="images/edit-css.msft.gif"
+  <img src="images/edit-css.msft.png"
        alt="Editing CSS in the Editor pane"/>
   <figcaption>
     <b>Figure 3</b>. Editing CSS in the <b>Editor</b> pane to change the background color of an
@@ -85,20 +85,20 @@ see that change take effect immediately.
 CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press
 <kbd>Command</kbd>+<kbd>S</kbd> (Mac) or <kbd>Control</kbd>+<kbd>S</kbd> (Windows, Linux).
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are those that
-you make inside of functions. For example, in <b>Figure 4</b> note how `console.log('A')` doesn't
+you make inside of functions. <!-- For example, in <b>Figure 4</b> note how `console.log('A')` doesn't
 run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the
-change, then the text `A` would have been logged to the **Console**.
+change, then the text `A` would have been logged to the **Console**. -->
 
-<figure>
-  <img src="images/edit-js.msft.gif"
+<!-- <figure>
+  <img src="images/edit-js.msft.png"
        alt="Editing JavaScript in the Editor pane"/>
   <figcaption>
     <b>Figure 4</b>. Editing JavaScript in the <b>Editor</b> pane
   </figcaption>
-</figure>
+</figure> -->
 
 DevTools erases your CSS and JavaScript changes when you reload the page. See
-[Set up a Workspace](#workspace) to learn how to save the changes to your file
+[Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file
 system.
 
 ## Create, save, and run Snippets 
