@@ -11,6 +11,8 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 # Update an extension Microsoft Store listing
 
+You can make changes to a published extension at any time. While you are updating, you don’t have to update the entire extension to make few changes such as updating description or logo. But if you update your extension package, just remember to increase the version number each time.
+
 ## Update an already published extension
 
 To update the Microsoft Store listing for your extension, follow these steps:
