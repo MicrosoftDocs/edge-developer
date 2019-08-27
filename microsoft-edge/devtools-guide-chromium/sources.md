@@ -7,7 +7,19 @@ ms.topic:
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright 05/29/2019 Kayce Basques 
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. -->
 
 
 
@@ -62,7 +74,7 @@ can view any type of file. For images, you see a preview of the image.
   <img src="images/sources-editor-pane.msft.png"
        alt="Viewing a file in the Editor pane"/>
   <figcaption>
-    <b>Figure 2</b>. Viewing the contents of <code>jquery-bundle.js</code> in the <b>Editor</b>
+    <b>Figure 2</b>. Viewing the contents of <code>6fc26531.index-docs.js</code> in the <b>Editor</b>
     pane
   </figcaption>
 </figure>
@@ -70,32 +82,32 @@ can view any type of file. For images, you see a preview of the image.
 ## Edit CSS and JavaScript 
 
 Use the **Editor** pane to edit CSS and JavaScript.  DevTools updates the
-page to run your new code. For example, if you edit the `background-color` of an element, you'll
+page to run your new code. For example, if you edit the `text-subtle` of an element, you'll
 see that change take effect immediately.
 
 <figure>
   <img src="images/edit-css.msft.png"
        alt="Editing CSS in the Editor pane"/>
   <figcaption>
-    <b>Figure 3</b>. Editing CSS in the <b>Editor</b> pane to change the background color of an
-    element from blue to red
+    <b>Figure 3</b>. Editing CSS in the <b>Editor</b> pane to change the text color of an
+    element change to red
   </figcaption>
 </figure>
 
 CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press
-<kbd>Command</kbd>+<kbd>S</kbd> (Mac) or <kbd>Control</kbd>+<kbd>S</kbd> (Windows, Linux).
+<kbd>Command</kbd>+<kbd>S</kbd> \(Mac\) or <kbd>Control</kbd>+<kbd>S</kbd> \(Windows, Linux\).
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are those that
-you make inside of functions. <!-- For example, in <b>Figure 4</b> note how `console.log('A')` doesn't
+you make inside of functions. <!--For example, in <b>Figure 4</b> note how `console.log('A')` doesn't
 run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the
 change, then the text `A` would have been logged to the **Console**. -->
 
-<!-- <figure>
+<figure>
   <img src="images/edit-js.msft.png"
        alt="Editing JavaScript in the Editor pane"/>
   <figcaption>
     <b>Figure 4</b>. Editing JavaScript in the <b>Editor</b> pane
   </figcaption>
-</figure> -->
+</figure>
 
 DevTools erases your CSS and JavaScript changes when you reload the page. See
 [Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file
@@ -107,11 +119,13 @@ Snippets are scripts which you can run on any page. Imagine that you repeatedly 
 following code in the **Console**, in order to insert the jQuery library into a page, so that
 you can run jQuery commands from the **Console**:
 
-    let script = document.createElement('script');
-    script.src = 'https://code.jquery.com/jquery-3.2.1.min.js';
-    script.crossOrigin = 'anonymous';
-    script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
-    document.head.appendChild(script);
+```javascript
+let script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.2.1.min.js';
+script.crossOrigin = 'anonymous';
+script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
+document.head.appendChild(script);
+```  
 
 Instead, you can save this code in a **Snippet** and run it with a couple of button clicks,
 any time you need it. DevTools saves the **Snippet** to your file system.
@@ -127,15 +141,15 @@ any time you need it. DevTools saves the **Snippet** to your file system.
 To run a **Snippet**:
 
 * Open the file via the **Snippets** pane, and click **Run** ![The Run button][run].
-* Open the [**Command Menu**][CM], delete the `>` character, type `!`, type the name of your
+* Open the <!--[**Command Menu**][CM]-->**Command Menu**, delete the `>` character, type `!`, type the name of your
   **Snippet**, then press <kbd>Enter</kbd>.
 
 [CM]: /microsoft-edge/devtools-guide-chromium/ui#command-menu
 [run]: images/run-snippet.msft.png
 
-See [Run Snippets Of Code From Any Page][snip] to learn more.
+<!-- See [Run Snippets Of Code From Any Page][snip] to learn more.
 
-[snip]: /microsoft-edge/devtools-guide-chromium/snippets
+[snip]: /microsoft-edge/devtools-guide-chromium/snippets-->
 
 ## Debug JavaScript 
 
@@ -145,7 +159,7 @@ is an intentional stopping place in your code, and then step through your code's
 one line at a time. As you step through the code, you can view and change the values of all
 currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-See [Get Started With Debugging JavaScript](/microsoft-edge/devtools-guide-chromium/javascript/) to learn the
+<!-- See [Get Started With Debugging JavaScript](/microsoft-edge/devtools-guide-chromium/javascript/) to learn the
 basics of debugging in DevTools.
 
 <figure>
@@ -154,7 +168,7 @@ basics of debugging in DevTools.
   <figcaption>
     <b>Figure 6</b>. Debugging JavaScript
   </figcaption>
-</figure>
+</figure> -->
 
 ## Set up a Workspace 
 
@@ -162,10 +176,22 @@ By default, when you edit a file in the **Sources** panel, those changes are los
 reload the page. **Workspaces** enable you to save the changes that you make in DevTools to
 your file system. Essentially, this lets you use DevTools as your code editor.
 
-See [Edit Files With Workspaces][WS] to get started.
+<!-- See [Edit Files With Workspaces][WS] to get started.
 
-[WS]: /microsoft-edge/devtools-guide-chromium/workspaces/
+[WS]: /microsoft-edge/devtools-guide-chromium/workspaces/ -->
 
  
 
 
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/sources) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
+[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
