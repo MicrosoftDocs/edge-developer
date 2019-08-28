@@ -34,7 +34,7 @@ Use the Microsoft Edge DevTools **Sources** panel to:
 
 * [View files](#view-files).
 * [Edit CSS and JavaScript](#edit-css-and-javascript).
-* [Create and save **Snippets** of JavaScript](#create-and-save-snippets-of-javascript), which you can run on any page.
+* [Create and save **Snippets** of JavaScript](#create-save-and-run-snippets), which you can run on any page.
   **Snippets** are similar to bookmarklets.
 * [Debug JavaScript](#debug-javascript).
 * [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on
