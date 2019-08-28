@@ -36,7 +36,7 @@ This "Developer Guide" will launch you on your way to building your own full fun
 
   </tr>
   <tr>
-    <td><a href = "./extensions-chromium/developer-guide/index.md">Getting started!</a></td>
+    <td><a href = "./extensions-chromium/developer-guide/index.md">Developer Guide</a></td>
     <td>New to the world of extension development? Try out some tutorials to get up to speed.</td>
 
 </table>
