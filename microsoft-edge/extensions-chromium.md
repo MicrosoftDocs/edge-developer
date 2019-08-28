@@ -14,10 +14,9 @@ keywords: edge, web development, html, css, javascript, developer, extensions
 
 Extensions are small programs that can be used to add new features to Microsoft Edge (Chromium) or modify the existing functionality. Extensions are intended to improve a user’s day-to-day browsing experience by providing niche functionality that is important to targeted audiences.
 
-Microsoft Edge (Chromium) supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge (Chromium) with minimal or no changes.
+There is now just one programming model associated with building extensions for the Microsoft Edge-Chromium browser and the Google Chrome browser. It's based on the open source Chromium engine now so all API calls and results will be identical. You'll also be able to submit the same source code bundle to both the Microsoft and Google extension stores, making life easy now when it is time to publish your Extension.
 
-To get an overview of the end to end journey of creating a Microsoft Edge (Chromium) extension from development to publishing, check out the [Getting started guide](./extensions-chromium/getting-started.md)!
-
+This "Developer Guide" will launch you on your way to building your own full functional extension.  It introduces the major pieces associated with Extensions giving you a real examples to build from.
 
 ## Popular articles
 
