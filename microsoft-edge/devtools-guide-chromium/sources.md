@@ -1,9 +1,9 @@
 ---
-title: 
-author: 
-ms.author: 
+title: Sources Panel Overview
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 08/27/2019
-ms.topic: 
+ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
@@ -89,13 +89,12 @@ see that change take effect immediately.
   <img src="images/edit-css.msft.png"
        alt="Editing CSS in the Editor pane"/>
   <figcaption>
-    <b>Figure 3</b>. Editing CSS in the <b>Editor</b> pane to change the text color of an
-    element change to red
+    <b>Figure 3</b>. Editing CSS in the <b>Editor</b> pane to change the text color of the subtitle to red
   </figcaption>
 </figure>
 
 CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press
-<kbd>Command</kbd>+<kbd>S</kbd> \(Mac\) or <kbd>Control</kbd>+<kbd>S</kbd> \(Windows, Linux\).
+`Command`+`S` \(Mac\) or `Control`+`S` \(Windows\).
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are those that
 you make inside of functions. <!--For example, in <b>Figure 4</b> note how `console.log('A')` doesn't
 run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the
@@ -108,6 +107,11 @@ change, then the text `A` would have been logged to the **Console**. -->
     <b>Figure 4</b>. Editing JavaScript in the <b>Editor</b> pane
   </figcaption>
 </figure>
+
+> ![**Figure 5**. Editing JavaScript in the **Editor** pane][Figure5]  
+> **Figure 5**. Editing JavaScript in the **Editor** pane
+
+[Figure5]: images/edit-js.msft.png  
 
 DevTools erases your CSS and JavaScript changes when you reload the page. See
 [Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file
@@ -142,7 +146,7 @@ To run a **Snippet**:
 
 * Open the file via the **Snippets** pane, and click **Run** ![The Run button][run].
 * Open the <!--[**Command Menu**][CM]-->**Command Menu**, delete the `>` character, type `!`, type the name of your
-  **Snippet**, then press <kbd>Enter</kbd>.
+  **Snippet**, then press `Enter`.
 
 [CM]: /microsoft-edge/devtools-guide-chromium/ui#command-menu
 [run]: images/run-snippet.msft.png
@@ -162,6 +166,7 @@ currently-defined properties and variables, run JavaScript in the **Console**, a
 <!-- See [Get Started With Debugging JavaScript](/microsoft-edge/devtools-guide-chromium/javascript/) to learn the
 basics of debugging in DevTools.
 
+
 <figure>
   <img src="images/debugging.msft.png"
        alt="Debugging JavaScript"/>
@@ -169,6 +174,10 @@ basics of debugging in DevTools.
     <b>Figure 6</b>. Debugging JavaScript
   </figcaption>
 </figure> -->
+
+![**Figure 6**. Debugging JavaScript][Figure6]  
+
+[Figure6]: images/debugging.msft.png  
 
 ## Set up a Workspace 
 
