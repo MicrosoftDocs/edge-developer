@@ -30,6 +30,7 @@
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### JavaScript
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
+### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
