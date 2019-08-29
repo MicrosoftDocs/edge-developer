@@ -167,11 +167,14 @@ basics of debugging in DevTools.  -->
   </figcaption>
 </figure> -->
 
+<!--
 > ##### Figure 6  
 > Debugging JavaScript  
 > ![Figure 6. Debugging JavaScript][ImageDebugging]  
+-->
 
 <!-- TODO: Link JavaScript "Get Started With Debugging JavaScript" when a good section exists. -->
+<!-- TODO: Create screen capture for JavaScript "Get Started With Debugging JavaScript" when a good section exists. -->
 
 ## Set up a Workspace 
 
