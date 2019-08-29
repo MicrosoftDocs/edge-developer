@@ -38,8 +38,7 @@ to display its tooltip. If the element has a shortcut, the tooltip includes it.
 
 ## Keyboard shortcuts for opening DevTools 
 
-To open DevTools, press the following keyboard shortcuts while your cursor is focused
-on the browser viewport:
+To open DevTools, press the following keyboard shortcuts while your cursor is focused on the browser viewport:
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -174,11 +173,12 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Execute | `Enter` | `Return` |  
 | Expand all sub-properties of an object that's been logged to the Console | Hold `Alt`, then click **Expand**![Expand][ImageExpand] | Hold `Alt`, then click **Expand**![Expand][ImageExpand] |  
 
-[ImageExpand]: images/expand.msft.png  
 
  
 
 
+
+[ImageExpand]: images/expand.msft.png  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
