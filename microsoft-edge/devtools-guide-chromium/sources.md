@@ -56,7 +56,7 @@ Use the **Page** pane to view all of the resources that the page has loaded.
 > ![Figure 1. The Page pane][ImageSourcesPagePane]  
 
 How the **Page** pane is organized:  
-*   The top-level, such as `top` in [**Figure 1**](#figure-1), represents an [HTML frame][HTML$Frames].  You'll find `top` on every page that you visit. `top` represents the main document frame.  
+*   The top-level, such as `top` in [**Figure 1**](#figure-1), represents an [HTML frame][HTML4Frames].  You'll find `top` on every page that you visit. `top` represents the main document frame.  
 *   The second-level, such as `docs.microsoft.com` in [**Figure 1**](#figure-1), represents an [origin][HTMLOrigin].  
 *   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in [**Figure 1**](#figure-1) the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
 
