@@ -1,9 +1,9 @@
 ---
-title: 
-author: 
-ms.author: 
+title: DevTools Keyboard Shortcuts
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.date: 08/28/2019
-ms.topic: 
+ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
