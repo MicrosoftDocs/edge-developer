@@ -1,13 +1,12 @@
 ---
-ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
-description: Learn how to create a new submission for publishing extension on Microsoft Edge Addons Store.
-title: create-new-submission
+description: Enterprise policy documentation.
+title: Match Patterns
 author: MSEdgeTeam
-ms.author: msedgedevrel
-ms.date: 01/08/2019
+ms.author: shahina
+ms.date: 30/08/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, extensions development, browser extensions, addons, partner center, developer
+keywords: edge, extensions development, browser extensions, addons, developer
 ---
 
 # Match Patterns
@@ -92,7 +91,7 @@ Here are some examples of _invalid_ pattern matches:
 
 | **Bad pattern**  |  **Why it's bad** |
 |---|---|
-| http://www.google.com | No _path_ |
+| http://www.foo.com | No _path_ |
 | http://*foo/bar | '*' in the host can be followed only by a '.' or '/' |
 | http://foo.*.bar/baz | If '*' is in the _host_, it must be the first character |
 | http:/bar | Missing _scheme_ separator ("/" should be "//") |
