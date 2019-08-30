@@ -1,8 +1,7 @@
 ---
-ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
-description: Learn how to create a new submission for publishing extension on Microsoft Edge Addons Store.
-title: create-new-submission
-author: MSEdgeTeam
+description: Extensions enterprise docs
+title: Hosting and Updating
+author: shahina
 ms.author: msedgedevrel
 ms.date: 01/08/2019
 ms.topic: article
@@ -16,13 +15,12 @@ Most extensions are hosted in the [Microsoft Store] to best protect users from m
 
 ## Hosting
 
-All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Microsoft Store are uploaded through the [Developer Dashboard] as .zip files. The publishing process automatically converts the .zip into a .crx file.
+All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Microsoft Store are uploaded through the Developer Dashboard as .zip files. The publishing process automatically converts the .zip into a .crx file.
 
-There are three exceptions to the Microsoft Store hosting rule:
+There are two exceptions to the Microsoft Store hosting rule:
 
 1. Extensions that are distributed through the enterprise policy.
 1. Unpacked extension directories from a local machine while in developer mode.
-1. Linux installation.
 
 ## Updating
 
@@ -46,10 +44,9 @@ To release an update to an extension, increase the number in the **“version”
     }
 }
 ```
-Convert the updated extension directory into a ZIP file and locate the old version in the [Developer Dashboard]. Select Edit, upload the new package, and hit Publish. The browser will will automatically update the extension for users after the new version is published.
+Convert the updated extension directory into a ZIP file and locate the old version in the Developer Dashboard. Select Edit, upload the new package, and hit Publish. The browser will will automatically update the extension for users after the new version is published.
 
 [Microsoft Store]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions
-[Developer Dashboard]: https://go.microsoft.com/fwlink/?linkid=2099798
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google] and used according to terms described in the [Creative Commons Attribution 4.0 International License]. The original page can be found [here].
