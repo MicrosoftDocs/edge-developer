@@ -49,31 +49,15 @@ Next thing is to add some icons to our `manifest.json` file (and create a new `/
 
 Your directory structure will now look like this
 
-.  
-+-- _manifest.json  
-+-- icons  
-|   +-- nasapod16x16.png  
-|   +-- nasapod32x32.png  
-|   +-- nasapod48x48.png  
-|   +-- nasapod128x128.png  
-
 ```
-project
-│   README.md
-│   file001.txt    
+.
+│   _manifest.json  
 │
-└───folder1
-│   │   file011.txt
-│   │   file012.txt
-│   │
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+└───icons
+│   │   nasapod16x16.png
+│   │   nasapod32x32.png  
+│   │   nasapod48x48.png  
+│   │   nasapod128x128.png  
 ```
 
 and your updated `manifest.json` file is as follows.
@@ -144,17 +128,22 @@ In folder popup, let's add the file `popup.html` and let's have it render our st
 
 Our folder structure for our extension is this.
 
-.  
-+-- _manifest.json  
-+-- icons  
-|   +-- nasapod16x16.png  
-|   +-- nasapod32x32.png  
-|   +-- nasapod48x48.png  
-|   +-- nasapod128x128.png  
-+-- popup  
-|   +-- popup.html  
-+-- images  
-|   +-- stars.jpeg  
+```
+.
+│   _manifest.json  
+│
+└───icons
+│   │   nasapod16x16.png
+│   │   nasapod32x32.png  
+│   │   nasapod48x48.png  
+│   │   nasapod128x128.png    
+│   
+└───popup
+|   │   popup.html
+|     
+└───images
+    │   stars.jpeg 
+```
 
 >[!NOTE]
 >The `images/stars.jpeg` file listed above is available in the zip download mentioned at the top of this page.
