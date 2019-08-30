@@ -106,7 +106,7 @@
 #### [Part 4 - Add options page](extensions-chromium/developer-guide/part4-add-options-page.md)
 #### [Part 5 - Background script](extensions-chromium/developer-guide/part5-background-script.md)
 #### [Part 6 - Dynamic content insertion](extensions-chromium/developer-guide/part6-dynamic-content-insertion.md)
-#### [Match-patterns](extensions-chromium/developer-guide/match-patterns.md)
+#### [Match Patterns](extensions-chromium/developer-guide/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/developer-guide/hosting-and-updating.md)
 ### [Porting Chrome extensions](extensions-chromium/porting-chrome-extension.md)
 ### [Publish extensions](extensions-chromium/publish-extension/index.md)
