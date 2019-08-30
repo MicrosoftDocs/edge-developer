@@ -91,7 +91,7 @@ Here are some examples of _invalid_ pattern matches:
 
 | **Bad pattern**  |  **Why it's bad** |
 |---|---|
-| http://www.foo.com | No _path_ |
+| http://<span></span>www.foo.com | No _path_ |
 | http://*foo/bar | '*' in the host can be followed only by a '.' or '/' |
 | http://foo.*.bar/baz | If '*' is in the _host_, it must be the first character |
 | http:/bar | Missing _scheme_ separator ("/" should be "//") |
