@@ -207,9 +207,9 @@ When an event is processed by this listener, the function that is the first para
 
 * The second, appends an `img` element right below the `body` of our browser tab that has the class `slide-image` assigned as well as the `imageDivId` as the id of that image element.
 
-## Adding functionality to remove the displayed image when clicked on
-
 * The third adds a click event that covers the entire image allowing the user to click any place on the image and that image will be removed from the page (along with it's event listener).
+
+## Adding functionality to remove the displayed image when clicked on
 
 Now, when we we browse to any page and click on our extension icon, we get the popup menu as follows:
 
