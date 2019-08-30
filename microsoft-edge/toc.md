@@ -24,9 +24,13 @@
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md)
 ## [DevTools (Chromium)](devtools-guide-chromium.md)
 ### [What's new](devtools-guide-chromium/whats-new.md) 
+### [IE mode](devtools-guide-chromium/ie-mode.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
+### JavaScript
+#### [Sources Panel Overview](devtools-guide-chromium/sources.md)
+### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
@@ -107,6 +111,7 @@
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
 ## [Visual Studio Code](visual-studio-code/index.md)
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
+### [Elements for Edge](visual-studio-code/elements-for-edge.md)
 ## [WebDriver](webdriver.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
