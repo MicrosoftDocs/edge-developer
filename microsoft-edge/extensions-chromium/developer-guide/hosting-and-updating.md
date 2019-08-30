@@ -26,25 +26,8 @@ There are two exceptions to the Microsoft Store hosting rule:
 
 The Microsoft Browser periodically checks for new versions of installed extensions and updates them without user intervention.
 
-To release an update to an extension, increase the number in the **“version”** field of the manifest.
-
-```
-{
-    ...
-    "version": "1.5",
-    ...
-    }
-}
-```
-```
-{
-    ...
-    "version": "1.6",
-    ...
-    }
-}
-```
-Convert the updated extension directory into a ZIP file and locate the old version in the Developer Dashboard. Select Edit, upload the new package, and hit Publish. The browser will will automatically update the extension for users after the new version is published.
+>[!Note]
+> Steps to update an extension on Microsoft store will be added soon.
 
 [Microsoft Store]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions
 
