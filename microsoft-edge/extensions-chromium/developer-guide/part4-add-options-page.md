@@ -25,7 +25,7 @@ By [Peter Kellner](http://peterkellner.net)
 
 In this part 4 we will extend this NASA picture of the day extension to retrieve from the NASA API, the current picture.  Currently, we are only showing the same static `stars.jpeg` that we statically stored in the extension itself.
 
-Because the NASA API requires a key to access it, we will add a text input field to the custom extension configuration screen, also known, in extension terms, as an options page. We will also add aa checkbox that configures the app to use the static `stars.jpeg` file or all the NASA API to get a picture of the day.
+Because the NASA API requires a key to access it, we will add a text input field to the custom extension configuration screen, also known, in extension terms, as an options page. We will also add a checkbox that configures the app to use the static `stars.jpeg` file or all the NASA API to get a picture of the day.
 
 Finally, in our content page `JavaScript` that we injected into our currently executing tab, we will asynchronously read that configuration from the extension storage API and use it to retrieve a URL from NASA, as well as Cache that URL for an hour to avoid calling the NASA API repeatedly.
 
