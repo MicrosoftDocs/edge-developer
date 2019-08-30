@@ -217,6 +217,6 @@ Now, when we we browse to any page and click on our extension icon, we get the p
 
 When we click on the Display button, we get what's below.  If we click any where on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
-![The image showing in browser](media/part3-showingimage)
+![The image showing in browser](media/part3-showingimage.png)
 
-We've now create an extension that successfully sends a message from the extension icon popup, to the dynamically inserted `JavaScript` running as content on the browser tab.  That injected content set the image element to display our static stars `jpeg`.
+We've now created an extension that successfully sends a message from the extension icon popup, to the dynamically inserted `JavaScript` running as content on the browser tab.  That injected content set the image element to display our static stars `jpeg`.
