@@ -112,6 +112,7 @@
 ### [Publish extensions](extensions-chromium/publish-extension/index.md)
 #### [Upload YouTube video](extensions-chromium/publish-extension/host-youtube-video.md)
 #### [Define extension rating](extensions-chromium/publish-extension/define-extension-rating.md)
+#### [Supply images](extensions-chromium/publish-extension/supply-images.md)
 #### [Opening a developer account](extensions-chromium/publish-extension/open-developer-account.md)
 #### [Update an extension](extensions-chromium/publish-extension/update-extension.md)
 #### [Manage account settings](extensions-chromium/publish-extension/manage-account-settings.md)
