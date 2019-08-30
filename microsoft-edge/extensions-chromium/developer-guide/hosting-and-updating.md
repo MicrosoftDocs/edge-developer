@@ -15,7 +15,7 @@ Most extensions are hosted in the [Microsoft Store] to best protect users from m
 
 ## Hosting
 
-All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Microsoft Store are uploaded through the Developer Dashboard as .zip files. The publishing process automatically converts the .zip into a .crx file.
+All extensions are distributed to users as a special ZIP file with a .crx suffix. Extensions hosted in the Microsoft Store are uploaded as .zip files. The publishing process automatically converts the .zip into a .crx file.
 
 There are two exceptions to the Microsoft Store hosting rule:
 
@@ -24,7 +24,7 @@ There are two exceptions to the Microsoft Store hosting rule:
 
 ## Updating
 
-The Microsoft Browser periodically checks for new versions of installed extensions and updates them without user intervention.
+The Microsoft Edge browser periodically checks for new versions of installed extensions and updates them without user intervention.
 
 >[!Note]
 > Steps to update an extension on Microsoft store will be added soon.
