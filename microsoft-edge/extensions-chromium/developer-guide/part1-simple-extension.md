@@ -57,6 +57,25 @@ Your directory structure will now look like this
 |   +-- nasapod48x48.png  
 |   +-- nasapod128x128.png  
 
+```
+project
+│   README.md
+│   file001.txt    
+│
+└───folder1
+│   │   file011.txt
+│   │   file012.txt
+│   │
+│   └───subfolder1
+│       │   file111.txt
+│       │   file112.txt
+│       │   ...
+│   
+└───folder2
+    │   file021.txt
+    │   file022.txt
+```
+
 and your updated `manifest.json` file is as follows.
 
 ```JSON
