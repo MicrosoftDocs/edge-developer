@@ -65,6 +65,7 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
 // Known issue - app needs to run on PerMonitorV2 DPI awareness for WebView to look properly
+// This is only available on Win10, comment out the line on older OS versions.
 SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 
 // Locate the browser and set up the environment for WebView
