@@ -68,23 +68,23 @@ Once you've got your manifest set up, you can use the **Manifest** pane of the *
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.  
 *   The **Icons** section displays every icon that you've specified.  
 
-### Simulate Add to Homescreen events   
+<!--### Simulate Add to Homescreen events   -->
 
-A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
-The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  
+<!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
+The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
 
-<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  
+<!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Clicking on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
-![add to desktop shelf][ImageDesktopShelf]  
+<!--![add to desktop shelf][ImageDesktopShelf]  -->
 
-> [!Tip]
-> Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  
+<!--> [!Tip]
+> Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
-The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you can successfully add your app to your desktop shelf, then it'll work for mobile, too.  -->
+<!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you can successfully add your app to your desktop shelf, then it'll work for mobile, too.  -->
 
 <!-- TODO: Rework content after sample app is created. -->
 
-If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via **remote debugging**, and then click the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  
+<!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via **remote debugging**, and then click the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
 <!--[remote debugging]: /debug/remote-debugging/remote-debugging  -->
 
@@ -162,18 +162,18 @@ In order to avoid leakage of cross-domain information, there's significant paddi
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
-The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the *minimum* size that any single cached opaque response contributes to the overall storage usage is **approximately 7 megabytes**.  You should keep this in mind when determining how many opaque responses you want to cache, since you could easily exceeded storage quota limitations much sooner than you'd otherwise expect based on the actual size of the opaque resources.  
+The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes][ChromiumIssues796060#c17].  You should keep this in mind when determining how many opaque responses you want to cache, since you could easily exceeded storage quota limitations much sooner than you'd otherwise expect based on the actual size of the opaque resources.  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17  
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
 
-<!--TODO:  Link Alphabet browser bug "approximately 7 megabytes" sections when available. -->
+Related Guides:  
 
-<!--Related Guides:  
+*   [Stack Overflow: What limitations apply to opaque responses?][Stack OverflowLimitationsForOpaqueResponses]  
+<!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
 
-*   [Stack Overflow: What limitations apply to opaque responses?](https://stackoverflow.com/q/39109789/385997)  
-*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
+<!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-<!--TODO:  Link to sections when available. -->
+[Stack OverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
 
 ## Clear storage 
 
