@@ -77,7 +77,8 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--![add to desktop shelf][ImageDesktopShelf]  -->
 
-<!--> [!Tip]
+<!--
+> [!Tip]
 > Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
 <!--The **Add to Homescreen** feature cannot yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you can successfully add your app to your desktop shelf, then it'll work for mobile, too.  -->
@@ -90,10 +91,9 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Service workers 
+## Service workers   
 
-Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  
-These scripts enable you to access features that don't need a web page or user interaction, like push notifications, background sync, and offline experiences.  
+Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a web page or user interaction, like push notifications, background sync, and offline experiences.  
 
 <!--Related Guides:  
 
@@ -198,12 +198,12 @@ Related Guides:
 
 
 
-[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  
-[ImageManifest]: images/manifest.msft.png "Manifest pane"  
-[ImageMultipleCaches]: images/multiple-caches.msft.png "Multiple service worker caches"  
-[ImageServiceWorkerCachePane]: images/sw-cache.msft.png "Service worker cache pane"  
-[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  
-[ImageServiceWorkerPane]: images/sw.msft.png "Service worker pane"  
+<!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
+[ImageManifest]: images/manifest-pane.msft.png "Manifest pane"  
+[ImageMultipleCaches]: images/service-worker-cache-pane-multiple-caches.msft.png "Multiple service worker caches"  
+[ImageServiceWorkerCachePane]: images/service-worker-cache-pane-cache.msft.png "Service worker cache pane"  
+<!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
+[ImageServiceWorkerPane]: images/service-worker-pane.msft.png "Service worker pane"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
