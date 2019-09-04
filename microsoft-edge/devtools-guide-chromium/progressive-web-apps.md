@@ -61,9 +61,11 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 Once you've got your manifest set up, you can use the **Manifest** pane of the **Application** panel to inspect it.  
 
-![manifest pane][ImageManifest]  
+> ##### Figure 1  
+> The **Manifest** Pane  
+> ![The Manifest Pane][ImageManifest]  
 
-*   To look at the manifest source, click the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in the screenshot above\).  
+*   To look at the manifest source, click the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in [**Figure 1**](#figure-1)]\).  
 *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.  
 *   The **Icons** section displays every icon that you've specified.  
@@ -104,9 +106,11 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.  
 
-![service worker pane][ImageServiceWorkerPane]  
+> ##### Figure 2  
+> The **Service Workers** Pane  
+> ![The Service Workers pane][ImageServiceWorkersPane]  
 
-*   If a service worker is installed to the currently open page, then you'll see it listed on this pane.  <!--For example, in the screenshot above there's a service worker installed for the scope of `https://events.alphabet.com/io2016/`.  -->  
+*   If a service worker is installed to the currently open page, then you'll see it listed on this pane.  For example, in [**Figure 2**](#figure-2) there's a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  
 *   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** panel, or the `Go offline` option in the **Command Menu**.  
 *   The **Update on reload** checkbox forces the service worker to update on every page load.  
 *   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.  
@@ -115,7 +119,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 *   The **Sync** button emulates a background sync event.  
 *   The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button click.  
 *   The **Source** line tells you when the currently running service worker was installed.  The link is the name of the service worker's source file.  Clicking on the link sends you to the service worker's source.  
-*   The **Status** line tells you the status of the service worker.  The number on this line \(`#1` in the screenshot above\) indicates how many times the service worker has been updated.  If you enable the **update on reload** checkbox you'll notice that the number increments on every page load.  Next to the status you'll see a **start** button \(if the service worker is stopped\) or a **stop** button \(if the service worker is running\).  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button can simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.  
+*   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator \(`#171` in [**Figure 2**](#figure-2)\) is for the currently active Service Worker.  Next to the status you'll see a **start** button \(if the service worker is stopped\) or a **stop** button \(if the service worker is running\).  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button can simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.  
 *   The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click on the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.  
 
 If the service worker causes any errors, a new label called **Errors** shows
@@ -135,22 +139,27 @@ up.
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][WebCacheAPI].  
 
-![service worker cache pane][ImageServiceWorkerCachePane]  
+[WebCacheAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Cache "Cache - Web APIs | MDN"  
 
-Note that the first time you open a cache and add a resource to it, DevTools might not detect the change.  Reload the page and you should see the cache.  
+> ##### Figure 3  
+> The **Cache Storage** Pane  
+> ![The Cache Storage Pane][ImageServiceWorkersCachePane]  
+
+> [!NOTE]
+> The first time you open a cache and add a resource to it, DevTools might not detect the change.  Reload the page and you should see the cache.  
 
 If you've got two or more caches open, you'll see them listed below the **Cache Storage** dropdown.  
 
-![multiple service worker caches][ImageMultipleCaches]  
-
-[WebCacheAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Cache  
+> ##### Figure 4  
+> The **Cache Storage** dropdown  
+> ![The Cache Storage dropdown][ImageMultipleCaches]  
 
 ## Quota usage 
 
 Some responses within the Cache Storage pane may be flagged as being "**opaque**".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][HTTPCORSProtocol] is not enabled.  
 
-[WebGlossaryCDN]: /web/fundamentals/glossary#CDN  
-[WebGlossaryOpaque]: /web/fundamentals/glossary#opaque-response  
+<!--[WebGlossaryCDN]: /web/fundamentals/glossary#CDN  -->
+<!--[WebGlossaryOpaque]: /web/fundamentals/glossary#opaque-response  -->
 [HTTPCORSProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
@@ -158,7 +167,7 @@ Some responses within the Cache Storage pane may be flagged as being "**opaque**
 
 In order to avoid leakage of cross-domain information, there's significant padding added to the size of an opaque response used for calculating storage quota limits \(for example whether a `QuotaExceeded` exception is thrown\) and reported by the **`navigator.storage`** API.  
 
-[WebEstimatingAvailableStorageSpace]: /web/updates/2017/08/estimating-available-storage-space  
+<!--[WebEstimatingAvailableStorageSpace]: /web/updates/2017/08/estimating-available-storage-space  -->
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
@@ -192,18 +201,20 @@ Check out the guides below for more help on the other panes of the **Application
 Related Guides:  
 
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
-*   [Inspect and manage local storage and caches](/devtools-guide-chromium/iterate/manage-data/local-storage)  -->
+*   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
+
+<!--TODO  -->
 
  
 
 
 
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
-[ImageManifest]: images/manifest-pane.msft.png "Manifest pane"  
-[ImageMultipleCaches]: images/service-worker-cache-pane-multiple-caches.msft.png "Multiple service worker caches"  
-[ImageServiceWorkerCachePane]: images/service-worker-cache-pane-cache.msft.png "Service worker cache pane"  
+[ImageManifest]: images/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
+[ImageMultipleCaches]: images/service-worker-cache-pane-multiple-caches.msft.png "Figure 4: The **Cache Storage** dropdown"  
+[ImageServiceWorkersCachePane]: images/service-worker-cache-pane-cache.msft.png "Figure 3: The Cache Storage Pane"  
 <!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkerPane]: images/service-worker-pane.msft.png "Service worker pane"  
+[ImageServiceWorkersPane]: images/service-worker-pane.msft.png "Figure 2: The Service Workers pane"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
