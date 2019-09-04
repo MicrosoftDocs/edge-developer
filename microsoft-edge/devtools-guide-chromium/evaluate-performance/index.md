@@ -31,7 +31,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-<!--> [!NOTE]
+<!--
+> [!NOTE]
 > See [Optimize Website Speed][OptimizeWebsiteSpeed] to learn how make your pages load faster.  -->
 
 <!--[OptimizeWebsiteSpeed]: speed/get-started  -->
@@ -40,9 +41,12 @@ Runtime performance is how your page performs when it is running, as opposed to 
 
 <!--[RAIL]: /web/fundamentals/performance/rail  -->
 
+<!--
 > [!CAUTION]
 > This tutorial is based on Microsoft Edge 59.  If you use another version of Microsoft Edge, the UI and features of DevTools may be different.  Check `edge://help` to see what version of Microsoft Edge you're running.  
+-->
 
+<!--
   
 
 ```javascript
@@ -84,16 +88,18 @@ var feedback = {
 ```  
 
 
-
+  -->
 
 ## Get started   
 
 In this tutorial, you open DevTools on a live page and use the Performance panel to find a performance bottleneck on the page.  
 
-1.  Open Microsoft Edge in [InPrivate Mode][InPrivate].  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, those extensions might create noise in your performance measurements.  
-
-[InPrivate]: https://support.microsoft.com/en-us/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  
-
+1.  Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, those extensions might create noise in your performance measurements.  
+    
+    <!--[InPrivate]: https://support.microsoft.com/en-us/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
+    
+    <!--TODO: replace section when updated for new Edge -->
+    
 1.  Load the following page in your InPrivate window.  This is the demo that you're going to profile.  The page shows a bunch of little circles and squares moving left and right.  
     
     ```https
@@ -106,10 +112,11 @@ In this tutorial, you open DevTools on a live page and use the Performance panel
     > The demo on the left, and DevTools on the right  
     > ![The demo on the left, and DevTools on the right][ImageGetStarted]  
     
+    <!--
     > [!NOTE]
-    > For the rest of the screenshots, DevTools is [undocked to a separate window][UIPlacement] so that you can see its contents better.  
+    > For the rest of the screenshots, DevTools is [undocked to a separate window][UIPlacement] so that you can see its contents better.  -->
 
-[UIPlacement]: ui#placement  
+<!--[UIPlacement]: ui#placement  -->
 
 ### Simulate a mobile CPU  
 
@@ -129,7 +136,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
     > ![CPU throttling][ImageCPUThrottling]  
     
     > [!NOTE]
-    > When testing other pages, if you want to ensure that they work well on low-end mobile devices, set CPU Throttling to **20x slowdown**.  This demo doesn't work well with 20x slowdown, so it just uses 2x slowdown for instructional purposes.  
+    > When testing other pages, if you want to ensure that they work well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  This demo doesn't work well with 6x slowdown, so it just uses 2x slowdown for instructional purposes.  
 
 <!--### Set up the demo  
 
