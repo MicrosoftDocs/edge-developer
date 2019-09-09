@@ -1,7 +1,7 @@
 ---
 description: Extensions Getting Started Part 2
 title: Run your extension locally in your browser while developing it (side-loading)
-author: Peter Kellner
+author: MSEdgeTeam
 ms.author: xxx
 ms.date: 6/15/2019
 ms.topic: article
