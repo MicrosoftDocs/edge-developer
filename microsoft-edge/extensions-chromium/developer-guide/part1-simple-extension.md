@@ -16,7 +16,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   * Icons associated with the extension
   * Default modal popup when the extension icon is clicked
 
-[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part1.zip)
+<a href = "extension-source/extension-getting-started-part1.zip" download>Completed Extension Package Source for This Part </a>  
 
 ## Overview
 
