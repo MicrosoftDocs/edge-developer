@@ -1,7 +1,7 @@
 ---
 description: Extensions Getting Started Part 5
 title: Adding background.js to update badge text on image close.
-author: Peter Kellner
+author: MSEdgeTeam
 ms.author: xxx
 ms.date: 6/15/2019
 ms.topic: article
@@ -10,8 +10,6 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 ---
 
 # Adding background.js to update badge text on image close
-
-By [Peter Kellner](http://peterkellner.net)
 
 * Extension technologies covered in this part 5.
   * Creating and registering a background JavaScript listener
