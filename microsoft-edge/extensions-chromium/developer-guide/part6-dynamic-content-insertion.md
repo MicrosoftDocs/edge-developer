@@ -1,7 +1,7 @@
 ---
 description: Extensions Getting Started Part 5
 title: Animate in the NASA image with a CSS and dynamic code insertion.
-author: Peter Kellner
+author: MSEdgeTeam
 ms.author: xxx
 ms.date: 6/15/2019
 ms.topic: article
@@ -10,8 +10,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 ---
 
 # Animate in the NASA image with a CSS and dynamic code insertion
-
-By [Peter Kellner](http://peterkellner.net)
+.net)
 
 * Extension technologies covered in this part 6.
   * Add a static content page to browser tab
