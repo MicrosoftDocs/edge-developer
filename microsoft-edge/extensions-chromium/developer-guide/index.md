@@ -1,7 +1,7 @@
 ---
 description: Learn what a Chromium extension is as well as progressively build a complete picture viewing extension that includes options, content injection, background scripts, storage and more.
 title: Extensions - Getting started
-author: Peter Kellner
+author: MSEdgeTeam
 ms.author: xxx
 ms.date: 6/15/2019
 ms.topic: article
@@ -10,10 +10,6 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 ---
 
 # Getting started with Chromium Extensions
-
-There is now just one programming model associated with building extensions for the Microsoft Edge-Chromium browser and the Google Chrome browser. It's based on the open source Chromium engine now so all API calls and results will be identical. You'll also be able to submit the same source code bundle to both the Microsoft and Google extension stores, making life easy now when it is time to publish your Extension.
-
-This "Getting Started" Guide will launch you on your way to building your own full functional extension.  It introduces the major pieces associated with Extensions giving you a real examples to build from.
 
 If you want to jump directly into building your first extension, go to part 1 list below, building a simple extension, and work through all 6 parts  giving you more extension functionality as you go.
 
