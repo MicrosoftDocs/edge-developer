@@ -17,7 +17,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
   * Including content pages in existing chrome tabs
   * Having content pages listen for messages from popups and respond
   
-[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part3.zip)
+[Completed Extension Package Source for This Part](./extension-source/extension-getting-started-part3.zip)
 
 ## Overview
 
