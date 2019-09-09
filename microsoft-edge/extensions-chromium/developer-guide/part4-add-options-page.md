@@ -1,7 +1,7 @@
 ---
 description: Extensions Getting Started Part 4
 title: Add an options page and NASA API key as well cache use to LocalStorage
-author: Peter Kellner
+author: MSEdgeTeam
 ms.author: xxx
 ms.date: 6/15/2019
 ms.topic: article
@@ -10,8 +10,6 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 ---
 
 # Add an options page and NASA API key as well cache use to `LocalStorage`
-
-By [Peter Kellner](http://peterkellner.net)
 
 * Extension technologies covered in this part 4.
   * Adding an options page to set extension configuration values
