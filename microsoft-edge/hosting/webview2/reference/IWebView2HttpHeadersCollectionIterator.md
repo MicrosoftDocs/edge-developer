@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,9 +30,9 @@ Iterator for collection of HTTP headers.
 
 #### GetCurrentHeader 
 
-> public HRESULT [GetCurrentHeader](#interface_i_web_view2_http_headers_collection_iterator_1a8d61b76e65ed87aedea6abad210f2498)(LPWSTR * name,LPWSTR * value)
+> public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR * name,LPWSTR * value)
 
 #### MoveNext 
 
-> public HRESULT [MoveNext](#interface_i_web_view2_http_headers_collection_iterator_1ac81f6122f8cadcfe54f818a0629efc2d)(BOOL * has_next)
+> public HRESULT [MoveNext](#movenext)(BOOL * has_next)
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,13 +17,13 @@ interface IWebView2WebView
   : public IUnknown
 ```
 
-The Embedded Browser WebView enables you to host web content using the latest Edge web browser technology.
+WebView2 enables you to host web content using the latest Edge web browser technology.
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_Settings](#get_settings) | The [IWebView2Settings](IWebView2Settings.md#interface_i_web_view2_settings) object contains various modifiable settings for the running WebView.
+[get_Settings](#get_settings) | The [IWebView2Settings](IWebView2Settings.md#iwebview2settings) object contains various modifiable settings for the running WebView.
 [get_Source](#get_source) | The URI of the current top level document.
 [Navigate](#navigate) | Cause a navigation of the top level document to the specified URI.
 [MoveFocus](#movefocus) | Move focus into WebView.
@@ -63,7 +63,7 @@ The Embedded Browser WebView enables you to host web content using the latest Ed
 [put_ZoomFactor](#put_zoomfactor) | Set the ZoomFactor property.
 [get_IsVisible](#get_isvisible) | The IsVisible property determines whether to show or hide the webview.
 [put_IsVisible](#put_isvisible) | Set the IsVisible property.
-[PostWebMessageAsJson](#postwebmessageasjson) | Post the specified webMessage to the top level document in this [IWebView2WebView](#interface_i_web_view2_web_view).
+[PostWebMessageAsJson](#postwebmessageasjson) | Post the specified webMessage to the top level document in this [IWebView2WebView](#iwebview2webview).
 [PostWebMessageAsString](#postwebmessageasstring) | This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
 [add_WebMessageReceived](#add_webmessagereceived) | This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 [remove_WebMessageReceived](#remove_webmessagereceived) | Remove an event handler previously added with add_WebMessageReceived.
@@ -76,15 +76,14 @@ The Embedded Browser WebView enables you to host web content using the latest Ed
 [get_CanGoForward](#get_cangoforward) | Can navigate the webview to the next page in the navigation history.
 [GoBack](#goback) | Navigates the webview to the previous page in the navigation history.
 [GoForward](#goforward) | Navigates the webview to the next page in the navigation history.
-[WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#webview2_capture_preview_image_format) | Image format used by the [IWebView2WebView::CapturePreview](#interface_i_web_view2_web_view_1a1d04f117ee7a3f8828bdaad7eecc6668) method.
-[WEBVIEW2_SCRIPT_DIALOG_KIND](#webview2_script_dialog_kind) | Kind of JavaScript dialog used in the [IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#interface_i_web_view2_script_dialog_opening_event_handler) interface.
-[WEBVIEW2_PROCESS_FAILED_KIND](#webview2_process_failed_kind) | Kind of process failure used in the [IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#interface_i_web_view2_process_failed_event_handler) interface.
+[WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#webview2_capture_preview_image_format) | Image format used by the [IWebView2WebView::CapturePreview](#capturepreview) method.
+[WEBVIEW2_SCRIPT_DIALOG_KIND](#webview2_script_dialog_kind) | Kind of JavaScript dialog used in the [IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#iwebview2scriptdialogopeningeventhandler) interface.
+[WEBVIEW2_PROCESS_FAILED_KIND](#webview2_process_failed_kind) | Kind of process failure used in the [IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#iwebview2processfailedeventhandler) interface.
 [WEBVIEW2_PERMISSION_TYPE](#webview2_permission_type) | The type of a permission request.
 [WEBVIEW2_PERMISSION_STATE](#webview2_permission_state) | Response to a permission request.
 [WEBVIEW2_MOVE_FOCUS_REASON](#webview2_move_focus_reason) | Reason for moving focus.
 [WEBVIEW2_WEB_ERROR_STATUS](#webview2_web_error_status) | Error status values for web navigations.
 [WEBVIEW2_WEB_RESOURCE_CONTEXT](#webview2_web_resource_context) | Enum for resourceContextFilter of WebResourceRequested event.
-[WEBVIEW2_RELEASE_CHANNEL_PREFERENCE](#webview2_release_channel_preference) | The release channel of a browser installation.
 
 ## Navigation events
 
@@ -98,7 +97,7 @@ For subframes inside WebView, the only navigation event fired is the NavigationS
 
 ## Process model
 
-The Embedded Browser WebView uses the same process model as the Edge web browser. There is one Edge browser process per specified user data directory in a user session that will serve any Embedded Browser WebView calling process that specifies that user data directory. This means one Edge browser process may be serving multiple calling processes and one calling process may be using multiple Edge browser processes.
+WebView2 uses the same process model as the Edge web browser. There is one Edge browser process per specified user data directory in a user session that will serve any WebView2 calling process that specifies that user data directory. This means one Edge browser process may be serving multiple calling processes and one calling process may be using multiple Edge browser processes.
 
 ![dot_inline_dotgraph_2.png](dot_inline_dotgraph_2.png)
 
@@ -112,7 +111,7 @@ You can safely shutdown associated browser and renderer processes using the Clos
 
 ## Threading model
 
-The Embedded Browser WebView must be created on a UI thread. Specifically a thread with a message pump. All callbacks will occur on that thread and calls into the WebView must be done on that thread. It is not safe to use the WebView from another thread.
+The WebView2 must be created on a UI thread. Specifically a thread with a message pump. All callbacks will occur on that thread and calls into the WebView must be done on that thread. It is not safe to use the WebView from another thread.
 
 Callbacks including event handlers and completion handlers execute serially. That is, if you have an event handler running and begin a message loop no other event handlers or completion callbacks will begin executing reentrantly.
 
@@ -156,15 +155,15 @@ When an interface is unavailable, you can consider disabling the associated feat
 
 #### get_Settings 
 
-The [IWebView2Settings](IWebView2Settings.md#interface_i_web_view2_settings) object contains various modifiable settings for the running WebView.
+The [IWebView2Settings](IWebView2Settings.md#iwebview2settings) object contains various modifiable settings for the running WebView.
 
-> public HRESULT [get_Settings](#interface_i_web_view2_web_view_1a8396b542d0a061ded4145618642b945a)([IWebView2Settings](IWebView2Settings.md#interface_i_web_view2_settings) ** settings)
+> public HRESULT [get_Settings](#get_settings)([IWebView2Settings](IWebView2Settings.md#iwebview2settings) ** settings)
 
 #### get_Source 
 
 The URI of the current top level document.
 
-> public HRESULT [get_Source](#interface_i_web_view2_web_view_1aa4f33567666a5019de3348e432c68d54)(LPWSTR * uri)
+> public HRESULT [get_Source](#get_source)(LPWSTR * uri)
 
 This value potentially changes as a part of the DocumentStateChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
 
@@ -175,18 +174,24 @@ This value potentially changes as a part of the DocumentStateChanged event firin
 
 Cause a navigation of the top level document to the specified URI.
 
-> public HRESULT [Navigate](#interface_i_web_view2_web_view_1a85859f22509648a1b928ddf7065fee45)(LPCWSTR uri)
+> public HRESULT [Navigate](#navigate)(LPCWSTR uri)
 
 See the navigation events for more information. Note that this starts a navigation and the corresponding NavigationStarting event will fire sometime after this Navigate call completes.
 
 ```cpp
+void AppWindow::NavigateToAddressBar()
+{
+    WCHAR addressbarText[2048] = L"";
+    GetWindowText(m_addressbarWindow, addressbarText, ARRAYSIZE(addressbarText));
+    m_webView->Navigate(addressbarText);
+}
 ```
 
 #### MoveFocus 
 
 Move focus into WebView.
 
-> public HRESULT [MoveFocus](#interface_i_web_view2_web_view_1ad5fa39dc1bcfee27d040fccc631995f4)([WEBVIEW2_MOVE_FOCUS_REASON](#interface_i_web_view2_web_view_1a094339e235eb7a1e0512c26e09f16af3) reason)
+> public HRESULT [MoveFocus](#movefocus)([WEBVIEW2_MOVE_FOCUS_REASON](#webview2_move_focus_reason) reason)
 
 WebView will get focus and focus will be set to correspondent element in the page hosted in the WebView. For Programmatic reason, focus is set to previously focused element or the default element if there is no previously focused element. For Next reason, focus is set to the first element. For Previous reason, focus is set to the last element. WebView can also got focus through user interaction like clicking into WebView or Tab into it. For tabbing, the app can call MoveFocus with Next or Previous to align with tab and shift+tab respectively when it decides the WebView is the next tabbable element. Or, the app can call IsDialogMessage as part of its message loop to allow the platform to auto handle tabbing. The platform will rotate through all windows with WS_TABSTOP. When the WebView gets focus from IsDialogMessage, it will internally put the focus on the first or last element for tab and shift+tab respectively.
 
@@ -318,7 +323,7 @@ LRESULT CALLBACK AppWindow::ChildWndProc(HWND hWnd,
 
 Initiates a navigation to htmlContent as source HTML of a new document.
 
-> public HRESULT [NavigateToString](#interface_i_web_view2_web_view_1a3d905c5be9d866c56eeefac440a6d863)(LPCWSTR htmlContent)
+> public HRESULT [NavigateToString](#navigatetostring)(LPCWSTR htmlContent)
 
 The htmlContent parameter may not be larger than 2 MB of characters. The origin of the new page will be about:blank.
 
@@ -334,7 +339,7 @@ The htmlContent parameter may not be larger than 2 MB of characters. The origin 
 
 Add an event handler for the NavigationStarting event.
 
-> public HRESULT [add_NavigationStarting](#interface_i_web_view2_web_view_1a746fdc399efb935857bd13a7114bdaca)([IWebView2NavigationStartingEventHandler](IWebView2NavigationStartingEventHandler.md#interface_i_web_view2_navigation_starting_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NavigationStarting](#add_navigationstarting)([IWebView2NavigationStartingEventHandler](IWebView2NavigationStartingEventHandler.md#iwebview2navigationstartingeventhandler) * eventHandler,EventRegistrationToken * token)
 
 NavigationStarting fires when the WebView main frame is requesting permission to navigate to a different URI. This will fire for redirects as well.
 
@@ -342,7 +347,8 @@ NavigationStarting fires when the WebView main frame is requesting permission to
     // Register a handler for the NavigationStarting event.
     // This handler will check the domain being navigated to, and if the domain
     // matches a list of blocked sites, it will cancel the navigation and
-    // possibly display a warning page.
+    // possibly display a warning page.  It will also disable JavaScript on
+    // selected websites.
     CHECK_FAILURE(m_webView->add_NavigationStarting(
         Callback<IWebView2NavigationStartingEventHandler>(
             [this](IWebView2WebView* sender,
@@ -367,6 +373,17 @@ NavigationStarting fires when the WebView main frame is requesting permission to
                 CHECK_FAILURE(sender->NavigateToString(htmlContent));
             }
         }
+        // Changes to settings will apply at the next navigation, which includes the
+        // navigation after a NavigationStarting event.  We can use this to change
+        // settings according to what site we're visiting.
+        if (ShouldBlockScriptForUri(uri.get()))
+        {
+            m_settings->put_IsScriptEnabled(FALSE);
+        }
+        else
+        {
+            m_settings->put_IsScriptEnabled(m_isScriptEnabled);
+        }
         return S_OK;
     }).Get(), &m_navigationStartingToken));
 ```
@@ -375,13 +392,13 @@ NavigationStarting fires when the WebView main frame is requesting permission to
 
 Remove an event handler previously added with add_NavigationStarting.
 
-> public HRESULT [remove_NavigationStarting](#interface_i_web_view2_web_view_1a727b83dc3ec5c191bdb1002c61be9185)(EventRegistrationToken token)
+> public HRESULT [remove_NavigationStarting](#remove_navigationstarting)(EventRegistrationToken token)
 
 #### add_DocumentStateChanged 
 
 Add an event handler for the DocumentStateChanged event.
 
-> public HRESULT [add_DocumentStateChanged](#interface_i_web_view2_web_view_1a989f9806a6736bac9a003319e16f6e48)([IWebView2DocumentStateChangedEventHandler](IWebView2DocumentStateChangedEventHandler.md#interface_i_web_view2_document_state_changed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_DocumentStateChanged](#add_documentstatechanged)([IWebView2DocumentStateChangedEventHandler](IWebView2DocumentStateChangedEventHandler.md#iwebview2documentstatechangedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 DocumentStateChanged fires when new content has started loading on the webview's main frame or if a same page navigation occurs (such as through fragment navigations or history.pushState navigations). This follows the NavigationStarting event and precedes the NavigationCompleted event.
 
@@ -410,13 +427,13 @@ DocumentStateChanged fires when new content has started loading on the webview's
 
 Remove an event handler previously added with add_DocumentStateChanged.
 
-> public HRESULT [remove_DocumentStateChanged](#interface_i_web_view2_web_view_1ae6d508d6107db968f00dfbf058b07cd4)(EventRegistrationToken token)
+> public HRESULT [remove_DocumentStateChanged](#remove_documentstatechanged)(EventRegistrationToken token)
 
 #### add_NavigationCompleted 
 
 Add an event handler for the NavigationCompleted event.
 
-> public HRESULT [add_NavigationCompleted](#interface_i_web_view2_web_view_1a5a46b92e792debdb4be4ff2e132d6f0f)([IWebView2NavigationCompletedEventHandler](IWebView2NavigationCompletedEventHandler.md#interface_i_web_view2_navigation_completed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([IWebView2NavigationCompletedEventHandler](IWebView2NavigationCompletedEventHandler.md#iwebview2navigationcompletedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
@@ -458,13 +475,13 @@ NavigationCompleted event fires when the WebView has completely loaded (body.onl
 
 Remove an event handler previously added with add_NavigationCompleted.
 
-> public HRESULT [remove_NavigationCompleted](#interface_i_web_view2_web_view_1afb94a5aad18ea6cd0f2a9d6d317b4b9e)(EventRegistrationToken token)
+> public HRESULT [remove_NavigationCompleted](#remove_navigationcompleted)(EventRegistrationToken token)
 
 #### add_FrameNavigationStarting 
 
 Add an event handler for the FrameNavigationStarting event.
 
-> public HRESULT [add_FrameNavigationStarting](#interface_i_web_view2_web_view_1a552b52140a8ab6d43f8d69a2329eeabc)([IWebView2NavigationStartingEventHandler](IWebView2NavigationStartingEventHandler.md#interface_i_web_view2_navigation_starting_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([IWebView2NavigationStartingEventHandler](IWebView2NavigationStartingEventHandler.md#iwebview2navigationstartingeventhandler) * eventHandler,EventRegistrationToken * token)
 
 FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI. This will fire for redirects as well.
 
@@ -491,13 +508,13 @@ FrameNavigationStarting fires when a child frame in the WebView requesting permi
 
 Remove an event handler previously added with add_FrameNavigationStarting.
 
-> public HRESULT [remove_FrameNavigationStarting](#interface_i_web_view2_web_view_1ac51a862e0737a1e7c5ac7fc0ccba64d6)(EventRegistrationToken token)
+> public HRESULT [remove_FrameNavigationStarting](#remove_framenavigationstarting)(EventRegistrationToken token)
 
 #### add_MoveFocusRequested 
 
 Add an event handler for the MoveFocusRequested event.
 
-> public HRESULT [add_MoveFocusRequested](#interface_i_web_view2_web_view_1af1e669775645817e281fa83db66d4995)([IWebView2MoveFocusRequestedEventHandler](IWebView2MoveFocusRequestedEventHandler.md#interface_i_web_view2_move_focus_requested_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_MoveFocusRequested](#add_movefocusrequested)([IWebView2MoveFocusRequestedEventHandler](IWebView2MoveFocusRequestedEventHandler.md#iwebview2movefocusrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 MoveFocusRequested fires when user tries to tab out of the WebView. The WebView's focus has not changed when this event is fired.
 
@@ -535,212 +552,189 @@ MoveFocusRequested fires when user tries to tab out of the WebView. The WebView'
 
 Remove an event handler previously added with add_MoveFocusRequested.
 
-> public HRESULT [remove_MoveFocusRequested](#interface_i_web_view2_web_view_1a62df3bca9979178c4ac5b4f5ecb3b941)(EventRegistrationToken token)
+> public HRESULT [remove_MoveFocusRequested](#remove_movefocusrequested)(EventRegistrationToken token)
 
 #### add_GotFocus 
 
 Add an event handler for the GotFocus event.
 
-> public HRESULT [add_GotFocus](#interface_i_web_view2_web_view_1accf1ba18fdb97e5bfe27f0520f18b017)([IWebView2FocusChangedEventHandler](IWebView2FocusChangedEventHandler.md#interface_i_web_view2_focus_changed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_GotFocus](#add_gotfocus)([IWebView2FocusChangedEventHandler](IWebView2FocusChangedEventHandler.md#iwebview2focuschangedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 GotFocus fires when WebView got focus.
-
-```cpp
-    // Register a handler for the GotFocus event.
-    // This handler just announces the event on the window's title bar.
-    CHECK_FAILURE(m_webView->add_GotFocus(
-        Callback<IWebView2FocusChangedEventHandler>(
-            [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
-    {
-        SetWindowText(m_mainWindow, L"WebView got focus");
-        return S_OK;
-    }).Get(), &m_gotFocusToken));
-```
 
 #### remove_GotFocus 
 
 Remove an event handler previously added with add_GotFocus.
 
-> public HRESULT [remove_GotFocus](#interface_i_web_view2_web_view_1aaca016ea0de908dc1e027f4ca4f6b8d0)(EventRegistrationToken token)
+> public HRESULT [remove_GotFocus](#remove_gotfocus)(EventRegistrationToken token)
 
 #### add_LostFocus 
 
 Add an event handler for the LostFocus event.
 
-> public HRESULT [add_LostFocus](#interface_i_web_view2_web_view_1af8c148d397519f901ff06f03edb3f372)([IWebView2FocusChangedEventHandler](IWebView2FocusChangedEventHandler.md#interface_i_web_view2_focus_changed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_LostFocus](#add_lostfocus)([IWebView2FocusChangedEventHandler](IWebView2FocusChangedEventHandler.md#iwebview2focuschangedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 LostFocus fires when WebView lost focus. In the case where MoveFocusRequested event is fired, the focus is still on WebView when MoveFocusRequested event fires. Lost focus only fires afterwards when app's code or default action of MoveFocusRequested event set focus away from WebView.
-
-```cpp
-    // Register a handler for the LostFocus event.
-    // This handler just announces the event on the window's title bar.
-    CHECK_FAILURE(m_webView->add_LostFocus(
-        Callback<IWebView2FocusChangedEventHandler>(
-            [this](IWebView2WebView* sender, IUnknown* args) -> HRESULT
-    {
-        SetWindowText(m_mainWindow, L"WebView lost focus");
-        return S_OK;
-    }).Get(), &m_lostFocusToken));
-```
 
 #### remove_LostFocus 
 
 Remove an event handler previously added with add_LostFocus.
 
-> public HRESULT [remove_LostFocus](#interface_i_web_view2_web_view_1a96ebfe46ab2d2b382716356a091c5906)(EventRegistrationToken token)
+> public HRESULT [remove_LostFocus](#remove_lostfocus)(EventRegistrationToken token)
 
 #### add_WebResourceRequested 
 
 Add an event handler for the WebResourceRequested event.
 
-> public HRESULT [add_WebResourceRequested](#interface_i_web_view2_web_view_1a03a2b5f82defb29dc480326e6460816f)(LPCWSTR *const urlFilter,[WEBVIEW2_WEB_RESOURCE_CONTEXT](#interface_i_web_view2_web_view_1a84d836ed6f6e803de309300b344a3152) *const resourceContextFilter,SIZE_T filterLength,[IWebView2WebResourceRequestedEventHandler](IWebView2WebResourceRequestedEventHandler.md#interface_i_web_view2_web_resource_requested_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)(LPCWSTR *const urlFilter,[WEBVIEW2_WEB_RESOURCE_CONTEXT](#webview2_web_resource_context) *const resourceContextFilter,SIZE_T filterLength,[IWebView2WebResourceRequestedEventHandler](IWebView2WebResourceRequestedEventHandler.md#iwebview2webresourcerequestedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 Fires when the WebView has performs any HTTP request. Use urlFilter to pass in a list with size filterLength of urls to listen for. Each url entry also supports wildcards: '*' matches zero or more characters, and '?' matches exactly one character. For each urlFilter entry, provide a matching resourceContextFilter as a bit vector representing the types of resources for which WebResourceRequested should fire. If filterLength is 0, the event will fire for all network requests. The supported resource contexts are: Document, Stylesheet, Image, Media, Font, Script, XHR, Fetch.
 
 ```cpp
-    if (m_blockImages)
-    {
-        // Register a handler for the WebResourceRequested event.
-        // This handler blocks all resources that are in an image context, such
-        // as <img> elements and CSS background-image properties.
-        PCWSTR matchAllUris[] = { L"*" };
-        WEBVIEW2_WEB_RESOURCE_CONTEXT imagesFilter[] = {
-            WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE };
-        CHECK_FAILURE(m_webView->add_WebResourceRequested(
-            matchAllUris, imagesFilter, 1,
-            Callback<IWebView2WebResourceRequestedEventHandler>(
-                [this](IWebView2WebView* sender,
-                       IWebView2WebResourceRequestedEventArgs* args)
+        if (m_blockImages)
         {
-            // Override the response with an empty one to block the image.
-            // If put_Response is not called, the request will continue as normal.
-            wil::com_ptr<IWebView2WebResourceResponse> response;
-            CHECK_FAILURE(m_webViewEnvironment->CreateWebResourceResponse(
-                nullptr, 200, L"OK", L"",
-                &response));
-            CHECK_FAILURE(args->put_Response(response.get()));
-            return S_OK;
-        }).Get(), &m_webResourceRequestedTokenForImageBlocking));
-    }
-    else
-    {
-        CHECK_FAILURE(m_webView->remove_WebResourceRequested(
-            m_webResourceRequestedTokenForImageBlocking));
-    }
+            // Register a handler for the WebResourceRequested event.
+            // This handler blocks all resources that are in an image context, such
+            // as <img> elements and CSS background-image properties.
+            PCWSTR matchAllUris[] = { L"*" };
+            WEBVIEW2_WEB_RESOURCE_CONTEXT imagesFilter[] = {
+                WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE };
+            CHECK_FAILURE(m_webView->add_WebResourceRequested(
+                matchAllUris, imagesFilter, 1,
+                Callback<IWebView2WebResourceRequestedEventHandler>(
+                    [this](IWebView2WebView* sender,
+                           IWebView2WebResourceRequestedEventArgs* args)
+            {
+                // Override the response with an empty one to block the image.
+                // If put_Response is not called, the request will continue as normal.
+                wil::com_ptr<IWebView2WebResourceResponse> response;
+                CHECK_FAILURE(m_webViewEnvironment->CreateWebResourceResponse(
+                    nullptr, 200, L"OK", L"",
+                    &response));
+                CHECK_FAILURE(args->put_Response(response.get()));
+                return S_OK;
+            }).Get(), &m_webResourceRequestedTokenForImageBlocking));
+        }
+        else
+        {
+            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
+                m_webResourceRequestedTokenForImageBlocking));
+        }
 ```
 
 #### remove_WebResourceRequested 
 
 Remove an event handler previously added with add_WebResourceRequested.
 
-> public HRESULT [remove_WebResourceRequested](#interface_i_web_view2_web_view_1aafcacea7a669055ad5f895cdfb5d8838)(EventRegistrationToken token)
+> public HRESULT [remove_WebResourceRequested](#remove_webresourcerequested)(EventRegistrationToken token)
 
 #### add_ScriptDialogOpening 
 
 Add an event handler for the ScriptDialogOpening event.
 
-> public HRESULT [add_ScriptDialogOpening](#interface_i_web_view2_web_view_1a09b052357bb9c498f21124b4113184e0)([IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#interface_i_web_view2_script_dialog_opening_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening)([IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#iwebview2scriptdialogopeningeventhandler) * eventHandler,EventRegistrationToken * token)
 
 The event fires when a JavaScript dialog (alert, confirm, or prompt) will show for the webview. This event only fires if the IWebView2Settings::AreDefaultScriptDialogsEnabled property is set to false.
 
 ```cpp
-    ComPtr<IWebView2Settings> settings;
-    RETURN_IF_FAILED(m_webview->get_Settings(&settings));
-    RETURN_IF_FAILED(settings->put_AreDefaultScriptDialogsEnabled(FALSE));
-```
-
-```cpp
-    RETURN_IF_FAILED(m_webview->add_ScriptDialogOpening(
-        Microsoft::WRL::Callback<IWebView2ScriptDialogOpeningEventHandler>(
-            this, &ScenarioScript::JavaScriptDialogOpeningEventHandler)
-        .Get(), &m_scriptDialogOpeningToken));
-```
-
-```cpp
-HRESULT ScenarioScript::JavaScriptDialogOpeningEventHandler(
-    IWebView2WebView* sender, IWebView2ScriptDialogOpeningEventArgs* args)
-{
-    WEBVIEW2_SCRIPT_DIALOG_KIND kind;
-    RETURN_IF_FAILED(args->get_Kind(&kind));
-
-    wil::unique_cotaskmem_string message;
-    RETURN_IF_FAILED(args->get_Message(&message));
-
-    if (kind == WEBVIEW2_SCRIPT_DIALOG_KIND_ALERT)
+    // Register a handler for the ScriptDialogOpening event.
+    // This handler will set up a custom prompt dialog for the user,
+    // and may defer the event if the setting to defer dialogs is enabled.
+    CHECK_FAILURE(m_webView->add_ScriptDialogOpening(
+        Callback<IWebView2ScriptDialogOpeningEventHandler>(
+            [this](
+                IWebView2WebView* sender,
+                IWebView2ScriptDialogOpeningEventArgs* args) -> HRESULT
     {
-        MessageBoxW(nullptr, message.get(), L"Alert", MB_OK);
-    }
-    else
-    {
-        wil::unique_cotaskmem_string promptText;
-        RETURN_IF_FAILED(args->get_DefaultText(&promptText));
-
-        TextInputDialog textInputDialog(nullptr, nullptr);
-
-        textInputDialog.SetUserInput(promptText.get());
-
-        const bool userSelectedOK =
-            (textInputDialog.Show(L"Message", promptText.get(), message.get()) == IDOK);
-
-        RETURN_IF_FAILED(args->put_ResultText(textInputDialog.GetUserInput()));
-        if (userSelectedOK)
+        wil::com_ptr<IWebView2ScriptDialogOpeningEventArgs> eventArgs = args;
+        auto showDialog = [this, eventArgs]
         {
-            RETURN_IF_FAILED(args->Accept());
+            wil::unique_cotaskmem_string uri;
+            WEBVIEW2_SCRIPT_DIALOG_KIND type;
+            wil::unique_cotaskmem_string message;
+            wil::unique_cotaskmem_string defaultText;
+
+            CHECK_FAILURE(eventArgs->get_Uri(&uri));
+            CHECK_FAILURE(eventArgs->get_Kind(&type));
+            CHECK_FAILURE(eventArgs->get_Message(&message));
+            CHECK_FAILURE(eventArgs->get_DefaultText(&defaultText));
+
+            TextInputDialog inputDialog(m_hInst, m_mainWindow);
+            std::wstring prompt = std::wstring(L"The page at '")
+                + uri.get() + L"' says:";
+            inputDialog.SetUserInput(defaultText.get());
+            inputDialog.SetReadOnly(type != WEBVIEW2_SCRIPT_DIALOG_KIND_PROMPT);
+
+            if (inputDialog.Show(L"Script Dialog", prompt.c_str(), message.get()) == IDOK)
+            {
+                CHECK_FAILURE(eventArgs->put_ResultText(inputDialog.GetUserInput()));
+                CHECK_FAILURE(eventArgs->Accept());
+            }
+        };
+
+        if (m_deferScriptDialogs)
+        {
+            wil::com_ptr<IWebView2Deferral> deferral;
+            CHECK_FAILURE(args->GetDeferral(&deferral));
+            m_completeDeferredDialog = [showDialog, deferral]
+            {
+                showDialog();
+                CHECK_FAILURE(deferral->Complete());
+            };
         }
-    }
-    return S_OK;
-}
+        else
+        {
+            showDialog();
+        }
+
+        return S_OK;
+    }).Get(), &m_scriptDialogOpeningToken));
 ```
 
 #### remove_ScriptDialogOpening 
 
 Remove an event handler previously added with add_ScriptDialogOpening.
 
-> public HRESULT [remove_ScriptDialogOpening](#interface_i_web_view2_web_view_1af1e7612ba89a977f7c700d0459fe05b1)(EventRegistrationToken token)
+> public HRESULT [remove_ScriptDialogOpening](#remove_scriptdialogopening)(EventRegistrationToken token)
 
 #### add_ZoomFactorChanged 
 
 Add an event handler for the ZoomFactorChanged event.
 
-> public HRESULT [add_ZoomFactorChanged](#interface_i_web_view2_web_view_1a62e83d8913e3eb899cade17cd17b206c)([IWebView2ZoomFactorChangedEventHandler](IWebView2ZoomFactorChangedEventHandler.md#interface_i_web_view2_zoom_factor_changed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ZoomFactorChanged](#add_zoomfactorchanged)([IWebView2ZoomFactorChangedEventHandler](IWebView2ZoomFactorChangedEventHandler.md#iwebview2zoomfactorchangedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 The event fires when the ZoomFactor property of the WebView changes. The event could fire because the caller modified the ZoomFactor property, or due to the user manually modifying the zoom. When it is modified by the caller via the ZoomFactor property, the internal zoom factor is updated immediately and there will be no ZoomFactorChanged event. WebView associates the last used zoom factor for each site. Therefore, it is possible for the zoom factor to change when navigating to a different page. When the zoom factor changes due to this, the ZoomFactorChanged event fires right after the DocumentStateChanged event.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_ZoomFactorChanged(
-        Microsoft::WRL::Callback<IWebView2ZoomFactorChangedEventHandler>(
-            this, &ScenarioUI::ZoomFactorChangedEventHandler)
-        .Get(), &m_zoomFactorChangedToken));
-```
+    // Register a handler for the ZoomFactorChanged event.
+    // This handler just announces the new level of zoom on the window's title bar.
+    CHECK_FAILURE(m_webView->add_ZoomFactorChanged(
+        Callback<IWebView2ZoomFactorChangedEventHandler>(
+            [this](IWebView2WebView* sender,
+                IUnknown* args) -> HRESULT
+    {
+        double zoomFactor;
+        CHECK_FAILURE(sender->get_ZoomFactor(&zoomFactor));
 
-```cpp
-HRESULT ScenarioUI::ZoomFactorChangedEventHandler(IWebView2WebView* sender, IUnknown* args)
-{
-    double zoomFactor = 0;
-    // The ZoomFactorChanged event has no event args because the ZoomFactor is a
-    // property you can obtain off of the webview.
-    RETURN_IF_FAILED(m_webview->get_ZoomFactor(&zoomFactor));
-
-    double zoomPercent = zoomFactor * 100;
-    std::wstring zoomPercentText =
-        std::to_wstring(static_cast<int>(zoomPercent));
-    RETURN_IF_FAILED(UpdateZoomFactorUI(zoomPercentText.c_str()));
-
-    return S_OK;
-}
+        std::wstring message = L"WebViewSampleApp (Zoom: "
+                             + std::to_wstring(int(zoomFactor * 100))
+                             + L"%)";
+        SetWindowText(m_mainWindow, message.c_str());
+        return S_OK;
+    }).Get(), &m_zoomFactorChangedToken));
 ```
 
 #### remove_ZoomFactorChanged 
 
 Remove an event handler previously added with add_ZoomFactorChanged.
 
-> public HRESULT [remove_ZoomFactorChanged](#interface_i_web_view2_web_view_1aea548ed385ec6da89a45acec9257d003)(EventRegistrationToken token)
+> public HRESULT [remove_ZoomFactorChanged](#remove_zoomfactorchanged)(EventRegistrationToken token)
 
 #### add_PermissionRequested 
 
 Add an event handler for the PermissionRequested event.
 
-> public HRESULT [add_PermissionRequested](#interface_i_web_view2_web_view_1a56d5be170335da55302e94dc4f98dd3f)([IWebView2PermissionRequestedEventHandler](IWebView2PermissionRequestedEventHandler.md#interface_i_web_view2_permission_requested_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_PermissionRequested](#add_permissionrequested)([IWebView2PermissionRequestedEventHandler](IWebView2PermissionRequestedEventHandler.md#iwebview2permissionrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 Fires when content in a WebView requests permission to access some privileged resources.
 
@@ -787,190 +781,89 @@ Fires when content in a WebView requests permission to access some privileged re
 
 Remove an event handler previously added with add_PermissionRequested.
 
-> public HRESULT [remove_PermissionRequested](#interface_i_web_view2_web_view_1a49c139ce73d56b74a44046a2a94df455)(EventRegistrationToken token)
+> public HRESULT [remove_PermissionRequested](#remove_permissionrequested)(EventRegistrationToken token)
 
 #### add_ProcessFailed 
 
 Add an event handler for the ProcessFailed event.
 
-> public HRESULT [add_ProcessFailed](#interface_i_web_view2_web_view_1ae368d9f3f5ea52af860808df53de21aa)([IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#interface_i_web_view2_process_failed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ProcessFailed](#add_processfailed)([IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#iwebview2processfailedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 Fires when a WebView process terminated unexpectedly or become unresponsive.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_ProcessFailed(
-        Microsoft::WRL::Callback<IWebView2ProcessFailedEventHandler>(
-            this, &ScenarioProcess::ProcessFailedEventHandler)
-        .Get(),
-        &m_processFailedToken));
-```
-
-```cpp
-HRESULT ScenarioProcess::ProcessFailedEventHandler(
-    IWebView2WebView* sender,
-    IWebView2ProcessFailedEventArgs* args)
-{
-    WEBVIEW2_PROCESS_FAILED_KIND kind;
-
-    RETURN_IF_FAILED(args->get_ProcessFailedKind(&kind));
-    // When the browser process crashes the WebView is put into a closed state.
-      // You need to create a new WebView to begin to recover.
-    bool newWebViewNeeded =
-        (kind == WEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED);
-
-    if (newWebViewNeeded)
+    // Register a handler for the ProcessFailed event.
+    // This handler checks if the browser process failed, and asks the user if
+    // they want to recreate the webview.
+    CHECK_FAILURE(m_webView->add_ProcessFailed(
+        Callback<IWebView2ProcessFailedEventHandler>(
+            [this](IWebView2WebView* sender,
+                IWebView2ProcessFailedEventArgs* args) -> HRESULT
     {
-        // All methods except for the Settings and Source getters will fail for
-        // this now closed WebView. So we keep a reference to the closed WebView
-        // to transfer its state to the new WebView we will create.
-        m_previousWebView = m_webview;
-        m_webview = nullptr;
-
-        Microsoft::WRL::ComPtr<IWebView2Environment> webviewEnvironment;
-
-        // Use CreateWebView2Environment to create a default WebView environment
-        // using installed version of Edge
-        RETURN_IF_FAILED(CreateWebView2Environment(
-            Microsoft::WRL::Callback<
-            IWebView2CreateWebView2EnvironmentCompletedHandler>(
-                [this](HRESULT result,
-                    IWebView2Environment* webviewEnvironment) -> HRESULT
+        WEBVIEW2_PROCESS_FAILED_KIND failureType;
+        CHECK_FAILURE(args->get_ProcessFailedKind(&failureType));
+        if (failureType == WEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED)
         {
-            RETURN_IF_FAILED(result);
-            RETURN_IF_FAILED(webviewEnvironment->CreateWebView(
-                m_hwnd,
-                Microsoft::WRL::Callback<
-                IWebView2CreateWebViewCompletedHandler>(
-                    this, &ScenarioProcess::CreateWebViewCompletedHandler)
-                .Get()));
-            return S_OK;
-        })
-            .Get()));
-
-    }
-    else
-    {
-        // If the render process is unresponsive we can Reload the page in it to
-        // attempt recovery. If the render process crashes we get a new render
-        // process navigated to an error page and we can Reload to go back to the
-        // previous page.
-        RETURN_IF_FAILED(m_webview->Reload());
-    }
-
-    return S_OK;
-}
-
-HRESULT ScenarioProcess::CreateWebViewCompletedHandler(
-    HRESULT error,
-    IWebView2WebView* webview)
-{
-    ComPtr<IWebView2Settings> previousSettings;
-    ComPtr<IWebView2Settings> settings;
-    BOOL value = FALSE;
-
-    RETURN_IF_FAILED(error);
-
-    m_webview = webview;
-
-    // The previous WebView is closed. All methods will fail except for the
-    // getters for the Settings object and the Source string. Get these values and
-    // transfer them to the newly created WebView.
-    RETURN_IF_FAILED(m_previousWebView->get_Settings(&previousSettings));
-    RETURN_IF_FAILED(m_webview->get_Settings(&settings));
-
-    RETURN_IF_FAILED(previousSettings->get_AreDefaultScriptDialogsEnabled(&value));
-    RETURN_IF_FAILED(settings->put_AreDefaultScriptDialogsEnabled(value));
-
-    RETURN_IF_FAILED(previousSettings->get_IsFullscreenAllowed(&value));
-    RETURN_IF_FAILED(settings->put_IsFullscreenAllowed(value));
-
-    RETURN_IF_FAILED(previousSettings->get_IsScriptEnabled(&value));
-    RETURN_IF_FAILED(settings->put_IsScriptEnabled(value));
-
-    RETURN_IF_FAILED(previousSettings->get_IsWebMessageEnabled(&value));
-    RETURN_IF_FAILED(settings->put_IsWebMessageEnabled(value));
-
-    RETURN_IF_FAILED(m_webview->add_ProcessFailed(
-        Microsoft::WRL::Callback<IWebView2ProcessFailedEventHandler>(
-            this, &ScenarioProcess::ProcessFailedEventHandler).Get(),
-        &m_processFailedToken));
-
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(m_previousWebView->get_Source(&uri));
-    const bool uriFailedAgain =
-        m_lastNavigateUri.length() > 0 && wcscmp(uri.get(), m_lastNavigateUri.c_str()) == 0;
-
-    if (uriFailedAgain && m_retryCount > 2)
-    {
-        m_lastNavigateUri = L"";
-        m_retryCount = 0;
-        RETURN_IF_FAILED(m_webview->NavigateToString(L"<h1>Process Failure</h1>"));
-    }
-    else
-    {
-        if (uriFailedAgain)
-        {
-            m_retryCount++;
+            int button = MessageBox(
+                nullptr,
+                L"Browser process exited unexpectedly.  Recreate webview?",
+                L"Browser process exited",
+                MB_YESNO);
+            if (button == IDYES)
+            {
+                ReinitializeWebView();
+            }
         }
-
-        m_lastNavigateUri = uri.get();
-        RETURN_IF_FAILED(m_webview->Navigate(uri.get()));
-    }
-
-    return S_OK;
-}
+        return S_OK;
+    }).Get(), &m_processFailedToken));
 ```
 
 #### remove_ProcessFailed 
 
 Remove an event handler previously added with add_ProcessFailed.
 
-> public HRESULT [remove_ProcessFailed](#interface_i_web_view2_web_view_1a4426b79e7d5373db1253e04b09765a8f)(EventRegistrationToken token)
+> public HRESULT [remove_ProcessFailed](#remove_processfailed)(EventRegistrationToken token)
 
 #### AddScriptToExecuteOnDocumentCreated 
 
 Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
 
-> public HRESULT [AddScriptToExecuteOnDocumentCreated](#interface_i_web_view2_web_view_1a1a103e2a19f6cf5fb31e2e99f2dda652)(LPCWSTR javaScript,[IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md#interface_i_web_view2_add_script_to_execute_on_document_created_completed_handler) * handler)
+> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript,[IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md#iwebview2addscripttoexecuteondocumentcreatedcompletedhandler) * handler)
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
 ```cpp
-    // In this sample we want to stop child frames from using window.open.
-    // Because the initialize JavaScript runs before any script in the HTML
-    // document we can trust the results of our checks on window.parent and
-    // window.top.
-    static const PCWSTR initializeJavaScript =
-        L"if (window.parent !== window.top) {"
-        L"  delete window.open;"
-        L"}";
-
-    RETURN_IF_FAILED(m_webview->AddScriptToExecuteOnDocumentCreated(
-        initializeJavaScript,
-        Microsoft::WRL::Callback<IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler>(
-            this, &ScenarioScript::AddScriptToExecuteOnDocumentCreatedCompletedHandler).Get()));
-
-    RETURN_IF_FAILED(m_webview->Navigate(L"https://example.com/"));
-
-    return S_OK;
-}
-
-HRESULT ScenarioScript::AddScriptToExecuteOnDocumentCreatedCompletedHandler(HRESULT error,
-                                                                LPCWSTR id)
+// Prompt the user for some script and register it to execute whenever a new page loads.
+void AppWindow::AddInitializeScript()
 {
-    RETURN_IF_FAILED(error);
-    m_id = id;  // Store the ID so we can remove it later.
+    TextInputDialog inputDialog(m_hInst, m_mainWindow);
+    PCWSTR title = L"Add Initialize Script";
+    PCWSTR prompt = L"Script:";
+    PCWSTR description =
+        L"Enter the JavaScript code to run as the initialization script.";
+     // This example script stops child frames from opening new windows.  Because
+     // the initialization script runs before any script in the HTML document, we can
+     // trust the results of our checks on window.parent and window.top.
+    inputDialog.SetUserInput(
+        L"if (window.parent !== window.top) {\r\n"
+        L"    delete window.open;\r\n"
+        L"}");
 
-    return S_OK;
-}
-
-HRESULT ScenarioScript::Close()
-{
-    if (m_id.length() > 0)
+    if (inputDialog.Show(title, prompt, description) == IDOK)
     {
-        RETURN_IF_FAILED(m_webview->RemoveScriptToExecuteOnDocumentCreated(m_id.c_str()));
+        PCWSTR script = inputDialog.GetUserInput();
+
+        m_webView->AddScriptToExecuteOnDocumentCreated(
+            script,
+            Callback<IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler>(
+                [this](HRESULT error, PCWSTR id) -> HRESULT
+        {
+            m_lastInitializeScriptId = id;
+            MessageBox(nullptr, id, L"AddScriptToExecuteOnDocumentCreated Id", MB_OK);
+            return S_OK;
+        }).Get());
+
     }
-    return S_OK;
 }
 ```
 
@@ -978,35 +871,42 @@ HRESULT ScenarioScript::Close()
 
 Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
 
-> public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#interface_i_web_view2_web_view_1a5f05f00c324ad3a1b773039ca7941d9b)(LPCWSTR id)
+> public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(LPCWSTR id)
 
 #### ExecuteScript 
 
 Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
 
-> public HRESULT [ExecuteScript](#interface_i_web_view2_web_view_1a815441aceb1588264e801761085de322)(LPCWSTR javaScript,[IWebView2ExecuteScriptCompletedHandler](IWebView2ExecuteScriptCompletedHandler.md#interface_i_web_view2_execute_script_completed_handler) * handler)
+> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript,[IWebView2ExecuteScriptCompletedHandler](IWebView2ExecuteScriptCompletedHandler.md#iwebview2executescriptcompletedhandler) * handler)
 
-This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the call is made while the webview is on one document, and a navigation occurs after the call is made but before the JavaScript is executed, then the script will not be executed and the handler will be called with E_FAIL for its errorCode parameter. If JavaScript is disabled for the current document, then the handler will also be called with E_FAIL.
+This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the call is made while the webview is on one document, and a navigation occurs after the call is made but before the JavaScript is executed, then the script will not be executed and the handler will be called with E_FAIL for its errorCode parameter. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
 
 ```cpp
-HRESULT ScenarioScript::NavigationCompletedEventHandler(
-    IWebView2WebView* sender, IWebView2NavigationCompletedEventArgs* args)
+// Prompt the user for some script and then execute it.
+void AppWindow::InjectScript()
 {
-    static const PCWSTR scriptToEval =
-        L"window.getComputedStyle(document.body).backgroundColor";
-    RETURN_IF_FAILED(m_webview->ExecuteScript(
-        scriptToEval,
-        Microsoft::WRL::Callback<IWebView2ExecuteScriptCompletedHandler>(
-            [](HRESULT error, PCWSTR result) -> HRESULT
+    TextInputDialog inputDialog(m_hInst, m_mainWindow);
+    PCWSTR title = L"Inject Script";
+    PCWSTR prompt = L"Enter script code:";
+    PCWSTR description = L"Enter the JavaScript code to run in the webview.";
+    inputDialog.SetUserInput(
+        L"window.getComputedStyle(document.body).backgroundColor");
+
+    if (inputDialog.Show(title, prompt, description) == IDOK)
     {
-        HRESULT hr = S_OK;
-        UpdateBackgroundColor(result);
+        PCWSTR script = inputDialog.GetUserInput();
 
-        return hr;
-    })
-        .Get()));
-
-    return S_OK;
+        m_webView->ExecuteScript(script,
+            Callback<IWebView2ExecuteScriptCompletedHandler>(
+                [](HRESULT error, PCWSTR result) -> HRESULT
+        {
+            if (error != S_OK) {
+                ShowFailure(error, L"ExecuteScript failed");
+            }
+            MessageBox(nullptr, result, L"ExecuteScript Result", MB_OK);
+            return S_OK;
+        }).Get());
+    }
 }
 ```
 
@@ -1014,7 +914,7 @@ HRESULT ScenarioScript::NavigationCompletedEventHandler(
 
 Capture an image of what WebView is displaying.
 
-> public HRESULT [CapturePreview](#interface_i_web_view2_web_view_1a1d04f117ee7a3f8828bdaad7eecc6668)([WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#interface_i_web_view2_web_view_1a10b47cc3a871007318b235771b8d1f9c) imageFormat,IStream * imageStream,[IWebView2CapturePreviewCompletedHandler](IWebView2CapturePreviewCompletedHandler.md#interface_i_web_view2_capture_preview_completed_handler) * handler)
+> public HRESULT [CapturePreview](#capturepreview)([WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#webview2_capture_preview_image_format) imageFormat,IStream * imageStream,[IWebView2CapturePreviewCompletedHandler](IWebView2CapturePreviewCompletedHandler.md#iwebview2capturepreviewcompletedhandler) * handler)
 
 Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
 
@@ -1064,7 +964,7 @@ void AppWindow::SaveScreenshot()
 
 Reload the current page.
 
-> public HRESULT [Reload](#interface_i_web_view2_web_view_1af12695d21d3d16fb6593424411b89c3c)()
+> public HRESULT [Reload](#reload)()
 
 This is similar to navigating to the URI of current top level document including all navigation events firing and respecting any entries in the HTTP cache. But, the back/forward history will not be modified.
 
@@ -1072,7 +972,7 @@ This is similar to navigating to the URI of current top level document including
 
 The webview bounds.
 
-> public HRESULT [get_Bounds](#interface_i_web_view2_web_view_1a18657afad7fd4f184854d90a89986ce8)(RECT * bounds)
+> public HRESULT [get_Bounds](#get_bounds)(RECT * bounds)
 
 Bounds are relative to the parent HWND. The app has two ways it can position a WebView:
 
@@ -1084,20 +984,18 @@ Bounds are relative to the parent HWND. The app has two ways it can position a W
 
 Set the Bounds property.
 
-> public HRESULT [put_Bounds](#interface_i_web_view2_web_view_1abdd3b3f3f40ec9b5fb40550674dec528)(RECT bounds)
+> public HRESULT [put_Bounds](#put_bounds)(RECT bounds)
 
 ```cpp
 // Update the bounds of the WebView window to fit available space.
-void AppWindow::ResizeWebView()
+void WebViewContainer::ResizeWebView()
 {
-    RECT currentBounds;
-    GetClientRect(m_hostWindow, &currentBounds);
-    RECT desiredBounds = currentBounds;
-    if (m_webViewRatio < 1)
-    {
-        desiredBounds = { 0, 0, (long)(currentBounds.right * m_webViewRatio),
-                          (long)(currentBounds.bottom * m_webViewRatio) };
-    }
+    RECT desiredBounds = m_webViewBounds;
+    desiredBounds.bottom =
+        (m_webViewBounds.bottom - m_webViewBounds.top) * m_webViewRatio + m_webViewBounds.top;
+    desiredBounds.right =
+        (m_webViewBounds.right - m_webViewBounds.left) * m_webViewRatio + m_webViewBounds.left;
+
     m_webView->put_Bounds(desiredBounds);
 }
 ```
@@ -1106,64 +1004,31 @@ void AppWindow::ResizeWebView()
 
 The zoom factor for the current page in the WebView.
 
-> public HRESULT [get_ZoomFactor](#interface_i_web_view2_web_view_1a7da9d85461e2908a8fe2042ba982ee32)(double * zoomFactor)
+> public HRESULT [get_ZoomFactor](#get_zoomfactor)(double * zoomFactor)
 
 The zoom factor is persisted per site. Note that changing zoom factor could cause `window.innerWidth/innerHeight` and page layout to change. When WebView navigates to a page from a different site, the zoom factor set for the previous page will not be applied. If the app wants to set the zoom factor for a certain page, the earliest place to do it is in the DocumentStateChanged event handler. Note that if it does that, it might receive a ZoomFactorChanged event for the persisted zoom factor before receiving the ZoomFactorChanged event for the specified zoom factor. Specifying a zoomFactor less than or equal to 0 is not allowed. WebView also has an internal supported zoom factor range. When a specified zoom factor is out of that range, it will be normalized to be within the range, and a ZoomFactorChanged event will be fired for the real applied zoom factor. When this range normalization happens, the ZoomFactor property will report the zoom factor specified during the previous modification of the ZoomFactor property until the ZoomFactorChanged event is received after webview applies the normalized zoom factor.
-
-```cpp
-HRESULT ScenarioUI::ResetZoomFactor()
-{
-    // ZoomFactor is a scale value. So, 1 means no change in zoom.
-    RETURN_IF_FAILED(m_webview->put_ZoomFactor(1.0));
-    return S_OK;
-}
-
-HRESULT ScenarioUI::IncreaseZoomFactor()
-{
-    double zoomFactor = 0.0;
-    RETURN_IF_FAILED(m_webview->get_ZoomFactor(&zoomFactor));
-    if (zoomFactor < 5.0)
-    {
-        RETURN_IF_FAILED(m_webview->put_ZoomFactor(zoomFactor + 0.1));
-    }
-    return S_OK;
-}
-
-HRESULT ScenarioUI::DecreaseZoomFactor()
-{
-    double zoomFactor = 0.0;
-    RETURN_IF_FAILED(m_webview->get_ZoomFactor(&zoomFactor));
-    if (zoomFactor > 0.1)
-    {
-        RETURN_IF_FAILED(m_webview->put_ZoomFactor(zoomFactor - 0.1));
-    }
-
-    return S_OK;
-}
-```
 
 #### put_ZoomFactor 
 
 Set the ZoomFactor property.
 
-> public HRESULT [put_ZoomFactor](#interface_i_web_view2_web_view_1a51a93b00b7c94c5c1d9e2a37b9ef6df3)(double zoomFactor)
+> public HRESULT [put_ZoomFactor](#put_zoomfactor)(double zoomFactor)
 
 #### get_IsVisible 
 
 The IsVisible property determines whether to show or hide the webview.
 
-> public HRESULT [get_IsVisible](#interface_i_web_view2_web_view_1a828193b6c1d597f1a589afc54c49bd3a)(BOOL * isVisible)
+> public HRESULT [get_IsVisible](#get_isvisible)(BOOL * isVisible)
 
 If IsVisible is set to false, the webview will be transparent and will not be rendered. However, this will not affect the window containing the webview (the HWND parameter that was passed to CreateWebView). If you want that window to disappear too, call ShowWindow on it directly in addition to modifying the IsVisible property. WebView as a child window won't get window messages when the top window is minimized or restored. For performance reason, developer should set IsVisible property of the WebView to false when the app window is minimized and back to true when app window is restored. App window can do this by handling SC_MINIMIZE and SC_RESTORE command upon receiving WM_SYSCOMMAND message.
 
 ```cpp
-void AppWindow::ToggleVisibility()
+void WebViewContainer::ToggleVisibility()
 {
     BOOL visible;
     m_webView->get_IsVisible(&visible);
     m_isVisible = !visible;
     m_webView->put_IsVisible(m_isVisible);
-    ShowWindow(m_hostWindow, m_isVisible ? SW_SHOWNA : SW_HIDE);
 }
 ```
 
@@ -1171,30 +1036,34 @@ void AppWindow::ToggleVisibility()
 
 Set the IsVisible property.
 
-> public HRESULT [put_IsVisible](#interface_i_web_view2_web_view_1a7fd9470d593cdd63b3cf46066f5b5bcc)(BOOL isVisible)
+> public HRESULT [put_IsVisible](#put_isvisible)(BOOL isVisible)
 
 ```cpp
-    case WM_SYSCOMMAND:
+void WebViewContainer::AppMinimized()
+{
+    // Hide the webview when the app window is minimized.
+    if (m_webView)
     {
-        if (!m_webView) break;
-        // Hide the webview when the app window is minimized, and show it when the app
-        // window is restored (unless the user has toggled visiblity off).
-        if (wParam == SC_MINIMIZE)
-        {
-            m_webView->put_IsVisible(FALSE);
-        }
-        else if (wParam == SC_RESTORE && m_isVisible)
-        {
-            m_webView->put_IsVisible(TRUE);
-        }
-    } break;
+        m_webView->put_IsVisible(FALSE);
+    }
+}
+
+void WebViewContainer::AppRestored()
+{
+    // When the app window is restored, show the webview
+    // (unless the user has toggle visibility off).
+    if (m_webView && m_isVisible)
+    {
+        m_webView->put_IsVisible(TRUE);
+    }
+}
 ```
 
 #### PostWebMessageAsJson 
 
-Post the specified webMessage to the top level document in this [IWebView2WebView](#interface_i_web_view2_web_view).
+Post the specified webMessage to the top level document in this [IWebView2WebView](#iwebview2webview).
 
-> public HRESULT [PostWebMessageAsJson](#interface_i_web_view2_web_view_1aa89c9b6074f9b0d70fe20d963c4cb15e)(LPCWSTR webMessageAsJson)
+> public HRESULT [PostWebMessageAsJson](#postwebmessageasjson)(LPCWSTR webMessageAsJson)
 
 The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following: 
 ```cpp
@@ -1204,39 +1073,48 @@ window.chrome.webview.removeEventListener('message', handler)
  The event args is an instance of `MessageEvent`. The IWebView2Settings::IsWebMessageEnabled setting must be true or this method will fail with E_INVALIDARG. The event arg's data property is the webMessage string parameter parsed as a JSON string into a JavaScript object. The event arg's source property is a reference to the `window.chrome.webview` object. See SetWebMessageReceivedEventHandler for information on sending messages from the HTML document in the webview to the host. This message is sent asynchronously. If a navigation occurs before the message is posted to the page, then the message will not be sent.
 
 ```cpp
-HRESULT ScenarioWebMessage::WebMessageReceivedEventHandler(
-    IWebView2WebView* sender, IWebView2WebMessageReceivedEventArgs* args)
-{
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(args->get_Source(&uri));
-
-    // Always validate the origin of the message is what you expect.
-    if (IsExpectedUri(uri.get()))
+    // Setup the web message received event handler before navigating to
+    // ensure we don't miss any messages.
+    CHECK_FAILURE(m_webview->add_WebMessageReceived(
+        Microsoft::WRL::Callback<IWebView2WebMessageReceivedEventHandler>(
+            [this](IWebView2WebView* sender, IWebView2WebMessageReceivedEventArgs* args)
     {
-        wil::unique_cotaskmem_string webMessageAsJson;
-        // WebMessageAsJson gives the message as a JSON object serialized string
-        // and so must be parsed with a JSON parser.
-        RETURN_IF_FAILED(args->get_WebMessageAsJson(&webMessageAsJson));
+        wil::unique_cotaskmem_string uri;
+        CHECK_FAILURE(args->get_Source(&uri));
 
-        HString dataFromMessage = GetDataFromScenarioMessage(webMessageAsJson.get());
-        DWORD countFromMessage = GetCountFromScenarioMessage(webMessageAsJson.get());
+        // Always validate that the origin of the message is what you expect.
+        if (uri.get() != m_sampleUri)
+        {
+            return S_OK;
+        }
+        wil::unique_cotaskmem_string messageRaw;
+        CHECK_FAILURE(args->get_WebMessageAsString(&messageRaw));
+        std::wstring message = messageRaw.get();
 
-        HString responseMessageJson = CreateScenarioDataMessage(
-            dataFromMessage.GetRawBuffer(nullptr), countFromMessage + 1);
-
-        RETURN_IF_FAILED(m_webview->PostWebMessageAsJson(
-            responseMessageJson.GetRawBuffer(nullptr)));
-    }
-
-    return S_OK;
-}
+        if (message.compare(0, 13, L"SetTitleText ") == 0)
+        {
+            m_appWindow->SetTitleText(message.substr(13).c_str());
+        }
+        else if (message.compare(L"GetWindowBounds") == 0)
+        {
+            RECT bounds = m_appWindow->GetWindowBounds();
+            std::wstring reply =
+                L"{\"WindowBounds\":\"Left:" + std::to_wstring(bounds.left)
+                + L"\\nTop:" + std::to_wstring(bounds.top)
+                + L"\\nRight:" + std::to_wstring(bounds.right)
+                + L"\\nBottom:" + std::to_wstring(bounds.bottom)
+                + L"\"}";
+            CHECK_FAILURE(sender->PostWebMessageAsJson(reply.c_str()));
+        }
+        return S_OK;
+    }).Get(), &m_webMessageReceivedToken));
 ```
 
 #### PostWebMessageAsString 
 
 This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
 
-> public HRESULT [PostWebMessageAsString](#interface_i_web_view2_web_view_1a6b45a3bf0135e9a32014f759bdeef7cb)(LPCWSTR webMessageAsString)
+> public HRESULT [PostWebMessageAsString](#postwebmessageasstring)(LPCWSTR webMessageAsString)
 
 This behaves in exactly the same manner as PostWebMessageAsJson but the `window.chrome.webview` message event arg's data property will be a string with the same value as webMessageAsString. Use this instead of PostWebMessageAsJson if you want to communicate via simple strings rather than JSON objects.
 
@@ -1244,158 +1122,134 @@ This behaves in exactly the same manner as PostWebMessageAsJson but the `window.
 
 This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 
-> public HRESULT [add_WebMessageReceived](#interface_i_web_view2_web_view_1ab141e100936bb17a246f4c0af2ebc125)([IWebView2WebMessageReceivedEventHandler](IWebView2WebMessageReceivedEventHandler.md#interface_i_web_view2_web_message_received_event_handler) * handler,EventRegistrationToken * token)
+> public HRESULT [add_WebMessageReceived](#add_webmessagereceived)([IWebView2WebMessageReceivedEventHandler](IWebView2WebMessageReceivedEventHandler.md#iwebview2webmessagereceivedeventhandler) * handler,EventRegistrationToken * token)
 
 The postMessage function is `void postMessage(object)` where object is any object supported by JSON conversion.
 
 ```cpp
         window.chrome.webview.addEventListener('message', arg => {
-            if (arg.data.count < 2) {
-                arg.source.postMessage({
-                    data: arg.data.data,
-                    count: arg.data.count + 1
-                });
+            if ("SetColor" in arg.data) {
+                document.getElementById("colorable").style.color = arg.data.SetColor;
+            }
+            if ("WindowBounds" in arg.data) {
+                document.getElementById("window-bounds").value = arg.data.WindowBounds;
             }
         });
-        window.chrome.webview.postMessage({ data: "hello", count: 0 });
-```
- When postMessage is called, the [IWebView2WebMessageReceivedEventHandler](IWebView2WebMessageReceivedEventHandler.md#interface_i_web_view2_web_message_received_event_handler) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
 
-Call add_WebMessageReceived to add an event handler.
+        function SetTitleText() {
+            let titleText = document.getElementById("title-text");
+            window.chrome.webview.postMessage(`SetTitleText ${titleText.value}`);
+        }
+        function GetWindowBounds() {
+            window.chrome.webview.postMessage("GetWindowBounds");
+        }
+```
+ When postMessage is called, the [IWebView2WebMessageReceivedEventHandler](IWebView2WebMessageReceivedEventHandler.md#iwebview2webmessagereceivedeventhandler) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
 
 ```cpp
     // Setup the web message received event handler before navigating to
     // ensure we don't miss any messages.
-    RETURN_IF_FAILED(m_webview->add_WebMessageReceived(
+    CHECK_FAILURE(m_webview->add_WebMessageReceived(
         Microsoft::WRL::Callback<IWebView2WebMessageReceivedEventHandler>(
-            this, &::ScenarioWebMessage::WebMessageReceivedEventHandler)
-        .Get(), &m_webMessageReceivedToken));
-```
- The event handler receives the event args object for the event.
-
-```cpp
-HRESULT ScenarioWebMessage::WebMessageReceivedEventHandler(
-    IWebView2WebView* sender, IWebView2WebMessageReceivedEventArgs* args)
-{
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(args->get_Source(&uri));
-
-    // Always validate the origin of the message is what you expect.
-    if (IsExpectedUri(uri.get()))
+            [this](IWebView2WebView* sender, IWebView2WebMessageReceivedEventArgs* args)
     {
-        wil::unique_cotaskmem_string webMessageAsJson;
-        // WebMessageAsJson gives the message as a JSON object serialized string
-        // and so must be parsed with a JSON parser.
-        RETURN_IF_FAILED(args->get_WebMessageAsJson(&webMessageAsJson));
+        wil::unique_cotaskmem_string uri;
+        CHECK_FAILURE(args->get_Source(&uri));
 
-        HString dataFromMessage = GetDataFromScenarioMessage(webMessageAsJson.get());
-        DWORD countFromMessage = GetCountFromScenarioMessage(webMessageAsJson.get());
+        // Always validate that the origin of the message is what you expect.
+        if (uri.get() != m_sampleUri)
+        {
+            return S_OK;
+        }
+        wil::unique_cotaskmem_string messageRaw;
+        CHECK_FAILURE(args->get_WebMessageAsString(&messageRaw));
+        std::wstring message = messageRaw.get();
 
-        HString responseMessageJson = CreateScenarioDataMessage(
-            dataFromMessage.GetRawBuffer(nullptr), countFromMessage + 1);
-
-        RETURN_IF_FAILED(m_webview->PostWebMessageAsJson(
-            responseMessageJson.GetRawBuffer(nullptr)));
-    }
-
-    return S_OK;
-}
+        if (message.compare(0, 13, L"SetTitleText ") == 0)
+        {
+            m_appWindow->SetTitleText(message.substr(13).c_str());
+        }
+        else if (message.compare(L"GetWindowBounds") == 0)
+        {
+            RECT bounds = m_appWindow->GetWindowBounds();
+            std::wstring reply =
+                L"{\"WindowBounds\":\"Left:" + std::to_wstring(bounds.left)
+                + L"\\nTop:" + std::to_wstring(bounds.top)
+                + L"\\nRight:" + std::to_wstring(bounds.right)
+                + L"\\nBottom:" + std::to_wstring(bounds.bottom)
+                + L"\"}";
+            CHECK_FAILURE(sender->PostWebMessageAsJson(reply.c_str()));
+        }
+        return S_OK;
+    }).Get(), &m_webMessageReceivedToken));
 ```
 
 #### remove_WebMessageReceived 
 
 Remove an event handler previously added with add_WebMessageReceived.
 
-> public HRESULT [remove_WebMessageReceived](#interface_i_web_view2_web_view_1aa88405e6ca157207ea1ad67eb90d477b)(EventRegistrationToken token)
+> public HRESULT [remove_WebMessageReceived](#remove_webmessagereceived)(EventRegistrationToken token)
 
 #### Close 
 
 Closes the webview and cleans up the underlying browser instance.
 
-> public HRESULT [Close](#interface_i_web_view2_web_view_1ab89c2d6cf7e33606791af1907d34c9d6)()
+> public HRESULT [Close](#close)()
 
 Cleaning up the browser instace will release the resources powering the webview. The browser instance will be shut down if there are no other webviews using it.
 
 After calling Close, all method calls will fail and event handlers will stop firing.
 
 ```cpp
-    WEBVIEW2_PROCESS_FAILED_KIND kind;
-
-    RETURN_IF_FAILED(args->get_ProcessFailedKind(&kind));
-    // When the browser process crashes the WebView is put into a closed state.
-      // You need to create a new WebView to begin to recover.
-    bool newWebViewNeeded =
-        (kind == WEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED);
-
-    if (newWebViewNeeded)
-    {
-        // All methods except for the Settings and Source getters will fail for
-        // this now closed WebView. So we keep a reference to the closed WebView
-        // to transfer its state to the new WebView we will create.
-        m_previousWebView = m_webview;
-        m_webview = nullptr;
-
-        Microsoft::WRL::ComPtr<IWebView2Environment> webviewEnvironment;
-
-        // Use CreateWebView2Environment to create a default WebView environment
-        // using installed version of Edge
-        RETURN_IF_FAILED(CreateWebView2Environment(
-            Microsoft::WRL::Callback<
-            IWebView2CreateWebView2EnvironmentCompletedHandler>(
-                [this](HRESULT result,
-                    IWebView2Environment* webviewEnvironment) -> HRESULT
-        {
-            RETURN_IF_FAILED(result);
-            RETURN_IF_FAILED(webviewEnvironment->CreateWebView(
-                m_hwnd,
-                Microsoft::WRL::Callback<
-                IWebView2CreateWebViewCompletedHandler>(
-                    this, &ScenarioProcess::CreateWebViewCompletedHandler)
-                .Get()));
-            return S_OK;
-        })
-            .Get()));
-
-    }
-    else
-    {
-        // If the render process is unresponsive we can Reload the page in it to
-        // attempt recovery. If the render process crashes we get a new render
-        // process navigated to an error page and we can Reload to go back to the
-        // previous page.
-        RETURN_IF_FAILED(m_webview->Reload());
-    }
+// Close the WebView and deinitialize related state.  This doesn't close the app window.
+void AppWindow::CloseWebView()
+{
+    m_activeScenarios.clear();
+    m_webViewContainer.SetWebView(nullptr);
+    m_webView->Close();
+    m_webView = nullptr;
+    m_webViewEnvironment = nullptr;
+}
 ```
 
 #### CallDevToolsProtocolMethod 
 
 Call an asynchronous DevToolsProtocol method.
 
-> public HRESULT [CallDevToolsProtocolMethod](#interface_i_web_view2_web_view_1a2f423dcdc6d712f18fbebaad47dad4ca)(LPCWSTR methodName,LPCWSTR parametersAsJson,[IWebView2CallDevToolsProtocolMethodCompletedHandler](IWebView2CallDevToolsProtocolMethodCompletedHandler.md#interface_i_web_view2_call_dev_tools_protocol_method_completed_handler) * handler)
+> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName,LPCWSTR parametersAsJson,[IWebView2CallDevToolsProtocolMethodCompletedHandler](IWebView2CallDevToolsProtocolMethodCompletedHandler.md#iwebview2calldevtoolsprotocolmethodcompletedhandler) * handler)
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->CallDevToolsProtocolMethod(
-        L"Log.enable", L"{}",
-        Microsoft::WRL::Callback<IWebView2CallDevToolsProtocolMethodCompletedHandler>(
-            this, &ScenarioDevToolsProtocol::DevToolsProtocolMethodCompleted)
-        .Get()));
-```
-
-```cpp
-HRESULT ScenarioDevToolsProtocol::DevToolsProtocolMethodCompleted(
-    HRESULT error,
-    PCWSTR result)
+// Prompt the user for the name and parameters of a CDP method, then call it.
+void AppWindow::CallCdpMethod()
 {
-    RETURN_IF_FAILED(error);
-    RETURN_IF_FAILED(m_webview->add_DevToolsProtocolEventReceived(
-        L"Log.entryAdded",
-        Microsoft::WRL::Callback<IWebView2DevToolsProtocolEventReceivedEventHandler>(
-            this, &ScenarioDevToolsProtocol::DevToolsProtocolEventReceived)
-        .Get(), &m_devToolsProtocolToken));
+    TextInputDialog inputDialog(m_hInst, m_mainWindow);
+    PCWSTR title = L"Call CDP Method";
+    PCWSTR prompt = L"CDP method name:";
+    PCWSTR description = L"Enter the CDP method name to call, followed by a space,\r\nfollowed by the parameters in JSON format.";
+    inputDialog.SetUserInput(L"Runtime.evaluate {\"expression\":\"alert(\\\"test\\\")\"}");
 
-    return S_OK;
+    if (inputDialog.Show(title, prompt, description) == IDOK)
+    {
+        std::wstring cdpMethodAndParams = inputDialog.GetUserInput();
+        size_t delimiterPos = cdpMethodAndParams.find(L' ');
+        std::wstring methodName = cdpMethodAndParams.substr(0, delimiterPos);
+        std::wstring methodParams =
+            (delimiterPos < cdpMethodAndParams.size()
+                ? cdpMethodAndParams.substr(delimiterPos + 1)
+                : L"{}");
+
+        m_webView->CallDevToolsProtocolMethod(
+            methodName.c_str(),
+            methodParams.c_str(),
+            Callback<IWebView2CallDevToolsProtocolMethodCompletedHandler>(
+                [](HRESULT error, PCWSTR resultJson) -> HRESULT
+                {
+                    MessageBox(nullptr, resultJson, L"CDP Method Result", MB_OK);
+                    return S_OK;
+                }).Get());
+    }
 }
 ```
 
@@ -1403,30 +1257,47 @@ HRESULT ScenarioDevToolsProtocol::DevToolsProtocolMethodCompleted(
 
 Subscribe to a DevToolsProtocol event.
 
-> public HRESULT [add_DevToolsProtocolEventReceived](#interface_i_web_view2_web_view_1a36d94c59be8b0154e368831fc54edee9)(LPCWSTR eventName,[IWebView2DevToolsProtocolEventReceivedEventHandler](IWebView2DevToolsProtocolEventReceivedEventHandler.md#interface_i_web_view2_dev_tools_protocol_event_received_event_handler) * handler,EventRegistrationToken * token)
+> public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)(LPCWSTR eventName,[IWebView2DevToolsProtocolEventReceivedEventHandler](IWebView2DevToolsProtocolEventReceivedEventHandler.md#iwebview2devtoolsprotocoleventreceivedeventhandler) * handler,EventRegistrationToken * token)
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available events. The eventName parameter is the full name of the event in the format `{domain}.{event}`. The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires. Invoke will be called with the an event args object containing the CDP event's parameter object as a JSON string.
 
 ```cpp
-    RETURN_IF_FAILED(m_webview->add_DevToolsProtocolEventReceived(
-        L"Log.entryAdded",
-        Microsoft::WRL::Callback<IWebView2DevToolsProtocolEventReceivedEventHandler>(
-            this, &ScenarioDevToolsProtocol::DevToolsProtocolEventReceived)
-        .Get(), &m_devToolsProtocolToken));
-```
-
-```cpp
-HRESULT ScenarioDevToolsProtocol::DevToolsProtocolEventReceived(
-    IWebView2WebView* sender, IWebView2DevToolsProtocolEventReceivedEventArgs* args)
+// Prompt the user to name a CDP event, and then subscribe to that event.
+void AppWindow::SubscribeToCdpEvent()
 {
-    wil::unique_cotaskmem_string parameterObjectAsJson;
-    RETURN_IF_FAILED(args->get_ParameterObjectAsJson(&parameterObjectAsJson));
-    HString text = GetTextFromEntryAddedDevToolsProtocolEventParameterObject(
-        parameterObjectAsJson.get());
+    TextInputDialog inputDialog(m_hInst, m_mainWindow);
+    PCWSTR title = L"Subscribe to CDP Event";
+    PCWSTR prompt = L"CDP event name:";
+    PCWSTR description = L"Enter the name of the CDP event to subscribe to.\r\n"
+                         L"You may also have to call the \"enable\" method of the\r\n"
+                         L"event's domain to receive events (for example \"Log.enable\").\r\n";
+    inputDialog.SetUserInput(L"Log.entryAdded");
 
-    LogMessage(text.GetRawBuffer(nullptr));
+    if (inputDialog.Show(title, prompt, description) == IDOK)
+    {
+        std::wstring eventName = inputDialog.GetUserInput();
+        auto preexistingToken = m_devToolsProtocolEventReceivedTokenMap.find(eventName);
+        if (preexistingToken != m_devToolsProtocolEventReceivedTokenMap.end())
+        {
+            CHECK_FAILURE(m_webView->remove_DevToolsProtocolEventReceived(
+                eventName.c_str(),
+                preexistingToken->second));
+        }
 
-    return S_OK;
+        CHECK_FAILURE(m_webView->add_DevToolsProtocolEventReceived(
+            eventName.c_str(),
+            Callback<IWebView2DevToolsProtocolEventReceivedEventHandler>(
+                [eventName](IWebView2WebView* sender,
+                            IWebView2DevToolsProtocolEventReceivedEventArgs* args)
+                -> HRESULT
+        {
+            wil::unique_cotaskmem_string parameterObjectAsJson;
+            CHECK_FAILURE(args->get_ParameterObjectAsJson(&parameterObjectAsJson));
+            MessageBox(nullptr, parameterObjectAsJson.get(),
+                       (L"CDP Event Fired: " + eventName).c_str(), MB_OK);
+            return S_OK;
+        }).Get(), &m_devToolsProtocolEventReceivedTokenMap[eventName]));
+    }
 }
 ```
 
@@ -1434,19 +1305,19 @@ HRESULT ScenarioDevToolsProtocol::DevToolsProtocolEventReceived(
 
 Remove an event handler previously added with add_DevToolsProtocolEventReceived.
 
-> public HRESULT [remove_DevToolsProtocolEventReceived](#interface_i_web_view2_web_view_1a1985b336b13e00958e014ab690823374)(LPCWSTR eventName,EventRegistrationToken token)
+> public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(LPCWSTR eventName,EventRegistrationToken token)
 
 #### get_BrowserProcessId 
 
 The process id of the browser process that hosts the WebView.
 
-> public HRESULT [get_BrowserProcessId](#interface_i_web_view2_web_view_1a42ac0f40e782f3739678a54f02041ea6)(UINT32 * value)
+> public HRESULT [get_BrowserProcessId](#get_browserprocessid)(UINT32 * value)
 
 #### get_CanGoBack 
 
 Can navigate the webview to the previous page in the navigation history.
 
-> public HRESULT [get_CanGoBack](#interface_i_web_view2_web_view_1a74df1fb0e0a9eb64c97b7a09773293a6)(BOOL * canGoBack)
+> public HRESULT [get_CanGoBack](#get_cangoback)(BOOL * canGoBack)
 
 get_CanGoBack change value with the DocumentStateChanged event.
 
@@ -1454,7 +1325,7 @@ get_CanGoBack change value with the DocumentStateChanged event.
 
 Can navigate the webview to the next page in the navigation history.
 
-> public HRESULT [get_CanGoForward](#interface_i_web_view2_web_view_1a82515d39dc69f1b1832db2590284a788)(BOOL * canGoForward)
+> public HRESULT [get_CanGoForward](#get_cangoforward)(BOOL * canGoForward)
 
 get_CanGoForward change value with the DocumentStateChanged event.
 
@@ -1462,19 +1333,19 @@ get_CanGoForward change value with the DocumentStateChanged event.
 
 Navigates the webview to the previous page in the navigation history.
 
-> public HRESULT [GoBack](#interface_i_web_view2_web_view_1a5cc0cfe51007a8f55ee7fbf32867bbaf)()
+> public HRESULT [GoBack](#goback)()
 
 #### GoForward 
 
 Navigates the webview to the next page in the navigation history.
 
-> public HRESULT [GoForward](#interface_i_web_view2_web_view_1aca830d498dc98d8226d85b8040349f6e)()
+> public HRESULT [GoForward](#goforward)()
 
 #### WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT 
 
-Image format used by the [IWebView2WebView::CapturePreview](#interface_i_web_view2_web_view_1a1d04f117ee7a3f8828bdaad7eecc6668) method.
+Image format used by the [IWebView2WebView::CapturePreview](#capturepreview) method.
 
-> enum [WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#interface_i_web_view2_web_view_1a10b47cc3a871007318b235771b8d1f9c)
+> enum [WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#webview2_capture_preview_image_format)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1483,9 +1354,9 @@ WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_JPEG            | JPEG image format.
 
 #### WEBVIEW2_SCRIPT_DIALOG_KIND 
 
-Kind of JavaScript dialog used in the [IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#interface_i_web_view2_script_dialog_opening_event_handler) interface.
+Kind of JavaScript dialog used in the [IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#iwebview2scriptdialogopeningeventhandler) interface.
 
-> enum [WEBVIEW2_SCRIPT_DIALOG_KIND](#interface_i_web_view2_web_view_1a6180fcb980ca62aeebdccb0511b32a78)
+> enum [WEBVIEW2_SCRIPT_DIALOG_KIND](#webview2_script_dialog_kind)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1495,9 +1366,9 @@ WEBVIEW2_SCRIPT_DIALOG_KIND_PROMPT            | A dialog invoked via the window.
 
 #### WEBVIEW2_PROCESS_FAILED_KIND 
 
-Kind of process failure used in the [IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#interface_i_web_view2_process_failed_event_handler) interface.
+Kind of process failure used in the [IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#iwebview2processfailedeventhandler) interface.
 
-> enum [WEBVIEW2_PROCESS_FAILED_KIND](#interface_i_web_view2_web_view_1ab39b04c165e6bd9b41044070f4addc5f)
+> enum [WEBVIEW2_PROCESS_FAILED_KIND](#webview2_process_failed_kind)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1509,7 +1380,7 @@ WEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_UNRESPONSIVE            | Indicates 
 
 The type of a permission request.
 
-> enum [WEBVIEW2_PERMISSION_TYPE](#interface_i_web_view2_web_view_1a92fe308a93a24813da9ca0ba84c412d6)
+> enum [WEBVIEW2_PERMISSION_TYPE](#webview2_permission_type)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1525,7 +1396,7 @@ WEBVIEW2_PERMISSION_TYPE_CLIPBOARD_READ            | Permission to read system c
 
 Response to a permission request.
 
-> enum [WEBVIEW2_PERMISSION_STATE](#interface_i_web_view2_web_view_1aeffb35b30ac1903baac33c0b971b441e)
+> enum [WEBVIEW2_PERMISSION_STATE](#webview2_permission_state)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1537,7 +1408,7 @@ WEBVIEW2_PERMISSION_STATE_DENY            | Deny the permission request.
 
 Reason for moving focus.
 
-> enum [WEBVIEW2_MOVE_FOCUS_REASON](#interface_i_web_view2_web_view_1a094339e235eb7a1e0512c26e09f16af3)
+> enum [WEBVIEW2_MOVE_FOCUS_REASON](#webview2_move_focus_reason)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1549,7 +1420,7 @@ WEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS            | Moving focus due to Tab travers
 
 Error status values for web navigations.
 
-> enum [WEBVIEW2_WEB_ERROR_STATUS](#interface_i_web_view2_web_view_1a0438e7212af8c0d59acb658442cd69fb)
+> enum [WEBVIEW2_WEB_ERROR_STATUS](#webview2_web_error_status)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1575,7 +1446,7 @@ WEBVIEW2_WEB_ERROR_STATUS_UNEXPECTED_ERROR            | An unexpected error occu
 
 Enum for resourceContextFilter of WebResourceRequested event.
 
-> enum [WEBVIEW2_WEB_RESOURCE_CONTEXT](#interface_i_web_view2_web_view_1a84d836ed6f6e803de309300b344a3152)
+> enum [WEBVIEW2_WEB_RESOURCE_CONTEXT](#webview2_web_resource_context)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -1588,73 +1459,4 @@ WEBVIEW2_WEB_RESOURCE_CONTEXT_FONT            | Filter fonts.
 WEBVIEW2_WEB_RESOURCE_CONTEXT_SCRIPT            | Filter scripts.
 WEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST            | Filter XML HTTP requests.
 WEBVIEW2_WEB_RESOURCE_CONTEXT_FETCH            | Filter fetch requests.
-
-#### WEBVIEW2_RELEASE_CHANNEL_PREFERENCE 
-
-The release channel of a browser installation.
-
-> enum [WEBVIEW2_RELEASE_CHANNEL_PREFERENCE](#interface_i_web_view2_web_view_1a8065f6efb280380373dfa3b010e08a49)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-WEBVIEW2_RELEASE_CHANNEL_PREFERENCE_STABLE            | Choose the first installed release channel from the list: stable, beta, dev, and canary.
-WEBVIEW2_RELEASE_CHANNEL_PREFERENCE_CANARY            | Choose the first installed release channel from the list: canary, dev, beta, and stable.
-
-This is used when selecting an evergreen install of Edge. See the Edge browser documentation for more information on the various release channels, how often they update, their level of support, etc.
-
-#### WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT 
-
-Image format used by the [IWebView2WebView::CapturePreview](#interface_i_web_view2_web_view_1a1d04f117ee7a3f8828bdaad7eecc6668) method.
-
-> typedef [WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#interface_i_web_view2_web_view_1a33cd5016f65d6f1e49c4fdfa609591a6)
-
-#### WEBVIEW2_SCRIPT_DIALOG_KIND 
-
-Kind of JavaScript dialog used in the [IWebView2ScriptDialogOpeningEventHandler](IWebView2ScriptDialogOpeningEventHandler.md#interface_i_web_view2_script_dialog_opening_event_handler) interface.
-
-> typedef [WEBVIEW2_SCRIPT_DIALOG_KIND](#interface_i_web_view2_web_view_1a694fef62045c5aea87498c3f1bfc2b4b)
-
-#### WEBVIEW2_PROCESS_FAILED_KIND 
-
-Kind of process failure used in the [IWebView2ProcessFailedEventHandler](IWebView2ProcessFailedEventHandler.md#interface_i_web_view2_process_failed_event_handler) interface.
-
-> typedef [WEBVIEW2_PROCESS_FAILED_KIND](#interface_i_web_view2_web_view_1a347fade2e5e46f339434e7a4ad4ef524)
-
-#### WEBVIEW2_PERMISSION_TYPE 
-
-The type of a permission request.
-
-> typedef [WEBVIEW2_PERMISSION_TYPE](#interface_i_web_view2_web_view_1a0c8c94bd81ee9279ef68a140168d06fb)
-
-#### WEBVIEW2_PERMISSION_STATE 
-
-Response to a permission request.
-
-> typedef [WEBVIEW2_PERMISSION_STATE](#interface_i_web_view2_web_view_1ad6eb3fe3e9955a3f77dd6138006f8785)
-
-#### WEBVIEW2_MOVE_FOCUS_REASON 
-
-Reason for moving focus.
-
-> typedef [WEBVIEW2_MOVE_FOCUS_REASON](#interface_i_web_view2_web_view_1a91d4545f559914ff5cbeca2d973d5ed3)
-
-#### WEBVIEW2_WEB_ERROR_STATUS 
-
-Error status values for web navigations.
-
-> typedef [WEBVIEW2_WEB_ERROR_STATUS](#interface_i_web_view2_web_view_1a2700d86cabe3a40cff79266ae7d01077)
-
-#### WEBVIEW2_WEB_RESOURCE_CONTEXT 
-
-Enum for resourceContextFilter of WebResourceRequested event.
-
-> typedef [WEBVIEW2_WEB_RESOURCE_CONTEXT](#interface_i_web_view2_web_view_1a0e254cac9552ef10ad2c277dc6950e8a)
-
-#### WEBVIEW2_RELEASE_CHANNEL_PREFERENCE 
-
-The release channel of a browser installation.
-
-> typedef [WEBVIEW2_RELEASE_CHANNEL_PREFERENCE](#interface_i_web_view2_web_view_1a1706ff1841fb6c26931f3a0c1b985223)
-
-This is used when selecting an evergreen install of Edge. See the Edge browser documentation for more information on the various release channels, how often they update, their level of support, etc.
 
