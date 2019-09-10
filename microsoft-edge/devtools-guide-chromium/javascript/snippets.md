@@ -5,7 +5,7 @@ ms.author: msedgedevrel
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web developement, f12 tools, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
 <!-- Copyright 07/10/2019 Kayce Basques 
 
@@ -29,15 +29,10 @@ keywords: microsoft edge, web developement, f12 tools, devtools
 
 
 
-[scratchpad]: https://developer.mozilla.org/en-US/docs/Tools/Scratchpad  
+If you find yourself running the same code in the **Console** repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][SourcesPanel].  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
+Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
 
-If you find yourself running the same code in the **Console** repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][Sources].  They have access to the page's JavaScript context, and you can run them on any page.  Snippets are an alternative to [bookmarklets][Bookmarklet].  
-Firefox DevTools has a feature similar to Snippets called [Scratchpad][scratchpad].  
-
-[Bookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet  
-[Sources]: ../sources  
-
-<!-- Add link to console when section is available -->  
+<!--Todo: Add link to console when section is available -->  
 
 For example, [**Figure 1**](#figure-1) shows the DevTools homepage on the left and some Snippet source code on the right.  
 
@@ -45,7 +40,7 @@ For example, [**Figure 1**](#figure-1) shows the DevTools homepage on the left a
 > How the page looks before running the Snippet  
 > ![How the page looks before running the Snippet][ImageSnippetBefore]  
 
-Here's the Snippet source code from [**Figure 1**](#figure-1):  
+The Snippet source code from [**Figure 1**](#figure-1):  
 
 ```javascript
 console.log('Hello, Snippets!');
@@ -55,7 +50,7 @@ p.textContent = 'Hello, Snippets!';
 document.body.appendChild(p);
 ```  
 
-[**Figure 2**](#figure-2) shows how the page looks after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the page's content changes completely.  
+[**Figure 2**](#figure-2) shows how the page looks after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the content of the page changes completely.  
 
 > ##### Figure 2  
 > How the page looks after running the Snippet  
@@ -123,7 +118,7 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
     > ![The Code Editor][ImageSnippetEditor]  
 
 1.  Use the **Code Editor** to add JavaScript to your Snippet.  
-1.  When there's an asterisk next to the name of your Snippet it means you have unsaved code. Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  
+1.  When an asterisk appears next to the name of your Snippet it means you have unsaved code. Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  
 
     > ##### Figure 9  
     > An asterisk next to the Snippet name, which indicates unsaved code  
@@ -163,18 +158,26 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 
 
+<!-- image links -->  
+
 [ImageCreateSnippetCommand]: images/create-snippet-command.msft.png "Figure 7: The command for creating a new Snippet"  
-[ImageSnippetEditor]: images/snippet-editor.msft.png "Figure 8: The Code Editor"  
 [ImageEmptySources]: images/empty-sources.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
 [ImageMoreTabsIcon]: ../images/shared/more-tabs.msft.png  
 [ImageRunSnippetCommand]: images/run-snippet-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
+[ImageRunSnippetIcon]: ../images/run-snippet.msft.png  
 [ImageShowSnippets]: images/show-snippets.msft.png "Figure 5: The Show Snippets command"  
 [ImageSnippetAfter]: images/snippet-example-after.msft.png "Figure 2: How the page looks after running the Snippet"  
 [ImageSnippetBefore]: images/snippet-example-before.msft.png "Figure 1: How the page looks before running the Snippet"  
-[ImageRunSnippetIcon]: ../images/run-snippet.msft.png  
+[ImageSnippetEditor]: images/snippet-editor.msft.png "Figure 8: The Code Editor"  
 [ImageSnippetName]: images/snippet-name.msft.png "Figure 6: Naming a Snippet"  
 [ImageSnippetsPane]: images/snippets-pane.msft.png "Figure 3: The Snippets pane"  
 [ImageUnsavedSnippet]: images/unsaved-snippet.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
+
+<!-- links -->  
+
+[MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
+[SourcesPanel]: ../sources "Sources Panel Overview"  
+[WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet - Wikipedia"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
