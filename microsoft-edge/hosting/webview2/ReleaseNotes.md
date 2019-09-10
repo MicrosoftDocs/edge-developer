@@ -21,9 +21,13 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 **Re-compile your app after updating the NuGet package.**  
 
 *   Added `DocumentTitleChanged` event to indicate document title change \([\#27][MicrosoftEdgeWebViewFeedbackIssue27]\).  
-*   Added `NewWindowRequested` event.  
-*   Updated `CreateWebView2EnvironmentWithDetails` API with logic for selecting `userDataFolder` when not specified.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails] API for more details.  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  If the host process does not have permission to write to the specified directory, `CreateWebView2EnvironmentWithDetails` may fail.  You may copy the data from the old user data directory to the new directory.  
 *   Added `GetWebView2BrowserVersionInfo` API \([\#18][MicrosoftEdgeWebViewFeedbackIssue18]\).  
+*   Added `NewWindowRequested` event.  
+*   Updated `CreateWebView2EnvironmentWithDetails` function to remove `releaseChannelPreference`.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails] function for more details.  The registry and environment variable override is still supported.  The default channel preference is used unless overridden.  
+    During the channel search, we skip any older channel version that is not compatible with the WebView2 SDK.  
+    We select the more stable channel to ensure the most consistent behaviors for the end user.  When you test with latest Canary builds, you should create a script to set environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` to `1` before launching the app.  
+*   Updated `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails] function for more details.  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  
+    If the host process does not have permission to write to the specified directory, `CreateWebView2EnvironmentWithDetails` may fail.  You may copy the data from the old user data directory to the new directory.  
 
 ## 0.8.230  
 
