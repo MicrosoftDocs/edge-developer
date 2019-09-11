@@ -69,7 +69,7 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 
 // Locate the browser and set up the environment for WebView
-CreateWebView2EnvironmentWithDetails(nullptr, nullptr, WEBVIEW2_RELEASE_CHANNEL_PREFERENCE_CANARY, nullptr,
+CreateWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
     Callback<IWebView2CreateWebView2EnvironmentCompletedHandler>(
         [hWnd](HRESULT result, IWebView2Environment* env) -> HRESULT {
 
