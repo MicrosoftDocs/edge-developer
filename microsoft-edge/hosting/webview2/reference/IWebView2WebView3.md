@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 09/11/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -47,6 +47,34 @@ Add an event handler for the NewWindowRequested event.
 > public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([IWebView2NewWindowRequestedEventHandler](IWebView2NewWindowRequestedEventHandler.md#iwebview2newwindowrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
+
+```cpp
+    // Register a handler for the NewWindowRequested event.
+    // This handler will defer the event, create a new app window, and then once the
+    // new window is ready, it'll provide that new window's WebView as the response to
+    // the request.
+    wil::com_ptr<IWebView2WebView3> webview3 = m_webView.try_query<IWebView2WebView3>();
+    CHECK_FAILURE(webview3->add_NewWindowRequested(
+      Callback<IWebView2NewWindowRequestedEventHandler>(
+        [this](IWebView2WebView* sender,
+          IWebView2NewWindowRequestedEventArgs* args)
+    {
+      wil::com_ptr<IWebView2Deferral> deferral;
+      CHECK_FAILURE(args->GetDeferral(&deferral));
+
+      AppWindow* newAppWindow = AppWindow::CreateNewInstance(
+        m_hInst, m_nShow, true);
+      newAppWindow->m_onWebViewFirstInitialized =
+        [args, deferral, newAppWindow]()
+      {
+        CHECK_FAILURE(args->put_NewWindow(newAppWindow->m_webView.get()));
+        CHECK_FAILURE(args->put_Handled(TRUE));
+        CHECK_FAILURE(deferral->Complete());
+      };
+
+      return S_OK;
+    }).Get(), &m_newWindowRequestedToken));
+```
 
 #### remove_NewWindowRequested 
 
