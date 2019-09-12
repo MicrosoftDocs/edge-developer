@@ -37,11 +37,15 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![manageNugetPackages](images/manageNugetPackages.PNG)
 
-2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
+
+![nuget](images/wil.PNG)
+
+3. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
 
 ![nuget](images/nuget.PNG)
 
-3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
+4. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
 
 ```cpp
 ...
