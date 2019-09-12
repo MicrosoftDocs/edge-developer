@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 09/11/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -168,6 +168,24 @@ The URI of the current top level document.
 This value potentially changes as a part of the DocumentStateChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
 
 ```cpp
+    // Register a handler for the DocumentStateChanged event.
+    // This handler will read the webview's source URI and update
+    // the app's address bar.
+    CHECK_FAILURE(m_webView->add_DocumentStateChanged(
+        Callback<IWebView2DocumentStateChangedEventHandler>(
+            [this](IWebView2WebView* sender,
+                   IWebView2DocumentStateChangedEventArgs* args) -> HRESULT
+    {
+        wil::unique_cotaskmem_string uri;
+        sender->get_Source(&uri);
+        if (wcscmp(uri.get(), L"about:blank") == 0)
+        {
+            uri = wil::make_cotaskmem_string(L"");
+        }
+        SetWindowText(m_addressbarWindow, uri.get());
+
+        return S_OK;
+    }).Get(), &m_documentStateChangedToken));
 ```
 
 #### Navigate 
@@ -831,6 +849,8 @@ Add the provided JavaScript to a list of scripts that should be executed after t
 > public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript,[IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md#iwebview2addscripttoexecuteondocumentcreatedcompletedhandler) * handler)
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
+
+Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
 
 ```cpp
 // Prompt the user for some script and register it to execute whenever a new page loads.
