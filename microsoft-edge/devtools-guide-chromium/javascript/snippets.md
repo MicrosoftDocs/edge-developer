@@ -38,7 +38,7 @@ For example, [**Figure 1**](#figure-1) shows the DevTools homepage on the left a
 
 > ##### Figure 1  
 > How the page looks before running the Snippet  
-> ![How the page looks before running the Snippet][ImageSnippetBefore]  
+> ![How the page looks before running the Snippet][ImageSnippetSplitScreen]  
 
 The Snippet source code from [**Figure 1**](#figure-1):  
 
@@ -54,7 +54,7 @@ document.body.appendChild(p);
 
 > ##### Figure 2  
 > How the page looks after running the Snippet  
-> ![How the page looks after running the Snippet][ImageSnippetAfter]  
+> ![How the page looks after running the Snippet][ImageSnippetSplitScreenAfter]  
 
 ## Open the Snippets pane   
 
@@ -70,7 +70,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
 
     > ##### Figure 4  
     > The **Sources** panel with the **Page** pane open on the left  
-    > ![The Sources panel with the Page pane open on the left][ImageEmptySources]  
+    > ![The Sources panel with the Page pane open on the left][ImageSourcesPageEmpty]  
 
 1.  Click the **Snippets** tab to open the **Snippets** pane.  You might need to click **More Tabs** ![More Tabs][ImageMoreTabsIcon] in order to access the **Snippets** option.  
 
@@ -82,7 +82,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
 
     > ##### Figure 5  
     > The **Show Snippets** command  
-    > ![The Show Snippets command][ImageShowSnippets]  
+    > ![The Show Snippets command][ImageShowSnippetsSearch]  
 
 ## Create Snippets   
 
@@ -104,7 +104,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
 
     > ##### Figure 7  
     > The command for creating a new Snippet  
-    > ![The command for creating a new Snippet][ImageCreateSnippetCommand]  
+    > ![The command for creating a new Snippet][ImageCreateSnippetSearch]  
 
 See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a custom name.  
 
@@ -159,19 +159,19 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 
 <!-- image links -->  
+[ImageMoreTabsIcon]: ../images/shared/more-tabs-icon.msft.png  
+[ImageRunSnippetIcon]: ../images/run-snippet-icon.msft.png  
 
-[ImageCreateSnippetCommand]: images/create-snippet-command.msft.png "Figure 7: The command for creating a new Snippet"  
-[ImageEmptySources]: images/empty-sources.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
-[ImageMoreTabsIcon]: ../images/shared/more-tabs.msft.png  
-[ImageRunSnippetCommand]: images/run-snippet-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
-[ImageRunSnippetIcon]: ../images/run-snippet.msft.png  
-[ImageShowSnippets]: images/show-snippets.msft.png "Figure 5: The Show Snippets command"  
-[ImageSnippetAfter]: images/snippet-example-after.msft.png "Figure 2: How the page looks after running the Snippet"  
-[ImageSnippetBefore]: images/snippet-example-before.msft.png "Figure 1: How the page looks before running the Snippet"  
-[ImageSnippetEditor]: images/snippet-editor.msft.png "Figure 8: The Code Editor"  
-[ImageSnippetName]: images/snippet-name.msft.png "Figure 6: Naming a Snippet"  
-[ImageSnippetsPane]: images/snippets-pane.msft.png "Figure 3: The Snippets pane"  
-[ImageUnsavedSnippet]: images/unsaved-snippet.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
+[ImageCreateSnippetSearch]: images/search-create-new-snippet.msft.png "Figure 7: The command for creating a new Snippet"  
+[ImageSourcesPageEmpty]: images/sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
+[ImageRunSnippetCommand]: images/search-run-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
+[ImageShowSnippetsSearch]: images/search-show-snippets.msft.png "Figure 5: The Show Snippets command"  
+[ImageSnippetSplitScreenAfter]: images/sources-snippets-split-screen-after.msft.png "Figure 2: How the page looks after running the Snippet"  
+[ImageSnippetSplitScreen]: images/sources-snippets-split-screen.msft.png "Figure 1: How the page looks before running the Snippet"  
+[ImageSnippetEditor]: images/sources-snippets-editor-saved.msft.png "Figure 8: The Code Editor"  
+[ImageSnippetName]: images/sources-snippets-naming.msft.png "Figure 6: Naming a Snippet"  
+[ImageSnippetsPane]: images/sources-snippets-pane.msft.png "Figure 3: The Snippets pane"  
+[ImageUnsavedSnippet]: images/sources-snippets-editor-unsaved.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
 
 <!-- links -->  
 
