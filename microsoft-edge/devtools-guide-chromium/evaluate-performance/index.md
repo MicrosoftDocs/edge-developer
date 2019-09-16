@@ -126,7 +126,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1.  Make sure that the **Screenshots** checkbox is enabled.  
 
-1.  Click **Capture Settings** ![Capture Settings][ImageCaptureSettings].  
+1.  Click **Capture Settings** ![Capture Settings][ImageCaptureSettingsIcon].  
     DevTools reveals settings related to how it captures performance metrics.  
 
 1.  For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it's 4 times slower than usual.  
@@ -158,7 +158,7 @@ ensure that your experience is relatively consistent with the screenshots and de
 <!--When you ran the optimized version of the page, the blue squares move faster.  
 Why is that?  Both versions are supposed to move the circles and squares the same amount of space in the same amount of time.  -->  Take a recording in the Performance panel to learn how to detect the performance bottleneck in the un-optimized version.  
 
-1.  In DevTools, click **Record** ![Record][ImageRecord].  
+1.  In DevTools, click **Record** ![Record][ImageRecordIcon].  
     DevTools captures performance metrics as the page runs.  
     
     > ###### Figure 3 
@@ -197,10 +197,10 @@ The main metric for measuring the performance of any animation is frames per sec
 1.  Hover your mouse over the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  This is called scrubbing, and it's useful for manually analyzing the progression of animations.  
     
     > ###### Figure 7  
-    > Viewing a screenshot of the page around the 2000 ms mark of the recording  
-    > ![Viewing a screenshot of the page around the 2000 ms mark of the recording][ImageViewingScreenshot]  
+    > Viewing a screenshot of the page around the 2500ms mark of the recording  
+    > ![Viewing a screenshot of the page around the 2500ms mark of the recording][ImageViewingScreenshot]  
 
-1.  In the **Frames** section, hover your mouse over one of the green squares.  DevTools shows you the FPS for that particular frame.  Each frame is probably well below the target of 60 FPS.  
+1.  In the **Frames** section, hover your mouse over one of the green squares.  DevTools shows you the FPS for that particular frame.  <!-- Each frame is probably well below the target of 60 FPS.  -->  
     
     > ###### Figure 8  
     > Hovering over a frame  
@@ -304,7 +304,7 @@ Try profiling your own pages and analyzing the results.
 <!-- If you have any questions about your results, [open a Stack Overflow question tagged with `alphabet-browser-devtools`][StackOverflowAlphabetBrowserDevtools].  -->
 Include screenshots or links to reproducible pages, if possible.  
 
-[StackOverflowAlphabetBrowserDevtools]: http://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools  
+<!-- [StackOverflowAlphabetBrowserDevtools]: http://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->  
 
 To really master runtime performance, you've got to learn how the browser translates HTML, CSS, and JS into pixels on a screen.  <!-- The best place to start is the [Rendering Performance Overview][RenderingPerformance].-->  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  
 
@@ -318,6 +318,32 @@ focused on one particular animation bottleneck to give you a focused tour throug
 *   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]  
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  -->
 
+ 
+
+
+
+<!-- image links -->  
+
+[ImageCaptureSettingsIcon]: images/capture-settings-icon.msft.png  
+[ImageRecordIcon]: images/record-icon.msft.png  
+
+<!--[ImageAnimationFrameFired]: images/animation-frame-fired.msft.png "Figure 13: More information about the Animation Frame Fired event"  -->
+[ImageCPUSummary]: images/performance-cpu-chart.msft.png "Figure 6: The CPU chart and Summary tab, outlined in blue"  
+[ImageCPUThrottling]: images/performance-capture-settings.msft.png "Figure 2: CPU throttling"  
+<!--[ImageForcedLayoutSRC]: images/forced-layout-src.msft.png "Figure 14: The line of code that caused the forced layout"  -->  
+[ImageFPSChart]: images/performance-fps-chart.msft.png "Figure 5: The FPS chart"  
+[ImageFPSMeter]: images/fps-meter-overlay.msft.png "Figure 9: The FPS meter"  
+[ImageFrameHover]: images/perfomance-frame-hover.msft.png "Figure 8: Hovering over a frame"  
+[ImageGetStarted]: images/get-started-side-by-side.msft.png "Figure 1: The demo on the left, and DevTools on the right"  
+[ImageMainSection]: images/performance-main.msft.png "Figure 11: The Main section"  
+[ImagePageProfiling]: images/performance-profiling.msft.png "Figure 3: Profiling the page"  
+[ImageProfileResults]: images/performance-capture-results.msft.png "Figure 4: The results of the profile"  
+[ImageSummaryTab]: images/performance-summary-tab.msft.png "Figure 10: The Summary tab"  
+[ImageViewingScreenshot]: images/performance-screenshot-hover.msft.png "Figure 7: Viewing a screenshot of the page around the 2500ms mark of the recording"  
+[ImageZoomedAnimation]: images/performance-main-zoomed.msft.png "Figure 12: Zoomed in on a single Animation Frame Fired event"  
+
+<!-- links -->
+
 [RenderingPerformance]: /web/fundamentals/performance/rendering  
 [FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  
 [RenderingOptimizeJS]: /web/fundamentals/performance/rendering/optimize-javascript-execution  
@@ -326,27 +352,6 @@ focused on one particular animation bottleneck to give you a focused tour throug
 [RenderingSimplifyPaint]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas  
 [RenderingManageLayers]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count  
 [RenderingDebounceInputs]: /web/fundamentals/performance/rendering/debounce-your-input-handlers  
-
- 
-
-
-
-<!--[ImageAnimationFrameFired]: images/animation-frame-fired.msft.png "Figure 13: More information about the Animation Frame Fired event"  -->
-[ImageCaptureSettings]: images/capture-settings.msft.png  
-[ImageCPUSummary]: images/cpu-summary.msft.png "Figure 6: The CPU chart and Summary tab, outlined in blue"  
-[ImageCPUThrottling]: images/throttling.msft.png "Figure 2: CPU throttling"  
-[ImageForcedLayoutSRC]: images/forced-layout-src.msft.png "Figure 14: The line of code that caused the forced layout"  
-[ImageFPSChart]: images/fps-chart.msft.png "Figure 5: The FPS chart"  
-[ImageFPSMeter]: images/fps-meter.msft.png "Figure 9: The FPS meter"  
-[ImageFrameHover]: images/frame.msft.png "Figure 8: Hovering over a frame"  
-[ImageGetStarted]: images/get-started.msft.png "Figure 1: The demo on the left, and DevTools on the right"  
-[ImageMainSection]: images/main.msft.png "Figure 11: The Main section"  
-[ImagePageProfiling]: images/profiling.msft.png "Figure 3: Profiling the page"  
-[ImageProfileResults]: images/results.msft.png "Figure 4: The results of the profile"  
-[ImageRecord]: images/record.msft.png  
-[ImageSummaryTab]: images/summary.msft.png "Figure 10: The Summary tab"  
-[ImageViewingScreenshot]: images/screenshot.msft.png "Figure 7: Viewing a screenshot of the page around the 2000 ms mark of the recording"  
-[ImageZoomedAnimation]: images/zoomed.msft.png "Figure 12: Zoomed in on a single Animation Frame Fired event"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
