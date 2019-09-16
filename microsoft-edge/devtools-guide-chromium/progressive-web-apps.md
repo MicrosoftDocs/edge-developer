@@ -66,7 +66,7 @@ Once you've got your manifest set up, you can use the **Manifest** pane of the *
 > ![The Manifest Pane][ImageManifest]  
 
 *   To look at the manifest source, click the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in [**Figure 1**](#figure-1)]\).  
-*   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  
+<!-- *   Press the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->  
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.  
 *   The **Icons** section displays every icon that you've specified.  
 
@@ -211,10 +211,10 @@ Related Guides:
 
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
 [ImageManifest]: images/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
-[ImageMultipleCaches]: images/service-worker-cache-pane-multiple-caches.msft.png "Figure 4: The **Cache Storage** dropdown"  
-[ImageServiceWorkersCachePane]: images/service-worker-cache-pane-cache.msft.png "Figure 3: The Cache Storage Pane"  
+[ImageMultipleCaches]: images/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
+[ImageServiceWorkersCachePane]: images/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
 <!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkersPane]: images/service-worker-pane.msft.png "Figure 2: The Service Workers pane"  
+[ImageServiceWorkersPane]: images/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
