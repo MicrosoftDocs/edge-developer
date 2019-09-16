@@ -2,7 +2,7 @@
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/03/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -55,7 +55,7 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 1.  Select **Enable USB Debugging**.  
 1.  On your development machine, open Microsoft Edge.  
 1.  [Open DevTools](../Open).  
-1.  In DevTools, click the **Main Menu** ![Main Menu][ImageThreeDot] then select **More tools** > **Remote devices**.  
+1.  In DevTools, click the **Main Menu** ![Main Menu][ImageThreeDotIcon] then select **More tools** > **Remote devices**.  
     
     > ##### Figure 1  
     > Opening the **Remote Devices** tab via the **Main Menu**  
@@ -89,25 +89,16 @@ Make sure that your software is set up correctly:
 
 *   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  See [Install OEM USB Drivers][AndroidUSBDrivers].  
     
-    [AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html  
-    
 *   Some combinations of Windows and Android devices (especially Samsung) require extra set up.  See [DevTools Devices does not detect device when plugged in][StackOverflowDevicesNotDetected].  
-    
-    [StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in"  
     
 If you don't see the **Allow USB Debugging** prompt on your Android device try:  
 
 *   Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  In other words, sometimes the prompt doesn't show up when your Android or development machine screens are locked.
 *   Updating the display settings for your Android device and development machine so that they never go to sleep.  
 *   Setting Android's USB mode to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog box][StackExchangeGalaxyS4DoesNotShowDialogBox].  
-
-    [StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933  
-    
 *   Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.  
 
 If you find a solution that is not mentioned in this section or in [DevTools Devices does not detect device when plugged in][StackOverflowDevicesNotDetected]!  
-
-[GithubWebFundamentalsNewIssue]: https://github.com/google/webfundamentals/issues/new?title=[Remote%20Debugging]  
 
 ## Step 2: Debug content on your Android device from your development machine   
 
@@ -127,7 +118,7 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 
 ### More actions: reload, focus, or close a tab   
 
-Click **More Options** ![More Options][ImageThreeDot] next to the tab that you want to reload, focus, or close.  
+Click **More Options** ![More Options][ImageThreeDotIcon] next to the tab that you want to reload, focus, or close.  
 <!--
 > ##### Figure 6  
 > The menu for reloading, focusing, or closing a tab  
@@ -137,11 +128,11 @@ Click **More Options** ![More Options][ImageThreeDot] next to the tab that you w
 
 Go to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
 
-You can also tap an element on your Android device screen to select it in the **Elements** panel.  Click **Select Element** ![Select Element][ImageSelectElement] on your DevTools instance, and then tap the element on your Android device screen.  Note that **Select Element** is disabled after the first touch, so you need to re-enable it every time you want to use this feature.  
+You can also tap an element on your Android device screen to select it in the **Elements** panel.  Click **Select Element** ![Select Element][ImageSelectElementIcon] on your DevTools instance, and then tap the element on your Android device screen.  Note that **Select Element** is disabled after the first touch, so you need to re-enable it every time you want to use this feature.  
 
 ### Screencast your Android screen to your development machine   
 
-Click **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencast] to view the content of your Android device in your DevTools instance.  
+Click **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the content of your Android device in your DevTools instance.  
 
 You can interact with the screencast in multiple ways:  
 
@@ -156,19 +147,29 @@ Some notes on screencasts:
 *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of your page's performance.  
 *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.  
 
- 
 
 
+
+
+<!-- image links -->  
+
+[ImageSelectElementIcon]: images/select-element-icon.msft.png  
+[ImageThreeDotIcon]: ../images/three-dot-icon.msft.png  
+[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
 
 <!--[ImageConnectedRemoteDevice]: images/connected-remote-device.msft.png "Figure 5:  A connected remote device"  -->
-[ImageDiscoverUSBDevices]: images/discover-usb-devices.msft.png "Figure 2:  The Discover USB Devices checkbox is enabled"  
-[ImageOpenRemoteDevices]: images/open-remote-devices.msft.png "Figure 1: Opening the Remote Devices tab via the Main Menu"  
+[ImageDiscoverUSBDevices]: images/remote-devices-tab.msft.png "Figure 2:  The Discover USB Devices checkbox is enabled"  
+[ImageOpenRemoteDevices]: images/more-tools-remote-devices.msft.png "Figure 1: Opening the Remote Devices tab via the Main Menu"  
 <!--[ImageReload]: images/reload.msft.png "Figure 6: The menu for reloading, focusing, or closing a tab"  -->
-<!--[ImageRemoteDebugging]: images/remote-debugging.msft.png "Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->
-[ImageSelectElement]: images/select-element.msft.png  
-[ImageThreeDot]: ../images/three-dot.msft.png  
-[ImageToggleScreencast]: images/toggle-screencast.msft.png  
-<!--[ImageUnknownDevice]: images/unknown-device.msft.png "Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->
+<!--[ImageRemoteDebugging]: images/remote-debugging.msft.png "Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
+<!--[ImageUnknownDevice]: images/unknown-device.msft.png "Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
+
+<!-- links -->  
+
+[AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
+<!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
+[StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"  
+[StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
