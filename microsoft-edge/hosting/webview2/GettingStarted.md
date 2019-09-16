@@ -37,7 +37,7 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![manageNugetPackages](images/manageNugetPackages.PNG)
 
-2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** inthe right hand side window and install the latest SDK. Nuget will download the SDK to your machine. While we use the [Windows Implementation Library](https://github.com/Microsoft/wil) to make working with COM easier, it is completely optional.
 
 ![nuget](images/wil.PNG)
 
