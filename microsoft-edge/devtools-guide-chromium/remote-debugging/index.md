@@ -5,7 +5,7 @@ ms.author: msedgedevrel
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web developement, f12 tools, devtools
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
 <!-- Copyright 05/29/2019 Kayce Basques 
 
