@@ -2,7 +2,7 @@
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/29/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -119,7 +119,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 *   The **Sync** button emulates a background sync event.  
 *   The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button click.  
 *   The **Source** line tells you when the currently running service worker was installed.  The link is the name of the service worker's source file.  Clicking on the link sends you to the service worker's source.  
-*   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator \(`#171` in [**Figure 2**](#figure-2)\) is for the currently active Service Worker.  Next to the status you'll see a **start** button \(if the service worker is stopped\) or a **stop** button \(if the service worker is running\).  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button can simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.  
+*   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator \(`#36` in [**Figure 2**](#figure-2)\) is for the currently active Service Worker.  Next to the status you'll see a **start** button \(if the service worker is stopped\) or a **stop** button \(if the service worker is running\).  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button can simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.  
 *   The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you click on the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.  
 
 If the service worker causes any errors, a new label called **Errors** shows
