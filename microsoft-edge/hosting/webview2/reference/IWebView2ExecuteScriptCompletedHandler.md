@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ The caller implements this interface to receive the result of the ExecuteScript 
 
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
-> public HRESULT [Invoke](#invoke)(HRESULT errorCode,LPCWSTR resultObjectAsJson)
+> public HRESULT [Invoke](#interface_i_web_view2_execute_script_completed_handler_1ab6829bc120e77b7037cb0bc4288cb726)(HRESULT errorCode,LPCWSTR resultObjectAsJson)
 

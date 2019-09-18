@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -33,5 +33,5 @@ The args will be null.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,IUnknown * args)
+> public HRESULT [Invoke](#interface_i_web_view2_focus_changed_event_handler_1ae412248ebcebf2abafef6fd0a1a7f300)([IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) * webview,IUnknown * args)
 

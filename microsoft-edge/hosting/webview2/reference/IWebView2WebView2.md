@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,15 +17,11 @@ interface IWebView2WebView2
   : public IUnknown
 ```
 
-Additional functionality implemented by the primary WebView object.
-
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [Stop](#stop) | Stop all navigations and pending resource fetches.
-
-See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
 
 ## Members
 
@@ -33,5 +29,5 @@ See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for m
 
 Stop all navigations and pending resource fetches.
 
-> public HRESULT [Stop](#stop)()
+> public HRESULT [Stop](#interface_i_web_view2_web_view2_1aa15faaa3d7dd58fd1fe43853ec10dbd8)()
 

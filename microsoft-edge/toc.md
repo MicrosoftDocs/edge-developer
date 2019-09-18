@@ -26,8 +26,8 @@
 ### [What's new](devtools-guide-chromium/whats-new.md)  
 ### [IE mode](devtools-guide-chromium/ie-mode.md)  
 ### DevTools for Beginners
-#### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)  
-#### [CSS](devtools-guide-chromium/beginners/css.md)  
+#### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
+#### [CSS](devtools-guide-chromium/beginners/css.md)
 ### JavaScript
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)  
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)  

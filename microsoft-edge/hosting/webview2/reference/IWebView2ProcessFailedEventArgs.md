@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ Event args for the ProcessFailed event.
 
 The kind of process failure that has occurred.
 
-> public HRESULT [get_ProcessFailedKind](#get_processfailedkind)(WEBVIEW2_PROCESS_FAILED_KIND * processFailedKind)
+> public HRESULT [get_ProcessFailedKind](#interface_i_web_view2_process_failed_event_args_1a47207f3a4cc9eafe4d71c2f05058902b)(WEBVIEW2_PROCESS_FAILED_KIND * processFailedKind)
 
