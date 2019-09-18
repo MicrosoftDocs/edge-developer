@@ -10,14 +10,14 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge
 ---
 
-# interface IWebView2PermissionRequestedEventHandler 
+# interface IWebView2DocumentTitleChangedEventHandler 
 
 ```
-interface IWebView2PermissionRequestedEventHandler
+interface IWebView2DocumentTitleChangedEventHandler
   : public IUnknown
 ```
 
-The caller implements this interface to receive the PermissionRequested event.
+The caller implements this interface to receive DocumentTitleChanged events.
 
 ## Summary
 
@@ -25,11 +25,13 @@ The caller implements this interface to receive the PermissionRequested event.
 --------------------------------|---------------------------------------------
 [Invoke](#invoke) | Called to provide the implementer with the event args for the corresponding event.
 
+Use the DocumentTitle property to get the modified title.
+
 ## Members
 
 #### Invoke 
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2PermissionRequestedEventArgs](IWebView2PermissionRequestedEventArgs.md#iwebview2permissionrequestedeventargs) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView3](IWebView2WebView3.md#iwebview2webview3) * webview,IUnknown * args)
 
