@@ -10,14 +10,14 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge
 ---
 
-# interface IWebView2PermissionRequestedEventHandler 
+# interface IWebView2NewWindowRequestedEventHandler 
 
 ```
-interface IWebView2PermissionRequestedEventHandler
+interface IWebView2NewWindowRequestedEventHandler
   : public IUnknown
 ```
 
-The caller implements this interface to receive the PermissionRequested event.
+The caller implements this interface to receive NewWindowRequested events.
 
 ## Summary
 
@@ -31,5 +31,5 @@ The caller implements this interface to receive the PermissionRequested event.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2PermissionRequestedEventArgs](IWebView2PermissionRequestedEventArgs.md#iwebview2permissionrequestedeventargs) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2NewWindowRequestedEventArgs](IWebView2NewWindowRequestedEventArgs.md#iwebview2newwindowrequestedeventargs) * args)
 
