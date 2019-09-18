@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ The caller implements this interface to receive the ScriptDialogOpening event.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2ScriptDialogOpeningEventArgs](IWebView2ScriptDialogOpeningEventArgs.md#iwebview2scriptdialogopeningeventargs) * args)
+> public HRESULT [Invoke](#interface_i_web_view2_script_dialog_opening_event_handler_1af7224bf970411d54ae407aad75573a00)([IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) * webview,[IWebView2ScriptDialogOpeningEventArgs](IWebView2ScriptDialogOpeningEventArgs.md#interface_i_web_view2_script_dialog_opening_event_args) * args)
 
