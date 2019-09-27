@@ -76,7 +76,11 @@
 ##### [Page](devtools-protocol/0.2/domains/page.md)
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
-## [Extensions](extensions.md)
+## [Extensions (Chromium)](extensions-chromium/index.md)
+### Extensions for enterprise
+#### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
+#### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
+## [Extensions (EdgeHTML)](extensions/index.md)
 ### [API support](extensions/API-support.md)
 #### [Extension API roadmap](extensions/API-support/extension-API-roadmap.md)
 #### [Supported APIs](extensions/API-support/supported-APIs.md)
