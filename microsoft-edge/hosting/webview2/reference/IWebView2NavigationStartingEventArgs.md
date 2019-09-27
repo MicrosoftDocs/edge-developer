@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 09/27/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,7 +26,7 @@ Event args for the NavigationStarting event.
 [get_Uri](#get_uri) | The uri of the requested navigation.
 [get_IsUserInitiated](#get_isuserinitiated) | True when the navigation was initiated through a user gesture as opposed to programmatic navigation.
 [get_IsRedirected](#get_isredirected) | True when the navigation is redirected.
-[get_RequestHeaders](#get_requestheaders) | The HTTP request headers for the navigation.
+[get_RequestHeaders](#get_requestheaders) | The HTTP request headers for the navigation. Note, you cannot modify the http request header in a NavigationStarting event.
 [get_Cancel](#get_cancel) | The host may set this flag to cancel the navigation.
 [put_Cancel](#put_cancel) | Set the Cancel property.
 
@@ -52,7 +52,7 @@ True when the navigation is redirected.
 
 #### get_RequestHeaders 
 
-The HTTP request headers for the navigation.
+The HTTP request headers for the navigation. Note, you cannot modify the http request header in a NavigationStarting event.
 
 > public HRESULT [get_RequestHeaders](#get_requestheaders)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md#iwebview2httprequestheaders) ** requestHeaders)
 
