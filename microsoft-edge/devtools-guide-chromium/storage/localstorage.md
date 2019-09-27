@@ -2,7 +2,7 @@
 title: View And Edit Local Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2019
+ms.date: 09/27/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -42,7 +42,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 1.  Expand the **Local Storage** menu.  
     
     > ##### Figure 2  
-    > The **Local Storage** menu shows two domains: `https://developers.microsoft.com` and `https://www.bing.com`  
+    > The **Local Storage** menu shows two domains: `https://business.bing.com` and `https://www.bing.com`  
     > ![The Local Storage menu][ImageLocalStorageMenu]  
 
 1.  Click a domain to view its key-value pairs.  
@@ -54,8 +54,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 1.  Click a row of the table to view the value in the viewer below the table.  
     
     > ##### Figure 4  
-    > Viewing the value of the `yt-remote-connected-devices` key  
-    > ![Viewing the value of the yt-remote-connected-devices key][ImageLocalStorageViewer]  
+    > Viewing the value of the `eventLogQueue_Online` key  
+    > ![Viewing the value of the eventLogQueue_Online key][ImageLocalStorageViewer]  
 
 ## Create a new `localStorage` key-value pair   
 
@@ -102,7 +102,7 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
     
     > ##### Figure 8  
     > Interacting with `localStorage` from the **Console**  
-    > ![Interacting with localStorage from the Console][Image]  
+    > ![Interacting with localStorage from the Console][ImageLocalStorageConsole]  
 
  
 
@@ -110,17 +110,17 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 
 <!-- image links -->  
 
-[ImageDeleteIcon]: ../images/shared/delete.msft.png  
-[ImageClearIcon]: ../images/shared/clear.msft.png  
+[ImageDeleteIcon]: ../images/shared/delete-icon.msft.png  
+[ImageClearIcon]: ../images/shared/clear-icon.msft.png  
 
-[ImageJSContext]: images/js-context.msft.png "Figure 7: Changing the JavaScript context of the Console"  
-[ImageLocalStorage]: images/local-storage.msft.png "Figure 3: The localStorage key-value pairs for the https://www.bing.com domain"  
-[ImageLocalStorageConsole]: images/local-storage-console.msft.png "Figure 8: Interacting with localStorage from the Console"  
-[ImageLocalStorageCreate]: images/local-storage-create.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
-[ImageLocalStorageEdit]: images/local-storage-edit.msft.png "Figure 6: Editing a localStorage key"  
-[ImageLocalStorageMenu]: images/local-storage-menu.msft.png "Figure 2: The Local Storage menu"  
-[ImageLocalStorageViewer]: images/local-storage-viewer.msft.png "Figure 4: Viewing the value of the yt-remote-connected-devices key"  
-[ImageManifest]: images/manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageJSContext]: images/console-local-storage.msft.png "Figure 7: Changing the JavaScript context of the Console"  
+[ImageLocalStorage]: images/application-local-storage-view-key-value.msft.png "Figure 3: The localStorage key-value pairs for the https://www.bing.com domain"  
+[ImageLocalStorageConsole]: images/console-local-storage-interaction.msft.png "Figure 8: Interacting with localStorage from the Console"  
+[ImageLocalStorageCreate]: images/application-local-storage-new-key-value.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
+[ImageLocalStorageEdit]: images/application-local-storage-edit-key-value.msft.png "Figure 6: Editing a localStorage key"  
+[ImageLocalStorageMenu]: images/application-local-storage.msft.png "Figure 2: The Local Storage menu"  
+[ImageLocalStorageViewer]: images/application-local-storage-view-key-value-selected.msft.png "Figure 4: Viewing the value of the eventLogQueue_Online key"  
+[ImageManifest]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
 
 <!-- links -->  
 
