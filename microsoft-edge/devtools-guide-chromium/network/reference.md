@@ -2,7 +2,7 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2019
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -80,7 +80,7 @@ To save requests across page loads, check the **Preserve log** checkbox on the N
 
 Capture screenshots to analyze what users see as they wait for your page to load.  
 
-To enable screenshots, click **Capture screenshots** ![Capture screenshots][ImageCaptureScreenshotsIcon]  on the Network panel.  It turns blue when enabled.  
+To enable screenshots, click on **Network settings** and click **Capture screenshots** checkbox on the Network panel.  
 
 Reload the page while the Network panel is in focus to capture screenshots.  
 
@@ -94,13 +94,15 @@ After capturing a screenshot, you interact with it in the following ways:
 > Hovering over a screenshot  
 > ![Hovering over a screenshot][ImageScreenshotHover]  
 
-### Replay XHR request   
+<!--  ### Replay XHR request   -->
 
-To replay an XHR request, right-click the request in the Requests table and select **Replay XHR**.  
+<!--  To replay an XHR request, right-click the request in the Requests table and select **Replay XHR**.  -->
 
-> ##### Figure 5  
+<!--  
+> ##### Old Figure 5  
 > Selecting Replay XHR  
 > ![Selecting Replay XHR][ImageReplayXHR]  
+-->  
 
 ## Change loading behavior  
 
@@ -108,7 +110,7 @@ To replay an XHR request, right-click the request in the Requests table and sele
 
 To emulate how a first-time user experiences your site, check the **Disable cache** checkbox.  DevTools disables the browser cache.  This more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.  
 
-> ##### Figure 6  
+> ##### Figure 5  
 > The Disable Cache checkbox  
 > ![The Disable Cache checkbox][ImageDisableCacheCheckBox]  
 
@@ -123,7 +125,7 @@ If you want to disable the cache while working in other DevTools panels, use the
 
 To manually clear the browser cache at any time, right-click anywhere in the Requests table and select **Clear Browser Cache**.  
 
-> ##### Figure 7  
+> ##### Figure 6  
 > Selecting Clear Browser Cache  
 > ![Selecting Clear Browser Cache][ImageClearBrowserCache]  
 
@@ -134,21 +136,21 @@ A new class of web apps, called **Progressive Web Apps**, functions offline with
 <!--[ProgressiveWebApps]: /web/progressive-web-apps  -->
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Check the **Offline** checkbox to simulate a completely offline network experience.  
+Click the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate a completely offline network experience.  
 
-> ##### Figure 8  
-> The Offline checkbox  
-> ![The Offline checkbox][ImageOfflineCheckBox]  
+> ##### Figure 7  
+> The Offline dropdown menu  
+> ![The Offline dropdown menu][ImageOfflineDropdown]  
 
 ### Emulate slow network connections   
 
-Emulate 2G, 3G, and other connection speeds from the **Network Throttling** menu.  
+Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdown menu.  
 
-> ##### Figure 9  
-> The Network Throttling menu  
-> ![The Network Throttling menu][ImageNetworkPanelThrottlingMenu]  
+> ##### Figure 8  
+> The Throttling dropdown menu  
+> ![The Throttling dropdown menu][ImageNetworkThrottlingMenu]  
 
-You may select from a variety of presets, such as Regular or Good 2G.  You may also add your own custom presets by opening the Network Throttling menu  and selecting **Custom** > **Add**.  
+You may select from a variety of presets, such as Slow 3G or Fast 3G.  You may also add your own custom presets by opening the Throttling menu and selecting **Custom** > **Add**.  
 
 DevTools displays a warning icon next to the **Network** tab to remind you that throttling is enabled.  
 
@@ -157,13 +159,13 @@ DevTools displays a warning icon next to the **Network** tab to remind you that 
 If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.  
 
 1.  Open the [Network Conditions drawer][NetworkConditions].  
-1.  Select your desired connection speed from the **Network Throttling** menu.  
+1.  Select your desired connection speed from the **Throttling** menu.  
 
 ### Manually clear browser cookies   
 
 To manually clear browser cookies at any time, right-click anywhere in the Requests table and select **Clear Browser Cookies**.  
 
-> ##### Figure 10  
+> ##### Figure 9  
 > Selecting Clear Browser Cookies  
 > ![Selecting Clear Browser Cookies][ImageClearBrowserCookies]  
 
@@ -184,12 +186,12 @@ Use the **Filter** text box to filter requests by properties, such as the domain
 If you do not see the text box, the Filters pane is probably hidden.  
 See [Hide the Filters pane](#hide-the-filters-pane).  
 
-> ##### Figure 11  
+> ##### Figure 10  
 > The Filters text box  
 > ![The Filters text box][ImageFilterTextBox]  
 
-You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/gif larger-than:1K` displays
-all GIFs that are larger than one kilobyte.  These multi-property filters are equivalent to AND operations.  OR operations are currently not supported.  
+You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays
+all PNGs that are larger than one kilobyte.  These multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
 
 Below is a complete list of supported properties.  
 
@@ -213,9 +215,9 @@ To filter requests by request type, click the **XHR**, **JS**, **CSS**, **Img**,
 If you do not see these buttons, the Filters pane is probably hidden.  
 See [Hide the Filters pane](#hide-the-filters-pane).  
 
-To enable multiple type filters simultaneously, hold `Control`\(Windows\) or `Command` \(macOS\) and then click.  
+To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then click.  
 
-> ##### Figure 12  
+> ##### Figure 11  
 > Using the Type filters to display JS, CSS, and Document resources  
 > ![Using the Type filters to display JS, CSS, and Document resources][ImageMultiTypeFilter]  
 
@@ -223,9 +225,9 @@ To enable multiple type filters simultaneously, hold `Control`\(Windows\) or `Co
 
 Click and drag left or right on the Overview pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.  
 
-> ##### Figure 13  
-> Filtering out any requests that were inactive around 2500ms  
-> ![Filtering out any requests that were inactive around 2500ms][ImageOverviewFilter]  
+> ##### Figure 12  
+> Filtering out any requests that were inactive around 300ms  
+> ![Filtering out any requests that were inactive around 300ms][ImageOverviewFilter]  
 
 ### Hide data URLs  
 
@@ -233,7 +235,7 @@ Click and drag left or right on the Overview pane to only display requests that 
 
 Check the **Hide data URLs** checkbox to hide these requests.  
 
-> ##### Figure 14  
+> ##### Figure 13  
 > The Hide Data URLs checkbox  
 > ![The Hide Data URLs checkbox][ImageHideDataURLsCheckBox]  
 
@@ -257,7 +259,7 @@ To change how the Waterfall sorts requests, right-click the header of the Reques
 
 These descriptions assume that each respective option is ranked from shortest to longest.  Clicking on the header of the **Waterfall** column reverses the order.  
 
-> ##### Figure 15  
+> ##### Figure 14  
 > Sorting the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)  
 > ![Sorting the Waterfall by total duration][ImageWaterfallTotalDuration]  
 
@@ -270,7 +272,7 @@ Use the Network panel to analyze requests.
 
 Use the Requests table to view a log of all requests made while DevTools has been open.  Clicking or hovering over requests reveals more information about each item.  
 
-> ##### Figure 16  
+> ##### Figure 15  
 > The Requests table  
 > ![The Requests table][ImageRequestsTable]  
 
@@ -292,7 +294,7 @@ The Requests table displays the following columns by default:
 
 Right-click the header of the Requests table and select an option to hide or show it.  Currently displayed options have checkmarks next to each item.  
 
-> ##### Figure 17  
+> ##### Figure 16  
 > Adding a column to the Requests table  
 > ![Adding a column to the Requests table][ImageRequestsTableAddColumn]  
 
@@ -300,7 +302,7 @@ Right-click the header of the Requests table and select an option to hide or sho
 
 To add a custom column to the Requests table, right-click the header of the Requests table and select **Response Headers** > **Manage Header Columns**.  
 
-> ##### Figure 18  
+> ##### Figure 17  
 > Adding a custom column to the Requests table  
 > ![Adding a custom column to the Requests table][ImageRequestsTableCustomColumn]  
 
@@ -312,35 +314,37 @@ So, requests that are farther to the left started earlier than those that are fa
 
 See [Sort by activity phase](#sort-by-activity-phase) to see the different ways that you may sort the Waterfall.  
 
-> ##### Figure 19  
+> ##### Figure 18  
 > The Waterfall column of the Requests pane  
 > ![The Waterfall column of the Requests pane][ImageRequestsTableWaterfallColumn]  
 
-### Analyze the frames of a WebSocket Connection   
+<!-- ### Analyze the frames of a WebSocket Connection   -->
 
-To view the frames of a WebSocket connection:  
+<!--To view the frames of a WebSocket connection:  
 
 1.  Click the URL of the WebSocket connection, under the **Name** column of the Requests table.  
 1.  Click the **Frames** tab.  The table shows the last 100 frames.  
 
-To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the Requests table.  
+To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
-> ##### Figure 20  
+<!--
+> ##### Old Figure 20  
 > The Frames tab  
 > ![The Frames tab][ImageFrames]  
+-->
 
-The table contains three columns:  
+<!--The table contains three columns:  
 
 *   **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: Continuation Frame, Binary Frame, Connection Close Frame, Ping Frame, and Pong Frame.  
 *   **Length**.  The length of the message payload, in bytes.  
-*   **Time**.  The time when the message was received or sent.  
+*   **Time**.  The time when the message was received or sent.  -->
 
-Messages are color-coded according to their type:  
+<!--Messages are color-coded according to their type:  
 
 *   Outgoing text messages are light-green.  
 *   Incoming text messages are white.  
 *   WebSocket opcodes are light-yellow.  
-*   Errors are light-red.  
+*   Errors are light-red.  -->
 
 ### View a preview of a response body   
 
@@ -351,7 +355,7 @@ To view a preview of a response body:
 
 This tab is mostly useful for viewing images.  
 
-> ##### Figure 21  
+> ##### Figure 19  
 > The Preview tab  
 > ![The Preview tab][ImagePreview]  
 
@@ -362,7 +366,7 @@ To view the response body to a request:
 1.  Click the URL of the request, under the **Name** column of the Requests table.  
 1.  Click the **Response** tab.  
 
-> ##### Figure 22  
+> ##### Figure 20  
 > The Response tab  
 > ![The Response tab][ImageResponse]  
 
@@ -373,7 +377,7 @@ To view HTTP header data about a request:
 1.  Click on the URL of the request, under the **Name** column of the Requests table.  
 1.  Click the **Headers** tab.  
 
-> ##### Figure 23  
+> ##### Figure 21  
 > The Headers tab  
 > ![The Headers tab][ImageHeaders]  
 
@@ -391,7 +395,7 @@ To view the query string parameters of a URL in a human-readable format:
 1.  Open the **Headers** tab for the request that interests you.  See [View HTTP headers](#view-http-headers).  
 1.  Go to the **Query String Parameters** section.  
 
-> ##### Figure 24  
+> ##### Figure 22  
 > The Query String Parameters section  
 > ![The Query String Parameters section][ImageQueryStringParameters]  
 
@@ -421,7 +425,7 @@ To view the cookies sent in the HTTP header of a request:
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
 <!--TODO: add link when section is available -->
 
-> ##### Figure 25  
+> ##### Figure 23  
 > The Cookies tab  
 > ![The Cookies tab][ImageCookies]  
 
@@ -436,7 +440,7 @@ See [Preview a timing breakdown](#preview-a-timing-breakdown) for a faster way t
 
 See [Timing breakdown phases explained](#timing-breakdown-phases-explained) for more information about each of the phases that you may see in the Timing tab.  
 
-> ##### Figure 26  
+> ##### Figure 24  
 > The Timing tab  
 > ![The Timing tab][ImageTiming]  
 
@@ -450,7 +454,7 @@ To view a preview of the timing breakdown of a request, hover over the entry for
 
 See [View the timing breakdown of a request](#view-the-timing-breakdown-of-a-request) for a way to access this data that does not require hovering.  
 
-> ##### Figure 27  
+> ##### Figure 25  
 > Previewing the timing breakdown of a request  
 > ![Previewing the timing breakdown of a request][ImageWaterfallHover]  
 
@@ -478,7 +482,7 @@ More information about each of the phases you may see in the Timing tab:
 
 To view the initiators and dependencies of a request, hold `Shift`and hover over the request in the Requests table.  DevTools colors: initiators are shown in green and dependencies are shown in red.  
 
-> ##### Figure 28  
+> ##### Figure 26  
 > Viewing the initiators and dependencies of a request  
 > ![Viewing the initiators and dependencies of a request][ImageRequestInitiatorsDependencies]  
 
@@ -488,7 +492,7 @@ When the Requests table is ordered chronologically, the first green request abov
 
 DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the Network panel.  The `DOMContentLoaded` event is colored blue, and the `load` event is red.  
 
-> ##### Figure 29  
+> ##### Figure 27  
 > The locations of the `DOMContentLoaded` and `load` events on the Network panel  
 > ![The locations of the DOMContentLoaded and load events on the Network panel][ImageNetworkPanelDOMContentLoadedLoadEvents]  
 
@@ -499,7 +503,7 @@ The total number of requests is listed in the Summary pane, at the bottom of the
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.  
 
-> ##### Figure 30  
+> ##### Figure 28  
 > The total number of requests since DevTools was opened  
 > ![The total number of requests since DevTools was opened][ImageTotalRequests]  
 
@@ -510,7 +514,7 @@ The total download size of requests is listed in the Summary pane, at the bottom
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.  
 
-> ##### Figure 31  
+> ##### Figure 29  
 > The total download size of requests  
 > ![The total download size of requests][ImageTotalSize]  
 
@@ -520,17 +524,33 @@ See [View the uncompressed size of a resource](#view-the-uncompressed-size-of-a-
 
 After a JavaScript statement requests a resource, hover over the **Initiator** column to view the stack trace leading up to the request.  
 
-> ##### Figure 32  
+<!-- [codepen.io/contoso/pen/yLBrOWa?editors=0010#0](https://codepen.io/contoso/pen/yLBrOWa?editors=0010#0) -->  
+
+<!--
+```javascript
+function init() {
+  getData();
+}
+
+function getData() {
+  fetch('https:/httpbin.org/get?message=hi');
+}
+
+init();
+```  
+-->  
+
+> ##### Figure 30  
 > The stack trace leading up to a resource request  
 > ![The stack trace leading up to a resource request][ImageInitiatorStack]  
 
 ### View the uncompressed size of a resource   
 
-Click **Use large request rows** ![Use large request rows][ImageLargeResourceRowsIcon]  and then look at the bottom value of the **Size** column.  
+Select the **Use large request rows** checkbox and then look at the bottom value of the **Size** column.  
 
-> ##### Figure 33  
-> An example of uncompressed resources  \(The compressed size of the `jquery-bundle.js` file that was sent over the network was `30.9 KB`, whereas the uncompressed size was `86.3 KB`\)  
-> ![An example of uncompressed resources][ImageLargeRequestRows]  
+> ##### Figure 31  
+> An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)  
+> ![An example of uncompressed resources][ImageUncompressedResources]  
 
 ## Export requests data   
 
@@ -547,7 +567,7 @@ Once you save a HAR file, you may import it back into DevTools for analysis.  Ju
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
 
-> ##### Figure 34  
+> ##### Figure 32  
 > Selecting Save as HAR with Content  
 > ![Selecting Save as HAR with Content][ImageSaveAsHAR]  
 
@@ -557,11 +577,13 @@ Under the **Name** column of the Requests table, right-click a request, hover ov
 
 *   **Copy Link Address**.  Copy the URL of the request to the clipboard.  
 *   **Copy Response**.  Copy the response body to the clipboard.  
+*   **Copy as Fetch**.  
 *   **Copy as cURL**.  Copy the request as a cURL command.  
+*   **Copy All as Fetch**.  
 *   **Copy All as cURL**.  Copy all requests as a chain of cURL commands.  
 *   **Copy All as HAR**.  Copy all requests as HAR data.  
 
-> ##### Figure 35  
+> ##### Figure 33  
 > Selecting Copy Response  
 > ![Selecting Copy Response][ImageCopyResponse]  
 
@@ -574,7 +596,7 @@ You may expand or collapse sections of the Network panel UI to focus important i
 By default, DevTools shows the **Filters pane**.  
 Click **Filter** ![Filter][ImageFilterIcon]  to hide it.  
 
-> ##### Figure 36  
+> ##### Figure 34  
 > The Hide Filters button  
 > ![The Hide Filters button][ImageHideFiltersButton]  
 
@@ -582,24 +604,25 @@ Click **Filter** ![Filter][ImageFilterIcon]  to hide it.
 
 Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.  
 
-> ##### Figure 37  
+> ##### Figure 35  
 > An example of large request rows in the Requests pane  
 > ![An example of large request rows in the Requests pane][ImageLargeRequestRows]  
 
-Click **Use large request rows** ![Use large request rows][ImageLargeResourceRowsIcon]  to enable large rows.  
+Select the **Use large request rows** checkbox to enable large rows.  
 
-> ##### Figure 38  
-> The Large Request Rows button  
-> ![The Large Request Rows button][ImageLargeRequestRowsButton]  
+> ##### Figure 36  
+> The Large Request Rows checkbox  
+> ![The Large Request Rows checkbox][ImageLargeRequestRowsCheckbox]  
 
 ### Hide the Overview pane   
 
 By default, DevTools shows the **Overview pane**.  
-Click **Hide overview** ![Hide overview][ImageHideIcon]  to hide it.  
+Deselect the **Show Overview** checkbox to hide it.  
 
-> ##### Figure 39  
-> The Hide Overview buttonn  
-> ![The Hide Overview button][ImageHideOverviewButton]  
+> ##### Figure 37  
+> The Show Overview checkbox  
+> ![The Show Overview checkbox][ImageHideOverviewCheckbox]  
+
  
 
   
@@ -608,50 +631,50 @@ Click **Hide overview** ![Hide overview][ImageHideIcon]  to hide it.
 
 [ImageCaptureScreenshotsIcon]: images/capture-screenshots-icon.msft.png  
 [ImageClearIcon]: images/clear-requests-icon.msft.png  
-[ImageFilterIcon]: imgs/filter-icon.msft.png  
+[ImageFilterIcon]: images/filter-icon.msft.png  
 [ImageHideIcon]: images/hide-overview-icon.msft.png  
 [ImageLargeResourceRowsIcon]: images/large-resource-rows-button-icon.msft.png  
 [ImageRecordOnIcon]: images/record-on-icon.msft.png  
 
-[ImageClearBrowserCache]: images/clear-browser-cache.msft.png "Figure 7: Selecting Clear Browser Cache"  
-[ImageClearBrowserCookies]: images/clear-browser-cookies.msft.png "Figure 10: Selecting Clear Browser Cookies"  
-[ImageClearButton]: images/clear.msft.png "Figure 2: The Clear button"  
-[ImageCookies]: images/cookies.msft.png "Figure 25: The Cookies tab"  
-[ImageCopyResponse]: images/copy.msft.png "Figure 35: Selecting Copy Response"  
-[ImageDisableCacheCheckBox]: images/disable-cache.msft.png "Figure 6: The Disable Cache checkbox"  
-[ImageFilterTextBox]: images/filter-text-box.msft.png "Figure 11: The Filters text box"  
-[ImageFrames]: images/frames.msft.png "Figure 20: The Frames tab"  
-[ImageHeaders]: ../images/headers.msft.png "Figure 23: The Headers tab"  
-[ImageHideDataURLsCheckBox]: images/hide-data-urls.msft.png "Figure 14: The Hide Data URLs checkbox"  
-[ImageHideFiltersButton]: images/hide-filters.msft.png "Figure 36: The Hide Filters button"  
-[ImageHideOverviewButton]: images/hide-overview.msft.png "Figure 39: The Hide Overview button"  
-[ImageInitiatorStack]: images/initiator-stack.msft.png "Figure 32: The stack trace leading up to a resource request"  
-[ImageLargeRequestRowsButton]: images/large-request-rows.msft.png "Figure 38: The Large Request Rows button"  
-[ImageMultiTypeFilter]: images/multi-type-filter.msft.png "Figure 12: Using the Type filters to display JS, CSS, and Document resources"  
-[ImageNetworkPanel]: images/network.msft.png "Figure 1: The Network panel"  
-[ImageNetworkPanelDOMContentLoadedLoadEvents]: images/load-events.msft.png "Figure 29: The locations of the DOMContentLoaded and load events on the Network panel"  
-[ImageNetworkPanelThrottlingMenu]: images/network-panel-throttling-menu.msft.png "Figure 9: The Network Throttling menu"  
-[ImageOfflineCheckBox]: images/offline.msft.png "Figure 8: The Offline checkbox"  
-[ImageOverviewFilter]: images/overview-filter.msft.png "Figure 13: Filtering out any requests that were inactive around 2500ms"  
-[ImagePreserveLogCheckBox]: images/preserve-log.msft.png "Figure 3: The Preserve Log checkbox"  
-[ImagePreview]: images/preview.msft.png "Figure 21: The Preview tab"  
-[ImageQueryStringParameters]: images/query-string.msft.png "Figure 24: The Query String Parameters section"  
-[ImageReplayXHR]: images/replay-xhr.msft.png "Figure 5: Selecting Replay XHR"  
-[ImageRequestInitiatorsDependencies]: images/initiators-dependencies.msft.png "Figure 28: Viewing the initiators and dependencies of a request"  
-[ImageRequestsLargeRequestRows]: images/large-request-rows.msft.png "Figure 37: An example of large request rows in the Requests pane"  
-[ImageRequestsTable]: images/requests-table.msft.png "Figure 16: The Requests table"  
-[ImageRequestsTableAddColumn]: images/add-column.msft.png "Figure 17: Adding a column to the Requests table"  
-[ImageRequestsTableCustomColumn]: images/custom-column.msft.png "Figure 18: Adding a custom column to the Requests table"  
-[ImageRequestsTableWaterfallColumn]: images/waterfall.msft.png "Figure 19: The Waterfall column of the Requests pane"  
-[ImageResponse]: images/response.msft.png "Figure 22: The Response tab"  
-[ImageSaveAsHAR]: images/save-as-har.msft.png "Figure 34: Selecting Save as HAR with Content"  
-[ImageScreenshotHover]: images/screenshot-hover.msft.png "Figure 4: Hovering over a screenshot"  
-[ImageTiming]: images/timing.msft.png "Figure 26: The Timing tab"  
-[ImageTotalRequests]: images/total-requests.msft.png "Figure 30: The total number of requests since DevTools was opened"  
-[ImageTotalSize]: images/total-size.msft.png "Figure 31: The total download size of requests"  
-[ImageUncompressedResources]: images/large-request-rows.msft.png "Figure 33: An example of uncompressed resources"  
-[ImageWaterfallHover]: images/waterfall-hover.msft.png "Figure 27: Previewing the timing breakdown of a request"  
-[ImageWaterfallTotalDuration]: images/waterfall-total-duration.msft.png "Figure 15: Sorting the Waterfall by total duration"  
+[ImageClearBrowserCache]: images/network-clear-browser-cache.msft.png "Figure 6: Selecting Clear Browser Cache"  
+[ImageClearBrowserCookies]: images/network-clear-browser-cookies.msft.png "Figure 9: Selecting Clear Browser Cookies"  
+[ImageClearButton]: images/network-clear-button.msft.png "Figure 2: The Clear button"  
+[ImageCookies]: images/network-resources-cookies.msft.png "Figure 23: The Cookies tab"  
+[ImageCopyResponse]: images/network-requests-copy-response.msft.png "Figure 33: Selecting Copy Response"  
+[ImageDisableCacheCheckBox]: images/network-disable-cache-checkbox.msft.png "Figure 5: The Disable Cache checkbox"  
+[ImageFilterTextBox]: images/network-filters-textbox.msft.png "Figure 10: The Filters text box"  
+<!--[ImageFrames]: images/frames.msft.png "Old Figure 20: The Frames tab"  -->  
+[ImageHeaders]: ../images/network-resources-headers.msft.png "Figure 21: The Headers tab"  
+[ImageHideDataURLsCheckBox]: images/network-hide-data-urls.msft.png "Figure 13: The Hide Data URLs checkbox"  
+[ImageHideFiltersButton]: images/network-resources-hide-filters-button.msft.png "Figure 34: The Hide Filters button"  
+[ImageHideOverviewCheckbox]: images/network-requests-show-overview-off.msft.png "Figure 37: The Hide Overview checkbox"  
+[ImageInitiatorStack]: images/network-requests-initiator-stack.msft.png "Figure 30: The stack trace leading up to a resource request"  
+[ImageLargeRequestRowsCheckbox]: images/network-requests-use-large-request-rows-on.msft.png "Figure 36: The Large Request Rows checkbox"  
+[ImageMultiTypeFilter]: images/network-type-filters.msft.png "Figure 11: Using the Type filters to display JS, CSS, and Document resources"  
+[ImageNetworkPanel]: images/network-panel.msft.png "Figure 1: The Network panel"  
+[ImageNetworkPanelDOMContentLoadedLoadEvents]: images/network-requests-load-events.msft.png "Figure 27: The locations of the DOMContentLoaded and load events on the Network panel"  
+[ImageNetworkThrottlingMenu]: images/network-throttling-menu.msft.png "Figure 8: The Network Throttling menu"  
+[ImageOfflineDropdown]: images/network-offline-dropdown.msft.png "Figure 7: The Offline dropdown menu"  
+[ImageOverviewFilter]: images/network-overview-filter.msft.png "Figure 12: Filtering out any requests that were inactive around 300ms"  
+[ImagePreserveLogCheckBox]: images/network-preserve-log.msft.png "Figure 3: The Preserve Log checkbox"  
+[ImagePreview]: images/network-resources-preview.msft.png "Figure 19: The Preview tab"  
+[ImageQueryStringParameters]: images/network-resources-headers-query-string-parameters.msft.png "Figure 22: The Query String Parameters section"  
+<!--[ImageReplayXHR]: images/replay-xhr.msft.png "Old Figure 5: Selecting Replay XHR"  -->  
+[ImageRequestInitiatorsDependencies]: images/network-resources-initiators-dependencies.msft.png "Figure 26: Viewing the initiators and dependencies of a request"  
+[ImageLargeRequestRows]: images/network-requests-large-request-rows.msft.png "Figure 35: An example of large request rows in the Requests pane"  
+[ImageRequestsTable]: images/network-requests-table.msft.png "Figure 15: The Requests table"  
+[ImageRequestsTableAddColumn]: images/network-requests-add-column.msft.png "Figure 16: Adding a column to the Requests table"  
+[ImageRequestsTableCustomColumn]: images/network-requests-add-custom.msft.png "Figure 17: Adding a custom column to the Requests table"  
+[ImageRequestsTableWaterfallColumn]: images/network-requests-waterfall.msft.png "Figure 18: The Waterfall column of the Requests pane"  
+[ImageResponse]: images/network-resources-response.msft.png "Figure 20: The Response tab"  
+[ImageSaveAsHAR]: images/network-requests-save-har-content.msft.png "Figure 32: Selecting Save as HAR with Content"  
+[ImageScreenshotHover]: images/network-screenshot-hover.msft.png "Figure 4: Hovering over a screenshot"  
+[ImageTiming]: images/network-resources-timing.msft.png "Figure 24: The Timing tab"  
+[ImageTotalRequests]: images/network-total-requests.msft.png "Figure 28: The total number of requests since DevTools was opened"  
+[ImageTotalSize]: images/network-total-download-size.msft.png "Figure 29: The total download size of requests"  
+[ImageUncompressedResources]: images/network-requests-uncompressed-compare.msft.png "Figure 31: An example of uncompressed resources"  
+[ImageWaterfallHover]: images/network-resources-waterfall-hover.msft.png "Figure 25: Previewing the timing breakdown of a request"  
+[ImageWaterfallTotalDuration]: images/network-waterfall-total-duration.msft.png "Figure 14: Sorting the Waterfall by total duration"  
 
 <!-- links -->  
 
