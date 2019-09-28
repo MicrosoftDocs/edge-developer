@@ -2,7 +2,7 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2019
+ms.date: 09/27/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -66,7 +66,7 @@ Workspaces is known to not work with these frameworks:
 
 **Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a page, and you need to see those changes across page loads, but you do not care about mapping your changes to the source code of the page.  
 
-<!-- [LO]: /web/updates/2018/01/devtools#overrides -->  
+<!-- [LocalOverrides]: /web/updates/2018/01/devtools#overrides -->  
 <!--Todo: add section when content is ready  -->  
 
 ## Step 1: Setup   
@@ -78,13 +78,12 @@ Complete this tutorial to get hands-on experience with Workspaces.
 1.  **Open the demo**.  In the top-left of the editor, a randomly-generated project name is displayed.  
     
     > ##### Figure 1  
-    > A Glitch project with a randomly-generated name
-    > ![A Glitch project with a randomly-generated name][ImageGlitchProject]  
+    > A Glitch project
+    > ![A Glitch project][ImageGlitchProject]  
 
-<!-- [GlitchWorkspacesDemo]: https://glitch.com/edit/#!/remix/workspaces "Workspaces Demo"  -->  
-<!--Todo: redo the demo on glitch with updated names  -->  
+[GlitchWorkspacesDemo]: https://microsoft-edge-chromium-devtools.glitch.me/workspaces-demo/ "Workspaces Demo"  
 
-1.  Click the randomly-generated project name.  For example, in [Figure 1](#figure-1) you should click **desert-cycle**.  
+<!-- 1.  Click the project name.  
 1.  Select **Advanced Options** > **Download Project**.  
     
     > ##### Figure 2  
@@ -92,20 +91,21 @@ Complete this tutorial to get hands-on experience with Workspaces.
     > ![The Download Project button][ImageDownloadProjectButton]  
 
 1.  Close the tab.  
-1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  
+1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+1.  Create an `app` directory on your desktop.  Save copies of the files in the `app` directory.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  
 1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.  
     
     ```bash
-    cd ~/Desktop/app`
-    python -m SimpleHTTPServer` # Python 2
+    cd ~/Desktop/app
+    python -m SimpleHTTPServer # Python 2
     ```  
     
     ```bash
-    cd ~/Desktop/app`
-    python -m http.server` # Python 3
+    cd ~/Desktop/app
+    python -m http.server # Python 3
     ```  
     
-1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it via a URL like `localhost:8080`.  The exact [port number][WikiPortURLs] may be different.  
+1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it via a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
     
     > ##### Figure 3  
     > The demo  
@@ -137,22 +137,22 @@ Complete this tutorial to get hands-on experience with Workspaces.
 
 ## Step 2: Save a CSS change to disk   
 
-1.  Open `~/Desktop/app/styles.css` in a text editor.  Notice how the `color` property of `h1` elements is set to `fuchsia`.  
+1.  Open `styles.css`.  Notice how the `color` property of `h1` elements is set to `fuchsia`.  
     
     > ##### Figure 7  
     > Viewing `styles.css` in a text editor  
     > ![Viewing styles.css in a text editor][ImageStylesFuchsia]  
 
-1.  Close the text editor.  
-1.  Back in DevTools, click the **Elements** tab.  
+
+1.  Click the **Elements** tab.  
 1.  Change the value of the `color` property of the `<h1>` element to your favorite color.  
     Remember that you need to click the `<h1>` element in the **DOM Tree** in order to see the CSS rules applied to it in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.  
     
     > ##### Figure 8  
-    > Setting the `color` property of the `h1` element to `green`  
-    > ![Setting the color property of the h1 element to green][ImageStylesGreen]  
+    > The green indicator that the file is linked  
+    > ![The green indicator that the file is linked][ImageStylesGreen]  
 
-1.  Open `~/Desktop/app/styles.css` in a text editor again.  The `color` property is now set to your favorite color.  
+1.  Open `styles.css` in a text editor again.  The `color` property is now set to your favorite color.  
 1.  Reload the page.  The color of the `<h1>` element is still set to your favorite color.  This works because when you made the change, DevTools saved the change to disk.  And then, when you reloaded the page, your local server served the modified copy of the file from disk.  
 
 ## Step 3: Save an HTML change to disk   
@@ -282,19 +282,19 @@ Use what you have learned in this tutorial to set up Workspaces in your own proj
 
 <!-- image links -->  
 
-[ImageCommandMenuQuickSource]: images/commandmenu.msft.png "Opening the Quick Source tab via Command Menu"  
-[ImageConsolePanel]: images/console.msft.png "Figure 4: The Console panel"  
-[ImageDemo]: images/demo.msft.png "Figure 3: The demo"  
-[ImageDownloadProjectButton]: images/download.msft.png "Figure 2: The Download Project button"  
-[ImageElementsCake]: images/cake.msft.png "Attempting to change HTML from the DOM Tree of the Elements panel"  
-[ImageFilesystem]: images/filesystem.msft.png "The Filesystem tab"  
-[ImageGlitchProject]: images/glitch.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
-[ImageMapping]: images/mapping.msft.png "Figure 6: The Filesystem tab now shows a mapping between the local files and the network ones"  
-[ImageOpenFileDialog]: images/open.msft.png "Opening script.js via the Open File dialog"  
-[ImageScriptItalic]: images/italic.msft.png "Figure 13: The link on the page is now italic"  
-[ImageSourcesCakeHTML]: images/cakehtml.msft.png "Figure 10: Changing HTML from the Sources panel"  
-[ImageStylesFuchsia]: images/fuchsia.msft.png "Figure 7: Viewing styles.css in a text editor"  
-[ImageStylesGreen]: images/green.msft.png "Setting the color property of the h1 element to green"  
+[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Opening the Quick Source tab via Command Menu"  
+[ImageConsolePanel]: images/workspaces-demo-console.msft.png "Figure 4: The Console panel"  
+[ImageDemo]: images/workspaces-demo.msft.png "Figure 3: The demo"  
+[ImageDownloadProjectButton]: images/glitch-advanced-options-download-project.msft.png "Figure 2: The Download Project button"  
+[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Attempting to change HTML from the DOM Tree of the Elements panel"  
+[ImageFilesystem]: images/workspaces-demo-sources-filesystem.msft.png "The Filesystem tab"  
+[ImageGlitchProject]: images/glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
+[ImageMapping]: images/workspaces-demo-sources-filesystem-folder.msft.png "Figure 6: The Filesystem tab now shows a mapping between the local files and the network ones"  
+[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Opening script.js via the Open File dialog"  
+[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 13: The link on the page is now italic"  
+[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 10: Changing HTML from the Sources panel"  
+[ImageStylesFuchsia]: images/workspaces-demo-sources-filesystem-css.msft.png "Figure 7: Viewing styles.css in a text editor"  
+[ImageStylesGreen]: images/workspaces-demo-elements-styles-css.msft.png "The green indicator that the file is linked"  
 
 <!-- links -->  
 
