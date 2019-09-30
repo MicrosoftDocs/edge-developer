@@ -2,7 +2,7 @@
 title: View Application Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/12/2019
+ms.date: 09/30/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -57,7 +57,7 @@ The **Type** column represents the [category of the resource][MDNHTMLResourcesIn
 *   **Network**.  The manifest specified that this resource must come from the network.  
 *   **Fallback**.  The URL is a fallback for another resource.  The URL of the other resource is not listed in DevTools.  
 
-At the bottom of the table there are status icons indicating your network connection and the status of the Application Cache.  The Application Cache may have the following statuses:  
+At the bottom of the table there are status icons indicating your network connection and the status of the Application Cache.  The Application Cache may have the following states:  
 
 *   **IDLE**.  The cache has no new changes.  
 *   **CHECKING**.  The manifest is being fetched and checked for updates.  
@@ -70,8 +70,8 @@ At the bottom of the table there are status icons indicating your network connec
 
 
 <!-- image links -->  
-[ImageApplicationCachePane]: images/app-cache.msft.png "Figure 2: The Application Cache pane"  
-[ImageManifestPane]: images/manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageApplicationCachePane]: images/cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
+[ImageManifestPane]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
 
 <!-- links -->  
 
