@@ -29,6 +29,7 @@
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### JavaScript
+#### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
