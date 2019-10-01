@@ -30,6 +30,8 @@
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### JavaScript
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
+### Performance
+#### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
