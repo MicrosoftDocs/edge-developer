@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ Event args for the DevToolsProtocolEventReceived event.
 
 The parameter object of the corresponding DevToolsProtocol event represented as a JSON string.
 
-> public HRESULT [get_ParameterObjectAsJson](#interface_i_web_view2_dev_tools_protocol_event_received_event_args_1a880a8a3dc86d43d4d78c86408cc26f0d)(LPWSTR * parameterObjectAsJson)
+> public HRESULT [get_ParameterObjectAsJson](#get_parameterobjectasjson)(LPWSTR * parameterObjectAsJson)
 

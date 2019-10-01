@@ -31,6 +31,8 @@
 ### JavaScript
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
+### Performance
+#### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
@@ -77,7 +79,11 @@
 ##### [Page](devtools-protocol/0.2/domains/page.md)
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
-## [Extensions](extensions.md)
+## [Extensions (Chromium)](extensions-chromium/index.md)
+### Extensions for enterprise
+#### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
+#### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
+## [Extensions (EdgeHTML)](extensions/index.md)
 ### [API support](extensions/API-support.md)
 #### [Extension API roadmap](extensions/API-support/extension-API-roadmap.md)
 #### [Supported APIs](extensions/API-support/supported-APIs.md)

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/17/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **We recommend using the Canary channel and the minimum required version is 77.0.190.0**.
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **We recommend using the Canary channel and the minimum required version is 78.0.270.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
@@ -37,15 +37,20 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 ![manageNugetPackages](images/manageNugetPackages.PNG)
 
-2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** inthe right hand side window and install the latest SDK. Nuget will download the SDK to your machine. While we use [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](https://docs.microsoft.com/en-us/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019) to make working with COM easier in this walkthrough, they are completely optional.
+
+![nuget](images/wil.PNG)
+
+3. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
 
 ![nuget](images/nuget.PNG)
 
-3. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
+4. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
 
 ```cpp
 ...
 #include <wrl.h>
+#include <wil/com.h>
 // include WebView2 header
 #include "WebView2.h"
 ```
@@ -69,7 +74,7 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
 
 // Locate the browser and set up the environment for WebView
-CreateWebView2EnvironmentWithDetails(nullptr, nullptr, WEBVIEW2_RELEASE_CHANNEL_PREFERENCE_CANARY, nullptr,
+CreateWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
     Callback<IWebView2CreateWebView2EnvironmentCompletedHandler>(
         [hWnd](HRESULT result, IWebView2Environment* env) -> HRESULT {
 

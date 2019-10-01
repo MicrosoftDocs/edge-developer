@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,7 +31,7 @@ This interface is used to complete deferrals on event args that support getting 
 
 Completes the associated deferred event.
 
-> public HRESULT [Complete](#interface_i_web_view2_deferral_1a6deb6e4fc4404638ae1ccdea8c62ffd4)()
+> public HRESULT [Complete](#complete)()
 
 Complete should only be called once for each deferral taken.
 
