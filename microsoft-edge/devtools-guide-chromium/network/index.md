@@ -357,7 +357,7 @@ How does a page look and behave when some of the page resources are not availabl
 1.  Click **Add**.  
 1.  Reload the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
     
-    > [NOTE]
+    > [!NOTE]
     > The `main.css` row in the Network Log.  The red text means that the resource was blocked.
     
     > ##### Figure 32  
