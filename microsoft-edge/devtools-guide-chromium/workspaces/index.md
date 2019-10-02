@@ -36,7 +36,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
-> *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  <!-- > *   [Use DevTools to make basic changes to CSS](../css.md)  -->
+> *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  <!-- > *   [Use DevTools to make basic changes to CSS][DevToolsCss]  -->
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]  
 
 <!--Todo: add section when contain is available  -->  
@@ -66,7 +66,6 @@ Workspaces is known to not work with these frameworks:
 
 **Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a page, and you need to see those changes across page loads, but you do not care about mapping your changes to the source code of the page.  
 
-<!-- [LocalOverrides]: /web/updates/2018/01/devtools#overrides -->  
 <!--Todo: add section when content is ready  -->  
 
 ## Step 1: Setup   
@@ -75,24 +74,22 @@ Complete this tutorial to get hands-on experience with Workspaces.
 
 ### Set up the demo   
 
-1.  **Open the demo**.  In the top-left of the editor, a randomly-generated project name is displayed.  
+1.  [Open the demo][GlitchWorkspacesDemo].  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->  
     
     > ##### Figure 1  
     > A Glitch project
     > ![A Glitch project][ImageGlitchProject]  
-
-[GlitchWorkspacesDemo]: https://microsoft-edge-chromium-devtools.glitch.me/workspaces-demo/ "Workspaces Demo"  
-
-<!-- 1.  Click the project name.  
-1.  Select **Advanced Options** > **Download Project**.  
+    
+    <!--1.  Click the project name.  -->
+    <!--1.  Select **Advanced Options** > **Download Project**.  
     
     > ##### Figure 2  
     > The Download Project button  
     > ![The Download Project button][ImageDownloadProjectButton]  
-
-1.  Close the tab.  
-1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
-1.  Create an `app` directory on your desktop.  Save copies of the files in the `app` directory.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  
+    -->
+    <!--1.  Close the tab.  -->
+    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+1.  Create an `app` directory on your desktop.  Save copies of the files in the `workspaces-demo` directory.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  
 1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.  
     
     ```bash
@@ -137,7 +134,10 @@ Complete this tutorial to get hands-on experience with Workspaces.
 
 ## Step 2: Save a CSS change to disk   
 
-1.  Open `styles.css`.  Notice how the `color` property of `h1` elements is set to `fuchsia`.  
+1.  Open `styles.css`.  
+    
+    > [!NOTE]
+    >The `color` property of `h1` elements is set to `fuchsia`.
     
     > ##### Figure 7  
     > Viewing `styles.css` in a text editor  
@@ -221,8 +221,10 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     > ##### Figure 12  
     > Opening `script.js` via the **Open File** dialog  
     > ![Opening script.js via the Open File dialog][ImageOpenFileDialog]  
-
-1.  Notice the `Save Changes To Disk With Workspaces` link in the demo.  It is styled regularly.  
+    
+    > [!NOTE]
+    > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.  
+    
 1.  Add the following code to the bottom of **script.js** via the **Quick Source** tab.  
     
     ```javascript
@@ -231,7 +233,10 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     ```  
     
 1.  Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
-1.  Reload the page.  The link on the page is now italic.  
+1.  Reload the page.  
+    
+    > [!NOTE]
+    > The link on the page is now italic.
     
     > ##### Figure 13  
     > The link on the page is now italic  
@@ -298,7 +303,12 @@ Use what you have learned in this tutorial to set up Workspaces in your own proj
 
 <!-- links -->  
 
+<!--[DevToolsCss]: ../css.md ""  -->  
+<!--[LocalOverrides]: /web/updates/2018/01/devtools#overrides -->  
+
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
+
+[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces Demo files | Glitch"  
 [MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content - CSS: Cascading Style Sheets | MDN"  
 [MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Getting started with the Web | MDN"  
 [MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Running a simple local HTTP server | MDN"  
