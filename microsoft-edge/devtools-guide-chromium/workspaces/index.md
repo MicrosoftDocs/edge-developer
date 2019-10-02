@@ -287,19 +287,19 @@ Use what you have learned in this tutorial to set up Workspaces in your own proj
 
 <!-- image links -->  
 
-[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Opening the Quick Source tab via Command Menu"  
-[ImageConsolePanel]: images/workspaces-demo-console.msft.png "Figure 4: The Console panel"  
-[ImageDemo]: images/workspaces-demo.msft.png "Figure 3: The demo"  
-[ImageDownloadProjectButton]: images/glitch-advanced-options-download-project.msft.png "Figure 2: The Download Project button"  
-[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Attempting to change HTML from the DOM Tree of the Elements panel"  
-[ImageFilesystem]: images/workspaces-demo-sources-filesystem.msft.png "The Filesystem tab"  
+[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Figure 10: Opening the Quick Source tab via Command Menu"  
+[ImageConsolePanel]: images/workspaces-demo-console.msft.png "Figure 3: The Console panel"  
+[ImageDemo]: images/workspaces-demo.msft.png "Figure 2: The demo"  
+<!--[ImageDownloadProjectButton]: images/glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
+[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Figure 8: Attempting to change HTML from the DOM Tree of the Elements panel"  
+[ImageFilesystem]: images/workspaces-demo-sources-filesystem.msft.png "Figure 4: The Filesystem tab"  
 [ImageGlitchProject]: images/glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
-[ImageMapping]: images/workspaces-demo-sources-filesystem-folder.msft.png "Figure 6: The Filesystem tab now shows a mapping between the local files and the network ones"  
-[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Opening script.js via the Open File dialog"  
-[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 13: The link on the page is now italic"  
-[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 10: Changing HTML from the Sources panel"  
-[ImageStylesFuchsia]: images/workspaces-demo-sources-filesystem-css.msft.png "Figure 7: Viewing styles.css in a text editor"  
-[ImageStylesGreen]: images/workspaces-demo-elements-styles-css.msft.png "The green indicator that the file is linked"  
+[ImageMapping]: images/workspaces-demo-sources-filesystem-folder.msft.png "Figure 5: The Filesystem tab now shows a mapping between the local files and the network ones"  
+[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Figure 11: Opening script.js via the Open File dialog"  
+[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 12: The link on the page is now italic"  
+[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 9: Changing HTML from the Sources panel"  
+[ImageStylesFuchsia]: images/workspaces-demo-sources-filesystem-css.msft.png "Figure 6: Viewing styles.css in a text editor"  
+[ImageStylesGreen]: images/workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
 
 <!-- links -->  
 
