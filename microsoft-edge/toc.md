@@ -28,6 +28,8 @@
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
+### Network
+#### [Get Started](devtools-guide-chromium/network/index.md)
 ### JavaScript
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
