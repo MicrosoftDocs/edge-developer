@@ -34,6 +34,7 @@
 ### Storage
 #### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
 ### JavaScript
+#### [Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
