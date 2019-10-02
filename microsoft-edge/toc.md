@@ -31,6 +31,8 @@
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
+### Storage
+#### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
 ### JavaScript
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
