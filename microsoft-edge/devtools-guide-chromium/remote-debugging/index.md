@@ -54,7 +54,7 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 1.  Open the **Developer Options** screen on your Android.  See [Configure On-Device Developer Options](https://developer.android.com/studio/debug/dev-options.html).  
 1.  Select **Enable USB Debugging**.  
 1.  On your development machine, open Microsoft Edge.  
-1.  [Open DevTools](../Open).  
+1.  Open **DevTools**.  
 1.  In DevTools, click the **Main Menu** `...` then select **More tools** > **Remote devices**.  
     
     > ##### Figure 1  
@@ -81,7 +81,7 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 
 Make sure that your hardware is set up correctly:  
 
-*   If you're using a USB hub, try connecting your Android device directly to your development machine instead.  
+*   If you are using a USB hub, try connecting your Android device directly to your development machine instead.  
 *   Try unplugging the USB cable between your Android device and development machine, and then plugging it back in.  Do it while your Android and development machine screens are unlocked.  
 *   Make sure that your USB cable works.  You should be able to inspect files on your Android device from your development machine.  
 
@@ -91,11 +91,11 @@ Make sure that your software is set up correctly:
     
 *   Some combinations of Windows and Android devices (especially Samsung) require extra set up.  See [DevTools Devices does not detect device when plugged in][StackOverflowDevicesNotDetected].  
     
-If you don't see the **Allow USB Debugging** prompt on your Android device try:  
+If you do not see the **Allow USB Debugging** prompt on your Android device try:  
 
-*   Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  In other words, sometimes the prompt doesn't show up when your Android or development machine screens are locked.
+*   Disconnecting and then re-connecting the USB cable while DevTools is in focus on your development machine and your Android homescreen is showing.  In other words, sometimes the prompt does not show up when your Android or development machine screens are locked.
 *   Updating the display settings for your Android device and development machine so that they never go to sleep.  
-*   Setting Android's USB mode to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog box][StackExchangeGalaxyS4DoesNotShowDialogBox].  
+*   Setting the USB mode for Android to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog box][StackExchangeGalaxyS4DoesNotShowDialogBox].  
 *   Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.  
 
 If you find a solution that is not mentioned in this section or in [DevTools Devices does not detect device when plugged in][StackOverflowDevicesNotDetected]!  
@@ -105,7 +105,7 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 1.  Open Microsoft Edge on your Android device.  
 
 1.  In the **Remote Devices** tab, click the tab that matches your Android device model name.  
-    At the top of this page, you see your Android device's model name, followed by its serial number.  Below that, you can see the version of Microsoft Edge that's running on the device, with the version number in parentheses.  Each open Microsoft Edge tab gets its own section.  You can interact with that tab from this section.  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
+    At the top of this page, you see the model name of your Android device, followed by its serial number.  Below that, you should see the version of Microsoft Edge running on the device, with the version number in parentheses.  Each open Microsoft Edge tab gets its own section.  You may interact with that tab from this section.  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
     <!--
     > ##### Figure 5  
     > A connected remote device  
@@ -114,7 +114,7 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 1.  In the **New tab** text box, enter a URL and then click **Open**.  The page opens in a new tab on your Android device.  
 
 1.  Click **Inspect** next to the URL that you just opened.  A new DevTools instance opens.  The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
-    So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you're used to.  
+    So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.  
 
 ### More actions: reload, focus, or close a tab   
 
@@ -128,13 +128,13 @@ Click **More Options** `...` next to the tab that you want to reload, focus, or 
 
 Go to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
 
-You can also tap an element on your Android device screen to select it in the **Elements** panel.  Click **Select Element** ![Select Element][ImageSelectElementIcon] on your DevTools instance, and then tap the element on your Android device screen.  Note that **Select Element** is disabled after the first touch, so you need to re-enable it every time you want to use this feature.  
+You may also tap an element on your Android device screen to select it in the **Elements** panel.  Click **Select Element** ![Select Element][ImageSelectElementIcon] on your DevTools instance, and then tap the element on your Android device screen.  Note that **Select Element** is disabled after the first touch, so you need to re-enable it every time you want to use this feature.  
 
 ### Screencast your Android screen to your development machine   
 
 Click **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the content of your Android device in your DevTools instance.  
 
-You can interact with the screencast in multiple ways:  
+You are able to interact with the screencast in multiple ways:  
 
 *   Clicks are translated into taps, firing proper touch events on the device.  
 *   Keystrokes on your computer are sent to the device.  
@@ -144,7 +144,7 @@ You can interact with the screencast in multiple ways:
 Some notes on screencasts:  
 
 *   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Android status bar, or the Android keyboard.  
-*   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of your page's performance.  
+*   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.  
 *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.  
 
 
@@ -165,6 +165,8 @@ Some notes on screencasts:
 <!--[ImageUnknownDevice]: images/unknown-device.msft.png "Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
 
 <!-- links -->  
+
+<!--[DevToolsOpen]: ../open.md ""  -->  
 
 [AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
