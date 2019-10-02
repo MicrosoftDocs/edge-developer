@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Debug Progressive Web Apps   
-
-
+# Debug Progressive Web Apps  
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
 
@@ -41,14 +35,14 @@ This guide only discusses the Progressive Web App features of the **Application*
 
 <!--TODO:  Link to sections when available. -->
 
-### TL;DR   
+### TL;DR  
 
 *   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.  
 *   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.  
 *   View your service worker cache from the **Cache Storage** pane.  
 *   Unregister a service worker and clear all storage and caches with a single button click from the **Clear storage** pane.  
 
-## Web app manifest   
+## Web app manifest  
 
 If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.  
 
@@ -70,7 +64,7 @@ Once you've got your manifest set up, you can use the **Manifest** pane of the *
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.  
 *   The **Icons** section displays every icon that you've specified.  
 
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -93,7 +87,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Service workers   
+## Service workers  
 
 Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a web page or user interaction, like push notifications, background sync, and offline experiences.  
 
@@ -184,7 +178,7 @@ Related Guides:
 
 [Stack OverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
 
-## Clear storage 
+## Clear storage  
 
 The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
 
@@ -205,9 +199,7 @@ Related Guides:
 
 <!--TODO  -->
 
- 
-
-
+<!-- Image links -->
 
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
 [ImageManifest]: images/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
