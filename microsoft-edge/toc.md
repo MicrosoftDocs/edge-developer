@@ -39,6 +39,8 @@
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+### Remote Debugging
+#### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)  
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
