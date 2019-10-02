@@ -41,8 +41,10 @@ figcaption {
 
 Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.  
 
+<!--
 > [!NOTE]
-> This reference is based on Microsoft Edge 58.  If you use another version of Microsoft Edge, the UI and features of DevTools may be different.  Check `edge://help` to see what version of Microsoft Edge you are running.  
+> This reference is based on Microsoft Edge 58.  If you use another version of Microsoft Edge, the UI, and features of DevTools may be different.  Check `edge://help` to see what version of Microsoft Edge you are running.  
+-->
 
 ## Record network requests   
 
@@ -118,8 +120,10 @@ To emulate how a first-time user experiences your site, check the **Disable cach
 
 If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.  
 
-1.  Open the [Network Conditions drawer][NetworkConditions].  
+1.  Open the **Network Conditions** drawer.  
 1.  Check or uncheck the **Disable cache** checkbox.  
+
+<!--todo: add network condition section when available -->  
 
 ### Manually clear the browser cache   
 
@@ -158,8 +162,10 @@ DevTools displays a warning icon next to the **Network** tab to remind you that 
 
 If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.  
 
-1.  Open the [Network Conditions drawer][NetworkConditions].  
+1.  Open the **Network Conditions** drawer.  
 1.  Select your desired connection speed from the **Throttling** menu.  
+
+<!--todo: add network condition section when available -->  
 
 ### Manually clear browser cookies   
 
@@ -173,9 +179,11 @@ To manually clear browser cookies at any time, right-click anywhere in the Reque
 
 To manually override the user agent:  
 
-1.  Open the [Network Conditions drawer][NetworkConditions].  
+1.  Open the **Network Conditions** drawer.  
 1.  Uncheck **Select automatically**.  
 1.  Choose a user agent option from the menu, or enter a custom one in the text box.  
+
+<!--todo: add network condition section when available -->  
 
 ## Filter requests   
 
@@ -678,8 +686,9 @@ Deselect the **Show Overview** checkbox to hide it.
 
 <!-- links -->  
 
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs"  
-[NetworkConditions]: network-conditions.md "Optimize Performance Under Varying Network Conditions"  
+<!--[NetworkConditions]: network-conditions.md "Optimize Performance Under Varying Network Conditions"  -->  
+
+[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"  
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy server - Wikipedia"  
 
 > [!NOTE]
