@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 > [!NOTE]
-> **Goal**: This tutorial provides hands-on practice in setting up and using Workspaces so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on you local computer, that you made within DevTools after you enable Workspaces.  
+> **Goal**: This tutorial provides hands-on practice in setting up and using Workspaces so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
 
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
@@ -104,7 +104,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
     
 1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it via a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
     
-    > ##### Figure 3  
+    > ##### Figure 2  
     > The demo  
     > ![The demo][ImageDemo]  
 
@@ -112,14 +112,14 @@ Complete this tutorial to get hands-on experience with Workspaces.
 
 1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.  
     
-    > ##### Figure 4  
+    > ##### Figure 3  
     > The **Console** panel  
     > ![The Console panel][ImageConsolePanel]  
 
 1.  Click the **Sources** tab.  
 1.  Click the **Filesystem** tab.  
     
-    > ##### Figure 5  
+    > ##### Figure 4  
     > The **Filesystem** tab  
     > ![The Filesystem tab][ImageFilesystem]  
 
@@ -128,7 +128,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
 1.  Click **Allow** to give DevTools permission to read and write to the directory.  
     In the **Filesystem** tab, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.  These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.  
     
-    > ##### Figure 6  
+    > ##### Figure 5  
     > The **Filesystem** tab now shows a mapping between the local files and the network ones  
     > ![The Filesystem tab now shows a mapping between the local files and the network ones][ImageMapping]  
 
@@ -139,7 +139,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
     > [!NOTE]
     >The `color` property of `h1` elements is set to `fuchsia`.
     
-    > ##### Figure 7  
+    > ##### Figure 6  
     > Viewing `styles.css` in a text editor  
     > ![Viewing styles.css in a text editor][ImageStylesFuchsia]  
 
@@ -148,7 +148,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
 1.  Change the value of the `color` property of the `<h1>` element to your favorite color.  
     Remember that you need to click the `<h1>` element in the **DOM Tree** in order to see the CSS rules applied to it in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.  
     
-    > ##### Figure 8  
+    > ##### Figure 7  
     > The green indicator that the file is linked  
     > ![The green indicator that the file is linked][ImageStylesGreen]  
 
@@ -157,7 +157,12 @@ Complete this tutorial to get hands-on experience with Workspaces.
 
 ## Step 3: Save an HTML change to disk   
 
-### Try changing HTML from the Elements panel   
+### Change HTML from the Elements Panel  
+
+You may make changes to the HTML from the Element Panel, but your changes to the DOM tree are not saved to disk and only effect the current browser session.  
+The DOM tree is not HTML.  
+
+<!--### Try changing HTML from the Elements panel   
 
 > [!WARNING]
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
@@ -165,7 +170,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
 1.  Click the **Elements** tab.  
 1.  Double click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    > ##### Figure 9  
+    > ##### Old Figure 9  
     > Attempting to change HTML from the **DOM Tree** of the **Elements** panel  
     > ![Attempting to change HTML from the DOM Tree of the Elements panel][ImageElementsCake]  
 
@@ -185,7 +190,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
-
+-->
 ### Change HTML from the Sources panel   
 
 If you want to save a change to the HTML of the page, do it via the **Sources** panel.  
@@ -197,7 +202,7 @@ If you want to save a change to the HTML of the page, do it via the **Sources** 
 1.  Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Reload the page.  The `<h1>` element is still displaying the new text.  
     
-    > ##### Figure 10  
+    > ##### Figure 8  
     > Line 12 has been set to `I ❤️  Cake`  
     > ![Changing HTML from the Sources panel][ImageSourcesCakeHTML]  
 
@@ -211,14 +216,14 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
 1.  Type `QS`, then select **Show Quick Source**.  At the bottom of your DevTools window there is now a **Quick Source** tab.  The tab is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.  The **Quick Source** tab gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.  
     
-    > ##### Figure 11  
+    > ##### Figure 9  
     > Opening the **Quick Source** tab via the **Command Menu**  
     > ![Opening the Quick Source tab via Command Menu][ImageCommandMenuQuickSource]  
 
 1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 12](#figure-12).  
 1.  Type `script`, then select **app/script.js**.  
     
-    > ##### Figure 12  
+    > ##### Figure 10  
     > Opening `script.js` via the **Open File** dialog  
     > ![Opening script.js via the Open File dialog][ImageOpenFileDialog]  
     
@@ -238,7 +243,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     > [!NOTE]
     > The link on the page is now italic.
     
-    > ##### Figure 13  
+    > ##### Figure 11  
     > The link on the page is now italic  
     > ![The link on the page is now italic][ImageScriptItalic]  
 
@@ -278,26 +283,25 @@ Use what you have learned in this tutorial to set up Workspaces in your own proj
 
 
 
-<!-- If you have more feedback on these topics or anything else, please use any of the channels below:  -->
-
-<!--
+<!-- 
+If you have more feedback on these topics or anything else, please use any of the channels below:
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
 -->
 
 <!-- image links -->  
 
-[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Figure 10: Opening the Quick Source tab via Command Menu"  
+[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab via Command Menu"  
 [ImageConsolePanel]: images/workspaces-demo-console.msft.png "Figure 3: The Console panel"  
-[ImageDemo]: images/workspaces-demo.msft.png "Figure 2: The demo"  
+[ImageDemo]: images/workspaces-demo.msft.png "Figure 1: The demo"  
 <!--[ImageDownloadProjectButton]: images/glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
-[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Figure 8: Attempting to change HTML from the DOM Tree of the Elements panel"  
+<!--[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
 [ImageFilesystem]: images/workspaces-demo-sources-filesystem.msft.png "Figure 4: The Filesystem tab"  
 [ImageGlitchProject]: images/glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
 [ImageMapping]: images/workspaces-demo-sources-filesystem-folder.msft.png "Figure 5: The Filesystem tab now shows a mapping between the local files and the network ones"  
-[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Figure 11: Opening script.js via the Open File dialog"  
-[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 12: The link on the page is now italic"  
-[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 9: Changing HTML from the Sources panel"  
+[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Figure 10: Opening script.js via the Open File dialog"  
+[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 11: The link on the page is now italic"  
+[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 8: Changing HTML from the Sources panel"  
 [ImageStylesFuchsia]: images/workspaces-demo-sources-filesystem-css.msft.png "Figure 6: Viewing styles.css in a text editor"  
 [ImageStylesGreen]: images/workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
 
