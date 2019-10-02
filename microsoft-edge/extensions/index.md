@@ -16,33 +16,33 @@ Extensions are small programs that can be used to add new features to Microsoft 
 
 Microsoft Edge (EdgeHTML) supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge (EdgeHTML) with minimal changes.
 
-To get an overview of the end to end journey of creating a Microsoft Edge (EdgeHTML) extension from development to publishing, check out the [Getting started guide](./extensions/getting-started.md)!
+To get an overview of the end to end journey of creating a Microsoft Edge (EdgeHTML) extension from development to publishing, check out the [Getting started guide](./getting-started.md)!
 
 
 ## Popular articles
 
 <table>
   <tr>
-    <td><a href = "./extensions/api-support/extension-api-roadmap.md">Extension API roadmap</a></td>
+    <td><a href = "./api-support/extension-api-roadmap.md">Extension API roadmap</a></td>
     <td>Check out what APIs are supported/in development for Windows 10 Insider Preview and publicly released builds of Microsoft Edge.</td></p>
 <p>  </tr>
   <tr>
-    <td><a href = "./extensions/api-support/supported-apis.md">Supported APIs</a></td>
+    <td><a href = "./api-support/supported-apis.md">Supported APIs</a></td>
     <td>Get info on our supported APIs including known issues and Chrome incompatibilities.</td>
 
   </tr>
   <tr>
-    <td><a href = "./extensions/guides/creating-an-extension.md">Creating an extension</a></td>
+    <td><a href = "./guides/creating-an-extension.md">Creating an extension</a></td>
     <td>New to the world of extension development? Try out some tutorials to get up to speed.</td>
 
   </tr>
   <tr>
-    <td><a href = "./extensions/guides/packaging.md">Packaging</a></td>
+    <td><a href = "./guides/packaging.md">Packaging</a></td>
     <td>Learn how to package up your extension after you&#39;ve finished development.</td>
 
   </tr>
   <tr>
-    <td><a href = "./extensions/guides/porting-chrome-extensions.md">Porting Chrome extensions</a></td>
+    <td><a href = "./guides/porting-chrome-extensions.md">Porting Chrome extensions</a></td>
     <td>Created a Chrome extension you&#39;d like to see on Microsoft Edge? See how to port it with the Microsoft Edge Extension Toolkit.</td>
 
   </tr>
