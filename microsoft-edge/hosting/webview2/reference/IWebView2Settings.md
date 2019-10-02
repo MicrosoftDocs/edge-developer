@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -44,80 +44,56 @@ Setting changes made after NavigationStarting event will not apply until the nex
 
 Controls if JavaScript execution is enabled in all future navigations in the WebView.
 
-> public HRESULT [get_IsScriptEnabled](#interface_i_web_view2_settings_1aa2867d2d39d23dfe394126e43c53e615)(BOOL * isScriptEnabled)
+> public HRESULT [get_IsScriptEnabled](#get_isscriptenabled)(BOOL * isScriptEnabled)
 
-It is true by default.
+This only affects scripts in the document; scripts injected with ExecuteScript will run even if script is disabled. It is true by default.
 
 ```cpp
-HRESULT ScenarioScript::NavigationStartingEventHandler(
-    IWebView2WebView* sender, IWebView2NavigationStartingEventArgs* args)
-{
-    // In this sample we disable JavaScript execution if we see that we ever
-    // navigate to somewhere other than https://example.com
-    wil::unique_cotaskmem_string uri;
-    RETURN_IF_FAILED(args->get_Uri(&uri));
-
-    ComPtr<IWebView2Settings> settings;
-    RETURN_IF_FAILED(m_webview->get_Settings(&settings));
-
-    if (!DoesUriMatchDomain(uri.get(), L"example.com"))
-    {
-        // By default JavaScript is enabled so we don't need to set it to
-        // TRUE.
-        // Changes to IsScriptEnabled apply to future navigations including
-        // the navigation that occurs after a NavigationStarting event.
-        RETURN_IF_FAILED(settings->put_IsScriptEnabled(FALSE));
-    }
-
-    return S_OK;
-}
+        // Changes to settings will apply at the next navigation, which includes the
+        // navigation after a NavigationStarting event.  We can use this to change
+        // settings according to what site we're visiting.
+        if (ShouldBlockScriptForUri(uri.get()))
+        {
+            m_settings->put_IsScriptEnabled(FALSE);
+        }
+        else
+        {
+            m_settings->put_IsScriptEnabled(m_isScriptEnabled);
+        }
 ```
 
 #### put_IsScriptEnabled 
 
 Set the IsScriptEnabled property.
 
-> public HRESULT [put_IsScriptEnabled](#interface_i_web_view2_settings_1a900fc1446d14dcdf59323562ea5fc5f8)(BOOL isScriptEnabled)
+> public HRESULT [put_IsScriptEnabled](#put_isscriptenabled)(BOOL isScriptEnabled)
 
 #### get_IsWebMessageEnabled 
 
 The IsWebMessageEnabled property is used when loading a new HTML document.
 
-> public HRESULT [get_IsWebMessageEnabled](#interface_i_web_view2_settings_1af7a834cbd32878793484b3e7ecd40ab9)(BOOL * isWebMessageEnabled)
+> public HRESULT [get_IsWebMessageEnabled](#get_iswebmessageenabled)(BOOL * isWebMessageEnabled)
 
 If set to true, communication from the host to the webview's top level HTML document is allowed via PostWebMessageAsJson, PostWebMessageAsString, and window.chrome.webview's message event (see PostWebMessageAsJson documentation for details). Communication from the webview's top level HTML document to the host is allowed via window.chrome.webview's postMessage function and the SetWebMessageReceivedEventHandler method (see the SetWebMessageReceivedEventHandler documentation for details). If set to false, then communication is disallowed. PostWebMessageAsJson and PostWebMessageAsString will fail with E_ACCESSDENIED and window.chrome.webview.postMessage will fail by throwing an instance of an Error object. It is true by default.
 
 ```cpp
     ComPtr<IWebView2Settings> settings;
-    RETURN_IF_FAILED(m_webview->get_Settings(&settings));
+    CHECK_FAILURE(m_webview->get_Settings(&settings));
 
-    RETURN_IF_FAILED(settings->put_IsWebMessageEnabled(TRUE));
-
-    // Setup the web message received event handler before navigating to
-    // ensure we don't miss any messages.
-    RETURN_IF_FAILED(m_webview->add_WebMessageReceived(
-        Microsoft::WRL::Callback<IWebView2WebMessageReceivedEventHandler>(
-            this, &::ScenarioWebMessage::WebMessageReceivedEventHandler)
-        .Get(), &m_webMessageReceivedToken));
-
-    // Changes to IWebView2Settings::IsWebMessageEnabled apply to the next document
-    // to which we navigate.
-    RETURN_IF_FAILED(m_webview->Navigate(s_exampleUri));
-
-    return S_OK;
+    CHECK_FAILURE(settings->put_IsWebMessageEnabled(TRUE));
 ```
 
 #### put_IsWebMessageEnabled 
 
 Set the IsWebMessageEnabled property.
 
-> public HRESULT [put_IsWebMessageEnabled](#interface_i_web_view2_settings_1a6883867d6600084e24a9d62c250e294f)(BOOL isWebMessageEnabled)
+> public HRESULT [put_IsWebMessageEnabled](#put_iswebmessageenabled)(BOOL isWebMessageEnabled)
 
 #### get_AreDefaultScriptDialogsEnabled 
 
 AreDefaultScriptDialogsEnabled is used when loading a new HTML document.
 
-> public HRESULT [get_AreDefaultScriptDialogsEnabled](#interface_i_web_view2_settings_1a51946197a68a096527a03689d62b73e2)(BOOL * areDefaultScriptDialogsEnabled)
+> public HRESULT [get_AreDefaultScriptDialogsEnabled](#get_aredefaultscriptdialogsenabled)(BOOL * areDefaultScriptDialogsEnabled)
 
 If set to false, then WebView won't render the default javascript dialog box (Specifically those shown by the javascript alert, confirm, and prompt functions). Instead, if an event handler is set by SetScriptDialogOpeningEventHandler, WebView will send an event that will contain all of the information for the dialog and allow the host app to show its own custom UI.
 
@@ -125,13 +101,13 @@ If set to false, then WebView won't render the default javascript dialog box (Sp
 
 Set the AreDefaultScriptDialogsEnabled property.
 
-> public HRESULT [put_AreDefaultScriptDialogsEnabled](#interface_i_web_view2_settings_1afe873806f6e98b75922a937d0af21dbf)(BOOL areDefaultScriptDialogsEnabled)
+> public HRESULT [put_AreDefaultScriptDialogsEnabled](#put_aredefaultscriptdialogsenabled)(BOOL areDefaultScriptDialogsEnabled)
 
 #### get_IsFullscreenAllowed 
 
 Controls if fullscreen is allowed for the WebView.
 
-> public HRESULT [get_IsFullscreenAllowed](#interface_i_web_view2_settings_1aff1d9dc0947e403664cc6d177355d0ff)(BOOL * isFullscreenAllowed)
+> public HRESULT [get_IsFullscreenAllowed](#get_isfullscreenallowed)(BOOL * isFullscreenAllowed)
 
 When it is allowed, web content such as a video element in the WebView is allowed to be displayed full screen. When it is not allowed, such element will fill the WebView bounds when the element requests full screen. It is true by default.
 
@@ -139,13 +115,13 @@ When it is allowed, web content such as a video element in the WebView is allowe
 
 Set the IsFullscreenAllowed property.
 
-> public HRESULT [put_IsFullscreenAllowed](#interface_i_web_view2_settings_1a10ef13244a7db2ce525dfc7502f79d97)(BOOL isFullscreenAllowed)
+> public HRESULT [put_IsFullscreenAllowed](#put_isfullscreenallowed)(BOOL isFullscreenAllowed)
 
 #### get_IsStatusBarEnabled 
 
 IsStatusBarEnabled controls whether the status bar will be displayed.
 
-> public HRESULT [get_IsStatusBarEnabled](#interface_i_web_view2_settings_1aecb1e72271f79648d6e43222fbfd4b92)(BOOL * isStatusBarEnabled)
+> public HRESULT [get_IsStatusBarEnabled](#get_isstatusbarenabled)(BOOL * isStatusBarEnabled)
 
 The status bar is usually displayed in the lower left of the WebView and shows things such as the URI of a link when the user hovers over it and other information. It is true by default.
 
@@ -153,13 +129,13 @@ The status bar is usually displayed in the lower left of the WebView and shows t
 
 Set the IsStatusBarEnabled property.
 
-> public HRESULT [put_IsStatusBarEnabled](#interface_i_web_view2_settings_1add5a9baf43e11d25c9026e5a66755d88)(BOOL isStatusBarEnabled)
+> public HRESULT [put_IsStatusBarEnabled](#put_isstatusbarenabled)(BOOL isStatusBarEnabled)
 
 #### get_AreDevToolsEnabled 
 
 AreDevToolsEnabled controls whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
 
-> public HRESULT [get_AreDevToolsEnabled](#interface_i_web_view2_settings_1ac0e6be5025993e7315633c260330550e)(BOOL * areDevToolsEnabled)
+> public HRESULT [get_AreDevToolsEnabled](#get_aredevtoolsenabled)(BOOL * areDevToolsEnabled)
 
 It is true by default.
 
@@ -167,5 +143,5 @@ It is true by default.
 
 Set the AreDevToolsEnabled property.
 
-> public HRESULT [put_AreDevToolsEnabled](#interface_i_web_view2_settings_1a45881677f4d90f73f65f4ce76635cb7b)(BOOL areDevToolsEnabled)
+> public HRESULT [put_AreDevToolsEnabled](#put_aredevtoolsenabled)(BOOL areDevToolsEnabled)
 
