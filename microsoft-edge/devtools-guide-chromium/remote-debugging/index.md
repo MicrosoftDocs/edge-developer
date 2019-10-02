@@ -55,7 +55,7 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 1.  Select **Enable USB Debugging**.  
 1.  On your development machine, open Microsoft Edge.  
 1.  [Open DevTools](../Open).  
-1.  In DevTools, click the **Main Menu** ![Main Menu][ImageThreeDotIcon] then select **More tools** > **Remote devices**.  
+1.  In DevTools, click the **Main Menu** `...` then select **More tools** > **Remote devices**.  
     
     > ##### Figure 1  
     > Opening the **Remote Devices** tab via the **Main Menu**  
@@ -118,7 +118,7 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 
 ### More actions: reload, focus, or close a tab   
 
-Click **More Options** ![More Options][ImageThreeDotIcon] next to the tab that you want to reload, focus, or close.  
+Click **More Options** `...` next to the tab that you want to reload, focus, or close.  
 <!--
 > ##### Figure 6  
 > The menu for reloading, focusing, or closing a tab  
