@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 10/03/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -55,6 +55,8 @@ True when the navigation is redirected.
 The HTTP request headers for the navigation.
 
 > public HRESULT [get_RequestHeaders](#get_requestheaders)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md#iwebview2httprequestheaders) ** requestHeaders)
+
+Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 
 #### get_Cancel 
 
