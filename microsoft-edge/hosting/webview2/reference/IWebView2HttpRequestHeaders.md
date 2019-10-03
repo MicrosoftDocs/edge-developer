@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2019
+ms.date: 10/03/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -29,7 +29,7 @@ HTTP request headers.
 [RemoveHeader](#removeheader) | Removes header that matches the name.
 [GetIterator](#getiterator) | Gets an iterator over the collection of request headers.
 
-Used to inspect the HTTP request on WebResourceRequested event and NavigationStarting event. Note, you can modify the http request header from a WebResourceRequested event, but not from a NavigationStarting event.
+Used to inspect the HTTP request on WebResourceRequested event and NavigationStarting event. Note, you can modify the HTTP request headers from a WebResourceRequested event, but not from a NavigationStarting event.
 
 ## Members
 
