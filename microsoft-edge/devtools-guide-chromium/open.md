@@ -41,13 +41,13 @@ When you want to inspect the styles or attributes of a DOM node, right-click the
 
 Or press `Control`+`Shift`+`C` \(Windows\) or `Command`+`Option`+`C` \(macOS\).  
 
-See [Get Started With Viewing And Changing CSS](Css).  
+<!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
 ## Open the Console panel to view logged messages or run JavaScript   
 
 Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to jump straight into the **Console** panel.  
 
-See [Get Started With The Console][ConsoleGetStarted].  
+<!--See [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## Open the last panel you had open   
 
@@ -84,8 +84,8 @@ macOS:
 
 <!-- links -->  
 
-[ConsoleGetStarted]: console/get-started.md ""  
-[Css]: css.md ""  
+<!--[ConsoleGetStarted]: console/get-started.md ""  -->  
+<!--[GetStartedCSS]: css.md "CSS"  -->
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
