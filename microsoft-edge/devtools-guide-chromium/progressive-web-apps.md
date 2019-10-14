@@ -41,14 +41,14 @@ This guide only discusses the Progressive Web App features of the **Application*
 
 <!--TODO:  Link to sections when available. -->
 
-### TL;DR  
+### TL;DR   
 
 *   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.  
 *   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.  
 *   View your service worker cache from the **Cache Storage** pane.  
 *   Unregister a service worker and clear all storage and caches with a single button click from the **Clear storage** pane.  
 
-## Web app manifest  
+## Web app manifest   
 
 If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.  
 
