@@ -162,19 +162,19 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 [ImageObjectStoreIcon]: images/object-store-icon.msft.png  
 [ImageReloadIcon]: images/reload-icon.msft.png  
 
-[ImageManifest]: images/manifest.msft.png "Figure 1: The Manifest pane"  
-[ImageIndexedDBMenu]: images/idb-menu.msft.png "Figure 2: The IndexedDB menu"  
-[ImageIndexedDBDatabase]: images/idb-database.msft.png "Figure 3: The notes database"  
-[ImageIndexedDBObjectStore]: images/idb-object-store.msft.png "Figure 4: The notes object store"  
-[ImageIndexedBDValue]: images/idb-value.msft.png "Figure 5: Viewing an IndexedDB value"  
-[ImageIndexedDBIndex]: images/idb-index.msft.png "Figure 6: Sorting an object store by an index"  
-[ImageIndexedDBDatabase2]: images/idb-database.msft.png "Figure 7: Viewing a database"  
-[ImageIndexedDBSnippet]: images/idb-snippet.msft.png "Figure 8: Using a Snippet to interact with IndexedDB"  
-[ImageIndexedDBKeyValuePair]: images/idb-kvp1.msft.png "Figure 9: Selecting a key-value pair in order to delete it"  
-[ImageIndexedDBKeyValuePairDeleted]: images/idb-kvp2.msft.png "Figure 10: How the object store looks after the key-value pair has been deleted"  
-[ImageIndexedDBObjectStore]: images/idb-object-store.msft.png "Figure 11: Viewing an object store"  
-[ImageIndexedDBDatabase]: images/idb-database.msft.png "Figure 12: The Delete database button"  
-[ImageIndexedDBClearStorage]: images/idb-clear-storage.msft.png "Figure 13: The Clear storage pane"  
+[ImageManifest]: images/application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
+[ImageIndexedDBMenu]: images/application-storage-indexeddb.msft.png "Figure 2: The IndexedDB menu"  
+[ImageIndexedDBDatabase]: images/application-storage-indexeddb-notes_db.msft.png "Figure 3: The notes_db database"  
+[ImageIndexedDBObjectStore]: images/application-storage-indexeddb-notes_db-notes_os.msft.png "Figure 4: The notes_os object store"  
+[ImageIndexedBDValue]: images/application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png "Figure 5: Viewing an IndexedDB value"  
+[ImageIndexedDBIndex]: images/application-storage-indexeddb-notes_db-notes_os-title.msft.png "Figure 6: Sorting an object store by an index"  
+[ImageIndexedDBDatabase2]: images/application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png "Figure 7: Viewing a database"  
+[ImageIndexedDBSnippet]: images/sources-snippets-indexeddb-output.msft.png "Figure 8: Using a Snippet to interact with IndexedDB"  
+[ImageIndexedDBKeyValuePair]: images/application-storage-indexeddb-notes_db-notes_os2.msft.png "Figure 9: Selecting a key-value pair in order to delete it"  
+[ImageIndexedDBKeyValuePairDeleted]: images/application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png "Figure 10: How the object store looks after the key-value pair has been deleted"  
+[ImageIndexedDBObjectStore]: images/application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png "Figure 11: Viewing an object store"  
+[ImageIndexedDBDatabase]: images/application-storage-indexeddb-notes_db-delete-database.msft.png "Figure 12: The Delete database button"  
+[ImageIndexedDBClearStorage]: images/application-clear-storage-indexeddb-clear-site-data.msft.png "Figure 13: The Clear storage pane"  
 
 <!-- links -->  
 
