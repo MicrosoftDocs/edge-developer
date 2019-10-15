@@ -16,7 +16,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 ## 0.8.270  
 
-[NuGet package][WebView2NuGetGallery0.8.270] | minimum Microsoft Edge version 78.0.269.0.  
+[NuGet package][WebView2NuGetGallery0.8.270] | minimum Microsoft Edge version 78.0.270.0.  
 
 **Re-compile your app after updating the NuGet package.**  
 
