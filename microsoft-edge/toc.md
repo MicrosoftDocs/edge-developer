@@ -33,6 +33,7 @@
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
 #### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
+#### [Application Cache](devtools-guide-chromium/storage/applicationcache.md)
 ### JavaScript
 #### [Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
