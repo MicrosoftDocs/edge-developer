@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 05/29/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-[HTTP Cookies][MDNHTTPCookies]  are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  They are also the cause of all of those annoying "this page uses cookies" consent forms that you see across the web.  This guide teaches you how to view, edit, and delete the HTTP cookies for a page with Microsoft Edge DevTools.  
+[HTTP Cookies][MDNHTTPCookies]  are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  They are also the cause of all of those annoying "this page uses cookies" consent forms that you see across the web.  This guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## Open the Cookies pane   
 
@@ -55,8 +55,7 @@ The **Cookies** table contains the following fields:
 *   **Name**.  The name of the cookie.  
 *   **Value**.  The value of the cookie.  
 *   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope] .  
-*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  
-  See [Scope of cookies][MDNHTTPCookiesScope] .  
+*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope] .  
 *   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent]  this value is always `Session`.  
 *   **Size**.  The size, in bytes, of the cookie.  
 *   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure] .  
@@ -77,8 +76,8 @@ The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields 
 Double-click a field to edit it.  
 
 > ##### Figure 4  
-> Setting the name of a cookie to `DEVTOOL!`  
-> ![Setting the name of a cookie to DEVTOOL!][ImageEditCookie]  
+> Setting the name of a cookie to `DEVTOOLS!`  
+> ![Setting the name of a cookie to DEVTOOLS!][ImageEditCookie]  
 
 ## Delete cookies   
 
@@ -107,10 +106,12 @@ Click **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.
 [ImageCookies]: images/application-storage-cookies-selected.msft.png "Figure 2: The Cookies pane"  
 [ImageCookiesFilter]: images/application-storage-cookies-filter-id.msft.png "Figure 3: Filtering out any cookies that do not contain the text ID"  
 [ImageDeleteCookie]: images/application-storage-cookies-delete-selected.msft.png "Figure 5: Deleting a specific cookie"  
-[ImageEditCookie]: images/application-storage-cookies-rename.msft.png "Figure 4: Setting the name of a cookie to DEVTOOL!"  
+[ImageEditCookie]: images/application-storage-cookies-rename.msft.png "Figure 4: Setting the name of a cookie to DEVTOOLS!"  
 [ImageManifest]: images/application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
 
 <!-- links -->  
+
+[MicrosoftEdgeDevTools]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 <!--[DevToolsOpen]: ../open.md ""  -->
 
