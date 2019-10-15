@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright 05/29/2019 Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,7 +21,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Debug Progressive Web Apps  
+
+
+
+
+# Debug Progressive Web Apps   
+
+
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
 
@@ -87,7 +93,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Service workers  
+## Service workers   
 
 Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a web page or user interaction, like push notifications, background sync, and offline experiences.  
 
@@ -178,7 +184,7 @@ Related Guides:
 
 [Stack OverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
 
-## Clear storage  
+## Clear storage 
 
 The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
 
@@ -198,6 +204,10 @@ Related Guides:
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
 
 <!--TODO  -->
+
+ 
+
+
 
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
 [ImageManifest]: images/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
