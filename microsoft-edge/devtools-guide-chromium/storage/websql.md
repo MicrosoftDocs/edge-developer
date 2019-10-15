@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 > [!WARNING]
 > The Web SQL specification is [not being maintained][W3CWebSQLStatus].  
 
-This guide shows you how to use [Microsoft Edge DevTools][EdgeDevtools] to inspect Web SQL data.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.  
 
 ## View Web SQL Data   
 
@@ -117,7 +117,7 @@ DevTools does not update tables in real-time.  To update the data in a table:
 
 <!-- links -->  
 
-[EdgeDevtools]: ../devtools-guide-chromium.md "Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 [W3CWebSQLStatus]: https://www.w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"  
 
