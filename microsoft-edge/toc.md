@@ -32,6 +32,7 @@
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
+#### [Cookies](devtools-guide-chromium/storage/cookies.md)
 #### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
 #### [Application Cache](devtools-guide-chromium/storage/applicationcache.md)
 ### JavaScript
