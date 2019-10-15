@@ -29,7 +29,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-This guide shows you how to use [Microsoft Edge DevTools][DevTools] to view, edit, and delete [`sessionStorage`][MDNSessionStorage] key-value pairs.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [`sessionStorage`][MDNSessionStorage] key-value pairs.  
 
 ## View sessionStorage keys and values   
 
@@ -124,7 +124,7 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 <!-- links -->  
 
-[DevTools]: ../devtools-guide-chromium.md "Microsoft Edge (Chromium) DevTools"  
+[MicrosoftEdgeDevTools]: https://http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
 
