@@ -141,7 +141,7 @@ Instead, you can save this code in a **Snippet** and run it with a couple of but
 
 To run a **Snippet**:
 
-*   Open the file via the **Snippets** pane, and click **Run** ![The Run button][ImageRun].  
+*   Open the file via the **Snippets** pane, and click **Run** ![The Run button][ImageRunIcon].  
 *   Open the **Command Menu**, delete the `>` character, type `!`, type the name of your **Snippet**, then press `Enter`.  
 
 <!-- See [Run Snippets Of Code From Any Page][Snippet] to learn more.-->
@@ -191,10 +191,12 @@ By default, when you edit a file in the **Sources** panel, those changes are los
 
 
 
+<!-- image links -->  
+
 [ImageDebugging]: images/debugging.msft.png "Debugging JavaScript"  
 [ImageEditCSS]: images/edit-css.msft.png "Editing CSS in the Editor pane to change the text color of the subtitle to red"  
 [ImageEditJS]: images/edit-js.msft.png "Editing JavaScript in the Editor pane"  
-[ImageRun]: images/run-snippet.msft.png  
+[ImageRunIcon]: images/run-snippet-icon.msft.png  
 [ImageSnippet]: images/snippet.msft.png "A Snippet that inserts the jQuery library into a page"  
 [ImageSourcesEditorPane]: images/sources-editor-pane.msft.png "Viewing the contents of 6fc26531.index-docs.js in the Editor pane"  
 [ImageSourcesPagePane]: images/sources-page-pane.msft.png "The Page pane"  
