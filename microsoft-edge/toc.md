@@ -34,6 +34,7 @@
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
 #### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
+#### [Session Storage](devtools-guide-chromium/storage/sessionstorage.md)
 #### [Application Cache](devtools-guide-chromium/storage/applicationcache.md)
 ### JavaScript
 #### [Background Services](devtools-guide-chromium/javascript/background-services.md)
