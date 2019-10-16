@@ -76,7 +76,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     > Viewing an IndexedDB value  
     > ![Viewing an IndexedDB value][ImageIndexedBDValue]  
     
-1.  Click an index, such as **title** or **body** in **Figure 6** below, to sort the object store according to the values of that index.  
+1.  Click an index, such as **title** or **body** in [Figure 6](#figure-6), to sort the object store according to the values of that index.  
    
     > ##### Figure 6  
     > An object store that is sorted alphabetically according to the **title** key  
@@ -178,7 +178,7 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 
 <!-- links -->  
 
-[DevToolsGetStarted]: ../devtools-guide-chromium.md#start "Get started"  
+[DevToolsGetStarted]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium#start "Get started"  
 [JSSnippets]: ../snippets.md "Microsoft Edge Snippets"  
 [MicrosoftEdgeDevTools]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
