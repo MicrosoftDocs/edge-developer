@@ -34,6 +34,7 @@
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
 #### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
+#### [IndexedDB](devtools-guide-chromium/storage/indexeddb.md)
 #### [Session Storage](devtools-guide-chromium/storage/sessionstorage.md)
 #### [Application Cache](devtools-guide-chromium/storage/applicationcache.md)
 #### [WebSQL](devtools-guide-chromium/storage/websql.md)
