@@ -29,7 +29,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  If not, see [Get started][DevToolsGetStarted].  It also assumes you are familiar with IndexedDB.  If not, see [Using IndexedDB][MDNUsingIndexedDB].  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, see [Using IndexedDB][MDNUsingIndexedDB].  
 
 ## View IndexedDB data   
 
@@ -107,7 +107,7 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 ### Delete an IndexedDB key-value pair   
 
 1.  [View an IndexedDB object store](#view-indexeddb-data).  
-1.  Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
+1.  Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
     > ##### Figure 9  
     > Selecting a key-value pair in order to delete it  
@@ -178,8 +178,7 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 
 <!-- links -->  
 
-[DevToolsGetStarted]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium#start "Get started"  
-[JSSnippets]: ../snippets.md "Microsoft Edge Snippets"  
+[JSSnippets]: ../javascript/snippets.md "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools"  
 [MicrosoftEdgeDevTools]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"  
