@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -34,4 +34,6 @@ Use the IWebView2WebView.ZoomFactor property to get the modified zoom factor.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,IUnknown * args)
+
+There are no event args and the args parameter will be null.
 

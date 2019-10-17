@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -168,6 +168,24 @@ The URI of the current top level document.
 This value potentially changes as a part of the DocumentStateChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
 
 ```cpp
+    // Register a handler for the DocumentStateChanged event.
+    // This handler will read the webview's source URI and update
+    // the app's address bar.
+    CHECK_FAILURE(m_webView->add_DocumentStateChanged(
+        Callback<IWebView2DocumentStateChangedEventHandler>(
+            [this](IWebView2WebView* sender,
+                   IWebView2DocumentStateChangedEventArgs* args) -> HRESULT
+    {
+        wil::unique_cotaskmem_string uri;
+        sender->get_Source(&uri);
+        if (wcscmp(uri.get(), L"about:blank") == 0)
+        {
+            uri = wil::make_cotaskmem_string(L"");
+        }
+        SetWindowText(m_addressbarWindow, uri.get());
+
+        return S_OK;
+    }).Get(), &m_documentStateChangedToken));
 ```
 
 #### Navigate 
@@ -259,7 +277,7 @@ LRESULT CALLBACK AppWindow::ChildWndProc(HWND hWnd,
         if (wParam == VK_TAB)
         {
             handled = true;
-            BOOL shift = (GetKeyState(VK_LSHIFT) < 0 || GetKeyState(VK_RSHIFT) < 0);
+            BOOL shift = (GetKeyState(VK_SHIFT) < 0);
             if (hWnd == m_addressbarWindow)
             {
                 if (shift)
@@ -291,6 +309,16 @@ LRESULT CALLBACK AppWindow::ChildWndProc(HWND hWnd,
         {
             NavigateToAddressBar();
             handled = true;
+        }
+        else
+        {
+            // If bit 30 is set, it means the WM_KEYDOWN message is autorepeated.
+            // We want to ignore it in that case.
+            if (!(lParam & (1 << 30)))
+            {
+                handled = WillHandleAcceleratorKey(wParam);
+                HandleAcceleratorKey(wParam);
+            }
         }
     }
     else if ((message == WM_CHAR) &&
@@ -832,6 +860,8 @@ Add the provided JavaScript to a list of scripts that should be executed after t
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
+Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
+
 ```cpp
 // Prompt the user for some script and register it to execute whenever a new page loads.
 void AppWindow::AddInitializeScript()
@@ -840,10 +870,11 @@ void AppWindow::AddInitializeScript()
     PCWSTR title = L"Add Initialize Script";
     PCWSTR prompt = L"Script:";
     PCWSTR description =
-        L"Enter the JavaScript code to run as the initialization script.";
-     // This example script stops child frames from opening new windows.  Because
-     // the initialization script runs before any script in the HTML document, we can
-     // trust the results of our checks on window.parent and window.top.
+        L"Enter the JavaScript code to run as the initialization script that "
+        L"runs before any script in the HTML document.";
+    // This example script stops child frames from opening new windows.  Because
+    // the initialization script runs before any script in the HTML document, we
+    // can trust the results of our checks on window.parent and window.top.
     inputDialog.SetUserInput(
         L"if (window.parent !== window.top) {\r\n"
         L"    delete window.open;\r\n"
@@ -1198,7 +1229,9 @@ Closes the webview and cleans up the underlying browser instance.
 
 Cleaning up the browser instace will release the resources powering the webview. The browser instance will be shut down if there are no other webviews using it.
 
-After calling Close, all method calls will fail and event handlers will stop firing.
+After calling Close, all method calls will fail and event handlers will stop firing. Specifically, the WebView will release its references to its event handlers when Close is called.
+
+Close is implicitly called when the WebView loses its final reference and is destructed. But it is best practice to explicitly call Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you will create a reference cycle between the WebView and the event handler. Close will break this cycle by releasing all event handlers. But to avoid this situation it is best practice to both explicitly call Close on the WebView and to not capture a reference to the WebView to ensure the WebView can be cleaned up correctly.
 
 ```cpp
 // Close the WebView and deinitialize related state.  This doesn't close the app window.
@@ -1206,8 +1239,11 @@ void AppWindow::CloseWebView()
 {
     m_activeScenarios.clear();
     m_webViewContainer.SetWebView(nullptr);
-    m_webView->Close();
-    m_webView = nullptr;
+    if (m_webView)
+    {
+        m_webView->Close();
+        m_webView = nullptr;
+    }
     m_webViewEnvironment = nullptr;
 }
 ```

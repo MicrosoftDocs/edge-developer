@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,7 +30,7 @@ Additional functionality implemented by the primary WebView object.
 [remove_DocumentTitleChanged](#remove_documenttitlechanged) | Remove an event handler previously added with add_DocumentTitleChanged.
 [get_DocumentTitle](#get_documenttitle) | The title for the current top level document.
 
-See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
+You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md#iwebview2webview). See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
 
 ## Members
 
@@ -48,6 +48,34 @@ Add an event handler for the NewWindowRequested event.
 
 Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
 
+```cpp
+    // Register a handler for the NewWindowRequested event.
+    // This handler will defer the event, create a new app window, and then once the
+    // new window is ready, it'll provide that new window's WebView as the response to
+    // the request.
+    wil::com_ptr<IWebView2WebView3> webview3 = m_webView.try_query<IWebView2WebView3>();
+    CHECK_FAILURE(webview3->add_NewWindowRequested(
+      Callback<IWebView2NewWindowRequestedEventHandler>(
+        [this](IWebView2WebView* sender,
+          IWebView2NewWindowRequestedEventArgs* args)
+    {
+      wil::com_ptr<IWebView2Deferral> deferral;
+      CHECK_FAILURE(args->GetDeferral(&deferral));
+
+      AppWindow* newAppWindow = AppWindow::CreateNewInstance(
+        m_hInst, m_nShow, true);
+      newAppWindow->m_onWebViewFirstInitialized =
+        [args, deferral, newAppWindow]()
+      {
+        CHECK_FAILURE(args->put_NewWindow(newAppWindow->m_webView.get()));
+        CHECK_FAILURE(args->put_Handled(TRUE));
+        CHECK_FAILURE(deferral->Complete());
+      };
+
+      return S_OK;
+    }).Get(), &m_newWindowRequestedToken));
+```
+
 #### remove_NewWindowRequested 
 
 Remove an event handler previously added with add_NewWindowRequested.
@@ -60,7 +88,7 @@ Add an event handler for the DocumentTitleChanged event.
 
 > public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([IWebView2DocumentTitleChangedEventHandler](IWebView2DocumentTitleChangedEventHandler.md#iwebview2documenttitlechangedeventhandler) * eventHandler,EventRegistrationToken * token)
 
-The event fires when the DocumentTitle property of the WebView changes.
+The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
 
 ```cpp
     // Register a handler for the DocumentTitleChanged event.
@@ -88,5 +116,5 @@ The title for the current top level document.
 
 > public HRESULT [get_DocumentTitle](#get_documenttitle)(LPWSTR * title)
 
-If the document has no explicit title or is otherwise empty, then the URI of the top level document is used.
+If the document has no explicit title or is otherwise empty, a default that may or may not match the URI of the document will be used.
 

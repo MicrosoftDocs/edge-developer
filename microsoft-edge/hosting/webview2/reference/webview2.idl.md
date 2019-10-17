@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,9 +32,9 @@ browserExecutableFolder is the relative path to the folder that contains the emb
 
 The default channel search order is stable, beta, dev, and canary. When there is an override WEBVIEW2_RELEASE_CHANNEL_PREFERENCE environment variable or applicable releaseChannelPreference registry value with the value of 1, the channel search order is reversed.
 
-userDataFolder can be specified to change the default user data folder location for WebView2. The path can be an absolute file path or a relative file path that is interpreted as relative to the current process's executable. Otherwise, for UWP apps, the default user data folder will be the app data folder for the package; for non-UWP apps, the default user data folder <Executable file="" name>="">.WebView2 will be created in the same directory next to the app executable. WebView2 creation can fail if the executable is running in a directory that the process doesn’t have permission to create a new folder in. The app is responsible to clean up its user data folder when it is done.
+userDataFolder can be specified to change the default user data folder location for WebView2. The path can be an absolute file path or a relative file path that is interpreted as relative to the current process's executable. Otherwise, for UWP apps, the default user data folder will be the app data folder for the package; for non-UWP apps, the default user data folder `{Executable File Name}.WebView2` will be created in the same directory next to the app executable. WebView2 creation can fail if the executable is running in a directory that the process doesn't have permission to create a new folder in. The app is responsible to clean up its user data folder when it is done.
 
-additionalBrowserArguments can be specified to change the behavior of the WebView. These will be passed to the browser process as part of the command line. See [Run Chromium with Flags](https://aka.ms/RunChromiumWithFlags) for more information about command line switches to browser process. If the app is launched with a command line switch &ndash;edge-webview-switches=xxx the value of that switch (xxx in the above example) will also be appended to the browser process command line. Certain switches like &ndash;user-data-dir are internal and important to WebView. Those switches will be ignored even if specified. If the same switches are specified multiple times, the last one wins. Note that this also applies to switches like &ndash;enable-features. There is no attempt to merge the different values of the same switch. App process's command line &ndash;edge-webview-switches value are processed after additional_switches parameter is processed. Also note that as browser process might be shared among WebViews, the switches is not guaranteed to be applied except for the first WebView that starts the browser process. If parsing failed for the specified switches, they will be ignored. nullptr will run browser process with no flags.
+additionalBrowserArguments can be specified to change the behavior of the WebView. These will be passed to the browser process as part of the command line. See [Run Chromium with Flags](https://aka.ms/RunChromiumWithFlags) for more information about command line switches to browser process. If the app is launched with a command line switch `--edge-webview-switches=xxx` the value of that switch (xxx in the above example) will also be appended to the browser process command line. Certain switches like `--user-data-dir` are internal and important to WebView. Those switches will be ignored even if specified. If the same switches are specified multiple times, the last one wins. Note that this also applies to switches like `--enable-features`. There is no attempt to merge the different values of the same switch. App process's command line `--edge-webview-switches` value are processed after the additionalBrowserArguments parameter is processed. Also note that as a browser process might be shared among WebViews, the switches are not guaranteed to be applied except for the first WebView that starts the browser process. If parsing failed for the specified switches, they will be ignored. `nullptr` will run browser process with no flags.
 
 environment_created_handler is the handler result to the async operation which will contain the WebView2Environment that got created.
 
@@ -67,6 +67,26 @@ If none of those environment variables exist, then the registry is examined next
 "browserExecutableFolder"=""
 "userDataFolder"=""
 "additionalBrowserArguments"=""
+```
+
+In the unlikely scenario where some instances of WebView are open during a browser update we could end up blocking the deletion of old Edge browsers. To avoid running out of disk space a new WebView creation will fail with the next error if it detects that there are many old versions present.
+
+```cpp
+ERROR_DISK_FULL
+```
+
+The default maximum number of Edge versions allowed is 20.
+
+The maximum number of old Edge versions allowed can be overwritten with the value of the following environment variable.
+
+```cpp
+WEBVIEW2_MAX_INSTANCES
+```
+
+If the Webview depends on an installed Edge and it is uninstalled any subsequent creation will fail with the next error
+
+```cpp
+ERROR_PRODUCT_UNINSTALLED
 ```
 
 First we check with Root as HKLM and then HKCU. AppId is first set to the Application User Model ID of the caller's process, then if there's no corresponding registry key the AppId is set to the executable name of the caller's process, or if that isn't a registry key then '*'. If an override registry key is found then we use the browserExecutableFolder, userDataFolder and additionalBrowserArguments registry values as replacements for the corresponding values in CreateWebView2EnvironmentWithDetails parameters. If any of those registry values isn't present, then the parameter passed to CreateWebView2Environment is used.

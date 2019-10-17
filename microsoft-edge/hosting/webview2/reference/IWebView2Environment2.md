@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,11 +17,15 @@ interface IWebView2Environment2
   : public IWebView2Environment
 ```
 
+Additional functionality implemented by the Environment object.
+
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [get_BrowserVersionInfo](#get_browserversioninfo) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment), including channel name if it is not the stable channel.
+
+See the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
 
 ## Members
 
