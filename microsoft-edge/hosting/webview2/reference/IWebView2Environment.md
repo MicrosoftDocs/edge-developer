@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/17/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -57,13 +57,7 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
     LPCWSTR subFolder = (webviewInitFlags & kUseInstalledBrowser || !localEdgeExists)
         ? nullptr
         : L".";
-#ifdef USE_WEBVIEW2_STAGING
-    LPCWSTR additionalBrowserSwitches = (webviewInitFlags & KEnableInternalVisualMode)
-        ? L"--enable-features=msEmbeddedBrowserVisualHosting"
-        : nullptr;
-#else
     LPCWSTR additionalBrowserSwitches = nullptr;
-#endif
     HRESULT hr = CreateWebView2EnvironmentWithDetails(
         subFolder, nullptr,
         additionalBrowserSwitches,
@@ -76,36 +70,14 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
         if (SUCCEEDED(result))
         {
             webviewEnvironment->QueryInterface(IID_PPV_ARGS(&m_webViewEnvironment));
-#ifdef USE_WEBVIEW2_STAGING
-            wil::com_ptr<IWebView2EnvironmentStagingWindowlessInterface> webViewEnvironmentStagingWindowless =
-                m_webViewEnvironment.try_query<IWebView2EnvironmentStagingWindowlessInterface>();
-            if (webViewEnvironmentStagingWindowless)
-            {
-                WEBVIEW2_RENDERING_MODE renderingMode =
-                    m_webViewContainer.GetHostingMode() == WebViewContainer::HostingMode::kWindowed
-                    ? WEBVIEW2_RENDERING_MODE_WINDOWED
-                    : WEBVIEW2_RENDERING_MODE_WINDOWLESS;
-                CHECK_FAILURE(webViewEnvironmentStagingWindowless->CreateWebViewWithRenderingMode(
-                    renderingMode,
-                    m_mainWindow,
-                    Callback<IWebView2CreateWebViewCompletedHandler>(
-                        this, &AppWindow::OnCreateWebViewCompleted).Get()));
-            }
-            else
-            {
-#endif
             CHECK_FAILURE(m_webViewEnvironment->CreateWebView(
                 m_mainWindow, Callback<IWebView2CreateWebViewCompletedHandler>(
                     this, &AppWindow::OnCreateWebViewCompleted).Get()));
-#ifdef USE_WEBVIEW2_STAGING
-            }
-#endif
         }
         else
         {
             ShowFailure(result, L"Failed to create webview environment");
         }
-
         return S_OK;
     }).Get());
     CHECK_FAILURE(hr);
