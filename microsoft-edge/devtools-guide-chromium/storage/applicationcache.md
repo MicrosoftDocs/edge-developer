@@ -70,6 +70,7 @@ At the bottom of the table there are status icons indicating your network connec
 
 
 <!-- image links -->  
+
 [ImageApplicationCachePane]: images/cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
 [ImageManifestPane]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
 
