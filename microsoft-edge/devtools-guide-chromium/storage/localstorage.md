@@ -125,7 +125,7 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 <!-- links -->  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
-[MicrosoftEdgeDevTools]: ../devtools-guide-chromium.md "Microsoft Edge Developer Tools"  
+[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
