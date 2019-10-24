@@ -18,7 +18,7 @@ The WebView2 control is currently in developer preview, during which you can pro
 
 ## Supported Platforms
 
-Developer preview is first available for Win32 C++ on Windows 10. In the future, we plan to have WebView2 on all the supported versions of Windows supporting C++, .NET and XAML.  
+Developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows 8, and Windows 7. In the future, we plan to support WebView2 on .NET, and XAML.  
 
 ## Getting Started
 
@@ -40,8 +40,18 @@ Developers can target different [channels](https://www.microsoftedgeinsider.com/
 
 ## Debugging WebView2
 
+### DevTools
+
 You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, just as you would in the browser. While having focus on the WebView window, press `F12`, or press `Ctrl` + `Shift` + `I`, or Right Click + choose `Inspect` to open Developer Tools.
 
 ![F12](webview2/images/F12.PNG)
 
 **Note when debugging application in Visual Studio with the native debugger attached, `F12` may trigger the native debugger instead of Developer Tools. Use `Ctrl` + `Shift` + `I`, or Right Click + `Inspect` to avoid potential hotkey conflict.**
+
+### Visual Studio Debugging
+
+You can use Visual Studio 2019 starting with version 16.4 Preview 2 to debug your script within the WebView2 right from the IDE. 
+
+### Visual Studio Code Debugging
+
+You can use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here!](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications)
