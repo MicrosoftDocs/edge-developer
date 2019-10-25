@@ -2,7 +2,7 @@
 title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,14 +29,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  
-The Console has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
+This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The Console has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
 
 ## Viewing logged messages   
 
-Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  
-To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  
-When the browser runs your JavaScript and sees an expression like that, it logs the message to the Console.  For example, suppose that you are writing the HTML and JavaScript for a page:  
+Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and sees an expression like that, it logs the message to the Console.  For example, suppose that you are writing the HTML and JavaScript for a page:  
 
 ```html
 <!doctype html>
@@ -75,14 +72,13 @@ When the browser runs your JavaScript and sees an expression like that, it logs 
 </html>
 ```  
 
-[Figure 1](#figure-1) shows what the Console looks like after loading the page and waiting 3 seconds.  Try to figure out which
-lines of code caused the browser to log the messages.  
+[Figure 1](#figure-1) shows what the Console looks like after loading the page and waiting 3 seconds.  Try to figure out which lines of code caused the browser to log the messages.  
 
 > ##### Figure 1  
 > The Console panel  
 > ![The Console panel][ImageConsole]  
 
-Web developers log messages for 2 general reasons:
+Web developers log messages for 2 general reasons:  
 
 *   Making sure that code is running in the right order.  
 *   Inspecting the values of variables at a certain moment in time.  
@@ -93,8 +89,7 @@ The main difference between the methods is how the data being logged is displaye
 
 ## Running JavaScript   
 
-The Console is also a [REPL][WikiREPLoop] .  
-You may run JavaScript in the Console to interact with the page being inspected.  For example, [Figure 2](#figure-2) shows the Console next to the DevTools homepage, and [Figure 3](#figure-3) shows that same page after using the Console to change the top heading of the page.  
+The Console is also a [REPL][WikiREPLoop].  You may run JavaScript in the Console to interact with the page being inspected.  For example, [Figure 2](#figure-2) shows the Console next to the DevTools homepage, and [Figure 3](#figure-3) shows that same page after using the Console to change the top heading of the page.  
 
 > ##### Figure 2  
 > The Console panel next to the DevTools homepage  
@@ -104,9 +99,9 @@ You may run JavaScript in the Console to interact with the page being inspected.
 > Using the Console to change the top heading of the page  
 > ![Using the Console to change the top heading of the page][ImageConsoleChangeTitle]  
 
-Modifying the page from the Console is possible because the Console has full access to the [`window`][MDNWindow]  of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  <!--See [Console Utilities API Reference][UtilitiesDebug] to see the full list of utility functions.  -->  
+Modifying the page from the Console is possible because the Console has full access to the [`window`][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  <!--See [Console Utilities API Reference][UtilitiesDebug] to see the full list of utility functions.  -->  
 
-When you run JavaScript you do not have to interact with the page.  You may use the Console to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array method [`map()`][MDNMap] , and you want to experiment with it.  
+When you run JavaScript you do not have to interact with the page.  You may use the Console to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array method [`map()`][MDNMap], and you want to experiment with it.  
 The Console is a good place to try out the function.  
 
 <!--See [Get Started With Running JavaScript][RunningJavascript] to get hands-on experience with running JavaScript in the Console.  -->
