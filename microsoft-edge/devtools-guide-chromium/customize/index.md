@@ -2,7 +2,7 @@
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/11/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -48,7 +48,7 @@ To open Settings, do one of the following:
 
 The **Drawer** contains many hidden features.  
 
-Press `esc` to open or close the Drawer.  
+Press `Escape` to open or close the Drawer.  
 
 > ##### Figure 2  
 > The Drawer  
@@ -68,7 +68,7 @@ Click and drag a panel tab to change its ordering.  Your custom tab order persis
 > By default, the Network panel tab is usually the fourth from the left.  In [Figure 4](#figure-4), it is the first from the left.  
 
 > ##### Figure 4  
-> The button for opening Drawer tabs  
+> A DevTools window with a custom tab ordering    
 > ![A DevTools window with a custom panel tab ordering][ImageCustomTabOrdering]  
 
 ## Change DevTools placement   
@@ -109,12 +109,12 @@ The next time you open DevTools, a new page is displayed called **Experiments** 
 
 [ImageMoreIcon]: images/more-icon.msft.png  
 
-[ImageCustomTabOrdering]: images/network-first-position.msft.png "Figure 4: A DevTools window with a custom panel tab ordering"  
-[ImageDarkTheme]: images/dev-tools-dock-side.msft.png " Figure 6: The dark theme"  
+[ImageSettings]: images/settings-preferences.msft.png "Figure 1: Settings"  
 [ImageDrawerExample]: images/drawer-open.msft.png "Figure 2: The Drawer"  
 [ImageMoreDrawerTabs]: images/drawer-open-more-tools.msft.png "Figure 3: The button for opening Drawer tabs"  
-[ImageSettings]: images/settings-preferences.msft.png "Figure 1: Settings"  
-[ImageUndock]: images/settings-appearance-theme.msft.png " Figure 5: Undocked DevTools"  
+[ImageCustomTabOrdering]: images/network-first-position.msft.png "Figure 4: A DevTools window with a custom panel tab ordering"  
+[ImageUndock]: images/dev-tools-dock-side.msft.png " Figure 5: Undocked DevTools"  
+[ImageDarkTheme]: images/settings-appearance-theme.msft.png " Figure 6: The dark theme"  
 
 <!-- links -->  
 
