@@ -28,12 +28,15 @@
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
+### Console
+#### [Overview](devtools-guide-chromium/console/index.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
 #### [Local Storage](devtools-guide-chromium/storage/localstorage.md)
+#### [IndexedDB](devtools-guide-chromium/storage/indexeddb.md)
 #### [Session Storage](devtools-guide-chromium/storage/sessionstorage.md)
 #### [Application Cache](devtools-guide-chromium/storage/applicationcache.md)
 #### [WebSQL](devtools-guide-chromium/storage/websql.md)
