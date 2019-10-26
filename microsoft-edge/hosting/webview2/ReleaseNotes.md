@@ -14,18 +14,18 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
-## 0.8.XX
+## 0.8.314
 
-[NuGet package][WebView2NuGetGallery0.8.270] | minimum Microsoft Edge version 78.0.XXX.0. 
+[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314) | minimum Microsoft Edge version 79.0.314.0.
 
 **Re-compile your app after updating the NuGet package.**  
 
 *   Added support for Windows 7, Windows 8, and Windows 8.1
 *   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from you IDE. Click [here](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
 *   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#AddRemoteObject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
-*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#add_AcceleratorKeyPressed) for more details. ([\#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
-*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2settings2#put_AreDefaultContextMenusEnabled) for more details ([\#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
-*  Updated `DPI Awareness`. Now, the WebView's DPI awareness will be the same as its host application's DPI awareness. Note, if another hybrid application is launched with a different DPI Awareness than the original WebView, the new WebView will not be launched if the user data directory is the same ([\#58](https://github.com/MicrosoftEdge/WebViewFeedback/issues/58)).
+*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#add_AcceleratorKeyPressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2settings2#put_AreDefaultContextMenusEnabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*  Updated `DPI Awareness`. Now, the WebView's DPI awareness will be the same as its host application's DPI awareness. Note, if another hybrid application is launched with a different DPI Awareness than the original WebView, the new WebView will not be launched if the user data directory is the same ([#58](https://github.com/MicrosoftEdge/WebViewFeedback/issues/58)).
 *   Updated `Notification Change Behavior` so WebView2 automatically rejects notification permission requests prompted by web content hosted within the WebView.
 
 ## 0.8.270  

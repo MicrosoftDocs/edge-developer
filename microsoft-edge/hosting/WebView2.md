@@ -48,10 +48,16 @@ You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.c
 
 **Note when debugging application in Visual Studio with the native debugger attached, `F12` may trigger the native debugger instead of Developer Tools. Use `Ctrl` + `Shift` + `I`, or Right Click + `Inspect` to avoid potential hotkey conflict.**
 
-### Visual Studio Debugging
+### Visual Studio
 
-You can use Visual Studio 2019 starting with version 16.4 Preview 2 to debug your script within the WebView2 right from the IDE. 
+You can use the script debugger in Visual Studio 2019 (minimum version 16.4 Preview 2) to debug your script within WebView2 right from the IDE. Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.
 
-### Visual Studio Code Debugging
+![VSJSDiagnostics](webview2/images/VSJSDiagnostics.jpg)
 
-You can use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here!](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications)
+Right click on your project and select **Properties**. Under **Configuration Properties** > **Debugging** > **Debugger Type**,  choose the **JavaScript (WebView2)** option to enable WebView2 script debugging. More details to follow soon.
+
+![VSScriptDebugger](webview2/images/VSScriptDebugger.jpg)
+
+### Visual Studio Code
+
+You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications).
