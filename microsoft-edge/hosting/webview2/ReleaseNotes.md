@@ -20,7 +20,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 **Re-compile your app after updating the NuGet package.**  
 
-*   Added support for Windows 7, Windows 8, and Windows 8.1
+*   Added support for Windows 7, Windows 8/8.1.
 *   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from you IDE. Click [here](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
 *   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#AddRemoteObject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
 *   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#add_AcceleratorKeyPressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
