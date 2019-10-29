@@ -37,7 +37,7 @@ This tutorial teaches you the basic workflow for debugging any JavaScript issue 
 
 Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
 
-1.  Click **Open Demo**.  <!--The demo opens in a new tab.  -->  
+1.  Click **Open Demo**.  Hold `alt` \(Windows\) or `command` \(macOS\) and open the demo in a new tab.  
 
     [Open Demo][OpenDebugJSDemo]  
 
@@ -53,7 +53,7 @@ Finding a series of actions that consistently reproduces a bug is always the fir
 
 DevTools provides a lot of different tools for different tasks, such as changing CSS, profiling page load performance, and monitoring network requests.  The **Sources** panel is where you debug JavaScript.  
 
-1.  Open DevTools by pressing `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\) .  This shortcut opens the **Console** panel.  
+1.  Open DevTools by pressing `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) .  This shortcut opens the **Console** panel.  
     
     > ##### Figure 2  
     > The **Console** panel  
@@ -91,8 +91,7 @@ function updateLabel() {
 }
 ```  
 
-The `console.log()` method may get the job done, but **breakpoints** are able to get it done faster.  
-A breakpoint lets you pause your code in the middle of the runtime, and examine all values at that moment in time.  Breakpoints have a few advantages over the `console.log()` method:  
+The `console.log()` method may get the job done, but **breakpoints** are able to get it done faster.  A breakpoint lets you pause your code in the middle of the runtime, and examine all values at that moment in time.  Breakpoints have a few advantages over the `console.log()` method:  
 
 *   With `console.log()`, you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then reload the page in order to see the messages in the Console.  With breakpoints, you may pause on the relevant code without even knowing how the code is structured.  
 *   In your `console.log()` statements you need to explicitly specify each value that you want to inspect.  With breakpoints, DevTools shows you the values of all variables at that moment in time.  Sometimes there are variables affecting your code that you are not even aware of.  
@@ -110,17 +109,20 @@ If you take a step back and think about how the app works, you are able to make 
     > The **click** checkbox is enabled  
     > ![The click checkbox is enabled][ImageJSClickCheckbox]  
     
-1.  Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** panel.  
-   DevTools should be paused on this line of code:  
+1.  Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** panel.  DevTools should be paused on this line of code:  
+    
+    ```javascript
+    if (inputsAreEmpty()) {
+    ```  
+    
+    Press **Resume Script Execution** ![Resume Script Execution][ImageResumeIcon] until you pause on the following line.  
     
     ```javascript
     function onClick() {
     ```  
     
-    If you paused on a different line of code, press **Resume Script Execution** ![Resume Script Execution][ImageResumeIcon] until you pause on the correct line.  
-    
     > [!NOTE]
-    > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the correct line of code every time.  
+    > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
 
 <!--todo: add inprivate section when available -->  
 
@@ -243,7 +245,7 @@ There are a couple of code stepping controls that were not explained in this tut
 [ImageOverIcon]: images/step-over-icon.msft.png  
 [ImageResumeIcon]: images/resume-script-execution-icon.msft.png  
 
-[ImageJSBugs]: images/js-demo.msft.png "Figure 1: The result of 5 + 1 is 51, but should be 6"  
+[ImageJSBugs]: images/js-demo-bad.msft.png "Figure 1: The result of 5 + 1 is 51, but should be 6"  
 [ImageJSConsole]: images/console-empty.msft.png "Figure 2: The Console panel"  
 [ImageJSSources]: images/sources-sections.msft.png "Figure 3: The Sources panel"  
 [ImageJSSourcesAnnotated]: images/sources-sections-annotated.msft.png "Figure 4: The 3 parts of the Sources panel UI"  
