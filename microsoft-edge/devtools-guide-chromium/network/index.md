@@ -2,12 +2,12 @@
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 06/07/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2. 0 (the "License");
    you may not use this file except in compliance with the License. 
@@ -366,9 +366,9 @@ How does a page look and behave when some of the page resources are not availabl
 
 1.  Uncheck the **Enable request blocking** checkbox.  
 
-## Next steps   
+## Conclusion  
 
-Congratulations, you have completed the tutorial.  Click **Dispense Award** to receive your award.  
+Congratulations, you have completed the tutorial.  You now know how to use the Network panel in the Microsoft Edge DevTools!
 
 
 
