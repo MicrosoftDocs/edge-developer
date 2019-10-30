@@ -2,7 +2,7 @@
 title: Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,7 +33,7 @@ Use Device Mode to approximate how your page looks and performs on a mobile devi
 
 Device Mode is the name for the loose collection of features in Microsoft Edge DevTools that help you simulate mobile devices.  These features include:  
 
-*   [Simulating a mobile viewport](#viewport)  
+*   [Simulating a mobile viewport](#simulate-a-mobile-viewport)  
 *   [Throttling the network](#throttle-the-network-only)  
 *   [Throttling the CPU](#throttle-the-cpu-only)  
 *   [Simulating geolocation](#override-geolocation)  
@@ -43,8 +43,7 @@ Device Mode is the name for the loose collection of features in Microsoft Edge D
 
 Think of Device Mode as a [first-order approximation][WikiApproximation] of how your page looks and feels on a mobile device.  With Device Mode you do not actually run your code on a mobile device.  You simulate the mobile user experience from your laptop or desktop.  
 
-There are some aspects of mobile devices that DevTools will never be able to simulate.  For example, the architecture of mobile CPUs is very different than the architecture of laptop or desktop CPUs.  When in doubt, your best bet is to actually run your page on a mobile device.  
-Use [Remote Debugging][DevToolsRemoteDebugging] to view, change, debug, and profile the code of a page from your laptop or desktop while it actually runs on a mobile device.  
+There are some aspects of mobile devices that DevTools will never be able to simulate.  For example, the architecture of mobile CPUs is very different than the architecture of laptop or desktop CPUs.  When in doubt, your best bet is to actually run your page on a mobile device.  Use [Remote Debugging][DevToolsRemoteDebugging] to view, change, debug, and profile the code of a page from your laptop or desktop while it actually runs on a mobile device.  
 
 ## Simulate a mobile viewport   
 
@@ -94,6 +93,9 @@ The table below describes the differences between the options.  **Rendering meth
 | Mobile \(no touch\) | Mobile | Normal | click |  
 | Desktop | Desktop | Normal | click |  
 | Desktop \(touch\) | Desktop | Circle | touch |  
+
+> [!NOTE]
+> If you do not see the **Device Type** list, click **More options** and select **Add device type**.  
 
 ### Mobile Device Viewport Mode   
 
@@ -182,8 +184,7 @@ To throttle the network and CPU, select **Mid-tier mobile** or **Low-end mobile*
 > The Throttle list  
 > ![The Throttle list][ImageThrottling]  
 
-**Mid-tier mobile** simulates fast 3G and throttles your CPU so that it is 4 times slower than normal.  **Low-end mobile** simulates slow 3G and throttles your CPU 6 times slower than normal.  
-Keep in mind that the throttling is relative to the normal capability of your laptop or desktop.  
+**Mid-tier mobile** simulates fast 3G and throttles your CPU so that it is 4 times slower than normal.  **Low-end mobile** simulates slow 3G and throttles your CPU 6 times slower than normal.  Keep in mind that the throttling is relative to the normal capability of your laptop or desktop.  
 
 > [!NOTE]
 > The **Throttle** list will be hidden if your **Device Toolbar** is narrow.  
@@ -271,17 +272,17 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 
 [ImageCaptureIcon]: images/capture-settings-icon.msft.png  
 [ImageCustomizeIcon]: images/customize-and-control-devtools-icon.msft.png  
-[ImageDeviceToolbarIcon]: images/toggle-device-toolbar-icon.msft.png  
-[ImageRotateIcon]: images/rotate-icon.msft.png  
+[ImageDeviceToolbarIcon]: images/toggle-device-toolbar-dark-icon.msft.png  
+[ImageRotateIcon]: images/rotate-dark-icon.msft.png  
 
 [ImageDeviceToolbar]: images/toggle-device-toolbar.msft.png "Figure 1: The Device Toolbar"  
-[ImageResponsiveHandles]: images/toggle-device-toolbar-handles.msft.png "Figure 2: The handles for changing the dimensions of the viewport when in Responsive Viewport Mode"  
+[ImageResponsiveHandles]: images/toggle-device-toolbar-handles-highlighted.msft.png "Figure 2: The handles for changing the dimensions of the viewport when in Responsive Viewport Mode"  
 [ImageShowMediaQueries]: images/toggle-device-toolbar-more-options-show-media-queries.msft.png "Figure 3: Show media queries"  
 [ImageBreakpoint]: images/toggle-device-toolbar-click-breakpoint.msft.png "Figure 4: Click a breakpoint to change the width of the viewport"  
 [ImageDeviceType]: images/toggle-device-toolbar-device-type-list.msft.png "Figure 5: The Device Type list"  
 [ImageDeviceList]: images/toggle-device-toolbar-device-list.msft.png "Figure 6: The Device list"  
 [ImageLandscape]: images/toggle-device-toolbar-landscape.msft.png "Figure 7: Landscape orientation"  
-[ImageDeviceToolbar2]: images/toggle-device-toolbar.msft.png "Figure 8: The Device Toolbar"  
+[ImageDeviceToolbar2]: images/toggle-device-toolbar-highlighted.msft.png "Figure 8: The Device Toolbar"  
 [ImageShowDeviceFrame]: images/toggle-device-toolbar-option-show-device-frame.msft.png "Figure 9: Show device frame"  
 [ImageIphoneFrame]: images/toggle-device-toolbar-options-device-frame-iphone-6.msft.png "Figure 10: The device frame for the iPhone 6"  
 [ImageEdit]: images/toggle-device-toolbar-device-list-edit.msft.png "Figure 11: Selecting Edit"  
