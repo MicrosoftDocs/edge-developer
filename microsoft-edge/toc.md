@@ -40,6 +40,7 @@
 #### [Session Storage](devtools-guide-chromium/storage/sessionstorage.md)
 #### [Application Cache](devtools-guide-chromium/storage/applicationcache.md)
 #### [WebSQL](devtools-guide-chromium/storage/websql.md)
+#### [Cache](devtools-guide-chromium/storage/cache.md)
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
 ### JavaScript
 #### [Background Services](devtools-guide-chromium/javascript/background-services.md)
