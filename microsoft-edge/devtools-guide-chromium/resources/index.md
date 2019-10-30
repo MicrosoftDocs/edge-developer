@@ -2,7 +2,7 @@
 title: View Page Resources With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/16/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -55,7 +55,7 @@ See [Inspect the details of a resource][NetworkInspectDetailsResource].
 
 > ##### Figure 3  
 > Inspecting a resource in the Network panel  
-> ![Inspecting a resource in the Network panel][ImageOpenFile]  
+> ![Inspecting a resource in the Network panel][ImageNetworkResponse]  
 
 ### Reveal resources in the Network panel from other panels   
 
@@ -88,19 +88,20 @@ To view the resources of a page organized by directory:
     
     Here is a breakdown of the non-obvious items in [Figure 6](#figure-6):  
     
-    *   `top` is the main document [browsing context][MDNInlineFrame].  
-    *   `airhorner.com` represents a domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.j` file is probably `https://airhorner.com/scripts/comlink.global.js`.  
-    *   `scripts` is a directory.  
-    *   `(index)` is the main HTML document.  
-    *   `iu3` is another browsing context.  This context was probably created by an `<iframe>` element embedded in the main document HTML.  
-    *   `sw.js` is a service worker runtime context.  
+    | Page item | Description |  
+    |:--- |:--- |  
+    | `top` | The main document [browsing context][MDNInlineFrame]. |  
+    | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.j` file is probably `https://airhorner.com/scripts/comlink.global.js`. |  
+    | `scripts` | A directory. |  
+    | `(index)` | The main HTML document. |  
+    | `sw.js` | A service worker runtime context. |  
     
 1.  Click a resource to view it in the **Editor**.  
     
     > ##### Figure 7  
     > Viewing a file in the **Editor**  
     > ![Viewing a file in the Editor][ImageSourcesView]  
-
+    
 ### Browse by filename   
 
 By default the **Page** pane groups resources by directory.  To disable this grouping and view the resources for each domain as a flat list:  
@@ -116,7 +117,7 @@ By default the **Page** pane groups resources by directory.  To disable this gro
     
     > ##### Figure 9  
     > The **Page** pane after disabling **Group By Folder**  
-    > ![The Page pane after disabling Group By Folder][ImageOpenFile]  
+    > ![The Page pane after disabling Group By Folder][ImageFileNames]  
     
 ### Browse by file type   
 
@@ -157,7 +158,7 @@ See [Filter by resource type][NetworkFilterByResourceType].
 
 [ImageOpenFile]: images/command-menu-empty.msft.png "Figure 1: The Open File dialog"  
 [ImageFileSearch]: images/command-menu-file-search.msft.png "Figure 2: Typing a filename in the Open File dialog"  
-[ImageOpenFile]: images/network-response.msft.png "Figure 3: Inspecting a resource in the **Network** panel"  
+[ImageNetworkResponse]: images/network-response.msft.png "Figure 3: Inspecting a resource in the **Network** panel"  
 [ImageRevealNetwork]: images/sources-page-reveal-in-network-panel.msft.png "Figure 4: Reveal in Network panel"  
 [ImageNetworkLog]: images/network-resources.msft.png "Figure 5: Page resources in the Network Log"  
 [ImagePage]: images/sources-page-empty.msft.png "Figure 6: The Page pane"  
