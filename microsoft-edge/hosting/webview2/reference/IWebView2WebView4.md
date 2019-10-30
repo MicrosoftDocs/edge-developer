@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -29,10 +29,9 @@ Additional functionality implemented by the primary WebView object.
 [add_AcceleratorKeyPressed](#add_acceleratorkeypressed) | Add an event handler for the AcceleratorKeyPressed event.
 [remove_AcceleratorKeyPressed](#remove_acceleratorkeypressed) | Remove an event handler previously added with add_AcceleratorKeyPressed.
 [WEBVIEW2_KEY_EVENT_TYPE](#webview2_key_event_type) | The type of key event that triggered an AcceleratorKeyPressed event.
-[WEBVIEW2_KEY_EVENT_TYPE](#webview2_key_event_type) | The type of key event that triggered an AcceleratorKeyPressed event.
 [WEBVIEW2_PHYSICAL_KEY_STATUS](#webview2_physical_key_status) | A structure representing the information packed into the LPARAM given to a Win32 key event.
 
-You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view). See the [IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) interface for more details.
+You can QueryInterface for this interface from the object that implements [IWebView2WebView3](IWebView2WebView3.md#iwebview2webview3). See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
 
 ## Members
 
@@ -40,7 +39,7 @@ You can QueryInterface for this interface from the object that implements [IWebV
 
 Add the provided host object to script running in the WebView with the specified name.
 
-> public HRESULT [AddRemoteObject](#interface_i_web_view2_web_view4_1a2956b4ff108a63ffefc482ed9321ec60)(LPCWSTR name,VARIANT * object)
+> public HRESULT [AddRemoteObject](#addremoteobject)(LPCWSTR name,VARIANT * object)
 
 Host objects are exposed as remote object proxies via `window.chrome.webview.remoteObjects.<name>`. Remote object proxies are promises and will resolve to an object representing the host object. The promise is rejected if the app has not added an object with the name. When JavaScript code access a property or method of the object, a promise is return, which will resolve to the value returned from the host for the property or method, or rejected in case of error such as there is no such property or method on the object or parameters are invalid. For example, when the application code does the following: 
 ```cpp
@@ -50,7 +49,7 @@ object.pdispVal = appObject;
 webview->AddRemoteObject(L"host_object", &host);
 ```
  JavaScript code in the WebView will be able to access appObject as following and then access attributes and methods of appObject: 
-```cpp
+```js
 let app_object = await window.chrome.webview.remoteObjects.host_object;
 let attr1 = await app_object.attr1;
 let result = await app_object.method1(parameters);
@@ -86,6 +85,16 @@ Setting a property on an asynchronous remote object proxy works slightly differe
 For example, suppose you have a COM object with the following interface
 
 ```cpp
+interface IRemoteObjectSample : IUnknown
+    {
+        // Demonstrate basic method call with some parameters and a return value.
+        HRESULT MethodWithParametersAndReturnValue(BSTR stringParameter, INT integerParameter, BSTR* stringResult);
+        // Demonstrate getting and setting a property.
+        HRESULT Property(BSTR* stringResult);
+        HRESULT Property(BSTR stringValue);
+        // Demonstrate native calling back into JavaScript.
+        HRESULT CallCallbackAsynchronously(IDispatch* callbackParameter);
+    };
 ```
  We can add an instance of this interface into our JavaScript with `AddRemoteObject`. In this case we name it `sample`:
 
@@ -103,7 +112,7 @@ For example, suppose you have a COM object with the following interface
 ```
  Then in the HTML document we can use this COM object via `chrome.webview.remoteObjects.sample`:
 
-```cpp
+```js
         document.getElementById("getPropertyAsyncButton").addEventListener("click", async () => {
             const propertyValue = await chrome.webview.remoteObjects.sample.property;
             document.getElementById("getPropertyAsyncOutput").textContent = propertyValue;
@@ -161,7 +170,7 @@ For example, suppose you have a COM object with the following interface
 
 Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
 
-> public HRESULT [RemoveRemoteObject](#interface_i_web_view2_web_view4_1a696da03008b74aba6ea4bdc1b9cc393e)(LPCWSTR name)
+> public HRESULT [RemoveRemoteObject](#removeremoteobject)(LPCWSTR name)
 
 While new access attempts will be denied, if the object is already obtained by JavaScript code in the WebView, the JavaScript code will continue to have access to that object. Calling this method for a name that is already removed or never added will fail.
 
@@ -169,7 +178,7 @@ While new access attempts will be denied, if the object is already obtained by J
 
 Opens the DevTools window for the current document in the WebView.
 
-> public HRESULT [OpenDevToolsWindow](#interface_i_web_view2_web_view4_1abe76c924cc31ae2a37b2eaee80ca14cf)()
+> public HRESULT [OpenDevToolsWindow](#opendevtoolswindow)()
 
 Does nothing if called when the DevTools window is already open
 
@@ -177,7 +186,7 @@ Does nothing if called when the DevTools window is already open
 
 Add an event handler for the AcceleratorKeyPressed event.
 
-> public HRESULT [add_AcceleratorKeyPressed](#interface_i_web_view2_web_view4_1a754e9263beeca8ea5ca424c1fd2b6b19)([IWebView2AcceleratorKeyPressedEventHandler](IWebView2AcceleratorKeyPressedEventHandler.md#interface_i_web_view2_accelerator_key_pressed_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed)([IWebView2AcceleratorKeyPressedEventHandler](IWebView2AcceleratorKeyPressedEventHandler.md#iwebview2acceleratorkeypressedeventhandler) * eventHandler,EventRegistrationToken * token)
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused. A key is considered an accelerator if either:
 
@@ -229,13 +238,13 @@ It is recommended to call Handle(TRUE) as early as you can know that you want to
 
 Remove an event handler previously added with add_AcceleratorKeyPressed.
 
-> public HRESULT [remove_AcceleratorKeyPressed](#interface_i_web_view2_web_view4_1ae1cdefd5398fa336946e991ee30ab754)(EventRegistrationToken token)
+> public HRESULT [remove_AcceleratorKeyPressed](#remove_acceleratorkeypressed)(EventRegistrationToken token)
 
 #### WEBVIEW2_KEY_EVENT_TYPE 
 
 The type of key event that triggered an AcceleratorKeyPressed event.
 
-> enum [WEBVIEW2_KEY_EVENT_TYPE](#interface_i_web_view2_web_view4_1a877fa95ac857546946f7620e338e72b1)
+> enum [WEBVIEW2_KEY_EVENT_TYPE](#webview2_key_event_type)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
@@ -246,19 +255,11 @@ WEBVIEW2_KEY_EVENT_TYPE_SYSTEM_KEY_UP            |
 
 These correspond to the window messages WM_KEYDOWN, WM_KEYUP, WM_SYSKEYDOWN, and WM_SYSKEYUP.
 
-#### WEBVIEW2_KEY_EVENT_TYPE 
-
-The type of key event that triggered an AcceleratorKeyPressed event.
-
-> typedef [WEBVIEW2_KEY_EVENT_TYPE](#interface_i_web_view2_web_view4_1a4785b12eb5dd53f173fda0e096c0fb4d)
-
-These correspond to the window messages WM_KEYDOWN, WM_KEYUP, WM_SYSKEYDOWN, and WM_SYSKEYUP.
-
 #### WEBVIEW2_PHYSICAL_KEY_STATUS 
 
 A structure representing the information packed into the LPARAM given to a Win32 key event.
 
-> typedef [WEBVIEW2_PHYSICAL_KEY_STATUS](#interface_i_web_view2_web_view4_1a8dfdfabad25bf9d5e3694ef07e923637)
+> typedef [WEBVIEW2_PHYSICAL_KEY_STATUS](#webview2_physical_key_status)
 
 See the documentation for WM_KEYDOWN for details at [https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-keydown)
 
