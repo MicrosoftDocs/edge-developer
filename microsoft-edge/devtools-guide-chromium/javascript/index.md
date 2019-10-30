@@ -2,7 +2,7 @@
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/09/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,7 +37,7 @@ This tutorial teaches you the basic workflow for debugging any JavaScript issue 
 
 Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
 
-1.  Click **Open Demo**.  Hold `alt` \(Windows\) or `command` \(macOS\) and open the demo in a new tab.  
+1.  Click **Open Demo**.  Hold `control` \(Windows\) or `command` \(macOS\) and open the demo in a new tab.  
 
     [Open Demo][OpenDebugJSDemo]  
 
@@ -101,21 +101,20 @@ In short, breakpoints may help you find and fix bugs faster than the `console.lo
 If you take a step back and think about how the app works, you are able to make an educated guess that the incorrect sum (`5 + 1 = 51`) gets computed in the `click` event listener that is associated to the **Add Number 1 and Number 2** button.  Therefore, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do exactly that:  
 
 1.  In the **JavaScript Debugging** pane, click **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
-1.  Next to the **Mouse** event category, click **Expand** ![Expand icon][ImageExpandIcon].  
-   DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
+1.  Next to the **Mouse** event category, click **Expand** ![Expand icon][ImageExpandIcon].  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
 1.  Check the **click** checkbox.  DevTools is now set up to automatically pause when *any* `click` event listener runs.  
     
     > ##### Figure 5  
     > The **click** checkbox is enabled  
     > ![The click checkbox is enabled][ImageJSClickCheckbox]  
     
-1.  Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** panel.  DevTools should be paused on this line of code:  
+1.  Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** panel.  DevTools should pause on line 16 in `get-started.js`.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
     
-    Press **Resume Script Execution** ![Resume Script Execution][ImageResumeIcon] until you pause on the following line.  
+    If you pause on a different line of code, press **Resume Script Execution** ![Resume Script Execution][ImageResumeIcon] until you pause on the correct line.  
     
     ```javascript
     function onClick() {
@@ -126,22 +125,22 @@ If you take a step back and think about how the app works, you are able to make 
 
 <!--todo: add inprivate section when available -->  
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  
-It is worth memorizing all the different types, because each type ultimately helps you debug different scenarios as quickly as possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  It is worth memorizing all the different types, because each type ultimately helps you debug different scenarios as quickly as possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
 ## Step 4: Step through the code   
 
 One common cause of bugs is when a script runs in the wrong order.  Stepping through your code enables you to walk through the runtime of your code, one line at a time, and figure out exactly where it is running in a different order than you expected.  Try it now:  
 
-1.  On the **Sources** panel of DevTools, click **Step into next function call** ![Step into next function call][ImageIntoIcon] to step through the runtime of the `onClick()` function, one line at a time.  
-    DevTools highlights the following line of code:  
+1.  Click **Step over next function call** ![Step over next function call][ImageOverIcon].  DevTools runs the following code without stepping into it.  
     
     ```javascript
     if (inputsAreEmpty()) {
     ```  
-    
-1.  Click **Step over next function call** ![Step over next function call][ImageOverIcon].  DevTools runs `inputsAreEmpty()` without stepping into it.  Notice how DevTools skips a few lines of code.  
-   This is because `inputsAreEmpty()` evaluated to false, so the block of code for the `if` statement did not run.  
+
+    > [!NOTE]
+    > DevTools skips a few lines of code.  This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement does not run.  
+
+1.  On the **Sources** panel of DevTools, click **Step into next function call** ![Step into next function call][ImageIntoIcon] to step through the runtime of the `updateLabel()` function, one line at a time.  
 
 That is the basic idea of stepping through code.  If you look at the code in `get-started.js`, you see that the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.  
 
@@ -155,9 +154,8 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  To the left of the code you see the line number of this particular line of code, which is **32**.  Click on **32**.  DevTools puts a red icon to the left of **32**.  This means that there is a line-of-code breakpoint on this line.  
-    DevTools now always pauses before this line of code is run.  
-1.  Click **Resume script execution** ![Resume script execution][ImageResumeIcon].  The script continues running until it reaches line 32.  On lines 29, 30, and 31, DevTools prints out the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
+1.  To the left of the code you see the line number of this particular line of code, which is **33**.  Click on **33**.  DevTools puts a red icon to the left of **33**.  This means that there is a line-of-code breakpoint on this line.  DevTools now always pauses before this line of code is run.  
+1.  Click **Resume script execution** ![Resume script execution][ImageResumeIcon].  The script continues running until it reaches line 33.  On lines 30, 31, and 32, DevTools prints out the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
     > ##### Figure 6  
     > DevTools pauses on the line-of-code breakpoint on line 32  
@@ -165,8 +163,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 ## Step 6: Check variable values   
 
-The values of `addend1`, `addend2`, and `sum` look suspicious.  They are wrapped in quotes, which means that they are strings.  This is a good hypothesis for the explaining the cause of the bug.  
-Now it is time to gather more information.  DevTools provides a lot of tools for examining variable values.  
+The values of `addend1`, `addend2`, and `sum` look suspicious.  They are wrapped in quotes, which means that they are strings.  This is a good hypothesis for the explaining the cause of the bug.  Now it is time to gather more information.  DevTools provides a lot of tools for examining variable values.  
 
 ### Method 1: The Scope pane   
 
@@ -178,13 +175,15 @@ When you pause on a line of code, the **Scope** pane shows you what local and gl
 
 ### Method 2: Watch Expressions   
 
-The **Watch Expressions** tab lets you monitor the values of variables over time.  
-As the name implies, Watch Expressions are not just limited to variables.  You are able to store any valid JavaScript expression in a Watch Expression.  Try it now:  
+The **Watch Expressions** tab lets you monitor the values of variables over time.  As the name implies, Watch Expressions are not just limited to variables.  You are able to store any valid JavaScript expression in a Watch Expression.  Try it now:  
 
 1.  Click the **Watch** tab.  
 1.  Click **Add Expression** ![Add Expression][ImageAddIcon].  
 1.  Type `typeof sum`.  
-1.  Press `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  The Watch Expression pane (bottom-right in [Figure 7](#figure-7), after creating the `typeof sum` Watch Expression.  If your DevTools window is large, the Watch Expression pane is on the right, above the **Event Listener Breakpoints** pane.  
+1.  Press `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
+
+> [!NOTE]
+> In the Watch Expression pane \(bottom-right\) in [Figure 8](#figure-8), the `typeof sum` Watch Expression is displayed.  If your DevTools window is large, the Watch Expression pane is on the right above the **Event Listener Breakpoints** pane.  
 
 > ##### Figure 8  
 > The Watch Expression pane  
@@ -206,7 +205,7 @@ In addition to viewing `console.log()` messages, you may also use the Console to
 
 ## Step 7: Apply a fix   
 
-You find a fix for the bug.  All that is left is to try out your fix by editing the code and re-running the demo.  You do not need to leave DevTools to apply the fix.  You are able to edit JavaScript code directly within the DevTools UI.  Try it now:  
+If you find a fix for the bug, try out your fix by editing the code and re-running the demo.  You do not need to leave DevTools to apply the fix.  You are able to edit JavaScript code directly within the DevTools UI.  Try it now:  
 
 1.  Click **Resume script execution** ![Resume script execution][ImageResumeIcon].  
 1.  In the **Code Editor**, replace line 32, `var sum = addend1 + addend2`, with `var sum = parseInt(addend1) + parseInt(addend2)`.  
@@ -215,8 +214,7 @@ You find a fix for the bug.  All that is left is to try out your fix by editing 
 1.  Try out the demo with different values.  The demo now calculates correctly.  
 
 > [!CAUTION]
-> This workflow only applies a fix to the code that is running in your browser.  
-> It does not fix the code for all users that visit your page.  To do that, you need to fix the code that is on your servers.  
+> This workflow only applies a fix to the code that is running in your browser.  It does not fix the code for all users that visit your page.  To do that, you need to fix the code that is on your servers.  
 
 ## Next steps   
 
@@ -230,7 +228,7 @@ This tutorial only showed you two ways to set breakpoints.  DevTools offers many
 
 <!-- See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
-There are a couple of code stepping controls that were not explained in this tutorial.  <!--See [Step over line of code][JSReferenceStepping] to learn more.  -->  
+<!--There are a couple of code stepping controls that were not explained in this tutorial.  See [Step over line of code][JSReferenceStepping] to learn more.  -->  
 
  
 
