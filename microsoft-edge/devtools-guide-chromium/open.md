@@ -2,7 +2,7 @@
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -55,7 +55,7 @@ Press `Control`+`Shift`+`I` \(Windows\)) or `Command`+`Option`+`I` \(macOS\).
 
 ## Open DevTools from the Microsoft Edge main menu  
 
-Click **Customize and control Microsoft Edge** `...` and then select **More Tools** > **Developer Tools**.  
+Click **Settings and more \(Alt+F\)** `...` and then select **More Tools** > **Developer Tools**.  
 
 > ##### Figure 2  
 > Opening DevTools from the Microsoft Edge main menu  
@@ -65,10 +65,22 @@ Click **Customize and control Microsoft Edge** `...` and then select **More Tool
 
 Open Microsoft Edge from the command line and pass the `--auto-open-devtools-for-tabs` flag.  
 
+Windows \(CMD\):  
+
+```cmd
+start msedge --auto-open-devtools-for-tabs
+```  
+
+Windows \(PowerShell\):  
+
+```powershell
+Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
+```  
+
 macOS:  
 
 ```bash
-/Applications/Microsoft\ Edge\ MSEdge.app/Contents/MacOS/Microsoft\ Edge\ MSEdge --auto-open-devtools-for-tabs
+/Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```  
 
  
@@ -80,7 +92,7 @@ macOS:
 [ImagesMainIcon]: images/shared/main-menu-icon.msft.png  
 
 [ImageInspectOption]: images/bing-right-click-inspect.msft.png "Figure 1: The Inspect option"  
-[ImageOpenFromMain]: images/bing-customize-more-tools-developer-tools.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
+[ImageOpenFromMain]: images/bing-customize-more-tools-developer-tools-transparent.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
 
 <!-- links -->  
 
