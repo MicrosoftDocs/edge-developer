@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,12 +19,13 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 [CreateWebView2EnvironmentWithDetails](#createwebview2environmentwithdetails) | DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional browser switches.
 [CreateWebView2Environment](#createwebview2environment) | Creates an evergreen WebView2 Environment using the installed Edge version.
 [GetWebView2BrowserVersionInfo](#getwebview2browserversioninfo) | Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
+[CompareBrowserVersions](#comparebrowserversions) | This method is for anyone want to compare version correctly to determine which version is newer, older or same.
 
 ## Members
 
 #### CreateWebView2EnvironmentWithDetails 
 
-> public STDAPI [CreateWebView2EnvironmentWithDetails](#createwebview2environmentwithdetails)(PCWSTR browserExecutableFolder,PCWSTR userDataFolder,PCWSTR additionalBrowserArguments,[IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md#iwebview2createwebview2environmentcompletedhandler) * environment_created_handler)
+> public STDAPI [CreateWebView2EnvironmentWithDetails](#webview2_8idl_1a8158dc2af5585f97082c2e3ea1f64850)(PCWSTR browserExecutableFolder,PCWSTR userDataFolder,PCWSTR additionalBrowserArguments,[IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md#interface_i_web_view2_create_web_view2_environment_completed_handler) * environment_created_handler)
 
 DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional browser switches.
 
@@ -51,13 +52,25 @@ WEBVIEW2_RELEASE_CHANNEL_PREFERENCE
 
 If an override environment variable is found then we use the browserExecutableFolder, userDataFolder and additionalBrowserArguments values as replacements for the corresponding values in CreateWebView2EnvironmentWithDetails parameters.
 
-While not strictly an override, there exists an additional environment variable that can be set:
+While not strictly overrides, there exists additional environment variables that can be set:
 
 ```cpp
 WEBVIEW2_WAIT_FOR_SCRIPT_DEBUGGER
 ```
 
 When found with a non-empty value, this indicates that the WebView is being launched under a script debugger. In this case, the WebView will issue a `Page.waitForDebugger` CDP command that will cause script execution inside the WebView to pause on launch, until a debugger issues a corresponding `Runtime.runIfWaitingForDebugger` CDP command to resume execution. Note: There is no registry key equivalent of this environment variable.
+
+```cpp
+WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
+```
+
+When found with a non-empty value, this indicates that the WebView is being launched under a script debugger that also supports host applications that use multiple WebViews. The value is used as the identifier for a named pipe that will be opened and written to when a new WebView is created by the host application. The payload will match that of the remote-debugging-port JSON target and can be used by the external debugger to attach to a specific WebView instance. The format of the pipe created by the debugger should be: '\.\pipe\WebView2\Debugger<app_name><pipe_name>' where: <app_name> is the host application exe filename, e.g. WebView2Example.exe <pipe_name> is the value set for WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
+
+To enable debugging of the targets identified by the JSON you will also need to set the WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS environment variable to send &ndash;remote-debugging-port=<port_num> where: <port_num> is the port on which the CDP server will bind
+
+Be aware that setting both the WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER and WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS environment variables will cause the WebViews hosted in your application and their contents to be exposed to 3rd party applications such as debuggers.
+
+Note: There is no registry key equivalent of this environment variable.
 
 If none of those environment variables exist, then the registry is examined next. The following registry keys are checked:
 
@@ -69,11 +82,31 @@ If none of those environment variables exist, then the registry is examined next
 "additionalBrowserArguments"=""
 ```
 
+In the unlikely scenario where some instances of WebView are open during a browser update we could end up blocking the deletion of old Edge browsers. To avoid running out of disk space a new WebView creation will fail with the next error if it detects that there are many old versions present.
+
+```cpp
+ERROR_DISK_FULL
+```
+
+The default maximum number of Edge versions allowed is 20.
+
+The maximum number of old Edge versions allowed can be overwritten with the value of the following environment variable.
+
+```cpp
+WEBVIEW2_MAX_INSTANCES
+```
+
+If the Webview depends on an installed Edge and it is uninstalled any subsequent creation will fail with the next error
+
+```cpp
+ERROR_PRODUCT_UNINSTALLED
+```
+
 First we check with Root as HKLM and then HKCU. AppId is first set to the Application User Model ID of the caller's process, then if there's no corresponding registry key the AppId is set to the executable name of the caller's process, or if that isn't a registry key then '*'. If an override registry key is found then we use the browserExecutableFolder, userDataFolder and additionalBrowserArguments registry values as replacements for the corresponding values in CreateWebView2EnvironmentWithDetails parameters. If any of those registry values isn't present, then the parameter passed to CreateWebView2Environment is used.
 
 #### CreateWebView2Environment 
 
-> public STDAPI [CreateWebView2Environment](#createwebview2environment)([IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md#iwebview2createwebview2environmentcompletedhandler) * environment_created_handler)
+> public STDAPI [CreateWebView2Environment](#webview2_8idl_1aced004c0da5db43a2e1bec42807b7024)([IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md#interface_i_web_view2_create_web_view2_environment_completed_handler) * environment_created_handler)
 
 Creates an evergreen WebView2 Environment using the installed Edge version.
 
@@ -81,9 +114,17 @@ This is equivalent to calling CreateWebView2EnvironmentWithDetails with nullptr 
 
 #### GetWebView2BrowserVersionInfo 
 
-> public STDAPI [GetWebView2BrowserVersionInfo](#getwebview2browserversioninfo)(PCWSTR browserExecutableFolder,LPWSTR * versionInfo)
+> public STDAPI [GetWebView2BrowserVersionInfo](#webview2_8idl_1a72cd10f59483a710e830caf20bc34712)(PCWSTR browserExecutableFolder,LPWSTR * versionInfo)
 
 Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 
 Channel names are beta, dev, and canary. If an override exists for the browserExecutableFolder or the channel preference, the override will be used. If there isn't an override, then the parameter passed to GetWebView2BrowserVersionInfo is used.
+
+#### CompareBrowserVersions 
+
+> public STDAPI [CompareBrowserVersions](#webview2_8idl_1a0cb76ac2924c4115ed372a46b96a3517)(PCWSTR version1,PCWSTR version2,int * result)
+
+This method is for anyone want to compare version correctly to determine which version is newer, older or same.
+
+It can be used to determine whether to use webview2 or certain feature base on version. Sets the value of result to -1, 0 or 1 if version1 is less than, equal or greater than version2 respectively. Returns E_INVALIDARG if it fails to parse any of the version strings or any input parameter is null. Input can directly use the versionInfo obtained from GetWebView2BrowserVersionInfo, channel info will be ignored.
 
