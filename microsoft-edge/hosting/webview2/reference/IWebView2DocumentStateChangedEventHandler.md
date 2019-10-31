@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ The caller implements this interface to receive the DocumentStateChanged event.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2DocumentStateChangedEventArgs](IWebView2DocumentStateChangedEventArgs.md#iwebview2documentstatechangedeventargs) * args)
+> public HRESULT [Invoke](#interface_i_web_view2_document_state_changed_event_handler_1ae489f36e45c6e3560d883ccaed43501a)([IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) * webview,[IWebView2DocumentStateChangedEventArgs](IWebView2DocumentStateChangedEventArgs.md#interface_i_web_view2_document_state_changed_event_args) * args)
 
