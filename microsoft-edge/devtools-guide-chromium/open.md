@@ -51,7 +51,7 @@ Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to j
 
 ## Open the last panel you had open   
 
-Press `Control`+`Shift`+`I` \(Windows\)) or `Command`+`Option`+`I` \(macOS\).  
+Press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  
 
 ## Open DevTools from the Microsoft Edge main menu  
 
