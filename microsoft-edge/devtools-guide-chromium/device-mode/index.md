@@ -2,7 +2,7 @@
 title: Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/30/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -57,7 +57,7 @@ By default the Device Toolbar opens in Responsive Viewport Mode.
 
 ### Responsive Viewport Mode   
 
-Drag the handles to resize the viewport to whatever dimensions you need.  Or, enter specific values in the width and height boxes.  In [Figure 2](#figure-2), the width is set to `628` and the height is set to `662`.  
+Drag the handles to resize the viewport to whatever dimensions you need.  Or, enter specific values in the width and height boxes.  In [Figure 2](#figure-2), the width is set to `626` and the height is set to `516`.  
 
 > ##### Figure 2  
 > The handles for changing the dimensions of the viewport when in Responsive Viewport Mode  
@@ -275,7 +275,7 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 [ImageDeviceToolbarIcon]: images/toggle-device-toolbar-dark-icon.msft.png  
 [ImageRotateIcon]: images/rotate-dark-icon.msft.png  
 
-[ImageDeviceToolbar]: images/toggle-device-toolbar.msft.png "Figure 1: The Device Toolbar"  
+[ImageDeviceToolbar]: images/toggle-device-toolbar-highlighted.msft.png "Figure 1: The Device Toolbar"  
 [ImageResponsiveHandles]: images/toggle-device-toolbar-handles-highlighted.msft.png "Figure 2: The handles for changing the dimensions of the viewport when in Responsive Viewport Mode"  
 [ImageShowMediaQueries]: images/toggle-device-toolbar-more-options-show-media-queries.msft.png "Figure 3: Show media queries"  
 [ImageBreakpoint]: images/toggle-device-toolbar-click-breakpoint.msft.png "Figure 4: Click a breakpoint to change the width of the viewport"  
@@ -291,7 +291,7 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 [ImageRulers]: images/toggle-device-toolbar-rulers.msft.png "Figure 14: Rulers above and to the left of the viewport"  
 [ImageZoomViewport]: images/toggle-device-toolbar-zoom.msft.png "Figure 15: Zoom"  
 [ImageThrottling]: images/toggle-device-toolbar-throttle.msft.png "Figure 16: The Throttle list"  
-[ImageDeviceToolbar3]: images/toggle-device-toolbar.msft.png "Figure 17: The Device Toolbar"  
+[ImageDeviceToolbar3]: images/toggle-device-toolbar-highlighted.msft.png "Figure 17: The Device Toolbar"  
 [ImageCPU]: images/performance-cpu-throttle.msft.png "Figure 18: The CPU list"  
 [ImageNetwork]: images/network-throttle.msft.png "Figure 19: The Throttle list"  
 [ImageCommandMenu]: images/command-menu-throttle.msft.png "Figure 20: The Command Menu"  
