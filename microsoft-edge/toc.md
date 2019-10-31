@@ -54,6 +54,8 @@
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
+### Customize
+#### [Overview](devtools-guide-chromium/customize/index.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
