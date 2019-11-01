@@ -2,7 +2,7 @@
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -54,7 +54,7 @@ This section lists events that belong to Loading category and their properties.
 
 | Event | Description |  
 | --- |:--- |  
-| Parse HTML |  Microsoft \(Chromium\) Edge ran the HTML parsing algorithm. |  
+| Parse HTML |  Microsoft Edge ran the HTML parsing algorithm. |  
 | Finish Loading |  A network request completed. |  
 | Receive Data |  Data for a request was received.  There are one or more Receive Data events. |  
 | Receive Response |  The initial HTTP response from a request. |  
@@ -89,7 +89,7 @@ This section lists events that belong to the Scripting category and their proper
 | Remove Timer | A previously created timer was cleared. |  
 | Time |  A script called **`console.time()`**. |  
 | Time End | A script called **`console.timeEnd()`**. |  
-| Timer Fired | A timer fired that was scheduled with `setInterval\(\)` or `setTimeout\(\)`. |  
+| Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |  
 | XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |  
 | XHR Load | An `XMLHTTPRequest` finished loading. |  
 
@@ -112,7 +112,7 @@ This section lists events that belong to Rendering category and their properties
 | --- |:--- |  
 | Invalidate layout | The page layout was invalidated by a DOM change. |  
 | Layout | A page layout was completed. |  
-| Recalculate style | Microsoft \(Chromium\) Edge recalculated element styles. |  
+| Recalculate style | Microsoft Edge recalculated element styles. |  
 | Scroll | The content of nested view was scrolled. |  
 
 ### Rendering event properties  
@@ -121,7 +121,7 @@ This section lists events that belong to Rendering category and their properties
 | --- |:--- |  
 | Layout invalidated | For Layout records, the stack trace of the code that caused the layout to be invalidated. |  
 | Nodes that need layout | For Layout records, the number of nodes that were marked as needing layout before the relayout started.  These are normally those nodes that were invalidated by developer code, plus a path upward to relayout root. |  
-| Layout tree size | For Layout records, the total number of nodes under the relayout root \(the node that Microsoft \(Chromium\) Edge starts the relayout\). |  
+| Layout tree size | For Layout records, the total number of nodes under the relayout root \(the node that Microsoft Edge starts the relayout\). |  
 | Layout scope | Possible values are `Partial` \(the re-layout boundary is a portion of the DOM\) or `Whole document`. |  
 | Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |  
 | Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |  
@@ -132,7 +132,7 @@ This section lists events that belong to Painting category and their properties.
 
 | Event | Description |  
 | --- |:--- |  
-| Composite Layers | The composited image layers for the Microsoft \(Chromium\) Edge rendering engine. |  
+| Composite Layers | The composited image layers for the Microsoft Edge rendering engine. |  
 | Image Decode | An image resource was decoded. |  
 | Image Resize | An image was resized from its native dimensions. |  
 | Paint | Composited layers were painted to a region of the display.  Hovering over a Paint record highlights the region of the display that was updated. |  
