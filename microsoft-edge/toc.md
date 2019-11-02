@@ -143,6 +143,7 @@
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
 ## [WebDriver](webdriver.md)
+## [Web Platform (Chromium)](web-platform/toc.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
