@@ -20,6 +20,8 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 
 ## Interfaces  
 
+*   [IWebView2AcceleratorKeyPressedEventArgs](reference/IWebView2AcceleratorKeyPressedEventArgs.md)  
+*   [IWebView2AcceleratorKeyPressedEventHandler](reference/IWebView2AcceleratorKeyPressedEventHandler.md)  
 *   [IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](reference/IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md)  
 *   [IWebView2CallDevToolsProtocolMethodCompletedHandler](reference/IWebView2CallDevToolsProtocolMethodCompletedHandler.md)  
 *   [IWebView2CapturePreviewCompletedHandler](reference/IWebView2CapturePreviewCompletedHandler.md)  
@@ -33,6 +35,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [IWebView2DocumentTitleChangedEventHandler](reference/IWebView2DocumentTitleChangedEventHandler.md)  
 *   [IWebView2Environment](reference/IWebView2Environment.md)  
 *   [IWebView2Environment2](reference/IWebView2Environment2.md)  
+*   [IWebView2Environment3](reference/IWebView2Environment3.md)
 *   [IWebView2ExecuteScriptCompletedHandler](reference/IWebView2ExecuteScriptCompletedHandler.md)  
 *   [IWebView2FocusChangedEventHandler](reference/IWebView2FocusChangedEventHandler.md)  
 *   [IWebView2HttpHeadersCollectionIterator](reference/IWebView2HttpHeadersCollectionIterator.md)  
@@ -43,7 +46,9 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [IWebView2NavigationCompletedEventArgs](reference/IWebView2NavigationCompletedEventArgs.md)  
 *   [IWebView2NavigationCompletedEventHandler](reference/IWebView2NavigationCompletedEventHandler.md)  
 *   [IWebView2NavigationStartingEventArgs](reference/IWebView2NavigationStartingEventArgs.md)  
-*   [IWebView2NavigationStartingEventHandler](reference/IWebView2NavigationStartingEventHandler.md)  
+*   [IWebView2NavigationStartingEventHandler](reference/IWebView2NavigationStartingEventHandler.md)
+*   [IWebView2NewVersionAvailableEventArgs](reference/IWebView2NewVersionAvailableEventArgs.md)  
+*   [IWebView2NewVersionAvailableEventHandler](reference/IWebView2NewVersionAvailableEventHandler.md)
 *   [IWebView2NewWindowRequestedEventArgs](reference/IWebView2NewWindowRequestedEventArgs.md)  
 *   [IWebView2NewWindowRequestedEventHandler](reference/IWebView2NewWindowRequestedEventHandler.md)  
 *   [IWebView2PermissionRequestedEventArgs](reference/IWebView2PermissionRequestedEventArgs.md)  
@@ -53,6 +58,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [IWebView2ScriptDialogOpeningEventArgs](reference/IWebView2ScriptDialogOpeningEventArgs.md)  
 *   [IWebView2ScriptDialogOpeningEventHandler](reference/IWebView2ScriptDialogOpeningEventHandler.md)  
 *   [IWebView2Settings](reference/IWebView2Settings.md)  
+*   [IWebView2Settings2](reference/IWebView2Settings2.md)  
 *   [IWebView2WebMessageReceivedEventArgs](reference/IWebView2WebMessageReceivedEventArgs.md)  
 *   [IWebView2WebMessageReceivedEventHandler](reference/IWebView2WebMessageReceivedEventHandler.md)  
 *   [IWebView2WebResourceRequest](reference/IWebView2WebResourceRequest.md)  
@@ -62,4 +68,5 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [IWebView2WebView](reference/IWebView2WebView.md)  
 *   [IWebView2WebView2](reference/IWebView2WebView2.md)  
 *   [IWebView2WebView3](reference/IWebView2WebView3.md)  
+*   [IWebView2WebView4](reference/IWebView2WebView4.md)  
 *   [IWebView2ZoomFactorChangedEventHandler](reference/IWebView2ZoomFactorChangedEventHandler.md)  

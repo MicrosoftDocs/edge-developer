@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ The caller implements this interface to receive the WebView2Environment created 
 
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
-> public HRESULT [Invoke](#invoke)(HRESULT result,[IWebView2Environment](IWebView2Environment.md#iwebview2environment) * webViewEnvironment)
+> public HRESULT [Invoke](#interface_i_web_view2_create_web_view2_environment_completed_handler_1a1b688d894c1c6e66bd438a632e9f5eb1)(HRESULT result,[IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment) * webViewEnvironment)
 
