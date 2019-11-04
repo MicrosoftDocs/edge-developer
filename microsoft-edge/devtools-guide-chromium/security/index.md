@@ -2,7 +2,7 @@
 title: Understand Security Issues With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/17/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,15 +29,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  See **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  
+<!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  See **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
+
+<!--todo: add section when why-https is available -->  
 
 ## Open the Security panel   
 
 The **Security** panel is the main place in DevTools for inspecting the security of a page.  
 
-1.  **Open DevTools**.  
-
-    <!--todo: add open section when available -->  
+1.  [Open DevTools][DevToolsOpen].  
 
 1.  Click the **Security** tab to open the **Security** panel.  
     
@@ -53,7 +53,7 @@ When the main origin of a page is not secure, the **Security Overview** says **T
 
 > ##### Figure 2  
 > A non-secure page  
-> ![A non-secure page][ImageSecurityPanel]  
+> ![A non-secure page][ImageNonSecurePage]  
 
 This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.  
 
@@ -62,7 +62,7 @@ If you already set up HTTPS on your server, all you need to do to fix this probl
 If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provides a free and relatively-easy way to start the process.  Or, you might consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.  
 
 > [!TIP]
-> The **Redirect HTTP Traffic To HTTPS** audit in **Lighthouse** may help automate the process of making sure that all HTTP requests are redirected to HTTPS.  
+> The [Use HTTPS][WebhintUseHttps] hint in [webhint][Webhint] may help automate the process of making sure that all HTTP requests are directed to HTTPS.  
 
 ### Mixed content   
 
@@ -70,7 +70,7 @@ If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provid
 
 > ##### Figure 3  
 > Mixed content  
-> ![Mixed content][ImageSecurityPanel]  
+> ![Mixed content][ImageMixedContent]  
 
 In [Figure 3](#figure-3), click **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
 
@@ -111,13 +111,15 @@ Click one of the entries in the left-hand nav to view the details of the origin.
 
 <!-- links -->  
 
-[LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  
+[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
+
 [MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
-<!--[OpenDevtools]: ../open.md "Open Microsoft Edge \(Chromium\) DevTools"  -->
+[LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  
+[Webhint]: https://webhint.io "webhint"  
+[WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Use HTTPS | webhint documentation"  
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
-<!--[why-https]: /web/fundamentals/security/encrypt-in-transit/why-https ""  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
