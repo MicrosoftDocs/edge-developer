@@ -2,12 +2,12 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 06/07/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -198,7 +198,7 @@ If you want to save a change to the HTML of the page, do it via the **Sources** 
 1.  Click the **Sources** tab.  
 1.  Click the **Page** tab.  
 1.  Click **(index)**.  The HTML for the page opens.  
-1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See [Figure 10](#figure-10).  
+1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See [Figure 8](#figure-8).  
 1.  Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Reload the page.  The `<h1>` element is still displaying the new text.  
     
@@ -220,7 +220,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     > Opening the **Quick Source** tab via the **Command Menu**  
     > ![Opening the Quick Source tab via Command Menu][ImageCommandMenuQuickSource]  
 
-1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 12](#figure-12).  
+1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 10](#figure-10).  
 1.  Type `script`, then select **app/script.js**.  
     
     > ##### Figure 10  
