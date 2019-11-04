@@ -2,7 +2,7 @@
 title: Remote Debugging WebViews
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -53,13 +53,13 @@ This setting applies to all of the WebViews of the application.
 
 > [!TIP]
 > WebView debugging is not affected by the state of the `debuggable` flag in the manifest of the application.  If you want to enable WebView debugging only when `debuggable` is `true`, test the flag at runtime.  
-
-```java
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-    if (0 != (getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE))
-    { WebView.setWebContentsDebuggingEnabled(true); }
-}
-```  
+> 
+> ```java
+> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+>     if (0 != (getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE))
+>    { WebView.setWebContentsDebuggingEnabled(true); }
+> }
+> ```  
 
 ## Open a WebView in DevTools  
 
