@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ The caller implements this interface to receive the NavigationCompleted event.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2NavigationCompletedEventArgs](IWebView2NavigationCompletedEventArgs.md#iwebview2navigationcompletedeventargs) * args)
+> public HRESULT [Invoke](#interface_i_web_view2_navigation_completed_event_handler_1acf189c9c9293620be6d2d50dad5029f3)([IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) * webview,[IWebView2NavigationCompletedEventArgs](IWebView2NavigationCompletedEventArgs.md#interface_i_web_view2_navigation_completed_event_args) * args)
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -37,7 +37,7 @@ An HTTP response used with the WebResourceRequested event.
 
 HTTP response content as stream.
 
-> public HRESULT [get_Content](#get_content)(IStream ** content)
+> public HRESULT [get_Content](#interface_i_web_view2_web_resource_response_1a1eefcd262414db70d95ac1508e89782a)(IStream ** content)
 
 Stream must have all the content data available by the time this response's WebResourceRequested event deferral is completed. Stream should be agile or be created from a background thread to prevent performance impact to the UI thread. Null means no content data. IStream semantics apply (return S_OK to Read calls until all data is exhausted)
 
@@ -45,35 +45,35 @@ Stream must have all the content data available by the time this response's WebR
 
 Set the Content property.
 
-> public HRESULT [put_Content](#put_content)(IStream * content)
+> public HRESULT [put_Content](#interface_i_web_view2_web_resource_response_1ad788c7c4f69d90704a648368df7d7ae2)(IStream * content)
 
 #### get_Headers 
 
 Overridden HTTP response headers.
 
-> public HRESULT [get_Headers](#get_headers)([IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#iwebview2httpresponseheaders) ** headers)
+> public HRESULT [get_Headers](#interface_i_web_view2_web_resource_response_1abfb232e76c9174eec6e9322fe4019eac)([IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#interface_i_web_view2_http_response_headers) ** headers)
 
 #### get_StatusCode 
 
 The HTTP response status code.
 
-> public HRESULT [get_StatusCode](#get_statuscode)(int * statusCode)
+> public HRESULT [get_StatusCode](#interface_i_web_view2_web_resource_response_1af7dd8039627a9b499c0ac219abe91593)(int * statusCode)
 
 #### put_StatusCode 
 
 Set the StatusCode property.
 
-> public HRESULT [put_StatusCode](#put_statuscode)(int statusCode)
+> public HRESULT [put_StatusCode](#interface_i_web_view2_web_resource_response_1a70218592959208c7335c7a7894b55d6d)(int statusCode)
 
 #### get_ReasonPhrase 
 
 The HTTP response reason phrase.
 
-> public HRESULT [get_ReasonPhrase](#get_reasonphrase)(LPWSTR * reasonPhrase)
+> public HRESULT [get_ReasonPhrase](#interface_i_web_view2_web_resource_response_1a423fdaa841ceee7a2f366d1f5c64e825)(LPWSTR * reasonPhrase)
 
 #### put_ReasonPhrase 
 
 Set the ReasonPhrase property.
 
-> public HRESULT [put_ReasonPhrase](#put_reasonphrase)(LPCWSTR reasonPhrase)
+> public HRESULT [put_ReasonPhrase](#interface_i_web_view2_web_resource_response_1a6a9607f75b9899546adf005b9ef8a9ab)(LPCWSTR reasonPhrase)
 
