@@ -57,6 +57,7 @@
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
+#### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Security](devtools-guide-chromium/security/index.md)
