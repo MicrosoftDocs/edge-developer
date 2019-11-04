@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -33,13 +33,13 @@ Event args for the WebMessageReceived event.
 
 The URI of the document that sent this web message.
 
-> public HRESULT [get_Source](#get_source)(LPWSTR * source)
+> public HRESULT [get_Source](#interface_i_web_view2_web_message_received_event_args_1af1717a090a8882113e4b08cda4de5bdf)(LPWSTR * source)
 
 #### get_WebMessageAsJson 
 
 The message posted from the webview content to the host converted to a JSON string.
 
-> public HRESULT [get_WebMessageAsJson](#get_webmessageasjson)(LPWSTR * webMessageAsJson)
+> public HRESULT [get_WebMessageAsJson](#interface_i_web_view2_web_message_received_event_args_1af230e7ecb50e4ed657203a06343e37dd)(LPWSTR * webMessageAsJson)
 
 Use this to communicate via JavaScript objects.
 
@@ -55,7 +55,7 @@ postMessage('example')       L"\"example\""
 
 If the message posted from the webview content to the host is a string type, this method will return the value of that string.
 
-> public HRESULT [get_WebMessageAsString](#get_webmessageasstring)(LPWSTR * webMessageAsString)
+> public HRESULT [get_WebMessageAsString](#interface_i_web_view2_web_message_received_event_args_1a411a19cd25bf434c66bdd5f1d8947456)(LPWSTR * webMessageAsString)
 
 If the message posted is some other kind of JavaScript type this method will fail with E_INVALIDARG. Use this to communicate via simple strings.
 
