@@ -59,6 +59,7 @@
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
+### [Security](devtools-guide-chromium/security/index.md)
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
