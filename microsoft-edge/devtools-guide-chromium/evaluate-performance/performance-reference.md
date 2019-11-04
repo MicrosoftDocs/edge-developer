@@ -2,7 +2,7 @@
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/01/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -85,7 +85,7 @@ This section lists events that belong to the Scripting category and their proper
 | Event | A JavaScript event \(`mousedown`, or `key`, for example\). |  
 | Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |  
 | Install Timer | A timer was created with [`setInterval()`][MDNWindowOrWorkerGlobalScopeSetInterval] or [`setTimeout()`][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
-| Request Animation Frame | A `requestAnimationFrame\(\)` call scheduled a new frame. |  
+| Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |  
 | Remove Timer | A previously created timer was cleared. |  
 | Time |  A script called **`console.time()`**. |  
 | Time End | A script called **`console.timeEnd()`**. |  
