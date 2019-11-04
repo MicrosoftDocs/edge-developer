@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,7 +17,7 @@ interface IWebView2Settings2
   : public IWebView2Settings
 ```
 
-Defines properties that enable, disable, or modify WebView features.
+Additional functionality implemented by the Settings object.
 
 ## Summary
 
@@ -26,7 +26,7 @@ Defines properties that enable, disable, or modify WebView features.
 [get_AreDefaultContextMenusEnabled](#get_aredefaultcontextmenusenabled) | The AreDefaultContextMenusEnabled property is used to prevent default context menus from being shown to user in webview.
 [put_AreDefaultContextMenusEnabled](#put_aredefaultcontextmenusenabled) | Set the AreDefaultContextMenusEnabled property.
 
-Setting changes made after NavigationStarting event will not apply until the next top level navigation.
+You can QueryInterface for this interface from the object that implements [IWebView2Settings](IWebView2Settings.md#iwebview2settings). See the [IWebView2Settings](IWebView2Settings.md#iwebview2settings) interface for more details.
 
 ## Members
 
@@ -34,7 +34,7 @@ Setting changes made after NavigationStarting event will not apply until the nex
 
 The AreDefaultContextMenusEnabled property is used to prevent default context menus from being shown to user in webview.
 
-> public HRESULT [get_AreDefaultContextMenusEnabled](#interface_i_web_view2_settings2_1a7e3300a3eb13018dc00ba331669ae1c7)(BOOL * enabled)
+> public HRESULT [get_AreDefaultContextMenusEnabled](#get_aredefaultcontextmenusenabled)(BOOL * enabled)
 
 Defaults to TRUE.
 
@@ -59,5 +59,5 @@ Defaults to TRUE.
 
 Set the AreDefaultContextMenusEnabled property.
 
-> public HRESULT [put_AreDefaultContextMenusEnabled](#interface_i_web_view2_settings2_1a2dea6e5d8b4aecfdb842920f312dc02e)(BOOL enabled)
+> public HRESULT [put_AreDefaultContextMenusEnabled](#put_aredefaultcontextmenusenabled)(BOOL enabled)
 
