@@ -2,7 +2,7 @@
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -70,7 +70,7 @@ To view the content, open up Microsoft Edge on your Android device and go to the
 
 Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.  
 
-For example, suppose that your site uses a third-party JavaScript library that only works on the domain `edge-chromium.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` (for example, `127.0.0.1 edge-chromium.devtools`).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `edge-chromium.devtools`.  
+For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` (for example, `127.0.0.1 microsoft-edge.devtools`).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.  
 
 ### Set up port forwarding to proxy server  
 
@@ -104,9 +104,9 @@ Next, you need to configure your Android device to communicate with the proxy se
 
 With these settings, your device forwards all of its requests to the proxy on your development machine.  The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.  
 
-Now access custom domains on your Android device Android just like on the development machine.  
+Now access custom domains on your Android device just like on the development machine.  
 
-If your web server is running off of a non-standard port, remember to specify the port when requesting the content from your Android device.  For example, if your web server is using the custom domain `edge-chromium.devtools` on port `7331`, when you view the site from your Android device you should be using the URL `edge-chromium.devtools:7331`.  
+If your web server is running off of a non-standard port, remember to specify the port when requesting the content from your Android device.  For example, if your web server is using the custom domain `microsoft-edge.devtools` on port `7331`, when you view the site from your Android device you should be using the URL `microsoft-edge.devtools:7331`.  
 
 > [!TIP]
 > To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.  
