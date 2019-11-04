@@ -29,6 +29,8 @@
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
+### CSS
+#### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 ### Network
