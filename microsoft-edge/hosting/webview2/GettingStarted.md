@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10 only). **We recommend using the Canary channel and the minimum required version is 78.0.270.0**.
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 78.0.270.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
@@ -69,10 +69,6 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
-// Known issue - app needs to run on PerMonitorV2 DPI awareness for WebView to look properly
-// This is only available on Win10, comment out the line on older OS versions.
-SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2);
-
 // Locate the browser and set up the environment for WebView
 CreateWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
     Callback<IWebView2CreateWebView2EnvironmentCompletedHandler>(
