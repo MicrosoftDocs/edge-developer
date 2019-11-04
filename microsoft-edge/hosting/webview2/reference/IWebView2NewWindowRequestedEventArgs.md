@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -29,7 +29,7 @@ Event args for the NewWindowRequested event.
 [put_Handled](#put_handled) | Sets whether the NewWindowRequestedEvent is handled by host.
 [get_Handled](#get_handled) | Gets whether the NewWindowRequestedEvent is handled by host.
 [get_IsUserInitiated](#get_isuserinitiated) | IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
-[GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object and put the event into a deferred state.
+[GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) object and put the event into a deferred state.
 
 The event is fired when content inside webview requested to a open a new window (through window.open() etc.)
 
@@ -39,13 +39,13 @@ The event is fired when content inside webview requested to a open a new window 
 
 The target uri of the NewWindowRequest.
 
-> public HRESULT [get_Uri](#get_uri)(LPWSTR * uri)
+> public HRESULT [get_Uri](#interface_i_web_view2_new_window_requested_event_args_1ab9b4ef66827c183409200f15ad4e6991)(LPWSTR * uri)
 
 #### put_NewWindow 
 
 Sets a WebView as a result of the NewWindowRequest.
 
-> public HRESULT [put_NewWindow](#put_newwindow)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * newWindow)
+> public HRESULT [put_NewWindow](#interface_i_web_view2_new_window_requested_event_args_1a337aca839f78c7807f6361cd8f4142b9)([IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) * newWindow)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
 
@@ -53,13 +53,13 @@ The target webview should not be navigated. If the NewWindow is set, its top lev
 
 Gets the new window.
 
-> public HRESULT [get_NewWindow](#get_newwindow)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) ** newWindow)
+> public HRESULT [get_NewWindow](#interface_i_web_view2_new_window_requested_event_args_1a658691345c22823b6ca011687dad1baa)([IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view) ** newWindow)
 
 #### put_Handled 
 
 Sets whether the NewWindowRequestedEvent is handled by host.
 
-> public HRESULT [put_Handled](#put_handled)(BOOL handled)
+> public HRESULT [put_Handled](#interface_i_web_view2_new_window_requested_event_args_1a04237283cb6cab3eb7e3aa291692c19a)(BOOL handled)
 
 If this is false and no NewWindow is set, the WebView will open a popup window and it will be returned as opened WindowProxy. If set to true and no NewWindow is set for a window.open call, the opened WindowProxy will be for an dummy window object and no window will load. Default is false.
 
@@ -67,19 +67,19 @@ If this is false and no NewWindow is set, the WebView will open a popup window a
 
 Gets whether the NewWindowRequestedEvent is handled by host.
 
-> public HRESULT [get_Handled](#get_handled)(BOOL * handled)
+> public HRESULT [get_Handled](#interface_i_web_view2_new_window_requested_event_args_1addca228064a32334726b5fdbaef42e89)(BOOL * handled)
 
 #### get_IsUserInitiated 
 
 IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
 
-> public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(BOOL * isUserInitiated)
+> public HRESULT [get_IsUserInitiated](#interface_i_web_view2_new_window_requested_event_args_1aa39306ddb798ac2618447007dbe762e7)(BOOL * isUserInitiated)
 
 #### GetDeferral 
 
-Obtain an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object and put the event into a deferred state.
+Obtain an [IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) object and put the event into a deferred state.
 
-> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) ** deferral)
+> public HRESULT [GetDeferral](#interface_i_web_view2_new_window_requested_event_args_1aef7e38d450123bfa7ac8d32e23d30845)([IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) ** deferral)
 
-You can use the [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object to complete the window open request at a later time. While this event is deferred the opener window will be returned a WindowProxy to an unnavigated window, which will navigate when the deferral is complete.
+You can use the [IWebView2Deferral](IWebView2Deferral.md#interface_i_web_view2_deferral) object to complete the window open request at a later time. While this event is deferred the opener window will be returned a WindowProxy to an unnavigated window, which will navigate when the deferral is complete.
 
