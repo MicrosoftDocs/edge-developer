@@ -2,7 +2,7 @@
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/30/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -115,10 +115,6 @@ If you take a step back and think about how the app works, you are able to make 
     ```  
     
     If you pause on a different line of code, press **Resume Script Execution** ![Resume Script Execution][ImageResumeIcon] until you pause on the correct line.  
-    
-    ```javascript
-    function onClick() {
-    ```  
     
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
