@@ -53,6 +53,7 @@
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+#### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
