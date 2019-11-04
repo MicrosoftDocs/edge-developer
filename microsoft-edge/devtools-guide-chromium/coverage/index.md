@@ -2,7 +2,7 @@
 title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -62,7 +62,7 @@ So your page is downloading a bunch of CSS that it does not need.  This extra CS
 
 ## Open the Coverage tab   
 
-1.  Open the **Command Menu**.  
+1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `coverage`, select the **Show Coverage** command, and then press `Enter` to run the command.  The **Coverage** tab opens in the **Drawer**.  
 
     > ##### Figure 2  
@@ -108,7 +108,7 @@ The table in the **Coverage** tab shows you what resources were analyzed, and ho
 
 <!-- links -->  
 
-<!--[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  -->  
+[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Buttons - Bootstrap"  
 
