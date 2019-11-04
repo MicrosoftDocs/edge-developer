@@ -43,6 +43,8 @@
 #### [WebSQL](devtools-guide-chromium/storage/websql.md)
 #### [Cache](devtools-guide-chromium/storage/cache.md)
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
+### Mobile Simulation
+#### [Overview](devtools-guide-chromium/device-mode/index.md)
 ### JavaScript
 #### [Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
