@@ -103,8 +103,12 @@
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
 ## [Extensions (Chromium)](extensions-chromium/index.md)
+### [Port Chrome extension to Microsoft Edge](extensions-chromium/port-chrome-extension.md)
 ### Publish to Microsoft Store
 #### [Step-wise publishing process](extensions-chromium/publish/publish-extension.md)
+#### [Open developer account](extensions-chromium/publish/create-dev-account.md)
+#### [Upload YouTube Video](extensions-chromium/publish/upload-video.md)
+#### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
