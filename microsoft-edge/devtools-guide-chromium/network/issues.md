@@ -2,7 +2,7 @@
 title: Network Issues Guide
 author: 
 ms.author: 
-ms.date: 10/22/2019
+ms.date: 11/06/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -71,7 +71,7 @@ In [Figure 2](#figure-2), the long, green bar in the **Waterfall** indicates tha
 **Causes**  
 
 *   The connection between the client and server is slow.  
-*   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow slow Time To First Byte \(TTFB\) when service locally, then the server is slow.  
+*   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte \(TTFB\) when accessing a local server, then the server is slow.  
 
 **Fixes**  
 
@@ -100,23 +100,22 @@ In [Figure 3](#figure-3), the long, blue bar in the **Waterfall** next to `eleme
 *   Consider hosting your content on a CDN or changing hosting providers.  
 *   Send fewer bytes by optimizing your requests.  
 
-<!--
 ## Contribute knowledge  
 
 Got a network issue that should be added to this guide?  
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Start a mailing list thread by emailing  
-  `alphabet-browser-developer-tools@alphabetgroups.com`.  
+*   Click **Send Feedback** ![Send Feedback][ImageSendFeedbackIcon] in the DevTools or press `Alt` + `Shift` + `I` \(Windows\) or `Option` + `Shift` + `I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  
 
--->
 
  
 
 
 
 <!-- image links -->  
+
+[ImageSendFeedbackIcon]: images/smile-icon.msft.png  
 
 [ImageStalled]: images/network-disabled-cache-resources-queue.msft.png "Figure 1: An example of a queued or stalled series in the Network panel"  
 [ImageSlowTimeToFirstByte]: images/network-resources-using-dial-up-profile.msft.png "Figure 2: An example of a request with a slow Time To First Byte"  
@@ -126,8 +125,8 @@ Got a network issue that should be added to this guide?
 
 [NetworkPerformance]: index.md "Inspect Network Activity In Microsoft Edge DevTools"  
 
-<!--  [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  -->  
-<!--[WebFundamentalsIssue]: https://github.com/alphabet/WebFundamentals/issues/new?title=[DevTools%20Network%20Issues%20Guide%20Suggestion]  -->  
+[MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
+[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "New Issue - MicrosoftDocs/edge-developer"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
