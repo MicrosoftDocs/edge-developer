@@ -103,6 +103,8 @@
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
 ## [Extensions (Chromium)](extensions-chromium/index.md)
+### Publish to Microsoft Store
+#### [Step-wise publishing process](extensions-chromium/publish/publish-extension.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
