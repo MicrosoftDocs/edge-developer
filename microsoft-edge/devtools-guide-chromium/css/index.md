@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,37 +31,44 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Complete these interactive tutorials to learn the basics of viewing and changing the CSS for a page using Microsoft Edge DevTools.  
 
+## Open CSS Examples  
+
+1.  Hold `control` \(Windows\) or `command` \(macOS\) and click **CSS Examples** to open in a new window.  
+    
+    [CSS Examples][GlitchDevToolsCssExamples]  
+    
 ## View the CSS for an element   
 
-1.  Open the [Inspect Me!][MicrosoftEdgeChromiumDevToolsInspectMe] example.  
+1.  [Open CSS Examples](#open-css-examples).  
+1.  Right-click the `Inspect Me!` text and select **Inspect**.  
+    1.  In DevTools, on the **Elements** panel, in the **DOM Tree** tab, the `Inspect Me!` element is highlighted.  
+        
+        > ##### Figure 1  
+        > The inspected element is highlighted in the **DOM Tree**  
+        > ![The inspected element is highlighted in the DOM Tree][ImageInspect]  
+        
+    1.  In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.  
+1.  On the page, in the **Value of `data-message`:** textbox, enter the value.  
+1.  Right-click the `Inspect Me!` text and select **Inspect**.  
+    
+    1.  In DevTools, on the **Elements** panel, select the **Styles** tab.  
+    1.  In the **Styles** tab, the `Inspect Me!` element is highlighted.  
+    1.  In the `Inspect Me!` element, find the `aloha` class rule.  
+        
+        > [!NOTE]
+        > You see this rule because it is being applied to the `Inspect Me!` element.  
+        
+    1.  In the `aloha` class, find the value for the `padding` style and copy it.  
+        
+        > ##### Figure 2  
+        > CSS classes being applied to the selected element, such as `aloha`, are displayed in the **Styles** tab  
+        > ![CSS classes being applied to the inspected element are highlighted in the Styles tab][ImageAloha]  
+        
+1.  On the page, in the **Value of `padding`:** textbox, enter the value.  
 
-1.  Right-click the `Inspect Me!` text and select **Inspect**.  The **Elements** panel of DevTools opens.  The `Inspect Me!` element is highlighted in the **DOM Tree**.  
-    
-1.  In the **DOM Tree**, find the value of the `data-message` attribute for the `Inspect Me!` element.  
-    
-    1.  Open the [Data Message][MicrosoftEdgeChromiumDevToolsDataMessage] page.  
-    
-    1.  Enter the value in the text box.  
-    
-1.  The **Styles** tab on the **Elements** panel lists the CSS rules being applied to whatever element is currently selected in the **DOM Tree**, which should still be the `Inspect Me!` element in this case.  Find the `aloha` class rule.  The fact that you see this rule means that it's being applied to the `Inspect Me!` element.  
+<!--If you would like to dock your DevTools window to the right of your viewport, like you see in [Figure 1](#figure-1), see [Change DevTools placement][DevToolsPlacement].  -->  
 
-1.  The `aloha` class is declaring a value for `padding`.  
-    
-    1.  Open the [Padding][MicrosoftEdgeChromiumDevToolsPadding] page.  
-    
-    1.  Enter the value in the text box.  
-    
-    > ##### Figure 1  
-    > The inspected element is highlighted blue in the **DOM Tree**  
-    > ![The inspected element is highlighted in the DOM Tree][ImageInspect]  
-
-<!--If you'd like to dock your DevTools window to the right of your viewport, like you see in [Figure 1](#figure-1), see [Change DevTools placement](../ui.md#placement).  -->  
-
-<!--todo: add change ui section when available -->  
-
-> ##### Figure 2  
-> CSS classes being applied to the selected element, such as `aloha`, are displayed in the **Styles** tab  
-> ![CSS classes being applied to the inspected element are highlighted in the Styles tab][ImageAloha]  
+<!--todo: add change placement section when available -->  
 
 ## Add a CSS declaration to an element   
 
@@ -70,10 +77,8 @@ Use the **Styles** tab when you want to change or add CSS declarations to an ele
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
-1.  Open the [Background Color][MicrosoftEdgeChromiumDevToolsBackgroundColor] page.  
-
+1.  [Open CSS Examples](#open-css-examples).  
 1.  Right-click the `Add A Background Color To Me!` text and select **Inspect**.  
-
 1.  Click `element.style` near the top of the **Styles** tab.  
 1.  Type `background-color` and press `Enter`.  
 1.  Type `honeydew` and press `Enter`.  In the **DOM Tree** you should see that an inline style declaration was applied to the element.  
@@ -89,13 +94,10 @@ Use the **Styles** tab to see how an element looks when a CSS class is applied t
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
-1.  Open the [Class][MicrosoftEdgeChromiumDevToolsClass] page.  
-
+1.  [Open CSS Examples](#open-css-examples).  
 1.  Right-click the `Add A Class To Me!` element and select **Inspect**.  
-
 1.  Click **.cls**.  DevTools reveals a text box where you may add classes to the selected element.  
-
-1.  Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element had any other classes applied to it, you'd also be able to toggle them from here.  
+1.  Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element had any other classes applied to it, you would also be able to toggle them from here.  
 
 > ##### Figure 4  
 > The `color_me` class has been applied to the element via the **.cls** section of the **Styles** tab  
@@ -108,13 +110,11 @@ Use the **Styles** tab to permanently apply a CSS pseudostate to an element.  De
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
-1.  Open the [Hover][MicrosoftEdgeChromiumDevToolsHover] page.  
-
+1.  [Open CSS Examples](#open-css-examples).  
 1.  Hover over the `Hover Over Me!` text.  The background color changes.  
-
 1.  Right-click the `Hover Over Me!` text and select **Inspect**.  
 1.  In the **Styles** tab, click **:hov**.  
-1.  Check the **:hover** checkbox.  The background color changes like before, even though you're not actually hovering over the element.  
+1.  Check the **:hover** checkbox.  The background color changes like before, even though you are not actually hovering over the element.  
 
 > ##### Figure 5  
 > Toggling the `:hover` pseudostate on an element  
@@ -127,18 +127,15 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
-1.  Open the [Margin][MicrosoftEdgeChromiumDevToolsMargin] page.  
-
+1.  [Open CSS Examples](#open-css-examples).  
 1.  Right-click the `Change My Margin!` element and select **Inspect**.  
-
-1.  In the **Box Model** diagram in the **Styles** tab, hover over **padding**.  The element's padding is highlighted in the viewport.  
+1.  In the **Box Model** diagram in the **Styles** tab, hover over **padding**.  The padding of an element is highlighted in the viewport.  
 
     > [!NOTE]
     > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to see the **Box Model**.  
 
-1.  Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element doesn't have a left-margin.  
-
-1.  Type `100` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.  
+1.  Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a left-margin.  
+1.  Type `100px` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.  
 
 > ##### Figure 6  
 > Hovering over the padding of the element  
@@ -164,13 +161,9 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 
 <!-- links -->  
 
-[MicrosoftEdgeChromiumDevToolsInspectMe]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/inspect_me.html "Inspect Me! example - Microsoft Edge (Chromium) DevTools | Glitch"  
-[MicrosoftEdgeChromiumDevToolsDataMessage]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/_data-message.html "Data Message example - Microsoft Edge (Chromium) DevTools | Glitch"  
-[MicrosoftEdgeChromiumDevToolsPadding]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/_padding.html "Padding example - Microsoft Edge (Chromium) DevTools | Glitch"  
-[MicrosoftEdgeChromiumDevToolsBackgroundColor]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/_background-color.html "Background Color example - Microsoft Edge (Chromium) DevTools | Glitch"  
-[MicrosoftEdgeChromiumDevToolsClass]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/_class.html "Class example - Microsoft Edge (Chromium) DevTools | Glitch"  
-[MicrosoftEdgeChromiumDevToolsHover]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/_hover.html "Hover example - Microsoft Edge (Chromium) DevTools | Glitch"  
-[MicrosoftEdgeChromiumDevToolsMargin]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/_margin.html "Margin example - Microsoft Edge (Chromium) DevTools | Glitch"  
+<!--[DevToolsPlacement]: ../placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  -->  
+
+[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge (Chromium) DevTools | Glitch"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
