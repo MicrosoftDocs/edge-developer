@@ -36,6 +36,9 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 1.  Hold `control` \(Windows\) or `command` \(macOS\) and click **CSS Examples** to open in a new window.  
     
     [CSS Examples][GlitchDevToolsCssExamples]  
+
+> [!NOTE]
+> If you want to dock your DevTools window to the right of your viewport \(displayed in [Figure 1](#figure-1)\), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
     
 ## View the CSS for an element   
 
@@ -66,10 +69,6 @@ Complete these interactive tutorials to learn the basics of viewing and changing
         
 1.  On the page, in the **Value of `padding`:** textbox, enter the value.  
 
-<!--If you would like to dock your DevTools window to the right of your viewport, like you see in [Figure 1](#figure-1), see [Change DevTools placement][DevToolsPlacement].  -->  
-
-<!--todo: add change placement section when available -->  
-
 ## Add a CSS declaration to an element   
 
 Use the **Styles** tab when you want to change or add CSS declarations to an element.  
@@ -97,7 +96,7 @@ Use the **Styles** tab to see how an element looks when a CSS class is applied t
 1.  [Open CSS Examples](#open-css-examples).  
 1.  Right-click the `Add A Class To Me!` element and select **Inspect**.  
 1.  Click **.cls**.  DevTools reveals a text box where you may add classes to the selected element.  
-1.  Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element had any other classes applied to it, you would also be able to toggle them from here.  
+1.  Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.  
 
 > ##### Figure 4  
 > The `color_me` class has been applied to the element via the **.cls** section of the **Styles** tab  
