@@ -2,7 +2,7 @@
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2019
+ms.date: 11/08/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -99,8 +99,7 @@ Check the **Show All** checkbox in the **Computed** tab.  See [View only the CSS
 
 ### View the box model for an element   
 
-To view [the box model][MDNBoxModel] of an element, go to the **Styles** tab.  
-If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.  
+To view [the box model][MDNBoxModel] of an element, go to the **Styles** tab.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.  
 
 To change a value, double-click on it.  
 
@@ -153,11 +152,9 @@ To toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`:
 
 To view a page in print mode:  
 
-1.  Open the **Command Menu**.  
+1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `Rendering` and select `Show Rendering`.  
 1.  For the **Emulate CSS Media** dropdown, select **print**.  
-
-<!--todo: add command menu section when available  -->  
 
 ### View used and unused CSS with the Coverage tab   
 
@@ -210,7 +207,7 @@ Since the order of declarations affects how an element is styled, you may add de
 
 **What workflow should you use?** For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in the element as you would expect.  See [Selector Types][MDNSelectorTypes] for more on specificity.  
 
-If you are debugging an styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.  
+If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.  
 
 #### Add an inline declaration   
 
@@ -504,7 +501,7 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
 
 <!-- links -->  
 
-<!--[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  -->  
+[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
 <!--[DevToolsCSSGetStarted]: index.md "Get Started With Viewing And Changing CSS"  -->
 <!--[DevToolsCSSGetStartedAddPseudoState]: index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  -->  
 <!--[DevToolsCSSGetStartedTutorial]: index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  -->  
