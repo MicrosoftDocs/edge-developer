@@ -2,12 +2,12 @@
 title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/03/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 07/10/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-If you find yourself running the same code in the **Console** repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][SourcesPanel].  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
+If you find yourself running the same code in the **Console** repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][DevToolsSourcesPanel].  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
 Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
 
 <!--Todo: Add link to console when section is available -->  
@@ -174,9 +174,9 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 [ImageUnsavedSnippet]: images/sources-snippets-editor-unsaved.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
 
 <!-- links -->  
+[DevToolsSourcesPanel]: ../sources.md "Sources Panel Overview"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
-[SourcesPanel]: ../sources "Sources Panel Overview"  
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet - Wikipedia"  
 
 > [!NOTE]
