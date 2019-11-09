@@ -2,7 +2,7 @@
 title: Network Issues Guide
 author: 
 ms.author: 
-ms.date: 11/06/2019
+ms.date: 11/08/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,7 +40,7 @@ See [Get Started][NetworkPerformance] to learn the basics of the Network panel.
 
 Six requests are downloading simultaneously.  After that, a series of requests are queued or stalled.  Once one of the first six requests finishes, one of the requests in the queue starts.  
 
-In the **Waterfall** in [Figure 1](#figure-1), the first six requests for `edge-iconx1024.msft.png` start simultaneously.  The subsequent requests are stalled until one of the original six finishes.  
+In the **Waterfall** in [Figure 1](#figure-1), the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.  
 
 > ##### Figure 1  
 > An example of a queued or stalled series in the Network panel  
@@ -84,7 +84,7 @@ In [Figure 2](#figure-2), the long, green bar in the **Waterfall** indicates tha
 
 A request takes a long time to download.  
 
-In [Figure 3](#figure-3), the long, blue bar in the **Waterfall** next to `elements-panel.msft.png` means it took a long time to download.  
+In [Figure 3](#figure-3), the long, blue bar in the **Waterfall** next to the png means it took a long time to download.  
 
 > ##### Figure 3  
 > An example of a request that takes a long time to download  
