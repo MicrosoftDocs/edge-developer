@@ -35,6 +35,7 @@
 #### [Overview](devtools-guide-chromium/console/index.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
+#### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
