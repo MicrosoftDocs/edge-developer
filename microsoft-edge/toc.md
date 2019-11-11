@@ -30,6 +30,7 @@
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### CSS
+#### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
