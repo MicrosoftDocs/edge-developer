@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/03/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,7 +23,7 @@ This represents the WebView2 Environment.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[CreateWebView](#createwebview) | Asynchronously create a new [IWebView2WebView](IWebView2WebView.md#iwebview2webview).
+[CreateWebView](#createwebview) | Asynchronously create a new [IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view).
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
@@ -32,9 +32,9 @@ WebViews created from an environment run on the Browser process specified with e
 
 #### CreateWebView 
 
-Asynchronously create a new [IWebView2WebView](IWebView2WebView.md#iwebview2webview).
+Asynchronously create a new [IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view).
 
-> public HRESULT [CreateWebView](#createwebview)(HWND parentWindow,[IWebView2CreateWebViewCompletedHandler](IWebView2CreateWebViewCompletedHandler.md#iwebview2createwebviewcompletedhandler) * handler)
+> public HRESULT [CreateWebView](#interface_i_web_view2_environment_1abe8324e33f071ffb07a419d8664b9b3c)(HWND parentWindow,[IWebView2CreateWebViewCompletedHandler](IWebView2CreateWebViewCompletedHandler.md#interface_i_web_view2_create_web_view_completed_handler) * handler)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 
@@ -44,13 +44,10 @@ It is recommended that the application set Application User Model ID for the pro
 void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
 {
     m_lastUsedInitFlags = webviewInitFlags;
-    if (m_webView)
-    {
-        // To ensure browser switches get applied correctly, we need to close
-        // the existing WebView. This will result in a new browser process
-        // getting created which will apply the browser switches.
-        CloseWebView();
-    }
+    // To ensure browser switches get applied correctly, we need to close
+    // the existing WebView. This will result in a new browser process
+    // getting created which will apply the browser switches.
+    CloseWebView();
 
     bool localEdgeExists = false;
     {
@@ -60,13 +57,7 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
     LPCWSTR subFolder = (webviewInitFlags & kUseInstalledBrowser || !localEdgeExists)
         ? nullptr
         : L".";
-#ifdef USE_WEBVIEW2_STAGING
-    LPCWSTR additionalBrowserSwitches = (webviewInitFlags & KEnableInternalVisualMode)
-        ? L"--enable-features=msEmbeddedBrowserVisualHosting"
-        : nullptr;
-#else
     LPCWSTR additionalBrowserSwitches = nullptr;
-#endif
     HRESULT hr = CreateWebView2EnvironmentWithDetails(
         subFolder, nullptr,
         additionalBrowserSwitches,
@@ -79,36 +70,14 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
         if (SUCCEEDED(result))
         {
             webviewEnvironment->QueryInterface(IID_PPV_ARGS(&m_webViewEnvironment));
-#ifdef USE_WEBVIEW2_STAGING
-            wil::com_ptr<IWebView2EnvironmentStagingInterface> webViewEnvironmentStaging =
-                m_webViewEnvironment.try_query<IWebView2EnvironmentStagingInterface>();
-            if (webViewEnvironmentStaging)
-            {
-                WEBVIEW2_RENDERING_MODE renderingMode =
-                    m_webViewContainer.GetHostingMode() == WebViewContainer::HostingMode::kWindowed
-                    ? WEBVIEW2_RENDERING_MODE_WINDOWED
-                    : WEBVIEW2_RENDERING_MODE_WINDOWLESS;
-                CHECK_FAILURE(webViewEnvironmentStaging->CreateWebViewWithRenderingMode(
-                    renderingMode,
-                    m_mainWindow,
-                    Callback<IWebView2CreateWebViewCompletedHandler>(
-                        this, &AppWindow::OnCreateWebViewCompleted).Get()));
-            }
-            else
-            {
-#endif
             CHECK_FAILURE(m_webViewEnvironment->CreateWebView(
                 m_mainWindow, Callback<IWebView2CreateWebViewCompletedHandler>(
                     this, &AppWindow::OnCreateWebViewCompleted).Get()));
-#ifdef USE_WEBVIEW2_STAGING
-            }
-#endif
         }
         else
         {
             ShowFailure(result, L"Failed to create webview environment");
         }
-
         return S_OK;
     }).Get());
     CHECK_FAILURE(hr);
@@ -140,9 +109,9 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
 
 Create a new web resource response object.
 
-> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content,int statusCode,LPCWSTR reasonPhrase,LPCWSTR headers,[IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#iwebview2webresourceresponse) ** response)
+> public HRESULT [CreateWebResourceResponse](#interface_i_web_view2_environment_1aa1bda3e667feb52bfc218a4a54273439)(IStream * content,int statusCode,LPCWSTR reasonPhrase,LPCWSTR headers,[IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response) ** response)
 
-The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#iwebview2httpresponseheaders) to construct the headers line by line. For information on other parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#iwebview2webresourceresponse).
+The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#interface_i_web_view2_http_response_headers) to construct the headers line by line. For information on other parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#interface_i_web_view2_web_resource_response).
 
 ```cpp
         if (m_blockImages)
