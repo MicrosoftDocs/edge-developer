@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing The DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/11/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Complete these interactive tutorials to learn the basics of viewing and changing the DOM of a page using Microsoft Edge DevTools.  
 
-This tutorial assumes that you know the difference between the DOM and HTML.  See [Appendix: HTML versus the DOM](#appendix:-html-versus-the-dom) for an explanation.  
+This tutorial assumes that you know the difference between the DOM and HTML.  See [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom) for an explanation.  
 
 ## Open DOM Examples  
 
@@ -47,7 +47,7 @@ The DOM Tree of the Elements panel is where you do all DOM-related activities in
 
 When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Inspect a Node**, right-click **Michelangelo** and select **Inspect**.  
     
     > ##### Figure 1  
@@ -74,7 +74,7 @@ Inspecting a node is also the first step towards viewing and changing the styles
 
 Once you have selected a node in the DOM Tree, you may navigate the DOM Tree with your keyboard.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and select **Inspect**.  `<li>Ringo</li>` is selected in the DOM Tree.  
     
     > ##### Figure 4  
@@ -96,10 +96,10 @@ Once you have selected a node in the DOM Tree, you may navigate the DOM Tree wit
 
 When viewing the DOM Tree, you may find yourself interested in a DOM node that is not currently in the viewport.  For example, suppose that you scrolled to the bottom of the page, and you are interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you are able to see the node.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Scroll into View**, right-click **Magritte** and select **Inspect**.  
     
-    1.  Go to the [Appendix: Scroll into view](#appendix:-scroll-into-view) section at the bottom of this page.  
+    1.  Go to the [Appendix: Scroll into view](#appendix-scroll-into-view) section at the bottom of this page.  
     The instructions continue there.  
 
 After completing the instructions at the bottom of the page you should jump back up to here.  
@@ -127,7 +127,7 @@ You may edit the DOM on the fly and see how those changes affect the page.
 
 To edit the content of a node, double-click the content in the DOM Tree.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Edit Content**, right-click **Michelle** and select **Inspect**.  
     1.  In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<li>` and `</li>`.  The text is highlighted to indicate that it is selected.  
         
@@ -141,7 +141,7 @@ To edit the content of a node, double-click the content in the DOM Tree.
 
 To edit attributes, double-click the attribute name or value.  Follow the instructions to learn how to add attributes to a node.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Edit Attributes**, right-click **Howard** and select **Inspect**.  
     
     1.  Double-click `<li>`.  The text is highlighted to indicate that the node is selected.  
@@ -160,7 +160,7 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 To edit the type of a node, double-click the type and then type in the new type.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Edit Node Type**, right-click **Hank** and select **Inspect**.  
     1.  Double-click `<li>`.  The text `li` is highlighted.  
     1.  Delete `li`, type `button`, then press `Enter`.  The `<li>` node changes to a `<button>` node.  
@@ -173,7 +173,7 @@ To edit the type of a node, double-click the type and then type in the new type.
 
 Drag nodes to reorder them.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Reorder DOM Nodes**, right-click **Elvis Presley** and select **Inspect**.  
     
     > [!NOTE]
@@ -189,16 +189,16 @@ Drag nodes to reorder them.
 
 You are able to force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Force state**, hover over **The Lord of the Flies**.  The background color becomes orange.  
     1.  Right-click **The Lord of the Flies** and select **Inspect**.  
-    1.  Right-click `<li class="demo--hover">The Lord of the Flies</li>` and select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix:-missing-options) if you do not see this option.  The background color remains orange even though you are not actually hovering over the node.  
+    1.  Right-click `<li class="demo--hover">The Lord of the Flies</li>` and select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if you do not see this option.  The background color remains orange even though you are not actually hovering over the node.  
 
 ### Hide a node   
 
 Press `H` to hide a node.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Hide a node**, right-click **The Stars My Destination** and select **Inspect**.  
     1.  Press the `H` key.  The node is hidden.  
         
@@ -212,7 +212,7 @@ Press `H` to hide a node.
 
 Press `Delete` to delete a node.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Delete a Node**, right-click **Foundation** and select **Inspect**.  
     1.  Press the `Delete` key.  The node is deleted.  
     1.  Press `Control`+`Z` \(Windows\) or `Command`+`Z` \(macOS\).  The last action is undone and the node reappears.  
@@ -225,7 +225,7 @@ DevTools provides a few shortcuts for accessing DOM nodes from the Console, or g
 
 When you inspect a node, the `== $0` text next to the node means that you may reference this node in the Console with the variable `$0`.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and select **Inspect**.  
     1.  Press the `Escape` key to open the Console Drawer.  
     1.  Type `$0` and press the `Enter` key.  The result of the expression shows that `$0` evaluates to `<li>The Left Hand of Darkness</li>`.  
@@ -245,9 +245,9 @@ When you inspect a node, the `== $0` text next to the node means that you may re
 
 If you need to refer back to a node many times, store it as a global variable.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Store as global variable**, right-click **The Big Sleep** and select **Inspect**.  
-    1.  Right-click `<li>The Big Sleep</li>` in the DOM Tree and select **Store as global variable**.  See [Appendix: Missing options](#appendix:-missing-options) if you do not see this option.  
+    1.  Right-click `<li>The Big Sleep</li>` in the DOM Tree and select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if you do not see this option.  
     1.  Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.  
         
         > ##### Figure 15  
@@ -258,7 +258,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 Copy the JavaScript path to a node when you need to reference it in an automated test.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Copy JS path**, right-click **The Brothers Karamazov** and select **Inspect**.  
     1.  Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree and select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.  
     1.  Press `Control`+`V` \(Windows\) or `Command`+`V` \(macOS\) to paste the expression into the Console.  
@@ -276,9 +276,9 @@ DevTools enables you to pause the JavaScript of a page when the JavaScript modif
 
 Use attribute modification breakpoints when you want to pause the JavaScript that causes any attribute of a node to change.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Break on attribute modifications**, right-click **Sauerkraut** and select **Inspect**.  
-    1.  In the DOM Tree, right-click `<li id="target">Sauerkraut</li>` and select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix:-missing-options) if you are not able to see this option.
+    1.  In the DOM Tree, right-click `<li id="target">Sauerkraut</li>` and select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.
         
         > ##### Figure 17  
         > Break on attribute modifications  
@@ -297,9 +297,9 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 If you want to pause when a particular node is removed, use node removal breakpoints.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Break on Node Removal**, right-click **Neuromancer** and select **Inspect**.  
-    1.  In the DOM Tree, right-click `<li id="target">Neuromancer</li>` and select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix:-missing-options) if you are not able to see this option.  
+    1.  In the DOM Tree, right-click `<li id="target">Neuromancer</li>` and select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.  
     1.  Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.  
     1.  Click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon].  
     
@@ -307,9 +307,9 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 After you put a subtree modification breakpoint on a node, DevTools pauses the page when any of the descendants of the node are added or removed.  
 
-1.  [Open DOM Examples](#Open-DOM-Examples).  
+1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and select **Inspect**.  
-    1.  In the DOM Tree, right-click `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, and select **Break On** > **Subtree Modifications**.  See [Appendix: Missing options](#appendix:-missing-options) if you are not able to see this option.  
+    1.  In the DOM Tree, right-click `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, and select **Break On** > **Subtree Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.  
     1.  Click **Add Child**.  The code pauses because a `<li>` node was added to the list.  
     1.  Click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon].  
     
@@ -386,7 +386,7 @@ See [Introduction to the DOM][MDNIntroductionToDOM] to learn more.
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.  
 
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
-1.  Right-click the `<li>Magritte</li>` node and select **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  See [Appendix: Missing options](#appendix:-missing-options) if you are not able to see the **Scroll into view** option.
+1.  Right-click the `<li>Magritte</li>` node and select **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
     
     > ##### Figure 19  
     > Scroll into view  
