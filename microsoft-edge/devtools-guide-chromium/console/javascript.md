@@ -2,7 +2,7 @@
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/12/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  See [Get Started With Debugging JavaScript](../javascript/index.md) to learn how to pause JavaScript code and step through it one line at a time.  
+This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  <!--See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  -->  See [Get Started With Debugging JavaScript](../javascript/index.md) to learn how to pause JavaScript code and step through it one line at a time.  
 
 > ##### Figure 1  
 > The **Console**  
@@ -45,7 +45,7 @@ The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evalu
 
 This tutorial is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.
 
-1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**, right here on this very page.  
+1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
     
     > ##### Figure 2  
     > This tutorial on the left, and DevTools on the right  
