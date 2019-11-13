@@ -39,7 +39,7 @@ Use the Console API to write messages to the Console from your JavaScript.  <!--
 
 <!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
 
-Writes an [error](#console.error(object-[,-object,-...])) to the console when `expression` evaluates to `false`.  
+Writes an [error](#consoleerrorobject--object-) to the console when `expression` evaluates to `false`.  
 
 ```javascript
 const x = 5;
@@ -70,7 +70,7 @@ If **Preserve Log** is enabled, `console.clear()` is disabled.
 
 **Log level**: `Info`  
 
-Writes the number of times that `count()` has been invoked at the same line and with the same `label`.  Call [`console.countReset([label])`](#console.countReset([label])) to reset the count.  
+Writes the number of times that `count()` has been invoked at the same line and with the same `label`.  Call [`console.countReset([label])`](#consolecountresetlabel) to reset the count.  
 
 ```javascript
 console.count();
@@ -96,7 +96,7 @@ console.countReset('coffee');
 
 **Log level**: `Info`  
 
-Identical to [`console.log(object [, object, ...])`](#console.log(object-[,-object,-...])).  
+Identical to [`console.log(object [, object, ...])`](#consolelogobject--object-).  
 
 ```javascript
 console.debug('debug');  
@@ -168,17 +168,17 @@ console.groupEnd(label);
 
 ## `console.groupCollapsed(label)`   
 
-Same as [`console.group(label)`](#console.group(label)), except the group is initially collapsed when it is logged to the Console.  
+Same as [`console.group(label)`](#consolegrouplabel), except the group is initially collapsed when it is logged to the Console.  
 
 ## `console.groupEnd(label)`   
 
-Stops visually grouping messages.  See [`console.group`](#console.group(label)).  
+Stops visually grouping messages.  See [`console.group`](#consolegrouplabel).  
 
 ## `console.info(object [, object, ...])`   
 
 **Log level**: `Info`  
 
-Identical to [`console.log(object [, object, ...])`](#console.log(object-[,-object,-...])).  
+Identical to [`console.log(object [, object, ...])`](#consolelogobject--object-).  
 
 ```javascript
 console.info('info');
@@ -250,7 +250,7 @@ console.timeEnd();
 
 **Log level**: `Info`  
 
-Stops a timer.  See [`console.time()`](#console.time([label])).  
+Stops a timer.  See [`console.time()`](#consoletimelabel).  
 
 ## `console.trace()`   
 
