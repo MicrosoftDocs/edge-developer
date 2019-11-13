@@ -43,12 +43,11 @@ This tutorial is designed so that you are able to open up the demo and try all t
 
 1.  Hold `control` \(Windows\) or `command` \(macOS\) and click **Console Log Examples** to open in a new window.  
     
-    [Console Log Examples][GlitchDevToolsConsoleLogExamples]  
-
-<!--
-1.  **OPTIONAL**: Move the demo to a separate window.  
+    [Console Log Examples][GlitchDevToolsConsoleLogExamples]
     
-    > ##### old Figure 2  
+    <!--1.  **OPTIONAL**: Move the demo to a separate window.  
+    
+    >##### old Figure 2  
     > The tutorial on the left, and the demo on the right  
     > ![The tutorial on the left, and the demo on the right][ImageLogSetUp1]  -->
     
@@ -58,7 +57,7 @@ This tutorial is designed so that you are able to open up the demo and try all t
     > DevTools opens to the right of the demo  
     > ![DevTools opens to the right of the demo][ImageDevToolsRight]  
     
- 1.  **OPTIONAL**: **Dock DevTools to the bottom of the window or undock it into a separate window**.  
+1.  **OPTIONAL**: Dock DevTools to the bottom of the window or undock it into a separate window.  
     
     > ##### Figure 3  
     > DevTools docked to the bottom of the demo  
