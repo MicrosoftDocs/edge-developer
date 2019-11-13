@@ -172,7 +172,7 @@ Same as [`console.group(label)`](#consolegrouplabel), except the group is initia
 
 ## `console.groupEnd(label)`   
 
-Stops visually grouping messages.  See [`console.group`](#consolegrouplabel).  
+Stops visually grouping messages.  See [`console.group(label)`](#consolegrouplabel).  
 
 ## `console.info(object [, object, ...])`   
 
@@ -250,7 +250,7 @@ console.timeEnd();
 
 **Log level**: `Info`  
 
-Stops a timer.  See [`console.time()`](#consoletimelabel).  
+Stops a timer.  See [`console.time([label])`](#consoletimelabel).  
 
 ## `console.trace()`   
 
