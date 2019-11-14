@@ -21,13 +21,13 @@ The process is quite simple.  All you need to do is click on the three dots at t
 
 When you are in the "Extensions" page as shown below, enable the "Developer mode" by enabling the toggle at the bottom left of the page as shown below.
 
-![ ](media/)
+![ ](media/part2-developermode-toggle.png)
 
 ## Installing and updating side-loaded extensions
 
 The first time you want to install your extension, you choose the option "Load Unpacked" as shown below.  This prompts you for a directory where you have your extension assets file by file. This installs the extension as if you had downloaded it from a store.  
 
-![ ](media/part2-extensions-menu1.png)
+![ ](media/part2-installed-extension.png)
 
 Once you've installed your extension, you can update it by clicking on the "Reload" button under your extension listing.
 

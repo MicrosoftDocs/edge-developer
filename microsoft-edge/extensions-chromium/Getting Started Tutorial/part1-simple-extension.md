@@ -11,7 +11,9 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Build a simple extension that pops up NASA picture of the day
 
-<a href = "./extension-source/extension-getting-started-part1.zip" download>Completed Extension Package Source for This Part </a>  
+<!-- <a href = "./extension-source/extension-getting-started-part1.zip" download>Completed Extension Package Source for This Part </a>  -->
+
+[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part1.zip)
 
 ## Overview
 
@@ -44,6 +46,9 @@ Next thing is to add some icons to `manifest.json` file (and create a new `/icon
 
 Your directory structure will now look like this
 
+![ ](media/part1-heirarchy.png)
+
+<!-- 
 ```
 .
 │   _manifest.json  
@@ -53,7 +58,7 @@ Your directory structure will now look like this
 │   │   nasapod32x32.png  
 │   │   nasapod48x48.png  
 │   │   nasapod128x128.png  
-```
+``` -->
 
 and your updated `manifest.json` file is as follows.
 
@@ -123,7 +128,9 @@ In folder popup, let's add the file `popup.html` and let's have it render our st
 
 Our folder structure for our extension is this.
 
-```
+![ ](media/part1-heirarchy1.png)
+
+<!-- ```
 .
 │   _manifest.json  
 │
@@ -138,7 +145,7 @@ Our folder structure for our extension is this.
 |     
 └───images
     │   stars.jpeg 
-```
+``` -->
 
 >[!NOTE]
 >The `images/stars.jpeg` file listed above is available in the zip download mentioned at the top of this page.
