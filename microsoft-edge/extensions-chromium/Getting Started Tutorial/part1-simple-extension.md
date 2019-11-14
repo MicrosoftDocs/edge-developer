@@ -11,11 +11,6 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Build a simple extension that pops up NASA picture of the day
 
-* Extension technologies covered in this part 1
-  * Manifest basics
-  * Icons associated with the extension
-  * Default modal popup when the extension icon is clicked
-
 <a href = "./extension-source/extension-getting-started-part1.zip" download>Completed Extension Package Source for This Part </a>  
 
 ## Overview
