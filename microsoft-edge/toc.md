@@ -29,10 +29,14 @@
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
+### CSS
+#### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
+#### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
+#### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
@@ -43,16 +47,22 @@
 #### [WebSQL](devtools-guide-chromium/storage/websql.md)
 #### [Cache](devtools-guide-chromium/storage/cache.md)
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
+### Mobile Simulation
+#### [Overview](devtools-guide-chromium/device-mode/index.md)
 ### JavaScript
+#### [Get Started](devtools-guide-chromium/javascript/index.md)
 #### [Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+#### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
+#### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
+### [Security](devtools-guide-chromium/security/index.md)
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
