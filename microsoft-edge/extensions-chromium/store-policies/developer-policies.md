@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
 ---
 
-# ererf
+# Microsoft Edge Addons Catalog Developer Policies
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
