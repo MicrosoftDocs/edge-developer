@@ -118,6 +118,9 @@
 #### [Upload YouTube Video](extensions-chromium/publish/upload-video.md)
 #### [Update Extension Listing](extensions-chromium/publish/update.md)
 #### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
+### Microsoft Edge Addons Policies
+#### [Content Security Policy](extensions-chromium/store-policies/csp.md)
+#### [Developer policies](extensions-chromium/store-policies/developer-policies.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
