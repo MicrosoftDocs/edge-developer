@@ -82,13 +82,13 @@ and your updated `manifest.json` file is as follows.
 
 ## Adding a default popup dialog
 
-As I said earlier, the `manifest.json` is the blueprint (or brains) of the extension. That said, without doing any custom programming, we can add to the extension an `HTML` file that will automatically run when the user clicks on the extension icon as shown here.
+Now, we will create an `HTML` file that will automatically run when the user clicks on the extension icon as shown here.
 
 ![Toolbar Badge Icon](media/part1-badge1.png)
 
-  The entry we need to add to the `manifest.json` file is `browser_action` and just like `name` and `description`, it's a top level entry. We've named it `popup/popup.html` because, well, it's a popup but we could call it anything. Clicking on the extension icon launches `popup/popup.html` as modal dialog that stays up until you click outside the dialog.
+  We've named our HTML file as `popup/popup.html`. Clicking on the extension icon launches `popup/popup.html` as modal dialog that stays up until you click outside the dialog.
 
-  Adding our `popup/popup.html` as our default popup for our extensions gives us an updated `manifest.json` as follows.
+  For this, we will register this file as a default popup in the `manifest.json` under `browser_action` as follows.
 
 ```JSON
 {
@@ -108,8 +108,6 @@ As I said earlier, the `manifest.json` is the blueprint (or brains) of the exten
 }
 ```
 
-Now, we'll create a `popup.html` (in a folder off the root of our extension), but for now, let's bring into our project an image file `images/stars.jpeg` so we have something built into our extension that can display in our `popup.html` file.
-
 In folder popup, let's add the file `popup.html` and let's have it render our stars image. Here's the `popup.html` file.
 
 ```HTML
@@ -125,6 +123,8 @@ In folder popup, let's add the file `popup.html` and let's have it render our st
   </body>
 </html>
 ```
+
+ Also, add an image file `images/stars.jpeg` that we have referenced in our `popup.html` file.
 
 Our folder structure for our extension is this.
 
@@ -153,3 +153,29 @@ Our folder structure for our extension is this.
 That's everything we need to build a working extension. All that's left to is test it.  
 
 The next section explains how to load the extension (we call that side loading) into the Edge  browser to test it.
+
+## Run your extension locally in your browser while developing it (side-loading)
+
+The Microsoft Edge Chromium browser provides a safe and simple way for you to run as well as debug your extensions while you are developing them.  
+
+The process is quite simple.  All you need to do is click on the three dots at the top of your browser. Next, choose "Extensions" from the context menu as shown below.
+
+![ ](media/part2-threedots.png)
+
+When you are in the "Extensions" page as shown below, enable the "Developer mode" by enabling the toggle at the bottom left of the page as shown below.
+
+![ ](media/part1-developermode-toggle.png)
+
+## Installing and updating side-loaded extensions
+
+The first time you want to install your extension, you choose the option "Load Unpacked" as shown below.  This prompts you for a directory where you have your extension assets file by file. This installs the extension as if you had downloaded it from a store.  
+
+![ ](media/part1-installed-extension.png)
+
+Once you've installed your extension, you can update it by clicking on the "Reload" button under your extension listing.
+
+To remove the extension from your browser, click on the "Remove" button on the bottom of the extension listing.
+
+## Debugging extensions
+
+Debugging extensions is quite easy and supports all of the features in Edge Chromium DevTools. Those details however are not covered in this getting started guide but are very important to successfully build extensions.

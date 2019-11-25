@@ -11,6 +11,11 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 # Open A New Developer Account  
 
+Open a new Microsoft Edge Developer account.  Before you submit the Extension, you must set up a Microsoft Edge developer account in [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798)
+
+> [!NOTE]
+> Do you have a Microsoft Account?  To create a developer account for Microsoft Edge, you must have a Microsoft account email (You can't sign up with a work or school email address).  If you do not have a Microsoft account, go to [account.microsoft.com]( https://account.microsoft.com/account/Account), select Sign in, and then choose Create one!.   
+
 1.	Go to the [developer page](https://go.microsoft.com/fwlink/?linkid=2099798) and select GO TO DASHBOARD.  
 2.	If you are not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account. You use the same Microsoft account that you use to sign into your developer account. After you sign in, this registration form is displayed: 
 > [!NOTE] 
