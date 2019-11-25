@@ -53,7 +53,8 @@
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
-#### [Background Services](devtools-guide-chromium/javascript/background-services.md)
+#### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
