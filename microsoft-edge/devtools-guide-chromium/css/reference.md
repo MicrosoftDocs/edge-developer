@@ -33,13 +33,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new workflows in this comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.  
 
-<!--See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn the basics.  -->  
-
-<!--todo: add section when available -->  
+See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn the basics.  
 
 ## Select an element   
 
-The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  <!--See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.  -->  
+The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.  
 
 > [!NOTE]
 > In [Figure 1](#figure-1), The `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
@@ -146,7 +144,7 @@ To toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`:
 > Toggling the `:hover` pseudo-class  
 > ![Toggling the :hover pseudo-class][ImagePseudoClass]  
 
-<!--See [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState] for an interactive tutorial.  -->  
+See [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState] for an interactive tutorial. 
 
 ### View a page in print mode   
 
@@ -171,7 +169,7 @@ The Coverage tab shows you what CSS a page actually uses.
     > The Coverage tab  
     > ![The Coverage tab][ImageCoverageEmpty]  
     
-1.  Click **Start Instrumenting Coverage And Reload Page** ![Start Instrumenting Coverage And Reload Page][ImageReloadIcon].  The page reloads and the Coverage tab provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.  
+1.  Click **Start instrumenting coverage and refresh the page** ![Start instrumenting coverage and refresh the page][ImageReloadIcon].  The page refreshes and the Coverage tab provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.  
     
     > ##### Figure 10  
     > An overview of how much CSS (and JavaScript) is used and unused  
@@ -252,7 +250,7 @@ While editing the value of a declaration, you may use the following keyboard sho
 
 *   Press `Alt`+`Up` \(Windows\) or `Option`+`Up` \(macOS\) to increment by `0.1`.  
 *   Press `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.  
-*   Press`Shift`+`Up` to increment by `10`.  
+*   Press `Shift`+`Up` to increment by `10`.  
 *   Press `Shift`+`Page Up` \(Windows\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.  
 
 Decrementing also works.  Just replace each instance of `Up` mentioned above with `Down`.  
@@ -502,9 +500,9 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-<!--[DevToolsCSSGetStarted]: index.md "Get Started With Viewing And Changing CSS"  -->
-<!--[DevToolsCSSGetStartedAddPseudoState]: index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  -->  
-<!--[DevToolsCSSGetStartedTutorial]: index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  -->  
+[DevToolsCSSGetStarted]: index.md "Get Started With Viewing And Changing CSS"  
+[DevToolsCSSGetStartedAddPseudoState]: index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  
+[DevToolsCSSGetStartedTutorial]: index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  
 <!--[DevToolsCssPrintPreview]: print-preview.md "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)"  -->  
 <!--[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"  -->  
 
