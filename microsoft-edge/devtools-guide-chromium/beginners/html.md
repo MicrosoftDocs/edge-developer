@@ -2,7 +2,7 @@
 title: DevTools for Beginners
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2019
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -301,10 +301,7 @@ try DevTools.
        </figcaption>
      </figure>
 
-3. Press `Command` + `Enter` (Mac) or `Control` + `Enter`
-   (Windows) to save your changes, or click outside of the box.
-   Your changes automatically show up in the live view of your page. The text `Your site!`
-   has been replaced with the new content.
+3. Press `Control` + `Enter` \(Windows\) or `Command` + `Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
 
      <figure>
        <img src="imgs/edit3.msft.png"
