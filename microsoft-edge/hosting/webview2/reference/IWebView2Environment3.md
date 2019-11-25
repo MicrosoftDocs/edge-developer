@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,7 +26,7 @@ Additional functionality implemented by the Environment object.
 [add_NewVersionAvailable](#add_newversionavailable) | The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [remove_NewVersionAvailable](#remove_newversionavailable) | Remove an event handler previously added with add_NewVersionAvailable.
 
-See the [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment).
+See the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment2](IWebView2Environment2.md#iwebview2environment2).
 
 ## Members
 
@@ -34,15 +34,15 @@ See the [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_env
 
 The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 
-> public HRESULT [add_NewVersionAvailable](#interface_i_web_view2_environment3_1ab7621402760afd6a7f60d5140aa37efb)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md#interface_i_web_view2_new_version_available_event_handler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md#iwebview2newversionavailableeventhandler) * eventHandler,EventRegistrationToken * token)
 
-To use the newer version of the browser you must create a new [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment) and [IWebView2WebView](IWebView2WebView.md#interface_i_web_view2_web_view). If the browser is not installed in the machine the function will return the following error
+To use the newer version of the browser you must create a new [IWebView2Environment](IWebView2Environment.md#iwebview2environment) and [IWebView2WebView](IWebView2WebView.md#iwebview2webview). If the browser is not installed in the machine the function will return the following error
 
 ```cpp
 ERROR_PRODUCT_UNINSTALLED
 ```
 
-Because a user data folder can only be used by one browser process at a time if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment) and IWebView2WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
+Because a user data folder can only be used by one browser process at a time if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) and IWebView2WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
 
 ```cpp
     // After the environment is successfully created
@@ -89,5 +89,5 @@ Because a user data folder can only be used by one browser process at a time if 
 
 Remove an event handler previously added with add_NewVersionAvailable.
 
-> public HRESULT [remove_NewVersionAvailable](#interface_i_web_view2_environment3_1a4f9c94a4680ffff415c00777d775bce7)(EventRegistrationToken token)
+> public HRESULT [remove_NewVersionAvailable](#remove_newversionavailable)(EventRegistrationToken token)
 
