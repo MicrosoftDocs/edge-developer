@@ -15,10 +15,10 @@ If you are a developer who wants to distribute an extension as part of the insta
 
 - **Using the Windows registry (for Windows only)**
 
-It supports installing an extension hosted at an `update_URL`. On Windows, the update_URL must point to the Microsoft Edge Addons store (or Chrome Web Store) where the extension must be hosted.
+It supports installing an extension hosted at an `update_URL`. On Windows, the update_URL must point to the Microsoft Edge Addons store where the extension must be hosted.
 
 ## Using the Windows registry
-First, publish the extension in the  Microsoft Edge Addons store (or Chrome Web Store), or package a .crx file and make sure that it installs successfully.
+First, publish the extension in the  Microsoft Edge Addons store, or package a .crx file and make sure that it installs successfully.
 
 The steps to install extension via registry in windows are:
 - Find or create the following key in the registry:
@@ -41,7 +41,5 @@ To update your extension to a new version, update the file, and then update the 
 
 To uninstall your extension (for example, if your software is uninstalled), remove your preference file (aaaaaaaaaabbbbbbbbbbcccccccccc.json) or the metadata from the registry.
 
-## FAQs
-
-1. **Can I install the extension hosted on Chrome Web Store using registry?**  
-Yes, Microsoft Edge supports external installation of extensions hosted on Chrome Web Store. If the extension is hosted in Chrome Web store, set the update_url as "https://clients2.google.com/service/update2/crx"
+>[!NOTE]
+> External installation of extension via a preferences json file for Mac and linux are not supported yet. This feature support will be implemented soon.
