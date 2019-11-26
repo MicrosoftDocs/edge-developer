@@ -2,7 +2,7 @@
 title: Get Started With Logging Messages In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -60,18 +60,18 @@ This tutorial is designed so that you are able to open up the demo and try all t
     
     > [!TIP]
     > Dock DevTools to the bottom of the window or undock it into a separate window.  
-    > 
-    > > ##### Figure 3  
-    > > DevTools docked to the bottom of the demo  
-    > > ![DevTools docked to the bottom of the demo][ImageDevToolsBottom]  
-    > 
-    > > ##### Figure 4  
-    > > Browser undocked in a separate window  
-    > > ![Browser undocked in a separate window][ImageDevToolsSeparateBrowse]  
-    > 
-    > > ##### Figure 5  
-    > > DevTools undocked in a separate window  
-    > > ![DevTools undocked in a separate window][ImageDevToolsSeparateDevTools]  
+
+    > ##### Figure 3  
+    > DevTools docked to the bottom of the demo  
+    > ![DevTools docked to the bottom of the demo][ImageDevToolsBottom]  
+    
+    > ##### Figure 4  
+    > Browser in a separate window  
+    > ![Browser in a separate window][ImageDevToolsSeparateBrowse]  
+    
+    > ##### Figure 5  
+    > DevTools undocked in a separate window  
+    > ![DevTools undocked in a separate window][ImageDevToolsSeparateDevTools]  
 
 <!--todo: add link to customize/placement section when available -->  
     
@@ -275,7 +275,7 @@ What if you are editing styles, but you need to quickly check the Console log fo
 <!--[ImageLogSetUp1]: images/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
 [ImageDevToolsRight]: images/example-devtools-right-console.msft.png "Figure 2: DevTools opens to the right of the demo"  
 [ImageDevToolsBottom]: images/example-devtools-bottom-console.msft.png "Figure 3: DevTools docked to the bottom of the demo"  
-[ImageDevToolsSeparateBrowse]: images/example-devtools-separate-console-browse.msft.png "Figure 4: Browser undocked in a separate window"  
+[ImageDevToolsSeparateBrowse]: images/example-devtools-separate-console-browse.msft.png "Figure 4: Browser in a separate window"  
 [ImageDevToolsSeparateDevTools]: images/example-devtools-separate-console-devtools.msft.png "Figure 5: DevTools undocked in a separate window"  
 [ImageLogInfo]: images/console-log-info.msft.png "Figure 6: The Console after clicking Log Info"  
 [ImageSourceLog]: images/sources-logjs.msft.png "Figure 7: DevTools opens the Sources panel after you click log.js:2"  
