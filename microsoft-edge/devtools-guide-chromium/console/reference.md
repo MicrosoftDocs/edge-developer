@@ -2,7 +2,7 @@
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/18/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,6 +33,11 @@ This page is a reference of features related to the Microsoft Edge DevTools Cons
 
 <!--If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  -->  <!--For the reference on functions like `monitorEvents()` see [Console Utilities API Reference][DevToolsConsoleUtilities].  -->  
 
+<!--todo: add console/javascript when available -->  
+<!--todo: add console/log when available -->  
+<!--todo: add console/api when available -->  
+<!--todo: add console/utilities when available -->  
+
 ## Open the Console   
 
 You may open the Console as a [panel](#open-the-console-panel) or as a [tab in the Drawer](#open-the-console-tab-in-the-drawer).  
@@ -53,11 +58,11 @@ To open the Console panel from the [Command Menu][DevToolsCommandMenu], start ty
 
 ### Open the Console tab in the Drawer   
 
-Press `Escape` or click **Customize And Control DevTools** `...` and then select **Show Console Drawer**.  
+Press `Escape` or click **Customize And Control DevTools** `...` and then select **Show console drawer**.  
 
 > ##### Figure 3  
-> Show Console Drawer  
-> ![Show Console Drawer][ImageShowConsoleDrawer]  
+> Show console drawer  
+> ![Show console drawer][ImageShowConsoleDrawer]  
 
 The Drawer pops up at the bottom of your DevTools window, with the **Console** tab open.  
 
@@ -99,7 +104,7 @@ Click **Show Console Sidebar** ![Show Console Sidebar][ImageShowConsoleSidebarIc
 
 ## View messages   
 
-This section contains features that change how messages are presented in the Console.  See [View messages](get-started.md#view) for a hands-on walkthrough.  
+This section contains features that change how messages are presented in the Console.  See [View messages][DevToolsConsoleViewMessages] for a hands-on walkthrough.  
 
 ### Disable message grouping   
 
@@ -125,7 +130,7 @@ By default the Console clears whenever you load a new page.  To persist messages
 
 ### Hide network messages   
 
-By default the browser logs network messages to the **Console**.  For example, the top message
+By default the browser logs network messages to the **Console**.  For example, the selected message
 in [Figure 10](#figure-10) represents a status code of `429`.  
 
 > ##### Figure 10  
@@ -151,7 +156,7 @@ There are many ways to filter out messages in the Console.
 
 ### Filter by log level   
 
-DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  The **Console API Reference** describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
+DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  <!--The **Console API Reference** describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  -->  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
 
 <!--todo: add console api section when available -->
 
@@ -197,7 +202,7 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to
 
 > ##### Figure 17  
 > Filtering out any messages that do not match `/[gm][ta][mi]/`  
-> ![Filtering out any messages that do not match /[gm][ta][mi]/][ImageRegExFilter]  
+> ![Filtering out any messages that do not match regex expression][ImageRegExFilter]  
 
 ## Run JavaScript   
 
@@ -210,6 +215,8 @@ Press the `Up Arrow` key to cycle through the history of JavaScript expressions 
 ### Watch the value of an expression in real-time with Live Expressions   
 
 If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  <!--See [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  -->  
+
+<!--todo: add live-expressions section when available -->  
 
 ### Disable Eager Evaluation   
 
@@ -262,7 +269,7 @@ You may use any of the following workflows to clear the Console:
 
 [ImageConsolePanel]: images/console-hello-console.msft.png "Figure 1: The Console panel"  
 [ImageCommandShowConsole]: images/console-command-menu-show-console.msft.png "Figure 2: The command for showing the Console panel"  
-[ImageShowConsoleDrawer]: images/elements-customize-control-devtools-show-console-drawer.msft.png "Figure 3: Show Console Drawer"  
+[ImageShowConsoleDrawer]: images/elements-customize-control-devtools-show-console-drawer.msft.png "Figure 3: Show console drawer"  
 [ImageDrawerConsole]: images/elements-console-drawer-hello-world.msft.png "Figure 4: The Console tab in the Drawer"  
 [ImageShowDrawerCommand]: images/console-command-menu-show-console.msft.png "Figure 5: The command for showing the Console tab in the Drawer"  
 [ImageConsoleSettings]: images/console-settings-group-similar-empty.msft.png "Figure 6: Console Settings"  
@@ -276,7 +283,7 @@ You may use any of the following workflows to clear the Console:
 [ImageUrlFilter]: images/console-filter-text.msft.png "Figure 14: A URL filter"  
 [ImageNegativeUrlFilter1]: images/console-negative-filter-text.msft.png "Figure 15: A negative URL filter that hides all messages matching the URL https://b.wal.co"  
 [ImageNegativeUrlFilter2]: images/console-filter-text-specified.msft.png "Figure 16: Viewing the messages that came from wp-ad.min.js"  
-[ImageRegExFilter]: images/console-filter-regex.msft.png "Figure 17: Filtering out any messages that do not match /[gm][ta][mi]/"  
+[ImageRegExFilter]: images/console-filter-regex.msft.png "Figure 17: Filtering out any messages that do not match regex expression"  
 [ImageHistoryAutocomplete]: images/console-filter-text-autofilter-history.msft.png "Figure 18: The autocomplete popup showing expressions from history"  
 [ImageJavascriptContext]: images/console-dom-level-top.msft.png "Figure 19: The JavaScript Context dropdown"  
 [ImageSelectContext]: images/console-dom-level-multiple.msft.png "Figure 20: Selecting a different JavaScript context"  
@@ -284,6 +291,8 @@ You may use any of the following workflows to clear the Console:
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+
+[DevToolsConsoleViewMessages]: index.md#viewing-logged-messages "Viewing logged messages - Console Overview"  
 <!--[DevToolsConsoleApi]: api.md "Console API Reference"  -->  
 [DevToolsConsoleOverviewJavascript]: index.md#running-javascript "Running JavaScript - Console Overview"  
 <!--[DevToolsConsoleJavascript]: javascript.md "Get Started With Running JavaScript In The Console"  -->  
