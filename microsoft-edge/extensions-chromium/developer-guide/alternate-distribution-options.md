@@ -15,20 +15,20 @@ If you are a developer who wants to distribute an extension as part of the insta
 
 - **Using the Windows registry (for Windows only)**
 
-It supports installing an extension hosted at an `update_URL`. On Windows, the update_URL must point to the Microsoft Edge Addons store where the extension must be hosted.
+It supports installing an extension hosted at an `update_URL`. On Windows, the update_URL must point to the Microsoft Store where the extension must be hosted.
 
 >[!NOTE]
-> External installation of extension via a preferences json file for Mac and linux are not supported yet. This feature support will be implemented soon.
+> External installation of extension via a preferences json file for Mac and linux are not supported yet. This feature support will soon be available.
 
 ## Using the Windows registry
-First, publish the extension in the  Microsoft Edge Addons store, or package a .crx file and make sure that it installs successfully.
+First, publish the extension in the  Microsoft Store, or package a .crx file and make sure that it installs successfully.
 
 The steps to install extension via registry in windows are:
 - Find or create the following key in the registry:
     - 32-bit Windows: HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions
     - 64-bit Windows: HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions
 - Create a new key (folder) under the Extensions key with the same name as the ID of your extension (for example, aaaaaaaaaabbbbbbbbbbcccccccccc).
-- In your extension key, create a property, "update_url", and set it to the value: “https://edge.microsoft.com/extensionwebstorebase/v1/crx”,  (this points to your extension's crx in the Microsoft Edge Addons Store).  
+- In your extension key, create a property, "update_url", and set it to the value: “https://edge.microsoft.com/extensionwebstorebase/v1/crx”,  (this points to your extension's crx in the Microsoft Store).  
 
 ``` js
 {
