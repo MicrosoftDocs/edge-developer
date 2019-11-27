@@ -1,49 +1,52 @@
 ---
 description: The process of distributing extension by mechanism other than verified stores
 title: Microsoft Edge (Chromium) Extensions
-author: xxx
-ms.author: xxx
-ms.date: 11/25/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
 ---
 
-# Alternate method of distributing extension
+# Alternate method of distributing extension  
 
-If you are a developer who wants to distribute an extension as part of the installation process for other software, or a network admin that want to distribute an extension throughout their organization, Microsoft Edge supports the following extension installation methods:
+If you are a developer who wants to distribute an extension as part of the installation process for other software, or a network admin that want to distribute an extension throughout their organization, Microsoft Edge supports the following extension installation methods:  
 
-- **Using the Windows registry (for Windows only)**
+*   **Using the Windows registry (for Windows only)**  
 
-It supports installing an extension hosted at an `update_URL`. On Windows, the update_URL must point to the Microsoft Store where the extension must be hosted.
+It supports installing an extension hosted at an `update_URL`.  On Windows, the update_URL must point to the Microsoft Store where the extension must be hosted.  
 
 >[!NOTE]
-> External installation of extension via a preferences json file for Mac and linux are not supported yet. This feature support will soon be available.
+> External installation of extension via a preferences json file for Mac and linux are not supported yet.  This feature support will soon be available.
 
-## Using the Windows registry
-First, publish the extension in the  Microsoft Store, or package a .crx file and make sure that it installs successfully.
+## Using the Windows registry  
 
-The steps to install extension via registry in windows are:
-- Find or create the following key in the registry:
-    - 32-bit Windows: HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions
-    - 64-bit Windows: HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions
-- Create a new key (folder) under the Extensions key with the same name as the ID of your extension (for example, aaaaaaaaaabbbbbbbbbbcccccccccc).
-- In your extension key, create a property, "update_url", and set it to the value: “https://edge.microsoft.com/extensionwebstorebase/v1/crx”,  (this points to your extension's crx in the Microsoft Store).  
+First, publish the extension in the  Microsoft Store, or package a .crx file and make sure that it installs successfully.  
 
-``` js
+The steps to install extension via registry in windows are:  
+
+*   Find or create the following key in the registry:  
+    *   32-bit Windows: `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
+    *   64-bit Windows: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
+*   Create a new key \(folder\) under the Extensions key with the same name as the ID of your extension \(for example, aaaaaaaaaabbbbbbbbbbcccccccccc\).  
+*   In your extension key, create a property, "`update_url`", and set it to the value: "`https://edge.microsoft.com/extensionwebstorebase/v1/crx`",  \(this points to your extension's crx in the Microsoft Store\).  
+
+```javascript
 {
     "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 }
-```
-- Launch the browser and go to edge://extensions; you should see the extension listed
+```  
 
-## Updating and uninstalling
-Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any necessary changes to the installed external extensions.
+*   Launch the browser and go to `edge://extensions`; you should see the extension listed  
 
-To update your extension to a new version, update the file, and then update the version in the registry.
+## Updating and uninstalling  
 
-To uninstall your extension (for example, if your software is uninstalled), remove your preference file (aaaaaaaaaabbbbbbbbbbcccccccccc.json) or the metadata from the registry.
+Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any necessary changes to the installed external extensions.  
 
+To update your extension to a new version, update the file, and then update the version in the registry.  
+
+To uninstall your extension \(for example, if your software is uninstalled\), remove your preference file (**aaaaaaaaaabbbbbbbbbbcccccccccc.json**) or the metadata from the registry.  
 
 
 > [!NOTE]
