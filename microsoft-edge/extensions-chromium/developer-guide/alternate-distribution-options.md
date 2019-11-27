@@ -9,13 +9,16 @@ ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
 ---
 
-# ALternate method of distributing extension
+# Alternate method of distributing extension
 
 If you are a developer who wants to distribute an extension as part of the installation process for other software, or a network admin that want to distribute an extension throughout their organization, Microsoft Edge supports the following extension installation methods:
 
 - **Using the Windows registry (for Windows only)**
 
 It supports installing an extension hosted at an `update_URL`. On Windows, the update_URL must point to the Microsoft Edge Addons store where the extension must be hosted.
+
+>[!NOTE]
+> External installation of extension via a preferences json file for Mac and linux are not supported yet. This feature support will be implemented soon.
 
 ## Using the Windows registry
 First, publish the extension in the  Microsoft Edge Addons store, or package a .crx file and make sure that it installs successfully.
@@ -41,8 +44,7 @@ To update your extension to a new version, update the file, and then update the 
 
 To uninstall your extension (for example, if your software is uninstalled), remove your preference file (aaaaaaaaaabbbbbbbbbbcccccccccc.json) or the metadata from the registry.
 
->[!NOTE]
-> External installation of extension via a preferences json file for Mac and linux are not supported yet. This feature support will be implemented soon.
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

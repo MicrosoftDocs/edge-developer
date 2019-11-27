@@ -160,7 +160,7 @@ The Microsoft Edge Chromium browser provides a safe and simple way for you to ru
 
 The process is quite simple.  All you need to do is click on the three dots at the top of your browser. Next, choose "Extensions" from the context menu as shown below.
 
-![ ](media/part2-threedots.png)
+![ ](media/part1-threedots.png)
 
 When you are in the "Extensions" page as shown below, enable the "Developer mode" by enabling the toggle at the bottom left of the page as shown below.
 

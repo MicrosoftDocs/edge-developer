@@ -1,5 +1,5 @@
 ---
-description: The process of distributing extension by mechanism other than verified stores
+description: Native messaging difference from Chrome's documentation
 title: Microsoft Edge (Chromium) Extensions
 author: xxx
 ms.author: xxx
@@ -30,7 +30,7 @@ In order to register a native messaging host the application must install a mani
   ]
 }
 ```
-`allowed_origins` is the list of extensions that should have access to the native messaging host. To enable your Native Application identify and communicate with Microsoft extension, set **allowedorigins** to “**extension://[Microsoft-Catalog-extensionID]**” in your native messaging host manifest file.
+`allowed_origins` is the list of extensions that should have access to the native messaging host. To enable your Native Application identify and communicate with Microsoft Store extensions, set **allowedorigins** to “**extension://[Microsoft-Catalog-extensionID]**” in your native messaging host manifest file.
 
 2. **Native messaging host location**  
 

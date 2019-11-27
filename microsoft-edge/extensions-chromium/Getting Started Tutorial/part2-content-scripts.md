@@ -11,7 +11,8 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Dynamically insert NASA picture below the page body tag using content scripts
   
-[Completed Extension Package Source for This Part](./extension-source/extension-getting-started-part3.zip)
+[Completed Extension Package Source for This Part](./extension-source/extension-getting-started-part2.zip)
+
 
 ## Overview
 
@@ -55,7 +56,7 @@ First, let's update our `popup.html` file with some straight forward markup that
 
 After updating our extension and clicking on the extension launch icon, we have the following popup with a display button.  
 
-![popup.html display after pressing the extension icon](media/part3-popupdialog.png)
+![popup.html display after pressing the extension icon](media/part2-popupdialog.png)
 
 ## Updated strategy to display image at the top of the browser tab
 
@@ -208,13 +209,12 @@ When an event is processed by this listener, the function that is the first para
 
 ## Adding functionality to remove the displayed image when clicked on
 
-Now, when we we browse to any page and click on our extension icon, we get the popup menu as follows:
+Now, when we browse to any page and click on our extension icon, we get the popup menu as follows:
 
-![popup.html display after pressing the extension icon](media/part2
--popupdialog.png)
+![popup.html display after pressing the extension icon](media/part2-popupdialog.png)
 
 When we click on the Display button, we get what's below.  If we click any where on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
-![The image showing in browser](media/part3-showingimage.png)
+![The image showing in browser](media/part2-showingimage.png)
 
 We've now created an extension that successfully sends a message from the extension icon popup, to the dynamically inserted `JavaScript` running as content on the browser tab.  That injected content set the image element to display our static stars `jpeg`.
