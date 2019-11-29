@@ -30,11 +30,15 @@
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### CSS
+#### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### Guides
+##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
+#### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
@@ -49,7 +53,8 @@
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
-#### [Background Services](devtools-guide-chromium/javascript/background-services.md)
+#### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
@@ -167,6 +172,8 @@
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
 ## [WebDriver](webdriver.md)
+## Web Platform (Chromium)
+### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
