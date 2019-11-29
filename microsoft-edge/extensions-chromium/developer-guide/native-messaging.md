@@ -14,7 +14,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 Microsoft Edge now allows extensions installed from Microsoft Store to exchange messages with a native application using message passing APIs. To enable the feature, you need to make sure of following things while implementing native messaging host of your Native Application.
 
 >[!NOTE]
-> Native messaging is currently not supported on OSX and Linux version of Microsoft Edge. This feature support will be implemented soon.
+> Native messaging is currently not supported on OSX and Linux version of Microsoft Edge. The feature support will be available soon.
 
 1. **Native messaging host**:   
 In order to register a native messaging host the application must install a manifest file that defines the native messaging host configuration. Below is an example of the manifest file:
