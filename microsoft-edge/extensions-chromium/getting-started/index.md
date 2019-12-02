@@ -25,7 +25,7 @@ Each section has the completed Extension source installation package referenced 
     *   Displaying a Popup Window  
     *   Run your Extension locally in your browser \(side-loading\)  
 
-*   [Dynamically insert NASA picture below the page body tag](part3-content-scripts.md)  
+*   [Dynamically insert NASA picture below the page body tag](part2-content-scripts.md)  
     *   Create JavaScript that inserts dynamic content script  
     *   Define in manifest which pages get content script  
     *   Inject content script declaratively  
@@ -42,7 +42,7 @@ To understand what a Microsoft Edge \(Chromium\) Extension is, we first need to 
 
 ### Each tab handles one GET request  
 
-Each tab essentially use the URL \(also known as the uniform resource locator\) to get a single stream of data which is typically an HTML document.  That single stream \(or page\), often includes instructions \(like JavaScript include tags, image references, CSS references and more\).  Ultimately, all the resources needed are downloaded to that one tab page and typically a visualization appears which we see in the browser tab completely rendered.  
+Each tab essentially use the URL \(also known as the uniform resource locator\) to get a single stream of data which is typically an HTML document.  That single stream \(or page\), often includes instructions \(like JavaScript include tags, image references, CSS references, and more\).  Ultimately, all the resources needed are downloaded to that one tab page and typically a visualization appears which we see in the browser tab completely rendered.  
 
 ### All communication from each tab is to remote servers  
 
@@ -66,9 +66,9 @@ That zip file includes HTML, CSS, JavaScript, images and all the necessary asset
 
 ### Launching the Extension server  
 
-When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, your web bundle is located on that web server.  Through certificates, configuration files and more, somehow, when a client browser navigates to a URL on that server, the `index.html` file that is on the web server at some special location is downloaded to the users browser.  How does your Extension do the same thing?  Particularly, how is the tab pages of your browser able to get to this zip file \(your Extension\)?  That is what the Extension runtime does for us.  
+When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, your web bundle is located on that web server.  When a browser navigates to a URL on a server, the `index.html` file on the web server is downloaded.  The browser navigated using certificates, configuration files, and more.  The `index.html` file stored at some special location on the web server.   How does your Extension do the same thing?  Particularly, how is the tab pages of your browser able to get to this zip file \(your Extension\)?  That is what the Extension runtime does for us.  
 
-The extension serves the files all from the URL \(remember, uniform resource locator\) at the name `extension://{some-long-unique-identifier}/index.html`.  The name I put in brackets, `{some-long-unique-identifier}` is a unique identifier assigned to the Extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each Extension has a unique identifier that points at the zip file \(or Extension bundle\) installed inside your browser.  
+The extension serves the files all from the URL \(uniform resource locator\) at the name `extension://{some-long-unique-identifier}/index.html`.  The name I put in brackets, `{some-long-unique-identifier}` is a unique identifier assigned to the Extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each Extension has a unique identifier that points at the zip file \(or Extension bundle\) installed inside your browser.  
 
 <!--![Unique URLS for Extensions](media/index-image4-uniqueurls.png)  -->  
 
@@ -76,7 +76,7 @@ The extension serves the files all from the URL \(remember, uniform resource loc
 
 ### Extensions manage and communicate with tabs and the browser toolbar  
 
-Extensions interact with the browsers toolbar, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser is a message API that allows for communications between the Extensions and the tab pages to allow this to happen gracefully.  This API, also known as the Extensions API gives a lots of capabilities including notification management, storage management and much more.  
+Extensions interact with the browsers toolbar, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser is a message API that allows for communications between the Extensions and the tab pages to allow this to happen gracefully.  This API, also known as the Extensions API gives a lots of capabilities including notification management, storage management, and much more.  
 
 Just like web servers, Extensions are able to continually run \(or sleep waiting for notifications\) all the time that the browser is running.  You may think of an Extension as an orchestrator for the browser.  Again, the Extension runs completely isolated from the tab pages, but through the Extensions API, and opt-in permissions granted to the Extension, each Extension is able to virtually control any and all tab pages running in the browser.  
 
