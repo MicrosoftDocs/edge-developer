@@ -39,7 +39,7 @@ Your Extension and associated metadata must accurately and clearly reflect the s
 
 Your Extension must have a single purpose with narrow functionality.  
 
-#### 1.1.2 Describe your extension  
+#### 1.1.2 Describe your Extension  
 
 All aspects of your Extension should accurately describe the functions, features and any important limitations of your Extension, including required or supported input devices.  The value proposition of your Extension must be clear during the first run experience.  Your Extension may not use a name or icon similar to that of other Extensions, and must not claim to represent a company, government body, or other entity if you do not have permission to make that representation.  
 
@@ -61,13 +61,13 @@ Your Extension must not negatively impact the performance or stability of Micros
 
 #### 1.1.7 Obfuscation  
 
-Extensions with obfuscated code are not allowed.  This includes code within the extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.  
+Extensions with obfuscated code are not allowed.  This includes code within the Extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.  
 
 #### 1.1.8 Altering Browser Settings  
 
 Your Extension must **not, without appropriate user consent**, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favourite.  
 
-Any alteration to the browser settings should be explicitly documented in the description of the extension.  
+Any alteration to the browser settings should be explicitly documented in the description of the Extension.  
 
 Your Extension may only revise key settings to replace a Microsoft webpage or service with that of a third-party \(such as require use of a third-party search engine or set the home page to a third-party web property\) if you are employed by or otherwise associated with such third-party.  
 
@@ -139,10 +139,10 @@ You may publish the Personal Information of users of your Extension to an outsid
 
 If you publish a person’s Personal Information to an outside service or third-party through your Extension or the metadata, but the person whose information is being shared is not a user of your Extension;  
 
-1.  you must obtain express written consent to publish that Personal Information.  
-2.  you must permit the person whose information is shared to withdraw that consent at any time.  
-3.  your privacy policy must clearly disclose that you may collect personal information in this manner.  
-4.  if required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.  
+1.  You must obtain express written consent to publish that Personal Information.  
+2.  You must permit the person whose information is shared to withdraw that consent at any time.  
+3.  Your privacy policy must clearly disclose that you may collect personal information in this manner.  
+4.  If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.  
 5.  If your Extension provides users with access to another person’s Personal Information, this requirement also applies.  
 
 #### 1.5.5 Transmit information securely  
@@ -240,7 +240,7 @@ If your Extension is directed at children under the age of 13, as defined in the
 
 ## 2 Content Policies  
 
-The following policies apply to content and metadata \(including publisher name, Extension name, Extension icon, Extension description, Extension screenshots, Extension trailers and trailer thumbnails, and any other Extension metadata\) offered for distribution in Microsoft Edge Addons.  Content means the images, sounds, videos and text contained in the Extension, the tiles, notifications, error messages or ads exposed through your Extension, and anything delivered from a server or that the Extension connects to.  Because Extensions and Microsoft Edge Addons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.  
+The following policies apply to content and metadata \(including publisher name, Extension name, Extension icon, Extension description, Extension screenshots, Extension trailers and trailer thumbnails, and any other Extension metadata\) offered for distribution in Microsoft Edge Addons.  Content means the images, sounds, videos and text contained in the Extension, the tiles, notifications, error messages or ads exposed through your Extension, and anything delivered from a server or to which the Extension connects.  Because Extensions and Microsoft Edge Addons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.  
 
 ### 2.1 Content Requirements for Microsoft Edge Addon Catalog Listing  
 
@@ -309,7 +309,7 @@ Content that is offensive in any country/region to which your Extension is targe
 
 #### 2.12.1 Mature Content  
 
-When you submit your Extension to [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798), you must indicate whether your Extension displays content that should be marked "Mature".  When determining your Extension’s rating, consider all the content in your app, including user generated content and ads, and content that your extension links to.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
+When you submit your Extension to [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798), you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
 
 #### 2.12.2 Ratings Change  
 
