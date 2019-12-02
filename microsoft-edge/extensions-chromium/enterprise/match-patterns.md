@@ -3,7 +3,7 @@ description: Enterprise policy documentation for Edge (Chromium) Extensions.
 title: Match Patterns
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/26/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
@@ -62,6 +62,6 @@ Some schemes are not supported in all contexts.
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

@@ -27,7 +27,7 @@ Adhering to these Addons Catalog Developer Policies should help you make choices
 
 Your Extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your Extensions to the world.  
 
-If you have feedback regarding the Policies, please let us know by commenting in the [Windows Store forum](http://go.microsoft.com/fwlink/p/?LinkId=224196).  We consider every comment.  
+If you have feedback regarding the Policies, please let us know by commenting in the [Windows Store forum](https://go.microsoft.com/fwlink/p/?LinkId=224196).  We consider every comment.  
 
 ## 1. Product Policies  
 
@@ -82,7 +82,7 @@ Your Extension must not jeopardize or compromise user security, or the security 
 
 #### 1.2.2 Unwanted and Malicious Software  
 
-Your Extension must not contain or enable malware as defined by the Microsoft criteria for [Unwanted and Malicious Software](http://go.microsoft.com/fwlink/?LinkId=821298).  
+Your Extension must not contain or enable malware as defined by the Microsoft criteria for [Unwanted and Malicious Software](https://go.microsoft.com/fwlink/?LinkId=821298).  
 
 #### 1.2.3 Dependency on other software  
 
@@ -236,7 +236,7 @@ Your privacy statement or terms of use must let users know you plan to send Pers
 
 #### 1.10.6 Other guidelines  
 
-If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act](http://go.microsoft.com/fwlink/p/?LinkID=623015); you must notify Microsoft of this fact in [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798) and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
+If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act](https://go.microsoft.com/fwlink/p/?LinkID=623015); you must notify Microsoft of this fact in [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798) and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
 
 ## 2 Content Policies  
 
