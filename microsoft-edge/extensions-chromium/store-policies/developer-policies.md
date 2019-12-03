@@ -13,7 +13,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 ## Introduction and Objective of this document  
 
-Thank you for your interest in developing Extensions for the Microsoft Edge Addons catalog.  The Microsoft Edge Addons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798) and the provision of such Extensions through the Microsoft Edge Addons.  
+Thank you for your interest in developing Extensions for the Microsoft Edge Addons catalog.  The Microsoft Edge Addons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such Extensions through the Microsoft Edge Addons.  
 
 ## Principles  
 
@@ -27,7 +27,7 @@ Adhering to these Addons Catalog Developer Policies should help you make choices
 
 Your Extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your Extensions to the world.  
 
-If you have feedback regarding the Policies, please let us know by commenting in the [Windows Store forum](https://go.microsoft.com/fwlink/p/?LinkId=224196).  We consider every comment.  
+If you have feedback regarding the Policies, please let us know by commenting in the [Windows Store forum][MicrosoftWindowsDevCenterForumsWindowsStore].  We consider every comment.  
 
 ## 1. Product Policies  
 
@@ -78,11 +78,11 @@ Your Extension must not jeopardize or compromise user security, or the security 
 #### 1.2.1 Content Security Policies  
 
 > [!NOTE]
-> If you make any changes to your Extension beyond the described functionality, any changes to code must be compliant with the [Chrome content security policies](https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-remote-script).  Example: Your Extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.  
+> If you make any changes to your Extension beyond the described functionality, any changes to code must be compliant with the [Chrome content security policies][GoogleChromeContentSecurityPolicyRemoteScript].  Example: Your Extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.  
 
 #### 1.2.2 Unwanted and Malicious Software  
 
-Your Extension must not contain or enable malware as defined by the Microsoft criteria for [Unwanted and Malicious Software](https://go.microsoft.com/fwlink/?LinkId=821298).  
+Your Extension must not contain or enable malware as defined by the Microsoft criteria for [Unwanted and Malicious Software][MicrosoftIdentifiesMalwareUnwantedApplications].  
 
 #### 1.2.3 Dependency on other software  
 
@@ -218,8 +218,8 @@ The primary content of your Extension must not be advertising, and advertising m
 
 #### 1.10.2 Policies and Agreements  
 
-Any advertising content your Extension displays must adhere to [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies).  
-If your Extension displays ads, all content displayed must conform to the advertising requirements of the [App Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and this Policy.  
+Any advertising content your Extension displays must adhere to [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies].  
+If your Extension displays ads, all content displayed must conform to the advertising requirements of the [App Developer Agreement][MicrosoftAppDeveloperAgreement] and this Policy.  
 
 #### 1.10.3 Quality of advertising  
 
@@ -228,7 +228,7 @@ If your Extension displays ads, all content displayed must conform to the advert
 
 #### 1.10.4 Promotions  
 
-If you purchase or create promotional ad campaigns to promote your Extensions through the ad campaign functionality in [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs) and [Microsoft Creative Acceptance Policy](https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies).  
+If you purchase or create promotional ad campaigns to promote your Extensions through the ad campaign functionality in [Partner Center][MicrosoftPartnerCenter], all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy][MicrosoftAdvertisingCreativeSpecifications] and [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies].  
 
 #### 1.10.5 Notifying Users of Opt-Out for Interest-Based Advertising  
 
@@ -236,7 +236,7 @@ Your privacy statement or terms of use must let users know you plan to send Pers
 
 #### 1.10.6 Other guidelines  
 
-If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act](https://go.microsoft.com/fwlink/p/?LinkID=623015); you must notify Microsoft of this fact in [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798) and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
+If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center][MicrosoftPartnerCenter] and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
 
 ## 2 Content Policies  
 
@@ -309,7 +309,7 @@ Content that is offensive in any country/region to which your Extension is targe
 
 #### 2.12.1 Mature Content  
 
-When you submit your Extension to [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798), you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
+When you submit your Extension to [Partner Center][MicrosoftPartnerCenter], you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
 
 #### 2.12.2 Ratings Change  
 
@@ -317,4 +317,20 @@ If your Extension provides content \(such as user-generated, retail, or other we
 
 ### 2.13 Videos  
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [https://support.google.com/youtube/answer/2531367?hl=en&ref_topic=7072227](https://support.google.com/youtube/answer/2531367?hl=en&ref_topic=7072227) and [https://support.google.com/youtube/answer/132596?hl=en](https://support.google.com/youtube/answer/132596?hl=en).  
+If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [https://support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [https://support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
+
+<!-- image links -->  
+
+<!-- links -->  
+
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
+[MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
+
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
+[FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"  
+[GoogleChromeContentSecurityPolicyRemoteScript]: https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-remote-script "Remote Script - Content Security Policy (CSP) - Google Chrome"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons "Partner Center"  
+[MicrosoftWindowsDevCenterForumsWindowsStore]: https://social.msdn.microsoft.com/Forums/windowsapps/home?forum=windowsstore "Msdn Forums - Publishing Windows Store apps"  
+[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
+[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
