@@ -75,7 +75,6 @@ Extension properties
 *  [Extension Rating](#extension-rating)  
 
 > ### Category  
-> 
 > Listing your Extension in the right category helps users find your Extension easily and understand more about it.  Select a Category that best describes your Extension.  
 > **Possible Values**:  
 > *   `Accessibility`  
@@ -89,51 +88,41 @@ Extension properties
 > *   `Shopping`  
 > *   `Social & Communication`  
 > *   `Sports`  
-> 
 
 > ### Privacy policy requirements  
-> 
 > Indicate whether your Extension accesses, collects, or transmits any personal information.  
-> 
 > > [!NOTE]
 > > If your Extension requires a privacy policy and you have not provided one, your submission may fail certification.  
+> > 
 > 
 > **Possible Values**:  
 > *   `No`: A privacy policy URL is optional.  
 > *   `Yes`:  A privacy policy URL is required.  
-> 
 
 > ### Privacy policy URL  
-> 
 > You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if required.  You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.  
 > To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 > **Possible Values**:  
 > *   `{url}`  
-> 
 
 > ### Website URL  
-> 
 > This property is Optional.  
 > The URL of the web page for your Extension.  This URL must point to a page on your own website, not the web listing for your Extension in Microsoft Edge Addons.  
 > **Possible Values**:  
 > *   `{url}`  
-> 
 
 > ### Support URL/email address  
-> 
 > This property is Optional.  
 > The URL of the web page where users go for support with your Extension, or an email address to contact you for support.  You include support information for all submissions, so that your users know how to get support if they need it.  
 > **Possible Values**:  
 > *   `{email_address}`  
 > *   `{url}`  
-> 
 
 > ### Extension Rating  
 > Extension rating helps us determine the age of the target audience of your Extension.  
 > To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 > **Possible Values**:  
 > *   Mature \(checkbox\): Check this box if your Extension contains any mature content.  If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.  
-> 
 
 Click **Save** to proceed to listing section.  
 
@@ -153,11 +142,8 @@ Store Listing fields
 *   [Search terms](#search-terms)
 
 > ### Store listing languages  
-> 
 > If your Extension package supports multiple languages, your Extension must have a listing page for each one.  
-> 
 > You must complete listing details \(text description, images, and so on\) for each language separately even if you are using the same content for each language.  If your Extension is localized in more than one language, those languages are displayed at the top of listing page.  
-> 
 > 1.  Select any one language name from **Languages** drop-down list.  
 > 1.  Fill the listing details.  
 > 1.  Click **Save**.  
@@ -165,17 +151,18 @@ Store Listing fields
 > 
 > > [!NOTE]
 > > To add or remove languages for your listing in Microsoft Edge Addons, you must modify the list of languages supported by your Extension package and re-upload it.  
+> > 
 > 
 > **Possible Values**:  
 > *   `English (United States)`: This is the default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
 > *   `{language}` \(`{Country}`\)  
-> 
 
 > ### Store display name  
 > The name of Extension as mentioned in your Extension package manifest.  
 > 
 > > [!NOTE]
 > > To edit the name, you must update the manifest in your Extension package and re-upload it.  
+> > 
 > 
 
 > ### Description  
@@ -184,10 +171,8 @@ Store Listing fields
 > The description for your users of what your Extension does.  
 > **Possible values**:  
 > *   {plain_text}: Less than 10,000 characters.  
-> 
 
 > ### Store logo  
-> 
 > This field is required.  
 > A 1:1 image for your Extension logo.  
 > **Possible values**:  
@@ -196,15 +181,12 @@ Store Listing fields
 > *   300px x 300px, PNG \(.png\):  The recommended size.  
 
 > ### Small promotional tile  
-> 
 > This field is required.  
 > A small size promotional tile.  Your listing is displayed on this tile.  
 > **Possible values**:  
 > *   440px x 280x, PNG \(.png\)  
-> 
 
 > ### Media  
-> 
 > This field is optional.  
 > You should provide these assets to help display your product more effectively.  
 > *   Screenshots  
@@ -213,31 +195,27 @@ Store Listing fields
 >     A large promotional tile to be feature your Extension more prominently in Microsoft Edge Addons.  
 > *   YouTube video URL  
 >     A valid [YouTube video URL for your Extension][MicrosoftEdgeAddonsUploadYouTubeVideo].  Your video should be good quality and minimal length.  Your YouTube video must pass certification before publishing your Extension in Microsoft Edge Addons.  Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
-> 
 > **Possible values**:  
 > *   10 Screenshots maximum.  
 >     *   640px x 480px, PNG \(.png\): Screenshots.  
 >     *   1280px x 800px, PNG \(.png\): Screenshots.  
 > *   1400px x 560px, PNG \(.png\):  Large promotion tiles.  
 > *   60 seconds or shorter and 2GB or smaller, YouTube video URL.  
-> 
 
 > ### Short description  
-> 
 > A short, catchy description that may be used at the top of the listing for your product.  If not provided, the first few lines from your longer description are used instead.  Because your description also appears below this text, you should provide a short description with different text so that your listing is less repetitive.  The Short description of your Extension is picked directly from the manifest file of your package.  
 > 
 > > [!NOTE]
 > > To edit the short description, you must update the manifest in your Extension package and re-upload it.  
+> > 
 > 
 
 > ### Search terms  
-> 
 > Search terms are single words or short phrases that are not displayed to users but help make your Extension discoverable in Microsoft Edge Addons when users search using those terms.  
 > **Requirements**:  
 > *   7 or fewer search terms  
 > *   30 or fewer characters per search term  
 > *   21 or fewer words for combined search terms  
-> 
 
 Click **Save** to proceed to save your listing section.  Click **Publish** to provide submission details.  
 
