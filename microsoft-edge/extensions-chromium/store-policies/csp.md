@@ -189,7 +189,7 @@ Download the file, include it in your package, and write:
 
 As of Chrome 46, -->  
 
-Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm \(sha256, sha384 or sha512\).  See [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2] for an example.  
+Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm \(sha256, sha384 or sha512\).  See [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] for an example.  
 
 **Remote Script**  
 
@@ -284,7 +284,7 @@ Thus, depending on how you write DOM injected scripts in your Extension, changes
 
 [HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "An Introduction to Content Security Policy - HTML5 Rocks"  
 [PublicSuffixList]: https://publicsuffix.org/list "VIEW THE PUBLIC SUFFIX LIST"  
-[W3CContentSecurityPolicyLevel2]: https://www.w3.org/TR/CSP2 "Content Security Policy Level 2"  
+[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash usage for \<script\> elements - Content Security Policy Level 2"  
 [W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Content Security Policy Level 3"  
 [WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-middle attack - Wikipedia"  
 
