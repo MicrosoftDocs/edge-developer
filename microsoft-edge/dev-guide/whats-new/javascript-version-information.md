@@ -11,7 +11,7 @@ ms.custom: seodec18
 ---
 # JavaScript Version Information  
 
-JavaScript support varies across Microsoft Edge, Microsoft Store apps, and different document modes of Internet Explorer. For more information about IE document code versioning, see [*Defining Document Compatibility*](http://go.microsoft.com/fwlink/p/?LinkId=208537).  
+JavaScript support varies across Microsoft Edge, Microsoft Store apps, and different document modes of Internet Explorer. For more information about IE document code versioning, see [*Defining Document Compatibility*](https://go.microsoft.com/fwlink/p/?LinkId=208537).  
 
 The following table summarizes the JavaScript support across Internet Explorer, Microsoft Edge, and Microsoft Store apps.  
   
@@ -277,7 +277,7 @@ The following table summarizes the JavaScript support across Internet Explorer, 
 | [reduceRight Method](/scripting/javascript/reference/reduceright-method-array-javascript) | N | N | Y | Y | Y | Y | Y |  
 | [RegExp Object](/scripting/javascript/reference/regexp-object-javascript) | Y | Y | Y | Y | Y | Y | Y |  
 | [Regular Expression Object](/scripting/javascript/reference/regular-expression-object-javascript) | Y | Y | Y | Y | Y | Y | Y |  
-| [Regular Expression Syntax](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e) | Y | Y | Y | Y | Y | Y | Y |  
+| [Regular Expression Syntax](https://msdn.microsoft.com/ab0766e1-7037-45ed-aa23-706f58358c0e) | Y | Y | Y | Y | Y | Y | Y |  
 | [Regular Expression /y flag](/scripting/javascript/reference/regular-expression-object-javascript) | N | N | N | N | N | Exp. | v8.1: N <br /> v10: Exp. |  
 | [repeat Method (String)](/scripting/javascript/reference/repeat-method-string-javascript) | N | N | N | N | N | Y | v8.1: N <br /> v10: Y |  
 | [replace Method](/scripting/javascript/reference/replace-method-string-javascript) | Y | Y | Y | Y | Y | Y | Y |  
