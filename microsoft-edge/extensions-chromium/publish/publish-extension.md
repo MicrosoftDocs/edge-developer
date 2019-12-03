@@ -101,6 +101,7 @@ Extension properties
 > *   `Shopping`  
 > *   `Social & Communication`  
 > *   `Sports`  
+> 
 
 > ### Privacy policy requirements  
 > 
@@ -112,6 +113,7 @@ Extension properties
 > **Possible Values**:  
 > *   `No`: A privacy policy URL is optional.  
 > *   `Yes`:  A privacy policy URL is required.  
+> 
 
 > ### Privacy policy URL  
 > 
@@ -119,6 +121,7 @@ Extension properties
 > To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and the [Microsoft Edge Addons Catalog Developer Policies document](../store-policies/developer-policies.md).  
 > **Possible Values**:  
 > *   `{url}`  
+> 
 
 > ### Website URL  
 > 
@@ -126,6 +129,7 @@ Extension properties
 > The URL of the web page for your Extension.  This URL must point to a page on your own website, not the web listing for your Extension in Edge Addons.  
 > **Possible Values**:  
 > *   `{url}`  
+> 
 
 > ### Support URL/email address  
 > 
@@ -134,12 +138,14 @@ Extension properties
 > **Possible Values**:  
 > *   `{email_address}`  
 > *   `{url}`  
+> 
 
 > ### Extension Rating  
 > Extension rating helps us determine the age of the target audience of your Extension.  
 > To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document](../store-policies/developer-policies.md).  
 > **Possible Values**:  
-> *  Mature \(checkbox\): Check this box if your Extension contains any mature content.  If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.  
+> *   Mature \(checkbox\): Check this box if your Extension contains any mature content.  If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.  
+> 
 
 Click **Save** to proceed to listing section.  
 
@@ -188,6 +194,7 @@ Store Listing fields
 > **Possible Values**:  
 > *   `English (United States)`: Default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
 > *   `{language}` \(`{Country}`\)  
+> 
 
 > ### Store display name  
 > The name of Extension as mentioned in your Extension package manifest.  
@@ -202,6 +209,7 @@ Store Listing fields
 > The description for your users of what your Extension does.  
 > **Possible values**:  
 > *   {plain_text}: Less than 10,000 characters.  
+> 
 
 > ### Store logo  
 > 
@@ -218,6 +226,7 @@ Store Listing fields
 > A small size promotional tile.  Your listing is displayed on this tile.  
 > **Possible values**:  
 > *   440px x 280x, PNG \(.png\)  
+> 
 
 > ### Media  
 > 
@@ -236,6 +245,7 @@ Store Listing fields
 >     *   1280px x 800px, PNG \(.png\): Screenshots.  
 > *   1400px x 560px, PNG \(.png\):  Large promotion tiles.  
 > *   60 seconds or shorter and 2GB or smaller, YouTube video URL.  
+> 
 
 > ### Short description  
 > 
@@ -252,6 +262,7 @@ Store Listing fields
 > *   7 or fewer search terms  
 > *   30 or fewer characters per search term  
 > *   21 or fewer words for combined search terms  
+> 
 
 Click **Save** to proceed to save your listing section.  Click **Publish** to provide submission details.  
 
