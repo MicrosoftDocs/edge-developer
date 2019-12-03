@@ -83,7 +83,7 @@ Extension properties
 *  [Privacy policy requirements](#privacy-policy-requirements)  
 *  [Privacy policy URL](#privacy-policy-url)  
 *  [Website URL](#website-url)  
-*  [Support URL/email address](#support-url-email-address)  
+*  [Support URL/email address](#support-urlemail-address)  
 *  [Extension Rating](#extension-rating)  
 
 > ### Category  
