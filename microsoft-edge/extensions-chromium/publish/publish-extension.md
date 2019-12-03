@@ -1,6 +1,6 @@
 ---
 description: Step-wise process to publish Edge (Chromium) Extensions to Microsoft Store.
-title: Microsoft Edge (Chromium) Extensions
+title: Publish An Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/03/2019
@@ -91,10 +91,7 @@ Extension properties
 
 > ### Privacy policy requirements  
 > Indicate whether your Extension accesses, collects, or transmits any personal information.  
-> > [!NOTE]
-> > If your Extension requires a privacy policy and you have not provided one, your submission may fail certification.  
-> > 
-> 
+> **NOTE**:  If your Extension requires a privacy policy and you have not provided one, your submission may fail certification.  
 > **Possible Values**:  
 > *   `No`: A privacy policy URL is optional.  
 > *   `Yes`:  A privacy policy URL is required.  
@@ -148,20 +145,14 @@ Store Listing fields
 > 1.  Fill the listing details.  
 > 1.  Click **Save**.  
 > 1.  Repeat for all of your supported languages.  
-> 
-> > [!NOTE]
-> > To add or remove languages for your listing in Microsoft Edge Addons, you must modify the list of languages supported by your Extension package and re-upload it.  
-> > 
-> 
+> **NOTE**:  To add or remove languages for your listing in Microsoft Edge Addons, you must modify the list of languages supported by your Extension package and re-upload it.  
 > **Possible Values**:  
 > *   `English (United States)`: This is the default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
 > *   `{language}` \(`{Country}`\)  
 
 > ### Store display name  
 > The name of Extension as mentioned in your Extension package manifest.  
-> 
-> > [!NOTE]
-> > To edit the name, you must update the manifest in your Extension package and re-upload it.  
+> **NOTE**:  To edit the name, you must update the manifest in your Extension package and re-upload it.  
 > > 
 > 
 
@@ -203,12 +194,11 @@ Store Listing fields
 > *   60 seconds or shorter and 2GB or smaller, YouTube video URL.  
 
 > ### Short description  
+> This field is optional.  
 > A short, catchy description that may be used at the top of the listing for your product.  If not provided, the first few lines from your longer description are used instead.  Because your description also appears below this text, you should provide a short description with different text so that your listing is less repetitive.  The Short description of your Extension is picked directly from the manifest file of your package.  
-> 
-> > [!NOTE]
-> > To edit the short description, you must update the manifest in your Extension package and re-upload it.  
-> > 
-> 
+> **NOTE**:  To edit the short description, you must update the manifest in your Extension package and re-upload it.  
+> **Possible values**:  
+> *   {plain_text}  
 
 > ### Search terms  
 > Search terms are single words or short phrases that are not displayed to users but help make your Extension discoverable in Microsoft Edge Addons when users search using those terms.  
