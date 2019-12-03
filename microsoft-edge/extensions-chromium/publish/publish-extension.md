@@ -11,11 +11,11 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 # Publish An Extension  
 
-Publish your Extension on Microsoft Edge Addons catalog \(Edge Addons\).  You must first create a submission on [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798) and submit it.  This document lists all the details that you need to provide to create an Extension submission.  
+Publish your Extension on Microsoft Edge Addons catalog \(Edge Addons\).  You must first create a submission on [Partner Center][MicrosoftPartnerCenter] and submit it.  This document lists all the details that you need to provide to create an Extension submission.  
 
 ## Before You Begin  
 
-*   You must have an active developer account on [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798) to submit your Extension in Edge Addons.  If you do not have one, create a new developer account.  
+*   You must have an active developer account on [Partner Center][MicrosoftPartnerCenter] to submit your Extension in Edge Addons.  If you do not have one, create a new developer account.  
 
 *   Create a zip file of your Extension package and ensure that it contains these files:  
     *   The manifest file and it must define the name and version of your Extension.  
@@ -26,11 +26,11 @@ Publish your Extension on Microsoft Edge Addons catalog \(Edge Addons\).  You mu
 
 If you have not started building an Extension, you may refer **Getting Started** tutorial for building a Microsoft Edge Chromium extension.  
 
-To create an Extension submission on [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798), follow these steps.  
+To create an Extension submission on [Partner Center][MicrosoftPartnerCenter], follow these steps.  
 
 ## Step 1: Start a New Submission  
 
-Go to your [developer dashboard](https://go.microsoft.com/fwlink/?linkid=2099798).  From the Overview page \(as shown below\), click **Create new extension**.  
+Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Overview page \(as shown below\), click **Create new extension**.  
 
 ## Step 2: Upload Your Extension Zip File  
 
@@ -72,7 +72,7 @@ Click **Save** to proceed to **Properties** section.
 |:--- |:--- |:--- |  
 | Category | Listing your Extension in the right category helps users find your Extension easily and understand more about it.  Select a Category that best describes your Extension | <ul> <li>Accessibility</li> <li>Blogging</li> <li>Developer Tools</li> <li>Fun</li> <li>News & Weather</li> <li>Photos</li> <li>Productivity</li> <li>Search Tools</li> <li>Shopping</li> <li>Social & Communication</li> <li>Sports</li> </ul> |  
 | Privacy policy requirements | In this section, you must indicate whether your Extension accesses, collects, or transmits any personal information.  If you answer "`Yes`", a privacy policy URL is required.  Otherwise, it is optional \(though if we determine that your Extension requires a privacy policy, and you have not provided one, your submission may fail certification\) | <ul> <li>Yes</li> <li>No</li> </ul> |  
-| Privacy policy URL | You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL here, if required.  You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.  <br /> To help you determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and the Microsoft Edge Addons Catalog Developer Policies document | {url} |  
+| Privacy policy URL | You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL here, if required.  You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.  <br /> To help you determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and the Microsoft Edge Addons Catalog Developer Policies document | {url} |  
 | Website URL | **Optional**.  Enter the URL of the web page for your Extension.  This URL must point to a page on your own website, not the web listing of your Extension in Edge Addons | {url} |  
 | Support URL/email address | **Optional**.  Enter the URL of the web page where users go for support with your Extension, or an email address to contact you for support.  We recommend you include support information for all submissions, so that your users know how to get support if they need it | {email_address} |  
 | Extension Rating | Extension rating helps us determine the age of the target audience of your Extension.  Check this box if your Extension contains any mature content.  If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.  To help you determine if your Extensions has a mature content, review the Microsoft Edge Addons Catalog Developer Policies document | [checkbox] |  
@@ -118,7 +118,7 @@ Extension properties
 > ### Privacy policy URL  
 > 
 > You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if required.  You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.  
-> To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and the [Microsoft Edge Addons Catalog Developer Policies document](../store-policies/developer-policies.md).  
+> To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 > **Possible Values**:  
 > *   `{url}`  
 > 
@@ -142,7 +142,7 @@ Extension properties
 
 > ### Extension Rating  
 > Extension rating helps us determine the age of the target audience of your Extension.  
-> To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document](../store-policies/developer-policies.md).  
+> To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 > **Possible Values**:  
 > *   Mature \(checkbox\): Check this box if your Extension contains any mature content.  If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.  
 > 
@@ -161,7 +161,7 @@ This is the information that users see when viewing your listing in Edge Addons.
 | Description | **Required**.  You use the description field to describe to your users what your Extension does.  This field accepts up to 10,000 characters of plain text.  | {less than 10,000 characters} |  
 | Store logo | **Required**.  A 1:1 image for your Extension logo.  | <ul> <li>PNG \(.png\)</li><li>128px x 128px, 150px x 150px, or 300px x 300px \(recommended\)</li></ul> |  
 | Small promotional tile | **Required**.  A small size promotional tile.  Your listing is displayed on this tile.  | <ul><li>PNG \(.png\)</li><li>440px x 280px</li</ul> |  
-| Media | **Optional**.  We recommend you provide these images to help display your product more effectively.  <ul><li><dl><dt>Screenshots</dt><dd>The images of your Extension that describe what your Extension does</dd></dl></li><li><dl><dt>Large promotion tiles</dt><dd>A large promotional tile to be feature your Extension more prominently in Edge Addons</dd></dl></li><li><dl><dt>YouTube video URL</dt><dd>A valid YouTube video URL for your Extension (visit https://docs.microsoft.com/microsoft-edge/extensions-chromium/host-youtube-video).  Video should be good quality and minimal length.  Like the other fields on the listing page, the YouTube video must pass certification before publishing your Extension in Edge Addons.  Be sure that the YouTube video complies with the Microsoft Edge Addons Catalog Developer Policies document.</dd></dl></li></ul> | <ul><li>Screenshots<ul><li>10 images maximum</li><li>640px x 480px or 1280px x 800px</li></ul><li>Large promotion tiles<ul><li>PNG \(.png\)</li><li>1400px x 560px</li></ul></li><li>YouTube video URL<ul><li>60 seconds or shorter in length</li><li>2GB or smaller in size</li></ul></li></ul> |  
+| Media | **Optional**.  We recommend you provide these images to help display your product more effectively.  <ul><li><dl><dt>Screenshots</dt><dd>The images of your Extension that describe what your Extension does</dd></dl></li><li><dl><dt>Large promotion tiles</dt><dd>A large promotional tile to be feature your Extension more prominently in Edge Addons</dd></dl></li><li><dl><dt>YouTube video URL</dt><dd>A valid YouTube video URL for your Extension (visit /microsoft-edge/extensions-chromium/host-youtube-video).  Video should be good quality and minimal length.  Like the other fields on the listing page, the YouTube video must pass certification before publishing your Extension in Edge Addons.  Be sure that the YouTube video complies with the Microsoft Edge Addons Catalog Developer Policies document.</dd></dl></li></ul> | <ul><li>Screenshots<ul><li>10 images maximum</li><li>640px x 480px or 1280px x 800px</li></ul><li>Large promotion tiles<ul><li>PNG \(.png\)</li><li>1400px x 560px</li></ul></li><li>YouTube video URL<ul><li>60 seconds or shorter in length</li><li>2GB or smaller in size</li></ul></li></ul> |  
 | Short description | It is a short, catchy description that may be used at the top of the listing for your product.  If not provided, the first few lines from your longer description are used instead.  Because your description also appears below this text, we recommend providing a short description with different text so that your listing is less repetitive.  The Short description of your Extension is picked directly from the manifest file of your package.  To edit this, you must edit it in manifest and upload the Package again under Package section of the submission.  | |  
 | Search terms | Search terms are single words or short phrases that are not displayed to users but help make your Extension discoverable in Edge Addons when users search using those terms.  | <ul><li>7 or fewer search terms</li><li>30 or fewer characters per search term</li><li>21 or fewer words for combined search terms</li></ul> |  
 -->  
@@ -192,7 +192,7 @@ Store Listing fields
 > > To add or remove languages for your listing in Edge Addons, you must modify the list of languages supported by your Extension package and re-upload it.  
 > 
 > **Possible Values**:  
-> *   `English (United States)`: Default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
+> *   `English (United States)`: This is the default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
 > *   `{language}` \(`{Country}`\)  
 > 
 
@@ -237,7 +237,7 @@ Store Listing fields
 > *   Large promotion tiles  
 >     A large promotional tile to be feature your Extension more prominently in Edge Addons.  
 > *   YouTube video URL  
->     A valid [YouTube video URL for your Extension](upload-video.md).  Your video should be good quality and minimal length.  Your YouTube video must pass certification before publishing your Extension in Edge Addons.  Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document](../store-policies/developer-policies.md).  
+>     A valid [YouTube video URL for your Extension][MicrosoftEdgeAddonsUploadYouTubeVideo].  Your video should be good quality and minimal length.  Your YouTube video must pass certification before publishing your Extension in Edge Addons.  Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 > 
 > **Possible values**:  
 > *   10 Screenshots maximum.  
@@ -252,7 +252,7 @@ Store Listing fields
 > A short, catchy description that may be used at the top of the listing for your product.  If not provided, the first few lines from your longer description are used instead.  Because your description also appears below this text, you should provide a short description with different text so that your listing is less repetitive.  The Short description of your Extension is picked directly from the manifest file of your package.  
 > 
 > > [!NOTE]
-> >To edit the short description, you must update the manifest in your Extension package and re-upload it.  
+> > To edit the short description, you must update the manifest in your Extension package and re-upload it.  
 > 
 
 > ### Search terms  
@@ -297,3 +297,14 @@ Make sure to include the following \(if applicable for your Extension\):
 After completing the above details, click **Publish** to submit your Extension in Edge Addons.  
 
 When you finish creating the submission for your Extension and click **Publish**, the submission enters the certification step.  This process usually is completed within a couple of days, though in some cases it may take up to 7 business days.  After your submission passes certification, your Extension is published in Edge Addons unless you selected the Publishing hold options to specify that it should not be released until a certain date.  You are notified when your submission is published, and the status of your Extension in the dashboard changes to **In the Store**.  
+
+<!-- image links -->  
+
+<!-- links -->  
+
+[MicrosoftEdgeAddonsUploadYouTubeVideo]: upload-video.md "Upload A YouTube Video | Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
+
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
+
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons "Partner Center"  
