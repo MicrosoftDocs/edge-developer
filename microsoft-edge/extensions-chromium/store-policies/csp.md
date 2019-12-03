@@ -66,31 +66,31 @@ The first restriction wipes out a huge class of cross-site scripting attacks by 
 ```html
 <!doctype html>
 <html>
-  <head>
-    <title>My Awesome Popup!</title>
-    <script>
-      function awesome() {
-        // do something awesome!
-      }
-
-      function totallyAwesome() {
-        // do something TOTALLY awesome!
-      }
-
-      function clickHandler(element) {
-        setTimeout("awesome(); totallyAwesome()", 1000);
-      }
-
-      function main() {
-        // Initialization work goes here.
-      }
-    </script>
-  </head>
-  <body onload="main();">
-    <button onclick="clickHandler(this)">
-      Click for awesomeness!
-    </button>
-  </body>
+    <head>
+        <title>My Awesome Pop-up!</title>
+        <script>
+            function awesome() {
+                // do something awesome!
+            }
+            
+            function totallyAwesome() {
+                // do something TOTALLY awesome!
+            }
+            
+            function clickHandler(element) {
+                setTimeout("awesome(); totallyAwesome()", 1000);
+            }
+            
+            function main() {
+                // Initialization work goes here.
+            }
+        </script>
+    </head>
+    <body onload="main();">
+        <button onclick="clickHandler(this)">
+            Click for awesomeness!
+        </button>
+    </body>
 </html>
 ```  
 
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <!doctype html>
 <html>
     <head>
-        <title>My Awesome Popup!</title>
+        <title>My Awesome Pop-up!</title>
         <script src="popup.js"></script>
     </head>
     <body>
@@ -157,7 +157,7 @@ Instead of writing code that depends on jQuery \(or any other library\) loading 
 <!doctype html>
 <html>
     <head>
-        <title>My Awesome Popup!</title>
+        <title>My Awesome Pop-up!</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     </head>
     <body>
@@ -171,13 +171,13 @@ Download the file, include it in your package, and write:
 ```html
 <!doctype html>
 <html>
-  <head>
-    <title>My Awesome Popup!</title>
-    <script src="jquery.min.js"></script>
-  </head>
-  <body>
-    <button>Click for awesomeness!</button>
-  </body>
+    <head>
+        <title>My Awesome Pop-up!</title>
+        <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <button>Click for awesomeness!</button>
+    </body>
 </html>
 ```  
 
@@ -238,7 +238,7 @@ Content scripts are generally not subject to the CSP of the Extension.  Since co
 DOM injected scripts that run immediately upon injection into the page runs as you may expect.  Imagine a content script with the following code as a simple example:  
 
 ```javascript
- document.write("<script>alert(1);</script>");
+document.write("<script>alert(1);</script>");
  ```  
 
 This content script causes an `alert` immediately upon the `document.write()`.  Note that this runs regardless of the policy a page may specify.
@@ -262,20 +262,20 @@ button.onclick = function() {
 Another similar issue arises if the content script runs the following:  
 
 ```javascript
-  var script = document.createElement('script');
-    script.innerHTML = 'alert(1);'
-    document.getElementById('body').appendChild(script);
+var script = document.createElement('script');
+script.innerHTML = 'alert(1);'
+document.getElementById('body').appendChild(script);
 ```  
 
 In this case, the script runs and the alert displays.  However, take this case:  
 
 ```javascript
-    var script = document.createElement('script');
-    script.innerHTML = 'eval("alert(1);")';
-    document.getElementById('body').appendChild(script);
+var script = document.createElement('script');
+script.innerHTML = 'eval("alert(1);")';
+=document.getElementById('body').appendChild(script);
 ```  
 
-While the initial script runs, the call to eval is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.  
+While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.  
 Thus, depending on how you write DOM injected scripts in your Extension, changes to the CSP of the page may affect the behavior of your Extension.  Since content scripts are not affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script rather than DOM injected scripts.  
 
 <!-- image links -->  
