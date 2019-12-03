@@ -1,9 +1,9 @@
 ---
 description: Guide on how to upload YouTube video for extension submission.
-title: Microsoft Edge (Chromium) Extensions
+title: Upload A YouTube Video
 author: MSEdgeTeam
-ms.author: shahina
-ms.date: 11/08/2019
+ms.author: msedgedevrel
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer
@@ -11,17 +11,28 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 # Upload A YouTube Video  
 
-Submit a promotional YouTube video your listing in the Microsoft Edge Addons catalog (Edge Addons). You may upload your YouTube promotional video in Edge Addons listing page of your Extension submission on [Partner Center](https://go.microsoft.com/fwlink/?linkid=2099798). This video is displayed on your product page in Edge Addons.  
+Submit a promotional YouTube video your listing in the Microsoft Edge Addons catalog \(Edge Addons\).  You may upload your YouTube promotional video in Edge Addons listing page of your Extension submission on [Partner Center][MicrosoftPartnerCenter].  This video is displayed on your product page in Edge Addons.  
 
 ## Before you begin  
 
 1.	Be sure that the content of YouTube video complies with the Microsoft Edge Addons Catalog Developer Policies document.  You must pass certification before publishing your Extension in Edge Addons.  
-2.	Disable advertisements for the video which you want to embed (visit https://support.google.com/youtube/answer/2531367?hl=en&ref_topic=7072227 and https://support.google.com/youtube/answer/132596?hl=en).  
-3.	Turn on embedding for your videos (visit https://support.google.com/youtube/answer/171780?hl=en).  
+2.	Disable advertisements for the video which you want to embed.  For more information about how ads are enabled and disabled on YouTube, see the [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596] pages.  
+3.	Turn on embedding for your videos.  For more information about embedding YouTube videos, see the [Embed videos \& playlists][GoogleYoutubeAnswer171780] page.  
 
 ## Submit YouTube URL in your listing  
 
 Use the following procedures to upload YouTube video:  
+
 1.	Locate your video which you want to add to your listing in Edge Addons on YouTube.  
 2.	Under your video, click **Share > Embed**.  Copy the HTML code which appears in the box.  
-3.	Paste this HTML code in the **YouTube URL** field on your Listing page.  
+3.	Paste this HTML code in the **YouTube URL** field on your **Listing** page.  
+
+<!-- image links -->  
+
+<!-- links -->  
+
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
+[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos \& playlists - YouTube Help"  
+
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons "Partner Center"  
