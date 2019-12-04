@@ -78,7 +78,7 @@ Extension properties
 
 Listing your Extension in the right category helps users find your Extension easily and understand more about it.  Select a Category that best describes your Extension.  
 
-#### Possible Values:  
+**Possible Values**:  
 
 *   `Accessibility`  
 *   `Blogging`  
@@ -99,7 +99,7 @@ Indicate whether your Extension accesses, collects, or transmits any personal in
 > [!NOTE]
 > If your Extension requires a privacy policy and you have not provided one, your submission may fail certification.  
 
-#### Possible Values:  
+**Possible Values**:  
 
 *   `No`: A privacy policy URL is optional.  
 *   `Yes`:  A privacy policy URL is required.  
@@ -109,7 +109,7 @@ Indicate whether your Extension accesses, collects, or transmits any personal in
 You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if required.  You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.  
 To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 
-#### Possible values  
+**Possible Values**:  
 
 *   `{url}`  
 
@@ -118,7 +118,7 @@ To determine if your Extension requires a privacy policy, review the [Microsoft 
 This property is Optional.  
 The URL of the web page for your Extension.  This URL must point to a page on your own website, not the web listing for your Extension in Microsoft Edge Addons.  
 
-#### Possible values  
+**Possible Values**:  
 
 *   `{url}`  
 
@@ -127,7 +127,7 @@ The URL of the web page for your Extension.  This URL must point to a page on yo
 This property is Optional.  
 The URL of the web page where users go for support with your Extension, or an email address to contact you for support.  You include support information for all submissions, so that your users know how to get support if they need it.  
 
-#### Possible values  
+**Possible Values**:  
 
 *   `{email_address}`  
 *   `{url}`  
@@ -137,7 +137,7 @@ The URL of the web page where users go for support with your Extension, or an em
 Extension rating helps us determine the age of the target audience of your Extension.  
 To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 
-#### Possible values  
+**Possible Values**:  
 
 *   Mature \(checkbox\): Check this box if your Extension contains any mature content.  If you select mature for your Extension, your listing is available with a separate tag to indicate that the Extension contains mature content.  
 
@@ -171,7 +171,7 @@ You must complete listing details \(text description, images, and so on\) for ea
 > [!NOTE]
 > To add or remove languages for your listing in Microsoft Edge Addons, you must modify the list of languages supported by your Extension package and re-upload it.  
 
-#### Possible Values:  
+**Possible Values**:  
 
 *   `English (United States)`: This is the default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
 *   `{language}` \(`{Country}`\)  
@@ -188,7 +188,7 @@ The name of Extension as mentioned in your Extension package manifest.
 This field is required.  
 The description for your users of what your Extension does.  
 
-#### Possible values  
+**Possible Values**:  
 
 *   {plain_text}: Less than 10,000 characters.  
 
@@ -197,7 +197,7 @@ The description for your users of what your Extension does.
 This field is required.  
 A 1:1 image for your Extension logo.  
 
-#### Possible values  
+**Possible Values**:  
 
 *   128px x 128px, PNG \(.png\)  
 *   150px x 140px, PNG \(.png\)  
@@ -208,7 +208,8 @@ A 1:1 image for your Extension logo.
 This field is required.  
 A small size promotional tile.  Your listing is displayed on this tile.  
 
-#### Possible values:  
+**Possible Values**:  
+
 *   440px x 280x, PNG \(.png\)  
 
 ### Media  
@@ -222,7 +223,8 @@ You should provide these assets to help display your product more effectively.
 *   YouTube video URL  
     A valid [YouTube video URL for your Extension][MicrosoftEdgeAddonsUploadYouTubeVideo].  Your video should be good quality and minimal length.  Your YouTube video must pass certification before publishing your Extension in Microsoft Edge Addons.  Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 
-#### Possible Values:  
+**Possible Values**:  
+
 *   10 Screenshots maximum.  
     *   640px x 480px, PNG \(.png\): Screenshots.  
     *   1280px x 800px, PNG \(.png\): Screenshots.  
@@ -240,7 +242,7 @@ A short, catchy description that may be used at the top of the listing for your 
 
 Search terms are single words or short phrases that are not displayed to users but help make your Extension discoverable in Microsoft Edge Addons when users search using those terms.  
 
-#### Requirements:  
+**Requirements**:  
 
 *   7 or fewer search terms  
 *   30 or fewer characters per search term  
