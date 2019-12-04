@@ -13,7 +13,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You must first create a submission on [Partner Center][MicrosoftPartnerCenter] and submit it.  This document lists all the details that you need to provide to create an Extension submission.  
 
-## Before You Begin  
+**Before You Begin**  
 
 *   You must have an active developer account on [Partner Center][MicrosoftPartnerCenter] to submit your Extension in Microsoft Edge Addons.  If you do not have one, create a new developer account.  
 *   Create a zip file of your Extension package and ensure that it contains these files:  
@@ -155,7 +155,6 @@ Store Listing fields
 > ##### Store listing languages  
 > 
 > If your Extension package supports multiple languages, your Extension must have a listing page for each one.  
-> 
 > You must complete listing details \(text description, images, and so on\) for each language separately even if you are using the same content for each language.  If your Extension is localized in more than one language, those languages are displayed at the top of listing page.  
 > 
 > 1.  Select any one language name from **Languages** drop-down list.  
