@@ -1,17 +1,17 @@
 ---
 description: Step-wise process to publish Edge (Chromium) Extensions to Microsoft Store.
-title: Microsoft Edge (Chromium) Extensions
+title: Publish An Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/03/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, extensions development, browser extensions, addons, partner center, developer
+keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
 ---
 
 # Publish An Extension  
 
-Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You must first create a submission on [Partner Center][MicrosoftPartnerCenter] and submit it.  This document lists all the details that you need to provide to create an Extension submission.  
+Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You must first create a submission on [Partner Center][MicrosoftPartnerCenter] and submit it.  This document lists all the details that you must provide to create an Extension submission.  
 
 ## Before You Begin  
 
@@ -29,11 +29,11 @@ To create an Extension submission on [Partner Center][MicrosoftPartnerCenter], f
 
 ## Step 1: Start a New Submission  
 
-Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Overview page \(as shown below\), click **Create new extension**.  
+Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Overview page, click **Create new extension**.  
 
 ## Step 2: Upload Your Extension Zip File  
 
-The **Package** page is where you upload the zip file for your Extension submission.  You may only upload one package at a time, so if your Extension is not complete you may upload a work-in-progress package and update at any time before you publish it.  Be sure that your package contains the manifest.json file and is working fine on **Microsoft Edge** prior to uploading.  
+The **Package** page is where you upload the zip file for your Extension submission.  You may only upload one package at a time, so if your Extension is not complete you may upload a work-in-progress package and update at any time before you publish it.  Be sure that your package contains the `manifest.json` file and is working fine on **Microsoft Edge** prior to uploading.  
 Upload the package by dragging it into the upload field or by selecting **Browse your files**.  The Package page validates the Extensions zip file and displays that **success or failure status of your upload**.  If the package passes validation; it is uploaded successfully and you see a success message.  If the package fails validation; the package is not accepted and you see an error message.  If there are errors in the package, resolve the issues and try uploading it again.  
 
 After successful upload, review your Extension details and click **Next** to proceed.  
@@ -45,11 +45,10 @@ After successful upload, review your Extension details and click **Next** to
 Select a **Visibility** option to define the audience who may discover and acquire your Extension.  This gives you the option to specify whether users should find your Extension in Microsoft Edge Addons or see the listing at all.  Currently, you have two options under visibility:  
 
 *   **Public**  
-    
-    If you select **Public**, your Extension is available and discoverable to everyone in Microsoft Edge Addons.  This is the default option.  Leave this option selected if you want your Extension to be listed in Microsoft Edge Addons for users to find via searching, browsing, and the direct link of your Extension.  
+    This is the default option.  
+    If you select **Public**, your Extension is available and discoverable to everyone in Microsoft Edge Addons.  Leave this option selected if you want your Extension to be listed in Microsoft Edge Addons for users to find via searching, browsing, and the direct link of your Extension.  
 
 *   **Hidden**  
-    
     If you select Hidden, your Extension is hidden in Microsoft Edge Addons from users searching or browsing; you must share your listing URL to distribute your Extension.  Users who have the direct link to the listing may download it on Microsoft Edge \(you may find your listing URL under **Extension Overview** page of Extension submission\).  
 
 > [!NOTE]
@@ -66,7 +65,8 @@ Click **Save** to proceed to **Properties** section.
 
 ## Step 4: Select Properties for Your Extension  
 
-Extension properties  
+### Extension properties  
+
 *  [Category](#category)  
 *  [Privacy policy requirements](#privacy-policy-requirements)  
 *  [Privacy policy URL](#privacy-policy-url)  
@@ -74,7 +74,7 @@ Extension properties
 *  [Support URL/email address](#support-urlemail-address)  
 *  [Extension Rating](#extension-rating)  
 
-### Category  
+#### Category  
 
 Listing your Extension in the right category helps users find your Extension easily and understand more about it.  Select a Category that best describes your Extension.  
 
@@ -92,7 +92,7 @@ Listing your Extension in the right category helps users find your Extension eas
 *   `Social & Communication`  
 *   `Sports`  
 
-### Privacy policy requirements  
+#### Privacy policy requirements  
 
 Indicate whether your Extension accesses, collects, or transmits any personal information.  
 
@@ -101,10 +101,10 @@ Indicate whether your Extension accesses, collects, or transmits any personal in
 
 **Possible Values**:  
 
-*   `No`: A privacy policy URL is optional.  
+*   `No`:  A privacy policy URL is optional.  
 *   `Yes`:  A privacy policy URL is required.  
 
-### Privacy policy URL  
+#### Privacy policy URL  
 
 You are responsible for ensuring your Extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if required.  You must provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your Extension.  
 To determine if your Extension requires a privacy policy, review the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
@@ -113,7 +113,7 @@ To determine if your Extension requires a privacy policy, review the [Microsoft 
 
 *   `{url}`  
 
-### Website URL  
+#### Website URL  
 
 This property is Optional.  
 The URL of the web page for your Extension.  This URL must point to a page on your own website, not the web listing for your Extension in Microsoft Edge Addons.  
@@ -122,17 +122,17 @@ The URL of the web page for your Extension.  This URL must point to a page on yo
 
 *   `{url}`  
 
-### Support URL/email address  
+#### Support URL/email address  
 
 This property is Optional.  
-The URL of the web page where users go for support with your Extension, or an email address to contact you for support.  You include support information for all submissions, so that your users know how to get support if they need it.  
+The URL of the web page where users go for support with your Extension, or an email address to contact you for support.  You include support information for all submissions, so that your users know how to get support from you.  
 
 **Possible Values**:  
 
 *   `{email_address}`  
 *   `{url}`  
 
-### Extension Rating  
+#### Extension Rating  
 
 Extension rating helps us determine the age of the target audience of your Extension.  
 To help you determine if your Extensions has a mature content, review the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
@@ -147,7 +147,7 @@ Click **Save** to proceed to listing section.
 
 This is the information that users see when viewing your listing in Microsoft Edge Addons.  Many of the fields in a listing are optional, but we suggest providing as much information as possible to make your listing stand out.  The minimum required for your listing in Microsoft Edge Addons to be considered complete is the [text description](#description), [Extension logo](#store-logo), and [small promotional tile](#small-promotional-tile) in each language mentioned in your Extension package.  
 
-Store Listing fields  
+### Store Listing fields  
 
 *   [Store listing languages](#store-listing-languages)  
 *   [Store display name](#store-display-name)  
@@ -156,9 +156,9 @@ Store Listing fields
 *   [Small promotional tile](#small-promotional-tile)  
 *   [Media](#media)  
 *   [Short description](#short-description)  
-*   [Search terms](#search-terms)
+*   [Search terms](#search-terms)  
 
-### Store listing languages  
+#### Store listing languages  
 
 If your Extension package supports multiple languages, your Extension must have a listing page for each one.  
 You must complete listing details \(text description, images, and so on\) for each language separately even if you are using the same content for each language.  If your Extension is localized in more than one language, those languages are displayed at the top of listing page.  
@@ -173,17 +173,17 @@ You must complete listing details \(text description, images, and so on\) for ea
 
 **Possible Values**:  
 
-*   `English (United States)`: This is the default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
+*   `English (United States)`:  This is the default value.  If you do not mention any language in your package, we set your default language to English \(United States\) and you must provide a listing in English \(United States\).  
 *   `{language}` \(`{Country}`\)  
 
-### Store display name  
+#### Store display name  
 
 The name of Extension as mentioned in your Extension package manifest.  
 
 > [!NOTE]
 > To edit the name, you must update the manifest in your Extension package and re-upload it.  
 
-### Description  
+#### Description  
 
 This field is required.  
 The description for your users of what your Extension does.  
@@ -192,7 +192,7 @@ The description for your users of what your Extension does.
 
 *   {plain_text}: Less than 10,000 characters.  
 
-### Store logo  
+#### Store logo  
 
 This field is required.  
 A 1:1 image for your Extension logo.  
@@ -203,7 +203,7 @@ A 1:1 image for your Extension logo.
 *   150px x 140px, PNG \(.png\)  
 *   300px x 300px, PNG \(.png\):  The recommended size.  
 
-### Small promotional tile  
+#### Small promotional tile  
 
 This field is required.  
 A small size promotional tile.  Your listing is displayed on this tile.  
@@ -212,33 +212,39 @@ A small size promotional tile.  Your listing is displayed on this tile.
 
 *   440px x 280x, PNG \(.png\)  
 
-### Media  
+#### Media  
 
 This field is optional.  
 You should provide these assets to help display your product more effectively.  
+
 *   Screenshots  
+    
     The images of your Extension that describe what your Extension does.  
+    
 *   Large promotion tiles  
+    
     A large promotional tile to be feature your Extension more prominently in Microsoft Edge Addons.  
+    
 *   YouTube video URL  
+    
     A valid [YouTube video URL for your Extension][MicrosoftEdgeAddonsUploadYouTubeVideo].  Your video should be good quality and minimal length.  Your YouTube video must pass certification before publishing your Extension in Microsoft Edge Addons.  Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 
 **Possible Values**:  
 
 *   10 Screenshots maximum.  
-    *   640px x 480px, PNG \(.png\): Screenshots.  
-    *   1280px x 800px, PNG \(.png\): Screenshots.  
+    *   640px x 480px, PNG \(.png\):  Screenshots.  
+    *   1280px x 800px, PNG \(.png\):  Screenshots.  
 *   1400px x 560px, PNG \(.png\):  Large promotion tiles.  
 *   60 seconds or shorter and 2GB or smaller, YouTube video URL.  
 
-### Short description  
+#### Short description  
 
 A short, catchy description that may be used at the top of the listing for your product.  If not provided, the first few lines from your longer description are used instead.  Because your description also appears below this text, you should provide a short description with different text so that your listing is less repetitive.  The Short description of your Extension is picked directly from the manifest file of your package.  
 
 > [!NOTE]
 > To edit the short description, you must update the manifest in your Extension package and re-upload it.  
 
-### Search terms  
+#### Search terms  
 
 Search terms are single words or short phrases that are not displayed to users but help make your Extension discoverable in Microsoft Edge Addons when users search using those terms.  
 
@@ -252,11 +258,11 @@ Click **Save** to proceed to save your listing section.  Click **Publi
 
 ## Step 6: Complete your submission and click Publish  
 
-The Submission options page of the Extension submission process is where you provide more information to help us test your product properly.  This is an optional step, but we recommend it for many submissions.  
+The Submission options page of the Extension submission process is where you provide more information to help us test your product properly.  This is an optional step, but it is recommended for many submissions.  
 
-### Publishing hold options  
+#### Publishing hold options  
 
-By default, we publish your submission as soon as it passes certification.  You may choose to place a hold on publishing your submission until a certain date.  The options in this section are described below.  
+By default, your submission is published as soon as it passes certification.  You may choose to place a hold on publishing your submission until a specific date.  The options in this section are described below.  
 
 *   **Publish your submission as soon as it passes certification**  
 
@@ -264,9 +270,9 @@ By default, we publish your submission as soon as it passes certification.  You 
 
 *   **Start publishing your submission on a certain date**  
 
-    Choose Start publishing this submission on to ensure that the submission is not published until a certain date.  With this option, your submission is released as soon as possible on or after the date you specify.  The date must be at least 24 hours in the future.  Along with the date, you may specify the time at which the submission should begin to be published.  
+    Choose Start publishing this submission on to ensure that the submission is not published until a specific date.  With this option, your submission is released as soon as possible on or after the date you specify.  The date must be at least 24 hours in the future.  Along with the date, you may specify the time at which the submission should begin to be published.  
 
-### Notes for certification  
+#### Notes for certification  
 
 As you submit your Extension, you have the option to use the Notes for certification page to provide additional information to the certification testers.  This information helps ensure that your Extension is tested correctly.  If we are not able to fully test your submission, it may fail certification.  
 
