@@ -20,12 +20,12 @@ To update your listing, follow these steps:
 1.	Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Overview page, click the listing which you want to update.  This brings up the submission form details which you filled out during publishing.  
 1.	Make the changes you want to the package, description, graphic assets, or other settings.  If you update the package file, make sure that the version in the manifest is higher than the previous package version.
 1.	After making changes, click Save and then Publish.
-1.	Visit the [Partner Center][MicrosoftPartnerCenter] developer dashboard to see the status of your listing changed from **In the store** to **In the store.  Certification in progress**.  
+1.	Visit the [Partner Center][MicrosoftPartnerCenter] developer dashboard to see the status of your listing changed from `In the store` to `In the store.  Certification in progress`.  
 
 > [!NOTE]
 > The duration of the update publishing process ranges from a few hours to few days.  
 
-Once the **Status** column displays **In the store**, your Extension update is available in Microsoft Edge Addons.  
+Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Addons.  
 
 ## Update an Extension during certification step  
 
@@ -43,7 +43,7 @@ To edit your submission, you may follow these steps:
 > [!NOTE]
 > The duration of the update publishing process ranges from a few hours to few days.  
 
-Once the **Status** column displays **In the store**, your Extension update is available in Microsoft Edge Addons.  
+Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Addons.  
 
 ## Remove your Extension from Microsoft Edge Addons  
 
