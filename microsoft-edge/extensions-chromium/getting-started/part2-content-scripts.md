@@ -15,7 +15,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 ## Overview  
 
-In this part 2, you learn to update our pop up menu to not show the static stars image you had before, but to replace that image with a title and a standard **HTML** button.  That button, when clicked, passes that stars image, which is embedded in the Extension, to the content page.  That image, is inserted into the active browser tab.  
+In this part 2, you learn to update our pop up menu to not show the static stars image you had before, but to replace that image with a title and a standard HTML button.  That button, when clicked, passes that stars image, which is embedded in the Extension, to the content page.  That image, is inserted into the active browser tab.  
 
 *   Extension technologies covered in this part  
     *   Injecting JavaScript libraries into Extension  
@@ -202,7 +202,7 @@ When an event is processed by this listener, the function that is the first para
 
 *   The first dynamically inserts into the DOM header a **\<style\>** section that you must assign as a class `slide-image` to our `img` element.  
 
-*   The second, appends an `img` element right below the `body` of our browser tab that has the class `slide-image` assigned as well as the `imageDivId` as the id of that image element.  
+*   The second, appends an `img` element right below the `body` of our browser tab that has the class `slide-image` assigned as well as the `imageDivId` as the ID of that image element.  
 
 *   The third adds a click event that covers the entire image allowing the user to click any place on the image and that image is be removed from the page \(along with it is event listener\).  
 
@@ -216,7 +216,7 @@ When you click on the `Display` button, you get what is below.  If you click any
 
 ![The image showing in browser](media/part2-showingimage.png)  
 
-You have now created an Extension that successfully sends a message from the Extension icon pop-up, to the dynamically inserted JavaScript running as content on the browser tab.  That injected content set the image element to display our static stars `jpeg`.  
+You have now created an Extension that successfully sends a message from the Extension icon pop-up, to the dynamically inserted JavaScript running as content on the browser tab.  That injected content set the image element to display our static stars jpeg.  
 
 <!-- image links -->  
 
