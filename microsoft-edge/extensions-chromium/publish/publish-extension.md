@@ -11,11 +11,11 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Publish An Extension  
 
-Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You must first create a submission on [Partner Center][MicrosoftPartnerCenter] and submit it.  This document lists all the details that you must provide to create an Extension submission.  
+Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You must first create a submission on [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) and submit it.  This document lists all the details that you must provide to create an Extension submission.  
 
 ## Before You Begin  
 
-*   You must have an active developer account on [Partner Center][MicrosoftPartnerCenter] to submit your Extension in Microsoft Edge Addons.  If you do not have one, create a new developer account.  
+*   You must have an active developer account on [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) to submit your Extension in Microsoft Edge Addons.  If you do not have one, create a new developer account.  
 *   Create a zip file of your Extension package and ensure that it contains these files:  
     *   The manifest file and it must define the name and version of your Extension.  
     *   The images and other files that are required for your Extension.  
@@ -25,11 +25,11 @@ Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\
 
 If you have not started building an Extension, you may refer **Getting Started** tutorial for building a Microsoft Edge Chromium extension.  
 
-To create an Extension submission on [Partner Center][MicrosoftPartnerCenter], follow these steps.  
+To create an Extension submission on [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons), follow these steps.  
 
 ## Step 1: Start a New Submission  
 
-Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Overview page, click **Create new extension**.  
+Go to your [developer dashboard](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons).  From the Overview page, click **Create new extension**.  
 
 ## Step 2: Upload Your Extension Zip File  
 
@@ -293,5 +293,3 @@ When you finish creating the submission for your Extension and click **Publish
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
-
-[MicrosoftPartnerCenter]: https://go.microsoft.com/fwlink/p/?linkid=2099798 "Microsoft Edge Addons - Partner Center"  
