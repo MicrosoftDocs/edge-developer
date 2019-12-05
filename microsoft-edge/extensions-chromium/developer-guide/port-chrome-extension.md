@@ -1,5 +1,5 @@
 ---
-description: Process of porting Chrome extension to Microsoft Edge.
+description: Process of porting Chrome Extension to Microsoft Edge.
 title: Port Chrome Extension To Microsoft (Chromium)Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -29,13 +29,13 @@ To port your Chrome Extension, follow these steps:
     > [!NOTE]
     > The `getAuthToken` API does not work with Microsoft Edge, however you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.  
     
-1.  If you are using "`Chrome`" in the name or description of your Extension, re-brand the Extension for `Microsoft Edge`.  It is **mandatory** to pass the certification process.  
+1.  If you are using "`Chrome`" in the name or description of your Extension, re-brand the Extension for `Microsoft Edge`.  You must pass the certification process.  
     
-1.  Test your extension to check if it works in Microsoft Edge.  The first step to do this is to ensure that you have extension developer features turned on.  This will allow you to side load extension files in Microsoft Edge so that you can test your extension while developing it.  
+1.  Test your Extension to check if it works in Microsoft Edge.  The first step to do this is to ensure that you have Extension developer features turned on.  This enables you to side load Extension files in Microsoft Edge so that you are able to test your Extension while developing it.  
     
 1.  If you have any issues, debug your Extensions in Microsoft Edge by using the DevTools, or contact us ExtensionPartnerOps@microsoft.com.  
     
-1.  Now your extension is finally polished up and ready to be packaged.  If you wish to prepare for submission to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\), you do not need to package your Extension.  Further, follow our [publishing guidelines][ExtensionsPublishExtension] to publish your extension on Microsoft Edge Addons.  
+1.  Now your Extension is finally polished up and ready to be packaged.  If you wish to prepare for submission to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\), you do not need to package your Extension.  Further, follow our [publishing guidelines][ExtensionsPublishExtension] to publish your Extension on Microsoft Edge Addons.  
     
     > [!NOTE]
     > If your Extension exchanges messages with a native application using `chrome.runtime.connectNative` API, ensure that you set `allowedorigins` to "`extension://[Microsoft-Catalog-extensionID]`" in your native messaging host manifest file.  This enables the app to identify the Extension.  
