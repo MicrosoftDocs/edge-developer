@@ -330,7 +330,7 @@ If you submit a promotional video in the listing, it should follow all the conte
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
 [FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"  
 [GoogleChromeContentSecurityPolicyRemoteScript]: https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-remote-script "Remote Script - Content Security Policy (CSP) - Google Chrome"  
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons  
 [MicrosoftWindowsDevCenterForumsWindowsStore]: https://social.msdn.microsoft.com/Forums/windowsapps/home?forum=windowsstore "Msdn Forums - Publishing Windows Store apps"  
 [MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
