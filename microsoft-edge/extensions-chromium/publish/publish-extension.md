@@ -23,7 +23,7 @@ Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\
 > [!IMPORTANT]
 > Do not zip the Extension folder.  To create a zip, open your Extension folder, select all the files and create zip of those files.  
 
-If you have not started building an Extension, you may refer **Getting Started** tutorial for building a Microsoft Edge Chromium extension.  
+If you have not started building an Extension, you may refer to the [Getting Started][ExtensionsGettingStarted] tutorial for building a Microsoft Edge Chromium extension.  
 
 To create an Extension submission on [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons), follow these steps.  
 
@@ -288,6 +288,8 @@ When you finish creating the submission for your Extension and click **Publish
 <!-- image links -->  
 
 <!-- links -->  
+
+[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge \(Chromium\) Extensions"  
 
 [MicrosoftEdgeAddonsUploadYouTubeVideo]: upload-video.md "Upload A YouTube Video | Microsoft Docs"  
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
