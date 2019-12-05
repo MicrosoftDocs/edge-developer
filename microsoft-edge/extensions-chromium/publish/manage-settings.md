@@ -41,4 +41,4 @@ Review the following settings in the Account settings section.
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons  
