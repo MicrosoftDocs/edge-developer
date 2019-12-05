@@ -41,4 +41,4 @@ Review the following settings in the Account settings section.
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons  
+[MicrosoftPartnerCenter]: https://go.microsoft.com/fwlink/p/?linkid=2099798 "Microsoft Edge Addons - Partner Center"  
