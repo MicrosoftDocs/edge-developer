@@ -60,4 +60,4 @@ These steps remove the Extension from Microsoft Edge Addons, that means new user
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons  
