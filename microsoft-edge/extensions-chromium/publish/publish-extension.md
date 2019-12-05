@@ -3,10 +3,10 @@ description: Step-wise process to publish Edge (Chromium) Extensions to Microsof
 title: Publish An Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/04/2019
+ms.date: 12/05/2019
 ms.topic: article
-ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
+ms.prod: microsoft-edge-chromium
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 
 # Publish An Extension  
@@ -44,12 +44,12 @@ After successful upload, review your Extension details and click **Next** to
 
 Select a **Visibility** option to define the audience who may discover and acquire your Extension.  This gives you the option to specify whether users should find your Extension in Microsoft Edge Addons or see the listing at all.  Currently, you have two options under visibility:  
 
-*   **Public**  
+*   `Public`  
     This is the default option.  
-    If you select **Public**, your Extension is available and discoverable to everyone in Microsoft Edge Addons.  Leave this option selected if you want your Extension to be listed in Microsoft Edge Addons for users to find via searching, browsing, and the direct link of your Extension.  
+    If you select `Public`, your Extension is available and discoverable to everyone in Microsoft Edge Addons.  Leave this option selected if you want your Extension to be listed in Microsoft Edge Addons for users to find via searching, browsing, and the direct link of your Extension.  
 
-*   **Hidden**  
-    If you select Hidden, your Extension is hidden in Microsoft Edge Addons from users searching or browsing; you must share your listing URL to distribute your Extension.  Users who have the direct link to the listing may download it on Microsoft Edge \(you may find your listing URL under **Extension Overview** page of Extension submission\).  
+*   `Hidden`  
+    If you select `Hidden`, your Extension is hidden in Microsoft Edge Addons from users searching or browsing; you must share your listing URL to distribute your Extension.  Users who have the direct link to the listing may download it on Microsoft Edge \(you may find your listing URL under **Extension Overview** page of Extension submission\).  
 
 > [!NOTE]
 > If you submit an Extension as **Public** and later change it to **Private**, Users who installed the Extension when it was private continue to have access and receive future updates.  
@@ -218,15 +218,12 @@ This field is optional.
 You should provide these assets to help display your product more effectively.  
 
 *   Screenshots  
-    
     The images of your Extension that describe what your Extension does.  
     
 *   Large promotion tiles  
-    
     A large promotional tile to be feature your Extension more prominently in Microsoft Edge Addons.  
     
 *   YouTube video URL  
-    
     A valid [YouTube video URL for your Extension][MicrosoftEdgeAddonsUploadYouTubeVideo].  Your video should be good quality and minimal length.  Your YouTube video must pass certification before publishing your Extension in Microsoft Edge Addons.  Verify that your YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 
 **Possible Values**:  
@@ -270,7 +267,7 @@ By default, your submission is published as soon as it passes certification.  Yo
 
 *   **Start publishing your submission on a certain date**  
 
-    Choose Start publishing this submission on to ensure that the submission is not published until a specific date.  With this option, your submission is released as soon as possible on or after the date you specify.  The date must be at least 24 hours in the future.  Along with the date, you may specify the time at which the submission should begin to be published.  
+    Choose **Start publishing your submission on a certain date** to ensure that the submission is not published until a specific date.  With this option, your submission is released as soon as possible on or after the date you specify.  The date must be at least 24 hours in the future.  Along with the date, you may specify the time at which the submission should begin to be published.  
 
 #### Notes for certification  
 
