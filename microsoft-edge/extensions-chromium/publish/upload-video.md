@@ -37,4 +37,4 @@ Use the following procedures to upload YouTube video:
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos \& playlists - YouTube Help"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons  
+[MicrosoftPartnerCenter]: https://go.microsoft.com/fwlink/p/?linkid=2099798 "Microsoft Edge Addons - Partner Center"  
