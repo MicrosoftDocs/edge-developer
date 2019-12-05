@@ -13,7 +13,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 ## Introduction and Objective of this document  
 
-Thank you for your interest in developing Extensions for the Microsoft Edge Addons catalog.  The Microsoft Edge Addons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) and the provision of such Extensions through the Microsoft Edge Addons.  
+Thank you for your interest in developing Extensions for the Microsoft Edge Addons catalog.  The Microsoft Edge Addons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such Extensions through the Microsoft Edge Addons.  
 
 ## Principles  
 
@@ -228,7 +228,7 @@ If your Extension displays ads, all content displayed must conform to the advert
 
 #### 1.10.4 Promotions  
 
-If you purchase or create promotional ad campaigns to promote your Extensions through the ad campaign functionality in [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons), all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy][MicrosoftAdvertisingCreativeSpecifications] and [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies].  
+If you purchase or create promotional ad campaigns to promote your Extensions through the ad campaign functionality in [Partner Center][MicrosoftPartnerCenter], all ad materials you provide to Microsoft, including any associated landing pages, must comply with [Microsoft Creative Specifications Policy][MicrosoftAdvertisingCreativeSpecifications] and [Microsoft Creative Acceptance Policy][MicrosoftAdvertisingCreativeAcceptancePolicies].  
 
 #### 1.10.5 Notifying Users of Opt-Out for Interest-Based Advertising  
 
@@ -236,7 +236,7 @@ Your privacy statement or terms of use must let users know you plan to send Pers
 
 #### 1.10.6 Other guidelines  
 
-If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
+If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center][MicrosoftPartnerCenter] and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
 
 ## 2 Content Policies  
 
@@ -309,7 +309,7 @@ Content that is offensive in any country/region to which your Extension is targe
 
 #### 2.12.1 Mature Content  
 
-When you submit your Extension to [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons), you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
+When you submit your Extension to [Partner Center][MicrosoftPartnerCenter], you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
 
 #### 2.12.2 Ratings Change  
 
@@ -334,3 +334,5 @@ If you submit a promotional video in the listing, it should follow all the conte
 [MicrosoftWindowsDevCenterForumsWindowsStore]: https://social.msdn.microsoft.com/Forums/windowsapps/home?forum=windowsstore "Msdn Forums - Publishing Windows Store apps"  
 [MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
+
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons "Partner Center"  
