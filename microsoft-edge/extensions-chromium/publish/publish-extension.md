@@ -257,7 +257,7 @@ Click **Save** to proceed to save your listing section.  Click **Publi
 
 The Submission options page of the Extension submission process is where you provide more information to help us test your product properly.  This is an optional step, but it is recommended for many submissions.  
 
-#### Publishing hold options  
+### Publishing hold options  
 
 By default, your submission is published as soon as it passes certification.  You may choose to place a hold on publishing your submission until a specific date.  The options in this section are described below.  
 
@@ -269,7 +269,7 @@ By default, your submission is published as soon as it passes certification.  Yo
 
     Choose **Start publishing your submission on a certain date** to ensure that the submission is not published until a specific date.  With this option, your submission is released as soon as possible on or after the date you specify.  The date must be at least 24 hours in the future.  Along with the date, you may specify the time at which the submission should begin to be published.  
 
-#### Notes for certification  
+### Notes for certification  
 
 As you submit your Extension, you have the option to use the Notes for certification page to provide additional information to the certification testers.  This information helps ensure that your Extension is tested correctly.  If we are not able to fully test your submission, it may fail certification.  
 
