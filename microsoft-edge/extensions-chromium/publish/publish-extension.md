@@ -67,12 +67,12 @@ Click **Save** to proceed to **Properties** section.
 
 ### Extension properties  
 
-*  [Category](#category)  
-*  [Privacy policy requirements](#privacy-policy-requirements)  
-*  [Privacy policy URL](#privacy-policy-url)  
-*  [Website URL](#website-url)  
-*  [Support URL/email address](#support-urlemail-address)  
-*  [Extension Rating](#extension-rating)  
+*   [Category](#category)  
+*   [Privacy policy requirements](#privacy-policy-requirements)  
+*   [Privacy policy URL](#privacy-policy-url)  
+*   [Website URL](#website-url)  
+*   [Support URL/email address](#support-urlemail-address)  
+*   [Extension Rating](#extension-rating)  
 
 #### Category  
 
