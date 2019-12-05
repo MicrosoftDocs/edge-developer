@@ -294,4 +294,4 @@ When you finish creating the submission for your Extension and click **Publish
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons  
