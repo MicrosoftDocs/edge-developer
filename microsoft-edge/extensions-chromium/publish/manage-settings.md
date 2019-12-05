@@ -11,11 +11,11 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Manage Account Settings  
 
-Manage the setting for you Microsoft Edge Developer account.  You view and update your account settings and Profile details in the Account setting section of the [Partner Center][MicrosoftPartnerCenter].  
+Manage the setting for you Microsoft Edge Developer account.  You view and update your account settings and Profile details in the Account setting section of the [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons).  
 
 ## Account settings  
 
-To view your account settings, click the gear icon in the upper right-hand corner of [Partner Center][MicrosoftPartnerCenter] and then select **Developer settings**.  The **Developer settings** displays details about your account, links to other pages where you view information, and you may perform various account-related tasks.  
+To view your account settings, click the gear icon in the upper right-hand corner of [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) and then select **Developer settings**.  The **Developer settings** displays details about your account, links to other pages where you view information, and you may perform various account-related tasks.  
 
 In the **Account details** section, you see the status and type of your account.  You also see your Seller ID and other publisher ID info here.  These values are assigned by Microsoft to uniquely identify your developer account and are read-only.  
 
@@ -40,5 +40,3 @@ Review the following settings in the Account settings section.
 <!-- image links -->  
 
 <!-- links -->  
-
-[MicrosoftPartnerCenter]: https://go.microsoft.com/fwlink/p/?linkid=2099798 "Microsoft Edge Addons - Partner Center"  
