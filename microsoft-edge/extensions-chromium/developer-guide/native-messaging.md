@@ -14,7 +14,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 Microsoft Edge now allows Extension installed from Microsoft Edge Addons catalog \(Microsoft Edge Addons\) to exchange messages with a native application using message passing APIs.  To enable the feature, you need to make sure of following things while implementing native messaging host of your Native Application.  
 
 > [!NOTE]
-> Native messaging is currently not supported on macOS and Linux version of Microsoft Edge.  This feature support is planned to be implemented soon.  
+> Native messaging is currently not supported on macOS <!--and Linux--> version of Microsoft Edge.  This feature support is planned to be implemented soon.  
 
 1.  **Native messaging host**:  
     
