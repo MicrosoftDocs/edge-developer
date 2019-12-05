@@ -11,12 +11,12 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Open A New Developer Account  
 
-Open a new Microsoft Edge Developer account.  Before you submit the Extension, you must set up a Microsoft Edge developer account in [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons)  
+Open a new Microsoft Edge Developer account.  Before you submit the Extension, you must set up a Microsoft Edge developer account in [Partner Center][MicrosoftPartnerCenter]  
 
 > [!NOTE]
 > Do you have a Microsoft Account?  To create a developer account for Microsoft Edge, you must have a Microsoft account email \(You are not able to sign up with a work or school email address\).  If you do not have a Microsoft account, go to [account.microsoft.com][MicrosoftAccount], select **Sign in**, and then choose **Create one!**.  
 
-1.  Go to the [developer page](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) and select **GO TO DASHBOARD**.  
+1.  Go to the [developer page][MicrosoftPartnerCenter] and select **GO TO DASHBOARD**.  
 1.  If you are not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account.  You use the same Microsoft account that you use to sign into your developer account.  After you sign in, this registration form is displayed:  
     
     > [!NOTE]
@@ -43,7 +43,7 @@ Open a new Microsoft Edge Developer account.  Before you submit the Extension, y
 
 ## Account Types  
 
-The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons) offers both individual and company accounts.  Either type of account gives you access to publish Extensions to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) and to participate in any Microsoft program.  
+The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts.  Either type of account gives you access to publish Extensions to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) and to participate in any Microsoft program.  
 
 Company accounts are intended for organizations and businesses.  For company accounts, we require greater verification to confirm that you have authorization to set up the account for your company.  Individual accounts are usually appropriate for a single developer working on their own.  
 
@@ -70,3 +70,5 @@ You may check your verification status on the **Account settings** page.
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 
 [MicrosoftAccount]: https://account.microsoft.com/account/Account "Microsoft account"  
+
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons "Partner Center"  
