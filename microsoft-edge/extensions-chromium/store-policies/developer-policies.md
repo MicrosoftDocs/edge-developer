@@ -3,10 +3,10 @@ description: Microsoft Edge Addons Catalog Developer Policies.
 title: Microsoft Edge Addons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/03/2019
+ms.date: 12/05/2019
 ms.topic: article
-ms.prod: microsoft-edge
-keywords: edge, extensions development, browser extensions, addons, partner center, developer
+ms.prod: microsoft-edge-chromium
+keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 
 # Microsoft Edge Addons Catalog Developer Policies  
