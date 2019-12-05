@@ -15,10 +15,10 @@ If you are a developer who wants to distribute an Extension as part of the insta
 
 *   **Using the Windows registry \(Windows only\)**  
 
-It supports installing an Extension hosted at an `update_URL`.  On Windows, the `update_URL` must point to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) where the Extension must be hosted.  
+Microsoft Edge supports installing an Extension hosted at an `update_URL`.  On Windows, the `update_URL` must point to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\) where the Extension must be hosted.  
 
 > [!NOTE]
-> External installation of Extension via a preferences json file for macOS and linux are not supported yet.  This feature support will soon be available.
+> External installation of Extension via a preferences json file for macOS <!--and Linux--> are not supported yet.  This feature support will soon be available.
 
 ## Using the Windows registry  
 
