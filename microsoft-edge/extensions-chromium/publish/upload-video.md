@@ -11,7 +11,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Upload A YouTube Video  
 
-Submit a promotional YouTube video for your listing in the Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You may upload your YouTube promotional video in Microsoft Edge Addons listing page of your Extension submission on [Partner Center](https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons).  This video is displayed on your product page in Microsoft Edge Addons.  
+Submit a promotional YouTube video for your listing in the Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You may upload your YouTube promotional video in Microsoft Edge Addons listing page of your Extension submission on [Partner Center][MicrosoftPartnerCenter].  This video is displayed on your product page in Microsoft Edge Addons.  
 
 ## Before you begin  
 
@@ -36,3 +36,5 @@ Use the following procedures to upload YouTube video:
 [GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos \& playlists - YouTube Help"  
+
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons "Partner Center"  
