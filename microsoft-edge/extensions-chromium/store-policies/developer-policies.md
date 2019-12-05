@@ -140,10 +140,10 @@ You may publish the Personal Information of users of your Extension to an outsid
 If you publish a person’s Personal Information to an outside service or third-party through your Extension or the metadata, but the person whose information is being shared is not a user of your Extension;  
 
 1.  You must obtain express written consent to publish that Personal Information.  
-2.  You must permit the person whose information is shared to withdraw that consent at any time.  
-3.  Your privacy policy must clearly disclose that you may collect personal information in this manner.  
-4.  If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.  
-5.  If your Extension provides users with access to another person’s Personal Information, this requirement also applies.  
+1.  You must permit the person whose information is shared to withdraw that consent at any time.  
+1.  Your privacy policy must clearly disclose that you may collect personal information in this manner.  
+1.  If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.  
+1.  If your Extension provides users with access to another person’s Personal Information, this requirement also applies.  
 
 #### 1.5.5 Transmit information securely  
 
