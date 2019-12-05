@@ -1,15 +1,15 @@
 ---
 description: Learn what a Chromium Extension is as well as progressively build a complete picture viewing Extension that includes options, content injection, background scripts, storage and more.
-title: Getting started with Chromium Extensions
+title: Getting Started With Microsoft Edge (Chromium) Extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# Getting started with Chromium Extensions  
+# Getting Started With Microsoft Edge \(Chromium\) Extensions  
 
 If you want to jump directly into building your first Extension, go to part 1 of building a NASA picture of the day Extension.  
 
@@ -22,14 +22,14 @@ Each section has the completed Extension source installation package referenced 
 *   [Build a simple Extension that pops up NASA picture of the day](part1-simple-extension.md)  
     *   Creating a Manifest  
     *   Assign Extension icons  
-    *   Displaying a Popup Window  
+    *   Displaying a Pop-up Window  
     *   Run your Extension locally in your browser \(side-loading\)  
 
 *   [Dynamically insert NASA picture below the page body tag](part2-content-scripts.md)  
     *   Create JavaScript that inserts dynamic content script  
     *   Define in manifest which pages get content script  
     *   Inject content script declaratively  
-    *   Add a Button on Popup to send a message to content script  
+    *   Add a Button on Pop-up to send a message to content script  
     *   Receive a message inside a content script  
 
 ## Understanding the browser before Extensions are introduced  
@@ -66,7 +66,7 @@ That zip file includes HTML, CSS, JavaScript, images and all the necessary asset
 
 ### Launching the Extension server  
 
-When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, your web bundle is located on that web server.  When a browser navigates to a URL on a server, the `index.html` file on the web server is downloaded.  The browser navigated using certificates, configuration files, and more.  The `index.html` file stored at some special location on the web server.   How does your Extension do the same thing?  Particularly, how is the tab pages of your browser able to get to this zip file \(your Extension\)?  That is what the Extension runtime does for us.  
+When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, contains your web bundle.  When a browser navigates to a URL on a server, the `index.html` file on the web server is downloaded.  The browser navigated using certificates, configuration files, and more.  The `index.html` file stored at some special location on the web server.   How does your Extension do the same thing?  Particularly, how is the tab pages of your browser able to get to this zip file \(your Extension\)?  That is what the Extension runtime does for you.  
 
 The extension serves the files all from the URL \(uniform resource locator\) at the name `extension://{some-long-unique-identifier}/index.html`.  The name I put in brackets, `{some-long-unique-identifier}` is a unique identifier assigned to the Extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each Extension has a unique identifier that points at the zip file \(or Extension bundle\) installed inside your browser.  
 
