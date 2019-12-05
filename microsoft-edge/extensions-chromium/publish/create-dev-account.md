@@ -71,4 +71,4 @@ You may check your verification status on the **Account settings** page.
 
 [MicrosoftAccount]: https://account.microsoft.com/account/Account "Microsoft account"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram=MSEdgeAddons  
