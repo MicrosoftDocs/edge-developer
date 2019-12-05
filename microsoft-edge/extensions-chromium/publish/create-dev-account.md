@@ -39,7 +39,7 @@ Open a new Microsoft Edge Developer account.  Before you submit the Extension, y
     
     Review your account details and confirm that everything is correct.  Then, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].  
     
-1.	Click **Finish** to confirm your registration.  
+1.  Click **Finish** to confirm your registration.  
 
 ## Account Types  
 
