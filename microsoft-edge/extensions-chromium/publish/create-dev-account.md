@@ -71,4 +71,4 @@ You may check your verification status on the **Account settings** page.
 
 [MicrosoftAccount]: https://account.microsoft.com/account/Account "Microsoft account"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons  
+[MicrosoftPartnerCenter]: https://go.microsoft.com/fwlink/p/?linkid=2099798 "Microsoft Edge Addons - Partner Center"  
