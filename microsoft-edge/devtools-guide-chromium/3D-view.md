@@ -12,25 +12,18 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # 3D View
 
 Use the **3D View** to debug your web application by navigating through the Document Object Model (DOM) or the z-index stacking context. With it you can: 
-```JavaScript
-//# I don't understand what to do with these links...
-```
-- [Debugging based on stacking context](#highlight) and [searching](#file-search) code from your loaded source files
-- [Controlling the execution flow](#toolbar) as you step through your code
-- [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
-- [Setting breakpoints and live editing](#debug-window) your code as it runs
-- [Tracking and editing local variables](#watches) as you debug
-- [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
-- [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
+
+- [Explore the web page translated into a 3D perspevtive](#3D-DOM)
+- [Debugging based on z-index stacking context](#Z-index)
+- [Clear some of the clutter in the DOM pane](#Changing-your-view) or the [z-index pane](#Change-the-scope-of-your-exploration)
+- [Pick the color scheme to best debug your DOM problems](#DOM-color-type) or [z-index problems](#Z-index-color-type)
 
 There are two panes that you can use for your debugging experience.
 
 1. **Z-index** Navigate through the different elements in the web application with the z-index context in mind. This is the default pane.
 2. **3D DOM** Explore the DOM as a whole with all the elements at your fingertips. To access this pane, click on the "DOM" pane next to the "Z-index" pane.
 
-```JavaScript
-//# picture here maybe
-```
+![Z-index view](./media/z-index-view.png)
 
 ## Z-index
 
@@ -59,13 +52,11 @@ At the very bottom of the controls panel, there is the **Hide elements with the 
 
 These options are meant to clear up some of the clutter that more complex web pages create in your canvas.
 
-### Color type
+### Z-index color type
 
-These are the different visualizations you can use for the DOM in your canvas. Whether you use it for fun or because they help you visualize the DOM better, we have three different colorways as well as a "background color" setting. The background color grabs from the CSS 
-```JavaScript
-//# NOT TOTALLY SURE ABOUT THIS
-```
-The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project (or that you like the most).
+These are the different visualizations you can use for the DOM in your canvas. Whether you use it for fun or because they help you visualize the DOM better, we have three different colorways as well as a "background color" setting. The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project (or that you like the most).
+
+![DOM view](./media/facebook-dom-texture.png)
 
 ## 3D DOM
 
@@ -77,7 +68,7 @@ In the **3D DOM** pane, the **Isolate selected element** filter has "Include chi
 
 You'll notice a slider in the control pane titled **Nesting level** with a number next to it. The number indicates the number of layers in the document. Dragging the slider to the left will cause the outermost layers to peel away until you are left with a nesting level of 1, displaying only the furthest back element in the DOM. This allows you to remove some of the clutter if you are trying to get a closer look at what is going on in the lower levels.
 
-### Color type
+### DOM color type
 
 You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rainbow*, and *Use background color* options, there is *Use screen texture*. The screen texture adds contect to your debugging experience by displaying the content from the web page directly onto the elements. This is still a work in progress, but feel free to send us feedback with the smiley to show us websites that have a harder time rendering their screen texture in the 3D View. 
 
