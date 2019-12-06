@@ -21,7 +21,7 @@ In the **Account details** section, you see the status and type of your account.
 
 ## Contact Details  
 
-The **Contact info** section displays the details you provided when setting up your account.  We use this detail to contact you about your account.  The publisher display name that we show to your users in the Microsoft Edge Addons catalog \(Edge Addons)\ also appears here.  
+The **Contact info** section displays the details you provided when setting up your account.  We use this detail to contact you about your account.  The publisher display name that we show to your users in the Microsoft Edge Addons catalog \(Edge Addons\) also appears here.  
   
 You should edit this section if any of your contact details has changed. To do so, click **Update** \(or select **Contact info** in the left navigation menu\), make your changes, and then click **Save**.  
 
