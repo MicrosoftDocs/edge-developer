@@ -9,10 +9,9 @@ ms.prod: microsoft-edge
 ms.technology: extensions
 keywords: edge, web development, html, css, javascript, developer, extensions
 ---
+#  Microsoft Edge (EdgeHTML) extensions
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
-
-#  Microsoft Edge (EdgeHTML) extensions
 
 Extensions are small programs that can be used to add new features to Microsoft Edge (EdgeHTML) or modify the existing functionality. Extensions are intended to improve a user’s day-to-day browsing experience by providing niche functionality that is important to targeted audiences.
 
