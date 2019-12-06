@@ -3,7 +3,7 @@ description: Microsoft Edge Addons Catalog Developer Policies.
 title: Microsoft Edge Addons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 12/06/2019
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -26,8 +26,6 @@ A few principles to get you started:
 Adhering to these Addons Catalog Developer Policies should help you make choices that enhance the appeal and audience of your Extension.  
 
 Your Extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your Extensions to the world.  
-
-If you have feedback regarding the Policies, please let us know by commenting in the [Windows Store forum][MicrosoftWindowsDevCenterForumsWindowsStore].  We consider every comment.  
 
 ## 1. Product Policies  
 
@@ -331,7 +329,6 @@ If you submit a promotional video in the listing, it should follow all the conte
 [FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"  
 [GoogleChromeContentSecurityPolicyRemoteScript]: https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-remote-script "Remote Script - Content Security Policy (CSP) - Google Chrome"  
 
-[MicrosoftWindowsDevCenterForumsWindowsStore]: https://social.msdn.microsoft.com/Forums/windowsapps/home?forum=windowsstore "Msdn Forums - Publishing Windows Store apps"  
 [MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
 
