@@ -22,7 +22,7 @@ Use the **Debugger** to step through code, set watches and breakpoints, live edi
 - [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
 - [Adding specialized breakpoints](#breakpoints) for XmlHttpRequests, events and [DOM mutations](#dom-breakpoints)
 
-//![The Microsoft Edge DevTools Debugger](./media/debugger.png)
+![The Microsoft Edge DevTools Debugger](./media/debugger.png)
 
 There are three ways to begin a debugging session.
 
