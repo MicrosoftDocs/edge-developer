@@ -13,10 +13,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Use the **3D View** to debug your web application by navigating through the Document Object Model (DOM) or the z-index stacking context. With it you can: 
 
-- [Explore the web page translated into a 3D perspevtive](#3D-DOM)
-- [Debugging based on z-index stacking context](#Z-index)
-- [Clear some of the clutter in the DOM pane](#Changing-your-view) or the [z-index pane](#Change-the-scope-of-your-exploration)
-- [Pick the color scheme to best debug your DOM problems](#DOM-color-type) or [z-index problems](#Z-index-color-type)
+- [Explore the web page translated into a 3D perspevtive](#3d-dom)
+- [Debugging based on z-index stacking context](#z-index)
+- [Clear some of the clutter in the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration)
+- [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type)
 
 There are two panes that you can use for your debugging experience.
 
