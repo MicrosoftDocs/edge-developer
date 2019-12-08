@@ -55,7 +55,7 @@ These options are meant to clear up some of the clutter that more complex web pa
 
 These are the different visualizations you can use for the DOM in your canvas. Whether you use it for fun or because they help you visualize the DOM better, we have three different colorways as well as a "background color" setting. The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project (or that you like the most).
 
-![DOM view](./media/facebook-dom-texture.png)
+![DOM view](./media/dom-purple.png)
 
 ## 3D DOM
 
