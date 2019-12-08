@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # 3D View
 
-Use the **3D View** to debug your web application by navigating through the Document Object Model (DOM) or the z-index stacking context. With it you can: 
+Use the **3D View** to debug your web application by navigating through the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) or the [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) stacking context. With it you can: 
 
 - [Explore the web page translated into a 3D perspevtive](#3d-dom)
 - [Debugging based on z-index stacking context](#z-index)
@@ -43,10 +43,9 @@ The **Isolate selected element** filter is essentially three buttons in one. The
 
 The "Show all parents" checkbox will be checked by default. If you select an element in the canvas pane and click on **Isolate selected element**, the canvas will only display the element and its parents.
 
-If you select the "Keep only parents with new stacking context," and click on **Isolate selected element**, the canvas will only display the element and the parents that have a new stacking context. **EXPLAIN NEW STACKING CONTEXT**
+If you select the "Keep only parents with new stacking context," and click on **Isolate selected element**, the canvas will only display the element and the parents that have a new stacking context.
 
 If you deselect both of the checkboxes and click on **Isolate selected element**, the canvas will only display the element you chose in the first place.
-need 
 
 At the very bottom of the controls panel, there is the **Hide elements with the same paint order as their parent** toggle. Selecting and deselecting the checkbox will reload the elements based on your selection. If selected, elements that share paint order will be flattened to the parent.
 
@@ -64,14 +63,16 @@ If you want to take more of a general debugging view, rather than the z-index ex
 
 ### Changing your view
 
-In the **3D DOM** pane, the **Isolate selected element** filter has "Include children" and "Include parents." By default both checkboxes are selected, which means that clicking on the **Isolate selected element** button after selecting an element in the canvas would display the element chosen, the element's parents, and the element's children. Deselecting the "Include children" checkbox and clicking the **Isolate selected element** button again would display the selected element and the element's parents. If you select the "Include children" checkbox and deselect the "Include parents" checkbox before clicking on **Isolate selected element**, the canvas will then display the elemen and its children. If you deselect both checkboxes and click on **Isolate selected element**, the canvas will only display the element you previously selected.
+In the **3D DOM** pane, the **Isolate selected element** filter has "Include children" and "Include parents." By default both checkboxes are selected, which means that clicking on the **Isolate selected element** button after selecting an element in the canvas would display the element chosen, the element's parents, and the element's children. Deselecting the "Include children" checkbox and clicking the **Isolate selected element** button again would display the selected element and the element's parents. If you select the "Include children" checkbox and deselect the "Include parents" checkbox before clicking on **Isolate selected element**, the canvas will then display the element and its children. If you deselect both checkboxes and click on **Isolate selected element**, the canvas will only display the element you previously selected.
 
 You'll notice a slider in the control pane titled **Nesting level** with a number next to it. The number indicates the number of layers in the document. Dragging the slider to the left will cause the outermost layers to peel away until you are left with a nesting level of 1, displaying only the furthest back element in the DOM. This allows you to remove some of the clutter if you are trying to get a closer look at what is going on in the lower levels.
 
 ### DOM color type
 
-You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rainbow*, and *Use background color* options, there is *Use screen texture*. The screen texture adds contect to your debugging experience by displaying the content from the web page directly onto the elements. This is still a work in progress, but feel free to send us feedback with the smiley to show us websites that have a harder time rendering their screen texture in the 3D View. 
+You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rainbow*, and *Use background color* options, there is *Use screen texture*. The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements. This is still a work in progress, but feel free to send us feedback with the smiley to show us websites that have a harder time rendering their screen texture in the 3D View. 
 
 ## Next steps
 
-We are working on the UI and adding more functionality to the 3D View based on asks from users like you. If you have an idea, let us know by clicking on the smiley in the browser or [tweeting](https://twitter.com/EdgeDevTools) us. If you want to be the first to know what's next, make sure to follow us, too. We can't wait to hear what you think.
+We are working on the UI and adding more functionality to the 3D View based on asks from users like you. Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the `:)` icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
+
+![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback2.png)
