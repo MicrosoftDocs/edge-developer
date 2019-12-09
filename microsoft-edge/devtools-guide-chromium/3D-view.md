@@ -93,4 +93,4 @@ You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rai
 
 We are working on the UI and adding more functionality to the 3D View based on asks from users like you. Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the `:)` icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
 
-![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback2.png)
+![Give feedback on Microsoft Edge](./media/devtools-feedback2.png)
