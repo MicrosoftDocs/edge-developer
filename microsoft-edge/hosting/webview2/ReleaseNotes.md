@@ -16,15 +16,15 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 ## 0.8.314
 
-[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314) | minimum Microsoft Edge version 80.0.314.0.
+[NuGet package][WebView2NuGetGallery0.8.314] | minimum Microsoft Edge version 80.0.314.0.
 
 **Re-compile your app after updating the NuGet package.**  
 
 *   Added support for Windows 7, Windows 8/8.1.
 *   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
-*   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#addremoteobject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
-*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#add_acceleratorkeypressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
-*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2settings2#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](reference/iwebview2webview4#addremoteobject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
+*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](reference/iwebview2webview4#add_acceleratorkeypressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](reference/iwebview2settings2#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
 *  Updated `DPI Awareness`. Now, the WebView's DPI awareness will be the same as its host application's DPI awareness. Note, if another hybrid application is launched with a different DPI Awareness than the original WebView, the new WebView will not be launched if the user data directory is the same ([#1](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1)).
 *   Updated `Notification Change Behavior` so WebView2 automatically rejects notification permission requests prompted by web content hosted within the WebView.
 
