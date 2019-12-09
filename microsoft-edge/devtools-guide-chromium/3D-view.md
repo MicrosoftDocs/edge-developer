@@ -36,7 +36,7 @@ There are two panes that you can use for your debugging experience.
 - Pan around the DOM: right click and drag in the direction you want the DOM to move.
 - Zoom: drag two fingers across the touchpad or use the scroll wheel on your mouse.
 
-![on-screen controls](./media/on-screen-controls.png)
+![on-screen controls](./media/controls-small.png)
 ### On-screen controls
 - Reset the canvas view to the original view: click the button labeled "Reset camera," or click on the icon that looks like a sideways refresh button and has "Reset elements in view and re-center camera"
 - Refresh the canvas (e.g. if the browser changed or you switched to a device emulator view): click on the button that says "Retake snapshot," or click on the button that looks like a refresh icon and has "Take new snapshot" as the hover text.
