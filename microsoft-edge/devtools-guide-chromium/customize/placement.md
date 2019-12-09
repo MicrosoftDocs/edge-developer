@@ -2,7 +2,7 @@
 title: Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/08/2019
+ms.date: 12/09/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,14 +40,18 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 > ![Dock To Bottom][ImageDockBottom]  
 
 > ##### Figure 3  
-> Undocked  
-> ![Undocked][ImageUndock]  
+> Browser in separate window  
+> ![Browser in separate window][ImageUndockBrowser]  
+
+> ##### Figure 4  
+> Undocked DevTools in separate window  
+> ![Undocked DevTools in separate window][ImageUndockDevTools]  
 
 ## Change placement from the main menu   
 
 1.  Click **Customize And Control DevTools** `...` and select **Undock Into Separate Window** ![Undock][ImageUndockIcon], **Dock To Bottom** ![Dock To Bottom][ImageBottomIcon], or **Dock To Left** ![Dock To Left][ImageLeftIcon].  
     
-    > ##### Figure 4  
+    > ##### Figure 5  
     > Selecting **Undock Into Separate Window**  
     > ![Selecting Undock Into Separate Window][ImageUndockSettings]  
     
@@ -56,7 +60,7 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Run one of the following commands: `Dock To Bottom`, `Undock Into Separate Window`.  Currently there is no command for docking to left, but you may access it from the [main menu](#change-placement-from-the-main-menu).  
     
-    > ##### Figure 5  
+    > ##### Figure 6  
     > The undock command  
     > ![The undock command][ImageUndockCommand]  
 
@@ -72,9 +76,10 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 
 [ImageDockLeft]: images/elements-styles-right-docked.msft.png "Figure 1: Dock To Left"  
 [ImageDockBottom]: images/elements-styles-bottom-docked.msft.png "Figure 2: Dock To Bottom"  
-[ImageUndock]: images/elements-styles-separate-windows.msft.png "Figure 3: Undocked"  
-[ImageUndockSettings]: images/elements-styles-options-dock-side-highlight.msft.png "Figure 4: Selecting Undock Into Separate Window"  
-[ImageUndockCommand]: images/elements-styles-command-menu-undo.msft.png "Figure 5: The undock command"  
+[ImageUndockBrowser]: images/elements-styles-options-dock-side-highlight-browser.msft.png "Figure 3: Browser in separate window"  
+[ImageUndockDevTools]: images/elements-styles-options-dock-side-highlight-devtools.msft.png "Figure 4: Undocked DevTools in separate window"  
+[ImageUndockSettings]: images/elements-styles-options-dock-side-highlight.msft.png "Figure 5: Selecting Undock Into Separate Window"  
+[ImageUndockCommand]: images/elements-styles-command-menu-undo.msft.png "Figure 6: The undock command"  
 
 <!-- links -->  
 
