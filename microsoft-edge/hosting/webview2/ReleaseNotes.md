@@ -14,6 +14,17 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
+## 0.8.355
+
+[NuGet package][WebView2NuGetGallery0.8.355] | minimum Microsoft Edge version 80.0.355.0.
+
+**Re-compile your app after updating the NuGet package.** 
+
+*   Released WebView2API Sample - a comprehensive guide of our SDK. Check it out [here!](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)
+*   Added IME support for all languages besides English. ([#30](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30))
+*   Updated the WebResourceRequested event's API surface in response to bug reports. Simultaneously specifying a filter and an event on creation is now deprecated. To create a web resource requested event, use [add_WebResourceRequested](reference/iwebview2webview5#add_webresourcerequested) to add the event and [AddWebResourceRequestedFilter](reference/iwebview2webview5#addwebresourcerequestedfilter) to add a filter. [RemoveWebResourceRequestedFilter](reference/iwebview2webview5#removewebresourcerequestedfilter) removes the filter. ([#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36)) ([#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74))
+*   **Breaking Change:** Modified Full Screen behavior. Deprecated [isfullscreenallowed](reference/IWebView2Settings.md#get_isfullscreenallowed_deprecated). Now, by default, if an element within a WebView (i.e. a video) is set to full screen, it fills the bounds of the WebView. Use the [IWebView2ContainsFullScreenElementChanged](reference/IWebView2ContainsFullScreenElementChangedEventHandler.md#iwebview2containsfullscreenelementchangedeventhandler) event and [get_ContainsFullScreenElement](reference/iwebview2webview5#get_containsfullscreenelement) to specify how the app should resize the WebView if an element wants to enter fullscreen mode.
+
 ## 0.8.314
 
 [NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314) | minimum Microsoft Edge version 80.0.314.0.
