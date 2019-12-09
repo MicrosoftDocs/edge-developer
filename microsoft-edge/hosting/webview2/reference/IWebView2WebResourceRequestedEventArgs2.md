@@ -10,26 +10,26 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge
 ---
 
-# interface IWebView2NewVersionAvailableEventArgs 
+# interface IWebView2WebResourceRequestedEventArgs2 
 
 ```
-interface IWebView2NewVersionAvailableEventArgs
-  : public IUnknown
+interface IWebView2WebResourceRequestedEventArgs2
+  : public IWebView2WebResourceRequestedEventArgs
 ```
 
-Event args for the NewVersionAvailable event.
+Event args for the WebResourceRequested event.
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_NewVersion](#get_newversion) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
+[get_ResourceContext](#get_resourcecontext) | The web resource request contexts.
 
 ## Members
 
-#### get_NewVersion 
+#### get_ResourceContext 
 
-The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
+The web resource request contexts.
 
-> public HRESULT [get_NewVersion](#get_newversion)(LPWSTR * newVersion)
+> public HRESULT [get_ResourceContext](#get_resourcecontext)(WEBVIEW2_WEB_RESOURCE_CONTEXT * context)
 
