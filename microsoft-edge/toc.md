@@ -116,6 +116,9 @@
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
 ## [Extensions (Chromium)](extensions-chromium/index.md)
+### Microsoft Edge Addons Policies
+#### [Content Security Policy](extensions-chromium/store-policies/csp.md)
+#### [Microsoft Edge Addons Catalog Developer Policies](extensions-chromium/store-policies/developer-policies.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
