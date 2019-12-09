@@ -23,7 +23,25 @@ There are two panes that you can use for your debugging experience.
 1. **Z-index** Navigate through the different elements in the web application with the z-index context in mind. This is the default pane.
 2. **3D DOM** Explore the DOM as a whole with all the elements at your fingertips. To access this pane, click on the "DOM" pane next to the "Z-index" pane.
 
-![Z-index view](./media/z-index-view.png)
+![canvas of 3D View](./media/canvas.png)
+
+## Navigating the canvas
+
+### Keyboard shortcuts
+- Rotate the DOM: use the left and right arrow keys to rotate horizontally and use the up and down arrow keys to rotate vertically.
+- Navigate the DOM: if an element is selected, you can use the up and down arrow keys to move through the elements adjacent
+
+### Mouse controls
+- Rotate the DOM: left click and drag around the canvas space.
+- Pan around the DOM: right click and drag in the direction you want the DOM to move.
+- Zoom: drag two fingers across the touchpad or use the scroll wheel on your mouse.
+
+![on-screen controls](./media/on-screen-controls.png)
+### On-screen controls
+- Reset the canvas view to the original view: click the button labeled "Reset camera," or click on the icon that looks like a sideways refresh button and has "Reset elements in view and re-center camera"
+- Refresh the canvas (e.g. if the browser changed or you switched to a device emulator view): click on the button that says "Retake snapshot," or click on the button that looks like a refresh icon and has "Take new snapshot" as the hover text.
+
+![Z-index view](./media/z-index-view-box.png)
 
 ## Z-index
 
@@ -55,7 +73,7 @@ These options are meant to clear up some of the clutter that more complex web pa
 
 These are the different visualizations you can use for the DOM in your canvas. Whether you use it for fun or because they help you visualize the DOM better, we have three different colorways as well as a "background color" setting. The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project (or that you like the most).
 
-![DOM view](./media/dom-purple.png)
+![DOM view](./media/dom-purple-box.png)
 
 ## 3D DOM
 
