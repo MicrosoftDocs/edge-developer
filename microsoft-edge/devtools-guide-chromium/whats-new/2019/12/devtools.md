@@ -19,19 +19,23 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-## Accessibility improvements to the DevTools  
+## Announcements from the Microsoft Edge DevTools team
 
-Microsoft has contributed over 200 changes to the DevTools to address high-impact color contrast, keyboard, and screen reader issues.  Microsoft wants to enable every developer building the web to use the DevTools including screen reader and keyboard users.  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! The team is excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in the DevTools, download [Microsoft Edge Canary](#consider-canary) to get nightly builds and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+
+### Accessibility improvements to the DevTools  
+
+The Microsoft Edge DevTools team has contributed over 200 changes to the DevTools to address high-impact color contrast, keyboard, and screen reader issues. The DevTools team wants to enable every developer building the web to use the DevTools including screen reader and keyboard users.  
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
 > ![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements][ImagePerformanceToolKeyboardReaderImprovements]  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] or [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, Microsoft is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the ![feedback icon][ImageFeedbackIcon] icon and let Microsoft know what you think!  
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] or [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, the DevTools team is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the ![feedback icon][ImageFeedbackIcon] icon and let the team know what you think!  
 
-## Using the DevTools in other languages  
+### Using the DevTools in other languages  
 
-When data from other developer tools was examined, it was learned that many developers prefer to use development tools in their native language, not just in English.  So Microsoft has been hard at work translating the DevTools into 10 other languages.  You are able to now use the DevTools in the following languages:  
+When the Microsoft Edge DevTools team examined data from other developer tools was examined, the team learned that many developers prefer to use development tools in their native language, not just in English. So the team has been hard at work translating the DevTools into 10 other languages.  You are able to now use the DevTools in the following languages:  
 
 1.  Chinese (Simplified) - 中文(简体)（简体）  
 1.  Chinese (Traditional) - 中文(繁體)（繁體）  
@@ -51,9 +55,9 @@ To use the DevTools in your native language, navigate to `edge://flags` and set 
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-If you want to use the DevTools in a different language than the ones that Microsoft has available, send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the ![feedback icon][ImageFeedbackIcon] icon.  
+If you want to use the DevTools in a different language than the ones that are available, send the team your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the ![feedback icon][ImageFeedbackIcon] icon.  
 
-## webhint Microsoft Edge extension  
+### webhint Microsoft Edge extension  
 
 The webhint browser extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the Microsoft Edge DevTools.  Read more at [https://webhint.io][Webhint].  
 
@@ -63,7 +67,7 @@ The webhint browser extension allows you to easily scan your web page and get fe
 
 [Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, simply open DevTools and select the Hints tab.  From here, you are be able to run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more about the extension.  
 
-## 3D View  
+### 3D View  
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  
 
@@ -84,15 +88,15 @@ There are two panes that you may use for your debugging experience.
 1.  **Z-index**  Navigate through the different elements in the web application with the z-index context in mind.  This is the default pane.  
 2.  **3D DOM**  Explore the DOM as a whole with all the elements at your fingertips.  To access this pane, click on the **DOM** pane next to the **Z-index** pane.  
 
-Microsoft is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback so Microsoft is able to continue improving the 3D View for you!  Simply click the ![feedback icon][ImageFeedbackIcon] icon in the DevTools and enter any feedback or feature requests you have for the 3D View.
+The DevTools team is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback so the team is able to continue improving the 3D View for you!  Simply click the ![feedback icon][ImageFeedbackIcon] icon in the DevTools and enter any feedback or feature requests you have for the 3D View.
 
-## Visual Studio Code extensions  
+### Visual Studio Code extensions  
 
-Microsoft has also released some extensions for [Visual Studio Code \(VS Code\)][VisualStudioCode] that let you use the power of the DevTools directly from your text editor.  You are able to debug your JavaScript, see a preview of your web page, edit style rules with the Elements tool, and scan your code with webhint all while writing your web page in VS Code!  Check out the extensions below:  
+The DevTools team has also released some extensions for [Visual Studio Code \(VS Code\)][VisualStudioCode] that let you use the power of the DevTools directly from your text editor.  You are able to debug your JavaScript, see a preview of your web page, edit style rules with the Elements tool, and scan your code with webhint all while writing your web page in VS Code!  Check out the extensions below:  
 
-### Elements for Microsoft Edge  
+#### Elements for Microsoft Edge  
 
-By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you are able to use the Microsoft Edge Elements tool from within [VS Code][VisualStudioCode].  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.  
+By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you are able to use the Microsoft Edge Elements tool from within [VS Code][VisualStudioCode]. By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.  
 
 > ##### Figure 5  
 > Various features of the Elements for Microsoft Edge Extension in VS Code  
@@ -100,7 +104,7 @@ By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplace
 
 For more information, check out [Elements for Edge VS Code extension][VisualStudioCodeElementEdgeExtension].  
 
-### Debugger for Microsoft Edge  
+#### Debugger for Microsoft Edge  
 
 With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, you are able to now debug both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\) directly from VS Code!  
 
@@ -122,7 +126,7 @@ To launch Microsoft Edge \(Chromium\) instead of Microsoft Edge \(EdgeHTML\) fro
 
 For more information, check out [how to debug Microsoft Edge (Chromium) from VS Code][VisualStudioCodeDebuggerEdgeExtension].  
 
-### webhint  
+#### webhint  
 
 The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `webhint` to improve your web page during development.  This extension runs and reports diagnostics for workspace files based on `webhint` analysis.  
 
@@ -132,7 +136,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
-## Visual Studio  
+### Visual Studio  
 
 With [Visual Studio][MicrosoftVisualStudio] today, you are able to already debug JavaScript running in the legacy version of Microsoft Edge, built on top of the [EdgeHTML][DevGuideEdgeHtmlWhatsNew] web platform.  Starting with Visual Studio 2019 version 16.2, support is extended to the current builds of Microsoft Edge that leverage Chromium.  Visit [Download Visual Studio 2019 for Windows \& Mac][MicrosoftVisualStudioDownloads] to download the latest Visual Studio!  
 
@@ -142,7 +146,11 @@ With [Visual Studio][MicrosoftVisualStudio] today, you are able to already debug
 
 [Read the blog post about how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
-## Support for `let` and `class` redeclarations in the Console   
+## Other contributions from the Chromium project
+
+The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
+
+### Support for `let` and `class` redeclarations in the Console   
 
 The Console now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.  
 
@@ -163,7 +171,7 @@ Now, the Console allows the redeclaration:
 
 Chromium issue [#1004193][crbug1004193]  
 
-## Improved WebAssembly debugging 
+### Improved WebAssembly debugging 
 
 DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
 
@@ -177,9 +185,9 @@ DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which
 > ![The new DWARF-powered WebAssembly debugging][ImageDwarfPoweredWebAssemblyDebugging]  
 -->  
 
-## Network panel updates   
+### Network panel updates   
 
-### Request Initiator Chains in the Initiator tab   
+#### Request Initiator Chains in the Initiator tab   
 
 You are able to now view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
 
@@ -198,7 +206,7 @@ After [logging network activity in the Network panel][DevToolsNetworkIndex], cli
 
 Chromium issue [#842488][crbug842488]  
 
-### Highlight the selected network request in the Overview   
+#### Highlight the selected network request in the Overview   
 
 After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
 
@@ -208,7 +216,7 @@ After you click a network resource in order to inspect it, the Network panel now
 
 Chromium issue [#988253][crbug988253]  
 
-### URL and path columns in the Network panel   
+#### URL and path columns in the Network panel   
 
 Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
 
@@ -220,7 +228,7 @@ Right-click the **Waterfall** table header and select **Path** or **URL** to sho
 
 Chromium issue [#993366][crbug993366]  
 
-### Updated User-Agent strings   
+#### Updated User-Agent strings   
 
 DevTools supports setting a custom User-Agent string through the **Network Conditions** tab.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
 
@@ -237,9 +245,9 @@ To access **Network Conditions**, [open the Command Menu][DevToolsCommandMenuInd
 
 Chromium issue [#1029031][crbug1029031]  
 
-## Audits panel updates   
+### Audits panel updates   
 
-### New configuration UI   
+#### New configuration UI   
 
 The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
 
@@ -247,9 +255,9 @@ The configuration UI has a new, responsive design, and the throttling configurat
 > The new configuration UI  
 > ![The new configuration UI][ImageConfigurationUI]  
 
-## Coverage tab updates   
+### Coverage tab updates   
 
-### Per-function or per-block coverage modes   
+#### Per-function or per-block coverage modes   
 
 The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
 
@@ -260,7 +268,7 @@ The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you 
 > The coverage mode dropdown menu  
 > ![The coverage mode dropdown menu][ImageCoverageMode]  
 
-### Coverage must now be initiated by a page reload   
+#### Coverage must now be initiated by a page reload   
 
 Toggling code coverage without a page reload has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
 
@@ -343,6 +351,7 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Edge - Visual Studio Marketplace"  
 [VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
