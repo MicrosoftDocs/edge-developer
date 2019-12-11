@@ -6,10 +6,10 @@ ms.author: msedgedevrel
 ms.date: 05/31/2018
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP
+keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
 ---
 
-# Tailor your PWA for Windows
+# Tailor your PWA (EdgeHTML) for Windows
 
 PWAs installed on Windows 10 enjoy [all the benefits](../progressive-web-apps.md#pwas-on-windows-10) of running as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps, including protection through Windows app sandboxing security and full access to [Windows Runtime](https://docs.microsoft.com/en-us/uwp/api/) (WinRT) APIs, including those for:
 
@@ -18,9 +18,9 @@ PWAs installed on Windows 10 enjoy [all the benefits](../progressive-web-apps.md
 - Launching / navigating your app through Cortana voice commands
 - Integrating with the Windows OS (through the Windows *Action Center*, desktop taskbar, and context menus)
 
-...and these are only a few of the added possibilities for your PWA on Windows!
+...and these are only a few of the added possibilities for your PWA (EdgeHTML) on Windows!
 
-This guide will show you how to install, run, and enhance your PWA as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.
+This guide will show you how to install, run, and enhance your PWA (EdgeHTML) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ This guide will show you how to install, run, and enhance your PWA as a Windows 
  
 ## Set up and run your *Universal Windows* app
 
-A PWA installed as a Windows 10 app runs independently from the browser, in a standalone (*WWAHost.exe* process) window. Enabling this simply requries a lightweight "app wrapper" that contains your hosted web app, which you can quickly set up using the Visual Studio *Progressive Web App (Universal Windows)* project template. (All your app logic, including native Windows Runtime API calls, still happens in your original web app code.)
+A PWA (EdgeHTML) installed as a Windows 10 app runs independently from the browser, in a standalone (*WWAHost.exe* process) window. Enabling this simply requries a lightweight "app wrapper" that contains your hosted web app, which you can quickly set up using the Visual Studio *Progressive Web App (Universal Windows)* project template. (All your app logic, including native Windows Runtime API calls, still happens in your original web app code.)
 
 Let's set up our Windows app development environment in Visual Studio.
 
@@ -79,13 +79,13 @@ Let's set up our Windows app development environment in Visual Studio.
 
     ![PWA running in a WWAHost.exe window](./media/wwahost.png)
 
-## Debug your PWA as a Windows app
+## Debug your PWA (EdgeHTML) as a Windows app
 
-Because a PWA is simply a progressively enhanced *hosted web app*, you can debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
+Because a PWA (EdgeHTML) is simply a progressively enhanced *hosted web app*, you can debug your server-side code the same way you would any web app, using your usual IDE and workflow. The changes you deploy live will be reflected in your installed PWA the next time you launch it (no need to redeploy your *Universal Windows* app package).
 
 For client-side debugging within your Windows 10 app, you'll need the *Microsoft Edge DevTools Preview* app. This standalone app includes all the functionality of the original in-browser [Microsoft Edge DevTools](../devtools-guide.md) (including [PWA tools](../devtools-guide/service-workers.md)), plus basic [remote debugging](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) support and a [*Debug Target* chooser](../devtools-guide.md#microsoft-store-app) for attaching to *any* running instance of the EdgeHTML engine, including add-ins for *Office*, *Cortana*, app webviews, and of course, *PWAs running on Windows*.
 
-Here's how to set up debugging for your PWA.
+Here's how to set up debugging for your PWA (EdgeHTML).
 
 1. Install the [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) app from the Microsoft Store if you don't already have it.
 
@@ -93,9 +93,9 @@ Here's how to set up debugging for your PWA.
 
 3. From Visual Studio, launch your Windows 10 app with the **Start Without Debugging** (Ctrl+F5) command. (The DevTools app won't attach properly if the Visual Studio debugger is active.)
 
-4. In the DevTools app, click the **Refresh** button in the *Local* debug target chooser. Your PWA site should now be listed. (If its also running in a browser window from *step 2*, it will be the last instance of that site in the list.)
+4. In the DevTools app, click the **Refresh** button in the *Local* debug target chooser. Your PWA (EdgeHTML) site should now be listed. (If its also running in a browser window from *step 2*, it will be the last instance of that site in the list.)
 
-5. Click on your PWA site listing to open a new DevTools instance tab and start debugging.
+5. Click on your PWA (EdgeHTML) site listing to open a new DevTools instance tab and start debugging.
 
     ![Local Debug Targets chooser in the Microsoft Edge DevTools app](./media/devtools-local.png)
 
@@ -105,12 +105,12 @@ Here's how to set up debugging for your PWA.
     window.Windows
     ```
 
-    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis). This is your PWA's entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
+    This will return the global *Windows Runtime* object containing  all the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis). This is your PWA's (EdgeHTML) entrypoint to the [*Universal Windows Platform*](https://docs.microsoft.com/en-us/windows/uwp/index), and only
     exposed to web apps that run as Windows 10 apps (running outside the browser, in a *WWAHost.exe* process).
 
 ## Find Windows Runtime (WinRT) APIs
 
-As an installed Windows app, your [PWA has full access to native *Windows Runtime* APIs](../windows-runtime.md); its just a matter of identifying what you need to use, obtaining the requisite permissions, and employing feature detection to call that API on supported environments. Let's walk through this process to add a progressive enhancement for Windows desktop users of your PWA.
+As an installed Windows app, your [PWA (EdgeHTML) has full access to native *Windows Runtime* APIs](../windows-runtime.md); its just a matter of identifying what you need to use, obtaining the requisite permissions, and employing feature detection to call that API on supported environments. Let's walk through this process to add a progressive enhancement for Windows desktop users of your PWA.
 
 There are a number of ways to identify the *Universal Windows Platform* APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center](#windows-dev-center), downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows](#windows-pwa-snippets).
 
@@ -146,19 +146,19 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("activated", function (activa
     });
 ```
 
-## Call WinRT APIs from your PWA
+## Call WinRT APIs from your PWA (EdgeHTML)
 
-At this point, let's pretend we want to add a custom context menu for Windows users of our PWA and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
+At this point, let's pretend we want to add a custom context menu for Windows users of our PWA (EdgeHTML) and have identified the APIs we need in the in the [Windows.UI.Popups](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups) namespace.
 
-In order to call any WinRT APIs from our PWA, we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-acurs) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
+In order to call any WinRT APIs from our PWA (EdgeHTML), we'll first need to [establish the requisite permissions](#set-application-content-uri-rules-acurs) (or, *Application Content URI Rules*) in your Windows app package manifest (*.appxmanifest*) file.
 
-If any of these API calls involve access to user resources like pictures or music, or to device features like the camera or microphone, we'll also need to add [app capability declarations](#app-capability-declarations) to the app package manifest in order for Windows to prompt the user for permission. If you later publish your PWA to the Microsoft Store, these required [App permissions](https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions) are also noted in your store listing.
+If any of these API calls involve access to user resources like pictures or music, or to device features like the camera or microphone, we'll also need to add [app capability declarations](#app-capability-declarations) to the app package manifest in order for Windows to prompt the user for permission. If you later publish your PWA (EdgeHTML) to the Microsoft Store, these required [App permissions](https://support.microsoft.com/en-us/help/10557/windows-10-app-permissions) are also noted in your store listing.
 
 #### Set Application Content URI Rules (ACURs)
 
-Through ACURs, otherwise known as a *URL allow list*, you are able to give the URLs of your PWA direct access to Windows Runtime APIs. At the Windows OS level, the right policy bounds will be set to allow code hosted on your web server to directly call platform APIs. You define these bounds in the app package manifest file when you specify your PWA's URLs as `ApplicationContentUriRules`.
+Through ACURs, otherwise known as a *URL allow list*, you are able to give the URLs of your PWA (EdgeHTML) direct access to Windows Runtime APIs. At the Windows OS level, the right policy bounds will be set to allow code hosted on your web server to directly call platform APIs. You define these bounds in the app package manifest file when you specify your PWA's URLs as `ApplicationContentUriRules`.
 
-Your rules should include your app’s start page and any other pages you want included as app pages. If your user navigates to a URL that is *not* included in your rules, Windows will open the target URL in the Microsoft Edge browser rather than your standalone PWA window (*WWAHost.exe* process). You can also exclude specific URLs. 
+Your rules should include your app’s start page and any other pages you want included as app pages. If your user navigates to a URL that is *not* included in your rules, Windows will open the target URL in the Microsoft Edge browser rather than your standalone PWA (EdgeHTML) window (*WWAHost.exe* process). You can also exclude specific URLs. 
 
 There are several ways to specify a URL `Match` in your rules:
 
