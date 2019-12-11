@@ -146,6 +146,17 @@ With [Visual Studio][MicrosoftVisualStudio] today, you are able to already debug
 
 [Read the blog post about how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
+### Console messages for Tracking Prevention
+Tracking prevention is designed to protect you from being tracked by websites that you aren’t accessing directly. Whenever a website is visited, trackers from other sites may save information in the browser using cookies and other storage mechanisms. This information may include the sites you’ve visited and the content you’re interested in, building a digital profile which can be accessed by organizations to offer personalized content when visiting other sites.
+
+The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, the DevTools team has also added warning messages in the Console when a tracker is blocked.
+
+> ##### Figure 9  
+> Messages in the Console when tracking prevention blocks access to storage for a tracker
+> ![Messages in the Console when tracking prevention blocks access to storage for a tracker][ImageTrackingPrevention]  
+
+[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
+
 ## Other contributions from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
@@ -159,13 +170,13 @@ The Console now supports redeclarations of `let` and `class` statements.  The in
 
 For example, previously, when redeclaring a local variable with `let`, the Console would throw an error:  
 
-> ##### Figure 9  
+> ##### Figure 10  
 > The Console in Microsoft Edge 79 showing that the let redeclaration fails  
 > ![The Console in Microsoft Edge 79 showing that the let redeclaration fails][ImageConsoleRedeclarationFails]  
 
 Now, the Console allows the redeclaration:  
 
-> ##### Figure 10  
+> ##### Figure 11  
 > The Console in Microsoft Edge 80 showing that the let redeclaration succeeds  
 > ![The Console in Microsoft Edge 80 showing that the let redeclaration succeeds][ImageConsoleRedeclarationSucceeds]  
 
@@ -191,7 +202,7 @@ DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which
 
 You are able to now view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
 
-> ##### Figure 11  
+> ##### Figure 12  
 > A Request Initiator Chain in the Initiator tab  
 > ![A Request Initiator Chain in the Initiator tab][ImageRequestInitiatorChain]  
 
@@ -210,7 +221,7 @@ Chromium issue [#842488][crbug842488]
 
 After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
 
-> ##### Figure 12  
+> ##### Figure 13  
 > The Overview pane highlighting the inspected resource  
 > ![The Overview pane highlighting the inspected resource][ImageOverviewPaneInspectedResource]  
 
@@ -220,7 +231,7 @@ Chromium issue [#988253][crbug988253]
 
 Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
 
-> ##### Figure 13  
+> ##### Figure 14  
 > The new Path and URL columns in the Network panel  
 > ![The new Path and URL columns in the Network panel][ImagePathNetworkPanel]  
 
@@ -234,7 +245,7 @@ DevTools supports setting a custom User-Agent string through the **Network Condi
 
 The predefined User-Agent strings have been updated to reflect modern browser versions.  
 
-> ##### Figure 14  
+> ##### Figure 15  
 > The User Agent menu in the Network Conditions tab  
 > ![The User Agent menu in the Network Conditions tab][ImageUserAgentNetworkConditionsTab]  
 
@@ -251,7 +262,7 @@ Chromium issue [#1029031][crbug1029031]
 
 The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
 
-> ##### Figure 15  
+> ##### Figure 16  
 > The new configuration UI  
 > ![The new configuration UI][ImageConfigurationUI]  
 
@@ -264,7 +275,7 @@ The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you 
 > [!CAUTION]
 > You may see large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.  
 
-> ##### Figure 16  
+> ##### Figure 17  
 > The coverage mode dropdown menu  
 > ![The coverage mode dropdown menu][ImageCoverageMode]  
 
@@ -307,14 +318,15 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 [ImageDebuggerExtensionVisualStudioCode]: ../../images/2019/12/vscode-debugger.msft.png "Figure 6: The Debugger for Microsoft Edge Extension in VS Code"  
 [ImageWebhintVisualStudioCodeExtensionWorkspace]: ../../images/2019/12/webhint-vscode-extension.msft.gif "Figure 7: The webhint VS Code extension analyzing workspace files in VS Code"  
 [ImageVisualStudioLaunchWebApp]: ../../images/2019/12/vs.msft.png "Figure 8: Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta"  
-[ImageConsoleRedeclarationFails]: ../../images/2019/12/letbefore.msft.png "Figure 9: The Console in Microsoft Edge 79 showing that the let redeclaration fails"  
-[ImageConsoleRedeclarationSucceeds]: ../../images/2019/12/letafter.msft.png "Figure 10: The Console in Microsoft Edge 80 showing that the let redeclaration succeeds"  
-[ImageRequestInitiatorChain]: ../../images/2019/12/initiators.msft.png "Figure 11: A Request Initiator Chain in the Initiator tab"  
-[ImageOverviewPaneInspectedResource]: ../../images/2019/12/overview.msft.png "Figure 12: The Overview pane highlighting the inspected resource"  
-[ImagePathNetworkPanel]: ../../images/2019/12/columns.msft.png "Figure 13: The new Path and URL columns in the Network panel"  
-[ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figure 14: The User Agent menu in the Network Conditions tab"  
-[ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figure 15: The new configuration UI"  
-[ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figure 16: The coverage mode dropdown menu"  
+[ImageTrackingPrevention]: ../../images/2019/12/tracking-prevention.msft.png "Figure 9: Messages in the Console when tracking prevention blocks access to storage for a tracker"  
+[ImageConsoleRedeclarationFails]: ../../images/2019/12/letbefore.msft.png "Figure 10: The Console in Microsoft Edge 79 showing that the let redeclaration fails"  
+[ImageConsoleRedeclarationSucceeds]: ../../images/2019/12/letafter.msft.png "Figure 11: The Console in Microsoft Edge 80 showing that the let redeclaration succeeds"  
+[ImageRequestInitiatorChain]: ../../images/2019/12/initiators.msft.png "Figure 12: A Request Initiator Chain in the Initiator tab"  
+[ImageOverviewPaneInspectedResource]: ../../images/2019/12/overview.msft.png "Figure 13: The Overview pane highlighting the inspected resource"  
+[ImagePathNetworkPanel]: ../../images/2019/12/columns.msft.png "Figure 14: The new Path and URL columns in the Network panel"  
+[ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figure 15: The User Agent menu in the Network Conditions tab"  
+[ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figure 16: The new configuration UI"  
+[ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figure 17: The coverage mode dropdown menu"  
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 
@@ -359,6 +371,7 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 [Webhint]: https://webhint.io "webhint"  
 [WebhintBrowserExtension]: https://webhint.io/docs/user-guide/extensions/extension-browser "Webhint Browser Extension | webhint documentation"  
 [WebhintVisualStudioCodeExtension]: https://webhint.io/docs/user-guide/extensions/vscode-webhint "Webhint VS Code Extension | webhint documentation"  
+[TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79/#GrgCdVqMtfYTzjuJ.97 "Improving Tracking Prevention in Microsoft Edge blog post"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
