@@ -10,14 +10,14 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge
 ---
 
-# interface IWebView2NewVersionAvailableEventHandler 
+# interface IWebView2ContainsFullScreenElementChangedEventHandler 
 
 ```
-interface IWebView2NewVersionAvailableEventHandler
+interface IWebView2ContainsFullScreenElementChangedEventHandler
   : public IUnknown
 ```
 
-The caller implements this interface to receive NewVersionAvailable events.
+The caller implements this method to receive the ContainsFullScreenElementChanged events.
 
 ## Summary
 
@@ -25,7 +25,7 @@ The caller implements this interface to receive NewVersionAvailable events.
 --------------------------------|---------------------------------------------
 [Invoke](#invoke) | Called to provide the implementer with the event args for the corresponding event.
 
-Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#iwebview2newversionavailableeventargs) to get the new version number.
+There are no event args for this event.
 
 ## Members
 
@@ -33,5 +33,7 @@ Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebVie
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2Environment](IWebView2Environment.md#iwebview2environment) * webviewEnvironment,[IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#iwebview2newversionavailableeventargs) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView5](IWebView2WebView5.md#iwebview2webview5) * webview,IUnknown * args)
+
+There are no event args and the args parameter will be null.
 
