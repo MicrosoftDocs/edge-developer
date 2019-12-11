@@ -2,7 +2,7 @@
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -127,7 +127,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Go to a function declaration \(if currently-open file is HTML or a script\), or a rule set \(if currently-open file is a stylesheet\) | Press `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
 | Close the active tab | `Alt`+`W` | `Option`+`W` |  
 
-<!--[201705ReleaseNotesContinue]: /web/updates/2017/05/devtools-release-notes#continue  -->
+<!--[201705ReleaseNotesContinue]: /microsoft-edge/devtools-guide-chromium/whats-new/2017/05/devtools-release-notes#continue  -->
 
 <!-- TODO: Link Continue Release Notes "Continue to a certain line of code while paused" when a good section exists. -->
 

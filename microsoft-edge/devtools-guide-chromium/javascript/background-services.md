@@ -2,7 +2,7 @@
 title: Debug Background Services With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -178,8 +178,8 @@ To display a push notification to a user, a **service worker** must first use th
 
 <!-- links -->  
 
-<!--[BackgroundFetchAPI]: ../../../web/updates/2018/12/background-fetch.md "Background Fetch API"  -->  
-<!--[BackgroundSyncAPI]: ../../../web/updates/2015/12/background-sync.md  "Background Sync API"  -->
+<!--[BackgroundFetchAPI]: /microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
+<!--[BackgroundSyncAPI]: /microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 <!--[OpenDevTools]: ../open.md "Open Microsoft Edge (Chromium) Developer Tools"  -->
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"  
