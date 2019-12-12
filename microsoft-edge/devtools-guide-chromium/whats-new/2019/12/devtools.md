@@ -1,5 +1,5 @@
 ---
-title: What is new in DevTools (Microsoft Edge 80)
+title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2019
@@ -28,27 +28,27 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# What is new in DevTools (Microsoft Edge 80) 
+# What's new in DevTools (Microsoft Edge 80) 
 
 
 
 ## Announcements from the Microsoft Edge DevTools team
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! The team is excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in the DevTools, download [Microsoft Edge Canary](#consider-canary) to get nightly builds and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! We're excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download [Microsoft Edge Canary](#consider-canary) to get nightly builds and [follow us on Twitter][EdgeDevToolsTwitterAccount].
 
 ### Accessibility improvements to the DevTools  
 
-The Microsoft Edge DevTools team has contributed over 200 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. The DevTools team wants to enable every developer building the web to use the DevTools including screen reader and keyboard users.  
+The Microsoft Edge DevTools team has contributed over 200 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. We want to enable every developer building the web to use the DevTools including screen reader and keyboard users.  
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
 > ![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements][ImagePerformanceToolKeyboardReaderImprovements]  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] or [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, the DevTools team is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the ![feedback icon][ImageFeedbackIcon] icon and let the team know what you think!  
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, the team is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the ![feedback icon][ImageFeedbackIcon] icon and let us know what you think!  
 
 ### Using the DevTools in other languages  
 
-When the Microsoft Edge DevTools team examined data from other developer tools, the team learned that many developers prefer to use development tools in their native language, not just in English. So the team has been hard at work translating the DevTools into 10 other languages.  You are able to now use the DevTools in the following languages:  
+When the Microsoft Edge DevTools team examined data from other developer tools, we learned that many developers prefer to use development tools in their native language, not just in English. So we've been hard at work translating the DevTools into 10 other languages.  You are now able to use the DevTools in the following languages:  
 
 1.  Chinese (Simplified) - 中文(简体)（简体）  
 1.  Chinese (Traditional) - 中文(繁體)（繁體）  
@@ -68,7 +68,7 @@ To use the DevTools in your native language, navigate to `edge://flags` and set 
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-If you want to use the DevTools in a different language than the ones that are available, send the team your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the ![feedback icon][ImageFeedbackIcon] icon.  
+If you want to use the DevTools in a different language than the ones that are available, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the ![feedback icon][ImageFeedbackIcon] icon.  
 
 ### webhint Microsoft Edge extension  
 
@@ -101,7 +101,7 @@ There are two panes that you may use for your debugging experience.
 1.  **Z-index**  Navigate through the different elements in the web application with the z-index context in mind.  This is the default pane.  
 2.  **3D DOM**  Explore the DOM as a whole with all the elements at your fingertips.  To access this pane, click on the **DOM** pane next to the **Z-index** pane.  
 
-The DevTools team is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback so the team is able to continue improving the 3D View for you!  Simply click the ![feedback icon][ImageFeedbackIcon] icon in the DevTools and enter any feedback or feature requests you have for the 3D View.
+We're working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback so the team is able to continue improving the 3D View for you!  Simply click the ![feedback icon][ImageFeedbackIcon] icon in the DevTools and enter any feedback or feature requests you have for the 3D View.
 
 ### Visual Studio Code extensions  
 
@@ -151,7 +151,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 
 ### Visual Studio  
 
-With [Visual Studio][MicrosoftVisualStudio] today, you are able to already debug JavaScript running in the legacy version of Microsoft Edge, built on top of the [EdgeHTML][DevGuideEdgeHtmlWhatsNew] web platform.  Starting with Visual Studio 2019 version 16.2, support is extended to the current builds of Microsoft Edge that leverage Chromium.  Visit [Download Visual Studio 2019 for Windows \& Mac][MicrosoftVisualStudioDownloads] to download the latest Visual Studio!  
+With [Visual Studio][MicrosoftVisualStudio] today, you are already able to debug JavaScript running in the legacy version of Microsoft Edge, built on top of the [EdgeHTML][DevGuideEdgeHtmlWhatsNew] web platform.  Starting with Visual Studio 2019 version 16.2, support is extended to the current builds of Microsoft Edge that leverage Chromium.  Visit [Download Visual Studio 2019 for Windows \& Mac][MicrosoftVisualStudioDownloads] to download the latest Visual Studio!  
 
 > ##### Figure 8  
 > Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
