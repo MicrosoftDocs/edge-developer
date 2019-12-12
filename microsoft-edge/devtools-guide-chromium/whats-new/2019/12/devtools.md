@@ -1,5 +1,5 @@
 ---
-title: What Is New In DevTools (Microsoft Edge 80)
+title: What is new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/11/2019
@@ -7,6 +7,19 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Kayce Basques 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 
 
 
@@ -15,7 +28,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# What Is New In DevTools (Microsoft Edge 80) 
+# What is new in DevTools (Microsoft Edge 80) 
 
 
 
@@ -25,7 +38,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Accessibility improvements to the DevTools  
 
-The Microsoft Edge DevTools team has contributed over 200 changes to the DevTools to address high-impact color contrast, keyboard, and screen reader issues. The DevTools team wants to enable every developer building the web to use the DevTools including screen reader and keyboard users.  
+The Microsoft Edge DevTools team has contributed over 200 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. The DevTools team wants to enable every developer building the web to use the DevTools including screen reader and keyboard users.  
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
@@ -35,7 +48,7 @@ Want to learn how to make your web page accessible to all of your users?  Downlo
 
 ### Using the DevTools in other languages  
 
-When the Microsoft Edge DevTools team examined data from other developer tools was examined, the team learned that many developers prefer to use development tools in their native language, not just in English. So the team has been hard at work translating the DevTools into 10 other languages.  You are able to now use the DevTools in the following languages:  
+When the Microsoft Edge DevTools team examined data from other developer tools, the team learned that many developers prefer to use development tools in their native language, not just in English. So the team has been hard at work translating the DevTools into 10 other languages.  You are able to now use the DevTools in the following languages:  
 
 1.  Chinese (Simplified) - 中文(简体)（简体）  
 1.  Chinese (Traditional) - 中文(繁體)（繁體）  
@@ -308,7 +321,7 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 
 <!-- image links -->  
 
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png  
+[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon2.msft.png 
 
 [ImagePerformanceToolKeyboardReaderImprovements]: ../../images/2019/12/a11y-performance-tool.msft.gif "Figure 1: The Performance tool in the DevTools with the keyboard navigation and screen reader improvements"  
 [ImageLocalizedGerman]: ../../images/2019/12/localized-devtools.msft.png "Figure 2: The DevTools in German"  
