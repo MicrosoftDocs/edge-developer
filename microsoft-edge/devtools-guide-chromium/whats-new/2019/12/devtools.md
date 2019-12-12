@@ -160,9 +160,9 @@ With [Visual Studio][MicrosoftVisualStudio] today, you are already able to debug
 [Read the blog post about how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
 ### Console messages for Tracking Prevention
-Tracking prevention is designed to protect you from being tracked by websites that you aren’t accessing directly. Whenever a website is visited, trackers from other sites may save information in the browser using cookies and other storage mechanisms. This information may include the sites you’ve visited and the content you’re interested in, building a digital profile which can be accessed by organizations to offer personalized content when visiting other sites.
+Tracking prevention is designed to protect you from being tracked by websites that you haven't visited before. Whenever a website is visited, trackers from other sites may save information in the browser using cookies and other storage mechanisms. This information may include the sites you’ve visited and the content you’re interested in, building a digital profile which can be accessed by organizations to offer personalized content when visiting other sites.
 
-The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, the DevTools team has also added warning messages in the Console when a tracker is blocked.
+The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, we've has also added warning messages in the Console when a tracker is blocked.
 
 > ##### Figure 9  
 > Messages in the Console when tracking prevention blocks access to storage for a tracker
