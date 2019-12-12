@@ -78,7 +78,7 @@ The webhint browser extension allows you to easily scan your web page and get fe
 > The Hints tab in the Microsoft Edge DevTools when the webhint browser extension is installed  
 > ![The Hints tab in the Microsoft Edge DevTools when the webhint browser extension is installed][ImageHintsTabWebhintExtension]  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, simply open DevTools and select the Hints tab.  From here, you are be able to run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more about the extension.  
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, simply open DevTools and select the Hints tab.  From here, you are able to run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more about the extension.  
 
 ### 3D View  
 
@@ -174,7 +174,7 @@ The default tracking prevention setting is Balanced mode, which blocks 3rd party
 
 The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
 
-### Support for `let` and `class` redeclarations in the Console   
+### Support for let and class redeclarations in the Console   
 
 The Console now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.  
 
@@ -221,9 +221,9 @@ You are able to now view the initiators and dependencies of a network request as
 
 After [logging network activity in the Network panel][DevToolsNetworkIndex], click a resource and then go to the **Initiator** tab to view the **Request Initiator Chain**:  
 
-*   The **inspected resource** is bold.  In the screenshot above, `https://az416426.vo.msecnd.net/next/ai.2.min.js` is the inspected resource.  
-*   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `https://az416426.vo.msecnd.net/next/ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `https://az416426.vo.msecnd.net/next/ai.2.min.js`.  
-*   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `https://az416426.vo.msecnd.net/next/ai.2.min.js`.  In other words, `https://az416426.vo.msecnd.net/next/ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.  
+*   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.  
+*   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  
+*   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.  
 
 > [!NOTE]
 > Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  See [View initiators and dependencies][DevToolsNetworkReferenceViewInitiatorsDependencies].  
@@ -321,7 +321,7 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 
 <!-- image links -->  
 
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon2.msft.png 
+[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png 
 
 [ImagePerformanceToolKeyboardReaderImprovements]: ../../images/2019/12/a11y-performance-tool.msft.gif "Figure 1: The Performance tool in the DevTools with the keyboard navigation and screen reader improvements"  
 [ImageLocalizedGerman]: ../../images/2019/12/localized-devtools.msft.png "Figure 2: The DevTools in German"  
