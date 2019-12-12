@@ -44,7 +44,7 @@ The Microsoft Edge DevTools team has contributed over 200 changes to Chromium to
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
 > ![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements][ImagePerformanceToolKeyboardReaderImprovements]  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, the team is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the ![feedback icon][ImageFeedbackIcon] icon and let us know what you think!  
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, the team is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the **[Feedback](#feedback)** icon and let us know what you think!  
 
 ### Using the DevTools in other languages  
 
@@ -68,7 +68,7 @@ To use the DevTools in your native language, navigate to `edge://flags` and set 
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-If you want to use the DevTools in a different language than the ones that are available, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the ![feedback icon][ImageFeedbackIcon] icon.  
+If you want to use the DevTools in a different language than the ones that are available, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the **[Feedback](#feedback)** icon.  
 
 ### webhint Microsoft Edge extension  
 
@@ -101,7 +101,7 @@ There are two panes that you may use for your debugging experience.
 1.  **Z-index**  Navigate through the different elements in the web application with the z-index context in mind.  This is the default pane.  
 2.  **3D DOM**  Explore the DOM as a whole with all the elements at your fingertips.  To access this pane, click on the **DOM** pane next to the **Z-index** pane.  
 
-We're working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback so the team is able to continue improving the 3D View for you!  Simply click the ![feedback icon][ImageFeedbackIcon] icon in the DevTools and enter any feedback or feature requests you have for the 3D View.
+We're working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback so the team is able to continue improving the 3D View for you!  Simply click the **[Feedback](#feedback)** icon in the DevTools and enter any feedback or feature requests you have for the 3D View.
 
 ### Visual Studio Code extensions  
 
@@ -304,7 +304,12 @@ Chromium issue [#1004203][crbug1004203]
 
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
-*   Send your feedback using the ![feedback icon][ImageFeedbackIcon] icon in the DevTools.  
+*   Send your feedback using the **Feedback** icon in the DevTools.  
+
+> ##### Figure 18
+> The **Feedback** icon in the Microsoft Edge DevTools  
+> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
+
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository.  
 
@@ -320,8 +325,6 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 
 
 <!-- image links -->  
-
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png 
 
 [ImagePerformanceToolKeyboardReaderImprovements]: ../../images/2019/12/a11y-performance-tool.msft.gif "Figure 1: The Performance tool in the DevTools with the keyboard navigation and screen reader improvements"  
 [ImageLocalizedGerman]: ../../images/2019/12/localized-devtools.msft.png "Figure 2: The DevTools in German"  
@@ -340,6 +343,7 @@ If you are on Windows or macOS, consider using [Microsoft Edge Canary][Microsoft
 [ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figure 15: The User Agent menu in the Network Conditions tab"  
 [ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figure 16: The new configuration UI"  
 [ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figure 17: The coverage mode dropdown menu"  
+[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png "Figure 18: The **Feedback** icon in the Microsoft Edge DevTools"
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 
