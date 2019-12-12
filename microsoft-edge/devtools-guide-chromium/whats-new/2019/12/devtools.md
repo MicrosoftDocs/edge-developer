@@ -47,20 +47,15 @@ The Microsoft Edge DevTools team has contributed over 200 changes to Chromium to
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  If you use screen readers or the keyboard to navigate around the DevTools, the team is eager to hear your feedback so [tweet][PostTweetEdgeDevTools] or click the **[Feedback](#feedback)** icon and let us know what you think!  
 
 ### Using the DevTools in other languages  
+When the Microsoft Edge DevTools team examined data from other developer tools, we learned that many developers prefer to use development tools in their native language, not just in English. We’re excited to announce localization for the Microsoft Edge DevTools, a feature flag that allows you to fit your developer experience to one of 10 languages besides English: 
 
-When the Microsoft Edge DevTools team examined data from other developer tools, we learned that many developers prefer to use development tools in their native language, not just in English. So we've been hard at work translating the DevTools into 10 other languages.  You are now able to use the DevTools in the following languages:  
-
-1.  Chinese (Simplified) - 中文(简体)（简体）  
-1.  Chinese (Traditional) - 中文(繁體)（繁體）  
-1.  English (United States)  
-1.  French – français  
-1.  German - Deutsch  
-1.  Italian - italiano  
-1.  Japanese - 日本語  
-1.  Korean - 한국어  
-1.  Portuguese - português  
-1.  Russian – русский  
-1.  Spanish - español  
+| | |
+| -------- | ---- |
+| Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|
+| French – français | German - deutsch |
+| Italian - italiano | Portuguese - português | 
+| Korean - 한국어 | Japanese - 日本語 |
+| Russian – русский | Spanish - español |
 
 To use the DevTools in your native language, navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart the browser and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  Now, whatever language you display the browser in `edge://settings/languages`, the DevTools matches that language.  
 
@@ -91,7 +86,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 With it you are able to:  
 
 *   Explore the web page translated into a 3D perspective  
-*   Debugging based on z-index stacking context  
+*   Debug based on z-index stacking context  
 *   Clear some of the clutter in the DOM pane or the z-index pane
 *   Pick the color scheme to best debug your DOM problems or z-index problems  
 
