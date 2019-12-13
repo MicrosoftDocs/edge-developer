@@ -16,44 +16,44 @@ With [Progressive Web Apps][MDNApps] \(or simply PWAs\) you do not have to decid
 
 :::row:::
     :::column:::
-        ![Discoverable icon](media/i_search.png)
+        ![Discoverable icon](images/i_search.png)
         ### [Discoverable][MDNPwaAdvantagesDiscoverable]
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
-        ![Installable icon](media/i_package.png)
+        ![Installable icon](images/i_package.png)
         ### [Installable][MDNPwaAdvantagesInstallable]
         Pin and launch from the home screen  
     :::column-end:::
     :::column:::
-        ![Re-engageable icon](media/i_push-notification.png)
+        ![Re-engageable icon](images/i_push-notification.png)
         ### [Re-engageable][MDNPwaAdvantagesReEngageable]
         Send push notifications, even when the app is not active  
     :::column-end:::
     :::column:::
-        ![Network Independent icon](media/i_offline.png)
+        ![Network Independent icon](images/i_offline.png)
         ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]
         Works offline and in low-network conditions  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        ![Progressive icon](media/i_progressive.png)
+        ![Progressive icon](images/i_progressive.png)
         ### [Progressive][MDNPwaAdvantagesProgressive]
         Experience scales \(up or down\) with device capabilities  
     :::column-end:::
     :::column:::
-        ![Safe icon](media/i_security.png)
+        ![Safe icon](images/i_security.png)
         ### [Safe][MDNPwaAdvantagesSafe]
         Provides a secure HTTPS endpoint and other user safeguards  
     :::column-end:::
     :::column:::
-        ![Responsive icon](media/i_responsive.png)
+        ![Responsive icon](images/i_responsive.png)
         ### [Responsive][MDNPwaAdvantagesResponsive]
         Adapts to the user's screen size / orientation and input method  
     :::column-end:::
     :::column:::
-        ![Linkable icon](media/i_link.png)
+        ![Linkable icon](images/i_link.png)
         ### [Linkable][MDNPwaAdvantagesLinkable]
         Share and launch from a standard hyperlink  
     :::column-end:::
@@ -65,7 +65,7 @@ By building or converting your existing site to a PWA, you are able to better en
 
 When you build a Progressive Web App to take advantage of Windows 10, you are able to distribute your PWA through the [Microsoft Store][MicrosoftDeveloperStore], the entire Windows 10 install base of 600+ million active monthly users is your potential app audience!  Applications developed this way run as [Universal Windows Platform][WindowsUWPGetStartedGuide] apps and have native like access to the WinRT APIs.  Note that the web platform rendering your code is EdgeHTML when using the WinRT APIs so be sure to use feature detection before calling any Windows specific APIs to ensure your PWA is able to still run across platforms where Microsoft Edge \(Chromium\) PWAs are available.  
 
-[Here is how to get started](get-started.md) converting your web app to a PWA \(EdgeHTML\), testing it on Windows 10, and distributing it in the Microsoft Store.  
+<!-- [Here is how to get started](get-started.md) converting your web app to a PWA \(EdgeHTML\), testing it on Windows 10, and distributing it in the Microsoft Store.  -->  
 
 ## Requirements  
 
@@ -75,7 +75,7 @@ To run as a PWA, your server-hosted web app at minimum requires:
   
 *   [X] [Service workers][MDNServiceWorkerApi].  Use service worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and page load perf optimizations.  
 
-*   [X] [Web app manifest][MDNWebAppManifest].  Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\) so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  Associating your site with a web app manifest makes it eligible for [automatic inclusion in the Microsoft Store](microsoft-store.md#automatic-pwa-importing-with-bing) through the Bing indexing service.  
+*   [X] [Web app manifest][MDNWebAppManifest].  Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\) so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  <!--Associating your site with a web app manifest makes it eligible for [automatic inclusion in the Microsoft Store](microsoft-store.md#automatic-pwa-importing-with-bing) through the Bing indexing service.  -->  
 
 To be a great PWA, your app also needs:  
 
@@ -92,7 +92,7 @@ To submit your Progressive Web App to the [Microsoft Store][MicrosoftDeveloperSt
 *   [X] A [Microsoft developer account][WindowsUWPPublishDeveloperAccount]  
 *   [X] Completed [steps for publishing a Windows app][WindowsUWPPublishIndex]  
 
-In the coming months, existing PWAs on the web meeting [specific criteria](microsoft-store.md#criteria-for-automatic-submission) are auto-indexed by the Bing search engine into the Microsoft Store \(where developers are able to directly manage them for their Windows 10 audience\).  
+<!--In the coming months, existing PWAs on the web meeting [specific criteria](microsoft-store.md#criteria-for-automatic-submission) are auto-indexed by the Bing search engine into the Microsoft Store \(where developers are able to directly manage them for their Windows 10 audience\).  -->  
 
 Check out [PWAs in the Microsoft Store][ProgressiveWebAppsMicrosoftStore] for further details.  
 
