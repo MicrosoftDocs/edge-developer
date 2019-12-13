@@ -94,13 +94,15 @@ To access the 3D View, navigate to `edge://flags` and ensure that the **Develope
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).
 
+Chromium issue [#987787][crbug987787]
+
 ## Visual Studio Code extensions  
 
 The DevTools team has also released some extensions for [Visual Studio Code \(VS Code\)][VisualStudioCode] that let you use the power of the DevTools directly from your text editor! Check out the extensions below:  
 
 ### Elements for Microsoft Edge  
 
-By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you can use the Elements tool from within [VS Code][VisualStudioCode].
+By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you can use the Elements tool from within VS Code.
 
 > ##### Figure 5  
 > Various features of the Elements for Microsoft Edge Extension in VS Code  
@@ -292,7 +294,7 @@ To discuss the new features and changes in this post, or anything else related t
 
 ## Download the Edge preview channels   
 
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
+If you are on Windows or macOS, consider using the [Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
 
 <!--<<../../_shared/discover.md>>  -->  
 
@@ -323,8 +325,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: microsoft-edge/devtools-guide-chromium/command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index.md "Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools"  
+[DevToolsCommandMenuIndex]: ../../devtools-guide-chromium/command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCoverageIndex]: ../../devtools-guide-chromium/coverage/index.md "Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools"  
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
 [DevToolsNetworkIndex]: (/microsoft-edge/devtools-guide-chromium/network/index.md) "Inspect Network Activity In Microsoft Edge DevTools"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference.md#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference"  
@@ -342,6 +344,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [crbug1029031]: https://crbug.com/1029031 "1029031 - UA Strings are getting outdated - Monorail" 
 [crbug963183]: https://crbug.com/963183 "963183 - DevTools are not WCAG compliant"
 [crbug941561]: https://crbug.com/941561 "941561 - Localizability of the DevTools"
+[crbug987787]: https://crbug.com/987787 "987787 -  Dom 3D View"
 
 [AccessibilityInsights]: https://accessibilityinsights.io "Accessibility Insights"  
 
