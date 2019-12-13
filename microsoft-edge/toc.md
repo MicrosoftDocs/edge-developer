@@ -150,7 +150,7 @@
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
-## [Progressive Web Apps](progressive-web-apps.md)
+## [Progressive Web Apps (EdgeHTML)](progressive-web-apps/index.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 #### [PWAs for Xbox](progressive-web-apps/xbox-considerations.md)
