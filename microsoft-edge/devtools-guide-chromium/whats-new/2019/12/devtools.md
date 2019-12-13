@@ -36,7 +36,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Edge DevTools team! We're excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
 
-## Accessibility improvements to the DevTools  
+### Accessibility improvements to the DevTools  
 
 We've contributed over 200 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. We want to enable every developer building the web to use the DevTools.
 
@@ -50,7 +50,7 @@ If you use screen readers or the keyboard to navigate around the DevTools, we're
 
 Chromium issue [#963183][crbug963183]
 
-## Using the DevTools in other languages  
+### Using the DevTools in other languages  
 When we looked at data from other developer tools like StackOverflow and VS Code, we learned
 that many developers use development tools in their native language, not just in English. We’re excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
 
@@ -72,7 +72,7 @@ If you want to use the DevTools in a different language than the ones that are a
 
 Chromium issue [#941561][crbug941561]
 
-## webhint Edge extension  
+### webhint Edge extension  
 
 The webhint Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
 
@@ -82,7 +82,7 @@ The webhint Edge extension allows you to easily scan your web page and get feedb
 
 [Try the webhint browser extension in Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, you can run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
-## 3D View  
+### 3D View  
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  
 
@@ -96,21 +96,21 @@ We're working on the UI and adding more functionality to the 3D View so please s
 
 Chromium issue [#987787][crbug987787]
 
-## Visual Studio Code extensions  
+### Visual Studio Code extensions  
 
 The DevTools team has also released some extensions for [Visual Studio Code \(VS Code\)][VisualStudioCode] that let you use the power of the DevTools directly from your text editor! Check out the extensions below:  
 
-### Elements for Microsoft Edge  
+#### Elements for Microsoft Edge  
 
 By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you can use the Elements tool from within VS Code.
 
 > ##### Figure 5  
-> Various features of the Elements for Microsoft Edge Extension in VS Code  
-> ![Various features of the Elements for Microsoft Edge Extension in VS Code][ImageElementsVisualStudioCode]  
+> The Elements tool in VS Code using the Elements for Microsoft Edge extension
+> ![The Elements tool in VS Code using the Elements for Microsoft Edge extension][ImageElementsVisualStudioCode]  
 
 For more information, check out [Elements for Microsoft Edge VS Code extension][VisualStudioCodeElementEdgeExtension].  
 
-### Debugger for Microsoft Edge  
+#### Debugger for Microsoft Edge  
 
 With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, you can debug JavaScript running in Edge directly from VS Code!  
 
@@ -120,17 +120,17 @@ With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS C
 
 For more information, check out [how to debug Edge from VS Code][VisualStudioCodeDebuggerEdgeExtension].  
 
-### webhint  
+#### webhint  
 
 The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.  
 
 > ##### Figure 7  
-> The webhint VS Code extension analyzing workspace files in VS Code  
-> ![The webhint VS Code extension analyzing workspace files in VS Code][ImageWebhintVisualStudioCodeExtensionWorkspace]  
+> The webhint VS Code extension analyzing a .tsx file in VS Code  
+> ![The webhint VS Code extension analyzing a .tsx file in VS Code][ImageWebhintVisualStudioCodeExtensionWorkspace]  
 
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
-## Visual Studio  
+### Visual Studio  
 Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running in Edge with the Visual Studio debugger. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
 
 > ##### Figure 8  
@@ -139,7 +139,7 @@ Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running 
 
 [Read our blog post to learn how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
-## Tracking prevention Console messages
+### Tracking prevention Console messages
 Tracking prevention is a unique feature in Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
 
 > ##### Figure 9  
@@ -152,7 +152,7 @@ Tracking prevention is a unique feature in Edge that protects you from being tra
 
 The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
 
-## Support for let and class redeclarations in the Console   
+### Support for let and class redeclarations in the Console   
 
 The Console now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.  
 
@@ -173,7 +173,7 @@ Now, the Console allows the redeclaration:
 
 Chromium issue [#1004193][crbug1004193]  
 
-## Improved WebAssembly debugging 
+### Improved WebAssembly debugging 
 
 DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
 
@@ -187,9 +187,9 @@ DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which
 > ![The new DWARF-powered WebAssembly debugging][ImageDwarfPoweredWebAssemblyDebugging]  
 -->  
 
-## Network panel updates   
+### Network panel updates   
 
-### Request Initiator Chains in the Initiator tab   
+#### Request Initiator Chains in the Initiator tab   
 
 You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
 
@@ -208,7 +208,7 @@ After [logging network activity in the Network panel][DevToolsNetworkIndex], cli
 
 Chromium issue [#842488][crbug842488]  
 
-### Highlight the selected network request in the Overview   
+#### Highlight the selected network request in the Overview   
 
 After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
 
@@ -218,7 +218,7 @@ After you click a network resource in order to inspect it, the Network panel now
 
 Chromium issue [#988253][crbug988253]  
 
-### URL and path columns in the Network panel   
+#### URL and path columns in the Network panel   
 
 Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
 
@@ -230,7 +230,7 @@ Right-click the **Waterfall** table header and select **Path** or **URL** to sho
 
 Chromium issue [#993366][crbug993366]  
 
-### Updated User-Agent strings   
+#### Updated User-Agent strings   
 
 DevTools supports setting a custom User-Agent string through the **Network Conditions** tab.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
 
@@ -247,9 +247,9 @@ To access **Network Conditions**, [open the Command Menu][DevToolsCommandMenuInd
 
 Chromium issue [#1029031][crbug1029031]  
 
-## Audits panel updates   
+### Audits panel updates   
 
-### New configuration UI   
+#### New configuration UI   
 
 The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
 
@@ -257,9 +257,9 @@ The configuration UI has a new, responsive design, and the throttling configurat
 > The new configuration UI  
 > ![The new configuration UI][ImageConfigurationUI]  
 
-## Coverage tab updates   
+### Coverage tab updates   
 
-### Per-function or per-block coverage modes   
+#### Per-function or per-block coverage modes   
 
 The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
 
@@ -270,7 +270,7 @@ The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you 
 > The coverage mode dropdown menu  
 > ![The coverage mode dropdown menu][ImageCoverageMode]  
 
-### Coverage must now be initiated by a page reload   
+#### Coverage must now be initiated by a page reload   
 
 Toggling code coverage without a page reload has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
 
@@ -306,9 +306,9 @@ If you are on Windows or macOS, consider using the [Edge preview channels][Micro
 [ImageLocalizedGerman]: ../../images/2019/12/localized-devtools.msft.png "Figure 2: The DevTools in German"  
 [ImageHintsTabWebhintExtension]: ../../images/2019/12/webhint-browser-extension.msft.png "Figure 3: The Hints tab in the Microsoft Edge DevTools when the webhint browser extension is installed"  
 [Image3DView]: ../../images/2019/12/3dview.msft.png "Figure 4: The 3D View in the Microsoft Edge DevTools"  
-[ImageElementsVisualStudioCode]: ../../images/2019/12/elements-for-edge.msft.gif "Figure 5: Various features of the Elements for Microsoft Edge Extension in VS Code"  
+[ImageElementsVisualStudioCode]: ../../images/2019/12/elements-for-edge.msft.png "Figure 5: The Elements tool in VS Code using the Elements for Microsoft Edge Extension"  
 [ImageDebuggerExtensionVisualStudioCode]: ../../images/2019/12/vscode-debugger.msft.png "Figure 6: The Debugger for Microsoft Edge Extension in VS Code"  
-[ImageWebhintVisualStudioCodeExtensionWorkspace]: ../../images/2019/12/webhint-vscode-extension.msft.png "Figure 7: The webhint VS Code extension analyzing workspace files in VS Code"  
+[ImageWebhintVisualStudioCodeExtensionWorkspace]: ../../images/2019/12/webhint-vscode-extension.msft.png "Figure 7: The webhint VS Code extension analyzing a .tsx files in VS Code"  
 [ImageVisualStudioLaunchWebApp]: ../../images/2019/12/vs.msft.png "Figure 8: Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta"  
 [ImageTrackingPrevention]: ../../images/2019/12/tracking-prevention.msft.png "Figure 9: Messages in the Console when tracking prevention blocks access to storage for a tracker"  
 [ImageConsoleRedeclarationFails]: ../../images/2019/12/letbefore.msft.png "Figure 10: The Console in Microsoft Edge 79 showing that the let redeclaration fails"  
