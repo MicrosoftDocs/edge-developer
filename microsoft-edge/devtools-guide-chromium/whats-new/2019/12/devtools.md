@@ -90,7 +90,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 > The 3D View in the DevTools  
 > ![The 3D View in the DevTools][Image3DView]  
 
-To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
+To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).
 
@@ -292,7 +292,7 @@ To discuss the new features and changes in this post, or anything else related t
 
 ## Download the Edge preview channels   
 
-If you are on Windows or macOS, consider using the [Microsoft Edge previw channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
+If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
 
 <!--<<../../_shared/discover.md>>  -->  
 
