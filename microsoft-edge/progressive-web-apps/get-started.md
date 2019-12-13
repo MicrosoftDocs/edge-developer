@@ -3,7 +3,7 @@ description: This guide will give you an overview of PWA basics and tools for bu
 title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/05/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 
 # Get started with Progressive Web Apps
 
-Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
+Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) apps.
 
 This guide will give you an overview of PWA basics by building a simple *localhost* web app as a PWA using *Microsoft Visual Studio* and some *PWA Builder* utilities. The "finished" product will work similarly across any browser that supports PWAs.
 
@@ -29,7 +29,7 @@ You can build PWAs with any web development IDE. The following are only prerequi
 
 ## Set up a basic web app
 
-For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs) template to create a basic, localhost web app that serves up an *index.html* page. Imagine this as a placeholder for the compelling, full-featured web app you'll be developing as a PWA.
+For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app](https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs) template to create a basic, localhost web app that serves up an *index.html* page. Imagine this as a placeholder for the compelling, full-featured web app you'll be developing as a PWA.
 
 1. Launch Visual Studio, and start a new project (**File** > **New** > **Project...** *or* Ctrl+Shift+N).
 
@@ -43,11 +43,11 @@ For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app
 
 ## Turn your app into a PWA
 
-Now its time to wire up the basic [PWA requirements](../progressive-web-apps.md#requirements) for your web app: a *Web App Manifest*, *HTTPS* and *Service Workers*.
+Now its time to wire up the basic [PWA requirements](index.md#requirements) for your web app: a *Web App Manifest*, *HTTPS* and *Service Workers*.
 
 ### Web App Manifest
 
-A [*Web App Manifest*](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a JSON metadata file describing your app, including its name, author, entry page URL, and icon(s). Because it follows a [standards-based schema](https://www.w3.org/TR/appmanifest/), you need only supply a single web app manifest for your PWA to be installable on any platform / OS / device that supports PWAs. In the Windows ecosystem, your web app manifest signals to the Bing web indexer that your PWA is a candidate for [automatic inclusion in the Microsoft Store](./microsoft-store.md), where it can reach nearly 700 million active monthly users as a Windows 10 app.
+A [*Web App Manifest*](https://developer.mozilla.org/docs/Web/Manifest) is a JSON metadata file describing your app, including its name, author, entry page URL, and icon(s). Because it follows a [standards-based schema](https://www.w3.org/TR/appmanifest/), you need only supply a single web app manifest for your PWA to be installable on any platform / OS / device that supports PWAs. In the Windows ecosystem, your web app manifest signals to the Bing web indexer that your PWA is a candidate for [automatic inclusion in the Microsoft Store](./microsoft-store.md), where it can reach nearly 700 million active monthly users as a Windows 10 app.
 
 If this were an existing live site, you could quickly generate a web app manifest using [PWA Builder](https://www.pwabuilder.com/). Since its still an unpublished project, we'll copy in a sample manifest.
 
@@ -75,7 +75,7 @@ If this were an existing live site, you could quickly generate a web app manifes
     ```
     If this were a real PWA, you'd obviously want to customize at least the *name*, *start_url*, *short_name*, and *description*, as well as the *icons* (we'll get to those next...). 
 
-    See the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest
+    See the [Web App Manifest](https://developer.mozilla.org/docs/Web/Manifest
 ) reference on *MDN web docs* to learn more about the different member values and their purpose.
 
 3. Next, let's fill in the empty `icons` array with actual image paths. For that, we'll use PWA Builder's *App Image Generator*.
@@ -114,13 +114,13 @@ If you publish the app live (with an actual `start_url`), the Bing search engine
  
  - At least one icon 512px square or larger (to ensure an image source of sufficient resolution for auto-generating you app's splash screen, store listing, tile image, etc.)
 
- ...in addition to being [HTTPS](#https), using [service workers](#service-workers), complying with [Microsoft Store Policies](https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies).
+ ...in addition to being [HTTPS](#https), using [service workers](#service-workers), complying with [Microsoft Store Policies](https://docs.microsoft.com/legal/windows/agreements/store-policies).
 
 ### HTTPS
 
-[Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) and other key PWA technologies that work with service workers (such as the [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache), [Push](https://developer.mozilla.org/en-US/docs/Web/API/Push_API), and [Background Sync](https://developer.mozilla.org/en-US/docs/Web/API/SyncManager) APIs) only work across secure connections, which means [*HTTPS*](https://en.wikipedia.org/wiki/HTTPS) for live sites or *localhost* for  debugging purposes.
+[Service Workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and other key PWA technologies that work with service workers (such as the [Cache](https://developer.mozilla.org/docs/Web/API/Cache), [Push](https://developer.mozilla.org/docs/Web/API/Push_API), and [Background Sync](https://developer.mozilla.org/docs/Web/API/SyncManager) APIs) only work across secure connections, which means [*HTTPS*](https://en.wikipedia.org/wiki/HTTPS) for live sites or *localhost* for  debugging purposes.
 
-If you were to [publish this web app as a live site](https://docs.microsoft.com/en-us/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/en-us/free/)), you'll want to ensure your server is configured for HTTPS. If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/en-us/services/app-service/web/) to host your site, it will will be served over HTTPS by default.
+If you were to [publish this web app as a live site](https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/free/)), you'll want to ensure your server is configured for HTTPS. If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web/) to host your site, it will will be served over HTTPS by default.
 
 For this guide we'll continue using *http://localhost* as a placeholder for a live site served over *https://*.
 
@@ -128,9 +128,9 @@ For this guide we'll continue using *http://localhost* as a placeholder for a li
 
 *Service Workers* is the key technology behind PWAs. They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks. Service workers also open up all kinds of new performance strategies; and website need not even be full-blown web app to take advantage of the service worker cache for fine-tuned page load performance.
 
-Service workers are event-driven background threads that run from javascript files served up alongside the regular scripts that power your web app. Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread](https://developer.mozilla.org/en-US/docs/Web/API/Worker/postMessage) and a [worker thread](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope/postMessage) can communicate using `postMessage()` and `onmessage` event handlers. 
+Service workers are event-driven background threads that run from javascript files served up alongside the regular scripts that power your web app. Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread](https://developer.mozilla.org/docs/Web/API/Worker/postMessage) and a [worker thread](https://developer.mozilla.org/docs/Web/API/DedicatedWorkerGlobalScope/postMessage) can communicate using `postMessage()` and `onmessage` event handlers. 
 
-You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) reference.
+You associate a service worker with your app by *registering* it to your site's URL origin (or a specified path within it). Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine. For more, *MDN web docs* has a comprehensive guide on [Using Service Workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers) and a detailed [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) reference.
 
 For this tutorial, we'll use a ready-made "Offline page" service worker script courtesy of [PWA Builder](https://www.pwabuilder.com/serviceworker). From this, you can go on to customize it with more elaborate functionality according to your needs for performance, network bandwidth, etc. Check out Mozilla's [Service Worker Cookbook](https://serviceworke.rs/) for a number of useful service worker caching "recipe" ideas.
 
@@ -197,7 +197,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
 ## Add push notifications
 
-Let's make our PWA even more "app-like" by adding client-side support for push notifications using the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) to subscribe to a messaging service and the [Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) to display a toast message upon receiving a message. As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are supported. On the server side, we'll use the [Web-Push](https://www.npmjs.com/package/web-push) open-source library to handle the differences involved in delivering push messages to various browsers.
+Let's make our PWA even more "app-like" by adding client-side support for push notifications using the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) to subscribe to a messaging service and the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API) to display a toast message upon receiving a message. As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are supported. On the server side, we'll use the [Web-Push](https://www.npmjs.com/package/web-push) open-source library to handle the differences involved in delivering push messages to various browsers.
 
 The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html), which is worth checking out for a number of other useful *Web Push* and service worker recipes.
 
@@ -354,7 +354,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     }
 
     ```
-    Check out the MDN documentation on [`PushManager`](https://developer.mozilla.org/en-US/docs/Web/API/PushManager) and NPM docs on [`Web-Push`](https://www.npmjs.com/package/web-push#usage) for more details on how these APIs work and their various options.
+    Check out the MDN documentation on [`PushManager`](https://developer.mozilla.org/docs/Web/API/PushManager) and NPM docs on [`Web-Push`](https://www.npmjs.com/package/web-push#usage) for more details on how these APIs work and their various options.
 
 5. **Set up push and notificationclick event handlers.**
 
@@ -426,7 +426,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 This guide demonstrated the basic anatomy of a Progressive Web App and Microsoft PWA development tools including Visual Studio, PWA Builder, and Edge DevTools.
 
-Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements) beyond what we covered, including responsive design, deep-linking, [cross-browser testing](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/) and other [best practices](https://sonarwhal.com/) (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
+Of course, there's a lot more that goes into [making a great PWA](index.md#requirements) beyond what we covered, including responsive design, deep-linking, [cross-browser testing](https://developer.microsoft.com/microsoft-edge/tools/remote/) and other [best practices](https://sonarwhal.com/) (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
 
 Check out our other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience:
 
@@ -434,4 +434,4 @@ Check out our other PWA guides to learn how to increase customer engagement and 
 
  - [**PWAs in the Microsoft Store.**](./microsoft-store.md) Learn more about the benefits of app store distribution and how to submit your PWA.
 
-Also be sure to explore the great resources from around the dev community! [MDN web docs](https://developer.mozilla.org/en-US/Apps/Progressive/) and [Google Developers](https://developers.google.com/web/progressive-web-apps/) have excellent guides on Progressive Web Apps. https://pwa.rocks/ showcases real-world examples of PWAs, and https://hnpwa.com/ compares different frameworks and performance patterns for implementing a sample (*Hacker News* reader) PWA.
+Also be sure to explore the great resources from around the dev community! [MDN web docs](https://developer.mozilla.org/Apps/Progressive/) and [Google Developers](https://developers.google.com/web/progressive-web-apps/) have excellent guides on Progressive Web Apps. https://pwa.rocks/ showcases real-world examples of PWAs, and https://hnpwa.com/ compares different frameworks and performance patterns for implementing a sample (*Hacker News* reader) PWA.
