@@ -150,6 +150,8 @@
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
+## [Progressive Web Apps (Chromium)](progressive-web-apps-chromium/index.md)
+### [Tailor your PWA for Windows](progessive-web-apps-chromium/windows-features.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
