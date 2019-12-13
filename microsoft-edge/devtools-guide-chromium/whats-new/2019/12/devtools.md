@@ -38,7 +38,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Accessibility improvements to the DevTools  
 
-We've contributed 130 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. We want to enable every developer building the web to use the DevTools.
+We've contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. We want to enable every developer building the web to use the DevTools.
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
