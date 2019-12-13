@@ -325,8 +325,8 @@ If you are on Windows or macOS, consider using the [Edge preview channels][Micro
 
 <!-- links -->  
 
-[DevToolsCommandMenuIndex]: ../../devtools-guide-chromium/command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevToolsCoverageIndex]: ../../devtools-guide-chromium/coverage/index.md "Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools"  
+[DevToolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCoverageIndex]: ../../../coverage/index.md "Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools"  
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
 [DevToolsNetworkIndex]: (/microsoft-edge/devtools-guide-chromium/network/index.md) "Inspect Network Activity In Microsoft Edge DevTools"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference.md#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference"  
