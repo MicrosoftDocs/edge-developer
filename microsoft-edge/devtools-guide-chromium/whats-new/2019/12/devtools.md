@@ -327,12 +327,12 @@ If you are on Windows or macOS, consider using the [Edge preview channels][Micro
 
 [DevToolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
 [DevToolsCoverageIndex]: ../../../coverage/index.md "Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools"  
-[DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
-[DevToolsNetworkIndex]: (/microsoft-edge/devtools-guide-chromium/network/index.md) "Inspect Network Activity In Microsoft Edge DevTools"  
-[DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference.md#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference"  
-[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new.md "What's New in EdgeHTML"  
-[VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge.md "Debugger for Edge VS Code extension"  
-[VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge.md "Elements for Edge VS Code extension"  
+[DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
+[DevToolsNetworkIndex]: ../../../network/index.md "Inspect Network Activity In Microsoft Edge DevTools"  
+[DevToolsNetworkReferenceViewInitiatorsDependencies]: ../../../network/reference.md#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference"  
+[DevGuideEdgeHtmlWhatsNew]: ../../../../dev-guide/whats-new.md "What's New in EdgeHTML"  
+[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger for Edge VS Code extension"  
+[VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elements for Edge VS Code extension"  
 
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->  
 
