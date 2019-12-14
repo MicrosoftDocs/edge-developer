@@ -32,9 +32,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-## Announcements from the Edge DevTools team
+## Announcements from the Microsoft Edge DevTools team
 
-The following sections are a list of announcements you may have missed from the Edge DevTools team! We're excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! We're excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
 
 ### Accessibility improvements to the DevTools  
 
@@ -44,7 +44,7 @@ We've contributed 170 changes to Chromium to address high-impact color contrast,
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
 > ![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements][ImagePerformanceToolKeyboardReaderImprovements]  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Edge to get started. 
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started. 
 
 If you use screen readers or the keyboard to navigate around the DevTools, we're eager to hear your feedback so [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon! 
 
@@ -62,7 +62,7 @@ that many developers use development tools in their native language, not just in
 | Korean - 한국어 | Japanese - 日本語 |
 | Russian – русский | Spanish - español |
 
-Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**. Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Edge in `edge://settings/languages`.
+Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**. Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
 
 > ##### Figure 2  
 > The DevTools in German  
@@ -72,15 +72,15 @@ If you want to use the DevTools in a different language than the ones that are a
 
 Chromium issue [#941561][crbug941561]
 
-### webhint Edge extension  
+### webhint Microsoft Edge extension  
 
-The webhint Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
+The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
 
 > ##### Figure 3  
 > The Hints tab in the DevTools when the webhint browser extension is installed  
 > ![The Hints tab in the DevTools when the webhint browser extension is installed][ImageHintsTabWebhintExtension]  
 
-[Try the webhint browser extension in Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, you can run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, you can run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
 ### 3D View  
 
@@ -90,7 +90,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 > The 3D View in the DevTools  
 > ![The 3D View in the DevTools][Image3DView]  
 
-To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
+To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).
 
@@ -112,13 +112,13 @@ For more information, check out [Elements for Microsoft Edge VS Code extension][
 
 #### Debugger for Microsoft Edge  
 
-With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, you can debug JavaScript running in Edge directly from VS Code!  
+With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, you can debug JavaScript running in Microsoft Edge directly from VS Code!  
 
 > ##### Figure 6  
 > The Debugger for Microsoft Edge Extension in VS Code  
 > ![The Debugger for Microsoft Edge Extension in VS Code][ImageDebuggerExtensionVisualStudioCode]
 
-For more information, check out [how to debug Edge from VS Code][VisualStudioCodeDebuggerEdgeExtension].  
+For more information, check out [how to debug Microsoft Edge from VS Code][VisualStudioCodeDebuggerEdgeExtension].  
 
 #### webhint  
 
@@ -131,7 +131,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
 ### Visual Studio  
-Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running in Edge with the Visual Studio debugger. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
+Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running in Microsoft Edge with the Visual Studio debugger. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
 
 > ##### Figure 8  
 > Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
@@ -140,7 +140,7 @@ Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running 
 [Read our blog post to learn how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
 ### Tracking prevention Console messages
-Tracking prevention is a unique feature in Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
 
 > ##### Figure 9  
 > Messages in the Console when tracking prevention blocks access to storage for a tracker
@@ -292,9 +292,9 @@ To discuss the new features and changes in this post, or anything else related t
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]
 *   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository
 
-## Download the Edge preview channels   
+## Download the Microsoft Edge preview channels   
 
-If you are on Windows or macOS, consider using the [Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
+If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
 
 <!--<<../../_shared/discover.md>>  -->  
 
