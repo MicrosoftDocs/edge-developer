@@ -4,14 +4,16 @@ description: Learn about how to package up your Microsoft Edge extension manuall
 title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/21/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, packaging
 ms.custom: seodec18
 ---
 
-# Creating and testing a Microsoft Edge extension AppX package
+# Creating and testing a Microsoft Edge extension AppX package  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows Apps are packaged. As of Windows 10 Anniversary Update, a new schema has been introduced for AppX that allows an AppX to include a Microsoft Edge extension as its content.
 
