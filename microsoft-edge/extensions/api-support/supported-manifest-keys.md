@@ -3,13 +3,15 @@ description: Find information on supported manifest keys as well as their known 
 title: Extensions - Supported manifest keys
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/29/2018
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Supported manifest keys
+# Supported manifest keys  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 Every extension has a JSON-formatted manifest file, named manifest.json. This file provides important information for the extension ranging from its name to its permissions. Unless specified in a note below, the Microsoft Edge manifest properties follow the same implementation as Chrome.
 
