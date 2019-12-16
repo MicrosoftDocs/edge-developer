@@ -3,13 +3,15 @@ description: Learn about how you can use native messaging to have your extension
 title: Extensions - Native messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
 ---
 
-# Native messaging in Microsoft Edge
+# Native messaging in Microsoft Edge  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 ## Native messaging architecture overview
 
