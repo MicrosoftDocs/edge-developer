@@ -4,14 +4,16 @@ description: See an example of a Microsoft Edge JSON manifest to see possible fi
 title: Extensions - JSON manifest example
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# JSON manifest file example
+# JSON manifest file example  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 The following snippet provides an example of a Microsoft Edge JSON manifest file.
 ```json
