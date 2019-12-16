@@ -3,7 +3,7 @@ description: Content Security Policy for Edge (Chromium) Extensions.
 title: Content Security Policy (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 12/09/2019
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer

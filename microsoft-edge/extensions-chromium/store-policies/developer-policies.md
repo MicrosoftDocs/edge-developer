@@ -3,7 +3,7 @@ description: Microsoft Edge Addons Catalog Developer Policies.
 title: Microsoft Edge Addons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/06/2019
+ms.date: 12/09/2019
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -76,7 +76,7 @@ Your Extension must not jeopardize or compromise user security, or the security 
 #### 1.2.1 Content Security Policies  
 
 > [!NOTE]
-> If you make any changes to your Extension beyond the described functionality, any changes to code must be compliant with the [Chrome content security policies][GoogleChromeContentSecurityPolicyRemoteScript].  Example: Your Extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.  
+> If you make any changes to your Extension beyond the described functionality, any changes to code must be compliant with the [Microsoft Edge content security policy][MicrosoftEdgeContentSecurityPolicyRemoteScript].  Example: Your Extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.  
 
 #### 1.2.2 Unwanted and Malicious Software  
 
@@ -321,13 +321,14 @@ If you submit a promotional video in the listing, it should follow all the conte
 
 <!-- links -->  
 
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy \(CSP\) "  
+
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 [MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
 
 [GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
 [FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"  
-[GoogleChromeContentSecurityPolicyRemoteScript]: https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing-remote-script "Remote Script - Content Security Policy (CSP) - Google Chrome"  
 
 [MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -33,5 +33,5 @@ The result is written to the stream provided in the CapturePreview method call.
 
 Called to provide the implementer with the completion status of the corresponding asynchronous method call.
 
-> public HRESULT [Invoke](#interface_i_web_view2_capture_preview_completed_handler_1ad891ad7b30c8e282bfe4df1b94d0cbd4)(HRESULT result)
+> public HRESULT [Invoke](#invoke)(HRESULT result)
 
