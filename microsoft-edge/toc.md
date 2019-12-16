@@ -174,6 +174,7 @@
 ## [WebDriver](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
+### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
