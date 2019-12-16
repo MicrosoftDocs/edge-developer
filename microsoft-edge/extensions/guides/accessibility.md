@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Accessibility  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 ## Creating accessible extension icons for Microsoft Edge
 

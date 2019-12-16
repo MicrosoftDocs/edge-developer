@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 # Creating a Microsoft Edge extension  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 In this guide, you will learn to create an extension for Microsoft Edge.  This example extension will allow you to manipulate specific CSS for [docs.microsoft.com](https://docs.microsoft.com) pages -- walking you through creation of a manifest file, the user interface, and background and content scripts.
 

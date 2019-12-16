@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Supported manifest keys  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 Every extension has a JSON-formatted manifest file, named manifest.json. This file provides important information for the extension ranging from its name to its permissions. Unless specified in a note below, the Microsoft Edge manifest properties follow the same implementation as Chrome.
 

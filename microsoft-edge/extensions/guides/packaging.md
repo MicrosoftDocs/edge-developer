@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Packaging Microsoft Edge extensions  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 So you've finally completed your extension and are ready to package it up. You might be wondering what the next steps are toward getting this in the hands of potential users. This guide is intended to teach you how to do just that.
 

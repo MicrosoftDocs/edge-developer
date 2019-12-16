@@ -11,7 +11,7 @@ keywords: edge, web development, javascript, design, icons, developer
 
 # Design guidelines for Microsoft Edge extensions  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 The following page contains various design aspects and UI behavior to consider when creating Microsoft Edge extensions.
 

@@ -13,7 +13,7 @@ ms.custom: seodec18
 
 # Using ManifoldJS to create extension AppX packages  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Microsoft Store.
 

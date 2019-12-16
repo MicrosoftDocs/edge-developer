@@ -13,7 +13,7 @@ ms.custom: seodec18
 
 # Porting an extension from Chrome to Microsoft Edge  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 Porting an extension from Chrome to Microsoft Edge is made easy with the help of the
 [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb). This developer tool converts an unpacked Chrome extension to an unpacked Microsoft Edge extension by bridging APIs and surfacing any errors in your `manifest.json` file.

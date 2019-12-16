@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 # Adding, moving, and removing extensions for Microsoft Edge  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 Microsoft Edge support for extensions was introduced in the **Windows 10 Anniversary Update**. If you're developing a Microsoft Edge extension and want to load it up, or if you already have and now want to remove it, check out the steps below.
 Also included are details on how to change your extension icon's location in the browser.

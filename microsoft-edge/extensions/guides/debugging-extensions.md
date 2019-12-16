@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 # Debugging extensions  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 You can debug your extensions in Microsoft Edge by using F12 Developer Tools.
 

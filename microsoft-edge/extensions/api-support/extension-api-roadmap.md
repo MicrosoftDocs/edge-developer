@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 # Microsoft Edge extension API roadmap  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The following table details what APIs are supported/in development for Windows 10 publicly released builds of Microsoft Edge.
 

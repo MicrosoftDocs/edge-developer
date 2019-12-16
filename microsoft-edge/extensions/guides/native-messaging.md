@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer, native, messa
 
 # Native messaging in Microsoft Edge  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 ## Native messaging architecture overview
 

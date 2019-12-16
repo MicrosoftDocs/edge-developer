@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 #  Supported APIs  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
 
