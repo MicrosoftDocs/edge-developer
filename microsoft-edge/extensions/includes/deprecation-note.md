@@ -15,4 +15,4 @@ ms.date: 12/09/2019
 
 <!-- links -->  
 
-[PublishMicrosoftEdgeAddonsCatalog]: /microsoft-edge/extensions-chromium/publish/publish-extension.md "Publish An Extension"  
+[PublishMicrosoftEdgeAddonsCatalog]: /microsoft-edge/extensions-chromium/publish/publish-extension "Publish An Extension"  
