@@ -4,14 +4,16 @@ description: See how to package your Microsoft Edge extension in a snap with Man
 title: Using ManifoldJS to package extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Using ManifoldJS to create extension AppX packages
+# Using ManifoldJS to create extension AppX packages  
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Microsoft Store.
 
