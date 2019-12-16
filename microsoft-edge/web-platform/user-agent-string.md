@@ -17,12 +17,12 @@ Microsoft recommends that web developers make use of [feature detection](https:/
 
 For cases where feature detection is not applicable and UA detection must be used, the format of the Microsoft Edge UA on desktop is as follows:
 
-When in the `User-Agent` request header, the format will be as follows:
+The `User-Agent` request header is in the following format:
 
 ```http
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43
 ``` 
-When queried from `navigator.userAgent`, the format will be as follows:
+The return value from `navigator.userAgent` is in the following format:
 
 ```javascript
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43"
