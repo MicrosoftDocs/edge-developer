@@ -3,14 +3,16 @@ description: Learn how to sign up for a Windows Developer account and reserve a 
 title: Extensions in Partner Center
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Registering for a Windows Developer account and reserving names in Partner Center
+# Registering for a Windows Developer account and reserving names in Partner Center  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 [Partner Center](https://partner.microsoft.com/dashboard) lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/en-us/store/register), and refer to the [opening a developer account documentation](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for any questions you may have about the sign up process.
 > [!NOTE]
