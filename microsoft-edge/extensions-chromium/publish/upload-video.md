@@ -3,7 +3,7 @@ description: Guide on how to upload YouTube video for extension submission.
 title: Upload A YouTube Video
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -37,4 +37,4 @@ Use the following procedures to upload YouTube video:
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos \& playlists - YouTube Help"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login "Partner Center"  

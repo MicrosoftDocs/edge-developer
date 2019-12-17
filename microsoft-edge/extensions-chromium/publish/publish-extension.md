@@ -3,7 +3,7 @@ description: Step-wise process to publish Edge (Chromium) Extensions to Microsof
 title: Publish An Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -15,7 +15,7 @@ Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\
 
 ## Before You Begin  
 
-*   You must have an active developer account on [Partner Center][MicrosoftPartnerCenter] to submit your Extension in Microsoft Edge Addons.  If you do not have one, create a new developer account.  
+*   You must have an active developer account on [Partner Center][MicrosoftPartnerCenter] to submit your Extension in Microsoft Edge Addons.  If you do not have one, [create a new developer account][MicrosoftPartnerCenter].  
 *   Create a zip file of your Extension package and ensure that it contains these files:  
     *   The manifest file and it must define the name and version of your Extension.  
     *   The images and other files that are required for your Extension.  
@@ -296,4 +296,4 @@ When you finish creating the submission for your Extension and click **Publish**
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/registration/AccountInfo?accountProgram%3DMSEdgeAddons "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login "Partner Center"  
