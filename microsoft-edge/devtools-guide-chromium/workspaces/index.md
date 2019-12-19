@@ -2,7 +2,7 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -308,7 +308,7 @@ If you have more feedback on these topics or anything else, please use any of th
 <!-- links -->  
 
 <!--[DevToolsCss]: ../css.md ""  -->  
-<!--[LocalOverrides]: /web/updates/2018/01/devtools#overrides -->  
+<!--[LocalOverrides]: /microsoft-edge/devtools-guide-chromium/whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
