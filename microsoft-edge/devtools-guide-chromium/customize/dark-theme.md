@@ -2,7 +2,7 @@
 title: Enable Dark Theme In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,15 +37,13 @@ You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the
 
 ## Set up dark theme from Settings   
 
-[ImageMainMenuIcon]: ../images/shared/main-menu-icon.msft.png  
-
 1.  Click **Customize And Control DevTools** `...` and then select **Settings**.  You may also open **Settings** by pressing `F1`.  
 
 > ##### Figure 2  
 > Opening Settings  
 > ![Opening Settings][ImageOpenSettings]  
 
-1.  Under **Preferences** > **Appearance** > **Theme** select **Dark**.  
+1.  On the **Preferences** pane,  under **Appearance**, click on the **Theme** drop-down, and select **Dark**.  
 
 > ##### Figure 3  
 > Preferences  
