@@ -2,7 +2,7 @@
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/17/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -167,7 +167,7 @@ Some responses within the Cache Storage pane may be flagged as being "**opaque**
 
 In order to avoid leakage of cross-domain information, there's significant padding added to the size of an opaque response used for calculating storage quota limits \(for example whether a `QuotaExceeded` exception is thrown\) and reported by the **`navigator.storage`** API.  
 
-<!--[WebEstimatingAvailableStorageSpace]: /web/updates/2017/08/estimating-available-storage-space  -->
+<!--[WebEstimatingAvailableStorageSpace]: /microsoft-edge/devtools-guide-chromium/whats-new/2017/08/estimating-available-storage-space  -->
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
