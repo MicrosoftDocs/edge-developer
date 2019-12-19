@@ -62,6 +62,7 @@
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
 #### [Overview](devtools-guide-chromium/customize/index.md)
+#### [Dark Theme](devtools-guide-chromium/customize/dark-theme.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
