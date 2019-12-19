@@ -110,14 +110,14 @@ To run a **Snippet**:
 
 See [Run Snippets Of Code From Any Page][Snippet] to learn more.
 
-[Snippet]: /javascript/snippets.md
-[UICommandMenu]: /command-menu/index.md 
+[Snippet]: ./javascript/snippets.md
+[UICommandMenu]: ./command-menu/index.md 
 
 ## Debug JavaScript 
 
 Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead. The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through your code's execution, one line at a time. As you step through the code, you can view and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-See [Get Started With Debugging JavaScript](/javascript/index.md) to learn the
+See [Get Started With Debugging JavaScript](./javascript/index.md) to learn the
 basics of debugging in DevTools.
 
 > ##### Figure 6  
@@ -131,7 +131,7 @@ By default, when you edit a file in the **Sources** panel, those changes are los
 
 See [Edit Files With Workspaces][Workspaces] to get started.
 
-[Workspaces]: /workspaces/index.md
+[Workspaces]: ./workspaces/index.md
 
  
 
