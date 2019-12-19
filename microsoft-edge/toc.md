@@ -30,11 +30,15 @@
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### CSS
+#### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### Guides
+##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
+#### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
 #### [Reference](devtools-guide-chromium/network/reference.md)
 ### Storage
 #### [Cookies](devtools-guide-chromium/storage/cookies.md)
@@ -48,7 +52,9 @@
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 ### JavaScript
-#### [Background Services](devtools-guide-chromium/javascript/background-services.md)
+#### [Get Started](devtools-guide-chromium/javascript/index.md)
+#### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
@@ -56,8 +62,10 @@
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
+#### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
+### [Security](devtools-guide-chromium/security/index.md)
 ### [Keyboard Shortcuts](devtools-guide-chromium/shortcuts.md)
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
@@ -109,6 +117,22 @@
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
 ## [Extensions (Chromium)](extensions-chromium/index.md)
+### [Getting Started Tutorial](extensions-chromium/getting-started/index.md)
+#### [Create a Simple Extension - Part I](extensions-chromium/getting-started/part1-simple-extension.md)
+#### [Create a Simple Extension - Part II](extensions-chromium/getting-started/part2-content-scripts.md)
+### Developer Guide
+#### [Port Chromium Extension to Microsoft Edge](extensions-chromium/developer-guide/port-chrome-extension.md)
+#### [Alternate Methods of Distributing Extensions](extensions-chromium/developer-guide/alternate-distribution-options.md)
+#### [Native Messaging](extensions-chromium/developer-guide/native-messaging.md)
+### Publish to Microsoft Store
+#### [Step-wise Publishing Process](extensions-chromium/publish/publish-extension.md)
+#### [Open Developer Account](extensions-chromium/publish/create-dev-account.md)
+#### [Upload YouTube Video](extensions-chromium/publish/upload-video.md)
+#### [Update Extension Listing](extensions-chromium/publish/update.md)
+#### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
+### Microsoft Edge Addons Policies
+#### [Content Security Policy](extensions-chromium/store-policies/csp.md)
+#### [Microsoft Edge Addons Catalog Developer Policies](extensions-chromium/store-policies/developer-policies.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
@@ -149,6 +173,9 @@
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
 ## [WebDriver](webdriver.md)
+## Web Platform (Chromium)
+### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
+### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)

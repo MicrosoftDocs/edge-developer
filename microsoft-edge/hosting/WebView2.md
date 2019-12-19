@@ -22,14 +22,18 @@ Developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows
 
 ## Getting Started
 
-To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)]( https://www.microsoftedgeinsider.com/en-us/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](webview2/gettingstarted) for detailed instructions, [API reference](webview2/reference-webview2) to learn about the API, and [release notes](webview2/ReleaseNotes) for changes made between releases.
+To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)]( https://www.microsoftedgeinsider.com/en-us/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](webview2/gettingstarted) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [API reference](webview2/reference-webview2) to learn about the API, and [Release Notes](webview2/ReleaseNotes) for changes made between releases.
+
+## WebView2 Samples
+
+The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDK's features and their API use patterns. As we add more features to the WebView2 SDK, we will regularly update our sample applications.
 
 ## Feedback
 
 Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. It’s also a good place to search for known issues.
 During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.
 
-## Evergreen vs. Bring-you-own
+## Evergreen vs. Bring-your-own
 
 The WebView2 control relies on the Microsoft Edge (Chromium) browser and currently has an evergreen distribution model – instead of packaging a browser in the app bundle, apps use the evergreen browser installed on users’ machines. The evergreen browser updates itself on a regular cadence, therefore apps targeting the evergreen WebView2 automatically get the latest feature and security updates for hosted web content. The WebView2 SDK is updated separately as new APIs become available. This is the recommended model for most developers.
 In the future, there will be a second bring-your-own (BYO) option that allows developers to bundle a redistributable version of the browser with their apps. BYO brings a locked platform, but requires a larger disk footprint for the packaged browser and developers will have to take on the responsibility of servicing and updating the control themselves.
@@ -42,7 +46,7 @@ Developers can target different [channels](https://www.microsoftedgeinsider.com/
 
 ### DevTools
 
-You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, just as you would in the browser. While having focus on the WebView window, press `F12`, or press `Ctrl` + `Shift` + `I`, or Right Click + choose `Inspect` to open Developer Tools.
+You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, just as you would in the browser. While having focus on the WebView window, press `F12`, or press `Ctrl` + `Shift` + `I`, or Right Click + choose `Inspect` to open Developer Tools.
 
 ![F12](webview2/images/F12.PNG)
 
