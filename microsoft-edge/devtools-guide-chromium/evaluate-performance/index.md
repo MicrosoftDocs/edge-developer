@@ -282,7 +282,7 @@ Last, there are many ways to improve runtime performance.  This tutorial focused
 
 <!-- links -->
 
-[WebRequestAnimationFrame]: https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame\(\) | MDN"  
+[WebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame\(\) | MDN"  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet" 
 <!--[FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  -->  
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->

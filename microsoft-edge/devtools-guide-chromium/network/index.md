@@ -429,11 +429,11 @@ Check out the [Network Reference][NetworkReference] to discover more DevTools fe
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy.md ""  -->  
 <!--[UIPlacement]: ../ui.md#placement ""  -->  
-[NetworkReference]: reference.md ""   
+[NetworkReference]: reference.md "Network Analysis Reference"
 <!--[OpenDevTools]: ../open.md ""  -->  
 <!--[ReferenceFilter]: reference.md#filter ""  -->  
-[ReferenceHideOverview]: reference.md#hide-the-overview-pane
-[ReferenceProperty]: reference.md#filter-requests-by-properties
+[ReferenceHideOverview]: reference.md#hide-the-overview-pane "Hide the Overview pane - Network Analysis Reference"
+[ReferenceProperty]: reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis Reference"
 <!--[SpeedGetStarted]: ../speed/get-started.md ""  -->  
 
 > [!NOTE]
