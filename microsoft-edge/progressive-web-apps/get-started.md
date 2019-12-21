@@ -183,17 +183,17 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
 
 6. Let's test out your PWA! Build (Ctrl+Shift+B) and Run (F5) your web app to launch Microsoft Edge and open your *localhost* page. Then,
 
-    1. Open the Edge DevTools **Console** (Ctrl+Shift+J) and verify the *Service worker was registered*.
-    2. In the **Debugger** panel, expand the **Service Workers** control and click on your origin. In the *Service Worker Overview*, verify your service worker is activated and running:
+    1. Open the Edge DevTools **Console** (Ctrl+Shift+I) and verify the *Service worker was registered*.
+    2. In the **Application** panel, expand the **Service Workers** control and click on your origin. In the *Service Worker Overview*, verify your service worker is activated and running:
 
-        ![Edge DevTools Service Worker overview](./media/devtools-sw-overview.png)
-    3. Still in the Debugger, expand the **Cache** control and verify that the *offline.html* page has been cached.
+        ![Chronium based Edge DevTools Service Worker overview](./media/chronium-based-edge-devtools-sw-overview.png)
+    3. Still in the Application, expand the **Cache** control and verify that the *offline.html* page has been cached.
 
-        ![Edge DevTools service worker Cache](./media/devtools-cache.png)
+        ![Edge DevTools service worker Cache](./media/chronium-based-edge-devtools-cache.png)
 
 7. Time to try your PWA as an offline app! In Visual Studio, **Stop Debugging** (Shift+F5) your web app, then open Microsoft Edge (or reload) to your website's localhost address. It should now load the *offline.html* page (thanks to your service worker and offline cache)!
 
-    ![offline.html from http://localhost:1337 loaded in Microsoft Edge](./media/offline-html.png)
+    ![offline.html from http://localhost:1337 loaded in Microsoft Edge](./media/chronium-based-edge-offline-html.png)
 
 ## Add push notifications
 
