@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -35,7 +35,7 @@ Event args for the AcceleratorKeyPressed event.
 
 The key event type that caused the event to be fired.
 
-> public HRESULT [get_KeyEventType](#interface_i_web_view2_accelerator_key_pressed_event_args_1a192fcc33bb607f823f7f7346aea659d5)(WEBVIEW2_KEY_EVENT_TYPE * keyEventType)
+> public HRESULT [get_KeyEventType](#get_keyeventtype)(WEBVIEW2_KEY_EVENT_TYPE * keyEventType)
 
 This is one of WEBVIEW2_KEY_EVENT_TYPE_KEY_DOWN, WEBVIEW2_KEY_EVENT_TYPE_KEY_UP, WEBVIEW2_KEY_EVENT_TYPE_SYSTEM_KEY_DOWN, or WEBVIEW2_KEY_EVENT_TYPE_SYSTEM_KEY_UP.
 
@@ -43,7 +43,7 @@ This is one of WEBVIEW2_KEY_EVENT_TYPE_KEY_DOWN, WEBVIEW2_KEY_EVENT_TYPE_KEY_UP,
 
 The Win32 virtual key code of the key that was pressed or released.
 
-> public HRESULT [get_VirtualKey](#interface_i_web_view2_accelerator_key_pressed_event_args_1aa60781c37cb892c0d22fe4dbc385780a)(UINT * virtualKey)
+> public HRESULT [get_VirtualKey](#get_virtualkey)(UINT * virtualKey)
 
 This will be one of the Win32 virtual key constants such as VK_RETURN or an (uppercase) ASCII value such as 'A'. You can check whether Ctrl or Alt are pressed by calling GetKeyState(VK_CONTROL) or GetKeyState(VK_MENU).
 
@@ -51,7 +51,7 @@ This will be one of the Win32 virtual key constants such as VK_RETURN or an (upp
 
 The LPARAM value that accompanied the window message.
 
-> public HRESULT [get_KeyEventLParam](#interface_i_web_view2_accelerator_key_pressed_event_args_1a79936c5736aa8c674d6e5d556c41d26e)(INT * lParam)
+> public HRESULT [get_KeyEventLParam](#get_keyeventlparam)(INT * lParam)
 
 See the documentation for the WM_KEYDOWN and WM_KEYUP messages.
 
@@ -59,13 +59,13 @@ See the documentation for the WM_KEYDOWN and WM_KEYUP messages.
 
 A structure representing the information passed in the LPARAM of the window message.
 
-> public HRESULT [get_PhysicalKeyStatus](#interface_i_web_view2_accelerator_key_pressed_event_args_1a7199f5bbcb99f6d126cfe6290d02a802)(WEBVIEW2_PHYSICAL_KEY_STATUS * physicalKeyStatus)
+> public HRESULT [get_PhysicalKeyStatus](#get_physicalkeystatus)(WEBVIEW2_PHYSICAL_KEY_STATUS * physicalKeyStatus)
 
 #### Handle 
 
 Calling this will allow the browser process to continue.
 
-> public HRESULT [Handle](#interface_i_web_view2_accelerator_key_pressed_event_args_1a093e5cb3fae2a440854fc26755e59f46)(BOOL handled)
+> public HRESULT [Handle](#handle)(BOOL handled)
 
-Passing TRUE will prevent the browser from performing the default action for this accelerator key. If the event handler returns without calling [Handle()](#interface_i_web_view2_accelerator_key_pressed_event_args_1a093e5cb3fae2a440854fc26755e59f46), it is equivalent to calling Handle(FALSE). Calling [Handle()](#interface_i_web_view2_accelerator_key_pressed_event_args_1a093e5cb3fae2a440854fc26755e59f46) after it has already been called or the event handler has returned will do nothing.
+Passing TRUE will prevent the browser from performing the default action for this accelerator key. If the event handler returns without calling [Handle()](#handle), it is equivalent to calling Handle(FALSE). Calling [Handle()](#handle) after it has already been called or the event handler has returned will do nothing.
 

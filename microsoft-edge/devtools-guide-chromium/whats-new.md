@@ -31,7 +31,7 @@ From Settings, you can change the theme of the DevTools. If you liked the way th
 
 ## Debug Microsoft Edge (Chromium) from VS Code
 
-With the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can now debug both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium) directly from VS Code!
+With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can now debug both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium) directly from VS Code!
 
 ![Debugger for Edge VS Code extension](./media/vscode-debugger.png)
 

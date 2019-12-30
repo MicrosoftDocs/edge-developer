@@ -70,6 +70,7 @@
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
 #### [Overview](devtools-guide-chromium/customize/index.md)
+#### [Dark Theme](devtools-guide-chromium/customize/dark-theme.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
@@ -174,6 +175,7 @@
 ## [WebDriver](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
+### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
