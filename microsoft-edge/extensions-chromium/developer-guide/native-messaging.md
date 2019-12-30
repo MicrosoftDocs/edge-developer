@@ -13,8 +13,8 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 Microsoft Edge now allows Extension installed from Microsoft Edge Addons catalog \(Microsoft Edge Addons\) to exchange messages with a native application using message passing APIs.  To enable the feature, you need to make sure of following things while implementing native messaging host of your Native Application.  
 
-> [!NOTE]
-> Native messaging is currently not supported on macOS <!--and Linux--> version of Microsoft Edge.  This feature support is planned to be implemented soon.  
+<!-- > [!NOTE]
+> Native messaging is currently not supported on macOS and Linux version of Microsoft Edge.  This feature support is planned to be implemented soon.   -->
 
 1.  **Native messaging host**:  
     
@@ -32,8 +32,17 @@ Microsoft Edge now allows Extension installed from Microsoft Edge Addons catalog
     }
     ```  
     
-    The `allowed_origins` field is the list of Extension that should access to the native messaging host.  To enable your Native Application identify and communicate with Microsoft Edge Addons Extension, set `allowedorigins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file.  
-    
+The native messaging host manifest file must be valid JSON and contains the following fields:
+
+| Name | Description |
+| ---- | ----------- |
+| `name` | Name of the native messaging host. Clients pass this string to `runtime.connectNative` or `runtime.sendNativeMessage`. This name can only contain lowercase alphanumeric characters, underscores and dots. The name cannot start or end with a dot, and a dot cannot be followed by another dot. |
+| `description` | Short application description. |
+| `path` | Path to the native messaging host binary. On OSX, the path must be absolute. On Windows, it can be relative to the directory in which the manifest file is located. The host process is started with the current directory set to the directory that contains the host binary. For example if this parameter is set to `C:\Application\nm_host.exe` then it will be started with current directory `C:\Application\`. |
+| `type` | Type of the interface used to communicate with the native messaging host. Currently there is only one possible value for this parameter: `stdio`. It indicates that Chrome should use `stdin` and `stdout` to communicate with the host. |
+| `allowed_origins` |  list of Extension that should access to the native messaging host.  To enable your Native Application identify and communicate with Microsoft Edge Addons Extension, set `allowedorigins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file. |
+
+
 1.  **Native messaging host location**  
     
     The location of the manifest file depends on the platform.  
@@ -59,6 +68,17 @@ Microsoft Edge now allows Extension installed from Microsoft Edge Addons catalog
     ```  
     
     When Microsoft Edge looks for native messaging hosts, the 32-bit registry is queried first, then the 64-bit registry.  
+
+On OS X, the system-wide native messaging hosts are looked up at a fixed location, while the user-level native messaging hosts are looked up in a subdirectory within the user profile directory called 'NativeMessagingHosts'.
+
+OS X (system-wide) Microsoft Edge:  
+`/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`  
+
+OS X (user-specific, default path)
+Microsoft Edge:  
+`~/Library/Application Support/Microsoft Edge <ChannelName>/ NativeMessagingHosts/com.my_company.my_application.json`
+
+\<ChannelName\> can be Canary, Dev or Beta. For stable channel, only “Microsoft Edge” should be used, \<ChannelName\> is not required.
 
 <!-- image links -->  
 
