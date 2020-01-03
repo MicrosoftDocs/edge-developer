@@ -3,7 +3,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 12/09/2019
+ms.date: 01/03/2020
 ---
 > [!IMPORTANT] 
 > The new Microsoft Edge Extensions submissions process is now open!  Please visit [Publish to Microsoft Edge \(Chromium\) Addons Store][PublishMicrosoftEdgeAddonsCatalog] to learn how to submit your Extension.  Microsoft is excited to have you on board!  
