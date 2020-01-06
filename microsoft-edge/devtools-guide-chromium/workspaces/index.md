@@ -2,7 +2,7 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2019
+ms.date: 01/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,10 +36,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
-> *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  <!-- > *   [Use DevTools to make basic changes to CSS][DevToolsCss]  -->
+> *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  
+> *   [Use DevTools to make basic changes to CSS][DevToolsCss]  
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]  
-
-<!--Todo: add section when contain is available  -->  
 
 ## Overview   
 
@@ -60,7 +59,7 @@ Workspaces is known to not work with these frameworks:
 
 *   Create React App  
 
-<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 ## Related feature: Local Overrides   
 
@@ -249,6 +248,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 
 ## Next steps   
 
+<!--
 Congratulations, you have completed the tutorial.  <!--Click the button below to receive your prize.  -->  
 
 
@@ -276,8 +276,9 @@ var feedback = {
 </script>
 
 
+-->
 
-Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
  
 
@@ -307,8 +308,8 @@ If you have more feedback on these topics or anything else, please use any of th
 
 <!-- links -->  
 
-<!--[DevToolsCss]: ../css.md ""  -->  
-<!--[LocalOverrides]: /microsoft-edge/devtools-guide-chromium/whats-new/2018/01/devtools#overrides -->  
+[DevToolsCss]: ../css/index.md "Get Started With Viewing And Changing CSS"  
+<!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
@@ -324,7 +325,7 @@ If you have more feedback on these topics or anything else, please use any of th
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  

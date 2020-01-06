@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,13 +23,13 @@ Event args for the NewVersionAvailable event.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_NewVersion](#get_newversion) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment).
+[get_NewVersion](#get_newversion) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
 
 ## Members
 
 #### get_NewVersion 
 
-The browser version info of the current [IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment).
+The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
 
-> public HRESULT [get_NewVersion](#interface_i_web_view2_new_version_available_event_args_1a36c62c9ea1b2e8ad69a857e6fd295fb7)(LPWSTR * newVersion)
+> public HRESULT [get_NewVersion](#get_newversion)(LPWSTR * newVersion)
 

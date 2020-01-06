@@ -31,9 +31,13 @@
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### CSS
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
+#### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### Guides
+##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
+#### [Log Messages](devtools-guide-chromium/console/log.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
@@ -51,7 +55,8 @@
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
-#### [Background Services](devtools-guide-chromium/javascript/background-services.md)
+#### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 ### Performance
@@ -67,6 +72,8 @@
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
 #### [Overview](devtools-guide-chromium/customize/index.md)
+#### [Dark Theme](devtools-guide-chromium/customize/dark-theme.md)
+#### [Change Placement](devtools-guide-chromium/customize/placement.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
@@ -113,6 +120,22 @@
 ##### [Runtime](devtools-protocol/0.2/domains/runtime.md)
 ##### [Schema](devtools-protocol/0.2/domains/schema.md)
 ## [Extensions (Chromium)](extensions-chromium/index.md)
+### [Getting Started Tutorial](extensions-chromium/getting-started/index.md)
+#### [Create a Simple Extension - Part I](extensions-chromium/getting-started/part1-simple-extension.md)
+#### [Create a Simple Extension - Part II](extensions-chromium/getting-started/part2-content-scripts.md)
+### Developer Guide
+#### [Port Chromium Extension to Microsoft Edge](extensions-chromium/developer-guide/port-chrome-extension.md)
+#### [Alternate Methods of Distributing Extensions](extensions-chromium/developer-guide/alternate-distribution-options.md)
+#### [Native Messaging](extensions-chromium/developer-guide/native-messaging.md)
+### Publish to Microsoft Store
+#### [Step-wise Publishing Process](extensions-chromium/publish/publish-extension.md)
+#### [Open Developer Account](extensions-chromium/publish/create-dev-account.md)
+#### [Upload YouTube Video](extensions-chromium/publish/upload-video.md)
+#### [Update Extension Listing](extensions-chromium/publish/update.md)
+#### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
+### Microsoft Edge Addons Policies
+#### [Content Security Policy](extensions-chromium/store-policies/csp.md)
+#### [Microsoft Edge Addons Catalog Developer Policies](extensions-chromium/store-policies/developer-policies.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
 #### [Hosting and Updating](extensions-chromium/enterprise/hosting-and-updating.md)
@@ -155,6 +178,7 @@
 ## [WebDriver](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
+### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
