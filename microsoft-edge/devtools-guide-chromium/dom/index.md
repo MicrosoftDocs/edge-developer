@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing The DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/13/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -35,7 +35,7 @@ This tutorial assumes that you know the difference between the DOM and HTML.  Se
 
 ## Open DOM Examples  
 
-1.  Hold `control` \(Windows\) or `command` \(macOS\) and click **DOM Examples** to open in a new window.  
+1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **DOM Examples** to open in a new tab.  
     
     [DOM Examples][GlitchDomExamples]  
     
@@ -88,7 +88,7 @@ Once you have selected a node in the DOM Tree, you may navigate the DOM Tree wit
         > ![Inspecting the ul node][ImageInspectingUlNode]  
         
     1.  Press the `Left` arrow key.  The `<ul>` list collapses.  
-    1.  Press the `Left` arrow key again.  The parent of the `<ul>` node is selected.  In this case it is the `<li>` node containing the instructions for step 1.  
+    1.  Press the `Left` arrow key again.  The parent of the `<ul>` node is selected.  In this case it is the `<div>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.  
     1.  Press the `Down` arrow key 2 times so that you have re-selected the `<ul>` list that you just collapsed.  It should look like this: `<ul>... </ul>`  
     1.  Press the `Right` arrow key.  The list expands.  
 
@@ -98,9 +98,13 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Scroll into View**, right-click **Magritte** and select **Inspect**.  
+1.  Scroll to the bottom of the DOM Examples page.  
+1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
+1.  Right-click the `<li>Magritte</li>` node and select **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
     
-    1.  Go to the [Appendix: Scroll into view](#appendix-scroll-into-view) section at the bottom of this page.  
-    The instructions continue there.  
+    > ##### Figure 6  
+    > Scroll into view  
+    > ![Scroll into view][ImageScrollView]  
 
 After completing the instructions at the bottom of the page you should jump back up to here.  
 
@@ -109,11 +113,10 @@ After completing the instructions at the bottom of the page you should jump back
 You may search the DOM Tree by string, CSS selector, or XPath selector.  
 
 1.  Focus your cursor on the **Elements** panel.  
-1.  Press `Control`+`F` \(Windows\) or `Command`+`F` \(macOS\).  
-    The Search bar opens at the bottom of the DOM Tree.  
+1.  Press `Control`+`F` \(Windows\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.  
 1.  Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.  
     
-    > ##### Figure 6  
+    > ##### Figure 7  
     > Highlighting the query in the Search bar  
     > ![Highlighting the query in the Search bar][ImageHighlightingQuerySearchBar]  
     
@@ -131,11 +134,11 @@ To edit the content of a node, double-click the content in the DOM Tree.
 1.  Under **Edit Content**, right-click **Michelle** and select **Inspect**.  
     1.  In the DOM Tree, double-click `Michelle`.  In other words, double-click the text between `<li>` and `</li>`.  The text is highlighted to indicate that it is selected.  
         
-        > ##### Figure 7  
+        > ##### Figure 8  
         > Editing the text  
         > ![Editing the text][ImageEditingText]  
         
-    1.  Delete `Michelle`, type `Leela`, then press `Enter` to confirm the change.  The text above changes from **Michelle** to **Leela**.  
+    1.  Delete `Michelle`, type `Leela`, then press `Enter` to confirm the change.  The text in the DOM changes from **Michelle** to **Leela**.  
 
 ### Edit attributes   
 
@@ -143,19 +146,19 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Edit Attributes**, right-click **Howard** and select **Inspect**.  
+
+1.  Double-click `<li>`.  The text is highlighted to indicate that the node is selected.  
     
-    1.  Double-click `<li>`.  The text is highlighted to indicate that the node is selected.  
-        
-        > ##### Figure 8  
-        > Editing the node  
-        > ![Editing the node][ImageEditingNode]  
-        
-    1.  Press the `Right` arrow key, add a space, type `style="background-color:gold"`, and then press `Enter`.  The background color of the node changes to gold.  
-        
-        > ##### Figure 9  
-        > Adding a style attribute to the node  
-        > ![Adding a style attribute to the node][ImageAddingStyleAttributeNode]  
-        
+    > ##### Figure 9  
+    > Editing the node  
+    > ![Editing the node][ImageEditingNode]  
+    
+1.  Press the `Right` arrow key, add a space, type `style="background-color:gold"`, and then press `Enter`.  The background color of the node changes to gold.  
+    
+    > ##### Figure 10  
+    > Adding a style attribute to the node  
+    > ![Adding a style attribute to the node][ImageAddingStyleAttributeNode]  
+    
 ### Edit node type   
 
 To edit the type of a node, double-click the type and then type in the new type.  
@@ -165,7 +168,7 @@ To edit the type of a node, double-click the type and then type in the new type.
     1.  Double-click `<li>`.  The text `li` is highlighted.  
     1.  Delete `li`, type `button`, then press `Enter`.  The `<li>` node changes to a `<button>` node.  
         
-        > ##### Figure 10  
+        > ##### Figure 11  
         > Changing the node type to button  
         > ![Changing the node type to button][ImageChangingNodeButton]  
         
@@ -181,7 +184,7 @@ Drag nodes to reorder them.
     
     1.  In the DOM Tree, drag `<li>Elvis Presley</li>` to the top of the list.  
         
-        > ##### Figure 11  
+        > ##### Figure 12  
         > Dragging the node to the top of the list  
         > ![Dragging the node to the top of the list][ImageDraggingNodeTopList]  
         
@@ -202,7 +205,7 @@ Press `H` to hide a node.
 1.  Under **Hide a node**, right-click **The Stars My Destination** and select **Inspect**.  
     1.  Press the `H` key.  The node is hidden.  
         
-        > ##### Figure 12  
+        > ##### Figure 13  
         > What the node looks like in the DOM Tree after it is hidden  
         > ![What the node looks like in the DOM Tree after it is hidden][ImageNodeDomTreeAfterHidden]  
         
@@ -230,14 +233,14 @@ When you inspect a node, the `== $0` text next to the node means that you may re
     1.  Press the `Escape` key to open the Console Drawer.  
     1.  Type `$0` and press the `Enter` key.  The result of the expression shows that `$0` evaluates to `<li>The Left Hand of Darkness</li>`.  
         
-        > ##### Figure 13  
+        > ##### Figure 14  
         > The result of the first `$0` expression in the Console  
         > ![The result of the first $0 expression in the Console][ImageFirstConsole]  
         
     1.  Hover over the result.  The node is highlighted in the viewport.  
     1.  Click `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`.  
         
-        > ##### Figure 14  
+        > ##### Figure 15  
         > The result of the second `$0` expression in the Console
         > ![The result of the second $0 expression in the Console][ImageSecondConsole]  
         
@@ -250,7 +253,7 @@ If you need to refer back to a node many times, store it as a global variable.
     1.  Right-click `<li>The Big Sleep</li>` in the DOM Tree and select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if you do not see this option.  
     1.  Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.  
         
-        > ##### Figure 15  
+        > ##### Figure 16  
         > The result of the temp1 expression  
         > ![The result of the temp1 expression][ImageResultTemp1]  
         
@@ -264,7 +267,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
     1.  Press `Control`+`V` \(Windows\) or `Command`+`V` \(macOS\) to paste the expression into the Console.  
     1.  Press `Enter` to evaluate the expression.
         
-        > ##### Figure 16
+        > ##### Figure 17  
         > The result of the Copy JS Path expression  
         > ![The result of the Copy JS Path expression][ImageResultCopyJSPath]  
         
@@ -280,13 +283,13 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 1.  Under **Break on attribute modifications**, right-click **Sauerkraut** and select **Inspect**.  
     1.  In the DOM Tree, right-click `<li id="target">Sauerkraut</li>` and select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.
         
-        > ##### Figure 17  
+        > ##### Figure 18  
         > Break on attribute modifications  
         > ![Break on attribute modifications][ImageBreakAttributeModification]  
         
-    1.  In the next step you are going to be instructed to click a button that pauses the code of the page.  Once the page is paused you are not be able to scroll the page.  You must click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon] in order to make the page scrollable again.
+    1.  In the next step you are going to be instructed to click a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon] in order to make the page scrollable again.
         
-        > ##### Figure 18  
+        > ##### Figure 19  
         > Where to resume script running  
         > ![Where to resume script running][ImageResumeScript]  
         
@@ -381,6 +384,7 @@ The HTML for the page is now different than the DOM.  In other words, HTML repre
 
 See [Introduction to the DOM][MDNIntroductionToDOM] to learn more.  
 
+<!--
 ## Appendix: Scroll into view   
 
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.  
@@ -391,7 +395,8 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
     > ##### Figure 19  
     > Scroll into view  
     > ![Scroll into view][ImageScrollView]  
-    
+    -->  
+
 ## Appendix: Missing options   
 
 Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If you do not see the specified option in the context menu, try right-clicking away from the node text.  
@@ -410,20 +415,20 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 [ImageInspect]: images/elements-highlighted-select-element-page-inspect.msft.png "Figure 3: The Inspect icon"  
 [ImageInspectingRingoNode]: images/elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png "Figure 4: Inspecting the Ringo node"  
 [ImageInspectingUlNode]: images/elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png "Figure 5: Inspecting the ul node"  
-[ImageHighlightingQuerySearchBar]: images/elements-highlighted-search-nodes-highlight.msft.png "Figure 6: Highlighting the query in the Search bar"  
-[ImageEditingText]: images/elements-highlighted-edit-content.msft.png "Figure 7: Editing the text"  
-[ImageEditingNode]: images/elements-highlighted-edit-attributes-highlighted.msft.png "Figure 8: Editing the node"  
-[ImageAddingStyleAttributeNode]: images/elements-highlighted-edit-attributes-inline-css.msft.png "Figure 9: Adding a style attribute to the node"  
-[ImageChangingNodeButton]: images/elements-highlighted-edit-node-type-button.msft.png "Figure 10: Changing the node type to button"  
-[ImageDraggingNodeTopList]: images/elements-reorder-dom-nodes.msft.png "Figure 11: Dragging the node to the top of the list"  
-[ImageNodeDomTreeAfterHidden]: images/elements-highlighted-hide-a-node.msft.png "Figure 12: What the node looks like in the DOM Tree after it is hidden"  
-[ImageFirstConsole]: images/elements-highlighted-reference-currently-selected-node-console-1.msft.png "Figure 13: The result of the first $0 expression in the Console"  
-[ImageSecondConsole]: images/elements-highlighted-reference-currently-selected-node-console-2.msft.png "Figure 14: The result of the second $0 expression in the Console"  
-[ImageResultTemp1]: images/elements-highlighted-store-global-variable-console-temp1.msft.png "Figure 15: The result of the temp1 expression"  
-[ImageResultCopyJSPath]: images/elements-highlighted-copy-js-path-console-query-selector.msft.png "Figure 16: The result of the Copy JS Path expression"  
-[ImageBreakAttributeModification]: images/elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png "Figure 17: Break on attribute modifications"  
-[ImageResumeScript]: images/break-attribute-modifications-sources-paused-on.msft.png "Figure 18: Where to resume script running"  
-[ImageScrollView]: images/elements-highlighted-scroll-into-view-dropdown.msft.png "Figure 19: Scroll into view"  
+[ImageScrollView]: images/elements-highlighted-scroll-into-view-dropdown.msft.png "Figure 6: Scroll into view"  
+[ImageHighlightingQuerySearchBar]: images/elements-highlighted-search-nodes-highlight.msft.png "Figure 7: Highlighting the query in the Search bar"  
+[ImageEditingText]: images/elements-highlighted-edit-content.msft.png "Figure 8: Editing the text"  
+[ImageEditingNode]: images/elements-highlighted-edit-attributes-highlighted.msft.png "Figure 9: Editing the node"  
+[ImageAddingStyleAttributeNode]: images/elements-highlighted-edit-attributes-inline-css.msft.png "Figure 10: Adding a style attribute to the node"  
+[ImageChangingNodeButton]: images/elements-highlighted-edit-node-type-button.msft.png "Figure 11: Changing the node type to button"  
+[ImageDraggingNodeTopList]: images/elements-reorder-dom-nodes.msft.png "Figure 12: Dragging the node to the top of the list"  
+[ImageNodeDomTreeAfterHidden]: images/elements-highlighted-hide-a-node.msft.png "Figure 13: What the node looks like in the DOM Tree after it is hidden"  
+[ImageFirstConsole]: images/elements-highlighted-reference-currently-selected-node-console-1.msft.png "Figure 14: The result of the first $0 expression in the Console"  
+[ImageSecondConsole]: images/elements-highlighted-reference-currently-selected-node-console-2.msft.png "Figure 15: The result of the second $0 expression in the Console"  
+[ImageResultTemp1]: images/elements-highlighted-store-global-variable-console-temp1.msft.png "Figure 16: The result of the temp1 expression"  
+[ImageResultCopyJSPath]: images/elements-highlighted-copy-js-path-console-query-selector.msft.png "Figure 17: The result of the Copy JS Path expression"  
+[ImageBreakAttributeModification]: images/elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png "Figure 18: Break on attribute modifications"  
+[ImageResumeScript]: images/break-attribute-modifications-sources-paused-on.msft.png "Figure 19: Where to resume script running"  
 [ImageNotSeeingAllOptions]: images/elements-highlighted-right-click-right-side.msft.png "Figure 20: Where to click if you are not seeing all the options"  
 
 <!-- links -->  
