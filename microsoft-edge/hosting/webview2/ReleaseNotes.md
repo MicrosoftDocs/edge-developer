@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps Release Notes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2019
+ms.date: 12/9/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -14,17 +14,28 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
+## 0.8.355
+
+[NuGet package][WebView2NuGetGallery0.8.355] | minimum Microsoft Edge version 80.0.355.0.
+
+**Re-compile your app after updating the NuGet package.** 
+
+*   Released WebView2API Sample - a comprehensive guide of our SDK. Check it out [here!](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)
+*   Added IME support for all languages besides English. ([#30](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30))
+*   Updated the WebResourceRequested event's API surface in response to bug reports. Simultaneously specifying a filter and an event on creation is now deprecated. To create a web resource requested event, use [add_WebResourceRequested](reference/iwebview2webview5#add_webresourcerequested) to add the event and [AddWebResourceRequestedFilter](reference/iwebview2webview5#addwebresourcerequestedfilter) to add a filter. [RemoveWebResourceRequestedFilter](reference/iwebview2webview5#removewebresourcerequestedfilter) removes the filter. ([#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36)) ([#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74))
+*   **Breaking Change:** Modified Full Screen behavior. Deprecated [isfullscreenallowed](reference/IWebView2Settings.md#get_isfullscreenallowed_deprecated). Now, by default, if an element within a WebView (i.e. a video) is set to full screen, it fills the bounds of the WebView. Use the [IWebView2ContainsFullScreenElementChanged](reference/IWebView2ContainsFullScreenElementChangedEventHandler.md#iwebview2containsfullscreenelementchangedeventhandler) event and [get_ContainsFullScreenElement](reference/iwebview2webview5#get_containsfullscreenelement) to specify how the app should resize the WebView if an element wants to enter fullscreen mode.
+
 ## 0.8.314
 
-[NuGet package](https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314) | minimum Microsoft Edge version 80.0.314.0.
+[NuGet package][WebView2NuGetGallery0.8.314] | minimum Microsoft Edge version 80.0.314.0.
 
 **Re-compile your app after updating the NuGet package.**  
 
 *   Added support for Windows 7, Windows 8/8.1.
 *   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
-*   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#addremoteobject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
-*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2webview4#add_acceleratorkeypressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
-*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2/reference/iwebview2settings2#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](reference/iwebview2webview4#addremoteobject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
+*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](reference/iwebview2webview4#add_acceleratorkeypressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](reference/iwebview2settings2#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
 *  Updated `DPI Awareness`. Now, the WebView's DPI awareness will be the same as its host application's DPI awareness. Note, if another hybrid application is launched with a different DPI Awareness than the original WebView, the new WebView will not be launched if the user data directory is the same ([#1](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1)).
 *   Updated `Notification Change Behavior` so WebView2 automatically rejects notification permission requests prompted by web content hosted within the WebView.
 
@@ -59,7 +70,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 **Re-compile your app after updating the NuGet package.**  
 
-*   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users are able to open DevTools \([\#16][MicrosoftEdgeWebViewFeedbackIssue12]\).  
+*   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users are able to open DevTools \([\#16][MicrosoftEdgeWebViewFeedbackIssue16]\).  
 *   Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][MicrosoftEdgeWebViewFeedbackIssue19]\).  
 *   Added `get_CanGoBack`/`GoBack`/`get_CanGoForward`/`GoForward` for going back and forward through navigation history.  
 *   Added HTTP header types (`IWebView2HttpHeadersCollectionIterator`/`IWebView2HttpRequestHeaders`/`IWebView2HttpRequestHeaders`) for viewing and modifying HTTP headers in WebView.  
@@ -94,5 +105,7 @@ Initial developer preview release.
 [WebView2NuGetGallery0.8.190]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.190"  
 [WebView2NuGetGallery0.8.230]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.230 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.230"  
 [WebView2NuGetGallery0.8.270]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.270 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.270"  
+[WebView2NuGetGallery0.8.314]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.314"  
+[WebView2NuGetGallery0.8.355]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.355"  
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/webview2.idl.md#CreateWebView2EnvironmentWithDetails "WebView Globals - CreateWebView2EnvironmentWithDetails function"  

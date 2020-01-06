@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -33,7 +33,7 @@ Use the DocumentTitle property to get the modified title.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#interface_i_web_view2_document_title_changed_event_handler_1a164126be8b6d11f57ad047b5cf6c2e75)([IWebView2WebView3](IWebView2WebView3.md#interface_i_web_view2_web_view3) * webview,IUnknown * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView3](IWebView2WebView3.md#iwebview2webview3) * webview,IUnknown * args)
 
 There are no event args and the args parameter will be null.
 
