@@ -3,13 +3,15 @@ description: Get an end to end overview of the journey from beginning developmen
 title: Extensions - Getting started
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/02/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extensions
 ---
 
-# Getting started with extensions
+# Getting started with extensions  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 Whether you're a new developer wanting to familiarize yourself with extensions or a seasoned veteran with a Chrome extension you'd like to port, this guide contains all the information you need to develop, test, package, and publish an extension for Microsoft Edge. 
 

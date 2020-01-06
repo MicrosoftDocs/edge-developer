@@ -3,13 +3,15 @@ description: Learn about the Windows App Certification Kit. This gives your exte
 title: Extensions - Running the Windows App Certification Kit
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/27/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Running the Windows App Certification Kit
+# Running the Windows App Certification Kit  
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 To improve the chances of your extension getting published to the Microsoft Store, you'll need to install and run the [Windows App Certification Kit](http://go.microsoft.com/fwlink/p/?LinkID=309666).
 This runs a [series of tests](https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit-tests) on your extension package to ensure that it's ready for the Microsoft Store.
