@@ -38,6 +38,7 @@
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 #### [Log Messages](devtools-guide-chromium/console/log.md)
+#### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
