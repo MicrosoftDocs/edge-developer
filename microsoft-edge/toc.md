@@ -34,6 +34,7 @@
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
+#### [Log Messages](devtools-guide-chromium/console/log.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
