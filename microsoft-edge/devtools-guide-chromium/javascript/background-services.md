@@ -2,12 +2,12 @@
 title: Debug Background Services With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/19/2019
+ms.date: 01/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 07/10/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
@@ -42,13 +42,13 @@ This can help you make sure that events are being sent and received as expected.
 > Viewing the details of an event in the Push Messaging pane  
 > ![Viewing the details of an event in the Push Messaging pane][PushDetails]  
 
-## Background Fetch   
+## Background Fetch  
 
 The *Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
 
 <!--Todo: add background fetch api section when available -->  
 
-1.  Open **DevTools**.  
+1.  [Open DevTools][OpenDevTools].  
 1.  Open the **Application** panel.  
 1.  Open the **Background Fetch** pane.  
     
@@ -68,8 +68,6 @@ The *Background Fetch API** enables a **service worker** to reliably download la
     > ##### Figure 4  
     > Viewing the details of an event in the Background Fetch pane  
     > ![Viewing the details of an event in the Background Fetch pane][FetchDetails]  
-    
-<!--Todo: add open devtools section when available -->  
 
 ## Background Sync   
 
@@ -180,7 +178,8 @@ To display a push notification to a user, a **service worker** must first use th
 
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-<!--[OpenDevTools]: ../open.md "Open Microsoft Edge (Chromium) Developer Tools"  -->
+
+[OpenDevTools]: ../open.md "Open Microsoft Edge (Chromium) Developer Tools"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"  
