@@ -2,7 +2,7 @@
 title: Watch JavaScript Expression Values In Real-Time With Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,7 +33,7 @@ If you find yourself typing the same JavaScript expression in the Console repeat
 
 ## Create a Live Expression   
 
-1.  [Open the Console][DevToolsConsoleReferenceOpenConsole].  
+1.  Open the Console.  
 1.  Click **Create Live Expression** ![Create Live Expression][ImageCreateLiveExpressionIcon].  The **Live Expression** text box appears.  
     
     > ##### Figure 1  
@@ -41,6 +41,8 @@ If you find yourself typing the same JavaScript expression in the Console repeat
     > ![Typing document.activeElement into the Live Expression text box][ImageLiveExpressionTextbox]  
     
 1.  Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.  
+
+<!--todo: add reference open console (open the console) section when available  -->  
 
  
 
@@ -54,7 +56,7 @@ If you find yourself typing the same JavaScript expression in the Console repeat
 
 <!-- links -->  
 
-[DevToolsConsoleReferenceOpenConsole]: reference.md#open-the-console "Open the Console - Console Reference"  
+<!--[DevToolsConsoleReferenceOpenConsole]: reference.md#open-the-console "Open the Console - Console Reference"  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

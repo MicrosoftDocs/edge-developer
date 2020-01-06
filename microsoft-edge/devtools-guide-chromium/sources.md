@@ -43,14 +43,6 @@ Use the Microsoft Edge DevTools **Sources** panel to:
 
 Use the **Page** pane to view all of the resources that the page has loaded.
 
-<!--<figure>
-  <img src="images/sources-page-pane.msft.png"
-       alt="The Page pane"/>
-  <figcaption>
-    <b>Figure 1</b>. The <b>Page</b> pane
-  </figcaption>
-</figure>-->
-
 > ##### Figure 1  
 > The **Page** pane  
 > ![Figure 1. The Page pane][ImageSourcesPagePane]  
@@ -65,47 +57,27 @@ How the **Page** pane is organized:
 
 Click a file in the **Page** pane to view its contents in the **Editor** pane.  You can view any type of file. For images, you see a preview of the image.  
 
-<!--<figure>
-  <img src="images/sources-editor-pane.msft.png"
-       alt="Viewing a file in the Editor pane"/>
-  <figcaption>
-    <b>Figure 2</b>. Viewing the contents of <code>6fc26531.index-docs.js</code> in the <b>Editor</b>
-    pane
-  </figcaption>
-</figure>-->
-
 > ##### Figure 2  
-> Viewing the contents of `6fc26531.index-docs.js` in the **Editor** pane  
-> ![Figure 2. Viewing the contents of 6fc26531.index-docs.js in the Editor pane][ImageSourcesEditorPane]  
+> Viewing the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
+> ![Figure 2. Viewing the contents of a4d10f71.index-docs.js in the Editor pane][ImageSourcesEditorPane]  
 
 ## Edit CSS and JavaScript 
 
-Use the **Editor** pane to edit CSS and JavaScript.  DevTools updates the page to run your new code. For example, if you edit the `text-subtle` of an element, you'll see that change take effect immediately.
+Use the **Editor** pane to edit CSS and JavaScript.  DevTools updates the page to run your new code. For example, if you edit a CSS file by adding the style rule below:
 
-<!--<figure>
-  <img src="images/edit-css.msft.png"
-       alt="Editing CSS in the Editor pane"/>
-  <figcaption>
-    <b>Figure 3</b>. Editing CSS in the <b>Editor</b> pane to change the text color of the subtitle to red
-  </figcaption>
-</figure>-->
+```css
+.metadata.page-metadata {
+    color: red;
+}
+```
+
+you'll see that change take effect immediately.
 
 > ##### Figure 3  
 > Editing CSS in the **Editor** pane to change the text color of the subtitle to red  
 > ![Figure 3. Editing CSS in the Editor pane to change the text color of the subtitle to red][ImageEditCSS]  
 
-CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press`Control`+`S` \(Windows\) or `Command`+`S` \(macOS\).  
-DevTools doesn't re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  <!--For example, in [**Figure 4**](#figure-4) note how `console.log('A')` doesn't run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the change, then the text `A` would have been logged to the **Console**. -->  
-
-<!-- TODO: Link "example" when a good section exists. -->
-
-<!--<figure>
-  <img src="images/edit-js.msft.png"
-       alt="Editing JavaScript in the Editor pane"/>
-  <figcaption>
-    <b>Figure 4</b>. Editing JavaScript in the <b>Editor</b> pane
-  </figcaption>
-</figure>-->
+CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\). DevTools doesn't re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in [**Figure 4**](#figure-4) note how `console.log('A')` doesn't run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the change, then the text `A` would have been logged to the **Console**. 
 
 > ##### Figure 4  
 > Editing JavaScript in the **Editor** pane  
@@ -127,14 +99,6 @@ document.head.appendChild(script);
 
 Instead, you can save this code in a **Snippet** and run it with a couple of button clicks, any time you need it. DevTools saves the **Snippet** to your file system.  
 
-<!--<figure>
-  <img src="images/snippet.msft.png"
-       alt="A Snippet that inserts the jQuery library into a page."/>
-  <figcaption>
-    <b>Figure 5</b>. A <b>Snippet</b> that inserts the jQuery library into a page
-  </figcaption>
-</figure>-->
-
 > ##### Figure 5  
 > A **Snippet** that inserts the jQuery library into a page  
 > ![Figure 5. A Snippet that inserts the jQuery library into a page][ImageSnippet]  
@@ -142,50 +106,32 @@ Instead, you can save this code in a **Snippet** and run it with a couple of but
 To run a **Snippet**:
 
 *   Open the file via the **Snippets** pane, and click **Run** ![The Run button][ImageRunIcon].  
-*   Open the **Command Menu**, delete the `>` character, type `!`, type the name of your **Snippet**, then press `Enter`.  
+*   Open the **[Command Menu][UICommandMenu]**, delete the `>` character, type `!`, type the name of your **Snippet**, then press `Enter`.  
 
-<!-- See [Run Snippets Of Code From Any Page][Snippet] to learn more.-->
+See [Run Snippets Of Code From Any Page][Snippet] to learn more.
 
-<!--[Snippet]: /microsoft-edge/devtools-guide-chromium/snippets
-[UICommandMenu]: /microsoft-edge/devtools-guide-chromium/ui#command-menu  -->
-
-<!-- TODO: Link UI "Command Menu" when a good section exists. -->
-<!-- TODO: Link "Snippets" when a good section exists. -->
+[Snippet]: ./javascript/snippets.md
+[UICommandMenu]: ./command-menu/index.md 
 
 ## Debug JavaScript 
 
 Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead. The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through your code's execution, one line at a time. As you step through the code, you can view and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-<!-- See [Get Started With Debugging JavaScript](/microsoft-edge/devtools-guide-chromium/javascript) to learn the
-basics of debugging in DevTools.  -->
+See [Get Started With Debugging JavaScript](./javascript/index.md) to learn the
+basics of debugging in DevTools.
 
-<!--<figure>
-  <img src="images/debugging.msft.png"
-       alt="Debugging JavaScript"/>
-  <figcaption>
-    <b>Figure 6</b>. Debugging JavaScript
-  </figcaption>
-</figure> -->
-
-<!--
 > ##### Figure 6  
 > Debugging JavaScript  
 > ![Figure 6. Debugging JavaScript][ImageDebugging]  
--->
 
-<!-- TODO: Link JavaScript "Get Started With Debugging JavaScript" when a good section exists. -->
-<!-- TODO: Create screen capture for JavaScript "Get Started With Debugging JavaScript" when a good section exists. -->
 
 ## Set up a Workspace 
 
 By default, when you edit a file in the **Sources** panel, those changes are lost when you reload the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, this lets you use DevTools as your code editor.
 
-<!-- See [Edit Files With Workspaces][Workspaces] to get started.
+See [Edit Files With Workspaces][Workspaces] to get started.
 
-[Workspaces]: /microsoft-edge/devtools-guide-chromium/workspaces/ -->
-
-<!-- TODO: Link "Snippets" when a good section exists. -->
-<!-- TODO: Link Workspaces "Edit Files With Workspaces when a good section exists. -->
+[Workspaces]: ./workspaces/index.md
 
  
 
@@ -198,7 +144,7 @@ By default, when you edit a file in the **Sources** panel, those changes are los
 [ImageEditJS]: images/edit-js.msft.png "Editing JavaScript in the Editor pane"  
 [ImageRunIcon]: images/run-snippet-icon.msft.png  
 [ImageSnippet]: images/snippet.msft.png "A Snippet that inserts the jQuery library into a page"  
-[ImageSourcesEditorPane]: images/sources-editor-pane.msft.png "Viewing the contents of 6fc26531.index-docs.js in the Editor pane"  
+[ImageSourcesEditorPane]: images/sources-editor-pane.msft.png "Viewing the contents of a4d10f71.index-docs.js in the Editor pane"  
 [ImageSourcesPagePane]: images/sources-page-pane.msft.png "The Page pane"  
 
 > [!NOTE]
