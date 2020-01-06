@@ -37,6 +37,7 @@
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
+#### [Log Messages](devtools-guide-chromium/console/log.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
