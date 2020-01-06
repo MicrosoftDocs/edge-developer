@@ -2,7 +2,7 @@
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/03/2020
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Microsoft Edge DevTools Keyboard Shortcuts 
+# Microsoft Edge DevTools Keyboard Shortcuts   
 
 
 
@@ -36,7 +36,7 @@ This page is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 You can also find shortcuts in tooltips. Hover over a UI element of DevTools
 to display its tooltip. If the element has a shortcut, the tooltip includes it.
 
-## Keyboard shortcuts for opening DevTools 
+## Keyboard shortcuts for opening DevTools   
 
 To open DevTools, press the following keyboard shortcuts while your cursor is focused on the browser viewport:
 
@@ -46,7 +46,7 @@ To open DevTools, press the following keyboard shortcuts while your cursor is fo
 | Open the **Console** panel | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Open the **Elements** panel | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |  
 
-## Global keyboard shortcuts 
+## Global keyboard shortcuts   
 
 The following keyboard shortcuts are available in most, if not all, DevTools panels.
 
@@ -73,7 +73,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- TODO make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Elements panel keyboard shortcuts 
+## Elements panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -88,7 +88,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Hide the currently-selected element | `H` | `H` |  
 | Toggle **Edit as HTML** mode on the currently-selected element | `Function`+`F2` | `F2` |  
 
-### Styles pane keyboard shortcuts 
+### Styles pane keyboard shortcuts   
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -100,7 +100,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Increment / decrement a property value by 10 | Click a value, then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Click a value, then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
 | Increment / decrement a property value by 100 | Click a value, then press `Control`+`Up Arrow` / `Control`+`Down Arrow` | Click a value, then press `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
-## Sources panel keyboard shortcuts 
+## Sources panel keyboard shortcuts   
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -120,7 +120,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 <!-- TODO: Link Continue Release Notes "Continue to a certain line of code while paused" when a good section exists.  -->  
 
-### Code Editor keyboard shortcuts 
+### Code Editor keyboard shortcuts   
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -132,7 +132,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 <!-- TODO: Link JavaScript Breakpoints LOC "line-of-code breakpoint" when a good section exists.  -->  
 
-## Performance panel keyboard shortcuts 
+## Performance panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -146,7 +146,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 |:--- |:--- |:--- |  
 | Start / stop recording | `Control`+`E` | `Command`+`E` |  
 
-## Console panel keyboard shortcuts 
+## Console panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -157,9 +157,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Focus the **Console** | `Control`+ `` ` `` | `Control`+`` ` `` |  
 | Clear the **Console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
 | Force a multi-line entry. Note that DevTools should detect multi-line scenarios by default, so this shortcut is now usually unnecessary | `Shift`+`Enter` | `Command`+`Return` |  
-| Execute | `Enter` | `Return` |  
+| Run | `Enter` | `Return` |  
 | Expand all sub-properties of an object that's been logged to the Console | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] |  
-
 
  
 
