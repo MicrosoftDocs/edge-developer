@@ -57,9 +57,11 @@
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
-#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
+#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
+#### Guides
+##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
