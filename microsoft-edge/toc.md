@@ -72,6 +72,7 @@
 ### Customize
 #### [Overview](devtools-guide-chromium/customize/index.md)
 #### [Dark Theme](devtools-guide-chromium/customize/dark-theme.md)
+#### [Change Placement](devtools-guide-chromium/customize/placement.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
