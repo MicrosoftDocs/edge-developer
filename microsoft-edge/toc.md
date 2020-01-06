@@ -31,11 +31,14 @@
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### CSS
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
+#### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
 #### Guides
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
+#### [Log Messages](devtools-guide-chromium/console/log.md)
+#### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
@@ -71,6 +74,7 @@
 ### Customize
 #### [Overview](devtools-guide-chromium/customize/index.md)
 #### [Dark Theme](devtools-guide-chromium/customize/dark-theme.md)
+#### [Change Placement](devtools-guide-chromium/customize/placement.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
