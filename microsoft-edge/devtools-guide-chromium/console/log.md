@@ -2,7 +2,7 @@
 title: Get Started With Logging Messages In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/26/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,7 +29,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This interactive tutorial shows you how to log and filter messages in the [Microsoft Edge DevTools Console][MicrosoftEdgeDevTools].  
+This interactive tutorial shows you how to log and filter messages in the [Microsoft Edge DevTools][MicrosoftEdgeDevTools] console.  
 
 > ##### Figure 1  
 > Messages in the Console  
@@ -59,8 +59,8 @@ This tutorial is designed so that you are able to open up the demo and try all t
     > ![DevTools opens to the right of the demo][ImageDevToolsRight]  
     
     > [!TIP]
-    > Dock DevTools to the bottom of the window or undock it into a separate window.  
-
+    > [Dock DevTools to the bottom of the window or undock it into a separate window][DevToolsCustomizePlacement].  
+    
     > ##### Figure 3  
     > DevTools docked to the bottom of the demo  
     > ![DevTools docked to the bottom of the demo][ImageDevToolsBottom]  
@@ -72,8 +72,6 @@ This tutorial is designed so that you are able to open up the demo and try all t
     > ##### Figure 5  
     > DevTools undocked in a separate window  
     > ![DevTools undocked in a separate window][ImageDevToolsSeparateDevTools]  
-
-<!--todo: add link to customize/placement section when available -->  
     
 ## View messages logged from JavaScript   
 
@@ -300,7 +298,7 @@ What if you are editing styles, but you need to quickly check the Console log fo
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-<!--[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  -->  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 <!--[DevToolsConsoleApi]: api.md "Console API Reference"  -->
 <!--[DevToolsConsoleReference]: reference.md "Console Reference"  -->
 
