@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/25/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,7 +25,7 @@ The caller implements this interface to receive NewVersionAvailable events.
 --------------------------------|---------------------------------------------
 [Invoke](#invoke) | Called to provide the implementer with the event args for the corresponding event.
 
-Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#interface_i_web_view2_new_version_available_event_args) to get the new version number.
+Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#iwebview2newversionavailableeventargs) to get the new version number.
 
 ## Members
 
@@ -33,5 +33,5 @@ Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebVie
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#interface_i_web_view2_new_version_available_event_handler_1aa5d11462620d613a972baa8c4da1094b)([IWebView2Environment](IWebView2Environment.md#interface_i_web_view2_environment) * webviewEnvironment,[IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#interface_i_web_view2_new_version_available_event_args) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2Environment](IWebView2Environment.md#iwebview2environment) * webviewEnvironment,[IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#iwebview2newversionavailableeventargs) * args)
 

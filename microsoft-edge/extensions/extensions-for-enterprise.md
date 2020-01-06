@@ -4,14 +4,17 @@ description: Find out about the enterprise specific aspects of Microsoft Edge Ex
 title: Extensions for enterprise
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Extensions for Enterprise
+# Extensions for Enterprise  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+
 Microsoft Edge extensions have a similar workflow when compared to other enterprise UWP apps. The information below details enterprise specific aspects of Microsoft Edge extensions.
 
 ## Prerequisites

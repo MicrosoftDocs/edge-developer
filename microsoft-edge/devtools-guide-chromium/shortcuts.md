@@ -73,7 +73,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- TODO make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Elements panel keyboard shortcuts   
+## Elements panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -132,7 +132,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 <!-- TODO: Link JavaScript Breakpoints LOC "line-of-code breakpoint" when a good section exists.  -->  
 
-## Performance panel keyboard shortcuts   
+## Performance panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -146,7 +146,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 |:--- |:--- |:--- |  
 | Start / stop recording | `Control`+`E` | `Command`+`E` |  
 
-## Console panel keyboard shortcuts   
+## Console panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
