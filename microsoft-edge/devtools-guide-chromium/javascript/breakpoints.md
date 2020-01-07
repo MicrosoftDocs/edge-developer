@@ -2,7 +2,7 @@
 title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/21/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,7 +28,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-Use breakpoints to pause your JavaScript code.  This guide explains each type of breakpoint that is available in DevTools, as well as when to use and how to set each type.  For a hands-on tutorial of the debugging process, see [Get Started with Debugging JavaScript in Microsoft Edge DevTools](index.md).  
+Use breakpoints to pause your JavaScript code.  This guide explains each type of breakpoint that is available in DevTools, as well as when to use and how to set each type.  For a hands-on tutorial of the debugging process, see [Get Started with Debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
 
 ## Overview of when to use each breakpoint type   
 
@@ -53,17 +53,17 @@ To set a line-of-code breakpoint in DevTools:
 1.  Click the **Sources** tab.  
 1.  Open the file containing the line of code on which you want to break.  
 1.  Go the line of code.  
-1.  To the left of the line of code is the line number column.  Click on it.  A red icon appears on next to the line number column.  
+1.  To the left of the line of code is the line number column.  Click on it.  A red icon appears next to the line number column.  
 
 > ##### Figure 1  
-> A line-of-code breakpoint set on line `30`  
+> A line-of-code breakpoint set on line 30  
 > ![A line-of-code breakpoint][ImageLocBreakpoint]  
 
 ### Line-of-code breakpoints in your code   
 
 Run the `debugger` method from your code to pause on that line.  This is equivalent to a [line-of-code breakpoint](#line-of-code-breakpoints), except that the breakpoint is set in your code, not in the DevTools UI.  
 
-```console
+```javascript
 console.log('a');
 console.log('b');
 debugger;
@@ -98,7 +98,7 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 
 *   Check the checkbox next to an entry to disable that breakpoint.  
 *   Right-click an entry to remove that breakpoint.  
-*   Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain preserve their enabled state so that they are in the same state as before when you reactivate them.  
+*   Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.  
 
 > ##### Figure 4  
 > Deactivated breakpoints in the **Breakpoints** pane are disabled and transparent  
@@ -181,7 +181,7 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 
 Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You may insert `debug()` into your code (like a `console.log()` statement) or run the method from the DevTools Console.  `debug()` is equivalent to setting a [line-of-code breakpoint](#line-of-code-breakpoints) on the first line of the function.  
 
-```console
+```javascript
 function sum(a, b) {
     let result = a + b; // DevTools pauses on this line.
     return result;
@@ -194,7 +194,7 @@ sum();
 
 DevTools throws a `ReferenceError` if the function you want to debug is not in scope.  
 
-```console
+```javascript
 (function () {
     function hey() {
         console.log('hey');
@@ -233,6 +233,8 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 [ImageUncaughtException]: images/sources-page-js-paused-on-exception.msft.png "Figure 9: Paused on an uncaught exception"  
 
 <!-- links -->  
+
+[DevtoolsJavascriptIndex]: index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"  
 
