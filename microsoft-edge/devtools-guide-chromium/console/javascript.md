@@ -2,7 +2,7 @@
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/13/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  <!--See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  -->  See [Get Started With Debugging JavaScript](../javascript/index.md) to learn how to pause JavaScript code and step through it one line at a time.  
+This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  See [Get Started With Debugging JavaScript][DevToolsJavscriptIndex] to learn how to pause JavaScript code and step through it one line at a time.  
 
 > ##### Figure 1  
 > The **Console**  
@@ -46,18 +46,17 @@ The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evalu
 This tutorial is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.
 
 1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
+1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **Console Javascript Example** to open in a new window.  
+    
+    [Console Javascript Example][GlitchConsoleJavascriptExample]  
     
     > ##### Figure 2  
-    > This tutorial on the left, and DevTools on the right  
-    > ![This tutorial on the left, and DevTools on the right][ImageTutorialDevToolsJs]  
-    
+    > The Console JavaScript Example page on the left, and DevTools on the right  
+    > ![The Console JavaScript Example page on the left, and DevTools on the right][ImageTutorialDevToolsJs]  
+
 ## View and change the JavaScript or DOM of the page 
 
 When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.  
-
-1.  Hold `control` \(Windows\) or `command` \(macOS\) and click **Console Javascript Example** to open in a new window.  
-    
-    [Console Javascript Example][GlitchConsoleJavascriptExample]  
     
 1.  Notice the text in the button.  
 1.  Type `document.getElementById('hello').textContent = 'Hello, Console!'` in the **Console** and then press `Enter` to evaluate the expression.  Notice how the text inside the button changes.  
@@ -100,6 +99,8 @@ Sometimes, you just want a code playground where you are able to test some code,
 
 <!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
 
+<!--todo: add console reference (run javascript) section when available  -->  
+
 DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  This makes for a powerful debugging workflow.  See [Get Started With Debugging JavaScript][DevToolsJavascriptGetStarted] for an interactive tutorial.  
 
 The **Console** also has a set of convenience functions that make it easier to interact with a page.  For example:  
@@ -110,6 +111,8 @@ The **Console** also has a set of convenience functions that make it easier to i
 
 <!--See [Console Utilities API Reference][DevToolsConsoleUtilities] to explore all the convenience functions.  -->  
 
+<!--todo: add console utilities api reference section when available  -->  
+
  
 
 
@@ -117,17 +120,17 @@ The **Console** also has a set of convenience functions that make it easier to i
 <!-- image links -->  
 
 [ImageConsole]: images/console-javascript-example-console-playground.msft.png "Figure 1: The Console"  
-[ImageTutorialDevToolsJs]: images/console-javascript-example-console-empty.msft.png "Figure 2: This tutorial on the left, and DevTools on the right"  
+[ImageTutorialDevToolsJs]: images/console-javascript-example-console-empty.msft.png "Figure 2: The Console JavaScript Example page on the left, and DevTools on the right"  
 [ImageConsoleAfterEvaluating]: images/console-javascript-example-console-change-button-text.msft.png "Figure 3: How the Console looks after evaluating the expression"  
 [ImagePlayground]: images/console-javascript-example-console-playground.msft.png "Figure 4: How the Console looks after evaluating the expressions above"  
 
 <!-- links -->  
 
-<!--[DevToolsConsoleLoggingMessages]: log.md "Get Started With Logging Messages In The Console"  -->  
+[DevToolsConsoleLoggingMessages]: log.md "Get Started With Logging Messages In The Console"  
 <!--[DevToolsConsoleReference]: reference.md#run-javascript "Console Reference"  -->  
 <!--[DevToolsConsoleUtilities]: utilities.md "Console Utilities API Reference"  -->  
 
-[DevToolsJavascriptGetStarted]: ../javascript/index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
 
 [2alityExpressionsVersusStatements]: http://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
 [Esma6DefaultParameterValues]: http://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
@@ -136,7 +139,7 @@ The **Console** also has a set of convenience functions that make it easier to i
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/javascript) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/javascript) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
