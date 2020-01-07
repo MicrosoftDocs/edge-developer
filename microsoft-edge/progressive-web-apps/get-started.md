@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 
 # Get started with Progressive Web Apps
 
-Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
+Progressive Web Apps (PWAs) are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as launch-from-homescreen installation, offline support, and push notifications. 
 
 This guide will give you an overview of PWA basics by building a simple *localhost* web app as a PWA using *Microsoft Visual Studio* and some *PWA Builder* utilities. The "finished" product will work similarly across any browser that supports PWAs.
 
@@ -281,7 +281,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
     As part of their role as PWA network proxies, service workers handle push events and toast notification interactions. However, as it is with first setting up (or *registering*) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity. Subscribing to push notifications requires an active service worker registration, so you'll first want to check that your service worker is installed and *active* before trying to subscribe it to push notifications.
 
-    Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications. If not, the user will be prompted by the browser for permission. If the permission is *denied*, the call to *registration.pushManager.subscribe* will throw a DOMException, so you'll want to handle that. For more on permission management, see [*Push Notifications in Microsoft Edge*](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge/#UAbvU2ymUlHO8EUV.97).
+    Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications. If not, the user will be prompted by the browser for permission. If the permission is *denied*, the call to *registration.pushManager.subscribe* will throw a DOMException, so you'll want to handle that. 
 
     In your *pwabuilder-sw-register.js* file, append this code:
 
@@ -400,18 +400,14 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     
     Time to test push notifications in your PWA!
 
-    a. Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Service Worker Overview** panel and and **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
+    a. Run (F5) your PWA in the browser. Because we modified the service worker code (*pwabuilder-sw.js*), we'll need to open the DevTools Debugger (F12) to the **Application->Service Workers** panel and  **Unregister** the service worker and reload (F5) the page to re-register it (or you can simply click **Update**). In a production scenario, the browser will check regularly check for service worker updates and install them in the background. We're just forcing it here for immediate results.
 
-    As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:
-
-    ![Permission dialog for enabling notifications](./media/notification-permission.png)
+    As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the appear.
 
     Click **Yes** to enable toast notifications for your PWA.
 
-    b. From the *Service Worker Overview* pane, try clicking the  **Push** button. A toast notification with the (hard-coded "Test push message from DevTools") payload should appear:
-
-    ![Push a notification from DevTools](./media/devtools-push.png)
-
+    b. From the *Service Workers* pane, try clicking the  **Push** button. A toast notification with the (hard-coded "Test push message from DevTools") payload should appear.
+  
     c. Next try clicking the **Send Notification** button on your PWA's homepage. This time a toast with the "payload" from our server will appear:
 
     ![Push a notification from PWA server](./media/pwa-push.png)
@@ -424,14 +420,8 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
 
 ## Going further
 
-This guide demonstrated the basic anatomy of a Progressive Web App and Microsoft PWA development tools including Visual Studio, PWA Builder, and Edge DevTools.
+This guide demonstrated the basic anatomy of a Progressive Web App and Microsoft PWA development tools including Visual Studio, PWA Builder, and Edge (Chromium) DevTools.
 
-Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements) beyond what we covered, including responsive design, deep-linking, [cross-browser testing](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/) and other [best practices](https://sonarwhal.com/) (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
+Of course, there's a lot more that goes into [making a great PWA](../progressive-web-apps.md#requirements) beyond what we covered, including responsive design, deep-linking, [cross-browser testing](https://developer.microsoft.com/en-us/microsoft-edge/tools/remote/) and other [best practices](https://webhint.io/) (not to mention *actual* app functionality!), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started. If you have further questions on PWA development with Windows and/or Visual Studio, please leave a comment!
 
-Check out our other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience:
-
- - [**Windows tailoring.**](./windows-features.md) Using simple feature detection, you can progressively enhance your PWA for Windows 10 customers through native Windows Runtime (WinRT) APIs, such as those for customizing Windows **Start** menu tile notifications and taskbar jumplists, and (upon permission) working with user resources, such as photos, music and calendar.
-
- - [**PWAs in the Microsoft Store.**](./microsoft-store.md) Learn more about the benefits of app store distribution and how to submit your PWA.
-
-Also be sure to explore the great resources from around the dev community! [MDN web docs](https://developer.mozilla.org/en-US/Apps/Progressive/) and [Google Developers](https://developers.google.com/web/progressive-web-apps/) have excellent guides on Progressive Web Apps. https://pwa.rocks/ showcases real-world examples of PWAs, and https://hnpwa.com/ compares different frameworks and performance patterns for implementing a sample (*Hacker News* reader) PWA.
+Be sure to explore the great resources from around the dev community! [MDN web docs](https://developer.mozilla.org/en-US/Apps/Progressive/) and [Google Developers](https://developers.google.com/web/progressive-web-apps/) have excellent guides on Progressive Web Apps. https://pwa.rocks/ showcases real-world examples of PWAs, and https://hnpwa.com/ compares different frameworks and performance patterns for implementing a sample (*Hacker News* reader) PWA.

@@ -33,7 +33,9 @@ Regardless of submission method, once your PWA is accepted to the Microsoft Stor
 
 ## Submitting your PWA manually
 
-In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file). For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrappper (*WWAHost.exe* process), independent from the Microsoft Edge browser window.
+In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file). For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrappper (*WWAHost.exe* process), independent from the Microsoft Edge browser window. 
+
+   > **Important**: The EdgeHTML web platform engine is used by the WWAHost app wrapper which could introduce compatibility differences for your Microsoft Edge (Chromium) based PWA. Be sure to do a full test pass on your application using Microsoft Edge (EdgeHTML) before submitting your app to the Microsoft store as the EdgeHTML engine is no longer being updated with newer web standards.
 
 Here's how to do it.
 
