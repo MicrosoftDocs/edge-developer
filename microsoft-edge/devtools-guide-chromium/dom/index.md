@@ -106,8 +106,6 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
     > Scroll into view  
     > ![Scroll into view][ImageScrollView]  
 
-After completing the instructions at the bottom of the page you should jump back up to here.  
-
 ### Search for nodes   
 
 You may search the DOM Tree by string, CSS selector, or XPath selector.  
