@@ -63,6 +63,8 @@ By building or converting your existing site to a PWA, you are able to better en
 
 ## PWAs on Windows 10 (EdgeHTML)  
 
+> Important Note: With the move to Edge from EdgeHTML to Chromium, the web platforms used by PWAs are not the same. If you require Windows 10 API access for your PWA, this EdgeHTML documentation is for you. If you're goal is cross platform support without Windows specific API access, please head over to the [Microsoft Edge (Chromium)](./progressive-web-apps) PWA documentation. 
+
 When you build a Progressive Web App to take advantage of Windows 10, you are able to distribute your PWA through the [Microsoft Store][MicrosoftDeveloperStore], the entire Windows 10 install base of 600+ million active monthly users is your potential app audience!  Applications developed this way run as [Universal Windows Platform][WindowsUWPGetStartedGuide] apps and have native like access to the WinRT APIs.  Note that the web platform rendering your code is EdgeHTML when using the WinRT APIs so be sure to use feature detection before calling any Windows specific APIs to ensure your PWA is able to still run across platforms where Microsoft Edge \(Chromium\) PWAs are available.  
 
 [Here is how to get started](get-started.md) converting your web app to a PWA \(EdgeHTML\), testing it on Windows 10, and distributing it in the Microsoft Store.  
@@ -98,7 +100,7 @@ Check out [PWAs in the Microsoft Store][ProgressiveWebAppsMicrosoftStore] for fu
 
 ## Current availability  
 
-Browser engine support for Progressive Web Apps calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  We have been building out PWA support in EdgeHTML for several releases now.  
+Browser engine support for Progressive Web Apps calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  PWA support in the EdgeHTML engine was completed in the Windows 10 1809 release. Further improvements to web standards since that time will not be incorportated into the EdgeHTML engine so be sure to run compatibility tests and use feature detection to gracefully fallback should the feature your PWA needs be unsupported on the EdgeHTML platform.   
 
 For the upcoming Microsoft Edge \(Chromium\) release in 2020, the browser platform has full support for these features that work across devices where the Chromium browser is supported.  
 
