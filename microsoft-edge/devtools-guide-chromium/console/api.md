@@ -2,7 +2,7 @@
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,17 +29,20 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-Use the Console API to write messages to the Console from your JavaScript.  <!--See [Get Started With Logging Messages To The Console][ConsoleLog] for an interactive introduction to the topic.  -->  <!--See [Console Utilities API Reference][ConsoleUtilities] if you are looking for the convenience methods like `debug(function)` or `monitorEvents(node)` which are only available from the Console.  -->  
+Use the Console API methods to write messages to the Console from your JavaScript.  See [Get Started With Logging Messages To The Console][DevtoolsConsoleLog] for an interactive introduction to the topic.  <!--See [Console Utilities API Reference][ConsoleUtilities] if you are looking for the convenience methods like `debug(function)` or `monitorEvents(node)` which are only available from the Console.  -->  
 
-<!--todo: add log and utilities sections when available -->  
+<!--todo: add and utilities sections when available -->  
 
-## `console.assert(expression, object)`   
+## assert  
+```javascript
+console.assert(expression, object)
+```
 
 **Log level**: `Error`  
 
 <!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
 
-Writes an [error](#consoleerrorobject--object-) to the console when `expression` evaluates to `false`.  
+Writes an [error](#error) to the console when `expression` evaluates to `false`.  
 
 ```javascript
 const x = 5;
@@ -52,7 +55,11 @@ console.assert(x < y, {x, y, reason});
 > The result of the `console.assert()` example  
 > ![The result of the console.assert() example][ImageAssert]  
 
-## `console.clear()`   
+## clear  
+
+```javascript
+console.clear()
+```
 
 Clears the console.  
 
@@ -60,17 +67,21 @@ Clears the console.
 console.clear();  
 ```  
 
-If **Preserve Log** is enabled, `console.clear()` is disabled.  
+If **Preserve Log** is enabled, the [clear](#clear) method is disabled.  
 
 <!--todo: add preserve log (reference#filter-by-log-level) when available -->  
 
 <!--See also: [Clear the Console][ConsoleReferenceClear]  -->  
 
-## `console.count([label])`   
+## count  
+
+```javascript
+console.count([label])
+```  
 
 **Log level**: `Info`  
 
-Writes the number of times that `count()` has been invoked at the same line and with the same `label`.  Call [`console.countReset([label])`](#consolecountresetlabel) to reset the count.  
+Writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.  
 
 ```javascript
 console.count();
@@ -83,7 +94,11 @@ console.count();
 > The result of the `console.count()` example  
 > ![The result of the console.count() example][ImageCount]  
 
-## `console.countReset([label])`   
+## countReset  
+
+```javascript
+console.countReset([label])
+```  
 
 Resets a count.  
 
@@ -92,11 +107,15 @@ console.countReset();
 console.countReset('coffee');
 ```  
 
-## `console.debug(object [, object, ...])`   
+## debug  
+
+```javascript
+console.debug(object [, object, ...])
+```  
 
 **Log level**: `Info`  
 
-Identical to [`console.log(object [, object, ...])`](#consolelogobject--object-).  
+Identical to the [log](#log) method.  
 
 ```javascript
 console.debug('debug');  
@@ -106,7 +125,11 @@ console.debug('debug');
 > The result of the `console.debug()` example  
 > ![The result of the console.debug() example][ImageDebug]  
 
-## `console.dir(object)`   
+## dir  
+
+```javascript
+console.dir(object)
+```  
 
 **Log level**: `Info`  
 
@@ -120,7 +143,11 @@ console.dir(document.head);
 > The result of the `console.dir()` example  
 > ![The result of the console.dir() example][ImageDir]  
 
-## `console.dirxml(node)`   
+## dirxml  
+
+```javascript
+console.dirxml(node)
+```  
 
 **Log level**: `Info`  
 
@@ -134,11 +161,15 @@ console.dirxml(document);
 > The result of the `console.dirxml()` example  
 > ![The result of the console.dirxml() example][ImageDirXml]  
 
-## `console.error(object [, object, ...])`   
+## error  
+
+```javascript
+console.error(object [, object, ...])
+```  
 
 **Log level**: `Error`  
 
-Prints `object` to the Console, formats it as an error, and includes a stack trace.  
+Prints the `object` to the Console, formats it as an error, and includes a stack trace.  
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
@@ -148,9 +179,13 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 > The result of the `console.error()` example  
 > ![The result of the console.error() example][ImageError]  
 
-## `console.group(label)`   
+## group  
 
-Visually groups messages together until `console.groupEnd(label)` is called.  Use `console.groupCollapsed(label)` to collapse the group when it is initially logged to the Console.  
+```javascript
+console.group(label)
+```  
+
+Visually groups messages together until the [groupEnd](#groupEnd) method is used.  Use the [groupCollapsed](#groupCollapsed) method to collapse the group when it is initially logged to the Console.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -166,19 +201,31 @@ console.groupEnd(label);
 > The result of the `console.group()` example  
 > ![The result of the console.group() example][ImageGroup]  
 
-## `console.groupCollapsed(label)`   
+## groupCollapsed  
 
-Same as [`console.group(label)`](#consolegrouplabel), except the group is initially collapsed when it is logged to the Console.  
+```javascript
+console.groupCollapsed(label)
+```  
 
-## `console.groupEnd(label)`   
+Same as the [log](#log) method, except the group is initially collapsed when it is logged to the Console.  
 
-Stops visually grouping messages.  See [`console.group(label)`](#consolegrouplabel).  
+## groupEnd  
 
-## `console.info(object [, object, ...])`   
+```javascript
+console.groupEnd(label)
+```  
+
+Stops visually grouping messages.  See the [group](#group) method.  
+
+## info  
+
+```javascript
+console.info(object [, object, ...])
+```  
 
 **Log level**: `Info`  
 
-Identical to [`console.log(object [, object, ...])`](#consolelogobject--object-).  
+Identical to the [log](#log) method.  
 
 ```javascript
 console.info('info');
@@ -188,7 +235,11 @@ console.info('info');
 > The result of the `console.info()` example  
 > ![The result of the console.info() example][ImageInfo]  
 
-## `console.log(object [, object, ...])`   
+## log  
+
+```javascript
+console.log(object [, object, ...])
+```  
 
 **Log level**: `Info`  
 
@@ -202,7 +253,11 @@ console.log('log');
 > The result of the `console.log()` example  
 > ![The result of the console.log() example][ImageLog]  
 
-## `console.table(array)`   
+## table  
+
+```javascript
+console.table(array)
+```  
 
 **Log level**: `Info`  
 
@@ -230,9 +285,13 @@ console.table([
 > The result of the `console.table()` example  
 > ![The result of the console.table() example][ImageTable]  
 
-## `console.time([label])`   
+## time  
 
-Starts a new timer.  Call `console.timeEnd([label])` to stop the timer and print the elapsed time to the Console.  
+```javascript
+console.time([label])
+```  
+
+Starts a new timer.  Use the [timeEnd](#timeEnd) method to stop the timer and print the elapsed time to the Console.  
 
 ```javascript
 console.time();
@@ -246,13 +305,21 @@ console.timeEnd();
 > The result of the `console.time()` example  
 > ![The result of the console.time() example][ImageTime]  
 
-## `console.timeEnd([label])`   
+## timeEnd  
+
+```javascript
+console.timeEnd([label])
+```  
 
 **Log level**: `Info`  
 
-Stops a timer.  See [`console.time([label])`](#consoletimelabel).  
+Stops a timer.  See the [time](#time) method.  
 
-## `console.trace()`   
+## trace  
+
+```javascript
+console.trace()
+```  
 
 **Log level**: `Info`  
 
@@ -270,7 +337,11 @@ first();
 > The result of the `console.trace()` example  
 > ![The result of the console.trace() example][ImageTrace]  
 
-## `console.warn(object [, object, ...])`   
+## warn  
+
+```javascript
+console.warn(object [, object, ...])
+```  
 
 **Log level**: `Warning`  
 
@@ -306,7 +377,7 @@ console.warn('warn');
 
 <!-- links -->  
 
-<!--[ConsoleLog]: log.md "Get Started With Logging Messages In The Console"  -->
+[DevtoolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
 <!--[ConsoleUtilities]: utilities.md "Console Utilities API Reference"  -->
 <!--[ConsoleReferenceClear]: reference.md#clear-the-console "Clear the Console - Console Reference"  -->
 <!--[ConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  -->  
@@ -316,12 +387,12 @@ console.warn('warn');
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
