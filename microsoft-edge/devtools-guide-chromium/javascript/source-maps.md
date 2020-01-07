@@ -2,12 +2,12 @@
 title: Map Preprocessed Code to Source Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/19/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques and Paul Bakaus
+<!-- Copyright Meggin Kearney and Paul Bakaus
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -69,7 +69,7 @@ When running Source Maps in DevTools, you should notice that the JavaScript is n
 
 ### Enable Source Maps in settings  
 
-Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them, first open DevTools and click **Customize and control DevTools** `...` and click **Settings**.  On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.  You may also check **Enable CSS Source Maps**.  
+Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, click the **Customize and control DevTools** `...` button, and select **Settings**.  On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.  You may also check **Enable CSS Source Maps**.  
 
 ![Enable Source Maps][ImageSourceMaps]  
 
@@ -108,7 +108,7 @@ If you expand the **_Sources_** sub-panel you now see a new file with the custom
 
 ![Working with sourceURL][ImageCoffeeScript]  
 
-## Feedback   
+<!--## Feedback   -->  
 
 
 
@@ -131,7 +131,7 @@ If you expand the **_Sources_** sub-panel you now see a new file with the custom
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
