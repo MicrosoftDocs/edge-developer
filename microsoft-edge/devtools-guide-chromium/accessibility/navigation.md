@@ -2,7 +2,7 @@
 title: Navigate Microsoft Edge DevTools With Assistive Technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/23/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,9 +29,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This guide aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsIndex].  
-Microsoft Edge DevTools is a suite of web developer tools built into the Microsoft Edge browser.  
-See [Accessibility Reference][DevtoolsAccessibilityReference] if you are looking for DevTools features related to improving the accessibility of a web page.  
+This guide aims to help users who primarily rely on assistive technology like screen readers access and use Microsoft Edge DevTools.  Microsoft Edge DevTools is a suite of web developer tools built into the Microsoft Edge browser.  See [Accessibility Reference][DevtoolsAccessibilityReference] if you are looking for DevTools features related to improving the accessibility of a web page.  
+
+<!--todo: add edge devtools index section when available  -->  
 
 The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
 
@@ -41,8 +41,10 @@ Before starting, it helps to have a mental model of how the DevTools UI is struc
 
 For example:  
 
-*   The **Elements** panel lets you view and change [DOM nodes][DevtoolsDomIndex] or [CSS][DevtoolsCssIndex].  
+*   The **Elements** panel lets you view and change DOM nodes or [CSS][DevtoolsCssIndex].  
 *   The [**Console** panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
+
+<!--todo:  add dom nodes (dom nodes) section when available  -->  
 
 Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
 For instance, the **Elements** panel contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may see one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
@@ -53,8 +55,7 @@ The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful chea
 
 ## Open DevTools   
 
-To get started, read through [Open Microsoft Edge DevTools][DevtoolsOpen].  
-There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
+To get started, read through [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
 
 ## Navigate between panels   
 
@@ -75,7 +76,7 @@ To focus a specific panel, use the [**Command Menu**][DevtoolsCommandMenuIndex]:
 
 1.  With DevTools open, press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     The **Command Menu** is a fuzzy search autocomplete combobox.  
-1.  Type the name of the panel you want to open, then use the `Down Arrow` keyboard to navigate to the correct option.  
+1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Press `Enter` to run a command.  
 
 For example, to open the **Elements** panel:  
@@ -84,8 +85,7 @@ For example, to open the **Elements** panel:
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
 1.  Press `Enter` to run the command that opens the panel.  
 
-Opening a panel this way directs focus to the contents of the panel.  
-In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
+Opening a panel this way directs focus to the contents of the panel.  In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
 
 ## Elements panel   
 
@@ -93,10 +93,13 @@ In the case of the **Elements** panel, focus moves into the **DOM Tree**.
 
 1.  Navigate to the element you want to inspect using the cursor in the screen reader.  
 1.  Simulate a right-mouse click on the element to open the context menu.  
-1.  Choose the **Inspect** option.  This opens the [**Elements** panel][DevtoolsDomIndex] and focuses the element in the **DOM Tree**.  
+1.  Choose the **Inspect** option.  This opens the **Elements** panel and focuses the element in the **DOM Tree**.  
 
-The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  
-See [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard] for an example.  
+<!--todo:  add dom nodes (elements pane) section when available  -->  
+
+The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  <!--See [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard] for an example.  -->  
+
+<!--todo: add dom index navigation tree section then available  -->
 
 ### Copy the code for an element in the DOM Tree   
 
@@ -141,11 +144,9 @@ The **DOM Breakpoints** and **Properties** tabs are not keyboard accessible.
 
 ### Styles pane   
 
-In the **Styles** pane find controls for filtering styles, toggling element states \(such as [`:active`][MDNActive] and [`:focus`][MDNFocus]\), toggling classes, and adding new classes.  
-There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.  
+In the **Styles** pane find controls for filtering styles, toggling element states \(such as [`:active`][MDNActive] and [`:focus`][MDNFocus]\), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.  
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  
-You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node \(such as a link within the footer\), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you Are interested.  
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node \(such as a link within the footer\), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.  
 
 #### Navigate the Styles pane   
 
@@ -175,10 +176,9 @@ To toggle the state of an element, such as `:active` or `:focus`:
 1.  Press `Space` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.  
 1.  Continue pressing `Tab` to explore all of the available states.  
 
-#### Add an exiting class   
+#### Add an existing class   
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  
-Move focus to it by pressing `Tab` then `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
+Adjacent to the **Toggle Element State** button is the **Element Classes** button.  Move focus to it by pressing `Tab` then `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
 
 The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may press `.` inside of the edit text field to see a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and press `Enter` to apply it.  
 
@@ -189,22 +189,21 @@ You may type any class name you want into this field and then press `Tab` to ass
 
 ### Computed tab   
 
-With focus on the [**Computed** tab][DevtoolsCssReferenceViewAppliedElement], press `Tab` to move focus inside and explore the contents.  
-Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.  
+With focus on the **Computed** tab, press `Tab` to move focus inside and explore the contents.  Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.  
+
+<!--todo: add computed tab section when available  -->  
 
 #### Explore all computed styles   
 
-Press `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree][W3CWaiAriaTree].  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  
-A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.  
+Press `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree][W3CWaiAriaTree].  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.  
 
 #### Known issues   
 
-*   If you use the **Filter** text field, you are no longer be able to inspect styles.  
+*   If you use the **Filter** text field, you are no longer able to inspect styles.  
 
 ### Event listeners tab   
 
-From within the **Elements** panel you may inspect the event listeners applied to an element using the **Event Listeners** tab.  
-With focus on the **Styles** pane, press the `Right Arrow` to navigate to the **Event Listeners** tab.  
+From within the **Elements** panel you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** pane, press the `Right Arrow` to navigate to the **Event Listeners** tab.  
 
 #### Explore event listeners   
 
@@ -212,15 +211,11 @@ Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You may use th
 
 ### Accessibility pane   
 
-With focus on the [**Accessibility** pane][DevtoolsAccessibilityReferencePane], press `Tab` to move focus inside and explore the contents.  
-Within the **Accessibility** pane there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
+With focus on the [**Accessibility** pane][DevtoolsAccessibilityReferencePane], press `Tab` to move focus inside and explore the contents.  Within the **Accessibility** pane there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
 
 #### Accessibility Tree   
 
-The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where each `treeitem` corresponds to an element in the DOM.  
-The tree announces the computed role for the selected node.  
-Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  
-Use the arrow keys to traverse the tree and explore parent-child relationships.  
+The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.  
 
 #### Known issues   
 
@@ -253,28 +248,28 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 ## Feedback   
 
 *   Send DevTools bug reports or feature requests to [Chromium Issue Tracker][MonorailChromiumIssues].  
-*   Send any feedback related to this document to [GitHub][GithubMicrosoftWebFundamentalsNew Issue].  
+*   Send any feedback related to this document to [GitHub][GithubEdgeDeveloperNewIssue].  
 
 <!-- image links -->  
 
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: reference.md "Accessibility Reference"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibilty-pane "The Accessibility pane - Accessibility Reference"  
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference"  
 
-[MicrosoftEdgeDevtoolsIndex]: ../index.md "Microsoft Edge DevTools"  
+<!--[MicrosoftEdgeDevtoolsIndex]: ../index.md "Microsoft Edge DevTools"  -->  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview"  
 [DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS"  
-[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element"  
-[DevtoolsDomIndex]: ../dom/index.md "Get Started With Viewing And Changing The DOM"  
-[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get Started With Viewing And Changing The DOM"  
+<!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element"  -->  
+<!--[DevtoolsDomIndex]: ../dom/index.md "Get Started With Viewing And Changing The DOM"  -->  
+<!--[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get Started With Viewing And Changing The DOM"  -->
 [DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
 [DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools Keyboard Shortcuts"  
 [DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts"  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"  
-[GithubGoogleWebFundamentalsNew Issue]: https://github.com/google/webfundamentals/issues/new "New Issue - google/WebFundamentals | GitHub"  
+[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "New Issue - MicrosoftDocs/edge-developer | GitHub"  
 [MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active ":active | MDN"  
 [MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus ":focus | MDN"  
 [MonorailChromiumIssues]: https://crbug.com "Issues - chromium - Monorail"  

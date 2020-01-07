@@ -37,7 +37,7 @@ This tutorial teaches you the basic workflow for debugging any JavaScript issue 
 
 Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
 
-1.  Click **Open Demo**.  Hold `control` \(Windows\) or `command` \(macOS\) and open the demo in a new tab.  
+1.  Click **Open Demo**.  Hold `Control` \(Windows\) or `Command` \(macOS\) and open the demo in a new tab.  
 
     [Open Demo][OpenDebugJSDemo]  
 
