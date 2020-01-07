@@ -2,12 +2,12 @@
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Meggin Kearney and Paul Bakaus
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -25,14 +25,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Emulate and Test Other Browsers 
+# Emulate and Test Other Browsers   
 
 
 
 
-Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out other browsers solutions for emulation.  
+Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.  
 
-### TL;DR   
+### Summary  
 
 *   When you do not have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.  
 *   Device emulators and simulators enable you to mimic your development site on a range of devices from your workstation.  
@@ -46,11 +46,11 @@ Browser emulators are great for testing the responsiveness of a site, but each d
 
 Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes or your own size by dragging the edges.  
 
-### Edge F12 Emulation  
+### EdgeHTML Emulation  
 
-To emulate Windows Phones, use the Microsoft Edge [built-in emulation][DevToolsEdgeHtmlEmulation].  
+To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].  
 
-Since Edge does not ship with legacy compatibility, use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page would look in older versions of Internet Explorer.  
+Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look in older versions of Internet Explorer.  
 
 ## Device emulators and simulators  
 
@@ -62,10 +62,9 @@ Device simulators and emulators simulate not just the browser environment but th
 > Stock Browser in Android Emulator  
 > ![Stock Browser in Android Emulator][ImageAndroidEmulatorStockBrowser]  
 
-At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell uses the same Microsoft Edge rendering engine, but comes without any of the browser specific features.  
+At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
 The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].  
-
 Once your emulator is booted, click on the Browser icon, and test your site on the old Stock Browser for Android.  
 
 #### Chromium Content Shell on Android  
@@ -107,22 +106,22 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].  
 
 > [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and select `Keep in Dock`.  Now just click this icon whenever you need it.  
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and select **Keep in Dock**.  Now just click this icon whenever you need it.  
 
-### Modern.IE  
+###  Microsoft Edge (EdgeHTML)  
 
 > ##### Figure 4  
 > Modern IE VM  
 > ![Modern IE VM][ImageVMModernIe]  
 
-Modern.IE Virtual Machines enable you to access different versions of IE on your computer via VirtualBox \(or VMWare\).  Choose a [virtual machine on the download page][IeEdgeVmsDownloads].  
+Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).  Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].  
 
 ## Cloud-based emulators and simulators  
 
 If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.  
 
 *   [BrowserStack (commercial)][BrowserStack] is the easiest to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.  
-*   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watch the video recording of this afterwards on various devices.  You are able to also do manual testing with your site.  
+*   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
 *   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.  
 
  
@@ -138,13 +137,19 @@ If you are not able to use the emulators and do not have access to real devices,
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: ../../devtools-guide/emulation "DevTools (EdgeHTML) - Emulation"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation.md "DevTools (EdgeHTML) - Emulation"  
+
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations"  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Download virtual machines"  
+
+[AndroidStudioCreateManageVirtualDevices]: http://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"  
+[AndroidStudioDownload]:  http://developer.android.com/sdk/installing/studio.html "Download Android Studio and SDK tools | Android Developers"  
+[AndroidStudioRunAppsAndroidEmulator]: http://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "App Experience"  
 [AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Simulator Help - current | Apple"  
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"  
-[IeEdgeVmsDownloads]: https://developer.microsoft.com/microsoft-edge/tools/vms/ "Download virtual machines - Microsoft Edge"  
-[Ie11DevToolsEmulation]: https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations"  
 [MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode on the Mac App Store"  
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Responsive Design Mode | MDN"  
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Download the Firefox Browser"  
@@ -152,12 +157,14 @@ If you are not able to use the emulators and do not have access to real devices,
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[PaulBakaus]: https://developers.google.com/web/resources/contributors/pbakaus  
