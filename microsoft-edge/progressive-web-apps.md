@@ -65,15 +65,15 @@ By building or converting your existing site to a PWA, you can better engage you
 
 When you build a *Progressive Web App* targeting web standard APIs, your application can be deployed across platforms and devices and take advantage of the device specific capabilites as available. PWAs in Microsoft Edge (Chromium) are completely standards based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store based deployment or registration. Desktop PWAs are supported on any of the platforms Microsoft Edge (Chromium) is available, including Windows 7, Windows 10 and Mac OS.  Other benefits include:
    - Applications can be installed directly from within the browser via the "Install" icon in the navigation bar
-   [Install application flyout and icon](./progressive-web-apps-chromium/media/Install_PWA.png)
+   ![Install application flyout and icon](./progressive-web-apps-chromium/media/Install_PWA.png)
    - Applications can also be installed, run and managed from the "Settings"->"Apps" menu
-   [Application menu items under settings](./progressive-web-apps-chromium/media/App_menus.png)
+   ![Application menu items under settings](./progressive-web-apps-chromium/media/App_menus.png)
    - Web Notifications are integrated into the Windows notification system
    - Shared cookie store with the browser profile that installed the app
    - Access to other browser features via the "..." menu including certificate validation, site permissions, tracking protection and browser extensions
    - Full access to Microsoft [Edge DevTools](./devtools-guide-chromium/progressive-web-apps) for debugging your app 
 
-> [!Important] To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](./progressive-web-apps-edgehtml). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
+> ![Important] To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](./progressive-web-apps-edgehtml). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
 
 
 ## Requirements
