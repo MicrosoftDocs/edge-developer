@@ -2,7 +2,7 @@
 
 title: Microsoft Edge developer documentation
 summary: Microsoft Edge is the browser built for Windows 10, providing fast, safe, and productive web experiences.  Here are all the developer features and tools available to you in Microsoft Edge and the EdgeHTML engine.
-brand: edge
+brand: m365
 metadata:
   title: Microsoft Edge developer documentation
   description: Microsoft Edge information for developers including PWAs, DevTools, extensions, webdriver, and more.
