@@ -1,4 +1,4 @@
-# [Microsoft Edge documentation](index.md)
+# [Microsoft Edge documentation](index.yml)
 ## [Accessibility](accessibility.md)
 ### [Design](accessibility/design.md)
 ### [Build](accessibility/build.md)
