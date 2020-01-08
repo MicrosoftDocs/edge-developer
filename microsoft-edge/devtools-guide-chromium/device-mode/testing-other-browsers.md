@@ -2,7 +2,7 @@
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2020
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -58,9 +58,11 @@ Device simulators and emulators simulate not just the browser environment but th
 
 ### Android Emulator  
 
-> ##### Figure 1  
+<!--
+> ##### Figure old 1  
 > Stock Browser in Android Emulator  
 > ![Stock Browser in Android Emulator][ImageAndroidEmulatorStockBrowser]  
+-->
 
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
@@ -69,9 +71,11 @@ Once your emulator is booted, click on the Browser icon, and test your site on t
 
 #### Chromium Content Shell on Android  
 
-> ##### Figure 2  
+<!--
+> ##### Figure old 2  
 > Android Emulator Content Shell  
 > ![Android Emulator Content Shell][ImageAndroidEmulatorContentShell]  
+-->
 
 To install the Chromium Content Shell for Android, leave your emulator running and run the following commands at a command prompt:  
 
@@ -85,18 +89,20 @@ Now you are able to test your site with the Chromium Content Shell.
 
 #### Firefox on Android  
 
-> ##### Figure 3  
+<!--
+> ##### Figure old 3  
 > Firefox Icon on Android Emulator  
 > ![Firefox Icon on Android Emulator][ImageAndroidEmulatorFirefoxBrowser]  
+-->
 
 Similar to the Chromium Content Shell, you are able to get an APK to install Firefox onto the emulator.  
 
-[Download the right .apk file][MozillaFirefoxDownload].  
+[Download the correct .apk file][MozillaFirefoxDownload].  
 
 From here, you are able to install the file onto an open emulator or connected Android device with the following command:  
 
 ```shell
-adb install &lt;path to APK&gt;/fennec-XX.X.XX.android-arm.apk
+adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
 ### iOS Simulator  
@@ -110,7 +116,7 @@ When you are done, learn how to work with the simulator through [Apple Developer
 
 ###  Microsoft Edge (EdgeHTML)  
 
-> ##### Figure 4  
+> ##### Figure 1  
 > Modern IE VM  
 > ![Modern IE VM][ImageVMModernIe]  
 
@@ -130,10 +136,10 @@ If you are not able to use the emulators and do not have access to real devices,
 
 <!-- image links -->  
 
-[ImageAndroidEmulatorStockBrowser]: images/android-emulator-stock-browser.msft.png "Figure 1: Stock Browser in Android Emulator"  
-[ImageAndroidEmulatorContentShell]: images/android-avd-contentshell.msft.png "Figure 2: Android Emulator Content Shell"  
-[ImageAndroidEmulatorFirefoxBrowser]: images/ff-on-android-emulator.msft.png "Figure 3: Firefox Icon on Android Emulator"  
-[ImageVMModernIe]: images/modern-ie-simulator.msft.png "Figure 4: Modern IE VM"  
+[ImageAndroidEmulatorStockBrowser]: images/android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  
+[ImageAndroidEmulatorContentShell]: images/android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  
+[ImageAndroidEmulatorFirefoxBrowser]: images/ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  
+[ImageVMModernIe]: images/modern-ie-simulator.msft.png "Figure 1: Modern IE VM"  
 
 <!-- links -->  
 
