@@ -73,7 +73,7 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
    - Access to other browser features via the "..." menu including certificate validation, site permissions, tracking protection and browser extensions
    - Full access to Microsoft [Edge DevTools](./devtools-guide-chromium/progressive-web-apps) for debugging your app 
 
-*Important* To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](./progressive-web-apps-edgehtml). You can learn about testin your PWA on Windows 10, and distributing it in the Microsoft Store.
+> [!Important] To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](./progressive-web-apps-edgehtml). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
 
 
 ## Requirements
@@ -107,5 +107,5 @@ Check out [*PWAs in the Microsoft Store*](./progressive-web-apps-chromium/micros
 
 Browser engine support for *Progressive Web Apps* calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). 
 
-For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform itself has full support for these features that will work across devices where Microsoft Edge (Chromium) browser is supported. Microsoft Edge (Chromium) is currently in it's final beta with a generally available stable release planned for January 2020 with broad distribution following. <em>need a good link to supported platforms here</em>
+For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform itself has full support for these features that will work across devices where Microsoft Edge (Chromium) browser is supported. Microsoft Edge (Chromium) is currently in it's final beta with a generally available stable release planned for January 2020 with broad distribution following. [More information on Microsoft Edge availability](https://www.microsoftedge.com)
 
