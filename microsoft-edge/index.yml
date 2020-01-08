@@ -134,6 +134,11 @@ productDirectory:
           text: CSS
         - url: ./devtools-guide-chromium/css/print-preview.md
           text: Guides
+    # Card
+    - title: Getting Started with DevTools (cont.)
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
         - url: ./devtools-guide-chromium/resources/index.md
           text: Resources
     # Card
@@ -153,6 +158,11 @@ productDirectory:
           text: Mobile Simulation
         - url:  ./devtools-guide-chromium/javascript/index.md
           text: JavaScript
+    # Card
+    - title: Individual Tool Guides (cont.)
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
         - url:  ./devtools-guide-chromium/evaluate-performance/index.md
           text: Performance
         - url:  ./devtools-guide-chromium/remote-debugging/index.md
