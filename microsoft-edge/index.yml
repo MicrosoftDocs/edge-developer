@@ -1,0 +1,174 @@
+### YamlMime:Hub
+
+title: Microsoft Edge developer documentation
+summary: Microsoft Edge is the browser built for Windows 10, providing fast, safe, and productive web experiences.  Here are all the developer features and tools available to you in Microsoft Edge and the EdgeHTML engine.
+brand: microsoft edge
+metadata:
+  title: Microsoft Edge developer documentation
+  description: Microsoft Edge information for developers including PWAs, DevTools, extensions, webdriver, and more.
+  ms.topic: hub-page
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 01/08/2020
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: "What's new in EdgeHTML"
+      itemType: whats-new
+      url: ./updates/
+    # Card
+    - title: Download and Install
+      itemType: download
+      url: https://www.microsoftedgeinsider.com/download
+
+# productDirectory section (optional)
+productDirectory:
+  title: Edge for Enterprise  # < 60 chars (optional)
+  summary: Edge for Enterprise  # < 160 chars (optional)
+  items:
+    # Card
+    - title: Learn about Microsoft Edge in the enterprise
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_tools.svg
+      links:
+        - url: https://docs.microsoft.com/deployedge/microsoft-edge-channels
+          text: Microsoft Edge channel overview
+        - url: https://www.microsoftedgeinsider.com/download
+          text: Download a Microsoft Edge channel
+        - url: https://docs.microsoft.com/deployedge/edge-ie-mode
+          text: Use enterprise features
+    # Card
+    - title: Deploy and update Microsoft Edge
+      imageSrc: ./media/common/i_tools.svg
+      links:
+        - url: https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge
+          text: Deploy to Windows
+        - url: https://docs.microsoft.com/intune/apps/apps-edge-macos
+          text: Deploy to macOS
+    # Card
+    - title: Configure Microsoft Edge
+      imageSrc: ./media/common/i_tools.svg
+      links:
+        - url: https://docs.microsoft.com/deployedge/configure-microsoft-edge
+          text: Configure Microsoft Edge on Windows and macOS
+        - url: https://docs.microsoft.com/deployedge/edge-default-browser
+          text: Set Microsoft Edge as the default browser
+    # Card
+    - title: Manage security and privacy
+      imageSrc: ./media/common/i_tools.svg
+      links:
+        - url: https://docs.microsoft.com/deployedge/security-overview
+          text: Security
+    # Card
+    - title: Policy reference
+      imageSrc: ./media/common/i_tools.svg
+      links:
+        - url: https://docs.microsoft.com/deployedge/microsoft-edge-policies
+          text: Browser policy reference
+        - url: https://docs.microsoft.com/deployedge/microsoft-edge-update-policies
+          text: Update policy reference
+    # Card
+    - title: Engage with enterprise community 
+      imageSrc: ./media/common/i_tools.svg
+      links:
+        - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
+          text: Enterprise tech community
+        - url: https://docs.microsoft.com/deployedge/microsoft-edge-troubleshooting
+          text: Troubleshoot Microsoft Edge
+
+# productDirectory section (optional)
+productDirectory:
+  title: Cross-platform Web Apps  # < 60 chars (optional)
+  summary: Cross-platform Web Apps  # < 160 chars (optional)
+  items:
+    # Card
+    - title: Progressive Web Apps
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
+        - url: ./progressive-web-apps.md
+          text: Overview
+        - url: ./progressive-web-apps/get-started.md
+          text: Getting Started with PWAs
+        - url: ./progressive-web-apps/windows-features.md
+          text: Tailor Your PWAs for Windows
+        - url: ./progressive-web-apps/microsoft-store.md
+          text: PWAs in the Microsoft Store
+        - url: ./devtools-guide-chromium/progressive-web-apps.md
+          text: Using DevTools with Progressive Web Apps
+    # Card
+    - title: WebView2
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
+        - url: ./hosting/webview2.md
+          text: Overview
+        - url: ./hosting/webview2/gettingstarted.md
+          text: Getting Started with WebView2
+        - url: ./hosting/webview2/reference-webview2.md
+          text: Reference
+
+# productDirectory section (optional)
+productDirectory:
+  title: Microsoft Edge DevTools  # < 60 chars (optional)
+  summary: Microsoft Edge DevTools  # < 160 chars (optional)
+  items:
+    # Card
+    - title: Getting Started with DevTools
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
+        - url: ./devtools-guide-chromium.md
+          text: DevTools Overview
+        - url: ./devtools-guide-chromium/whats-new.md
+          text: What’s New
+        - url: ./devtools-guide-chromium/open.md
+          text: Open DevTools
+        - url: ./devtools-guide-chromium/beginners/html.md
+          text: DevTools for Beginners
+        - url: ./devtools-guide-chromium/css/index.md
+          text: CSS
+        - url: ./devtools-guide-chromium/css/print-preview.md
+          text: Guides
+        - url: ./devtools-guide-chromium/resources/index.md
+          text: Resources
+    # Card
+    - title: Individual Tool Guides
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
+        - url:  ./devtools-guide-chromium/console/index.md
+          text: Console
+        - url:  ./devtools-guide-chromium/network/index.md
+          text: Network
+        - url:  ./devtools-guide-chromium/storage/cookies.md
+          text: Storage
+        - url:  ./devtools-guide-chromium/command-menu/index.md
+          text: Command Menu
+        - url:  ./devtools-guide-chromium/device-mode/index.md
+          text: Mobile Simulation
+        - url:  ./devtools-guide-chromium/javascript/index.md
+          text: JavaScript
+        - url:  ./devtools-guide-chromium/evaluate-performance/index.md
+          text: Performance
+        - url:  ./devtools-guide-chromium/remote-debugging/index.md
+          text: Remote Debugging
+        - url:  ./devtools-guide-chromium/security/index.md
+          text: Security
+    # Card
+    - title: Customize
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./media/common/i_web-apps.svg
+      links:
+        - url:  ./devtools-guide-chromium/customize/index.md
+          text: •	Overview
+        - url:  ./devtools-guide-chromium/customize/dark-theme.md
+          text: •	Dark Theme
+        - url:  ./devtools-guide-chromium/workspaces/index.md
+          text: •	Workspaces
+        - url:  ./devtools-guide-chromium/shortcuts.md
+          text: •	Keyboard Shortcuts
