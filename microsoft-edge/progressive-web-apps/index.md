@@ -63,7 +63,8 @@ By building or converting your existing site to a PWA, you are able to better en
 
 ## PWAs on Windows 10 (EdgeHTML)  
 
-> Important Note: With the move to Edge from EdgeHTML to Chromium, the web platforms used by PWAs are not the same. If you require Windows 10 API access for your PWA, this EdgeHTML documentation is for you. If you're goal is cross platform support without Windows specific API access, please head over to the [Microsoft Edge (Chromium)](./progressive-web-apps) PWA documentation. 
+> [!Important Note]
+>With the move to Edge from EdgeHTML to Chromium, the underlying web platforms used by PWAs are not the same. Edge (Chromium) PWAs are installed from and run within the browser. Edge (EdgeHTML) PWAs run as Universal Windows Platform (UWP) applications and use the older EdgeHTML web platform. If you require Windows 10 API access for your PWA, this EdgeHTML documentation is for you. If your goal is cross platform support without Windows specific API access, please head over to the [Microsoft Edge (Chromium)](./progressive-web-apps) PWA documentation. 
 
 When you build a Progressive Web App to take advantage of Windows 10, you are able to distribute your PWA through the [Microsoft Store][MicrosoftDeveloperStore], the entire Windows 10 install base of 600+ million active monthly users is your potential app audience!  Applications developed this way run as [Universal Windows Platform][WindowsUWPGetStartedGuide] apps and have native like access to the WinRT APIs.  Note that the web platform rendering your code is EdgeHTML when using the WinRT APIs so be sure to use feature detection before calling any Windows specific APIs to ensure your PWA is able to still run across platforms where Microsoft Edge \(Chromium\) PWAs are available.  
 
