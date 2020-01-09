@@ -40,7 +40,7 @@ productDirectory:
     # Card
     - title: Learn about Microsoft Edge in the enterprise
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
+      imageSrc: /media/common/i_advanced.svg
       links:
         - url: /deployedge/microsoft-edge-channels.md
           text: Microsoft Edge channel overview
@@ -50,7 +50,7 @@ productDirectory:
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
-      imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
+      imageSrc: /media/common/i_advanced.svg
       links:
         - url: /configmgr/apps/deploy-use/deploy-edge.md
           text: Deploy to Windows
@@ -58,7 +58,7 @@ productDirectory:
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
-      imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
+      imageSrc: /media/common/i_advanced.svg
       links:
         - url: /deployedge/configure-microsoft-edge.md
           text: Configure Microsoft Edge on Windows and macOS
@@ -66,13 +66,13 @@ productDirectory:
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
-      imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image4.svg
+      imageSrc: /media/common/i_advanced.svg
       links:
         - url: /deployedge/security-overview.md
           text: Security
     # Card
     - title: Policy reference
-      imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image5.svg
+      imageSrc: /media/common/i_advanced.svg
       links:
         - url: /deployedge/microsoft-edge-policies.md
           text: Browser policy reference
@@ -80,7 +80,7 @@ productDirectory:
           text: Update policy reference
     # Card
     - title: Engage with enterprise community
-      imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image6.svg
+      imageSrc: /media/common/i_advanced.svg
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
           text: Enterprise tech community (Insider Focused)
@@ -173,49 +173,49 @@ conceptualContent:
     # Card
     - title: Individual Tool Guides
       links:
-        - url:  ./devtools-guide-chromium/console/index.md
+        - url: ./devtools-guide-chromium/console/index.md
           itemType: reference
           text: Console
-        - url:  ./devtools-guide-chromium/network/index.md
+        - url: ./devtools-guide-chromium/network/index.md
           itemType: reference
           text: Network
-        - url:  ./devtools-guide-chromium/storage/cookies.md
+        - url: ./devtools-guide-chromium/storage/cookies.md
           itemType: reference
           text: Storage
-        - url:  ./devtools-guide-chromium/command-menu/index.md
+        - url: ./devtools-guide-chromium/command-menu/index.md
           itemType: reference
           text: Command Menu
-        - url:  ./devtools-guide-chromium/device-mode/index.md
+        - url: ./devtools-guide-chromium/device-mode/index.md
           itemType: reference
           text: Mobile Simulation
-        - url:  ./devtools-guide-chromium/javascript/index.md
+        - url: ./devtools-guide-chromium/javascript/index.md
           itemType: reference
           text: JavaScript
-        - url:  ./devtools-guide-chromium/evaluate-performance/index.md
+        - url: ./devtools-guide-chromium/evaluate-performance/index.md
           itemType: reference
           text: Performance
-        - url:  ./devtools-guide-chromium/remote-debugging/index.md
+        - url: ./devtools-guide-chromium/remote-debugging/index.md
           itemType: reference
           text: Remote Debugging
     # Card
     - title: Individual Tool Guides (cont.)
       links:
-        - url:  ./devtools-guide-chromium/security/index.md
+        - url: ./devtools-guide-chromium/security/index.md
           itemType: reference
           text: Security
     # Card
     - title: Customize
       links:
-        - url:  ./devtools-guide-chromium/customize/index.md
+        - url: ./devtools-guide-chromium/customize/index.md
           itemType: reference
           text: Overview
-        - url:  ./devtools-guide-chromium/customize/dark-theme.md
+        - url: ./devtools-guide-chromium/customize/dark-theme.md
           itemType: reference
           text: Dark Theme
-        - url:  ./devtools-guide-chromium/workspaces/index.md
+        - url: ./devtools-guide-chromium/workspaces/index.md
           itemType: reference
           text: Workspaces
-        - url:  ./devtools-guide-chromium/shortcuts.md
+        - url: ./devtools-guide-chromium/shortcuts.md
           itemType: reference
           text: Keyboard Shortcuts
     # Card
