@@ -19,11 +19,81 @@ highlightedContent:
     # Card
     - title: "What's new in EdgeHTML"
       itemType: whats-new
-      url: ./updates/
+      url: ./devtools-guide/whats-new.md
     # Card
     - title: Download and Install
       itemType: download
       url: https://www.microsoftedgeinsider.com/download
+
+# productDirectory section (optional)
+productDirectory:
+  title: Microsoft Edge DevTools  # < 60 chars (optional)
+  summary: Microsoft Edge DevTools  # < 160 chars (optional)
+  items:
+    # Card
+    - title: Getting Started with DevTools
+      imageSrc: /media/common/i_web-apps.svg
+      links:
+        - url: ./devtools-guide-chromium.md
+          text: DevTools Overview
+        - url: ./devtools-guide-chromium/whats-new.md
+          text: What’s New
+        - url: ./devtools-guide-chromium/open.md
+          text: Open DevTools
+        - url: ./devtools-guide-chromium/beginners/html.md
+          text: DevTools for Beginners
+        - url: ./devtools-guide-chromium/css/index.md
+          text: CSS
+        - url: ./devtools-guide-chromium/css/print-preview.md
+          text: Guides
+    # Card
+    - title: Getting Started with DevTools (cont.)
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: /media/common/i_web-apps.svg
+      links:
+        - url: ./devtools-guide-chromium/resources/index.md
+          text: Resources
+    # Card
+    - title: Individual Tool Guides
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: /media/common/i_web-apps.svg
+      links:
+        - url:  ./devtools-guide-chromium/console/index.md
+          text: Console
+        - url:  ./devtools-guide-chromium/network/index.md
+          text: Network
+        - url:  ./devtools-guide-chromium/storage/cookies.md
+          text: Storage
+        - url:  ./devtools-guide-chromium/command-menu/index.md
+          text: Command Menu
+        - url:  ./devtools-guide-chromium/device-mode/index.md
+          text: Mobile Simulation
+        - url:  ./devtools-guide-chromium/javascript/index.md
+          text: JavaScript
+    # Card
+    - title: Individual Tool Guides (cont.)
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: /media/common/i_web-apps.svg
+      links:
+        - url:  ./devtools-guide-chromium/evaluate-performance/index.md
+          text: Performance
+        - url:  ./devtools-guide-chromium/remote-debugging/index.md
+          text: Remote Debugging
+        - url:  ./devtools-guide-chromium/security/index.md
+          text: Security
+    # Card
+    - title: Customize
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: /media/common/i_web-apps.svg
+      links:
+        - url:  ./devtools-guide-chromium/customize/index.md
+          text: Overview
+        - url:  ./devtools-guide-chromium/customize/dark-theme.md
+          text: Dark Theme
+        - url:  ./devtools-guide-chromium/workspaces/index.md
+          text: Workspaces
+        - url:  ./devtools-guide-chromium/shortcuts.md
+          text: Keyboard Shortcuts
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -95,7 +165,7 @@ productDirectory:
     # Card
     - title: Progressive Web Apps
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
+      imageSrc: /media/common/i_web-apps.svg
       links:
         - url: ./progressive-web-apps.md
           text: Overview
@@ -110,7 +180,7 @@ productDirectory:
     # Card
     - title: WebView2
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
+      imageSrc: /media/common/i_web-apps.svg
       links:
         - url: ./hosting/webview2.md
           text: Overview
@@ -118,73 +188,3 @@ productDirectory:
           text: Getting Started with WebView2
         - url: ./hosting/webview2/reference-webview2.md
           text: Reference
-
-# productDirectory section (optional)
-productDirectory:
-  title: Microsoft Edge DevTools  # < 60 chars (optional)
-  summary: Microsoft Edge DevTools  # < 160 chars (optional)
-  items:
-    # Card
-    - title: Getting Started with DevTools
-      imageSrc: ./media/common/i_web-apps.svg
-      links:
-        - url: ./devtools-guide-chromium.md
-          text: DevTools Overview
-        - url: ./devtools-guide-chromium/whats-new.md
-          text: What’s New
-        - url: ./devtools-guide-chromium/open.md
-          text: Open DevTools
-        - url: ./devtools-guide-chromium/beginners/html.md
-          text: DevTools for Beginners
-        - url: ./devtools-guide-chromium/css/index.md
-          text: CSS
-        - url: ./devtools-guide-chromium/css/print-preview.md
-          text: Guides
-    # Card
-    - title: Getting Started with DevTools (cont.)
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
-      links:
-        - url: ./devtools-guide-chromium/resources/index.md
-          text: Resources
-    # Card
-    - title: Individual Tool Guides
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
-      links:
-        - url:  ./devtools-guide-chromium/console/index.md
-          text: Console
-        - url:  ./devtools-guide-chromium/network/index.md
-          text: Network
-        - url:  ./devtools-guide-chromium/storage/cookies.md
-          text: Storage
-        - url:  ./devtools-guide-chromium/command-menu/index.md
-          text: Command Menu
-        - url:  ./devtools-guide-chromium/device-mode/index.md
-          text: Mobile Simulation
-        - url:  ./devtools-guide-chromium/javascript/index.md
-          text: JavaScript
-    # Card
-    - title: Individual Tool Guides (cont.)
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
-      links:
-        - url:  ./devtools-guide-chromium/evaluate-performance/index.md
-          text: Performance
-        - url:  ./devtools-guide-chromium/remote-debugging/index.md
-          text: Remote Debugging
-        - url:  ./devtools-guide-chromium/security/index.md
-          text: Security
-    # Card
-    - title: Customize
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
-      links:
-        - url:  ./devtools-guide-chromium/customize/index.md
-          text: •	Overview
-        - url:  ./devtools-guide-chromium/customize/dark-theme.md
-          text: •	Dark Theme
-        - url:  ./devtools-guide-chromium/workspaces/index.md
-          text: •	Workspaces
-        - url:  ./devtools-guide-chromium/shortcuts.md
-          text: •	Keyboard Shortcuts
