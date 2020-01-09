@@ -25,6 +25,7 @@
 ## [DevTools (Chromium)](devtools-guide-chromium.md)
 ### [Open DevTools](devtools-guide-chromium/open.md)
 ### [What's new](devtools-guide-chromium/whats-new.md)
+#### [80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
