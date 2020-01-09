@@ -26,7 +26,7 @@ highlightedContent:
     # Card
     - title: "What’s new"
       itemType: whats-new
-      url: ./devtools-guide/whats-new.md https://www.microsoftedgeinsider.com/whats-new
+      url: https://www.microsoftedgeinsider.com/whats-new
 
 # [Highlighted content]
 # - Download and Install: Microsoft Edge Channels - https://www.microsoftedgeinsider.com/download/
@@ -360,18 +360,18 @@ additionalContent:
             - text: WebDriver
               url: ./webdriver.md
             - text: Puppeteer
-              # url: (to be written)
+              url: (to be written)
             - text: Interop (Site compatibility)
               url: ./web-platform/site-impacting-changes.md
             - text: webhint
-              # url: (nothing written, but it would be good to link out to the browser extension)
+              url: (nothing written, but it would be good to link out to the browser extension)
             - text: Performance analysis
               url: ./performance-analysis.md
         # Card
         - title: Reference
           links:
             - text: Microsoft Edge user agent string
-              url: ./web-platform/user-agent-string
+              url: ./web-platform/user-agent-string.md
             - text: Platform Status
               url: https://developer.microsoft.com/microsoft-edge/platform/status/
             - text: Visual Studio Code
@@ -390,7 +390,7 @@ additionalContent:
             - text: JavaScript Runtime Hosting
               url: ./hosting/javascript-runtime-hosting.md
             - text: WebVR Developer Guide
-              url: ./webvr/index.md
+              url: /webvr/webvr-docs/index.md
             - text: Windows Runtime (WinRT)
               url: ./windows-runtime.md
     - title: Help & Support # < 60 chars (optional)
