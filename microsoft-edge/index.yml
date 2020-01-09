@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Edge developer documentation
-summary: Microsoft Edge is the browser built for Windows 10, providing fast, safe, and productive web experiences.  Here are all the developer features and tools available to you in Microsoft Edge and the EdgeHTML engine.
+summary: Microsoft Edge is the browser built for Windows 10, providing fast, safe, and productive web experiences.  Here are all the developer features and tools available to you in Microsoft Edge and the Chromium engine.
 brand: m365
 metadata:
   title: Microsoft Edge developer documentation
@@ -40,7 +40,7 @@ productDirectory:
     # Card
     - title: Learn about Microsoft Edge in the enterprise
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_advanced.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
       links:
         - url: /deployedge/microsoft-edge-channels.md
           text: Microsoft Edge channel overview
@@ -50,7 +50,7 @@ productDirectory:
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
-      imageSrc: /media/common/i_advanced.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
       links:
         - url: /configmgr/apps/deploy-use/deploy-edge.md
           text: Deploy to Windows
@@ -58,7 +58,7 @@ productDirectory:
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
-      imageSrc: /media/common/i_advanced.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
       links:
         - url: /deployedge/configure-microsoft-edge.md
           text: Configure Microsoft Edge on Windows and macOS
@@ -66,13 +66,13 @@ productDirectory:
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
-      imageSrc: /media/common/i_advanced.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
       links:
         - url: /deployedge/security-overview.md
           text: Security
     # Card
     - title: Policy reference
-      imageSrc: /media/common/i_advanced.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
       links:
         - url: /deployedge/microsoft-edge-policies.md
           text: Browser policy reference
@@ -80,7 +80,7 @@ productDirectory:
           text: Update policy reference
     # Card
     - title: Engage with enterprise community
-      imageSrc: /media/common/i_advanced.svg
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
           text: Enterprise tech community (Insider Focused)
@@ -204,7 +204,7 @@ conceptualContent:
           itemType: reference
           text: Security
     # Card
-    - title: Customize
+    - title: Customize DevTools
       links:
         - url: ./devtools-guide-chromium/customize/index.md
           itemType: reference
@@ -360,12 +360,12 @@ additionalContent:
             - text: WebDriver
               url: ./webdriver.md
             - text: Puppeteer
-              url: (to be written)
+              # url: (to be written)
             - text: Interop (Site compatibility)
               url: ./web-platform/site-impacting-changes.md
             - text: webhint
-              url: (nothing written, but it would be good to link out to the browser extension)
-            - text: Performance analysis (?)
+              # url: (nothing written, but it would be good to link out to the browser extension)
+            - text: Performance analysis
               url: ./performance-analysis.md
         # Card
         - title: Reference
@@ -399,7 +399,7 @@ additionalContent:
         # Card
         - title: Community Support
           summary: Get advice and answers from a community of experts via StackOverflow.
-          # url: 
+          url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
         # Card
         - title: Get no-cost help via App Assure
           summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft will help you fix them at no additional cost. See offer details for eligibility requirements.
@@ -434,7 +434,7 @@ additionalContent:
 # - -  WebVR Developer Guide - ./webvr/index.md
 # - -  Windows Runtime (WinRT) - ./windows-runtime.md
 # -  Help & Support 
-# - -  Community Support
+# - -  Community Support - https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
 # - - -  Get advice and answers from a community of experts via StackOverflow. 
 # - -  Get no-cost help via App Assure
 # - - -  Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft will help you fix them at no additional cost. See offer details for eligibility requirements.
