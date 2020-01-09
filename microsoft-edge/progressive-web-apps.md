@@ -67,7 +67,7 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
    - Applications can be installed directly from within the browser via the "Install" icon in the navigation bar
 
    ![Install application flyout and icon](./progressive-web-apps-chromium/images/Install_PWA.png)
-   
+
    - Applications can also be installed, run and managed from the "Settings"->"Apps" menu
    ![Application menu items under settings](./progressive-web-apps-chromium/images/App_menus.png)
    - Web Notifications are integrated into the Windows notification system
@@ -98,12 +98,9 @@ To be a *great* PWA, your app will also need:
 
   - [X] [**Best practices**](https://webhint.io/). Use code quality tools like the [Webhint](https://webhint.io/) linter to optimize the efficiency, robustness, safety, and accessibility of your app.
 
-To submit your *Progressive Web App* to the [Microsoft Store](https://developer.microsoft.com/en-us/store), you'll need:
+  - [X] [**Chromium PWA Checklist**](https://developers.google.com/web/progressive-web-apps/checklist#baseline). Check your PWA against the Google baseline PWA checklist
 
- - [X] A [Microsoft developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account)
- - [X] Completed [steps for publishing a Windows app](https://docs.microsoft.com/en-us/windows/uwp/publish/)
-
-Check out [*PWAs in the Microsoft Store*](./progressive-web-apps-chromium/microsoft-store.md) for further details.
+If you'd like to turn your PWA into a [Microsoft Store](https://developer.microsoft.com/en-us/store) application, head to the [Progressive Web Apps (EdgeHTML)](./progressive-web-apps-edgehtml/microsoft-store.md) documentation.
 
 ## Current availability
 
