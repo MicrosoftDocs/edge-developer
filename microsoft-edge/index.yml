@@ -225,7 +225,7 @@ conceptualContent:
           itemType: reference
           text: Extensions Overview
     # Card
-    - title: Getting started tutorial
+    - title: "Extensions: Getting started tutorial"
       links:
         - url: ./extensions-chromium/getting-started/index.md
           itemType: reference
@@ -237,7 +237,7 @@ conceptualContent:
           itemType: reference
           text: Create a simple extension – part 2
     # Card
-    - title: Developer Guide
+    - title: "Extensions: Developer Guide"
       links:
         - url: ./extensions-chromium/developer-guide/port-chrome-extension.md
           itemType: reference
@@ -249,7 +249,7 @@ conceptualContent:
           itemType: reference
           text: Native messaging
     # Card
-    - title: Publish to the Microsoft Store
+    - title: "Extensions: Publish to the Microsoft Store"
       links:
         - url: ./extensions-chromium/publish/publish-extension.md
           itemType: reference
@@ -267,7 +267,7 @@ conceptualContent:
           itemType: reference
           text: Manage account settings
     # Card
-    - title: Microsoft Edge Addons Policies
+    - title: "Extensions: Microsoft Edge Addons Policies"
       links:
         - url: ./extensions-chromium/store-policies/csp.md
           itemType: reference
@@ -321,21 +321,21 @@ conceptualContent:
 # - -  Keyboard Shortcuts - ./devtools-guide-chromium/shortcuts.md
 # -  Extensions Overview
 # - -  Extensions Overview - ./extensions-chromium/index.md
-# -  Getting started tutorial
+# -  Extensions: Getting started tutorial
 # - -  Getting started tutorial - ./extensions-chromium/getting-started/index.md
 # - -  Create a simple extension – part 1 - ./extensions-chromium/getting-started/part1-simple-extension.md
 # - -  Create a simple extension – part 2 - ./extensions-chromium/getting-started/part2-content-scripts.md
-# -  Developer Guide
+# -  Extensions: Developer Guide
 # - -  Port Chromium extension to Microsoft Edge - ./extensions-chromium/developer-guide/port-chrome-extension.md
 # - -  Alternate methods of distributing extensions - ./extensions-chromium/developer-guide/alternate-distribution-options.md
 # - -  Native messaging - ./extensions-chromium/developer-guide/native-messaging.md
-# -  Publish to the Microsoft Store
+# -  Extensions: Publish to the Microsoft Store
 # - -  Step-wise publishing process - ./extensions-chromium/publish/publish-extension.md
 # - -  Open developer account - ./extensions-chromium/publish/create-dev-account.md
 # - -  Upload YouTube Video - ./extensions-chromium/publish/upload-video.md
 # - -  Update Extension Listing - ./extensions-chromium/publish/update.md
 # - -  Manage account settings - ./extensions-chromium/publish/manage-settings.md
-# -  Microsoft Edge Addons Policies
+# -  Extensions: Microsoft Edge Addons Policies
 # - -  Content Security Policy - ./extensions-chromium/store-policies/csp.md
 # - -  Microsoft Edge Addons Catalog Developer Policies - ./extensions-chromium/store-policies/developer-policies.md
 # -  Extensions for enterprise
