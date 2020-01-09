@@ -126,6 +126,7 @@ productDirectory:
   items:
     # Card
     - title: Getting Started with DevTools
+      imageSrc: ./media/common/i_web-apps.svg
       links:
         - url: ./devtools-guide-chromium.md
           text: DevTools Overview
