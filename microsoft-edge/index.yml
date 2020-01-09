@@ -185,9 +185,6 @@ conceptualContent:
         - url: ./devtools-guide-chromium/command-menu/index.md
           itemType: reference
           text: Command Menu
-        - url: ./devtools-guide-chromium/device-mode/index.md
-          itemType: reference
-          text: Mobile Simulation
         - url: ./devtools-guide-chromium/javascript/index.md
           itemType: reference
           text: JavaScript
@@ -197,9 +194,6 @@ conceptualContent:
         - url: ./devtools-guide-chromium/remote-debugging/index.md
           itemType: reference
           text: Remote Debugging
-    # Card
-    - title: Individual Tool Guides (cont.)
-      links:
         - url: ./devtools-guide-chromium/security/index.md
           itemType: reference
           text: Security
