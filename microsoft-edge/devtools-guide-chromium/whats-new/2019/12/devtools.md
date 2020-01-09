@@ -130,7 +130,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
-### Visual Studio  
+### Visual Studio integration
 Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running in Microsoft Edge with the Visual Studio debugger. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
 
 > ##### Figure 8  
