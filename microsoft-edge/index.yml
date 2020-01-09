@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 01/08/2020
+  ms.date: 01/09/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -25,62 +25,69 @@ highlightedContent:
       itemType: download
       url: https://www.microsoftedgeinsider.com/download
 
-# productDirectory section (optional)
-productDirectory:
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: Edge for Enterprise  # < 60 chars (optional)
   summary: Edge for Enterprise  # < 160 chars (optional)
   items:
     # Card
     - title: Learn about Microsoft Edge in the enterprise
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_tools.svg
       links:
         - url: https://docs.microsoft.com/deployedge/microsoft-edge-channels
+          itemType: overview
           text: Microsoft Edge channel overview
         - url: https://www.microsoftedgeinsider.com/download
+          itemType: download
           text: Download a Microsoft Edge channel
         - url: https://docs.microsoft.com/deployedge/edge-ie-mode
+          itemType: reference
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
-      imageSrc: ./media/common/i_tools.svg
       links:
         - url: https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-edge
+          itemType: deploy
           text: Deploy to Windows
         - url: https://docs.microsoft.com/intune/apps/apps-edge-macos
+          itemType: deploy
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
-      imageSrc: ./media/common/i_tools.svg
       links:
         - url: https://docs.microsoft.com/deployedge/configure-microsoft-edge
+          itemType: reference
           text: Configure Microsoft Edge on Windows and macOS
         - url: https://docs.microsoft.com/deployedge/edge-default-browser
+          itemType: reference
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
-      imageSrc: ./media/common/i_tools.svg
       links:
         - url: https://docs.microsoft.com/deployedge/security-overview
+          itemType: reference
           text: Security
     # Card
     - title: Policy reference
-      imageSrc: ./media/common/i_tools.svg
       links:
         - url: https://docs.microsoft.com/deployedge/microsoft-edge-policies
+          itemType: reference
           text: Browser policy reference
         - url: https://docs.microsoft.com/deployedge/microsoft-edge-update-policies
+          itemType: reference
           text: Update policy reference
     # Card
-    - title: Engage with enterprise community 
-      imageSrc: ./media/common/i_tools.svg
+    - title: Engage with enterprise community
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
+          itemType: reference
           text: Enterprise tech community
         - url: https://docs.microsoft.com/deployedge/microsoft-edge-troubleshooting
+          itemType: reference
           text: Troubleshoot Microsoft Edge
 
-# productDirectory section (optional)
+# additionalContent section (optional)
+# Card with links style
 productDirectory:
   title: Cross-platform Web Apps  # < 60 chars (optional)
   summary: Cross-platform Web Apps  # < 160 chars (optional)
@@ -119,8 +126,6 @@ productDirectory:
   items:
     # Card
     - title: Getting Started with DevTools
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/common/i_web-apps.svg
       links:
         - url: ./devtools-guide-chromium.md
           text: DevTools Overview
