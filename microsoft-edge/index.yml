@@ -282,18 +282,25 @@ conceptualContent:
     - title: Test & Automation
       links:
         - text: Accessibility
+          itemType: reference
           url: ./accessibility.md
         - text: DevTools Protocol (Chromium)
+          itemType: reference
           url: ./devtools-protocol-chromium.md
         - text: WebDriver
+          itemType: reference
           url: ./webdriver.md
         - text: Puppeteer
+          itemType: reference
           url: (to be written)
         - text: Interop (Site compatibility)
+          itemType: reference
           url: ./web-platform/site-impacting-changes.md
         - text: webhint
+          itemType: reference
           url: (nothing written, but it would be good to link out to the browser extension)
         - text: Performance analysis
+          itemType: reference
           url: ./performance-analysis.md
 
 # Section: Cross-platform Web Apps, DevTools, and Extensions
