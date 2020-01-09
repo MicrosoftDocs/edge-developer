@@ -278,6 +278,23 @@ conceptualContent:
         - url: ./extensions-chromium/enterprise/hosting-and-updating.md
           itemType: reference
           text: Hosting and Updating
+    # Card
+    - title: Test & Automation
+      links:
+        - text: Accessibility
+          url: ./accessibility.md
+        - text: DevTools Protocol (Chromium)
+          url: ./devtools-protocol-chromium.md
+        - text: WebDriver
+          url: ./webdriver.md
+        - text: Puppeteer
+          url: (to be written)
+        - text: Interop (Site compatibility)
+          url: ./web-platform/site-impacting-changes.md
+        - text: webhint
+          url: (nothing written, but it would be good to link out to the browser extension)
+        - text: Performance analysis
+          url: ./performance-analysis.md
 
 # Section: Cross-platform Web Apps, DevTools, and Extensions
 # -  Progressive Web Apps 
@@ -335,6 +352,14 @@ conceptualContent:
 # -  Extensions for enterprise
 # - -  Match Patterns - ./extensions-chromium/enterprise/match-patterns.md
 # - -  Hosting and Updating - ./extensions-chromium/enterprise/hosting-and-updating.md
+# -  Test & Automation
+# - -  Accessibility - ./accessibility.md
+# - -  DevTools Protocol (Chromium) - ./devtools-protocol-chromium.md
+# - -  WebDriver - ./webdriver.md
+# - -  Puppeteer - (to be written)
+# - -  Interop (Site compatibility) - ./web-platform/site-impacting-changes.md
+# - -  webhint - (nothing written, but it would be good to link out to the browser extension)
+# - -  Performance analysis (?) - ./performance-analysis.md
 
 # additionalContent section (optional)
 # Card with links style
@@ -344,23 +369,6 @@ additionalContent:
     - # title: sectiontitle # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
-        # Card
-        - title: Test & Automation
-          links:
-            - text: Accessibility
-              url: ./accessibility.md
-            - text: DevTools Protocol (Chromium)
-              url: ./devtools-protocol-chromium.md
-            - text: WebDriver
-              url: ./webdriver.md
-            - text: Puppeteer
-              url: (to be written)
-            - text: Interop (Site compatibility)
-              url: ./web-platform/site-impacting-changes.md
-            - text: webhint
-              url: (nothing written, but it would be good to link out to the browser extension)
-            - text: Performance analysis
-              url: ./performance-analysis.md
         # Card
         - title: Reference
           links:
@@ -407,14 +415,6 @@ additionalContent:
           summary: Helpful support resources for end users is available.
           url: https://support.microsoft.com/hub/4337664/microsoft-edge-help
 
-# -  Test & Automation
-# - -  Accessibility - ./accessibility.md
-# - -  DevTools Protocol (Chromium) - ./devtools-protocol-chromium.md
-# - -  WebDriver - ./webdriver.md
-# - -  Puppeteer - (to be written)
-# - -  Interop (Site compatibility) - ./web-platform/site-impacting-changes.md
-# - -  webhint - (nothing written, but it would be good to link out to the browser extension)
-# - -  Performance analysis (?) - ./performance-analysis.md
 # -  Reference
 # - -  Microsoft Edge user agent string - ./web-platform/user-agent-string
 # - -  Platform Status - https://developer.microsoft.com/microsoft-edge/platform/status/
