@@ -25,76 +25,6 @@ highlightedContent:
       itemType: download
       url: https://www.microsoftedgeinsider.com/download
 
-# productDirectory section (optional)
-productDirectory:
-  title: Microsoft Edge DevTools  # < 60 chars (optional)
-  summary: Microsoft Edge DevTools  # < 160 chars (optional)
-  items:
-    # Card
-    - title: Getting Started with DevTools
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url: ./devtools-guide-chromium.md
-          text: DevTools Overview
-        - url: ./devtools-guide-chromium/whats-new.md
-          text: What’s New
-        - url: ./devtools-guide-chromium/open.md
-          text: Open DevTools
-        - url: ./devtools-guide-chromium/beginners/html.md
-          text: DevTools for Beginners
-        - url: ./devtools-guide-chromium/css/index.md
-          text: CSS
-        - url: ./devtools-guide-chromium/css/print-preview.md
-          text: Guides
-    # Card
-    - title: Getting Started with DevTools (cont.)
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url: ./devtools-guide-chromium/resources/index.md
-          text: Resources
-    # Card
-    - title: Individual Tool Guides
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url:  ./devtools-guide-chromium/console/index.md
-          text: Console
-        - url:  ./devtools-guide-chromium/network/index.md
-          text: Network
-        - url:  ./devtools-guide-chromium/storage/cookies.md
-          text: Storage
-        - url:  ./devtools-guide-chromium/command-menu/index.md
-          text: Command Menu
-        - url:  ./devtools-guide-chromium/device-mode/index.md
-          text: Mobile Simulation
-        - url:  ./devtools-guide-chromium/javascript/index.md
-          text: JavaScript
-    # Card
-    - title: Individual Tool Guides (cont.)
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url:  ./devtools-guide-chromium/evaluate-performance/index.md
-          text: Performance
-        - url:  ./devtools-guide-chromium/remote-debugging/index.md
-          text: Remote Debugging
-        - url:  ./devtools-guide-chromium/security/index.md
-          text: Security
-    # Card
-    - title: Customize
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url:  ./devtools-guide-chromium/customize/index.md
-          text: Overview
-        - url:  ./devtools-guide-chromium/customize/dark-theme.md
-          text: Dark Theme
-        - url:  ./devtools-guide-chromium/workspaces/index.md
-          text: Workspaces
-        - url:  ./devtools-guide-chromium/shortcuts.md
-          text: Keyboard Shortcuts
-
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -159,32 +89,138 @@ conceptualContent:
 # additionalContent section (optional)
 # Card with links style
 additionalContent:
-  title: Cross-platform Web Apps  # < 60 chars (optional)
-  summary: Cross-platform Web Apps  # < 160 chars (optional)
-  items:
-    # Card
-    - title: Progressive Web Apps
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url: ./progressive-web-apps.md
-          text: Overview
-        - url: ./progressive-web-apps/get-started.md
-          text: Getting Started with PWAs
-        - url: ./progressive-web-apps/windows-features.md
-          text: Tailor Your PWAs for Windows
-        - url: ./progressive-web-apps/microsoft-store.md
-          text: PWAs in the Microsoft Store
-        - url: ./devtools-guide-chromium/progressive-web-apps.md
-          text: Using DevTools with Progressive Web Apps
-    # Card
-    - title: WebView2
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_web-apps.svg
-      links:
-        - url: ./hosting/webview2.md
-          text: Overview
-        - url: ./hosting/webview2/gettingstarted.md
-          text: Getting Started with WebView2
-        - url: ./hosting/webview2/reference-webview2.md
-          text: Reference
+  # Supports up to 3 sections
+  sections:
+    - title: Cross-platform Web Apps # < 60 chars (optional)
+      summary: Cross-platform Web Apps # < 160 chars (optional)
+      items:
+        # Card
+        - title: Progressive Web Apps
+          links:
+          - url: ./progressive-web-apps.md
+            text: Overview
+          - url: ./progressive-web-apps/get-started.md
+            text: Getting Started with PWAs
+          - url: ./progressive-web-apps/windows-features.md
+            text: Tailor Your PWAs for Windows
+          - url: ./progressive-web-apps/microsoft-store.md
+            text: PWAs in the Microsoft Store
+          - url: ./devtools-guide-chromium/progressive-web-apps.md
+            text: Using DevTools with Progressive Web Apps
+        # Card
+        - title: WebView2
+          links:
+          - url: ./hosting/webview2.md
+            text: Overview
+          - url: ./hosting/webview2/gettingstarted.md
+            text: Getting Started with WebView2
+          - url: ./hosting/webview2/reference-webview2.md
+            text: Reference
+    - title: Microsoft Edge DevTools
+      summary: Microsoft Edge DevTools
+      items:
+        # Card
+        - title: Getting Started with DevTools
+          links:
+          - url: ./devtools-guide-chromium.md
+            text: DevTools Overview
+          - url: ./devtools-guide-chromium/whats-new.md
+            text: What’s New
+          - url: ./devtools-guide-chromium/open.md
+            text: Open DevTools
+          - url: ./devtools-guide-chromium/beginners/html.md
+            text: DevTools for Beginners
+          - url: ./devtools-guide-chromium/css/index.md
+            text: CSS
+          - url: ./devtools-guide-chromium/css/print-preview.md
+            text: Guides
+          - url: ./devtools-guide-chromium/resources/index.md
+            text: Resources
+        # Card
+        - title: Individual Tool Guides
+          links:
+          - url:  ./devtools-guide-chromium/console/index.md
+            text: Console
+          - url:  ./devtools-guide-chromium/network/index.md
+            text: Network
+          - url:  ./devtools-guide-chromium/storage/cookies.md
+            text: Storage
+          - url:  ./devtools-guide-chromium/command-menu/index.md
+            text: Command Menu
+          - url:  ./devtools-guide-chromium/device-mode/index.md
+            text: Mobile Simulation
+          - url:  ./devtools-guide-chromium/javascript/index.md
+            text: JavaScript
+          - url:  ./devtools-guide-chromium/evaluate-performance/index.md
+            text: Performance
+          - url:  ./devtools-guide-chromium/remote-debugging/index.md
+            text: Remote Debugging
+        # Card
+        - title: Individual Tool Guides (cont.)
+          links:
+          - url:  ./devtools-guide-chromium/security/index.md
+            text: Security
+        # Card
+        - title: Customize
+          links:
+          - url:  ./devtools-guide-chromium/customize/index.md
+            text: Overview
+          - url:  ./devtools-guide-chromium/customize/dark-theme.md
+            text: Dark Theme
+          - url:  ./devtools-guide-chromium/workspaces/index.md
+            text: Workspaces
+          - url:  ./devtools-guide-chromium/shortcuts.md
+            text: Keyboard Shortcuts
+    - title: Extensions
+      summary: Extensions
+      items:
+        # Card
+        - title: Extensions Overview
+          links:
+          - url: ./extensions-chromium/index.md
+            text: Extensions Overview
+        # Card
+        - title: Getting started tutorial
+          links:
+          - url: ./extensions-chromium/getting-started/index.md
+            text: Getting started tutorial
+          - url: ./extensions-chromium/getting-started/part1-simple-extension.md
+            text: Create a simple extension – part 1
+          - url: ./extensions-chromium/getting-started/part2-content-scripts.md
+            text: Create a simple extension – part 2
+        # Card
+        - title: Developer Guide
+          links:
+          - url: ./extensions-chromium/developer-guide/port-chrome-extension.md
+            text: Port Chromium extension to Microsoft Edge
+          - url: ./extensions-chromium/developer-guide/alternate-distribution-options.md
+            text: Alternate methods of distributing extensions
+          - url: ./extensions-chromium/developer-guide/native-messaging.md
+            text: Native messaging
+        # Card
+        - title: Publish to the Microsoft Store
+          links:
+          - url: ./extensions-chromium/publish/publish-extension.md
+            text: Step-wise publishing process
+          - url: ./extensions-chromium/publish/create-dev-account.md
+            text: Open developer account
+          - url: ./extensions-chromium/publish/upload-video.md
+            text: Upload YouTube Video
+          - url: ./extensions-chromium/publish/update.md
+            text: Update Extension Listing
+          - url: ./extensions-chromium/publish/manage-settings.md
+            text: Manage account settings
+        # Card
+        - title: Microsoft Edge Addons Policies
+          links:
+          - url: ./extensions-chromium/store-policies/csp.md
+            text: Content Security Policy
+          - url: ./extensions-chromium/store-policies/developer-policies.md
+            text: Microsoft Edge Addons Catalog Developer Policies
+        # Card
+        - title: Extensions for enterprise
+          links:
+          - url: ./extensions-chromium/enterprise/match-patterns.md
+            text: Match Patterns
+          - url: ./extensions-chromium/enterprise/hosting-and-updating.md
+            text: Hosting and Updating
