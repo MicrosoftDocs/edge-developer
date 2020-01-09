@@ -158,7 +158,7 @@ conceptualContent:
 
 # additionalContent section (optional)
 # Card with links style
-productDirectory:
+additionalContent:
   title: Cross-platform Web Apps  # < 60 chars (optional)
   summary: Cross-platform Web Apps  # < 160 chars (optional)
   items:
