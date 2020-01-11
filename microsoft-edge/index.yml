@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
 title: Microsoft Edge documentation
-summary: Microsoft Edge is the browser built for Windows 10, providing fast, safe, and productive web experiences.  Here are all the developer features and tools available to you in Microsoft Edge and the Chromium engine.
+summary: Explore documentation resources for Microsoft Edge.  Here are all the developer features and tools available to you in Microsoft Edge and the Chromium engine.
 brand: m365
 metadata:
   title: Microsoft Edge documentation
-  description: Microsoft Edge information for developers including PWAs, DevTools, extensions, webdriver, and more.
+  description: Microsoft Edge information for developers, IT admins, and browser end users; including DevTools, Extensions, PWAs, WebDriver, and more.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
@@ -122,7 +122,7 @@ conceptualContent:
         - url: ./devtools-guide-chromium.md
           itemType: reference
           text: DevTools Overview
-        - url: ./devtools-guide-chromium/whats-new.md
+        - url: ./devtools-guide-chromium/whats-new/2019/12/devtools.md
           itemType: reference
           text: What’s New
         - url: ./devtools-guide-chromium/open.md
@@ -200,9 +200,9 @@ conceptualContent:
         - text: Interop (Site compatibility)
           itemType: reference
           url: ./web-platform/site-impacting-changes.md
-        - text: webhint (need link)
+        - text: webhint
           itemType: reference
-          url: (nothing written, but it would be good to link out to the browser extension)
+          url: https://webhint.io/docs/user-guide/
         - text: Performance analysis
           itemType: reference
           url: ./performance-analysis.md
