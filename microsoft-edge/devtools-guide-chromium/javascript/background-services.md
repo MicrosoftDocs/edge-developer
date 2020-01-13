@@ -42,7 +42,7 @@ This can help you make sure that events are being sent and received as expected.
 > Viewing the details of an event in the Push Messaging pane  
 > ![Viewing the details of an event in the Push Messaging pane][PushDetails]  
 
-## Background Fetch  
+## Background Fetch   
 
 The *Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
 
