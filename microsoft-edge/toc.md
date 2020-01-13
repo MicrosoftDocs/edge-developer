@@ -24,22 +24,18 @@
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md)
 ## [DevTools (Chromium)](devtools-guide-chromium.md)
 ### [Open DevTools](devtools-guide-chromium/open.md)
-### What's new
-#### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
+### [What's new](devtools-guide-chromium/whats-new.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
 ### CSS
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
-#### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
 #### Guides
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
-#### [Log Messages](devtools-guide-chromium/console/log.md)
-#### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
 #### [Network Issues Guide](devtools-guide-chromium/network/issues.md)
@@ -58,11 +54,9 @@
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
-#### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
-#### Guides
-##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
@@ -76,8 +70,6 @@
 ### [Resources](devtools-guide-chromium/resources/index.md)
 ### Customize
 #### [Overview](devtools-guide-chromium/customize/index.md)
-#### [Dark Theme](devtools-guide-chromium/customize/dark-theme.md)
-#### [Change Placement](devtools-guide-chromium/customize/placement.md)
 ## [DevTools (EdgeHTML)](devtools-guide.md)
 ### [What's new](devtools-guide/whats-new.md)
 #### [EdgeHTML 17](devtools-guide/whats-new/edgehtml-17.md)
@@ -171,6 +163,7 @@
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
+## [Privacy Whitepaper](whitepaper.md)
 ## [Progressive Web Apps](progressive-web-apps.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
@@ -182,7 +175,6 @@
 ## [WebDriver](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
-### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
 ## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
