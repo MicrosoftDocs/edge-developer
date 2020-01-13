@@ -12,7 +12,7 @@ keywords: microsoft edge, privacy, whitepaper, trust
 
 # Microsoft Edge Privacy Whitepaper
 
-[Crashes](#Crashes) | [New tab page](#New-tab-page)
+[Crashes](#crashes) | [New tab page](#new-tab-page)
 
 Our browser privacy promise is to provide you with the protection, transparency, control and respect you deserve. To uphold our commitment to give you transparency into our product, we’ve provided a privacy whitepaper that explains how Microsoft Edge features and services work and how they may affect your privacy. Our goal is to give you a full understanding into how your data is used, how to control the different features, and how to manage your collected data, so you have the info you need to make the right privacy decisions for you. 
 
@@ -275,7 +275,7 @@ You can also prevent Microsoft Edge from prompting you to save passwords by turn
 
 If you’ve turned on sync for your profile, your autofill data will be synced across all versions of Microsoft Edge where you’re signed in with the same credentials. When sync is turned on, all autofill data is stored on encrypted Microsoft servers. The autofill data stored on Microsoft servers is only used for sync purposes. You can turn off syncing of your autofill data in **Edge://settings/profiles/sync**. If you’ve turned on sync for autofill, deleting autofill data from a device where you're signed in to Microsoft Edge will delete the autofill data from other devices where you're signed in.   
 
-When you visit a webpage and submit a form, Microsoft Edge sends info about the form such as a hash of the hostname and autofill entry types (e.g., box 1 is looking for an email address, box 2 is looking for a password, etc.) to the Microsoft form fill service. No user-entered info or user identifiers are sent to the service. This info helps Microsoft Edge correctly identify forms across different webpages.  This data is used to help match your saved autofill data to the form.  
+When you visit a webpage and submit a form, Microsoft Edge sends info about the form such as a hash of the hostname and autofill entry types (e.g., box 1 is looking for an email address, box 2 is looking for a password, etc.) to the Microsoft form fill service. No user-entered info or user identifiers are sent to the service. This info helps Microsoft Edge correctly identify forms across different webpages.  This data is used to help match your saved autofill data to the form. 
 
 When you use guest mode, autofill is not available and new autofill entries won’t be added. When you browse InPrivate, Microsoft Edge will offer autofill entries, but new autofill entries won’t be added.  
 
