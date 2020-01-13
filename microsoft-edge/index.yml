@@ -86,6 +86,14 @@ productDirectory:
           text: Enterprise tech community (Insider Focused)
         - url: /deployedge/microsoft-edge-troubleshooting.md
           text: Troubleshoot Microsoft Edge
+    # Card
+    - title: Extensions for enterprise
+      imageSrc: https://docs.microsoft.com/media/common/i_advanced.svg
+      links:
+        - url: ./extensions-chromium/enterprise/match-patterns.md
+          text: Match Patterns
+        - url: ./extensions-chromium/enterprise/hosting-and-updating.md
+          text: Hosting and Updating
 
 # Section: Microsoft Edge for Enterprise (Based on current landing page for enterprise) - /DeployEdge/index.md
 # -  Learn about Microsoft Edge in the enterprise
@@ -106,6 +114,9 @@ productDirectory:
 # -  Engage with enterprise community 
 # - -  Enterprise tech community (Insider Focused) - https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
 # - -  Troubleshoot Microsoft Edge - /deployedge/microsoft-edge-troubleshooting.md
+# -  Extensions for enterprise
+# - -  Match Patterns - ./extensions-chromium/enterprise/match-patterns.md
+# - -  Hosting and Updating - ./extensions-chromium/enterprise/hosting-and-updating.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -264,15 +275,6 @@ conceptualContent:
           itemType: reference
           text: Microsoft Edge Addons Catalog Developer Policies
     # Card
-    - title: Extensions for enterprise
-      links:
-        - url: ./extensions-chromium/enterprise/match-patterns.md
-          itemType: reference
-          text: Match Patterns
-        - url: ./extensions-chromium/enterprise/hosting-and-updating.md
-          itemType: reference
-          text: Hosting and Updating
-    # Card
     - title: Progressive Web Apps
       links:
         - url: ./progressive-web-apps.md
@@ -348,9 +350,6 @@ conceptualContent:
 # -  Extensions: Microsoft Edge Addons Policies
 # - -  Content Security Policy - ./extensions-chromium/store-policies/csp.md
 # - -  Microsoft Edge Addons Catalog Developer Policies - ./extensions-chromium/store-policies/developer-policies.md
-# -  Extensions for enterprise
-# - -  Match Patterns - ./extensions-chromium/enterprise/match-patterns.md
-# - -  Hosting and Updating - ./extensions-chromium/enterprise/hosting-and-updating.md
 # -  Progressive Web Apps 
 # - -  Overview - ./progressive-web-apps.md
 # - -  Getting Started with PWAs - ./progressive-web-apps/get-started.md
