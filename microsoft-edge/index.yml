@@ -193,7 +193,10 @@ conceptualContent:
           url: ./devtools-protocol-chromium.md
         - text: WebDriver
           itemType: reference
-          url: ./webdriver.md  # - text: Puppeteer (need link)  #   itemType: reference  #   url: (to be written)
+          url: ./webdriver.md  
+        - text: Puppeteer (need link)  
+          itemType: reference  
+          url: (to be written)
         - text: Interop (Site compatibility)
           itemType: reference
           url: ./web-platform/site-impacting-changes.md
