@@ -37,7 +37,7 @@ The accessibility of DevTools is a work-in-progress.  Some panels and tabs work 
 
 ## Overview   
 
-Before starting, it helps to have a mental model of how the DevTools UI is structured.  DevTools is divided into a series of panels which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
+Before starting, it helps to have a mental model of how the DevTools UI is structured.  DevTools is divided into a series of panels which are organized into an [ARIA `tablist`][W3CWaiAriaTablist].  
 
 For example:  
 
@@ -63,7 +63,7 @@ To get started, read through [Open Microsoft Edge DevTools][DevtoolsOpen].  Ther
 
 *   With DevTools open, press `Control`+`]` \(Windows\) or `Command`+`]` \(macOS\) to focus the next panel.  
 *   Press `Control`+`[` \(Windows\) or `Command`+`[` \(macOS\) to focus the previous panel.  
-*   It is also possible to use `Shift`+`Tab` to move focus into the [ARIA tablist][W3CWaiAriaTablist] of a panel and use the arrow keys to change panels, though it may be faster to use the previously mentioned shortcuts.  
+*   It is also possible to use `Shift`+`Tab` to move focus into the [ARIA `tablist`][W3CWaiAriaTablist] of a panel and use the arrow keys to change panels, though it may be faster to use the previously mentioned shortcuts.  
 
 #### Known issues   
 
@@ -97,7 +97,7 @@ Opening a panel this way directs focus to the contents of the panel.  In the cas
 
 <!--todo:  add dom nodes (elements pane) section when available  -->  
 
-The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  <!--See [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard] for an example.  -->  
+The **DOM Tree** is laid out as an [ARIA `tree`][W3CWaiAriaTree].  <!--See [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard] for an example.  -->  
 
 <!--todo: add dom index navigation tree section then available  -->
 
@@ -160,7 +160,7 @@ Because all of the style tools connect in one way or another back to the **Style
 *   Press `Tab` to move between editable versions of each CSS property and their corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
 *   You may continue to press `Tab` to move through the list of styles, or press `Escape` to exit this mode and go back to navigating by arrow keys.  
 
-Be sure to read through [the Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard] for additional shortcuts.  
+Be sure to read through the [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard] for additional shortcuts.  
 
 ##### Known Issues   
 
@@ -195,7 +195,7 @@ With focus on the **Computed** tab, press `Tab` to move focus inside and explore
 
 #### Explore all computed styles   
 
-Press `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree][W3CWaiAriaTree].  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.  
+Press `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA `tree`][W3CWaiAriaTree].  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.  
 
 #### Known issues   
 
@@ -207,7 +207,7 @@ From within the **Elements** panel you may inspect the event listeners applied t
 
 #### Explore event listeners   
 
-Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You may use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
+Event listeners are presented as an [ARIA `tree`][W3CWaiAriaTree].  You may use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
 
 ### Accessibility pane   
 
@@ -215,13 +215,13 @@ With focus on the [**Accessibility** pane][DevtoolsAccessibilityReferencePane], 
 
 #### Accessibility Tree   
 
-The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.  
+The **Accessibility Tree** is presented as an [ARIA `tree`][W3CWaiAriaTree] where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.  
 
 #### Known issues   
 
-*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** pane may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
+*   The type of [ARIA `tree`][W3CWaiAriaTree] used by the **Accessibility** pane may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
   to be informed about progress on this issue.  
-*   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.  
+*   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA `tree`][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.  
 
 ## Audits panel   
 
