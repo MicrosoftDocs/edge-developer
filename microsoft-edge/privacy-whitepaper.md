@@ -291,7 +291,7 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 
 If optional diagnostic data including crash reports are turned on, Microsoft will collect data when Microsoft Edge crashes or encounters other reliability problems.  This data is used to diagnose and fix reliability problems of Microsoft Edge and other Microsoft products and services.  
 
-![Crashes](./media/WhitepaperMedia/Crashes.png)
+![Crashes](./media/WhitepaperMedia/Crashes2.png)
 
 The data collected is in the form of crash dumps, which contains device and software state captured at the time Microsoft Edge encountered the reliability problem.  The crash dump contains information about what was happening at the time of the reliability problem.  Information such as the website you were visiting at the time of the crash or your CPU usage may be included in this data.  The crash data is stored locally on the device and sent to Microsoft via an encrypted link when crash reporting is turned on.  Each crash dump contains an identifier unique to your device, a resettable identifier unique to your browser and extra data (such as the URL, CPU usage, and network usage) to help identify the problem.  This extra data is attached to the crash dump to help diagnose the reliability problem, such as understanding how many devices are encountering the problem and the severity.  
 
@@ -403,7 +403,7 @@ Data collected by other search providers follow their company’s privacy policy
 
 Microsoft Edge provides an engaging and user centric new tab page experience with a search box powered by `Bing.com`, quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365.  You can customize the appearance of the new tab page by selecting the customize button.  Your new tab page preferences are set for each profile and stored locally on your device, and these preferences are not synced across devices.  
 
-![NTP](./media/WhitepaperMedia/NTP3.png)
+![NTP](./media/WhitepaperMedia/NTP1.png)
 
 ### Microsoft News 
 
