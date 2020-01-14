@@ -133,7 +133,7 @@ When you use guest mode, Microsoft Edge won’t send “Do Not Track” requests
 
 ## Downloads
 
-Microsoft Edge lets you download files safely and securely.  You can choose where files are downloaded on your device in  **edge://settings/downloads**.  If SmartScreen is enabled, info about your file, such as the filename and URL, are sent to SmartScreen to check the file’s reputation.  This helps you avoid accidentally downloading known malware that can hurt your device.  You can turn on or off SmartScreen in **edge://settings/privacy**.  Learn more about [SmartScreen](#smartScreen).  
+Microsoft Edge lets you download files safely and securely.  You can choose where files are downloaded on your device in  **edge://settings/downloads**.  If SmartScreen is enabled, info about your file, such as the filename and URL, are sent to SmartScreen to check the file’s reputation.  This helps you avoid accidentally downloading known malware that can hurt your device.  You can turn on or off SmartScreen in **edge://settings/privacy**.  Learn more about [SmartScreen](#smartscreen).  
 
 A history of your previous downloads can be viewed from **edge://downloads**.  Clearing your browsing data from **edge://settings/clearBrowserData** can be used to delete your browsing data, including your download history.  Deleting your download history from Microsoft Edge will not remove the files from your device.  Deleting downloaded files from your computer does not remove them from your download history.  When you use InPrivate browsing or Guest mode, the download history from that session is cleared when you close the InPrivate or Guest windows, but the files will be saved on the device you’re using.
 
@@ -191,7 +191,7 @@ You can download and install Microsoft Edge on platforms such as Windows and mac
 
 When you download and install Microsoft Edge, information about your device, such as your release channel, basic hardware information, update identifiers, an identifier unique to your device and a resettable identifier unique to your browser are sent to Microsoft during the installation process.  The device’s IP address is sent to the updater service, but the last decimal is scrubbed for added privacy protections.  During each browsing session, a newly randomly generated token is created to install updated versions of Microsoft Edge.  This token isn’t associated with any personal information and is only used for the installation and update process and to improve the updater service.  
 
-Microsoft Edge pings the Microsoft Edge updater service about the stages of installation and update.  If an installation or update fails and crash reporting is turned on, a log is created and sent to Microsoft.  [Learn about sending crash reports to Microsoft](#Crashes).  Microsoft collects info about how you downloaded Microsoft Edge, the success of the installation, and any uninstallations to better understand the success of Microsoft Edge downloads.  
+Microsoft Edge pings the Microsoft Edge updater service about the stages of installation and update.  If an installation or update fails and crash reporting is turned on, a log is created and sent to Microsoft.  [Learn about sending crash reports to Microsoft](#crashes).  Microsoft collects info about how you downloaded Microsoft Edge, the success of the installation, and any uninstallations to better understand the success of Microsoft Edge downloads.  
 
 Automatic updates are turned on by default for all Microsoft Edge users.  On all platforms, Microsoft Edge checks for updates on startup and periodically while running.  On MacOS devices, Microsoft AutoUpdate checks for updates for Microsoft products periodically as well.  Additional controls and configurations are available for organizations.  [Learn more](https://go.microsoft.com/fwlink/?linkid=2112132)
 
@@ -372,7 +372,7 @@ Depending on your privacy settings, crash reports and info about how you use the
 
 ## Tracking prevention
 
-Microsoft Edge is designed to detect and block known trackers.  Users can choose from three levels of tracking prevention—Basic, Balanced, and Strict.  To protect our users’ privacy, balanced is selected by default.  Microsoft Edge detects trackers before they load on the page by using an open source list of known trackers.  This list is downloaded on to the device periodically as the list is updated.  The number of trackers blocked and names of those trackers are stored locally on the device for statistical purposes.  This data can be cleared by going to edge://settings/privacy/blockedTrackers.  The detection and blocking of trackers occurs locally on the device.  You can turn off tracking prevention by going to **edge://settings/privacy**.  [Learn more](https://support.microsoft.com/help/4533959)  
+Microsoft Edge is designed to detect and block known trackers.  Users can choose from three levels of tracking prevention—Basic, Balanced, and Strict.  To protect our users’ privacy, balanced is selected by default.  Microsoft Edge detects trackers before they load on the page by using an open source list of known trackers.  This list is downloaded on to the device periodically as the list is updated.  The number of trackers blocked and names of those trackers are stored locally on the device for statistical purposes.  This data can be cleared by going to **edge://settings/privacy/blockedTrackers**.  The detection and blocking of trackers occurs locally on the device.  You can turn off tracking prevention by going to **edge://settings/privacy**.  [Learn more](https://support.microsoft.com/help/4533959)  
 
 You can turn off list updates via the group policy: [Enable component updates in Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policies#componentupdatesenabled).  
 
@@ -424,6 +424,6 @@ If WIP is turned on for your version of Microsoft Edge, the browser collects eve
 
 # Thank you!
 
-Microsoft Edge is made possible by the [Chromium](https://www.chromium.org/) open source project and other [open source software](http://edge://credits/).  [Google Chrome’s Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open source project.  
+Microsoft Edge is made possible by the [Chromium](https://www.chromium.org/) open source project and other [open source software](edge://credits/).  [Google Chrome’s Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open source project.  
 
 Microsoft Edge is committed to protecting and respecting your privacy, while giving the transparency and control you deserve.  Reach out to [@MSEdgeDev](https://twitter.com/MSEdgeDev) on Twitter or submit feedback by going to **Settings and more (…)** > **Help and feedback** > **Send feedback** with questions or comments.  
