@@ -42,14 +42,14 @@ Select **Script Debugging** and click **Enabled**.
 > Enable script debugging in Visual Studio
 > ![Enable script debugging in Visual Studio](./media/enable-script-debugging.png)  
 
-In the same dropdown, select **Web Browser** and click the preview channel of Microsoft Edge that you want Visual Studio to launch: Microsoft Edge Canary, Dev, or Beta. If you haven't already, open [this page](https://www.microsoftedgeinsider.com/) to install the Microsoft Edge preview channels
+In the same dropdown, select **Web Browser** and click the preview channel of Microsoft Edge that you want Visual Studio to launch: Microsoft Edge Canary, Dev, or Beta. If you haven't already, head to [this page](https://www.microsoftedgeinsider.com/download) to install the Microsoft Edge preview channels.
 
 > ##### Figure 4  
 > Select the preview channel of Microsoft Edge that you want Visual Studio to launch
 > ![Select the preview channel of Microsoft Edge that you want Visual Studio to launch](./media/set-web-browser.png)  
 
 > [!NOTE]
-> If you select Microsoft Edge (EdgeHTML), Visual Studio will launch that instead of Microsoft Edge (Chromium). [Install the preview channels of Microsoft Edge](https://www.microsoftedgeinsider.com/) and select them or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).
+> If you select Microsoft Edge (EdgeHTML), Visual Studio will launch that instead of Microsoft Edge (Chromium). [Install the preview channels of Microsoft Edge](https://www.microsoftedgeinsider.com/download) and select them or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).
 
 Now that Visual Studio is correctly configured, click the green **Play** button. Visual Studio will build your application, start the web server, launch Microsoft Edge, and navigate to `https://localhost:44362/` or whatever port is specified in **launchSettings.json**.
 
@@ -102,7 +102,7 @@ From the **Attach to Process** dialog, set **Connection type** to **Chrome devto
 
 Click **Select…** and check **JavaScript (Microsoft Edge – Chromium)**. You can add tabs, navigate to new tabs, and close tabs and see those changes reflected in the **Attach to Process** dialog by clicking the **Refresh** button. Select the tab you want to debug and click **Attach**.
 
-The Visual Studio debugger is now attached to Microsoft Edge! You can pause execution of JavaScript, set breakpoints, and see console.log() statements directly in the Debug Output window in Visual Studio.
+The Visual Studio debugger is now attached to Microsoft Edge! You can pause execution of JavaScript, set breakpoints, and see `console.log()` statements directly in the Debug Output window in Visual Studio.
 
 ## Feedback
 We're eager to learn more about how you work with JavaScript in Visual Studio! Please send us feedback by clicking the **Feedback** icon in Visual Studio or by tweeting [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
