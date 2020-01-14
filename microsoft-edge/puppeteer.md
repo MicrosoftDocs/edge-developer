@@ -22,7 +22,8 @@ You can add `puppeteer-core` to your website or app with the following command:
 
 ```console
 npm i puppeteer-core
-# or "yarn add puppeteer-core"
+# or
+yarn add puppeteer-core
 ```
 
 ## Launch Microsoft Edge with puppeteer-core
