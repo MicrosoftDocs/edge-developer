@@ -15,7 +15,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studi
 
 Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP\.NET Framework and ASP\.NET Core applications. Follow the steps below to debug Microsoft Edge from Visual Studio.
 
-## Launch Microsoft Edge from Visual Studio
+## Launch Microsoft Edge
 Visual Studio builds your ASP\.NET and ASP\.NET Core application, starts your web server, launches Microsoft Edge, and connects the Visual Studio debugger all at the click of a single button. This enables you to debug JavaScript running in Microsoft Edge directly from your IDE!
 
 ### Create a new ASP.NET Core web application
@@ -28,7 +28,7 @@ Open Visual Studio 2019 and select **Create a new project**. On the next screen,
 
 Provide a **Project name** for your new project and click **Create**. For the purposes of this example, select **React.js** as the template which shows you how to integrate React.js with an ASP.NET Core application and click **Create**.
 
-### Launch Microsoft Edge
+### Launch Microsoft Edge from Visual Studio
 
 Once your project has been created, open **ClientApp/src/components/Counter.js**. Now, tell Visual Studio to debug JavaScript by selecting the dropdown next to the green **Play** button and **IIS Express**. 
 
@@ -42,14 +42,14 @@ Select **Script Debugging** and click **Enabled**.
 > Enable script debugging in Visual Studio
 > ![Enable script debugging in Visual Studio](./media/enable-script-debugging.png)  
 
-In the same dropdown, select **Web Browser** and click the preview channel of Microsoft Edge that you want Visual Studio to launch: Microsoft Edge Canary, Dev, or Beta.
+In the same dropdown, select **Web Browser** and click the preview channel of Microsoft Edge that you want Visual Studio to launch: Microsoft Edge Canary, Dev, or Beta. If you haven't already, open [this page](https://www.microsoftedgeinsider.com/) to install the Microsoft Edge preview channels
 
 > ##### Figure 4  
 > Select the preview channel of Microsoft Edge that you want Visual Studio to launch
 > ![Select the preview channel of Microsoft Edge that you want Visual Studio to launch](./media/set-web-browser.png)  
 
 > [!NOTE]
-> If you select Microsoft Edge (EdgeHTML), Visual Studio will launch that instead of Microsoft Edge (Chromium). Use the preview channels of Microsoft Edge or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).
+> If you select Microsoft Edge (EdgeHTML), Visual Studio will launch that instead of Microsoft Edge (Chromium). [Install the preview channels of Microsoft Edge](https://www.microsoftedgeinsider.com/) and select them or ensure that the version of Microsoft Edge installed on your machine is Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).
 
 Now that Visual Studio is correctly configured, click the green **Play** button. Visual Studio will build your application, start the web server, launch Microsoft Edge, and navigate to `https://localhost:44362/` or whatever port is specified in **launchSettings.json**.
 
@@ -79,7 +79,7 @@ The JavaScript debugger in Visual Studio is going to hit the breakpoint we set i
 
 This example was just a minor demonstration of the functionality available in Visual Studio. Learn more about all the things you can do in Visual Studio 2019 by reading [their documentation](https://docs.microsoft.com/en-us/visualstudio/windows/?view=vs-2019).
 
-## Attach to Microsoft Edge from Visual Studio
+## Attach to Microsoft Edge
 In the previous workflow, Visual Studio launches Microsoft Edge. With this workflow, you will be able to attach the Visual Studio debugger to an already running instance of Microsoft Edge. 
 
 First, ensure that there are no running instances of Microsoft Edge. Now, from your terminal, run the following command:
