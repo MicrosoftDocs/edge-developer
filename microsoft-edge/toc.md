@@ -177,6 +177,7 @@
 #### [PWAs for Xbox](progressive-web-apps/xbox-considerations.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
 ## [Puppeteer](puppteer.md)
+## [Visual Studio](visual-studio/index.md)
 ## [Visual Studio Code](visual-studio-code/index.md)
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
