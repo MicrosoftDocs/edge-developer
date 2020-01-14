@@ -77,7 +77,7 @@ The JavaScript debugger in Visual Studio is going to hit the breakpoint we set i
 > Visual Studio pausing JavaScript running in Microsoft Edge
 > ![Visual Studio pausing JavaScript running in Microsoft Edge](./media/hit-breakpoint.png)  
 
-This example was just a minor demonstration of the functionality available in Visual Studio. Learn more about all the things you can do in Visual Studio 2019 by reading [their documentation](https://docs.microsoft.com/en-us/visualstudio/windows/?view=vs-2019).
+This example was just a minor demonstration of the functionality available in Visual Studio. Learn more about all the things you can do in Visual Studio 2019 by reading [their documentation](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019).
 
 ## Attach to Microsoft Edge
 In the previous workflow, Visual Studio launches Microsoft Edge. With this workflow, you will be able to attach the Visual Studio debugger to an already running instance of Microsoft Edge. 
