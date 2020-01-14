@@ -50,7 +50,7 @@ productDirectory:
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
-      imageSrc: /media/common/i_get-started.svg
+      imageSrc: /media/common/i_reference.svg
       links:
         - url: /configmgr/apps/deploy-use/deploy-edge.md
           text: Deploy to Windows
@@ -58,7 +58,7 @@ productDirectory:
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
-      imageSrc: /media/common/i_get-started.svg
+      imageSrc: /media/common/i_reference.svg
       links:
         - url: /deployedge/configure-microsoft-edge.md
           text: Configure Microsoft Edge on Windows and macOS
@@ -66,13 +66,13 @@ productDirectory:
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
-      imageSrc: /media/common/i_get-started.svg
+      imageSrc: /media/common/i_reference.svg
       links:
         - url: /deployedge/security-overview.md
           text: Security
     # Card
     - title: Policy reference
-      imageSrc: /media/common/i_learn-about.svg
+      imageSrc: /media/common/i_policy.svg
       links:
         - url: /deployedge/microsoft-edge-policies.md
           text: Browser policy reference
@@ -80,7 +80,7 @@ productDirectory:
           text: Update policy reference
     # Card
     - title: Engage with enterprise community
-      imageSrc: /media/common/i_reference.svg
+      imageSrc: /media/common/i_support.svg
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
           text: Enterprise tech community (Insider Focused)
