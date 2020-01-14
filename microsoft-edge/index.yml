@@ -88,7 +88,7 @@ productDirectory:
           text: Troubleshoot Microsoft Edge
     # Card
     - title: Extensions for enterprise
-      imageSrc: /media/common/i_reference.svg
+      imageSrc: /media/common/i_extensions.svg
       links:
         - url: ./extensions-chromium/enterprise/match-patterns.md
           text: Match Patterns
