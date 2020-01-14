@@ -80,7 +80,7 @@ Crash dumps are sent to Microsoft and stored on secure Microsoft servers for up 
 
 Crash diagnostic data stored locally on the device can be cleared from the file system in **edge://crashes**.  
 
-To turn off crash diagnostic data collection on Windows 10, go to **Diagnostics & feedback** in Windows Diagnostics & feedback settings.  For versions of Microsoft Edge on all other platforms go to **edge://settings/privacy** and turn off **Improve Microsoft products by sending crash reports and data about how you use the browser**.  This diagnostic data collection can also be turned off for enterprises through [group policies managed by your organization](https://review.docs.microsoft.com/DeployEdge/microsoft-edge-privacy-policy).  
+To turn off crash diagnostic data collection on Windows 10, go to **Diagnostics & feedback** in Windows Diagnostics & feedback settings.  For versions of Microsoft Edge on all other platforms go to **edge://settings/privacy** and turn off **Improve Microsoft products by sending crash reports and data about how you use the browser**.  This diagnostic data collection can also be turned off for enterprises through [group policies managed by your organization](https://docs.microsoft.com/DeployEdge/microsoft-edge-privacy-policy).  
 
 ## Diagnostic data about how you use the browser
 
