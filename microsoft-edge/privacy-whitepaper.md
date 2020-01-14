@@ -308,7 +308,7 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors,or other n
 
 Signing in to Microsoft Edge provides additional features to make the browser more productive for you.  To sign you in seamlessly, when you first launch Microsoft Edge, we’ll attempt to detect your identity from the operating system.  If we detect your identity from the operating system but you don’t want to remain signed in to Microsoft Edge, go to your Microsoft Edge profile settings and either sign out or remove your profile.  If we don’t detect your identity from the operating system, you can sign in to Microsoft Edge from your profile.  
 
-If a new identity is added to the operating system and your Microsoft Edge profile doesn’t currently have an identity, Microsoft Edge will add that identity to your profile.  If you sign in to Microsoft Edge with a Microsoft account or a work or school account and don’t have an identity on your Windows 10 profile, that account will be added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.  
+If a new identity is added to the operating system and your Microsoft Edge profile doesn’t currently have an identity, Microsoft Edge will add that identity to your profile.  If you sign in to Microsoft Edge with a Microsoft account or a work or school account and don’t have an identity on your Windows 10 profile, that account will be added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.
 
 Your signed-in profile won’t begin syncing your data without your explicit permission while either launching Microsoft Edge for the first time or signing in to the browser.  
 
@@ -379,8 +379,6 @@ You can turn off list updates via the group policy: [Enable component updates in
 ## Translate
 
 In Microsoft Edge, you can browse the web and translate webpages into a language of your choice.  The built-in translation feature uses a service on your device that takes random portions of a webpage to detect the original language.  If the detected language is not one of your default languages, Microsoft Edge will offer to translate the webpage to your displayed language or another language you choose.  Microsoft Edge will not translate a webpage without your permission.  You can also translate a webpage by right-clicking the page and selecting **Translate**.  To translate the webpage, Microsoft Edge sends the content of the page and a randomly generated token to the Microsoft Azure translation service over a secure SSL connection.  The content of the page is not stored for any purposes.  To stop Microsoft Edge from offering to translate webpages, go to **edge://settings/** languages and turn off **Offer to translate pages that aren’t in a language you read**.
-
-![Translate context menu](./media/WhitepaperMedia/Translate.jpeg)
 
 ## Web apps and Pinned sites
 
