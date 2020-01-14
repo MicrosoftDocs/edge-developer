@@ -125,7 +125,7 @@ conceptualContent:
 #           quickstart | reference | tutorial | video | 
 #           whats-new
   title: Microsoft Edge for Developers # < 60 chars (optional)
-  summary: Cross-platform Web Apps, DevTools, and Extensions # < 160 chars (optional)
+  summary: Cross-platform DevTools, Extensions, and Web Apps # < 160 chars (optional)
   items:
     # Card
     - title: Getting Started with DevTools
@@ -204,16 +204,16 @@ conceptualContent:
           url: ./devtools-protocol-chromium.md
         - text: WebDriver
           itemType: reference
-          url: ./webdriver.md  
-        - text: Puppeteer (need link)  
-          itemType: reference  
+          url: ./webdriver.md
+        - text: Puppeteer
+          itemType: reference
           url: ./puppeteer.md
         - text: Interop (Site compatibility)
           itemType: reference
           url: ./web-platform/site-impacting-changes.md
         - text: webhint
           itemType: reference
-          url: https://webhint.io/docs/user-guide/
+          url: https://webhint.io/docs/user-guide
         - text: Performance analysis
           itemType: reference
           url: ./performance-analysis.md
@@ -299,7 +299,7 @@ conceptualContent:
           itemType: reference
           text: Reference
 
-# Section: Cross-platform Web Apps, DevTools, and Extensions
+# Section: Cross-platform DevTools, Extensions, and Web Apps
 # -  Getting Started with DevTools
 # - -  DevTools Overview - ./devtools-guide-chromium.md
 # - -  What’s New - ./devtools-guide-chromium/whats-new.md
@@ -327,10 +327,10 @@ conceptualContent:
 # - -  Accessibility - ./accessibility.md
 # - -  DevTools Protocol (Chromium) - ./devtools-protocol-chromium.md
 # - -  WebDriver - ./webdriver.md
-# - -  Puppeteer - (to be written)
+# - -  Puppeteer - ./puppeteer.md
 # - -  Interop (Site compatibility) - ./web-platform/site-impacting-changes.md
-# - -  webhint - (nothing written, but it would be good to link out to the browser extension)
-# - -  Performance analysis (?) - ./performance-analysis.md
+# - -  webhint - https://webhint.io/docs/user-guide
+# - -  Performance analysis - ./performance-analysis.md
 # -  Extensions Overview
 # - -  Extensions Overview - ./extensions-chromium/index.md
 # -  Extensions: Getting started tutorial
