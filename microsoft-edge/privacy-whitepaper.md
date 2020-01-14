@@ -24,7 +24,7 @@ The whitepaper focuses on the desktop version of Microsoft Edge, and parts of th
 
 The address bar allows you to enter website URLs and search the web.  By default, the address bar provides search and site suggestions using the characters you type.  You’ll see suggestions from your favorites, browsing history, previous searches, and default search provider.  
 
-![AddressBar](./media/WhitepaperMedia/AddressBar.jpeg)
+![AddressBar](./media/WhitepaperMedia/AddressBar.png)
 
 To make browsing and searching faster, as you type in the address bar, the typed characters are sent to your default search provider for the search provider to send back suggested search queries.  The address bar categorizes your entry as a URL, search, or unknown.  This information, along with which suggestion you select, position of selection, and other address bar data is sent to your default search provider.  A resettable identifier unique to your browser, an identifier unique to your device and other service identifiers are sent with this data to understand the search query and query session.  Your IP address and cookies are sent to your default search provider to increase the relevance of the search results.  A signal is sent to your default search provider when you select the address bar, to signal to the provider to get ready to provide suggestions.  The typed characters and search queries are not sent to Microsoft unless your search provider is Bing.  This data is only sent to your default search provider if you have Show me search and site suggestions using my typed characters turned on.  Turning off this feature stops your typed characters from being sent to the default search provider.  Your search queries are still sent to your default search provider to provide search results.  If Microsoft Edge detects that your typing in the address bar may contain sensitive information, such as authentication credentials, local file names, or URL data that is normally encrypted, it will not send the typed text.  If you have **Improve Microsoft products by sending crash reports and data about how you use the browser** turned on Microsoft Edge will collect diagnostic data about the address bar, such as how many queries were offered, regardless of your search provider.  
 
@@ -418,7 +418,7 @@ With your permission, WDAG can also collect info about how you use the browser a
 
 Windows Information Protection (WIP) helps prevent the accidental leaking of corporate information.  It is only available for organizations through  group policies managed by your organization.  WIP will be enabled for those sites that are identified as corporate assets.  You can identify which sites are corporate assets from the management icon in the address bar.  WIP enforces features such as preventing copying and pasting from the browser or uploading certain files to sites outside your organization.  
 
-![WIP](./media/WhitepaperMedia/WIP.jpeg)
+![WIP](./media/WhitepaperMedia/WIP.png)
 
 If WIP is turned on for your version of Microsoft Edge, the browser collects event logs and sends them to your organization.  [Learn more about the event logs captured by WIP](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs).  If WIP is turned on, you can’t opt out of this data collection.  WIP is only available on releases of Windows 10 from August 2016 and newer.
 
