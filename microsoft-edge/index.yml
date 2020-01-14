@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 01/13/2020
+  ms.date: 01/14/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -40,7 +40,7 @@ productDirectory:
     # Card
     - title: Learn about Microsoft Edge in the enterprise
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/learn.svg
+      imageSrc: /media/common/i_learn-about.svg
       links:
         - url: /deployedge/microsoft-edge-channels.md
           text: Microsoft Edge channel overview
@@ -50,7 +50,7 @@ productDirectory:
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
-      imageSrc: media/get-started.svg
+      imageSrc: /media/common/i_get-started.svg
       links:
         - url: /configmgr/apps/deploy-use/deploy-edge.md
           text: Deploy to Windows
@@ -58,7 +58,7 @@ productDirectory:
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
-      imageSrc: media/get-started.svg
+      imageSrc: /media/common/i_get-started.svg
       links:
         - url: /deployedge/configure-microsoft-edge.md
           text: Configure Microsoft Edge on Windows and macOS
@@ -66,13 +66,13 @@ productDirectory:
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
-      imageSrc: media/get-started.svg
+      imageSrc: /media/common/i_get-started.svg
       links:
         - url: /deployedge/security-overview.md
           text: Security
     # Card
     - title: Policy reference
-      imageSrc: media/learn.svg
+      imageSrc: /media/common/i_learn-about.svg
       links:
         - url: /deployedge/microsoft-edge-policies.md
           text: Browser policy reference
@@ -80,7 +80,7 @@ productDirectory:
           text: Update policy reference
     # Card
     - title: Engage with enterprise community
-      imageSrc: media/reference.svg
+      imageSrc: /media/common/i_reference.svg
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
           text: Enterprise tech community (Insider Focused)
@@ -88,7 +88,7 @@ productDirectory:
           text: Troubleshoot Microsoft Edge
     # Card
     - title: Extensions for enterprise
-      imageSrc: media/reference.svg
+      imageSrc: /media/common/i_reference.svg
       links:
         - url: ./extensions-chromium/enterprise/match-patterns.md
           text: Match Patterns
