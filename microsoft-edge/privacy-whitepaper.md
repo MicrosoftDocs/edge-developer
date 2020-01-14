@@ -88,7 +88,7 @@ Microsoft uses diagnostic data to improve our products and services, keep our 
 
 As you use features and services in Microsoft Edge and other applications that use the Microsoft Edge web platform, diagnostic data about how you use those features is sent to Microsoft.  This diagnostic data includes information like your installation of Microsoft Edge, feature usage, performance, and memory usage.  For example, if you favorite a website, we will receive info that the favorite button was clicked and a favorite was successfully added, but not which site was favorited.  This diagnostic data also includes performance information, such as how many milliseconds it took to open a new tab.  The features and services mentioned in this whitepaper collect diagnostic data.  
 
-![DiagnosticData](./media/WhitepaperMedia/DiagnosticData.png)
+![DiagnosticData](./media/WhitepaperMedia/DiagnosticData2.png)
 
 In addition, Microsoft Edge collects a set of required diagnostic data necessary to keep the product up to date, secure and performing properly.  This includes device connectivity and configuration information about the current data collection consent setting, app version, and installation state.  This can only be turned off with group policies managed by your organization.  [Learn more](https://go.microsoft.com/fwlink/?linkid=2099569)
 
@@ -199,6 +199,8 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 
 Microsoft Edge offers a simplified experience with the integration of Internet Explorer (IE).  Microsoft Edge only supports IE 11, and IE mode and is only available on Windows.  This feature is available for organizations through group policies.  The administrator chooses a list of sites to be opened in IE mode in Microsoft Edge.  
 
+![Location](./media/WhitepaperMedia/IEMode.png)
+
 Microsoft Edge downloads the list of sites from a location defined by the admin through a policy, and caches the file to determine which sites need to be opened in IE mode.  Depending on your Windows or IE 11 settings, Microsoft Edge collects diagnostic data about the use of IE mode, such as which sites users go to, performance data, reliability data, and feature usage data.  On Windows 10, this diagnostic data is collected according to your Windows Diagnostic data setting.  On Windows 8.1, website info is collected if the user has opted in to the Flip Ahead or Suggested Sites feature in IE.  IE mode may not follow the same data collection toggles in the Microsoft Edge Privacy and services settings.  
 
 If your administrator turned on Enterprise Site Discovery, browsing history data is collected to help administrators review the sites that users visit periodically and ensure that any system upgrades continue to support those sites.  [Learn more](https://go.microsoft.com/fwlink/?linkid=2114123) 
@@ -307,8 +309,6 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors,or other n
 Signing in to Microsoft Edge provides additional features to make the browser more productive for you.  To sign you in seamlessly, when you first launch Microsoft Edge, we’ll attempt to detect your identity from the operating system.  If we detect your identity from the operating system but you don’t want to remain signed in to Microsoft Edge, go to your Microsoft Edge profile settings and either sign out or remove your profile.  If we don’t detect your identity from the operating system, you can sign in to Microsoft Edge from your profile.  
 
 If a new identity is added to the operating system and your Microsoft Edge profile doesn’t currently have an identity, Microsoft Edge will add that identity to your profile.  If you sign in to Microsoft Edge with a Microsoft account or a work or school account and don’t have an identity on your Windows 10 profile, that account will be added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.  
-
-![SignIn](./media/WhitepaperMedia/SignIn.png)
 
 Your signed-in profile won’t begin syncing your data without your explicit permission while either launching Microsoft Edge for the first time or signing in to the browser.  
 
