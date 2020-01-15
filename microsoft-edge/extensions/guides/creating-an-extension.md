@@ -3,14 +3,16 @@ description: Learn how to create a Microsoft Edge extension
 title: Creating an extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/12/2018
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Creating a Microsoft Edge extension
+# Creating a Microsoft Edge extension  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 In this guide, you will learn to create an extension for Microsoft Edge.  This example extension will allow you to manipulate specific CSS for [docs.microsoft.com](https://docs.microsoft.com) pages -- walking you through creation of a manifest file, the user interface, and background and content scripts.
 
