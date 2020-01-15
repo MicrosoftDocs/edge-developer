@@ -181,7 +181,7 @@
 ## [Visual Studio Code](visual-studio-code/index.md)
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
-## [WebDriver (Chromium)][webdriver-chromium.md]
+## [WebDriver (Chromium)](webdriver-chromium.md)
 ## [WebDriver (EdgeHTML)](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
