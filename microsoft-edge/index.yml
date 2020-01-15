@@ -42,41 +42,41 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /media/common/i_learn-about.svg
       links:
-        - url: /deployedge/microsoft-edge-channels.md
+        - url: /deployedge/microsoft-edge-channels
           text: Microsoft Edge channel overview
         - url: https://www.microsoftedgeinsider.com/download
           text: Download a Microsoft Edge channel
-        - url: /deployedge/edge-ie-mode.md
+        - url: /deployedge/edge-ie-mode
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
       imageSrc: /media/common/i_reference.svg
       links:
-        - url: /configmgr/apps/deploy-use/deploy-edge.md
+        - url: /configmgr/apps/deploy-use/deploy-edge
           text: Deploy to Windows
-        - url: /intune/apps/apps-edge-macos/index.md
+        - url: /intune/apps/apps-edge-macos/index
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
       imageSrc: /media/common/i_reference.svg
       links:
-        - url: /deployedge/configure-microsoft-edge.md
+        - url: /deployedge/configure-microsoft-edge
           text: Configure Microsoft Edge on Windows and macOS
-        - url: /deployedge/edge-default-browser.md
+        - url: /deployedge/edge-default-browser
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
       imageSrc: /media/common/i_reference.svg
       links:
-        - url: /deployedge/security-overview.md
+        - url: /deployedge/security-overview
           text: Security
     # Card
     - title: Policy reference
       imageSrc: /media/common/i_policy.svg
       links:
-        - url: /deployedge/microsoft-edge-policies.md
+        - url: /deployedge/microsoft-edge-policies
           text: Browser policy reference
-        - url: /deployedge/microsoft-edge-update-policies.md
+        - url: /deployedge/microsoft-edge-update-policies
           text: Update policy reference
     # Card
     - title: Engage with enterprise community
@@ -84,7 +84,7 @@ productDirectory:
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
           text: Enterprise tech community (Insider Focused)
-        - url: /deployedge/microsoft-edge-troubleshooting.md
+        - url: /deployedge/microsoft-edge-troubleshooting
           text: Troubleshoot Microsoft Edge
     # Card
     - title: Extensions for enterprise
@@ -378,6 +378,8 @@ additionalContent:
               url: https://developer.microsoft.com/microsoft-edge/platform/status
             - text: Visual Studio Code
               url: ./visual-studio-code/index.md
+            - url: ./privacy-whitepaper.md
+              text: Privacy Whitepaper
         # Card
         - title: Microsoft Edge Legacy Documentation
           links:
@@ -392,7 +394,7 @@ additionalContent:
             - text: JavaScript Runtime Hosting
               url: ./hosting/javascript-runtime-hosting.md
             - text: WebVR Developer Guide
-              url: /webvr/webvr-docs/index.md
+              url: /webvr/webvr-docs/index
             - text: Windows Runtime (WinRT)
               url: ./windows-runtime.md
     - title: Help & Support # < 60 chars (optional)
