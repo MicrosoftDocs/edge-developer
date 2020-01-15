@@ -2,7 +2,7 @@
 title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/201920
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
