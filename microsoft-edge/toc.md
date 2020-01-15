@@ -66,6 +66,8 @@
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
+### Accessibility
+#### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
