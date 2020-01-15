@@ -1,6 +1,6 @@
 ---
 description: Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver.
-title: Webdriver (Chromium)
+title: WebDriver (Chromium)
 author: zoherghadyali
 ms.author: zoghadya
 ms.date: 01/14/2020
