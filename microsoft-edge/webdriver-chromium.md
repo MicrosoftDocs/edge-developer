@@ -32,8 +32,8 @@ To find your correct build number: Launch Microsoft Edge and navigate to `edge:/
 Now, download the matching version of Microsoft Edge Driver from [this page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads).
 
 > ##### Figure 2
-> Download the matching version of Microsoft Edge Driver from [this page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads)
-> ![Download the matching version of Microsoft Edge Driver from this page](./media/webdriver-chromium/edge-driver-install.png)  
+> The Downloads section of the [Microsoft Edge Driver page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads)
+> ![The Downloads section of the Microsoft Edge Driver page](./media/webdriver-chromium/edge-driver-install.png)  
 
 > [!NOTE]
 > Microsoft Edge (EdgeHTML) does not work with [Microsoft Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads). To automate Microsoft Edge (EdgeHTML), you will need to download [Microsoft WebDriver for Microsoft Edge (EdgeHTML)](./webdriver.md).
@@ -46,25 +46,28 @@ The last component you need to download is a language-specific client driver. Th
 ### Selenium 4.00-alpha04 and later
 You can install the .NET language binding of Selenium 4.00-alpha04 [here](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04).
 
-Using this binding, the C# snippet below constructs the `EdgeOptions` object and sets `BinaryLocation` to the install location of Microsoft Edge (Chromium). Then, it creates an `EdgeDriverService` with `is_legacy` set to `false` which tells WebDriver to start Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML). Finally, it creates a new `EdgeDriver` by passing it the `EdgeDriverService` and `EdgeOptions`.
+Using this binding, the C# snippet below constructs the `EdgeOptions` object by setting `is_legacy` to `false`, which tells WebDriver to start Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML). Then, it sets `BinaryLocation` in `EdgeOptions` to the install location of Microsoft Edge (Chromium). Lastly, it creates an `EdgeDriverService`, again with `is_legacy` set to `false`, before creating a new `EdgeDriver` by passing it the `EdgeDriverService` and `EdgeOptions`.
+
+> [!NOTE]
+> When constructing the `EdgeOptions` object, if you don't pass it `false`, by default `is_legacy` is set to `true`. This ensures that all your current Microsoft Edge Driver tests will run without modification against Microsoft Edge (EdgeHTML). You must set `is_legacy` to `false` and use the correct driver for your test to run successfully in Microsoft Edge (Chromium). 
 
 ```cs
 static void Main(string[] args)
-    {
-        // EdgeOptions() requires using OpenQA.Selenium.Edge
-        // Construct EdgeOptions with is_legacy = false
-        var edgeOptions = new EdgeOptions(false);
-        edgeOptions.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe";
+{
+    // EdgeOptions() requires using OpenQA.Selenium.Edge
+    // Construct EdgeOptions with is_legacy = false
+    var edgeOptions = new EdgeOptions(false);
+    edgeOptions.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe";
             
-        var msedgedriverDir = @"D:\Drivers";
-        var msedgedriverExe = @"msedgedriver.exe";
+    var msedgedriverDir = @"D:\Drivers";
+    var msedgedriverExe = @"msedgedriver.exe";
             
-        // Construct EdgeDriverService with is_legacy = false too
-        var service = EdgeDriverService.CreateDefaultService(msedgedriverDir, msedgedriverExe, false);
-        service.EnableVerboseLogging = true;
+    // Construct EdgeDriverService with is_legacy = false too
+    var service = EdgeDriverService.CreateDefaultService(msedgedriverDir, msedgedriverExe, false);
+    service.EnableVerboseLogging = true;
 
-        var driver = new EdgeDriver(service, edgeOptions);
-    }
+    var driver = new EdgeDriver(service, edgeOptions);
+}
 ```
 
 > [!CAUTION]
@@ -89,11 +92,11 @@ service.UseSpecCompliantProtocol = true;
 service.Start();
 
 var caps = new DesiredCapabilities(new Dictionary<string, object>()
-    {
-        { "ms:edgeOptions", new Dictionary<string, object>() {
-            {  "binary", @"C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe" }
-        }}
-    });
+{
+    { "ms:edgeOptions", new Dictionary<string, object>() {
+        {  "binary", @"C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe" }
+    }}
+});
 
 var driver = new RemoteWebDriver(service.ServiceUrl, caps);
 
