@@ -1,7 +1,7 @@
 ---
 ms.assetid: e56172c0-b635-4c02-8e0c-56bf8cb4c164
 description: Learn how to get started with WebDriver, a wire protocol that allows programs and scripts to control web browser behavior.
-title: Webdriver (EdgeHTML)
+title: WebDriver (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/14/2020
