@@ -41,7 +41,7 @@ Now, download the matching version of Microsoft Edge Driver from [this page](htt
 ## Download a WebDriver language binding
 The last component you need to download is a language-specific client driver. The language binding will translate the code you write in Python, Java, C#, Ruby, and JavaScript into commands that the Microsoft Edge Driver you downloaded in the [previous section](#download-microsoft-edge-driver) can run in Microsoft Edge (Chromium).
 
-Download the WebDriver language binding of your choice. [All Selenium language bindings can be used to drive Microsoft Edge (Chromium)](https://selenium.dev/downloads/) but we highly recommend using Selenium 4.00-alpha04 or later.
+[Download the WebDriver language binding of your choice](https://selenium.dev/downloads/). We highly recommend Selenium 4.00-alpha04 or later since this version has built-in support for Microsoft Edge (Chromium). However, you are able to drive Microsoft Edge (Chromium) in all earlier versions of Selenium, including the current stable Selenium 3 release.
 
 ### Selenium 4.00-alpha04 and later
 You can install the .NET language binding of Selenium 4.00-alpha04 [here](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04).
@@ -56,7 +56,7 @@ static void Main(string[] args)
         var edgeOptions = new EdgeOptions(false);
         edgeOptions.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Dev\Application\msedge.exe";
             
-        var msedgedriverDir = @"c:\drivers";
+        var msedgedriverDir = @"D:\Drivers";
         var msedgedriverExe = @"msedgedriver.exe";
             
         // Construct EdgeDriverService with is_legacy = false too
