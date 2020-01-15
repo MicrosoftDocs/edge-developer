@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 01/14/2020
+  ms.date: 01/15/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -24,13 +24,13 @@ highlightedContent:
       itemType: download
       url: https://www.microsoftedgeinsider.com/download
     # Card
-    - title: "What’s new"
+    - title: "What's new"
       itemType: whats-new
       url: https://www.microsoftedgeinsider.com/whats-new
 
 # [Highlighted content]
 # - Download and Install: Microsoft Edge Channels - https://www.microsoftedgeinsider.com/download/
-# - Learn: What’s new - https://www.microsoftedgeinsider.com/whats-new
+# - Learn: What's new - https://www.microsoftedgeinsider.com/whats-new
 
 # productDirectory section (optional)
 productDirectory:
@@ -135,7 +135,7 @@ conceptualContent:
           text: DevTools Overview
         - url: ./devtools-guide-chromium/whats-new/2019/12/devtools.md
           itemType: reference
-          text: What’s New
+          text: What's New
         - url: ./devtools-guide-chromium/open.md
           itemType: reference
           text: Open DevTools
@@ -302,7 +302,7 @@ conceptualContent:
 # Section: Cross-platform DevTools, Extensions, and Web Apps
 # -  Getting Started with DevTools
 # - -  DevTools Overview - ./devtools-guide-chromium.md
-# - -  What’s New - ./devtools-guide-chromium/whats-new.md
+# - -  What's New - ./devtools-guide-chromium/whats-new.md
 # - -  Open DevTools - ./devtools-guide-chromium/open.md
 # - -  DevTools for Beginners - html - ./devtools-guide-chromium/beginners/html.md
 # - -  DevTools for Beginners - CSS - ./devtools-guide-chromium/css/index.md
