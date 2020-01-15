@@ -2,7 +2,7 @@
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/24/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -201,8 +201,7 @@ Now that you've measured and verified that the animation is not performing well,
     > [!NOTE]
     > The **Animation Frame Fired** event occurs whenever a [`requestAnimationFrame()` callback][WebRequestAnimationFrame] is run.  
     
-1.  Click the **task** event.  The **Summary** tab now shows you information about that event.  Note the **reveal** link.  
-    Clicking that causes DevTools to highlight the event that initiated the **task** event.  Also note the **app.js:94** link.  Clicking that jumps you to the relevant line in the source code.
+1.  Click the **Animation Frame Fired** event.  The **Summary** tab now shows you information about that event.  Note the **Reveal** link. Clicking that causes DevTools to highlight the event that initiated the **Animation Frame Fired** event.  Also note the **app.js:95** link.  Clicking that jumps you to the relevant line in the source code.
     
     > ##### Figure 13  
     > More information about the Animation Frame Fired event  
@@ -213,16 +212,14 @@ Now that you've measured and verified that the animation is not performing well,
 
 1.  Under the **app.update** event, there's a bunch of purple events.  If they were wider, it looks as though each one might have a red triangle on it.  Click one of the purple **Layout** events now. DevTools provides more information about the event in the **Summary** tab. Indeed, there's a warning about forced reflows \(another word for layout\).  
 
-1.  In the **Summary** tab, click the **app.js:70** link under **Layout Forced**.  
-    DevTools takes you to the line of code that forced the layout.  
+1.  In the **Summary** tab, click the **app.js:71** link under **Layout Forced**. DevTools takes you to the line of code that forced the layout.  
     
     > ##### Figure 14  
     > The line of code that caused the forced layout  
     > ![The line of code that caused the forced layout][ImageForcedLayoutSRC]  
     
     > [!NOTE]
-    > The problem with this code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  
-    > Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute its position.  <!--  See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
+    > The problem with this code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page. Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute its position.  <!--  See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
 
 <!-- todo: add layouts section when available -->
 
@@ -233,25 +230,23 @@ Phew!  That was a lot to take in, but you now have a solid foundation in the bas
 Using the workflows and tools that you just learned, click **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, you can see that the optimized version of the app does much less work, resulting in better performance.  
 
 > [!NOTE]
-> Even this "optimized" version isn't that great, because it still manipulates the `top` property of each icon.  
-> A better approach is to stick to properties that only affect compositing.  
+> Even this "optimized" version isn't that great, because it still manipulates the `top` property of each icon. A better approach is to stick to properties that only affect compositing.  
 <!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
 
 <!--todo: add rendering section when available -->
 
-<!--## Next steps-->
+## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  This model teaches you the performance metrics that are most important to your users.  
 See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
 
-<!--To get more comfortable with the Performance panel, practice makes perfect.  
-Try profiling your own pages and analyzing the results.  
-If you have any questions about your results, [open a Stack Overflow question tagged with `alphabet-browser-devtools`][StackOverflowAlphabetBrowserDevtools].  
-Include screenshots or links to reproducible pages, if possible.  -->  
+To get more comfortable with the Performance panel, practice makes perfect. Try profiling your own pages and analyzing the results. If you have any questions about your results, use the **Feedback** icon, press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on macOS), or [tweet at us][PostTweetEdgeDevTools]. Include screenshots or links to reproducible pages, if possible.
 
-<!--todo: add SO devtools when page is available -->  
+> ##### Figure 15
+> The **Feedback** icon in the Microsoft Edge DevTools  
+> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]
 
-To really master runtime performance, you've got to learn how the browser translates HTML, CSS, and JS into pixels on a screen.  <!--  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
+<!-- To really master runtime performance, you've got to learn how the browser translates HTML, CSS, and JS into pixels on a screen. The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
 
 Last, there are many ways to improve runtime performance.  This tutorial focused on one particular animation bottleneck to give you a focused tour through the Performance panel, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
@@ -283,11 +278,12 @@ Last, there are many ways to improve runtime performance.  This tutorial focused
 [ImageSummaryTab]: images/performance-summary-tab.msft.png "Figure 10: The Summary tab"  
 [ImageViewingScreenshot]: images/performance-screenshot-hover.msft.png "Figure 7: Viewing a screenshot of the page around the 2500ms mark of the recording"  
 [ImageZoomedAnimation]: images/performance-main-zoomed.msft.png "Figure 12: Zoomed in on a single Animation Frame Fired event"  
+[ImageFeedbackIcon]: images/feedback-icon.msft.png "Figure 15: The **Feedback** icon in the Microsoft Edge DevTools"
 
 <!-- links -->
 
-[WebRequestAnimationFrame]: https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame\(\) | MDN"  
-
+[WebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame\(\) | MDN"  
+[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet" 
 <!--[FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  -->  
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
 <!--[OptimizeWebsiteSpeed]: speed/get-started  -->  
@@ -301,17 +297,17 @@ Last, there are many ways to improve runtime performance.  This tutorial focused
 <!--[RenderingPerformance]: /web/fundamentals/performance/rendering  -->  
 <!--[RenderingReduceScope]: /web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations  -->  
 <!--[RenderingSimplifyPaint]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas  -->  
-<!--[StackOverflowAlphabetBrowserDevtools]: http://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->  
+<!--[StackOverflowAlphabetBrowserDevtools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->  
 <!--[UIPlacement]: ui#placement  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
