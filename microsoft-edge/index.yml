@@ -202,9 +202,9 @@ conceptualContent:
         - text: DevTools Protocol (Chromium)
           itemType: reference
           url: ./devtools-protocol-chromium.md
-        - text: WebDriver
+        - text: WebDriver (Chromium)
           itemType: reference
-          url: ./webdriver.md
+          url: ./webdriver-chromium.md
         - text: Puppeteer
           itemType: reference
           url: ./puppeteer.md
