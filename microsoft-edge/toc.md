@@ -24,7 +24,8 @@
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md)
 ## [DevTools (Chromium)](devtools-guide-chromium.md)
 ### [Open DevTools](devtools-guide-chromium/open.md)
-### [What's new](devtools-guide-chromium/whats-new.md)
+### What's new
+#### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
@@ -65,6 +66,8 @@
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
+### Accessibility
+#### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
@@ -175,10 +178,13 @@
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 #### [PWAs for Xbox](progressive-web-apps/xbox-considerations.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
+## [Puppeteer](puppeteer.md)
+## [Visual Studio](visual-studio/index.md)
 ## [Visual Studio Code](visual-studio-code/index.md)
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
-## [WebDriver](webdriver.md)
+## [WebDriver (Chromium)](webdriver-chromium.md)
+## [WebDriver (EdgeHTML)](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
 ### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
