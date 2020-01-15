@@ -29,9 +29,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This guide aims to help users who primarily rely on assistive technology like screen readers access and use Microsoft Edge DevTools.  Microsoft Edge DevTools is a suite of web developer tools built into the Microsoft Edge browser.  See [Accessibility Reference][DevtoolsAccessibilityReference] if you are looking for DevTools features related to improving the accessibility of a web page.  
+This guide aims to help users who primarily rely on assistive technology like screen readers access and use Microsoft Edge DevTools.  Microsoft Edge DevTools is a suite of web developer tools built into the Microsoft Edge browser.  <!--See [Accessibility Reference][DevtoolsAccessibilityReference] if you are looking for DevTools features related to improving the accessibility of a web page.  -->
 
 <!--todo: add edge devtools index section when available  -->  
+<!--todo: add reference (Accessibility Reference) section when available  -->  
 
 The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
 
@@ -211,7 +212,9 @@ Event listeners are presented as an [ARIA `tree`][W3CWaiAriaTree].  You may use 
 
 ### Accessibility pane   
 
-With focus on the [**Accessibility** pane][DevtoolsAccessibilityReferencePane], press `Tab` to move focus inside and explore the contents.  Within the **Accessibility** pane there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
+With focus on the **Accessibility** pane, press `Tab` to move focus inside and explore the contents.  Within the **Accessibility** pane there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
+
+<!--todo: add reference (Accessibility pane) section when available  -->  
 
 #### Accessibility Tree   
 
@@ -254,8 +257,8 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReference]: reference.md "Accessibility Reference"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference"  
+<!--[DevtoolsAccessibilityReference]: reference.md "Accessibility Reference"  -->  
+<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference"  -->  
 
 <!--[MicrosoftEdgeDevtoolsIndex]: ../index.md "Microsoft Edge DevTools"  -->  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
