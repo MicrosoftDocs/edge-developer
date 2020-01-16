@@ -101,7 +101,7 @@ Check out [PWAs in the Microsoft Store][ProgressiveWebAppsMicrosoftStore] for fu
 
 ## Current availability  
 
-Browser engine support for Progressive Web Apps calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  PWA support in the EdgeHTML engine was completed in the Windows 10 1809 release.  Further improvements to web standards since that time will not be incorportated into the EdgeHTML engine so be sure to run compatibility tests and use feature detection to gracefully fallback should the feature your PWA needs be unsupported on the EdgeHTML platform.  
+Browser engine support for Progressive Web Apps calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  PWA support in the EdgeHTML engine was completed in the Windows 10 1809 release.  Further improvements to web standards since that time will not be incorporated into the EdgeHTML engine so be sure to run compatibility tests and use feature detection to gracefully fallback should the feature your PWA needs be unsupported on the EdgeHTML platform.  
 
 For the upcoming Microsoft Edge \(Chromium\) release in 2020, the browser platform has full support for these features that work across devices where the Chromium browser is supported.  
 
@@ -128,12 +128,12 @@ Here is the current status of Microsoft Store support for PWAs on Windows 10:
 
 <!-- links -->  
 
-[DevToolsProtocolClientsEdgeDevToolsPreview]: /microsoft-edge/devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
-[DevToolsGuideEmulation]: /microsoft-edge/devtools-guide/emulation.md "Emulation"  
-[DevGuideWhatsNewEdgeHtml17]: /microsoft-edge/dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17"  
-[DevGuideWhatsNewEdgeHtml14]: /microsoft-edge/dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14"  
-[ProgressiveWebAppsMicrosoftStore]: /microsoft-edge/progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
-[ProgressiveWebAppsMicrosoftStoreCriteriaAutomaticSubmission]: /microsoft-edge/progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission.md "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  
+[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
+[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulation"  
+[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17"  
+[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14"  
+[ProgressiveWebAppsMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
+[ProgressiveWebAppsMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission.md "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services \(WNS\) overview"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV"  
