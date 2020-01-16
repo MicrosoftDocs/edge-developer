@@ -3,7 +3,7 @@ description: This page provides a summary of high-impact changes that could impa
 title: Site compatibility-impacting changes coming to Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/15/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform
