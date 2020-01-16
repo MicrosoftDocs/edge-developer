@@ -175,7 +175,6 @@
 ## [Performance analysis](performance-analysis.md)
 ## [Privacy Whitepaper](privacy-whitepaper.md)
 ## [Progressive Web Apps (Chromium)](progressive-web-apps-chromium/index.md)
-### [Tailor your PWA for Windows](progressive-web-apps-chromium/windows-features.md)
 ## [Progressive Web Apps (EdgeHTML)](progressive-web-apps/index.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
