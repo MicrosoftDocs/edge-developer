@@ -4,7 +4,7 @@ description: Walk through how best practices and Accessible Rich Internet Applic
 title: Accessibility - Build
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/02/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -22,7 +22,7 @@ Assistive technologies add capabilities that computers don’t usually have. For
 
 For web developers, certain HTML elements are mapped to UI Automation objects, so in selecting those HTML elements, the developer can use the accessibility properties and events built in to those elements. While developing your website, you usually only need to be concerned with ensuring that the API is correctly written to (or that the appropriate element is specified), in order for the application to be accessible. Check out [ARIA and UI Automation in Microsoft Edge](./build/ARIA-and-UI-Automation.md) for more information.  For information on accessible Universal Windows Platform (UWP) apps, see the [Accessibility](https://msdn.microsoft.com/en-us/windows/uwp/accessibility/accessibility) topic in the Windows Dev Center.
 
-Many common accessibility issues with dynamic content can be addressed by good coding practice, and the [WCAG 2.0](http://go.microsoft.com/fwlink/p/?LinkID=24629) documentation includes many techniques and best practices to help you create more accessible dynamic web applications. Even when coded properly, however, dynamic content is not necessarily accessible. [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.  
+Many common accessibility issues with dynamic content can be addressed by good coding practice, and the [WCAG 2.0](https://go.microsoft.com/fwlink/p/?LinkID=24629) documentation includes many techniques and best practices to help you create more accessible dynamic web applications. Even when coded properly, however, dynamic content is not necessarily accessible. [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.  
 
 For more information on web accessibility, check out the [Introduction to Web Accessibility](https://www.w3.org/WAI/intro/accessibility.php) by the [Web Accessibility Initiative](https://www.w3.org/WAI/) (WAI).
 

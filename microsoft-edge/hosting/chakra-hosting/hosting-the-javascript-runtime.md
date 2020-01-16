@@ -122,6 +122,7 @@ outstandingCall.jsCallback(outstandingCall.jsContext);
 ```  
   
 ## See Also  
- [JavaScript Runtime Sample App](http://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
+ [JavaScript Runtime Sample App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
  [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)   
- [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)
+ [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  
+ 
