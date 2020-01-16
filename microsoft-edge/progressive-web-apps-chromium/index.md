@@ -3,7 +3,7 @@ description: Progressive Web Apps run natively on Windows 10.  Here is everythin
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/13/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
@@ -73,20 +73,21 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
    - Web Notifications are integrated into the Windows notification system
    - Shared cookie store with the browser profile that installed the app
    - Access to other browser features via the "..." menu including certificate validation, site permissions, tracking protection and browser extensions
-   - Full access to Microsoft [Edge DevTools](../devtools-guide-chromium/progressive-web-apps) for debugging your app 
+   - Full access to Microsoft [Edge DevTools](../devtools-guide-chromium/progressive-web-apps.md) for debugging your app 
 
-> ![Important] To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](./progressive-web-apps-edgehtml). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
+> ![IMPORTANT]
+> To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](../progressive-web-apps/index.md). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
 
 
 ## Requirements
 
 To run as a PWA, your server-hosted web app will at minimum require:
 
-  - [X] [**HTTPS**](https://en.wikipedia.org/wiki/HTTPS). Protect your users by providing a secure connection for server/app communication. Service workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes). 
+  - [X] [**HTTPS**](https://en.wikipedia.org/wiki/HTTPS). Protect your users by providing a secure connection for server/app communication. Service workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes).  
   
-  - [X] [**Service workers**](https://developer.mozilla.org/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.
+  - [X] [**Service workers**](https://developer.mozilla.org/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  
 
-  - [X] [**Web app manifest**](https://developer.mozilla.org/docs/Web/Manifest). Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience.
+  - [X] [**Web app manifest**](https://developer.mozilla.org/docs/Web/Manifest). Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience.  
 
 To be a *great* PWA, your app will also need:
 
