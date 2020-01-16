@@ -2,7 +2,7 @@
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/24/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License. 
    You may obtain a copy of the License at
 
-       http://www. apache. org/licenses/LICENSE-2. 0
+       https://www. apache. org/licenses/LICENSE-2. 0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.  
 
-See [Network Reference][NetworkReference] if you want to browse features instead. 
+See [Network Reference][DevtoolsNetworkReference] if you want to browse features instead.  
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -70,18 +70,14 @@ To get the most out of this tutorial, open up the demo and try out the features 
     > The demo in one window and this tutorial in a different window  
     > ![The demo in one window and this tutorial in a different window][ImagesTutorialWindows]  -->
 
-1.  **Open DevTools** by pressing `Control`+`Shift`+`J` \(Windows\) or
+1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows\) or
    `Command`+`Option`+`J` \(macOS\).  The **Console** panel opens.  
-    
-    <!--todo: add open section when content is available -->  
     
     > ##### Figure 2  
     > The Console  
     > ![The Console][ImagesTutorialConsole]  
     
-    You may prefer to **dock DevTools to the bottom of your window**.  
-    
-    <!--todo: add dock DevTools to the bottom of your window(ui#placement) section when available -->  
+    You may prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].  
     
     > ##### Figure 3  
     > DevTools docked to the bottom of the window  
@@ -117,7 +113,7 @@ To view the network activity that a page causes:
         Hover over a Waterfall to see a breakdown.  
     
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it. See [Hide the Overview pane][ReferenceHideOverview].
+    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it. See [Hide the Overview pane][DevtoolsReferenceHideOverview].
         
 1.  After you open DevTools, it records network activity in the Network Log.  
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
@@ -302,7 +298,7 @@ The **Filter** text box supports many different types of filtering.
     > A property filter  
     > ![A property filter][ImagesTutorialProperty]  
 
-    See [Filter requests by properties][ReferenceProperty] for the full list of filterable properties.   
+    See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.  
     
     
 1.  Clear the **Filter** text box of any text.  
@@ -325,7 +321,7 @@ To focus in on a certain type of file, such as stylesheets:
     
 1.  Click **All** to remove the filters and see all resources again.  
 
-See [Filter requests][ReferenceFilter] for other filtering workflows. 
+See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.  
 
 ## Block requests   
 
@@ -371,7 +367,7 @@ Congratulations, you have completed the tutorial.  You now know how to use the N
 
 
 
-Check out the [Network Reference][NetworkReference] to discover more DevTools features related to inspecting network activity. 
+Check out the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity. 
 
  
 
@@ -428,22 +424,23 @@ Check out the [Network Reference][NetworkReference] to discover more DevTools fe
 [MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy.md ""  -->  
-<!--[UIPlacement]: ../ui.md#placement ""  -->  
-[NetworkReference]: reference.md "Network Analysis Reference"
-<!--[OpenDevTools]: ../open.md ""  -->  
-<!--[ReferenceFilter]: reference.md#filter ""  -->  
-[ReferenceHideOverview]: reference.md#hide-the-overview-pane "Hide the Overview pane - Network Analysis Reference"
-[ReferenceProperty]: reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis Reference"
+
+[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DevtoolsNetworkReference]: reference.md "Network Analysis Reference"
+[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
+[DevtoolsNetworkReferenceFilter]: reference.md#filter-requests "Filter requests - Network Analysis Reference"  
+[DevtoolsReferenceHideOverview]: reference.md#hide-the-overview-pane "Hide the Overview pane - Network Analysis Reference"
+[DevtoolsReferenceProperty]: reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis Reference"
 <!--[SpeedGetStarted]: ../speed/get-started.md ""  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

@@ -2,7 +2,7 @@
 title: Debug Background Services With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/03/2020
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -11,7 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
+
+       https://www.apache.org/licenses/LICENSE-2.0
+       
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -42,7 +44,7 @@ This can help you make sure that events are being sent and received as expected.
 > Viewing the details of an event in the Push Messaging pane  
 > ![Viewing the details of an event in the Push Messaging pane][PushDetails]  
 
-## Background Fetch  
+## Background Fetch   
 
 The *Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
 
@@ -75,7 +77,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
 
 <!--Todo: add background sync api section when available -->  
 
-1.  Open **DevTools**.  
+1.  [Open DevTools][OpenDevTools].  
 1.  Open the **Application** panel.  
 1.  Open the **Background Sync** pane.  
     
@@ -96,13 +98,11 @@ The **Background Sync API** enables an offline **service worker** to send data t
     > Viewing the details of an event in the Background Sync pane  
     > ![Viewing the details of an event in the Background Sync pane][SyncDetails]  
     
-<!--Todo: add open devtools section when available -->  
-
 ## Notifications 
 
 After a **service worker** has received a [Push Message][MDNPush] from a server, the service worker uses the [Notifications API][MDNNotifications] to display the data to a user.  To log Notifications for 3 days, even when DevTools is not open:  
 
-1.  Open **DevTools**.  
+1.  [Open DevTools][OpenDevTools].  
 1.  Open the **Application** panel.  
 1.  Open the **Notifications** pane.  
     
@@ -123,13 +123,11 @@ After a **service worker** has received a [Push Message][MDNPush] from a server,
     > Viewing the details of an event in the Notifications pane  
     > ![Viewing the details of an event in the Notifications pane][NotificationsDetails]  
     
-<!--Todo: add open devtools section when available -->  
-
 ## Push Messages 
 
 To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].  To log Push Messages for 3 days, even when DevTools is not open:  
 
-1.  Open **DevTools**.  
+1.  [Open DevTools][OpenDevTools].  
 1.  Open the **Application** panel.  
 1.  Open the **Push Messaging** pane.  
     
@@ -150,8 +148,6 @@ To display a push notification to a user, a **service worker** must first use th
     > Viewing the details of an event in the Push Messaging pane  
     > ![Viewing the details of an event in the Push Messaging pane][PushDetails2]  
     
-<!--Todo: add open devtools section when available -->  
-
  
 
 
@@ -188,11 +184,11 @@ To display a push notification to a user, a **service worker** must first use th
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
