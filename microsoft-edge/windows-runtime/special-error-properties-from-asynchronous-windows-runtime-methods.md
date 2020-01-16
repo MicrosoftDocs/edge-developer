@@ -29,4 +29,4 @@ It can be difficult to debug asynchronous Windows Runtime methods in JavaScript,
   
 -   [How to handle errors with promises](https://msdn.microsoft.com/library/windows/apps/hh700337.aspx)  
   
--   [Troubleshooting Windows Runtime errors](http://msdn.microsoft.com/en-us/1ef7d7df-82ac-441d-8ad0-54ab1318de64)  
+-   [Troubleshooting Windows Runtime errors](https://msdn.microsoft.com/1ef7d7df-82ac-441d-8ad0-54ab1318de64)  
