@@ -3,7 +3,7 @@ description: Microsoft Edge DevTools Protocol Version 0.1 supports the following
 title: DevTools Protocol Version 0.1 Clients
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/31/2018
+ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -28,7 +28,7 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
 **On the host (debugee) machine...**
 
-1. If you're on a WiFi network, ensure the network is marked as either **Domain** or **Private**. You can verify this by opening the [**Windows Defender Security Center**](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) app, clicking on **Firewall & network protection** and checking if your network is listed as a *Domain network* or *Private network*. 
+1. If you're on a WiFi network, ensure the network is marked as either **Domain** or **Private**. You can verify this by opening the [**Windows Defender Security Center**](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) app, clicking on **Firewall & network protection** and checking if your network is listed as a *Domain network* or *Private network*. 
 
     If its listed as *Public*, go to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network and toggle the *Network profile* button to **Private**.
 
@@ -36,7 +36,7 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
     a. Toggle on **Developer Mode**. This will install the *Developer Mode* package, enabling remote tooling for desktop.
 
-    b. Enable [**Device Portal**](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal) (*Turn on remote diagnostics over local area network connections*) and **Device discovery** (*Make your device visible to USB connections and your local network*).
+    b. Enable [**Device Portal**](/windows/uwp/debug-test-perf/device-portal) (*Turn on remote diagnostics over local area network connections*) and **Device discovery** (*Make your device visible to USB connections and your local network*).
 
     c. Turn on **Authentication** and supply a username / password.
 
