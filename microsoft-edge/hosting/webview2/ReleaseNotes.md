@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps Release Notes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/9/2019
+ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,8 +22,8 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 *   Released WebView2API Sample - a comprehensive guide of our SDK. Check it out [here!](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)
 *   Added IME support for all languages besides English. ([#30](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30))
-*   Updated the WebResourceRequested event's API surface in response to bug reports. Simultaneously specifying a filter and an event on creation is now deprecated. To create a web resource requested event, use [add_WebResourceRequested](reference/iwebview2webview5#add_webresourcerequested) to add the event and [AddWebResourceRequestedFilter](reference/iwebview2webview5#addwebresourcerequestedfilter) to add a filter. [RemoveWebResourceRequestedFilter](reference/iwebview2webview5#removewebresourcerequestedfilter) removes the filter. ([#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36)) ([#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74))
-*   **Breaking Change:** Modified Full Screen behavior. Deprecated [isfullscreenallowed](reference/IWebView2Settings.md#get_isfullscreenallowed_deprecated). Now, by default, if an element within a WebView (i.e. a video) is set to full screen, it fills the bounds of the WebView. Use the [IWebView2ContainsFullScreenElementChanged](reference/IWebView2ContainsFullScreenElementChangedEventHandler.md#iwebview2containsfullscreenelementchangedeventhandler) event and [get_ContainsFullScreenElement](reference/iwebview2webview5#get_containsfullscreenelement) to specify how the app should resize the WebView if an element wants to enter fullscreen mode.
+*   Updated the API surface of the WebResourceRequested event in response to bug reports.  Simultaneously specifying a filter and an event on creation is now deprecated.  To create a web resource requested event, use [add_WebResourceRequested](reference/iwebview2webview5.md#add_webresourcerequested) to add the event and [AddWebResourceRequestedFilter](reference/iwebview2webview5.md#addwebresourcerequestedfilter) to add a filter.  [RemoveWebResourceRequestedFilter](reference/iwebview2webview5.md#removewebresourcerequestedfilter) removes the filter.  ([#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36)) ([#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74))  
+*   **Breaking Change:**  Modified Full Screen behavior.  Deprecated [isfullscreenallowed](reference/IWebView2Settings.md#get_isfullscreenallowed_deprecated).  Now, by default, if an element within a WebView (such as a video) is set to full screen, it fills the bounds of the WebView.  Use the [IWebView2ContainsFullScreenElementChanged](reference/IWebView2ContainsFullScreenElementChangedEventHandler.md#interface-iwebview2containsfullscreenelementchangedeventhandler) event and [get_ContainsFullScreenElement](reference/iwebview2webview5.md#get_containsfullscreenelement) to specify how the app should resize the WebView if an element wants to enter fullscreen mode.  
 
 ## 0.8.314
 
@@ -32,10 +32,10 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 **Re-compile your app after updating the NuGet package.**  
 
 *   Added support for Windows 7, Windows 8/8.1.
-*   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
-*   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](reference/iwebview2webview4#addremoteobject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
-*   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](reference/iwebview2webview4#add_acceleratorkeypressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
-*  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](reference/iwebview2settings2#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
+*   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
+*   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the properties of the IDispatch object.  See [AddRemoteObject](reference/iwebview2webview4.md#addremoteobject) for more details.  ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).  
+*   Added `AcceleratorKeyPressed` event.  See [add_AcceleratorKeyPressed](reference/iwebview2webview4.md#add_acceleratorkeypressed) for more details.  ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).  
+*  Disabled `Context Menus`.  See [put_AreDefaultContextMenusEnabled](reference/iwebview2settings2.md#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).  
 *  Updated `DPI Awareness`. Now, the WebView's DPI awareness will be the same as its host application's DPI awareness. Note, if another hybrid application is launched with a different DPI Awareness than the original WebView, the new WebView will not be launched if the user data directory is the same ([#1](https://github.com/MicrosoftEdge/WebViewFeedback/issues/1)).
 *   Updated `Notification Change Behavior` so WebView2 automatically rejects notification permission requests prompted by web content hosted within the WebView.
 
@@ -48,10 +48,10 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 *   Added `DocumentTitleChanged` event to indicate document title change \([\#27][MicrosoftEdgeWebViewFeedbackIssue27]\).  
 *   Added `GetWebView2BrowserVersionInfo` API \([\#18][MicrosoftEdgeWebViewFeedbackIssue18]\).  
 *   Added `NewWindowRequested` event.  
-*   Updated `CreateWebView2EnvironmentWithDetails` function to remove `releaseChannelPreference`.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails] function for more details.  The registry and environment variable override is still supported.  The default channel preference is used unless overridden.  
+*   Updated `CreateWebView2EnvironmentWithDetails` function to remove `releaseChannelPreference`.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails.md] function for more details.  The registry and environment variable override is still supported.  The default channel preference is used unless overridden.  
     During the channel search, we skip any older channel version that is not compatible with the WebView2 SDK.  
     We select the more stable channel to ensure the most consistent behaviors for the end user.  When you test with latest Canary builds, you should create a script to set environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` to `1` before launching the app.  
-*   Updated `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails] function for more details.  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  
+*   Updated `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  See [CreateWebView2EnvironmentWithDetails][WebViewsGlobalsCreateWebView2EnvironmentWithDetails.md] function for more details.  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  
     If the host process does not have permission to write to the specified directory, `CreateWebView2EnvironmentWithDetails` may fail.  You may copy the data from the old user data directory to the new directory.  
 
 ## 0.8.230  
