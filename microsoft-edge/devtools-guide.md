@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/13/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -60,7 +60,7 @@ To get started, check out the [*Microsoft Edge DevTools*](./devtools-protocol/0.
 
 ## Feedback
 
-Please send us your feedback so we can continue improving the Microsoft Edge (EdgeHTML) DevTools for you! Simply open the tools (`F12`) and click the [**Send feedback**](#microsoft-edge-f12-developer-tools) button.
+Please send us your feedback so we can continue improving the Microsoft Edge (EdgeHTML) DevTools for you! Simply open the tools (`F12`) and click the [**Send feedback**](#microsoft-edge-edgehtml-developer-tools) button.
 
 You can also add and upvote tooling requests to our [UserVoice forum](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) and become a [Windows Insider](https://insider.windows.com/) to preview the [latest features coming to the DevTools](./devtools-guide/whats-new.md). Use the Windows **Feedback Hub** app to post, upvote, track and get support for general Windows suggestions and problems.
 

@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
 
 # Progressive Web Apps for Xbox One
 
-You can extend a web application and make it available as an Xbox One app via Microsoft Store while still continuing to use your existing frameworks, CDN and server backend. And like all Universal Windows Platform (UWP) apps, Progressive Web Apps (PWAs) running on Xbox One can also call native Windows 10 APIs. There are already a number of PWAs available for the Xbox One, particularly in the category of [media playback apps](#media-pwas-for-xbox).
+You can extend a web application and make it available as an Xbox One app via Microsoft Store while still continuing to use your existing frameworks, CDN and server backend.  And like all Universal Windows Platform (UWP) apps, Progressive Web Apps (PWAs) running on Xbox One can also call native Windows 10 APIs.  There are already a number of PWAs available for the Xbox One, particularly in the category of [media playback apps](#media-pwas-om-xbox).  
 
 For the most part, you can package your PWA for Xbox One in the [same way you would for Windows](./windows-features.md), using the [PWA Builder](https://www.pwabuilder.com/) tools or [Visual Studio](https://visualstudio.microsoft.com/vs/) IDE to generate the *appxmanifest* file required to run your PWA as a UWP app. However, there are several key differences this guide will walk you through.
 
@@ -73,13 +73,13 @@ The free, full-featured [Visual Studio Community 2017](https://visualstudio.micr
 
 ## UX considerations for PWAs on Xbox
 
-### Design for the “10-Foot Experience”
+### Design for the "10-Foot Experience"
 
-Xbox One is considered a “10-foot experience”, meaning that your users will likely be sitting a minimum of 10 feet away from the screen. As such, consider how your app might be used at that distance as opposed to the traditional desktop web browser experience with a mouse and keyboard. For design and UX guidance, check out [Designing for Xbox and TV](/windows/uwp/design/devices/designing-for-tv).
+Xbox One is considered a "10-foot experience", meaning that your users will likely be sitting a minimum of 10 feet away from the screen. As such, consider how your app might be used at that distance as opposed to the traditional desktop web browser experience with a mouse and keyboard. For design and UX guidance, check out [Designing for Xbox and TV](/windows/uwp/design/devices/designing-for-tv).
 
-### Understand the “TV SafeZone”
+### Understand the "TV SafeZone"
 
-Television manufacturers will apply a [“safe-zone”](/windows/uwp/design/devices/designing-for-tv#tv-safe-area) around the content that can clip your app. By default, we apply a safe border around your app to account for this, however you can ensure that your app takes the full screen size by calling [`setDesiredBoundsMode`](/uwp/api/windows.ui.viewmanagement.applicationview.setdesiredboundsmode) and specifying [`useCoreWindow`](/uwp/api/windows.ui.viewmanagement.applicationviewboundsmode):
+Television manufacturers will apply a ["safe-zone"](/windows/uwp/design/devices/designing-for-tv#tv-safe-area) around the content that can clip your app. By default, we apply a safe border around your app to account for this, however you can ensure that your app takes the full screen size by calling [`setDesiredBoundsMode`](/uwp/api/windows.ui.viewmanagement.applicationview.setdesiredboundsmode) and specifying [`useCoreWindow`](/uwp/api/windows.ui.viewmanagement.applicationviewboundsmode):
 
 ```JavaScript
 var applicationView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
@@ -121,7 +121,7 @@ To enable directional navigation, include the following script reference:
 By default, only `<a>`, `<button>`, `<input>`, `<select>`, and `<textarea>` elements are focusable. To enable focus on other elements, assign them a valid [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
 
 ```HTML
-<div tabindex=”0″>This div is eligible for focus</div>
+<div tabindex="0″>This div is eligible for focus</div>
 ```
 
 Check out the [DirectionalNavigation](https://github.com/Microsoft/TVHelpers/wiki/DirectionalNavigation) documentation to learn how to change the root element, set initial focus, override next focus, optimize controls for focus, customize the input. There's also a number of other useful samples.

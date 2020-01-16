@@ -30,7 +30,7 @@ The following items are suggested to develop, package, and deploy a Microsoft Ed
 ## Windows Information Protection
 Microsoft Edge extensions currently don't honor Windows Information Protection (WIP) settings. If an enterprise is concerned about data protection, extensions support should not be enabled for Microsoft Edge.
 
-To disable extensions for employees, configure Group Policy and Microsoft Intune settings. For more info on which policies to configure, see [Available policies for Microsoft Edge](https://technet.microsoft.com/en-us/itpro/microsoft-edge/available-policies).
+To disable extensions for employees, configure Group Policy and Microsoft Intune settings. For more info on which policies to configure, see [Available policies for Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/available-policies).
 
 ## Packaging Extensions
 Before an enterprise can distribute an extension to its employees, it must first be packaged. Instructions on packaging extensions are available in the [Packaging](./guides/packaging.md) guide.

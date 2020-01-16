@@ -277,7 +277,7 @@ conceptualContent:
     # Card
     - title: Progressive Web Apps
       links:
-        - url: ./progressive-web-apps.md
+        - url: ./progressive-web-apps/index.md
           itemType: reference
           text: Overview
         - url: ./progressive-web-apps/get-started.md

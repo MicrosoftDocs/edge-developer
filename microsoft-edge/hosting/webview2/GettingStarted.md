@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Getting Started with WebView2 (developer preview)
 
-This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](reference-webview2) to learn more about individual APIs.
+This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](reference-webview2.md) to learn more about individual APIs.  
 
 ## Prerequisites
 
@@ -211,9 +211,9 @@ Congratulations, you've just built your first WebView2 app!
 There are plenty of WebView2 functionalities that are not covered in this walkthrough. 
 
 To learn more:
-- Checkout [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for a comprehensive example of our SDK's capabilities.
+- Checkout [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for a comprehensive example of our SDKs capabilities.
 - Checkout [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) an application built using WebView2.
-- Please explore [API reference](reference-webview2) for detailed information about out API.
+- Please explore [API reference](reference-webview2.md) for detailed information about out API.  
 
 ## Feedback
 
