@@ -111,9 +111,9 @@ Here is how to set up debugging for your PWA \(EdgeHTML\).
 
 As an installed Windows app, your [PWA \(EdgeHTML\) has full access to native Windows Runtime APIs][WindowsRuntime]; identify what you need to use, obtain the requisite permissions, and employ feature detection to to send that API request on supported environments.  Walk through this process to add a progressive enhancement for Windows desktop users of your PWA.  
 
-There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center](#windows-dev-center), downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows 10 (EdgeHTML)][PwaIndexWindows10].  
+There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center][uwp/api/], downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for PWAs on Windows.
 
-### Windows Dev Center  
+There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center][uwp/api/], downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows 10 (EdgeHTML)][PwaIndexWindows10].  
 
 Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may follow the general [Universal Windows Platform documentation][WindowsUWPIndex] and [API Reference][UwpApiIndex] for usage.  However, please note the following differences:
 
@@ -121,6 +121,8 @@ Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may fo
 *   [Events are represented as string identifiers][ScriptingJsinrtHandlingWinRTEvents] passed to class `addEventListener`/`removeEventListener` methods
 *   [Asynchronous methods][ScriptingJsinrtUsingWinRT] use the JavaScript Promise model
 *   APIs in the `Windows.UI.Xaml` namespace are not supported for JavaScript apps, which instead use the [EdgeHTML][DevGuideWhatsNew] engine web rendering stack \(HTML, CSS\)
+
+For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].
 
 For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].
 
