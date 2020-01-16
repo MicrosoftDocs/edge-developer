@@ -187,7 +187,7 @@ AppServiceRequestReceivedEventArgs args)
 }
 ```
 
-When your UWP app sends a response back to your extension, a [`KeyValuePair`](https://msdn.microsoft.com/en-us/library/windows/apps/5tbh8a42) will be added to the `ValueSet` object. The `Key` property will be ignored by Microsoft Edge, but the `Value` property will contain a valid JSON string.
+When your UWP app sends a response back to your extension, a [`KeyValuePair`](https://msdn.microsoft.com/library/windows/apps/5tbh8a42) will be added to the `ValueSet` object. The `Key` property will be ignored by Microsoft Edge, but the `Value` property will contain a valid JSON string.
 
 ### Callback
 

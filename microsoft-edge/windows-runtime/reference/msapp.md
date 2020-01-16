@@ -13,7 +13,7 @@ keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
 
 The MSApp object and its members are supported only for Windows apps using JavaScript (including PWAs accessing Windows API features). The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn’t exist (and consequently, none of its methods and properties are available).
 
-It provides helper functions that enable you to create [Blob](https://developer.mozilla.org/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/en-us/library/hh772328(v=vs.85).aspx) objects.
+It provides helper functions that enable you to create [Blob](https://developer.mozilla.org/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx) objects.
 
 ```javascript
 var result = MSApp.method;
@@ -156,7 +156,7 @@ var retVal = MSApp.createFileFromStorageFile(storageFile);
 
 ### createStreamFromInputStream  
 
-Creates an [`MSStream`](https://msdn.microsoft.com/en-us/library/hh772328) from an [`InputStream`](https://msdn.microsoft.com/en-us/library/hh772327).  
+Creates an [`MSStream`](https://msdn.microsoft.com/library/hh772328) from an [`InputStream`](https://msdn.microsoft.com/library/hh772327).  
 
 
 ```javascript
@@ -300,7 +300,7 @@ if (MSApp.getCurrentPriority() === MSApp.IDLE) {
 
 ### getHtmlPrintDocumentSource  
 
-Synchronous API that has been deprecated. For Windows 10, see `getHtmlPrintDocumentSourceAsync`. For Windows 8 and 8.1 apps, see the MSDN entry for [getHtmlPrintDocumentSource](https://msdn.microsoft.com/en-us/library/hh772325).  
+Synchronous API that has been deprecated. For Windows 10, see `getHtmlPrintDocumentSourceAsync`. For Windows 8 and 8.1 apps, see the MSDN entry for [getHtmlPrintDocumentSource](https://msdn.microsoft.com/library/hh772325).  
 
 ### getHtmlPrintDocumentSourceAsync
 Returns the source content that is to be printed.
@@ -394,8 +394,8 @@ Support for multiple windows.
 
 | Description |Windows 10 | Windows 8.1 |  
 |:---- |:---- |:--- |  
-| Create new window | [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) | [`MSApp.createNewView`](https://msdn.microsoft.com/en-us/library/dn254975(v=vs.85).aspx) |  
-|New window object | [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) |[`MSAppView`](https://msdn.microsoft.com/en-us/library/dn268315(v=vs.85).aspx) |  
+| Create new window | [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) | [`MSApp.createNewView`](https://msdn.microsoft.com/library/dn254975(v=vs.85).aspx) |  
+|New window object | [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) |[`MSAppView`](https://msdn.microsoft.com/library/dn268315(v=vs.85).aspx) |  
 
 ```javascript
 var retval = MSApp.getViewId(window); 

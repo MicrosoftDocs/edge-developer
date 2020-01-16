@@ -229,7 +229,7 @@ You can test your Microsoft Edge extension AppX package by sideloading it in Mic
 
 ### Signing
 
-See [How to create an app package signing certificate](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
+See [How to create an app package signing certificate](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
 
 > [!NOTE]
 > You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!

@@ -4,7 +4,7 @@ description: Learn how to build, design, and test accessible websites within Mic
 title: Accessibility
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -21,7 +21,7 @@ Here are some best practices, code samples, and further resources for you to lea
 
 ## Accessibility in Microsoft Edge
 
-In Microsoft Edge, we transitioned from the [Microsoft Active Accessibility](https://msdn.microsoft.com/en-us/library/windows/desktop/dd373592(v=vs.85).aspx) (MSAA) API to the more modern [UI Automation](https://msdn.microsoft.com/en-us/library/windows/desktop/ee684009.aspx) (UIA) API, alongside enormous complementary investments in rearchitecting our DOM implementation and rewriting the browser interface from scratch. The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10. Because EdgeHTML helps to power the Universal Windows Apps platform of Windows 10, these benefits will have an impact beyond the browser. Users will also benefit from the evergreen nature of the EdgeHTML engine. 
+In Microsoft Edge, we transitioned from the [Microsoft Active Accessibility](https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx) (MSAA) API to the more modern [UI Automation](https://msdn.microsoft.com/library/windows/desktop/ee684009.aspx) (UIA) API, alongside enormous complementary investments in rearchitecting our DOM implementation and rewriting the browser interface from scratch. The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10. Because EdgeHTML helps to power the Universal Windows Apps platform of Windows 10, these benefits will have an impact beyond the browser. Users will also benefit from the evergreen nature of the EdgeHTML engine. 
 
 The new accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3. The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation later:
 
