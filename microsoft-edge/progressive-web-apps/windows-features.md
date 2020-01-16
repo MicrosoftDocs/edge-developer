@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/13/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
@@ -22,7 +22,7 @@ PWAs installed on Windows 10 enjoy [all the benefits][PwaIndexWindows10] of runn
 
 This guide shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.  
 
-## Prerequisites
+## Prerequisites  
 
 *   An existing PWA \(or hosted web app\), either a live or localhost site.  This guide uses the sample PWA from [Get started with Progressive Web Apps][PwaGetStarted].  
 
@@ -113,7 +113,7 @@ As an installed Windows app, your [PWA \(EdgeHTML\) has full access to native Wi
 
 There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center](#windows-dev-center), downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows](#windows-pwa-snippets).
 
-### Windows Dev Center
+### Windows Dev Center  
 
 Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may follow the general [Universal Windows Platform documentation][WindowsUWPIndex] and [API Reference][UwpApiIndex] for usage.  However, please note the following differences:
 
@@ -124,7 +124,7 @@ Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may fo
 
 For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].
 
-### UWP code samples
+### UWP code samples  
 
 Check out the [Universal Windows Platform \(UWP\) Code Samples][MicrosoftDeveloperWindowsSamples] repo to browse JavaScript examples for common Windows 10 app scenarios.  Although the JS versions of these samples use the [WinJS][GithubWinjsWinjs] library to structure the sample template, WinJS is not required for sending the WinRT API requests demonstrated in these samples.  
 
@@ -151,7 +151,7 @@ Check out the [Universal Windows Platform \(UWP\) Code Samples][MicrosoftDevelop
 >     });
 > ```  
 
-## Send WinRT API requests from your PWA (EdgeHTML)
+## Send WinRT API requests from your PWA (EdgeHTML)  
 
 At this point, pretend you want to add a custom context menu for Windows users of our PWA \(EdgeHTML\) and have identified the APIs you need in the [Windows.UI.Popups][UwpApiWindowsUiPopups] namespace.  
 
@@ -297,7 +297,7 @@ With that background, you are ready to add some WinRT code to implement a custom
 1.  Compare the context menu behavior when you run your PWA in the browser \(`F5` from your PWA site project\) versus from inside the Windows app window \(`F5` from your Universal Windows app project\).  In the browser, right-clicking gives you the Microsoft Edge default context menu, whereas in the `WWAHost.exe` process, your custom menu now appears.  
 
     | Microsoft Edge | Windows 10 app |  
-    |:--- | :---- |  
+    |:--- |:---- |  
     | ![Browser default context menu](media/browser-context-menu.png) | ![App custom context menu](media/app-context-menu.png) |  
 
 Hopefully you now have a solid foundation for progressively enhancing your PWAs on Windows.  If you run into questions or anything is unclear, please send a comment!  

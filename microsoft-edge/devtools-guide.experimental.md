@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/13/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
@@ -87,7 +87,7 @@ Next tool | Ctrl+F6
 Previous tool | Ctrl+Shift+F6
 Previous tool (from history) | Ctrl+Shift+[
 Next tool (from history) | Ctrl+Shift+]
-Next Subframe 	  | F6
+Next Subframe    | F6
 Previous Subframe | Shift+F6
 Next match in Search box | F3
 Previous match in Search box | Shift+F3

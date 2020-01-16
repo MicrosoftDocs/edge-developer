@@ -3,7 +3,7 @@ description: This guide provides an overview of the developer features and stand
 title: What's new in EdgeHTML 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -52,7 +52,7 @@ Additionally, EdgeHTML 15 introduces the following feature previews:
 See [*Improved JavaScript performance, WebAssembly, and Shared Memory in Microsoft Edge*](https://blogs.windows.com/msedgedev/2017/04/20/improved-javascript-performance-webassembly-shared-memory/#t4gwUKjjtdmstMbs.97) for further details.
 
 ### Payment Request API
-The [Payment Request API](http://www.w3.org/TR/payment-request/) is now supported, enabling simpler checkout and payments on the web on Windows 10 PCs and Phones. This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) and the [Payment Request API](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/device/payment-request-api) developer guide.
+The [Payment Request API](http://www.w3.org/TR/payment-request/) is now supported, enabling simpler checkout and payments on the web on Windows 10 PCs and Phones. This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) and the [Payment Request API](/microsoft-edge/dev-guide/device/payment-request-api) developer guide.
 
 ### TCP Fast Open (TFO)
 TCP Fast Open is a feature that reduces the number of round trips required to open a TCP connection, improving browser networking performance. For more details, see [Building a faster and more secure web with TCP Fast Open](https://blogs.windows.com/msedgedev/2016/06/15/building-a-faster-and-more-secure-web-with-tcp-fast-open-tls-false-start-and-tls-1-3/#eQMauReErmIRXYqh.97). Due to interoperability differences in various network topologies, this features is not enabled by default in Microsoft Edge. To enable it, type `about:flags` in your address bar, and select the checkbox for **Enable TCP Fast Open** under the *Networking* section. 

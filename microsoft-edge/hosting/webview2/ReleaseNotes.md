@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps Release Notes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/9/2019
+ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,7 +32,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 **Re-compile your app after updating the NuGet package.**  
 
 *   Added support for Windows 7, Windows 8/8.1.
-*   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
+*   Added `Visual Studio` and `Visual Studio Code` debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
 *   Added `Native Object Injection`, which allows the script running within WebView2 to be passed an IDispatch object from the Win32 component of the application and access the IDispatch object's properties. See [AddRemoteObject](reference/iwebview2webview4#addremoteobject) for more details. ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
 *   Added `AcceleratorKeyPressed` event. See [add_AcceleratorKeyPressed](reference/iwebview2webview4#add_acceleratorkeypressed) for more details. ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
 *  Disabled `Context Menus`. See [put_AreDefaultContextMenusEnabled](reference/iwebview2settings2#put_aredefaultcontextmenusenabled) for more details ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).

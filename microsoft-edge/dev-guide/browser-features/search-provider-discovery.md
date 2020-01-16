@@ -4,7 +4,7 @@ description: If you are a search provider, see how to ensure that Microsoft Edge
 title: Dev guide - Search provider discovery
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/18/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -21,17 +21,17 @@ Rich search integration is built into the Microsoft Edge address bar, including 
 * The search query template 
 
 1.  Provide an OpenSearch description file, which contains the name of the search provider, and the template to use to construct the search. Here is an example document:
-	```html
-	<?xml version="1.0" encoding="UTF-8"?> 
+    ```html
+    <?xml version="1.0" encoding="UTF-8"?> 
     <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
         <ShortName>Contoso Search</ShortName>
         <Url type="text/html" template="https://www.contoso.com/?query={searchTerms}"/> 
     </OpenSearchDescription>
-	```
+    ```
 
 2.  Include a reference to your OpenSearch description file in the header section of your pages (typically this would include your site home page and search result pages), for example:
-	```html
-	<html>
+    ```html
+    <html>
         <head>
             <link rel="search" 
                 type="application/opensearchdescription+xml"  
@@ -40,7 +40,7 @@ Rich search integration is built into the Microsoft Edge address bar, including 
         </head> 
         <body> 
         ...
-	```
+    ```
 
 When a user browses to your search service, your OpenSearch description will be automatically picked up and saved for later use. The user will then be able to go to Microsoft Edge settings and choose to add your search service to his or her list of search providers for the Microsoft Edge address bar.
 
