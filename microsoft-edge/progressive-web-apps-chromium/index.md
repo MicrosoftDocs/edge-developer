@@ -75,7 +75,7 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
    - Access to other browser features via the "..." menu including certificate validation, site permissions, tracking protection and browser extensions
    - Full access to Microsoft [Edge DevTools](../devtools-guide-chromium/progressive-web-apps.md) for debugging your app 
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](../progressive-web-apps/index.md). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
 
 
