@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -351,16 +351,16 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DwarfHome]: http://dwarfstd.org "Dwarf Home"  
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: http://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
 [MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider Addons"  
-[MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
+[MicrosoftVisualStudio]: http://aka.ms/vs "Visual Studio"  
 [MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Debug JavaScript in Microsoft Edge from Visual Studio | Visual Studio Blog"  
 [MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 for Windows \& Mac"  
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
-[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
+[VisualStudioCode]: http://aka.ms/vscode "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"  
 [VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
