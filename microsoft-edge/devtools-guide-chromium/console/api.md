@@ -2,7 +2,7 @@
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2020
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -185,7 +185,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 console.group(label)
 ```  
 
-Visually groups messages together until the [groupEnd](#groupEnd) method is used.  Use the [groupCollapsed](#groupCollapsed) method to collapse the group when it is initially logged to the Console.  
+Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it is initially logged to the Console.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -291,7 +291,7 @@ console.table([
 console.time([label])
 ```  
 
-Starts a new timer.  Use the [timeEnd](#timeEnd) method to stop the timer and print the elapsed time to the Console.  
+Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the Console.  
 
 ```javascript
 console.time();
