@@ -2,12 +2,12 @@
 title: Sources Panel Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright 05/29/2019 Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -50,7 +50,7 @@ Use the **Page** pane to view all of the resources that the page has loaded.
 How the **Page** pane is organized:  
 *   The top-level, such as `top` in [**Figure 1**](#figure-1), represents an [HTML frame][HTML4Frames].  You'll find `top` on every page that you visit. `top` represents the main document frame.  
 *   The second-level, such as `docs.microsoft.com` in [**Figure 1**](#figure-1), represents an [origin][HTMLOrigin].  
-*   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in [**Figure 1**](#figure-1) the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/microsoft-edge/devtools-guide-chromium`  
+*   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in [**Figure 1**](#figure-1) the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
 
 [HTML4Frames]: https://www.w3.org/TR/html401/present/frames.html  
 [HTMLOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin  
