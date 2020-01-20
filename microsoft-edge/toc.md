@@ -40,6 +40,7 @@
 #### [Overview](devtools-guide-chromium/console/index.md)
 #### [Log Messages](devtools-guide-chromium/console/log.md)
 #### [Run JavaScript](devtools-guide-chromium/console/javascript.md)
+#### [Reference](devtools-guide-chromium/console/reference.md)
 #### [API Reference](devtools-guide-chromium/console/api.md)
 #### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
