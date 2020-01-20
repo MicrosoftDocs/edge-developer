@@ -3,7 +3,7 @@ description: Represents a webview process.
 title: MSWebViewProcess object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2018
+ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
@@ -34,7 +34,7 @@ Type: **DOMString**
 
 ### isPrivateNetworkClientServerCapabilityEnabled
 
-Gets a value indicating whether the [webview](../webview.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.
+Gets a value indicating whether the [webview](../webview.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.
 
 ```js
 var privateNetwork = wvprocess.isPrivateNetworkClientServerCapabilityEnabled;
