@@ -56,6 +56,8 @@
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
+### DOM
+#### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
