@@ -4,14 +4,15 @@ description: To ensure your extension’s icon is visible while in both light an
 title: Extensions - Accessibility
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Accessibility
+# Accessibility  
 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 ## Creating accessible extension icons for Microsoft Edge
 

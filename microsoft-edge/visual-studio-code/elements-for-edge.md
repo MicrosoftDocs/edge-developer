@@ -9,17 +9,17 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, elements
 ---
 
-# Elements for Edge VS Code extension
+# Elements for Microsoft Edge VS Code extension
 
-By adding the [Elements for Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) VS Code extension, you can use the browser's Elements tool from within [Visual Studio Code](https://code.visualstudio.com/). By either launching or attaching, the Elements tool will connect to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.
+By adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) VS Code extension, you can use the browser's Elements tool from within [Visual Studio Code](https://code.visualstudio.com/). By either launching or attaching, the Elements tool will connect to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.
 
 ![GIF of the Elements for Edge VS Code extension at work](./media/elements-for-edge.gif)
 
-## Launching Edge From the Elements extension 
+## Launching Microsoft Edge From the Elements extension 
 
 Navigate to Elements in the **Activity Bar**. Next to where it says "Elements for Microsoft Edge: Targets," there is a plus sign that will open the browser for your app. If you selected the *about:blank* option, you will have to navigate to your web app in the browser for it to appear in the Elements panel in VS Code.
 
-## Launching Edge from the Debug view
+## Launching Microsoft Edge from the Debug view
 
 If you are accustomed to using the Debug view in Visual Studio Code, you can access Elements from that tool. Navigate to the Debug view (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac). 
 
