@@ -3,7 +3,7 @@ description: IE mode and the Microsoft Edge (Chromium) DevTools
 title: Internet Explorer mode and the DevTools
 author: robpaveza
 ms.author: ropaveza
-ms.date: 03/10/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
@@ -35,7 +35,7 @@ This is because a number of components in the DevTools (like the Network and Per
 
 ![DevTools launched in IE mode](./media/ie-mode-devtools.png)
 
-If you are developing or maintaining an Internet Explorer 11-based web site or application, we recommend navigating to the same page in Internet Explorer 11. On Windows 10, you can find the shortcut for Internet Explorer 11 on the Start Menu underneath Windows Accessories. On Windows 7, you can find Internet Explorer 11 on the main Start Menu. You can then launch the Internet Explorer DevTools by pressing `F12` or clicking **Inspect element** in the context menu. To learn more about how to use those tools, click [here](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).
+If you are developing or maintaining an Internet Explorer 11-based web site or application, we recommend navigating to the same page in Internet Explorer 11. On Windows 10, you can find the shortcut for Internet Explorer 11 on the Start Menu underneath Windows Accessories. On Windows 7, you can find Internet Explorer 11 on the main Start Menu. You can then launch the Internet Explorer DevTools by pressing `F12` or clicking **Inspect element** in the context menu. To learn more about how to use those tools, click [here](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).
 
 ## Remote debugging and IE mode
 
