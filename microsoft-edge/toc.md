@@ -57,6 +57,7 @@
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
+#### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
 ### DOM
 #### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
