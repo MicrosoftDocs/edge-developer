@@ -2,7 +2,7 @@
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/08/2020
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -136,10 +136,10 @@ If you are not able to use the emulators and do not have access to real devices,
 
 <!-- image links -->  
 
-[ImageAndroidEmulatorStockBrowser]: images/android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  
-[ImageAndroidEmulatorContentShell]: images/android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  
-[ImageAndroidEmulatorFirefoxBrowser]: images/ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  
-[ImageVMModernIe]: images/modern-ie-simulator.msft.png "Figure 1: Modern IE VM"  
+<!--[ImageAndroidEmulatorStockBrowser]: images/android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  -->  
+<!--[ImageAndroidEmulatorContentShell]: images/android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  -->  
+<!--[ImageAndroidEmulatorFirefoxBrowser]: images/ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  -->  
+[ImageVMModernIe]: images/modern-ie-vm.msft.png "Figure 1: Modern IE VM"  
 
 <!-- links -->  
 
@@ -149,9 +149,9 @@ If you are not able to use the emulators and do not have access to real devices,
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Download virtual machines"  
 
-[AndroidStudioCreateManageVirtualDevices]: http://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"  
-[AndroidStudioDownload]:  http://developer.android.com/sdk/installing/studio.html "Download Android Studio and SDK tools | Android Developers"  
-[AndroidStudioRunAppsAndroidEmulator]: http://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"  
+[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"  
+[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Download Android Studio and SDK tools | Android Developers"  
+[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"  
 
 [AppExperience]: https://www.sigos.com/app-experience/ "App Experience"  
 [AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Simulator Help - current | Apple"  
