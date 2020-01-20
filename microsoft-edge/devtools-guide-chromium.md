@@ -64,11 +64,11 @@ Please keep sending your [feedback and feature requests](#feedback)!
 
 ## Extensions
 
-You may have used extensions to the DevTools to help you diagnose and debug issues when building your web sites or apps. You can acquire extensions for Microsoft Edge from [the Microsoft Edge Insider Addons](https://www.microsoft.com/en-us/microsoft-edge/insider-addons/category/EdgeExtensions) page.
+You may have used extensions to the DevTools to help you diagnose and debug issues when building your web sites or apps. You can acquire extensions for Microsoft Edge from [the Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions) page.
 
 However, we do not have any extensions to the DevTools on that page. To acquire extensions to the DevTools, navigate to the extension you want to add to the DevTools in the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions). 
 
-![Chrome Web Store in Microsoft Edge](./devtools-guide-chromium/media/allow-extensions-from-stores-v2.png)
+![Chrome Web Store in Microsoft Edge](./devtools-guide-chromium/media/allow-extensions-from-stores.png)
 
 At the top, click **Allow extensions from other stores** and then select **Allow** in the dialog that appears. 
 
@@ -77,13 +77,13 @@ At the top, click **Allow extensions from other stores** and then select **Allow
 
 Click on **Add to Chrome** and your DevTools extension will be added to Microsoft Edge!
 
-![Adding extension from Chrome Web Store to Microsoft Edge](./devtools-guide-chromium/media/install-extension-from-chrome-store-v2.png)
+![Adding extension from Chrome Web Store to Microsoft Edge](./devtools-guide-chromium/media/install-extension-from-chrome-store.png)
 
 ## Feedback
 
-Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the `:)` icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
+Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the **Feedback** icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
 
-![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback2.png)
+![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback.png)
 
 If you want to preview the [latest features coming to the DevTools](./devtools-guide-chromium/whats-new.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/download), which builds nightly.
 

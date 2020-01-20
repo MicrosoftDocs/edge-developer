@@ -16,7 +16,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps.md",
+      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/service-workers",
       "redirect_document_id": true
     },
@@ -71,7 +71,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps.md",
+      "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/debugger/progressive-web-apps",
       "redirect_document_id": true
     },
