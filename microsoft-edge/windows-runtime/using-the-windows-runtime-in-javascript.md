@@ -1,7 +1,7 @@
 ---
 title: "Using the Windows Runtime in JavaScript | Microsoft Docs"
 ms.custom: ""
-ms.date: "02/03/2017"
+ms.date: 01/15/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -26,7 +26,7 @@ For general language documentation, check out MDN's [JavaScript reference](https
 >  Windows Runtime features are not available for apps that run in Internet Explorer.  
   
 ## Windows Runtime Reference Documentation  
- For reference documentation, see [Windows Runtime Reference](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx). Code examples are available in JavaScript and also in C++, C#, and Visual Basic.  
+ For reference documentation, see [Windows Runtime Reference](https://msdn.microsoft.com/library/windows/apps/br211377.aspx). Code examples are available in JavaScript and also in C++, C#, and Visual Basic.  
   
 ## Writing Windows Runtime Components in C++, C#, or Visual Basic  
  For instructions and guidelines for writing Windows Runtime components that can be consumed in JavaScript, see [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp) and [Creating Windows Runtime Components in C# and Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
@@ -57,4 +57,5 @@ For general language documentation, check out MDN's [JavaScript reference](https
  [Using Windows Runtime Asynchronous Methods](./using-windows-runtime-asynchronous-methods.md)   
  [Handling Windows Runtime Events in JavaScript](./handling-windows-runtime-events-in-javascript.md)   
  [JavaScript Representation of Windows Runtime Types](./javascript-representation-of-windows-runtime-types.md)   
- [JavaScript Projection of Windows Runtime DateTime and TimeSpan](./windows-runtime-datetime-and-timespan-representations.md)
+ [JavaScript Projection of Windows Runtime DateTime and TimeSpan](./windows-runtime-datetime-and-timespan-representations.md)  
+ 

@@ -1,7 +1,7 @@
 ---
 title: "JavaScript Runtime Hosting | Microsoft Docs"
 ms.custom: ""
-ms.date: "01/18/2017"
+ms.date: 01/15/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -29,5 +29,5 @@ The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and
  Explains the elements of the JsRT APIs.  
   
 ## See Also  
- [JavaScript Runtime Sample App](http://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
- [JavaScript Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+ [JavaScript Runtime Sample App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
+ [JavaScript Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)  
