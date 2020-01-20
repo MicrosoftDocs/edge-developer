@@ -2,7 +2,7 @@
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -34,11 +34,10 @@ Host a site on a development machine web server, then access the content from an
 
 With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.  
 
-### TL;DR   
+### Summary  
 
 *   Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.  
 *   If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.  
-
 
 ## Set up port forwarding   
 
@@ -123,18 +122,18 @@ If your web server is running off of a non-standard port, remember to specify th
 
 [RemoteDebuggingGettingStarted]: index.md "Get Started with Remote Debugging Android Devices"  
 
-[CharlesWebDebuggingProxy]: http://www.charlesproxy.com "Charles Web Debugging Proxy"  
-[SquidOptimisingWebDelivery]: http://www.squid-cache.org "squid : Optimising Web Delivery"  
-[FiddlerWebDebuggingProxy]: http://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
+[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
+[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimising Web Delivery"  
+[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
