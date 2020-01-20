@@ -62,6 +62,7 @@
 #### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
+#### [Pause Your Code With Breakpoints](devtools-guide-chromium/javascript/breakpoints.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
