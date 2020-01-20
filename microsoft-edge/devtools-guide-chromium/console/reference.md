@@ -2,7 +2,7 @@
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/26/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,13 +29,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  <!--If not, see [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  -->  
+This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, see [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
-<!--If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  -->  <!--For the reference on functions like `monitorEvents()` see [Console Utilities API Reference][DevToolsConsoleUtilities].  -->  
+If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  <!--For the reference on functions like `monitorEvents()` see [Console Utilities API Reference][DevToolsConsoleUtilities].  -->  
 
-<!--todo: add console/javascript when available -->  
-<!--todo: add console/log when available -->  
-<!--todo: add console/api when available -->  
 <!--todo: add console/utilities when available -->  
 
 ## Open the Console   
@@ -118,11 +115,17 @@ This section contains features that change how messages are presented in the Con
 > Logging `XMLHttpRequest` and `Fetch` requests  
 > ![Logging XMLHttpRequest and Fetch requests][ImageXhrGrouped]  
 
-The top message in [Figure 8](#figure-8) shows the default grouping behavior of the Console.  [Figure 9](#figure-9) shows how the same log looks after [disabling message grouping](#disable-message-grouping).  
+The top message in [Figure 8](#figure-8) shows the default grouping behavior of the Console.  <!--  [Figure 9](#figure-9) shows how the same log looks after [disabling message grouping](#disable-message-grouping).  -->  
 
-> ##### Figure 9  
+<!--
+
+> ##### Old Figure 9  
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping  
 > ![How the logged XMLHttpRequest and Fetch requests look after ungrouping][ImageXhrUngrouped]  
+
+-->
+
+<!--todo: add example foe ungrouping console items  -->  
 
 ### Persist messages across page loads   
 
@@ -131,9 +134,9 @@ By default the Console clears whenever you load a new page.  To persist messages
 ### Hide network messages   
 
 By default the browser logs network messages to the **Console**.  For example, the selected message
-in [Figure 10](#figure-10) represents a status code of `429`.  
+in [Figure 9](#figure-9) represents a status code of `429`.  
 
-> ##### Figure 10  
+> ##### Figure 9  
 > A 429 message in the Console  
 > ![A 429 message in the Console][Image429Message]  
 
@@ -150,25 +153,23 @@ There are many ways to filter out messages in the Console.
 
 [Open the Console Sidebar](#open-the-console-sidebar) and click **User Messages** to only show messages that came from the JavaScript of the page.  
 
-> ##### Figure 11  
+> ##### Figure 10  
 > Viewing user messages  
 > ![Viewing user messages][ImageUserMessages]  
 
 ### Filter by log level   
 
-DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  <!--The **Console API Reference** describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  -->  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
-
-<!--todo: add console api section when available -->
+DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
 
 Click the **Log Levels** dropdown to enable or disable `Verbose`, `Info`, `Warning` or `Error` messages.  
 
-> ##### Figure 12  
+> ##### Figure 11  
 > The **Log Levels** dropdown  
 > ![The Log Levels dropdown][ImageLogLevels]  
 
 You may also filter by log level by [opening the Console Sidebar](#open-the-console-sidebar) and then clicking **Errors**, **Warnings**, **Info**, or **Verbose**.  
 
-> ##### Figure 13  
+> ##### Figure 12  
 > Using the Sidebar to view warnings  
 > ![Using the Sidebar to view warnings][ImageSidebarWarnings]  
 
@@ -176,19 +177,19 @@ You may also filter by log level by [opening the Console Sidebar](#open-the-cons
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:` DevTools shows all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` enables you to focus on the messages from these 2 scripts.  
 
-> ##### Figure 14  
+> ##### Figure 13  
 > A URL filter  
 > ![A URL filter][ImageUrlFilter]  
 
 Type `-url:` to hide messages from that URL.  This is called a negative URL filter.  
 
-> ##### Figure 15  
+> ##### Figure 14  
 > A negative URL filter that hides all messages matching the URL `https://b.wal.co`  
 > ![A negative URL filter that hides all messages matching the URL https://b.wal.co][ImageNegativeUrlFilter1]  
 
 You may also show messages from a single URL by [opening the Console Sidebar](#open-the-console-sidebar), expanding the **User Messages** section, and then clicking the URL of the script containing the messages on which you want to focus.  
 
-> ##### Figure 16  
+> ##### Figure 15  
 > Viewing the messages that came from `wp-ad.min.js`  
 > ![Viewing the messages that came from wp-ad.min.js][ImageNegativeUrlFilter2]  
 
@@ -200,7 +201,7 @@ Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded 
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that do not match that pattern.  DevTools checks if the pattern is found in the message text or the script that caused the message to be logged.  
 
-> ##### Figure 17  
+> ##### Figure 16  
 > Filtering out any messages that do not match `/[gm][ta][mi]/`  
 > ![Filtering out any messages that do not match regex expression][ImageRegExFilter]  
 
@@ -214,9 +215,7 @@ Press the `Up Arrow` key to cycle through the history of JavaScript expressions 
 
 ### Watch the value of an expression in real-time with Live Expressions   
 
-If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  <!--See [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  -->  
-
-<!--todo: add live-expressions section when available -->  
+If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
 
 ### Disable Eager Evaluation   
 
@@ -227,9 +226,9 @@ As you type JavaScript expressions in the Console, **Eager Evaluation** shows a 
 As you type out an expression, the autocomplete popup window for the Console shows expressions that you ran earlier.  These expressions are prepended with the `>` character.  [Open Console Settings](#open-console-settings) and disable the **Autocomplete From History** checkbox to stop showing expressions from your history.  
 
 > [!NOTE]
-> In [Figure 18](#figure-18), `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.  
+> In [Figure 17](#figure-17), `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.  
 
-> ##### Figure 18  
+> ##### Figure 17  
 > The autocomplete popup showing expressions from history  
 > ![The autocomplete popup showing expressions from history][ImageHistoryAutocomplete]  
 
@@ -237,13 +236,13 @@ As you type out an expression, the autocomplete popup window for the Console sho
 
 By default the **JavaScript Context** dropdown is set to **top**, which represents the [browsing context][MDNBrowsingContext] of the main document.  
 
-> ##### Figure 19  
+> ##### Figure 18  
 > The **JavaScript Context** dropdown  
 > ![The JavaScript Context dropdown][ImageJavascriptContext]  
 
 Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run JavaScript in order to tweak the DOM of the ad.  You should first select the browsing context of the ad from the **JavaScript Context** dropdown.  
 
-> ##### Figure 20  
+> ##### Figure 19  
 > Selecting a different JavaScript context  
 > ![Selecting a different JavaScript context][ImageSelectContext]  
 
@@ -275,36 +274,36 @@ You may use any of the following workflows to clear the Console:
 [ImageConsoleSettings]: images/console-settings-group-similar-empty.msft.png "Figure 6: Console Settings"  
 [ImageConsoleSidebar]: images/console-sidebar-drawer-empty.msft.png "Figure 7: Console Sidebar"  
 [ImageXhrGrouped]: images/console-xhr-fetch.msft.png "Figure 8: Logging XMLHttpRequest and Fetch requests"  
-[ImageXhrUngrouped]: images/console-xhr-fetch-all.msft.png "Figure 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  
-[Image429Message]: images/console-show-network.msft.png "Figure 10: A 429 message in the Console"  
-[ImageUserMessages]: images/console-sidebar-drawer-user-messages.msft.png "Figure 11: Viewing user messages"  
-[ImageLogLevels]: images/console-log-level-default-levels.msft.png "Figure 12: The Log Levels dropdown"  
-[ImageSidebarWarnings]: images/console-sidebar-warnings.msft.png "Figure 13: Using the Sidebar to view warnings"  
-[ImageUrlFilter]: images/console-filter-text.msft.png "Figure 14: A URL filter"  
-[ImageNegativeUrlFilter1]: images/console-negative-filter-text.msft.png "Figure 15: A negative URL filter that hides all messages matching the URL https://b.wal.co"  
-[ImageNegativeUrlFilter2]: images/console-filter-text-specified.msft.png "Figure 16: Viewing the messages that came from wp-ad.min.js"  
-[ImageRegExFilter]: images/console-filter-regex.msft.png "Figure 17: Filtering out any messages that do not match regex expression"  
-[ImageHistoryAutocomplete]: images/console-filter-text-autofilter-history.msft.png "Figure 18: The autocomplete popup showing expressions from history"  
-[ImageJavascriptContext]: images/console-dom-level-top.msft.png "Figure 19: The JavaScript Context dropdown"  
-[ImageSelectContext]: images/console-dom-level-multiple.msft.png "Figure 20: Selecting a different JavaScript context"  
+<!--[ImageXhrUngrouped]: images/console-xhr-fetch-all.msft.png "Figure old 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  -->  
+[Image429Message]: images/console-show-network.msft.png "Figure 9: A 429 message in the Console"  
+[ImageUserMessages]: images/console-sidebar-drawer-user-messages.msft.png "Figure 10: Viewing user messages"  
+[ImageLogLevels]: images/console-log-level-default-levels.msft.png "Figure 11: The Log Levels dropdown"  
+[ImageSidebarWarnings]: images/console-sidebar-warnings.msft.png "Figure 12: Using the Sidebar to view warnings"  
+[ImageUrlFilter]: images/console-filter-text.msft.png "Figure 13: A URL filter"  
+[ImageNegativeUrlFilter1]: images/console-negative-filter-text.msft.png "Figure 14: A negative URL filter that hides all messages matching the URL https://b.wal.co"  
+[ImageNegativeUrlFilter2]: images/console-filter-text-specified.msft.png "Figure 15: Viewing the messages that came from wp-ad.min.js"  
+[ImageRegExFilter]: images/console-filter-regex.msft.png "Figure 16: Filtering out any messages that do not match regex expression"  
+[ImageHistoryAutocomplete]: images/console-filter-text-autofilter-history.msft.png "Figure 17: The autocomplete popup showing expressions from history"  
+[ImageJavascriptContext]: images/console-dom-level-top.msft.png "Figure 18: The JavaScript Context dropdown"  
+[ImageSelectContext]: images/console-dom-level-multiple.msft.png "Figure 19: Selecting a different JavaScript context"  
 
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 [DevToolsConsoleViewMessages]: index.md#viewing-logged-messages "Viewing logged messages - Console Overview"  
-<!--[DevToolsConsoleApi]: api.md "Console API Reference"  -->  
+[DevToolsConsoleApi]: api.md "Console API Reference"  
 [DevToolsConsoleOverviewJavascript]: index.md#running-javascript "Running JavaScript - Console Overview"  
-<!--[DevToolsConsoleJavascript]: javascript.md "Get Started With Running JavaScript In The Console"  -->  
-<!--[DevToolsConsoleLiveExpressions]: live-expressions.md "Watch JavaScript Expression Values In Real-Time With Live Expressions"  -->
-<!--[DevToolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  -->  
+[DevToolsConsoleJavascript]: javascript.md "Get Started With Running JavaScript In The Console"  
+[DevToolsConsoleLiveExpressions]: live-expressions.md "Watch JavaScript Expression Values In Real-Time With Live Expressions"  
+[DevToolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
 <!--[DevToolsConsoleUtilities]: utilities.md "Console Utilities API Reference"  -->  
 
 [MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browsing context | MDN"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
