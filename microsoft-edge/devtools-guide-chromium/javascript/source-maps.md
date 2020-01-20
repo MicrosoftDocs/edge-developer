@@ -2,7 +2,7 @@
 title: Map Preprocessed Code to Source Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2020
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your source code to your compiled code.  
 
-### TL;DR   
+### Summary  
 
 *   Use Source Maps to map minified code to source code. You are then able to read and debug compiled code in the original source.  
 *   Only use preprocessors capable of producing Source Maps.  
@@ -81,7 +81,7 @@ When debugging your code and Source Maps enabled, Source Maps show in two places
 1.  When stepping through code \(the links in the call stack should open the original source file\)  
 
 <!--todo: add link to debugging your code when section is available -->  
-<!--[DebugBreakpointsStepCode]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
+<!--[DebugBreakpointsStepCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/debug/breakpoints/step-code ""  -->  
 
 ## @sourceURL and displayName  
 
@@ -120,14 +120,14 @@ If you expand the **_Sources_** sub-panel you now see a new file with the custom
 <!-- links -->  
 
 [BabelJS]: https://babeljs.io "Babel is a JavaScript compiler"  
-[CoffeeScriptMain]: http://coffeescript.org "CoffeeScript"  
-[CssNinjaDemoSourceMapping]: http://www.thecssninja.com/demo/source_mapping/compile.html "A simple example of //# sourceURL eval naming"  
+[CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  
+[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "A simple example of //# sourceURL eval naming"  
 [DartMain]: https://www.dartlang.org "Dart programming language"  
 [GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler | GitHub"  
 [GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"  
 [GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Source maps: languages, tools and other info | GitHub wiki"  
 [GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Getting Started - google/traceur-compiler | GitHub wiki"  
-[TypeScriptMain]: http://www.typescriptlang.org "TypeScript"  
+[TypeScriptMain]: https://www.typescriptlang.org "TypeScript"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
@@ -136,7 +136,7 @@ If you expand the **_Sources_** sub-panel you now see a new file with the custom
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
