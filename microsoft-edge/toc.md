@@ -64,6 +64,7 @@
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
 #### [Pause Your Code With Breakpoints](devtools-guide-chromium/javascript/breakpoints.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Map Preprocessed Code to Source Code](devtools-guide-chromium/javascript/source-maps.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 #### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
