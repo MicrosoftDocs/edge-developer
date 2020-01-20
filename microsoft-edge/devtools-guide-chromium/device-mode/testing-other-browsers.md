@@ -143,7 +143,7 @@ If you are not able to use the emulators and do not have access to real devices,
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: https://docs.microsoft.com/microsoft-edge/devtools-guide/emulation.md "DevTools (EdgeHTML) - Emulation"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) - Emulation"  
 
 [Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations"  
 
