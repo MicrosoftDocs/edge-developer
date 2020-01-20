@@ -2,7 +2,7 @@
 title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2020
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -85,7 +85,7 @@ To set a conditional line-of-code breakpoint:
 1.  Press `Enter` to activate the breakpoint.  An icon next to the line number column.  
 
 > ##### Figure 2  
-> A conditional line-of-code breakpoint set on line `33`  
+> A conditional line-of-code breakpoint set on line 34  
 > ![A conditional line-of-code breakpoint][ImageConditionalLocBreakpoint]  
 
 ### Manage line-of-code breakpoints   
@@ -223,7 +223,7 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 [ImagePauseOnExceptionsIcon]: images/pause-on-exceptions-icon.msft.png  
 
 [ImageLocBreakpoint]: images/sources-page-js-breakpoint-30.msft.png "Figure 1: A line-of-code breakpoint"  
-[ImageConditionalLocBreakpoint]: images/sources-page-js-breakpoint-33.msft.png "Figure 2: A conditional line-of-code breakpoint"  
+[ImageConditionalLocBreakpoint]: images/sources-page-js-conditional-breakpoint.msft.png "Figure 2: A conditional line-of-code breakpoint"  
 [ImageBreakpointsPanel]: images/sources-page-js-breakpoints-16-33.msft.png "Figure 3: The Breakpoints panel"  
 [ImageDeactivatedBreakpoints]: images/sources-page-js-breakpoints-deactivate-breakpoints.msft.png "Figure 4: Deactivated breakpoints in the Breakpoints pane"  
 [ImageDomChangeBreakpoint]: images/elements-break-on-subtree-modifications.msft.png "Figure 5: The context menu for creating a DOM change breakpoint"  
