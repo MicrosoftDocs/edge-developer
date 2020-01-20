@@ -2,7 +2,7 @@
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2020
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -27,21 +27,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Get Started With Running JavaScript In The Console 
+# Get Started With Running JavaScript In The Console   
 
 
 
-This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  See [Get Started With Debugging JavaScript][DevToolsJavscriptIndex] to learn how to pause JavaScript code and step through it one line at a time.  
+This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  See [Get Started With Debugging JavaScript][DevToolsJavascriptIndex] to learn how to pause JavaScript code and step through it one line at a time.  
 
 > ##### Figure 1  
 > The **Console**  
 > ![The Console][ImageConsole]  
 
-## Overview 
+## Overview   
 
-The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.  It reads the JavaScript that you type into it, evaluates your code, prints out the result of your [expression][2alityExpressionsVersusStatements], and then loops back to the first step.
+The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.  It reads the JavaScript that you type into it, evaluates your code, prints out the result of your [expression][2alityExpressionsVersusStatements], and then loops back to the first step.  
 
-## Set up DevTools 
+## Set up DevTools   
 
 This tutorial is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.
 
@@ -54,7 +54,7 @@ This tutorial is designed for you to open up the demo and try all the workflows 
     > The Console JavaScript Example page on the left, and DevTools on the right  
     > ![The Console JavaScript Example page on the left, and DevTools on the right][ImageTutorialDevToolsJs]  
 
-## View and change the JavaScript or DOM of the page 
+## View and change the JavaScript or DOM of the page   
 
 When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.  
     
@@ -101,7 +101,7 @@ Sometimes, you just want a code playground where you are able to test some code,
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  This makes for a powerful debugging workflow.  See [Get Started With Debugging JavaScript][DevToolsJavascriptGetStarted] for an interactive tutorial.  
+DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  This makes for a powerful debugging workflow.  See [Get Started With Debugging JavaScript][DevToolsJavascriptIndex] for an interactive tutorial.  
 
 The **Console** also has a set of convenience functions that make it easier to interact with a page.  For example:  
 
@@ -132,8 +132,8 @@ The **Console** also has a set of convenience functions that make it easier to i
 
 [DevToolsJavascriptIndex]: ../javascript/index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
 
-[2alityExpressionsVersusStatements]: http://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
-[Esma6DefaultParameterValues]: http://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
+[2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
+[Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
 [GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console Javascript Example | Glitch"  
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read–eval–print loop - Wikipedia"  
 
@@ -144,7 +144,7 @@ The **Console** also has a set of convenience functions that make it easier to i
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
