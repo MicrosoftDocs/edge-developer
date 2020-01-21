@@ -2,7 +2,7 @@
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/31/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -47,7 +47,7 @@ This section explains how DevTools fits into your overall accessibility toolkit.
 
 When determining whether a page is accessible, you need to have 2 general questions in mind:  
 
-1.  Am I able to navigate the page with a keyboard or screen reader?  
+1.  Are you able to navigate the page with a keyboard or screen reader?  
 1.  Are the elements of the page properly marked up for screen readers?  
 
 <!--[ScreenReader]: /web/fundamentals/accessibility/semantics-builtin/#screen_readers  -->  
@@ -73,7 +73,7 @@ To audit a page:
     > ![Configuring audits][ImageConfiguringAudits]  
     
     > [!NOTE]
-    > The screenshots in this section were taken with version 69 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
+    > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
     
 1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes differently your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option could have a significant effect on the results of your audit.  
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
@@ -135,7 +135,7 @@ Inspect the position of an element in the accessibility tree from the [Accessibi
 
 > ##### Figure 6  
 > The Accessibility Tree section  
-> ![images/a11y-tree.msft.png][ImageAllyTree]  
+> ![The Accessibility Tree section][ImageAllyTree]  
 
 ### View the ARIA attributes of an element   
 
@@ -145,7 +145,7 @@ View the ARIA attributes of an element in the [Accessibility pane](#the-accessib
 
 > ##### Figure 7  
 > The ARIA Attributes section  
-> ![The ARIA Attributes section][ImageAriaAttributesSection  
+> ![The ARIA Attributes section][ImageAriaAttributesSection]  
 
 ### View the computed accessibility properties of an element   
 
@@ -184,8 +184,8 @@ The Color Picker helps you verify that your text meets recommended contrast rati
     Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
     
     > ##### Figure 11  
-    > The Contrast Ratio section of the Color Picker shows 2 checkmark and a value of `16.10`  
-    > ![The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 16.10][ImageColorPickerContrastRatio]  
+    > The Contrast Ratio section of the Color Picker shows 2 checkmark and a value of `13.97`  
+    > ![The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97][ImageColorPickerContrastRatio]  
     
 1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
     
@@ -193,27 +193,27 @@ The Color Picker helps you verify that your text meets recommended contrast rati
     > The Contrast Ratio Line in the visual picker  
     > ![The Contrast Ratio Line in the visual picker][ImageContrastRatioLine]  
 
-## Feedback 
+<!--## Feedback   -->  
 
 
 
 <!-- image links -->  
 
-[ImageMoreTabsIcon]: images/shared/more-tabs-icon.msft.png  
+[ImageMoreTabsIcon]: images/more-tabs-icon.msft.png  
 
-[ImageConfiguringAudits]: images/config.msft.png "Figure 1: Configuring audits"  
-[ImageReport]: images/report.msft.png "Figure 2: A figure"  
-[ImageAttributes]: imgs/attributes.msft.png "Figure 3: More information about an audit"  
-[ImageAuditDocumentation]: images/documentation.msft.png "Figure 4: Viewing the documentation of an audit"  
+[ImageConfiguringAudits]: images/audits-pane.msft.png "Figure 1: Configuring audits"  
+[ImageReport]: images/audits-run-audits-result.msft.png "Figure 2: A figure"  
+[ImageAttributes]: images/audits-run-audits-result-issues-expanded.msft.png "Figure 3: More information about an audit"  
+[ImageAuditDocumentation]: images/web-dev-accessibility-audits-learn-more.msft.png "Figure 4: Viewing the documentation of an audit"  
 <!--[ImageAxeExtension]: images/aXe.msft.png "Old Figure 5: The aXe extension"  -->
-[ImageA11yPane]: images/a11y-pane.msft.png "Figure 5: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
-[ImageAllyTree]: imgs/a11y-tree.msft.png "Figure 6: The Accessibility Tree section"  
-[ImageAriaAttributesSection]: images/aria.msft.png "Figure 7: The ARIA Attributes section"  
-[ImageComputedA11yPropertiesSection]: images/computed-a11y.msft.png "Figure 8: The Computed (Accessibility) Properties section"  
-[ImageInspectDomTree]: images/inspect.msft.png "Figure 9: Inspecting a paragraph in the DOM Tree"  
-[ImageColorElement]: images/color.msft.png "Figure 10: The color property of the element"  
-[ImageColorPickerContrastRatio]: images/color-picker.msft.png "Figure 11: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 16.10"  
-[ImageContrastRatioLine]: images/contrast-ratio-line.msft.png "Figure 12: The Contrast Ratio Line in the visual picker"  
+[ImageA11yPane]: images/elements-accessibility.msft.png "Figure 5: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
+[ImageAllyTree]: images/elements-accessibility-tree.msft.png "Figure 6: The Accessibility Tree section"  
+[ImageAriaAttributesSection]: images/elements-accessibility-aria-attributes.msft.png "Figure 7: The ARIA Attributes section"  
+[ImageComputedA11yPropertiesSection]: images/elements-accessibility-computed-properties.msft.png "Figure 8: The Computed (Accessibility) Properties section"  
+[ImageInspectDomTree]: images/elements-paragraph-highlight.msft.png "Figure 9: Inspecting a paragraph in the DOM Tree"  
+[ImageColorElement]: images/elements-styles-paragraph-highlight-color.msft.png "Figure 10: The color property of the element"  
+[ImageColorPickerContrastRatio]: images/elements-styles-paragraph-highlight-color-picker.msft.png "Figure 11: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97"  
+[ImageContrastRatioLine]: images/elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png "Figure 12: The Contrast Ratio Line in the visual picker"  
 
 <!-- links -->  
 
@@ -229,12 +229,12 @@ Level AA | W3C"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
