@@ -184,7 +184,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
     Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
     
     > ##### Figure 11  
-    > The Contrast Ratio section of the Color Picker shows 2 checkmark and a value of `13.97`  
+    > The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of `13.97`  
     > ![The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97][ImageColorPickerContrastRatio]  
     
 1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
