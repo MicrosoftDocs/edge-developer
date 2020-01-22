@@ -42,7 +42,7 @@ Looking for `console.log()`, `console.error()`, and the rest of the `console.*` 
 $_
 ```  
 
-**Log level**: `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
 Returns the value of the most recently evaluated expression.  
 
@@ -203,7 +203,7 @@ Similar to the other selector methods, `$x(path)` has an optional second paramet
 > Using an XPath selector with `startNode`  
 > ![Using an XPath selector with startNode][ImageArrayXpathNode]  
 
-## Clear  
+## clear  
 
 ```javascript
 clear()
@@ -215,7 +215,7 @@ Clears the console of the history.
 clear()
 ```  
 
-## Copy  
+## copy  
 
 ```javascript
 copy(object)
@@ -227,8 +227,7 @@ The `copy(object)` method copies a string representation of the specified object
 copy($0)
 ```  
 
-<!--todo: debug() does not appear to work
-## Debug  
+## debug  
 
 ```javascript
 debug(method)
@@ -237,54 +236,47 @@ debug(method)
 When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** panel allowing you to step through the code and debug it.  
 
 ```javascript
-debug(getData);
+debug("debug");
 ```  
 
 > ##### Figure 13  
 > Breaking inside a method with `debug()`  
-> ![Breaking inside a method with debug()](images/debug.msft.png)  
+> ![Breaking inside a method with debug()][ImageDebugMethod]  
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to disable all breakpoints.  
 
 For more information on breakpoints, see [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
--->  
 
-<!--todo: dir() does not appear to work
-
-## Dir  
+## dir  
 
 ```javascript
 dir(object)
 ```  
 
-Displays an object-style listing all of the properties for the specified object.  This method is an alias for the Console API `console.console.dir()` method.  
+Displays an object-style listing all of the properties for the specified object.  This method is an alias for the [console.dir()][MDNConsoleDir] method.  
 
-In [Figure 14](#figure-14), the difference between evaluating `document.body` directly in the method line and using `console.dir()` to display the same element ius indicated.  
+In [Figure 14](#figure-14), the difference between evaluating `document.head` directly in the method line and using `console.dir()` to display the same element is indicated.  
 
 ```javascript
-document.body;
-dir(document.body);
+document.head;
+dir(document.head);
 ```  
 
 > ##### Figure 14  
-> Logging `document.body` with and without `dir()` method  
-> ![Logging document.body with and without dir() method[ImageLogObject]  
+> Logging `document.head` with and without `dir()` method  
+> ![Logging document.head with and without dir() method][ImageLogObject]  
 
 For more information, see the [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entry in the Console API.  
--->  
 
-<!--todo: dirxml() does not appear to work
-
-## Dir Xml  
+## dirxml  
 
 ```javascript
 dirxml(object)
 ```  
 
-Prints an XML representation of the specified object, as seen in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsole] method.  
--->  
+Prints an XML representation of the specified object, as seen in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsoleDirxml] method.  
 
-## Inspect  
+## inspect  
 
 ```javascript
 inspect(object/method)
@@ -304,7 +296,7 @@ inspect(document.body);
 
 When passing a method to inspect, the method opens the document up in the **Sources** panel for you to inspect.  
 
-## Get Event Listeners  
+## getEventListeners  
 
 ```javascript
 getEventListeners(object)
@@ -332,7 +324,7 @@ You may further expand each of the following objects to explore the properties.
 > Expanded view of listener object  
 > ![Expanded view of listener object][ImageListenersExpanded]  
 
-## Keys  
+## keys  
 
 ```javascript
 keys(object)
@@ -360,7 +352,7 @@ values(player1)
 > The `keys()` and `values()` methods  
 > ![The keys() and values() methods][ImageConsoleKeysValues]  
 
-## Monitor  
+## monitor  
 
 ```javascript
 monitor(method)
@@ -381,7 +373,7 @@ monitor(sum);
 
 Use `unmonitor(method)` to cease monitoring.  
 
-## Monitor Events  
+## monitorEvents  
 
 ```javascript
 monitorEvents(object[, events])
@@ -409,10 +401,10 @@ You may also specify one of the available types of events, strings that map to p
 
 | Event type | Corresponding mapped events |  
 |:--- |:--- |  
-| mouse | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |  
-| key | "keydown", "keypress", "keyup", "textInput" |  
-| touch | "touchcancel", "touchend", "touchmove", "touchstart" |  
-| control | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |  
+| `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |  
+| `key` | "keydown", "keypress", "keyup", "textInput" |  
+| `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |  
+| `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |  
 
 In [Figure 22](#figure-22), the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** panel.  
 
@@ -426,7 +418,7 @@ In [Figure 22](#figure-22) the sample output after typing a character in the tex
 > Monitoring key events  
 > ![Monitoring key events][ImageMonitorKey]  
 
-## Profile  
+## profile  
 
 ```javascript
 profile([name])
@@ -440,7 +432,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
     profile("My profile")
     ```  
     
-1.  Run the [profileEnd()](#profile-end) method to stop profiling and display the results in the **Profiles** panel.  
+1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Profiles** panel.  
 
 Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
 
@@ -454,7 +446,7 @@ profileEnd('B');
 > [!NOTE]
 > Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
 
-## Profile End  
+## profileEnd  
 
 ```javascript
 profileEnd([name])
@@ -487,7 +479,7 @@ Result in the **Profiles** panel.
 > [!NOTE]
 > Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
 
-## Table  
+## table  
 
 ```javascript
 table(data[, columns])
@@ -507,7 +499,7 @@ table(names);
 > The `table()` method  
 > ![The table() method][ImageConsoleTable]  
 
-## Undebug  
+## undebug  
 
 ```javascript
 undebug(method)
@@ -519,7 +511,7 @@ Stops the debugging of the specified method so that when the method is called, t
 undebug(getData);
 ```  
 
-## Unmonitor  
+## unmonitor  
 
 ```javascript
 unmonitor(method)
@@ -531,7 +523,7 @@ Stops the monitoring of the specified method.  This is used in concert with the 
 unmonitor(getData);
 ```  
 
-## Unmonitor Events  
+## unmonitorEvents  
 
 ```javascript
 unmonitorEvents(object[, events])
@@ -550,7 +542,7 @@ monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```  
 
-## Values  
+## values  
 
 ```javascript
 values(object)
@@ -580,8 +572,8 @@ values(object);
 [ImageArrayXpath]: images/console-array-xpath.msft.png "Figure 10: Using an XPath selector"  
 [ImageArrayXpathChild]: images/console-array-xpath-sub-element.msft.png "Figure 11: Using a more complicated XPath selector"  
 [ImageArrayXpathNode]: images/console-array-xpath-startnode.msft.png "Figure 12: Using an XPath selector with startNode"  
-<!--[ImageDebugMethod]: images/debug.msft.png "Figure 13: Breaking inside a method with debug()"  -->  
-<!--[ImageLogObject]: images/dir.msft.png "Figure 14: Logging document.body with and without dir() method"  -->  
+[ImageDebugMethod]: console-debug-text.msft.png "Figure 13: Breaking inside a method with debug()"  
+[ImageLogObject]: images/console-dir-document-head-expanded.msft.png "Figure 14: Logging document.body with and without dir() method"  
 [ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
 [ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners()"  
 [ImageMultipleListeners]: images/elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 17: Multiple listeners"  
@@ -596,11 +588,13 @@ values(object);
 <!-- links -->  
 
 [DevToolsConsoleApi]: api.md "Console API Reference"  
-[DevToolsConsoleApiConsoleDirObject]: api.md#consoledirobject "console.dir(object) - Console API Reference"  
+[DevToolsConsoleApiConsoleDirObject]: api.md#dir "dir - Console API Reference"  
+[DevtoolsConsoleReferenceLevel]: reference.md#filter-by-log-level "Filter by log level - Console Reference"  
 [DevToolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
 [DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-execution.md "Speed Up JavaScript Runtime"  
 
-[MDNConsole]: https://developer.mozilla.org/docs/Web/API/Console "console | MDN"  
+[MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
+[MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
 [MDNDocumentQuerySelector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "Document.querySelector() | MDN"  
 [MDNDocumentQuerySelectorAll]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "Document.querySelectorAll() | MDN"  
 
