@@ -578,7 +578,7 @@ values(object);
 [ImageArrayXpath]: images/console-array-xpath.msft.png "Figure 10: Using an XPath selector"  
 [ImageArrayXpathChild]: images/console-array-xpath-sub-element.msft.png "Figure 11: Using a more complicated XPath selector"  
 [ImageArrayXpathNode]: images/console-array-xpath-startnode.msft.png "Figure 12: Using an XPath selector with startNode"  
-[ImageDebugMethod]: console-debug-text.msft.png "Figure 13: Breaking inside a method with debug()"  
+[ImageDebugMethod]: images/console-debug-text.msft.png "Figure 13: Breaking inside a method with debug()"  
 [ImageLogObject]: images/console-dir-document-head-expanded.msft.png "Figure 14: Logging document.body with and without dir() method"  
 [ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
 [ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners()"  
