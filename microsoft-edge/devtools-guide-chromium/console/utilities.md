@@ -29,10 +29,10 @@ keywords:  microsoft edge, web development, f12 tools, devtools
 
 
 
-The Console Utilities API contains a collection of convenience methods for performing common tasks:  selecting and inspecting DOM elements, displaying data in readable format, stopping and starting the profiler, and monitoring DOM events.  
+The Console Utilities API contains a collection of convenience commands for performing common tasks:  selecting and inspecting DOM elements, displaying data in readable format, stopping and starting the profiler, and monitoring DOM events.  
 
 > [!WARNING]
-> The following methods only work in the Microsoft Edge DevTools Console.  The methods do not work if you try to send a request from your scripts.  
+> The following commands only work in the Microsoft Edge DevTools Console.  The commands do not work if you try to send a request from your scripts.  
 
 Looking for `console.log()`, `console.error()`, and the rest of the `console.*` methods?  See [Console API Reference][DevToolsConsoleApi].  
 
@@ -57,8 +57,8 @@ In [Figure 2](#figure-2), the evaluated expression initially contains an array o
 Evaluating `$_.length` to find the length of the array, the value stored in `$_` changes to become the latest evaluated expression, `4`.  
 
 > ##### Figure 2  
-> `$_` changes when new methods are evaluated  
-> ![$_ changes when new methods are evaluated][ImageChangedRecentExpression]  
+> `$_` changes when new commands are evaluated  
+> ![$_ changes when new commands are evaluated][ImageChangedRecentExpression]  
 
 ## Recent DOM  
 
@@ -67,7 +67,7 @@ $0
 ```  
 
 Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  
-The `$0`, `$1`, `$2`, `$3`, and `$4` methods work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Profiles** panel.  
+The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Profiles** panel.  
 
 ```javascript
 $1
@@ -197,7 +197,7 @@ $x("//p[a]")
 > Using a more complicated XPath selector  
 > ![Using a more complicated XPath selector][ImageArrayXpathChild]  
 
-Similar to the other selector methods, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or Node from which to search for elements.  
+Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or Node from which to search for elements.  
 
 > ##### Figure 12  
 > Using an XPath selector with `startNode`  
@@ -349,8 +349,8 @@ values(player1)
 ```  
 
 > ##### Figure 19  
-> The `keys()` and `values()` methods  
-> ![The keys() and values() methods][ImageConsoleKeysValues]  
+> The `keys()` and `values()` commands  
+> ![The keys() and values() commands][ImageConsoleKeysValues]  
 
 ## monitor  
 
@@ -361,7 +361,7 @@ monitor(method)
 Logs a message to the console that indicates the method name along with the arguments that are passed to the method when it was called.  
 
 ```javascript
-method sum(x, y) {
+function sum(x, y) {
     return x + y;
 }
 monitor(sum);
@@ -561,7 +561,7 @@ values(object);
 <!-- image links -->  
 
 [ImageRecentExpression]: images/console-arithmatic.msft.png "Figure 1: $_ is the most recently evaluated expression"  
-[ImageChangedRecentExpression]: images/console-array-length.msft.png "Figure 2: $_ changes when new methods are evaluated"  
+[ImageChangedRecentExpression]: images/console-array-length.msft.png "Figure 2: $_ changes when new commands are evaluated"  
 [ImageElement0]: images/console-image-highlighted-$0.msft.png "Figure 3: The $0"  
 [ImageElement1]: images/console-image-highlighted-$1.msft.png "Figure 4: The $1"  
 [ImageElementImg]: images/console-element-selector-image.msft.png "Figure 5: The $('img')"  
@@ -577,8 +577,8 @@ values(object);
 [ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
 [ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners()"  
 [ImageMultipleListeners]: images/elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 17: Multiple listeners"  
-[ImageListenerExpanded]: images/elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 18: Expanded view of listener object"  
-[ImageConsoleKeysValues]: images/console-keys-values.msft.png "Figure 19: The keys() and values() methods"  
+[ImageListenersExpanded]: images/elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 18: Expanded view of listener object"  
+[ImageConsoleKeysValues]: images/console-keys-values.msft.png "Figure 19: The keys() and values() commands"  
 [ImageConsoleMonitorSum]: images/console-function-monitor-sum.msft.png "Figure 20: The monitor() method"  
 [ImageMonitorResize]: images/console-monitor-events-resize-window.msft.png "Figure 21: Monitoring window resize events"  
 [ImageMonitorKey]: images/console-monitor-events-type-t-y.msft.png "Figure 22: Monitoring key events"  
