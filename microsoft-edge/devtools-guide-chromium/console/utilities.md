@@ -38,7 +38,7 @@ Looking for `console.log()`, `console.error()`, and the rest of the `console.*` 
 
 ## Recent  
 
-```javascript
+```console
 $_
 ```  
 
@@ -62,26 +62,26 @@ Evaluating `$_.length` to find the length of the array, the value stored in `$_`
 
 ## Recent DOM  
 
-```javascript
+```console
 $0
 ```  
 
 Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  
 The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Profiles** panel.  
 
-```javascript
+```console
 $1
 ```  
 
-```javascript
+```console
 $2
 ```  
 
-```javascript
+```console
 $3
 ```  
 
-```javascript
+```console
 $4
 ```  
 
@@ -99,7 +99,7 @@ In [Figure 4](#figure-4), the image shows a different element selected in the sa
 
 ## Query Selector  
 
-```javascript
+```console
 $(selector, [startNode])
 ```  
 
@@ -132,7 +132,7 @@ In [Figure 7](#figure-7), a reference to the first element after the currently s
 
 ## Query Selector All  
 
-```javascript
+```console
 $$(selector, [startNode])
 ```  
 
@@ -140,7 +140,7 @@ Returns an array of elements that match the specified CSS selector.  This method
 
 In [Figure 8](#figure-8), use `$$()` to create an array of all `<img>` elements in the current document and displays the value of the `src` property of each element.  
 
-```javascript
+```console
 var images = $$('img');
 for (each in images) {
     console.log(images[each].src);
@@ -155,7 +155,7 @@ This method also supports a second parameter, startNode, that specifies an eleme
 
 In [Figure 9](#figure-9), a modified version of [Figure 8](#figure-8) uses `$$()` to create an array of all `<img>` elements that appear in the current document after the selected Node.  
 
-```javascript
+```console
 var images = $$('img', document.querySelector('.devsite-header-background'));
 for (each in images) {
    console.log(images[each].src);
@@ -171,7 +171,7 @@ for (each in images) {
 
 ## XPath  
 
-```javascript
+```console
 $x(path, [startNode])
 ```  
 
@@ -179,7 +179,7 @@ Returns an array of DOM elements that match the specified XPath expression.
 
 In [Figure 10](#figure-10), all of the `<p>` elements on the page are returned.  
 
-```javascript
+```console
 $x("//p")
 ```  
 
@@ -189,7 +189,7 @@ $x("//p")
 
 In [Figure 11](#figure-11), all of the `<p>` elements that contain `<a>` elements are returned.  
 
-```javascript
+```console
 $x("//p[a]")
 ```  
 
@@ -205,37 +205,37 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 ## clear  
 
-```javascript
+```console
 clear()
 ```  
 
 Clears the console of the history.  
 
-```javascript
+```console
 clear()
 ```  
 
 ## copy  
 
-```javascript
+```console
 copy(object)
 ```  
 
 The `copy(object)` method copies a string representation of the specified object to the clipboard.  
 
-```javascript
+```console
 copy($0)
 ```  
 
 ## debug  
 
-```javascript
+```console
 debug(method)
 ```  
 
 When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** panel allowing you to step through the code and debug it.  
 
-```javascript
+```console
 debug("debug");
 ```  
 
@@ -249,7 +249,7 @@ For more information on breakpoints, see [Pause Your Code With Breakpoints][DevT
 
 ## dir  
 
-```javascript
+```console
 dir(object)
 ```  
 
@@ -257,7 +257,7 @@ Displays an object-style listing all of the properties for the specified object.
 
 In [Figure 14](#figure-14), the difference between evaluating `document.head` directly in the method line and using `console.dir()` to display the same element is indicated.  
 
-```javascript
+```console
 document.head;
 dir(document.head);
 ```  
@@ -270,7 +270,7 @@ For more information, see the [`console.dir()`][DevToolsConsoleApiConsoleDirObje
 
 ## dirxml  
 
-```javascript
+```console
 dirxml(object)
 ```  
 
@@ -278,7 +278,7 @@ Prints an XML representation of the specified object, as seen in the **Elements*
 
 ## inspect  
 
-```javascript
+```console
 inspect(object/method)
 ```  
 
@@ -286,7 +286,7 @@ Opens and selects the specified element or object in the appropriate panel:  eit
 
 In [Figure 15](#figure-15), the `document.body` opens in the **Elements** panel.  
 
-```javascript
+```console
 inspect(document.body);
 ```  
 
@@ -298,13 +298,13 @@ When passing a method to inspect, the method opens the document up in the **Sour
 
 ## getEventListeners  
 
-```javascript
+```console
 getEventListeners(object)
 ```  
 
 Returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  In [Figure 16](#figure-16), all of the event listeners registered on the document object are listed.  
 
-```javascript
+```console
 getEventListeners(document);
 ```  
 
@@ -326,7 +326,7 @@ You may further expand each of the following objects to explore the properties.
 
 ## keys  
 
-```javascript
+```console
 keys(object)
 ```  
 
@@ -334,17 +334,17 @@ Returns an array containing the names of the properties belonging to the specifi
 
 For example, suppose your application defined the following object.  
 
-```javascript
+```console
 var player1 = { "name":  "Ted", "level": 42 }
 ```  
 
 In [Figure 19](#figure-19), the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
 
-```javascript
+```console
 keys(player1)
 ```  
 
-```javascript
+```console
 values(player1)
 ```  
 
@@ -354,13 +354,13 @@ values(player1)
 
 ## monitor  
 
-```javascript
+```console
 monitor(method)
 ```  
 
 Logs a message to the console that indicates the method name along with the arguments that are passed to the method when it was called.  
 
-```javascript
+```console
 function sum(x, y) {
     return x + y;
 }
@@ -375,7 +375,7 @@ Use `unmonitor(method)` to cease monitoring.
 
 ## monitorEvents  
 
-```javascript
+```console
 monitorEvents(object[, events])
 ```  
 
@@ -383,7 +383,7 @@ When one of the specified events occurs on the specified object, the event objec
 
 The following monitors all resize events on the window object.  
 
-```javascript
+```console
 monitorEvents(window, "resize");
 ```  
 
@@ -393,7 +393,7 @@ monitorEvents(window, "resize");
 
 The following defines an array to monitor both `resize` and `scroll` events on the window object.  
 
-```javascript
+```console
 monitorEvents(window, ["resize", "scroll"]);
 ```  
 
@@ -408,7 +408,7 @@ You may also specify one of the available types of events, strings that map to p
 
 In [Figure 22](#figure-22), the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** panel.  
 
-```javascript
+```console
 monitorEvents($0, "key");
 ```  
 
@@ -420,7 +420,7 @@ In [Figure 22](#figure-22) the sample output after typing a character in the tex
 
 ## profile  
 
-```javascript
+```console
 profile([name])
 ```  
 
@@ -428,7 +428,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
 
 1.  Run the `profile()` method to start profiling.  
     
-    ```javascript
+    ```console
     profile("My profile")
     ```  
     
@@ -436,7 +436,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
 
 Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
 
-```javascript
+```console
 profile('A');
 profile('B');
 profileEnd('A');
@@ -448,7 +448,7 @@ profileEnd('B');
 
 ## profileEnd  
 
-```javascript
+```console
 profileEnd([name])
 ```  
 
@@ -457,13 +457,13 @@ Completes a JavaScript CPU profiling session and displays the results in the **P
 1.  Run the [profile()](#profile) method to start profiling.  
 1.  Run the `profileEnd()` method to stop profiling and display the results in the **Profiles** panel.  
     
-    ```javascript
+    ```console
     profileEnd("My profile")
     ```  
 
 Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
 
-```javascript
+```console
 profile('A');
 profile('B');
 profileEnd('A');
@@ -481,16 +481,22 @@ Result in the **Profiles** panel.
 
 ## table  
 
-```javascript
+```console
 table(data[, columns])
 ```  
 
 Logs object data with table formatting based upon the data object in with optional column headings.  In [Figure 24](#figure-24), a list of names using a table in the console is displayed.  
 
-```javascript
+```console
 var names = {
-    0:  { firstName:  "John", lastName:  "Smith" },
-    1:  { firstName:  "Jane", lastName:  "Doe" }
+    0:  {
+        firstName:  "John",
+        lastName:  "Smith"
+    },
+    1:  {
+        firstName:  "Jane",
+        lastName:  "Doe"
+    }
 };
 table(names);
 ```  
@@ -501,56 +507,56 @@ table(names);
 
 ## undebug  
 
-```javascript
+```console
 undebug(method)
 ```  
 
 Stops the debugging of the specified method so that when the method is called, the debugger is no longer invoked.  
 
-```javascript
+```console
 undebug(getData);
 ```  
 
 ## unmonitor  
 
-```javascript
+```console
 unmonitor(method)
 ```  
 
 Stops the monitoring of the specified method.  This is used in concert with the [monitor()](#monitor) method.  
 
-```javascript
+```console
 unmonitor(getData);
 ```  
 
 ## unmonitorEvents  
 
-```javascript
+```console
 unmonitorEvents(object[, events])
 ```  
 
 Stops monitoring events for the specified object and events.  For example, the following stops all event monitoring on the window object.  
 
-```javascript
+```console
 unmonitorEvents(window);
 ```  
 
 You may also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).  
 
-```javascript
+```console
 monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```  
 
 ## values  
 
-```javascript
+```console
 values(object)
 ```  
 
 Returns an array containing the values of all properties belonging to the specified object.  
 
-```javascript
+```console
 values(object);
 ```  
 
