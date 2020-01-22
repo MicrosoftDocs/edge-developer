@@ -2,7 +2,7 @@
 title:  Console Utilities API Reference
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date: 11/19/2019
+ms.date: 01/22/2020
 ms.topic:  article
 ms.prod:  microsoft-edge
 keywords:  microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords:  microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -25,7 +25,7 @@ keywords:  microsoft edge, web development, f12 tools, devtools
 
 
 
-# Console Utilities API Reference 
+# Console Utilities API Reference   
 
 
 
@@ -36,9 +36,15 @@ The Console Utilities API contains a collection of convenience methods for perfo
 
 Looking for `console.log()`, `console.error()`, and the rest of the `console.*` methods?  See [Console API Reference][DevToolsConsoleApi].  
 
-## $_   
+## Recent  
 
-The `$_` method returns the value of the most recently evaluated expression.  
+```javascript
+$_
+```  
+
+**Log level**: `Error`  
+
+Returns the value of the most recently evaluated expression.  
 
 In [Figure 1](#figure-1), a simple expression \(`2 + 2`\) is evaluated.  
 The `$_` property is then evaluated, which contains the same value.  
@@ -54,9 +60,30 @@ Evaluating `$_.length` to find the length of the array, the value stored in `$_`
 > `$_` changes when new methods are evaluated  
 > ![$_ changes when new methods are evaluated][ImageChangedRecentExpression]  
 
-## $0 - $4   
+## Recent DOM  
 
-The `$0`, `$1`, `$2`, `$3` and `$4` methods work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Profiles** panel.  `$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.  
+```javascript
+$0
+```  
+
+Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  
+The `$0`, `$1`, `$2`, `$3`, and `$4` methods work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Profiles** panel.  
+
+```javascript
+$1
+```  
+
+```javascript
+$2
+```  
+
+```javascript
+$3
+```  
+
+```javascript
+$4
+```  
 
 In [Figure 3](#figure-3), an `img` element is selected in the **Elements** panel.  In the **Console** drawer, `$0` has been evaluated and displays the same element.  
 
@@ -70,9 +97,13 @@ In [Figure 4](#figure-4), the image shows a different element selected in the sa
 > The `$1`  
 > ![The $1][ImageElement1]  
 
-## $(selector, [startNode])   
+## Query Selector  
 
-The `$(selector)` method returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()][MDNDocumentQuerySelector] method.  
+```javascript
+$(selector, [startNode])
+```  
+
+Returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()][MDNDocumentQuerySelector] method.  
 
 In [Figure 5](#figure-5), a reference to the first `<img>` element in the document is returned.  
 
@@ -99,13 +130,17 @@ In [Figure 7](#figure-7), a reference to the first element after the currently s
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, this functionality is overwritten, and `$` corresponds to the implementation from that library.  
 
-## $$(selector, [startNode])   
+## Query Selector All  
 
-The `$$(selector)` method returns an array of elements that match the given CSS selector.  This method is equivalent to calling the [document.querySelectorAll()][MDNDocumentQuerySelectorAll] method.  
+```javascript
+$$(selector, [startNode])
+```  
+
+Returns an array of elements that match the specified CSS selector.  This method is equivalent to calling the [document.querySelectorAll()][MDNDocumentQuerySelectorAll] method.  
 
 In [Figure 8](#figure-8), use `$$()` to create an array of all `<img>` elements in the current document and displays the value of the `src` property of each element.  
 
-```console
+```javascript
 var images = $$('img');
 for (each in images) {
     console.log(images[each].src);
@@ -120,7 +155,7 @@ This method also supports a second parameter, startNode, that specifies an eleme
 
 In [Figure 9](#figure-9), a modified version of [Figure 8](#figure-8) uses `$$()` to create an array of all `<img>` elements that appear in the current document after the selected Node.  
 
-```console
+```javascript
 var images = $$('img', document.querySelector('.devsite-header-background'));
 for (each in images) {
    console.log(images[each].src);
@@ -132,15 +167,19 @@ for (each in images) {
 > ![Using $$() to select all images appearing after the select div element in the document and displaying the sources][ImageArrayElementImgNodeSource]  
 
 > [!NOTE]
-> Press `Shift` + `Enter` in the console to start a new line without running the script.  
+> Press `Shift`+`Enter` in the console to start a new line without running the script.  
 
-##  $x(path, [startNode])   
+## XPath  
 
-The `$x(path)` method returns an array of DOM elements that match the given XPath expression.  
+```javascript
+$x(path, [startNode])
+```  
+
+Returns an array of DOM elements that match the specified XPath expression.  
 
 In [Figure 10](#figure-10), all of the `<p>` elements on the page are returned.  
 
-```console
+```javascript
 $x("//p")
 ```  
 
@@ -150,7 +189,7 @@ $x("//p")
 
 In [Figure 11](#figure-11), all of the `<p>` elements that contain `<a>` elements are returned.  
 
-```console
+```javascript
 $x("//p[a]")
 ```  
 
@@ -164,28 +203,40 @@ Similar to the other selector methods, `$x(path)` has an optional second paramet
 > Using an XPath selector with `startNode`  
 > ![Using an XPath selector with startNode][ImageArrayXpathNode]  
 
-## clear()   
+## Clear  
 
-The `clear()` method clears the console of the history.  
-
-```console
-clear();
+```javascript
+clear()
 ```  
 
-## copy(object)   
+Clears the console of the history.  
+
+```javascript
+clear()
+```  
+
+## Copy  
+
+```javascript
+copy(object)
+```  
 
 The `copy(object)` method copies a string representation of the specified object to the clipboard.  
 
-```console
-copy($0);
+```javascript
+copy($0)
 ```  
 
-<!--todo: debug is does not appear to work
-## debug(method)   
+<!--todo: debug() does not appear to work
+## Debug  
+
+```javascript
+debug(method)
+```  
 
 When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** panel allowing you to step through the code and debug it.  
 
-```console
+```javascript
 debug(getData);
 ```  
 
@@ -198,14 +249,19 @@ Use `undebug(method)` to stop breaking on the method, or use the UI to disable a
 For more information on breakpoints, see [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
 -->  
 
-<!--todo: dir is does not appear to work
-## dir(object)   
+<!--todo: dir() does not appear to work
 
-The `dir(object)` method displays an object-style listing all of the properties for the specified object.  This method is an alias for the Console API `console.console.dir()` method.  
+## Dir  
+
+```javascript
+dir(object)
+```  
+
+Displays an object-style listing all of the properties for the specified object.  This method is an alias for the Console API `console.console.dir()` method.  
 
 In [Figure 14](#figure-14), the difference between evaluating `document.body` directly in the method line and using `console.dir()` to display the same element ius indicated.  
 
-```console
+```javascript
 document.body;
 dir(document.body);
 ```  
@@ -217,19 +273,28 @@ dir(document.body);
 For more information, see the [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entry in the Console API.  
 -->  
 
-<!--todo: dirxml is does not appear to work
-## dirxml(object)   
+<!--todo: dirxml() does not appear to work
 
-The `dirxml(object)` method prints an XML representation of the specified object, as seen in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsole] method.  
+## Dir Xml  
+
+```javascript
+dirxml(object)
+```  
+
+Prints an XML representation of the specified object, as seen in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsole] method.  
 -->  
 
-## inspect(object/method)   
+## Inspect  
 
-The `inspect(object/method)` method opens and selects the specified element or object in the appropriate panel:  either the Elements panel for DOM elements or the Profiles panel for JavaScript heap objects.  
+```javascript
+inspect(object/method)
+```  
+
+Opens and selects the specified element or object in the appropriate panel:  either the Elements panel for DOM elements or the Profiles panel for JavaScript heap objects.  
 
 In [Figure 15](#figure-15), the `document.body` opens in the **Elements** panel.  
 
-```console
+```javascript
 inspect(document.body);
 ```  
 
@@ -239,11 +304,15 @@ inspect(document.body);
 
 When passing a method to inspect, the method opens the document up in the **Sources** panel for you to inspect.  
 
-## getEventListeners(object)   
+## Get Event Listeners  
 
-The `getEventListeners(object)` method returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  In [Figure 16](#figure-16), all of the event listeners registered on the document object are listed.  
+```javascript
+getEventListeners(object)
+```  
 
-```console
+Returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  In [Figure 16](#figure-16), all of the event listeners registered on the document object are listed.  
+
+```javascript
 getEventListeners(document);
 ```  
 
@@ -263,27 +332,43 @@ You may further expand each of the following objects to explore the properties.
 > Expanded view of listener object  
 > ![Expanded view of listener object][ImageListenersExpanded]  
 
-## keys(object)   
+## Keys  
 
-The `keys(object)` method returns an array containing the names of the properties belonging to the specified object.  To get the associated values of the same properties, use `values()`.  
+```javascript
+keys(object)
+```  
+
+Returns an array containing the names of the properties belonging to the specified object.  To get the associated values of the same properties, use `values()`.  
 
 For example, suppose your application defined the following object.  
 
-```console
-var player1 = { "name":  "Ted", "level":  42 }
+```javascript
+var player1 = { "name":  "Ted", "level": 42 }
 ```  
 
 In [Figure 19](#figure-19), the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
+
+```javascript
+keys(player1)
+```  
+
+```javascript
+values(player1)
+```  
 
 > ##### Figure 19  
 > The `keys()` and `values()` methods  
 > ![The keys() and values() methods][ImageConsoleKeysValues]  
 
-## monitor(method)   
+## Monitor  
 
-The 'monitor()' method logs a message to the console that indicates the method name along with the arguments that are passed to the method when it was called.  
+```javascript
+monitor(method)
+```  
 
-```console
+Logs a message to the console that indicates the method name along with the arguments that are passed to the method when it was called.  
+
+```javascript
 method sum(x, y) {
     return x + y;
 }
@@ -296,13 +381,17 @@ monitor(sum);
 
 Use `unmonitor(method)` to cease monitoring.  
 
-## monitorEvents(object[, events])   
+## Monitor Events  
 
-When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events "types" mapped to a predefined collection of events.  See [Figure 21](#figure-21).  
+```javascript
+monitorEvents(object[, events])
+```  
+
+When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  See [Figure 21](#figure-21).  
 
 The following monitors all resize events on the window object.  
 
-```console
+```javascript
 monitorEvents(window, "resize");
 ```  
 
@@ -312,11 +401,11 @@ monitorEvents(window, "resize");
 
 The following defines an array to monitor both `resize` and `scroll` events on the window object.  
 
-```console
-monitorEvents(window, ["resize", "scroll"])
+```javascript
+monitorEvents(window, ["resize", "scroll"]);
 ```  
 
-You may also specify one of the available event "types", strings that map to predefined sets of events.  The table below displays the available event types and the associated event mappings.  
+You may also specify one of the available types of events, strings that map to predefined sets of events.  The table below displays the available event types and the associated event mappings.  
 
 | Event type | Corresponding mapped events |  
 |:--- |:--- |  
@@ -327,7 +416,7 @@ You may also specify one of the available event "types", strings that map to pre
 
 In [Figure 22](#figure-22), the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** panel.  
 
-```console
+```javascript
 monitorEvents($0, "key");
 ```  
 
@@ -337,25 +426,52 @@ In [Figure 22](#figure-22) the sample output after typing a character in the tex
 > Monitoring key events  
 > ![Monitoring key events][ImageMonitorKey]  
 
-## profile([name]) and profileEnd([name])  
+## Profile  
 
-The `profile()` method starts a JavaScript CPU profiling session with an optional name.  `profileEnd()` completes the profile and displays the results in the **Profile** panel.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
-
-To start profiling.  
-
-```console
-profile("My profile")
+```javascript
+profile([name])
 ```  
 
-To stop profiling and display the results in the **Profiles** panel.  
+Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profile-end) method completes the profile and displays the results in the **Profile** panel.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
 
-```console
-profileEnd("My profile")
-```  
+1.  Run the `profile()` method to start profiling.  
+    
+    ```javascript
+    profile("My profile")
+    ```  
+    
+1.  Run the [profileEnd()](#profile-end) method to stop profiling and display the results in the **Profiles** panel.  
 
 Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
 
-```console
+```javascript
+profile('A');
+profile('B');
+profileEnd('A');
+profileEnd('B');
+```  
+
+> [!NOTE]
+> Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
+
+## Profile End  
+
+```javascript
+profileEnd([name])
+```  
+
+Completes a JavaScript CPU profiling session and displays the results in the **Profile** panel.  You must be running the [profile()](#profile) method.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
+
+1.  Run the [profile()](#profile) method to start profiling.  
+1.  Run the `profileEnd()` method to stop profiling and display the results in the **Profiles** panel.  
+    
+    ```javascript
+    profileEnd("My profile")
+    ```  
+
+Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
+
+```javascript
 profile('A');
 profile('B');
 profileEnd('A');
@@ -371,11 +487,15 @@ Result in the **Profiles** panel.
 > [!NOTE]
 > Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
 
-## table(data[, columns])   
+## Table  
 
-The `table()` method logs object data with table formatting based upon the data object in with optional column headings.  In [Figure 24](#figure-24), a list of names using a table in the console is displayed.  
+```javascript
+table(data[, columns])
+```  
 
-```console
+Logs object data with table formatting based upon the data object in with optional column headings.  In [Figure 24](#figure-24), a list of names using a table in the console is displayed.  
+
+```javascript
 var names = {
     0:  { firstName:  "John", lastName:  "Smith" },
     1:  { firstName:  "Jane", lastName:  "Doe" }
@@ -387,46 +507,62 @@ table(names);
 > The `table()` method  
 > ![The table() method][ImageConsoleTable]  
 
-## undebug(method)   
+## Undebug  
 
-The `undebug(method)` method stops the debugging of the specified method so that when the method is called, the debugger is no longer invoked.  
+```javascript
+undebug(method)
+```  
 
-```console
+Stops the debugging of the specified method so that when the method is called, the debugger is no longer invoked.  
+
+```javascript
 undebug(getData);
 ```  
 
-## unmonitor(method)   
+## Unmonitor  
 
-The `unmonitor(method)` method stops the monitoring of the specified method.  This is used in concert with `monitor(fn)`.  
+```javascript
+unmonitor(method)
+```  
 
-```console
+Stops the monitoring of the specified method.  This is used in concert with the [monitor()](#monitor) method.  
+
+```javascript
 unmonitor(getData);
 ```  
 
-## unmonitorEvents(object[, events])   
+## Unmonitor Events  
 
-The `unmonitorEvents(object[, events])` method stops monitoring events for the specified object and events.  For example, the following stops all event monitoring on the window object.  
+```javascript
+unmonitorEvents(object[, events])
+```  
 
-```console
+Stops monitoring events for the specified object and events.  For example, the following stops all event monitoring on the window object.  
+
+```javascript
 unmonitorEvents(window);
 ```  
 
 You may also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).  
 
-```console
+```javascript
 monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```  
 
-## values(object)   
+## Values  
 
-The `values(object)` method returns an array containing the values of all properties belonging to the specified object.  
+```javascript
+values(object)
+```  
 
-```console
+Returns an array containing the values of all properties belonging to the specified object.  
+
+```javascript
 values(object);
 ```  
 
- 
+<!--   -->  
 
 
 
@@ -447,13 +583,13 @@ values(object);
 <!--[ImageDebugMethod]: images/debug.msft.png "Figure 13: Breaking inside a method with debug()"  -->  
 <!--[ImageLogObject]: images/dir.msft.png "Figure 14: Logging document.body with and without dir() method"  -->  
 [ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
-[ImageGetListeners]: images/get-event-listeners.msft.png "Figure 16: Output of using getEventListeners()"  
-[ImageMultipleListeners]: images/scrolling-list.msft.png "Figure 17: Multiple listeners"  
-[ImageListenerExpanded]: images/scrolling-list-expanded.msft.png "Figure 18: Expanded view of listener object"  
+[ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners()"  
+[ImageMultipleListeners]: images/elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 17: Multiple listeners"  
+[ImageListenerExpanded]: images/elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 18: Expanded view of listener object"  
 [ImageConsoleKeysValues]: images/console-keys-values.msft.png "Figure 19: The keys() and values() methods"  
 [ImageConsoleMonitorSum]: images/console-function-monitor-sum.msft.png "Figure 20: The monitor() method"  
-[ImageMonitorResize]: images/monitor-events.msft.png "Figure 21: Monitoring window resize events"  
-[ImageMonitorKey]: images/monitor-key.msft.png "Figure 22: Monitoring key events"  
+[ImageMonitorResize]: images/console-monitor-events-resize-window.msft.png "Figure 21: Monitoring window resize events"  
+[ImageMonitorKey]: images/console-monitor-events-type-t-y.msft.png "Figure 22: Monitoring key events"  
 [ImageGroupedProfiles]: images/memory-multiple-cpu-profiles.msft.png "Figure 23: Grouped profiles"  
 [ImageConsoleTable]: images/console-table-display.msft.png "Figure 24: The table() method"  
 
@@ -470,12 +606,12 @@ values(object);
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
