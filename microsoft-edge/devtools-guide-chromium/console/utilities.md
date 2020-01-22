@@ -589,7 +589,7 @@ values(object);
 
 [DevToolsConsoleApi]: api.md "Console API Reference"  
 [DevToolsConsoleApiConsoleDirObject]: api.md#dir "dir - Console API Reference"  
-[DevtoolsConsoleReferenceLevel]: reference.md#filter-by-log-level "Filter by log level - Console Reference"  
+[DevtoolsConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
 [DevToolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
 [DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-execution.md "Speed Up JavaScript Runtime"  
 
