@@ -27,6 +27,7 @@
 ### What's new
 #### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
+### [3D View](devtools-guide-chromium/3D-view.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
