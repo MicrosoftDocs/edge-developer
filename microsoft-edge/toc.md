@@ -27,6 +27,7 @@
 ### What's new
 #### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
+### [3D View](devtools-guide-chromium/3D-view.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
@@ -39,6 +40,9 @@
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 #### [Log Messages](devtools-guide-chromium/console/log.md)
+#### [Run JavaScript](devtools-guide-chromium/console/javascript.md)
+#### [Reference](devtools-guide-chromium/console/reference.md)
+#### [API Reference](devtools-guide-chromium/console/api.md)
 #### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
@@ -55,9 +59,14 @@
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
+#### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
+### DOM
+#### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
+#### [Pause Your Code With Breakpoints](devtools-guide-chromium/javascript/breakpoints.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Map Preprocessed Code to Source Code](devtools-guide-chromium/javascript/source-maps.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 #### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
@@ -174,7 +183,8 @@
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
 ## [Privacy Whitepaper](privacy-whitepaper.md)
-## [Progressive Web Apps](progressive-web-apps.md)
+## [Progressive Web Apps (Chromium)](progressive-web-apps-chromium/index.md)
+## [Progressive Web Apps (EdgeHTML)](progressive-web-apps/index.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 #### [PWAs for Xbox](progressive-web-apps/xbox-considerations.md)

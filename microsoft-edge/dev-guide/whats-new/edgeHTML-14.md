@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML 14.
 title: What's New in EdgeHTML 14
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 5/30/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -42,7 +42,7 @@ EdgeHTML 14 brings a number of new and experimental features to Chakra, the Java
 For further details, check out [*Previewing ES6 Modules and more from ES2015, ES2016 and beyond*](https://blogs.windows.com/msedgedev/2016/05/17/es6-modules-and-beyond/) and [*Asynchronous code gets easier with ES2016 Async Function support in Chakra and Microsoft Edge*](https://blogs.windows.com/msedgedev/2015/09/30/asynchronous-code-gets-easier-with-es2016-async-function-support-in-chakra-and-microsoft-edge/).
 
 ### Web Authentication API (FIDO 2.0 Web API)
-The Web Authentication (formerly FIDO 2.0 ) API in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge (ms- prefixed) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future. Read more about Web Authentication: [Web authentication and Windows Hello](https://docs.microsoft.com/microsoft-edge/dev-guide/device/web-authentication).
+The Web Authentication (formerly FIDO 2.0 ) API in Microsoft Edge enables web applications to use [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge (ms- prefixed) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future. Read more about Web Authentication: [Web authentication and Windows Hello](https://docs.microsoft.com/microsoft-edge/dev-guide/device/web-authentication).
 
 ### Web Notifications
 Web Notifications allow sites to display notifications to alert users outside the context of the webpage and the browser, keeping users informed of new messages or alerts and allowing sites to improve user engagement. Web Notifications in Microsoft Edge are fully integrated with the notification platform and Action Center in Windows 10, providing a consistent experience with other apps across the system and easy controls over permissions and Quiet Hours. Check out [Web Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge/) for more information. 
