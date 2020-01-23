@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 Use the **3D View** to debug your web application by navigating through the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) or the [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) stacking context. With it you can: 
 
 - [Explore the web page translated into a 3D perspevtive](#3d-dom)
-- [Debugging based on z-index stacking context](#z-index)
+- [Debug based on z-index stacking context](#z-index)
 - [Clear some of the clutter in the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration)
 - [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type)
 
@@ -91,6 +91,4 @@ You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rai
 
 ## Next steps
 
-We are working on the UI and adding more functionality to the 3D View based on asks from users like you. Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the `:)` icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
-
-![Give feedback on Microsoft Edge](./media/devtools-feedback2.png)
+We are working on the UI and adding more functionality to the 3D View based on asks from users like you. Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply click the feedback icon in the DevTools or press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on Mac) and enter any feedback or feature requests you have for the DevTools.
