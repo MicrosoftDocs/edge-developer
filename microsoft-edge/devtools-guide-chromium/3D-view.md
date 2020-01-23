@@ -87,7 +87,7 @@ You'll notice a slider in the control pane titled **Nesting level** with a numbe
 
 ### DOM color type
 
-You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rainbow*, and *Use background color* options, there is *Use screen texture*. The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements. This is still a work in progress, but feel free to send us feedback with the smiley to show us websites that have a harder time rendering their screen texture in the 3D View. 
+You'll notice that, in addition to the *Purple to White*, *Blue to Yellow*, *Rainbow*, and *Use background color* options, there is *Use screen texture*. The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements. This is still a work in progress, as some websites have a harder time rendering their screen texture in the 3D View. 
 
 ## Next steps
 
