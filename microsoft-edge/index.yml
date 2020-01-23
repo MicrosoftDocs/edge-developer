@@ -54,7 +54,7 @@ productDirectory:
       links:
         - url: /configmgr/apps/deploy-use/deploy-edge
           text: Deploy to Windows
-        - url: /intune/apps/apps-edge-macos/index
+        - url: /intune/apps/apps-edge-macos
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
