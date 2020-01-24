@@ -337,7 +337,7 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
 
     ![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
 
-4. Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder everytime the solution is rebuilt.
+4. Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder every time the solution is rebuilt.
 
     ```xml
     <Target Name="AfterBuild">
