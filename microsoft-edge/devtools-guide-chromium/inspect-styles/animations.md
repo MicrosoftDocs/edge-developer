@@ -80,10 +80,10 @@ The Animation Inspector is grouped into four main sections \(or panes\).  This g
 
 | Pane | Description |  
 |:--- |:--- |  
-| **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
-| **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
-| **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
-| **Details** | Inspect and modify the currently selected Animation Group. |  
+| 1 **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
+| 2 **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
+| 3 **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
+| 4 **Details** | Inspect and modify the currently selected Animation Group. |  
 
 > ##### Figure 4  
 > Annotation Animation Inspector  
@@ -91,13 +91,15 @@ The Animation Inspector is grouped into four main sections \(or panes\).  This g
 
 To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, you may assist the Animation Inspector detect the animation by reloading the page.  
 
-<!--<video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
+<!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
 
-![Looped Capture Animations][MovieCaptureAnimations]  
+<!--  import the video to ACOM using https://review.docs.microsoft.com/en-us/help/contribute/contribute-video-publish?branch=master  -->  
+
+<!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
 ## Inspect animations   
 
-Once you have captured an animation, there are a few ways to replay it:  
+After you capture an animation, there are a few ways to replay it:  
 
 *   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
 *   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** button \(![replay button][ImageReplayButtonIcon]\).  The animation is replayed in the viewport.  Click on the **animation speed** buttons \(![animation speed buttons][ImageAnimationSpeedButtonsIcon]\) to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
@@ -117,7 +119,7 @@ Hover over an animation to highlight it in the viewport.  Click on the animation
 > Hover over animation to highlight it in viewport  
 > ![Hover over animation to highlight it in viewport][ImageHoverOverAnimationHighlightViewport]  
 
-The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in the screenshot below, sections two and three represent iterations of section one.  
+The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in [Figure 7](#figure-7), sections two and three represent iterations of section one.  
 
 > ##### Figure 7  
 > Diagram of animation iterations  
@@ -137,7 +139,7 @@ There are three ways you are able to modify an animation with the Animation Insp
 *   Keyframe timings.  
 *   Start time delay.  
 
-For this section suppose that the screenshot below represents the original animation:  
+For this section suppose that [Figure 9](#figure-9) represents the original animation:  
 
 > ##### Figure 9  
 > Original animation before modification  
@@ -165,16 +167,12 @@ To add a delay to an animation, click and drag it anywhere except the circles.
 
 
 
-<!-- Animation links -->  
-
-[MovieCaptureAnimations]: animations/capture-animations.mp4 "Looped Capture Animations"  
-
 <!-- image links -->  
 
 [ImageAnimationSpeedButtonsIcon]: images/animation-speed-buttons-icon.msft.png  
 [ImageReplayButtonIcon]: images/replay-button-icon.msft.png  
 
-[ImageAnimationInspector]: images/.msft.png "Figure 1: Animation inspector"  
+[ImageAnimationInspector]: images/elements-styles-drawer-animations-completed.msft.png "Figure 1: Animation inspector"  
 [ImageAnimationsViaMainMenu]: images/elements-styles-more-tools-animations.msft.png "Figure 2: Animations via Main Menu"  
 [ImageEmptyAnimationInspector]: images/elements-styles-drawer-animations.msft.png "Figure 3: Empty Animation Inspector"  
 [ImageAnnotatedAnimationInspector]: images/elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotation Animation Inspector"  
