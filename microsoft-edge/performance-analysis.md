@@ -28,7 +28,7 @@ To get started with using the Windows Performance Toolkit to analyze your websit
 
 ![ADK Installation Options](./media/adk-installoptions.png)
 
-Here we'll cover how to record and analyze a perfomance trace. 
+Here we'll cover how to record and analyze a performance trace. 
 To learn more about what's included in the Windows Performance Toolkit, check out the full [WPT documentation](https://docs.microsoft.com/windows-hardware/test/wpt/index).
 
 ## Recording a trace
