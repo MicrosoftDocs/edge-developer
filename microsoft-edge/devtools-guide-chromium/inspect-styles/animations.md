@@ -2,7 +2,7 @@
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/12/2019
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -35,10 +35,10 @@ Inspect and modify animations with the Microsoft Edge DevTools Animation Inspect
 > Animation inspector  
 > ![animation inspector][ImageAnimationInspector]  
 
-### TL;DR   
+### Summary  
 
-*   Capture animations by opening the Animation Inspector.  It automatically detects animations and sorts them into groups.  
-*   Inspect animations by slowing them down, replaying them, or viewing the source code.  
+*   Capture animations by opening the Animation Inspector.  The Animation Inspector automatically detects animations and sorts animations into groups.  
+*   Inspect animations by slowing down each one, replaying each one, or viewing the source code.  
 *   Modify animations by changing the timing, delay, duration, or keyframe offsets.  
 
 ## Overview   
@@ -52,7 +52,7 @@ The Animation Inspector supports CSS animations, CSS transitions, and web animat
 
 ### What is an animation group?  
 
-An animation group is a group of animations that may be related to each one another.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations may be one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\) and groups them all side-by-side.  
+An animation group is a group of animations that may be related to each one another.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations may be one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\) and groups the animations side-by-side.  
 In other words, a set of animations all triggered in the same script block are grouped together, but if the animations are asynchronous then the animations are grouped separately.  
 
 ## Get started  
@@ -70,7 +70,7 @@ There are two ways to open the Animation Inspector:
         
 *   Open the Command Menu and type `Drawer: Show Animations`.  
 
-The Animation Inspector opens up as a tab next to the Console Drawer.  Since it is a Drawer tab, you may use it from any DevTools panel.  
+The Animation Inspector opens up as a tab next to the Console Drawer.  Since the Animation Inspector is a Drawer tab, you may use the Animation Inspector from any DevTools panel.  
 
 > ##### Figure 3  
 > Empty Animation Inspector  
@@ -95,41 +95,39 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 ![Looped Capture Animations][MovieCaptureAnimations]  
 
-[MovieCaptureAnimations]: animations/capture-animations.mp4 "Looped Capture Animations"  
-
 ## Inspect animations   
 
 Once you have captured an animation, there are a few ways to replay it:  
 
 *   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
-*   Select the Animation Group from the **Overview** pane \(so that it is displayed  in the **Details** pane\) and press the **replay** button \(![replay button][ImageReplayButtonIcon]\).  The animation is replayed in the viewport.  Click on the **animation speed** buttons \(![animation speed buttons][ImageAnimationSpeedButtonsIcon]\) to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
+*   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** button \(![replay button][ImageReplayButtonIcon]\).  The animation is replayed in the viewport.  Click on the **animation speed** buttons \(![animation speed buttons][ImageAnimationSpeedButtonsIcon]\) to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
 *   Click and drag the red vertical bar to scrub the viewport animation.  
 
 ### View animation details  
 
-Once you have captured an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation gets the own row.  
+After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.  
 
-> ##### Figure 4  
+> ##### Figure 5  
 > Animation group details  
-> ![Animation group details](images/animation-group-details.msft.png)  
+> ![Animation group details][ImageAnimationGroupDetails]  
 
 Hover over an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** panel.  
 
-> ##### Figure 5  
+> ##### Figure 6  
 > Hover over animation to highlight it in viewport  
-> ![Hover over animation to highlight it in viewport](images/highlight-animation.msft.png)  
+> ![Hover over animation to highlight it in viewport][ImageHoverOverAnimationHighlightViewport]  
 
 The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in the screenshot below, sections two and three represent iterations of section one.  
 
-> ##### Figure 6  
-> Diagram of animation iterations  
-> ![Diagram of animation iterations](images/animation-iterations.msft.png)  
-
-If two elements have the same animation applied to them, the Animation Inspector assigns them the same color.  The color itself is random and has no significance.  For example, in the screenshot below the two elements `div.eye.left::after` and `div.eye.right::after` have the same animation \(`eyes`\) applied to them, as do the `div.feet::before` and `div.feet::after` elements.  
-
 > ##### Figure 7  
+> Diagram of animation iterations  
+> ![Diagram of animation iterations][ImageDiagramAnimationIterations]  
+
+If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in [Figure 8](#figure-8) the two elements `div.eye.left::after` and `div.eye.right::after` have the same animation \(`eyes`\) applied, as do the `div.feet::before` and `div.feet::after` elements.  
+
+> ##### Figure 8  
 > Color-coded animations  
-> ![Color-coded animations](images/color-coded-animations.msft.png)  
+> ![Color-coded animations][ImageColorCodedAnimations]  
 
 ## Modify animations   
 
@@ -141,41 +139,53 @@ There are three ways you are able to modify an animation with the Animation Insp
 
 For this section suppose that the screenshot below represents the original animation:  
 
-> ##### Figure 8  
+> ##### Figure 9  
 > Original animation before modification  
-> ![original animation before modification](images/modify-original.msft.png)  
+> ![Original animation before modification][ImageOriginalAnimationBeforeModification]  
 
 To change the duration of an animation, click and drag the first or last circle.  
 
-> ##### Figure 9  
+> ##### Figure 10  
 > Modified duration  
-> ![Modified duration](images/modify-duration.msft.png)  
+> ![Modified duration][ImageModifiedDuration]  
 
 If the animation defines any keyframe rules, then these are represented as white inner circles.  Click and drag one of these to change the timing of the keyframe.  
 
-> ##### Figure 10  
+> ##### Figure 11  
 > Modified keyframe  
-> ![Modified keyframe](images/modify-keyframe.msft.png)  
+> ![Modified keyframe][ImageModifiedKeyframe]  
 
 To add a delay to an animation, click and drag it anywhere except the circles.  
 
-> ##### Figure 11  
+> ##### Figure 12  
 > Modified delay  
-> ![modified delay](images/modify-delay.msft.png)  
+> ![Modified delay][ImageModifiedDelay]  
 
- 
+<!--   -->  
 
 
+
+<!-- Animation links -->  
+
+[MovieCaptureAnimations]: animations/capture-animations.mp4 "Looped Capture Animations"  
 
 <!-- image links -->  
 
 [ImageAnimationSpeedButtonsIcon]: images/animation-speed-buttons-icon.msft.png  
 [ImageReplayButtonIcon]: images/replay-button-icon.msft.png  
 
-[ImageAnimationInspector]: images/animation-inspector.msft.png "Figure 1: Animation inspector"  
-[ImageAnimationsViaMainMenu]: images/animations-via-main-menu.msft.png "Figure 2: Animations via Main Menu"  
-[ImageEmptyAnimationInspector]: images/empty-ai.msft.png "Figure 3: Empty Animation Inspector"  
-[ImageAnnotatedAnimationInspector]: images/annotated-animation-inspector.msft.png "Figure 4: Annotation Animation Inspector"  
+[ImageAnimationInspector]: images/.msft.png "Figure 1: Animation inspector"  
+[ImageAnimationsViaMainMenu]: images/elements-styles-more-tools-animations.msft.png "Figure 2: Animations via Main Menu"  
+[ImageEmptyAnimationInspector]: images/elements-styles-drawer-animations.msft.png "Figure 3: Empty Animation Inspector"  
+[ImageAnnotatedAnimationInspector]: images/elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotation Animation Inspector"  
+[ImageAnimationGroupDetails]: images/elements-styles-drawer-animations-selected-completed.msft.png "Figure 5: Animation group details"  
+[ImageHoverOverAnimationHighlightViewport]: images/split-elements-styles-drawer-animations-selected-completed.msft.png "Figure 6: Hover over animation to highlight it in viewport"  
+[ImageDiagramAnimationIterations]: images/animation-iterations.msft.png "Figure 7: Diagram of animation iterations"  
+[ImageColorCodedAnimations]: images/color-coded-animations.msft.png "Figure 8: Color-coded animations"  
+[ImageOriginalAnimationBeforeModification]: images/modify-original.msft.png "Figure 9: Original animation before modification"  
+[ImageModifiedDuration]: images/modify-duration.msft.png "Figure 10: Modified duration"  
+[ImageModifiedKeyframe]: images/modify-keyframe.msft.png "Figure 11: Modified keyframe"  
+[ImageModifiedDelay]: images/modify-delay.msft.png "Figure 12: Modified delay"  
 
 <!-- links -->  
 
