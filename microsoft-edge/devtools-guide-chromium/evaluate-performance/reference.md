@@ -2,7 +2,7 @@
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/10/2020
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -33,9 +33,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.  
 
-<!--See [Get Started With Analyzing Runtime Performance][EvaluatePerformanceGettingStarted] for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  -->  
-
-<!--todo: add section when available -->  
+See [Get Started With Analyzing Runtime Performance][EvaluatePerformanceGettingStarted] for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## Record performance   
 
@@ -446,7 +444,7 @@ When analyzing a section like **Network** or **Main**, sometimes you need a more
 At the bottom of your selection, DevTools shows how long that portion took.  
 
 > ##### Figure 31  
-> The `488.53ms` timestamp at the bottom of the selected portion indicates how long that portion took  
+> The `9.47ms` timestamp at the bottom of the selected portion indicates how long that portion took  
 > ![Viewing the duration of a portion of a recording][ImageDuration]  
 
 ### View a screenshot   
@@ -462,7 +460,7 @@ Hover over the **Overview** to view a screenshot of how the page looked during t
 View screenshots by clicking a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** tab.  
 
 > ##### Figure 33  
-> After clicking the `195.5ms` frame in the **Frames** section, the screenshot for that frame is displayed in the **Summary** tab  
+> After clicking the `233.88ms` frame in the **Frames** section, the screenshot for that frame is displayed in the **Summary** tab  
 > ![Viewing a screenshot in the Summary tab][ImageFrameScreenshotSummary]  
 
 Click the thumbnail in the **Summary** tab to zoom in on the screenshot.  
@@ -476,11 +474,11 @@ Click the thumbnail in the **Summary** tab to zoom in on the screenshot.
 To view advanced layers information about a frame:  
 
 1.  [Enable advanced paint instrumentation](#enable-advanced-paint-instrumentation).  
-1.  Select a frame in the **Frames** section.  DevTools displays information about the layers in the new **Layers** tab, next to the **Event Log** tab.  
+1.  Select a frame in the **Frames** section.  DevTools displays information about the layers in the **Layers** pane.  
     
     > ##### Figure 35  
-    > The **Layers** tab  
-    > ![The Layers tab][ImageLayers]  
+    > The **Layers** pane  
+    > ![The Layers pane][ImageLayers]  
     
 Hover over a layer to highlight it in the diagram.  
 
@@ -494,6 +492,8 @@ To move the diagram:
 *   Click **Rotate Mode** ![Rotate Mode][ImageRotateModeIcon] to rotate along the Z axis.  
 *   Click **Reset Transform** ![Reset Transform][ImageResetTransformIcon] to reset the diagram to the original position.  
 
+<!--todo: add content when paint profiler tab is located in Edge  -->  
+<!--  
 ### View paint profiler   
 
 To view advanced information about a paint event:  
@@ -505,6 +505,8 @@ To view advanced information about a paint event:
     > The **Paint Profiler** tab  
     > ![The Paint Profiler tab][ImagePaintProfiler]  
     
+-->  
+
 ## Analyze rendering performance with the Rendering tab   
 
 Use the features of the **Rendering** tab to help visualize the rendering performance of your page.  
@@ -514,7 +516,7 @@ To open the **Rendering** tab:
 1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tab at the bottom of your DevTools window.  
     
-    > ##### Figure 38  
+    > ##### Figure 37  
     > The **Rendering** tab  
     > ![The Rendering tab][ImageRenderingTab]  
     
@@ -525,7 +527,7 @@ The **FPS meter** is an overlay that appears in the top-right corner of your vie
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **FPS Meter** checkbox.  
     
-    > ##### Figure 39  
+    > ##### Figure 38  
     > The FPS meter  
     > ![The FPS meter][ImageFpsMeter]  
     
@@ -539,7 +541,7 @@ To enable Paint Flashing:
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Paint Flashing** checkbox.  
     
-    > ##### Figure 40  
+    > ##### Figure 39  
     > **Paint Flashing**  
     > ![Paint Flashing][ImagePaintFlashing]  
     
@@ -552,7 +554,7 @@ To enable Layer Borders:
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Layer Borders** checkbox.  
     
-    > ##### Figure 41  
+    > ##### Figure 40  
     > **Layer Borders**  
     > ![Layer Borders][ImageLayerBorders]  
     
@@ -567,12 +569,16 @@ To view scroll performance issues:
 
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Scrolling Performance Issues** checkbox.  
-    
-    > ##### Figure 42  
+
+<!--todo: locate site with performance issues  -->  
+<!--    
+    > ##### Figure 41  
     > **Scrolling Performance Issues** is indicating that there is a `mousewheel` event listener encompassing the entire viewport that may harm scroll performance  
     > ![Scrolling Performance Issues is indicating that there is a mousewheel event listener encompassing the entire viewport that may harm scroll performance][ImageScrollingPerformanceIssues]  
     
- 
+-->  
+
+<!--    -->  
 
 
 
@@ -592,7 +598,7 @@ To view scroll performance issues:
 [ImageSearchRegexIcon]: images/search-regex-icon.msft.png  
 [ImageShowHeaviestStackIcon]: images/show-heaviest-stack-icon.msft.png  
 
-[ImageRecord]: images/performance-record-button.msft.png "Figure 1: Record"  
+[ImageRecord]: images/performance-record-highlight.msft.png "Figure 1: Record"  
 [ImageReloadPage]: images/performance-refresh-button.msft.png "Figure 2: Reload page"  
 [ImageLoadRecording]: images/performance-refreshed.msft.png "Figure 3: A page-load recording"  
 [ImageScreenshots]: images/performance-capture-screenshots-checkbox.msft.png "Figure 4: The Screenshots checkbox"  
@@ -612,32 +618,32 @@ To view scroll performance issues:
 [ImageBottomUp]: images/performance-bottoms-up.msft.png "Figure 18: The Bottom-Up tab"  
 [ImageEventLog]: images/performance-event-log.msft.png "Figure 19: The Event Log tab"  
 [ImageGpu]: images/performance-gpu-zoomed.msft.png "Figure 20: The GPU section"  
-[ImageRaster]: images/raster.msft.png "Figure 21: The Raster section"  
-[ImageInteractions]: images/interactions.msft.png "Figure 22: The Interactions section"  
-[ImageFpsChart]: images/fps-chart.msft.png "Figure 23: The FPS chart"  
-[ImageFramesSection]: images/frames-section.msft.png "Figure 24: Hovering over a frame"  
-[ImageFrameSummary]: images/frame-summary.msft.png "Figure 25: Viewing a frame in the Summary tab"  
-[ImageNetworkRequest]: images/network-request.msft.svg "Figure 26: The Network section"  
-[ImageLineBar]: images/line-bar.msft.png "Figure 27: The line-bar representation of the www.bing.com request"  
-[ImageTiming]: images/timing.msft.png "Figure 28: The Network section"  
-[ImageMemory]: images/memory.msft.png "Figure 29: The Memory checkbox"  
-[ImageMemoryMetrics]: images/memory-metrics.msft.png "Figure 30: Memory metrics"  
-[ImageDuration]: images/duration.msft.png "Figure 31: Viewing the duration of a portion of a recording"  
-[ImageViewScreenshot]: images/view-screenshot.msft.png "Figure 32: Viewing a screenshot"  
-[ImageFrameScreenshotSummary]: images/frame-screenshot-summary.msft.png "Figure 33: Viewing a screenshot in the Summary tab"  
-[ImageFrameScreenshotZoom]: images/frame-screenshot-zoom.msft.png "Figure 34: Zooming in on a screenshot from the Summary tab"  
-[ImageLayers]: images/layers.msft.png "Figure 35: The Layers tab"  
-[ImageLayerHover]: images/layer-hover.msft.png "Figure 36: Highlighting a layer"  
-[ImagePaintProfiler]: images/paint-profiler.msft.png "Figure 37: The Paint Profiler tab"  
-[ImageRenderingTab]: images/rendering-tab.msft.png "Figure 38: The Rendering tab"  
-[ImageFpsMeter]: images/fps-meter.msft.png "Figure 39: The FPS meter"  
-[ImagePaintFlashing]: images/paint-flashing.msft.png "Figure 40: Paint Flashing"  
-[ImageLayerBorders]: images/layer-borders.msft.png "Figure 41: Layer Borders"  
-[ImageScrollingPerformanceIssues]: images/scrolling-performance-issues.msft.png "Figure 42: Scrolling Performance Issues is indicating that there is a mousewheel event listener encompassing the entire viewport that may harm scroll performance"  
+[ImageRaster]: images/performance-raster.msft.png "Figure 21: The Raster section"  
+[ImageInteractions]: images/performance-interactions-animation.msft.png "Figure 22: The Interactions section"  
+[ImageFpsChart]: images/performance-fps-highlight.msft.png "Figure 23: The FPS chart"  
+[ImageFramesSection]: images/performance-frames-hover.msft.png "Figure 24: Hovering over a frame"  
+[ImageFrameSummary]: images/performance-frames-summary.msft.png "Figure 25: Viewing a frame in the Summary tab"  
+[ImageNetworkRequest]: images/performance-network.msft.png "Figure 26: The Network section"  
+[ImageLineBar]: images/bing-performance-network.msft.png "Figure 27: The line-bar representation of the www.bing.com request"  
+[ImageTiming]: images/bing-network-timing.msft.png "Figure 28: The Network section"  
+[ImageMemory]: images/performance-memory-highlight.msft.png "Figure 29: The Memory checkbox"  
+[ImageMemoryMetrics]: images/performance-memory-chart.msft.png "Figure 30: Memory metrics"  
+[ImageDuration]: images/performance-main-duration.msft.png "Figure 31: Viewing the duration of a portion of a recording"  
+[ImageViewScreenshot]: images/performance-screenshots-hover.msft.png "Figure 32: Viewing a screenshot"  
+[ImageFrameScreenshotSummary]: images/performance-summary-preview.msft.png "Figure 33: Viewing a screenshot in the Summary tab"  
+[ImageFrameScreenshotZoom]: images/performance-summary-preview-select.msft.png "Figure 34: Zooming in on a screenshot from the Summary tab"  
+[ImageLayers]: images/layers-all.msft.png "Figure 35: The Layers pane"  
+[ImageLayerHover]: images/layers-218-highlighted.msft.png "Figure 36: Highlighting a layer"  
+<!--[ImagePaintProfiler]: images/paint-profiler.msft.png "Old Figure 37: The Paint Profiler tab"  -->  
+[ImageRenderingTab]: images/console-drawer-rendering.msft.png "Figure 37: The Rendering tab"  
+[ImageFpsMeter]: images/jank-console-rendering-frame-rate.msft.png "Figure 38: The FPS meter"  
+[ImagePaintFlashing]: images/jank-console-rendering-paint-flashing.msft.png "Figure 39: Paint Flashing"  
+[ImageLayerBorders]: images/devtools-console-rendering-layer-borders.msft.png "Figure 40: Layer Borders"  
+<!--[ImageScrollingPerformanceIssues]: images/scrolling-performance-issues.msft.png "Old Figure 41: Scrolling Performance Issues is indicating that there is a mousewheel event listener encompassing the entire viewport that may harm scroll performance"  -->  
 
 <!-- links -->  
 
-<!--[EvaluatePerformanceGettingStarted]: index.md "Get Started With Analyzing Runtime Performance"  -->  
+[EvaluatePerformanceGettingStarted]: index.md "Get Started With Analyzing Runtime Performance"  
 [DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 [MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
@@ -647,12 +653,12 @@ To view scroll performance issues:
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
