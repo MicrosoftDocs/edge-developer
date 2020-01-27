@@ -74,7 +74,7 @@ Several popular websites maintain websites and Content Delivery Networks (CDNs) 
 
 Say that a certain organization, "Org1", owns the domains `org1.test` and `org1-cdn.test` as defined by Disconnect's entities.json list. If a user visits `https://org1.test` and it tries to load a resource from `https://org1-cdn.test`, we won't take any enforcement actions against requests made to `org1-cdn.test` even though it is not a first-party URL. If another URL that's not part of Org1's organization tries to load that same resource, however, then the request would be subject to enforcements because it is not part of the same organization.
 
-It's worth noting that even though this relaxes tracking prevention enforcements for sites that belong to the same organization, it's unlikely that this introduces a high amount of privacy risk since such organizations would likely still be able to track users using their own back-end data. As a result, since there is no privacy mitigation to be had by blocking the tracker, we apply this mitigation in all levels of tracking prevention so that we can try to offer the best browsing experience possible.
+It's worth noting that even though this relaxes tracking prevention enforcements for sites that belong to the same organization, it's unlikely that this introduces a high amount of privacy risk since such organizations would likely still be able to track users using their own back-end data. As a result, since there is no privacy mitigation to be had by blocking such trackers, we apply this mitigation in all levels of tracking prevention so that we can try to offer the best browsing experience possible.
 
 ### Org Engagement Mitigation
 
