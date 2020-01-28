@@ -2,7 +2,7 @@
 title: Optimize Website Speed With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/10/2020
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.  
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -105,7 +105,7 @@ The baseline is a record of how the site performed before you made any performan
     *   **Device**.  Setting to **Mobile** changes the user agent string and simulates a mobile viewport.  
         Setting to **Desktop** pretty much just disables the **Mobile** changes.  
     *   **Audits**.  Disabling a category prevents the Audits panel from running those audits, and excludes those audits from your report.  Leave the other categories enabled, if you want to see the types of recommendations they provide.  Disabling categories slightly speeds up the auditing process.  
-    *   **Throttling**.  Setting to **Simulated Fast 3G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is called "simulated" because the Audits panel does not actually throttle during the auditing process.  Instead, it just extrapolates how long the page would take to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.  
+    *   **Throttling**.  Setting to **Simulated Slow 4G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is called "simulated" because the Audits panel does not actually throttle during the auditing process.  Instead, it just extrapolates how long the page would take to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.  
     *   **Clear Storage**.  Enabling this checkbox clears all storage associated with the page before every audit.  
         Leave this setting on if you want to audit how first-time visitors experience your site.  Disable this setting when you want the repeat-visit experience.  
 
@@ -119,9 +119,12 @@ The baseline is a record of how the site performed before you made any performan
 
 If you ever get an error in your Audits panel report, try running the demo tab from an **inPrivate** window with no other tabs open.  This ensures that you are running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.  
 
+<!--todo: add screen capture for error in audit -->  
+<!--
 > ##### Figure 9  
 > A report that errored  
 > ![A report that errored][ImageError]  
+-->  
 
 ### Understand your report   
 
@@ -197,7 +200,8 @@ Before you enable compression, here are a couple of ways to manually check wheth
     > The Network panel  
     > ![The Network panel][ImageNetwork]  
     
-1.  Click **Use Large Request Rows** ![Use Large Request Rows][ImageLargeResourceRowsButtonIcon].  The height of the rows in the table of network requests increases.  
+1.  Click the **Network setting** icon.  
+1.  Click the **Use Large Request Rows** checkbox.  The height of the rows in the table of network requests increases.  
     
     > ##### Figure 20  
     > Large rows in the network requests table  
@@ -206,12 +210,12 @@ Before you enable compression, here are a couple of ways to manually check wheth
 1.  If you do not see the **Size** column in the table of network requests, click the table header and then select **Size**.  
 
 Each **Size** cell shows two values.  The top value is the size of the downloaded resource.  
-The bottom value is the size of the uncompressed resource.  If the two values are the same, then the resource is not being compressed when it is sent over the network.  For example, in [Figure 20](#figure-20) the top and bottom values for `bundle.js` are both `1.4 MB`.  
+The bottom value is the size of the uncompressed resource.  If the two values are the same, then the resource is not being compressed when it is sent over the network.  For example, in [Figure 20](#figure-20) the top and bottom values for `bundle.js` are `150 B` and `1.2 MB`.  
 
 Check for compression by inspecting the HTTP headers of a resource:  
 
 1.  Click **bundle.js**.  
-1.  Click the **Headers** tab.   
+1.  Click the **Headers** tab.  
     
     > ##### Figure 21  
     > The Headers tab  
@@ -231,12 +235,17 @@ Enable text compression by adding a couple of lines of code:
 1.  Add the following code to **server.js**.  Make sure to put `app.use(compression())` before `app.use(express.static('build'))`.  
 
     ```javascript
-    ...
+    const express = require('express');
+    const app = express();
     const fs = require('fs');
-    <strong>const compression = require('compression');</strong>
-    <strong>app.use(compression());</strong>
+    const compression = require('compression');
+
+    app.use(compression());
     app.use(express.static('build'));
-    ...
+    
+    const listener = app.listen(process.env.PORT || 1234, function () {
+        console.log(`Listening on port ${listener.address().port}`);
+    });
     ```  
     
     > [!NOTE]
@@ -251,7 +260,7 @@ Enable text compression by adding a couple of lines of code:
     
 Use the workflows that you learned earlier to manually check that the compression is working:  
 
-1.  Go back to the demo tab and reload the page.  The **Size** column should now show 2 different values for text resources like `bundle.js`.  In [Figure 24](#figure-24) the top value of `261 KB` for `bundle.js` is the size of the file that was sent over the network, and the bottom value of `1.4 MB` is the uncompressed file size.  
+1.  Go back to the demo tab and reload the page.  The **Size** column should now show 2 different values for text resources like `bundle.js`.  In [Figure 24](#figure-24) the top value of `150 B` for `bundle.js` is the size of the file that was sent over the network, and the bottom value of `265 KB` is the uncompressed file size.  
     
     > ##### Figure 24  
     > The Size column now shows 2 different values for text resources  
@@ -503,7 +512,7 @@ Looks like that last change caused a massive jump in performance!
 
 In general, the Performance panel is the most common way to understand what activity your site does as it loads, and find ways to remove unnecessary activity.  
 
-If you prefer an approach that feels more like `console.log()`, the [User Timing][MDNUserTimingApi] API lets you arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.  
+If you prefer an approach that feels more like `console.log()`, the [User Timing API][MDNUserTimingApi] enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.  
 
 ## Summary   
 
@@ -517,7 +526,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.  
 -->  
 
- 
+<!--    -->  
 
 
 
@@ -532,30 +541,30 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 [ImageRemoveIcon]: images/remove-icon.msft.png  
 
 [ImageTony]: images/tony.msft.png "Figure 1: Tony the cat"  
-[ImageEditor]: images/editor.msft.png "Figure 2: The editor tab"  
-[ImageMenu]: images/menu.msft.png "Figure 3: The menu that appears after clicking tony"  
-[ImageDemo]: images/demo.msft.png "Figure 4: The demo tab"  
-[ImageDevtools]: images/devtools.msft.png "Figure 5: DevTools and the demo"  
-[ImageUndocked]: images/undocked.msft.png "Figure 6: Undocked DevTools"  
-[ImageAudits]: images/audits.msft.png "Figure 7: The Audits panel"  
-[ImageReport]: images/report.msft.png "Figure 8: The report for the Audits panel of the performance of the site"  
-[ImageError]: images/error.msft.png "Figure 9: A report that errored"  
-[ImageOverall]: images/overall.msft.png "Figure 10: The overall performance score"  
-[ImageMetrics]: images/metrics.msft.png "Figure 11: The Metrics section"  
-[ImageFirstMeaningfulPaint]: images/f-m-p.msft.png "Figure 12: Hovering over the First Meaningful Paint metric"  
-[ImageScreenshots]: images/screenshots.msft.png "Figure 13: Screenshots of how the page looked while loading"  
-[ImageOpportunities]: images/opportunities.msft.png "Figure 14: The Opportunities section"  
-[ImageCompression]: images/compression.msft.png "Figure 15: More information about the text compression opportunity"  
-[ImageReference]: images/reference.msft.png "Figure 16: Documentation for the text compression opportunity"  
-[ImageDiagnostics]: images/diagnostics.msft.png "Figure 17: The Diagnostics section"  
-[ImagePassed]: images/passed.msft.png "Figure 18: The Passed Audits section"  
-[ImageNetwork]: images/network.msft.png "Figure 19: The Network panel"  
-[ImageLargeRows]: images/large-rows.msft.png "Figure 20: Large rows in the network requests table"  
-[ImageHeaders]: images/headers.msft.png "Figure 21: The Headers tab"  
-[ImageServer]: images/server.msft.png "Figure 22: Editing server.js"  
+[ImageEditor]: images/glitch-tony-server-js.msft.png "Figure 2: The editor tab"  
+[ImageMenu]: images/glitch-tony-server-js-remix-project.msft.png "Figure 3: The menu that appears after clicking tony"  
+[ImageDemo]: images/glitch-tony-show-live.msft.png "Figure 4: The demo tab"  
+[ImageDevtools]: images/glitch-tony-show-live-console.msft.png "Figure 5: DevTools and the demo"  
+[ImageUndocked]: images/console.msft.png "Figure 6: Undocked DevTools"  
+[ImageAudits]: images/audits-performance.msft.png "Figure 7: The Audits panel"  
+[ImageReport]: images/glitch-luxurious-dolphin-audits-performance-metrics-collapsed.msft.png "Figure 8: The report for the Audits panel of the performance of the site"  
+[ImageError]: images/.msft.png "Figure 9: A report that errored"  
+[ImageOverall]: images/glitch-luxurious-dolphin-audits-performance-metrics-collapsed-highlight-performance.msft.png "Figure 10: The overall performance score"  
+[ImageMetrics]: images/glitch-luxurious-dolphin-audits-performance-metrics-collapsed-highlight-metrics.msft.png "Figure 11: The Metrics section"  
+[ImageFirstMeaningfulPaint]: images/glitch-luxurious-dolphin-audits-performance-metrics-expanded.msft.png "Figure 12: Hovering over the First Meaningful Paint metric"  
+[ImageScreenshots]: images/glitch-luxurious-dolphin-audits-performance-view-trace.msft.png "Figure 13: Screenshots of how the page looked while loading"  
+[ImageOpportunities]: images/glitch-luxurious-dolphin-audits-performance-opportunities-collapsed.msft.png "Figure 14: The Opportunities section"  
+[ImageCompression]: images/glitch-luxurious-dolphin-audits-performance-opportunities-expanded.msft.png "Figure 15: More information about the text compression opportunity"  
+[ImageReference]: images/web-dev-performance-audits.msft.png "Figure 16: Documentation for the text compression opportunity"  
+[ImageDiagnostics]: images/glitch-luxurious-dolphin-audits-performance-diagnostics.msft.png "Figure 17: The Diagnostics section"  
+[ImagePassed]: images/glitch-luxurious-dolphin-audits-performance-passed-audits-expanded.msft.png "Figure 18: The Passed Audits section"  
+[ImageNetwork]: images/glitch-luxurious-dolphin-network.msft.png "Figure 19: The Network panel"  
+[ImageLargeRows]: images/glitch-luxurious-dolphin-network-use-large-request-rows.msft.png "Figure 20: Large rows in the network requests table"  
+[ImageHeaders]: images/glitch-luxurious-dolphin-network-use-large-request-rows-highlight.msft.png "Figure 21: The Headers tab"  
+[ImageServer]: images/glitch-luxurious-dolphin-server-js-highlighted.msft.png "Figure 22: Editing server.js"  
 [ImageBuilding]: images/building.msft.png "Figure 23: The animation that indicates that the site is getting built"  
-[ImageRequests]: images/requests.msft.png "Figure 24: The Size column now shows 2 different values for text resources"  
-[ImageGzip]: images/gzip.msft.png "Figure 25: The Response Headers section now contains a `content-encoding` header"  
+[ImageRequests]: images/glitch-network-size-hover.msft.png "Figure 24: The Size column now shows 2 different values for text resources"  
+[ImageGzip]: images/glitch-network-response-headers-content-encoding.msft.png "Figure 25: The Response Headers section now contains a `content-encoding` header"  
 [ImageReport2]: images/report2.msft.png "Figure 26: An Audits report after enabling text compression"  
 [ImageResize]: images/resize.msft.png "Figure 27: Details about the properly size images opportunity"  
 [ImageReport3]: images/report-3.msft.png "Figure 28: An Audits report after resizing images"  
@@ -579,7 +588,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 <!-- links -->  
 
-[EvaluatePerformanceReference]: ../evaluate-performance/reference.md  
+<!--[EvaluatePerformanceReference]: ../evaluate-performance/reference.md  -->  
 
 [CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introduction to Web Development class | Coursera"  
 [EssentialImageOptimization]: https://images.guide "Essential Image Optimization"  
@@ -589,12 +598,12 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
