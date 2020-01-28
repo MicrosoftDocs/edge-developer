@@ -17,7 +17,7 @@ We currently offer users three levels of tracking prevention, which can be selec
 
 ![Tracking prevention's three settings](../media/web-platform/tracking-prevention/tracking-prevention-settings.png)
 
-1. **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who don't mind being tracked on the web. Basic only protects users against malicious trackers.
+1. **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who don't mind being tracked on the web. Basic only protects users against malicious trackers such as fingerprinters and cryptominers.
 1. **Balanced (Default)** - The default level of tracking prevention that is designed for users who want to see less creepy advertisements that follow them around the web while they browse. Balanced aims to block trackers from sites that users never engage with while minimizing the risk of compatibility issues on the web.
 1. **Strict** - The most restrictive form of tracking prevention that is designed for users who are okay trading website compatibility for maximum privacy.
 
@@ -72,16 +72,9 @@ Before diving into the mitigations, it's worth defining the concept of an "Organ
 
 Several popular websites maintain websites and Content Delivery Networks (CDNs) to serve static resources and content to those sites. To ensure that these types of scenarios aren't affected by tracking prevention, we will exempt sites from tracking prevention when they are making third-party requests to other sites owned by the same parent organization (as defined by Disconnect's entities.json list). This is best illustrated by an example:
 
-Say that a certain organization, "Org1", owns the domains `org1.test` and `org1-cdn.test` as defined by Disconnect's entities.json list. If a user visits `https://org1.test` and it tries to load a resource from `https://org1-cdn.test`, we won't take any enforcement actions against requests made to `org1-cdn.test` even though it is not a first-party URL. If another URL that's not part of Org1's organization tries to load that same resource, however, then the request would be subject to enforcements because it is not part of the same organization.
+Say that a certain organization, "Org1", owns the domains `org1.test` and `org1-cdn.test` as defined by Disconnect's entities.json list. Also imagine that `org1-cdn.test` is classified as a tracker and would normally have tracking prevention enforcements applied to it. If a user visits `https://org1.test` and it tries to load a resource from `https://org1-cdn.test`, we won't take any enforcement actions against requests made to `org1-cdn.test` even though it is not a first-party URL. If another URL that's not part of Org1's organization tries to load that same resource, however, then the request would be subject to enforcements because it is not part of the same organization.
 
-It's worth noting that even though this relaxes tracking prevention enforcements for sites that belong to the same organization, it's unlikely that this introduces a high amount of privacy risk since such organizations would likely still be able to track users using their own back-end data. As a result, since there is no privacy mitigation to be had by blocking such trackers, we apply this mitigation in all levels of tracking prevention so that we can try to offer the best browsing experience possible.
-
-### The Compat Exceptions List
-Based on recent user feedback we received, we began maintaining a small list of sites (most of which are in Disconnect's Content category) that were breaking due to tracking prevention despite having the above two mitigations in place.
-
-To avoid maintaining this list moving forwards, we are currently working on the [Storage Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md) in the Chromium codebase. This API will give site developers a way to request storage access from users directly, providing users with more transparency into how their privacy settings are affecting their browsing experience and giving them controls to quickly and intuitively unblock themselves.
-
-Once the Storage Access API is implemented, we will deprecate the compat exceptions list and reach out to the affected sites both to make them aware of these issues, and to request that they use the Storage Access API moving forwards.
+It's worth noting that even though this relaxes tracking prevention enforcements for sites that belong to the same organization, it’s unlikely that this introduces a high amount of privacy risk since such organizations can determine which sites/resources you have accessed on https://org1.test as well https://org1-cdn.test using their own back-end data.
 
 ### Org Engagement Mitigation
 
@@ -96,6 +89,14 @@ If another site, `content-embedder.example`, includes third-party content (say a
 If a site does not belong to an organization, a user will need to establish a site engagement score of at least 4.1 with it directly before any storage access/resource load blocks imposed by tracking prevention will be relaxed.
 
 The org engagement mitigation is currently only applied in Balanced mode so that we are still offering the highest possible protections for users who have opted into Strict.
+
+### The Compat Exceptions List
+
+Based on recent user feedback we received, we began maintaining a small list of sites (most of which are in Disconnect's Content category) that were breaking due to tracking prevention despite having the above two mitigations in place.
+
+To avoid maintaining this list moving forwards, we are currently working on the [Storage Access API](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md) in the Chromium codebase. This API will give site developers a way to request storage access from users directly, providing users with more transparency into how their privacy settings are affecting their browsing experience and giving them controls to quickly and intuitively unblock themselves.
+
+Once the Storage Access API is implemented, we will deprecate the compat exceptions list and reach out to the affected sites both to make them aware of these issues, and to request that they use the Storage Access API moving forwards.
 
 ## Current tracking prevention behavior
 
