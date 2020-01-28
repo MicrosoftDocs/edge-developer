@@ -2,7 +2,7 @@
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/10/2020
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -31,12 +31,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Learn how to use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.  
 
+<!--
 ### Summary  
 
 *   Find out how much memory your page is currently using with the Microsoft Edge Task Manager.  
 *   Visualize memory usage over time with Timeline recordings.  
 *   Identify detached DOM trees \(a common cause of memory leaks\) with Heap Snapshots.  
 *   Find out when new memory is being allocated in your JavaScript heap \(JS heap\) with Allocation Timeline recordings.  
+-->  
 
 ## Overview  
 
@@ -83,6 +85,8 @@ These two columns tell you different things about how your page is using memory:
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->  
 
+<!--todo: The Timeline panel does not appear to be in DevTools for Edge  -->  
+<!--  
 ## Visualize memory leaks with Timeline recordings  
 
 You may also use the Timeline panel as another starting point in your investigation.  The Timeline panel helps you visualize the memory use of a page over time.  
@@ -90,9 +94,9 @@ You may also use the Timeline panel as another starting point in your investigat
 1.  Open the **Timeline** panel on DevTools.  
 1.  Enable the **Memory** checkbox.  
 1.  Make a **recording**.  
-
+-->  
 <!--todo: add make a recoding section when available.  -->  
-
+<!--  
 > [!TIP]
 > It is a good practice to start and end your recording with a forced garbage collection.  Click the **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button while recording to force garbage collection.  
 
@@ -111,7 +115,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Every time that the button referenced in the code is pressed, ten thousand `div` nodes are appended to the document body, and a string of one million `x` characters is pushed onto the `x` array.  Running this code produces a Timeline recording like [Figure 3](#figure-3).  
 
-> ##### Figure 3  
+> ##### Old Figure 3  
 > Simple growth  
 > ![Simple growth][ImageSimpleGrowth]  
 
@@ -119,7 +123,10 @@ First, an explanation of the user interface.  The **HEAP** graph in the **Overvi
 
 Now, an analysis of the code compared with [Figure 3](#figure-3).  If you look at the node counter \(the green graph\) you are able to see that it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph \(the blue graph\) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection \(achieved by pressing the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button\).  
 As the recording progresses you are able to see that the JS heap size spikes.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button click and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began \(the "beginning" here being the point after the forced garbage collection\).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.  
+-->  
 
+<!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
+<!--  
 ## Discover detached DOM tree memory leaks with Heap Snapshots  
 
 A DOM node is only garbage collected when there are no references to the node from either the DOM tree or JavaScript code of the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.  This section teaches you how to use the heap profilers in DevTools to identify detached nodes.  
@@ -145,7 +152,7 @@ Heap snapshots are one way to identify detached nodes.  As the name implies, hea
 
 To create a snapshot, open DevTools and go to the **Profiles** panel, select the **Take Heap Snapshot** radio button, and then press the **Take Snapshot** button.  
 
-> ##### Figure 4  
+> ##### Old Figure 4  
 > Take heap snapshot  
 > ![Take heap snapshot][ImageTakeHeapSnapshot]  
 
@@ -153,13 +160,13 @@ The snapshot may take some time to process and load.  After it is finished, sele
 
 Type `Detached` in the **Class filter** textbox to search for detached DOM trees.  
 
-> ##### Figure 5  
+> ##### Old Figure 5  
 > Filtering for detached nodes  
 > ![Filtering for detached nodes][ImageFilteringForDetachedNodes]  
 
 Expand the carats to investigate a detached tree.  
 
-> ##### Figure 6  
+> ##### Old Figure 6  
 > Investigating detached tree  
 > ![Investigating detached tree][ImageInvestigatingDetachedTree]  
 
@@ -167,10 +174,13 @@ Nodes highlighted yellow have direct references to them from the JavaScript code
 
 Click on a yellow node to investigate it further.  In the **Objects** pane you are able to see more information about the code that is referencing it.  For example, in [Figure 7](#figure-7) you are able to see that the `detachedTree` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses `detachedTree` and ensure that the reference to the node is removed when it is no longer needed.
 
-> ##### Figure 7  
+> ##### Old Figure 7  
 > Investigating a yellow node  
 > ![Investigating a yellow node][ImageInvestigatingYellowNode]  
+-->  
 
+<!--todo: the allocation timeline does not appear in the DevTools in Edge  -->  
+<!--  
 ## Identify JS heap memory leaks with Allocation Timelines  
 
 The Allocation Timeline is another tool that may help you track down memory leaks in your JS heap.  
@@ -191,27 +201,30 @@ To record an Allocation Timeline, open DevTools, go to the **Profiles** panel, s
 
 As you are recording, notice if any blue bars show up on the Allocation Timeline, like in [Figure 8](#figure-8).  
 
-> ##### Figure 8  
+> ##### Old Figure 8  
 > New allocations  
 > ![New allocations][ImageNewAllocations]  
 
 Those blue bars represent new memory allocations.  Those new memory allocations are your candidates for memory leaks.  You are able to zoom on a bar to filter the **Constructor** pane to only show objects that were allocated during the specified timeframe.  
 
-> ##### Figure 9  
+> ##### Old Figure 9  
 > Zoomed allocation timeline  
 > ![Zoomed allocation timeline][ImageZoomedAllocationTimeline]  
 
 Expand the object and click on the value to view more details in the **Object** pane.  For example, in [Figure 10](#figure-10), by viewing the details of the object that was newly allocated, you should be able to see that it was allocated to the `x` variable in the `Window` scope.  
 
-> ##### Figure 10 
+> ##### Old Figure 10 
 > Object details  
 > ![Object details][ImageObjectDetail]  
+-->  
 
+<!--todo: The Timeline panel does not appear to be in DevTools for Edge  -->  
+<!--  
 ## Investigate memory allocation by function   
 
 Use the **Record Allocation Profiler** type to view memory allocation by JavaScript function.  
 
-> ##### Figure 11  
+> ##### Old Figure 11  
 > Record Allocation Profiler  
 > ![Record Allocation Profiler][ImageRecordAllocationProfiler]  
 
@@ -222,9 +235,10 @@ Use the **Record Allocation Profiler** type to view memory allocation by JavaScr
 
 DevTools shows you a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top.  
 
-> ##### Figure 12  
+> ##### Old Figure 12  
 > Allocation profile  
 >![Allocation profile][ImageAllocationProfile]  
+-->  
 
 ## Spot frequent garbage collections  
 
@@ -232,7 +246,9 @@ If your page appears to pause frequently, then you may have garbage collection i
 
 You are able to use either the Microsoft Edge Task Manager or Timeline memory recordings to spot frequent garbage collections.  In the Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collections.  In Timeline recordings, frequently rising and falling JS heap or node count graphs indicate frequent garbage collections.  
 
+<!--  
 Once you have identified the problem, you are able to use an Allocation Timeline recording to find out where memory is being allocated and which functions are causing the allocations.  
+-->  
 
 <!--## Feedback   -->  
 
@@ -243,18 +259,18 @@ Once you have identified the problem, you are able to use an Allocation Timeline
 [ImageForceGarbageCollectionIcon]: images/collect-garbage-icon.msft.png  
 [ImageStopRecordingIcon]: images/stop-recording-icon.msft.png  
 
-[ImageTaskManager]: images/task-manager.msft.png "Figure 1: Opening the task manager"  
-[ImageJavascriptMemory]: images/js-memory.msft.png "Figure 2: Enable javascript memory"  
-[ImageSimpleGrowth]: images/simple-growth.msft.png "Figure 3: Simple Growth"  
-[ImageTakeHeapSnapshot]: images/take-heap-snapshot.msft.png "Figure 4: Take heap snapshot"  
-[ImageFilteringForDetachedNodes]: images/detached-filter.msft.png "Figure 5: Filtering for detached nodes"  
-[ImageInvestigatingDetachedTree]: images/expanded-detached.msft.png "Figure 6: Investigating detached tree"  
-[ImageInvestigatingYellowNode]: images/yellow-node.msft.png "Figure 7 : Investigating a yellow node"  
-[ImageNewAllocations]: images/new-allocations.msft.png "Figure 8: New allocations"  
-[ImageZoomedAllocationTimeline]: images/zoomed-allocation-timeline.msft.png "Figure 9: Zoomed allocation timeline"  
-[ImageObjectDetail]: images/object-details.msft.png "Figure 10: Object details"  
-[ImageRecordAllocationProfiler]: images/record-allocation-profile.msft.png "Figure 11: Record Allocation Profiler"  
-[ImageAllocationProfile]: images/allocation-profile.msft.png "Figure 12: Allocation profile"  
+[ImageTaskManager]: images/bing-settings-more-tools-browser-task-manager.msft.png "Figure 1: Opening the task manager"  
+[ImageJavascriptMemory]: images/bing-browser-task-manager-javascript-memory.msft.png "Figure 2: Enable javascript memory"  
+<!--[ImageSimpleGrowth]: images/simple-growth.msft.png "Old Figure 3: Simple Growth"  -->  
+<!--[ImageTakeHeapSnapshot]: images/take-heap-snapshot.msft.png "Old Figure 4: Take heap snapshot"  -->  
+<!--[ImageFilteringForDetachedNodes]: images/detached-filter.msft.png "Old Figure 5: Filtering for detached nodes"  -->  
+<!--[ImageInvestigatingDetachedTree]: images/expanded-detached.msft.png "Old Figure 6: Investigating detached tree"  -->  
+<!--[ImageInvestigatingYellowNode]: images/yellow-node.msft.png "Old Figure 7 : Investigating a yellow node"  -->  
+<!--[ImageNewAllocations]: images/new-allocations.msft.png "Figure 8: New allocations"  -->  
+<!--[ImageZoomedAllocationTimeline]: images/zoomed-allocation-timeline.msft.png "Figure 9: Zoomed allocation timeline"  -->  
+<!--[ImageObjectDetail]: images/object-details.msft.png "Figure 10: Object details"  -->  
+<!--[ImageRecordAllocationProfiler]: images/record-allocation-profile.msft.png "Figure 11: Record Allocation Profiler"  -->  
+<!--[ImageAllocationProfile]: images/allocation-profile.msft.png "Figure 12: Allocation profile"  -->  
 
 <!-- links -->  
 
