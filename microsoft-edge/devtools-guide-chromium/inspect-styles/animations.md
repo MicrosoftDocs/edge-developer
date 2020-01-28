@@ -2,7 +2,7 @@
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/24/2020
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -125,7 +125,7 @@ The leftmost, darker section of an animation is the definition.  The right, more
 > Diagram of animation iterations  
 > ![Diagram of animation iterations][ImageDiagramAnimationIterations]  
 
-If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in [Figure 8](#figure-8) the two elements `div.eye.left::after` and `div.eye.right::after` have the same animation \(`eyes`\) applied, as do the `div.feet::before` and `div.feet::after` elements.  
+If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in [Figure 8](#figure-8) the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation \(`spinrightleft`\) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.  
 
 > ##### Figure 8  
 > Color-coded animations  
@@ -178,23 +178,23 @@ To add a delay to an animation, click and drag it anywhere except the circles.
 [ImageAnnotatedAnimationInspector]: images/elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotation Animation Inspector"  
 [ImageAnimationGroupDetails]: images/elements-styles-drawer-animations-selected-completed.msft.png "Figure 5: Animation group details"  
 [ImageHoverOverAnimationHighlightViewport]: images/split-elements-styles-drawer-animations-selected-completed.msft.png "Figure 6: Hover over animation to highlight it in viewport"  
-[ImageDiagramAnimationIterations]: images/animation-iterations.msft.png "Figure 7: Diagram of animation iterations"  
-[ImageColorCodedAnimations]: images/color-coded-animations.msft.png "Figure 8: Color-coded animations"  
-[ImageOriginalAnimationBeforeModification]: images/modify-original.msft.png "Figure 9: Original animation before modification"  
-[ImageModifiedDuration]: images/modify-duration.msft.png "Figure 10: Modified duration"  
-[ImageModifiedKeyframe]: images/modify-keyframe.msft.png "Figure 11: Modified keyframe"  
-[ImageModifiedDelay]: images/modify-delay.msft.png "Figure 12: Modified delay"  
+[ImageDiagramAnimationIterations]: images/glitch-display-animations-highlight.msft.png "Figure 7: Diagram of animation iterations"  
+[ImageColorCodedAnimations]: images/glitch-display-animations.msft.png "Figure 8: Color-coded animations"  
+[ImageOriginalAnimationBeforeModification]: images/glitch-spin-animations-console-animations.msft.png "Figure 9: Original animation before modification"  
+[ImageModifiedDuration]: images/glitch-spin-animations-console-animations-shorter.msft.png "Figure 10: Modified duration"  
+[ImageModifiedKeyframe]: images/glitch-spin-animations-console-animations-keyframe-modification.msft.png "Figure 11: Modified keyframe"  
+[ImageModifiedDelay]: images/glitch-spin-animations-console-animations-delay.msft.png "Figure 12: Modified delay"  
 
 <!-- links -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
