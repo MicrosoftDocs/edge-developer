@@ -124,6 +124,7 @@ The following table shows the enforcement actions and mitigations that are appli
 > The Fingerprinting column above refers to trackers that are solely on the Fingerprinting list. Trackers that appear on the Fingerprinting list as well as another list are blocked according to the other lists they appear on as they are considered non-malicious fingerprinters.
 
 ### InPrivate behavior
+
 In Microsoft Edge 79, the default behavior was to apply Strict mode protections in InPrivate. In Microsoft Edge 80, this behavior was replaced by a switch in `edge://settings/privacy` that will allow users to decide whether to apply Strict mode protections or to keep their regular settings while browsing InPrivate.
 
 ## Determining whether/how a particular URL is classified
