@@ -2,7 +2,7 @@
 title: Override Geolocation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/02/2020
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -41,8 +41,7 @@ If you are building a UI that changes depending on where the user is located, yo
     > The Command Menu  
     > ![The Command Menu][ImageCommandMenu]  
     
-1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  
-   The **Sensors** tab opens up at the bottom of your DevTools window.  
+1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
 1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.  
     
     > ##### Figure 2  
