@@ -1,7 +1,7 @@
 ---
 title: "Using Windows Runtime Asynchronous Methods | Microsoft Docs"
 ms.custom: ""
-ms.date: "01/18/2017"
+ms.date: 01/15/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -18,7 +18,7 @@ ms.author: "msedgedevrel"
 manager: ""
 ---
 # Using Windows Runtime Asynchronous Methods
-Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous. These methods generally return an asynchronous action or operation (for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`). These methods are represented in JavaScript by the [CommonJS/Promises/A](http://go.microsoft.com/fwlink/p/?LinkId=244434) pattern. That is, they return a Promise object that has a [then](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx) function, for which you must provide a `completed` function that handles the result if the operation succeeds. If you don't want to provide an error handler, you should use the [done](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx) function instead of the `then` function.  
+Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous. These methods generally return an asynchronous action or operation (for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`). These methods are represented in JavaScript by the [CommonJS/Promises/A](https://go.microsoft.com/fwlink/p/?LinkId=244434) pattern. That is, they return a Promise object that has a [then](https://msdn.microsoft.com/library/windows/apps/br229728.aspx) function, for which you must provide a `completed` function that handles the result if the operation succeeds. If you don't want to provide an error handler, you should use the [done](https://msdn.microsoft.com/library/windows/apps/hh701079.aspx) function instead of the `then` function.  
   
 > [!IMPORTANT]
 >  Windows Runtime features are not available for apps that run in Internet Explorer.  
@@ -75,7 +75,8 @@ client.createResourceAsync(uri, description, item)
             });  
 ```  
   
- For more information about asynchronous programming, see [Asynchronous Programming in JavaScript](https://msdn.microsoft.com/en-us/library/windows/apps/hh700330.aspx).  
+ For more information about asynchronous programming, see [Asynchronous Programming in JavaScript](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx).  
   
 ## See Also  
- [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)
+
+ [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)  

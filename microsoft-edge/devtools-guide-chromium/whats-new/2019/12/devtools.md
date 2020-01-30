@@ -296,11 +296,7 @@ To discuss the new features and changes in this post, or anything else related t
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
 
-<!--<<../../_shared/devtools-feedback.md>> -->
-
-<!--<<../../_shared/canary.md>> -->
-
-<!--<<../../_shared/discover.md>> -->
+<!--<<../../_shared/discover.md>>  -->  
 
 
 
