@@ -77,6 +77,8 @@
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Accessibility
 #### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
+#### Guides
+##### [Track Which Element Has Focus](devtools-guide-chromium/accessibility/focus.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
