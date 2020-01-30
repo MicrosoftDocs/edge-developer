@@ -152,3 +152,13 @@ If you need to access the tracking prevention lists that are stored on disk, the
 > _Windows_: %PROGRAMFILES(x86)%\Microsoft\ Edge \<OptionalChannelName\>\Application\<Version\>\Trust Protection Lists
 >
 > _macOS_: /Applications/Microsoft Edge.app/Contents/Frameworks/Microsoft Edge Framework.framework/Libraries/Trust Protection Lists
+
+## Frequently Asked Questions
+
+The following section contains answers to frequently asked questions about Microsoft Edge's tracking prevention feature.
+
+**Is there a way to block or allow specific trackers for debugging purposes?**
+
+Currently, Microsoft Edge only exposes an option to disable tracking prevention enforcements from running on a specified site. This option can be accessed via the page info flyout or through the `edge://settings/privacy/trackingPreventionExceptions` page.
+
+That being said, the "Block" and "Allow" options on the `edge://settings/content/cookies` page can be used to allow or deny specific domains access to storage such as cookies and other browser storage mechanisms. This can be useful for debugging site issues that are caused by tracking prevention enforcements blocking a certain site's access to storage.
