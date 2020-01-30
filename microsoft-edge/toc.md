@@ -60,6 +60,8 @@
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 #### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
+#### Guides
+##### [Override Geolocation](devtools-guide-chromium/device-mode/geolocation.md)
 ### DOM
 #### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
