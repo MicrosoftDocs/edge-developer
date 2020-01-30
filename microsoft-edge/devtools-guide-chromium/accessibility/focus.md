@@ -2,7 +2,7 @@
 title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/31/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -48,7 +48,7 @@ Since that expression always represents the focused element, you now have a way 
 *   Right-click the result and select **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
 *   Right-click the result and select **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
-## Feedback 
+<!--## Feedback   -->  
 
 
 
