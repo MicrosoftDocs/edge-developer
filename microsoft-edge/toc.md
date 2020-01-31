@@ -80,6 +80,7 @@
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Accessibility
+#### [Reference](devtools-guide-chromium/accessibility/reference.md)
 #### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
 #### Guides
 ##### [Track Which Element Has Focus](devtools-guide-chromium/accessibility/focus.md)
