@@ -2,7 +2,7 @@
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/21/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,13 +29,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.  
-It is intended for web developers who:  
+This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.  It is intended for web developers who:  
 
 *   Have a basic understanding of DevTools, such as how to open it.  
-*   Are familiar with accessibility principles and best practices.  
-
-<!--[A11yPrinciples]: /web/fundamentals/accessibility/ -->  
+*   Are familiar with [accessibility principles and best practices][MDNAccessibility].  
 
 The purpose of this reference is to help you discover all of the tools available in DevTools that help you examine the accessibility of a page.  
 
@@ -47,16 +44,17 @@ This section explains how DevTools fits into your overall accessibility toolkit.
 
 When determining whether a page is accessible, you need to have 2 general questions in mind:  
 
-1.  Are you able to navigate the page with a keyboard or screen reader?  
+1.  Are you able to navigate the page with a keyboard or [screen reader][MDNScreenReader]?  
 1.  Are the elements of the page properly marked up for screen readers?  
-
-<!--[ScreenReader]: /web/fundamentals/accessibility/semantics-builtin/#screen_readers  -->  
 
 In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
 ## Audit the accessibility of a page   
+
+> [!NOTE]
+> The **Audits** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
 
 In general, use the Audits panel to determine if:  
 
@@ -75,7 +73,7 @@ To audit a page:
     > [!NOTE]
     > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
     
-1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes differently your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option could have a significant effect on the results of your audit.  
+1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option could have a significant effect on the results of your audit.  
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
 1.  The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.  This option should be irrelevant to your accessibility score, so you may use whatever you prefer.  
 1.  The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.  This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.  
@@ -97,19 +95,15 @@ To audit a page:
     > Viewing the documentation of an audit  
     > ![Viewing the documentation of an audit][ImageAuditDocumentation]  
     
-<!--  
-
 ### See also: aXe extension   
 
 You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Audits** panel.  
-They generally provide the same information, since aXe is the underlying engine that powers the Audits panel. The aXe extension has a different UI and describes audits slightly differently.  
-One advantage that the aXe extension has over the **Audits** panel is that it lets you inspect and highlight failing nodes.  
+The aXe extension generally provides the same information, since it is the underlying engine that powers the Audits panel.  The aXe extension has a different UI and describes audits slightly differently.  
+One advantage that the aXe extension has over the **Audits** panel is that it enables you to inspect and highlight failing nodes.  
 
-> ##### Old Figure 5  
+> ##### Figure 5  
 > The aXe extension  
 > ![The aXe extension][ImageAxeExtension]  
-
--->
 
 ## The Accessibility pane   
 
@@ -121,19 +115,17 @@ To open the **Accessibility** pane:
 1.  In the **DOM Tree**, select the element which you want to inspect.  
 1.  Click the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** ![More Tabs][ImageMoreTabsIcon] button.  
 
-> ##### Figure 5  
+> ##### Figure 6  
 > Inspecting the `h1` element of the DevTools homepage in the **Accessibility** pane  
 > ![Inspecting the h1 element of the DevTools homepage in the Accessibility pane][ImageA11yPane]  
 
 ### View the position of an element in the accessibility tree   
 
-The accessibility tree is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
-
-<!--[AccessibilityTree]: /web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree  -->  
+The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
 
 Inspect the position of an element in the accessibility tree from the [Accessibility pane](#the-accessibility-pane).  
 
-> ##### Figure 6  
+> ##### Figure 7  
 > The Accessibility Tree section  
 > ![The Accessibility Tree section][ImageAllyTree]  
 
@@ -143,7 +135,7 @@ ARIA attributes ensure that screen readers have all of the information that they
 
 View the ARIA attributes of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-> ##### Figure 7  
+> ##### Figure 8  
 > The ARIA Attributes section  
 > ![The ARIA Attributes section][ImageAriaAttributesSection]  
 
@@ -156,7 +148,7 @@ Some accessibility properties are dynamically calculated by the browser.  These 
 
 View the computed accessibility properties of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-> ##### Figure 8
+> ##### Figure 9  
 > The Computed (Accessibility) Properties section  
 > ![The Computed (Accessibility) Properties section][ImageComputedA11yPropertiesSection]  
 
@@ -170,26 +162,25 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 1.  Click the **Elements** tab.  
 1.  In the **DOM Tree**, select the text element that you want to inspect.  
     
-    > ##### Figure 9  
+    > ##### Figure 10  
     > Inspecting a paragraph in the DOM Tree  
     > ![Inspecting a paragraph in the DOM Tree][ImageInspectDomTree]  
     
 1.  In the **Styles** pane, click the color square next to the `color` value of the element.  
     
-    > ##### Figure 10  
+    > ##### Figure 11  
     > The `color` property of the element  
     > ![The color property of the element][ImageColorElement]  
     
-1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  
-    Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
+1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
     
-    > ##### Figure 11  
+    > ##### Figure 12  
     > The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of `13.97`  
     > ![The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97][ImageColorPickerContrastRatio]  
     
 1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
     
-    > ##### Figure 12  
+    > ##### Figure 13  
     > The Contrast Ratio Line in the visual picker  
     > ![The Contrast Ratio Line in the visual picker][ImageContrastRatioLine]  
 
@@ -205,27 +196,29 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 [ImageReport]: images/audits-run-audits-result.msft.png "Figure 2: A figure"  
 [ImageAttributes]: images/audits-run-audits-result-issues-expanded.msft.png "Figure 3: More information about an audit"  
 [ImageAuditDocumentation]: images/web-dev-accessibility-audits-learn-more.msft.png "Figure 4: Viewing the documentation of an audit"  
-<!--[ImageAxeExtension]: images/aXe.msft.png "Old Figure 5: The aXe extension"  -->
-[ImageA11yPane]: images/elements-accessibility.msft.png "Figure 5: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
-[ImageAllyTree]: images/elements-accessibility-tree.msft.png "Figure 6: The Accessibility Tree section"  
-[ImageAriaAttributesSection]: images/elements-accessibility-aria-attributes.msft.png "Figure 7: The ARIA Attributes section"  
-[ImageComputedA11yPropertiesSection]: images/elements-accessibility-computed-properties.msft.png "Figure 8: The Computed (Accessibility) Properties section"  
-[ImageInspectDomTree]: images/elements-paragraph-highlight.msft.png "Figure 9: Inspecting a paragraph in the DOM Tree"  
-[ImageColorElement]: images/elements-styles-paragraph-highlight-color.msft.png "Figure 10: The color property of the element"  
-[ImageColorPickerContrastRatio]: images/elements-styles-paragraph-highlight-color-picker.msft.png "Figure 11: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97"  
-[ImageContrastRatioLine]: images/elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png "Figure 12: The Contrast Ratio Line in the visual picker"  
+[ImageAxeExtension]: images/devtools-extension-axe-panel.msft.png "Figure 5: The aXe extension"  
+[ImageA11yPane]: images/elements-accessibility.msft.png "Figure 6: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
+[ImageAllyTree]: images/elements-accessibility-tree.msft.png "Figure 7: The Accessibility Tree section"  
+[ImageAriaAttributesSection]: images/elements-accessibility-aria-attributes.msft.png "Figure 8: The ARIA Attributes section"  
+[ImageComputedA11yPropertiesSection]: images/elements-accessibility-computed-properties.msft.png "Figure 9: The Computed (Accessibility) Properties section"  
+[ImageInspectDomTree]: images/elements-paragraph-highlight.msft.png "Figure 10: Inspecting a paragraph in the DOM Tree"  
+[ImageColorElement]: images/elements-styles-paragraph-highlight-color.msft.png "Figure 11: The color property of the element"  
+[ImageColorPickerContrastRatio]: images/elements-styles-paragraph-highlight-color-picker.msft.png "Figure 12: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97"  
+[ImageContrastRatioLine]: images/elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png "Figure 13: The Contrast Ratio Line in the visual picker"  
 
 <!-- links -->  
 
 [DevtoolsAccessibilityNavigation]: navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference"  
 
-<!--[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  -->  
+[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  
 
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced)
-Level AAA | W3C"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum)
-Level AA | W3C"  
+[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"  
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
+
+[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum) Level AA | W3C"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
