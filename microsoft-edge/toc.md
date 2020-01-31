@@ -61,7 +61,7 @@
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 #### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
 #### Guides
-##### [Override The User Agent](devtools-guide-chromium/device-mode/override-user-agent.md)
+##### [Override The User Agent String](devtools-guide-chromium/device-mode/override-user-agent.md)
 ##### [Override Geolocation](devtools-guide-chromium/device-mode/geolocation.md)
 ##### [Simulate Device Orientation](devtools-guide-chromium/device-mode/orientation.md)
 ### DOM
