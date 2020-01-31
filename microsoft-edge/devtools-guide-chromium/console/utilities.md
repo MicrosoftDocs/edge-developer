@@ -2,7 +2,7 @@
 title:  Console Utilities API Reference
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date: 01/22/2020
+ms.date: 01/31/2020
 ms.topic:  article
 ms.prod:  microsoft-edge
 keywords:  microsoft edge, web development, f12 tools, devtools
@@ -32,42 +32,37 @@ keywords:  microsoft edge, web development, f12 tools, devtools
 The Console Utilities API contains a collection of convenience commands for performing common tasks:  selecting and inspecting DOM elements, displaying data in readable format, stopping and starting the profiler, and monitoring DOM events.  
 
 > [!WARNING]
-> The following commands only work in the Microsoft Edge DevTools Console.  The commands do not work if you try to send a request from your scripts.  
+> The following commands only work in the Microsoft Edge DevTools Console.  The commands do not work if run from your scripts.  
 
 Looking for `console.log()`, `console.error()`, and the rest of the `console.*` methods?  See [Console API Reference][DevToolsConsoleApi].  
 
-## Recent  
+## Recently Evaluated Expression  
 
 ```console
 $_
 ```  
 
-[Log level][DevtoolsConsoleReferencePersist]: `Error`  
-
 Returns the value of the most recently evaluated expression.  
 
-In [Figure 1](#figure-1), a simple expression \(`2 + 2`\) is evaluated.  
-The `$_` property is then evaluated, which contains the same value.  
+In [Figure 1](#figure-1), a simple expression \(`2 + 2`\) is evaluated.  The `$_` property is then evaluated, which contains the same value.  
 
 > ##### Figure 1  
 > `$_` is the most recently evaluated expression  
 > ![$_ is the most recently evaluated expression][ImageRecentExpression]  
 
-In [Figure 2](#figure-2), the evaluated expression initially contains an array of names.  
-Evaluating `$_.length` to find the length of the array, the value stored in `$_` changes to become the latest evaluated expression, `4`.  
+In [Figure 2](#figure-2), the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` changes to become the latest evaluated expression, `4`.  
 
 > ##### Figure 2  
 > `$_` changes when new commands are evaluated  
 > ![$_ changes when new commands are evaluated][ImageChangedRecentExpression]  
 
-## Recent DOM  
+## Recently Selected Element Or JavaScript Object  
 
 ```console
 $0
 ```  
 
-Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  
-The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Profiles** panel.  
+Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Memory** panel.  
 
 ```console
 $1
@@ -121,11 +116,11 @@ In [Figure 6](#figure-6), a reference to the currently selected element is retur
 
 This method also supports a second parameter, startNode, that specifies an "element" or Node from which to search for elements.  The default value of this parameter is `document`.  
 
-In [Figure 7](#figure-7), a reference to the first element after the currently selected Node and displays the src properly is returned.  
+In [Figure 7](#figure-7), the first `img` element is found after the `title --image` and displays the `src` properly is returned.  
 
 > ##### Figure 7  
-> The `$('img', div).src`  
-> ![The $('img', div).src][ImageElementImgNodeSource]  
+> The $('img', document.querySelector('title--image')).src  
+> ![The $('img', document.querySelector('title--image')).src][ImageElementImgNodeSource]  
 
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, this functionality is overwritten, and `$` corresponds to the implementation from that library.  
@@ -156,7 +151,7 @@ This method also supports a second parameter, startNode, that specifies an eleme
 In [Figure 9](#figure-9), a modified version of [Figure 8](#figure-8) uses `$$()` to create an array of all `<img>` elements that appear in the current document after the selected Node.  
 
 ```console
-var images = $$('img', document.querySelector('.devsite-header-background'));
+var images = $$('img', document.querySelector(`title--image`));
 for (each in images) {
    console.log(images[each].src);
 }
@@ -282,7 +277,7 @@ Prints an XML representation of the specified object, as seen in the **Elements*
 inspect(object/method)
 ```  
 
-Opens and selects the specified element or object in the appropriate panel:  either the Elements panel for DOM elements or the Profiles panel for JavaScript heap objects.  
+Opens and selects the specified element or object in the appropriate panel:  either the **Elements** panel for DOM elements or the **Memory** panel for JavaScript heap objects.  
 
 In [Figure 15](#figure-15), the `document.body` opens in the **Elements** panel.  
 
@@ -424,7 +419,7 @@ In [Figure 22](#figure-22) the sample output after typing a character in the tex
 profile([name])
 ```  
 
-Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profile-end) method completes the profile and displays the results in the **Profile** panel.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
+Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profile-end) method completes the profile and displays the results in the **Memory** panel.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
 
 1.  Run the `profile()` method to start profiling.  
     
@@ -432,7 +427,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
     profile("My profile")
     ```  
     
-1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Profiles** panel.  
+1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** panel.  
 
 Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
 
@@ -452,10 +447,10 @@ profileEnd('B');
 profileEnd([name])
 ```  
 
-Completes a JavaScript CPU profiling session and displays the results in the **Profile** panel.  You must be running the [profile()](#profile) method.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
+Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.  You must be running the [profile()](#profile) method.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
 
 1.  Run the [profile()](#profile) method to start profiling.  
-1.  Run the `profileEnd()` method to stop profiling and display the results in the **Profiles** panel.  
+1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** panel.  
     
     ```console
     profileEnd("My profile")
@@ -470,7 +465,7 @@ profileEnd('A');
 profileEnd('B');
 ```  
 
-Result in the **Profiles** panel.  
+Result in the **Memory** panel.  
 
 > ##### Figure 23  
 > Grouped profiles  
@@ -572,7 +567,7 @@ values(object);
 [ImageElement1]: images/console-image-highlighted-$1.msft.png "Figure 4: The $1"  
 [ImageElementImg]: images/console-element-selector-image.msft.png "Figure 5: The $('img')"  
 [ImageElementImgSource]: images/console-element-selector-image-source.msft.png "Figure 6: The $('img').src"  
-[ImageElementImgNodeSource]: images/console-element-selector-image-filter-source.msft.png "Figure 7: The $('img', div).src"  
+[ImageElementImgNodeSource]: images/console-element-selector-image-filter-source.msft.png "Figure 7: The $('img', document.querySelector('title--image')).src"  
 [ImageArrayElementImgSource]: images/console-element-selector-image-all.msft.png "Figure 8: Using $$() to select all images in the document and display the sources"  
 [ImageArrayElementImgNodeSource]: images/console-element-selector-image-filter-all.msft.png "Figure 9: Using $$() to select all images appearing after the select div element in the document and displaying the sources"  
 [ImageArrayXpath]: images/console-array-xpath.msft.png "Figure 10: Using an XPath selector"  
@@ -595,7 +590,6 @@ values(object);
 
 [DevToolsConsoleApi]: api.md "Console API Reference"  
 [DevToolsConsoleApiConsoleDirObject]: api.md#dir "dir - Console API Reference"  
-[DevtoolsConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
 [DevToolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
 [DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-execution.md "Speed Up JavaScript Runtime"  
 
