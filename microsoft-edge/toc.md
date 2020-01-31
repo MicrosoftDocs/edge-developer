@@ -62,6 +62,7 @@
 #### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
 #### Guides
 ##### [Override Geolocation](devtools-guide-chromium/device-mode/geolocation.md)
+##### [Simulate Device Orientation](devtools-guide-chromium/device-mode/orientation.md)
 ### DOM
 #### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
