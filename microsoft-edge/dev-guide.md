@@ -3,7 +3,7 @@ title: What's new in EdgeHTML 18
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
 author: mattwojo
 ms.author: mattwoj
-ms.date: 10/02/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
@@ -19,7 +19,7 @@ ms.custom: RS5
 
 ## What's new in EdgeHTML 18
 
-EdgeHTML 18 includes the following new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) (10/2018, Build 17763). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
+EdgeHTML 18 includes the following new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) (10/2018, Build 17763). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
 
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_18](https://aka.ms/devguide_edgehtml_18).
 
@@ -61,7 +61,7 @@ In addition, no one likes enumerating the attributes collection, so we've added 
 
 Windows 10 JavaScript apps (web apps running in a *WWAHost.exe* process) now support an optional per-application background script that starts before any views are activated and runs for the duration of the process. With this, you can monitor and modify navigations, track state across navigations, monitor navigation errors, and run code before views are activated. 
 
-When specified as the [`StartPage`](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views (windows) are exposed to the script as instances of the new [`WebUIView`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general (Win32) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol). Your script can listen for the [`NewWebUIViewCreated`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:
+When specified as the [`StartPage`](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views (windows) are exposed to the script as instances of the new [`WebUIView`](/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general (Win32) [WebView](/uwp/api/windows.web.ui.iwebviewcontrol). Your script can listen for the [`NewWebUIViewCreated`](/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:
 
 ```JavaScript
 Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWebUIViewCreatedEventHandler);
@@ -71,13 +71,13 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
 #### Text scaling
 
-The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/en-us/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user acessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
+The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user acessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
 
- For design guidance, check out the [Text scaling](https://docs.microsoft.com/en-us/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.
+ For design guidance, check out the [Text scaling](/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.
 
-### Service Worker updates	
+### Service Worker updates 
 
-For a refresher on what Service Workers are and how they work, check out the [Service Worker API]( https://developer.mozilla.org/docs/Web/API/Service_Worker_API) summary written by our partners over at MDN.  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18. The `fetchEvent` enables the Service Worker to use [`preloadResponse`]( https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [`resultingClientId`]( https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the ID of the Client that the current service worker is controlling. 	
+For a refresher on what Service Workers are and how they work, check out the [Service Worker API]( https://developer.mozilla.org/docs/Web/API/Service_Worker_API) summary written by our partners over at MDN.  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18. The `fetchEvent` enables the Service Worker to use [`preloadResponse`]( https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [`resultingClientId`]( https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the ID of the Client that the current service worker is controlling.  
 The [`NavigationPreloadManager`]( https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) interface provides methods for managing the preloading of resources, allowing you to make a request in parallel while a service worker is booting-up, avoiding any time delay. Check out the [newly supported API properties](#new-apis-in-edgehtml-18) for the list of Service Worker preload methods and properties. 
 
 ### Web Authentication
@@ -98,15 +98,15 @@ Four new properties are now supported for web notifications: [`actions`](https:/
 ### WebView
 
 #### Service workers
-[Service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors  of the Microsoft Edge webview ([PWA](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview), [UWP](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](https://docs.microsoft.com/en-us/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
+[Service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors  of the Microsoft Edge webview ([PWA](/microsoft-edge/hosting/webview), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
 
 x64 app architectures require *Neutral* (Any CPU) or *x64* packages, as service workers are not supported in WoW64 processes. (To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.)
 
 #### Win32 WebView updates
 
-The EdgeHTML [WebViewControl](https://docs.microsoft.com/en-us/windows/communitytoolkit/controls/wpf-winforms/webview) for Windows desktop (Win32) apps has been updated with several new features, including the ability to inject script upon page load before any other scripts on the page are run ([`AddInitializeScript`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)) and know when a particular WebViewControl receives or loses focus ([`GotFocus`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus)/[`LostFocus`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)).
+The EdgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/webview) for Windows desktop (Win32) apps has been updated with several new features, including the ability to inject script upon page load before any other scripts on the page are run ([`AddInitializeScript`](/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)) and know when a particular WebViewControl receives or loses focus ([`GotFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus)/[`LostFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)).
 
-Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). The [`NewWindowRequested`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its  [`NewWindowRequestedEventArgs`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral ([`GetDeferral`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)) in order to set a new WebViewControl ([`NewWindow`](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)) as the target for the window.open:
+Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). The [`NewWindowRequested`](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its  [`NewWindowRequestedEventArgs`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral ([`GetDeferral`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)) in order to set a new WebViewControl ([`NewWindow`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)) as the target for the window.open:
 
 ```C#
 WebViewControlProcess wvProc;
@@ -153,7 +153,7 @@ With EdgeHTML 18, we are retiring the XSS filter in Microsoft Edge. Our customer
 Check out the full list of new APIs in EdgeHTML 18. They are listed in the format of [interface name].[api name].
 
 > [!NOTE] 
-> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development and hidden behind an experimental flag. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
+> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development and hidden behind an experimental flag. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/) for the official word on feature support.
 
 <iframe height='580' scrolling='no' title='New APIs in EdgeHTML 18' src='//codepen.io/MSEdgeDev/embed/5d7be9404d82575162b486e79d0dd58f
 /?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/5d7be9404d82575162b486e79d0dd58f'>New APIs in EdgeHTML 18</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
