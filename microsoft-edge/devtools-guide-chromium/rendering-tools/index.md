@@ -2,7 +2,7 @@
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/08/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -43,7 +43,7 @@ Users expects interactive and smooth pages.  Each stage in the pixel pipeline re
 
 JavaScript calculations, especially ones that trigger extensive visual changes, may stall application performance.  Do not let badly-timed or long-running JavaScript interfere with user interactions.  
 
-### Tools  
+### JavaScript: Tools  
 
 Make a **Performance** pane recording and look for suspiciously long `Evaluate Script` events.  If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  
 
@@ -51,10 +51,10 @@ Make a **Performance** pane recording and look for suspiciously long `Evaluate S
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
 If you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  
-CPU profiles show where execution time is spent within the functions of your page.  
+CPU profiles show where runtime is spent within the functions of your page.  
 <!--Learn how to create CPU profiles in [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].  -->  
 
-### Problems  
+### JavaScript: Problems  
 
 The following table describes some common JavaScript problems and potential solutions:  
 
@@ -78,9 +78,9 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->  
 
-### Tools  
+### Style: Tools  
 
-Make a **Performance** pane recording.  Check the recording for large `Recalculate Style` events (displayed in purple).  
+Make a **Performance** pane recording.  Check the recording for large `Recalculate Style` events \(displayed in purple\).  
 
 <!--todo: add Recording section when available  -->  
 
@@ -97,7 +97,7 @@ To reduce the impact of `Recalculate Style` events:
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
-### Problems  
+### Style: Problems  
 
 The following table describes some common style problems and potential solutions:  
 
@@ -129,7 +129,7 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->  
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->  
 
-### Tools  
+### Layout: Tools  
 
 The Microsoft Edge DevTools **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.  
 
@@ -138,9 +138,9 @@ The Microsoft Edge DevTools **Performance** pane identifies when a page causes f
 > ![Forced synchronous layout][ImageForcedSynchronousLayout]  
 
 "Layout thrashing" is a repetition of forced synchronous layout conditions.  
-This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  <!--See [Figure 2](#figure-2).  -->  
+This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See [Figure 2](#figure-2).  
 
-### Problems  
+### Layout: Problems  
 
 The following table describes some common layout problems and potential solutions:  
 
@@ -159,7 +159,7 @@ Compositing is where the painted parts of the page are put together for displayi
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-### Tools  
+### Paint and composite: Tools  
 
 Want to know how long painting takes or how often painting occurs?  Enable the **Paint profiler** on the **Performance** pane and then make a recording.  If most of your rendering time is spent painting, you have paint problems.  
 
@@ -174,7 +174,7 @@ Check out the rendering settings menu for further configurations that are able t
 
 <!--todo: add Rendering settings section when available  -->  
 
-### Problems  
+### Paint and composite: Problems  
 
 The following table describes some common paint and composite problems and potential solutions:  
 
@@ -192,14 +192,14 @@ The following table describes some common paint and composite problems and poten
 
 <!-- image links -->  
 
-[ImageLongRecalculateStyle]: images/recalculate-style.msft.png "Figure 1: Long recalculate style"  
-[ImageForcedSynchronousLayout]: images/forced-synchronous-layout.msft.png "Figure 2: Forced synchronous layout"  
-[ImageLongPaintTimes]: images/long-paint.msft.png "Figure 3: Long paint times in timeline recording"  
+[ImageLongRecalculateStyle]: images/performance-recalculate-style-summary.msft.png "Figure 1: Long recalculate style"  
+[ImageForcedSynchronousLayout]: images/jank-performance-recalculate-style-summary.msft.png "Figure 2: Forced synchronous layout"  
+[ImageLongPaintTimes]: images/jank-performance-advanced-paint-instrumentation-summary.msft.png "Figure 3: Long paint times in timeline recording"  
 
 <!-- links -->  
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts"  -->  
-<!--[DevtoolsRenderingToolsJavascriptRuntime]: js-execution.md "Speed Up JavaScript Runtime"  -->  
+<!--[DevtoolsRenderingToolsJavascriptRuntime]: js-runtime.md "Speed Up JavaScript Runtime"  -->  
 
 <!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
 <!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool.md#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
