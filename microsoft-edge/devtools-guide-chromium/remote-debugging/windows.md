@@ -80,6 +80,12 @@ Now navigate to the `edge://inspect` page in Microsoft Edge (Chromium). By defau
 
 If you set up authentication for the host (debuggee) machine, you will be prompted to enter the **Username** and **Password** for the client (debugger) machine to connect successfully.
 
+### Using https instead of http
+If you want to connect to the host (debuggee) machine using `https` instead of `http`, you must use a different `connect port` value. By default, for desktop Windows, the Device Portal will use `50080` as the `connection port` for `http`. For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page. [Read more about the defualt ports used by Device Portal](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal#setup).
+
+>[!NOTE]
+> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range (>50,000) to prevent collisions with existing port claims on the device. To learn more, see the [Port Settings](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.
+
 ## Step 3: Debug content on the host from the client
 If the client (debugger) machine successfully connects to the host (debuggee) machine, the `edge://inspect` page on the client will now display a list of the tabs in Microsoft Edge and any open PWAs on the host.
 
@@ -119,6 +125,11 @@ Some notes on screencasts:
 * Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.  
 * If your host device screen locks, the content of your screencast disappears. Unlock your host device screen to automatically resume the screencast.  
 
+## Known Issues
+The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903. We will fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
 
+The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903. We will fix the **Cookies** pane in a servicing update to Windows 10 version 1903.
 
+The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** panel are not currently working as expected. We will fix these tools in a future update of Microsoft Edge.
 
+The file explorer will not launch from the DevTools in the **Sources** panel or in the **Security** panel when remote debugging. We will fix these tools in a future update of Microsoft Edge.
