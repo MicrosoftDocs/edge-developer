@@ -279,7 +279,7 @@ To mark a single script or pattern of scripts from Settings:
 
 ## Run snippets of debug code from any page   
 
-If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are executable scripts that you author, store, and run within DevTools.  
+If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.  
 
 See [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets] to learn more.  
 
