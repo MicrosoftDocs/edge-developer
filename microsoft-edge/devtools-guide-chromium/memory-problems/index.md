@@ -2,7 +2,7 @@
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/28/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -85,22 +85,18 @@ These two columns tell you different things about how your page is using memory:
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->  
 
-<!--todo: The Timeline panel does not appear to be in DevTools for Edge  -->  
-<!--  
-## Visualize memory leaks with Timeline recordings  
+## Visualize memory leaks with Performance panel  
 
-You may also use the Timeline panel as another starting point in your investigation.  The Timeline panel helps you visualize the memory use of a page over time.  
+You may also use the Performance panel as another starting point in your investigation.  The Performance panel helps you visualize the memory use of a page over time.  
 
-1.  Open the **Timeline** panel on DevTools.  
+1.  Open the **Performance** panel on DevTools.  
 1.  Enable the **Memory** checkbox.  
 1.  Make a **recording**.  
--->  
-<!--todo: add make a recoding section when available.  -->  
-<!--  
+
 > [!TIP]
 > It is a good practice to start and end your recording with a forced garbage collection.  Click the **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button while recording to force garbage collection.  
 
-To demonstrate Timeline memory recordings, consider the code below:  
+To demonstrate memory recordings, consider the code below:  
 
 ```javascript
 var x = [];
