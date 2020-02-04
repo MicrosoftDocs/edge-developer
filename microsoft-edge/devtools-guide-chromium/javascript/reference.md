@@ -351,7 +351,7 @@ See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable]
 [ImageMarkEditorPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Figure 12: Marking a script from the Editor pane"  
 [ImageMarkCallStackPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Figure 13: Marking a script from the Call Stack pane"  
 [ImageMarkScriptSettings]: images/framework-library-code.msft.png "Figure 14: Marking a script from Settings"  
-[ImageWatchPane]: images/watch.msft.png "Figure 15: The Watch pane"  
+[ImageWatchPane]: images/sources-get-started-js-watch.msft.png "Figure 15: The Watch pane"  
 [ImageFormat]: images/sources-html-non-minified.msft.png "Figure 16: The Format button"  
 [ImageEditorPane]: images/sources-html-minified.msft.png "Figure 17: The Editor pane"  
 
