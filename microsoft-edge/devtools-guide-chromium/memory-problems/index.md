@@ -37,7 +37,7 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 *   Find out how much memory your page is currently using with the Microsoft Edge Task Manager.  
 *   Visualize memory usage over time with Timeline recordings.  
 *   Identify detached DOM trees \(a common cause of memory leaks\) with Heap Snapshots.  
-*   Find out when new memory is being allocated in your JavaScript heap \(JS heap\) with Allocation Timeline recordings.  
+*   Find out when new memory is being allocated in your JavaScript heap \(JS heap\) with Allocation instrumentation on timeline recordings.  
 -->  
 
 ## Overview  
@@ -122,7 +122,7 @@ As the recording progresses you are able to see that the JS heap size spikes.  T
 -->  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
-<!--  
+
 ## Discover detached DOM tree memory leaks with Heap Snapshots  
 
 A DOM node is only garbage collected when there are no references to the node from either the DOM tree or JavaScript code of the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.  This section teaches you how to use the heap profilers in DevTools to identify detached nodes.  
@@ -146,7 +146,7 @@ Clicking the button referenced in the code creates a `ul` node with ten `li` chi
 
 Heap snapshots are one way to identify detached nodes.  As the name implies, heap snapshots show you how memory is distributed among the JS objects and DOM nodes for your page at the point of time of the snapshot.  
 
-To create a snapshot, open DevTools and go to the **Profiles** panel, select the **Take Heap Snapshot** radio button, and then press the **Take Snapshot** button.  
+To create a snapshot, open DevTools and go to the **Memory** panel, select the **Heap snapshot** radio button, and then press the **Take snapshot** button.  
 
 > ##### Old Figure 4  
 > Take heap snapshot  
@@ -173,15 +173,14 @@ Click on a yellow node to investigate it further.  In the **Objects** pane you a
 > ##### Old Figure 7  
 > Investigating a yellow node  
 > ![Investigating a yellow node][ImageInvestigatingYellowNode]  
--->  
 
 <!--todo: the allocation timeline does not appear in the DevTools in Edge  -->  
-<!--  
-## Identify JS heap memory leaks with Allocation Timelines  
 
-The Allocation Timeline is another tool that may help you track down memory leaks in your JS heap.  
+## Identify JS heap memory leaks with Allocation instrumentation on timeline  
 
-To demonstrate the Allocation Timeline consider the following code:  
+The Allocation instrumentation on timeline is another tool that may help you track down memory leaks in your JS heap.  
+
+To demonstrate the Allocation instrumentation on timeline consider the following code:  
 
 ```javascript
 var x = [];
@@ -193,9 +192,9 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Every time that the button referenced in the code is pushed, a string of one million characters is added to the `x` array.  
 
-To record an Allocation Timeline, open DevTools, go to the **Profiles** panel, select the **Record Allocation Timeline** radio button, press the **Start** button, perform the action that you suspect is causing the memory leak, and then press the **stop recording** ![stop recording][ImageStopRecordingIcon] button when you are done.  
+To record an Allocation instrumentation on timeline, open DevTools, go to the **Memory** panel, select the **Allocation instrumentation on timeline** radio button, press the **Start** button, perform the action that you suspect is causing the memory leak, and then press the **Stop recording heap profile** ![stop recording][ImageStopRecordingIcon] button when you are done.  
 
-As you are recording, notice if any blue bars show up on the Allocation Timeline, like in [Figure 8](#figure-8).  
+As you are recording, notice if any blue bars show up on the Allocation instrumentation on timeline, like in [Figure 8](#figure-8).  
 
 > ##### Old Figure 8  
 > New allocations  
@@ -215,7 +214,7 @@ Expand the object and click on the value to view more details in the **Object** 
 -->  
 
 <!--todo: The Timeline panel does not appear to be in DevTools for Edge  -->  
-<!--  
+
 ## Investigate memory allocation by function   
 
 Use the **Record Allocation Profiler** type to view memory allocation by JavaScript function.  
@@ -224,7 +223,7 @@ Use the **Record Allocation Profiler** type to view memory allocation by JavaScr
 > Record Allocation Profiler  
 > ![Record Allocation Profiler][ImageRecordAllocationProfiler]  
 
-1.  Select the **Record Allocation Profiler** radio button.  If there is a worker on the page, you are able to select that as the profiling target using the dropdown menu next to the **Start** button.  
+1.  Select the **Allocation sampling** radio button.  If there is a worker on the page, you are able to select that as the profiling target using the dropdown menu next to the **Start** button.  
 1.  Press the **Start** button.  
 1.  Perform the actions on the page which you want to investigate.  
 1.  Press the **Stop** button when you have finished all of your actions.  
@@ -234,7 +233,6 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 > ##### Old Figure 12  
 > Allocation profile  
 >![Allocation profile][ImageAllocationProfile]  
--->  
 
 ## Spot frequent garbage collections  
 
@@ -243,7 +241,7 @@ If your page appears to pause frequently, then you may have garbage collection i
 You are able to use either the Microsoft Edge Task Manager or Timeline memory recordings to spot frequent garbage collections.  In the Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collections.  In Timeline recordings, frequently rising and falling JS heap or node count graphs indicate frequent garbage collections.  
 
 <!--  
-Once you have identified the problem, you are able to use an Allocation Timeline recording to find out where memory is being allocated and which functions are causing the allocations.  
+Once you have identified the problem, you are able to use an Allocation instrumentation on timeline recording to find out where memory is being allocated and which functions are causing the allocations.  
 -->  
 
 <!--## Feedback   -->  
