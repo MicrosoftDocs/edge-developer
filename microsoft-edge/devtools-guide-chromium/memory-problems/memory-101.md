@@ -31,8 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.  
 
-The terms and notions described here refer to the **Microsoft Edge DevTools Memory panel**.  
-If you have ever worked with either the Java, .NET, or some other memory profiler, then this may be a refresher.  
+The terms and notions described here refer to the **Memory** panel.  If you have ever worked with either the Java, .NET, or some other memory profiler, then this may be a refresher.  
 
 <!--todo: add /memory-problems/heap-snapshots when available  -->  
 
@@ -50,7 +49,7 @@ An object may hold memory in two ways:
 
 *   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector \(**GC** for short\).  
 
-When working with the **Memory panel** in DevTools \(a tool for investigating memory issues found under "Memory"\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
+When working with the **Memory** panel in DevTools \(a tool for investigating memory issues found under "Memory"\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
 
 > ##### Figure 2  
 > Shallow and Retained Size  
@@ -160,7 +159,7 @@ Anything not in the JavaScript heap is called a **native object**.  Native objec
 
 **Cons string** is an object that consists of pairs of strings stored and then joined, and is a result of concatenation.  The joining of the **cons string** contents occurs only as needed. An example would be when a substring of a joined string needs to be constructed.
 
-For example, if you concatenate **a** and **b**, you get a string \(a, b\) which represents the result of concatenation.  If you later concatenated **d** with that result, you get another **cons string**: \(\(a, b\), d\).  
+For example, if you concatenate `a` and `b`, you get a string `(a, b)` which represents the result of concatenation.  If you later concatenated `d` with that result, you get another **cons string**: `((a, b, d)`.  
 
 **Array** is an object with numeric keys. **Arrays** are used extensively in the V8 VM for storing large amounts of data. Sets of key-value pairs, like dictionaries, are backed up by **arrays**.  
 
