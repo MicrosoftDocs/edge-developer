@@ -201,6 +201,7 @@ The following table describes some common paint and composite problems and poten
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts"  -->  
 <!--[DevtoolsRenderingToolsJavascriptRuntime]: js-runtime.md "Speed Up JavaScript Runtime"  -->  
 
+<!-- The Timeline Tool page is deprecated  -->  
 <!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
 <!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool.md#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
 <!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: ../evaluate-performance/timeline-tool.md#make-a-recording "Make a recording - How to Use the Timeline Tool"  -->  
