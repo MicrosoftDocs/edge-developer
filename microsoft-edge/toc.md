@@ -60,6 +60,10 @@
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 #### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
+#### Guides
+##### [Override The User Agent String](devtools-guide-chromium/device-mode/override-user-agent.md)
+##### [Override Geolocation](devtools-guide-chromium/device-mode/geolocation.md)
+##### [Simulate Device Orientation](devtools-guide-chromium/device-mode/orientation.md)
 ### DOM
 #### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
@@ -76,7 +80,10 @@
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Accessibility
+#### [Reference](devtools-guide-chromium/accessibility/reference.md)
 #### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
+#### Guides
+##### [Track Which Element Has Focus](devtools-guide-chromium/accessibility/focus.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
