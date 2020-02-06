@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 02/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -61,7 +61,7 @@ You are all set to use and build against the WebView2 API. Press F5 to build and
 
 ## Step 3 - Create a single WebView within the parent window
 
-Now let's add a WebView to the main window. We'll use `CreateWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateWebView` inside the `ICoreWebView2CreateWebView2EnvironmentCompletedHandler` callback.
+Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Host` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2CoreWebView2Host::get_CoreWebView2` to get the associated WebView.
 
 In the callback, let's also set a few settings, resize the WebView to take 100% of the parent window, and navigate to Bing.
 
@@ -70,15 +70,16 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
 // Locate the browser and set up the environment for WebView
-CreateWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
-    Callback<ICoreWebView2CreateWebView2EnvironmentCompletedHandler>(
+CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
+    Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
         [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
 
-            // Create a WebView, whose parent is the main window hWnd
-            env->CreateWebView(hWnd, Callback<ICoreWebView2CreateWebViewCompletedHandler>(
-                [hWnd](HRESULT result, ICoreWebView2CoreWebView2* webview) -> HRESULT {
-                if (webview != nullptr) {
-                    webviewWindow = webview;
+            // Create a CoreWebView2Host and get the associated CoreWebView2 whose parent is the main window hWnd
+            env->CreateCoreWebView2Host(hWnd, Callback<ICoreWebView2CreateWebViewCompletedHandler>(
+                [hWnd](HRESULT result, ICoreWebView2CoreWebView2Host* host) -> HRESULT {
+                if (host != null) {
+                    m_host = host;
+                    m_host->get_CoreWebView2(&webviewWindow);
                 }
 
                 // Add a few settings for the webview
@@ -92,7 +93,7 @@ CreateWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
                 // Resize WebView to fit the bounds of the parent window
                 RECT bounds;
                 GetClientRect(hWnd, &bounds);
-                webviewWindow->put_Bounds(bounds);
+                webviewHost->put_Bounds(bounds);
 
                 // Schedule an async task to navigate to Bing
                 webviewWindow->Navigate(L"https://www.bing.com/");
@@ -118,11 +119,11 @@ Press F5 to build and run the app. Now you have a WebView window displaying Bing
 
 ## Step 4 - Navigation events
 
-We already covered navigating to URL using `ICoreWebView2CoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `ContentLoading` and then `NavigationCompleted`.
+We already covered navigating to URL using `ICoreWebView2CoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click here to learn more.
 
 ![navigationEvents](images/navigationEvents.PNG)
 
-In error cases there may or may not be a ContentLoading event depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple `NavigationStarting` events in a row.
+In error cases there may or may not be `SourceChanged`, `ContentLoading`, or `HistoryChanged` event(s) depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple `NavigationStarting` events in a row.
 
 As an example of utilizing those events, let's register a handler for `NavigationStarting` to cancel any non-https requests. Copy the following code to **HelloWebView.cpp** below `// Step 4 - Navigation events`.
 
