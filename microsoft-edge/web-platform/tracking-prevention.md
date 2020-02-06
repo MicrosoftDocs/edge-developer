@@ -96,7 +96,7 @@ The org engagement mitigation is currently only applied in Balanced mode so that
 
 ### The CompatExceptions List  
 
-Based on recent user feedback Microsoft received, Microsoft Edge maintains a small list of sites \(most of which are in the Disconnect Content category\) that were breaking due to tracking prevention despite having the above two mitigations in place. Sites on this list are exempt from tracking prevention enforcements.  The list can be found on disk at the [locations](#determining-whether/how-a-particular-url-is-classified) described below.  Users may override entries on it using the **Block** option in `edge://settings/content/cookies`.
+Based on recent user feedback Microsoft received, Microsoft Edge maintains a small list of sites \(most of which are in the Disconnect Content category\) that were breaking due to tracking prevention despite having the above two mitigations in place. Sites on this list are exempt from tracking prevention enforcements.  The list can be found on disk at the [locations](#determining-whetherhow-a-particular-url-is-classified) described below.  Users may override entries on it using the **Block** option in `edge://settings/content/cookies`.
 
 To avoid maintaining this list moving forwards, Microsoft is currently working on the [Storage Access API][GitHubMsExplainersStorageAccessApi] in the Chromium codebase.  The [Storage Access API][GitHubMsExplainersStorageAccessApi] gives site developers a way to request storage access from users directly, providing users with more transparency into how their privacy settings are affecting their browsing experience, and giving site developers controls to quickly and intuitively unblock themselves.
 
