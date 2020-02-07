@@ -41,7 +41,7 @@ The native messaging host manifest file must be valid JSON and contains the foll
 | `description` | Short application description. |  
 | `path` | Path to the native messaging host binary.  On Windows, the path may be relative to the directory in which the manifest file is located.  On macOS, the path must be absolute.  The host process is started with the current directory set to the directory that contains the host binary. For example if this parameter is set to `C:\Application\nm_host.exe`, the binary is started using the current directory `C:\Application\`. |  
 | `type` | Type of the interface used to communicate with the native messaging host.  Currently there is only one possible value for this parameter: `stdio`.  This value indicates that Chrome should use `stdin` and `stdout` to communicate with the host. |  
-| `allowed_origins` |  list of Extension that should access to the native messaging host.  To enable your Native Application identify and communicate with Microsoft Edge Addons Extension, set `allowedorigins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file. |  
+| `allowed_origins` |  list of Extension that should access to the native messaging host.  To enable your Native Application identify and communicate with Microsoft Edge Addons Extension, set `allowed_origins` to `chrome-extension://[Microsoft-Catalog-extensionID]/` in your native messaging host manifest file. |  
 
 1.  **Native messaging host location**  
     
