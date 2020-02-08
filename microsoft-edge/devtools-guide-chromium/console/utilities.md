@@ -2,7 +2,7 @@
 title:  Console Utilities API Reference
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date: 01/31/2020
+ms.date: 02/07/2020
 ms.topic:  article
 ms.prod:  microsoft-edge
 keywords:  microsoft edge, web development, f12 tools, devtools
@@ -86,7 +86,7 @@ In [Figure 3](#figure-3), an `img` element is selected in the **Elements** panel
 > The `$0`  
 > ![The $0][ImageElement0]  
 
-In [Figure 4](#figure-4), the image shows a different element selected in the same page.  The `$0` now refers to newly selected element, while `$1` returns the previously selected one.  
+In [Figure 4](#figure-4), the image shows a different element selected in the same page.  The `$0` now refers to the newly selected element, while `$1` returns the previously selected one.  
 
 > ##### Figure 4  
 > The `$1`  
@@ -116,7 +116,7 @@ In [Figure 6](#figure-6), a reference to the currently selected element is retur
 
 This method also supports a second parameter, startNode, that specifies an "element" or Node from which to search for elements.  The default value of this parameter is `document`.  
 
-In [Figure 7](#figure-7), the first `img` element is found after the `title --image` and displays the `src` properly is returned.  
+In [Figure 7](#figure-7), the first `img` element is found after the `title--image` and displays the `src` properly is returned.  
 
 > ##### Figure 7  
 > The $('img', document.querySelector('title--image')).src  
@@ -133,7 +133,7 @@ $$(selector, [startNode])
 
 Returns an array of elements that match the specified CSS selector.  This method is equivalent to calling the [document.querySelectorAll()][MDNDocumentQuerySelectorAll] method.  
 
-In [Figure 8](#figure-8), use `$$()` to create an array of all `<img>` elements in the current document and displays the value of the `src` property of each element.  
+In [Figure 8](#figure-8), use `$$()` to create an array of all `<img>` elements in the current document and display the value of the `src` property for each element.  
 
 ```console
 var images = $$('img');
@@ -158,8 +158,8 @@ for (each in images) {
 ```  
 
 > ##### Figure 9  
-> Using `$$()` to select all images appearing after the select div element in the document and displaying the sources  
-> ![Using $$() to select all images appearing after the select div element in the document and displaying the sources][ImageArrayElementImgNodeSource]  
+> Using `$$()` to select all images that appear after the specified `<div>` element in the document and display the sources  
+> ![Using $$() to select all images that appear after the specified <div> element in the document and display the sources][ImageArrayElementImgNodeSource]  
 
 > [!NOTE]
 > Press `Shift`+`Enter` in the console to start a new line without running the script.  
@@ -222,6 +222,7 @@ The `copy(object)` method copies a string representation of the specified object
 copy($0)
 ```  
 
+<!--  
 ## debug  
 
 ```console
@@ -234,13 +235,14 @@ When you request the specified method, the debugger is invoked and breaks inside
 debug("debug");
 ```  
 
-> ##### Figure 13  
+> ##### Old Figure 13  
 > Breaking inside a method with `debug()`  
 > ![Breaking inside a method with debug()][ImageDebugMethod]  
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to disable all breakpoints.  
 
 For more information on breakpoints, see [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
+-->  
 
 ## dir  
 
@@ -248,18 +250,18 @@ For more information on breakpoints, see [Pause Your Code With Breakpoints][DevT
 dir(object)
 ```  
 
-Displays an object-style listing all of the properties for the specified object.  This method is an alias for the [console.dir()][MDNConsoleDir] method.  
+Displays an object-style listing of all of the properties for the specified object.  This method is an alias for the [console.dir()][MDNConsoleDir] method.  
 
-In [Figure 14](#figure-14), the difference between evaluating `document.head` directly in the method line and using `console.dir()` to display the same element is indicated.  
+In [Figure 13](#figure-13), the difference between evaluating `document.head` directly in the method line and using `console.dir()` to display the same element is indicated.  
 
 ```console
 document.head;
 dir(document.head);
 ```  
 
-> ##### Figure 14  
-> Logging `document.head` with and without `dir()` method  
-> ![Logging document.head with and without dir() method][ImageLogObject]  
+> ##### Figure 13  
+> Logging `document.head` with `dir()` method  
+> ![Logging document.head with dir() method][ImageLogObject]  
 
 For more information, see the [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entry in the Console API.  
 
@@ -279,13 +281,13 @@ inspect(object/method)
 
 Opens and selects the specified element or object in the appropriate panel:  either the **Elements** panel for DOM elements or the **Memory** panel for JavaScript heap objects.  
 
-In [Figure 15](#figure-15), the `document.body` opens in the **Elements** panel.  
+In [Figure 14](#figure-14), the `document.body` opens in the **Elements** panel.  
 
 ```console
 inspect(document.body);
 ```  
 
-> ##### Figure 15  
+> ##### Figure 14  
 > Inspecting an element with `inspect()`  
 > ![Inspecting an element with inspect()][ImageInspectElement]  
 
@@ -297,25 +299,25 @@ When passing a method to inspect, the method opens the document up in the **Sour
 getEventListeners(object)
 ```  
 
-Returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  In [Figure 16](#figure-16), all of the event listeners registered on the document object are listed.  
+Returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  In [Figure 15](#figure-15), all of the event listeners registered on the document object are listed.  
 
 ```console
 getEventListeners(document);
 ```  
 
+> ##### Figure 15  
+> Output of using `getEventListeners(document)`  
+> ![Output of using getEventListeners(document)][ImageGetListeners]  
+
+If more than one listener is registered on the specified object, then the array contains a member for each listener.  In [Figure 16](#figure-16), there are two event listeners registered on the document element for the `click` event.  
+
 > ##### Figure 16  
-> Output of using `getEventListeners()`  
-> ![Output of using getEventListeners()][ImageGetListeners]  
-
-If more than one listener is registered on the specified object, then the array contains a member for each listener.  In [Figure 17](#figure-17), there are two event listeners registered on the document element for the `click` event.  
-
-> ##### Figure 17  
 > Multiple listeners  
 > ![Multiple listeners][ImageMultipleListeners]  
 
 You may further expand each of the following objects to explore the properties.  
 
-> ##### Figure 18  
+> ##### Figure 17  
 > Expanded view of listener object  
 > ![Expanded view of listener object][ImageListenersExpanded]  
 
@@ -333,7 +335,7 @@ For example, suppose your application defined the following object.
 var player1 = { "name":  "Ted", "level": 42 }
 ```  
 
-In [Figure 19](#figure-19), the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
+In [Figure 18](#figure-18), the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
 
 ```console
 keys(player1)
@@ -343,7 +345,7 @@ keys(player1)
 values(player1)
 ```  
 
-> ##### Figure 19  
+> ##### Figure 18  
 > The `keys()` and `values()` commands  
 > ![The keys() and values() commands][ImageConsoleKeysValues]  
 
@@ -362,7 +364,7 @@ function sum(x, y) {
 monitor(sum);
 ```  
 
-> ##### Figure 20  
+> ##### Figure 19  
 > The `monitor()` method  
 > ![The monitor() method][ImageConsoleMonitorSum]  
 
@@ -374,7 +376,7 @@ Use `unmonitor(method)` to cease monitoring.
 monitorEvents(object[, events])
 ```  
 
-When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  See [Figure 21](#figure-21).  
+When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  See [Figure 20](#figure-20).  
 
 The following monitors all resize events on the window object.  
 
@@ -382,7 +384,7 @@ The following monitors all resize events on the window object.
 monitorEvents(window, "resize");
 ```  
 
-> ##### Figure 21  
+> ##### Figure 20  
 > Monitoring window resize events  
 > ![Monitoring window resize events][ImageMonitorResize]  
 
@@ -407,9 +409,9 @@ In [Figure 22](#figure-22), the `key` event type corresponding to `key` events o
 monitorEvents($0, "key");
 ```  
 
-In [Figure 22](#figure-22) the sample output after typing a character in the text field is displayed.  
+In [Figure 21](#figure-21) the sample output after typing a character in the text field is displayed.  
 
-> ##### Figure 22  
+> ##### Figure 21  
 > Monitoring key events  
 > ![Monitoring key events][ImageMonitorKey]  
 
@@ -429,7 +431,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
     
 1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** panel.  
 
-Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
+Profiles may also be nested.  In [Figure 22](#figure-22) the result is the same regardless of the order.  
 
 ```console
 profile('A');
@@ -456,7 +458,7 @@ Completes a JavaScript CPU profiling session and displays the results in the **M
     profileEnd("My profile")
     ```  
 
-Profiles may also be nested.  In [Figure 23](#figure-23) the result is the same regardless of the order.  
+Profiles may also be nested.  In [Figure 22](#figure-22) the result is the same regardless of the order.  
 
 ```console
 profile('A');
@@ -465,9 +467,9 @@ profileEnd('A');
 profileEnd('B');
 ```  
 
-Result in the **Memory** panel.  
+The result appears as a Heap Snapshot in the **Memory** panel.  
 
-> ##### Figure 23  
+> ##### Figure 22  
 > Grouped profiles  
 > ![Grouped profiles][ImageGroupedProfiles]  
 
@@ -480,7 +482,7 @@ Result in the **Memory** panel.
 table(data[, columns])
 ```  
 
-Logs object data with table formatting based upon the data object in with optional column headings.  In [Figure 24](#figure-24), a list of names using a table in the console is displayed.  
+Logs object data with table formatting based upon the data object in with optional column headings.  In [Figure 23](#figure-23), a list of names using a table in the console is displayed.  
 
 ```console
 var names = {
@@ -496,7 +498,7 @@ var names = {
 table(names);
 ```  
 
-> ##### Figure 24  
+> ##### Figure 23  
 > The `table()` method  
 > ![The table() method][ImageConsoleTable]  
 
@@ -569,22 +571,22 @@ values(object);
 [ImageElementImgSource]: images/console-element-selector-image-source.msft.png "Figure 6: The $('img').src"  
 [ImageElementImgNodeSource]: images/console-element-selector-image-filter-source.msft.png "Figure 7: The $('img', document.querySelector('title--image')).src"  
 [ImageArrayElementImgSource]: images/console-element-selector-image-all.msft.png "Figure 8: Using $$() to select all images in the document and display the sources"  
-[ImageArrayElementImgNodeSource]: images/console-element-selector-image-filter-all.msft.png "Figure 9: Using $$() to select all images appearing after the select div element in the document and displaying the sources"  
+[ImageArrayElementImgNodeSource]: images/console-element-selector-image-filter-all.msft.png "Figure 9: Using $$() to select all images that appear after the specified <div> element in the document and display the sources"  
 [ImageArrayXpath]: images/console-array-xpath.msft.png "Figure 10: Using an XPath selector"  
 [ImageArrayXpathChild]: images/console-array-xpath-sub-element.msft.png "Figure 11: Using a more complicated XPath selector"  
 [ImageArrayXpathNode]: images/console-array-xpath-startnode.msft.png "Figure 12: Using an XPath selector with startNode"  
-[ImageDebugMethod]: images/console-debug-text.msft.png "Figure 13: Breaking inside a method with debug()"  
-[ImageLogObject]: images/console-dir-document-head-expanded.msft.png "Figure 14: Logging document.body with and without dir() method"  
-[ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
-[ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners()"  
-[ImageMultipleListeners]: images/elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 17: Multiple listeners"  
-[ImageListenersExpanded]: images/elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 18: Expanded view of listener object"  
-[ImageConsoleKeysValues]: images/console-keys-values.msft.png "Figure 19: The keys() and values() commands"  
-[ImageConsoleMonitorSum]: images/console-function-monitor-sum.msft.png "Figure 20: The monitor() method"  
-[ImageMonitorResize]: images/console-monitor-events-resize-window.msft.png "Figure 21: Monitoring window resize events"  
-[ImageMonitorKey]: images/console-monitor-events-type-t-y.msft.png "Figure 22: Monitoring key events"  
-[ImageGroupedProfiles]: images/memory-multiple-cpu-profiles.msft.png "Figure 23: Grouped profiles"  
-[ImageConsoleTable]: images/console-table-display.msft.png "Figure 24: The table() method"  
+<!--[ImageDebugMethod]: images/console-debug-text.msft.png "Old Figure 13: Breaking inside a method with debug()"  -->  
+[ImageLogObject]: images/console-dir-document-head-expanded.msft.png "Figure 13: Logging document.body with dir() method"  
+[ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 14: Inspecting an element with inspect()"  
+[ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 15: Output of using getEventListeners(document)"  
+[ImageMultipleListeners]: images/elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 16: Multiple listeners"  
+[ImageListenersExpanded]: images/elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 17: Expanded view of listener object"  
+[ImageConsoleKeysValues]: images/console-keys-values.msft.png "Figure 18: The keys() and values() commands"  
+[ImageConsoleMonitorSum]: images/console-function-monitor-sum.msft.png "Figure 19: The monitor() method"  
+[ImageMonitorResize]: images/console-monitor-events-resize-window.msft.png "Figure 20: Monitoring window resize events"  
+[ImageMonitorKey]: images/console-monitor-events-type-t-y.msft.png "Figure 21: Monitoring key events"  
+[ImageGroupedProfiles]: images/memory-multiple-cpu-profiles.msft.png "Figure 22: Grouped profiles"  
+[ImageConsoleTable]: images/console-table-display.msft.png "Figure 23: The table() method"  
 
 <!-- links -->  
 
