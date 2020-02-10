@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -159,6 +159,11 @@ The Console now supports redeclarations of `let` and `class` statements.  The in
 > [!WARNING]
 > Redeclaring a `let` or `class` statement in a script outside of the Console or within a single Console input still causes a `SyntaxError`.  
 
+<aside class="warning">
+  Redeclaring a <code>let</code> or <code>class</code> statement in a script outside of the
+  Console or within a single Console input will still cause a <code>SyntaxError</code>.
+</aside>
+
 For example, previously, when redeclaring a local variable with `let`, the Console would throw an error:  
 
 > ##### Figure 10  
@@ -296,7 +301,11 @@ To discuss the new features and changes in this post, or anything else related t
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
 
-<!--<<../../_shared/discover.md>>  -->  
+<!--<<../../_shared/devtools-feedback.md>> -->
+
+<!--<<../../_shared/canary.md>> -->
+
+<!--<<../../_shared/discover.md>> -->
 
 
 
@@ -348,19 +357,19 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"  
 
-[DwarfHome]: http://dwarfstd.org "Dwarf Home"  
+[DwarfHome]: https://dwarfstd.org "Dwarf Home"  
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: http://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
+[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
 [MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider Addons"  
-[MicrosoftVisualStudio]: http://aka.ms/vs "Visual Studio"  
+[MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"  
 [MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Debug JavaScript in Microsoft Edge from Visual Studio | Visual Studio Blog"  
 [MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 for Windows \& Mac"  
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"  
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
-[VisualStudioCode]: http://aka.ms/vscode "Visual Studio Code"  
+[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"  
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"  
 [VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"  
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
@@ -377,7 +386,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
