@@ -135,7 +135,7 @@ Hover over a function to display the name and timing data.  The following inform
 | **Name** | The name of the function.  |  
 | **Self size** | The size of the current invocation of the function, including only the statements in the function, not including any functions that are called.  |  
 | **Total size** | The size of the current invocation of this function and any functions that it called.  |  
-| **URL** | The location of the function definition in the form of `file.js:100` where `file.js` is the name of the file where the function is defined and `100` is the line number of the definition.  |  
+| **URL** | The location of the function definition in the form of `base.js:261` where `base.js` is the name of the file where the function is defined and `261` is the line number of the definition.  |  
 <!--*   **Aggregated self time**.  Aggregate time for all invocations of the function across the recording, not including functions called by this function.  -->  
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
