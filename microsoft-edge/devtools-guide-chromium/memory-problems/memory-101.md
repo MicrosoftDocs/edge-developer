@@ -2,7 +2,7 @@
 title: 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/12/2020
+ms.date: 02/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -65,11 +65,11 @@ Renderer memory is all memory of the process where an inspected page is rendered
 
 ### Retained size  
 
-This is the size of memory that is freed once the object is deleted along with the dependent objects that were made unreachable from **GC roots**.  
+This is the size of memory that is freed once the object is deleted along with the dependent objects that were made unreachable from **Garbage Collector (GC) roots**.  
 
-**GC roots** are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both GC roots and the handles are not something you need to worry about.  
+**Garbage Collector (GC) roots** are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector (GC) roots and the handles are not something you need to worry about.  
 
-There are lots of internal GC roots most of which are not interesting for the users.  From the applications standpoint there are following kinds of roots:  
+There are lots of internal Garbage Collector (GC) roots most of which are not interesting for the users.  From the applications standpoint there are following kinds of roots:  
 
 * Window global object \(in each iframe\).  There is a distance field in the heap snapshots which is the number of property references on the shortest retaining path from the window.  
 
@@ -80,13 +80,13 @@ There are lots of internal GC roots most of which are not interesting for the us
 >[!TIP]
 > Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** panel before taking a heap snapshot in the **Memory** panel
 
-The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is GCd.  
+The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected (GCd).  
 
 > ##### Figure 3  
-> You are not able to control how the root object is GCd.  
->![You are not able to control how the root object is GCd.][ImageDontControl]  
+> You are not able to control how the root object is garbage collected (GCd).  
+>![You are not able to control how the root object is garbage collected (GCd).][ImageDontControl]  
 
-Whatever is not reachable from the root gets GCd.  
+Whatever is not reachable from the root gets garbage collected (GCd).  
 
 > [!NOTE]
 > Both the [Shallow size](#shallow-size) and [Retained size](#retained-size) columns represent data in bytes.  
@@ -99,7 +99,7 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 *   **Edges**  are labelled using the names of **properties**.  
 
 <!--Learn [how to record a profile using the Heap Profiler](../profile/memory-problems/heap-snapshots).  -->  
-Some of the eye-catching things that you may see in the Heap Snapshot recording in the **Memory** panel below include distance: the distance from the GC root. If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Some of the eye-catching things that you may see in the Heap Snapshot recording in the **Memory** panel below include distance: the distance from the Garbage Collector (GC) root. If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
 > ##### Figure 4  
 > Distance from root  
@@ -123,7 +123,7 @@ In the diagram below:
 > Dominator tree structure  
 >![Dominator tree structure][ImageDominatorsSpanning]  
 
-In the example below, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from GC to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
+In the example below, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector (GC) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
 
 > ##### Figure 6  
 > Animated dominator illustration  
@@ -176,7 +176,7 @@ When there are a small number of properties, the properties are stored internall
 
 Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, thus forming a connected graph.  Note that native objects are not represented in the JavaScript heap  —  that is why native objects have zero size. Instead, wrapper objects are created.  
 
-Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as GC is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
+Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector (GC) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
 <!--## Feedback   -->  
 
@@ -186,7 +186,7 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 [ImageThinkGraph]: images/thinkgraph.msft.png "Figure 1: Visual representation of memory"  
 [ImageShallowRetained]: images/shallow-retained.msft.png "Figure 2: Shallow and Retained Size"  
-[ImageDontControl]: images/dontcontrol.msft.png "Figure 3: You are not able to control how the root object is GCd."  
+[ImageDontControl]: images/dontcontrol.msft.png "Figure 3: You are not able to control how the root object is garbage collected (GCd)."  
 [ImageRoot]: images/root.msft.png "Figure 4: Distance from root"  
 [ImageDominatorsSpanning]: images/dominatorsspanning.msft.png "Figure 5: Dominator tree structure"  
 [ImageDominators]: images/dominators.msft.gif "Figure 6: Animated dominator illustration"  
