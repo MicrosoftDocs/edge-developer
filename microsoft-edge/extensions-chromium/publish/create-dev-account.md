@@ -3,7 +3,7 @@ description: The steps to create Microsoft Edge Addons developer account on Part
 title: Open A New Developer Account
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
