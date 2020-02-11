@@ -1,8 +1,8 @@
 ---
-title: How to Use the Allocation Profiler Tool
+title: How to Use the Allocation instrumentation on timeline Tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/12/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -25,36 +25,36 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# How to Use the Allocation Profiler Tool   
+# How to Use the Allocation instrumentation on timeline Tool   
 
 
 
-Use the allocation profiler tool to find objects that are not being properly garbage collected, and continue to retain memory.  
+Use the Allocation instrumentation on timeline tool to find objects that are not being properly garbage collected, and continue to retain memory.  
 
 ## How the tool works  
 
-The **allocation profiler** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Timeline** panel.  
+The **Allocation instrumentation on timeline** tool combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  
 Similar to these tools, tracking heap allocation for one of more objects involves starting a recording, performing a sequence of actions, then stop the recording for analysis.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
-<!--todo: add profile evaluate performance (Timeline panel) section when available  -->  
+<!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
 The tool takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms!\) and one final snapshot at the end of the recording.  
 
 > ##### Figure 1  
-> Allocation profiler  
-> ![Allocation profiler][ImageObjectTracker]  
+> Allocation instrumentation on timeline  
+> ![Allocation instrumentation on timeline][ImageObjectTracker]  
 
 > [!NOTE]
-> The number after the `@` is an object ID that persists among multiple snapshots taken.  This allows precise comparison between heap states.  Displaying the address of an object makes no sense, as objects are moved during garbage collections.  
+> The number after the `@` is an object ID that persists among multiple snapshots taken.  This allows precise comparison between heap states.  Displaying the address of an object makes no sense, since objects are moved during garbage collections.  
 
-## Enable allocation profiler  
+## Enable Allocation instrumentation on timeline  
 
-To begin using the allocation profiler:  
+Follow these steps to begin using the Allocation instrumentation on timeline  
 
 1.  Make sure you have the latest [Microsoft Edge Channel][MicrosoftEdgeChannel].  
-1.  Open the Developer Tools and click on the gear icon in the lower right.  
-1.  Now, open the Profiler panel, you should see a profile called "Record Heap Allocations"  
+1.  Open the Developer Tools and click on the gear icon in the upper right.  
+1.  Open the **Memory** panel, you should see a profile section named Allocation Timelines.  
 
 > ##### Figure 2  
 > Record heap allocations profiler  
@@ -66,21 +66,21 @@ The heap allocation profile shows where objects are being created and identifies
 In [Figure 3](#figure-3), the bars at the top indicate when new objects are found in the heap.  
 
 The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  
-Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected:  
+Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.  
 
 > ##### Figure 3  
-> Allocation profiler snapshot  
-> ![Allocation profiler snapshot][ImageCollected]  
+> Allocation instrumentation on timeline snapshot  
+> ![Allocation instrumentation on timeline snapshot][ImageCollected]  
 
-In [Figure 4](#figure-4), an action was performed 10 times.  
-The sample program caches five objects, so the last five blue bars are expected.  
-But the leftmost blue bar indicates a potential problem.  
+In [Figure 4](#figure-4), an action was performed 3 times.  
+<!--The sample program caches five objects, so the last five blue bars are expected.  
+But the left-most blue bar indicates a potential problem.  -->  
 
-You are able to use the sliders in the timeline above to zoom in on that particular snapshot and see the objects that were recently allocated at that point:  
+You are able to use the sliders in the timeline above to zoom into that particular snapshot and see the objects that were recently allocated at that point:  
 
 > ##### Figure 4  
-> Zoom in on snapshot  
-> ![Zoom in on snapshot][ImageSliders]  
+> Zoom into snapshot  
+> ![Zoom into snapshot][ImageSliders]  
 
 Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.  
 
@@ -96,17 +96,17 @@ You are able to view memory allocation by JavaScript function.  <!--See [Investi
 
 <!-- image links -->  
 
-[ImageObjectTracker]: images/object-tracker.msft.png "Figure 1: Allocation profiler"  
-[ImageRecordHeap]: images/record-heap.msft.png "Figure 2: Record heap allocations profiler"  
-[ImageCollected]: images/collected.msft.png "Figure 3: Allocation profiler snapshot"  
-[ImageSliders]: images/sliders.msft.png "Figure 4: Zoom in on snapshot"  
+[ImageObjectTracker]: images/memory-allocation-timeline-snapshot-highlighted.msft.png "Figure 1: Allocation instrumentation on timeline"  
+[ImageRecordHeap]: images/memory-allocation-instrumentation-on-timeline-selected.msft.png "Figure 2: Record heap allocations profiler"  
+[ImageCollected]: images/memory-allocation-timelines-snapshot.msft.png "Figure 3: Allocation instrumentation on timeline snapshot"  
+[ImageSliders]: images/memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Figure 4: Zoom into snapshot"  
 
 <!-- links -->  
 
 <!--[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems"  >
 
 <!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
-<!--[TimelinePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
+<!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Download a Microsoft Edge Channel"  
 
