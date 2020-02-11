@@ -2,7 +2,7 @@
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/28/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,7 +37,7 @@ Inspect and modify animations with the Microsoft Edge DevTools Animation Inspect
 
 ### Summary  
 
-*   Capture animations by opening the Animation Inspector.  The Animation Inspector automatically detects animations and sorts animations into groups.  
+*   Capture animations by opening the Animation Inspector.  The Animation Inspector automatically detects and sorts animations into groups.  
 *   Inspect animations by slowing down each one, replaying each one, or viewing the source code.  
 *   Modify animations by changing the timing, delay, duration, or keyframe offsets.  
 
@@ -45,15 +45,15 @@ Inspect and modify animations with the Microsoft Edge DevTools Animation Inspect
 
 The Microsoft Edge DevTools Animation Inspector has two main purposes.  
 
-*   Inspecting animations.  You want to slow down, replay, or inspect the source code for an animation group.  
-*   Modifying animations.  You want to modify the timing, delay, duration, or keyframe offsets of an animation group.  Bezier editing and keyframe editing are currently not supported.  
+*   Inspecting animations.  You want to slow down, replay, or inspect the source code for an Animation Group.  
+*   Modifying animations.  You want to modify the timing, delay, duration, or keyframe offsets of an Animation Group.  Bezier editing and keyframe editing are currently not supported.  
 
 The Animation Inspector supports CSS animations, CSS transitions, and web animations.  `requestAnimationFrame` animations are currently not supported.  
 
-### What is an animation group?  
+### What is an Animation Group?  
 
-An animation group is a group of animations that may be related to each one another.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations may be one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\) and groups the animations side-by-side.  
-In other words, a set of animations all triggered in the same script block are grouped together, but if the animations are asynchronous then the animations are grouped separately.  
+An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\).  The Animation Inspector also groups the animations side-by-side.  
+In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.  
 
 ## Get started  
 
@@ -78,18 +78,18 @@ The Animation Inspector opens up as a tab next to the Console Drawer.  Since the
 
 The Animation Inspector is grouped into four main sections \(or panes\).  This guide refers to each pane as follows:  
 
-| Pane | Description |  
-|:--- |:--- |  
-| 1 **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
-| 2 **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
-| 3 **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
-| 4 **Details** | Inspect and modify the currently selected Animation Group. |  
+| | Pane | Description |  
+| --- |:--- |:--- |  
+| 1 | **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
+| 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
+| 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
+| 4 | **Details** | Inspect and modify the currently selected Animation Group. |  
 
 > ##### Figure 4  
-> Annotation Animation Inspector  
-> ![annotation Animation Inspector][ImageAnnotatedAnimationInspector]  
+> Annotated Animation Inspector  
+> ![Annotated Animation Inspector][ImageAnnotatedAnimationInspector]  
 
-To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, you may assist the Animation Inspector detect the animation by reloading the page.  
+To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, reload the page with the Animation Inspector open to detect the animation.  
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
 
@@ -110,14 +110,14 @@ After you capture an animation, there are a few ways to replay it:
 After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.  
 
 > ##### Figure 5  
-> Animation group details  
-> ![Animation group details][ImageAnimationGroupDetails]  
+> Animation Group details  
+> ![Animation Group details][ImageAnimationGroupDetails]  
 
 Hover over an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** panel.  
 
 > ##### Figure 6  
-> Hover over animation to highlight it in viewport  
-> ![Hover over animation to highlight it in viewport][ImageHoverOverAnimationHighlightViewport]  
+> Hover over the animation to highlight it in viewport  
+> ![Hover over the animation to highlight it in viewport][ImageHoverOverAnimationHighlightViewport]  
 
 The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in [Figure 7](#figure-7), sections two and three represent iterations of section one.  
 
@@ -175,9 +175,9 @@ To add a delay to an animation, click and drag it anywhere except the circles.
 [ImageAnimationInspector]: images/elements-styles-drawer-animations-completed.msft.png "Figure 1: Animation inspector"  
 [ImageAnimationsViaMainMenu]: images/elements-styles-more-tools-animations.msft.png "Figure 2: Animations via Main Menu"  
 [ImageEmptyAnimationInspector]: images/elements-styles-drawer-animations.msft.png "Figure 3: Empty Animation Inspector"  
-[ImageAnnotatedAnimationInspector]: images/elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotation Animation Inspector"  
-[ImageAnimationGroupDetails]: images/elements-styles-drawer-animations-selected-completed.msft.png "Figure 5: Animation group details"  
-[ImageHoverOverAnimationHighlightViewport]: images/split-elements-styles-drawer-animations-selected-completed.msft.png "Figure 6: Hover over animation to highlight it in viewport"  
+[ImageAnnotatedAnimationInspector]: images/elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotated Animation Inspector"  
+[ImageAnimationGroupDetails]: images/elements-styles-drawer-animations-selected-completed.msft.png "Figure 5: Animation Group details"  
+[ImageHoverOverAnimationHighlightViewport]: images/split-elements-styles-drawer-animations-selected-completed.msft.png "Figure 6: Hover over the animation to highlight it in viewport"  
 [ImageDiagramAnimationIterations]: images/glitch-display-animations-highlight.msft.png "Figure 7: Diagram of animation iterations"  
 [ImageColorCodedAnimations]: images/glitch-display-animations.msft.png "Figure 8: Color-coded animations"  
 [ImageOriginalAnimationBeforeModification]: images/glitch-spin-animations-console-animations.msft.png "Figure 9: Original animation before modification"  
