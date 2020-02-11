@@ -49,7 +49,7 @@ Once your code is paused, step through it, one line at a time, investigating con
 
 ### Step over line of code   
 
-When paused on a line of code containing a function that is not relevant to the problem you are debugging, click **Step over** ![Step over][ImageStepOverIcon] to run the function without stepping into it.  
+When paused on a line of code containing a function that is not relevant to the problem you are debugging, click on the **Step over** ![Step over][ImageStepOverIcon] icon to run the function without stepping into it.  
 
 > ##### Figure 1  
 > Selecting **Step over**  
@@ -73,7 +73,7 @@ You are paused on `A`.  By pressing **Step over**, DevTools runs all the code in
 
 ### Step into line of code   
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, click **Step into** ![Step into][ImageStepIntoIcon] to investigate that function further.  
+When paused on a line of code containing a function call that is related to the problem you are debugging, click on the **Step into** ![Step into][ImageStepIntoIcon] icon to investigate that function further.  
 
 > ##### Figure 2  
 > Selecting **Step into**  
@@ -97,7 +97,7 @@ You are paused on `A`.  By pressing **Step into**, DevTools runs this line of co
 
 ### Step out of line of code   
 
-When paused inside of a function that is not related to the problem you are debugging, click **Step out** ![Step out][ImageStepOutIcon] to run the rest of the code of the function.  
+When paused inside of a function that is not related to the problem you are debugging, click on the **Step out** ![Step out][ImageStepOutIcon] icon to run the rest of the code of the function.  
 
 > ##### Figure 3  
 > Selecting **Step out**  
@@ -119,11 +119,11 @@ function getName() {
 
 You are paused on `A`.  By pressing **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.  
 
-### Run all code up to a certain line   
+### Run all code up to a specific line   
 
 When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.  
 
-You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then press **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon], but there is a faster way.  
+You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then click on the **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] icon, but there is a faster way.  
 
 Right-click the line of code in which you are interested, and select **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.  
 
@@ -155,7 +155,7 @@ You are paused on `A`.  After clicking **Restart Frame**, you should be paused o
 
 ### Resume script runtime   
 
-To continue the runtime after a pause of your script, click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon].  DevTools runs the script up until the next breakpoint, if any.  
+To continue the runtime after a pause of your script, click on the **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] icon.  DevTools runs the script up until the next breakpoint, if any.  
 
 > ##### Figure 6  
 > Selecting **Resume script execution**  
@@ -163,7 +163,7 @@ To continue the runtime after a pause of your script, click **Resume Script Exec
 
 #### Force script runtime   
 
-To ignore all breakpoints and force your script to resume running, click and hold **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] and then select **Force script execution** ![Force script execution][ImageForceScriptExecutionIcon].  
+To ignore all breakpoints and force your script to resume running, click and hold the **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] icon and then select **Force script execution** ![Force script execution][ImageForceScriptExecutionIcon].  
 
 > ##### Figure 7  
 > Selecting **Force script execution**  
@@ -292,13 +292,13 @@ Use the **Watch** pane to watch the values of custom expressions.  You may watch
 > The **Watch** pane  
 > ![The Watch pane][ImageWatchPane]  
 
-*   Click **Add Expression** ![Add Expression][ImageAddExpressionIcon] to create a new watch expression.  
-*   Click **Refresh** ![Refresh][ImageRefreshIcon] to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover over an expression and click **Delete Expression** ![Delete Expression][ImageDeleteExpressionIcon] to delete it.  
+*   Click on the **Add Expression** ![Add Expression][ImageAddExpressionIcon] icon to create a new watch expression.  
+*   Click on the **Refresh** ![Refresh][ImageRefreshIcon] icon to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
+*   Hover over an expression and click on the **Delete Expression** ![Delete Expression][ImageDeleteExpressionIcon] icon to delete it.  
 
 ## Make a minified file readable   
 
-Click **Format** ![Format][ImageFormatIcon] to make a minified file human-readable.  
+Click on the **Format** ![Format][ImageFormatIcon] icon to make a minified file human-readable.  
 
 > ##### Figure 16  
 > The **Format** button  
