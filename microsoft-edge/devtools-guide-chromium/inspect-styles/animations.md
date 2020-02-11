@@ -59,8 +59,7 @@ In other words, a set of animations that are all triggered in the same script bl
 
 There are two ways to open the Animation Inspector:  
 
-*   Through the Main Menu:  
-    1.  Click **Customize and Control DevTools** `...` to open the Main Menu.  
+*   Open the **Customize and Control DevTools** menu  
     1.  Navigate to the **More tools** sub-menu.  
     1.  Select **Animations**:  
         
@@ -68,7 +67,8 @@ There are two ways to open the Animation Inspector:
         > Animations via Main Menu  
         > ![Animations via Main Menu][ImageAnimationsViaMainMenu]  
         
-*   Open the Command Menu and type `Drawer: Show Animations`.  
+*   Open the **Command Menu**  
+    1.  Type `Drawer: Show Animations`.  
 
 The Animation Inspector opens up as a tab next to the Console Drawer.  Since the Animation Inspector is a Drawer tab, you may use the Animation Inspector from any DevTools panel.  
 
@@ -102,7 +102,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 After you capture an animation, there are a few ways to replay it:  
 
 *   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
-*   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** button \(![replay button][ImageReplayButtonIcon]\).  The animation is replayed in the viewport.  Click on the **animation speed** buttons \(![animation speed buttons][ImageAnimationSpeedButtonsIcon]\) to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
+*   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** ![replay icon][ImageReplayButtonIcon] icon.  The animation is replayed in the viewport.  Click on the **animation speed** ![animation speed icons][ImageAnimationSpeedButtonsIcon] icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
 *   Click and drag the red vertical bar to scrub the viewport animation.  
 
 ### View animation details  
