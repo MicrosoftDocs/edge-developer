@@ -2,7 +2,7 @@
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -117,7 +117,7 @@ function getName() {
 }
 ```  
 
-you are paused on `A`.  By pressing **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.  
+You are paused on `A`.  By pressing **Step out**, DevTools runs the rest of the code in `getName()`, which is just `B` in this example, and then pauses on `C`.  
 
 ### Run all code up to a certain line   
 
@@ -194,7 +194,7 @@ While paused on a line of code, use the **Scope** pane to view and edit the valu
 
 While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.  
 
-If you are working with async code, check the **Async** checkbox to enable async call stacks.  
+<!--If you are working with async code, check the **Async** checkbox to enable async call stacks.  -->  
 
 Click on an entry to jump to the line of code where that function was called.  The blue arrow icon represents which function DevTools is currently highlighting.  
 
@@ -202,7 +202,8 @@ Click on an entry to jump to the line of code where that function was called.  T
 > The **Call Stack** pane  
 > ![The Call Stack pane][ImageCallStackPane]  
 
-Note: When not paused on a line of code, the **Call Stack** pane is empty.  
+> [!NOTE]
+> When not paused on a line of code, the **Call Stack** pane is empty.  
 
 ### Copy stack trace   
 
@@ -226,7 +227,7 @@ onClick (get-started.js:15)
 
 ## Ignore a script or pattern of scripts  
 
-Mark a script when you want to ignore that script while debugging.  When marked, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.  
+Mark a script as Library code when you want to ignore that script while debugging.  When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.  
 
 For example, suppose you are stepping through this code:  
 
@@ -238,44 +239,44 @@ function animate() {
 }
 ```  
 
-`A` is a third-party library that you trust.  If you are confident that the problem you are debugging is not related to the third-party library, then it makes sense to mark the script.  
+`A` is a third-party library that you trust.  If you are confident that the problem you are debugging is not related to the third-party library, then it makes sense to mark the script as **Library code**.  
 
-### Mark a script from the Editor pane  
+### Mark a script as Library code from the Editor pane  
 
-To mark a script from the **Editor** pane:  
+To mark a script as **Library code** from the **Editor** pane:  
 
 1.  Open the file.  
 1.  Right-click anywhere.  
 1.  Select **Mark as Library code**.  
 
 > ##### Figure 12  
-> Marking a script from the **Editor** pane  
-> ![Marking a script from the Editor pane][ImageMarkEditorPane]  
+> Marking a script as **Library code** from the **Editor** pane  
+> ![Marking a script as Library code from the Editor pane][ImageMarkEditorPane]  
 
-### Mark a script from the Call Stack pane  
+### Mark a script as Library code from the Call Stack pane  
 
-To mark a script from the **Call Stack** pane:  
+To mark a script as **Library code** from the **Call Stack** pane:  
 
 1.  Right-click on a function from the script.  
 1.  Select **Mark as Library code**.  
 
 > ##### Figure 13  
-> Marking a script from the **Call Stack** pane  
-> ![Marking a script from the Call Stack pane][ImageMarkCallStackPane]  
+> Marking a script as **Library code** from the **Call Stack** pane  
+> ![Marking a script as Library code from the Call Stack pane][ImageMarkCallStackPane]  
 
-### Mark a script from Settings  
+### Mark a script as Library code from Settings  
 
 To mark a single script or pattern of scripts from Settings:  
 
 1.  Open [Settings][DevToolsCustomize].  
 1.  Go to the **Library code** tab.  
 1.  Click **Add pattern**.  
-1.  Enter the script name or a regex pattern of script names to mark.  
+1.  Enter the script name or a regex pattern of script names to mark as **Library code**.  
 1.  Click **Add**.  
 
 > ##### Figure 14  
-> Marking a script from Settings  
-> ![Marking a script from Settings][ImageMarkScriptSettings]  
+> Marking a script as **Library code** from Settings  
+> ![Marking a script as Library code from Settings][ImageMarkScriptSettings]  
 
 ## Run snippets of debug code from any page   
 
@@ -305,13 +306,13 @@ Click **Format** ![Format][ImageFormatIcon] to make a minified file human-readab
 
 ## Edit a script   
 
-When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external browser and then reload the page.  You may edit your script in DevTools.  
+When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external editor or IDE and then reload the page.  You may edit your script in DevTools.  
 
 To edit a script:  
 
 1.  Open the file in the **Editor** pane of the **Sources** panel.  
 1.  Make your changes in the **Editor** pane.  
-1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into Microsoft Edge JavaScript engine.  
+1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into into the JavaScript engine of Microsoft Edge.  
 
 > ##### Figure 17  
 > The **Editor** pane  
@@ -348,9 +349,9 @@ See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable]
 [ImageScopePane]: images/sources-get-started-js-scope.msft.png "Figure 9: The Scope pane"  
 [ImageCallStackPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty.msft.png "Figure 10: The Call Stack pane"  
 [ImageSelectingCopyStackTrace]: images/glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png "Figure 11: Selecting Copy Stack Trace"  
-[ImageMarkEditorPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Figure 12: Marking a script from the Editor pane"  
-[ImageMarkCallStackPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Figure 13: Marking a script from the Call Stack pane"  
-[ImageMarkScriptSettings]: images/framework-library-code.msft.png "Figure 14: Marking a script from Settings"  
+[ImageMarkEditorPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Figure 12: Marking a script as Library code from the Editor pane"  
+[ImageMarkCallStackPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Figure 13: Marking a script as Library code from the Call Stack pane"  
+[ImageMarkScriptSettings]: images/framework-library-code.msft.png "Figure 14: Marking a script as Library code from Settings"  
 [ImageWatchPane]: images/sources-get-started-js-watch.msft.png "Figure 15: The Watch pane"  
 [ImageFormat]: images/sources-html-non-minified.msft.png "Figure 16: The Format button"  
 [ImageEditorPane]: images/sources-html-minified.msft.png "Figure 17: The Editor pane"  
