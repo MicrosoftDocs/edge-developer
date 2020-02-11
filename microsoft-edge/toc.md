@@ -35,6 +35,7 @@
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### [Inspect animations](devtools-guide-chromium/inspect-styles/animations.md)
 #### Guides
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
@@ -87,6 +88,8 @@
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
+### Memory
+#### [Understand Memory Terminology](devtools-guide-chromium/memory-problems/memory-101.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Security](devtools-guide-chromium/security/index.md)
@@ -205,8 +208,9 @@
 ## [WebDriver (EdgeHTML)](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
-### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
-## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
+### [Tracking Prevention in Microsoft Edge](web-platform/tracking-prevention.md)
+### [Microsoft Edge user agent string](web-platform/user-agent-string.md)
+## [WebVR Developer Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
 #### [Considerations when Using the Windows Runtime API](windows-runtime/considerations-when-using-the-windows-runtime-api.md)
