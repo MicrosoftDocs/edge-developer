@@ -35,6 +35,7 @@
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### [Inspect animations](devtools-guide-chromium/inspect-styles/animations.md)
 #### Guides
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
