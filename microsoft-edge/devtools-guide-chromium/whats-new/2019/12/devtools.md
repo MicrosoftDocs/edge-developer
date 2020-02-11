@@ -159,6 +159,11 @@ The Console now supports redeclarations of `let` and `class` statements.  The in
 > [!WARNING]
 > Redeclaring a `let` or `class` statement in a script outside of the Console or within a single Console input still causes a `SyntaxError`.  
 
+<aside class="warning">
+  Redeclaring a <code>let</code> or <code>class</code> statement in a script outside of the
+  Console or within a single Console input will still cause a <code>SyntaxError</code>.
+</aside>
+
 For example, previously, when redeclaring a local variable with `let`, the Console would throw an error:  
 
 > ##### Figure 10  
