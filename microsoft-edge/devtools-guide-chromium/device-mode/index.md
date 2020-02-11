@@ -267,7 +267,6 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 
 <!--See [Join the DevTools community][DevToolsCommunity] for other ways to leave feedback.  -->  
 
-
 <!-- image links -->  
 
 [ImageCaptureIcon]: images/capture-settings-icon.msft.png  
