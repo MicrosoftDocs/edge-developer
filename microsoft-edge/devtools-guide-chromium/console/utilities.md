@@ -422,7 +422,7 @@ In [Figure 22](#figure-22) the sample output after typing a character in the tex
 profile([name])
 ```  
 
-Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profile-end) method completes the profile and displays the results in the **Memory** panel.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
+Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** panel.  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Run the `profile()` method to start profiling.  
     
@@ -450,7 +450,7 @@ profileEnd('B');
 profileEnd([name])
 ```  
 
-Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.  You must be running the [profile()](#profile) method.  See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  
+Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.  You must be running the [profile()](#profile) method.  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Run the [profile()](#profile) method to start profiling.  
 1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** panel.  
@@ -594,7 +594,7 @@ values(object);
 [DevToolsConsoleApi]: api.md "Console API Reference"  
 [DevToolsConsoleApiConsoleDirObject]: api.md#dir "dir - Console API Reference"  
 [DevToolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
-[DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-execution.md "Speed Up JavaScript Runtime"  
+<!--[DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-runtime.md "Speed Up JavaScript Runtime"  -->
 
 [MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
 [MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
