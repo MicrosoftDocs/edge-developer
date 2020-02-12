@@ -1,11 +1,11 @@
-# [Microsoft Edge documentation](index.md)
+# [Microsoft Edge documentation](index.yml)
 ## [Accessibility](accessibility.md)
 ### [Design](accessibility/design.md)
 ### [Build](accessibility/build.md)
 #### [ARIA and UI Automation](accessibility/build/ARIA-and-UI-Automation.md)
 ### [Test](accessibility/test.md)
 ## [Dev Guide](dev-guide.md)
-### [What’s new in EdgeHTML](dev-guide/whats-new.md)
+### [What's new in EdgeHTML](dev-guide/whats-new.md)
 #### [EdgeHTML 17](dev-guide/whats-new/edgeHTML-17.md)
 #### [EdgeHTML 16](dev-guide/whats-new/edgeHTML-16.md)
 #### [EdgeHTML 15](dev-guide/whats-new/edgeHTML-15.md)
@@ -18,7 +18,7 @@
 #### [Flash](dev-guide/browser-features/flash.md)
 #### [Reading view](dev-guide/browser-features/reading-view.md)
 #### [Search provider discovery](dev-guide/browser-features/search-provider-discovery.md)
-### [Windows integration features](dev-guide/windows-integration.md) 
+### [Windows integration features](dev-guide/windows-integration.md)
 #### [Payment Request API](dev-guide/windows-integration/Payment-Request-API.md)
 #### [Web Authentication](dev-guide/windows-integration/web-authentication.md)
 #### [Web Notifications API](dev-guide/windows-integration/web-Notifications-API.md)
@@ -27,6 +27,7 @@
 ### What's new
 #### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
+### [3D View](devtools-guide-chromium/3D-view.md)
 ### DevTools for Beginners
 #### [HTML and the DOM](devtools-guide-chromium/beginners/html.md)
 #### [CSS](devtools-guide-chromium/beginners/css.md)
@@ -34,11 +35,15 @@
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### [Inspect animations](devtools-guide-chromium/inspect-styles/animations.md)
 #### Guides
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
 #### [Overview](devtools-guide-chromium/console/index.md)
 #### [Log Messages](devtools-guide-chromium/console/log.md)
+#### [Run JavaScript](devtools-guide-chromium/console/javascript.md)
+#### [Reference](devtools-guide-chromium/console/reference.md)
+#### [API Reference](devtools-guide-chromium/console/api.md)
 #### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
@@ -55,9 +60,19 @@
 ### [Command Menu](devtools-guide-chromium/command-menu/index.md)
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
+#### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
+#### Guides
+##### [Override The User Agent String](devtools-guide-chromium/device-mode/override-user-agent.md)
+##### [Override Geolocation](devtools-guide-chromium/device-mode/geolocation.md)
+##### [Simulate Device Orientation](devtools-guide-chromium/device-mode/orientation.md)
+### DOM
+#### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
 #### [Get Started](devtools-guide-chromium/javascript/index.md)
+#### [Pause Your Code With Breakpoints](devtools-guide-chromium/javascript/breakpoints.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
+#### [Map Preprocessed Code to Source Code](devtools-guide-chromium/javascript/source-maps.md)
+#### [JavaScript Debugging Reference](devtools-guide-chromium/javascript/reference.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 #### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
@@ -66,9 +81,16 @@
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
+### Accessibility
+#### [Reference](devtools-guide-chromium/accessibility/reference.md)
+#### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
+#### Guides
+##### [Track Which Element Has Focus](devtools-guide-chromium/accessibility/focus.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
+### Memory
+#### [Understand Memory Terminology](devtools-guide-chromium/memory-problems/memory-101.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Security](devtools-guide-chromium/security/index.md)
@@ -139,6 +161,7 @@
 #### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
 ### Microsoft Edge Addons Policies
 #### [Content Security Policy](extensions-chromium/store-policies/csp.md)
+#### [Edge Developer ADA Addendum](extensions-chromium/store-policies/ada-addendum.md)
 #### [Microsoft Edge Addons Catalog Developer Policies](extensions-chromium/store-policies/developer-policies.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
@@ -171,19 +194,25 @@
 ### [Troubleshooting](extensions/troubleshooting.md)
 ## [Hosting](hosting/toc.md)
 ## [Performance analysis](performance-analysis.md)
-## [Progressive Web Apps](progressive-web-apps.md)
+## [Privacy Whitepaper](privacy-whitepaper.md)
+## [Progressive Web Apps (Chromium)](progressive-web-apps-chromium/index.md)
+## [Progressive Web Apps (EdgeHTML)](progressive-web-apps/index.md)
 ### [Get started with PWAs](progressive-web-apps/get-started.md)
 ### [Tailor your PWA for Windows](progressive-web-apps/windows-features.md)
 #### [PWAs for Xbox](progressive-web-apps/xbox-considerations.md)
 ### [PWAs in the Microsoft Store](progressive-web-apps/microsoft-store.md)
+## [Puppeteer](puppeteer.md)
+## [Visual Studio](visual-studio/index.md)
 ## [Visual Studio Code](visual-studio-code/index.md)
 ### [Debugger for Edge](visual-studio-code/debugger-for-edge.md)
 ### [Elements for Edge](visual-studio-code/elements-for-edge.md)
-## [WebDriver](webdriver.md)
+## [WebDriver (Chromium)](webdriver-chromium.md)
+## [WebDriver (EdgeHTML)](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
-### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
-## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
+### [Tracking Prevention in Microsoft Edge](web-platform/tracking-prevention.md)
+### [Microsoft Edge user agent string](web-platform/user-agent-string.md)
+## [WebVR Developer Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
 #### [Considerations when Using the Windows Runtime API](windows-runtime/considerations-when-using-the-windows-runtime-api.md)
