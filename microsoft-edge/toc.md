@@ -44,6 +44,7 @@
 #### [Run JavaScript](devtools-guide-chromium/console/javascript.md)
 #### [Reference](devtools-guide-chromium/console/reference.md)
 #### [API Reference](devtools-guide-chromium/console/api.md)
+#### [Utilities API Reference](devtools-guide-chromium/console/utilities.md)
 #### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
