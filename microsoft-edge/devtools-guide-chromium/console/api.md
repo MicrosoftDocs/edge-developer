@@ -2,7 +2,7 @@
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/17/2020
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,16 +29,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-Use the Console API methods to write messages to the Console from your JavaScript.  See [Get Started With Logging Messages To The Console][DevtoolsConsoleLog] for an interactive introduction to the topic.  <!--See [Console Utilities API Reference][ConsoleUtilities] if you are looking for the convenience methods like `debug(function)` or `monitorEvents(node)` which are only available from the Console.  -->  
-
-<!--todo: add and utilities sections when available -->  
+Use the Console API methods to write messages to the Console from your JavaScript.  See [Get Started With Logging Messages To The Console][DevtoolsConsoleLog] for an interactive introduction to the topic.  See [Console Utilities API Reference] [DevtoolConsoleUtilities] if you are looking for the convenience methods like `debug()` or `monitorEvents()` which are only available from the Console.  
 
 ## assert  
+
 ```javascript
 console.assert(expression, object)
 ```
 
-**Log level**: `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
 <!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
 
@@ -67,11 +66,9 @@ Clears the console.
 console.clear();  
 ```  
 
-If **Preserve Log** is enabled, the [clear](#clear) method is disabled.  
+If [Preserve Log][DevtoolsConsoleReferenceLevel] is enabled, the [clear](#clear) method is disabled.  
 
-<!--todo: add preserve log (reference#filter-by-log-level) when available -->  
-
-<!--See also: [Clear the Console][ConsoleReferenceClear]  -->  
+See also: [Clear the Console][DevtoolsConsoleReferenceClear]  
 
 ## count  
 
@@ -79,7 +76,7 @@ If **Preserve Log** is enabled, the [clear](#clear) method is disabled.
 console.count([label])
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.  
 
@@ -113,7 +110,7 @@ console.countReset('coffee');
 console.debug(object [, object, ...])
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Identical to the [log](#log) method.  
 
@@ -131,7 +128,7 @@ console.debug('debug');
 console.dir(object)
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Prints a JSON representation of the specified object.  
 
@@ -149,7 +146,7 @@ console.dir(document.head);
 console.dirxml(node)
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Prints an XML representation of the descendants of `node`.  
 
@@ -167,7 +164,7 @@ console.dirxml(document);
 console.error(object [, object, ...])
 ```  
 
-**Log level**: `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
 Prints the `object` to the Console, formats it as an error, and includes a stack trace.  
 
@@ -223,7 +220,7 @@ Stops visually grouping messages.  See the [group](#group) method.
 console.info(object [, object, ...])
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Identical to the [log](#log) method.  
 
@@ -241,7 +238,7 @@ console.info('info');
 console.log(object [, object, ...])
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Prints a message to the Console.  
 
@@ -259,7 +256,7 @@ console.log('log');
 console.table(array)
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Logs an array of objects as a table.  
 
@@ -311,7 +308,7 @@ console.timeEnd();
 console.timeEnd([label])
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Stops a timer.  See the [time](#time) method.  
 
@@ -321,7 +318,7 @@ Stops a timer.  See the [time](#time) method.
 console.trace()
 ```  
 
-**Log level**: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
 Prints a stack trace to the Console.  
 
@@ -343,7 +340,7 @@ first();
 console.warn(object [, object, ...])
 ```  
 
-**Log level**: `Warning`  
+[Log level][DevtoolsConsoleReferencePersist]: `Warning`  
 
 Prints a warning to the Console.  
 
@@ -378,10 +375,10 @@ console.warn('warn');
 <!-- links -->  
 
 [DevtoolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
-<!--[ConsoleUtilities]: utilities.md "Console Utilities API Reference"  -->
-<!--[ConsoleReferenceClear]: reference.md#clear-the-console "Clear the Console - Console Reference"  -->
-<!--[ConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  -->  
-<!--[ReferenceLevel]: reference.md#filter-by-log-level "Filter by log level - Console Reference"  -->  
+[DevtoolConsoleUtilities]: utilities.md "Console Utilities API Reference"  
+[DevtoolsConsoleReferenceClear]: reference.md#clear-the-console "Clear the Console - Console Reference"  
+[DevtoolsConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
+[DevtoolsConsoleReferenceLevel]: reference.md#filter-by-log-level "Filter by log level - Console Reference"  
 
 [MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 
