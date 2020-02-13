@@ -4,7 +4,7 @@ description: Learn how the Web Authentication API can enable web applications to
 title: Dev guide - Web Authentication
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/18/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Web Authentication and Windows Hello
 
-The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
+The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
 
 Using Web Authentication, the server sends down a plain text challenge to the browser. Once Microsoft Edge is able to verify the user through Windows Hello or an external FIDO2 device, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server. If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely. With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared. Furthermore, the private key can never be moved from secure elements or modern systems with TPM-enabled hardware.
 

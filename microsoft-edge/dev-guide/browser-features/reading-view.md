@@ -4,7 +4,7 @@ description: See how Microsoft Edge provides a reading view for webpages to enab
 title: Dev guide - Reading view
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/18/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -77,7 +77,7 @@ Reading view captures most raw images with width >= 400px and aspect ratio >= 1/
 
 ### Captions
 
-Best practice is to place images in [figure](https://msdn.microsoft.com/en-us/library/gg593038(v=vs.85).aspx) tags with no more than two nested [figcaption](https://msdn.microsoft.com/en-us/library/gg593037(v=vs.85).aspx) tags.
+Best practice is to place images in [figure](https://msdn.microsoft.com/library/gg593038(v=vs.85).aspx) tags with no more than two nested [figcaption](https://msdn.microsoft.com/library/gg593037(v=vs.85).aspx) tags.
 
 ### Body
 
