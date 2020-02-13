@@ -594,7 +594,8 @@ values(object);
 [DevToolsConsoleApi]: api.md "Console API Reference"  
 [DevToolsConsoleApiConsoleDirObject]: api.md#dir "dir - Console API Reference"  
 [DevToolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
-<!--[DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-runtime.md "Speed Up JavaScript Runtime"  -->
+<!--[DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-runtime.md "Speed Up JavaScript Runtime"  -->  
+
 
 [MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
 [MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  
