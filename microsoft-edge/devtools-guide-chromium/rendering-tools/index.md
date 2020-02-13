@@ -2,7 +2,7 @@
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2020
+ms.date: 02/12/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -45,13 +45,13 @@ JavaScript calculations, especially ones that trigger extensive visual changes, 
 
 ### JavaScript: Tools  
 
-Make a **Performance** pane recording and look for suspiciously long `Evaluate Script` events.  If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  
+Take a recording in the **Performance** panel and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-If you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  
-CPU profiles show where runtime is spent within the functions of your page.  
+<!--If you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  
+CPU profiles show where runtime is spent within the functions of your page.  -->  
 <!--Learn how to create CPU profiles in [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].  -->  
 
 ### JavaScript: Problems  
@@ -80,7 +80,7 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 ### Style: Tools  
 
-Make a **Performance** pane recording.  Check the recording for large `Recalculate Style` events \(displayed in purple\).  
+Take a recording in the **Performance** panel.  Check the recording for large `Recalculate Style` events \(displayed in purple\).  
 
 <!--todo: add Recording section when available  -->  
 
@@ -131,14 +131,13 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 
 ### Layout: Tools  
 
-The Microsoft Edge DevTools **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.  
+The **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.  
 
 > ##### Figure 2  
 > Forced synchronous layout  
 > ![Forced synchronous layout][ImageForcedSynchronousLayout]  
 
-"Layout thrashing" is a repetition of forced synchronous layout conditions.  
-This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See [Figure 2](#figure-2).  
+"Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See [Figure 2](#figure-2).  
 
 ### Layout: Problems  
 
@@ -161,18 +160,18 @@ Compositing is where the painted parts of the page are put together for displayi
 
 ### Paint and composite: Tools  
 
-Want to know how long painting takes or how often painting occurs?  Enable the **Paint profiler** on the **Performance** pane and then make a recording.  If most of your rendering time is spent painting, you have paint problems.  
+Want to know how long painting takes or how often painting occurs?  Check the **Enable advanced paint instrumentation** setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.  
 
-<!--todo: add Recording (make a recording) section when available  -->  
-<!--todo: add Profile Painting (Paint Profiler) section when available  -->  
-
-> ##### Figure 3  
+<!--todo: link enable advanced paint instrumentation to ../evaluate-performance/reference.md sub-section when live   -->  
+<!--
+> ##### Old Figure 3  
 > Long paint times in timeline recording  
 > ![Long paint times in timeline recording][ImageLongPaintTimes]  
+-->  
 
-Check out the rendering settings menu for further configurations that are able to help you diagnose paint problems.  
+Check out the **Rendering** panel for further configurations that are able to help you diagnose paint problems.  
 
-<!--todo: add Rendering settings section when available  -->  
+<!--todo: link Rendering panel in ../evaluate-performance/reference.md  sub-section when live  -->  
 
 ### Paint and composite: Problems  
 
@@ -194,7 +193,7 @@ The following table describes some common paint and composite problems and poten
 
 [ImageLongRecalculateStyle]: images/performance-recalculate-style-summary.msft.png "Figure 1: Long recalculate style"  
 [ImageForcedSynchronousLayout]: images/jank-performance-recalculate-style-summary.msft.png "Figure 2: Forced synchronous layout"  
-[ImageLongPaintTimes]: images/jank-performance-advanced-paint-instrumentation-summary.msft.png "Figure 3: Long paint times in timeline recording"  
+<!--[ImageLongPaintTimes]: images/jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
 
 <!-- links -->  
 
