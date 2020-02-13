@@ -81,6 +81,7 @@
 ##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+#### [Overview](devtools-guide-chromium/rendering-tools/index.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
 ### Accessibility
 #### [Reference](devtools-guide-chromium/accessibility/reference.md)
