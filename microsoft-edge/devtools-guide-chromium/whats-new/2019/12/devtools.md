@@ -150,7 +150,7 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 ## Announcements from the Chromium project
 
-The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
+The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
 
 ### Support for let and class redeclarations in the Console   
 
@@ -158,11 +158,6 @@ The Console now supports redeclarations of `let` and `class` statements.  The in
 
 > [!WARNING]
 > Redeclaring a `let` or `class` statement in a script outside of the Console or within a single Console input still causes a `SyntaxError`.  
-
-<aside class="warning">
-  Redeclaring a <code>let</code> or <code>class</code> statement in a script outside of the
-  Console or within a single Console input will still cause a <code>SyntaxError</code>.
-</aside>
 
 For example, previously, when redeclaring a local variable with `let`, the Console would throw an error:  
 
