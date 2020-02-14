@@ -150,7 +150,7 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 ## Announcements from the Chromium project
 
-The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
+The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
 
 ### Support for let and class redeclarations in the Console   
 
