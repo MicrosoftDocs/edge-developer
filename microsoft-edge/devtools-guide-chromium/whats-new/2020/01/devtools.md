@@ -227,12 +227,9 @@ Chromium issue [#1029826][crbug1029826]
 Previously, the Manifest pane in the Application panel would perform its own requests in order to
 display web app manifest icons. DevTools now shows the exact same manifest icon that Microsoft Edge uses.
 
-<!-- 
-TODO: add back when string has been fixed for Edge branding
-> ##### Figure 6
+> ##### Figure 15
 > Icons in the Manifest pane
-> ![Icons in the Manifest pane][ManifestIcon]   
--->
+> ![Icons in the Manifest pane][ImageManifestIcon]   
 
 Chromium issue [#985402][crbug985402]  
 
@@ -243,13 +240,13 @@ Hover over the value of a `content` property to see the unescaped version of the
 For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element you see an
 escaped string in the Styles pane:
 
-> ##### Figure 15
+> ##### Figure 16
 > The escaped string
 > ![The escaped string][ImageEscapedString]   
 
 When you hover over the `content` value you see the unescaped value:
 
-> ##### Figure 16
+> ##### Figure 17
 > The unescaped value
 > ![The unescaped value][ImageUnescapedString]   
 
@@ -257,7 +254,7 @@ When you hover over the `content` value you see the unescaped value:
 
 The Console now provides more detail on why a source map failed to load or parse. Previously it just provided an error without explaining what went wrong.
 
-> ##### Figure 17
+> ##### Figure 18
 > A source map loading error in the Console
 > ![A source map loading error in the Console][ImageSourcemapError]  
 
@@ -265,11 +262,11 @@ The Console now provides more detail on why a source map failed to load or parse
 
 Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.
 
-> ##### Figure 18
+> ##### Figure 19
 > Disabling **Allow scrolling past end of file** in Settings
 > ![Disabling Allow scrolling past end of file][ImageSettings]  
 
-> ##### Figure 19
+> ##### Figure 20
 > Scrolling past the end of a file is now disabled in the Sources panel
 > ![Scrolling past the end of a file is now disabled in the Sources panel][ImageScroll]  
 
@@ -281,7 +278,7 @@ To discuss the new features and changes in this post, or anything else related t
 
 *   Send your feedback using the **Feedback** icon in the DevTools 
 
-> ##### Figure 20
+> ##### Figure 21
 > The **Feedback** icon in the Microsoft Edge DevTools  
 > ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
@@ -317,12 +314,13 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageBlockedCookies]: ../../images/2020/01/blockedcookies.msft.png "Figure 12: Blocked cookies in the Cookies pane of the Application panel"
 [ImageEditCookie]: ../../images/2020/01/editcookie.msft.png "Figure 13: Editing a cookie value"
 [ImageCopyFetch]: ../../images/2020/01/fetchcookies.msft.png "Figure 14: Copy as Node.js fetch"
-[ImageEscapedString]: ../../images/2020/01/escapedstring.msft.png "Figure 15: The escaped string"
-[ImageUnescapedString]: ../../images/2020/01/unescapedstring.msft.png "Figure 16: The unescaped value"
-[ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Figure 17: A source map loading error in the Console"
-[ImageSettings]: ../../images/2020/01/settings.msft.png "Figure 18: Disabling Allow scrolling past end of file in Settings"
-[ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Figure 19: Scrolling past the end of a file is now disabled in the Sources panel"
-[ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Figure 20: The **Feedback** icon in the Microsoft Edge DevTools"
+[ImageManifestIcon]: ../../images/2020/01/manifesticons.msft.png "Figure 15: Icons in the Manifest pane"
+[ImageEscapedString]: ../../images/2020/01/escapedstring.msft.png "Figure 16: The escaped string"
+[ImageUnescapedString]: ../../images/2020/01/unescapedstring.msft.png "Figure 17: The unescaped value"
+[ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Figure 18: A source map loading error in the Console"
+[ImageSettings]: ../../images/2020/01/settings.msft.png "Figure 19: Disabling Allow scrolling past end of file in Settings"
+[ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Figure 20: Scrolling past the end of a file is now disabled in the Sources panel"
+[ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Figure 21: The **Feedback** icon in the Microsoft Edge DevTools"
 
 
 <!-- links -->  
