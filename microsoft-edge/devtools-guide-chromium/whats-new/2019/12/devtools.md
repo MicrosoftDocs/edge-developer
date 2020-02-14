@@ -51,7 +51,8 @@ If you use screen readers or the keyboard to navigate around the DevTools, send 
 Chromium issue [#963183][crbug963183]
 
 ### Using the DevTools in other languages  
-Looking at data from other developer tools like StackOverflow and VS Code, many developers use development tools in their native language, not just in English. We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
+
+Many developers use other developer tools, like StackOverflow and VS Code, in their native language, not just in English. We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
 
 
 | | |
