@@ -95,7 +95,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 > The 3D View in the DevTools  
 > ![The 3D View in the DevTools][Image3DView]  
 
-To access the 3D View in **Microsoft Edge Canary** or **Microsoft Edge Dev**, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View** to acess the 3D View.
+To access the 3D View in **Microsoft Edge Canary** or **Microsoft Edge Dev**, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
 
 If you are using **Microsoft Edge Beta** or the stable **Microsoft Edge**, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
@@ -222,7 +222,7 @@ Right-click a network request and select **Copy** > **Copy as Node.js fetch** to
 
 Chromium issue [#1029826][crbug1029826]  
 
-## More accurate web app manifest icons 
+### More accurate web app manifest icons 
 
 Previously, the Manifest pane in the Application panel would perform its own requests in order to
 display web app manifest icons. DevTools now shows the exact same manifest icon that Microsoft Edge uses.
@@ -233,7 +233,7 @@ display web app manifest icons. DevTools now shows the exact same manifest icon 
 
 Chromium issue [#985402][crbug985402]  
 
-## Hover over CSS content properties to see unescaped values 
+### Hover over CSS content properties to see unescaped values 
 
 Hover over the value of a `content` property to see the unescaped version of the value.
 
@@ -250,7 +250,7 @@ When you hover over the `content` value you see the unescaped value:
 > The unescaped value
 > ![The unescaped value][ImageUnescapedString]   
 
-## More detailed source map errors in the Console 
+### More detailed source map errors in the Console 
 
 The Console now provides more detail on why a source map failed to load or parse. Previously it just provided an error without explaining what went wrong.
 
@@ -258,7 +258,7 @@ The Console now provides more detail on why a source map failed to load or parse
 > A source map loading error in the Console
 > ![A source map loading error in the Console][ImageSourcemapError]  
 
-## Setting for disabling scrolling past the end of a file 
+### Setting for disabling scrolling past the end of a file 
 
 Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.
 
