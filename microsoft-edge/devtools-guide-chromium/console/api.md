@@ -375,7 +375,7 @@ console.warn('warn');
 <!-- links -->  
 
 [DevtoolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
-[DevtoolConsoleUtilities]: utilities.md "Console Utilities API Reference"  
+ [DevtoolConsoleUtilities]: utilities.md "Console Utilities API Reference"  
 [DevtoolsConsoleReferenceClear]: reference.md#clear-the-console "Clear the Console - Console Reference"  
 [DevtoolsConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
 [DevtoolsConsoleReferenceLevel]: reference.md#filter-by-log-level "Filter by log level - Console Reference"  

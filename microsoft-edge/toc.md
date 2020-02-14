@@ -26,6 +26,7 @@
 ### [Open DevTools](devtools-guide-chromium/open.md)
 ### What's new
 #### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
+#### [Microsoft Edge 81](devtools-guide-chromium/whats-new/2020/01/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
 ### [3D View](devtools-guide-chromium/3D-view.md)
 ### DevTools for Beginners
