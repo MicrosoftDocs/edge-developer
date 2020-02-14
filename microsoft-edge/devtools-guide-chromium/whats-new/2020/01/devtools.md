@@ -33,11 +33,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! We're excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
 
 ### Accessibility improvements to the DevTools  
 
-We've contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. We want to enable every developer building the web to use the DevTools.
+The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. Every developer building the web should be able to use the DevTools.
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
@@ -45,13 +45,12 @@ We've contributed 170 changes to Chromium to address high-impact color contrast,
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started. 
 
-If you use screen readers or the keyboard to navigate around the DevTools, we're eager to hear your feedback so [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon! 
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon! 
 
 Chromium issue [#963183][crbug963183]
 
 ### Using the DevTools in other languages  
-When we looked at data from other developer tools like StackOverflow and VS Code, we learned
-that many developers use development tools in their native language, not just in English. We’re excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
+Looking at data from other developer tools like StackOverflow and VS Code, many developers use development tools in their native language, not just in English. We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
 
 | | |
 | -------- | ---- |
@@ -71,7 +70,7 @@ If you want Microsoft Edge to be in one language and your DevTools to remain in 
 
 **Console** messages are not localized. Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
-If you want to use the DevTools in a different language than the ones that are available, let us know by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
 
 Chromium issue [#941561][crbug941561]
 
@@ -159,7 +158,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 ### Moto G4 support in Device Mode 
 
-After [enabling the Device Toolbar][DeviceToolbar] you can now simulate the dimensions of a Moto G4 viewport from the **Device** list.
+After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a Moto G4 viewport from the **Device** list.
 
 > ##### Figure 10 
 > Simulating a Moto G4 viewport
