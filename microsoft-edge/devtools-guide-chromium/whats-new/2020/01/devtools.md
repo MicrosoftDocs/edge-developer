@@ -61,7 +61,7 @@ that many developers use development tools in their native language, not just in
 | Korean - 한국어 | Japanese - 日本語 |
 | Russian – русский | Spanish - español |
 
-The DevTools will automatically match the language you use for Microsoft Edge in `edge://settings/languages`. 
+The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`. 
 
 If you want Microsoft Edge to be in one language and your DevTools to remain in English, press `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**. 
 
@@ -69,7 +69,7 @@ If you want Microsoft Edge to be in one language and your DevTools to remain in 
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-**Console** messages are not localized. Only the strings used in the DevTools UI will be displayed in the language you use for Microsoft Edge.
+**Console** messages are not localized. Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
 If you want to use the DevTools in a different language than the ones that are available, let us know by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon.  
 
@@ -83,7 +83,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 > The Hints tab in the DevTools when the webhint browser extension is installed  
 > ![The Hints tab in the DevTools when the webhint browser extension is installed][ImageHintsTabWebhintExtension]  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, you can run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
 ### 3D View  
 
@@ -105,7 +105,7 @@ The DevTools team has also released some extensions for [Visual Studio Code \(VS
 
 #### Elements for Microsoft Edge  
 
-By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you can use the Elements tool from within VS Code.
+Use the Elements tool from within VS Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension.
 
 > ##### Figure 5  
 > The Elements tool in VS Code using the Elements for Microsoft Edge extension
@@ -115,7 +115,7 @@ For more information, check out [Elements for Microsoft Edge VS Code extension][
 
 #### Debugger for Microsoft Edge  
 
-With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, you can debug JavaScript running in Microsoft Edge directly from VS Code!  
+With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, debug JavaScript running in Microsoft Edge directly from VS Code!  
 
 > ##### Figure 6  
 > The Debugger for Microsoft Edge Extension in VS Code  
@@ -134,7 +134,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
 ### Visual Studio integration
-Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running in Microsoft Edge with the Visual Studio debugger. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
+In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
 
 > ##### Figure 8  
 > Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
@@ -143,7 +143,7 @@ Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running 
 [Learn more about debugging Microsoft Edge from Visual Studio][MicrosoftVisualStudio].  
 
 ### Tracking prevention Console messages
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
 
 > ##### Figure 9  
 > Messages in the Console when tracking prevention blocks access to storage for a tracker
@@ -220,7 +220,7 @@ Chromium issue [#1029826][crbug1029826]
 
 ### More accurate web app manifest icons 
 
-Previously, the Manifest pane in the Application panel would perform its own requests in order to
+Previously, the Manifest pane in the Application panel sent its own requests in order to
 display web app manifest icons. DevTools now shows the exact same manifest icon that Microsoft Edge uses.
 
 > ##### Figure 15
