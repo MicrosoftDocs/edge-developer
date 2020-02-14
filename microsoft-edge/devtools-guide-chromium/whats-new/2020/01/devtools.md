@@ -61,17 +61,15 @@ that many developers use development tools in their native language, not just in
 | Korean - 한국어 | Japanese - 日本語 |
 | Russian – русский | Spanish - español |
 
-If you are using **Microsoft Edge Canary** or **Microsoft Edge Dev**, the DevTools will automatically match the language you use for Microsoft Edge in `edge://settings/languages`. 
+The DevTools will automatically match the language you use for Microsoft Edge in `edge://settings/languages`. 
 
-If you are using **Microsoft Edge Beta** or the stable **Microsoft Edge**, navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**. Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools. The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
+If you want Microsoft Edge to be in one language and your DevTools to remain in English, press `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**. 
 
 > ##### Figure 2  
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-**Console** messages are not localized. Only the strings used in the DevTools UI will be translated into the language you use for Microsoft Edge.
-
-If you want Microsoft Edge to be in one language and your DevTools to remain in English, press `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**. 
+**Console** messages are not localized. Only the strings used in the DevTools UI will be displayed in the language you use for Microsoft Edge.
 
 If you want to use the DevTools in a different language than the ones that are available, let us know by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon.  
 
@@ -95,11 +93,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 > The 3D View in the DevTools  
 > ![The 3D View in the DevTools][Image3DView]  
 
-To access the 3D View in **Microsoft Edge Canary** or **Microsoft Edge Dev**, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
+To access the 3D View, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-If you are using **Microsoft Edge Beta** or the stable **Microsoft Edge**, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
-
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).
+We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](#feedback).
 
 Chromium issue [#987787][crbug987787]
 
