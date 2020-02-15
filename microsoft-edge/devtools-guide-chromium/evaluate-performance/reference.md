@@ -2,7 +2,7 @@
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/27/2020
+ms.date: 02/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -58,11 +58,11 @@ Record load performance when you want to analyze the performance of a page as it
 
 1.  Go to the page that you want to analyze.  
 1.  Open the **Performance** panel of DevTools.  
-1.  Click **Reload page** ![Reload Page][ImageReloadPageIcon].  DevTools records performance metrics while the page reloads and then automatically stops the recording a couple seconds after the load finishes.  
+1.  Click **Refresh page** ![Refresh Page][ImageRefreshPageIcon].  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.  
     
     > ##### Figure 2  
-    > **Reload page**  
-    > ![Reload page][ImageReloadPage]  
+    > **Refresh page**  
+    > ![Refresh page][ImageRefreshPage]  
 
 DevTools automatically zooms in on the portion of the recording where most of the activity occurred.  
 
@@ -128,14 +128,14 @@ To throttle the CPU while recording:
 1.  Open the **Capture settings** menu.  See [Show recording settings](#show-recording-settings).  
 1.  Set **CPU** to the desired level of throttling.  
 
-Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than the usual ability.  DevTools do not truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.  
+Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools do not truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.  
 
 ### Enable advanced paint instrumentation   
 
 To view detailed paint instrumentation:  
 
 1.  Open the **Capture settings** menu.  See [Show recording settings](#show-recording-settings).  
-1.  Check the **Enable advanced paint instrumentation** checkbox.  
+1.  Check the **Enable advanced paint instrumentation (slow)** checkbox.  
 
 To learn how to interact with the paint information, see [View layers](#view-layers-information) and [View paint profiler](#view-paint-profiler).  
 
@@ -182,8 +182,7 @@ To select a portion using the keyboard:
 
 To select a portion using a trackpad:  
 
-1.  Hover your mouse over the **Overview** section or the **Details** section.  
-    The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section, the **Interactions** section, and so on.  
+1.  Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section, the **Interactions** section, and so on.  
 1.  Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.  
 
 To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move what portion of the recording is selected.  
@@ -216,15 +215,13 @@ Use the **Main** section to view activity that occurred on the main thread of th
 > The **Main** section  
 > ![The Main section][ImageMain]  
 
-Click on an event to view more information about it in the **Summary** tab.  
-DevTools outlines the selected event in blue.  
+Click on an event to view more information about it in the **Summary** tab.  DevTools outlines the selected event.  
 
 > ##### Figure 15  
-> More information about the `ne` function call event in the **Summary** tab  
-> ![More information about a main thread event in the Summary tab][ImageMainEventSummary]  
+> More information about the `anonymous` function in the **Summary** tab  
+> ![More information about the anonymous function in the Summary tab][ImageMainEventSummary]  
 
-DevTools represents main thread activity with a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  
-The events on top cause the events below it.  
+DevTools represents main thread activity with a flame chart.  The x-axis represents the recording over time.  The y-axis represents the call stack.  The events on top cause the events below it.  
 
 > ##### Figure 16  
 > A flame chart in the **Main** section  
@@ -252,7 +249,7 @@ After recording a page, you do not need to rely solely on the **Main** section t
 
 Here is an explanation of the **root activities** concept that is mentioned in the **Call Tree** tab, **Bottom-Up** tab, and **Event Log** sections.  
 
-Root activities are those which cause the browser to do some work.  For example, when you click a page, the browser fires an `Event` activity as the root activity.  That `Event` might cause a handler to execute, and so on.  
+Root activities are those which cause the browser to do some work.  For example, when you click a page, the browser fires an `Event` activity as the root activity.  That `Event` might cause a handler to run, and so on.  
 
 In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** tabs, root activities are the top-level items.  
 
@@ -268,7 +265,7 @@ The **Call Tree** tab only displays activities during the selected portion of th
 > The **Call Tree** tab  
 > ![The Call Tree tab][ImageCallTree]  
 
-In [Figure 17](#figure-17), the top-level of items in the **Activity** column, such as `Evaluate Script` and `Parse HTML` are root activities.  The nesting represents the call stack.  For example, in [Figure 17](#figure-17), `Parse HTML` caused `Event: readystatechange`, which caused `Function Call`, which caused `_`, and so on.  
+In [Figure 17](#figure-17), the top-level of items in the **Activity** column, such as `Evaluate Script` and `Parse HTML` are root activities.  The nesting represents the call stack.  For example, in [Figure 17](#figure-17), `Parse HTML` which caused `Evaluate Script` which caused `Compile Script` and `(anonymous)`.  
 
 **Self Time** represents the time directly spent in that activity.  **Total Time** represents the time spent in that activity or any of the children.  
 
@@ -278,7 +275,7 @@ Use the **Filter** text box to filter events by activity name.
 
 By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping** menu to sort the activity table based on various criteria.  
 
-Click **Show Heaviest Stack** ![Show Heaviest Stack][ImageShowHeaviestStackIcon] to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table shows you which children of the selected activity took the longest time to execute.  
+Click **Show Heaviest Stack** ![Show Heaviest Stack][ImageShowHeaviestStackIcon] to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table shows you which children of the selected activity took the longest time to run.  
 
 #### The Bottom-Up tab   
 
@@ -290,8 +287,7 @@ The **Bottom-Up** tab only displays activities during the selected portion of th
 > The **Bottom-Up** tab  
 > ![The Bottom-Up tab][ImageBottomUp]  
 
-In the **Main** section flame chart of [Figure 18](#figure-18), see that almost practically all of the time was spent executing the three calls to `wait()`.  
-Accordingly, the top activity in the **Bottom-Up** tab of [Figure 18](#figure-18) is `wait`.  In the flame chart of [Figure 18](#figure-18), the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  Accordingly, see that in the **Bottom-Up** tab, the next most expensive activity is `Minor GC`.  
+In the **Main** section flame chart of [Figure 18](#figure-18), see that almost practically all of the time was spent running `Parse HTML`.  The top activity in the **Bottom-Up** tab of [Figure 18](#figure-18) is `Parse HTML`.  <!--In the flame chart of [Figure 18](#figure-18), the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  See in the **Bottom-Up** tab, the next most expensive activity is `Layout`.  
 
 The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.  
 
@@ -307,7 +303,7 @@ The **Event Log** tab only displays activities during the selected portion of th
 > The **Event Log** tab  
 > ![The Event Log tab][ImageEventLog]  
 
-The **Start Time** column represents the point at which that activity started, relative to the start of the recording.  For example, the start time of `1573.0 ms` for the selected item in [Figure 19](#figure-19) means that activity started 1573 ms after the recording started.  
+The **Start Time** column represents the point at which that activity started, relative to the start of the recording.  For example, the start time of `175.7 ms` for the selected item in [Figure 19](#figure-19) means that activity started 175.7 ms after the recording started.  
 
 The **Self Time** column represents the time spent directly in that activity.  
 
@@ -399,10 +395,9 @@ Requests are color-coded as follows:
 *   JS: Yellow  
 *   Images: Green  
 
-Click on a request to view more information about it in the **Summary** tab.  
-For example, in [Figure 26](#figure-26) the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.  
+Click on a request to view more information about it in the **Summary** tab.  For example, in [Figure 26](#figure-26) the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.  
 
-A darker-blue square in the top-left of a request means it is a higher-priority request.  A lighter-blue square means lower-priority.  For example, in [Figure 26](#figure-26) the blue, selected request is higher-priority, and the green one above it is lower-priority.  
+A darker-blue square in the top-left of a request means it is a higher-priority request.  A lighter-blue square means lower-priority.  For example, in [Figure 26](#figure-26) the blue, selected request is higher-priority, and the green one below it is lower-priority.  
 
 In [Figure 27](#figure-27), the request for `www.bing.com` is represented by a line on the left, a bar in the middle with a dark portion and a light portion, and a line on the right.  [Figure 28](#figure-28) shows the corresponding representation of the same request in the **Timing** tab of the **Network** panel.  Here is how these two representations map to each other:
 
@@ -436,12 +431,11 @@ DevTools displays a new **Memory** chart, above the **Summary** tab.  There is a
 The colored lines on the chart map to the colored checkboxes above the chart.  
 Disable a checkbox to hide that category from the chart.  
 
-The chart only displays the region of the recording that is currently selected.  For example, in [Figure 30](#figure-30), the **Memory** chart is only showing memory usage for the start of the recording, up to around the 1000ms mark.  
+The chart only displays the region of the recording that is currently selected.  For example, in [Figure 30](#figure-30), the **Memory** chart is only showing memory usage from around the 400 ms mark to the 1750 ms mark.  
 
 ### View the duration of a portion of a recording   
 
-When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold `Shift`, click and hold, and drag left or right to select a portion of the recording.  
-At the bottom of your selection, DevTools shows how long that portion took.  
+When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold `Shift`, click and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took.  
 
 > ##### Figure 31  
 > The `9.47ms` timestamp at the bottom of the selected portion indicates how long that portion took  
@@ -457,10 +451,10 @@ Hover over the **Overview** to view a screenshot of how the page looked during t
 > Viewing a screenshot  
 > ![Viewing a screenshot][ImageViewScreenshot]  
 
-View screenshots by clicking a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** tab.  
+You may also view screenshots by clicking a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** tab.  
 
 > ##### Figure 33  
-> After clicking the `233.88ms` frame in the **Frames** section, the screenshot for that frame is displayed in the **Summary** tab  
+> After clicking the `233.9ms` frame in the **Frames** section, the screenshot for that frame is displayed in the **Summary** tab  
 > ![Viewing a screenshot in the Summary tab][ImageFrameScreenshotSummary]  
 
 Click the thumbnail in the **Summary** tab to zoom in on the screenshot.  
@@ -474,7 +468,7 @@ Click the thumbnail in the **Summary** tab to zoom in on the screenshot.
 To view advanced layers information about a frame:  
 
 1.  [Enable advanced paint instrumentation](#enable-advanced-paint-instrumentation).  
-1.  Select a frame in the **Frames** section.  DevTools displays information about the layers in the **Layers** pane.  
+1.  Select a frame in the **Frames** section.  DevTools displays information about the layers in the new **Layers** tab, next to the **Event Log** tab.  
     
     > ##### Figure 35  
     > The **Layers** pane  
@@ -492,8 +486,6 @@ To move the diagram:
 *   Click **Rotate Mode** ![Rotate Mode][ImageRotateModeIcon] to rotate along the Z axis.  
 *   Click **Reset Transform** ![Reset Transform][ImageResetTransformIcon] to reset the diagram to the original position.  
 
-<!--todo: add content when paint profiler tab is located in Edge  -->  
-<!--  
 ### View paint profiler   
 
 To view advanced information about a paint event:  
@@ -505,8 +497,6 @@ To view advanced information about a paint event:
     > The **Paint Profiler** tab  
     > ![The Paint Profiler tab][ImagePaintProfiler]  
     
--->  
-
 ## Analyze rendering performance with the Rendering tab   
 
 Use the features of the **Rendering** tab to help visualize the rendering performance of your page.  
@@ -533,8 +523,7 @@ The **FPS meter** is an overlay that appears in the top-right corner of your vie
     
 ### View painting events in realtime with Paint Flashing   
 
-Use Paint Flashing to get a realtime view of all paint events on the page.  
-Whenever a part of the page gets re-painted, DevTools outlines that section in green.  
+Use Paint Flashing to get a realtime view of all paint events on the page.  Whenever a part of the page gets re-painted, DevTools outlines that section in green.  
 
 To enable Paint Flashing:  
 
@@ -569,14 +558,11 @@ To view scroll performance issues:
 
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Scrolling Performance Issues** checkbox.  
-
-<!--todo: locate site with performance issues  -->  
-<!--    
+ 
     > ##### Figure 41  
-    > **Scrolling Performance Issues** is indicating that there is a `mousewheel` event listener encompassing the entire viewport that may harm scroll performance  
-    > ![Scrolling Performance Issues is indicating that there is a mousewheel event listener encompassing the entire viewport that may harm scroll performance][ImageScrollingPerformanceIssues]  
+    > **Scrolling Performance Issues** indicates that non-layer viewport-constrained objects may harm scroll performance  
+    > ![Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance][ImageScrollingPerformanceIssues]  
     
--->  
 
 <!--    -->  
 
@@ -591,7 +577,7 @@ To view scroll performance issues:
 [ImagePanModeIcon]: images/pan-mode-icon.msft.png  
 [ImagePreviousIcon]: images/previous-icon.msft.png  
 [ImageRecordIcon]: images/record-icon.msft.png
-[ImageReloadPageIcon]: images/reload-page-icon.msft.png  
+[ImageRefreshPageIcon]: images/reload-page-icon.msft.png  
 [ImageResetTransformIcon]: images/reset-transform-icon.msft.png  
 [ImageRotateModeIcon]: images/rotate-mode-icon.msft.png  
 [ImageSearchCaseIcon]: images/search-case-icon.msft.png  
@@ -599,7 +585,7 @@ To view scroll performance issues:
 [ImageShowHeaviestStackIcon]: images/show-heaviest-stack-icon.msft.png  
 
 [ImageRecord]: images/performance-record-highlight.msft.png "Figure 1: Record"  
-[ImageReloadPage]: images/performance-refresh-button.msft.png "Figure 2: Reload page"  
+[ImageRefreshPage]: images/performance-refresh-button.msft.png "Figure 2: Refresh page"  
 [ImageLoadRecording]: images/performance-refreshed.msft.png "Figure 3: A page-load recording"  
 [ImageScreenshots]: images/performance-capture-screenshots-checkbox.msft.png "Figure 4: The Screenshots checkbox"  
 [ImageCollectGarbage]: images/performance-collect-garbage-button.msft.png "Figure 5: Collect garbage"  
@@ -609,10 +595,10 @@ To view scroll performance issues:
 [ImageSaveProfile]: images/performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png "Figure 9: Save Profile"  
 [ImageLoadProfile]: images/performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png "Figure 10: Load Profile"  
 [ImageClearRecording]: images/performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png "Figure 11: Clear recording"  
-[ImageZoom]: images/performance-zoom.msft.png "Figure 12: Dragging the mouse across the Overview to zoom"  
+[ImageZoom]: images/performance-zoom-highlighted.msft.png "Figure 12: Dragging the mouse across the Overview to zoom"  
 [ImageSearch]: images/performance-search-regex.msft.png "Figure 13: The search box"  
 [ImageMain]: images/performance-main-zoomed.msft.png "Figure 14: The Main section"  
-[ImageMainEventSummary]: images/performance-summary-me.msft.png "Figure 15: More information about a main thread event in the Summary tab"  
+[ImageMainEventSummary]: images/performance-summary-me.msft.png "Figure 15: More information about the anonymous function in the Summary tab"  
 [ImageFlameChart]: images/performance-main-flame-chart.msft.png "Figure 16: A flame chart"  
 [ImageCallTree]: images/performance-call-tree.msft.png "Figure 17: The Call Tree tab"  
 [ImageBottomUp]: images/performance-bottoms-up.msft.png "Figure 18: The Bottom-Up tab"  
@@ -633,13 +619,13 @@ To view scroll performance issues:
 [ImageFrameScreenshotSummary]: images/performance-summary-preview.msft.png "Figure 33: Viewing a screenshot in the Summary tab"  
 [ImageFrameScreenshotZoom]: images/performance-summary-preview-select.msft.png "Figure 34: Zooming in on a screenshot from the Summary tab"  
 [ImageLayers]: images/layers-all.msft.png "Figure 35: The Layers pane"  
-[ImageLayerHover]: images/layers-218-highlighted.msft.png "Figure 36: Highlighting a layer"  
-<!--[ImagePaintProfiler]: images/paint-profiler.msft.png "Old Figure 37: The Paint Profiler tab"  -->  
+[ImageLayerHover]: images/performance-frames-document-nav-bar-highlighted.msft.png "Figure 36: Highlighting a layer"  
+[ImagePaintProfiler]: images/paint-profiler.msft.png "Old Figure 37: The Paint Profiler tab"  
 [ImageRenderingTab]: images/console-drawer-rendering.msft.png "Figure 37: The Rendering tab"  
 [ImageFpsMeter]: images/jank-console-rendering-frame-rate.msft.png "Figure 38: The FPS meter"  
 [ImagePaintFlashing]: images/jank-console-rendering-paint-flashing.msft.png "Figure 39: Paint Flashing"  
 [ImageLayerBorders]: images/devtools-console-rendering-layer-borders.msft.png "Figure 40: Layer Borders"  
-<!--[ImageScrollingPerformanceIssues]: images/scrolling-performance-issues.msft.png "Old Figure 41: Scrolling Performance Issues is indicating that there is a mousewheel event listener encompassing the entire viewport that may harm scroll performance"  -->  
+[ImageScrollingPerformanceIssues]: images/bing-console-drawer-rendering-scrolling-performance-issues.msft.png "Figure 41: Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance"  
 
 <!-- links -->  
 
