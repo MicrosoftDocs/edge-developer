@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 78.0.270.0**.
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 82.0.427.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
@@ -61,7 +61,7 @@ You are all set to use and build against the WebView2 API. Press F5 to build and
 
 ## Step 3 - Create a single WebView within the parent window
 
-Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Host` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2CoreWebView2Host::get_CoreWebView2` to get the associated WebView.
+Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Host` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Host::get_CoreWebView2` to get the associated WebView.
 
 In the callback, let's also set a few settings, resize the WebView to take 100% of the parent window, and navigate to Bing.
 
@@ -75,11 +75,11 @@ CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
         [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
 
             // Create a CoreWebView2Host and get the associated CoreWebView2 whose parent is the main window hWnd
-            env->CreateCoreWebView2Host(hWnd, Callback<ICoreWebView2CreateWebViewCompletedHandler>(
-                [hWnd](HRESULT result, ICoreWebView2CoreWebView2Host* host) -> HRESULT {
-                if (host != null) {
-                    m_host = host;
-                    m_host->get_CoreWebView2(&webviewWindow);
+            env->CreateCoreWebView2Host(hWnd, Callback<ICoreWebView2CreateCoreWebView2HostCompletedHandler>(
+                [hWnd](HRESULT result, ICoreWebView2Host* host) -> HRESULT {
+                if (host != nullptr) {
+                    webviewHost = host;
+                    webviewHost->get_CoreWebView2(&webviewWindow);
                 }
 
                 // Add a few settings for the webview
@@ -119,7 +119,7 @@ Press F5 to build and run the app. Now you have a WebView window displaying Bing
 
 ## Step 4 - Navigation events
 
-We already covered navigating to URL using `ICoreWebView2CoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click here to learn more.
+We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](reference/ICoreWebView2.md#navigation-events) to learn more.
 
 ![navigationEvents](images/navigationEvents.PNG)
 
@@ -131,7 +131,7 @@ As an example of utilizing those events, let's register a handler for `Navigatio
 // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
 EventRegistrationToken token;
 webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEventHandler>(
-    [](ICoreWebView2CoreWebView2* webview, ICoreWebView2NavigationStartingEventArgs * args) -> HRESULT {
+    [](ICoreWebView2* webview, ICoreWebView2NavigationStartingEventArgs * args) -> HRESULT {
         PWSTR uri;
         args->get_Uri(&uri);
         std::wstring source(uri);
@@ -169,7 +169,7 @@ Now WebView will always freeze the Object object and return the page document on
 
 ## Step 6 - Communication between host and web content
 
-The host and the web content can also communicate with each other through `postMessage`. The web content running within a WebView can post to the host through `window.chrome.webview.postMessage`, and the message would be handled by any registered `ICoreWebView2NavigationStartingEventHandler` on the host. Likewise, the host can message the web content through `ICoreWebView2CoreWebView2::PostWebMessageAsString` or `ICoreWebView2CoreWebView2::PostWebMessageAsJSON`, which would be caught by handlers added from `window.chrome.webview.addEventListener`. The communication mechanism allows the web content to utilize native capabilities by passing messages to ask the host to call native APIs.
+The host and the web content can also communicate with each other through `postMessage`. The web content running within a WebView can post to the host through `window.chrome.webview.postMessage`, and the message would be handled by any registered `ICoreWebView2WebMessageReceivedEventHandler` on the host. Likewise, the host can message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON`, which would be caught by handlers added from `window.chrome.webview.addEventListener`. The communication mechanism allows the web content to utilize native capabilities by passing messages to ask the host to call native APIs.
 
 As an example to understand the mechanism, let's try printing out the document URL in WebView with a little detour,
 
@@ -183,10 +183,10 @@ Copy the following code below `// Step 6 - Communication between host and web co
 
 ```cpp
 // Set an event handler for the host to return received message back to the web content
-webviewWindow->add_WebMessageReceived(Callback<ICoreWebView2NavigationStartingEventHandler>(
-    [](ICoreWebView2CoreWebView2* webview, ICoreWebView2NavigationStartingEventArgs * args) -> HRESULT {
+webviewWindow->add_WebMessageReceived(Callback<ICoreWebView2WebMessageReceivedEventHandler>(
+    [](ICoreWebView2* webview, ICoreWebView2WebMessageReceivedEventArgs * args) -> HRESULT {
         PWSTR message;
-        args->get_WebMessageAsString(&message);
+        args->TryGetWebMessageAsString(&message);
         // processMessage(&message);
         webview->PostWebMessageAsString(message);
         CoTaskMemFree(message);
