@@ -161,6 +161,7 @@
 #### [Open Developer Account](extensions-chromium/publish/create-dev-account.md)
 #### [Upload YouTube Video](extensions-chromium/publish/upload-video.md)
 #### [Update Extension Listing](extensions-chromium/publish/update.md)
+#### [Submission states](extensions-chromium/publish/submission-states.md)
 #### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
 ### Microsoft Edge Addons Policies
 #### [Content Security Policy](extensions-chromium/store-policies/csp.md)
