@@ -19,7 +19,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 ### ARIA 1.1 Roles, States, and Events
 
-EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](http://www.w3.org/TR/wai-aria-1.1/), including [feed](https://www.w3.org/TR/wai-aria-1.1/#feed), [form](https://www.w3.org/TR/wai-aria-1.1/#form), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/en-us/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299). With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1. Check out the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge.
+EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](http://www.w3.org/TR/wai-aria-1.1/), including [feed](https://www.w3.org/TR/wai-aria-1.1/#feed), [form](https://www.w3.org/TR/wai-aria-1.1/#form), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299). With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1. Check out the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge.
 
 ### CSS masking
 
@@ -31,7 +31,7 @@ EdgeHTML 17 now supports CSS transforms on SVG elements and presentation attribu
 
 ### Extensions 
 
-Microsoft Edge now supports the [Notification API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/notifications) which displays notifications from extensions. Extension developers can now create different types of notifications (basic, list, image etc.) which support full user interaction. The notifications are also automatically logged into the Action Center. Visit the [notifications sample](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) on how to use this API in your extension.
+Microsoft Edge now supports the [Notification API](https://developer.mozilla.org/Add-ons/WebExtensions/API/notifications) which displays notifications from extensions. Extension developers can now create different types of notifications (basic, list, image etc.) which support full user interaction. The notifications are also automatically logged into the Action Center. Visit the [notifications sample](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/notifications/notifications) on how to use this API in your extension.
 
 EdgeHTML 17 now also supports the `Tabs.reload()` method as part of the standard tabs API class. Also new in the Windows 10 April 2018 Update, users can now choose to allow extensions to run during inPrivate browsing.
 
@@ -80,11 +80,11 @@ Microsoft Edge now supports Screen Capture in RTC via the [Media Capture API](ht
 ### Progressive Web Apps
 Starting in EdgeHTML 17, Service Workers and push notifications are enabled by default (learn more about these features in the blog post [Service Worker: Going beyond the page](http://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/). This completes the suite of technologies (including Fetch networking and the Push and Cache APIs) that lays the technical foundation for progressive Web Apps (PWAs) on Windows 10.
 
-PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as installation / home screen launch, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) apps.
+PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as installation / home screen launch, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) apps.
 
 Beyond PWAs, Service Workers and the Cache API allow developers the ability to intercept network requests and respond from the cache. A website need not even been a full-blow web app to take advantage of the Service Worker cache for fine-tined page load performance and reliability, as well as the ability to provide an offline experience during periods of no internet or poor-quality connection.  
 
-Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
+Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
 
 ### Web Security
 EdgeHTML 17 introduces support for Subresource Integrity (SRI). [Subresource Integrity](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) is a secuirty feature that allows browsers to verify that fetched resources (e.g. images, scripts, fonts, etc.) are delivered without unexpected manipulation. 
@@ -100,9 +100,9 @@ Add an `integrity` attribute containing a cryptographic hash representation of t
 Also new in EdgeHTML 17, the [Upgrade-Insecure-Requests](https://developer.mozilla.org/docs/Web/HTTP/Headers/Upgrade-Insecure-Requests) request header allows browsers to request a secure browsing experience. This header tells the server that the browser supports upgrading any insecure requests and the user should be redirected to a secure version of the site if available.
 
 ### Variable Fonts
-Full support for Variable Fonts (including CSS [font-variation-settings](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings) and [font-optical-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variation-settings)) is available in EdgeHTML 17. Variable fonts enable developers to achieve the look of seemingly different typefaces with a single font by adjusting various axes – reducing the need for multiple font files and bettering performance.
+Full support for Variable Fonts (including CSS [font-variation-settings](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) and [font-optical-sizing](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings)) is available in EdgeHTML 17. Variable fonts enable developers to achieve the look of seemingly different typefaces with a single font by adjusting various axes – reducing the need for multiple font files and bettering performance.
 
-Join us on [an expedition to learn about what variable fonts provide web developers and designers](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts/), and how to use them on your site. And read more about Variable Fonts in the blog post, [Bringing expressive, performant typography to Microsoft Edge with Variable Fonts](https://blogs.windows.com/msedgedev/2018/03/13/bringing-expressive-performant-typography-to-microsoft-edge-with-variable-fonts/).
+Join us on [an expedition to learn about what variable fonts provide web developers and designers](https://developer.microsoft.com/microsoft-edge/testdrive/demos/variable-fonts/), and how to use them on your site. And read more about Variable Fonts in the blog post, [Bringing expressive, performant typography to Microsoft Edge with Variable Fonts](https://blogs.windows.com/msedgedev/2018/03/13/bringing-expressive-performant-typography-to-microsoft-edge-with-variable-fonts/).
 
 <iframe height='456' scrolling='no' title='Variable Tides ticket examples' src='//codepen.io/MSEdgeDev/embed/dmYvWg/?height=456&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/dmYvWg/'>Variable Tides ticket examples</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
@@ -111,7 +111,7 @@ Join us on [an expedition to learn about what variable fonts provide web develop
 Here's the full list of new APIs in EdgeHTML 17. They are listed in the format of [interface name].[api name].
 
 > [!NOTE] 
-> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/) for the official word on feature support.
+> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development. Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/) for the official word on feature support.
 
 <iframe height='580' scrolling='no' title='New APIs in EdgeHTML 17' src='//codepen.io/MSEdgeDev/embed/pLxgdj/?height=608&theme-id=23401&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/pLxgdj/'>New APIs in EdgeHTML 17</a> by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
 
