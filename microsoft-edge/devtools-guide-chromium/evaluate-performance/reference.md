@@ -2,7 +2,7 @@
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/14/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -227,12 +227,11 @@ DevTools represents main thread activity with a flame chart.  The x-axis represe
 > A flame chart in the **Main** section  
 > ![A flame chart][ImageFlameChart]  
 
-In [Figure 16](#figure-16), a `click` event caused a function call in `script_foot_closure.js` on line 53.  Below `Function Call` you see that an anonymous function was called.  That anonymous function then called `Me()`, which then called `Se()`, and so on.  
+In [Figure 16](#figure-16), a `click` event caused a `Function Call` in `activitytabs.js` on line 53.  Below `Function Call` you see that an anonymous function was called.  The anonymous function called `a`, which called `wait`, which called `Minor GC`.  
 
-DevTools assigns scripts random colors.  In [Figure 16](#figure-16), function calls from one script are colored light green.  Calls from another script are colored beige.  The darker yellow represents scripting activity, and the purple
-event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.  
+DevTools assigns scripts random colors.  In [Figure 16](#figure-16), function calls from one script are colored light green.  Calls from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.  
 
-See [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript calls.  When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call (script_foot_closure.js:53)` from [Figure 16](#figure-16).  
+See [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript calls.  When JS samples are disabled, you only see high-level events such as `Event: click` and `Function Call` from [Figure 16](#figure-16).  
 
 ### View activities in a table   
 
