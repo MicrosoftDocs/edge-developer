@@ -16,8 +16,9 @@ The process of porting a Chrome Extension to Microsoft Edge is very straightforw
 *   `chrome.gcm`  
 *   `chrome.identity.getAccounts`  
 *   `chrome.identity.getAuthToken`  
-*   `chrome.identity.getProfileUserInfo`  
 *   `chrome.instanceID`  
+
+Also, note that the `chrome.identity.getProfileUserInfo` API works only if user is signed-in to Microsoft Edge using an MSA or AAD account. Microsoft Edge also supports sign-in using *On-premise AD* but the API will return null email and ID in this case.  
 
 > [!IMPORTANT]
 > **Payments**:  Microsoft Edge does not directly support an Extension that uses [Chrome Web Store payments][ChromeDeveloperWebStorePayments] due to the requirement to use the `identity.getAuthtoken` request to get the token for signed-in users to send the REST-based licensing API request.  Microsoft Edge does not support the `getAuthtoken` request, so this flow does not work.  
