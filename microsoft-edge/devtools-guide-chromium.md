@@ -57,7 +57,7 @@ The Microsoft Edge \(Chromium\) DevTools include:
 *   A **Security** panel to debug security issues and ensure that you have properly implemented HTTPS on your web site.  HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.  
 *   An **Audits** panel to run an audit of your web site.  The results of the audit will help you improve the quality of your site, catching common errors around making your web site accessible, secure, performant, building a PWA, etc.  and helping you fix them.  
 
-[!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
+[!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
 
 Please keep sending your [feedback and feature requests](#feedback)!  
 
