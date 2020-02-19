@@ -82,6 +82,7 @@
 ##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+#### [Optimize Website Speed](devtools-guide-chromium/speed/get-started.md)
 #### [Overview](devtools-guide-chromium/rendering-tools/index.md)
 #### [Performance Analysis Reference](devtools-guide-chromium/evaluate-performance/reference.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
