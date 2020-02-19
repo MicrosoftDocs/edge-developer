@@ -97,6 +97,7 @@
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
 ### Memory
 #### [Understand Memory Terminology](devtools-guide-chromium/memory-problems/memory-101.md)
+#### [Use Allocation Instrumentation on Timeline](devtools-guide-chromium/memory-problems/allocation-profiler.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Security](devtools-guide-chromium/security/index.md)
