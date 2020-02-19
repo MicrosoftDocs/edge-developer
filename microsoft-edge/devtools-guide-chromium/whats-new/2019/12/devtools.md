@@ -34,11 +34,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! We're excited for you to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
 
 ### Accessibility improvements to the DevTools  
 
-We've contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. We want to enable every developer building the web to use the DevTools.
+The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. Every developer building the web should be able to use the DevTools.
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
@@ -46,13 +46,14 @@ We've contributed 170 changes to Chromium to address high-impact color contrast,
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started. 
 
-If you use screen readers or the keyboard to navigate around the DevTools, we're eager to hear your feedback so [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon! 
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon! 
 
 Chromium issue [#963183][crbug963183]
 
 ### Using the DevTools in other languages  
-When we looked at data from other developer tools like StackOverflow and VS Code, we learned
-that many developers use development tools in their native language, not just in English. We’re excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
+
+Many developers use other developer tools, like StackOverflow and VS Code, in their native language, not just in English. We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
+
 
 | | |
 | -------- | ---- |
@@ -68,7 +69,7 @@ Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-If you want to use the DevTools in a different language than the ones that are available, let us know by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
 
 Chromium issue [#941561][crbug941561]
 
@@ -80,7 +81,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 > The Hints tab in the DevTools when the webhint browser extension is installed  
 > ![The Hints tab in the DevTools when the webhint browser extension is installed][ImageHintsTabWebhintExtension]  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, you can run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
 ### 3D View  
 
@@ -102,7 +103,7 @@ The DevTools team has also released some extensions for [Visual Studio Code \(VS
 
 #### Elements for Microsoft Edge  
 
-By adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension, you can use the Elements tool from within VS Code.
+Use the Elements tool from within VS Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension.
 
 > ##### Figure 5  
 > The Elements tool in VS Code using the Elements for Microsoft Edge extension
@@ -112,7 +113,7 @@ For more information, check out [Elements for Microsoft Edge VS Code extension][
 
 #### Debugger for Microsoft Edge  
 
-With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, you can debug JavaScript running in Microsoft Edge directly from VS Code!  
+With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS Code extension, debug JavaScript running in Microsoft Edge directly from VS Code!  
 
 > ##### Figure 6  
 > The Debugger for Microsoft Edge Extension in VS Code  
@@ -131,7 +132,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
 ### Visual Studio integration
-Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running in Microsoft Edge with the Visual Studio debugger. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
+In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
 
 > ##### Figure 8  
 > Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
@@ -140,7 +141,7 @@ Starting with Visual Studio 2019 version 16.2, you can debug JavaScript running 
 [Read our blog post to learn how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
 ### Tracking prevention Console messages
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into your web page's compatibility when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
 
 > ##### Figure 9  
 > Messages in the Console when tracking prevention blocks access to storage for a tracker
@@ -159,12 +160,7 @@ The Console now supports redeclarations of `let` and `class` statements.  The in
 > [!WARNING]
 > Redeclaring a `let` or `class` statement in a script outside of the Console or within a single Console input still causes a `SyntaxError`.  
 
-<aside class="warning">
-  Redeclaring a <code>let</code> or <code>class</code> statement in a script outside of the
-  Console or within a single Console input will still cause a <code>SyntaxError</code>.
-</aside>
-
-For example, previously, when redeclaring a local variable with `let`, the Console would throw an error:  
+For example, previously, when redeclaring a local variable with `let`, the Console threw an error:  
 
 > ##### Figure 10  
 > The Console in Microsoft Edge 79 showing that the let redeclaration fails  
