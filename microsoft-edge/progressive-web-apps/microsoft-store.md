@@ -3,7 +3,7 @@ description: Reach the world of Windows 10 customers by distributing your PWA th
 title: Progressive Web Apps in the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/27/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
@@ -11,17 +11,17 @@ keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA in
 
 # Progressive Web Apps in the Microsoft Store
 
-When you publish your Progressive Web App (PWA) to the [Microsoft Store](https://developer.microsoft.com/en-us/store), your potential app audience expands to the entire Windows 10 install base of nearly 700 million active monthly users! 
+When you publish your Progressive Web App (PWA) to the [Microsoft Store](https://developer.microsoft.com/store), your potential app audience expands to the entire Windows 10 install base of nearly 700 million active monthly users! 
 
 PWAs in the Microsoft Store enjoy a number of advantages:
 
-- **Discoverability** - Apps in the Microsoft Store are showcased through different categories, curated collections, and search filters, providing an easy browsing and shopping experience for potential customers of your app. You can even [enhance your Store listing](https://docs.microsoft.com/en-us/windows/uwp/publish/app-screenshots-and-images) with screenshots, a hero image, and video trailers!
+- **Discoverability** - Apps in the Microsoft Store are showcased through different categories, curated collections, and search filters, providing an easy browsing and shopping experience for potential customers of your app. You can even [enhance your Store listing](/windows/uwp/publish/app-screenshots-and-images) with screenshots, a hero image, and video trailers!
 
-- **Trustworthiness** - Windows customers know they can trust their Microsoft Store purchases and downloads because they adhere to Microsoft's rigorous [quality and safety standards](https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies).
+- **Trustworthiness** - Windows customers know they can trust their Microsoft Store purchases and downloads because they adhere to Microsoft's rigorous [quality and safety standards](/legal/windows/agreements/store-policies).
 
-- **Easy install** - The Microsoft Store provides a consistent and user friendly install experience across [all Windows 10 apps](https://www.microsoft.com/en-us/store/apps/windows?icid=CNavAppsWindowsApps), making it easy for all customers to install your PWA, regardless of technical comfort level.
+- **Easy install** - The Microsoft Store provides a consistent and user friendly install experience across [all Windows 10 apps](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), making it easy for all customers to install your PWA, regardless of technical comfort level.
 
-- **Business insights** - The [Windows Dev Center dashboard](https://docs.microsoft.com/en-us/windows/uwp/publish/using-the-windows-dev-center-dashboard) for the Microsoft Store provides you with [detailed analytics](https://docs.microsoft.com/en-us/windows/uwp/publish/analytics) about everything from how many Windows customers your PWA has reached to how they're using it and what they have to say. You can also find metrics and telemetry data on app health, ad usage, and more.
+- **Business insights** - The [Windows Dev Center dashboard](/windows/uwp/publish/using-the-windows-dev-center-dashboard) for the Microsoft Store provides you with [detailed analytics](/windows/uwp/publish/analytics) about everything from how many Windows customers your PWA has reached to how they're using it and what they have to say. You can also find metrics and telemetry data on app health, ad usage, and more.
 
 There are two options for getting your PWA into the Microsoft Store:
 
@@ -33,7 +33,10 @@ Regardless of submission method, once your PWA is accepted to the Microsoft Stor
 
 ## Submitting your PWA manually
 
-In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file). For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrappper (*WWAHost.exe* process), independent from the Microsoft Edge browser window.
+In order to distribute and promote an app through the Microsoft Store, you'll need to submit it as a Windows app package (*.appx* file).  For server-hosted web apps such as PWAs, this package simply contains app metadata and home screen icons (and none of the actual application code). With this, your web app can be installed and launched from the home screen alongside other [Windows 10 apps](/windows/uwp/get-started/whats-a-uwp) by running in a lightweight native app wrapper (*WWAHost.exe* process), independent from the Microsoft Edge browser window.  
+
+> [!IMPORTANT]
+> The EdgeHTML web platform engine is used by the WWAHost app wrapper which could introduce compatibility differences for your Microsoft Edge (Chromium) based PWA.  Be sure to do a full test pass on your application using Microsoft Edge (EdgeHTML) before submitting your app to the Microsoft store as the EdgeHTML engine is no longer being updated with newer web standards.  
 
 Here's how to do it.
 
@@ -41,14 +44,14 @@ Here's how to do it.
 
 - **An existing PWA**. Here's how to [convert your web app to a PWA](./get-started.md) if it isn't one already. 
 - **A Windows APPX packaging tool for PWAs**. Here's how to [build and run your PWA on Windows](./windows-features.md) using Visual Studio. You can also use [PWA Builder](https://www.pwabuilder.com/) to build a Windows package.
-- [**Microsoft Store app developer account**](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account). There is a [one-time fee](https://docs.microsoft.com/en-us/windows/uwp/publish/account-types-locations-and-fees) depending on your chosen account type and location, and registration requires a valid [Microsoft Account](https://account.microsoft.com/).
+- [**Microsoft Store app developer account**](/windows/uwp/publish/opening-a-developer-account). There is a [one-time fee](/windows/uwp/publish/account-types-locations-and-fees) depending on your chosen account type and location, and registration requires a valid [Microsoft Account](https://account.microsoft.com/).
 
 
 ### Store submission through *Visual Studio* 
 
-Follow these steps to [create an app package upload file](https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps#create-an-app-package-upload-file) for your PWA in Visual Studio. See [*Package a UWP app with Visual Studio*](https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps) for a more general overview of this process.
+Follow these steps to [create an app package upload file](/windows/uwp/packaging/packaging-uwp-apps#create-an-app-package-upload-file) for your PWA in Visual Studio. See [*Package a UWP app with Visual Studio*](/windows/uwp/packaging/packaging-uwp-apps) for a more general overview of this process.
 
-The instructions will also guide you through running the [**Windows App Certification Kit**](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit) to test your app for compliance with Microsoft Store requirements. This is optional, but highly recommended.
+The instructions will also guide you through running the [**Windows App Certification Kit**](https://developer.microsoft.com/windows/develop/app-certification-kit) to test your app for compliance with Microsoft Store requirements. This is optional, but highly recommended.
 
 ### Store submission through *Windows Dev Center*
 
@@ -56,11 +59,11 @@ Here's how to use *PWA Builder* to generate an app package for upload to the Win
 
 1. Generate your Windows 10 app. Here's how to run your [PWA as a Windows app with Visual Studio](./windows-features.md). You can also use [PWA Builder](https://www.pwabuilder.com/) to generate your Windows 10 app.
 
-2. Reserve your app name for the Microsoft Store by logging into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview) with your account info and following the steps to [create your app by reserving a name](https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name). Each reserved name must be unique throughout the Microsoft Store.
+2. Reserve your app name for the Microsoft Store by logging into the [Windows Dev Center dashboard](https://developer.microsoft.com/dashboard/windows/overview) with your account info and following the steps to [create your app by reserving a name](/windows/uwp/publish/create-your-app-by-reserving-a-name). Each reserved name must be unique throughout the Microsoft Store.
 
 3. When you upload your app's packages, the *DisplayName*, *Name*, *Publisher*, and *PublisherDisplayName* values in your *.appxmanifest* file must match the values assigned to your app in the Windows Dev Center dashboard upon reserving its name. 
 
-    Log into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview), and locate your app identity values under **App management** > **App identity**:
+    Log into the [Windows Dev Center dashboard](https://developer.microsoft.com/dashboard/windows/overview), and locate your app identity values under **App management** > **App identity**:
 
     ![Windows Dev Center dashboard, App identity settings](./media/dashboard-app-identity.png)
 
@@ -79,11 +82,11 @@ Here's how to use *PWA Builder* to generate an app package for upload to the Win
 
     Your .appx file will be generated to this location: `PWA\Store packages\windows10\package\windows.appx`.
 
-5. Before you upload your app for submisison to the Microsoft Store, its a good idea to test your app for compliance with Microsoft Store policies. You can do this by downloading the [**Windows App Certification Kit**](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit), launching it, and then selecting your app's *.appx* file for testing. You will receive a report of areas to address once all the tests are complete.
+5. Before you upload your app for submisison to the Microsoft Store, its a good idea to test your app for compliance with Microsoft Store policies. You can do this by downloading the [**Windows App Certification Kit**](https://developer.microsoft.com/windows/develop/app-certification-kit), launching it, and then selecting your app's *.appx* file for testing. You will receive a report of areas to address once all the tests are complete.
 
-6. Upload your package and complete the submission by logging back into the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview) and expanding the **Submissions** > **Submisison 1** panel. Follow the checklist to complete the [required store listing information](https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions) and [upload your app package](https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages).
+6. Upload your package and complete the submission by logging back into the [Windows Dev Center dashboard](https://developer.microsoft.com/dashboard/windows/overview) and expanding the **Submissions** > **Submisison 1** panel. Follow the checklist to complete the [required store listing information](/windows/uwp/publish/app-submissions) and [upload your app package](/windows/uwp/publish/upload-app-packages).
 
-For more on the all the features and services available to Microsoft Store app developers, see [*Publish Windows apps*](https://developer.microsoft.com/en-us/store/publish-apps) on the [Windows Dev Center](https://developer.microsoft.com/en-us/windows).
+For more on the all the features and services available to Microsoft Store app developers, see [*Publish Windows apps*](https://developer.microsoft.com/store/publish-apps) on the [Windows Dev Center](https://developer.microsoft.com/windows).
 
 ## Automatic PWA importing with Bing
 
@@ -107,7 +110,7 @@ To be automatically packaged and listed for the Microsoft Store, your PWA will n
 
 - [X] Service worker script(s)
 
-- [X] To not violate any laws or [Microsoft Store policies](https://docs.microsoft.com/en-us/legal/windows/agreements/store-policies).
+- [X] To not violate any laws or [Microsoft Store policies](/legal/windows/agreements/store-policies).
 
 We won’t ingest every app that meets these criteria, but will be including them in our considerations for candidates as we gradually expand our program.
 
