@@ -1,8 +1,8 @@
 ---
-title: How to Use the Allocation instrumentation on timeline Tool
+title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/11/2020
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,56 +25,52 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# How to Use the Allocation instrumentation on timeline Tool   
+# How to Use Allocation Instrumentation on Timeline  
 
 
 
-Use the Allocation instrumentation on timeline tool to find objects that are not being properly garbage collected, and continue to retain memory.  
+Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.  
 
-## How the tool works  
+## How Allocation instrumentation on timeline works  
 
-The **Allocation instrumentation on timeline** tool combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  
-Similar to these tools, tracking heap allocation for one of more objects involves starting a recording, performing a sequence of actions, then stop the recording for analysis.  
+**Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.  
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-The tool takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms!\) and one final snapshot at the end of the recording.  
+**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms!\) and one final snapshot at the end of the recording.  
 
 > ##### Figure 1  
-> Allocation instrumentation on timeline  
+> **Allocation instrumentation on timeline**  
 > ![Allocation instrumentation on timeline][ImageObjectTracker]  
 
 > [!NOTE]
-> The number after the `@` is an object ID that persists among multiple snapshots taken.  This allows precise comparison between heap states.  Displaying the address of an object makes no sense, since objects are moved during garbage collections.  
+> The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.  
 
-## Enable Allocation instrumentation on timeline  
+## Enable Allocation Instrumentation on Timeline  
 
-Follow these steps to begin using the Allocation instrumentation on timeline  
+Follow these steps to begin using **Allocation instrumentation on timeline**.  
 
-1.  Make sure you have the latest [Microsoft Edge Channel][MicrosoftEdgeChannel].  
-1.  Open the Developer Tools and click on the gear icon in the upper right.  
-1.  Open the **Memory** panel, you should see a profile section named Allocation Timelines.  
+1.  [Open the DevTools][DevtoolsOpenIndex].  
+1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.  
+1.  Start recording.  
 
 > ##### Figure 2  
 > Record heap allocations profiler  
 > ![Record heap allocations profiler][ImageRecordHeap]  
 
-## Read a heap allocation profile  
+## Read a heap allocation timeline  
 
-The heap allocation profile shows where objects are being created and identifies the retaining path.  
-In [Figure 3](#figure-3), the bars at the top indicate when new objects are found in the heap.  
+The heap allocation timeline shows where objects are being created and identifies the retaining path.  In [Figure 3](#figure-3), the bars at the top indicate when new objects are found in the heap.  
 
-The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  
-Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.  
+The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.  
 
 > ##### Figure 3  
-> Allocation instrumentation on timeline snapshot  
+> **Allocation instrumentation on timeline** snapshot  
 > ![Allocation instrumentation on timeline snapshot][ImageCollected]  
 
-In [Figure 4](#figure-4), an action was performed 3 times.  
-<!--The sample program caches five objects, so the last five blue bars are expected.  
-But the left-most blue bar indicates a potential problem.  -->  
+<!--In [Figure 4](#figure-4), an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
+<!--todo: redo figure 4 with multiple click actions  -->  
 
 You are able to use the sliders in the timeline above to zoom into that particular snapshot and see the objects that were recently allocated at that point:  
 
@@ -102,6 +98,8 @@ You are able to view memory allocation by JavaScript function.  <!--See [Investi
 [ImageSliders]: images/memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Figure 4: Zoom into snapshot"  
 
 <!-- links -->  
+
+[DevToolsOpenIndex]: ../open.md "Open Microsoft Edge DevTools"
 
 <!--[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems"  >
 

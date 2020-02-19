@@ -1,8 +1,8 @@
 ---
-title: 
+title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2020
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
