@@ -3,7 +3,7 @@ description: Use the Console tool for interactive debugging and ad hoc testing.
 title: DevTools - Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console
@@ -37,7 +37,7 @@ The following image shows the key parts of the Console:
 4. **Target**: Use the **Target** drop-down menu to switch to a different execution context, such as an `<iframe>` in your page or a running extension. By default, the top-level frame of your page is selected. Hovering over a selected frame displays a tooltip that shows the full URL for that resource.
 
 5. **Show Console** / **Hide Console** button (**Ctrl**+ **&grave;** ): In addition to the Console panel, you can use the console from the bottom of any other DevTools panel by pressing the **Show Console** / **Hide Console** button. The button has no effect when DevTools is open to the Console panel.
-	
+ 
 6. **Filter logs** (**Ctrl+F**) : You can also filter logs by using a specific text string in the search box.
 
 7. **Debugger**: Select any blue source link to open the DevTools Debugger to that particular line of code for further inspection.
