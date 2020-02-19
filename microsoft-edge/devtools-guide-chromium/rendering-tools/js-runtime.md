@@ -52,7 +52,7 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 1.  Press the **Stop** button when you are finished.  
 
 > [!NOTE]
-> You may also use the [Console Utilities APIs][DevtoolsConsoleUtilities] to record and group profiles from the command line.  
+> You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.  
 
 ## View Sampling Profile  
 
@@ -63,14 +63,6 @@ The default view is **Heavy \(Bottom Up\)**.  This view enables you to see which
 ### Change sort order   
 
 To change the sorting order, click on the dropdown menu next to the **focus selected function** ![focus selected function][ImageFocusIcon] icon and then choose one of the following options.
-
-<!-- test only -->
-
-| Sort Order option | Description | Preview |  
-|:--- |:--- | --- |  
-| Chart | Displays a chronological chart of the recording. | ![Flame chart][ImageFlameChart] |  
-| Heavy \(Bottom Up\) | Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view. | ![Heavy chart][ImageHeavyChart] |  
-| Tree \(Top Down\) | Shows an overall picture of the calling structure, starting at the top of the call stack. | ![Tree chart][ImageTreeChart] |  
 
 **Chart**.  Displays a chronological chart of the recording.  
 
