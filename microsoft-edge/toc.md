@@ -86,7 +86,7 @@
 #### [Overview](devtools-guide-chromium/rendering-tools/index.md)
 #### [Performance Analysis Reference](devtools-guide-chromium/evaluate-performance/reference.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
-#### [Speed Up JavaScript Runtime](devtools-guide-chromium/rendering-tools/js-runtime)
+#### [Speed Up JavaScript Runtime](devtools-guide-chromium/rendering-tools/js-runtime.md)
 ### Accessibility
 #### [Reference](devtools-guide-chromium/accessibility/reference.md)
 #### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
