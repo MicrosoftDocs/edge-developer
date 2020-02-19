@@ -2,7 +2,7 @@
 title: Optimize Website Speed With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2020
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -56,9 +56,8 @@ The audit has 2 important functions:
 
 ### Set up   
 
-But first, you need to set up the site so that you are able to make changes to it later:  
+First, you must set up the site so that you are able to make changes to it later.  
 
-1.  Go to `edge://version` to check what version of Microsoft \(Chromium\) Edge you are using.  <!--This tutorial was made with Microsoft Edge 68.  If you are using an earlier or later version, some features may look different or not be available.  You should be able to complete the tutorial still, just keep in mind that your UI may look different than the screenshots.  -->  
 1.  [Open the source code for the site](https://glitch.com/edit/#!/tony).  This tab is referred to as the **editor tab**.  
     
     > ##### Figure 2  
@@ -71,8 +70,8 @@ But first, you need to set up the site so that you are able to make changes to i
     > The menu that appears after clicking **tony**  
     > ![The menu that appears after clicking tony][ImageMenu]  
     
-1.  Click **Remix This**.  The name of the project changes from **tony** to some randomly-generated name.  You now have your own editable copy of the code.  Later on, you make changes to this code.
-1.  Click **Show Live**.  The demo opens in a new tab.  This tab is be referred to as the **demo tab**.  It may take a while for the site to load.  
+1.  Click **Remix Project**.  The name of the project changes from **tony** to some randomly-generated name.  You now have your own editable copy of the code.  Later on, you may make changes to this code.  
+1.  Click **Show** and select **In a New Window**.  The demo opens in a new tab.  This tab is be referred to as the **demo tab**.  It may take a while for the site to load.  
     
     > ##### Figure 4  
     > The demo tab  
@@ -94,20 +93,23 @@ For the rest of the screenshots in this tutorial, DevTools is shown in a separat
 
 The baseline is a record of how the site performed before you made any performance improvements.  
 
-1.  Click the **Audits** tab.  It may be hidden behind the **More Panels** ![More Panels][ImageMorePanelsIcon] button.  There is a Lighthouse on this panel because the project that powers the Audits panel is called [Lighthouse](/web/tools/lighthouse).  
+1.  Click the **Audits** tab.  It may be hidden behind the **More Panels** ![More Panels][ImageMorePanelsIcon] button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.  
+    
+    [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
     > ##### Figure 7  
     > The Audits panel  
     > ![The Audits panel][ImageAudits]  
     
+    <!--todo: add link to Lighthouse when section is available  -->  
+    <!-- /web/tools/lighthouse  -->  
+    
 1.  Match your audit configuration settings to those in [Figure 7](#figure-7).  Here is an explanation of the different options:  
 
-    *   **Device**.  Setting to **Mobile** changes the user agent string and simulates a mobile viewport.  
-        Setting to **Desktop** pretty much just disables the **Mobile** changes.  
+    *   **Device**.  Setting to **Mobile** changes the user agent string and simulates a mobile viewport.  Setting to **Desktop** pretty much just disables the **Mobile** changes.  
     *   **Audits**.  Disabling a category prevents the Audits panel from running those audits, and excludes those audits from your report.  Leave the other categories enabled, if you want to see the types of recommendations that are provide.  Disabling categories slightly speeds up the auditing process.  
-    *   **Throttling**.  Setting to **Simulated Slow 4G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is called "simulated" because the Audits panel does not actually throttle during the auditing process.  Instead, it just extrapolates how long the page would take to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.  
-    *   **Clear Storage**.  Enabling this checkbox clears all storage associated with the page before every audit.  
-        Leave this setting on if you want to audit how first-time visitors experience your site.  Disable this setting when you want the repeat-visit experience.  
+    *   **Throttling**.  Setting to **Simulated Slow 4G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is named "simulated" because the Audits panel does not actually throttle during the auditing process.  Instead, it just extrapolates how long the page would take to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.  
+    *   **Clear Storage**.  Enabling this checkbox clears all storage associated with the page before every audit.  Leave this setting on if you want to audit how first-time visitors experience your site.  Disable this setting when you want the repeat-visit experience.  
 
 1.  Click **Run Audits**.  After 10 to 30 seconds, the Audits panel shows you a report of the performance of the site.  
     
@@ -117,7 +119,7 @@ The baseline is a record of how the site performed before you made any performan
 
 #### Handling report errors   
 
-If you ever get an error in your Audits panel report, try running the demo tab from an **inPrivate** window with no other tabs open.  This ensures that you are running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.  
+If you ever get an error in your Audits panel report, try running the demo tab from an **InPrivate** window with no other tabs open.  This ensures that you are running Microsoft Edge from a clean state.  Microsoft Edge Extensions in particular often interfere with the auditing process.  
 
 <!--todo: add screen capture for error in audit -->  
 <!--
@@ -140,11 +142,11 @@ The **Metrics** section provides quantitative measurements of the performance of
 > The Metrics section  
 > ![The Metrics section][ImageMetrics]  
 
-Hover over a metric to see a description of it, and click **Learn More** to read documentation about it.  
+Click the highlighted toggle button in [Figure 11](#figure-11) to see a description for each metric, and click **Learn More** to read documentation about it.  
 
 > ##### Figure 11  
-> Hovering over the First Meaningful Paint metric  
-> ![Hovering over the First Meaningful Paint metric][ImageFirstMeaningfulPaint]  
+> Click the highlighted toggle button to expand the **Metrics** items  
+> ![Click the highlighted toggle button to expand the Metrics items][ImageFirstMeaningfulPaint]  
 
 Below Metrics is a collection of screenshots that show you how the page looked as it loaded.  
 
@@ -161,14 +163,14 @@ The **Opportunities** section provides specific tips on how to improve the load 
 Click an opportunity to learn more about it.  
 
 > ##### Figure 14  
-> More information about the text compression opportunity  
-> ![More information about the text compression opportunity][ImageCompression]  
+> **Eliminate render-blocking resources** opportunity  
+> ![Eliminate render-blocking resources opportunity][ImageCompression]  
 
 Click **Learn More** to see documentation about why an opportunity is important, and specific recommendations on how to fix it.  
 
 > ##### Figure 15  
-> Documentation for the text compression opportunity  
-> ![Documentation for the text compression opportunity][ImageReference]  
+> Documentation for the **Eliminate render-blocking resources** opportunity  
+> ![Documentation for the Eliminate render-blocking resources opportunity][ImageReference]  
 
 The **Diagnostics** section provides more information about factors that contribute to the load time of the page.  
 
@@ -188,7 +190,7 @@ The Opportunities section of your audit report gives you tips on how to improve 
 
 ### Enable text compression   
 
-Your report says that enabling text compression is one of the top opportunities for improving the performance of the page.  
+Your report says that avoiding enormous network payloads is one of the top opportunities for improving the performance of the page.  Enabling text compression is an opportunity to improve the performance of the page.  
 
 Text compression is when you reduce, or compress, the size of a text file before sending it over the network.  Kind of like how you might zip a folder before emailing it to reduce its size.  
 
@@ -210,7 +212,7 @@ Before you enable compression, here are a couple of ways to manually check wheth
 1.  If you do not see the **Size** column in the table of network requests, click the table header and then select **Size**.  
 
 Each **Size** cell shows two values.  The top value is the size of the downloaded resource.  
-The bottom value is the size of the uncompressed resource.  If the two values are the same, then the resource is not being compressed when it is sent over the network.  For example, in [Figure 19](#figure-19) the top and bottom values for `bundle.js` are `150 B` and `1.2 MB`.  
+The bottom value is the size of the uncompressed resource.  If the two values are the same, then the resource is not being compressed when it is sent over the network.  For example, in [Figure 19](#figure-19) the top and bottom values for `bundle.js` are `1.2 MB` and `1.2 MB`.  
 
 Check for compression by inspecting the HTTP headers of a resource:  
 
@@ -223,8 +225,7 @@ Check for compression by inspecting the HTTP headers of a resource:
     
 1.  Search the **Response Headers** section for a `content-encoding` header.  You should not see one, meaning that `bundle.js` was not compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  See [Directives][MDNContentEncodingDirectives] for an explanation of these values.  
 
-Enough with the explanations.  Time to make some changes!  
-Enable text compression by adding a couple of lines of code:  
+Enough with the explanations.  Time to make some changes!  Enable text compression by adding a couple of lines of code:  
 
 1.  In the editor tab, click **server.js**.  
     
@@ -251,24 +252,25 @@ Enable text compression by adding a couple of lines of code:
     > [!NOTE]
     > Usually, you have to install the `compression` package via something like `npm i -S compression`, but this has already been done for you.  
     
-1.  Wait for Glitch to deploy the new build of the site.  The fancy animation that you see next to **Logs** and **Show** means that the site is getting rebuilt and redeployed.  
-    The change is ready when you see **Show Live** again.  
+1.  Wait for Glitch to deploy the new build of the site.  The fancy animation next to **Tools** means that the site is getting rebuilt and redeployed.  The change is ready when the animation next to **Tools** goes away.  Click **Show** and select **In a New Window** again.  
     
-    > ##### Figure 22  
+    <!--
+    > ##### Old Figure 22  
     > The animation that indicates that the site is getting built  
     > ![The animation that indicates that the site is getting built][ImageBuilding]  
+    -->  
     
 Use the workflows that you learned earlier to manually check that the compression is working:  
 
-1.  Go back to the demo tab and reload the page.  The **Size** column should now show 2 different values for text resources like `bundle.js`.  In [Figure 23](#figure-23) the top value of `150 B` for `bundle.js` is the size of the file that was sent over the network, and the bottom value of `265 KB` is the uncompressed file size.  
+1.  Go back to the demo tab and reload the page.  The **Size** column should now show 2 different values for text resources like `bundle.js`.  In [Figure 23](#figure-23) the top value of `256 KB` for `bundle.js` is the size of the file that was sent over the network, and the bottom value of `1.2 MB` is the uncompressed file size.  
     
-    > ##### Figure 23  
+    > ##### Figure 22  
     > The Size column now shows 2 different values for text resources  
     > ![The Size column now shows 2 different values for text resources][ImageRequests]  
     
 1.  The **Response Headers** section for `bundle.js` should now include a `content-encoding: gzip` header.
     
-    > ##### Figure 24  
+    > ##### Figure 23  
     > The Response Headers section now contains a content-encoding header  
     > ![The Response Headers section now contains a content-encoding header][ImageGzip]  
     
@@ -279,7 +281,7 @@ Audit the page again to measure what kind of impact text compression has on the 
 1.  Leave the settings the same as before.  
 1.  Click **Run audit**.  
     
-    > ##### Figure 25  
+    > ##### Figure 24  
     > An Audits report after enabling text compression  
     > ![An Audits report after enabling text compression][ImageReport2]  
     
@@ -291,12 +293,9 @@ Most servers really do have simple fixes like this for enabling compression!  Ju
 
 ### Resize images   
 
-Your new report says that properly sizing images is another big opportunity.  
+Your report indicates that avoiding enormous network payloads is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there is really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.  
 
-Resizing images helps speed up load time by reducing the file size of images.  
-If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there is really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.  
-
-1.  In your report, click **Properly size images** to see what images should be resized.  It looks like all 4 images are bigger than necessary.  
+1.  In your report, click **Avoid enormous network payloads** to see which images should be resized.  It looks like 2 of the jpg files are over 2000 KB, which is bigger than necessary.  
     
     <!--
     > ##### Old Figure 27  
@@ -308,7 +307,7 @@ If your user is viewing your images on a mobile device screen that is 500-pixels
 1.  Replace `const dir = 'big'` with `const dir = 'small'`.  This directory contains copies of the same images which have been resized.  
 1.  Audit the page again to see how this change affects load performance.  
     
-    > ##### Figure 26  
+    > ##### Figure 25  
     > An Audits report after resizing images  
     > ![An Audits report after resizing images][ImageReport3]  
 
@@ -319,8 +318,7 @@ Looks like the change only has a minor affect on the overall performance score. 
 For a small app, doing a one-off resize like this may be good enough.  But for a large app, this obviously is not scalable.  Here are some strategies for managing images in large apps:  
 
 *   Resize images during your build process.  
-*   Create multiple sizes of each image during the build process and then use `srcset` in your code.  
-    At runtime, the browser takes care of choosing what size is best for the device it is running on.  
+*   Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.  
     <!--See [Relative-sized images][relative].  -->
 
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
@@ -340,29 +338,29 @@ The first task, then, is to find code that you do not need to run on page load.
 1.  Click **Eliminate render-blocking resources** to see the resources that are blocking:  
     `lodash.js` and `jquery.js`.  
     
-    > ##### Figure 27  
-    > More information about the **Reduce render-blocking resources** opportunity  
-    > ![More information about the reduce render-blocking resources opportunity][ImageRender]  
+    > ##### Figure 26  
+    > More information about the **Eliminate render-blocking resources** opportunity  
+    > ![More information about the Eliminate render-blocking resources opportunity][ImageRender]  
     
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage**.  
     
-    > ##### Figure 28  
+    > ##### Figure 27  
     > Opening the Command Menu from the Audits panel  
     > ![Opening the Command Menu from the Audits panel][ImageCommandMenu]  
     
-    > ##### Figure 29  
+    > ##### Figure 28  
     > The Coverage tab  
     > ![The Coverage tab][ImageCoverage]  
     
-1.  Click **Reload** ![Reload][ImageReloadIcon].  The Coverage tab provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` is run while the page loads.  [Figure 30](#figure-30) says that about 76% and 30% of the jQuery and Lodash files are not used, respectively.  
+1.  Click **Refresh** ![Refresh][ImageRefreshIcon].  The **Coverage** tab provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  [Figure 30](#figure-30) says that about 76% and 30% of the jQuery and Lodash files are not used, respectively.  
     
-    > ##### Figure 30  
+    > ##### Figure 29  
     > The Coverage report  
     > ![The Coverage report][ImageCoverageReport]  
     
-1.  Click the **jquery.js** row.  DevTools opens the file in the Sources panel.  A line of code ran if it has a green bar next to it.  A red bar means it was not run, and is definitely not needed on page load.  
+1.  Click the **jquery.js** row.  DevTools opens the file in the Sources panel.  A line of code ran if it has a blue bar next to it.  A red bar means it was not run, and is definitely not needed on page load.  
     
-    > ##### Figure 31  
+    > ##### Figure 30  
     > Viewing the jQuery file in the Sources panel  
     > ![Viewing the jQuery file in the Sources panel][ImageJQuery]  
     
@@ -376,20 +374,19 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The Req
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu again.  
 1.  Start typing `blocking` and then select **Show Request Blocking**.  
     
-    > ##### Figure 32  
+    > ##### Figure 31  
     > The Request Blocking tab  
     > ![The Request Blocking tab][ImageBlocking]  
     
 1.  Click **Add Pattern** ![Add Pattern][ImageAddPatternIcon], type `/libs/*`, and then press `Enter` to confirm.  
     
-    > ##### Figure 33  
+    > ##### Figure 32  
     > Adding a pattern to block any request to the `libs` directory  
     > ![Adding a pattern to block any request to the libs directory][ImageLibs]  
     
-1.  Reload the page.  The jQuery and Lodash requests are red, meaning that the requests were blocked.  
-    The page still loads and is interactive, so it looks like these resources are not needed whatsoever!  
+1.  Refresh the page.  The jQuery and Lodash requests are red, meaning that the requests were blocked.   The page still loads and is interactive, so it looks like these resources are not needed whatsoever!  
     
-    > ##### Figure 34  
+    > ##### Figure 33  
     > The Network panel shows that the requests have been blocked  
     > ![The Network panel shows that the requests have been blocked][ImageBlockedLibs]  
     
@@ -404,18 +401,17 @@ Now, remove the references to these files from the code and audit the page again
 1.  Wait for the site to re-build and re-deploy.  
 1.  Audit the page again from the **Audits** panel.  Your overall score should have improved again.  
     
-    > ##### Figure 35  
+    > ##### Figure 34  
     > An Audits report after removing the render-blocking resources  
     > ![An Audits report after removing the render-blocking resources][ImageReport4]  
 
 #### Optimizing the Critical Rendering Path in the real-world   
 
-The **Critical Rendering Path** refers to the code that you need to load a page.  
-In general, speed up page load by only shipping critical code during the page load, and then lazy-loading everything else.  
+The **Critical Rendering Path** refers to the code that you need to load a page.  In general, speed up page load by only shipping critical code during the page load, and then lazy-loading everything else.  
 
 <!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->  
 
-*   It is unlikely that you are able to find scripts that you are able to remove outright, but you may find many scripts that you do not need to request during the page load, and instead be requested asynchronously.  <!--See [Using async or defer][async].  -->  
+*   It is unlikely that you are able to find scripts that you are able to remove outright, but you may find many scripts that you do not need to request during the page load, and instead may be requested asynchronously.  <!--See [Using async or defer][async].  -->  
 *   If you are using a framework, check if it has a production mode.  This mode may use a feature such as [tree shaking][WebpackTreeShaking] in order to eliminate unnecessary code that is blocking the critical render.  
 
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
@@ -431,17 +427,15 @@ The goal is to use the Performance panel to analyze what work the main thread is
 1.  Click the **Performance** tab.  
 1.  Click **Capture Settings** ![Capture Settings][ImageCaptureIcon].  
 1.  Set **Network** to **Slow 3G** and **CPU** to **6x slowdown**.  Mobile devices typically have more hardware constraints than laptops or desktops, so these settings let you experience the page load as if you were using a less powerful device.  
-1.  Click **Reload** ![Reload][ImagesReloadIcon].  DevTools reloads the page and then produces a visualization of all the it had to do in order to load the page.  
-    This visualization is referred to as the **trace**.  
+1.  Click **Refresh** ![Refresh][ImageRefreshIcon].  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.  
     
-    > ##### Figure 36  
+    > ##### Figure 35  
     > The Performance panel trace of the page load  
     > ![The Performance panel trace of the page load][ImagePerformance]  
 
-The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  
-The wall of yellow that you see in [Figure 37](#figure-37) means that the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.  
+The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  The block of yellow selected that you see in [Figure 37](#figure-37) means that the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.  
 
-> ##### Figure 37  
+> ##### Figure 36  
 > The Overview section of the trace  
 > ![The Overview section of the trace][ImageOverview]  
 
@@ -449,37 +443,33 @@ Investigate the trace to find ways to do less JavaScript work:
 
 1.  Click the **Timings** section to expand it.  Based on the fact that there may be a bunch of [Timings][MDNUserTimingApi] measures from React, it seems like Tony's app is using the development mode of React.  Switching to the production mode of React may yield some easy performance wins.  
     
-    > ##### Figure 38  
+    > ##### Figure 37  
     > The Timings section  
     > ![The Timings section][ImageUserTiming]  
 
 1.  Click **Timings** again to collapse that section.  
 1.  Browse the **Main** section.  This section shows a chronological log of main thread activity, from left to right.  The y-axis (top to bottom) shows why events occurred.  For example, in [Figure 39](#figure-39), the `Evaluate Script` event caused the `(anonymous)` function to run, which caused `(anonymous)` to run, which caused `__webpack__require__` to run, and so on.  
     
-    > ##### Figure 39  
+    > ##### Figure 38  
     > The Main section  
     > ![The Main section][ImageMain]  
 
-1.  Scroll down to the bottom of the **Main** section.  When you use a framework, most of the upper activity is caused by the framework, which is usually out of your control.  The activity caused by your app is usually at the bottom.  In this app, it seems like a function called `App` is causing a lot of calls to a `mineBitcoin` function.  It sounds like Tony might be using the devices of his fans to mine cryptocurrency...  
+1.  Scroll down to the bottom of the **Main** section.  When you use a framework, most of the upper activity is caused by the framework, which is usually out of your control.  The activity caused by your app is usually at the bottom.  In this app, it seems like a function named `App` is causing a lot of requests to a `mineBitcoin` function.  It sounds like Tony might be using the devices of his fans to mine cryptocurrency...  
     
-    > ##### Figure 40  
+    > ##### Figure 39  
     > Hovering over the `mineBitcoin` activity  
     > ![Hovering over the mineBitcoin activity][ImageMine]  
     
     > [!NOTE]
-    > Although the calls that your framework makes are usually out of your control, sometimes you may structure your app in a way that causes the framework to run inefficiently.  
-    > Restructuring your app to use the framework efficiently is a way to do less main thread work.  However, this requires a deep understanding of how your framework works, and what kind of changes you make in your own code in order to use the framework more efficiently.  
+    > Although the requests that your framework makes are usually out of your control, sometimes you may structure your app in a way that causes the framework to run inefficiently.  Restructuring your app to use the framework efficiently is a way to do less main thread work.  However, this requires a deep understanding of how your framework works, and what kind of changes you make in your own code in order to use the framework more efficiently.  
 
-1.  Expand the **Bottom-Up** section.  This tab breaks down what activities took up the most time.  
-    If you do not see anything in the Bottom-Up section, click the label for **Main** section.  
-    The Bottom-Up section only shows information for whatever activity, or group of activity, you have currently selected.  For example, if you clicked on one of the `mineBitcoin` activities, the Bottom-Up section is only going to show information for that one activity.  
+1.  Expand the **Bottom-Up** section.  This tab breaks down what activities took up the most time.  If you do not see anything in the Bottom-Up section, click the label for **Main** section.  The **Bottom-Up** section only shows information for whatever activity, or group of activity, you have currently selected.  For example, if you clicked on one of the `mineBitcoin` activities, the **Bottom-Up** section is only going to show information for that one activity.  
     
-    > ##### Figure 41  
+    > ##### Figure 40  
     > The Bottom-Up tab  
     > ![The Bottom-Up tab][ImageBottomUp]  
 
-The **Self Time** column shows you how much time was spent directly in each activity.  
-For example, [Figure 41](#figure-41) shows that about 57% of main thread time was spent on the `mineBitcoin` function.  
+The **Self Time** column shows you how much time was spent directly in each activity.  For example, [Figure 41](#figure-41) shows that about 63% of main thread time was spent on the `mineBitcoin` function.  
 
 Time to see whether using production mode and reducing JavaScript activity may speed up the page load.  Start with production mode:  
 
@@ -488,18 +478,18 @@ Time to see whether using production mode and reducing JavaScript activity may s
 1.  Wait for the new build to deploy.  
 1.  Audit the page again.  
     
-    > ##### Figure 42  
+    > ##### Figure 41  
     > An Audits report after configuring webpack to use production mode  
     > ![An Audits report after configuring webpack to use production mode][ImageReport5]  
 
-Reduce JavaScript activity by removing the call to `mineBitcoin`:  
+Reduce JavaScript activity by removing the request to `mineBitcoin`:  
 
 1.  In the editor tab, open `src/App.jsx`.  
-1.  Comment out the call to `this.mineBitcoin(1500)` in the `constructor`.  
+1.  Comment out the request to `this.mineBitcoin(1500)` in the `constructor`.  
 1.  Wait for the new build to deploy.  
 1.  Audit the page again.  
     
-    > ##### Figure 43  
+    > ##### Figure 42  
     > An Audits report after removing unnecessary JavaScript work  
     > ![An Audits report after removing unnecessary JavaScript work][ImageReport6]  
 
@@ -539,7 +529,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 [ImageLargeResourceRowsButtonIcon]: images/large-resource-rows-button-icon.msft.png  
 [ImageMorePanelsIcon]: images/more-panels-icon.msft.png  
 [ImagePerformIcon]: images/perform-icon.msft.png  
-[ImageReloadIcon]: images/reload-icon.msft.png  
+[ImageRefreshIcon]: images/reload-icon.msft.png  
 [ImageRemoveIcon]: images/remove-icon.msft.png  
 
 [ImageTony]: images/tony.msft.png "Figure 1: Tony the cat"  
@@ -553,40 +543,40 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 <!--[ImageError]: images/.msft.png "Old Figure 9: A report that errored"  -->  
 [ImageOverall]: images/glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png "Figure 9: The overall performance score"  
 [ImageMetrics]: images/glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png "Figure 10: The Metrics section"  
-[ImageFirstMeaningfulPaint]: images/glitch-tony-remix-audits-performance-metrics-expanded.msft.png "Figure 11: Hovering over the First Meaningful Paint metric"  
+[ImageFirstMeaningfulPaint]: images/glitch-tony-remix-audits-performance-metrics-expanded.msft.png "Figure 11: Click the highlighted toggle button to expand the Metrics items"  
 [ImageScreenshots]: images/glitch-tony-remix-audits-performance-view-trace.msft.png "Figure 12: Screenshots of how the page looked while loading"  
 [ImageOpportunities]: images/glitch-tony-remix-audits-performance-opportunities.msft.png "Figure 13: The Opportunities section"  
-[ImageCompression]: images/glitch-tony-remix-audits-performance-opportunities-expanded.msft.png "Figure 14: More information about the text compression opportunity"  
-[ImageReference]: images/web-dev-performance-audits.msft.png "Figure 15: Documentation for the text compression opportunity"  
+[ImageCompression]: images/glitch-tony-remix-audits-performance-opportunities-expanded.msft.png "Figure 14: Eliminate render-blocking resources opportunity"  
+[ImageReference]: images/web-dev-performance-audits.msft.png "Figure 15: Documentation for the Eliminate render-blocking resources opportunity"  
 [ImageDiagnostics]: images/glitch-tony-remix-audits-performance-diagnostics.msft.png "Figure 16: The Diagnostics section"  
 [ImagePassed]: images/glitch-tony-remix-audits-performance-passed-audits.msft.png "Figure 17: The Passed Audits section"  
 [ImageNetwork]: images/glitch-tony-remix-network.msft.png "Figure 18: The Network panel"  
 [ImageLargeRows]: images/glitch-tony-remix-network-use-large-request-rows.msft.png "Figure 19: Large rows in the network requests table"  
 [ImageHeaders]: images/glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png "Figure 20: The Headers tab"  
 [ImageServer]: images/glitch-tony-remix-server-js.msft.png "Figure 21: Editing server.js"  
-[ImageBuilding]: images/glitch-tony-remix-servcer-js-edited.msft.png "Figure 22: The animation that indicates that the site is getting built"  
-[ImageRequests]: images/glitch-tony-remix-network-main.msft.png "Figure 23: The Size column now shows 2 different values for text resources"  
-[ImageGzip]: images/glitch-tony-remix-network-bundle-js-headers-response.msft.png "Figure 24: The Response Headers section now contains a `content-encoding` header"  
-[ImageReport2]: images/glitch-tony-remix-updated-audits-performance.msft.png "Figure 25: An Audits report after enabling text compression"  
+<!--[ImageBuilding]: images/glitch-tony-remix-servcer-js-edited.msft.png "Old Figure 22: The animation that indicates that the site is getting built"  -->  
+[ImageRequests]: images/glitch-tony-remix-network-main.msft.png "Figure 22: The Size column now shows 2 different values for text resources"  
+[ImageGzip]: images/glitch-tony-remix-network-bundle-js-headers-response.msft.png "Figure 23: The Response Headers section now contains a `content-encoding` header"  
+[ImageReport2]: images/glitch-tony-remix-updated-audits-performance.msft.png "Figure 24: An Audits report after enabling text compression"  
 <!--[ImageResize]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png "Old Figure 27: Details about the properly size images opportunity"  -->
-[ImageReport3]: images/glitch-compression-small-images-audits-performance.msft.png "Figure 26: An Audits report after resizing images"  
-[ImageRender]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png "Figure 27: More information about the reduce render-blocking resources opportunity"  
-[ImageCommandMenu]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png "Figure 28: Opening the Command Menu from the Audits panel"  
-[ImageCoverage]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png "Figure 29: The Coverage tab"  
-[ImageCoverageReport]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png "Figure 30: The Coverage report"  
-[ImageJQuery]: images/glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png "Figure 31: Viewing the jQuery file in the Sources panel"  
-[ImageBlocking]: images/glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png "Figure 32: The Request Blocking tab"  
-[ImageLibs]: images/glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png "Figure 33: Adding a pattern to block any request to the libs directory"  
-[ImageBlockedLibs]: images/glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png "Figure 34: The Network panel shows that the requests have been blocked"  
-[ImageReport4]: images/glitch-tony-remix-updated-2-audits-performance.msft.png "Figure 35: An Audits report after removing the render-blocking resources"  
-[ImagePerformance]: images/glitch-tony-remix-performance-slow-network-slow-cpu.msft.png "Figure 36: The Performance panel trace of the page load"  
-[ImageOverview]: images/glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png "Figure 37: The Overview section of the trace"  
-[ImageUserTiming]: images/glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png "Figure 38: The Timings section"  
-[ImageMain]: images/glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png "Figure 39: The Main section"  
-[ImageMine]: images/glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png "Figure 40: Hovering over the mineBitcoin activity"  
-[ImageBottomUp]: images/glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png "Figure 41: The Bottom-Up tab"  
-[ImageReport5]: images/glitch-tony-remix-updated-3-audits-performance.msft.png "Figure 42: An Audits report after configuring webpack to use production mode"  
-[ImageReport6]: images/glitch-tony-remix-updated-4-audits-performance.msft.png "Figure 43: An Audits report after removing unnecessary JavaScript work"  
+[ImageReport3]: images/glitch-compression-small-images-audits-performance.msft.png "Figure 25: An Audits report after resizing images"  
+[ImageRender]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png "Figure 26: More information about the Eliminate render-blocking resources opportunity"  
+[ImageCommandMenu]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png "Figure 27: Opening the Command Menu from the Audits panel"  
+[ImageCoverage]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png "Figure 28: The Coverage tab"  
+[ImageCoverageReport]: images/glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png "Figure 29: The Coverage report"  
+[ImageJQuery]: images/glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png "Figure 30: Viewing the jQuery file in the Sources panel"  
+[ImageBlocking]: images/glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png "Figure 31: The Request Blocking tab"  
+[ImageLibs]: images/glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png "Figure 32: Adding a pattern to block any request to the libs directory"  
+[ImageBlockedLibs]: images/glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png "Figure 33: The Network panel shows that the requests have been blocked"  
+[ImageReport4]: images/glitch-tony-remix-updated-2-audits-performance.msft.png "Figure 34: An Audits report after removing the render-blocking resources"  
+[ImagePerformance]: images/glitch-tony-remix-performance-slow-network-slow-cpu.msft.png "Figure 35: The Performance panel trace of the page load"  
+[ImageOverview]: images/glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png "Figure 36: The Overview section of the trace"  
+[ImageUserTiming]: images/glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png "Figure 37: The Timings section"  
+[ImageMain]: images/glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png "Figure 38: The Main section"  
+[ImageMine]: images/glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png "Figure 39: Hovering over the mineBitcoin activity"  
+[ImageBottomUp]: images/glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png "Figure 40: The Bottom-Up tab"  
+[ImageReport5]: images/glitch-tony-remix-updated-3-audits-performance.msft.png "Figure 41: An Audits report after configuring webpack to use production mode"  
+[ImageReport6]: images/glitch-tony-remix-updated-4-audits-performance.msft.png "Figure 42: An Audits report after removing unnecessary JavaScript work"  
 
 <!-- links -->  
 
