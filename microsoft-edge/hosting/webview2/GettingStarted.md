@@ -21,7 +21,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Step 1 - Create a single window win32 app
 
-We will start with a basic desktop project containing a single main window. As this is not the main focus of this walkthrough, we will simply use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019). [Download](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide) the modified sample to get started.
+We will start with a basic desktop project containing a single main window. As this is not the main focus of this walkthrough, we will simply use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019). [Download](https://aka.ms/HelloWebView) the modified sample to get started.
 
 Open **WebView2Sample.sln** in Visual Studio. If you are using an older version of Visual Studio, right click on the **WebView2Sample** project and click **Properties**. Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and VS toolset available to you.
 
