@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/18/2020
+ms.date: 02/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 82.0.427.0**.
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 82.0.430.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
