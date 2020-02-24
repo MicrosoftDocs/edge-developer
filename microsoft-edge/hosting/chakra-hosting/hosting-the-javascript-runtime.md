@@ -2,7 +2,7 @@
 description: "Use the standards-based Chakra JavaScript engine to add scripting capabilities to your Windows application."
 title: "Hosting the JavaScript Runtime | Microsoft Docs"
 ms.custom: ""
-ms.date: "01/18/2017"
+ms.date: 01/15/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -66,7 +66,7 @@ The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and
 ## Debugging and Profiling  
  JsRT APIs supports debugging and profiling via the Active Scripting technology.  
   
- Starting in Windows 10, the Chakra JavaScript Engine supports the legacy Internet Explorer (MSHTML) engine and new Microsoft Edge (EdgeHTML) engine, and you can target either in JsRT (see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) for details). Debugging a script in Visual Studio works differently between the legacy engine and Microsoft Edge engine. With the legacy engine, the host needs to provide an [IDebugApplication Interface](https://docs.microsoft.com/en-us/scripting/winscript/reference/idebugapplication-interface) pointer, which can be obtained from an [IProcessDebugManager Interface](https://docs.microsoft.com/en-us/scripting/winscript/reference/iprocessdebugmanager-interface) instance. With the Microsoft Edge engine, `IDebugApplication` is deprecated, and the Chakra engine enables native and script debugging capabilities through the Visual Studio debugger without requiring an implementation of `IDebugApplication` from the user.  
+ Starting in Windows 10, the Chakra JavaScript Engine supports the legacy Internet Explorer (MSHTML) engine and new Microsoft Edge (EdgeHTML) engine, and you can target either in JsRT (see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) for details). Debugging a script in Visual Studio works differently between the legacy engine and Microsoft Edge engine. With the legacy engine, the host needs to provide an [IDebugApplication Interface](/scripting/winscript/reference/idebugapplication-interface) pointer, which can be obtained from an [IProcessDebugManager Interface](/scripting/winscript/reference/iprocessdebugmanager-interface) instance. With the Microsoft Edge engine, `IDebugApplication` is deprecated, and the Chakra engine enables native and script debugging capabilities through the Visual Studio debugger without requiring an implementation of `IDebugApplication` from the user.  
   
  To make scripts in an execution context debuggable, the Chakra engine has to switch to using less efficient code execution methods. As such, debuggable code typically runs slower than non-debuggable code. As a result, with the legacy engine, a host can choose to either start debugging in an execution context from the beginning by providing the `IDebugApplication` pointer up front through `JsCreateContext`, or it can wait until debugging is needed and then call `JsStartDebugging`. With the Microsoft Edge engine, `JsCreateContext` no longer takes an `IDebugApplication` parameter, and as a result the script is debuggable only after `JsStartDebugging` is called. When debugging using Visual Studio, the "Script" debugger option must be enabled.  
   
@@ -74,9 +74,10 @@ The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and
   
 <a name="Windows"></a>   
 ## JsRT and the Universal Windows Platform  
- You can use JsRT APIs to add scripting capabilities to a Universal Windows app. A Universal Windows app that uses the JsRT APIs will need to target the Microsoft Edge JSRT APIs, which in turn target the Edge Chakra engine. For more information, see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md). The complete JsRT API is available for Universal Windows apps, except for profiling and heap enumeration support (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`, and `JsIsEnumeratingHeap` are not supported).  
+
+You can use JsRT APIs to add scripting capabilities to a Universal Windows app. A Universal Windows app that uses the JsRT APIs will need to target the Microsoft Edge JSRT APIs, which in turn target the Edge Chakra engine. For more information, see [Targeting Microsoft Edge vs. Legacy Engines](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md). The complete JsRT API is available for Universal Windows apps, except for profiling and heap enumeration support (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`, and `JsIsEnumeratingHeap` are not supported).  
   
- JsRT also allows scripts to natively access any [Universal Windows Platform (UWP) APIs](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx) after exposing the API namespace through Microsoft Edge JsRT API `JsProjectWinRTNamespace`. While Universal Windows Applications require no setup in addition to projecting necessary namespaces, in a Classic (Win32) Windows Application, a COM-initialized delegated pumping mechanism needs to be enabled through `JsSetProjectionEnqueueCallback` to enable events and asynchronous APIs. The following Win32 sample utilizes asynchronous UWP APIs to create an http client to get content from a Uri:  
+JsRT also allows scripts to natively access any [Universal Windows Platform (UWP) APIs](https://msdn.microsoft.com/library/windows/apps/br211377.aspx) after exposing the API namespace through Microsoft Edge JsRT API `JsProjectWinRTNamespace`. While Universal Windows Applications require no setup in addition to projecting necessary namespaces, in a Classic (Win32) Windows Application, a COM-initialized delegated pumping mechanism needs to be enabled through `JsSetProjectionEnqueueCallback` to enable events and asynchronous APIs. The following Win32 sample utilizes asynchronous UWP APIs to create an http client to get content from a Uri:  
   
 ```cpp  
 typedef struct _jsCall {  
@@ -121,6 +122,7 @@ outstandingCall.jsCallback(outstandingCall.jsContext);
 ```  
   
 ## See Also  
- [JavaScript Runtime Sample App](http://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
+ [JavaScript Runtime Sample App](https://go.microsoft.com/fwlink/p/?LinkID=306674&clcid=0x409)   
  [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)   
- [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)
+ [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)  
+ 
