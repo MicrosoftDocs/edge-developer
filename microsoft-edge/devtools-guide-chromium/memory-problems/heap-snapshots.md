@@ -271,7 +271,7 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 <!-- links -->  
 
 [DevtoolsMemoryProblems101ObjectSizes]: memory-101.md#object-sizes "Object sizes - Memory Terminology"  
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: (memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology"  
+[DevtoolsMemoryProblems101ObjectsRetainingTree]: memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology"  
 
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->  
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->  
