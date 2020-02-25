@@ -35,7 +35,7 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 
 *   Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.  
 *   Visualize memory usage over time with the **Memory** panel.  
-*   Identify detached DOM tress \(a common cause of memory leaks\) with **Heap snapshot**.  
+*   Identify detached DOM trees \(a common cause of memory leaks\) with **Heap snapshot**.  
 *   Find out when new memory is being allocated in your JavaScript heap \(JS heap\) with **Allocation instrumentation on timeline**.  
 
 ## Overview  
@@ -64,7 +64,7 @@ The key here is to use the RAIL model and focus on your users.  Find out what de
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.  
 
-1.  Press `Shift`+`Esc` or go to the Microsoft Edge main menu and select **More tools** > **Browser Task manager** to open the Microsoft Edge Browser Task Manager.  
+1.  Press `Shift`+`Esc` or go to the Microsoft Edge main menu and select **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.  
     
     > ##### Figure 1  
     > Opening the Microsoft Edge Browser Task Manager  
@@ -107,7 +107,7 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```  
 
-Every time that the button referenced in the code is pressed, ten thousand `div` nodes are appended to the document body, and a string of one million `x` characters is pushed onto the `x` array.  Running this code produces a Timeline recording like [Figure 3](#figure-3).  
+Every time that the button referenced in the code is pressed, ten thousand `div` nodes are appended to the document body, and a string of one million `x` characters is pushed onto the `x` array.  Running this code produces a recording in the **Performance** panel like [Figure 3](#figure-3).  
 
 > ##### Figure 3  
 > Simple growth  
@@ -164,7 +164,7 @@ Expand the carats to investigate a detached tree.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Click on a node to investigate it further.  In the **Objects** pane you are able to see more information about the code that is referencing it.  For example, in [Figure 7](#figure-7) you are able to see that the `detachedUListElement` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses `detachedUListElement` and ensure that the reference to the node is removed when it is no longer needed.
+Click on a node to investigate it further.  In the **Objects** pane you are able to see more information about the code that is referencing it.  For example, in [Figure 7](#figure-7) you are able to see that the `detachedNodes` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses the `detachedUNode` variable and ensure that the reference to the node is removed when it is no longer needed.
 
 > ##### Figure 7  
 > Investigating a node  
@@ -174,9 +174,9 @@ Click on a node to investigate it further.  In the **Objects** pane you are able
 
 ## Identify JS heap memory leaks with Allocation instrumentation on timeline  
 
-The Allocation instrumentation on timeline is another tool that may help you track down memory leaks in your JS heap.  
+**Allocation instrumentation on timeline** is another tool that may help you track down memory leaks in your JS heap.  
 
-To demonstrate the Allocation instrumentation on timeline consider the following code:  
+Demonstrate **Allocation instrumentation on timeline**  using the following code.  
 
 ```javascript
 var x = [];
@@ -231,11 +231,9 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
 
 If your page appears to pause frequently, then you may have garbage collection issues.  
 
-You are able to use either the Microsoft Edge Browser Task Manager or Timeline memory recordings to spot frequent garbage collections.  In the Microsoft Edge Browser Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collections.  In Timeline recordings, frequently rising and falling JS heap or node count graphs indicate frequent garbage collections.  
+You are able to use either the Microsoft Edge Browser Task Manager or Performance memory recordings to spot frequent garbage collection.  In the Microsoft Edge Browser Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  In Performance recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.  
 
-<!--  
-Once you have identified the problem, you are able to use an Allocation instrumentation on timeline recording to find out where memory is being allocated and which functions are causing the allocations.  
--->  
+After you have identified the problem, you are able to use an **Allocation instrumentation on timeline** recording to find out where memory is being allocated and which functions are causing the allocations.  
 
 <!--## Feedback   -->  
 
