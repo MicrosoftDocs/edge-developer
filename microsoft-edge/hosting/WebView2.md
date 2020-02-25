@@ -18,7 +18,7 @@ The WebView2 control is currently in developer preview, during which you can pro
 
 ## Supported Platforms
 
-Developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows 8, and Windows 7. In the future, we plan to support WebView2 on .NET, and XAML.  
+A developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows 8, and Windows 7. An Alpha version for WinUI is available [here](https://docs.microsoft.com/en-us/uwp/toolkits/winui3/). In the future, we plan to support WebView2 on .NET.  
 
 ## Getting Started
 
