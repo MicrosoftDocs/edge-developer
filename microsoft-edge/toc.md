@@ -79,6 +79,7 @@
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 #### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### Guides
+##### [Mark Content Scripts as Library Code](devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md)
 ##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
