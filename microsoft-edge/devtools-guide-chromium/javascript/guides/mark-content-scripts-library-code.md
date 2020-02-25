@@ -33,7 +33,7 @@ When using the **Sources** panel of Microsoft Edge DevTools to [step through cod
 
 1.  Open DevTools, select **Customize and control DevTools** `...` and click **Settings**.  You may also open **Settings** by pressing `F1`.  
 
-1.  Open the **Framework Library Code** tab.  
+1.  Select the **Library code** tab which opens the **Framework Library Code** section of **Settings**.  
 1.  Enable the **Mark content scripts as Library code** checkbox.  
     
     > ##### Figure 1  
@@ -50,7 +50,7 @@ When using the **Sources** panel of Microsoft Edge DevTools to [step through cod
 
 <!-- links -->  
 
-[DevToolsJavascriptStepThroughCode]: /microsoft-edge/devtools-guide-chromium/javascript/index.md#step-4-step-through-the-code "Step 4: Step through the code - Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Step 4: Step through the code - Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
