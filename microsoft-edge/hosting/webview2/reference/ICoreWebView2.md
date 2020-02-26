@@ -1123,7 +1123,7 @@ Add the provided host object to script running in the WebView with the specified
 > public HRESULT [AddRemoteObject](#addremoteobject)(LPCWSTR name,VARIANT * object)
 
 Host objects are exposed as remote object proxies via `window.chrome.webview.remoteObjects.<name>`. Remote object proxies are promises and will resolve to an object representing the host object. The promise is rejected if the app has not added an object with the name. When JavaScript code access a property or method of the object, a promise is return, which will resolve to the value returned from the host for the property or method, or rejected in case of error such as there is no such property or method on the object or parameters are invalid. For example, when the application code does the following: 
-```js
+```cpp
 VARIANT object;
 object.vt = VT_DISPATCH;
 object.pdispVal = appObject;
@@ -1165,7 +1165,7 @@ Setting a property on an asynchronous remote object proxy works slightly differe
 
 For example, suppose you have a COM object with the following interface
 
-```idl
+```IDL
     [uuid(3a14c9c0-bc3e-453f-a314-4ce4a0ec81d8), object, local]
     interface IRemoteObjectSample : IUnknown
     {
@@ -1513,11 +1513,11 @@ CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_SCRIPT            | Script resources.
 CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_XML_HTTP_REQUEST            | XML HTTP requests.
 CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_FETCH            | Fetch API communication.
 CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_TEXT_TRACK            | TextTrack resources.
-CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_EVENT_SOURCE            | 
-CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_WEBSOCKET            | 
-CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_MANIFEST            | 
-CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | 
-CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | 
-CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | 
+CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_EVENT_SOURCE            | EventSource API communication.
+CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_WEBSOCKET            | WebSocket API communication.
+CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_MANIFEST            | Web App Manifests.
+CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Signed HTTP Exchanges.
+CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Ping requests.
+CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | CSP Violation Reports.
 CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Other resources.
 
