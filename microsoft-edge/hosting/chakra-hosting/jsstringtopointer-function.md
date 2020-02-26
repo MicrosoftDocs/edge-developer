@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsStringToPointer function"
 ms.assetid: c7aa7a09-489d-4435-8f8a-aeb62f8875ae
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsStringToPointer Function
 Retrieves the string pointer of a string value.  

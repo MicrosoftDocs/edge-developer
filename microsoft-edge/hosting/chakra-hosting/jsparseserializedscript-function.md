@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsParseSerializedScript function"
 ms.assetid: 40d0c7c4-fd5b-46ed-9e65-38c2db2fc859
 caps.latest.revision: 13
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsParseSerializedScript Function
 Parses a serialized script and returns a function representing the script.  

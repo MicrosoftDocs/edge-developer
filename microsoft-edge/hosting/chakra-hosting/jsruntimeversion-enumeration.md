@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsRuntimeVersion enumeration"
 ms.assetid: 3de69423-3bee-4d20-8ae7-2cf56c848be7
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsRuntimeVersion Enumeration
 Version of the runtime.  

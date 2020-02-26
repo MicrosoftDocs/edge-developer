@@ -3,7 +3,7 @@ description: Features added to the Microsoft Edge DevTools in the Windows 10 Apr
 title: DevTools in EdgeHTML 17
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/20/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 17
@@ -16,7 +16,7 @@ The EdgeHTML 17 release of the DevTools ships in two ways: as the traditional in
 
 The tools have been updated with a number of major features, including basic support for [remote debugging](../../devtools-guide.md#remote-debugging) (via our new [DevTools Protocol](#devtools-protocol)), [PWA debugging features](#pwa-debugging), [IndexedDB cache management](#indexeddb-inspection), [vertical docking](#docking-to-the-right-in-microsoft-edge) and more! We also continued the overall [refactoring effort](./edgehtml-16.md) started last release as part of ongoing investments in performance and reliability.
 
-Here are the latest Microsoft Edge DevTools features that shipped in the [Windows 10 April 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](https://aka.ms/devguide_edgehtml_17)).
+Here are the latest Microsoft Edge DevTools features that shipped in the [Windows 10 April 2018 Update](/windows/uwp/whats-new/windows-10-build-17134) ([EdgeHTML 17](https://aka.ms/devguide_edgehtml_17)).
 
 ## Microsoft Edge DevTools app preview
 
@@ -39,7 +39,7 @@ Check out the *DevTools guide* for more on [local and remote debugging using the
 
 Developer tools can use the [**Microsoft Edge DevTools Protocol**](../../devtools-protocol/index.md) to inspect and debug the Microsoft Edge browser. It provides a set of methods and events that are organized into different [Domains](../../devtools-protocol/0.1/domains/index.md) of EdgeHTML engine instrumentation.
 
- Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Microsoft Edge or the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal). 
+ Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Microsoft Edge or the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal). 
  
  Microsoft Edge DevTools uses this protocol to enable [remote debugging](../../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store. Currently this preview support is limited to JS debugging of another Edge on another desktop device or VM. Over time, we’ll add support for the full set of DevTools against any EdgeHTML instance on any Windows 10 device.  
  
@@ -57,7 +57,7 @@ Additionally, the [Network panel toolbar](../network.md#toolbar) has a new butto
 
 ![Network toolbar button: Bypass Service Worker for all network requests](../media/network_toolbar_bypass_sw.png)
 
-You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/windows-features.md) by selecting it from the list of [**Local**](../../progressive-web-apps/windows-features.md#debug-your-pwa-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).
+You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/windows-features.md) by selecting it from the list of [**Local**](../../progressive-web-apps/windows-features.md#debug-your-pwa-edgehtml-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).  
 
 ## Docking to the right in Microsoft Edge
 

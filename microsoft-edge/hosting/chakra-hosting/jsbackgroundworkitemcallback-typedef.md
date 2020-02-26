@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: e6db52e1-830c-46a2-b9f9-cc2d450a1da8
 caps.latest.revision: 6
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsBackgroundWorkItemCallback Typedef
 A background work item callback.  

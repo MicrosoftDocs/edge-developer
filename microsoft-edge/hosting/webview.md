@@ -1,20 +1,20 @@
 ---
-description: Host web content in your Windows 10 app with the Microsoft Edge WebView control
+description: Host web content in your Windows 10 app with the WebView (EdgeHTML) control
 title: Microsoft Edge WebView for Windows 10 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/19/2018
+ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
 ---
 
-# Microsoft Edge WebView for Windows 10 apps
+# WebView (EdgeHTML) for Windows 10 apps
 
-The Microsoft Edge WebView control enables you to host web content in your Windows 10 app. 
+The WebView (EdgeHTML) control enables you to host web content in your Windows 10 app. 
 
-You can use it as a XAML element (for [Universal Windows Platform (UWP) apps](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.WebView) and [Windows Forms and WPF desktop applications](https://docs.microsoft.com/en-us/windows/communitytoolkit/controls/wpf-winforms/webview)), or an HTML element (x-ms-webview)/DOM object (MSHTMLWebViewElement) for JavaScript-based Windows 10 apps, as described here.
+You can use it as a XAML element (for [Universal Windows Platform (UWP) apps](/uwp/api/Windows.UI.Xaml.Controls.WebView) and [Windows Forms and WPF desktop applications](/windows/communitytoolkit/controls/wpf-winforms/webview)), or an HTML element (x-ms-webview)/DOM object (MSHTMLWebViewElement) for JavaScript-based Windows 10 apps, as described here.
 
 | | |
 |-|-|
@@ -39,11 +39,11 @@ if (MSHTMLWebViewElement) {
 
 Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
 
- - Load pages and resources from your [ApplicationData](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview#buildlocalstreamuri) (*ms-local-stream:///*)
+ - Load pages and resources from your [ApplicationData](/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](/microsoft-edge/hosting/webview#buildlocalstreamuri) (*ms-local-stream:///*)
 
  - Provide browser-like controls: for going [back](#goback) and [forward](#goforward) in navigation history, and [stopping](#stop) or [refreshing](#refresh) the current page. 
 
- - [Capture screenshots of web content](#capturepreviewtoblobasync) making it easy to implement the Windows 10 app [Share](https://docs.microsoft.com/en-us/windows/uwp/app-to-app/share-data) contract.
+ - [Capture screenshots of web content](#capturepreviewtoblobasync) making it easy to implement the Windows 10 app [Share](/windows/uwp/app-to-app/share-data) contract.
 
  - Allow JavaScript code running within a webview to raise custom events ([MSWebViewScriptNotify](#mswebviewscriptnotify)) to your app, and allow your app to run JavaScript within the webview ([invokeScriptAsync](#invokescriptasync)).
 
@@ -66,7 +66,7 @@ When a Windows app using JavaScript is printed, the `<x-ms-webview>` tags are tr
 
 ### Service workers
 
-Starting with the [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) (EdgeHTML 18), [service workers are supported in the WebView control](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide#service-workers) (in addition to the Microsoft Edge browser and Windows 10 apps with JavaScript).
+Starting with the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) (EdgeHTML 18), [service workers are supported in the WebView control](/microsoft-edge/dev-guide#service-workers) (in addition to the Microsoft Edge browser and Windows 10 apps with JavaScript).
 
 x64 app architectures require Neutral (Any CPU) or x64 packages, as service workers are not supported in WoW64 processes. (To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.)
 
@@ -76,13 +76,13 @@ Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-we
 
 ### WinRT API access
 
-A UWP app may allow HTML documents inside WebViews to have access to WinRT APIs. This is via the WindowsRuntimeAccess attribute of the Rule child elements of the ApplicationContentUriRules element of the AppxManifest.xml of the UWP app. Set WindowsRuntimeAccess to 'all' and HTML documents with matching URIs will be allowed to use WinRT. This is the same as providing WinRT access to HTML content in JavaScript UWP apps so see [Call WinRT APIs from your PWA](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps/windows-features#call-winrt-apis-from-your-pwa) for more information.
+A UWP app may allow HTML documents inside WebViews to have access to WinRT APIs. This is via the WindowsRuntimeAccess attribute of the Rule child elements of the ApplicationContentUriRules element of the AppxManifest.xml of the UWP app. Set WindowsRuntimeAccess to 'all' and HTML documents with matching URIs will be allowed to use WinRT. This is the same as providing WinRT access to HTML content in JavaScript UWP apps so see [Call WinRT APIs from your PWA](/microsoft-edge/progressive-web-apps/windows-features#call-winrt-apis-from-your-pwa) for more information.
 
 UI related WinRT APIs may not work when called from a WebView running on its own thread but may work when called from a WebView running in a separate WebView process. When using a WebView on its own unique thread, that thread is not the app's view thread. Some UI related WinRT APIs require to be called from the app's view thread. WebViews created in a separate WebView process do run on a view thread and so should not face the same restrictions as WebView's running on their own unique thread. If you have trouble with UI related WinRT APIs in a WebView ensure that you're using a WebView in its own WebView process as described above.
 
 ### AppCache storage limitations
 
-Applications using JavaScript support of the Application Cache API (or AppCache), as defined in the [HTML5 specification](http://go.microsoft.com/fwlink/p/?LinkId=228542), to create offline web applications must observe available storage limitations. This is especially true in devices with limited memory space. The practical limits on the size of the AppCache are always a function of available disk storage space. The general guidelines are shown below.
+Applications using JavaScript support of the Application Cache API (or AppCache), as defined in the [HTML5 specification](https://go.microsoft.com/fwlink/p/?LinkId=228542), to create offline web applications must observe available storage limitations. This is especially true in devices with limited memory space. The practical limits on the size of the AppCache are always a function of available disk storage space. The general guidelines are shown below.
 
 | Volume size         |AppCache per domain | AppCache per user   | 
 |---------------|---------------|-------------------------|
@@ -92,7 +92,7 @@ Up to 4GB | 10MB | 50MB |
 
 All Windows 10 apps are intended to use the same AppCache quota model, so the available disk storage limitation applies to both desktop and phone apps. The is also a hard limit after pages loaded inside **WebView** together have consumed 1 GB of *AppCache* space; requests for additional *AppCache* storage above this limit will be denied. 
 
-For more information, see the [HTML WebView control sample](http://go.microsoft.com/fwlink/p/?linkid=309825) and the JSBrowser's [Harnessing the WebView control](https://github.com/MicrosoftEdge/JSBrowser#harnessing-the-webview-control) documentation.
+For more information, see the [HTML WebView control sample](https://go.microsoft.com/fwlink/p/?linkid=309825) and the JSBrowser's [Harnessing the WebView control](https://github.com/MicrosoftEdge/JSBrowser#harnessing-the-webview-control) documentation.
 
 ## Events
 
@@ -649,7 +649,7 @@ Calling addWebAllowedObject multiple times in a row will inject multiple objects
 
 If a navigate fails or is redirected, the addWebAllowedObject calls for that navigation are ignored. If you want to handle redirects you can subscribe to the MSWebViewNavigationStarting event watch for redirects and call addWebAllowedObject again according to whatever criteria is appropriate for your application. Similarly, once a document navigates away any objects injected via addWebAllowedObject for that document will not carry over to the next document and you'll need to explicitly call addWebAllowedObject if you want them to carry over.
 
-If you call addWebAllowedObject for a document that has no WinRT access otherwise, or if it has [AllowForWebOnly access via ApplicationContentUriRules](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/element-uap-rule) then the object will only be injected if the object has the Windows.Foundation.Metadata.AllowForWeb metadata attribute. Otherwise injection will fail and an error will be reported to the JavaScript developer console. If called on a document that has full WinRT access, then the object will be injected regardless of the AllowForWeb attribute. 
+If you call addWebAllowedObject for a document that has no WinRT access otherwise, or if it has [AllowForWebOnly access via ApplicationContentUriRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap-rule) then the object will only be injected if the object has the Windows.Foundation.Metadata.AllowForWeb metadata attribute. Otherwise injection will fail and an error will be reported to the JavaScript developer console. If called on a document that has full WinRT access, then the object will be injected regardless of the AllowForWeb attribute. 
 
 Additionally, the object must implement the IAgileObject interface. This is because the XAML and HTML webview elements run on their app's ASTA view threads and the WebView's JavaScript thread is a different ASTA thread and we want to encourage app developers to ensure their object can run on the JavaScript thread without blocking the app view thread if possible.
 
@@ -708,7 +708,7 @@ The following example illustrates a typical use case.
 ```js
 var webview = document.createElement("x-ms-webview"); //Instantiate the webview element
 var localStreamUri = webview.buildLocalStreamUri(contentIdentifier, relativePath); //Create URI to pass to navigateToLocalStreamUri method
-webview.navigateToLocalStreamUri(localStreamUri, streamResolver); //Load the local web content	
+webview.navigateToLocalStreamUri(localStreamUri, streamResolver); //Load the local web content 
 ```  
 
 ### capturePreviewToBlobAsync
@@ -905,7 +905,7 @@ This method does not return a value.
 
 ### navigateToLocalStreamUri
 
-Loads local web content at the specified URI using a [**UriToStreamResolver**](https://docs.microsoft.com/en-us/uwp/api/windows.web.iuritostreamresolver.uritostreamasync).
+Loads local web content at the specified URI using a [**UriToStreamResolver**](/uwp/api/windows.web.iuritostreamresolver.uritostreamasync).
 
 ```js
 webview.navigateToLocalStreamUri(source, streamResolver); 
@@ -914,7 +914,7 @@ webview.navigateToLocalStreamUri(source, streamResolver);
 
 *source*
 * Type: **String**
-* An ms-local-stream URI identifying the local HTML content to load. Create this string using [**buildLocalStreamUri**](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri).
+* An ms-local-stream URI identifying the local HTML content to load. Create this string using [**buildLocalStreamUri**](/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri).
 
 *streamResolver*
 * Type: any
