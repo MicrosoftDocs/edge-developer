@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetFalseValue function"
 ms.assetid: 621a584c-4ca8-4ba0-b19a-6cb50cf830b6
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetFalseValue Function
 Gets the value of `false` in the current script context.  

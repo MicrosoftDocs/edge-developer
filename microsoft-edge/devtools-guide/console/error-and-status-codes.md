@@ -4,7 +4,7 @@ description: Reference common Console codes and suggested fixes
 title: DevTools - Console error and status codes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/05/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
@@ -206,35 +206,35 @@ JavaScript syntax errors occur when the structure of one of your statements viol
 
 |Error Number|Description|  
 |------------------|-----------------|  
-|1019|[Can't have 'break' outside of loop](https://docs.microsoft.com/en-us/scripting/javascript/misc/can-t-have-break-outside-of-loop)|  
-|1020|[Can't have 'continue' outside of loop](https://docs.microsoft.com/en-us/scripting/javascript/misc/can-t-have-continue-outside-of-loop)|  
-|1030|[Conditional compilation is turned off](https://docs.microsoft.com/en-us/scripting/javascript/misc/conditional-compilation-is-turned-off)|  
-|1027|['default' can only appear once in a 'switch' statement](https://docs.microsoft.com/en-us/scripting/javascript/misc/default-can-only-appear-once-in-a-switch-statement)|  
-|1005|[Expected '('](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-left-parenthesis-javascript)|  
-|1006|[Expected ')'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-parenthesis-javascript)|  
-|1012|[Expected '/'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-minus)|  
-|1003|[Expected ':'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-colon)|  
-|1004|[Expected ';'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-semicolon)|  
-|1032|[Expected '@'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-at)|  
-|1029|[Expected '@end'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-at-end)|  
-|1007|[Expected '&#93;'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-square-bracket)|  
-|1008|[Expected '{'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-left-curly-brace)|  
-|1009|[Expected '}'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-curly-brace)|  
-|1011|[Expected '='](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-equal-javascript)|  
-|1033|[Expected 'catch'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-catch)|  
-|1031|[Expected constant](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-constant)|  
-|1023|[Expected hexadecimal digit](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-hexadecimal-digit)|  
-|1010|[Expected identifier](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-identifier-javascript)|  
-|1028|[Expected identifier, string or number](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-identifier-string-or-number)|  
-|1024|[Expected 'while'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-while)|  
-|1014|[Invalid character](https://docs.microsoft.com/en-us/scripting/javascript/misc/invalid-character-javascript)|  
-|1026|[Label not found](https://docs.microsoft.com/en-us/scripting/javascript/misc/label-not-found)|  
-|1025|[Label redefined](https://docs.microsoft.com/en-us/scripting/javascript/misc/label-redefined)|  
-|1018|['return' statement outside of function](https://docs.microsoft.com/en-us/scripting/javascript/misc/return-statement-outside-of-function)|  
-|1002|[Syntax error](https://docs.microsoft.com/en-us/scripting/javascript/misc/syntax-error-javascript)|  
-|1035|[Throw must be followed by an expression on the same source line](https://docs.microsoft.com/en-us/scripting/javascript/misc/throw-must-be-followed-by-an-expression-on-the-same-source-line)|  
-|1016|[Unterminated comment](https://docs.microsoft.com/en-us/scripting/javascript/misc/unterminated-comment)|  
-|1015|[Unterminated string constant](https://docs.microsoft.com/en-us/scripting/javascript/misc/unterminated-string-constant-javascript)|  
+|1019|[Can't have 'break' outside of loop](/scripting/javascript/misc/can-t-have-break-outside-of-loop)|  
+|1020|[Can't have 'continue' outside of loop](/scripting/javascript/misc/can-t-have-continue-outside-of-loop)|  
+|1030|[Conditional compilation is turned off](/scripting/javascript/misc/conditional-compilation-is-turned-off)|  
+|1027|['default' can only appear once in a 'switch' statement](/scripting/javascript/misc/default-can-only-appear-once-in-a-switch-statement)|  
+|1005|[Expected '('](/scripting/javascript/misc/expected-left-parenthesis-javascript)|  
+|1006|[Expected ')'](/scripting/javascript/misc/expected-right-parenthesis-javascript)|  
+|1012|[Expected '/'](/scripting/javascript/misc/expected-minus)|  
+|1003|[Expected ':'](/scripting/javascript/misc/expected-colon)|  
+|1004|[Expected ';'](/scripting/javascript/misc/expected-semicolon)|  
+|1032|[Expected '@'](/scripting/javascript/misc/expected-at)|  
+|1029|[Expected '@end'](/scripting/javascript/misc/expected-at-end)|  
+|1007|[Expected '&#93;'](/scripting/javascript/misc/expected-right-square-bracket)|  
+|1008|[Expected '{'](/scripting/javascript/misc/expected-left-curly-brace)|  
+|1009|[Expected '}'](/scripting/javascript/misc/expected-right-curly-brace)|  
+|1011|[Expected '='](/scripting/javascript/misc/expected-equal-javascript)|  
+|1033|[Expected 'catch'](/scripting/javascript/misc/expected-catch)|  
+|1031|[Expected constant](/scripting/javascript/misc/expected-constant)|  
+|1023|[Expected hexadecimal digit](/scripting/javascript/misc/expected-hexadecimal-digit)|  
+|1010|[Expected identifier](/scripting/javascript/misc/expected-identifier-javascript)|  
+|1028|[Expected identifier, string or number](/scripting/javascript/misc/expected-identifier-string-or-number)|  
+|1024|[Expected 'while'](/scripting/javascript/misc/expected-while)|  
+|1014|[Invalid character](/scripting/javascript/misc/invalid-character-javascript)|  
+|1026|[Label not found](/scripting/javascript/misc/label-not-found)|  
+|1025|[Label redefined](/scripting/javascript/misc/label-redefined)|  
+|1018|['return' statement outside of function](/scripting/javascript/misc/return-statement-outside-of-function)|  
+|1002|[Syntax error](/scripting/javascript/misc/syntax-error-javascript)|  
+|1035|[Throw must be followed by an expression on the same source line](/scripting/javascript/misc/throw-must-be-followed-by-an-expression-on-the-same-source-line)|  
+|1016|[Unterminated comment](/scripting/javascript/misc/unterminated-comment)|  
+|1015|[Unterminated string constant](/scripting/javascript/misc/unterminated-string-constant-javascript)|  
   
 ### Script Host Errors  
 
@@ -252,8 +252,8 @@ JavaScript run-time errors are errors that occur when your script attempts to pe
 
 |Error Number|Description|  
 |------------------|-----------------|  
-|5|[Access is denied](https://docs.microsoft.com/en-us/scripting/javascript/misc/access-is-denied)|  
-|438|[Object doesn't support this property or method](https://docs.microsoft.com/en-us/scripting/javascript/misc/object-doesn-t-support-this-property-or-method)|  
+|5|[Access is denied](/scripting/javascript/misc/access-is-denied)|  
+|438|[Object doesn't support this property or method](/scripting/javascript/misc/object-doesn-t-support-this-property-or-method)|  
 |1001|Out of memory|  
 
 ### Windows Runtime errors
@@ -262,37 +262,37 @@ JavaScript run-time errors are errors that occur when your script attempts to pe
 
  |Error Number|Description|  
 |------------------|-----------------|  
-|5029|[Array length must be a finite positive integer](https://docs.microsoft.com/en-us/scripting/javascript/misc/array-length-must-be-a-finite-positive-integer)|  
-|5030|[Array length must be assigned a finite positive number](https://docs.microsoft.com/en-us/scripting/javascript/misc/array-length-must-be-assigned-a-finite-positive-number)|  
-|5028|[Array or arguments object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/array-or-arguments-object-expected)|  
-|5010|[Boolean expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/boolean-expected)|  
-|5003|[Cannot assign to a function result](https://docs.microsoft.com/en-us/scripting/javascript/misc/cannot-assign-to-a-function-result)|  
-|5000|[Cannot assign to 'this'](https://docs.microsoft.com/en-us/scripting/javascript/misc/cannot-assign-to-this)|  
-|5034|[Circular reference in value argument not supported](https://docs.microsoft.com/en-us/scripting/javascript/misc/circular-reference-in-value-argument-not-supported)|  
-|5006|[Date object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/date-object-expected)|  
-|5015|[Enumerator object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/enumerator-object-expected)|  
-|5022|[Exception thrown and not caught](https://docs.microsoft.com/en-us/scripting/javascript/misc/exception-thrown-and-not-caught)|  
-|5020|[Expected ')' in regular expression](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-parenthesis-in-regular-expression-javascript)|  
-|5019|[Expected '&#93;' in regular expression](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-square-bracket-in-regular-expression-javascript)|  
-|5023|[Function does not have a valid prototype object](https://docs.microsoft.com/en-us/scripting/javascript/misc/function-does-not-have-a-valid-prototype-object)|  
-|5002|[Function expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/function-expected)|  
-|5008|[Illegal assignment](https://docs.microsoft.com/en-us/scripting/javascript/misc/illegal-assignment-javascript)|  
-|5021|[Invalid range in character set](https://docs.microsoft.com/en-us/scripting/javascript/misc/invalid-range-in-character-set-javascript)|  
-|5035|[Invalid replacer argument](https://docs.microsoft.com/en-us/scripting/javascript/misc/invalid-replacer-argument)|  
-|5014|[JavaScript object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/javascript-object-expected)|  
-|5001|[Number expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/number-expected)|  
-|5007|[Object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/object-expected)|  
-|5012|[Object member expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/object-member-expected)|  
-|5016|[Regular Expression object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/regular-expression-object-expected)|  
-|5005|[String expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/string-expected)|  
-|5017|[Syntax error in regular expression](https://docs.microsoft.com/en-us/scripting/javascript/misc/syntax-error-in-regular-expression-javascript)|  
-|5026|[The number of fractional digits is out of range](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-number-of-fractional-digits-is-out-of-range)|  
-|5027|[The precision is out of range](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-precision-is-out-of-range)|  
-|5025|[The URI to be decoded is not a valid encoding](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-uri-to-be-decoded-is-not-a-valid-encoding)|  
-|5024|[The URI to be encoded contains an invalid character](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-uri-to-be-encoded-contains-an-invalid-character)|  
-|5009|[Undefined identifier](https://docs.microsoft.com/en-us/scripting/javascript/misc/undefined-identifier)|  
-|5018|[Unexpected quantifier](https://docs.microsoft.com/en-us/scripting/javascript/misc/unexpected-quantifier-javascript)|  
-|5013|[VBArray expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/vbarray-expected)|  
+|5029|[Array length must be a finite positive integer](/scripting/javascript/misc/array-length-must-be-a-finite-positive-integer)|  
+|5030|[Array length must be assigned a finite positive number](/scripting/javascript/misc/array-length-must-be-assigned-a-finite-positive-number)|  
+|5028|[Array or arguments object expected](/scripting/javascript/misc/array-or-arguments-object-expected)|  
+|5010|[Boolean expected](/scripting/javascript/misc/boolean-expected)|  
+|5003|[Cannot assign to a function result](/scripting/javascript/misc/cannot-assign-to-a-function-result)|  
+|5000|[Cannot assign to 'this'](/scripting/javascript/misc/cannot-assign-to-this)|  
+|5034|[Circular reference in value argument not supported](/scripting/javascript/misc/circular-reference-in-value-argument-not-supported)|  
+|5006|[Date object expected](/scripting/javascript/misc/date-object-expected)|  
+|5015|[Enumerator object expected](/scripting/javascript/misc/enumerator-object-expected)|  
+|5022|[Exception thrown and not caught](/scripting/javascript/misc/exception-thrown-and-not-caught)|  
+|5020|[Expected ')' in regular expression](/scripting/javascript/misc/expected-right-parenthesis-in-regular-expression-javascript)|  
+|5019|[Expected '&#93;' in regular expression](/scripting/javascript/misc/expected-right-square-bracket-in-regular-expression-javascript)|  
+|5023|[Function does not have a valid prototype object](/scripting/javascript/misc/function-does-not-have-a-valid-prototype-object)|  
+|5002|[Function expected](/scripting/javascript/misc/function-expected)|  
+|5008|[Illegal assignment](/scripting/javascript/misc/illegal-assignment-javascript)|  
+|5021|[Invalid range in character set](/scripting/javascript/misc/invalid-range-in-character-set-javascript)|  
+|5035|[Invalid replacer argument](/scripting/javascript/misc/invalid-replacer-argument)|  
+|5014|[JavaScript object expected](/scripting/javascript/misc/javascript-object-expected)|  
+|5001|[Number expected](/scripting/javascript/misc/number-expected)|  
+|5007|[Object expected](/scripting/javascript/misc/object-expected)|  
+|5012|[Object member expected](/scripting/javascript/misc/object-member-expected)|  
+|5016|[Regular Expression object expected](/scripting/javascript/misc/regular-expression-object-expected)|  
+|5005|[String expected](/scripting/javascript/misc/string-expected)|  
+|5017|[Syntax error in regular expression](/scripting/javascript/misc/syntax-error-in-regular-expression-javascript)|  
+|5026|[The number of fractional digits is out of range](/scripting/javascript/misc/the-number-of-fractional-digits-is-out-of-range)|  
+|5027|[The precision is out of range](/scripting/javascript/misc/the-precision-is-out-of-range)|  
+|5025|[The URI to be decoded is not a valid encoding](/scripting/javascript/misc/the-uri-to-be-decoded-is-not-a-valid-encoding)|  
+|5024|[The URI to be encoded contains an invalid character](/scripting/javascript/misc/the-uri-to-be-encoded-contains-an-invalid-character)|  
+|5009|[Undefined identifier](/scripting/javascript/misc/undefined-identifier)|  
+|5018|[Unexpected quantifier](/scripting/javascript/misc/unexpected-quantifier-javascript)|  
+|5013|[VBArray expected](/scripting/javascript/misc/vbarray-expected)|  
 
 ## Security codes
 
@@ -329,7 +329,7 @@ SEC7132 | "The certificate protecting this web site uses weak cryptography" | Th
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
 SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/library/ff972086.aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
-SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113.aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
+SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/library/ff972113.aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
 
 ## XML codes
 XML codes are in the form of XML5xxx, such as XML5603.

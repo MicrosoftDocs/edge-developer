@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsErrorCode enumeration"
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
 caps.latest.revision: 15
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsErrorCode Enumeration
 An error code returned from a Chakra hosting API.  

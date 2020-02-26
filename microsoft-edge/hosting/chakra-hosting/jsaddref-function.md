@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsAddRef function"
 ms.assetid: a7f3ed49-6a86-489a-abdf-c99428e79cae
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsAddRef Function
 Adds a reference to a garbage collected object.  
