@@ -3,7 +3,7 @@ description: Reach the world of Windows 10 customers by distributing your PWA th
 title: Progressive Web Apps in the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 02/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
