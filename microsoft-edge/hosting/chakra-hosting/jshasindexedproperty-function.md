@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsHasIndexedProperty function"
 ms.assetid: 30436a3d-fda0-407e-aba2-142be2310372
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsHasIndexedProperty Function
 Tests whether an object has a value at the specified index.  

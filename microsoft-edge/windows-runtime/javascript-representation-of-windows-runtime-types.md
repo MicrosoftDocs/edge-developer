@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JavaScript, Windows Runtime types"
 ms.assetid: f4851802-8b40-4afa-ba6c-8a162a9a43cc
 caps.latest.revision: 9
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JavaScript Representation of Windows Runtime Types
 The following table describes the way JavaScript represents Windows Runtime types.  

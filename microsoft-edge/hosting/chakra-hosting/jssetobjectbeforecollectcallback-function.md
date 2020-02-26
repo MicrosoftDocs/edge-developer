@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: ea2cbd94-d8b0-4fa9-a4a1-c75a4e338eaf
 caps.latest.revision: 3
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetObjectBeforeCollectCallback Function
 Sets a callback function that is called by the runtime before garbage collection of an object.  

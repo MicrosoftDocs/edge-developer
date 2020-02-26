@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsHasException function"
 ms.assetid: ac7da3ce-c746-4154-bbb8-bcb0859a8d5b
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsHasException Function
 Determines whether the runtime of the current context is in an exception state.  
