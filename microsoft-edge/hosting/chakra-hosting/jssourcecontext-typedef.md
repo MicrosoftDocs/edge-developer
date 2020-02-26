@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0ee67e5d-a66b-4d4f-ab30-4711ef25c091
 caps.latest.revision: 5
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSourceContext Typedef
 A cookie that identifies a script for debugging purposes.  

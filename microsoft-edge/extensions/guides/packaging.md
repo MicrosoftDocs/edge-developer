@@ -4,13 +4,15 @@ description: Learn about how you can use native messaging to have your extension
 title: Extensions - Packaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Packaging Microsoft Edge extensions
+# Packaging Microsoft Edge extensions  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 So you've finally completed your extension and are ready to package it up. You might be wondering what the next steps are toward getting this in the hands of potential users. This guide is intended to teach you how to do just that.
 
@@ -41,7 +43,7 @@ Also included is info on how to [test and unpack a packaged extension](./packagi
 
 ## [Localizing extension packages](./packaging/localizing-extension-packages.md)
 The package localization step falls between creating your appxmanifest.xml file and running the final command to package your extension.
-This allows you to indicate which languages your extensions supports in your Microsoft Store listing, and what language your extension's name appears in in Windows.
+This allows you to indicate which languages your extensions supports in your Microsoft Store listing, and what language your extension's name appears in Windows.
 
 You can jump to [Localizing name and description for the Microsoft Store](./packaging/localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) in this section of the guide if your extension doesn't support multiple languages.
 

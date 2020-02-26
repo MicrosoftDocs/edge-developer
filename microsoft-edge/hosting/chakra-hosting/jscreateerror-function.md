@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsCreateError function"
 ms.assetid: dadbcac8-c56f-4f30-ba00-2d284daee191
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCreateError Function
 Creates a new JavaScript error object.  

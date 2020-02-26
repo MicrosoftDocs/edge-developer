@@ -4,7 +4,7 @@ description: Read up on resources for inclusive design tools and best practices.
 title: Accessibility - Design
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/02/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -29,7 +29,7 @@ Many common accessibility issues on the web can be solved through good coding pr
 #### [Designing for Inclusion](http://www.w3.org/WAI/users/Overview.html)
 Designing for Inclusion by the W3C’s Web Accessibility Initiative provides resources to help you better understand users with disabilities and how to design your website with them in mind.
 
-#### [Designing inclusive software](https://msdn.microsoft.com/en-us/windows/uwp/accessibility/designing-inclusive-software)
+#### [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
 Designing inclusive software discusses Microsoft design principles and practices for the Universal Windows Platform (UWP).
 
 #### [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)

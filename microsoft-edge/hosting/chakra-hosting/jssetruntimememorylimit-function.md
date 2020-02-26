@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsSetRuntimeMemoryLimit function"
 ms.assetid: 74feb31f-19f6-43e3-b117-0694c59ac593
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetRuntimeMemoryLimit Function
 Sets the current memory limit for a runtime.  

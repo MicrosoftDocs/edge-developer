@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsHasExternalData function"
 ms.assetid: a077e3ac-4f6f-4d94-8398-f1b5cc4c18e0
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsHasExternalData Function
 Determines whether an object is an external object.  

@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 51a3fd02-9668-4cf7-bb0b-e1fd03b2528f
 caps.latest.revision: 3
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsPromiseContinuationCallback Typedef
 A promise continuation callback.  

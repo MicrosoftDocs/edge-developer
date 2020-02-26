@@ -4,14 +4,16 @@ description: Learn about how to package up your Microsoft Edge extension manuall
 title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/21/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, packaging
 ms.custom: seodec18
 ---
 
-# Creating and testing a Microsoft Edge extension AppX package
+# Creating and testing a Microsoft Edge extension AppX package  
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows Apps are packaged. As of Windows 10 Anniversary Update, a new schema has been introduced for AppX that allows an AppX to include a Microsoft Edge extension as its content.
 
@@ -79,15 +81,15 @@ Developers can use the following template for their AppXManifest.xml file:
         Description="This is the description of the extension"
         BackgroundColor="white">
       </uap:VisualElements>
-	  <Extensions>
-	  <uap3:Extension Category="windows.appExtension">
-		<uap3:AppExtension Name="com.microsoft.edge.extension"
-	      Id="EdgeExtension"
-	      PublicFolder="Extension"
-		  DisplayName="[REPLACE WITH RESERVED STORE NAME]">
-		</uap3:AppExtension>
-	  </uap3:Extension>
-	  </Extensions>
+    <Extensions>
+    <uap3:Extension Category="windows.appExtension">
+    <uap3:AppExtension Name="com.microsoft.edge.extension"
+        Id="EdgeExtension"
+        PublicFolder="Extension"
+      DisplayName="[REPLACE WITH RESERVED STORE NAME]">
+    </uap3:AppExtension>
+    </uap3:Extension>
+    </Extensions>
  </Application>
 </Applications>
 </Package>
@@ -226,7 +228,8 @@ This should look something like this when filled out:
 You can test your Microsoft Edge extension AppX package by sideloading it in Microsoft Edge. Sideloading the extension AppX package is similar to sideloading a Universal Windows app. You will need to create a certificate for signing the package, and then add the package to Windows.
 
 ### Signing
-See [How to create an app package signing certificate](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
+
+See [How to create an app package signing certificate](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
 
 > [!NOTE]
 > You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!
