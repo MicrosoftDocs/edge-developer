@@ -82,7 +82,7 @@ By default, the child nodes are sorted by the retained size column, with the lar
 
 #### Dominators
 
-Shows a list of objects on the heap that have exclusive references to other objects. Dominators are sorted by retained size to indicate the  the objects consuming the most memory that are potentially easiest to free.
+Shows a list of objects on the heap that have exclusive references to other objects. Dominators are sorted by retained size to indicate the objects consuming the most memory that are potentially easiest to free.
 
 Here's how to interpret the columns in the *Types, Roots* and *Dominators* views:
 
