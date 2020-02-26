@@ -26,6 +26,7 @@
 ### [Open DevTools](devtools-guide-chromium/open.md)
 ### What's new
 #### [Microsoft Edge 80](devtools-guide-chromium/whats-new/2019/12/devtools.md)
+#### [Microsoft Edge 81](devtools-guide-chromium/whats-new/2020/01/devtools.md)
 ### [IE mode](devtools-guide-chromium/ie-mode.md)
 ### [3D View](devtools-guide-chromium/3D-view.md)
 ### DevTools for Beginners
@@ -35,6 +36,7 @@
 #### [Get Started With Viewing And Changing CSS](devtools-guide-chromium/css/index.md)
 #### [CSS Reference](devtools-guide-chromium/css/reference.md)
 #### [Find Unused CSS](devtools-guide-chromium/coverage/index.md)
+#### [Inspect animations](devtools-guide-chromium/inspect-styles/animations.md)
 #### Guides
 ##### [Force DevTools Into Print Preview Mode](devtools-guide-chromium/css/print-preview.md)
 ### Console
@@ -43,6 +45,7 @@
 #### [Run JavaScript](devtools-guide-chromium/console/javascript.md)
 #### [Reference](devtools-guide-chromium/console/reference.md)
 #### [API Reference](devtools-guide-chromium/console/api.md)
+#### [Utilities API Reference](devtools-guide-chromium/console/utilities.md)
 #### [Live Expressions](devtools-guide-chromium/console/live-expressions.md)
 ### Network
 #### [Get Started](devtools-guide-chromium/network/index.md)
@@ -60,6 +63,10 @@
 ### Mobile Simulation
 #### [Overview](devtools-guide-chromium/device-mode/index.md)
 #### [Emulate and Test Other Browsers](devtools-guide-chromium/device-mode/testing-other-browsers.md)
+#### Guides
+##### [Override The User Agent String](devtools-guide-chromium/device-mode/override-user-agent.md)
+##### [Override Geolocation](devtools-guide-chromium/device-mode/geolocation.md)
+##### [Simulate Device Orientation](devtools-guide-chromium/device-mode/orientation.md)
 ### DOM
 #### [Get Started](devtools-guide-chromium/dom/index.md)
 ### JavaScript
@@ -67,19 +74,33 @@
 #### [Pause Your Code With Breakpoints](devtools-guide-chromium/javascript/breakpoints.md)
 #### [Find Unused JavaScript](devtools-guide-chromium/coverage/index.md)
 #### [Map Preprocessed Code to Source Code](devtools-guide-chromium/javascript/source-maps.md)
+#### [JavaScript Debugging Reference](devtools-guide-chromium/javascript/reference.md)
 #### [Snippets](devtools-guide-chromium/javascript/snippets.md)
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 #### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### Guides
+##### [Mark Content Scripts as Library Code](devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md)
 ##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+#### [Optimize Website Speed](devtools-guide-chromium/speed/get-started.md)
+#### [Overview](devtools-guide-chromium/rendering-tools/index.md)
+#### [Performance Analysis Reference](devtools-guide-chromium/evaluate-performance/reference.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
+#### [Speed Up JavaScript Runtime](devtools-guide-chromium/rendering-tools/js-runtime.md)
 ### Accessibility
+#### [Reference](devtools-guide-chromium/accessibility/reference.md)
 #### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
+#### Guides
+##### [Track Which Element Has Focus](devtools-guide-chromium/accessibility/focus.md)
 ### Remote Debugging
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
+### Memory
+#### [Overview](devtools-guide-chromium/memory-problems/index.md)
+#### [Understand Memory Terminology](devtools-guide-chromium/memory-problems/memory-101.md)
+#### [Record Heap Snapshots](devtools-guide-chromium/memory-problems/heap-snapshots.md)
+#### [Use Allocation Instrumentation on Timeline](devtools-guide-chromium/memory-problems/allocation-profiler.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Security](devtools-guide-chromium/security/index.md)
@@ -150,6 +171,7 @@
 #### [Manage Account Settings](extensions-chromium/publish/manage-settings.md)
 ### Microsoft Edge Addons Policies
 #### [Content Security Policy](extensions-chromium/store-policies/csp.md)
+#### [Edge Developer ADA Addendum](extensions-chromium/store-policies/ada-addendum.md)
 #### [Microsoft Edge Addons Catalog Developer Policies](extensions-chromium/store-policies/developer-policies.md)
 ### Extensions for enterprise
 #### [Match Patterns](extensions-chromium/enterprise/match-patterns.md)
@@ -198,8 +220,9 @@
 ## [WebDriver (EdgeHTML)](webdriver.md)
 ## Web Platform (Chromium)
 ### [Site compatibility-impacting changes coming to Microsoft Edge](web-platform/site-impacting-changes.md)
-### [Microsoft Edge's user agent string](web-platform/user-agent-string.md)
-## [WebVR Developer's Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
+### [Tracking Prevention in Microsoft Edge](web-platform/tracking-prevention.md)
+### [Microsoft Edge user agent string](web-platform/user-agent-string.md)
+## [WebVR Developer Guide](https://docs.microsoft.com/microsoft-edge/webvr/)
 ## [Windows Runtime (WinRT)](windows-runtime.md)
 ### [Using the Windows Runtime in JavaScript](windows-runtime/using-the-windows-runtime-in-javascript.md)
 #### [Considerations when Using the Windows Runtime API](windows-runtime/considerations-when-using-the-windows-runtime-api.md)
