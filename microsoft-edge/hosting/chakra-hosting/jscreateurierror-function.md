@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsCreateURIError function"
 ms.assetid: 711fd237-12a2-4ff0-b58a-ad74c91e79fb
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCreateURIError Function
 Creates a new JavaScript URIError error object.  

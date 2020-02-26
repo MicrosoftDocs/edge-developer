@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsVariantToValue function"
 ms.assetid: e8f9eb8b-55b3-4b65-927e-cad5b482edee
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsVariantToValue Function
 Creates a JavaScript value that is a projection of the passed in `VARIANT`.  

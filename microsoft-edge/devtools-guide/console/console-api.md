@@ -211,7 +211,7 @@ If your code outputs a lot of console messages, you can visually organize them i
  Command | &nbsp;
 :------------ | :-------------
 [**group()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/group) | Starts a new level of nesting for console output with the specified (optional) label.
-[**groupCollapsed()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/groupCollapsed) | Starts a new level of nesting for console output with the specified (optional) label, however the grouping control is collapsed by default and must be expanded (by clicking on the arrow control) to to display the child output.
+[**groupCollapsed()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/groupCollapsed) | Starts a new level of nesting for console output with the specified (optional) label, however the grouping control is collapsed by default and must be expanded (by clicking on the arrow control) to display the child output.
 [**groupEnd()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/groupEnd) | Ends the nesting group for the specified label.
 
 For example, try entering the following commands in the console:

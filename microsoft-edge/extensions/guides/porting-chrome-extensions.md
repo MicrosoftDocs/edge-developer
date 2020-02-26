@@ -4,14 +4,16 @@ description: Learn how to port your Chrome extension to Microsoft Edge using the
 title: Porting Chrome extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Porting an extension from Chrome to Microsoft Edge
+# Porting an extension from Chrome to Microsoft Edge  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 Porting an extension from Chrome to Microsoft Edge is made easy with the help of the
 [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb). This developer tool converts an unpacked Chrome extension to an unpacked Microsoft Edge extension by bridging APIs and surfacing any errors in your `manifest.json` file.
@@ -29,6 +31,7 @@ After conversion, you will see them included in the manifest file of your extens
 ```
 
 ## Using the Microsoft Edge Extension Toolkit
+
 The following instructions detail how to convert your Chrome extension to run on Microsoft Edge in the Windows 10 Anniversary Update edition:
 
 1. Install the [Microsoft Edge Extension Toolkit](https://www.microsoft.com/store/p/microsoft-edge-extension-toolkit/9nblggh4txvb).

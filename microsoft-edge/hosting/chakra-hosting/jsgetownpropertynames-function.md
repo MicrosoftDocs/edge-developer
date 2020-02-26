@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetOwnPropertyNames function"
 ms.assetid: 0c17ea06-b17f-4ea3-ad04-1259a4d1b6de
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetOwnPropertyNames Function
 Gets the list of all properties on the object.  
