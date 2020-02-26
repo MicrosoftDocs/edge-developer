@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: dd0ad567-2ba8-4a63-bee4-2c6ff5ce9fa9
 caps.latest.revision: 2
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsInspectableToObject Function
 Creates a JavaScript value that is a projection of the passed in `IInspectable` pointer.  

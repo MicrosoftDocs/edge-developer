@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsConstructObject function"
 ms.assetid: b07d2440-db55-4a6a-8376-56b40a8039a1
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsConstructObject Function
 Invokes a function as a constructor.  

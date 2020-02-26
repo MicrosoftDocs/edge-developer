@@ -3,13 +3,15 @@ description: Learn about the various design aspects and UI behavior to consider 
 title: Extensions - Design
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/04/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, javascript, design, icons, developer
 ---
 
-# Design guidelines for Microsoft Edge extensions
+# Design guidelines for Microsoft Edge extensions  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 The following page contains various design aspects and UI behavior to consider when creating Microsoft Edge extensions.
 
@@ -36,12 +38,12 @@ The preferred sizes for browser action and page action icons are 20px, 25px, 30p
 The following [JSON manifest](./../API-support/supported-manifest-keys.md) snippet shows a standard and high definition browser action icon being specified using the [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action) field. The same syntax applies for [`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action):
 ```json
 "browser_action": {
-	"default_icon": {
-		"20": "images/icon_20.png",
-		"40": "images/icon_40.png"
-	},
-	"default_title": "Fetch page info",
-	"default_popup": "popup.html"
+    "default_icon": {
+        "20": "images/icon_20.png",
+        "40": "images/icon_40.png"
+    },
+    "default_title": "Fetch page info",
+    "default_popup": "popup.html"
 }
 ```
 
@@ -74,9 +76,9 @@ You should specify the following icon sizes:
 
 ```json
 "icons": {
-	"48": "images/icon_48.png",
-	"128": "images/icon_128.png",
-	"176": "images/icon_176.png"
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png",
+    "176": "images/icon_176.png"
 },
 ```
 
@@ -108,4 +110,4 @@ For example, if the user has selected pink as their accent color, the transparen
 
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.

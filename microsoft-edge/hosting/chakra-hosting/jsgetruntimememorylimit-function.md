@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetRuntimeMemoryLimit function"
 ms.assetid: ed81ca60-99fd-46b0-89ae-f6ac07926904
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetRuntimeMemoryLimit Function
 Gets the current memory limit for a runtime.  

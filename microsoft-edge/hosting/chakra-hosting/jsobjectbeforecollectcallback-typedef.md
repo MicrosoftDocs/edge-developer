@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: f21a064a-579f-44cb-9d21-76b62e8c18f5
 caps.latest.revision: 3
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsObjectBeforeCollectCallback Typedef
 A callback called before collecting an object.  
