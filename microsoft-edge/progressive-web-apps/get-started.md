@@ -121,7 +121,7 @@ If you publish the app live (with an actual `start_url`), the Bing search engine
 
 [Service Workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and other key PWA technologies that work with service workers (such as the [Cache](https://developer.mozilla.org/docs/Web/API/Cache), [Push](https://developer.mozilla.org/docs/Web/API/Push_API), and [Background Sync](https://developer.mozilla.org/docs/Web/API/SyncManager) APIs) only work across secure connections, which means [*HTTPS*](https://en.wikipedia.org/wiki/HTTPS) for live sites or *localhost* for  debugging purposes.
 
-If you were to [publish this web app as a live site](https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/free/)), you'll want to ensure your server is configured for HTTPS.  If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web/) to host your site, it will will be served over HTTPS by default.
+If you were to [publish this web app as a live site](https://docs.microsoft.com/visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service) (for example, by setting up an [*Azure free account*](https://azure.microsoft.com/free/)), you'll want to ensure your server is configured for HTTPS.  If you're using the [Microsoft Azure App Service](https://azure.microsoft.com/services/app-service/web/) to host your site, it will be served over HTTPS by default.
 
 For this guide we'll continue using *http://localhost* as a placeholder for a live site served over *https://*.
 

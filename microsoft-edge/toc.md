@@ -79,11 +79,15 @@
 #### [Sources Panel Overview](devtools-guide-chromium/sources.md)
 #### [Debug Background Services](devtools-guide-chromium/javascript/background-services.md)
 #### Guides
+##### [Mark Content Scripts as Library Code](devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md)
 ##### [Disable JavaScript](devtools-guide-chromium/javascript/disable.md)
 ### Performance
 #### [Get Started](devtools-guide-chromium/evaluate-performance/index.md)
+#### [Optimize Website Speed](devtools-guide-chromium/speed/get-started.md)
 #### [Overview](devtools-guide-chromium/rendering-tools/index.md)
+#### [Performance Analysis Reference](devtools-guide-chromium/evaluate-performance/reference.md)
 #### [Timeline Event Reference](devtools-guide-chromium/evaluate-performance/performance-reference.md)
+#### [Speed Up JavaScript Runtime](devtools-guide-chromium/rendering-tools/js-runtime.md)
 ### Accessibility
 #### [Reference](devtools-guide-chromium/accessibility/reference.md)
 #### [Navigate DevTools With Assistive Technology](devtools-guide-chromium/accessibility/navigation.md)
@@ -93,7 +97,10 @@
 #### [Get Started](devtools-guide-chromium/remote-debugging/index.md)
 #### [Access Local Servers](devtools-guide-chromium/remote-debugging/local-server.md)
 ### Memory
+#### [Overview](devtools-guide-chromium/memory-problems/index.md)
 #### [Understand Memory Terminology](devtools-guide-chromium/memory-problems/memory-101.md)
+#### [Record Heap Snapshots](devtools-guide-chromium/memory-problems/heap-snapshots.md)
+#### [Use Allocation Instrumentation on Timeline](devtools-guide-chromium/memory-problems/allocation-profiler.md)
 ### [Workspaces](devtools-guide-chromium/workspaces/index.md)
 ### [Progressive Web Apps](devtools-guide-chromium/progressive-web-apps.md)
 ### [Security](devtools-guide-chromium/security/index.md)
