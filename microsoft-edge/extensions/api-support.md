@@ -4,13 +4,15 @@ description: Find information on current and future APIs and manifest keys for M
 title: Extensions - API support
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-#  API support
+#  API support  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 ## Extension API roadmap
 Check out the [extension API roadmap](./api-support/extension-API-roadmap.md) for details on current progress towards completing the Microsoft Edge extension API.
