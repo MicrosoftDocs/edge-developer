@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cea6cdcd-790f-455c-af04-026af8ae2eb7
 caps.latest.revision: 3
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetContextOfObject Function
 Gets the script context that the object belongs to.  

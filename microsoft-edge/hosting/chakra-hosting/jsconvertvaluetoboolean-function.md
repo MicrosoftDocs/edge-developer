@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsConvertValueToBoolean function"
 ms.assetid: 7298ec72-a388-4334-b81b-1691ab4cecf0
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsConvertValueToBoolean Function
 Converts the value to Boolean using standard JavaScript semantics.  

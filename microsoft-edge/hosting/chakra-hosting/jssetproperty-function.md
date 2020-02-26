@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsSetProperty function"
 ms.assetid: 2c36bebf-ec86-425c-8131-2dd75fd30f40
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetProperty Function
 Puts an object's property.  

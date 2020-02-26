@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsCreateObject function"
 ms.assetid: 6c1d01a4-9254-443e-b974-6f0b0c861ca2
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCreateObject Function
 Creates a new object.

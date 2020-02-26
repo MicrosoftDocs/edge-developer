@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsPointerToString function"
 ms.assetid: c71ce07e-4359-450c-afbf-a6ab7d48dddf
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsPointerToString Function
 Creates a string value from a string pointer.  

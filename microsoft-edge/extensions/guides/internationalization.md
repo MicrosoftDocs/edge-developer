@@ -3,13 +3,15 @@ description: Make your extension accessible for different languages and test you
 title: Extensions - Internationalization
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Internationalization
+# Internationalization  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 In order to make your extension accessible to a variety of different people, it is important to develop with other countries in mind. Microsoft Edge extensions allows you to add different language strings to your extensions so that their language can easily be changed.
 

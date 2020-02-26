@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JS_SOURCE_CONTEXT_NONE constant"
 ms.assetid: 3c599580-c814-4d75-8471-260fd864cb6f
 caps.latest.revision: 13
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JS_SOURCE_CONTEXT_NONE Constant
 An empty source context.  

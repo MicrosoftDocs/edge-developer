@@ -1,7 +1,22 @@
 {
   "redirections": [
     {
-      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps.md",
+      "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/microsoft-browser-extension-policy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/devtools-preview_software-license-terms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/devtools-guide/devtools_software-license-terms.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/service-workers",
       "redirect_document_id": true
     },
@@ -56,7 +71,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps.md",
+      "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/debugger/progressive-web-apps",
       "redirect_document_id": true
     },
