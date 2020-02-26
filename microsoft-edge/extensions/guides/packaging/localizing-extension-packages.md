@@ -4,14 +4,16 @@ description: Learn how to localize your Microsoft Edge extension package so that
 title: Localizing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Localizing Microsoft Edge extensions for Windows and the Microsoft Store
+# Localizing Microsoft Edge extensions for Windows and the Microsoft Store  
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 This guide walks through how to localize your Microsoft Edge extension so that it's ready for multiple locales upon release. To fully localize your extension, you'll need to follow the steps for both Windows and the Microsoft Store.
 
@@ -39,7 +41,7 @@ After the .resjson files for the supported languages have been made, a [.pri res
 Once you've uploaded your extension, the final step is to [localize the name and description in the Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
 
 
 
@@ -88,22 +90,22 @@ The snippets below make a complete AppxManifest. The following values should be 
 <Applications>
     <Application Id="App">
       <uap:VisualElements
-		AppListEntry="none"
-        	DisplayName="ms-resource:DisplayName"
+        AppListEntry="none"
+            DisplayName="ms-resource:DisplayName"
        Square150x150Logo="Assets\Square150x150Logo.png"
-   	Square44x44Logo="Assets\Square44x44Logo.png"
-        	Description="ms-resource:Description"
+       Square44x44Logo="Assets\Square44x44Logo.png"
+            Description="ms-resource:Description"
         BackgroundColor="transparent">
       </uap:VisualElements>
-	  <Extensions>
-	  <uap3:Extension Category="windows.appExtension">
-		<uap3:AppExtension Name="com.microsoft.edge.extension"
-			Id="MicrosoftTranslate"
-			PublicFolder="Extension"
-			DisplayName="ms-resource:DisplayName">
-		</uap3:AppExtension>
-	  </uap3:Extension>
-	  </Extensions>
+      <Extensions>
+      <uap3:Extension Category="windows.appExtension">
+        <uap3:AppExtension Name="com.microsoft.edge.extension"
+            Id="MicrosoftTranslate"
+            PublicFolder="Extension"
+            DisplayName="ms-resource:DisplayName">
+        </uap3:AppExtension>
+      </uap3:Extension>
+      </Extensions>
     </Application>
   </Applications>
 ```
@@ -137,20 +139,20 @@ While we do support JSON based resources for HTML based Windows apps, the schema
 
 
 The following are the key differences in [HTML based Windows apps](https://msdn.microsoft.com/library/windows/apps/hh465228.aspx):
--	Resources are specified in .resjson files instead of .json files.
--	The locales supported should be specified in the AppXManifest file, with the first locale being the default locale.
--	HTML based Windows apps resources use the following schema:
-	```json
-	{
-	    "greeting"              : "Hello",
-	    "_greeting.comment"     : "A welcome greeting.",
+-    Resources are specified in .resjson files instead of .json files.
+-    The locales supported should be specified in the AppXManifest file, with the first locale being the default locale.
+-    HTML based Windows apps resources use the following schema:
+    ```json
+    {
+        "greeting"              : "Hello",
+        "_greeting.comment"     : "A welcome greeting.",
 
-	    "farewell"              : "Goodbye",
-	    "_farewell.comment"     : "A goodbye."
-	}
-	```
-	The name/value pair denoted by an underscore are comments for the corresponding string resource.
--	.resjson files are compiled into .pri files which must be included during AppX package creation.
+        "farewell"              : "Goodbye",
+        "_farewell.comment"     : "A goodbye."
+    }
+    ```
+    The name/value pair denoted by an underscore are comments for the corresponding string resource.
+-    .resjson files are compiled into .pri files which must be included during AppX package creation.
 
 
 ### Creating JSON string resources
@@ -250,58 +252,58 @@ The following example shows an AppxManifest that isn't localized, and only suppo
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Package
-	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-	xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-	IgnorableNamespaces="uap3">
-	<Identity
-		Name="63533cct23.Jigsaw"
-		Publisher="CN=932A7C4A-0308-4632-9E2F-5931E8F02B7C"
-		Version="1.3.0.0" />
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+    IgnorableNamespaces="uap3">
+    <Identity
+        Name="63533cct23.Jigsaw"
+        Publisher="CN=932A7C4A-0308-4632-9E2F-5931E8F02B7C"
+        Version="1.3.0.0" />
 
-	<Properties>
-		<DisplayName>Jigsaw</DisplayName>
-		<PublisherDisplayName>cct23</PublisherDisplayName>
-		<Logo>Assets\icon-50.png</Logo>
-	</Properties>
+    <Properties>
+        <DisplayName>Jigsaw</DisplayName>
+        <PublisherDisplayName>cct23</PublisherDisplayName>
+        <Logo>Assets\icon-50.png</Logo>
+    </Properties>
 
-	<Dependencies>
-		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14800.0" />
-	</Dependencies>
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14800.0" />
+    </Dependencies>
 
-	<Resources>
-		<Resource Language="en-us" />
-	</Resources>
+    <Resources>
+        <Resource Language="en-us" />
+    </Resources>
 
-	<Applications>
-		<Application Id="App">
-			<uap:VisualElements
-				AppListEntry="none"
-				DisplayName="Jigsaw"
-				Square150x150Logo="Assets\icon-150.png"
-        		Square44x44Logo="Assets\icon-44.png"
-				Description="This is a jigsaw puzzle app"
-				BackgroundColor="transparent">
-			</uap:VisualElements>
-			<Extensions>
-				<uap3:Extension Category="windows.appExtension">
-					<uap3:AppExtension
-						Name="com.microsoft.edge.extension"
-						Id="EdgeExtension"
-						PublicFolder="Extension"
-						DisplayName="Jigsaw">
-						<uap3:Properties>
-							<Capabilities>
-								<Capability Name="websiteContent"/>
-								<Capability Name="websiteInfo"/>
-								<Capability Name="browserStorage"/>
-							</Capabilities>
-						</uap3:Properties>
-					</uap3:AppExtension>
-				</uap3:Extension>
-			</Extensions>
-		</Application>
-	</Applications>
+    <Applications>
+        <Application Id="App">
+            <uap:VisualElements
+                AppListEntry="none"
+                DisplayName="Jigsaw"
+                Square150x150Logo="Assets\icon-150.png"
+                Square44x44Logo="Assets\icon-44.png"
+                Description="This is a jigsaw puzzle app"
+                BackgroundColor="transparent">
+            </uap:VisualElements>
+            <Extensions>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension
+                        Name="com.microsoft.edge.extension"
+                        Id="EdgeExtension"
+                        PublicFolder="Extension"
+                        DisplayName="Jigsaw">
+                        <uap3:Properties>
+                            <Capabilities>
+                                <Capability Name="websiteContent"/>
+                                <Capability Name="websiteInfo"/>
+                                <Capability Name="browserStorage"/>
+                            </Capabilities>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+            </Extensions>
+        </Application>
+    </Applications>
 </Package>
 ```
 
@@ -313,65 +315,65 @@ This AppxManifest sample is localized for eight other locales besides "en-us". N
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Package
-	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-	xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-	IgnorableNamespaces="uap3">
-	<Identity
-		Name="63533cct23.Jigsaw"
-		Publisher="CN=932A7C4A-0308-4632-9E2F-5931E8F02B7C"
-		Version="1.3.0.0" />
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+    IgnorableNamespaces="uap3">
+    <Identity
+        Name="63533cct23.Jigsaw"
+        Publisher="CN=932A7C4A-0308-4632-9E2F-5931E8F02B7C"
+        Version="1.3.0.0" />
 
-	<Properties>
-		<DisplayName>ms-resource:DisplayName</DisplayName>
-		<PublisherDisplayName>cct23</PublisherDisplayName>
-		<Logo>Assets\icon-50.png</Logo>
-	</Properties>
+    <Properties>
+        <DisplayName>ms-resource:DisplayName</DisplayName>
+        <PublisherDisplayName>cct23</PublisherDisplayName>
+        <Logo>Assets\icon-50.png</Logo>
+    </Properties>
 
-	<Dependencies>
-		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14800.0" />
-	</Dependencies>
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14800.0" />
+    </Dependencies>
 
-	<Resources>
-		<Resource Language="en-us" />
-		<Resource Language="de" />
-		<Resource Language="en" />
-		<Resource Language="en-gb" />
-		<Resource Language="es" />
-		<Resource Language="fr" />
-		<Resource Language="it" />
-		<Resource Language="ja" />
-		<Resource Language="zh-cn" />
-	</Resources>
+    <Resources>
+        <Resource Language="en-us" />
+        <Resource Language="de" />
+        <Resource Language="en" />
+        <Resource Language="en-gb" />
+        <Resource Language="es" />
+        <Resource Language="fr" />
+        <Resource Language="it" />
+        <Resource Language="ja" />
+        <Resource Language="zh-cn" />
+    </Resources>
 
-	<Applications>
-		<Application Id="App">
-			<uap:VisualElements
-				AppListEntry="none"
-				DisplayName="ms-resource:DisplayName"
-				Square150x150Logo="Assets\icon-150.png"
-        		Square44x44Logo="Assets\icon-44.png"
-				Description="ms-resource:Description"
-				BackgroundColor="transparent">
-			</uap:VisualElements>
-			<Extensions>
-				<uap3:Extension Category="windows.appExtension">
-					<uap3:AppExtension
-						Name="com.microsoft.edge.extension"
-						Id="EdgeExtension"
-						PublicFolder="Extension"
-						DisplayName="ms-resource:DisplayName">
-						<uap3:Properties>
-							<Capabilities>
-								<Capability Name="websiteContent"/>
-								<Capability Name="websiteInfo"/>
-								<Capability Name="browserStorage"/>
-							</Capabilities>
-						</uap3:Properties>
-					</uap3:AppExtension>
-				</uap3:Extension>
-			</Extensions>
-		</Application>
-	</Applications>
+    <Applications>
+        <Application Id="App">
+            <uap:VisualElements
+                AppListEntry="none"
+                DisplayName="ms-resource:DisplayName"
+                Square150x150Logo="Assets\icon-150.png"
+                Square44x44Logo="Assets\icon-44.png"
+                Description="ms-resource:Description"
+                BackgroundColor="transparent">
+            </uap:VisualElements>
+            <Extensions>
+                <uap3:Extension Category="windows.appExtension">
+                    <uap3:AppExtension
+                        Name="com.microsoft.edge.extension"
+                        Id="EdgeExtension"
+                        PublicFolder="Extension"
+                        DisplayName="ms-resource:DisplayName">
+                        <uap3:Properties>
+                            <Capabilities>
+                                <Capability Name="websiteContent"/>
+                                <Capability Name="websiteInfo"/>
+                                <Capability Name="browserStorage"/>
+                            </Capabilities>
+                        </uap3:Properties>
+                    </uap3:AppExtension>
+                </uap3:Extension>
+            </Extensions>
+        </Application>
+    </Applications>
 </Package>
 ```

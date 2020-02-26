@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsHasProperty function"
 ms.assetid: 26c94c3d-aae6-4257-8644-df63c7e714fb
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsHasProperty Function
 Determines whether an object has a property.  

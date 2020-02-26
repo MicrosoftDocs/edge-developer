@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsIdle function"
 ms.assetid: 372d1c62-8e19-4886-aa33-364cabc09bba
 caps.latest.revision: 13
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsIdle Function
 Tells the runtime to do any idle processing it need to do.  

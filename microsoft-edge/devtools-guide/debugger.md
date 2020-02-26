@@ -3,7 +3,7 @@ description: Use the Debugger to step through and troubleshoot your code.
 title: DevTools - Debugger
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
@@ -16,7 +16,7 @@ Use the **Debugger** to step through code, set watches and breakpoints, live edi
 
 - [Browsing](#resource-picker) and [searching](#file-search) code from your loaded source files
 - [Controlling the execution flow](#toolbar) as you step through your code
-- [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
+- [Managing page storage resources](./storage.md#cache-manager), including the [service workers and cache](./service-workers.md), [cookies](./storage.md#cookies-list) and [web storage](./storage.md#local-and-session-storage-managers)  
 - [Setting breakpoints and live editing](#debug-window) your code as it runs
 - [Tracking and editing local variables](#watches) as you debug
 - [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed

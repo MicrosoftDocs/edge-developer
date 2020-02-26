@@ -3,7 +3,7 @@ description: Use the Console command line to interact with a running page
 title: DevTools - Console - Command Line
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console command line
@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 # Console command line
 
-Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visual Studio [*IntelliSense*](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) auto code completion. 
+Use the Console command line to view and change values on a page and execute debug code on the fly, all while taking advantage of Visual Studio [*IntelliSense*](/visualstudio/ide/javascript-intellisense) auto code completion. 
 
 Simply enter any valid JavaScript at the command line prompt and press `Enter` to execute. For multi-line input use `Shift+Enter` to add a line-break. Use the `Up` and `Down` arrow keys to navigate through previous console commands you entered during the current  DevTools session. In addition to standard JavaScript and the [Console API](./console-api.md), the Console also supports the following commands for:
 
@@ -20,7 +20,7 @@ Simply enter any valid JavaScript at the command line prompt and press `Enter` t
  - [Inspecting object properties](#object-inspection)
  - [Finding all the event listeners on a given object](#event-listeners)
 
-Script entered in the command line executes in the [global scope](https://docs.microsoft.com/en-us/scripting/javascript/advanced/variable-scope-javascript) of the currently selected window, unless the page is paused at a breakpoint. Console commands entered while the page is paused will execute in the [local scope](https://docs.microsoft.com/en-us/scripting/javascript/advanced/variable-scope-javascript) of the current function within the call stack.
+Script entered in the command line executes in the [global scope](/scripting/javascript/advanced/variable-scope-javascript) of the currently selected window, unless the page is paused at a breakpoint. Console commands entered while the page is paused will execute in the [local scope](/scripting/javascript/advanced/variable-scope-javascript) of the current function within the call stack.
 
 The Console has a **Target** execution context drop-down just above the Console output area. The default selection is the top-level document, **_top**. Any iframes in the document or running extensions will also appear as options, allowing you to alternately run commands within those scopes.
 

@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsCallFunction function"
 ms.assetid: 8a1dca72-d720-4a28-a86e-6809465006fe
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCallFunction Function
 Invokes a function.  

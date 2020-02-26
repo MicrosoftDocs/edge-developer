@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
 caps.latest.revision: 7
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # Targeting Microsoft Edge vs. Legacy Engines in JsRT APIs
 

@@ -3,7 +3,7 @@ description: This guide provides an overview of the developer features and stand
 title: What's new in EdgeHTML 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -52,7 +52,7 @@ Additionally, EdgeHTML 15 introduces the following feature previews:
 See [*Improved JavaScript performance, WebAssembly, and Shared Memory in Microsoft Edge*](https://blogs.windows.com/msedgedev/2017/04/20/improved-javascript-performance-webassembly-shared-memory/#t4gwUKjjtdmstMbs.97) for further details.
 
 ### Payment Request API
-The [Payment Request API](http://www.w3.org/TR/payment-request/) is now supported, enabling simpler checkout and payments on the web on Windows 10 PCs and Phones. This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) and the [Payment Request API](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/device/payment-request-api) developer guide.
+The [Payment Request API](http://www.w3.org/TR/payment-request/) is now supported, enabling simpler checkout and payments on the web on Windows 10 PCs and Phones. This API enables Microsoft Edge to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. For more information on the Payment Request API, check out [Simpler web payments: Introducing the Payment Request API](https://blogs.windows.com/msedgedev/2016/12/15/payment-request-api-edge/) and the [Payment Request API](/microsoft-edge/dev-guide/device/payment-request-api) developer guide.
 
 ### TCP Fast Open (TFO)
 TCP Fast Open is a feature that reduces the number of round trips required to open a TCP connection, improving browser networking performance. For more details, see [Building a faster and more secure web with TCP Fast Open](https://blogs.windows.com/msedgedev/2016/06/15/building-a-faster-and-more-secure-web-with-tcp-fast-open-tls-false-start-and-tls-1-3/#eQMauReErmIRXYqh.97). Due to interoperability differences in various network topologies, this features is not enabled by default in Microsoft Edge. To enable it, type `about:flags` in your address bar, and select the checkbox for **Enable TCP Fast Open** under the *Networking* section. 
@@ -94,14 +94,16 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
 4. CSP violation reporting: A new event, SecurityPolicyViolationEvent is now fired upon CSP violations. The earlier mechanism for CSP reporting, `report-uri`, continues to be supported. Several new fields have been added to the violation reports common to both, including `effectiveDirective` (the policy that was violated), `statusCode` (the HTTP response code), `sourceFile` (the URL of the offending resource), `lineNumber`, and `columnNumber`.
 
 ### Web Authentication
-Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics has been updated with the following changes:
+Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics has been updated with the following changes:
 - The initial implementation of the experimental Web Authentication API introduced in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml-14/#TVSCzKDkG4jCI5mt.97) (Windows 10 Anniversary Update, build 10240, 7/2016) was exposed through MS- prefixed APIs (the [MSCredentials](https://msdn.microsoft.com/library/mt697639) interface). While these APIs are still available in EdgeHTML 15, they are now deprecated in favor of the non-prefixed, standards-based APIs and behaviors defined in a more [recent snapshot](http://www.w3.org/TR/2016/WD-webauthn-20160928) of the specification, and are likely to continue changing as the spec matures toward standardization.
 
 - The latest Microsoft Edge implementation is turned off by default and ships behind a flag (type `about:flags` in your address bar to turn on the feature).
 
-- Microsoft Edge supports external credentials stored in USB keys, however does not yet support credentials in Bluetooth devices. The current API also supports embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device. 
+- Microsoft Edge does not yet support external credentials like USB keys or Bluetooth devices. The current API is limited to embedded credentials stored in the TPM. A software fallback is used if TPM is not available on the device.
 
-- If the developer specifies to use embeded credentials, the currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
+- The currently logged in Windows user account must be configured to support at least a PIN, and preferably face or fingerprint biometrics. This is to ensure that Windows can authenticate the access to the TPM.
+
+- Of the [predefined extensions](http://www.w3.org/TR/webauthn/#extension-predef) described in the spec, Microsoft Edge only supports the [FIDO AppId](http://www.w3.org/TR/webauthn/#extension-appid) (`webauthn_txAuthSimple`) at this time.
 
 - The `timeoutSeconds` option is not currently evaluated
 
@@ -126,10 +128,10 @@ For more info and the status of other WebDriver features, check out [WebDriver](
 
 Here's the full list of new APIs in EdgeHTML 15. They are listed in the format of **[interface name].[api name]**.
 
+<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MicrosoftEdgeDocumentation/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MicrosoftEdgeDocumentation/pen/evRjjZ/'>New EdgeHTML15 APIs</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  
 
-<iframe height='582' scrolling='no' title='New EdgeHTML15 APIs' src='//codepen.io/MSEdgeDev/embed/evRjjZ/?height=582&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/MSEdgeDev/pen/evRjjZ/'>New EdgeHTML15 APIs</a>by MSEdgeDev (<a href='http://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>  </p>
-<h2 id="previous-edgehtml-releases">Previous EdgeHTML releases</h2>
-<p><a href="https://aka.ms/devguide_edgehtml_12" data-raw-source="[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)">EdgeHTML 12 / Windows build 10240 (7/2015)</a>
+## Previous EdgeHTML releases
+[EdgeHTML 12 / Windows build 10240 (7/2015)](https://aka.ms/devguide_edgehtml_12)
 
 [EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
 

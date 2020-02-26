@@ -3,13 +3,15 @@ description: Get an end to end overview of the journey from beginning developmen
 title: Extensions - Getting started
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/02/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extensions
 ---
 
-# Getting started with extensions
+# Getting started with extensions  
+
+[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 
 Whether you're a new developer wanting to familiarize yourself with extensions or a seasoned veteran with a Chrome extension you'd like to port, this guide contains all the information you need to develop, test, package, and publish an extension for Microsoft Edge. 
 
@@ -53,12 +55,12 @@ If you're an enterprise customer looking to distribute your packaged extensions 
 
 ## Publishing to the Microsoft Store
 
-Since our extensions platform is still in its infancy, we're purposely managing extension submissions to the Microsoft Store so that we can focus on delivering a quality experience for our users and developers. That being said, we want to make it as easy as possible for developers to publish their extensions. As a result, we have recently launched a new [extension submission form](http://aka.ms/extension-request) where developers can request permission to submit their extension AppX to the Microsoft Store.
+Since our extensions platform is still in its infancy, we're purposely managing extension submissions to the Microsoft Store so that we can focus on delivering a quality experience for our users and developers. That being said, we want to make it as easy as possible for developers to publish their extensions. As a result, we have recently launched a new [extension submission form](https://aka.ms/extension-request) where developers can request permission to submit their extension AppX to the Microsoft Store.
  
 
 The first step of the publishing process is to make sure your extension conforms to our [browser extension policy](./microsoft-browser-extension-policy.md) as well as the [Microsoft Edge extensions section of the Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944.aspx#pol_10_12). 
 
-Once you've confirmed that your extension follows the policies, you will need to register for a [developer account in Partner Center and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](http://aka.ms/extension-request) in order to request permission to publish to the Microsoft Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
+Once you've confirmed that your extension follows the policies, you will need to register for a [developer account in Partner Center and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](https://aka.ms/extension-request) in order to request permission to publish to the Microsoft Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
 
 `Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.`
 
