@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -250,7 +250,7 @@ The htmlContent parameter may not be larger than 2 MB of characters. The origin 
 
 Add an event handler for the NavigationStarting event.
 
-> public HRESULT [add_NavigationStarting](#add_navigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md#icorewebview2navigationstartingeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NavigationStarting](#add_navigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 NavigationStarting fires when the WebView main frame is requesting permission to navigate to a different URI. This will fire for redirects as well.
 
@@ -306,7 +306,7 @@ Remove an event handler previously added with add_NavigationStarting.
 
 Add an event handler for the ContentLoading event.
 
-> public HRESULT [add_ContentLoading](#add_contentloading)([ICoreWebView2ContentLoadingEventHandler](ICoreWebView2ContentLoadingEventHandler.md#icorewebview2contentloadingeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ContentLoading](#add_contentloading)([ICoreWebView2ContentLoadingEventHandler](ICoreWebView2ContentLoadingEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 ContentLoading fires before any content is loaded, including scripts added with AddScriptToExecuteOnDocumentCreated ContentLoading will not fire if a same page navigation occurs (such as through fragment navigations or history.pushState navigations). This follows the NavigationStarting and SourceChanged events and precedes the HistoryChanged and NavigationCompleted events.
 
@@ -320,7 +320,7 @@ Remove an event handler previously added with add_ContentLoading.
 
 SourceChanged fires when the Source property changes.
 
-> public HRESULT [add_SourceChanged](#add_sourcechanged)([ICoreWebView2SourceChangedEventHandler](ICoreWebView2SourceChangedEventHandler.md#icorewebview2sourcechangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_SourceChanged](#add_sourcechanged)([ICoreWebView2SourceChangedEventHandler](ICoreWebView2SourceChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 SourceChanged fires for navigating to a different site or fragment navigations. It will not fires for other types of navigations such as page reloads or history.pushState with the same URL as the current page. SourceChanged fires before ContentLoading for navigation to a new document. Add an event handler for the SourceChanged event. 
 ```cpp
@@ -355,7 +355,7 @@ Remove an event handler previously added with add_SourceChanged.
 
 HistoryChange listen to the change of navigation history for the top level document.
 
-> public HRESULT [add_HistoryChanged](#add_historychanged)([ICoreWebView2HistoryChangedEventHandler](ICoreWebView2HistoryChangedEventHandler.md#icorewebview2historychangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_HistoryChanged](#add_historychanged)([ICoreWebView2HistoryChangedEventHandler](ICoreWebView2HistoryChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Use HistoryChange to check if get_CanGoBack/get_CanGoForward value has changed. HistoryChanged also fires for using GoBack/GoForward. HistoryChanged fires after SourceChanged and ContentLoading. Add an event handler for the HistoryChanged event. 
 ```cpp
@@ -387,7 +387,7 @@ Remove an event handler previously added with add_HistoryChanged.
 
 Add an event handler for the NavigationCompleted event.
 
-> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md#icorewebview2navigationcompletedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
@@ -429,7 +429,7 @@ Remove an event handler previously added with add_NavigationCompleted.
 
 Add an event handler for the FrameNavigationStarting event.
 
-> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md#icorewebview2navigationstartingeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI. This will fire for redirects as well.
 
@@ -462,7 +462,7 @@ Remove an event handler previously added with add_FrameNavigationStarting.
 
 Add an event handler for the ScriptDialogOpening event.
 
-> public HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening)([ICoreWebView2ScriptDialogOpeningEventHandler](ICoreWebView2ScriptDialogOpeningEventHandler.md#icorewebview2scriptdialogopeningeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening)([ICoreWebView2ScriptDialogOpeningEventHandler](ICoreWebView2ScriptDialogOpeningEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 The event fires when a JavaScript dialog (alert, confirm, or prompt) will show for the webview. This event only fires if the ICoreWebView2Settings::AreDefaultScriptDialogsEnabled property is set to false. The ScriptDialogOpening event can be used to suppress dialogs or replace default dialogs with custom dialogs.
 
@@ -534,7 +534,7 @@ Remove an event handler previously added with add_ScriptDialogOpening.
 
 Add an event handler for the PermissionRequested event.
 
-> public HRESULT [add_PermissionRequested](#add_permissionrequested)([ICoreWebView2PermissionRequestedEventHandler](ICoreWebView2PermissionRequestedEventHandler.md#icorewebview2permissionrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_PermissionRequested](#add_permissionrequested)([ICoreWebView2PermissionRequestedEventHandler](ICoreWebView2PermissionRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when content in a WebView requests permission to access some privileged resources.
 
@@ -587,7 +587,7 @@ Remove an event handler previously added with add_PermissionRequested.
 
 Add an event handler for the ProcessFailed event.
 
-> public HRESULT [add_ProcessFailed](#add_processfailed)([ICoreWebView2ProcessFailedEventHandler](ICoreWebView2ProcessFailedEventHandler.md#icorewebview2processfailedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ProcessFailed](#add_processfailed)([ICoreWebView2ProcessFailedEventHandler](ICoreWebView2ProcessFailedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when a WebView process terminated unexpectedly or become unresponsive.
 
@@ -639,7 +639,7 @@ Remove an event handler previously added with add_ProcessFailed.
 
 Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
 
-> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript,[ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md#icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler) * handler)
+> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript,[ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md) * handler)
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
@@ -687,7 +687,7 @@ Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreate
 
 Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
 
-> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript,[ICoreWebView2ExecuteScriptCompletedHandler](ICoreWebView2ExecuteScriptCompletedHandler.md#icorewebview2executescriptcompletedhandler) * handler)
+> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript,[ICoreWebView2ExecuteScriptCompletedHandler](ICoreWebView2ExecuteScriptCompletedHandler.md) * handler)
 
 This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the call is made while the webview is on one document, and a navigation occurs after the call is made but before the JavaScript is executed, then the script will not be executed and the handler will be called with E_FAIL for its errorCode parameter. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
 
@@ -721,7 +721,7 @@ void ScriptComponent::InjectScript()
 
 Capture an image of what WebView is displaying.
 
-> public HRESULT [CapturePreview](#capturepreview)([CORE_WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#core_webview2_capture_preview_image_format) imageFormat,IStream * imageStream,[ICoreWebView2CapturePreviewCompletedHandler](ICoreWebView2CapturePreviewCompletedHandler.md#icorewebview2capturepreviewcompletedhandler) * handler)
+> public HRESULT [CapturePreview](#capturepreview)([CORE_WEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#core_webview2_capture_preview_image_format) imageFormat,IStream * imageStream,[ICoreWebView2CapturePreviewCompletedHandler](ICoreWebView2CapturePreviewCompletedHandler.md) * handler)
 
 Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
 
@@ -834,7 +834,7 @@ This behaves in exactly the same manner as PostWebMessageAsJson but the `window.
 
 This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 
-> public HRESULT [add_WebMessageReceived](#add_webmessagereceived)([ICoreWebView2WebMessageReceivedEventHandler](ICoreWebView2WebMessageReceivedEventHandler.md#icorewebview2webmessagereceivedeventhandler) * handler,EventRegistrationToken * token)
+> public HRESULT [add_WebMessageReceived](#add_webmessagereceived)([ICoreWebView2WebMessageReceivedEventHandler](ICoreWebView2WebMessageReceivedEventHandler.md) * handler,EventRegistrationToken * token)
 
 The postMessage function is `void postMessage(object)` where object is any object supported by JSON conversion.
 
@@ -856,7 +856,7 @@ The postMessage function is `void postMessage(object)` where object is any objec
             window.chrome.webview.postMessage("GetWindowBounds");
         }
 ```
- When postMessage is called, the [ICoreWebView2WebMessageReceivedEventHandler](ICoreWebView2WebMessageReceivedEventHandler.md#icorewebview2webmessagereceivedeventhandler) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
+ When postMessage is called, the [ICoreWebView2WebMessageReceivedEventHandler](ICoreWebView2WebMessageReceivedEventHandler.md) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
 
 ```cpp
     // Setup the web message received event handler before navigating to
@@ -906,7 +906,7 @@ Remove an event handler previously added with add_WebMessageReceived.
 
 Call an asynchronous DevToolsProtocol method.
 
-> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName,LPCWSTR parametersAsJson,[ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md#icorewebview2calldevtoolsprotocolmethodcompletedhandler) * handler)
+> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName,LPCWSTR parametersAsJson,[ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md) * handler)
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
@@ -981,7 +981,7 @@ Navigates the WebView to the next page in the navigation history.
 
 Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
 
-> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(LPCWSTR eventName,[ICoreWebView2DevToolsProtocolEventReceiver](ICoreWebView2DevToolsProtocolEventReceiver.md#icorewebview2devtoolsprotocoleventreceiver) ** receiver)
+> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(LPCWSTR eventName,[ICoreWebView2DevToolsProtocolEventReceiver](ICoreWebView2DevToolsProtocolEventReceiver.md) ** receiver)
 
 The eventName parameter is the full name of the event in the format `{domain}.{event}`. See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list of DevTools Protocol events description, and event args.
 
@@ -1042,7 +1042,7 @@ Does not stop scripts.
 
 Add an event handler for the NewWindowRequested event.
 
-> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([ICoreWebView2NewWindowRequestedEventHandler](ICoreWebView2NewWindowRequestedEventHandler.md#icorewebview2newwindowrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([ICoreWebView2NewWindowRequestedEventHandler](ICoreWebView2NewWindowRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
 
@@ -1083,7 +1083,7 @@ Remove an event handler previously added with add_NewWindowRequested.
 
 Add an event handler for the DocumentTitleChanged event.
 
-> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([ICoreWebView2DocumentTitleChangedEventHandler](ICoreWebView2DocumentTitleChangedEventHandler.md#icorewebview2documenttitlechangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([ICoreWebView2DocumentTitleChangedEventHandler](ICoreWebView2DocumentTitleChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
 
@@ -1270,7 +1270,7 @@ Does nothing if called when the DevTools window is already open
 
 Notifies when the ContainsFullScreenElement property changes.
 
-> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([ICoreWebView2ContainsFullScreenElementChangedEventHandler](ICoreWebView2ContainsFullScreenElementChangedEventHandler.md#icorewebview2containsfullscreenelementchangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([ICoreWebView2ContainsFullScreenElementChangedEventHandler](ICoreWebView2ContainsFullScreenElementChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 This means that an HTML element inside the WebView is entering fullscreen to the size of the WebView or leaving fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of ContainsFullScreenElementChanged can then resize the WebView in response.
 
@@ -1314,7 +1314,7 @@ Indicates if the WebView contains a fullscreen HTML element.
 
 Add an event handler for the WebResourceRequested event.
 
-> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](ICoreWebView2WebResourceRequestedEventHandler.md#icorewebview2webresourcerequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](ICoreWebView2WebResourceRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
 
@@ -1379,7 +1379,7 @@ If the same filter was added multiple times, then it will need to be removed as 
 
 Add an event handler for the WindowCloseRequested event.
 
-> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)([ICoreWebView2WindowCloseRequestedEventHandler](ICoreWebView2WindowCloseRequestedEventHandler.md#icorewebview2windowcloserequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)([ICoreWebView2WindowCloseRequestedEventHandler](ICoreWebView2WindowCloseRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when content inside the WebView requested to close the window, such as after window.close is called. The app should close the WebView and related app window if that makes sense to the app.
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -34,7 +34,7 @@ Obtained from the WebView object via GetDevToolsProtocolEventReceiver.
 
 Subscribe to a DevToolsProtocol event.
 
-> public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](ICoreWebView2DevToolsProtocolEventReceivedEventHandler.md#icorewebview2devtoolsprotocoleventreceivedeventhandler) * handler,EventRegistrationToken * token)
+> public HRESULT [add_DevToolsProtocolEventReceived](#add_devtoolsprotocoleventreceived)([ICoreWebView2DevToolsProtocolEventReceivedEventHandler](ICoreWebView2DevToolsProtocolEventReceivedEventHandler.md) * handler,EventRegistrationToken * token)
 
 The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires. Invoke will be called with the an event args object containing the DevTools Protocol event's parameter object as a JSON string.
 

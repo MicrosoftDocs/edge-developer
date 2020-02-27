@@ -20,7 +20,7 @@ interface IWebView2DevToolsProtocolEventReceivedEventHandler
   : public IUnknown
 ```
 
-The caller implements this interface to receive DevToolsProtocolEventReceived events from the [IWebView2WebView](IWebView2WebView.md#iwebview2webview).
+The caller implements this interface to receive DevToolsProtocolEventReceived events from the [IWebView2WebView](IWebView2WebView.md).
 
 ## Summary
 
@@ -34,5 +34,5 @@ The caller implements this interface to receive DevToolsProtocolEventReceived ev
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2DevToolsProtocolEventReceivedEventArgs](IWebView2DevToolsProtocolEventReceivedEventArgs.md#iwebview2devtoolsprotocoleventreceivedeventargs) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) * webview,[IWebView2DevToolsProtocolEventReceivedEventArgs](IWebView2DevToolsProtocolEventReceivedEventArgs.md) * args)
 

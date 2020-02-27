@@ -33,7 +33,7 @@ Event args for the [IWebView2WebView::add_ScriptDialogOpening](IWebView2WebView.
 [get_DefaultText](#get_defaulttext) | The second parameter passed to the JavaScript prompt dialog.
 [get_ResultText](#get_resulttext) | The return value from the JavaScript prompt function if Accept is called.
 [put_ResultText](#put_resulttext) | Set the ResultText property.
-[GetDeferral](#getdeferral) | GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object.
+[GetDeferral](#getdeferral) | GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md) object.
 
 ## Members
 
@@ -89,9 +89,9 @@ Set the ResultText property.
 
 #### GetDeferral 
 
-GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object.
+GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md) object.
 
-> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
 You can use this to complete the event at a later time.
 

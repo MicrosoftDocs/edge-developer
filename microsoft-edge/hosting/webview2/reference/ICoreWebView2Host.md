@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -123,6 +123,7 @@ void ViewComponent::ResizeWebView()
     SIZE webViewSize = {
             LONG((m_webViewBounds.right - m_webViewBounds.left) * m_webViewRatio * m_webViewScale),
             LONG((m_webViewBounds.bottom - m_webViewBounds.top) * m_webViewRatio * m_webViewScale) };
+
     RECT desiredBounds = m_webViewBounds;
     desiredBounds.bottom = LONG(
         webViewSize.cy + m_webViewBounds.top);
@@ -151,7 +152,7 @@ Set the ZoomFactor property.
 
 Add an event handler for the ZoomFactorChanged event.
 
-> public HRESULT [add_ZoomFactorChanged](#add_zoomfactorchanged)([ICoreWebView2ZoomFactorChangedEventHandler](ICoreWebView2ZoomFactorChangedEventHandler.md#icorewebview2zoomfactorchangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ZoomFactorChanged](#add_zoomfactorchanged)([ICoreWebView2ZoomFactorChangedEventHandler](ICoreWebView2ZoomFactorChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 The event fires when the ZoomFactor property of the WebView changes. The event could fire because the caller modified the ZoomFactor property, or due to the user manually modifying the zoom. When it is modified by the caller via the ZoomFactor property, the internal zoom factor is updated immediately and there will be no ZoomFactorChanged event. WebView associates the last used zoom factor for each site. Therefore, it is possible for the zoom factor to change when navigating to a different page. When the zoom factor changes due to this, the ZoomFactorChanged event fires right after the ContentLoading event.
 
@@ -291,7 +292,7 @@ void ControlComponent::TabBackwards(int currentIndex)
 
 Add an event handler for the MoveFocusRequested event.
 
-> public HRESULT [add_MoveFocusRequested](#add_movefocusrequested)([ICoreWebView2MoveFocusRequestedEventHandler](ICoreWebView2MoveFocusRequestedEventHandler.md#icorewebview2movefocusrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_MoveFocusRequested](#add_movefocusrequested)([ICoreWebView2MoveFocusRequestedEventHandler](ICoreWebView2MoveFocusRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 MoveFocusRequested fires when user tries to tab out of the WebView. The WebView's focus has not changed when this event is fired.
 
@@ -336,7 +337,7 @@ Remove an event handler previously added with add_MoveFocusRequested.
 
 Add an event handler for the GotFocus event.
 
-> public HRESULT [add_GotFocus](#add_gotfocus)([ICoreWebView2FocusChangedEventHandler](ICoreWebView2FocusChangedEventHandler.md#icorewebview2focuschangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_GotFocus](#add_gotfocus)([ICoreWebView2FocusChangedEventHandler](ICoreWebView2FocusChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 GotFocus fires when WebView got focus.
 
@@ -350,7 +351,7 @@ Remove an event handler previously added with add_GotFocus.
 
 Add an event handler for the LostFocus event.
 
-> public HRESULT [add_LostFocus](#add_lostfocus)([ICoreWebView2FocusChangedEventHandler](ICoreWebView2FocusChangedEventHandler.md#icorewebview2focuschangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_LostFocus](#add_lostfocus)([ICoreWebView2FocusChangedEventHandler](ICoreWebView2FocusChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 LostFocus fires when WebView lost focus. In the case where MoveFocusRequested event is fired, the focus is still on WebView when MoveFocusRequested event fires. Lost focus only fires afterwards when app's code or default action of MoveFocusRequested event set focus away from WebView.
 
@@ -364,7 +365,7 @@ Remove an event handler previously added with add_LostFocus.
 
 Add an event handler for the AcceleratorKeyPressed event.
 
-> public HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed)([ICoreWebView2AcceleratorKeyPressedEventHandler](ICoreWebView2AcceleratorKeyPressedEventHandler.md#icorewebview2acceleratorkeypressedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed)([ICoreWebView2AcceleratorKeyPressedEventHandler](ICoreWebView2AcceleratorKeyPressedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused. A key is considered an accelerator if either:
 
@@ -513,7 +514,7 @@ void AppWindow::CloseWebView(bool cleanupUserDataFolder)
 
 Gets the CoreWebView2 associated with this CoreWebView2Host.
 
-> public HRESULT [get_CoreWebView2](#get_corewebview2)([ICoreWebView2](ICoreWebView2.md#icorewebview2) ** coreWebView2)
+> public HRESULT [get_CoreWebView2](#get_corewebview2)([ICoreWebView2](ICoreWebView2.md) ** coreWebView2)
 
 #### CORE_WEBVIEW2_MOVE_FOCUS_REASON 
 

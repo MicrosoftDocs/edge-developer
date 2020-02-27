@@ -34,5 +34,5 @@ The caller implements this interface to receive ProcessFailed events.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,[IWebView2ProcessFailedEventArgs](IWebView2ProcessFailedEventArgs.md#iwebview2processfailedeventargs) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) * webview,[IWebView2ProcessFailedEventArgs](IWebView2ProcessFailedEventArgs.md) * args)
 
