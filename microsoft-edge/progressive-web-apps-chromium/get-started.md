@@ -451,9 +451,9 @@ Also be sure to explore the great resources from around the dev community!  [MDN
 
 <!-- links -->  
 
-[PwaIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows"  
-[PwaMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Progressive Web Apps \(EdgeHTML\)in the Microsoft Store"  
-[PwaWindowsFeatures]: ../progressive-web-apps/windows-features.md "Tailor your PWA \(EdgeHTML\) for Windows"  
+[PwaIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows"  
+[PwaMicrosoftStore]: ../progressive-web-apps-edgehtml/microsoft-store.md "Progressive Web Apps \(EdgeHTML\)in the Microsoft Store"  
+[PwaWindowsFeatures]: ../progressive-web-apps-edgehtml/windows-features.md "Tailor your PWA \(EdgeHTML\) for Windows"  
 
 [LegalWindowsAgrementsMicrosoftStorePolicies]: /legal/windows/agreements/store-policies "Microsoft Store Policies | Microsoft Docs"  
 

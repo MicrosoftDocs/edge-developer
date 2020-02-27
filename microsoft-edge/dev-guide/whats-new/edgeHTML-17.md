@@ -84,7 +84,7 @@ PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.
 
 Beyond PWAs, Service Workers and the Cache API allow developers the ability to intercept network requests and respond from the cache. A website need not even been a full-blow web app to take advantage of the Service Worker cache for fine-tined page load performance and reliability, as well as the ability to provide an offline experience during periods of no internet or poor-quality connection.  
 
-Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
+Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps-edgehtml/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
 
 ### Web Security
 EdgeHTML 17 introduces support for Subresource Integrity (SRI). [Subresource Integrity](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) is a secuirty feature that allows browsers to verify that fetched resources (e.g. images, scripts, fonts, etc.) are delivered without unexpected manipulation. 

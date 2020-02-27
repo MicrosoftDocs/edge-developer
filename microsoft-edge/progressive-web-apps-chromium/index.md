@@ -76,7 +76,7 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
    - Full access to Microsoft [Edge DevTools](../devtools-guide-chromium/progressive-web-apps.md) for debugging your app 
 
 > [!IMPORTANT]
-> To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](../progressive-web-apps/index.md). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
+> To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](../progressive-web-apps-edgehtml/index.md). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
 
 
 ## Requirements
@@ -99,9 +99,9 @@ To be a *great* PWA, your app will also need:
 
   - [X] [**Best practices**](https://webhint.io/). Use code quality tools like the [Webhint](https://webhint.io/) linter to optimize the efficiency, robustness, safety, and accessibility of your app.
 
-  - [X] [**Chromium PWA Checklist**](https://developers.google.com/web/progressive-web-apps/checklist#baseline). Check your PWA against the Google baseline PWA checklist
+  - [X] [**Chromium PWA Checklist**](https://developers.google.com/web/progressive-web-apps-edgehtml/checklist#baseline). Check your PWA against the Google baseline PWA checklist
 
-If you'd like to turn your PWA into a [Microsoft Store](https://developer.microsoft.com/store) application, head to the [Progressive Web Apps (EdgeHTML)](../progressive-web-apps/microsoft-store.md) documentation.
+If you'd like to turn your PWA into a [Microsoft Store](https://developer.microsoft.com/store) application, head to the [Progressive Web Apps (EdgeHTML)](../progressive-web-apps-edgehtml/microsoft-store.md) documentation.
 
 ## Current availability
 
@@ -117,8 +117,8 @@ For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform
 [DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulation"  
 [DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17"  
 [DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14"  
-[ProgressiveWebAppsMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
-[ProgressiveWebAppsMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  
+[ProgressiveWebAppsMicrosoftStore]: ../progressive-web-apps-edgehtml/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
+[ProgressiveWebAppsMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps-edgehtml/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services \(WNS\) overview"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV"  
