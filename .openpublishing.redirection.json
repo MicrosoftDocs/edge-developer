@@ -241,11 +241,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/progressive-web-apps/index.md",
-      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/index",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-edge/progressive-web-apps/microsoft-store.md",
       "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/microsoft-store",
       "redirect_document_id": true
