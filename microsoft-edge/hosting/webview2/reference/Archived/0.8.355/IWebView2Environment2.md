@@ -26,15 +26,15 @@ Additional functionality implemented by the Environment object.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_BrowserVersionInfo](#get_browserversioninfo) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment), including channel name if it is not the stable channel.
+[get_BrowserVersionInfo](#get_browserversioninfo) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md), including channel name if it is not the stable channel.
 
-See the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
+See the [IWebView2Environment](IWebView2Environment.md) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md).
 
 ## Members
 
 #### get_BrowserVersionInfo 
 
-The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment), including channel name if it is not the stable channel.
+The browser version info of the current [IWebView2Environment](IWebView2Environment.md), including channel name if it is not the stable channel.
 
 > public HRESULT [get_BrowserVersionInfo](#get_browserversioninfo)(LPWSTR * versionInfo)
 

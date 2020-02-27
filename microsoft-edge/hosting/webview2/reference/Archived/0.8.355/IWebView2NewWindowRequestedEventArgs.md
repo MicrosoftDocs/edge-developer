@@ -32,7 +32,7 @@ Event args for the NewWindowRequested event.
 [put_Handled](#put_handled) | Sets whether the NewWindowRequestedEvent is handled by host.
 [get_Handled](#get_handled) | Gets whether the NewWindowRequestedEvent is handled by host.
 [get_IsUserInitiated](#get_isuserinitiated) | IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
-[GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object and put the event into a deferred state.
+[GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md) object and put the event into a deferred state.
 
 The event is fired when content inside webview requested to a open a new window (through window.open() etc.)
 
@@ -48,7 +48,7 @@ The target uri of the NewWindowRequest.
 
 Sets a WebView as a result of the NewWindowRequest.
 
-> public HRESULT [put_NewWindow](#put_newwindow)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * newWindow)
+> public HRESULT [put_NewWindow](#put_newwindow)([IWebView2WebView](IWebView2WebView.md) * newWindow)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
 
@@ -56,7 +56,7 @@ The target webview should not be navigated. If the NewWindow is set, its top lev
 
 Gets the new window.
 
-> public HRESULT [get_NewWindow](#get_newwindow)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) ** newWindow)
+> public HRESULT [get_NewWindow](#get_newwindow)([IWebView2WebView](IWebView2WebView.md) ** newWindow)
 
 #### put_Handled 
 
@@ -80,9 +80,9 @@ IsUserInitiated is true when the new window request was initiated through a user
 
 #### GetDeferral 
 
-Obtain an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object and put the event into a deferred state.
+Obtain an [IWebView2Deferral](IWebView2Deferral.md) object and put the event into a deferred state.
 
-> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
-You can use the [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object to complete the window open request at a later time. While this event is deferred the opener window will be returned a WindowProxy to an unnavigated window, which will navigate when the deferral is complete.
+You can use the [IWebView2Deferral](IWebView2Deferral.md) object to complete the window open request at a later time. While this event is deferred the opener window will be returned a WindowProxy to an unnavigated window, which will navigate when the deferral is complete.
 

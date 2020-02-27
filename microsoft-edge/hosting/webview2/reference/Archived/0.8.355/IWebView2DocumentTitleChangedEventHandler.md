@@ -36,7 +36,7 @@ Use the DocumentTitle property to get the modified title.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView3](IWebView2WebView3.md#iwebview2webview3) * webview,IUnknown * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView3](IWebView2WebView3.md) * webview,IUnknown * args)
 
 There are no event args and the args parameter will be null.
 
