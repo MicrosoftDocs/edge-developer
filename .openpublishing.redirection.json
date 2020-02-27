@@ -236,6 +236,36 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-edge/progressive-web-apps/get-started.md",
+      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/index.md",
+      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/microsoft-store.md",
+      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/microsoft-store",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/windows-features.md",
+      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/windows-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/xbox-considerations.md",
+      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/xbox-considerations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps-chromium/index.md",
+      "redirect_url": "/microsoft-edge/progressive-web-app/index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/webdriver/dialogs.md",
       "redirect_url": "/microsoft-edge/webdriver",
       "redirect_document_id": false
