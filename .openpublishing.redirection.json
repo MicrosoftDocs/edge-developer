@@ -236,23 +236,28 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-edge/progressive-web-apps-chromium/index.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps/index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/progressive-web-apps/get-started.md",
-      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/get-started",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/get-started",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/progressive-web-apps/microsoft-store.md",
-      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/microsoft-store",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/microsoft-store",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/progressive-web-apps/windows-features.md",
-      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/windows-features",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/windows-features",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-edge/progressive-web-apps/xbox-considerations.md",
-      "redirect_url": "/microsoft-edge/progressive-web-app-edgehtml/xbox-considerations",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/xbox-considerations",
       "redirect_document_id": true
     },
     {
