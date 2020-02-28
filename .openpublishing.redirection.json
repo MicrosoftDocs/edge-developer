@@ -256,11 +256,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/progressive-web-apps-chromium/index.md",
-      "redirect_url": "/microsoft-edge/progressive-web-app/index",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-edge/webdriver/dialogs.md",
       "redirect_url": "/microsoft-edge/webdriver",
       "redirect_document_id": false
