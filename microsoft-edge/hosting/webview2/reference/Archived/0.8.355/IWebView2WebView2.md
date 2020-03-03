@@ -28,7 +28,7 @@ Additional functionality implemented by the primary WebView object.
 --------------------------------|---------------------------------------------
 [Stop](#stop) | Stop all navigations and pending resource fetches.
 
-You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md#iwebview2webview). See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
+You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md). See the [IWebView2WebView](IWebView2WebView.md) interface for more details.
 
 ## Members
 

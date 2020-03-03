@@ -57,7 +57,7 @@ True when the navigation is redirected.
 
 The HTTP request headers for the navigation.
 
-> public HRESULT [get_RequestHeaders](#get_requestheaders)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md#iwebview2httprequestheaders) ** requestHeaders)
+> public HRESULT [get_RequestHeaders](#get_requestheaders)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md) ** requestHeaders)
 
 Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 

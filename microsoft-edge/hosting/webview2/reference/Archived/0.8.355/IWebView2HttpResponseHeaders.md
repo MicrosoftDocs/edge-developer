@@ -51,11 +51,11 @@ Checks whether the headers contain entries matching the header name.
 
 Gets the header values matching the name.
 
-> public HRESULT [GetHeaders](#getheaders)(LPCWSTR name,[IWebView2HttpHeadersCollectionIterator](IWebView2HttpHeadersCollectionIterator.md#iwebview2httpheaderscollectioniterator) ** iterator)
+> public HRESULT [GetHeaders](#getheaders)(LPCWSTR name,[IWebView2HttpHeadersCollectionIterator](IWebView2HttpHeadersCollectionIterator.md) ** iterator)
 
 #### GetIterator 
 
 Gets an iterator over the collection of entire response headers.
 
-> public HRESULT [GetIterator](#getiterator)([IWebView2HttpHeadersCollectionIterator](IWebView2HttpHeadersCollectionIterator.md#iwebview2httpheaderscollectioniterator) ** iterator)
+> public HRESULT [GetIterator](#getiterator)([IWebView2HttpHeadersCollectionIterator](IWebView2HttpHeadersCollectionIterator.md) ** iterator)
 

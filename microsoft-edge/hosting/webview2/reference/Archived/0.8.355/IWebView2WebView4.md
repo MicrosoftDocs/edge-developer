@@ -34,7 +34,7 @@ Additional functionality implemented by the primary WebView object.
 [WEBVIEW2_KEY_EVENT_TYPE](#webview2_key_event_type) | The type of key event that triggered an AcceleratorKeyPressed event.
 [WEBVIEW2_PHYSICAL_KEY_STATUS](#webview2_physical_key_status) | A structure representing the information packed into the LPARAM given to a Win32 key event.
 
-You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md#iwebview2webview). See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
+You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md). See the [IWebView2WebView](IWebView2WebView.md) interface for more details.
 
 ## Members
 
@@ -192,7 +192,7 @@ Does nothing if called when the DevTools window is already open
 
 Add an event handler for the AcceleratorKeyPressed event.
 
-> public HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed)([IWebView2AcceleratorKeyPressedEventHandler](IWebView2AcceleratorKeyPressedEventHandler.md#iwebview2acceleratorkeypressedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_AcceleratorKeyPressed](#add_acceleratorkeypressed)([IWebView2AcceleratorKeyPressedEventHandler](IWebView2AcceleratorKeyPressedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused. A key is considered an accelerator if either:
 

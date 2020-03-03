@@ -33,7 +33,7 @@ Additional functionality implemented by the primary WebView object.
 [remove_DocumentTitleChanged](#remove_documenttitlechanged) | Remove an event handler previously added with add_DocumentTitleChanged.
 [get_DocumentTitle](#get_documenttitle) | The title for the current top level document.
 
-You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md#iwebview2webview). See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
+You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md). See the [IWebView2WebView](IWebView2WebView.md) interface for more details.
 
 ## Members
 
@@ -47,7 +47,7 @@ Stop all navigations and pending resource fetches.
 
 Add an event handler for the NewWindowRequested event.
 
-> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([IWebView2NewWindowRequestedEventHandler](IWebView2NewWindowRequestedEventHandler.md#iwebview2newwindowrequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([IWebView2NewWindowRequestedEventHandler](IWebView2NewWindowRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
 
@@ -85,7 +85,7 @@ Remove an event handler previously added with add_NewWindowRequested.
 
 Add an event handler for the DocumentTitleChanged event.
 
-> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([IWebView2DocumentTitleChangedEventHandler](IWebView2DocumentTitleChangedEventHandler.md#iwebview2documenttitlechangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([IWebView2DocumentTitleChangedEventHandler](IWebView2DocumentTitleChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
 
