@@ -1,5 +1,6 @@
 - name: Microsoft Edge documentation
   href: index.yml
+  expanded: true
   items: 
     - name: Accessibility
       href: accessibility.md
