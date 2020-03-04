@@ -1,5 +1,6 @@
 - name: Microsoft Edge documentation
   href: index.yml
+  expanded: true
   items: 
     - name: Accessibility
       href: accessibility.md
@@ -441,18 +442,19 @@
       href: privacy-whitepaper.md
     - name: Progressive Web Apps (Chromium)
       href: progressive-web-apps-chromium/index.md
+      # items: 
     - name: Progressive Web Apps (EdgeHTML)
-      href: progressive-web-apps/index.md
+      href: progressive-web-apps-edgehtml/index.md
       items: 
-        - name: Get started with PWAs
-          href: progressive-web-apps/get-started.md
+        - name: Get started with PWAs (EdgeHTML)
+          href: progressive-web-apps-edgehtml/get-started.md
         - name: Tailor your PWA for Windows
-          href: progressive-web-apps/windows-features.md
+          href: progressive-web-apps-edgehtml/windows-features.md
           items: 
             - name: PWAs for Xbox
-              href: progressive-web-apps/xbox-considerations.md
+              href: progressive-web-apps-edgehtml/xbox-considerations.md
         - name: PWAs in the Microsoft Store
-          href: progressive-web-apps/microsoft-store.md
+          href: progressive-web-apps-edgehtml/microsoft-store.md
     - name: Puppeteer
       href: puppeteer.md
     - name: Visual Studio

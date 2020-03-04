@@ -22,7 +22,7 @@ Here are the latest Microsoft Edge DevTools features that shipped in the [Window
 
 ![Microsoft Edge DevTools app](../../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available for preview as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../../webview.md), and [Windows-installed PWAs](../../progressive-web-apps/windows-features.md)).
+The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available for preview as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../../webview.md), and [Windows-installed PWAs](../../progressive-web-apps-edgehtml/windows-features.md)).
 
 The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
 
@@ -57,7 +57,7 @@ Additionally, the [Network panel toolbar](../network.md#toolbar) has a new butto
 
 ![Network toolbar button: Bypass Service Worker for all network requests](../media/network_toolbar_bypass_sw.png)
 
-You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps/windows-features.md) by selecting it from the list of [**Local**](../../progressive-web-apps/windows-features.md#debug-your-pwa-edgehtml-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).  
+You can debug your [PWA as an installed Windows 10 app](../../progressive-web-apps-edgehtml/windows-features.md) by selecting it from the list of [**Local**](../../progressive-web-apps-edgehtml/windows-features.md#debug-your-pwa-edgehtml-as-a-windows-app) targets (browser tab/PWA/webview) in the chooser of the [standalone DevTools app](../../devtools-guide.md#microsoft-store-app).  
 
 ## Docking to the right in Microsoft Edge
 
