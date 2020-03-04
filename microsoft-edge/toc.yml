@@ -442,9 +442,7 @@
       href: privacy-whitepaper.md
     - name: Progressive Web Apps (Chromium)
       href: progressive-web-apps-chromium/index.md
-      items: 
-        - name: Get started with PWAs (Chromium)
-          href: progressive-web-apps-chromium/get-started.md
+      # items: 
     - name: Progressive Web Apps (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items: 
