@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,7 +27,7 @@ Iterator for a collection of HTTP headers.
 [get_HasCurrentHeader](#get_hascurrentheader) | True when the iterator hasn't run out of headers.
 [MoveNext](#movenext) | Move the iterator to the next HTTP header in the collection.
 
-See [ICoreWebView2HttpRequestHeaders](ICoreWebView2HttpRequestHeaders.md#icorewebview2httprequestheaders) and [ICoreWebView2HttpResponseHeaders](ICoreWebView2HttpResponseHeaders.md#icorewebview2httpresponseheaders). 
+See [ICoreWebView2HttpRequestHeaders](ICoreWebView2HttpRequestHeaders.md) and [ICoreWebView2HttpResponseHeaders](ICoreWebView2HttpResponseHeaders.md). 
 ```cpp
 std::wstring RequestHeadersToJsonString(ICoreWebView2HttpRequestHeaders* requestHeaders)
 {

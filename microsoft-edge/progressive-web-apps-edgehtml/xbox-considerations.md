@@ -58,7 +58,7 @@ The free, full-featured [Visual Studio Community 2017](https://visualstudio.micr
 
 #### Setup
 
-1. Follow the steps to [set up and run your PWA as a Universal Windows app](/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app). With this, you'll have a fully functioning Windows 10 app capable of accessing Universal Windows APIs.
+1. Follow the steps to [set up and run your PWA as a Universal Windows app](/microsoft-edge/progressive-web-apps-edgehtml/windows-features#set-up-and-run-your-universal-windows-app). With this, you'll have a fully functioning Windows 10 app capable of accessing Universal Windows APIs.
 
 2. You can now deploy and debug your PWA (as a UWP app) on the Xbox One (as with any other Windows 10 remote device) using the [Visual Studio remote debugger](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine?view=vs-2017
 ). Alternately, you can install your PWA using the [Device Portal for Xbox](/windows/uwp/debug-test-perf/device-portal-xbox) using the following steps.
@@ -152,6 +152,6 @@ At the time of this writing, [`cbcs` encoding support is limited](/playready/pac
 
 [Xbox best practices](/windows/uwp/xbox-apps/tailoring-for-xbox): Follow these best practices to tailor your app for Xbox One.
 
-[PWAs in the Microsoft Store](/microsoft-edge/progressive-web-apps/microsoft-store): Here's how (and why!) to Submit your PWA to the Microsoft Store.
+[PWAs in the Microsoft Store](/microsoft-edge/progressive-web-apps-edgehtml/microsoft-store): Here's how (and why!) to Submit your PWA to the Microsoft Store.
 
 [UWP on Xbox One](/windows/uwp/xbox-apps/): A complete guide to UWP app development for Xbox One.

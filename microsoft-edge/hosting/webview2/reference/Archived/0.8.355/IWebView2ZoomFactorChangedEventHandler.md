@@ -36,7 +36,7 @@ Use the IWebView2WebView.ZoomFactor property to get the modified zoom factor.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,IUnknown * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) * webview,IUnknown * args)
 
 There are no event args and the args parameter will be null.
 

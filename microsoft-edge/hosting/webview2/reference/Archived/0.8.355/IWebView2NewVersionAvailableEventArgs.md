@@ -26,13 +26,13 @@ Event args for the NewVersionAvailable event.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_NewVersion](#get_newversion) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
+[get_NewVersion](#get_newversion) | The browser version info of the current [IWebView2Environment](IWebView2Environment.md).
 
 ## Members
 
 #### get_NewVersion 
 
-The browser version info of the current [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
+The browser version info of the current [IWebView2Environment](IWebView2Environment.md).
 
 > public HRESULT [get_NewVersion](#get_newversion)(LPWSTR * newVersion)
 

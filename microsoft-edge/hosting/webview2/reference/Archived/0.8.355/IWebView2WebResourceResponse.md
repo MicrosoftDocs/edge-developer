@@ -54,7 +54,7 @@ Set the Content property.
 
 Overridden HTTP response headers.
 
-> public HRESULT [get_Headers](#get_headers)([IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#iwebview2httpresponseheaders) ** headers)
+> public HRESULT [get_Headers](#get_headers)([IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md) ** headers)
 
 #### get_StatusCode 
 

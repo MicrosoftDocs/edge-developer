@@ -36,7 +36,7 @@ There are no event args for this event.
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md#iwebview2webview) * webview,IUnknown * args)
+> public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) * webview,IUnknown * args)
 
 There are no event args and the args parameter will be null.
 

@@ -29,7 +29,7 @@ Event args for the WebResourceRequested event.
 [get_Request](#get_request) | The HTTP request.
 [get_Response](#get_response) | The HTTP response.
 [put_Response](#put_response) | Set the Response property.
-[GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object and put the event into a deferred state.
+[GetDeferral](#getdeferral) | Obtain an [IWebView2Deferral](IWebView2Deferral.md) object and put the event into a deferred state.
 
 ## Members
 
@@ -37,25 +37,25 @@ Event args for the WebResourceRequested event.
 
 The HTTP request.
 
-> public HRESULT [get_Request](#get_request)([IWebView2WebResourceRequest](IWebView2WebResourceRequest.md#iwebview2webresourcerequest) ** request)
+> public HRESULT [get_Request](#get_request)([IWebView2WebResourceRequest](IWebView2WebResourceRequest.md) ** request)
 
 #### get_Response 
 
 The HTTP response.
 
-> public HRESULT [get_Response](#get_response)([IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#iwebview2webresourceresponse) ** response)
+> public HRESULT [get_Response](#get_response)([IWebView2WebResourceResponse](IWebView2WebResourceResponse.md) ** response)
 
 #### put_Response 
 
 Set the Response property.
 
-> public HRESULT [put_Response](#put_response)([IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#iwebview2webresourceresponse) * response)
+> public HRESULT [put_Response](#put_response)([IWebView2WebResourceResponse](IWebView2WebResourceResponse.md) * response)
 
 #### GetDeferral 
 
-Obtain an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object and put the event into a deferred state.
+Obtain an [IWebView2Deferral](IWebView2Deferral.md) object and put the event into a deferred state.
 
-> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
-You can use the [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object to complete the network request at a later time.
+You can use the [IWebView2Deferral](IWebView2Deferral.md) object to complete the network request at a later time.
 
