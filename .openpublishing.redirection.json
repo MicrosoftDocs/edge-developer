@@ -236,8 +236,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/progressive-web-apps-chromium/index.md",
-      "redirect_url": "/microsoft-edge/progressive-web-apps/index",
+      "source_path": "microsoft-edge/progressive-web-apps/index.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
       "redirect_document_id": true
     },
     {
