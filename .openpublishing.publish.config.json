@@ -51,5 +51,11 @@
     }
   },
   "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  },
+  "feature_flags": {
+    "use_v2_github_user_cache": true
+  }
 }

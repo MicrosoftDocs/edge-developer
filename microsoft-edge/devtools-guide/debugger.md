@@ -3,7 +3,7 @@ description: Use the Debugger to step through and troubleshoot your code.
 title: DevTools - Debugger
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
@@ -16,7 +16,7 @@ Use the **Debugger** to step through code, set watches and breakpoints, live edi
 
 - [Browsing](#resource-picker) and [searching](#file-search) code from your loaded source files
 - [Controlling the execution flow](#toolbar) as you step through your code
-- [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
+- [Managing page storage resources](./storage.md#cache-manager), including the [service workers and cache](./service-workers.md), [cookies](./storage.md#cookies-list) and [web storage](./storage.md#local-and-session-storage-managers)  
 - [Setting breakpoints and live editing](#debug-window) your code as it runs
 - [Tracking and editing local variables](#watches) as you debug
 - [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
@@ -132,7 +132,7 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
 (Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files-ctrlf) search results.
 
 ### 6. Find in files (`Ctrl+F`)
- **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
+ **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
 
 ### 7. Debug just my code (`Ctrl+J`)
  **Debug just my code** (`Ctrl+J`) acts as a toggle to include or exclude all the files that have been marked as [library code](#3-code-scoping) as you step through the debugger.

@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 78a64aad-70b3-49b0-b961-6064eae19129
 caps.latest.revision: 6
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsValueRef Typedef
 A reference to a JavaScript value.  
