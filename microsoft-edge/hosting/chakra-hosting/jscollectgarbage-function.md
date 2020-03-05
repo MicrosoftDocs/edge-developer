@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsCollectGarbage function"
 ms.assetid: 995c79a5-6e18-45be-81ff-2a5d3348edb8
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCollectGarbage Function
 Performs a full garbage collection.  

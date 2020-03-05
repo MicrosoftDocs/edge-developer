@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6aafc39f-6b9c-457f-8bf0-48831bffe9b8
 caps.latest.revision: 6
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsRef Typedef
 A reference to an object owned by the Chakra garbage collector.  

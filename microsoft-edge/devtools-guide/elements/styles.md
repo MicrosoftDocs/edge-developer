@@ -21,7 +21,7 @@ You can display the pseudo states panel by clicking the "**a:**" button. Define 
 
 ## Editing pseudo elements
 
-Use the [Styles](#styles) pane to add, edit, and delete pseudo elements and pseudo states. To apply a CSS pseudo state to the selected element, open the *Pseudo states panel* (**a:** button) and tick the desired class.
+Use the Styles pane to add, edit, and delete pseudo elements and pseudo states. To apply a CSS pseudo state to the selected element, open the *Pseudo states panel* (**a:** button) and tick the desired class.
 
 ![Pseudo classes in Styles pane](../media/elements_styles_pseudo_states.png)
 

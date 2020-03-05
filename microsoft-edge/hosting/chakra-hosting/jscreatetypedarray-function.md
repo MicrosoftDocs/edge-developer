@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 937a2a91-6f5f-4aaa-a018-d3089702bf36
 caps.latest.revision: 2
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCreateTypedArray Function
 Creates a JavaScript typed array object.  

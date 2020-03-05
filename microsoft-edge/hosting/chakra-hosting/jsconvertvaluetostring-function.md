@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsConvertValueToString function"
 ms.assetid: a97aca04-b2ce-446a-acf4-49cd6777a85c
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsConvertValueToString Function
 Converts the value to string using standard JavaScript semantics.  

@@ -17,7 +17,6 @@ Head over to the [Dev Guide](../dev-guide.md) to see the new features and APIs s
 
 Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are listed in the format of **[interface name].[api name]**. For a full list of new Microsoft Edge and platform features, check out [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) or head over to the [Dev Guide](../dev-guide.md) to see new features and APIs shipped in the current stable release of the Microsoft Edge platform, EdgeHTML 18.  
 
-
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it’s commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -42,12 +41,3 @@ No API changes.
 
 ## Preview Build 18242
 No API changes.
-
-
-
-
-
-
-
-
-

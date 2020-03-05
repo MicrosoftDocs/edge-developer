@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 32f22d37-e57e-4196-b6cd-a3fc75bd0632
 caps.latest.revision: 3
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsProjectionCallback Typedef
 The JsRT callback which should be called with the context passed to `JsProjectionEnqueueCallback` on the correct thread.  

@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsSetCurrentContext function"
 ms.assetid: 603cc94c-6585-411b-89f9-c6f144e2aa30
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetCurrentContext Function
 Sets the current script context on the thread.  
