@@ -11,7 +11,9 @@ keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Localizing Microsoft Edge extensions for Windows and the Microsoft Store
+# Localizing Microsoft Edge extensions for Windows and the Microsoft Store  
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 This guide walks through how to localize your Microsoft Edge extension so that it's ready for multiple locales upon release. To fully localize your extension, you'll need to follow the steps for both Windows and the Microsoft Store.
 

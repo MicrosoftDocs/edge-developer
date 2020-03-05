@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsSetExternalData function"
 ms.assetid: 94e0ad34-67d7-4f7f-88a3-3b057ef5e4b9
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetExternalData Function
 Sets the external data on an external object.  

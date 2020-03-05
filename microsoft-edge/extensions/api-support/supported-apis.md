@@ -3,13 +3,15 @@ description: Find information on current and future APIs as well their known iss
 title: Extensions - Supported APIs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2018
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-#  Supported APIs
+#  Supported APIs  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 The following is a detailed list of API members that are supported. Development of the extension platform is ongoing, so check back frequently for updates!
 

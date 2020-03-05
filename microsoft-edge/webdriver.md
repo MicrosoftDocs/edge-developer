@@ -1,36 +1,36 @@
 ---
 ms.assetid: e56172c0-b635-4c02-8e0c-56bf8cb4c164
-description: Use the WebDriver wire protocol to control web browser behavior for test automation
-title: Webdriver
+description: Learn how to get started with WebDriver, a wire protocol that allows programs and scripts to control web browser behavior.
+title: WebDriver (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/12/2018
+ms.date: 01/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: edge, web development, html, css, javascript, developer, webdriver, selenium, testing
 ---
 
-# WebDriver 
+# WebDriver (EdgeHTML)
 The W3C [WebDriver](https://www.w3.org/TR/webdriver/) API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser.
 
 WebDriver enables developers to create automated tests that simulate user interaction. This is different from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser doesn't, and it can more accurately simulate user events or OS-level events. WebDriver can also manage testing across multiple windows, tabs and webpages in a single test session.
 
-Here's how to get started with WebDriver for Microsoft Edge.
+Here's how to get started with WebDriver for Microsoft Edge (EdgeHTML).
 
-The Microsoft Edge implementation of WebDriver supports both the W3C [WebDriver](https://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests.
+The Microsoft Edge (EdgeHTML) implementation of WebDriver supports both the W3C [WebDriver](https://www.w3.org/TR/webdriver/) specification and the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for backwards compatibility with existing tests.
 
-## Getting started with WebDriver for Microsoft Edge
+## Getting started with WebDriver for Microsoft Edge (EdgeHTML)
 * Install Windows 10.
-* Download the appropriate [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) server for your build of Windows.
-* Download the WebDriver language binding of your choice. [All Selenium language bindings support Microsoft Edge](https://docs.seleniumhq.org/download/).
+* Download the appropriate [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) server for your build of Windows and Microsoft Edge (EdgeHTML).
+* Download the WebDriver language binding of your choice. [All Selenium language bindings support Microsoft Edge (EdgeHTML)](https://docs.seleniumhq.org/download/).
 
 > [!NOTE]
-> You can find help, report issues, and file feature requests at [Microsoft Edge Feedback & Support](https://developer.microsoft.com/en-us/microsoft-edge/support/).
+> You can find help, report issues, and file feature requests at [Microsoft Edge (EdgeHTML) Feedback & Support](https://developer.microsoft.com/en-us/microsoft-edge/support/).
 
 
 ## Using WebDriver
-To get started using WebDriver with Microsoft Edge, check out these samples:
+To get started using WebDriver with Microsoft Edge (EdgeHTML), check out these samples:
 
 * [C\# code sample](https://gist.github.com/InstyleVII/baf25274c55e891076d5#file-webdriver-cs) for opening a browser window, navigating to bing.com and searching for 'webdriver' (GitHub Gist).
 

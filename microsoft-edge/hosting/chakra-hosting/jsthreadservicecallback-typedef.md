@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: dbe67be5-418a-4f66-8b68-b38078a6d140
 caps.latest.revision: 6
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsThreadServiceCallback Typedef
 A thread service callback.  

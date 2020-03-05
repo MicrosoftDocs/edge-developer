@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 2fccc5d9-f857-46cd-9aeb-f0a2e7cdee6b
 caps.latest.revision: 2
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsCreateSymbol Function
 Creates a JavaScript symbol.
