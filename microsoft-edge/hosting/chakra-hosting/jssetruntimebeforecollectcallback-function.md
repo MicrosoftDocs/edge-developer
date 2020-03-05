@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsSetRuntimeBeforeCollectCallback function"
 ms.assetid: 7b2fb911-6007-4ed9-a307-66cefe590ea4
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetRuntimeBeforeCollectCallback Function
 Sets a callback function that is called by the runtime before garbage collection.  

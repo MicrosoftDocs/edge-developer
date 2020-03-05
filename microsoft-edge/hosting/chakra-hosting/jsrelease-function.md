@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsRelease function"
 ms.assetid: 8714fd0b-5b66-48e0-927e-7b93af6cde7b
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsRelease Function
 Releases a reference to a garbage collected object.  

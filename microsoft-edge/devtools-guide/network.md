@@ -3,7 +3,7 @@ description: Use the Network panel to monitor and profile page resource requests
 title: DevTools - Network
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
@@ -64,8 +64,8 @@ Column | Description
 :------------ | :------------- 
 **Name** | Name and URL path of the request
 **Protocol** |  Type of protocol for the request (such as *HTTPS, HTTP/2*)
-**Method** |    [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used for the request
-**Result** |    [HTTP response status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)  code
+**Method** |    [HTTP method](https://developer.mozilla.org/docs/Web/HTTP/Methods) used for the request
+**Result** |    [HTTP response status](https://developer.mozilla.org/docs/Web/HTTP/Status)  code
 **Content type** |  Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
 **Received** | Size of the response as delivered by the server (not calculated for cached responses)
 **Time** |  Time to load the server response (not calculated for cached responses)
@@ -80,9 +80,9 @@ The bar at the bottom of **Network** panel summarizes the total number of HTTP n
 
 **Elapsed time** means the time between the start of the profiling session and when the last resource was downloaded from the network. Resources fetched from the browser cache do not accrue time to this number. 
 
-**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
+**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
 
-**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/en-US/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
+**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
 
 ## Request details
 
@@ -90,8 +90,8 @@ Clicking on any entry in the [**Network summary**](#network-summary) list will o
 
 ![Network request details pane](./media/network_request_details.png)
 
-### Headers
-Displays the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+ ### Headers
+Displays the [HTTP headers](https://developer.mozilla.org/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
 ### Body
 Displays the body data (if available) of the request and response payloads.

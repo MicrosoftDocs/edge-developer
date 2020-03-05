@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 88e1e421-4ae5-4e3b-b377-19256cc80e9f
 caps.latest.revision: 4
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsSetPrototype Function
 Sets the prototype of an object.  

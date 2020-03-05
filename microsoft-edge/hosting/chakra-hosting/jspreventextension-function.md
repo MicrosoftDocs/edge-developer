@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsPreventExtension function"
 ms.assetid: 8da07e20-d076-4ae4-9fb0-3f3c141518c2
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsPreventExtension Function
 Makes an object non-extensible.  

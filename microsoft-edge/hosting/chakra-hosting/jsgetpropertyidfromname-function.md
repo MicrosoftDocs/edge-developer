@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetPropertyIdFromName function"
 ms.assetid: 1674906f-746a-4c62-99cd-023276683a86
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetPropertyIdFromName Function
 Gets the property ID associated with the name.  

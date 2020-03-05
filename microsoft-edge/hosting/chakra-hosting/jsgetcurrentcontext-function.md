@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetCurrentContext function"
 ms.assetid: dd5fe0fa-d1e5-4af6-809e-e655a27519b5
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetCurrentContext Function
 Gets the current script context on the thread.  

@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsEnumerateHeap function"
 ms.assetid: 3e518e0b-b959-4686-899c-83e6b1946c9d
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsEnumerateHeap Function
 Enumerates the heap of the current context.  
