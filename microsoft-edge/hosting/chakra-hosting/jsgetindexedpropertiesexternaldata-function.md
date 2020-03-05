@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 2c313163-3462-42fd-8dee-3dfb3ac7f43f
 caps.latest.revision: 2
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetIndexedPropertiesExternalData Function
 Retrieves an object's indexed properties external data information.  

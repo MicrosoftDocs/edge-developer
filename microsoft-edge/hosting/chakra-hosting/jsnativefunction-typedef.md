@@ -10,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 56ef6cdf-4ca9-4f7c-b953-e661addb1a8e
 caps.latest.revision: 5
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsNativeFunction Typedef
 A function callback.  

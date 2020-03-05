@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsDefineProperty function"
 ms.assetid: b2cf48d6-eb40-457c-aa8b-b16a50dc5d6a
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsDefineProperty Function
 Defines a new object's own property from a property descriptor.  

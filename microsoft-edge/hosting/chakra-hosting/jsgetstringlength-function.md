@@ -14,9 +14,9 @@ helpviewer_keywords:
   - "JsGetStringLength function"
 ms.assetid: e9f9f28c-e644-439c-aee5-7ce362f71347
 caps.latest.revision: 12
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # JsGetStringLength Function
 Gets the length of a string value.  

@@ -3,13 +3,15 @@ description: Learn about how you can use native messaging to have your extension
 title: Extensions - Native messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
 ---
 
-# Native messaging in Microsoft Edge
+# Native messaging in Microsoft Edge  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 ## Native messaging architecture overview
 
@@ -185,7 +187,7 @@ AppServiceRequestReceivedEventArgs args)
 }
 ```
 
-When your UWP app sends a response back to your extension, a [`KeyValuePair`](https://msdn.microsoft.com/en-us/library/windows/apps/5tbh8a42) will be added to the `ValueSet` object. The `Key` property will be ignored by Microsoft Edge, but the `Value` property will contain a valid JSON string.
+When your UWP app sends a response back to your extension, a [`KeyValuePair`](https://msdn.microsoft.com/library/windows/apps/5tbh8a42) will be added to the `ValueSet` object. The `Key` property will be ignored by Microsoft Edge, but the `Value` property will contain a valid JSON string.
 
 ### Callback
 
@@ -323,7 +325,7 @@ To create your extension with native messaging in Visual Studio:
 
 
 ## Adding a Desktop Bridge component 
-If you want to add a Desktop Bridge component to your package, you'll need to create and build your Win32 project in Visual Studio. For info on how to convert your win32 app to UWP, see [Porting apps to Windows 10 via Desktop Bridge](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root). Once built in Visual Studio, you can add the Win32 executable to the package by doing the following steps:
+If you want to add a Desktop Bridge component to your package, you'll need to create and build your Win32 project in Visual Studio. For info on how to convert your win32 app to UWP, see [Porting apps to Windows 10 via Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root). Once built in Visual Studio, you can add the Win32 executable to the package by doing the following steps:
 
 1. Add the Win32 project to the same solution as the UWP project. 
 
@@ -367,7 +369,7 @@ Once the solution is correctly deployed, you should see your extension in Micros
 ## Packaging
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
 
 
 You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:

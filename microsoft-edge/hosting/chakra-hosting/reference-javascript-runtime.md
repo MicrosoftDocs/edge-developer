@@ -2,7 +2,7 @@
 description: "JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows."
 title: "Reference (JavaScript Runtime) | Microsoft Docs"
 ms.custom: ""
-ms.date: "01/18/2017"
+ms.date: 01/15/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -10,14 +10,14 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 0bfe50da-fd79-4e00-9458-bc667769b415
 caps.latest.revision: 9
-author: "erikadoyle"
-ms.author: "edoyle"
-manager: "jken"
+author: "MSEdgeTeam"
+ms.author: "msedgedevrel"
+manager: ""
 ---
 # Reference (JavaScript Runtime)
 JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.  
   
- If you intend to embed [ChakraCore](https://github.com/Microsoft/ChakraCore) in your application, please refer to [ChakraCore Wiki](http://aka.ms/corejsrtref) for JSRT references instead.  
+ If you intend to embed [ChakraCore](https://github.com/Microsoft/ChakraCore) in your application, please refer to [ChakraCore Wiki](https://aka.ms/corejsrtref) for JSRT references instead.  
   
 ## In This Section  
  Typedefs, constants, and enumerations that support JsRT hosting are described here:  
