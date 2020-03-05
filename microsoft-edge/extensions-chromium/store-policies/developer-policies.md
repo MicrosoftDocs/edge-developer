@@ -3,7 +3,7 @@ description: Microsoft Edge Addons Catalog Developer Policies.
 title: Microsoft Edge Addons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -135,13 +135,13 @@ You may publish the Personal Information of users of your Extension to an outsid
 
 #### 1.5.4 Sharing information of non-Users  
 
-If you publish a person’s Personal Information to an outside service or third-party through your Extension or the metadata, but the person whose information is being shared is not a user of your Extension;  
+If you publish a person's Personal Information to an outside service or third-party through your Extension or the metadata, but the person whose information is being shared is not a user of your Extension;  
 
 1.  You must obtain express written consent to publish that Personal Information.  
 1.  You must permit the person whose information is shared to withdraw that consent at any time.  
 1.  Your privacy policy must clearly disclose that you may collect personal information in this manner.  
 1.  If required by applicable law you must delete the Personal Information of any individual upon request, including individuals whose information you collect in this manner.  
-1.  If your Extension provides users with access to another person’s Personal Information, this requirement also applies.  
+1.  If your Extension provides users with access to another person's Personal Information, this requirement also applies.  
 
 #### 1.5.5 Transmit information securely  
 
@@ -234,7 +234,7 @@ Your privacy statement or terms of use must let users know you plan to send Pers
 
 #### 1.10.6 Other guidelines  
 
-If your Extension is directed at children under the age of 13, as defined in the [Children’s Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center][MicrosoftPartnerCenter] and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
+If your Extension is directed at children under the age of 13, as defined in the [Children's Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center][MicrosoftPartnerCenter] and ensure that all ad content displayed in your Extension is appropriate for children under the age of 13.  
 
 ## 2 Content Policies  
 
@@ -330,7 +330,7 @@ If you submit a promotional video in the listing, it should follow all the conte
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"  
 [FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"  
 
-[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
-[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
+[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
+[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login "Partner Center"  

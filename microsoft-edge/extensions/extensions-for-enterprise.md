@@ -4,7 +4,7 @@ description: Find out about the enterprise specific aspects of Microsoft Edge Ex
 title: Extensions for enterprise
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -22,7 +22,7 @@ The following items are suggested to develop, package, and deploy a Microsoft Ed
 
 + Windows Developer Portal account, to sign and release the extension to the enterprise private store. See [Opening a developer account](/windows/uwp/publish/opening-a-developer-account) for more details.
 + Microsoft Store for Business or Education, to distribute the application to the enterprise. See the [Microsoft Store for Business and Education documentation](/microsoft-store/) for more details.
-+ Identify which versions of Windows 10 will be running the Microsoft Edge extension. See [Windows 10 release information](https://www.microsoft.com/en-us/itpro/windows-10/release-information) for a listing of existing Windows 10 releases.
++ Identify which versions of Windows 10 will be running the Microsoft Edge extension. See [Windows 10 release information](https://www.microsoft.com/itpro/windows-10/release-information) for a listing of existing Windows 10 releases.
 
 > [!NOTE]
 > Sideloading can be considered an alternative to using the Windows Developer Portal to sign the release the extension. See the behaviour of sideloading extensions below for more details.

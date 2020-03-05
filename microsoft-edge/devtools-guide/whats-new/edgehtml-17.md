@@ -3,7 +3,7 @@ description: Features added to the Microsoft Edge DevTools in the Windows 10 Apr
 title: DevTools in EdgeHTML 17
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 17
@@ -22,7 +22,7 @@ Here are the latest Microsoft Edge DevTools features that shipped in the [Window
 
 ![Microsoft Edge DevTools app](../../devtools-protocol/media/microsoft-edge-devtools.png) 
 
-The [**Microsoft Edge DevTools**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available for preview as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../../webview.md), and [Windows-installed PWAs](../../progressive-web-apps-edgehtml/windows-features.md)).
+The [**Microsoft Edge DevTools**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) are now available for preview as a standalone Windows 10 app from the Microsoft Store. With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances. Also exclusive to the DevTools app is the ability to debug web content in apps (such as add-ins for Office, Cortana, EdgeHTML [webview](../../webview.md), and [Windows-installed PWAs](../../progressive-web-apps-edgehtml/windows-features.md)).
 
 The Edge DevTools are also still available (`F12`) from within the browser (without the chooser panel).
 
@@ -41,7 +41,7 @@ Developer tools can use the [**Microsoft Edge DevTools Protocol**](../../devtool
 
  Tooling clients can call these methods and monitor these events through JSON web socket messages exchanged with the *DevTools Server* hosted by Microsoft Edge or the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal). 
  
- Microsoft Edge DevTools uses this protocol to enable [remote debugging](../../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store. Currently this preview support is limited to JS debugging of another Edge on another desktop device or VM. Over time, we’ll add support for the full set of DevTools against any EdgeHTML instance on any Windows 10 device.  
+ Microsoft Edge DevTools uses this protocol to enable [remote debugging](../../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) of a host machine running Microsoft Edge from the [standalone DevTools client](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj) available from the Microsoft Store. Currently this preview support is limited to JS debugging of another Edge on another desktop device or VM. Over time, we'll add support for the full set of DevTools against any EdgeHTML instance on any Windows 10 device.  
  
  The latest [**Visual Studio Preview**](https://www.visualstudio.com/vs/preview/) builds (Visual Studio 15.7 Preview 1 or later) use the DevTools Protocol to enable launching and debugging Microsoft Edge (JavaScript code) from within the Visual Studio IDE of any ASP.NET or .NET Core project.
 

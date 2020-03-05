@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2019
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -815,7 +815,7 @@ Add the provided JavaScript to a list of scripts that should be executed after t
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
-Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
+Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
 
 ```cpp
 // Prompt the user for some script and register it to execute whenever a new page loads.
@@ -1446,4 +1446,3 @@ WEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            |
 WEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | 
 WEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | 
 WEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Other resources.
-

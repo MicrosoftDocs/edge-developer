@@ -3,7 +3,7 @@ description: Make your extension accessible for different languages and test you
 title: Extensions - Internationalization
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -15,7 +15,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 In order to make your extension accessible to a variety of different people, it is important to develop with other countries in mind. Microsoft Edge extensions allows you to add different language strings to your extensions so that their language can easily be changed.
 
-For more information on internationalizing your extension, check out MDN's [Internationalization guide](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Internationalization).
+For more information on internationalizing your extension, check out MDN's [Internationalization guide](https://developer.mozilla.org/Add-ons/WebExtensions/Internationalization).
 
 
 ## Testing languages
@@ -34,7 +34,7 @@ Follow the steps below to change the Windows display language:
 6. Select the "Set as default" button (you may need to restart your PC).
 7. Open Microsoft Edge and verify that the strings defined for the locale appear as expected.
 
-By using the [NavigatorLanguage.language](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorLanguage/language) property, you can verify that the language Microsoft Edge has determined to be the Windows display language is correct.
+By using the [NavigatorLanguage.language](https://developer.mozilla.org/docs/Web/API/NavigatorLanguage/language) property, you can verify that the language Microsoft Edge has determined to be the Windows display language is correct.
 
 Click the button in the CodePen below to see the display language of your browser.
 
