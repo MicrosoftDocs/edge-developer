@@ -4,7 +4,7 @@ description: Learn about how to package up your Microsoft Edge extension manuall
 title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, packaging
@@ -105,7 +105,7 @@ Once you've [reserved the name of your extension](./extensions-in-the-windows-de
 
 You can access your App identity page using the following steps:
 
-1. Navigate to [Windows Dev Center](https://developer.microsoft.com/en-us/windows/).
+1. Navigate to [Windows Dev Center](https://developer.microsoft.com/windows/).
 2. Sign in to your developer account.
 3. Navigate to the Dashboard.
 4. Select the name of your extension.
@@ -234,7 +234,7 @@ See [How to create an app package signing certificate](https://msdn.microsoft.co
 > [!NOTE]
 > You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!
 
-After you’ve signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
+After you've signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
 
 To install certificates with WindowsCertutil.exe, run Cmd.exe as administrator
 and run the following command:

@@ -3,7 +3,7 @@ description: Learn how to sign up for a Windows Developer account and reserve a 
 title: Extensions in Partner Center
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -14,7 +14,7 @@ ms.custom: seodec18
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
-[Partner Center](https://partner.microsoft.com/dashboard) lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/en-us/store/register), and refer to the [opening a developer account documentation](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for any questions you may have about the sign up process.
+[Partner Center](https://partner.microsoft.com/dashboard) lets you publish and manage all of your apps for Windows devices. You can sign up for a developer account [here](https://developer.microsoft.com/store/register), and refer to the [opening a developer account documentation](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account) for any questions you may have about the sign up process.
 > [!NOTE]
 > You will need a [Microsoft account](https://login.live.com/) to sign up for a developer account.
 
@@ -32,7 +32,7 @@ Each user/group/or Azure AD application is assigned a role that gives them a spe
 ### Name reservation
 
 Reserving a name is the first step towards getting your extension in the Microsoft Store.
-It's recommended that you [reserve the name of your extension](/windows/uwp/publish/create-your-app-by-reserving-a-name) as soon as possible through Partner Center before it gets taken by someone else. You can do this even if you haven’t started building your extension yet.
+It's recommended that you [reserve the name of your extension](/windows/uwp/publish/create-your-app-by-reserving-a-name) as soon as possible through Partner Center before it gets taken by someone else. You can do this even if you haven't started building your extension yet.
 
 > [!NOTE]
 > The name chosen here has to match the name that is specified in the JSON manifest for the extension. 

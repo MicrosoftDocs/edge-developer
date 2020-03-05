@@ -3,7 +3,7 @@ description: Host web content in your Windows 10 app with the WebView (EdgeHTML)
 title: Microsoft Edge WebView for Windows 10 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -37,7 +37,7 @@ if (MSHTMLWebViewElement) {
 
 ### WebView versus iframe
 
-Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
+Like a standard HTML [iframe](https://developer.mozilla.org/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
 
  - Load pages and resources from your [ApplicationData](/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](/microsoft-edge/hosting/webview#buildlocalstreamuri) (*ms-local-stream:///*)
 
@@ -119,7 +119,7 @@ webview.removeEventListener("departingFocus", handler);
 
 ### MSWebViewContainsFullScreenElementChanged
 
-Occurs when the status changes of whether or not the **webview** currently contains a full screen element. Use the containsFullScreenElement property to the current value. Full screen element here refers to the [Fullscreen DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) notion of a full screen element via the element.requestFullScreen and document.exitFullScreen DOM functions.
+Occurs when the status changes of whether or not the **webview** currently contains a full screen element. Use the containsFullScreenElement property to the current value. Full screen element here refers to the [Fullscreen DOM APIs](https://developer.mozilla.org/docs/Web/API/Fullscreen_API) notion of a full screen element via the element.requestFullScreen and document.exitFullScreen DOM functions.
 
 ```js
 function containsFullScreenElementChangedHandler(eventInfo) {

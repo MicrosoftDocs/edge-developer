@@ -28,7 +28,7 @@ If you are unfamiliar with using Git, try the [Lynda.com Git Essentials training
 
 ## Authoring your contribution
 
-Once you have forked and cloned the repo to your local machine, you can begin authoring with the text editor of your choice.  We, of course, recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft. If you are unfamiliar with markdown authoring, see [How to use Markdown](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown) in the OPS Guide. 
+Once you have forked and cloned the repo to your local machine, you can begin authoring with the text editor of your choice.  We, of course, recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft. If you are unfamiliar with markdown authoring, see [How to use Markdown](https://review.docs.microsoft.com/help/contribute/contribute-how-to-write-use-markdown) in the OPS Guide. 
 
 ## Submitting your contribution and filing a Pull Request (PR)
 
@@ -45,13 +45,13 @@ When you are happy with your changes and ready to submit a PR:
 
 After pushing your contribution to the remote repo, you will be sent an email from *Open Publishing Build Service* informing whether your contribution built successfully and linking to any error warnings such as broken links, click the links to see your content staged on the site.
 
-Once you have reviewed your contribution on the [Microsoft Edge Docs staging site](https://review.docs.microsoft.com/en-us/microsoft-edge/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
+Once you have reviewed your contribution on the [Microsoft Edge Docs staging site](https://review.docs.microsoft.com/microsoft-edge/) and are confident that you would like your changes to be published live, you must file a Pull Request (PR).
 
-Once your PR is submitted, a member of the Microsoft Edge docs team will review. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge). These updates will eventually be published live to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge).
+Once your PR is submitted, a member of the Microsoft Edge docs team will review. When it is accepted, you will be able to view your changes on the [staging site](https://review.docs.microsoft.com/microsoft-edge). These updates will eventually be published live to [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge).
 
 ## Working with Branches
 
-The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/en-us/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/microsoft-edge). 
+The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/microsoft-edge). 
 
 When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 
@@ -67,5 +67,5 @@ Be sure to include the topic title and the URL for the page.
 - [Getting started with writing and formatting on GitHub](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 
 ## Additional resources for Microsoft employees
-- [Connect your GitHub account and MS alias](https://review.docs.microsoft.com/en-us/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
-- [Resources for writing Markdown](https://review.docs.microsoft.com/en-us/windows-authoring-guide/writing-guidance/writing-markdown)
+- [Connect your GitHub account and MS alias](https://review.docs.microsoft.com/windows-authoring-guide/github-account#2-connect-your-github-account-and-ms-alias-on-the-microsoft-open-source-portal)
+- [Resources for writing Markdown](https://review.docs.microsoft.com/windows-authoring-guide/writing-guidance/writing-markdown)

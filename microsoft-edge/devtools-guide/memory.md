@@ -3,7 +3,7 @@ description: Use the Memory panel to
 title: DevTools - Memory
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, memory, heap, GC, garbage collection, retained size, dominators
@@ -46,7 +46,7 @@ When you start the memory profiler, you will see a process memory graph that all
 
 ### Performance.mark()
 
-You can add custom **User marks** to the timeline to help identify  key events during the course of your analysis session by calling the [`Performance.mark()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md).
+You can add custom **User marks** to the timeline to help identify  key events during the course of your analysis session by calling the [`Performance.mark()`](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md).
 
 ### Console.takeheapSnapshot()
 
@@ -104,7 +104,7 @@ You can further adjust data in the table with the following:
 
 1. **Identifier filter**: Filter out data by searching for a particular object identifier
 2. **Group by dominator**: Only objects with *exclusive* references to other objects are shown in the top-level view of objects (this is the default view in the *Dominators* tab).
-3. **Built-ins / IDs filter**: By default, [JavaScript built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) are included in the list. Listing object IDs can be useful if there are multiple anonymous objects which need to be differentiated.
+3. **Built-ins / IDs filter**: By default, [JavaScript built-in objects](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects) are included in the list. Listing object IDs can be useful if there are multiple anonymous objects which need to be differentiated.
 
 The *Types, Roots* and *Dominators* views each has its own filter, so the filter isn't preserved when you switch to another view.
 
