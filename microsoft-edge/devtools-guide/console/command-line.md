@@ -3,7 +3,7 @@ description: Use the Console command line to interact with a running page
 title: DevTools - Console - Command Line
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console command line
@@ -28,14 +28,14 @@ The Console has a **Target** execution context drop-down just above the Console 
 These console selectors provide simple shorthands for quickly accessing objects within the DOM:
 
 ### $(*CSS selector string*)
-Returns the first element within the document matching the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)  (or comma-separated group of selectors) string. Shorthand for [document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
+Returns the first element within the document matching the specified [CSS selector](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Selectors)  (or comma-separated group of selectors) string. Shorthand for [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector).
 
 Example: Open the console and type `$('#main')` to return the div object with `id='main'` on this page.
 
 ![Example use of '$' selector](../media/console_cmd_$.png)
 
 ### $$(*CSS selector string*)
-Returns an array of elements within the document matching the specified [CSS selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)  (or comma-separated group of selectors) string. Shorthand for [document.querySelectorAll()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll).
+Returns an array of elements within the document matching the specified [CSS selector](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Selectors)  (or comma-separated group of selectors) string. Shorthand for [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll).
 
 Example: Open the console and type `$$('.container')` to return all the div objects with `class='container'` on this page.
 
@@ -49,7 +49,7 @@ Example: Open  DevTools to the **Elements** tab, press `CTRL + B` to activate th
 ![Example use of '$0' selector](../media/console_cmd_$0.png)
 
 ### $x(*XPath expression*)
-Returns an array of elements matched by the specified [XPath](https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript) expression. 
+Returns an array of elements matched by the specified [XPath](https://developer.mozilla.org/docs/Introduction_to_using_XPath_in_JavaScript) expression. 
 
 Example: Open the console and type `$x('//script[@defer]')` to return all the `<script>` elements on this page that contain a `defer` attribute.
 
@@ -90,7 +90,3 @@ Returns an object containing a key for each registered event type on the given o
 Example: Open the console and type `getEventListeners(document)` to see all the event listeners registered on the document object of this page.
 
 ![Example use of 'getEventListeners' method](../media/console_cmd_getEventListeners.png)
-
-
-
-

@@ -3,7 +3,7 @@ description: Reach the world of Windows 10 customers by distributing your PWA th
 title: Progressive Web Apps in the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store, Bing PWA index
@@ -90,7 +90,7 @@ For more on the all the features and services available to Microsoft Store app d
 
 ## Automatic PWA importing with Bing
 
-Just as your PWA's [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a signal to supporting platforms that your app is offline-capable and ready to be presented as a fully integrated app experience, it's also a hint to the Bing web crawler that your PWA should be considered for automatic inclusion in the Microsoft Store. 
+Just as your PWA's [web app manifest](https://developer.mozilla.org/docs/Web/Manifest) is a signal to supporting platforms that your app is offline-capable and ready to be presented as a fully integrated app experience, it's also a hint to the Bing web crawler that your PWA should be considered for automatic inclusion in the Microsoft Store. 
 
 If your PWA meets the requirements below, the Bing indexing service will automatically package your PWA in the [*.appx*](#submitting-your-pwa-manually) format required for installation on Windows 10 and assemble your app's store product page based on the metadata in its web app manifest. After claiming your PWA, you'll be able to further customize your store page and gain access to user analytics and other app management tools through the Windows Dev Center dashboard.
 
@@ -112,7 +112,7 @@ To be automatically packaged and listed for the Microsoft Store, your PWA will n
 
 - [X] To not violate any laws or [Microsoft Store policies](/legal/windows/agreements/store-policies).
 
-We won’t ingest every app that meets these criteria, but will be including them in our considerations for candidates as we gradually expand our program.
+We won't ingest every app that meets these criteria, but will be including them in our considerations for candidates as we gradually expand our program.
 
 ### Opting out of automatic Microsoft Store import
 

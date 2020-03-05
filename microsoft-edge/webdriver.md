@@ -4,7 +4,7 @@ description: Learn how to get started with WebDriver, a wire protocol that allow
 title: WebDriver (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/14/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -22,11 +22,11 @@ The Microsoft Edge (EdgeHTML) implementation of WebDriver supports both the W3C 
 
 ## Getting started with WebDriver for Microsoft Edge (EdgeHTML)
 * Install Windows 10.
-* Download the appropriate [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) server for your build of Windows and Microsoft Edge (EdgeHTML).
+* Download the appropriate [Microsoft WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/) server for your build of Windows and Microsoft Edge (EdgeHTML).
 * Download the WebDriver language binding of your choice. [All Selenium language bindings support Microsoft Edge (EdgeHTML)](https://docs.seleniumhq.org/download/).
 
 > [!NOTE]
-> You can find help, report issues, and file feature requests at [Microsoft Edge (EdgeHTML) Feedback & Support](https://developer.microsoft.com/en-us/microsoft-edge/support/).
+> You can find help, report issues, and file feature requests at [Microsoft Edge (EdgeHTML) Feedback & Support](https://developer.microsoft.com/microsoft-edge/support/).
 
 
 ## Using WebDriver
@@ -238,4 +238,4 @@ The support on a per command basis for the [JSON Wire Protocol](https://github.c
 | GET         | [/session/:sessionId/session_storage/size](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagesize)                 | Supported          | 10586             |
 | GET         | [/session/:sessionId/log](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlog)                                                  | Not&nbsp;Supported | N/A               |
 | GET         | [/session/:sessionId/log/types](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlogtypes)                                       | Not&nbsp;Supported | N/A               |
-| GET         | [/session/:sessionId/application_cache/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidapplication_cachestatus)         | Supported          | 10586             |
+| GET         | [/session/:sessionId/application_cache/status](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidapplication_cachestatus)         | Supported          | 10586             |  

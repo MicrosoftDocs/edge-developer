@@ -3,7 +3,7 @@ description: Use the Debugger to step through and troubleshoot your code.
 title: DevTools - Debugger
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
@@ -65,8 +65,8 @@ Click the **Compare document to original** button to view the diff of what you c
 Please be aware of the following constraints:
 
 - Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
-- Edits are saved in memory and flushed when the document is reloaded, thus you won’t be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there’s no way (such as a **Save As** option) to save your edits to disk from the DevTools
+- Edits are saved in memory and flushed when the document is reloaded, thus you won't be able to run edits inside a `DOMContentLoaded` handler, for example
+- Currently there's no way (such as a **Save As** option) to save your edits to disk from the DevTools
 
 ### 2.Code formatting
 
@@ -123,7 +123,7 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
  The debugger will step to the next statement if it is not at a function when these commands are used.
 
 ### 3. Break on new worker (`Ctrl+Shift+W`)
- Breaks on the creation of a new [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+ Breaks on the creation of a new [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).
 
 ### 4. Exception control
 **Change exception behavior** (`Ctrl+Shift+E`) opens options to change how the debugger reacts to exceptions. By default exceptions are ignored by the debugger and logged to the [**Console**](./console.md). You can choose to *Break on all exceptions*, or just those not being handled by `try...catch` statements in your code (*Break on unhandled exceptions*).
@@ -251,4 +251,3 @@ Delete watch | `Ctrl` + `D`
 |:-----------------------------------|:-------------------------|
 | Show/Hide frames from library code | `Ctrl` + `Shift` + `J`   |
 | Enable all breakpoints             | `Ctrl` + `Shift` + `F11` |
-

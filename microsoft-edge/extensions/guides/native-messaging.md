@@ -3,7 +3,7 @@ description: Learn about how you can use native messaging to have your extension
 title: Extensions - Native messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
@@ -20,7 +20,7 @@ With the Windows 10 Creators Update, Microsoft Edge extensions are able to use n
 > [!NOTE]
 > The method outlined below (connecting to a UWP app via AppService) is the only supported mechanism for enabling communication between Microsoft Edge extensions and native components. Please see the [Adding a Desktop Bridge component](#adding-a-desktop-bridge-component) section of this guide for more information on how to enable communication with legacy Win32 components. 
 
- Microsoft Edge’s native messaging architecture leverages the existing [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API as the underlying inter-process communication (IPC) infrastructure. UWP apps use the `AppService` API to communicate with one another. Because of this, Microsoft Edge extensions can now communicate with UWP apps.
+ Microsoft Edge's native messaging architecture leverages the existing [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API as the underlying inter-process communication (IPC) infrastructure. UWP apps use the `AppService` API to communicate with one another. Because of this, Microsoft Edge extensions can now communicate with UWP apps.
 
 ![native messaging architecture](./../media/native-messaging-architecture.png)
 
@@ -63,7 +63,7 @@ This section details the differences between how Chrome and Microsoft Edge handl
 In order for your app to be recognized by your extension as a native messaging host, it will need to be registered.
 
 
-For [Chrome native messaging ](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
+For [Chrome native messaging](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
 
 The following JSON is an example of how the config file can be set up:
 ```json
@@ -90,7 +90,7 @@ To install this file, the app would need to:
 
 
 
-For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx)(native messaging host) you'll need to include the UWP companion app in the same package as your extension and specify the [AppService extension](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) in your project’s `Package.appxmanifest` file. The `EntryPoint` and `Name` attributes can be configured by you:
+For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx)(native messaging host) you'll need to include the UWP companion app in the same package as your extension and specify the [AppService extension](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) in your project's `Package.appxmanifest` file. The `EntryPoint` and `Name` attributes can be configured by you:
 ```xml
 ...
 <Applications>    
@@ -142,7 +142,7 @@ chrome.runtime.sendNativeMessage(string application, object message, function re
 The first parameter is the name of the native host, which Chrome looks up in the registry for the manifest. The manifest specifies the .exe that Chrome will launch in a sandbox, and the message is sent using std i/o. 
 Extensions can also establish a persistent channel using the `runtime.connectNative` API, which takes the name of the native host as the only parameter. 
 
-Microsoft Edge uses the same construct as Chrome’s native messaging API to allow Microsoft Edge extensions to specify which app service to connect to. The first parameter in `runtime.sendNativeMessage` specifies the app service name. In the [Registration and host manifest](#registration-and-host-manifest) section, this is `"com.microsoft.inventory"`. The Microsoft Edge extension platform restricts the native messaging host to being a UWP app that is packaged in the same AppX as the extension. This mitigates any security risks associated with malicious attacks that try to connect Microsoft Edge with another Package Family Name by tampering with manifest entries. 
+Microsoft Edge uses the same construct as Chrome's native messaging API to allow Microsoft Edge extensions to specify which app service to connect to. The first parameter in `runtime.sendNativeMessage` specifies the app service name. In the [Registration and host manifest](#registration-and-host-manifest) section, this is `"com.microsoft.inventory"`. The Microsoft Edge extension platform restricts the native messaging host to being a UWP app that is packaged in the same AppX as the extension. This mitigates any security risks associated with malicious attacks that try to connect Microsoft Edge with another Package Family Name by tampering with manifest entries. 
 
 This means that Microsoft Edge will use the same Package Family Name as the extension, in addition to the `AppService` name specified in the API, to uniquely identify the provider of the app service.  
 
@@ -160,7 +160,7 @@ Communication protocol for native messaging determines how messages are formatte
 Chrome starts each native messaging host in a separate process and communicates with it using standard input and standard output. The same format is used to send messages in both directions: each message is serialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order.
 
 
-For Microsoft Edge, the background task/main app that implements the app service will be started by the platform. On startup, the background task’s `Run` method will be invoked:  
+For Microsoft Edge, the background task/main app that implements the app service will be started by the platform. On startup, the background task's `Run` method will be invoked:  
 
 ```csharp
 public void Run(IBackgroundTaskInstance taskInstance)    
@@ -232,7 +232,7 @@ this.inventoryService.OpenAsync();
 
 #### Non-persistent
 
-When a message is sent using [`runtime.sendNativeMessage`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/runtime/sendNativeMessage) in Chrome, without creating a messaging port, Chrome starts a new native messaging host process for each message. The first message generated by the host process is handled as a response to the original request, and all other messages after it are ignored.
+When a message is sent using [`runtime.sendNativeMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendNativeMessage) in Chrome, without creating a messaging port, Chrome starts a new native messaging host process for each message. The first message generated by the host process is handled as a response to the original request, and all other messages after it are ignored.
 
 Microsoft Edge will terminate the connection after every messages' response has been received. The following snippet shows a non-persistent connection that is established with `AppServiceConnection` that will then be terminated within the UWP app after a request has been received and stored as an [`AppServiceResponse`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceresponse).
 
@@ -369,7 +369,7 @@ Once the solution is correctly deployed, you should see your extension in Micros
 ## Packaging
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we'll consider you for a future update.
 
 
 You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:
@@ -385,7 +385,7 @@ Once the solution is deployed, the extension will be installed in Microsoft Edge
 
 
 ### Debugging the UWP app
-The UWP app will launch when the extension tries to connect to it using [native messaging APIs](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative). You’ll need to debug the UWP app only once the process starts. This can be configured via the project’s Property page:
+The UWP app will launch when the extension tries to connect to it using [native messaging APIs](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/connectNative). You'll need to debug the UWP app only once the process starts. This can be configured via the project's Property page:
 
 1.  In Visual Studio, right click your UWP app project
 2.  Select Properties
@@ -398,6 +398,3 @@ In Visual Studio you can now set breakpoints in the code where you want to debug
 
 ### Debugging the Desktop Bridge
 Even though there are various [methods for debugging a Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-debug) (converted Win32 app), the only one applicable for this scenarios is the PLMDebug option. You could also add debugging code to the startup function to perform a wait for a specific time, allowing you to attach Visual Studio to the process.
-
-
-
