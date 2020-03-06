@@ -72,11 +72,11 @@ Please be aware of the following constraints:
 
 Use these controls to format minified code for better readability as you debug:
 
- #### Pretty print (`Ctrl+Shift+P`) 
- Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
+#### Pretty print (`Ctrl+Shift+P`) 
+Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
 
- #### Word wrap (`Alt+W`)
- Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
+#### Word wrap (`Alt+W`)
+Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
 
 ### 3. Code scoping
 

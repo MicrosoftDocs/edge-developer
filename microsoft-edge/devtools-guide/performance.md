@@ -21,7 +21,7 @@ The **Performance** panel offers tools for profiling and analyzing the responsiv
 
 ![DevTools Performance panel](./media/performance.png)
 
- ## Recording a profile
+## Recording a profile
 
 The first step to analyzing the performance of your page is to capture a profile as you perform a particular user scenario, such as the repro steps of a performance bug you're trying to fix, or a typical use case you want to optimize for a better user experience. 
 
