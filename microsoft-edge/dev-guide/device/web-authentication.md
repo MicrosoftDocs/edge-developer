@@ -4,7 +4,7 @@ description: Learn how the Web Authentication API can be used to enable web appl
 title: Dev guide - Web authentication
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -12,7 +12,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Web authentication and Windows Hello
 
-The Web Authentication (formerly *FIDO 2.0* ) API in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge (*ms-* prefixed) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future. **This topic will show you how to try out Windows Hello authentication with Microsoft Edge while also future-proofing your code against browser updates.**
+The Web Authentication (formerly *FIDO 2.0* ) API in Microsoft Edge enables web applications to use [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and keylogging attacks. The current Microsoft Edge (*ms-* prefixed) implementation is based on an earlier draft of the Web Authentication specification and is likely to change in the future. **This topic will show you how to try out Windows Hello authentication with Microsoft Edge while also future-proofing your code against browser updates.**
 
 The Web Authentication API is an emerging standard put forth by the [FIDO Alliance](https://fidoalliance.org/) with the aim of providing an interoperable way of doing web authentication using Windows Hello and other biometric devices across browsers. The Web Authentication specification defines two authentication scenarios: password-less and two factor. In the password-less case, the user does not need to log into the web page using a user name or password – they can login solely using Windows Hello. In the two factor case, the user logs in normally using a username and password, but Windows Hello is used as a second factor check to make the overall authentication stronger.
 
@@ -260,4 +260,4 @@ dictionary WebAuthnExtensions { // Not supported
 
 ## Specification
 
-[Web Authentication: A Web API for accessing scoped credentials 1](http://w3c.github.io/webauthn/)
+[Web Authentication: A Web API for accessing scoped credentials 1](http://w3c.github.io/webauthn/)  

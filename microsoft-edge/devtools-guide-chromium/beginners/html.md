@@ -2,18 +2,18 @@
 title: DevTools for Beginners
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
 ---
-<!-- Copyright 06/04/2019 Katherine Jackson 
+<!-- Copyright Katherine Jackson 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -59,7 +59,7 @@ You'll also have a real website! You can use this site to host your resume or bl
 Before attempting this tutorial, complete the following prerequisites:
 
 * If you're unfamiliar with HTML, read [Getting Started with
-  HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
+  HTML](https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
 * Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser. This tutorial uses a set 
   of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
@@ -301,10 +301,7 @@ try DevTools.
        </figcaption>
      </figure>
 
-3. Press `Command` + `Enter` (macOS) or `Control` + `Enter`
-   (Windows) to save your changes, or click outside of the box.
-   Your changes automatically show up in the live view of your page. The text `Your site!`
-   has been replaced with the new content.
+3. Press `Control` + `Enter` \(Windows\) or `Command` + `Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
 
      <figure>
        <img src="imgs/edit3.msft.png"
@@ -451,7 +448,14 @@ source code.
   more hands-on web development experience.
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms 
-  described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). The original page can be found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors/katjackson) (Technical Writer Intern, Chrome DevTools).
-  
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and is authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
+[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KatherineJackson]: https://developers.google.com/web/resources/contributors/katjackson  

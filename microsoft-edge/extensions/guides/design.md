@@ -3,7 +3,7 @@ description: Learn about the various design aspects and UI behavior to consider 
 title: Extensions - Design
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, javascript, design, icons, developer
@@ -28,22 +28,22 @@ While any webkit image format is supported, PNG is recommended for transparency 
 
 For your extension, you'll need one icon size for its browser action/page action, and one icon size for the extensions pane. More than one size for each can be provided to support high resolution displays.
 
-An extension can either have a browser action or page action icon. The browser action and page action icons can be changed at runtime using [`browserAction.setIcon`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction/setIcon) or [`pageAction.setIcon`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction/setIcon).
+An extension can either have a browser action or page action icon. The browser action and page action icons can be changed at runtime using [`browserAction.setIcon`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/setIcon) or [`pageAction.setIcon`](https://developer.mozilla.org/Add-ons/WebExtensions/API/pageAction/setIcon).
 
 
 **Browser action**
 
 The preferred sizes for browser action and page action icons are 20px, 25px, 30px, 40px. Other supported sizes include 19px, 35px, 38px.
 
-The following [JSON manifest](./../API-support/supported-manifest-keys.md) snippet shows a standard and high definition browser action icon being specified using the [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action) field. The same syntax applies for [`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action):
+The following [JSON manifest](./../API-support/supported-manifest-keys.md) snippet shows a standard and high definition browser action icon being specified using the [`"browser_action"`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action) field. The same syntax applies for [`"page_action"`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action):
 ```json
 "browser_action": {
-	"default_icon": {
-		"20": "images/icon_20.png",
-		"40": "images/icon_40.png"
-	},
-	"default_title": "Fetch page info",
-	"default_popup": "popup.html"
+    "default_icon": {
+        "20": "images/icon_20.png",
+        "40": "images/icon_40.png"
+    },
+    "default_title": "Fetch page info",
+    "default_popup": "popup.html"
 }
 ```
 
@@ -55,9 +55,9 @@ If the browser action has been set by the extension, it will appear either in th
 
 **Page action**
 
-[`"page_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) has the same JSON manifest syntax as [`"browser_action"`](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action). Page action also has the same icon size requirements as browser action.
+[`"page_action"`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action) has the same JSON manifest syntax as [`"browser_action"`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action). Page action also has the same icon size requirements as browser action.
 
-If page action is specified in the [JSON manifest](./../API-support/supported-manifest-keys.md), it will appear within the address bar whenever [`pageAction.show`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/pageAction/show) is called.
+If page action is specified in the [JSON manifest](./../API-support/supported-manifest-keys.md), it will appear within the address bar whenever [`pageAction.show`](https://developer.mozilla.org/Add-ons/WebExtensions/API/pageAction/show) is called.
 
 ![page action](./../media/pageaction.png)
 
@@ -76,9 +76,9 @@ You should specify the following icon sizes:
 
 ```json
 "icons": {
-	"48": "images/icon_48.png",
-	"128": "images/icon_128.png",
-	"176": "images/icon_176.png"
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png",
+    "176": "images/icon_176.png"
 },
 ```
 
@@ -110,4 +110,4 @@ For example, if the user has selected pink as their accent color, the transparen
 
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](http://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we'll consider you for a future update.
