@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML 13.
 title: What's New in EdgeHTML 13
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/30/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -17,14 +17,14 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 ## Features
 
 ### CSS
-
+''
 EdgeHTML 13 supports new CSS features, including:
 * [CSS Mutability Pseudo-classes](https://developer.microsoft.com/microsoft-edge/platform/status/cssmutabilitypseudoclasses/)
 * [CSS Range Pseudo-classes](https://developer.microsoft.com/microsoft-edge/platform/status/cssrangepseudoclasses/)
 * CSS [initial](https://developer.microsoft.com/microsoft-edge/platform/status/cssinitialvalue/) and [unset](https://developer.microsoft.com/microsoft-edge/platform/status/cssunsetvalue/) keywords
 
 ### Encrypted Media Extensions
-Microsoft Edge now supports the new unprefixed [Encrypted Media Extensions](http://www.w3.org/TR/encrypted-media/) APIs. Encrypted Media Extensions (EME) extends the video and audio elements to enable Digital Rights Management (DRM) protected content without using plug-ins. Read more about EME: [Encrypted Media Extensions](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/encrypted-media-extensions).
+Microsoft Edge now supports the new unprefixed [Encrypted Media Extensions](https://w3.org/TR/encrypted-media/) APIs. Encrypted Media Extensions (EME) extends the video and audio elements to enable Digital Rights Management (DRM) protected content without using plug-ins. Read more about EME: [Encrypted Media Extensions](https://docs.microsoft.com/microsoft-edge/dev-guide/multimedia/encrypted-media-extensions).
 
 ### Graphics
 
@@ -39,14 +39,14 @@ EdgeHTML 13 includes [major improvements and new feature support in Chakra](http
 
 #### New features (on by default)
 
-* [asm.js](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/asmjs/?q=asm.js) enabled by default ([blog post](http://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [demo](https://dev.windows.com/en-us/microsoft-edge/testdrive/demos/chess/))
-* [Classes](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/asmjs/?q=classes) (ES2015)
+* [asm.js](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=asm.js) enabled by default ([blog post](https://blogs.windows.com/msedgedev/2015/11/10/supercharging-javascript-performance-with-asm-js/), [demo](https://dev.windows.com/microsoft-edge/testdrive/demos/chess/))
+* [Classes](https://developer.microsoft.com/microsoft-edge/platform/status/asmjs/?q=classes) (ES2015)
 
 #### Experimental JavaScript features (enabled with *about:flags*)
 
-* [Async functions](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)
-* [Exponentiation operator](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) (ES2016)
-* [Destructuring](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) (ES2015)
+* [Async functions](https://developer.microsoft.com/microsoft-edge/platform/status/asyncfunctions/?q=async%20functions) (ES2016)
+* [Exponentiation operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016/?q=exponentiation%20operator) (ES2016)
+* [Destructuring](https://developer.microsoft.com/microsoft-edge/platform/status/destructuringES2015/?q=destructuring) (ES2015)
 
 ### User Input
 The following features introduced in EdgeHTML 13 improve user input:
@@ -57,7 +57,7 @@ The following features introduced in EdgeHTML 13 improve user input:
 Microsoft Edge now supports the Pointer Lock API (previously called Mouse Lock) for access to raw mouse movement, locking the target of mouse events to a single element, eliminating limits of how far mouse movement can go in a single direction, and removing the cursor from view. 
 
 
-## New APIs in EdgeHTML 13
+## New APIs in EdgeHTML 13""""
 
 Here's the full list of new APIs in EdgeHTML 13. They are listed in the format of **[interface name].[api name]**.
-<iframe height='584' scrolling='no' title='New APIs in EdgeHTML 13' src='//codepen.io/MSEdgeDev/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/vmzxEY/'>New APIs in EdgeHTML 13</a>by MSEdgeDev (<a href='http://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>
+<iframe height='584' scrolling='no' title='New APIs in EdgeHTML 13' src='//codepen.io/MicrosoftEdgeDocumentation/embed/vmzxEY/?height=584&theme-id=23761&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/vmzxEY/'>New APIs in EdgeHTML 13</a> by Microsoft Edge Docs (<a href='http://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>""''""''""

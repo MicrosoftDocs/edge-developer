@@ -23,7 +23,7 @@ If you are checking out the next version of Microsoft Edge and you mainly develo
 
 ## New dark and light themes for the DevTools
 
-We've designed some new dark and light themes for the DevTools that we think you'll love! By default, the Microsoft Edge (Chromium) DevTools will use the Dark theme. To change the theme of the DevTools, press `F1` or navigate to Settings using the `...` button in the top right corner of the DevTools.
+We've designed some new dark and light themes for the DevTools that we think you'll love! By default, the Microsoft Edge (Chromium) DevTools will use the Dark theme. To change the theme of the DevTools, press `Fn` + `F1` on Windows or Mac or navigate to Settings using the `...` button in the top right corner of the DevTools.
 
 ![Microsoft Edge (Chromium) DevTools Main Menu](./media/devtools-main-menu.png)
 
@@ -31,7 +31,7 @@ From Settings, you can change the theme of the DevTools. If you liked the way th
 
 ## Debug Microsoft Edge (Chromium) from VS Code
 
-With the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can now debug both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium) directly from VS Code!
+With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can now debug both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium) directly from VS Code!
 
 ![Debugger for Edge VS Code extension](./media/vscode-debugger.png)
 

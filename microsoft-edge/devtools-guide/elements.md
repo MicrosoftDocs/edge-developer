@@ -3,7 +3,7 @@ description: Use the Elements panel to inspect the HTML, CSS, DOM, and accessibi
 title: DevTools - Elements
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, html, css, dom breakpoints, events, accessibility
@@ -33,7 +33,7 @@ The **Elements** panel helps you to:
 
 3. Open the **Color picker** (`Ctrl+K`) tool to see a list of the colors in use on the current page. Clicking on a color on the list will provide further details (Hue, Saturation, Lightness, Alpha). The *Color picker* also opens when you click on the colored square next to a color value in the **Styles** pane, allowing you to edit the color of a page element and immediately see the results.
 
-4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](./elements/accessibility.md) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/en-us/help/22798/windows-10-narrator-get-started) screenreader.
+4. The **Accessibility tree** (`Ctrl+Shift+A`) button will open the [Accessibility tree](./elements/accessibility.md) pane showing the structure of your page as it would appear to an assistive technology, such as the [Windows Narrator](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) screenreader.
 
 5. You can also **Find** (`Ctrl+F`) an element in the HTML tree view by searching for its tag name, attributes, or text content.
 
@@ -77,4 +77,3 @@ Once you have selected a page element of interest, you can use the tool panes to
 | Select element       | `Ctrl` + `B`           |
 | Color picker         | `Ctrl` + `K`           |
 | Accessibility tree   | `Ctrl` + `Shift` + `A` |
-

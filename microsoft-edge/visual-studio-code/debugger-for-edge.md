@@ -9,15 +9,15 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
 ---
 
-# Debugger for Edge VS Code extension
+# Debugger for Microsoft Edge VS Code extension
 
-With the [Debugger for Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug your front-end JavaScript code line by line and see `console.log()` statements all directly from [Visual Studio Code](https://code.visualstudio.com/)!
+With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug your front-end JavaScript code line by line and see `console.log()` statements all directly from [Visual Studio Code](https://code.visualstudio.com/)!
 
 ![GIF of the Debugger for Edge VS Code extension at work](./media/debugger-for-edge.gif)
 
 ## Launching Microsoft Edge
 
-Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows). If you do not have any configurations in VS Code, press `F5` or click the green **Play** button. Select "Edge" in the dropdown. You will now see a **launch.json** file with the following configuration:
+Navigate to the Debug view (`Ctrl` + `Shift` + `D` on Windows or `Command` + `Shift` + `D` on Mac) in the **Activity Bar**. If you do not have any configurations in VS Code, press `F5` on Windows or Mac or click the green **Play** button. Select "Edge" in the dropdown. You will now see a **launch.json** file with the following configuration:
 
 ```json
 {
@@ -34,7 +34,7 @@ Navigate to Debug (`Ctrl` + `Shift` + `D` on Windows). If you do not have any co
 }
 ```
 
-If you now press `F5` or click the green **Play** button again, VS Code will launch Microsoft Edge (EdgeHTML) and you will be able to debug any web project you have running on port **8080** directly from VS Code!
+If you now press `F5` on Windows or Mac or click the green **Play** button again, VS Code will launch Microsoft Edge (EdgeHTML) and you will be able to debug any web project you have running on port **8080** directly from VS Code!
 
 ### Microsoft Edge (Chromium)
 
