@@ -1,9 +1,9 @@
 ---
 title: What's new in EdgeHTML 18
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 03/05/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
