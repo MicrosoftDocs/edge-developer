@@ -3,14 +3,16 @@ description: With F12 Developer Tools, learn how to debug an extension's backgro
 title: Extensions - Debugging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2017
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, javascript, developer, debug, debugging
 ms.custom: seodec18
 ---
 
-# Debugging extensions
+# Debugging extensions  
+
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 You can debug your extensions in Microsoft Edge by using F12 Developer Tools.
 

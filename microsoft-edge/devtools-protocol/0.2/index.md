@@ -3,7 +3,7 @@ description: Release Notes for Microsoft Edge DevTools Protocol Version 0.2
 title: Microsoft Edge DevTools Protocol Version 0.2 Release Notes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2018
+ms.date: 01/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -11,9 +11,9 @@ ms.prod: microsoft-edge
 # DevTools Protocol Version 0.2 Release Notes
 
 > [!NOTE]
-> Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
+> Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) and later [Windows Insider Preview](https://insider.windows.com/getting-started/) builds.
 
-Version 0.2 of the Microsoft **Edge DevTools Protocol** provides a preview for testing EdgeHTML instrumentation and basic remote debugging in the new standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app. As such, it requires you to be running the [Windows 10 October 2018 Update](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763) or a later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) build.
+Version 0.2 of the Microsoft **Edge DevTools Protocol** provides a preview for testing EdgeHTML instrumentation and basic remote debugging in the new standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app. As such, it requires you to be running the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) or a later [Windows Insider Preview](https://insider.windows.com/getting-started/) build.
 
 The goals behind the DevTools Protocol are three-fold:
 

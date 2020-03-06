@@ -3,7 +3,7 @@ description: Provide a seamless user experience on sites requiring Adobe Flash.
 title: Dev guide - Flash
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/18/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, flash
@@ -11,7 +11,7 @@ keywords: edge, web development, flash
 
 # Flash
 
-Adobe Flash has been an integral part of the web for decades, enabling rich content and animations in browsers since before HTML5 was introduced. In modern browsers, web standards pioneered by Microsoft, Adobe, Google, Apple, Mozilla, and many others are now enabling sites to exceed those experiences without Flash and with improved performance and security. Working in partnership with other browser vendors and with Adobe, we strongly encourage developers to migrate to HTML5 standards including [Encrypted Media Extensions](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/encryptedmediaextensions), [Media Source Extensions](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/mediasourceextensions), [Canvas](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/canvas), [Web Audio](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webaudioapi), and [Real-Time Communication](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webrtcobjectrtcapi).
+Adobe Flash has been an integral part of the web for decades, enabling rich content and animations in browsers since before HTML5 was introduced. In modern browsers, web standards pioneered by Microsoft, Adobe, Google, Apple, Mozilla, and many others are now enabling sites to exceed those experiences without Flash and with improved performance and security. Working in partnership with other browser vendors and with Adobe, we strongly encourage developers to migrate to HTML5 standards including [Encrypted Media Extensions](https://developer.microsoft.com/microsoft-edge/platform/status/encryptedmediaextensions), [Media Source Extensions](https://developer.microsoft.com/microsoft-edge/platform/status/mediasourceextensions), [Canvas](https://developer.microsoft.com/microsoft-edge/platform/status/canvas), [Web Audio](https://developer.microsoft.com/microsoft-edge/platform/status/webaudioapi), and [Real-Time Communication](https://developer.microsoft.com/microsoft-edge/platform/status/webrtcobjectrtcapi).
 
 With the Oct 2018 release of Windows 10 Microsoft Edge is continuing the Flash Deprecation effort that we [covered](https://blogs.windows.com/msedgedev/2017/07/25/flash-on-windows-timeline/#9mCF959eQEK0poo5.97) as part of [Adobe's end of support announcement](https://theblog.adobe.com/adobe-flash-update/) after 2021. In the Oct 2018 release users will be required to explicitly allow Flash to run on a site for the lifetime of the tab. The persistent Always Allow option will no longer be available and a user will not be able to manage per site Flash permission that span tab sessions.
 
