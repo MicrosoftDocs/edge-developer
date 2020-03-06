@@ -3,7 +3,7 @@ description: Use the Debugger to step through and troubleshoot your code.
 title: DevTools - Debugger
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
@@ -16,7 +16,7 @@ Use the **Debugger** to step through code, set watches and breakpoints, live edi
 
 - [Browsing](#resource-picker) and [searching](#file-search) code from your loaded source files
 - [Controlling the execution flow](#toolbar) as you step through your code
-- [Managing page storage resources](#cache-managers), including the [service workers and cache](./debugger/progressive-web-apps.md), [cookies](./debugger/cookies.md) and [web storage](./debugger/web-storage.md)
+- [Managing page storage resources](./storage.md#cache-manager), including the [service workers and cache](./service-workers.md), [cookies](./storage.md#cookies-list) and [web storage](./storage.md#local-and-session-storage-managers)  
 - [Setting breakpoints and live editing](#debug-window) your code as it runs
 - [Tracking and editing local variables](#watches) as you debug
 - [Hiding or showing asynchronous code and library code](#call-stack) from your callstack as needed
@@ -65,18 +65,18 @@ Click the **Compare document to original** button to view the diff of what you c
 Please be aware of the following constraints:
 
 - Script editing only works in external *.js* files (and not embedded `<script>` within *.html*)
-- Edits are saved in memory and flushed when the document is reloaded, thus you won’t be able to run edits inside a `DOMContentLoaded` handler, for example
-- Currently there’s no way (such as a **Save As** option) to save your edits to disk from the DevTools
+- Edits are saved in memory and flushed when the document is reloaded, thus you won't be able to run edits inside a `DOMContentLoaded` handler, for example
+- Currently there's no way (such as a **Save As** option) to save your edits to disk from the DevTools
 
 ### 2.Code formatting
 
 Use these controls to format minified code for better readability as you debug:
 
- #### Pretty print (`Ctrl+Shift+P`) 
- Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
+#### Pretty print (`Ctrl+Shift+P`) 
+Adds line breaks and curly brace alignment per JavaScript conventions. Even compressed code that's been made more readable with this option may have function, selector, and variable names that are much different than in your original source code. In these cases, the [*Toggle source maps*](#source-maps) option might be available.
 
- #### Word wrap (`Alt+W`)
- Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
+#### Word wrap (`Alt+W`)
+Adjusts code to fit within the current margins of the debug window (eliminating the need for horizontal scrolling).
 
 ### 3. Code scoping
 
@@ -123,7 +123,7 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
  The debugger will step to the next statement if it is not at a function when these commands are used.
 
 ### 3. Break on new worker (`Ctrl+Shift+W`)
- Breaks on the creation of a new [web worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
+ Breaks on the creation of a new [web worker](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).
 
 ### 4. Exception control
 **Change exception behavior** (`Ctrl+Shift+E`) opens options to change how the debugger reacts to exceptions. By default exceptions are ignored by the debugger and logged to the [**Console**](./console.md). You can choose to *Break on all exceptions*, or just those not being handled by `try...catch` statements in your code (*Break on unhandled exceptions*).
@@ -132,7 +132,7 @@ Use the debugger *Toolbar* to control how you step through code, and what code t
 (Currently disabled.) **Show/Hide results** toggles the display of [*Find in files*](#6-find-in-files-ctrlf) search results.
 
 ### 6. Find in files (`Ctrl+F`)
- **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
+ **Find in files** (`Ctrl+F`) runs a text search through all the loaded files within the [*Resource picker*](#resource-picker). If the text is found, it opens the first file matching the search string. Pressing `Enter` or `F3` takes you to the next match.
 
 ### 7. Debug just my code (`Ctrl+J`)
  **Debug just my code** (`Ctrl+J`) acts as a toggle to include or exclude all the files that have been marked as [library code](#3-code-scoping) as you step through the debugger.
@@ -251,4 +251,3 @@ Delete watch | `Ctrl` + `D`
 |:-----------------------------------|:-------------------------|
 | Show/Hide frames from library code | `Ctrl` + `Shift` + `J`   |
 | Enable all breakpoints             | `Ctrl` + `Shift` + `F11` |
-

@@ -3,7 +3,7 @@ description: Reference for the CSS Domain. This domain exposes CSS read/write op
 title: CSS Domain - DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 8/17/2018
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -63,12 +63,12 @@ attributes) for a DOM node identified by `nodeId`.
     </thead>
     <tbody>
         <tr>
-            <td>inlineStyle <br/> <i>optional</i></td>
+            <td>inlineStyle <br /> <i>optional</i></td>
             <td><a href="#cssstyle"><code class="flyout">CSSStyle</code></a></td>
             <td>Inline style for the specified DOM node.</td>
         </tr>
         <tr>
-            <td>attributesStyle <br/> <i>optional</i></td>
+            <td>attributesStyle <br /> <i>optional</i></td>
             <td><a href="#cssstyle"><code class="flyout">CSSStyle</code></a></td>
             <td>Attribute-defined element style (e.g. resulting from "width=20 height=100%").</td>
         </tr>
@@ -107,32 +107,32 @@ Returns requested styles for a DOM node identified by `nodeId`.
     </thead>
     <tbody>
         <tr>
-            <td>inlineStyle <br/> <i>optional</i></td>
+            <td>inlineStyle <br /> <i>optional</i></td>
             <td><a href="#cssstyle"><code class="flyout">CSSStyle</code></a></td>
             <td>Inline style for the specified DOM node.</td>
         </tr>
         <tr>
-            <td>attributesStyle <br/> <i>optional</i></td>
+            <td>attributesStyle <br /> <i>optional</i></td>
             <td><a href="#cssstyle"><code class="flyout">CSSStyle</code></a></td>
             <td>Attribute-defined element style (e.g. resulting from "width=20 height=100%").</td>
         </tr>
         <tr>
-            <td>matchedCSSRules <br/> <i>optional</i></td>
+            <td>matchedCSSRules <br /> <i>optional</i></td>
             <td><a href="#rulematch"><code class="flyout">RuleMatch[]</code></a></td>
             <td>CSS rules matching this node, from all applicable stylesheets.</td>
         </tr>
         <tr>
-            <td>pseudoElements <br/> <i>optional</i></td>
+            <td>pseudoElements <br /> <i>optional</i></td>
             <td><a href="#pseudoelementmatches"><code class="flyout">PseudoElementMatches[]</code></a></td>
             <td>Pseudo style matches for this node.</td>
         </tr>
         <tr>
-            <td>inherited <br/> <i>optional</i></td>
+            <td>inherited <br /> <i>optional</i></td>
             <td><a href="#inheritedstyleentry"><code class="flyout">InheritedStyleEntry[]</code></a></td>
             <td>A chain of inherited styles (from the immediate node parent up to the DOM tree root).</td>
         </tr>
         <tr>
-            <td>cssKeyframesRules <br/> <i>optional</i></td>
+            <td>cssKeyframesRules <br /> <i>optional</i></td>
             <td><a href="#csskeyframesrule"><code class="flyout">CSSKeyframesRule[]</code></a></td>
             <td>A list of CSS keyframed animations matching this node.</td>
         </tr>
@@ -345,7 +345,7 @@ Inherited CSS rule collection from ancestor node.
     </thead>
     <tbody>
         <tr>
-            <td>inlineStyle <br/> <i>optional</i></td>
+            <td>inlineStyle <br /> <i>optional</i></td>
             <td><a href="#cssstyle"><code class="flyout">CSSStyle</code></a></td>
             <td>The ancestor node's inline style, if any, in the style inheritance chain.</td>
         </tr>
@@ -403,7 +403,7 @@ Data for a simple selector (these are delimited by commas in a selector list).
             <td>Value text.</td>
         </tr>
         <tr>
-            <td>range <br/> <i>optional</i></td>
+            <td>range <br /> <i>optional</i></td>
             <td><a href="#sourcerange"><code class="flyout">SourceRange</code></a></td>
             <td>Value range in the underlying resource (if available).</td>
         </tr>
@@ -456,19 +456,19 @@ CSS rule representation.
     </thead>
     <tbody>
         <tr>
-            <td>styleSheetId <br/> <i>optional</i></td>
+            <td>styleSheetId <br /> <i>optional</i></td>
             <td><a href="#stylesheetid"><code class="flyout">StyleSheetId</code></a></td>
             <td>The css style sheet identifier (absent for user agent stylesheet and user-specified
 stylesheet rules) this rule came from.</td>
         </tr>
         <tr>
-            <td>selectorList <br/> <i>optional</i></td>
+            <td>selectorList <br /> <i>optional</i></td>
             <td><a href="#selectorlist"><code class="flyout">SelectorList</code></a></td>
             <td>Rule selector data.</td>
         </tr>
         <tr>
-            <td>origin <br/> <i>optional</i></td>
-            <td><a href="#stylesheetorigin"><code class="flyout">StyleSheetOrigin</code></a></td>
+            <td>origin <br /> <i>optional</i></td>
+            <td><<!--  <a href="#stylesheetorigin">  --><code class="flyout">StyleSheetOrigin</code><!--  </a>  --></td>
             <td>Parent stylesheet's origin.</td>
         </tr>
         <tr>
@@ -477,7 +477,7 @@ stylesheet rules) this rule came from.</td>
             <td>Associated style declaration.</td>
         </tr>
         <tr>
-            <td>media <br/> <i>optional</i></td>
+            <td>media <br /> <i>optional</i></td>
             <td><a href="#cssmedia"><code class="flyout">CSSMedia[]</code></a></td>
             <td>Media list array (for rules involving media queries). The array enumerates media queries
 starting with the innermost one, going outwards.</td>
@@ -551,7 +551,7 @@ Text range within a resource. All numbers are zero-based.
             <td>Shorthand value.</td>
         </tr>
         <tr>
-            <td>important <br/> <i>optional</i></td>
+            <td>important <br /> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether the property has "!important" annotation (implies `false` if absent).</td>
         </tr>
@@ -575,7 +575,7 @@ CSS style representation.
     </thead>
     <tbody>
         <tr>
-            <td>styleSheetId <br/> <i>optional</i></td>
+            <td>styleSheetId <br /> <i>optional</i></td>
             <td><a href="#stylesheetid"><code class="flyout">StyleSheetId</code></a></td>
             <td>The css style sheet identifier (absent for user agent stylesheet and user-specified
 stylesheet rules) this rule came from.</td>
@@ -591,12 +591,12 @@ stylesheet rules) this rule came from.</td>
             <td>Computed values for all shorthands found in the style.</td>
         </tr>
         <tr>
-            <td>cssText <br/> <i>optional</i></td>
+            <td>cssText <br /> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
             <td>Style declaration text (if available).</td>
         </tr>
         <tr>
-            <td>range <br/> <i>optional</i></td>
+            <td>range <br /> <i>optional</i></td>
             <td><a href="#sourcerange"><code class="flyout">SourceRange</code></a></td>
             <td>Style declaration range in the enclosing stylesheet (if available).</td>
         </tr>
@@ -630,32 +630,32 @@ CSS property declaration data.
             <td>The property value.</td>
         </tr>
         <tr>
-            <td>important <br/> <i>optional</i></td>
+            <td>important <br /> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether the property has "!important" annotation (implies `false` if absent).</td>
         </tr>
         <tr>
-            <td>implicit <br/> <i>optional</i></td>
+            <td>implicit <br /> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether the property is implicit (implies `false` if absent).</td>
         </tr>
         <tr>
-            <td>text <br/> <i>optional</i></td>
+            <td>text <br /> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
             <td>The full property text as specified in the style.</td>
         </tr>
         <tr>
-            <td>parsedOk <br/> <i>optional</i></td>
+            <td>parsedOk <br /> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether the property is understood by the browser (implies `true` if absent).</td>
         </tr>
         <tr>
-            <td>disabled <br/> <i>optional</i></td>
+            <td>disabled <br /> <i>optional</i></td>
             <td><code class="flyout">boolean</code></td>
             <td>Whether the property is disabled by the user (present for source-based properties only).</td>
         </tr>
         <tr>
-            <td>range <br/> <i>optional</i></td>
+            <td>range <br /> <i>optional</i></td>
             <td><a href="#sourcerange"><code class="flyout">SourceRange</code></a></td>
             <td>The entire property range in the enclosing style declaration (if available).</td>
         </tr>
@@ -685,30 +685,30 @@ CSS media rule descriptor.
         </tr>
         <tr>
             <td>source</td>
-            <td><code class="flyout">string</code> <br/> <i>Allowed values: mediaRule, importRule, linkedSheet, inlineSheet</i></td>
+            <td><code class="flyout">string</code> <br /> <i>Allowed values: mediaRule, importRule, linkedSheet, inlineSheet</i></td>
             <td>Source of the media query: "mediaRule" if specified by a @media rule, "importRule" if
 specified by an @import rule, "linkedSheet" if specified by a "media" attribute in a linked
 stylesheet's LINK tag, "inlineSheet" if specified by a "media" attribute in an inline
 stylesheet's STYLE tag.</td>
         </tr>
         <tr>
-            <td>sourceURL <br/> <i>optional</i></td>
+            <td>sourceURL <br /> <i>optional</i></td>
             <td><code class="flyout">string</code></td>
             <td>URL of the document containing the media query description.</td>
         </tr>
         <tr>
-            <td>range <br/> <i>optional</i></td>
+            <td>range <br /> <i>optional</i></td>
             <td><a href="#sourcerange"><code class="flyout">SourceRange</code></a></td>
             <td>The associated rule (@media or @import) header range in the enclosing stylesheet (if
 available).</td>
         </tr>
         <tr>
-            <td>styleSheetId <br/> <i>optional</i></td>
+            <td>styleSheetId <br /> <i>optional</i></td>
             <td><a href="#stylesheetid"><code class="flyout">StyleSheetId</code></a></td>
             <td>Identifier of the stylesheet containing this object (if exists).</td>
         </tr>
         <tr>
-            <td>mediaList <br/> <i>optional</i></td>
+            <td>mediaList <br /> <i>optional</i></td>
             <td><a href="#mediaquery"><code class="flyout">MediaQuery[]</code></a></td>
             <td>Array of media queries.</td>
         </tr>
@@ -776,12 +776,12 @@ Media query expression descriptor.
             <td>Media query expression feature.</td>
         </tr>
         <tr>
-            <td>valueRange <br/> <i>optional</i></td>
+            <td>valueRange <br /> <i>optional</i></td>
             <td><a href="#sourcerange"><code class="flyout">SourceRange</code></a></td>
             <td>The associated range of the value text in the enclosing stylesheet (if available).</td>
         </tr>
         <tr>
-            <td>computedLength <br/> <i>optional</i></td>
+            <td>computedLength <br /> <i>optional</i></td>
             <td><code class="flyout">number</code></td>
             <td>Computed length of media query expression (if applicable).</td>
         </tr>
@@ -868,14 +868,14 @@ CSS keyframe rule representation.
     </thead>
     <tbody>
         <tr>
-            <td>styleSheetId <br/> <i>optional</i></td>
+            <td>styleSheetId <br /> <i>optional</i></td>
             <td><a href="#stylesheetid"><code class="flyout">StyleSheetId</code></a></td>
             <td>The css style sheet identifier (absent for user agent stylesheet and user-specified
 stylesheet rules) this rule came from.</td>
         </tr>
         <tr>
             <td>origin</td>
-            <td><a href="#stylesheetorigin"><code class="flyout">StyleSheetOrigin</code></a></td>
+            <td><!--  <a href="#stylesheetorigin">  --><code class="flyout">StyleSheetOrigin</code><!--  </a>  --></td>
             <td>Parent stylesheet's origin.</td>
         </tr>
         <tr>

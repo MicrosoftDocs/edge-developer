@@ -2,18 +2,18 @@
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 06/07/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2. 0 (the "License");
    you may not use this file except in compliance with the License. 
    You may obtain a copy of the License at
 
-       http://www. apache. org/licenses/LICENSE-2. 0
+       https://www. apache. org/licenses/LICENSE-2. 0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.  
 
-<!--See [Network Reference][NetworkReference] if you want to browse features instead.  -->
+See [Network Reference][DevtoolsNetworkReference] if you want to browse features instead.  
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -70,18 +70,14 @@ To get the most out of this tutorial, open up the demo and try out the features 
     > The demo in one window and this tutorial in a different window  
     > ![The demo in one window and this tutorial in a different window][ImagesTutorialWindows]  -->
 
-1.  **Open DevTools** by pressing `Control`+`Shift`+`J` \(Windows\) or
+1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows\) or
    `Command`+`Option`+`J` \(macOS\).  The **Console** panel opens.  
-    
-    <!--todo: add open section when content is available -->  
     
     > ##### Figure 2  
     > The Console  
     > ![The Console][ImagesTutorialConsole]  
     
-    You may prefer to **dock DevTools to the bottom of your window**.  
-    
-    <!--todo: add dock DevTools to the bottom of your window(ui#placement) section when available -->  
+    You may prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].  
     
     > ##### Figure 3  
     > DevTools docked to the bottom of the window  
@@ -117,10 +113,8 @@ To view the network activity that a page causes:
         Hover over a Waterfall to see a breakdown.  
     
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You are not be using the Overview graph in this tutorial, so you may hide it.  <!--See [Hide the Overview pane][ReferenceHideOverview].  -->
-    
-    <!--todo: add section when available  -->  
-    
+    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it. See [Hide the Overview pane][DevtoolsReferenceHideOverview].
+        
 1.  After you open DevTools, it records network activity in the Network Log.  
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
 1.  Now, click the **Get Data** button in the demo.  
@@ -166,7 +160,7 @@ The network connection of the computer that you use to build sites is probably f
     > Empty Cache And Hard Reload  
     > ![Empty Cache And Hard Reload][ImagesTutorialHardReload]  
     
-    On repeat visthe, the browser usually serves some files from the [cache][MDNHTTPCache] , which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  This is helpful when you want to see how a first-time visitor experiences a page load.  
+    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache] , which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  This is helpful when you want to see how a first-time visitor experiences a page load.  
     
     > [!NOTE]
     > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.  
@@ -175,7 +169,7 @@ The network connection of the computer that you use to build sites is probably f
 
 Screenshots let you see how a page looked over time while it was loading.  
 
-1.  Click **Capture Screenshots** ![Capture Screenshots][ImageScreenshotsIcon].  
+1.  Click ![Network settings][ImageSettingsIcon] and check **Capture screenshots**.
 1.  Reload the page again via the **Empty Cache And Hard Reload** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
     The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.  
     
@@ -189,7 +183,7 @@ Screenshots let you see how a page looked over time while it was loading.
     > The network activity that was happening during the first screenshot  
     > ![The network activity that was happening during the first screenshot][ImagesTutorialFirstScreenshot]  
 
-1.  Click **Capture Screenshots** ![Capture Screenshots][ImageScreenshotsIcon] again to close the Screenshots pane.  
+1.  Click ![Network settings][ImageSettingsIcon] again and uncheck **Capture screenshots** to close the Screenshots pane.
 1.  Reload the page again.  
 
 ## Inspect the details of the resource   
@@ -251,14 +245,13 @@ For example, suppose you want to check if your resources are using reasonable **
     > Search results for `Cache-Control`  
     > ![Search results for Cache-Control][ImagesTutorialResults]  
 
-1.  Click a result to view it.  If the query was found in a header, the Headers tab opens.  
-    If the query was found in content, the Response tab opens.  
+1.  Click a result to view which resource the result was found in. If you are looking at the details of the resource, click a result to go directly to it. For example, if the query was found in a header, the Headers tab opens. If the query was found in content, the Response tab opens.  
     
     > ##### Figure 20  
     > A search result highlighted in the Headers tab  
     > ![A search result highlighted in the Headers tab][ImagesTutorialCache]  
     
-1.  Close the Search pane and the Timing tab.  
+1.  Close the Search pane and the Headers tab.  
     
     > ##### Figure 21  
     > The Close buttons  
@@ -287,7 +280,7 @@ The **Filter** text box supports many different types of filtering.
     > A string filter  
     > ![A string filter][ImagesTutorialPNG]  
 
-1.  Type `/. *\. [cj]s+$/`.  DevTools filters out any resource with a filename that does not end with a `j` or a `c` followed by 1 or more `s` characters.  
+1.  Type `/.*\.[cj]s+$/`.  DevTools filters out any resource with a filename that does not end with a `j` or a `c` followed by 1 or more `s` characters.  
     
     > ##### Figure 24  
     > A regular expression filter  
@@ -305,9 +298,8 @@ The **Filter** text box supports many different types of filtering.
     > A property filter  
     > ![A property filter][ImagesTutorialProperty]  
 
-    <!--See [Filter requests by properties][ReferenceProperty] for the full list of filterable properties.  -->  
+    See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.  
     
-    <!--TODO: add section link when content is available  -->
     
 1.  Clear the **Filter** text box of any text.  
 
@@ -329,7 +321,7 @@ To focus in on a certain type of file, such as stylesheets:
     
 1.  Click **All** to remove the filters and see all resources again.  
 
-<!--See [Filter requests][ReferenceFilter] for other filtering workflows.  -->
+See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.  
 
 ## Block requests   
 
@@ -366,16 +358,16 @@ How does a page look and behave when some of the page resources are not availabl
 
 1.  Uncheck the **Enable request blocking** checkbox.  
 
-## Next steps   
+## Conclusion  
 
-Congratulations, you have completed the tutorial.  Click **Dispense Award** to receive your award.  
-
-
+Congratulations, you have completed the tutorial.  You now know how to use the Network panel in the Microsoft Edge DevTools!
 
 
 
 
-<!--Check out the [Network Reference][NetworkReference] to discover more DevTools features related to inspecting network activity.  -->
+
+
+Check out the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity. 
 
  
 
@@ -390,6 +382,7 @@ Congratulations, you have completed the tutorial.  Click **Dispense Award** to r
 [ImageReloadIcon]: images/reload-icon.msft.png  
 [ImageScreenshotsIcon]: images/screenshots-icon.msft.png  
 [ImageSearchIcon]: images/search-icon.msft.png  
+[ImageSettingsIcon]: images/settings-icon.msft.png
 
 [ImagesTutorialAddBlock]: images/glitch-network-cli-block-add-pattern.msft.png "Figure 31: Blocking main.css"  
 [ImagesTutorialAllScreenshots]: images/glitch-network-screenshots.msft.png "Figure 11: Screenshots of the page load"  
@@ -431,22 +424,23 @@ Congratulations, you have completed the tutorial.  Click **Dispense Award** to r
 [MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy.md ""  -->  
-<!--[UIPlacement]: ../ui.md#placement ""  -->  
-<!--[NetworkReference]: reference.md ""  -->  
-<!--[OpenDevTools]: ../open.md ""  -->  
-<!--[ReferenceFilter]: reference.md#filter ""  -->  
-<!--[ReferenceHideOverview]: reference.md#hide-overview  -->  
-<!--[ReferenceProperty]: reference.md#filter-by-property ""  -->  
+
+[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DevtoolsNetworkReference]: reference.md "Network Analysis Reference"
+[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
+[DevtoolsNetworkReferenceFilter]: reference.md#filter-requests "Filter requests - Network Analysis Reference"  
+[DevtoolsReferenceHideOverview]: reference.md#hide-the-overview-pane "Hide the Overview pane - Network Analysis Reference"
+[DevtoolsReferenceProperty]: reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis Reference"
 <!--[SpeedGetStarted]: ../speed/get-started.md ""  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

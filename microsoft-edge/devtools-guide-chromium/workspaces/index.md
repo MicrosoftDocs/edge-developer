@@ -2,18 +2,18 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 06/07/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,10 +36,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
-> *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  <!-- > *   [Use DevTools to make basic changes to CSS][DevToolsCss]  -->
+> *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  
+> *   [Use DevTools to make basic changes to CSS][DevToolsCss]  
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]  
-
-<!--Todo: add section when contain is available  -->  
 
 ## Overview   
 
@@ -60,7 +59,7 @@ Workspaces is known to not work with these frameworks:
 
 *   Create React App  
 
-<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
+<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 ## Related feature: Local Overrides   
 
@@ -198,7 +197,7 @@ If you want to save a change to the HTML of the page, do it via the **Sources** 
 1.  Click the **Sources** tab.  
 1.  Click the **Page** tab.  
 1.  Click **(index)**.  The HTML for the page opens.  
-1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See [Figure 10](#figure-10).  
+1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See [Figure 8](#figure-8).  
 1.  Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Reload the page.  The `<h1>` element is still displaying the new text.  
     
@@ -220,7 +219,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     > Opening the **Quick Source** tab via the **Command Menu**  
     > ![Opening the Quick Source tab via Command Menu][ImageCommandMenuQuickSource]  
 
-1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 12](#figure-12).  
+1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 10](#figure-10).  
 1.  Type `script`, then select **app/script.js**.  
     
     > ##### Figure 10  
@@ -249,6 +248,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 
 ## Next steps   
 
+<!--
 Congratulations, you have completed the tutorial.  <!--Click the button below to receive your prize.  -->  
 
 
@@ -276,8 +276,9 @@ var feedback = {
 </script>
 
 
+-->
 
-Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
  
 
@@ -307,8 +308,9 @@ If you have more feedback on these topics or anything else, please use any of th
 
 <!-- links -->  
 
-<!--[DevToolsCss]: ../css.md ""  -->  
-<!--[LocalOverrides]: /web/updates/2018/01/devtools#overrides -->  
+[DevToolsCss]: ../css/index.md "Get Started With Viewing And Changing CSS"  
+
+<!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
@@ -318,18 +320,18 @@ If you have more feedback on these topics or anything else, please use any of th
 [MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Running a simple local HTTP server | MDN"  
 [MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to DOM - Web APIs | MDN"  
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-[TreehouseBlogSourceMaps]: http://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"  
+[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"  
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
 [WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
