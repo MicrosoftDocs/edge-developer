@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 01/15/2020
+  ms.date: 01/23/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -349,9 +349,9 @@ conceptualContent:
 # - -  Microsoft Edge Addons Catalog Developer Policies - ./extensions-chromium/store-policies/developer-policies.md
 # -  Progressive Web Apps 
 # - -  Overview - ./progressive-web-apps.md
-# - -  Getting Started with PWAs - ./progressive-web-apps/get-started.md
-# - -  Tailor Your PWAs for Windows - ./progressive-web-apps/windows-features.md
-# - -  PWAs in the Microsoft Store - ./progressive-web-apps/microsoft-store.md
+# - -  Getting Started with PWAs - ./progressive-web-apps-edgehtml/get-started.md
+# - -  Tailor Your PWAs for Windows - ./progressive-web-apps-edgehtml/windows-features.md
+# - -  PWAs in the Microsoft Store - ./progressive-web-apps-edgehtml/microsoft-store.md
 # - -  Using DevTools with Progressive Web Apps - ./devtools-guide-chromium/progressive-web-apps.md
 # -  WebView2
 # - -  Overview - ./hosting/webview2.md
@@ -389,7 +389,7 @@ additionalContent:
             - text: Extensions (EdgeHTML)
               url: ./extensions/index.md
             - text: Getting Started with PWAs (EdgeHTML)
-              url: ./progressive-web-apps/get-started.md
+              url: ./progressive-web-apps-edgehtml/get-started.md
             - text: JavaScript Runtime Hosting
               url: ./hosting/javascript-runtime-hosting.md
             - text: WebVR Developer Guide

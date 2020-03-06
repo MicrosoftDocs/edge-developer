@@ -4,7 +4,7 @@ description: Learn how to localize your Microsoft Edge extension package so that
 title: Localizing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -41,7 +41,7 @@ After the .resjson files for the supported languages have been made, a [.pri res
 Once you've uploaded your extension, the final step is to [localize the name and description in the Microsoft Store](#localizing-name-and-description-in-the-microsoft-store).
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we'll consider you for a future update.
 
 
 
@@ -213,8 +213,9 @@ First you'll need to create the configuration file. This defines the default qua
 Now you can use the configuration file and the MakePRI tool to create the resources.pri file. For this example, the root location for the project will be [Root folder].
 
 
-`MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\AppxManifest.xml /of [Root folder]\resources.pri /o
-`
+```cmd
+MakePRI new /pr [Root folder] /cf [Root folder]\priconfig.xml /mn [Root folder]\AppxManifest.xml /of [Root folder]\resources.pri /o
+```
 
 You should now have one resources.pri file in your root folder:
 

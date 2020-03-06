@@ -3,7 +3,7 @@ description: Use the Performance panel to analyze the responsivenes of your page
 title: DevTools - Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, performance, profile, frame rate, fps, CPU utilization, JavaScript execution
@@ -21,7 +21,7 @@ The **Performance** panel offers tools for profiling and analyzing the responsiv
 
 ![DevTools Performance panel](./media/performance.png)
 
- ## Recording a profile
+## Recording a profile
 
 The first step to analyzing the performance of your page is to capture a profile as you perform a particular user scenario, such as the repro steps of a performance bug you're trying to fix, or a typical use case you want to optimize for a better user experience. 
 
@@ -37,7 +37,7 @@ Here are some things to keep in mind when recording a profile:
 
 - Perform the fewest actions you need to capture the scenario you're trying to analyze. Extraneous actions with the page will produce extra data and clutter your results.
 
-- The profiler will automatically mark major app lifecycle events in the report, such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load). You can add custom markers by calling the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the console. 
+- The profiler will automatically mark major app lifecycle events in the report, such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/docs/Web/Events/load). You can add custom markers by calling the [Performance.mark()](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the console. 
 
 - If initial page load times are important to your analysis, make sure to clear your browser cache (from the [Network](./network.md) panel) to ensure all page resources are loading from the network.
 
@@ -49,9 +49,9 @@ The timeline works as a sliding ruler. Use it to limit the scope of the report t
 
 You will see two types of markers on the ruler:
 
- - **App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/en-US/docs/Web/Events/load)) are automatically logged as you record a profile.
+ - **App lifecycle marks** on the timeline (such as page navigation, [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded), and page [load](https://developer.mozilla.org/docs/Web/Events/load)) are automatically logged as you record a profile.
 
- - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure) method. 
+ - **User marks** are custom markers you can choose to add  with calls to the [Performance.mark()](https://developer.mozilla.org/docs/Web/API/Performance/mark) method from within your code or the  DevTools [**Console**](./console.md). You can group *start* and *end* marks together as a single, named measure with the [Performance.measure()](https://developer.mozilla.org/docs/Web/API/Performance/measure) method. 
 
 Once you have selected a time range, you can further **Zoom in** from the toolbar, or **Reset zoom** and **Clear selection** to return to the full view of the performance trace (with no time range selected). These controls are also available from the right-click context menu.
 
@@ -240,4 +240,3 @@ If you see this error message: **An error occurred while stopping the profiling 
 Still running into problems? Please send us your feedback using the **Send feedback** icon! 
 
 ![known-issues-5](./media/known_issues_5.PNG)
-
