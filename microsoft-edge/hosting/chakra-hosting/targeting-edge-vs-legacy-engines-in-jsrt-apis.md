@@ -2,7 +2,7 @@
 description: "Learn how to target the different Windows 10 JavaScript engines. "
 title: "Targeting Microsoft Edge vs. Legacy Engines in JsRT APIs | Microsoft Docs"
 ms.custom: ""
-ms.date: "01/18/2017"
+ms.date: "03/05/2017"
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ Windows 10 supports two different JavaScript engines:
 
 -   The old Chakra engine (also called the *legacy engine* or jscript9.dll below) that ships with and supports Internet Explorer 11. This engine is frozen in time and will remain fundamentally unchanged from Win8.1/IE11 release.  
   
--   The new Chakra engine (also called the *Edge engine* or chakra.dll below) that ships with and supports the new browser in Windows 10, Microsoft Edge. This engine will be continually updated and will support a "living" [Edge](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx) engine. A living Microsoft Edge engine implies that unlike the legacy engine, the Microsoft Edge engine would not carry forward any form of versioning script functionality to opt into.  
+-   The new Chakra engine (also called the *Edge engine* or chakra.dll below) that ships with and supports the new browser in Windows 10, Microsoft Edge. This engine will be continually updated and will support a "living" [Edge](https://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx) engine. A living Microsoft Edge engine implies that unlike the legacy engine, the Microsoft Edge engine would not carry forward any form of versioning script functionality to opt into.  
   
  When creating an app using the JavaScript Runtime Hosting (JsRT) API, you can choose to target either the legacy or the Microsoft Edge engine.  
   
@@ -158,3 +158,4 @@ public static extern JsErrorCode JsStartDebugging();
   
 ## See Also  
  [JavaScript Runtime Hosting](../javascript-runtime-hosting.md)
+ 

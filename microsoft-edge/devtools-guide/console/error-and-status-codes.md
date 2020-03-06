@@ -4,7 +4,7 @@ description: Reference to common Console codes and suggested fixes
 title: DevTools - Console error and status codes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/05/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
@@ -35,14 +35,14 @@ Resources blocked by the use of a `Content-Security-Policy` HTTP header are repo
 
 | Code     | Message                                                                                                                                                                  | Description                                                                                                                                                                                                                                                                                                                                     | Suggested fix                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |:---------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CSP14301 | “Failed parsing [the policy type] because &#60;the reason for canceling the operation&#62; &mdash; policy will be ignored.”                                                        | The security policy type specified (for example, script-src, base-uri) failed for the reason identified and will be ignored.                                                                                                                                                                                                                        | Make sure you list all required resources of a specific type in a single directive. For example, in `script-src https://host1.com; script-src https://host2.com`, the second directive will be ignored. The following correctly specifies both origins as valid: `script-src https://host1.com https://host2.com`.                                                                                                                                                                                                            |
+| CSP14301 | "Failed parsing [the policy type] because &#60;the reason for canceling the operation&#62; &mdash; policy will be ignored."                                                        | The security policy type specified (for example, script-src, base-uri) failed for the reason identified and will be ignored.                                                                                                                                                                                                                        | Make sure you list all required resources of a specific type in a single directive. For example, in `script-src https://host1.com; script-src https://host2.com`, the second directive will be ignored. The following correctly specifies both origins as valid: `script-src https://host1.com https://host2.com`.                                                                                                                                                                                                            |
 | CSP14302 | "Failed parsing source in [policy type] for directive [directive type] at [source URL] &mdash; source will be ignored."                                                         | Most CSP directives require one or more content sources (indicating a URL that content can be loaded from). This error points out a policy with a directive that contains a source URL that failed when parsing was tried.                                                                                                                  | Check the content source (most often a URL) that's defined in the specified directive, which you can find in the specified policy type. Correct or replace the source URL or remove the directive. <br> <em>*Your policy should include a default-src policy directive, which is a fallback for other resource types when they don't have policies of their own.</em>                                                                                                                                                                |
 | CSP14303 | "[Policy type] policy was empty."                                                                                                                                        | The policy type (for example, Content-Security-Policy in the HTTP header) is empty.                                                                                                                                                                                                                                                                      | A quick reference for setting up a Content Security Policy can be found at [http://content-security-policy.com/](http://content-security-policy.com/).                                                                                                                                                                                                                                                                                                                                                                                |
 | CSP14304 | "Unknown source [source URL] for directive [directive type] in [policy type] source will be ignored."                                                                    | The sources for approved (safe) content in the directive identified are unknown and will be ignored.                                                                                                                                                                                                                                            | Check the content source identified (often this is a URL) to make sure it's correct.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | CSP14305 | "Unsupported source [source URL] for directive[directive type] in [policy type] source will be ignored."                                                                  | The source (URL, keyword, or data) listed in this directive is not supported and will be ignored.                                                                                                                                                                                                                                               | The source site's address may include an optional leading wildcard (the asterisk character, `*`). For example, http://`*`.foo.com or mail.foo.com:*. The hosts are space-delimited. Sources may also be keywords (none, self, unsafe-inline, and unsafe-eval are all supported) or data (data:URIs, mediastream:URIs).                                                                                                                                                                                                              |
 | CSP14306 | "No sources given for directive [directive type] for[policy type] &mdash; this is equivalent to using 'none' and will prevent the downloading of all resources of this type." | Giving a directive and not listing any sources for safe content to access is the same as not allowing any resources of the type specified in the directive to be downloaded.                                                                                                                                                                    | A source can be one or more internet host names or IP addresses, as well as an optional URL scheme and/or port number.                                                                                                                                                                                                                                                                                                                                                                                                               |
 | CSP14307 | "Source [source URL]was already provided for directive [directive type] for[policy type]."                                                                               | A duplicate source (URL, Keyword, or Data) has been listed in this directive and will be ignored.                                                                                                                                                                                                                                               | Remove the duplicate source identified.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| CSP14308 | "Failed parsing directive in[policy type] at [directive name]."                                                                                                          | The directive identified failed. For guidance about how to write supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                                                                                                                      | Directives must be separated by semicolons. For example, if you have an application that loads all of its resources from a content delivery network (for example, `https://cdn.example.net`), and you know that you don’t need framed content or any plug-ins,  your policy might look like: `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` <em>*While directives are separated with semicolons, sources within a directive should only be separated with a space.</em> |
+| CSP14308 | "Failed parsing directive in[policy type] at [directive name]."                                                                                                          | The directive identified failed. For guidance about how to write supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                                                                                                                      | Directives must be separated by semicolons. For example, if you have an application that loads all of its resources from a content delivery network (for example, `https://cdn.example.net`), and you know that you don't need framed content or any plug-ins,  your policy might look like: `Content-Security-Policy: default-src https://cdn.example.net; child-src 'none'; object-src 'none'.` <em>*While directives are separated with semicolons, sources within a directive should only be separated with a space.</em> |
 | CSP14309 | "Unknown directive in[directive name] in [policy type] -- directive will be ignored."                                                                                    | The directive set in the CSP policy is unknown and will be ignored.                                                                                                                                                                                                                                                                           | For a list of supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | CSP14310 | "Unsupported directive [directive name] in [policy type] -- directive will be ignored."                                                                                   | A directive was found during parsing in the policy type (for example, the `Content-Security-policy-Report-Only` header field) that's not supported and will be ignored. For supported directives, see [http://content-security-policy.com](http://content-security-policy.com/).                                                                             | Remove the unsupported directive. **Note**: Some directives are not supported in the &#60;meta&#62; element or in the `Content-Security-policy-Report-Only` header field.                                                                                                                                                                                                                                                                                                                                                                           |
 | CSP14311 | "Directive [directive name]was already provided in[policy type] -- duplicate directive will be ignored."                                                                 | A duplicate directive was found during parsing, the second directive and its source-expressions will be ignored.                                                                                                                                                                                                                                | Remove the duplicate script.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -93,7 +93,7 @@ HTML1300 | "Navigation occurred" | A new page was navigated to, or the current p
 ## HTML5 parser warnings
 The following warnings can occur as part of the validation performed during HTML parsing. These warnings don't necessarily mean a page is broken but that the provided HTML is invalid per the HTML5 standard. Content created in compliance with earlier versions of the HTML or XHTML specifications might not be valid in HTML5, particularly with respect to the use of DOCTYPEs.
 
-These warnings commonly indicate missing or additional characters and mismatched tags. When you resolve these warnings, compatibility with older browsers and a web page’s compliance with the HTML5 standard should improve. To help identify the source of a warning, it includes line and character offset information, along with a link pointing to the location where the problem was found.
+These warnings commonly indicate missing or additional characters and mismatched tags. When you resolve these warnings, compatibility with older browsers and a web page's compliance with the HTML5 standard should improve. To help identify the source of a warning, it includes line and character offset information, along with a link pointing to the location where the problem was found.
 
 | Code     | Message 
 :---------| :--------------------------------------------
@@ -151,10 +151,10 @@ These warnings commonly indicate missing or additional characters and mismatched
 | HTML1526 | "Invalid nesting. A &#60;nobr&#62; tag should not be placed within another &#60;nobr&#62;." |
 | HTML1527 | "DOCTYPE expected. The shortest valid doctype is &#60;!DOCTYPE html&#62;." |
 | HTML1528 | "Unexpected &#60;image&#62; in HTML content. Use &#60;img&#62; instead." |
-| HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "<http://www.w3.org/1999/xlink>"." |
+| HTML1529 | "Invalid xmlns:xlink attribute value. The value must be "<https://w3.org/1999/xlink>"." |
 | HTML1530 | "Text found within a structural table element. Table text may only be placed inside &#60;caption&#62;, &#60;td&#62;, or &#60;th&#62; elements." |
-| HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "<http://www.w3.org/2000/svg/>"." |
-| HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "<http://www.w3.org/1998/Math/MathML/>". |
+| HTML1531 | "Invalid xmlns attribute value. For SVG elements the value must be "<https://w3.org/2000/svg/>"." |
+| HTML1532 | "Invalid xmlns attribute value. For MathML elements the value must be "<https://w3.org/1998/Math/MathML/>". |
 
 ## HTTP codes
 HTTP error codes are returned from remote servers in response to requests. Probably the most familiar is HTTP404, which is returned whenever the server can't find the page or document specified in the Uniform Resource Identifier (URI).
@@ -206,35 +206,35 @@ JavaScript syntax errors occur when the structure of one of your statements viol
 
 |Error number|Description|  
 |------------------|-----------------|  
-|1019|[Can't have 'break' outside of loop](https://docs.microsoft.com/en-us/scripting/javascript/misc/can-t-have-break-outside-of-loop)|  
-|1020|[Can't have 'continue' outside of loop](https://docs.microsoft.com/en-us/scripting/javascript/misc/can-t-have-continue-outside-of-loop)|  
-|1030|[Conditional compilation is turned off](https://docs.microsoft.com/en-us/scripting/javascript/misc/conditional-compilation-is-turned-off)|  
-|1027|['default' can only appear once in a 'switch' statement](https://docs.microsoft.com/en-us/scripting/javascript/misc/default-can-only-appear-once-in-a-switch-statement)|  
-|1005|[Expected '('](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-left-parenthesis-javascript)|  
-|1006|[Expected ')'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-parenthesis-javascript)|  
-|1012|[Expected '/'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-minus)|  
-|1003|[Expected ':'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-colon)|  
-|1004|[Expected ';'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-semicolon)|  
-|1032|[Expected '@'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-at)|  
-|1029|[Expected '@end'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-at-end)|  
-|1007|[Expected '&#93;'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-square-bracket)|  
-|1008|[Expected '{'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-left-curly-brace)|  
-|1009|[Expected '}'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-curly-brace)|  
-|1011|[Expected '='](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-equal-javascript)|  
-|1033|[Expected 'catch'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-catch)|  
-|1031|[Expected constant](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-constant)|  
-|1023|[Expected hexadecimal digit](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-hexadecimal-digit)|  
-|1010|[Expected identifier](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-identifier-javascript)|  
-|1028|[Expected identifier, string or number](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-identifier-string-or-number)|  
-|1024|[Expected 'while'](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-while)|  
-|1014|[Invalid character](https://docs.microsoft.com/en-us/scripting/javascript/misc/invalid-character-javascript)|  
-|1026|[Label not found](https://docs.microsoft.com/en-us/scripting/javascript/misc/label-not-found)|  
-|1025|[Label redefined](https://docs.microsoft.com/en-us/scripting/javascript/misc/label-redefined)|  
-|1018|['return' statement outside of function](https://docs.microsoft.com/en-us/scripting/javascript/misc/return-statement-outside-of-function)|  
-|1002|[Syntax error](https://docs.microsoft.com/en-us/scripting/javascript/misc/syntax-error-javascript)|  
-|1035|[Throw must be followed by an expression on the same source line](https://docs.microsoft.com/en-us/scripting/javascript/misc/throw-must-be-followed-by-an-expression-on-the-same-source-line)|  
-|1016|[Unterminated comment](https://docs.microsoft.com/en-us/scripting/javascript/misc/unterminated-comment)|  
-|1015|[Unterminated string constant](https://docs.microsoft.com/en-us/scripting/javascript/misc/unterminated-string-constant-javascript)|  
+|1019|[Can't have 'break' outside of loop](/scripting/javascript/misc/can-t-have-break-outside-of-loop)|  
+|1020|[Can't have 'continue' outside of loop](/scripting/javascript/misc/can-t-have-continue-outside-of-loop)|  
+|1030|[Conditional compilation is turned off](/scripting/javascript/misc/conditional-compilation-is-turned-off)|  
+|1027|['default' can only appear once in a 'switch' statement](/scripting/javascript/misc/default-can-only-appear-once-in-a-switch-statement)|  
+|1005|[Expected '('](/scripting/javascript/misc/expected-left-parenthesis-javascript)|  
+|1006|[Expected ')'](/scripting/javascript/misc/expected-right-parenthesis-javascript)|  
+|1012|[Expected '/'](/scripting/javascript/misc/expected-minus)|  
+|1003|[Expected ':'](/scripting/javascript/misc/expected-colon)|  
+|1004|[Expected ';'](/scripting/javascript/misc/expected-semicolon)|  
+|1032|[Expected '@'](/scripting/javascript/misc/expected-at)|  
+|1029|[Expected '@end'](/scripting/javascript/misc/expected-at-end)|  
+|1007|[Expected '&#93;'](/scripting/javascript/misc/expected-right-square-bracket)|  
+|1008|[Expected '{'](/scripting/javascript/misc/expected-left-curly-brace)|  
+|1009|[Expected '}'](/scripting/javascript/misc/expected-right-curly-brace)|  
+|1011|[Expected '='](/scripting/javascript/misc/expected-equal-javascript)|  
+|1033|[Expected 'catch'](/scripting/javascript/misc/expected-catch)|  
+|1031|[Expected constant](/scripting/javascript/misc/expected-constant)|  
+|1023|[Expected hexadecimal digit](/scripting/javascript/misc/expected-hexadecimal-digit)|  
+|1010|[Expected identifier](/scripting/javascript/misc/expected-identifier-javascript)|  
+|1028|[Expected identifier, string or number](/scripting/javascript/misc/expected-identifier-string-or-number)|  
+|1024|[Expected 'while'](/scripting/javascript/misc/expected-while)|  
+|1014|[Invalid character](/scripting/javascript/misc/invalid-character-javascript)|  
+|1026|[Label not found](/scripting/javascript/misc/label-not-found)|  
+|1025|[Label redefined](/scripting/javascript/misc/label-redefined)|  
+|1018|['return' statement outside of function](/scripting/javascript/misc/return-statement-outside-of-function)|  
+|1002|[Syntax error](/scripting/javascript/misc/syntax-error-javascript)|  
+|1035|[Throw must be followed by an expression on the same source line](/scripting/javascript/misc/throw-must-be-followed-by-an-expression-on-the-same-source-line)|  
+|1016|[Unterminated comment](/scripting/javascript/misc/unterminated-comment)|  
+|1015|[Unterminated string constant](/scripting/javascript/misc/unterminated-string-constant-javascript)|  
   
 ### Script host errors  
 
@@ -252,8 +252,8 @@ JavaScript run-time errors occur when your script tries to perform an action tha
 
 |Error Number|Description|  
 |------------------|-----------------|  
-|5|[Access is denied](https://docs.microsoft.com/en-us/scripting/javascript/misc/access-is-denied)|  
-|438|[Object doesn't support this property or method](https://docs.microsoft.com/en-us/scripting/javascript/misc/object-doesn-t-support-this-property-or-method)|  
+|5|[Access is denied](/scripting/javascript/misc/access-is-denied)|  
+|438|[Object doesn't support this property or method](/scripting/javascript/misc/object-doesn-t-support-this-property-or-method)|  
 |1001|Out of memory|  
 
 ### Windows Runtime errors
@@ -262,37 +262,37 @@ JavaScript run-time errors occur when your script tries to perform an action tha
 
  |Error number|Description|  
 |------------------|-----------------|  
-|5029|[Array length must be a finite positive integer](https://docs.microsoft.com/en-us/scripting/javascript/misc/array-length-must-be-a-finite-positive-integer)|  
-|5030|[Array length must be assigned a finite positive number](https://docs.microsoft.com/en-us/scripting/javascript/misc/array-length-must-be-assigned-a-finite-positive-number)|  
-|5028|[Array or arguments object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/array-or-arguments-object-expected)|  
-|5010|[Boolean expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/boolean-expected)|  
-|5003|[Cannot assign to a function result](https://docs.microsoft.com/en-us/scripting/javascript/misc/cannot-assign-to-a-function-result)|  
-|5000|[Cannot assign to 'this'](https://docs.microsoft.com/en-us/scripting/javascript/misc/cannot-assign-to-this)|  
-|5034|[Circular reference in value argument not supported](https://docs.microsoft.com/en-us/scripting/javascript/misc/circular-reference-in-value-argument-not-supported)|  
-|5006|[Date object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/date-object-expected)|  
-|5015|[Enumerator object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/enumerator-object-expected)|  
-|5022|[Exception thrown and not caught](https://docs.microsoft.com/en-us/scripting/javascript/misc/exception-thrown-and-not-caught)|  
-|5020|[Expected ')' in regular expression](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-parenthesis-in-regular-expression-javascript)|  
-|5019|[Expected '&#93;' in regular expression](https://docs.microsoft.com/en-us/scripting/javascript/misc/expected-right-square-bracket-in-regular-expression-javascript)|  
-|5023|[Function does not have a valid prototype object](https://docs.microsoft.com/en-us/scripting/javascript/misc/function-does-not-have-a-valid-prototype-object)|  
-|5002|[Function expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/function-expected)|  
-|5008|[Illegal assignment](https://docs.microsoft.com/en-us/scripting/javascript/misc/illegal-assignment-javascript)|  
-|5021|[Invalid range in character set](https://docs.microsoft.com/en-us/scripting/javascript/misc/invalid-range-in-character-set-javascript)|  
-|5035|[Invalid replacer argument](https://docs.microsoft.com/en-us/scripting/javascript/misc/invalid-replacer-argument)|  
-|5014|[JavaScript object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/javascript-object-expected)|  
-|5001|[Number expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/number-expected)|  
-|5007|[Object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/object-expected)|  
-|5012|[Object member expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/object-member-expected)|  
-|5016|[Regular Expression object expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/regular-expression-object-expected)|  
-|5005|[String expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/string-expected)|  
-|5017|[Syntax error in regular expression](https://docs.microsoft.com/en-us/scripting/javascript/misc/syntax-error-in-regular-expression-javascript)|  
-|5026|[The number of fractional digits is out of range](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-number-of-fractional-digits-is-out-of-range)|  
-|5027|[The precision is out of range](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-precision-is-out-of-range)|  
-|5025|[The URI to be decoded is not a valid encoding](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-uri-to-be-decoded-is-not-a-valid-encoding)|  
-|5024|[The URI to be encoded contains an invalid character](https://docs.microsoft.com/en-us/scripting/javascript/misc/the-uri-to-be-encoded-contains-an-invalid-character)|  
-|5009|[Undefined identifier](https://docs.microsoft.com/en-us/scripting/javascript/misc/undefined-identifier)|  
-|5018|[Unexpected quantifier](https://docs.microsoft.com/en-us/scripting/javascript/misc/unexpected-quantifier-javascript)|  
-|5013|[VBArray expected](https://docs.microsoft.com/en-us/scripting/javascript/misc/vbarray-expected)|  
+|5029|[Array length must be a finite positive integer](/scripting/javascript/misc/array-length-must-be-a-finite-positive-integer)|  
+|5030|[Array length must be assigned a finite positive number](/scripting/javascript/misc/array-length-must-be-assigned-a-finite-positive-number)|  
+|5028|[Array or arguments object expected](/scripting/javascript/misc/array-or-arguments-object-expected)|  
+|5010|[Boolean expected](/scripting/javascript/misc/boolean-expected)|  
+|5003|[Cannot assign to a function result](/scripting/javascript/misc/cannot-assign-to-a-function-result)|  
+|5000|[Cannot assign to 'this'](/scripting/javascript/misc/cannot-assign-to-this)|  
+|5034|[Circular reference in value argument not supported](/scripting/javascript/misc/circular-reference-in-value-argument-not-supported)|  
+|5006|[Date object expected](/scripting/javascript/misc/date-object-expected)|  
+|5015|[Enumerator object expected](/scripting/javascript/misc/enumerator-object-expected)|  
+|5022|[Exception thrown and not caught](/scripting/javascript/misc/exception-thrown-and-not-caught)|  
+|5020|[Expected ')' in regular expression](/scripting/javascript/misc/expected-right-parenthesis-in-regular-expression-javascript)|  
+|5019|[Expected '&#93;' in regular expression](/scripting/javascript/misc/expected-right-square-bracket-in-regular-expression-javascript)|  
+|5023|[Function does not have a valid prototype object](/scripting/javascript/misc/function-does-not-have-a-valid-prototype-object)|  
+|5002|[Function expected](/scripting/javascript/misc/function-expected)|  
+|5008|[Illegal assignment](/scripting/javascript/misc/illegal-assignment-javascript)|  
+|5021|[Invalid range in character set](/scripting/javascript/misc/invalid-range-in-character-set-javascript)|  
+|5035|[Invalid replacer argument](/scripting/javascript/misc/invalid-replacer-argument)|  
+|5014|[JavaScript object expected](/scripting/javascript/misc/javascript-object-expected)|  
+|5001|[Number expected](/scripting/javascript/misc/number-expected)|  
+|5007|[Object expected](/scripting/javascript/misc/object-expected)|  
+|5012|[Object member expected](/scripting/javascript/misc/object-member-expected)|  
+|5016|[Regular Expression object expected](/scripting/javascript/misc/regular-expression-object-expected)|  
+|5005|[String expected](/scripting/javascript/misc/string-expected)|  
+|5017|[Syntax error in regular expression](/scripting/javascript/misc/syntax-error-in-regular-expression-javascript)|  
+|5026|[The number of fractional digits is out of range](/scripting/javascript/misc/the-number-of-fractional-digits-is-out-of-range)|  
+|5027|[The precision is out of range](/scripting/javascript/misc/the-precision-is-out-of-range)|  
+|5025|[The URI to be decoded is not a valid encoding](/scripting/javascript/misc/the-uri-to-be-decoded-is-not-a-valid-encoding)|  
+|5024|[The URI to be encoded contains an invalid character](/scripting/javascript/misc/the-uri-to-be-encoded-contains-an-invalid-character)|  
+|5009|[Undefined identifier](/scripting/javascript/misc/undefined-identifier)|  
+|5018|[Unexpected quantifier](/scripting/javascript/misc/unexpected-quantifier-javascript)|  
+|5013|[VBArray expected](/scripting/javascript/misc/vbarray-expected)|  
 
 ## Security codes
 
@@ -318,7 +318,7 @@ SEC7128 | "Multiple Access-Control-Allow-Origin headers are not allowed for CORS
 SEC7129 | "Multiple Access-Control-Allow-Credentials headers are not allowed for CORS response." | The response header contained multiple Access-Control-Allow-Credentials headers. | This is a server-side error. The server should return a single Access-Control-Allow-Credentials header. Report this error to the developer in charge of the server-side resource.
 SEC7130 | "Potential cross-site scripting detected in [URL]. The content has been modified by the XSS Filter." | The [XSS filter](https://msdn.microsoft.com/library/dd565647.aspx) detected potentially malicious content in the response from the resource and removed the offending content. | Find out more about the [XSS filter](https://msdn.microsoft.com/library/dd565647.aspx).
 SEC7131 | "Security of a sandboxed iframe is potentially compromised by allowing script and same origin access." | If the content in a sandboxed iframe comes from an untrusted or unsecured source, it could escape the sandbox when script and same origin access are both allowed. | This is an informational warning message and should not affect functionality. We recommended that you avoid combining these permissions unless you're sure of what will be run in the iframe.
-SEC7132 | "The certificate protecting this web site uses weak cryptography" | The TLS security certificate used by this website uses weak cryptography | Update the server’s TLS certificate
+SEC7132 | "The certificate protecting this web site uses weak cryptography" | The TLS security certificate used by this website uses weak cryptography | Update the server's TLS certificate
 
 > Note
 > For websites in a user's trusted security zone, Microsoft Edge doesn't check the MIME type of a style sheet.
@@ -328,8 +328,8 @@ SEC7132 | "The certificate protecting this web site uses weak cryptography" | Th
 
 Code | Message | Description | Suggested fix
 :------------ | :------------- | :------------- | :-------------
-SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/library/ff972086.aspx) string isn't formatted correctly, or it contains unrecognized commands. | Check the format of the commands.
-SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/en-us/library/ff972113.aspx) is formatted incorrectly. | Make sure the points are complete and correctly formatted for the user coordinate system.
+SVG5601 | "SVG Path data has incorrect format and could not be completely parsed." | The SVG [Path](https://msdn.microsoft.com/library/ff972086.aspx) string isn't formatted correctly, or contains unrecognized commands. | Check the format of the commands.
+SVG5602 | "SVG Point list has incorrect format and could not be completely parsed." | The list of points used for an element, such as a [polyline](https://msdn.microsoft.com/library/ff972113.aspx), is formatted incorrectly. | Make sure that points are complete and correctly formatted for the users coordinate system.
 
 ## XML codes
 XML codes are in the form of XML5xxx, such as XML5603.
@@ -399,10 +399,10 @@ XML codes are in the form of XML5xxx, such as XML5603.
 | XML5659 | "Declared prefix."                                                                                                                                    |
 | XML5660 | "The specified prefix has not been declared."                                                                                                         |
 | XML5661 | "Non-default namespace declarations must not have an empty URI."                                                                                      |
-| XML5662 | "The "xml" prefix is reserved and must have the URI "<http://www.w3.org/XML/1998/namespace/>"."                                                       |
+| XML5662 | "The "xml" prefix is reserved and must have the URI "<https://w3.org/XML/1998/namespace/>"."                                                       |
 | XML5663 | "The "xmlns" prefix is reserved for use by XML."                                                                                                      |
-| XML5664 | "The xml namespace URI (<http://www.w3.org/XML/1998/namespace/>) must only be assigned to the prefix "xml"."                                          |
-| XML5665 | "The xmlns namespace URI (<http://www.w3.org/2000/xmlns/>) is reserved and must not be used."                                                         |
+| XML5664 | "The xml namespace URI (<https://w3.org/XML/1998/namespace/>) must only be assigned to the prefix "xml"."                                          |
+| XML5665 | "The xmlns namespace URI (<https://w3.org/2000/xmlns/>) is reserved and must not be used."                                                         |
 | XML5666 | "SC_E_SC"                                                                                                                                             |
 | XML5667 | "Exceeded maximum depth of nested elements."                                                                                                          |
 | XML5668 | "Exceeded maximum number of entity expansions."                                                                                                       |
@@ -411,10 +411,10 @@ XML codes are in the form of XML5xxx, such as XML5603.
 | XML5671 | "WR_E_NSPREFIXDECLARED: writer: namespace prefix is already declared with a different namespace."                                                     |
 | XML5672 | "WR_E_NSPREFIXWITHEMPTYNSURI: writer: cannot use prefix with empty namespace URI."                                                                    |
 | XML5673 | "WR_E_DUPLICATEATTRIBUTE: writer: duplicate attribute."                                                                                               |
-| XML5674 | "WR_E_XMLNSPREFIXDECLARATION: writer: cannot redefine the xmlns prefix."                                                                             |
-| XML5675 | "WR_E_XMLPREFIXDECLARATION: writer: xml prefix must have the <http://www.w3.org/XML/1998/namespace/> URI."                                            |
-| XML5676 | "WR_E_XMLURIDECLARATION: writer: xml namespace URI (<http://www.w3.org/XML/1998/namespace/>) must be assigned only to prefix "xml"."                  |
-| XML5677 | "WR_E_XMLNSURIDECLARATION: writer: xmlns namespace URI (<http://www.w3.org/2000/xmlns/>) is reserved and must not be used."                           |
+| XML5674 | "WR_E_XMLNSPREFIXDECLARATION: writer: can not redefine the xmlns prefix."                                                                             |
+| XML5675 | "WR_E_XMLPREFIXDECLARATION: writer: xml prefix must have the <https://w3.org/XML/1998/namespace/> URI."                                            |
+| XML5676 | "WR_E_XMLURIDECLARATION: writer: xml namespace URI (<https://w3.org/XML/1998/namespace/>) must be assigned only to prefix "xml"."                  |
+| XML5677 | "WR_E_XMLNSURIDECLARATION: writer: xmlns namespace URI (<https://w3.org/2000/xmlns/>) is reserved and must not be used."                           |
 | XML5678 | "WR_E_NAMESPACEUNDECLARED: writer: namespace is not declared."                                                                                        |
 | XML5679 | "WR_E_INVALIDXMLSPACE: writer: invalid value of xml:space attribute (allowed values are "default" and "preserve")."                                   |
 | XML5680 | "WR_E_INVALIDACTION: writer: performing the requested action would result in invalid XML document."                                                   |
@@ -424,4 +424,3 @@ XML codes are in the form of XML5xxx, such as XML5603.
 | XML5684 | "The Unicode value of the specified character entity is invalid."                                                                                     |
 | XML5685 | "Invalid encoding."                                                                                                                                   |
 | XML5686 | "Unspecified XML error."                                                                                                                              |
-
