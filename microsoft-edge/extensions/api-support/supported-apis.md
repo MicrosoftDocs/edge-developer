@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-#  Supported APIs  
+# Supported APIs  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
