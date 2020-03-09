@@ -37,7 +37,7 @@ To ensure Reading view renders your article's title:
 
 * Include a **title** element in your header
 * Include a meta tag with `name="title"`
-* Match the title text in your article body with the content string of your meta tag
+* Match the title text in your article body with the content string of your meta tag. Pipes `|` in your content string prevent the reader view from becoming active, try using hypens `-` instead.
 
 ### Author
 
