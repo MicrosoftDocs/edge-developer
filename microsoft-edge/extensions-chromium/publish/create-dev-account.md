@@ -3,7 +3,7 @@ description: The steps to create Microsoft Edge Addons developer account on Part
 title: Open A New Developer Account
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -18,9 +18,6 @@ Open a new Microsoft Edge Developer account.  Before you submit the Extension, y
 
 1.  Go to the [developer page][MicrosoftPartnerCenter] and select **GO TO DASHBOARD**.  
 1.  If you are not already signed in with a **Microsoft account**, sign in now, or create a new Microsoft account.  You use the same Microsoft account that you use to sign into your developer account.  After you sign in, this registration form is displayed:  
-    
-    > [!NOTE]
-    > If you are already registered as a Windows app developer with Microsoft, you are automatically registered with a Microsoft Edge developer account.  
     
 1.  Fill out the following fields.  
     

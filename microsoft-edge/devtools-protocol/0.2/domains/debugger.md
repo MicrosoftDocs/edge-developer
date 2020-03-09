@@ -3,7 +3,7 @@ description: Reference for the Debugger Domain. Debugger domain exposes JavaScri
 title: Debugger Domain - DevTools Protocol Version 0.2
 author: pelavall
 ms.author: pelavall
-ms.date: 8/17/2018
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -618,7 +618,7 @@ Fired when the debuggers breaks for a breakpoint or exception.
         </tr>
         <tr>
             <td>asyncStackTrace <br/> <i>optional</i></td>
-            <td><a href="#stacktrace"><code class="flyout">StackTrace</code></a></td>
+            <td><!--  <a href="#stacktrace">  --><code class="flyout">StackTrace</code><!--  </a>  --></td>
             <td>JavaScript async stack trace.</td>
         </tr>
     </tbody>

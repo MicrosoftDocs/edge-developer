@@ -2,7 +2,7 @@
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/20/2020
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,9 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, see [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
-If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  <!--For the reference on functions like `monitorEvents()` see [Console Utilities API Reference][DevToolsConsoleUtilities].  -->  
-
-<!--todo: add console/utilities when available -->  
+If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()` see [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
 ## Open the Console   
 
@@ -125,7 +123,7 @@ The top message in [Figure 8](#figure-8) shows the default grouping behavior of 
 
 -->
 
-<!--todo: add example foe ungrouping console items  -->  
+<!--todo: add example for ungrouping console items  -->  
 
 ### Persist messages across page loads   
 
@@ -297,7 +295,7 @@ You may use any of the following workflows to clear the Console:
 [DevToolsConsoleJavascript]: javascript.md "Get Started With Running JavaScript In The Console"  
 [DevToolsConsoleLiveExpressions]: live-expressions.md "Watch JavaScript Expression Values In Real-Time With Live Expressions"  
 [DevToolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
-<!--[DevToolsConsoleUtilities]: utilities.md "Console Utilities API Reference"  -->  
+[DevToolsConsoleUtilities]: utilities.md "Console Utilities API Reference"  
 
 [MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browsing context | MDN"  
 

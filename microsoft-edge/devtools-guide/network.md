@@ -3,7 +3,7 @@ description: Use the Network panel to monitor and profile page resource requests
 title: DevTools - Network
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
@@ -21,7 +21,7 @@ Use the **Network** panel to monitor, inspect and profile the requests and respo
 
 ![The Microsoft Edge  DevTools Network panel](./media/network.png)
 
- ## Network summary
+## Network summary
 
 When you open  DevTools, network profiling is turned on by default. All the network traffic from your active browser tab is recorded in the network summary list, even while you are working in a different  DevTools panel than *Network*.
 
@@ -64,15 +64,15 @@ Column | Description
 :------------ | :------------- 
 **Name** | Name and URL path of the request
 **Protocol** |  Type of protocol for the request (such as *HTTPS, HTTP/2*)
-**Method** |    [HTTP method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used for the request
-**Result** |    [HTTP response status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)  code
+**Method** |    [HTTP method](https://developer.mozilla.org/docs/Web/HTTP/Methods) used for the request
+**Result** |    [HTTP response status](https://developer.mozilla.org/docs/Web/HTTP/Status)  code
 **Content type** |  Type of media requested ([MIME type](https://en.wikipedia.org/wiki/Media_type))
 **Received** | Size of the response as delivered by the server (not calculated for cached responses)
 **Time** |  Time to load the server response (not calculated for cached responses)
 **Initiator** | Subsystem responsible for initiating the request (such as *Parser, Redirect, Script, Other*)
 **Timeline** | Visual timeline for the network events of the request (such as *Stalled, Resolving(DNS), Connecting(TCP), SSL, Sending, Waiting(TTFB), Downloading*). Hovering over the chart provides the more granular breakdown of network [network timings](#timings)).
 
- ### Summary bar
+### Summary bar
 
 The bar at the bottom of **Network** panel summarizes the total number of HTTP network errors, requests, data transfered, and load times during the network profiling session (i.e., since  DevTools were opened and recording network traffic).
 
@@ -80,20 +80,20 @@ The bar at the bottom of **Network** panel summarizes the total number of HTTP n
 
 **Elapsed time** means the time between the start of the profiling session and when the last resource was downloaded from the network. Resources fetched from the browser cache do not accrue time to this number. 
 
-**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
+**DOM load time** means the time between the start of the profiling session and when the [DOMContentLoaded](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) event was fired to indicate that the structure of the page document has been loaded and parsed (though not necessarily any stylesheets, images or subframes).
 
-**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/en-US/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
+**Page load time** time means the time between the start of the profiling session and when the [load](https://developer.mozilla.org/docs/Web/Events/load) event was fired to indicate that the page document (and all its resources) has been fully loaded.
 
- ## Request details
+## Request details
 
 Clicking on any entry in the [**Network summary**](#network-summary) list will open the [**Request details**](#request-details) pane with further information in each of the following tabs.
 
 ![Network request details pane](./media/network_request_details.png)
 
  ### Headers
-Displays the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
+Displays the [HTTP headers](https://developer.mozilla.org/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
- ### Body
+### Body
 Displays the body data (if available) of the request and response payloads.
 
 Image content is displayed with dimensions and size data.
@@ -102,12 +102,12 @@ Text content appears in a (read-only) editor with options to format minified con
 
 ![Body tab of the request details pane](./media/network_details_body.png)
 
- ### Parameters
+### Parameters
 Displays query string parameters for GET requests. While the parameters of POST requests are sent in the headers, GET requests include them in the URL. They're broken out here for easier reading.
 
 Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
- ### Cookies
+### Cookies
 Displays cookies that are sent or received as key/value pairs.
 
 Right-click on any row to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
@@ -156,7 +156,7 @@ Time spent waiting for the first byte of the response from the host server ("tim
 
 Time spent reading the response from the server.
 
- ## Shortcuts
+## Shortcuts
 
 | Action                         | Shortcut     |
 |:-------------------------------|:-------------|
