@@ -64,7 +64,7 @@ To specify the list of languages that are supported by your extension, you can a
 See [Supported languages](https://msdn.microsoft.com/windows/uwp/publish/supported-languages) for info on the languages/language codes that the Microsoft Store supports.
 
 
-In order to specify localized strings for all publically visible elements in the AppxManifest, you'll have to use a resource identifier in the format of `ms-resource:<resource id>`.
+In order to specify localized strings for all publicly visible elements in the AppxManifest, you'll have to use a resource identifier in the format of `ms-resource:<resource id>`.
 
 The snippets below make a complete AppxManifest. The following values should be retrieved from localized resource files:
 

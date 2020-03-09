@@ -1,9 +1,9 @@
 ---
 title: What's new in EdgeHTML 18
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 03/05/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
@@ -71,7 +71,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
 #### Text scaling
 
-The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user acessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
+The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user accessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
 
  For design guidance, check out the [Text scaling](/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.
 

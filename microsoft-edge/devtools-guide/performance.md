@@ -21,7 +21,7 @@ The **Performance** panel offers tools for profiling and analyzing the responsiv
 
 ![DevTools Performance panel](./media/performance.png)
 
- ## Recording a profile
+## Recording a profile
 
 The first step to analyzing the performance of your page is to capture a profile as you perform a particular user scenario, such as the repro steps of a performance bug you're trying to fix, or a typical use case you want to optimize for a better user experience. 
 
@@ -154,7 +154,7 @@ Use the lowermost details pane to get the full breakdown of what happened on the
 
 ### Event list
 
-The *Event list* gives you a chronological list of [browser subsystem events](#cpu-utilization) that occured during the selected span of time. 
+The *Event list* gives you a chronological list of [browser subsystem events](#cpu-utilization) that occurred during the selected span of time. 
 
 Click on any entry to populate the **Selected event details** chart for that item. Entries with nested events / functions will show their **inclusive** (time spent executing the function *and* any other functions it called) and **exclusive** (time spent only within the body of the calling function itself) times displayed in the chart.
 

@@ -114,7 +114,7 @@ When you are done, learn how to work with the simulator through [Apple Developer
 > [!NOTE]
 > To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and select **Keep in Dock**.  Now just click this icon whenever you need it.  
 
-###  Microsoft Edge (EdgeHTML)  
+### Microsoft Edge (EdgeHTML)  
 
 > ##### Figure 1  
 > Modern IE VM  
