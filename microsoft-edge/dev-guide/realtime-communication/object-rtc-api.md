@@ -4,7 +4,7 @@ description: Learn how Object Real-Time Communications (ORTC) enables media to b
 title: Dev guide - Object RTC API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -20,9 +20,9 @@ Object Real-Time Communications (ORTC) enables media (audio and/or video) to be 
 
 
 To get a hands-on experience with ORTC, try out these demos on Test Drive:
--  [SimpleWebRTC](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/simplewebrtc/)
--  [ORTC phone call](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/twilioortc/)
--  [ORTC demo](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/ortcdemo/)
+-  [SimpleWebRTC](https://developer.microsoft.com/microsoft-edge/testdrive/demos/simplewebrtc/)
+-  [ORTC phone call](https://developer.microsoft.com/microsoft-edge/testdrive/demos/twilioortc/)
+-  [ORTC demo](https://developer.microsoft.com/microsoft-edge/testdrive/demos/ortcdemo/)
 
 
 For more information about ORTC, check out [ORTC API is now available in Microsoft Edge](https://go.microsoft.com/fwlink/p/?LinkID=627564) on the Microsoft Edge dev blog.
@@ -57,7 +57,7 @@ Several other objects also play a role. The [`RTCIceGatherer`](https://msdn.micr
 * **Codec support.** For [audio codecs](https://msdn.microsoft.com/library/Mt599587), we support G.711, G.722, Opus and SILK. We also support Comfort Noise (CN) and DTMF according to the RTCWEB audio requirements. For video we currently support the [`H.264UC`](https://msdn.microsoft.com/library/Mt589706) codec used by Skype services, supporting advanced features such as simulcast, scalable video coding and forward error correction. We're working toward to enabling interoperable video with H.264.
 
 > [!NOTE]
-> If you are familiar with WebRTC 1.0 implementations, and are interested in the evolution of object support within WebRTC 1.0 and ORTC, we recommend the following presentation by Google, Microsoft, and Hookflash from the 2014 IIT RTC Conference: “[ORTC API Update](http://www.rtc-conference.com/2016/wp-content/uploads/gravity_forms/2-2f7a537445fa703985ab4d2372ac42ca/2014/10/ORTC_API_Update.pdf).”
+> If you are familiar with WebRTC 1.0 implementations, and are interested in the evolution of object support within WebRTC 1.0 and ORTC, we recommend the following presentation by Google, Microsoft, and Hookflash from the 2014 IIT RTC Conference: "[ORTC API Update](http://www.rtc-conference.com/2016/wp-content/uploads/gravity_forms/2-2f7a537445fa703985ab4d2372ac42ca/2014/10/ORTC_API_Update.pdf)."
 
 
 
@@ -214,7 +214,7 @@ Once familiar with setting up 1:1 calls, apply the same principles to set up sma
 ## Implementation details in Microsoft Edge
 
 
-The ORTC spec has been relatively stable since the ORTC Community Group issued the “Call for Implementations,” and significant challenges at the JavaScript API level are not expected. Based on this, Microsoft Edge implementation has been released for cross-browser interoperability testing at the protocol level.
+The ORTC spec has been relatively stable since the ORTC Community Group issued the "Call for Implementations," and significant challenges at the JavaScript API level are not expected. Based on this, Microsoft Edge implementation has been released for cross-browser interoperability testing at the protocol level.
 
 A few limitations in the Microsoft Edge implementation should be noted:
 
@@ -222,7 +222,7 @@ A few limitations in the Microsoft Edge implementation should be noted:
 * `RtpListener` is not yet supported. This means that SSRCs (stream and synchronization sources) need to be specified in advance within the [`RtpReceiver`](https://msdn.microsoft.com/library/Mt502508).
 * Forking is not yet supported in either `IceTransport`, `IceGatherer`, or `DtlsTransport`. The solution to `DtlsTransport` forking is still under discussion in the ORTC Community Group.
 * RTP/RTCP non-mux with `DtlsTransport` is not yet supported. When using `DtlsTransport` your application will need to support RTP/RTCP mux.
-* In [`RTCRtpEncodingParameters Dictionary`](https://msdn.microsoft.com/library/mt502505(v=vs.85).aspx), Microsoft Edge currently ignores most of the encoding quality controls, but does require setting the ‘active' and ‘ssrc' attributes.
+* In [`RTCRtpEncodingParameters Dictionary`](https://msdn.microsoft.com/library/mt502505(v=vs.85).aspx), Microsoft Edge currently ignores most of the encoding quality controls, but does require setting the 'active' and 'ssrc' attributes.
 * The `icecandidatepairchanged` event is not yet supported. You can extract the candidate pair information through the [`getNominatedCandidatePair`](https://msdn.microsoft.com/library/Mt433087) method.
 * Microsoft Edge currently does not support any of the `DataChannel` functionality currently defined in the ORTC spec.
 
@@ -238,11 +238,11 @@ Microsoft Edge implementation is still early, expect the feature set to continue
 
 ## Demos
 
-[SimpleWebRTC](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/simplewebrtc/)
+[SimpleWebRTC](https://developer.microsoft.com/microsoft-edge/testdrive/demos/simplewebrtc/)
 
-[ORTC phone call](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/twilioortc/)
+[ORTC phone call](https://developer.microsoft.com/microsoft-edge/testdrive/demos/twilioortc/)
 
-[ORTC demo](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/ortcdemo/)
+[ORTC demo](https://developer.microsoft.com/microsoft-edge/testdrive/demos/ortcdemo/)
 
 ## Related topics
 

@@ -28,7 +28,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 #### CreateWebView2EnvironmentWithDetails 
 
-> public STDAPI [CreateWebView2EnvironmentWithDetails](#createwebview2environmentwithdetails)(PCWSTR browserExecutableFolder,PCWSTR userDataFolder,PCWSTR additionalBrowserArguments,[IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md#iwebview2createwebview2environmentcompletedhandler) * environment_created_handler)
+> public STDAPI [CreateWebView2EnvironmentWithDetails](#createwebview2environmentwithdetails)(PCWSTR browserExecutableFolder,PCWSTR userDataFolder,PCWSTR additionalBrowserArguments,[IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
 
 DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional browser switches.
 
@@ -115,7 +115,7 @@ First we check with Root as HKLM and then HKCU. AppId is first set to the Applic
 
 #### CreateWebView2Environment 
 
-> public STDAPI [CreateWebView2Environment](#createwebview2environment)([IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md#iwebview2createwebview2environmentcompletedhandler) * environment_created_handler)
+> public STDAPI [CreateWebView2Environment](#createwebview2environment)([IWebView2CreateWebView2EnvironmentCompletedHandler](IWebView2CreateWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
 
 Creates an evergreen WebView2 Environment using the installed Edge version.
 

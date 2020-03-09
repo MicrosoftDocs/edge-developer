@@ -28,7 +28,7 @@ The caller implements this interface to receive NewVersionAvailable events.
 --------------------------------|---------------------------------------------
 [Invoke](#invoke) | Called to provide the implementer with the event args for the corresponding event.
 
-Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#iwebview2newversionavailableeventargs) to get the new version number.
+Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md) to get the new version number.
 
 ## Members
 
@@ -36,5 +36,5 @@ Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebVie
 
 Called to provide the implementer with the event args for the corresponding event.
 
-> public HRESULT [Invoke](#invoke)([IWebView2Environment](IWebView2Environment.md#iwebview2environment) * webviewEnvironment,[IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md#iwebview2newversionavailableeventargs) * args)
+> public HRESULT [Invoke](#invoke)([IWebView2Environment](IWebView2Environment.md) * webviewEnvironment,[IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md) * args)
 

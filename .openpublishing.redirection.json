@@ -2,23 +2,23 @@
   "redirections": [
     {
       "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/microsoft-browser-extension-policy",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/devtools-preview_software-license-terms",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/devtools_software-license-terms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/service-workers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/indexeddb.md",
@@ -73,7 +73,7 @@
     {
       "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/debugger/progressive-web-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/f12-devtools-guide/debugger/web-storage.md",
@@ -163,7 +163,7 @@
     {
       "source_path": "microsoft-edge/f12-devtools-guide/developer-tools-keyboard-shortcuts.md",
       "redirect_url": "/microsoft-edge/devtools-guide#general-shortcuts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/dev-guide/browser/flash.md",
@@ -233,6 +233,31 @@
     {
       "source_path": "microsoft-edge/dev-guide/tools/webdriver.md",
       "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/index.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/get-started.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/microsoft-store.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/microsoft-store",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/windows-features.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/windows-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/xbox-considerations.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/xbox-considerations",
       "redirect_document_id": true
     },
     {

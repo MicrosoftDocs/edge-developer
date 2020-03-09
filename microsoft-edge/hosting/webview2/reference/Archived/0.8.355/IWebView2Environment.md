@@ -26,7 +26,7 @@ This represents the WebView2 Environment.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[CreateWebView](#createwebview) | Asynchronously create a new [IWebView2WebView](IWebView2WebView.md#iwebview2webview).
+[CreateWebView](#createwebview) | Asynchronously create a new [IWebView2WebView](IWebView2WebView.md).
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
@@ -35,9 +35,9 @@ WebViews created from an environment run on the Browser process specified with e
 
 #### CreateWebView 
 
-Asynchronously create a new [IWebView2WebView](IWebView2WebView.md#iwebview2webview).
+Asynchronously create a new [IWebView2WebView](IWebView2WebView.md).
 
-> public HRESULT [CreateWebView](#createwebview)(HWND parentWindow,[IWebView2CreateWebViewCompletedHandler](IWebView2CreateWebViewCompletedHandler.md#iwebview2createwebviewcompletedhandler) * handler)
+> public HRESULT [CreateWebView](#createwebview)(HWND parentWindow,[IWebView2CreateWebViewCompletedHandler](IWebView2CreateWebViewCompletedHandler.md) * handler)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 
@@ -119,9 +119,9 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 Create a new web resource response object.
 
-> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content,int statusCode,LPCWSTR reasonPhrase,LPCWSTR headers,[IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#iwebview2webresourceresponse) ** response)
+> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content,int statusCode,LPCWSTR reasonPhrase,LPCWSTR headers,[IWebView2WebResourceResponse](IWebView2WebResourceResponse.md) ** response)
 
-The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#iwebview2httpresponseheaders) to construct the headers line by line. For information on other parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md#iwebview2webresourceresponse).
+The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md) to construct the headers line by line. For information on other parameters see [IWebView2WebResourceResponse](IWebView2WebResourceResponse.md).
 
 ```cpp
         if (m_blockImages)

@@ -33,7 +33,7 @@ Additional functionality implemented by the primary WebView object.
 [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | Adds a URI and resource context filter to the WebResourceRequested event.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
 
-You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md#iwebview2webview). See the [IWebView2WebView](IWebView2WebView.md#iwebview2webview) interface for more details.
+You can QueryInterface for this interface from the object that implements [IWebView2WebView](IWebView2WebView.md). See the [IWebView2WebView](IWebView2WebView.md) interface for more details.
 
 ## Members
 
@@ -41,7 +41,7 @@ You can QueryInterface for this interface from the object that implements [IWebV
 
 Notifies when the ContainsFullScreenElement property changes.
 
-> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([IWebView2ContainsFullScreenElementChangedEventHandler](IWebView2ContainsFullScreenElementChangedEventHandler.md#iwebview2containsfullscreenelementchangedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([IWebView2ContainsFullScreenElementChangedEventHandler](IWebView2ContainsFullScreenElementChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 This means that an HTML element inside the WebView is entering fullscreen to the size of the WebView or leaving fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of ContainsFullScreenElementChanged can then resize the WebView in response.
 
@@ -84,7 +84,7 @@ Indicates if the WebView contains a fullscreen HTML element.
 
 Add an event handler for the WebResourceRequested event.
 
-> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([IWebView2WebResourceRequestedEventHandler](IWebView2WebResourceRequestedEventHandler.md#iwebview2webresourcerequestedeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([IWebView2WebResourceRequestedEventHandler](IWebView2WebResourceRequestedEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
 Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
 

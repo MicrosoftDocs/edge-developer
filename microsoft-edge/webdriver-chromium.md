@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: zoherghadyali
 ms.author: zoghadya
-ms.date: 01/14/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -29,14 +29,14 @@ To find your correct build number: Launch Microsoft Edge and navigate to `edge:/
 > The build number for Microsoft Edge Canary on January 14, 2020
 > ![The build number for Microsoft Edge Canary on January 14, 2020](./media/webdriver-chromium/edge-version.png)  
 
-Now, download the matching version of Microsoft Edge Driver from [this page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads).
+Now, download the matching version of Microsoft Edge Driver from [this page](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads).
 
 > ##### Figure 2
-> The Downloads section of the [Microsoft Edge Driver page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads)
+> The Downloads section of the [Microsoft Edge Driver page](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads)
 > ![The Downloads section of the Microsoft Edge Driver page](./media/webdriver-chromium/edge-driver-install.png)  
 
 > [!NOTE]
-> Microsoft Edge (EdgeHTML) does not work with [Microsoft Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/#downloads). To automate Microsoft Edge (EdgeHTML), you will need to download [Microsoft WebDriver for Microsoft Edge (EdgeHTML)](./webdriver.md).
+> Microsoft Edge (EdgeHTML) does not work with [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads). To automate Microsoft Edge (EdgeHTML), you will need to download [Microsoft WebDriver for Microsoft Edge (EdgeHTML)](./webdriver.md).
 
 ## Download a WebDriver language binding
 The last component you need to download is a language-specific client driver. The language binding will translate the code you write in Python, Java, C#, Ruby, and JavaScript into commands that the Microsoft Edge Driver you downloaded in the [previous section](#download-microsoft-edge-driver) can run in Microsoft Edge (Chromium).
@@ -109,7 +109,7 @@ service.Dispose();
 
 <!-- If time permits, for MGP, document the DesiredCapabilities object with help from: https://sites.google.com/a/chromium.org/chromedriver/capabilities -->
 > [!IMPORTANT]
-> If you were previously automating or testing Microsoft Edge (Chromium) by using `ChromeDriver` and `ChromeOptions`, your WebDriver code will not run successfully against Microsoft Edge 80 or later. This is a **breaking change** and Microsoft Edge (Chromium) no longer accepts these commands. You must change your tests to use `EdgeOptions` and [Microsoft Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver).
+> If you were previously automating or testing Microsoft Edge (Chromium) by using `ChromeDriver` and `ChromeOptions`, your WebDriver code will not run successfully against Microsoft Edge 80 or later. This is a **breaking change** and Microsoft Edge (Chromium) no longer accepts these commands. You must change your tests to use `EdgeOptions` and [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 ## Other ways to set up WebDriver
 ### Chocolatey
@@ -122,7 +122,7 @@ choco install selenium-chromium-edge-driver
 Read more about this package on Chocolatey [here](https://chocolatey.org/packages/selenium-chromium-edge-driver).
 
 ### Docker
-If you are using [Docker](https://hub.docker.com/), you can get a pre-configured image with Microsoft Edge (Chromium) and [Microsoft Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) already installed by running this command:
+If you are using [Docker](https://hub.docker.com/), you can get a pre-configured image with Microsoft Edge (Chromium) and [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/) already installed by running this command:
 
 ```console
 docker run -d -p 9515:9515 stanleyhon348/msedgedriver

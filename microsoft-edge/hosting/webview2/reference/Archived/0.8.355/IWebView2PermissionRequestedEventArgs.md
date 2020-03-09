@@ -31,7 +31,7 @@ Event args for the PermissionRequested event.
 [get_IsUserInitiated](#get_isuserinitiated) | True when the permission request was initiated through a user gesture.
 [get_State](#get_state) | The status of a permission request, i.e.
 [put_State](#put_state) | Set the State property.
-[GetDeferral](#getdeferral) | GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object.
+[GetDeferral](#getdeferral) | GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md) object.
 
 ## Members
 
@@ -71,9 +71,9 @@ Set the State property.
 
 #### GetDeferral 
 
-GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) object.
+GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md) object.
 
-> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md#iwebview2deferral) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
 Developer can use the deferral object to make the permission decision at a later time.
 

@@ -1,7 +1,7 @@
 ---
 title: "Using the Windows Runtime in JavaScript | Microsoft Docs"
 ms.custom: ""
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -20,7 +20,7 @@ manager: ""
 # Using the Windows Runtime in JavaScript
 When you write a Universal Windows Platform (UWP) app, you can use Windows Runtime classes, methods, and properties in much the same way that you would use native JavaScript objects, methods, and properties. This topic provides introductory information and links to topics that explain the basic concepts of using Windows Runtime APIs in JavaScript, including an explanation of how Windows Runtime types are represented, how to use asynchronous Windows Runtime methods, and how to listen to and handle Windows Runtime events.  
   
-For general language documentation, check out MDN's [JavaScript reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) library.  
+For general language documentation, check out MDN's [JavaScript reference](https://developer.mozilla.org/docs/Web/JavaScript/Reference) library.  
   
 > [!IMPORTANT]
 >  Windows Runtime features are not available for apps that run in Internet Explorer.  

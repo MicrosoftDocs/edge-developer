@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
@@ -25,9 +25,7 @@ This guide shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a
 ## Prerequisites  
 
 *   An existing PWA \(or hosted web app\), either a live or localhost site.  This guide uses the sample PWA from [Get started with Progressive Web Apps][PwaGetStarted].  
-
 *   Download the \(free\) [Visual Studio Community 2017][MicrosoftVisualStudioDownloads].  You are also able to use the Professional, Enterprise, or [Preview][MicrosoftVisualStudioPreview] editions.  From the Visual Studio Installer, choose the following Workloads:  
-
     *   **Universal Windows Platform development**  
 
 ## Set up and run your Universal Windows app  
@@ -37,44 +35,33 @@ A PWA \(EdgeHTML\) installed as a Windows 10 app runs independently from the bro
 Set up your Windows app development environment in Visual Studio.  
 
 1.  In your Windows Settings, turn on [Developer mode][WindowsUWPGetStartedEnable].  \(Type `developer mode` in the Windows searchbar to find it.\)  
-
-1.  Launch Visual Studio and **Create new project...**  
-
-1.  Under the **JavaScript** > **Windows Universal** category, select **Windows Application Packaging Project**.  If you are using a previous version of Visual Studio, find the equivalent template under `Hosted Web App (Universal Windows)` or `Progressive Web App (Universal Windows)`.
-
+1.  Launch Visual Studio and **Create a new project...**  
+1.  Select the C# **Windows Application Packaging Project** template.  If you are using a previous version of Visual Studio, find the equivalent template under **Hosted Web App (Universal Windows)** or **Progressive Web App (Universal Windows)**.  
 1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and click **OK**.  
 
     ![Visual Studio selection dialog for UWP project target builds](media/vs-target-min-version.png)  
 
     Your new project loads with the package.appxmanifest designer open.  This is where you configure the details of your app, including package identity, package dependencies, required capabilities, visual elements, and extensibility points.  This is an easily configurable, temporary version of the app package manifest used during app development.  
-
     When you build your app project, [Visual Studio generates an AppxManifest.xml][UwpSchemasAppxpackageUapmanifestschemaGeneratePackageManifest] file from this metadata, which is used to install and run your app.  Whenever you update your `package.appxmanifest` file, be sure to rebuild the project so both are reflected in your `AppxManifest.xml` at runtime.  
 
 1.  In the manifest designer **Application** panel, enter the URL of your PWA as the `Start page`.
 
     > [!NOTE]
     > Service workers are supported for all https \(secure, remote\) urls specified as the `StartPage`.  Service workers are not supported by default for web apps that specify a local start page.  To enable service worker support for these cases, add an explicit [ApplicationContentUriRules](#set-application-content-uri-rules-acurs) entry to the manifest, for example: `<uap:Rule Match="http://web-platform.test/" Type="include" uap5:ServiceWorker="true"/>`  
-
-   ![Application panel of package.appxmanifest designer](media/vs-manifest-application.png)  
-
-   You are able to also modify the `Display name` and `Description` as you like.  
-
-1.  Save this file \(or another 512x512 image of your choosing\) to your desktop.  
-
-    Then, in the manifest designer **Visual Assets** panel, click on the `Source` field **...** button, select it as your source file, and click **Generate**.  \(Then click **OK** to overwrite the default placeholder images\).  
-
-    ![Visual Assets panel of package.appxmanifest designer](media/vs-manifest-visual-assets.png)  
-
-    This generates the basic visual assets for installing, running, launching, and distributing your app in the store.  
     
+    ![Application panel of package.appxmanifest designer](media/vs-manifest-application.png)  
+    
+    You are able to also modify the `Display name` and `Description` as you like.  
+1.  Save this file \(or another 512x512 image of your choosing\) to your desktop.  
+    Then, in the manifest designer **Visual Assets** panel, click on the `Source` field **...** button, select it as your source file, and click **Generate**.  \(Then click **OK** to overwrite the default placeholder images\).  
+    
+    ![Visual Assets panel of package.appxmanifest designer](media/vs-manifest-visual-assets.png)  
+    
+    This generates the basic visual assets for installing, running, launching, and distributing your app in the store.  
     If you see any red \(`X`\) errors indicating missing images, you are able to click on the **...** buttons to manually select a file from the generated images.  
-
 1.  In the manifest designer **Content URIs** panel, replace `http://example.com` with the location of your PWA \(such that `Rule` = `include` and `WinRT Access` = `All`\).  
-
     This grants your PWA permission to send native Windows Runtime \(WinRT\) API requests when running as a Windows 10 app, which is covered a bit later.   If your actual PWA does not require WinRT access, you are able to switch the `WinRT Access` value to `None`.  Either way, be sure to sub out the default `http://example.com` string with the URI of your PWA, or your app is not able to properly load at runtime.  
-
     You are ready to run and debug your PWA as a Windows 10 app.  If you are using a localhost site to step through this guide, make sure it is running.  Then,  
-
 1.  Build \(`Ctrl`+`Shift`+`F5`\) and Run \(`F5`\) your PWA project.  Your website should now launch in a standalone app window.  Not only is it a hosted web app; it is running as a Progressive Web App installed on Windows 10!  
 
     ![PWA running in a WWAHost.exe window](media/wwahost.png)  
@@ -88,17 +75,13 @@ For client-side debugging within your Windows 10 app, you must have the `Microso
 Here is how to set up debugging for your PWA \(EdgeHTML\).  
 
 1.  Install the [Microsoft Edge DevTools Preview][MicrosoftStoreEdgeDevtoolsPreview] app from the Microsoft Store if you do not already have it.  
-
 1.  With your PWA site up and running, launch the DevTools app.  
-
 1.  From Visual Studio, launch your Windows 10 app with the `Start Without Debugging` (`Ctrl`+`F5`) command.  \(The DevTools app does not attach properly if the Visual Studio debugger is active.\)  
-
-1.  In the DevTools app, click the **Refresh** button in the Local debug target chooser.  Your PWA \(EdgeHTML\) site should now be listed.  \(If it is also running in a browser window, it is the last instance of that site in the list.\)
-
+1.  In the DevTools app, click the **Refresh** button in the Local debug target chooser.  Your PWA \(EdgeHTML\) site should now be listed.  \(If it is also running in a browser window, it is the last instance of that site in the list.\)  
 1.  Click on your PWA \(EdgeHTML\) site listing to open a new DevTools instance tab and start debugging.  
-
+    
     ![Local Debug Targets chooser in the Microsoft Edge DevTools app](media/devtools-local.png)  
-
+    
 1.  You are able to verify that DevTools is attached to your PWA-running-as-Windows-app.  In the DevTools **Console**, type:  
     
     ```shell
@@ -106,7 +89,7 @@ Here is how to set up debugging for your PWA \(EdgeHTML\).
     ```  
     
     This returns the global `Windows Runtime` object containing all of the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis).  This is your PWA \(EdgeHTML\) entrypoint to the [Universal Windows Platform][WindowsUWPIndex], and only exposed to web apps that run as Windows 10 apps (running outside the browser, in a `WWAHost.exe` process).  
-
+    
 ## Find Windows Runtime \(WinRT\) APIs  
 
 As an installed Windows app, your [PWA \(EdgeHTML\) has full access to native Windows Runtime APIs][WindowsRuntime]; identify what you need to use, obtain the requisite permissions, and employ feature detection to to send that API request on supported environments.  Walk through this process to add a progressive enhancement for Windows desktop users of your PWA.  
@@ -115,16 +98,14 @@ There are a number of ways to identify the Universal Windows Platform APIs you n
 
 There are a number of ways to identify the Universal Windows Platform APIs you need for your Windows PWA, including searching the comprehensive [UWP docs on Windows Dev Center][uwp/api/], downloading and running [UWP code samples](#uwp-code-samples) with Visual Studio, and browsing code snippets for common tasks for [PWAs on Windows 10 (EdgeHTML)][PwaIndexWindows10].  
 
-Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may follow the general [Universal Windows Platform documentation][WindowsUWPIndex] and [API Reference][UwpApiIndex] for usage.  However, please note the following differences:
+Overall, WinRT APIs work in JavaScript the same way they do in C#, so you may follow the general [Universal Windows Platform documentation][WindowsUWPIndex] and [API Reference][UwpApiIndex] for usage.  However, please note the following differences:  
 
-*   WinRT features in JavaScript use  [different casing conventions][ScriptingJsinrtUsingWinRTCasingConventions]
-*   [Events are represented as string identifiers][ScriptingJsinrtHandlingWinRTEvents] passed to class `addEventListener`/`removeEventListener` methods
-*   [Asynchronous methods][ScriptingJsinrtUsingWinRT] use the JavaScript Promise model
-*   APIs in the `Windows.UI.Xaml` namespace are not supported for JavaScript apps, which instead use the [EdgeHTML][DevGuideWhatsNew] engine web rendering stack \(HTML, CSS\)
+*   WinRT features in JavaScript use  [different casing conventions][ScriptingJsinrtUsingWinRTCasingConventions]  
+*   [Events are represented as string identifiers][ScriptingJsinrtHandlingWinRTEvents] passed to class `addEventListener`/`removeEventListener` methods  
+*   [Asynchronous methods][ScriptingJsinrtUsingWinRT] use the JavaScript Promise model  
+*   APIs in the `Windows.UI.Xaml` namespace are not supported for JavaScript apps, which instead use the [EdgeHTML][DevGuideWhatsNew] engine web rendering stack \(HTML, CSS\)  
 
-For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].
-
-For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].
+For more details, see [Using the Windows Runtime in JavaScript][WindowRuntimeUsingJavascript].  
 
 ### UWP code samples  
 
@@ -165,7 +146,7 @@ If any of these API requests involve access to user resources like pictures or m
 
 Through ACURs, otherwise known as a URL allow list, you are able to give the URLs of your PWA \(EdgeHTML\) direct access to Windows Runtime APIs.  At the Windows OS level, the right policy bounds are set to allow code hosted on your web server to directly send platform API requests.  You define these bounds in the app package manifest file when you specify your PWA URLs as `ApplicationContentUriRules`.  
 
-Your rules should include the start page for your app and any other pages you want included as app pages.  If your user navigates to a URL that is not included in your rules, Windows opens the target URL in the Microsoft Edge browser rather than your standalone PWA \(EdgeHTML\) window \(`WWAHost.exe` process\).  You may also exclude specific URLs.    
+Your rules should include the start page for your app and any other pages you want included as app pages.  If your user navigates to a URL that is not included in your rules, Windows opens the target URL in the Microsoft Edge browser rather than your standalone PWA \(EdgeHTML\) window \(`WWAHost.exe` process\).  You may also exclude specific URLs.  
 
 There are several ways to specify a URL `Match` in your rules:  
 
@@ -211,7 +192,7 @@ If your app needs programmatic access to user resources like pictures or music, 
 
 Your Microsoft Store app page lists all the capabilities you declare in your app package manifest, so be sure to only specify the capabilities that your app actually uses.
 
-Some capabilities provide apps access to sensitive resources.  These resources are considered sensitive because each is able to access the user’s personal data or cost the user money.  Privacy settings, managed by the Windows 10 [Settings][BingResultsWindows10Settings] app, let the user dynamically control access to sensitive resources.  Thus, it is important that your app does not assume a sensitive resource is always available.  For more info about accessing sensitive resources, see [Guidelines for privacy-aware apps][WindowsUwpSecurityIndex].  
+Some capabilities provide apps access to sensitive resources.  These resources are considered sensitive because each is able to access the user's personal data or cost the user money.  Privacy settings, managed by the Windows 10 [Settings][BingResultsWindows10Settings] app, let the user dynamically control access to sensitive resources.  Thus, it is important that your app does not assume a sensitive resource is always available.  For more info about accessing sensitive resources, see [Guidelines for privacy-aware apps][WindowsUwpSecurityIndex].  
 
 You request access by declaring capabilities in the package manifest for your app.  In Visual Studio, you are able to do this from the **Capabilities** panel of the package.appxmanifest designer.  
 

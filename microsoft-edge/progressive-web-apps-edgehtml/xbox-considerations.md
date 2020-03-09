@@ -3,7 +3,7 @@ description: Ensure your PWA provides a great experience for Xbox
 title: Tailor your PWA for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
@@ -23,7 +23,7 @@ Now you're ready to deploy your app for testing using either *PWA Builder* or *V
 
 ### Option 1: PWA Builder
 
-[PWA Builder](https://www.pwabuilder.com/) is a Node.js app you can install from Node Package Manager (NPM). It uses the metadata of your website to generate native hosted apps across Android, iOS and Windows. If your site already has a [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest), PWA Builder will use it to generate platform-specific installation packages. Otherwise, PWA Builder will generate a basic *manifest.json* file based on the characteristics of your site.
+[PWA Builder](https://www.pwabuilder.com/) is a Node.js app you can install from Node Package Manager (NPM). It uses the metadata of your website to generate native hosted apps across Android, iOS and Windows. If your site already has a [web app manifest](https://developer.mozilla.org/docs/Web/Manifest), PWA Builder will use it to generate platform-specific installation packages. Otherwise, PWA Builder will generate a basic *manifest.json* file based on the characteristics of your site.
 
 #### Requirements
  - [Node.js](https://nodejs.org/en/), which includes NPM.
@@ -58,7 +58,7 @@ The free, full-featured [Visual Studio Community 2017](https://visualstudio.micr
 
 #### Setup
 
-1. Follow the steps to [set up and run your PWA as a Universal Windows app](/microsoft-edge/progressive-web-apps/windows-features#set-up-and-run-your-universal-windows-app). With this, you'll have a fully functioning Windows 10 app capable of accessing Universal Windows APIs.
+1. Follow the steps to [set up and run your PWA as a Universal Windows app](/microsoft-edge/progressive-web-apps-edgehtml/windows-features#set-up-and-run-your-universal-windows-app). With this, you'll have a fully functioning Windows 10 app capable of accessing Universal Windows APIs.
 
 2. You can now deploy and debug your PWA (as a UWP app) on the Xbox One (as with any other Windows 10 remote device) using the [Visual Studio remote debugger](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine?view=vs-2017
 ). Alternately, you can install your PWA using the [Device Portal for Xbox](/windows/uwp/debug-test-perf/device-portal-xbox) using the following steps.
@@ -67,7 +67,7 @@ The free, full-featured [Visual Studio Community 2017](https://visualstudio.micr
 
 4. Navigate to the package folder you generated for your app in Step 1 and select the *.appx* file for upload. The [*.appx* file](/windows/uwp/packaging/packaging-uwp-apps) is a UWP app package file that can be sideloaded on any device for testing purposes.
 
-5. Next tap the **Dependencies** button and select the *dependencies* sub-folder for your app and upload each one. This step is only required for deploying apps from the Device Portal for Xbox. Visual Studio delivers dependencies when remote debugging and the end user’s machine will already have these installed when delivered from the Microsoft Store.
+5. Next tap the **Dependencies** button and select the *dependencies* sub-folder for your app and upload each one. This step is only required for deploying apps from the Device Portal for Xbox. Visual Studio delivers dependencies when remote debugging and the end user's machine will already have these installed when delivered from the Microsoft Store.
 
 6. With the app package and the dependencies uploaded, click the **Go** button under the *Deploy* section and the app will be installed. You're ready to launch your app from Xbox!
 
@@ -118,7 +118,7 @@ To enable directional navigation, include the following script reference:
 <script src="directionalnavigation-1.0.0.0.js"></script>
 ```
 
-By default, only `<a>`, `<button>`, `<input>`, `<select>`, and `<textarea>` elements are focusable. To enable focus on other elements, assign them a valid [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
+By default, only `<a>`, `<button>`, `<input>`, `<select>`, and `<textarea>` elements are focusable. To enable focus on other elements, assign them a valid [tabindex](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/tabindex).
 
 ```HTML
 <div tabindex="0″>This div is eligible for focus</div>
@@ -132,11 +132,11 @@ If you're building a media playback PWA for Xbox One, be aware of the following 
 
 ### Encrypted Media Extensions (EME) in the browser
 
-The Microsoft Edge browser on Xbox One does not support [Encrypted Media Extensions](https://developer.mozilla.org/en-US/docs/Web/API/Encrypted_Media_Extensions_API) (EME). If your media PWA uses it for digital rights management (DRM), you won't be able to run it from the browser on your Xbox. Instead, prototype and test it as a [Xbox One app using PWABuilder or Visual Studio](#deploying-and-testing-pwas-on-xbox), as described above. You can also run it on the Microsoft Edge browser on Windows, where EME is fully supported.
+The Microsoft Edge browser on Xbox One does not support [Encrypted Media Extensions](https://developer.mozilla.org/docs/Web/API/Encrypted_Media_Extensions_API) (EME). If your media PWA uses it for digital rights management (DRM), you won't be able to run it from the browser on your Xbox. Instead, prototype and test it as a [Xbox One app using PWABuilder or Visual Studio](#deploying-and-testing-pwas-on-xbox), as described above. You can also run it on the Microsoft Edge browser on Windows, where EME is fully supported.
 
 ### Integrating with System Media Transport Controls
 
-If your app is a media app, it is important that your app responds to the media controls initiated by the user via on-screen buttons, [Cortana voice commands](https://support.xbox.com/en-US/xbox-one/console/cortana-voice-commands), the [System Media Transport Controls](/windows/uwp/audio-video-camera/system-media-transport-controls) in the nav pane, or the [Xbox](https://www.microsoft.com/p/xbox/9wzdncrfjbd8
+If your app is a media app, it is important that your app responds to the media controls initiated by the user via on-screen buttons, [Cortana voice commands](https://support.xbox.com/xbox-one/console/cortana-voice-commands), the [System Media Transport Controls](/windows/uwp/audio-video-camera/system-media-transport-controls) in the nav pane, or the [Xbox](https://www.microsoft.com/p/xbox/9wzdncrfjbd8
 ) and [Xbox One SmartGlass](https://www.microsoft.com/p/xbox-one-smartglass/9wzdncrfhvx2) apps on other devices. Take a look at the [MediaPlayer](https://github.com/Microsoft/TVHelpers/wiki/MediaPlayer-Overview) control from the [TVJS library](#tvjs), which automatically integrates with these controls. Alternately, you can manually [integrate with the System Media Transport Controls](https://msdn.microsoft.com/windows/uwp/audio-video-camera/system-media-transport-controls).
 
 ### PlayReady content encryption
@@ -152,6 +152,6 @@ At the time of this writing, [`cbcs` encoding support is limited](/playready/pac
 
 [Xbox best practices](/windows/uwp/xbox-apps/tailoring-for-xbox): Follow these best practices to tailor your app for Xbox One.
 
-[PWAs in the Microsoft Store](/microsoft-edge/progressive-web-apps/microsoft-store): Here's how (and why!) to Submit your PWA to the Microsoft Store.
+[PWAs in the Microsoft Store](/microsoft-edge/progressive-web-apps-edgehtml/microsoft-store): Here's how (and why!) to Submit your PWA to the Microsoft Store.
 
 [UWP on Xbox One](/windows/uwp/xbox-apps/): A complete guide to UWP app development for Xbox One.

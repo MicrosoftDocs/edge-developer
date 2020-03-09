@@ -52,7 +52,7 @@ Select a **Visibility** option to define the audience who may discover and acqui
     If you select `Hidden`, your Extension is hidden in Microsoft Edge Addons from users searching or browsing; you must share your listing URL to distribute your Extension.  Users who have the direct link to the listing may download it on Microsoft Edge \(you may find your listing URL under **Extension Overview** page of Extension submission\).  
 
 > [!NOTE]
-> If you submit an Extension as **Public** and later change it to **Private**, Users who installed the Extension when it was private continue to have access and receive future updates.  
+> If you submit an Extension as **Public** and later change it to **Private**, Users who installed the Extension when it was public continue to have access and receive future updates.  
 
 ### Define markets  
 

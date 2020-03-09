@@ -29,7 +29,7 @@ Additional functionality implemented by the Environment object.
 [add_NewVersionAvailable](#add_newversionavailable) | The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [remove_NewVersionAvailable](#remove_newversionavailable) | Remove an event handler previously added with add_NewVersionAvailable.
 
-See the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md#iwebview2environment).
+See the [IWebView2Environment](IWebView2Environment.md) interface for more details. You can QueryInterface for this interface from the object that implements [IWebView2Environment](IWebView2Environment.md).
 
 ## Members
 
@@ -37,11 +37,11 @@ See the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) int
 
 The NewVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 
-> public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md#iwebview2newversionavailableeventhandler) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NewVersionAvailable](#add_newversionavailable)([IWebView2NewVersionAvailableEventHandler](IWebView2NewVersionAvailableEventHandler.md) * eventHandler,EventRegistrationToken * token)
 
-To use the newer version of the browser you must create a new [IWebView2Environment](IWebView2Environment.md#iwebview2environment) and [IWebView2WebView](IWebView2WebView.md#iwebview2webview). Event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
+To use the newer version of the browser you must create a new [IWebView2Environment](IWebView2Environment.md) and [IWebView2WebView](IWebView2WebView.md). Event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
 
-Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the [IWebView2Environment](IWebView2Environment.md#iwebview2environment) and IWebView2WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
+Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the [IWebView2Environment](IWebView2Environment.md) and IWebView2WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
 
 ```cpp
     // After the environment is successfully created,

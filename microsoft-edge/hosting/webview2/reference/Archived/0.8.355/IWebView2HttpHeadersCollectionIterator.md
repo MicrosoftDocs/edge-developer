@@ -29,7 +29,7 @@ Iterator for a collection of HTTP headers.
 [GetCurrentHeader](#getcurrentheader) | Get the name and value of the current HTTP header of the iterator.
 [MoveNext](#movenext) | Move the iterator to the next HTTP header in the collection.
 
-See [IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md#iwebview2httprequestheaders) and [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md#iwebview2httpresponseheaders).
+See [IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md) and [IWebView2HttpResponseHeaders](IWebView2HttpResponseHeaders.md).
 
 ## Members
 
