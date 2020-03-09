@@ -2,12 +2,12 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 05/29/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -135,9 +135,8 @@ To manually clear the browser cache at any time, right-click anywhere in the Req
 
 ### Emulate offline   
 
-A new class of web apps, called **Progressive Web Apps**, functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.  
+A new class of web apps, called [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.  
 
-<!--[ProgressiveWebApps]: /web/progressive-web-apps  -->
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
 Click the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate a completely offline network experience.  
@@ -685,6 +684,8 @@ Deselect the **Show Overview** checkbox to hide it.
 [ImageWaterfallTotalDuration]: images/network-waterfall-total-duration.msft.png "Figure 14: Sorting the Waterfall by total duration"  
 
 <!-- links -->  
+
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debug Progressive Web Apps"  
 
 <!--[NetworkConditions]: network-conditions.md "Optimize Performance Under Varying Network Conditions"  -->  
 
