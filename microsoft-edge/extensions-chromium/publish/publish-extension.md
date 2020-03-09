@@ -20,8 +20,6 @@ Publish your Extension on Microsoft Edge Addons catalog \(Microsoft Edge Addons\
     *   The manifest file and it must define the name and version of your Extension.  
     *   The images and other files that are required for your Extension.  
 
-> [!IMPORTANT]
-> Do not zip the Extension folder.  To create a zip, open your Extension folder, select all the files and create zip of those files.  
 
 If you have not started building an Extension, you may refer to the [Getting Started][ExtensionsGettingStarted] tutorial for building a Microsoft Edge Chromium extension.  
 
