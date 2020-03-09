@@ -353,7 +353,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"  
 
-[DwarfHome]: https://dwarfstd.org "Dwarf Home"  
+[DwarfHome]: http://dwarfstd.org "Dwarf Home"  
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
