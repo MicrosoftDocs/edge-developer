@@ -90,7 +90,7 @@ Clicking on any entry in the [**Network summary**](#network-summary) list will o
 
 ![Network request details pane](./media/network_request_details.png)
 
- ### Headers
+### Headers
 Displays the [HTTP headers](https://developer.mozilla.org/docs/Web/HTTP/Headers) sent to and received from the server. Right-click on any header entry to copy it (`Ctrl+C`) to the clipboard. You can also multi-select entries by holding down the `Shift` key or select all (`Ctrl+A`).
 
 ### Body
