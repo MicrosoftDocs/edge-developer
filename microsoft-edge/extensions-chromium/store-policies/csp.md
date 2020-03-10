@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </html>
 ```  
 
-**Only local script and and object resources are loaded**  
+**Only local script and object resources are loaded**  
 
 Script and object resources are only able to be loaded from the Extension package, not from the web at large.  This ensures that your Extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.  
 
