@@ -89,7 +89,7 @@ To set up port forwarding to a proxy:
 Next, you need to configure your Android device to communicate with the proxy server.  
 
 1.  On your Android device go to **Settings** > **Wi-Fi**.  
-1.  Long-press the name of the network that you are currently connected to.  
+2.  Long-press the name of the network that you are currently connected to.  
     
     > [!NOTE]
     > Proxy settings apply per network.  
