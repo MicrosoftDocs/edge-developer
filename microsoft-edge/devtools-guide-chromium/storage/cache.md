@@ -135,7 +135,7 @@ The **Size** column of the **Network Log** has the information you are looking f
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: http://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 [NetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
