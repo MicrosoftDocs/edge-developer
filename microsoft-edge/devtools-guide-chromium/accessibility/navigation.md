@@ -128,7 +128,7 @@ The **DOM Tree** is laid out as an [ARIA `tree`][W3CWaiAriaTree].  <!--See [Navi
 *   Press `Tab` to move between attribute values.  When you hear the name of the element, for instance, "h2", you are inside of a text input and may change the type of the element.  
 *   Press `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to accept the change.  
 
-For example, typing `h3` and pressing `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) changes the start and end tags of the the element to `h3`.  
+For example, typing `h3` and pressing `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) changes the start and end tags of the element to `h3`.  
 
 ## Elements panel tabs   
 
