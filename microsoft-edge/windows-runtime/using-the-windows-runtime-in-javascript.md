@@ -5,8 +5,7 @@ ms.date: 03/05/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "windows-integration"
+ms.technology: "windows-integration"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
