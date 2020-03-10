@@ -21,6 +21,7 @@ Rich search integration is built into the Microsoft Edge address bar, including 
 * The search query template 
 
 1.  Provide an OpenSearch description file, which contains the name of the search provider, and the template to use to construct the search. Here is an example document:
+
     ```html
     <?xml version="1.0" encoding="UTF-8"?> 
     <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
@@ -30,6 +31,7 @@ Rich search integration is built into the Microsoft Edge address bar, including 
     ```
 
 2.  Include a reference to your OpenSearch description file in the header section of your pages (typically this would include your site home page and search result pages), for example:
+
     ```html
     <html>
         <head>
