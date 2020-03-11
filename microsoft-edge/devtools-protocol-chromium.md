@@ -55,7 +55,7 @@ You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https:/
 
 The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge (Chromium) DevTools Protocol as the [DevTools](./devtools-guide-chromium.md) to communicate with Microsoft Edge running on the Windows 10 device you want to debug. This app just prepends `/msedge/` before each call to the protocol.
 
-As an example, if you navigate to http://`IP address`:`connection port`/msedge/json/list in Microsoft Edge on your development machine, you will see the list of page targets from the Windows 10 device for debugging, just as specified for the [/json/list](#/json/list) endpoint below.
+As an example, if you navigate to http://`IP address`:`connection port`/msedge/json/list in Microsoft Edge on your development machine, you will see the list of page targets from the Windows 10 device for debugging, just as specified for the [/json/list](#jsonlist) endpoint below.
 
 To learn how to set up your Windows 10 device and connect to it from your development machine, check out [this tutorial](./devtools-guide-chromium/remote-debugging/windows.md).
 
