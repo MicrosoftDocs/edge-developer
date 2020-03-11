@@ -91,7 +91,7 @@ If you set up authentication for the host (debuggee) machine, you will be prompt
 
 If you want to connect to the host (debuggee) machine using `https` instead of `http`, you must navgiate to `http://IP address:50080/config/rootcertificate` in Microsoft Edge on the client (debugger) machine. This will automatically download a security certificate named `rootcertificate.cer`.
 
-Click on `rootcertificate.cer`. This will open the [Windows Certificate Manager tool](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
+Click on `rootcertificate.cer`. This will open the [Windows Certificate Manager tool](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
 
 Click **Install certificate...**, ensure that **Current User** is selected, and click **Next**. Now select **Place all certificates in the following store** and click **Browse...**. Select the **Trusted Root Certification Authorities** store and click **OK**. Click **Next** and then click **Finish**. If prompted, confirm that you want to install this certificate to the **Trusted Root Certification Authorities** store.
 
