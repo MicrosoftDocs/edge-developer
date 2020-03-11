@@ -10,12 +10,12 @@ ms.prod: microsoft-edge
 
 # Microsoft Edge (Chromium) DevTools Protocol
 
-With the shift in the underlying web platform of Microsoft Edge to Chromium, the Edge (EdgeHTML) DevTools Protocol will not be receiving any further updates. The  Edge (Chromium) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward. 
+With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](./devtools-protocol/index.md) will not be receiving any further updates. The Microsoft Edge (Chromium) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward. 
 
 You can find documentation on those domains and methods by referring to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot/).
 
 > [!NOTE]
-> Any methods that were prefixed with `ms` in the Edge (EdgeHTML) DevTools Protocol are no longer supported in the Edge (Chromium) DevTools Protocol.
+> Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](./devtools-protocol/index.md) are no longer supported in the Microsoft Edge (Chromium) DevTools Protocol.
 
 ## Using the DevTools Protocol
 
@@ -43,9 +43,25 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 
 5. Finally, connect to the `webSocketDebuggerUrl` of the desired target and issue commands/subscribe to event messages through the DevTools web socket server.
 
+## Clients
+
+The Microsoft Edge (Chromium) DevTools Protocol supports the following tooling clients.
+
+- [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT)
+
+### Remote Tools for Microsoft Edge (Beta)
+
+You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app enables you to remotely debug Microsoft Edge (Chromium) running on a Windows 10 device from your development machine.
+
+The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge (Chromium) DevTools Protocol as the [DevTools](./devtools-guide-chromium.md) to communicate with Microsoft Edge running on the Windows 10 device you want to debug. This app just prepends `/msedge/` before each call to the protocol.
+
+As an example, if you navigate to http://`IP address`:`connection port`/msedge/json/list in Microsoft Edge on your development machine, you will see the list of page targets from the Windows 10 device for debugging, just as specified for the [/json/list](#/json/list) endpoint below.
+
+To learn how to set up your Windows 10 device and connect to it from your development machine, check out [this tutorial](./devtools-guide-chromium/remote-debugging/windows.md).
+
 ## DevTools Protocol HTTP Endpoints
 
-The Edge (Chromium) DevTools Protocol supports the following HTTP endpoints.
+The Microsoft Edge (Chromium) DevTools Protocol supports the following HTTP endpoints.
 
 ## /json/version
 Provides information on the host machine's browser and which version of the DevTools Protocol it supports.
