@@ -2,7 +2,7 @@
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/11/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -312,7 +312,7 @@ To edit a script:
 
 1.  Open the file in the **Editor** pane of the **Sources** panel.  
 1.  Make your changes in the **Editor** pane.  
-1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into into the JavaScript engine of Microsoft Edge.  
+1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
 
 > ##### Figure 17  
 > The **Editor** pane  
