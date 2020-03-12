@@ -3,7 +3,7 @@ description: Update to the Microsoft Edge DevTools Protocol
 title: Microsoft Edge DevTools Protocol Update
 author: zoherghadyali
 ms.author: zoghadya
-ms.date: 03/10/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -128,5 +128,5 @@ Target ID
 **Return object**
 
 ```
-String(“Target is closing”)
+String("Target is closing")
 ```
