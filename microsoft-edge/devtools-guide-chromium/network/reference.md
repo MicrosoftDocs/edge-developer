@@ -2,7 +2,7 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/09/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,14 +26,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-
-<!--
-<style>
-figcaption {
-  text-align: center;
-}
-</style>
--->
 
 # Network Analysis Reference   
 

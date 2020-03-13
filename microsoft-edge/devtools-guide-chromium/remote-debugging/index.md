@@ -2,7 +2,7 @@
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

@@ -2,7 +2,7 @@
 title: View Application Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -43,7 +43,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     > ![The Manifest pane][ImageManifestPane]  
 
 1.  Expand the **Application Cache** section and click a cache to view the resources.  
-
+    
     > ##### Figure 2  
     > The Application Cache pane  
     > ![The Application Cache pane][ImageApplicationCachePane]  
