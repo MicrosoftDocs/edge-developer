@@ -192,12 +192,12 @@ Related Guides:
 
 <!-- image links -->  
 
-[ImageManifest]: /microsoft-edge/media/devtools-guide-chromium/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
-[ImageServiceWorkersPane]: /microsoft-edge/media/devtools-guide-chromium/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
+[ImageServiceWorkersPane]: /microsoft-edge/devtools-guide-chromium/media/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
 <!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkersCachePane]: /microsoft-edge/media/devtools-guide-chromium/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
-[ImageMultipleCaches]: /microsoft-edge/media/devtools-guide-chromium/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
+[ImageServiceWorkersCachePane]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
+[ImageMultipleCaches]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
 
 <!-- links -->  
 

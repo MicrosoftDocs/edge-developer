@@ -459,7 +459,7 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
 [ImageAddColorIcon]: images/add-color-icon.msft.png  
 [ImageAddTextShadowIcon]: images/add-text-shadow-icon.msft.png  
 [ImageEyedropperIcon]: images/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: /microsoft-edge/media/devtools-guide-chromium/new-style-rule-icon.msft.png  
+[ImageNewStyleRuleIcon]: /microsoft-edge/devtools-guide-chromium/media/new-style-rule-icon.msft.png  
 [ImageReloadIcon]: images/reload-icon.msft.png  
 [ImageSelectAnElementIcon]: images/select-an-element-icon.msft.png  
 

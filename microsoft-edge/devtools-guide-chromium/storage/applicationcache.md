@@ -71,7 +71,7 @@ At the bottom of the table there are status icons indicating your network connec
 
 <!-- image links -->  
 
-[ImageApplicationCachePane]: /microsoft-edge/media/devtools-guide-chromium/cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
+[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
 [ImageManifestPane]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
 
 <!-- links -->  
