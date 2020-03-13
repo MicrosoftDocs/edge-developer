@@ -190,7 +190,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 
 <!-- image links -->  
 
-[ImageMoreTabsIcon]: /microsoft-edge/media/more-tabs-icon.msft.png  
+[ImageMoreTabsIcon]: /microsoft-edge/media/devtools-guide-chromium/more-tabs-icon.msft.png  
 
 [ImageConfiguringAudits]: images/audits-pane.msft.png "Figure 1: Configuring audits"  
 [ImageReport]: images/audits-run-audits-result.msft.png "Figure 2: A figure"  

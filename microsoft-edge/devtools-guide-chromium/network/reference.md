@@ -651,7 +651,7 @@ Deselect the **Show Overview** checkbox to hide it.
 [ImageDisableCacheCheckBox]: images/network-disable-cache-checkbox.msft.png "Figure 5: The Disable Cache checkbox"  
 [ImageFilterTextBox]: images/network-filters-textbox.msft.png "Figure 10: The Filters text box"  
 <!--[ImageFrames]: images/frames.msft.png "Old Figure 20: The Frames tab"  -->  
-[ImageHeaders]: /microsoft-edge/media/network-resources-headers.msft.png "Figure 21: The Headers tab"  
+[ImageHeaders]: /microsoft-edge/media/devtools-guide-chromium/network-resources-headers.msft.png "Figure 21: The Headers tab"  
 [ImageHideDataURLsCheckBox]: images/network-hide-data-urls.msft.png "Figure 13: The Hide Data URLs checkbox"  
 [ImageHideFiltersButton]: images/network-resources-hide-filters-button.msft.png "Figure 34: The Hide Filters button"  
 [ImageHideOverviewCheckbox]: images/network-requests-show-overview-off.msft.png "Figure 37: The Hide Overview checkbox"  

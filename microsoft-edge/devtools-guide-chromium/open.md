@@ -92,7 +92,7 @@ macOS:
 [ImagesMainIcon]: images/shared/main-menu-icon.msft.png  
 
 [ImageInspectOption]: microsoft-edge/media/bing-right-click-inspect.msft.png "Figure 1: The Inspect option"  
-[ImageOpenFromMain]: /microsoft-edge/media/bing-customize-more-tools-developer-tools-transparent.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
+[ImageOpenFromMain]: /microsoft-edge/media/devtools-guide-chromium/bing-customize-more-tools-developer-tools-transparent.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
 
 <!-- links -->  
 

@@ -139,13 +139,13 @@ See [Edit Files With Workspaces][Workspaces] to get started.
 
 <!-- image links -->  
 
-[ImageRunIcon]: /microsoft-edge/media/run-snippet-icon.msft.png  
+[ImageRunIcon]: /microsoft-edge/media/devtools-guide-chromium/run-snippet-icon.msft.png  
 
-[ImageSourcesPagePane]: /microsoft-edge/media/sources-page-pane.msft.png "Figure 1: The Page pane"  
-[ImageSourcesEditorPane]: /microsoft-edge/media/sources-editor-pane.msft.png "Figure 2: Viewing the contents of a4d10f71.index-docs.js in the Editor pane"  
-[ImageEditCSS]: /microsoft-edge/media/edit-css.msft.png "Figure 3: Editing CSS in the Editor pane to change the text color of the subtitle to red"  
-[ImageEditJS]: /microsoft-edge/media/edit-js.msft.png "Figure 4: Editing JavaScript in the Editor pane"  
-[ImageSnippet]: /microsoft-edge/media/snippet.msft.png "Figure 5: A Snippet that inserts the jQuery library into a page"  
+[ImageSourcesPagePane]: /microsoft-edge/media/devtools-guide-chromium/sources-page-pane.msft.png "Figure 1: The Page pane"  
+[ImageSourcesEditorPane]: /microsoft-edge/media/devtools-guide-chromium/sources-editor-pane.msft.png "Figure 2: Viewing the contents of a4d10f71.index-docs.js in the Editor pane"  
+[ImageEditCSS]: /microsoft-edge/media/devtools-guide-chromium/edit-css.msft.png "Figure 3: Editing CSS in the Editor pane to change the text color of the subtitle to red"  
+[ImageEditJS]: /microsoft-edge/media/devtools-guide-chromium/edit-js.msft.png "Figure 4: Editing JavaScript in the Editor pane"  
+[ImageSnippet]: /microsoft-edge/media/devtools-guide-chromium/snippet.msft.png "Figure 5: A Snippet that inserts the jQuery library into a page"  
 [ImageDebugging]: images/debugging.msft.png "Figure 6: Debugging JavaScript"  
 
 > [!NOTE]
