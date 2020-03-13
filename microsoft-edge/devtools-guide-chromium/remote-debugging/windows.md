@@ -55,6 +55,9 @@ If it's listed as **Public**, go to **Settings** > **Network & Internet** > **Wi
 
 Now, open the **Settings** app.  In **Find a setting**, enter **Developer settings** and select it.  Toggle on **Developer Mode**.  You can now enable **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.  
 
+> [!NOTE]
+> If **Turn on remote diagnostics over local area network connections.** was previously enabled, you must disable it and enable it again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT). If you do not see a **For developers** section in **Settings**, **Device Portal** may already be enabled so try restarting the Windows 10 device instead.
+
 > ##### Figure 3  
 > The **Settings** app with **Developer Mode** and **Device Portal** configured  
 > ![The Settings app with Developer Mode and Device Portal configured](./windows-media/host-settings.png)  
