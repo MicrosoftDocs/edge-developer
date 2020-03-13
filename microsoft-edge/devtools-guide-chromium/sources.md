@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 05/29/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ Use the **Page** pane to view all of the resources that the page has loaded.
 
 > ##### Figure 1  
 > The **Page** pane  
-> ![Figure 1. The Page pane][ImageSourcesPagePane]  
+> ![Figure 1: The Page pane][ImageSourcesPagePane]  
 
 How the **Page** pane is organized:  
 *   The top-level, such as `top` in [**Figure 1**](#figure-1), represents an [HTML frame][HTML4Frames].  You'll find `top` on every page that you visit. `top` represents the main document frame.  
@@ -139,13 +139,14 @@ See [Edit Files With Workspaces][Workspaces] to get started.
 
 <!-- image links -->  
 
-[ImageDebugging]: images/debugging.msft.png "Debugging JavaScript"  
-[ImageEditCSS]: images/edit-css.msft.png "Editing CSS in the Editor pane to change the text color of the subtitle to red"  
-[ImageEditJS]: images/edit-js.msft.png "Editing JavaScript in the Editor pane"  
-[ImageRunIcon]: images/run-snippet-icon.msft.png  
-[ImageSnippet]: images/snippet.msft.png "A Snippet that inserts the jQuery library into a page"  
-[ImageSourcesEditorPane]: images/sources-editor-pane.msft.png "Viewing the contents of a4d10f71.index-docs.js in the Editor pane"  
-[ImageSourcesPagePane]: images/sources-page-pane.msft.png "The Page pane"  
+[ImageRunIcon]: /microsoft-edge/media/run-snippet-icon.msft.png  
+
+[ImageSourcesPagePane]: /microsoft-edge/media/sources-page-pane.msft.png "Figure 1: The Page pane"  
+[ImageSourcesEditorPane]: /microsoft-edge/media/sources-editor-pane.msft.png "Figure 2: Viewing the contents of a4d10f71.index-docs.js in the Editor pane"  
+[ImageEditCSS]: /microsoft-edge/media/edit-css.msft.png "Figure 3: Editing CSS in the Editor pane to change the text color of the subtitle to red"  
+[ImageEditJS]: /microsoft-edge/media/edit-js.msft.png "Figure 4: Editing JavaScript in the Editor pane"  
+[ImageSnippet]: /microsoft-edge/media/snippet.msft.png "Figure 5: A Snippet that inserts the jQuery library into a page"  
+[ImageDebugging]: images/debugging.msft.png "Figure 6: Debugging JavaScript"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

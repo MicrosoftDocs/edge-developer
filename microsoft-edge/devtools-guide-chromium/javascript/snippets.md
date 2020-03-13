@@ -157,11 +157,12 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 
 <!-- image links -->  
+
 [ImageMoreTabsIcon]: ../images/shared/more-tabs-icon.msft.png  
-[ImageRunSnippetIcon]: ../images/run-snippet-icon.msft.png  
+[ImageRunSnippetIcon]: /microsoft-edge/media/run-snippet-icon.msft.png  
 
 [ImageCreateSnippetSearch]: images/search-create-new-snippet.msft.png "Figure 7: The command for creating a new Snippet"  
-[ImageSourcesPageEmpty]: images/sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
+[ImageSourcesPageEmpty]: /microsoft-edge/media/sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
 [ImageRunSnippetCommand]: images/search-run-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
 [ImageShowSnippetsSearch]: images/search-show-snippets.msft.png "Figure 5: The Show Snippets command"  
 [ImageSnippetSplitScreenAfter]: images/sources-snippets-split-screen-after.msft.png "Figure 2: How the page looks after running the Snippet"  

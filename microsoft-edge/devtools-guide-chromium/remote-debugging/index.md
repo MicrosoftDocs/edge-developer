@@ -154,7 +154,6 @@ Some notes on screencasts:
 <!-- image links -->  
 
 [ImageSelectElementIcon]: images/select-element-icon.msft.png  
-[ImageThreeDotIcon]: ../images/three-dot-icon.msft.png  
 [ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
 
 <!--[ImageConnectedRemoteDevice]: images/connected-remote-device.msft.png "Figure 5:  A connected remote device"  -->
