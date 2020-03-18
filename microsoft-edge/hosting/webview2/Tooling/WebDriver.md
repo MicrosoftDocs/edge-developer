@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 ---
 
 # Automating and Testing WebView2 with Microsoft Edge Driver
-Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling when debugging. One such tool is the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.
+Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling for debugging and automation. One such tool is the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.
 
 Here’s how to get started:
 
@@ -28,17 +28,19 @@ Follow the instructions to install [Microsoft Edge Driver](https://docs.microsof
 It is important to make sure that the version of Microsoft Edge Driver matches the version of Microsoft Edge that the application uses. For the WebView2API Sample to work, make sure that your version of Microsoft Edge is greater than or equal to the supported version of our latest SDK release found [in our Release Notes](https://docs.microsoft.com/microsoft-edge/hosting/webview2/releasenotes). To find out what version of Microsoft Edge you currently have, load `edge://settings/help` in the browser.
 
 ## Step 3: Add Selenium to the WebView2API Sample
-At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver. Now, let’s get started using Selenium.
+At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver. Now, let’s get started using Selenium. 
 
-1. Start by creating a new **C# .NET Framework** project in **Visual Studio**.
+**Note:** Selenium supports C#, Java, Python, Javascript, and Ruby. However, this guide will be in C#. 
+
+1. Start by creating a new **C# .NET Framework** project in **Visual Studio**. Click **Next** on the bottom right-hand corner to continue.
 
 ![alt text](..\images\WebDriver\newproject.PNG)
 
-2. Click **Next** on the bottom right-hand corner to continue.
+2. Give your project a **name**, save it to your preferred **location**, and click **Create**.
 
 ![alt text](..\images\WebDriver\appcreate.PNG)
 
-3. Give your project a **name**, save it to your preferred **location**, and click **Create**.
+3. A new project will be created. In this guide, all code will be written in the **Program.cs** file. 
 
 ![alt text](..\images\WebDriver\startapp.PNG)
 
@@ -70,7 +72,7 @@ using System.Threading.Tasks;
 
 1. First, create the `EdgeOptions` object, by copying the code below. The `EdgeOptions` object takes in two parameters:    
 \
-    **Parameters**
+    **Parameters:**
     1. `is_legacy`: set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser.
     2. `"webview2"`: a string that tell Selenium you are driving **WebView2**
 
