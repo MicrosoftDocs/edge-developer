@@ -54,9 +54,9 @@ Since that expression always represents the focused element, you now have a way 
 
 <!-- image links -->  
 
-[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
+[ImageCreateIcon]: images/create-live-expression-icon.msft.png  
 
-[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/console-create-live-expression-empty.msft.png "Figure 1: Creating a Live Expression"  
+[ImageLiveExpression]: images/console-create-live-expression-empty.msft.png "Figure 1: Creating a Live Expression"  
 
 <!-- links -->  
 
