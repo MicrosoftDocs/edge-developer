@@ -2,7 +2,7 @@
 title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/20/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -220,17 +220,17 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 
 <!-- image links -->  
 
-[ImagePauseOnExceptionsIcon]: images/pause-on-exceptions-icon.msft.png  
+[ImagePauseOnExceptionsIcon]: /microsoft-edge/devtools-guide-chromium/media/pause-on-exceptions-icon.msft.png  
 
-[ImageLocBreakpoint]: images/sources-page-js-breakpoint-30.msft.png "Figure 1: A line-of-code breakpoint"  
-[ImageConditionalLocBreakpoint]: images/sources-page-js-conditional-breakpoint.msft.png "Figure 2: A conditional line-of-code breakpoint"  
-[ImageBreakpointsPanel]: images/sources-page-js-breakpoints-16-33.msft.png "Figure 3: The Breakpoints panel"  
-[ImageDeactivatedBreakpoints]: images/sources-page-js-breakpoints-deactivate-breakpoints.msft.png "Figure 4: Deactivated breakpoints in the Breakpoints pane"  
-[ImageDomChangeBreakpoint]: images/elements-break-on-subtree-modifications.msft.png "Figure 5: The context menu for creating a DOM change breakpoint"  
-[ImageXhrBreakpoint]: images/sources-page-js-xhr-fetch-breakpoints-org.msft.png "Figure 6: Creating an XHR breakpoint"  
-[ImageEventListenerBreakpoint]: images/sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png "Figure 7: Creating an event listener breakpoint"  
-[ImagePauseExceptionsHighlight]: images/sources-page-js-pause-on-exceptions.msft.png "Figure 8: The Pause on exceptions button"  
-[ImageUncaughtException]: images/sources-page-js-paused-on-exception.msft.png "Figure 9: Paused on an uncaught exception"  
+[ImageLocBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoint-30.msft.png "Figure 1: A line-of-code breakpoint"  
+[ImageConditionalLocBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-conditional-breakpoint.msft.png "Figure 2: A conditional line-of-code breakpoint"  
+[ImageBreakpointsPanel]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoints-16-33.msft.png "Figure 3: The Breakpoints panel"  
+[ImageDeactivatedBreakpoints]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png "Figure 4: Deactivated breakpoints in the Breakpoints pane"  
+[ImageDomChangeBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-elements-break-on-subtree-modifications.msft.png "Figure 5: The context menu for creating a DOM change breakpoint"  
+[ImageXhrBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png "Figure 6: Creating an XHR breakpoint"  
+[ImageEventListenerBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png "Figure 7: Creating an event listener breakpoint"  
+[ImagePauseExceptionsHighlight]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-pause-on-exceptions.msft.png "Figure 8: The Pause on exceptions button"  
+[ImageUncaughtException]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-js-paused-on-exception.msft.png "Figure 9: Paused on an uncaught exception"  
 
 <!-- links -->  
 

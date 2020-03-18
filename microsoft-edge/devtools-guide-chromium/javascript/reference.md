@@ -2,7 +2,7 @@
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/11/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -328,33 +328,33 @@ See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable]
 
 <!-- image links -->  
 
-[ImageStepOverIcon]: images/step-over-icon.msft.png  
-[ImageStepIntoIcon]: images/step-into-icon.msft.png  
-[ImageStepOutIcon]: images/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: images/resume-script-execution-icon.msft.png  
-[ImageForceScriptExecutionIcon]: images/force-script-execution-icon.msft.png  
-[ImageAddExpressionIcon]: images/add-expression-icon.msft.png  
-[ImageRefreshIcon]: images/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: images/delete-expression-icon.msft.png  
-[ImageFormatIcon]: images/format-icon.msft.png  
+[ImageStepOverIcon]: /microsoft-edge/devtools-guide-chromium/media/step-over-icon.msft.png  
+[ImageStepIntoIcon]: /microsoft-edge/devtools-guide-chromium/media/step-into-icon.msft.png  
+[ImageStepOutIcon]: /microsoft-edge/devtools-guide-chromium/media/step-out-icon.msft.png  
+[ImageResumeScriptExecutionIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-run-icon.msft.png  
+[ImageForceScriptExecutionIcon]: /microsoft-edge/devtools-guide-chromium/media/force-script-run-icon.msft.png  
+[ImageAddExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/add-expression-icon.msft.png  
+[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
+[ImageDeleteExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-expression-icon.msft.png  
+[ImageFormatIcon]: /microsoft-edge/devtools-guide-chromium/media/format-icon.msft.png  
 
-[ImageSelectingStepOver]: images/source-page-debugger-step-over-next-function-call.msft.png "Figure 1: Selecting Step over"  
-[ImageSelectingStepInto]: images/source-page-debugger-step-into-next-function-call.msft.png "Figure 2: Selecting Step into"  
-[ImageSelectingStepOut]: images/source-page-debugger-step-out-of-current-function.msft.png "Figure 3: Selecting Step out"  
-[ImageSelectingContinueToHere]: images/source-page-continue-to-here.msft.png "Figure 4: Selecting Continue to here"  
-[ImageSelectingRestartFrame]: images/source-page-debugger-restart-frame.msft.png "Figure 5: Selecting Restart Frame"  
-[ImageSelectingResumeScriptExecution]: images/sources-get-started-js-resume-script-runtime.msft.png "Figure 6: Selecting Resume script execution"  
-[ImageSelectingForceScriptExecution]: images/sources-get-started-js-force-script-runtime.msft.png "Figure 7: Selecting Force script execution"  
-[ImageThreadsPane]: images/sources-main-min-js-threads.msft.png "Figure 8: The Threads pane"  
-[ImageScopePane]: images/sources-get-started-js-scope.msft.png "Figure 9: The Scope pane"  
-[ImageCallStackPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty.msft.png "Figure 10: The Call Stack pane"  
-[ImageSelectingCopyStackTrace]: images/glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png "Figure 11: Selecting Copy Stack Trace"  
-[ImageMarkEditorPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Figure 12: Marking a script as Library code from the Editor pane"  
-[ImageMarkCallStackPane]: images/glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Figure 13: Marking a script as Library code from the Call Stack pane"  
-[ImageMarkScriptSettings]: images/framework-library-code.msft.png "Figure 14: Marking a script as Library code from Settings"  
-[ImageWatchPane]: images/sources-get-started-js-watch.msft.png "Figure 15: The Watch pane"  
-[ImageFormat]: images/sources-html-non-minified.msft.png "Figure 16: The Format button"  
-[ImageEditorPane]: images/sources-html-minified.msft.png "Figure 17: The Editor pane"  
+[ImageSelectingStepOver]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-over-next-function-call.msft.png "Figure 1: Selecting Step over"  
+[ImageSelectingStepInto]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-into-next-function-call.msft.png "Figure 2: Selecting Step into"  
+[ImageSelectingStepOut]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-out-of-current-function.msft.png "Figure 3: Selecting Step out"  
+[ImageSelectingContinueToHere]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-continue-to-here.msft.png "Figure 4: Selecting Continue to here"  
+[ImageSelectingRestartFrame]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-restart-frame.msft.png "Figure 5: Selecting Restart Frame"  
+[ImageSelectingResumeScriptExecution]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-resume-script-runtime.msft.png "Figure 6: Selecting Resume script execution"  
+[ImageSelectingForceScriptExecution]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-force-script-runtime.msft.png "Figure 7: Selecting Force script execution"  
+[ImageThreadsPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-main-min-js-threads.msft.png "Figure 8: The Threads pane"  
+[ImageScopePane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-scope.msft.png "Figure 9: The Scope pane"  
+[ImageCallStackPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png "Figure 10: The Call Stack pane"  
+[ImageSelectingCopyStackTrace]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png "Figure 11: Selecting Copy Stack Trace"  
+[ImageMarkEditorPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Figure 12: Marking a script as Library code from the Editor pane"  
+[ImageMarkCallStackPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Figure 13: Marking a script as Library code from the Call Stack pane"  
+[ImageMarkScriptSettings]: /microsoft-edge/devtools-guide-chromium/media/javascript-framework-library-code.msft.png "Figure 14: Marking a script as Library code from Settings"  
+[ImageWatchPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-watch.msft.png "Figure 15: The Watch pane"  
+[ImageFormat]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-html-non-minified.msft.png "Figure 16: The Format button"  
+[ImageEditorPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-html-minified.msft.png "Figure 17: The Editor pane"  
 
 <!-- links -->  
 
