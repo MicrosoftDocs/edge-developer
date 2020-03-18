@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -150,13 +150,13 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 
 <!-- image links -->  
 
-[ImageInspect]: images/elements-inspect-me.msft.png "Figure 1: The inspected element is highlighted in the DOM Tree"  
-[ImageAloha]: images/elements-inspect-me-styles.msft.png "Figure 2: CSS classes being applied to the inspected element are highlighted in the Styles tab"  
-[ImageDeclaration]: images/elements-add-background-color-to-me-styles-p.msft.png "Figure 3: Adding a CSS declaration to the element via the Styles tab"  
-[ImageApplyClass]: images/elements-add-a-class-to-me-styles-cls.msft.png "Figure 4: Applying the color_me class to the element"  
-[ImageSetHover]: images/elements-hover-over-me-styles-hov-hover.msft.png "Figure 5: Toggling the hover pseudostate on an element"  
-[ImageShowPadding]: images/elements-change-my-margin-styles-padding.msft.png "Figure 6: Hovering over the padding of the element"  
-[ImageChangeMargin]: images/elements-change-my-margin-styles-margin-edit.msft.png "Figure 7: Changing the left-margin of the element"  
+[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me.msft.png "Figure 1: The inspected element is highlighted in the DOM Tree"  
+[ImageAloha]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me-styles.msft.png "Figure 2: CSS classes being applied to the inspected element are highlighted in the Styles tab"  
+[ImageDeclaration]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-background-color-to-me-styles-p.msft.png "Figure 3: Adding a CSS declaration to the element via the Styles tab"  
+[ImageApplyClass]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-a-class-to-me-styles-cls.msft.png "Figure 4: Applying the color_me class to the element"  
+[ImageSetHover]: /microsoft-edge/devtools-guide-chromium/media/css-elements-hover-over-me-styles-hov-hover.msft.png "Figure 5: Toggling the hover pseudostate on an element"  
+[ImageShowPadding]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-padding.msft.png "Figure 6: Hovering over the padding of the element"  
+[ImageChangeMargin]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-margin-edit.msft.png "Figure 7: Changing the left-margin of the element"  
 
 <!-- links -->  
 
