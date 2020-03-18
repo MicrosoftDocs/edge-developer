@@ -2,7 +2,7 @@
 title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/30/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -54,9 +54,9 @@ Since that expression always represents the focused element, you now have a way 
 
 <!-- image links -->  
 
-[ImageCreateIcon]: images/create-live-expression-icon.msft.png  
+[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
 
-[ImageLiveExpression]: images/console-create-live-expression-empty.msft.png "Figure 1: Creating a Live Expression"  
+[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/accessibility-console-create-live-expression-empty.msft.png "Figure 1: Creating a Live Expression"  
 
 <!-- links -->  
 
