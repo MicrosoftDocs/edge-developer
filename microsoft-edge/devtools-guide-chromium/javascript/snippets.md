@@ -157,7 +157,6 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 
 <!-- image links -->  
-
 [ImageMoreTabsIcon]: ../images/shared/more-tabs-icon.msft.png  
 [ImageRunSnippetIcon]: ../images/run-snippet-icon.msft.png  
 

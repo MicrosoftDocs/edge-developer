@@ -2,7 +2,7 @@
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/11/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
