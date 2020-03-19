@@ -40,7 +40,7 @@ See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn 
 The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.  
 
 > [!NOTE]
-> In [Figure 1](#figure-1), The `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
+> In [Figure 1](#figure-1), the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
 
 > ##### Figure 1  
 > An example of a selected element  
