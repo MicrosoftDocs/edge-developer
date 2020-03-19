@@ -2,7 +2,7 @@
 title: Navigate Microsoft Edge DevTools With Assistive Technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/14/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -128,7 +128,7 @@ The **DOM Tree** is laid out as an [ARIA `tree`][W3CWaiAriaTree].  <!--See [Navi
 *   Press `Tab` to move between attribute values.  When you hear the name of the element, for instance, "h2", you are inside of a text input and may change the type of the element.  
 *   Press `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to accept the change.  
 
-For example, typing `h3` and pressing `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) changes the start and end tags of the the element to `h3`.  
+For example, typing `h3` and pressing `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) changes the start and end tags of the element to `h3`.  
 
 ## Elements panel tabs   
 
@@ -286,7 +286,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

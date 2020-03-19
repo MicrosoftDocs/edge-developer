@@ -2,7 +2,7 @@
 title: Get Started with Remote Debugging Windows 10 Devices
 author: zoherghadyali
 ms.author: zoghadya
-ms.date: 01/18/2020
+ms.date: 03/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
@@ -21,7 +21,7 @@ Remote debug live content on a Windows 10 device from your Windows or macOS comp
 The host or debuggee machine is the Windows 10 device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host (debuggee) machine, you will need to:  
 
 *   Install and configure [Microsoft Edge (Chromium)](https://www.microsoft.com/edge)  
-*   Install the [Remote tools for Microsoft Edge](https://www.microsoft.com/store/r/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
+*   Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
 *   Activate [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) and enable [Device Portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)  
 
 ### Install and configure Microsoft Edge (Chromium)  
@@ -34,16 +34,18 @@ Now navigate to `edge://flags` in Microsoft Edge (Chromium).  In **Search flags*
 > Setting the **Enable remote debugging through Windows Device Portal** flag to **Enabled**  
 > ![Setting the Enable remote debugging through Windows Device Portal flag to Enabled](./windows-media/edge-flags-on-host.png)  
 
-### Install the Remote tools for Microsoft Edge  
+### Install the Remote Tools for Microsoft Edge (Beta)  
 
-Install the [Remote tools for Microsoft Edge](https://www.microsoft.com/store/r/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  
+Install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  
 
 > [!NOTE]
-> The **Get** button for the [Remote tools for Microsoft Edge](https://www.microsoft.com/store/r/9P6CMFV44ZLT) may be disabled if you are on Windows 10 version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote tools for Microsoft Edge](https://www.microsoft.com/store/r/9P6CMFV44ZLT).  
+> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) may be disabled if you are on Windows 10 version 1809 or earlier.  To set up the host (debuggee) machine, it must be running Windows 10 version 1903 or later.  Update the host (debuggee) machine to acquire the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT).  
 
 > ##### Figure 2  
-> The [Remote tools for Microsoft Edge](https://www.microsoft.com/store/r/9P6CMFV44ZLT) in the [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
-> ![The Remote tools for Microsoft Edge in the Microsoft Store](./windows-media/remote-tools-in-store.png)  
+> The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) in the [Microsoft Store](https://www.microsoft.com/store/apps/windows)  
+> ![The Remote Tools for Microsoft Edge (Beta) in the Microsoft Store](./windows-media/remote-tools-in-store.png)  
+
+Launch the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and, if prompted, accept the permissions dialog in the app. You are now able to close the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) and you do not need to have it open for future remote debugging sessions.
 
 ### Activate Developer Mode and enable Device Portal  
 
@@ -52,6 +54,9 @@ If you're on a WiFi network, ensure the network is marked as either **Domain** o
 If it's listed as **Public**, go to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network and toggle the **Network profile** button to **Private**.  
 
 Now, open the **Settings** app.  In **Find a setting**, enter **Developer settings** and select it.  Toggle on **Developer Mode**.  You can now enable **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.  
+
+> [!NOTE]
+> If **Turn on remote diagnostics over local area network connections.** was previously enabled, you must disable it and enable it again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT). If you do not see a **For developers** section in **Settings**, **Device Portal** may already be enabled so try restarting the Windows 10 device instead.
 
 > ##### Figure 3  
 > The **Settings** app with **Developer Mode** and **Device Portal** configured  
@@ -87,7 +92,13 @@ If you set up authentication for the host (debuggee) machine, you will be prompt
 
 ### Using https instead of http  
 
-If you want to connect to the host (debuggee) machine using `https` instead of `http`, you must use a different `connect port` value.  By default, for desktop Windows, the Device Portal will use `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal#setup).  
+If you want to connect to the host (debuggee) machine using `https` instead of `http`, you must navgiate to `http://IP address:50080/config/rootcertificate` in Microsoft Edge on the client (debugger) machine. This will automatically download a security certificate named `rootcertificate.cer`.
+
+Click on `rootcertificate.cer`. This will open the [Windows Certificate Manager tool](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
+
+Click **Install certificate...**, ensure that **Current User** is selected, and click **Next**. Now select **Place all certificates in the following store** and click **Browse...**. Select the **Trusted Root Certification Authorities** store and click **OK**. Click **Next** and then click **Finish**. If prompted, confirm that you want to install this certificate to the **Trusted Root Certification Authorities** store.
+
+Now, when connecting to the host (debuggee) machine from the client (debugger) machine using the `edge://inspect` page, you must use a different `connection port` value.  By default, for desktop Windows, the Device Portal will use `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal#setup).  
 
 > [!NOTE]
 > The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range (>50,000) to prevent collisions with existing port claims on the device.  To learn more, see the [Port Settings](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.  
