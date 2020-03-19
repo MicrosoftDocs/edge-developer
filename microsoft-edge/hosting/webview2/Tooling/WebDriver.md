@@ -30,8 +30,8 @@ It is important to make sure that the version of Microsoft Edge Driver matches t
 ## Step 3: Add Selenium to the WebView2API Sample
 At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver. Now, let’s get started using Selenium. 
 
-[!NOTE]
-Selenium supports C#, Java, Python, Javascript, and Ruby. However, this guide will be in C#. 
+> [!NOTE]
+> Selenium supports C#, Java, Python, Javascript, and Ruby. However, this guide will be in C#. 
 
 1. Start by creating a new **C# .NET Framework** project in **Visual Studio**. Click **Next** on the bottom right-hand corner to continue.
 
