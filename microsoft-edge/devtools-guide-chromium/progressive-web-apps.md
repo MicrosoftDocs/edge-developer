@@ -2,7 +2,7 @@
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -192,12 +192,12 @@ Related Guides:
 
 <!-- image links -->  
 
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
-[ImageManifest]: images/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
-[ImageMultipleCaches]: images/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
-[ImageServiceWorkersCachePane]: images/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
+[ImageServiceWorkersPane]: /microsoft-edge/devtools-guide-chromium/media/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
 <!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkersPane]: images/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
+[ImageServiceWorkersCachePane]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
+[ImageMultipleCaches]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
 
 <!-- links -->  
 
