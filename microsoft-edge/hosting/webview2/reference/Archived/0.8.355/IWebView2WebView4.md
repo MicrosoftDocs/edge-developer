@@ -45,18 +45,22 @@ Add the provided host object to script running in the WebView with the specified
 > public HRESULT [AddRemoteObject](#addremoteobject)(LPCWSTR name,VARIANT * object)
 
 Host objects are exposed as remote object proxies via `window.chrome.webview.remoteObjects.<name>`. Remote object proxies are promises and will resolve to an object representing the host object. The promise is rejected if the app has not added an object with the name. When JavaScript code access a property or method of the object, a promise is return, which will resolve to the value returned from the host for the property or method, or rejected in case of error such as there is no such property or method on the object or parameters are invalid. For example, when the application code does the following: 
+
 ```cpp
 VARIANT object;
 object.vt = VT_DISPATCH;
 object.pdispVal = appObject;
 webview->AddRemoteObject(L"host_object", &host);
 ```
+
  JavaScript code in the WebView will be able to access appObject as following and then access attributes and methods of appObject: 
+
 ```js
 let app_object = await window.chrome.webview.remoteObjects.host_object;
 let attr1 = await app_object.attr1;
 let result = await app_object.method1(parameters);
 ```
+
  Note that while simple types, IDispatch and array are supported, generic IUnknown, VT_DECIMAL, or VT_RECORD variant is not supported. Remote JavaScript objects like callback functions are represented as an VT_DISPATCH VARIANT with the object implementing IDispatch. The JavaScript callback method may be invoked using DISPID_VALUE for the DISPID. Nested arrays are supported up to a depth of 3. Arrays of by reference types are not supported. VT_EMPTY and VT_NULL are mapped into JavaScript as null. In JavaScript null and undefined are mapped to VT_EMPTY.
 
 Additionally, all remote objects are exposed as `window.chrome.webview.remoteObjects.sync.<name>`. Here the host objects are exposed as synchronous remote object proxies. These are not promises and calls to functions or property access synchronously block running script waiting to communicate cross process for the host code to run. Accordingly this can result in reliability issues and it is recommended that you use the promise based asynchronous `window.chrome.webview.remoteObjects.<name>` API described above.
@@ -102,6 +106,7 @@ For example, suppose you have a COM object with the following interface
         HRESULT CallCallbackAsynchronously([in] IDispatch* callbackParameter);
     };
 ```
+
  We can add an instance of this interface into our JavaScript with `AddRemoteObject`. In this case we name it `sample`:
 
 ```cpp
@@ -116,6 +121,7 @@ For example, suppose you have a COM object with the following interface
             CHECK_FAILURE(m_webView->AddRemoteObject(L"sample", &remoteObjectAsVariant));
             remoteObjectAsVariant.pdispVal->Release();
 ```
+
  Then in the HTML document we can use this COM object via `chrome.webview.remoteObjects.sample`:
 
 ```js
