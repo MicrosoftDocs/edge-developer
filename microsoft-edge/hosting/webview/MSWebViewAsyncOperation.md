@@ -48,6 +48,7 @@ function handler(eventInfo) { /* Your code */ }
 MSWebViewAsyncOperation.addEventListener("error", handler);
 MSWebViewAsyncOperation.removeEventListener("error", handler);
 ```
+
 #### Event Information
 
 |            |      |
