@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 ---
 
 # Automating and Testing WebView2 with Microsoft Edge Driver
-Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling for debugging and automation. One such tool is the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.
+Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling for debugging and automation. One such tool is Selenium, which implements the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.
 
 Here’s how to get started:
 
@@ -30,7 +30,8 @@ It is important to make sure that the version of Microsoft Edge Driver matches t
 ## Step 3: Add Selenium to the WebView2API Sample
 At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver. Now, let’s get started using Selenium. 
 
-**Note:** Selenium supports C#, Java, Python, Javascript, and Ruby. However, this guide will be in C#. 
+[!NOTE]
+Selenium supports C#, Java, Python, Javascript, and Ruby. However, this guide will be in C#. 
 
 1. Start by creating a new **C# .NET Framework** project in **Visual Studio**. Click **Next** on the bottom right-hand corner to continue.
 
@@ -70,11 +71,7 @@ using System.Threading.Tasks;
 
 ## Step 4: Drive WebView2 with Selenium and Microsoft EdgeDriver
 
-1. First, create the `EdgeOptions` object, by copying the code below. The `EdgeOptions` object takes in two parameters:    
-\
-    **Parameters:**
-    1. `is_legacy`: set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser.
-    2. `"webview2"`: a string that tell Selenium you are driving **WebView2**
+1. First, create the `EdgeOptions` object, by copying the code below:
 
 ```C#
 static void Main(string[] args)
@@ -83,6 +80,14 @@ static void Main(string[] args)
     // Construct EdgeOptions with is_legacy = false and the string "webview2"
     EdgeOptions edgeOptions = new EdgeOptions(false, "webview2");
 ```
+
+The `EdgeOptions` object takes in two parameters:    
+\
+    **Parameters:**
+    1. `is_legacy`: set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser.
+    2. `"webview2"`: a string that tell Selenium you are driving **WebView2**
+
+
 2. Next, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project's executable, create a string called `msedgedriverDir` that provides the file path to where you installed [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads), and create a string called `msedgedriverExe` to store the name of the Microsoft Edge Driver executable. By default, the executable is called `"msedgedriver.exe"`. Use these two strings to construct the `EdgeDriverService` object as shown below. Finally, create the `EdgeDriver` object using `EdgeDriverService` and `EdgeOptions`.
 
 You can copy and paste the following code underneath `edgeOptions`. Make sure to specify the correct file paths to your project's executable and the Microsoft Edge Driver's executable on your machine.
