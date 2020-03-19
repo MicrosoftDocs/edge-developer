@@ -397,7 +397,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     
     Time to test push notifications in your PWA!  
     
-    1.  Run \(`F5`\) your PWA in the browser.  Because we modified the service worker code \(*pwabuilder-sw.js*\), we'll need to open the DevTools Debugger \(`F12`\) to the **Service Worker Overview** panel and and **Unregister** the service worker and reload \(`F5`\) the page to re-register it \(or you can simply click **Update**\).  In a production scenario, the browser will check regularly check for service worker updates and install them in the background.  We're just forcing it here for immediate results.  
+    1.  Run \(`F5`\) your PWA in the browser.  Because we modified the service worker code \(*pwabuilder-sw.js*\), we'll need to open the DevTools Debugger \(`F12`\) to the **Service Worker Overview** panel and **Unregister** the service worker and reload \(`F5`\) the page to re-register it \(or you can simply click **Update**\).  In a production scenario, the browser will check regularly check for service worker updates and install them in the background.  We're just forcing it here for immediate results.  
         
         As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:  
         
