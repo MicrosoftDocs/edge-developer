@@ -151,7 +151,7 @@ This section lists events that belong to Painting category and their properties.
 <!-- links -->
 
 [ConsoleApiTime]: ../console/api.md#time "time - Console API Reference"  
-[ConsoleApiTimeEnd]: ../console/api.md#timeEnd "timeEnd - Console API Reference"  
+[ConsoleApiTimeEnd]: ../console/api.md#timeend "timeEnd - Console API Reference"  
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool.md "How to Use the Timeline Tool"  -->
 
 [MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"  
