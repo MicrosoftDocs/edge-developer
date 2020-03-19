@@ -66,6 +66,7 @@ In order for your app to be recognized by your extension as a native messaging h
 For [Chrome native messaging](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
 
 The following JSON is an example of how the config file can be set up:
+
 ```json
 {
    "name": "com.my_company.my_application",
@@ -77,6 +78,7 @@ The following JSON is an example of how the config file can be set up:
     ]
 }
 ```
+
 To install this file, the app would need to:
 
 1. Register the manifest file in a predefined location in the registry that defines the host configuration:
@@ -91,6 +93,7 @@ To install this file, the app would need to:
 
 
 For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx)(native messaging host) you'll need to include the UWP companion app in the same package as your extension and specify the [AppService extension](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) in your project's `Package.appxmanifest` file. The `EntryPoint` and `Name` attributes can be configured by you:
+
 ```xml
 ...
 <Applications>    
@@ -107,6 +110,7 @@ For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsof
 
 
 You'll also need to set which extension(s) are allowed to connect to the service. Because Microsoft Edge doesn't have an equivalent `"allowed_origins"` manifest property in its AppxManifest, this will need to be determined and enforced at runtime by your UWP app. Since Microsoft Edge will be establishing the connection on behalf of the extension, the app can look up the caller's Package Family Name to determine if they're being connected by Microsoft Edge to control or authenticate the caller. E.g. 
+
 ```csharp
 protected async override void
 OnBackgroundActivated(BackgroundActivatedEventArgs args)

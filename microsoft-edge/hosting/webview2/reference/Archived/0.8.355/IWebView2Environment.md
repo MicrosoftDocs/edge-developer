@@ -42,6 +42,7 @@ Asynchronously create a new [IWebView2WebView](IWebView2WebView.md).
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow. 
+
 ```cpp
 // Create or recreate the WebView and its environment.
 void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
@@ -92,7 +93,9 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
     return S_OK;
 }
 ```
+
  It is recommended that the application handles restart manager messages so that it can be restarted gracefully in the case when the app is using Edge for webview from a certain installation and that installation is being uninstalled. For example, if a user installs Edge from Dev channel and opts to use Edge from that channel for testing the app, and then uninstalls Edge from that channel without closing the app, the app will be restarted to allow uninstallation of the dev channel to succeed. 
+
 ```cpp
     case WM_QUERYENDSESSION:
     {

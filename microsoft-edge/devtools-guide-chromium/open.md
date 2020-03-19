@@ -2,7 +2,7 @@
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -91,8 +91,8 @@ macOS:
 
 [ImagesMainIcon]: images/shared/main-menu-icon.msft.png  
 
-[ImageInspectOption]: images/bing-right-click-inspect.msft.png "Figure 1: The Inspect option"  
-[ImageOpenFromMain]: images/bing-customize-more-tools-developer-tools-transparent.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
+[ImageInspectOption]: /microsoft-edge/devtools-guide-chromium/media/bing-right-click-inspect.msft.png "Figure 1: The Inspect option"  
+[ImageOpenFromMain]: /microsoft-edge/devtools-guide-chromium/media/bing-customize-more-tools-developer-tools-transparent.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
 
 <!-- links -->  
 

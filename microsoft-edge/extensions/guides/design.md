@@ -36,6 +36,7 @@ An extension can either have a browser action or page action icon. The browser a
 The preferred sizes for browser action and page action icons are 20px, 25px, 30px, 40px. Other supported sizes include 19px, 35px, 38px.
 
 The following [JSON manifest](./../API-support/supported-manifest-keys.md) snippet shows a standard and high definition browser action icon being specified using the [`"browser_action"`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/browser_action) field. The same syntax applies for [`"page_action"`](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/page_action):
+
 ```json
 "browser_action": {
     "default_icon": {
