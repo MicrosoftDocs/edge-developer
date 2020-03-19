@@ -47,8 +47,8 @@ To start debugging the content script of your extension:
 1. Launch F12 by either navigating to the **More (...)** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
 2. Navigate to and select your extension's content script. Content scripts for extensions currently running will be depicted by a different folder for each extension.
 
-> [!NOTE]
-> Only running content scripts will appear.
+    > [!NOTE]
+    > Only running content scripts will appear.
 
 3. Place breakpoints for debugging by clicking to the left of the source code line number.  
  ![f12 with content script being debugged](./../media/debug-content-f12.png)
