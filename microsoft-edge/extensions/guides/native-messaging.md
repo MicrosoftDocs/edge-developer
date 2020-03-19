@@ -352,7 +352,7 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
     ```
 
 
-6. Modify `package.manifest.xml` by adding the `<desktop:Extension>` element to the `<Extensions>` element:
+5. Modify `package.manifest.xml` by adding the `<desktop:Extension>` element to the `<Extensions>` element:
 
     ```xml
     <Extensions>
