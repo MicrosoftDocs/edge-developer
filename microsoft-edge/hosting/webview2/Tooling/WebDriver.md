@@ -83,15 +83,15 @@ static void Main(string[] args)
     // Construct EdgeOptions with is_legacy = false and the string "webview2"
     EdgeOptions edgeOptions = new EdgeOptions(false, "webview2");
 ```
-2. Next, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project's executable, create a string called `msedgedriverDir` that provides the file path to where you installed [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads), and create a string called `msedgedriverExe` to store the name of the Microsoft Edge Driver executable. By default, the executable is called `"msedgedrive.exe"`. Use these two strings to construct the `EdgeDriverService` object as shown below. Finally, create the `EdgeDriver` object using `EdgeDriverService` and `EdgeOptions`.
+2. Next, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project's executable, create a string called `msedgedriverDir` that provides the file path to where you installed [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads), and create a string called `msedgedriverExe` to store the name of the Microsoft Edge Driver executable. By default, the executable is called `"msedgedriver.exe"`. Use these two strings to construct the `EdgeDriverService` object as shown below. Finally, create the `EdgeDriver` object using `EdgeDriverService` and `EdgeOptions`.
 
 You can copy and paste the following code underneath `edgeOptions`. Make sure to specify the correct file paths to your project's executable and the Microsoft Edge Driver's executable on your machine.
 ```C#      
     //Set the BinaryLocation to the filepath of the WebView2API Sample's executable
     edgeOptions.BinaryLocation = @"C:\path\to\your\webview2\project.exe";
 
-    //Set msedgedriverDir to the filepath of the MS Edge Driver you downloaded
-    string msedgedriverDir = @"C:\path\to\your\msededriver.exe\";
+    //Set msedgedriverDir to the filepath of the directory housing msedgedriver.exe
+    string msedgedriverDir = @"C:\path\to\your\msededriver.exe's\directory";
 
     //Set msedgedriverExe to the name of the Edge Driver. By default it is:
     string msedgedriverExe = @"msedgedriver.exe";
