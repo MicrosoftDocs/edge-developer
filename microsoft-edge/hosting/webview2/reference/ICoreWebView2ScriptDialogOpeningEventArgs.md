@@ -70,7 +70,7 @@ The second parameter passed to the JavaScript prompt dialog.
 
 > public HRESULT [get_DefaultText](#get_defaulttext)(LPWSTR * defaultText)
 
-This is the the default value to use for the result of the prompt JavaScript function.
+This is the default value to use for the result of the prompt JavaScript function.
 
 #### get_ResultText 
 
