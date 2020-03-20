@@ -89,7 +89,7 @@ When you have made a change to a minified file, the **Changes tool** enables you
 
 If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-*   Chromium issue [#963183][crbug963183]  
+Chromium issue [#963183][crbug963183]  
 
 ## Announcements from the Chromium project  
 
@@ -118,7 +118,7 @@ The `-anomaly` forms are the \(rare\) extreme versions of the `-ia` forms.  Ever
 
 Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-*   Chromium issue [#1003700][crbug1003700]  
+Chromium issue [#1003700][crbug1003700]  
 
 ### Cross-Origin Opener Policy \(COOP\) and Cross-Origin Embedder Policy \(COEP\) debugging   
 
@@ -138,7 +138,7 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
 
 Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-*   Chromium issue [#1051466][crbug1051466]  
+Chromium issue [#1051466][crbug1051466]  
 
 ### **Dock to left** from the Command Menu   
 
@@ -153,7 +153,7 @@ Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` com
 
 Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-*   Chromium issue [#1011679][crbug1011679]  
+Chromium issue [#1011679][crbug1011679]  
 
 ### The **Audits** panel is now the **Lighthouse** panel   
 
@@ -176,7 +176,7 @@ After setting up **Local Overrides** you may right-click a folder and select the
 
 Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-*   Chromium issue [#1016501][crbug1016501]  
+Chromium issue [#1016501][crbug1016501]  
 
 ### Updated Long tasks UI   
 
@@ -190,7 +190,7 @@ You have been able to [visualize Long Tasks in the Performance panel][LongTasksI
 
 Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-*   Chromium issue [#1054447][crbug1054447]  
+Chromium issue [#1054447][crbug1054447]  
 
 ### Maskable icon support in the Manifest pane   
 
