@@ -2,7 +2,7 @@
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -154,7 +154,6 @@ Some notes on screencasts:
 <!-- image links -->  
 
 [ImageSelectElementIcon]: images/select-element-icon.msft.png  
-[ImageThreeDotIcon]: ../images/three-dot-icon.msft.png  
 [ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
 
 <!--[ImageConnectedRemoteDevice]: images/connected-remote-device.msft.png "Figure 5:  A connected remote device"  -->
