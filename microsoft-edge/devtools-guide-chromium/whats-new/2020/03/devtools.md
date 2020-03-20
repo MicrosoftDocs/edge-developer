@@ -98,7 +98,7 @@ Open the [Rendering tab][RenderingDoc]
 and use the new **Emulate vision deficiencies** feature to get a better idea of how people with
 different types of vision deficiencies experience your site.
 
-> ##### Figure X 
+> ##### Figure 6
 > Emulating blurred vision.  
 > ![Emulating blurred vision.][ImageEmulatingBlurredVision]  
 
@@ -133,14 +133,14 @@ debugging information.
 The **Status** column now provides a quick explanation of why a request was blocked as well as a
 link to view that request's headers for further debugging:
 
-> ##### Figure X 
+> ##### Figure 7
 > Blocked requests in the **Status** column.  
 > ![Blocked requests in the Status column.][ImageNetworkStatus]  
 
 The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve
 the issues:
 
-> ##### Figure X 
+> ##### Figure 8
 > More guidance in the Response Headers section.  
 > ![More guidance in the Response Headers section.][ImageNetworkGuidance] 
 
@@ -153,7 +153,7 @@ Chromium issue [#1051466][crbug1051466]
 Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left`
 command to move DevTools to the left of your viewport.
 
-> ##### Figure X 
+> ##### Figure 9
 > DevTools docked to the left of the viewport.  
 > ![DevTools docked to the left of the viewport.][ImageDockToLeft] 
 
@@ -169,7 +169,7 @@ Chromium issue [#1011679][crbug1011679]
 
 The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][LighthouseRepo] from DevTools, when they tried it out they couldn't find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.
 
-> ##### Figure X 
+> ##### Figure 10
 > The Lighthouse panel.  
 > ![The Lighthouse panel.][ImageLighthouse] 
 
@@ -182,7 +182,7 @@ After setting up **Local Overrides** you can now
 right-click a folder and select the new **Delete all overrides** option to delete all
 Local Overrides in that folder.
 
-> ##### Figure X 
+> ##### Figure 11
 > Delete all overrides. 
 > ![Delete all overrides.][ImageDeleteOverrides] 
 
@@ -199,7 +199,7 @@ You've been able to [visualize Long Tasks in the Performance panel][LongTasksInP
 for a while now, but in Microsoft Edge 82 the Long Task visualization UI in the Performance panel has been updated.
 The Long Task portion of a task is now colored with a striped red background.
 
-> ##### Figure X 
+> ##### Figure 12
 > The new Long Task UI.
 > ![The new Long Task UI.][ImageLongTask] 
 
@@ -221,7 +221,7 @@ devices.
 <!-- Check out [Are my current icons ready?]
 to learn more. -->
 
-> ##### Figure X 
+> ##### Figure 13
 > The "Show only the minimum safe area for maskable icons" checkbox.
 > ![The "Show only the minimum safe area for maskable icons" checkbox][ImageMaskableIcons] 
 
@@ -236,7 +236,7 @@ To discuss the new features and changes in this post, or anything else related t
 
 *   Send your feedback using the **Feedback** icon in the DevTools 
 
-> ##### Figure XX
+> ##### Figure 14
 > The **Feedback** icon in the Microsoft Edge DevTools  
 > ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
@@ -262,15 +262,15 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImagePropertiesIn81]: ../../images/2020/03/properties-in-81.msft.png "Figure 3: In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh."
 [ImagePropertiesIn82]: ../../images/2020/03/properties-in-82.msft.png "Figure 4: In Microsoft Edge 82, the Properties tab displays the properties of the currently-selected element after a page refresh."
 [ImageChanges]: ../../images/2020/03/changes.msft.png "Figure 5: In Microsoft Edge 82, you can scroll horizontally with the arrow keys to see your minified code in the Changes tool."
-[ImageEmulatingBlurredVision]: ../../images/2020/03/vision.msft.png "Figure X: Emulating blurred vision."  
-[ImageNetworkStatus]: ../../images/2020/03/status.msft.png "Figure X: Blocked requests in the **Status** column."
-[ImageNetworkGuidance]: ../../images/2020/03/guidance.msft.png "Figure X: More guidance in the Response Headers section."
-[ImageDockToLeft]: ../../images/2020/03/dock-to-left.msft.png "Figure X: DevTools docked to the left of the viewport."
-[ImageLighthouse]: ../../images/2020/03/lighthouse.msft.png "Figure X: The Lighthouse panel."
-[ImageDeleteOverrides]: ../../images/2020/03/overrides.msft.png "Figure X: Delete all overrides."
-[ImageLongTask]: ../../images/2020/03/long-task.msft.png "Figure X: The new Long Task UI."
-[ImageMaskableIcons]: ../../images/2020/03/maskable-icons.msft.png "Figure X: The 'Show only the minimum safe area for maskable icons' checkbox"
-[ImageFeedbackIcon]: ../../images/2020/03/feedback-icon.msft.png "Figure X: The **Feedback** icon in the Microsoft Edge DevTools"
+[ImageEmulatingBlurredVision]: ../../images/2020/03/vision.msft.png "Figure 6: Emulating blurred vision."  
+[ImageNetworkStatus]: ../../images/2020/03/status.msft.png "Figure 7: Blocked requests in the **Status** column."
+[ImageNetworkGuidance]: ../../images/2020/03/guidance.msft.png "Figure 8: More guidance in the Response Headers section."
+[ImageDockToLeft]: ../../images/2020/03/dock-to-left.msft.png "Figure 9: DevTools docked to the left of the viewport."
+[ImageLighthouse]: ../../images/2020/03/lighthouse.msft.png "Figure 10: The Lighthouse panel."
+[ImageDeleteOverrides]: ../../images/2020/03/overrides.msft.png "Figure 11: Delete all overrides."
+[ImageLongTask]: ../../images/2020/03/long-task.msft.png "Figure 12: The new Long Task UI."
+[ImageMaskableIcons]: ../../images/2020/03/maskable-icons.msft.png "Figure 13: The 'Show only the minimum safe area for maskable icons' checkbox"
+[ImageFeedbackIcon]: ../../images/2020/03/feedback-icon.msft.png "Figure 14: The **Feedback** icon in the Microsoft Edge DevTools"
 
 <!-- links -->  
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
