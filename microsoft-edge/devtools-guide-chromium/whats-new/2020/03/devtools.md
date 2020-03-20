@@ -31,6 +31,63 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
+## Announcements from the Microsoft Edge DevTools team
+
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+
+### Remotely debug Microsoft Edge on Windows 10 Devices
+
+The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore]. Using this app, which extends the [Windows Device Portal][WindowsDevicePortal], you are able to connect from your development machine's instance of Microsoft Edge to a remote Windows 10 device, see a list of targets (all tabs in Microsoft Edge and [PWAs][PWADoc] open on the Windows 10 device), and use the DevTools on your development machine against a target running on the remote Windows 10 device.
+
+> ##### Figure 1
+> The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore].  
+> ![The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store.][ImageRemoteTools] 
+
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10]. Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!
+
+### Navigate the Color Picker with your keyboard
+The [Color Picker][ColorPicker] is a GUI in the [Elements panel][ElementsDoc] for changing `color` and `background-color` declarations. In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][ColorPicker] with the keyboard.
+
+> ##### Figure 2
+> You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][ColorPicker].  
+> ![You are now able to use your keyboard to move the selector in the Shades section of the Color Picker.][ImageColorPicker]
+
+In Microsoft Edge 82, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.
+
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon! 
+
+Chromium issue [#963183][crbug963183]  
+
+### Properties tab now populates after a page refresh
+In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][ElementsDoc] was broken by page refreshes. When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.
+
+> ##### Figure 3
+> In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh.
+> ![In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh.][ImagePropertiesIn81]
+
+In Microsoft Edge 82, you are now able to see the properties of the currently-selected element after a page refresh in the **Properties tab**. 
+
+> ##### Figure 4
+> In Microsoft Edge 82, the **Properties tab** displays the properties of the currently-selected element after a page refresh.
+> ![In Microsoft Edge 82, the Properties tab displays the properties of the currently-selected element after a page refresh.][ImagePropertiesIn82]
+
+Chromium issue [#1050999][crbug1050999]  
+
+### Use the arrow keys to scroll in the Changes tool
+The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools. You are able to use the **Changes tool** to quickly see all your changes and take those back to your editor/IDE. 
+
+You can open the **Changes tool** by pressing `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and typing `changes`. Select and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.
+
+When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code. Starting in Microsoft Edge 82, you can now scroll horizontally using the arrow keys on your keyboard.
+
+> ##### Figure 5
+> In Microsoft Edge 82, you can scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**.
+> ![In Microsoft Edge 82, you can scroll horizontally with the arrow keys to see your minified code in the Changes tool.][ImageChanges]
+
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon! 
+
+Chromium issue [#963183][crbug963183]
+
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 82 that were contributed to the open source Chromium project.
@@ -200,6 +257,11 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 
 <!-- image links -->  
+[ImageRemoteTools]: ../../images/2020/03/remote-tools.msft.png "Figre 1: The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store."
+[ImageColorPicker]: ../../images/2020/03/color-picker.msft.png "Figure 2: You are now able to use your keyboard to move the selector in the Shades section of the Color Picker."
+[ImagePropertiesIn81]: ../../images/2020/03/properties-in-81.msft.png "Figure 3: In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh."
+[ImagePropertiesIn82]: ../../images/2020/03/properties-in-82.msft.png "Figure 4: In Microsoft Edge 82, the Properties tab displays the properties of the currently-selected element after a page refresh."
+[ImageChanges]: ../../images/2020/03/changes.msft.png "Figure 5: In Microsoft Edge 82, you can scroll horizontally with the arrow keys to see your minified code in the Changes tool."
 [ImageEmulatingBlurredVision]: ../../images/2020/03/vision.msft.png "Figure X: Emulating blurred vision."  
 [ImageNetworkStatus]: ../../images/2020/03/status.msft.png "Figure X: Blocked requests in the **Status** column."
 [ImageNetworkGuidance]: ../../images/2020/03/guidance.msft.png "Figure X: More guidance in the Response Headers section."
@@ -231,6 +293,14 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [crbug1054447]: https://crbug.com/1054447 "Issue 1054447: Update performance metrics in DevTools Timeline"
 [PWADoc]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows"
 [WhatsNew81]: ../../2020/01/devtools.md "What's New In DevTools (Microsoft Edge 81)"
+[RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta)"
+[MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"
+[WindowsDevicePortal]: https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"
+[RemoteDebuggingWin10]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices"
+[ColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker"
+[ElementsDoc]: ../../../css/index.md "Get Started With Viewing And Changing CSS"
+[crbug963183]: https://crbug.com/963183 "Issue 963183: DevTools are not WCAG compliant"
+[crbug1050999]: https://crbug.com/1050999 "Issue 1050999: Properties Tab"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
