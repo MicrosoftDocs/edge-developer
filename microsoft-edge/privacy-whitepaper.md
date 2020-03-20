@@ -159,7 +159,7 @@ The child must be signed in to Windows 10 with their Microsoft account, and the 
 
 Guest mode and InPrivate browsing are disabled if web filtering or activity reporting is turned on.  
 
-The family group organizer can stop this data collection from the family safety portal.  [Learn more](https://support.microsoft.com/help/4090274) 
+The family group organizer can stop this data collection from the family safety portal.  [Learn more](https://support.microsoft.com/help/4090274)
 
 ## Feedback
 
