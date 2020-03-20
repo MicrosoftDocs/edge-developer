@@ -55,8 +55,6 @@ The [Color Picker][ColorPicker] is a GUI in the [Elements panel][ElementsDoc] fo
 
 In Microsoft Edge 82, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
-
 Chromium issue [#963183][crbug963183]  
 
 ### Properties tab now populates after a page refresh  
@@ -114,7 +112,7 @@ DevTools is able to emulate blurred vision and the following [types of color vis
 *   Achromatopsia.  The inability to perceive any color except for shades of grey \(extremely rare\).  
 *   Achromatomaly.  A reduced sensitivity to green, red, and blue light \(extremely rare\).  
 
-The `-anomaly` forms are the \(rare\) extreme versions of the `-ia` forms.  Every person with an `-ia` vision deficiency is different and may see things differently \(being able to perceive more or less of the relevant colors\).  The DevTools emulations are just a visual approximation of how someone may experience one of these vision deficiencies.  Although the approximation should be good enough for you to identify and resolve issues, there's no way to simulate exactly what a individual may experience.  
+The *-anomaly* forms are the \(rare\) extreme versions of the *-ia* forms.  Every person with an *-ia* vision deficiency is different and may see things differently \(being able to perceive more or less of the relevant colors\).  The DevTools emulations are just a visual approximation of how someone may experience one of these vision deficiencies.  Although the approximation should be good enough for you to identify and resolve issues, there's no way to simulate exactly what an individual may experience.  
 
 Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
