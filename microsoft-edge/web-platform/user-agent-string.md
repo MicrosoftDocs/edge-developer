@@ -38,9 +38,9 @@ Mapping UA string tokens to a more human-readable browser name for use in code i
 
 Sometimes, a website does not recognize the updated version of the Microsoft Edge UA.  As a result, a set of the features of that website may not work correctly.  When Microsoft is notified about these types of issues, website owners are contacted and informed about the updated UA.  
 
-The sites often need some time to update and test the UA detection logic to address the issues that Microsoft reports to site owners.  In these cases, Microsoft uses a list of UA overrides in our Beta channel to maximize compatibility for users who access these sites.  The overrides specify new UA values that Microsoft Edge should send instead of the default UA for specific sites.  You are able to view the list of UA overrides that are currently being applied by navigating to `edge://compat/useragent` in Microsoft Edge Beta.  
+The sites often need some time to update and test the UA detection logic to address the issues that Microsoft reports to site owners.  In these cases, Microsoft uses a list of UA overrides in our Beta and Stable channels to maximize compatibility for users who access these sites.  The overrides specify new UA values that Microsoft Edge should send instead of the default UA for specific sites.  You are able to view the list of UA overrides that are currently being applied by navigating to `edge://compat/useragent` in the Beta and Stable channels of Microsoft Edge. 
 
-Our Canary and Dev channels do not currently receive UA overrides so that web developers have an environment where they can easily reproduce issues on their sites that are caused by the default Microsoft Edge UA.  If for some reason you require the ability to disable UA overrides in Microsoft Edge Beta, you may run `msedge.exe` using the following command line argument:  
+Our Canary and Dev channels do not currently receive UA overrides so that web developers have an environment where they can easily reproduce issues on their sites that are caused by the default Microsoft Edge UA.  If for some reason you require the ability to disable UA overrides in the Beta or Stable channels of Microsoft Edge, you may run the Microsoft Edge executable using the following command line argument:  
 
 ```shell
 --disable-domain-action-user-agent-override
