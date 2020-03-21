@@ -258,16 +258,16 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
 [TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"  
 
-[WhatsNew81]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/01/devtools.md "What's New In DevTools (Microsoft Edge 81)"  
+[WhatsNew81]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/01/devtools "What's New In DevTools (Microsoft Edge 81)"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[ColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker"  
-[ElementsDoc]: /microsoft-edge/devtools-guide-chromium/css/index.md "Get Started With Viewing And Changing CSS"  
-[MainMenuDoc]: /microsoft-edge/devtools-guide-chromium/customize/placement.md#change-placement-from-the-main-menu "Change placement from the main menu"  
-[LongTasksInPerformancePanel]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference.md#view-main-thread-activity "View main thread activity"  
-[RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab"  
-[PWADoc]: /microsoft-edge/devtools-guide-chromium/progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows"  
-[RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices"  
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[ColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Change colors with the Color Picker"  
+[ElementsDoc]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+[MainMenuDoc]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Change placement from the main menu"  
+[LongTasksInPerformancePanel]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "View main thread activity"  
+[RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab"  
+[PWADoc]: /microsoft-edge/devtools-guide-chromium/progressive-web-apps-chromium/index "Progressive Web Apps on Windows"  
+[RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices"  
 
 [WindowsDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
 
