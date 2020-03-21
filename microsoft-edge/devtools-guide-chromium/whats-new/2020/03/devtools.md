@@ -266,7 +266,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [MainMenuDoc]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Change placement from the main menu"  
 [LongTasksInPerformancePanel]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "View main thread activity"  
 [RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab"  
-[PWADoc]: /microsoft-edge/devtools-guide-chromium/progressive-web-apps-chromium/index "Progressive Web Apps on Windows"  
+[PWADoc]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows"  
 [RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices"  
 
 [WindowsDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
