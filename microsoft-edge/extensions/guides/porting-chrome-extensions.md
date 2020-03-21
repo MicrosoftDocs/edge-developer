@@ -23,6 +23,7 @@ Porting an extension from Chrome to Microsoft Edge is made easy with the help of
 In order to allow for seamless porting of Chrome APIs to supported Microsoft Edge APIs, two scripts are added to your extension's folder. These scripts bridge APIs (polyfiling where necessary), meaning you won't have to worry about changing any Chrome specific code in your background script or content scripts.
 
 After conversion, you will see them included in the manifest file of your extension with the `"-ms-preload"` key:
+
 ```json
 "-ms-preload": {
   "backgroundScript": "backgroundScriptsAPIBridge.js",
