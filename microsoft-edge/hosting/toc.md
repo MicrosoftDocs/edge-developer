@@ -166,7 +166,7 @@
 # [WebView2 (developer preview)](webview2.md)
 ## [Getting Started](webview2/GettingStarted.md)
 ## [Release notes](webview2/ReleaseNotes.md)
-## [Tooling]
+## Tooling
 ### [WebDriver](webview2/Tooling/webdriver.md)
 ## [Reference (WebView2)](webview2/reference-webview2.md)
 ### [ICoreWebView2](webview2/reference/ICoreWebView2.md)
