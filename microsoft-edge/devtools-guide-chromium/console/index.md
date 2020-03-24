@@ -2,7 +2,7 @@
 title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -83,9 +83,7 @@ Web developers log messages for 2 general reasons:
 *   Making sure that code is running in the right order.  
 *   Inspecting the values of variables at a certain moment in time.  
 
-<!--See [Get Started With Logging Messages][LoggingMessages] to get hands-on experience with logging.  -->  
-<!--See the [Console API Reference][ConsoleAPI] to browse the full list of `console` methods.  -->  
-The main difference between the methods is how the data being logged is displayed.  
+See [Get Started With Logging Messages][ImageConsoleChangeTitle] to get hands-on experience with logging.  See the [Console API Reference][DevToolsConsoleAPI] to browse the full list of `console` methods.  The main difference between the methods is how the data being logged is displayed.  
 
 ## Running JavaScript   
 
@@ -99,12 +97,12 @@ The Console is also a [REPL][WikiREPLoop].  You may run JavaScript in the Consol
 > Using the Console to change the top heading of the page  
 > ![Using the Console to change the top heading of the page][ImageConsoleChangeTitle]  
 
-Modifying the page from the Console is possible because the Console has full access to the [`window`][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  <!--See [Console Utilities API Reference][UtilitiesDebug] to see the full list of utility functions.  -->  
+Modifying the page from the Console is possible because the Console has full access to the [`window`][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  See [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug] to see the full list of utility functions.  
 
 When you run JavaScript you do not have to interact with the page.  You may use the Console to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array method [`map()`][MDNMap], and you want to experiment with it.  
 The Console is a good place to try out the function.  
 
-<!--See [Get Started With Running JavaScript][RunningJavascript] to get hands-on experience with running JavaScript in the Console.  -->
+See [Get Started With Running JavaScript][ImageConsoleChangeTitle] to get hands-on experience with running JavaScript in the Console.  
 
    
 
@@ -112,19 +110,20 @@ The Console is a good place to try out the function.
 
 <!-- image links -->  
 
-[ImageConsole]: images/console-console-demo.msft.png "Figure 1: The Console panel"  
-[ImageConsoleChangeTitle]: images/devtools-console-h1-changed.msft.png "Figure 3: Using the Console to change the top heading of the page"  
-[ImageConsoleOverview]: images/devtools-console-empty.msft.png "Figure 2: The Console panel next to the DevTools homepage"  
+[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-console-demo.msft.png "Figure 1: The Console panel"  
+[ImageConsoleChangeTitle]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-h1-changed.msft.png "Figure 3: Using the Console to change the top heading of the page"  
+[ImageConsoleOverview]: /microsoft-edge/devtools-guide-chromium/media/devtools-console-empty.msft.png "Figure 2: The Console panel next to the DevTools homepage"  
 
 <!-- links -->  
 
-<!--[ConsoleAPI]: api.md ""  -->  
-<!--[LoggingMessages]: log.md ""  -->  
-<!--[RunningJavascript]: javascript.md ""  -->  
-<!--[UtilitiesDebug]: utilities.md#debugfunction ""  -->
+[DevToolsConsoleAPI]: /microsoft-edge/devtools-guide-chromium/console/api.md "Console API Reference"  
+[DevtoolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
+[DevtoolsConsoleRunningJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Get Started With Running JavaScript In The Console"  
+[DevtoolsConsoleUtilitiesDebug]: /microsoft-edge/devtools-guide-chromium/console/utilities#debug "debug - Console Utilities API Reference"  
 
 [MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
+
 [WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop - Wikipedia"  
 
 > [!NOTE]

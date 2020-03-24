@@ -2,7 +2,7 @@
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/09/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -260,42 +260,41 @@ You may use any of the following workflows to clear the Console:
 
 <!-- image links -->  
 
-[ImageClearConsoleIcon]: images/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: images/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: images/show-console-sidebar-icon.msft.png  
+[ImageClearConsoleIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-console-button-icon.msft.png  
+[ImageSettingsButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-button-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: /microsoft-edge/devtools-guide-chromium/media/show-console-sidebar-icon.msft.png  
 
-[ImageConsolePanel]: images/console-hello-console.msft.png "Figure 1: The Console panel"  
-[ImageCommandShowConsole]: images/console-command-menu-show-console.msft.png "Figure 2: The command for showing the Console panel"  
-[ImageShowConsoleDrawer]: images/elements-customize-control-devtools-show-console-drawer.msft.png "Figure 3: Show console drawer"  
-[ImageDrawerConsole]: images/elements-console-drawer-hello-world.msft.png "Figure 4: The Console tab in the Drawer"  
-[ImageShowDrawerCommand]: images/console-command-menu-show-console.msft.png "Figure 5: The command for showing the Console tab in the Drawer"  
-[ImageConsoleSettings]: images/console-settings-group-similar-empty.msft.png "Figure 6: Console Settings"  
-[ImageConsoleSidebar]: images/console-sidebar-drawer-empty.msft.png "Figure 7: Console Sidebar"  
-[ImageXhrGrouped]: images/console-xhr-fetch.msft.png "Figure 8: Logging XMLHttpRequest and Fetch requests"  
-<!--[ImageXhrUngrouped]: images/console-xhr-fetch-all.msft.png "Figure old 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  -->  
-[Image429Message]: images/console-show-network.msft.png "Figure 9: A 429 message in the Console"  
-[ImageUserMessages]: images/console-sidebar-drawer-user-messages.msft.png "Figure 10: Viewing user messages"  
-[ImageLogLevels]: images/console-log-level-default-levels.msft.png "Figure 11: The Log Levels dropdown"  
-[ImageSidebarWarnings]: images/console-sidebar-warnings.msft.png "Figure 12: Using the Sidebar to view warnings"  
-[ImageUrlFilter]: images/console-filter-text.msft.png "Figure 13: A URL filter"  
-[ImageNegativeUrlFilter1]: images/console-negative-filter-text.msft.png "Figure 14: A negative URL filter that hides all messages matching the URL https://b.wal.co"  
-[ImageNegativeUrlFilter2]: images/console-filter-text-specified.msft.png "Figure 15: Viewing the messages that came from wp-ad.min.js"  
-[ImageRegExFilter]: images/console-filter-regex.msft.png "Figure 16: Filtering out any messages that do not match regex expression"  
-[ImageHistoryAutocomplete]: images/console-filter-text-autofilter-history.msft.png "Figure 17: The autocomplete popup showing expressions from history"  
-[ImageJavascriptContext]: images/console-dom-level-top.msft.png "Figure 18: The JavaScript Context dropdown"  
-[ImageSelectContext]: images/console-dom-level-multiple.msft.png "Figure 19: Selecting a different JavaScript context"  
+[ImageConsolePanel]: /microsoft-edge/devtools-guide-chromium/media/console-hello-console.msft.png "Figure 1: The Console panel"  
+[ImageCommandShowConsole]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Figure 2: The command for showing the Console panel"  
+[ImageShowConsoleDrawer]: /microsoft-edge/devtools-guide-chromium/media/console-elements-customize-control-devtools-show-console-drawer.msft.png "Figure 3: Show console drawer"  
+[ImageDrawerConsole]: /microsoft-edge/devtools-guide-chromium/media/console-elements-console-drawer-hello-world.msft.png "Figure 4: The Console tab in the Drawer"  
+[ImageShowDrawerCommand]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Figure 5: The command for showing the Console tab in the Drawer"  
+[ImageConsoleSettings]: /microsoft-edge/devtools-guide-chromium/media/console-settings-group-similar-empty.msft.png "Figure 6: Console Settings"  
+[ImageConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-drawer-empty.msft.png "Figure 7: Console Sidebar"  
+[ImageXhrGrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch.msft.png "Figure 8: Logging XMLHttpRequest and Fetch requests"  
+<!--[ImageXhrUngrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch-all.msft.png "Figure old 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  -->  
+[Image429Message]: /microsoft-edge/devtools-guide-chromium/media/console-show-network.msft.png "Figure 9: A 429 message in the Console"  
+[ImageUserMessages]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-drawer-user-messages.msft.png "Figure 10: Viewing user messages"  
+[ImageLogLevels]: /microsoft-edge/devtools-guide-chromium/media/console-log-level-default-levels.msft.png "Figure 11: The Log Levels dropdown"  
+[ImageSidebarWarnings]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-warnings.msft.png "Figure 12: Using the Sidebar to view warnings"  
+[ImageUrlFilter]: /microsoft-edge/devtools-guide-chromium/media/console-filter-text.msft.png "Figure 13: A URL filter"  
+[ImageNegativeUrlFilter1]: /microsoft-edge/devtools-guide-chromium/media/console-negative-filter-text.msft.png "Figure 14: A negative URL filter that hides all messages matching the URL https://b.wal.co"  
+[ImageNegativeUrlFilter2]: /microsoft-edge/devtools-guide-chromium/media/console-filter-text-specified.msft.png "Figure 15: Viewing the messages that came from wp-ad.min.js"  
+[ImageRegExFilter]: /microsoft-edge/devtools-guide-chromium/media/console-filter-regex.msft.png "Figure 16: Filtering out any messages that do not match regex expression"  
+[ImageHistoryAutocomplete]: /microsoft-edge/devtools-guide-chromium/media/console-filter-text-autofilter-history.msft.png "Figure 17: The autocomplete popup showing expressions from history"  
+[ImageJavascriptContext]: /microsoft-edge/devtools-guide-chromium/media/console-dom-level-top.msft.png "Figure 18: The JavaScript Context dropdown"  
+[ImageSelectContext]: /microsoft-edge/devtools-guide-chromium/media/console-dom-level-multiple.msft.png "Figure 19: Selecting a different JavaScript context"  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-
-[DevToolsConsoleViewMessages]: index.md#viewing-logged-messages "Viewing logged messages - Console Overview"  
-[DevToolsConsoleApi]: api.md "Console API Reference"  
-[DevToolsConsoleOverviewJavascript]: index.md#running-javascript "Running JavaScript - Console Overview"  
-[DevToolsConsoleJavascript]: javascript.md "Get Started With Running JavaScript In The Console"  
-[DevToolsConsoleLiveExpressions]: live-expressions.md "Watch JavaScript Expression Values In Real-Time With Live Expressions"  
-[DevToolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
-[DevToolsConsoleUtilities]: utilities.md "Console Utilities API Reference"  
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsConsoleViewMessages]: /microsoft-edge/devtools-guide-chromium/console/index#viewing-logged-messages "Viewing logged messages - Console Overview"  
+[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Console API Reference"  
+[DevToolsConsoleOverviewJavascript]: /microsoft-edge/devtools-guide-chromium/console/index#running-javascript "Running JavaScript - Console Overview"  
+[DevToolsConsoleJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Get Started With Running JavaScript In The Console"  
+[DevToolsConsoleLiveExpressions]: /microsoft-edge/devtools-guide-chromium/console/live-expressions "Watch JavaScript Expression Values In Real-Time With Live Expressions"  
+[DevToolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
+[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
 
 [MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browsing context | MDN"  
 

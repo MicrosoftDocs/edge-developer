@@ -2,7 +2,7 @@
 title: Sources Panel Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -48,12 +48,9 @@ Use the **Page** pane to view all of the resources that the page has loaded.
 > ![Figure 1: The Page pane][ImageSourcesPagePane]  
 
 How the **Page** pane is organized:  
-*   The top-level, such as `top` in [**Figure 1**](#figure-1), represents an [HTML frame][HTML4Frames].  You'll find `top` on every page that you visit. `top` represents the main document frame.  
+*   The top-level, such as `top` in [**Figure 1**](#figure-1), represents an [HTML frame][HTML4Frames].  Find `top` on every page that you visit. `top` represents the main document frame.  
 *   The second-level, such as `docs.microsoft.com` in [**Figure 1**](#figure-1), represents an [origin][HTMLOrigin].  
 *   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in [**Figure 1**](#figure-1) the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
-
-[HTML4Frames]: https://www.w3.org/TR/html401/present/frames.html  
-[HTMLOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin  
 
 Click a file in the **Page** pane to view its contents in the **Editor** pane.  You can view any type of file. For images, you see a preview of the image.  
 
@@ -71,13 +68,13 @@ Use the **Editor** pane to edit CSS and JavaScript.  DevTools updates the page t
 }
 ```
 
-you'll see that change take effect immediately.
+You should see that change take effect immediately.
 
 > ##### Figure 3  
 > Editing CSS in the **Editor** pane to change the text color of the subtitle to red  
 > ![Figure 3. Editing CSS in the Editor pane to change the text color of the subtitle to red][ImageEditCSS]  
 
-CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\). DevTools doesn't re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in [**Figure 4**](#figure-4) note how `console.log('A')` doesn't run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the change, then the text `A` would have been logged to the **Console**. 
+CSS changes take effect immediately, no save needed. For JavaScript changes to take effect, press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\). DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in [**Figure 4**](#figure-4) note how `console.log('A')` does not run, whereas `console.log('B')` does. If DevTools re-ran the entire script after making the change, then the text `A` would have been logged to the **Console**.  
 
 > ##### Figure 4  
 > Editing JavaScript in the **Editor** pane  
@@ -110,12 +107,10 @@ To run a **Snippet**:
 
 See [Run Snippets Of Code From Any Page][Snippet] to learn more.
 
-[Snippet]: ./javascript/snippets.md
-[UICommandMenu]: ./command-menu/index.md 
 
 ## Debug JavaScript 
 
-Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead. The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through your code's execution, one line at a time. As you step through the code, you can view and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
+Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead. The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time. As you step through the code, you can view and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
 See [Get Started With Debugging JavaScript](./javascript/index.md) to learn the
 basics of debugging in DevTools.
@@ -130,8 +125,6 @@ By default, when you edit a file in the **Sources** panel, those changes are los
 
 See [Edit Files With Workspaces][Workspaces] to get started.
 
-[Workspaces]: ./workspaces/index.md
-
  
 
 
@@ -145,7 +138,17 @@ See [Edit Files With Workspaces][Workspaces] to get started.
 [ImageEditCSS]: /microsoft-edge/devtools-guide-chromium/media/edit-css.msft.png "Figure 3: Editing CSS in the Editor pane to change the text color of the subtitle to red"  
 [ImageEditJS]: /microsoft-edge/devtools-guide-chromium/media/edit-js.msft.png "Figure 4: Editing JavaScript in the Editor pane"  
 [ImageSnippet]: /microsoft-edge/devtools-guide-chromium/media/snippet.msft.png "Figure 5: A Snippet that inserts the jQuery library into a page"  
-[ImageDebugging]: images/debugging.msft.png "Figure 6: Debugging JavaScript"  
+[ImageDebugging]: /microsoft-edge/devtools-guide-chromium/media/debugging.msft.png "Figure 6: Debugging JavaScript"  
+
+<!-- links -->  
+
+
+[UICommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[Snippet]: /microsoft-edge/devtools-guide-chromium/javascript/snippets "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools"  
+[Workspaces]: /microsoft-edge/devtools-guide-chromium/workspaces/index "Edit Files With Workspaces"  
+
+[HTML4Frames]: https://w3.org/TR/html401/present/frames.html  
+[HTMLOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

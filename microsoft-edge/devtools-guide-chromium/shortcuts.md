@@ -2,7 +2,7 @@
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -82,7 +82,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Select the element above / below the currently-selected element | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
 | Expand the currently-selected node. If the node is already expanded, this shortcut selects the element below it | `Right Arrow` | `Right Arrow` |  
 | Collapse the currently-selected node. If the node is already collapsed, this shortcut selects the element above it | `Left Arrow` | `Left Arrow` |  
-| Expand or collapse the currently-selected node and all of its children | Hold `Control`+`Alt`, then click the arrow icon next to the element's name | Hold `Option`, then click the arrow icon next to the element's name |  
+| Expand or collapse the currently-selected node and all of its children | Hold `Control`+`Alt`, then click the arrow icon next to the name of the element | Hold `Option`, then click the arrow icon next to the name of the element |  
 | Toggle **Edit Attributes** mode on the currently-selected element | `Enter` | `Enter` |  
 | Select the next / previous attribute after entering **Edit Attributes** mode | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
 | Hide the currently-selected element | `H` | `H` |  
@@ -158,7 +158,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Clear the **Console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
 | Force a multi-line entry. Note that DevTools should detect multi-line scenarios by default, so this shortcut is now usually unnecessary | `Shift`+`Enter` | `Command`+`Return` |  
 | Run | `Enter` | `Return` |  
-| Expand all sub-properties of an object that's been logged to the Console | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] |  
+| Expand all sub-properties of an object that are logged to the Console | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] |  
 
  
 
@@ -166,7 +166,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 <!-- image links -->  
 
-[ImageExpandIcon]: images/expand.msft.png  
+[ImageExpandIcon]: /microsoft-edge/devtools-guide-chromium/media/expand-icon.msft.png  
 
 <!-- links -->  
 
