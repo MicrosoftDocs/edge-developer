@@ -14,7 +14,7 @@ experiment_id: "51fe4b97-3e55-41"
 
 # Microsoft Edge (EdgeHTML) Developer Tools  
 
-[!INCLUDE [deprecation-note](/includes/new-devtools-version-note.md)]  
+[!INCLUDE [deprecation-note](includes/new-devtools-version-note.md)]  
 
 The Microsoft Edge \(EdgeHTML\) DevTools are built with [TypeScript][TypeScriptIndex], powered by [open source][GithubMicrosoftChakracore], optimized for modern front-end workflows, and now available as a [standalone Windows 10 app][MicrosoftStoreEdgeDevtoolsPreview] in the Microsoft Store!  
 
