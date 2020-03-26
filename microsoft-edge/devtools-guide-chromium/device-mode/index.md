@@ -2,7 +2,7 @@
 title: Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -269,46 +269,47 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 
 <!-- image links -->  
 
-[ImageCaptureIcon]: images/capture-settings-icon.msft.png  
-[ImageCustomizeIcon]: images/customize-and-control-devtools-icon.msft.png  
-[ImageDeviceToolbarIcon]: images/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: images/rotate-dark-icon.msft.png  
+[ImageCaptureIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-settings-icon.msft.png  
+[ImageCustomizeIcon]: /microsoft-edge/devtools-guide-chromium/media/customize-and-control-devtools-icon.msft.png  
+[ImageDeviceToolbarIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-device-toolbar-dark-icon.msft.png  
+[ImageRotateIcon]: /microsoft-edge/devtools-guide-chromium/media/rotate-dark-icon.msft.png  
 
-[ImageDeviceToolbar]: images/toggle-device-toolbar-highlighted.msft.png "Figure 1: The Device Toolbar"  
-[ImageResponsiveHandles]: images/toggle-device-toolbar-handles-highlighted.msft.png "Figure 2: The handles for changing the dimensions of the viewport when in Responsive Viewport Mode"  
-[ImageShowMediaQueries]: images/toggle-device-toolbar-more-options-show-media-queries.msft.png "Figure 3: Show media queries"  
-[ImageBreakpoint]: images/toggle-device-toolbar-click-breakpoint.msft.png "Figure 4: Click a breakpoint to change the width of the viewport"  
-[ImageDeviceType]: images/toggle-device-toolbar-device-type-list.msft.png "Figure 5: The Device Type list"  
-[ImageDeviceList]: images/toggle-device-toolbar-device-list.msft.png "Figure 6: The Device list"  
-[ImageLandscape]: images/toggle-device-toolbar-landscape.msft.png "Figure 7: Landscape orientation"  
-[ImageDeviceToolbar2]: images/toggle-device-toolbar-highlighted.msft.png "Figure 8: The Device Toolbar"  
-[ImageShowDeviceFrame]: images/toggle-device-toolbar-option-show-device-frame.msft.png "Figure 9: Show device frame"  
-[ImageIphoneFrame]: images/toggle-device-toolbar-options-device-frame-iphone-6.msft.png "Figure 10: The device frame for the iPhone 6"  
-[ImageEdit]: images/toggle-device-toolbar-device-list-edit.msft.png "Figure 11: Selecting Edit"  
-[ImageAddCustomDevice]: images/toggle-device-toolbar-settings-emulated-devices-add.msft.png "Figure 12: Creating a custom device"  
-[ImageShowRulers]: images/toggle-device-toolbar-options-show-rulers.msft.png "Figure 13: Show rulers"  
-[ImageRulers]: images/toggle-device-toolbar-rulers.msft.png "Figure 14: Rulers above and to the left of the viewport"  
-[ImageZoomViewport]: images/toggle-device-toolbar-zoom.msft.png "Figure 15: Zoom"  
-[ImageThrottling]: images/toggle-device-toolbar-throttle.msft.png "Figure 16: The Throttle list"  
-[ImageDeviceToolbar3]: images/toggle-device-toolbar-highlighted.msft.png "Figure 17: The Device Toolbar"  
-[ImageCPU]: images/performance-cpu-throttle.msft.png "Figure 18: The CPU list"  
-[ImageNetwork]: images/network-throttle.msft.png "Figure 19: The Throttle list"  
-[ImageCommandMenu]: images/command-menu-throttle.msft.png "Figure 20: The Command Menu"  
-[ImageNetwork2]: images/performance-network-throttle.msft.png "Figure 21: Setting network throttling from the Performance panel"  
-[ImageSensors]: images/toggle-device-toolbar-more-tools-sensors.msft.png "Figure 22: Sensors"  
-[ImageShowSensors]: images/toggle-device-toolbar-command-menu-sensors.msft.png "Figure 23: Show Sensors"  
-[ImageGeolocation]: images/toggle-device-toolbar-sensors-tokyo.msft.png "Figure 24: Geolocation"  
-[ImageSensors2]: images/toggle-device-toolbar-more-tools-sensors.msft.png "Figure 25: Sensors"  
-[ImageShowSensors2]: images/toggle-device-toolbar-command-menu-sensors.msft.png "Figure 26: Show Sensors"  
-[ImageOrientation]: images/toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png "Figure 27: Orientation"  
+[ImageDeviceToolbar]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Figure 1: The Device Toolbar"  
+[ImageResponsiveHandles]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png "Figure 2: The handles for changing the dimensions of the viewport when in Responsive Viewport Mode"  
+[ImageShowMediaQueries]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png "Figure 3: Show media queries"  
+[ImageBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png "Figure 4: Click a breakpoint to change the width of the viewport"  
+[ImageDeviceType]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-type-list.msft.png "Figure 5: The Device Type list"  
+[ImageDeviceList]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-list.msft.png "Figure 6: The Device list"  
+[ImageLandscape]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-landscape.msft.png "Figure 7: Landscape orientation"  
+[ImageDeviceToolbar2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Figure 8: The Device Toolbar"  
+[ImageShowDeviceFrame]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png "Figure 9: Show device frame"  
+[ImageIphoneFrame]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png "Figure 10: The device frame for the iPhone 6"  
+[ImageEdit]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-device-list-edit.msft.png "Figure 11: Selecting Edit"  
+[ImageAddCustomDevice]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png "Figure 12: Creating a custom device"  
+[ImageShowRulers]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png "Figure 13: Show rulers"  
+[ImageRulers]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-rulers.msft.png "Figure 14: Rulers above and to the left of the viewport"  
+[ImageZoomViewport]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-zoom.msft.png "Figure 15: Zoom"  
+[ImageThrottling]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-throttle.msft.png "Figure 16: The Throttle list"  
+[ImageDeviceToolbar3]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-highlighted.msft.png "Figure 17: The Device Toolbar"  
+[ImageCPU]: /microsoft-edge/devtools-guide-chromium/media/device-mode-performance-cpu-throttle.msft.png "Figure 18: The CPU list"  
+[ImageNetwork]: /microsoft-edge/devtools-guide-chromium/media/device-mode-network-throttle.msft.png "Figure 19: The Throttle list"  
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-command-menu-throttle.msft.png "Figure 20: The Command Menu"  
+[ImageNetwork2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-performance-network-throttle.msft.png "Figure 21: Setting network throttling from the Performance panel"  
+[ImageSensors]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png "Figure 22: Sensors"  
+[ImageShowSensors]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png "Figure 23: Show Sensors"  
+[ImageGeolocation]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png "Figure 24: Geolocation"  
+[ImageSensors2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png "Figure 25: Sensors"  
+[ImageShowSensors2]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png "Figure 26: Show Sensors"  
+[ImageOrientation]: /microsoft-edge/devtools-guide-chromium/media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png "Figure 27: Orientation"  
 
 <!-- links -->  
 
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community"  -->
-[DevToolsRemoteDebugging]: ../remote-debugging/index.md "Get Started with Remote Debugging Android Devices"  
+[DevToolsRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index.md "Get Started with Remote Debugging Android Devices"  
 
 [MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"  
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User Agent | MDN"  
+
 [WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Order of Approximation - First-order - Wikipedia"  
 
 > [!NOTE]
