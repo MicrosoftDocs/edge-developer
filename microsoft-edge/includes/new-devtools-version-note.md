@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 03/26/2020
 ---
 > [!NOTE]
-> The next version of Microsoft Edge is built using Chromium, and starts at version 75.  For more information, [download the next version of Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].  
+> The new Microsoft Edge is built using Chromium, and starts at version 75.  For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].  
 
 <!-- image links -->  
 
