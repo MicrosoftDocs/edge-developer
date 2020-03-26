@@ -70,16 +70,16 @@ You can also add and upvote tooling requests to our [UserVoice forum][UservoiceW
 
 ## General Shortcuts  
 
-These shortcuts control the main DevTools window and/or work across all tools.  
+These shortcuts control the main DevTools window and should work across all tools.  
 
 | Action | Shortcut |  
 |:--- |:--- |  
-| Show/Hide DevTools (opens to last viewed panel) | `F12`, `Ctrl`+`Shift`+`I` |  
-| Toggle docking (Undock/Bottom/Right) | `Ctrl`+`Shift`+`D` |  
+| Show/Hide DevTools \(opens to last viewed panel\) | `F12`, `Ctrl`+`Shift`+`I` |  
+| Toggle docking \(Undock/Bottom/Right\) | `Ctrl`+`Shift`+`D` |  
 | Open file | `Ctrl`+`P`, `Ctrl`+`O` |  
 | Show non-editable HTML source code in Debugger | `Ctrl`+`U` |  
 | Show/hide Console at the bottom of any other tool  | `Ctrl`+`` ` `` |  
-| Switch to Elements (DOM Explorer) | `Ctrl`+`1` |  
+| Switch to Elements \(DOM Explorer\) | `Ctrl`+`1` |  
 | Switch to Console |  `Ctrl`+`2` |  
 | Switch to Debugger | `Ctrl`+`3` |  
 | Switch to Network | `Ctrl`+`4` |  
@@ -89,8 +89,8 @@ These shortcuts control the main DevTools window and/or work across all tools.
 | Help Document | `F1` |  
 | Next tool | `Ctrl`+`F6` |  
 | Previous tool | `Ctrl`+`Shift`+`F6` |  
-| Previous tool (from history) | `Ctrl`+`Shift`+`[` |  
-| Next tool (from history) | `Ctrl`+`Shift`+`]` |  
+| Previous tool \(from history\) | `Ctrl`+`Shift`+`[` |  
+| Next tool \(from history\) | `Ctrl`+`Shift`+`]` |  
 | Next Subframe | `F6` |  
 | Previous Subframe | `Shift`+`F6` |  
 | Next match in Search box | `F3` |  
@@ -107,7 +107,7 @@ These shortcuts control the main DevTools window and/or work across all tools.
 
 [ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) DevTools"  
 [ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app Local panel"  
-[DevtoolsGuideEdgehtmlRemote]: ./devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  
+[DevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  
 
 <!-- links  -->  
 
@@ -131,7 +131,7 @@ These shortcuts control the main DevTools window and/or work across all tools.
 [WindowsInsiderProgram]: https://insider.windows.com "Windows Insider Program"  
 
 [BrowserstackEdgehtml]: https://www.browserstack.com/test-on-microsoft-edge-browser#live-cloud "Microsoft Edge Browser Testing for Free | BrowserStack"  
-z
+
 [GithubMicrosoftChakracore]: https://github.com/Microsoft/ChakraCore "microsoft/ChakraCore | GitHub"  
 
 [TypeScriptIndex]: https://www.typescriptlang.org "TypeScript"  
