@@ -1,6 +1,6 @@
 ---
 description: How to use webhint in VS Code
-title: webhint in VS Code
+title: webhint VS Code extension
 author: hxlnt
 ms.author: raweil
 ms.date: 03/26/2020
