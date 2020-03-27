@@ -6,7 +6,7 @@ ms.author: zoghadya
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
+keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
 ---
 
 # Visual Studio Code
@@ -27,7 +27,7 @@ Search the Marketplace for the specific extension and select **Install**.
 
 With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug your front-end JavaScript code line by line and see `console.log()` statements all directly from [Visual Studio Code](https://code.visualstudio.com/)!
 
-This extensions gives you the ability to launch or attach to both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium). Check out [this page](./debugger-for-edge.md) for a walkthrough of debugging Microsoft Edge from VS Code and sample **launch.json** configurations.
+This extension gives you the ability to launch or attach to both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium). Check out [this page](./debugger-for-edge.md) for a walkthrough of debugging Microsoft Edge from VS Code and sample **launch.json** configurations.
 
 ![GIF of the Debugger for Edge VS Code extension in action!](./media/debugger-for-edge.gif)
 
@@ -38,3 +38,13 @@ By adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com
 For more information, check out [this page](./elements-for-edge.md).
 
 ![GIF of the Elements for Edge VS Code extension in action!](./media/elements-for-edge.gif)
+
+## webhint
+
+[webhint](https://webhint.io) is a customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors. This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org/). The Microsoft Edge team continues to contribute to webhint alongside developers across the web community.
+
+![GIF of webhint VS Code extension](./media/webhint-vscode.gif)
+
+By adding the [webhint VS Code extension](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint), you can identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more. Hints appear as inline underlines and are summarized in the Problems pane.
+
+[This page](./webhint.md) provides a more in-depth walkthrough of configuring hints in the VS Code webhint extension.
