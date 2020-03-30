@@ -660,6 +660,7 @@ let name = "exampleProperty";
 webview.addWebAllowedObject(name, applicationObject);
 webview.navigate("https://example.com/"); // applicationObject will be available as window.exampleProperty on https://example.com
 ```
+
 #### Parameters
 *name*
 * Type: **String**
@@ -687,6 +688,7 @@ Creates a URI that you can pass to [navigateToLocalStreamUri](#methods).
 ```js
 var string = webview.buildLocalStreamUri(contentIdentifier, relativePath);
 ```
+
 #### Parameters
 *contentIdentifier*
 * Type: **String**
@@ -718,6 +720,7 @@ Creates an image of the current [webview element](./webview.md) and write it to 
 ```js
 var capturePreviewToBlobAsync = webview.capturePreviewToBlobAsync();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -733,6 +736,7 @@ Asynchronously gets a [DataPackage](https://docs.microsoft.com/uwp/api/Windows.A
 ```js
 var msWebViewAsyncOperation = webview.captureSelectedContentToDataPackageAsync();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -760,6 +764,7 @@ As an asynchronous action, executes the specified script function from the curre
 ```js
 webview.invokeScriptAsync(functionName, ...args)
 ```
+
 #### Parameters
 
 **functionName**
@@ -793,6 +798,7 @@ Returns a list of deferred permission requests issued by content in the **webvie
 ```js
 var sequence<PermissionRequest> = x-ms-webview.getDeferredPermissionRequests();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -817,6 +823,7 @@ Returns the specified deferred permission request.
 ```js
 var deferredPermissionRequest = x-ms-webview.getDeferredPermissionRequestById(id);
 ```
+
 #### Parameters
 *id*
 * Type: **unsigned long**
@@ -842,6 +849,7 @@ Navigates the **webview** to the previous page in the navigation history.
 ```js
 webview.goBack();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -855,6 +863,7 @@ Navigates the **webview** to the next page in the navigation history.
 ```js
 webview.goForward();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -868,6 +877,7 @@ Loads the HTML content at the specified Uniform Resource Identifier (URI).
 ```js
 webview.navigate(uri);
 ```
+
 #### Parameters
 
 **uri**
@@ -891,6 +901,7 @@ const origin = {
 };
 webview.navigateFocus(navigationReason, origin);
 ```
+
 #### Parameters
 *navigationReason*
 * Type: **String**
@@ -910,6 +921,7 @@ Loads local web content at the specified URI using a [**UriToStreamResolver**](/
 ```js
 webview.navigateToLocalStreamUri(source, streamResolver); 
 ```
+
 #### Parameters
 
 *source*
@@ -930,6 +942,7 @@ Loads the specified HTML content as a new document.
 ```js
 webview.navigateToString(contents);
 ```
+
 #### Parameters
 
 *contents*
@@ -946,6 +959,7 @@ Navigates the webview to a Uniform Resource Identifier (URI) with a POST request
 ```js
 webview.navigateWithHttpRequestMessage(requestMessage);
 ```
+
 #### Parameters
 
 *requestMessage*
@@ -968,6 +982,7 @@ Reloads the current content in the **webview**.
 ```js
 webview.refresh();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -982,6 +997,7 @@ Halts the current **webview** navigation or download.
 ```js
 webview.stop();
 ```
+
 #### Parameters
 This method has no parameters.
 

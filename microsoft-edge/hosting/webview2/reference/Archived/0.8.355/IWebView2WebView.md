@@ -1040,10 +1040,12 @@ Post the specified webMessage to the top level document in this [IWebView2WebVie
 > public HRESULT [PostWebMessageAsJson](#postwebmessageasjson)(LPCWSTR webMessageAsJson)
 
 The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following: 
+
 ```cpp
 window.chrome.webview.addEventListener('message', handler)
 window.chrome.webview.removeEventListener('message', handler)
 ```
+
  The event args is an instance of `MessageEvent`. The IWebView2Settings::IsWebMessageEnabled setting must be true or this method will fail with E_INVALIDARG. The event arg's data property is the webMessage string parameter parsed as a JSON string into a JavaScript object. The event arg's source property is a reference to the `window.chrome.webview` object. See SetWebMessageReceivedEventHandler for information on sending messages from the HTML document in the webview to the host. This message is sent asynchronously. If a navigation occurs before the message is posted to the page, then the message will not be sent.
 
 ```cpp
@@ -1118,6 +1120,7 @@ The postMessage function is `void postMessage(object)` where object is any objec
             window.chrome.webview.postMessage("GetWindowBounds");
         }
 ```
+
  When postMessage is called, the [IWebView2WebMessageReceivedEventHandler](IWebView2WebMessageReceivedEventHandler.md) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
 
 ```cpp

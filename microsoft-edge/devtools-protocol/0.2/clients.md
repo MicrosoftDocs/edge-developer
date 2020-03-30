@@ -70,21 +70,21 @@ To get started:
 
 3. Configure a localhost [launch task](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) to open the desired page of your project: **Debug** > **Add Configuration...**. For example:
 
-```
-{
-    "version": "0.2.0",
-    "configurations": [
+    ```json
+    {
+        "version": "0.2.0",
+        "configurations": [
 
-        {
-            "name": "Launch localhost",
-            "type": "edge",
-            "request": "launch",
-            "url": "http://localhost/mypage.html",
-            "webRoot": "${workspaceFolder}/wwwroot"
-        }
-    ]
-}
-```
+            {
+                "name": "Launch localhost",
+                "type": "edge",
+                "request": "launch",
+                "url": "http://localhost/mypage.html",
+                "webRoot": "${workspaceFolder}/wwwroot"
+            }
+        ]
+    }
+    ```
 
     [*Using the debugger*](https://github.com/Microsoft/vscode-edge-debug2#using-the-debugger) has more on launch configuration settings. 
 

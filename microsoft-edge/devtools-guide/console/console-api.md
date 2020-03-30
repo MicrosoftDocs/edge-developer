@@ -54,6 +54,7 @@ var myText = 'pieces';
 var myVal = 5;
 console.log("The number of %s is %d.", myText, myVal);
 ```
+
 >`The number of pieces is 5.`
 
 And here's how you might add a green highlight effect to a log message with inline CSS (`%c`):
@@ -97,6 +98,7 @@ For example, if you open the console on this page and type:
 ```javascript
 console.select(document.querySelector("body"));
 ```
+
 The DevTools will switch to the **Elements** panel (if its not already the current) and set focus in the [*HTML tree view*](../elements.md#html-tree-view) to the specified element.
 
 ![Example of the 'select' method](../media/console_api_select.png)
@@ -117,6 +119,7 @@ In addition to the logical expression you supply as the testable assertion, you 
 var x = 26.8;
 console.assert(x < 25, 'The value of x is %f (it is NOT less than %i)', x, 25);
 ```
+
 ![Example of the 'assert' method](../media/console_api_assert.png)
 
 ### Counting executions in your code
@@ -136,6 +139,7 @@ console.count('My Counter');
 console.countReset('My Counter');
 console.count('My Counter');
 ```
+
  . . . will result in:
 > My Counter: 1
 
@@ -193,6 +197,7 @@ function d(){
 a();
 d();
 ```
+
 . . . will output the following stack traces:
 > console.trace() at c (eval code:8:3) at a (eval code:2:3) at eval code (eval code:14:1)
 > 
@@ -225,6 +230,7 @@ console.groupEnd('Group 1.1');
 console.groupEnd('Group 1');
 console.log('No longer in a group');
 ```
+
 . . . and then expand the *Group 1* and *Group 1.1* controls to see how the log comments are nested:
 
 ![Grouping messages in the console](../media/console_api_group.png)
