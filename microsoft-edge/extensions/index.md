@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: extensions
 keywords: edge, web development, html, css, javascript, developer, extensions
 ---
-#  Microsoft Edge (EdgeHTML) extensions  
+# Microsoft Edge (EdgeHTML) extensions  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 

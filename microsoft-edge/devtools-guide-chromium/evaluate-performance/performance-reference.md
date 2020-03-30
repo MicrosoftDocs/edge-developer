@@ -2,7 +2,7 @@
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -80,20 +80,18 @@ This section lists events that belong to the Scripting category and their proper
 | Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |  
 | Cancel Animation Frame |  A scheduled animation frame was canceled. |  
 | GC Event |  Garbage collection occurred. |  
-| DOMContentLoaded |  The [`DOMContentLoaded` event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page’s DOM content has been loaded and parsed.|
+| DOMContentLoaded |  The [`DOMContentLoaded` event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page's DOM content has been loaded and parsed.|
 | Evaluate Script | A script was evaluated. |  
 | Event | A JavaScript event \(`mousedown`, or `key`, for example\). |  
 | Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |  
 | Install Timer | A timer was created with [`setInterval()`][MDNWindowOrWorkerGlobalScopeSetInterval] or [`setTimeout()`][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
 | Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |  
 | Remove Timer | A previously created timer was cleared. |  
-| Time |  A script called **`console.time()`**. |  
-| Time End | A script called **`console.timeEnd()`**. |  
+| Time |  A script called [`console.time()`][ConsoleApiTime]. |  
+| Time End | A script called [`console.timeEnd()`][ConsoleApiTimeEnd]. |  
 | Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |  
 | XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |  
 | XHR Load | An `XMLHTTPRequest` finished loading. |  
-
-<!-- todo: add console.time and console.timeend section when available -->  
 
 ### Scripting event properties  
 
@@ -152,8 +150,8 @@ This section lists events that belong to Painting category and their properties.
 
 <!-- links -->
 
-<!--[ConsoleApiTime]: ../console/api.md#console.time([label]) "console.time([label])"  -->  
-<!--[ConsoleApiTimeEnd]: ../console/api.md#console.timeEnd([label]) "console.timeEnd([label])"  -->
+[ConsoleApiTime]: ../console/api.md#time "time - Console API Reference"  
+[ConsoleApiTimeEnd]: ../console/api.md#timeend "timeEnd - Console API Reference"  
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool.md "How to Use the Timeline Tool"  -->
 
 [MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"  
@@ -167,7 +165,7 @@ This section lists events that belong to Painting category and their properties.
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

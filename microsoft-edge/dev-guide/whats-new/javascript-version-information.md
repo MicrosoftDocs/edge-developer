@@ -1,7 +1,7 @@
 ---
 title: JavaScript Version Information
 description: Compare JavaScript support across Microsoft Edge, Microsoft Store apps, and Internet Explorer
-ms.date: 12/03/2019
+ms.date: 03/05/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
@@ -254,7 +254,7 @@ The following table summarizes the JavaScript support across Internet Explorer, 
 | [Nonidentity Operator (!==)](/scripting/javascript/reference/comparison-operators-javascript) | Y | Y | Y | Y | Y | Y | Y |  
 | [now Function](/scripting/javascript/reference/date-now-function-javascript) | N | N | Y | Y | Y | Y | Y |  
 | [Number Object](/scripting/javascript/reference/number-object-javascript) | Y | Y | Y | Y | Y | Y | Y |  
-| [number Property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Microsoft_Extensions/Error.number) | Y | Y | Y | Y | Y | Y | Y |  
+| [number Property](https://developer.mozilla.org/docs/Web/JavaScript/Microsoft_Extensions/Error.number) | Y | Y | Y | Y | Y | Y | Y |  
 | [Object Object](/scripting/javascript/reference/object-object-javascript) | Y | Y | Y | Y | Y | Y | Y |  
 | [Operator Precedence](/scripting/javascript/operator-subtractprecedence-javascript) | Y | Y | Y | Y | Y | Y | Y |  
 | [Date.parse Function](/scripting/javascript/reference/date-parse-function-javascript) | Y | Y | Y | Y | Y | Y | Y |  

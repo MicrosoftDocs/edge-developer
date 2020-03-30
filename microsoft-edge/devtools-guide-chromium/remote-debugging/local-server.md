@@ -2,7 +2,7 @@
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -34,11 +34,10 @@ Host a site on a development machine web server, then access the content from an
 
 With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.  
 
-### TL;DR   
+### Summary  
 
 *   Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.  
 *   If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.  
-
 
 ## Set up port forwarding   
 
@@ -53,7 +52,7 @@ To enable port forwarding:
     > ##### Figure 1  
     > Adding a port forwarding rule  
     > ![Adding a port forwarding rule][ImageAddRule]  
-
+    
 1.  In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.  
 1.  In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.  
 1.  Click **Add**.  
@@ -82,7 +81,7 @@ To set up port forwarding to a proxy:
     
     > [!NOTE]
     > The proxy server and your web server must run on different ports.  
-
+    
 1.  Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, visit `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.  
 
 ### Configure proxy settings on your device  
@@ -95,12 +94,12 @@ Next, you need to configure your Android device to communicate with the proxy se
     > [!NOTE]
     > Proxy settings apply per network.  
     
-3.  Tap **Modify network**.  
-4.  Tap **Advanced options**.  The proxy settings display.  
-5.  Tap the **Proxy** menu and select **Manual**.  
-6.  For the **Proxy hostname** field, enter `localhost`.  
-7.  For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.  
-8.  Tap **Save**.  
+1.  Tap **Modify network**.  
+1.  Tap **Advanced options**.  The proxy settings display.  
+1.  Tap the **Proxy** menu and select **Manual**.  
+1.  For the **Proxy hostname** field, enter `localhost`.  
+1.  For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.  
+1.  Tap **Save**.  
 
 With these settings, your device forwards all of its requests to the proxy on your development machine.  The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.  
 
@@ -123,18 +122,18 @@ If your web server is running off of a non-standard port, remember to specify th
 
 [RemoteDebuggingGettingStarted]: index.md "Get Started with Remote Debugging Android Devices"  
 
-[CharlesWebDebuggingProxy]: http://www.charlesproxy.com "Charles Web Debugging Proxy"  
-[SquidOptimisingWebDelivery]: http://www.squid-cache.org "squid : Optimising Web Delivery"  
-[FiddlerWebDebuggingProxy]: http://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
+[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
+[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimising Web Delivery"  
+[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

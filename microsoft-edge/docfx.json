@@ -39,21 +39,26 @@
       "feedback_product_url": "https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer",
       "extendBreadcrumb": true
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.technology":{
+        "dev-guide/**.md": "edgehtml",
+        "devtools-guide/**.md": "devtools",
+        "devtools-guide-chromium/**.md": "devtools",
+        "devtools-protocol/**.md": "devtools",
+        "extensions/**.md": "extensions",
+        "extensions-chromium/**.md": "extensions",
+        "hosting/chakra-hosting/**.md": "chakra",
+        "hosting/webview/**.md": "webview",
+        "hosting/webview2/**.md": "webview2",
+        "progressive-web-apps-edgehtml/**.md": "pwa",
+        "progressive-web-apps-chromium/**.md": "pwa",
+        "windows-runtime/**.md": "windows-integration"
+      }
+    },
     "template": [
       "docs.html"
     ],
     "dest": "microsoft-edge",
-    "markdownEngineName": "markdig",
-    "ms.technology":{
-      "dev-guide/**.md": "edgehtml",
-      "devtools-guide/**.md": "devtools",
-      "devtools-protocol/**.md": "devtools",
-      "extensions/**.md": "extensions",
-      "hosting/chakra-hosting/**.md": "chakra",
-      "hosting/webview/**.md": "webview",
-      "progressive-web-apps/**.md": "pwa",
-      "windows-runtime/**.md": "windows-integration"
-    }
+    "markdownEngineName": "markdig"
   }
 }

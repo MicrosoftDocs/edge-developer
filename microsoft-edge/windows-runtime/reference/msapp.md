@@ -3,7 +3,7 @@ title: MSApp API reference
 description: Provides helper functions that enable you to create Blob and MSStream objects. MSApp objects and members are supported for Windows apps using JavaScript.
 author: mattwojo
 ms.author: mattwoj
-ms.date: 4/30/2018
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
@@ -11,9 +11,9 @@ keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
 
 # MSApp
 
-The MSApp object and its members are supported only for Windows apps using JavaScript (including PWAs accessing Windows API features). The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn’t exist (and consequently, none of its methods and properties are available).
+The MSApp object and its members are supported only for Windows apps using JavaScript (including PWAs accessing Windows API features). The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn't exist (and consequently, none of its methods and properties are available).
 
-It provides helper functions that enable you to create [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/en-us/library/hh772328(v=vs.85).aspx) objects.
+It provides helper functions that enable you to create [Blob](https://developer.mozilla.org/docs/Web/API/Blob) and [MSStream](https://msdn.microsoft.com/library/hh772328(v=vs.85).aspx) objects.
 
 ```javascript
 var result = MSApp.method;
@@ -39,16 +39,17 @@ Clears cache and indexedDB data for the app or [WebView](../../webview.md).
 ```javascript
 var retval = MSApp.clearTemporaryWebDataAsync(#); 
 ```
+
 #### Parameters
 This method has no parameters.
 
 #### Return value
-Type: [`IAsyncAction`](https://docs.microsoft.com/en-us/uwp/api/windows.foundation.iasyncaction)
+Type: [`IAsyncAction`](/uwp/api/windows.foundation.iasyncaction)
 
 Represents an asynchronous action.
 
 ### createBlobFromRandomAccessStream
-Creates a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) from an [`IRandomAccessStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) object. This method should be used when dealing with `IRandomAccessStream` objects in apps in order to create a W3C based object from the stream. Once the blob is created, it can be used with the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader), [URL APIs](https://developer.mozilla.org/en-US/docs/Web/API/URL), and [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). 
+Creates a [Blob](https://developer.mozilla.org/docs/Web/API/Blob) from an [`IRandomAccessStream`](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) object. This method should be used when dealing with `IRandomAccessStream` objects in apps in order to create a W3C based object from the stream. Once the blob is created, it can be used with the [FileReader](https://developer.mozilla.org/docs/Web/API/FileReader), [URL APIs](https://developer.mozilla.org/docs/Web/API/URL), and [XMLHttpRequest](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest). 
 
 ```javascript
 var retVal = MSApp.createBlobFromRandomAccessStream(type, stream); 
@@ -66,7 +67,7 @@ var retVal = MSApp.createBlobFromRandomAccessStream(type, stream);
 
 |Type | Description |
 |:---- |:--- |
-|Any | [IRandomAccessStream](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
+|Any | [IRandomAccessStream](/uwp/api/Windows.Storage.Streams.IRandomAccessStream) to be stored in the Blob.
 
 #### Return value
 |Type | Description |
@@ -79,7 +80,7 @@ var retVal = MSApp.createBlobFromRandomAccessStream(type, stream);
 |TypeMismatchError | The node type is incompatible with the expected parameter type. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
 
 #### Remarks
-Creates a Blob from Windows Runtime types via the MSApp namespace on the window object. This method will create a blob that is essentially a light wrapper over the [`RandomAccessStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) object provided to it. The blob owns the lifetime of this stream and the stream will be closed when the blob is destroyed. 
+Creates a Blob from Windows Runtime types via the MSApp namespace on the window object. This method will create a blob that is essentially a light wrapper over the [`RandomAccessStream`](/uwp/api/Windows.Storage.Streams.RandomAccessStreamReference) object provided to it. The blob owns the lifetime of this stream and the stream will be closed when the blob is destroyed. 
 
 #### Example
 
@@ -92,7 +93,7 @@ document.getElementById("imagetag").src = url;
 ```
 
 ### createDataPackage
-Converts the user’s or the application’s specified range to an HTML fragment that can be shared.
+Converts the user's or the application's specified range to an HTML fragment that can be shared.
 
 ```javascript
 var retVal = MSApp.createDataPackage(object); 
@@ -111,12 +112,12 @@ var retVal = MSApp.createDataPackage(object);
 |Any | Contains the HTML markup for the specified range.
 
 #### Remarks
-This method supports only [Document Object Model (DOM) Range](https://developer.mozilla.org/en-US/docs/Web/API/Range), not [TextRange](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.documents.textrange). The returned data package for the specified range contains HTML markup in clipboard format.
+This method supports only [Document Object Model (DOM) Range](https://developer.mozilla.org/docs/Web/API/Range), not [TextRange](/uwp/api/windows.ui.xaml.documents.textrange). The returned data package for the specified range contains HTML markup in clipboard format.
 
 There are no available properties for the returned data package.
 
 ### createDataPackageFromSelection 
-Converts the user’s or the application’s selection to an HTML fragment that can be shared.
+Converts the user's or the application's selection to an HTML fragment that can be shared.
 
 ```javascript
 var retVal = MSApp.createDataPackageFromSelection(); 
@@ -131,12 +132,12 @@ This method has no parameters.
 |Any | Contains the HTML markup for the specified range.
 
 #### Remarks
-The returned data package for the selection contains HTML markup in clipboard format. If there is no user selection anywhere within the application’s UI, the `createDataPackageFromSelection` returns null.
+The returned data package for the selection contains HTML markup in clipboard format. If there is no user selection anywhere within the application's UI, the `createDataPackageFromSelection` returns null.
 
 There are no available properties for the returned data package.
  
 ### createFileFromStorageFile 
-Converts a [WinRT](https://docs.microsoft.com/en-us/uwp/api/) [`StorageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile) to a standard W3C [`File`](https://developer.mozilla.org/en-US/docs/Web/API/File) object.
+Converts a [WinRT](/uwp/api/) [`StorageFile`](/uwp/api/windows.storage.storagefile) to a standard W3C [`File`](https://developer.mozilla.org/docs/Web/API/File) object.
 
 ```javascript
 var retVal = MSApp.createFileFromStorageFile(storageFile); 
@@ -154,8 +155,9 @@ var retVal = MSApp.createFileFromStorageFile(storageFile);
 |:---- |:--- |
 |TypeMismatchError | The specified W3C file reference is invalid. For versions earlier than Internet Explorer 10, TYPE_MISMATCH_ERR is returned.
 
-### createStreamFromInputStream 
-Creates an [`MSStream`](https://msdn.microsoft.com/en-us/library/hh772328) from an [`InputStream`](https://msdn.microsoft.com/en-us/library/hh772327).
+### createStreamFromInputStream  
+
+Creates an [`MSStream`](https://msdn.microsoft.com/library/hh772328) from an [`InputStream`](https://msdn.microsoft.com/library/hh772327).  
 
 
 ```javascript
@@ -167,13 +169,13 @@ var msStream = MSApp.createStreamFromInputStream("image/jpeg", inputStream);
 
 |Type | Description |
 |:---- |:--- |
-|DOMString | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616. ([See MIME types,](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) ie. text/plain, text/html, image/jpeg, image/png, audio/mpeg, audio/ogg, audio/*, video/mp4, etc.). 
+|DOMString | Content type of the data. This string should be in the format specified in the media-type token defined in section 3.7 of RFC 2616. ([See MIME types,](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types) ie. text/plain, text/html, image/jpeg, image/png, audio/mpeg, audio/ogg, audio/*, video/mp4, etc.). 
 
 `inputStream` [in]
 
 |Type | Description |
 |:---- |:--- |
-|Any | The [`IInputStream`](https://docs.microsoft.com/en-us/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
+|Any | The [`IInputStream`](/uwp/api/Windows.Storage.Streams.IInputStream) to be stored in the `MSStream`.
 
 #### Remarks
 This method takes a content-type, and the `IInputStream` reference. The method then verifies that the stream reference passed in is an instance of type `IInputStream` and if not, throws `DOMException TYPE_MISMATCH_ERR`. If no error occurs, `createStreamFromInputStream` creates an `MSStream` (from its inputs).
@@ -217,7 +219,7 @@ MSApp.execAsyncAtPriority(asynchronousCallback, priority, args);
 This method does not return a value.
 
 #### Remarks
-The provided `asynchronousCallback` callback function is executed asynchronously later. `asynchronousCallback` will be dispatched according to the provided priority. Normal priority is equivalent to the existing [`setImmediate`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setImmediate) method. When the callback is run, the current contextual priority is set to the provided priority parameter value for the duration of the callback's execution.
+The provided `asynchronousCallback` callback function is executed asynchronously later. `asynchronousCallback` will be dispatched according to the provided priority. Normal priority is equivalent to the existing [`setImmediate`](https://developer.mozilla.org/docs/Web/API/Window/setImmediate) method. When the callback is run, the current contextual priority is set to the provided priority parameter value for the duration of the callback's execution.
 
 The `asynchronousCallback` callback parameter can be any function. If arguments are provided after the `priority` parameter, they will all be passed to the callback function.
 
@@ -260,6 +262,7 @@ The provided `synchronousCallback` callback method is execute synchronously. The
 The `synchronousCallback` callback parameter can be any function. If any arguments are provided after the priority parameter, they will be passed to the provided callback method. If the callback parameter returns a value, this value becomes the return value for `execAtPriority` as well.
 
 #### Example
+
 ```javascript
 var user = Windows.System.UserProfile.UserInformation;
 
@@ -291,14 +294,16 @@ None.
 This method returns the current contextual priority (see [`MSApp Constants`](#msapp-constants)), which can be changed via `execAtPriority` and `execAsyncAtPriority`.
 
 #### Example
+
 ```javascript
 if (MSApp.getCurrentPriority() === MSApp.IDLE) { 
   // YOUR CODE HERE
 }
 ```
 
-### getHtmlPrintDocumentSource 
-Synchronous API that has been deprecated. For Windows 10, see `getHtmlPrintDocumentSourceAsync`. For Windows 8 and 8.1 apps, see the MSDN entry for [getHtmlPrintDocumentSource](https://msdn.microsoft.com/en-us/library/hh772325).
+### getHtmlPrintDocumentSource  
+
+Synchronous API that has been deprecated. For Windows 10, see `getHtmlPrintDocumentSourceAsync`. For Windows 8 and 8.1 apps, see the MSDN entry for [getHtmlPrintDocumentSource](https://msdn.microsoft.com/library/hh772325).  
 
 ### getHtmlPrintDocumentSourceAsync
 Returns the source content that is to be printed.
@@ -311,6 +316,7 @@ Returns the source content that is to be printed.
 |Document | The HTML document to be printed. This can be the root document, the document in an iframe, a document fragment, or a SVG document. Be aware that htmlDoc must be a document, not an element.
 
 #### Example 1
+
 ```javascript
 var printTask = event.request.createPrintTask(title, function (args) {
                 var deferral = args.getDeferral();
@@ -331,6 +337,7 @@ var printTask = event.request.createPrintTask(title, function (args) {
 ```
 
 #### Example 2
+
 ```javascript
     function registerForPrintContract() {
             var printManager = Windows.Graphics.Printing.PrintManager.getForCurrentView();
@@ -390,10 +397,10 @@ Support for multiple windows.
 > [!NOTE] 
 > In Win8.1 JavaScript UWP apps supported multiple windows using MSApp DOM APIs which are now depricated. For Windows 10, use `window.open`, `window`, and the new `MSApp.getViewId`.
 
-Description |Windows 10 | Windows 8.1 |
-|:---- |:---- |:--- |
-|Create new window | [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) | [`MSApp.createNewView`](https://msdn.microsoft.com/en-us/library/dn254975(v=vs.85).aspx) |
-|New window object | [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) |[`MSAppView`](https://msdn.microsoft.com/en-us/library/dn268315(v=vs.85).aspx) |
+| Description |Windows 10 | Windows 8.1 |  
+|:---- |:---- |:--- |  
+| Create new window | [`window.open`](https://developer.mozilla.org/docs/Web/API/Window/open) | [`MSApp.createNewView`](https://msdn.microsoft.com/library/dn254975(v=vs.85).aspx) |  
+|New window object | [`window`](https://developer.mozilla.org/docs/Web/API/Window) |[`MSAppView`](https://msdn.microsoft.com/library/dn268315(v=vs.85).aspx) |  
 
 ```javascript
 var retval = MSApp.getViewId(window); 
@@ -412,10 +419,10 @@ var retval = MSApp.getViewId(window);
 
 |Type | Description |
 |:---- |:--- |
-|Number | Can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
+|Number | Can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
 
 #### Remarks
-Use [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) and [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window) for creating new windows, but then to interact with WinRT APIs, add the `MSApp.getViewId` API. It takes a `window` object as a parameter and returns a `viewId` number that can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
+Use [`window.open`](https://developer.mozilla.org/docs/Web/API/Window/open) and [`window`](https://developer.mozilla.org/docs/Web/API/Window) for creating new windows, but then to interact with WinRT APIs, add the `MSApp.getViewId` API. It takes a `window` object as a parameter and returns a `viewId` number that can be used with the various [`Windows.UI.ViewManagement.ApplicationViewSwitcher`](/uwp/api/windows.ui.viewmanagement.applicationviewswitcher) APIs. 
 
 ##### Delaying Visibility 
 Views in WinRT normally start hidden and the end developer uses something like `TryShowAsStandaloneAsync` to display the view once it is fully prepared. In the web world, `window.open` shows a window immediately and the end user can watch as content is loaded and rendered. To have your new windows act like views in WinRT and not display immediately we have added a `window.open` option. For example:
@@ -459,6 +466,7 @@ var retval = MSApp.isTaskScheduledAtPriorityOrHigher(priority);
 The `isTaskScheduledAtPriorityOrHigher` method provides a means for JavaScript code to determine if there is pending work at the various priority levels (or above) with the intent that the calling JavaScript code can then decide to yield to higher priority work.
 
 #### Example
+
 ```javascript
 function performIdleWork(array_in) {
   var idx = 0;
@@ -478,6 +486,7 @@ function performIdleWork(array_in) {
   performIdleWorkHelper();
 } // performIdleWork
 ```
+
 ### pageHandlesAllApplicationActivations
 Used to avoid a refresh of the start path (page reload) before every activate event (ie. clicking a notification or a pinned tile). 
 
@@ -488,6 +497,7 @@ Used to avoid a refresh of the start path (page reload) before every activate ev
 Boolean | Use `MSApp.pageHandlesAllApplicationActivations(true)` to always skip refreshing the start path (page reload) and instead jump straight to firing the `WebUIApplication` activated event. Requires that all pages handle activation events separately. By defining this method as `true`, clicking an activated event (like a notificaiton) will not trigger the reload, an essential for single-page apps wishing to avoid page reloads.
 
 #### Example 
+
 ```javascript
 // Without this, the app will first refresh to the start path before every activate event
 window.MSApp.pageHandlesAllApplicationActivations(true); 
@@ -531,6 +541,7 @@ Be aware that `suppressSubdownloadCredentialPrompts` impacts all content in the 
 **Important:**  Credential prompt decisions are cached. Therefore, while suppressing credential prompts will take effect immediately, allowing credential prompts after suppressing them may need a reload of the document to take effect.
 
 #### Example
+
 ```javascript
 / Set to true to suppress potenial credential prompts:
 MSApp.suppressSubdownloadCredentialPrompts(true); 
@@ -602,6 +613,7 @@ Allowed priority values associated with `execAsyncAtPriority`, `execAtPriority`,
 |DOMString | When `normal` is used with the appropriate method (See also section), the method will use the normal existing priority when executing the requested operation.
 
 #### Example
+
 ```javascript
 if (window.MSApp.CURRENT) {
   document.getElementById('outputMessageDiv').textContent = 'The value of window.MSApp.CURRENT is "current".';

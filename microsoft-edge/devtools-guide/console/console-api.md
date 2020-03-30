@@ -3,7 +3,7 @@ description: Use the Console API to programmatically debug and profile your code
 title: DevTools - Console - Console API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/31/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console api
@@ -29,10 +29,10 @@ Your code can send several types of custom messages to the console, including:
 
 Message type  | &nbsp;   |
 :------------------- | :------ |
-[**error()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/error) and [**exception()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/error)| Critical errors and failures
-[**warn()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/warn) | Possible errors or unexpected behavior 
-[**info()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/info) | Useful, but non-critical information
-[**log()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/log) and [**debug()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
+[**error()**](https://developer.mozilla.org/docs/Web/API/Console/error) and [**exception()**](https://developer.mozilla.org/docs/Web/API/Console/error)| Critical errors and failures
+[**warn()**](https://developer.mozilla.org/docs/Web/API/Console/warn) | Possible errors or unexpected behavior 
+[**info()**](https://developer.mozilla.org/docs/Web/API/Console/info) | Useful, but non-critical information
+[**log()**](https://developer.mozilla.org/docs/Web/API/Console/log) and [**debug()**](https://developer.mozilla.org/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
 
    
 You can group and filter these along with the other messages generated from Microsoft Edge from the  Console panel. All custom message methods require a string (message) parameter and optional format substitution parameters. Microsoft Edge supports the following formatting options:
@@ -54,6 +54,7 @@ var myText = 'pieces';
 var myVal = 5;
 console.log("The number of %s is %d.", myText, myVal);
 ```
+
 >`The number of pieces is 5.`
 
 And here's how you might add a green highlight effect to a log message with inline CSS (`%c`):
@@ -72,8 +73,8 @@ You can also force a specific output:
 
 Command | &nbsp;
 :------------------- | :--- |
-[**dir()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/dir) | Displays as inspectable JavaScript object
-[**dirxml()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/dirxml) | Displays as inspectable DOM node
+[**dir()**](https://developer.mozilla.org/docs/Web/API/Console/dir) | Displays as inspectable JavaScript object
+[**dirxml()**](https://developer.mozilla.org/docs/Web/API/Console/dirxml) | Displays as inspectable DOM node
 
 For example, try opening the console and compare the following outputs for the `<div id='main'>` element on this page:
 
@@ -97,6 +98,7 @@ For example, if you open the console on this page and type:
 ```javascript
 console.select(document.querySelector("body"));
 ```
+
 The DevTools will switch to the **Elements** panel (if its not already the current) and set focus in the [*HTML tree view*](../elements.md#html-tree-view) to the specified element.
 
 ![Example of the 'select' method](../media/console_api_select.png)
@@ -109,7 +111,7 @@ Add Console API test assertions to your code for unit testing and debugging your
 
 Command | &nbsp;
 :------------ | :-------------
-[**assert()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/assert) | Logs a console error message if the provided expression evaluates to *false*.
+[**assert()**](https://developer.mozilla.org/docs/Web/API/Console/assert) | Logs a console error message if the provided expression evaluates to *false*.
 
 In addition to the logical expression you supply as the testable assertion, you can add an optional message and formatting parameters as you would use with other [custom console messages](#logging-custom-messages). For example:
 
@@ -117,6 +119,7 @@ In addition to the logical expression you supply as the testable assertion, you 
 var x = 26.8;
 console.assert(x < 25, 'The value of x is %f (it is NOT less than %i)', x, 25);
 ```
+
 ![Example of the 'assert' method](../media/console_api_assert.png)
 
 ### Counting executions in your code
@@ -125,8 +128,8 @@ You can set counters in your code to keep track of how many times the surroundin
 
 Command | &nbsp;
 :------------ | :-------------
-[**count()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/count) | Increments and logs the number of times *count()* for the given label has been executed.
-[**countReset()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/countReset) | Resets the count to zero for the given counter label.
+[**count()**](https://developer.mozilla.org/docs/Web/API/Console/count) | Increments and logs the number of times *count()* for the given label has been executed.
+[**countReset()**](https://developer.mozilla.org/docs/Web/API/Console/countReset) | Resets the count to zero for the given counter label.
 
 For example, executing the following lines in console:
 
@@ -136,6 +139,7 @@ console.count('My Counter');
 console.countReset('My Counter');
 console.count('My Counter');
 ```
+
  . . . will result in:
 > My Counter: 1
 
@@ -145,9 +149,9 @@ Instrument your code with labeled timers to measure how long it takes to complet
 
 Command | &nbsp;
 :------------ | :-------------
-[**time()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/time) | Starts a timer with the given label.
-[**timeEnd()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/timeEnd) | Ends the timer with the given label and reports the time elapsed (in milliseconds).
-[**timeStamp()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/timeStamp) | Reports the current system time (in milliseconds).
+[**time()**](https://developer.mozilla.org/docs/Web/API/Console/time) | Starts a timer with the given label.
+[**timeEnd()**](https://developer.mozilla.org/docs/Web/API/Console/timeEnd) | Ends the timer with the given label and reports the time elapsed (in milliseconds).
+[**timeStamp()**](https://developer.mozilla.org/docs/Web/API/Console/timeStamp) | Reports the current system time (in milliseconds).
 
 For example, try executing the following lines in console:
 
@@ -172,7 +176,7 @@ Understanding where your code is being called from, what code is running, and ho
 
 Command | &nbsp;
 :------------ | :-------------
-[**trace()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace) | Outputs a trace of the current script execution callstack.
+[**trace()**](https://developer.mozilla.org/docs/Web/API/Console/trace) | Outputs a trace of the current script execution callstack.
 
 For example, running the following code in the console:
 
@@ -193,6 +197,7 @@ function d(){
 a();
 d();
 ```
+
 . . . will output the following stack traces:
 > console.trace() at c (eval code:8:3) at a (eval code:2:3) at eval code (eval code:14:1)
 > 
@@ -204,15 +209,15 @@ To simply clear all previous console output, use *console.clear()* (or `CTRL + L
 
 Command | &nbsp;
 :------------ | :-------------
-[**clear()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/clear) | Clears all previous console output.
+[**clear()**](https://developer.mozilla.org/docs/Web/API/Console/clear) | Clears all previous console output.
 
 If your code outputs a lot of console messages, you can visually organize them into nested blocks with the following commands:
 
  Command | &nbsp;
 :------------ | :-------------
-[**group()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/group) | Starts a new level of nesting for console output with the specified (optional) label.
-[**groupCollapsed()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/groupCollapsed) | Starts a new level of nesting for console output with the specified (optional) label, however the grouping control is collapsed by default and must be expanded (by clicking on the arrow control) to to display the child output.
-[**groupEnd()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/groupEnd) | Ends the nesting group for the specified label.
+[**group()**](https://developer.mozilla.org/docs/Web/API/Console/group) | Starts a new level of nesting for console output with the specified (optional) label.
+[**groupCollapsed()**](https://developer.mozilla.org/docs/Web/API/Console/groupCollapsed) | Starts a new level of nesting for console output with the specified (optional) label, however the grouping control is collapsed by default and must be expanded (by clicking on the arrow control) to display the child output.
+[**groupEnd()**](https://developer.mozilla.org/docs/Web/API/Console/groupEnd) | Ends the nesting group for the specified label.
 
 For example, try entering the following commands in the console:
 
@@ -225,6 +230,7 @@ console.groupEnd('Group 1.1');
 console.groupEnd('Group 1');
 console.log('No longer in a group');
 ```
+
 . . . and then expand the *Group 1* and *Group 1.1* controls to see how the log comments are nested:
 
 ![Grouping messages in the console](../media/console_api_group.png)
@@ -233,7 +239,7 @@ Sometimes its easier to visualize a JavaScript object or array in tabular form, 
 
 Command | &nbsp;
 :------------ | :-------------
-[**table()**](https://developer.mozilla.org/en-US/docs/Web/API/Console/table) | Outputs the supplied array or object to the console in tabular form.
+[**table()**](https://developer.mozilla.org/docs/Web/API/Console/table) | Outputs the supplied array or object to the console in tabular form.
 
 For example, the following object array:
 
@@ -245,4 +251,3 @@ console.table(orders);
 . . . will render as this table in the console:
 
 ![Display an object array as a table in the console](../media/console_api_table.png)
-
