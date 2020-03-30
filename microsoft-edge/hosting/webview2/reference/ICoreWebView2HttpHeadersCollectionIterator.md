@@ -28,6 +28,7 @@ Iterator for a collection of HTTP headers.
 [MoveNext](#movenext) | Move the iterator to the next HTTP header in the collection.
 
 See [ICoreWebView2HttpRequestHeaders](ICoreWebView2HttpRequestHeaders.md) and [ICoreWebView2HttpResponseHeaders](ICoreWebView2HttpResponseHeaders.md). 
+
 ```cpp
 std::wstring RequestHeadersToJsonString(ICoreWebView2HttpRequestHeaders* requestHeaders)
 {

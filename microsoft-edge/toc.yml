@@ -66,6 +66,8 @@
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+            - name: Microsoft Edge 82
+              href: devtools-guide-chromium/whats-new/2020/03/devtools.md
         - name: IE mode
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D View
@@ -200,10 +202,12 @@
                   href: devtools-guide-chromium/accessibility/focus.md
         - name: Remote Debugging
           items: 
-            - name: Get Started
+            - name: Android Devices
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: Access Local Servers
               href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Windows 10 Devices
+              href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memory
           items: 
             - name: Overview
