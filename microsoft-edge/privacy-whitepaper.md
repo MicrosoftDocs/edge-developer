@@ -159,11 +159,11 @@ The child must be signed in to Windows 10 with their Microsoft account, and the 
 
 Guest mode and InPrivate browsing are disabled if web filtering or activity reporting is turned on.  
 
-The family group organizer can stop this data collection from the family safety portal.  [Learn more](https://support.microsoft.com/help/4090274) 
+The family group organizer can stop this data collection from the family safety portal.  [Learn more about Microsoft family safety features](https://go.microsoft.com/fwlink/?linkid=232423)
 
 ## Feedback
 
-We're always listening to customers and value your feedback.  To provide feedback in Microsoft Edge, select the **Settings and more** > **Help and feedback** > **Send feedback**.  You must provide details about the feedback, but all other information is optional.  If an email is detected from your Microsoft Edge profile it is prepopulated along with the current URL of the site you are on and relevant diagnostic data.  The diagnostic data can include data about the features you've turned on and your usage of the browser.  A screenshot, file from your device, and recording of your browser can also be optionally included.  The optional additional recording you provide may include personally identifiable information.  This data is only used for diagnostic and product improvement purposes.   
+We're always listening to customers and value your feedback.  To provide feedback in Microsoft Edge, select the **Settings and more** > **Help and feedback** > **Send feedback**.  For Progressive Web Apps (PWA), select the Settings and more ... -> Send feedback to Microsoft.  You must provide details about the feedback, but all other information is optional.  If an email is detected from your Microsoft Edge profile it is prepopulated along with the current URL of the site you are on and relevant diagnostic data.  The diagnostic data can include data about the features you've turned on and your usage of the browser.  A screenshot, file from your device, and recording of your browser can also be optionally included.  The optional additional recording you provide may include personally identifiable information.  This data is only used for diagnostic and product improvement purposes.   
 
 User feedback is securely sent to Microsoft via HTTPS and stored on secure Microsoft servers. If you include your email address and  **Improve Microsoft products by sending crash reports and data about how you use the browser** is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device will be associated with your feedback.  All diagnostic data including diagnostic logs, recordings, and attachments are stored for up to 30 days.  The remaining feedback data including an optional screenshot is stored for up to 15 months.  You can make a [request](https://www.microsoft.com/concern/privacy) to delete your feedback if you provided an email with your feedback item.  
 
@@ -350,7 +350,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 ## Sync
 
-Signing in to Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge. You can sync your favorites, settings, form fill data (addresses and more), and passwords.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type can be turned on or off individually.  Deleting or modifications to favorites, and other data types from one signed-in version of Microsoft Edge will sync to all other signed-in versions of Microsoft Edge where sync is turned on.  Sync configurations can be managed from **edge://settings/profiles/sync**.  
+Signing in to Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge. You can sync your favorites, settings, form fill data (addresses and more), and passwords.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type can be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, and will sync along with your favorites.  Deleting or modifications to favorites, and other data types from one signed-in version of Microsoft Edge will sync to all other signed-in versions of Microsoft Edge where sync is turned on.  Sync configurations can be managed from **edge://settings/profiles/sync**.  
 
 ![Sync](./media/WhitepaperMedia/Sync.png)
 

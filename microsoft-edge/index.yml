@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 03/25/2020
+  ms.date: 03/27/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -20,9 +20,13 @@ highlightedContent:
 #           whats-new
   items:
     # Card
-    - title: "Download and Install: Microsoft Edge Channels"
+    - title: "Download Microsoft Edge (Official Stable Channel)"
       itemType: download
-      url: https://www.microsoftedgeinsider.com/download
+      url: https://www.microsoft.com/edge
+    # Card
+    - title: "Download Microsoft Edge Insider Channels"
+      itemType: download
+      url: https://www.microsoft.com/edge/business/download
     # Card
     - title: "What's new"
       itemType: whats-new
