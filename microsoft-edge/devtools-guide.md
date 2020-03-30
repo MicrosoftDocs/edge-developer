@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -18,7 +18,7 @@ experiment_id: "51fe4b97-3e55-41"
 
 The Microsoft Edge \(EdgeHTML\) DevTools are built with [TypeScript][TypeScriptIndex], powered by [open source][GithubMicrosoftChakracore], optimized for modern front-end workflows, and now available as a [standalone Windows 10 app][MicrosoftStoreEdgeDevtoolsPreview] in the Microsoft Store!  
 
-For more on the latest features, check out [*DevTools in the latest update of Windows 10 (EdgeHTML 18)*][DevtoolsGuideEdgehtmlWhatsnew].  
+For more on the latest features, check out [DevTools in the latest update of Windows 10 (EdgeHTML 18)][DevtoolsGuideEdgehtmlWhatsnew].  
 
 ## Core tools  
 
@@ -26,35 +26,35 @@ For more on the latest features, check out [*DevTools in the latest update of Wi
 
 The Microsoft Edge \(EdgeHTML\) DevTools include:  
 
-*   An [**Elements**][DevtoolsGuideEdgehtmlElements] panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints  
-*   A [**Console**][DevtoolsGuideEdgehtmlConsole] to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame  
-*   A [**Debugger**][DevtoolsGuideEdgehtmlDebugger] to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches  
-*   A [**Network**][DevtoolsGuideEdgehtmlNetwork] panel to monitor and inspect requests and responses from the network and browser cache  
-*   A [**Performance**][DevtoolsGuideEdgehtmlPerformance] panel to profile the time and system resources required by your site  
-*   A [**Memory**][DevtoolsGuideEdgehtmlMemory] panel to measure your use of memory resources and compare heap snapshots at different states of code runtime  
-*   A [**Storage**][DevtoolsGuideEdgehtmlStorage] panel for inspecting and managing your web storage, IndexedDB, cookies and cache data  
-*   A [**Service Workers**][DevtoolsGuideEdgehtmlServiceworkers] panel for managing and debugging your service workers  
-*   An [**Emulation**][DevtoolsGuideEdgehtmlEmulation] panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates  
+*   An [Elements][DevtoolsGuideEdgehtmlElements] panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints  
+*   A [Console][DevtoolsGuideEdgehtmlConsole] to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame  
+*   A [Debugger][DevtoolsGuideEdgehtmlDebugger] to step through code, set watches and breakpoints, live edit your code, and inspect your web storage and cookie caches  
+*   A [Network][DevtoolsGuideEdgehtmlNetwork] panel to monitor and inspect requests and responses from the network and browser cache  
+*   A [Performance][DevtoolsGuideEdgehtmlPerformance] panel to profile the time and system resources required by your site  
+*   A [Memory][DevtoolsGuideEdgehtmlMemory] panel to measure your use of memory resources and compare heap snapshots at different states of code runtime  
+*   A [Storage][DevtoolsGuideEdgehtmlStorage] panel for inspecting and managing your web storage, IndexedDB, cookies and cache data  
+*   A [Service Workers][DevtoolsGuideEdgehtmlServiceworkers] panel for managing and debugging your service workers  
+*   An [Emulation][DevtoolsGuideEdgehtmlEmulation] panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates  
 
 Please keep sending your [feedback and feature requests](#feedback)!  
 
 > [!TIP]
-> **[Test on Microsoft Edge \(EdgeHTML\) free from any browser][MicrosoftDeveloperEdgeToolsRemote]**:  
+> [Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml]:  
 > We partnered with [BrowserStack][BrowserstackEdgehtml] to provide free live and automated testing on Microsoft Edge \(EdgeHTML\).  
 
 ## Microsoft Store app  
 
-The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEdgehtmlWhatsnew] as a standalone [Windows 10 app from the Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], in addition to the in-browser \(`F12`\) tooling experience.  With the store version comes a *chooser* panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.  
+The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEdgehtmlWhatsnew] as a standalone [Windows 10 app from the Microsoft Store][MicrosoftStoreEdgeDevtoolsPreview], in addition to the in-browser \(`F12`\) tooling experience.  With the store version comes a **chooser** panel for attaching to open local and remote page targets and a tabbed layout for easy switching between DevTools instances.  
 
 ### Local debugging  
 
-To debug a page locally, simply launch the *Microsoft Edge DevTools* app.  The **Local** panel of the chooser will display all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(*WWAHost.exe* processes\), and [webview][HostingWebview] controls.  Click on your desired target to attach and open a new tab instance of the DevTools.  
+To debug a page locally, simply launch the Microsoft Edge DevTools app.  The **Local** panel of the chooser will display all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.  Click on your desired target to attach and open a new tab instance of the DevTools.  
 
 ![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  
 
 ### Remote debugging  
 
-The *Microsoft Edge DevTools* app introduces basic support for debugging pages on a remote machine via our newly released [**DevTools Protocol**][DevtoolsProtocolEdgehtmlIndex].  With the latest release comes remote access to core functionality in the [**Debugger**][DevtoolsGuideEdgehtmlDebugger], [**Elements**][DevtoolsGuideEdgehtmlElements] (for read-only operations), and [**Console**][DevtoolsGuideEdgehtmlConsole] panels.  Remote debugging is limited to *Microsoft Edge \(EdgeHTML\)* running *desktop* hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.  
+The Microsoft Edge DevTools app introduces basic support for debugging pages on a remote machine via our newly released [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex].  With the latest release comes remote access to core functionality in the [Debugger][DevtoolsGuideEdgehtmlDebugger], [Elements][DevtoolsGuideEdgehtmlElements] \(for read-only operations\), and [Console][DevtoolsGuideEdgehtmlConsole] panels.  Remote debugging is limited to Microsoft Edge \(EdgeHTML\) running desktop hosts, with support for other EdgeHTML hosts and Windows 10 devices coming in future releases.  
 
 To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.  
 
@@ -62,11 +62,9 @@ To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgeht
 
 ## Feedback  
 
-Please send us your feedback so we can continue improving the Microsoft Edge \(EdgeHTML\) DevTools for you!  Simply open the tools (`F12`) and click the [**Send feedback**](#microsoft-edge-edgehtml-developer-tools) button.  
+Please send us your feedback so we can continue improving the Microsoft Edge \(EdgeHTML\) DevTools for you!  Simply open the tools (`F12`) and click the [Send feedback](#microsoft-edge-edgehtml-developer-tools) button.  
 
-You can also add and upvote tooling requests to our [UserVoice forum][UservoiceWpdevForumsEdgeDeveloperF12] and become a [Windows Insider][WindowsInsiderProgram] to preview the [latest features coming to the DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Use the Windows **Feedback Hub** app to post, upvote, track and get support for general Windows suggestions and problems.  
-
-
+Become a [Windows Insider][WindowsInsiderProgram] to preview the [latest features coming to the DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Use the Windows Feedback Hub app to post, up-vote, track and get support for general Windows suggestions and problems.  
 
 ## General Shortcuts  
 
@@ -126,14 +124,12 @@ These shortcuts control the main DevTools window and should work across all tool
 [HostingWebview]: /microsoft-edge/hosting/webview "WebView (EdgeHTML) for Windows 10 apps"  
 [PwasEdgehtmlIndex]: /microsoft-edge/progressive-web-apps-edgehtml/index "Progressive Web Apps (EdgeHTML) on Windows"  
 
-[MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote/  
 [MicrosoftStoreEdgeDevtoolsPreview]: https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj "Microsoft Edge DevTools Preview"  
+
 [WindowsInsiderProgram]: https://insider.windows.com "Windows Insider Program"  
 
-[BrowserstackEdgehtml]: https://www.browserstack.com/test-on-microsoft-edge-browser#live-cloud "Microsoft Edge Browser Testing for Free | BrowserStack"  
+[BrowserstackEdgehtml]: https://www.browserstack.com/test-on-microsoft-edge-browser "Microsoft Edge Browser Testing for Free | BrowserStack"  
 
 [GithubMicrosoftChakracore]: https://github.com/Microsoft/ChakraCore "microsoft/ChakraCore | GitHub"  
 
 [TypeScriptIndex]: https://www.typescriptlang.org "TypeScript"  
-
-[UservoiceWpdevForumsEdgeDeveloperF12]: https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools  
