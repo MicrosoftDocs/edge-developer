@@ -35,25 +35,25 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 1. Right click the project and click **Manage Nuget Packages**.
 
-![manageNugetPackages](images/manageNugetPackages.PNG)
+    ![manageNugetPackages](images/manageNugetPackages.PNG)
 
 2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** inthe right hand side window and install the latest SDK. Nuget will download the SDK to your machine. While we use [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019) to make working with COM easier in this walkthrough, they are completely optional.
 
-![nuget](images/wil.PNG)
+    ![nuget](images/wil.PNG)
 
 3. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
 
-![nuget](images/Nuget.PNG)
+    ![nuget](images/Nuget.PNG)
 
 4. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
 
-```cpp
-...
-#include <wrl.h>
-#include <wil/com.h>
-// include WebView2 header
-#include "WebView2.h"
-```
+    ```cpp
+    ...
+    #include <wrl.h>
+    #include <wil/com.h>
+    // include WebView2 header
+    #include "WebView2.h"
+    ```
 
 You are all set to use and build against the WebView2 API. Press F5 to build and run the sample app. You should see an app displaying an empty window.
 

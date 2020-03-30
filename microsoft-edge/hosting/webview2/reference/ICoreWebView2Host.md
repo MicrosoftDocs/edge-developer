@@ -450,6 +450,7 @@ This is a notification separate from put_Bounds that tells WebView its parent (o
 > public HRESULT [NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged)()
 
 This is needed for accessibility and certain dialogs in WebView to work correctly. 
+
 ```cpp
     if (message == WM_MOVE || message == WM_MOVING)
     {

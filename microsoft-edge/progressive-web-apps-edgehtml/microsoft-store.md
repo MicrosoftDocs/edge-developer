@@ -122,4 +122,5 @@ Your PWA can opt out of automatic import to the Microsoft Store by serving a `ro
 User-agent: bingbot
 Disallow: /manifest.json
 ```
+
 This directs the Bing web crawler (Bingbot) to disregard your web manifest file for PWA indexing purposes. This will not affect your site's search ranking in Bing's regular [web indexing process](https://www.bing.com/webmaster/help/help-center-661b2d18).
