@@ -82,4 +82,3 @@ To contribute to the extension, please read the [webhint VS Code extension contr
 ## See also
   - [Accessibility](https://docs.microsoft.com/en-us/microsoft-edge/accessibility)
   - [Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/)
-  - 
