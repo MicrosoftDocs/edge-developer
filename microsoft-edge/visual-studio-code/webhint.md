@@ -1,5 +1,5 @@
 ---
-description: How to use webhint in VS Code
+description: How to use webhint in Visual Studio Code
 title: webhint VS Code extension
 author: hxlnt
 ms.author: raweil
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, vs code, visual studio code, webhint
 
 # webhint VS Code extension
 
-[webhint](https://webhint.io) is a customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors. This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org/). The Microsoft Edge team continues to contribute to webhint alongside developers across the web community.
+[webhint](https://webhint.io) is a customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors. This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org/). The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.
 
 ![GIF of webhint VS Code extension](./media/webhint-vscode.gif)
 
@@ -19,7 +19,7 @@ By adding the [webhint VS Code extension](https://marketplace.visualstudio.com/i
 
 ## Configuration
 
-This extension uses a [default configuration](https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json) that activates hints and parsers for HTML, CSS, templating systems (JSX/TSX, Angular, etc.), JavaScript/TypeScript, and more.
+This extension uses a [default configuration](https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json) that activates hints and parsers for HTML, CSS, templating systems (JSX/TSX, Angular, and so on), JavaScript/TypeScript, and more.
 
 ```json
 {
@@ -71,11 +71,10 @@ This extension uses a [default configuration](https://github.com/webhintio/hint/
 }
 ```
 
-If you want more control over what gets activated, you can create a local `.hintrc` file to configure webhint. For help with output from specific hints, see the [webhint user guide](https://webhint.io/docs/user-guide/configuring-webhint/summary/).
+If you want more control over the hints and parsers that get activated, you can create a local `.hintrc` file to configure webhint. For help with output from specific hints, see the [webhint user guide](https://webhint.io/docs/user-guide/configuring-webhint/summary/).
 
 ## Feedback
 
 Send us your feedback by [filing an issue](https://github.com/webhintio/hint/issues/new) on the [webhint GitHub repo](https://github.com/webhintio/hint). 
 
-If you'd like to contribute to the extension, please read the [webhint VS Code extension contribution guide](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md).
-
+To contribute to the extension, please read the [webhint VS Code extension contribution guide](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md).
