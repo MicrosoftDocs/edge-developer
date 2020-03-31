@@ -47,4 +47,4 @@ For more information, check out [this page](./elements-for-edge.md).
 
 By adding the [webhint extension for VS Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint), you can identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more. Hints appear as inline underlines and are summarized in the Problems pane.
 
-[This page](./webhint.md) provides a more in-depth walkthrough of configuring hints in the VS Code webhint extension.
+For more information, see [How to use webhint in Visual Studio Code](./webhint.md).
