@@ -78,3 +78,8 @@ If you want more control over the hints and parsers that get activated, you can 
 Send us your feedback by [filing an issue](https://github.com/webhintio/hint/issues/new) on the [webhint GitHub repo](https://github.com/webhintio/hint). 
 
 To contribute to the extension, please read the [webhint VS Code extension contribution guide](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md).
+
+## See also
+  - [Accessibility](https://docs.microsoft.com/en-us/microsoft-edge/accessibility)
+  - [Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/)
+  - 
