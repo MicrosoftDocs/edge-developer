@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, vs code, visual studio code, webhint
 
 [webhint](https://webhint.io) is a customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors. This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org/). The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.
 
-![GIF of webhint VS Code extension](./media/webhint-vscode.gif)
+![GIF of webhint VS Code extension](./media/webhint-extension.png)
 
 By adding the [webhint VS Code extension](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint), you can identify and fix problems in your HTML, CSS, JavaScript, and more. Hints appear as inline underlines and are summarized in the Problems pane.
 
