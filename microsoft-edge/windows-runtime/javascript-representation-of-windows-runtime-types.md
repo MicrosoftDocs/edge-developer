@@ -1,7 +1,7 @@
 ---
 title:  "JavaScript Representation of Windows Runtime Types"
 ms.custom:  ""
-ms.date:  "03/30/2017"
+ms.date:  "04/01/2017"
 ms.prod:  microsoft-edge
 ms.reviewer:  ""
 ms.suite:  ""

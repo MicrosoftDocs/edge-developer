@@ -1,7 +1,7 @@
 ---
 title:  "Handling Windows Runtime Events in JavaScript"
 ms.custom:  ""
-ms.date:  "03/30/2017"
+ms.date:  "04/01/2017"
 ms.prod:  microsoft-edge
 ms.reviewer:  ""
 ms.suite:  ""
