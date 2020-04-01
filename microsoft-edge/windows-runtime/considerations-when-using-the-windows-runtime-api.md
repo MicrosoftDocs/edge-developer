@@ -1,5 +1,5 @@
 ---
-title: "Considerations when Using the Windows Runtime API | Microsoft Docs"
+title: "Considerations when Using the Windows Runtime API"
 ms.custom: ""
 ms.date: 04/01/2020
 ms.prod: microsoft-edge
