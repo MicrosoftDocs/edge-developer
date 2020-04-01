@@ -1,7 +1,7 @@
 ---
-title: "Using Windows Runtime Asynchronous Methods | Microsoft Docs"
+title: "Using Windows Runtime Asynchronous Methods"
 ms.custom: ""
-ms.date: 01/15/2020
+ms.date: 03/30/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -16,66 +16,80 @@ author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
 manager: ""
 ---
-# Using Windows Runtime Asynchronous Methods
-Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous. These methods generally return an asynchronous action or operation (for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`). These methods are represented in JavaScript by the [CommonJS/Promises/A](https://go.microsoft.com/fwlink/p/?LinkId=244434) pattern. That is, they return a Promise object that has a [then](https://msdn.microsoft.com/library/windows/apps/br229728.aspx) function, for which you must provide a `completed` function that handles the result if the operation succeeds. If you don't want to provide an error handler, you should use the [done](https://msdn.microsoft.com/library/windows/apps/hh701079.aspx) function instead of the `then` function.  
-  
+# Using Windows Runtime Asynchronous Methods  
+
+Many Windows Runtime methods, especially methods that might take a long time to complete, are asynchronous.  These methods generally return an asynchronous action or operation (for example, `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress`, or `Windows.Foundation.IAsyncOperationWithProgress`).  These methods are represented in JavaScript by the [CommonJS/Promises/A pattern][CommonjsWikiPromises].  That is, they return a Promise object that has a [then function][PreviousVersionsWindowsAppsBr229728], for which you must provide a `completed` function that handles the result if the operation succeeds.  If you don't want to provide an error handler, you should use the [done function][PreviousVersionsWindowsAppsHr701079] instead of the `then` function.  
+
 > [!IMPORTANT]
->  Windows Runtime features are not available for apps that run in Internet Explorer.  
-  
+> Windows Runtime features are not available for apps that run in Internet Explorer.  
+
 ## Examples of Asynchronous Methods  
- In the following example, the `then` function takes a parameter that represents the completed value of the `createResourceAsync` method.  
-  
-```JavaScript  
-client.createResourceAsync(uri, description, item)  
-    // Success.  
-    .then(function(newItem) {   
-        console.log("New item is: " + newItem.id);  
-            });  
+
+In the following example, the `then` function takes a parameter that represents the completed value of the `createResourceAsync` method.  
+
+```javascript
+client.createResourceAsync(uri, description, item)
+    // Success.
+    .then(function(newItem) {
+        console.log("New item is: " + newItem.id);
+            });
 ```  
-  
- In this case, if the `createResourceAsync` method fails, it returns a promise in the error state, but does not throw an exception. You can handle an error by using the `then` function as follows.  
-  
-```JavaScript  
-client.createResourceAsync(uri, description, item)  
-    // Success.  
-    .then(function(newItem) {   
-              console.log("New item is: " + newItem.id);  
-          }  
-          function(err) {  
-              console.log("Got error: " + err.message);  
-          });  
+
+In this case, if the `createResourceAsync` method fails, it returns a promise in the error state, but does not throw an exception.  You can handle an error by using the `then` function as follows.  
+
+```javascript
+client.createResourceAsync(uri, description, item)
+    // Success.
+    .then(function(newItem) {
+              console.log("New item is: " + newItem.id);
+          }
+          function(err) {
+              console.log("Got error: " + err.message);
+          });
 ```  
-  
- If you don't want to handle the error explicitly, but do want it to throw an exception, you can use the `done` function instead.  
-  
-```JavaScript  
-client.createResourceAsync(uri, description, item)  
-    // Success.  
-      .done(function(newItem) {   
-               console.log("New item is: " + newItem.id);  
-            });  
+
+If you don't want to handle the error explicitly, but do want it to throw an exception, you can use the `done` function instead.  
+
+```javascript
+client.createResourceAsync(uri, description, item)
+    // Success.
+      .done(function(newItem) {
+               console.log("New item is: " + newItem.id);
+            });
 ```  
-  
- You can also display the progress made towards completion by using a third function.  
-  
-```JavaScript  
-client.createResourceAsync(uri, description, item)  
-    // Success.  
-      .then(function(newItem) {   
-               console.log("New item is: " + newItem.id);  
-            },  
-    // Error.  
-            function(error) {   
-               alert("Failed to create a resource.");  
-            },  
-    // Progress.  
-            function(progress, resultSoFar) {   
-               setProgressBar(progress);  
-            });  
+
+You can also display the progress made towards completion by using a third function.  
+
+```javascript
+client.createResourceAsync(uri, description, item)
+    // Success.
+      .then(function(newItem) {
+               console.log("New item is: " + newItem.id);
+            },
+    // Error.
+            function(error) {
+               alert("Failed to create a resource.");
+            },
+    // Progress.
+            function(progress, resultSoFar) {
+               setProgressBar(progress);
+            });
 ```  
-  
- For more information about asynchronous programming, see [Asynchronous Programming in JavaScript](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx).  
-  
+
+For more information about asynchronous programming, see [Asynchronous Programming in JavaScript][PreviousVersionsWindowsAppsHh700330].  
+
 ## See Also  
 
- [Using the Windows Runtime in JavaScript](./using-the-windows-runtime-in-javascript.md)  
+[Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
+
+<!-- image links -->  
+
+<!-- links -->  
+
+[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Using the Windows Runtime in JavaScript"  
+
+[PreviousVersionsWindowsAppsBr229728]: /previous-versions/windows/apps/br229728(v=win.10) "Promise.then method"  
+[PreviousVersionsWindowsAppsHh700330]: /previous-versions/windows/apps/hh700330(v=win.10) "Asynchronous programming in JavaScript (HTML)"
+[PreviousVersionsWindowsAppsHr701079]: /previous-versions/windows/apps/hh701079(v=win.10) "Promise.done method"  
+
+[CommonjsWikiPromises]: http://wiki.commonjs.org/wiki/Promises "Promises | CommonJS Spec Wiki"  
