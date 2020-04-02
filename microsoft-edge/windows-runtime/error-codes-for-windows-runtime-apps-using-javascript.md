@@ -86,4 +86,4 @@ Here are the error codes displayed by the Microsoft Visual Studio console when d
 [PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "HTML, CSS, and JavaScript features and differences (HTML)"  
 [PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "How to link to external web pages (HTML)"  
 
-[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "\<iframe\>: The Inline Frame element | MDN"  
+[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  
