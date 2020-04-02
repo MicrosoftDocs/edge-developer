@@ -51,6 +51,9 @@ Here are the error codes displayed by the Microsoft Visual Studio console when d
 | APPHOST9606: "Can't load *uri* because it uses an HTTP connection and the ms-https-connections-only meta element is present.  Only HTTPS connections are allowed when you use the ms-https-connections-only meta element.  Use an HTTPS connection or, if you don't need a secure connection, remove the meta element." | For more info, see [How to require an HTTPS connection][PreviousVersionsWindowsAppsHh452771].  |  
 | APPHOST9607: "The app can't launch the URI at *uri* because of this error: *failureCode*." | A missing resource or an invalid file are common causes of this error.  |  
 | APPHOST9608: "The app couldn't navigate to the about:blank page because of this error: *errorCode*." |  |  
+
+| Error | Remarks |  
+|:--- |:--- |  
 | APPHOST9610: "The app found an error while preparing to navigate to a custom error page: *errorCode*." |  |  
 | APPHOST9611: "The app couldn't navigate to a custom error page because of this error: *errorCode*." |  |  
 | APPHOST9613: "The app couldn't navigate to *uri*  because of this error: *errorCode*." |  |  
@@ -60,6 +63,9 @@ Here are the error codes displayed by the Microsoft Visual Studio console when d
 | APPHOST9617: "This URI can't use clipboard APIs.  The clipboard APIs can be invoked only from a URI that is part of the package or is included in the ApplicationContentUris element of the manifest." | For more info about what's allowed in the web context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
 | APPHOST9618: "This URI can't use window.close.  The window.close method can be invoked only from packaged content that was loaded with an ms-appx URI scheme." | For more info about what's allowed in the web context, see [Features and restrictions by context][PreviousVersionsWindowsAppsHh465373].  |  
 | APPHOST9619: "The app can't navigate to *uri* because a page in the web context can't be the app's top level document.  Load the page in an iframe instead." | You can't navigate your top-level page to a remote web page, but your app can display a web page in an [iframe][MDNIframe].  For more info about displaying remote web content, see [How to link to external web pages][PreviousVersionsWindowsAppsHh780594].  |  
+
+| Error | Remarks |  
+|:--- |:--- |  
 | APPHOST9620: "This app was closed because it used an HTTP connection and the ms-https-connections-only meta element is present.  Only HTTPS connections are allowed when you use the ms-https-connections-only meta element.  Use an HTTPS connection or, if you don't require a secure connection, remove the meta element." | For more info, see [How to require an HTTPS connection][PreviousVersionsWindowsAppsHh452771].  |  
 | APPHOST9623: "The app couldn't resolve *url* because of this error: *errorCode*." | A common cause of this error is a missing file.  |  
 | APPHOST9624: "The app can't use script to load the *url* url because the url launches another app.  Only direct user interaction can launch another app." | Apps can't launch other apps directly.  Other apps can be launched by the  user when the app implements certain contracts.  For more info, see [App contracts and extensions][PreviousVersionsWindowsAppsHh464906].  |  
@@ -86,4 +92,4 @@ Here are the error codes displayed by the Microsoft Visual Studio console when d
 [PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "HTML, CSS, and JavaScript features and differences (HTML)"  
 [PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "How to link to external web pages (HTML)"  
 
-[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "\<iframe\>: The Inline Frame element | MDN"  
+[MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  
