@@ -2,7 +2,7 @@
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/19/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -147,24 +147,24 @@ Hover over a function to display the name and timing data.  The following inform
 
 <!-- image links -->  
 
-[ImageExcludeIcon]: images/exclude-icon.msft.png  
-[ImageFocusIcon]: images/focus-icon.msft.png  
-[ImageRestoreIcon]: images/restore-icon.msft.png  
+[ImageExcludeIcon]: /microsoft-edge/devtools-guide-chromium/media/exclude-icon.msft.png  
+[ImageFocusIcon]: /microsoft-edge/devtools-guide-chromium/media/images/focus-icon.msft.png  
+[ImageRestoreIcon]: /microsoft-edge/devtools-guide-chromium/media/images/restore-icon.msft.png  
 
-[ImageCpuProfile]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 1: Sampling Profiles"  
-[ImageFlameChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 2: Flame chart"  
-[ImageHeavyChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 3: Heavy chart"  
-[ImageTreeChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png "Figure 4: Tree chart"  
-[ImageFlameChartView]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 5: Flame chart view"  
-[ImageAnnotatedFlameChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png "Figure 6: Annotated flame chart"  
-[ImageFlameChartZoomed]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png "Figure 7: chart zoomed"  
-[ImageFunctionsDetails]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png "Figure 8: Viewing functions details in chart"  
+[ImageCpuProfile]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 1: Sampling Profiles"  
+[ImageFlameChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 2: Flame chart"  
+[ImageHeavyChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 3: Heavy chart"  
+[ImageTreeChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png "Figure 4: Tree chart"  
+[ImageFlameChartView]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 5: Flame chart view"  
+[ImageAnnotatedFlameChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png "Figure 6: Annotated flame chart"  
+[ImageFlameChartZoomed]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png "Figure 7: chart zoomed"  
+[ImageFunctionsDetails]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png "Figure 8: Viewing functions details in chart"  
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: ../console/utilities.md "Console Utilities API Reference"  
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile - Console Utilities API Reference"  
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - Console Utilities API Reference"  
+[DevtoolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
+[DevtoolsConsoleUtilitiesProfile]: /microsoft-edge/devtools-guide-chromium/console/utilities#profile "profile - Console Utilities API Reference"  
+[DevtoolsConsoleUtilitiesProfileEnd]: /microsoft-edge/devtools-guide-chromium/console/utilities#profileend "profileEnd - Console Utilities API Reference"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

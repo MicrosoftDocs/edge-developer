@@ -2,7 +2,7 @@
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -50,9 +50,7 @@ Take a recording in the **Performance** panel and look for suspiciously long `Ev
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-<!--If you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  
-CPU profiles show where runtime is spent within the functions of your page.  -->  
-<!--Learn how to create CPU profiles in [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].  -->  
+f you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].
 
 ### JavaScript: Problems  
 
@@ -191,14 +189,15 @@ The following table describes some common paint and composite problems and poten
 
 <!-- image links -->  
 
-[ImageLongRecalculateStyle]: images/performance-recalculate-style-summary.msft.png "Figure 1: Long recalculate style"  
-[ImageForcedSynchronousLayout]: images/jank-performance-recalculate-style-summary.msft.png "Figure 2: Forced synchronous layout"  
-<!--[ImageLongPaintTimes]: images/jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
+[ImageLongRecalculateStyle]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-performance-recalculate-style-summary.msft.png "Figure 1: Long recalculate style"  
+[ImageForcedSynchronousLayout]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-recalculate-style-summary.msft.png "Figure 2: Forced synchronous layout"  
+<!--[ImageLongPaintTimes]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
 
 <!-- links -->  
 
+[DevtoolsRenderingToolsJavascriptRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Speed Up JavaScript Runtime"  
+
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts"  -->  
-<!--[DevtoolsRenderingToolsJavascriptRuntime]: js-runtime.md "Speed Up JavaScript Runtime"  -->  
 
 <!-- The Timeline Tool page is deprecated  -->  
 <!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool.md#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
@@ -213,8 +212,11 @@ The following table describes some common paint and composite problems and poten
 <!--[WebFundamentalsPerformanceRenderingCompositorOnlyProperties]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count "Stick to Compositor-Only Properties and Manage Layer Count"  -->  
 
 [CssTriggers]: https://csstriggers.com "CSS Triggers"  
+
 [MDNUsingWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Using Web Workers | MDN"  
+
 [WebPerformanceCalendarRuntimeChecklist]: https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/ "The Runtime Performance Checklist - Web Performance Calendar"  
+
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"  
 
 > [!NOTE]
