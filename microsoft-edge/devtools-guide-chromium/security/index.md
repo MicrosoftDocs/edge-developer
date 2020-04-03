@@ -2,7 +2,7 @@
 title: Understand Security Issues With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -102,20 +102,21 @@ Click one of the entries in the left-hand nav to view the details of the origin.
 
 <!-- image links -->  
 
-[ImageSecurityPanel]: images/security-overview-secure.msft.png "Figure 1: The Security panel"  
-[ImageNonSecurePage]: images/security-overview-non-secure.msft.png "Figure 2: A non-secure page"  
-[ImageMixedContent]: images/security-overview-mixed-secure.msft.png "Figure 3: Mixed content"  
-[ImageMixedResourcesNetworkLog]: images/network-filter.msft.png "Figure 4: Mixed resources in the Network Log"  
-[ImageCertificate]: images/security-overview-secure-view-certificate.msft.png "Figure 5: A main origin certificate"  
-[ImageOriginDetails]: images/security-overview-mixed-secure-main-origin.msft.png "Figure 6: Main origin details"  
+[ImageSecurityPanel]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure.msft.png "Figure 1: The Security panel"  
+[ImageNonSecurePage]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-non-secure.msft.png "Figure 2: A non-secure page"  
+[ImageMixedContent]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure.msft.png "Figure 3: Mixed content"  
+[ImageMixedResourcesNetworkLog]: /microsoft-edge/devtools-guide-chromium/media/security-network-filter.msft.png "Figure 4: Mixed resources in the Network Log"  
+[ImageCertificate]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure-view-certificate.msft.png "Figure 5: A main origin certificate"  
+[ImageOriginDetails]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure-main-origin.msft.png "Figure 6: Main origin details"  
 
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  
+
 [Webhint]: https://webhint.io "webhint"  
 [WebhintUseHttps]: https://webhint.io/docs/user-guide/hints/hint-https-only "Use HTTPS | webhint documentation"  
 
