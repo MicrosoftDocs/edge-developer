@@ -110,7 +110,7 @@ If your web server is running off of a non-standard port, remember to specify th
 > [!TIP]
 > To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.  
 
-<!-->   -->  
+<!--  -->  
 
 
 
