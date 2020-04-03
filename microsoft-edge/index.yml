@@ -72,6 +72,8 @@ productDirectory:
       links:
         - url: /deployedge/security-overview
           text: Security
+        - url: /deployedge/microsoft-edge-privacy-policy
+          text: Privacy
     # Card
     - title: Policy reference
       imageSrc: /media/common/i_policy.svg
