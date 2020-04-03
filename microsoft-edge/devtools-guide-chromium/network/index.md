@@ -2,7 +2,7 @@
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,9 +49,7 @@ In general, use the Network panel when you need to make sure that resources are 
 *   Making sure that resources are actually being uploaded or downloaded at all.  
 *   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.  
 
-If you are looking for ways to improve page load performance, **do not** start with the Network panel.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  <!--See [Optimize Website Speed][SpeedGetStarted].  -->
-
-<!--TODO: add section link when content is available  -->
+If you are looking for ways to improve page load performance, **do not** start with the Network panel.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  See [Optimize Website Speed][DevtoolsSpeedGetStarted].  
 
 ## Open the Network panel   
 
@@ -154,7 +152,7 @@ The network connection of the computer that you use to build sites is probably f
     > Selecting Slow 3G  
     > ![Selecting Slow 3G][ImagesTutorialSlow3G]  
     
-1.  Long-press **Reload** ![Reload][ImageReloadIcon] and then select **Empty Cache And Hard Reload**.  
+1.  Long-press **Reload** ![Reload][ImageRefreshIcon] and then select **Empty Cache And Hard Reload**.  
     
     > ##### Figure 10  
     > Empty Cache And Hard Reload  
@@ -375,63 +373,65 @@ Check out the [Network Reference][DevtoolsNetworkReference] to discover more Dev
 
 <!-- image links -->  
 
-[ImageAddIcon]: images/add-icon.msft.png  
-[ImageCloseIcon]: images/close-icon.msft.png  
-[ImageFilterIcon]: images/filter-icon.msft.png  
-[ImageFormatIcon]: images/format-icon.msft.png  
-[ImageReloadIcon]: images/reload-icon.msft.png  
-[ImageScreenshotsIcon]: images/screenshots-icon.msft.png  
-[ImageSearchIcon]: images/search-icon.msft.png  
-[ImageSettingsIcon]: images/settings-icon.msft.png
+[ImageAddIcon]: /microsoft-edge/devtools-guide-chromium/media/add-icon.msft.png  
+[ImageCloseIcon]: /microsoft-edge/devtools-guide-chromium/media/close-icon.msft.png  
+[ImageFilterIcon]: /microsoft-edge/devtools-guide-chromium/media/filter-icon.msft.png  
+[ImageFormatIcon]: /microsoft-edge/devtools-guide-chromium/media/format-icon.msft.png  
+[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
+[ImageScreenshotsIcon]: /microsoft-edge/devtools-guide-chromium/media/screenshots-icon.msft.png  
+[ImageSearchIcon]: /microsoft-edge/devtools-guide-chromium/media/search-icon.msft.png  
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png
 
-[ImagesTutorialAddBlock]: images/glitch-network-cli-block-add-pattern.msft.png "Figure 31: Blocking main.css"  
-[ImagesTutorialAllScreenshots]: images/glitch-network-screenshots.msft.png "Figure 11: Screenshots of the page load"  
-[ImagesTutorialBlock]: images/glitch-network-cli-block.msft.png "Figure 30: Show Request Blocking"  
-[ImagesTutorialBlockedStyles]: images/glitch-network-cli-block-main-css.msft.png "Figure 32: main.css has been blocked"  
-[ImagesTutorialCache]: images/glitch-network-search-cache-control-headers-response-headers.msft.png "Figure 20: A search result highlighted in the Headers tab"  
-[ImagesTutorialCloseButtons]: images/glitch-network-search-close.msft.png "Figure 21: The Close buttons"  
-[ImagesTutorialCloseTiming]: images/glitch-network-resources-close-tabs.msft.png "Figure 17: The Close button"  
-[ImagesTutorialCommandMenu]: images/glitch-network-cli-empty.msft.png "Figure 29: The Command Menu"  
-[ImagesTutorialConsole]: images/glitch-console.msft.png "Figure 2: The Console"  
-[ImagesTutorialCSS]: images/glitch-network-filter-file-type-css.msft.png "Figure 27: Showing CSS files only"  
-[ImagesTutorialCSSJS]: images/glitch-network-filter-file-type-css-js.msft.png "Figure 28: Showing CSS and JS files only"  
-[ImagesTutorialDemo]: images/glitch-inspect-network-activity-demo.msft.png "Figure 1: The demo"  
-[ImagesTutorialDocked]: images/glitch-console-bottom.msft.png "Figure 3: DevTools docked to the bottom of the window"  
-[ImagesTutorialDomain]: images/glitch-network-edit-column.msft.png "Figure 7: Enabling the Domain column"  
-[ImagesTutorialFilters]: images/glitch-network-filter-empty.msft.png "Figure 22: The Filters toolbar"  
-[ImagesTutorialFirstScreenshot]: images/glitch-network-screenshots-first.msft.png "Figure 12: The network activity that was happening during the first screenshot"  
-[ImagesTutorialHardReload]: images/glitch-empty-cache-and-hard-reset.msft.png "Figure 10: Empty Cache And Hard Reload"  
-[ImagesTutorialHeaders]: images/glitch-network-resources-headers.msft.png "Figure 13: The Headers tab"  
-[ImagesTutorialLog]: images/glitch-network.msft.png "Figure 5: The Network Log"  
-[ImagesTutorialNegative]: images/glitch-network-filter-negative-statement.msft.png "Figure 25: A negative filter"  
-[ImagesTutorialNetwork]: images/glitch-network-bottom.msft.png "Figure 4: DevTools docked to the bottom of the window"  
-[ImagesTutorialPNG]: images/glitch-network-filter-png.msft.png "Figure 23: A string filter"  
-[ImagesTutorialPreview]: images/glitch-network-resources-preview.msft.png "Figure 14: The Preview tab"  
-[ImagesTutorialProperty]: images/glitch-network-filter-property-value.msft.png "Figure 26: A property filter"  
-[ImagesTutorialRegEx]: images/glitch-network-filter-regex.msft.png "Figure 24: A regular expression filter"  
-[ImagesTutorialResponse]: images/glitch-network-resources-response.msft.png "Figure 15: The Response tab"  
-[ImagesTutorialResults]: images/glitch-network-search-cache-control.msft.png "Figure 19: Search results for Cache-Control"  
-[ImagesTutorialRuntime]: images/glitch-network-new-resource.msft.png "Figure 6: A new resource in the Network Log"  
-[ImagesTutorialSearch]: images/glitch-network-search-empty.msft.png "Figure 18: The Search pane"  
-[ImagesTutorialSlow3G]: images/glitch-network-throttling-slow-3g.msft.png "Figure 9: Selecting Slow 3G"  
-[ImagesTutorialThrottling]: images/glitch-network-throttling.msft.png "Figure 8: Enabling throttling"  
-[ImagesTutorialTiming]: images/glitch-network-resources-timing.msft.png "Figure 16: The Timing tab"  
-<!--[ImagesTutorialWindows]: images/tutorial/windows.msft.png " old Figure 2: The demo in one window and this tutorial in a different window"  -->  
+[ImagesTutorialDemo]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-inspect-network-activity-demo.msft.png "Figure 1: The demo"  
+<!--[ImagesTutorialWindows]: /microsoft-edge/devtools-guide-chromium/media/network-tutorial/windows.msft.png " old Figure 2: The demo in one window and this tutorial in a different window"  -->  
+[ImagesTutorialConsole]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-console.msft.png "Figure 2: The Console"  
+[ImagesTutorialDocked]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-console-bottom.msft.png "Figure 3: DevTools docked to the bottom of the window"  
+[ImagesTutorialNetwork]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-bottom.msft.png "Figure 4: DevTools docked to the bottom of the window"  
+[ImagesTutorialLog]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network.msft.png "Figure 5: The Network Log"  
+[ImagesTutorialRuntime]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-new-resource.msft.png "Figure 6: A new resource in the Network Log"  
+[ImagesTutorialDomain]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-edit-column.msft.png "Figure 7: Enabling the Domain column"  
+[ImagesTutorialThrottling]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-throttling.msft.png "Figure 8: Enabling throttling"  
+[ImagesTutorialSlow3G]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-throttling-slow-3g.msft.png "Figure 9: Selecting Slow 3G"  
+[ImagesTutorialHardReload]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-empty-cache-and-hard-reset.msft.png "Figure 10: Empty Cache And Hard Reload"  
+[ImagesTutorialAllScreenshots]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-screenshots.msft.png "Figure 11: Screenshots of the page load"  
+[ImagesTutorialFirstScreenshot]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-screenshots-first.msft.png "Figure 12: The network activity that was happening during the first screenshot"  
+[ImagesTutorialHeaders]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-resources-headers.msft.png "Figure 13: The Headers tab"  
+[ImagesTutorialPreview]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-resources-preview.msft.png "Figure 14: The Preview tab"  
+[ImagesTutorialResponse]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-resources-response.msft.png "Figure 15: The Response tab"  
+[ImagesTutorialTiming]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-resources-timing.msft.png "Figure 16: The Timing tab"  
+[ImagesTutorialCloseTiming]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-resources-close-tabs.msft.png "Figure 17: The Close button"  
+[ImagesTutorialSearch]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-search-empty.msft.png "Figure 18: The Search pane"  
+[ImagesTutorialResults]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-search-cache-control.msft.png "Figure 19: Search results for Cache-Control"  
+[ImagesTutorialCache]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-search-cache-control-headers-response-headers.msft.png "Figure 20: A search result highlighted in the Headers tab"  
+[ImagesTutorialCloseButtons]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-search-close.msft.png "Figure 21: The Close buttons"  
+[ImagesTutorialFilters]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-empty.msft.png "Figure 22: The Filters toolbar"  
+[ImagesTutorialPNG]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-png.msft.png "Figure 23: A string filter"  
+[ImagesTutorialRegEx]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-regex.msft.png "Figure 24: A regular expression filter"  
+[ImagesTutorialNegative]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-negative-statement.msft.png "Figure 25: A negative filter"  
+[ImagesTutorialProperty]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-property-value.msft.png "Figure 26: A property filter"  
+[ImagesTutorialCSS]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-file-type-css.msft.png "Figure 27: Showing CSS files only"  
+[ImagesTutorialCSSJS]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-filter-file-type-css-js.msft.png "Figure 28: Showing CSS and JS files only"  
+[ImagesTutorialCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-cli-empty.msft.png "Figure 29: The Command Menu"  
+[ImagesTutorialBlock]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-cli-block.msft.png "Figure 30: Show Request Blocking"  
+[ImagesTutorialAddBlock]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-cli-block-add-pattern.msft.png "Figure 31: Blocking main.css"  
+[ImagesTutorialBlockedStyles]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-cli-block-main-css.msft.png "Figure 32: main.css has been blocked"  
 
 <!-- links -->  
 
+
+<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
+
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DevtoolsNetworkReference]: /microsoft-edge/devtools-guide-chromium/network/reference "Network Analysis Reference"
+[DevtoolsNetworkReferenceFilter]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests "Filter requests - Network Analysis Reference"  
+[DevtoolsReferenceHideOverview]: /microsoft-edge/devtools-guide-chromium/network/reference#hide-the-overview-pane "Hide the Overview pane - Network Analysis Reference"
+[DevtoolsReferenceProperty]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Filter requests by properties - Network Analysis Reference"
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
+[DevtoolsSpeedGetStarted]: /microsoft-edge/devtools-guide-chromium/speed/get-started "Optimize Website Speed With Microsoft Edge DevTools"  
+
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo"  
+
 [MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  
-
-<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy.md ""  -->  
-
-[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
-[DevtoolsNetworkReference]: reference.md "Network Analysis Reference"
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
-[DevtoolsNetworkReferenceFilter]: reference.md#filter-requests "Filter requests - Network Analysis Reference"  
-[DevtoolsReferenceHideOverview]: reference.md#hide-the-overview-pane "Hide the Overview pane - Network Analysis Reference"
-[DevtoolsReferenceProperty]: reference.md#filter-requests-by-properties "Filter requests by properties - Network Analysis Reference"
-<!--[SpeedGetStarted]: ../speed/get-started.md ""  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

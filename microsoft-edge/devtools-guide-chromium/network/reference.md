@@ -2,7 +2,7 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -192,20 +192,22 @@ See [Hide the Filters pane](#hide-the-filters-pane).
 You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays
 all PNGs that are larger than one kilobyte.  These multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
 
-Below is a complete list of supported properties.  
+The complete list of supported properties.  
 
-*   `domain`.  Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populates the autocomplete dropdown menu with all of the domains it has encountered.  
-*   `has-response-header`.  Show the resources that contain the specified HTTP response header.  DevTools populates the autocomplete dropdown with all of the response headers that it has encountered.  
-*   `is`.  Use `is:running` to find `WebSocket` resources.  
-*   `larger-than`.  Show resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`.
-*   `method`.  Show resources that were retrieved over a specified HTTP method type.  DevTools populates the dropdown with all of the HTTP methods it has encountered.  
-*   `mime-type`.  Show resources of a specified MIME type.  DevTools populates the dropdown with all MIME types it has encountered.  
-*   `mixed-content`.  Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\).  
-*   `scheme`.  Show resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\).  
-*   `set-cookie-domain`.  Show the resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populates the autocomplete with all of the cookie domains that it has encountered.  
-*   `set-cookie-name`.  Show the resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populates the autocomplete with all of the cookie names that it has encountered.  
-*   `set-cookie-value`.  Show the resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populates the autocomplete with all of the cookie values that it has encountered.  
-*   `status-code`.  Only show resources whose HTTP status code match the specified code.  DevTools populates the autocomplete dropdown menu with all of the status codes it has encountered.  
+| Property | Details |  
+|:--- | :--- |  
+| `domain` | Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populates the autocomplete dropdown menu with all of the domains it has encountered. |  
+| `has-response-header` | Show the resources that contain the specified HTTP response header.  DevTools populates the autocomplete dropdown with all of the response headers that it has encountered. |  
+| `is` | Use `is:running` to find `WebSocket` resources. |  
+| `larger-than` | Show resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |  
+| `method` | Show resources that were retrieved over a specified HTTP method type.  DevTools populates the dropdown with all of the HTTP methods it has encountered. |  
+| `mime-type` | Show resources of a specified MIME type.  DevTools populates the dropdown with all MIME types it has encountered. |  
+| `mixed-content` | Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\). |  
+| `scheme` | Show resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\). |  
+| `set-cookie-domain` | Show the resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populates the autocomplete with all of the cookie domains that it has encountered. |  
+| `set-cookie-name` | Show the resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populates the autocomplete with all of the cookie names that it has encountered. |  
+| `set-cookie-value` | Show the resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populates the autocomplete with all of the cookie values that it has encountered. |  
+| `status-code` | Show only the resources for which the HTTP status code matches the specified code.  DevTools populates the autocomplete dropdown menu with all of the status codes it has encountered. |  
 
 ### Filter requests by type   
 
@@ -248,7 +250,7 @@ Click the header of any column in the Requests to sort requests by that column.
 
 ### Sort by activity phase   
 
-To change how the Waterfall sorts requests, right-click the header of the Requests table, hover over **Waterfall**, and select one of the following options:  
+To change how the Waterfall sorts requests, right-click the header of the Requests table, hover over **Waterfall**, and select one of the following options.  
 
 *   **Start Time**.  The first request that was initiated is at the top.  
 *   **Response Time**.  The first request that started downloading is at the top.  
@@ -622,66 +624,67 @@ Deselect the **Show Overview** checkbox to hide it.
 > The Show Overview checkbox  
 > ![The Show Overview checkbox][ImageHideOverviewCheckbox]  
 
- 
+<!-->   -->  
 
   
 
 <!-- image links -->  
 
-[ImageCaptureScreenshotsIcon]: images/capture-screenshots-icon.msft.png  
-[ImageClearIcon]: images/clear-requests-icon.msft.png  
-[ImageFilterIcon]: images/filter-icon.msft.png  
-[ImageHideIcon]: images/hide-overview-icon.msft.png  
-[ImageLargeResourceRowsIcon]: images/large-resource-rows-button-icon.msft.png  
-[ImageRecordOnIcon]: images/record-on-icon.msft.png  
+[ImageCaptureScreenshotsIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-screenshots-icon.msft.png  
+[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-requests-icon.msft.png  
+[ImageFilterIcon]: /microsoft-edge/devtools-guide-chromium/media/filter-icon.msft.png  
+[ImageHideIcon]: /microsoft-edge/devtools-guide-chromium/media/hide-overview-icon.msft.png  
+[ImageLargeResourceRowsIcon]: /microsoft-edge/devtools-guide-chromium/media/large-resource-rows-button-icon.msft.png  
+[ImageRecordOnIcon]: /microsoft-edge/devtools-guide-chromium/media/record-on-icon.msft.png  
 
-[ImageClearBrowserCache]: images/network-clear-browser-cache.msft.png "Figure 6: Selecting Clear Browser Cache"  
-[ImageClearBrowserCookies]: images/network-clear-browser-cookies.msft.png "Figure 9: Selecting Clear Browser Cookies"  
-[ImageClearButton]: images/network-clear-button.msft.png "Figure 2: The Clear button"  
-[ImageCookies]: images/network-resources-cookies.msft.png "Figure 23: The Cookies tab"  
-[ImageCopyResponse]: images/network-requests-copy-response.msft.png "Figure 33: Selecting Copy Response"  
-[ImageDisableCacheCheckBox]: images/network-disable-cache-checkbox.msft.png "Figure 5: The Disable Cache checkbox"  
-[ImageFilterTextBox]: images/network-filters-textbox.msft.png "Figure 10: The Filters text box"  
-<!--[ImageFrames]: images/frames.msft.png "Old Figure 20: The Frames tab"  -->  
+[ImageNetworkPanel]: /microsoft-edge/devtools-guide-chromium/media/network-network-panel.msft.png "Figure 1: The Network panel"  
+[ImageClearButton]: /microsoft-edge/devtools-guide-chromium/media/network-network-clear-button.msft.png "Figure 2: The Clear button"  
+[ImagePreserveLogCheckBox]: /microsoft-edge/devtools-guide-chromium/media/network-network-preserve-log.msft.png "Figure 3: The Preserve Log checkbox"  
+[ImageScreenshotHover]: /microsoft-edge/devtools-guide-chromium/media/network-network-screenshot-hover.msft.png "Figure 4: Hovering over a screenshot"  
+<!--[ImageReplayXHR]: /microsoft-edge/devtools-guide-chromium/media/network-replay-xhr.msft.png "Old Figure 5: Selecting Replay XHR"  -->  
+[ImageDisableCacheCheckBox]: /microsoft-edge/devtools-guide-chromium/media/network-network-disable-cache-checkbox.msft.png "Figure 5: The Disable Cache checkbox"  
+[ImageClearBrowserCache]: /microsoft-edge/devtools-guide-chromium/media/network-network-clear-browser-cache.msft.png "Figure 6: Selecting Clear Browser Cache"  
+[ImageOfflineDropdown]: /microsoft-edge/devtools-guide-chromium/media/network-network-offline-dropdown.msft.png "Figure 7: The Offline dropdown menu"  
+[ImageNetworkThrottlingMenu]: /microsoft-edge/devtools-guide-chromium/media/network-network-throttling-menu.msft.png "Figure 8: The Network Throttling menu"  
+[ImageClearBrowserCookies]: /microsoft-edge/devtools-guide-chromium/media/network-network-clear-browser-cookies.msft.png "Figure 9: Selecting Clear Browser Cookies"  
+[ImageFilterTextBox]: /microsoft-edge/devtools-guide-chromium/media/network-network-filters-textbox.msft.png "Figure 10: The Filters text box"  
+[ImageMultiTypeFilter]: /microsoft-edge/devtools-guide-chromium/media/network-network-type-filters.msft.png "Figure 11: Using the Type filters to display JS, CSS, and Document resources"  
+[ImageOverviewFilter]: /microsoft-edge/devtools-guide-chromium/media/network-network-overview-filter.msft.png "Figure 12: Filtering out any requests that were inactive around 300ms"  
+[ImageHideDataURLsCheckBox]: /microsoft-edge/devtools-guide-chromium/media/network-network-hide-data-urls.msft.png "Figure 13: The Hide Data URLs checkbox"  
+[ImageWaterfallTotalDuration]: /microsoft-edge/devtools-guide-chromium/media/network-network-waterfall-total-duration.msft.png "Figure 14: Sorting the Waterfall by total duration"  
+[ImageRequestsTable]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-table.msft.png "Figure 15: The Requests table"  
+[ImageRequestsTableAddColumn]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-add-column.msft.png "Figure 16: Adding a column to the Requests table"  
+[ImageRequestsTableCustomColumn]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-add-custom.msft.png "Figure 17: Adding a custom column to the Requests table"  
+[ImageRequestsTableWaterfallColumn]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-waterfall.msft.png "Figure 18: The Waterfall column of the Requests pane"  
+[ImagePreview]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-preview.msft.png "Figure 19: The Preview tab"  
+<!--[ImageFrames]: /microsoft-edge/devtools-guide-chromium/media/network-frames.msft.png "Old Figure 20: The Frames tab"  -->  
+[ImageResponse]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-response.msft.png "Figure 20: The Response tab"  
 [ImageHeaders]: /microsoft-edge/devtools-guide-chromium/media/network-resources-headers.msft.png "Figure 21: The Headers tab"  
-[ImageHideDataURLsCheckBox]: images/network-hide-data-urls.msft.png "Figure 13: The Hide Data URLs checkbox"  
-[ImageHideFiltersButton]: images/network-resources-hide-filters-button.msft.png "Figure 34: The Hide Filters button"  
-[ImageHideOverviewCheckbox]: images/network-requests-show-overview-off.msft.png "Figure 37: The Hide Overview checkbox"  
-[ImageInitiatorStack]: images/network-requests-initiator-stack.msft.png "Figure 30: The stack trace leading up to a resource request"  
-[ImageLargeRequestRowsCheckbox]: images/network-requests-use-large-request-rows-on.msft.png "Figure 36: The Large Request Rows checkbox"  
-[ImageMultiTypeFilter]: images/network-type-filters.msft.png "Figure 11: Using the Type filters to display JS, CSS, and Document resources"  
-[ImageNetworkPanel]: images/network-panel.msft.png "Figure 1: The Network panel"  
-[ImageNetworkPanelDOMContentLoadedLoadEvents]: images/network-requests-load-events.msft.png "Figure 27: The locations of the DOMContentLoaded and load events on the Network panel"  
-[ImageNetworkThrottlingMenu]: images/network-throttling-menu.msft.png "Figure 8: The Network Throttling menu"  
-[ImageOfflineDropdown]: images/network-offline-dropdown.msft.png "Figure 7: The Offline dropdown menu"  
-[ImageOverviewFilter]: images/network-overview-filter.msft.png "Figure 12: Filtering out any requests that were inactive around 300ms"  
-[ImagePreserveLogCheckBox]: images/network-preserve-log.msft.png "Figure 3: The Preserve Log checkbox"  
-[ImagePreview]: images/network-resources-preview.msft.png "Figure 19: The Preview tab"  
-[ImageQueryStringParameters]: images/network-resources-headers-query-string-parameters.msft.png "Figure 22: The Query String Parameters section"  
-<!--[ImageReplayXHR]: images/replay-xhr.msft.png "Old Figure 5: Selecting Replay XHR"  -->  
-[ImageRequestInitiatorsDependencies]: images/network-resources-initiators-dependencies.msft.png "Figure 26: Viewing the initiators and dependencies of a request"  
-[ImageLargeRequestRows]: images/network-requests-large-request-rows.msft.png "Figure 35: An example of large request rows in the Requests pane"  
-[ImageRequestsTable]: images/network-requests-table.msft.png "Figure 15: The Requests table"  
-[ImageRequestsTableAddColumn]: images/network-requests-add-column.msft.png "Figure 16: Adding a column to the Requests table"  
-[ImageRequestsTableCustomColumn]: images/network-requests-add-custom.msft.png "Figure 17: Adding a custom column to the Requests table"  
-[ImageRequestsTableWaterfallColumn]: images/network-requests-waterfall.msft.png "Figure 18: The Waterfall column of the Requests pane"  
-[ImageResponse]: images/network-resources-response.msft.png "Figure 20: The Response tab"  
-[ImageSaveAsHAR]: images/network-requests-save-har-content.msft.png "Figure 32: Selecting Save as HAR with Content"  
-[ImageScreenshotHover]: images/network-screenshot-hover.msft.png "Figure 4: Hovering over a screenshot"  
-[ImageTiming]: images/network-resources-timing.msft.png "Figure 24: The Timing tab"  
-[ImageTotalRequests]: images/network-total-requests.msft.png "Figure 28: The total number of requests since DevTools was opened"  
-[ImageTotalSize]: images/network-total-download-size.msft.png "Figure 29: The total download size of requests"  
-[ImageUncompressedResources]: images/network-requests-uncompressed-compare.msft.png "Figure 31: An example of uncompressed resources"  
-[ImageWaterfallHover]: images/network-resources-waterfall-hover.msft.png "Figure 25: Previewing the timing breakdown of a request"  
-[ImageWaterfallTotalDuration]: images/network-waterfall-total-duration.msft.png "Figure 14: Sorting the Waterfall by total duration"  
+[ImageQueryStringParameters]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-headers-query-string-parameters.msft.png "Figure 22: The Query String Parameters section"  
+[ImageCookies]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-cookies.msft.png "Figure 23: The Cookies tab"  
+[ImageTiming]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-timing.msft.png "Figure 24: The Timing tab"  
+[ImageWaterfallHover]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-waterfall-hover.msft.png "Figure 25: Previewing the timing breakdown of a request"  
+[ImageRequestInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-initiators-dependencies.msft.png "Figure 26: Viewing the initiators and dependencies of a request"  
+[ImageNetworkPanelDOMContentLoadedLoadEvents]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-load-events.msft.png "Figure 27: The locations of the DOMContentLoaded and load events on the Network panel"  
+[ImageTotalRequests]: /microsoft-edge/devtools-guide-chromium/media/network-network-total-requests.msft.png "Figure 28: The total number of requests since DevTools was opened"  
+[ImageTotalSize]: /microsoft-edge/devtools-guide-chromium/media/network-network-total-download-size.msft.png "Figure 29: The total download size of requests"  
+[ImageInitiatorStack]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-initiator-stack.msft.png "Figure 30: The stack trace leading up to a resource request"  
+[ImageUncompressedResources]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-uncompressed-compare.msft.png "Figure 31: An example of uncompressed resources"  
+[ImageSaveAsHAR]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-save-har-content.msft.png "Figure 32: Selecting Save as HAR with Content"  
+[ImageCopyResponse]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-copy-response.msft.png "Figure 33: Selecting Copy Response"  
+[ImageHideFiltersButton]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-hide-filters-button.msft.png "Figure 34: The Hide Filters button"  
+[ImageLargeRequestRows]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-large-request-rows.msft.png "Figure 35: An example of large request rows in the Requests pane"  
+[ImageLargeRequestRowsCheckbox]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-use-large-request-rows-on.msft.png "Figure 36: The Large Request Rows checkbox"  
+[ImageHideOverviewCheckbox]: /microsoft-edge/devtools-guide-chromium/media/network-network-requests-show-overview-off.msft.png "Figure 37: The Hide Overview checkbox"  
 
 <!-- links -->  
 
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debug Progressive Web Apps"  
+[DevtoolsProgressiveWebApps]: /microsoft-edge/devtools-guide-chromium/network/progressive-web-apps "Debug Progressive Web Apps"  
 
 <!--[NetworkConditions]: network-conditions.md "Optimize Performance Under Varying Network Conditions"  -->  
 
 [MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"  
+
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy server - Wikipedia"  
 
 > [!NOTE]
