@@ -73,7 +73,7 @@ In [Figure 2](#figure-2), the long, green bar in the **Waterfall** indicates tha
 *   The connection between the client and server is slow.  
 *   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte \(TTFB\) when accessing a local server, then the server is slow.  
 
-###Fixes  
+### Fixes  
 
 *   If the connection is slow, consider hosting your content on a CDN or changing hosting providers.  
 *   If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.  
