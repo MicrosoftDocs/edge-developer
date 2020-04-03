@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extension
 ms.custom: seodec18
+localization_priority: Priority
 ---
 
 # Adding, moving, and removing extensions for Microsoft Edge  

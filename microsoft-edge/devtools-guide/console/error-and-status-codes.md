@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
 ms.custom: seodec18
+localization_priority: Priority
 ---
 
 # Console error and status codes  
