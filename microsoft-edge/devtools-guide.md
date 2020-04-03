@@ -3,13 +3,14 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/01/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
 experimental: true
 experiment_id: "51fe4b97-3e55-41"
+localization_priority: Priority
 ---
 
 # Microsoft Edge (EdgeHTML) Developer Tools  
