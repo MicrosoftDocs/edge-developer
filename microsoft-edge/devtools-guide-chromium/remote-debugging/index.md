@@ -2,7 +2,7 @@
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -54,7 +54,7 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 1.  Open the **Developer Options** screen on your Android.  See [Configure On-Device Developer Options](https://developer.android.com/studio/debug/dev-options.html).  
 1.  Select **Enable USB Debugging**.  
 1.  On your development machine, open Microsoft Edge.  
-1.  Open **DevTools**.  
+1.  [Open DevTools][DevToolsOpen].  
 1.  In DevTools, click the **Main Menu** `...` then select **More tools** > **Remote devices**.  
     
     > ##### Figure 1  
@@ -98,7 +98,7 @@ If you do not see the **Allow USB Debugging** prompt on your Android device try:
 *   Setting the USB mode for Android to PTP.  See [Galaxy S4 does not show Authorize USB debugging dialog box][StackExchangeGalaxyS4DoesNotShowDialogBox].  
 *   Select **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.  
 
-If you find a solution that is not mentioned in this section or in [DevTools Devices does not detect device when plugged in][StackOverflowDevicesNotDetected]!  
+If you find a solution that is not mentioned in this section or in [DevTools Devices does not detect device when plugged in][StackOverflowDevicesNotDetected] or please add an answer to that Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
 
 ## Step 2: Debug content on your Android device from your development machine   
 
@@ -153,23 +153,25 @@ Some notes on screencasts:
 
 <!-- image links -->  
 
-[ImageSelectElementIcon]: images/select-element-icon.msft.png  
-[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
+[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
+[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
-<!--[ImageConnectedRemoteDevice]: images/connected-remote-device.msft.png "Figure 5:  A connected remote device"  -->
-[ImageDiscoverUSBDevices]: images/remote-devices-tab.msft.png "Figure 2:  The Discover USB Devices checkbox is enabled"  
-[ImageOpenRemoteDevices]: images/more-tools-remote-devices.msft.png "Figure 1: Opening the Remote Devices tab via the Main Menu"  
-<!--[ImageReload]: images/reload.msft.png "Figure 6: The menu for reloading, focusing, or closing a tab"  -->
-<!--[ImageRemoteDebugging]: images/remote-debugging.msft.png "Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-<!--[ImageUnknownDevice]: images/unknown-device.msft.png "Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
+<!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
+[ImageOpenRemoteDevices]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-more-tools-remote-devices.msft.png "Figure 1: Opening the Remote Devices tab via the Main Menu"  
+[ImageDiscoverUSBDevices]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-tab.msft.png "Figure 2:  The Discover USB Devices checkbox is enabled"  
+<!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
+<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--connected-remote-device.msft.png "old Figure 5:  A connected remote device"  -->
+<!--[ImageReload]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--reload.msft.png "old Figure 6: The menu for reloading, focusing, or closing a tab"  -->
 
 <!-- links -->  
 
-<!--[DevToolsOpen]: ../open.md ""  -->  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 
 [AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
+
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
 [StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"  
+
 [StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"  
 
 > [!NOTE]

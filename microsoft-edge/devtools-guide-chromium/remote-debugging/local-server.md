@@ -2,7 +2,7 @@
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -69,7 +69,7 @@ To view the content, open up Microsoft Edge on your Android device and go to the
 
 Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.  
 
-For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` (for example, `127.0.0.1 microsoft-edge.devtools`).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.  
+For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` \(for example, `127.0.0.1 microsoft-edge.devtools`\).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.  
 
 ### Set up port forwarding to proxy server  
 
@@ -89,7 +89,7 @@ To set up port forwarding to a proxy:
 Next, you need to configure your Android device to communicate with the proxy server.  
 
 1.  On your Android device go to **Settings** > **Wi-Fi**.  
-1.  Long-press the name of the network that you are currently connected to.  
+1.  Long-press the name of the network to which you are currently connected.  
     
     > [!NOTE]
     > Proxy settings apply per network.  
@@ -110,20 +110,23 @@ If your web server is running off of a non-standard port, remember to specify th
 > [!TIP]
 > To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.  
 
- 
+<!-->   -->  
 
 
 
 <!-- image links -->  
-[ImageAddRule]: images/remote-devices-devices-port-forwarding-add-rule.msft.png "Figure 1: Adding a port forwarding rule"  
-[ImagePortForwardingStatus]: images/remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png "Figure 2: Port forwarding status"  
+
+[ImageAddRule]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png "Figure 1: Adding a port forwarding rule"  
+[ImagePortForwardingStatus]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png "Figure 2: Port forwarding status"  
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: index.md "Get Started with Remote Debugging Android Devices"  
+[RemoteDebuggingGettingStarted]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Get Started with Remote Debugging Android Devices"  
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
+
 [SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimising Web Delivery"  
+
 [FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
 
 > [!NOTE]
