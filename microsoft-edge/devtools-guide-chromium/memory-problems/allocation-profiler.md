@@ -2,7 +2,7 @@
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/19/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -82,9 +82,7 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 
 ## View memory allocation by function   
 
-You are able to view memory allocation by JavaScript function.  <!--See [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] for more information.  -->  
-
-<!--todo: add memory problems index (Investigate memory allocation by function) section when available  -->  
+You are able to view memory allocation by JavaScript function.  See [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] for more information.  
 
 <!--## Feedback   -->  
 
@@ -92,16 +90,15 @@ You are able to view memory allocation by JavaScript function.  <!--See [Investi
 
 <!-- image links -->  
 
-[ImageObjectTracker]: images/memory-allocation-timeline-snapshot-highlighted.msft.png "Figure 1: Allocation instrumentation on timeline"  
-[ImageRecordHeap]: images/memory-allocation-instrumentation-on-timeline-selected.msft.png "Figure 2: Record heap allocations profiler"  
-[ImageCollected]: images/memory-allocation-timelines-snapshot.msft.png "Figure 3: Allocation instrumentation on timeline snapshot"  
-[ImageSliders]: images/memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Figure 4: Zoom into snapshot"  
+[ImageObjectTracker]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png "Figure 1: Allocation instrumentation on timeline"  
+[ImageRecordHeap]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png "Figure 2: Record heap allocations profiler"  
+[ImageCollected]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timelines-snapshot.msft.png "Figure 3: Allocation instrumentation on timeline snapshot"  
+[ImageSliders]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Figure 4: Zoom into snapshot"  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Open Microsoft Edge DevTools"
-
-<!--[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems"  >
+[DevToolsOpenIndex]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: /microsoft-edge/devtools-guide-chromium/memory-problems/index#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems"  
 
 <!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
