@@ -249,8 +249,8 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 ## Next steps   
 
 <!--
-Congratulations, you have completed the tutorial.  <!--Click the button below to receive your prize.  -->  
-
+Congratulations, you have completed the tutorial.  --> <!--Click the button below to receive your prize.  -->  
+<!--
 
 <style>
 .note::before {
@@ -280,7 +280,7 @@ var feedback = {
 
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
- 
+ <!--  -->
 
 
 
