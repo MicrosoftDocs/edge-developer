@@ -2,7 +2,7 @@
 title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -91,27 +91,26 @@ Click **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.
 > Clearing all cookies  
 > ![Clearing all cookies][ImageClearAllCookies]  
 
-   
+<!--    -->  
 
   
 
 <!-- image links -->  
 
-[ImageClearIcon]: images/clear-icon.msft.png  
-[ImageDeleteIcon]: images/delete-icon.msft.png  
+[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
+[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
 
-[ImageClearAllCookies]: images/application-storage-cookies-clear-all.msft.png "Figure 6: Clearing all cookies"  
-[ImageCookies]: images/application-storage-cookies-selected.msft.png "Figure 2: The Cookies pane"  
-[ImageCookiesFilter]: images/application-storage-cookies-filter-id.msft.png "Figure 3: Filtering out any cookies that do not contain the text ID"  
-[ImageDeleteCookie]: images/application-storage-cookies-delete-selected.msft.png "Figure 5: Deleting a specific cookie"  
-[ImageEditCookie]: images/application-storage-cookies-rename.msft.png "Figure 4: Setting the name of a cookie to DEVTOOLS!"  
-[ImageManifest]: images/application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
+[ImageCookies]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-selected.msft.png "Figure 2: The Cookies pane"  
+[ImageCookiesFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-filter-id.msft.png "Figure 3: Filtering out any cookies that do not contain the text ID"  
+[ImageEditCookie]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-rename.msft.png "Figure 4: Setting the name of a cookie to DEVTOOLS!"  
+[ImageDeleteCookie]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-delete-selected.msft.png "Figure 5: Deleting a specific cookie"  
+[ImageClearAllCookies]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-clear-all.msft.png "Figure 6: Clearing all cookies"  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
-
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
+[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP cookies | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP cookies - Permanent cookies | MDN"  

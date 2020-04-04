@@ -2,7 +2,7 @@
 title: View And Edit Local Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -110,22 +110,23 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 
 <!-- image links -->  
 
-[ImageDeleteIcon]: ../images/shared/delete-icon.msft.png  
-[ImageClearIcon]: ../images/shared/clear-icon.msft.png  
+[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
+[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
 
-[ImageJSContext]: images/console-local-storage.msft.png "Figure 7: Changing the JavaScript context of the Console"  
-[ImageLocalStorage]: images/application-local-storage-view-key-value.msft.png "Figure 3: The localStorage key-value pairs for the https://www.bing.com domain"  
-[ImageLocalStorageConsole]: images/console-local-storage-interaction.msft.png "Figure 8: Interacting with localStorage from the Console"  
-[ImageLocalStorageCreate]: images/application-local-storage-new-key-value.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
-[ImageLocalStorageEdit]: images/application-local-storage-edit-key-value.msft.png "Figure 6: Editing a localStorage key"  
-[ImageLocalStorageMenu]: images/application-local-storage.msft.png "Figure 2: The Local Storage menu"  
-[ImageLocalStorageViewer]: images/application-local-storage-view-key-value-selected.msft.png "Figure 4: Viewing the value of the eventLogQueue_Online key"  
-[ImageManifest]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageLocalStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage.msft.png "Figure 2: The Local Storage menu"  
+[ImageLocalStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value.msft.png "Figure 3: The localStorage key-value pairs for the https://www.bing.com domain"  
+[ImageLocalStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value-selected.msft.png "Figure 4: Viewing the value of the eventLogQueue_Online key"  
+[ImageLocalStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-new-key-value.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
+[ImageLocalStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-edit-key-value.msft.png "Figure 6: Editing a localStorage key"  
+[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage.msft.png "Figure 7: Changing the JavaScript context of the Console"  
+[ImageLocalStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage-interaction.msft.png "Figure 8: Interacting with localStorage from the Console"  
 
 <!-- links -->  
 
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -2,7 +2,7 @@
 title: View And Change IndexedDB Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -96,7 +96,7 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 
 ### Edit IndexedDB data with Snippets   
 
-[Snippets][JSSnippets] are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.  
+[Snippets][DevtoolsJavascriptSnippets] are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.  
 
 > ##### Figure 8  
 > Using a Snippet to interact with IndexedDB  
@@ -156,32 +156,33 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 
 <!-- image links -->  
 
-[ImageClearIcon]: images/clear-icon.msft.png  
-[ImageDatabaseIcon]: images/database-icon.msft.png  
-[ImageDeleteIcon]: images/delete-icon.msft.png  
-[ImageObjectStoreIcon]: images/object-store-icon.msft.png  
-[ImageReloadIcon]: images/reload-icon.msft.png  
+[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
+[ImageDatabaseIcon]: /microsoft-edge/devtools-guide-chromium/media/database-icon.msft.png  
+[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
+[ImageObjectStoreIcon]: /microsoft-edge/devtools-guide-chromium/media/object-store-icon.msft.png  
+[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
 
-[ImageManifest]: images/application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
-[ImageIndexedDBMenu]: images/application-storage-indexeddb.msft.png "Figure 2: The IndexedDB menu"  
-[ImageIndexedDBDatabase]: images/application-storage-indexeddb-notes_db.msft.png "Figure 3: The notes_db database"  
-[ImageIndexedDBObjectStore]: images/application-storage-indexeddb-notes_db-notes_os.msft.png "Figure 4: The notes_os object store"  
-[ImageIndexedBDValue]: images/application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png "Figure 5: Viewing an IndexedDB value"  
-[ImageIndexedDBIndex]: images/application-storage-indexeddb-notes_db-notes_os-title.msft.png "Figure 6: Sorting an object store by an index"  
-[ImageIndexedDBDatabase2]: images/application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png "Figure 7: Viewing a database"  
-[ImageIndexedDBSnippet]: images/sources-snippets-indexeddb-output.msft.png "Figure 8: Using a Snippet to interact with IndexedDB"  
-[ImageIndexedDBKeyValuePair]: images/application-storage-indexeddb-notes_db-notes_os2.msft.png "Figure 9: Selecting a key-value pair in order to delete it"  
-[ImageIndexedDBKeyValuePairDeleted]: images/application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png "Figure 10: How the object store looks after the key-value pair has been deleted"  
-[ImageIndexedDBObjectStore]: images/application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png "Figure 11: Viewing an object store"  
-[ImageIndexedDBDatabase]: images/application-storage-indexeddb-notes_db-delete-database.msft.png "Figure 12: The Delete database button"  
-[ImageIndexedDBClearStorage]: images/application-clear-storage-indexeddb-clear-site-data.msft.png "Figure 13: The Clear storage pane"  
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
+[ImageIndexedDBMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb.msft.png "Figure 2: The IndexedDB menu"  
+[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db.msft.png "Figure 3: The notes_db database"  
+[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png "Figure 4: The notes_os object store"  
+[ImageIndexedBDValue]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png "Figure 5: Viewing an IndexedDB value"  
+[ImageIndexedDBIndex]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png "Figure 6: Sorting an object store by an index"  
+[ImageIndexedDBDatabase2]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png "Figure 7: Viewing a database"  
+[ImageIndexedDBSnippet]: /microsoft-edge/devtools-guide-chromium/media/storage-sources-snippets-indexeddb-output.msft.png "Figure 8: Using a Snippet to interact with IndexedDB"  
+[ImageIndexedDBKeyValuePair]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png "Figure 9: Selecting a key-value pair in order to delete it"  
+[ImageIndexedDBKeyValuePairDeleted]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png "Figure 10: How the object store looks after the key-value pair has been deleted"  
+[ImageIndexedDBObjectStore]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png "Figure 11: Viewing an object store"  
+[ImageIndexedDBDatabase]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png "Figure 12: The Delete database button"  
+[ImageIndexedDBClearStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png "Figure 13: The Clear storage pane"  
 
 <!-- links -->  
 
-[JSSnippets]: ../javascript/snippets.md "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools"  
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[DevtoolsJavascriptSnippets]: /microsoft-edge/devtools-guide-chromium/javascript/snippets "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"  
+
 [MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "Key Generator - Basic Concepts | MDN"  
 [MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"  
 [MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexedDB | MDN"  
