@@ -2,7 +2,7 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,7 +37,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
 > *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  
-> *   [Use DevTools to make basic changes to CSS][DevToolsCss]  
+> *   [Use DevTools to make basic changes to CSS][DevToolsCssIndex]  
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]  
 
 ## Overview   
@@ -292,36 +292,41 @@ If you have more feedback on these topics or anything else, please use any of th
 
 <!-- image links -->  
 
-[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab via Command Menu"  
-[ImageConsolePanel]: images/workspaces-demo-console.msft.png "Figure 3: The Console panel"  
-[ImageDemo]: images/workspaces-demo.msft.png "Figure 1: The demo"  
-<!--[ImageDownloadProjectButton]: images/glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
-<!--[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
-[ImageFilesystem]: images/workspaces-demo-sources-filesystem.msft.png "Figure 4: The Filesystem tab"  
-[ImageGlitchProject]: images/glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
-[ImageMapping]: images/workspaces-demo-sources-filesystem-folder.msft.png "Figure 5: The Filesystem tab now shows a mapping between the local files and the network ones"  
-[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Figure 10: Opening script.js via the Open File dialog"  
-[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 11: The link on the page is now italic"  
-[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 8: Changing HTML from the Sources panel"  
-[ImageStylesFuchsia]: images/workspaces-demo-sources-filesystem-css.msft.png "Figure 6: Viewing styles.css in a text editor"  
-[ImageStylesGreen]: images/workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
+[ImageGlitchProject]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
+<!--[ImageDownloadProjectButton]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
+[ImageDemo]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo.msft.png "Figure 2: The demo"  
+[ImageConsolePanel]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-console.msft.png "Figure 3: The Console panel"  
+[ImageFilesystem]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-filesystem.msft.png "Figure 4: The Filesystem tab"  
+[ImageMapping]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png "Figure 5: The Filesystem tab now shows a mapping between the local files and the network ones"  
+[ImageStylesFuchsia]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-filesystem-css.msft.png "Figure 6: Viewing styles.css in a text editor"  
+[ImageStylesGreen]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
+[ImageSourcesCakeHTML]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-page-h1.msft.png "Figure 8: Changing HTML from the Sources panel"  
+<!--[ImageElementsCake]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
+[ImageCommandMenuQuickSource]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab via Command Menu"  
+[ImageOpenFileDialog]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-script.msft.png "Figure 10: Opening script.js via the Open File dialog"  
+[ImageScriptItalic]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 11: The link on the page is now italic"  
 
 <!-- links -->  
 
-[DevToolsCss]: ../css/index.md "Get Started With Viewing And Changing CSS"  
+[DevToolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index.md "Get Started With Viewing And Changing CSS"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
 [GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces Demo files | Glitch"  
+
 [MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content - CSS: Cascading Style Sheets | MDN"  
 [MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Getting started with the Web | MDN"  
 [MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Running a simple local HTTP server | MDN"  
 [MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to DOM - Web APIs | MDN"  
+
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
+
 [TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"  
+
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
+
 [WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]
