@@ -3,7 +3,7 @@ description: Extensions Getting Started Part 1
 title: Build A Simple Extension That Pops Up NASA Picture Of The Day
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
@@ -11,13 +11,13 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Build A Simple Extension That Pops Up NASA Picture Of The Day  
 
-[Completed Extension Package Source for This Part](extension-source/extension-getting-started-part1.zip)  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
 
 ## Overview  
 
 In part 1, the goal is to build a very simple Edge Chromium Extension starting with an empty directory.  The goal for this Extension is to do the following:  
 
-*   Create icons for the Extension that are able to be used in multiple places and in different sizes  
+*   Create icons for the Extension that may be used in multiple places and in different sizes  
 *   Create a simple `manifest.json` file  
 *   Display a launch icon that when clicked displays a popup window containing the NASA picture of the day  
 
@@ -44,7 +44,7 @@ Next thing is to add some icons to `manifest.json` file \(and create a new `/ico
 
 Your directory structure should look like this.  
 
-![Directory Structure](media/part1-heirarchy.png)  
+![Directory Structure][ImagePart1Heirarchy]  
 
 <!--  
 ```
@@ -58,7 +58,7 @@ Your directory structure should look like this.
 │   │   nasapod128x128.png  
 ```  -->  
 
-and your updated `manifest.json` file is as follows.  
+Your updated `manifest.json` file is as follows.  
 
 ```json
 {
@@ -82,7 +82,7 @@ and your updated `manifest.json` file is as follows.
 
 Now, create an `HTML` file that is automatically run when the user clicks on the extension icon as shown here.  
 
-![Toolbar Badge Icon](media/part1-badge1.png)  
+![Toolbar Badge Icon][ImagePart1Badge1]  
 
 The HTML file is named `popup/popup.html`.  Clicking on the Extension icon launches `popup/popup.html` as modal dialog that stays up until you click outside the dialog.  
 
@@ -106,7 +106,7 @@ For this, register the file as a default pop-up in the `manifest.json` under `br
 }
 ```  
 
-In the `popup` directory , let us add the file `popup.html` and let us have it render the stars image.  Here is the `popup.html` file.  
+In the `popup` directory , add the file `popup.html` and have it render the stars image.  Here is the `popup.html` file.  
 
 ```html
 <html lang="en">
@@ -126,7 +126,7 @@ In the `popup` directory , let us add the file `popup.html` and let us have it r
 
 The directory structure for the example Extension is this.  
 
-![Directory Structure for Extension](media/part1-heirarchy1.png)  
+![Directory Structure for Extension][ImagePart1Heirarchy1]  
 
 <!--  
 ```
@@ -155,21 +155,21 @@ The next section explains how to load the Extension \(sometimes called side load
 
 ## Run your Extension locally in your browser while developing it \(side-loading\)  
 
-The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your Extensions while you are developing them.  
+The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your Extensions while you are developing.  
 
 The process is quite simple.  All you need to do is click on the three dots at the top of your browser.  Next, choose `Extensions` from the context menu as shown below.  
 
-![Choose Extensions](media/part1-threedots.png)  
+![Choose Extensions][ImagePart1Threedots]  
 
 When you are on the **Extensions** page as shown below, enable the **Developer mode** by enabling the toggle at the bottom left of the page as shown below.  
 
-![Enable Developer Mode](media/part1-developermode-toggle.png)  
+![Enable Developer Mode][ImagePart1DevelopermodeToggle]  
 
 ## Installing and updating side-loaded Extensions  
 
 The first time you want to install your Extension, you choose the `Load Unpacked` option as shown below.  This prompts you for a directory where you have your Extension assets file by file.  This installs the Extension as if you had downloaded it from a store.  
 
-![Installed Extensions](media/part1-installed-extension.png)  
+![Installed Extensions][ImagePart1InstalledExtension]  
 
 After you install your Extension, you may update it by clicking on the `Reload` button under your Extension listing.  
 
@@ -181,4 +181,13 @@ Debugging Extensions is quite easy and supports all of the features in Edge Chro
 
 <!-- image links -->  
 
+[ImagePart1Heirarchy]: ./media/part1-heirarchy.png "Directory Structure"  
+[ImagePart1Badge1]: ./media/part1-badge1.png "Toolbar Badge Icon"  
+[ImagePart1Heirarchy1]: ./media/part1-heirarchy1.png "Directory Structure for Extension"  
+[ImagePart1Threedots]: ./media/part1-threedots.png "Choose Extensions"  
+[ImagePart1DevelopermodeToggle]: ./media/part1-developermode-toggle.png "Enable Developer Mode"  
+[ImagePart1InstalledExtension]: ./media/part1-installed-extension.png "Installed Extensions"  
+
 <!-- links -->  
+
+[ArchiveExtensionGettingStartedPart1]: ./extension-source/extension-getting-started-part1.zip "Completed Extension Package Source for This Part"  
