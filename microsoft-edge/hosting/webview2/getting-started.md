@@ -31,7 +31,7 @@ Open **WebView2GettingStarted.sln** in Visual Studio.  If you are using an older
 
 ![toolVersion][ImageToolVersion]  
 
-Visual Studio may show some errors due to missing WebView2 header file, which should go away after [Step 2](#step-2-install-webview2-sdk) is completed.  
+Visual Studio may show some errors due to missing WebView2 header file, which should go away after [Step 2](#step-2---install-webview2-sdk) is completed.  
 
 ## Step 2 - Install WebView2 SDK  
 
@@ -123,7 +123,7 @@ Press F5 to build and run the app.  Now you have a WebView window displaying Bin
 
 ## Step 4 - Navigation events  
 
-You navigated to URL using `ICoreWebView2::Navigate` in [step 3](#step-3-create-a-single-webview-within-the-parent-window).  During navigation, WebView fires a sequence of events that the host is able to listen to in the following order: `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  To learn more, see [Navigation events][HostingWebview2ReferenceICoreWebView2NavigationEvents].  
+You navigated to URL using `ICoreWebView2::Navigate` in [step 3](#step-3---create-a-single-webview-within-the-parent-window).  During navigation, WebView fires a sequence of events that the host is able to listen to in the following order: `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  To learn more, see [Navigation events][HostingWebview2ReferenceICoreWebView2NavigationEvents].  
 
 ![navigationEvents][ImageNavigationEvents]  
 
