@@ -123,7 +123,7 @@ Press `F5` to build and run the app.  Now you have a WebView window displaying B
 
 ## Step 4 - Navigation events  
 
-You navigated to URL using `ICoreWebView2::Navigate` in [step 3](#step-3---create-a-single-webview-within-the-parent-window).  During navigation, WebView fires a sequence of events that the host is able to listen to in the following order: `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  To learn more, see [Navigation events][HostingWebview2ReferenceICoreWebView2NavigationEvents].  
+You navigated to URL using `ICoreWebView2::Navigate` in [Step 3](#step-3---create-a-single-webview-within-the-parent-window).  During navigation, WebView fires a sequence of events that the host is able to listen to in the following order: `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  To learn more, see [Navigation events][HostingWebview2ReferenceICoreWebView2NavigationEvents].  
 
 ![navigationEvents][ImageNavigationEvents]  
 
