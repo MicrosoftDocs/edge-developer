@@ -42,13 +42,13 @@ In the future, a second bring-your-own \(BYO\) option is planned that allows you
 
 ## Browser Channels  
 
-You may target different [channels][MicrosoftEdgeInsiderDownload] of Microsoft Edge \(Chromium\) to power the WebView2 control.  In most cases, production applications should target the Stable channel, but you may need to test on Beta, Dev, or Canary to ensure your applications continue to work in the near future.  The WebView2 API allows you to programmatically target either the most stable or the least stable channel installed on a user machine.  Alternatively, you may use the below registry key to enforce a channel.  See more details in [CreateWebView2EnvironmentWithDetails][HostingWebview2ReferenceWebview2idl] function.  
+You may target different [channels][MicrosoftEdgeInsiderDownload] of Microsoft Edge \(Chromium\) to power the WebView2 control.  In most cases, production applications should target the Stable \(Official\) channel, but you should test on Beta, Dev, or Canary to ensure your application continues to work in the near future.  The WebView2 API allows you to programmatically target either the most stable or the least stable channel installed on a user machine.  Alternatively, you may use the below registry key to enforce a channel.  See more details in [CreateWebView2EnvironmentWithDetails][HostingWebview2ReferenceWebview2idl] function.  
 
 ## Debugging WebView2  
 
 ### Microsoft Edge DevTools  
 
-You may use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromium] to debug web content displayed in WebView, just as you would in Microsoft Edge \(Chromium\).  While having focus on the WebView window, press `F12`, or press `Ctrl`+`Shift`+`i`, or right-click + choose `Inspect` to open Developer Tools.  
+You may use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromium] to debug web content displayed in WebView, just as you would in Microsoft Edge \(Chromium\).  While you have focus on the WebView window, press `F12`, or press `Ctrl`+`Shift`+`i`, or right-click + choose `Inspect` to open Developer Tools.  
 
 ![F12][ImageF12]  
 
@@ -61,13 +61,13 @@ You can use the script debugger in Visual Studio 2019 \(minimum version 16.4 Pre
 
 ![VSJSDiagnostics][ImageVsJsDiagnostics]  
 
-Right click on your project and select **Properties**.  Under **Configuration Properties** > **Debugging** > **Debugger Type**,  choose the **JavaScript (WebView2)** option to enable WebView2 script debugging.  More details to follow soon.  
+Right-click on your project and select **Properties**.  Under **Configuration Properties** > **Debugging** > **Debugger Type**,  choose the **JavaScript (WebView2)** option to enable WebView2 script debugging.  More details to follow soon.  
 
 ![VSScriptDebugger][ImageVsScriptDebugger]  
 
 ### Visual Studio Code  
 
-You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE.  For more details see [Microsoft Edge (Chromium) WebView applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
+You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE.  For more details, see [Microsoft Edge (Chromium) WebView applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
 
 <!-- image links -->  
 

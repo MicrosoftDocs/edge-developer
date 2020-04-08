@@ -27,7 +27,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 You start with a basic desktop project containing a single main window.  As this is not the main focus of this walkthrough, you simply use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplicationsVs2019].  [Download the modified sample][GithubMicrosoftEdgeWebview2SamplesGettingStartedGuide] to get started.  
 
-Open **WebView2GettingStarted.sln** in Visual Studio.  If you are using an older version of Visual Studio, right-click on the **WebView2GettingStarted** project and click **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and VS toolset available to you.  
+Open `WebView2GettingStarted.sln` in Visual Studio.  If you are using an older version of Visual Studio, right-click on the **WebView2GettingStarted** project and click **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and VS toolset available to you.  
 
 ![toolVersion][ImageToolVersion]  
 
@@ -41,15 +41,15 @@ Add the WebView2 SDK into the project.  For the developer preview, you may insta
 
     ![manageNugetPackages][ImageManageNugetPackage]  
 
-2.  Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** in the right hand side window and install the latest SDK.  Nuget downloads the SDK to your machine.  While you use [Windows Implementation Library][GithubMicrosoftWil] and [Windows Runtime C++ Template Library][CppCppcxWrlWindowsRuntimesTemplateLibraryVs2019] to make working with COM easier in this walkthrough, the libraries are completely optional.  
+2.  Enter `Microsoft.Windows.ImplementationLibrary` in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** in the right hand side window and install the latest SDK.  Nuget downloads the SDK to your machine.  While you use [Windows Implementation Library][GithubMicrosoftWil] and [Windows Runtime C++ Template Library][CppCppcxWrlWindowsRuntimesTemplateLibraryVs2019] to make working with COM easier in this walkthrough, the libraries are completely optional.  
 
     ![nuget][ImageNugetWil]  
 
-3.  Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right-hand side window and install the latest SDK.  Nuget downloads the SDK to your machine.  
+3.  Enter `Microsoft.Web.WebView2` in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right-hand side window and install the latest SDK.  Nuget downloads the SDK to your machine.  
 
     ![nuget][ImageNuget]  
 
-4.  Include the WebView2 header.  In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include` statements.  
+4.  Include the WebView2 header.  In `HelloWebView.cpp`, add `#include "WebView2.h"` below the lines of `#include` statements.  
 
     ```cpp
     ...
@@ -117,7 +117,7 @@ CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-Press F5 to build and run the app.  Now you have a WebView window displaying Bing.  
+Press `F5` to build and run the app.  Now you have a WebView window displaying Bing.  
 
 ![bingWindow][ImageBingWindow]  
 
@@ -127,9 +127,9 @@ You navigated to URL using `ICoreWebView2::Navigate` in [step 3](#step-3---creat
 
 ![navigationEvents][ImageNavigationEvents]  
 
-In error cases there may or may not be `SourceChanged`, `ContentLoading`, or `HistoryChanged` events depending on if the navigation is continued to an error page.  In case of an HTTP redirect, there are multiple `NavigationStarting` events in a row.  
+In error cases there may or may not be `SourceChanged`, `ContentLoading`, or `HistoryChanged` events based upon if the navigation continues to an error page.  In case of an HTTP redirect, there are multiple `NavigationStarting` events in a row.  
 
-As an example of utilizing those events, register a handler for `NavigationStarting` to cancel any non-https requests.  Copy the following code to **HelloWebView.cpp** below `// Step 4 - Navigation events`.  
+As an example of utilizing those events, register a handler for `NavigationStarting` to cancel any non-https requests.  Copy the following code to `HelloWebView.cpp` below the line that contains `// Step 4 - Navigation events`.  
 
 ```cpp
 // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -147,13 +147,13 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
     }).Get(), &token);
 ```  
 
-Now the app is not able to navigate to any non-https sites.  You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.  
+Now your app is not able to navigate to any non-https sites.  You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.  
 
 ## Step 5 - Scripting  
 
 The hosting app is able to inject JavaScript into WebView.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  Added initialization scripts apply to all future top level document and child frame navigation until removed, and run after the global object has been created and before any other script included by the HTML document is run.  
 
-Copy the following code below `// Step 5 - Scripting`.  
+Copy the following code below that line that contains  `// Step 5 - Scripting`.  
 
 ```cpp
 // Schedule an async task to add initialization script that freezes the Object object
@@ -184,7 +184,7 @@ As an example to understand the mechanism, try printing out the document URL in 
 4.  The handler of the host is triggered and returns the message \(the URL\) to the web content.  
 5.  The handler of the web content is triggered and prints the message from the host \(the URL\).  
 
-Copy the following code below `// Step 6 - Communication between host and web content`,  
+Copy the following code below the line that contains `// Step 6 - Communication between host and web content`.  
 
 ```cpp
 // Set an event handler for the host to return received message back to the web content
