@@ -65,7 +65,7 @@ You are all set to use and build against the WebView2 API.  Press `F5` to build 
 
 ## Step 3 - Create a single WebView within the parent window  
 
-Add a WebView to the main window.  You use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control.  You may use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting.  Upon the completion of `CreateCoreWebView2Environment`, you are able to call `ICoreWebView2Environment::CreateCoreWebView2Host` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Host::get_CoreWebView2` to get the associated WebView.  
+Add a WebView to the main window.  You use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control.  You may use `CreateCoreWebView2EnvironmentWithDetails`instead of using the default setting, if you want to specify browser location, user folder, browser flags, and so on.  Upon the completion of `CreateCoreWebView2Environment`, you are able to call `ICoreWebView2Environment::CreateCoreWebView2Host` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Host::get_CoreWebView2` to get the associated WebView.  
 
 In the callback, set a few settings, resize the WebView to take 100% of the parent window, and navigate to Bing.  
 
