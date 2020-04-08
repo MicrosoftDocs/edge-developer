@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2020
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -47,7 +47,7 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
 
 ### New ways to access Settings 
 
-There are tons of settings for the DevTools that you can customize to make the DevTools look, feel, and work the way you want them to. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. You can access Settings with the gear icon next to Console alerts and the main menu.
+There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need them to. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.
 
 > ##### Figure 2 
 > The gear icon opens Settings in the DevTools 
@@ -67,13 +67,13 @@ Chromium issue [#1050855][crbug1050855]
 The **Sources** panel has new icons for breakpoints and logpoints:
 
 * [Breakpoints][LineOfCodeBreakpoints]
-  ![Breakpoint][ImageLineOfCodeBreakpoint]
+  ![Breakpoint][ImageLineOfCodeBreakpoint] 
   are represented by red circles.
 <!-- * [Conditional Breakpoints][ConditionalBreakpoints]
-  ![Conditional Breakpoint][ImageConditionalBreakpoint]
+  ![Conditional Breakpoint][ImageConditionalBreakpoint] 
   are represented by half-red half-white circles. -->
-* **Logpoints** log messages to the Console without pausing execution or cluttering up your code with `console.log()` calls. **Logpoints**
-  ![Logpoint][ImageLogpoint]
+* **Logpoints** log messages to the Console without pausing JavaScript or cluttering up your code with `console.log()` statements. **Logpoints**
+  ![Logpoint][ImageLogpoint] 
   are represented by red diamonds.
 
 The motivation for the new icons was to make the UI more consistent with other GUI debugging tools
@@ -138,44 +138,45 @@ Open the [Rendering tab][RenderingDoc] and use the new **Emulate vision deficien
 > Emulating blurred vision  
 > ![Emulating blurred vision][ImageEmulatingBlurredVision]  
 
-DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindness].  
+DevTools is able to emulate blurred vision and the following [types of color vision deficiencies] [ColorBlindnessTypes].  
 
-* Protanopia: the inability to perceive any red light.
-* Deuteranopia: the inability to perceive any green light.
-* Tritanopia: the inability to perceive any blue light.
-* Achromatopsia: the inability to perceive any color except for shades of grey \(extremely rare\).
+| Color Vision Deficiency | Details |  
+|:--- |:--- | 
+| Protanopia | The inability to perceive any red light. |  
+| Deuteranopia | The inability to perceive any green light. |  
+| Tritanopia | The inability to perceive any blue light. |  
+| Achromatopsia | The inability to perceive any color, except for shades of grey \(extremely rare\). | 
 
 Less extreme versions of these color vision deficiencies exist, and in fact they are more common.
-For example, *protanomaly* is a reduced sensitivity to red light (as opposed to *protanopia*,
-which is the complete inability to perceive red light). However, these “-omaly” vision
+For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia,
+which is the complete inability to perceive red light). However, these -omaly vision
 deficiencies are not as clearly defined: every person with such a vision deficiency is different
 and might see things differently (being able to perceive more/less of the relevant colors).
 
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be
 accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1003700][crbug1003700]  
 
 ### Emulate locales 
 
-You can now emulate locales by setting a location in **Sensors** > **Location**. [Open the
+Emulate locales by setting a location in **Sensors** > **Location**. [Open the
 **Command Menu**][DevToolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab. After performing these actions,
 DevTools modifies the current default locale, affecting the following:
 
-- `Intl.*` APIs, e.g. `new Intl.NumberFormat().resolvedOptions().locale`
+- `Intl.*` APIs, for example: `new Intl.NumberFormat().resolvedOptions().locale`
 - other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and
-  `*.prototype.toLocaleString`, e.g. `123_456..toLocaleString()`
+  `*.prototype.toLocaleString`, for example: `123_456..toLocaleString()`
 - DOM APIs such as `navigator.language` and `navigator.languages`
-- the [`Accept-Language`][Accept-Language] HTTP request header
+- the [`Accept-Language`][MDNAcceptLanguage] HTTP request header
 
 > ##### Figure 9  
 > Emulating a locale  
 > ![Emulating a locale][ImageEmulatingLocales]  
 
-Check out a [Locale-dependent code example][LocaleDemo] to try it
-yourself.
+To try a demo, see [Locale-dependent code example][MathiasByensLocaleDemo].
 
 Chromium issue [#1051822][crbug1051822]
 
@@ -195,16 +196,16 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
 > More guidance in the Response Headers section  
 > ![More guidance in the Response Headers section][ImageNetworkGuidance]  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1051466][crbug1051466]  
 
 ### View network requests that set a specific cookie path 
 
 Use the new `cookie-path` filter keyword in the **Network** panel to focus on
-the network requests that set a specific [cookie path][CookiePath].
+the network requests that set a specific [cookie path][MDNCookiePath].
 
-Check out [Filter requests by properties][NetworkProperties] to discover more special keywords
+Check out [Filter requests by properties][NetworkProperties] to discover more keywords
 like `cookie-path`.
 
 ### **Dock to left** from the Command Menu   
@@ -218,13 +219,13 @@ Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` com
 > [!NOTE]
 > The **Dock to left** feature has been available since Microsoft Edge 75 but it was previously only accessible from the [**Main Menu**][MainMenuDoc].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1011679][crbug1011679]  
 
 ### The **Audits** panel is now the **Lighthouse** panel   
 
-The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][LighthouseRepo] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.  
+The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][GithubGoogleChromeLighthouse] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.  
 
 > ##### Figure 13  
 > The Lighthouse panel  
@@ -241,7 +242,7 @@ After setting up **Local Overrides** you may right-click a folder and select the
 > Delete all overrides  
 > ![Delete all overrides][ImageDeleteOverrides]  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1016501][crbug1016501]  
 
@@ -255,7 +256,7 @@ You have been able to [visualize Long Tasks in the Performance panel][LongTasksI
 > The new Long Task UI  
 > ![The new Long Task UI][ImageLongTask]  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1054447][crbug1054447]  
 
@@ -272,7 +273,7 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 > ![The "Show only the minimum safe area for maskable icons" checkbox][ImageMaskableIcons]  
 
 > [!NOTE]
-> This feature launched in Microsoft Edge 81.  We are covering it here in Microsoft Edge 83 because we forgot to cover it in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
+> This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
 
 ## Feedback   
 
@@ -352,10 +353,10 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 
-[ColorBlindness]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
-[Accept-Language]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language"
-[LocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"
-[CookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
+ [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
+[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language"
+[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"
+[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
 
 [crbug963183]: https://crbug.com/963183 "Issue 963183: DevTools are not WCAG compliant"  
 [crbug1003700]: https://crbug.com/1003700 "Issue 1003700: Add DevTools support for Color Vision Deficiency simulation"  
@@ -371,7 +372,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP and COEP explained - Cross-Origin Opener Policy"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP and COEP explained - Cross-Origin Embedder Policy"  
 
-[LighthouseRepo]: https://github.com/GoogleChrome/lighthouse "Lighthouse GitHub repo"  
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse GitHub repo"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
