@@ -9,7 +9,8 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 03/27/2020
+  ms.date: 04/03/2020
+  localization_priority: Priority
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -71,6 +72,8 @@ productDirectory:
       links:
         - url: /deployedge/security-overview
           text: Security
+        - url: /deployedge/microsoft-edge-privacy-policy
+          text: Privacy
     # Card
     - title: Policy reference
       imageSrc: /media/common/i_policy.svg
