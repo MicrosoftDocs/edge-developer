@@ -45,7 +45,7 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
 
 [Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-## New ways to access Settings 
+### New ways to access Settings 
 
 There are tons of settings for the DevTools that you can customize to make the DevTools look, feel, and work the way you want them to. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. You can access Settings with the gear icon next to Console alerts and the main menu.
 
@@ -61,7 +61,7 @@ You are also able to open [Settings][OverviewSettings] from the **Main Menu** un
 
 Chromium issue [#1050855][crbug1050855]
 
-## New icons for breakpoints, conditional breakpoints, and logpoints 
+### New icons for breakpoints, conditional breakpoints, and logpoints 
 
 <!-- The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints: -->
 The **Sources** panel has new icons for breakpoints and logpoints:
@@ -160,16 +160,21 @@ Chromium issue [#1003700][crbug1003700]
 
 ### Emulate locales 
 
-You can now emulate locales by setting `navigator.language` in the **Console** or
-by setting a location in **Sensors** > **Location**. [Open the **Command Menu**][DevToolsCommandMenuIndex] and
-type `Sensors` to access the **Sensors** tab. After performing these actions
-DevTools modifies the [`Accept-Language`][Accept-Language] HTTP request header to match your emulated location.
+You can now emulate locales by setting a location in **Sensors** > **Location**. [Open the
+**Command Menu**][DevToolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab. After performing these actions,
+DevTools modifies the current default locale, affecting the following:
+
+- `Intl.*` APIs, e.g. `new Intl.NumberFormat().resolvedOptions().locale`
+- other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and
+  `*.prototype.toLocaleString`, e.g. `123_456..toLocaleString()`
+- DOM APIs such as `navigator.language` and `navigator.languages`
+- the [`Accept-Language`][Accept-Language] HTTP request header
 
 > ##### Figure 9  
 > Emulating a locale  
 > ![Emulating a locale][ImageEmulatingLocales]  
 
-Check out [Locale-dependent code example][LocaleDemo] to try it
+Check out a [Locale-dependent code example][LocaleDemo] to try it
 yourself.
 
 Chromium issue [#1051822][crbug1051822]
@@ -194,7 +199,7 @@ Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the
 
 Chromium issue [#1051466][crbug1051466]  
 
-## View network requests that set a specific cookie path 
+### View network requests that set a specific cookie path 
 
 Use the new `cookie-path` filter keyword in the **Network** panel to focus on
 the network requests that set a specific [cookie path][CookiePath].
