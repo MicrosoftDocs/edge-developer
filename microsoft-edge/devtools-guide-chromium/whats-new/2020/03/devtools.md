@@ -47,7 +47,7 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
 
 ### New ways to access Settings 
 
-There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need them to. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.
+There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.
 
 > ##### Figure 2 
 > The gear icon opens Settings in the DevTools 
