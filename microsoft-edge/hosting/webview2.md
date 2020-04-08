@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The Microsoft Edge WebView2 control enables you \(the developer\) to host web content in your application using [Microsoft Edge (Chromium)][MicrosoftEdgeInsider] as the rendering engine.  
 
-The WebView2 control is currently in developer preview, during which you can prototype your solutions and share feedback with us to shape the future stable API.  There will likely be some breaking changes as we evolve the API during preview, and when this happens, you will need to have both the WebView2 SDK and Microsoft Edge \(Chromium\) updated.  Breaking changes will be noted in the [release notes][HostingWebview2ReleaseNotes] of the SDK.  This will lock down as WebView2 approaches beta and stable.  
+The WebView2 control is currently in developer preview, during which you can prototype your solutions and share feedback with us to shape the future stable API.  As the API evolves during preview, some braking changes may occur. When this happens, you must ensure that both the WebView2 SDK and Microsoft Edge \(Chromium\) are updated.  For breaking changes about the SDK, see the [release notes][HostingWebview2ReleaseNotes].  The changes are locked-down as WebView2 approaches beta and stable.  
 
 ## Supported Platforms  
 
