@@ -65,27 +65,6 @@ You are also able to open [Settings][OverviewSettings] from the **Main Menu** un
 
 Chromium issue [#1050855][crbug1050855]
 
-### New icons for breakpoints, conditional breakpoints, and logpoints 
-
-<!-- The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints: -->
-The **Sources** panel has new icons for breakpoints and logpoints:
-
-* [Breakpoints][LineOfCodeBreakpoints]
-  ![Breakpoint][ImageLineOfCodeBreakpoint] 
-  are represented by red circles.
-<!-- * [Conditional Breakpoints][ConditionalBreakpoints]
-  ![Conditional Breakpoint][ImageConditionalBreakpoint] 
-  are represented by half-red half-white circles. -->
-* **Logpoints** log messages to the Console without pausing JavaScript or cluttering up your code with `console.log()` statements. **Logpoints**
-  ![Logpoint][ImageLogpoint] 
-  are represented by red diamonds.
-
-The motivation for the new icons was to make the UI more consistent with other GUI debugging tools
-(which usually color breakpoints red) and to make it easier to distinguish between the 3 features
-at a glance.
-
-Chromium issue [#1041830][crbug1041830]
-
 ### Navigate the Color Picker with your keyboard  
 
 The [Color Picker][ColorPicker] is a GUI in the [Elements panel][ElementsDoc] for changing `color` and `background-color` declarations.  In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][ColorPicker] with the keyboard.  
