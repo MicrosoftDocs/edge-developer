@@ -1,40 +1,57 @@
 ---
 description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/12/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 04/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
 ---
 
-# Visual Studio Code
+# Visual Studio Code  
 
-[Visual Studio Code](https://code.visualstudio.com/Docs) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js so it's a great tool for web developers right out of the box! Head to [this page](https://code.visualstudio.com/) to download Visual Studio Code if you aren't using it yet.
+[Visual Studio Code][VisualStudioCodeDocs] is a lightweight, but powerful source code editor that runs on your desktop and is available for Windows, macOS, and Linux.  It comes with built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers right out of the box!  If you are not using it yet, download [Visual Studio Code][VisualstudioCode].  
 
-## Extensions
+## Extensions  
 
-<!-- We want to put something like the tiles for extensions VS Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page. I think it's a web page. I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->
+<!-- We want to put something like the tiles for extensions VS Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page. I think it's a web page. I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
 
-To acquire any of the extensions highlighted below, navigate to Extensions (`Ctrl` + `Shift` + `X` on Windows or `Command` + `Shift` + `X` on Mac) in VS Code.
+To acquire any of the extensions highlighted below, navigate to Extensions \(`Ctrl`+`Shift`+`X` on Windows or `Command`+`Shift`+`X` on macOS\) in VS Code.  
 
-Search the Marketplace for the specific extension and select **Install**.
+Search the Marketplace for the specific extension and click **Install**.  
 
-![Installing the Debugger for Microsoft Edge VS Code extension](./media/vscode-debugger-install.png)
+![Installing the Debugger for Microsoft Edge VS Code extension][ImageVscodeDebuggerInstall]  
 
-## Debugger for Microsoft Edge
+## Debugger for Microsoft Edge  
 
-With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) VS Code extension, you can debug your front-end JavaScript code line by line and see `console.log()` statements all directly from [Visual Studio Code](https://code.visualstudio.com/)!
+With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
 
-This extensions gives you the ability to launch or attach to both Microsoft Edge (EdgeHTML) and Microsoft Edge (Chromium). Check out [this page](./debugger-for-edge.md) for a walkthrough of debugging Microsoft Edge from VS Code and sample **launch.json** configurations.
+This extensions gives you the ability to launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].  
 
-![GIF of the Debugger for Edge VS Code extension in action!](./media/debugger-for-edge.png)
+![Debugger for Edge VS Code extension in action][ImageDebuggerEdge]  
 
-## Elements for Microsoft Edge
+## Elements for Microsoft Edge  
 
-By adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) VS Code extension, you can use the browser's Elements tool from within Visual Studio Code. By either launching or attaching, the Elements tool will connect to an instance of Microsoft Edge, display the runtime HTML structure, and allow you to alter the layout or fix styling issues.
+With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
 
-For more information, check out [this page](./elements-for-edge.md).
+For more information, see [Elements for Microsoft Edge VS Code extension][VscodeElementsEdge].  
 
-![GIF of the Elements for Edge VS Code extension in action!](./media/elements-for-edge.png)
+![Elements for Edge VS Code extension in action][ImageElementsEdge]  
+
+<!-- image links -->  
+
+[ImageVscodeDebuggerInstall]: ./media/vscode-debugger-install.png "Installing the Debugger for Microsoft Edge VS Code extension"  
+[ImageDebuggerEdge]: ./media/debugger-for-edge.png "Debugger for Edge VS Code extension in action"  
+[ImageElementsEdge]: ./media/elements-for-edge.png "Elements for Edge VS Code extension in action"  
+
+<!--links -->  
+
+[VscodeDebuggerEdge]: ./debugger-for-edge.md "Debugger For Microsoft Edge VS Code Extension"  
+[VscodeElementsEdge]: ./elements-for-edge.md "Elements For Microsoft Edge VS Code Extension"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"   
+
+[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elements for Microsoft Edge (Chromium) | Visual Studio Marketplace"  
