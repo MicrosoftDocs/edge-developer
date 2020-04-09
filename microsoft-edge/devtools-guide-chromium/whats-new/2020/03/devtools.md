@@ -53,11 +53,11 @@ There are tons of settings for the DevTools that you are able to customize to ma
 > The gear icon opens Settings in the DevTools 
 > ![The gear icon opens Settings in the DevTools][ImageSettingsGearIcon]  
 
-You are also able to open [Settings][OverviewSettings] from the **Main Menu** under **More Tools**.
+You are also able to open [Settings][OverviewSettings] from the **Main Menu** under **More tools**.
 
 > ##### Figure 3 
-> Main Menu > More Tools > Settings
-> ![Main Menu > More Tools > Settings][ImageSettingsMainMenu]  
+> Main Menu > More tools > Settings
+> ![Main Menu > More tools > Settings][ImageSettingsMainMenu]  
 
 Chromium issue [#1050855][crbug1050855]
 
@@ -138,7 +138,7 @@ Open the [Rendering tab][RenderingDoc] and use the new **Emulate vision deficien
 > Emulating blurred vision  
 > ![Emulating blurred vision][ImageEmulatingBlurredVision]  
 
-DevTools is able to emulate blurred vision and the following [types of color vision deficiencies] [ColorBlindnessTypes].  
+DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindnessTypes].  
 
 | Color Vision Deficiency | Details |  
 |:--- |:--- | 
@@ -282,14 +282,13 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  
+*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
+*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
+*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
 > ##### Figure 17  
 > The **Feedback** icon in the Microsoft Edge DevTools  
 > ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
-
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
-*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
 ## Download the Microsoft Edge preview channels   
 
