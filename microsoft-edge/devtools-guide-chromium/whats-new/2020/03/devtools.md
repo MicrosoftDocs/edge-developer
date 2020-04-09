@@ -1,8 +1,8 @@
 ---
-title: What's new in DevTools (Microsoft Edge 82)
+title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2020
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,9 +27,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# What's New In DevTools (Microsoft Edge 82)   
+# What's New In DevTools (Microsoft Edge 83)   
 
   
+
+Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post][WindowsBlogStableRelease] for more info.
+
+Here are the new features available in the DevTools in Microsoft Edge 83.
 
 ## Announcements from the Microsoft Edge DevTools team  
 
@@ -43,17 +47,33 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
 > The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]  
 > ![The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store][ImageRemoteTools]  
 
-[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+
+### New ways to access Settings 
+
+There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.
+
+> ##### Figure 2 
+> The gear icon opens Settings in the DevTools 
+> ![The gear icon opens Settings in the DevTools][ImageSettingsGearIcon]  
+
+You are also able to open [Settings][OverviewSettings] from the **Main Menu** under **More tools**.
+
+> ##### Figure 3 
+> Main Menu > More tools > Settings
+> ![Main Menu > More tools > Settings][ImageSettingsMainMenu]  
+
+Chromium issue [#1050855][crbug1050855]
 
 ### Navigate the Color Picker with your keyboard  
 
 The [Color Picker][ColorPicker] is a GUI in the [Elements panel][ElementsDoc] for changing `color` and `background-color` declarations.  In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][ColorPicker] with the keyboard.  
 
-> ##### Figure 2  
+> ##### Figure 4  
 > You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][ColorPicker]  
 > ![You are now able to use your keyboard to move the selector in the Shades section of the Color Picker][ImageColorPicker]  
 
-In Microsoft Edge 82, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.  
+In Microsoft Edge 83, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.  
 
 Chromium issue [#963183][crbug963183]  
 
@@ -61,15 +81,15 @@ Chromium issue [#963183][crbug963183]
 
 In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][ElementsDoc] was broken by page refreshes.  When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.  
 
-> ##### Figure 3  
+> ##### Figure 5  
 > In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh  
 > ![In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh][ImagePropertiesIn81]  
 
-In Microsoft Edge 82, you are now able to see the properties of the currently-selected element after a page refresh in the **Properties tab**.  
+In Microsoft Edge 83, you are now able to see the properties of the currently-selected element after a page refresh in the **Properties tab**.  
 
-> ##### Figure 4  
-> In Microsoft Edge 82, the **Properties tab** displays the properties of the currently-selected element after a page refresh  
-> ![In Microsoft Edge 82, the Properties tab displays the properties of the currently-selected element after a page refresh][ImagePropertiesIn82]  
+> ##### Figure 6  
+> In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh  
+> ![In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh][ImagePropertiesIn82]  
 
 Chromium issue [#1050999][crbug1050999]  
 
@@ -79,11 +99,11 @@ The **Changes tool** tracks any changes you have made to CSS or JavaScript in th
 
 Open the **Changes tool** by pressing `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and typing `changes`.  Select and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
 
-When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code.  Starting in Microsoft Edge 82, you may now scroll horizontally using the arrow keys on your keyboard.  
+When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
 
-> ##### Figure 5  
-> In Microsoft Edge 82, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
-> ![In Microsoft Edge 82, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool][ImageChanges]  
+> ##### Figure 7  
+> In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
+> ![In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool][ImageChanges]  
 
 If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
@@ -91,32 +111,57 @@ Chromium issue [#963183][crbug963183]
 
 ## Announcements from the Chromium project  
 
-The following sections announce additional features available in Microsoft Edge 82 that were contributed to the open source Chromium project.  
+The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.  
 
 ### Emulate vision deficiencies   
 
 Open the [Rendering tab][RenderingDoc] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
 
-> ##### Figure 6  
+> ##### Figure 8  
 > Emulating blurred vision  
 > ![Emulating blurred vision][ImageEmulatingBlurredVision]  
 
-DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindness].  
+DevTools is able to emulate blurred vision and the following [types of color vision deficiencies][ColorBlindnessTypes].  
 
-*   Protanopia.  The inability to perceive red light.  
-*   Protanomaly.  A reduced sensitivity to red light.  
-*   Deuteranopia.  The inability to perceive green light.  
-*   Deuteranomaly.  A reduced sensitivity to green light.  
-*   Tritanopia.  The inability to perceive blue light.  
-*   Tritanomaly.  A reduced sensitivity to blue light \(extremely rare\).  
-*   Achromatopsia.  The inability to perceive any color except for shades of grey \(extremely rare\).  
-*   Achromatomaly.  A reduced sensitivity to green, red, and blue light \(extremely rare\).  
+| Color Vision Deficiency | Details |  
+|:--- |:--- | 
+| Protanopia | The inability to perceive any red light. |  
+| Deuteranopia | The inability to perceive any green light. |  
+| Tritanopia | The inability to perceive any blue light. |  
+| Achromatopsia | The inability to perceive any color, except for shades of grey \(extremely rare\). | 
 
-The *-anomaly* forms are the \(rare\) extreme versions of the *-ia* forms.  Every person with an *-ia* vision deficiency is different and may see things differently \(being able to perceive more or less of the relevant colors\).  The DevTools emulations are just a visual approximation of how someone may experience one of these vision deficiencies.  Although the approximation should be good enough for you to identify and resolve issues, there's no way to simulate exactly what an individual may experience.  
+Less extreme versions of these color vision deficiencies exist, and in fact they are more common.
+For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia,
+which is the complete inability to perceive red light). However, these -omaly vision
+deficiencies are not as clearly defined: every person with such a vision deficiency is different
+and might see things differently (being able to perceive more/less of the relevant colors).
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be
+accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.
+
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1003700][crbug1003700]  
+
+### Emulate locales 
+
+Emulate locales by setting a location in **Sensors** > **Location**. [Open the
+**Command Menu**][DevToolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab. After performing these actions,
+DevTools modifies the current default locale, affecting the following:
+
+- `Intl.*` APIs, for example: `new Intl.NumberFormat().resolvedOptions().locale`
+- other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and
+  `*.prototype.toLocaleString`, for example: `123_456..toLocaleString()`
+- DOM APIs such as `navigator.language` and `navigator.languages`
+- the [`Accept-Language`][MDNAcceptLanguage] HTTP request header
+
+> ##### Figure 9  
+> Emulating a locale  
+> ![Emulating a locale][ImageEmulatingLocales]  
+
+To try a demo, see [Locale-dependent code example][MathiasByensLocaleDemo].
+
+Chromium issue [#1051822][crbug1051822]
 
 ### Cross-Origin Opener Policy \(COOP\) and Cross-Origin Embedder Policy \(COEP\) debugging   
 
@@ -124,40 +169,48 @@ The Network panel now provides [Cross-Origin Opener Policy][COOP] and [Cross-Ori
 
 The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:  
 
-> ##### Figure 7  
+> ##### Figure 10  
 > Blocked requests in the **Status** column  
 > ![Blocked requests in the Status column][ImageNetworkStatus]  
 
 The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:  
 
-> ##### Figure 8  
+> ##### Figure 11  
 > More guidance in the Response Headers section  
 > ![More guidance in the Response Headers section][ImageNetworkGuidance]  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1051466][crbug1051466]  
+
+### View network requests that set a specific cookie path 
+
+Use the new `cookie-path` filter keyword in the **Network** panel to focus on
+the network requests that set a specific [cookie path][MDNCookiePath].
+
+Check out [Filter requests by properties][NetworkProperties] to discover more keywords
+like `cookie-path`.
 
 ### **Dock to left** from the Command Menu   
 
 Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.  
 
-> ##### Figure 9  
+> ##### Figure 12  
 > DevTools docked to the left of the viewport  
 > ![DevTools docked to the left of the viewport][ImageDockToLeft]  
 
 > [!NOTE]
-> The **Dock to left** feature has been available since Microsoft Edge 75 but it was previously only accessible from the [**Main Menu**][MainMenuDoc].  The new feature in Microsoft Edge 82 is that you may now access this feature from the Command Menu.  
+> The **Dock to left** feature has been available since Microsoft Edge 75 but it was previously only accessible from the [**Main Menu**][MainMenuDoc].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1011679][crbug1011679]  
 
 ### The **Audits** panel is now the **Lighthouse** panel   
 
-The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][LighthouseRepo] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.  
+The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][GithubGoogleChromeLighthouse] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.  
 
-> ##### Figure 10  
+> ##### Figure 13  
 > The Lighthouse panel  
 > ![The Lighthouse panel][ImageLighthouse]  
 
@@ -168,11 +221,11 @@ The DevTools team frequently got feedback from web developers that while it was 
 
 After setting up **Local Overrides** you may right-click a folder and select the new **Delete all overrides** option to delete all Local Overrides in that folder.  
 
-> ##### Figure 11  
+> ##### Figure 14  
 > Delete all overrides  
 > ![Delete all overrides][ImageDeleteOverrides]  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1016501][crbug1016501]  
 
@@ -180,13 +233,13 @@ Chromium issue [#1016501][crbug1016501]
 
 A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.  
 
-You have been able to [visualize Long Tasks in the Performance panel][LongTasksInPerformancePanel] for a while now, but in Microsoft Edge 82 the Long Task visualization UI in the Performance panel has been updated.  The Long Task portion of a task is now colored with a striped red background.  
+You have been able to [visualize Long Tasks in the Performance panel][LongTasksInPerformancePanel] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.  The Long Task portion of a task is now colored with a striped red background.  
 
-> ##### Figure 12  
+> ##### Figure 15  
 > The new Long Task UI  
 > ![The new Long Task UI][ImageLongTask]  
 
-Send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 Chromium issue [#1054447][crbug1054447]  
 
@@ -198,12 +251,12 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-> ##### Figure 13  
+> ##### Figure 16  
 > The "Show only the minimum safe area for maskable icons" checkbox  
 > ![The "Show only the minimum safe area for maskable icons" checkbox][ImageMaskableIcons]  
 
 > [!NOTE]
-> This feature launched in Microsoft Edge 81.  We are covering it here in Microsoft Edge 82 because we forgot to cover it in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
+> This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
 
 ## Feedback   
 
@@ -212,14 +265,13 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  
-
-> ##### Figure 14  
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
-
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]  
 *   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
+
+> ##### Figure 17  
+> The **Feedback** icon in the Microsoft Edge DevTools  
+> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
 ## Download the Microsoft Edge preview channels   
 
@@ -236,19 +288,25 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!-- image links -->  
 
 [ImageRemoteTools]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/remote-tools.msft.png "Figure 1: The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store"  
-[ImageColorPicker]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/color-picker.msft.png "Figure 2: You are now able to use your keyboard to move the selector in the Shades section of the Color Picker"  
-[ImagePropertiesIn81]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-81.msft.png "Figure 3: In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh"  
-[ImagePropertiesIn82]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-82.msft.png "Figure 4: In Microsoft Edge 82, the Properties tab displays the properties of the currently-selected element after a page refresh"  
-[ImageChanges]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/changes.msft.png "Figure 5: In Microsoft Edge 82, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool"  
-[ImageEmulatingBlurredVision]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/vision.msft.png "Figure 6: Emulating blurred vision"  
-[ImageNetworkStatus]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/status.msft.png "Figure 7: Blocked requests in the Status column"  
-[ImageNetworkGuidance]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/guidance.msft.png "Figure 8: More guidance in the Response Headers section"  
-[ImageDockToLeft]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/dock-to-left.msft.png "Figure 9: DevTools docked to the left of the viewport"  
-[ImageLighthouse]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/lighthouse.msft.png "Figure 10: The Lighthouse panel"  
-[ImageDeleteOverrides]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/overrides.msft.png "Figure 11: Delete all overrides"  
-[ImageLongTask]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/long-task.msft.png "Figure 12: The new Long Task UI"  
-[ImageMaskableIcons]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/maskable-icons.msft.png "Figure 13: The Show only the minimum safe area for maskable icons checkbox"  
-[ImageFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/feedback-icon.msft.png "Figure 14: The Feedback icon in the Microsoft Edge DevTools"  
+[ImageSettingsGearIcon]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/settings.msft.png "Figure 2: The gear icon opens Settings in the DevTools"
+[ImageSettingsMainMenu]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/settings2.msft.png "Figure 3: Main Menu > More Tools > Settings"
+[ImageColorPicker]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/color-picker.msft.png "Figure 4: You are now able to use your keyboard to move the selector in the Shades section of the Color Picker"  
+[ImagePropertiesIn81]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-81.msft.png "Figure 5: In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh"  
+[ImagePropertiesIn82]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-82.msft.png "Figure 6: In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh"  
+[ImageChanges]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/changes.msft.png "Figure 7: In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool"  
+[ImageEmulatingBlurredVision]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/vision.msft.png "Figure 8: Emulating blurred vision"  
+[ImageEmulatingLocales]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/locale.msft.png "Figure 9: Emulating a locale"
+[ImageNetworkStatus]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/status.msft.png "Figure 10: Blocked requests in the Status column"  
+[ImageNetworkGuidance]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/guidance.msft.png "Figure 11: More guidance in the Response Headers section"  
+[ImageDockToLeft]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/dock-to-left.msft.png "Figure 12: DevTools docked to the left of the viewport"  
+[ImageLighthouse]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/lighthouse.msft.png "Figure 13: The Lighthouse panel"  
+[ImageDeleteOverrides]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/overrides.msft.png "Figure 14: Delete all overrides"  
+[ImageLongTask]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/long-task.msft.png "Figure 15: The new Long Task UI"  
+[ImageMaskableIcons]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/maskable-icons.msft.png "Figure 16: The Show only the minimum safe area for maskable icons checkbox"  
+[ImageFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/feedback-icon.msft.png "Figure 17: The Feedback icon in the Microsoft Edge DevTools"  
+
+[ImageLineOfCodeBreakpoint]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/breakpoint.msft.png
+[ImageLogpoint]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/logpoint.msft.png
 
 <!-- links -->  
 
@@ -268,13 +326,20 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab"  
 [PWADoc]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows"  
 [RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices"  
+[LineOfCodeBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints"
+[NetworkProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties
+[OverviewSettings]: /microsoft-edge/devtools-guide-chromium/customize/#settings
 
 [WindowsDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
 
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/ "Update on Stable channel releases for Microsoft Edge"
 
-[ColorBlindness]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
+ [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
+[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language"
+[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"
+[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
 
 [crbug963183]: https://crbug.com/963183 "Issue 963183: DevTools are not WCAG compliant"  
 [crbug1003700]: https://crbug.com/1003700 "Issue 1003700: Add DevTools support for Color Vision Deficiency simulation"  
@@ -283,11 +348,14 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [crbug1050999]: https://crbug.com/1050999 "Issue 1050999: Properties Tab"  
 [crbug1051466]: https://crbug.com/1051466 "Issue 1051466: Support COOP/COEP debugging in DevTools"  
 [crbug1054447]: https://crbug.com/1054447 "Issue 1054447: Update performance metrics in DevTools Timeline"  
+[crbug1051822]: https://crbug.com/1051822 "Issue 1051822: DevTools: add UI to emulate locale"
+[crbug1041830]: https://crbug.com/1041830 "Issue 1041830: Improve colors for breakpoints"
+[crbug1050855]: https://crbug.com/1050855 "Issue 1050855: Settings view is difficult to discover"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP and COEP explained - Cross-Origin Opener Policy"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP and COEP explained - Cross-Origin Embedder Policy"  
 
-[LighthouseRepo]: https://github.com/GoogleChrome/lighthouse "Lighthouse GitHub repo"  
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse GitHub repo"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
