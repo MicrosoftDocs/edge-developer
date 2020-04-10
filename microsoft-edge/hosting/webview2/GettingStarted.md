@@ -119,7 +119,7 @@ Press F5 to build and run the app. Now you have a WebView window displaying Bing
 
 ## Step 4 - Navigation events
 
-We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](reference/ICoreWebView2.md#navigation-events) to learn more.
+We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](reference/win32/0.8.355/ICoreWebView2.md#navigation-events) to learn more.
 
 ![navigationEvents](images/navigationEvents.PNG)
 
