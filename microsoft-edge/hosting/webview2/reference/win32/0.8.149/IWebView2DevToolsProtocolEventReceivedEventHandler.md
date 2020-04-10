@@ -13,7 +13,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 # interface IWebView2DevToolsProtocolEventReceivedEventHandler 
 
 > [!NOTE]
-> This interface may be altered or unavailable for releases after SDK version 0.8.355. Please refer to [WebView2 API browser](../../../reference-webview2.md) for the latest API reference.
+> This interface may be altered or unavailable for releases after SDK version 0.8.355. Please refer to [WebView2 API browser](../../../webview2-api-browser.md) for the latest API reference.
 
 ```
 interface IWebView2DevToolsProtocolEventReceivedEventHandler
