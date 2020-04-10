@@ -21,29 +21,17 @@ Here are some best practices, code samples, and further resources for you to lea
 ''
 ## Accessibility in Microsoft Edge
 
-In Microsoft Edge, we transitioned from the [Microsoft Active Accessibility](https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx) (MSAA) API to the more modern [UI Automation](https://msdn.microsoft.com/library/windows/desktop/ee684009.aspx) (UIA) API, alongside enormous complementary investments in rearchitecting our DOM implementation and rewriting the browser interface from scratch. The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10. Because EdgeHTML helps to power the Universal Windows Apps platform of Windows 10, these benefits will have an impact beyond the browser. Users will also benefit from the evergreen nature of the EdgeHTML engine. 
+In Microsoft Edge, we introduced modern [UI Automation](https://msdn.microsoft.com/library/windows/desktop/ee684009.aspx) (UIA) API. The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10. Users will also benefit from the evergreen nature of the Chromium engine. 
 
-The new accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3. The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation later:
+The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3. The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation later:
 
 ![Flowchart showing the simplified browser pipeline. Figure 1. Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation.](./media/accessibilityArchitecture.png)
 
-Check out the blog post [Building ' more accessible web platform](https://blogs.windows.com/msedgedev/2016/04/20/building-a-more-accessible-web-platform/) for more information on the accessible architecture in Microsoft Edge.  Also visit [Building a more accessible user experience with HTML5 and UIA](https://blogs.windows.com/msedgedev/2016/05/12/accessible-ux-with-html5-and-uia/) for concrete examples of how the new architecture improves the end user's experience, and specifically how markup defines the experience of navigating with assistive technologies like screen readers.
-
-The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility. For more information on new accessibility features in Microsoft Edge, see [New in Microsoft Edge](#new-in-microsoft-edge).
-
-
-## New in Microsoft Edge
-EdgeHTML 17 now includes support for roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://w3.org/TR/wai-aria-1.1/) specification, including [banner](https://w3.org/TR/wai-aria-1.1/#banner), [complementary](https://w3.org/TR/wai-aria-1.1/#complementary), [aria-haspopup](https://w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](https://w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more. 
+The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility. 
 
 For information on which new HTML5 features are accessibly supported by Microsoft Edge, visit [HTML5Accessibility](https://html5accessibility.com).  
 
 ## Resources
-
-#### [Accessibility: Towards a more inclusive web with Microsoft Edge and Windows 10](https://blogs.windows.com/msedgedev/2015/09/25/accessibility-towards-a-more-inclusive-web-with-microsoft-edge-and-windows-10/)
-A blog post on Microsoft's commitment to accessibility as a core part of software design.
-
-#### [Building a more accessible web platform](https://blogs.windows.com/msedgedev/2016/04/20/building-a-more-accessible-web-platform/)''
-A blog post on accessibility improvements in Microsoft Edge.
 
 #### [Microsoft Windows UI Automation Blog](https://blogs.msdn.microsoft.com/winuiautomation/)
 The Microsoft Windows UI Automation blog covers topics related to the Windows Automation API.
