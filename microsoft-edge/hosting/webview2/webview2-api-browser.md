@@ -16,4 +16,4 @@ Welcome to the Microsoft Edge WebViewe2 API browser. Start with selecting the la
 
 ## Language
 
-*   [Win32 C++](reference/win32/0.8.355-reference-webview2.md)  
+*   [Win32 C++](reference/win32/0.8.430-reference-webview2.md)  
