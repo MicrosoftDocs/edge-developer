@@ -23,7 +23,7 @@ With [Progressive Web Apps][MDNApps] (or simply *PWA*s) you do not have to decid
     :::column:::
         ![Installable icon][ImageIPackage]
         ### [Installable][MDNPwaAdvantagesInstallable]
-        Pin and launch from the home screen/Start Menu
+        Pin and launch from the home screen, Start Menu, Taskbar, etc.
     :::column-end:::
     :::column:::
         ![Re-engageable icon][ImageIPushNotification]
