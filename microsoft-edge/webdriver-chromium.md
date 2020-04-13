@@ -75,7 +75,7 @@ static void Main(string[] args)
 
 By default, Selenium 3 drives the old Microsoft Edge \(EdgeHTML\).  The [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] extends [Selenium 3][SeleniumHQ] with a unified driver to help you write automated tests for both the Microsoft Edge \(EdgeHTML\) and new Microsoft Edge \(Chromium\) browsers.  
 
-The `EdgeDriver` and `EdgeDriverService` classes included in the package are 100% backward-compatible with the built-in `EdgeDriver` in Selenium, and run Microsoft Edge \(EdgeHTML\) by default so you are able to use the provided classes as a seamless drop-in replacement.  In addition compatibility with your existing Selenium tests, [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] has the ability to drive the new Microsoft Edge \(Chromium\) browser and unlock all of the latest functionality!  
+The `EdgeDriver` and `EdgeDriverService` classes included in the package are 100% backward-compatible with the built-in `EdgeDriver` in Selenium, and run Microsoft Edge \(EdgeHTML\) by default so you are able to use the provided classes as a seamless drop-in replacement.  In addition to compatibility with your existing Selenium tests, [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] has the ability to drive the new Microsoft Edge \(Chromium\) browser and unlock all of the latest functionality!  
 
 The classes in the package are based on the existing `Edge.*` and `Chrome.*` driver classes included in the [Selenium][GithubSeleniumHq] project.  
 
@@ -138,11 +138,12 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 > [!NOTE]
 > You do not need to provide the `EdgeOptions` object when passing the `EdgeDriver` instance the `EdgeDriverService`.  `EdgeDriver` uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) depending on what kind of service you provide.  
+> 
 > However, if you want to provide both an `EdgeDriverService` and `EdgeOptions`, you must ensure that both are configured for the same version of Microsoft Edge.  For example, it is not possible to use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` and Chromium properties in `EdgeOptions`.  It throws an error.  
 
 #### Using Chromium-Specific Options  
 
-Using `EdgeOptions` with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available on the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code.  
+Using `EdgeOptions` with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available in the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code.  
 
 ```csharp
 var options = new EdgeOptions();
@@ -152,7 +153,7 @@ options.AddArgument("disable-gpu");
 ```  
 
 > [!NOTE]
-> These [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] are always available but have no effect if the `UseChromium` property is not set to `true` .  Similarly, existing properties and methods meant for Microsoft Edge \(EdgeHTML\) has no effect if `UseChromium` is set to `true`.  
+> These [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] are always available but have no effect if the `UseChromium` property is not set to `true`.  Similarly, existing properties and methods meant for Microsoft Edge \(EdgeHTML\) have no effect if `UseChromium` is set to `true`.  
 
 ## Other ways to set up WebDriver  
 
