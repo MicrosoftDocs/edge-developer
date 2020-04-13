@@ -59,11 +59,11 @@ With [Progressive Web Apps][MDNApps] (or simply *PWA*s) you do not have to decid
     :::column-end:::
 :::row-end:::
 
-By building or converting your existing site to a PWA, you can better engage your existing audience with push notifications, app like integration and offline support.  At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.  Best of all, you can update your app by simply updating your web server code.  
+By building or converting your existing site to a PWA, you can better engage your existing audience with push notifications, app-like integration and offline support.  At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing.  Best of all, you can update your app by simply updating your web server code.  
 
 ## PWAs on Microsoft Edge (Chromium)  
 
-When you build a *Progressive Web App* targeting web standard APIs, your application can be deployed across platforms and devices and take advantage of the device specific capabilities as available.  PWAs in Microsoft Edge (Chromium) are completely standards based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store based deployment or registration.  Desktop PWAs are supported on any of the platforms Microsoft Edge (Chromium) is available, including Windows 7, Windows 10 and Mac OS.  Other benefits include:  
+When you build a *Progressive Web App* targeting web standard APIs, your application can be deployed across platforms and devices and take advantage of the device specific capabilities as available.  PWAs in Microsoft Edge (Chromium) are completely standards-based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store-based deployment or registration.  Desktop PWAs are supported on any of the platforms Microsoft Edge (Chromium) is available, including Windows 7, Windows 10, and Mac OS.  Other benefits include:  
 
 *   Applications can be installed directly from within the browser via the "Install" icon in the navigation bar.  
     
@@ -75,27 +75,27 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
 
 *   Web Notifications are integrated into the Windows notification system
 *   Shared cookie store with the browser profile that installed the app
-*   Access to other browser features via the "..." menu including certificate validation, site permissions, tracking protection and browser extensions
+*   Access to other browser features via the "…" menu including certificate validation, site permissions, tracking protection, and browser extensions
 *   Full access to Microsoft [Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app  
 
 > [!IMPORTANT]
-> To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here:  [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlIndex].  You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.  
+> To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here:  [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlIndex].  There, you can learn  more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
 ## Requirements  
 
 To run as a PWA, your server-hosted web app will at minimum require:  
 
-*   [x]   [**HTTPS**][WikiHttps].  Protect your users by providing a secure connection for server/app communication.  Service workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes).  
+*   [x]   [**HTTPS**][WikiHttps].  Protect your users by providing a secure connection for server/app communication.  Service Workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes).  
   
-*   [x]   [**Service workers**][MDNServiceWorkerApi].  Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  
+*   [x]   [**Service Workers**][MDNServiceWorkerApi].  Use *Service Worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  
 
-*   [x]   [**Web app manifest**][MDNWebAppManifest].  Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience.  
+*   [x]   [**Web App Manifest**][MDNWebAppManifest].  Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience.  
 
 To be a *great* PWA, your app will also need:  
 
 *   [x]   [**Cross-browser compatibility**][MDNCrossBrowserTesting].  Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  
   
-*   [x]   [**Responsive design**][WikiResponsiveWebDesign].  Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout] and/or [flexbox][MDNCssFlexibleBoxLayout], [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use device [emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  
+*   [x]   [**Responsive design**][WikiResponsiveWebDesign].  Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout] and/or [flexbox][MDNCssFlexibleBoxLayout], [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  
   
 *   [x]   [**Deep linking**][WikiDeepLinking].  Route each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.  
 
@@ -109,7 +109,7 @@ If you'd like to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore]
 
 Browser engine support for *Progressive Web Apps* calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  
 
-For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform itself has full support for these features that will work across devices where Microsoft Edge (Chromium) browser is supported.  Microsoft Edge (Chromium) is currently in it's final beta with a generally available stable release planned for January 2020 with broad distribution following.  [More information on Microsoft Edge availability][MicrosoftEdge].  
+For Microsoft Edge (Chromium), the browser platform itself has full support for these features that will work across devices where Microsoft Edge (Chromium) is supported.
 
 <!-- image links -->  
 
