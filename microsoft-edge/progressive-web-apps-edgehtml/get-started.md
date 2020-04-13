@@ -20,7 +20,7 @@ This guide will give you an overview of PWA basics by building a simple *localho
 
 ## Prerequisites  
 
-You can build PWAs with any web development IDE.  The following are only prerequisites for this guide, which will walk you through PWA tooling support in the Windows developer ecosystem.  
+You can build PWAs with any text editor or web development IDE.  The following are only prerequisites for this guide, which will walk you through PWA tooling support in the Windows developer ecosystem.  
 
 *   Download the \(free\) [Visual Studio Community 2017][VisualStudioDownloads].  You can also use the *Professional*, *Enterprise*, or [*Preview*][VisualStudioPreview] editions.  From the *Visual Studio Installer*, choose the following Workloads:  
     
@@ -42,13 +42,13 @@ For the sake of simplicity, we'll use the Visual Studio [Node.js and Express app
 
 ## Turn your app into a PWA  
 
-Now its time to wire up the basic [PWA requirements][PwaEdgehtmlIndexRequirements] for your web app: a *Web App Manifest*, *HTTPS* and *Service Workers*.  
+Now it's time to wire up the basic [PWA requirements][PwaEdgehtmlIndexRequirements] for your web app: a *Web App Manifest*, *HTTPS* and *Service Workers*.  
 
 ### Web App Manifest  
 
-A [*Web App Manifest*][MDNWebAppManifest] is a JSON metadata file describing your app, including its name, author, entry page URL, and icon\(s\).  Because it follows a [standards-based schema][W3cWebAppManifest], you need only supply a single web app manifest for your PWA to be installable on any platform / OS / device that supports PWAs.  In the Windows ecosystem, your web app manifest signals to the Bing web indexer that your PWA is a candidate for [automatic inclusion in the Microsoft Store][PwaEdgehtmlMicrosoftStore], where it can reach nearly 700 million active monthly users as a Windows 10 app.  
+A [*Web App Manifest*][MDNWebAppManifest] is a JSON metadata file describing your app, including its name, author, entry page URL, and icon\(s\).  Because it follows a [standards-based schema][W3cWebAppManifest], you need only supply a single Web App Manifest for your PWA to be installable on any platform / OS / device that supports PWAs.  In the Windows ecosystem, your Web App Manifest signals to the Bing web indexer that your PWA is a candidate for [automatic inclusion in the Microsoft Store][PwaEdgehtmlMicrosoftStore], where it can reach nearly 700 million active monthly users as a Windows 10 app.  
 
-If this were an existing live site, you could quickly generate a web app manifest using [PWA Builder][PwaBuilder].  Since its still an unpublished project, we'll copy in a sample manifest.  
+If this were an existing live site, you could quickly generate a Web App Manifest using [PWA Builder][PwaBuilder].  Since it's still an unpublished project, we'll copy in a sample manifest.  
 
 1.  In the Visual Studio *Solution Explorer*, right-click the *public* folder and select **Add** > **New File...**, specifying `manifest.json` as the item name.  
 1.  In the *manifest.json* file, copy in the following boilerplate:  
@@ -72,9 +72,9 @@ If this were an existing live site, you could quickly generate a web app manifes
     }
     ```  
     
-    If this were a real PWA, you'd obviously want to customize at least the *name*, *start_url*, *short_name*, and *description*, as well as the *icons* \(we'll get to those next...\).  
+    If this were a real PWA, you'd obviously want to customize at least the *name*, *start_url*, *short_name*, and *description*, as well as the *icons* \(we'll get to those next…\).  
     
-    See the [Web App Manifest][MDNWebAppManifest] reference on *MDN web docs* to learn more about the different member values and their purpose.  
+    See the [Web App Manifest reference on *MDN web docs*][MDNWebAppManifest] to learn more about the different member values and their purposes.  
     
 1.  Next, let's fill in the empty `icons` array with actual image paths.  For that, we'll use PWA Builder's *App Image Generator*.  
     
@@ -85,7 +85,7 @@ If this were an existing live site, you could quickly generate a web app manifes
     1.  Copy all of the platform folders \(*android*, *chrome*, ...  *windows10*\) from your extracted zip to the *images* folder and close the file explorer window.  Add these folders to your Visual Studio project \(in *Solution Explorer*, right-click *images* folder and select **Add** > **Existing folder...** for each of the folders\).  
     1.  Open \(with Visual Studio or any editor\) the *icons.json* file from the extracted zip and copy the `"icons": [...]` array into your project's *manifest.json* file.  
 
-1.  Now we just need to associate our web app manifest with the app itself.  Open the *layout.pug* file \(in *views* folder\) for editing, and add this line right after the stylesheet link.  \(Its simply Node's [pug][PugAttributes] template shorthand for `<link rel='manifest' href='/manifest.json'>`\).  
+1.  Now we just need to associate our Web App Manifest with the app itself.  Open the *layout.pug* file \(in *views* folder\) for editing, and add this line right after the stylesheet link.  \(Its simply Node's [pug][PugAttributes] template shorthand for `<link rel="manifest" href="/manifest.json">`\).  
     
     ```html
     link(rel='manifest', href='/manifest.json')
@@ -93,7 +93,7 @@ If this were an existing live site, you could quickly generate a web app manifes
     
 With all that in place, your web app is now serving up a manifest and homescreen-ready app icons!  Try running your app \(`F5`\) and loading up the manifest:  
 
-![Web app manifest loading from localhost][ImageVsNodejsExpressManifest]  
+![Web App Manifest loading from localhost][ImageVsNodejsExpressManifest]  
 
 And one of your icons:  
 
@@ -109,7 +109,7 @@ If you publish the app live \(with an actual `start_url`\), the Bing search engi
 
 ### HTTPS  
 
-[Service Workers][MDNServiceWorkerApi] and other key PWA technologies that work with service workers \(such as the [Cache][MDNCache], [Push][MDNPushApi], and [Background Sync][MDNSyncManager] APIs\) only work across secure connections, which means [*HTTPS*][WikiHttps] for live sites or *localhost* for  debugging purposes.  
+[Service Workers][MDNServiceWorkerApi] and other key PWA technologies that work with Service Workers \(such as the [Cache][MDNCache], [Push][MDNPushApi], and [Background Sync][MDNSyncManager] APIs\) only work across secure connections, which means [*HTTPS*][WikiHttps] for live sites or *localhost* for debugging purposes.  
 
 If you were to [publish this web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService] \(for example, by setting up an [*Azure free account*][AzureCreateFreeAccount]\), you'll want to ensure your server is configured for HTTPS.  If you're using the [Microsoft Azure App Service][AzureWebApps] to host your site, it will be served over HTTPS by default.  
 
@@ -117,15 +117,15 @@ For this guide we'll continue using *http://localhost* as a placeholder for a li
 
 ### Service Workers  
 
-*Service Workers* is the key technology behind PWAs.  They act as a proxy between your PWA and the network, enabling your website to act as an installed native app: serving up offline scenarios, responding to server push notifications, and running background tasks.  Service workers also open up all kinds of new performance strategies; and website need not even be full-blown web app to take advantage of the service worker cache for fine-tuned page load performance.  
+*Service Workers* are a key technology behind PWAs. Amon other things, they can act as a proxy between your PWA and the network, enabling your website to behave more like a native app: serving up offline scenarios, responding to server push notifications, and running background tasks.  Service Workers also open up all kinds of new performance strategies; and websites need not even be a full-blown web app to take advantage of the Service Worker and the Cache API for fine-tuned page load performance improvements.
 
-Service workers are event-driven background threads that run from javascript files served up alongside the regular scripts that power your web app.  Because they don't run on the main UI thread, service workers don't have DOM access, though the [UI thread][MDNWorkerPrototypePostMessage] and a [worker thread][MDNDedicatedWorkerGlobalScopePostMessage] can communicate using `postMessage()` and `onmessage` event handlers.  
+Service Workers run on an event-driven background thread and—like other [Web Workers][MDNWebWorkers]—are defined in a JavaScript file served up alongside the other scripts that power your web app.  Because they don't run on the main UI thread, Service Workers don't have DOM access, though the [UI thread][MDNWorkerPrototypePostMessage] and a [worker thread][MDNDedicatedWorkerGlobalScopePostMessage] can communicate using `postMessage()` and the `onmessage` event handler.  
 
-You associate a service worker with your app by *registering* it to your site's URL origin \(or a specified path within it\).  Once registered, the service worker file is then *downloaded*, *installed*, and *activated* on the client machine.  For more, *MDN web docs* has a comprehensive guide on [Using Service Workers][MDNUsingServiceWorkers] and a detailed [Service Worker API][MDNServiceWorkerApi] reference.  
+You associate a Service Worker with your app by *registering* it to your site's URL origin \(or a specified path within it\).  Once registered, the Service Worker file is then *downloaded*, *installed*, and *activated* on the client machine.  For more, *MDN web docs* has a comprehensive guide on [Using Service Workers][MDNUsingServiceWorkers] and a detailed [Service Worker API][MDNServiceWorkerApi] reference.  
 
-For this tutorial, we'll use a ready-made "Offline page" service worker script courtesy of [PWA Builder][PwaBuilderServiceWorker].  From this, you can go on to customize it with more elaborate functionality according to your needs for performance, network bandwidth, and so on.  Check out Mozilla's [Service Worker Cookbook][ServiceWorkerCookbook] for a number of useful service worker caching "recipe" ideas.  
+For this tutorial, we'll use a ready-made "Offline page" Service Worker script courtesy of [PWA Builder][PwaBuilderServiceWorker].  From this, you can go on to customize it with more elaborate functionality according to your needs for performance, network bandwidth, and so on.  Check out Mozilla's [Service Worker Cookbook][ServiceWorkerCookbook] for a number of useful service worker caching "recipe" ideas.  
 
-1.  Open [https://www.pwabuilder.com/serviceworker][PwaBuilderServiceWorker] and select the \(default\) **Offline page** service worker and click the **Download service worker** button.  
+1.  Open [https://www.pwabuilder.com/serviceworker][PwaBuilderServiceWorker] and select the \(default\) **Offline page** Service Worker and click the **Download service worker** button.  
 1.  Open the download folder and copy these two files:  
 
     *   ServiceWorker1\pwabuilder-sw-register.js  
@@ -133,7 +133,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
     
     ...  to the *public* folder of your Visual Studio web app project.  \(From Visual Studio, use Ctrl+O to open file explorer to your project and navigate to the *public* folder\).  
     
-    Its worth reviewing the code in both of these files, to get the gist of how to register a service worker that caches a designated page \(*offline.html*\) and serves it when a network fetch fails.  Next, we need to create a simple "offline.html" page as a placeholder for our app's offline functionality.  
+    Its worth reviewing the code in both of these files, to get the gist of how to register a Service Worker that caches a designated page \(*offline.html*\) and serves it when a network fetch fails.  Next, we need to create a simple "offline.html" page as a placeholder for our app's offline functionality.  
     
 1.  In *Solution Explorer*, open the *views/layout.pug* file, and add the following line below your link tags:  
     
@@ -141,7 +141,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
     script(src='/pwabuilder-sw-register.js')
     ```  
     
-    So that your site will load and run your service worker registration script.  
+    So that your site will load and run your Service Worker registration script.  
     
 1.  In *Solution Explorer*, right-click on the *public* folder and select **Add** > **New File...**.  Name it **offline.html**, and add a `<title>` and some body content, for example:  
     
@@ -184,7 +184,7 @@ For this tutorial, we'll use a ready-made "Offline page" service worker script c
         
         ![Edge DevTools service worker Cache][ImageDevtoolsSwCache]  
         
-1.  Time to try your PWA as an offline app!  In Visual Studio, **Stop Debugging** \(`Shift`+`F5`\) your web app, then open Microsoft Edge \(or refresh\) to your website's localhost address.  It should now load the *offline.html* page \(thanks to your service worker and offline cache\)!  
+1.  Time to try your PWA as an offline app!  In Visual Studio, **Stop Debugging** \(`Shift`+`F5`\) your web app, then open Microsoft Edge \(or refresh\) to your website's localhost address.  It should now load the *offline.html* page \(thanks to your Service Worker and offline cache\)!  
     
     ![offline.html from http://localhost:1337 loaded in Microsoft Edge][ImageOfflineHtml]  
 
@@ -276,7 +276,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     
 1.  **Subscribe to push notifications.**  
     
-    As part of their role as PWA network proxies, service workers handle push events and toast notification interactions.  However, as it is with first setting up \(or *registering*\) a service worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity.  Subscribing to push notifications requires an active service worker registration, so you'll first want to check that your service worker is installed and *active* before trying to subscribe it to push notifications.  
+    As part of their role as PWA network proxies, Service Workers handle push events and toast notification interactions.  However, as it is with first setting up \(or *registering*\) a Service Worker, subscribing the PWA to server push notifications happens on the PWA's main UI thread and requires network connectivity.  Subscribing to push notifications requires an active service worker registration, so you'll first want to check that your service worker is installed and *active* before trying to subscribe it to push notifications.  
     
     Before a new push subscription is created, Microsoft Edge will check whether the user granted the PWA permission to receive notifications.  If not, the user will be prompted by the browser for permission.  If the permission is *denied*, the call to *registration.pushManager.subscribe* will throw a DOMException, so you'll want to handle that.  For more on permission management, see [*Push Notifications in Microsoft Edge*][WindowsBlogsWebNotificationsEdge].  
     
@@ -355,7 +355,7 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     
 1.  **Set up push and notificationclick event handlers.**  
     
-    With our push subscription set up, the remainder of the work happens in the service worker.  First we need to set up a handler for server-sent push events, and respond with a toast notification \(if permission was granted\) displaying the push data payload.  Next we'll add a click handler for the toast to dismiss the notification and sort through a list of currently open windows to open and/or focus the intended PWA client page.  
+    With our push subscription set up, the remainder of the work happens in the Service Worker.  First we need to set up a handler for server-sent push events, and respond with a toast notification \(if permission was granted\) displaying the push data payload.  Next we'll add a click handler for the toast to dismiss the notification and sort through a list of currently open windows to open and/or focus the intended PWA client page.  
     
     In your *pwabuilder-sw.js* file, append the following handlers:  
     
@@ -397,9 +397,9 @@ The following is adapted from the *Push Rich Demo* in Mozilla's [Service Worker 
     
     Time to test push notifications in your PWA!  
     
-    1.  Run \(`F5`\) your PWA in the browser.  Because we modified the service worker code \(*pwabuilder-sw.js*\), we'll need to open the DevTools Debugger \(`F12`\) to the **Service Worker Overview** panel and **Unregister** the service worker and reload \(`F5`\) the page to re-register it \(or you can simply click **Update**\).  In a production scenario, the browser will check regularly check for service worker updates and install them in the background.  We're just forcing it here for immediate results.  
+    1.  Run \(`F5`\) your PWA in the browser.  Because we modified the Service Worker code \(*pwabuilder-sw.js*\), we'll need to open the DevTools Debugger \(`F12`\) to the **Service Worker Overview** panel and **Unregister** the service worker and reload \(`F5`\) the page to re-register it \(or you can simply click **Update**\).  In a production scenario, the browser will check regularly check for Service Worker updates and install them in the background.  We're just forcing it here for immediate results.  
         
-        As your service worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:  
+        As your Service Worker activates and attempts to subscribe your PWA to push notifications, you'll see a permission dialog at the bottom of the page:  
         
         ![Permission dialog for enabling notifications][ImageNotificationPermission]  
         
@@ -509,7 +509,9 @@ Also be sure to explore the great resources from around the dev community!  [MDN
 
 [W3cWebAppManifest]: https://www.w3.org/TR/appmanifest "Web App Manifest | W3C"  
 
-[Webhint]: https://sonarwhal.com "webhint, the hinting engine for web best practices"  
+[Webhint]: https://sonarwhal.com "webhint, the hinting engine for web best practices" 
+ 
+[MDNWebWorkers]: https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers "Using Web Workers" 
 
 [WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Progressive Web Apps | web.dev"  
 
