@@ -225,7 +225,7 @@
 ##### [ICoreWebView2WindowCloseRequestedEventHandler](webview2/reference/win32/0.9.430/ICoreWebView2WindowCloseRequestedEventHandler.md)
 ##### [ICoreWebView2ZoomFactorChangedEventHandler](webview2/reference/win32/0.9.430/ICoreWebView2ZoomFactorChangedEventHandler.md)
 #### Archived
-##### [0.9.430 - Reference (WebView2)](webview2/reference/win32/0.8.190-reference-webview2.md)
+##### [0.8.355 - Reference (WebView2)](webview2/reference/win32/0.8.190-reference-webview2.md)
 ###### [IWebView2Deferral](webview2/reference/win32/0.8.190/IWebView2Deferral.md)
 ###### [IWebView2Environment](webview2/reference/win32/0.8.190/IWebView2Environment.md)
 ###### [IWebView2Environment2](webview2/reference/win32/0.8.190/IWebView2Environment2.md)
