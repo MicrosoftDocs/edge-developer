@@ -210,7 +210,7 @@ Microsoft Edge offers a simplified experience with the integration of Internet E
 
 Microsoft Edge downloads the list of sites from a location defined by the admin through a policy, and caches the file to determine which sites need to be opened in IE mode.  Depending on your Windows or IE 11 settings, Microsoft Edge collects diagnostic data about the use of IE mode, such as which sites users go to, performance data, reliability data, and feature usage data.  On Windows 10, this diagnostic data is collected according to your Windows Diagnostic data setting.  On Windows 8.1, website info is collected if the user has opted in to the Flip Ahead or Suggested Sites feature in IE.  IE mode may not follow the same data collection toggles in the Microsoft Edge Privacy and services settings.  
 
-If your administrator turned on Enterprise Site Discovery, browsing history data is collected to help administrators review the sites that users visit periodically and ensure that any system upgrades continue to support those sites.  [Learn more](https://go.microsoft.com/fwlink/?linkid=2114123) 
+If your administrator turned on Enterprise Site Discovery, browsing history data is collected to help administrators review the sites that users visit periodically and ensure that any system upgrades continue to support those sites.  To learn more, see [Collect Data Using Enterprise Site Discovery](/internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery).   
 
 Internet Explorer browsing is stored locally in Microsoft Edge and Internet Explorer.  This data can be cleared from Clear browsing data and Clear browsing data for Internet Explorer in **edge://settings/privacy**.  
 
