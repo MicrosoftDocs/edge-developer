@@ -124,7 +124,7 @@ All DRM and content protections can be turned off by going to **edge://settings/
 
 ## Do Not Track
 
-When you turn on **Send "Do Not Track" requests** in **edge://settings/privacy**, Microsoft Edge will send a DNT:1 HTTP header with your outgoing HTTP, HTTPS and SPDY browsing traffic requests to websites you visit to request that they not use trackers.  However, turning on **Send "Do Not Track" requests** doesn't guarantee that websites won't track you.  Some sites might honor this request by showing you ads not based on any previous browsing.  Microsoft Edge does not have control if this request will be honored or not.  To help prevent websites from tracking you, change your **Tracking prevention** settings in **edge://settings/privacy** to **Balanced** or **Strict**.  
+When you turn on the **Send "Do Not Track" requests** setting in `edge://settings/privacy`, Microsoft Edge sends a DNT:1 HTTP header with your outgoing HTTP, HTTPS, and SPDY browsing traffic requests to websites you visit to request that the sites not use trackers.  However, turning on the **Send "Do Not Track" requests** setting doesn't guarantee that websites are not tracking you.  Some sites may honor the request by showing you ads not based on any previous browsing.  Microsoft Edge does not have control if this request is honored or not.  To help prevent websites from tracking you, change your **Tracking prevention** settings in `edge://settings/privacy` to **Balanced** or **Strict**.  
 
 When you use guest mode, Microsoft Edge does not send "Do Not Track" requests.  When you use InPrivate browsing, Microsoft Edge sends only  "Do Not Track" requests if the **Send "Do Not Track" requests** setting is turned on for the profile you're using.  
 
