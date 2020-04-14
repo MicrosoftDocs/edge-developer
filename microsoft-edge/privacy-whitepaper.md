@@ -190,7 +190,7 @@ Microsoft Edge offers an interactive and seamless experience when you launch the
 
 When importing your extensions from a different browser such as Google Chrome, The Microsoft Edge imports a local copy and asks for permission before it is turned on.  The permissions for some of the extensions may have changed.  To review the extension permissions, go to `edge://extensions`.  
 
-You can choose to import data from another browser at any time by going to **edge://settings/importData**.
+You may choose to import data from another browser at any time by going to `edge://settings/importData`.
 
 ## Install and update
 
