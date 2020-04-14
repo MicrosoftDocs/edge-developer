@@ -37,7 +37,7 @@ If you search for a single word in the address box, Microsoft Edge may send this
 
 You may turn off the **Show me search and site suggestions using my typed characters** setting and change your default search engine from `edge://settings/search`.  While browsing InPrivate or in Guest mode, autosuggestions are turned off.  InPrivate shows suggestions from your local browsing such as browsing history or past searches, but no typed characters are sent to your default search engine.  Guest mode does not display any suggestions or send typed characters to your default search engine.
 
-Data collected by other search providers follow their company's privacy policy.  
+Data collected by other search providers follow the privacy policy of the company.  
 
 ## Autofill
 
