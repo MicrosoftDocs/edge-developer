@@ -289,7 +289,7 @@ You can modify your interests or opt out of personalized ads from the [Microsoft
 
 ## Print
 
-Microsoft Edge lets you print webpages, PDF files, or other content using a variety of devices and applications.  When you print to a printer, application, or PDF, Microsoft Edge sends the commands and file info to your device's operating system.  This info is not sent to Microsoft, and all data sent to your device's operating system for printing is deleted immediately after printing is completed or canceled.  To change your printing destination, go to **edge://settings/printing**.  
+Microsoft Edge lets you print webpages, PDF files, or other content using a variety of devices and applications.  When you print to a printer, application, or PDF, Microsoft Edge sends the commands and file info to the operating system of your device.  This info is not sent to Microsoft, and all data sent to the operating system of your device for printing is deleted immediately after printing is completed or canceled.  To change your printing destination, go to `edge://settings/printing`.  
 
 You may also print webpages and files to PDF format using Microsoft Print to PDF, which does not send any data about the file back to Microsoft.  Any annotations made to the PDF file are only saved locally to the file.  
 
