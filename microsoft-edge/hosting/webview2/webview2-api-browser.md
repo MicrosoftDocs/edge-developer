@@ -10,10 +10,12 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# WebView2 API browser
+# WebView2 API reference
 
-Welcome to the Microsoft Edge WebViewe2 API browser. Start with selecting the language you would like to work with.
+The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge \(Chromium\)](https://www.microsoftedgeinsider.com) as the rendering engine.  See [WebView2](../../../webview2.md) for an overview and [Getting Started](../../GettingStarted.md) for a quick start.
 
-## Language
+Select the framework of WebView2 you would like to use below:
+
+## Frameworks
 
 *   [Win32 C++](reference/win32/0.9.430-reference-webview2.md)  

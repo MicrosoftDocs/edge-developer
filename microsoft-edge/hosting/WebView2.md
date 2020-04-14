@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/20/2020
+ms.date: 04/13/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,7 +22,7 @@ A developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windo
 
 ## Getting Started
 
-To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](webview2/gettingstarted.md) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [WebView2 API browser](webview2/webview2-api-browser.md) to learn about the API, and [Release Notes](webview2/releasenotes.md) for changes made between releases.
+To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](webview2/gettingstarted.md) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [WebView2 API reference](webview2/webview2-api-reference.md) to learn about the API, and [Release Notes](webview2/releasenotes.md) for changes made between releases.
 
 ## WebView2 Samples
 
