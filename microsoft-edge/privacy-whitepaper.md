@@ -248,7 +248,7 @@ The new tab page also allows you to add a custom image to be the background.  Th
 
 ### Office 365
 
-If you're signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page.  This feature is currently available only for commercial customers, and is governed under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).  [Learn more about privacy for Office 365](https://docs.microsoft.com/deployoffice/privacy/overview-privacy-controls).
+If you're signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page.  This feature is currently available only for commercial customers, and is governed under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).  To more about privacy for Office 365, see [Overview Of Privacy Controls For Office 365 ProPlus](/deployoffice/privacy/overview-privacy-controls).  
 
 InPrivate browsing and Guest mode offer alternative new tab page experiences.
 
