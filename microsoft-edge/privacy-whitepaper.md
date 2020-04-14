@@ -268,7 +268,7 @@ Microsoft Edge will ask you if you want to store your payment info if payment au
 
 Microsoft Edge supports the PaymentRequest API by letting you pay for purchases with payment info you've saved using autofill.  PaymentRequest API allows the merchant to request the following information: credit card number, credit card expiration, full name, billing address, email address, phone number, and shipping address.  The API tells the merchant that the user has credit card info saved but doesn't share any info with the merchant until you agree.  You can turn off this feature in **edge://settings/privacy**.  
 
-If you've saved payment info to your Microsoft account, it's also available for autofill in the browser.  Payment info stored in your Microsoft account syncs across devices.  If you've made any Xbox or Microsoft Store purchases in the past, you might already have payment info saved to your Microsoft account.  During payment autofill, a card from your Microsoft account is masked and is only fully revealed after two-factor authentication.  This provides additional security while retrieving your payment info.  
+If you saved payment info to your Microsoft account, it is also available for autofill in the browser.  Payment info stored in your Microsoft account syncs across devices.  If you made any Xbox or Microsoft Store purchases in the past, you may already have payment info saved to your Microsoft account.  During payment autofill, a card from your Microsoft account is masked and is only fully revealed after two-factor authentication.  This provides additional security while retrieving your payment info.  
 
 ## Personalizing advertising, search, news and other Microsoft services
 
