@@ -212,7 +212,7 @@ Microsoft Edge downloads the list of sites from a location defined by the admin 
 
 If your administrator turned on Enterprise Site Discovery, browsing history data is collected to help administrators review the sites that users visit periodically and ensure that any system upgrades continue to support those sites.  To learn more, see [Collect Data Using Enterprise Site Discovery](/internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery).   
 
-Internet Explorer browsing is stored locally in Microsoft Edge and Internet Explorer.  This data can be cleared from Clear browsing data and Clear browsing data for Internet Explorer in **edge://settings/privacy**.  
+Internet Explorer browsing is stored locally in Microsoft Edge and Internet Explorer.  This data may be cleared from Clear browsing data and Clear browsing data for Internet Explorer in `edge://settings/privacy`.  
 
 ## Intrusive ads
 
