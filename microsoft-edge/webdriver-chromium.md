@@ -56,8 +56,6 @@ The last component you must download is a language-specific client driver.  The 
 
 Using the binding, the C# snippet below constructs the `EdgeOptions` object and sets the `UseChromium` property to `true`.  The `EdgeOptions.UseChromium` property is used to choose which version of Microsoft Edge to launch and defaults to `false` so you should set it to `true` if you want to drive Microsoft Edge \(Chromium\).  
 
-Additionally, the binding launches the correct `EdgeDriverService` according to the provided `EdgeOptions` object so you do not need to manually create the `EdgeDriverService`.  
-
 ```csharp
 static void Main(string[] args)
 {
