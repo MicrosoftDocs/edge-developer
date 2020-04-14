@@ -180,7 +180,7 @@ If you allow your location to be shared with a site, Microsoft Edge will send lo
 
 A new randomly generated ID is used when making requests to the Microsoft location service.  Microsoft Edge location service does not store your geolocation coordinates for any period of time.  
 
-InPrivate browsing will use the location permission setting of the profile from which the InPrivate session was launched.  Guest mode will always ask you for permission before granting the site your location.
+InPrivate browsing uses the location permission setting of the profile from which the InPrivate session was launched.  Guest mode always asks you for permission before granting the site your location.
 
 ## Import browser data
 
