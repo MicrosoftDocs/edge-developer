@@ -65,21 +65,11 @@ You are also able to open [Settings][OverviewSettings] from the **Main Menu** un
 
 Chromium issue [#1050855][crbug1050855]
 
-### New and improved infobars
-
-Informational notification bars \(infobars\) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.
-
-> ##### Figure 4
-> Infobar for pretty-printing a minified file in Microsoft Edge 83
-> ![Infobar for pretty-printing a minified file in Microsoft Edge 83][ImageInfobar]  
-
-Chromium issue [#1056348][crbug1056348]
-
 ### Navigate the Color Picker with your keyboard  
 
 The [Color Picker][ColorPicker] is a GUI in the [Elements panel][ElementsDoc] for changing `color` and `background-color` declarations.  In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][ColorPicker] with the keyboard.  
 
-> ##### Figure 5  
+> ##### Figure 4  
 > You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][ColorPicker]  
 > ![You are now able to use your keyboard to move the selector in the Shades section of the Color Picker][ImageColorPicker]  
 
@@ -91,13 +81,13 @@ Chromium issue [#963183][crbug963183]
 
 In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][ElementsDoc] was broken by page refreshes.  When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.  
 
-> ##### Figure 6  
+> ##### Figure 5  
 > In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh  
 > ![In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh][ImagePropertiesIn81]  
 
 In Microsoft Edge 83, you are now able to see the properties of the currently-selected element after a page refresh in the **Properties tab**.  
 
-> ##### Figure 7  
+> ##### Figure 6  
 > In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh  
 > ![In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh][ImagePropertiesIn82]  
 
@@ -111,7 +101,7 @@ Open the **Changes tool** by pressing `Ctrl`+`Shift`+`P` in the DevTools to open
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
 
-> ##### Figure 8  
+> ##### Figure 7  
 > In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
 > ![In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool][ImageChanges]  
 
@@ -127,7 +117,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 Open the [Rendering tab][RenderingDoc] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
 
-> ##### Figure 9  
+> ##### Figure 8  
 > Emulating blurred vision  
 > ![Emulating blurred vision][ImageEmulatingBlurredVision]  
 
@@ -165,7 +155,7 @@ DevTools modifies the current default locale, affecting the following:
 - DOM APIs such as `navigator.language` and `navigator.languages`
 - the [`Accept-Language`][MDNAcceptLanguage] HTTP request header
 
-> ##### Figure 10  
+> ##### Figure 9  
 > Emulating a locale  
 > ![Emulating a locale][ImageEmulatingLocales]  
 
@@ -179,13 +169,13 @@ The Network panel now provides [Cross-Origin Opener Policy][COOP] and [Cross-Ori
 
 The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:  
 
-> ##### Figure 11  
+> ##### Figure 10  
 > Blocked requests in the **Status** column  
 > ![Blocked requests in the Status column][ImageNetworkStatus]  
 
 The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:  
 
-> ##### Figure 12  
+> ##### Figure 11  
 > More guidance in the Response Headers section  
 > ![More guidance in the Response Headers section][ImageNetworkGuidance]  
 
@@ -205,7 +195,7 @@ like `cookie-path`.
 
 Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.  
 
-> ##### Figure 13  
+> ##### Figure 12  
 > DevTools docked to the left of the viewport  
 > ![DevTools docked to the left of the viewport][ImageDockToLeft]  
 
@@ -220,7 +210,7 @@ Chromium issue [#1011679][crbug1011679]
 
 The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse][GithubGoogleChromeLighthouse] from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.  
 
-> ##### Figure 14  
+> ##### Figure 13  
 > The Lighthouse panel  
 > ![The Lighthouse panel][ImageLighthouse]  
 
@@ -231,7 +221,7 @@ The DevTools team frequently got feedback from web developers that while it was 
 
 After setting up **Local Overrides** you may right-click a folder and select the new **Delete all overrides** option to delete all Local Overrides in that folder.  
 
-> ##### Figure 15  
+> ##### Figure 14  
 > Delete all overrides  
 > ![Delete all overrides][ImageDeleteOverrides]  
 
@@ -245,7 +235,7 @@ A **Long Task** is JavaScript code that monopolizes the main thread for a long t
 
 You have been able to [visualize Long Tasks in the Performance panel][LongTasksInPerformancePanel] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.  The Long Task portion of a task is now colored with a striped red background.  
 
-> ##### Figure 16  
+> ##### Figure 15  
 > The new Long Task UI  
 > ![The new Long Task UI][ImageLongTask]  
 
@@ -261,7 +251,7 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-> ##### Figure 17  
+> ##### Figure 16  
 > The "Show only the minimum safe area for maskable icons" checkbox  
 > ![The "Show only the minimum safe area for maskable icons" checkbox][ImageMaskableIcons]  
 
@@ -279,7 +269,7 @@ To discuss the new features and changes in this post, or anything else related t
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]  
 *   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
-> ##### Figure 18  
+> ##### Figure 17  
 > The **Feedback** icon in the Microsoft Edge DevTools  
 > ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
@@ -300,21 +290,20 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageRemoteTools]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/remote-tools.msft.png "Figure 1: The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store"  
 [ImageSettingsGearIcon]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/settings.msft.png "Figure 2: The gear icon opens Settings in the DevTools"
 [ImageSettingsMainMenu]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/settings2.msft.png "Figure 3: Main Menu > More Tools > Settings"
-[ImageInfobar]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/infobar.msft.png "Figure 4: Infobar for pretty-printing a minified file in Microsoft Edge 83"
-[ImageColorPicker]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/color-picker.msft.png "Figure 5: You are now able to use your keyboard to move the selector in the Shades section of the Color Picker"  
-[ImagePropertiesIn81]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-81.msft.png "Figure 6: In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh"  
-[ImagePropertiesIn82]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-82.msft.png "Figure 7: In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh"  
-[ImageChanges]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/changes.msft.png "Figure 8: In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool"  
-[ImageEmulatingBlurredVision]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/vision.msft.png "Figure 9: Emulating blurred vision"  
-[ImageEmulatingLocales]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/locale.msft.png "Figure 10: Emulating a locale"
-[ImageNetworkStatus]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/status.msft.png "Figure 11: Blocked requests in the Status column"  
-[ImageNetworkGuidance]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/guidance.msft.png "Figure 12: More guidance in the Response Headers section"  
-[ImageDockToLeft]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/dock-to-left.msft.png "Figure 13: DevTools docked to the left of the viewport"  
-[ImageLighthouse]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/lighthouse.msft.png "Figure 14: The Lighthouse panel"  
-[ImageDeleteOverrides]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/overrides.msft.png "Figure 15: Delete all overrides"  
-[ImageLongTask]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/long-task.msft.png "Figure 16: The new Long Task UI"  
-[ImageMaskableIcons]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/maskable-icons.msft.png "Figure 17: The Show only the minimum safe area for maskable icons checkbox"  
-[ImageFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/feedback-icon.msft.png "Figure 18: The Feedback icon in the Microsoft Edge DevTools"  
+[ImageColorPicker]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/color-picker.msft.png "Figure 4: You are now able to use your keyboard to move the selector in the Shades section of the Color Picker"  
+[ImagePropertiesIn81]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-81.msft.png "Figure 5: In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh"  
+[ImagePropertiesIn82]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/properties-in-82.msft.png "Figure 6: In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh"  
+[ImageChanges]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/changes.msft.png "Figure 7: In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool"  
+[ImageEmulatingBlurredVision]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/vision.msft.png "Figure 8: Emulating blurred vision"  
+[ImageEmulatingLocales]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/locale.msft.png "Figure 9: Emulating a locale"
+[ImageNetworkStatus]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/status.msft.png "Figure 10: Blocked requests in the Status column"  
+[ImageNetworkGuidance]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/guidance.msft.png "Figure 11: More guidance in the Response Headers section"  
+[ImageDockToLeft]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/dock-to-left.msft.png "Figure 12: DevTools docked to the left of the viewport"  
+[ImageLighthouse]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/lighthouse.msft.png "Figure 13: The Lighthouse panel"  
+[ImageDeleteOverrides]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/overrides.msft.png "Figure 14: Delete all overrides"  
+[ImageLongTask]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/long-task.msft.png "Figure 15: The new Long Task UI"  
+[ImageMaskableIcons]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/maskable-icons.msft.png "Figure 16: The Show only the minimum safe area for maskable icons checkbox"  
+[ImageFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/feedback-icon.msft.png "Figure 17: The Feedback icon in the Microsoft Edge DevTools"  
 
 [ImageLineOfCodeBreakpoint]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/breakpoint.msft.png
 [ImageLogpoint]: /microsoft-edge/devtools-guide-chromium/whats-new/images/2020/03/logpoint.msft.png
@@ -362,7 +351,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [crbug1051822]: https://crbug.com/1051822 "Issue 1051822: DevTools: add UI to emulate locale"
 [crbug1041830]: https://crbug.com/1041830 "Issue 1041830: Improve colors for breakpoints"
 [crbug1050855]: https://crbug.com/1050855 "Issue 1050855: Settings view is difficult to discover"
-[crbug1056348]: https://crbug.com/1056348 "Issue 1056348: Infobar Component Refresh"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP and COEP explained - Cross-Origin Opener Policy"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP and COEP explained - Cross-Origin Embedder Policy"  
