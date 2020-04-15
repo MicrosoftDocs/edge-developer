@@ -14,6 +14,35 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
+## X.X.XXX
+
+[NuGet package][WebView2NuGetGalleryX.X.XXX] | minimum Microsoft Edge version XX.X.XXX.X.
+
+**Re-compile your app after updating the NuGet package.** 
+
+*   **Announcement:** We are developeing a new [WebView2 Runtime]() component that will enable Evergreen WebView2 applications to work on end user devices regardless of the presence of the new Microsoft Edge Browser. For the time being, WebView2 will no longer support the stable Edge Channel. 
+*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs and a stable release package with public APIs. Checkout our [documentation]() to learn about the differences.
+*   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
+    -   the CORE_WEBVIEW2_* prefix is now *COREWEBVIEW2_**. 
+    -   [browserversioninfo]() is now [browserversionstring]()
+    -   [getcorewebview2browserversioninfo]() is now [getavailablecorewebview2browserversioninfo]()
+    - [AddRemoteObject]() is now [AddHostObjectToScript]()
+    - [RemoveRemoteObject]() is now [RemoveHostObjectFromScript]()
+    - [chrome.webview.remoteObjects]() is now [chrome.webview.hostObjects]()
+    - [CoreWebView2MouseEventVirtualKeys]() is now [CoreWebView2MouseEventVirtualKey]()
+*   **Breaking Change:** CreateCoreWebView2EnvironmentWithDetails is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](). 
+*   **Breaking Change:** The AddRemoteObject JS proxy methods have been renamed from set/getRemote to *set/getHostProperty*, applyRemote to *applyHostFunction*, and set/getLocal to *set/getLocalProperty*.
+*   Released our first separate pre-release package where you can access [visual hosting APIs](). We have updated [WebView2APISample]() to include these new experimental APIs.
+    - Added [ICoreWebView2ExperimentalCompositionController]()
+    - Added [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler]()
+    - Added [ICoreWebView2ExperimentalPointerInfo]()
+    - Added [ICoreWebView2ExperimentalCursorChangedEventHandler]()
+*   Updated [FrameNavigationCompleted]() Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
+*   Added [EnvironmentalOptions](), check .idl file
+*   Added [BuiltInErrorPageEnabled](), check .idl file
+*   Updated [RemoteObjectInjection]() ([#XX](github-feedback))
+
+
 ## 0.9.430
 
 [NuGet package][WebView2NuGetGallery0.9.430] | minimum Microsoft Edge version 82.0.430.0.
