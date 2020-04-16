@@ -369,7 +369,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 ## Sync
 
-Signing in to Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You can sync your favorites, settings, form fill data (addresses and more), and passwords.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type can be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, and will sync along with your favorites.  Deleting or modifications to favorites, and other data types from one signed-in version of Microsoft Edge will sync to all other signed-in versions of Microsoft Edge where sync is turned on.  Sync configurations can be managed from **edge://settings/profiles/sync**.  
+Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your favorites, settings, form fill data \(addresses and more\), and passwords.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type can be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, and syncs along with your favorites.  Deleting or modifications to favorites, and other data types from one signed-in version of Microsoft Edge syncs to all other signed-in versions of Microsoft Edge where sync is turned on.  Sync configurations may be managed from `edge://settings/profiles/sync`.  
 
 ![Sync](./media/WhitepaperMedia/Sync.png)
 
