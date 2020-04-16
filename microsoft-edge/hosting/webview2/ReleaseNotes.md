@@ -42,10 +42,9 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 *   Updated [RemoteObjectInjection]() to support .NET IDispatch implementations. ([#113](https://github.com/MicrosoftEdge/WebViewFeedback/issues/113))
 *   Updated [NewWindowRequested](reference/icorewebview2.md#add_newwindowrequested) event to handle requests from context menus. ([#108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/108))
 *   Released our first separate pre-release package where you can access visual hosting APIs. We have updated [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) to include these new experimental APIs.
-    - Added [ICoreWebView2ExperimentalCompositionController](reference/ICoreWebView2ExperimentalCompositionController.md)
-    - Added [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](reference/ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler.md)
-    - Added [ICoreWebView2ExperimentalPointerInfo](reference/ICoreWebView2ExperimentalPointerInfo.md)
-    - Added [ICoreWebView2ExperimentalCursorChangedEventHandler](reference/ICoreWebView2ExperimentalCursorChangedEventHandler.md)
+    - Added [ICoreWebView2ExperimentalCompositionController](reference/ICoreWebView2ExperimentalCompositionController.md) interface, which is used to connect to a composition tree and provide input meant for the WebView.
+    - Added [ICoreWebView2ExperimentalPointerInfo](reference/ICoreWebView2ExperimentalPointerInfo.md) which contains all the information from a POINTER_INFO. It is passed to SendPointerInput to inject pointer input into the WebView.
+    - Added [ICoreWebView2ExperimentalCursorChangedEventHandler](reference/ICoreWebView2ExperimentalCursorChangedEventHandler.md) which tells the app when the mouse cursor over the WebView should be changed. When mouse is over a text box in the WebView, the cursor changes from the arrow to the selector. The cursor property on the CompositionController tells the app what the mouse cursor should currently be for the WebView.
 
 ## 0.9.430
 
