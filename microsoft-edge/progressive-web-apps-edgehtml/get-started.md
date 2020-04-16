@@ -50,7 +50,7 @@ Now it is time to wire up the basic [PWA requirements][PwaEdgehtmlIndexRequireme
 
 A [Web App Manifest][MDNWebAppManifest] is a JSON metadata file describing your app, including the name, author, entry page URL, and one or more icons.  Because it follows a [standards-based schema][W3cWebAppManifest], you must only supply a single web app manifest for the PWA that you are installing on any platform, OS, and device combination that supports PWAs.  In the Windows ecosystem, your web app manifest signals to the Bing web indexer that your PWA is a candidate for automatic inclusion in the [Microsoft Store][PwaEdgehtmlMicrosoftStore], where it may reach nearly 700 million active monthly users as a Windows 10 app.  
 
-If this were an existing live site, you could quickly generate a web app manifest using [PWA Builder][PwaBuilder].  Since it is still an unpublished project, copy a sample manifest.  
+If this were an existing live site, you could generate a web app manifest using [PWA Builder][PwaBuilder].  Since it is still an unpublished project, copy a sample manifest.  
 
 1.  In the Visual Studio *Solution Explorer*, right-click the *public* folder and select **Add** > **New File...**, specifying `manifest.json` as the item name.  
 1.  In the `manifest.json` file, copy the following boilerplate code.  
