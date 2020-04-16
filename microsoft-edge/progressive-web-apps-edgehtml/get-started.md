@@ -38,7 +38,7 @@ For the sake of simplicity, use the Visual Studio [Node.js and Express app][Visu
     
     ![Selecting the Node.js Express 4 project template in Visual Studio][ImageVsNodejsExpressTemplate]  
     
-1.  Once your new project loads, **Build** \(`Ctrl`+`Shift`+`B`\) and **Start Debugging** \(`F5`\).  Verify that your `index.html` file is loading on `http://localhost:1337`.  
+1.  Once your new project loads, choose **Build** \(`Ctrl`+`Shift`+`B`\) and **Start Debugging** \(`F5`\).  Verify that your `index.html` file loads when you browse to `http://localhost:1337`.  
     
     ![Running your new site on localhost][ImageVsNodejsExpressIndex]  
 
