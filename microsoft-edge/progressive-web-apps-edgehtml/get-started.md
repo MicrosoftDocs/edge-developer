@@ -101,7 +101,7 @@ And one of your icons.
 
 ![Square71x71Logo app logo loading from localhost][ImageVsNodejsExpressIcon]  
 
-If you publish the app live \(with an actual `start_url`\), the Bing search engine now identifies it as a candidate for [automatic packaging and submission to the Microsoft Store][PwaEdgehtmlMicrosoftStore] as an installable Windows 10 app.  Just make sure that your manifest.json file includes the [Quality signals for Progressive Web Apps][WindowsBlogsPwaEdge] that Bing is scanning for the following.  
+If you publish the app live \(with an actual `start_url`\), the Bing search engine now identifies it as a candidate for [automatic packaging and submission to the Microsoft Store][PwaEdgehtmlMicrosoftStore] as an installable Windows 10 app.  Ensure that your manifest.json file includes the [Quality signals for Progressive Web Apps][WindowsBlogsPwaEdge] that Bing scans for as follows: 
 
 *   `name`  
 *   `description`  
