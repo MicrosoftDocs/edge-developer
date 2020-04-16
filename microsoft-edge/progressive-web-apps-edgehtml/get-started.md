@@ -34,7 +34,7 @@ For the sake of simplicity, use the Visual Studio [Node.js and Express app][Visu
 1.  Launch Visual Studio, and start a new project.  
     *   **File** > **New** > **Project...**  
     *   `Ctrl`+`Shift`+`N`  
-1.  Under **JavaScript**, select **Basic Node.js Express 4 Application**.  Set the name and location and click **OK**.  
+1.  Under **JavaScript**, select **Basic Node.js Express 4 Application**.  Set the name and location and choose **OK**.  
     
     ![Selecting the Node.js Express 4 project template in Visual Studio][ImageVsNodejsExpressTemplate]  
     
