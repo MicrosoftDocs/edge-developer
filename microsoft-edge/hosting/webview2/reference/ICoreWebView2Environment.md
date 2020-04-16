@@ -25,7 +25,7 @@ This represents the WebView2 Environment.
 --------------------------------|---------------------------------------------
 [CreateCoreWebView2Controller](#createcorewebview2controller) | Asynchronously create a new WebView.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
-[get_BrowserVersionString](#get_browserversionstring) | The browser version info of the current [ICoreWebView2Environment](#icorewebview2environment), including channel name if it is not the stable channel.
+[get_BrowserVersionString](#get_browserversionstring) | The browser version info of the current [ICoreWebView2Environment](), including channel name if it is not the stable channel.
 [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable) | Remove an event handler previously added with add_NewBrowserVersionAvailable.
 
@@ -220,7 +220,7 @@ The headers is the raw response header string delimited by newline. It's also po
 
 #### get_BrowserVersionString 
 
-The browser version info of the current [ICoreWebView2Environment](#icorewebview2environment), including channel name if it is not the stable channel.
+The browser version info of the current [ICoreWebView2Environment](), including channel name if it is not the stable channel.
 
 > public HRESULT [get_BrowserVersionString](#get_browserversionstring)(LPWSTR * versionInfo)
 
