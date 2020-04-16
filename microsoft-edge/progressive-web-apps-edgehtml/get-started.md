@@ -407,7 +407,7 @@ Time to test push notifications in your PWA!
     
     Choose **Yes** to enable toast notifications for your PWA.  
     
-1.  From the Service Worker Overview pane, try clicking the  **Push** button.  A toast notification with the \(hard-coded "Test push message from DevTools"\) payload should appear.  
+1.  From the Service Worker Overview pane, try choosing the  **Push** button.  A toast notification with the \(hard-coded "Test push message from DevTools"\) payload should appear.  
     
     ![Push a notification from DevTools][ImageDevtoolsPush]  
     
