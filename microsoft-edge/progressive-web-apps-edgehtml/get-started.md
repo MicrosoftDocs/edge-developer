@@ -411,7 +411,7 @@ Time to test push notifications in your PWA!
     
     ![Push a notification from DevTools][ImageDevtoolsPush]  
     
-1.  Next try clicking the **Send Notification** button on the homepage of your PWA.  This time a toast with the payload from your server appears.  
+1.  Next try choosing the **Send Notification** button on the homepage of your PWA.  This time a toast with the payload from your server appears.  
     
     ![Push a notification from PWA server][ImagePwaPush]  
     
