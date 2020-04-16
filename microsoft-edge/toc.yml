@@ -66,6 +66,8 @@
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+            - name: Microsoft Edge 83
+              href: devtools-guide-chromium/whats-new/2020/03/devtools.md
         - name: IE mode
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D View
@@ -468,6 +470,8 @@
           href: visual-studio-code/debugger-for-edge.md
         - name: Elements for Edge
           href: visual-studio-code/elements-for-edge.md
+        - name: webhint
+          href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
       href: webdriver-chromium.md
     - name: WebDriver (EdgeHTML)

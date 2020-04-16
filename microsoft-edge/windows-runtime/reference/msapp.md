@@ -39,6 +39,7 @@ Clears cache and indexedDB data for the app or [WebView](../../webview.md).
 ```javascript
 var retval = MSApp.clearTemporaryWebDataAsync(#); 
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -261,6 +262,7 @@ The provided `synchronousCallback` callback method is execute synchronously. The
 The `synchronousCallback` callback parameter can be any function. If any arguments are provided after the priority parameter, they will be passed to the provided callback method. If the callback parameter returns a value, this value becomes the return value for `execAtPriority` as well.
 
 #### Example
+
 ```javascript
 var user = Windows.System.UserProfile.UserInformation;
 
@@ -292,6 +294,7 @@ None.
 This method returns the current contextual priority (see [`MSApp Constants`](#msapp-constants)), which can be changed via `execAtPriority` and `execAsyncAtPriority`.
 
 #### Example
+
 ```javascript
 if (MSApp.getCurrentPriority() === MSApp.IDLE) { 
   // YOUR CODE HERE
@@ -313,6 +316,7 @@ Returns the source content that is to be printed.
 |Document | The HTML document to be printed. This can be the root document, the document in an iframe, a document fragment, or a SVG document. Be aware that htmlDoc must be a document, not an element.
 
 #### Example 1
+
 ```javascript
 var printTask = event.request.createPrintTask(title, function (args) {
                 var deferral = args.getDeferral();
@@ -333,6 +337,7 @@ var printTask = event.request.createPrintTask(title, function (args) {
 ```
 
 #### Example 2
+
 ```javascript
     function registerForPrintContract() {
             var printManager = Windows.Graphics.Printing.PrintManager.getForCurrentView();
@@ -461,6 +466,7 @@ var retval = MSApp.isTaskScheduledAtPriorityOrHigher(priority);
 The `isTaskScheduledAtPriorityOrHigher` method provides a means for JavaScript code to determine if there is pending work at the various priority levels (or above) with the intent that the calling JavaScript code can then decide to yield to higher priority work.
 
 #### Example
+
 ```javascript
 function performIdleWork(array_in) {
   var idx = 0;
@@ -480,6 +486,7 @@ function performIdleWork(array_in) {
   performIdleWorkHelper();
 } // performIdleWork
 ```
+
 ### pageHandlesAllApplicationActivations
 Used to avoid a refresh of the start path (page reload) before every activate event (ie. clicking a notification or a pinned tile). 
 
@@ -490,6 +497,7 @@ Used to avoid a refresh of the start path (page reload) before every activate ev
 Boolean | Use `MSApp.pageHandlesAllApplicationActivations(true)` to always skip refreshing the start path (page reload) and instead jump straight to firing the `WebUIApplication` activated event. Requires that all pages handle activation events separately. By defining this method as `true`, clicking an activated event (like a notificaiton) will not trigger the reload, an essential for single-page apps wishing to avoid page reloads.
 
 #### Example 
+
 ```javascript
 // Without this, the app will first refresh to the start path before every activate event
 window.MSApp.pageHandlesAllApplicationActivations(true); 
@@ -533,6 +541,7 @@ Be aware that `suppressSubdownloadCredentialPrompts` impacts all content in the 
 **Important:**  Credential prompt decisions are cached. Therefore, while suppressing credential prompts will take effect immediately, allowing credential prompts after suppressing them may need a reload of the document to take effect.
 
 #### Example
+
 ```javascript
 / Set to true to suppress potenial credential prompts:
 MSApp.suppressSubdownloadCredentialPrompts(true); 
@@ -604,6 +613,7 @@ Allowed priority values associated with `execAsyncAtPriority`, `execAtPriority`,
 |DOMString | When `normal` is used with the appropriate method (See also section), the method will use the normal existing priority when executing the requested operation.
 
 #### Example
+
 ```javascript
 if (window.MSApp.CURRENT) {
   document.getElementById('outputMessageDiv').textContent = 'The value of window.MSApp.CURRENT is "current".';
