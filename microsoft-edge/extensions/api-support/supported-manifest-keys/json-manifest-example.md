@@ -16,6 +16,7 @@ ms.custom: seodec18
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 The following snippet provides an example of a Microsoft Edge JSON manifest file.
+
 ```json
 {
     "name" : "Sample extension manifest",
