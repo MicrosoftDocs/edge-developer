@@ -312,7 +312,7 @@ To edit a script:
 
 1.  Open the file in the **Editor** pane of the **Sources** panel.  
 1.  Make your changes in the **Editor** pane.  
-1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into into the JavaScript engine of Microsoft Edge.  
+1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
 
 > ##### Figure 17  
 > The **Editor** pane  
