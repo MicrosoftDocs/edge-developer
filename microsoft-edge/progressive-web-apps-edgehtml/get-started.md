@@ -107,7 +107,7 @@ If you publish the app live \(with an actual `start_url`\), the Bing search engi
 *   `description`  
 *   At least one icon 512px square or larger \(to ensure an image source of sufficient resolution for auto-generating the splash screen of your app, store listing, tile image, and so on\).  
 
-In addition, it should be [HTTPS](#https), use [service workers](#service-workers), comply with [Microsoft Store Policies][LegalWindowsAgrementsMicrosoftStorePolicies].  
+In addition, use [HTTPS](#https), [service workers](#service-workers), and comply with [Microsoft Store Policies][LegalWindowsAgrementsMicrosoftStorePolicies].  
 
 ### HTTPS  
 
