@@ -182,7 +182,7 @@ For this tutorial, use a ready-made Offline page service worker script courtesy 
         
         ![Edge DevTools Service Worker overview][ImageDevtoolsSwOverview]  
         
-    1.  Still in the Debugger, expand the **Cache** control and verify that the `offline.html` page has been cached.  
+    1.  Expand the **Cache** control and verify that the `offline.html` page is cached.  
         
         ![Edge DevTools service worker Cache][ImageDevtoolsSwCache]  
         
