@@ -115,7 +115,7 @@ In addition, use [HTTPS](#https), [service workers](#service-workers), and compl
 
 If you [publish this web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService] \(for example, by setting up an [Azure free account][AzureCreateFreeAccount]\), you must ensure your server is configured for HTTPS.  If you use the [Microsoft Azure App Service][AzureWebApps] to host your site, it is served over HTTPS by default.  
 
-For this guide, you continue using `http://localhost` as a placeholder for a live site served over `https://`.  
+For this guide, continue using `http://localhost` as a placeholder for a live site served over `https://`.  
 
 ### Service Workers  
 
