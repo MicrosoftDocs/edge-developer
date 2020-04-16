@@ -74,7 +74,7 @@ If this were an existing live site, you could generate a web app manifest using 
     }
     ```  
     
-    If this were a real PWA, you should customize at least the *name*, *start_url*, *short_name*, and *description*, as well as the *icons* \(icons are covered in the next step\).  
+    If this were a real PWA, you would customize *name*, *start_url*, *short_name*, *description*, and *icons* \(icons are covered in the next step\).  
     
     To learn more about the different member values and associated purposes, see the [Web App Manifest][MDNWebAppManifest] reference.  
     
