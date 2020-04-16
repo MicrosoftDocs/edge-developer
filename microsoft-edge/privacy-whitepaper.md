@@ -335,7 +335,7 @@ To prevent any identity from being associated with Microsoft Edge, remove your M
 
 Your identity in Microsoft Edge on macOS is shared between Microsoft apps.  This allows you to sign into a Microsoft app without having to separately enter your credentials if you're signed in to another Microsoft app on the device.  On macOS, you are not automatically signed into Microsoft Edge based on your authentication state in another Microsoft app.  When you try to sign into Microsoft Edge, Microsoft Edge offers to use the credentials from another Microsoft app to sign you into Microsoft Edge seamlessly.  Similarly, when you are signed into an account to Microsoft Edge, if you try to sign into another Microsoft app, your Microsoft Edge credentials may be used to help you sign into the other Microsoft app on the device without requiring you to enter your credentials again.  
 
-You can't sign in to Microsoft Edge when using Guest mode or InPrivate browsing.  
+You are not able to sign into Microsoft Edge when using Guest mode or InPrivate browsing.  
 
 ## SmartScreen
 
