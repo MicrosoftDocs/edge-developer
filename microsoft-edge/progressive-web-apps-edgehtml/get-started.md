@@ -78,7 +78,7 @@ If this were an existing live site, you could generate a web app manifest using 
     
     To learn more about the different member values and associated purposes, see the [Web App Manifest][MDNWebAppManifest] reference.  
     
-1.  Next, fill in the empty `icons` array with actual image paths.  For that, use the PWA Builder App Image Generator.  
+1.  Next, fill in the empty `icons` array with actual image paths by using the PWA Builder App Image Generator.  
     
     1.  Using a web browser, download this [sample 512x512 PWA image][ImagePwa].  
     1.  Go to the PWA Builder [App Image Generator][PwaBuilderAppImageGenerator], and select the `pwa.png` image you just saved as the **Input Image** and then click the **Download** button.  
