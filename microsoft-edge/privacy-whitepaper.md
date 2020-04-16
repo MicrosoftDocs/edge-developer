@@ -373,7 +373,7 @@ Signing in to Microsoft Edge with a Microsoft account allows you to sync your br
 
 ![Sync](./media/WhitepaperMedia/Sync.png)
 
-For sync to function, there is additional device connectivity and config data such as name of your device, make and model, necessary to provide the sync experience.  This data can be deleted from the [Microsoft device dashboard](https://account.microsoft.com/devices/).  You can manage synced favorites from **edge://favorites**.  All other data types can be managed from your Microsoft Edge profile settings at **edge://settings/profiles**.  
+For sync to function, there is additional device connectivity and config data such as name of your device, make and model, necessary to provide the sync experience.  This data may be deleted from the [Microsoft device dashboard](https://account.microsoft.com/devices/).  You may manage synced favorites from `edge://favorites`.  All other data types may be managed from your Microsoft Edge profile settings at `edge://settings/profiles`.  
 
 All synced data is encrypted in transit over HTTPS when transferred between the browser and Microsoft servers.  The synced data is also stored in an encrypted state in Microsoft servers.  Sensitive data types such as addresses and passwords are further encrypted on the device before being synced.  If you're using a work account, all data types are further encrypted before being synced using Microsoft Information Protection.  All other synced data types will be stored until you delete the data, the account is deleted, or the account becomes inactive.  An account ID is attached to all synced data—this is necessary to perform sync across multiple devices.  
 
