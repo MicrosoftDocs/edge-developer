@@ -2,7 +2,7 @@
 title: DevTools for Beginners
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 04/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -146,13 +146,13 @@ Your site is pretty empty.  Follow the steps below to add some content to it!
     ...
     ```  
     
-    > ##### Figure 4  
+    > ##### Figure 9  
     > The new code is highlighted in the editor tab  
     > ![The new code is highlighted in the editor tab][ImageHtmlAdd4]  
     
 1.  Again, go back to the **live tab** to make sure that the new content is displaying correctly.  
     
-    > ##### Figure 4  
+    > ##### Figure 10  
     > The new list is visible in the live tab  
     > ![The new list is visible in the live tab][ImageHtmlAdd5]  
     
@@ -166,25 +166,25 @@ Before you start editing your content from Microsoft Edge DevTools, it's helpful
 
 1.  Go to the **live tab**.  At the bottom of your page you see the text `A new element!?!`.  
     
-    > ###### Figure 9  
+    > ###### Figure 11  
     > At the bottom of the page the text `A new element!?!` can be seen  
     > ![At the bottom of the page the text A new element!?! can be seen][ImageHtmlDom1]  
     
 1.  Go back to the **editor tab** and try to find this text in `index.html`.  It's not there!  
     
-    > ##### Figure 10  
+    > ##### Figure 12  
     > The mystery text `A new element!?!` is nowhere to be found in `index.html`  
     > ![The mystery text A new element!?! is nowhere to be found in index.html][ImageHtmlDom2]  
     
 1.  Go back to the **live tab**, right-click `A new element!?!`, and select **Inspect**.  
     
-    > ##### Figure 11  
+    > ##### Figure 13  
     > Inspecting some text  
     > ![Inspecting some text][ImageHtmlDom3]  
     
     DevTools opens up alongside your page.  `<div>A new element!?!</div>` is highlighted blue.  Although this structure in DevTools looks like your HTML, it is actually the **DOM Tree**.  
     
-    > ##### Figure 12  
+    > ##### Figure 14  
     > DevTools is open alongside the page  
     > ![DevTools is open alongside the page][ImageHtmlDom4]  
     
@@ -197,7 +197,7 @@ try DevTools.
 
 1.  In DevTools, right-click `Your site!` and select **Edit as HTML**.  
 
-    > ##### Figure 13  
+    > ##### Figure 15  
     > Editing the node as HTML  
     > ![Editing the node as HTML][ImageHtmlEdit1]  
     
@@ -216,13 +216,13 @@ try DevTools.
     ...
     ```  
     
-    > ##### Figure 14  
+    > ##### Figure 16  
     > Editing the node as HTML  
     > ![Editing the node as HTML][ImageHtmlEdit2]  
     
 1.  Press `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
     
-    > ##### Figure 15  
+    > ##### Figure 17  
     > The new content shows up immediately on the page  
     > ![The new content shows up immediately on the page][ImageHtmlEdit3]  
     
@@ -234,18 +234,18 @@ You can also change the order of DOM nodes.  For example, on your web page the n
 
 1.  Find the `<nav>` node in the **DOM Tree** of DevTools.  
     
-    > ##### Figure 16  
+    > ##### Figure 18  
     > The nav node is highlighted blue in DevTools  
     > ![The nav node is highlighted blue in DevTools][ImageHtmlReorder1]  
     
 1.  Drag the `<nav>` node to the top, so that it's the first child below the `<body>` node.  
-    > ##### Figure 17  
+    > ##### Figure 19  
     > Dragging the nav node to the top  
     > ![Dragging the nav node to the top][ImageHtmlReorder2]  
     
     The `<nav>` node is now displaying at the top of your page.  
     
-    > ##### Figure 18  
+    > ##### Figure 20  
     > The nav node is at the top of the page  
     > ![The nav node is at the top of the page][ImageHtmlReorder3]  
     
@@ -255,13 +255,13 @@ You can also remove nodes from the DOM Tree.
 
 1.  In the **DOM Tree**, click `<div>A new element!?!</div>`.  DevTools highlights the node blue.  
     
-    > ##### Figure 19  
+    > ##### Figure 21  
     > Selecting the node to be deleted  
     > ![Selecting the node to be deleted][ImageHtmlDelete1]  
     
 1.  Press the `Delete` key on your keyboard.  The `<div>A new element!?!</div>` node is removed from your DOM Tree.  
     
-    > ##### Figure 20  
+    > ##### Figure 22  
     > The node has been deleted  
     > ![The node has been deleted][ImageHtmlDelete2]  
     
@@ -271,7 +271,7 @@ You're almost done.  You've made a few changes to your page in DevTools, but the
 
 1.  Refresh your **live tab**.  The changes that you made in the DOM Tree disappear.  In particular, the text `Your site!` returns to the top of the page, and the text `A new element!?!` returns to the bottom.  
     
-    > ##### Figure 21  
+    > ##### Figure 23  
     > The changes that you've made are gone  
     > ![The changes that you've made are gone][ImageHtmlCopy1]  
 
@@ -311,7 +311,7 @@ You're almost done.  You've made a few changes to your page in DevTools, but the
       
 1.  Go back to the **editor tab** and replace the contents of your `index.html` file with the code that you just copied.  
     
-    > ##### Figure 22  
+    > ##### Figure 24  
     > How your `index.html` file should look  
     > ![How your index.html file should look][ImageHtmlCopy2]  
     
@@ -331,26 +331,26 @@ You're almost done.  You've made a few changes to your page in DevTools, but the
 [ImageHtmlAdd1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add1.msft.png "Figure 6: The new code is highlighted in the editor tab"  
 [ImageHtmlAdd2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add2.msft.png "Figure 7: The new heading is visible in the live tab"  
 [ImageHtmlAdd3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add3.msft.png "Figure 8: The new code is highlighted in the editor tab"  
-[ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "Figure 4: The new code is highlighted in the editor tab"  
-[ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Figure 4: The new list is visible in the live tab"  
-[ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "Figure 9: At the bottom of the page the text A new element!?! can be seen"  
-[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Figure 10: The mystery text A new element!?! is nowhere to be found in index.html"  
-[ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Figure 11: Inspecting some text"  
-[ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Figure 12: DevTools is open alongside the page"  
-[ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Figure 13: Editing the node as HTML"  
-[ImageHtmlEdit2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit2.msft.png "Figure 14: Editing the node as HTML"  
-[ImageHtmlEdit3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit3.msft.png "Figure 15: The new content shows up immediately on the page"  
-[ImageHtmlReorder1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder1.msft.png "Figure 16: The nav node is highlighted blue in DevTools"  
-[ImageHtmlReorder2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder2.msft.png "Figure 17: Dragging the nav node to the top"  
-[ImageHtmlReorder3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder3.msft.png "Figure 18: The nav node is at the top of the page"  
-[ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Figure 19: Selecting the node to be deleted"  
-[ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Figure 20: The node has been deleted"  
-[ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Figure 21: The changes that you've made are gone"  
-[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Figure 22: How your index.html file should look"  
+[ImageHtmlAdd4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add4.msft.png "Figure 9: The new code is highlighted in the editor tab"  
+[ImageHtmlAdd5]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-add5.msft.png "Figure 10: The new list is visible in the live tab"  
+[ImageHtmlDom1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom1.msft.png "Figure 11: At the bottom of the page the text A new element!?! can be seen"  
+[ImageHtmlDom2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom2.msft.png "Figure 12: The mystery text A new element!?! is nowhere to be found in index.html"  
+[ImageHtmlDom3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom3.msft.png "Figure 13: Inspecting some text"  
+[ImageHtmlDom4]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-dom4.msft.png "Figure 14: DevTools is open alongside the page"  
+[ImageHtmlEdit1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit1.msft.png "Figure 15: Editing the node as HTML"  
+[ImageHtmlEdit2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit2.msft.png "Figure 16: Editing the node as HTML"  
+[ImageHtmlEdit3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-edit3.msft.png "Figure 17: The new content shows up immediately on the page"  
+[ImageHtmlReorder1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder1.msft.png "Figure 18: The nav node is highlighted blue in DevTools"  
+[ImageHtmlReorder2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder2.msft.png "Figure 19: Dragging the nav node to the top"  
+[ImageHtmlReorder3]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-reorder3.msft.png "Figure 20: The nav node is at the top of the page"  
+[ImageHtmlDelete1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete1.msft.png "Figure 21: Selecting the node to be deleted"  
+[ImageHtmlDelete2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-delete2.msft.png "Figure 22: The node has been deleted"  
+[ImageHtmlCopy1]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy1.msft.png "Figure 23: The changes that you've made are gone"  
+[ImageHtmlCopy2]: /microsoft-edge/devtools-guide-chromium/media/beginners-html-copy2.msft.png "Figure 24: How your index.html file should look"  
 
 <!--- links --->  
 
-[DevToolsBeginnersCss]: css.md "DevTools For Beginners: Get Started with CSS"  
+[DevToolsBeginnersCss]: /microsoft-edge/devtools-guide-chromium/beginners/css "DevTools For Beginners: Get Started with CSS"  
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"  
 
