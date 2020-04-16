@@ -396,7 +396,7 @@ In Microsoft Edge, you can browse the web and translate webpages into a language
 Microsoft Edge allows you to install web apps made by website developers and pin your favorite sites.  
 
 
-When you pin a site, it will be added to your taskbar or dock.  This data is stored locally on your device.  For some sites, info about whether the site has been pinned is shared with the site, so the site knows not to prompt to be pinned.  You can manage your pinned sites from the taskbar or dock.  Pinned sites open in Microsoft Edge windows and use the same site permissions and diagnostic data about how you use the browser and sites you visit as that version of Microsoft Edge.  
+When you pin a site, it will be added to your taskbar or dock.  This data is stored locally on your device.  For some sites, info about whether the site has been pinned is shared with the site, so the site knows not to prompt to be pinned.  You may manage your pinned sites from the taskbar or dock.  Pinned sites open in Microsoft Edge windows and use the same site permissions and diagnostic data about how you use the browser and sites you visit as that version of Microsoft Edge.  
 
 ## WebView
 
