@@ -119,7 +119,7 @@ For this guide, continue using `http://localhost` as a placeholder for a live si
 
 ### Service Workers  
 
-Service Workers is the key technology behind PWAs and act as a proxy between your PWA and the network, enabling your website to act as an installed native app including serving up offline scenarios, responding to server push notifications, and running background tasks.  Service workers also open up all kinds of new performance strategies.  You are not required to implement a full-blown web app to take advantage of the service worker cache for fine-tuned page load performance for your website.  
+Service Workers is the key technology behind PWAs. They act as a proxy between your PWA and the network to enable your website to function as an installed native app that can serve up offline scenarios, respond to server push notifications, and run background tasks.  Service workers also open up new performance strategies.  You are not required to implement a full web app to use the service worker cache for fine-tuned page load performance for your website.  
 
 Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app.  Because Service workers do not run on the main UI thread, service workers do not have DOM access, though the [UI thread][MDNWorkerPrototypePostMessage] and a [worker thread][MDNDedicatedWorkerGlobalScopePostMessage] is able to communicate using `postMessage()` and `onmessage` event handlers.  
 
