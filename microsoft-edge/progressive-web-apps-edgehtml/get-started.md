@@ -81,7 +81,7 @@ If this were an existing live site, you could generate a web app manifest using 
 1.  Next, fill in the empty `icons` array with actual image paths by using the PWA Builder App Image Generator.  
     
     1.  Using a web browser, download this [sample 512x512 PWA image][ImagePwa].  
-    1.  Go to the PWA Builder [App Image Generator][PwaBuilderAppImageGenerator], and select the `pwa.png` image you just saved as the **Input Image** and then click the **Download** button.  
+    1.  Go to the PWA Builder [App Image Generator][PwaBuilderAppImageGenerator], and select the `pwa.png` image you just saved as the **Input Image** and then choose the **Download** button.  
     1.  **Open** and **Extract** the zip file.  
     1.  In the Visual Studio Solution Explorer, right-click the `public` folder and **Open Folder in File Explorer**.  Create a **New folder** named *images*.  
     1.  Copy all of the platform folders \(*android*, *chrome*, ...  *windows10*\) from your extracted zip to the `images` folder and close the file explorer window.  Add the folders to your Visual Studio project \(in Solution Explorer, right-click `images` folder and select **Add** > **Existing folder...** for each of the folders\).  
