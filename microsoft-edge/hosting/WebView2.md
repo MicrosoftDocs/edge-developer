@@ -47,11 +47,15 @@ Evergreen is the recommended distribution model for most developers. In this mod
 
 For constrained environments we will also support a fixed version distribution model. In this model your application will select and package a specific WebView2 version. Updates to the WebView version will be the responsibility of the application and will be independent of any managed Microsoft update mechanisms. You should choose this model if it is crucial to be able to have absolute control over the browser version and update times your application is taking advantage of.
 
-### Microsoft Edge WebView2 Runtime
+## Microsoft Edge WebView2 Runtime
 
 The Microsoft Edge WebView2 Runtime is a packaging of the browser binaries optimized for use by WebView2 applications. It will function stand alone or side-by-side with a client Edge Browser install. A single install of the run-time will support any number of WebView2 applications. Install of the runtime will not appear as a browser install to end-user, i.e. no desktop shortcuts, start menu entry, or protocol registration.
 
 An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred. At application install time you should check the current install status, which can be determined by using [GetCoreWebView2BrowserVersionInfo](https://docs.microsoft.com/microsoft-edge/hosting/webview2/reference/webview2.idl#getcorewebview2browserversioninfo). If the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.
+
+## Microsoft Edge WebView2 SDK
+
+To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability. The pre-release version will contain additional experimental APIs. These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
 
 ## Development against Upcoming Versions
 
