@@ -20,26 +20,32 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 **Re-compile your app after updating the NuGet package.** 
 
-*   **Announcement:** We are developing a new [WebView2 Runtime]() component that will enable Evergreen WebView2 applications to work on end user devices regardless of the presence of the new Microsoft Edge Browser. For the time being, WebView2 will no longer support the stable Edge Channel. 
-*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs and a stable release package with public APIs. Checkout our [documentation]() to learn about the differences.
+*   **Announcement:** Starting with the upcoming Microsoft Edge version 83, evergreen WebView will no longer target the Stable browser channel. Instead, it will target another set of binaries, branded [Microsoft Edge WebView2 Runtime](), that can be chain-installed through an installer we are currently developing. More details in [App-Distribution]().
+*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Pre-Release vs. Release Package]() to learn about the differences.
 *   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
-    -   the *CORE_WEBVIEW2_\** prefix is now *COREWEBVIEW2_\**. 
-    -   [get_BrowserVersionInfo](reference/Archived/0.9.430/icorewebview2environment.md#get_browserversioninfo) is now [get_BrowserVersionString](reference/icorewebview2environment.md#get_browserversionstring)
+    -   the CORE_WEBVIEW2_* prefix is now COREWEBVIEW2_*. 
+    -   [BrowserVersionInfo](reference/Archived/0.9.430/icorewebview2environment.md#get_browserversioninfo) is now [BrowserVersionString](reference/icorewebview2environment.md#get_browserversionstring)
+    -   [GetCoreWebview2BrowserVersionInfo]() is now [GetAvailableCoreWebView2BrowserVersionString]()
     - [AddRemoteObject](reference/Archived/0.9.430/icorewebview2.md#addremoteobject) is now [AddHostObjectToScript](reference/icorewebview2.md#addhostobjecttoscript)
     - [RemoveRemoteObject](reference/Archived/0.9.430/icorewebview2.md#removeremoteobject) is now [RemoveHostObjectFromScript](reference/icorewebview2.md#removehostobjectfromscript)
     - [chrome.webview.remoteObjects]() is now [chrome.webview.hostObjects]()
-*   **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/webview2.idl.md#createcorewebview2environmentwithdetails) is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/webview2.idl.md#createcorewebview2environmentwithoptions). 
-*   **Breaking Change:** The AddRemoteObject JS proxy methods have been renamed from set/getRemote to *set/getHostProperty*, applyRemote to *applyHostFunction*, and set/getLocal to *set/getLocalProperty*.
-*   Released our first separate pre-release package where you can access [visual hosting APIs](). We have updated [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) to include these new experimental APIs.
+*   **Breaking Change:** The AddRemoteObject JS proxy methods have been also been renamed. 
+    - getLocal is now getLocalProperty
+	- setLocal is now setLocalProperty
+	- getRemote is now getHostProperty
+	- setRemote is now setHostProperty
+	- applyRemote is now applyHostFunction
+*   **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/webview2.idl.md#createcorewebview2environmentwithdetails) is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/webview2.idl.md#createcorewebview2environmentwithoptions).  
+*   Updated [FrameNavigationCompleted]() Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
+*   Added [ICoreWebView2EnvironmentOptions](reference/ICoreWebView2EnvironmentOptions.md) interface, which can be used to determine the version of the WebView2 Runtime the application targets.
+*   Added [BuiltInErrorPageEnabled](). Now, you can chose to enable or disable the built in error page for navigation failure and render process failure.
+*   Updated [RemoteObjectInjection]() to support .NET IDispatch implementations. ([#113](https://github.com/MicrosoftEdge/WebViewFeedback/issues/113))
+*   Updated [NewWindowRequested](reference/icorewebview2.md#add_newwindowrequested) event to handle requests from context menus. ([#108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/108))
+*   Released our first separate pre-release package where you can access visual hosting APIs. We have updated [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) to include these new experimental APIs.
     - Added [ICoreWebView2ExperimentalCompositionController](reference/ICoreWebView2ExperimentalCompositionController.md)
     - Added [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](reference/ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler.md)
     - Added [ICoreWebView2ExperimentalPointerInfo](reference/ICoreWebView2ExperimentalPointerInfo.md)
     - Added [ICoreWebView2ExperimentalCursorChangedEventHandler](reference/ICoreWebView2ExperimentalCursorChangedEventHandler.md)
-*   Updated [FrameNavigationCompleted]() Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
-*   Added [ICoreWebView2EnvironmentOptions](), check .idl file
-*   Added [BuiltInErrorPageEnabled](), check .idl file
-*   Updated [RemoteObjectInjection]() ([#113](https://github.com/MicrosoftEdge/WebViewFeedback/issues/113))
-*   Updated [NewWindowRequested](reference/icorewebview2.md#add_newwindowrequested) event to handle requests from context menu. ([#108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/108))
 
 ## 0.9.430
 
