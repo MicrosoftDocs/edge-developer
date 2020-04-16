@@ -135,7 +135,7 @@ For this tutorial, use a ready-made Offline page service worker script courtesy 
     
     Save the files to the `public` folder of your Visual Studio web app project.  \(From Visual Studio, use `Ctrl`+`O` to open file explorer to your project and navigate to the `public` folder\).  
     
-    it is worth reviewing the code in both of these files, to get the gist of how to register a service worker that caches a designated page \(`offline.html`\) and serves it when a network fetch fails.  Next, create a simple `offline.html` page as a placeholder for the offline functionality of your app.  
+    It is worth reviewing the code in both of these files, to get the gist of how to register a service worker that caches a designated page \(`offline.html`\) and serves it when a network fetch fails.  Next, create a simple `offline.html` page as a placeholder for the offline functionality of your app.  
     
 1.  In Solution Explorer, open the `views/layout.pug` file, and add the following line below your link tags.  
     
