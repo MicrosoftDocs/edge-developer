@@ -20,25 +20,29 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 **Re-compile your app after updating the NuGet package.** 
 
-*   **Announcement:** We are developeing a new [WebView2 Runtime]() component that will enable Evergreen WebView2 applications to work on end user devices regardless of the presence of the new Microsoft Edge Browser. For the time being, WebView2 will no longer support the stable Edge Channel. 
-*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs and a stable release package with public APIs. Checkout our [documentation]() to learn about the differences.
+*   **Announcement:** We are developing a new [WebView2 Runtime](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2#app-distribution) component that will enable Evergreen WebView2 applications to work on end user devices regardless of the presence of the new Microsoft Edge Browser. For the time being, WebView2 will no longer support the stable Edge Channel. 
+*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout our [documentation]() to learn about the differences.
 *   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
-    -   the CORE_WEBVIEW2_* prefix is now *COREWEBVIEW2_**. 
-    -   [browserversioninfo]() is now [browserversionstring]()
-    -   [getcorewebview2browserversioninfo]() is now [getavailablecorewebview2browserversioninfo]()
+    -   the CORE_WEBVIEW2_* prefix is now COREWEBVIEW2_*. 
+    -   [BrowserVersionInfo]() is now [BrowserVersionString]()
+    -   [GetCoreWebview2BrowserVersionInfo]() is now [GetAvailableCoreWebView2BrowserVersionString]()
     - [AddRemoteObject]() is now [AddHostObjectToScript]()
     - [RemoveRemoteObject]() is now [RemoveHostObjectFromScript]()
     - [chrome.webview.remoteObjects]() is now [chrome.webview.hostObjects]()
-    - [CoreWebView2MouseEventVirtualKeys]() is now [CoreWebView2MouseEventVirtualKey]()
+*   **Breaking Change:** The AddRemoteObject JS proxy methods have been also been renamed. 
+    - getLocal is now getLocalProperty
+	- setLocal is now setLocalProperty
+	- getRemote is now getHostProperty
+	- setRemote is now setHostProperty
+	- applyRemote is now applyHostFunction
 *   **Breaking Change:** CreateCoreWebView2EnvironmentWithDetails is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](). 
-*   **Breaking Change:** The AddRemoteObject JS proxy methods have been renamed from set/getRemote to *set/getHostProperty*, applyRemote to *applyHostFunction*, and set/getLocal to *set/getLocalProperty*.
 *   Released our first separate pre-release package where you can access [visual hosting APIs](). We have updated [WebView2APISample]() to include these new experimental APIs.
     - Added [ICoreWebView2ExperimentalCompositionController]()
-    - Added [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler]()
+    - Added [RootTarget Visual ]()
     - Added [ICoreWebView2ExperimentalPointerInfo]()
     - Added [ICoreWebView2ExperimentalCursorChangedEventHandler]()
 *   Updated [FrameNavigationCompleted]() Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
-*   Added [EnvironmentalOptions](), check .idl file
+*   Added [EnvironmentOptions](), check .idl file
 *   Added [BuiltInErrorPageEnabled](), check .idl file
 *   Updated [RemoteObjectInjection]() ([#XX](github-feedback))
 
