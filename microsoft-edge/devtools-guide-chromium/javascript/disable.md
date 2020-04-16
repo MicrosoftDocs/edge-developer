@@ -2,7 +2,7 @@
 title: Disable JavaScript With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -65,9 +65,9 @@ To re-enable JavaScript:
 
 <!-- image links -->  
 
-[ImageCommandMenu]: images/console-command.msft.png "Figure 1: The Command Menu"  
-[ImageDisableJS]: images/console-command-javascript.msft.png "Figure 2: Selecting Disable JavaScript in the Command Menu"  
-[ImageDisableJSWarning]: images/console-javascript-disabled-warning.msft.png "Figure 3: The warning icon next to Sources"  
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command.msft.png "Figure 1: The Command Menu"  
+[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command-javascript.msft.png "Figure 2: Selecting Disable JavaScript in the Command Menu"  
+[ImageDisableJSWarning]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-javascript-disabled-warning.msft.png "Figure 3: The warning icon next to Sources"  
 
 <!-- links -->  
 
