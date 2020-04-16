@@ -125,7 +125,7 @@ Service workers are event-driven background threads that run from JavaScript fil
 
 You associate a service worker with your app by registering it to the URL origin of your site \(or a specified path within it\).  Once registered, the service worker file is then downloaded, installed, and activated on the user machine.  For more, *MDN web docs* has a comprehensive guide on [Using Service Workers][MDNUsingServiceWorkers] and a detailed [Service Worker API][MDNServiceWorkerApi] reference.  
 
-For this tutorial, use a ready-made Offline page service worker script courtesy of [PWA Builder][PwaBuilderServiceWorker].  From this, you should customize it with more elaborate functionality according to your needs for performance, network bandwidth, and so on.  Check out the [Service Worker Cookbook][ServiceWorkerCookbook]  provided by Mozilla for a number of useful service worker caching-recipe ideas.  
+For this tutorial, use the Offline page service worker script on [PWA Builder][PwaBuilderServiceWorker].  Start by customizing the script with more functionality according to your performance requirements, network bandwidth, and so on.  Check out the [Service Worker Cookbook][ServiceWorkerCookbook]  provided by Mozilla for a number of useful service worker caching ideas.  
 
 1.  Open [https://www.pwabuilder.com/serviceworker][PwaBuilderServiceWorker] and select the \(default\) **Offline page** service worker and click the **Download service worker** button.  
 1.  Open the download folder and copy the following two files  
