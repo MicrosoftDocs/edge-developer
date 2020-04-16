@@ -53,6 +53,7 @@ Your extension's "Supported languages" list in the Microsoft Store is generated 
 ![settings image](./../../media/language-app-details.png)
 
 To specify the list of languages that are supported by your extension, you can add a `Resource` element in the format seen below (this `Resource` element will show support for English, German, and French in the Microsoft Store):
+
 ```xml
 <Resources>
     <Resource Language="en-us"/>
