@@ -29,7 +29,7 @@ You may build PWAs with any web development IDE.  The following are only prerequ
 
 ## Set up a basic web app  
 
-For the sake of simplicity, use the Visual Studio [Node.js and Express app][VisualStudioNodeJsTutorial] template to create a basic, `localhost` web app that serves up an `index.html` page.  Imagine this as a placeholder for the compelling, full-featured web app that you are developing as a PWA.  
+For the sake of simplicity, use the Visual Studio [Node.js and Express app][VisualStudioNodeJsTutorial] template to create `localhost` web app that serves up an `index.html` page.  Imagine this as a placeholder for the compelling, full-featured web app that you are developing as a PWA.  
 
 1.  Launch Visual Studio, and start a new project.  
     *   **File** > **New** > **Project...**  
