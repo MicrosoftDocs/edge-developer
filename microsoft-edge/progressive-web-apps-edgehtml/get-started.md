@@ -3,7 +3,7 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2020
+ms.date: 04/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -16,13 +16,13 @@ Progressive Web Apps \(PWAs\) are simply web apps that are [progressively enhanc
 This guide gives you an overview of PWA basics by building a simple `localhost` web app as a PWA using Microsoft Visual Studio and some PWA Builder utilities.  The finished product works similarly across any browser that supports PWAs.  
 
 > [!TIP]
-> For a quick way to convert an existing site to a PWA and package it for Windows 10 and other app platforms, check out [PWA Builder][PwaBuilder].  
+> For a quick way to convert an existing site to a PWA and package it for Windows 10 and other app platforms, review [PWA Builder][PwaBuilder].  
 
 ## Prerequisites  
 
 You may build PWAs with any web development IDE.  The following are only prerequisites for this guide, which walks you through PWA tooling support in the Windows developer ecosystem.  
 
-*   Download the \(free\) [Visual Studio Community 2017][VisualStudioDownloads].  You may also use the Professional, Enterprise, or [Preview][VisualStudioPreview] editions.  From the Visual Studio Installer, choose the following Workloads:  
+*   Download the \(free\) [Visual Studio Community 2017][VisualStudioDownloads].  You may also use the Professional, Enterprise, or [Preview][VisualStudioPreview] editions.  From the Visual Studio Installer, choose the following Workloads.  
     
     *   **Universal Windows Platform development**  
     *   **Node.js development**  
@@ -50,7 +50,7 @@ Now it is time to wire up the basic [PWA requirements][PwaEdgehtmlIndexRequireme
 
 A [Web App Manifest][MDNWebAppManifest] is a JSON metadata file describing your app, including the name, author, entry page URL, and one or more icons.  Because it follows a [standards-based schema][W3cWebAppManifest], you must only supply a single web app manifest for the PWA that you are installing on any platform, OS, and device combination that supports PWAs.  In the Windows ecosystem, your web app manifest signals to the Bing web indexer that your PWA is a candidate for automatic inclusion in the [Microsoft Store][PwaEdgehtmlMicrosoftStore], where it may reach nearly 700 million active monthly users as a Windows 10 app.  
 
-If this were an existing live site, you could generate a web app manifest using [PWA Builder][PwaBuilder].  Since it is still an unpublished project, copy a sample manifest.  
+If this were an existing live site, you may generate a web app manifest using [PWA Builder][PwaBuilder].  Since it is still an unpublished project, copy a sample manifest.  
 
 1.  In the Visual Studio *Solution Explorer*, right-click the *public* folder and select **Add** > **New File...**, specifying `manifest.json` as the item name.  
 1.  In the `manifest.json` file, copy the following code.  
@@ -74,7 +74,7 @@ If this were an existing live site, you could generate a web app manifest using 
     }
     ```  
     
-    If this were a real PWA, you would customize *name*, *start_url*, *short_name*, *description*, and *icons* \(icons are covered in the next step\).  
+    In a real PWA, the next step is to customize *name*, *start_url*, *short_name*, *description*, and *icons* \(icons are covered in the next step\).  
     
     To learn more about the different member values and associated purposes, see the [Web App Manifest][MDNWebAppManifest] reference.  
     
@@ -101,7 +101,7 @@ And one of your icons.
 
 ![Square71x71Logo app logo loading from localhost][ImageVsNodejsExpressIcon]  
 
-If you publish the app live \(with an actual `start_url`\), the Bing search engine now identifies it as a candidate for [automatic packaging and submission to the Microsoft Store][PwaEdgehtmlMicrosoftStore] as an installable Windows 10 app.  Ensure that your manifest.json file includes the [Quality signals for Progressive Web Apps][WindowsBlogsPwaEdge] that Bing scans for as follows: 
+If you publish the app live \(with an actual `start_url`\), the Bing search engine now identifies it as a candidate for [automatic packaging and submission to the Microsoft Store][PwaEdgehtmlMicrosoftStore] as an installable Windows 10 app.  Ensure that your manifest.json file includes the [Quality signals for Progressive Web Apps][WindowsBlogsPwaEdge] for which Bing scans including the following items.   
 
 *   `name`  
 *   `description`  
@@ -119,13 +119,13 @@ For this guide, continue using `http://localhost` as a placeholder for a live si
 
 ### Service Workers  
 
-Service Workers is the key technology behind PWAs. They act as a proxy between your PWA and the network to enable your website to function as an installed native app that can serve up offline scenarios, respond to server push notifications, and run background tasks.  Service workers also open up new performance strategies.  You are not required to implement a full web app to use the service worker cache for fine-tuned page load performance for your website.  
+Service Workers is the key technology behind PWAs. Service Workers act as a proxy between your PWA and the network to enable your website to function as an installed native app that serves up offline scenarios, responds to server push notifications, and runs background tasks.  Service workers also open up new performance strategies.  You are not required to implement a full web app to use the service worker cache for fine-tuned page load performance for your website.  
 
 Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app.  Because Service workers do not run on the main UI thread, service workers do not have DOM access, though the [UI thread][MDNWorkerPrototypePostMessage] and a [worker thread][MDNDedicatedWorkerGlobalScopePostMessage] is able to communicate using `postMessage()` and `onmessage` event handlers.  
 
 You associate a service worker with your app by registering it to the URL origin of your site \(or a specified path within it\).  Once registered, the service worker file is then downloaded, installed, and activated on the user machine.  For more, *MDN web docs* has a comprehensive guide on [Using Service Workers][MDNUsingServiceWorkers] and a detailed [Service Worker API][MDNServiceWorkerApi] reference.  
 
-For this tutorial, use the Offline page service worker script on [PWA Builder][PwaBuilderServiceWorker].  Start by customizing the script with more functionality according to your performance requirements, network bandwidth, and so on.  Check out the [Service Worker Cookbook][ServiceWorkerCookbook]  provided by Mozilla for a number of useful service worker caching ideas.  
+For this tutorial, use the Offline page service worker script on [PWA Builder][PwaBuilderServiceWorker].  Start by customizing the script with more functionality according to your performance requirements, network bandwidth, and so on.  Review the [Service Worker Cookbook][ServiceWorkerCookbook]  provided by Mozilla for a number of useful service worker caching ideas.  
 
 1.  Open [https://www.pwabuilder.com/serviceworker][PwaBuilderServiceWorker] and select the \(default\) **Offline page** service worker and click the **Download service worker** button.  
 1.  Open the download folder and copy the following two files  
@@ -244,7 +244,7 @@ The [Mozilla Services engineering blog][MozillaServicesSendingVapidWebPushNotifi
 
 Now set up routes for handling push-related requests from the PWA client, including serving up the VAPID public key and registering the client to receive pushes.  
 
-In a real scenario, a push notification would likely originate from an event in your server logic.  To simplify things here, you must add a **Push Notification** button to our PWA homepage for generating pushes from our server, and a `/sendNotification` endpoint \(server route\)for handling those requests.  
+In a real scenario, a push notification likely originates from an event in your server logic.  To simplify things here, you must add a **Push Notification** button to our PWA homepage for generating pushes from our server, and a `/sendNotification` endpoint \(server route\)for handling those requests.  
 
 In your `index.js` file, append the following routes just after the VAPID initialization code you added in [Step 2][#step-2---generate-vapid-keys-for-your-server].  
 
@@ -254,7 +254,7 @@ router.get('/vapidPublicKey', function (req, res) {
 });
 
 router.post('/register', function (req, res) {
-    // A real world application would store the subscription info.
+    // A real world application stores the subscription info.
     res.sendStatus(201);
 });
 
@@ -353,7 +353,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```  
 
-Check out the MDN documentation on the [PushManager][MDNPushManager] interface and NPM docs on the [Web-Push][NPMWebPushUsage] library for more details on how the APIs work and various related options.  
+Review the MDN documentation on the [PushManager][MDNPushManager] interface and NPM docs on the [Web-Push][NPMWebPushUsage] library for more details on how the APIs work and various related options.  
 
 ### Step 5 - Set up push and notificationclick event handlers  
 
@@ -419,7 +419,7 @@ Time to test push notifications in your PWA!
     
     ![Notifications in Windows Action Center][ImageWindowsActionCenter]  
     
-    You have the basics of PWA push notifications.  In a real app, the next steps would be to implement a way to manage and store push subscriptions and to properly [encrypt][NPMWebPushEncrypt] payload data being sent across the wire.  
+    You have the basics of PWA push notifications.  In a real app, the next steps are implemented in a way to manage and store push subscriptions and to properly [encrypt][NPMWebPushEncrypt] payload data being sent across the wire.  
     
 ## Going further  
 
@@ -427,12 +427,17 @@ This guide demonstrated the basic anatomy of a Progressive Web App and Microsoft
 
 Of course, there is a lot more that goes into [making a great PWA][PwaEdgehtmlIndexRequirements] beyond what you read here, including responsive design, deep-linking, [cross-browser testing][BrowserStackTestEdgeBrowser] and other [best practices][Webhint] \(not to mention your app functionality!\), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started.  If you have further questions on PWA development with Windows or with Visual Studio, please leave a comment!  
 
-Check out the other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience.  
+Review the other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience.  
 
 *   [Windows tailoring][PwaEdgehtmlWindowsFeatures]. Using simple feature detection, you may progressively enhance your PWA for Windows 10 customers through native Windows Runtime \(WinRT\) APIs, such as those for customizing Windows **Start** menu tile notifications and taskbar jumplists, and \(upon permission\) working with user resources, such as photos, music, and calendar.  
 *   [PWAs in the Microsoft Store][PwaEdgehtmlMicrosoftStore].  Learn more about the benefits of app store distribution and how to submit your PWA.  
 
-Also be sure to explore the great resources from around the dev community!  [MDN web docs][MDNProgressiveWebApps] and [Google Developers][WebDevProgressiveWebApps] have excellent guides on Progressive Web Apps.  [https://pwa.rocks][ProgressiveWebApps] showcases real-world examples of PWAs, and [https://hnpwa.com][HackerNewsProgressiveWebApps] compares different frameworks and performance patterns for implementing a sample \(Hacker News reader\) PWA.  
+## See also  
+
+*   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps] - Excellent guides on Progressive Web Apps.  
+*   [Progressive Web Apps on web.dev][WebDevProgressiveWebApps] - Excellent guides on Progressive Web Apps.  
+*   [Progressive Web Apps rocks][ProgressiveWebApps] - Showcases real-world examples of PWAs.  
+*   [Hacker News readers as Progressive Web Apps][HackerNewsProgressiveWebApps] - Compares different frameworks and performance patterns for implementing a sample \(Hacker News reader\) PWA.  
 
 <!-- image links -->  
 
