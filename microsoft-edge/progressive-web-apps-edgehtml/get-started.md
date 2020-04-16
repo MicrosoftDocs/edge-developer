@@ -53,7 +53,7 @@ A [Web App Manifest][MDNWebAppManifest] is a JSON metadata file describing your 
 If this were an existing live site, you could generate a web app manifest using [PWA Builder][PwaBuilder].  Since it is still an unpublished project, copy a sample manifest.  
 
 1.  In the Visual Studio *Solution Explorer*, right-click the *public* folder and select **Add** > **New File...**, specifying `manifest.json` as the item name.  
-1.  In the `manifest.json` file, copy the following boilerplate code.  
+1.  In the `manifest.json` file, copy the following code.  
 
     ```json
     {
