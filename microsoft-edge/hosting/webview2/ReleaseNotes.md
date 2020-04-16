@@ -36,7 +36,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
     - Added [ICoreWebView2ExperimentalPointerInfo](reference/ICoreWebView2ExperimentalPointerInfo.md)
     - Added [ICoreWebView2ExperimentalCursorChangedEventHandler](reference/ICoreWebView2ExperimentalCursorChangedEventHandler.md)
 *   Updated [FrameNavigationCompleted]() Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
-*   Added [ICoreWebView2EnvironmentOptions](reference/ICoreWebView2EnvironmentOptions.md), check .idl file
+*   Added [ICoreWebView2EnvironmentOptions](), check .idl file
 *   Added [BuiltInErrorPageEnabled](), check .idl file
 *   Updated [RemoteObjectInjection]() ([#113](https://github.com/MicrosoftEdge/WebViewFeedback/issues/113))
 *   Updated [NewWindowRequested](reference/icorewebview2.md#add_newwindowrequested) event to handle requests from context menu. ([#108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/108))
