@@ -2,7 +2,7 @@
 title: Mark Content Scripts as Library Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/25/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -46,7 +46,7 @@ When using the **Sources** panel of Microsoft Edge DevTools to [step through cod
 
 <!-- image links -->  
 
-[ImageMarkContentScriptsLibraryCode]: images/settings-library-code-mark-content-scripts-library-code.msft.png "Figure 1: Enable the Mark content scripts as Library code checkbox"  
+[ImageMarkContentScriptsLibraryCode]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png "Figure 1: Enable the Mark content scripts as Library code checkbox"  
 
 <!-- links -->  
 
