@@ -3,7 +3,7 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -83,11 +83,11 @@ If this were an existing live site, you may generate a web app manifest using [P
     1.  Using a web browser, download this [sample 512x512 PWA image][ImagePwa].  
     1.  Go to the PWA Builder [App Image Generator][PwaBuilderAppImageGenerator], and select the `pwa.png` image you just saved as the **Input Image** and then choose the **Download** button.  
     1.  **Open** and **Extract** the zip file.  
-    1.  In the Visual Studio Solution Explorer, right-click the `public` folder and **Open Folder in File Explorer**.  Create a **New folder** named *images*.  
-    1.  Copy all of the platform folders \(*android*, *chrome*, ...  *windows10*\) from your extracted zip to the `images` folder and close the file explorer window.  Add the folders to your Visual Studio project \(in Solution Explorer, right-click `images` folder and select **Add** > **Existing folder...** for each of the folders\).  
+    1.  In the Visual Studio Solution Explorer, right-click the `public` folder and **Open Folder in File Explorer**.  Create a **New folder** named `images`.  
+    1.  Copy all of the platform folders \(`android`, `chrome`, `windows10`, and so on\) from your extracted zip to the `images` folder and close the file explorer window.  Add the folders to your Visual Studio project \(in Solution Explorer, right-click `images` folder and select **Add** > **Existing folder...** for each of the folders\).  
     1.  Open \(with Visual Studio or any editor\) the `icons.json` file from the extracted zip and copy the `"icons": [...]` array into the `manifest.json` file of your project.  
 
-1.  Now you must associate your web app manifest with your app.  Open the `layout.pug` file \(in *views* folder\) for editing, and add this line right after the stylesheet link.  \(It is simply the Node [pug][PugAttributes] template shorthand for `<link rel='manifest' href='/manifest.json'>`\).  
+1.  Now you must associate your web app manifest with your app.  Open the `layout.pug` file \(in `views` folder\) for editing, and add this line right after the stylesheet link.  \(It is simply the Node [pug][PugAttributes] template shorthand for `<link rel='manifest' href='/manifest.json'>`\).  
     
     ```html
     link(rel='manifest', href='/manifest.json')
@@ -123,7 +123,7 @@ Service Workers is the key technology behind PWAs. Service Workers act as a prox
 
 Service workers are event-driven background threads that run from JavaScript files served up alongside the regular scripts that power your web app.  Because Service workers do not run on the main UI thread, service workers do not have DOM access, though the [UI thread][MDNWorkerPrototypePostMessage] and a [worker thread][MDNDedicatedWorkerGlobalScopePostMessage] is able to communicate using `postMessage()` and `onmessage` event handlers.  
 
-You associate a service worker with your app by registering it to the URL origin of your site \(or a specified path within it\).  Once registered, the service worker file is then downloaded, installed, and activated on the user machine.  For more, *MDN web docs* has a comprehensive guide on [Using Service Workers][MDNUsingServiceWorkers] and a detailed [Service Worker API][MDNServiceWorkerApi] reference.  
+You associate a service worker with your app by registering it to the URL origin of your site \(or a specified path within it\).  Once registered, the service worker file is then downloaded, installed, and activated on the user machine.  For more, MDN web docs has a comprehensive guide on [Using Service Workers][MDNUsingServiceWorkers] and a detailed [Service Worker API][MDNServiceWorkerApi] reference.  
 
 For this tutorial, use the Offline page service worker script on [PWA Builder][PwaBuilderServiceWorker].  Start by customizing the script with more functionality according to your performance requirements, network bandwidth, and so on.  Review the [Service Worker Cookbook][ServiceWorkerCookbook]  provided by Mozilla for a number of useful service worker caching ideas.  
 
