@@ -59,11 +59,11 @@ With [Progressive Web Apps][MDNApps] \(or simply PWAs\), you do not have to deci
     :::column-end:::
 :::row-end:::
 
-By building or converting your existing site to a PWA, to better engage your existing audience with push notifications, app-like integration and offline support.  At the same time, continue to build your audience on the open web, as users discover your PWA through search and link-sharing.  Best of all, you may update your app by simply updating your web server code.  
+By building or converting your existing site to a PWA, you engage better with your existing audience using push notifications, app-like integration, and offline support.  At the same time, you should continue to build your audience on the open web, as users discover your PWA through search and link-sharing.  Best of all, you may update your app by simply updating your web server code.  
 
 ## PWAs on Microsoft Edge (Chromium)  
 
-When you build a *Progressive Web App* targeting web standard APIs, your application may be deployed across platforms and devices and take advantage of the device specific capabilities as available.  PWAs in Microsoft Edge (Chromium) are completely standards-based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store-based deployment or registration.  Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available, including Windows 7, Windows 10, and macOS.  Other benefits include:  
+When you build a Progressive Web App targeting web standard APIs, your application may be deployed across platforms and devices and take advantage of the device specific capabilities as available.  PWAs in Microsoft Edge \(Chromium\) are completely standards-based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store-based deployment or registration.  Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available, including Windows 7, Windows 10, and macOS.  Other benefits include:  
 
 *   Applications may be installed directly from within the browser via the **Install** icon in the navigation bar.  
     
@@ -79,7 +79,7 @@ When you build a *Progressive Web App* targeting web standard APIs, your applica
 *   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app  
 
 > [!IMPORTANT]
-> To tailor PWAs specifically for Windows 10 that send WinRT API requests from JavaScript, see the [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn  more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
+> To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, see the [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
 ## Requirements  
 
