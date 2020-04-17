@@ -21,7 +21,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 **Re-compile your app after updating the NuGet package.** 
 
 *   **Announcement:** Starting with the upcoming Microsoft Edge version 83, evergreen WebView will no longer target the Stable browser channel. Instead, it will target another set of binaries, branded [Microsoft Edge WebView2 Runtime](../webview2.md#microsoft-edge-webview2-runtime), that can be chain-installed through an installer we are currently developing. More details in [App-Distribution](../webview2.md#app-distribution).
-*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Pre-Release vs. Release Package]() to learn about the differences.
+*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Microsoft Edge WebView2 SDK](../webview2.md#microsoft-edge-webview2-sdk) to learn about the differences.
 *   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
     -  CORE_WEBVIEW2_* prefix is now COREWEBVIEW2_*. 
     -  [GetCoreWebView2BrowserVersionInfo](reference/Archived/0.9.430/webview2.idl.md#getcorewebview2browserversioninfo) is now [GetAvailableCoreWebView2BrowserVersionString](reference/webview2.idl.md#getavailablecorewebview2browserversionstring)
