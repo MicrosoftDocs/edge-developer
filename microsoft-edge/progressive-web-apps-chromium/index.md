@@ -12,7 +12,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 # Progressive Web Apps on Windows  
 
-With [Progressive Web Apps][MDNApps] (or simply *PWA*s) you do ot have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device.  That's because PWAs are just websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.  The qualities of a PWA combine the best of the web and native apps.  
+With [Progressive Web Apps][MDNApps] (or simply *PWA*s) you do not have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device.  That's because PWAs are just websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.  The qualities of a PWA combine the best of the web and native apps.  
 
 :::row:::
     :::column:::
