@@ -54,7 +54,7 @@ Many developers use other developer tools, like StackOverflow and VS Code, in th
 
 | | |
 | -------- | ---- |
-| Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|
+| Chinese (Simplified) - 中文（简体）| Chinese (Traditional) - 中文（繁體）|
 | French – français | German - deutsch |
 | Italian - italiano | Portuguese - português | 
 | Korean - 한국어 | Japanese - 日本語 |
