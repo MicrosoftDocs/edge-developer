@@ -50,7 +50,7 @@ const puppeteer = require('puppeteer-core');
 })();
 ```
 
-Change `executablePath` to point to your installation of Microsoft Edge (Chromium). For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`. Save your changes. 
+Change `executablePath` to point to your installation of Microsoft Edge (Chromium). For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`. To find the `executablePath`, navigate to `edge://version`. Save your changes. 
 
 > [!NOTE]
 > Microsoft Edge (EdgeHTML) does not work with `puppeteer-core`. Install the Microsoft Edge preview channels, which leverage Chromium, [here](https://www.microsoftedgeinsider.com/download) to continue following this example if you haven't already.
