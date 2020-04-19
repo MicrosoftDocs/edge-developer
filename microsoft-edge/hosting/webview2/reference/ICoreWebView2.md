@@ -39,6 +39,8 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [remove_NavigationCompleted](#remove_navigationcompleted) | Remove an event handler previously added with add_NavigationCompleted.
 [add_FrameNavigationStarting](#add_framenavigationstarting) | Add an event handler for the FrameNavigationStarting event.
 [remove_FrameNavigationStarting](#remove_framenavigationstarting) | Remove an event handler previously added with add_FrameNavigationStarting.
+[add_FrameNavigationCompleted](#add_framenavigationcompleted) | Add an event handler for the FrameNavigationCompleted event.
+[remove_FrameNavigationCompleted](#remove_framenavigationcompleted) | Remove an event handler previously added with add_FrameNavigationCompleted.
 [add_ScriptDialogOpening](#add_scriptdialogopening) | Add an event handler for the ScriptDialogOpening event.
 [remove_ScriptDialogOpening](#remove_scriptdialogopening) | Remove an event handler previously added with add_ScriptDialogOpening.
 [add_PermissionRequested](#add_permissionrequested) | Add an event handler for the PermissionRequested event.
@@ -460,6 +462,50 @@ FrameNavigationStarting fires when a child frame in the WebView requesting permi
 Remove an event handler previously added with add_FrameNavigationStarting.
 
 > public HRESULT [remove_FrameNavigationStarting](#remove_framenavigationstarting)(EventRegistrationToken token)
+
+#### add_FrameNavigationCompleted 
+
+Add an event handler for the FrameNavigationCompleted event.
+
+> public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler,EventRegistrationToken * token)
+FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
+
+```cpp
+    // Register a handler for the FrameNavigationCompleted event.
+    // Check whether the navigation succeeded, and if not, do something.
+    CHECK_FAILURE(m_webView->add_FrameNavigationCompleted(
+        Callback<ICoreWebView2NavigationCompletedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2NavigationCompletedEventArgs* args)
+                -> HRESULT {
+                BOOL success;
+                CHECK_FAILURE(args->get_IsSuccess(&success));
+                if (!success)
+                {
+                    COREWEBVIEW2_WEB_ERROR_STATUS webErrorStatus;
+                    CHECK_FAILURE(args->get_WebErrorStatus(&webErrorStatus));
+                    std::wstring error_msg = WebErrorStatusToString(webErrorStatus);
+                    MessageBox(nullptr,
+                       (std::wstring(L"IFrame navigation failed with the ") +
+                         L"give in error " + error_msg).c_str(),
+                       L"Navigation Failure", MB_OK);
+                    if (webErrorStatus == COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
+                    {
+                        // Do something here if you want to handle a specific error case.
+                        // In most cases this isn't necessary, because the WebView will
+                        // display its own error page automatically.
+                    }
+                }
+                return S_OK;
+            })
+            .Get(),
+        &m_frameNavigationCompletedToken));
+```
+
+#### remove_FrameNavigationCompleted 
+
+Remove an event handler previously added with add_FrameNavigationCompleted.
+
+> public HRESULT [remove_FrameNavigationCompleted](#remove_framenavigationcompleted)(EventRegistrationToken token)
 
 #### add_ScriptDialogOpening 
 

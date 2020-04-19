@@ -39,6 +39,8 @@ Defines properties that enable, disable, or modify WebView features.
 [put_AreRemoteObjectsAllowed](#put_areremoteobjectsallowed) | Set the AreRemoteObjectsAllowed property.
 [get_IsZoomControlEnabled](#get_iszoomcontrolenabled) | The IsZoomControlEnabled property is used to prevent the user from impacting the zoom of the WebView.
 [put_IsZoomControlEnabled](#put_iszoomcontrolenabled) | Set the IsZoomControlEnabled property.
+[get_IsBuiltInErrorPageEnabled](#get_isbuiltinerrorpageenabled) | The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
+[put_IsBuiltInErrorPageEnabled](#put_isbuiltinerrorpageenabled) | Set the IsBuiltInErrorPageEnabled property.
 
 Setting changes made after NavigationStarting event will not apply until the next top level navigation.
 
@@ -233,3 +235,34 @@ Set the IsZoomControlEnabled property.
 
 > public HRESULT [put_IsZoomControlEnabled](#put_iszoomcontrolenabled)(BOOL enabled)
 
+#### get_IsBuiltInErrorPageEnabled 
+
+The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
+
+> public HRESULT [get_IsBuiltInErrorPageEnabled](#get_isbuiltinerrorpageenabled)(BOOL * enabled)
+Defaults to TRUE. When disabled, blank page will be shown when related error happens.
+
+```cpp
+            BOOL enabled;
+            CHECK_FAILURE(m_settings->get_IsBuiltInErrorPageEnabled(&enabled));
+            if (enabled)
+            {
+                CHECK_FAILURE(m_settings->put_IsBuiltInErrorPageEnabled(FALSE));
+                MessageBox(
+                    nullptr, L"Built-in error page will be disabled for future navigation.",
+                    L"Settings change", MB_OK);
+            }
+            else
+            {
+                CHECK_FAILURE(m_settings->put_IsBuiltInErrorPageEnabled(TRUE));
+                MessageBox(
+                    nullptr, L"Built-in error page will be enabled for future navigation.",
+                    L"Settings change", MB_OK);
+            }
+```
+
+#### put_IsBuiltInErrorPageEnabled 
+
+Set the IsBuiltInErrorPageEnabled property.
+
+> public HRESULT [put_IsBuiltInErrorPageEnabled](#put_isbuiltinerrorpageenabled)(BOOL enabled)
