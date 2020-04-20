@@ -3,11 +3,11 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # interface ICoreWebView2Settings 
@@ -35,10 +35,12 @@ Defines properties that enable, disable, or modify WebView features.
 [put_AreDevToolsEnabled](#put_aredevtoolsenabled) | Set the AreDevToolsEnabled property.
 [get_AreDefaultContextMenusEnabled](#get_aredefaultcontextmenusenabled) | The AreDefaultContextMenusEnabled property is used to prevent default context menus from being shown to user in webview.
 [put_AreDefaultContextMenusEnabled](#put_aredefaultcontextmenusenabled) | Set the AreDefaultContextMenusEnabled property.
-[get_AreRemoteObjectsAllowed](#get_areremoteobjectsallowed) | The AreRemoteObjectsAllowed property is used to control whether remote objects are accessible from the page in webview.
+[get_AreRemoteObjectsAllowed](#get_areremoteobjectsallowed) | The AreRemoteObjectsAllowed property is used to control whether host objects are accessible from the page in webview.
 [put_AreRemoteObjectsAllowed](#put_areremoteobjectsallowed) | Set the AreRemoteObjectsAllowed property.
 [get_IsZoomControlEnabled](#get_iszoomcontrolenabled) | The IsZoomControlEnabled property is used to prevent the user from impacting the zoom of the WebView.
 [put_IsZoomControlEnabled](#put_iszoomcontrolenabled) | Set the IsZoomControlEnabled property.
+[get_IsBuiltInErrorPageEnabled](#get_isbuiltinerrorpageenabled) | The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
+[put_IsBuiltInErrorPageEnabled](#put_isbuiltinerrorpageenabled) | Set the IsBuiltInErrorPageEnabled property.
 
 Setting changes made after NavigationStarting event will not apply until the next top level navigation.
 
@@ -169,7 +171,7 @@ Set the AreDefaultContextMenusEnabled property.
 
 #### get_AreRemoteObjectsAllowed 
 
-The AreRemoteObjectsAllowed property is used to control whether remote objects are accessible from the page in webview.
+The AreRemoteObjectsAllowed property is used to control whether host objects are accessible from the page in webview.
 
 > public HRESULT [get_AreRemoteObjectsAllowed](#get_areremoteobjectsallowed)(BOOL * allowed)
 
@@ -206,7 +208,7 @@ The IsZoomControlEnabled property is used to prevent the user from impacting the
 
 > public HRESULT [get_IsZoomControlEnabled](#get_iszoomcontrolenabled)(BOOL * enabled)
 
-Defaults to TRUE. When disabled, user will not be able to zoom using ctrl+/- or ctrl+mouse wheel, but the zoom can be set via put_ZoomFactor API.
+Defaults to TRUE. When disabled, user will not be able to zoom using ctrl+/- or ctrl+mouse wheel, but the zoom can be set via ZoomFactor API.
 
 ```cpp
             BOOL zoomControlEnabled;
@@ -215,14 +217,14 @@ Defaults to TRUE. When disabled, user will not be able to zoom using ctrl+/- or 
             {
                 CHECK_FAILURE(m_settings->put_IsZoomControlEnabled(FALSE));
                 MessageBox(
-                    nullptr, L"Zoom control is disabled after the next navigation.", L"Settings change",
+                    nullptr, L"Zoom control will be disabled after the next navigation.", L"Settings change",
                     MB_OK);
             }
             else
             {
                 CHECK_FAILURE(m_settings->put_IsZoomControlEnabled(TRUE));
                 MessageBox(
-                    nullptr, L"Zoom control is enabled after the next navigation.", L"Settings change",
+                    nullptr, L"Zoom control will be enabled after the next navigation.", L"Settings change",
                     MB_OK);
             }
 ```
@@ -233,3 +235,34 @@ Set the IsZoomControlEnabled property.
 
 > public HRESULT [put_IsZoomControlEnabled](#put_iszoomcontrolenabled)(BOOL enabled)
 
+#### get_IsBuiltInErrorPageEnabled 
+
+The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
+
+> public HRESULT [get_IsBuiltInErrorPageEnabled](#get_isbuiltinerrorpageenabled)(BOOL * enabled)
+Defaults to TRUE. When disabled, blank page will be shown when related error happens.
+
+```cpp
+            BOOL enabled;
+            CHECK_FAILURE(m_settings->get_IsBuiltInErrorPageEnabled(&enabled));
+            if (enabled)
+            {
+                CHECK_FAILURE(m_settings->put_IsBuiltInErrorPageEnabled(FALSE));
+                MessageBox(
+                    nullptr, L"Built-in error page will be disabled for future navigation.",
+                    L"Settings change", MB_OK);
+            }
+            else
+            {
+                CHECK_FAILURE(m_settings->put_IsBuiltInErrorPageEnabled(TRUE));
+                MessageBox(
+                    nullptr, L"Built-in error page will be enabled for future navigation.",
+                    L"Settings change", MB_OK);
+            }
+```
+
+#### put_IsBuiltInErrorPageEnabled 
+
+Set the IsBuiltInErrorPageEnabled property.
+
+> public HRESULT [put_IsBuiltInErrorPageEnabled](#put_isbuiltinerrorpageenabled)(BOOL enabled)
