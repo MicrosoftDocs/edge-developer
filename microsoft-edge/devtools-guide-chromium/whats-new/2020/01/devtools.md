@@ -55,15 +55,15 @@ Many developers use other developer tools, like StackOverflow and VS Code, in th
 
 :::row:::
    :::column span="":::
-      Chinese \(Simplified\) - 中文\(简体\)
+      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      Chinese \(Traditional\) - 中文\(繁體\)
+      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      French – français
+      French – fran&#231;ais
    :::column-end:::
    :::column span="":::
       German - deutsch
@@ -74,27 +74,27 @@ Many developers use other developer tools, like StackOverflow and VS Code, in th
       Italian - italiano
    :::column-end:::
    :::column span="":::
-      Portuguese - português
+      Japanese - &#26085;&#26412;&#35486;
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Korean - 한국어
+      Korean - &#54620;&#44397;&#50612;
    :::column-end:::
    :::column span="":::
-      Japanese - 日本語
+      Portuguese - portugu&#234;s
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Russian – русский
+      Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
    :::column-end:::
    :::column span="":::
-      Spanish - español
+      Spanish - espa&#241;ol
    :::column-end:::
 :::row-end:::
 
-
+<!--  
 |  |  |  
 |:--- |:--- |  
 | Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|  
@@ -102,6 +102,7 @@ Many developers use other developer tools, like StackOverflow and VS Code, in th
 | Italian - italiano | Portuguese - português |  
 | Korean - 한국어 | Japanese - 日本語 |  
 | Russian – русский | Spanish - español |  
+-->  
 
 The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.  
 
