@@ -69,9 +69,11 @@ node example.js
    Figure 1:  The `example.png` file produced by `example.js`  
 :::image-end:::  
 
-<!--> ##### Figure 1  
+<!--  
+> ##### Figure 1  
 > The `example.png` file produced by `example.js`  
-> ![The example.png file produced by example.js](./media/puppeteer-example.png)  -->  
+> ![The example.png file produced by example.js](./media/puppeteer-example.png)  
+-->  
 
 This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, see [Puppeteer][PuppeteerMain].  
 
@@ -84,9 +86,11 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
    Figure 2:  The **Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
-<!-->> ##### Figure 2  
+<!--  
+> ##### Figure 2  
 > The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The Feedback icon in the Microsoft Edge DevTools](./devtools-guide-chromium/media/devtools-feedback.png)  -->  
+> ![The Feedback icon in the Microsoft Edge DevTools](./devtools-guide-chromium/media/devtools-feedback.png)  
+-->  
 
 ## See also  
 
