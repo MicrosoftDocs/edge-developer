@@ -14,9 +14,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
-## 0.9.XXX
+## 0.9.488
 
-[NuGet package][WebView2NuGetGallery0.9.XXX] | minimum Microsoft Edge version 84.0.XXX.0.
+[NuGet package][WebView2NuGetGallery0.9.488] | minimum Microsoft Edge version 84.0.488.0.
 
 **Re-compile your app after updating the NuGet package.** 
 
@@ -166,5 +166,6 @@ Initial developer preview release.
 [WebView2NuGetGallery0.8.314]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.314"  
 [WebView2NuGetGallery0.8.355]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.355"  
 [WebView2NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.430" 
+[WebView2NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.488"
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/Archived/0.8.355/webview2.idl.md#createwebview2environmentwithdetails "WebView Globals - CreateWebView2EnvironmentWithDetails function"  
