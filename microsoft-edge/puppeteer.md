@@ -63,7 +63,7 @@ Now run `example.js` from the command-line.
 node example.js
 ```  
 
-`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com` and saves an 800x600px screenshot of the page.  You are able to customize the page size with [Page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com` and saves an 800x600px screenshot of the page.  You are able to customize the page size with [page.setViewport()][PuppeteerApipagesetviewport].  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js":::
    Figure 1:  The `example.png` file produced by `example.js`  
@@ -102,15 +102,15 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 *   [Chromium on The Chromium Projects][ChromiumHome]  
 *   [Node.js][NodejsMain]  
 *   [Puppeteer][PuppeteerMain]  
-*   ["puppeteer vs. puppeteer-core][PuppeteerApivscore]  
+*   [puppeteer vs. puppeteer-core][PuppeteerApivscore]  
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[WebdriverChromiumMain] /microsoft-edge/webdriver-chromium.md "WebDriver (Chromium)"  
-[WebdriverEdgehtmlMain] /microsoft-edge/webdriver.md "WebDriver (EdgeHTML)"  
+[WebdriverChromiumMain]: ./webdriver-chromium.md "WebDriver (Chromium)"  
+[WebdriverEdgehtmlMain]: ./webdriver.md "WebDriver (EdgeHTML)"  
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
 
