@@ -103,6 +103,7 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 *   [Node.js][NodejsMain]  
 *   [Puppeteer][PuppeteerMain]  
 *   [puppeteer vs. puppeteer-core][PuppeteerApivscore]  
+*   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]  
 
 <!-- image links -->  
