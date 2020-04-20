@@ -94,8 +94,8 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 
 ## See also  
 
-*   [WebDriver (Chromium)][WebDriverChromiumMain]  
-*   [WebDriver (EdgeHTML)][WebDriverEdgehtmlMain]  
+*   [WebDriver (Chromium)][WebdriverChromiumMain]  
+*   [WebDriver (EdgeHTML)][WebdriverEdgehtmlMain]  
 *   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
 *   [Microsoft Edge: Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
 *   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]  
@@ -109,8 +109,8 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 
 <!-- links -->  
 
-[WebDriverChromiumMain] ./webdriver-chromium.md "WebDriver (Chromium)"  
-[WebDriverEdgehtmlMain] ./webdriver.md "WebDriver (EdgeHTML)"  
+[WebdriverChromiumMain] /microsoft-edge/webdriver-chromium.md "WebDriver (Chromium)"  
+[WebdriverEdgehtmlMain] /microsoft-edge/webdriver.md "WebDriver (EdgeHTML)"  
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
 
