@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/17/2020
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -19,7 +19,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  --> 
+   limitations under the License.  -->  
 
 
 
@@ -27,52 +27,95 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# What's New In DevTools (Microsoft Edge 81) 
+# What's New In DevTools (Microsoft Edge 81)   
 
 
 
-## Announcements from the Microsoft Edge DevTools team
+## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Accessibility improvements to the DevTools  
 
-The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. Every developer building the web should be able to use the DevTools.
+The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.  
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
 > ![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements][ImagePerformanceToolKeyboardReaderImprovements]  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started. 
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon! 
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#963183][crbug963183]
+Chromium issue [#963183][crbug963183]  
 
 ### Using the DevTools in other languages  
-Many developers use other developer tools, like StackOverflow and VS Code, in their native language, not just in English. We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
 
-| | |
-| -------- | ---- |
-| Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|
-| French – français | German - deutsch |
-| Italian - italiano | Portuguese - português | 
-| Korean - 한국어 | Japanese - 日本語 |
-| Russian – русский | Spanish - español |
+Many developers use other developer tools, like StackOverflow and VS Code, in their native language, not just in English.  We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:  
 
-The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`. 
+:::row:::
+   :::column span="":::
+      Chinese \(Simplified\) - 中文\(简体\)
+   :::column-end:::
+   :::column span="":::
+      Chinese \(Traditional\) - 中文\(繁體\)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      French – français
+   :::column-end:::
+   :::column span="":::
+      German - deutsch
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Italian - italiano
+   :::column-end:::
+   :::column span="":::
+      Portuguese - português
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Korean - 한국어
+   :::column-end:::
+   :::column span="":::
+      Japanese - 日本語
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Russian – русский
+   :::column-end:::
+   :::column span="":::
+      Spanish - español
+   :::column-end:::
+:::row-end:::
 
-If you want Microsoft Edge to be in one language and your DevTools to remain in English, press `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**. 
+
+|  |  |  
+|:--- |:--- |  
+| Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|  
+| French – français | German - deutsch |  
+| Italian - italiano | Portuguese - português |  
+| Korean - 한국어 | Japanese - 日本語 |  
+| Russian – русский | Spanish - español |  
+
+The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.  
+
+If you want Microsoft Edge to be in one language and your DevTools to remain in English, press `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**.  
 
 > ##### Figure 2  
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-**Console** messages are not localized. Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
+**Console** messages are not localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.  
 
 If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
 
-Chromium issue [#941561][crbug941561]
+Chromium issue [#941561][crbug941561]  
 
 ### webhint Microsoft Edge extension  
 
@@ -82,7 +125,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 > The Hints tab in the DevTools when the webhint browser extension is installed  
 > ![The Hints tab in the DevTools when the webhint browser extension is installed][ImageHintsTabWebhintExtension]  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and select the Hints tab.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.  
 
 ### 3D View  
 
@@ -94,9 +137,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](#feedback).
+We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](#feedback).  
 
-Chromium issue [#987787][crbug987787]
+Chromium issue [#987787][crbug987787]  
 
 ### Visual Studio Code extensions  
 
@@ -104,7 +147,7 @@ The DevTools team has also released some extensions for [Visual Studio Code \(VS
 
 #### Elements for Microsoft Edge  
 
-Use the Elements tool from within VS Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension.
+Use the Elements tool from within VS Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension.  
 
 > ##### Figure 5  
 > The Elements tool in VS Code using the Elements for Microsoft Edge extension
@@ -118,7 +161,7 @@ With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS C
 
 > ##### Figure 6  
 > The Debugger for Microsoft Edge Extension in VS Code  
-> ![The Debugger for Microsoft Edge Extension in VS Code][ImageDebuggerExtensionVisualStudioCode]
+> ![The Debugger for Microsoft Edge Extension in VS Code][ImageDebuggerExtensionVisualStudioCode]  
 
 For more information, check out [how to debug Microsoft Edge from VS Code][VisualStudioCodeDebuggerEdgeExtension].  
 
@@ -132,8 +175,9 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
-### Visual Studio integration
-In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
+### Visual Studio integration  
+
+In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!  
 
 > ##### Figure 8  
 > Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
@@ -141,128 +185,126 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 
 [Learn more about debugging Microsoft Edge from Visual Studio][MicrosoftVisualStudio].  
 
-### Tracking prevention Console messages
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
+### Tracking prevention Console messages  
+
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.  
 
 > ##### Figure 9  
-> Messages in the Console when tracking prevention blocks access to storage for a tracker
+> Messages in the Console when tracking prevention blocks access to storage for a tracker  
 > ![Messages in the Console when tracking prevention blocks access to storage for a tracker][ImageTrackingPrevention]  
 
 [Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
 
 
 
-## Announcements from the Chromium project
+## Announcements from the Chromium project  
 
-The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
+The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.  
 
 ### Moto G4 support in Device Mode 
 
-After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a Moto G4 viewport from the **Device** list.
+After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a Moto G4 viewport from the **Device** list.  
 
-> ##### Figure 10 
-> Simulating a Moto G4 viewport
+> ##### Figure 10  
+> Simulating a Moto G4 viewport  
 > ![Simulating a Moto G4 viewport][ImageMotoG4]  
 
-Click [Show Device Frame][DeviceFrame] to show the Moto G4 hardware around the viewport.
+Click [Show Device Frame][DeviceFrame] to show the Moto G4 hardware around the viewport.  
 
-> ##### Figure 11 
-> Showing the Moto G4 hardware
+> ##### Figure 11  
+> Showing the Moto G4 hardware  
 > ![Showing the Moto G4 hardware][ImageMotoG4Frame]  
 
-Related features:
+Related features:  
 
-* Open the [Command Menu][CommandMenu] and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).
-* [Throttle the network and CPU][ThrottleNetworkAndCpu] to more accurately simulate a mobile user's web browsing conditions.
+*   Open the [Command Menu][CommandMenu] and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).  
+*   [Throttle the network and CPU][ThrottleNetworkAndCpu] to more accurately simulate a mobile user's web browsing conditions.  
 
 Chromium issue [#924693][crbug924693]  
 
-### Cookie-related updates 
+### Cookie-related updates   
 
-#### Blocked cookies in the Cookies pane 
+#### Blocked cookies in the Cookies pane   
 
-The Cookies pane in the Application panel now displays blocked cookies with a yellow background.
+The Cookies pane in the Application panel now displays blocked cookies with a yellow background.  
 
-> ##### Figure 12
-> Blocked cookies in the Cookies pane of the Application panel
+> ##### Figure 12  
+> Blocked cookies in the Cookies pane of the Application panel  
 > ![Blocked cookies in the Cookies pane of the Application panel][ImageBlockedCookies]  
 
 Chromium issue [#1030258][crbug1030258]  
 
-#### Cookie priority in the Cookie pane 
+#### Cookie priority in the Cookie pane   
 
-The Cookies tables in the Network and Application panels now include a **Priority** column.
+The Cookies tables in the Network and Application panels now include a **Priority** column.  
 
->[!CAUTION]
-> Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.
+> [!CAUTION]
+> Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.  
 
 Chromium issue [#1026879][crbug1026879]  
 
-#### Edit all cookie values 
+#### Edit all cookie values   
 
-All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes. See [Fields][CookiesFields] for an explanation of each column.
+All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  See [Fields][CookiesFields] for an explanation of each column.  
 
-> ##### Figure 13
-> Editing a cookie value
+> ##### Figure 13  
+> Editing a cookie value  
 > ![Editing a cookie value][ImageEditCookie]  
 
-#### Copy as Node.js fetch to include cookie data 
+#### Copy as Node.js fetch to include cookie data   
 
-Right-click a network request and select **Copy** > **Copy as Node.js fetch** to get a
-`fetch` expression that includes cookie data.
+Right-click a network request and select **Copy** > **Copy as Node.js fetch** to get a `fetch` expression that includes cookie data.  
 
-> ##### Figure 14
-> Copy as Node.js fetch
+> ##### Figure 14  
+> Copy as Node.js fetch  
 > ![Copy as Node.js fetch][ImageCopyFetch]  
 
 Chromium issue [#1029826][crbug1029826]  
 
-### More accurate web app manifest icons 
+### More accurate web app manifest icons   
 
-Previously, the Manifest pane in the Application panel sent its own requests in order to
-display web app manifest icons. DevTools now shows the exact same manifest icon that Microsoft Edge uses.
+Previously, the Manifest pane in the Application panel sent its own requests in order to display web app manifest icons.  DevTools now shows the exact same manifest icon that Microsoft Edge uses.  
 
-> ##### Figure 15
-> Icons in the Manifest pane
+> ##### Figure 15  
+> Icons in the Manifest pane  
 > ![Icons in the Manifest pane][ImageManifestIcon]   
 
 Chromium issue [#985402][crbug985402]  
 
-### Hover over CSS content properties to see unescaped values 
+### Hover over CSS content properties to see unescaped values   
 
-Hover over the value of a `content` property to see the unescaped version of the value.
+Hover over the value of a `content` property to see the unescaped version of the value.  
 
-For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element you see an
-escaped string in the Styles pane:
+For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element you see an escaped string in the Styles pane:  
 
-> ##### Figure 16
-> The escaped string
+> ##### Figure 16  
+> The escaped string  
 > ![The escaped string][ImageEscapedString]   
 
-When you hover over the `content` value you see the unescaped value:
+When you hover over the `content` value you see the unescaped value:  
 
-> ##### Figure 17
-> The unescaped value
+> ##### Figure 17  
+> The unescaped value  
 > ![The unescaped value][ImageUnescapedString]   
 
-### More detailed source map errors in the Console 
+### More detailed source map errors in the Console   
 
-The Console now provides more detail on why a source map failed to load or parse. Previously it just provided an error without explaining what went wrong.
+The Console now provides more detail on why a source map failed to load or parse.  Previously it just provided an error without explaining what went wrong.  
 
-> ##### Figure 18
-> A source map loading error in the Console
+> ##### Figure 18  
+> A source map loading error in the Console  
 > ![A source map loading error in the Console][ImageSourcemapError]  
 
-### Setting for disabling scrolling past the end of a file 
+### Setting for disabling scrolling past the end of a file   
 
-Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.
+Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.  
 
-> ##### Figure 19
-> Disabling **Allow scrolling past end of file** in Settings
+> ##### Figure 19  
+> Disabling **Allow scrolling past end of file** in Settings  
 > ![Disabling Allow scrolling past end of file][ImageSettings]  
 
-> ##### Figure 20
-> Scrolling past the end of a file is now disabled in the Sources panel
+> ##### Figure 20  
+> Scrolling past the end of a file is now disabled in the Sources panel  
 > ![Scrolling past the end of a file is now disabled in the Sources panel][ImageScroll]  
 
 ## Feedback   
@@ -271,19 +313,19 @@ Open [Settings][Settings] and then disable **Preferences** > **Sources** > **All
 
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
-*   Send your feedback using the **Feedback** icon in the DevTools 
+*   Send your feedback using the **Feedback** icon in the DevTools  
 
-> ##### Figure 21
+> ##### Figure 21  
 > The **Feedback** icon in the Microsoft Edge DevTools  
 > ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]
-*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository
+*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
+*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
+*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
 ## Download the Microsoft Edge preview channels   
 
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
+If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
 <!-- <<../../_shared/devtools-feedback.md>>
 
