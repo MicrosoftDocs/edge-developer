@@ -3,7 +3,7 @@ description: Guide on how to upload YouTube video for extension submission.
 title: Upload A YouTube Video
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer

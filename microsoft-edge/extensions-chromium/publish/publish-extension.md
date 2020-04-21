@@ -3,7 +3,7 @@ description: Step-wise process to publish Edge (Chromium) Extensions to Microsof
 title: Publish An Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -31,7 +31,7 @@ Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Overview pag
 
 ## Step 2: Upload Your Extension Zip File  
 
-The **Package** page is where you upload the zip file for your Extension submission.  You may only upload one package at a time, so if your Extension is not complete you may upload a work-in-progress package and update at any time before you publish it.  Be sure that your package contains the `manifest.json` file and is working fine on **Microsoft Edge** prior to uploading.  
+The **Package** page is where you upload the zip file for your Extension submission.  You may only upload one package at a time, so if your Extension is not complete you may upload a work-in-progress package and update at any time before you publish it.  Be sure that your package contains the `manifest.json` file and is working fine on Microsoft Edge prior to uploading.  
 Upload the package by dragging it into the upload field or by selecting **Browse your files**.  The Package page validates the Extensions zip file and displays that **success or failure status of your upload**.  If the package passes validation; it is uploaded successfully and you see a success message.  If the package fails validation; the package is not accepted and you see an error message.  If there are errors in the package, resolve the issues and try uploading it again.  
 
 After successful upload, review your Extension details and click **Next** to proceed.  
@@ -281,15 +281,15 @@ Make sure to include the following \(if applicable for your Extension\):
 
 After completing the above details, click **Publish** to submit your Extension in Microsoft Edge Addons.  
 
-When you finish creating the submission for your Extension and click **Publish**, the submission enters the certification step.  This process usually is completed within a couple of days, though in some cases it may take up to 7 business days.  After your submission passes certification, your Extension is published in Microsoft Edge Addons unless you selected the Publishing hold options to specify that it should not be released until a certain date.  You are notified when your submission is published, and the status of your Extension in the dashboard changes to **In the Store**.  
+When you finish creating the submission for your Extension and click **Publish**, the submission enters the certification step.  This process usually is completed within a couple of days, though in some cases it may take up to 7 business days.  After your submission passes certification, your Extension is published in Microsoft Edge Addons unless you selected the Publishing hold options to specify that it should not be released until a certain date.  You are notified when your submission is published, and the status of your Extension in the dashboard changes to `In the Store`.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge \(Chromium\) Extensions"  
+[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge \(Chromium\) Extensions | Microsoft Docs"  
 
-[MicrosoftEdgeAddonsUploadYouTubeVideo]: upload-video.md "Upload A YouTube Video | Microsoft Docs"  
+[MicrosoftEdgeAddonsUploadYouTubeVideo]: ./upload-video.md "Upload A YouTube Video | Microsoft Docs"  
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
