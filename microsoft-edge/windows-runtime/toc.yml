@@ -8,15 +8,15 @@
      items: 
        - name: Special Error Properties from Asynchronous Windows Runtime Methods
          href: special-error-properties-from-asynchronous-windows-runtime-methods.md
-     - name: Handling Windows Runtime Events in JavaScript
-       href: handling-windows-runtime-events-in-javascript.md
-     - name: JavaScript Representation of Windows Runtime Types
-       href: javascript-representation-of-windows-runtime-types.md
-     - name: Windows Runtime DateTime and TimeSpan Representations
-       href: windows-runtime-datetime-and-timespan-representations.md
-     - name: Error Codes for Windows Runtime Apps using JavaScript
-       href: error-codes-for-windows-runtime-apps-using-javascript.md
-  - name: Reference (WinRT)
-    items:
-      - name: MSApp
-        href: reference/msapp.md
+       - name: Handling Windows Runtime Events in JavaScript
+         href: handling-windows-runtime-events-in-javascript.md
+       - name: JavaScript Representation of Windows Runtime Types
+         href: javascript-representation-of-windows-runtime-types.md
+       - name: Windows Runtime DateTime and TimeSpan Representations
+         href: windows-runtime-datetime-and-timespan-representations.md
+       - name: Error Codes for Windows Runtime Apps using JavaScript
+         href: error-codes-for-windows-runtime-apps-using-javascript.md
+- name: Reference (WinRT)
+  items:
+    - name: MSApp
+      href: reference/msapp.md
