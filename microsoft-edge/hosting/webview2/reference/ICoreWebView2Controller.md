@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/22/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -200,7 +200,7 @@ Update Bounds and ZoomFactor properties at the same time.
 
 > public HRESULT [SetBoundsAndZoomFactor](#setboundsandzoomfactor)(RECT bounds,double zoomFactor)
 
-This operation is atomic from the host's perspecive. After returning from this function, the Bounds and ZoomFactor properties will have both been updated if the function is successful, or neither will be updated if the function fails. If Bounds and ZoomFactor are both updated by the same scale (i.e. Bounds and ZoomFactor are both doubled), then the page will not see a change in window.innerWidth/innerHeight and the WebView will render the content at the new size and zoom without intermediate renderings. This function can also be used to update just one of ZoomFactor or Bounds by passing in the new value for one and the current value for the other.
+This operation is atomic from the host's perspective. After returning from this function, the Bounds and ZoomFactor properties will have both been updated if the function is successful, or neither will be updated if the function fails. If Bounds and ZoomFactor are both updated by the same scale (i.e. Bounds and ZoomFactor are both doubled), then the page will not see a change in window.innerWidth/innerHeight and the WebView will render the content at the new size and zoom without intermediate renderings. This function can also be used to update just one of ZoomFactor or Bounds by passing in the new value for one and the current value for the other.
 
 ```cpp
 void ViewComponent::SetScale(float scale)
@@ -478,7 +478,7 @@ Closes the WebView and cleans up the underlying browser instance.
 
 > public HRESULT [Close](#close)()
 
-Cleaning up the browser instace will release the resources powering the WebView. The browser instance will be shut down if there are no other WebViews using it.
+Cleaning up the browser instance will release the resources powering the WebView. The browser instance will be shut down if there are no other WebViews using it.
 
 After calling Close, all method calls will fail and event handlers will stop firing. Specifically, the WebView will release its references to its event handlers when Close is called.
 

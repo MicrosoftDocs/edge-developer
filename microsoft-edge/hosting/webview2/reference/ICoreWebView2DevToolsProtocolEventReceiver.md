@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/22/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,7 +17,7 @@ interface ICoreWebView2DevToolsProtocolEventReceiver
   : public IUnknown
 ```
 
-A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubsribe from that event.
+A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.
 
 ## Summary
 

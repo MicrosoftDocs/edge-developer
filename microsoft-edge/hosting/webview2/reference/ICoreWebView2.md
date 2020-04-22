@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/22/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -468,6 +468,7 @@ Remove an event handler previously added with add_FrameNavigationStarting.
 Add an event handler for the FrameNavigationCompleted event.
 
 > public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler,EventRegistrationToken * token)
+
 FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
 
 ```cpp

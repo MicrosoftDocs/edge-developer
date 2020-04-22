@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/22/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -240,6 +240,7 @@ Set the IsZoomControlEnabled property.
 The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
 
 > public HRESULT [get_IsBuiltInErrorPageEnabled](#get_isbuiltinerrorpageenabled)(BOOL * enabled)
+
 Defaults to TRUE. When disabled, blank page will be shown when related error happens.
 
 ```cpp
@@ -266,3 +267,4 @@ Defaults to TRUE. When disabled, blank page will be shown when related error hap
 Set the IsBuiltInErrorPageEnabled property.
 
 > public HRESULT [put_IsBuiltInErrorPageEnabled](#put_isbuiltinerrorpageenabled)(BOOL enabled)
+
