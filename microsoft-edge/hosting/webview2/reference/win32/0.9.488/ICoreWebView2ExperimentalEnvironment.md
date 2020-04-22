@@ -30,7 +30,7 @@ This interface is an extension of the [ICoreWebView2Environment](ICoreWebView2En
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.
 
-An object implementing the [ICoreWebView2ExperimentalEnvironment](#icorewebview2experimentalenvironment) interface will also implement [ICoreWebView2Environment](ICoreWebView2Environment.md).
+An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface will also implement [ICoreWebView2Environment](ICoreWebView2Environment.md).
 
 ## Members
 

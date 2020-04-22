@@ -177,9 +177,9 @@ bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 
 A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
 
-> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId,HWND parentWindow,struct [COREWEBVIEW2_MATRIX_4X4](ICoreWebView2ExperimentalCompositionController--COREWEBVIEW2_MATRIX_4X4.md) transform,[ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
+> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId,HWND parentWindow,struct [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) transform,[ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
 
-parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The [COREWEBVIEW2_MATRIX_4X4](ICoreWebView2ExperimentalCompositionController--COREWEBVIEW2_MATRIX_4X4.md) is the transfrom from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
+parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) is the transfrom from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
 
 #### SendPointerInput 
 

@@ -24,7 +24,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 *   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Microsoft Edge WebView2 SDK](../webview2.md#microsoft-edge-webview2-sdk) to learn about the differences.
 *   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
     -  CORE_WEBVIEW2_* prefix is now COREWEBVIEW2_*. 
-    -  [GetCoreWebView2BrowserVersionInfo](reference/win32/0.9.430/webview2.idl.md#getcorewebview2browserversioninfo) is now [GetAvailableCoreWebView2BrowserVersionString](reference/webview2.idl.md#getavailablecorewebview2browserversionstring)
+    -  [GetCoreWebView2BrowserVersionInfo](reference/win32/0.9.430/webview2.idl.md#getcorewebview2browserversioninfo) is now [GetAvailableCoreWebView2BrowserVersionString](reference/win32/0.9.488/webview2.idl.md#getavailablecorewebview2browserversionstring)
     -   [get_BrowserVersionInfo](reference/win32/0.9.430/icorewebview2environment.md#get_browserversioninfo) is now [get_BrowserVersionString](reference/win32/0.9.488/icorewebview2environment.md#get_browserversionstring)
     - [AddRemoteObject](reference/win32/0.9.430/icorewebview2.md#addremoteobject) is now [AddHostObjectToScript](reference/win32/0.9.488/icorewebview2.md#addhostobjecttoscript)
     - [RemoveRemoteObject](reference/win32/0.9.430/icorewebview2.md#removeremoteobject) is now [RemoveHostObjectFromScript](reference/win32/0.9.488/icorewebview2.md#removehostobjectfromscript)
@@ -35,7 +35,7 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 	- getRemote is now getHostProperty
 	- setRemote is now setHostProperty
 	- applyRemote is now applyHostFunction
-*   **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/webview2.idl.md#createcorewebview2environmentwithdetails) is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/webview2.idl.md#createcorewebview2environmentwithoptions).  
+*   **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/win32/0.9.488/webview2.idl.md#createcorewebview2environmentwithdetails) is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/win32/0.9.488/webview2.idl.md#createcorewebview2environmentwithoptions).  
 *   Added [FrameNavigationCompleted](reference/win32/0.9.488/icorewebview2.md#add_framenavigationcompleted) Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
 *   Added [ICoreWebView2EnvironmentOptions](reference/win32/0.9.488/ICoreWebView2EnvironmentOptions.md) interface, which can be used to determine the version of the WebView2 Runtime the application targets.
 *   Added [IsBuiltInErrorPageEnabled](reference/win32/0.9.488/ICoreWebView2Settings.md#get_isbuiltinerrorpageenabled) setting. Now, you can chose to enable or disable the built in error page for navigation failure and render process failure.
