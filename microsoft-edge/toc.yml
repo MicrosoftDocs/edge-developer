@@ -488,3 +488,4 @@
       href: https://docs.microsoft.com/microsoft-edge/webvr/
     - name: Windows Runtime (WinRT)
       href: windows-runtime/toc.yml
+      topicHref: windows-runtime/index.md

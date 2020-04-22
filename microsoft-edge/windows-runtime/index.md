@@ -3,7 +3,7 @@ description: Use the Windows Runtime (WinRT) to call native Windows APIs from yo
 title: Windows Runtime (WinRT) for JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
