@@ -507,5 +507,5 @@
               href: windows-runtime/windows-runtime-datetime-and-timespan-representations.md
             - name: Error Codes for Windows Runtime Apps using JavaScript
               href: windows-runtime/error-codes-for-windows-runtime-apps-using-javascript.md
-        - name: Reference
-          href: windows-runtime/reference/toc.md
+        - name: Reference (WinRT)
+          href: windows-runtime/reference/toc.yml
