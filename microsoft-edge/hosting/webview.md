@@ -3,7 +3,7 @@ description: Host web content in your Windows 10 app with the WebView (EdgeHTML)
 title: Microsoft Edge WebView for Windows 10 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -37,7 +37,7 @@ if (MSHTMLWebViewElement) {
 
 ### WebView versus iframe
 
-Like a standard HTML [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
+Like a standard HTML [iframe](https://developer.mozilla.org/docs/Web/HTML/Element/iframe) element,  you can use WebView to load remote pages over HTTP and local pages (*ms-appx-web:///*) from your app package. However, the WebView can also:
 
  - Load pages and resources from your [ApplicationData](/uwp/api/Windows.Storage.ApplicationData) (local, roaming, temp) folders (*ms-appdata:///*) and [in-memory streams](/microsoft-edge/hosting/webview#buildlocalstreamuri) (*ms-local-stream:///*)
 
@@ -76,7 +76,7 @@ Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-we
 
 ### WinRT API access
 
-A UWP app may allow HTML documents inside WebViews to have access to WinRT APIs. This is via the WindowsRuntimeAccess attribute of the Rule child elements of the ApplicationContentUriRules element of the AppxManifest.xml of the UWP app. Set WindowsRuntimeAccess to 'all' and HTML documents with matching URIs will be allowed to use WinRT. This is the same as providing WinRT access to HTML content in JavaScript UWP apps so see [Call WinRT APIs from your PWA](/microsoft-edge/progressive-web-apps/windows-features#call-winrt-apis-from-your-pwa) for more information.
+A UWP app may allow HTML documents inside WebViews to have access to WinRT APIs. This is via the WindowsRuntimeAccess attribute of the Rule child elements of the ApplicationContentUriRules element of the AppxManifest.xml of the UWP app. Set WindowsRuntimeAccess to 'all' and HTML documents with matching URIs will be allowed to use WinRT. This is the same as providing WinRT access to HTML content in JavaScript UWP apps so see [Call WinRT APIs from your PWA](/microsoft-edge/progressive-web-apps-edgehtml/windows-features#call-winrt-apis-from-your-pwa) for more information.
 
 UI related WinRT APIs may not work when called from a WebView running on its own thread but may work when called from a WebView running in a separate WebView process. When using a WebView on its own unique thread, that thread is not the app's view thread. Some UI related WinRT APIs require to be called from the app's view thread. WebViews created in a separate WebView process do run on a view thread and so should not face the same restrictions as WebView's running on their own unique thread. If you have trouble with UI related WinRT APIs in a WebView ensure that you're using a WebView in its own WebView process as described above.
 
@@ -119,7 +119,7 @@ webview.removeEventListener("departingFocus", handler);
 
 ### MSWebViewContainsFullScreenElementChanged
 
-Occurs when the status changes of whether or not the **webview** currently contains a full screen element. Use the containsFullScreenElement property to the current value. Full screen element here refers to the [Fullscreen DOM APIs](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) notion of a full screen element via the element.requestFullScreen and document.exitFullScreen DOM functions.
+Occurs when the status changes of whether or not the **webview** currently contains a full screen element. Use the containsFullScreenElement property to the current value. Full screen element here refers to the [Fullscreen DOM APIs](https://developer.mozilla.org/docs/Web/API/Fullscreen_API) notion of a full screen element via the element.requestFullScreen and document.exitFullScreen DOM functions.
 
 ```js
 function containsFullScreenElementChangedHandler(eventInfo) {
@@ -660,6 +660,7 @@ let name = "exampleProperty";
 webview.addWebAllowedObject(name, applicationObject);
 webview.navigate("https://example.com/"); // applicationObject will be available as window.exampleProperty on https://example.com
 ```
+
 #### Parameters
 *name*
 * Type: **String**
@@ -687,6 +688,7 @@ Creates a URI that you can pass to [navigateToLocalStreamUri](#methods).
 ```js
 var string = webview.buildLocalStreamUri(contentIdentifier, relativePath);
 ```
+
 #### Parameters
 *contentIdentifier*
 * Type: **String**
@@ -718,6 +720,7 @@ Creates an image of the current [webview element](./webview.md) and write it to 
 ```js
 var capturePreviewToBlobAsync = webview.capturePreviewToBlobAsync();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -733,6 +736,7 @@ Asynchronously gets a [DataPackage](https://docs.microsoft.com/uwp/api/Windows.A
 ```js
 var msWebViewAsyncOperation = webview.captureSelectedContentToDataPackageAsync();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -760,6 +764,7 @@ As an asynchronous action, executes the specified script function from the curre
 ```js
 webview.invokeScriptAsync(functionName, ...args)
 ```
+
 #### Parameters
 
 **functionName**
@@ -793,6 +798,7 @@ Returns a list of deferred permission requests issued by content in the **webvie
 ```js
 var sequence<PermissionRequest> = x-ms-webview.getDeferredPermissionRequests();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -817,6 +823,7 @@ Returns the specified deferred permission request.
 ```js
 var deferredPermissionRequest = x-ms-webview.getDeferredPermissionRequestById(id);
 ```
+
 #### Parameters
 *id*
 * Type: **unsigned long**
@@ -842,6 +849,7 @@ Navigates the **webview** to the previous page in the navigation history.
 ```js
 webview.goBack();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -855,6 +863,7 @@ Navigates the **webview** to the next page in the navigation history.
 ```js
 webview.goForward();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -868,6 +877,7 @@ Loads the HTML content at the specified Uniform Resource Identifier (URI).
 ```js
 webview.navigate(uri);
 ```
+
 #### Parameters
 
 **uri**
@@ -891,6 +901,7 @@ const origin = {
 };
 webview.navigateFocus(navigationReason, origin);
 ```
+
 #### Parameters
 *navigationReason*
 * Type: **String**
@@ -910,6 +921,7 @@ Loads local web content at the specified URI using a [**UriToStreamResolver**](/
 ```js
 webview.navigateToLocalStreamUri(source, streamResolver); 
 ```
+
 #### Parameters
 
 *source*
@@ -930,6 +942,7 @@ Loads the specified HTML content as a new document.
 ```js
 webview.navigateToString(contents);
 ```
+
 #### Parameters
 
 *contents*
@@ -946,6 +959,7 @@ Navigates the webview to a Uniform Resource Identifier (URI) with a POST request
 ```js
 webview.navigateWithHttpRequestMessage(requestMessage);
 ```
+
 #### Parameters
 
 *requestMessage*
@@ -968,6 +982,7 @@ Reloads the current content in the **webview**.
 ```js
 webview.refresh();
 ```
+
 #### Parameters
 This method has no parameters.
 
@@ -982,6 +997,7 @@ Halts the current **webview** navigation or download.
 ```js
 webview.stop();
 ```
+
 #### Parameters
 This method has no parameters.
 

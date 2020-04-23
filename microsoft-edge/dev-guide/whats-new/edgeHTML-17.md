@@ -3,7 +3,7 @@ title: New features and APIs in EdgeHTML 17
 description: This guide provides an overview of the developer features and standards included in EdgeHTML 17.
 author: mattwojo
 ms.author: mattwoj
-ms.date: 09/26/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -19,7 +19,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 ### ARIA 1.1 Roles, States, and Events
 
-EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](http://www.w3.org/TR/wai-aria-1.1/), including [feed](https://www.w3.org/TR/wai-aria-1.1/#feed), [form](https://www.w3.org/TR/wai-aria-1.1/#form), [aria-haspopup](http://www.w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](http://www.w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299). With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1. Check out the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge.
+EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](https://w3.org/TR/wai-aria-1.1/), including [feed](https://www.w3.org/TR/wai-aria-1.1/#feed), [form](https://www.w3.org/TR/wai-aria-1.1/#form), [aria-haspopup](https://w3.org/TR/wai-aria-1.1/#aria-haspopup), [aria-placeholder](https://w3.org/TR/wai-aria-1.1/#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299). With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1. Check out the [Accessibility](https://docs.microsoft.com/microsoft-edge/accessibility) docs for more information about accessibility in Microsoft Edge.
 
 ### CSS masking
 
@@ -75,16 +75,16 @@ EdgeHTML 17 includes updates to [HTMLMediaElement](https://developer.mozilla.org
 * The addition of the [`setSinkId()`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/setSinkId) method and [`sinkId`](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/sinkId) property allow developers to select the audio output device. (**Note**: this is not yet avaiable in RTC)
 
 ### Media Capture API 
-Microsoft Edge now supports Screen Capture in RTC via the [Media Capture API](https://w3c.github.io/mediacapture-screen-share/). This feature lets web pages capture output of a user’s display device, commonly used to broadcast a desktop for plugin-free virtual meetings or presentation
+Microsoft Edge now supports Screen Capture in RTC via the [Media Capture API](https://w3c.github.io/mediacapture-screen-share/). This feature lets web pages capture output of a user's display device, commonly used to broadcast a desktop for plugin-free virtual meetings or presentation
 
 ### Progressive Web Apps
-Starting in EdgeHTML 17, Service Workers and push notifications are enabled by default (learn more about these features in the blog post [Service Worker: Going beyond the page](http://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/). This completes the suite of technologies (including Fetch networking and the Push and Cache APIs) that lays the technical foundation for progressive Web Apps (PWAs) on Windows 10.
+Starting in EdgeHTML 17, Service Workers and push notifications are enabled by default (learn more about these features in the blog post [Service Worker: Going beyond the page](https://blogs.windows.com/msedgedev/2017/12/19/service-workers-going-beyond-page/). This completes the suite of technologies (including Fetch networking and the Push and Cache APIs) that lays the technical foundation for progressive Web Apps (PWAs) on Windows 10.
 
 PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement) with native app-like features on supporting platforms and browser engines, such as installation / home screen launch, offline support, and push notifications. On Windows 10 with the Microsoft Edge (EdgeHTML) engine, PWAs enjoy the added advantage of running independently of the browser window as [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/whats-a-uwp) apps.
 
 Beyond PWAs, Service Workers and the Cache API allow developers the ability to intercept network requests and respond from the cache. A website need not even been a full-blow web app to take advantage of the Service Worker cache for fine-tined page load performance and reliability, as well as the ability to provide an offline experience during periods of no internet or poor-quality connection.  
 
-Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
+Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps-edgehtml/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.
 
 ### Web Security
 EdgeHTML 17 introduces support for Subresource Integrity (SRI). [Subresource Integrity](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) is a secuirty feature that allows browsers to verify that fetched resources (e.g. images, scripts, fonts, etc.) are delivered without unexpected manipulation. 

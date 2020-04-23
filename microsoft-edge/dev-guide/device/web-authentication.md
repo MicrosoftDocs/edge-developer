@@ -54,6 +54,7 @@ The makeCredential method takes the following parameters:
 The resulting promise returns an object representing the credential that you then send back to the server for validating future authentications:
 
 **Client**
+
 ```
 <script src="webauthn.js"><!-- polyfill to map Microsoft Edge experimental implementation to current W3C spec --></script>
 <script>
@@ -83,6 +84,7 @@ Once the credential is created on the client, the next time the user attempts to
 The getAssertion method takes the *challenge* as its only required parameter. The challenge is the randomly generated quantity that the server will send down to a client to sign with the user's private key. For example:
 
 **Server**
+
 ```
 var crypto = require('crypto');
 
@@ -110,6 +112,7 @@ Strategy.prototype.generateVerifiableString = function(data) {
 Once the getAssertion call is made, Microsoft Edge will show the Windows Hello prompt, which will verify the identity of the user using biometrics. After the user is verified, the challenge will be signed within the TPM and the promise will return with an assertion object that contains the signature and other metadata for you to send to the server:
 
 **Client**
+
 ```
 <script src="webauthn.js"><!-- polyfill to map Microsoft Edge experimental implementation to current W3C spec --></script>
 <script>
@@ -185,6 +188,7 @@ The current Microsoft Edge implementation is based on an earlier draft of the We
 On that last point, the specific Microsoft Edge differences are noted in the following Web Authentication spec definitions:
 
 ### W3C spec
+
 ```
 partial interface Window {
     readonly attribute WebAuthentication webauthn; // msCredentials

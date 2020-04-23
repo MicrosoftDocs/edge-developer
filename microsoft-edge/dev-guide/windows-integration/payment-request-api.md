@@ -3,7 +3,7 @@ description: Learn how the Payment Request API enables Microsoft Edge to act a
 title: Dev guide - Payment Request API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
@@ -14,11 +14,11 @@ keywords: edge, web development, html, css, javascript, developer
 
 E-commerce sales continue growing at a rapid pace. According to [eMarketer](https://www.emarketer.com/), by 2018 digital sales are forecasted to increase by 23% from the levels measured in 2013.  While consumers and businesses enjoy the convenience of e-commerce sales, challenges remain.  Today each e-commerce website owner needs to invest time to develop high quality payment checkout flows and validation rules.  Consumers need to navigate different payment checkout flows and re-enter the same payment and shipping information on every site where they shop.  This can be time consuming and frustrating for consumers, leading to a high rate of shopping cart abandonment and decreased sales for merchants. Merchants [estimate](http://baymard.com/lists/cart-abandonment-rate) between 60% and 70% of shopping carts are abandoned.      
 
-The [Payment Request API](http://www.w3.org/TR/payment-request/) standardizes the payment checkout process. This API requires less customization for web developers and provides a faster, more consistent, and therefore, less confusing experience for consumers.  Because consumers can select payment instruments and shipping addresses from their Microsoft account, they are required to enter less data to complete purchases which reduces the time and data entry required to complete a payment.   
+The [Payment Request API](https://w3.org/TR/payment-request/) standardizes the payment checkout process. This API requires less customization for web developers and provides a faster, more consistent, and therefore, less confusing experience for consumers.  Because consumers can select payment instruments and shipping addresses from their Microsoft account, they are required to enter less data to complete purchases which reduces the time and data entry required to complete a payment.   
 
-The [Payment Request API](http://www.w3.org/TR/payment-request/) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. 
+The [Payment Request API](https://w3.org/TR/payment-request/) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud. 
   
-In summary, when using the [Payment Request API](http://www.w3.org/TR/payment-request/), customers shop on merchant websites as normal.  When ready to pay, the merchant website calls the **Payment Request** API to create a **Payment Request** and passes the relevant payment information (e.g. supported payment methods, purchase amount, currency, etc.) to the browser.
+In summary, when using the [Payment Request API](https://w3.org/TR/payment-request/), customers shop on merchant websites as normal.  When ready to pay, the merchant website calls the **Payment Request** API to create a **Payment Request** and passes the relevant payment information (e.g. supported payment methods, purchase amount, currency, etc.) to the browser.
 
 ![Payment request construct](./../media/payment_request_construct.png)
 
@@ -59,6 +59,7 @@ var supportedInstruments = [{
     }         
 }]; 
 ```
+
 The [`details`](https://msdn.microsoft.com/library/mt790440#PaymentRequest_params) parameter contains information that the merchant wishes to convey to the customer about the transaction.  These include order summary items like total, tax, shipping amount, and other summary level items impacting the payment amount. These are not intended to be order line items. 
   
 The [`details`](https://msdn.microsoft.com/library/mt790440#PaymentRequest_params) parameter is also used to define shipping options available to the customer when required.  More details are included in the **Payment Request** with Shipping section below. 
@@ -82,7 +83,7 @@ var details = {
         amount: {currency: 'USD', value: '174.99'}
     }, {
         label: 'Taxes',
-        amount: {currency: "USD", '18.99'}
+        amount: {currency: "USD", value: '18.99'}
     }],
 };  
 ```
@@ -110,10 +111,11 @@ The [`show()`](https://msdn.microsoft.com/library/mt790448) method is called by 
 ```js
 paymentRequest.show().then(paymentInstrumentResponse => {
 
-paymentInstrumentResponse.complete('success').then((); }).catch(error {
-   handlePaymentRequestError(error); 
+paymentInstrumentResponse.complete('success').then().catch(error => {
+    handlePaymentRequestError(error); 
 });
 ```
+
 ![Confirm and pay details](./../media/pay_screen_default.png)
 
 ## Aborting a Payment Request
@@ -161,6 +163,7 @@ When the user selects or updates the shipping address, the [`onshippingaddressch
 Shipping options can be presented to the customer by adding [`shippingOptions`](https://msdn.microsoft.com/library/mt790440) to the [`details`](https://msdn.microsoft.com/library/mt790440#PaymentRequest_params) parameter.  A default can be established by setting `selected = True` for one of the shipping options. 
  
 When the user selects or updates the shippingOptions, the [`onshippingoptionchange`](https://msdn.microsoft.com/library/mt790436) event will run.  The website, using an event listener, will be aware of the change and can update the [`details`](https://msdn.microsoft.com/library/mt790440#PaymentRequest_params) parameter with the correct shipping amount.   
+
 ```js
 var details = {
     total: {
@@ -200,4 +203,4 @@ var options = {
 [Payment Request API](https://msdn.microsoft.com/library/mt790447)
 
 ## Specification
-[Payment Request API](http://www.w3.org/TR/payment-request/)
+[Payment Request API](https://w3.org/TR/payment-request/)

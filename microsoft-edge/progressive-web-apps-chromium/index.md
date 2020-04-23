@@ -3,122 +3,136 @@ description: Progressive Web Apps run natively on Windows 10.  Here is everythin
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
 
-# Progressive Web Apps on Windows
+# Progressive Web Apps on Windows  
 
-With [Progressive Web Apps](https://developer.mozilla.org/en-US/Apps/Progressive) (or simply *PWA*s) you dont have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device. That's because PWAs are just websites that are [progressively enhanced](https://alistapart.com/article/understandingprogressiveenhancement) to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps. 
+With [Progressive Web Apps][MDNApps] \(or simply PWAs\), you do not have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their devices.  PWAs are just websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.  The qualities of a PWA combine the best of the web and native apps.  
 
 :::row:::
     :::column:::
-        ![Discoverable icon](../progressive-web-apps/media/i_search.png)
-        ### [Discoverable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Discoverable)
+        ![Discoverable icon][ImageISearch]
+        ### [Discoverable][MDNPwaAdvantagesDiscoverable]
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
-        ![Installable icon](../progressive-web-apps/media/i_package.png)
-        ### [Installable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Installable)
-        Pin and launch from the home screen
+        ![Installable icon][ImageIPackage]
+        ### [Installable][MDNPwaAdvantagesInstallable]
+        Pin and launch from the home screen, Start Menu, Taskbar, and so on
     :::column-end:::
     :::column:::
-        ![Re-engageable icon](../progressive-web-apps/media/i_push-notification.png)
-        ### [Re-engageable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Re-engageable)
-        Send push notifications, even when the app isn't active
+        ![Re-engageable icon][ImageIPushNotification]
+        ### [Re-engageable][MDNPwaAdvantagesReEngageable]
+        Send push notifications, even when the app is not active
     :::column-end:::
     :::column:::
-        ![Network Independent icon](../progressive-web-apps/media/i_offline.png)
-        ### [Network Independent](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Network_independent)
+        ![Network Independent icon][ImageIOffline]
+        ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]
         Works offline and in low-network conditions
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        ![Progressive icon](../progressive-web-apps/media/i_progressive.png)
-        ### [Progressive](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Progressive)
+        ![Progressive icon][ImageIProgressive]
+        ### [Progressive][MDNPwaAdvantagesProgressive]
         Experience scales up (or down) with device capabilities
     :::column-end:::
     :::column:::
-        ![Safe icon](../progressive-web-apps/media/i_security.png)
-        ### [Safe](https://developer.mozilla.org/en-US/docs/Web/Apps/Progressive/Advantages#Progressive#Safe)
-        Provides a secure HTTPS endpoint and other user safeguards    
+        ![Safe icon][ImageISecurity]
+        ### [Safe][MDNPwaAdvantagesSafe]
+        Provides a secure HTTPS endpoint and other user safeguards
     :::column-end:::
     :::column:::
-        ![Responsive icon](../progressive-web-apps/media/i_responsive.png)
-        ### [Responsive](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Responsive)
-        Adapts to the user's screen size / orientation and input method
+        ![Responsive icon][ImageIResponsive]
+        ### [Responsive][MDNPwaAdvantagesResponsive]
+        Adapts to the user's screen size or orientation and input method
     :::column-end:::
     :::column:::
-        ![Linkable icon](../progressive-web-apps/media/i_link.png)
-        ### [Linkable](https://developer.mozilla.org/en-US/Apps/Progressive/Advantages#Linkable)
+        ![Linkable icon][ImageILink]
+        ### [Linkable][MDNPwaAdvantagesLinkable]
         Share and launch from a standard hyperlink
     :::column-end:::
 :::row-end:::
 
-By building or converting your existing site to a PWA, you can better engage your existing audience with push notifications, app like integration and offline support. At the same time, you can continue building your audience on the open web, as users discover your PWA through search and link-sharing. Best of all, you can update your app by simply updating your web server code.
+By building or converting your existing site to a PWA, you engage better with your existing audience using push notifications, app-like integration, and offline support.  At the same time, you should continue to build your audience on the open web, as users discover your PWA through search and link-sharing.  Best of all, you may update your app by simply updating your web server code.  
 
-## PWAs on Microsoft Edge (Chromium)
+## PWAs on Microsoft Edge (Chromium)  
 
-When you build a *Progressive Web App* targeting web standard APIs, your application can be deployed across platforms and devices and take advantage of the device specific capabilities as available. PWAs in Microsoft Edge (Chromium) are completely standards based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store based deployment or registration. Desktop PWAs are supported on any of the platforms Microsoft Edge (Chromium) is available, including Windows 7, Windows 10 and Mac OS.  Other benefits include:
-   - Applications can be installed directly from within the browser via the "Install" icon in the navigation bar
+When you build a Progressive Web App targeting web standard APIs, your application may be deployed across platforms and devices and take advantage of the device specific capabilities as available.  PWAs in Microsoft Edge \(Chromium\) are completely standards-based from a web platform perspective and enable users to install the app directly from within the browser without the need for Store-based deployment or registration.  Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available, including Windows 7, Windows 10, and macOS.  Other benefits include:  
 
-   ![Install application flyout and icon](./images/Install_PWA.png)
+*   Applications may be installed directly from within the browser via the **Install** icon in the navigation bar.  
+    
+    ![Install application flyout and icon][ImageInstallPwa]  
+    
+*   Applications may also be installed, run and managed from the **Settings** > **Apps** menu  
+    
+    ![Application menu items under settings][ImageAppMenus]  
 
-   - Applications can also be installed, run and managed from the "Settings"->"Apps" menu
-   ![Application menu items under settings](./images/App_menus.png)
-   - Web Notifications are integrated into the Windows notification system
-   - Shared cookie store with the browser profile that installed the app
-   - Access to other browser features via the "..." menu including certificate validation, site permissions, tracking protection and browser extensions
-   - Full access to Microsoft [Edge DevTools](../devtools-guide-chromium/progressive-web-apps.md) for debugging your app 
+*   Web Notifications are integrated into the Windows notification system
+*   Shared cookie store with the browser profile that installed the app
+*   Access to other browser features via the `...` menu including certificate validation, site permissions, tracking protection, and browser extensions
+*   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app  
 
 > [!IMPORTANT]
-> To tailor PWAs specifically for Windows 10 that call WinRT APIs from JavaScript, see the documentation specific to the EdgeHTML PWA features here: [Progressive Web Apps (EdgeHTML)](../progressive-web-apps/index.md). You can learn about testing your PWA on Windows 10, and distributing it in the Microsoft Store.
+> To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, see the [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
+## Requirements  
 
-## Requirements
+To run as a PWA, your server-hosted web app should include following minimum requirements.  
 
-To run as a PWA, your server-hosted web app will at minimum require:
+|  | Requirement | Details | 
+|:--- |:--- |:--- |  
+| X | [HTTPS][WikiHttps] | Protect your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  |  
+| X | [Service Workers][MDNServiceWorkerApi] | Use Service Worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  |  
+| X | [Web App Manifest][MDNWebAppManifest] | Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\), so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  |  
 
-  - [X] [**HTTPS**](https://en.wikipedia.org/wiki/HTTPS). Protect your users by providing a secure connection for server/app communication. Service workers and other PWA technologies will only work with web resources served over a secure connection (or from *localhost* for debugging purposes).  
-  
-  - [X] [**Service workers**](https://developer.mozilla.org/docs/Web/API/Service_Worker_API). Use *service worker* threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  
+To be a great PWA, your app must also meet the following requirements.  
 
-  - [X] [**Web app manifest**](https://developer.mozilla.org/docs/Web/Manifest). Provide a JSON-based metadata file describing key information about your web app (such as icons, language, and URL entry point) so that Windows 10 and other host platforms can provide your PWA users with an installable, native app-like experience.  
+|  | Requirement | Details | 
+|:--- |:--- |:--- |  
+| X | [Cross-browser compatibility][MDNCrossBrowserTesting] | Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  |  
+| X | [Responsive design][WikiResponsiveWebDesign] | Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout], [flexbox][MDNCssFlexibleBoxLayout], CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout] , [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  |  
+| X | [Deep linking][WikiDeepLinking] | Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  |  
+| X | [Best practices][Webhint] | Use code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  |  
+| X | [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
 
-To be a *great* PWA, your app will also need:
+If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, head to the [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore] documentation.  
 
-  - [X] [**Cross-browser compatibility**](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing). Ensure your PWA works by [testing](https://developer.microsoft.com/microsoft-edge/tools/remote/) in different browsers and environments. 
-  
-  - [X] [**Responsive design**](https://en.wikipedia.org/wiki/Responsive_web_design). Employ fluid layouts and flexible images with CSS [grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) and/or [flexbox](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout), [media queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries), and [responsive images](https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) to adapt your UX to your user's device. Use device [emulation tools](../devtools-guide/emulation.md) from your browser to test locally, or set up a [remote debugging session](../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) to test directly on a target device.
-  
-  - [X] [**Deep linking**](https://en.wikipedia.org/wiki/Deep_linking). Route each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.
+## Current availability  
 
-  - [X] [**Best practices**](https://webhint.io/). Use code quality tools like the [Webhint](https://webhint.io/) linter to optimize the efficiency, robustness, safety, and accessibility of your app.
+Browser engine support for Progressive Web App requests for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  
 
-  - [X] [**Chromium PWA Checklist**](https://developers.google.com/web/progressive-web-apps/checklist#baseline). Check your PWA against the Google baseline PWA checklist
-
-If you'd like to turn your PWA into a [Microsoft Store](https://developer.microsoft.com/store) application, head to the [Progressive Web Apps (EdgeHTML)](../progressive-web-apps/microsoft-store.md) documentation.
-
-## Current availability
-
-Browser engine support for *Progressive Web Apps* calls for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API). 
-
-For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform itself has full support for these features that will work across devices where Microsoft Edge (Chromium) browser is supported. Microsoft Edge (Chromium) is currently in it's final beta with a generally available stable release planned for January 2020 with broad distribution following. [More information on Microsoft Edge availability](https://www.microsoftedge.com)
+For Microsoft Edge \(Chromium\), the browser platform includes full support for these features that work across devices where Microsoft Edge \(Chromium\) is supported.  
 
 <!-- image links -->  
+
+[ImageISearch]: media/i_search.png  
+[ImageIPackage]: media/i_package.png  
+[ImageIPushNotification]: media/i_push-notification.png  
+[ImageIOffline]: media/i_offline.png  
+[ImageIProgressive]: media/i_progressive.png  
+[ImageISecurity]: media/i_security.png  
+[ImageIResponsive]: media/i_responsive.png  
+[ImageILink]: media/i_link.png  
+
+[ImageInstallPwa]: ./media/Install_PWA.png  
+[ImageAppMenus]: ./media/App_menus.png  
 
 <!-- links -->  
 
 [DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
 [DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulation"  
+[DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "Debug Progressive Web Apps"  
 [DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17"  
 [DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14"  
-[ProgressiveWebAppsMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
-[ProgressiveWebAppsMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  
+[PwaEdgehtmlIndex]: ../progressive-web-apps-edgehtml/index.md "Progressive Web Apps (EdgeHTML) on Windows"  
+[PwaEdgehtmlMicrosoftStore]: ../progressive-web-apps-edgehtml/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
+<!--PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps-edgehtml/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  -->  
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services \(WNS\) overview"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV"  
@@ -135,6 +149,7 @@ For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform
 [MicrosoftDeveloperWindowsMixedReality]: https://developer.microsoft.com/windows/mixed-reality "Mixed Reality for developers"  
 [MicrosoftDeveloperWindowsSurfaceHub]: https://developer.microsoft.com/windows/surfacehub "Microsoft Surface Hub"  
 [MicrosoftDeveloperStore]: https://developer.microsoft.com/store "Microsoft Developer Store"  
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
 [MicrosoftSupportWindowsFocusAssist]: https://support.microsoft.com/help/4026996/windows-10-turn-focus-assist-on-or-off "Turn Focus assist on or off in Windows 10"  
 [MicrosoftSupportWindowsNotificationSettings]: https://support.microsoft.com/help/4028678/windows-10-change-notification-settings "Change notification settings in Windows 10"  
 
@@ -163,6 +178,8 @@ For the upcoming Microsoft Edge (Chromium) release in 2020, the browser platform
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"  
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
+
+[WebDevGoodPwaChecklist]: https://web.dev/pwa-checklist "What makes a good Progressive Web App? | web.dev"  
 
 [Webhint]: https://webhint.io "webhint"  
 

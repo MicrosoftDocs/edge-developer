@@ -125,7 +125,7 @@ The following table shows the enforcement actions and mitigations that are appli
 > Strict mode blocks more resource loads than Balanced.  The blocking of more resource loads may result in Strict mode appearing to block less tracking requests than Balanced since the trackers making the requests are never loaded.  
 
 > [!NOTE]
-> The Fingerprinting column in [Current tracking prevention behavior](#current-tracking-prevention-behavior) refers to trackers that are solely on the Fingerprinting list.  Trackers that appear on the Fingerprinting list as well as another list are considered non-malicious fingerprinters and are blocked according to their classification on the other lists.
+> The Fingerprinting column in [Current tracking prevention behavior](#current-tracking-prevention-behavior) refers to trackers that are on the Fingerprinting list in addition to another list.  Trackers that appear on solely on the Fingerprinting list are considered non-malicious fingerprinters and are not blocked.
 
 ### InPrivate behavior  
 

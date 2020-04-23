@@ -1,9 +1,9 @@
 ---
 title: What's new in EdgeHTML 18
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
-author: mattwojo
-ms.author: mattwoj
-ms.date: 01/15/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 03/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
@@ -37,9 +37,9 @@ EdgeHTML 18 includes updates to the Chakra JavaScript engine to support new ES a
 
 ### CSS updates
 
-We've made further progress on our experimental [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) implementation (behind the *Enable CSS Masking* flag) with added support for [mask-composite](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-composite), [mask-position](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-position), and [mask-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/mask-repeat). For site compatibility, Microsoft Edge also supports the following *-webkit-* properties: -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
+We've made further progress on our experimental [CSS Masking](https://developer.mozilla.org/docs/Web/CSS/CSS_Masking) implementation (behind the *Enable CSS Masking* flag) with added support for [mask-composite](https://developer.mozilla.org/docs/Web/CSS/mask-composite), [mask-position](https://developer.mozilla.org/docs/Web/CSS/mask-position), and [mask-repeat](https://developer.mozilla.org/docs/Web/CSS/mask-repeat). For site compatibility, Microsoft Edge also supports the following *-webkit-* properties: -webkit-mask, -webkit-mask-composite, -webkit-mask-image, -webkit-mask-position, -webkit-mask-position-x, -webkit-mask-position-y, -webkit-mask-repeat, -webkit-mask-size.
 
-Additionally, Microsoft Edge now has support for [overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap
+Additionally, Microsoft Edge now has support for [overflow-wrap](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
 ) and partial support for [overscroll-behavior](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) (`auto` and `contain` values).
 
 
@@ -71,7 +71,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
 #### Text scaling
 
-The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user acessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
+The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user accessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
 
  For design guidance, check out the [Text scaling](/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.
 
@@ -98,7 +98,7 @@ Four new properties are now supported for web notifications: [`actions`](https:/
 ### WebView
 
 #### Service workers
-[Service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors  of the Microsoft Edge webview ([PWA](/microsoft-edge/hosting/webview), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
+[Service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors of the Microsoft Edge webview ([PWA](/microsoft-edge/hosting/webview), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
 
 x64 app architectures require *Neutral* (Any CPU) or *x64* packages, as service workers are not supported in WoW64 processes. (To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.)
 
@@ -106,7 +106,7 @@ x64 app architectures require *Neutral* (Any CPU) or *x64* packages, as service 
 
 The EdgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/webview) for Windows desktop (Win32) apps has been updated with several new features, including the ability to inject script upon page load before any other scripts on the page are run ([`AddInitializeScript`](/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)) and know when a particular WebViewControl receives or loses focus ([`GotFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus)/[`LostFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)).
 
-Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/en-US/docs/Web/API/Window/open). The [`NewWindowRequested`](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its  [`NewWindowRequestedEventArgs`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral ([`GetDeferral`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)) in order to set a new WebViewControl ([`NewWindow`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)) as the target for the window.open:
+Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/docs/Web/API/Window/open). The [`NewWindowRequested`](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its [`NewWindowRequestedEventArgs`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral ([`GetDeferral`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)) in order to set a new WebViewControl ([`NewWindow`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)) as the target for the window.open:
 
 ```C#
 WebViewControlProcess wvProc;
@@ -115,7 +115,7 @@ WebViewControl webView;
 void OnWebViewControlNewWindowRequested(WebViewControl sender, WebViewControlNewWindowRequestedEventArgs args)
 {
 
-    if (args.Uri.Domain == “mydomain.com”)
+    if (args.Uri.Domain == "mydomain.com")
     {
         using deferral = args.GetDeferral();
         args.NewWindow = await wvProc.CreateWebViewControlAsync(
@@ -129,14 +129,14 @@ void OnWebViewControlNewWindowRequested(WebViewControl sender, WebViewControlNew
     }
 }
 
-String htmlContent = “<html><script>window.open(‘http://mydomain.com’)</script><body></body></html>”;
+String htmlContent = "<html><script>window.open('http://mydomain.com')</script><body></body></html>";
 
 webView.NavigateToString(htmlContent);
 
 ```
 
 Lastly, power users might notice the apppearance of the *Desktop App Web Viewer* (previously named *Win32WebViewHost*), an internal system app representing the Win32 WebView, in the following places:
- - In the *Windows 10 Action Center*. The source of these notifications should be understood as from a WebView hosted from a Win32 app.
+- In the *Windows 10 Action Center*. The source of these notifications should be understood as from a WebView hosted from a Win32 app.
 - In the device access settings UI (*Settings->Privacy->Camera/Location/Microphone*). Disabling any of these settings denies access from all WebViews hosted in Win32 apps.
 
 ![Desktop App Web Viewer device access setting](./dev-guide/media/desktop-app-web-viewer.png)
@@ -146,7 +146,7 @@ Lastly, power users might notice the apppearance of the *Desktop App Web Viewer*
 
 ### XSS Filter now retired
 
-With EdgeHTML 18, we are retiring the XSS filter in Microsoft Edge. Our customers remain protected thanks to modern standards like [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), which provide more powerful, performant, and secure mechanisms to protect against content injection attacks, with high compatibility across modern browsers.
+With EdgeHTML 18, we are retiring the XSS filter in Microsoft Edge. Our customers remain protected thanks to modern standards like [Content Security Policy (CSP)](https://developer.mozilla.org/docs/Web/HTTP/CSP), which provide more powerful, performant, and secure mechanisms to protect against content injection attacks, with high compatibility across modern browsers.
 
 ## New APIs in EdgeHTML 18
 

@@ -3,16 +3,22 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 12/09/2019
+ms.date: 04/17/2020
 ---
-> [!IMPORTANT] 
-> The new Microsoft Edge Extensions submissions process is now open!  Please visit [Publish to Microsoft Edge \(Chromium\) Addons Store][PublishMicrosoftEdgeAddonsCatalog] to learn how to submit your Extension.  Microsoft is excited to have you on board!  
+> [!NOTE]
+> This documentation is for extensions for the [legacy version of Microsoft Edge][MicrosoftSupportEdgeLegacy]. For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) Extensions][MicrosoftEdgeExtensionsChromiumIndex].
+
+> [!IMPORTANT]
+> The new Microsoft Edge program is now open to accept chromium-based extensions for the new Microsoft Edge \(v77 or later\). If you want to submit a new extension, visit [Publish to Microsoft Edge (Chromium) Addons Store][ExtensionsChromiumPublish] to learn about the submission process.  
 > 
-> With this announcement, Microsoft is no longer accepting new Extensions for the current version of Microsoft Edge.  If you own an Extension in the current version, you should begin the process of porting your Extension to the new Microsoft Edge so your customers are not face interruptions as they upgrade.  Also note that because the new Microsoft Edge is based on Chromium, Extensions designed for the current version of Microsoft Edge do not work with the new version.  
+> With this announcement, Microsoft is no longer accepting new extensions for the [legacy version of Microsoft Edge][MicrosoftSupportEdgeLegacy]. If you own an Extension for the legacy version, you should begin the process of porting your Extension to the new Microsoft Edge.  The new Microsoft Edge is based on Chromium, so Extensions designed for the legacy version of Microsoft Edge do not work with the new version.  
 > 
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[PublishMicrosoftEdgeAddonsCatalog]: /microsoft-edge/extensions-chromium/publish/publish-extension "Publish An Extension"  
+[MicrosoftEdgeExtensionsChromiumIndex]: /microsoft-edge/extensions-chromium/index "Microsoft Edge (Chromium) Extensions"
+[ExtensionsChromiumPublish]: /microsoft-edge/extensions-chromium/publish/publish-extension "Publish An Extension"  
+
+[MicrosoftSupportEdgeLegacy]: https://support.microsoft.com/help/4533505/what-is-microsoft-edge-legacy "What is Microsoft Edge Legacy? | Microsoft Support"  

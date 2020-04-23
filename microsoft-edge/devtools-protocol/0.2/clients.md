@@ -3,7 +3,7 @@ description: Microsoft Edge DevTools Protocol Version 0.2 supports the following
 title: Microsoft Edge DevTools Protocol Version 0.2 Clients
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -20,7 +20,7 @@ ms.custom: seodec18
 
 ## Microsoft Edge DevTools Preview
 
-You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) Windows 10 app from the Microsoft Store to remotely debug a host device running Microsoft Edge ([EdgeHTML 17](../../dev-guide.md) or later).
+You can use the standalone [**Microsoft Edge DevTools Preview**](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) Windows 10 app from the Microsoft Store to remotely debug a host device running Microsoft Edge ([EdgeHTML 17](../../dev-guide.md) or later).
 
 Version 0.2 of the DevTools Protocol provides new domains for style and layout debugging and console APIs, in addition to the core script debugging functionality introduced in Version 0.1. In the Edge DevTools UI, this translates to functionality available in the [**Elements**](../../devtools-guide/elements.md), [**Console**](../../devtools-guide/console.md) and [**Debugger**](../../devtools-guide/debugger.md) panels. Currently Microsoft Edge remote debugging is limited to desktop hosts, with support for other Windows 10 devices coming in future releases.
 
@@ -46,7 +46,7 @@ Here's how to set up remote debugging with the Microsoft Edge DevTools Preview a
 
 **On the client (debugger) machine...**
 
-1.  Install and launch the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/en-us/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app from the Microsoft Store.
+1.  Install and launch the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/p/microsoft-edge-devtools-preview/9mzbfrmz0mnj?activetab=pivot%3aoverviewtab) app from the Microsoft Store.
 
 2. Open the **Remote** panel and enter the network location (URL and port) of the host machine and click **Connect**.
 
@@ -70,21 +70,21 @@ To get started:
 
 3. Configure a localhost [launch task](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) to open the desired page of your project: **Debug** > **Add Configuration...**. For example:
 
-```
-{
-    "version": "0.2.0",
-    "configurations": [
+    ```json
+    {
+        "version": "0.2.0",
+        "configurations": [
 
-        {
-            "name": "Launch localhost",
-            "type": "edge",
-            "request": "launch",
-            "url": "http://localhost/mypage.html",
-            "webRoot": "${workspaceFolder}/wwwroot"
-        }
-    ]
-}
-```
+            {
+                "name": "Launch localhost",
+                "type": "edge",
+                "request": "launch",
+                "url": "http://localhost/mypage.html",
+                "webRoot": "${workspaceFolder}/wwwroot"
+            }
+        ]
+    }
+    ```
 
     [*Using the debugger*](https://github.com/Microsoft/vscode-edge-debug2#using-the-debugger) has more on launch configuration settings. 
 
@@ -105,4 +105,3 @@ Here's how to set up Microsoft Edge debugging with Visual Studio:
 3. In the project **Solution Explorer**, open the JavaScript files you wish to debug and set breakpoints within the IDE just as you would with server-side code.
 
 4. Press `F5` to launch Microsoft Edge running the DevTools Server. When a breakpoint is hit, you'll break into Visual Studio and can further inspect and step through the code from there.
-

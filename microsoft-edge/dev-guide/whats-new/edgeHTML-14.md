@@ -3,7 +3,7 @@ description: This page provides an overview of what's new in EdgeHTML 14.
 title: What's New in EdgeHTML 14
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -17,7 +17,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 ## New Features
 
 ### Extensions
-Extensions are small programs that can be used to add new features to Microsoft Edge or modify the existing functionality. Extensions are intended to improve a user’s day-to-day browsing experience by providing niche functionality that is important to targeted audiences. Microsoft Edge supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes. For more information, check out [Microsoft Edge extensions](https://docs.microsoft.com/microsoft-edge/extensions) developer docs. 
+Extensions are small programs that can be used to add new features to Microsoft Edge or modify the existing functionality. Extensions are intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences. Microsoft Edge supports a new HTML, JavaScript and CSS based extension model. This new model is Chrome-compatible which means that existing Chrome extension developers will be able to migrate their extensions to Microsoft Edge with minimal changes. For more information, check out [Microsoft Edge extensions](https://docs.microsoft.com/microsoft-edge/extensions) developer docs. 
 
 ### Fetch API
 The [Fetch API](https://fetch.spec.whatwg.org/#fetch-api) utilizes the `fetch` method for fetching resources. In the past this was achieved with `XMLHttpRequest`. Not only is fetch simpler to use, it also provides lower level access to requests and responses. Read more about the Fetch API in the Microsoft Edge blog post, [Fetch (or the undeniable limitations of XHR)](https://blogs.windows.com/msedgedev/2016/05/24/fetch-and-xhr-limitations/).
@@ -30,8 +30,8 @@ EdgeHTML 14 brings a number of new and experimental features to Chakra, the Java
 
 * [Default parameters](https://developer.microsoft.com/microsoft-edge/platform/status/defaultparameteres6) (ES2015)
 * [Exponentiation operator](https://developer.microsoft.com/microsoft-edge/platform/status/exponentiationoperatores2016) (ES2016)
-* [Array.prototype.includes](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/arrayprototypeincludeses2016) (ES2016)
-* [Object.values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) and [object.entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) (ES2017)
+* [Array.prototype.includes](https://developer.microsoft.com/microsoft-edge/platform/status/arrayprototypeincludeses2016) (ES2016)
+* [Object.values](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) and [object.entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) (ES2017)
 
 #### Experimental JavaScript features (enabled with *about:flags*)
 

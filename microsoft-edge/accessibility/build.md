@@ -4,7 +4,7 @@ description: Walk through how best practices and Accessible Rich Internet Applic
 title: Accessibility - Build
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -12,13 +12,13 @@ ms.custom: seodec18
 ---
 
 # Building Accessible Websites
-The web is filled with dynamic and complex websites, applications, and user interfaces built using a combination of HTML, CSS, and JavaScript.  However, when designed and built without accessibility in mind, these complex websites are difficult to use by people who rely on [assistive technologies](http://webaim.org/articles/motor/assistive) to browse the web. Building websites that are accessible to people with disabilities requires semantic information about the user interface. This allows for assistive technologies, like screen readers, to convey the necessary information to help people with a range of abilities use the website.
+The web is filled with dynamic and complex websites, applications, and user interfaces built using a combination of HTML, CSS, and JavaScript.  However, when designed and built without accessibility in mind, these complex websites are difficult to use by people who rely on [assistive technologies](https://webaim.org/articles/motor/assistive) to browse the web. Building websites that are accessible to people with disabilities requires semantic information about the user interface. This allows for assistive technologies, like screen readers, to convey the necessary information to help people with a range of abilities use the website.
 
-Visit [HTML5Accessibility](http://html5accessibility.com/) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
+Visit [HTML5Accessibility](https://html5accessibility.com) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
 
 ## How Accessibility Works
 
-Assistive technologies add capabilities that computers don’t usually have. For example, a visually impaired user might use their keyboard in combination with assistive technology such as a screen reader, rather than directly using the browser with the mouse and screen. For applications on Microsoft platforms and on the web, the assistive technology interacts with Microsoft [UI Automation](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx), an application-specific object model such as the Document Object Model (DOM) in Microsoft Edge, or a combination of these.
+Assistive technologies add capabilities that computers don't usually have. For example, a visually impaired user might use their keyboard in combination with assistive technology such as a screen reader, rather than directly using the browser with the mouse and screen. For applications on Microsoft platforms and on the web, the assistive technology interacts with Microsoft [UI Automation](https://msdn.microsoft.com/library/windows/desktop/bb892135.aspx), an application-specific object model such as the Document Object Model (DOM) in Microsoft Edge, or a combination of these.
 
 For web developers, certain HTML elements are mapped to UI Automation objects, so in selecting those HTML elements, the developer can use the accessibility properties and events built in to those elements. While developing your website, you usually only need to be concerned with ensuring that the API is correctly written to (or that the appropriate element is specified), in order for the application to be accessible. Check out [ARIA and UI Automation in Microsoft Edge](./build/ARIA-and-UI-Automation.md) for more information.  For information on accessible Universal Windows Platform (UWP) apps, see the [Accessibility](https://msdn.microsoft.com/windows/uwp/accessibility/accessibility) topic in the Windows Dev Center.
 
@@ -58,8 +58,8 @@ For more information on ARIA, see the ARIA in the [Resources](#resources) sectio
 #### [The A11Y Project](http://a11yproject.com/)
 The A11Y Project is a community-driven effort to make web accessibility easier. Check out [The A11Y Project](https://a11yproject.com/) site to learn about basic accessibility principles, their accessible pattern and widget [library](https://a11yproject.com/patterns), and their [resources](http://a11yproject.com/resources.html) on accessibility software, blogs, books, and tools.
 
-#### [Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
-The W3C’s Web Accessibility Initiative (WAI) is an effort to help improve the accessibility of the web. Their site provides a variety of resources for [Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/Overview.html), [Designing for Inclusion](https://www.w3.org/WAI/users/Overview.html), [tutorials and presentations](https://www.w3.org/WAI/train.html), and more.
+#### [Web Accessibility Initiative (WAI)](https://w3.org/WAI/)
+The W3C's Web Accessibility Initiative (WAI) is an effort to help improve the accessibility of the web. Their site provides a variety of resources for [Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/Overview.html), [Designing for Inclusion](https://www.w3.org/WAI/users/Overview.html), [tutorials and presentations](https://www.w3.org/WAI/train.html), and more.
 
 ### Accessibility Blogs
 #### [The Paciello Group](https://www.paciellogroup.com/blog/)
@@ -116,23 +116,23 @@ This W3C mappings document explains how HTML5.1 element and attributes map to pl
 #### [Quick Tips](http://a11yproject.com/#Quick-tips)
 A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com/).
 
-#### [Site Scan](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/)
+#### [Site Scan](https://developer.microsoft.com/microsoft-edge/tools/staticscan/)
 The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.
 
 #### [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html)
-Techniques from the W3C that provide guidance for web developers on meeting [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) success criteria.
+Techniques from the W3C that provide guidance for web developers on meeting [Web Content Accessibility Guidelines (WCAG) 2.0](https://w3.org/TR/WCAG20/) success criteria.
 
-#### [Tips on Developing for Web Accessibility](http://www.w3.org/WAI/gettingstarted/tips/developing.html)
+#### [Tips on Developing for Web Accessibility](https://w3.org/WAI/gettingstarted/tips/developing.html)
 Tips from the W3C on developing web content that is more accessible to people with disabilities.
 
 #### [WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices/)
 A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.
 
-#### [WAI Guidelines and Techniques](http://www.w3.org/WAI/guid-tech.html)
+#### [WAI Guidelines and Techniques](https://w3.org/WAI/guid-tech.html)
 A series of web accessibility guidelines and standards developed by the WAI.  
 
 #### [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html)
 A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
 
-#### [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](http://www.w3.org/WAI/perspectives/)
+#### [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives/)
 A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.
