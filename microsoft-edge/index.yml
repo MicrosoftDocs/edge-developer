@@ -1,0 +1,339 @@
+### YamlMime:Hub
+
+title: Microsoft Edge documentation
+summary: Explore documentation resources for Microsoft Edge.
+brand: m365
+metadata:
+  title: Microsoft Edge documentation
+  description: Microsoft Edge information for developers, IT admins, and browser end users; including DevTools, Extensions, PWAs, WebDriver, and more.
+  ms.topic: hub-page
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 04/03/2020
+  localization_priority: Priority
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | 
+#           get-started | how-to-guide | learn | overview | 
+#           quickstart | reference | tutorial | video | 
+#           whats-new
+  items:
+    # Card
+    - title: "Download Microsoft Edge (Official Stable Channel)"
+      itemType: download
+      url: https://www.microsoft.com/edge
+    # Card
+    - title: "Download Microsoft Edge Insider Channels"
+      itemType: download
+      url: https://www.microsoft.com/edge/business/download
+    # Card
+    - title: "What's new"
+      itemType: whats-new
+      url: https://www.microsoftedgeinsider.com/whats-new
+      
+      
+# productDirectory section (optional)
+productDirectory:
+  title: Microsoft Edge for Enterprise # < 60 chars (optional)
+  # summary: Microsoft Edge for Enterprise # < 160 chars (optional)
+  items:
+    # Card
+    - title: Learn about Microsoft Edge in the enterprise
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: /media/common/i_learn-about.svg
+      links:
+        - url: /deployedge/microsoft-edge-channels
+          text: Microsoft Edge channel overview
+        - url: https://www.microsoftedgeinsider.com/download
+          text: Download a Microsoft Edge channel
+        - url: /deployedge/edge-ie-mode
+          text: Use enterprise features
+    # Card
+    - title: Deploy and update Microsoft Edge
+      imageSrc: /media/common/i_reference.svg
+      links:
+        - url: /configmgr/apps/deploy-use/deploy-edge
+          text: Deploy to Windows
+        - url: /intune/apps/apps-edge-macos
+          text: Deploy to macOS
+    # Card
+    - title: Configure Microsoft Edge
+      imageSrc: /media/common/i_reference.svg
+      links:
+        - url: /deployedge/configure-microsoft-edge
+          text: Configure Microsoft Edge on Windows and macOS
+        - url: /deployedge/edge-default-browser
+          text: Set Microsoft Edge as the default browser
+    # Card
+    - title: Manage security and privacy
+      imageSrc: /media/common/i_reference.svg
+      links:
+        - url: /deployedge/security-overview
+          text: Security
+        - url: /deployedge/microsoft-edge-privacy-policy
+          text: Privacy
+    # Card
+    - title: Policy reference
+      imageSrc: /media/common/i_policy.svg
+      links:
+        - url: /deployedge/microsoft-edge-policies
+          text: Browser policy reference
+        - url: /deployedge/microsoft-edge-update-policies
+          text: Update policy reference
+    # Card
+    - title: Engage with enterprise community
+      imageSrc: /media/common/i_support.svg
+      links:
+        - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
+          text: Enterprise tech community (Insider Focused)
+        # - url: /deployedge/microsoft-edge-troubleshooting
+        #   text: Troubleshoot Microsoft Edge
+    # Card
+    - title: Extensions for enterprise
+      imageSrc: /media/common/i_extensions.svg
+      links:
+        - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
+          text: Match Patterns
+        - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
+          text: Hosting and Updating
+          
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | 
+#           get-started | how-to-guide | learn | overview | 
+#           quickstart | reference | tutorial | video | 
+#           whats-new
+  title: Microsoft Edge for Developers # < 60 chars (optional)
+  summary: Cross-platform DevTools, Extensions, and Web Apps # < 160 chars (optional)
+  items:
+    # Card
+    - title: Getting Started with DevTools
+      links:
+        - url: /microsoft-edge/devtools-guide-chromium
+          itemType: reference
+          text: DevTools Overview
+        - url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+          itemType: reference
+          text: What's New
+        - url: /microsoft-edge/devtools-guide-chromium/open
+          itemType: reference
+          text: Open DevTools
+        - url: /microsoft-edge/devtools-guide-chromium/beginners/html
+          itemType: reference
+          text: DevTools for Beginners
+        - url: /microsoft-edge/devtools-guide-chromium/css/index
+          itemType: reference
+          text: CSS
+        - url: /microsoft-edge/devtools-guide-chromium/css/print-preview
+          itemType: reference
+          text: Guides
+        - url: /microsoft-edge/devtools-guide-chromium/resources/index
+          itemType: reference
+          text: Resources
+    # Card
+    - title: Individual Tool Guides
+      links:
+        - url: /microsoft-edge/devtools-guide-chromium/console/index
+          itemType: reference
+          text: Console
+        - url: /microsoft-edge/devtools-guide-chromium/network/index
+          itemType: reference
+          text: Network
+        - url: /microsoft-edge/devtools-guide-chromium/storage/cookies
+          itemType: reference
+          text: Storage
+        - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+          itemType: reference
+          text: Command Menu
+        - url: /microsoft-edge/devtools-guide-chromium/javascript/index
+          itemType: reference
+          text: JavaScript
+        - url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
+          itemType: reference
+          text: Performance
+        - url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
+          itemType: reference
+          text: Remote Debugging
+        - url: /microsoft-edge/devtools-guide-chromium/security/index
+          itemType: reference
+          text: Security
+    # Card
+    - title: Customize DevTools
+      links:
+        - url: /microsoft-edge/devtools-guide-chromium/customize/index
+          itemType: reference
+          text: Overview
+        - url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
+          itemType: reference
+          text: Dark Theme
+        - url: /microsoft-edge/devtools-guide-chromium/workspaces/index
+          itemType: reference
+          text: Workspaces
+        - url: /microsoft-edge/devtools-guide-chromium/shortcuts
+          itemType: reference
+          text: Keyboard Shortcuts
+    # Card
+    - title: Test & Automation
+      links:
+        - text: Accessibility
+          itemType: reference
+          url: /microsoft-edge/accessibility
+        - text: DevTools Protocol (Chromium)
+          itemType: reference
+          url: /microsoft-edge/devtools-protocol-chromium
+        - text: WebDriver (Chromium)
+          itemType: reference
+          url: /microsoft-edge/webdriver-chromium
+        - text: Puppeteer
+          itemType: reference
+          url: /microsoft-edge/puppeteer
+        - text: Interop (Site compatibility)
+          itemType: reference
+          url: /microsoft-edge/web-platform/site-impacting-changes
+        - text: webhint
+          itemType: reference
+          url: https://webhint.io/docs/user-guide
+        - text: Performance analysis
+          itemType: reference
+          url: /microsoft-edge/performance-analysis
+    # Card
+    - title: Extensions Overview
+      links:
+        - url: /microsoft-edge/extensions-chromium/index
+          itemType: reference
+          text: Extensions Overview
+    # Card
+    - title: "Extensions: Getting started tutorial"
+      links:
+        - url: /microsoft-edge/extensions-chromium/getting-started/index
+          itemType: reference
+          text: Getting started tutorial
+        - url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+          itemType: reference
+          text: Create a simple extension – part 1
+        - url: /microsoft-edge/extensions-chromium/getting-started/part2-content-scripts
+          itemType: reference
+          text: Create a simple extension – part 2
+    # Card
+    - title: "Extensions: Developer Guide"
+      links:
+        - url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+          itemType: reference
+          text: Port Chromium extension to Microsoft Edge
+        - url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+          itemType: reference
+          text: Alternate methods of distributing extensions
+        - url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
+          itemType: reference
+          text: Native messaging
+    # Card
+    - title: "Extensions: Publish to the Microsoft Store"
+      links:
+        - url: /microsoft-edge/extensions-chromium/publish/publish-extension
+          itemType: reference
+          text: Step-wise publishing process
+        - url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+          itemType: reference
+          text: Open developer account
+        - url: /microsoft-edge/extensions-chromium/publish/upload-video
+          itemType: reference
+          text: Upload YouTube Video
+        - url: /microsoft-edge/extensions-chromium/publish/update
+          itemType: reference
+          text: Update Extension Listing
+        - url: /microsoft-edge/extensions-chromium/publish/manage-settings
+          itemType: reference
+          text: Manage account settings
+    # Card
+    - title: "Extensions: Microsoft Edge Addons Policies"
+      links:
+        - url: /microsoft-edge/extensions-chromium/store-policies/csp
+          itemType: reference
+          text: Content Security Policy
+        - url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
+          itemType: reference
+          text: Microsoft Edge Addons Catalog Developer Policies
+    # Card
+    - title: Progressive Web Apps
+      links:
+        - url: /microsoft-edge/progressive-web-apps-chromium/index
+          itemType: reference
+          text: Overview (Chromium)
+        - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+          itemType: reference
+          text: Using DevTools with Progressive Web Apps
+    # Card
+    - title: WebView2
+      links:
+        - url: /microsoft-edge/hosting/webview2
+          itemType: reference
+          text: Overview
+        - url: /microsoft-edge/hosting/webview2/gettingstarted
+          itemType: reference
+          text: Getting Started with WebView2
+        - url: /microsoft-edge/hosting/webview2/reference-webview2
+          itemType: reference
+          text: Reference
+          
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - # title: sectiontitle # < 60 chars (optional)
+      # summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: Reference
+          links:
+            - text: Microsoft Edge user agent string
+              url: /microsoft-edge/web-platform/user-agent-string
+            - text: Platform Status
+              url: https://developer.microsoft.com/microsoft-edge/platform/status
+            - text: Visual Studio Code
+              url: /microsoft-edge/visual-studio-code/index
+            - url: /microsoft-edge/privacy-whitepaper
+              text: Privacy Whitepaper
+        # Card
+        - title: Microsoft Edge Legacy Documentation
+          links:
+            - text: Dev Guide (EdgeHTML)
+              url: /microsoft-edge/dev-guide
+            - text: DevTools (EdgeHTML)
+              url: /microsoft-edge/devtools-guide
+            - text: DevTools Protocol (EdgeHTML)
+              url: /microsoft-edge/devtools-protocol/index
+            - text: Extensions (EdgeHTML)
+              url: /microsoft-edge/extensions/index
+            - text: Getting Started with PWAs (EdgeHTML)
+              url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
+            - text: JavaScript Runtime Hosting
+              url: /microsoft-edge/hosting/javascript-runtime-hosting
+            - text: WebVR Developer Guide
+              url: /webvr/webvr-docs/index
+            - text: Windows Runtime (WinRT)
+              url: /microsoft-edge/windows-runtime
+    - title: Help & Support # < 60 chars (optional)
+      # summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: Community Support
+          summary: Get advice and answers from a community of experts via StackOverflow.
+          url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+        # Card
+        - title: Get no-cost help via App Assure
+          summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft will help you fix them at no additional cost. See offer details for eligibility requirements.
+          url: https://aka.ms/AppAssureEdge
+        # Card
+        - title: Microsoft Support for Business
+          summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available via a variety of plans to help you get the level of support you need.
+          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
+        # Card
+        - title: End User Support
+          summary: Helpful support resources for end users is available.
+          url: https://support.microsoft.com/hub/4337664/microsoft-edge-help
+          

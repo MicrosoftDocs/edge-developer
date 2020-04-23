@@ -3,44 +3,62 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2019
+ms.date: 04/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # Microsoft Edge WebView2 (developer preview)
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/en-us/) as the rendering engine.
+The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/) as the rendering engine.
 
-The WebView2 control is currently in developer preview, during which you can prototype your solutions and share feedback with us to shape the future stable API. There will likely be some breaking changes as we evolve the API during preview, and when this happens, you will need to have both the WebView2 SDK and the Microsoft Edge (Chromium) browser updated. Breaking changes will be noted in the [release notes](webview2/ReleaseNotes) of the SDK. This will lock down as WebView2 approaches beta and stable.
+The WebView2 control is currently in developer preview, during which you can prototype your solutions and share feedback with us to shape the future stable API. There will likely be some breaking changes as we evolve the API during preview, and when this happens, you will need to have both the WebView2 SDK and the Microsoft Edge (Chromium) browser updated. Breaking changes will be noted in the [release notes](webview2/releasenotes.md) of the SDK. This will lock down as WebView2 approaches beta and stable.
 
 ## Supported Platforms
 
-Developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows 8, and Windows 7. In the future, we plan to support WebView2 on .NET, and XAML.  
+A developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. An Alpha version for WinUI 3.0 is available [here](https://docs.microsoft.com/uwp/toolkits/winui3/). In the future, we plan to support WebView2 on .NET.  
 
 ## Getting Started
 
-To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)]( https://www.microsoftedgeinsider.com/en-us/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](webview2/gettingstarted) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [API reference](webview2/reference-webview2) to learn about the API, and [Release Notes](webview2/ReleaseNotes) for changes made between releases.
+To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](webview2/gettingstarted.md) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [API reference](webview2/reference-webview2.md) to learn about the API, and [Release Notes](webview2/releasenotes.md) for changes made between releases.
+
+Please leave us feedback in our [WebView2 Feedback](https://aka.ms/webviewfeedback) repo.
 
 ## WebView2 Samples
 
 The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDK's features and their API use patterns. As we add more features to the WebView2 SDK, we will regularly update our sample applications.
 
-## Feedback
+## App Distribution
 
-Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. It’s also a good place to search for known issues.
-During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.
+The WebView2 control utilizes the Microsoft Edge (Chromium) browser. When distributing your app it is important to ensure that the Edge browser is installed on all user machines where your application will run. You should also be aware of which version and channel is installed, e.g. Stable, Beta, Dev, or Canary. The WebView2 controller will utilize the most stable version of the browser when installed on a machine.
 
-## Evergreen vs. Bring-your-own
+### Future Planned Changes
 
-The WebView2 control relies on the Microsoft Edge (Chromium) browser and currently has an evergreen distribution model – instead of packaging a browser in the app bundle, apps use the evergreen browser installed on users’ machines. The evergreen browser updates itself on a regular cadence, therefore apps targeting the evergreen WebView2 automatically get the latest feature and security updates for hosted web content. The WebView2 SDK is updated separately as new APIs become available. This is the recommended model for most developers.
-In the future, there will be a second bring-your-own (BYO) option that allows developers to bundle a redistributable version of the browser with their apps. BYO brings a locked platform, but requires a larger disk footprint for the packaged browser and developers will have to take on the responsibility of servicing and updating the control themselves.
+We recognize that the Edge browser may not be available on all user machines your application is intended to run, or that control of the Edge browser install process may be difficult. To ensure your application will run on all machines, independent of the install status of the client Microsoft Edge browser, we will release the Microsoft Edge WebView2 Runtime. We will further update WebView2 to search for the stable version of the Runtime before searching for pre-release versions of the installed browser.
 
-## Browser Channels
+We also recognize that some app developers operate in constrained environments, and so intend to support two distribution options, evergreen and fixed version.
 
-Developers can target different [channels](https://www.microsoftedgeinsider.com/en-us/download/) of the Microsoft Edge (Chromium) browser to power the WebView2 control. In most cases, production applications should target the Stable channel, but developers often need to test on Beta, Dev, or Canary to ensure their applications continue to work in the near future. The WebView2 API allows developers to programmatically target either the most stable or the least stable channel installed on users’ machine. Alternatively, developers can also use the below registry key to enforce a channel. See more details in [CreateWebView2EnvironmentWithDetails](webview2/reference/webview2.idl.md) function.
+Evergreen is the recommended distribution model for most developers. In this mode updates to the WebView2 Runtime will be fully managed by Microsoft keeping you up to date automatically without additional effort from your application. With this self-updating model you can be assured that your app is taking advantage of the latest features and security updates for hosted web content.
+
+For constrained environments we will also support a fixed version distribution model. In this model your application will select and package a specific WebView2 version. Updates to the WebView version will be the responsibility of the application and will be independent of any managed Microsoft update mechanisms. You should choose this model if it is crucial to be able to have absolute control over the browser version and update times your application is taking advantage of.
+
+## Microsoft Edge WebView2 Runtime
+
+The Microsoft Edge WebView2 Runtime is a packaging of the browser binaries optimized for use by WebView2 applications. It will function stand alone or side-by-side with a client Edge Browser install. A single install of the run-time will support any number of WebView2 applications. Install of the runtime will not appear as a browser install to end-user, i.e. no desktop shortcuts, start menu entry, or protocol registration.
+
+An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred. At application install time you should check the current install status, which can be determined by using [GetAvailableCoreWebView2BrowserVersionString](webview2/reference/webview2.idl.md#getavailablecorewebview2browserversionstring). If the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.
+
+## Microsoft Edge WebView2 SDK
+
+To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability. 
+
+The pre-release version will contain additional [experimental APIs](webview2/reference-webview2.md#experimental-interfaces). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
+
+## Development against Upcoming Versions
+
+For development you may want to target Beta, Dev, or Canary to ensure your application will work with upcoming versions or to take advantage of upcoming features. All pre-released channels are provided by the installed client Microsoft Edge browser. To target one of these channels ensure the installed Edge browser on your development machine is the channel you'd like. Developers can use a registry key or environment variable to change the WebView2 from the most stable version found to the least stable found. See more details in [CreateCoreWebView2EnvironmentWithOptions](webview2/reference/webview2.idl.md#createcorewebview2environmentwithoptions).
 
 ## Debugging WebView2
 
@@ -65,3 +83,10 @@ Right click on your project and select **Properties**. Under **Configuration Pro
 ### Visual Studio Code
 
 You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications).
+
+## Feedback
+
+Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. 
+
+It’s also a good place to search for known issues.
+During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.

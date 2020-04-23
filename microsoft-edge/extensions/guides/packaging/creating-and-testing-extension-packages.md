@@ -4,7 +4,7 @@ description: Learn about how to package up your Microsoft Edge extension manuall
 title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, packaging
@@ -20,7 +20,7 @@ Microsoft Edge extensions are packaged as AppX, similar to how Universal Windows
 If you already know how Microsoft Edge extension AppXs are created, you can skip to [Using ManifoldJS to package extension](./using-manifoldjs-to-package-extensions.md) to learn how to use a Node.js based tool to do all of this for you!
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
 
 
@@ -81,15 +81,15 @@ Developers can use the following template for their AppXManifest.xml file:
         Description="This is the description of the extension"
         BackgroundColor="white">
       </uap:VisualElements>
-	  <Extensions>
-	  <uap3:Extension Category="windows.appExtension">
-		<uap3:AppExtension Name="com.microsoft.edge.extension"
-	      Id="EdgeExtension"
-	      PublicFolder="Extension"
-		  DisplayName="[REPLACE WITH RESERVED STORE NAME]">
-		</uap3:AppExtension>
-	  </uap3:Extension>
-	  </Extensions>
+    <Extensions>
+    <uap3:Extension Category="windows.appExtension">
+    <uap3:AppExtension Name="com.microsoft.edge.extension"
+        Id="EdgeExtension"
+        PublicFolder="Extension"
+      DisplayName="[REPLACE WITH RESERVED STORE NAME]">
+    </uap3:AppExtension>
+    </uap3:Extension>
+    </Extensions>
  </Application>
 </Applications>
 </Package>
@@ -105,7 +105,7 @@ Once you've [reserved the name of your extension](./extensions-in-the-windows-de
 
 You can access your App identity page using the following steps:
 
-1. Navigate to [Windows Dev Center](https://developer.microsoft.com/en-us/windows/).
+1. Navigate to [Windows Dev Center](https://developer.microsoft.com/windows/).
 2. Sign in to your developer account.
 3. Navigate to the Dashboard.
 4. Select the name of your extension.
@@ -228,12 +228,13 @@ This should look something like this when filled out:
 You can test your Microsoft Edge extension AppX package by sideloading it in Microsoft Edge. Sideloading the extension AppX package is similar to sideloading a Universal Windows app. You will need to create a certificate for signing the package, and then add the package to Windows.
 
 ### Signing
-See [How to create an app package signing certificate](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/en-us/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
+
+See [How to create an app package signing certificate](https://msdn.microsoft.com/library/windows/desktop/jj835832.aspx) and [How to sign an app package using SignTool](https://msdn.microsoft.com/library/windows/desktop/jj835835.aspx) for info on the signing and certification process for packages.
 
 > [!NOTE]
 > You do not need to sign an extension package before submitting it to the Microsoft Store; the Store ingestion process will take care of that for you!
 
-After you’ve signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
+After you've signed the package with the certificate that you created, the certificate is still not trusted by the local machine for deployment of app packages until you install it into the trusted certificates store of the local computer. You can use Certutil.exe, which comes with Windows to do this.
 
 To install certificates with WindowsCertutil.exe, run Cmd.exe as administrator
 and run the following command:

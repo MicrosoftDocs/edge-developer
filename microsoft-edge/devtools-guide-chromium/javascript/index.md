@@ -2,7 +2,7 @@
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -37,7 +37,7 @@ This tutorial teaches you the basic workflow for debugging any JavaScript issue 
 
 Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
 
-1.  Click **Open Demo**.  Hold `control` \(Windows\) or `command` \(macOS\) and open the demo in a new tab.  
+1.  Click **Open Demo**.  Hold `Control` \(Windows\) or `Command` \(macOS\) and open the demo in a new tab.  
 
     [Open Demo][OpenDebugJSDemo]  
 
@@ -232,22 +232,22 @@ This tutorial only showed you two ways to set breakpoints.  DevTools offers many
 
 <!-- image links -->  
 
-[ImageAddIcon]: images/add-expression-icon.msft.png  
-[ImageDeactivateIcon]: images/deactivate-breakpoints-button-icon.msft.png  
-[ImageExpandIcon]: images/expand-icon.msft.png  
-[ImageIntoIcon]: images/step-into-icon.msft.png  
-[ImageOverIcon]: images/step-over-icon.msft.png  
-[ImageResumeIcon]: images/resume-script-execution-icon.msft.png  
+[ImageAddIcon]: /microsoft-edge/devtools-guide-chromium/media/add-expression-icon.msft.png  
+[ImageDeactivateIcon]: /microsoft-edge/devtools-guide-chromium/media/deactivate-breakpoints-button-icon.msft.png  
+[ImageExpandIcon]: /microsoft-edge/devtools-guide-chromium/media/expand-icon.msft.png  
+[ImageIntoIcon]: /microsoft-edge/devtools-guide-chromium/media/step-into-icon.msft.png  
+[ImageOverIcon]: /microsoft-edge/devtools-guide-chromium/media/step-over-icon.msft.png  
+[ImageResumeIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-run-icon.msft.png  
 
-[ImageJSBugs]: images/js-demo-bad.msft.png "Figure 1: The result of 5 + 1 is 51, but should be 6"  
-[ImageJSConsole]: images/console-empty.msft.png "Figure 2: The Console panel"  
-[ImageJSSources]: images/sources-sections.msft.png "Figure 3: The Sources panel"  
-[ImageJSSourcesAnnotated]: images/sources-sections-annotated.msft.png "Figure 4: The 3 parts of the Sources panel UI"  
-[ImageJSClickCheckbox]: images/sources-event-listener-breakpoint-mouse-click.msft.png "Figure 5: The click checkbox is enabled"  
-[ImageJSLineOfCodeBreakpoint]: images/sources-breakpoint-paused.msft.png "Figure 6: DevTools pauses on the line-of-code breakpoint on line 32"  
-[ImageJSScope]: images/sources-breakpoint-paused-scope.msft.png "Figure 7: The Scope pane"  
-[ImageJSWatchExpression]: images/sources-breakpoint-paused-watch.msft.png "Figure 8: The Watch Expression pane"  
-[ImageJSConsoleEvaluated]: images/sources-breakpoint-paused-console.msft.png "The Console drawer, after evaluating parseInt(addend1) + parseInt(addend2)"  
+[ImageJSBugs]: /microsoft-edge/devtools-guide-chromium/media/javascript-js-demo-bad.msft.png "Figure 1: The result of 5 + 1 is 51, but should be 6"  
+[ImageJSConsole]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-empty.msft.png "Figure 2: The Console panel"  
+[ImageJSSources]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-sections.msft.png "Figure 3: The Sources panel"  
+[ImageJSSourcesAnnotated]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-sections-annotated.msft.png "Figure 4: The 3 parts of the Sources panel UI"  
+[ImageJSClickCheckbox]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png "Figure 5: The click checkbox is enabled"  
+[ImageJSLineOfCodeBreakpoint]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-breakpoint-paused.msft.png "Figure 6: DevTools pauses on the line-of-code breakpoint on line 32"  
+[ImageJSScope]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-breakpoint-paused-scope.msft.png "Figure 7: The Scope pane"  
+[ImageJSWatchExpression]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-breakpoint-paused-watch.msft.png "Figure 8: The Watch Expression pane"  
+[ImageJSConsoleEvaluated]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-breakpoint-paused-console.msft.png "The Console drawer, after evaluating parseInt(addend1) + parseInt(addend2)"  
 
 <!-- links -->  
 
@@ -258,12 +258,12 @@ This tutorial only showed you two ways to set breakpoints.  DevTools offers many
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

@@ -2,18 +2,18 @@
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/19/2019
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 05/29/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -41,7 +41,7 @@ This guide only discusses the Progressive Web App features of the **Application*
 
 <!--TODO:  Link to sections when available. -->
 
-### TL;DR   
+### Summary  
 
 *   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.  
 *   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.  
@@ -89,8 +89,6 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--If you want to test out the genuine mobile experience, you can connect a real mobile device to DevTools via **remote debugging**, and then click the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
-<!--[remote debugging]: /debug/remote-debugging/remote-debugging  -->
-
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
 ## Service workers   
@@ -111,7 +109,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 > ![The Service Workers pane][ImageServiceWorkersPane]  
 
 *   If a service worker is installed to the currently open page, then you'll see it listed on this pane.  For example, in [**Figure 2**](#figure-2) there's a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  
-*   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** panel, or the `Go offline` option in the **Command Menu**.  
+*   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** panel, or the `Go offline` option in the [Command Menu][DevtoolsCommandMenuIndex].  
 *   The **Update on reload** checkbox forces the service worker to update on every page load.  
 *   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.  
 *   The **Update** button performs a one-time update of the specified service worker.  
@@ -128,18 +126,11 @@ up.
 <!--![service worker with errors][ImageServiceWorkerErrors]  -->
 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
-
-<!-- [UICommandMenu]: /microsoft-edge/devtools-guide-chromium/ui#command-menu  
-[WebHowPushWorks]: /web/fundamentals/push-notifications/how-push-works  
-
-<!--TODO:  Link UI "Command Menu" sections when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
 ## Service worker caches 
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][WebCacheAPI].  
-
-[WebCacheAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Cache "Cache - Web APIs | MDN"  
 
 > ##### Figure 3  
 > The **Cache Storage** Pane  
@@ -158,31 +149,21 @@ If you've got two or more caches open, you'll see them listed below the **Cache 
 
 Some responses within the Cache Storage pane may be flagged as being "**opaque**".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][HTTPCORSProtocol] is not enabled.  
 
-<!--[WebGlossaryCDN]: /web/fundamentals/glossary#CDN  -->
-<!--[WebGlossaryOpaque]: /web/fundamentals/glossary#opaque-response  -->
-[HTTPCORSProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
-
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
 
 In order to avoid leakage of cross-domain information, there's significant padding added to the size of an opaque response used for calculating storage quota limits \(for example whether a `QuotaExceeded` exception is thrown\) and reported by the **`navigator.storage`** API.  
 
-<!--[WebEstimatingAvailableStorageSpace]: /microsoft-edge/devtools-guide-chromium/whats-new/2017/08/estimating-available-storage-space  -->
-
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
 The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes][ChromiumIssues796060#c17].  You should keep this in mind when determining how many opaque responses you want to cache, since you could easily exceeded storage quota limitations much sooner than you'd otherwise expect based on the actual size of the opaque resources.  
 
-[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
-
 Related Guides:  
 
-*   [Stack Overflow: What limitations apply to opaque responses?][Stack OverflowLimitationsForOpaqueResponses]  
+*   [Stack Overflow: What limitations apply to opaque responses?][StackOverflowLimitationsForOpaqueResponses]  
 <!--*   [Alphabet work container: Understanding Storage Quota](/web/tools/Alphabet-work-container/guides/storage-quota#beware_of_opaque_responses)  -->
 
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
-
-[Stack OverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
 
 ## Clear storage 
 
@@ -209,21 +190,39 @@ Related Guides:
 
 
 
+<!-- image links -->  
+
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
 <!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
-[ImageManifest]: images/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
-[ImageMultipleCaches]: images/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
-[ImageServiceWorkersCachePane]: images/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
+[ImageServiceWorkersPane]: /microsoft-edge/devtools-guide-chromium/media/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
 <!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
-[ImageServiceWorkersPane]: images/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
+[ImageServiceWorkersCachePane]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
+[ImageMultipleCaches]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
+
+<!-- links -->  
+
+[DevtoolsCommandMenuIndex]: command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+
+[ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
+[HTTPCORSProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
+[StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
+[WebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Cache - Web APIs | MDN"  
+
+<!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
+<!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
+
+<!--[WebHowPushWorks]: /web/fundamentals/push-notifications/how-push-works  -->  
+<!--[WebGlossaryCDN]: /web/fundamentals/glossary#CDN  -->
+<!--[WebGlossaryOpaque]: /web/fundamentals/glossary#opaque-response  -->
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

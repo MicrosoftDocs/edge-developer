@@ -10,7 +10,7 @@ ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-#  Guides  
+# Guides  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
 

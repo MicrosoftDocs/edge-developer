@@ -4,14 +4,14 @@ description: Check out tools and testing procedures that help evaluate a website
 title: Accessibility - Test
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
 
 # Accessibility Testing
-Accessibility testing is a form of usability testing to verify your website is usable by all people. Check out the W3C’s [Accessibility Testing](https://www.w3.org/wiki/Accessibility_testing) page for information on when testing should be done, testing requirements, who should test your site, etc.
+Accessibility testing is a form of usability testing to verify your website is usable by all people. Check out the W3C's [Accessibility Testing](https://www.w3.org/wiki/Accessibility_testing) page for information on when testing should be done, testing requirements, who should test your site, etc.
 
 Use the following tools and testing producers to evaluate your website for accessibility:
 
@@ -27,7 +27,7 @@ A series of quick checks by the WAI that help you asses the accessibility of a w
 #### [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)
 A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.
 
-#### [HTML5Accessibility](http://html5accessibility.com/)
+#### [HTML5Accessibility](https://html5accessibility.com)
 This site tests which new HTML5 features are accessibly supported by major browsers. 
 
 #### [webhint](https://webhint.io/)

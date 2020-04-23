@@ -2,7 +2,7 @@
 title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,10 +29,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-If you find yourself running the same code in the **Console** repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][DevToolsSourcesPanel].  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
+If you find yourself running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][DevToolsSourcesPanel].  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
 Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
-
-<!--Todo: Add link to console when section is available -->  
 
 For example, [**Figure 1**](#figure-1) shows the DevTools homepage on the left and some Snippet source code on the right.  
 
@@ -159,21 +157,24 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 
 <!-- image links -->  
-[ImageMoreTabsIcon]: ../images/shared/more-tabs-icon.msft.png  
-[ImageRunSnippetIcon]: ../images/run-snippet-icon.msft.png  
 
-[ImageCreateSnippetSearch]: images/search-create-new-snippet.msft.png "Figure 7: The command for creating a new Snippet"  
-[ImageSourcesPageEmpty]: images/sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
-[ImageRunSnippetCommand]: images/search-run-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
-[ImageShowSnippetsSearch]: images/search-show-snippets.msft.png "Figure 5: The Show Snippets command"  
-[ImageSnippetSplitScreenAfter]: images/sources-snippets-split-screen-after.msft.png "Figure 2: How the page looks after running the Snippet"  
-[ImageSnippetSplitScreen]: images/sources-snippets-split-screen.msft.png "Figure 1: How the page looks before running the Snippet"  
-[ImageSnippetEditor]: images/sources-snippets-editor-saved.msft.png "Figure 8: The Code Editor"  
-[ImageSnippetName]: images/sources-snippets-naming.msft.png "Figure 6: Naming a Snippet"  
-[ImageSnippetsPane]: images/sources-snippets-pane.msft.png "Figure 3: The Snippets pane"  
-[ImageUnsavedSnippet]: images/sources-snippets-editor-unsaved.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
+[ImageMoreTabsIcon]: /microsoft-edge/devtools-guide-chromium/media/more-tabs-icon.msft.png  
+[ImageRunSnippetIcon]: /microsoft-edge/devtools-guide-chromium/media/run-snippet-icon.msft.png  
+
+[ImageSnippetSplitScreen]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-split-screen.msft.png "Figure 1: How the page looks before running the Snippet"  
+[ImageSnippetSplitScreenAfter]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-split-screen-after.msft.png "Figure 2: How the page looks after running the Snippet"  
+[ImageSnippetsPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-pane.msft.png "Figure 3: The Snippets pane"  
+[ImageSourcesPageEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
+[ImageShowSnippetsSearch]: /microsoft-edge/devtools-guide-chromium/media/javascript-search-show-snippets.msft.png "Figure 5: The Show Snippets command"  
+[ImageSnippetName]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-naming.msft.png "Figure 6: Naming a Snippet"  
+[ImageCreateSnippetSearch]: /microsoft-edge/devtools-guide-chromium/media/javascript-search-create-new-snippet.msft.png "Figure 7: The command for creating a new Snippet"  
+[ImageSnippetEditor]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-editor-saved.msft.png "Figure 8: The Code Editor"  
+[ImageUnsavedSnippet]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-editor-unsaved.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
+[ImageRunSnippetCommand]: /microsoft-edge/devtools-guide-chromium/media/javascript-search-run-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
 
 <!-- links -->  
+
+[DevtoolsConsoleIndex]: ../console/index.md "Console Overview"  
 [DevToolsSourcesPanel]: ../sources.md "Sources Panel Overview"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
@@ -181,12 +182,12 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  

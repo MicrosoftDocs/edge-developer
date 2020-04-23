@@ -4,7 +4,7 @@ description: Learn how the Web Authentication API can enable web applications to
 title: Dev guide - Web Authentication
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/18/2018
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
@@ -13,7 +13,7 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Web Authentication and Windows Hello
 
-The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](http://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
+The [Web Authentication API](https://w3c.github.io/webauthn) in Microsoft Edge enables web applications to use [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) and [external FIDO2 devices](https://fidoalliance.org/fido2) for user authentication so that you and your users can avoid all the hassles and risks of password management, including password guessing, phishing, and key-logging attacks. The current Microsoft Edge implementation is based on the Candidate Recommendation of the Web Authentication specification. **This topic will show you how to try out Windows Hello and FIDO2 authentication with Microsoft Edge.**
 
 Using Web Authentication, the server sends down a plain text challenge to the browser. Once Microsoft Edge is able to verify the user through Windows Hello or an external FIDO2 device, the system will sign the challenge with a private key previously provisioned for this user and send the signature back to the server. If the server can validate the signature using the public key it has for that user and verify the challenge is correct, it can authenticate the user securely. With [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) such as this, the public key is meaningless on its own and the private key is never shared. Furthermore, the private key can never be moved from secure elements or modern systems with TPM-enabled hardware.
 
@@ -33,6 +33,7 @@ Acting as an *identity provider*, you will first need to create a Web Authentica
 The `create` method takes the following parameters:
 
  - **relying party information**
+
 ```javascript
     rp: {
         name: "WebAuthn Sample App",
@@ -41,6 +42,7 @@ The `create` method takes the following parameters:
 ```
 
  - **user account information**
+
 ```javascript
     user: {
         id: stringToArrayBuffer("some.user.id"),
@@ -51,6 +53,7 @@ The `create` method takes the following parameters:
 ```
 
  - **crypto parameters**
+
 ```javascript
     pubKeyCredParams: [
         {
@@ -67,6 +70,7 @@ The `create` method takes the following parameters:
 ```
 
  - **authenticator selection parameters**
+
 ```javascript
     authenticatorSelection: {
         //Select authenticators that support username-less flows
@@ -79,6 +83,7 @@ The `create` method takes the following parameters:
 ```
 
 - **other options**
+
 ```javascript
     //Select larger timeout values, as Microsoft Edge shows UI
     timeout: 50000,
@@ -97,6 +102,7 @@ When you use the `create` method, Microsoft Edge will first ask the user to veri
 The resulting promise returns an [attestation object](https://w3c.github.io/webauthn/#sctn-attestation) representing the new credential. The attestation object contains the public key for the credential. You'll send this object to the server for validating future authentications. Before sending back to the server, you'll need to base64-encode the raw data.
 
 **Client**
+
 ```javascript
 <script>
     navigator.credentials.create({
@@ -115,6 +121,7 @@ The resulting promise returns an [attestation object](https://w3c.github.io/weba
 The server should then decode the attestation object, perform verification steps, extract the public key for this credential, and store it for future authentications. A detailed list of steps can be found in the [credential registration algorithm](https://w3c.github.io/webauthn/#registering-a-new-credential) in the WebAuthn specification.
 
 **Server**
+
 ```javascript
     attestationObject = cbor.decodeFirstSync(Buffer.from(attestation.attestationObject, 'base64'));
     authenticatorData = parseAuthenticatorData(attestationObject.authData);
@@ -132,6 +139,7 @@ Once the credential is created on the client, the next time the user attempts to
 The `get` method takes the *challenge* as its only required parameter. The challenge is an opaque sequence of bytes that the server will send down to a client to sign with the user's private key. For example:
 
 **Server**
+
 ```javascript
     var jwt = require('jsonwebtoken');
     var jwt_secret = "defaultsecret";
@@ -145,6 +153,7 @@ The `get` method takes the *challenge* as its only required parameter. The chall
 After retrieving a challenge from the server, you'll call the get API along with [credential request options](https://w3c.github.io/webauthn/#credentialrequestoptions-extension). Microsoft Edge will show a prompt, which will verify the identity of the user using Windows Hello or an external FIDO2 device. After the user is verified, the challenge will be signed within the TPM or FIDO2 device and the promise will return with an [assertion object](https://w3c.github.io/webauthn/#authenticatorassertionresponse) that contains the signature and other metadata for you to send to the server.
 
 **Client**
+
 ```javascript
     var credentialRequestOptions = {
         //specifies which credential IDs are allowed to authenticate the user
@@ -173,6 +182,7 @@ After retrieving a challenge from the server, you'll call the get API along with
 Once you receive the assertion on the server, you will need to validate the signature to authenticate the user. The following is some sample code.  A detailed list of steps can be found in the [assertion verification algorithm](https://w3c.github.io/webauthn/#verifying-assertion) in the WebAuthn specification.
 
 **Server**
+
 ```javascript
     var jwkToPem = require('jwk-to-pem')
     var crypto = require('crypto');

@@ -2,18 +2,18 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/26/2019
+ms.date: 03/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright 05/29/2019 Kayce Basques 
+<!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -26,14 +26,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-
-<!--
-<style>
-figcaption {
-  text-align: center;
-}
-</style>
--->
 
 # Network Analysis Reference   
 
@@ -135,9 +127,8 @@ To manually clear the browser cache at any time, right-click anywhere in the Req
 
 ### Emulate offline   
 
-A new class of web apps, called **Progressive Web Apps**, functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.  
+A new class of web apps, called [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.  
 
-<!--[ProgressiveWebApps]: /web/progressive-web-apps  -->
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
 Click the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate a completely offline network experience.  
@@ -652,7 +643,7 @@ Deselect the **Show Overview** checkbox to hide it.
 [ImageDisableCacheCheckBox]: images/network-disable-cache-checkbox.msft.png "Figure 5: The Disable Cache checkbox"  
 [ImageFilterTextBox]: images/network-filters-textbox.msft.png "Figure 10: The Filters text box"  
 <!--[ImageFrames]: images/frames.msft.png "Old Figure 20: The Frames tab"  -->  
-[ImageHeaders]: ../images/network-resources-headers.msft.png "Figure 21: The Headers tab"  
+[ImageHeaders]: /microsoft-edge/devtools-guide-chromium/media/network-resources-headers.msft.png "Figure 21: The Headers tab"  
 [ImageHideDataURLsCheckBox]: images/network-hide-data-urls.msft.png "Figure 13: The Hide Data URLs checkbox"  
 [ImageHideFiltersButton]: images/network-resources-hide-filters-button.msft.png "Figure 34: The Hide Filters button"  
 [ImageHideOverviewCheckbox]: images/network-requests-show-overview-off.msft.png "Figure 37: The Hide Overview checkbox"  
@@ -686,6 +677,8 @@ Deselect the **Show Overview** checkbox to hide it.
 
 <!-- links -->  
 
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps.md "Debug Progressive Web Apps"  
+
 <!--[NetworkConditions]: network-conditions.md "Optimize Performance Under Varying Network Conditions"  -->  
 
 [MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"  
@@ -693,12 +686,12 @@ Deselect the **Show Overview** checkbox to hide it.
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
