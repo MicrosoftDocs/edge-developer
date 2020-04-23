@@ -335,5 +335,4 @@ additionalContent:
         # Card
         - title: End User Support
           summary: Helpful support resources for end users is available.
-          url: https://support.microsoft.com/hub/4337664/microsoft-edge-help
-          
+          url: https://support.microsoft.com/microsoft-edge
