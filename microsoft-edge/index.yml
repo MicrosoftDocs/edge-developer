@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/03/2020
+  ms.date: 04/23/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -54,6 +54,8 @@ productDirectory:
     - title: Deploy and update Microsoft Edge
       imageSrc: /media/common/i_reference.svg
       links:
+        - url: /deployedge/microsoft-edge-video-deploy
+          text: Video - Deploy Microsoft Edge
         - url: /configmgr/apps/deploy-use/deploy-edge
           text: Deploy to Windows
         - url: /intune/apps/apps-edge-macos
