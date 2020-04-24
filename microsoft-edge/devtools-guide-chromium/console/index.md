@@ -2,7 +2,7 @@
 title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -116,7 +116,7 @@ See [Get Started With Running JavaScript][ImageConsoleChangeTitle] to get hands-
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: /microsoft-edge/devtools-guide-chromium/console/api.md "Console API Reference"  
+[DevToolsConsoleAPI]: /microsoft-edge/devtools-guide-chromium/console/api "Console API Reference"  
 [DevtoolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
 [DevtoolsConsoleRunningJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Get Started With Running JavaScript In The Console"  
 [DevtoolsConsoleUtilitiesDebug]: /microsoft-edge/devtools-guide-chromium/console/utilities#debug "debug - Console Utilities API Reference"  

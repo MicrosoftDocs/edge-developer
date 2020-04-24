@@ -2,7 +2,7 @@
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -114,8 +114,8 @@ The next time you open DevTools, a new page is displayed called **Experiments** 
 
 <!-- links -->  
 
-[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
-[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme.md "Enable Dark Theme In Microsoft Edge DevTools"  
+[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Enable Dark Theme In Microsoft Edge DevTools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

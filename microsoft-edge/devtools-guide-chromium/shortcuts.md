@@ -2,7 +2,7 @@
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -70,7 +70,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Restore default zoom level | `Control`+`0` | `Command`+`0` |  
 | Run snippet | Press `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `!` followed by the name of the script, then press `Enter` | Press `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `!` followed by the name of the script, then press `Enter` |  
 
-<!-- TODO make a bug about this UIPlacement link being ambiguous.  -->  
+<!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
 ## Elements panel keyboard shortcuts   
@@ -108,7 +108,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Step over next function call | `F10` or `Control`+`'` | `F10` or `Command`+`'` |  
 | Step into next function call | `F11` or `Control`+`;` | `F11` or `Command`+`;` |  
 | Step out of current function | `Shift`+`F11` or `Control`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |  
-| Continue to a certain line of code while paused | Hold `Control`, then click the line of code | Hold `Command`, then click the line of code |  
+| Continue to a [specific line of code while paused][DevtoolsJavascriptBreakpointsLOC] | Hold `Control`, then click the line of code | Hold `Command`, then click the line of code |  
 | Select the call frame below / above the currently-selected frame | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Save changes to local modifications | `Control`+`S` | `Command`+`S` |  
 | Save all changes | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |  
@@ -118,19 +118,15 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Go to a function declaration \(if currently-open file is HTML or a script\), or a rule set \(if currently-open file is a stylesheet\) | Press `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
 | Close the active tab | `Alt`+`W` | `Option`+`W` |  
 
-<!-- TODO: Link Continue Release Notes "Continue to a certain line of code while paused" when a good section exists.  -->  
-
 ### Code Editor keyboard shortcuts   
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
 | Delete all characters in the last word, up to the cursor | `Control`+`Delete` | `Option`+`Delete` |  
-| Add or remove a line-of-code breakpoint | Focus your cursor on the line, then press `Control`+`B` | Focus your cursor on the line, then press `Command`+`B` |  
+| Add or remove a [line-of-code breakpoint][DevtoolsJavascriptBreakpointsLOC] | Focus your cursor on the line, then press `Control`+`B` | Focus your cursor on the line, then press `Command`+`B` |  
 | Go to matching bracket | `Control`+`M` | `Control`+`M` |  
 | Toggle single-line comment. If multiple lines are selected, DevTools adds a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
 | Select / de-select the next occurrence of whatever word the cursor is on. Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
-
-<!-- TODO: Link JavaScript Breakpoints LOC "line-of-code breakpoint" when a good section exists.  -->  
 
 ## Performance panel keyboard shortcuts   
 
@@ -170,12 +166,11 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevtoolsCustomizeIndexDrawer]: customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools"  
-[DevtoolsCustomizeIndexPlacement]: customize/index.md#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools"  
-[DevtoolsDeviceModeIndex]: device-mode/index.md "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
-
-<!--[DevtoolsJavascriptBreakpointsLOC]: javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  -->  
+[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools"  
+[DevtoolsCustomizeIndexPlacement]: /microsoft-edge/devtools-guide-chromium/customize/index#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools"  
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
+[DevtoolsJavascriptBreakpointsLOC]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 
