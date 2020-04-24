@@ -3,21 +3,21 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# interface ICoreWebView2CreateCoreWebView2HostCompletedHandler 
+# interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler 
 
 ```
-interface ICoreWebView2CreateCoreWebView2HostCompletedHandler
+interface ICoreWebView2CreateCoreWebView2ControllerCompletedHandler
   : public IUnknown
 ```
 
-The caller implements this interface to receive the CoreWebView2Host created via CreateCoreWebView2Host.
+The caller implements this interface to receive the CoreWebView2Controller created via CreateCoreWebView2Controller.
 
 ## Summary
 
@@ -31,5 +31,5 @@ The caller implements this interface to receive the CoreWebView2Host created via
 
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
-> public HRESULT [Invoke](#invoke)(HRESULT result,[ICoreWebView2Host](ICoreWebView2Host.md) * created_host)
+> public HRESULT [Invoke](#invoke)(HRESULT result,[ICoreWebView2Controller](ICoreWebView2Controller.md) * createdController)
 
