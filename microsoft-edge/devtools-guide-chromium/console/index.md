@@ -83,7 +83,7 @@ Web developers log messages for 2 general reasons:
 *   Making sure that code is running in the right order.  
 *   Inspecting the values of variables at a certain moment in time.  
 
-See [Get Started With Logging Messages][ImageConsoleChangeTitle] to get hands-on experience with logging.  See the [Console API Reference][DevToolsConsoleAPI] to browse the full list of `console` methods.  The main difference between the methods is how the data being logged is displayed.  
+See [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages] to get hands-on experience with logging.  See the [Console API Reference][DevToolsConsoleAPI] to browse the full list of `console` methods.  The main difference between the methods is how the data being logged is displayed.  
 
 ## Running JavaScript   
 
@@ -97,10 +97,10 @@ The Console is also a [REPL][WikiREPLoop].  You may run JavaScript in the Consol
 > Using the Console to change the top heading of the page  
 > ![Using the Console to change the top heading of the page][ImageConsoleChangeTitle]  
 
-Modifying the page from the Console is possible because the Console has full access to the [`window`][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  See [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug] to see the full list of utility functions.  
+Modifying the page from the Console is possible because the Console has full access to the [window][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  See [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug] to see the full list of utility functions.  
 
-When you run JavaScript you do not have to interact with the page.  You may use the Console to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array method [`map()`][MDNMap], and you want to experiment with it.  
-The Console is a good place to try out the function.  
+When you run JavaScript you do not have to interact with the page.  You may use the Console to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array [map()][MDNMap] method, and you want to experiment with it.  
+The **Console** is a good place to try out the function.  
 
 See [Get Started With Running JavaScript][ImageConsoleChangeTitle] to get hands-on experience with running JavaScript in the Console.  
 
