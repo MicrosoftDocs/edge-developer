@@ -2,7 +2,7 @@
 title: Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -57,7 +57,7 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
     
 ## Change placement from the Command Menu   
 
-1.  [Open the Command Menu][DevToolsCommandMenu].  
+1.  [Open the Command Menu][DevtoolsCommandMenu].  
 1.  Run one of the following commands: `Dock To Bottom`, `Undock Into Separate Window`.  Currently there is no command for docking to left, but you may access it from the [main menu](#change-placement-from-the-main-menu).  
     
     > ##### Figure 6  
@@ -70,20 +70,20 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 
 <!-- image links -->  
 
-[ImageUndockIcon]: images/undock-icon.msft.png  
-[ImageBottomIcon]: images/bottom-icon.msft.png  
-[ImageLeftIcon]: images/left-icon.msft.png  
+[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
+[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
+[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
 
-[ImageDockLeft]: images/elements-styles-right-docked.msft.png "Figure 1: Dock To Left"  
-[ImageDockBottom]: images/elements-styles-bottom-docked.msft.png "Figure 2: Dock To Bottom"  
-[ImageUndockBrowser]: images/elements-styles-options-dock-side-highlight-browser.msft.png "Figure 3: Browser in separate window"  
-[ImageUndockDevTools]: images/elements-styles-options-dock-side-highlight-devtools.msft.png "Figure 4: Undocked DevTools in separate window"  
-[ImageUndockSettings]: images/elements-styles-options-dock-side-highlight.msft.png "Figure 5: Selecting Undock Into Separate Window"  
-[ImageUndockCommand]: images/elements-styles-command-menu-undo.msft.png "Figure 6: The undock command"  
+[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Figure 1: Dock To Left"  
+[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Figure 2: Dock To Bottom"  
+[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Figure 3: Browser in separate window"  
+[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Figure 4: Undocked DevTools in separate window"  
+[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Figure 5: Selecting Undock Into Separate Window"  
+[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Figure 6: The undock command"  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
