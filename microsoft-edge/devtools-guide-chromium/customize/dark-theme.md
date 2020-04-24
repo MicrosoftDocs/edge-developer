@@ -2,7 +2,7 @@
 title: Enable Dark Theme In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -64,14 +64,14 @@ You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the
 
 <!-- image links -->  
 
-[ImageDarkTheme]: images/elements-styles-console-dark-theme.msft.png "Figure 1: The dark theme"  
-[ImageOpenSettings]: images/options-settings.msft.png "Figure 2: Opening Settings"  
-[ImagePreferences]: images/settings-preferences-appearance-theme-dark.msft.png "Figure 3: Preferences"  
-[ImageDarkThemeCommand]: images/command-menu-dark.msft.png "Figure 4: The dark theme command"  
+[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-console-dark-theme.msft.png "Figure 1: The dark theme"  
+[ImageOpenSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-options-settings.msft.png "Figure 2: Opening Settings"  
+[ImagePreferences]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences-appearance-theme-dark.msft.png "Figure 3: Preferences"  
+[ImageDarkThemeCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-command-menu-dark.msft.png "Figure 4: The dark theme command"  
 
 <!-- links -->  
 
-[CommandMenu]: ../command-menu/index.md "Command Menu"  
+[CommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index.md "Command Menu"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
