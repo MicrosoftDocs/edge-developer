@@ -2,7 +2,7 @@
 title: Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -83,7 +83,7 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
