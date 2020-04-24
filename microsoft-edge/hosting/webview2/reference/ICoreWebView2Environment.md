@@ -3,11 +3,11 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # interface ICoreWebView2Environment 
@@ -23,9 +23,9 @@ This represents the WebView2 Environment.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[CreateCoreWebView2Host](#createcorewebview2host) | Asynchronously create a new WebView.
+[CreateCoreWebView2Controller](#createcorewebview2controller) | Asynchronously create a new WebView.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
-[get_BrowserVersionInfo](#get_browserversioninfo) | The browser version info of the current [ICoreWebView2Environment](), including channel name if it is not the stable channel.
+[get_BrowserVersionString](#get_browserversionstring) | The browser version info of the current [ICoreWebView2Environment](), including channel name if it is not the stable channel.
 [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable) | Remove an event handler previously added with add_NewBrowserVersionAvailable.
 
@@ -33,29 +33,63 @@ WebViews created from an environment run on the Browser process specified with e
 
 ## Members
 
-#### CreateCoreWebView2Host 
+#### CreateCoreWebView2Controller 
 
 Asynchronously create a new WebView.
 
-> public HRESULT [CreateCoreWebView2Host](#createcorewebview2host)(HWND parentWindow,[ICoreWebView2CreateCoreWebView2HostCompletedHandler](ICoreWebView2CreateCoreWebView2HostCompletedHandler.md) * handler)
+> public HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller)(HWND parentWindow,[ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](ICoreWebView2CreateCoreWebView2ControllerCompletedHandler.md) * handler)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow. 
-
 ```cpp
 // Create or recreate the WebView and its environment.
-void AppWindow::InitializeWebView()
+void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
 {
+    m_lastUsedInitFlags = webviewInitFlags;
     // To ensure browser switches get applied correctly, we need to close
     // the existing WebView. This will result in a new browser process
     // getting created which will apply the browser switches.
     CloseWebView();
 
     LPCWSTR subFolder = nullptr;
+    m_dcompDevice = nullptr;
+    m_wincompHelper = nullptr;
     LPCWSTR additionalBrowserSwitches = nullptr;
-    HRESULT hr = CreateCoreWebView2EnvironmentWithDetails(
-        subFolder, nullptr, additionalBrowserSwitches,
+    if (webviewInitFlags & kWindowlessDcompVisual)
+    {
+        HRESULT hr = DCompositionCreateDevice2(nullptr, IID_PPV_ARGS(&m_dcompDevice));
+        if (!SUCCEEDED(hr))
+        {
+            MessageBox(
+                m_mainWindow,
+                L"Attempting to create WebView using DComp Visual is not supported.\r\n"
+                "DComp device creation failed.\r\n"
+                "Current OS may not support DComp.",
+                L"Create with Windowless DComp Visual Failed", MB_OK);
+            return;
+        }
+    }
+    else if (webviewInitFlags & kWindowlessWincompVisual)
+    {
+        HRESULT hr = CreateWinCompCompositor();
+        if (!SUCCEEDED(hr))
+        {
+            MessageBox(
+                m_mainWindow,
+                L"Attempting to create WebView using WinComp Visual is not supported.\r\n"
+                "WinComp compositor creation failed.\r\n"
+                "Current OS may not support WinComp.",
+                L"Create with Windowless WinComp Visual Failed", MB_OK);
+            return;
+        }
+    }
+    auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
+    CHECK_FAILURE(options->put_AdditionalBrowserArguments(additionalBrowserSwitches));
+    if(!m_language.empty())
+        CHECK_FAILURE(options->put_Language(m_language.c_str()));
+    HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
+        subFolder, nullptr, options.Get(),
         Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
             this, &AppWindow::OnCreateEnvironmentCompleted)
             .Get());
@@ -84,17 +118,38 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 {
     CHECK_FAILURE(result);
 
-    CHECK_FAILURE(environment->QueryInterface(IID_PPV_ARGS(&m_webViewEnvironment)));
-        CHECK_FAILURE(m_webViewEnvironment->CreateCoreWebView2Host(
-            m_mainWindow, Callback<ICoreWebView2CreateCoreWebView2HostCompletedHandler>(
-                              this, &AppWindow::OnCreateCoreWebView2HostCompleted)
+    m_webViewEnvironment = environment;
+
+    auto webViewExperimentalEnvironment =
+        m_webViewEnvironment.try_query<ICoreWebView2ExperimentalEnvironment>();
+    if (webViewExperimentalEnvironment && (m_dcompDevice || m_wincompHelper))
+    {
+        CHECK_FAILURE(webViewExperimentalEnvironment->CreateCoreWebView2CompositionController(
+            m_mainWindow,
+            Callback<
+                ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler>(
+                [this](
+                    HRESULT result,
+                    ICoreWebView2ExperimentalCompositionController* compositionController) -> HRESULT {
+                    auto controller =
+                        wil::com_ptr<ICoreWebView2ExperimentalCompositionController>(compositionController)
+                            .query<ICoreWebView2Controller>();
+                    return OnCreateCoreWebView2ControllerCompleted(result, controller.get());
+                })
+                .Get()));
+    }
+    else
+    {
+        CHECK_FAILURE(m_webViewEnvironment->CreateCoreWebView2Controller(
+            m_mainWindow, Callback<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler>(
+                              this, &AppWindow::OnCreateCoreWebView2ControllerCompleted)
                               .Get()));
+    }
+
     return S_OK;
 }
 ```
-
  It is recommended that the application handles restart manager messages so that it can be restarted gracefully in the case when the app is using Edge for webview from a certain installation and that installation is being uninstalled. For example, if a user installs Edge from Dev channel and opts to use Edge from that channel for testing the app, and then uninstalls Edge from that channel without closing the app, the app will be restarted to allow uninstallation of the dev channel to succeed. 
-
 ```cpp
     case WM_QUERYENDSESSION:
     {
@@ -116,6 +171,9 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
     }
     break;
 ```
+ When the application retries CreateCoreWebView2Controller upon failure, it is recommended that the application restarts from creating a new WebView2 Environment. If an Edge update happens, the version associated with a WebView2 Environment could have been removed and causing the object to no longer work. Creating a new WebView2 Environment will work as it uses the latest version.
+
+WebView creation will fail if there is already a running instance using the same user data folder, and the Environment objects have different EnvironmentOptions. For example, if there is already a WebView created with one language, trying to create a WebView with a different language using the same user data folder will fail.
 
 #### CreateWebResourceResponse 
 
@@ -128,17 +186,17 @@ The headers is the raw response header string delimited by newline. It's also po
 ```cpp
         if (m_blockImages)
         {
-            m_webView->AddWebResourceRequestedFilter(L"*", CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
+            m_webView->AddWebResourceRequestedFilter(L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
             CHECK_FAILURE(m_webView->add_WebResourceRequested(
                 Callback<ICoreWebView2WebResourceRequestedEventHandler>(
                     [this](
                         ICoreWebView2* sender,
                         ICoreWebView2WebResourceRequestedEventArgs* args) {
-                        CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
                         CHECK_FAILURE(
                             args->get_ResourceContext(&resourceContext));
                         // Ensure that the type is image
-                        if (resourceContext != CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
+                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
                         {
                             return E_INVALIDARG;
                         }
@@ -160,17 +218,17 @@ The headers is the raw response header string delimited by newline. It's also po
         }
 ```
 
-#### get_BrowserVersionInfo 
+#### get_BrowserVersionString 
 
 The browser version info of the current [ICoreWebView2Environment](), including channel name if it is not the stable channel.
 
-> public HRESULT [get_BrowserVersionInfo](#get_browserversioninfo)(LPWSTR * versionInfo)
+> public HRESULT [get_BrowserVersionString](#get_browserversionstring)(LPWSTR * versionInfo)
 
-This matches the format of the GetCoreWebView2BrowserVersionInfo API. Channel names are 'beta', 'dev', and 'canary'.
+This matches the format of the GetAvailableCoreWebView2BrowserVersionString API. Channel names are 'beta', 'dev', and 'canary'.
 
 ```cpp
         wil::unique_cotaskmem_string version_info;
-        m_webViewEnvironment->get_BrowserVersionInfo(&version_info);
+        m_webViewEnvironment->get_BrowserVersionString(&version_info);
         MessageBox(
             m_mainWindow, version_info.get(), L"Browser Version Info After WebView Creation",
             MB_OK);
@@ -192,16 +250,8 @@ Because a user data folder can only be used by one browser process at a time, if
     // This handler tells when there is a new Edge version available on the machine.
     CHECK_FAILURE(m_webViewEnvironment->add_NewBrowserVersionAvailable(
         Callback<ICoreWebView2NewBrowserVersionAvailableEventHandler>(
-            [this](
-                ICoreWebView2Environment* sender,
-                ICoreWebView2NewBrowserVersionAvailableEventArgs* args) -> HRESULT {
-                // Get the version value from args
-                wil::unique_cotaskmem_string newVersion;
-                CHECK_FAILURE(args->get_NewVersion(&newVersion));
+            [this](ICoreWebView2Environment* sender, IUnknown* args) -> HRESULT {
                 std::wstring message = L"We detected there is a new version for the browser.";
-                message += L"\n\nVersion number: ";
-                message += newVersion.get();
-                message += L"\n\n";
                 if (m_webView)
                 {
                     message += L"Do you want to restart the app? \n\n";
