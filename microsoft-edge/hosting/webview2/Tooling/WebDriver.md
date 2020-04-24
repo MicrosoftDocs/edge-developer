@@ -7,7 +7,7 @@ ms.date: 03/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Host, Selenium, Microsoft Edge Driver
+keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
 ---
 
 # Automating and Testing WebView2 with Microsoft Edge Driver

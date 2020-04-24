@@ -183,7 +183,7 @@
 #### [ICoreWebView2WebResourceRequest](webview2/reference/win32/0.9.488/ICoreWebView2WebResourceRequest.md)
 #### [ICoreWebView2WebResourceResponse](webview2/reference/win32/0.9.488/ICoreWebView2WebResourceResponse.md)
 #### [Globals](webview2/reference/win32/0.9.488/webview2.idl.md)
-#### Event argument interfaces
+#### Event arguments
 ##### [ICoreWebView2AcceleratorKeyPressedEventArgs](webview2/reference/win32/0.9.488/ICoreWebView2AcceleratorKeyPressedEventArgs.md)
 ##### [ICoreWebView2ContentLoadingEventArgs](webview2/reference/win32/0.9.488/ICoreWebView2ContentLoadingEventArgs.md)
 ##### [ICoreWebView2DevToolsProtocolEventReceivedEventArgs](webview2/reference/win32/0.9.488/ICoreWebView2DevToolsProtocolEventReceivedEventArgs.md)
@@ -197,7 +197,7 @@
 ##### [ICoreWebView2SourceChangedEventArgs](webview2/reference/win32/0.9.488/ICoreWebView2SourceChangedEventArgs.md)
 ##### [ICoreWebView2WebMessageReceivedEventArgs](webview2/reference/win32/0.9.488/ICoreWebView2WebMessageReceivedEventArgs.md)
 ##### [ICoreWebView2WebResourceRequestedEventArgs](webview2/reference/win32/0.9.488/ICoreWebView2WebResourceRequestedEventArgs.md)
-#### Delegate interfaces
+#### Delegates
 ##### [ICoreWebView2AcceleratorKeyPressedEventHandler](webview2/reference/win32/0.9.488/ICoreWebView2AcceleratorKeyPressedEventHandler.md)
 ##### [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](webview2/reference/win32/0.9.488/ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md)
 ##### [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](webview2/reference/win32/0.9.488/ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md)
@@ -244,7 +244,7 @@
 ###### [ICoreWebView2WebResourceRequest](webview2/reference/win32/0.9.430/ICoreWebView2WebResourceRequest.md)
 ###### [ICoreWebView2WebResourceResponse](webview2/reference/win32/0.9.430/ICoreWebView2WebResourceResponse.md)
 ###### [Globals](webview2/reference/win32/0.9.430/webview2.idl.md)
-###### Event argument interfaces
+###### Event arguments
 ####### [ICoreWebView2AcceleratorKeyPressedEventArgs](webview2/reference/win32/0.9.430/ICoreWebView2AcceleratorKeyPressedEventArgs.md)
 ####### [ICoreWebView2ContentLoadingEventArgs](webview2/reference/win32/0.9.430/ICoreWebView2ContentLoadingEventArgs.md)
 ####### [ICoreWebView2DevToolsProtocolEventReceivedEventArgs](webview2/reference/win32/0.9.430/ICoreWebView2DevToolsProtocolEventReceivedEventArgs.md)
@@ -259,7 +259,7 @@
 ####### [ICoreWebView2SourceChangedEventArgs](webview2/reference/win32/0.9.430/ICoreWebView2SourceChangedEventArgs.md)
 ####### [ICoreWebView2WebMessageReceivedEventArgs](webview2/reference/win32/0.9.430/ICoreWebView2WebMessageReceivedEventArgs.md)
 ####### [ICoreWebView2WebResourceRequestedEventArgs](webview2/reference/win32/0.9.430/ICoreWebView2WebResourceRequestedEventArgs.md)
-###### Delegate interfaces
+###### Delegates
 ####### [ICoreWebView2AcceleratorKeyPressedEventHandler](webview2/reference/win32/0.9.430/ICoreWebView2AcceleratorKeyPressedEventHandler.md)
 ####### [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](webview2/reference/win32/0.9.430/ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md)
 ####### [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](webview2/reference/win32/0.9.430/ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md)
@@ -305,7 +305,7 @@
 ###### [IWebView2WebView4](webview2/reference/win32/0.8.190/IWebView2WebView4.md)
 ###### [IWebView2WebView5](webview2/reference/win32/0.8.190/IWebView2WebView5.md)
 ###### [Globals](webview2/reference/win32/0.8.190/webview2.idl.md)
-###### Event argument interfaces
+###### Event arguments
 ####### [IWebView2AcceleratorKeyPressedEventArgs](webview2/reference/win32/0.8.190/IWebView2AcceleratorKeyPressedEventArgs.md)
 ####### [IWebView2DevToolsProtocolEventReceivedEventArgs](webview2/reference/win32/0.8.190/IWebView2DevToolsProtocolEventReceivedEventArgs.md)
 ####### [IWebView2DocumentStateChangedEventArgs](webview2/reference/win32/0.8.190/IWebView2DocumentStateChangedEventArgs.md)
@@ -319,7 +319,7 @@
 ####### [IWebView2ScriptDialogOpeningEventArgs](webview2/reference/win32/0.8.190/IWebView2ScriptDialogOpeningEventArgs.md)
 ####### [IWebView2WebMessageReceivedEventArgs](webview2/reference/win32/0.8.190/IWebView2WebMessageReceivedEventArgs.md)
 ####### [IWebView2WebResourceRequestedEventArgs](webview2/reference/win32/0.8.190/IWebView2WebResourceRequestedEventArgs.md)
-###### Delegate interfaces
+###### Delegates
 ####### [IWebView2AcceleratorKeyPressedEventHandler](webview2/reference/win32/0.8.190/IWebView2AcceleratorKeyPressedEventHandler.md)
 ####### [IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](webview2/reference/win32/0.8.190/IWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md)
 ####### [IWebView2CallDevToolsProtocolMethodCompletedHandler](webview2/reference/win32/0.8.190/IWebView2CallDevToolsProtocolMethodCompletedHandler.md)
@@ -343,3 +343,29 @@
 ####### [IWebView2WebMessageReceivedEventHandler](webview2/reference/win32/0.8.190/IWebView2WebMessageReceivedEventHandler.md)
 ####### [IWebView2WebResourceRequestedEventHandler](webview2/reference/win32/0.8.190/IWebView2WebResourceRequestedEventHandler.md)
 ####### [IWebView2ZoomFactorChangedEventHandler](webview2/reference/win32/0.8.190/IWebView2ZoomFactorChangedEventHandler.md)
+### [.NET](webview2/reference/dotnet/0.9.494-reference-webview2.md)
+#### [CoreWebView2](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2.md)
+#### [CoreWebView2Controller](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Controller.md)
+#### [CoreWebView2Deferral](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md)
+#### [CoreWebView2DevToolsProtocolEventReceiver](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2DevToolsProtocolEventReceiver.md)
+#### [CoreWebView2Environment](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Environment.md)
+#### [CoreWebView2EnvironmentOptions](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2EnvironmentOptions.md)
+#### [Struct Microsoft::Web::WebView2::Core::CoreWebView2PhysicalKeyStatus](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2PhysicalKeyStatus.md)
+#### [CoreWebView2Settings](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Settings.md)
+#### [EdgeNotFoundException](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--EdgeNotFoundException.md)
+#### Event arguments
+##### [CoreWebView2AcceleratorKeyPressedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2AcceleratorKeyPressedEventArgs.md)
+##### [CoreWebView2ContentLoadingEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2ContentLoadingEventArgs.md)
+##### [CoreWebView2DevToolsProtocolEventReceivedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2DevToolsProtocolEventReceivedEventArgs.md)
+##### [CoreWebView2MoveFocusRequestedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2MoveFocusRequestedEventArgs.md)
+##### [CoreWebView2NavigationCompletedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2NavigationCompletedEventArgs.md)
+##### [CoreWebView2NavigationStartingEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2NavigationStartingEventArgs.md)
+##### [CoreWebView2NewWindowRequestedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2NewWindowRequestedEventArgs.md)
+##### [CoreWebView2PermissionRequestedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2PermissionRequestedEventArgs.md)
+##### [CoreWebView2ProcessFailedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2ProcessFailedEventArgs.md)
+##### [CoreWebView2ScriptDialogOpeningEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2ScriptDialogOpeningEventArgs.md)
+##### [CoreWebView2SourceChangedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2SourceChangedEventArgs.md)
+##### [CoreWebView2WebMessageReceivedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2WebMessageReceivedEventArgs.md)
+##### [CoreWebView2WebResourceRequestedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2WebResourceRequestedEventArgs.md)
+### [WinForms](webview2/reference/winforms/0.9.494-reference-webview2.md)
+#### [WebView2](webview2/reference/winforms/0.9.494/Microsoft--Web--WebView2--WinForms--WebView2.md)
