@@ -58,7 +58,7 @@ Your Developer Tools matches your browser language by default, if it is one of t
 > DevTools in Japanese  
 > ![DevTools in Japanese][ImageJpDevTools]
 
-If you want to revert DevTools to English, go to DevTools **Settings** or press `F1` > **Preferences** and deselect the **Match browser language** checkbox.
+If you want to revert DevTools to English, go to [DevTools Settings][DevtoolschromiumCustomizeIndexSettings] or press `F1` > **Preferences** and deselect the **Match browser language** checkbox.
 
 <!-- image links -->
 
