@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -234,7 +234,7 @@ Mouse event type used by SendMouseInput to convey the type of mouse event being 
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
-COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL            | Mouse horizonal wheel scroll event, WM_MOUSEHWHEEL.
+COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL            | Mouse horizontal wheel scroll event, WM_MOUSEHWHEEL.
 COREWEBVIEW2_MOUSE_EVENT_KIND_LEFT_BUTTON_DOUBLE_CLICK            | Left button double click mouse event, WM_LBUTTONDBLCLK.
 COREWEBVIEW2_MOUSE_EVENT_KIND_LEFT_BUTTON_DOWN            | Left button down mouse event, WM_LBUTTONDOWN.
 COREWEBVIEW2_MOUSE_EVENT_KIND_LEFT_BUTTON_UP            | Left button up mouse event, WM_LBUTTONUP.

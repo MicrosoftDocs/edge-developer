@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -503,7 +503,7 @@ void AppWindow::CloseWebView(bool cleanupUserDataFolder)
         // developers specify userDataFolder during WebView environment
         // creation, they would need to pass in that explicit value here.
         // For more information about userDataFolder:
-        // https://docs.microsoft.com/microsoft-edge/hosting/webview2/reference/win32/0.9.488/webview2.idl#createwebview2environmentwithdetails
+        // https://docs.microsoft.com/microsoft-edge/hosting/webview2/reference/win32/0.9.488/webview2.idl#createwebview2environmentwithoptions
         WCHAR userDataFolder[MAX_PATH] = L"";
         // Obtain the absolute path for relative paths that include "./" or "../"
         _wfullpath(
