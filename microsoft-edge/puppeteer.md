@@ -63,7 +63,7 @@ Now run `example.js` from the command-line.
 node example.js
 ```  
 
-`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com` and saves an 800x600px screenshot of the page.  You are able to customize the page size with [page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com` and saves an 800px x 600px screenshot of the page.  You are able to customize the page size with [page.setViewport()][PuppeteerApipagesetviewport].  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js":::
    Figure 1:  The `example.png` file produced by `example.js`  
