@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft::Web::WebView2::Core::CoreWebView2DevToolsProtocolEventReceiver 
+# class Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceiver 
 
 A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.
 

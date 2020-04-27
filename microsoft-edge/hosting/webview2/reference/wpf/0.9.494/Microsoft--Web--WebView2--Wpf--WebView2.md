@@ -10,10 +10,10 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft::Web::WebView2::Wpf::WebView2 
+# class Microsoft.Web.WebView2.Wpf.WebView2 
 
 ```
-class Microsoft::Web::WebView2::Wpf::WebView2
+class Microsoft.Web.WebView2.Wpf.WebView2
   : public HwndHost
 ```
 

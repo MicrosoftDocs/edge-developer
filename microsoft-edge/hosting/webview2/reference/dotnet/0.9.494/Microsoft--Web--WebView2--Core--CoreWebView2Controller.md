@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft::Web::WebView2::Core::CoreWebView2Controller 
+# class Microsoft.Web.WebView2.Core.CoreWebView2Controller 
 
 This class is the owner of the [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) object, and provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 

@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# struct Microsoft::Web::WebView2::Core::CoreWebView2Matrix4x4 
+# struct Microsoft.Web.WebView2.Core.CoreWebView2Matrix4x4 
 
 This transform is used to calculate correct coordinates when calling CreateCoreWebView2PointerInfoFromPointerId.
 

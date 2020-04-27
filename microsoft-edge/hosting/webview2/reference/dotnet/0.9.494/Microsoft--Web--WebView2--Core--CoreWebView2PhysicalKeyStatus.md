@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# struct Microsoft::Web::WebView2::Core::CoreWebView2PhysicalKeyStatus 
+# struct Microsoft.Web.WebView2.Core.CoreWebView2PhysicalKeyStatus 
 
 A structure representing the information packed into the LPARAM given to a Win32 key event.
 
