@@ -27,7 +27,6 @@ Defines properties that enable, disable, or modify WebView features.
 [AreRemoteObjectsAllowed](#areremoteobjectsallowed) | The AreRemoteObjectsAllowed property is used to control whether remote objects are accessible from the page in webview.
 [IsZoomControlEnabled](#iszoomcontrolenabled) | The IsZoomControlEnabled property is used to prevent the user from impacting the zoom of the WebView.
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
-[CoreWebView2Settings](#corewebview2settings) | Initializes a new instance of the CoreWebView2Settings class.
 
 Setting changes made after NavigationStarting event will not apply until the next top level navigation.
 

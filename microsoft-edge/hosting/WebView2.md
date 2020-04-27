@@ -54,7 +54,7 @@ An application utilizing WebView2 must ensure the installation of the Microsoft 
 
 To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability. 
 
-The pre-release version will contain additional [experimental APIs](webview2/reference/win32/0.9.488-reference-webview2.md#experimental-interfaces). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
+The pre-release version will contain additional [experimental APIs](webview2/reference/win32/0.9.488-reference-webview2.md#experimental). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
 
 ## Development against Upcoming Versions
 

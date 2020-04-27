@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # class Microsoft::Web::WebView2::Core::CoreWebView2 
 
-[WebView2](Microsoft--Web--WebView2.md) enables you to host web content using the latest Edge web browser technology.
+WebView2 enables you to host web content using the latest Edge web browser technology.
 
 ## Summary
 

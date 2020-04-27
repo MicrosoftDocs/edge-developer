@@ -45,7 +45,7 @@ A control to embed web content in a WPF application.
 [OnPreviewKeyDown](#onpreviewkeydown) | This is the "Preview" (i.e. tunneling) version of OnKeyDown, so it actually happens first.
 [OnPreviewKeyUp](#onpreviewkeyup) | See OnPreviewKeyDown.
 
-This control is effectively a wrapper around the [WebView2]() COM API, which you can find documentation for here: [https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
+This control is effectively a wrapper around the [WebView2]() COM API, which you can find documentation for here: [https://docs.microsoft.com/microsoft-edge/hosting/webview2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
 
 Note that this control extends HwndHost in order to embed windows which live outside of the WPF ecosystem. This has some implications regarding the control's input and output behavior as well as the functionality it "inherits" from UIElement and FrameworkElement. See the HwndHost and WPF/Win32 interop documentation for more info:
 
