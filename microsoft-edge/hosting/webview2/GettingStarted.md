@@ -3,11 +3,11 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/20/2020
+ms.date: 04/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # Getting Started with WebView2 (developer preview)
@@ -16,7 +16,7 @@ This walkthrough goes over the commonly used functionalities of [WebView2 (devel
 
 ## Prerequisites
 
-* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 82.0.430.0**.
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7). **We recommend using the Canary channel and the minimum required version is 82.0.488.0**.
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later with C++ support installed.
 
 ## Step 1 - Create a single window win32 app
@@ -35,25 +35,25 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 1. Right click the project and click **Manage Nuget Packages**.
 
-![manageNugetPackages](images/manageNugetPackages.PNG)
+    ![manageNugetPackages](images/manageNugetPackages.PNG)
 
 2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** inthe right hand side window and install the latest SDK. Nuget will download the SDK to your machine. While we use [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019) to make working with COM easier in this walkthrough, they are completely optional.
 
-![nuget](images/wil.PNG)
+    ![nuget](images/wil.PNG)
 
 3. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
 
-![nuget](images/Nuget.PNG)
+    ![nuget](images/Nuget.PNG)
 
 4. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
 
-```cpp
-...
-#include <wrl.h>
-#include <wil/com.h>
-// include WebView2 header
-#include "WebView2.h"
-```
+    ```cpp
+    ...
+    #include <wrl.h>
+    #include <wil/com.h>
+    // include WebView2 header
+    #include "WebView2.h"
+    ```
 
 You are all set to use and build against the WebView2 API. Press F5 to build and run the sample app. You should see an app displaying an empty window.
 
@@ -61,7 +61,7 @@ You are all set to use and build against the WebView2 API. Press F5 to build and
 
 ## Step 3 - Create a single WebView within the parent window
 
-Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Host` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Host::get_CoreWebView2` to get the associated WebView.
+Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Controller` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Controller::get_CoreWebView2` to get the associated WebView.
 
 In the callback, let's also set a few settings, resize the WebView to take 100% of the parent window, and navigate to Bing.
 
@@ -74,12 +74,12 @@ CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
     Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
         [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
 
-            // Create a CoreWebView2Host and get the associated CoreWebView2 whose parent is the main window hWnd
-            env->CreateCoreWebView2Host(hWnd, Callback<ICoreWebView2CreateCoreWebView2HostCompletedHandler>(
-                [hWnd](HRESULT result, ICoreWebView2Host* host) -> HRESULT {
-                if (host != nullptr) {
-                    webviewHost = host;
-                    webviewHost->get_CoreWebView2(&webviewWindow);
+            // Create a CoreWebView2Controller and get the associated CoreWebView2 whose parent is the main window hWnd
+            env->CreateCoreWebView2Controller(hWnd, Callback<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler>(
+                [hWnd](HRESULT result, ICoreWebView2Controller* controller) -> HRESULT {
+                if (controller != nullptr) {
+                    webviewController = controller;
+                    webviewController->get_CoreWebView2(&webviewWindow);
                 }
 
                 // Add a few settings for the webview
@@ -93,7 +93,7 @@ CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
                 // Resize WebView to fit the bounds of the parent window
                 RECT bounds;
                 GetClientRect(hWnd, &bounds);
-                webviewHost->put_Bounds(bounds);
+                webviewController->put_Bounds(bounds);
 
                 // Schedule an async task to navigate to Bing
                 webviewWindow->Navigate(L"https://www.bing.com/");

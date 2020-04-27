@@ -3,11 +3,11 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # interface ICoreWebView2PermissionRequestedEventArgs 
@@ -42,7 +42,7 @@ The origin of the web content that requests the permission.
 
 The type of the permission that is requested.
 
-> public HRESULT [get_PermissionKind](#get_permissionkind)(CORE_WEBVIEW2_PERMISSION_KIND * value)
+> public HRESULT [get_PermissionKind](#get_permissionkind)(COREWEBVIEW2_PERMISSION_KIND * value)
 
 #### get_IsUserInitiated 
 
@@ -56,15 +56,15 @@ Note that being initiated through a user gesture doesn't mean that user intended
 
 The status of a permission request, i.e.
 
-> public HRESULT [get_State](#get_state)(CORE_WEBVIEW2_PERMISSION_STATE * value)
+> public HRESULT [get_State](#get_state)(COREWEBVIEW2_PERMISSION_STATE * value)
 
-whether the request is granted. Default value is CORE_WEBVIEW2_PERMISSION_STATE_DEFAULT.
+whether the request is granted. Default value is COREWEBVIEW2_PERMISSION_STATE_DEFAULT.
 
 #### put_State 
 
 Set the State property.
 
-> public HRESULT [put_State](#put_state)(CORE_WEBVIEW2_PERMISSION_STATE value)
+> public HRESULT [put_State](#put_state)(COREWEBVIEW2_PERMISSION_STATE value)
 
 #### GetDeferral 
 

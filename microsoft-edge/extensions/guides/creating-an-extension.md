@@ -54,6 +54,7 @@ Inside "manifest.json", include the following code.
   }
 }
 ```
+
 **Manifest key definitions:**
 * [`name`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/name): the name of the extension
 * [`author`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/author): the author of the extension

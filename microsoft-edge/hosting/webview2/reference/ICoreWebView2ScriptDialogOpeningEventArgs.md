@@ -3,11 +3,11 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 04/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # interface ICoreWebView2ScriptDialogOpeningEventArgs 
@@ -44,7 +44,7 @@ The URI of the page that requested the dialog box.
 
 The kind of JavaScript dialog box.
 
-> public HRESULT [get_Kind](#get_kind)(CORE_WEBVIEW2_SCRIPT_DIALOG_KIND * kind)
+> public HRESULT [get_Kind](#get_kind)(COREWEBVIEW2_SCRIPT_DIALOG_KIND * kind)
 
 Accept, confirm, prompt, or beforeunload.
 
@@ -70,7 +70,7 @@ The second parameter passed to the JavaScript prompt dialog.
 
 > public HRESULT [get_DefaultText](#get_defaulttext)(LPWSTR * defaultText)
 
-This is the the default value to use for the result of the prompt JavaScript function.
+This is the default value to use for the result of the prompt JavaScript function.
 
 #### get_ResultText 
 

@@ -28,6 +28,7 @@ Please note the following about service worker debugging in Edge DevTools:
  - The [**Elements**](./elements.md) and [**Emulation**](./emulation.md) panels are absent from the service worker debugger, given that service workers run in the background and do not directly control the front-end of your app.
  - Currently network traffic for a service worker is only reported from the  DevTools debugging instance for that worker, and not from the debugger instance for the page itself.
  - To simulate a **Push** from the DevTools, you'll need to add a *push* event listener to your service worker in order to observe its effect. The following example will print "Test push message from DevTools" in your service worker **Console**.
+
    ```JavaScript
    self.addEventListener('push', function(event){
        console.log(event.data.text());
