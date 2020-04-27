@@ -3,7 +3,7 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -92,7 +92,7 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 > ![The Feedback icon in the Microsoft Edge DevTools](./devtools-guide-chromium/media/devtools-feedback.png)  
 -->  
 
-## See also  
+<!--## See also  
 
 *   [WebDriver (Chromium)][WebdriverChromiumMain]  
 *   [WebDriver (EdgeHTML)][WebdriverEdgehtmlMain]  
@@ -104,7 +104,7 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 *   [Puppeteer][PuppeteerMain]  
 *   [puppeteer vs. puppeteer-core][PuppeteerApivscore]  
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
-*   [Headless browser on Wikipedia][WikiHeadlessBrowser]  
+*   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->  
 
 <!-- image links -->  
 
