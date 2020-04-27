@@ -33,7 +33,7 @@ yarn add puppeteer-core
 > [!NOTE]
 > `puppeteer-core` relies on Node v8.9.0 or later.  The example below uses `async`/`await` which is only supported in Node v7.6.0 or later.  Run `node -v` from the command-line to ensure you have a compatible version of Node.js.  
 
-`puppeteer-core` should be familiar to users of other browser testing frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of Browser, open pages, and then manipulate them with Puppeteer API.  In the code sample below, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com` and saves a screenshot as `example.png`.  
+`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
 
 Copy the code sample below and save it as `example.js`.  
 
