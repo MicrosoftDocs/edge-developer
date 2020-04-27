@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test
 
 # Puppeteer  
 
-[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library which provides a high-level API to control Microsoft Edge \(Chromium\) over the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer runs [headless][WikiHeadlessBrowser] by default, which means you are not actually seeing the browser launch or render your website but all of this is happening using the command-line.  You are able to configure Puppeteer to run full \(non-headless\) Microsoft Edge or Chromium as well.  
+[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library which provides a high-level API to control Microsoft Edge \(Chromium\) over the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer runs [headless][WikiHeadlessBrowser] by default, which means that you do not see a UI, and instead must use the command-line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge or Chromium as well.  
 
 By default, when you install Puppeteer, it downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you already have Microsoft Edge \(Chromium\) installed \(if you don't, visit [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]\), you may instead use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  
 
