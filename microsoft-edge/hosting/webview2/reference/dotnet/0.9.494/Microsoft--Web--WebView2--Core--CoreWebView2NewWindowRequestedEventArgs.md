@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,12 +22,13 @@ Event args for the NewWindowRequested event.
 [NewWindow](#newwindow) | Gets the new window.
 [Handled](#handled) | Whether the NewWindowRequestedEvent is handled by host.
 [IsUserInitiated](#isuserinitiated) | IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
-[CoreWebView2NewWindowRequestedEventArgs](#corewebview2newwindowrequestedeventargs) | Initializes a new instance of the CoreWebView2NewWindowRequestedEventArgs class.
 [GetDeferral](#getdeferral) | Obtain a CoreWebView2Deferral object and put the event into a deferred state.
 
 The event is fired when content inside webview requested to a open a new window (through window.open() and so on.)
 
 ## Members
+
+### Properties
 
 #### uri 
 
@@ -47,7 +48,7 @@ Gets the new window.
 
 Whether the NewWindowRequestedEvent is handled by host.
 
-> {property} bool? [Handled](#handled)
+> {property} bool [Handled](#handled)
 
 If this is false and no NewWindow is set, the WebView will open a popup window and it will be returned as opened WindowProxy. If set to true and no NewWindow is set for a window.open call, the opened WindowProxy will be for an dummy window object and no window will load. Default is false.
 
@@ -57,11 +58,7 @@ IsUserInitiated is true when the new window request was initiated through a user
 
 > {property} bool [IsUserInitiated](#isuserinitiated)
 
-#### CoreWebView2NewWindowRequestedEventArgs 
-
-Initializes a new instance of the CoreWebView2NewWindowRequestedEventArgs class.
-
-> public inline  [CoreWebView2NewWindowRequestedEventArgs](#corewebview2newwindowrequestedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2NewWindowRequestedEventArgs rawCoreWebView2NewWindowRequestedEventArgs)
+### Methods
 
 #### GetDeferral 
 

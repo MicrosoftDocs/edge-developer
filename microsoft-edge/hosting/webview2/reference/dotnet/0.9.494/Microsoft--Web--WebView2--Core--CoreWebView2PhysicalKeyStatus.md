@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,7 +24,6 @@ A structure representing the information packed into the LPARAM given to a Win32
 [IsMenuKeyDown](#ismenukeydown) | The context code.
 [WasKeyDown](#waskeydown) | The previous key state.
 [IsKeyReleased](#iskeyreleased) | The transition state.
-[CoreWebView2PhysicalKeyStatus](#corewebview2physicalkeystatus) | Initializes a new instance of the CoreWebView2PhysicalKeyStatus struct.
 
 See the documentation for WM_KEYDOWN for details at [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown).
 
@@ -65,10 +64,4 @@ The previous key state.
 The transition state.
 
 > public int [IsKeyReleased](#iskeyreleased)
-
-#### CoreWebView2PhysicalKeyStatus 
-
-Initializes a new instance of the CoreWebView2PhysicalKeyStatus struct.
-
-> public inline  [CoreWebView2PhysicalKeyStatus](#corewebview2physicalkeystatus)(Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_PHYSICAL_KEY_STATUS rawStruct)
 

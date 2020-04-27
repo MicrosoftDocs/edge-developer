@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -21,10 +21,11 @@ Event args for the WebResourceRequested event.
 [Request](#request) | The HTTP request.
 [Response](#response) | The HTTP response.
 [ResourceContext](#resourcecontext) | The web resource request contexts.
-[CoreWebView2WebResourceRequestedEventArgs](#corewebview2webresourcerequestedeventargs) | Initializes a new instance of the [CoreWebView2WebResourceRequestedEventArgs](#microsoft::web::webview2::core::corewebview2webresourcerequestedeventargs) class.
 [GetDeferral](#getdeferral) | Obtain a [CoreWebView2Deferral](Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md) object and put the event into a deferred state.
 
 ## Members
+
+### Properties
 
 #### Request 
 
@@ -44,11 +45,7 @@ The web resource request contexts.
 
 > {property} [CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) [ResourceContext](#resourcecontext)
 
-#### CoreWebView2WebResourceRequestedEventArgs 
-
-Initializes a new instance of the [CoreWebView2WebResourceRequestedEventArgs](#microsoft::web::webview2::core::corewebview2webresourcerequestedeventargs) class.
-
-> public inline  [CoreWebView2WebResourceRequestedEventArgs](#corewebview2webresourcerequestedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2WebResourceRequestedEventArgs rawCoreWebView2WebResourceRequestedEventArgs)
+### Methods
 
 #### GetDeferral 
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,10 +22,11 @@ Event args for the PermissionRequested event.
 [PermissionKind](#permissionkind) | The type of the permission that is requested.
 [IsUserInitiated](#isuserinitiated) | True when the permission request was initiated through a user gesture.
 [State](#state) | The status of a permission request, i.e.
-[CoreWebView2PermissionRequestedEventArgs](#corewebview2permissionrequestedeventargs) | Initializes a new instance of the CoreWebView2PermissionRequestedEventArgs class.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return a CoreWebView2Deferral object.
 
 ## Members
+
+### Properties
 
 #### uri 
 
@@ -57,11 +58,7 @@ whether the request is granted.
 
 Default value is CoreWebView2PermissionState.Default.
 
-#### CoreWebView2PermissionRequestedEventArgs 
-
-Initializes a new instance of the CoreWebView2PermissionRequestedEventArgs class.
-
-> public inline  [CoreWebView2PermissionRequestedEventArgs](#corewebview2permissionrequestedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2PermissionRequestedEventArgs rawCoreWebView2PermissionRequestedEventArgs)
+### Methods
 
 #### GetDeferral 
 

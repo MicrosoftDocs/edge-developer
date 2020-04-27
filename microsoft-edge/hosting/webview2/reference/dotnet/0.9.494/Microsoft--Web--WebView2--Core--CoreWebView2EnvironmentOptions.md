@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,11 +22,12 @@ Options used to create WebView2 Environment.
 [Language](#language) | The default language that WebView will run with.
 [TargetCompatibleBrowserVersion](#targetcompatiblebrowserversion) | The version of the Edge WebView2 Runtime binaries required to be compatible with the calling application.
 [CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initializes a new instance of the CoreWebView2EnvironmentOptions class.
-[CoreWebView2EnvironmentOptions](#corewebview2environmentoptions) | Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 A default implementation is provided in WebView2EnvironmentOptions.h.
 
 ## Members
+
+### Properties
 
 #### AdditionalBrowserArguments 
 
@@ -52,22 +53,18 @@ The version of the Edge WebView2 Runtime binaries required to be compatible with
 
 This defaults to the Edge WebView2 Runtime version that corresponds with the version of the SDK the application is using. The format of this value is the same as the format of the BrowserVersionString property and other BrowserVersion values. Only the version part of the BrowserVersion value is respected. The channel suffix, if it exists, is ignored. The version of the Edge WebView2 Runtime binaries actually used may be different from the specified TargetCompatibleBrowserVersion. They are only guaranteed to be compatible. You can check the actual version on the BrowserVersionString property on the CoreWebView2Environment.
 
+### Constructors
+
 #### CoreWebView2EnvironmentOptions 
 
 Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 > public inline  [CoreWebView2EnvironmentOptions](#corewebview2environmentoptions)(string additionalBrowserArguments,string language,string targetCompatibleBrowserVersion)
 
-#### Parameters
+##### Parameters
 * `additionalBrowserArguments` AdditionalBrowserArguments can be specified to change the behavior of the WebView. 
 
 * `language` The default language that WebView will run with. 
 
 * `targetCompatibleBrowserVersion` The version of the Edge WebView2 Runtime binaries required to be compatible with the calling application.
-
-#### CoreWebView2EnvironmentOptions 
-
-Initializes a new instance of the CoreWebView2EnvironmentOptions class.
-
-> public inline  [CoreWebView2EnvironmentOptions](#corewebview2environmentoptions)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2EnvironmentOptions rawCoreWebView2EnvironmentOptions)
 

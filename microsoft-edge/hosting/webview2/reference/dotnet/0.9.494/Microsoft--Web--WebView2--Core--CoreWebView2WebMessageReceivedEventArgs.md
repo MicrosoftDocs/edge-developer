@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -20,10 +20,11 @@ Event args for the WebMessageReceived event.
 --------------------------------|---------------------------------------------
 [Source](#source) | The URI of the document that sent this web message.
 [webMessageAsJson](#webmessageasjson) | The message posted from the webview content to the host converted to a JSON string.
-[CoreWebView2WebMessageReceivedEventArgs](#corewebview2webmessagereceivedeventargs) | Initializes a new instance of the [CoreWebView2WebMessageReceivedEventArgs](#microsoft::web::webview2::core::corewebview2webmessagereceivedeventargs) class.
 [TryGetWebMessageAsString](#trygetwebmessageasstring) | If the message posted from the webview content to the host is a string type, this method will return the value of that string.
 
 ## Members
+
+### Properties
 
 #### Source 
 
@@ -46,12 +47,6 @@ postMessage({'a': 'b'})      L"{\"a\": \"b\"}"
 postMessage(1.2)             L"1.2"
 postMessage('example')       L"\"example\""
 ```
-
-#### CoreWebView2WebMessageReceivedEventArgs 
-
-Initializes a new instance of the [CoreWebView2WebMessageReceivedEventArgs](#microsoft::web::webview2::core::corewebview2webmessagereceivedeventargs) class.
-
-> public inline  [CoreWebView2WebMessageReceivedEventArgs](#corewebview2webmessagereceivedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2WebMessageReceivedEventArgs rawCoreWebView2WebMessageReceivedEventArgs)
 
 #### TryGetWebMessageAsString 
 

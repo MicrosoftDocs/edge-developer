@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,23 +19,18 @@ A Receiver is created for a particular DevTools Protocol event and allows you to
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [DevToolsProtocolEventReceived](#devtoolsprotocoleventreceived) | Subscribe to a DevToolsProtocol event.
-[CoreWebView2DevToolsProtocolEventReceiver](#corewebview2devtoolsprotocoleventreceiver) | Initializes a new instance of the CoreWebView2DevToolsProtocolEventReceiver class.
 
 Obtained from the WebView object via GetDevToolsProtocolEventReceiver.
 
 ## Members
 
+### Events
+
 #### DevToolsProtocolEventReceived 
 
 Subscribe to a DevToolsProtocol event.
 
-> {property} EventHandler< CoreWebView2DevToolsProtocolEventReceivedEventArgs > [DevToolsProtocolEventReceived](#devtoolsprotocoleventreceived)
+> event EventHandler< [CoreWebView2DevToolsProtocolEventReceivedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2DevToolsProtocolEventReceivedEventArgs.md) > [DevToolsProtocolEventReceived](#devtoolsprotocoleventreceived)
 
 The handler's Invoke method will be called whenever the corresponding DevToolsProtocol event fires. Invoke will be called with the an event args object containing the DevTools Protocol event's parameter object as a JSON string.
-
-#### CoreWebView2DevToolsProtocolEventReceiver 
-
-Initializes a new instance of the CoreWebView2DevToolsProtocolEventReceiver class.
-
-> public inline  [CoreWebView2DevToolsProtocolEventReceiver](#corewebview2devtoolsprotocoleventreceiver)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2DevToolsProtocolEventReceiver rawCoreWebView2DevToolsProtocolEventReceiver)
 

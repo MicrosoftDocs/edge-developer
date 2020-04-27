@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,11 +23,12 @@ Event args for the ScriptDialogOpening event.
 [Message](#message) | The message of the dialog box.
 [DefaultText](#defaulttext) | The second parameter passed to the JavaScript prompt dialog.
 [ResultText](#resulttext) | The return value from the JavaScript prompt function if Accept is called.
-[CoreWebView2ScriptDialogOpeningEventArgs](#corewebview2scriptdialogopeningeventargs) | Initializes a new instance of the CoreWebView2ScriptDialogOpeningEventArgs class.
 [Accept](#accept) | The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return a CoreWebView2Deferral object.
 
 ## Members
+
+### Properties
 
 #### uri 
 
@@ -66,12 +67,6 @@ The return value from the JavaScript prompt function if Accept is called.
 > {property} string [ResultText](#resulttext)
 
 This is ignored for dialog kinds other than prompt. If Accept is not called this value is ignored and false is returned from prompt.
-
-#### CoreWebView2ScriptDialogOpeningEventArgs 
-
-Initializes a new instance of the CoreWebView2ScriptDialogOpeningEventArgs class.
-
-> public inline  [CoreWebView2ScriptDialogOpeningEventArgs](#corewebview2scriptdialogopeningeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2ScriptDialogOpeningEventArgs rawCoreWebView2ScriptDialogOpeningEventArgs)
 
 #### Accept 
 

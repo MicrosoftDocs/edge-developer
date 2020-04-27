@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # class Microsoft::Web::WebView2::Core::CoreWebView2Controller 
 
-This class is the owner of the CoreWebView2 object, and provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
+This class is the owner of the [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) object, and provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 
 ## Summary
 
@@ -22,21 +22,22 @@ This class is the owner of the CoreWebView2 object, and provides support for res
 [Bounds](#bounds) | The webview bounds.
 [ZoomFactor](#zoomfactor) | The zoom factor for the WebView.
 [ParentWindow](#parentwindow) | The parent window provided by the app that this WebView is using to render content.
-[CoreWebView2](#corewebview2) | Gets the CoreWebView2 associated with this CoreWebView2Controller.
+[CoreWebView2](#corewebview2) | Gets the [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) associated with this [CoreWebView2Controller]().
 [ZoomFactorChanged](#zoomfactorchanged) | The event fires when the ZoomFactor property of the WebView changes.
 [MoveFocusRequested](#movefocusrequested) | MoveFocusRequested fires when user tries to tab out of the WebView.
 [GotFocus](#gotfocus) | GotFocus fires when WebView got focus.
 [LostFocus](#lostfocus) | LostFocus fires when WebView lost focus.
 [AcceleratorKeyPressed](#acceleratorkeypressed) | AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused.
-[CoreWebView2Controller](#corewebview2controller) | Initializes a new instance of the CoreWebView2Controller class.
 [SetBoundsAndZoomFactor](#setboundsandzoomfactor) | Update Bounds and ZoomFactor properties at the same time.
 [MoveFocus](#movefocus) | Move focus into WebView.
 [NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged) | This is a notification separate from Bounds that tells WebView its parent (or any ancestor) HWND moved.
 [Close](#close) | Closes the WebView and cleans up the underlying browser instance.
 
-The CoreWebView2Controller owns the CoreWebView2, and if all references to the CoreWebView2Controller go away, the WebView will be closed.
+The [CoreWebView2Controller]() owns the [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md), and if all references to the [CoreWebView2Controller]() go away, the WebView will be closed.
 
 ## Members
+
+### Properties
 
 #### IsVisible 
 
@@ -76,15 +77,17 @@ Setting the property will cause the WebView to reparent its window to the newly 
 
 #### CoreWebView2 
 
-Gets the CoreWebView2 associated with this CoreWebView2Controller.
+Gets the [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) associated with this [CoreWebView2Controller]().
 
-> {property} CoreWebView2 [CoreWebView2](#corewebview2)
+> {property} [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) [CoreWebView2](#corewebview2)
+
+### Events
 
 #### ZoomFactorChanged 
 
 The event fires when the ZoomFactor property of the WebView changes.
 
-> {property} EventHandler< object > [ZoomFactorChanged](#zoomfactorchanged)
+> event EventHandler< object > [ZoomFactorChanged](#zoomfactorchanged)
 
 The event could fire because the caller modified the ZoomFactor property, or due to the user manually modifying the zoom. When it is modified by the caller via the ZoomFactor property, the internal zoom factor is updated immediately and there will be no ZoomFactorChanged event. WebView associates the last used zoom factor for each site. Therefore, it is possible for the zoom factor to change when navigating to a different page. When the zoom factor changes due to this, the ZoomFactorChanged event fires right after the ContentLoading event.
 
@@ -92,7 +95,7 @@ The event could fire because the caller modified the ZoomFactor property, or due
 
 MoveFocusRequested fires when user tries to tab out of the WebView.
 
-> {property} EventHandler< CoreWebView2MoveFocusRequestedEventArgs > [MoveFocusRequested](#movefocusrequested)
+> event EventHandler< [CoreWebView2MoveFocusRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2MoveFocusRequestedEventArgs.md) > [MoveFocusRequested](#movefocusrequested)
 
 The WebView's focus has not changed when this event is fired.
 
@@ -100,13 +103,13 @@ The WebView's focus has not changed when this event is fired.
 
 GotFocus fires when WebView got focus.
 
-> {property} EventHandler< object > [GotFocus](#gotfocus)
+> event EventHandler< object > [GotFocus](#gotfocus)
 
 #### LostFocus 
 
 LostFocus fires when WebView lost focus.
 
-> {property} EventHandler< object > [LostFocus](#lostfocus)
+> event EventHandler< object > [LostFocus](#lostfocus)
 
 In the case where MoveFocusRequested event is fired, the focus is still on WebView when MoveFocusRequested event fires. Lost focus only fires afterwards when app's code or default action of MoveFocusRequested event set focus away from WebView.
 
@@ -114,7 +117,7 @@ In the case where MoveFocusRequested event is fired, the focus is still on WebVi
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused.
 
-> {property} EventHandler< CoreWebView2AcceleratorKeyPressedEventArgs > [AcceleratorKeyPressed](#acceleratorkeypressed)
+> event EventHandler< [CoreWebView2AcceleratorKeyPressedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2AcceleratorKeyPressedEventArgs.md) > [AcceleratorKeyPressed](#acceleratorkeypressed)
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused. A key is considered an accelerator if either:
 
@@ -124,17 +127,13 @@ AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or r
 
 Autorepeated key events caused by holding the key down will also fire this event. You can filter these out by checking the event args' KeyEventLParam or PhysicalKeyStatus.
 
-In windowed mode, this event handler is called synchronously. Until you call Handle() on the event args or the event handler returns, the browser process will be blocked and outgoing cross-process COM calls will fail with RPC_E_CANTCALLOUT_ININPUTSYNCCALL. All CoreWebView2 API methods will work, however.
+In windowed mode, this event handler is called synchronously. Until you call Handle() on the event args or the event handler returns, the browser process will be blocked and outgoing cross-process COM calls will fail with RPC_E_CANTCALLOUT_ININPUTSYNCCALL. All [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) API methods will work, however.
 
 In windowless mode, the event handler is called asynchronously. Further input will not reach the browser until the event handler returns or Handle() is called, but the browser process itself will not be blocked, and outgoing COM calls will work normally.
 
 It is recommended to call Handle(TRUE) as early as you can know that you want to handle the accelerator key.
 
-#### CoreWebView2Controller 
-
-Initializes a new instance of the CoreWebView2Controller class.
-
-> public inline  [CoreWebView2Controller](#corewebview2controller)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Controller rawCoreWebView2Controller)
+### Methods
 
 #### SetBoundsAndZoomFactor 
 
@@ -148,7 +147,7 @@ This operation is atomic from the host's perspective. After returning from this 
 
 Move focus into WebView.
 
-> public inline void [MoveFocus](#movefocus)(CoreWebView2MoveFocusReason reason)
+> public inline void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](Microsoft--Web--WebView2--Core.md) reason)
 
 WebView will get focus and focus will be set to correspondent element in the page hosted in the WebView. For Programmatic reason, focus is set to previously focused element or the default element if there is no previously focused element. For Next reason, focus is set to the first element. For Previous reason, focus is set to the last element. WebView can also got focus through user interaction like clicking into WebView or Tab into it. For tabbing, the app can call MoveFocus with Next or Previous to align with tab and shift+tab respectively when it decides the WebView is the next tabbable element. Or, the app can call IsDialogMessage as part of its message loop to allow the platform to auto handle tabbing. The platform will rotate through all windows with WS_TABSTOP. When the WebView gets focus from IsDialogMessage, it will internally put the focus on the first or last element for tab and shift+tab respectively.
 
@@ -170,5 +169,5 @@ Cleaning up the browser instance will release the resources powering the WebView
 
 After calling Close, all method calls will fail and event handlers will stop firing. Specifically, the WebView will release its references to its event handlers when Close is called.
 
-Close is implicitly called when the CoreWebView2Controller loses its final reference and is destructed. But it is best practice to explicitly call Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you will create a reference cycle between the WebView and the event handler. Calling Close will break this cycle by releasing all event handlers. But to avoid this situation it is best practice both to explicitly call Close on the WebView and to not capture a reference to the WebView to ensure the WebView can be cleaned up correctly.
+Close is implicitly called when the [CoreWebView2Controller]() loses its final reference and is destructed. But it is best practice to explicitly call Close to avoid any accidental cycle of references between the WebView and the app code. Specifically, if you capture a reference to the WebView in an event handler you will create a reference cycle between the WebView and the event handler. Calling Close will break this cycle by releasing all event handlers. But to avoid this situation it is best practice both to explicitly call Close on the WebView and to not capture a reference to the WebView to ensure the WebView can be cleaned up correctly.
 

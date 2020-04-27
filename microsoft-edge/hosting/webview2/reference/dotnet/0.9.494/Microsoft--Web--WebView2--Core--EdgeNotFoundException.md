@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,22 +23,24 @@ The exception that is thrown when an Edge installation is missing.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class.
-[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class with a specified error message.
-[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class with a reference to the inner exception that is the cause of this exception.
-[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class with a specified error message and a reference to the inner exception that is the cause of this exception.
+[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException]() class.
+[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException]() class with a specified error message.
+[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException]() class with a reference to the inner exception that is the cause of this exception.
+[EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the [EdgeNotFoundException]() class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ## Members
 
+### Properties
+
 #### EdgeNotFoundException 
 
-Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class.
+Initializes a new instance of the [EdgeNotFoundException]() class.
 
 > public inline  [EdgeNotFoundException](#edgenotfoundexception)()
 
 #### EdgeNotFoundException 
 
-Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class with a specified error message.
+Initializes a new instance of the [EdgeNotFoundException]() class with a specified error message.
 
 > public inline  [EdgeNotFoundException](#edgenotfoundexception)(string message)
 
@@ -47,7 +49,7 @@ Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webvi
 
 #### EdgeNotFoundException 
 
-Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class with a reference to the inner exception that is the cause of this exception.
+Initializes a new instance of the [EdgeNotFoundException]() class with a reference to the inner exception that is the cause of this exception.
 
 > public inline  [EdgeNotFoundException](#edgenotfoundexception)(Exception inner)
 
@@ -56,7 +58,7 @@ Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webvi
 
 #### EdgeNotFoundException 
 
-Initializes a new instance of the [EdgeNotFoundException](#microsoft::web::webview2::core::edgenotfoundexception) class with a specified error message and a reference to the inner exception that is the cause of this exception.
+Initializes a new instance of the [EdgeNotFoundException]() class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 > public inline  [EdgeNotFoundException](#edgenotfoundexception)(string message,Exception inner)
 

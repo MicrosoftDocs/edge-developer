@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -21,9 +21,10 @@ Event args for the NavigationCompleted event.
 [IsSuccess](#issuccess) | True when the navigation is successful.
 [WebErrorStatus](#weberrorstatus) | The error code if the navigation failed.
 [NavigationId](#navigationid) | The ID of the navigation.
-[CoreWebView2NavigationCompletedEventArgs](#corewebview2navigationcompletedeventargs) | Initializes a new instance of the CoreWebView2NavigationCompletedEventArgs class.
 
 ## Members
+
+### Properties
 
 #### IsSuccess 
 
@@ -44,10 +45,4 @@ The error code if the navigation failed.
 The ID of the navigation.
 
 > {property} ulong [NavigationId](#navigationid)
-
-#### CoreWebView2NavigationCompletedEventArgs 
-
-Initializes a new instance of the CoreWebView2NavigationCompletedEventArgs class.
-
-> public inline  [CoreWebView2NavigationCompletedEventArgs](#corewebview2navigationcompletedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2NavigationCompletedEventArgs rawCoreWebView2NavigationCompletedEventArgs)
 

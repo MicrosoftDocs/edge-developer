@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -18,9 +18,8 @@ This represents the WebView2 Environment.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[BrowserVersionString](#browserversionstring) | The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
+[BrowserVersionString](#browserversionstring) | The browser version info of the current [CoreWebView2Environment](), including channel name if it is not the stable channel.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
-[CoreWebView2Environment](#corewebview2environment) | Initializes a new instance of the CoreWebView2Environment class.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
 
@@ -28,9 +27,11 @@ WebViews created from an environment run on the Browser process specified with e
 
 ## Members
 
+### Properties
+
 #### BrowserVersionString 
 
-The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
+The browser version info of the current [CoreWebView2Environment](), including channel name if it is not the stable channel.
 
 > {property} string [BrowserVersionString](#browserversionstring)
 
@@ -46,17 +47,11 @@ To use the newer version of the browser you must create a new environment and We
 
 Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
 
-#### CoreWebView2Environment 
-
-Initializes a new instance of the CoreWebView2Environment class.
-
-> public inline  [CoreWebView2Environment](#corewebview2environment)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Environment rawCoreWebView2Environment)
-
 #### CreateCoreWebView2ControllerAsync 
 
 Asynchronously create a new WebView.
 
-> public inline async Task< CoreWebView2Controller > [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync)(IntPtr ParentWindow)
+> public inline async Task< [CoreWebView2Controller](Microsoft--Web--WebView2--Core--CoreWebView2Controller.md) > [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync)(IntPtr ParentWindow)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 

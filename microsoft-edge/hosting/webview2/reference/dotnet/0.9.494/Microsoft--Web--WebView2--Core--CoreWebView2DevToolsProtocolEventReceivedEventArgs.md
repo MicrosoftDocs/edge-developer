@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,19 +19,14 @@ Event args for the DevToolsProtocolEventReceived event.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [ParameterObjectAsJson](#parameterobjectasjson) | The parameter object of the corresponding DevToolsProtocol event represented as a JSON string.
-[CoreWebView2DevToolsProtocolEventReceivedEventArgs](#corewebview2devtoolsprotocoleventreceivedeventargs) | Initializes a new instance of the CoreWebView2DevToolsProtocolEventReceivedEventArgs class.
 
 ## Members
+
+### Properties
 
 #### ParameterObjectAsJson 
 
 The parameter object of the corresponding DevToolsProtocol event represented as a JSON string.
 
 > {property} string [ParameterObjectAsJson](#parameterobjectasjson)
-
-#### CoreWebView2DevToolsProtocolEventReceivedEventArgs 
-
-Initializes a new instance of the CoreWebView2DevToolsProtocolEventReceivedEventArgs class.
-
-> public inline  [CoreWebView2DevToolsProtocolEventReceivedEventArgs](#corewebview2devtoolsprotocoleventreceivedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2DevToolsProtocolEventReceivedEventArgs rawCoreWebView2DevToolsProtocolEventReceivedEventArgs)
 

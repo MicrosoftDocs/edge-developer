@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,19 +19,14 @@ Event args for the SourceChanged event.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [IsNewDocument](#isnewdocument) | True if the page being navigated to is a new document.
-[CoreWebView2SourceChangedEventArgs](#corewebview2sourcechangedeventargs) | Initializes a new instance of the CoreWebView2SourceChangedEventArgs class.
 
 ## Members
+
+### Properties
 
 #### IsNewDocument 
 
 True if the page being navigated to is a new document.
 
 > {property} bool [IsNewDocument](#isnewdocument)
-
-#### CoreWebView2SourceChangedEventArgs 
-
-Initializes a new instance of the CoreWebView2SourceChangedEventArgs class.
-
-> public inline  [CoreWebView2SourceChangedEventArgs](#corewebview2sourcechangedeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2SourceChangedEventArgs rawCoreWebView2SourceChangedEventArgs)
 

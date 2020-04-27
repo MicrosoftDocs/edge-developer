@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -18,16 +18,11 @@ This class is used to complete deferrals on event args that support getting defe
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[CoreWebView2Deferral](#corewebview2deferral) | Initializes a new instance of the CoreWebView2Deferral class.
 [Complete](#complete) | Completes the associated deferred event.
 
 ## Members
 
-#### CoreWebView2Deferral 
-
-Initializes a new instance of the CoreWebView2Deferral class.
-
-> public inline  [CoreWebView2Deferral](#corewebview2deferral)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2Deferral rawCoreWebView2Deferral)
+### Methods
 
 #### Complete 
 

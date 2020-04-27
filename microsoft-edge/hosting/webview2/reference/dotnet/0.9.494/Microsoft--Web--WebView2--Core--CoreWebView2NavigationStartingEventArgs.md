@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,9 +24,10 @@ Event args for the NavigationStarting event.
 [RequestHeaders](#requestheaders) | The HTTP request headers for the navigation.
 [Cancel](#cancel) | The host may set this flag to cancel the navigation.
 [NavigationId](#navigationid) | The ID of the navigation.
-[CoreWebView2NavigationStartingEventArgs](#corewebview2navigationstartingeventargs) | Initializes a new instance of the CoreWebView2NavigationStartingEventArgs class.
 
 ## Members
+
+### Properties
 
 #### uri 
 
@@ -67,10 +68,4 @@ If set, it will be as if the navigation never happened and the current page's co
 The ID of the navigation.
 
 > {property} ulong [NavigationId](#navigationid)
-
-#### CoreWebView2NavigationStartingEventArgs 
-
-Initializes a new instance of the CoreWebView2NavigationStartingEventArgs class.
-
-> public inline  [CoreWebView2NavigationStartingEventArgs](#corewebview2navigationstartingeventargs)(Microsoft.Web.WebView2.Core.Raw.ICoreWebView2NavigationStartingEventArgs rawCoreWebView2NavigationStartingEventArgs)
 
