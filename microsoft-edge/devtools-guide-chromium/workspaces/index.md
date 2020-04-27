@@ -2,7 +2,7 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 > [!NOTE]
-> **Goal**: This tutorial provides hands-on practice in setting up and using Workspaces so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
+> The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
 
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
@@ -88,6 +88,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
     -->
     <!--1.  Close the tab.  -->
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+    
 1.  Create an `app` directory on your desktop.  Save copies of the files in the `workspaces-demo` directory.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  
 1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.  
     
@@ -101,7 +102,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
     python -m http.server # Python 3
     ```  
     
-1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it via a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
+1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
     
     > ##### Figure 2  
     > The demo  
@@ -183,7 +184,7 @@ The DOM tree is not HTML.
 
 *   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
 *   To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.  
-*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, via the [`content`][MDNCSSContent] property.  
+*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
 *   Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
@@ -192,7 +193,7 @@ In short, the **DOM Tree** `!==` HTML.
 -->
 ### Change HTML from the Sources panel   
 
-If you want to save a change to the HTML of the page, do it via the **Sources** panel.  
+If you want to save a change to the HTML of the page, do it using the **Sources** panel.  
 
 1.  Click the **Sources** tab.  
 1.  Click the **Page** tab.  
@@ -216,20 +217,20 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 1.  Type `QS`, then select **Show Quick Source**.  At the bottom of your DevTools window there is now a **Quick Source** tab.  The tab is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.  The **Quick Source** tab gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.  
     
     > ##### Figure 9  
-    > Opening the **Quick Source** tab via the **Command Menu**  
-    > ![Opening the Quick Source tab via Command Menu][ImageCommandMenuQuickSource]  
+    > Opening the **Quick Source** tab using the **Command Menu**  
+    > ![Opening the Quick Source tab using Command Menu][ImageCommandMenuQuickSource]  
 
 1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 10](#figure-10).  
 1.  Type `script`, then select **app/script.js**.  
     
     > ##### Figure 10  
-    > Opening `script.js` via the **Open File** dialog  
-    > ![Opening script.js via the Open File dialog][ImageOpenFileDialog]  
+    > Opening `script.js` using the **Open File** dialog  
+    > ![Opening script.js using the Open File dialog][ImageOpenFileDialog]  
     
     > [!NOTE]
     > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.  
     
-1.  Add the following code to the bottom of **script.js** via the **Quick Source** tab.  
+1.  Add the following code to the bottom of **script.js** using the **Quick Source** tab.  
     
     ```javascript
     console.log('greetings from script.js');
@@ -272,13 +273,13 @@ If you have more feedback on these topics or anything else, please use any of th
 [ImageStylesGreen]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
 [ImageSourcesCakeHTML]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-page-h1.msft.png "Figure 8: Changing HTML from the Sources panel"  
 <!--[ImageElementsCake]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
-[ImageCommandMenuQuickSource]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab via Command Menu"  
-[ImageOpenFileDialog]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-script.msft.png "Figure 10: Opening script.js via the Open File dialog"  
+[ImageCommandMenuQuickSource]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab using Command Menu"  
+[ImageOpenFileDialog]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-script.msft.png "Figure 10: Opening script.js using the Open File dialog"  
 [ImageScriptItalic]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 11: The link on the page is now italic"  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index.md "Get Started With Viewing And Changing CSS"  
+[DevToolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
