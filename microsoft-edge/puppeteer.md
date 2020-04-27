@@ -55,7 +55,7 @@ const puppeteer = require('puppeteer-core');
 Change `executablePath` to point to your installation of Microsoft Edge \(Chromium\).  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version`.  Save your changes.  
 
 > [!NOTE]
-> Microsoft Edge \(EdgeHTML\) does not work with `puppeteer-core`.  [Install the Microsoft Edge preview channels][MicrosoftedgeinsiderDownload], which leverage Chromium, to continue following this example if you have not already.  
+> Microsoft Edge \(EdgeHTML\) does not work with `puppeteer-core`.  You must install the [Microsoft Edge Insider channels][MicrosoftedgeinsiderDownload] to continue following this example.  
 
 Now run `example.js` from the command-line.  
 
