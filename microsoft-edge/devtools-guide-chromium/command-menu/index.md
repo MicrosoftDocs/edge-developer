@@ -2,7 +2,7 @@
 title: Run Commands With The Microsoft Edge DevTools Command Menu
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -63,14 +63,14 @@ Delete the `>` character and type `?` to see other actions that are available fr
 
 <!-- image links -->  
 
-[ImageDisableJS]: images/command-menu-run-command-java.msft.png "Figure 1: Using the Command Menu to disable JavaScript"  
-[ImageRunCommand]: images/options-run-command.msft.png "Figure 2: Run Command"  
-[ImageCommandCharacter]: images/command-menu-run-command.msft.png "Figure 3: The command character"  
-[ImageActions]: images/command-menu-help.msft.png "Figure 4: Other available actions"  
+[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command-java.msft.png "Figure 1: Using the Command Menu to disable JavaScript"  
+[ImageRunCommand]: /microsoft-edge/devtools-guide-chromium/media/command-menu-options-run-command.msft.png "Figure 2: Run Command"  
+[ImageCommandCharacter]: /microsoft-edge/devtools-guide-chromium/media/command-menu-run-command.msft.png "Figure 3: The command character"  
+[ImageActions]: /microsoft-edge/devtools-guide-chromium/media/command-menu-help.msft.png "Figure 4: Other available actions"  
 
 <!-- links -->  
 
-[JavascriptDisable]: ../javascript/disable.md "Disable JavaScript With Microsoft Edge DevTools"  
+[JavascriptDisable]: /microsoft-edge/devtools-guide-chromium/javascript/disable "Disable JavaScript With Microsoft Edge DevTools"  
 
 [VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Command palette - Visual Studio Code UI"  
 

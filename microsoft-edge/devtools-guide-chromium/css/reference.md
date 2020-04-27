@@ -40,7 +40,7 @@ See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn 
 The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.  
 
 > [!NOTE]
-> In [Figure 1](#figure-1), The `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
+> In [Figure 1](#figure-1), the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
 
 > ##### Figure 1  
 > An example of a selected element  
@@ -59,7 +59,7 @@ There are many ways to select an element:
 
 In the **Styles** pane, click the link next to a CSS rule to open the external stylesheet that defines the rule.  
 
-<!--If the stylesheet is minified, see [Make a minified file readable][DevToolsJavascriptReferenceFormat].  -->  
+If the stylesheet is minified, see [Make a minified file readable][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > In [Figure 2](#figure-2), clicking `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` takes you to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.  
@@ -500,7 +500,7 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
 [DevToolsCSSGetStartedAddPseudoState]: index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  
 [DevToolsCSSGetStartedTutorial]: index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  
 [DevToolsCssPrintPreview]: print-preview.md "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)"  
-<!--[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"  -->  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"    
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "The color system - Material Design"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "The box model | MDN"  

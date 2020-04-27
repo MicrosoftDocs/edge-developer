@@ -2,7 +2,7 @@
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/22/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -358,29 +358,29 @@ console.warn('warn');
 
 <!-- image links -->  
 
-[ImageAssert]: images/console-demo-assert-button.msft.png "Figure 1: The result of the console.assert() example"  
-[ImageCount]: images/console-demo-count-button.msft.png "Figure 2: The result of the console.count() example"  
-[ImageDebug]: images/console-demo-debug-button.msft.png "Figure 3: The result of the console.debug() example"  
-[ImageDir]: images/console-demo-dir-button.msft.png "Figure 4: The result of the console.dir() example"  
-[ImageDirXml]: images/console-demo-dirxml-button.msft.png "Figure 5: The result of the console.dirxml() example"  
-[ImageError]: images/console-demo-error-button.msft.png "Figure 6: The result of the console.error() example"  
-[ImageGroup]: images/console-demo-group-button.msft.png "Figure 7: The result of the console.group() example"  
-[ImageInfo]: images/console-demo-info-button.msft.png "Figure 8: The result of the console.info() example"  
-[ImageLog]: images/console-demo-log-button.msft.png "Figure 9: The result of the console.log() example"  
-[ImageTable]: images/console-demo-table-button.msft.png "Figure 10: The result of the console.table() example"  
-[ImageTime]: images/console-demo-time-button.msft.png "Figure 11: The result of the console.time() example"  
-[ImageTrace]: images/console-demo-trace-button.msft.png "Figure 12: The result of the console.trace() example"  
-[ImageWarn]: images/console-demo-warn-button.msft.png "Figure 13: The result of the console.warn() example"  
+[ImageAssert]: /microsoft-edge/devtools-guide-chromium/media/console-demo-assert-button.msft.png "Figure 1: The result of the console.assert() example"  
+[ImageCount]: /microsoft-edge/devtools-guide-chromium/media/console-demo-count-button.msft.png "Figure 2: The result of the console.count() example"  
+[ImageDebug]: /microsoft-edge/devtools-guide-chromium/media/console-demo-debug-button.msft.png "Figure 3: The result of the console.debug() example"  
+[ImageDir]: /microsoft-edge/devtools-guide-chromium/media/console-demo-dir-button.msft.png "Figure 4: The result of the console.dir() example"  
+[ImageDirXml]: /microsoft-edge/devtools-guide-chromium/media/console-demo-dirxml-button.msft.png "Figure 5: The result of the console.dirxml() example"  
+[ImageError]: /microsoft-edge/devtools-guide-chromium/media/console-demo-error-button.msft.png "Figure 6: The result of the console.error() example"  
+[ImageGroup]: /microsoft-edge/devtools-guide-chromium/media/console-demo-group-button.msft.png "Figure 7: The result of the console.group() example"  
+[ImageInfo]: /microsoft-edge/devtools-guide-chromium/media/console-demo-info-button.msft.png "Figure 8: The result of the console.info() example"  
+[ImageLog]: /microsoft-edge/devtools-guide-chromium/media/console-demo-log-button.msft.png "Figure 9: The result of the console.log() example"  
+[ImageTable]: /microsoft-edge/devtools-guide-chromium/media/console-demo-table-button.msft.png "Figure 10: The result of the console.table() example"  
+[ImageTime]: /microsoft-edge/devtools-guide-chromium/media/console-demo-time-button.msft.png "Figure 11: The result of the console.time() example"  
+[ImageTrace]: /microsoft-edge/devtools-guide-chromium/media/console-demo-trace-button.msft.png "Figure 12: The result of the console.trace() example"  
+[ImageWarn]: /microsoft-edge/devtools-guide-chromium/media/console-demo-warn-button.msft.png "Figure 13: The result of the console.warn() example"  
 
 <!-- links -->  
 
-[DevtoolsConsoleLog]: log.md "Get Started With Logging Messages In The Console"  
- [DevtoolConsoleUtilities]: utilities.md "Console Utilities API Reference"  
-[DevtoolsConsoleReferenceClear]: reference.md#clear-the-console "Clear the Console - Console Reference"  
-[DevtoolsConsoleReferencePersist]: reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
-[DevtoolsConsoleReferenceLevel]: reference.md#filter-by-log-level "Filter by log level - Console Reference"  
+[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
+[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
+[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Clear the Console - Console Reference"  
+[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
+[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filter by log level - Console Reference"  
 
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
