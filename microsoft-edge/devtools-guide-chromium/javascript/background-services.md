@@ -2,7 +2,7 @@
 title: Debug Background Services With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -154,21 +154,21 @@ To display a push notification to a user, a **service worker** must first use th
 
 <!-- image links -->  
 
-[ImageRecordIcon]: images/record-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
 
-[FetchDetails]: images/application-background-services-background-fetch-details.msft.png "Figure 4: Viewing the details of an event in the Background Fetch pane"  
-[FetchEmpty]: images/application-background-services-background-fetch-empty.msft.png "Figure 2: The Background Fetch pane"  
-[FetchLog]: images/application-background-services-background-fetch.msft.png "Figure 3: A log of events in the Background Fetch pane"  
-[NotificationsDetails]: images/application-background-services-notifications-details.msft.png "Figure 10: Viewing the details of an event in the Notifications pane"  
-[NotificationsEmpty]: images/application-background-services-notifications-empty.msft.png "Figure 8: The Notifications pane"  
-[NotificationsLog]: images/application-background-services-notifications.msft.png "Figure 9: A log of events in the Notifications pane"  
-[PushDetails]: images/application-background-services-push-messaging.msft.png "Figure 1: Viewing the details of an event in the Push Messaging pane"  
-[PushDetails2]: images/application-background-services-push-messaging-details.msft.png "Figure 13: Viewing the details of an event in the Push Messaging pane"  
-[PushEmpty]: images/application-background-services-push-messaging-empty.msft.png "Figure 11: The Push Messaging pane"  
-[PushLog]: images/application-background-services-push-messaging.msft.png "Figure 12: A log of events in the Push Messaging pane"  
-[SyncDetails]: images/application-background-services-background-sync-details.msft.png "Figure 7: Viewing the details of an event in the Background Sync pane"  
-[SyncEmpty]: images/application-background-services-background-sync-empty.msft.png "Figure 5: The Background Sync pane"  
-[SyncLog]: images/application-background-services-background-sync.msft.png "Figure 6: A log of events in the Background Sync pane"  
+[PushDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "Figure 1: Viewing the details of an event in the Push Messaging pane"  
+[FetchEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-empty.msft.png "Figure 2: The Background Fetch pane"  
+[FetchLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch.msft.png "Figure 3: A log of events in the Background Fetch pane"  
+[FetchDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-fetch-details.msft.png "Figure 4: Viewing the details of an event in the Background Fetch pane"  
+[SyncEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-empty.msft.png "Figure 5: The Background Sync pane"  
+[SyncLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync.msft.png "Figure 6: A log of events in the Background Sync pane"  
+[SyncDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-background-sync-details.msft.png "Figure 7: Viewing the details of an event in the Background Sync pane"  
+[NotificationsEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-empty.msft.png "Figure 8: The Notifications pane"  
+[NotificationsLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications.msft.png "Figure 9: A log of events in the Notifications pane"  
+[NotificationsDetails]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-notifications-details.msft.png "Figure 10: Viewing the details of an event in the Notifications pane"  
+[PushEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-empty.msft.png "Figure 11: The Push Messaging pane"  
+[PushLog]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging.msft.png "Figure 12: A log of events in the Push Messaging pane"  
+[PushDetails2]: /microsoft-edge/devtools-guide-chromium/media/javascript-application-background-services-push-messaging-details.msft.png "Figure 13: Viewing the details of an event in the Push Messaging pane"  
 
 <!-- links -->  
 

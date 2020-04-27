@@ -2,7 +2,7 @@
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/31/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -190,22 +190,21 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 
 <!-- image links -->  
 
-[ImageMoreTabsIcon]: images/more-tabs-icon.msft.png  
+[ImageMoreTabsIcon]: /microsoft-edge/devtools-guide-chromium/media/more-tabs-icon.msft.png  
 
-[ImageConfiguringAudits]: images/audits-pane.msft.png "Figure 1: Configuring audits"  
-[ImageReport]: images/audits-run-audits-result.msft.png "Figure 2: A figure"  
-[ImageAttributes]: images/audits-run-audits-result-issues-expanded.msft.png "Figure 3: More information about an audit"  
-[ImageAuditDocumentation]: images/web-dev-accessibility-audits-learn-more.msft.png "Figure 4: Viewing the documentation of an audit"  
-[ImageAxeExtension]: images/devtools-extension-axe-panel.msft.png "Figure 5: The aXe extension"  
-[ImageA11yPane]: images/elements-accessibility.msft.png "Figure 6: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
-[ImageAllyTree]: images/elements-accessibility-tree.msft.png "Figure 7: The Accessibility Tree section"  
-[ImageAriaAttributesSection]: images/elements-accessibility-aria-attributes.msft.png "Figure 8: The ARIA Attributes section"  
-[ImageComputedA11yPropertiesSection]: images/elements-accessibility-computed-properties.msft.png "Figure 9: The Computed (Accessibility) Properties section"  
-[ImageInspectDomTree]: images/elements-paragraph-highlight.msft.png "Figure 10: Inspecting a paragraph in the DOM Tree"  
-[ImageColorElement]: images/elements-styles-paragraph-highlight-color.msft.png "Figure 11: The color property of the element"  
-[ImageColorPickerContrastRatio]: images/elements-styles-paragraph-highlight-color-picker.msft.png "Figure 12: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97"  
-[ImageContrastRatioLine]: images/elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png "Figure 13: The Contrast Ratio Line in the visual picker"  
-
+[ImageConfiguringAudits]: /microsoft-edge/devtools-guide-chromium/media/accessibility-audits-pane.msft.png "Figure 1: Configuring audits"  
+[ImageReport]: /microsoft-edge/devtools-guide-chromium/media/accessibility-audits-run-audits-result.msft.png "Figure 2: A figure"  
+[ImageAttributes]: /microsoft-edge/devtools-guide-chromium/media/accessibility-audits-run-audits-result-issues-expanded.msft.png "Figure 3: More information about an audit"  
+[ImageAuditDocumentation]: /microsoft-edge/devtools-guide-chromium/media/accessibility-web-dev-accessibility-audits-learn-more.msft.png "Figure 4: Viewing the documentation of an audit"  
+[ImageAxeExtension]: /microsoft-edge/devtools-guide-chromium/media/accessibility-devtools-extension-axe-panel.msft.png "Figure 5: The aXe extension"  
+[ImageA11yPane]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility.msft.png "Figure 6: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
+[ImageAllyTree]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility-tree.msft.png "Figure 7: The Accessibility Tree section"  
+[ImageAriaAttributesSection]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility-aria-attributes.msft.png "Figure 8: The ARIA Attributes section"  
+[ImageComputedA11yPropertiesSection]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility-computed-properties.msft.png "Figure 9: The Computed (Accessibility) Properties section"  
+[ImageInspectDomTree]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-paragraph-highlight.msft.png "Figure 10: Inspecting a paragraph in the DOM Tree"  
+[ImageColorElement]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-styles-paragraph-highlight-color.msft.png "Figure 11: The color property of the element"  
+[ImageColorPickerContrastRatio]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png "Figure 12: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97"  
+[ImageContrastRatioLine]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png "Figure 13: The Contrast Ratio Line in the visual picker"  
 <!-- links -->  
 
 [DevtoolsAccessibilityNavigation]: navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology"  
