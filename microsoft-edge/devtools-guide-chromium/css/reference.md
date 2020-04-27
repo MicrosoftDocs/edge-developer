@@ -2,7 +2,7 @@
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -495,12 +495,12 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevToolsCSSGetStarted]: index.md "Get Started With Viewing And Changing CSS"  
-[DevToolsCSSGetStartedAddPseudoState]: index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  
-[DevToolsCSSGetStartedTutorial]: index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  
-[DevToolsCssPrintPreview]: print-preview.md "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"    
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+[DevToolsCSSGetStartedAddPseudoState]: /microsoft-edge/devtools-guide-chromium/css/index#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  
+[DevToolsCSSGetStartedTutorial]: /microsoft-edge/devtools-guide-chromium/css/index#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  
+[DevToolsCssPrintPreview]: /microsoft-edge/devtools-guide-chromium/css/print-preview "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)"  
+[DevToolsJavascriptReferenceFormat]: /microsoft-edge/devtools-guide-chromium/javascript/reference#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "The color system - Material Design"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "The box model | MDN"  

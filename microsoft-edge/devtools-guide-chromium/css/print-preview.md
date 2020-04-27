@@ -2,7 +2,7 @@
 title: Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -57,9 +57,9 @@ From here, you can view and change your CSS, like any other web page.  See [Get 
 
 <!-- links -->  
 
-[DevToolsCSSGetStarted]: index.md "Get Started With Viewing And Changing CSS"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
 
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"  
 
 > [!NOTE]
