@@ -224,7 +224,7 @@
 ##### [ICoreWebView2WebResourceRequestedEventHandler](webview2/reference/win32/0.9.488/ICoreWebView2WebResourceRequestedEventHandler.md)
 ##### [ICoreWebView2WindowCloseRequestedEventHandler](webview2/reference/win32/0.9.488/ICoreWebView2WindowCloseRequestedEventHandler.md)
 ##### [ICoreWebView2ZoomFactorChangedEventHandler](webview2/reference/win32/0.9.488/ICoreWebView2ZoomFactorChangedEventHandler.md)
-#### Experimental interfaces
+#### Experimental
 ##### [ICoreWebView2ExperimentalCompositionController](webview2/reference/win32/0.9.488/ICoreWebView2ExperimentalCompositionController.md)
 ##### [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](webview2/reference/win32/0.9.488/ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler.md)
 ##### [ICoreWebView2ExperimentalCursorChangedEventHandler](webview2/reference/win32/0.9.488/ICoreWebView2ExperimentalCursorChangedEventHandler.md)
@@ -344,13 +344,14 @@
 ####### [IWebView2WebResourceRequestedEventHandler](webview2/reference/win32/0.8.190/IWebView2WebResourceRequestedEventHandler.md)
 ####### [IWebView2ZoomFactorChangedEventHandler](webview2/reference/win32/0.8.190/IWebView2ZoomFactorChangedEventHandler.md)
 ### [.NET](webview2/reference/dotnet/0.9.494-reference-webview2.md)
+#### [Namespace Microsoft::Web::WebView2::Core](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core.md)
 #### [CoreWebView2](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2.md)
 #### [CoreWebView2Controller](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Controller.md)
 #### [CoreWebView2Deferral](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md)
 #### [CoreWebView2DevToolsProtocolEventReceiver](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2DevToolsProtocolEventReceiver.md)
 #### [CoreWebView2Environment](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Environment.md)
 #### [CoreWebView2EnvironmentOptions](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2EnvironmentOptions.md)
-#### [Struct Microsoft::Web::WebView2::Core::CoreWebView2PhysicalKeyStatus](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2PhysicalKeyStatus.md)
+#### [CoreWebView2PhysicalKeyStatus](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2PhysicalKeyStatus.md)
 #### [CoreWebView2Settings](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Settings.md)
 #### [EdgeNotFoundException](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--EdgeNotFoundException.md)
 #### Event arguments
@@ -367,5 +368,12 @@
 ##### [CoreWebView2SourceChangedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2SourceChangedEventArgs.md)
 ##### [CoreWebView2WebMessageReceivedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2WebMessageReceivedEventArgs.md)
 ##### [CoreWebView2WebResourceRequestedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2WebResourceRequestedEventArgs.md)
+#### Experimental
+##### [CoreWebView2ExperimentalCompositionController](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2ExperimentalCompositionController.md)
+##### [CoreWebView2ExperimentalEnvironment](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2ExperimentalEnvironment.md)
+##### [CoreWebView2ExperimentalPointerInfo](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2ExperimentalPointerInfo.md)
+##### [CoreWebView2Matrix4x4](webview2/reference/dotnet/0.9.494/Microsoft--Web--WebView2--Core--CoreWebView2Matrix4x4.md)
 ### [WinForms](webview2/reference/winforms/0.9.494-reference-webview2.md)
 #### [WebView2](webview2/reference/winforms/0.9.494/Microsoft--Web--WebView2--WinForms--WebView2.md)
+### [WPF](webview2/reference/wpf/0.9.494-reference-webview2.md)
+#### [WebView2](webview2/reference/wpf/0.9.494/Microsoft--Web--WebView2--Wpf--WebView2.md)
