@@ -3,7 +3,7 @@ description: How to debug Microsoft Edge (Chromium) and Microsoft Edge (EdgeHTML
 title: Debug Microsoft Edge (Chromium) from VS Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
 
-![Debugger for Edge VS Code extension at work][ImageDebuggerEdge]  
+![Debugger for Edge VS Code extension at work][ImageGifDebuggerEdge]  
 
 ## Launching Microsoft Edge  
 
@@ -81,7 +81,8 @@ To help us make this extension better, your contributions are welcome!  Find eve
 
 <!-- image links -->  
 
-[ImageDebuggerEdge]: ./media/debugger-for-edge.png "Debugger for Edge VS Code extension in action"  
+[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  
+[ImagePngDebuggerEdge]: ./media/debugger-for-edge.png "Debugger for Edge VS Code extension in action"  
 
 <!--links -->  
 

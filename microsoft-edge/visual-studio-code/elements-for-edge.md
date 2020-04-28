@@ -3,7 +3,7 @@ description: How to use Elements for Microsoft Edge (Chromium) from VS Code
 title: Elements for Microsoft Edge (Chromium) from VS Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, elements
@@ -11,9 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 # Elements For Microsoft Edge VS Code Extension  
 
-With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within [Visual Studio Code][VisualstudioCode]).  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
+With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within [Visual Studio Code][VisualstudioCode].  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
 
-![Elements for Edge VS Code extension at work][ImageElementsEdge]  
+![Elements for Edge VS Code extension at work][ImageGifElementsEdge]  
 
 ## Launching Microsoft Edge From the Elements extension  
 
@@ -72,7 +72,8 @@ If you want to help us make this extension better, your contributions are welcom
 
 <!-- image links -->  
 
-[ImageElementsEdge]: ./media/elements-for-edge.png "Elements for Edge VS Code extension in action"  
+[ImageGifElementsEdge]: ./media/elements-for-edge.gif "Elements for Edge VS Code extension in action"  
+[ImagePngElementsEdge]: ./media/elements-for-edge.png "Elements for Edge VS Code extension in action"  
 
 <!--links -->  
 
