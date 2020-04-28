@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,17 +23,11 @@ Event args for the MoveFocusRequested event.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_Reason](#get_reason) | The reason for WebView to fire the MoveFocus Requested event.
 [get_Handled](#get_handled) | Indicate whether the event has been handled by the app.
+[get_Reason](#get_reason) | The reason for WebView to fire the MoveFocus Requested event.
 [put_Handled](#put_handled) | Set the Handled property.
 
 ## Members
-
-#### get_Reason 
-
-The reason for WebView to fire the MoveFocus Requested event.
-
-> public HRESULT [get_Reason](#get_reason)(COREWEBVIEW2_MOVE_FOCUS_REASON * value)
 
 #### get_Handled 
 
@@ -42,6 +36,12 @@ Indicate whether the event has been handled by the app.
 > public HRESULT [get_Handled](#get_handled)(BOOL * value)
 
 If the app has moved the focus to its desired location, it should set Handled property to TRUE. When Handled property is false after the event handler returns, default action will be taken. The default action is to try to find the next tab stop child window in the app and try to move focus to that window. If there is no other such window to move focus to, focus will be cycled within the WebView's web content.
+
+#### get_Reason 
+
+The reason for WebView to fire the MoveFocus Requested event.
+
+> public HRESULT [get_Reason](#get_reason)(COREWEBVIEW2_MOVE_FOCUS_REASON * value)
 
 #### put_Handled 
 

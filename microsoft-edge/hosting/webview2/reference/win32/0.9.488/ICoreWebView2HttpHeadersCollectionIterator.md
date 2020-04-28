@@ -23,8 +23,8 @@ Iterator for a collection of HTTP headers.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[GetCurrentHeader](#getcurrentheader) | Get the name and value of the current HTTP header of the iterator.
 [get_HasCurrentHeader](#get_hascurrentheader) | True when the iterator hasn't run out of headers.
+[GetCurrentHeader](#getcurrentheader) | Get the name and value of the current HTTP header of the iterator.
 [MoveNext](#movenext) | Move the iterator to the next HTTP header in the collection.
 
 See [ICoreWebView2HttpRequestHeaders](ICoreWebView2HttpRequestHeaders.md) and [ICoreWebView2HttpResponseHeaders](ICoreWebView2HttpResponseHeaders.md). 
@@ -59,14 +59,6 @@ std::wstring RequestHeadersToJsonString(ICoreWebView2HttpRequestHeaders* request
 
 ## Members
 
-#### GetCurrentHeader 
-
-Get the name and value of the current HTTP header of the iterator.
-
-> public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR * name, LPWSTR * value)
-
-This method will fail if the last call to MoveNext set has_next to FALSE.
-
 #### get_HasCurrentHeader 
 
 True when the iterator hasn't run out of headers.
@@ -74,6 +66,14 @@ True when the iterator hasn't run out of headers.
 > public HRESULT [get_HasCurrentHeader](#get_hascurrentheader)(BOOL * hasCurrent)
 
 If the collection over which the iterator is iterating is empty or if the iterator has gone past the end of the collection then this is false.
+
+#### GetCurrentHeader 
+
+Get the name and value of the current HTTP header of the iterator.
+
+> public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR * name, LPWSTR * value)
+
+This method will fail if the last call to MoveNext set has_next to FALSE.
 
 #### MoveNext 
 

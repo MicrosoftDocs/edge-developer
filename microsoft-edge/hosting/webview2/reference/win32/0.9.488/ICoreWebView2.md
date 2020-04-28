@@ -23,74 +23,74 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_Settings](#get_settings) | The ICoreWebView2Settings object contains various modifiable settings for the running WebView.
-[get_Source](#get_source) | The URI of the current top level document.
-[Navigate](#navigate) | Cause a navigation of the top level document to the specified URI.
-[NavigateToString](#navigatetostring) | Initiates a navigation to htmlContent as source HTML of a new document.
-[add_NavigationStarting](#add_navigationstarting) | Add an event handler for the NavigationStarting event.
-[remove_NavigationStarting](#remove_navigationstarting) | Remove an event handler previously added with add_NavigationStarting.
+[add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged) | Notifies when the ContainsFullScreenElement property changes.
 [add_ContentLoading](#add_contentloading) | Add an event handler for the ContentLoading event.
-[remove_ContentLoading](#remove_contentloading) | Remove an event handler previously added with add_ContentLoading.
-[add_SourceChanged](#add_sourcechanged) | SourceChanged fires when the Source property changes.
-[remove_SourceChanged](#remove_sourcechanged) | Remove an event handler previously added with add_SourceChanged.
-[add_HistoryChanged](#add_historychanged) | HistoryChange listen to the change of navigation history for the top level document.
-[remove_HistoryChanged](#remove_historychanged) | Remove an event handler previously added with add_HistoryChanged.
-[add_NavigationCompleted](#add_navigationcompleted) | Add an event handler for the NavigationCompleted event.
-[remove_NavigationCompleted](#remove_navigationcompleted) | Remove an event handler previously added with add_NavigationCompleted.
-[add_FrameNavigationStarting](#add_framenavigationstarting) | Add an event handler for the FrameNavigationStarting event.
-[remove_FrameNavigationStarting](#remove_framenavigationstarting) | Remove an event handler previously added with add_FrameNavigationStarting.
+[add_DocumentTitleChanged](#add_documenttitlechanged) | Add an event handler for the DocumentTitleChanged event.
 [add_FrameNavigationCompleted](#add_framenavigationcompleted) | Add an event handler for the FrameNavigationCompleted event.
-[remove_FrameNavigationCompleted](#remove_framenavigationcompleted) | Remove an event handler previously added with add_FrameNavigationCompleted.
-[add_ScriptDialogOpening](#add_scriptdialogopening) | Add an event handler for the ScriptDialogOpening event.
-[remove_ScriptDialogOpening](#remove_scriptdialogopening) | Remove an event handler previously added with add_ScriptDialogOpening.
+[add_FrameNavigationStarting](#add_framenavigationstarting) | Add an event handler for the FrameNavigationStarting event.
+[add_HistoryChanged](#add_historychanged) | HistoryChange listen to the change of navigation history for the top level document.
+[add_NavigationCompleted](#add_navigationcompleted) | Add an event handler for the NavigationCompleted event.
+[add_NavigationStarting](#add_navigationstarting) | Add an event handler for the NavigationStarting event.
+[add_NewWindowRequested](#add_newwindowrequested) | Add an event handler for the NewWindowRequested event.
 [add_PermissionRequested](#add_permissionrequested) | Add an event handler for the PermissionRequested event.
-[remove_PermissionRequested](#remove_permissionrequested) | Remove an event handler previously added with add_PermissionRequested.
 [add_ProcessFailed](#add_processfailed) | Add an event handler for the ProcessFailed event.
-[remove_ProcessFailed](#remove_processfailed) | Remove an event handler previously added with add_ProcessFailed.
-[AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated) | Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
-[ExecuteScript](#executescript) | Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
-[CapturePreview](#capturepreview) | Capture an image of what WebView is displaying.
-[Reload](#reload) | Reload the current page.
-[PostWebMessageAsJson](#postwebmessageasjson) | Post the specified webMessage to the top level document in this WebView.
-[PostWebMessageAsString](#postwebmessageasstring) | This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
+[add_ScriptDialogOpening](#add_scriptdialogopening) | Add an event handler for the ScriptDialogOpening event.
+[add_SourceChanged](#add_sourcechanged) | SourceChanged fires when the Source property changes.
 [add_WebMessageReceived](#add_webmessagereceived) | This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
-[remove_WebMessageReceived](#remove_webmessagereceived) | Remove an event handler previously added with add_WebMessageReceived.
+[add_WebResourceRequested](#add_webresourcerequested) | Add an event handler for the WebResourceRequested event.
+[add_WindowCloseRequested](#add_windowcloserequested) | Add an event handler for the WindowCloseRequested event.
+[AddHostObjectToScript](#addhostobjecttoscript) | Add the provided host object to script running in the WebView with the specified name.
+[AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated) | Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
+[AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | Adds a URI and resource context filter to the WebResourceRequested event.
 [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod) | Call an asynchronous DevToolsProtocol method.
+[CapturePreview](#capturepreview) | Capture an image of what WebView is displaying.
+[ExecuteScript](#executescript) | Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
 [get_BrowserProcessId](#get_browserprocessid) | The process id of the browser process that hosts the WebView.
 [get_CanGoBack](#get_cangoback) | Returns true if the webview can navigate to a previous page in the navigation history.
 [get_CanGoForward](#get_cangoforward) | Returns true if the webview can navigate to a next page in the navigation history.
+[get_ContainsFullScreenElement](#get_containsfullscreenelement) | Indicates if the WebView contains a fullscreen HTML element.
+[get_DocumentTitle](#get_documenttitle) | The title for the current top level document.
+[get_Settings](#get_settings) | The [ICoreWebView2Settings](ICoreWebView2Settings.md) object contains various modifiable settings for the running WebView.
+[get_Source](#get_source) | The URI of the current top level document.
+[GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) | Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
 [GoBack](#goback) | Navigates the WebView to the previous page in the navigation history.
 [GoForward](#goforward) | Navigates the WebView to the next page in the navigation history.
-[GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) | Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
-[Stop](#stop) | Stop all navigations and pending resource fetches.
-[add_NewWindowRequested](#add_newwindowrequested) | Add an event handler for the NewWindowRequested event.
-[remove_NewWindowRequested](#remove_newwindowrequested) | Remove an event handler previously added with add_NewWindowRequested.
-[add_DocumentTitleChanged](#add_documenttitlechanged) | Add an event handler for the DocumentTitleChanged event.
-[remove_DocumentTitleChanged](#remove_documenttitlechanged) | Remove an event handler previously added with add_DocumentTitleChanged.
-[get_DocumentTitle](#get_documenttitle) | The title for the current top level document.
-[AddHostObjectToScript](#addhostobjecttoscript) | Add the provided host object to script running in the WebView with the specified name.
-[RemoveHostObjectFromScript](#removehostobjectfromscript) | Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
+[Navigate](#navigate) | Cause a navigation of the top level document to the specified URI.
+[NavigateToString](#navigatetostring) | Initiates a navigation to htmlContent as source HTML of a new document.
 [OpenDevToolsWindow](#opendevtoolswindow) | Opens the DevTools window for the current document in the WebView.
-[add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged) | Notifies when the ContainsFullScreenElement property changes.
+[PostWebMessageAsJson](#postwebmessageasjson) | Post the specified webMessage to the top level document in this WebView.
+[PostWebMessageAsString](#postwebmessageasstring) | This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
+[Reload](#reload) | Reload the current page.
 [remove_ContainsFullScreenElementChanged](#remove_containsfullscreenelementchanged) | Remove an event handler previously added with the corresponding add_ event method.
-[get_ContainsFullScreenElement](#get_containsfullscreenelement) | Indicates if the WebView contains a fullscreen HTML element.
-[add_WebResourceRequested](#add_webresourcerequested) | Add an event handler for the WebResourceRequested event.
+[remove_ContentLoading](#remove_contentloading) | Remove an event handler previously added with add_ContentLoading.
+[remove_DocumentTitleChanged](#remove_documenttitlechanged) | Remove an event handler previously added with add_DocumentTitleChanged.
+[remove_FrameNavigationCompleted](#remove_framenavigationcompleted) | Remove an event handler previously added with add_FrameNavigationCompleted.
+[remove_FrameNavigationStarting](#remove_framenavigationstarting) | Remove an event handler previously added with add_FrameNavigationStarting.
+[remove_HistoryChanged](#remove_historychanged) | Remove an event handler previously added with add_HistoryChanged.
+[remove_NavigationCompleted](#remove_navigationcompleted) | Remove an event handler previously added with add_NavigationCompleted.
+[remove_NavigationStarting](#remove_navigationstarting) | Remove an event handler previously added with add_NavigationStarting.
+[remove_NewWindowRequested](#remove_newwindowrequested) | Remove an event handler previously added with add_NewWindowRequested.
+[remove_PermissionRequested](#remove_permissionrequested) | Remove an event handler previously added with add_PermissionRequested.
+[remove_ProcessFailed](#remove_processfailed) | Remove an event handler previously added with add_ProcessFailed.
+[remove_ScriptDialogOpening](#remove_scriptdialogopening) | Remove an event handler previously added with add_ScriptDialogOpening.
+[remove_SourceChanged](#remove_sourcechanged) | Remove an event handler previously added with add_SourceChanged.
+[remove_WebMessageReceived](#remove_webmessagereceived) | Remove an event handler previously added with add_WebMessageReceived.
 [remove_WebResourceRequested](#remove_webresourcerequested) | Remove an event handler previously added with add_WebResourceRequested.
-[AddWebResourceRequestedFilter](#addwebresourcerequestedfilter) | Adds a URI and resource context filter to the WebResourceRequested event.
-[RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
-[add_WindowCloseRequested](#add_windowcloserequested) | Add an event handler for the WindowCloseRequested event.
 [remove_WindowCloseRequested](#remove_windowcloserequested) | Remove an event handler previously added with add_WindowCloseRequested.
+[RemoveHostObjectFromScript](#removehostobjectfromscript) | Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
+[RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
+[Stop](#stop) | Stop all navigations and pending resource fetches.
 [COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) | Image format used by the ICoreWebView2::CapturePreview method.
-[COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
-[COREWEBVIEW2_PROCESS_FAILED_KIND](#corewebview2_process_failed_kind) | Kind of process failure used in the ICoreWebView2ProcessFailedEventHandler interface.
+[COREWEBVIEW2_KEY_EVENT_KIND](#corewebview2_key_event_kind) | The type of key event that triggered an AcceleratorKeyPressed event.
+[COREWEBVIEW2_MOVE_FOCUS_REASON](#corewebview2_move_focus_reason) | Reason for moving focus.
 [COREWEBVIEW2_PERMISSION_KIND](#corewebview2_permission_kind) | The type of a permission request.
 [COREWEBVIEW2_PERMISSION_STATE](#corewebview2_permission_state) | Response to a permission request.
+[COREWEBVIEW2_PHYSICAL_KEY_STATUS](#corewebview2_physical_key_status) | A structure representing the information packed into the LPARAM given to a Win32 key event.
+[COREWEBVIEW2_PROCESS_FAILED_KIND](#corewebview2_process_failed_kind) | Kind of process failure used in the ICoreWebView2ProcessFailedEventHandler interface.
+[COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Error status values for web navigations.
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Enum for web resource request contexts.
-[COREWEBVIEW2_MOVE_FOCUS_REASON](#corewebview2_move_focus_reason) | Reason for moving focus.
-[COREWEBVIEW2_KEY_EVENT_KIND](#corewebview2_key_event_kind) | The type of key event that triggered an AcceleratorKeyPressed event.
-[COREWEBVIEW2_PHYSICAL_KEY_STATUS](#corewebview2_physical_key_status) | A structure representing the information packed into the LPARAM given to a Win32 key event.
 
 ## Navigation events
 
@@ -160,95 +160,195 @@ When an interface is unavailable, you can consider disabling the associated feat
 
 ## Members
 
-#### get_Settings 
+#### add_ContainsFullScreenElementChanged 
 
-The ICoreWebView2Settings object contains various modifiable settings for the running WebView.
+Notifies when the ContainsFullScreenElement property changes.
 
-> public HRESULT [get_Settings](#get_settings)(ICoreWebView2Settings ** settings)
+> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([ICoreWebView2ContainsFullScreenElementChangedEventHandler](ICoreWebView2ContainsFullScreenElementChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-#### get_Source 
-
-The URI of the current top level document.
-
-> public HRESULT [get_Source](#get_source)(LPWSTR * uri)
-
-This value potentially changes as a part of the SourceChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
+This means that an HTML element inside the WebView is entering fullscreen to the size of the WebView or leaving fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of ContainsFullScreenElementChanged can then resize the WebView in response.
 
 ```cpp
-    // Register a handler for the SourceChanged event.
-    // This handler will read the webview's source URI and update
-    // the app's address bar.
-    CHECK_FAILURE(m_webView->add_SourceChanged(
-        Callback<ICoreWebView2SourceChangedEventHandler>(
-            [this](ICoreWebView2* sender, ICoreWebView2SourceChangedEventArgs* args)
-                -> HRESULT {
-                wil::unique_cotaskmem_string uri;
-                sender->get_Source(&uri);
-                if (wcscmp(uri.get(), L"about:blank") == 0)
+    // Register a handler for the ContainsFullScreenChanged event.
+    CHECK_FAILURE(m_webView->add_ContainsFullScreenElementChanged(
+        Callback<ICoreWebView2ContainsFullScreenElementChangedEventHandler>(
+            [this](ICoreWebView2* sender, IUnknown* args) -> HRESULT {
+                if (m_fullScreenAllowed)
                 {
-                    uri = wil::make_cotaskmem_string(L"");
+                    CHECK_FAILURE(
+                        sender->get_ContainsFullScreenElement(&m_containsFullscreenElement));
+                    if (m_containsFullscreenElement)
+                    {
+                        EnterFullScreen();
+                    }
+                    else
+                    {
+                        ExitFullScreen();
+                    }
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                return S_OK;
+            })
+            .Get(),
+        nullptr));
+```
+
+#### add_ContentLoading 
+
+Add an event handler for the ContentLoading event.
+
+> public HRESULT [add_ContentLoading](#add_contentloading)([ICoreWebView2ContentLoadingEventHandler](ICoreWebView2ContentLoadingEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+ContentLoading fires before any content is loaded, including scripts added with AddScriptToExecuteOnDocumentCreated ContentLoading will not fire if a same page navigation occurs (such as through fragment navigations or history.pushState navigations). This follows the NavigationStarting and SourceChanged events and precedes the HistoryChanged and NavigationCompleted events.
+
+#### add_DocumentTitleChanged 
+
+Add an event handler for the DocumentTitleChanged event.
+
+> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([ICoreWebView2DocumentTitleChangedEventHandler](ICoreWebView2DocumentTitleChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
+
+```cpp
+    // Register a handler for the DocumentTitleChanged event.
+    // This handler just announces the new title on the window's title bar.
+    CHECK_FAILURE(m_webView->add_DocumentTitleChanged(
+        Callback<ICoreWebView2DocumentTitleChangedEventHandler>(
+            [this](ICoreWebView2* sender, IUnknown* args) -> HRESULT {
+                wil::unique_cotaskmem_string title;
+                CHECK_FAILURE(sender->get_DocumentTitle(&title));
+                SetWindowText(m_appWindow->GetMainWindow(), title.get());
+                return S_OK;
+            })
+            .Get(),
+        &m_documentTitleChangedToken));
+```
+
+#### add_FrameNavigationCompleted 
+
+Add an event handler for the FrameNavigationCompleted event.
+
+> public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
+
+```cpp
+    // Register a handler for the FrameNavigationCompleted event.
+    // Check whether the navigation succeeded, and if not, do something.
+    CHECK_FAILURE(m_webView->add_FrameNavigationCompleted(
+        Callback<ICoreWebView2NavigationCompletedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2NavigationCompletedEventArgs* args)
+                -> HRESULT {
+                BOOL success;
+                CHECK_FAILURE(args->get_IsSuccess(&success));
+                if (!success)
+                {
+                    COREWEBVIEW2_WEB_ERROR_STATUS webErrorStatus;
+                    CHECK_FAILURE(args->get_WebErrorStatus(&webErrorStatus));
+                    std::wstring error_msg = WebErrorStatusToString(webErrorStatus);
+                    MessageBox(nullptr,
+                       (std::wstring(L"IFrame navigation failed with the ") +
+                         L"give in error " + error_msg).c_str(),
+                       L"Navigation Failure", MB_OK);
+                    if (webErrorStatus == COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
+                    {
+                        // Do something here if you want to handle a specific error case.
+                        // In most cases this isn't necessary, because the WebView will
+                        // display its own error page automatically.
+                    }
+                }
+                return S_OK;
+            })
+            .Get(),
+        &m_frameNavigationCompletedToken));
+```
+
+#### add_FrameNavigationStarting 
+
+Add an event handler for the FrameNavigationStarting event.
+
+> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI. This will fire for redirects as well.
+
+```cpp
+    // Register a handler for the FrameNavigationStarting event.
+    // This handler will prevent a frame from navigating to a blocked domain.
+    CHECK_FAILURE(m_webView->add_FrameNavigationStarting(
+        Callback<ICoreWebView2NavigationStartingEventHandler>(
+            [this](ICoreWebView2* sender,
+                   ICoreWebView2NavigationStartingEventArgs* args) -> HRESULT
+    {
+        wil::unique_cotaskmem_string uri;
+        CHECK_FAILURE(args->get_Uri(&uri));
+
+        if (ShouldBlockUri(uri.get()))
+        {
+            CHECK_FAILURE(args->put_Cancel(true));
+        }
+        return S_OK;
+    }).Get(), &m_frameNavigationStartingToken));
+```
+
+#### add_HistoryChanged 
+
+HistoryChange listen to the change of navigation history for the top level document.
+
+> public HRESULT [add_HistoryChanged](#add_historychanged)([ICoreWebView2HistoryChangedEventHandler](ICoreWebView2HistoryChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryChanged also fires for using GoBack/GoForward. HistoryChanged fires after SourceChanged and ContentLoading. Add an event handler for the HistoryChanged event. 
+```cpp
+    // Register a handler for the HistoryChanged event.
+    // Update the Back, Forward buttons.
+    CHECK_FAILURE(m_webView->add_HistoryChanged(
+        Callback<ICoreWebView2HistoryChangedEventHandler>(
+            [this](ICoreWebView2* sender, IUnknown* args) -> HRESULT {
+                BOOL canGoBack;
+                BOOL canGoForward;
+                sender->get_CanGoBack(&canGoBack);
+                sender->get_CanGoForward(&canGoForward);
+                EnableWindow(m_toolbar->backWindow, canGoBack);
+                EnableWindow(m_toolbar->forwardWindow, canGoForward);
 
                 return S_OK;
             })
             .Get(),
-        &m_sourceChangedToken));
+        &m_historyChangedToken));
 ```
 
-#### Navigate 
+#### add_NavigationCompleted 
 
-Cause a navigation of the top level document to the specified URI.
+Add an event handler for the NavigationCompleted event.
 
-> public HRESULT [Navigate](#navigate)(LPCWSTR uri)
+> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-See the navigation events for more information. Note that this starts a navigation and the corresponding NavigationStarting event will fire sometime after this Navigate call completes.
-
-```cpp
-void ControlComponent::NavigateToAddressBar()
-{
-    int length = GetWindowTextLength(m_toolbar->addressBarWindow);
-    std::wstring uri(length, 0);
-    PWSTR buffer = const_cast<PWSTR>(uri.data());
-    GetWindowText(m_toolbar->addressBarWindow, buffer, length + 1);
-
-    HRESULT hr = m_webView->Navigate(uri.c_str());
-    if (hr == E_INVALIDARG)
-    {
-        // An invalid URI was provided.
-        if (uri.find(L' ') == std::wstring::npos
-            && uri.find(L'.') != std::wstring::npos)
-        {
-            // If it contains a dot and no spaces, try tacking http:// on the front.
-            hr = m_webView->Navigate((L"http://" + uri).c_str());
-        }
-        else
-        {
-            // Otherwise treat it as a web search. We aren't bothering to escape
-            // URL syntax characters such as & and #
-            hr = m_webView->Navigate((L"https://bing.com/search?q=" + uri).c_str());
-        }
-    }
-    if (hr != E_INVALIDARG) {
-        CHECK_FAILURE(hr);
-    }
-}
-```
-
-#### NavigateToString 
-
-Initiates a navigation to htmlContent as source HTML of a new document.
-
-> public HRESULT [NavigateToString](#navigatetostring)(LPCWSTR htmlContent)
-
-The htmlContent parameter may not be larger than 2 MB of characters. The origin of the new page will be about:blank.
+NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
 ```cpp
-            static const PCWSTR htmlContent =
-              L"<h1>Domain Blocked</h1>"
-              L"<p>You've attempted to navigate to a domain in the blocked "
-              L"sites list. Press back to return to the previous page.</p>";
-            CHECK_FAILURE(sender->NavigateToString(htmlContent));
+    // Register a handler for the NavigationCompleted event.
+    // Check whether the navigation succeeded, and if not, do something.
+    // Also update the Cancel buttons.
+    CHECK_FAILURE(m_webView->add_NavigationCompleted(
+        Callback<ICoreWebView2NavigationCompletedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2NavigationCompletedEventArgs* args)
+                -> HRESULT {
+                BOOL success;
+                CHECK_FAILURE(args->get_IsSuccess(&success));
+                if (!success)
+                {
+                    COREWEBVIEW2_WEB_ERROR_STATUS webErrorStatus;
+                    CHECK_FAILURE(args->get_WebErrorStatus(&webErrorStatus));
+                    if (webErrorStatus == COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
+                    {
+                        // Do something here if you want to handle a specific error case.
+                        // In most cases this isn't necessary, because the WebView will
+                        // display its own error page automatically.
+                    }
+                }
+                EnableWindow(m_toolbar->cancelWindow, FALSE);
+                return S_OK;
+            })
+            .Get(),
+        &m_navigationCompletedToken));
 ```
 
 #### add_NavigationStarting 
@@ -301,212 +401,144 @@ NavigationStarting fires when the WebView main frame is requesting permission to
     }).Get(), &m_navigationStartingToken));
 ```
 
-#### remove_NavigationStarting 
+#### add_NewWindowRequested 
 
-Remove an event handler previously added with add_NavigationStarting.
+Add an event handler for the NewWindowRequested event.
 
-> public HRESULT [remove_NavigationStarting](#remove_navigationstarting)(EventRegistrationToken token)
+> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([ICoreWebView2NewWindowRequestedEventHandler](ICoreWebView2NewWindowRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-#### add_ContentLoading 
+Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
 
-Add an event handler for the ContentLoading event.
-
-> public HRESULT [add_ContentLoading](#add_contentloading)([ICoreWebView2ContentLoadingEventHandler](ICoreWebView2ContentLoadingEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-ContentLoading fires before any content is loaded, including scripts added with AddScriptToExecuteOnDocumentCreated ContentLoading will not fire if a same page navigation occurs (such as through fragment navigations or history.pushState navigations). This follows the NavigationStarting and SourceChanged events and precedes the HistoryChanged and NavigationCompleted events.
-
-#### remove_ContentLoading 
-
-Remove an event handler previously added with add_ContentLoading.
-
-> public HRESULT [remove_ContentLoading](#remove_contentloading)(EventRegistrationToken token)
-
-#### add_SourceChanged 
-
-SourceChanged fires when the Source property changes.
-
-> public HRESULT [add_SourceChanged](#add_sourcechanged)([ICoreWebView2SourceChangedEventHandler](ICoreWebView2SourceChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-SourceChanged fires for navigating to a different site or fragment navigations. It will not fires for other types of navigations such as page reloads or history.pushState with the same URL as the current page. SourceChanged fires before ContentLoading for navigation to a new document. Add an event handler for the SourceChanged event. 
 ```cpp
-    // Register a handler for the SourceChanged event.
-    // This handler will read the webview's source URI and update
-    // the app's address bar.
-    CHECK_FAILURE(m_webView->add_SourceChanged(
-        Callback<ICoreWebView2SourceChangedEventHandler>(
-            [this](ICoreWebView2* sender, ICoreWebView2SourceChangedEventArgs* args)
-                -> HRESULT {
-                wil::unique_cotaskmem_string uri;
-                sender->get_Source(&uri);
-                if (wcscmp(uri.get(), L"about:blank") == 0)
-                {
-                    uri = wil::make_cotaskmem_string(L"");
-                }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+    // Register a handler for the NewWindowRequested event.
+    // This handler will defer the event, create a new app window, and then once the
+    // new window is ready, it'll provide that new window's WebView as the response to
+    // the request.
+    CHECK_FAILURE(m_webView->add_NewWindowRequested(
+        Callback<ICoreWebView2NewWindowRequestedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2NewWindowRequestedEventArgs* args) {
+                wil::com_ptr<ICoreWebView2Deferral> deferral;
+                CHECK_FAILURE(args->GetDeferral(&deferral));
+                AppWindow* newAppWindow;
+
+                newAppWindow = new AppWindow(L"");
+
+                newAppWindow->m_isPopupWindow = true;
+                newAppWindow->m_onWebViewFirstInitialized = [args, deferral, newAppWindow]() {
+                    CHECK_FAILURE(args->put_NewWindow(newAppWindow->m_webView.get()));
+                    CHECK_FAILURE(args->put_Handled(TRUE));
+                    CHECK_FAILURE(deferral->Complete());
+                };
 
                 return S_OK;
             })
             .Get(),
-        &m_sourceChangedToken));
+        nullptr));
 ```
 
-#### remove_SourceChanged 
+#### add_PermissionRequested 
 
-Remove an event handler previously added with add_SourceChanged.
+Add an event handler for the PermissionRequested event.
 
-> public HRESULT [remove_SourceChanged](#remove_sourcechanged)(EventRegistrationToken token)
+> public HRESULT [add_PermissionRequested](#add_permissionrequested)([ICoreWebView2PermissionRequestedEventHandler](ICoreWebView2PermissionRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-#### add_HistoryChanged 
-
-HistoryChange listen to the change of navigation history for the top level document.
-
-> public HRESULT [add_HistoryChanged](#add_historychanged)([ICoreWebView2HistoryChangedEventHandler](ICoreWebView2HistoryChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryChanged also fires for using GoBack/GoForward. HistoryChanged fires after SourceChanged and ContentLoading. Add an event handler for the HistoryChanged event. 
-```cpp
-    // Register a handler for the HistoryChanged event.
-    // Update the Back, Forward buttons.
-    CHECK_FAILURE(m_webView->add_HistoryChanged(
-        Callback<ICoreWebView2HistoryChangedEventHandler>(
-            [this](ICoreWebView2* sender, IUnknown* args) -> HRESULT {
-                BOOL canGoBack;
-                BOOL canGoForward;
-                sender->get_CanGoBack(&canGoBack);
-                sender->get_CanGoForward(&canGoForward);
-                EnableWindow(m_toolbar->backWindow, canGoBack);
-                EnableWindow(m_toolbar->forwardWindow, canGoForward);
-
-                return S_OK;
-            })
-            .Get(),
-        &m_historyChangedToken));
-```
-
-#### remove_HistoryChanged 
-
-Remove an event handler previously added with add_HistoryChanged.
-
-> public HRESULT [remove_HistoryChanged](#remove_historychanged)(EventRegistrationToken token)
-
-#### add_NavigationCompleted 
-
-Add an event handler for the NavigationCompleted event.
-
-> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
+Fires when content in a WebView requests permission to access some privileged resources.
 
 ```cpp
-    // Register a handler for the NavigationCompleted event.
-    // Check whether the navigation succeeded, and if not, do something.
-    // Also update the Cancel buttons.
-    CHECK_FAILURE(m_webView->add_NavigationCompleted(
-        Callback<ICoreWebView2NavigationCompletedEventHandler>(
-            [this](ICoreWebView2* sender, ICoreWebView2NavigationCompletedEventArgs* args)
-                -> HRESULT {
-                BOOL success;
-                CHECK_FAILURE(args->get_IsSuccess(&success));
-                if (!success)
-                {
-                    COREWEBVIEW2_WEB_ERROR_STATUS webErrorStatus;
-                    CHECK_FAILURE(args->get_WebErrorStatus(&webErrorStatus));
-                    if (webErrorStatus == COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
-                    {
-                        // Do something here if you want to handle a specific error case.
-                        // In most cases this isn't necessary, because the WebView will
-                        // display its own error page automatically.
-                    }
-                }
-                EnableWindow(m_toolbar->cancelWindow, FALSE);
-                return S_OK;
-            })
-            .Get(),
-        &m_navigationCompletedToken));
-```
-
-#### remove_NavigationCompleted 
-
-Remove an event handler previously added with add_NavigationCompleted.
-
-> public HRESULT [remove_NavigationCompleted](#remove_navigationcompleted)(EventRegistrationToken token)
-
-#### add_FrameNavigationStarting 
-
-Add an event handler for the FrameNavigationStarting event.
-
-> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI. This will fire for redirects as well.
-
-```cpp
-    // Register a handler for the FrameNavigationStarting event.
-    // This handler will prevent a frame from navigating to a blocked domain.
-    CHECK_FAILURE(m_webView->add_FrameNavigationStarting(
-        Callback<ICoreWebView2NavigationStartingEventHandler>(
-            [this](ICoreWebView2* sender,
-                   ICoreWebView2NavigationStartingEventArgs* args) -> HRESULT
+    // Register a handler for the PermissionRequested event.
+    // This handler prompts the user to allow or deny the request.
+    CHECK_FAILURE(m_webView->add_PermissionRequested(
+        Callback<ICoreWebView2PermissionRequestedEventHandler>(
+            [this](
+                ICoreWebView2* sender,
+                ICoreWebView2PermissionRequestedEventArgs* args) -> HRESULT
     {
         wil::unique_cotaskmem_string uri;
-        CHECK_FAILURE(args->get_Uri(&uri));
+        COREWEBVIEW2_PERMISSION_KIND kind = COREWEBVIEW2_PERMISSION_KIND_UNKNOWN_PERMISSION;
+        BOOL userInitiated = FALSE;
 
-        if (ShouldBlockUri(uri.get()))
-        {
-            CHECK_FAILURE(args->put_Cancel(true));
-        }
+        CHECK_FAILURE(args->get_Uri(&uri));
+        CHECK_FAILURE(args->get_PermissionKind(&kind));
+        CHECK_FAILURE(args->get_IsUserInitiated(&userInitiated));
+
+        std::wstring message = L"Do you want to grant permission for ";
+        message += NameOfPermissionKind(kind);
+        message += L" to the website at ";
+        message += uri.get();
+        message += L"?\n\n";
+        message += (userInitiated
+            ? L"This request came from a user gesture."
+            : L"This request did not come from a user gesture.");
+
+        int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
+                                   MB_YESNOCANCEL | MB_ICONWARNING);
+
+        COREWEBVIEW2_PERMISSION_STATE state =
+              response == IDYES ? COREWEBVIEW2_PERMISSION_STATE_ALLOW
+            : response == IDNO  ? COREWEBVIEW2_PERMISSION_STATE_DENY
+            :                     COREWEBVIEW2_PERMISSION_STATE_DEFAULT;
+        CHECK_FAILURE(args->put_State(state));
+
         return S_OK;
-    }).Get(), &m_frameNavigationStartingToken));
+    }).Get(), &m_permissionRequestedToken));
 ```
 
-#### remove_FrameNavigationStarting 
+#### add_ProcessFailed 
 
-Remove an event handler previously added with add_FrameNavigationStarting.
+Add an event handler for the ProcessFailed event.
 
-> public HRESULT [remove_FrameNavigationStarting](#remove_framenavigationstarting)(EventRegistrationToken token)
+> public HRESULT [add_ProcessFailed](#add_processfailed)([ICoreWebView2ProcessFailedEventHandler](ICoreWebView2ProcessFailedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-#### add_FrameNavigationCompleted 
-
-Add an event handler for the FrameNavigationCompleted event.
-
-> public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
+Fires when a WebView process terminated unexpectedly or become unresponsive.
 
 ```cpp
-    // Register a handler for the FrameNavigationCompleted event.
-    // Check whether the navigation succeeded, and if not, do something.
-    CHECK_FAILURE(m_webView->add_FrameNavigationCompleted(
-        Callback<ICoreWebView2NavigationCompletedEventHandler>(
-            [this](ICoreWebView2* sender, ICoreWebView2NavigationCompletedEventArgs* args)
-                -> HRESULT {
-                BOOL success;
-                CHECK_FAILURE(args->get_IsSuccess(&success));
-                if (!success)
-                {
-                    COREWEBVIEW2_WEB_ERROR_STATUS webErrorStatus;
-                    CHECK_FAILURE(args->get_WebErrorStatus(&webErrorStatus));
-                    std::wstring error_msg = WebErrorStatusToString(webErrorStatus);
-                    MessageBox(nullptr,
-                       (std::wstring(L"IFrame navigation failed with the ") +
-                         L"give in error " + error_msg).c_str(),
-                       L"Navigation Failure", MB_OK);
-                    if (webErrorStatus == COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
-                    {
-                        // Do something here if you want to handle a specific error case.
-                        // In most cases this isn't necessary, because the WebView will
-                        // display its own error page automatically.
-                    }
-                }
-                return S_OK;
-            })
-            .Get(),
-        &m_frameNavigationCompletedToken));
+    // Register a handler for the ProcessFailed event.
+    // This handler checks if the browser process failed, and asks the user if
+    // they want to recreate the webview.
+    CHECK_FAILURE(m_webView->add_ProcessFailed(
+        Callback<ICoreWebView2ProcessFailedEventHandler>(
+            [this](ICoreWebView2* sender,
+                ICoreWebView2ProcessFailedEventArgs* args) -> HRESULT
+    {
+        COREWEBVIEW2_PROCESS_FAILED_KIND failureType;
+        CHECK_FAILURE(args->get_ProcessFailedKind(&failureType));
+        if (failureType == COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED)
+        {
+            int button = MessageBox(
+                m_appWindow->GetMainWindow(),
+                L"Browser process exited unexpectedly.  Recreate webview?",
+                L"Browser process exited",
+                MB_YESNO);
+            if (button == IDYES)
+            {
+                m_appWindow->ReinitializeWebView();
+            }
+        }
+        else if (failureType == COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_UNRESPONSIVE)
+        {
+            int button = MessageBox(
+                m_appWindow->GetMainWindow(),
+                L"Browser render process has stopped responding.  Recreate webview?",
+                L"Web page unresponsive", MB_YESNO);
+            if (button == IDYES)
+            {
+                m_appWindow->ReinitializeWebView();
+            }
+        }
+        else if (failureType == COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_EXITED)
+        {
+            int button = MessageBox(
+                m_appWindow->GetMainWindow(),
+                L"Browser render process exited unexpectedly. Reload page?",
+                L"Web page unresponsive", MB_YESNO);
+            if (button == IDYES)
+            {
+                CHECK_FAILURE(m_webView->Reload());
+            }
+        }
+        return S_OK;
+    }).Get(), &m_processFailedToken));
 ```
-
-#### remove_FrameNavigationCompleted 
-
-Remove an event handler previously added with add_FrameNavigationCompleted.
-
-> public HRESULT [remove_FrameNavigationCompleted](#remove_framenavigationcompleted)(EventRegistrationToken token)
 
 #### add_ScriptDialogOpening 
 
@@ -574,322 +606,34 @@ The event fires when a JavaScript dialog (alert, confirm, or prompt) will show f
     }).Get(), &m_scriptDialogOpeningToken));
 ```
 
-#### remove_ScriptDialogOpening 
+#### add_SourceChanged 
 
-Remove an event handler previously added with add_ScriptDialogOpening.
+SourceChanged fires when the Source property changes.
 
-> public HRESULT [remove_ScriptDialogOpening](#remove_scriptdialogopening)(EventRegistrationToken token)
+> public HRESULT [add_SourceChanged](#add_sourcechanged)([ICoreWebView2SourceChangedEventHandler](ICoreWebView2SourceChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-#### add_PermissionRequested 
-
-Add an event handler for the PermissionRequested event.
-
-> public HRESULT [add_PermissionRequested](#add_permissionrequested)([ICoreWebView2PermissionRequestedEventHandler](ICoreWebView2PermissionRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-Fires when content in a WebView requests permission to access some privileged resources.
-
+SourceChanged fires for navigating to a different site or fragment navigations. It will not fires for other types of navigations such as page reloads or history.pushState with the same URL as the current page. SourceChanged fires before ContentLoading for navigation to a new document. Add an event handler for the SourceChanged event. 
 ```cpp
-    // Register a handler for the PermissionRequested event.
-    // This handler prompts the user to allow or deny the request.
-    CHECK_FAILURE(m_webView->add_PermissionRequested(
-        Callback<ICoreWebView2PermissionRequestedEventHandler>(
-            [this](
-                ICoreWebView2* sender,
-                ICoreWebView2PermissionRequestedEventArgs* args) -> HRESULT
-    {
-        wil::unique_cotaskmem_string uri;
-        COREWEBVIEW2_PERMISSION_KIND kind = COREWEBVIEW2_PERMISSION_KIND_UNKNOWN_PERMISSION;
-        BOOL userInitiated = FALSE;
+    // Register a handler for the SourceChanged event.
+    // This handler will read the webview's source URI and update
+    // the app's address bar.
+    CHECK_FAILURE(m_webView->add_SourceChanged(
+        Callback<ICoreWebView2SourceChangedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2SourceChangedEventArgs* args)
+                -> HRESULT {
+                wil::unique_cotaskmem_string uri;
+                sender->get_Source(&uri);
+                if (wcscmp(uri.get(), L"about:blank") == 0)
+                {
+                    uri = wil::make_cotaskmem_string(L"");
+                }
+                SetWindowText(m_toolbar->addressBarWindow, uri.get());
 
-        CHECK_FAILURE(args->get_Uri(&uri));
-        CHECK_FAILURE(args->get_PermissionKind(&kind));
-        CHECK_FAILURE(args->get_IsUserInitiated(&userInitiated));
-
-        std::wstring message = L"Do you want to grant permission for ";
-        message += NameOfPermissionKind(kind);
-        message += L" to the website at ";
-        message += uri.get();
-        message += L"?\n\n";
-        message += (userInitiated
-            ? L"This request came from a user gesture."
-            : L"This request did not come from a user gesture.");
-
-        int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
-                                   MB_YESNOCANCEL | MB_ICONWARNING);
-
-        COREWEBVIEW2_PERMISSION_STATE state =
-              response == IDYES ? COREWEBVIEW2_PERMISSION_STATE_ALLOW
-            : response == IDNO  ? COREWEBVIEW2_PERMISSION_STATE_DENY
-            :                     COREWEBVIEW2_PERMISSION_STATE_DEFAULT;
-        CHECK_FAILURE(args->put_State(state));
-
-        return S_OK;
-    }).Get(), &m_permissionRequestedToken));
+                return S_OK;
+            })
+            .Get(),
+        &m_sourceChangedToken));
 ```
-
-#### remove_PermissionRequested 
-
-Remove an event handler previously added with add_PermissionRequested.
-
-> public HRESULT [remove_PermissionRequested](#remove_permissionrequested)(EventRegistrationToken token)
-
-#### add_ProcessFailed 
-
-Add an event handler for the ProcessFailed event.
-
-> public HRESULT [add_ProcessFailed](#add_processfailed)([ICoreWebView2ProcessFailedEventHandler](ICoreWebView2ProcessFailedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-Fires when a WebView process terminated unexpectedly or become unresponsive.
-
-```cpp
-    // Register a handler for the ProcessFailed event.
-    // This handler checks if the browser process failed, and asks the user if
-    // they want to recreate the webview.
-    CHECK_FAILURE(m_webView->add_ProcessFailed(
-        Callback<ICoreWebView2ProcessFailedEventHandler>(
-            [this](ICoreWebView2* sender,
-                ICoreWebView2ProcessFailedEventArgs* args) -> HRESULT
-    {
-        COREWEBVIEW2_PROCESS_FAILED_KIND failureType;
-        CHECK_FAILURE(args->get_ProcessFailedKind(&failureType));
-        if (failureType == COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED)
-        {
-            int button = MessageBox(
-                m_appWindow->GetMainWindow(),
-                L"Browser process exited unexpectedly.  Recreate webview?",
-                L"Browser process exited",
-                MB_YESNO);
-            if (button == IDYES)
-            {
-                m_appWindow->ReinitializeWebView();
-            }
-        }
-        else if (failureType == COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_UNRESPONSIVE)
-        {
-            int button = MessageBox(
-                m_appWindow->GetMainWindow(),
-                L"Browser render process has stopped responding.  Recreate webview?",
-                L"Web page unresponsive", MB_YESNO);
-            if (button == IDYES)
-            {
-                m_appWindow->ReinitializeWebView();
-            }
-        }
-        else if (failureType == COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_EXITED)
-        {
-            int button = MessageBox(
-                m_appWindow->GetMainWindow(),
-                L"Browser render process exited unexpectedly. Reload page?",
-                L"Web page unresponsive", MB_YESNO);
-            if (button == IDYES)
-            {
-                CHECK_FAILURE(m_webView->Reload());
-            }
-        }
-        return S_OK;
-    }).Get(), &m_processFailedToken));
-```
-
-#### remove_ProcessFailed 
-
-Remove an event handler previously added with add_ProcessFailed.
-
-> public HRESULT [remove_ProcessFailed](#remove_processfailed)(EventRegistrationToken token)
-
-#### AddScriptToExecuteOnDocumentCreated 
-
-Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
-
-> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript, [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md) * handler)
-
-The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
-
-Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
-
-```cpp
-// Prompt the user for some script and register it to execute whenever a new page loads.
-void ScriptComponent::AddInitializeScript()
-{
-    TextInputDialog dialog(
-        m_appWindow->GetMainWindow(),
-        L"Add Initialize Script",
-        L"Initialization Script:",
-        L"Enter the JavaScript code to run as the initialization script that "
-            L"runs before any script in the HTML document.",
-    // This example script stops child frames from opening new windows.  Because
-    // the initialization script runs before any script in the HTML document, we
-    // can trust the results of our checks on window.parent and window.top.
-        L"if (window.parent !== window.top) {\r\n"
-        L"    delete window.open;\r\n"
-        L"}");
-    if (dialog.confirmed)
-    {
-        m_webView->AddScriptToExecuteOnDocumentCreated(
-            dialog.input.c_str(),
-            Callback<ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler>(
-                [this](HRESULT error, PCWSTR id) -> HRESULT
-        {
-            m_lastInitializeScriptId = id;
-            MessageBox(nullptr, id, L"AddScriptToExecuteOnDocumentCreated Id", MB_OK);
-            return S_OK;
-        }).Get());
-
-    }
-}
-```
-
-#### RemoveScriptToExecuteOnDocumentCreated 
-
-Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
-
-> public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(LPCWSTR id)
-
-#### ExecuteScript 
-
-Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
-
-> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript, [ICoreWebView2ExecuteScriptCompletedHandler](ICoreWebView2ExecuteScriptCompletedHandler.md) * handler)
-
-This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
-
-```cpp
-// Prompt the user for some script and then execute it.
-void ScriptComponent::InjectScript()
-{
-    TextInputDialog dialog(
-        m_appWindow->GetMainWindow(),
-        L"Inject Script",
-        L"Enter script code:",
-        L"Enter the JavaScript code to run in the webview.",
-        L"window.getComputedStyle(document.body).backgroundColor");
-    if (dialog.confirmed)
-    {
-        m_webView->ExecuteScript(dialog.input.c_str(),
-            Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
-                [](HRESULT error, PCWSTR result) -> HRESULT
-        {
-            if (error != S_OK) {
-                ShowFailure(error, L"ExecuteScript failed");
-            }
-            MessageBox(nullptr, result, L"ExecuteScript Result", MB_OK);
-            return S_OK;
-        }).Get());
-    }
-}
-```
-
-#### CapturePreview 
-
-Capture an image of what WebView is displaying.
-
-> public HRESULT [CapturePreview](#capturepreview)([COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) imageFormat, IStream * imageStream, [ICoreWebView2CapturePreviewCompletedHandler](ICoreWebView2CapturePreviewCompletedHandler.md) * handler)
-
-Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
-
-```cpp
-// Show the user a file selection dialog, then save a screenshot of the WebView
-// to the selected file.
-void FileComponent::SaveScreenshot()
-{
-    OPENFILENAME openFileName = {};
-    openFileName.lStructSize = sizeof(openFileName);
-    openFileName.hwndOwner = nullptr;
-    openFileName.hInstance = nullptr;
-    WCHAR fileName[MAX_PATH] = L"WebView2_Screenshot.png";
-    openFileName.lpstrFile = fileName;
-    openFileName.lpstrFilter = L"PNG File\0*.png\0";
-    openFileName.nMaxFile = ARRAYSIZE(fileName);
-    openFileName.Flags = OFN_OVERWRITEPROMPT;
-
-    if (GetSaveFileName(&openFileName))
-    {
-        wil::com_ptr<IStream> stream;
-        CHECK_FAILURE(SHCreateStreamOnFileEx(
-            fileName, STGM_READWRITE | STGM_CREATE, FILE_ATTRIBUTE_NORMAL, TRUE, nullptr,
-            &stream));
-
-        HWND mainWindow = m_appWindow->GetMainWindow();
-
-        CHECK_FAILURE(m_webView->CapturePreview(
-            COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_PNG, stream.get(),
-            Callback<ICoreWebView2CapturePreviewCompletedHandler>(
-                [mainWindow](HRESULT error_code) -> HRESULT {
-                    CHECK_FAILURE(error_code);
-
-                    MessageBox(mainWindow, L"Preview Captured", L"Preview Captured", MB_OK);
-                    return S_OK;
-                })
-                .Get()));
-    }
-}
-```
-
-#### Reload 
-
-Reload the current page.
-
-> public HRESULT [Reload](#reload)()
-
-This is similar to navigating to the URI of current top level document including all navigation events firing and respecting any entries in the HTTP cache. But, the back/forward history will not be modified.
-
-#### PostWebMessageAsJson 
-
-Post the specified webMessage to the top level document in this WebView.
-
-> public HRESULT [PostWebMessageAsJson](#postwebmessageasjson)(LPCWSTR webMessageAsJson)
-
-The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following: 
-```
-window.chrome.webview.addEventListener('message', handler)
-window.chrome.webview.removeEventListener('message', handler)
-```
- The event args is an instance of `MessageEvent`. The ICoreWebView2Settings::IsWebMessageEnabled setting must be true or this method will fail with E_INVALIDARG. The event arg's data property is the webMessage string parameter parsed as a JSON string into a JavaScript object. The event arg's source property is a reference to the `window.chrome.webview` object. See SetWebMessageReceivedEventHandler for information on sending messages from the HTML document in the webview to the host. This message is sent asynchronously. If a navigation occurs before the message is posted to the page, then the message will not be sent.
-
-```cpp
-    // Setup the web message received event handler before navigating to
-    // ensure we don't miss any messages.
-    CHECK_FAILURE(m_webView->add_WebMessageReceived(
-        Microsoft::WRL::Callback<ICoreWebView2WebMessageReceivedEventHandler>(
-            [this](ICoreWebView2* sender, ICoreWebView2WebMessageReceivedEventArgs* args)
-    {
-        wil::unique_cotaskmem_string uri;
-        CHECK_FAILURE(args->get_Source(&uri));
-
-        // Always validate that the origin of the message is what you expect.
-        if (uri.get() != m_sampleUri)
-        {
-            return S_OK;
-        }
-        wil::unique_cotaskmem_string messageRaw;
-        CHECK_FAILURE(args->TryGetWebMessageAsString(&messageRaw));
-        std::wstring message = messageRaw.get();
-
-        if (message.compare(0, 13, L"SetTitleText ") == 0)
-        {
-            m_appWindow->SetTitleText(message.substr(13).c_str());
-        }
-        else if (message.compare(L"GetWindowBounds") == 0)
-        {
-            RECT bounds = m_appWindow->GetWindowBounds();
-            std::wstring reply =
-                L"{\"WindowBounds\":\"Left:" + std::to_wstring(bounds.left)
-                + L"\\nTop:" + std::to_wstring(bounds.top)
-                + L"\\nRight:" + std::to_wstring(bounds.right)
-                + L"\\nBottom:" + std::to_wstring(bounds.bottom)
-                + L"\"}";
-            CHECK_FAILURE(sender->PostWebMessageAsJson(reply.c_str()));
-        }
-        return S_OK;
-    }).Get(), &m_webMessageReceivedToken));
-```
-
-#### PostWebMessageAsString 
-
-This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
-
-> public HRESULT [PostWebMessageAsString](#postwebmessageasstring)(LPCWSTR webMessageAsString)
-
-This behaves in exactly the same manner as PostWebMessageAsJson but the `window.chrome.webview` message event arg's data property will be a string with the same value as webMessageAsString. Use this instead of PostWebMessageAsJson if you want to communicate via simple strings rather than JSON objects.
 
 #### add_WebMessageReceived 
 
@@ -957,225 +701,72 @@ The postMessage function is `void postMessage(object)` where object is any objec
     }).Get(), &m_webMessageReceivedToken));
 ```
 
-#### remove_WebMessageReceived 
+#### add_WebResourceRequested 
 
-Remove an event handler previously added with add_WebMessageReceived.
+Add an event handler for the WebResourceRequested event.
 
-> public HRESULT [remove_WebMessageReceived](#remove_webmessagereceived)(EventRegistrationToken token)
+> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](ICoreWebView2WebResourceRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-#### CallDevToolsProtocolMethod 
-
-Call an asynchronous DevToolsProtocol method.
-
-> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName, LPCWSTR parametersAsJson, [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md) * handler)
-
-See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
+Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
 
 ```cpp
-// Prompt the user for the name and parameters of a CDP method, then call it.
-void ScriptComponent::CallCdpMethod()
-{
-    TextInputDialog dialog(
-        m_appWindow->GetMainWindow(),
-        L"Call CDP Method",
-        L"CDP method name:",
-        L"Enter the CDP method name to call, followed by a space,\r\n"
-            L"followed by the parameters in JSON format.",
-        L"Runtime.evaluate {\"expression\":\"alert(\\\"test\\\")\"}");
-    if (dialog.confirmed)
-    {
-        size_t delimiterPos = dialog.input.find(L' ');
-        std::wstring methodName = dialog.input.substr(0, delimiterPos);
-        std::wstring methodParams =
-            (delimiterPos < dialog.input.size()
-                ? dialog.input.substr(delimiterPos + 1)
-                : L"{}");
-
-        m_webView->CallDevToolsProtocolMethod(
-            methodName.c_str(),
-            methodParams.c_str(),
-            Callback<ICoreWebView2CallDevToolsProtocolMethodCompletedHandler>(
-                [](HRESULT error, PCWSTR resultJson) -> HRESULT
-                {
-                    MessageBox(nullptr, resultJson, L"CDP Method Result", MB_OK);
-                    return S_OK;
-                }).Get());
-    }
-}
-```
-
-#### get_BrowserProcessId 
-
-The process id of the browser process that hosts the WebView.
-
-> public HRESULT [get_BrowserProcessId](#get_browserprocessid)(UINT32 * value)
-
-#### get_CanGoBack 
-
-Returns true if the webview can navigate to a previous page in the navigation history.
-
-> public HRESULT [get_CanGoBack](#get_cangoback)(BOOL * canGoBack)
-
-The HistoryChanged event will fire if CanGoBack changes value.
-
-#### get_CanGoForward 
-
-Returns true if the webview can navigate to a next page in the navigation history.
-
-> public HRESULT [get_CanGoForward](#get_cangoforward)(BOOL * canGoForward)
-
-The HistoryChanged event will fire if CanGoForward changes value.
-
-#### GoBack 
-
-Navigates the WebView to the previous page in the navigation history.
-
-> public HRESULT [GoBack](#goback)()
-
-#### GoForward 
-
-Navigates the WebView to the next page in the navigation history.
-
-> public HRESULT [GoForward](#goforward)()
-
-#### GetDevToolsProtocolEventReceiver 
-
-Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
-
-> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(LPCWSTR eventName, [ICoreWebView2DevToolsProtocolEventReceiver](ICoreWebView2DevToolsProtocolEventReceiver.md) ** receiver)
-
-The eventName parameter is the full name of the event in the format `{domain}.{event}`. See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list of DevTools Protocol events description, and event args.
-
-```cpp
-// Prompt the user to name a CDP event, and then subscribe to that event.
-void ScriptComponent::SubscribeToCdpEvent()
-{
-    TextInputDialog dialog(
-        m_appWindow->GetMainWindow(),
-        L"Subscribe to CDP Event",
-        L"CDP event name:",
-        L"Enter the name of the CDP event to subscribe to.\r\n"
-            L"You may also have to call the \"enable\" method of the\r\n"
-            L"event's domain to receive events (for example \"Log.enable\").\r\n",
-        L"Log.entryAdded");
-    if (dialog.confirmed)
-    {
-        std::wstring eventName = dialog.input;
-        wil::com_ptr<ICoreWebView2DevToolsProtocolEventReceiver> receiver;
-        CHECK_FAILURE(
-            m_webView->GetDevToolsProtocolEventReceiver(eventName.c_str(), &receiver));
-
-        // If we are already subscribed to this event, unsubscribe first.
-        auto preexistingToken = m_devToolsProtocolEventReceivedTokenMap.find(eventName);
-        if (preexistingToken != m_devToolsProtocolEventReceivedTokenMap.end())
+        if (m_blockImages)
         {
-            CHECK_FAILURE(receiver->remove_DevToolsProtocolEventReceived(
-                preexistingToken->second));
+            m_webView->AddWebResourceRequestedFilter(L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
+            CHECK_FAILURE(m_webView->add_WebResourceRequested(
+                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+                    [this](
+                        ICoreWebView2* sender,
+                        ICoreWebView2WebResourceRequestedEventArgs* args) {
+                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+                        CHECK_FAILURE(
+                            args->get_ResourceContext(&resourceContext));
+                        // Ensure that the type is image
+                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
+                        {
+                            return E_INVALIDARG;
+                        }
+                        // Override the response with an empty one to block the image.
+                        // If put_Response is not called, the request will continue as normal.
+                        wil::com_ptr<ICoreWebView2WebResourceResponse> response;
+                        CHECK_FAILURE(m_webViewEnvironment->CreateWebResourceResponse(
+                            nullptr, 403 /*NoContent*/, L"Blocked", L"", &response));
+                        CHECK_FAILURE(args->put_Response(response.get()));
+                        return S_OK;
+                    })
+                    .Get(),
+                &m_webResourceRequestedTokenForImageBlocking));
         }
-
-        CHECK_FAILURE(receiver->add_DevToolsProtocolEventReceived(
-            Callback<ICoreWebView2DevToolsProtocolEventReceivedEventHandler>(
-                [eventName](
-                    ICoreWebView2* sender,
-                    ICoreWebView2DevToolsProtocolEventReceivedEventArgs* args) -> HRESULT {
-                    wil::unique_cotaskmem_string parameterObjectAsJson;
-                    CHECK_FAILURE(args->get_ParameterObjectAsJson(&parameterObjectAsJson));
-                    MessageBox(
-                        nullptr, parameterObjectAsJson.get(),
-                        (L"CDP Event Fired: " + eventName).c_str(), MB_OK);
-                    return S_OK;
-                })
-                .Get(),
-            &m_devToolsProtocolEventReceivedTokenMap[eventName]));
-    }
-}
+        else
+        {
+            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
+                m_webResourceRequestedTokenForImageBlocking));
+        }
 ```
 
-#### Stop 
+#### add_WindowCloseRequested 
 
-Stop all navigations and pending resource fetches.
+Add an event handler for the WindowCloseRequested event.
 
-> public HRESULT [Stop](#stop)()
+> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)([ICoreWebView2WindowCloseRequestedEventHandler](ICoreWebView2WindowCloseRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
-Does not stop scripts.
-
-#### add_NewWindowRequested 
-
-Add an event handler for the NewWindowRequested event.
-
-> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([ICoreWebView2NewWindowRequestedEventHandler](ICoreWebView2NewWindowRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
+Fires when content inside the WebView requested to close the window, such as after window.close is called. The app should close the WebView and related app window if that makes sense to the app.
 
 ```cpp
-    // Register a handler for the NewWindowRequested event.
-    // This handler will defer the event, create a new app window, and then once the
-    // new window is ready, it'll provide that new window's WebView as the response to
-    // the request.
-    CHECK_FAILURE(m_webView->add_NewWindowRequested(
-        Callback<ICoreWebView2NewWindowRequestedEventHandler>(
-            [this](ICoreWebView2* sender, ICoreWebView2NewWindowRequestedEventArgs* args) {
-                wil::com_ptr<ICoreWebView2Deferral> deferral;
-                CHECK_FAILURE(args->GetDeferral(&deferral));
-                AppWindow* newAppWindow;
-
-                newAppWindow = new AppWindow(L"");
-
-                newAppWindow->m_isPopupWindow = true;
-                newAppWindow->m_onWebViewFirstInitialized = [args, deferral, newAppWindow]() {
-                    CHECK_FAILURE(args->put_NewWindow(newAppWindow->m_webView.get()));
-                    CHECK_FAILURE(args->put_Handled(TRUE));
-                    CHECK_FAILURE(deferral->Complete());
-                };
-
-                return S_OK;
-            })
-            .Get(),
+    // Register a handler for the WindowCloseRequested event.
+    // This handler will close the app window if it is not the main window.
+    CHECK_FAILURE(m_webView->add_WindowCloseRequested(
+        Callback<ICoreWebView2WindowCloseRequestedEventHandler>([this](
+                                                                    ICoreWebView2* sender,
+                                                                    IUnknown* args) {
+            if (m_isPopupWindow)
+            {
+                CloseAppWindow();
+            }
+            return S_OK;
+        }).Get(),
         nullptr));
 ```
-
-#### remove_NewWindowRequested 
-
-Remove an event handler previously added with add_NewWindowRequested.
-
-> public HRESULT [remove_NewWindowRequested](#remove_newwindowrequested)(EventRegistrationToken token)
-
-#### add_DocumentTitleChanged 
-
-Add an event handler for the DocumentTitleChanged event.
-
-> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([ICoreWebView2DocumentTitleChangedEventHandler](ICoreWebView2DocumentTitleChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
-
-```cpp
-    // Register a handler for the DocumentTitleChanged event.
-    // This handler just announces the new title on the window's title bar.
-    CHECK_FAILURE(m_webView->add_DocumentTitleChanged(
-        Callback<ICoreWebView2DocumentTitleChangedEventHandler>(
-            [this](ICoreWebView2* sender, IUnknown* args) -> HRESULT {
-                wil::unique_cotaskmem_string title;
-                CHECK_FAILURE(sender->get_DocumentTitle(&title));
-                SetWindowText(m_appWindow->GetMainWindow(), title.get());
-                return S_OK;
-            })
-            .Get(),
-        &m_documentTitleChangedToken));
-```
-
-#### remove_DocumentTitleChanged 
-
-Remove an event handler previously added with add_DocumentTitleChanged.
-
-> public HRESULT [remove_DocumentTitleChanged](#remove_documenttitlechanged)(EventRegistrationToken token)
-
-#### get_DocumentTitle 
-
-The title for the current top level document.
-
-> public HRESULT [get_DocumentTitle](#get_documenttitle)(LPWSTR * title)
-
-If the document has no explicit title or is otherwise empty, a default that may or may not match the URI of the document will be used.
 
 #### AddHostObjectToScript 
 
@@ -1312,114 +903,47 @@ For example, suppose you have a COM object with the following interface
         });
 ```
 
-#### RemoveHostObjectFromScript 
+#### AddScriptToExecuteOnDocumentCreated 
 
-Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
+Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
 
-> public HRESULT [RemoveHostObjectFromScript](#removehostobjectfromscript)(LPCWSTR name)
+> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript, [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md) * handler)
 
-While new access attempts will be denied, if the object is already obtained by JavaScript code in the WebView, the JavaScript code will continue to have access to that object. Calling this method for a name that is already removed or never added will fail.
+The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
-#### OpenDevToolsWindow 
-
-Opens the DevTools window for the current document in the WebView.
-
-> public HRESULT [OpenDevToolsWindow](#opendevtoolswindow)()
-
-Does nothing if called when the DevTools window is already open
-
-#### add_ContainsFullScreenElementChanged 
-
-Notifies when the ContainsFullScreenElement property changes.
-
-> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([ICoreWebView2ContainsFullScreenElementChangedEventHandler](ICoreWebView2ContainsFullScreenElementChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-This means that an HTML element inside the WebView is entering fullscreen to the size of the WebView or leaving fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of ContainsFullScreenElementChanged can then resize the WebView in response.
+Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
 
 ```cpp
-    // Register a handler for the ContainsFullScreenChanged event.
-    CHECK_FAILURE(m_webView->add_ContainsFullScreenElementChanged(
-        Callback<ICoreWebView2ContainsFullScreenElementChangedEventHandler>(
-            [this](ICoreWebView2* sender, IUnknown* args) -> HRESULT {
-                if (m_fullScreenAllowed)
-                {
-                    CHECK_FAILURE(
-                        sender->get_ContainsFullScreenElement(&m_containsFullscreenElement));
-                    if (m_containsFullscreenElement)
-                    {
-                        EnterFullScreen();
-                    }
-                    else
-                    {
-                        ExitFullScreen();
-                    }
-                }
-                return S_OK;
-            })
-            .Get(),
-        nullptr));
-```
-
-#### remove_ContainsFullScreenElementChanged 
-
-Remove an event handler previously added with the corresponding add_ event method.
-
-> public HRESULT [remove_ContainsFullScreenElementChanged](#remove_containsfullscreenelementchanged)(EventRegistrationToken token)
-
-#### get_ContainsFullScreenElement 
-
-Indicates if the WebView contains a fullscreen HTML element.
-
-> public HRESULT [get_ContainsFullScreenElement](#get_containsfullscreenelement)(BOOL * containsFullScreenElement)
-
-#### add_WebResourceRequested 
-
-Add an event handler for the WebResourceRequested event.
-
-> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](ICoreWebView2WebResourceRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
-
-```cpp
-        if (m_blockImages)
+// Prompt the user for some script and register it to execute whenever a new page loads.
+void ScriptComponent::AddInitializeScript()
+{
+    TextInputDialog dialog(
+        m_appWindow->GetMainWindow(),
+        L"Add Initialize Script",
+        L"Initialization Script:",
+        L"Enter the JavaScript code to run as the initialization script that "
+            L"runs before any script in the HTML document.",
+    // This example script stops child frames from opening new windows.  Because
+    // the initialization script runs before any script in the HTML document, we
+    // can trust the results of our checks on window.parent and window.top.
+        L"if (window.parent !== window.top) {\r\n"
+        L"    delete window.open;\r\n"
+        L"}");
+    if (dialog.confirmed)
+    {
+        m_webView->AddScriptToExecuteOnDocumentCreated(
+            dialog.input.c_str(),
+            Callback<ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler>(
+                [this](HRESULT error, PCWSTR id) -> HRESULT
         {
-            m_webView->AddWebResourceRequestedFilter(L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
-            CHECK_FAILURE(m_webView->add_WebResourceRequested(
-                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
-                    [this](
-                        ICoreWebView2* sender,
-                        ICoreWebView2WebResourceRequestedEventArgs* args) {
-                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
-                        CHECK_FAILURE(
-                            args->get_ResourceContext(&resourceContext));
-                        // Ensure that the type is image
-                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
-                        {
-                            return E_INVALIDARG;
-                        }
-                        // Override the response with an empty one to block the image.
-                        // If put_Response is not called, the request will continue as normal.
-                        wil::com_ptr<ICoreWebView2WebResourceResponse> response;
-                        CHECK_FAILURE(m_webViewEnvironment->CreateWebResourceResponse(
-                            nullptr, 403 /*NoContent*/, L"Blocked", L"", &response));
-                        CHECK_FAILURE(args->put_Response(response.get()));
-                        return S_OK;
-                    })
-                    .Get(),
-                &m_webResourceRequestedTokenForImageBlocking));
-        }
-        else
-        {
-            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
-                m_webResourceRequestedTokenForImageBlocking));
-        }
+            m_lastInitializeScriptId = id;
+            MessageBox(nullptr, id, L"AddScriptToExecuteOnDocumentCreated Id", MB_OK);
+            return S_OK;
+        }).Get());
+
+    }
+}
 ```
-
-#### remove_WebResourceRequested 
-
-Remove an event handler previously added with add_WebResourceRequested.
-
-> public HRESULT [remove_WebResourceRequested](#remove_webresourcerequested)(EventRegistrationToken token)
 
 #### AddWebResourceRequestedFilter 
 
@@ -1429,6 +953,504 @@ Adds a URI and resource context filter to the WebResourceRequested event.
 
 URI parameter can be a wildcard string ('': zero or more, '?': exactly one). nullptr is equivalent to L"". See COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum for description of resource context filters.
 
+#### CallDevToolsProtocolMethod 
+
+Call an asynchronous DevToolsProtocol method.
+
+> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName, LPCWSTR parametersAsJson, [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md) * handler)
+
+See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
+
+```cpp
+// Prompt the user for the name and parameters of a CDP method, then call it.
+void ScriptComponent::CallCdpMethod()
+{
+    TextInputDialog dialog(
+        m_appWindow->GetMainWindow(),
+        L"Call CDP Method",
+        L"CDP method name:",
+        L"Enter the CDP method name to call, followed by a space,\r\n"
+            L"followed by the parameters in JSON format.",
+        L"Runtime.evaluate {\"expression\":\"alert(\\\"test\\\")\"}");
+    if (dialog.confirmed)
+    {
+        size_t delimiterPos = dialog.input.find(L' ');
+        std::wstring methodName = dialog.input.substr(0, delimiterPos);
+        std::wstring methodParams =
+            (delimiterPos < dialog.input.size()
+                ? dialog.input.substr(delimiterPos + 1)
+                : L"{}");
+
+        m_webView->CallDevToolsProtocolMethod(
+            methodName.c_str(),
+            methodParams.c_str(),
+            Callback<ICoreWebView2CallDevToolsProtocolMethodCompletedHandler>(
+                [](HRESULT error, PCWSTR resultJson) -> HRESULT
+                {
+                    MessageBox(nullptr, resultJson, L"CDP Method Result", MB_OK);
+                    return S_OK;
+                }).Get());
+    }
+}
+```
+
+#### CapturePreview 
+
+Capture an image of what WebView is displaying.
+
+> public HRESULT [CapturePreview](#capturepreview)([COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) imageFormat, IStream * imageStream, [ICoreWebView2CapturePreviewCompletedHandler](ICoreWebView2CapturePreviewCompletedHandler.md) * handler)
+
+Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
+
+```cpp
+// Show the user a file selection dialog, then save a screenshot of the WebView
+// to the selected file.
+void FileComponent::SaveScreenshot()
+{
+    OPENFILENAME openFileName = {};
+    openFileName.lStructSize = sizeof(openFileName);
+    openFileName.hwndOwner = nullptr;
+    openFileName.hInstance = nullptr;
+    WCHAR fileName[MAX_PATH] = L"WebView2_Screenshot.png";
+    openFileName.lpstrFile = fileName;
+    openFileName.lpstrFilter = L"PNG File\0*.png\0";
+    openFileName.nMaxFile = ARRAYSIZE(fileName);
+    openFileName.Flags = OFN_OVERWRITEPROMPT;
+
+    if (GetSaveFileName(&openFileName))
+    {
+        wil::com_ptr<IStream> stream;
+        CHECK_FAILURE(SHCreateStreamOnFileEx(
+            fileName, STGM_READWRITE | STGM_CREATE, FILE_ATTRIBUTE_NORMAL, TRUE, nullptr,
+            &stream));
+
+        HWND mainWindow = m_appWindow->GetMainWindow();
+
+        CHECK_FAILURE(m_webView->CapturePreview(
+            COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_PNG, stream.get(),
+            Callback<ICoreWebView2CapturePreviewCompletedHandler>(
+                [mainWindow](HRESULT error_code) -> HRESULT {
+                    CHECK_FAILURE(error_code);
+
+                    MessageBox(mainWindow, L"Preview Captured", L"Preview Captured", MB_OK);
+                    return S_OK;
+                })
+                .Get()));
+    }
+}
+```
+
+#### ExecuteScript 
+
+Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
+
+> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript, [ICoreWebView2ExecuteScriptCompletedHandler](ICoreWebView2ExecuteScriptCompletedHandler.md) * handler)
+
+This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
+
+```cpp
+// Prompt the user for some script and then execute it.
+void ScriptComponent::InjectScript()
+{
+    TextInputDialog dialog(
+        m_appWindow->GetMainWindow(),
+        L"Inject Script",
+        L"Enter script code:",
+        L"Enter the JavaScript code to run in the webview.",
+        L"window.getComputedStyle(document.body).backgroundColor");
+    if (dialog.confirmed)
+    {
+        m_webView->ExecuteScript(dialog.input.c_str(),
+            Callback<ICoreWebView2ExecuteScriptCompletedHandler>(
+                [](HRESULT error, PCWSTR result) -> HRESULT
+        {
+            if (error != S_OK) {
+                ShowFailure(error, L"ExecuteScript failed");
+            }
+            MessageBox(nullptr, result, L"ExecuteScript Result", MB_OK);
+            return S_OK;
+        }).Get());
+    }
+}
+```
+
+#### get_BrowserProcessId 
+
+The process id of the browser process that hosts the WebView.
+
+> public HRESULT [get_BrowserProcessId](#get_browserprocessid)(UINT32 * value)
+
+#### get_CanGoBack 
+
+Returns true if the webview can navigate to a previous page in the navigation history.
+
+> public HRESULT [get_CanGoBack](#get_cangoback)(BOOL * canGoBack)
+
+The HistoryChanged event will fire if CanGoBack changes value.
+
+#### get_CanGoForward 
+
+Returns true if the webview can navigate to a next page in the navigation history.
+
+> public HRESULT [get_CanGoForward](#get_cangoforward)(BOOL * canGoForward)
+
+The HistoryChanged event will fire if CanGoForward changes value.
+
+#### get_ContainsFullScreenElement 
+
+Indicates if the WebView contains a fullscreen HTML element.
+
+> public HRESULT [get_ContainsFullScreenElement](#get_containsfullscreenelement)(BOOL * containsFullScreenElement)
+
+#### get_DocumentTitle 
+
+The title for the current top level document.
+
+> public HRESULT [get_DocumentTitle](#get_documenttitle)(LPWSTR * title)
+
+If the document has no explicit title or is otherwise empty, a default that may or may not match the URI of the document will be used.
+
+#### get_Settings 
+
+The [ICoreWebView2Settings](ICoreWebView2Settings.md) object contains various modifiable settings for the running WebView.
+
+> public HRESULT [get_Settings](#get_settings)([ICoreWebView2Settings](ICoreWebView2Settings.md) ** settings)
+
+#### get_Source 
+
+The URI of the current top level document.
+
+> public HRESULT [get_Source](#get_source)(LPWSTR * uri)
+
+This value potentially changes as a part of the SourceChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
+
+```cpp
+    // Register a handler for the SourceChanged event.
+    // This handler will read the webview's source URI and update
+    // the app's address bar.
+    CHECK_FAILURE(m_webView->add_SourceChanged(
+        Callback<ICoreWebView2SourceChangedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2SourceChangedEventArgs* args)
+                -> HRESULT {
+                wil::unique_cotaskmem_string uri;
+                sender->get_Source(&uri);
+                if (wcscmp(uri.get(), L"about:blank") == 0)
+                {
+                    uri = wil::make_cotaskmem_string(L"");
+                }
+                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+
+                return S_OK;
+            })
+            .Get(),
+        &m_sourceChangedToken));
+```
+
+#### GetDevToolsProtocolEventReceiver 
+
+Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
+
+> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(LPCWSTR eventName, [ICoreWebView2DevToolsProtocolEventReceiver](ICoreWebView2DevToolsProtocolEventReceiver.md) ** receiver)
+
+The eventName parameter is the full name of the event in the format `{domain}.{event}`. See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list of DevTools Protocol events description, and event args.
+
+```cpp
+// Prompt the user to name a CDP event, and then subscribe to that event.
+void ScriptComponent::SubscribeToCdpEvent()
+{
+    TextInputDialog dialog(
+        m_appWindow->GetMainWindow(),
+        L"Subscribe to CDP Event",
+        L"CDP event name:",
+        L"Enter the name of the CDP event to subscribe to.\r\n"
+            L"You may also have to call the \"enable\" method of the\r\n"
+            L"event's domain to receive events (for example \"Log.enable\").\r\n",
+        L"Log.entryAdded");
+    if (dialog.confirmed)
+    {
+        std::wstring eventName = dialog.input;
+        wil::com_ptr<ICoreWebView2DevToolsProtocolEventReceiver> receiver;
+        CHECK_FAILURE(
+            m_webView->GetDevToolsProtocolEventReceiver(eventName.c_str(), &receiver));
+
+        // If we are already subscribed to this event, unsubscribe first.
+        auto preexistingToken = m_devToolsProtocolEventReceivedTokenMap.find(eventName);
+        if (preexistingToken != m_devToolsProtocolEventReceivedTokenMap.end())
+        {
+            CHECK_FAILURE(receiver->remove_DevToolsProtocolEventReceived(
+                preexistingToken->second));
+        }
+
+        CHECK_FAILURE(receiver->add_DevToolsProtocolEventReceived(
+            Callback<ICoreWebView2DevToolsProtocolEventReceivedEventHandler>(
+                [eventName](
+                    ICoreWebView2* sender,
+                    ICoreWebView2DevToolsProtocolEventReceivedEventArgs* args) -> HRESULT {
+                    wil::unique_cotaskmem_string parameterObjectAsJson;
+                    CHECK_FAILURE(args->get_ParameterObjectAsJson(&parameterObjectAsJson));
+                    MessageBox(
+                        nullptr, parameterObjectAsJson.get(),
+                        (L"CDP Event Fired: " + eventName).c_str(), MB_OK);
+                    return S_OK;
+                })
+                .Get(),
+            &m_devToolsProtocolEventReceivedTokenMap[eventName]));
+    }
+}
+```
+
+#### GoBack 
+
+Navigates the WebView to the previous page in the navigation history.
+
+> public HRESULT [GoBack](#goback)()
+
+#### GoForward 
+
+Navigates the WebView to the next page in the navigation history.
+
+> public HRESULT [GoForward](#goforward)()
+
+#### Navigate 
+
+Cause a navigation of the top level document to the specified URI.
+
+> public HRESULT [Navigate](#navigate)(LPCWSTR uri)
+
+See the navigation events for more information. Note that this starts a navigation and the corresponding NavigationStarting event will fire sometime after this Navigate call completes.
+
+```cpp
+void ControlComponent::NavigateToAddressBar()
+{
+    int length = GetWindowTextLength(m_toolbar->addressBarWindow);
+    std::wstring uri(length, 0);
+    PWSTR buffer = const_cast<PWSTR>(uri.data());
+    GetWindowText(m_toolbar->addressBarWindow, buffer, length + 1);
+
+    HRESULT hr = m_webView->Navigate(uri.c_str());
+    if (hr == E_INVALIDARG)
+    {
+        // An invalid URI was provided.
+        if (uri.find(L' ') == std::wstring::npos
+            && uri.find(L'.') != std::wstring::npos)
+        {
+            // If it contains a dot and no spaces, try tacking http:// on the front.
+            hr = m_webView->Navigate((L"http://" + uri).c_str());
+        }
+        else
+        {
+            // Otherwise treat it as a web search. We aren't bothering to escape
+            // URL syntax characters such as & and #
+            hr = m_webView->Navigate((L"https://bing.com/search?q=" + uri).c_str());
+        }
+    }
+    if (hr != E_INVALIDARG) {
+        CHECK_FAILURE(hr);
+    }
+}
+```
+
+#### NavigateToString 
+
+Initiates a navigation to htmlContent as source HTML of a new document.
+
+> public HRESULT [NavigateToString](#navigatetostring)(LPCWSTR htmlContent)
+
+The htmlContent parameter may not be larger than 2 MB of characters. The origin of the new page will be about:blank.
+
+```cpp
+            static const PCWSTR htmlContent =
+              L"<h1>Domain Blocked</h1>"
+              L"<p>You've attempted to navigate to a domain in the blocked "
+              L"sites list. Press back to return to the previous page.</p>";
+            CHECK_FAILURE(sender->NavigateToString(htmlContent));
+```
+
+#### OpenDevToolsWindow 
+
+Opens the DevTools window for the current document in the WebView.
+
+> public HRESULT [OpenDevToolsWindow](#opendevtoolswindow)()
+
+Does nothing if called when the DevTools window is already open
+
+#### PostWebMessageAsJson 
+
+Post the specified webMessage to the top level document in this WebView.
+
+> public HRESULT [PostWebMessageAsJson](#postwebmessageasjson)(LPCWSTR webMessageAsJson)
+
+The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following: 
+```
+window.chrome.webview.addEventListener('message', handler)
+window.chrome.webview.removeEventListener('message', handler)
+```
+ The event args is an instance of `MessageEvent`. The ICoreWebView2Settings::IsWebMessageEnabled setting must be true or this method will fail with E_INVALIDARG. The event arg's data property is the webMessage string parameter parsed as a JSON string into a JavaScript object. The event arg's source property is a reference to the `window.chrome.webview` object. See SetWebMessageReceivedEventHandler for information on sending messages from the HTML document in the webview to the host. This message is sent asynchronously. If a navigation occurs before the message is posted to the page, then the message will not be sent.
+
+```cpp
+    // Setup the web message received event handler before navigating to
+    // ensure we don't miss any messages.
+    CHECK_FAILURE(m_webView->add_WebMessageReceived(
+        Microsoft::WRL::Callback<ICoreWebView2WebMessageReceivedEventHandler>(
+            [this](ICoreWebView2* sender, ICoreWebView2WebMessageReceivedEventArgs* args)
+    {
+        wil::unique_cotaskmem_string uri;
+        CHECK_FAILURE(args->get_Source(&uri));
+
+        // Always validate that the origin of the message is what you expect.
+        if (uri.get() != m_sampleUri)
+        {
+            return S_OK;
+        }
+        wil::unique_cotaskmem_string messageRaw;
+        CHECK_FAILURE(args->TryGetWebMessageAsString(&messageRaw));
+        std::wstring message = messageRaw.get();
+
+        if (message.compare(0, 13, L"SetTitleText ") == 0)
+        {
+            m_appWindow->SetTitleText(message.substr(13).c_str());
+        }
+        else if (message.compare(L"GetWindowBounds") == 0)
+        {
+            RECT bounds = m_appWindow->GetWindowBounds();
+            std::wstring reply =
+                L"{\"WindowBounds\":\"Left:" + std::to_wstring(bounds.left)
+                + L"\\nTop:" + std::to_wstring(bounds.top)
+                + L"\\nRight:" + std::to_wstring(bounds.right)
+                + L"\\nBottom:" + std::to_wstring(bounds.bottom)
+                + L"\"}";
+            CHECK_FAILURE(sender->PostWebMessageAsJson(reply.c_str()));
+        }
+        return S_OK;
+    }).Get(), &m_webMessageReceivedToken));
+```
+
+#### PostWebMessageAsString 
+
+This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
+
+> public HRESULT [PostWebMessageAsString](#postwebmessageasstring)(LPCWSTR webMessageAsString)
+
+This behaves in exactly the same manner as PostWebMessageAsJson but the `window.chrome.webview` message event arg's data property will be a string with the same value as webMessageAsString. Use this instead of PostWebMessageAsJson if you want to communicate via simple strings rather than JSON objects.
+
+#### Reload 
+
+Reload the current page.
+
+> public HRESULT [Reload](#reload)()
+
+This is similar to navigating to the URI of current top level document including all navigation events firing and respecting any entries in the HTTP cache. But, the back/forward history will not be modified.
+
+#### remove_ContainsFullScreenElementChanged 
+
+Remove an event handler previously added with the corresponding add_ event method.
+
+> public HRESULT [remove_ContainsFullScreenElementChanged](#remove_containsfullscreenelementchanged)(EventRegistrationToken token)
+
+#### remove_ContentLoading 
+
+Remove an event handler previously added with add_ContentLoading.
+
+> public HRESULT [remove_ContentLoading](#remove_contentloading)(EventRegistrationToken token)
+
+#### remove_DocumentTitleChanged 
+
+Remove an event handler previously added with add_DocumentTitleChanged.
+
+> public HRESULT [remove_DocumentTitleChanged](#remove_documenttitlechanged)(EventRegistrationToken token)
+
+#### remove_FrameNavigationCompleted 
+
+Remove an event handler previously added with add_FrameNavigationCompleted.
+
+> public HRESULT [remove_FrameNavigationCompleted](#remove_framenavigationcompleted)(EventRegistrationToken token)
+
+#### remove_FrameNavigationStarting 
+
+Remove an event handler previously added with add_FrameNavigationStarting.
+
+> public HRESULT [remove_FrameNavigationStarting](#remove_framenavigationstarting)(EventRegistrationToken token)
+
+#### remove_HistoryChanged 
+
+Remove an event handler previously added with add_HistoryChanged.
+
+> public HRESULT [remove_HistoryChanged](#remove_historychanged)(EventRegistrationToken token)
+
+#### remove_NavigationCompleted 
+
+Remove an event handler previously added with add_NavigationCompleted.
+
+> public HRESULT [remove_NavigationCompleted](#remove_navigationcompleted)(EventRegistrationToken token)
+
+#### remove_NavigationStarting 
+
+Remove an event handler previously added with add_NavigationStarting.
+
+> public HRESULT [remove_NavigationStarting](#remove_navigationstarting)(EventRegistrationToken token)
+
+#### remove_NewWindowRequested 
+
+Remove an event handler previously added with add_NewWindowRequested.
+
+> public HRESULT [remove_NewWindowRequested](#remove_newwindowrequested)(EventRegistrationToken token)
+
+#### remove_PermissionRequested 
+
+Remove an event handler previously added with add_PermissionRequested.
+
+> public HRESULT [remove_PermissionRequested](#remove_permissionrequested)(EventRegistrationToken token)
+
+#### remove_ProcessFailed 
+
+Remove an event handler previously added with add_ProcessFailed.
+
+> public HRESULT [remove_ProcessFailed](#remove_processfailed)(EventRegistrationToken token)
+
+#### remove_ScriptDialogOpening 
+
+Remove an event handler previously added with add_ScriptDialogOpening.
+
+> public HRESULT [remove_ScriptDialogOpening](#remove_scriptdialogopening)(EventRegistrationToken token)
+
+#### remove_SourceChanged 
+
+Remove an event handler previously added with add_SourceChanged.
+
+> public HRESULT [remove_SourceChanged](#remove_sourcechanged)(EventRegistrationToken token)
+
+#### remove_WebMessageReceived 
+
+Remove an event handler previously added with add_WebMessageReceived.
+
+> public HRESULT [remove_WebMessageReceived](#remove_webmessagereceived)(EventRegistrationToken token)
+
+#### remove_WebResourceRequested 
+
+Remove an event handler previously added with add_WebResourceRequested.
+
+> public HRESULT [remove_WebResourceRequested](#remove_webresourcerequested)(EventRegistrationToken token)
+
+#### remove_WindowCloseRequested 
+
+Remove an event handler previously added with add_WindowCloseRequested.
+
+> public HRESULT [remove_WindowCloseRequested](#remove_windowcloserequested)(EventRegistrationToken token)
+
+#### RemoveHostObjectFromScript 
+
+Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
+
+> public HRESULT [RemoveHostObjectFromScript](#removehostobjectfromscript)(LPCWSTR name)
+
+While new access attempts will be denied, if the object is already obtained by JavaScript code in the WebView, the JavaScript code will continue to have access to that object. Calling this method for a name that is already removed or never added will fail.
+
+#### RemoveScriptToExecuteOnDocumentCreated 
+
+Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
+
+> public HRESULT [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(LPCWSTR id)
+
 #### RemoveWebResourceRequestedFilter 
 
 Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
@@ -1437,35 +1459,13 @@ Removes a matching WebResource filter that was previously added for the WebResou
 
 If the same filter was added multiple times, then it will need to be removed as many times as it was added for the removal to be effective. Returns E_INVALIDARG for a filter that was never added.
 
-#### add_WindowCloseRequested 
+#### Stop 
 
-Add an event handler for the WindowCloseRequested event.
+Stop all navigations and pending resource fetches.
 
-> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)([ICoreWebView2WindowCloseRequestedEventHandler](ICoreWebView2WindowCloseRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [Stop](#stop)()
 
-Fires when content inside the WebView requested to close the window, such as after window.close is called. The app should close the WebView and related app window if that makes sense to the app.
-
-```cpp
-    // Register a handler for the WindowCloseRequested event.
-    // This handler will close the app window if it is not the main window.
-    CHECK_FAILURE(m_webView->add_WindowCloseRequested(
-        Callback<ICoreWebView2WindowCloseRequestedEventHandler>([this](
-                                                                    ICoreWebView2* sender,
-                                                                    IUnknown* args) {
-            if (m_isPopupWindow)
-            {
-                CloseAppWindow();
-            }
-            return S_OK;
-        }).Get(),
-        nullptr));
-```
-
-#### remove_WindowCloseRequested 
-
-Remove an event handler previously added with add_WindowCloseRequested.
-
-> public HRESULT [remove_WindowCloseRequested](#remove_windowcloserequested)(EventRegistrationToken token)
+Does not stop scripts.
 
 #### COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT 
 
@@ -1478,30 +1478,30 @@ Image format used by the ICoreWebView2::CapturePreview method.
 COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_PNG            | PNG image format.
 COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT_JPEG            | JPEG image format.
 
-#### COREWEBVIEW2_SCRIPT_DIALOG_KIND 
+#### COREWEBVIEW2_KEY_EVENT_KIND 
 
-Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
+The type of key event that triggered an AcceleratorKeyPressed event.
 
-> enum [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-COREWEBVIEW2_SCRIPT_DIALOG_KIND_ALERT            | A dialog invoked via the window.alert JavaScript function.
-COREWEBVIEW2_SCRIPT_DIALOG_KIND_CONFIRM            | A dialog invoked via the window.confirm JavaScript function.
-COREWEBVIEW2_SCRIPT_DIALOG_KIND_PROMPT            | A dialog invoked via the window.prompt JavaScript function.
-COREWEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD            | A dialog invoked via the beforeunload JavaScript event.
-
-#### COREWEBVIEW2_PROCESS_FAILED_KIND 
-
-Kind of process failure used in the ICoreWebView2ProcessFailedEventHandler interface.
-
-> enum [COREWEBVIEW2_PROCESS_FAILED_KIND](#corewebview2_process_failed_kind)
+> enum [COREWEBVIEW2_KEY_EVENT_KIND](#corewebview2_key_event_kind)
 
  Values                         | Descriptions
 --------------------------------|---------------------------------------------
-COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED            | Indicates the browser process terminated unexpectedly.
-COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_EXITED            | Indicates the render process terminated unexpectedly.
-COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_UNRESPONSIVE            | Indicates the render process becomes unresponsive.
+COREWEBVIEW2_KEY_EVENT_KIND_KEY_DOWN            | Correspond to window message WM_KEYDOWN.
+COREWEBVIEW2_KEY_EVENT_KIND_KEY_UP            | Correspond to window message WM_KEYUP.
+COREWEBVIEW2_KEY_EVENT_KIND_SYSTEM_KEY_DOWN            | Correspond to window message WM_SYSKEYDOWN.
+COREWEBVIEW2_KEY_EVENT_KIND_SYSTEM_KEY_UP            | Correspond to window message WM_SYSKEYUP.
+
+#### COREWEBVIEW2_MOVE_FOCUS_REASON 
+
+Reason for moving focus.
+
+> enum [COREWEBVIEW2_MOVE_FOCUS_REASON](#corewebview2_move_focus_reason)
+
+ Values                         | Descriptions
+--------------------------------|---------------------------------------------
+COREWEBVIEW2_MOVE_FOCUS_REASON_PROGRAMMATIC            | Code setting focus into WebView.
+COREWEBVIEW2_MOVE_FOCUS_REASON_NEXT            | Moving focus due to Tab traversal forward.
+COREWEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS            | Moving focus due to Tab traversal backward.
 
 #### COREWEBVIEW2_PERMISSION_KIND 
 
@@ -1530,6 +1530,39 @@ Response to a permission request.
 COREWEBVIEW2_PERMISSION_STATE_DEFAULT            | Use default browser behavior, which normally prompt users for decision.
 COREWEBVIEW2_PERMISSION_STATE_ALLOW            | Grant the permission request.
 COREWEBVIEW2_PERMISSION_STATE_DENY            | Deny the permission request.
+
+#### COREWEBVIEW2_PHYSICAL_KEY_STATUS 
+
+A structure representing the information packed into the LPARAM given to a Win32 key event.
+
+> typedef [COREWEBVIEW2_PHYSICAL_KEY_STATUS](#corewebview2_physical_key_status)
+
+See the documentation for WM_KEYDOWN for details at [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown)
+
+#### COREWEBVIEW2_PROCESS_FAILED_KIND 
+
+Kind of process failure used in the ICoreWebView2ProcessFailedEventHandler interface.
+
+> enum [COREWEBVIEW2_PROCESS_FAILED_KIND](#corewebview2_process_failed_kind)
+
+ Values                         | Descriptions
+--------------------------------|---------------------------------------------
+COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED            | Indicates the browser process terminated unexpectedly.
+COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_EXITED            | Indicates the render process terminated unexpectedly.
+COREWEBVIEW2_PROCESS_FAILED_KIND_RENDER_PROCESS_UNRESPONSIVE            | Indicates the render process becomes unresponsive.
+
+#### COREWEBVIEW2_SCRIPT_DIALOG_KIND 
+
+Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
+
+> enum [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind)
+
+ Values                         | Descriptions
+--------------------------------|---------------------------------------------
+COREWEBVIEW2_SCRIPT_DIALOG_KIND_ALERT            | A dialog invoked via the window.alert JavaScript function.
+COREWEBVIEW2_SCRIPT_DIALOG_KIND_CONFIRM            | A dialog invoked via the window.confirm JavaScript function.
+COREWEBVIEW2_SCRIPT_DIALOG_KIND_PROMPT            | A dialog invoked via the window.prompt JavaScript function.
+COREWEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD            | A dialog invoked via the beforeunload JavaScript event.
 
 #### COREWEBVIEW2_WEB_ERROR_STATUS 
 
@@ -1582,37 +1615,4 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Signed HTTP Excha
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Ping requests.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | CSP Violation Reports.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Other resources.
-
-#### COREWEBVIEW2_MOVE_FOCUS_REASON 
-
-Reason for moving focus.
-
-> enum [COREWEBVIEW2_MOVE_FOCUS_REASON](#corewebview2_move_focus_reason)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-COREWEBVIEW2_MOVE_FOCUS_REASON_PROGRAMMATIC            | Code setting focus into WebView.
-COREWEBVIEW2_MOVE_FOCUS_REASON_NEXT            | Moving focus due to Tab traversal forward.
-COREWEBVIEW2_MOVE_FOCUS_REASON_PREVIOUS            | Moving focus due to Tab traversal backward.
-
-#### COREWEBVIEW2_KEY_EVENT_KIND 
-
-The type of key event that triggered an AcceleratorKeyPressed event.
-
-> enum [COREWEBVIEW2_KEY_EVENT_KIND](#corewebview2_key_event_kind)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-COREWEBVIEW2_KEY_EVENT_KIND_KEY_DOWN            | Correspond to window message WM_KEYDOWN.
-COREWEBVIEW2_KEY_EVENT_KIND_KEY_UP            | Correspond to window message WM_KEYUP.
-COREWEBVIEW2_KEY_EVENT_KIND_SYSTEM_KEY_DOWN            | Correspond to window message WM_SYSKEYDOWN.
-COREWEBVIEW2_KEY_EVENT_KIND_SYSTEM_KEY_UP            | Correspond to window message WM_SYSKEYUP.
-
-#### COREWEBVIEW2_PHYSICAL_KEY_STATUS 
-
-A structure representing the information packed into the LPARAM given to a Win32 key event.
-
-> typedef [COREWEBVIEW2_PHYSICAL_KEY_STATUS](#corewebview2_physical_key_status)
-
-See the documentation for WM_KEYDOWN for details at [https://docs.microsoft.com/windows/win32/inputdev/wm-keydown](https://docs.microsoft.com/windows/win32/inputdev/wm-keydown)
 

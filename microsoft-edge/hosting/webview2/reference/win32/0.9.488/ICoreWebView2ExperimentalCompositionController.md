@@ -26,29 +26,62 @@ This interface is an extension of the ICoreWebView2Controller interface to suppo
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_UIAProvider](#get_uiaprovider) | Returns the UI Automation Provider for the WebView.
-[get_RootVisualTarget](#get_rootvisualtarget) | The RootVisualTarget is a visual in the hosting app's visual tree.
-[put_RootVisualTarget](#put_rootvisualtarget) | Set the RootVisualTarget property.
-[SendMouseInput](#sendmouseinput) | If eventKind is COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL or COREWEBVIEW2_MOUSE_EVENT_KIND_WHEEL, then mouseData specifies the amount of wheel movement.
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
-[SendPointerInput](#sendpointerinput) | SendPointerInput accepts touch or pen pointer input of types defined in COREWEBVIEW2_POINTER_EVENT_KIND.
-[get_Cursor](#get_cursor) | The current cursor that WebView thinks it should be.
 [add_CursorChanged](#add_cursorchanged) | Add an event handler for the CursorChanged event.
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
+[get_Cursor](#get_cursor) | The current cursor that WebView thinks it should be.
+[get_RootVisualTarget](#get_rootvisualtarget) | The RootVisualTarget is a visual in the hosting app's visual tree.
+[get_UIAProvider](#get_uiaprovider) | Returns the UI Automation Provider for the WebView.
+[put_RootVisualTarget](#put_rootvisualtarget) | Set the RootVisualTarget property.
 [remove_CursorChanged](#remove_cursorchanged) | Remove an event handler previously added with add_CursorChanged.
+[SendMouseInput](#sendmouseinput) | If eventKind is COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL or COREWEBVIEW2_MOUSE_EVENT_KIND_WHEEL, then mouseData specifies the amount of wheel movement.
+[SendPointerInput](#sendpointerinput) | SendPointerInput accepts touch or pen pointer input of types defined in COREWEBVIEW2_POINTER_EVENT_KIND.
+[COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) | Matrix that represents a 3D transform.
 [COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) | Mouse event type used by SendMouseInput to convey the type of mouse event being sent to WebView.
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | Mouse event virtual keys associated with a COREWEBVIEW2_MOUSE_EVENT_KIND for SendMouseInput.
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
-[COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) | Matrix that represents a 3D transform.
 
 An object implementing the ICoreWebView2ExperimentalCompositionController interface will also implement ICoreWebView2Controller. Callers are expected to use ICoreWebView2Controller for resizing, visibility, focus, and so on, and then use ICoreWebView2ExperimentalCompositionController to connect to a composition tree and provide input meant for the WebView.
 
 ## Members
 
-#### get_UIAProvider 
+#### add_CursorChanged 
 
-Returns the UI Automation Provider for the WebView.
+Add an event handler for the CursorChanged event.
 
-> public HRESULT [get_UIAProvider](#get_uiaprovider)(IUnknown ** provider)
+> public HRESULT [add_CursorChanged](#add_cursorchanged)([ICoreWebView2ExperimentalCursorChangedEventHandler](ICoreWebView2ExperimentalCursorChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+The event fires when WebView thinks the cursor should be changed. For example, when the mouse cursor is currently the default cursor but is then moved over text, it may try to change to the IBeam cursor.
+
+```cpp
+        // Register a handler for the CursorChanged event.
+        CHECK_FAILURE(m_compositionController->add_CursorChanged(
+            Callback<ICoreWebView2ExperimentalCursorChangedEventHandler>(
+                [this](ICoreWebView2ExperimentalCompositionController* sender,
+                       IUnknown* args) -> HRESULT {
+                    HCURSOR cursor;
+                    CHECK_FAILURE(sender->get_Cursor(&cursor));
+                    SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
+                    return S_OK;
+                })
+                .Get(),
+            &m_cursorChangedToken));
+```
+
+#### CreateCoreWebView2PointerInfoFromPointerId 
+
+A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
+
+> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct COREWEBVIEW2_MATRIX_4X4 transform, [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
+
+parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The COREWEBVIEW2_MATRIX_4X4 is the transform from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
+
+#### get_Cursor 
+
+The current cursor that WebView thinks it should be.
+
+> public HRESULT [get_Cursor](#get_cursor)(HCURSOR * cursor)
+
+The cursor should be set in WM_SETCURSOR through ::SetCursor or set on the corresponding parent/ancestor HWND of the WebView through ::SetClassLongPtr. The HCURSOR can be freed so CopyCursor/DestroyCursor is recommended to keep your own copy if you are doing more than immediately setting the cursor.
 
 #### get_RootVisualTarget 
 
@@ -58,11 +91,23 @@ The RootVisualTarget is a visual in the hosting app's visual tree.
 
 This visual is where the WebView will connect its visual tree. The app uses this visual to position the WebView within the app. The app still needs to use the Bounds property to size the WebView. The RootVisualTarget property can be an IDCompositionVisual or a Windows::UI::Composition::ContainerVisual. WebView will connect its visual tree to the provided visual before returning from the property setter. The app needs to commit on its device setting the RootVisualTarget property. The RootVisualTarget property supports being set to nullptr to disconnect the WebView from the app's visual tree.
 
+#### get_UIAProvider 
+
+Returns the UI Automation Provider for the WebView.
+
+> public HRESULT [get_UIAProvider](#get_uiaprovider)(IUnknown ** provider)
+
 #### put_RootVisualTarget 
 
 Set the RootVisualTarget property.
 
 > public HRESULT [put_RootVisualTarget](#put_rootvisualtarget)(IUnknown * target)
+
+#### remove_CursorChanged 
+
+Remove an event handler previously added with add_CursorChanged.
+
+> public HRESULT [remove_CursorChanged](#remove_cursorchanged)(EventRegistrationToken token)
 
 #### SendMouseInput 
 
@@ -173,14 +218,6 @@ bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 }
 ```
 
-#### CreateCoreWebView2PointerInfoFromPointerId 
-
-A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
-
-> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) transform, [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
-
-parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) is the transfrom from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
-
 #### SendPointerInput 
 
 SendPointerInput accepts touch or pen pointer input of types defined in COREWEBVIEW2_POINTER_EVENT_KIND.
@@ -189,42 +226,13 @@ SendPointerInput accepts touch or pen pointer input of types defined in COREWEBV
 
 Any pointer input from the system must be converted into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) first.
 
-#### get_Cursor 
+#### COREWEBVIEW2_MATRIX_4X4 
 
-The current cursor that WebView thinks it should be.
+Matrix that represents a 3D transform.
 
-> public HRESULT [get_Cursor](#get_cursor)(HCURSOR * cursor)
+> typedef [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4)
 
-The cursor should be set in WM_SETCURSOR through ::SetCursor or set on the corresponding parent/ancestor HWND of the WebView through ::SetClassLongPtr. The HCURSOR can be freed so CopyCursor/DestroyCursor is recommended to keep your own copy if you are doing more than immediately setting the cursor.
-
-#### add_CursorChanged 
-
-Add an event handler for the CursorChanged event.
-
-> public HRESULT [add_CursorChanged](#add_cursorchanged)([ICoreWebView2ExperimentalCursorChangedEventHandler](ICoreWebView2ExperimentalCursorChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-The event fires when WebView thinks the cursor should be changed. For example, when the mouse cursor is currently the default cursor but is then moved over text, it may try to change to the IBeam cursor.
-
-```cpp
-        // Register a handler for the CursorChanged event.
-        CHECK_FAILURE(m_compositionController->add_CursorChanged(
-            Callback<ICoreWebView2ExperimentalCursorChangedEventHandler>(
-                [this](ICoreWebView2ExperimentalCompositionController* sender,
-                       IUnknown* args) -> HRESULT {
-                    HCURSOR cursor;
-                    CHECK_FAILURE(sender->get_Cursor(&cursor));
-                    SetClassLongPtr(m_appWindow->GetMainWindow(), GCLP_HCURSOR, (LONG_PTR)cursor);
-                    return S_OK;
-                })
-                .Get(),
-            &m_cursorChangedToken));
-```
-
-#### remove_CursorChanged 
-
-Remove an event handler previously added with add_CursorChanged.
-
-> public HRESULT [remove_CursorChanged](#remove_cursorchanged)(EventRegistrationToken token)
+This transform is used to calculate correct coordinates when calling CreateCoreWebView2PointerInfoFromPointerId. This is equivalent to a D2D1_MATRIX_4X4_F
 
 #### COREWEBVIEW2_MOUSE_EVENT_KIND 
 
@@ -288,12 +296,4 @@ COREWEBVIEW2_POINTER_EVENT_KIND_UP            | Corresponds to WM_POINTERUP.
 COREWEBVIEW2_POINTER_EVENT_KIND_UPDATE            | Corresponds to WM_POINTERUPDATE.
 
 The values of this enum align with the matching WM_POINTER* window messages.
-
-#### COREWEBVIEW2_MATRIX_4X4 
-
-Matrix that represents a 3D transform.
-
-> typedef [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4)
-
-This transform is used to calculate correct coordinates when calling CreateCoreWebView2PointerInfoFromPointerId. This is equivalent to a D2D1_MATRIX_4X4_F
 

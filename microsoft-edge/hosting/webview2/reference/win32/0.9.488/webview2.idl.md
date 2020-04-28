@@ -16,13 +16,37 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[CreateCoreWebView2EnvironmentWithOptions](#createcorewebview2environmentwithoptions) | DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional options.
-[CreateCoreWebView2EnvironmentWithDetails](#createcorewebview2environmentwithdetails) | This API is going to be removed in next SDK release.
-[CreateCoreWebView2Environment](#createcorewebview2environment) | Creates an evergreen WebView2 Environment using the installed Edge version.
-[GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring) | Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 [CompareBrowserVersions](#comparebrowserversions) | This method is for anyone want to compare version correctly to determine which version is newer, older or same.
+[CreateCoreWebView2Environment](#createcorewebview2environment) | Creates an evergreen WebView2 Environment using the installed Edge version.
+[CreateCoreWebView2EnvironmentWithDetails](#createcorewebview2environmentwithdetails) | This API is going to be removed in next SDK release.
+[CreateCoreWebView2EnvironmentWithOptions](#createcorewebview2environmentwithoptions) | DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional options.
+[GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring) | Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 
 ## Members
+
+#### CompareBrowserVersions 
+
+> public STDAPI [CompareBrowserVersions](#comparebrowserversions)(PCWSTR version1, PCWSTR version2, int * result)
+
+This method is for anyone want to compare version correctly to determine which version is newer, older or same.
+
+It can be used to determine whether to use webview2 or certain feature base on version. Sets the value of result to -1, 0 or 1 if version1 is less than, equal or greater than version2 respectively. Returns E_INVALIDARG if it fails to parse any of the version strings or any input parameter is null. Input can directly use the versionInfo obtained from GetAvailableCoreWebView2BrowserVersionString, channel info will be ignored.
+
+#### CreateCoreWebView2Environment 
+
+> public STDAPI [CreateCoreWebView2Environment](#createcorewebview2environment)([ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
+
+Creates an evergreen WebView2 Environment using the installed Edge version.
+
+This is equivalent to calling CreateCoreWebView2EnvironmentWithOptions with nullptr for browserExecutableFolder, userDataFolder, additionalBrowserArguments. See CreateCoreWebView2EnvironmentWithOptions for more details.
+
+#### CreateCoreWebView2EnvironmentWithDetails 
+
+> public STDAPI [CreateCoreWebView2EnvironmentWithDetails](#createcorewebview2environmentwithdetails)(PCWSTR browserExecutableFolder, PCWSTR userDataFolder, PCWSTR additionalBrowserArguments, [ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
+
+This API is going to be removed in next SDK release.
+
+Please use CreateCoreWebView2EnvironmentWithOptions.
 
 #### CreateCoreWebView2EnvironmentWithOptions 
 
@@ -111,22 +135,6 @@ ERROR_PRODUCT_UNINSTALLED
 
 First we check with Root as HKLM and then HKCU. AppId is first set to the Application User Model ID of the caller's process, then if there's no corresponding registry key the AppId is set to the executable name of the caller's process, or if that isn't a registry key then '*'. If an override registry key is found then we use the browserExecutableFolder, userDataFolder and additionalBrowserArguments registry values as replacements for the corresponding values in CreateCoreWebView2EnvironmentWithOptions parameters.
 
-#### CreateCoreWebView2EnvironmentWithDetails 
-
-> public STDAPI [CreateCoreWebView2EnvironmentWithDetails](#createcorewebview2environmentwithdetails)(PCWSTR browserExecutableFolder, PCWSTR userDataFolder, PCWSTR additionalBrowserArguments, [ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
-
-This API is going to be removed in next SDK release.
-
-Please use CreateCoreWebView2EnvironmentWithOptions.
-
-#### CreateCoreWebView2Environment 
-
-> public STDAPI [CreateCoreWebView2Environment](#createcorewebview2environment)([ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
-
-Creates an evergreen WebView2 Environment using the installed Edge version.
-
-This is equivalent to calling CreateCoreWebView2EnvironmentWithOptions with nullptr for browserExecutableFolder, userDataFolder, additionalBrowserArguments. See CreateCoreWebView2EnvironmentWithOptions for more details.
-
 #### GetAvailableCoreWebView2BrowserVersionString 
 
 > public STDAPI [GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring)(PCWSTR browserExecutableFolder, LPWSTR * versionInfo)
@@ -134,12 +142,4 @@ This is equivalent to calling CreateCoreWebView2EnvironmentWithOptions with null
 Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 
 Channel names are beta, dev, and canary. If an override exists for the browserExecutableFolder or the channel preference, the override will be used. If there isn't an override, then the parameter passed to GetAvailableCoreWebView2BrowserVersionString is used.
-
-#### CompareBrowserVersions 
-
-> public STDAPI [CompareBrowserVersions](#comparebrowserversions)(PCWSTR version1, PCWSTR version2, int * result)
-
-This method is for anyone want to compare version correctly to determine which version is newer, older or same.
-
-It can be used to determine whether to use webview2 or certain feature base on version. Sets the value of result to -1, 0 or 1 if version1 is less than, equal or greater than version2 respectively. Returns E_INVALIDARG if it fails to parse any of the version strings or any input parameter is null. Input can directly use the versionInfo obtained from GetAvailableCoreWebView2BrowserVersionString, channel info will be ignored.
 

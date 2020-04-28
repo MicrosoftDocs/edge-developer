@@ -23,16 +23,22 @@ HTTP request headers.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
+[Contains](#contains) | Checks whether the headers contain an entry matching the header name.
 [GetHeader](#getheader) | Gets the header value matching the name.
 [GetHeaders](#getheaders) | Gets the header value matching the name via an iterator.
-[Contains](#contains) | Checks whether the headers contain an entry matching the header name.
-[SetHeader](#setheader) | Adds or updates header that matches the name.
-[RemoveHeader](#removeheader) | Removes header that matches the name.
 [GetIterator](#getiterator) | Gets an iterator over the collection of request headers.
+[RemoveHeader](#removeheader) | Removes header that matches the name.
+[SetHeader](#setheader) | Adds or updates header that matches the name.
 
 Used to inspect the HTTP request on WebResourceRequested event and NavigationStarting event. Note, you can modify the HTTP request headers from a WebResourceRequested event, but not from a NavigationStarting event.
 
 ## Members
+
+#### Contains 
+
+Checks whether the headers contain an entry matching the header name.
+
+> public HRESULT [Contains](#contains)(LPCWSTR name, BOOL * contains)
 
 #### GetHeader 
 
@@ -46,17 +52,11 @@ Gets the header value matching the name via an iterator.
 
 > public HRESULT [GetHeaders](#getheaders)(LPCWSTR name, [ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
 
-#### Contains 
+#### GetIterator 
 
-Checks whether the headers contain an entry matching the header name.
+Gets an iterator over the collection of request headers.
 
-> public HRESULT [Contains](#contains)(LPCWSTR name, BOOL * contains)
-
-#### SetHeader 
-
-Adds or updates header that matches the name.
-
-> public HRESULT [SetHeader](#setheader)(LPCWSTR name, LPCWSTR value)
+> public HRESULT [GetIterator](#getiterator)([ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
 
 #### RemoveHeader 
 
@@ -64,9 +64,9 @@ Removes header that matches the name.
 
 > public HRESULT [RemoveHeader](#removeheader)(LPCWSTR name)
 
-#### GetIterator 
+#### SetHeader 
 
-Gets an iterator over the collection of request headers.
+Adds or updates header that matches the name.
 
-> public HRESULT [GetIterator](#getiterator)([ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
+> public HRESULT [SetHeader](#setheader)(LPCWSTR name, LPCWSTR value)
 

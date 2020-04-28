@@ -23,15 +23,62 @@ This represents the WebView2 Environment.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
+[add_NewBrowserVersionAvailable](#add_newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [CreateCoreWebView2Controller](#createcorewebview2controller) | Asynchronously create a new WebView.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
 [get_BrowserVersionString](#get_browserversionstring) | The browser version info of the current [ICoreWebView2Environment](), including channel name if it is not the stable channel.
-[add_NewBrowserVersionAvailable](#add_newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable) | Remove an event handler previously added with add_NewBrowserVersionAvailable.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
 
 ## Members
+
+#### add_NewBrowserVersionAvailable 
+
+The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
+
+> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)([ICoreWebView2NewBrowserVersionAvailableEventHandler](ICoreWebView2NewBrowserVersionAvailableEventHandler.md) * eventHandler, EventRegistrationToken * token)
+
+To use the newer version of the browser you must create a new environment and WebView. This event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
+
+Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
+
+```cpp
+    // After the environment is successfully created,
+    // register a handler for the NewBrowserVersionAvailable event.
+    // This handler tells when there is a new Edge version available on the machine.
+    CHECK_FAILURE(m_webViewEnvironment->add_NewBrowserVersionAvailable(
+        Callback<ICoreWebView2NewBrowserVersionAvailableEventHandler>(
+            [this](ICoreWebView2Environment* sender, IUnknown* args) -> HRESULT {
+                std::wstring message = L"We detected there is a new version for the browser.";
+                if (m_webView)
+                {
+                    message += L"Do you want to restart the app? \n\n";
+                    message += L"Click No if you only want to re-create the webviews. \n";
+                    message += L"Click Cancel for no action. \n";
+                }
+                int response = MessageBox(
+                    m_mainWindow, message.c_str(), L"New available version",
+                    m_webView ? MB_YESNOCANCEL : MB_OK);
+
+                if (response == IDYES)
+                {
+                    RestartApp();
+                }
+                else if (response == IDNO)
+                {
+                    ReinitializeWebViewWithNewBrowser();
+                }
+                else
+                {
+                    // do nothing
+                }
+
+                return S_OK;
+            })
+            .Get(),
+        nullptr));
+```
 
 #### CreateCoreWebView2Controller 
 
@@ -232,53 +279,6 @@ This matches the format of the GetAvailableCoreWebView2BrowserVersionString API.
         MessageBox(
             m_mainWindow, version_info.get(), L"Browser Version Info After WebView Creation",
             MB_OK);
-```
-
-#### add_NewBrowserVersionAvailable 
-
-The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
-
-> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)([ICoreWebView2NewBrowserVersionAvailableEventHandler](ICoreWebView2NewBrowserVersionAvailableEventHandler.md) * eventHandler, EventRegistrationToken * token)
-
-To use the newer version of the browser you must create a new environment and WebView. This event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
-
-Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
-
-```cpp
-    // After the environment is successfully created,
-    // register a handler for the NewBrowserVersionAvailable event.
-    // This handler tells when there is a new Edge version available on the machine.
-    CHECK_FAILURE(m_webViewEnvironment->add_NewBrowserVersionAvailable(
-        Callback<ICoreWebView2NewBrowserVersionAvailableEventHandler>(
-            [this](ICoreWebView2Environment* sender, IUnknown* args) -> HRESULT {
-                std::wstring message = L"We detected there is a new version for the browser.";
-                if (m_webView)
-                {
-                    message += L"Do you want to restart the app? \n\n";
-                    message += L"Click No if you only want to re-create the webviews. \n";
-                    message += L"Click Cancel for no action. \n";
-                }
-                int response = MessageBox(
-                    m_mainWindow, message.c_str(), L"New available version",
-                    m_webView ? MB_YESNOCANCEL : MB_OK);
-
-                if (response == IDYES)
-                {
-                    RestartApp();
-                }
-                else if (response == IDNO)
-                {
-                    ReinitializeWebViewWithNewBrowser();
-                }
-                else
-                {
-                    // do nothing
-                }
-
-                return S_OK;
-            })
-            .Get(),
-        nullptr));
 ```
 
 #### remove_NewBrowserVersionAvailable 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,8 +24,8 @@ Event args for the NavigationCompleted event.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [get_IsSuccess](#get_issuccess) | True when the navigation is successful.
-[get_WebErrorStatus](#get_weberrorstatus) | The error code if the navigation failed.
 [get_NavigationId](#get_navigationid) | The ID of the navigation.
+[get_WebErrorStatus](#get_weberrorstatus) | The error code if the navigation failed.
 
 ## Members
 
@@ -37,15 +37,15 @@ True when the navigation is successful.
 
 This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.
 
-#### get_WebErrorStatus 
-
-The error code if the navigation failed.
-
-> public HRESULT [get_WebErrorStatus](#get_weberrorstatus)(COREWEBVIEW2_WEB_ERROR_STATUS * COREWEBVIEW2_WEB_ERROR_STATUS)
-
 #### get_NavigationId 
 
 The ID of the navigation.
 
 > public HRESULT [get_NavigationId](#get_navigationid)(UINT64 * navigation_id)
+
+#### get_WebErrorStatus 
+
+The error code if the navigation failed.
+
+> public HRESULT [get_WebErrorStatus](#get_weberrorstatus)(COREWEBVIEW2_WEB_ERROR_STATUS * COREWEBVIEW2_WEB_ERROR_STATUS)
 

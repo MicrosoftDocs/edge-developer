@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,26 +23,14 @@ Event args for the PermissionRequested event.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[get_Uri](#get_uri) | The origin of the web content that requests the permission.
-[get_PermissionKind](#get_permissionkind) | The type of the permission that is requested.
 [get_IsUserInitiated](#get_isuserinitiated) | True when the permission request was initiated through a user gesture.
+[get_PermissionKind](#get_permissionkind) | The type of the permission that is requested.
 [get_State](#get_state) | The status of a permission request, i.e.
-[put_State](#put_state) | Set the State property.
+[get_Uri](#get_uri) | The origin of the web content that requests the permission.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object.
+[put_State](#put_state) | Set the State property.
 
 ## Members
-
-#### get_Uri 
-
-The origin of the web content that requests the permission.
-
-> public HRESULT [get_Uri](#get_uri)(LPWSTR * uri)
-
-#### get_PermissionKind 
-
-The type of the permission that is requested.
-
-> public HRESULT [get_PermissionKind](#get_permissionkind)(COREWEBVIEW2_PERMISSION_KIND * value)
 
 #### get_IsUserInitiated 
 
@@ -52,6 +40,12 @@ True when the permission request was initiated through a user gesture.
 
 Note that being initiated through a user gesture doesn't mean that user intended to access the associated resource.
 
+#### get_PermissionKind 
+
+The type of the permission that is requested.
+
+> public HRESULT [get_PermissionKind](#get_permissionkind)(COREWEBVIEW2_PERMISSION_KIND * value)
+
 #### get_State 
 
 The status of a permission request, i.e.
@@ -60,11 +54,11 @@ The status of a permission request, i.e.
 
 whether the request is granted. Default value is COREWEBVIEW2_PERMISSION_STATE_DEFAULT.
 
-#### put_State 
+#### get_Uri 
 
-Set the State property.
+The origin of the web content that requests the permission.
 
-> public HRESULT [put_State](#put_state)(COREWEBVIEW2_PERMISSION_STATE value)
+> public HRESULT [get_Uri](#get_uri)(LPWSTR * uri)
 
 #### GetDeferral 
 
@@ -73,4 +67,10 @@ GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Defe
 > public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](ICoreWebView2Deferral.md) ** deferral)
 
 Developer can use the deferral object to make the permission decision at a later time.
+
+#### put_State 
+
+Set the State property.
+
+> public HRESULT [put_State](#put_state)(COREWEBVIEW2_PERMISSION_STATE value)
 
