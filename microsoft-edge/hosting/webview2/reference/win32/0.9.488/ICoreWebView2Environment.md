@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -37,7 +37,7 @@ WebViews created from an environment run on the Browser process specified with e
 
 Asynchronously create a new WebView.
 
-> public HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller)(HWND parentWindow,[ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](ICoreWebView2CreateCoreWebView2ControllerCompletedHandler.md) * handler)
+> public HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller)(HWND parentWindow, [ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](ICoreWebView2CreateCoreWebView2ControllerCompletedHandler.md) * handler)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 
@@ -179,7 +179,7 @@ WebView creation will fail if there is already a running instance using the same
 
 Create a new web resource response object.
 
-> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content,int statusCode,LPCWSTR reasonPhrase,LPCWSTR headers,[ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md) ** response)
+> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content, int statusCode, LPCWSTR reasonPhrase, LPCWSTR headers, [ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md) ** response)
 
 The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [ICoreWebView2HttpResponseHeaders](ICoreWebView2HttpResponseHeaders.md) to construct the headers line by line. For information on other parameters see [ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md).
 
@@ -238,7 +238,7 @@ This matches the format of the GetAvailableCoreWebView2BrowserVersionString API.
 
 The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 
-> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)([ICoreWebView2NewBrowserVersionAvailableEventHandler](ICoreWebView2NewBrowserVersionAvailableEventHandler.md) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)([ICoreWebView2NewBrowserVersionAvailableEventHandler](ICoreWebView2NewBrowserVersionAvailableEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
 To use the newer version of the browser you must create a new environment and WebView. This event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
 

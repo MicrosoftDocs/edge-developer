@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -38,7 +38,7 @@ An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface wi
 
 Asynchronously create a new WebView for use with visual hosting.
 
-> public HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)(HWND parentWindow,[ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler.md) * handler)
+> public HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)(HWND parentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler.md) * handler)
 
 parentWindow is the HWND in which the app will connect the visual tree of the WebView. This will be the HWND that the app will receive pointer/ mouse input meant for the WebView (and will need to use SendMouseInput/ SendPointerInput to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to call put_ParentWindow to update the new parent HWND of the visual tree.
 
@@ -187,5 +187,5 @@ The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPoi
 
 Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.
 
-> public HRESULT [GetProviderForHwnd](#getproviderforhwnd)(HWND hwnd,IUnknown ** provider)
+> public HRESULT [GetProviderForHwnd](#getproviderforhwnd)(HWND hwnd, IUnknown ** provider)
 

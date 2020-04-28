@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -37,25 +37,25 @@ Used to construct a WebResourceResponse for the WebResourceRequested event.
 
 Appends header line with name and value.
 
-> public HRESULT [AppendHeader](#appendheader)(LPCWSTR name,LPCWSTR value)
+> public HRESULT [AppendHeader](#appendheader)(LPCWSTR name, LPCWSTR value)
 
 #### Contains 
 
 Checks whether the headers contain entries matching the header name.
 
-> public HRESULT [Contains](#contains)(LPCWSTR name,BOOL * contains)
+> public HRESULT [Contains](#contains)(LPCWSTR name, BOOL * contains)
 
 #### GetHeader 
 
 Gets the first header value in the collection matching the name.
 
-> public HRESULT [GetHeader](#getheader)(LPCWSTR name,LPWSTR * value)
+> public HRESULT [GetHeader](#getheader)(LPCWSTR name, LPWSTR * value)
 
 #### GetHeaders 
 
 Gets the header values matching the name.
 
-> public HRESULT [GetHeaders](#getheaders)(LPCWSTR name,[ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
+> public HRESULT [GetHeaders](#getheaders)(LPCWSTR name, [ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
 
 #### GetIterator 
 

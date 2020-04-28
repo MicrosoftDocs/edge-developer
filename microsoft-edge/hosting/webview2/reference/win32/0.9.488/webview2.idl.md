@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,7 +26,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 #### CreateCoreWebView2EnvironmentWithOptions 
 
-> public STDAPI [CreateCoreWebView2EnvironmentWithOptions](#createcorewebview2environmentwithoptions)(PCWSTR browserExecutableFolder,PCWSTR userDataFolder,[ICoreWebView2EnvironmentOptions](ICoreWebView2EnvironmentOptions.md) * environmentOptions,[ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
+> public STDAPI [CreateCoreWebView2EnvironmentWithOptions](#createcorewebview2environmentwithoptions)(PCWSTR browserExecutableFolder, PCWSTR userDataFolder, [ICoreWebView2EnvironmentOptions](ICoreWebView2EnvironmentOptions.md) * environmentOptions, [ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
 
 DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional options.
 
@@ -44,7 +44,7 @@ The browserExecutableFolder, userDataFolder and additionalBrowserArguments of th
 
 When creating a WebView2Environment the following environment variables are checked:
 
-```cpp
+```
 WEBVIEW2_BROWSER_EXECUTABLE_FOLDER
 WEBVIEW2_USER_DATA_FOLDER
 WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS
@@ -55,13 +55,13 @@ If an override environment variable is found then we use the browserExecutableFo
 
 While not strictly overrides, there exists additional environment variables that can be set:
 
-```cpp
+```
 WEBVIEW2_WAIT_FOR_SCRIPT_DEBUGGER
 ```
 
 When found with a non-empty value, this indicates that the WebView is being launched under a script debugger. In this case, the WebView will issue a `Page.waitForDebugger` CDP command that will cause script execution inside the WebView to pause on launch, until a debugger issues a corresponding `Runtime.runIfWaitingForDebugger` CDP command to resume execution. Note: There is no registry key equivalent of this environment variable.
 
-```cpp
+```
 WEBVIEW2_PIPE_FOR_SCRIPT_DEBUGGER
 ```
 
@@ -81,7 +81,7 @@ Note: There is no registry key equivalent of this environment variable.
 
 If none of those environment variables exist, then the registry is examined next. The following registry keys are checked:
 
-```cpp
+```
 [{Root}\Software\Policies\Microsoft\EmbeddedBrowserWebView\LoaderOverride\{AppId}]
 "releaseChannelPreference"=dword:00000000
 "browserExecutableFolder"=""
@@ -91,7 +91,7 @@ If none of those environment variables exist, then the registry is examined next
 
 In the unlikely scenario where some instances of WebView are open during a browser update we could end up blocking the deletion of old Edge browsers. To avoid running out of disk space a new WebView creation will fail with the next error if it detects that there are many old versions present.
 
-```cpp
+```
 ERROR_DISK_FULL
 ```
 
@@ -99,13 +99,13 @@ The default maximum number of Edge versions allowed is 20.
 
 The maximum number of old Edge versions allowed can be overwritten with the value of the following environment variable.
 
-```cpp
+```
 WEBVIEW2_MAX_INSTANCES
 ```
 
 If the Webview depends on an installed Edge and it is uninstalled any subsequent creation will fail with the next error
 
-```cpp
+```
 ERROR_PRODUCT_UNINSTALLED
 ```
 
@@ -113,7 +113,7 @@ First we check with Root as HKLM and then HKCU. AppId is first set to the Applic
 
 #### CreateCoreWebView2EnvironmentWithDetails 
 
-> public STDAPI [CreateCoreWebView2EnvironmentWithDetails](#createcorewebview2environmentwithdetails)(PCWSTR browserExecutableFolder,PCWSTR userDataFolder,PCWSTR additionalBrowserArguments,[ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
+> public STDAPI [CreateCoreWebView2EnvironmentWithDetails](#createcorewebview2environmentwithdetails)(PCWSTR browserExecutableFolder, PCWSTR userDataFolder, PCWSTR additionalBrowserArguments, [ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler](ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler.md) * environment_created_handler)
 
 This API is going to be removed in next SDK release.
 
@@ -129,7 +129,7 @@ This is equivalent to calling CreateCoreWebView2EnvironmentWithOptions with null
 
 #### GetAvailableCoreWebView2BrowserVersionString 
 
-> public STDAPI [GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring)(PCWSTR browserExecutableFolder,LPWSTR * versionInfo)
+> public STDAPI [GetAvailableCoreWebView2BrowserVersionString](#getavailablecorewebview2browserversionstring)(PCWSTR browserExecutableFolder, LPWSTR * versionInfo)
 
 Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 
@@ -137,7 +137,7 @@ Channel names are beta, dev, and canary. If an override exists for the browserEx
 
 #### CompareBrowserVersions 
 
-> public STDAPI [CompareBrowserVersions](#comparebrowserversions)(PCWSTR version1,PCWSTR version2,int * result)
+> public STDAPI [CompareBrowserVersions](#comparebrowserversions)(PCWSTR version1, PCWSTR version2, int * result)
 
 This method is for anyone want to compare version correctly to determine which version is newer, older or same.
 

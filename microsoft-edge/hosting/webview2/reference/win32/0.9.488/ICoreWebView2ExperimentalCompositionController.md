@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -68,7 +68,7 @@ Set the RootVisualTarget property.
 
 If eventKind is COREWEBVIEW2_MOUSE_EVENT_KIND_HORIZONTAL_WHEEL or COREWEBVIEW2_MOUSE_EVENT_KIND_WHEEL, then mouseData specifies the amount of wheel movement.
 
-> public HRESULT [SendMouseInput](#sendmouseinput)([COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind,[COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys,UINT32 mouseData,POINT point)
+> public HRESULT [SendMouseInput](#sendmouseinput)([COREWEBVIEW2_MOUSE_EVENT_KIND](#corewebview2_mouse_event_kind) eventKind, [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) virtualKeys, UINT32 mouseData, POINT point)
 
 A positive value indicates that the wheel was rotated forward, away from the user; a negative value indicates that the wheel was rotated backward, toward the user. One wheel click is defined as WHEEL_DELTA, which is 120. If eventKind is COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOUBLE_CLICK COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_DOWN, or COREWEBVIEW2_MOUSE_EVENT_KIND_X_BUTTON_UP, then mouseData specifies which X buttons were pressed or released. This value should be 1 if the first X button is pressed/released and 2 if the second X button is pressed/released. If eventKind is COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE, then virtualKeys, mouseData, and point should all be zero. If eventKind is any other value, then mouseData should be zero. Point is expected to be in the client coordinate space of the WebView. To track mouse events that start in the WebView and can potentially move outside of the WebView and host application, calling SetCapture and ReleaseCapture is recommended. To dismiss hover popups, it is also recommended to send WM_MOUSELEAVE messages. 
 ```cpp
@@ -177,7 +177,7 @@ bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 
 A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
 
-> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId,HWND parentWindow,struct [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) transform,[ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
+> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) transform, [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
 
 parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The [COREWEBVIEW2_MATRIX_4X4](#corewebview2_matrix_4x4) is the transfrom from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
 
@@ -185,7 +185,7 @@ parentWindow is the HWND that contains the webview. This can be any HWND in the 
 
 SendPointerInput accepts touch or pen pointer input of types defined in COREWEBVIEW2_POINTER_EVENT_KIND.
 
-> public HRESULT [SendPointerInput](#sendpointerinput)([COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) eventType,[ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) * pointerInfo)
+> public HRESULT [SendPointerInput](#sendpointerinput)([COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) eventType, [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) * pointerInfo)
 
 Any pointer input from the system must be converted into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) first.
 
@@ -201,7 +201,7 @@ The cursor should be set in WM_SETCURSOR through ::SetCursor or set on the corre
 
 Add an event handler for the CursorChanged event.
 
-> public HRESULT [add_CursorChanged](#add_cursorchanged)([ICoreWebView2ExperimentalCursorChangedEventHandler](ICoreWebView2ExperimentalCursorChangedEventHandler.md) * eventHandler,EventRegistrationToken * token)
+> public HRESULT [add_CursorChanged](#add_cursorchanged)([ICoreWebView2ExperimentalCursorChangedEventHandler](ICoreWebView2ExperimentalCursorChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
 
 The event fires when WebView thinks the cursor should be changed. For example, when the mouse cursor is currently the default cursor but is then moved over text, it may try to change to the IBeam cursor.
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -63,7 +63,7 @@ std::wstring RequestHeadersToJsonString(ICoreWebView2HttpRequestHeaders* request
 
 Get the name and value of the current HTTP header of the iterator.
 
-> public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR * name,LPWSTR * value)
+> public HRESULT [GetCurrentHeader](#getcurrentheader)(LPWSTR * name, LPWSTR * value)
 
 This method will fail if the last call to MoveNext set has_next to FALSE.
 
