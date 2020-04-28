@@ -14,7 +14,7 @@ keywords: Windows Runtime, WinRT, PWA, JavaScript
 
 The [Windows Runtime](/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis) (or simply *WinRT*) is the collection of native APIs that power the [Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) (UWP) apps that run across all [Windows 10 device families](/uwp/extension-sdks/device-families-overview). WinRT APIs are projected into a number of different languages, including C#, C++, Visual Basic, and JavaScript.
 
-As a web developer, you can call these native Windows APIs from JavaScript when your web app is [running as an installed Windows 10 app](../progressive-web-apps-edgehtml/windows-features.md#set-up-and-run-your-universal-windows-app) (launched from the *wwahost.exe* process, rather than the browser). Additionally, your website running as Windows 10 app can also use the [Microsoft Edge webview](#webview) control to display remote and local web content and  [MSApp](#msapp) APIs for blob and stream handling, among other things. 
+As a web developer, you may request these native Windows APIs from JavaScript when your web app is [running as an installed Windows 10 app](../progressive-web-apps-edgehtml/windows-features.md#set-up-and-run-your-universal-windows-app) \(launched from the `wwahost.exe` process, rather than the browser\).  Additionally, your website running as a Windows 10 app may also use the [Microsoft Edge webview](#webview) control to display remote and local web content and [MSApp](#msapp) APIs for blob and stream handling, among other things. 
 
 Here are the top-level WinRT namespace areas available to all Windows 10 apps:
 
