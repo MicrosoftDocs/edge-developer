@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -43,7 +43,7 @@ The [CoreWebView2Controller]() owns the [CoreWebView2](Microsoft--Web--WebView2-
 
 The IsVisible property determines whether to show or hide the webview.
 
-> {property} bool? [IsVisible](#isvisible)
+> public bool [IsVisible](#isvisible)
 
 If IsVisible is set to false, the webview will be transparent and will not be rendered. However, this will not affect the window containing the webview (the HWND parameter that was passed to CreateCoreWebView2Controller). If you want that window to disappear too, call ShowWindow on it directly in addition to modifying the IsVisible property. WebView as a child window won't get window messages when the top window is minimized or restored. For performance reason, developer should set IsVisible property of the WebView to false when the app window is minimized and back to true when app window is restored. App window can do this by handling SC_MINIMIZE and SC_RESTORE command upon receiving WM_SYSCOMMAND message.
 
@@ -51,7 +51,7 @@ If IsVisible is set to false, the webview will be transparent and will not be re
 
 The webview bounds.
 
-> {property} Rect [Bounds](#bounds)
+> public Rect [Bounds](#bounds)
 
 Bounds are relative to the parent HWND. The app has two ways it can position a WebView:
 
@@ -63,7 +63,7 @@ Bounds are relative to the parent HWND. The app has two ways it can position a W
 
 The zoom factor for the WebView.
 
-> {property} double [ZoomFactor](#zoomfactor)
+> public double [ZoomFactor](#zoomfactor)
 
 Note that changing zoom factor could cause `window.innerWidth/innerHeight` and page layout to change. A zoom factor that is applied by the host by calling ZoomFactor becomes the new default zoom for the WebView. This zoom factor applies across navigations and is the zoom factor WebView is returned to when the user presses ctrl+0. When the zoom factor is changed by the user (resulting in the app receiving ZoomFactorChanged), that zoom applies only for the current page. Any user applied zoom is only for the current page and is reset on a navigation. Specifying a zoomFactor less than or equal to 0 is not allowed. WebView also has an internal supported zoom factor range. When a specified zoom factor is out of that range, it will be normalized to be within the range, and a ZoomFactorChanged event will be fired for the real applied zoom factor. When this range normalization happens, the ZoomFactor property will report the zoom factor specified during the previous modification of the ZoomFactor property until the ZoomFactorChanged event is received after webview applies the normalized zoom factor.
 
@@ -71,7 +71,7 @@ Note that changing zoom factor could cause `window.innerWidth/innerHeight` and p
 
 The parent window provided by the app that this WebView is using to render content.
 
-> {property} IntPtr [ParentWindow](#parentwindow)
+> public IntPtr [ParentWindow](#parentwindow)
 
 Setting the property will cause the WebView to reparent its window to the newly provided window.
 
@@ -79,15 +79,13 @@ Setting the property will cause the WebView to reparent its window to the newly 
 
 Gets the [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) associated with this [CoreWebView2Controller]().
 
-> {property} [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) [CoreWebView2](#corewebview2)
-
-### Events
+> public [CoreWebView2](Microsoft--Web--WebView2--Core--CoreWebView2.md) [CoreWebView2](#corewebview2)
 
 #### ZoomFactorChanged 
 
 The event fires when the ZoomFactor property of the WebView changes.
 
-> event EventHandler< object > [ZoomFactorChanged](#zoomfactorchanged)
+> public event EventHandler< object > [ZoomFactorChanged](#zoomfactorchanged)
 
 The event could fire because the caller modified the ZoomFactor property, or due to the user manually modifying the zoom. When it is modified by the caller via the ZoomFactor property, the internal zoom factor is updated immediately and there will be no ZoomFactorChanged event. WebView associates the last used zoom factor for each site. Therefore, it is possible for the zoom factor to change when navigating to a different page. When the zoom factor changes due to this, the ZoomFactorChanged event fires right after the ContentLoading event.
 
@@ -95,7 +93,7 @@ The event could fire because the caller modified the ZoomFactor property, or due
 
 MoveFocusRequested fires when user tries to tab out of the WebView.
 
-> event EventHandler< [CoreWebView2MoveFocusRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2MoveFocusRequestedEventArgs.md) > [MoveFocusRequested](#movefocusrequested)
+> public event EventHandler< [CoreWebView2MoveFocusRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2MoveFocusRequestedEventArgs.md) > [MoveFocusRequested](#movefocusrequested)
 
 The WebView's focus has not changed when this event is fired.
 
@@ -103,13 +101,13 @@ The WebView's focus has not changed when this event is fired.
 
 GotFocus fires when WebView got focus.
 
-> event EventHandler< object > [GotFocus](#gotfocus)
+> public event EventHandler< object > [GotFocus](#gotfocus)
 
 #### LostFocus 
 
 LostFocus fires when WebView lost focus.
 
-> event EventHandler< object > [LostFocus](#lostfocus)
+> public event EventHandler< object > [LostFocus](#lostfocus)
 
 In the case where MoveFocusRequested event is fired, the focus is still on WebView when MoveFocusRequested event fires. Lost focus only fires afterwards when app's code or default action of MoveFocusRequested event set focus away from WebView.
 
@@ -117,7 +115,7 @@ In the case where MoveFocusRequested event is fired, the focus is still on WebVi
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused.
 
-> event EventHandler< [CoreWebView2AcceleratorKeyPressedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2AcceleratorKeyPressedEventArgs.md) > [AcceleratorKeyPressed](#acceleratorkeypressed)
+> public event EventHandler< [CoreWebView2AcceleratorKeyPressedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2AcceleratorKeyPressedEventArgs.md) > [AcceleratorKeyPressed](#acceleratorkeypressed)
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused. A key is considered an accelerator if either:
 
@@ -139,7 +137,7 @@ It is recommended to call Handle(TRUE) as early as you can know that you want to
 
 Update Bounds and ZoomFactor properties at the same time.
 
-> public inline void [SetBoundsAndZoomFactor](#setboundsandzoomfactor)(Rect Bounds,double ZoomFactor)
+> public void [SetBoundsAndZoomFactor](#setboundsandzoomfactor)(Rect Bounds, double ZoomFactor)
 
 This operation is atomic from the host's perspective. After returning from this function, the Bounds and ZoomFactor properties will have both been updated if the function is successful, or neither will be updated if the function fails. If Bounds and ZoomFactor are both updated by the same scale (i.e. Bounds and ZoomFactor are both doubled), then the page will not see a change in window.innerWidth/innerHeight and the WebView will render the content at the new size and zoom without intermediate renderings. This function can also be used to update just one of ZoomFactor or Bounds by passing in the new value for one and the current value for the other.
 
@@ -147,7 +145,7 @@ This operation is atomic from the host's perspective. After returning from this 
 
 Move focus into WebView.
 
-> public inline void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](Microsoft--Web--WebView2--Core.md) reason)
+> public void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](Microsoft--Web--WebView2--Core.md) reason)
 
 WebView will get focus and focus will be set to correspondent element in the page hosted in the WebView. For Programmatic reason, focus is set to previously focused element or the default element if there is no previously focused element. For Next reason, focus is set to the first element. For Previous reason, focus is set to the last element. WebView can also got focus through user interaction like clicking into WebView or Tab into it. For tabbing, the app can call MoveFocus with Next or Previous to align with tab and shift+tab respectively when it decides the WebView is the next tabbable element. Or, the app can call IsDialogMessage as part of its message loop to allow the platform to auto handle tabbing. The platform will rotate through all windows with WS_TABSTOP. When the WebView gets focus from IsDialogMessage, it will internally put the focus on the first or last element for tab and shift+tab respectively.
 
@@ -155,7 +153,7 @@ WebView will get focus and focus will be set to correspondent element in the pag
 
 This is a notification separate from Bounds that tells WebView its parent (or any ancestor) HWND moved.
 
-> public inline void [NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged)()
+> public void [NotifyParentWindowPositionChanged](#notifyparentwindowpositionchanged)()
 
 This is needed for accessibility and certain dialogs in WebView to work correctly.
 
@@ -163,7 +161,7 @@ This is needed for accessibility and certain dialogs in WebView to work correctl
 
 Closes the WebView and cleans up the underlying browser instance.
 
-> public inline void [Close](#close)()
+> public void [Close](#close)()
 
 Cleaning up the browser instance will release the resources powering the WebView. The browser instance will be shut down if there are no other WebViews using it.
 

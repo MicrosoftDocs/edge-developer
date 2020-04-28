@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,13 +27,13 @@ This class is an extension of the CoreWebView2Environment.
 
 ## Members
 
-### Methods
+### Properties
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
 Asynchronously create a new WebView for use with visual hosting.
 
-> public inline async Task< CoreWebView2ExperimentalCompositionController > [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync)(IntPtr ParentWindow)
+> public async Task< CoreWebView2ExperimentalCompositionController > [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync)(IntPtr ParentWindow)
 
 parentWindow is the HWND in which the app will connect the visual tree of the WebView. This will be the HWND that the app will receive pointer/ mouse input meant for the WebView (and will need to use SendMouseInput/ SendPointerInput to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to set CoreWebView2CompositionController.ParentWindow to update the new parent HWND of the visual tree.
 
@@ -45,7 +45,7 @@ It is recommended that the application set Application User Model ID for the pro
 
 Create an empty CoreWebView2ExperimentalPointerInfo.
 
-> public inline CoreWebView2ExperimentalPointerInfo [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
+> public CoreWebView2ExperimentalPointerInfo [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
 
 The returned CoreWebView2ExperimentalPointerInfo needs to be populated with all of the relevant info before calling SendPointerInput.
 
@@ -53,5 +53,5 @@ The returned CoreWebView2ExperimentalPointerInfo needs to be populated with all 
 
 Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 
-> public inline object [GetProviderForHwnd](#getproviderforhwnd)(IntPtr hwnd)
+> public object [GetProviderForHwnd](#getproviderforhwnd)(IntPtr hwnd)
 

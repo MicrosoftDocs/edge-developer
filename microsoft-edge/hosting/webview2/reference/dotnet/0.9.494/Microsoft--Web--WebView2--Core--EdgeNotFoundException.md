@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -36,13 +36,13 @@ The exception that is thrown when an Edge installation is missing.
 
 Initializes a new instance of the [EdgeNotFoundException]() class.
 
-> public inline  [EdgeNotFoundException](#edgenotfoundexception)()
+> public [EdgeNotFoundException](#edgenotfoundexception)()
 
 #### EdgeNotFoundException 
 
 Initializes a new instance of the [EdgeNotFoundException]() class with a specified error message.
 
-> public inline  [EdgeNotFoundException](#edgenotfoundexception)(string message)
+> public [EdgeNotFoundException](#edgenotfoundexception)(string message)
 
 #### Parameters
 * `message` The error message that explains the reason for the exception.
@@ -51,7 +51,7 @@ Initializes a new instance of the [EdgeNotFoundException]() class with a specifi
 
 Initializes a new instance of the [EdgeNotFoundException]() class with a reference to the inner exception that is the cause of this exception.
 
-> public inline  [EdgeNotFoundException](#edgenotfoundexception)(Exception inner)
+> public [EdgeNotFoundException](#edgenotfoundexception)(Exception inner)
 
 #### Parameters
 * `inner` The exception that is the cause of the current exception.
@@ -60,7 +60,7 @@ Initializes a new instance of the [EdgeNotFoundException]() class with a referen
 
 Initializes a new instance of the [EdgeNotFoundException]() class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
-> public inline  [EdgeNotFoundException](#edgenotfoundexception)(string message,Exception inner)
+> public [EdgeNotFoundException](#edgenotfoundexception)(string message, Exception inner)
 
 #### Parameters
 * `message` The error message that explains the reason for the exception. 

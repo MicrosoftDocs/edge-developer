@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,19 +32,19 @@ Event args for the PermissionRequested event.
 
 The origin of the web content that requests the permission.
 
-> {property} string [uri](#uri)
+> public string [uri](#uri)
 
 #### PermissionKind 
 
 The type of the permission that is requested.
 
-> {property} CoreWebView2PermissionKind [PermissionKind](#permissionkind)
+> public CoreWebView2PermissionKind [PermissionKind](#permissionkind)
 
 #### IsUserInitiated 
 
 True when the permission request was initiated through a user gesture.
 
-> {property} bool [IsUserInitiated](#isuserinitiated)
+> public bool [IsUserInitiated](#isuserinitiated)
 
 Note that being initiated through a user gesture doesn't mean that user intended to access the associated resource.
 
@@ -52,7 +52,7 @@ Note that being initiated through a user gesture doesn't mean that user intended
 
 The status of a permission request, i.e.
 
-> {property} CoreWebView2PermissionState [State](#state)
+> public CoreWebView2PermissionState [State](#state)
 
 whether the request is granted.
 
@@ -64,7 +64,7 @@ Default value is CoreWebView2PermissionState.Default.
 
 GetDeferral can be called to return a CoreWebView2Deferral object.
 
-> public inline CoreWebView2Deferral [GetDeferral](#getdeferral)()
+> public CoreWebView2Deferral [GetDeferral](#getdeferral)()
 
 Developer can use the deferral object to make the permission decision at a later time.
 

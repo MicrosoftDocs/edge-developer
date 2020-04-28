@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -28,7 +28,7 @@ This class is used to complete deferrals on event args that support getting defe
 
 Completes the associated deferred event.
 
-> public inline void [Complete](#complete)()
+> public void [Complete](#complete)()
 
 Complete should only be called once for each deferral taken.
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -69,13 +69,13 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 
 The [CoreWebView2Settings](Microsoft--Web--WebView2--Core--CoreWebView2Settings.md) object contains various modifiable settings for the running
 
-> {property} [CoreWebView2Settings](Microsoft--Web--WebView2--Core--CoreWebView2Settings.md) [Settings](#settings)
+> public [CoreWebView2Settings](Microsoft--Web--WebView2--Core--CoreWebView2Settings.md) [Settings](#settings)
 
 #### Source 
 
 The URI of the current top level document.
 
-> {property} string [Source](#source)
+> public string [Source](#source)
 
 This value potentially changes as a part of the SourceChanged event firing for some cases such as navigating to a different site or fragment navigations. It will remain the same for other types of navigations such as page reloads or history.pushState with the same URL as the current page.
 
@@ -83,13 +83,13 @@ This value potentially changes as a part of the SourceChanged event firing for s
 
 The process id of the browser process that hosts the WebView.
 
-> {property} uint [BrowserProcessId](#browserprocessid)
+> public uint [BrowserProcessId](#browserprocessid)
 
 #### CanGoBack 
 
 Returns true if the webview can navigate to a previous page in the navigation history.
 
-> {property} bool [CanGoBack](#cangoback)
+> public bool [CanGoBack](#cangoback)
 
 The HistoryChanged event will fire if CanGoBack changes value.
 
@@ -97,7 +97,7 @@ The HistoryChanged event will fire if CanGoBack changes value.
 
 Returns true if the webview can navigate to a next page in the navigation history.
 
-> {property} bool [CanGoForward](#cangoforward)
+> public bool [CanGoForward](#cangoforward)
 
 The HistoryChanged event will fire if CanGoForward changes value.
 
@@ -105,7 +105,7 @@ The HistoryChanged event will fire if CanGoForward changes value.
 
 The title for the current top level document.
 
-> {property} string [DocumentTitle](#documenttitle)
+> public string [DocumentTitle](#documenttitle)
 
 If the document has no explicit title or is otherwise empty, a default that may or may not match the URI of the document will be used.
 
@@ -113,7 +113,7 @@ If the document has no explicit title or is otherwise empty, a default that may 
 
 Indicates if the WebView contains a fullscreen HTML element.
 
-> {property} bool [ContainsFullScreenElement](#containsfullscreenelement)
+> public bool [ContainsFullScreenElement](#containsfullscreenelement)
 
 ### Events
 
@@ -121,7 +121,7 @@ Indicates if the WebView contains a fullscreen HTML element.
 
 NavigationStarting fires when the WebView main frame is requesting permission to navigate to a different URI.
 
-> event EventHandler< [CoreWebView2NavigationStartingEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationStartingEventArgs.md) > [NavigationStarting](#navigationstarting)
+> public event EventHandler< [CoreWebView2NavigationStartingEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationStartingEventArgs.md) > [NavigationStarting](#navigationstarting)
 
 This will fire for redirects as well.
 
@@ -129,7 +129,7 @@ This will fire for redirects as well.
 
 ContentLoading fires before any content is loaded, including scripts added with AddScriptToExecuteOnDocumentCreated ContentLoading will not fire if a same page navigation occurs (such as through fragment navigations or history.pushState navigations).
 
-> event EventHandler< [CoreWebView2ContentLoadingEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2ContentLoadingEventArgs.md) > [ContentLoading](#contentloading)
+> public event EventHandler< [CoreWebView2ContentLoadingEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2ContentLoadingEventArgs.md) > [ContentLoading](#contentloading)
 
 This follows the NavigationStarting and SourceChanged events and precedes the HistoryChanged and NavigationCompleted events.
 
@@ -137,7 +137,7 @@ This follows the NavigationStarting and SourceChanged events and precedes the Hi
 
 SourceChanged fires when the Source property changes.
 
-> event EventHandler< [CoreWebView2SourceChangedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2SourceChangedEventArgs.md) > [SourceChanged](#sourcechanged)
+> public event EventHandler< [CoreWebView2SourceChangedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2SourceChangedEventArgs.md) > [SourceChanged](#sourcechanged)
 
 SourceChanged fires for navigating to a different site or fragment navigations. It will not fires for other types of navigations such as page reloads or history.pushState with the same URL as the current page. SourceChanged fires before ContentLoading for navigation to a new document. Add an event handler for the SourceChanged event.
 
@@ -145,7 +145,7 @@ SourceChanged fires for navigating to a different site or fragment navigations. 
 
 HistoryChange listen to the change of navigation history for the top level document.
 
-> event EventHandler< object > [HistoryChanged](#historychanged)
+> public event EventHandler< object > [HistoryChanged](#historychanged)
 
 Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryChanged also fires for using GoBack/GoForward. HistoryChanged fires after SourceChanged and ContentLoading. Add an event handler for the HistoryChanged event.
 
@@ -153,13 +153,13 @@ Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryC
 
 NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
-> event EventHandler< [CoreWebView2NavigationCompletedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationCompletedEventArgs.md) > [NavigationCompleted](#navigationcompleted)
+> public event EventHandler< [CoreWebView2NavigationCompletedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationCompletedEventArgs.md) > [NavigationCompleted](#navigationcompleted)
 
 #### FrameNavigationStarting 
 
 FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI.
 
-> event EventHandler< [CoreWebView2NavigationStartingEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationStartingEventArgs.md) > [FrameNavigationStarting](#framenavigationstarting)
+> public event EventHandler< [CoreWebView2NavigationStartingEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationStartingEventArgs.md) > [FrameNavigationStarting](#framenavigationstarting)
 
 This will fire for redirects as well.
 
@@ -167,13 +167,13 @@ This will fire for redirects as well.
 
 FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
 
-> event EventHandler< [CoreWebView2NavigationCompletedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationCompletedEventArgs.md) > [FrameNavigationCompleted](#framenavigationcompleted)
+> public event EventHandler< [CoreWebView2NavigationCompletedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NavigationCompletedEventArgs.md) > [FrameNavigationCompleted](#framenavigationcompleted)
 
 #### ScriptDialogOpening 
 
 The event fires when a JavaScript dialog (alert, confirm, or prompt) will show for the webview.
 
-> event EventHandler< [CoreWebView2ScriptDialogOpeningEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2ScriptDialogOpeningEventArgs.md) > [ScriptDialogOpening](#scriptdialogopening)
+> public event EventHandler< [CoreWebView2ScriptDialogOpeningEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2ScriptDialogOpeningEventArgs.md) > [ScriptDialogOpening](#scriptdialogopening)
 
 This event only fires if the [CoreWebView2Settings.AreDefaultScriptDialogsEnabled](Microsoft--Web--WebView2--Core--CoreWebView2Settings.md) property is set to false. The ScriptDialogOpening event can be used to suppress dialogs or replace default dialogs with custom dialogs.
 
@@ -181,19 +181,19 @@ This event only fires if the [CoreWebView2Settings.AreDefaultScriptDialogsEnable
 
 Fires when content in a WebView requests permission to access some privileged resources.
 
-> event EventHandler< [CoreWebView2PermissionRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2PermissionRequestedEventArgs.md) > [PermissionRequested](#permissionrequested)
+> public event EventHandler< [CoreWebView2PermissionRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2PermissionRequestedEventArgs.md) > [PermissionRequested](#permissionrequested)
 
 #### ProcessFailed 
 
 Fires when a WebView process terminated unexpectedly or become unresponsive.
 
-> event EventHandler< [CoreWebView2ProcessFailedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2ProcessFailedEventArgs.md) > [ProcessFailed](#processfailed)
+> public event EventHandler< [CoreWebView2ProcessFailedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2ProcessFailedEventArgs.md) > [ProcessFailed](#processfailed)
 
 #### WebMessageReceived 
 
 This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 
-> event EventHandler< [CoreWebView2WebMessageReceivedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2WebMessageReceivedEventArgs.md) > [WebMessageReceived](#webmessagereceived)
+> public event EventHandler< [CoreWebView2WebMessageReceivedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2WebMessageReceivedEventArgs.md) > [WebMessageReceived](#webmessagereceived)
 
 The postMessage function is `void postMessage(object)` where object is any object supported by JSON conversion. When postMessage is called, the CoreWebView2WebMessageReceivedEventHandler set will be invoked with the postMessage's object parameter converted to a JSON string.
 
@@ -201,7 +201,7 @@ The postMessage function is `void postMessage(object)` where object is any objec
 
 Fires when content inside the WebView requested to open a new window, such as through window.open.
 
-> event EventHandler< [CoreWebView2NewWindowRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NewWindowRequestedEventArgs.md) > [NewWindowRequested](#newwindowrequested)
+> public event EventHandler< [CoreWebView2NewWindowRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2NewWindowRequestedEventArgs.md) > [NewWindowRequested](#newwindowrequested)
 
 The app can pass a target webview that will be considered the opened window.
 
@@ -209,13 +209,13 @@ The app can pass a target webview that will be considered the opened window.
 
 The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
 
-> event EventHandler< object > [DocumentTitleChanged](#documenttitlechanged)
+> public event EventHandler< object > [DocumentTitleChanged](#documenttitlechanged)
 
 #### ContainsFullScreenElementChanged 
 
 Notifies when the ContainsFullScreenElement property changes.
 
-> event EventHandler< object > [ContainsFullScreenElementChanged](#containsfullscreenelementchanged)
+> public event EventHandler< object > [ContainsFullScreenElementChanged](#containsfullscreenelementchanged)
 
 This means that an HTML element inside the WebView is entering fullscreen to the size of the WebView or leaving fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of ContainsFullScreenElementChanged can then resize the WebView in response.
 
@@ -223,7 +223,7 @@ This means that an HTML element inside the WebView is entering fullscreen to the
 
 Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter.
 
-> event EventHandler< [CoreWebView2WebResourceRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2WebResourceRequestedEventArgs.md) > [WebResourceRequested](#webresourcerequested)
+> public event EventHandler< [CoreWebView2WebResourceRequestedEventArgs](Microsoft--Web--WebView2--Core--CoreWebView2WebResourceRequestedEventArgs.md) > [WebResourceRequested](#webresourcerequested)
 
 At least one filter must be added for the event to fire.
 
@@ -231,7 +231,7 @@ At least one filter must be added for the event to fire.
 
 Fires when content inside the WebView requested to close the window, such as after window.close is called.
 
-> event EventHandler< object > [WindowCloseRequested](#windowcloserequested)
+> public event EventHandler< object > [WindowCloseRequested](#windowcloserequested)
 
 The app should close the WebView and related app window if that makes sense to the app.
 
@@ -241,7 +241,7 @@ The app should close the WebView and related app window if that makes sense to t
 
 Cause a navigation of the top level document to the specified URI.
 
-> public inline void [Navigate](#navigate)(string uri)
+> public void [Navigate](#navigate)(string uri)
 
 See the navigation events for more information. Note that this starts a navigation and the corresponding NavigationStarting event will fire sometime after this Navigate call completes.
 
@@ -249,7 +249,7 @@ See the navigation events for more information. Note that this starts a navigati
 
 Initiates a navigation to htmlContent as source HTML of a new document.
 
-> public inline void [NavigateToString](#navigatetostring)(string htmlContent)
+> public void [NavigateToString](#navigatetostring)(string htmlContent)
 
 The htmlContent parameter may not be larger than 2 MB of characters. The origin of the new page will be about:blank.
 
@@ -257,7 +257,7 @@ The htmlContent parameter may not be larger than 2 MB of characters. The origin 
 
 Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
 
-> public inline async Task< string > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)(string javaScript)
+> public async Task< string > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)(string javaScript)
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
@@ -267,13 +267,13 @@ Note that if an HTML document has sandboxing of some kind via [sandbox](https://
 
 Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
 
-> public inline void [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(string id)
+> public void [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(string id)
 
 #### ExecuteScriptAsync 
 
 Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
 
-> public inline async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
+> public async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
 
 This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
 
@@ -281,7 +281,7 @@ This will execute asynchronously and when complete, if a handler is provided in 
 
 Capture an image of what WebView is displaying.
 
-> public inline async Task [CapturePreviewAsync](#capturepreviewasync)(CoreWebView2CapturePreviewImageFormat imageFormat,Stream imageStream)
+> public async Task [CapturePreviewAsync](#capturepreviewasync)(CoreWebView2CapturePreviewImageFormat imageFormat, Stream imageStream)
 
 Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
 
@@ -289,7 +289,7 @@ Specify the format of the image with the imageFormat parameter. The resulting im
 
 Reload the current page.
 
-> public inline void [Reload](#reload)()
+> public void [Reload](#reload)()
 
 This is similar to navigating to the URI of current top level document including all navigation events firing and respecting any entries in the HTTP cache. But, the back/forward history will not be modified.
 
@@ -297,11 +297,11 @@ This is similar to navigating to the URI of current top level document including
 
 Post the specified webMessage to the top level document in this WebView.
 
-> public inline void [PostWebMessageAsJson](#postwebmessageasjson)(string webMessageAsJson)
+> public void [PostWebMessageAsJson](#postwebmessageasjson)(string webMessageAsJson)
 
 The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following:
 
-```cpp
+```
 window.chrome.webview.addEventListener('message', handler)
 window.chrome.webview.removeEventListener('message', handler)
 ```
@@ -312,7 +312,7 @@ The event args is an instance of `MessageEvent`. The [CoreWebView2Settings.IsWeb
 
 This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
 
-> public inline void [PostWebMessageAsString](#postwebmessageasstring)(string webMessageAsString)
+> public void [PostWebMessageAsString](#postwebmessageasstring)(string webMessageAsString)
 
 This behaves in exactly the same manner as PostWebMessageAsJson but the `window.chrome.webview` message event arg's data property will be a string with the same value as webMessageAsString. Use this instead of PostWebMessageAsJson if you want to communicate via simple strings rather than JSON objects.
 
@@ -320,7 +320,7 @@ This behaves in exactly the same manner as PostWebMessageAsJson but the `window.
 
 Call an asynchronous DevToolsProtocol method.
 
-> public inline async Task< string > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(string methodName,string parametersAsJson)
+> public async Task< string > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(string methodName, string parametersAsJson)
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
@@ -328,19 +328,19 @@ See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a li
 
 Navigates the WebView to the previous page in the navigation history.
 
-> public inline void [GoBack](#goback)()
+> public void [GoBack](#goback)()
 
 #### GoForward 
 
 Navigates the WebView to the next page in the navigation history.
 
-> public inline void [GoForward](#goforward)()
+> public void [GoForward](#goforward)()
 
 #### GetDevToolsProtocolEventReceiver 
 
 Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
 
-> public inline CoreWebView2DevToolsProtocolEventReceiver [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(string eventName)
+> public CoreWebView2DevToolsProtocolEventReceiver [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(string eventName)
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
@@ -348,7 +348,7 @@ See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a li
 
 Stop all navigations and pending resource fetches.
 
-> public inline void [Stop](#stop)()
+> public void [Stop](#stop)()
 
 Does not stop scripts.
 
@@ -356,10 +356,10 @@ Does not stop scripts.
 
 Add the provided host object to script running in the WebView with the specified name.
 
-> public inline void [AddHostObjectToScript](#addhostobjecttoscript)(string name,object rawObject)
+> public void [AddHostObjectToScript](#addhostobjecttoscript)(string name, object rawObject)
 
 Host objects are exposed as host object proxies via `window.chrome.webview.hostObjects.{name}`. Host object proxies are promises and will resolve to an object representing the host object. JavaScript code in the WebView will be able to access appObject as following and then access attributes and methods of appObject: 
-```cpp
+```
 let app_object = await window.chrome.webview.hostObjects.host_object;
 let attr1 = await app_object.attr1;
 let result = await app_object.method1(parameters);
@@ -396,7 +396,7 @@ Setting a property on an asynchronous host object proxy works slightly different
 
 Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
 
-> public inline void [RemoveHostObjectFromScript](#removehostobjectfromscript)(string name)
+> public void [RemoveHostObjectFromScript](#removehostobjectfromscript)(string name)
 
 While new access attempts will be denied, if the object is already obtained by JavaScript code in the WebView, the JavaScript code will continue to have access to that object. Calling this method for a name that is already removed or never added will fail.
 
@@ -404,7 +404,7 @@ While new access attempts will be denied, if the object is already obtained by J
 
 Opens the DevTools window for the current document in the WebView.
 
-> public inline void [OpenDevToolsWindow](#opendevtoolswindow)()
+> public void [OpenDevToolsWindow](#opendevtoolswindow)()
 
 Does nothing if called when the DevTools window is already open.
 
@@ -412,7 +412,7 @@ Does nothing if called when the DevTools window is already open.
 
 Adds a URI and resource context filter to the WebResourceRequested event.
 
-> public inline void [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter)(string uri,[CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) ResourceContext)
+> public void [AddWebResourceRequestedFilter](#addwebresourcerequestedfilter)(string uri, [CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) ResourceContext)
 
 URI parameter can be a wildcard string ('': zero or more, '?': exactly one). nullptr is equivalent to L"". See CoreWebView2WebResourceContext enum for description of resource context filters.
 
@@ -420,7 +420,7 @@ URI parameter can be a wildcard string ('': zero or more, '?': exactly one). nul
 
 Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
 
-> public inline void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)(string uri,[CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) ResourceContext)
+> public void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)(string uri, [CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) ResourceContext)
 
 If the same filter was added multiple times, then it will need to be removed as many times as it was added for the removal to be effective. Returns E_INVALIDARG for a filter that was never added.
 

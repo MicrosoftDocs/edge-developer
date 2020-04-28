@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,7 +30,7 @@ Event args for the NavigationCompleted event.
 
 True when the navigation is successful.
 
-> {property} bool [IsSuccess](#issuccess)
+> public bool [IsSuccess](#issuccess)
 
 This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.
 
@@ -38,11 +38,11 @@ This is false for a navigation that ended up in an error page (failures due to n
 
 The error code if the navigation failed.
 
-> {property} CoreWebView2WebErrorStatus [WebErrorStatus](#weberrorstatus)
+> public CoreWebView2WebErrorStatus [WebErrorStatus](#weberrorstatus)
 
 #### NavigationId 
 
 The ID of the navigation.
 
-> {property} ulong [NavigationId](#navigationid)
+> public ulong [NavigationId](#navigationid)
 

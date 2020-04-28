@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,19 +31,19 @@ Event args for the WebResourceRequested event.
 
 The HTTP request.
 
-> {property} HttpRequestMessage [Request](#request)
+> public HttpRequestMessage [Request](#request)
 
 #### Response 
 
 The HTTP response.
 
-> {property} HttpResponseMessage [Response](#response)
+> public HttpResponseMessage [Response](#response)
 
 #### ResourceContext 
 
 The web resource request contexts.
 
-> {property} [CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) [ResourceContext](#resourcecontext)
+> public [CoreWebView2WebResourceContext](Microsoft--Web--WebView2--Core.md) [ResourceContext](#resourcecontext)
 
 ### Methods
 
@@ -51,7 +51,7 @@ The web resource request contexts.
 
 Obtain a [CoreWebView2Deferral](Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md) object and put the event into a deferred state.
 
-> public inline [CoreWebView2Deferral](Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md) [GetDeferral](#getdeferral)()
+> public [CoreWebView2Deferral](Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md) [GetDeferral](#getdeferral)()
 
 You can use the [CoreWebView2Deferral](Microsoft--Web--WebView2--Core--CoreWebView2Deferral.md) object to complete the network request at a later time.
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -34,13 +34,13 @@ Event args for the ScriptDialogOpening event.
 
 The URI of the page that requested the dialog box.
 
-> {property} string [uri](#uri)
+> public string [uri](#uri)
 
 #### Kind 
 
 The kind of JavaScript dialog box.
 
-> {property} CoreWebView2ScriptDialogKind [Kind](#kind)
+> public CoreWebView2ScriptDialogKind [Kind](#kind)
 
 Accept, confirm, prompt, or beforeunload.
 
@@ -48,7 +48,7 @@ Accept, confirm, prompt, or beforeunload.
 
 The message of the dialog box.
 
-> {property} string [Message](#message)
+> public string [Message](#message)
 
 From JavaScript this is the first parameter passed to alert, confirm, and prompt and is empty for beforeunload.
 
@@ -56,7 +56,7 @@ From JavaScript this is the first parameter passed to alert, confirm, and prompt
 
 The second parameter passed to the JavaScript prompt dialog.
 
-> {property} string [DefaultText](#defaulttext)
+> public string [DefaultText](#defaulttext)
 
 This is the default value to use for the result of the prompt JavaScript function.
 
@@ -64,7 +64,7 @@ This is the default value to use for the result of the prompt JavaScript functio
 
 The return value from the JavaScript prompt function if Accept is called.
 
-> {property} string [ResultText](#resulttext)
+> public string [ResultText](#resulttext)
 
 This is ignored for dialog kinds other than prompt. If Accept is not called this value is ignored and false is returned from prompt.
 
@@ -72,7 +72,7 @@ This is ignored for dialog kinds other than prompt. If Accept is not called this
 
 The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.
 
-> public inline void [Accept](#accept)()
+> public void [Accept](#accept)()
 
 From JavaScript, this means that the confirm and beforeunload function returns true if Accept is called. And for the prompt function it returns the value of ResultText if Accept is called and returns false otherwise.
 
@@ -80,7 +80,7 @@ From JavaScript, this means that the confirm and beforeunload function returns t
 
 GetDeferral can be called to return a CoreWebView2Deferral object.
 
-> public inline CoreWebView2Deferral [GetDeferral](#getdeferral)()
+> public CoreWebView2Deferral [GetDeferral](#getdeferral)()
 
 You can use this to complete the event at a later time.
 

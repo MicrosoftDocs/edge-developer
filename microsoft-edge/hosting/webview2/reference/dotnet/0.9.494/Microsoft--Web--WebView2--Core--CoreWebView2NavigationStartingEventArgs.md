@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -33,25 +33,25 @@ Event args for the NavigationStarting event.
 
 The uri of the requested navigation.
 
-> {property} string [uri](#uri)
+> public string [uri](#uri)
 
 #### IsUserInitiated 
 
 True when the navigation was initiated through a user gesture as opposed to programmatic navigation.
 
-> {property} bool [IsUserInitiated](#isuserinitiated)
+> public bool [IsUserInitiated](#isuserinitiated)
 
 #### IsRedirected 
 
 True when the navigation is redirected.
 
-> {property} bool [IsRedirected](#isredirected)
+> public bool [IsRedirected](#isredirected)
 
 #### RequestHeaders 
 
 The HTTP request headers for the navigation.
 
-> {property} HttpRequestHeaders [RequestHeaders](#requestheaders)
+> public HttpRequestHeaders [RequestHeaders](#requestheaders)
 
 Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 
@@ -59,7 +59,7 @@ Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 
 The host may set this flag to cancel the navigation.
 
-> {property} bool? [Cancel](#cancel)
+> public bool [Cancel](#cancel)
 
 If set, it will be as if the navigation never happened and the current page's content will be intact. For performance reasons, GET HTTP requests may happen, while the host is responding. This means cookies can be set and used part of a request for the navigation.
 
@@ -67,5 +67,5 @@ If set, it will be as if the navigation never happened and the current page's co
 
 The ID of the navigation.
 
-> {property} ulong [NavigationId](#navigationid)
+> public ulong [NavigationId](#navigationid)
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -58,7 +58,7 @@ This mostly represents a combined win32 POINTER_INFO/POINTER_TOUCH_INFO/POINTER_
 
 The PointerKind of the pointer event.
 
-> {property} uint [PointerKind](#pointerkind)
+> public uint [PointerKind](#pointerkind)
 
 This corresponds to the pointerKind property of the POINTER_INFO struct. The values are defined by the POINTER_INPUT_KIND enum in the Windows SDK (winuser.h). Supports PT_PEN and PT_TOUCH.
 
@@ -66,7 +66,7 @@ This corresponds to the pointerKind property of the POINTER_INFO struct. The val
 
 The PointerId of the pointer event.
 
-> {property} uint [PointerId](#pointerid)
+> public uint [PointerId](#pointerid)
 
 This corresponds to the pointerId property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -74,7 +74,7 @@ This corresponds to the pointerId property of the POINTER_INFO struct as defined
 
 The FrameID of the pointer event.
 
-> {property} uint [FrameId](#frameid)
+> public uint [FrameId](#frameid)
 
 This corresponds to the frameId property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -82,7 +82,7 @@ This corresponds to the frameId property of the POINTER_INFO struct as defined i
 
 The PointerFlags of the pointer event.
 
-> {property} uint [PointerFlags](#pointerflags)
+> public uint [PointerFlags](#pointerflags)
 
 This corresponds to the pointerFlags property of the POINTER_INFO struct. The values are defined by the POINTER_FLAGS constants in the Windows SDK (winuser.h).
 
@@ -90,19 +90,19 @@ This corresponds to the pointerFlags property of the POINTER_INFO struct. The va
 
 The PointerDeviceRect of the sourceDevice property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
-> {property} Rect [PointerDeviceRect](#pointerdevicerect)
+> public Rect [PointerDeviceRect](#pointerdevicerect)
 
 #### DisplayRect 
 
 The DisplayRect of the sourceDevice property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
-> {property} Rect [DisplayRect](#displayrect)
+> public Rect [DisplayRect](#displayrect)
 
 #### PixelLocation 
 
 The PixelLocation of the pointer event.
 
-> {property} Point [PixelLocation](#pixellocation)
+> public Point [PixelLocation](#pixellocation)
 
 This corresponds to the ptPixelLocation property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -110,7 +110,7 @@ This corresponds to the ptPixelLocation property of the POINTER_INFO struct as d
 
 The HimetricLocation of the pointer event.
 
-> {property} Point [HimetricLocation](#himetriclocation)
+> public Point [HimetricLocation](#himetriclocation)
 
 This corresponds to the ptHimetricLocation property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -118,7 +118,7 @@ This corresponds to the ptHimetricLocation property of the POINTER_INFO struct a
 
 The PixelLocationRaw of the pointer event.
 
-> {property} Point [PixelLocationRaw](#pixellocationraw)
+> public Point [PixelLocationRaw](#pixellocationraw)
 
 This corresponds to the ptPixelLocationRaw property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -126,7 +126,7 @@ This corresponds to the ptPixelLocationRaw property of the POINTER_INFO struct a
 
 The HimetricLocationRaw of the pointer event.
 
-> {property} Point [HimetricLocationRaw](#himetriclocationraw)
+> public Point [HimetricLocationRaw](#himetriclocationraw)
 
 This corresponds to the ptHimetricLocationRaw property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -134,7 +134,7 @@ This corresponds to the ptHimetricLocationRaw property of the POINTER_INFO struc
 
 The Time of the pointer event.
 
-> {property} uint [Time](#time)
+> public uint [Time](#time)
 
 This corresponds to the dwTime property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -142,7 +142,7 @@ This corresponds to the dwTime property of the POINTER_INFO struct as defined in
 
 The HistoryCount of the pointer event.
 
-> {property} uint [HistoryCount](#historycount)
+> public uint [HistoryCount](#historycount)
 
 This corresponds to the historyCount property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -150,7 +150,7 @@ This corresponds to the historyCount property of the POINTER_INFO struct as defi
 
 The InputData of the pointer event.
 
-> {property} int [InputData](#inputdata)
+> public int [InputData](#inputdata)
 
 This corresponds to the InputData property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -158,7 +158,7 @@ This corresponds to the InputData property of the POINTER_INFO struct as defined
 
 The KeyStates of the pointer event.
 
-> {property} uint [KeyStates](#keystates)
+> public uint [KeyStates](#keystates)
 
 This corresponds to the dwKeyStates property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -166,7 +166,7 @@ This corresponds to the dwKeyStates property of the POINTER_INFO struct as defin
 
 The PerformanceCount of the pointer event.
 
-> {property} ulong [PerformanceCount](#performancecount)
+> public ulong [PerformanceCount](#performancecount)
 
 This corresponds to the PerformanceCount property of the POINTER_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -174,7 +174,7 @@ This corresponds to the PerformanceCount property of the POINTER_INFO struct as 
 
 The ButtonChangeKind of the pointer event.
 
-> {property} int [ButtonChangeKind](#buttonchangekind)
+> public int [ButtonChangeKind](#buttonchangekind)
 
 This corresponds to the ButtonChangeKind property of the POINTER_INFO struct. The values are defined by the POINTER_BUTTON_CHANGE_KIND enum in the Windows SDK (winuser.h).
 
@@ -182,7 +182,7 @@ This corresponds to the ButtonChangeKind property of the POINTER_INFO struct. Th
 
 The PenFlags of the pointer event.
 
-> {property} uint [PenFlags](#penflags)
+> public uint [PenFlags](#penflags)
 
 This corresponds to the penFlags property of the POINTER_PEN_INFO struct. The values are defined by the PEN_FLAGS constants in the Windows SDK (winuser.h).
 
@@ -190,7 +190,7 @@ This corresponds to the penFlags property of the POINTER_PEN_INFO struct. The va
 
 The PenMask of the pointer event.
 
-> {property} uint [PenMask](#penmask)
+> public uint [PenMask](#penmask)
 
 This corresponds to the penMask property of the POINTER_PEN_INFO struct. The values are defined by the PEN_MASK constants in the Windows SDK (winuser.h).
 
@@ -198,7 +198,7 @@ This corresponds to the penMask property of the POINTER_PEN_INFO struct. The val
 
 The PenPressure of the pointer event.
 
-> {property} uint [PenPressure](#penpressure)
+> public uint [PenPressure](#penpressure)
 
 This corresponds to the pressure property of the POINTER_PEN_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -206,7 +206,7 @@ This corresponds to the pressure property of the POINTER_PEN_INFO struct as defi
 
 The PenRotation of the pointer event.
 
-> {property} uint [PenRotation](#penrotation)
+> public uint [PenRotation](#penrotation)
 
 This corresponds to the rotation property of the POINTER_PEN_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -214,7 +214,7 @@ This corresponds to the rotation property of the POINTER_PEN_INFO struct as defi
 
 The PenTiltX of the pointer event.
 
-> {property} int [PenTiltX](#pentiltx)
+> public int [PenTiltX](#pentiltx)
 
 This corresponds to the tiltX property of the POINTER_PEN_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -222,7 +222,7 @@ This corresponds to the tiltX property of the POINTER_PEN_INFO struct as defined
 
 The PenTiltY of the pointer event.
 
-> {property} int [PenTiltY](#pentilty)
+> public int [PenTiltY](#pentilty)
 
 This corresponds to the tiltY property of the POINTER_PEN_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -230,7 +230,7 @@ This corresponds to the tiltY property of the POINTER_PEN_INFO struct as defined
 
 The TouchFlags of the pointer event.
 
-> {property} uint [TouchFlags](#touchflags)
+> public uint [TouchFlags](#touchflags)
 
 This corresponds to the touchFlags property of the POINTER_TOUCH_INFO struct. The values are defined by the TOUCH_FLAGS constants in the Windows SDK (winuser.h).
 
@@ -238,7 +238,7 @@ This corresponds to the touchFlags property of the POINTER_TOUCH_INFO struct. Th
 
 The TouchMask of the pointer event.
 
-> {property} uint [TouchMask](#touchmask)
+> public uint [TouchMask](#touchmask)
 
 This corresponds to the touchMask property of the POINTER_TOUCH_INFO struct. The values are defined by the TOUCH_MASK constants in the Windows SDK (winuser.h).
 
@@ -246,7 +246,7 @@ This corresponds to the touchMask property of the POINTER_TOUCH_INFO struct. The
 
 The TouchContact of the pointer event.
 
-> {property} Rect [TouchContact](#touchcontact)
+> public Rect [TouchContact](#touchcontact)
 
 This corresponds to the rcContact property of the POINTER_TOUCH_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -254,7 +254,7 @@ This corresponds to the rcContact property of the POINTER_TOUCH_INFO struct as d
 
 The TouchContactRaw of the pointer event.
 
-> {property} Rect [TouchContactRaw](#touchcontactraw)
+> public Rect [TouchContactRaw](#touchcontactraw)
 
 This corresponds to the rcContactRaw property of the POINTER_TOUCH_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -262,7 +262,7 @@ This corresponds to the rcContactRaw property of the POINTER_TOUCH_INFO struct a
 
 The TouchOrientation of the pointer event.
 
-> {property} uint [TouchOrientation](#touchorientation)
+> public uint [TouchOrientation](#touchorientation)
 
 This corresponds to the orientation property of the POINTER_TOUCH_INFO struct as defined in the Windows SDK (winuser.h).
 
@@ -270,7 +270,7 @@ This corresponds to the orientation property of the POINTER_TOUCH_INFO struct as
 
 The TouchPressure of the pointer event.
 
-> {property} uint [TouchPressure](#touchpressure)
+> public uint [TouchPressure](#touchpressure)
 
 This corresponds to the pressure property of the POINTER_TOUCH_INFO struct as defined in the Windows SDK (winuser.h).
 

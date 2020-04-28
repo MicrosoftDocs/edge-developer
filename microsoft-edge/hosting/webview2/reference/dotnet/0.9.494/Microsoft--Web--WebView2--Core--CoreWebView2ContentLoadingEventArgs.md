@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -29,11 +29,11 @@ Event args for the ContentLoading event.
 
 True if the loaded content is an error page.
 
-> {property} bool [IsErrorPage](#iserrorpage)
+> public bool [IsErrorPage](#iserrorpage)
 
 #### NavigationId 
 
 The ID of the navigation.
 
-> {property} ulong [NavigationId](#navigationid)
+> public ulong [NavigationId](#navigationid)
 
