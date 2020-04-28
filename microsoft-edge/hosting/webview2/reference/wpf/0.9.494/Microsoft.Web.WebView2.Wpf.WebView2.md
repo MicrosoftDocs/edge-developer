@@ -3,14 +3,17 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Wpf.WebView2 
+# Microsoft.Web.WebView2.Wpf.WebView2 class 
+
+Namespace: Microsoft.Web.WebView2.Wpf
+Assembly: Microsoft.Web.WebView2.Wpf.dll
 
 ```
 class Microsoft.Web.WebView2.Wpf.WebView2
@@ -45,7 +48,7 @@ A control to embed web content in a WPF application.
 [OnPreviewKeyDown](#onpreviewkeydown) | This is the "Preview" (i.e. tunneling) version of OnKeyDown, so it actually happens first.
 [OnPreviewKeyUp](#onpreviewkeyup) | See OnPreviewKeyDown.
 
-This control is effectively a wrapper around the [WebView2]() COM API, which you can find documentation for here: [https://docs.microsoft.com/microsoft-edge/hosting/webview2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
+This control is effectively a wrapper around the WebView2 COM API, which you can find documentation for here: [https://docs.microsoft.com/microsoft-edge/hosting/webview2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
 
 Note that this control extends HwndHost in order to embed windows which live outside of the WPF ecosystem. This has some implications regarding the control's input and output behavior as well as the functionality it "inherits" from UIElement and FrameworkElement. See the HwndHost and WPF/Win32 interop documentation for more info:
 
@@ -55,12 +58,11 @@ Note that this control extends HwndHost in order to embed windows which live out
 
 ## Members
 
-
 #### CoreWebView2 
 
 Access the complete functionality of the underlying CoreWebView2 COM API.
 
-> {property} CoreWebView2 [CoreWebView2](#corewebview2)
+> public CoreWebView2 [CoreWebView2](#corewebview2)
 
 Returns null for a period of time after the control's construction because it is initialized independently and asynchronously. Once this property is non-null, it will never be null again until the control is Disposed.
 
@@ -68,7 +70,7 @@ Returns null for a period of time after the control's construction because it is
 
 The Uri which the WebView2 is currently displaying.
 
-> {property} Uri [Source](#source)
+> public Uri [Source](#source)
 
 Getting this property is equivalent to getting CoreWebView2.Source. Setting this property is equivalent to calling CoreWebView2.Navigate. If this property is retrieved when the CoreWebView2 isn't initialized, then it returns null. If this property is set prior to the CoreWebView2 being initialized (e.g. from XAML markup), then the property value is still updated and the control will navigate to it when initialization has finished.
 
@@ -76,7 +78,7 @@ Getting this property is equivalent to getting CoreWebView2.Source. Setting this
 
 Wrapper around CoreWebView2.CanGoBack.
 
-> {property} bool [CanGoBack](#cangoback)
+> public bool [CanGoBack](#cangoback)
 
 If CoreWebView2 isn't initialized then always returns false.
 
@@ -84,7 +86,7 @@ If CoreWebView2 isn't initialized then always returns false.
 
 Wrapper around CoreWebView2.CanGoForward.
 
-> {property} bool [CanGoForward](#cangoforward)
+> public bool [CanGoForward](#cangoforward)
 
 If CoreWebView2 isn't initialized then always returns false.
 
@@ -92,7 +94,7 @@ If CoreWebView2 isn't initialized then always returns false.
 
 Creates a new instance of a WebView2 control.
 
-> public inline  [WebView2](#webview2)()
+> public [WebView2](#webview2)()
 
 Note that the control's CoreWebView2 won't necessarily exist right away after construction.
 
@@ -100,7 +102,7 @@ Note that the control's CoreWebView2 won't necessarily exist right away after co
 
 Equivalent to calling CoreWebView2.GoBack.
 
-> public inline void [GoBack](#goback)()
+> public void [GoBack](#goback)()
 
 If CoreWebView2 isn't initialized then does nothing.
 
@@ -108,7 +110,7 @@ If CoreWebView2 isn't initialized then does nothing.
 
 Equivalent to calling CoreWebView2.GoForward.
 
-> public inline void [GoForward](#goforward)()
+> public void [GoForward](#goforward)()
 
 If CoreWebView2 isn't initialized then does nothing.
 
@@ -116,7 +118,7 @@ If CoreWebView2 isn't initialized then does nothing.
 
 Equivalent to calling CoreWebView2.Reload.
 
-> public inline void [Reload](#reload)()
+> public void [Reload](#reload)()
 
 If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
@@ -124,7 +126,7 @@ If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
 Equivalent to calling CoreWebView2.Stop.
 
-> public inline void [Stop](#stop)()
+> public void [Stop](#stop)()
 
 If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
@@ -132,7 +134,7 @@ If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
 Equivalent to calling CoreWebView2.NavigateToString.
 
-> public inline void [NavigateToString](#navigatetostring)(string htmlContent)
+> public void [NavigateToString](#navigatetostring)(string htmlContent)
 
 If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
@@ -140,7 +142,7 @@ If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
 Equivalent to calling CoreWebView2.ExecuteScriptAsync.
 
-> public inline async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
+> public async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
 
 If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
@@ -148,7 +150,7 @@ If CoreWebView2 isn't initialized then throws InvalidOperationException.
 
 This is overridden from HwndHost and is called to instruct us to create our HWND.
 
-> protected inline override HandleRef [BuildWindowCore](#buildwindowcore)(HandleRef hwndParent)
+> protected override HandleRef [BuildWindowCore](#buildwindowcore)(HandleRef hwndParent)
 
 ##### Parameters
 * `hwndParent` The HWND that we should use as the parent of the one we create.
@@ -160,7 +162,7 @@ The HWND that we created.
 
 This is overridden from HwndHost and is called to instruct us to destroy our HWND.
 
-> protected inline override void [DestroyWindowCore](#destroywindowcore)(HandleRef hwnd)
+> protected override void [DestroyWindowCore](#destroywindowcore)(HandleRef hwnd)
 
 ##### Parameters
 * `hwnd` Our HWND that we need to destroy.
@@ -169,7 +171,7 @@ This is overridden from HwndHost and is called to instruct us to destroy our HWN
 
 This is called by our base class according to the typical implementation of the IDispose pattern.
 
-> protected inline override void [Dispose](#dispose)(bool disposing)
+> protected override void [Dispose](#dispose)(bool disposing)
 
 We implement it by releasing all of our underlying COM resources.
 
@@ -180,7 +182,7 @@ We implement it by releasing all of our underlying COM resources.
 
 This is overridden from HwndHost and called when our control's location has changed.
 
-> protected inline override void [OnWindowPositionChanged](#onwindowpositionchanged)(Rect rcBoundingBox)
+> protected override void [OnWindowPositionChanged](#onwindowpositionchanged)(Rect rcBoundingBox)
 
 The HwndHost takes care of updating the HWND we created. What we need to do is move our CoreWebView2 to match the new location.
 
@@ -188,7 +190,7 @@ The HwndHost takes care of updating the HWND we created. What we need to do is m
 
 This is overridden from HwndHost and is called to inform us that tabbing has caused the focus to move into our control/window.
 
-> protected inline override bool [TabIntoCore](#tabintocore)(TraversalRequest request)
+> protected override bool [TabIntoCore](#tabintocore)(TraversalRequest request)
 
 Since WPF can't manage the transition of focus to a non-WPF HWND, it delegates the transition to us here. So our job is just to place the focus in our external HWND.
 
@@ -202,7 +204,7 @@ True to indicate that we handled the navigation, or false to indicate that we di
 
 This is overridden from HwndHost and is called when WPF needs to know if the focus is in our control/window.
 
-> protected inline override bool [HasFocusWithinCore](#hasfocuswithincore)()
+> protected override bool [HasFocusWithinCore](#hasfocuswithincore)()
 
 WPF can't know on its own since we're hosting a non-WPF window, so instead it asks us by calling this. To answer, we just track state based on CoreWebView2 events that fire when it gains or loses focus.
 
@@ -213,7 +215,7 @@ True if the focus is in our control/window, false if it isn't.
 
 This is overridden from UIElement and called to allow us to handle key press input.
 
-> protected inline override void [OnKeyDown](#onkeydown)(KeyEventArgs e)
+> protected override void [OnKeyDown](#onkeydown)(KeyEventArgs e)
 
 WPF should never actually call this in response to keyboard events because we're hosting a non-WPF window. When our window has focus Windows will send the input directly to it rather than to WPF's top-level window and input system. This override should only be called when we're explicitly forwarding accelerator key input from the CoreWebView2 to WPF (in CoreWebView2Controller_AcceleratorKeyPressed). Even then, this KeyDownEvent is only triggered because our PreviewKeyDownEvent implementation explicitly triggers it, matching WPF's usual system. So the process is: CoreWebView2Controller_AcceleratorKeyPressed -> raise PreviewKeyDownEvent -> OnPreviewKeyDown -> raise KeyDownEvent -> OnKeyDown
 
@@ -221,13 +223,13 @@ WPF should never actually call this in response to keyboard events because we're
 
 See OnKeyDown.
 
-> protected inline override void [OnKeyUp](#onkeyup)(KeyEventArgs e)
+> protected override void [OnKeyUp](#onkeyup)(KeyEventArgs e)
 
 #### OnPreviewKeyDown 
 
 This is the "Preview" (i.e. tunneling) version of OnKeyDown, so it actually happens first.
 
-> protected inline override void [OnPreviewKeyDown](#onpreviewkeydown)(KeyEventArgs e)
+> protected override void [OnPreviewKeyDown](#onpreviewkeydown)(KeyEventArgs e)
 
 Like OnKeyDown, this will only ever be called if we're explicitly forwarding key presses from the CoreWebView2. In order to mimic WPF's standard input handling, when we receive this we turn around and fire off the standard bubbling KeyDownEvent. That way others in the WPF tree see the same standard pair of input events that WPF itself would have triggered if it were handling the key press.
 
@@ -235,5 +237,5 @@ Like OnKeyDown, this will only ever be called if we're explicitly forwarding key
 
 See OnPreviewKeyDown.
 
-> protected inline override void [OnPreviewKeyUp](#onpreviewkeyup)(KeyEventArgs e)
+> protected override void [OnPreviewKeyUp](#onpreviewkeyup)(KeyEventArgs e)
 

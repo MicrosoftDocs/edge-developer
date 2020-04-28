@@ -10,16 +10,19 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Core.CoreWebView2Environment 
+# Microsoft.Web.WebView2.Core.CoreWebView2Environment class 
 
-This represents the [WebView2](Microsoft--Web--WebView2.md) Environment.
+Namespace: Microsoft.Web.WebView2.Core
+Assembly: Microsoft.Web.WebView2.Core.dll
+
+This represents the WebView2 Environment.
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[BrowserVersionString](#browserversionstring) | The browser version info of the current [CoreWebView2Environment](), including channel name if it is not the stable channel.
-[NewBrowserVersionAvailable](#newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via [WebView2](Microsoft--Web--WebView2.md).
+[BrowserVersionString](#browserversionstring) | The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
+[NewBrowserVersionAvailable](#newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
 
@@ -31,7 +34,7 @@ WebViews created from an environment run on the Browser process specified with e
 
 #### BrowserVersionString 
 
-The browser version info of the current [CoreWebView2Environment](), including channel name if it is not the stable channel.
+The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 
 > public string [BrowserVersionString](#browserversionstring)
 
@@ -39,7 +42,7 @@ This matches the format of the GetAvailableCoreWebView2BrowserVersionString API.
 
 #### NewBrowserVersionAvailable 
 
-The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via [WebView2](Microsoft--Web--WebView2.md).
+The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 
 > public event EventHandler< object > [NewBrowserVersionAvailable](#newbrowserversionavailable)
 
@@ -51,7 +54,7 @@ Because a user data folder can only be used by one browser process at a time, if
 
 Asynchronously create a new WebView.
 
-> public async Task< [CoreWebView2Controller](Microsoft--Web--WebView2--Core--CoreWebView2Controller.md) > [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync)(IntPtr ParentWindow)
+> public async Task< [CoreWebView2Controller](Microsoft.Web.WebView2.Core.CoreWebView2Controller.md) > [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync)(IntPtr ParentWindow)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 

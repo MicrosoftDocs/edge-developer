@@ -10,10 +10,13 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Core.CoreWebView2ExperimentalEnvironment 
+# Microsoft.Web.WebView2.Core.CoreWebView2ExperimentalEnvironment class 
 
 > [!NOTE]
 > This an experimental API that is shipped with our prerelease SDK version 0.9.494.
+
+Namespace: Microsoft.Web.WebView2.Core
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 This class is an extension of the CoreWebView2Environment.
 

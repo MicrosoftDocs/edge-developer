@@ -10,9 +10,12 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions 
+# Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions class 
 
-Options used to create [WebView2](Microsoft--Web--WebView2.md) Environment.
+Namespace: Microsoft.Web.WebView2.Core
+Assembly: Microsoft.Web.WebView2.Core.dll
+
+Options used to create WebView2 Environment.
 
 ## Summary
 
@@ -59,7 +62,7 @@ Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 
 > public  [CoreWebView2EnvironmentOptions](#corewebview2environmentoptions)(string additionalBrowserArguments, string language, string targetCompatibleBrowserVersion)
 
-#### Parameters
+##### Parameters
 * `additionalBrowserArguments` AdditionalBrowserArguments can be specified to change the behavior of the WebView. 
 
 * `language` The default language that WebView will run with. 

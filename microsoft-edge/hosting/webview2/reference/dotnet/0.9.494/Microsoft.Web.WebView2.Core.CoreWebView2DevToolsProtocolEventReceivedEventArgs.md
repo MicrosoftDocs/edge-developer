@@ -10,23 +10,26 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs 
+# Microsoft.Web.WebView2.Core.CoreWebView2DevToolsProtocolEventReceivedEventArgs class 
 
-Event args for the ProcessFailed event.
+Namespace: Microsoft.Web.WebView2.Core
+Assembly: Microsoft.Web.WebView2.Core.dll
+
+Event args for the DevToolsProtocolEventReceived event.
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[ProcessFailedKind](#processfailedkind) | The kind of process failure that has occurred.
+[ParameterObjectAsJson](#parameterobjectasjson) | The parameter object of the corresponding DevToolsProtocol event represented as a JSON string.
 
 ## Members
 
 ### Properties
 
-#### ProcessFailedKind 
+#### ParameterObjectAsJson 
 
-The kind of process failure that has occurred.
+The parameter object of the corresponding DevToolsProtocol event represented as a JSON string.
 
-> public CoreWebView2ProcessFailedKind [ProcessFailedKind](#processfailedkind)
+> public string [ParameterObjectAsJson](#parameterobjectasjson)
 

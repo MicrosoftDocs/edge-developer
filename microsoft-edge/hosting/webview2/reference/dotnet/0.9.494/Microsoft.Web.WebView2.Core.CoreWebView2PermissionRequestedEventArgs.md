@@ -10,7 +10,10 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs 
+# Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs class 
+
+Namespace: Microsoft.Web.WebView2.Core
+Assembly: Microsoft.Web.WebView2.Core.dll
 
 Event args for the PermissionRequested event.
 
@@ -18,27 +21,15 @@ Event args for the PermissionRequested event.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[uri](#uri) | The origin of the web content that requests the permission.
-[PermissionKind](#permissionkind) | The type of the permission that is requested.
 [IsUserInitiated](#isuserinitiated) | True when the permission request was initiated through a user gesture.
+[PermissionKind](#permissionkind) | The type of the permission that is requested.
 [State](#state) | The status of a permission request, i.e.
+[uri](#uri) | The origin of the web content that requests the permission.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return a CoreWebView2Deferral object.
 
 ## Members
 
 ### Properties
-
-#### uri 
-
-The origin of the web content that requests the permission.
-
-> public string [uri](#uri)
-
-#### PermissionKind 
-
-The type of the permission that is requested.
-
-> public CoreWebView2PermissionKind [PermissionKind](#permissionkind)
 
 #### IsUserInitiated 
 
@@ -47,6 +38,12 @@ True when the permission request was initiated through a user gesture.
 > public bool [IsUserInitiated](#isuserinitiated)
 
 Note that being initiated through a user gesture doesn't mean that user intended to access the associated resource.
+
+#### PermissionKind 
+
+The type of the permission that is requested.
+
+> public CoreWebView2PermissionKind [PermissionKind](#permissionkind)
 
 #### State 
 
@@ -57,6 +54,12 @@ The status of a permission request, i.e.
 whether the request is granted.
 
 Default value is CoreWebView2PermissionState.Default.
+
+#### uri 
+
+The origin of the web content that requests the permission.
+
+> public string [uri](#uri)
 
 ### Methods
 

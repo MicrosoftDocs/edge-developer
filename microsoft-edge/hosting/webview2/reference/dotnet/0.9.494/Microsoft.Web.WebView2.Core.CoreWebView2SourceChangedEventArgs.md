@@ -10,30 +10,26 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# class Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs 
+# Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs class 
 
-Event args for the ContentLoading event.
+Namespace: Microsoft.Web.WebView2.Core
+Assembly: Microsoft.Web.WebView2.Core.dll
+
+Event args for the SourceChanged event.
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[IsErrorPage](#iserrorpage) | True if the loaded content is an error page.
-[NavigationId](#navigationid) | The ID of the navigation.
+[IsNewDocument](#isnewdocument) | True if the page being navigated to is a new document.
 
 ## Members
 
 ### Properties
 
-#### IsErrorPage 
+#### IsNewDocument 
 
-True if the loaded content is an error page.
+True if the page being navigated to is a new document.
 
-> public bool [IsErrorPage](#iserrorpage)
-
-#### NavigationId 
-
-The ID of the navigation.
-
-> public ulong [NavigationId](#navigationid)
+> public bool [IsNewDocument](#isnewdocument)
 
