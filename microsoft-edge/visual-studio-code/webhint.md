@@ -80,5 +80,5 @@ Send us your feedback by [filing an issue](https://github.com/webhintio/hint/iss
 To contribute to the extension, please read the [webhint VS Code extension contribution guide](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md).
 
 ## See also
-  - [Accessibility]/microsoft-edge/accessibility)
+  - [Accessibility](/microsoft-edge/accessibility)
   - [Visual Studio Code](/microsoft-edge/visual-studio-code/)
