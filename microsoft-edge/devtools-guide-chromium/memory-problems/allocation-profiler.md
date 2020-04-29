@@ -2,7 +2,7 @@
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -97,7 +97,7 @@ You are able to view memory allocation by JavaScript function.  See [Investigate
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"
+[DevToolsOpenIndex]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge (Chromium) DevTools"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: /microsoft-edge/devtools-guide-chromium/memory-problems/index#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems"  
 
 <!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
