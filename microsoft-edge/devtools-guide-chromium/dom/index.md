@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing The DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/27/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -320,7 +320,7 @@ That covers most of the DOM-related features in DevTools.  You are able to disco
 
 Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.  
 
-<!--See [Community](../index.md#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
+<!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
 
 
@@ -432,8 +432,8 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
-[DevToolsCssGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index.md "Get Started With Viewing And Changing CSS"  
-[DevToolsShortcutsElements]: /microsoft-edge/devtools-guide-chromium/shortcuts.md#elements-panel-keyboard-shortcuts "Elements panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts"  
+[DevToolsCssGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+[DevToolsShortcutsElements]: /microsoft-edge/devtools-guide-chromium/shortcuts#elements-panel-keyboard-shortcuts "Elements panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts"  
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
 
