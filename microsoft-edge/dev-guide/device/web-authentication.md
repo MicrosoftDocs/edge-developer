@@ -4,7 +4,7 @@ description: Learn how the Web Authentication API may be used to enable web appl
 title: Dev guide - Web authentication
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -297,7 +297,8 @@ dictionary WebAuthnExtensions { // Not supported
 ### Demos  
 
 *   [Client and server code samples][GithubAdrianbaFidoSnippets]  
-*   [Webauthn.js polyfill][GithubAdrianbaWebauthnJs]  <!--*   [Windows Hello Test Drive demo][AzureTestdriveFido]  -->
+*   [Webauthn.js polyfill][GithubAdrianbaWebauthnJs]  
+*   [Windows Hello Test Drive demo][AzureWebauthnsample]  
 
 ### Specification  
 
@@ -312,7 +313,7 @@ dictionary WebAuthnExtensions { // Not supported
 [PreviousVersionsMt697640]: /previous-versions/mt697640(v=vs.85) "getAssertion method | Microsoft Docs"  
 [PreviousVersionsMt697641]: /previous-versions/mt697641(v=vs.85) "makeCredential method | Microsoft Docs"  
 
-[AzureTestdriveFido]: https://testdrive-fido.azurewebsites.net "Windows Hello Test Drive demo"  <!--todo: Broken web app -->  
+[AzureWebauthnsample]: https://webauthnsample.azurewebsites.net "WebAuthn Sample App"
 
 [GithubAdrianbaFidoSnippets]: https://github.com/adrianba/fido-snippets "FIDO snippets - adrianba | GitHub"  
 [GithubAdrianbaFidoSnippetsCsharp]: https://github.com/adrianba/fido-snippets/tree/master/csharp "csharp - adrianba/fido-snippets | GitHub"  
