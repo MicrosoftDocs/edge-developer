@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing The DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/20/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -285,14 +285,14 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
         > Break on attribute modifications  
         > ![Break on attribute modifications][ImageBreakAttributeModification]  
         
-    1.  In the next step you are going to be instructed to click a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon] in order to make the page scrollable again.
+    1.  In the next step you are going to be instructed to click a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must click **Resume Script** ![Resume Script][ImageResumeScriptIcon] in order to make the page scrollable again.
         
         > ##### Figure 19  
         > Where to resume script running  
         > ![Where to resume script running][ImageResumeScript]  
         
     1.  Click the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.  
-    1.  Click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon], as mentioned earlier.  
+    1.  Click **Resume Script** ![Resume Script][ImageResumeScriptIcon], as mentioned earlier.  
     
 ### Break on node removal   
 
@@ -302,7 +302,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 1.  Under **Break on Node Removal**, right-click **Neuromancer** and select **Inspect**.  
     1.  In the DOM Tree, right-click `<li id="target">Neuromancer</li>` and select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.  
     1.  Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.  
-    1.  Click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon].  
+    1.  Click **Resume Script** ![Resume Script][ImageResumeScriptIcon].  
     
 ### Break on subtree modifications   
 
@@ -312,7 +312,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 1.  Under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and select **Inspect**.  
     1.  In the DOM Tree, right-click `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, and select **Break On** > **Subtree Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if you are not able to see this option.  
     1.  Click **Add Child**.  The code pauses because a `<li>` node was added to the list.  
-    1.  Click **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptIcon].  
+    1.  Click **Resume Script** ![Resume Script][ImageResumeScriptIcon].  
     
 ## Next steps   
 
@@ -320,7 +320,7 @@ That covers most of the DOM-related features in DevTools.  You are able to disco
 
 Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.  
 
-<!--See [Community](../index.md#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
+<!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
 
 
 
@@ -405,38 +405,39 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 
 <!-- image links -->  
 
-[ImageInspectIcon]: images/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: images/resume-script-execution-icon.msft.png  
+[ImageInspectIcon]: /microsoft-edge/devtools-guide-chromium/media/inspect-icon.msft.png  
+[ImageResumeScriptIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-icon.msft.png  
 
-[ImageInspectingNode]: images/glitch-dom-examples-michelangelo-inspect.msft.png "Figure 1: Inspecting a node"  
-[ImageHighlightingMichelangeloNode]: images/glitch-dom-examples-michelangelo-elements-highlighted.msft.png "Figure 2: Highlighting the Michelangelo node"  
-[ImageInspect]: images/elements-highlighted-select-element-page-inspect.msft.png "Figure 3: The Inspect icon"  
-[ImageInspectingRingoNode]: images/elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png "Figure 4: Inspecting the Ringo node"  
-[ImageInspectingUlNode]: images/elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png "Figure 5: Inspecting the ul node"  
-[ImageScrollView]: images/elements-highlighted-scroll-into-view-dropdown.msft.png "Figure 6: Scroll into view"  
-[ImageHighlightingQuerySearchBar]: images/elements-highlighted-search-nodes-highlight.msft.png "Figure 7: Highlighting the query in the Search bar"  
-[ImageEditingText]: images/elements-highlighted-edit-content.msft.png "Figure 8: Editing the text"  
-[ImageEditingNode]: images/elements-highlighted-edit-attributes-highlighted.msft.png "Figure 9: Editing the node"  
-[ImageAddingStyleAttributeNode]: images/elements-highlighted-edit-attributes-inline-css.msft.png "Figure 10: Adding a style attribute to the node"  
-[ImageChangingNodeButton]: images/elements-highlighted-edit-node-type-button.msft.png "Figure 11: Changing the node type to button"  
-[ImageDraggingNodeTopList]: images/elements-reorder-dom-nodes.msft.png "Figure 12: Dragging the node to the top of the list"  
-[ImageNodeDomTreeAfterHidden]: images/elements-highlighted-hide-a-node.msft.png "Figure 13: What the node looks like in the DOM Tree after it is hidden"  
-[ImageFirstConsole]: images/elements-highlighted-reference-currently-selected-node-console-1.msft.png "Figure 14: The result of the first $0 expression in the Console"  
-[ImageSecondConsole]: images/elements-highlighted-reference-currently-selected-node-console-2.msft.png "Figure 15: The result of the second $0 expression in the Console"  
-[ImageResultTemp1]: images/elements-highlighted-store-global-variable-console-temp1.msft.png "Figure 16: The result of the temp1 expression"  
-[ImageResultCopyJSPath]: images/elements-highlighted-copy-js-path-console-query-selector.msft.png "Figure 17: The result of the Copy JS Path expression"  
-[ImageBreakAttributeModification]: images/elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png "Figure 18: Break on attribute modifications"  
-[ImageResumeScript]: images/break-attribute-modifications-sources-paused-on.msft.png "Figure 19: Where to resume script running"  
-[ImageNotSeeingAllOptions]: images/elements-highlighted-right-click-right-side.msft.png "Figure 20: Where to click if you are not seeing all the options"  
+[ImageInspectingNode]: /microsoft-edge/devtools-guide-chromium/media/dom-glitch-dom-examples-michelangelo-inspect.msft.png "Figure 1: Inspecting a node"  
+[ImageHighlightingMichelangeloNode]: /microsoft-edge/devtools-guide-chromium/media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png "Figure 2: Highlighting the Michelangelo node"  
+[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-select-element-page-inspect.msft.png "Figure 3: The Inspect icon"  
+[ImageInspectingRingoNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-navigate-dom-tree-keyboard-ringo.msft.png "Figure 4: Inspecting the Ringo node"  
+[ImageInspectingUlNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png "Figure 5: Inspecting the ul node"  
+[ImageScrollView]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png "Figure 6: Scroll into view"  
+[ImageHighlightingQuerySearchBar]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-search-nodes-highlight.msft.png "Figure 7: Highlighting the query in the Search bar"  
+[ImageEditingText]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-content.msft.png "Figure 8: Editing the text"  
+[ImageEditingNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-attributes-highlighted.msft.png "Figure 9: Editing the node"  
+[ImageAddingStyleAttributeNode]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-attributes-inline-css.msft.png "Figure 10: Adding a style attribute to the node"  
+[ImageChangingNodeButton]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-edit-node-type-button.msft.png "Figure 11: Changing the node type to button"  
+[ImageDraggingNodeTopList]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-reorder-dom-nodes.msft.png "Figure 12: Dragging the node to the top of the list"  
+[ImageNodeDomTreeAfterHidden]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-hide-a-node.msft.png "Figure 13: What the node looks like in the DOM Tree after it is hidden"  
+[ImageFirstConsole]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png "Figure 14: The result of the first $0 expression in the Console"  
+[ImageSecondConsole]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png "Figure 15: The result of the second $0 expression in the Console"  
+[ImageResultTemp1]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png "Figure 16: The result of the temp1 expression"  
+[ImageResultCopyJSPath]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png "Figure 17: The result of the Copy JS Path expression"  
+[ImageBreakAttributeModification]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png "Figure 18: Break on attribute modifications"  
+[ImageResumeScript]: /microsoft-edge/devtools-guide-chromium/media/dom-break-attribute-modifications-sources-paused-on.msft.png "Figure 19: Where to resume script running"  
+[ImageNotSeeingAllOptions]: /microsoft-edge/devtools-guide-chromium/media/dom-elements-highlighted-right-click-right-side.msft.png "Figure 20: Where to click if you are not seeing all the options"  
 
 <!-- links -->  
 
-[DevToolsCssGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS"  
-[DevToolsShortcutsElements]: ../shortcuts.md#elements-panel-keyboard-shortcuts "Elements panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[DevToolsCssGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+[DevToolsShortcutsElements]: /microsoft-edge/devtools-guide-chromium/shortcuts#elements-panel-keyboard-shortcuts "Elements panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts"  
+
+[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
 
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"  
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
