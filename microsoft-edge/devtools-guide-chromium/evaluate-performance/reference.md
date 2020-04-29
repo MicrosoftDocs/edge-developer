@@ -505,7 +505,7 @@ To open the **Rendering** tab:
 1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tab at the bottom of your DevTools window.  
     
-    > ##### Figure 37  
+    > ##### Figure 38  
     > The **Rendering** tab  
     > ![The Rendering tab][ImageRenderingTab]  
     
@@ -516,7 +516,7 @@ The **FPS meter** is an overlay that appears in the top-right corner of your vie
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **FPS Meter** checkbox.  
     
-    > ##### Figure 38  
+    > ##### Figure 39  
     > The FPS meter  
     > ![The FPS meter][ImageFpsMeter]  
     
@@ -529,7 +529,7 @@ To enable Paint Flashing:
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Paint Flashing** checkbox.  
     
-    > ##### Figure 39  
+    > ##### Figure 40  
     > **Paint Flashing**  
     > ![Paint Flashing][ImagePaintFlashing]  
     
@@ -542,7 +542,7 @@ To enable Layer Borders:
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Layer Borders** checkbox.  
     
-    > ##### Figure 40  
+    > ##### Figure 41  
     > **Layer Borders**  
     > ![Layer Borders][ImageLayerBorders]  
     
@@ -558,7 +558,7 @@ To view scroll performance issues:
 1.  Open the **Rendering** tab.  See [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
 1.  Enable the **Scrolling Performance Issues** checkbox.  
  
-    > ##### Figure 41  
+    > ##### Figure 42  
     > **Scrolling Performance Issues** indicates that non-layer viewport-constrained objects may harm scroll performance  
     > ![Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance][ImageScrollingPerformanceIssues]  
     
@@ -619,12 +619,12 @@ To view scroll performance issues:
 [ImageFrameScreenshotZoom]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-summary-preview-select.msft.png "Figure 34: Zooming in on a screenshot from the Summary tab"  
 [ImageLayers]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-layers-all.msft.png "Figure 35: The Layers pane"  
 [ImageLayerHover]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png "Figure 36: Highlighting a layer"  
-[ImagePaintProfiler]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-paint-profiler.msft.png "Old Figure 37: The Paint Profiler tab"  
-[ImageRenderingTab]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-console-drawer-rendering.msft.png "Figure 37: The Rendering tab"  
-[ImageFpsMeter]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-jank-console-rendering-frame-rate.msft.png "Figure 38: The FPS meter"  
-[ImagePaintFlashing]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png "Figure 39: Paint Flashing"  
-[ImageLayerBorders]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png "Figure 40: Layer Borders"  
-[ImageScrollingPerformanceIssues]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png "Figure 41: Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance"  
+[ImagePaintProfiler]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-paint-profiler.msft.png "Figure 37: The Paint Profiler tab"  
+[ImageRenderingTab]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-console-drawer-rendering.msft.png "Figure 38: The Rendering tab"  
+[ImageFpsMeter]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-jank-console-rendering-frame-rate.msft.png "Figure 39: The FPS meter"  
+[ImagePaintFlashing]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png "Figure 40: Paint Flashing"  
+[ImageLayerBorders]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png "Figure 41: Layer Borders"  
+[ImageScrollingPerformanceIssues]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png "Figure 42: Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance"  
 
 <!-- links -->  
 
