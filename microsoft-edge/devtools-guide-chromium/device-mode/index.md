@@ -2,7 +2,7 @@
 title: Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -305,7 +305,7 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 <!-- links -->  
 
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community"  -->
-[DevToolsRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index.md "Get Started with Remote Debugging Android Devices"  
+[DevToolsRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Get Started with Remote Debugging Android Devices"  
 
 [MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"  
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User Agent | MDN"  
