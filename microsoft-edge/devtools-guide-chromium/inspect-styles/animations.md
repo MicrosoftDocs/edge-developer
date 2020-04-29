@@ -2,7 +2,7 @@
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/11/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -169,21 +169,21 @@ To add a delay to an animation, click and drag it anywhere except the circles.
 
 <!-- image links -->  
 
-[ImageAnimationSpeedButtonsIcon]: images/animation-speed-buttons-icon.msft.png  
-[ImageReplayButtonIcon]: images/replay-button-icon.msft.png  
+[ImageAnimationSpeedButtonsIcon]: /microsoft-edge/devtools-guide-chromium/media/animation-speed-buttons-icon.msft.png  
+[ImageReplayButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/replay-button-icon.msft.png  
 
-[ImageAnimationInspector]: images/elements-styles-drawer-animations-completed.msft.png "Figure 1: Animation inspector"  
-[ImageAnimationsViaMainMenu]: images/elements-styles-more-tools-animations.msft.png "Figure 2: Animations via Main Menu"  
-[ImageEmptyAnimationInspector]: images/elements-styles-drawer-animations.msft.png "Figure 3: Empty Animation Inspector"  
-[ImageAnnotatedAnimationInspector]: images/elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotated Animation Inspector"  
-[ImageAnimationGroupDetails]: images/elements-styles-drawer-animations-selected-completed.msft.png "Figure 5: Animation Group details"  
-[ImageHoverOverAnimationHighlightViewport]: images/split-elements-styles-drawer-animations-selected-completed.msft.png "Figure 6: Hover over the animation to highlight it in viewport"  
-[ImageDiagramAnimationIterations]: images/glitch-display-animations-highlight.msft.png "Figure 7: Diagram of animation iterations"  
-[ImageColorCodedAnimations]: images/glitch-display-animations.msft.png "Figure 8: Color-coded animations"  
-[ImageOriginalAnimationBeforeModification]: images/glitch-spin-animations-console-animations.msft.png "Figure 9: Original animation before modification"  
-[ImageModifiedDuration]: images/glitch-spin-animations-console-animations-shorter.msft.png "Figure 10: Modified duration"  
-[ImageModifiedKeyframe]: images/glitch-spin-animations-console-animations-keyframe-modification.msft.png "Figure 11: Modified keyframe"  
-[ImageModifiedDelay]: images/glitch-spin-animations-console-animations-delay.msft.png "Figure 12: Modified delay"  
+[ImageAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-completed.msft.png "Figure 1: Animation inspector"  
+[ImageAnimationsViaMainMenu]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-more-tools-animations.msft.png "Figure 2: Animations via Main Menu"  
+[ImageEmptyAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations.msft.png "Figure 3: Empty Animation Inspector"  
+[ImageAnnotatedAnimationInspector]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-selected-paused.msft.png "Figure 4: Annotated Animation Inspector"  
+[ImageAnimationGroupDetails]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png "Figure 5: Animation Group details"  
+[ImageHoverOverAnimationHighlightViewport]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png "Figure 6: Hover over the animation to highlight it in viewport"  
+[ImageDiagramAnimationIterations]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-display-animations-highlight.msft.png "Figure 7: Diagram of animation iterations"  
+[ImageColorCodedAnimations]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-display-animations.msft.png "Figure 8: Color-coded animations"  
+[ImageOriginalAnimationBeforeModification]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations.msft.png "Figure 9: Original animation before modification"  
+[ImageModifiedDuration]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png "Figure 10: Modified duration"  
+[ImageModifiedKeyframe]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png "Figure 11: Modified keyframe"  
+[ImageModifiedDelay]: /microsoft-edge/devtools-guide-chromium/media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png "Figure 12: Modified delay"  
 
 <!-- links -->  
 
