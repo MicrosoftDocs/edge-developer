@@ -3,7 +3,7 @@ description: Microsoft Edge Addons Catalog Developer Policies.
 title: Microsoft Edge Addons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -63,7 +63,7 @@ Extensions with obfuscated code are not allowed.  This includes code within the 
 
 #### 1.1.8 Altering Browser Settings  
 
-Your Extension must **not, without appropriate user consent**, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favourite.  
+Your Extension must **not, without appropriate user consent**, alter, or appear to alter, browser functionality or settings including, but not limited to: the address bar search provider and suggestions, the start or home page, the new tab page, and adding or removing favorite.  
 
 Any alteration to the browser settings should be explicitly documented in the description of the Extension.  
 
@@ -315,13 +315,13 @@ If your Extension provides content \(such as user-generated, retail, or other we
 
 ### 2.13 Videos  
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [https://support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [https://support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
+If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy \(CSP\) "  
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy \(CSP\) | Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 [MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
@@ -333,4 +333,4 @@ If you submit a promotional video in the listing, it should follow all the conte
 [MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"  
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
