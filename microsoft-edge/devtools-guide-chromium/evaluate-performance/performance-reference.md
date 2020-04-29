@@ -2,7 +2,7 @@
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/31/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -150,9 +150,9 @@ This section lists events that belong to Painting category and their properties.
 
 <!-- links -->
 
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api.md#time "time - Console API Reference"  
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api.md#timeend "timeEnd - Console API Reference"  
-<!--[EvaluatePerformanceTimelineTool]: timeline-tool.md "How to Use the Timeline Tool"  -->
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"  
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"  
+<!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
 [MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"  
 [MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"  
