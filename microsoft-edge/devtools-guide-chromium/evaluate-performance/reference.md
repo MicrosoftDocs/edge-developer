@@ -2,7 +2,7 @@
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/18/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,7 +33,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.  
 
-See [Get Started With Analyzing Runtime Performance][EvaluatePerformanceGettingStarted] for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+See [Get Started With Analyzing Runtime Performance][DevtoolsEvaluatePerformanceGettingStarted] for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## Record performance   
 
@@ -569,71 +569,71 @@ To view scroll performance issues:
 
 <!-- image links -->  
 
-[ImageCaptureSettingsIcon]: images/capture-settings-icon.msft.png  
-[ImageClearRecordingIcon]: images/clear-recording-icon.msft.png  
-[ImageCollectGarbageIcon]: images/collect-garbage-icon.msft.png  
-[ImageNextIcon]: images/next-icon.msft.png  
-[ImagePanModeIcon]: images/pan-mode-icon.msft.png  
-[ImagePreviousIcon]: images/previous-icon.msft.png  
-[ImageRecordIcon]: images/record-icon.msft.png
-[ImageRefreshPageIcon]: images/reload-page-icon.msft.png  
-[ImageResetTransformIcon]: images/reset-transform-icon.msft.png  
-[ImageRotateModeIcon]: images/rotate-mode-icon.msft.png  
-[ImageSearchCaseIcon]: images/search-case-icon.msft.png  
-[ImageSearchRegexIcon]: images/search-regex-icon.msft.png  
-[ImageShowHeaviestStackIcon]: images/show-heaviest-stack-icon.msft.png  
+[ImageCaptureSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-settings-icon.msft.png  
+[ImageClearRecordingIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-recording-icon.msft.png  
+[ImageCollectGarbageIcon]: /microsoft-edge/devtools-guide-chromium/media/collect-garbage-icon.msft.png  
+[ImageNextIcon]: /microsoft-edge/devtools-guide-chromium/media/next-icon.msft.png  
+[ImagePanModeIcon]: /microsoft-edge/devtools-guide-chromium/media/pan-mode-icon.msft.png  
+[ImagePreviousIcon]: /microsoft-edge/devtools-guide-chromium/media/previous-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png  
+[ImageResetTransformIcon]: /microsoft-edge/devtools-guide-chromium/media/reset-transform-icon.msft.png  
+[ImageRotateModeIcon]: /microsoft-edge/devtools-guide-chromium/media/rotate-mode-icon.msft.png  
+[ImageSearchCaseIcon]: /microsoft-edge/devtools-guide-chromium/media/search-case-icon.msft.png  
+[ImageSearchRegexIcon]: /microsoft-edge/devtools-guide-chromium/media/search-regex-icon.msft.png  
+[ImageShowHeaviestStackIcon]: /microsoft-edge/devtools-guide-chromium/media/show-heaviest-stack-icon.msft.png  
 
-[ImageRecord]: images/performance-record-highlight.msft.png "Figure 1: Record"  
-[ImageRefreshPage]: images/performance-refresh-button.msft.png "Figure 2: Refresh page"  
-[ImageLoadRecording]: images/performance-refreshed.msft.png "Figure 3: A page-load recording"  
-[ImageScreenshots]: images/performance-capture-screenshots-checkbox.msft.png "Figure 4: The Screenshots checkbox"  
-[ImageCollectGarbage]: images/performance-collect-garbage-button.msft.png "Figure 5: Collect garbage"  
-[ImageCaptureSettings]: images/performance-capture-settings-button-open-drawer.msft.png "Figure 6: The Capture Settings section"  
-[ImageJSSamplesDisabled]: images/performance-refreshed-disable-javascript-samples-checkbox-on.msft.png "Figure 7: An example of a recording when JS samples are disabled"  
-[ImageJSSamplesEnabled]: images/performance-refreshed-disable-javascript-samples-checkbox-off.msft.png "Figure 8: An example of a recording when JS samples are enabled"  
-[ImageSaveProfile]: images/performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png "Figure 9: Save Profile"  
-[ImageLoadProfile]: images/performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png "Figure 10: Load Profile"  
-[ImageClearRecording]: images/performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png "Figure 11: Clear recording"  
-[ImageZoom]: images/performance-zoom-highlighted.msft.png "Figure 12: Dragging the mouse across the Overview to zoom"  
-[ImageSearch]: images/performance-search-regex.msft.png "Figure 13: The search box"  
-[ImageMain]: images/performance-main-zoomed.msft.png "Figure 14: The Main section"  
-[ImageMainEventSummary]: images/performance-summary-me.msft.png "Figure 15: More information about the anonymous function in the Summary tab"  
-[ImageFlameChart]: images/performance-main-flame-chart.msft.png "Figure 16: A flame chart"  
-[ImageCallTree]: images/performance-call-tree.msft.png "Figure 17: The Call Tree tab"  
-[ImageBottomUp]: images/performance-bottoms-up.msft.png "Figure 18: The Bottom-Up tab"  
-[ImageEventLog]: images/performance-event-log.msft.png "Figure 19: The Event Log tab"  
-[ImageGpu]: images/performance-gpu-zoomed.msft.png "Figure 20: The GPU section"  
-[ImageRaster]: images/performance-raster.msft.png "Figure 21: The Raster section"  
-[ImageInteractions]: images/performance-interactions-animation.msft.png "Figure 22: The Interactions section"  
-[ImageFpsChart]: images/performance-fps-highlight.msft.png "Figure 23: The FPS chart"  
-[ImageFramesSection]: images/performance-frames-hover.msft.png "Figure 24: Hovering over a frame"  
-[ImageFrameSummary]: images/performance-frames-summary.msft.png "Figure 25: Viewing a frame in the Summary tab"  
-[ImageNetworkRequest]: images/performance-network.msft.png "Figure 26: The Network section"  
-[ImageLineBar]: images/bing-performance-network.msft.png "Figure 27: The line-bar representation of the www.bing.com request"  
-[ImageTiming]: images/bing-network-timing.msft.png "Figure 28: The Network section"  
-[ImageMemory]: images/performance-memory-highlight.msft.png "Figure 29: The Memory checkbox"  
-[ImageMemoryMetrics]: images/performance-memory-chart.msft.png "Figure 30: Memory metrics"  
-[ImageDuration]: images/performance-main-duration.msft.png "Figure 31: Viewing the duration of a portion of a recording"  
-[ImageViewScreenshot]: images/performance-screenshots-hover.msft.png "Figure 32: Viewing a screenshot"  
-[ImageFrameScreenshotSummary]: images/performance-summary-preview.msft.png "Figure 33: Viewing a screenshot in the Summary tab"  
-[ImageFrameScreenshotZoom]: images/performance-summary-preview-select.msft.png "Figure 34: Zooming in on a screenshot from the Summary tab"  
-[ImageLayers]: images/layers-all.msft.png "Figure 35: The Layers pane"  
-[ImageLayerHover]: images/performance-frames-document-nav-bar-highlighted.msft.png "Figure 36: Highlighting a layer"  
-[ImagePaintProfiler]: images/paint-profiler.msft.png "Old Figure 37: The Paint Profiler tab"  
-[ImageRenderingTab]: images/console-drawer-rendering.msft.png "Figure 37: The Rendering tab"  
-[ImageFpsMeter]: images/jank-console-rendering-frame-rate.msft.png "Figure 38: The FPS meter"  
-[ImagePaintFlashing]: images/jank-console-rendering-paint-flashing.msft.png "Figure 39: Paint Flashing"  
-[ImageLayerBorders]: images/devtools-console-rendering-layer-borders.msft.png "Figure 40: Layer Borders"  
-[ImageScrollingPerformanceIssues]: images/bing-console-drawer-rendering-scrolling-performance-issues.msft.png "Figure 41: Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance"  
+[ImageRecord]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-record-highlight.msft.png "Figure 1: Record"  
+[ImageRefreshPage]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refresh-button.msft.png "Figure 2: Refresh page"  
+[ImageLoadRecording]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refreshed.msft.png "Figure 3: A page-load recording"  
+[ImageScreenshots]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png "Figure 4: The Screenshots checkbox"  
+[ImageCollectGarbage]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-collect-garbage-button.msft.png "Figure 5: Collect garbage"  
+[ImageCaptureSettings]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png "Figure 6: The Capture Settings section"  
+[ImageJSSamplesDisabled]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-on.msft.png "Figure 7: An example of a recording when JS samples are disabled"  
+[ImageJSSamplesEnabled]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png "Figure 8: An example of a recording when JS samples are enabled"  
+[ImageSaveProfile]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png "Figure 9: Save Profile"  
+[ImageLoadProfile]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png "Figure 10: Load Profile"  
+[ImageClearRecording]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png "Figure 11: Clear recording"  
+[ImageZoom]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-zoom-highlighted.msft.png "Figure 12: Dragging the mouse across the Overview to zoom"  
+[ImageSearch]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-search-regex.msft.png "Figure 13: The search box"  
+[ImageMain]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-main-zoomed.msft.png "Figure 14: The Main section"  
+[ImageMainEventSummary]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-summary-me.msft.png "Figure 15: More information about the anonymous function in the Summary tab"  
+[ImageFlameChart]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-main-flame-chart.msft.png "Figure 16: A flame chart"  
+[ImageCallTree]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-call-tree.msft.png "Figure 17: The Call Tree tab"  
+[ImageBottomUp]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-bottoms-up.msft.png "Figure 18: The Bottom-Up tab"  
+[ImageEventLog]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-event-log.msft.png "Figure 19: The Event Log tab"  
+[ImageGpu]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-gpu-zoomed.msft.png "Figure 20: The GPU section"  
+[ImageRaster]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-raster.msft.png "Figure 21: The Raster section"  
+[ImageInteractions]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-interactions-animation.msft.png "Figure 22: The Interactions section"  
+[ImageFpsChart]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-fps-highlight.msft.png "Figure 23: The FPS chart"  
+[ImageFramesSection]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-frames-hover.msft.png "Figure 24: Hovering over a frame"  
+[ImageFrameSummary]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-frames-summary.msft.png "Figure 25: Viewing a frame in the Summary tab"  
+[ImageNetworkRequest]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-network.msft.png "Figure 26: The Network section"  
+[ImageLineBar]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-bing-performance-network.msft.png "Figure 27: The line-bar representation of the www.bing.com request"  
+[ImageTiming]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-bing-network-timing.msft.png "Figure 28: The Network section"  
+[ImageMemory]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-memory-highlight.msft.png "Figure 29: The Memory checkbox"  
+[ImageMemoryMetrics]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-memory-chart.msft.png "Figure 30: Memory metrics"  
+[ImageDuration]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-main-duration.msft.png "Figure 31: Viewing the duration of a portion of a recording"  
+[ImageViewScreenshot]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-screenshots-hover.msft.png "Figure 32: Viewing a screenshot"  
+[ImageFrameScreenshotSummary]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-summary-preview.msft.png "Figure 33: Viewing a screenshot in the Summary tab"  
+[ImageFrameScreenshotZoom]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-summary-preview-select.msft.png "Figure 34: Zooming in on a screenshot from the Summary tab"  
+[ImageLayers]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-layers-all.msft.png "Figure 35: The Layers pane"  
+[ImageLayerHover]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png "Figure 36: Highlighting a layer"  
+[ImagePaintProfiler]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-paint-profiler.msft.png "Old Figure 37: The Paint Profiler tab"  
+[ImageRenderingTab]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-console-drawer-rendering.msft.png "Figure 37: The Rendering tab"  
+[ImageFpsMeter]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-jank-console-rendering-frame-rate.msft.png "Figure 38: The FPS meter"  
+[ImagePaintFlashing]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png "Figure 39: Paint Flashing"  
+[ImageLayerBorders]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png "Figure 40: Layer Borders"  
+[ImageScrollingPerformanceIssues]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png "Figure 41: Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance"  
 
 <!-- links -->  
 
-[EvaluatePerformanceGettingStarted]: index.md "Get Started With Analyzing Runtime Performance"  
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run Commands With The Microsoft Edge DevTools Command Menu"  
-
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index#open-the-command-menu "Open the Command Menu - Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevtoolsEvaluatePerformanceGettingStarted]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index "Get Started With Analyzing Runtime Performance"  
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Activity Tabs Demo"  
+
 [ChromiumDebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - Code Search"  
 
 > [!NOTE]

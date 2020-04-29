@@ -2,7 +2,7 @@
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/09/2020
+ms.date: 04/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,7 +37,7 @@ The timeline events mode displays all events triggered while making a recording.
 Certain details are present in events of all types, while some only apply to certain event types.  This section lists properties common to different event types.  Properties specific to certain event types are listed in the references for those event types that follow.  
 
 | Property | When is it shown |  
-| --- |:--- |  
+|:--- |:--- |  
 | Aggregated time | For events with **nested events**, the time taken by each category of events. |  
 | Call Stack | For events with **child events**, the time taken by each category of events. |  
 | CPU time | How much CPU time the recorded event took. |  
@@ -53,7 +53,7 @@ Certain details are present in events of all types, while some only apply to cer
 This section lists events that belong to Loading category and their properties.  
 
 | Event | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Parse HTML |  Microsoft Edge ran the HTML parsing algorithm. |  
 | Finish Loading |  A network request completed. |  
 | Receive Data |  Data for a request was received.  There are one or more Receive Data events. |  
@@ -63,7 +63,7 @@ This section lists events that belong to Loading category and their properties.
 ### Loading event properties  
 
 | Property | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Resource | The URL of the requested resource. |  
 | Preview | Preview of the requested resource \(images only\). |  
 | Request Method | HTTP method used for the request \(`GET` or `POST`, for example\). |  
@@ -76,19 +76,19 @@ This section lists events that belong to Loading category and their properties.
 This section lists events that belong to the Scripting category and their properties.  
 
 | Event | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |  
 | Cancel Animation Frame |  A scheduled animation frame was canceled. |  
 | GC Event |  Garbage collection occurred. |  
-| DOMContentLoaded |  The [`DOMContentLoaded` event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page's DOM content has been loaded and parsed.|
+| DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page's DOM content has been loaded and parsed. |  
 | Evaluate Script | A script was evaluated. |  
-| Event | A JavaScript event \(`mousedown`, or `key`, for example\). |  
+| Event | A JavaScript event \(for example, `mousedown`, or `key`\). |  
 | Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |  
-| Install Timer | A timer was created with [`setInterval()`][MDNWindowOrWorkerGlobalScopeSetInterval] or [`setTimeout()`][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
+| Install Timer | A timer was created with [setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] or [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |  
 | Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |  
 | Remove Timer | A previously created timer was cleared. |  
-| Time |  A script called [`console.time()`][ConsoleApiTime]. |  
-| Time End | A script called [`console.timeEnd()`][ConsoleApiTimeEnd]. |  
+| Time |  A script called [console.time()][ConsoleApiTime]. |  
+| Time End | A script called [console.timeEnd()][ConsoleApiTimeEnd]. |  
 | Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |  
 | XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |  
 | XHR Load | An `XMLHTTPRequest` finished loading. |  
@@ -96,7 +96,7 @@ This section lists events that belong to the Scripting category and their proper
 ### Scripting event properties  
 
 | Property | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Timer ID | The timer ID. |  
 | Timeout | The timeout specified by the timer. |  
 | Repeats | Boolean that specifies if the timer repeats. |  
@@ -107,7 +107,7 @@ This section lists events that belong to the Scripting category and their proper
 This section lists events that belong to Rendering category and their properties.  
 
 | Event | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Invalidate layout | The page layout was invalidated by a DOM change. |  
 | Layout | A page layout was completed. |  
 | Recalculate style | Microsoft Edge recalculated element styles. |  
@@ -116,7 +116,7 @@ This section lists events that belong to Rendering category and their properties
 ### Rendering event properties  
 
 | Property | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Layout invalidated | For Layout records, the stack trace of the code that caused the layout to be invalidated. |  
 | Nodes that need layout | For Layout records, the number of nodes that were marked as needing layout before the relayout started.  These are normally those nodes that were invalidated by developer code, plus a path upward to relayout root. |  
 | Layout tree size | For Layout records, the total number of nodes under the relayout root \(the node that Microsoft Edge starts the relayout\). |  
@@ -129,7 +129,7 @@ This section lists events that belong to Rendering category and their properties
 This section lists events that belong to Painting category and their properties.  
 
 | Event | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Composite Layers | The composited image layers for the Microsoft Edge rendering engine. |  
 | Image Decode | An image resource was decoded. |  
 | Image Resize | An image was resized from its native dimensions. |  
@@ -138,7 +138,7 @@ This section lists events that belong to Painting category and their properties.
 ### Painting event properties  
 
 | Property | Description |  
-| --- |:--- |  
+|:--- |:--- |  
 | Location | For Paint events, the x and y coordinates of the paint rectangle. |  
 | Dimensions | For Paint events, the height and width of the painted region. |  
 
@@ -150,9 +150,9 @@ This section lists events that belong to Painting category and their properties.
 
 <!-- links -->
 
-[ConsoleApiTime]: ../console/api.md#time "time - Console API Reference"  
-[ConsoleApiTimeEnd]: ../console/api.md#timeend "timeEnd - Console API Reference"  
-<!--[EvaluatePerformanceTimelineTool]: timeline-tool.md "How to Use the Timeline Tool"  -->
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"  
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"  
+<!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
 
 [MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"  
 [MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"  
