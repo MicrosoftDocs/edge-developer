@@ -368,11 +368,6 @@
 ##### [CoreWebView2SourceChangedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs.md)
 ##### [CoreWebView2WebMessageReceivedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.md)
 ##### [CoreWebView2WebResourceRequestedEventArgs](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.md)
-#### Experimental
-##### [CoreWebView2ExperimentalCompositionController](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2ExperimentalCompositionController.md)
-##### [CoreWebView2ExperimentalEnvironment](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2ExperimentalEnvironment.md)
-##### [CoreWebView2ExperimentalPointerInfo](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2ExperimentalPointerInfo.md)
-##### [CoreWebView2Matrix4x4](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2Matrix4x4.md)
 ### [WinForms](webview2/reference/winforms/0.9.494-reference-webview2.md)
 #### [WebView2 Class](webview2/reference/winforms/0.9.494/Microsoft.Web.WebView2.WinForms.WebView2.md)
 ### [WPF](webview2/reference/wpf/0.9.494-reference-webview2.md)

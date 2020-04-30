@@ -37,9 +37,6 @@ CoreWebView2DevToolsProtocolEventReceivedEventArgs | Event args for the DevTools
 CoreWebView2DevToolsProtocolEventReceiver | A Receiver is created for a particular DevTools Protocol event and allows you to subscribe and unsubscribe from that event.
 CoreWebView2Environment | This represents the WebView2 Environment.
 CoreWebView2EnvironmentOptions | Options used to create WebView2 Environment.
-CoreWebView2ExperimentalCompositionController | This class is an extension of the CoreWebView2Controller class to support visual hosting.
-CoreWebView2ExperimentalEnvironment | This class is an extension of the CoreWebView2Environment.
-CoreWebView2ExperimentalPointerInfo | This mostly represents a combined win32 POINTER_INFO/POINTER_TOUCH_INFO/POINTER_PEN_INFO object.
 CoreWebView2MoveFocusRequestedEventArgs | Event args for the MoveFocusRequested event.
 CoreWebView2NavigationCompletedEventArgs | Event args for the NavigationCompleted event.
 CoreWebView2NavigationStartingEventArgs | Event args for the NavigationStarting event.
@@ -52,7 +49,6 @@ CoreWebView2SourceChangedEventArgs | Event args for the SourceChanged event.
 CoreWebView2WebMessageReceivedEventArgs | Event args for the WebMessageReceived event.
 CoreWebView2WebResourceRequestedEventArgs | Event args for the WebResourceRequested event.
 EdgeNotFoundException | The exception that is thrown when an Edge installation is missing.
-CoreWebView2Matrix4x4 | This transform is used to calculate correct coordinates when calling CreateCoreWebView2PointerInfoFromPointerId.
 CoreWebView2PhysicalKeyStatus | A structure representing the information packed into the LPARAM given to a Win32 key event.
 
 ## Members
