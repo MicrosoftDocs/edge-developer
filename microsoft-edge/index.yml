@@ -9,7 +9,8 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 03/27/2020
+  ms.date: 04/23/2020
+  localization_priority: Priority
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -53,6 +54,8 @@ productDirectory:
     - title: Deploy and update Microsoft Edge
       imageSrc: /media/common/i_reference.svg
       links:
+        - url: /deployedge/microsoft-edge-video-deploy
+          text: Video - Deploy Microsoft Edge
         - url: /configmgr/apps/deploy-use/deploy-edge
           text: Deploy to Windows
         - url: /intune/apps/apps-edge-macos
@@ -71,6 +74,8 @@ productDirectory:
       links:
         - url: /deployedge/security-overview
           text: Security
+        - url: /deployedge/microsoft-edge-privacy-policy
+          text: Privacy
     # Card
     - title: Policy reference
       imageSrc: /media/common/i_policy.svg
@@ -332,5 +337,4 @@ additionalContent:
         # Card
         - title: End User Support
           summary: Helpful support resources for end users is available.
-          url: https://support.microsoft.com/hub/4337664/microsoft-edge-help
-          
+          url: https://support.microsoft.com/microsoft-edge

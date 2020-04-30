@@ -3,16 +3,48 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps Release Notes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/20/2020
+ms.date: 04/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # WebView2 SDK release notes  
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
+
+## 0.9.488
+
+[NuGet package][WebView2NuGetGallery0.9.488] | minimum Microsoft Edge version 84.0.488.0.
+
+**Re-compile your app after updating the NuGet package.** 
+
+*   **Announcement:** Starting with the upcoming Microsoft Edge version 83, evergreen WebView will no longer target the Stable browser channel. Instead, it will target another set of binaries, branded [Microsoft Edge WebView2 Runtime](../webview2.md#microsoft-edge-webview2-runtime), that can be chain-installed through an installer we are currently developing. More details in [App-Distribution](../webview2.md#app-distribution).
+*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Microsoft Edge WebView2 SDK](../webview2.md#microsoft-edge-webview2-sdk) to learn about the differences.
+*   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
+    -  CORE_WEBVIEW2_* prefix is now COREWEBVIEW2_*. 
+    -  [GetCoreWebView2BrowserVersionInfo](reference/Archived/0.9.430/webview2.idl.md#getcorewebview2browserversioninfo) is now [GetAvailableCoreWebView2BrowserVersionString](reference/webview2.idl.md#getavailablecorewebview2browserversionstring)
+    -   [get_BrowserVersionInfo](reference/Archived/0.9.430/icorewebview2environment.md#get_browserversioninfo) is now [get_BrowserVersionString](reference/icorewebview2environment.md#get_browserversionstring)
+    - [AddRemoteObject](reference/Archived/0.9.430/icorewebview2.md#addremoteobject) is now [AddHostObjectToScript](reference/icorewebview2.md#addhostobjecttoscript)
+    - [RemoveRemoteObject](reference/Archived/0.9.430/icorewebview2.md#removeremoteobject) is now [RemoveHostObjectFromScript](reference/icorewebview2.md#removehostobjectfromscript)
+    - chrome.webview.remoteObjects is now chrome.webview.hostObjects
+*   **Breaking Change:** The AddRemoteObject JS proxy methods have been also been renamed. 
+    - getLocal is now getLocalProperty
+	- setLocal is now setLocalProperty
+	- getRemote is now getHostProperty
+	- setRemote is now setHostProperty
+	- applyRemote is now applyHostFunction
+*   **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/webview2.idl.md#createcorewebview2environmentwithdetails) is now deprecated and has been replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/webview2.idl.md#createcorewebview2environmentwithoptions).  
+*   Added [FrameNavigationCompleted](reference/icorewebview2.md#add_framenavigationcompleted) Event. Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.
+*   Added [ICoreWebView2EnvironmentOptions](reference/ICoreWebView2EnvironmentOptions.md) interface, which can be used to determine the version of the WebView2 Runtime the application targets.
+*   Added [IsBuiltInErrorPageEnabled](reference/ICoreWebView2Settings.md#get_isbuiltinerrorpageenabled) setting. Now, you can chose to enable or disable the built in error page for navigation failure and render process failure.
+*   Updated Remote Object Injection to support .NET IDispatch implementations. ([#113](https://github.com/MicrosoftEdge/WebViewFeedback/issues/113))
+*   Updated [NewWindowRequested](reference/icorewebview2.md#add_newwindowrequested) event to handle requests from context menus. ([#108](https://github.com/MicrosoftEdge/WebViewFeedback/issues/108))
+*   Released our first separate pre-release package where you can access visual hosting APIs. We have updated [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) to include these new experimental APIs.
+    - Added [ICoreWebView2ExperimentalCompositionController](reference/ICoreWebView2ExperimentalCompositionController.md) interface, which is used to connect to a composition tree and provide input meant for the WebView.
+    - Added [ICoreWebView2ExperimentalPointerInfo](reference/ICoreWebView2ExperimentalPointerInfo.md) which contains all the information from a POINTER_INFO. It is passed to SendPointerInput to inject pointer input into the WebView.
+    - Added [ICoreWebView2ExperimentalCursorChangedEventHandler](reference/ICoreWebView2ExperimentalCursorChangedEventHandler.md) which tells the app when the mouse cursor over the WebView should be changed. When mouse is over a text box in the WebView, the cursor changes from the arrow to the selector. The cursor property on the CompositionController tells the app what the mouse cursor should currently be for the WebView.
 
 ## 0.9.430
 
@@ -22,23 +54,23 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 This SDK is our official Win32 C++ Beta version, which incorporates several feature requests we have received. We have tried to limit the number of releases with breaking changes, but as we approach our general availability we are using our Beta release to incorporate several major breaking changes in one go.
 
-*   **Breaking Change:**  As we approach our final release we renamed the prefix *IWebView2WebView* to *ICoreWebView2* in order to make sure that our API aligns with the Windows API naming convention. Additionally, in order to make our SDK extensible to be used by UI frameworks, we have separated ICoreWebView2 into [ICoreWebView2](reference/icorewebview2.md) and [ICoreWebView2Host](reference/icorewebview2host.md). ICoreWebView2Host supports resizing, showing and hiding, focusing, and other functionality related to windowing and composition. ICoreWebView2 supports all other WebView2 functionality. To learn more about incorporating these changes, checkout our [pull request](https://github.com/MicrosoftEdge/WebView2Samples/pull/17) in our [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) project.
-*   **Breaking Change:** Split [DocumentStateChanged](reference/Archived/0.8.355/iwebview2webview.md#add_documentstatechanged) into three components: [SourceChanged](reference/icorewebview2.md#add_sourcechanged), [ContentLoading](reference/icorewebview2.md#add_contentloading), and [HistoryChanged](reference/icorewebview2.md#add_historychanged). Now, when the source URL changes the SourceChanged event is fired. When the history state is changed the HistoryChanged event is fired. The ContentLoading event is fired before the initial script when a new document is being loaded.
+*   **Breaking Change:**  As we approach our final release we renamed the prefix *IWebView2WebView* to *ICoreWebView2* in order to make sure that our API aligns with the Windows API naming convention. Additionally, in order to make our SDK extensible to be used by UI frameworks, we have separated ICoreWebView2 into [ICoreWebView2](reference/Archived/0.9.430/icorewebview2.md) and [ICoreWebView2Host](reference/Archived/0.9.430/icorewebview2host.md). ICoreWebView2Host supports resizing, showing and hiding, focusing, and other functionality related to windowing and composition. ICoreWebView2 supports all other WebView2 functionality. To learn more about incorporating these changes, checkout our [pull request](https://github.com/MicrosoftEdge/WebView2Samples/pull/17) in our [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) project.
+*   **Breaking Change:** Split [DocumentStateChanged](reference/Archived/0.8.355/iwebview2webview.md#add_documentstatechanged) into three components: [SourceChanged](reference/Archived/0.9.430/icorewebview2.md#add_sourcechanged), [ContentLoading](reference/Archived/0.9.430/icorewebview2.md#add_contentloading), and [HistoryChanged](reference/Archived/0.9.430/icorewebview2.md#add_historychanged). Now, when the source URL changes the SourceChanged event is fired. When the history state is changed the HistoryChanged event is fired. The ContentLoading event is fired before the initial script when a new document is being loaded.
 *   Added support for ARM64 architecture
 *   Added Soft Input Panel (SIP) support for touch screen devices
 *   Added support for `Windows Server 2008 R2`, `Windows Server 2012/2012 R2`, and `Windows Server 2016`
-*   Added [NotifyParentWindowPositionChanged](reference/icorewebview2host.md#notifyparentwindowpositionchanged) which allows for the status bar to follow the window in windowed mode. This will also need to be implemented in windowless mode in order for accessibility features to work.
-*   Added [AreRemoteObjectsAllowed](reference/icorewebview2settings.md#get_areremoteobjectsallowed) setting to globally control whether a page can be accessed by any remote objects. By default, AreRemoteObjectsAllowed is enabled, meaning remote objects added by [AddRemoteObject](reference/icorewebview2.md#addremoteobject) are accessible from the page. When AreRemoteObjectsAllowed is disabled, the objects will not be accessible from the page. Changes will be applied on the next navigation event.
-*   Added [IsZoomControlEnabled](reference/icorewebview2settings.md#get_iszoomcontrolenabled) setting to prevent users from impacting the zoom of the WebView using `ctrl` + `+`/`-` or `ctrl` + mouse wheel. Zoom can still be set via [put_ZoomFactor](reference/icorewebview2host.md#put_zoomfactor) when this setting is disabled.  
-*   Changed ZoomFactor to only apply to the current WebView. Zoom changes to the current WebView do not impact other WebViews that happen to be on the same site of origin. See [get_ZoomFactor](reference/icorewebview2host.md#get_zoomfactor) for more details.
+*   Added [NotifyParentWindowPositionChanged](reference/Archived/0.9.430/icorewebview2host.md#notifyparentwindowpositionchanged) which allows for the status bar to follow the window in windowed mode. This will also need to be implemented in windowless mode in order for accessibility features to work.
+*   Added [AreRemoteObjectsAllowed](reference/Archived/0.9.430/icorewebview2settings.md#get_areremoteobjectsallowed) setting to globally control whether a page can be accessed by any remote objects. By default, AreRemoteObjectsAllowed is enabled, meaning remote objects added by [AddRemoteObject](reference/Archived/0.9.430/icorewebview2.md#addremoteobject) are accessible from the page. When AreRemoteObjectsAllowed is disabled, the objects will not be accessible from the page. Changes will be applied on the next navigation event.
+*   Added [IsZoomControlEnabled](reference/Archived/0.9.430/icorewebview2settings.md#get_iszoomcontrolenabled) setting to prevent users from impacting the zoom of the WebView using `ctrl` + `+`/`-` or `ctrl` + mouse wheel. Zoom can still be set via [put_ZoomFactor](reference/Archived/0.9.430/icorewebview2host.md#put_zoomfactor) when this setting is disabled.  
+*   Changed ZoomFactor to only apply to the current WebView. Zoom changes to the current WebView do not impact other WebViews that happen to be on the same site of origin. See [get_ZoomFactor](reference/Archived/0.9.430/icorewebview2host.md#get_zoomfactor) for more details.
 *   Hid ZoomView UI for WebView. ([#95](https://github.com/MicrosoftEdge/WebViewFeedback/issues/95))
-*   Added [SetBoundsAndZoomFactor](reference/icorewebview2host.md#setboundsandzoomfactor). Now, you can set the zoom factor and bounds of a WebView at the same time.
-*   Added [WindowCloseRequested](reference/icorewebview2.md#add_windowcloserequested) event. See [add_WindowCloseRequested](reference/icorewebview2.md#add_windowcloserequested) for more details. ([#119](https://github.com/MicrosoftEdge/WebViewFeedback/issues/119))
-*   Added support for the beforeunload dialog type for javascript dialog events and added [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD](reference/icorewebview2.md#core_webview2_script_dialog_kind) enum entry.
-*   Added [GetHeaders](reference/icorewebview2httprequestheaders.md#getheaders) to HttpRequestHeaders, [GetHeader](reference/icorewebview2httpresponseheaders.md#getheader) to HttpResponseHeaders, and [get_HasCurrentHeader](reference/icorewebview2httpheaderscollectioniterator.md#get_hascurrentheader) property to HttpHeadersCollectionIterator.
-*   **Breaking Change:** Modified DevToolsProtocolEventReceived behavior. Now, you can create a [DevToolsProtocolEventReceiver](reference/icorewebview2devtoolsprotocoleventreceiver.md) for a particular DevTools Protocol event and subscribe/unsubscribe to such event using [add_DevToolsProtocolEventReceived](reference/icorewebview2devtoolsprotocoleventreceiver.md#add_devtoolsprotocoleventreceived)/[remove_DevToolsProtocolEventReceived](reference/icorewebview2devtoolsprotocoleventreceiver.md#remove_devtoolsprotocoleventreceived).
-*   **Breaking Change:** Changed WebMessageReceivedEventArgs' [get_WebMessageAsString](reference/Archived/0.8.355/iwebview2webmessagereceivedeventargs.md#get_webmessageasstring) property to a [TryGetWebMessageAsString](reference/icorewebview2webmessagereceivedeventargs.md#trygetwebmessageasstring) method.
-*   **Breaking Change:** Changed AcceleratorKeyPressedEventArgs' [Handle](reference/Archived/0.8.355/iwebview2acceleratorkeypressedeventargs.md#handle) method to a [get_Handled](reference/icorewebview2acceleratorkeypressedeventargs.md#get_handled) property.
+*   Added [SetBoundsAndZoomFactor](reference/Archived/0.9.430/icorewebview2host.md#setboundsandzoomfactor). Now, you can set the zoom factor and bounds of a WebView at the same time.
+*   Added [WindowCloseRequested](reference/Archived/0.9.430/icorewebview2.md#add_windowcloserequested) event. See [add_WindowCloseRequested](reference/Archived/0.9.430/icorewebview2.md#add_windowcloserequested) for more details. ([#119](https://github.com/MicrosoftEdge/WebViewFeedback/issues/119))
+*   Added support for the beforeunload dialog type for javascript dialog events and added [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD](reference/Archived/0.9.430/icorewebview2.md#core_webview2_script_dialog_kind) enum entry.
+*   Added [GetHeaders](reference/Archived/0.9.430/icorewebview2httprequestheaders.md#getheaders) to HttpRequestHeaders, [GetHeader](reference/Archived/0.9.430/icorewebview2httpresponseheaders.md#getheader) to HttpResponseHeaders, and [get_HasCurrentHeader](reference/Archived/0.9.430/icorewebview2httpheaderscollectioniterator.md#get_hascurrentheader) property to HttpHeadersCollectionIterator.
+*   **Breaking Change:** Modified DevToolsProtocolEventReceived behavior. Now, you can create a [DevToolsProtocolEventReceiver](reference/Archived/0.9.430/icorewebview2devtoolsprotocoleventreceiver.md) for a particular DevTools Protocol event and subscribe/unsubscribe to such event using [add_DevToolsProtocolEventReceived](reference/Archived/0.9.430/icorewebview2devtoolsprotocoleventreceiver.md#add_devtoolsprotocoleventreceived)/[remove_DevToolsProtocolEventReceived](reference/Archived/0.9.430/icorewebview2devtoolsprotocoleventreceiver.md#remove_devtoolsprotocoleventreceived).
+*   **Breaking Change:** Changed WebMessageReceivedEventArgs' [get_WebMessageAsString](reference/Archived/0.8.355/iwebview2webmessagereceivedeventargs.md#get_webmessageasstring) property to a [TryGetWebMessageAsString](reference/Archived/0.9.430/icorewebview2webmessagereceivedeventargs.md#trygetwebmessageasstring) method.
+*   **Breaking Change:** Changed AcceleratorKeyPressedEventArgs' [Handle](reference/Archived/0.8.355/iwebview2acceleratorkeypressedeventargs.md#handle) method to a [get_Handled](reference/Archived/0.9.430/icorewebview2acceleratorkeypressedeventargs.md#get_handled) property.
 
 ## 0.8.355
 
@@ -134,5 +166,6 @@ Initial developer preview release.
 [WebView2NuGetGallery0.8.314]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.314 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.314"  
 [WebView2NuGetGallery0.8.355]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.355"  
 [WebView2NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.430" 
+[WebView2NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.488"
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/Archived/0.8.355/webview2.idl.md#createwebview2environmentwithdetails "WebView Globals - CreateWebView2EnvironmentWithDetails function"  

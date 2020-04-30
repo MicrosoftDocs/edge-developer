@@ -83,7 +83,7 @@ var details = {
         amount: {currency: 'USD', value: '174.99'}
     }, {
         label: 'Taxes',
-        amount: {currency: "USD", '18.99'}
+        amount: {currency: "USD", value: '18.99'}
     }],
 };  
 ```
@@ -111,8 +111,8 @@ The [`show()`](https://msdn.microsoft.com/library/mt790448) method is called by 
 ```js
 paymentRequest.show().then(paymentInstrumentResponse => {
 
-paymentInstrumentResponse.complete('success').then((); }).catch(error {
-   handlePaymentRequestError(error); 
+paymentInstrumentResponse.complete('success').then().catch(error => {
+    handlePaymentRequestError(error); 
 });
 ```
 
