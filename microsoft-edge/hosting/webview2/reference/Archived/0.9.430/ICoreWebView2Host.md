@@ -12,6 +12,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # interface ICoreWebView2Host 
 
+> [!NOTE]
+> This interface may be altered or unavailable for releases after SDK version 0.9.430. Please refer to [Reference (WebView2)](../../../reference-webview2.md) for the latest API reference.
+
 ```
 interface ICoreWebView2Host
   : public IUnknown
