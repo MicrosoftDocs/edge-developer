@@ -2,7 +2,7 @@
 title: View Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,7 +37,7 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
 
 ## View cache data   
 
-1.  Click the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
+1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
     
     > ##### Figure 1  
     > The Manifest pane  
@@ -49,19 +49,19 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
     > Available caches  
     > ![Available caches][ImageCache]  
 
-1.  Click a cache to view its contents.  
+1.  Select a cache to view the contents.  
     
     > ##### Figure 3  
     > Viewing the contents of a cache  
     > ![Viewing the contents of a cache][ImageCacheView]  
 
-1.  Click a resource to view its HTTP headers in the section below the table.  
+1.  Select a resource to view the HTTP headers in the section below the table.  
     
     > ##### Figure 4  
     > Viewing the HTTP headers of a resource  
     > ![Viewing the HTTP headers of a resource][ImageViewCacheResource]  
 
-1.  Click **Preview** to view the content of a resource.  
+1.  Select **Preview** to view the content of a resource.  
     
     > ##### Figure 5  
     > Viewing the content of a resource  
@@ -70,13 +70,13 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
 ## Refresh a resource   
 
 1.  [View the data for a cache](#view-cache-data).  
-1.  Click the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
+1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
     
     > ##### Figure 6  
     > Selecting a resource  
     > ![Selecting a resource][ImageCacheSelected]  
 
-1.  Click **Refresh** ![Refresh][ImageRefreshIcon].  
+1.  Select **Refresh** ![Refresh][ImageRefreshIcon].  
 
 ## Filter resources   
 
@@ -90,13 +90,13 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
 ## Delete a resource   
 
 1.  [View the data for a cache](#view-cache-data).  
-1.  Click the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
+1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
     > ##### Figure 8  
     > Selecting a resource  
     > ![Selecting a resource][ImageCacheSelected2]  
 
-1.  Click **Delete Selected** ![Delete Selected][ImageDeleteIcon].  
+1.  Select **Delete Selected** ![Delete Selected][ImageDeleteIcon].  
 
 ## Delete all cache data   
 
@@ -107,7 +107,7 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
     > The **Cache Storage** checkbox  
     > ![The Cache Storage checkbox][ImageCacheCheckbox]  
 
-1.  Click **Clear site data**.  
+1.  Select **Clear site data**.  
     
     > ##### Figure 10  
     > The **Clear Site Data** button  
@@ -135,7 +135,7 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 [DevtoolsNetworkLogActivity]: /microsoft-edge/network/index#log-network-activity  "Log network activity"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  

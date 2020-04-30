@@ -2,7 +2,7 @@
 title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,12 +29,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-[HTTP Cookies][MDNHTTPCookies]  are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  They are also the cause of all of those annoying "this page uses cookies" consent forms that you see across the web.  This guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+[HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  They are also the cause of all of those annoying "this page uses cookies" consent forms that you see across the web.  This guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## Open the Cookies pane   
 
 1.  [Open DevTools][DevToolsOpen].  
-1.  Click the **Application** tab to open the **Application** panel.  The **Manifest** pane should open.  
+1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane should open.  
     
     > ##### Figure 1  
     > The Manifest pane  
@@ -52,13 +52,13 @@ The **Cookies** table contains the following fields:
 
 *   **Name**.  The name of the cookie.  
 *   **Value**.  The value of the cookie.  
-*   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope] .  
-*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope] .  
-*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent]  this value is always `Session`.  
+*   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent].  For [session cookies][MDNHTTPCookiesSession] this value is always `Session`.  
 *   **Size**.  The size, in bytes, of the cookie.  
-*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure] .  
-*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies][MDNHTTPCookiesSecure] .  
-*   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite]  attribute.  
+*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure].  
+*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies][MDNHTTPCookiesSecure].  
+*   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.  
 
 ## Filter cookies   
 
@@ -85,7 +85,7 @@ Select a cookie and then click **Delete Selected** ![Delete Selected][ImageDelet
 > Deleting a specific cookie  
 > ![Deleting a specific cookie][ImageDeleteCookie]  
 
-Click **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.  
+Select **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.  
 
 > ##### Figure 6  
 > Clearing all cookies  
@@ -109,7 +109,7 @@ Click **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP cookies | MDN"  

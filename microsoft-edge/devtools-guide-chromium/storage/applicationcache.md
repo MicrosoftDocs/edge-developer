@@ -2,7 +2,7 @@
 title: View Application Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,7 +36,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View Application Cache Data   
 
-1.  Click the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
     
     > ##### Figure 1  
     > The Manifest pane  
@@ -80,7 +80,7 @@ At the bottom of the table there are status icons indicating your network connec
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline Web applications - HTML Standard"  
 

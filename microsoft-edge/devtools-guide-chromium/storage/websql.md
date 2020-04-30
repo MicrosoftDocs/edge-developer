@@ -2,7 +2,7 @@
 title: View Web SQL Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2019
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,7 +36,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View Web SQL Data   
 
-1.  Click the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
     
     > ##### Figure 1  
     > The Manifest pane  
@@ -48,7 +48,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     > The Web SQL pane  
     > ![The Web SQL pane][ImageWebSQLPane]  
 
-1.  Click a table to view the data for that table.  
+1.  Select a table to view the data for that table.  
     
     > ##### Figure 3  
     > Viewing the data of the **rooms** Web SQL table  
@@ -60,7 +60,7 @@ You are not able to edit Web SQL data when viewing a Web SQL table, such as in *
 
 ## Run Web SQL queries   
 
-1.  Click a database to open a console for that database.  
+1.  Select a database to open a console for that database.  
 
 1.  Type a Web SQL statement, then press `Enter` to run it.  
     
@@ -73,7 +73,7 @@ You are not able to edit Web SQL data when viewing a Web SQL table, such as in *
 DevTools does not update tables in real-time.  To update the data in a table:  
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Click **Refresh** ![Refresh][ImageRefreshIcon].  
+1.  Select **Refresh** ![Refresh][ImageRefreshIcon].  
 
 ## Filter out columns in a Web SQL table   
 
@@ -93,7 +93,7 @@ DevTools does not update tables in real-time.  To update the data in a table:
     > The **Web SQL** checkbox  
     > ![The Web SQL checkbox][ImageWebSQLCheckbox]  
 
-1.  Click **Clear site data**.  
+1.  Select **Clear site data**.  
     
     > ##### Figure 7  
     > The **Clear Site Data** button  
@@ -117,7 +117,7 @@ DevTools does not update tables in real-time.  To update the data in a table:
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"  
 
