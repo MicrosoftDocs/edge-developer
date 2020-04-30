@@ -2,7 +2,7 @@
 title: Simulate Device Orientation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/30/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -61,9 +61,9 @@ To simulate different device orientations from Microsoft Edge DevTools:
 
 <!-- image links -->  
 
-[ImageCommandMenu]: images/console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageOrientationPortraitUpsideDown]: images/console-sensors-orientation-portrait-upside-down.msft.png "Figure 2: Selecting Portrait upside down from the Orientation list"  
-[ImageOrientationModel]: images/console-sensors-orientation-custom.msft.png "Figure 3: The Orientation Model"  
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
+[ImageOrientationPortraitUpsideDown]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png "Figure 2: Selecting Portrait upside down from the Orientation list"  
+[ImageOrientationModel]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-orientation-custom.msft.png "Figure 3: The Orientation Model"  
 
 <!-- links -->  
 

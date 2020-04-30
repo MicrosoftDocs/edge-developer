@@ -2,7 +2,7 @@
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -257,21 +257,21 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 <!-- image links -->  
 
-[ImageProfilingType]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png "Figure 1: Select profiling type"  
-[ImageTotalSize]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png "Figure 2: Total size of reachable objects"  
-[ImageRemoveSnapshots]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png "Figure 3: Remove snapshots"  
-[ImageSwitchViews]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png "Figure 4: Switch views selector"  
-[ImageSummaryView]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png "Figure 5: Summary view"  
-[ImageConstructorGroups]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png "Figure 6: Constructor groups"  
-[ImageComparisonView]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png "Figure 7: Comparison view"  
-[ImageContainmentView]: images/gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png "Figure 8: Containment view"  
-<!--[ImageDomLeaks]: images/domleaks.msft.png "old Figure 9: Name functions to distinguish between closures"  -->  
-[ImageTreeGc]: images/tree-gc.msft.png "Figure 9: DOM subtrees"  
+[ImageProfilingType]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png "Figure 1: Select profiling type"  
+[ImageTotalSize]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png "Figure 2: Total size of reachable objects"  
+[ImageRemoveSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png "Figure 3: Remove snapshots"  
+[ImageSwitchViews]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png "Figure 4: Switch views selector"  
+[ImageSummaryView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png "Figure 5: Summary view"  
+[ImageConstructorGroups]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png "Figure 6: Constructor groups"  
+[ImageComparisonView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png "Figure 7: Comparison view"  
+[ImageContainmentView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png "Figure 8: Containment view"  
+<!--[ImageDomLeaks]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-domleaks.msft.png "old Figure 9: Name functions to distinguish between closures"  -->  
+[ImageTreeGc]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-tree-gc.msft.png "Figure 9: DOM subtrees"  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblems101ObjectSizes]: memory-101.md#object-sizes "Object sizes - Memory Terminology"  
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology"  
+[DevtoolsMemoryProblems101ObjectSizes]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#object-sizes "Object sizes - Memory Terminology"  
+[DevtoolsMemoryProblems101ObjectsRetainingTree]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#objects-retaining-tree "Objects retaining tree - Memory Terminology"  
 
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->  
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->  
