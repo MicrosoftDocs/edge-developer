@@ -2,7 +2,7 @@
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/25/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -241,25 +241,25 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 <!-- image links -->  
 
-[ImageForceGarbageCollectionIcon]: images/collect-garbage-icon.msft.png  
-[ImageStopRecordingIcon]: images/stop-recording-icon.msft.png  
+[ImageForceGarbageCollectionIcon]: /microsoft-edge/devtools-guide-chromium/media/collect-garbage-icon.msft.png  
+[ImageStopRecordingIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-recording-icon.msft.png  
 
-[ImageTaskManager]: images/bing-settings-more-tools-browser-task-manager.msft.png "Figure 1: Opening the Microsoft Edge Browser Task Manager"  
-[ImageJavascriptMemory]: images/bing-browser-task-manager-javascript-memory.msft.png "Figure 2: Enable JavaScript memory"  
-[ImageSimpleGrowth]: images/glitch-example-1-performance-memory.msft.png "Figure 3: Simple Growth"  
-[ImageTakeHeapSnapshot]: images/glitch-example-12-memory-heap-snapshot.msft.png "Figure 4: Take heap snapshot"  
-[ImageFilteringForDetachedNodes]: images/glitch-example-12-memory-heap-snapshot-filter-detached.msft.png "Figure 5: Filtering for detached nodes"  
-[ImageInvestigatingDetachedTree]: images/glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png "Figure 6: Investigating detached tree"  
-[ImageInvestigatingNode]: images/glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png "Figure 7 : Investigating a node"  
-[ImageNewAllocations]: images/glitch-example-13-allocation-timeline-snapshot-all.msft.png "Figure 8: New allocations"  
-[ImageZoomedAllocationTimeline]: images/glitch-example-13-allocation-timeline-snapshot-focused.msft.png "Figure 9: Zoomed allocation timeline"  
-[ImageObjectDetail]: images/glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png "Figure 10: Object details"  
-[ImageRecordAllocationSampling]: images/glitch-example-05-memory-allocation-sampling.msft.png "Figure 11: Record Allocation sampling"  
-[ImageAllocationSampling]: images/glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png "Figure 12: Allocation sampling"  
+[ImageTaskManager]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png "Figure 1: Opening the Microsoft Edge Browser Task Manager"  
+[ImageJavascriptMemory]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png "Figure 2: Enable JavaScript memory"  
+[ImageSimpleGrowth]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-1-performance-memory.msft.png "Figure 3: Simple Growth"  
+[ImageTakeHeapSnapshot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png "Figure 4: Take heap snapshot"  
+[ImageFilteringForDetachedNodes]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png "Figure 5: Filtering for detached nodes"  
+[ImageInvestigatingDetachedTree]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png "Figure 6: Investigating detached tree"  
+[ImageInvestigatingNode]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png "Figure 7 : Investigating a node"  
+[ImageNewAllocations]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-all.msft.png "Figure 8: New allocations"  
+[ImageZoomedAllocationTimeline]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused.msft.png "Figure 9: Zoomed allocation timeline"  
+[ImageObjectDetail]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png "Figure 10: Object details"  
+[ImageRecordAllocationSampling]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-05-memory-allocation-sampling.msft.png "Figure 11: Record Allocation sampling"  
+[ImageAllocationSampling]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-glitch-example-05-memory-allocation-sampling-heavy-bottom-up.msft.png "Figure 12: Allocation sampling"  
 
 <!-- links -->  
 
-[DevtoolsEvaluatePerformanceReferenceRecord]: ../evaluate-performance/reference.md#record-performance "Record performance - Performance Analysis Reference"  
+[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"  
 
 <!--[RAIL]: /profile/evaluate-performance/rail  -->
 <!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->  
