@@ -2,7 +2,7 @@
 title: Map Preprocessed Code to Source Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/20/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -71,7 +71,9 @@ When running Source Maps in DevTools, you should notice that the JavaScript is n
 
 Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, click the **Customize and control DevTools** `...` button, and select **Settings**.  On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.  You may also check **Enable CSS Source Maps**.  
 
-![Enable Source Maps][ImageSourceMaps]  
+> ##### Figure 1  
+> Enable Source Maps  
+> ![Enable Source Maps][ImageSourceMaps]  
 
 ### Debugging with Source Maps  
 
@@ -106,7 +108,9 @@ Follow these steps.
 
 If you expand the **_Sources_** sub-panel you now see a new file with the custom filename you entered earlier.  If you double-click to view this file it contains the compiled JavaScript for the original source.  On the last line, however, is a `// @sourceURL` comment indicating the original source file.  This may help you with debugging while working with language abstractions.  
 
-![Working with sourceURL][ImageCoffeeScript]  
+> ##### Figure 2
+> Working with sourceURL  
+> ![Working with sourceURL][ImageCoffeeScript]  
 
 <!--## Feedback   -->  
 
@@ -114,8 +118,8 @@ If you expand the **_Sources_** sub-panel you now see a new file with the custom
 
 <!-- image links -->  
 
-[ImageSourceMaps]: images/settings-preferences-sources-enable-javascript-source-maps.msft.png "Enable Source Maps"  
-[ImageCoffeeScript]: images/sources-page-coffeeeeeeee.msft.png "Working with sourceURL"  
+[ImageSourceMaps]: /microsoft-edge/devtools-guide-chromium/media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png "Figure 1: Enable Source Maps"  
+[ImageCoffeeScript]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-coffeeeeeeee.msft.png "Figure 2: Working with sourceURL"  
 
 <!-- links -->  
 

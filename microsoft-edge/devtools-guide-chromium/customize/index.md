@@ -2,7 +2,7 @@
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -103,19 +103,19 @@ The next time you open DevTools, a new page is displayed called **Experiments** 
 
 <!-- image links -->  
 
-[ImageMoreIcon]: images/more-icon.msft.png  
+[ImageMoreIcon]: /microsoft-edge/devtools-guide-chromium/media/more-icon.msft.png  
 
-[ImageSettings]: images/settings-preferences.msft.png "Figure 1: Settings"  
-[ImageDrawerExample]: images/drawer-open.msft.png "Figure 2: The Drawer"  
-[ImageMoreDrawerTabs]: images/drawer-open-more-tools.msft.png "Figure 3: The button for opening Drawer tabs"  
-[ImageCustomTabOrdering]: images/network-first-position.msft.png "Figure 4: A DevTools window with a custom panel tab ordering"  
-[ImageUndock]: images/dev-tools-dock-side.msft.png " Figure 5: Undocked DevTools"  
-[ImageDarkTheme]: images/settings-appearance-theme.msft.png " Figure 6: The dark theme"  
+[ImageSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-preferences.msft.png "Figure 1: Settings"  
+[ImageDrawerExample]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open.msft.png "Figure 2: The Drawer"  
+[ImageMoreDrawerTabs]: /microsoft-edge/devtools-guide-chromium/media/customize-drawer-open-more-tools.msft.png "Figure 3: The button for opening Drawer tabs"  
+[ImageCustomTabOrdering]: /microsoft-edge/devtools-guide-chromium/media/customize-network-first-position.msft.png "Figure 4: A DevTools window with a custom panel tab ordering"  
+[ImageUndock]: /microsoft-edge/devtools-guide-chromium/media/customize-dev-tools-dock-side.msft.png " Figure 5: Undocked DevTools"  
+[ImageDarkTheme]: /microsoft-edge/devtools-guide-chromium/media/customize-settings-appearance-theme.msft.png " Figure 6: The dark theme"  
 
 <!-- links -->  
 
-[DevToolsPlacement]: placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
-[DarkTheme]: dark-theme.md "Enable Dark Theme In Microsoft Edge DevTools"  
+[DevToolsPlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DarkTheme]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Enable Dark Theme In Microsoft Edge DevTools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

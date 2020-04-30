@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/17/2020
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,42 +28,84 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# What's new in DevTools (Microsoft Edge 80) 
+# What's new in DevTools (Microsoft Edge 80)   
 
 
 
-## Announcements from the Microsoft Edge DevTools team
+## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more. To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Accessibility improvements to the DevTools  
 
-The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools. Every developer building the web should be able to use the DevTools.
+The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.  
 
 > ##### Figure 1  
 > The Performance tool in the DevTools with the keyboard navigation and screen reader improvements  
 > ![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements][ImagePerformanceToolKeyboardReaderImprovements]  
 
-Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started. 
+Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon! 
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#963183][crbug963183]
+Chromium issue [#963183][crbug963183]  
 
 ### Using the DevTools in other languages  
 
-Many developers use other developer tools, like StackOverflow and VS Code, in their native language, not just in English. We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
+Many developers use other developer tools, like StackOverflow and VS Code, in their native language, not just in English.  We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:  
 
+:::row:::
+   :::column span="":::
+      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+   :::column-end:::
+   :::column span="":::
+      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      French – fran&#231;ais
+   :::column-end:::
+   :::column span="":::
+      German - deutsch
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Italian - italiano
+   :::column-end:::
+   :::column span="":::
+      Japanese - &#26085;&#26412;&#35486;
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Korean - &#54620;&#44397;&#50612;
+   :::column-end:::
+   :::column span="":::
+      Portuguese - portugu&#234;s
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+   :::column-end:::
+   :::column span="":::
+      Spanish - espa&#241;ol
+   :::column-end:::
+:::row-end:::
 
-| | |
-| -------- | ---- |
-| Chinese (Simplified) - 中文(简体)（简体）| Chinese (Traditional) - 中文(繁體)（繁體）|
-| French – français | German - deutsch |
-| Italian - italiano | Portuguese - português | 
-| Korean - 한국어 | Japanese - 日本語 |
-| Russian – русский | Spanish - español |
+<!--  
+|  |  |  
+|:--- |:--- |  
+| Chinese (Simplified) - 中文（简体）| Chinese (Traditional) - 中文（繁體）|  
+| French – français | German - deutsch |  
+| Italian - italiano | Portuguese - português |  
+| Korean - 한국어 | Japanese - 日本語 |  
+| Russian – русский | Spanish - español |  
+-->  
 
-Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**. Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
+Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
 
 > ##### Figure 2  
 > The DevTools in German  
@@ -71,7 +113,7 @@ Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag
 
 If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
 
-Chromium issue [#941561][crbug941561]
+Chromium issue [#941561][crbug941561]  
 
 ### webhint Microsoft Edge extension  
 
@@ -81,7 +123,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 > The Hints tab in the DevTools when the webhint browser extension is installed  
 > ![The Hints tab in the DevTools when the webhint browser extension is installed][ImageHintsTabWebhintExtension]  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons]. Once you install the extension, open the DevTools and select the Hints tab. From here, run a customizable site scan. Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and select the Hints tab.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
 ### 3D View  
 
@@ -91,9 +133,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 > The 3D View in the DevTools  
 > ![The 3D View in the DevTools][Image3DView]  
 
-To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox. Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
+To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).
+We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).  
 
 Chromium issue [#987787][crbug987787]
 
@@ -103,10 +145,10 @@ The DevTools team has also released some extensions for [Visual Studio Code \(VS
 
 #### Elements for Microsoft Edge  
 
-Use the Elements tool from within VS Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension.
+Use the Elements tool from within VS Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] VS Code extension.  
 
 > ##### Figure 5  
-> The Elements tool in VS Code using the Elements for Microsoft Edge extension
+> The Elements tool in VS Code using the Elements for Microsoft Edge extension  
 > ![The Elements tool in VS Code using the Elements for Microsoft Edge extension][ImageElementsVisualStudioCode]  
 
 For more information, check out [Elements for Microsoft Edge VS Code extension][VisualStudioCodeElementEdgeExtension].  
@@ -117,7 +159,7 @@ With the [Debugger for Microsoft Edge][VisualStudioMarketplaceDebuggerEdge] VS C
 
 > ##### Figure 6  
 > The Debugger for Microsoft Edge Extension in VS Code  
-> ![The Debugger for Microsoft Edge Extension in VS Code][ImageDebuggerExtensionVisualStudioCode]
+> ![The Debugger for Microsoft Edge Extension in VS Code][ImageDebuggerExtensionVisualStudioCode]  
 
 For more information, check out [how to debug Microsoft Edge from VS Code][VisualStudioCodeDebuggerEdgeExtension].  
 
@@ -132,7 +174,7 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] VS Code extension uses `w
 [Learn more about the VS Code webhint extension][WebhintVisualStudioCodeExtension].  
 
 ### Visual Studio integration
-In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge. [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!
+In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!  
 
 > ##### Figure 8  
 > Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
@@ -140,18 +182,19 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 
 [Read our blog post to learn how to debug Microsoft Edge from Visual Studio][MicrosoftVisualStudioBlogDebugJavascript].  
 
-### Tracking prevention Console messages
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before. The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility. To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.
+### Tracking prevention Console messages  
+
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.  
 
 > ##### Figure 9  
-> Messages in the Console when tracking prevention blocks access to storage for a tracker
+> Messages in the Console when tracking prevention blocks access to storage for a tracker  
 > ![Messages in the Console when tracking prevention blocks access to storage for a tracker][ImageTrackingPrevention]  
 
-[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
+[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].  
 
-## Announcements from the Chromium project
+## Announcements from the Chromium project  
 
-The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.
+The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.  
 
 ### Support for let and class redeclarations in the Console   
 
@@ -174,7 +217,7 @@ Now, the Console allows the redeclaration:
 
 Chromium issue [#1004193][crbug1004193]  
 
-### Improved WebAssembly debugging 
+### Improved WebAssembly debugging   
 
 DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
 
@@ -283,19 +326,19 @@ Chromium issue [#1004203][crbug1004203]
 
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
-*   Send your feedback using the **Feedback** icon in the DevTools 
+*   Send your feedback using the **Feedback** icon in the DevTools  
 
 > ##### Figure 18
 > The **Feedback** icon in the Microsoft Edge DevTools  
 > ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]
-*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository
+*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
+*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
+*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
 ## Download the Microsoft Edge preview channels   
 
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser. The preview channels give you access to the latest DevTools features.
+If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
 <!--<<../../_shared/devtools-feedback.md>> -->
 
