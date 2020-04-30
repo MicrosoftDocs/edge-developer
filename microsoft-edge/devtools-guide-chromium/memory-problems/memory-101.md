@@ -2,7 +2,7 @@
 title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/19/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,9 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.  
 
-The terms and notions described here refer to the **Memory** panel.  If you have ever worked with either the Java, .NET, or some other memory profiler, then this may be a refresher.  
-
-<!--todo: add /memory-problems/heap-snapshots when available  -->  
+The terms and notions described here refer to the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].  If you have ever worked with either the Java, .NET, or some other memory profiler, then this may be a refresher.  
 
 ## Object sizes  
 
@@ -46,10 +44,9 @@ Think of memory as a graph with primitive types \(like numbers and strings\) and
 An object may hold memory in two ways:  
 
 *   Directly by the object.  
-
 *   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector \(**GC** for short\).  
 
-When working with the **Memory** panel in DevTools \(a tool for investigating memory issues found under "Memory"\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
+When working with the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in DevTools \(a tool for investigating memory issues found under "Memory"\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
 
 > ##### Figure 2  
 > Shallow and Retained Size  
@@ -65,28 +62,26 @@ Renderer memory is all memory of the process where an inspected page is rendered
 
 ### Retained size  
 
-This is the size of memory that is freed once the object is deleted along with the dependent objects that were made unreachable from **Garbage Collector (GC) roots**.  
+This is the size of memory that is freed once the object is deleted along with the dependent objects that were made unreachable from **Garbage Collector roots** \(GC roots\) .  
 
-**Garbage Collector (GC) roots** are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector (GC) roots and the handles are not something you need to worry about.  
+**Garbage Collector roots** \(GC roots\) are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector (GC) roots and the handles are not something you need to worry about.  
 
-There are lots of internal Garbage Collector (GC) roots most of which are not interesting for the users.  From the applications standpoint there are following kinds of roots:  
+There are lots of internal GC roots, most of which are not interesting for the users.  From the applications standpoint there are following kinds of roots.  
 
-* Window global object \(in each iframe\).  There is a distance field in the heap snapshots which is the number of property references on the shortest retaining path from the window.  
-
-* Document DOM tree consisting of all native DOM nodes reachable by traversing the document.  Not all of the nodes may have JS wrappers but if a node has a wrapper, it is alive while the document is alive.  
-
-* Sometimes objects may be retained by the debugger context in the **Sources** panel and the **Console** \(for example after Console evaluation\).  Create heap snapshots with a cleared **Console** panel and no active breakpoints in the debugger in the **Sources** panel.
+*   Window global object \(in each iframe\).  There is a distance field in the heap snapshots which is the number of property references on the shortest retaining path from the window.  
+*   Document DOM tree consisting of all native DOM nodes reachable by traversing the document.  Not all of the nodes may have JS wrappers but if a node has a wrapper, it is alive while the document is alive.  
+*   Sometimes objects may be retained by the debugger context in the **Sources** panel and the **Console** \(for example after Console evaluation\).  Create heap snapshots with a cleared **Console** panel and no active breakpoints in the debugger in the **Sources** panel.
 
 >[!TIP]
-> Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** panel before taking a heap snapshot in the **Memory** panel
+> Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** panel before taking a heap snapshot in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected (GCd).  
 
 > ##### Figure 3  
-> You are not able to control how the root object is garbage collected (GCd).  
+> You are not able to control how the root object is garbage collected \(GCd\).  
 >![You are not able to control how the root object is garbage collected (GCd).][ImageDontControl]  
 
-Whatever is not reachable from the root gets garbage collected (GCd).  
+Whatever is not reachable from the root gets garbage collected \(GCd\).  
 
 > [!NOTE]
 > Both the [Shallow size](#shallow-size) and [Retained size](#retained-size) columns represent data in bytes.  
@@ -98,20 +93,17 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 *   **Nodes**  \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
 *   **Edges**  are labelled using the names of **properties**.  
 
-<!--Learn [how to record a profile using the Heap Profiler](../profile/memory-problems/heap-snapshots).  -->  
-Some of the eye-catching things that you may see in the Heap Snapshot recording in the **Memory** panel below include distance: the distance from the Garbage Collector (GC) root. If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  Some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in [Figure 4](#figure-4) include distance: the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
 > ##### Figure 4  
 > Distance from root  
 >![Distance from root][ImageRoot]  
 
-<!--todo: add how to record a profile using the Heap Profiler section when available  -->  
-
 ## Dominators  
 
 Dominator objects are comprised of a tree structure because each object has exactly one dominator.  A dominator of an object may lack direct references to an object it dominates; that is, the tree of the dominator is not a spanning tree of the graph.  
 
-In the diagram below:  
+In [Figure 5](#figure-5):  
 
 *   Node 1 dominates node 2  
 *   Node 2 dominates nodes 3, 4 and 6  
@@ -123,7 +115,7 @@ In the diagram below:
 > Dominator tree structure  
 >![Dominator tree structure][ImageDominatorsSpanning]  
 
-In the example below, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector (GC) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
+In [Figure 6](#figure-6), node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
 
 > ##### Figure 6  
 > Animated dominator illustration  
@@ -170,13 +162,14 @@ A typical JavaScript object is stored as only one of two **array** types:
 
 When there are a small number of properties, the properties are stored internally in the JavaScript object.  
 
-**Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access](https://v8.dev/#prop_access).  
+**Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access][V8FastProperties].  
+
 
 ### Object groups  
 
 Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, thus forming a connected graph.  Note that native objects are not represented in the JavaScript heap  —  that is why native objects have zero size. Instead, wrapper objects are created.  
 
-Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector (GC) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
+Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
 <!--## Feedback   -->  
 
@@ -184,17 +177,18 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 <!-- image links -->  
 
-[ImageThinkGraph]: images/thinkgraph.msft.png "Figure 1: Visual representation of memory"  
-[ImageShallowRetained]: images/shallow-retained.msft.png "Figure 2: Shallow and Retained Size"  
-[ImageDontControl]: images/dontcontrol.msft.png "Figure 3: You are not able to control how the root object is garbage collected (GCd)."  
-[ImageRoot]: images/root.msft.png "Figure 4: Distance from root"  
-[ImageDominatorsSpanning]: images/dominatorsspanning.msft.png "Figure 5: Dominator tree structure"  
-[ImageDominators]: images/dominators.msft.gif "Figure 6: Animated dominator illustration"  
+[ImageThinkGraph]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-thinkgraph.msft.png "Figure 1: Visual representation of memory"  
+[ImageShallowRetained]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-shallow-retained.msft.png "Figure 2: Shallow and Retained Size"  
+[ImageDontControl]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dontcontrol.msft.png "Figure 3: You are not able to control how the root object is garbage collected (GCd)."  
+[ImageRoot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-root.msft.png "Figure 4: Distance from root"  
+[ImageDominatorsSpanning]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominatorsspanning.msft.png "Figure 5: Dominator tree structure"  
+[ImageDominators]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominators.msft.gif "Figure 6: Animated dominator illustration"  
 
 <!-- links -->  
 
-<!--[DevtoolsProfileMemoryProblemsHeapSnapshots]: ../profile/memory-problems/heap-snapshots ""  -->  
-<!--[DevToolsV8DesignPropAccess]: /v8/design.html#prop_access ""  -->  
+[DevtoolsMemoryProblemsHeapSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems/heap-snapshots "/microsoft-edge/devtools-guide-chromium/media/memory-problems"  
+
+[V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
