@@ -2,7 +2,7 @@
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -47,7 +47,7 @@ To enable port forwarding:
 
 1.  Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.  When you are finished, you should see your Android device in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.  
 1.  In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.  
-1.  Click **Add rule**.  
+1.  Select **Add rule**.  
     
     > ##### Figure 1  
     > Adding a port forwarding rule  
@@ -55,7 +55,7 @@ To enable port forwarding:
     
 1.  In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.  
 1.  In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.  
-1.  Click **Add**.  
+1.  Select **Add**.  
 
 Port forwarding is now set up.  See the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.  
 
@@ -94,12 +94,12 @@ Next, you need to configure your Android device to communicate with the proxy se
     > [!NOTE]
     > Proxy settings apply per network.  
     
-1.  Tap **Modify network**.  
-1.  Tap **Advanced options**.  The proxy settings display.  
-1.  Tap the **Proxy** menu and select **Manual**.  
+1.  Select **Modify network**.  
+1.  Select **Advanced options**.  The proxy settings display.  
+1.  Select the **Proxy** menu and select **Manual**.  
 1.  For the **Proxy hostname** field, enter `localhost`.  
 1.  For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.  
-1.  Tap **Save**.  
+1.  Select **Save**.  
 
 With these settings, your device forwards all of its requests to the proxy on your development machine.  The proxy makes requests on behalf of your device, so requests to your customized local domain are properly resolved.  
 

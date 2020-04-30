@@ -2,7 +2,7 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -50,12 +50,12 @@ By default, DevTools records all network requests in the Network panel, so long 
 
 To stop recording requests:  
 
-*   Click **Stop recording network log** ![Stop recording network log][ImageRecordOnIcon]  on the Network panel.  It turns grey to indicate that DevTools is no longer recording requests.  
-*   Press `Control`+`E`\(Windows\) or `Command`+`E` \(macOS\) while the Network panel is in focus.  
+*   Select **Stop recording network log** ![Stop recording network log][ImageRecordOnIcon] on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
+*   Press `Control`+`E` \(Windows\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
 
 ### Clear requests   
 
-Click **Clear** ![Clear][ImageClearIcon]  on the Network panel to clear all requests from the Requests table.  
+Select **Clear** ![Clear][ImageClearIcon] on the Network panel to clear all requests from the Requests table.  
 
 > ##### Figure 2  
 > The Clear button  
@@ -74,14 +74,14 @@ To save requests across page loads, check the **Preserve log** checkbox on the N
 
 Capture screenshots to analyze what users see as they wait for your page to load.  
 
-To enable screenshots, click on **Network settings** and click **Capture screenshots** checkbox on the Network panel.  
+To enable screenshots, select **Network settings** and select **Capture screenshots** checkbox on the **Network** panel.  
 
-Reload the page while the Network panel is in focus to capture screenshots.  
+Reload the page while the **Network** panel is in focus to capture screenshots.  
 
-After capturing a screenshot, you interact with it in the following ways:  
+After capturing a screenshot, you interact with it in the following ways.  
 
-*   Hover over a screenshot to view the point at which that screenshot was captured.  A yellow line appears on the Overview pane.  
-*   Click the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.  
+*   Hover over a screenshot to view the point at which that screenshot was captured.  A yellow line appears on the **Overview** pane.  
+*   Select the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.  
 *   Double-click a thumbnail to zoom in on it.  
 
 > ##### Figure 4  
@@ -131,7 +131,7 @@ A new class of web apps, called [Progressive Web Apps][DevtoolsProgressiveWebApp
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Click the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate a completely offline network experience.  
+Select the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate a completely offline network experience.  
 
 > ##### Figure 7  
 > The Offline dropdown menu  
@@ -211,12 +211,12 @@ The complete list of supported properties.
 
 ### Filter requests by type   
 
-To filter requests by request type, click the **XHR**, **JS**, **CSS**, **Img**, **Media**, **Font**, **Doc**, **WS** \(WebSocket\), **Manifest**, or **Other** \(any other type not listed here\) buttons on the Network panel.  
+To filter requests by request type, select the **XHR**, **JS**, **CSS**, **Img**, **Media**, **Font**, **Doc**, **WS** \(WebSocket\), **Manifest**, or **Other** \(any other type not listed here\) buttons on the Network panel.  
 
 If you do not see these buttons, the Filters pane is probably hidden.  
 See [Hide the Filters pane](#hide-the-filters-pane).  
 
-To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then click.  
+To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then select.  
 
 > ##### Figure 11  
 > Using the Type filters to display JS, CSS, and Document resources  
@@ -224,7 +224,7 @@ To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `C
 
 ### Filter requests by time   
 
-Click and drag left or right on the Overview pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.  
+Select and drag left or right on the Overview pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.  
 
 > ##### Figure 12  
 > Filtering out any requests that were inactive around 300ms  
@@ -246,7 +246,7 @@ By default, the requests in the Requests table are sorted by initiation time, bu
 
 ### Sort by column   
 
-Click the header of any column in the Requests to sort requests by that column.  
+Select the header of any column in the Requests to sort requests by that column.  
 
 ### Sort by activity phase   
 
@@ -258,7 +258,7 @@ To change how the Waterfall sorts requests, right-click the header of the Reques
 *   **Total Duration**.  The request with the shortest connection setup and request / response is at the top.  
 *   **Latency**.  The request that waited the shortest time for a response is at the top.  
 
-These descriptions assume that each respective option is ranked from shortest to longest.  Clicking on the header of the **Waterfall** column reverses the order.  
+These descriptions assume that each respective option is ranked from shortest to longest.  Selecting the header of the **Waterfall** column reverses the order.  
 
 > ##### Figure 14  
 > Sorting the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)  
@@ -271,7 +271,7 @@ Use the Network panel to analyze requests.
 
 ### View a log of requests   
 
-Use the Requests table to view a log of all requests made while DevTools has been open.  Clicking or hovering over requests reveals more information about each item.  
+Use the Requests table to view a log of all requests made while DevTools has been open.  Selecting or hovering over requests reveals more information about each item.  
 
 > ##### Figure 15  
 > The Requests table  
@@ -323,8 +323,8 @@ See [Sort by activity phase](#sort-by-activity-phase) to see the different ways 
 
 <!--To view the frames of a WebSocket connection:  
 
-1.  Click the URL of the WebSocket connection, under the **Name** column of the Requests table.  
-1.  Click the **Frames** tab.  The table shows the last 100 frames.  
+1.  Select the URL of the WebSocket connection, under the **Name** column of the Requests table.  
+1.  Select the **Frames** tab.  The table shows the last 100 frames.  
 
 To refresh the table, re-click the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
@@ -351,8 +351,8 @@ To refresh the table, re-click the name of the WebSocket connection under the **
 
 To view a preview of a response body:  
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.  
-1.  Click the **Preview** tab.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Preview** tab.  
 
 This tab is mostly useful for viewing images.  
 
@@ -364,8 +364,8 @@ This tab is mostly useful for viewing images.
 
 To view the response body to a request:  
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.  
-1.  Click the **Response** tab.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Response** tab.  
 
 > ##### Figure 20  
 > The Response tab  
@@ -375,8 +375,8 @@ To view the response body to a request:
 
 To view HTTP header data about a request:  
 
-1.  Click on the URL of the request, under the **Name** column of the Requests table.  
-1.  Click the **Headers** tab.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Headers** tab.  
 
 > ##### Figure 21  
 > The Headers tab  
@@ -387,7 +387,7 @@ To view HTTP header data about a request:
 By default, the Headers tab shows header names alphabetically.  To view the HTTP header names in the order they were received:  
 
 1.  Open the **Headers** tab for the request that interests you.  See [View HTTP headers](#view-http-headers).  
-1.  Click **view source**, next to the **Request Header** or **Response Header** section.  
+1.  Select **view source**, next to the **Request Header** or **Response Header** section.  
 
 ### View query string parameters   
 
@@ -405,21 +405,21 @@ To view the query string parameters of a URL in a human-readable format:
 To view the query string parameter source of a request:  
 
 1.  Go to the Query String Parameters section.  See [View query string parameters](#view-query-string-parameters).  
-1.  Click **view source**.  
+1.  Select **view source**.  
 
 #### View URL-encoded query string parameters   
 
 To view query string parameters in a human-readable format, but with encodings preserved:  
 
 1.  Go to the Query String Parameters section.  See [View query string parameters](#view-query-string-parameters).  
-1.  Click **view URL encoded**.  
+1.  Select **view URL encoded**.  
 
 ### View cookies   
 
 To view the cookies sent in the HTTP header of a request:  
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.  
-1.  Click the **Cookies** tab.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Cookies** tab.  
 
 <!--See [Fields][ManageDataCookiesFields] for a description of each of the columns.  -->
 
@@ -434,8 +434,8 @@ To view the cookies sent in the HTTP header of a request:
 
 To view the timing breakdown of a request:  
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.  
-1.  Click the **Timing** tab.  
+1.  Select the URL of the request, under the **Name** column of the Requests table.  
+1.  Select the **Timing** tab.  
 
 See [Preview a timing breakdown](#preview-a-timing-breakdown) for a faster way to access this data.  
 
@@ -595,7 +595,7 @@ You may expand or collapse sections of the Network panel UI to focus important i
 ### Hide the Filters pane   
 
 By default, DevTools shows the **Filters pane**.  
-Click **Filter** ![Filter][ImageFilterIcon]  to hide it.  
+Select **Filter** ![Filter][ImageFilterIcon]  to hide it.  
 
 > ##### Figure 34  
 > The Hide Filters button  
@@ -681,7 +681,7 @@ Deselect the **Show Overview** checkbox to hide it.
 
 [DevtoolsProgressiveWebApps]: /microsoft-edge/devtools-guide-chromium/network/progressive-web-apps "Debug Progressive Web Apps"  
 
-<!--[NetworkConditions]: network-conditions.md "Optimize Performance Under Varying Network Conditions"  -->  
+<!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions"  -->  
 
 [MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"  
 

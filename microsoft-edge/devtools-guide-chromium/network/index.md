@@ -2,22 +2,22 @@
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 <!-- Copyright Kayce Basques 
 
-   Licensed under the Apache License, Version 2. 0 (the "License");
-   you may not use this file except in compliance with the License. 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.  
    You may obtain a copy of the License at
 
-       https://www. apache. org/licenses/LICENSE-2. 0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
@@ -81,7 +81,7 @@ To get the most out of this tutorial, open up the demo and try out the features 
     > DevTools docked to the bottom of the window  
     > ![DevTools docked to the bottom of the window][ImagesTutorialDocked]  
 
-1.  Click the **Network** tab.  The Network panel opens.  
+1.  Select the **Network** tab.  The Network panel opens.  
     
     > ##### Figure 4  
     > DevTools docked to the bottom of the window  
@@ -105,18 +105,18 @@ To view the network activity that a page causes:
 
     *   **Status**.  The HTTP status code for response.  
     *   **Type**.  The resource type.  
-    *   **Initiator**.  The cause of the resource request.  Clicking a link in the Initiator column takes you to the source code that caused the request.  
+    *   **Initiator**.  The cause of the resource request.  Selecting a link in the Initiator column takes you to the source code that caused the request.  
     *   **Time**.  The duration of the request.  
     *   **Waterfall**.  A graphical representation of the different stages of the request.  
         Hover over a Waterfall to see a breakdown.  
     
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it. See [Hide the Overview pane][DevtoolsReferenceHideOverview].
+    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it.  See [Hide the Overview pane][DevtoolsReferenceHideOverview].
         
 1.  After you open DevTools, it records network activity in the Network Log.  
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
-1.  Now, click the **Get Data** button in the demo.  
-1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  Clicking the **Get Data** button caused the page to request this file.  
+1.  Now, select the **Get Data** button in the demo.  
+1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  Selecting the **Get Data** button caused the page to request this file.  
     
     > ##### Figure 6  
     > A new resource in the Network Log  
@@ -140,7 +140,7 @@ There are also many columns that are hidden by default which you may find useful
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.  
 
-1.  Click the **Throttling** dropdown, which is set to **Online** by default.  
+1.  Select the **Throttling** dropdown, which is set to **Online** by default.  
     
     > ##### Figure 8  
     > Enabling throttling  
@@ -167,7 +167,7 @@ The network connection of the computer that you use to build sites is probably f
 
 Screenshots let you see how a page looked over time while it was loading.  
 
-1.  Click ![Network settings][ImageSettingsIcon] and check **Capture screenshots**.
+1.  Select ![Network settings][ImageSettingsIcon] and select the **Capture screenshots** checkbox.
 1.  Reload the page again via the **Empty Cache And Hard Reload** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
     The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.  
     
@@ -175,26 +175,26 @@ Screenshots let you see how a page looked over time while it was loading.
     > Screenshots of the page load  
     > ![Screenshots of the page load][ImagesTutorialAllScreenshots]  
 
-1.  Click the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.  
+1.  Select the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.  
     
     > ##### Figure 12  
     > The network activity that was happening during the first screenshot  
     > ![The network activity that was happening during the first screenshot][ImagesTutorialFirstScreenshot]  
 
-1.  Click ![Network settings][ImageSettingsIcon] again and uncheck **Capture screenshots** to close the Screenshots pane.
+1.  Select ![Network settings][ImageSettingsIcon] again and deselect the **Capture screenshots** checkbox to close the Screenshots pane.
 1.  Reload the page again.  
 
 ## Inspect the details of the resource   
 
-Click a resource to learn more information about it.  Try it now:  
+Select a resource to learn more information about it.  Try it now:  
 
-1.  Click `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
+1.  Select `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
     
     > ##### Figure 13  
     > The Headers tab  
     > ![The Headers tab][ImagesTutorialHeaders]  
     
-1.  Click the **Preview** tab.  A basic rendering of the HTML is shown.  
+1.  Select the **Preview** tab.  A basic rendering of the HTML is shown.  
     
     > ##### Figure 14  
     > The Preview tab  
@@ -202,22 +202,22 @@ Click a resource to learn more information about it.  Try it now:
 
      This tab is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
 
-1.  Click the **Response** tab.  The HTML source code is shown.  
+1.  Select the **Response** tab.  The HTML source code is shown.  
     
     > ##### Figure 15  
     > The Response tab  
     > ![The Response tab][ImagesTutorialResponse]  
     
     > [!TIP]
-    > When a file is minified, clicking the **Format** ![Format][ImageFormatIcon] button at the bottom of the **Response** tab re-formats the contents of the file for readability.  
+    > When a file is minified, selecting the **Format** ![Format][ImageFormatIcon] button at the bottom of the **Response** tab re-formats the contents of the file for readability.  
 
-1.  Click the **Timing** tab.  A breakdown of the network activity for this resource is shown.  
+1.  Select the **Timing** tab.  A breakdown of the network activity for this resource is shown.  
     
     > ##### Figure 16  
     > The Timing tab  
     > ![The Timing tab][ImagesTutorialTiming]  
 
-1.  Click **Close** ![Close][ImageCloseIcon] to view the Network Log again.  
+1.  Select **Close** ![Close][ImageCloseIcon] to view the Network Log again.  
     
     > ##### Figure 17  
     > The Close button  
@@ -227,11 +227,11 @@ Click a resource to learn more information about it.  Try it now:
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.  
 
-For example, suppose you want to check if your resources are using reasonable **cache policies**.  
+For example, suppose you want to verify that your resources are using reasonable **cache policies**.  
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Click **Search** ![Search][ImageSearchIcon].  The Search pane opens to the left of the Network log.  
+1.  Select **Search** ![Search][ImageSearchIcon].  The Search pane opens to the left of the Network log.  
     
     > ##### Figure 18  
     > The Search pane  
@@ -243,7 +243,7 @@ For example, suppose you want to check if your resources are using reasonable **
     > Search results for `Cache-Control`  
     > ![Search results for Cache-Control][ImagesTutorialResults]  
 
-1.  Click a result to view which resource the result was found in. If you are looking at the details of the resource, click a result to go directly to it. For example, if the query was found in a header, the Headers tab opens. If the query was found in content, the Response tab opens.  
+1.  Select a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the Headers tab opens.   If the query was found in content, the **Response** tab opens.  
     
     > ##### Figure 20  
     > A search result highlighted in the Headers tab  
@@ -266,7 +266,7 @@ task at hand.
 
 The **Filters** toolbar should be enabled by default.  If not:  
 
-1.  Click **Filter** ![Filter][ImageFilterIcon] to show it.  
+1.  Select **Filter** ![Filter][ImageFilterIcon] to show it.  
 
 ### Filter by string, regular expression, or property   
 
@@ -305,19 +305,19 @@ The **Filter** text box supports many different types of filtering.
 
 To focus in on a certain type of file, such as stylesheets:  
 
-1.  Click **CSS**.  All other file types are filtered out.  
+1.  Select **CSS**.  All other file types are filtered out.  
     
     > ##### Figure 27  
     > Showing CSS files only  
     > ![Showing CSS files only][ImagesTutorialCSS]  
     
-1.  To also see scripts, hold `Control` \(Windows\) or `Command` \(macOS\) and then click **JS**.  
+1.  To also see scripts, hold `Control` \(Windows\) or `Command` \(macOS\) and then select **JS**.  
     
     > ##### Figure 28  
     > Showing CSS and JS files only  
     > ![Showing CSS and JS files only][ImagesTutorialCSSJS]  
     
-1.  Click **All** to remove the filters and see all resources again.  
+1.  Select **All** to remove the filters and see all resources again.  
 
 See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.  
 
@@ -337,14 +337,14 @@ How does a page look and behave when some of the page resources are not availabl
     > Show Request Blocking  
     > ![Show Request Blocking][ImagesTutorialBlock]  
 
-1.  Click **Add Pattern** ![Add Pattern][ImageAddIcon].  
+1.  Select **Add Pattern** ![Add Pattern][ImageAddIcon].  
 1.  Type `main.css`.  
     
     > ##### Figure 31  
     > Blocking `main.css`  
     > ![Blocking main.css][ImagesTutorialAddBlock]  
     
-1.  Click **Add**.  
+1.  Select **Add**.  
 1.  Reload the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
     
     > [!NOTE]
@@ -354,7 +354,7 @@ How does a page look and behave when some of the page resources are not availabl
     > `main.css` has been blocked  
     > ![main.css has been blocked][ImagesTutorialBlockedStyles]  
 
-1.  Uncheck the **Enable request blocking** checkbox.  
+1.  Deselect the **Enable request blocking** checkbox.  
 
 ## Conclusion  
 
@@ -365,7 +365,7 @@ Congratulations, you have completed the tutorial.  You now know how to use the N
 
 
 
-Check out the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity. 
+Check out the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.  
 
  
 

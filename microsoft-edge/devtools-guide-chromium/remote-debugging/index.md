@@ -2,7 +2,7 @@
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -55,7 +55,7 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 1.  Select **Enable USB Debugging**.  
 1.  On your development machine, open Microsoft Edge.  
 1.  [Open DevTools][DevToolsOpen].  
-1.  In DevTools, click the **Main Menu** `...` then select **More tools** > **Remote devices**.  
+1.  In DevTools, select the **Main Menu** `...` then select **More tools** > **Remote devices**.  
     
     > ##### Figure 1  
     > Opening the **Remote Devices** tab via the **Main Menu**  
@@ -104,21 +104,21 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 
 1.  Open Microsoft Edge on your Android device.  
 
-1.  In the **Remote Devices** tab, click the tab that matches your Android device model name.  
+1.  In the **Remote Devices** tab, select the tab that matches your Android device model name.  
     At the top of this page, you see the model name of your Android device, followed by its serial number.  Below that, you should see the version of Microsoft Edge running on the device, with the version number in parentheses.  Each open Microsoft Edge tab gets its own section.  You may interact with that tab from this section.  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
     <!--
     > ##### Figure 5  
     > A connected remote device  
     > ![A connected remote device][ImageConnectedRemoteDevice]  -->
 
-1.  In the **New tab** text box, enter a URL and then click **Open**.  The page opens in a new tab on your Android device.  
+1.  In the **New tab** text box, enter a URL and then select **Open**.  The page opens in a new tab on your Android device.  
 
-1.  Click **Inspect** next to the URL that you just opened.  A new DevTools instance opens.  The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
+1.  Select **Inspect** next to the URL that you just opened.  A new DevTools instance opens.  The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.  
 
 ### More actions: reload, focus, or close a tab   
 
-Click **More Options** `...` next to the tab that you want to reload, focus, or close.  
+Select **More Options** `...` next to the tab that you want to reload, focus, or close.  
 <!--
 > ##### Figure 6  
 > The menu for reloading, focusing, or closing a tab  
@@ -128,11 +128,14 @@ Click **More Options** `...` next to the tab that you want to reload, focus, or 
 
 Go to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
 
-You may also tap an element on your Android device screen to select it in the **Elements** panel.  Click **Select Element** ![Select Element][ImageSelectElementIcon] on your DevTools instance, and then tap the element on your Android device screen.  Note that **Select Element** is disabled after the first touch, so you need to re-enable it every time you want to use this feature.  
+You may also select an element on your Android device screen to select it in the **Elements** panel.  Select **Select Element** ![Select Element][ImageSelectElementIcon] on your DevTools instance, and then select the element on your Android device screen.  
+
+> [!NOTE]
+> **Select Element** is disabled after the first selection, so you must re-enable it every time you want to use this feature.  
 
 ### Screencast your Android screen to your development machine   
 
-Click **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the content of your Android device in your DevTools instance.  
+Select **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the content of your Android device in your DevTools instance.  
 
 You are able to interact with the screencast in multiple ways:  
 
