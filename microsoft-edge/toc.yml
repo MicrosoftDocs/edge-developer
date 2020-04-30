@@ -66,7 +66,7 @@
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-            - name: Microsoft Edge 82
+            - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
         - name: IE mode
           href: devtools-guide-chromium/ie-mode.md
@@ -236,6 +236,8 @@
               href: devtools-guide-chromium/customize/dark-theme.md
             - name: Change Placement
               href: devtools-guide-chromium/customize/placement.md
+            - name: Match Browser Language
+              href: devtools-guide-chromium/customize/localization.md
     - name: DevTools (EdgeHTML)
       href: devtools-guide.md
       items: 
@@ -487,25 +489,5 @@
     - name: WebVR Developer Guide
       href: https://docs.microsoft.com/microsoft-edge/webvr/
     - name: Windows Runtime (WinRT)
-      href: windows-runtime.md
-      items: 
-        - name: Using the Windows Runtime in JavaScript
-          href: windows-runtime/using-the-windows-runtime-in-javascript.md
-          items: 
-            - name: Considerations when Using the Windows Runtime API
-              href: windows-runtime/considerations-when-using-the-windows-runtime-api.md
-            - name: Using Windows Runtime Asynchronous Methods
-              href: windows-runtime/using-windows-runtime-asynchronous-methods.md
-              items: 
-                - name: Special Error Properties from Asynchronous Windows Runtime Methods
-                  href: windows-runtime/special-error-properties-from-asynchronous-windows-runtime-methods.md
-            - name: Handling Windows Runtime Events in JavaScript
-              href: windows-runtime/handling-windows-runtime-events-in-javascript.md
-            - name: JavaScript Representation of Windows Runtime Types
-              href: windows-runtime/javascript-representation-of-windows-runtime-types.md
-            - name: Windows Runtime DateTime and TimeSpan Representations
-              href: windows-runtime/windows-runtime-datetime-and-timespan-representations.md
-            - name: Error Codes for Windows Runtime Apps using JavaScript
-              href: windows-runtime/error-codes-for-windows-runtime-apps-using-javascript.md
-        - name: Reference
-          href: windows-runtime/reference/toc.md
+      href: windows-runtime/toc.yml
+      topicHref: windows-runtime/index.md

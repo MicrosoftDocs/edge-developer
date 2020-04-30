@@ -51,9 +51,9 @@ Once your PR is submitted, a member of the Microsoft Edge docs team will review.
 
 ## Working with Branches
 
-The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Develop](https://github.com/MicrosoftDocs/edge-developer/tree/develop), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/microsoft-edge). 
+The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) utilizes two main parent branches: [Master](https://github.com/MicrosoftDocs/edge-developer/tree/master), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/microsoft-edge), and [Live](https://github.com/MicrosoftDocs/edge-developer/tree/live), for content appearing on the [live site](https://docs.microsoft.com/microsoft-edge). 
 
-When making contributions, please submit your Pull Request (PR) to the **Develop** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
+When making contributions, please submit your Pull Request (PR) to the **Master** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live.
 
 **For internal Microsoft employees**: If you have content to contribute that is confidential or needs to be held back for future release, please email the Web Docs team at [webdocs@microsoft.com](webdocs@microsoft.com).
 
