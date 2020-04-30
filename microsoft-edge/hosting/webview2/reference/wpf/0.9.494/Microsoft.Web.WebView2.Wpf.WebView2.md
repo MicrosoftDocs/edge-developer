@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Wpf.WebView2 class 
 
-Namespace: Microsoft.Web.WebView2.Wpf
+Namespace: Microsoft.Web.WebView2.Wpf\
 Assembly: Microsoft.Web.WebView2.Wpf.dll
 
 ```

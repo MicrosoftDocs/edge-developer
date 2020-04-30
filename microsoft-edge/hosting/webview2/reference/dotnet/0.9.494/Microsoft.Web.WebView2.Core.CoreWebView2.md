@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2 class 
 
-Namespace: Microsoft.Web.WebView2.Core
+Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 
 WebView2 enables you to host web content using the latest Edge web browser technology.
@@ -413,7 +413,7 @@ Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreate
 
 Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
 
-> public void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)(string uri, [CoreWebView2WebResourceContext](Microsoft.Web.WebView2.Core.md) ResourceContext)
+> public void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)(string uri, [CoreWebView2WebResourceContext](./namespace-Microsoft.Web.WebView2.Core.md) ResourceContext)
 
 If the same filter was added multiple times, then it will need to be removed as many times as it was added for the removal to be effective. Returns E_INVALIDARG for a filter that was never added.
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 04/30/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -18,12 +18,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 --------------------------------|---------------------------------------------
 [CoreWebView2CapturePreviewImageFormat](#corewebview2capturepreviewimageformat) | Image format used by the CoreWebView2CapturePreview method.
 [CoreWebView2KeyEventKind](#corewebview2keyeventkind) | The type of key event that triggered an AcceleratorKeyPressed event.
-[CoreWebView2MouseEventKind](#corewebview2mouseeventkind) | Mouse event type used by SendMouseInput to convey the type of mouse event being sent to WebView.
-[CoreWebView2MouseEventVirtualKeys](#corewebview2mouseeventvirtualkeys) | Mouse event virtual keys associated with a CoreWebView2MouseEventKind for SendMouseInput.
 [CoreWebView2MoveFocusReason](#corewebview2movefocusreason) | Reason for moving focus.
 [CoreWebView2PermissionKind](#corewebview2permissionkind) | The type of a permission request.
 [CoreWebView2PermissionState](#corewebview2permissionstate) | Response to a permission request.
-[CoreWebView2PointerEventKind](#corewebview2pointereventkind) | Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
 [CoreWebView2ProcessFailedKind](#corewebview2processfailedkind) | Kind of process failure used in the CoreWebView2ProcessFailedEventHandler class.
 [CoreWebView2ScriptDialogKind](#corewebview2scriptdialogkind) | Kind of JavaScript dialog used in the CoreWebView2ScriptDialogOpeningEventHandler class.
 [CoreWebView2WebErrorStatus](#corewebview2weberrorstatus) | Error status values for web navigations.
@@ -77,48 +74,6 @@ SystemKeyUp            | Correspond to window message WM_SYSKEYUP.
 
 The type of key event that triggered an AcceleratorKeyPressed event.
 
-#### CoreWebView2MouseEventKind 
-
-> enum [CoreWebView2MouseEventKind](#corewebview2mouseeventkind)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-HorizontalWheel            | Mouse horizontal wheel scroll event, WM_MOUSEHWHEEL.
-LeftButtonDoubleClick            | Left button double click mouse event, WM_LBUTTONDBLCLK.
-LeftButtonDown            | Left button down mouse event, WM_LBUTTONDOWN.
-LeftButtonUp            | Left button up mouse event, WM_LBUTTONUP.
-Leave            | Mouse leave event, WM_MOUSELEAVE.
-MiddleButtonDoubleClick            | Middle button double click mouse event, WM_MBUTTONDBLCLK.
-MiddleButtonDown            | Middle button down mouse event, WM_MBUTTONDOWN.
-MiddleButtonUp            | Middle button up mouse event, WM_MBUTTONUP.
-Move            | Mouse move event, WM_MOUSEMOVE.
-RightButtonDoubleClick            | Right button double click mouse event, WM_RBUTTONDBLCLK.
-RightButtonDown            | Right button down mouse event, WM_RBUTTONDOWN.
-RightButtonUp            | Right button up mouse event, WM_RBUTTONUP.
-Wheel            | Mouse wheel scroll event, WM_MOUSEWHEEL.
-XButtonDoubleClick            | First or second X button double click mouse event, WM_XBUTTONDBLCLK.
-XButtonDown            | First or second X button down mouse event, WM_XBUTTONDOWN.
-XButtonUp            | First or second X button up mouse event, WM_XBUTTONUP.
-
-Mouse event type used by SendMouseInput to convey the type of mouse event being sent to WebView.
-
-#### CoreWebView2MouseEventVirtualKeys 
-
-> enum [CoreWebView2MouseEventVirtualKeys](#corewebview2mouseeventvirtualkeys)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-None            | No additional keys pressed.
-LeftButton            | Left mouse button is down, MK_LBUTTON.
-RightButton            | Right mouse button is down, MK_RBUTTON.
-Shift            | SHIFT key is down, MK_SHIFT.
-Control            | CTRL key is down, MK_CONTROL.
-MiddleButton            | Middle mouse button is down, MK_MBUTTON.
-XButton1            | First X button is down, MK_XBUTTON1.
-XButton2            | Second X button is down, MK_XBUTTON2.
-
-Mouse event virtual keys associated with a CoreWebView2MouseEventKind for SendMouseInput.
-
 #### CoreWebView2MoveFocusReason 
 
 > enum [CoreWebView2MoveFocusReason](#corewebview2movefocusreason)
@@ -158,21 +113,6 @@ Allow            | Grant the permission request.
 Deny            | Deny the permission request.
 
 Response to a permission request.
-
-#### CoreWebView2PointerEventKind 
-
-> enum [CoreWebView2PointerEventKind](#corewebview2pointereventkind)
-
- Values                         | Descriptions
---------------------------------|---------------------------------------------
-Activate            | Corresponds to WM_POINTERACTIVATE.
-Down            | Corresponds to WM_POINTERDOWN.
-Enter            | Corresponds to WM_POINTERENTER.
-Leave            | Corresponds to WM_POINTERLEAVE.
-Up            | Corresponds to WM_POINTERUP.
-Update            | Corresponds to WM_POINTERUPDATE.
-
-Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
 
 #### CoreWebView2ProcessFailedKind 
 

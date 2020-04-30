@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2Controller class 
 
-Namespace: Microsoft.Web.WebView2.Core
+Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 
 This class is the owner of the CoreWebView2 object, and provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
@@ -152,7 +152,7 @@ Close is implicitly called when the CoreWebView2Controller loses its final refer
 
 Move focus into WebView.
 
-> public void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](Microsoft.Web.WebView2.Core.md) reason)
+> public void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](./namespace-Microsoft.Web.WebView2.Core.md) reason)
 
 WebView will get focus and focus will be set to correspondent element in the page hosted in the WebView. For Programmatic reason, focus is set to previously focused element or the default element if there is no previously focused element. For Next reason, focus is set to the first element. For Previous reason, focus is set to the last element. WebView can also got focus through user interaction like clicking into WebView or Tab into it. For tabbing, the app can call MoveFocus with Next or Previous to align with tab and shift+tab respectively when it decides the WebView is the next tabbable element. Or, the app can call IsDialogMessage as part of its message loop to allow the platform to auto handle tabbing. The platform will rotate through all windows with WS_TABSTOP. When the WebView gets focus from IsDialogMessage, it will internally put the focus on the first or last element for tab and shift+tab respectively.
 

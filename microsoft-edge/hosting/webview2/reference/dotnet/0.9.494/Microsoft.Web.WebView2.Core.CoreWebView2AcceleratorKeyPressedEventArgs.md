@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs class 
 
-Namespace: Microsoft.Web.WebView2.Core
+Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 
 Event args for the AcceleratorKeyPressed event.
@@ -43,7 +43,7 @@ If the Handled property is set to TRUE then this will prevent the WebView from p
 
 The key event type that caused the event to be fired.
 
-> public [CoreWebView2KeyEventKind](Microsoft.Web.WebView2.Core.md) [KeyEventKind](#keyeventkind)
+> public [CoreWebView2KeyEventKind](./namespace-Microsoft.Web.WebView2.Core.md) [KeyEventKind](#keyeventkind)
 
 #### KeyEventLParam 
 

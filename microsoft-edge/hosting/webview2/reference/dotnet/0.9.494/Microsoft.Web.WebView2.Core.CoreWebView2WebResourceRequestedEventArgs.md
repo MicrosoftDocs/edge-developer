@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs class 
 
-Namespace: Microsoft.Web.WebView2.Core
+Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 
 Event args for the WebResourceRequested event.
@@ -40,7 +40,7 @@ The HTTP request.
 
 The web resource request contexts.
 
-> public [CoreWebView2WebResourceContext](Microsoft.Web.WebView2.Core.md) [ResourceContext](#resourcecontext)
+> public [CoreWebView2WebResourceContext](./namespace-Microsoft.Web.WebView2.Core.md) [ResourceContext](#resourcecontext)
 
 #### Response 
 

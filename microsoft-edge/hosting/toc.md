@@ -344,7 +344,7 @@
 ####### [IWebView2WebResourceRequestedEventHandler](webview2/reference/win32/0.8.190/IWebView2WebResourceRequestedEventHandler.md)
 ####### [IWebView2ZoomFactorChangedEventHandler](webview2/reference/win32/0.8.190/IWebView2ZoomFactorChangedEventHandler.md)
 ### [.NET](webview2/reference/dotnet/0.9.494-reference-webview2.md)
-#### [Microsoft.Web.WebView2.Core Namespace](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.md)
+#### [Microsoft.Web.WebView2.Core Namespace](webview2/reference/dotnet/0.9.494/namespace-Microsoft.Web.WebView2.Core.md)
 #### [CoreWebView2](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2.md)
 #### [CoreWebView2Controller](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2Controller.md)
 #### [CoreWebView2Deferral](webview2/reference/dotnet/0.9.494/Microsoft.Web.WebView2.Core.CoreWebView2Deferral.md)
