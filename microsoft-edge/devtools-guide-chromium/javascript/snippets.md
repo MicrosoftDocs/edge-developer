@@ -2,7 +2,7 @@
 title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -157,19 +157,20 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 
 <!-- image links -->  
-[ImageMoreTabsIcon]: ../images/shared/more-tabs-icon.msft.png  
-[ImageRunSnippetIcon]: ../images/run-snippet-icon.msft.png  
 
-[ImageCreateSnippetSearch]: images/search-create-new-snippet.msft.png "Figure 7: The command for creating a new Snippet"  
-[ImageSourcesPageEmpty]: images/sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
-[ImageRunSnippetCommand]: images/search-run-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
-[ImageShowSnippetsSearch]: images/search-show-snippets.msft.png "Figure 5: The Show Snippets command"  
-[ImageSnippetSplitScreenAfter]: images/sources-snippets-split-screen-after.msft.png "Figure 2: How the page looks after running the Snippet"  
-[ImageSnippetSplitScreen]: images/sources-snippets-split-screen.msft.png "Figure 1: How the page looks before running the Snippet"  
-[ImageSnippetEditor]: images/sources-snippets-editor-saved.msft.png "Figure 8: The Code Editor"  
-[ImageSnippetName]: images/sources-snippets-naming.msft.png "Figure 6: Naming a Snippet"  
-[ImageSnippetsPane]: images/sources-snippets-pane.msft.png "Figure 3: The Snippets pane"  
-[ImageUnsavedSnippet]: images/sources-snippets-editor-unsaved.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
+[ImageMoreTabsIcon]: /microsoft-edge/devtools-guide-chromium/media/more-tabs-icon.msft.png  
+[ImageRunSnippetIcon]: /microsoft-edge/devtools-guide-chromium/media/run-snippet-icon.msft.png  
+
+[ImageSnippetSplitScreen]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-split-screen.msft.png "Figure 1: How the page looks before running the Snippet"  
+[ImageSnippetSplitScreenAfter]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-split-screen-after.msft.png "Figure 2: How the page looks after running the Snippet"  
+[ImageSnippetsPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-pane.msft.png "Figure 3: The Snippets pane"  
+[ImageSourcesPageEmpty]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-page-pane.msft.png "Figure 4: The Sources panel with the Page pane open on the left"  
+[ImageShowSnippetsSearch]: /microsoft-edge/devtools-guide-chromium/media/javascript-search-show-snippets.msft.png "Figure 5: The Show Snippets command"  
+[ImageSnippetName]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-naming.msft.png "Figure 6: Naming a Snippet"  
+[ImageCreateSnippetSearch]: /microsoft-edge/devtools-guide-chromium/media/javascript-search-create-new-snippet.msft.png "Figure 7: The command for creating a new Snippet"  
+[ImageSnippetEditor]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-editor-saved.msft.png "Figure 8: The Code Editor"  
+[ImageUnsavedSnippet]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-snippets-editor-unsaved.msft.png "Figure 9: An asterisk next to the Snippet name, which indicates unsaved code"  
+[ImageRunSnippetCommand]: /microsoft-edge/devtools-guide-chromium/media/javascript-search-run-command.msft.png "Figure 10: Running a Snippet from the Command Menu"  
 
 <!-- links -->  
 
