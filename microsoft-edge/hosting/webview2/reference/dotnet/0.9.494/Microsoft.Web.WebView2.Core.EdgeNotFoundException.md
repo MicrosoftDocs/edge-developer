@@ -33,7 +33,7 @@ The exception that is thrown when an Edge installation is missing.
 
 ## Members
 
-### Properties
+### Constructors
 
 #### EdgeNotFoundException 
 
