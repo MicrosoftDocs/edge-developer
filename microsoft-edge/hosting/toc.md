@@ -168,7 +168,7 @@
 ## [Release notes](webview2/ReleaseNotes.md)
 ## Tooling
 ### [WebDriver](webview2/Tooling/WebDriver.md)
-## [WebView2 API reference](webview2/webview2-api-reference.md)
+## [Reference](webview2/webview2-api-reference.md)
 ### [Win32 C++](webview2/reference/win32/0.9.488-reference-webview2.md)
 #### [ICoreWebView2](webview2/reference/win32/0.9.488/ICoreWebView2.md)
 #### [ICoreWebView2Controller](webview2/reference/win32/0.9.488/ICoreWebView2Controller.md)
