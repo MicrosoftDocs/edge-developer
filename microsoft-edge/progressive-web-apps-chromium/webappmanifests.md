@@ -34,7 +34,7 @@ Most operating systems provide some sort of quick access to key app features via
     },
     {
       "name": "Subscriptions",
-      "description": "View the list of podcasts you listen to",
+      "description": "View the list of podcasts available in your subscription",
       "url": "/subscriptions?sort=desc"
     }
   ]
