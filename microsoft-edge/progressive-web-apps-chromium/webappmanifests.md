@@ -12,7 +12,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 # Deeper OS integrations via the Web App Manifest
 
-A site’s Web App Manifest governs how it looks and behaves when installed on a device. At its most basic, the Manifest provides detail about what name and icons should be used to represent your app in system menus to the theme colors the OS should use for the title bar. The Manifest also enables you to unlock more powerful features that allow your app to behave like other native apps on the system.
+A site’s Web App Manifest governs how your Progressive Web App (PWA) looks and behaves when installed on a device. At its most basic, the Manifest provides details on the name of your app, icons to use to represent your app in system menus, and the theme colors the operating system (OS) uses in the title bar. The Manifest also enables you to unlock powerful features that allow your app to behave like other native apps on the system.
 
 ## Use shortcuts to provide quick access to features
 
