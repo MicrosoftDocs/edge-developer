@@ -10,9 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, remote debugging
 
 # Get Started with Remote Debugging Surface Duo emulators
 
-Remote debug live content running on the [Microsoft Edge app][AndroidEdge] on the [Surface Duo][SurfaceDuo] emulator from your desktop instance of [Microsoft Edge][DesktopEdge].
-
-This guide walks through the process for remote debugging the [Surface Duo emulator][DuoEmulator]. To debug the actual Surface Duo device, follow our guide for [remote debugging Android devices][RemoteDebuggingAndroid].
+In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app][AndroidEdge] on a [Surface Duo][SurfaceDuo] emulator from a desktop instance of [Microsoft Edge][DesktopEdge]. For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices][RemoteDebuggingAndroid].
 
 ## Step 1: Navigate to edge://inspect
 
