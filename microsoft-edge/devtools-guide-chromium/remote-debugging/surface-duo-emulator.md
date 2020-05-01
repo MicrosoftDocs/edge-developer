@@ -53,7 +53,7 @@ Switch back to the desktop instance of [Microsoft Edge][DesktopEdge]. The `edge:
 > ![The edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator][ImageEdgeInspectTargets]  
 
 > [!NOTE]
-> If you do not see **SurfaceDuoEmulator** on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app][AndroidEdge] on the [Surface Duo Emulator][DuoEmulator]. Refer to our [troubleshooting section for Android devices][TroubleshootingAndroid] if that does not resolve the issue.
+> If you do not see **SurfaceDuoEmulator** on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app][AndroidEdge] on the [Surface Duo Emulator][DuoEmulator]. For additional troubleshooting steps, see the [troubleshooting section for Android devices][TroubleshootingAndroid].
 
 Click **inspect** for the web content you want to debug. The [Microsoft Edge DevTools][DevToolsDocs] will open in a new window. Click **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the content on your [Surface Duo emulator][DuoEmulator] in your DevTools window. You are now able to use the full power of the Microsoft Edge DevTools to debug your web content running on the [Surface Duo emulator][DuoEmulator].
 
