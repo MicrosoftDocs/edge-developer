@@ -66,7 +66,7 @@ From the list of open tabs running on the emulator, choose **inspect** on the ta
 
 ## Additional Resources
 
-The web is a great platform for the new class of foldable and dual-screen devices because you can write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices. Check out the additional resources below to get started building great web content for these new devices:
+The web is a great platform for the new class of foldable and dual-screen devices because you can write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices. For more information, see these additional resources to get started building web content for these new devices.
 
 - [Documentation for creating apps on dual-screen devices][DualScreenDocs]
 - [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices][WebPlatformExplainer]
