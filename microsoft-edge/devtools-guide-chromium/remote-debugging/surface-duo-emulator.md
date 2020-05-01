@@ -14,7 +14,7 @@ In this article, you walk through the process of remotely debugging your web con
 
 ## Step 1: Navigate to edge://inspect
 
-Launch a desktop instance of [Microsoft Edge][DesktopEdge]. Navigate to the `edge://inspect` page. 
+Open a desktop instance of [Microsoft Edge][DesktopEdge], and navigate to `edge://inspect`.
 
 > ##### Figure 1  
 > The `edge://inspect` page in desktop Microsoft Edge
