@@ -18,7 +18,7 @@ Open a desktop instance of [Microsoft Edge][DesktopEdge], and navigate to `edge:
 
 > ##### Figure 1  
 > The `edge://inspect` page in Microsoft Edge on the desktop
-> ![The edge://inspect page in desktop Microsoft Edge][ImageEdgeInspect]  
+> ![The edge://inspect page in Microsoft Edge][ImageEdgeInspect] on the desktop
 
 > [!NOTE]
 > The `edge://inspect` page may not recognize the [Surface Duo emulator][DuoEmulator] if you launch the emulator first and then navigate to the `edge://inspect` page. Follow the steps in order to avoid having to restart the emulator.
