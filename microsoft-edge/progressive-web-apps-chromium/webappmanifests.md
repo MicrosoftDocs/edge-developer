@@ -40,7 +40,7 @@ Most operating systems provide some sort of quick access to key app features via
   ]
 ```
 
-In the context of a full Web App Manifest, adding the above snippet would enable two shortcuts on the app’s icon. The first would be labelled "Play Later" and would have a custom icon. The second would be labelled "Subscriptions" and does not have an icon associated with it. As you can see, the `icons` member is optional. The `description` member is also optional and can be used to provide additional information for accessibility purposes.
+When added to a complete Web App Manifest, adding the above snippet would enable two shortcuts on the context menu on the app’s icon. The first would be labelled "Play Later" and has a custom icon. The second would be labelled "Subscriptions" and does not have an icon because the `icons` member is optional. The `description` member is also optional and may be used to provide additional information for accessibility purposes.
 
 ## Share target
 
