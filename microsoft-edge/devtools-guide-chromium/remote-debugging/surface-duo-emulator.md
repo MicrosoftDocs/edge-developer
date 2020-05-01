@@ -55,7 +55,7 @@ Switch back to the desktop instance of [Microsoft Edge][DesktopEdge]. The `edge:
 > [!NOTE]
 > If you do not see **SurfaceDuoEmulator** on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app][AndroidEdge] on the [Surface Duo Emulator][DuoEmulator]. For additional troubleshooting steps, see the [troubleshooting section for Android devices][TroubleshootingAndroid].
 
-Click **inspect** for the web content you want to debug. The [Microsoft Edge DevTools][DevToolsDocs] will open in a new window. Click **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the content on your [Surface Duo emulator][DuoEmulator] in your DevTools window. You are now able to use the full power of the Microsoft Edge DevTools to debug your web content running on the [Surface Duo emulator][DuoEmulator].
+From the list of open tabs running on the emulator, choose **inspect** on the tab that has the web content to be debugged. The [Microsoft Edge DevTools][DevToolsDocs] will open in a new window. Choose **Toggle Screencast** ![Toggle Screencast][ImageToggleScreencastIcon] to view the web content from your [Surface Duo emulator][DuoEmulator] in the DevTools window. You are now able to use the Microsoft Edge DevTools to debug your web content that's displayed on the [Surface Duo emulator][DuoEmulator].
 
 > ##### Figure 5
 > Using the Microsoft Edge DevTools against Bing in the Microsoft Edge app on the Surface Duo emulator
