@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
 ---
 
-# Get Started with Remote Debugging the Surface Duo emulator
+# Get Started with Remote Debugging Surface Duo emulators
 
 Remote debug live content running on the [Microsoft Edge app][AndroidEdge] on the [Surface Duo][SurfaceDuo] emulator from your desktop instance of [Microsoft Edge][DesktopEdge].
 
