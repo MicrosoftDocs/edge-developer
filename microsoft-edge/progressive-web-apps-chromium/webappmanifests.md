@@ -16,7 +16,7 @@ A site’s Web App Manifest governs how it looks and behaves when installed on a
 
 ## Provide quick access to key features
 
-Most operating systems provide some sort of quick access to key app features via a context menu connected to the app’s icon. This feature is, called "shortcuts," is enabled in Progressive Web Apps via the Web App Manifest’s `shortcuts` member. Shortcuts are defined in the manifest like this:
+Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the app’s icon. To use shortcuts in your PWA, include the `shortcuts` member in your Web App Manifest. The following example shows how to define a shortcut in your web app manifest. 
 
 ```json
   "shortcuts": [
