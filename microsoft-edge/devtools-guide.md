@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 05/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -41,7 +41,7 @@ Please keep sending your [feedback and feature requests](#feedback)!
 
 > [!TIP]
 > [Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml]:  
-> We partnered with [BrowserStack][BrowserstackEdgehtml] to provide free live and automated testing on Microsoft Edge \(EdgeHTML\).  
+> The Microsoft Edge team partnered with [BrowserStack][BrowserstackEdgehtml] to provide free live and automated testing on Microsoft Edge \(EdgeHTML\).  
 
 ## Microsoft Store app  
 
@@ -49,7 +49,7 @@ The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEd
 
 ### Local debugging  
 
-To debug a page locally, simply launch the Microsoft Edge DevTools app.  The **Local** panel of the chooser will display all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.  Click on your desired target to attach and open a new tab instance of the DevTools.  
+To debug a page locally, simply launch the Microsoft Edge DevTools app.  The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.  Select your desired target to attach and open a new tab instance of the DevTools.  
 
 ![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  
 
@@ -61,12 +61,6 @@ To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgeht
 
 ![DevTools app Remote panel][DevtoolsGuideEdgehtmlRemote]  
 
-## Feedback  
-
-Please send us your feedback so we can continue improving the Microsoft Edge \(EdgeHTML\) DevTools for you!  Simply open the tools (`F12`) and click the [Send feedback](#microsoft-edge-edgehtml-developer-tools) button.  
-
-Become a [Windows Insider][WindowsInsiderProgram] to preview the [latest features coming to the DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Use the Windows Feedback Hub app to post, up-vote, track and get support for general Windows suggestions and problems.  
-
 ## General Shortcuts  
 
 These shortcuts control the main DevTools window and should work across all tools.  
@@ -75,7 +69,7 @@ These shortcuts control the main DevTools window and should work across all tool
 |:--- |:--- |  
 | Show/Hide DevTools \(opens to last viewed panel\) | `F12`, `Ctrl`+`Shift`+`I` |  
 | Toggle docking \(Undock/Bottom/Right\) | `Ctrl`+`Shift`+`D` |  
-| Open file | `Ctrl`+`P`, `Ctrl`+`O` |  
+| Open file | `Ctrl`+`O` |  
 | Show non-editable HTML source code in Debugger | `Ctrl`+`U` |  
 | Show/hide Console at the bottom of any other tool  | `Ctrl`+`` ` `` |  
 | Switch to Elements \(DOM Explorer\) | `Ctrl`+`1` |  
@@ -100,7 +94,13 @@ These shortcuts control the main DevTools window and should work across all tool
 | Refresh the page | `Ctrl`+`Shift`+`F5`, `Ctrl`+`R` |  
 
 > [!NOTE]
-> If you're debugging and paused at a breakpoint, the **Refresh the page** action resumes the runtime first.
+> If you are debugging and paused at a breakpoint, the **Refresh the page** action resumes the runtime first.  
+
+## Feedback  
+
+Please send your feedback to help improve the Microsoft Edge \(EdgeHTML\) DevTools for you!  Simply open the tools \(`F12`\) and select the [Send feedback](#microsoft-edge-edgehtml-developer-tools) button.  
+
+Become a [Windows Insider][WindowsInsiderProgram] to preview the [latest features coming to the DevTools][DevtoolsGuideEdgehtmlWhatsnew].  Use the Windows Feedback Hub app to post, up-vote, track and get support for general Windows suggestions and problems.  
 
 <!-- image links  -->  
 
