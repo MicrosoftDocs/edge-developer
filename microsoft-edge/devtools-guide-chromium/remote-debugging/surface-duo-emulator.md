@@ -49,8 +49,8 @@ Navigate to the website or app that you want to debug in the [Microsoft Edge app
 Switch back to the desktop instance of [Microsoft Edge][DesktopEdge]. The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the tabs or [PWAs][PwaDocs] that are running on the [Surface Duo emulator][DuoEmulator].
 
 > ##### Figure 4
-> The `edge://inspect` page displays a list of the tabs in the Microsoft Edge app on the emulator
-> ![The edge://inspect page displays a list of the tabs in the Microsoft Edge app on the emulator][ImageEdgeInspectTargets]  
+> The `edge://inspect` page displays a list of the open tabs in the Microsoft Edge app running on the emulator
+> ![The edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator][ImageEdgeInspectTargets]  
 
 > [!NOTE]
 > If you do not see **SurfaceDuoEmulator** on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app][AndroidEdge] on the [Surface Duo Emulator][DuoEmulator]. Refer to our [troubleshooting section for Android devices][TroubleshootingAndroid] if that does not resolve the issue.
