@@ -53,10 +53,6 @@
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docs_build_engine": {
-    "name": "docfx_v3",
-    "mode": "impact"
-  },
-  "feature_flags": {
-    "use_v2_github_user_cache": true
+    "name": "docfx_v3"
   }
 }
