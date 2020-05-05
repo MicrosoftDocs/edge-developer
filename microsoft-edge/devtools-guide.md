@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/01/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -23,7 +23,11 @@ For more on the latest features, check out [DevTools in the latest update of Win
 
 ## Core tools  
 
-![Microsoft Edge \(EdgeHTML\) DevTools][ImageDevtoolsEdgehtml]  
+:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
+   Microsoft Edge (EdgeHTML) DevTools
+:::image-end:::
+
+<!--![Microsoft Edge \(EdgeHTML\) DevTools][ImageDevtoolsEdgehtml]  -->  
 
 The Microsoft Edge \(EdgeHTML\) DevTools include:  
 
@@ -40,7 +44,7 @@ The Microsoft Edge \(EdgeHTML\) DevTools include:
 Please keep sending your [feedback and feature requests](#feedback)!  
 
 > [!TIP]
-> [Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml]:  
+> [Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml].  
 > The Microsoft Edge team partnered with [BrowserStack][BrowserstackEdgehtml] to provide free live and automated testing on Microsoft Edge \(EdgeHTML\).  
 
 ## Microsoft Store app  
@@ -51,7 +55,11 @@ The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEd
 
 To debug a page locally, simply launch the Microsoft Edge DevTools app.  The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.  Select your desired target to attach and open a new tab instance of the DevTools.  
 
-![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  
+:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools app Local panel":::
+   DevTools app Local panel
+:::image-end:::
+
+<!--![DevTools app Local panel][ImageDevtoolsGuideEdgehtmlChooselocal]  -->  
 
 ### Remote debugging  
 
@@ -59,9 +67,17 @@ The Microsoft Edge DevTools app introduces basic support for debugging pages on 
 
 To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.  
 
-![DevTools app Remote panel][DevtoolsGuideEdgehtmlRemote]  
+:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools app Remote panel":::
+   DevTools app Remote panel
+:::image-end:::
+
+<!--![DevTools app Remote panel][ImageDevtoolsGuideEdgehtmlRemote]  -->  
 
 ## General Shortcuts  
+
+> [!IMPORTANT]
+> All shortcuts have been verified in the most recent version of Windows.  
+> If you are unable to use a shortcut, please update your copy of Windows.  
 
 These shortcuts control the main DevTools window and should work across all tools.  
 
@@ -69,7 +85,7 @@ These shortcuts control the main DevTools window and should work across all tool
 |:--- |:--- |  
 | Show/Hide DevTools \(opens to last viewed panel\) | `F12`, `Ctrl`+`Shift`+`I` |  
 | Toggle docking \(Undock/Bottom/Right\) | `Ctrl`+`Shift`+`D` |  
-| Open file | `Ctrl`+`O` |  
+| Open file | `Ctrl`+`P`, `Ctrl`+`O` |  
 | Show non-editable HTML source code in Debugger | `Ctrl`+`U` |  
 | Show/hide Console at the bottom of any other tool  | `Ctrl`+`` ` `` |  
 | Switch to Elements \(DOM Explorer\) | `Ctrl`+`1` |  
@@ -104,9 +120,9 @@ Become a [Windows Insider][WindowsInsiderProgram] to preview the [latest feature
 
 <!-- image links  -->  
 
-[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) DevTools"  
-[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app Local panel"  
-[DevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  
+<!--[ImageDevtoolsEdgehtml]: /microsoft-edge/devtools-guide/media/devtools.png "Microsoft Edge (EdgeHTML) DevTools"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlChooselocal]: /microsoft-edge/devtools-guide/media/chooser_local.png "DevTools app Local panel"  -->  
+<!--[ImageDevtoolsGuideEdgehtmlRemote]: /microsoft-edge/devtools-guide/media/chooser_remote.png "DevTools app Remote panel"  -->  
 
 <!-- links  -->  
 
