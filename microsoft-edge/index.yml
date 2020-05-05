@@ -316,7 +316,7 @@ additionalContent:
             - text: JavaScript Runtime Hosting
               url: /microsoft-edge/hosting/javascript-runtime-hosting
             - text: WebVR Developer Guide
-              url: /webvr/webvr-docs/index
+              url: /microsoft-edge/webvr/index
             - text: Windows Runtime (WinRT)
               url: /microsoft-edge/windows-runtime
     - title: Help & Support # < 60 chars (optional)
