@@ -79,7 +79,7 @@ The [Microsoft Edge Docs GitHub repository][GithubMicrosoftdocsEdgedeveloperMain
 
 When making contributions, please submit your Pull Request \(PR\) to the `master` branch.  This branch is viewable on the staging site and should only contain contributions that are ready to publish live.  
 
-**For internal Microsoft employees**:  Please create a unique fork for your  and submit to `origin`.  If you have content to contribute that is confidential or needs to be held back for future release, please email the Web Docs team at [webdocs@microsoft.com][MailtoMicrosoftWebdocs] prior to submitting content.  
+**For internal Microsoft employees**:  Please create a unique branch for your content and push to `origin`.  If you have content to contribute that is confidential or needs to be held back for future release, please email the Web Docs team at [webdocs@microsoft.com][MailtoMicrosoftWebdocs] prior to submitting content.  
 
 ## Using issues to provide feedback on Microsoft Edge documentation  
 
