@@ -79,9 +79,11 @@ This bit of code runs within the Service Worker whenever the browser makes a Fet
 
 Every PWA is different and each will likely have a unique caching strategy, these are just a simple introduction. Chances are your code will look much different, you might even have different caching strategies for different routes within the same application too!
 
-## Indexed DB
+## IndexedDB
 
+IndexedDB is a low-level API for storing structured data. Like the Cache API, it is also asynchronous meaning you can use it in the main thread as well as within Web Workers like Service Worker. This is typically the tool you would reach for if you needed to store a significant amount of structured data on the client. IndexedDB can also be used to store binary data, such as encrypted media objects.
 
+The IndexedDB API too complicated to walk you through quickly, so we recommend reading [the MDN primer on using IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB), which will take you through the basics.
 
 ## Web Storage
 
@@ -125,6 +127,27 @@ function insertOfflineLink( request ) {
 
 Here, `insertOfflineLink()` passes the request’s URL into `localStorage.getItem()` to retrieve any stored metadata that might have been stored when that page was viewed. If that data is found, it would build and insert the requisite markup to display it.
 
+## Network Information
+
+In addition to being able to store information for offline use, it can often be quite helpful to know when a network connection is available so you can synchronize data or even inform your users that their network status has changed. There are a few options for getting the information you need in this regard.
+
+### `navigator.onLine`
+
+The `navigator.onLine` property is a simple boolean that lets you know the current status of the network. If your user is online, the value is `true`, if they aren’t it’s `false`.
+
+### Online & Offline Events
+
+Knowing whether the network is available at any given time is helpful, but only to a point. More often than not, you want to know when things change. To cover that, browser implement network events that you can listen for and react to. These events are available on the `window`, `document`, and `document.body` elements:
+
+```js
+window.addEventListener("online",  function(){
+  console.log("You’re back online!");
+});
+window.addEventListener("offline", function(){
+  console.log("Oh no, you lost your network connection :-(");
+});
+```
+
 ## See Also
 
 To learn more about managing offline scenarios, see the following:
@@ -133,6 +156,8 @@ To learn more about managing offline scenarios, see the following:
 - [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)
 - [Service Worker](https://developer.mozilla.org/docs/Web/API/ServiceWorker)
 - [Web Storage](https://developer.mozilla.org/docs/Web/API/Web_Storage_API)
+- [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/)
+- [Online & Offline Events](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/Online_and_offline_events)
 
 The following are also useful articles and books on this topic:
 
