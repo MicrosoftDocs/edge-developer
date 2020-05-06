@@ -61,7 +61,7 @@ Please keep sending your [feedback and feature requests](#feedback)!
 
 ## Extensions  
 
-You may have used extensions to the DevTools to help you diagnose and debug issues when building your web sites or apps.  You can acquire extensions for Microsoft Edge from [the Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions) page.  
+You may have used extensions to the DevTools to help you diagnose and debug issues when building your web sites or apps.  You can acquire extensions for Microsoft Edge from [the Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions) page.  From this page, you can browse DevTools extensions from the "Developer tools" category or search for a specific extension.
 
 You can also add extensions from the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions).  
 
