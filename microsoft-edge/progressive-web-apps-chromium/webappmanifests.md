@@ -42,20 +42,8 @@ Most operating systems provide quick access to key app features using shortcuts 
 
 When added to a complete Web App Manifest, adding the above snippet would enable two shortcuts on the context menu on the app’s icon. The first would be labelled "Play Later" and has a custom icon. The second would be labelled "Subscriptions" and does not have an icon because the `icons` member is optional. The `description` member is also optional and may be used to provide additional information for accessibility purposes.
 
-## Share target
-
-Share targets in PWAs to... The following code shows how to add a shared target to your web app manifest. 
-
-```js
-// code snippet
-```
-
-(Additional information example)
-The above code can be used to do...if you plan to do, consider using...
-
 ## See Also
 
 To learn more about Web App Manifests, see the following list of related topics.
 
 - [Web App Manifests](https://developer.mozilla.org/docs/Web/Manifest)
-- 
