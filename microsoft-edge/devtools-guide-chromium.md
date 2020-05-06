@@ -12,15 +12,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Microsoft Edge (Chromium) Developer Tools  
 
-In the next version of Microsoft Edge, we will be adopting the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your web sites in Microsoft Edge and ensure they will still work as expected even if your users are browsing in a different Chromium-based browser, like Google Chrome, Vivaldi, Opera, or Brave.  
+Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your web sites in Microsoft Edge and ensure they will still work as expected even if your users are browsing in a different Chromium-based browser, like Google Chrome, Vivaldi, Opera, or Brave.  
 
-As the web has grown in usage across an ever-widening array of device types, the complexity and overhead involved in testing web sites has exploded. Since web developers— particularly those at small companies— need to test so many different systems, it's nearly impossible to ensure that interesting sites will work well across all device types and all browsers. With the next version of Microsoft Edge, we hope to simplify this matrix for you by aligning the Microsoft Edge web platform with other Chromium-based browsers and providing a best-in-class developer tooling experience, both inside the browser and with the other developer tools you use every day, like Visual Studio Code.
+As the web has grown in usage across an ever-widening array of device types, the complexity and overhead involved in testing web sites has exploded. Since web developers—particularly those at small companies—need to test so many different systems, it's nearly impossible to ensure that sites will work well across all device types and all browsers. Now that Microsoft Edge is based on Chromium, we have simplified this matrix by aligning the Microsoft Edge web platform with other Chromium-based browsers and providing a best-in-class developer tooling experience, both inside the browser and with the other developer tools you use every day, like Visual Studio Code.
 
-If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools are exactly like the developer tools you already know and use.  So far, we have made a couple changes we hope you love so for more info, check out [What's new in the Microsoft Edge \(Chromium\) DevTools](./devtools-guide-chromium/whats-new.md).  
+If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools are exactly like the developer tools you already know and use.  For more info, check out [What's new in the Microsoft Edge \(Chromium\) DevTools](./devtools-guide-chromium/whats-new.md).  
 
 ![Microsoft Edge \(Chromium\) DevTools](./devtools-guide-chromium/media/devtools.png)  
 
-If you are checking out the next version of Microsoft Edge and you mainly developed in Microsoft Edge \(EdgeHTML\), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge!  
+If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge!  
 
 ## Open the DevTools  
 
@@ -31,13 +31,11 @@ If you've never used the DevTools before, the Microsoft Edge Developer Tools are
 *   See all the `console.log()` statements from your front-end JavaScript code  
 *   Debug your script by setting breakpoints and stepping through it line by line  
 
-all directly within the browser.  These are just examples of a couple features the DevTools provide to make it easier and faster for you to build and test your web sites in Microsoft Edge.  
+all directly within the browser.  These are just examples of some of the features the DevTools provide to make it easier and faster for you to build and test your web sites in Microsoft Edge.  
 
 To open the DevTools, you can press the `F12` key or `Ctrl`+`Shift`+`I` on your keyboard on Windows \(`Command`+`Option`+`I` on macOS\).  
 
 If there's an element on your site that you want to see the HTML and CSS for, you can right-click the element and select **Inspect** to jump into the Elements panel.  You can also press `Ctrl`+`Shift`+`C` on Windows \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see its HTML and CSS in the Elements panel.  
-
-<!-- potentially put gif here of Inspect element in action -->  
 
 If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows \(`Command`+`Option`+`J` on macOS\) to launch the Console panel in the DevTools.  
 
@@ -55,7 +53,7 @@ The Microsoft Edge \(Chromium\) DevTools include:
 *   A **Memory** panel to measure your use of memory resources and compare heap snapshots at different states of code runtime  
 *   An **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  You can also inspect and manage storage, databases, and caches from this panel.  
 *   A **Security** panel to debug security issues and ensure that you have properly implemented HTTPS on your web site.  HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.  
-*   An **Audits** panel to run an audit of your web site.  The results of the audit will help you improve the quality of your site, catching common errors around making your web site accessible, secure, performant, building a PWA, etc.  and helping you fix them.  
+*   An **Audits** panel (now renamed **Lighthouse**) to run an audit of your web site.  The results of the audit will help you improve the quality of your site, catching common errors around making your web site accessible, secure, performant, building a PWA, etc.  and helping you fix them.  
 
 [!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
 
@@ -65,7 +63,7 @@ Please keep sending your [feedback and feature requests](#feedback)!
 
 You may have used extensions to the DevTools to help you diagnose and debug issues when building your web sites or apps.  You can acquire extensions for Microsoft Edge from [the Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions) page.  
 
-However, we do not have any extensions to the DevTools on that page.  To acquire extensions to the DevTools, navigate to the extension you want to add to the DevTools in the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions).  
+You can also add extensions from the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions).  
 
 ![Chrome Web Store in Microsoft Edge](./devtools-guide-chromium/media/allow-extensions-from-stores.png)  
 
