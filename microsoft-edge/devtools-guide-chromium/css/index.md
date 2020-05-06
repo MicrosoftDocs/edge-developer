@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -38,7 +38,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
     [CSS Examples][GlitchDevToolsCssExamples]  
 
 > [!NOTE]
-> If you want to dock your DevTools window to the right of your viewport \(displayed in [Figure 1](#figure-1)\), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
+> If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in [Figure 1](#figure-1)\), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
     
 ## View the CSS for an element   
 
@@ -83,8 +83,8 @@ Use the **Styles** tab when you want to change or add CSS declarations to an ele
 1.  Type `honeydew` and press `Enter`.  In the **DOM Tree** you should see that an inline style declaration was applied to the element.  
 
 > ##### Figure 3  
-> The `background-color:honeydew` declaration has been applied to the element via the `element.style` section of the **Styles** tab  
-> ![Adding a CSS declaration to the element via the Styles tab][ImageDeclaration]  
+> The `background-color:honeydew` declaration has been applied to the element using the `element.style` section of the **Styles** tab  
+> ![Adding a CSS declaration to the element using the Styles tab][ImageDeclaration]  
 
 ## Add a CSS class to an element   
 
@@ -99,7 +99,7 @@ Use the **Styles** tab to see how an element looks when a CSS class is applied t
 1.  Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.  
 
 > ##### Figure 4  
-> The `color_me` class has been applied to the element via the **.cls** section of the **Styles** tab  
+> The `color_me` class has been applied to the element using the **.cls** section of the **Styles** tab  
 > ![Applying the color_me class to the element][ImageApplyClass]  
 
 ## Add a pseudostate to a class   
@@ -150,17 +150,17 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 
 <!-- image links -->  
 
-[ImageInspect]: images/elements-inspect-me.msft.png "Figure 1: The inspected element is highlighted in the DOM Tree"  
-[ImageAloha]: images/elements-inspect-me-styles.msft.png "Figure 2: CSS classes being applied to the inspected element are highlighted in the Styles tab"  
-[ImageDeclaration]: images/elements-add-background-color-to-me-styles-p.msft.png "Figure 3: Adding a CSS declaration to the element via the Styles tab"  
-[ImageApplyClass]: images/elements-add-a-class-to-me-styles-cls.msft.png "Figure 4: Applying the color_me class to the element"  
-[ImageSetHover]: images/elements-hover-over-me-styles-hov-hover.msft.png "Figure 5: Toggling the hover pseudostate on an element"  
-[ImageShowPadding]: images/elements-change-my-margin-styles-padding.msft.png "Figure 6: Hovering over the padding of the element"  
-[ImageChangeMargin]: images/elements-change-my-margin-styles-margin-edit.msft.png "Figure 7: Changing the left-margin of the element"  
+[ImageInspect]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me.msft.png "Figure 1: The inspected element is highlighted in the DOM Tree"  
+[ImageAloha]: /microsoft-edge/devtools-guide-chromium/media/css-elements-inspect-me-styles.msft.png "Figure 2: CSS classes being applied to the inspected element are highlighted in the Styles tab"  
+[ImageDeclaration]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-background-color-to-me-styles-p.msft.png "Figure 3: Adding a CSS declaration to the element using the Styles tab"  
+[ImageApplyClass]: /microsoft-edge/devtools-guide-chromium/media/css-elements-add-a-class-to-me-styles-cls.msft.png "Figure 4: Applying the color_me class to the element"  
+[ImageSetHover]: /microsoft-edge/devtools-guide-chromium/media/css-elements-hover-over-me-styles-hov-hover.msft.png "Figure 5: Toggling the hover pseudostate on an element"  
+[ImageShowPadding]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-padding.msft.png "Figure 6: Hovering over the padding of the element"  
+[ImageChangeMargin]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-margin-edit.msft.png "Figure 7: Changing the left-margin of the element"  
 
 <!-- links -->  
 
-<!--[DevToolsPlacement]: ../placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  -->  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge (Chromium) DevTools | Glitch"  
 
