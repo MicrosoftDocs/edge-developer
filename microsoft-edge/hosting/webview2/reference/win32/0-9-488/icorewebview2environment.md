@@ -156,7 +156,7 @@ void AppWindow::InitializeWebView()
     }
 }
 
-// This is the callback passed to CreateWebViewEnvironmnetWithDetails.
+// This is the callback passed to CreateWebViewEnvironmentWithOptions.
 // Here we simply create the WebView.
 HRESULT AppWindow::OnCreateEnvironmentCompleted(
     HRESULT result, ICoreWebView2Environment* environment)

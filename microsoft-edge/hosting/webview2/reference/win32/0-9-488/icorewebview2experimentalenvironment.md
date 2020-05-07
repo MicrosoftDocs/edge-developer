@@ -12,6 +12,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # interface ICoreWebView2ExperimentalEnvironment 
 
+> [!NOTE]
+> This an experimental API that is shipped with our prerelease SDK version 0.9.488.
+
 ```
 interface ICoreWebView2ExperimentalEnvironment
   : public IUnknown
@@ -109,7 +112,7 @@ void AppWindow::InitializeWebView()
     }
 }
 
-// This is the callback passed to CreateWebViewEnvironmnetWithDetails.
+// This is the callback passed to CreateWebViewEnvironmentWithOptions.
 // Here we simply create the WebView.
 HRESULT AppWindow::OnCreateEnvironmentCompleted(
     HRESULT result, ICoreWebView2Environment* environment)

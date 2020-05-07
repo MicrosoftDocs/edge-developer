@@ -12,6 +12,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler 
 
+> [!NOTE]
+> This an experimental API that is shipped with our prerelease SDK version 0.9.488.
+
 ```
 interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
   : public IUnknown

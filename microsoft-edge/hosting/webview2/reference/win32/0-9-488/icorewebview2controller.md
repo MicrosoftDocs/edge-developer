@@ -223,7 +223,7 @@ void AppWindow::CloseWebView(bool cleanupUserDataFolder)
         // developers specify userDataFolder during WebView environment
         // creation, they would need to pass in that explicit value here.
         // For more information about userDataFolder:
-        // https://docs.microsoft.com/microsoft-edge/hosting/webview2/reference/win32/0-9-488/webview2.idl#createwebview2environmentwithoptions
+        // https://docs.microsoft.com/microsoft-edge/hosting/webview2/reference/win32/0-9-488/webview2-idl#createwebview2environmentwithoptions
         WCHAR userDataFolder[MAX_PATH] = L"";
         // Obtain the absolute path for relative paths that include "./" or "../"
         _wfullpath(
@@ -233,7 +233,7 @@ void AppWindow::CloseWebView(bool cleanupUserDataFolder)
         std::wstring message = L"Are you sure you want to clean up the user data folder at\n";
         message += userDataFolderPath;
         message += L"\n?\nWarning: This action is not reversible.\n\n";
-        message += L"Click No if there are other open WebView instnaces.\n";
+        message += L"Click No if there are other open WebView instances.\n";
 
         if (MessageBox(m_mainWindow, message.c_str(), L"Cleanup User Data Folder", MB_YESNO) ==
             IDYES)
