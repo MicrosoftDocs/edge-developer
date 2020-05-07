@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -37,7 +37,7 @@ WebViews created from an environment run on the Browser process specified with e
 
 The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 
-> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)([ICoreWebView2NewBrowserVersionAvailableEventHandler](ICoreWebView2NewBrowserVersionAvailableEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_NewBrowserVersionAvailable](#add_newbrowserversionavailable)([ICoreWebView2NewBrowserVersionAvailableEventHandler](icorewebview2newbrowserversionavailableeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 To use the newer version of the browser you must create a new environment and WebView. This event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
 
@@ -84,26 +84,25 @@ Because a user data folder can only be used by one browser process at a time, if
 
 Asynchronously create a new WebView.
 
-> public HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller)(HWND parentWindow, [ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](ICoreWebView2CreateCoreWebView2ControllerCompletedHandler.md) * handler)
+> public HRESULT [CreateCoreWebView2Controller](#createcorewebview2controller)(HWND parentWindow, [ICoreWebView2CreateCoreWebView2ControllerCompletedHandler](icorewebview2createcorewebview2controllercompletedhandler.md) * handler)
 
 parentWindow is the HWND in which the WebView should be displayed and from which receive input. The WebView will add a child window to the provided window during WebView creation. Z-order and other things impacted by sibling window order will be affected accordingly.
 
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow. 
 ```cpp
 // Create or recreate the WebView and its environment.
-void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
+void AppWindow::InitializeWebView()
 {
-    m_lastUsedInitFlags = webviewInitFlags;
     // To ensure browser switches get applied correctly, we need to close
     // the existing WebView. This will result in a new browser process
     // getting created which will apply the browser switches.
     CloseWebView();
-
-    LPCWSTR subFolder = nullptr;
     m_dcompDevice = nullptr;
     m_wincompHelper = nullptr;
-    LPCWSTR additionalBrowserSwitches = nullptr;
-    if (webviewInitFlags & kWindowlessDcompVisual)
+
+    LPCWSTR subFolder = nullptr;
+
+    if (m_creationModeId == IDM_CREATION_MODE_VISUAL_DCOMP)
     {
         HRESULT hr = DCompositionCreateDevice2(nullptr, IID_PPV_ARGS(&m_dcompDevice));
         if (!SUCCEEDED(hr))
@@ -117,7 +116,7 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
             return;
         }
     }
-    else if (webviewInitFlags & kWindowlessWincompVisual)
+    else if (m_creationModeId == IDM_CREATION_MODE_VISUAL_WINCOMP)
     {
         HRESULT hr = CreateWinCompCompositor();
         if (!SUCCEEDED(hr))
@@ -132,7 +131,6 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
         }
     }
     auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    CHECK_FAILURE(options->put_AdditionalBrowserArguments(additionalBrowserSwitches));
     if(!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -226,9 +224,9 @@ WebView creation will fail if there is already a running instance using the same
 
 Create a new web resource response object.
 
-> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content, int statusCode, LPCWSTR reasonPhrase, LPCWSTR headers, [ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md) ** response)
+> public HRESULT [CreateWebResourceResponse](#createwebresourceresponse)(IStream * content, int statusCode, LPCWSTR reasonPhrase, LPCWSTR headers, [ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) ** response)
 
-The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [ICoreWebView2HttpResponseHeaders](ICoreWebView2HttpResponseHeaders.md) to construct the headers line by line. For information on other parameters see [ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md).
+The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the [ICoreWebView2HttpResponseHeaders](icorewebview2httpresponseheaders.md) to construct the headers line by line. For information on other parameters see [ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md).
 
 ```cpp
         if (m_blockImages)

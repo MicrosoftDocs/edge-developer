@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -45,7 +45,7 @@ POST data would be here. If a stream is set, which will override the message bod
 
 The mutable HTTP request headers.
 
-> public HRESULT [get_Headers](#get_headers)([ICoreWebView2HttpRequestHeaders](ICoreWebView2HttpRequestHeaders.md) ** headers)
+> public HRESULT [get_Headers](#get_headers)([ICoreWebView2HttpRequestHeaders](icorewebview2httprequestheaders.md) ** headers)
 
 #### get_Method 
 

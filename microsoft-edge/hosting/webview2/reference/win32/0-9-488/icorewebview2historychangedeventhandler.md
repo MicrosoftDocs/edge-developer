@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,5 +31,5 @@ The caller implements this interface to receive the HistoryChanged event.
 
 There are no event args and the args parameter will be null.
 
-> public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) * webview, IUnknown * args)
+> public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) * webview, IUnknown * args)
 

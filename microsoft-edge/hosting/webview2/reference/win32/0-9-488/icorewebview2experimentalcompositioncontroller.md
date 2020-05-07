@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,7 +27,7 @@ This interface is an extension of the ICoreWebView2Controller interface to suppo
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [add_CursorChanged](#add_cursorchanged) | Add an event handler for the CursorChanged event.
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).
 [get_Cursor](#get_cursor) | The current cursor that WebView thinks it should be.
 [get_RootVisualTarget](#get_rootvisualtarget) | The RootVisualTarget is a visual in the hosting app's visual tree.
 [get_UIAProvider](#get_uiaprovider) | Returns the UI Automation Provider for the WebView.
@@ -48,7 +48,7 @@ An object implementing the ICoreWebView2ExperimentalCompositionController interf
 
 Add an event handler for the CursorChanged event.
 
-> public HRESULT [add_CursorChanged](#add_cursorchanged)([ICoreWebView2ExperimentalCursorChangedEventHandler](ICoreWebView2ExperimentalCursorChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_CursorChanged](#add_cursorchanged)([ICoreWebView2ExperimentalCursorChangedEventHandler](icorewebview2experimentalcursorchangedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 The event fires when WebView thinks the cursor should be changed. For example, when the mouse cursor is currently the default cursor but is then moved over text, it may try to change to the IBeam cursor.
 
@@ -69,11 +69,13 @@ The event fires when WebView thinks the cursor should be changed. For example, w
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
+A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).
 
-> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct COREWEBVIEW2_MATRIX_4X4 transform, [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
+> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct COREWEBVIEW2_MATRIX_4X4 transform, [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) ** pointerInfo)
 
-parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The COREWEBVIEW2_MATRIX_4X4 is the transform from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
+parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The COREWEBVIEW2_MATRIX_4X4 is the transform from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
+
+
 
 #### get_Cursor 
 
@@ -222,9 +224,9 @@ bool ViewComponent::OnMouseMessage(UINT message, WPARAM wParam, LPARAM lParam)
 
 SendPointerInput accepts touch or pen pointer input of types defined in COREWEBVIEW2_POINTER_EVENT_KIND.
 
-> public HRESULT [SendPointerInput](#sendpointerinput)([COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) eventType, [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) * pointerInfo)
+> public HRESULT [SendPointerInput](#sendpointerinput)([COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) eventType, [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) * pointerInfo)
 
-Any pointer input from the system must be converted into an [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) first.
+Any pointer input from the system must be converted into an [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) first.
 
 #### COREWEBVIEW2_MATRIX_4X4 
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -50,7 +50,7 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [get_CanGoForward](#get_cangoforward) | Returns true if the webview can navigate to a next page in the navigation history.
 [get_ContainsFullScreenElement](#get_containsfullscreenelement) | Indicates if the WebView contains a fullscreen HTML element.
 [get_DocumentTitle](#get_documenttitle) | The title for the current top level document.
-[get_Settings](#get_settings) | The [ICoreWebView2Settings](ICoreWebView2Settings.md) object contains various modifiable settings for the running WebView.
+[get_Settings](#get_settings) | The [ICoreWebView2Settings](icorewebview2settings.md) object contains various modifiable settings for the running WebView.
 [get_Source](#get_source) | The URI of the current top level document.
 [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver) | Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
 [GoBack](#goback) | Navigates the WebView to the previous page in the navigation history.
@@ -164,7 +164,7 @@ When an interface is unavailable, you can consider disabling the associated feat
 
 Notifies when the ContainsFullScreenElement property changes.
 
-> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([ICoreWebView2ContainsFullScreenElementChangedEventHandler](ICoreWebView2ContainsFullScreenElementChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_ContainsFullScreenElementChanged](#add_containsfullscreenelementchanged)([ICoreWebView2ContainsFullScreenElementChangedEventHandler](icorewebview2containsfullscreenelementchangedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 This means that an HTML element inside the WebView is entering fullscreen to the size of the WebView or leaving fullscreen. This event is useful when, for example, a video element requests to go fullscreen. The listener of ContainsFullScreenElementChanged can then resize the WebView in response.
 
@@ -196,7 +196,7 @@ This means that an HTML element inside the WebView is entering fullscreen to the
 
 Add an event handler for the ContentLoading event.
 
-> public HRESULT [add_ContentLoading](#add_contentloading)([ICoreWebView2ContentLoadingEventHandler](ICoreWebView2ContentLoadingEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_ContentLoading](#add_contentloading)([ICoreWebView2ContentLoadingEventHandler](icorewebview2contentloadingeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 ContentLoading fires before any content is loaded, including scripts added with AddScriptToExecuteOnDocumentCreated ContentLoading will not fire if a same page navigation occurs (such as through fragment navigations or history.pushState navigations). This follows the NavigationStarting and SourceChanged events and precedes the HistoryChanged and NavigationCompleted events.
 
@@ -204,7 +204,7 @@ ContentLoading fires before any content is loaded, including scripts added with 
 
 Add an event handler for the DocumentTitleChanged event.
 
-> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([ICoreWebView2DocumentTitleChangedEventHandler](ICoreWebView2DocumentTitleChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_DocumentTitleChanged](#add_documenttitlechanged)([ICoreWebView2DocumentTitleChangedEventHandler](icorewebview2documenttitlechangedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 The event fires when the DocumentTitle property of the WebView changes and may fire before or after the NavigationCompleted event.
 
@@ -227,7 +227,7 @@ The event fires when the DocumentTitle property of the WebView changes and may f
 
 Add an event handler for the FrameNavigationCompleted event.
 
-> public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_FrameNavigationCompleted](#add_framenavigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](icorewebview2navigationcompletedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
 
@@ -266,7 +266,7 @@ FrameNavigationCompleted event fires when a child frame has completely loaded (b
 
 Add an event handler for the FrameNavigationStarting event.
 
-> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_FrameNavigationStarting](#add_framenavigationstarting)([ICoreWebView2NavigationStartingEventHandler](icorewebview2navigationstartingeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI. This will fire for redirects as well.
 
@@ -293,7 +293,7 @@ FrameNavigationStarting fires when a child frame in the WebView requesting permi
 
 HistoryChange listen to the change of navigation history for the top level document.
 
-> public HRESULT [add_HistoryChanged](#add_historychanged)([ICoreWebView2HistoryChangedEventHandler](ICoreWebView2HistoryChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_HistoryChanged](#add_historychanged)([ICoreWebView2HistoryChangedEventHandler](icorewebview2historychangedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryChanged also fires for using GoBack/GoForward. HistoryChanged fires after SourceChanged and ContentLoading. Add an event handler for the HistoryChanged event. 
 ```cpp
@@ -319,7 +319,7 @@ Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryC
 
 Add an event handler for the NavigationCompleted event.
 
-> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](ICoreWebView2NavigationCompletedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_NavigationCompleted](#add_navigationcompleted)([ICoreWebView2NavigationCompletedEventHandler](icorewebview2navigationcompletedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
@@ -355,7 +355,7 @@ NavigationCompleted event fires when the WebView has completely loaded (body.onl
 
 Add an event handler for the NavigationStarting event.
 
-> public HRESULT [add_NavigationStarting](#add_navigationstarting)([ICoreWebView2NavigationStartingEventHandler](ICoreWebView2NavigationStartingEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_NavigationStarting](#add_navigationstarting)([ICoreWebView2NavigationStartingEventHandler](icorewebview2navigationstartingeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 NavigationStarting fires when the WebView main frame is requesting permission to navigate to a different URI. This will fire for redirects as well.
 
@@ -405,7 +405,7 @@ NavigationStarting fires when the WebView main frame is requesting permission to
 
 Add an event handler for the NewWindowRequested event.
 
-> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([ICoreWebView2NewWindowRequestedEventHandler](ICoreWebView2NewWindowRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_NewWindowRequested](#add_newwindowrequested)([ICoreWebView2NewWindowRequestedEventHandler](icorewebview2newwindowrequestedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 Fires when content inside the WebView requested to open a new window, such as through window.open. The app can pass a target webview that will be considered the opened window.
 
@@ -421,8 +421,7 @@ Fires when content inside the WebView requested to open a new window, such as th
                 CHECK_FAILURE(args->GetDeferral(&deferral));
                 AppWindow* newAppWindow;
 
-                newAppWindow = new AppWindow(L"");
-
+                newAppWindow = new AppWindow(m_creationModeId, L"");
                 newAppWindow->m_isPopupWindow = true;
                 newAppWindow->m_onWebViewFirstInitialized = [args, deferral, newAppWindow]() {
                     CHECK_FAILURE(args->put_NewWindow(newAppWindow->m_webView.get()));
@@ -440,7 +439,7 @@ Fires when content inside the WebView requested to open a new window, such as th
 
 Add an event handler for the PermissionRequested event.
 
-> public HRESULT [add_PermissionRequested](#add_permissionrequested)([ICoreWebView2PermissionRequestedEventHandler](ICoreWebView2PermissionRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_PermissionRequested](#add_permissionrequested)([ICoreWebView2PermissionRequestedEventHandler](icorewebview2permissionrequestedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 Fires when content in a WebView requests permission to access some privileged resources.
 
@@ -487,7 +486,7 @@ Fires when content in a WebView requests permission to access some privileged re
 
 Add an event handler for the ProcessFailed event.
 
-> public HRESULT [add_ProcessFailed](#add_processfailed)([ICoreWebView2ProcessFailedEventHandler](ICoreWebView2ProcessFailedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_ProcessFailed](#add_processfailed)([ICoreWebView2ProcessFailedEventHandler](icorewebview2processfailedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 Fires when a WebView process terminated unexpectedly or become unresponsive.
 
@@ -544,7 +543,7 @@ Fires when a WebView process terminated unexpectedly or become unresponsive.
 
 Add an event handler for the ScriptDialogOpening event.
 
-> public HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening)([ICoreWebView2ScriptDialogOpeningEventHandler](ICoreWebView2ScriptDialogOpeningEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_ScriptDialogOpening](#add_scriptdialogopening)([ICoreWebView2ScriptDialogOpeningEventHandler](icorewebview2scriptdialogopeningeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 The event fires when a JavaScript dialog (alert, confirm, or prompt) will show for the webview. This event only fires if the ICoreWebView2Settings::AreDefaultScriptDialogsEnabled property is set to false. The ScriptDialogOpening event can be used to suppress dialogs or replace default dialogs with custom dialogs.
 
@@ -610,7 +609,7 @@ The event fires when a JavaScript dialog (alert, confirm, or prompt) will show f
 
 SourceChanged fires when the Source property changes.
 
-> public HRESULT [add_SourceChanged](#add_sourcechanged)([ICoreWebView2SourceChangedEventHandler](ICoreWebView2SourceChangedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_SourceChanged](#add_sourcechanged)([ICoreWebView2SourceChangedEventHandler](icorewebview2sourcechangedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 SourceChanged fires for navigating to a different site or fragment navigations. It will not fires for other types of navigations such as page reloads or history.pushState with the same URL as the current page. SourceChanged fires before ContentLoading for navigation to a new document. Add an event handler for the SourceChanged event. 
 ```cpp
@@ -639,7 +638,7 @@ SourceChanged fires for navigating to a different site or fragment navigations. 
 
 This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 
-> public HRESULT [add_WebMessageReceived](#add_webmessagereceived)([ICoreWebView2WebMessageReceivedEventHandler](ICoreWebView2WebMessageReceivedEventHandler.md) * handler, EventRegistrationToken * token)
+> public HRESULT [add_WebMessageReceived](#add_webmessagereceived)([ICoreWebView2WebMessageReceivedEventHandler](icorewebview2webmessagereceivedeventhandler.md) * handler, EventRegistrationToken * token)
 
 The postMessage function is `void postMessage(object)` where object is any object supported by JSON conversion.
 
@@ -661,7 +660,7 @@ The postMessage function is `void postMessage(object)` where object is any objec
             window.chrome.webview.postMessage("GetWindowBounds");
         }
 ```
- When postMessage is called, the [ICoreWebView2WebMessageReceivedEventHandler](ICoreWebView2WebMessageReceivedEventHandler.md) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
+ When postMessage is called, the [ICoreWebView2WebMessageReceivedEventHandler](icorewebview2webmessagereceivedeventhandler.md) set via this SetWebMessageReceivedEventHandler method will be invoked with the postMessage's object parameter converted to a JSON string.
 
 ```cpp
     // Setup the web message received event handler before navigating to
@@ -705,7 +704,7 @@ The postMessage function is `void postMessage(object)` where object is any objec
 
 Add an event handler for the WebResourceRequested event.
 
-> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](ICoreWebView2WebResourceRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](icorewebview2webresourcerequestedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
 
@@ -748,7 +747,7 @@ Fires when the WebView is performing an HTTP request to a matching URL and resou
 
 Add an event handler for the WindowCloseRequested event.
 
-> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)([ICoreWebView2WindowCloseRequestedEventHandler](ICoreWebView2WindowCloseRequestedEventHandler.md) * eventHandler, EventRegistrationToken * token)
+> public HRESULT [add_WindowCloseRequested](#add_windowcloserequested)([ICoreWebView2WindowCloseRequestedEventHandler](icorewebview2windowcloserequestedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
 Fires when content inside the WebView requested to close the window, such as after window.close is called. The app should close the WebView and related app window if that makes sense to the app.
 
@@ -774,20 +773,24 @@ Add the provided host object to script running in the WebView with the specified
 
 > public HRESULT [AddHostObjectToScript](#addhostobjecttoscript)(LPCWSTR name, VARIANT * object)
 
-Host objects are exposed as host object proxies via `window.chrome.webview.hostObjects.<name>`. Host object proxies are promises and will resolve to an object representing the host object. The promise is rejected if the app has not added an object with the name. When JavaScript code access a property or method of the object, a promise is return, which will resolve to the value returned from the host for the property or method, or rejected in case of error such as there is no such property or method on the object or parameters are invalid. For example, when the application code does the following: 
+Host objects are exposed as host object proxies via `window.chrome.webview.hostObjects.<name>`. Host object proxies are promises and will resolve to an object representing the host object. The promise is rejected if the app has not added an object with the name. When JavaScript code access a property or method of the object, a promise is return, which will resolve to the value returned from the host for the property or method, or rejected in case of error such as there is no such property or method on the object or parameters are invalid. For example, when the application code does the following:
+
 ```
 VARIANT object;
 object.vt = VT_DISPATCH;
 object.pdispVal = appObject;
 webview->AddHostObjectToScript(L"host_object", &host);
 ```
- JavaScript code in the WebView will be able to access appObject as following and then access attributes and methods of appObject: 
+
+JavaScript code in the WebView will be able to access appObject as following and then access attributes and methods of appObject:
+
 ```
 let app_object = await window.chrome.webview.hostObjects.host_object;
 let attr1 = await app_object.attr1;
 let result = await app_object.method1(parameters);
 ```
- Note that while simple types, IDispatch and array are supported, generic IUnknown, VT_DECIMAL, or VT_RECORD variant is not supported. Remote JavaScript objects like callback functions are represented as an VT_DISPATCH VARIANT with the object implementing IDispatch. The JavaScript callback method may be invoked using DISPID_VALUE for the DISPID. Nested arrays are supported up to a depth of 3. Arrays of by reference types are not supported. VT_EMPTY and VT_NULL are mapped into JavaScript as null. In JavaScript null and undefined are mapped to VT_EMPTY.
+
+Note that while simple types, IDispatch and array are supported, generic IUnknown, VT_DECIMAL, or VT_RECORD variant is not supported. Remote JavaScript objects like callback functions are represented as an VT_DISPATCH VARIANT with the object implementing IDispatch. The JavaScript callback method may be invoked using DISPID_VALUE for the DISPID. Nested arrays are supported up to a depth of 3. Arrays of by reference types are not supported. VT_EMPTY and VT_NULL are mapped into JavaScript as null. In JavaScript null and undefined are mapped to VT_EMPTY.
 
 Additionally, all host objects are exposed as `window.chrome.webview.hostObjects.sync.<name>`. Here the host objects are exposed as synchronous host object proxies. These are not promises and calls to functions or property access synchronously block running script waiting to communicate cross process for the host code to run. Accordingly this can result in reliability issues and it is recommended that you use the promise based asynchronous `window.chrome.webview.hostObjects.<name>` API described above.
 
@@ -828,8 +831,12 @@ For example, suppose you have a COM object with the following interface
         [propget] HRESULT Property([out, retval] BSTR* stringResult);
         [propput] HRESULT Property([in] BSTR stringValue);
 
+        [propget] HRESULT IndexedProperty(INT index, [out, retval] BSTR * stringResult);
+        [propput] HRESULT IndexedProperty(INT index, [in] BSTR stringValue);
+
         // Demonstrate native calling back into JavaScript.
         HRESULT CallCallbackAsynchronously([in] IDispatch* callbackParameter);
+
     };
 ```
  We can add an instance of this interface into our JavaScript with `AddHostObjectToScript`. In this case we name it `sample`:
@@ -851,55 +858,66 @@ For example, suppose you have a COM object with the following interface
 
 ```html
         document.getElementById("getPropertyAsyncButton").addEventListener("click", async () => {
-            const propertyValue = await chrome.webview.hostObjects.sample.property;
-            document.getElementById("getPropertyAsyncOutput").textContent = propertyValue;
+        const propertyValue = await chrome.webview.hostObjects.sample.property;
+        document.getElementById("getPropertyAsyncOutput").textContent = propertyValue;
         });
 
         document.getElementById("getPropertySyncButton").addEventListener("click", () => {
-            const propertyValue = chrome.webview.hostObjects.sync.sample.property;
-            document.getElementById("getPropertySyncOutput").textContent = propertyValue;
+        const propertyValue = chrome.webview.hostObjects.sync.sample.property;
+        document.getElementById("getPropertySyncOutput").textContent = propertyValue;
         });
 
         document.getElementById("setPropertyAsyncButton").addEventListener("click", async () => {
-            const propertyValue = document.getElementById("setPropertyAsyncInput").value;
-            // The following line will work but it will return immediately before the property value has actually been set.
-            // If you need to set the property and wait for the property to change value, use the setRemote function.
-            chrome.webview.hostObjects.sample.property = propertyValue;
-            document.getElementById("setPropertyAsyncOutput").textContent = "Set";
+        const propertyValue = document.getElementById("setPropertyAsyncInput").value;
+        // The following line will work but it will return immediately before the property value has actually been set.
+        // If you need to set the property and wait for the property to change value, use the setRemote function.
+        chrome.webview.hostObjects.sample.property = propertyValue;
+        document.getElementById("setPropertyAsyncOutput").textContent = "Set";
         });
 
         document.getElementById("setPropertyExplicitAsyncButton").addEventListener("click", async () => {
-            const propertyValue = document.getElementById("setPropertyExplicitAsyncInput").value;
-            // If you care about waiting until the property has actually changed value use the setRemote function.
-            await chrome.webview.hostObjects.sample.setRemote("property", propertyValue);
-            document.getElementById("setPropertyExplicitAsyncOutput").textContent = "Set";
+        const propertyValue = document.getElementById("setPropertyExplicitAsyncInput").value;
+        // If you care about waiting until the property has actually changed value use the setRemote function.
+        await chrome.webview.hostObjects.sample.setRemote("property", propertyValue);
+        document.getElementById("setPropertyExplicitAsyncOutput").textContent = "Set";
         });
 
         document.getElementById("setPropertySyncButton").addEventListener("click", () => {
-            const propertyValue = document.getElementById("setPropertySyncInput").value;
-            chrome.webview.hostObjects.sync.sample.property = propertyValue;
-            document.getElementById("setPropertySyncOutput").textContent = "Set";
+        const propertyValue = document.getElementById("setPropertySyncInput").value;
+        chrome.webview.hostObjects.sync.sample.property = propertyValue;
+        document.getElementById("setPropertySyncOutput").textContent = "Set";
         });
 
+        document.getElementById("getIndexedPropertyAsyncButton").addEventListener("click", async () => {
+        const index = parseInt(document.getElementById("getIndexedPropertyAsyncParam").value);
+        const resultValue = await chrome.webview.hostObjects.sample.IndexedProperty[index];
+        document.getElementById("getIndexedPropertyAsyncOutput").textContent = resultValue;
+        });
+        document.getElementById("setIndexedPropertyAsyncButton").addEventListener("click", async () => {
+        const index = parseInt(document.getElementById("setIndexedPropertyAsyncParam1").value);
+        const value = document.getElementById("setIndexedPropertyAsyncParam2").value;;
+        chrome.webview.hostObjects.sample.IndexedProperty[index] = value;
+        document.getElementById("setIndexedPropertyAsyncOutput").textContent = "Set";
+        });
         document.getElementById("invokeMethodAsyncButton").addEventListener("click", async () => {
-            const paramValue1 = document.getElementById("invokeMethodAsyncParam1").value;
-            const paramValue2 = parseInt(document.getElementById("invokeMethodAsyncParam2").value);
-            const resultValue = await chrome.webview.hostObjects.sample.MethodWithParametersAndReturnValue(paramValue1, paramValue2);
-            document.getElementById("invokeMethodAsyncOutput").textContent = resultValue;
+        const paramValue1 = document.getElementById("invokeMethodAsyncParam1").value;
+        const paramValue2 = parseInt(document.getElementById("invokeMethodAsyncParam2").value);
+        const resultValue = await chrome.webview.hostObjects.sample.MethodWithParametersAndReturnValue(paramValue1, paramValue2);
+        document.getElementById("invokeMethodAsyncOutput").textContent = resultValue;
         });
 
         document.getElementById("invokeMethodSyncButton").addEventListener("click", () => {
-            const paramValue1 = document.getElementById("invokeMethodSyncParam1").value;
-            const paramValue2 = parseInt(document.getElementById("invokeMethodSyncParam2").value);
-            const resultValue = chrome.webview.hostObjects.sync.sample.MethodWithParametersAndReturnValue(paramValue1, paramValue2);
-            document.getElementById("invokeMethodSyncOutput").textContent = resultValue;
+        const paramValue1 = document.getElementById("invokeMethodSyncParam1").value;
+        const paramValue2 = parseInt(document.getElementById("invokeMethodSyncParam2").value);
+        const resultValue = chrome.webview.hostObjects.sync.sample.MethodWithParametersAndReturnValue(paramValue1, paramValue2);
+        document.getElementById("invokeMethodSyncOutput").textContent = resultValue;
         });
 
         let callbackCount = 0;
         document.getElementById("invokeCallbackButton").addEventListener("click", async () => {
-            chrome.webview.hostObjects.sample.CallCallbackAsynchronously(() => {
-                document.getElementById("invokeCallbackOutput").textContent = "Native object called the callback " + (++callbackCount) + " time(s).";
-            });
+        chrome.webview.hostObjects.sample.CallCallbackAsynchronously(() => {
+        document.getElementById("invokeCallbackOutput").textContent = "Native object called the callback " + (++callbackCount) + " time(s).";
+        });
         });
 ```
 
@@ -907,7 +925,7 @@ For example, suppose you have a COM object with the following interface
 
 Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
 
-> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript, [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler.md) * handler)
+> public HRESULT [AddScriptToExecuteOnDocumentCreated](#addscripttoexecuteondocumentcreated)(LPCWSTR javaScript, [ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler](icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md) * handler)
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
@@ -957,7 +975,7 @@ URI parameter can be a wildcard string ('': zero or more, '?': exactly one). nul
 
 Call an asynchronous DevToolsProtocol method.
 
-> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName, LPCWSTR parametersAsJson, [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](ICoreWebView2CallDevToolsProtocolMethodCompletedHandler.md) * handler)
+> public HRESULT [CallDevToolsProtocolMethod](#calldevtoolsprotocolmethod)(LPCWSTR methodName, LPCWSTR parametersAsJson, [ICoreWebView2CallDevToolsProtocolMethodCompletedHandler](icorewebview2calldevtoolsprotocolmethodcompletedhandler.md) * handler)
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
@@ -998,7 +1016,7 @@ void ScriptComponent::CallCdpMethod()
 
 Capture an image of what WebView is displaying.
 
-> public HRESULT [CapturePreview](#capturepreview)([COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) imageFormat, IStream * imageStream, [ICoreWebView2CapturePreviewCompletedHandler](ICoreWebView2CapturePreviewCompletedHandler.md) * handler)
+> public HRESULT [CapturePreview](#capturepreview)([COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) imageFormat, IStream * imageStream, [ICoreWebView2CapturePreviewCompletedHandler](icorewebview2capturepreviewcompletedhandler.md) * handler)
 
 Specify the format of the image with the imageFormat parameter. The resulting image binary data is written to the provided imageStream parameter. When CapturePreview finishes writing to the stream, the Invoke method on the provided handler parameter is called.
 
@@ -1044,7 +1062,7 @@ void FileComponent::SaveScreenshot()
 
 Execute JavaScript code from the javascript parameter in the current top level document rendered in the WebView.
 
-> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript, [ICoreWebView2ExecuteScriptCompletedHandler](ICoreWebView2ExecuteScriptCompletedHandler.md) * handler)
+> public HRESULT [ExecuteScript](#executescript)(LPCWSTR javaScript, [ICoreWebView2ExecuteScriptCompletedHandler](icorewebview2executescriptcompletedhandler.md) * handler)
 
 This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
 
@@ -1112,9 +1130,9 @@ If the document has no explicit title or is otherwise empty, a default that may 
 
 #### get_Settings 
 
-The [ICoreWebView2Settings](ICoreWebView2Settings.md) object contains various modifiable settings for the running WebView.
+The [ICoreWebView2Settings](icorewebview2settings.md) object contains various modifiable settings for the running WebView.
 
-> public HRESULT [get_Settings](#get_settings)([ICoreWebView2Settings](ICoreWebView2Settings.md) ** settings)
+> public HRESULT [get_Settings](#get_settings)([ICoreWebView2Settings](icorewebview2settings.md) ** settings)
 
 #### get_Source 
 
@@ -1150,7 +1168,7 @@ This value potentially changes as a part of the SourceChanged event firing for s
 
 Get a DevTools Protocol event receiver that allows you to subscribe to a DevTools Protocol event.
 
-> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(LPCWSTR eventName, [ICoreWebView2DevToolsProtocolEventReceiver](ICoreWebView2DevToolsProtocolEventReceiver.md) ** receiver)
+> public HRESULT [GetDevToolsProtocolEventReceiver](#getdevtoolsprotocoleventreceiver)(LPCWSTR eventName, [ICoreWebView2DevToolsProtocolEventReceiver](icorewebview2devtoolsprotocoleventreceiver.md) ** receiver)
 
 The eventName parameter is the full name of the event in the format `{domain}.{event}`. See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list of DevTools Protocol events description, and event args.
 
@@ -1280,12 +1298,14 @@ Post the specified webMessage to the top level document in this WebView.
 
 > public HRESULT [PostWebMessageAsJson](#postwebmessageasjson)(LPCWSTR webMessageAsJson)
 
-The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following: 
+The top level document's window.chrome.webview's message event fires. JavaScript in that document may subscribe and unsubscribe to the event via the following:
+
 ```
 window.chrome.webview.addEventListener('message', handler)
 window.chrome.webview.removeEventListener('message', handler)
 ```
- The event args is an instance of `MessageEvent`. The ICoreWebView2Settings::IsWebMessageEnabled setting must be true or this method will fail with E_INVALIDARG. The event arg's data property is the webMessage string parameter parsed as a JSON string into a JavaScript object. The event arg's source property is a reference to the `window.chrome.webview` object. See SetWebMessageReceivedEventHandler for information on sending messages from the HTML document in the webview to the host. This message is sent asynchronously. If a navigation occurs before the message is posted to the page, then the message will not be sent.
+
+The event args is an instance of `MessageEvent`. The ICoreWebView2Settings::IsWebMessageEnabled setting must be true or this method will fail with E_INVALIDARG. The event arg's data property is the webMessage string parameter parsed as a JSON string into a JavaScript object. The event arg's source property is a reference to the `window.chrome.webview` object. See SetWebMessageReceivedEventHandler for information on sending messages from the HTML document in the webview to the host. This message is sent asynchronously. If a navigation occurs before the message is posted to the page, then the message will not be sent.
 
 ```cpp
     // Setup the web message received event handler before navigating to

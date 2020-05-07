@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -34,7 +34,6 @@ A default implementation is provided in WebView2EnvironmentOptions.h.
 
 ```cpp
     auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    CHECK_FAILURE(options->put_AdditionalBrowserArguments(additionalBrowserSwitches));
     if(!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,7 +26,7 @@ Event args for the WebResourceRequested event.
 [get_Request](#get_request) | The HTTP request.
 [get_ResourceContext](#get_resourcecontext) | The web resource request contexts.
 [get_Response](#get_response) | The HTTP response.
-[GetDeferral](#getdeferral) | Obtain an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object and put the event into a deferred state.
+[GetDeferral](#getdeferral) | Obtain an [ICoreWebView2Deferral](icorewebview2deferral.md) object and put the event into a deferred state.
 [put_Response](#put_response) | Set the Response property.
 
 ## Members
@@ -35,7 +35,7 @@ Event args for the WebResourceRequested event.
 
 The HTTP request.
 
-> public HRESULT [get_Request](#get_request)([ICoreWebView2WebResourceRequest](ICoreWebView2WebResourceRequest.md) ** request)
+> public HRESULT [get_Request](#get_request)([ICoreWebView2WebResourceRequest](icorewebview2webresourcerequest.md) ** request)
 
 #### get_ResourceContext 
 
@@ -47,19 +47,19 @@ The web resource request contexts.
 
 The HTTP response.
 
-> public HRESULT [get_Response](#get_response)([ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md) ** response)
+> public HRESULT [get_Response](#get_response)([ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) ** response)
 
 #### GetDeferral 
 
-Obtain an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object and put the event into a deferred state.
+Obtain an [ICoreWebView2Deferral](icorewebview2deferral.md) object and put the event into a deferred state.
 
-> public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](ICoreWebView2Deferral.md) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) ** deferral)
 
-You can use the [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object to complete the network request at a later time.
+You can use the [ICoreWebView2Deferral](icorewebview2deferral.md) object to complete the network request at a later time.
 
 #### put_Response 
 
 Set the Response property.
 
-> public HRESULT [put_Response](#put_response)([ICoreWebView2WebResourceResponse](ICoreWebView2WebResourceResponse.md) * response)
+> public HRESULT [put_Response](#put_response)([ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) * response)
 

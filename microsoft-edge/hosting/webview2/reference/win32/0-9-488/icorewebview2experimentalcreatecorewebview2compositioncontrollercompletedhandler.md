@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,9 +11,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 
 # interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler 
-
-> [!NOTE]
-> This an experimental API that is shipped with our prerelease SDK version 0.9.488.
 
 ```
 interface ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
@@ -34,5 +31,5 @@ The caller implements this interface to receive the CoreWebView2Controller creat
 
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
-> public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2ExperimentalCompositionController](ICoreWebView2ExperimentalCompositionController.md) * webView)
+> public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2ExperimentalCompositionController](icorewebview2experimentalcompositioncontroller.md) * webView)
 

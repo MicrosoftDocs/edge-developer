@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -29,7 +29,7 @@ Event args for the ScriptDialogOpening event.
 [get_Message](#get_message) | The message of the dialog box.
 [get_ResultText](#get_resulttext) | The return value from the JavaScript prompt function if Accept is called.
 [get_Uri](#get_uri) | The URI of the page that requested the dialog box.
-[GetDeferral](#getdeferral) | GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object.
+[GetDeferral](#getdeferral) | GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.
 [put_ResultText](#put_resulttext) | Set the ResultText property.
 
 ## Members
@@ -82,9 +82,9 @@ The URI of the page that requested the dialog box.
 
 #### GetDeferral 
 
-GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object.
+GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.
 
-> public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](ICoreWebView2Deferral.md) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) ** deferral)
 
 You can use this to complete the event at a later time.
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,7 +27,7 @@ Event args for the PermissionRequested event.
 [get_PermissionKind](#get_permissionkind) | The type of the permission that is requested.
 [get_State](#get_state) | The status of a permission request, i.e.
 [get_Uri](#get_uri) | The origin of the web content that requests the permission.
-[GetDeferral](#getdeferral) | GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object.
+[GetDeferral](#getdeferral) | GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.
 [put_State](#put_state) | Set the State property.
 
 ## Members
@@ -62,9 +62,9 @@ The origin of the web content that requests the permission.
 
 #### GetDeferral 
 
-GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object.
+GetDeferral can be called to return an [ICoreWebView2Deferral](icorewebview2deferral.md) object.
 
-> public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](ICoreWebView2Deferral.md) ** deferral)
+> public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](icorewebview2deferral.md) ** deferral)
 
 Developer can use the deferral object to make the permission decision at a later time.
 

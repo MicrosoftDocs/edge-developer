@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,25 +12,22 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # interface ICoreWebView2ExperimentalEnvironment 
 
-> [!NOTE]
-> This an experimental API that is shipped with our prerelease SDK version 0.9.488.
-
 ```
 interface ICoreWebView2ExperimentalEnvironment
   : public IUnknown
 ```
 
-This interface is an extension of the [ICoreWebView2Environment](ICoreWebView2Environment.md).
+This interface is an extension of the [ICoreWebView2Environment](icorewebview2environment.md).
 
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller) | Asynchronously create a new WebView for use with visual hosting.
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.
 
-An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface will also implement [ICoreWebView2Environment](ICoreWebView2Environment.md).
+An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface will also implement [ICoreWebView2Environment](icorewebview2environment.md).
 
 ## Members
 
@@ -38,7 +35,7 @@ An object implementing the [ICoreWebView2ExperimentalEnvironment]() interface wi
 
 Asynchronously create a new WebView for use with visual hosting.
 
-> public HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)(HWND parentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler.md) * handler)
+> public HRESULT [CreateCoreWebView2CompositionController](#createcorewebview2compositioncontroller)(HWND parentWindow, [ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler](icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md) * handler)
 
 parentWindow is the HWND in which the app will connect the visual tree of the WebView. This will be the HWND that the app will receive pointer/ mouse input meant for the WebView (and will need to use SendMouseInput/ SendPointerInput to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to call put_ParentWindow to update the new parent HWND of the visual tree.
 
@@ -47,19 +44,18 @@ Use put_RootVisualTarget on the created CoreWebView2CompositionController to pro
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow. 
 ```cpp
 // Create or recreate the WebView and its environment.
-void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
+void AppWindow::InitializeWebView()
 {
-    m_lastUsedInitFlags = webviewInitFlags;
     // To ensure browser switches get applied correctly, we need to close
     // the existing WebView. This will result in a new browser process
     // getting created which will apply the browser switches.
     CloseWebView();
-
-    LPCWSTR subFolder = nullptr;
     m_dcompDevice = nullptr;
     m_wincompHelper = nullptr;
-    LPCWSTR additionalBrowserSwitches = nullptr;
-    if (webviewInitFlags & kWindowlessDcompVisual)
+
+    LPCWSTR subFolder = nullptr;
+
+    if (m_creationModeId == IDM_CREATION_MODE_VISUAL_DCOMP)
     {
         HRESULT hr = DCompositionCreateDevice2(nullptr, IID_PPV_ARGS(&m_dcompDevice));
         if (!SUCCEEDED(hr))
@@ -73,7 +69,7 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
             return;
         }
     }
-    else if (webviewInitFlags & kWindowlessWincompVisual)
+    else if (m_creationModeId == IDM_CREATION_MODE_VISUAL_WINCOMP)
     {
         HRESULT hr = CreateWinCompCompositor();
         if (!SUCCEEDED(hr))
@@ -88,7 +84,6 @@ void AppWindow::InitializeWebView(InitializeWebViewFlags webviewInitFlags)
         }
     }
     auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    CHECK_FAILURE(options->put_AdditionalBrowserArguments(additionalBrowserSwitches));
     if(!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -177,11 +172,11 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 
 #### CreateCoreWebView2PointerInfo 
 
-Create an empty [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md).
+Create an empty [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).
 
-> public HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)([ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) ** pointerInfo)
+> public HRESULT [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)([ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) ** pointerInfo)
 
-The returned [ICoreWebView2ExperimentalPointerInfo](ICoreWebView2ExperimentalPointerInfo.md) needs to be populated with all of the relevant info before calling SendPointerInput.
+The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) needs to be populated with all of the relevant info before calling SendPointerInput.
 
 #### GetProviderForHwnd 
 
