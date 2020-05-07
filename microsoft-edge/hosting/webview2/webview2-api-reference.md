@@ -18,7 +18,7 @@ Select the Languages and Framework of WebView2 you would like to use below:
 
 ## Languages and Frameworks
 
-*   [Win32 C++](reference/win32/0.9.488-reference-webview2.md)
+*   [Win32 C++](reference/win32/0-9-488-reference-webview2.md)
 *   [.NET](reference/dotnet/0.9.494-reference-webview2.md)
 *   [WinForms](reference/winforms/0.9.494-reference-webview2.md)
 *   [WPF](reference/wpf/0.9.494-reference-webview2.md)

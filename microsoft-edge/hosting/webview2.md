@@ -48,17 +48,17 @@ For constrained environments we will also support a fixed version distribution m
 
 The Microsoft Edge WebView2 Runtime is a packaging of the browser binaries optimized for use by WebView2 applications. It will function stand alone or side-by-side with a client Edge Browser install. A single install of the run-time will support any number of WebView2 applications. Install of the runtime will not appear as a browser install to end-user, i.e. no desktop shortcuts, start menu entry, or protocol registration.
 
-An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred. At application install time you should check the current install status, which can be determined by using [GetAvailableCoreWebView2BrowserVersionString](webview2/reference/win32/0.9.488/webview2.idl.md#getavailablecorewebview2browserversionstring). If the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.
+An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred. At application install time you should check the current install status, which can be determined by using [GetAvailableCoreWebView2BrowserVersionString](webview2/reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring). If the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.
 
 ## Microsoft Edge WebView2 SDK
 
 To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability.
 
-The pre-release version will contain additional [experimental APIs](webview2/reference/win32/0.9.488-reference-webview2.md#experimental). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
+The pre-release version will contain additional [experimental APIs](webview2/reference/win32/0-9-488-reference-webview2.md#experimental). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
 
 ## Development against Upcoming Versions
 
-For development you may want to target Beta, Dev, or Canary to ensure your application will work with upcoming versions or to take advantage of upcoming features. All pre-released channels are provided by the installed client Microsoft Edge browser. To target one of these channels ensure the installed Edge browser on your development machine is the channel you'd like. Developers can use a registry key or environment variable to change the WebView2 from the most stable version found to the least stable found. See more details in [CreateCoreWebView2EnvironmentWithOptions](webview2/reference/win32/0.9.488/webview2.idl.md#createcorewebview2environmentwithoptions).
+For development you may want to target Beta, Dev, or Canary to ensure your application will work with upcoming versions or to take advantage of upcoming features. All pre-released channels are provided by the installed client Microsoft Edge browser. To target one of these channels ensure the installed Edge browser on your development machine is the channel you'd like. Developers can use a registry key or environment variable to change the WebView2 from the most stable version found to the least stable found. See more details in [CreateCoreWebView2EnvironmentWithOptions](webview2/reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithoptions).
 
 ## Debugging WebView2
 
