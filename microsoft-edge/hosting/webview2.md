@@ -52,7 +52,7 @@ An application utilizing WebView2 must ensure the installation of the Microsoft 
 
 ## Microsoft Edge WebView2 SDK
 
-To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability. 
+To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability.
 
 The pre-release version will contain additional [experimental APIs](webview2/reference/win32/0.9.488-reference-webview2.md#experimental). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
 
@@ -66,7 +66,7 @@ For development you may want to target Beta, Dev, or Canary to ensure your appli
 
 You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, just as you would in the browser. While having focus on the WebView window, press `F12`, or press `Ctrl` + `Shift` + `I`, or Right Click + choose `Inspect` to open Developer Tools.
 
-![F12](webview2/images/F12.PNG)
+![F12](webview2/media/F12.PNG)
 
 **Note when debugging application in Visual Studio with the native debugger attached, `F12` may trigger the native debugger instead of Developer Tools. Use `Ctrl` + `Shift` + `I`, or Right Click + `Inspect` to avoid potential hotkey conflict.**
 
@@ -74,11 +74,11 @@ You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.c
 
 You can use the script debugger in Visual Studio 2019 (minimum version 16.4 Preview 2) to debug your script within WebView2 right from the IDE. Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.
 
-![VSJSDiagnostics](webview2/images/VSJSDiagnostics.jpg)
+![VSJSDiagnostics](webview2/media/vs-js-diagnostics.jpg)
 
 Right click on your project and select **Properties**. Under **Configuration Properties** > **Debugging** > **Debugger Type**,  choose the **JavaScript (WebView2)** option to enable WebView2 script debugging. More details to follow soon.
 
-![VSScriptDebugger](webview2/images/VSScriptDebugger.jpg)
+![VSScriptDebugger](webview2/media/vs-scriptDebugger.jpg)
 
 ### Visual Studio Code
 
@@ -86,7 +86,7 @@ You can also use Visual Studio Code to debug your script within the WebView2 rig
 
 ## Feedback
 
-Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. 
+Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.
 
 It’s also a good place to search for known issues.
 During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.
