@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,6 +27,7 @@ Control to embed WebView2 in WinForms.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [CoreWebView2](#corewebview2) | The underlying CoreWebView2.
+[ZoomFactor](#zoomfactor) | The zoom factor for the WebView.
 [Source](#source) | The Source property is the URI of the top level document of the WebView2.
 [CanGoForward](#cangoforward) | Returns true if the webview can navigate to a next page in the navigation history via the GoForward method.
 [CanGoBack](#cangoback) | Returns true if the webview can navigate to a previous page in the navigation history via the GoBack method.
@@ -53,6 +54,12 @@ The underlying CoreWebView2.
 > public CoreWebView2 [CoreWebView2](#corewebview2)
 
 Use this property to perform more operations on the WebView2 content than is exposed on the WebView2. This value is null until it is initialized. You can force the underlying CoreWebView2 to initialize via the InitializeAsync method.
+
+#### ZoomFactor 
+
+The zoom factor for the WebView.
+
+> public double [ZoomFactor](#zoomfactor)
 
 #### Source 
 

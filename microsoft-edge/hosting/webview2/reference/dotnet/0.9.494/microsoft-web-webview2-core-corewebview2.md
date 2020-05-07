@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -108,7 +108,7 @@ This means that an HTML element inside the WebView is entering fullscreen to the
 
 ContentLoading fires before any content is loaded, including scripts added with AddScriptToExecuteOnDocumentCreated ContentLoading will not fire if a same page navigation occurs (such as through fragment navigations or history.pushState navigations).
 
-> public event EventHandler< [CoreWebView2ContentLoadingEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs.md) > [ContentLoading](#contentloading)
+> public event EventHandler< [CoreWebView2ContentLoadingEventArgs](microsoft-web-webview2-core-corewebview2contentloadingeventargs.md) > [ContentLoading](#contentloading)
 
 This follows the NavigationStarting and SourceChanged events and precedes the HistoryChanged and NavigationCompleted events.
 
@@ -130,13 +130,13 @@ The event fires when the DocumentTitle property of the WebView changes and may f
 
 FrameNavigationCompleted event fires when a child frame has completely loaded (body.onload has fired) or loading stopped with error.
 
-> public event EventHandler< [CoreWebView2NavigationCompletedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.md) > [FrameNavigationCompleted](#framenavigationcompleted)
+> public event EventHandler< [CoreWebView2NavigationCompletedEventArgs](microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md) > [FrameNavigationCompleted](#framenavigationcompleted)
 
 #### FrameNavigationStarting 
 
 FrameNavigationStarting fires when a child frame in the WebView requesting permission to navigate to a different URI.
 
-> public event EventHandler< [CoreWebView2NavigationStartingEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.md) > [FrameNavigationStarting](#framenavigationstarting)
+> public event EventHandler< [CoreWebView2NavigationStartingEventArgs](microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md) > [FrameNavigationStarting](#framenavigationstarting)
 
 This will fire for redirects as well.
 
@@ -152,13 +152,13 @@ Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryC
 
 NavigationCompleted event fires when the WebView has completely loaded (body.onload has fired) or loading stopped with error.
 
-> public event EventHandler< [CoreWebView2NavigationCompletedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs.md) > [NavigationCompleted](#navigationcompleted)
+> public event EventHandler< [CoreWebView2NavigationCompletedEventArgs](microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md) > [NavigationCompleted](#navigationcompleted)
 
 #### NavigationStarting 
 
 NavigationStarting fires when the WebView main frame is requesting permission to navigate to a different URI.
 
-> public event EventHandler< [CoreWebView2NavigationStartingEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs.md) > [NavigationStarting](#navigationstarting)
+> public event EventHandler< [CoreWebView2NavigationStartingEventArgs](microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md) > [NavigationStarting](#navigationstarting)
 
 This will fire for redirects as well.
 
@@ -166,7 +166,7 @@ This will fire for redirects as well.
 
 Fires when content inside the WebView requested to open a new window, such as through window.open.
 
-> public event EventHandler< [CoreWebView2NewWindowRequestedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs.md) > [NewWindowRequested](#newwindowrequested)
+> public event EventHandler< [CoreWebView2NewWindowRequestedEventArgs](microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md) > [NewWindowRequested](#newwindowrequested)
 
 The app can pass a target webview that will be considered the opened window.
 
@@ -174,19 +174,19 @@ The app can pass a target webview that will be considered the opened window.
 
 Fires when content in a WebView requests permission to access some privileged resources.
 
-> public event EventHandler< [CoreWebView2PermissionRequestedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2PermissionRequestedEventArgs.md) > [PermissionRequested](#permissionrequested)
+> public event EventHandler< [CoreWebView2PermissionRequestedEventArgs](microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md) > [PermissionRequested](#permissionrequested)
 
 #### ProcessFailed 
 
 Fires when a WebView process terminated unexpectedly or become unresponsive.
 
-> public event EventHandler< [CoreWebView2ProcessFailedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2ProcessFailedEventArgs.md) > [ProcessFailed](#processfailed)
+> public event EventHandler< [CoreWebView2ProcessFailedEventArgs](microsoft-web-webview2-core-corewebview2processfailedeventargs.md) > [ProcessFailed](#processfailed)
 
 #### ScriptDialogOpening 
 
 The event fires when a JavaScript dialog (alert, confirm, or prompt) will show for the webview.
 
-> public event EventHandler< [CoreWebView2ScriptDialogOpeningEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2ScriptDialogOpeningEventArgs.md) > [ScriptDialogOpening](#scriptdialogopening)
+> public event EventHandler< [CoreWebView2ScriptDialogOpeningEventArgs](microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md) > [ScriptDialogOpening](#scriptdialogopening)
 
 This event only fires if the CoreWebView2Settings.AreDefaultScriptDialogsEnabled property is set to false. The ScriptDialogOpening event can be used to suppress dialogs or replace default dialogs with custom dialogs.
 
@@ -194,7 +194,7 @@ This event only fires if the CoreWebView2Settings.AreDefaultScriptDialogsEnabled
 
 The CoreWebView2Settings object contains various modifiable settings for the running
 
-> public [CoreWebView2Settings](Microsoft.Web.WebView2.Core.CoreWebView2Settings.md) [Settings](#settings)
+> public [CoreWebView2Settings](microsoft-web-webview2-core-corewebview2settings.md) [Settings](#settings)
 
 #### Source 
 
@@ -208,7 +208,7 @@ This value potentially changes as a part of the SourceChanged event firing for s
 
 SourceChanged fires when the Source property changes.
 
-> public event EventHandler< [CoreWebView2SourceChangedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs.md) > [SourceChanged](#sourcechanged)
+> public event EventHandler< [CoreWebView2SourceChangedEventArgs](microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md) > [SourceChanged](#sourcechanged)
 
 SourceChanged fires for navigating to a different site or fragment navigations. It will not fires for other types of navigations such as page reloads or history.pushState with the same URL as the current page. SourceChanged fires before ContentLoading for navigation to a new document. Add an event handler for the SourceChanged event.
 
@@ -216,7 +216,7 @@ SourceChanged fires for navigating to a different site or fragment navigations. 
 
 This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 
-> public event EventHandler< [CoreWebView2WebMessageReceivedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs.md) > [WebMessageReceived](#webmessagereceived)
+> public event EventHandler< [CoreWebView2WebMessageReceivedEventArgs](microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md) > [WebMessageReceived](#webmessagereceived)
 
 The postMessage function is `void postMessage(object)` where object is any object supported by JSON conversion. When postMessage is called, the CoreWebView2WebMessageReceivedEventHandler set will be invoked with the postMessage's object parameter converted to a JSON string.
 
@@ -224,7 +224,7 @@ The postMessage function is `void postMessage(object)` where object is any objec
 
 Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter.
 
-> public event EventHandler< [CoreWebView2WebResourceRequestedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2WebResourceRequestedEventArgs.md) > [WebResourceRequested](#webresourcerequested)
+> public event EventHandler< [CoreWebView2WebResourceRequestedEventArgs](microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md) > [WebResourceRequested](#webresourcerequested)
 
 At least one filter must be added for the event to fire.
 
@@ -413,7 +413,7 @@ Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreate
 
 Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
 
-> public void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)(string uri, [CoreWebView2WebResourceContext](./namespace-Microsoft.Web.WebView2.Core.md) ResourceContext)
+> public void [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter)(string uri, [CoreWebView2WebResourceContext](./namespace-microsoft-web-webview2-core.md) ResourceContext)
 
 If the same filter was added multiple times, then it will need to be removed as many times as it was added for the removal to be effective. Returns E_INVALIDARG for a filter that was never added.
 

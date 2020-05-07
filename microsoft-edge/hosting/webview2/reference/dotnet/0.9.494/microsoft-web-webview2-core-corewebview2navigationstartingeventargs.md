@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,7 +26,7 @@ Event args for the NavigationStarting event.
 [IsUserInitiated](#isuserinitiated) | True when the navigation was initiated through a user gesture as opposed to programmatic navigation.
 [NavigationId](#navigationid) | The ID of the navigation.
 [RequestHeaders](#requestheaders) | The HTTP request headers for the navigation.
-[uri](#uri) | The uri of the requested navigation.
+[Uri](#uri) | The uri of the requested navigation.
 
 ## Members
 
@@ -66,9 +66,9 @@ The HTTP request headers for the navigation.
 
 Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 
-#### uri 
+#### Uri 
 
 The uri of the requested navigation.
 
-> public string [uri](#uri)
+> public string [Uri](#uri)
 

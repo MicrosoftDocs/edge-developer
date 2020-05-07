@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -46,7 +46,7 @@ The CoreWebView2Controller owns the CoreWebView2, and if all references to the C
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused.
 
-> public event EventHandler< [CoreWebView2AcceleratorKeyPressedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2AcceleratorKeyPressedEventArgs.md) > [AcceleratorKeyPressed](#acceleratorkeypressed)
+> public event EventHandler< [CoreWebView2AcceleratorKeyPressedEventArgs](microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md) > [AcceleratorKeyPressed](#acceleratorkeypressed)
 
 AcceleratorKeyPressed fires when an accelerator key or key combo is pressed or released while the WebView is focused. A key is considered an accelerator if either:
 
@@ -78,7 +78,7 @@ Bounds are relative to the parent HWND. The app has two ways it can position a W
 
 Gets the CoreWebView2 associated with this CoreWebView2Controller.
 
-> public [CoreWebView2](Microsoft.Web.WebView2.Core.CoreWebView2.md) [CoreWebView2](#corewebview2)
+> public [CoreWebView2](microsoft-web-webview2-core-corewebview2.md) [CoreWebView2](#corewebview2)
 
 #### GotFocus 
 
@@ -106,7 +106,7 @@ In the case where MoveFocusRequested event is fired, the focus is still on WebVi
 
 MoveFocusRequested fires when user tries to tab out of the WebView.
 
-> public event EventHandler< [CoreWebView2MoveFocusRequestedEventArgs](Microsoft.Web.WebView2.Core.CoreWebView2MoveFocusRequestedEventArgs.md) > [MoveFocusRequested](#movefocusrequested)
+> public event EventHandler< [CoreWebView2MoveFocusRequestedEventArgs](microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md) > [MoveFocusRequested](#movefocusrequested)
 
 The WebView's focus has not changed when this event is fired.
 
@@ -152,7 +152,7 @@ Close is implicitly called when the CoreWebView2Controller loses its final refer
 
 Move focus into WebView.
 
-> public void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](./namespace-Microsoft.Web.WebView2.Core.md) reason)
+> public void [MoveFocus](#movefocus)([CoreWebView2MoveFocusReason](./namespace-microsoft-web-webview2-core.md) reason)
 
 WebView will get focus and focus will be set to correspondent element in the page hosted in the WebView. For Programmatic reason, focus is set to previously focused element or the default element if there is no previously focused element. For Next reason, focus is set to the first element. For Previous reason, focus is set to the last element. WebView can also got focus through user interaction like clicking into WebView or Tab into it. For tabbing, the app can call MoveFocus with Next or Previous to align with tab and shift+tab respectively when it decides the WebView is the next tabbable element. Or, the app can call IsDialogMessage as part of its message loop to allow the platform to auto handle tabbing. The platform will rotate through all windows with WS_TABSTOP. When the WebView gets focus from IsDialogMessage, it will internally put the focus on the first or last element for tab and shift+tab respectively.
 

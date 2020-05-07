@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,7 +24,7 @@ Event args for the NewWindowRequested event.
 [Handled](#handled) | Whether the NewWindowRequestedEvent is handled by host.
 [IsUserInitiated](#isuserinitiated) | IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
 [NewWindow](#newwindow) | Gets the new window.
-[uri](#uri) | The target uri of the NewWindowRequest.
+[Uri](#uri) | The target uri of the NewWindowRequest.
 [GetDeferral](#getdeferral) | Obtain a CoreWebView2Deferral object and put the event into a deferred state.
 
 The event is fired when content inside webview requested to a open a new window (through window.open() and so on.)
@@ -53,11 +53,11 @@ Gets the new window.
 
 > public CoreWebView2 [NewWindow](#newwindow)
 
-#### uri 
+#### Uri 
 
 The target uri of the NewWindowRequest.
 
-> public string [uri](#uri)
+> public string [Uri](#uri)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
 

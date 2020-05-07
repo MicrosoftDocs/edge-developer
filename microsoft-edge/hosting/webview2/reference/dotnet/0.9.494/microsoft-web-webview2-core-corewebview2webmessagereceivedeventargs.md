@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,7 +22,7 @@ Event args for the WebMessageReceived event.
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [Source](#source) | The URI of the document that sent this web message.
-[webMessageAsJson](#webmessageasjson) | The message posted from the webview content to the host converted to a JSON string.
+[WebMessageAsJson](#webmessageasjson) | The message posted from the webview content to the host converted to a JSON string.
 [TryGetWebMessageAsString](#trygetwebmessageasstring) | If the message posted from the webview content to the host is a string type, this method will return the value of that string.
 
 ## Members
@@ -35,11 +35,11 @@ The URI of the document that sent this web message.
 
 > public string [Source](#source)
 
-#### webMessageAsJson 
+#### WebMessageAsJson 
 
 The message posted from the webview content to the host converted to a JSON string.
 
-> public string [webMessageAsJson](#webmessageasjson)
+> public string [WebMessageAsJson](#webmessageasjson)
 
 Use this to communicate via JavaScript objects.
 

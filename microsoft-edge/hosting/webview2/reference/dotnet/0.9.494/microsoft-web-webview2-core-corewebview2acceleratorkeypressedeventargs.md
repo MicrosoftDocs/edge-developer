@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -43,7 +43,7 @@ If the Handled property is set to TRUE then this will prevent the WebView from p
 
 The key event type that caused the event to be fired.
 
-> public [CoreWebView2KeyEventKind](./namespace-Microsoft.Web.WebView2.Core.md) [KeyEventKind](#keyeventkind)
+> public [CoreWebView2KeyEventKind](./namespace-microsoft-web-webview2-core.md) [KeyEventKind](#keyeventkind)
 
 #### KeyEventLParam 
 
@@ -57,7 +57,7 @@ See the documentation for the WM_KEYDOWN and WM_KEYUP messages.
 
 A structure representing the information passed in the LPARAM of the window message.
 
-> public [CoreWebView2PhysicalKeyStatus](Microsoft.Web.WebView2.Core.CoreWebView2PhysicalKeyStatus.md) [PhysicalKeyStatus](#physicalkeystatus)
+> public [CoreWebView2PhysicalKeyStatus](microsoft-web-webview2-core-corewebview2physicalkeystatus.md) [PhysicalKeyStatus](#physicalkeystatus)
 
 #### VirtualKey 
 

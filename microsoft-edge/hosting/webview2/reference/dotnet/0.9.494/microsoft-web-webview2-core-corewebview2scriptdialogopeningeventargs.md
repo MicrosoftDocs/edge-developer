@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,7 +25,7 @@ Event args for the ScriptDialogOpening event.
 [Kind](#kind) | The kind of JavaScript dialog box.
 [Message](#message) | The message of the dialog box.
 [ResultText](#resulttext) | The return value from the JavaScript prompt function if Accept is called.
-[uri](#uri) | The URI of the page that requested the dialog box.
+[Uri](#uri) | The URI of the page that requested the dialog box.
 [Accept](#accept) | The host may call this to respond with OK to confirm, prompt, and beforeunload dialogs or not call this method to indicate cancel.
 [GetDeferral](#getdeferral) | GetDeferral can be called to return a CoreWebView2Deferral object.
 
@@ -65,11 +65,13 @@ The return value from the JavaScript prompt function if Accept is called.
 
 This is ignored for dialog kinds other than prompt. If Accept is not called this value is ignored and false is returned from prompt.
 
-#### uri 
+#### Uri 
 
 The URI of the page that requested the dialog box.
 
-> public string [uri](#uri)
+> public string [Uri](#uri)
+
+### Methods
 
 #### Accept 
 
@@ -78,8 +80,6 @@ The host may call this to respond with OK to confirm, prompt, and beforeunload d
 > public void [Accept](#accept)()
 
 From JavaScript, this means that the confirm and beforeunload function returns true if Accept is called. And for the prompt function it returns the value of ResultText if Accept is called and returns false otherwise.
-
-### Methods
 
 #### GetDeferral 
 
