@@ -243,7 +243,7 @@
 ###### [ICoreWebView2Settings](webview2/reference/win32/0-9-430/icorewebview2settings.md)
 ###### [ICoreWebView2WebResourceRequest](webview2/reference/win32/0-9-430/icorewebview2webresourcerequest.md)
 ###### [ICoreWebView2WebResourceResponse](webview2/reference/win32/0-9-430/icorewebview2webresourceresponse.md)
-###### [Globals](webview2/reference/win32/0-9-430/webview2.idl.md)
+###### [Globals](webview2/reference/win32/0-9-430/webview2-idl.md)
 ###### Event arguments
 ####### [ICoreWebView2AcceleratorKeyPressedEventArgs](webview2/reference/win32/0-9-430/icorewebview2acceleratorkeypressedeventargs.md)
 ####### [ICoreWebView2ContentLoadingEventArgs](webview2/reference/win32/0-9-430/icorewebview2contentloadingeventargs.md)
@@ -304,7 +304,7 @@
 ###### [IWebView2WebView3](webview2/reference/win32/0-8-190/iwebview2webview3.md)
 ###### [IWebView2WebView4](webview2/reference/win32/0-8-190/iwebview2webview4.md)
 ###### [IWebView2WebView5](webview2/reference/win32/0-8-190/iwebview2webview5.md)
-###### [Globals](webview2/reference/win32/0-8-190/webview2.idl.md)
+###### [Globals](webview2/reference/win32/0-8-190/webview2-idl.md)
 ###### Event arguments
 ###### [IWebView2AcceleratorKeyPressedEventArgs](webview2/reference/win32/0-8-190/iwebview2acceleratorkeypressedeventargs.md)
 ###### [IWebView2DevToolsProtocolEventReceivedEventArgs](webview2/reference/win32/0-8-190/iwebview2devtoolsprotocoleventreceivedeventargs.md)
