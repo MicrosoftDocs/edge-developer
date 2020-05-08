@@ -27,7 +27,40 @@ Search the Marketplace for the specific extension and select **Install**.
 
 <!--![Installing the Debugger for Microsoft Edge VS Code extension][ImagePngVscodeDebuggerInstall]  -->  
 
-## Debugger for Microsoft Edge  
+:::row:::
+   :::column span="":::
+      ### Debugger for Microsoft Edge  
+
+      With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
+      
+      This extensions gives you the ability to launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].  
+      
+      :::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension in action":::
+         Debugger for Edge VS Code extension in action  
+      :::image-end:::
+      
+      <!--![Debugger for Edge VS Code extension in action][ImageGifDebuggerEdge]  -->  
+   :::column-end:::
+   :::column span="":::
+      ### Elements for Microsoft Edge  
+      
+      With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
+      
+      For more information, see [Elements for Microsoft Edge VS Code extension][VscodeElementsEdge].  
+      
+      :::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elements for Edge VS Code extension in action":::
+         Elements for Edge VS Code extension in action  
+      :::image-end:::
+      
+      <!--![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  -->  
+   :::column-end:::
+:::row-end:::
+
+---  
+
+#### [Debugger for Microsoft Edge](#tab/debugger-for-microsoft-edge/)  
+
+<a id="vs-code-extensions-for-microsoft-edge" />  
 
 With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
 
@@ -39,7 +72,9 @@ This extensions gives you the ability to launch or attach to both Microsoft Edge
 
 <!--![Debugger for Edge VS Code extension in action][ImageGifDebuggerEdge]  -->  
 
-## Elements for Microsoft Edge  
+#### [Elements for Microsoft Edge](#tab/elements-for-microsoft-edge/)  
+
+<a id="vs-code-extensions-for-microsoft-edge" />  
 
 With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
 
@@ -49,6 +84,34 @@ For more information, see [Elements for Microsoft Edge VS Code extension][Vscode
    Elements for Edge VS Code extension in action  
 :::image-end:::
 
+<!--![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  -->  
+
+* * *  
+
+<!--  
+## Debugger for Microsoft Edge  
+
+With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
+
+This extensions gives you the ability to launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].  
+
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension in action":::
+   Debugger for Edge VS Code extension in action  
+:::image-end:::
+-->  
+
+<!--![Debugger for Edge VS Code extension in action][ImageGifDebuggerEdge]  -->  
+<!--  
+## Elements for Microsoft Edge  
+
+With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
+
+For more information, see [Elements for Microsoft Edge VS Code extension][VscodeElementsEdge].  
+
+:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elements for Edge VS Code extension in action":::
+   Elements for Edge VS Code extension in action  
+:::image-end:::
+-->  
 <!--![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  -->  
 
 ## webhint
