@@ -46,8 +46,6 @@ productDirectory:
       links:
         - url: /deployedge/microsoft-edge-channels
           text: Microsoft Edge channel overview
-        - url: https://www.microsoftedgeinsider.com/download
-          text: Download a Microsoft Edge channel
         - url: /deployedge/edge-ie-mode
           text: Use enterprise features
     # Card
@@ -316,7 +314,7 @@ additionalContent:
             - text: JavaScript Runtime Hosting
               url: /microsoft-edge/hosting/javascript-runtime-hosting
             - text: WebVR Developer Guide
-              url: /webvr/webvr-docs/index
+              url: /microsoft-edge/webvr/index
             - text: Windows Runtime (WinRT)
               url: /microsoft-edge/windows-runtime
     - title: Help & Support # < 60 chars (optional)
