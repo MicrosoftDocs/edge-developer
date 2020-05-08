@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
