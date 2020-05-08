@@ -107,7 +107,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 | Show Settings | `?` or `Fn`+`F1` | `?` or `Fn`+`F1` |  
 | Show the next panel | `Ctrl`+`]` | `Command`+`]` |  
 | Show the previous panel | `Ctrl`+`[` | `Command`+`[` |  
-| Dock the DevTools in the last position used.  If the DevTools remains in the default position for the entire session, thisshortcut undocks the DevTools into a separate window | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Dock the DevTools in the last position used.  If the DevTools remain in the default position for the entire session, this shortcut undocks the DevTools into a separate window | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | Toggle **Device Mode** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Show the Command Menu | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
