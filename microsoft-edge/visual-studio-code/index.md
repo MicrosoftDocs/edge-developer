@@ -51,7 +51,7 @@ Search the Marketplace for the specific extension and select **Install**.
       <!--![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  -->  
    :::column-end:::
    :::column span="1":::
-      ## webhint
+      ### webhint
       
       Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  It checks your code for best practices and common errors.  This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  
       
