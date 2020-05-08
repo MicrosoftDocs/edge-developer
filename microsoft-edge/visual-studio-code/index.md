@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
@@ -19,9 +19,13 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 To acquire any of the extensions highlighted below, navigate to Extensions \(`Ctrl`+`Shift`+`X` on Windows or `Command`+`Shift`+`X` on macOS\) in VS Code.  
 
-Search the Marketplace for the specific extension and click **Install**.  
+Search the Marketplace for the specific extension and select **Install**.  
 
-![Installing the Debugger for Microsoft Edge VS Code extension][ImagePngVscodeDebuggerInstall]  
+:::image type="complex" source="./media/vscode-debugger-install.png" alt-text="Installing the Debugger for Microsoft Edge VS Code extension":::
+   Installing the Debugger for Microsoft Edge VS Code extension  
+:::image-end:::
+
+<!--![Installing the Debugger for Microsoft Edge VS Code extension][ImagePngVscodeDebuggerInstall]  -->  
 
 ## Debugger for Microsoft Edge  
 
@@ -29,7 +33,11 @@ With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftE
 
 This extensions gives you the ability to launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].  
 
-![Debugger for Edge VS Code extension in action][ImageGifDebuggerEdge]  
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension in action":::
+   Debugger for Edge VS Code extension in action  
+:::image-end:::
+
+<!--![Debugger for Edge VS Code extension in action][ImageGifDebuggerEdge]  -->  
 
 ## Elements for Microsoft Edge  
 
@@ -37,13 +45,21 @@ With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftE
 
 For more information, see [Elements for Microsoft Edge VS Code extension][VscodeElementsEdge].  
 
-![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  
+:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elements for Edge VS Code extension in action":::
+   Elements for Edge VS Code extension in action  
+:::image-end:::
+
+<!--![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  -->  
 
 ## webhint
 
 Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  It checks your code for best practices and common errors.  This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  
 
-![Screenshot of webhint VS Code extension][ImagePngWebhintExtension]  
+:::image type="complex" source="./media/webhint-extension.png" alt-text="Screenshot of webhint VS Code extension":::
+   Screenshot of webhint VS Code extension  
+:::image-end:::
+
+<!--![Screenshot of webhint VS Code extension][ImagePngWebhintExtension]  -->  
 
 Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for VS Code][VisualstudioMarketplaceWebhint]. Hints appear as inline underlines and are summarized in the Problems pane.  
 
@@ -51,18 +67,18 @@ For more information, see [How to use webhint in Visual Studio Code][VscodeWebhi
 
 <!-- image links -->  
 
-[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  
-[ImageGifElementsEdge]: ./media/elements-for-edge.gif "Elements for Edge VS Code extension in action"  
-[ImagePngVscodeDebuggerInstall]: ./media/vscode-debugger-install.png "Installing the Debugger for Microsoft Edge VS Code extension"  
+<!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  
+<!--[ImageGifElementsEdge]: ./media/elements-for-edge.gif "Elements for Edge VS Code extension in action"  -->  
+<!--[ImagePngVscodeDebuggerInstall]: ./media/vscode-debugger-install.png "Installing the Debugger for Microsoft Edge VS Code extension"  -->  
 [ImagePngDebuggerEdge]: ./media/debugger-for-edge.png "Debugger for Edge VS Code extension in action"  
 [ImagePngElementsEdge]: ./media/elements-for-edge.png "Elements for Edge VS Code extension in action"  
-[ImagePngWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint VS Code extension"  
+<!--[ImagePngWebhintExtension]: ./media/webhint-extension.png "Screenshot of webhint VS Code extension"  -->  
 
 <!--links -->  
 
-[VscodeDebuggerEdge]: ./debugger-for-edge.md "Debugger For Microsoft Edge VS Code Extension"  
-[VscodeElementsEdge]: ./elements-for-edge.md "Elements For Microsoft Edge VS Code Extension"  
-[VscodeWebhint]: ./webhint.md "Webhint VS Code Extension"  
+[VscodeDebuggerEdge]: ./debugger-for-edge.md "Debugger For Microsoft Edge VS Code Extension | Microsoft Docs"  
+[VscodeElementsEdge]: ./elements-for-edge.md "Elements For Microsoft Edge VS Code Extension | Microsoft Docs"  
+[VscodeWebhint]: ./webhint.md "Webhint VS Code Extension | Microsoft Docs"  
 
 [VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 [VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"   
