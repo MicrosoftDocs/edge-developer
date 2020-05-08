@@ -3,7 +3,7 @@ description: Learn about the various design aspects and UI behavior to consider 
 title: Extensions - Design
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2020
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, javascript, design, icons, developer
@@ -25,7 +25,7 @@ While any webkit image format is supported, .png icons are recommended for trans
 
 ### Icons for your extension  
 
-For your extension, you must create one icon size for the browser action or page action, and one icon size for the extensions pane.  More than one size for each may be provided to support high resolution displays.  
+For your extension, you must create one icon size for the browser action or page action, and one icon size for the **Extensions** pane.  More than one size for each may be provided to support high resolution displays.  
 
 An extension should have a browser action or page action icon.  The browser action and page action icons may be changed at runtime using the [browserAction.setIcon][MSDApiBrowseractionSeticon] method or [pageAction.setIcon][MDNApiPageactionSeticon] method.  
 
@@ -48,17 +48,34 @@ The following [manifest.json][ExtensionsApisupportManifestkeys] file snippet sho
 
 If the browser action has been set by the extension, it appears either in the Actions menu after selecting **More(...)**,  or to the right of the address bar if **Show button next to the address bar** has been toggled on by the user.  
 
-![browser action in action menu][ImageActionmenuBrowseraction]  
-
-![browser action][ImageBrowserActionIcon]  
+:::row:::
+   :::column span="1":::
+      :::image type="complex" source="../media/actionmenu-browseraction.png" alt-text="Browser action in action menu":::
+         Browser action in action menu
+      :::image-end:::
+      
+      <!--![browser action in action menu][ImageActionmenuBrowseraction]  -->  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="complex" source="../media/browseractionicon.png" alt-text="Browser action":::
+         Browser action
+      :::image-end:::
+      
+      <!--![browser action][ImageBrowserActionIcon]  -->  
+   :::column-end:::
+:::row-end:::
 
 #### Page action  
 
 The [page_action][MDNManifestjsonPageAction] key has the same JSON manifest syntax as the [browser_action][MDNManifestjsonBrowserAction] key.  Page action also has the same icon size requirements as browser action.  
 
-If page action is specified in the [manifest.json][ExtensionsApisupportManifestkeys] file, it appears within the address bar whenever the [pageAction.show][MDNApiPageactionShow] method is called.  
+If page action is specified in the [manifest.json][ExtensionsApisupportManifestkeys] file, it appears within the address bar whenever the [pageAction.show][MDNApiPageactionShow] method is used.  
 
-![page action][ImagePageaction]  
+:::image type="complex" source="../media/pageaction.png" alt-text="Page action":::
+   Page action
+:::image-end:::
+
+<!--![page action][ImagePageaction]  -->  
 
 ##### Management UI  
 
@@ -81,7 +98,11 @@ You should specify the following icon sizes.
 },
 ```  
 
-![management UI][ImageManagementUi]  
+:::image type="complex" source="../media/management-ui.png" alt-text="Management UI":::
+   Management UI
+:::image-end:::
+
+<!--![management UI][ImageManagementUi]  -->  
 
 ### Icons for packaging  
 
@@ -102,31 +123,44 @@ If the 150px icon for the Microsoft Store has a transparent background, the acce
 
 For example, if a user has selected pink as the accent color, the transparent background of your store icon is displayed as pink.  
 
-![Windows accent color][ImageWindowsAccentColor]  
-
-![Background color auto selected][ImageStoreIconTransparencyBackground]  
+:::row:::
+   :::column span="1":::
+       :::image type="complex" source="../media/windows-accent-color.png" alt-text="Windows accent color":::
+          Windows accent color
+       :::image-end:::
+       
+       <!--![Windows accent color][ImageWindowsAccentColor]  -->  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="complex" source="../media/store-icon-with-transparent-background.png" alt-text="Background color auto selected":::
+         Background color auto selected
+      :::image-end:::
+      
+      <!--![Background color auto selected][ImageStoreIconTransparencyBackground]  -->  
+   :::column-end:::
+:::row-end:::
 
 If you want to pick your own background color for your Microsoft Store, you must make the background opaque.  
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability.  [Reach out to us][AkaExtensionRequest] with your requests for the Microsoft Store, and your request is considered for a future update.  
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability.  [Contact us][AkaExtensionRequest] with your requests for the Microsoft Store, and your request is considered for a future update.  
 
 <!-- image links -->  
 
-[ImageActionmenuBrowseraction]: ../media/actionmenu-browseraction.png "browser action in action menu"  
-[ImageBrowserActionIcon]: ../media/browseractionicon.png "browser action"  
-[ImagePageaction]: ../media/pageaction.png "page action"  
-[ImageManagementUi]: ../media/management-ui.png "management UI"  
-[ImageWindowsAccentColor]: ../media/windows-accent-color.png "Windows accent color"  
-[ImageStoreIconTransparencyBackground]: ../media/store-icon-with-transparent-background.png "Background color auto selected"  
+<!--[ImageActionmenuBrowseraction]: ../media/actionmenu-browseraction.png "browser action in action menu"  -->  
+<!--[ImageBrowserActionIcon]: ../media/browseractionicon.png "browser action"  -->  
+<!--[ImagePageaction]: ../media/pageaction.png "page action"  -->  
+<!--[ImageManagementUi]: ../media/management-ui.png "management UI"  -->  
+<!--[ImageWindowsAccentColor]: ../media/windows-accent-color.png "Windows accent color"  -->  
+<!--[ImageStoreIconTransparencyBackground]: ../media/store-icon-with-transparent-background.png "Background color auto selected"  -->  
 
 <!-- links -->  
 
-[ExtensionsGuidesAccessibility]: ./accessibility.md "Accessibility"  
-[ExtensionsGuidesPackagingCreatingTestingPackagesAssetsFolder]: ./packaging/creating-and-testing-extension-packages.md#assets-folder "Assets folder - Creating And Testing A Microsoft Edge Extension AppX Package"  
-[ExtensionsGuidesPackagingUsingManifoldjsPackagePackagingManifoldjs]: ./packaging/using-manifoldjs-to-package-extensions.md#packaging-with-manifoldjs "Packaging with ManifoldJS - Using ManifoldJS To Create Extension AppX Packages"  
+[ExtensionsGuidesAccessibility]: ./accessibility.md "Accessibility | Microsoft Docs"  
+[ExtensionsGuidesPackagingCreatingTestingPackagesAssetsFolder]: ./packaging/creating-and-testing-extension-packages.md#assets-folder "Assets folder - Creating And Testing A Microsoft Edge Extension AppX Package | Microsoft Docs"  
+[ExtensionsGuidesPackagingUsingManifoldjsPackagePackagingManifoldjs]: ./packaging/using-manifoldjs-to-package-extensions.md#packaging-with-manifoldjs "Packaging with ManifoldJS - Using ManifoldJS To Create Extension AppX Packages | Microsoft Docs"  
 
-[ExtensionsApisupportManifestkeys]: ../API-support/supported-manifest-keys.md "Supported Manifest Keys"  
+[ExtensionsApisupportManifestkeys]: ../API-support/supported-manifest-keys.md "Supported Manifest Keys | Microsoft Docs"  
 
 [AkaExtensionRequest]: https://aka.ms/extension-request "Reach out to us"  
 
