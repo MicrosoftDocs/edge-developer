@@ -124,7 +124,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 | Show non-editable HTML source code in a new tab | `Ctrl`+`U` | N/A |  
 
 > [!NOTE]
-> If you are debugging and paused at a breakpoint, the **Refresh**shortcut resumes the runtime first.  
+> If you are debugging and paused at a breakpoint, the **Refresh** shortcut resumes the runtime first.  
 
 ## Feedback  
 
