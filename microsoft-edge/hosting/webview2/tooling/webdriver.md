@@ -22,7 +22,7 @@ If you do not have an existing WebView2 project, download our [WebView2API Sampl
 
 Once you have cloned the repo, build the project in Visual Studio. It should look like the following:
 
-![alt text](../media/webdriver/sample-app.PNG)
+![alt text](../media/webdriver/sample-app.png)
 
 ## Step 2: Install Microsoft Edge Driver
 
@@ -39,27 +39,27 @@ At this point you should have Microsoft Edge installed, built a WebView2 project
 
 1. Start by creating a new **C# .NET Framework** project in **Visual Studio**. Click **Next** on the bottom right-hand corner to continue.
 
-![alt text](../media/webdriver/new-project.PNG)
+![alt text](../media/webdriver/new-project.png)
 
 2. Give your project a **name**, save it to your preferred **location**, and click **Create**.
 
-![alt text](../media/webdriver/app-create.PNG)
+![alt text](../media/webdriver/app-create.png)
 
 3. A new project will be created. In this guide, all code will be written in the **Program.cs** file.
 
-![alt text](../media/webdriver/start-app.PNG)
+![alt text](../media/webdriver/start-app.png)
 
 4. Now let's add **Selenium** to the project. You can install Selenium via the **Selenium.WebDriver NuGet package**.
 
 To download the **Selenium.WebDriver NuGet package**, in **Visual Studio**, hover over **Project** and select **Manage NuGet Package**. The following screen should appear:
 
-![alt text](../media/webdriver/download-nuget.PNG)
+![alt text](../media/webdriver/download-nuget.png)
 
 5. Enter **Selenium.WebDriver** in the search bar, click **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**. On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha04** or later and click **Install**. Nuget will download Selenium to your machine.
 
 [Learn more about the Selenium.WebDriver NuGet package.](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04)
 
-![alt text](../media/webdriver/nuget.PNG)
+![alt text](../media/webdriver/nuget.png)
 
 6. Use **OpenQA.Selenium.Edge** by adding the following statement:```using OpenQA.Selenium.Edge;``` at the beginning of **Program.cs**
 
@@ -122,7 +122,7 @@ You can copy and paste the following code underneath `edgeOptions`. Make sure to
 }
 ```
 
-![alt text](../media/webdriver/microsoft.PNG)
+![alt text](../media/webdriver/microsoft.png)
 
 Congratulations! You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.
 

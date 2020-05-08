@@ -25,7 +25,7 @@ We will start with a basic desktop project containing a single main window. As t
 
 Open **WebView2GettingStarted.sln** in Visual Studio. If you are using an older version of Visual Studio, right click on the **WebView2GettingStarted** project and click **Properties**. Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and VS toolset available to you.
 
-![toolVersion](media/tool-version.PNG)
+![tool-version](media/tool-version.png)
 
 Visual Studio may show some errors due to missing WebView2 header file, which should go away once Step 2 is completed.
 
@@ -35,15 +35,15 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 1. Right click the project and click **Manage Nuget Packages**.
 
-    ![manageNugetPackages](media/manage-nuget-packages.PNG)
+    ![manage-nuget-packages](media/manage-nuget-packages.png)
 
 2. Enter **Microsoft.Windows.ImplementationLibrary** in the search bar, click **Microsoft.Windows.ImplementationLibrary** from the results, and click **Install** inthe right hand side window and install the latest SDK. Nuget will download the SDK to your machine. While we use [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019) to make working with COM easier in this walkthrough, they are completely optional.
 
-    ![nuget](media/wil.PNG)
+    ![wil](media/wil.png)
 
 3. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, and click **Install** in the right hand side window and install the latest SDK. Nuget will download the SDK to your machine.
 
-    ![nuget](media/nuget.PNG)
+    ![nuget](media/nuget.png)
 
 4. Include the WebView2 header. In **HelloWebView.cpp**, add `#include "WebView2.h"` below the lines of `#include`s.
 
@@ -57,11 +57,11 @@ Now let's add the WebView2 SDK into the project. For the developer preview, you 
 
 You are all set to use and build against the WebView2 API. Press F5 to build and run the sample app. You should see an app displaying an empty window.
 
-![emptyApp](media/empty-app.PNG)
+![empty-app](media/empty-app.png)
 
 ## Step 3 - Create a single WebView within the parent window
 
-Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithDetails` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Controller` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Controller::get_CoreWebView2` to get the associated WebView.
+Now let's add a WebView to the main window. We'll use `CreateCoreWebView2Environment` to set up the environment and locate the Microsoft Edge (Chromium) browser powering the control. You can also use `CreateCoreWebView2EnvironmentWithOptions` if you want to specify browser location, user folder, browser flags, etc., instead of using the default setting. Upon the completion of `CreateCoreWebView2Environment`, you'll be able to call `ICoreWebView2Environment::CreateCoreWebView2Controller` inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and call `ICoreWebView2Controller::get_CoreWebView2` to get the associated WebView.
 
 In the callback, let's also set a few settings, resize the WebView to take 100% of the parent window, and navigate to Bing.
 
@@ -70,7 +70,7 @@ Copy the following code to **HelloWebView.cpp** between `// <-- WebView2 sample 
 ```cpp
 // Step 3 - Create a single WebView within the parent window
 // Locate the browser and set up the environment for WebView
-CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
+CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
         [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
 
@@ -115,13 +115,13 @@ CreateCoreWebView2EnvironmentWithDetails(nullptr, nullptr, nullptr,
 
 Press F5 to build and run the app. Now you have a WebView window displaying Bing.
 
-![bingWindow](media/bing-window.PNG)
+![bing-window](media/bing-window.png)
 
 ## Step 4 - Navigation events
 
 We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](reference/win32/0-9-488/ICoreWebView2.md#navigation-events) to learn more.
 
-![navigationEvents](media/navigation-events.PNG)
+![navigation-events](media/navigation-events.png)
 
 In error cases there may or may not be `SourceChanged`, `ContentLoading`, or `HistoryChanged` event(s) depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple `NavigationStarting` events in a row.
 
@@ -204,7 +204,7 @@ nullptr);
 
 Press F5 to build and run the app. It will now show URLs before navigating to pages.
 
-![showURL](media/show-url.PNG)
+![show-url](media/show-url.png)
 
 Congratulations, you've just built your first WebView2 app!
 
