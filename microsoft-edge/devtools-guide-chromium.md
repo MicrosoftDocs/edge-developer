@@ -142,7 +142,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsChro
 
 <!-- links -->  
 
-[DevtoolsChromiumWhatsNew]: ./devtools-guide-chromium/whats-new.md "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsChromiumWhatsNew]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/03/devtools "What's New In DevTools (Microsoft Edge 83) | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  
 
