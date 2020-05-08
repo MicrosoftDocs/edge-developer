@@ -24,7 +24,7 @@ If you are checking out Microsoft Edge and you mainly develop in a Chromium-base
 
 <!--![Microsoft Edge (Chromium) DevTools](./devtools-guide-chromium/media/devtools.png)  -->  
 
-If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), the Microsoft Edge team has provided to you great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
+If you are checking out Microsoft Edge \(Chromium\) and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
 
 ## Open the DevTools  
 
