@@ -22,7 +22,6 @@ One common use for this API is to pre-cache critical resources when a Service Wo
 
 ```js
 self.addEventListener( "install", function( event ){
-  // console.log( "WORKER: install event in progress." );
   event.waitUntil(
     caches.open( "static-cache" )
       .then(function( cache ){
