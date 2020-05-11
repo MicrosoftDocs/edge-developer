@@ -138,6 +138,7 @@
           items:
             - name: 0.9.430 - Reference (WebView2)
               href: reference/win32/0-9-430-reference-webview2
+              items:
                 - name: ICoreWebView2
                   href: reference/win32/0-9-430/icorewebview2
                 - name: ICoreWebView2Deferral
@@ -248,6 +249,7 @@
                       href: reference/win32/0-9-430/icorewebview2zoomfactorchangedeventhandler
             - name: 0.8.190 - Reference (WebView2)
               href: reference/win32/0-8-190-reference-webview2
+              items:
                 - name: IWebView2Deferral
                   href: reference/win32/0-8-190/iwebview2deferral
                 - name: IWebView2Environment
