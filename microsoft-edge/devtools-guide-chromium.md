@@ -126,7 +126,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 > [!NOTE]
 > If you are debugging and paused at a breakpoint, the **Refresh** shortcut resumes the runtime first.  
 
-## Feedback  
+## Getting in touch with the Edge DevTools team  
 
 Please send your feedback, so the Microsoft Edge team continues improving the Microsoft Edge DevTools for you!  Simply select the **Feedback** icon in the DevTools or press `Alt`+`Shift`+`I` on Windows \(`Option`+`Shift`+`I` on macOS\) and enter any feedback or feature requests you have for the DevTools.  
 
