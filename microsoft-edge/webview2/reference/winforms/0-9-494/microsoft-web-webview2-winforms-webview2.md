@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/10/2020
+ms.date: 05/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,6 +26,12 @@ Control to embed WebView2 in WinForms.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
+[CoreWebView2Ready](#corewebview2ready) | This event is triggered when the control's [CoreWebView2](#corewebview2) has finished being initialized (regardless of how initialization was triggered) but before it is used for anything.
+[NavigationStarting](#navigationstarting) | NavigationStarting dispatches before a new navigate starts for the top level document of the WebView2.
+[NavigationCompleted](#navigationcompleted) | NavigationCompleted dispatches after a navigate of the top level document completes rendering either successfully or not.
+[WebMessageReceived](#webmessagereceived) | WebMessageReceived dispatches after web content sends a message to the app host via `chrome.webview.postMessage`.
+[SourceChanged](#sourcechanged) | SourceChanged dispatches after the Source property changes.
+[ContentLoading](#contentloading) | ContentLoading dispatches after a navigation begins to a new URI and the content of that URI begins to render.
 [CoreWebView2](#corewebview2) | The underlying CoreWebView2.
 [ZoomFactor](#zoomfactor) | The zoom factor for the WebView.
 [Source](#source) | The Source property is the URI of the top level document of the WebView2.
@@ -46,6 +52,56 @@ Control to embed WebView2 in WinForms.
 ## Members
 
 ### Properties
+
+#### CoreWebView2Ready 
+
+This event is triggered when the control's [CoreWebView2](#corewebview2) has finished being initialized (regardless of how initialization was triggered) but before it is used for anything.
+
+> public event EventHandler< EventArgs > [CoreWebView2Ready](#corewebview2ready)
+
+You should handle this event if you need to perform one time setup operations on the CoreWebView2 which you want to affect all of its usages (e.g. adding event handlers, configuring settings, installing document creation scripts, adding host objects).
+
+This event doesn't provide any arguments, and the sender will be the WebView2 control, whose CoreWebView2 property will now be valid (i.e. non-null) for the first time.
+
+#### NavigationStarting 
+
+NavigationStarting dispatches before a new navigate starts for the top level document of the WebView2.
+
+> public event EventHandler< CoreWebView2NavigationStartingEventArgs > [NavigationStarting](#navigationstarting)
+
+This is equivalent to the NavigationStarting event on the CoreWebView2. See CoreWebView2.NavigationStarting documentation for more information.
+
+#### NavigationCompleted 
+
+NavigationCompleted dispatches after a navigate of the top level document completes rendering either successfully or not.
+
+> public event EventHandler< CoreWebView2NavigationCompletedEventArgs > [NavigationCompleted](#navigationcompleted)
+
+This is equivalent to the NavigationCompleted event on the CoreWebView2. See CoreWebView2.NavigationCompleted documentation for more information.
+
+#### WebMessageReceived 
+
+WebMessageReceived dispatches after web content sends a message to the app host via `chrome.webview.postMessage`.
+
+> public event EventHandler< CoreWebView2WebMessageReceivedEventArgs > [WebMessageReceived](#webmessagereceived)
+
+This is equivalent to the WebMessageReceived event on the CoreWebView2. See CoreWebView2.WebMessageReceived documentation for more information.
+
+#### SourceChanged 
+
+SourceChanged dispatches after the Source property changes.
+
+> public event EventHandler< CoreWebView2SourceChangedEventArgs > [SourceChanged](#sourcechanged)
+
+This may happen during a navigation or if otherwise the script in the page changes the URI of the document. This is equivalent to the SourceChanged event on the CoreWebView2. See CoreWebView2.SourceChanged documentation for more information.
+
+#### ContentLoading 
+
+ContentLoading dispatches after a navigation begins to a new URI and the content of that URI begins to render.
+
+> public event EventHandler< CoreWebView2ContentLoadingEventArgs > [ContentLoading](#contentloading)
+
+This is equivalent to the ContentLoading event on the CoreWebView2. See CoreWebView2.ContentLoading documentation for more information.
 
 #### CoreWebView2 
 

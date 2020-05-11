@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/10/2020
+ms.date: 05/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,9 +26,13 @@ A control to embed web content in a WPF application.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
+[CoreWebView2Ready](#corewebview2ready) | This event is triggered when the control's CoreWebView2 has finished being initialized (regardless of how initialization was triggered) but before it is used for anything.
+[SourceChanged](#sourcechanged) | A wrapper around CoreWebView2.SourceChanged.
+[NavigationStarting](#navigationstarting) | A wrapper around CoreWebView2.NavigationStarting.
+[NavigationCompleted](#navigationcompleted) | A wrapper around CoreWebView2.NavigationCompleted.
+[ContentLoading](#contentloading) | A wrapper around CoreWebView2.ContentLoading.
+[WebMessageReceived](#webmessagereceived) | A wrapper around CoreWebView2.WebMessageReceived.
 [CreationProperties](#creationproperties) | Gets or sets a bag of options which are used during initialization of the control's CoreWebView2.
-[Environment](#environment) | 
-[CoreWebView2Controller](#corewebview2controller) | 
 [CoreWebView2](#corewebview2) | Access the complete functionality of the underlying Core.CoreWebView2 COM API.
 [Source](#source) | The Uri which the control is currently displaying (or will display once initialization of its CoreWebView2 is finished).
 [CanGoBack](#cangoback) | Wrapper around CoreWebView2.CanGoBack.
@@ -72,6 +76,56 @@ Note that this control extends HwndHost in order to embed windows which live out
 
 ### Properties
 
+#### CoreWebView2Ready 
+
+This event is triggered when the control's CoreWebView2 has finished being initialized (regardless of how initialization was triggered) but before it is used for anything.
+
+> public event EventHandler< EventArgs > [CoreWebView2Ready](#corewebview2ready)
+
+You should handle this event if you need to perform one time setup operations on the CoreWebView2 which you want to affect all of its usages (e.g. adding event handlers, configuring settings, installing document creation scripts, adding host objects). See the WebView2 class documentation for an initialization overview.
+
+This event doesn't provide any arguments, and the sender will be the WebView2 control, whose CoreWebView2 property will now be valid (i.e. non-null) for the first time.
+
+#### SourceChanged 
+
+A wrapper around CoreWebView2.SourceChanged.
+
+> public event EventHandler< CoreWebView2SourceChangedEventArgs > [SourceChanged](#sourcechanged)
+
+The only difference between this event and CoreWebView2.SourceChanged is the first parameter that's passed to handlers. Handlers of this event will receive the WebView2 control, whereas handlers of CoreWebView2.SourceChanged will receive the CoreWebView2 instance.
+
+#### NavigationStarting 
+
+A wrapper around CoreWebView2.NavigationStarting.
+
+> public event EventHandler< CoreWebView2NavigationStartingEventArgs > [NavigationStarting](#navigationstarting)
+
+The only difference between this event and CoreWebView2.NavigationStarting is the first parameter that's passed to handlers. Handlers of this event will receive the WebView2 control, whereas handlers of CoreWebView2.NavigationStarting will receive the CoreWebView2 instance.
+
+#### NavigationCompleted 
+
+A wrapper around CoreWebView2.NavigationCompleted.
+
+> public event EventHandler< CoreWebView2NavigationCompletedEventArgs > [NavigationCompleted](#navigationcompleted)
+
+The only difference between this event and CoreWebView2.NavigationCompleted is the first parameter that's passed to handlers. Handlers of this event will receive the WebView2 control, whereas handlers of CoreWebView2.NavigationCompleted will receive the CoreWebView2 instance.
+
+#### ContentLoading 
+
+A wrapper around CoreWebView2.ContentLoading.
+
+> public event EventHandler< CoreWebView2ContentLoadingEventArgs > [ContentLoading](#contentloading)
+
+The only difference between this event and CoreWebView2.ContentLoading is the first parameter that's passed to handlers. Handlers of this event will receive the WebView2 control, whereas handlers of CoreWebView2.ContentLoading will receive the CoreWebView2 instance.
+
+#### WebMessageReceived 
+
+A wrapper around CoreWebView2.WebMessageReceived.
+
+> public event EventHandler< CoreWebView2WebMessageReceivedEventArgs > [WebMessageReceived](#webmessagereceived)
+
+The only difference between this event and CoreWebView2.WebMessageReceived is the first parameter that's passed to handlers. Handlers of this event will receive the WebView2 control, whereas handlers of CoreWebView2.WebMessageReceived will receive the CoreWebView2 instance.
+
 #### CreationProperties 
 
 Gets or sets a bag of options which are used during initialization of the control's CoreWebView2.
@@ -79,14 +133,6 @@ Gets or sets a bag of options which are used during initialization of the contro
 > public CoreWebView2CreationProperties [CreationProperties](#creationproperties)
 
 Setting this property after the control's CoreWebView2 is initialized won't work (the old value will be retained). See the WebView2 class documentation for an initialization overview.
-
-#### Environment 
-
-> private CoreWebView2Environment [Environment](#environment)
-
-#### CoreWebView2Controller 
-
-> private CoreWebView2Controller [CoreWebView2Controller](#corewebview2controller)
 
 #### CoreWebView2 
 
