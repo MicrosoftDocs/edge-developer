@@ -3,8 +3,8 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
-ms.topic: reference
+ms.date: 05/11/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
@@ -84,9 +84,9 @@ Right click on your project and select **Properties**. Under **Configuration Pro
 
 You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications).
 
-## Feedback
+## Getting in touch with the WebView2 team  
 
 Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.
 
-It’s also a good place to search for known issues.
+It's also a good place to search for known issues.
 During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.

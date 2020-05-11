@@ -3,8 +3,8 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps Release Notes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
-ms.topic: reference
+ms.date: 05/11/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
@@ -20,8 +20,8 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 **Re-compile your app after updating the NuGet package.** 
 
-*   **Announcement:** Starting with the upcoming Microsoft Edge version 83, evergreen WebView will no longer target the Stable browser channel. Instead, it will target another set of binaries, branded [Microsoft Edge WebView2 Runtime](../webview2.md#microsoft-edge-webview2-runtime), that can be chain-installed through an installer we are currently developing. More details in [App-Distribution](../webview2.md#app-distribution).
-*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Microsoft Edge WebView2 SDK](../webview2.md#microsoft-edge-webview2-sdk) to learn about the differences.
+*   **Announcement:** Starting with the upcoming Microsoft Edge version 83, evergreen WebView will no longer target the Stable browser channel. Instead, it will target another set of binaries, branded [Microsoft Edge WebView2 Runtime](./index.md#microsoft-edge-webview2-runtime), that can be chain-installed through an installer we are currently developing. More details in [App-Distribution](./index.md#app-distribution).
+*   **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Microsoft Edge WebView2 SDK](./index.md#microsoft-edge-webview2-sdk) to learn about the differences.
 *   **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interfaces: 
     -  CORE_WEBVIEW2_* prefix is now COREWEBVIEW2_*. 
     -  [GetCoreWebView2BrowserVersionInfo](reference/win32/0-9-430/webview2-idl.md#getcorewebview2browserversioninfo) is now [GetAvailableCoreWebView2BrowserVersionString](reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring)

@@ -3,8 +3,8 @@ description: Automate and test the WebView2 Control using Microsoft Edge Driver
 title: Automating and Testing WebView2 with Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2020
-ms.topic: reference
+ms.date: 05/11/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 
 Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling for debugging and automation. One such tool is Selenium, which implements the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.
 
-Here’s how to get started:
+Here's how to get started:
 
 ## Step 1: Download WebView2API Sample
 
@@ -32,7 +32,7 @@ It is important to make sure that the version of Microsoft Edge Driver matches t
 
 ## Step 3: Add Selenium to the WebView2API Sample
 
-At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver. Now, let’s get started using Selenium.
+At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver. Now, let's get started using Selenium.
 
 > [!NOTE]
 > Selenium supports C#, Java, Python, Javascript, and Ruby. However, this guide will be in C#.
@@ -134,6 +134,6 @@ To learn more:
 - Learn more about [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) control and how to use it when embedding web content in your native app
 - Check out [documentation for Microsoft Edge Driver](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) to learn more about automating Microsoft Edge (Chromium)
 
-## Feedback
+## Getting in touch with the WebView2 team  
 
 Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback) to submit feature requests or bug reports or to search for known issues.

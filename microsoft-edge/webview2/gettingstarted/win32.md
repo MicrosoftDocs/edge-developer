@@ -3,8 +3,8 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
-ms.topic: reference
+ms.date: 05/11/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
@@ -218,6 +218,6 @@ To learn more:
 * Checkout [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) an application built using WebView2.
 * Please explore [API reference](../reference/win32/0-9-488-reference-webview2.md) for detailed information about out API.  
 
-## Feedback
+## Getting in touch with the WebView2 team  
 
 Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.
