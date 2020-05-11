@@ -2,7 +2,7 @@
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/20/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -136,10 +136,10 @@ If you are not able to use the emulators and do not have access to real devices,
 
 <!-- image links -->  
 
-<!--[ImageAndroidEmulatorStockBrowser]: images/android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  -->  
-<!--[ImageAndroidEmulatorContentShell]: images/android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  -->  
-<!--[ImageAndroidEmulatorFirefoxBrowser]: images/ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  -->  
-[ImageVMModernIe]: images/modern-ie-vm.msft.png "Figure 1: Modern IE VM"  
+<!--[ImageAndroidEmulatorStockBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  -->  
+<!--[ImageAndroidEmulatorContentShell]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  -->  
+<!--[ImageAndroidEmulatorFirefoxBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  -->  
+[ImageVMModernIe]: /microsoft-edge/devtools-guide-chromium/media/device-mode-modern-ie-vm.msft.png "Figure 1: Modern IE VM"  
 
 <!-- links -->  
 

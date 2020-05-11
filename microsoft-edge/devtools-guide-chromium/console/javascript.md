@@ -2,7 +2,7 @@
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/20/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -119,22 +119,25 @@ The **Console** also has a set of convenience functions that make it easier to i
 
 <!-- image links -->  
 
-[ImageConsole]: images/console-javascript-example-console-playground.msft.png "Figure 1: The Console"  
-[ImageTutorialDevToolsJs]: images/console-javascript-example-console-empty.msft.png "Figure 2: The Console JavaScript Example page on the left, and DevTools on the right"  
-[ImageConsoleAfterEvaluating]: images/console-javascript-example-console-change-button-text.msft.png "Figure 3: How the Console looks after evaluating the expression"  
-[ImagePlayground]: images/console-javascript-example-console-playground.msft.png "Figure 4: How the Console looks after evaluating the expressions above"  
+[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-playground.msft.png "Figure 1: The Console"  
+[ImageTutorialDevToolsJs]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-empty.msft.png "Figure 2: The Console JavaScript Example page on the left, and DevTools on the right"  
+[ImageConsoleAfterEvaluating]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-change-button-text.msft.png "Figure 3: How the Console looks after evaluating the expression"  
+[ImagePlayground]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-playground.msft.png "Figure 4: How the Console looks after evaluating the expressions above"  
 
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: log.md "Get Started With Logging Messages In The Console"  
-<!--[DevToolsConsoleReference]: reference.md#run-javascript "Console Reference"  -->  
-<!--[DevToolsConsoleUtilities]: utilities.md "Console Utilities API Reference"  -->  
+[DevToolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
+[DevToolsConsoleReference]: /microsoft-edge/devtools-guide-chromium/console/reference#run-javascript "Console Reference"  
+[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium//console/utilities "Console Utilities API Reference"  
 
-[DevToolsJavascriptIndex]: ../javascript/index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
+[DevToolsJavascriptIndex]: /microsoft-edge/devtools-guide-chromium/javascript/index "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
+
 [Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
+
 [GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console Javascript Example | Glitch"  
+
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read–eval–print loop - Wikipedia"  
 
 > [!NOTE]

@@ -729,7 +729,10 @@ Type: **MSWebViewAsyncOperation**
 
 An **MSWebViewAsyncOperation** object that, when it completes, provides a **Blob** object that contains the image. When using **capturePreviewToBlobAsync**, you need to define success and error handlers after defining the operation. After applying the event handlers, call the start method on the [MSWebViewAsyncOperation](./webview/MSWebViewAsyncOperation.md) object to execute the operation.
 
-### captureSelectedContentToDataPackageAsync
+### captureSelectedContentToDataPackageAsync 
+
+> [!IMPORTANT]
+> This method has been deprecated and has a known issue. Avoid using this method in your production code. 
 
 Asynchronously gets a [DataPackage](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.DataTransfer.DataPackage) that contains the selected content within the **webview**.
 
