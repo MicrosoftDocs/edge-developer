@@ -3,7 +3,7 @@
 - name: Getting Started
   items:
     - name: Win32
-      href: gettingstarted/win32.md.md
+      href: gettingstarted/win32.md
 - name: Release notes
   href: releasenotes.md
 - name: Tooling
@@ -365,7 +365,7 @@
                     - name: IWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-8-190/iwebview2zoomfactorchangedeventhandler.md
     - name: .NET
-      href: reference/dotnet/0-9-494-reference-webview2
+      href: reference/dotnet/0-9-494-reference-webview2.md
       items:
         - name: CoreWebView2
           href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2.md
@@ -414,12 +414,12 @@
             - name: CoreWebView2WebResourceRequestedEventArgs
               href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
     - name: WinForms
-      href: reference/winforms/0-9-494-reference-webview2
+      href: reference/winforms/0-9-494-reference-webview2.md
       items:
         - name: WebView2
           href: reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md
     - name: WPF
-      href: reference/wpf/0-9-494-reference-webview2
+      href: reference/wpf/0-9-494-reference-webview2.md
       items:
         - name: CoreWebView2CreationProperties
           href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md
