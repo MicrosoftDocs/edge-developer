@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2019
+ms.date: 05/11/2019
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -12,11 +12,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Microsoft Edge (Chromium) Developer Tools  
 
-Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your websites in Microsoft Edge and ensure that they work as expected even when viewed in a different Chromium-based browser \(such as Google Chrome, Vivaldi, Opera, or Brave\).  
+Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your websites in Microsoft Edge and ensure that each works as expected even while viewed in a different Chromium-based browser \(such as Google Chrome, Vivaldi, Opera, or Brave\).  
 
 As the web has grown in usage across an ever-widening array of device types, the complexity and overhead involved in testing websites has exploded. Since web developers \(particularly those at small companies\) must test against so many different systems, you may find it nearly impossible to ensure that sites work well on all device types and all browsers.  Now that Microsoft Edge is based on Chromium, the Microsoft Edge team has simplified the matrix by aligning the Microsoft Edge web platform with other Chromium-based browsers and provided a best-in-class developer tooling experience, both inside the browser and with the other developer tools you use every day \(such as Visual Studio Code\).  
 
-If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools function in the same way as the developer tools you already know and use.  For more info, see [What's new in the Microsoft Edge (Chromium) DevTools][DevtoolsChromiumWhatsNew].  
+If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools function in the same way as the developer tools you already know and use.  For more information, see [What's new in the Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
 
 :::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
    Microsoft Edge (Chromium) DevTools
@@ -24,7 +24,7 @@ If you are checking out Microsoft Edge and you mainly develop in a Chromium-base
 
 <!--![Microsoft Edge (Chromium) DevTools](./devtools-guide-chromium/media/devtools.png)  -->  
 
-If you are checking out Microsoft Edge \(Chromium\) and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
+If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
 
 ## Open the DevTools  
 
@@ -59,7 +59,7 @@ The Microsoft Edge \(Chromium\) DevTools include the following panels.
 *   A **Network** panel to monitor and inspect requests and responses from the network and browser cache   
 *   A **Performance** panel to profile the time and system resources required by your site  
 *   A **Memory** panel to measure your use of memory resources and compare heap snapshots at different states of code runtime  
-*   An **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  You may also inspect and manage storage, databases, and caches from this panel.  
+*   An **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  You may also inspect and manage storage, databases, and caches from the **Application** panel.  
 *   A **Security** panel to debug security issues and ensure that you have properly implemented HTTPS on your website.  HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.  
 *   An **Audits** panel \(now renamed **Lighthouse**\) to run an audit of your website.  The results of the audit help you improve the quality of your site in the following ways.  
     *   Catch common errors related to making your website accessible, secure, performant, and so on.  
@@ -68,11 +68,11 @@ The Microsoft Edge \(Chromium\) DevTools include the following panels.
 
 [!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
 
-Please send your [feedback and feature requests](#feedback)!  
+Please send your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team)!  
 
 ## Extensions  
 
-You may have used extensions to the DevTools to help you diagnose and debug issues when building your websites or apps.  You may acquire extensions for Microsoft Edge from [the Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page.  From this page, you may browse DevTools extensions from the **Developer tools** category or search for a specific extension.  
+You may have used extensions to the DevTools to help you diagnose and debug issues when building your websites or apps.  You may acquire extensions for Microsoft Edge from the [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page.  From the [Microsoft Edge Addons][MicrosoftEdgeAddonsExtensions] page, you may browse DevTools extensions from the **Developer tools** category or search for a specific extension.  
 
 You may also add extensions from the [Chrome Web Store][GoogleChromeWebstoreExtensions].  
 
@@ -107,7 +107,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 | Show Settings | `?` or `Fn`+`F1` | `?` or `Fn`+`F1` |  
 | Show the next panel | `Ctrl`+`]` | `Command`+`]` |  
 | Show the previous panel | `Ctrl`+`[` | `Command`+`[` |  
-| Dock the DevTools in the last position used.  If the DevTools remain in the default position for the entire session, this shortcut undocks the DevTools into a separate window | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Dock the DevTools in the last position used.  If the DevTools remains in the default position for the entire session, this shortcut undocks the DevTools into a separate window | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | Toggle **Device Mode** | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Show the Command Menu | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
@@ -124,9 +124,14 @@ These shortcuts control the main DevTools window, work across all tools, or both
 | Show non-editable HTML source code in a new tab | `Ctrl`+`U` | N/A |  
 
 > [!NOTE]
-> If you are debugging and paused at a breakpoint, the **Refresh** shortcut resumes the runtime first.  
+> If you are debugging and paused at a breakpoint, the **Refresh**shortcut resumes the runtime first.  
 
-## Getting in touch with the Edge DevTools team  
+## See also  
+
+*   [DevTools for Beginners: Get Started with HTML and the DOM][DevtoolsGuideChromiumBeginnersHtml]  
+*   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolChromiumIndex]  
+
+## Getting in touch with the Microsoft Edge DevTools team  
 
 Please send your feedback, so the Microsoft Edge team continues improving the Microsoft Edge DevTools for you!  Simply select the **Feedback** icon in the DevTools or press `Alt`+`Shift`+`I` on Windows \(`Option`+`Shift`+`I` on macOS\) and enter any feedback or feature requests you have for the DevTools.  
 
@@ -136,20 +141,18 @@ Please send your feedback, so the Microsoft Edge team continues improving the Mi
 
 <!--![Give feedback on Microsoft Edge](./devtools-guide-chromium/media/devtools-feedback.png)  -->  
 
-If you want to preview the [latest features coming to the DevTools][DevtoolsChromiumWhatsNew], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
+If you want to preview the [latest features coming to the DevTools][DevtoolsGuideChromiumWhatsNewIndex], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
 
 <!-- image links -->  
 
 <!-- links -->  
 
-[DevtoolsChromiumWhatsNew]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/03/devtools "What's New In DevTools (Microsoft Edge 83) | Microsoft Docs"  
+[DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: ./devtools-guide-chromium/whats-new.md "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) DevTools Protocol | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
 [GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"  
-
-## See also
- - [DevTools for Beginners: Get Started with HTML and the DOM](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/beginners/html)
- - [Microsoft Edge (Chromium) DevTools Protocol](https://docs.microsoft.com/en-us/microsoft-edge/devtools-protocol-chromium)
