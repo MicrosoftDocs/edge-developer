@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/10/2020
+ms.date: 05/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,8 +27,8 @@ This class is a bundle of the most common parameters used to create a CoreWebVie
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [BrowserExecutableFolder](#browserexecutablefolder) | Gets or sets the value to pass as the browserExecutableFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
-[UserDataFolder](#userdatafolder) | Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
 [Language](#language) | Gets or sets the value to use for the Language property of the CoreWebView2EnvironmentOptions parameter passed to CoreWebView2Environment.CreateAsync when creating an environment with this instance.
+[UserDataFolder](#userdatafolder) | Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
 [CoreWebView2CreationProperties](#corewebview2creationproperties) | Creates a new instance of [CoreWebView2CreationProperties](#microsoft.web.webview2.wpf.corewebview2creationproperties) with default data for all properties.
 
 Its main purpose is to be set to [WebView2.CreationProperties](microsoft-web-webview2-wpf-webview2.md) in order to customize the environment used by a [WebView2](microsoft-web-webview2-wpf-webview2.md) during implicit initialization. It is also a nice WPF integration utility which allows commonly used environment parameters to be dependency properties and be created and used in markup.
@@ -45,17 +45,17 @@ Gets or sets the value to pass as the browserExecutableFolder parameter of CoreW
 
 > public string [BrowserExecutableFolder](#browserexecutablefolder)
 
-#### UserDataFolder 
-
-Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
-
-> public string [UserDataFolder](#userdatafolder)
-
 #### Language 
 
 Gets or sets the value to use for the Language property of the CoreWebView2EnvironmentOptions parameter passed to CoreWebView2Environment.CreateAsync when creating an environment with this instance.
 
 > public string [Language](#language)
+
+#### UserDataFolder 
+
+Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
+
+> public string [UserDataFolder](#userdatafolder)
 
 #### CoreWebView2CreationProperties 
 
