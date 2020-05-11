@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 05/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,7 +32,7 @@ Control to embed WebView2 in WinForms.
 [CanGoForward](#cangoforward) | Returns true if the webview can navigate to a next page in the navigation history via the GoForward method.
 [CanGoBack](#cangoback) | Returns true if the webview can navigate to a previous page in the navigation history via the GoBack method.
 [WebView2](#webview2) | Create a new WebView2 WinForms control.
-[InitializeAsync](#initializeasync) | Initialize the underlying CoreWebView2.
+[EnsureCoreWebView2Async](#ensurecorewebview2async) | Explicitly trigger initialization of the control's [CoreWebView2](#corewebview2).
 [ExecuteScriptAsync](#executescriptasync) | Executes the provided script in the top level document of the WebView2.
 [Reload](#reload) | Reload the top level document of the WebView2.
 [GoForward](#goforward) | Navigate to the next page in navigation history.
@@ -91,15 +91,24 @@ Create a new WebView2 WinForms control.
 
 > public [WebView2](#webview2)()
 
-After construction the CoreWebView2 property is null. Call InitializeAsync to initialize the underlying CoreWebView2.
+After construction the CoreWebView2 property is null. Call [EnsureCoreWebView2Async](#ensurecorewebview2async) to initialize the underlying CoreWebView2.
 
-#### InitializeAsync 
+#### EnsureCoreWebView2Async 
 
-Initialize the underlying CoreWebView2.
+Explicitly trigger initialization of the control's [CoreWebView2](#corewebview2).
 
-> public async Task [InitializeAsync](#initializeasync)(CoreWebView2Environment environment)
+> public Task [EnsureCoreWebView2Async](#ensurecorewebview2async)(CoreWebView2Environment environment)
 
-If provided a CoreWebView2Environment, then WebView2 will create the underlying CoreWebView2 from that environment. Otherwise it's created from a default CoreWebView2Environment.
+##### Parameters
+* `environment` A pre-created CoreWebView2Environment that should be used to create the CoreWebView2. Creating your own environment gives you control over several options that affect how the CoreWebView2 is initialized. If you pass null (the default value) then a default environment will be created and used automatically. 
+
+##### Returns
+A Task that represents the background initialization process. When the task completes then the CoreWebView2 property will be available for use (i.e. non-null). Note that the control's [CoreWebView2Ready](#corewebview2ready) event will be invoked before the task completes. 
+
+Calling this method additional times will have no effect (any specified environment is ignored) and return the same Task as the first call. Calling this method after initialization has been implicitly triggered by setting the [Source](#source) property will have no effect (any specified environment is ignored) and simply return a Task representing that initialization already in progress. 
+
+##### Exceptions
+* `System.InvalidOperationException` Thrown when invoked from non-UI thread.
 
 #### ExecuteScriptAsync 
 

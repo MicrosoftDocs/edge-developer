@@ -371,4 +371,5 @@
 ### [WinForms](webview2/reference/winforms/0-9-494-reference-webview2.md)
 #### [WebView2 Class](webview2/reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md)
 ### [WPF](webview2/reference/wpf/0-9-494-reference-webview2.md)
-#### [WebView2 Class](webview2/reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md)
+#### [CoreWebView2CreationProperties](webview2/reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md)
+#### [WebView2](webview2/reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md)

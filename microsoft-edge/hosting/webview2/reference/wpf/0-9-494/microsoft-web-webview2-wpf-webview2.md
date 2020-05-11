@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,11 +26,15 @@ A control to embed web content in a WPF application.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[CoreWebView2](#corewebview2) | Access the complete functionality of the underlying CoreWebView2 COM API.
-[Source](#source) | The Uri which the WebView2 is currently displaying.
+[CreationProperties](#creationproperties) | Gets or sets a bag of options which are used during initialization of the control's CoreWebView2.
+[Environment](#environment) | 
+[CoreWebView2Controller](#corewebview2controller) | 
+[CoreWebView2](#corewebview2) | Access the complete functionality of the underlying Core.CoreWebView2 COM API.
+[Source](#source) | The Uri which the control is currently displaying (or will display once initialization of its CoreWebView2 is finished).
 [CanGoBack](#cangoback) | Wrapper around CoreWebView2.CanGoBack.
 [CanGoForward](#cangoforward) | Wrapper around CoreWebView2.CanGoForward.
 [WebView2](#webview2) | Creates a new instance of a WebView2 control.
+[EnsureCoreWebView2Async](#ensurecorewebview2async) | Explicitly trigger initialization of the control's CoreWebView2.
 [GoBack](#goback) | Equivalent to calling CoreWebView2.GoBack.
 [GoForward](#goforward) | Equivalent to calling CoreWebView2.GoForward.
 [Reload](#reload) | Equivalent to calling CoreWebView2.Reload.
@@ -45,10 +49,18 @@ A control to embed web content in a WPF application.
 [HasFocusWithinCore](#hasfocuswithincore) | This is overridden from HwndHost and is called when WPF needs to know if the focus is in our control/window.
 [OnKeyDown](#onkeydown) | This is overridden from UIElement and called to allow us to handle key press input.
 [OnKeyUp](#onkeyup) | See OnKeyDown.
-[OnPreviewKeyDown](#onpreviewkeydown) | This is the "Preview" (i.e. tunneling) version of OnKeyDown, so it actually happens first.
+[OnPreviewKeyDown](#onpreviewkeydown) | This is the "Preview" (i.e.
 [OnPreviewKeyUp](#onpreviewkeyup) | See OnPreviewKeyDown.
 
 This control is effectively a wrapper around the WebView2 COM API, which you can find documentation for here: [https://docs.microsoft.com/microsoft-edge/hosting/webview2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
+
+Upon creation, the control's CoreWebView2 property will be null. This is because creating the CoreWebView2 is an expensive operation which involves things like launching Edge browser processes. There are two ways to cause the CoreWebView2 to be created: 1) Call the EnsureCoreWebView2Async method. This is referred to as explicit initialization. 2) Set the Source property (which could be done from markup, for example). This is referred to as implicit initialization. Either option will start initialization in the background and return back to the caller without waiting for it to finish. To specify options regarding the initialization process, either pass your own CoreWebView2Environment to EnsureCoreWebView2Async or set the control's CreationProperties property prior to initialization.
+
+When initialization has finished (regardless of how it was triggered) then the following things will occur, in this order: 1) The control's CoreWebView2Ready event will be invoked. If you need to perform one time setup operations on the CoreWebView2 prior to its use then you should do so in a handler for that event. 2) If a Uri has been set to the Source property then the control will start navigating to it in the background (i.e. these steps will continue without waiting for the navigation to finish). 3) The Task returned from EnsureCoreWebView2Async will complete.
+
+For more details about any of the methods/properties/events involved in the initialization process, see its specific documentation.
+
+Because the control's CoreWebView2 is a very heavyweight object (potentially responsible for multiple running processes and megabytes of disk space) the control implements IDisposable to provide an explicit means to free it. Calling Dispose will release the CoreWebView2 and its underlying resources (except any that are also being used by other WebViews), and reset CoreWebView2 to null. After Dispose has been called the CoreWebView2 cannot be re-initialized, and any attempt to use functionality which requires it will throw an ObjectDisposedException.
 
 Note that this control extends HwndHost in order to embed windows which live outside of the WPF ecosystem. This has some implications regarding the control's input and output behavior as well as the functionality it "inherits" from UIElement and FrameworkElement. See the HwndHost and WPF/Win32 interop documentation for more info:
 
@@ -58,21 +70,39 @@ Note that this control extends HwndHost in order to embed windows which live out
 
 ## Members
 
+### Properties
+
+#### CreationProperties 
+
+Gets or sets a bag of options which are used during initialization of the control's CoreWebView2.
+
+> public CoreWebView2CreationProperties [CreationProperties](#creationproperties)
+
+Setting this property after the control's CoreWebView2 is initialized won't work (the old value will be retained). See the WebView2 class documentation for an initialization overview.
+
+#### Environment 
+
+> private CoreWebView2Environment [Environment](#environment)
+
+#### CoreWebView2Controller 
+
+> private CoreWebView2Controller [CoreWebView2Controller](#corewebview2controller)
+
 #### CoreWebView2 
 
-Access the complete functionality of the underlying CoreWebView2 COM API.
+Access the complete functionality of the underlying Core.CoreWebView2 COM API.
 
-> public CoreWebView2 [CoreWebView2](#corewebview2)
+> public CoreWebView2? [CoreWebView2](#corewebview2)
 
-Returns null for a period of time after the control's construction because it is initialized independently and asynchronously. Once this property is non-null, it will never be null again until the control is Disposed.
+Returns null until initialization has completed. See the WebView2 class documentation for an initialization overview. After initialization is finished this property will only ever become null again when the control is Disposed.
 
 #### Source 
 
-The Uri which the WebView2 is currently displaying.
+The Uri which the control is currently displaying (or will display once initialization of its CoreWebView2 is finished).
 
 > public Uri [Source](#source)
 
-Getting this property is equivalent to getting CoreWebView2.Source. Setting this property is equivalent to calling CoreWebView2.Navigate. If this property is retrieved when the CoreWebView2 isn't initialized, then it returns null. If this property is set prior to the CoreWebView2 being initialized (e.g. from XAML markup), then the property value is still updated and the control will navigate to it when initialization has finished.
+Generally speaking, getting this property is equivalent to getting CoreWebView2.Source and setting this property is equivalent to calling CoreWebView2.Navigate. Setting this property before the CoreWebView2 has been initialized will cause initialization to start in the background (after which the WebView2 will navigate to the specified Uri). Getting this property before the CoreWebView2 has been initialized will retrieve the last Uri which was set to it. See the WebView2 class documentation for an initialization overview.
 
 #### CanGoBack 
 
@@ -94,9 +124,25 @@ If CoreWebView2 isn't initialized then always returns false.
 
 Creates a new instance of a WebView2 control.
 
-> public [WebView2](#webview2)()
+> public  [WebView2](#webview2)()
 
-Note that the control's CoreWebView2 won't necessarily exist right away after construction.
+Note that the control's CoreWebView2 will be null until initialized. See the WebView2 class documentation for an initialization overview.
+
+#### EnsureCoreWebView2Async 
+
+Explicitly trigger initialization of the control's CoreWebView2.
+
+> public Task [EnsureCoreWebView2Async](#ensurecorewebview2async)(CoreWebView2Environment environment)
+
+See the WebView2 class documentation for an initialization overview.
+
+##### Parameters
+* `environment` A pre-created CoreWebView2Environment that should be used to create the CoreWebView2. Creating your own environment gives you control over several options that affect how the CoreWebView2 is initialized. If you pass an environment to this method then it will override any settings specified on the CreationProperties property. If you pass null (the default value) and no value has been set to CreationProperties then a default environment will be created and used automatically. 
+
+##### Returns
+A Task that represents the background initialization process. When the task completes then the CoreWebView2 property will be available for use (i.e. non-null). Note that the control's CoreWebView2Ready event will be invoked before the task completes. 
+
+Calling this method additional times will have no effect (any specified environment is ignored) and return the same Task as the first call. Calling this method after initialization has been implicitly triggered by setting the Source property will have no effect (any specified environment is ignored) and simply return a Task representing that initialization already in progress. Note that even though this method is asynchronous and returns a Task, it still must be called on the UI thread like most public functionality of most UI controls.
 
 #### GoBack 
 
@@ -104,7 +150,7 @@ Equivalent to calling CoreWebView2.GoBack.
 
 > public void [GoBack](#goback)()
 
-If CoreWebView2 isn't initialized then does nothing.
+If CoreWebView2 hasn't been initialized yet then does nothing.
 
 #### GoForward 
 
@@ -112,7 +158,7 @@ Equivalent to calling CoreWebView2.GoForward.
 
 > public void [GoForward](#goforward)()
 
-If CoreWebView2 isn't initialized then does nothing.
+If CoreWebView2 hasn't been initialized yet then does nothing.
 
 #### Reload 
 
@@ -120,7 +166,7 @@ Equivalent to calling CoreWebView2.Reload.
 
 > public void [Reload](#reload)()
 
-If CoreWebView2 isn't initialized then throws InvalidOperationException.
+If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
 
 #### Stop 
 
@@ -128,7 +174,7 @@ Equivalent to calling CoreWebView2.Stop.
 
 > public void [Stop](#stop)()
 
-If CoreWebView2 isn't initialized then throws InvalidOperationException.
+If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
 
 #### NavigateToString 
 
@@ -136,7 +182,7 @@ Equivalent to calling CoreWebView2.NavigateToString.
 
 > public void [NavigateToString](#navigatetostring)(string htmlContent)
 
-If CoreWebView2 isn't initialized then throws InvalidOperationException.
+If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
 
 #### ExecuteScriptAsync 
 
@@ -144,7 +190,7 @@ Equivalent to calling CoreWebView2.ExecuteScriptAsync.
 
 > public async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
 
-If CoreWebView2 isn't initialized then throws InvalidOperationException.
+If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
 
 #### BuildWindowCore 
 
@@ -173,7 +219,7 @@ This is called by our base class according to the typical implementation of the 
 
 > protected override void [Dispose](#dispose)(bool disposing)
 
-We implement it by releasing all of our underlying COM resources.
+We implement it by releasing all of our underlying COM resources, including our CoreWebView2.
 
 ##### Parameters
 * `disposing` True if a caller is explicitly calling Dispose, false if we're being finalized.
@@ -227,11 +273,11 @@ See OnKeyDown.
 
 #### OnPreviewKeyDown 
 
-This is the "Preview" (i.e. tunneling) version of OnKeyDown, so it actually happens first.
+This is the "Preview" (i.e.
 
 > protected override void [OnPreviewKeyDown](#onpreviewkeydown)(KeyEventArgs e)
 
-Like OnKeyDown, this will only ever be called if we're explicitly forwarding key presses from the CoreWebView2. In order to mimic WPF's standard input handling, when we receive this we turn around and fire off the standard bubbling KeyDownEvent. That way others in the WPF tree see the same standard pair of input events that WPF itself would have triggered if it were handling the key press.
+tunneling) version of OnKeyDown, so it actually happens first. Like OnKeyDown, this will only ever be called if we're explicitly forwarding key presses from the CoreWebView2. In order to mimic WPF's standard input handling, when we receive this we turn around and fire off the standard bubbling KeyDownEvent. That way others in the WPF tree see the same standard pair of input events that WPF itself would have triggered if it were handling the key press.
 
 #### OnPreviewKeyUp 
 
