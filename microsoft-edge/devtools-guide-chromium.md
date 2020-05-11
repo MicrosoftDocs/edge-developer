@@ -149,3 +149,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsChro
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
 [GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"  
+
+## See also
+ - [DevTools for Beginners: Get Started with HTML and the DOM](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/beginners/html)
+ - [Microsoft Edge (Chromium) DevTools Protocol](https://docs.microsoft.com/en-us/microsoft-edge/devtools-protocol-chromium)
