@@ -29,7 +29,7 @@ This class is a bundle of the most common parameters used to create a CoreWebVie
 [BrowserExecutableFolder](#browserexecutablefolder) | Gets or sets the value to pass as the browserExecutableFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
 [Language](#language) | Gets or sets the value to use for the Language property of the CoreWebView2EnvironmentOptions parameter passed to CoreWebView2Environment.CreateAsync when creating an environment with this instance.
 [UserDataFolder](#userdatafolder) | Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2Environment.CreateAsync when creating an environment with this instance.
-[CoreWebView2CreationProperties](#corewebview2creationproperties) | Creates a new instance of [CoreWebView2CreationProperties](#microsoft.web.webview2.wpf.corewebview2creationproperties) with default data for all properties.
+[CoreWebView2CreationProperties](#corewebview2creationproperties) | Creates a new instance of CoreWebView2CreationProperties with default data for all properties.
 
 Its main purpose is to be set to [WebView2.CreationProperties](microsoft-web-webview2-wpf-webview2.md) in order to customize the environment used by a [WebView2](microsoft-web-webview2-wpf-webview2.md) during implicit initialization. It is also a nice WPF integration utility which allows commonly used environment parameters to be dependency properties and be created and used in markup.
 
@@ -59,7 +59,7 @@ Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2En
 
 #### CoreWebView2CreationProperties 
 
-Creates a new instance of [CoreWebView2CreationProperties](#microsoft.web.webview2.wpf.corewebview2creationproperties) with default data for all properties.
+Creates a new instance of CoreWebView2CreationProperties with default data for all properties.
 
 > public  [CoreWebView2CreationProperties](#corewebview2creationproperties)()
 
