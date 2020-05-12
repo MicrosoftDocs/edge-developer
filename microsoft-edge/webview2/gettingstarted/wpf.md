@@ -250,28 +250,23 @@ async void InitializeAsync()
 }
 ```
 
-2. After **CoreWebView2** is initialized, register an event handler to respond to **Web Message Received**. In this example, the host does three things:
-    1. Receives a web message (the URI) from the web content using [TryGetWebMessageAsString](../reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs#trygetwebmessageasstring).
-    2. Updates the text in the search bar to the URI
-    3. Returns the message (the URI) back to the web content using [PostWebMessageAsString](../reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2#postwebmessageasstring)
 
-In **MainWindow.xaml.cs** update `InitializeAsync` and define `UpdateSearchBar` as follows:
+2. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`. In **MainWindow.xaml.cs** update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet. 
 
 ```csharp
 async void InitializeAsync()
 {
     await webView.EnsureCoreWebView2Async(null);
-    webView.CoreWebView2.WebMessageReceived += UpdateSearchBar;
+    webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
 }
 
-void UpdateSearchBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
+void UpdateAddressBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
 {
     String Uri = args.TryGetWebMessageAsString();
-    searchBar.Text = Uri;
+    addressBar.Text = Uri;
     webView.CoreWebView2.PostWebMessageAsString(Uri);
 }
 
-```
 
 3. In order for the WebView to send and respond to the web message, after **CoreWebView2** is initialized, the host:
 
