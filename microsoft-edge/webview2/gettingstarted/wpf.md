@@ -138,11 +138,6 @@ using Microsoft.Web.WebView2.Core;
 
 3. In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which will navigate the WebView to the URL entered in the address bar.
 
-    1. Ensure that the WebView can navigate. This is true once the WebView and underlying CoreWebView2 objects are not null. The initializations are **asynchronous** and **independent** of each other.
-
-    2. The WebView then calls the **Navigate** function which is a method on its underlying object **CoreWebView2**.
-
-Copy and paste the following code snippet:
 
 ```csharp
 private void ButtonGo_Click(object sender, RoutedEventArgs e)
@@ -152,7 +147,6 @@ private void ButtonGo_Click(object sender, RoutedEventArgs e)
         webView.CoreWebView2.Navigate(searchBar.Text);
     }
 }
-```
 
 Press F5 to build and run the app. Now, you can enter a new URI in the searchbar and when you click the 'Go' button, the WebView will navigate to the URI you enter. Try navigating to https://www.bing.com
 
