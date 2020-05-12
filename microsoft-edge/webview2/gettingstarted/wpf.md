@@ -225,7 +225,12 @@ Choose F5 to build and run your project. Confirm that the application displays a
 
 ## Step 7 - Communication between host and web content
 
-The host and the web content can also communicate with each other through `postMessage`. The web content running within a WebView can post to the host through `window.chrome.webview.postMessage`, and the message would be handled by any registered `ICoreWebView2WebMessageReceivedEventHandler` on the host. Likewise, the host can message the web content through `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`, which would be caught by handlers added from `window.chrome.webview.addEventListener`. The communication mechanism allows the web content to utilize native capabilities by passing messages to ask the host to call native APIs.
+Hosts and web content may communicate with each other using `postMessage` as follows:
+
+- Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`. The host handles the message using any registered `ICoreWebView2WebMessageReceivedEventHandler` on the host. - Hosts can posts messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`. These messages are caught by handlers added to `window.chrome.webview.addEventListener`. 
+
+This communication mechanism allows web content to pass messages to the host using native capabilities.
+
 
 As an example to understand the mechanism, when the WebView2 navigates to a URI, lets display that URI in the search bar and alert the user of the URI displayed in the WebView
 
