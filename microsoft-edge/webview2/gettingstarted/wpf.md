@@ -115,7 +115,7 @@ Let's add the ability to display web pages based on the URL entered by users in 
 </DockPanel>
 ```
 
-It should look like this:
+Confirm that the `DockPanel` section of **MainWindow.xaml** looks like the following code snippet.
 
 ```xml
     <DockPanel>
