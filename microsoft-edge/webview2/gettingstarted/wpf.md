@@ -158,7 +158,14 @@ During navigation, WebView fires a sequence of events that the host can listen t
 
 ![navigationEvents](../media/navigation-events.png)
 
-In error cases there may or may not be `SourceChanged`, `ContentLoading`, or `HistoryChanged` event(s) depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple `NavigationStarting` events in a row.
+When an error occurs, the following events are raised and may depend on navigation to an error page. 
+
+- `SourceChanged`
+- `ContentLoading`
+- `HistoryChanged` 
+
+When there is an HTTP redirect, there are multiple `NavigationStarting` events.
+
 
 As an example of utilizing those events, let's register a handler for `NavigationStarting` to cancel any non-https requests.
 
