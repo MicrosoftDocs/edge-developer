@@ -98,7 +98,7 @@ Confirm that the code in **MainWindow.xaml** looks like the following code snipp
 </DockPanel>
 ```
 
-Press F5 to build and run the app. Now you have a WebView window displaying <https://www.microsoft.com>.
+4. Choose F5 to build and run your project. Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
 ![microsoft](media/wpf-gettingstarted-microsoft.png)
 
