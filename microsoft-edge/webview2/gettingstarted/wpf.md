@@ -61,7 +61,7 @@ You are all set to start developing applications using the WebView2 API. Choose 
 
 Now let's add a WebView to your application.
 
-1. Open the **MainWindow.xaml** file. Add the **WebView2** XML namespace by inserting the following line inside the `<Window/>` tag:
+1. Open **MainWindow.xaml**. Add the WebView2 XML namespace by inserting the following line inside the `<Window/>` tag.
 
 ```h
 xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
