@@ -234,7 +234,7 @@ Press `F5` to build and run your project.  Confirm the application only navigate
 
 You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
 
-The Microsoft Edge WebViews team uses Scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHTTPS` function, it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2#executescriptasync) method.  
+The Microsoft Edge WebViews team uses Scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHTTPS` function, it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md#executescriptasync) method.  
 
 ```csharp
 void EnsureHTTPS(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -265,7 +265,7 @@ This communication mechanism allows web content to pass messages to the host usi
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the search bar and alerts the user of the URL displayed in the WebView2 control.  
 
-1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
+1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
     
     ```csharp
     public MainWindow()
