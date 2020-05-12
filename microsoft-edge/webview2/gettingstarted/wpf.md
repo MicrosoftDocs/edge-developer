@@ -49,7 +49,7 @@ Now let's add the WebView2 SDK to the project. For the preview, you can install 
 
     ![nuget](media/wpf-gettingstarted-mngnuget.png)
 
-2. Enter **Microsoft.Web.WebView2** in the search bar, click **Microsoft.Web.WebView2** from the results, set the package version to **pre-release**, and click **Install** in the right hand side window to install the latest SDK. Nuget will download the SDK to your machine.
+2. Enter **Microsoft.Web.WebView2** in the search bar. Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.
 
     ![manageNugetPackages](../media/manage-nuget-packages.png)
 
