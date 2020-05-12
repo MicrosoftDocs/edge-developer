@@ -87,7 +87,7 @@ Confirm that the code in **MainWindow.xaml** looks like the following code snipp
 </Window>
 ```
 
-3. Add the WebView2 control by replacing the `<Grid></Grid>` tags, with the following code snippet. The **Source** property sets the initial URI the WebView navigates to.
+3. Add the WebView2 control by replacing the `<Grid></Grid>` tags, with the following code snippet. The **Source** property sets the initial URI displayed in the WebView2 control.
 
 ```xml  
 <DockPanel>
