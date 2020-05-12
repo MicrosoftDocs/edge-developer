@@ -219,7 +219,7 @@ void EnsureHTTPS(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```
 
-Press F5 to build and run the app. Now if you try to navigate to a non-https site, the application alerts you that doing so is not possible.
+Choose F5 to build and run your project. Confirm that the application displays an alert when you navigate to a site that does not use HTTPS.
 
 ![https](media/wpf-gettingstarted-https.png)
 
