@@ -121,7 +121,7 @@ Confirm that the `DockPanel` section of **MainWindow.xaml** looks like the follo
     <DockPanel>
         <DockPanel DockPanel.Dock="Top">
             <Button x:Name="ButtonGo" DockPanel.Dock="Right" Click="ButtonGo_Click" Content="Go"/>
-            <TextBox Name="searchBar"/>
+            <TextBox Name="addressBar"/>
         </DockPanel>
         <wv2:WebView2
             Name = "webView"
