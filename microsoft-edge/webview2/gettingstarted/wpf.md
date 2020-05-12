@@ -130,7 +130,7 @@ Confirm that the `DockPanel` section of **MainWindow.xaml** looks like the follo
     </DockPanel>
 ```
 
-2. Open **MainWindow.xaml.cs** in Visual Studio. Add the **CoreWebView2** namespace by copying and pasting the following statement at the top of **MainWindow.xaml.cs**.
+2. Open **MainWindow.xaml.cs** in Visual Studio. Add the `CoreWebView2` namespace by inserting the following code snippet at the top of **MainWindow.xaml.cs**.
 
 ```csharp
 using Microsoft.Web.WebView2.Core;
