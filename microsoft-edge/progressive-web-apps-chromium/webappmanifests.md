@@ -1,6 +1,6 @@
 ---
 title: Use the Web App Manifest to integrate your Progressive Web App into the Operating System
-description: The Web App Manifest governs how your app looks and behaves within the context of the Operating System.
+description: Learn how to use the Web App Manifest to integrate your Progressive Web App into your Operating System.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2020
