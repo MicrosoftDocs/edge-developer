@@ -106,7 +106,7 @@ Confirm that the code in **MainWindow.xaml** looks like the following code snipp
 
 Let's add the ability to display web pages based on the URL entered by users in the address bar of the WebView2 control.
 
-1. In **MainWindow.xaml**, add a Search Bar by copying and pasting the following code snippet inside the DockPanel that holds the WebView.
+1. In **MainWindow.xaml**, add an address bar by copying and pasting the following code snippet inside the DockPanel that contains the WebView.
 
 ```xml
 <DockPanel DockPanel.Dock="Top">
