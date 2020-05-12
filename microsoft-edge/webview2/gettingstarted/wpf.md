@@ -69,6 +69,8 @@ Next add the WebView2 SDK to the project.  For the preview, install the Win32 SD
     
 1.  Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
     
+    <!--todo: The image in this step is identical to th previous step. Is this on purpose -->  
+
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage Nuget Packages":::
        Manage Nuget Packages
     :::image-end:::
