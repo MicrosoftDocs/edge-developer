@@ -136,7 +136,7 @@ Confirm that the `DockPanel` section of **MainWindow.xaml** looks like the follo
 using Microsoft.Web.WebView2.Core;
 ```
 
-3. In **MainWindow.xaml.cs**, define the `ButtonGo_Click` method to navigate the WebView to the URI in the search bar.
+3. In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which will navigate the WebView to the URL entered in the address bar.
 
     1. Ensure that the WebView can navigate. This is true once the WebView and underlying CoreWebView2 objects are not null. The initializations are **asynchronous** and **independent** of each other.
 
