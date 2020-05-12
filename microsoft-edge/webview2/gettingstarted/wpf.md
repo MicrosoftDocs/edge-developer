@@ -234,7 +234,7 @@ This communication mechanism allows web content to pass messages to the host usi
 
 As an example to understand the mechanism, when the WebView2 navigates to a URI, lets display that URI in the search bar and alert the user of the URI displayed in the WebView
 
-1. Web Messaging is a **CoreWebView2** functionality. Because the initialization of **CoreWebView2** is asynchronous, create an `InitializeAsync` function that awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2#ensurecorewebview2async). In **MainWindow.xaml.cs** update your constructor and define an `InitializeAsync` function:
+1. In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet. The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.
 
 ```csharp
 public MainWindow()
