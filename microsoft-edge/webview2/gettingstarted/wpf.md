@@ -4,7 +4,7 @@ title: Microsoft Edge WebView 2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020
-ms.topic: reference
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
