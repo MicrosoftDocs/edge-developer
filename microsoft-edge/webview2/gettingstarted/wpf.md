@@ -59,7 +59,7 @@ You are all set to start developing applications using the WebView2 API. Choose 
 
 ## Step 3 - Create a single WebView in MainWindow.xaml
 
-Now let's add a WebView to the main window.
+Now let's add a WebView to your application.
 
 1. Open the **MainWindow.xaml** file. Add the **WebView2** XML namespace by inserting the following line inside the `<Window/>` tag:
 
