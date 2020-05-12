@@ -2,7 +2,7 @@
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -169,7 +169,7 @@ The Coverage tab shows you what CSS a page actually uses.
     > The Coverage tab  
     > ![The Coverage tab][ImageCoverageEmpty]  
     
-1.  Click **Start instrumenting coverage and refresh the page** ![Start instrumenting coverage and refresh the page][ImageReloadIcon].  The page refreshes and the Coverage tab provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.  
+1.  Click **Start instrumenting coverage and refresh the page** ![Start instrumenting coverage and refresh the page][ImageRefreshIcon].  The page refreshes and the Coverage tab provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.  
     
     > ##### Figure 10  
     > An overview of how much CSS (and JavaScript) is used and unused  
@@ -454,53 +454,53 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
 
 <!-- image links -->  
 
-[ImageAddBackgroundColorIcon]: images/add-background-color-icon.msft.png  
-[ImageAddBoxShadowIcon]: images/add-box-shadow-icon.msft.png  
-[ImageAddColorIcon]: images/add-color-icon.msft.png  
-[ImageAddTextShadowIcon]: images/add-text-shadow-icon.msft.png  
-[ImageEyedropperIcon]: images/eyedropper-icon.msft.png  
-[ImageNewStyleRuleIcon]: images/new-style-rule-icon.msft.png  
-[ImageReloadIcon]: images/reload-icon.msft.png  
-[ImageSelectAnElementIcon]: images/select-an-element-icon.msft.png  
+[ImageAddBackgroundColorIcon]: /microsoft-edge/devtools-guide-chromium/media/add-background-color-icon.msft.png  
+[ImageAddBoxShadowIcon]: /microsoft-edge/devtools-guide-chromium/media/add-box-shadow-icon.msft.png  
+[ImageAddColorIcon]: /microsoft-edge/devtools-guide-chromium/media/add-color-icon.msft.png  
+[ImageAddTextShadowIcon]: /microsoft-edge/devtools-guide-chromium/media/add-text-shadow-icon.msft.png  
+[ImageEyedropperIcon]: /microsoft-edge/devtools-guide-chromium/media/eyedropper-icon.msft.png  
+[ImageNewStyleRuleIcon]: /microsoft-edge/devtools-guide-chromium/media/new-style-rule-icon.msft.png  
+[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
+[ImageSelectAnElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-an-element-icon.msft.png  
 
-[ImageSelectedElement]: images/elements-styles-h1.msft.png "Figure 1: An example of a selected element"  
-[ImageViewRuleStylesheet]: images/elements-styles-h1-highlight.msft.png "Figure 2: Viewing the stylesheet where a rule is defined"  
-[ImageComputedTab]: images/elements-computed-h1.msft.png "Figure 3: The Computed tab"  
-[ImageBoxModel]: images/elements-styles-h1-2.msft.png "Figure 4: The Box Model diagram"  
-[ImageStylesFilter]: images/elements-styles-filter-color.msft.png "Figure 5: Filtering the Styles tab"  
-[ImageComputerFilter]: images/elements-computed-filter-100.msft.png "Figure 6: Filtering the Computed tab"  
-[ImagePseudoClass]: images/elements-styles-hov-hover.msft.png "Figure 7: Toggling the :hover pseudo-class"  
-[ImageCommandMenu]: images/console-command-menu-coverage.msft.png "Figure 8: Opening the Coverage tab from the Command Menu"  
-[ImageCoverageEmpty]: images/console-qs-coverage-empty.msft.png "Figure 9: The Coverage tab"  
-[ImageCoverageOverview]: images/console-qs-coverage-run.msft.png "Figure 10: An overview of how much CSS (and JavaScript) is used and unused"  
-[ImageCoverageDetail]: images/sources-css-coverage.msft.png "Figure 11: A line-by-line breakdown of used and unused CSS"  
-[ImageInlineDeclarations]: images/elements-styles-margin-top-background-color.msft.png "Figure 12: Adding inline declarations"  
-[ImageAddDeclarationExistingRule]: images/elements-styles-border-bottom-style.msft.png "Figure 13: Adding a declaration to a style rule"  
-[ImageAddDeclarationExistingRule2]: images/elements-styles-border-bottom-style-dropdown.msft.png "Figure 14: Changing the value of a declaration"  
-[ImageElementClasses]: images/elements-styles-filter-classes.msft.png "Figure 15: The Element Classes pane"  
-[ImageStyleRule]: images/elements-styles-style-new.msft.png "Figure 16: Adding a new style rule"  
-[ImageChooseStylesheet]: images/elements-styles-style-new-select-exisiting.msft.png "Figure 17: Choosing a stylesheet"  
-[ImageInsertStyleRuleBelow]: images/elements-styles-insert-style-rule-below.msft.png "Figure 18: Insert Style Rule Below"  
-[ImageRevealMore]: images/elements-styles-new-rule-styles.msft.png "Figure 19: Revealing More Actions"  
-[ImageInsertStyleRuleBelow2]: images/elements-styles-rule-more-options-insert-style-rule-below.msft.png "Figure 20: The More Actions toolbar"  
-[ImageToggleDeclaration]: images/elements-styles-rule-deactivated.msft.png "Figure 21: Toggling a declaration"  
-[ImageAddBackgroundColor]: images/elements-styles-rule-add-background-color.msft.png "Figure 22: Add Background Color"  
-[ImageAddColor]: images/elements-styles-rule-add-color.msft.png "Figure 23: Add Color"  
-[ImageAddBoxShadow]: images/elements-styles-rule-add-box-shadow.msft.png "Figure 24: Add Box Shadow"  
-[ImageAddTextShadow]: images/elements-styles-rule-add-text-shadow.msft.png "Figure 25: Add Text Shadow"  
-[ImageColorPreview]: images/elements-styles-rule-overlay-color-box.msft.png "Figure 26: Color preview"  
-[ImageColorPicker]: images/elements-styles-rule-color-picker.msft.png "Figure 27: The Color Picker"  
-[ImageColorPickerAnnotated]: images/elements-styles-rule-color-picker-annotated.msft.png "Figure 28: The Color Picker, annotated"  
-[ImageUsingEyedropper]: images/color-picker-eye-dropper.msft.png "Figure 29: Using the Eyedropper"  
+[ImageSelectedElement]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-h1.msft.png "Figure 1: An example of a selected element"  
+[ImageViewRuleStylesheet]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-h1-highlight.msft.png "Figure 2: Viewing the stylesheet where a rule is defined"  
+[ImageComputedTab]: /microsoft-edge/devtools-guide-chromium/media/css-elements-computed-h1.msft.png "Figure 3: The Computed tab"  
+[ImageBoxModel]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-h1-2.msft.png "Figure 4: The Box Model diagram"  
+[ImageStylesFilter]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-filter-color.msft.png "Figure 5: Filtering the Styles tab"  
+[ImageComputerFilter]: /microsoft-edge/devtools-guide-chromium/media/css-elements-computed-filter-100.msft.png "Figure 6: Filtering the Computed tab"  
+[ImagePseudoClass]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-hov-hover.msft.png "Figure 7: Toggling the :hover pseudo-class"  
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-coverage.msft.png "Figure 8: Opening the Coverage tab from the Command Menu"  
+[ImageCoverageEmpty]: /microsoft-edge/devtools-guide-chromium/media/css-console-qs-coverage-empty.msft.png "Figure 9: The Coverage tab"  
+[ImageCoverageOverview]: /microsoft-edge/devtools-guide-chromium/media/css-console-qs-coverage-run.msft.png "Figure 10: An overview of how much CSS (and JavaScript) is used and unused"  
+[ImageCoverageDetail]: /microsoft-edge/devtools-guide-chromium/media/css-sources-css-coverage.msft.png "Figure 11: A line-by-line breakdown of used and unused CSS"  
+[ImageInlineDeclarations]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-margin-top-background-color.msft.png "Figure 12: Adding inline declarations"  
+[ImageAddDeclarationExistingRule]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-border-bottom-style.msft.png "Figure 13: Adding a declaration to a style rule"  
+[ImageAddDeclarationExistingRule2]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-border-bottom-style-dropdown.msft.png "Figure 14: Changing the value of a declaration"  
+[ImageElementClasses]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-filter-classes.msft.png "Figure 15: The Element Classes pane"  
+[ImageStyleRule]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-style-new.msft.png "Figure 16: Adding a new style rule"  
+[ImageChooseStylesheet]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-style-new-select-exisiting.msft.png "Figure 17: Choosing a stylesheet"  
+[ImageInsertStyleRuleBelow]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-insert-style-rule-below.msft.png "Figure 18: Insert Style Rule Below"  
+[ImageRevealMore]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-new-rule-styles.msft.png "Figure 19: Revealing More Actions"  
+[ImageInsertStyleRuleBelow2]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-more-options-insert-style-rule-below.msft.png "Figure 20: The More Actions toolbar"  
+[ImageToggleDeclaration]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-deactivated.msft.png "Figure 21: Toggling a declaration"  
+[ImageAddBackgroundColor]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-background-color.msft.png "Figure 22: Add Background Color"  
+[ImageAddColor]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-color.msft.png "Figure 23: Add Color"  
+[ImageAddBoxShadow]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-box-shadow.msft.png "Figure 24: Add Box Shadow"  
+[ImageAddTextShadow]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-add-text-shadow.msft.png "Figure 25: Add Text Shadow"  
+[ImageColorPreview]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-overlay-color-box.msft.png "Figure 26: Color preview"  
+[ImageColorPicker]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-color-picker.msft.png "Figure 27: The Color Picker"  
+[ImageColorPickerAnnotated]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-rule-color-picker-annotated.msft.png "Figure 28: The Color Picker, annotated"  
+[ImageUsingEyedropper]: /microsoft-edge/devtools-guide-chromium/media/css-color-picker-eye-dropper.msft.png "Figure 29: Using the Eyedropper"  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevToolsCSSGetStarted]: index.md "Get Started With Viewing And Changing CSS"  
-[DevToolsCSSGetStartedAddPseudoState]: index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  
-[DevToolsCSSGetStartedTutorial]: index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  
-[DevToolsCssPrintPreview]: print-preview.md "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"    
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+[DevToolsCSSGetStartedAddPseudoState]: /microsoft-edge/devtools-guide-chromium/css/index#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS"  
+[DevToolsCSSGetStartedTutorial]: /microsoft-edge/devtools-guide-chromium/css/index#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS"  
+[DevToolsCssPrintPreview]: /microsoft-edge/devtools-guide-chromium/css/print-preview "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)"  
+[DevToolsJavascriptReferenceFormat]: /microsoft-edge/devtools-guide-chromium/javascript/reference#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "The color system - Material Design"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "The box model | MDN"  
