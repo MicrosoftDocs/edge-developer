@@ -26,24 +26,24 @@ A control to embed web content in a WPF application.
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
-[ContentLoading](#contentloading) | A wrapper around CoreWebView2.ContentLoading.
+[ContentLoading](#contentloading) | A wrapper around the CoreWebView2.ContentLoading event of CoreWebView2.
 [CoreWebView2Ready](#corewebview2ready) | This event is triggered when the control's CoreWebView2 has finished being initialized (regardless of how initialization was triggered) but before it is used for anything.
-[NavigationCompleted](#navigationcompleted) | A wrapper around CoreWebView2.NavigationCompleted.
-[NavigationStarting](#navigationstarting) | A wrapper around CoreWebView2.NavigationStarting.
-[SourceChanged](#sourcechanged) | A wrapper around CoreWebView2.SourceChanged.
-[WebMessageReceived](#webmessagereceived) | A wrapper around CoreWebView2.WebMessageReceived.
-[CanGoBack](#cangoback) | Wrapper around CoreWebView2.CanGoBack.
-[CanGoForward](#cangoforward) | Wrapper around CoreWebView2.CanGoForward.
+[NavigationCompleted](#navigationcompleted) | A wrapper around the CoreWebView2.NavigationCompleted event of CoreWebView2.
+[NavigationStarting](#navigationstarting) | A wrapper around the CoreWebView2.NavigationStarting event of CoreWebView2.
+[SourceChanged](#sourcechanged) | A wrapper around the CoreWebView2.SourceChanged event of CoreWebView2.
+[WebMessageReceived](#webmessagereceived) | A wrapper around the CoreWebView2.WebMessageReceived event of CoreWebView2.
+[CanGoBack](#cangoback) | Returns true if the WebView can navigate to a previous page in the navigation history.
+[CanGoForward](#cangoforward) | Returns true if the WebView can navigate to a next page in the navigation history.
 [CoreWebView2](#corewebview2) | Access the complete functionality of the underlying Core.CoreWebView2 COM API.
 [CreationProperties](#creationproperties) | Gets or sets a bag of options which are used during initialization of the control's CoreWebView2.
-[Source](#source) | The Uri which the control is currently displaying (or will display once initialization of its CoreWebView2 is finished).
+[Source](#source) | The top-level Uri which the WebView is currently displaying (or will display once initialization of its CoreWebView2 is finished).
 [EnsureCoreWebView2Async](#ensurecorewebview2async) | Explicitly trigger initialization of the control's CoreWebView2.
-[ExecuteScriptAsync](#executescriptasync) | Equivalent to calling CoreWebView2.ExecuteScriptAsync.
-[GoBack](#goback) | Equivalent to calling CoreWebView2.GoBack.
-[GoForward](#goforward) | Equivalent to calling CoreWebView2.GoForward.
-[NavigateToString](#navigatetostring) | Equivalent to calling CoreWebView2.NavigateToString.
-[Reload](#reload) | Equivalent to calling CoreWebView2.Reload.
-[Stop](#stop) | Equivalent to calling CoreWebView2.Stop.
+[ExecuteScriptAsync](#executescriptasync) | Executes JavaScript code from the javaScript parameter in the current top level document rendered in the WebView.
+[GoBack](#goback) | Navigates the WebView to the previous page in the navigation history.
+[GoForward](#goforward) | Navigates the WebView to the next page in the navigation history.
+[NavigateToString](#navigatetostring) | Initiates a navigation to htmlContent as source HTML of a new document.
+[Reload](#reload) | Reloads the current page.
+[Stop](#stop) | Stops all navigations and pending resource fetches.
 [WebView2](#webview2) | Creates a new instance of a WebView2 control.
 [BuildWindowCore](#buildwindowcore) | This is overridden from HwndHost and is called to instruct us to create our HWND.
 [DestroyWindowCore](#destroywindowcore) | This is overridden from HwndHost and is called to instruct us to destroy our HWND.
@@ -76,7 +76,7 @@ Note that this control extends HwndHost in order to embed windows which live out
 
 #### ContentLoading 
 
-A wrapper around CoreWebView2.ContentLoading.
+A wrapper around the CoreWebView2.ContentLoading event of CoreWebView2.
 
 > public event EventHandler< CoreWebView2ContentLoadingEventArgs > [ContentLoading](#contentloading)
 
@@ -94,7 +94,7 @@ This event doesn't provide any arguments, and the sender will be the WebView2 co
 
 #### NavigationCompleted 
 
-A wrapper around CoreWebView2.NavigationCompleted.
+A wrapper around the CoreWebView2.NavigationCompleted event of CoreWebView2.
 
 > public event EventHandler< CoreWebView2NavigationCompletedEventArgs > [NavigationCompleted](#navigationcompleted)
 
@@ -102,7 +102,7 @@ The only difference between this event and CoreWebView2.NavigationCompleted is t
 
 #### NavigationStarting 
 
-A wrapper around CoreWebView2.NavigationStarting.
+A wrapper around the CoreWebView2.NavigationStarting event of CoreWebView2.
 
 > public event EventHandler< CoreWebView2NavigationStartingEventArgs > [NavigationStarting](#navigationstarting)
 
@@ -110,7 +110,7 @@ The only difference between this event and CoreWebView2.NavigationStarting is th
 
 #### SourceChanged 
 
-A wrapper around CoreWebView2.SourceChanged.
+A wrapper around the CoreWebView2.SourceChanged event of CoreWebView2.
 
 > public event EventHandler< CoreWebView2SourceChangedEventArgs > [SourceChanged](#sourcechanged)
 
@@ -118,7 +118,7 @@ The only difference between this event and CoreWebView2.SourceChanged is the fir
 
 #### WebMessageReceived 
 
-A wrapper around CoreWebView2.WebMessageReceived.
+A wrapper around the CoreWebView2.WebMessageReceived event of CoreWebView2.
 
 > public event EventHandler< CoreWebView2WebMessageReceivedEventArgs > [WebMessageReceived](#webmessagereceived)
 
@@ -126,19 +126,19 @@ The only difference between this event and CoreWebView2.WebMessageReceived is th
 
 #### CanGoBack 
 
-Wrapper around CoreWebView2.CanGoBack.
+Returns true if the WebView can navigate to a previous page in the navigation history.
 
 > public bool [CanGoBack](#cangoback)
 
-If CoreWebView2 isn't initialized then always returns false.
+Wrapper around the CoreWebView2.CanGoBack property of CoreWebView2. If CoreWebView2 isn't initialized yet then returns false.
 
 #### CanGoForward 
 
-Wrapper around CoreWebView2.CanGoForward.
+Returns true if the WebView can navigate to a next page in the navigation history.
 
 > public bool [CanGoForward](#cangoforward)
 
-If CoreWebView2 isn't initialized then always returns false.
+Wrapper around the CoreWebView2.CanGoForward property of CoreWebView2. If CoreWebView2 isn't initialized yet then returns false.
 
 #### CoreWebView2 
 
@@ -146,7 +146,12 @@ Access the complete functionality of the underlying Core.CoreWebView2 COM API.
 
 > public CoreWebView2 [CoreWebView2](#corewebview2)
 
-Returns null until initialization has completed. See the WebView2 class documentation for an initialization overview. After initialization is finished this property will only ever become null again when the control is Disposed.
+Returns null until initialization has completed. See the WebView2 class documentation for an initialization overview.
+
+##### Exceptions
+* `InvalidOperationException` Thrown if the calling thread isn't the thread which created this object (usually the UI thread). See DispatcherObject.VerifyAccess for more info.
+
+* `ObjectDisposedException` Thrown if Dispose has already been called on the control.
 
 #### CreationProperties 
 
@@ -154,15 +159,18 @@ Gets or sets a bag of options which are used during initialization of the contro
 
 > public CoreWebView2CreationProperties [CreationProperties](#creationproperties)
 
-Setting this property after the control's CoreWebView2 is initialized won't work (the old value will be retained). See the WebView2 class documentation for an initialization overview.
+Setting this property won't work after initialization of the control's CoreWebView2 has started (the old value will be retained). See the WebView2 class documentation for an initialization overview.
 
 #### Source 
 
-The Uri which the control is currently displaying (or will display once initialization of its CoreWebView2 is finished).
+The top-level Uri which the WebView is currently displaying (or will display once initialization of its CoreWebView2 is finished).
 
 > public Uri [Source](#source)
 
-Generally speaking, getting this property is equivalent to getting CoreWebView2.Source and setting this property is equivalent to calling CoreWebView2.Navigate. Setting this property before the CoreWebView2 has been initialized will cause initialization to start in the background (after which the WebView2 will navigate to the specified Uri). Getting this property before the CoreWebView2 has been initialized will retrieve the last Uri which was set to it. See the WebView2 class documentation for an initialization overview.
+Generally speaking, getting this property is equivalent to getting the CoreWebView2.Source property of CoreWebView2 and setting this property is equivalent to calling the CoreWebView2.Navigate method on CoreWebView2. Getting this property before the CoreWebView2 has been initialized will retrieve the last Uri which was set to it. Setting this property before the CoreWebView2 has been initialized will cause initialization to start in the background (if not already in progress), after which the WebView2 will navigate to the specified Uri. See the WebView2 class documentation for an initialization overview.
+
+##### Exceptions
+* `ObjectDisposedException` Thrown if Dispose has already been called on the control.
 
 #### EnsureCoreWebView2Async 
 
@@ -178,55 +186,98 @@ See the WebView2 class documentation for an initialization overview.
 ##### Returns
 A Task that represents the background initialization process. When the task completes then the CoreWebView2 property will be available for use (i.e. non-null). Note that the control's CoreWebView2Ready event will be invoked before the task completes. 
 
-Calling this method additional times will have no effect (any specified environment is ignored) and return the same Task as the first call. Calling this method after initialization has been implicitly triggered by setting the Source property will have no effect (any specified environment is ignored) and simply return a Task representing that initialization already in progress. Note that even though this method is asynchronous and returns a Task, it still must be called on the UI thread like most public functionality of most UI controls.
+Calling this method additional times will have no effect (any specified environment is ignored) and return the same Task as the first call. Calling this method after initialization has been implicitly triggered by setting the Source property will have no effect (any specified environment is ignored) and simply return a Task representing that initialization already in progress. Note that even though this method is asynchronous and returns a Task, it still must be called on the UI thread like most public functionality of most UI controls. 
+
+##### Exceptions
+* `InvalidOperationException` Thrown if the calling thread isn't the thread which created this object (usually the UI thread). See DispatcherObject.VerifyAccess for more info.
+
+* `ObjectDisposedException` Thrown if Dispose has already been called on the control.
 
 #### ExecuteScriptAsync 
 
-Equivalent to calling CoreWebView2.ExecuteScriptAsync.
+Executes JavaScript code from the javaScript parameter in the current top level document rendered in the WebView.
 
 > public async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
 
-If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
+Equivalent to calling CoreWebView2.ExecuteScriptAsync on CoreWebView2
+
+##### Exceptions
+* `InvalidOperationException` Thrown if CoreWebView2 hasn't been initialized yet.
+
+* `InvalidOperationException` Thrown if the calling thread isn't the thread which created this object (usually the UI thread). See DispatcherObject.VerifyAccess for more info.
+
+* `ObjectDisposedException` Thrown if Dispose has already been called on the control.
 
 #### GoBack 
 
-Equivalent to calling CoreWebView2.GoBack.
+Navigates the WebView to the previous page in the navigation history.
 
 > public void [GoBack](#goback)()
 
-If CoreWebView2 hasn't been initialized yet then does nothing.
+Equivalent to calling CoreWebView2.GoBack on CoreWebView2 If CoreWebView2 hasn't been initialized yet then does nothing.
+
+##### Exceptions
+* `InvalidOperationException` Thrown if the calling thread isn't the thread which created this object (usually the UI thread). See DispatcherObject.VerifyAccess for more info.
+
+* `ObjectDisposedException` Thrown if Dispose has already been called on the control.
 
 #### GoForward 
 
-Equivalent to calling CoreWebView2.GoForward.
+Navigates the WebView to the next page in the navigation history.
 
 > public void [GoForward](#goforward)()
 
-If CoreWebView2 hasn't been initialized yet then does nothing.
+Equivalent to calling CoreWebView2.GoForward on CoreWebView2 If CoreWebView2 hasn't been initialized yet then does nothing.
+
+##### Exceptions
+* `InvalidOperationException` Thrown if the calling thread isn't the thread which created this object (usually the UI thread). See DispatcherObject.VerifyAccess for more info.
+
+* `ObjectDisposedException` Thrown if Dispose has already been called on the control.
 
 #### NavigateToString 
 
-Equivalent to calling CoreWebView2.NavigateToString.
+Initiates a navigation to htmlContent as source HTML of a new document.
 
 > public void [NavigateToString](#navigatetostring)(string htmlContent)
 
-If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
+Equivalent to calling CoreWebView2.NavigateToString on CoreWebView2
+
+##### Exceptions
+* `InvalidOperationException` Thrown if CoreWebView2 hasn't been initialized yet.
+
+"
+<exception cref="InvalidOperationException">Thrown if the calling thread isn't the thread which created this object (usually the UI thread).  See DispatcherObject.VerifyAccess for more info.</exception>
+<exception cref="ObjectDisposedException">Thrown if Dispose has already been called on the control.
 
 #### Reload 
 
-Equivalent to calling CoreWebView2.Reload.
+Reloads the current page.
 
 > public void [Reload](#reload)()
 
-If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
+Equivalent to calling CoreWebView2.Reload on CoreWebView2
+
+##### Exceptions
+* `InvalidOperationException` Thrown if CoreWebView2 hasn't been initialized yet.
+
+"
+<exception cref="InvalidOperationException">Thrown if the calling thread isn't the thread which created this object (usually the UI thread).  See DispatcherObject.VerifyAccess for more info.</exception>
+<exception cref="ObjectDisposedException">Thrown if Dispose has already been called on the control.
 
 #### Stop 
 
-Equivalent to calling CoreWebView2.Stop.
+Stops all navigations and pending resource fetches.
 
 > public void [Stop](#stop)()
 
-If CoreWebView2 hasn't been initialized yet then throws InvalidOperationException.
+Equivalent to calling CoreWebView2.Stop on CoreWebView2
+
+##### Exceptions
+* `InvalidOperationException` Thrown if CoreWebView2 hasn't been initialized yet.
+
+"
+<exception cref="InvalidOperationException">Thrown if the calling thread isn't the thread which created this object (usually the UI thread).  See DispatcherObject.VerifyAccess for more info.</exception>
+<exception cref="ObjectDisposedException">Thrown if Dispose has already been called on the control.
 
 #### WebView2 
 
