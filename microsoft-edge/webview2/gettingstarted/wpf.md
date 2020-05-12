@@ -104,7 +104,7 @@ Press F5 to build and run the app. Now you have a WebView window displaying <htt
 
 ## Step 4 - Navigation
 
-Let's add the ability to navigate the WebView to the URL displayed in the search bar.
+Let's add the ability to display web pages based on the URL entered by users in the address bar of the WebView2 control.
 
 1. In **MainWindow.xaml**, add a Search Bar by copying and pasting the following code snippet inside the DockPanel that holds the WebView.
 
