@@ -169,7 +169,7 @@ When there is an HTTP redirect, there are multiple `NavigationStarting` events.
 
 To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that do not use HTTPS.
 
-In **MainWindow.xaml.cs** modify the constructor as shown below and define the `EnsureHTTPS` function.
+In **MainWindow.xaml.cs** modify the constructor as shown below and add the `EnsureHTTPS` function.
 
 ```csharp
 public MainWindow()
