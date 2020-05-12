@@ -232,7 +232,7 @@ Hosts and web content may communicate with each other using `postMessage` as fol
 This communication mechanism allows web content to pass messages to the host using native capabilities.
 
 
-As an example to understand the mechanism, when the WebView2 navigates to a URI, lets display that URI in the search bar and alert the user of the URI displayed in the WebView
+In your project, when the WebView2 control navigates to a URL, you'll display the URL in the search bar and alert the user of the URL displayed in the WebView2 control.
 
 1. In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet. The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.
 
