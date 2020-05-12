@@ -300,6 +300,6 @@ To learn more:
 
 * Please explore [API reference](../reference/dotnet/0-9-494-reference-webview2.md) for detailed information about each API.  
 
-## Feedback
+## Get in touch with the Microsoft Edge WebView team 
 
 Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.
