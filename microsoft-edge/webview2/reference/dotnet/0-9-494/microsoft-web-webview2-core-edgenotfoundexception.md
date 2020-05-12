@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,8 +32,6 @@ The exception that is thrown when an Edge installation is missing.
 [EdgeNotFoundException](#edgenotfoundexception) | Initializes a new instance of the EdgeNotFoundException class with a specified error message and a reference to the inner exception that is the cause of this exception.
 
 ## Members
-
-### Constructors
 
 #### EdgeNotFoundException 
 

@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,8 +30,6 @@ Event args for the NewWindowRequested event.
 The event is fired when content inside webview requested to a open a new window (through window.open() and so on.)
 
 ## Members
-
-### Properties
 
 #### Handled 
 
@@ -60,8 +58,6 @@ The target uri of the NewWindowRequest.
 > public string [Uri](#uri)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
-
-### Methods
 
 #### GetDeferral 
 

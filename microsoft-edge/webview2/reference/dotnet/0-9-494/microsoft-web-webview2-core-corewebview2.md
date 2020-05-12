@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -65,8 +65,6 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [Stop](#stop) | Stop all navigations and pending resource fetches.
 
 ## Members
-
-### Properties
 
 #### BrowserProcessId 
 
@@ -235,8 +233,6 @@ Fires when content inside the WebView requested to close the window, such as aft
 > public event EventHandler< object > [WindowCloseRequested](#windowcloserequested)
 
 The app should close the WebView and related app window if that makes sense to the app.
-
-### Methods
 
 #### AddHostObjectToScript 
 

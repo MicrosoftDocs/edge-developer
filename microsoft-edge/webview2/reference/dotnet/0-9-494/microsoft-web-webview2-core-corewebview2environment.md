@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,8 +30,6 @@ This represents the WebView2 Environment.
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
 
 ## Members
-
-### Properties
 
 #### BrowserVersionString 
 

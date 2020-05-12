@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -73,8 +73,6 @@ Note that this control extends HwndHost in order to embed windows which live out
 * [https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-win32-interoperation#hwnds-inside-wpf](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-win32-interoperation#hwnds-inside-wpf)
 
 ## Members
-
-### Properties
 
 #### ContentLoading 
 

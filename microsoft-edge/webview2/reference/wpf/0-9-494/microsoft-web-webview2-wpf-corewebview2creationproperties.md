@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -36,8 +36,6 @@ Its main purpose is to be set to [WebView2.CreationProperties](microsoft-web-web
 This class isn't intended to contain all possible environment customization options. If you need complete control over the environment used by a WebView2 control then you'll need to initialize the control explicitly by creating your own environment with CoreWebView2Environment.CreateAsync and passing it to [WebView2.EnsureCoreWebView2Async](microsoft-web-webview2-wpf-webview2.md)*before* you set the [WebView2.Source](microsoft-web-webview2-wpf-webview2.md) property to anything. See the [WebView2](microsoft-web-webview2-wpf-webview2.md) class documentation for an initialization overview.
 
 ## Members
-
-### Properties
 
 #### BrowserExecutableFolder 
 

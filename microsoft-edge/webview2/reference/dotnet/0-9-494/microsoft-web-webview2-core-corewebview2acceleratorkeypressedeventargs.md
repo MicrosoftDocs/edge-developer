@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -28,8 +28,6 @@ Event args for the AcceleratorKeyPressed event.
 [VirtualKey](#virtualkey) | The Win32 virtual key code of the key that was pressed or released.
 
 ## Members
-
-### Properties
 
 #### Handled 
 

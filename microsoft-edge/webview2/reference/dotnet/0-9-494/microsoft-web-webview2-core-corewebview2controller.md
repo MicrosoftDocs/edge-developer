@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2020
+ms.date: 05/12/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -39,8 +39,6 @@ This class is the owner of the CoreWebView2 object, and provides support for res
 The CoreWebView2Controller owns the CoreWebView2, and if all references to the CoreWebView2Controller go away, the WebView will be closed.
 
 ## Members
-
-### Properties
 
 #### AcceleratorKeyPressed 
 
@@ -133,8 +131,6 @@ The event fires when the ZoomFactor property of the WebView changes.
 > public event EventHandler< object > [ZoomFactorChanged](#zoomfactorchanged)
 
 The event could fire because the caller modified the ZoomFactor property, or due to the user manually modifying the zoom. When it is modified by the caller via the ZoomFactor property, the internal zoom factor is updated immediately and there will be no ZoomFactorChanged event. WebView associates the last used zoom factor for each site. Therefore, it is possible for the zoom factor to change when navigating to a different page. When the zoom factor changes due to this, the ZoomFactorChanged event fires right after the ContentLoading event.
-
-### Methods
 
 #### Close 
 
