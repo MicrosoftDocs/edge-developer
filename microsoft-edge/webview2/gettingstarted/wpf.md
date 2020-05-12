@@ -67,7 +67,7 @@ Now let's add a WebView to the main window.
 xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
 ```
 
-**MainWindow.xaml** should look like the following:
+Confirm that the code in **MainWindow.xaml** looks like the following code snippet.
 
 ```xml
 <Window x:Class="WPF_Getting_Started.MainWindow"
