@@ -24,7 +24,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
 
 ## Step 1 - Create a single window WPF application
 
-We will start with a basic desktop project containing a single main window.
+Start with a basic desktop project containing a single main window.
 
 1. Open **Visual Studio 2019**
 
