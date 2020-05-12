@@ -34,7 +34,8 @@ Start with a basic desktop project containing a single main window.
 
     ![wpffw](media/wpf-gettingstarted-wpffw.png)
 
-3. Give your project a name and set a location to save the project to. For .NET Framework, select the version to support. **WebView2 currently supports .NET Framework 4.6.2+ and .NET Core 3.0+**. Press **Create** in the bottom right corner when you're done.
+3. Enter values for **Project name** and *Location**. If you are prompted to choose a .NET Framework, choose .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.
+4. Choose **Create** to create your project.
 
     ![createcore](media/wpf-gettingstarted-createcore.png)
 
