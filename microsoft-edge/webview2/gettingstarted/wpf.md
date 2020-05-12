@@ -167,7 +167,7 @@ When an error occurs, the following events are raised and may depend on navigati
 When there is an HTTP redirect, there are multiple `NavigationStarting` events.
 
 
-As an example of utilizing those events, let's register a handler for `NavigationStarting` to cancel any non-https requests.
+To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that do not use HTTPS.
 
 In **MainWindow.xaml.cs** modify the constructor as shown below and define the `EnsureHTTPS` function.
 
