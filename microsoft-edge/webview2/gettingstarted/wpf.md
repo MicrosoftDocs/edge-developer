@@ -154,7 +154,16 @@ Choose F5 to build and run your project. Enter a new URL in the address bar, and
 
 ## Step 5 - Navigation events
 
-During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](../reference/win32/0-9-488/icorewebview2.md#navigation-events) to learn more.
+
+The application that hosts WebView2 controls can listen to the following events that are raised by the WebView2 control during navigation to web pages. 
+
+- `NavigationStarting`
+- `SourceChanged`
+- `ContentLoading`
+- `HistoryChanged`
+- `NavigationCompleted` 
+
+For more information, see [Navigation Events](../reference/win32/0-9-488/icorewebview2.md#navigation-events).
 
 ![navigationEvents](../media/navigation-events.png)
 
