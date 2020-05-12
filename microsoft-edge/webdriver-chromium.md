@@ -46,7 +46,7 @@ To find your correct build number, use the following steps.
 
 Now, [download the matching version of Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriverDownloads].  
 
-:::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="The Downloads section of the Microsoft Edge Driver page":::
+:::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page":::
    Figure 2.  The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriverDownloads] page  
 :::image-end:::
 
