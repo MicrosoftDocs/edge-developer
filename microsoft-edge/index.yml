@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/03/2020
+  ms.date: 04/23/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -46,14 +46,14 @@ productDirectory:
       links:
         - url: /deployedge/microsoft-edge-channels
           text: Microsoft Edge channel overview
-        - url: https://www.microsoftedgeinsider.com/download
-          text: Download a Microsoft Edge channel
         - url: /deployedge/edge-ie-mode
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
       imageSrc: /media/common/i_reference.svg
       links:
+        - url: /deployedge/microsoft-edge-video-deploy
+          text: Video - Deploy Microsoft Edge
         - url: /configmgr/apps/deploy-use/deploy-edge
           text: Deploy to Windows
         - url: /intune/apps/apps-edge-macos
@@ -314,7 +314,7 @@ additionalContent:
             - text: JavaScript Runtime Hosting
               url: /microsoft-edge/hosting/javascript-runtime-hosting
             - text: WebVR Developer Guide
-              url: /webvr/webvr-docs/index
+              url: /microsoft-edge/webvr/index
             - text: Windows Runtime (WinRT)
               url: /microsoft-edge/windows-runtime
     - title: Help & Support # < 60 chars (optional)
@@ -335,5 +335,4 @@ additionalContent:
         # Card
         - title: End User Support
           summary: Helpful support resources for end users is available.
-          url: https://support.microsoft.com/hub/4337664/microsoft-edge-help
-          
+          url: https://support.microsoft.com/microsoft-edge

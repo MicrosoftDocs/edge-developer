@@ -2,7 +2,7 @@
 title: Override Geolocation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/09/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -54,8 +54,8 @@ If you are building a UI that changes depending on where the user is located, yo
 
 <!-- image links -->  
 
-[ImageCommandMenu]: images/console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageGeolocationTokyo]: images/console-sensors-geolocation-tokyo.msft.png "Figure 2: Selecting Tokyo from the Geolocation list"  
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
+[ImageGeolocationTokyo]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-geolocation-tokyo.msft.png "Figure 2: Selecting Tokyo from the Geolocation list"  
 
 <!-- links -->  
 

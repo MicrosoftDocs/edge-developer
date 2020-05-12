@@ -2,7 +2,7 @@
 title: Get Started With Logging Messages In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -266,47 +266,51 @@ What if you are editing styles, but you need to quickly check the Console log fo
 
 <!-- image links -->  
 
-[ImageExpandIcon]: images/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: images/show-console-sidebar-icon.msft.png  
+[ImageExpandIcon]: /microsoft-edge/devtools-guide-chromium/media/expand-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: /microsoft-edge/devtools-guide-chromium/media/show-console-sidebar-icon.msft.png  
 
-[ImageLogExample]: images/ars-technica-console-onload.msft.png "Figure 1: Messages in the Console"  
-<!--[ImageLogSetUp1]: images/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
-[ImageDevToolsRight]: images/example-devtools-right-console.msft.png "Figure 2: DevTools opens to the right of the demo"  
-[ImageDevToolsBottom]: images/example-devtools-bottom-console.msft.png "Figure 3: DevTools docked to the bottom of the demo"  
-[ImageDevToolsSeparateBrowse]: images/example-devtools-separate-console-browse.msft.png "Figure 4: Browser in a separate window"  
-[ImageDevToolsSeparateDevTools]: images/example-devtools-separate-console-devtools.msft.png "Figure 5: DevTools undocked in a separate window"  
-[ImageLogInfo]: images/console-log-info.msft.png "Figure 6: The Console after clicking Log Info"  
-[ImageSourceLog]: images/sources-logjs.msft.png "Figure 7: DevTools opens the Sources panel after you click log.js:2"  
-[ImageConsoleLogWarning]: images/console-log-warning.msft.png "Figure 8: The Console after clicking Log Warning"  
-[ImageStackTrace]: images/console-log-warning-expanded.msft.png "Figure 9: A stack trace"  
-[ImageLogError]: images/console-log-error.msft.png "Figure 10: An error message"  
-[ImageConsoleTable]: images/console-log-table.msft.png "Figure 11: A table in the Console"  
-[ImageConsoleLogGroup]: images/console-log-group.msft.png "Figure 12: A group of messages in the Console"  
-[ImageConsoleLogCustomFormatting]: images/console-log-custom.msft.png "Figure 13: A message with custom formatting in the Console"  
-[ImageConsoleLogError]: images/console-cause-404.msft.png "Figure 14: A 404 error in the Console"  
-[ImageConsoleLogTypeError]: images/console-cause-error.msft.png "Figure 15: A TypeError in the Console"  
-[ImageVerboseLogLevel]: images/console-cause-error-log-levels.msft.png "Figure 16: Enabling the Verbose log level"  
-[ImageConsoleLogViolation]: images/console-cause-violation.msft.png "Figure 17: A violation in the Console"  
-[ImageConsoleDisablingLogError]: images/console-cause-violation-log-levels.msft.png "Figure 18: Disabling Error-level messages in the Console"  
-[ImageLogTextFiltering]: images/console-all-messages-text-filter.msft.png "Figure 19: Filtering out any message that does not include Dave"  
-[ImageLogRegExFiltering]: images/console-all-messages-regex-filter.msft.png "Figure 20: Filtering out any message that does not match a pattern"  
-[ImageConsoleSidebar]: images/console-sidebar-all-messages.msft.png "Figure 21: The Sidebar"  
-[ImageConsoleSidebarLogSource]: images/console-sidebar-expanded-all-messages.msft.png "Figure 22: Viewing the source of messages in the Sidebar"  
-[ImageConsoleLogBrowserFiltering]: images/console-sidebar-user-messages.msft.png "Figure 23: Filtering out browser messages"  
-[ImageDrawerConsole]: images/elements-drawer-console-sidebar-all-messages.msft.png "Figure 24: The Console tab in the Drawer"  
+[ImageLogExample]: /microsoft-edge/devtools-guide-chromium/media/console-ars-technica-console-onload.msft.png "Figure 1: Messages in the Console"  
+<!--[ImageLogSetUp1]: /microsoft-edge/devtools-guide-chromium/media/log-set-up-1.msft.png "old Figure 2: The tutorial on the left, and the demo on the right"  -->  
+[ImageDevToolsRight]: /microsoft-edge/devtools-guide-chromium/media/console-example-devtools-right-console.msft.png "Figure 2: DevTools opens to the right of the demo"  
+[ImageDevToolsBottom]: /microsoft-edge/devtools-guide-chromium/media/console-example-devtools-bottom-console.msft.png "Figure 3: DevTools docked to the bottom of the demo"  
+[ImageDevToolsSeparateBrowse]: /microsoft-edge/devtools-guide-chromium/media/console-example-devtools-separate-console-browse.msft.png "Figure 4: Browser in a separate window"  
+[ImageDevToolsSeparateDevTools]: /microsoft-edge/devtools-guide-chromium/media/console-example-devtools-separate-console-devtools.msft.png "Figure 5: DevTools undocked in a separate window"  
+[ImageLogInfo]: /microsoft-edge/devtools-guide-chromium/media/console-log-info.msft.png "Figure 6: The Console after clicking Log Info"  
+[ImageSourceLog]: /microsoft-edge/devtools-guide-chromium/media/console-sources-logjs.msft.png "Figure 7: DevTools opens the Sources panel after you click log.js:2"  
+[ImageConsoleLogWarning]: /microsoft-edge/devtools-guide-chromium/media/console-log-warning.msft.png "Figure 8: The Console after clicking Log Warning"  
+[ImageStackTrace]: /microsoft-edge/devtools-guide-chromium/media/console-log-warning-expanded.msft.png "Figure 9: A stack trace"  
+[ImageLogError]: /microsoft-edge/devtools-guide-chromium/media/console-log-error.msft.png "Figure 10: An error message"  
+[ImageConsoleTable]: /microsoft-edge/devtools-guide-chromium/media/console-log-table.msft.png "Figure 11: A table in the Console"  
+[ImageConsoleLogGroup]: /microsoft-edge/devtools-guide-chromium/media/console-log-group.msft.png "Figure 12: A group of messages in the Console"  
+[ImageConsoleLogCustomFormatting]: /microsoft-edge/devtools-guide-chromium/media/console-log-custom.msft.png "Figure 13: A message with custom formatting in the Console"  
+[ImageConsoleLogError]: /microsoft-edge/devtools-guide-chromium/media/console-cause-404.msft.png "Figure 14: A 404 error in the Console"  
+[ImageConsoleLogTypeError]: /microsoft-edge/devtools-guide-chromium/media/console-cause-error.msft.png "Figure 15: A TypeError in the Console"  
+[ImageVerboseLogLevel]: /microsoft-edge/devtools-guide-chromium/media/console-cause-error-log-levels.msft.png "Figure 16: Enabling the Verbose log level"  
+[ImageConsoleLogViolation]: /microsoft-edge/devtools-guide-chromium/media/console-cause-violation.msft.png "Figure 17: A violation in the Console"  
+[ImageConsoleDisablingLogError]: /microsoft-edge/devtools-guide-chromium/media/console-cause-violation-log-levels.msft.png "Figure 18: Disabling Error-level messages in the Console"  
+[ImageLogTextFiltering]: /microsoft-edge/devtools-guide-chromium/media/console-all-messages-text-filter.msft.png "Figure 19: Filtering out any message that does not include Dave"  
+[ImageLogRegExFiltering]: /microsoft-edge/devtools-guide-chromium/media/console-all-messages-regex-filter.msft.png "Figure 20: Filtering out any message that does not match a pattern"  
+[ImageConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-all-messages.msft.png "Figure 21: The Sidebar"  
+[ImageConsoleSidebarLogSource]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-expanded-all-messages.msft.png "Figure 22: Viewing the source of messages in the Sidebar"  
+[ImageConsoleLogBrowserFiltering]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-user-messages.msft.png "Figure 23: Filtering out browser messages"  
+[ImageDrawerConsole]: /microsoft-edge/devtools-guide-chromium/media/console-elements-drawer-console-sidebar-all-messages.msft.png "Figure 24: The Console tab in the Drawer"  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
-<!--[DevToolsConsoleApi]: api.md "Console API Reference"  -->
-<!--[DevToolsConsoleReference]: reference.md "Console Reference"  -->
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Console API Reference"  
+[DevToolsConsoleReference]: /microsoft-edge/devtools-guide-chromium/console/reference "Console Reference"  
 
 [GlitchDevToolsConsoleLogExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/log.html "Get Started With Logging Messages | Glitch"  
+
 [MDNRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "Regular Expressions | MDN"  
+
 [RegExrMain]: https://regexr.com "RegExr"  
+
 [WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "Stack trace - Wikipedia"  
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

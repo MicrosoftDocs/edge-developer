@@ -2,7 +2,7 @@
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/19/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -47,9 +47,9 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 
 1.  Go to the **Memory** panel of DevTools.  
 1.  Select the **Allocation sampling** radio button.  
-1.  Press **Start**.  
+1.  Select **Start**.  
 1.  Depending on what you are trying to analyze, you may either reload the page, interact with the page, or just let the page run.  
-1.  Press the **Stop** button when you are finished.  
+1.  Select the **Stop** button when you are finished.  
 
 > [!NOTE]
 > You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.  
@@ -62,7 +62,7 @@ The default view is **Heavy \(Bottom Up\)**.  This view enables you to see which
 
 ### Change sort order   
 
-To change the sorting order, click on the dropdown menu next to the **focus selected function** ![focus selected function][ImageFocusIcon] icon and then choose one of the following options.
+To change the sorting order, select the dropdown menu next to the **focus selected function** ![focus selected function][ImageFocusIcon] icon and then choose one of the following options.
 
 **Chart**.  Displays a chronological chart of the recording.  
 
@@ -84,9 +84,9 @@ To change the sorting order, click on the dropdown menu next to the **focus sele
 
 ### Exclude functions   
 
-To exclude a function from your Sampling Profile, click on it to select it and then press the **exclude selected function** ![exclude selected function][ImageExcludeIcon] icon.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
+To exclude a function from your Sampling Profile, select it to select it and then select the **exclude selected function** ![exclude selected function][ImageExcludeIcon] icon.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
 
-Click the **restore all functions** ![restore all functions][ImageRestoreIcon] icon to restore all excluded functions back into the recording.  
+Select the **restore all functions** ![restore all functions][ImageRestoreIcon] icon to restore all excluded functions back into the recording.  
 
 ## View Sampling Profile as Chart   
 
@@ -115,7 +115,7 @@ A tall call stack is not necessarily significant, it just means that a lot of fu
 
 ### Zoom in on specific parts of recording   
 
-Click, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.  
+Select, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.  
 
 > ##### Figure 7  
 > Chart zoomed  
@@ -123,7 +123,7 @@ Click, hold, and drag your mouse left and right across the overview to zoom in o
 
 ### View function details   
 
-Click on a function to view the definition in the **Sources** panel.  
+Select on a function to view the definition in the **Sources** panel.  
 
 Hover over a function to display the name and timing data.  The following information is provided.  
 
@@ -147,24 +147,24 @@ Hover over a function to display the name and timing data.  The following inform
 
 <!-- image links -->  
 
-[ImageExcludeIcon]: images/exclude-icon.msft.png  
-[ImageFocusIcon]: images/focus-icon.msft.png  
-[ImageRestoreIcon]: images/restore-icon.msft.png  
+[ImageExcludeIcon]: /microsoft-edge/devtools-guide-chromium/media/exclude-icon.msft.png  
+[ImageFocusIcon]: /microsoft-edge/devtools-guide-chromium/media/images/focus-icon.msft.png  
+[ImageRestoreIcon]: /microsoft-edge/devtools-guide-chromium/media/images/restore-icon.msft.png  
 
-[ImageCpuProfile]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 1: Sampling Profiles"  
-[ImageFlameChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 2: Flame chart"  
-[ImageHeavyChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 3: Heavy chart"  
-[ImageTreeChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png "Figure 4: Tree chart"  
-[ImageFlameChartView]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 5: Flame chart view"  
-[ImageAnnotatedFlameChart]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png "Figure 6: Annotated flame chart"  
-[ImageFlameChartZoomed]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png "Figure 7: chart zoomed"  
-[ImageFunctionsDetails]: images/gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png "Figure 8: Viewing functions details in chart"  
+[ImageCpuProfile]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 1: Sampling Profiles"  
+[ImageFlameChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 2: Flame chart"  
+[ImageHeavyChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png "Figure 3: Heavy chart"  
+[ImageTreeChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png "Figure 4: Tree chart"  
+[ImageFlameChartView]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png "Figure 5: Flame chart view"  
+[ImageAnnotatedFlameChart]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png "Figure 6: Annotated flame chart"  
+[ImageFlameChartZoomed]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png "Figure 7: chart zoomed"  
+[ImageFunctionsDetails]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png "Figure 8: Viewing functions details in chart"  
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: ../console/utilities.md "Console Utilities API Reference"  
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile - Console Utilities API Reference"  
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - Console Utilities API Reference"  
+[DevtoolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
+[DevtoolsConsoleUtilitiesProfile]: /microsoft-edge/devtools-guide-chromium/console/utilities#profile "profile - Console Utilities API Reference"  
+[DevtoolsConsoleUtilitiesProfileEnd]: /microsoft-edge/devtools-guide-chromium/console/utilities#profileend "profileEnd - Console Utilities API Reference"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

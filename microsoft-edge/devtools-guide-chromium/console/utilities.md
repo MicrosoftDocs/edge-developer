@@ -2,7 +2,7 @@
 title:  Console Utilities API Reference
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date: 02/12/2020
+ms.date: 04/24/2020
 ms.topic:  article
 ms.prod:  microsoft-edge
 keywords:  microsoft edge, web development, f12 tools, devtools
@@ -564,37 +564,37 @@ values(object);
 
 <!-- image links -->  
 
-[ImageRecentExpression]: images/console-arithmatic.msft.png "Figure 1: $_ is the most recently evaluated expression"  
-[ImageChangedRecentExpression]: images/console-array-length.msft.png "Figure 2: $_ changes when new commands are evaluated"  
-[ImageElement0]: images/console-image-highlighted-$0.msft.png "Figure 3: The $0"  
-[ImageElement1]: images/console-image-highlighted-$1.msft.png "Figure 4: The $1"  
-[ImageElementImg]: images/console-element-selector-image.msft.png "Figure 5: The $('img')"  
-[ImageElementImgSource]: images/console-element-selector-image-source.msft.png "Figure 6: The $('img').src"  
-[ImageElementImgNodeSource]: images/console-element-selector-image-filter-source.msft.png "Figure 7: The $('img', document.querySelector('title--image')).src"  
-[ImageArrayElementImgSource]: images/console-element-selector-image-all.msft.png "Figure 8: Using $$() to select all images in the document and display the sources"  
-[ImageArrayElementImgNodeSource]: images/console-element-selector-image-filter-all.msft.png "Figure 9: Using $$() to select all images that appear after the specified <div> element in the document and display the sources"  
-[ImageArrayXpath]: images/console-array-xpath.msft.png "Figure 10: Using an XPath selector"  
-[ImageArrayXpathChild]: images/console-array-xpath-sub-element.msft.png "Figure 11: Using a more complicated XPath selector"  
-[ImageArrayXpathNode]: images/console-array-xpath-startnode.msft.png "Figure 12: Using an XPath selector with startNode"  
-[ImageDebugMethod]: images/console-debug-text.msft.png "Figure 13: Breaking inside a method with debug()"  
-[ImageLogObject]: images/console-dir-document-head-expanded.msft.png "Figure 14: Logging document.body with dir() method"  
-[ImageInspectElement]: images/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
-[ImageGetListeners]: images/elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners(document)"  
-[ImageMultipleListeners]: images/elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 17: Multiple listeners"  
-[ImageListenersExpanded]: images/elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 18: Expanded view of listener object"  
-[ImageConsoleKeysValues]: images/console-keys-values.msft.png "Figure 19: The keys() and values() commands"  
-[ImageConsoleMonitorSum]: images/console-function-monitor-sum.msft.png "Figure 20: The monitor() method"  
-[ImageMonitorResize]: images/console-monitor-events-resize-window.msft.png "Figure 21: Monitoring window resize events"  
-[ImageMonitorKey]: images/console-monitor-events-type-t-y.msft.png "Figure 22: Monitoring key events"  
-[ImageGroupedProfiles]: images/memory-multiple-cpu-profiles.msft.png "Figure 23: Grouped profiles"  
-[ImageConsoleTable]: images/console-table-display.msft.png "Figure 24: The table() method"  
+[ImageRecentExpression]: /microsoft-edge/devtools-guide-chromium/media/console-arithmatic.msft.png "Figure 1: $_ is the most recently evaluated expression"  
+[ImageChangedRecentExpression]: /microsoft-edge/devtools-guide-chromium/media/console-array-length.msft.png "Figure 2: $_ changes when new commands are evaluated"  
+[ImageElement0]: /microsoft-edge/devtools-guide-chromium/media/console-image-highlighted-$0.msft.png "Figure 3: The $0"  
+[ImageElement1]: /microsoft-edge/devtools-guide-chromium/media/console-image-highlighted-$1.msft.png "Figure 4: The $1"  
+[ImageElementImg]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image.msft.png "Figure 5: The $('img')"  
+[ImageElementImgSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-source.msft.png "Figure 6: The $('img').src"  
+[ImageElementImgNodeSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-filter-source.msft.png "Figure 7: The $('img', document.querySelector('title--image')).src"  
+[ImageArrayElementImgSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-all.msft.png "Figure 8: Using $$() to select all images in the document and display the sources"  
+[ImageArrayElementImgNodeSource]: /microsoft-edge/devtools-guide-chromium/media/console-element-selector-image-filter-all.msft.png "Figure 9: Using $$() to select all images that appear after the specified <div> element in the document and display the sources"  
+[ImageArrayXpath]: /microsoft-edge/devtools-guide-chromium/media/console-array-xpath.msft.png "Figure 10: Using an XPath selector"  
+[ImageArrayXpathChild]: /microsoft-edge/devtools-guide-chromium/media/console-array-xpath-sub-element.msft.png "Figure 11: Using a more complicated XPath selector"  
+[ImageArrayXpathNode]: /microsoft-edge/devtools-guide-chromium/media/console-array-xpath-startnode.msft.png "Figure 12: Using an XPath selector with startNode"  
+[ImageDebugMethod]: /microsoft-edge/devtools-guide-chromium/media/console-debug-text.msft.png "Figure 13: Breaking inside a method with debug()"  
+[ImageLogObject]: /microsoft-edge/devtools-guide-chromium/media/console-dir-document-head-expanded.msft.png "Figure 14: Logging document.body with dir() method"  
+[ImageInspectElement]: /microsoft-edge/devtools-guide-chromium/media/console-inspect-document-body.msft.png "Figure 15: Inspecting an element with inspect()"  
+[ImageGetListeners]: /microsoft-edge/devtools-guide-chromium/media/console-elements-event-listeners-console-get-event-listeners-document.msft.png "Figure 16: Output of using getEventListeners(document)"  
+[ImageMultipleListeners]: /microsoft-edge/devtools-guide-chromium/media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png "Figure 17: Multiple listeners"  
+[ImageListenersExpanded]: /microsoft-edge/devtools-guide-chromium/media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png "Figure 18: Expanded view of listener object"  
+[ImageConsoleKeysValues]: /microsoft-edge/devtools-guide-chromium/media/console-keys-values.msft.png "Figure 19: The keys() and values() commands"  
+[ImageConsoleMonitorSum]: /microsoft-edge/devtools-guide-chromium/media/console-function-monitor-sum.msft.png "Figure 20: The monitor() method"  
+[ImageMonitorResize]: /microsoft-edge/devtools-guide-chromium/media/console-monitor-events-resize-window.msft.png "Figure 21: Monitoring window resize events"  
+[ImageMonitorKey]: /microsoft-edge/devtools-guide-chromium/media/console-monitor-events-type-t-y.msft.png "Figure 22: Monitoring key events"  
+[ImageGroupedProfiles]: /microsoft-edge/devtools-guide-chromium/media/console-memory-multiple-cpu-profiles.msft.png "Figure 23: Grouped profiles"  
+[ImageConsoleTable]: /microsoft-edge/devtools-guide-chromium/media/console-table-display.msft.png "Figure 24: The table() method"  
 
 <!-- links -->  
 
-[DevToolsConsoleApi]: api.md "Console API Reference"  
-[DevToolsConsoleApiConsoleDirObject]: api.md#dir "dir - Console API Reference"  
-[DevToolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
-<!--[DevToolsRenderingToolsJSRuntime]: ../rendering-tools/js-runtime.md "Speed Up JavaScript Runtime"  -->  
+[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Console API Reference"  
+[DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir - Console API Reference"  
+[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
+[DevToolsRenderingToolsJSRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Speed Up JavaScript Runtime"  
 
 [MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
 [MDNConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"  

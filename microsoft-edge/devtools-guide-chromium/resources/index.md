@@ -2,7 +2,7 @@
 title: View Page Resources With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -51,7 +51,7 @@ When you know the name of the resource that you want to inspect, the **Command M
     
 ### Open resources in the Network panel   
 
-See [Inspect the details of a resource][NetworkInspectDetailsResource].  
+See [Inspect the details of a resource][DevtoolsNetworkInspectDetailsResource].  
 
 > ##### Figure 3  
 > Inspecting a resource in the Network panel  
@@ -69,7 +69,7 @@ The [Browse resources](#browse-resources) section below shows you how to view re
 
 ### Browse resources in the Network panel   
 
-See [Log network activity][NetworkLogActivity].  
+See [Log network activity][DevtoolsNetworkLogActivity].  
 
 > ##### Figure 5  
 > Page resources in the Network Log  
@@ -144,39 +144,39 @@ To group resources together based on their file type:
 
 #### Browse files by type in the Network panel   
 
-See [Filter by resource type][NetworkFilterByResourceType].  
+See [Filter by resource type][DevtoolsNetworkFilterByResourceType].  
 
 > ##### Figure 13  
 > Filtering for CSS in the Network Log  
 > ![Filtering for CSS in the Network Log][ImageCSS]  
 
- 
+<!--  -->  
 
 
 
 <!-- image links -->  
 
-[ImageOpenFile]: images/command-menu-empty.msft.png "Figure 1: The Open File dialog"  
-[ImageFileSearch]: images/command-menu-file-search.msft.png "Figure 2: Typing a filename in the Open File dialog"  
-[ImageNetworkResponse]: images/network-response.msft.png "Figure 3: Inspecting a resource in the **Network** panel"  
-[ImageRevealNetwork]: images/sources-page-reveal-in-network-panel.msft.png "Figure 4: Reveal in Network panel"  
-[ImageNetworkLog]: images/network-resources.msft.png "Figure 5: Page resources in the Network Log"  
-[ImagePage]: images/sources-page-empty.msft.png "Figure 6: The Page pane"  
-[ImageSourcesView]: images/sources-page-resource.msft.png "Figure 7: Viewing a file in the Editor"  
-[ImageGroupByFolder]: images/sources-page-resource-group-by-folder.msft.png "Figure 8: The Group By Folder option"  
-[ImageFileNames]: images/sources-page-resources-empty-not-grouped-by-folder.msft.png "Figure 9: The Page pane after disabling Group By Folder"  
-[ImageApplication]: images/application-mainfest-airhorner.msft.png "Figure 10: The Application panel"  
-[ImageFrames]: images/application-mainfest-airhorner-frames-expanded.msft.png "Figure 11: The Frames pane"  
-[ImageApplicationView]: images/application-mainfest-airhorner-expanded-resources.msft.png "Figure 12: Viewing a resource in the Application panel"  
-[ImageCSS]: images/network-resources-filter-css.msft.png "Figure 13: Filtering for CSS in the Network Log"  
+[ImageOpenFile]: /microsoft-edge/devtools-guide-chromium/media/resources-command-menu-empty.msft.png "Figure 1: The Open File dialog"  
+[ImageFileSearch]: /microsoft-edge/devtools-guide-chromium/media/resources-command-menu-file-search.msft.png "Figure 2: Typing a filename in the Open File dialog"  
+[ImageNetworkResponse]: /microsoft-edge/devtools-guide-chromium/media/resources-network-response.msft.png "Figure 3: Inspecting a resource in the **Network** panel"  
+[ImageRevealNetwork]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-reveal-in-network-panel.msft.png "Figure 4: Reveal in Network panel"  
+[ImageNetworkLog]: /microsoft-edge/devtools-guide-chromium/media/resources-network-resources.msft.png "Figure 5: Page resources in the Network Log"  
+[ImagePage]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-empty.msft.png "Figure 6: The Page pane"  
+[ImageSourcesView]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-resource.msft.png "Figure 7: Viewing a file in the Editor"  
+[ImageGroupByFolder]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-resource-group-by-folder.msft.png "Figure 8: The Group By Folder option"  
+[ImageFileNames]: /microsoft-edge/devtools-guide-chromium/media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png "Figure 9: The Page pane after disabling Group By Folder"  
+[ImageApplication]: /microsoft-edge/devtools-guide-chromium/media/resources-application-mainfest-airhorner.msft.png "Figure 10: The Application panel"  
+[ImageFrames]: /microsoft-edge/devtools-guide-chromium/media/resources-application-mainfest-airhorner-frames-expanded.msft.png "Figure 11: The Frames pane"  
+[ImageApplicationView]: /microsoft-edge/devtools-guide-chromium/media/resources-application-mainfest-airhorner-expanded-resources.msft.png "Figure 12: Viewing a resource in the Application panel"  
+[ImageCSS]: /microsoft-edge/devtools-guide-chromium/media/resources-network-resources-filter-css.msft.png "Figure 13: Filtering for CSS in the Network Log"  
 
 <!-- links -->  
 
-[NetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filter by resource type - Inspect Network Activity In Microsoft Edge DevTools"  
-[NetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource - Inspect Network Activity In Microsoft Edge DevTools"  
-[NetworkLogActivity]: ../network/index.md#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[DevtoolsNetworkFilterByResourceType]: /microsoft-edge/devtools-guide-chromium/network/index#filter-by-resource-type "Filter by resource type - Inspect Network Activity In Microsoft Edge DevTools"  
+[DevtoolsNetworkInspectDetailsResource]: /microsoft-edge/devtools-guide-chromium/network/index#inspect-the-details-of-the-resource "Inspect the details of the resource - Inspect Network Activity In Microsoft Edge DevTools"  
+[DevtoolsNetworkLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools"  
 
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 [MDNInlineFrame]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  
 [MDNLearnWebDevelopment]: https://developer.mozilla.org/docs/Learn "Learn web development | MDN"  
 
