@@ -28,7 +28,7 @@ Start with a basic desktop project containing a single main window.
 
 1. Open **Visual Studio.**
 
-2. Create a **WPF .NET Core App** or a **WPF .NET Framework App** by selecting the correct project type and select **Next** on the bottom right corner of the window.
+2. Choose **WPF .NET Core App** or **WPF .NET Framework App**, and then choose **Next**.
 
     ![wpfcore](media/wpf-gettingstarted-wpfcore.png)
 
