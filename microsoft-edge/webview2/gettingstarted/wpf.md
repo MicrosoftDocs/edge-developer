@@ -45,7 +45,7 @@ Start with a basic desktop project containing a single main window.
 
 Now let's add the WebView2 SDK to the project. For the preview, you can install the Win32 SDK via Nuget.
 
-1. Right click the project and click **Manage Nuget Packages**.
+1. Open the context menu on the project (right-click), and choose **Manage NuGet Packages...**.
 
     ![nuget](media/wpf-gettingstarted-mngnuget.png)
 
