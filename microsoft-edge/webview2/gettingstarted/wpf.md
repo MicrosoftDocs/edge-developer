@@ -125,8 +125,8 @@ Next add a WebView to your application.
 1.  Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
     
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
-   Microsoft.com
-:::image-end:::
+       Microsoft.com
+    :::image-end:::
     
 ## Step 4 - Navigation  
 
