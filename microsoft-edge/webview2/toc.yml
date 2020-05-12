@@ -365,63 +365,65 @@
                     - name: IWebView2ZoomFactorChangedEventHandler
                       href: reference/win32/0-8-190/iwebview2zoomfactorchangedeventhandler.md
     - name: .NET
-      href: reference/dotnet/0-9-494-reference-webview2.md
       items:
-        - name: CoreWebView2
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2.md
-        - name: CoreWebView2Controller
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2controller.md
-        - name: CoreWebView2Deferral
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2deferral.md
-        - name: CoreWebView2DevToolsProtocolEventReceiver
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md
-        - name: CoreWebView2Environment
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2environment.md
-        - name: CoreWebView2EnvironmentOptions
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2environmentoptions.md
-        - name: CoreWebView2PhysicalKeyStatus
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2physicalkeystatus.md
-        - name: CoreWebView2Settings
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2settings.md
-        - name: EdgeNotFoundException
-          href: reference/dotnet/0-9-494/microsoft-web-webview2-core-edgenotfoundexception.md
-        - name: Event arguments
+        - name: WebView2Core
+          href: reference/dotnet/0-9-494-reference-webview2.md
           items:
-            - name: CoreWebView2AcceleratorKeyPressedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md
-            - name: CoreWebView2ContentLoadingEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md
-            - name: CoreWebView2DevToolsProtocolEventReceivedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md
-            - name: CoreWebView2MoveFocusRequestedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md
-            - name: CoreWebView2NavigationCompletedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md
-            - name: CoreWebView2NavigationStartingEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md
-            - name: CoreWebView2NewWindowRequestedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md
-            - name: CoreWebView2PermissionRequestedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md
-            - name: CoreWebView2ProcessFailedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2processfailedeventargs.md
-            - name: CoreWebView2ScriptDialogOpeningEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md
-            - name: CoreWebView2SourceChangedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md
-            - name: CoreWebView2WebMessageReceivedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md
-            - name: CoreWebView2WebResourceRequestedEventArgs
-              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
-    - name: WinForms
-      href: reference/winforms/0-9-494-reference-webview2.md
-      items:
-        - name: WebView2
-          href: reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md
-    - name: WPF
-      href: reference/wpf/0-9-494-reference-webview2.md
-      items:
-        - name: CoreWebView2CreationProperties
-          href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md
-        - name: WebView2
-          href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md
+            - name: CoreWebView2
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2.md
+            - name: CoreWebView2Controller
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2controller.md
+            - name: CoreWebView2Deferral
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2deferral.md
+            - name: CoreWebView2DevToolsProtocolEventReceiver
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md
+            - name: CoreWebView2Environment
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2environment.md
+            - name: CoreWebView2EnvironmentOptions
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2environmentoptions.md
+            - name: CoreWebView2PhysicalKeyStatus
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2physicalkeystatus.md
+            - name: CoreWebView2Settings
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2settings.md
+            - name: EdgeNotFoundException
+              href: reference/dotnet/0-9-494/microsoft-web-webview2-core-edgenotfoundexception.md
+            - name: Event arguments
+              items:
+                - name: CoreWebView2AcceleratorKeyPressedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md
+                - name: CoreWebView2ContentLoadingEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md
+                - name: CoreWebView2DevToolsProtocolEventReceivedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md
+                - name: CoreWebView2MoveFocusRequestedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md
+                - name: CoreWebView2NavigationCompletedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md
+                - name: CoreWebView2NavigationStartingEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md
+                - name: CoreWebView2NewWindowRequestedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md
+                - name: CoreWebView2PermissionRequestedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md
+                - name: CoreWebView2ProcessFailedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2processfailedeventargs.md
+                - name: CoreWebView2ScriptDialogOpeningEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md
+                - name: CoreWebView2SourceChangedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md
+                - name: CoreWebView2WebMessageReceivedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md
+                - name: CoreWebView2WebResourceRequestedEventArgs
+                  href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
+        - name: WinForms
+          href: reference/winforms/0-9-494-reference-webview2.md
+          items:
+            - name: WebView2
+              href: reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md
+        - name: WPF
+          href: reference/wpf/0-9-494-reference-webview2.md
+          items:
+            - name: CoreWebView2CreationProperties
+              href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md
+            - name: WebView2
+              href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md
