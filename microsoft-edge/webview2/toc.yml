@@ -1,5 +1,5 @@
 - name: WebView2 (Chromium) (preview)
-  href: ../webview2.md
+  href: ./index.md
 - name: Getting Started
   items:
     - name: Win32
