@@ -53,7 +53,7 @@ Now let's add the WebView2 SDK to the project. For the preview, you can install 
 
     ![manageNugetPackages](../media/manage-nuget-packages.png)
 
-You are all set to use and build against the WebView2 API. Press F5 to build and run the sample app. You should see an app displaying an empty window.
+You are all set to start developing applications using the WebView2 API. Choose F5 to build and run the project. The running project displays an empty window.
 
 ![emptyApp](media/wpf-gettingstarted-blank.png)
 
