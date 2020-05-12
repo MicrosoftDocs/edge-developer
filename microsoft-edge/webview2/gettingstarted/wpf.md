@@ -194,7 +194,7 @@ Press F5 to build and run the app. Now the app will not navigate to any non-http
 
 ## Step 6 - Scripting
 
-The hosting app can also inject JavaScript into WebView. You can task WebView to execute arbitrary JavaScript or add initialization scripts. Added initialization scripts apply to all future top level document and child frame navigation until removed, and run after the global object has been created and before any other script included by the HTML document is executed.
+Host applications can inject JavaScript code into WebView2 controls at runtime. The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed. The injected JavaScript is run after creation of the global object, and before any other script is run that's included in the HTML document.
 
 We can use Scripting to alert the user if they are navigating to a non-https site. Modify the `EnsureHTTPS` function it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2#executescriptasync) method.
 
