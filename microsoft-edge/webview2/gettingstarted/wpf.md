@@ -148,7 +148,7 @@ private void ButtonGo_Click(object sender, RoutedEventArgs e)
     }
 }
 
-Press F5 to build and run the app. Now, you can enter a new URI in the searchbar and when you click the 'Go' button, the WebView will navigate to the URI you enter. Try navigating to https://www.bing.com
+Choose F5 to build and run your project. Enter a new URL in the address bar, and choose **Go**. For example, enter `www.bing.com`. Confirm that the WebView2 control navigates to the URL.
 
 ![bing](media/wpf-gettingstarted-bing.png)
 
