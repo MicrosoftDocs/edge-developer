@@ -25,8 +25,8 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 *   Checkout the [WinForms Getting Started Guide]() to get started building WinForms applications and our [WinForms Reference]() for WinForms specific APIs
 *   Checkout [.NET Reference]() for CoreWebView2 APIs 
 *   **Known Issues:** We are aware of some issues in this release that we will resolve in coming releases
-    - **DPI Awareness:** WebView2 for .NET is currently not DPI aware. When initializing WebView2 on high DPI monitors, there is a known issue where the WebView2 at first initializes as a fraction of the window, but increasing the size of the window increases the size of the WebView.
-    - **WPF Designer:** This release does not currently support the WPF designer. Initialzie the WebView2 control directly from the XML file.
+    - **DPI Awareness:** WebView2 for .NET is currently not DPI aware. When initializing WebView2 on high DPI monitors, there is a known issue where the WebView2 at first initializes as a fraction of the window until the WebView is resized
+    - **WPF Designer:** This release does not currently support the WPF designer. Initialzie the WebView2 control directly from the XAML file.
 
 
 
