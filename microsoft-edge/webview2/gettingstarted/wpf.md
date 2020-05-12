@@ -279,7 +279,7 @@ In **MainWindow.xaml.cs** update `InitializeAsync` as follows:
 async void InitializeAsync()
 {
     await webView.EnsureCoreWebView2Async(null);
-    webView.CoreWebView2.WebMessageReceived += UpdateSearchBar;
+    webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
 
     await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.postMessage(window.document.URL);");
     await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.addEventListener(\'message\', event => alert(event.data));");
