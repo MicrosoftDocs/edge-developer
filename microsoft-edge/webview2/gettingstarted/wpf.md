@@ -199,7 +199,7 @@ void EnsureHTTPS(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 In the constructor, EnsureHTTPS is registered as the event handler on the **NavigationStarting** event on the WebView2 control. 
 
-Press F5 to build and run the app. Now the app will not navigate to any non-https sites. You can use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.
+Choose F5 to build and run your project. Confirm that the application will not navigate to any sites that don't use HTTPS. 
 
 ## Step 6 - Scripting
 
