@@ -4,15 +4,15 @@ title: Microsoft Edge WebView 2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020
-ms.topic: reference
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# Getting Started with WebView2 in WPF (developer preview)
+# Getting Started with WebView2 in WPF (Preview)
 
-This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](../reference/dotnet/0-9-494-reference-webview2.md) to learn more about individual APIs.  
+In this article, you'll get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2). For more information on individual APIs, see the [API reference](../reference/dotnet/0-9-494-reference-webview2.md).  
 
 ## Prerequisites
 
