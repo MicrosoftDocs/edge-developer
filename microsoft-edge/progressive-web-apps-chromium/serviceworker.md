@@ -39,7 +39,7 @@ Every Service Worker has a life cycle, you may connect to any corresponding even
     });
     ```  
     
-1.  The Service Worker is activated, firing the `activate` event.  This is often when developers cleans up outdated caches and such.  
+1.  The Service Worker is activated, which triggers the `activate` event.  Use this event to clean up outdated caches.  
     
     ```javascript
     self.addEventListener( "activate", event => {
