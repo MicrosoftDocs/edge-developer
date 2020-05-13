@@ -56,7 +56,7 @@ Every Service Worker has a life cycle, you may connect to any corresponding even
     });
     ```
     
-1.  The Service Worker is running.  <!-- 🎉 -->   
+1.  The Service Worker is now running.     
     
 ## Using fetch in Service Workers  
 
