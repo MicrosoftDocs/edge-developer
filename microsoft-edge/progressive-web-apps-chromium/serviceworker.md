@@ -26,7 +26,7 @@ if ( "serviceWorker" in navigator ) {
 
 Modern browsers provide different levels of support for Service Workers. As such, it is a good practice to test for the existence of the `serviceWorker` object before running any Service Worker-related code. In the above code snippet, a Service Worker is registered using the `serviceworker.min.js` file located at the root of the site. Ensure that the JavaScript file that defines your Service Worker exists in the highest-level directory that you want it to manage \(which is referred to as the scope of the Service Worker\).  In the above code snippet, the file is stored in the root, and the Service Worker manages all pages in the domain. If the Service Worker file was stored in a `js` directory, the scope of the Service Worker would be the `js` directory and any subdirectories.  As a best practice, place the Service Worker file in the root of your site, unless you need to reduce the scope of your Service Worker.  
 
-## The Service Worker life cycle  
+## The Service Worker lifecycle  
 
 Every Service Worker has a life cycle, you may connect to any corresponding event generated for each step in the life cycle.  The details of the life cycle is a deep topic, the following sequence represents the Cliff's Notes version of what happens.  
 
