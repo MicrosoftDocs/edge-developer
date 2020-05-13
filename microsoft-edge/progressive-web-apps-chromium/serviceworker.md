@@ -50,7 +50,7 @@ Every Service Worker has a life cycle, you may connect to any corresponding even
 1.  The Service Worker is ready to run, but must wait for the page to be refreshed or for the user to navigate to a new page within the site to begin working.  Developers may skip this step by using the `self.skipWaiting()` method during the `install` event.  
     
     ```javascript
-    self.addEventListener( "activate", event => {
+    self.addEventListener( "install", event => {
         self.skipWaiting();
         // …
     });
