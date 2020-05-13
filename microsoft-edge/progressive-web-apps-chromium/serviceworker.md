@@ -1,6 +1,6 @@
 ---
 title: Use Service Workers to manage network requests and push notifications
-description: Service Workers are a Web Worker that enable you to improve performance, handle unstable networking conditions, and increase re-engagement with your web application.
+description: Service Workers are Web Workers that help improve performance, respond to varying network conditions, and increase connectivity with your web application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2020
