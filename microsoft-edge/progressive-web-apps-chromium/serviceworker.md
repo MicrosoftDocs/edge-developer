@@ -30,7 +30,7 @@ Modern browsers provide different levels of support for Service Workers. As such
 
 Every Service Worker has a life cycle, you may connect to any corresponding event generated for each step in the life cycle.  The details of the life cycle is a deep topic, the following sequence represents the Cliff's Notes version of what happens.  
 
-1.  The Service Worker is registered.  
+1. Register the Service Worker.  
 1.  The browser downloads the associated JavaScript and installs the Service Worker, firing the `install` event.  The `install` event is when many Service Workers pre-caches important long-lived files like the CSS, JavaScript, logo image, offline page, and so on of the website.  
     
     ```javascript
