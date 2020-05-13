@@ -77,7 +77,7 @@ Within the `fetch` handler, you may control whether a request goes to the networ
 
 ## Push Notifications  
 
-Service workers have the ability to register a user to receive push notifications too.  Push Notifications are quite helpful in prompting users to re-engage with your application.  The process for setting up Push Notifications is quite involved.  For more information, see [Push Notifications walkthrough and demo][AzurewebsitesWebpushdemo].  
+Service workers can push notifications to users. Push Notifications are helpful to prompt users to re-engage with your application after some time has elapsed. For more information, see [Push Notifications walkthrough and demo][AzurewebsitesWebpushdemo].  
 
 ## See also  
 
