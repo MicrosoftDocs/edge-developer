@@ -42,9 +42,8 @@ Start with a basic desktop project containing a single main window.
     :::row-end:::
     
 3.  Enter values for **Project name** and **Location**.  Select .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.  
-4.  Choose **Create** to create your project.  
-    
-    :::row:::
+
+:::row:::
        :::column span="1":::
           :::image type="complex" source="./media/wpf-gettingstarted-createcore.png" alt-text="Create core":::
              Create core
@@ -56,6 +55,8 @@ Start with a basic desktop project containing a single main window.
           :::image-end::: 
        :::column-end:::
     :::row-end:::
+
+4.  Choose **Create** to create your project.  
     
 ## Step 2 - Install WebView2 SDK  
 
@@ -68,12 +69,8 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
     :::image-end:::
     
 2.  Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
-    
-    <!--todo: The image in this step is identical to th previous step. Is this on purpose -->  
-
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage Nuget Packages":::
-       Manage Nuget Packages
-    :::image-end:::
+     
+    ![nuget](./media/installnuget.PNG)
     
 You are all set to start developing applications using the WebView2 API.  Press `F5` to build and run the project.  The running project displays an empty window.  
 
@@ -299,8 +296,8 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     void UpdateAddressBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
     {
         String uri = args.TryGetWebMessageAsString();
-        addressBar.Text = Uri;
-        webView.CoreWebView2.PostWebMessageAsString(Uri);
+        addressBar.Text = uri;
+        webView.CoreWebView2.PostWebMessageAsString(uri);
     }
     ```  
     
