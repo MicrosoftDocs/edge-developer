@@ -81,7 +81,7 @@ Service workers have the ability to register a user to receive push notification
 
 ## See also  
 
-To learn more about Web App Manifests, see the following list of related topics.  
+To learn more about Service Workers, see the following list of related topics.  
 
 *   [Making PWAs work offline with Service workers][MDNPwasMakingOfflineServiceWorkers]  
 *   [How to make PWAs re-engageable using Notifications and Push][MDNPwasMakeReengageablesingNotificationsPush]  
