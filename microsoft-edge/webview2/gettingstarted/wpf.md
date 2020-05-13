@@ -21,12 +21,12 @@ Ensure you installed the following list of pre-requisites before proceeding:
 *   [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7.  The Microsoft Edge WebViews team recommends using the Canary channel version number 82.0.488.0 or later.  
 *   [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.  
 
-## Step 1 - Create a single window WPF application  
+## Step 1 - Create a single window application 
 
 Start with a basic desktop project containing a single main window.  
 
 1.  Open **Visual Studio.**
-1.  Choose **WPF .NET Core App** or **WPF .NET Framework App**, and then choose **Next**.  
+2.  Choose **WPF .NET Core App** or **WPF .NET Framework App**, and then choose **Next**.  
     
     :::row:::
        :::column span="1":::
@@ -41,8 +41,8 @@ Start with a basic desktop project containing a single main window.
        :::column-end:::
     :::row-end:::
     
-1.  Enter values for **Project name** and **Location**.  If you are prompted to choose a .NET Framework, choose .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.  
-1.  Choose **Create** to create your project.  
+3.  Enter values for **Project name** and **Location**.  Select .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.  
+4.  Choose **Create** to create your project.  
     
     :::row:::
        :::column span="1":::
@@ -67,7 +67,7 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
        Nuget
     :::image-end:::
     
-1.  Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
+2.  Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
     
     <!--todo: The image in this step is identical to th previous step. Is this on purpose -->  
 
@@ -112,7 +112,7 @@ Next add a WebView to your application.
     </Window>
     ```  
 
-1.  Add the WebView2 control by replacing the `<Grid>` tags, with the following code snippet.  The `Source` property sets the initial URI displayed in the WebView2 control.  
+2.  Add the WebView2 control by replacing the `<Grid>` tags, with the following code snippet.  The `Source` property sets the initial URI displayed in the WebView2 control.  
     
     ```xml  
     <DockPanel>
@@ -122,7 +122,7 @@ Next add a WebView to your application.
     </DockPanel>
     ```  
     
-1.  Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
+3.  Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
     
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
     
@@ -285,7 +285,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
     
-1.  After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In **MainWindow.xaml.cs** update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
+2.  After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In **MainWindow.xaml.cs** update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
     
     ```csharp
     async void InitializeAsync()
@@ -302,10 +302,10 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
     
-1.  In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:  
+3.  In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:  
     
     1.  Injects a script to the web content that registers a handler to print message from the host.  
-    1.  Injects a script to the web content that posts the URL to the host.  
+    2.  Injects a script to the web content that posts the URL to the host.  
     
 In `MainWindow.xaml.cs`, update `InitializeAsync` as follows:  
 
