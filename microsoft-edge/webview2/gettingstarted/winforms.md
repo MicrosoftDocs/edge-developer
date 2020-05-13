@@ -19,12 +19,13 @@ In this article, get started creating your first WebView2 app and learn about th
 Ensure you installed the following list of pre-requisites before proceeding:  
 
 *   [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7.  The Microsoft Edge WebViews team recommends using the Canary channel version number 82.0.488.0 or later.  
-*   [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later. 
-## Step 1 - Create a single window application 
+*   [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.
 
 > [!NOTE]
 > If developing with **WinForms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
 
+
+## Step 1 - Create a single window application 
 Start with a basic desktop project containing a single main window.  
 
 1.  Open **Visual Studio.**
