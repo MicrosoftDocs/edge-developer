@@ -70,7 +70,7 @@ self.addEventListener( "fetch", event => {
 
 Within the `fetch` handler, you may control whether a request goes to the network, pulls from the cache, and so on.  The approach you take likely varies based upon the type of resource being requested, how frequently it is updated, and other business logic unique to your application.  Here are a few examples of what you may do:  
 
-*   Return a response from the cache, if available; fallback to requesting the resource from the network.  
+*   If available, return a response from the cache, otherwise fallback to request the resource over the network.  
 *   Fetch a resource from the network, cache a copy, and return the response.
 *   Allow user's to specify a preference to save data. 
 *   Supply a placeholder image for certain image requests.  
