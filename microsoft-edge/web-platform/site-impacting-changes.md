@@ -3,7 +3,7 @@ description: This page provides a summary of high-impact changes that could impa
 title: Site compatibility-impacting changes coming to Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2020
+ms.date: 05/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform
@@ -13,7 +13,7 @@ keywords: microsoft edge, compatibility, web platform
 
 The web is constantly evolving to improve the user experience, security, and privacy.  In some cases, changes may be significant enough to impact the functionality of existing pages.  The table below summarizes particularly high-impact changes that the Microsoft Edge team is currently tracking.  Please check back often; the Microsoft Edge team updates this page as thinking evolves, timelines solidify, and new changes are announced.  
 
-| Change | Official Build | Experimentation | Additional information |  
+| Change | Stable Channel | Experimentation | Additional information |  
 |:--- |:--- |:--- |:--- |
 | Cookies default to `SameSite=Lax` | [Chrome or Chrome+1](#release-comments)  | Canary v82, Dev v82 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, please review the [Chrome Platform Status entry][ChromePlatformStatus5088147346030592].  |  
 | Referrer Policy: Default to `strict-origin-when-cross-origin` | [Chrome or Chrome+1](#release-comments)  | Canary v79, Dev v79 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, please review the [Chrome Platform Status entry][ChromePlatformStatus6251880185331712].  |  
