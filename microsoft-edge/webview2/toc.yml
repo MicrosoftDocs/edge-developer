@@ -369,6 +369,8 @@
         - name: Core
           href: reference/dotnet/0-9-494-reference-webview2.md
           items:
+            - name: Microsoft.Web.WebView2.Core namespace
+              href: reference/dotnet/0-9-494/namespace-microsoft-web-webview2-core.md
             - name: CoreWebView2
               href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2.md
             - name: CoreWebView2Controller
@@ -418,12 +420,12 @@
         - name: WinForms
           href: reference/winforms/0-9-494-reference-webview2.md
           items:
-            - name: WebView2
+            - name: WebView2 class
               href: reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md
         - name: WPF
           href: reference/wpf/0-9-494-reference-webview2.md
           items:
-            - name: CoreWebView2CreationProperties
+            - name: CoreWebView2CreationProperties class
               href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md
-            - name: WebView2
+            - name: WebView2 class
               href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md
