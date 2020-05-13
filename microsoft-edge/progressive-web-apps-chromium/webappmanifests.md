@@ -48,12 +48,12 @@ Many operating systems enable users to quickly share links and files with native
 
 ```json
 "share_target": {
-  "action": "/share.html",
-  "params": {
-    "title": "name",
-    "text": "description",
-    "url": "link"
-  }
+    "action": "/share.html",
+    "params": {
+        "title": "name",
+        "text": "description",
+        "url": "link"
+    }
 }
 ```
 
