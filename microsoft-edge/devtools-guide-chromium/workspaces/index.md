@@ -2,7 +2,7 @@
 title: Edit Files With Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -32,12 +32,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 > [!NOTE]
-> **Goal**: This tutorial provides hands-on practice in setting up and using Workspaces so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
+> The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
 
 > [!CAUTION]
 > **Prerequisites**: Before beginning this tutorial, you should know how to:  
 > *   [Use HTML, CSS, and JavaScript to build a web page][MDNWebGettingStarted]  
-> *   [Use DevTools to make basic changes to CSS][DevToolsCss]  
+> *   [Use DevTools to make basic changes to CSS][DevToolsCssIndex]  
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]  
 
 ## Overview   
@@ -88,6 +88,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
     -->
     <!--1.  Close the tab.  -->
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  -->  
+    
 1.  Create an `app` directory on your desktop.  Save copies of the files in the `workspaces-demo` directory.  For the rest of this tutorial this directory is referred to as `~/Desktop/app`.  
 1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.  
     
@@ -101,7 +102,7 @@ Complete this tutorial to get hands-on experience with Workspaces.
     python -m http.server # Python 3
     ```  
     
-1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it via a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
+1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
     
     > ##### Figure 2  
     > The demo  
@@ -183,7 +184,7 @@ The DOM tree is not HTML.
 
 *   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
 *   To display a page, a browser fetches HTML over the network, parses the HTML, and then converts it into a tree of DOM nodes.  
-*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, via the [`content`][MDNCSSContent] property.  
+*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
 *   Therefore, the final state of the page that users see may be very different from the HTML that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
@@ -192,7 +193,7 @@ In short, the **DOM Tree** `!==` HTML.
 -->
 ### Change HTML from the Sources panel   
 
-If you want to save a change to the HTML of the page, do it via the **Sources** panel.  
+If you want to save a change to the HTML of the page, do it using the **Sources** panel.  
 
 1.  Click the **Sources** tab.  
 1.  Click the **Page** tab.  
@@ -216,20 +217,20 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 1.  Type `QS`, then select **Show Quick Source**.  At the bottom of your DevTools window there is now a **Quick Source** tab.  The tab is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.  The **Quick Source** tab gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.  
     
     > ##### Figure 9  
-    > Opening the **Quick Source** tab via the **Command Menu**  
-    > ![Opening the Quick Source tab via Command Menu][ImageCommandMenuQuickSource]  
+    > Opening the **Quick Source** tab using the **Command Menu**  
+    > ![Opening the Quick Source tab using Command Menu][ImageCommandMenuQuickSource]  
 
 1.  Press `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 10](#figure-10).  
 1.  Type `script`, then select **app/script.js**.  
     
     > ##### Figure 10  
-    > Opening `script.js` via the **Open File** dialog  
-    > ![Opening script.js via the Open File dialog][ImageOpenFileDialog]  
+    > Opening `script.js` using the **Open File** dialog  
+    > ![Opening script.js using the Open File dialog][ImageOpenFileDialog]  
     
     > [!NOTE]
     > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.  
     
-1.  Add the following code to the bottom of **script.js** via the **Quick Source** tab.  
+1.  Add the following code to the bottom of **script.js** using the **Quick Source** tab.  
     
     ```javascript
     console.log('greetings from script.js');
@@ -248,39 +249,9 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 
 ## Next steps   
 
-<!--
-Congratulations, you have completed the tutorial.  <!--Click the button below to receive your prize.  -->  
-
-
-<style>
-.note::before {
-  content: "";
-}
-</style>
-<script>
-var label = 'Workspaces / Tutorial / Cake Dispensed';
-var feedback = {
-  "category": "DevTools",
-  "choices": [
-    {
-      "button": {
-        "text": "Dispense Prize"
-      },
-      "response": "🍰",
-      "analytics": {
-        "label": label
-      }
-    }
-  ]
-};
-</script>
-
-
--->
-
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
- 
+ <!--  -->
 
 
 
@@ -292,36 +263,41 @@ If you have more feedback on these topics or anything else, please use any of th
 
 <!-- image links -->  
 
-[ImageCommandMenuQuickSource]: images/workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab via Command Menu"  
-[ImageConsolePanel]: images/workspaces-demo-console.msft.png "Figure 3: The Console panel"  
-[ImageDemo]: images/workspaces-demo.msft.png "Figure 1: The demo"  
-<!--[ImageDownloadProjectButton]: images/glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
-<!--[ImageElementsCake]: images/workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
-[ImageFilesystem]: images/workspaces-demo-sources-filesystem.msft.png "Figure 4: The Filesystem tab"  
-[ImageGlitchProject]: images/glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
-[ImageMapping]: images/workspaces-demo-sources-filesystem-folder.msft.png "Figure 5: The Filesystem tab now shows a mapping between the local files and the network ones"  
-[ImageOpenFileDialog]: images/workspaces-demo-search-script.msft.png "Figure 10: Opening script.js via the Open File dialog"  
-[ImageScriptItalic]: images/workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 11: The link on the page is now italic"  
-[ImageSourcesCakeHTML]: images/workspaces-demo-sources-page-h1.msft.png "Figure 8: Changing HTML from the Sources panel"  
-[ImageStylesFuchsia]: images/workspaces-demo-sources-filesystem-css.msft.png "Figure 6: Viewing styles.css in a text editor"  
-[ImageStylesGreen]: images/workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
+[ImageGlitchProject]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-workspaces-demo-source.msft.png "Figure 1: A Glitch project with a randomly-generated name"  
+<!--[ImageDownloadProjectButton]: /microsoft-edge/devtools-guide-chromium/media/workspaces-glitch-advanced-options-download-project.msft.png "old Figure 2: The Download Project button"  -->  
+[ImageDemo]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo.msft.png "Figure 2: The demo"  
+[ImageConsolePanel]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-console.msft.png "Figure 3: The Console panel"  
+[ImageFilesystem]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-filesystem.msft.png "Figure 4: The Filesystem tab"  
+[ImageMapping]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png "Figure 5: The Filesystem tab now shows a mapping between the local files and the network ones"  
+[ImageStylesFuchsia]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-filesystem-css.msft.png "Figure 6: Viewing styles.css in a text editor"  
+[ImageStylesGreen]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-elements-styles-css.msft.png "Figure 7: The green indicator that the file is linked"  
+[ImageSourcesCakeHTML]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-sources-page-h1.msft.png "Figure 8: Changing HTML from the Sources panel"  
+<!--[ImageElementsCake]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-change-h1.msft.png "Old Figure 9: Attempting to change HTML from the DOM Tree of the Elements panel"  -->  
+[ImageCommandMenuQuickSource]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-show-quick-source.msft.png "Figure 9: Opening the Quick Source tab using Command Menu"  
+[ImageOpenFileDialog]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-search-script.msft.png "Figure 10: Opening script.js using the Open File dialog"  
+[ImageScriptItalic]: /microsoft-edge/devtools-guide-chromium/media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png "Figure 11: The link on the page is now italic"  
 
 <!-- links -->  
 
-[DevToolsCss]: ../css/index.md "Get Started With Viewing And Changing CSS"  
+[DevToolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->  
 
 [GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces Demo files | Glitch"  
+
 [MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content - CSS: Cascading Style Sheets | MDN"  
 [MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Getting started with the Web | MDN"  
 [MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Running a simple local HTTP server | MDN"  
 [MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to DOM - Web APIs | MDN"  
+
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
+
 [TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"  
+
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
+
 [WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"  
 
 > [!NOTE]

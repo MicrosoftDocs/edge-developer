@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
@@ -297,14 +297,14 @@ And when you are ready, here is how \(and why!\) to [Submit your PWA to the Micr
 
 <!-- links -->  
 
-[PwaGetStarted]: get-started.md "Get started with Progressive Web Apps"  
-[PwaIndexWindows10]: index.md#pwas-on-windows-10-edgehtml "PWAs on Windows 10 (EdgeHTML) - Progressive Web Apps on Windows"  
+[PwaGetStarted]: ./get-started.md "Get started with Progressive Web Apps"  
+[PwaIndexWindows10]: ./index.md#pwas-on-windows-10-edgehtml "PWAs on Windows 10 (EdgeHTML) - Progressive Web Apps on Windows"  
 [DevToolsGuide]: ../devtools-guide.md "Microsoft Edge (EdgeHTML) Developer Tools"  
 [DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Microsoft Store app - Microsoft Edge (EdgeHTML) Developer Tools"  
 [DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Service Workers"  
 [DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
 [DevGuideWhatsNew]: ../dev-guide/whats-new.md "What's New in EdgeHTML"  
-[WindowsRuntime]: ../windows-runtime.md "Windows Runtime (WinRT) for JavaScript"  
+[WindowsRuntime]: ../windows-runtime/index.md "Windows Runtime (WinRT) for JavaScript"  
 [WindowRuntimeUsingJavascript]: ../windows-runtime/using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript"  
 
 [ScriptingJsinrtHandlingWinRTEvents]: /scripting/jswinrt/handling-windows-runtime-events-in-javascript "Handling Windows Runtime Events in JavaScript"  

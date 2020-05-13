@@ -2,7 +2,7 @@
 title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 03/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -52,8 +52,7 @@ Shipping unused JavaScript or CSS is a common problem in web development.  For e
 ...
 ```  
 
-This stylesheet does not just include the code for the button component.  It contains the CSS for **all** of the Bootstrap components.  But you are not using any of the other Bootstrap components.  
-So your page is downloading a bunch of CSS that it does not need.  This extra CSS is a problem for the following reasons:  
+This stylesheet does not just include the code for the button component.  It contains the CSS for **all** of the Bootstrap components.  But you are not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it does not need.  This extra CSS is a problem for the following reasons.  
 
 *   The extra code slows down your page load.  <!--See [Render-Blocking CSS][render].  -->  
 *   If a user accesses the page on a mobile device, the extra code uses up their cellular data.  
@@ -72,7 +71,7 @@ So your page is downloading a bunch of CSS that it does not need.  This extra CS
 ## Record code coverage   
 
 1.  Click one of the following buttons in the **Coverage** tab:  
-    *   Click **Start Instrumenting Coverage And Reload Page** ![Start Instrumenting Coverage And Reload Page][ImageLoadIcon] if you want to see what code is needed to load the page.  
+    *   Click **Start Instrumenting Coverage And Reload Page** ![Start Instrumenting Coverage And Reload Page][ImageReloadIcon] if you want to see what code is needed to load the page.  
     *   Click **Instrument Coverage** ![Instrument Coverage][ImageRecordIcon] if you want to see what code is used after interacting with the page.  
 1.  Click **Stop Instrumenting Coverage And Show Results** ![Stop Instrumenting Coverage And Show Results][ImageStopIcon] when you want to stop recording code coverage.  
 
@@ -96,17 +95,17 @@ The table in the **Coverage** tab shows you what resources were analyzed, and ho
 
 <!-- image links -->  
 
-[ImageLoadIcon]: images/reload-icon.msft.png  
-[ImageRecordIcon]: images/record-icon.msft.png  
-[ImageStopIcon]: images/stop-icon.msft.png  
+[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
+[ImageStopIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-icon.msft.png  
 
-[ImageExample]: images/sources-resource-drawer-coverage.msft.png "Figure 1: Analyzing code coverage"  
-[ImageCoverage]: images/console-drawer-coverage-empty.msft.png "Figure 2: The Coverage tab"  
-[ImageExample]: images/sources-resource-drawer-coverage-selected.msft.png "Figure 3: A code coverage report"  
+[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage.msft.png "Figure 1: Analyzing code coverage"  
+[ImageCoverage]: /microsoft-edge/devtools-guide-chromium/media/coverage-console-drawer-coverage-empty.msft.png "Figure 2: The Coverage tab"  
+[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage-selected.msft.png "Figure 3: A code coverage report"  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Buttons - Bootstrap"  
 

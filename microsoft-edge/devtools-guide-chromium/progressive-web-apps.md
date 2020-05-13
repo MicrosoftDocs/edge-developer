@@ -2,7 +2,7 @@
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 04/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -130,7 +130,7 @@ up.
 
 ## Service worker caches 
 
-The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][WebCacheAPI].  
+The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][MDNWebCacheAPI].  
 
 > ##### Figure 3  
 > The **Cache Storage** Pane  
@@ -147,7 +147,7 @@ If you've got two or more caches open, you'll see them listed below the **Cache 
 
 ## Quota usage 
 
-Some responses within the Cache Storage pane may be flagged as being "**opaque**".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][HTTPCORSProtocol] is not enabled.  
+Some responses within the Cache Storage pane may be flagged as being "**opaque**".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][FetchHttpCorsProtocol] is not enabled.  
 
 <!--TODO:  Link Web "CDN" section when available. -->  
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -193,20 +193,23 @@ Related Guides:
 <!-- image links -->  
 
 [ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/manifest-pane.msft.png "Figure 1: The Manifest Pane"  
-<!--[ImageDesktopShelf]: images/io.msft.png "Add to desktop shelf"  -->
+<!--[ImageDesktopShelf]: /microsoft-edge/devtools-guide-chromium/media/io.msft.png "Add to desktop shelf"  -->
 [ImageServiceWorkersPane]: /microsoft-edge/devtools-guide-chromium/media/service-workers-pane.msft.png "Figure 2: The Service Workers pane"  
-<!--[ImageServiceWorkerErrors]: images/sw-error.msft.png "Service worker with errors"  -->
+<!--[ImageServiceWorkerErrors]: /microsoft-edge/devtools-guide-chromium/media/sw-error.msft.png "Service worker with errors"  -->
 [ImageServiceWorkersCachePane]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage-resources.msft.png "Figure 3: The Cache Storage Pane"  
 [ImageMultipleCaches]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage.msft.png "Figure 4: The **Cache Storage** dropdown"  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
 
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
-[HTTPCORSProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
+
+[FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
+
+[MDNWebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Cache - Web APIs | MDN"  
+
 [StackOverflowLimitationsForOpaqueResponses]: https://stackoverflow.com/q/39109789/385997 "Stack Overflow: What limitations apply to opaque responses?"  
-[WebCacheAPI]: https://developer.mozilla.org/docs/Web/API/Cache "Cache - Web APIs | MDN"  
 
 <!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
 <!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
