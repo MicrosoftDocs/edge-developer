@@ -44,11 +44,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
 
 1. In the **WinForms Designer** open the **Toolbox**
 2. Drag and Drop a **TextBox** into the WinForms App. Name the **TextBox** `addressBar`.
-<<<<<<< HEAD
 3. Drag and Drop a **Button** into the WinForms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton`.
-=======
-3. Drag and Drop a **Button** into the WinForms App. Change the text in the **Button** to `Go!` and name the **Button** goButton.
->>>>>>> 7a6fd06170f6271250d6e9df9ed77dee314cb87e
 
 
 ## Step 5 - Navigation events  
