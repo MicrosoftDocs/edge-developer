@@ -59,7 +59,7 @@ Start with a basic desktop project containing a single main window.
     
 ## Step 2 - Install WebView2 SDK  
 
-Next add the WebView2 SDK to the project.  For the preview, install the Win32 SDK using Nuget.  
+Next add the WebView2 SDK to the project.  For the preview, install the WebView2 SDK using Nuget.  
 
 1.  Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
     
@@ -69,6 +69,8 @@ Next add the WebView2 SDK to the project.  For the preview, install the Win32 SD
     
 1.  Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
     
+    PLACEHOLDER IMAGE
+
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage Nuget Packages":::
        Manage Nuget Packages
     :::image-end:::
@@ -83,7 +85,7 @@ You are all set to start developing applications using the WebView2 API.  Press 
 
 Next add a WebView to your application.  
 
-1.  Open `MainWindow.xaml`.  Add the WebView2 XML namespace by inserting the following line inside the `<Window/>` tag.  
+1.  Open `MainWindow.xaml`.  Add the WebView2 XAML namespace by inserting the following line inside the `<Window/>` tag.  
     
     ```xml
     xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
@@ -123,25 +125,23 @@ Next add a WebView to your application.
 1.  Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
     
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
-   Microsoft.com
-:::image-end:::
     
 ## Step 4 - Navigation  
 
-Add the ability to display web pages based on the URL entered by users in the address bar of the WebView2 control.  
+Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
 
 1.  In **MainWindow.xaml**, add an address bar by copying and pasting the following code snippet inside the DockPanel that contains the WebView.  
     
-    ```xml
-    <DockPanel DockPanel.Dock="Top">
-        <Button x:Name="ButtonGo"
-                DockPanel.Dock="Right"
-                Click="ButtonGo_Click"
-                Content="Go"
-        />
-        <TextBox Name="searchBar"/>
-    </DockPanel>
-    ```  
+```xml
+<DockPanel DockPanel.Dock="Top">
+    <Button x:Name="ButtonGo"
+            DockPanel.Dock="Right"
+            Click="ButtonGo_Click"
+            Content="Go"
+    />
+    <TextBox Name="addressBar"/>
+</DockPanel>
+```  
     
 Confirm that the `DockPanel` section of `MainWindow.xaml` looks like the following code snippet.  
 
@@ -149,7 +149,7 @@ Confirm that the `DockPanel` section of `MainWindow.xaml` looks like the followi
 <DockPanel>
     <DockPanel DockPanel.Dock="Top">
         <Button x:Name="ButtonGo" DockPanel.Dock="Right" Click="ButtonGo_Click" Content="Go"/>
-        <TextBox Name="addressBar"/>
+        <TextBox Name = "addressBar"/>
     </DockPanel>
     <wv2:WebView2 Name = "webView"
                   Source = "https://www.microsoft.com"
@@ -157,25 +157,29 @@ Confirm that the `DockPanel` section of `MainWindow.xaml` looks like the followi
 </DockPanel>
 ```  
 
-1.  Open `MainWindow.xaml.cs` in Visual Studio.  Add the `CoreWebView2` namespace by inserting the following code snippet at the top of `MainWindow.xaml.cs`.  
+2.  Open `MainWindow.xaml.cs` in Visual Studio.  Add the `CoreWebView2` namespace by inserting the following code snippet at the top of `MainWindow.xaml.cs`.  
     
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
     
-1.  In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which navigates the WebView to the URL entered in the address bar.  
+3.  In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which navigates the WebView to the URL entered in the address bar.  
     
     ```csharp
     private void ButtonGo_Click(object sender, RoutedEventArgs e)
     {
         if (webView != null && webView.CoreWebView2 != null)
         {
-            webView.CoreWebView2.Navigate(searchBar.Text);
+            webView.CoreWebView2.Navigate(addressBar.Text);
         }
     }
     ```  
 
-Press `F5` to build and run your project.  Enter a new URL in the address bar, and choose **Go**.  For example, enter `www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
+Press `F5` to build and run your project.  Enter a new URL in the address bar, and click **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
+
+> [!NOTE]
+> Make sure a complete URL is entered in the address bar. An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
+
 
 :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
    Bing
@@ -207,16 +211,16 @@ When there is an HTTP redirect, there are multiple `NavigationStarting` events.
 
 To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that do not use HTTPS.  
 
-In `MainWindow.xaml.cs`, modify the constructor as shown below and add the `EnsureHTTPS` function.  
+In `MainWindow.xaml.cs`, modify the constructor as shown below and add the `EnsureHttps` function.  
 
 ```csharp
 public MainWindow()
 {
     InitializeComponent();
-    webView.NavigationStarting += EnsureHTTPS;
+    webView.NavigationStarting += EnsureHttps;
 }
 
-void EnsureHTTPS(object sender, CoreWebView2NavigationStartingEventArgs args)
+void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 {
     String uri = args.Uri;
     if (!uri.StartsWith("https://"))
@@ -226,18 +230,18 @@ void EnsureHTTPS(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```
 
-In the constructor, EnsureHTTPS is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
+In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
-Press `F5` to build and run your project.  Confirm the application only navigates to sites that use HTTPS, not HTTP.  
+Press `F5` to build and run your project.  Confirm that when navigating to an HTTP site, the WebView remains unchanged. However, the WebView will navigate to HTTPS sites.
 
 ## Step 6 - Scripting  
 
 You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
 
-The Microsoft Edge WebViews team uses Scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHTTPS` function, it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md#executescriptasync) method.  
+You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md#executescriptasync) method.  
 
 ```csharp
-void EnsureHTTPS(object sender, CoreWebView2NavigationStartingEventArgs args)
+void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 {
     String uri = args.Uri;
     if (!uri.StartsWith("https://"))
@@ -256,14 +260,14 @@ Press `F5` to build and run your project.  Confirm that the application displays
 
 ## Step 7 - Communication between host and web content  
 
-Hosts and web content may communicate with each other using `postMessage` as follows:  
+The host and web content may communicate with each other using `postMessage` as follows:  
 
-*   Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `ICoreWebView2WebMessageReceivedEventHandler` on the host.  
+*   Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageRecieved` on the host.  
 *   Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
 
 This communication mechanism allows web content to pass messages to the host using native capabilities.  
 
-In your project, when the WebView2 control navigates to a URL, it displays the URL in the search bar and alerts the user of the URL displayed in the WebView2 control.  
+In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.  
 
 1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
     
@@ -271,7 +275,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     public MainWindow()
     {
         InitializeComponent();
-        webView.NavigationStarting += EnsureHTTPS;
+        webView.NavigationStarting += EnsureHttps;
         InitializeAsync();
     }
     
@@ -292,7 +296,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     
     void UpdateAddressBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
     {
-        String Uri = args.TryGetWebMessageAsString();
+        String uri = args.TryGetWebMessageAsString();
         addressBar.Text = Uri;
         webView.CoreWebView2.PostWebMessageAsString(Uri);
     }
@@ -316,7 +320,7 @@ async void InitializeAsync()
 }
 ```  
 
-Press `F5` to build and run the app.  Now the search bar displays the URI in the WebView and when you successfully navigate to a new URI, the WebView alerts the user of the URI displayed in the WebView.  
+Press `F5` to build and run the app.  Now the address bar displays the URI in the WebView and when you successfully navigate to a new URI, the WebView alerts the user of the URI displayed in the WebView.  
 
 :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
    addressBar
@@ -334,4 +338,4 @@ To learn more:
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebViews [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.  
+Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebView [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.  
