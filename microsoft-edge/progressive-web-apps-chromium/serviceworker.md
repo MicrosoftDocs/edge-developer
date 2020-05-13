@@ -10,7 +10,7 @@ ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
 
-# Use Service Workers To Manage Network Requests, Push Notifications, And More  
+# Use Service Workers to manage network requests and push notifications
 
 Service Workers are a special type of Web Worker with the ability to intercept, modify, and respond to all network requests using the `Fetch` API.  Service Workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.  
 
