@@ -60,7 +60,7 @@ Every Service Worker has a life cycle, you may connect to any corresponding even
     
 ## Using fetch in Service Workers  
 
-The main event you are using in a Service Worker is the `fetch` event.  The `fetch` event runs every time the browser attempts to access content within the scope of the Service Worker in the following code.  
+The main event that you use in a Service Worker is the `fetch` event.  The `fetch` event runs every time the browser attempts to access content within the scope of the Service Worker. The following code snippet shows how to add a listener to the fetch event.  
 
 ```javascript
 self.addEventListener( "fetch", event => {
