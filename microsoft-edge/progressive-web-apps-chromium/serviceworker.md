@@ -16,7 +16,7 @@ Service Workers are a special type of Web Worker with the ability to intercept, 
 
 ## Registering a Service Worker  
 
-Like all Web Workers, a Service Worker must exist in a separate file.  It is this file that you referenced when registering the Service Worker:  
+Similar to other Web Workers, Service Workers must exist in a separate file. You reference this file when registering the Service Worker, as shown in the following code snippet.  
 
 ```javascript
 if ( "serviceWorker" in navigator ) {
