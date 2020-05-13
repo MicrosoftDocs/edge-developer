@@ -28,7 +28,7 @@ Modern browsers provide different levels of support for Service Workers. As such
 
 ## The Service Worker lifecycle  
 
-The lifecycle of a service worker consists of multiple steps, with each step triggering an event. You can add listeners to these events to run code to perform an action. The following list presents a high-level view of the lifecycle and related events of service workers. 
+The lifecycle of a Service Worker consists of multiple steps, with each step triggering an event. You can add listeners to these events to run code to perform an action. The following list presents a high-level view of the lifecycle and related events of service workers. 
 
 1. Register the Service Worker.  
 1.  The browser downloads the JavaScript file, installs the Service Worker, and triggers the `install` event. You can use the `install` event to pre-cache any important and long-lived files, such as CSS files, JavaScript files, logo images, offline pages, and so on from your website.  
