@@ -417,11 +417,6 @@
                   href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md
                 - name: CoreWebView2WebResourceRequestedEventArgs
                   href: reference/dotnet/0-9-494/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
-        - name: WinForms
-          href: reference/winforms/0-9-494-reference-webview2.md
-          items:
-            - name: WebView2 class
-              href: reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md
         - name: WPF
           href: reference/wpf/0-9-494-reference-webview2.md
           items:
@@ -429,3 +424,8 @@
               href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md
             - name: WebView2 class
               href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md
+        - name: WinForms
+          href: reference/winforms/0-9-494-reference-webview2.md
+          items:
+            - name: WebView2 class
+              href: reference/winforms/0-9-494/microsoft-web-webview2-winforms-webview2.md
