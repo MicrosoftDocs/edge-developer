@@ -10,7 +10,7 @@ ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
 
-# Deeper OS Integrations Using The Web App Manifest  
+# Use the Web App Manifest to integrate your Progressive Web App into the Operating System
 
 A Web App Manifest of a website governs how your Progressive Web App \(PWA\) looks and behaves when installed on a device.  At the most basic level, the Manifest provides details on the name of your app, icons to use to represent your app in system menus, and the theme colors the operating system \(OS\) uses in the title bar.  The Manifest also enables you to unlock powerful features that allow your app to behave like other native apps on the system.  
 
