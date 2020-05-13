@@ -73,7 +73,7 @@ Within the `fetch` handler, you may control whether a request goes to the networ
 *   Return a response from the cache, if available; fallback to requesting the resource from the network.  
 *   Fetch a resource from the network, cache a copy, and return the response; fallback to a cached copy.  
 *   Take into account a user's preference to save data and supply a placeholder image for certain image requests.  
-*   Generate a synthetic response directly in the Service Worker.  
+*   Generate a response directly in the Service Worker.  
 
 ## Push Notifications  
 
