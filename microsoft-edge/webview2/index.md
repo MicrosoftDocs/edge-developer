@@ -18,8 +18,7 @@ The WebView2 control is currently in developer preview, during which you can pro
 
 ## Supported Platforms
 
-A developer preview is available for Win32 C++ on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. An Alpha version for WinUI 3.0 is available [here](https://docs.microsoft.com/uwp/toolkits/winui3/). In the future, we plan to support WebView2 on .NET.  
-
+A developer preview is available for Win32 C/C++ and WinForms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. An Alpha version for WinUI 3.0 is available [here](https://docs.microsoft.com/uwp/toolkits/winui3/). 
 ## Getting Started
 
 To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](./gettingstarted/win32.md) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [API reference](./webview2-api-reference.md) to learn about the API, and [Release Notes](./releasenotes.md) for changes made between releases.
