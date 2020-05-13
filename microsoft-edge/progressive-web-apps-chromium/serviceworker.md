@@ -12,7 +12,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 # Use Service Workers To Manage Network Requests, Push Notifications, And More  
 
-Service Workers are a special type of Web Worker with the ability to intercept, modify, and respond to all network requests using the `Fetch` API.  The Service Workers also have access to the `Cache` API, as well as other asynchronous client-side data stores like `IndexedDB` for resource storage.  
+Service Workers are a special type of Web Worker with the ability to intercept, modify, and respond to all network requests using the `Fetch` API.  Service Workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.  
 
 ## Registering a Service Worker  
 
