@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/13/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -56,7 +56,7 @@ A control to embed web content in a WPF application.
 [OnWindowPositionChanged](#onwindowpositionchanged) | This is overridden from HwndHost and called when our control's location has changed.
 [TabIntoCore](#tabintocore) | This is overridden from HwndHost and is called to inform us that tabbing has caused the focus to move into our control/window.
 
-This control is effectively a wrapper around the WebView2 COM API, which you can find documentation for here: [https://docs.microsoft.com/microsoft-edge/hosting/webview2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
+This control is effectively a wrapper around the WebView2 COM API, which you can find documentation for here: [https://aka.ms/webview2](https://aka.ms/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
 
 Upon creation, the control's CoreWebView2 property will be null. This is because creating the CoreWebView2 is an expensive operation which involves things like launching Edge browser processes. There are two ways to cause the CoreWebView2 to be created: 1) Call the EnsureCoreWebView2Async method. This is referred to as explicit initialization. 2) Set the Source property (which could be done from markup, for example). This is referred to as implicit initialization. Either option will start initialization in the background and return back to the caller without waiting for it to finish. To specify options regarding the initialization process, either pass your own CoreWebView2Environment to EnsureCoreWebView2Async or set the control's CreationProperties property prior to initialization.
 
