@@ -191,7 +191,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
-Press `F5` to build and run your project. Confirm that when navigating to an HTTP site, the WebView **remains unchanged**. However, the WebView will navigate to HTTPS sites.
+Select `F5` to build and run your project. Confirm that when navigating to an HTTP site, the WebView remains unchanged. However, the WebView will navigate to HTTPS sites.
 
 ## Step 7 - Scripting  
 
