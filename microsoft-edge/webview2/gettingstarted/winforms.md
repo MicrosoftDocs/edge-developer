@@ -125,7 +125,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     using Microsoft.Web.WebView2.Core;
     ```
     
-2.  In the **WinForms Designer**, double click on the `Go!` button. This should create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar. 
+2.  In the **WinForms Designer**, double-click on the `Go!` button to create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar. 
     
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
