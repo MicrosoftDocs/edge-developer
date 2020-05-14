@@ -22,7 +22,11 @@ A developer preview is available for Win32 C/C++ and Windows Forms and WPF on .N
 
 ## Getting Started
 
-To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. See [Getting Started](./gettingstarted/win32.md) for detailed instructions, [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for an interactive guide, [API reference](./webview2-api-reference.md) to learn about the API, and [Release Notes](./releasenotes.md) for changes made between releases.
+To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. Select one of the options below to get started!
+
+* [Getting Started with Win32 C/C++](./gettingstarted/win32.md)
+* [Getting Started with WPF](./gettingstarted/wpf.md)
+* [Getting Started with Windows Forms](./gettingstarted/winforms.md)
 
 Please leave us feedback in our [WebView2 Feedback](https://aka.ms/webviewfeedback) repo.
 
