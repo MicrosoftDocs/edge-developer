@@ -53,7 +53,7 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
     
     ![nuget](./media/installnuget.PNG)
     
-You are all set to start developing applications using the WebView2 API.  Press `F5` to build and run the project.  The running project displays an empty window.  
+You are all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
 
 ![emptyApp](./media/winforms-emptyApp.PNG)
 
