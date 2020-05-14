@@ -278,7 +278,7 @@ async void InitializeAsync()
 }
 ```  
 
-Press `F5` to build and run the app.  Now the address bar displays the URI in the WebView and when you successfully navigate to a new URI, the WebView alerts the user of the URI displayed in the WebView.  
+Select `F5` to build and run the app.  Confirm that the address bar displays the URL of the site displayed in the WebView. Also, when you successfully navigate to a new URL, the WebView alerts the user of the URL displayed in the WebView.  
 
 ![finalapp](./media/winforms-finalapp.PNG)
 
