@@ -268,13 +268,13 @@ conceptualContent:
     # Card
     - title: WebView2
       links:
-        - url: /microsoft-edge/hosting/webview2
-          itemType: reference
+        - url: /microsoft-edge/webview2/index
+          itemType: conceptual
           text: Overview
-        - url: /microsoft-edge/hosting/webview2/gettingstarted
-          itemType: reference
+        - url: /microsoft-edge/gettingstarted/win32
+          itemType: conceptual
           text: Getting Started with WebView2
-        - url: /microsoft-edge/hosting/webview2/reference-webview2
+        - url: /microsoft-edge/webview2/webview2-api-reference
           itemType: reference
           text: Reference
           
