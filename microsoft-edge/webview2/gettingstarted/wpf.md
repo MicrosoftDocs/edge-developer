@@ -7,7 +7,7 @@ ms.date: 05/12/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
 # Getting Started with WebView2 in WPF (Preview)  

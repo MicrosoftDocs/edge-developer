@@ -7,7 +7,7 @@ ms.date: 05/12/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
 # Getting Started with WebView2 in WinForm apps (Preview)  
@@ -142,6 +142,8 @@ Select `F5` to build and run your project.  Enter a new URL in the address bar, 
 > [!NOTE]
 > Ensure a complete URL is entered in the address bar. An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
 
+![bing](./media/winforms-bing.PNG)
+
 ## Step 6 - Navigation events  
 
 The application that hosts WebView2 controls listens to the following events that are raised by the WebView2 control during navigation to web pages.  
@@ -213,6 +215,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 Select `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that does not use HTTPS.  
 
+![https](./media/winforms-https.PNG)
 
 ## Step 8 - Communication between host and web content  
 
