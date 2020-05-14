@@ -46,8 +46,6 @@ productDirectory:
       links:
         - url: /deployedge/microsoft-edge-channels
           text: Microsoft Edge channel overview
-        - url: https://www.microsoftedgeinsider.com/download
-          text: Download a Microsoft Edge channel
         - url: /deployedge/edge-ie-mode
           text: Use enterprise features
     # Card
@@ -270,13 +268,13 @@ conceptualContent:
     # Card
     - title: WebView2
       links:
-        - url: /microsoft-edge/hosting/webview2
+        - url: /microsoft-edge/webview2/index
           itemType: reference
           text: Overview
-        - url: /microsoft-edge/hosting/webview2/gettingstarted
+        - url: /microsoft-edge/webview2/gettingstarted/win32
           itemType: reference
           text: Getting Started with WebView2
-        - url: /microsoft-edge/hosting/webview2/reference-webview2
+        - url: /microsoft-edge/webview2/webview2-api-reference
           itemType: reference
           text: Reference
           

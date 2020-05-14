@@ -724,6 +724,31 @@
       "source_path": "microsoft-edge/webview/WebResourceRequestedEvent.md",
       "redirect_url": "/microsoft-edge/hosting/webview/WebResourceRequestedEvent",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/gettingstarted.md",
+      "redirect_url": "/microsoft-edge/webview2/index#getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2.md",
+      "redirect_url": "/microsoft-edge/webview2/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/reference/icorewebview2.md",
+      "redirect_url": "/microsoft-edge/webview2/reference/win32/0-9-488/icorewebview2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
+      "redirect_url": "/microsoft-edge/webview2/releasenotes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/reference-webview2.md",
+      "redirect_url": "/microsoft-edge/webview2/webview2-api-reference",
+      "redirect_document_id": true
     }
   ]
 }
