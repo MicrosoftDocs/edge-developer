@@ -109,7 +109,7 @@ private void Form_Resize(object sender, EventArgs e)
 }
 ```
 
-Press `F5` to build and run your project.  Confirm that the app looks like the following:
+Select `F5` to build and run your project.  Confirm that the app displays similar to the following screenshot.
 
 ![app](./media/winforms-app.PNG)
 
