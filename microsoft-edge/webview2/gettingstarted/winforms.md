@@ -259,10 +259,11 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
     
-3.  In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:  
+3.  In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host injects a script in the web content to:  
     
-    1.  Injects a script to the web content that registers a handler to print message from the host.  
-    2.  Injects a script to the web content that posts the URL to the host.  
+    1.  Send the URL to the host using `postMessage`.
+    2.  Register an event handler to print a message sent from the host.  
+
     
 In `Form1.cs`, update `InitializeAsync` as shown in the following code snippet.  
 
