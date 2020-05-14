@@ -14,6 +14,20 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
+## 0.X.XXX
+
+[NuGet package][WebView2NuGetGallery0.X.XXX] | minimum Microsoft Edge version 8X.0.XXX.X.
+
+**Re-compile your app after updating the NuGet package.** 
+
+*   **Announcement:** WebView2 now supports WinForms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**
+*   Checkout the [WPF Getting Started Guide]() to get started building WPF applications and our [WPF Reference]() for WPF specific APIs
+*   Checkout the [WinForms Getting Started Guide]() to get started building WinForms applications and our [WinForms Reference]() for WinForms specific APIs
+*   Checkout [.NET Reference]() for CoreWebView2 APIs 
+*   **Known Issues:** We are aware of some issues in this pre-release that we will resolve in future releases
+    - **DPI Awareness:** WebView2 for WPF is currently not DPI aware. When initializing WebView2 on high DPI monitors, there is a known issue where the WebView at first initializes as a fraction of the window until the WebView is resized.
+    - **WPF Designer:** This release does not currently support the WPF designer. Place the WebView2 control in your app by directly modifying the appropriate XAML in a text editor
+
 ## 0.9.488
 
 [NuGet package][WebView2NuGetGallery0.9.488] | minimum Microsoft Edge version 84.0.488.0.

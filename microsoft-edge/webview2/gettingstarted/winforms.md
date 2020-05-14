@@ -1,0 +1,295 @@
+---
+description: Host web content in your WinForms app with the Microsoft Edge WebView 2 control
+title: Microsoft Edge WebView 2 for WinForm apps
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/12/2020
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
+---
+
+# Getting Started with WebView2 in WinForm apps (Preview)  
+
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/hosting/webview2/index).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-494-reference-webview2.md).  
+
+## Prerequisites  
+
+Ensure you installed the following list of pre-requisites before proceeding:  
+
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7.  The Microsoft Edge WebViews team recommends using the Canary channel version number 82.0.488.0 or later.  
+* [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.
+
+> [!NOTE]
+> If developing with **WinForms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
+
+## Step 1 - Create a single window application
+
+Start with a basic desktop project containing a single main window.  
+
+1. Open **Visual Studio.**
+
+2. Choose **WinForms .NET Framework App** or **WinForms .NET Core App**, and then choose **Next**.
+
+    ![newproject](./media/winforms-newproject.png)
+
+3. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later, or **.NET Core 3.0** or later.  
+
+    ![startproject](./media/winforms-startproj.png)
+
+4. Choose **Create** to create your project.
+
+## Step 2 - Install WebView2 SDK
+
+Next add the WebView2 SDK to the project.  For the preview, install the WebView2 SDK using Nuget.  
+
+1. Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
+
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
+       Nuget
+    :::image-end:::
+
+2. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
+
+    ![nuget](./media/installnuget.png)
+
+You are all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
+
+![emptyApp](./media/winforms-emptyApp.png)
+
+## Step 3 - Create a single WebView  
+
+Next add a WebView to your application.  
+
+1. Open the **WinForms Designer**.  
+2. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the WinForms App
+
+    ![toolbox](./media/winforms-toolbox.png)
+
+3. Change the `Name` property to `webView`.
+
+    ![toolbox](./media/winforms-properties.png)
+
+4. The `Source` property sets the initial URI displayed in the WebView2 control. Set the Source property to <https://www.microsoft.com>
+
+    ![toolbox](./media/winforms-source.png)
+
+Select `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
+
+![hellowebview](./media/winforms-hellowebview.png)
+
+> [!NOTE]
+> If you are working on a High DPI monitor, you may have to [configure your WinForms app for high DPI support](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+
+## Step 4 - Handle Window Resize Events
+
+Add a few more controls to your WinForm from the toolbox, and then handle window resize events appropriately.
+
+1. In the **WinForms Designer** open the **Toolbox**
+2. Drag and Drop a **TextBox** into the WinForms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
+3. Drag and Drop a **Button** into the WinForms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
+
+The app should look like the following in the designer:
+
+![designer](./media/winforms-designer.png)
+
+4. In **Form1.cs** define `Form_Resize` to keep the controls in place when the App Window is resized.
+
+```csharp
+public Form1()
+{
+    InitializeComponent();
+    this.Resize += new System.EventHandler(this.Form_Resize);
+}
+
+private void Form_Resize(object sender, EventArgs e)
+{
+    webView.Size = this.ClientSize - new System.Drawing.Size(webView.Location);
+    goButton.Left = this.ClientSize.Width - goButton.Width;
+    addressBar.Width = goButton.Left - addressBar.Left;
+}
+```
+
+Select `F5` to build and run your project.  Confirm that the app displays similar to the following screenshot.
+
+![app](./media/winforms-app.png)
+
+## Step 5 - Navigation
+
+Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
+
+1. In `Form1.cs` add the `CoreWebView2` namespace by inserting the following code snippet at the top of `Form1.cs`.  
+
+    ```csharp
+    using Microsoft.Web.WebView2.Core;
+    ```
+
+2. In the **WinForms Designer**, double-click on the `Go!` button to create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar.
+
+    ```csharp
+    private void goButton_Click(object sender, EventArgs e)
+    {
+        if (webView != null && webView.CoreWebView2 != null)
+        {
+            webView.CoreWebView2.Navigate(addressBar.Text);
+        }
+    }
+    ```  
+
+Select `F5` to build and run your project.  Enter a new URL in the address bar, and click **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
+
+> [!NOTE]
+> Ensure a complete URL is entered in the address bar. An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
+
+![bing](./media/winforms-bing.png)
+
+## Step 6 - Navigation events  
+
+The application that hosts WebView2 controls listens to the following events that are raised by the WebView2 control during navigation to web pages.  
+
+* `NavigationStarting`  
+* `SourceChanged`  
+* `ContentLoading`  
+* `HistoryChanged`  
+* `NavigationCompleted`  
+
+For more information, see [Navigation Events](../reference/win32/0-9-488/icorewebview2.md#navigation-events).  
+
+:::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
+   Navigation events
+:::image-end:::
+
+When an error occurs, the following events are raised and may depend on navigation to an error page.  
+
+* `SourceChanged`  
+* `ContentLoading`  
+* `HistoryChanged`  
+
+When there is an HTTP redirect, there are multiple `NavigationStarting` events.  
+
+To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that do not use HTTPS.  
+
+In `Form1.cs`, modify the constructor as shown below and add the `EnsureHttps` function.  
+
+```csharp
+public Form1()
+{
+    InitializeComponent();
+    this.Resize += new System.EventHandler(this.Form_Resize);
+
+    webView.NavigationStarting += EnsureHttps;
+}
+
+void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
+{
+    String uri = args.Uri;
+    if (!uri.StartsWith("https://"))
+    {
+        args.Cancel = true;
+    }
+}
+```
+
+In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
+
+Select `F5` to build and run your project. Confirm that when navigating to an HTTP site, the WebView remains unchanged. However, the WebView will navigate to HTTPS sites.
+
+## Step 7 - Scripting  
+
+You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
+
+You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync]() method.  
+
+```csharp
+void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
+{
+    String uri = args.Uri;
+    if (!uri.StartsWith("https://"))
+    {
+        webView.CoreWebView2.ExecuteScriptAsync($"alert('{uri} is not safe, try an https link')");
+        args.Cancel = true;
+    }
+}
+```  
+
+Select `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that does not use HTTPS.  
+
+![https](./media/winforms-https.png)
+
+## Step 8 - Communication between host and web content  
+
+The host and web content may communicate with each other using `postMessage` as follows:  
+
+* Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageReceived` on the host.  
+* Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
+
+This communication mechanism allows web content to pass messages to the host using native capabilities.  
+
+In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.  
+
+1. In **Form1.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async]() because the initialization of `CoreWebView2` is asynchronous.  
+
+    ```csharp
+    public Form1()
+    {
+        InitializeComponent();
+        this.Resize += new System.EventHandler(this.Form_Resize);
+        webView.NavigationStarting += EnsureHttps;
+        InitializeAsync();
+    }
+
+    async void InitializeAsync()
+    {
+        await webView.EnsureCoreWebView2Async(null);
+    }
+    ```  
+
+2. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In `Form1.cs` update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
+
+    ```csharp
+    async void InitializeAsync()
+    {
+        await webView.EnsureCoreWebView2Async(null);
+        webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
+    }
+
+    void UpdateAddressBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
+    {
+        String uri = args.TryGetWebMessageAsString();
+        addressBar.Text = uri;
+        webView.CoreWebView2.PostWebMessageAsString(uri);
+    }
+    ```  
+
+3. In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host injects a script in the web content to:  
+
+    1. Send the URL to the host using `postMessage`.
+    2. Register an event handler to print a message sent from the host.  
+
+In `Form1.cs`, update `InitializeAsync` as shown in the following code snippet.  
+
+```csharp
+async void InitializeAsync()
+{
+    await webView.EnsureCoreWebView2Async(null);
+    webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
+
+    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.postMessage(window.document.URL);");
+    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.addEventListener(\'message\', event => alert(event.data));");
+}
+```  
+
+Select `F5` to build and run the app.  Confirm that the address bar displays the URL of the site displayed in the WebView. Also, when you successfully navigate to a new URL, the WebView alerts the user of the URL displayed in the WebView.  
+
+![finalapp](./media/winforms-finalapp.png)
+
+Congratulations, you built your first WebView2 app!  
+
+## Next Steps  
+
+For more information on WebView2 features not covered in this walkthrough, see the [API reference](../reference/dotnet/0-9-494-reference-webview2.md).
+
+## Getting in touch with the Microsoft Edge WebView team  
+
+Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebView [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.  
