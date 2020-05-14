@@ -10,22 +10,22 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# WebView2 SDK release notes  
+# Release notes for WebView2 SDK  
 
 Release notes for [WebView2 SDK][WebView2NuGetGallery].  
 
-## 0.9.514
+## 0.9.515
 
-[NuGet package][WebView2NuGetGallery0.9.514] | minimum Microsoft Edge version 84.0.514.0.
+[NuGet package][WebView2NuGetGallery0.9.515] | minimum Microsoft Edge version 84.0.515.0.
 
 **Re-compile your app after updating the NuGet package.**
 
 * **Announcement:** WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**
-* Checkout the [WPF Getting Started Guide](./gettingstarted/wpf.md) to get started building WPF applications and our [WPF Reference](./reference/wpf/0-9-514-reference-webview2.md) for WPF specific APIs
-* Checkout the [Windows Forms Getting Started Guide](./gettingstarted/winforms.md) to get started building Windows Forms applications and our [Windows Forms Reference](./reference/winforms/0-9-514-reference-webview2.md) for Windows Forms specific APIs
-* Checkout [.NET Reference](./reference/dotnet/0-9-514-reference-webview2.md) for CoreWebView2 APIs
+* Checkout the [WPF Getting Started Guide](./gettingstarted/wpf.md) to get started building WPF applications and our [WPF Reference](./reference/wpf/0-9-515-reference-webview2.md) for WPF specific APIs
+* Checkout the [Windows Forms Getting Started Guide](./gettingstarted/winforms.md) to get started building Windows Forms applications and our [Windows Forms Reference](./reference/winforms/0-9-515-reference-webview2.md) for Windows Forms specific APIs
+* Checkout [.NET Reference](./reference/dotnet/0-9-515-reference-webview2.md) for CoreWebView2 APIs
 * **Known Issues:** We are aware of some issues in this pre-release that we will resolve in future releases
-  * **DPI Awareness:** WebView2 for WPF is currently not DPI aware. When initializing WebView2 on high DPI monitors, there is a known issue where the WebView at first initializes as a fraction of the window until the WebView is resized.
+  * **DPI Awareness:** WebView2 for WPF is currently not DPI aware. When initializing WebView2 on high DPI monitors, there is a known issue where the WebView at first initializes as a fraction of the window until the window is resized.
   * **WPF Designer:** This release does not currently support the WPF designer. Place the WebView2 control in your app by directly modifying the appropriate XAML in a text editor
 
 ## 0.9.488
@@ -181,6 +181,6 @@ Initial developer preview release.
 [WebView2NuGetGallery0.8.355]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.355 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.355"  
 [WebView2NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.430"
 [WebView2NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.488"
-[WebView2NuGetGallery0.9.514]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.514 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.514"
+[WebView2NuGetGallery0.9.515]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.515"
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/win32/0-8-190/webview2-idl.md#createwebview2environmentwithdetails "WebView Globals - CreateWebView2EnvironmentWithDetails function"  
