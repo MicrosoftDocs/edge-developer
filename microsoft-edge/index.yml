@@ -271,7 +271,7 @@ conceptualContent:
         - url: /microsoft-edge/webview2/index
           itemType: reference
           text: Overview
-        - url: /microsoft-edge/gettingstarted/win32
+        - url: /microsoft-edge/webview2/gettingstarted/win32
           itemType: reference
           text: Getting Started with WebView2
         - url: /microsoft-edge/webview2/webview2-api-reference
