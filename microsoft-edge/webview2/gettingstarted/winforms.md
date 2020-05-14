@@ -1,6 +1,6 @@
 ---
-description: Host web content in your WinForms app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for WinForm apps
+description: Host web content in your Windows Forms app with the Microsoft Edge WebView 2 control
+title: Microsoft Edge WebView 2 for Windows Forms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/12/2020
@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
-# Getting Started with WebView2 in WinForm apps (Preview)  
+# Getting Started with WebView2 in Windows Forms apps (Preview)  
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/hosting/webview2/index).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-494-reference-webview2.md).  
 
@@ -22,7 +22,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
 * [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.
 
 > [!NOTE]
-> If developing with **WinForms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
+> If developing with **Windows Forms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
 
 ## Step 1 - Create a single window application
 
@@ -30,7 +30,7 @@ Start with a basic desktop project containing a single main window.
 
 1. Open **Visual Studio.**
 
-2. Choose **WinForms .NET Framework App** or **WinForms .NET Core App**, and then choose **Next**.
+2. Choose **Windows Forms .NET Framework App** or **Windows Forms .NET Core App**, and then choose **Next**.
 
     ![newproject](./media/winforms-newproject.png)
 
@@ -62,8 +62,8 @@ You are all set to start developing applications using the WebView2 API.  Select
 
 Next add a WebView to your application.  
 
-1. Open the **WinForms Designer**.  
-2. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the WinForms App
+1. Open the **Windows Forms Designer**.  
+2. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App
 
     ![toolbox](./media/winforms-toolbox.png)
 
@@ -80,15 +80,15 @@ Select `F5` to build and run your project.  Confirm that your WebView2 control d
 ![hellowebview](./media/winforms-hellowebview.png)
 
 > [!NOTE]
-> If you are working on a High DPI monitor, you may have to [configure your WinForms app for high DPI support](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+> If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 ## Step 4 - Handle Window Resize Events
 
-Add a few more controls to your WinForm from the toolbox, and then handle window resize events appropriately.
+Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.
 
-1. In the **WinForms Designer** open the **Toolbox**
-2. Drag and Drop a **TextBox** into the WinForms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
-3. Drag and Drop a **Button** into the WinForms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
+1. In the **Windows Forms Designer** open the **Toolbox**
+2. Drag and Drop a **TextBox** into the Windows Forms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
+3. Drag and Drop a **Button** into the Windows Forms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
 
 The app should look like the following in the designer:
 
@@ -125,7 +125,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     using Microsoft.Web.WebView2.Core;
     ```
 
-2. In the **WinForms Designer**, double-click on the `Go!` button to create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar.
+2. In the **Windows Forms Designer**, double-click on the `Go!` button to create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar.
 
     ```csharp
     private void goButton_Click(object sender, EventArgs e)

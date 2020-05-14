@@ -428,7 +428,7 @@
               href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-corewebview2creationproperties.md
             - name: WebView2 class
               href: reference/wpf/0-9-494/microsoft-web-webview2-wpf-webview2.md
-        - name: WinForms
+        - name: Windows Forms
           href: reference/winforms/0-9-494-reference-webview2.md
           items:
             - name: WebView2 class

@@ -20,9 +20,9 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 **Re-compile your app after updating the NuGet package.** 
 
-*   **Announcement:** WebView2 now supports WinForms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**
+*   **Announcement:** WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**
 *   Checkout the [WPF Getting Started Guide]() to get started building WPF applications and our [WPF Reference]() for WPF specific APIs
-*   Checkout the [WinForms Getting Started Guide]() to get started building WinForms applications and our [WinForms Reference]() for WinForms specific APIs
+*   Checkout the [Windows Forms Getting Started Guide]() to get started building Windows Forms applications and our [Windows Forms Reference]() for Windows Forms specific APIs
 *   Checkout [.NET Reference]() for CoreWebView2 APIs 
 *   **Known Issues:** We are aware of some issues in this pre-release that we will resolve in future releases
     - **DPI Awareness:** WebView2 for WPF is currently not DPI aware. When initializing WebView2 on high DPI monitors, there is a known issue where the WebView at first initializes as a fraction of the window until the WebView is resized.
