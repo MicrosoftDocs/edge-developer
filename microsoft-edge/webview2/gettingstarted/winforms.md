@@ -81,8 +81,8 @@ Press `F5` to build and run your project.  Confirm that your WebView2 control di
 > [!NOTE]
 > If you are working on a High DPI monitor, you may have to [configure your WinForms app for high DPI support](https://docs.microsoft.com/en-us/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
-## Step 4 - Handle Resize  
-Add a few more controls to the app and handle app window resizing appropriately.
+## Step 4 - Handle Window Resize Events
+Add a few more controls to your WinForm from the toolbox, and then handle window resize events appropriately.
 
 1. In the **WinForms Designer** open the **Toolbox**
 2. Drag and Drop a **TextBox** into the WinForms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
