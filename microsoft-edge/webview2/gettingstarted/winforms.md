@@ -74,7 +74,7 @@ Next add a WebView to your application.
 
     ![toolbox](./media/winforms-source.PNG)
 
-Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
+Select `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
 ![hellowebview](./media/winforms-hellowebview.PNG)
 
