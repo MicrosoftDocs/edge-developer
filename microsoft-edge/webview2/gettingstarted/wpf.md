@@ -18,16 +18,16 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you installed the following list of pre-requisites before proceeding:  
 
-*   [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7.  The Microsoft Edge WebViews team recommends using the Canary channel version number 82.0.488.0 or later.  
-*   [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.  
+* [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7.  The Microsoft Edge WebViews team recommends using the Canary channel version number 82.0.488.0 or later.  
+* [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.  
 
-## Step 1 - Create a single window application 
+## Step 1 - Create a single window application
 
 Start with a basic desktop project containing a single main window.  
 
-1.  Open **Visual Studio.**
-2.  Choose **WPF .NET Core App** or **WPF .NET Framework App**, and then choose **Next**.  
-    
+1. Open **Visual Studio.**
+2. Choose **WPF .NET Core App** or **WPF .NET Framework App**, and then choose **Next**.  
+
     :::row:::
        :::column span="1":::
           :::image type="complex" source="./media/wpf-gettingstarted-wpfcore.png" alt-text="WPF core":::
@@ -37,11 +37,11 @@ Start with a basic desktop project containing a single main window.
        :::column span="1":::
           :::image type="complex" source="./media/wpf-gettingstarted-wpffw.png" alt-text="WPF Framework":::
              WPF Framework
-          :::image-end::: 
+          :::image-end:::
        :::column-end:::
     :::row-end:::
-    
-3.  Enter values for **Project name** and **Location**.  Select .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.  
+
+3. Enter values for **Project name** and **Location**.  Select .NET Framework 4.6.2 or later, or .NET Core 3.0 or later.  
 
 :::row:::
        :::column span="1":::
@@ -52,26 +52,26 @@ Start with a basic desktop project containing a single main window.
        :::column span="1":::
           :::image type="complex" source="./media/wpf-gettingstarted-createfw.png" alt-text="Create Framework":::
              Create Framework
-          :::image-end::: 
+          :::image-end:::
        :::column-end:::
     :::row-end:::
 
-4.  Choose **Create** to create your project.  
-    
+4. Choose **Create** to create your project.  
+
 ## Step 2 - Install WebView2 SDK  
 
 Next add the WebView2 SDK to the project.  For the preview, install the WebView2 SDK using Nuget.  
 
-1.  Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
-    
+1. Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
+
     :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
        Nuget
     :::image-end:::
-    
-2.  Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
-     
-    ![nuget](./media/installnuget.PNG)
-    
+
+2. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
+
+     ![nuget](./media/installnuget.PNG)
+
 You are all set to start developing applications using the WebView2 API.  Press `F5` to build and run the project.  The running project displays an empty window.  
 
 :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Empty app":::
@@ -82,14 +82,14 @@ You are all set to start developing applications using the WebView2 API.  Press 
 
 Next add a WebView to your application.  
 
-1.  Open `MainWindow.xaml`.  Add the WebView2 XAML namespace by inserting the following line inside the `<Window/>` tag.  
-    
+1. Open `MainWindow.xaml`.  Add the WebView2 XAML namespace by inserting the following line inside the `<Window/>` tag.  
+
     ```xml
     xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
     ```  
-    
+
     Confirm that the code in `MainWindow.xaml` looks like the following code snippet.  
-    
+
     ```xml
     <Window x:Class="WPF_Getting_Started.MainWindow"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -104,13 +104,13 @@ Next add a WebView to your application.
             Width="800"
         />
         <Grid>
-            
-        </Grid>
+
+                </Grid>
     </Window>
     ```  
 
-2.  Add the WebView2 control by replacing the `<Grid>` tags, with the following code snippet.  The `Source` property sets the initial URI displayed in the WebView2 control.  
-    
+2. Add the WebView2 control by replacing the `<Grid>` tags, with the following code snippet.  The `Source` property sets the initial URI displayed in the WebView2 control.  
+
     ```xml  
     <DockPanel>
         <wv2:WebView2 Name="webView"
@@ -118,19 +118,19 @@ Next add a WebView to your application.
         />
     </DockPanel>
     ```  
-    
-3.  Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
-    
+
+3. Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
+
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
        Microsoft.com
     :::image-end:::
-    
+
 ## Step 4 - Navigation  
 
 Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
 
-1.  In **MainWindow.xaml**, add an address bar by copying and pasting the following code snippet inside the DockPanel that contains the WebView.  
-    
+1. In **MainWindow.xaml**, add an address bar by copying and pasting the following code snippet inside the DockPanel that contains the WebView.  
+
 ```xml
 <DockPanel DockPanel.Dock="Top">
     <Button x:Name="ButtonGo"
@@ -141,7 +141,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     <TextBox Name="addressBar"/>
 </DockPanel>
 ```  
-    
+
 Confirm that the `DockPanel` section of `MainWindow.xaml` looks like the following code snippet.  
 
 ```xml
@@ -156,14 +156,14 @@ Confirm that the `DockPanel` section of `MainWindow.xaml` looks like the followi
 </DockPanel>
 ```  
 
-2.  Open `MainWindow.xaml.cs` in Visual Studio.  Add the `CoreWebView2` namespace by inserting the following code snippet at the top of `MainWindow.xaml.cs`.  
-    
+2. Open `MainWindow.xaml.cs` in Visual Studio.  Add the `CoreWebView2` namespace by inserting the following code snippet at the top of `MainWindow.xaml.cs`.  
+
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
-    
-3.  In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which navigates the WebView to the URL entered in the address bar.  
-    
+
+3. In **MainWindow.xaml.cs**, copy the following code snippet to create the `ButtonGo_Click` method, which navigates the WebView to the URL entered in the address bar.  
+
     ```csharp
     private void ButtonGo_Click(object sender, RoutedEventArgs e)
     {
@@ -179,7 +179,6 @@ Press `F5` to build and run your project.  Enter a new URL in the address bar, a
 > [!NOTE]
 > Make sure a complete URL is entered in the address bar. An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
 
-
 :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
    Bing
 :::image-end:::
@@ -188,11 +187,11 @@ Press `F5` to build and run your project.  Enter a new URL in the address bar, a
 
 The application that hosts WebView2 controls listens to the following events that are raised by the WebView2 control during navigation to web pages.  
 
-*   `NavigationStarting`  
-*   `SourceChanged`  
-*   `ContentLoading`  
-*   `HistoryChanged`  
-*   `NavigationCompleted`  
+* `NavigationStarting`  
+* `SourceChanged`  
+* `ContentLoading`  
+* `HistoryChanged`  
+* `NavigationCompleted`  
 
 For more information, see [Navigation Events](../reference/win32/0-9-488/icorewebview2.md#navigation-events).  
 
@@ -202,9 +201,9 @@ For more information, see [Navigation Events](../reference/win32/0-9-488/icorewe
 
 When an error occurs, the following events are raised and may depend on navigation to an error page.  
 
-*   `SourceChanged`  
-*   `ContentLoading`  
-*   `HistoryChanged`  
+* `SourceChanged`  
+* `ContentLoading`  
+* `HistoryChanged`  
 
 When there is an HTTP redirect, there are multiple `NavigationStarting` events.  
 
@@ -261,15 +260,15 @@ Press `F5` to build and run your project.  Confirm that the application displays
 
 The host and web content may communicate with each other using `postMessage` as follows:  
 
-*   Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageRecieved` on the host.  
-*   Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
+* Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageReceived` on the host.  
+* Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
 
 This communication mechanism allows web content to pass messages to the host using native capabilities.  
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.  
 
-1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-514/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
-    
+1. In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-514/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
+
     ```csharp
     public MainWindow()
     {
@@ -277,22 +276,22 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
         webView.NavigationStarting += EnsureHttps;
         InitializeAsync();
     }
-    
+
     async void InitializeAsync()
     {
         await webView.EnsureCoreWebView2Async(null);
     }
     ```  
-    
-2.  After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In **MainWindow.xaml.cs** update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
-    
+
+2. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In **MainWindow.xaml.cs** update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
+
     ```csharp
     async void InitializeAsync()
     {
         await webView.EnsureCoreWebView2Async(null);
         webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
     }
-    
+
     void UpdateAddressBar(object sender, CoreWebView2WebMessageReceivedEventArgs args)
     {
         String uri = args.TryGetWebMessageAsString();
@@ -300,12 +299,12 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
         webView.CoreWebView2.PostWebMessageAsString(uri);
     }
     ```  
-    
-3.  In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:  
-    
-    1.  Injects a script to the web content that registers a handler to print message from the host.  
-    2.  Injects a script to the web content that posts the URL to the host.  
-    
+
+3. In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host:  
+
+    1. Injects a script to the web content that registers a handler to print message from the host.  
+    2. Injects a script to the web content that posts the URL to the host.  
+
 In `MainWindow.xaml.cs`, update `InitializeAsync` as follows:  
 
 ```csharp
@@ -333,7 +332,7 @@ There are plenty of WebView2 functionalities that are not covered in this walkth
 
 To learn more:  
 
-*   Please explore [API reference](../reference/dotnet/0-9-514-reference-webview2.md) for detailed information about each API.  
+* Please explore [API reference](../reference/dotnet/0-9-514-reference-webview2.md) for detailed information about each API.  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
