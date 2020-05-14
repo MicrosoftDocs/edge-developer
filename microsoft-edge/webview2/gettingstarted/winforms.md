@@ -264,7 +264,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     1.  Injects a script to the web content that registers a handler to print message from the host.  
     2.  Injects a script to the web content that posts the URL to the host.  
     
-In `Form1.cs`, update `InitializeAsync` as follows:  
+In `Form1.cs`, update `InitializeAsync` as shown in the following code snippet.  
 
 ```csharp
 async void InitializeAsync()
