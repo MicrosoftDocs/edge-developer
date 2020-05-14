@@ -286,11 +286,7 @@ Congratulations, you built your first WebView2 app!
 
 ## Next Steps  
 
-There are plenty of WebView2 functionalities that are not covered in this walkthrough.  
-
-To learn more:  
-
-*   Please explore [API reference](../reference/dotnet/0-9-494-reference-webview2.md) for detailed information about each API.  
+For more information on WebView2 features not covered in this walkthrough, see the [API reference](../reference/dotnet/0-9-494-reference-webview2.md).
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
