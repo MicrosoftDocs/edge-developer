@@ -46,8 +46,6 @@ productDirectory:
       links:
         - url: /deployedge/microsoft-edge-channels
           text: Microsoft Edge channel overview
-        - url: https://www.microsoftedgeinsider.com/download
-          text: Download a Microsoft Edge channel
         - url: /deployedge/edge-ie-mode
           text: Use enterprise features
     # Card
