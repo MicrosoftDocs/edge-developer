@@ -1,6 +1,6 @@
 ---
 description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps Release Notes
+title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/14/2020
