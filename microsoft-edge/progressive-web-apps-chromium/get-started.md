@@ -172,13 +172,7 @@ The following steps have been adapted from the Push Rich Demo in [Service Worker
 
 ### Step 1 - Generate VAPID keys  
 
-Push notifications require VAPID \(Voluntary Application Server Identification\) keys in order to send push messages to the PWA client.  
-
-There are several VAPID key generators available online; you may use [vapidkeys.com][VapidkeysMain].  
-
-The output should result in a JSON object containing a public and private key.  Copy the keys, you are using both in a moment.  
-
-The [Mozilla Services engineering blog][MozillaServicesSendingVapidWebPushNotificationsPush] has a nice explainer on VAPID and WebPush if you are interested in the details of how it works behind the scenes.  
+Push notifications require VAPID \(Voluntary Application Server Identification\) keys in order to send push messages to the PWA client. There are several VAPID key generators available online \(for example, [vapidkeys.com][VapidkeysMain]\). After generation, you should get a JSON object containing a public and private key. Save the keys for subsequent steps in this tutorial. For information on how VAPID and WebPush works, see [Sending VAPID identified WebPush Notifications via Mozilla’s Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
 
 ### Step 2 - Subscribe to push notifications  
 
