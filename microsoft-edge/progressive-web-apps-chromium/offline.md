@@ -162,10 +162,6 @@ To learn more about managing offline scenarios, see the following pages.
 *   [Web Storage][MDNWebStorageApi]  
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]  
-
-The following publications are also useful for the topic.  
-
-*   [Going Offline][AbookapartGoingOffline] by Jeremy Keith  
 *   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas] by Aaron Gustafson  
 
 <!-- links -->  
