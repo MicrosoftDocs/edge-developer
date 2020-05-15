@@ -293,7 +293,7 @@ Time to test push notifications in your PWA!
     
     You have the basics of PWA push notifications.  In a real app, the next steps are implemented in a way to manage and store push subscriptions and to properly [encrypt][NPMWebPushEncrypt] payload data being sent across the wire.  
     
-## Going further  
+## Next steps
 
 This guide demonstrated the basic anatomy of a Progressive Web App and PWA development tools including Visual Studio Code, PWA Builder, and Microsoft Edge DevTools \(`F12`\).  
 
