@@ -450,10 +450,12 @@
       href: privacy-whitepaper.md
     - name: Progressive Web Apps (Chromium)
       href: progressive-web-apps-chromium/index.md
-      items: 
+      items:         
+        - name: Offline scenarios
+          href: progressive-web-apps-chromium/offline.md        
+        - name: Service Workers
+          href: progressive-web-apps-chromium/serviceworker.md        
         - name: Web App Manifests
-          href: progressive-web-apps-chromium/webappmanifests.md        
-        - name: Topic 2
           href: progressive-web-apps-chromium/webappmanifests.md        
     - name: Progressive Web Apps (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
