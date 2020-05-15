@@ -245,7 +245,7 @@ self.addEventListener('push', function (event) {
     }
 });
 
-//Respond to the user selecting the toast notification
+// Respond to the user selecting the toast notification.
 self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification.tag);
     event.notification.close();
