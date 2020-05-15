@@ -4,7 +4,7 @@ description: There are a host of technologies that enable you to create more res
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
