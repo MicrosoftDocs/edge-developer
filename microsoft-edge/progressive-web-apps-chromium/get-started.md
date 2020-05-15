@@ -106,9 +106,7 @@ To add an app manifest to the web app:
 
 Service workers are the key technology behind PWAs, enabling scenarios like offline support, advanced caching, and background tasks previously limited to native apps.  
 
-A service worker is a special JavaScript file that intercepts network requests from your web app and serves the requested resources from a cache.  Service workers run in the background and performs tasks like push notifications, background fetch, icon badging, and more \(even when your PWA is not running\).  
-
-For more info, see the comprehensive [Using Service Workers][MDNUsingServiceWorkers] guide and [Service Worker API][MDNServiceWorkerApi] reference.  
+Service workers are background tasks that intercept network requests from your web app. They can perform tasks, even when your PWA is not running, such as serving requested resources from a cache, sending push notifications, running background fetch tasks, badging icons, and so on. Service workers are defined in a special JavaScript file. For more information, see [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].  
 
 For this tutorial, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
 
