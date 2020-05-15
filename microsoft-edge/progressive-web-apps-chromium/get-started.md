@@ -305,7 +305,6 @@ The following is a list of additional tasks to learn when building real-world PW
 * [Cross-browser testing][BrowserStackTestEdgeBrowser] 
 * Implement best practices such as [Webhint][Webhint]   
 
-Review the other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience.  
 
 ## See also  
 
