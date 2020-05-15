@@ -26,7 +26,6 @@ Developers often have to chose between building a web application or a native ap
 
 ![webnative](./media/WebView2/webnative.PNG)
 
-Web applications allow for a broad reach. Web developers can reuse most, if not all of their code, across all different platforms. Native applications, however, can utilize the capabilities of the entire native platform.
 
 Hybrid applications allow developers to enjoy the best of both worlds. Hybrid application developers benefit from the ubiquity and strength of the web platform as well as the power and full capabilities of the native platform.
 
