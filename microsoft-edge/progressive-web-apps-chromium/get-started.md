@@ -232,7 +232,7 @@ Now that a subscription is set up in your PWA, add handlers to the service worke
 In your `pwabuilder-sw.js` file, add the following handlers.  
 
 ```javascript
-//Respond to a server push with a user notification
+// Respond to a server push with a user notification.
 self.addEventListener('push', function (event) {
     if (Notification.permission === "granted") {
         const notificationText = event.data.text();
