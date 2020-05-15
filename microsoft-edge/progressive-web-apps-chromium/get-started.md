@@ -127,7 +127,7 @@ Your web app now has a service worker that uses the cache-first strategy, which 
 
 Use the following steps to confirm that your service worker runs.
 
-1.  Your app should already be running on `localhost:3000`.  If not, go ahead and run the following command.   
+1.  Navigate to your web app using `http://localhost:3000`.  If your web app is not available, run the following command.   
     
     ```shell
     npm start
