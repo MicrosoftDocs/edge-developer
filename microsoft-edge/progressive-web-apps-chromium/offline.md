@@ -1,6 +1,6 @@
 ---
 title: Handle offline and network instability scenarios with the Cache API, Service Worker, and friends
-description: There are a host of technologies that enable you to create more resilient experience in the face of uncertain network conditions.
+description: Learn how to use supporting technologies to create resilient experiences to cater for different network conditions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2020
