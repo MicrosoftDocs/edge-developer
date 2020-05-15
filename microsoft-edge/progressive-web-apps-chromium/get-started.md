@@ -269,8 +269,7 @@ self.addEventListener('notificationclick', function (event) {
 
 Perform the following steps to test push notifications in your PWA.
 
-1.  Run your PWA in your browser at `localhost:3000`.  
-    As your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge asks if you want this PWA to show notifications.  
+1.  Navigate to your PWA at `http://localhost:3000`. When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow this PWA to show notifications. Select **Allow**. 
     
     :::image type="complex" source="./media/notification-permission.png" alt-text="Permission dialog for enabling notifications":::
        Permission dialog for enabling notifications
