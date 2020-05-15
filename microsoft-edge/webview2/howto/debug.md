@@ -41,7 +41,7 @@ To enable WebView2 script debugging, open the context menu (right-click) on your
    Visual Studio JavaScript Debugger
 :::image-end:::
 
-### Visual Studio Code  
+## Visual Studio Code  
 
 You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications).  
 
