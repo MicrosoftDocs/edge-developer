@@ -55,7 +55,7 @@ Now browse to `http://localhost:3000` to view your new web app.
 
 Now that you have a simple web app, extend it to be a PWA by adding the [3 requirements for PWAs][PwaEdgehtmlIndexRequirements]: [HTTPS](#https), a [Web App Manifest](#web-app-manifest), and a [Service Worker](#service-worker).  
 
-### HTTPS  
+### Step 1 - Use HTTPS  
 
 Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], require the use of HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.  
 
