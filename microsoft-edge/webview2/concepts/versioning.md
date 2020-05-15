@@ -19,7 +19,7 @@ To utilize WebView2 in your app, the minimum version of [Microsoft Edge (Chromiu
 > [!NOTE]
 > WebView2 is currently in Preview.  While, the Microsoft Edge WebViews team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed as some newer versions of the browser may not support older SDK versions.  If there are breaking changes between browser versions and SDKs, the Microsoft Edge WebViews team indicates the changes in the [release notes](../releasenotes.md)  
 
-In the future, the Microsoft Edge WebViews team plans to change the distribution model.  The Microsoft Edge WebViews team plans to remove the direct dependency on the Microsoft Edge browser from WebView2.  To learn more, see [WebView2 Runtime]() in the [Distribution]() section.  
+In the future, the Microsoft Edge WebViews team plans to change the distribution model.  The Microsoft Edge WebViews team plans to remove the direct dependency on the Microsoft Edge browser from WebView2.  To learn more, see [WebView2 Runtime]() in the [Distribution](./distribution.md) section.  
 
 ## Experimental APIs  
 
