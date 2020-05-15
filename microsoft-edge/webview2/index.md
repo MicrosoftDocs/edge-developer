@@ -39,7 +39,7 @@ Hybrid applications allow developers to enjoy the best of both worlds. Hybrid ap
 5. Code sharing: adding web code to your codebase allows for increased re-use across multiple platforms.
 6. Microsoft support: When WebView2 GA’s, Microsoft will provide support and add new feature requests.
 7. Evergreen distribution: rely on an up-to-date version of Chromium with regular platform updates and security patches.
-8. **Fixed Distribution (Coming Soon):** choice to package the Chromium bits in your application 
+8. Fixed distribution (coming soon): choice to package the Chromium bits in your application.
 9. **Incremental Adoption:** add web components piece by piece into your application
 
 ## Getting Started
