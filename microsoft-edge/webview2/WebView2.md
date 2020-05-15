@@ -3,106 +3,74 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
-ms.topic: conceptual
+ms.date: 02/20/2020
+ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Microsoft Edge WebView2 (developer preview)
+# Introduction to Microsoft Edge WebView2 (Preview)
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/) as the rendering engine.
+The Microsoft Edge WebView2 control enables you to embed web technologies (HTML, CSS, Javacript) in your native application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/) as the rendering engine. 
 
-The WebView2 control is currently in developer preview, during which you can prototype your solutions and share feedback with us to shape the future stable API. There will likely be some breaking changes as we evolve the API during preview, and when this happens, you will need to have both the WebView2 SDK and the Microsoft Edge (Chromium) browser updated. Breaking changes will be noted in the [release notes](./releasenotes.md) of the SDK. This will lock down as WebView2 approaches beta and stable.
+![whatwebview](./webview2/images/whatwebview.PNG)
 
-## Supported Platforms
+With WebView2, developers can embed web code in parts of their native application or build the entire native application within a single WebView. View our guides to [Get Started](WebView2.md#GettingStarted)!
 
-A developer preview is available for Win32 C/C++ and Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. An Alpha version for WinUI 3.0 is available [here](https://docs.microsoft.com/uwp/toolkits/winui3/).
+> [!NOTE]
+> The WebView2 Preview is intended for early prototyping and to gather feedback from the developer community to helps us shape the future stable API. There will be [breaking changes](webview2/releasenotes.md), so it should NOT be used for production apps.
+
+## Hybrid Application Approach
+
+Developers often have to chose between building a web application or a native application. This decision hinges on the trade-off between Reach and Power.
+
+![webnative](./webview2/images/webnative.PNG)
+
+Web applications allow for a broad reach. Web developers can reuse most, if not all of their code, across all different platforms. Native applications, however, can utilize the capabilities of the entire native platform.
+
+Hybrid applications allow developers to enjoy the best of both worlds. Hybrid application developers benefit from the ubiquity and strength of the web platform as well as the power and full capabilities of the native platform.
+
+## WebView2 Benefits 
+![webviewreasons](./webview2/images/webviewreasons.PNG)
+
+1. **Web Ecosystem & Skillset:** utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem
+2. **Rapid Innovation:** web development allows for faster deployment and iteration
+3. **Windows 7, 8, 10 Support:** support for a consistent user experience across Windows 7, 8, and 10 
+4. **Native Capabilities:** access the full set of Native APIs.
+5. **Code Sharing:** adding web code to your codebase allows for increased portability across multiple platforms 
+6. **Microsoft Support:** When WebView2 GA’s it will have the full backing of Microsoft in terms of support and feature requests
+7. **Evergreen Distribution:** rely on an up to date version of Chromium with regular and consistent platform updates and security patches 
+8. **Fixed Distribution (Coming Soon):** choice to package the Chromium bits in your application 
+9. **Incremental Adoption:** add web components piece by piece into your application
 
 ## Getting Started
-
-To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. Select one of the options below to get started!
-
-* [Getting Started with Win32 C/C++](./gettingstarted/win32.md)
-* [Getting Started with WPF](./gettingstarted/wpf.md)
-* [Getting Started with Windows Forms](./gettingstarted/winforms.md)
-
-Please leave us feedback in our [WebView2 Feedback](https://aka.ms/webviewfeedback) repo.
-
-## WebView2 Samples
+To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget)installed. Select one of the options below to get started! 
+- [Getting Started with Win32 C/C++]()
+- [Getting Started with WPF]()
+- [Getting Started with WinForms]()
 
 The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDK's features and their API use patterns. As we add more features to the WebView2 SDK, we will regularly update our sample applications.
+- [Win32 C/C++ Sample]()
+- [WPF Sample]()
+- [WinForms Sample]()
 
-## App Distribution
+## Next Steps
+For more thorough information on how to build and deploy WebView2 application checkout our conceptual documentation and how-to guides.
 
-The WebView2 control utilizes the Microsoft Edge (Chromium) browser. When distributing your app it is important to ensure that the Edge browser is installed on all user machines where your application will run. You should also be aware of which version and channel is installed, e.g. Stable, Beta, Dev, or Canary. The WebView2 controller will utilize the most stable version of the browser when installed on a machine.
+### Concepts
+1. [WebView2 SDK and Microsoft Edge Versioning]()
+2. [Distributing WebView2 Applications]()
+3. [Utilizing and Disabling Microsoft Edge Browser Features in WebView2]()
 
-### Future Planned Changes
+### How-To Guides
+1. [Debugging WebView2 with DevTools and Visual Studio Script Debugging]()
+2. [Automating and Debugging WebView2 with Microsoft EdgeDriver]()
 
-We recognize that the Edge browser may not be available on all user machines your application is intended to run, or that control of the Edge browser install process may be difficult. To ensure your application will run on all machines, independent of the install status of the client Microsoft Edge browser, we will release the Microsoft Edge WebView2 Runtime. We will further update WebView2 to search for the stable version of the Runtime before searching for pre-release versions of the installed browser.
+## Supported Platforms
+A developer preview is available for Win32 C/C++, .NET Framework 4.6.2 or later, .NET Core 3.0 or later, [WinUI 3.0](https://docs.microsoft.com/uwp/toolkits/winui3/) on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
 
-We also recognize that some app developers operate in constrained environments, and so intend to support two distribution options, evergreen and fixed version.
+## Feedback
 
-Evergreen is the recommended distribution model for most developers. In this mode updates to the WebView2 Runtime will be fully managed by Microsoft keeping you up to date automatically without additional effort from your application. With this self-updating model you can be assured that your app is taking advantage of the latest features and security updates for hosted web content.
-
-For constrained environments we will also support a fixed version distribution model. In this model your application will select and package a specific WebView2 version. Updates to the WebView version will be the responsibility of the application and will be independent of any managed Microsoft update mechanisms. You should choose this model if it is crucial to be able to have absolute control over the browser version and update times your application is taking advantage of.
-
-## Microsoft Edge WebView2 Runtime
-
-The Microsoft Edge WebView2 Runtime is a packaging of the browser binaries optimized for use by WebView2 applications. It will function stand alone or side-by-side with a client Edge Browser install. A single install of the run-time will support any number of WebView2 applications. Install of the runtime will not appear as a browser install to end-user, i.e. no desktop shortcuts, start menu entry, or protocol registration.
-
-An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred. At application install time you should check the current install status, which can be determined by using [GetAvailableCoreWebView2BrowserVersionString](./reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring). If the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.
-
-## Microsoft Edge WebView2 SDK
-
-To utilize WebView2 within your app you'll need to install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability.
-
-The pre-release version will contain additional [experimental APIs](./reference/win32/0-9-488-reference-webview2.md#experimental). These are APIs and functionality we are evaluating and would like [feedback](https://aka.ms/webviewfeedback) on before promoting them to the release version.
-
-## Development against Upcoming Versions
-
-For development you may want to target Beta, Dev, or Canary to ensure your application will work with upcoming versions or to take advantage of upcoming features. All pre-released channels are provided by the installed client Microsoft Edge browser. To target one of these channels ensure the installed Edge browser on your development machine is the channel you'd like. Developers can use a registry key or environment variable to change the WebView2 from the most stable version found to the least stable found. See more details in [CreateCoreWebView2EnvironmentWithOptions](./reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithoptions).
-
-## Debugging WebView2
-
-### DevTools
-
-You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, just as you would in the browser. While having focus on the WebView window, press `F12`, or press `Ctrl` + `Shift` + `I`, or Right Click + choose `Inspect` to open Developer Tools.
-
-:::image type="complex" source="./media/f12.png" alt-text="F12":::
-   F12
-:::image-end:::  
-
-<!--![F12](./media/f12.png)  -->  
-
-**Note when debugging application in Visual Studio with the native debugger attached, `F12` may trigger the native debugger instead of Developer Tools. Use `Ctrl` + `Shift` + `I`, or Right Click + `Inspect` to avoid potential hotkey conflict.**
-
-### Visual Studio
-
-You can use the script debugger in Visual Studio 2019 (minimum version 16.4 Preview 2) to debug your script within WebView2 right from the IDE. Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.
-
-:::image type="complex" source="./media/vs-js-diagnostics.jpg" alt-text="Visual Studio JavaScript diagnostics":::
-   Visual Studio JavaScript diagnostics
-:::image-end:::  
-
-<!--![vs-js-diagnostics](./media/vs-js-diagnostics.jpg)  -->  
-
-Right click on your project and select **Properties**. Under **Configuration Properties** > **Debugging** > **Debugger Type**,  choose the **JavaScript (WebView2)** option to enable WebView2 script debugging. More details to follow soon.
-
-:::image type="complex" source="./media/vs-script-debugger.jpg" alt-text="Visual Studio script debugger":::
-   Visual Studio script debugger
-:::image-end:::  
-
-<!--![vs-script-debugger](./media/vs-script-debugger.jpg)  -->  
-
-### Visual Studio Code
-
-You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications).
-
-## Getting in touch with the WebView2 team  
-
-Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.
-
-It's also a good place to search for known issues.
+Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. It’s also a good place to search for known issues.
 During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.
