@@ -18,7 +18,7 @@ The Microsoft Edge WebView2 control enables you to embed web technologies (HTML,
 
 
 > [!NOTE]
-> The WebView2 Preview is intended for early prototyping and to gather feedback from the developer community to helps us shape the future stable API. There will be [breaking changes](releasenotes.md), so it should NOT be used for production apps.
+> The WebView2 Preview is intended for early prototyping and to gather feedback to help us shape the API. We do not recommend that you use this in your production apps because there may be [breaking changes](releasenotes.md).
 
 ## Hybrid Application Approach
 
