@@ -75,7 +75,7 @@ self.addEventListener( "fetch", event => {
 
 The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see if the file already exists in any cache \(using the `match()` method\). If the request exists in the cache, that cached result is returned. If not, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned. If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
 
-Every PWA is different and each likely has a unique caching strategy, these are just a simple introduction.  Chances are your code looks much different, you may even have different caching strategies for different routes within the same application too!  
+This simple introduction shows how to use caching in your progressive web app (PWA). Each PWA is different and may use different caching strategies. Your code may look different, and you may use different caching strategies for different routes within the same application.
 
 ## IndexedDB  
 
