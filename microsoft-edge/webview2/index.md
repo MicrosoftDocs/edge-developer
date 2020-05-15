@@ -40,7 +40,7 @@ Hybrid applications allow developers to enjoy the best of both worlds. Hybrid ap
 6. Microsoft support: When WebView2 GA’s, Microsoft will provide support and add new feature requests.
 7. Evergreen distribution: rely on an up-to-date version of Chromium with regular platform updates and security patches.
 8. Fixed distribution (coming soon): choice to package the Chromium bits in your application.
-9. **Incremental Adoption:** add web components piece by piece into your application
+9. Incremental adoption: add web components piece by piece to your application.
 
 ## Getting Started
 To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget)installed. Select one of the options below to get started! 
