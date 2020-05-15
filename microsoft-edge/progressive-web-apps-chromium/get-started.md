@@ -146,7 +146,6 @@ Use the following steps to confirm that your service worker runs.
        Service Worker cache in Microsoft Edge DevTools (F12)
     :::image-end:::
     
-    You should see all the resources cached by the service worker, such as the app icon, app manifest, CSS and JS files.  
     
 1.  Try your PWA as an offline app.  In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.  
     
