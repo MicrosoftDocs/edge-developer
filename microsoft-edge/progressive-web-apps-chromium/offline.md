@@ -16,7 +16,7 @@ For many years organizations were reluctant to invest heavily in web-based softw
 
 ## The Cache API  
 
-With the introduction of [Service Workers][MDNServiceWorker], the web platform also got a new API that provided access to manage cached resources: the `Cache` API.  This Promise-based API allows developers to store and retrieve all kinds of web resources—HTML, CSS, JavaScript, images, JSON, and so on.  Most typically, the `Cache` API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.  
+With the introduction of [Service Workers][MDNServiceWorker], the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
 
 One common use for the `Cache` API is to pre-cache critical resources when a Service Worker is installed.  
 
