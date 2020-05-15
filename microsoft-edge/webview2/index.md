@@ -22,7 +22,7 @@ The Microsoft Edge WebView2 control enables you to embed web technologies (HTML,
 
 ## Hybrid Application Approach
 
-Developers often have to chose between building a web application or a native application. This decision hinges on the trade-off between Reach and Power.
+Developers often have to choose between building a web application or a native application. This decision hinges on the trade-off between reach and power. Web applications allow for a broad reach. Web developers can reuse most, if not all of their code, across all different platforms. Native applications, however, can utilize the capabilities of the entire native platform.
 
 ![webnative](./media/WebView2/webnative.PNG)
 
