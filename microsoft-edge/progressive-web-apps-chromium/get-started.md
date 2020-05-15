@@ -240,8 +240,8 @@ self.addEventListener('push', function (event) {
             body: notificationText,
             icon: 'images/icon512.png'
         });
-        //Ensure the toast notification is displayed before exiting this function
-        event.waitUntil(shotNotification);
+        // Ensure the toast notification is displayed before exiting this function.
+        event.waitUntil(showNotification);
     }
 });
 
