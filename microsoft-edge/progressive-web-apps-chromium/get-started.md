@@ -227,7 +227,7 @@ For more information, see [PushManager][MDNPushManager] and [Web-Push][NPMWebPus
 
 ### Step 3 - Listen for push notifications  
 
-With your push subscription set up, the remainder of the work happens in the service worker.  First you must set up a handler for server-sent push events, and respond with a toast notification \(if permission was granted\) displaying the push data payload.  Next you add a click handler for the toast to dismiss the notification and sort through a list of currently open windows to open, focus, or open and focus the intended PWA client page.  
+Now that a subscription is set up in your PWA, add handlers to the service worker to respond to push events \(sent from the server\) to display toast notifications with the received message’s data. You’ll also need to add a click handler to dismiss the toast notification, open and/or focus any open windows, or open and focus a new window to display a PWA client page.
 
 In your `pwabuilder-sw.js` file, add the following handlers.  
 
