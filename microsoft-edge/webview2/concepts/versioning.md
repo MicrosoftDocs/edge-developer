@@ -23,7 +23,7 @@ In the future, the Microsoft Edge WebViews plans to change the distribution mode
 
 ## Experimental APIs  
 
-While WebViews2 is a preview, the APIs in the SDK represent the expected APIs at GA.  The Microsoft Edge WebViews team included [experimental APIs](../reference/win32/0-9-488-reference-webview2.md#experimental) in the SDK.  The Microsoft Edge WebViews team is evaluating the functionality of the experimental APIs and requests your feedback on each API before including it as a long term feature.  To send feedback, please use the [WebView feedback repo](https://aka.ms/webviewfeedback).  
+While WebView2 is a preview, the APIs in the SDK are expected to remain the same at GA.  There are [experimental APIs](../reference/win32/0-9-488-reference-webview2.md#experimental) included in the SDK.  Please evaluate the experimental APIs and send your feedback on them using the [WebView feedback repo](https://aka.ms/webviewfeedback).  
 
 ### Post GA plans  
 
