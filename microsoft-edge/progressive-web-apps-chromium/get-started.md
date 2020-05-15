@@ -236,7 +236,7 @@ In your `pwabuilder-sw.js` file, add the following handlers.
 self.addEventListener('push', function (event) {
     if (Notification.permission === "granted") {
         const notificationText = event.data.text();
-        const shotNotification = self.registration.showNotification('Sample PWA', {
+        const showNotification = self.registration.showNotification('Sample PWA', {
             body: notificationText,
             icon: 'images/icon512.png'
         });
