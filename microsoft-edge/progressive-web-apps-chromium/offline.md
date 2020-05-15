@@ -77,7 +77,7 @@ The code snippet runs within the Service Worker whenever the browser makes a `fe
 
 This simple introduction shows how to use caching in your progressive web app (PWA). Each PWA is different and may use different caching strategies. Your code may look different, and you may use different caching strategies for different routes within the same application.
 
-## IndexedDB  
+## Use IndexedDB in your PWA to store structured data
 
 `IndexedDB` is a low-level API for storing structured data.  Like the `Cache` API, it is also asynchronous meaning you may use it in the main thread as well as within Web Workers like Service Worker.  The `IndexedDB` API is typically the tool for when you need to store a significant amount of structured data on the client.  You may also use `IndexedDB` to store binary data, such as encrypted media objects.  
 
