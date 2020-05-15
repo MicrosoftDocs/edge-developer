@@ -155,8 +155,8 @@ Use the following steps to confirm that your service worker runs.
     
 1.  Refresh your app and you should see it working offline by serving the resources of your app from the cache.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA running offline thanks to service worker":::
-       PWA running offline thanks to service worker
+    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA running offline":::
+       PWA running offline
     :::image-end:::
     
 ## Add push notifications to your PWA
