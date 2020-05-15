@@ -25,7 +25,7 @@ This guide gives you an overview of PWA basics by creating a simple web app and 
 
 ## Set up a basic web app  
 
-To get started with an empty web app, generate one using [Node Express App Generator][ExpressjsApplicationGenerator].  Create a new directory, `MySamplePwa` and open a new command-line session \(PowerShell or Bash\).  
+To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.  
 
 In the prompt, run the following commands.  
 
