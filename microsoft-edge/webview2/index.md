@@ -37,7 +37,7 @@ Hybrid applications allow developers to enjoy the best of both worlds. Hybrid ap
 3. Windows 7, 8, 10 support: support for a consistent user experience across Windows 7, 8, and 10.
 4. Native Capabilities: access the full set of Native APIs.
 5. Code sharing: adding web code to your codebase allows for increased re-use across multiple platforms.
-6. **Microsoft Support:** When WebView2 GA’s it will have the full backing of Microsoft in terms of support and feature requests
+6. Microsoft support: When WebView2 GA’s, Microsoft will provide support and add new feature requests.
 7. Evergreen distribution: rely on an up-to-date version of Chromium with regular platform updates and security patches.
 8. **Fixed Distribution (Coming Soon):** choice to package the Chromium bits in your application 
 9. **Incremental Adoption:** add web components piece by piece into your application
