@@ -161,7 +161,7 @@ Use the following steps to confirm that your service worker runs.
        PWA running offline thanks to service worker
     :::image-end:::
     
-## Add push notifications  
+## Add push notifications to your PWA
 
 Make your PWA more app-like by adding client-side support for push notifications using the [Push API][MDNPushApi] to subscribe to a messaging service and the [Notifications API][MDNNotificationsApi] to display a toast message upon receiving a message.  As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are supported.  On the server side, use the [Web-Push][NPMWebPush] open-source library to handle the differences involved in delivering push messages to various browsers.  
 
