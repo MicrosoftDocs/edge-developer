@@ -308,9 +308,8 @@ The following is a list of additional tasks to learn when building real-world PW
 
 ## See also  
 
-*   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps] - Excellent guide on Progressive Web Apps.  
-*   [Progressive Web Apps on web.dev][WebDevProgressiveWebApps] - Excellent guide on Progressive Web Apps.  
-*   [Progressive Web Apps rocks][ProgressiveWebApps] - Showcases real-world examples of PWAs.  
+*   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps].  
+*   [Progressive Web Apps on web.dev][WebDevProgressiveWebApps].  
 *   [Hacker News readers as Progressive Web Apps][HackerNewsProgressiveWebApps] - Compares different frameworks and performance patterns for implementing a sample \(Hacker News reader\) PWA.  
 
 <!-- image links -->  
