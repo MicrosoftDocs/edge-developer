@@ -95,7 +95,7 @@ To add an app manifest to the web app:
     ```  
     
 1.  Save the file as `/MySamplePwa/public/manifest.json`.  
-1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use [this image][ImagePwa] for testing.  
+1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use [this image][ImagePwa] for testing purposes.  
 1.  In VS Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.  
     
     ```html
