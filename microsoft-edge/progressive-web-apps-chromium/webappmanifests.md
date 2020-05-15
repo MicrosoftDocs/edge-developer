@@ -44,7 +44,7 @@ When added to a complete Web App Manifest, adding the previous code snippet enab
 
 ## Identify your app as a Share Target
 
-Many operating systems enable users to quickly share links and files with native applications. Progressive Web Apps can participate in this feature as well, via the `share_target` member of the Web App Manifest. Using share_target, you define the "action" page (much like a form submission) and the parameters you expect to be passed into it. For example:
+Many operating systems enable users to quickly share links and files with native applications. Progressive Web Apps can participate in this feature as well, via the `share_target` member of the Web App Manifest. Using share_target, you define the "action" page (similar to a form) and the parameters you expect to be passed into it. The following code snippet shows an example of how to use `share_target`.
 
 ```json
 "share_target": {
