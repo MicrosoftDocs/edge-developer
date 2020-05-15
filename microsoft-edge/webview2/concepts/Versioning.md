@@ -10,36 +10,21 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Versioning of WebView2
+# Browser version needed for WebView2
 
-Each WebView2 SDK has a minimum browser version required to be installed. This browser version is specified in our [Release Notes]() and is the version of the Canary channel on the day the SDK is launched. 
+WebView2 is dependent on Microsoft Edge to function. Each WebView2 SDK has a minimum browser version required to be installed. This browser version is specified in our [Release Notes](../releasenotes.md). You can also see this minimum version reflected in the patch version of the SDK packaged version string. e.g. SDK package version 0.9.488 indicates a minimum browser build number of 488.
 
-To develop with WebView2, the minimum version of [Microsoft Edge (chromium)]() supported by the WebView2 SDK must be installed on your machine. Currently, we have the same requirement for user's machines. 
+To utilize WebView2 in your app, the minimum version of [Microsoft Edge (chromium)]() supported by the WebView2 SDK must be installed on your machine. To access the latest releases of the browser please see [Browser Channels](https://docs.microsoft.com/deployedge/microsoft-edge-channels).
 
-In the future, we do plan to change this requirement. Read about [WebView2 Runtime]() in the [Distribution]() section to learn more.
+> [!NOTE]
+> WebView2 is currently in Preview. While we strive to ensure backward compatibility between browser versions and SDKs, this is not guaranteed, some newer versions of the browser may not support older SDK versions. If there are breaking changes between browser versions and SDK, we will indicate that in the [release notes](../releasenotes.md) 
 
-## Evergreen vs. Fixed (Bring-Your-Own)
-Currently, we support only an evergreen distribution model – instead of packaging a browser in the app bundle, apps use the evergreen browser installed on users’ machines. The evergreen browser updates itself on a regular cadence, therefore apps targeting the evergreen WebView2 automatically get the latest feature and security updates for hosted web content. The WebView2 SDK is updated separately as new APIs become available. This is the recommended model for most developers. 
+In the future, we do plan to change the distribution model. We intend WebView2 to no longer have a direct dependency on the Edge browser install. Read about [WebView2 Runtime]() in the [Distribution]() section to learn more.
 
-In the future, there will be a second fixed or bring-your-own (BYO) option that allows developers to bundle a redistributable version of the browser with their apps. BYO brings a locked platform, but requires a larger disk footprint for the packaged browser and developers will have to take on the responsibility of servicing and updating the control themselves. This version will be tied to a specific version of the WebView2 SDK.
+# Experimental APIs
 
-## Evergreen Versioning
+While we are in preview the APIs in the SDK represent our expected APIs at GA. We also included in the SDK [Experimental APIs](../reference/win32/0-9-430-reference-webview2.md#experimental). These APIs represent functionality we are evaluating and would like to here feedback on before intending to included them as long term features. To leave feedback please engage with us on our [feedback repo](https://aka.ms/webviewfeedback).
 
-Unlike the Fixed (Bring Your Own) version, the evergreen model is being updated on a regular cadence.
+## Post GA plans
 
-### Browser Channels
-
-Microsoft Edge (Chromium) has four browser [channels](https://www.microsoftedgeinsider.com/download/): Canary, Dev, Beta, and Stable. The Canary version updates daily, the Dev channel updates weekly, and the Beta and Stable channels update every 6 weeks. 
-
-The WebView2 SDK is tied to a version of Microsoft Edge and as that version moves through the different channels, so will the WebView2 SDK. The first week the WebView2 SDK is released, it will only work with the Canary channel. After the first week, the WebView2 SDK works with the Dev Channel. After 6 weeks, the WebView2 SDK aligns with the Beta and Stable channels and a new version of the WebView2 SDK will be released.
-
-## Pre-Release vs. Release Package
-To utilize WebView2 within your app you'll need to install and reference the WebView2 SDK in your application. Our NuGet releases will contain both a release and pre-release version. The release version contains the public APIs we currently intend to release to general availability.
-
-The pre-release version will contain additional experimental APIs. These are APIs and functionality we are evaluating and would like feedback on before promoting them to the release version.
-
-In the future, once WebView2 is GA'd, the latest version of the WebView2 SDK will be in the pre-release package. After 6 weeks, when the SDK's minimum browser version requirement aligns with the version of the Stable channel of the Edge Browser, it will move from the pre-release to the release package. Simultaneously, a new WebView2 SDK will be released in the pre-release package.
-
-## Feedback
-
-If something is unclear, please let us know! Visit our [feedback repo](https://aka.ms/webviewfeedback) to ask us a question, submit feature requests, or bug reports. 
+After we reach a stable general available state and release our 1.0.0 SDK, we will move all experimental APIs to a pre-release package. This pre-release package will continue to allow for feedback and insight into the latest features, while the stable release version maintains backward compatibility. 
