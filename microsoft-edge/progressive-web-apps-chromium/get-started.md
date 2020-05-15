@@ -161,7 +161,12 @@ Use the following steps to confirm that your service worker runs.
     
 ## Add push notifications to your PWA
 
-Make your PWA more app-like by adding client-side support for push notifications using the [Push API][MDNPushApi] to subscribe to a messaging service and the [Notifications API][MDNNotificationsApi] to display a toast message upon receiving a message.  As with Service Workers, these are standards-based APIs that work cross-browser, so you only have to write the code once for it to work everywhere PWAs are supported.  On the server side, use the [Web-Push][NPMWebPush] open-source library to handle the differences involved in delivering push messages to various browsers.  
+You can create PWAs that support push notifications by:
+
+1. Subscribing to a messaging service using the [Push API][MDNPushApi]. 
+2. Displaying toast messages when a message is received from the service using the [Notifications API][MDNNotificationsApi]. 
+
+As with Service Workers, these are standards-based APIs that work across browsers, so you only have to write the code once for it to work everywhere that PWAs are supported. For more information on delivering push messages to different browsers on your server, use the [Web-Push][NPMWebPush] open-source library.
 
 The following is adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which is worth checking out for a number of other useful Web Push and service worker recipes.  
 
