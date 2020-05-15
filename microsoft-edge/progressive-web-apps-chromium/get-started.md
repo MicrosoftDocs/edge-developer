@@ -133,7 +133,7 @@ Use the following steps to confirm that your service worker runs.
     npm start
     ```
     
-1.  With the web app opened in Microsoft Edge, press `F12` to open the Microsoft Edge DevTools.  Select **Application**, then **Service Workers** to view the service worker.  
+1.  In Microsoft Edge, select `F12` to open the Microsoft Edge DevTools. Select **Application**, then **Service Workers** to view the service workers. If you do not see the service worker, you may need to refresh the page. 
      
     :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools Service Worker overview":::
        Microsoft Edge DevTools Service Worker overview
