@@ -102,7 +102,7 @@ To add an app manifest to the web app:
     <link rel="manifest" href="/manifest.json">
     ```   
     
-### Service Worker  
+### Step 3 - Add a Service Worker  
 
 Service workers are the key technology behind PWAs, enabling scenarios like offline support, advanced caching, and running background tasks previously limited to native apps.  
 
