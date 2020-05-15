@@ -65,7 +65,7 @@ self.addEventListener( "fetch", event => {
                     );
                     return response;
                 })
-                // fallback to offline page
+                // If the network is unavailable to make a request, pull the offline page out of the cache.
                 .catch(() => caches.match( "/offline/" ));
             })
         ); // end respondWith
