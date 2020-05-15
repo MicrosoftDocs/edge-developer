@@ -10,8 +10,6 @@
       href: gettingstarted/winforms.md
 - name: Concepts
   items:
-    - name: Versioning
-      href: concepts/versioning.md
     - name: Distributing My App
       href: concepts/distribution.md
 - name: Release notes
