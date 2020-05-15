@@ -27,7 +27,7 @@ Developers often have to choose between building a web application or a native a
 ![webnative](./media/WebView2/webnative.PNG)
 
 
-Hybrid applications allow developers to enjoy the best of both worlds. Hybrid application developers benefit from the ubiquity and strength of the web platform as well as the power and full capabilities of the native platform.
+Hybrid applications allow developers to enjoy the best of both worlds. Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.
 
 ## WebView2 Benefits 
 ![webviewreasons](./media/WebView2/webviewreasons.PNG)
