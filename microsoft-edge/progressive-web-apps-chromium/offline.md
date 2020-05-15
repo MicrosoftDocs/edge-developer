@@ -10,7 +10,7 @@ ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
 
-# Handle Offline And Network Instability Scenarios With The Cache API, Service Worker, And Friends  
+# Offline and network connectivity support in Progressive Web Apps
 
 For many years organizations were reluctant to invest heavily in web-based software over native software because web applications depended on stable network connections. Today, the web platform now offers robust options that enable users to continue working, even if the network connection becomes unstable or goes completely offline.
 
