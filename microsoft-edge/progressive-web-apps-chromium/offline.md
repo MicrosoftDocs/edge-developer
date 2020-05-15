@@ -141,7 +141,7 @@ The `navigator.onLine` property is a simple boolean that lets you know the curre
 
 ### Online and Offline Events  
 
-Knowing whether the network is available at any given time is helpful, but only to a point.  More often than not, you want to know when things change.  To cover that, you may listen and react to network events implemented by the browser.  The events are available on the `window`, `document`, and `document.body` elements as displayed in the following code.  
+Knowing whether the network is available is helpful, but you may want to take action  when your network connectivity changes. In this situation, you may want to listen and take action in response to network events. The events are available on the `window`, `document`, and `document.body` elements as displayed in the following code snippet.
 
 ```javascript
 window.addEventListener("online",  function(){
