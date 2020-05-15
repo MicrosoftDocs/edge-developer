@@ -168,7 +168,7 @@ You can create PWAs that support push notifications by:
 
 As with Service Workers, these are standards-based APIs that work across browsers, so you only have to write the code once for it to work everywhere that PWAs are supported. For more information on delivering push messages to different browsers on your server, use the [Web-Push][NPMWebPush] open-source library.
 
-The following is adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which is worth checking out for a number of other useful Web Push and service worker recipes.  
+The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.
 
 ### Step 1 - Generate VAPID keys  
 
