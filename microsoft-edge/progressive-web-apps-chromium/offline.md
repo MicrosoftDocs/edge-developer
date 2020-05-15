@@ -162,7 +162,7 @@ To learn more about managing offline scenarios, see the following pages.
 *   [Web Storage][MDNWebStorageApi]  
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]  
-*   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas] by Aaron Gustafson  
+*   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
 
 <!-- links -->  
 
