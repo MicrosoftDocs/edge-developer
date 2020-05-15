@@ -47,8 +47,8 @@ npm start
 
 Now browse to `http://localhost:3000` to view your new web app.  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Running your new web PWA on localhost":::
-   Running your new web PWA on localhost
+:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Running your new PWA on localhost":::
+   Running your new PWA on localhost
 :::image-end:::
 
 ## Turn your app into a PWA  
