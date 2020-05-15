@@ -83,14 +83,13 @@ This simple introduction shows how to use caching in your progressive web app (P
 
 ## Understand storage options for PWAs
 
-Sometimes you must store a little bit of data in order to provide a better offline experience to your users.  If that is the case, you may find the simplicity of key-value pair system of the web storage most suited to your needs.  
+Sometimes you may need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you may find the simplicity of the key-value pair system of web storage meets your needs.  
 
 > [!IMPORTANT]
-> Web Storage is a synchronous process and, as such, is not available for use within worker threads such as Service Worker.  
+> Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application. 
 
-Heavy usage may create performance issues for your application.  
 
-Web Storage comes in two flavors: `localStorage` and `sessionStorage`.  Each is maintained as a separate data store isolated to the domain that created it.  As you may expect, `sessionStorage` persists only for the duration of the browsing session \(for example, while the browser is open, inclusive of refresh and restore\); whereas `localStorage` persists until it is removed by the developer, the user, or the browser \(when under storage pressure\).  The API is identical for both storage types.  
+There are 2 types of Web Storage: `localStorage` and `sessionStorage`. Each is maintained as a separate data store isolated to the domain that created it. `sessionStorage` persists only for the duration of the browsing session (for example, while the browser is open, which includes refresh and restores). `localStorage` persists until the data is removed by the code, the user, or the browser (for example, when there is limited storage available). The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
 
 ```javascript
 var data = {
@@ -100,9 +99,9 @@ var data = {
 localStorage.setItem( window.location, JSON.stringify(data) );
 ```  
 
-This basic code sample grab metadata about the current page and store it in a JavaScript object.  Then it stores that value as JSON in `localStorage` \(using `setItem()` method\), assigned to a key equal to the current `window.location` URL.  You may retrieve the information from `localStorage` by using `getItem()` method.  
+This code snippet grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You may retrieve the information from `localStorage` using the `getItem()` method. 
 
-An excerpt from an offline page that enumerates cached pages and extracts that metadata to build a rich link list.  
+The following code snippet shows how to use caching with `localstorage` to enumerate cached pages and extract metadata to perform a task, such as building a list of links.
 
 ```javascript
 caches.open( "pages" )
@@ -118,23 +117,23 @@ caches.open( "pages" )
 
 function insertOfflineLink( request ) {
     var data = JSON.parse( localStorage.getItem( request.url ) );
-    // if data exists and it is not the offline page
+    // If data exists and this page is not an offline page, assuming that offline pages have the word offline in the URL.
     if ( data && request.url.indexOf('offline') < 0  )
     {
-        // build a link and insert it into the page
+        // Build a link and insert it into the page.
     }
 }
 ```  
 
-Here, the `insertOfflineLink()` method passes the URL of the request into the `localStorage.getItem()` method to retrieve any stored metadata that may be stored when the page is viewed.  If that data is found, the method builds it and inserts the requisite markup to display it.  
+The `insertOfflineLink()` method passes the URL of the request into the `localStorage.getItem()` method to retrieve any stored metadata. The retrieved data is checked to see if it exists, and if it does, an action can be taken on the data, such as building and inserting the markup to display it.
 
-## Network Information  
+## Test for network connections in your PWA
 
-In addition to being able to store information for offline use, you may find it quite helpful to know when a network connection is available in order to synchronize data or even inform each of your users that the network status has changed.  There are a few options for getting the information you need in this regard.  
+In addition to storing information for offline use, it is helpful to know when a network connection is available in order to synchronize data or inform users that the network status has changed. Use the following options to test for network connectivity.
 
 ### navigator.onLine  
 
-The `navigator.onLine` property is a simple boolean that lets you know the current status of the network.  If the value is set to `true`, the user is online; if the value is set to `false`, the user is offline.  
+The `navigator.onLine` property is a boolean that lets you know the current status of the network. If the value is `true`, the user is online, otherwise the user is offline.
 
 ### Online and Offline Events  
 
