@@ -35,7 +35,7 @@ Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to
    Visual Studio JavaScript diagnostics
 :::image-end:::
 
-Right click on your project and select **Properties**.  Under **Configuration Properties**, select **Debugging** > **Debugger Type**, and select the **JavaScript (WebView2)** option to enable WebView2 script debugging.  <!--More details to follow soon.  -->  
+To enable WebView2 script debugging, open the context menu (right-click) on your project > select **Properties**. On **Configuration Properties**, select **Debugging**. On the **Debugger Type** property, choose **JavaScript (WebView2)** from the list of options. 
 
 :::image type="complex" source="../media/vs-script-debugger.jpg" alt-text="Visual Studio JavaScript Debugger":::
    Visual Studio JavaScript Debugger
