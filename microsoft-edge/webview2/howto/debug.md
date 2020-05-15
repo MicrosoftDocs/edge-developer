@@ -17,7 +17,10 @@ The goal of the Microsoft Edge WebView2 control is to combine the best of both t
 ## Microsoft Edge DevTools  
 
 
-Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, in the same way as Microsoft Edge.  Focus on the WebView window, press `F12`, or press `Ctrl`+`Shift`+`I`, or right-click and select `Inspect` to open Developer Tools.  
+Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView2 controls, in the same way that you would if you were using Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following options:
+* Select `F12`.
+* Select `Ctrl`+`Shift`+`I`. 
+* Open the context menu (right-click) > select `Inspect`.  
 
 :::image type="complex" source="../media/f12.PNG" alt-text="F12":::
    F12
