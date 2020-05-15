@@ -110,8 +110,7 @@ Service workers are background tasks that intercept network requests from your w
 
 To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
 
-1.  Open [pwabuilder.com/serviceworker][PwaBuilderServiceWorker] and select the **Cache-first network** service worker and select the **Download** button.  
-1.  The download contains the following 2 files.  
+1.  Navigate to [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], select the **Cache-first network** service worker, and select the **Download** button. The downloaded file contains the following files:
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
