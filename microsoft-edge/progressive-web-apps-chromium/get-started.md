@@ -176,7 +176,12 @@ Push notifications require VAPID \(Voluntary Application Server Identification\)
 
 ### Step 2 - Subscribe to push notifications  
 
-As part of the role as PWA network proxies, service workers handle push events and toast notification interactions.  However, as it is with first setting up \(or registering\) a service worker, subscribing the PWA to server push notifications happens on the main UI thread of the PWA and requires network connectivity.  Subscribing to push notifications requires an active service worker registration, so you must first verify that your service worker is installed and active before trying to subscribe it to push notifications.  
+Service workers handle push events and toast notification interactions in your PWA. To subscribe the PWA to server push notifications, ensure the following conditions are met.
+
+* Your PWA is installed, active and registered.
+* Your code that performs the subscription task is on the main UI thread of the PWA. 
+* You have network connectivity. 
+
 
 Before a new push subscription is created, Microsoft Edge checks if the user granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, so you must handle it.  For more on permission management, see [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
 
