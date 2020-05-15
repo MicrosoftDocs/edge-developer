@@ -57,7 +57,7 @@ Many operating systems enable users to quickly share links and files with native
 }
 ```
 
-When added to the Web App Manifest, this establishes "/share.html" as the action page for a share and it further defines three parameters that would be passed to that action page: "title", "text", and "url" whose corresponding values would be the [ShareData](https://wicg.github.io/web-share#dom-sharedata) object’s "name", "description", and "link" properties. By default, the action page receives these parameters as part of a GET request, but you can specify the request `method` and encoding (as `enctype`) for the `share_target` as well, just like in a web form.
+When added to the Web App Manifest, this establishes "/share.html" as the action page for a share. Additionally, it defines three parameters that would be passed to that action page: "title", "text", and "url". These parameters will be stored in the [ShareData](https://wicg.github.io/web-share#dom-sharedata) object’s "name", "description", and "link" properties. By default, the action page receives these parameters as part of a GET request, but you can specify the request `method` and encoding \(as `enctype`\), just like you would on a web form.
 
 ## See also  
 
