@@ -43,7 +43,7 @@ self.addEventListener( "fetch", event => {
     const request = event.request,
                     url = request.url;
     
-    // If HTML
+    // If we are requesting an HTML page.
     if ( request.headers.get("Accept").includes("text/html") ) {
         event.respondWith(
             // Check the cache first to see if the asset exists, and if it does, return the cached asset.
