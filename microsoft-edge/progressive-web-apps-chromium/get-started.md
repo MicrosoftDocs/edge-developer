@@ -125,7 +125,7 @@ To build a service worker in your project, use the **Cache-first network** servi
     
 Your web app now has a service worker that uses the cache-first strategy: fetching resources like images, JS, CSS, and HTML from the cache first, and falling back to the network as needed.  
 
-Try out you web app.  
+Use the following steps to confirm that your service worker runs.
 
 1.  Your app should already be running on `localhost:3000`.  If not, go ahead and run the following command.   
     
