@@ -65,7 +65,7 @@ If you [publish this web app as a live site][VisualStudioNodejsTutorialPublishAz
 
 For this guide, use `http://localhost` to build your PWA.  
 
-### Web App Manifest  
+### Step 2 - Create a Web App Manifest  
 
 A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about your app, such as name, description, icons, and more.  
 
