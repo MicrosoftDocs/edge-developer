@@ -94,8 +94,6 @@ The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) reposit
 *   [WPF Sample]()  
 *   [WinForms Sample]()  
 
-
-
 ## Supported Platforms  
 
 A developer preview is available on the following programming environments.  
@@ -106,6 +104,31 @@ A developer preview is available on the following programming environments.
 *   [WinUI 3.0](/uwp/toolkits/winui3/)  
 
 You mun run Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, or Windows Server 2008 R2.   
+
+## App Distribution  
+
+The WebView2 control utilizes the Microsoft Edge \(Chromium\) browser.  When distributing your app it is important to ensure that the Edge browser is installed on all user machines where your application runs.  You should also be aware of which version and channel is installed, for example  Stable, Beta, Dev, or Canary.  The WebView2 controller utilizes the most stable version of the browser when installed on a machine.  
+
+### Future Planned Changes  
+
+We recognize that the Edge browser may not be available on all user machines your application is intended to run, or that control of the Edge browser install process may be difficult.  To ensure your application runs on all machines, independent of the install status of the client Microsoft Edge browser, the Microsoft Edge WebView team releases the Microsoft Edge WebView2 Runtime.  The Microsoft Edge WebView team further updates WebView2 search for the stable version of the Runtime before searching for pre-release versions of the installed browser.  
+
+We also recognize that some app developers operate in constrained environments, and so intend to support two distribution options, evergreen and fixed version.  
+
+Evergreen is the recommended distribution model for most developers.  In this mode updates to the WebView2 Runtime is fully managed by Microsoft keeping you up to date automatically without additional effort from your application.  With this self-updating model you can be assured that your app is taking advantage of the latest features and security updates for hosted web content.  
+
+For constrained environments, the Microsoft Edge WebView team also supports a fixed version distribution model.  In this model, your application selects and packages a specific WebView2 version.  Updates to the WebView version are the responsibility of the application and are independent of any managed Microsoft update mechanisms.  You should choose this model if it is crucial to be able to have absolute control over the browser version and you are taking advantage of update times of your application.  
+
+## Microsoft Edge WebView2 Runtime  
+
+The Microsoft Edge WebView2 Runtime is a packaging of the browser binaries optimized for use by WebView2 applications.  It functions stand-alone or side-by-side with a client Microsoft Edge Browser installation.  A single install of the run-time supports any number of WebView2 applications.  Installation of the runtime does not appear as a browser install to end-user, for example no desktop shortcuts, start menu entry, or protocol registration.  
+
+An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred.  At application install time you should check the current install status, which can be determined by using [GetAvailableCoreWebView2BrowserVersionString](./reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring).  If the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.  
+
+## Microsoft Edge WebView2 SDK  
+
+To utilize WebView2 within your app you must install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application.  The WebView2 NuGet releases contain both a release and pre-release version.  The release version contains the public APIs the Microsoft Edge WebView team currently intends to release to general availability.  
+
 
 ## See also  
 
