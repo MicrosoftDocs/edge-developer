@@ -23,7 +23,7 @@ In the future, we do plan to change the distribution model. We intend WebView2 t
 
 ## Experimental APIs
 
-While we are in preview the APIs in the SDK represent our expected APIs at GA. We also included in the SDK [Experimental APIs](../reference/win32/0-9-430-reference-webview2.md#experimental). These APIs represent functionality we are evaluating and would like to here feedback on before intending to included them as long term features. To leave feedback please engage with us on our [feedback repo](https://aka.ms/webviewfeedback).
+While we are in preview the APIs in the SDK represent our expected APIs at GA. We also included in the SDK [Experimental APIs](../reference/win32/0-9-488-reference-webview2.md#experimental). These APIs represent functionality we are evaluating and would like to here feedback on before intending to included them as long term features. To leave feedback please engage with us on our [feedback repo](https://aka.ms/webviewfeedback).
 
 ### Post GA plans
 
