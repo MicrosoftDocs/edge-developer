@@ -25,7 +25,7 @@ In the future, the Microsoft Edge WebViews plans to change the distribution mode
 
 While WebView2 is a preview, the APIs in the SDK are expected to remain the same at GA.  There are [experimental APIs](../reference/win32/0-9-488-reference-webview2.md#experimental) included in the SDK.  Please evaluate the experimental APIs and send your feedback on them using the [WebView feedback repo](https://aka.ms/webviewfeedback).  
 
-### Post GA plans  
+### Roadmap
 
 After WebView2 reaches a stable general available state and we release the 1.0.0 SDK, The Microsoft Edge WebViews team will move all experimental APIs to a pre-release package. The pre-release package continues to allow for feedback and insight into the latest features, while the stable release version maintains backward compatibility.
 
