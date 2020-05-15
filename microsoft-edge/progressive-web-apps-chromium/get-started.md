@@ -288,7 +288,6 @@ Perform the following steps to test push notifications in your PWA.
        Notifications in Windows Action Center
     :::image-end:::
     
-    You have the basics of PWA push notifications.  In a real app, the next steps are implemented in a way to manage and store push subscriptions and to properly [encrypt][NPMWebPushEncrypt] payload data being sent across the wire.  
     
 ## Next steps
 
