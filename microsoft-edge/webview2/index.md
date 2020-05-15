@@ -7,7 +7,7 @@ ms.date: 02/20/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET
 ---
 
 # Introduction to Microsoft Edge WebView2 (Preview)
@@ -44,9 +44,9 @@ Hybrid applications allow developers to enjoy the best of both worlds. Hybrid ap
 
 ## Getting Started
 To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. Select one of the options below to get started.
-- [Getting Started with Win32 C/C++]()
-- [Getting Started with WPF]()
-- [Getting Started with WinForms]()
+- [Getting Started with Win32 C/C++](./gettingstarted/win32.md)
+- [Getting Started with WPF](./gettingstarted/wpf.md)
+- [Getting Started with WinForms](./gettingstarted/winforms.md)
 
 The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDK's features and their API usage patterns. As we add more features to the WebView2 SDK, we will update our sample applications.
 - [Win32 C/C++ Sample]()
@@ -57,13 +57,12 @@ The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) reposit
 For more detailed information on how to build and deploy WebView2 applications, checkout our conceptual documentation and how-to guides.
 
 ### Concepts
-1. [WebView2 SDK and Microsoft Edge Versioning]()
-2. [Distributing WebView2 Applications]()
-3. [Utilizing and Disabling Microsoft Edge Browser Features in WebView2]()
+1. [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)
+2. [Distributing WebView2 Applications](./concepts/distribution.md)
 
 ### How-To Guides
-1. [Debugging WebView2 with DevTools and Visual Studio Script Debugging]()
-2. [Automating and Debugging WebView2 with Microsoft EdgeDriver]()
+1. [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./how-to/debugging.md)
+2. [Automating and Debugging WebView2 with Microsoft EdgeDriver](./how-to/webdriver.md)
 
 ## Supported Platforms
 A developer preview is available for: 
@@ -71,9 +70,13 @@ A developer preview is available for:
 * Win32 C/C++.
 * .NET Framework 4.6.2 or later.
 * .NET Core 3.0 or later.
-* [WinUI 3.0](https://docs.microsoft.com/uwp/toolkits/winui3/) on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
+* [WinUI 3.0](https://docs.microsoft.com/uwp/toolkits/winui3/) 
+
+On Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
 
 ## Getting in touch with the WebView2 team
 
 Help us build a richer WebView2 experience by sharing your feedback. Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. It’s also a good place to search for known issues.
-During developer preview, we will also be collecting telemetry data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.
+
+> [!NOTE]
+> During developer preview, we will also be collecting data to help us build a better WebView. Users can turn off WebView data collection by navigating to edge://settings/privacy in the browser and turning off browser data collection.
