@@ -223,7 +223,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```  
 
-Review the MDN documentation on the [PushManager][MDNPushManager] interface and NPM docs on the [Web-Push][NPMWebPushUsage] library for more details on how the APIs work and various related options.  
+For more information, see [PushManager][MDNPushManager] and [Web-Push][NPMWebPushUsage].  
 
 ### Step 3 - Listen for push notifications  
 
