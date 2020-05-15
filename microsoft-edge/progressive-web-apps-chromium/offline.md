@@ -14,7 +14,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 For many years organizations were reluctant to invest heavily in web-based software over native software because web applications depended on stable network connections. Today, the web platform now offers robust options that enable users to continue working, even if the network connection becomes unstable or goes completely offline.
 
-## The Cache API  
+## Use the caching to improve performance of PWAs
 
 With the introduction of [Service Workers][MDNServiceWorker], the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
 
