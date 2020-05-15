@@ -51,7 +51,7 @@ Now browse to `http://localhost:3000` to view your new web app.
    Running your new PWA on localhost
 :::image-end:::
 
-## Turn your app into a PWA  
+## Get started building a PWA
 
 Now that you have a simple web app, extend it to be a PWA by adding the [3 requirements for PWAs][PwaEdgehtmlIndexRequirements]: [HTTPS](#https), a [Web App Manifest](#web-app-manifest), and a [Service Worker](#service-worker).  
 
