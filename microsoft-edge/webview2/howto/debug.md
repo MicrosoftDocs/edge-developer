@@ -1,5 +1,5 @@
 ---
-description: How to Debug WebView2
+description: Learn how to debug WebView2 controls.
 title: Debugging WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
