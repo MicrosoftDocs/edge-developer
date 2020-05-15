@@ -46,7 +46,7 @@ self.addEventListener( "fetch", event => {
     // If HTML
     if ( request.headers.get("Accept").includes("text/html") ) {
         event.respondWith(
-            // check the cache first
+            // Check the cache first to see if the asset exists, and if it does, return the cached asset.
             caches.match( request )
                   .then( cached_result => {
                 if ( cached_result ) {
