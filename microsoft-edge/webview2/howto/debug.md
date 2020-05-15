@@ -10,35 +10,45 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# How to Debug when Developing with WebView2
+# How to Debug when Developing with WebView2  
 
-The goal of the Microsoft Edge WebView2 control is to combine the best of web and native both in terms of functionality and in terms of developer tooling. The following are different tools you can take advantage of when developing with WebView2.
+The goal of the Microsoft Edge WebView2 control is to combine the best of web and native both in terms of functionality and in terms of developer tooling.  The following are different tools you may take advantage of when developing with WebView2.  
 
-## Microsoft Edge DevTools
+## Microsoft Edge DevTools  
 
-### DevTools
+### DevTools  
 
-You can use [Microsoft Edge (Chromium) Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, just as you would in the browser. While having focus on the WebView window, press `F12`, or press `Ctrl` + `Shift` + `I`, or Right Click + choose `Inspect` to open Developer Tools.
+Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-chromium) to debug web content displayed in WebView, in the same way as Microsoft Edge.  Focus on the WebView window, press `F12`, or press `Ctrl`+`Shift`+`I`, or right-click and select `Inspect` to open Developer Tools.  
 
-![F12](./../media/f12.PNG)
+:::image type="complex" source="../media/f12.PNG" alt-text="F12":::
+   F12
+:::image-end:::
 
-**Note when debugging application in Visual Studio with the native debugger attached, `F12` may trigger the native debugger instead of Developer Tools. Use `Ctrl` + `Shift` + `I`, or Right Click + `Inspect` to avoid potential hotkey conflict.**
+> [!NOTE]
+When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or right-click and select `Inspect` to avoid potential hotkey conflict.  
 
-### Visual Studio
+### Visual Studio  
 
-You can use the script debugger in Visual Studio 2019 (minimum version 16.4 Preview 2) to debug your script within WebView2 right from the IDE. Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.
+Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script within WebView2 right from the IDE.  Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
 
-![VSJSDiagnostics](./../media/vs-js-diagnostics.jpg)
+:::image type="complex" source="../media/vs-js-diagnostics.jpg" alt-text="Visual Studio JavaScript diagnostics":::
+   Visual Studio JavaScript diagnostics
+:::image-end:::
 
-Right click on your project and select **Properties**. Under **Configuration Properties** > **Debugging** > **Debugger Type**,  choose the **JavaScript (WebView2)** option to enable WebView2 script debugging. More details to follow soon.
+Right click on your project and select **Properties**.  Under **Configuration Properties**, select **Debugging** > **Debugger Type**, and select the **JavaScript (WebView2)** option to enable WebView2 script debugging.  <!--More details to follow soon.  -->  
 
-![VSScriptDebugger](../media/vs-script-debugger.jpg)
+:::image type="complex" source="../media/vs-script-debugger.jpg" alt-text="Visual Studio JavaScript Debugger":::
+   Visual Studio JavaScript Debugger
+:::image-end:::
 
-### Visual Studio Code
+### Visual Studio Code  
 
-You can also use Visual Studio Code to debug your script within the WebView2 right from the IDE. For more details click [here](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications).
+Use Visual Studio Code to debug your script within the WebView2 right from the IDE.  For more details, see [Microsoft Edge(Chromium) WebView Application](https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications) section of README on GitHub.  
 
-## Feedback
+## Getting in tough with the Microsoft Edge WebView team  
 
-Help us build a richer WebView2 experience by sharing your feedback! Visit our [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports. 
+Help build a richer WebView2 experience by sharing your feedback!  Visit the [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.  
 
+## See also
+
+<!-- links -->  
