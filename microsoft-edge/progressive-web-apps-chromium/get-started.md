@@ -140,7 +140,7 @@ Use the following steps to confirm that your service worker runs.
     :::image-end:::
     
     
-1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  
+1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**. You should see all the resources cached by the service worker, such as the app icon, app manifest, CSS and JavaScript files.  
     
     :::image type="complex" source="./media/devtools-cache.png" alt-text="Service Worker cache in Microsoft Edge DevTools":::
        Service Worker cache in Microsoft Edge DevTools (F12)
