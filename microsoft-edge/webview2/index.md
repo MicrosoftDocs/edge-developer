@@ -34,7 +34,7 @@ Hybrid applications allow developers to enjoy the best of both worlds. Hybrid ap
 
 1. Web ecosystem & skillset: utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
 2. Rapid Innovation: web development allows for faster deployment and iteration.
-3. **Windows 7, 8, 10 Support:** support for a consistent user experience across Windows 7, 8, and 10 
+3. Windows 7, 8, 10 support: support for a consistent user experience across Windows 7, 8, and 10.
 4. **Native Capabilities:** access the full set of Native APIs.
 5. **Code Sharing:** adding web code to your codebase allows for increased portability across multiple platforms 
 6. **Microsoft Support:** When WebView2 GA’s it will have the full backing of Microsoft in terms of support and feature requests
