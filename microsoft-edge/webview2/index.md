@@ -66,7 +66,12 @@ For more thorough information on how to build and deploy WebView2 application ch
 2. [Automating and Debugging WebView2 with Microsoft EdgeDriver]()
 
 ## Supported Platforms
-A developer preview is available for Win32 C/C++, .NET Framework 4.6.2 or later, .NET Core 3.0 or later, [WinUI 3.0](https://docs.microsoft.com/uwp/toolkits/winui3/) on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
+A developer preview is available for: 
+
+* Win32 C/C++.
+* .NET Framework 4.6.2 or later.
+* .NET Core 3.0 or later.
+* [WinUI 3.0](https://docs.microsoft.com/uwp/toolkits/winui3/) on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
 
 ## Feedback
 
