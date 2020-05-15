@@ -139,7 +139,6 @@ Use the following steps to confirm that your service worker runs.
        Microsoft Edge DevTools Service Worker overview
     :::image-end:::
     
-    If you do not see the service worker, you may need to refresh the page.  
     
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  
     
