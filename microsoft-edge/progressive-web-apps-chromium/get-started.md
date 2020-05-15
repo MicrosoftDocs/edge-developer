@@ -123,7 +123,7 @@ To build a service worker in your project, use the **Cache-first network** servi
     <script src="/pwabuilder-sw-register.js"></script>
     ```  
     
-Your web app now has a service worker that uses the cache-first strategy: fetching resources like images, JS, CSS, and HTML from the cache first, and falling back to the network as needed.  
+Your web app now has a service worker that uses the cache-first strategy, which fetches resources like images, JS, CSS, and HTML from the cache first, and falls back to the network as needed.  
 
 Use the following steps to confirm that your service worker runs.
 
