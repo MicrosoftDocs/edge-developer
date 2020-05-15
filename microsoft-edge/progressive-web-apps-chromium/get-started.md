@@ -282,7 +282,7 @@ Perform the following steps to test push notifications in your PWA.
        Push a notification from DevTools
     :::image-end:::
      
-    If you do not select \(or activate\) a toast notification, it is dismissed after several seconds and queue up in your Windows Action Center.  
+    If you do not select \(or activate\) a toast notification, it is dismissed after several seconds and queues up in your Windows Action Center.  
     
     :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center":::
        Notifications in Windows Action Center
