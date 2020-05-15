@@ -27,6 +27,6 @@ While WebView2 is a preview, the APIs in the SDK are expected to remain the same
 
 ### Post GA plans  
 
-After WebViews2 reaches a stable general available state and release the 1.0.0 SDK, The Microsoft Edge WebViews team moves all experimental APIs to a pre-release package.  The pre-release package continues to allow for feedback and insight into the latest features, while the stable release version maintains backward compatibility.  
+After WebView2 reaches a stable general available state and we release the 1.0.0 SDK, The Microsoft Edge WebViews team will move all experimental APIs to a pre-release package. The pre-release package continues to allow for feedback and insight into the latest features, while the stable release version maintains backward compatibility.
 
 <!--links -->
