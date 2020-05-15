@@ -145,7 +145,7 @@ Knowing whether the network is available at any given time is helpful, but only 
 
 ```javascript
 window.addEventListener("online",  function(){
-    console.log("You are back online!");
+    console.log("You are online!");
 });
 window.addEventListener("offline", function(){
     console.log("Oh no, you lost your network connection.");
