@@ -52,11 +52,11 @@ self.addEventListener( "fetch", event => {
                 if ( cached_result ) {
                     return cached_result;
                 }
-                // fallback to network, but cache the result
+                // If the asset is not in the cache, fallback to a network request for the asset, and proceed to cache the result.
                 return fetch( request )
                        .then( response => {
                     const copy = response.clone();
-                    // wait to cache the result we got back
+                    // Wait until the response we received is added to the cache.
                     event.waitUntil(
                         caches.open( "pages" )
                               .then( cache => {
