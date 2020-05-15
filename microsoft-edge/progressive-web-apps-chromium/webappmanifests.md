@@ -3,7 +3,7 @@ title: Use the Web App Manifest to integrate your Progressive Web App into the O
 description: Learn how to use the Web App Manifest to integrate your Progressive Web App into your Operating System.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
