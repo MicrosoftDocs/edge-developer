@@ -16,7 +16,7 @@ The Microsoft Edge WebView2 control enables you to embed web technologies (HTML,
 
 ![whatwebview](./media/WebView2/whatwebview.PNG)
 
-With WebView2, developers can embed web code in parts of their native application or build the entire native application within a single WebView. View our guides to [Get Started](WebView2.md#getting-started)!
+With WebView2, developers can embed web code in parts of their native application or build the entire native application within a single WebView. View our guides to [Get Started](index.md#getting-started)!
 
 > [!NOTE]
 > The WebView2 Preview is intended for early prototyping and to gather feedback from the developer community to helps us shape the future stable API. There will be [breaking changes](releasenotes.md), so it should NOT be used for production apps.
