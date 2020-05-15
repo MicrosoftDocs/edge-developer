@@ -43,7 +43,7 @@ Hybrid applications allow developers to enjoy the best of both worlds. Hybrid ap
 9. Incremental adoption: add web components piece by piece to your application.
 
 ## Getting Started
-To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget)installed. Select one of the options below to get started! 
+To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download/) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed. Select one of the options below to get started.
 - [Getting Started with Win32 C/C++]()
 - [Getting Started with WPF]()
 - [Getting Started with WinForms]()
