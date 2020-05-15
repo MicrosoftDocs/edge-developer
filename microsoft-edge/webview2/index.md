@@ -72,7 +72,7 @@ A developer preview is available for:
 * .NET Core 3.0 or later.
 * [WinUI 3.0](https://docs.microsoft.com/uwp/toolkits/winui3/) 
 
-On Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
+on Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, and Windows Server 2008 R2. 
 
 ## Getting in touch with the WebView2 team
 
