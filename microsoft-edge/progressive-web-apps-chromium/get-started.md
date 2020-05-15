@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ---
 
-# Get started with Progressive Web Apps  
+# Get started with Progressive Web Apps (Chromium)
 
 Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement] with app-like features, such as installation, offline support, and push notifications.  You may also packaged your PWA for app stores, including the Microsoft Store, Google Play, Mac App Store and more.  
 
