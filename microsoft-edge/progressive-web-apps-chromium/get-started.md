@@ -295,7 +295,6 @@ Time to test push notifications in your PWA!
     
 ## Next steps
 
-This guide demonstrated the basic anatomy of a Progressive Web App and PWA development tools including Visual Studio Code, PWA Builder, and Microsoft Edge DevTools \(`F12`\).  
 
 Of course, there is a lot more that goes into [making a great PWA][PwaEdgehtmlIndexRequirements] beyond what you read here, including responsive design, deep-linking, [cross-browser testing][BrowserStackTestEdgeBrowser] and other [best practices][Webhint] \(not to mention your app functionality!\), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started.  If you have further questions on PWA development with Windows or with Visual Studio, please leave a comment!  
 
