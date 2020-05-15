@@ -450,13 +450,15 @@
       href: privacy-whitepaper.md
     - name: Progressive Web Apps (Chromium)
       href: progressive-web-apps-chromium/index.md
-      items:         
+      items:
+        - name: Get started with PWAs (Chromium)
+          href: progressive-web-apps-chromium/get-started.md
         - name: Offline scenarios
-          href: progressive-web-apps-chromium/offline.md        
+          href: progressive-web-apps-chromium/offline.md
         - name: Service Workers
-          href: progressive-web-apps-chromium/serviceworker.md        
+          href: progressive-web-apps-chromium/serviceworker.md
         - name: Web App Manifests
-          href: progressive-web-apps-chromium/webappmanifests.md        
+          href: progressive-web-apps-chromium/webappmanifests.md
     - name: Progressive Web Apps (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items: 
@@ -494,6 +496,8 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
+    - name: WebView2 (Chromium) (preview)
+      href: webview2/toc.yml
     - name: WebVR Developer Guide
       href: /microsoft-edge/webvr/index
     - name: Windows Runtime (WinRT)
