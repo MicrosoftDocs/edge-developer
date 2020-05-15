@@ -108,7 +108,7 @@ Service workers are the key technology behind PWAs, enabling scenarios like offl
 
 Service workers are background tasks that intercept network requests from your web app. They can perform tasks, even when your PWA is not running, such as serving requested resources from a cache, sending push notifications, running background fetch tasks, badging icons, and so on. Service workers are defined in a special JavaScript file. For more information, see [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].  
 
-For this tutorial, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
+To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
 
 1.  Open [pwabuilder.com/serviceworker][PwaBuilderServiceWorker] and select the **Cache-first network** service worker and select the **Download** button.  
 1.  The download contains the following 2 files.  
