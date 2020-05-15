@@ -54,7 +54,7 @@ The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) reposit
 - [WinForms Sample]()
 
 ## Next Steps
-For more thorough information on how to build and deploy WebView2 application checkout our conceptual documentation and how-to guides.
+For more detailed information on how to build and deploy WebView2 applications, checkout our conceptual documentation and how-to guides.
 
 ### Concepts
 1. [WebView2 SDK and Microsoft Edge Versioning]()
