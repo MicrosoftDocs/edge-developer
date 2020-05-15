@@ -40,7 +40,6 @@ This code, which runs during the Service Worker `install` life cycle event, open
 
 ```javascript
 self.addEventListener( "fetch", event => {
-    // console.log( "WORKER: fetch event in progress." );  
     const request = event.request,
                     url = request.url;
     
