@@ -296,7 +296,14 @@ Time to test push notifications in your PWA!
 ## Next steps
 
 
-Of course, there is a lot more that goes into [making a great PWA][PwaEdgehtmlIndexRequirements] beyond what you read here, including responsive design, deep-linking, [cross-browser testing][BrowserStackTestEdgeBrowser] and other [best practices][Webhint] \(not to mention your app functionality!\), but hopefully this guide gave you a solid introduction of PWA basics and some ideas on getting started.  If you have further questions on PWA development with Windows or with Visual Studio, please leave a comment!  
+The following is a list of additional tasks to learn when building real-world PWAs:
+
+* Manage and store push subscriptions.
+* [Encrypt][NPMWebPushEncrypt] payload data
+* Responsive design
+* Deep-linking
+* [Cross-browser testing][BrowserStackTestEdgeBrowser] 
+* Implement best practices such as [Webhint][Webhint]   
 
 Review the other PWA guides to learn how to increase customer engagement and provide a more seamless, OS-integrated app experience.  
 
