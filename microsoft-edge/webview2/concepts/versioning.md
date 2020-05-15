@@ -17,7 +17,7 @@ WebView2 is dependent upon Microsoft Edge to function.  Each WebView2 SDK has a 
 To utilize WebView2 in your app, the minimum version of [Microsoft Edge (Chromium)](/microsoft-edge/index) supported by the WebView2 SDK must be installed on your machine.  To access the latest releases of the browser please see [Browser Channels](https://docs.microsoft.com/deployedge/microsoft-edge-channels).  
 
 > [!NOTE]
-> WebView2 is currently in Preview.  The Microsoft Edge WebViews team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed, however some newer versions of the browser may not support older SDK versions.  If there are breaking changes between browser versions and SDK, the Microsoft Edge WebViews team indicates the changes in the [release notes](../releasenotes.md)  
+> WebView2 is currently in Preview.  While, the Microsoft Edge WebViews team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed as some newer versions of the browser may not support older SDK versions.  If there are breaking changes between browser versions and SDKs, the Microsoft Edge WebViews team indicates the changes in the [release notes](../releasenotes.md)  
 
 In the future, the Microsoft Edge WebViews plans to change the distribution model.  The Microsoft Edge WebViews plans to removed the direct dependency on Microsoft Edge browser from WebView2 in a future release.  To learn more, see [WebView2 Runtime]() in the [Distribution]() section.  
 
