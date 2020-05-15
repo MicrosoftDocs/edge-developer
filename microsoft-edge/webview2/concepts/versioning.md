@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Browser version needed for WebView2  
+# Understanding browser versions and WebView2  
 
 WebView2 is dependent upon Microsoft Edge to function.  Each WebView2 SDK has a minimum browser version required to be installed.  This browser version is specified in our [Release Notes](../releasenotes.md).  You may see the minimum version reflected in the patch version of the SDK packaged version string \(for example, `SDK package version 0.9.488` indicates a minimum browser build number of 488\).  
 
