@@ -21,10 +21,10 @@ To utilize WebView2 in your app, the minimum version of [Microsoft Edge (chromiu
 
 In the future, we do plan to change the distribution model. We intend WebView2 to no longer have a direct dependency on the Edge browser install. Read about [WebView2 Runtime]() in the [Distribution]() section to learn more.
 
-# Experimental APIs
+## Experimental APIs
 
 While we are in preview the APIs in the SDK represent our expected APIs at GA. We also included in the SDK [Experimental APIs](../reference/win32/0-9-430-reference-webview2.md#experimental). These APIs represent functionality we are evaluating and would like to here feedback on before intending to included them as long term features. To leave feedback please engage with us on our [feedback repo](https://aka.ms/webviewfeedback).
 
-## Post GA plans
+### Post GA plans
 
 After we reach a stable general available state and release our 1.0.0 SDK, we will move all experimental APIs to a pre-release package. This pre-release package will continue to allow for feedback and insight into the latest features, while the stable release version maintains backward compatibility. 
