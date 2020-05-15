@@ -1,5 +1,5 @@
 ---
-title: Handle offline and network instability scenarios with the Cache API, Service Worker, and friends
+title: Offline and network connectivity support in Progressive Web Apps
 description: Learn how to use supporting technologies to create resilient experiences to cater for different network conditions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
