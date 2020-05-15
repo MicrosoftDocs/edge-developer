@@ -115,7 +115,7 @@ To build a service worker in your project, use the **Cache-first network** servi
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
     
-    Copy the files into the `public` folder in VS Code web app project.  
+1. Copy the downloaded files to the `public` folder in your web app project. 
     
 1.  In VS Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
