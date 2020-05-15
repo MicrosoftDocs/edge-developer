@@ -27,7 +27,7 @@ Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-c
 > [!NOTE]
 When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or right-click and select `Inspect` to avoid potential hotkey conflict.  
 
-### Visual Studio  
+## Visual Studio  
 
 Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script within WebView2 right from the IDE.  Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
 
