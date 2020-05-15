@@ -14,25 +14,25 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The Microsoft Edge WebView2 control enables you to embed web technologies (HTML, CSS, Javacript) in your native application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/) as the rendering engine. 
 
-![whatwebview](./webview2/images/whatwebview.PNG)
+![whatwebview](./media/WebView2/whatwebview.PNG)
 
-With WebView2, developers can embed web code in parts of their native application or build the entire native application within a single WebView. View our guides to [Get Started](WebView2.md#GettingStarted)!
+With WebView2, developers can embed web code in parts of their native application or build the entire native application within a single WebView. View our guides to [Get Started](WebView2.md#getting-started)!
 
 > [!NOTE]
-> The WebView2 Preview is intended for early prototyping and to gather feedback from the developer community to helps us shape the future stable API. There will be [breaking changes](webview2/releasenotes.md), so it should NOT be used for production apps.
+> The WebView2 Preview is intended for early prototyping and to gather feedback from the developer community to helps us shape the future stable API. There will be [breaking changes](releasenotes.md), so it should NOT be used for production apps.
 
 ## Hybrid Application Approach
 
 Developers often have to chose between building a web application or a native application. This decision hinges on the trade-off between Reach and Power.
 
-![webnative](./webview2/images/webnative.PNG)
+![webnative](./media/WebView2/webnative.PNG)
 
 Web applications allow for a broad reach. Web developers can reuse most, if not all of their code, across all different platforms. Native applications, however, can utilize the capabilities of the entire native platform.
 
 Hybrid applications allow developers to enjoy the best of both worlds. Hybrid application developers benefit from the ubiquity and strength of the web platform as well as the power and full capabilities of the native platform.
 
 ## WebView2 Benefits 
-![webviewreasons](./webview2/images/webviewreasons.PNG)
+![webviewreasons](./media/WebView2/webviewreasons.PNG)
 
 1. **Web Ecosystem & Skillset:** utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem
 2. **Rapid Innovation:** web development allows for faster deployment and iteration
