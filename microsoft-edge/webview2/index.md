@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Introduction to Microsoft Edge WebView2 (Preview)
 
-The Microsoft Edge WebView2 control enables you to embed web technologies (HTML, CSS, Javacript) in your native application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/) as the rendering engine. 
+The Microsoft Edge WebView2 control enables you to embed web technologies (HTML, CSS, JavaScript) in your native applications. The WebView2 control uses [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/) as the rendering engine to display the web content in native applications. With WebView2, developers can embed web code in different parts of their native application, or build the entire native application within a single WebView. For information on how to start building a WebView2 application, see [Get Started](index.md#getting-started).
 
 ![whatwebview](./media/WebView2/whatwebview.PNG)
 
