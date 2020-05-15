@@ -320,7 +320,7 @@ The following is a list of additional tasks to learn when building real-world PW
 
 [PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  
 
-[VisualStudioNodejsTutorialPublishAzureAppService]: /visualstudio/nodejs/tutorial-nodejs#optional-publish-to-azure-app-service "Publish to Azure App Service - Create a Node.js and Express app in Visual Studio | Microsoft Docs"  
+[VisualStudioNodejsTutorialPublishAzureAppService]: https://docs.microsoft.com/en-us/azure/javascript/tutorial-vscode-azure-app-service-node-03 "Deploy a Node.js app to Azure with VS Code | Microsoft Docs"  
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Create Azure free account | Microsoft Azure"  
 [AzureWebApps]: https://azure.microsoft.com/services/app-service/web "Web Apps | Microsoft Azure"  
