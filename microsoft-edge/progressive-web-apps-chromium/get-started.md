@@ -13,7 +13,7 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 
 Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement] with app-like features, such as installation, offline support, and push notifications.  You may also packaged your PWA for app stores, including the Microsoft Store, Google Play, Mac App Store and more.  
 
-This guide gives you an overview of PWA basics by creating a simple web app and extending it to be a PWA.  The finished product works similarly across modern browsers.  
+This guide gives you an overview of PWA basics by creating a simple web app and extending it to be a PWA.  The finished project works across modern browsers.  
 
 > [!TIP]
 > You may use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.  
