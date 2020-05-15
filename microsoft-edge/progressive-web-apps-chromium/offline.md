@@ -148,7 +148,7 @@ window.addEventListener("online",  function(){
     console.log("You are back online!");
 });
 window.addEventListener("offline", function(){
-    console.log("Oh no, you lost your network connection :-(");
+    console.log("Oh no, you lost your network connection.");
 });
 ```  
 
