@@ -28,4 +28,4 @@ For constrained environments there will be support for a fixed version distribut
 
 The Microsoft Edge WebView2 Runtime will package the browser binaries optimized for use by WebView2 applications. It will function standalone or side-by-side with a client Edge Browser installed. Installing the runtime once will support many WebView2 applications running on the client machine. Installing the runtime will not appear as a browser to end-users, and will have no desktop shortcuts, start menu entry point, or protocol registration.
 
-An application utilizing WebView2 must ensure the installation of the Microsoft Edge WebView2 Runtime has occurred. At application install time you should check the current install status, if the WebView2 Runtime is not available, you should chain the Microsoft Edge WebView2 Runtime Installer to your install flow.
+Applications that use the WebView2 Runtime will need to ensure that the runtime installation completed. To ensure your application installs the runtime as a dependency, you’ll be able to add the runtime to your install flow. 
