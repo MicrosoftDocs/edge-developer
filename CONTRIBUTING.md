@@ -6,6 +6,8 @@ Thank you for your interest in the Microsoft Edge documentation.  The Microsoft 
 
 If you want to contribute more than a couple lines and you are not a Microsoft employee, you must [sign a Microsoft Contribution Licensing Agreement (CLA)][MicrosoftOpensourceClaMain].  
 
+If you are a Microsoft Employee, please follow the internal guidance.  
+
 ## Proposing a change  
 
 To suggest a change to the docs, follow these steps.  
@@ -36,8 +38,6 @@ If you are unfamiliar with using Git, visit [Lynda.com Git Essentials training][
 
 After you have cloned the repo to your local machine, begin authoring with the text editor of your choice.  The Microsoft Edge team, of course, recommends [Visual Studio Code][VisualstudioCodeMain], a free lightweight open source editor from Microsoft.  
 
-<!--**For internal Microsoft employees**:  If you are unfamiliar with markdown authoring, see [How to use Markdown][ReviewHelpContributeMarkdownReferenceMaster] in the OPS Guide.  -->  
-
 ## Submitting your contribution and filing a Pull Request (PR)  
 
 After you are ready to add your changes to the remote repo so that the changes are staged for publishing, enter the following code in the command-line.  
@@ -59,14 +59,8 @@ When you are happy with your changes and ready to submit a PR:
     
 1.  Select the **New pull request** button.  \(The `base fork` is listed as `MicrosoftDocs/edge-developer`, the `head fork` should show your fork of the repo, and the branch in which you made your changes.\)  You may review your changes here as well.  
 1.  Select the green **Create pull request** button.  You must give your Pull Request a title and description, then select the **Create pull request** button again.  
-
 1.  After pushing your contribution to the remote repo, you are sent an email from **Open Publishing Build Service** informing whether your contribution built successfully and linking to any error warnings such as broken links, select the links to see your content staged on the site.  
-    
-    <!--**For internal Microsoft employees**:  After you have review your contribution on the [Microsoft Edge Docs staging site][ReviewMainMaster] and are confident that you want your changes published live, you must file a Pull Request \(PR\).  -->  
-    
 1.  After your PR is submitted, a member of the Microsoft Edge docs team reviews it.  
-    
-    <!--**For internal Microsoft employees**:  When it is accepted, you are able to view your changes on the [staging site][ReviewMainMaster].  Your updates are published live to [docs.microsoft.com/microsoft-edge][Main].  -->  
     
 ## Working with Branches  
 
@@ -74,12 +68,10 @@ The [Microsoft Edge Docs GitHub repository][GithubMicrosoftdocsEdgedeveloperMain
 
 | Branch  | Details  |  
 |:--- |:--- |  
-| [master][GithubMicrosoftdocsEdgedeveloperMaster]  | The content is internally reviewed on the [staging site][ReviewMainMaster].  |  
+| [master][GithubMicrosoftdocsEdgedeveloperMaster]  | The content is internally reviewed.  |  
 | [live][GithubMicrosoftdocsEdgedeveloperLive]  |  The content has been published on the [live site][Main].  |  
 
-When making contributions, please submit your Pull Request \(PR\) to the `master` branch.  This branch is viewable on the staging site and should only contain contributions that are ready to publish live.  
-
-<!--**For internal Microsoft employees**:  Please create a unique branch for your content and push to `origin`.  If you have content to contribute that is confidential or must be scheduled for future release, please contact the Microsoft Edge Developer Docs team.  -->  
+When making contributions, please submit your Pull Request \(PR\) to the `master` branch.  This branch is viewable internally and should only contain contributions that are ready to publish live.  
 
 ## Using issues to provide feedback on Microsoft Edge documentation  
 
@@ -93,22 +85,11 @@ Be sure to include the topic title and the URL for the page.
 
 *   [Getting started with writing and formatting on GitHub][GithubHelpWritingGettingStarted]  
 
-<!--
-### Additional resources for Microsoft employees  
-
-*   [Connect your GitHub account and MS alias][ReviewHelpContributeGetStartedGithubMaster]  
-*   [Resources for writing Markdown][ReviewHelpContributeMarkdownReferenceMaster]  
--->  
-
 <!-- image links -->  
 
 <!-- links -->  
 
 [Main]: https://docs.microsoft.com/microsoft-edge "Microsoft Edge documentation | Microsoft Docs"  
-
-<!--[ReviewHelpContributeGetStartedGithubMaster]: https://review.docs.microsoft.com/help/contribute/contribute-get-started-setup-github?branch=master "GitHub account setup @ master | Microsoft Docs review"  -->  
-<!--[ReviewHelpContributeMarkdownReferenceMaster]: https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master "Docs Markdown reference @ master | Microsoft Docs review"  -->  
-<!--[ReviewMainMaster]: https://review.docs.microsoft.com/microsoft-edge?branch=master "Microsoft Edge documentation @ master | Microsoft Docs review"  -->  
 
 [GithubHelpGettingStartedForkRepo]: https://help.github.com/github/getting-started-with-github/fork-a-repo "Fork a repo | GitHub Help"  
 [GithubHelpWritingGettingStarted]: https://help.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github "Getting started with writing and formatting on GitHub | GitHub Help"  
@@ -123,5 +104,3 @@ Be sure to include the topic title and the URL for the page.
 [MicrosoftOpensourceClaMain]: https://cla.opensource.microsoft.com "Contributor License Agreement | Microsoft Open Source"  
 
 [VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
-
-[MailtoMicrosoftWebdocs]: mailto:webdocs@microsoft.com "webdocs@microsoft.com"  
