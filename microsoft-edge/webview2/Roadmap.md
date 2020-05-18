@@ -1,5 +1,5 @@
 ---
-description: Learn what is coming next for WebView2
+description: Learn about what's coming next for WebView2
 title: Roadmap for Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -49,6 +49,5 @@ You can bring WebView2 to UWP applications through [Win UI 3.0](https://docs.mic
 
 ## Fixed Version
 WebView2's [Fixed]() distribution model allows you to package the Microsoft Edge binaries inside your native application. Engineering work is currently under way with a preview set to be ready towards the end of  Q3 2020 and GA Q4 2020.
-
 
 
