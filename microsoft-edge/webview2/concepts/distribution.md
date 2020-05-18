@@ -22,7 +22,7 @@ There will be support for two distribution options using the WebView2 Runtime: e
 
 Evergreen will be the recommended distribution model for most developers. In this mode, updates are pushed automatically to the WebView2 Runtime without additional effort from your application. The evergreen model ensures that your app is taking advantage of the latest features and security updates for hosted web content.
 
-For constrained environments we will also support a fixed version distribution model. In this model your application will select and package a specific WebView2 version. Updates to the WebView version will be the responsibility of the application and will be independent of any managed Microsoft update mechanisms. You should choose this model if it is crucial to be able to have absolute control over the browser version and update times your application is taking advantage of.
+For constrained environments there will be support for a fixed version distribution model. In this model, your application selects and packages a specific version of WebView2. Updates to the WebView version do not occur automatically, and will be the responsibility of the application. The fixed version model is beneficial when you need to control the browser version, and when your application updates. 
 
 ### Microsoft Edge WebView2 Runtime
 
