@@ -726,8 +726,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/hosting/gettingstarted.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/win32",
+      "source_path": "microsoft-edge/hosting/webview2/gettingstarted.md",
+      "redirect_url": "/microsoft-edge/webview2/gettingstarted/win32",
       "redirect_document_id": true
     },
     {
