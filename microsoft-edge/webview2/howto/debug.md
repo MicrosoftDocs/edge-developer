@@ -51,6 +51,3 @@ You may use Visual Studio Code to debug scripts that run in WebView2 controls.  
 
 Help build a richer WebView2 experience by sharing your feedback.  Visit the [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.  
 
-## See also
-
-<!-- links -->  
