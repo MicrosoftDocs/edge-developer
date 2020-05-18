@@ -127,17 +127,22 @@ To utilize WebView2 within your app you must install and reference the [WebView2
 
 ### Next Steps  
 
-For more detailed information on how to build and deploy WebView2 applications, checkout our conceptual documentation and how-to guides.  
+For more detailed information on how to build and deploy WebView2 applications, checkout our conceptual documentation<!-- and how-to guides-->.  
 
 #### Concepts  
 
-*   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)  
-*   [Distributing WebView2 Applications](./concepts/distribution.md)  
+*   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)  <!--*   [Distributing WebView2 Applications](./concepts/distribution.md)  -->  
 
+<!--todo: add distribution when available  -->  
+
+<!--  
 #### How-To Guides  
 
 *   [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./how-to/debugging.md)  
 *   [Automating and Debugging WebView2 with Microsoft EdgeDriver](./how-to/webdriver.md)  
+-->  
+
+<!--todo: add how-tos when available  -->  
 
 ## Getting in touch with the WebView2 team  
 
