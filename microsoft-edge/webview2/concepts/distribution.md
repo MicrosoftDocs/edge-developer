@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 The WebView2 control utilizes the Microsoft Edge \(Chromium\) browser. When distributing your app, ensure that the Edge browser is installed on all user machines where your application runs. The WebView2 control uses the most stable version of the browser that’s installed on a machine. For example, you may have Stable, Beta, Dev, and Canary installed at the same time, and in this situation, WebView2 controls run in the Stable channel. Ensure you review the release notes to ensure that the version of the browser installed on your machines that run your WebView2 controls meet the minimum version requirements.
 
-## Future Planned Changes
+## Roadmap
 
 We recognize that the Edge browser may not be available on all user machines your application is intended to run, or that control of the Edge browser install process may be difficult. To ensure your application will run on all machines, independent of the install status of the client Microsoft Edge browser, we will release the Microsoft Edge WebView2 Runtime. We will further update WebView2 to search for the stable version of the Runtime before searching for pre-release versions of the installed browser.
 
