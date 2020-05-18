@@ -4,7 +4,7 @@ description: Learn how Object Real-Time Communications (ORTC) enables media stre
 title: Dev guide - Object RTC API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -12,10 +12,10 @@ keywords: edge, web development, html, css, javascript, developer
 
 # Object RTC API  
 
-Object Real-Time Communications \(ORTC\) enables media \(audi, video or audio and video\) streamed \(sent and received\) in real-time directly between web browsers, mobile devices, and servers using native Javascript APIs.  
+Object Real-Time Communications \(ORTC\) enables media \(audio, video or audio and video\) streamed \(sent and received\) in real-time directly between web browsers, mobile devices, and servers using native Javascript APIs.  
 
 > [!NOTE]
-> Microsoft Edge now implements ORTC for Windows 10 devices.  However, this implementation differs from the most recent version of the [ORTC API][OrtcApiWebrtcMain].  ORTC has continued to evolve since the development and release of Microsoft Edge -- the browser does not implement every object or method within the ORTC API, and includes extensions not currently incorporated within the specification.  Further development continues with the goal to enable developers around the world to build experiences that include the ability to talk to Skype users and other WebRTC compatible communication services.  
+> Microsoft Edge now implements ORTC for Windows 10 devices.  However, the implementation differs from the most recent version of the [ORTC API][OrtcApiWebrtcMain].  ORTC continues to evolve since the development and release of Microsoft Edge.  The Microsoft Edge browser does not implement every object or method within the ORTC API, and includes extensions not currently incorporated within the specification.  Further development continues with the goal to enable developers around the world to build experiences that include the ability to talk to Skype users and other WebRTC compatible communication services.  
 
 <!--
 To get a hands-on experience with ORTC, try out these demos on Test Drive:  
@@ -37,8 +37,6 @@ ORTC uses **sender**, **receiver** and **transport** objects, which have capabil
    Figure 1. Microsoft Edge ORTC Flow Diagram
 :::image-end:::
 
-<!--![Microsoft Edge ORTC Flow Diagram][ImageOrtcDiagram]  -->  
-
 In Figure 1, the [RTCRtpSender][PreviousVersionsMt502516] encodes the track provided as input, which is transported over a [RTCDtlsTransport][PreviousVersionsMt502495] or an [RTCSrtpSdesTransport][PreviousVersionsMt502527].  Sending of Dual Tone Multi Frequency \(DTMF\) tones is supported using the [RTCDtmfSender][PreviousVersionsMt502496].  
 
 The [RTCDtlsTransport][PreviousVersionsMt502495] and [RTCSrtpSdesTransport][PreviousVersionsMt502527] utilize an [RTCIceTransport][PreviousVersionsMt433112] to select a communication path to reach the `RTCIceTransport` of the receiving peer, which is in turn associated with an `RTCDtlsTransport` or `RTCSrtpSdesTransport` which de-multiplexes media to the [RTCRtpReceiver][PreviousVersionsMt502508].  The `RTCRtpReceiver` then decodes media, producing a track which is rendered by an audio or video tag.  
@@ -50,10 +48,56 @@ Several other objects also play a role.  The [RTCIceGatherer][PreviousVersionsMt
 
 ## Components supported in the initial Microsoft Edge implementation  
 
+:::row:::
+   :::column span="1":::
+      **ORTC API support**
+   :::column-end:::
+   :::column span="2":::
+      Audio/video communications is the primary focus, including the following objects.  
+      *   [RTCIceGatherer][PreviousVersionsMt433107]  
+      *   [RTCIceTransport][PreviousVersionsMt433112]  
+      *   [RTCDtlsTransport][PreviousVersionsMt502495]  
+      *   [RTCRtpSender][PreviousVersionsMt502516]  
+      *   [RTCRtpReceiver][PreviousVersionsMt502508]  
+      *   [RTCStats][PreviousVersionsMt589726], the interfaces that are not shown directly in the diagram.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **RTP/RTCP multiplexing support**
+   :::column-end:::
+   :::column span="2":::
+      [RTP/RTCP multiplexing][PreviousVersionsMt502503] is required for use with the [DtlsTransport][PreviousVersionsMt502495].  A/V multiplexing is also supported.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **STUN/TURN/ICE support**
+   :::column-end:::
+   :::column span="2":::
+      The following components are supported.  
+      *   STUN [(RFC 5389)][IetfToolsRfc5389]  
+      *   TURN [(RFC 5766)][IetfToolsRfc5766]  
+      *   ICE [(RFC 5245)][IetfToolsRfc5245], regular nomination is supported with aggressive nomination partially supported \(as a receiver\).  
+      *   DTLS-SRTP [(RFC 5764)][IetfToolsRfc5764] is supported, based on DTLS 1.0 [(RFC4347)][IetfToolsRfc4347].  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Codec support**
+   :::column-end:::
+   :::column span="2":::
+      For [audio codecs][PreviousVersionsMt599587], the Microsoft Edge team supports G.711, G.722, Opus, and SILK.  The Microsoft Edge team also support Comfort Noise \(CN\) and DTMF according to the RTCWEB audio requirements.  
+      For video, the Microsoft Edge team currently supports the [H.264UC][PreviousVersionsMt589706] codec used by Skype services, supporting advanced features such as simulcast, scalable video coding and forward error correction.  The Microsoft Edge team is working to enable interoperable video with H.264.  
+   :::column-end:::
+:::row-end:::
+
+<!--  
 *   **ORTC API support.**  Audio/video communications is the primary focus, including the following objects:  [RTCIceGatherer][PreviousVersionsMt433107], [RTCIceTransport][PreviousVersionsMt433112], [RTCDtlsTransport][PreviousVersionsMt502495], [RTCRtpSender][PreviousVersionsMt502516], [RTCRtpReceiver][PreviousVersionsMt502508], as well as the [RTCStats][PreviousVersionsMt589726] interfaces that are not shown directly in the diagram.  
 *   **RTP/RTCP multiplexing support.**  [RTP/RTCP multiplexing][PreviousVersionsMt502503] is required for use with the [DtlsTransport][PreviousVersionsMt502495].  A/V multiplexing is also supported.  
 *   **STUN/TURN/ICE support.**  STUN [(RFC 5389)][IetfToolsRfc5389], TURN [(RFC 5766)][IetfToolsRfc5766] as well as ICE [(RFC 5245)][IetfToolsRfc5245], are supported.  Within ICE, regular nomination is supported, with aggressive nomination partially supported \(as a receiver\).  DTLS-SRTP [(RFC 5764)][IetfToolsRfc5764] is supported, based on DTLS 1.0 [(RFC4347)][IetfToolsRfc4347].  
 *   **Codec support.**  For [audio codecs][PreviousVersionsMt599587], the Microsoft Edge team supports G.711, G.722, Opus, and SILK.  The Microsoft Edge team also support Comfort Noise \(CN\) and DTMF according to the RTCWEB audio requirements.  For video, the Microsoft Edge team currently supports the [H.264UC][PreviousVersionsMt589706] codec used by Skype services, supporting advanced features such as simulcast, scalable video coding and forward error correction.  The Microsoft Edge team is working to enable interoperable video with H.264.  
+-->  
 
 > [!NOTE]
 > If you are familiar with WebRTC 1.0 implementations, and are interested in the evolution of object support within WebRTC 1.0 and ORTC, the Microsoft Edge team recommends the following presentation by Google, Microsoft, and Hookflash from the 2014 IIT RTC Conference:  "[ORTC API Update][RtcConference2016WpContentgravityForms22f7a537445fa703985ab4d2372ac42ca201410OrtcApiUpdate]."  
@@ -62,7 +106,7 @@ Several other objects also play a role.  The [RTCIceGatherer][PreviousVersionsMt
 
 For this scenario, two Windows 10 machines acts as two peers with a webserver as the signaling channel to exchange information between the peers so that a connection may be established between them.  
 
-The steps below are scoped to operations taken by one peer.  Both peers must go through similar steps in order to set up the 1:1 communications.  To make better sense out of the code snippets below, refer to the [Microsoft Edge Test Drive Demo][MicrosoftDeveloperEdgeTestdriveDemoOrtc].  
+The steps below are scoped to operations taken by one peer.  Both peers must go through similar steps in order to set up the 1:1 communications.  <!--To make better sense out of the code snippets below, refer to the [Microsoft Edge Test Drive Demo][MicrosoftDeveloperEdgeTestdriveDemoOrtc].  -->  
 
 This example uses audio-video and RTP/RTCP multiplexing, so you are seeing only a single ICE and DTLS transport, used to transport RTP and RTCP packets for both audio and video.  
 
@@ -108,7 +152,7 @@ iceGathr.onlocalcandidate = function(evt) {
 
 To help protect user privacy, Microsoft Edge introduces an option that allows a user to control whether local host IP addresses may be exposed by the [IceGatherer][PreviousVersionsMt433107] objects.  An interface option is provided to toggle this setting.  
 
-In the [Microsoft Edge Test Drive Demo][MicrosoftDeveloperEdgeTestdriveDemoOrtc], a TURN server has been set up.  This TURN server has a very limited throughput, so is limited to only demo page use.  
+<!--In the [Microsoft Edge Test Drive Demo][MicrosoftDeveloperEdgeTestdriveDemoOrtc], a TURN server has been set up.  The TURN server has a very limited throughput, so is limited to only demo page use.  -->  
 
 ### Step 3:  Create the ICE transport for audio and video  
 
@@ -183,7 +227,7 @@ mySignaller.onRemoteParams = function(params) {
 };
 ```  
 
-Below is a skeleton of the helper functions.  Find more details in the [Microsoft Edge Test Drive Demo][MicrosoftDeveloperEdgeTestdriveDemoOrtc].  
+The following code snippet is a skeleton of the helper functions.  <!--Find more details in the [Microsoft Edge Test Drive Demo][MicrosoftDeveloperEdgeTestdriveDemoOrtc].  -->  
 
 ```javascript
 RTCRtpParameters function myCapsToSendParams (RTCRtpCapabilities sendCaps, RTCRtpCapabilities remoteRecvCaps) {
@@ -257,8 +301,6 @@ Microsoft Edge implementation is still early, expect the feature set to continue
 *   [W3C Object RTC (ORTC) API for WebRTC][OrtcApiWebrtcDraftMain]  
 
 <!-- image links -->  
-
-<!--[ImageOrtcDiagram]: ../media/ortc_diagram.png "Microsoft Edge ORTC Flow Diagram"  -->  
 
 <!-- links -->  
 
