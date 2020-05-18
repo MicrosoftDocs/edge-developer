@@ -16,7 +16,7 @@ The WebView2 control utilizes the Microsoft Edge \(Chromium\) browser. When dist
 
 ## Roadmap
 
-We recognize that the Edge browser may not be available on all user machines your application is intended to run, or that control of the Edge browser install process may be difficult. To ensure your application will run on all machines, independent of the install status of the client Microsoft Edge browser, we will release the Microsoft Edge WebView2 Runtime. We will further update WebView2 to search for the stable version of the Runtime before searching for pre-release versions of the installed browser.
+We recognize that the Edge browser may not be available on all user machines where your application will run, or that installing Edge browser throughout your organization may be difficult. To ensure your application runs on all machines, independent of the installed Microsoft Edge browser, we will release the Microsoft Edge WebView2 Runtime. Additionally, we will update WebView2 to search for the stable version of the runtime before searching for pre-release versions of the installed browser.
 
 We also recognize that some app developers operate in constrained environments, and so intend to support two distribution options, evergreen and fixed version.
 
