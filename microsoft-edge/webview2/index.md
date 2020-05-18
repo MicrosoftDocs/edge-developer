@@ -88,11 +88,7 @@ To build and test your application using the WebView2 control, you need to have 
 *   [Getting Started with WPF](./gettingstarted/wpf.md)  
 *   [Getting Started with WinForms](./gettingstarted/winforms.md)  
 
-The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDKs features and any API usage patterns.  As the Microsoft Edge WebView team adds more features to the WebView2 SDK, the Microsoft Edge WebView team updates the sample applications.  
-
-*   [Win32 C/C++ Sample]()  
-*   [WPF Sample]()  
-*   [WinForms Sample]()  
+The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDKs features and API usage patterns. As more features are added to the WebView2 SDK, the sample applications will be updated.   
 
 ## Supported Platforms  
 
@@ -127,10 +123,7 @@ An application utilizing WebView2 must ensure the installation of the Microsoft 
 
 ## Microsoft Edge WebView2 SDK  
 
-To utilize WebView2 within your app you must install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application.  The WebView2 NuGet releases contain both a release and pre-release version.  The release version contains the public APIs the Microsoft Edge WebView team currently intends to release to general availability.  
-
-
-## See also  
+To utilize WebView2 within your app you must install and reference the [WebView2 SDK](https://aka.ms/webviewnuget) in your application.  The WebView2 NuGet releases contain both a release and pre-release version.  The release version contains the public APIs the Microsoft Edge WebView team currently intends to release to general availability.   
 
 ### Next Steps  
 
@@ -154,4 +147,3 @@ Help build a richer WebView2 experience by sharing your feedback.  Visit the Web
 > [!NOTE]
 > During developer preview, the Microsoft Edge WebView team also collects data to help build a better WebView.  Users may turn off WebView data collection by navigating to `edge://settings/privacy` in the Microsoft Edge browser and turning off browser data collection.  
 
-<!-- links -->  
