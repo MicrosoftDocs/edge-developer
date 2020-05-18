@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 05/18/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -15,8 +15,8 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.  The WebView2 control uses [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native applications.  With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.  For information on how to start building a WebView2 application, see [Get Started](./index.md#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="What is WebView":::
-   What is WebView
-:::image-end:::
+   What is WebView  
+:::image-end:::  
 
 > [!NOTE]
 > The WebView2 Preview is intended for early prototyping and to gather feedback to help to shape the API.  The Microsoft Edge WebView team does not recommend that you use the preview in your production apps because there may be [breaking changes](./releasenotes.md).  
@@ -26,16 +26,16 @@ The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML
 Developers often have to choose between building a web application or a native application.  The decision hinges on the trade-off between reach and power.  Web applications allow for a broad reach.  As a Web developer, you may reuse most, if not all of your code, across all different platforms.  Native applications, however, utilize the capabilities of the entire native platform.  
 
 :::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web native":::
-   Web native
-:::image-end:::
+   Web native  
+:::image-end:::  
 
 Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.  
 
 ## WebView2 Benefits   
 
 :::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="WebView reasons":::
-   WebView reasons
-:::image-end:::
+   WebView reasons  
+:::image-end:::  
 
 :::row:::
    :::column span="1":::
@@ -78,7 +78,7 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       **Incremental adoption**  
       Add web components piece by piece to your application.  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 
 ## Getting Started  
 
@@ -139,11 +139,9 @@ For more detailed information on how to build and deploy WebView2 applications, 
 *   [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./how-to/debugging.md)  
 *   [Automating and Debugging WebView2 with Microsoft EdgeDriver](./how-to/webdriver.md)  
 
-
 ## Getting in touch with the WebView2 team  
 
 Help build a richer WebView2 experience by sharing your feedback.  Visit the WebView [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports.  It is also a good place to search for known issues.  
 
 > [!NOTE]
 > During developer preview, the Microsoft Edge WebView team also collects data to help build a better WebView.  Users may turn off WebView data collection by navigating to `edge://settings/privacy` in the Microsoft Edge browser and turning off browser data collection.  
-
