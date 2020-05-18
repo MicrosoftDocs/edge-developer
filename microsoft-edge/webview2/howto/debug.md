@@ -27,7 +27,7 @@ Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-c
 :::image-end:::
 
 > [!NOTE]
-When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid this situation.  
+> When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid this situation.  
 
 ## Visual Studio  
 
