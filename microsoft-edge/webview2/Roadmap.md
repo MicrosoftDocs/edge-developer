@@ -4,7 +4,7 @@ title: Roadmap for Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/19/2020
-ms.topic: reference
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
@@ -49,5 +49,4 @@ You can bring WebView2 to UWP applications through [Win UI 3.0](https://docs.mic
 
 ## Fixed Version
 WebView2's [Fixed]() distribution model allows you to package the Microsoft Edge binaries inside your native application. Engineering work is currently under way with a preview set to be ready towards the end of  Q3 2020 and GA Q4 2020.
-
 
