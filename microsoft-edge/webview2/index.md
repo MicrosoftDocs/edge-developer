@@ -47,17 +47,17 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       Web development allows for faster deployment and iteration.  
    :::column-end:::
    :::column span="1":::
-      **Windows 7, 8, 10 support**  
+      **Windows 7, 8, 10 Support**  
       Support for a consistent user experience across Windows 7, 8, and 10.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **Native Capabilities**  
+      **Native capabilities**  
       Access the full set of Native APIs.  
    :::column-end:::
    :::column span="1":::
-      **Code sharing**  
+      **Code-sharing**  
       Add web code to your codebase allows for increased re-use across multiple platforms.  
    :::column-end:::
    :::column span="1":::
@@ -71,7 +71,7 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
-      **Fixed distribution** \(coming soon\)  
+      **Fixed** \(coming soon\)  
       Choose to package the Chromium bits in your application.  
    :::column-end:::
    :::column span="1":::
