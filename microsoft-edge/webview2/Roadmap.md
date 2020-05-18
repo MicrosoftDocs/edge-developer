@@ -13,7 +13,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 # Microsoft Edge WebView2 Roadmap
 ### Last Updated: May 2020
 
-The WebView2 control allows developers to embed web technologies in their native applications. This document outlines the prospective roadmap for WebView2 through 2020 and into 2021. 
+The WebView2 control allows developers to embed web technologies in their native applications. This document outlines the prospective roadmap for WebView2. 
 
 WebView2 is under active development and the roadmap will continue to evolve based on market changes and customer feedback, so please note that the plans outlined here aren't exhaustive and are subject to change. 
 
@@ -49,4 +49,3 @@ You can bring WebView2 to UWP applications through [Win UI 3.0](https://docs.mic
 
 ## Fixed Version
 WebView2's [Fixed]() distribution model allows you to package the Microsoft Edge binaries inside your native application. Engineering work is currently under way with a preview set to be ready towards the end of  Q3 2020 and GA Q4 2020.
-
