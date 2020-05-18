@@ -18,7 +18,7 @@ The WebView2 control utilizes the Microsoft Edge \(Chromium\) browser. When dist
 
 We recognize that the Edge browser may not be available on all user machines where your application will run, or that installing Edge browser throughout your organization may be difficult. To ensure your application runs on all machines, independent of the installed Microsoft Edge browser, we will release the Microsoft Edge WebView2 Runtime. Additionally, we will update WebView2 to search for the stable version of the runtime before searching for pre-release versions of the installed browser.
 
-We also recognize that some app developers operate in constrained environments, and so intend to support two distribution options, evergreen and fixed version.
+There will be support for two distribution options using the WebView2 Runtime: evergreen, and fixed version.
 
 Evergreen will be the recommended distribution model for most developers. In this mode updates to the WebView2 Runtime will be fully managed by Microsoft keeping you up to date automatically without additional effort from your application. With this self-updating model you can be assured that your app is taking advantage of the latest features and security updates for hosted web content.
 
