@@ -30,7 +30,7 @@ Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-c
 
 ## Visual Studio  
 
-Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script within WebView2 from inside the IDE.  Make sure the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
+Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
 
 :::image type="complex" source="../media/vs-js-diagnostics.jpg" alt-text="Visual Studio JavaScript diagnostics":::
    Visual Studio JavaScript diagnostics  
