@@ -21,8 +21,8 @@ Use [Microsoft Edge (Chromium) Developer Tools](/microsoft-edge/devtools-guide-c
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) > select `Inspect`.  
 
-:::image type="complex" source="../media/f12.png" alt-text="F12":::
-   F12  
+:::image type="complex" source="../media/f12.png" alt-text="Microsoft Edge DevTools":::
+   Microsoft Edge DevTools  
 :::image-end:::  
 
 > [!NOTE]
