@@ -218,9 +218,9 @@ driver = Edge(service_args = service_args)
 
 <a id="customizing-microsoft-edge-driver-services-code" />  
 
-When using JavaScript, the `edge` object has a `ServiceBuilder` method that returns a `service` you may optionally pass to the `edge.driver` object, which creates and starts the service for you. 
+When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class. You may optionally pass this `Service` object to the `Driver` object which will start and stop the service for you.
 
-To configure the `EdgeService`, run additional methods within `edge.ServiceBuilder()` before calling the `build()` method and then pass the service as a parameter in the `edge.Driver.createSession()` method.
+To configure the `Service`, run additional methods within the `ServiceBuilder` class before calling the `build()` method and then pass the service as a parameter in the `Driver.createSession()` method.
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
