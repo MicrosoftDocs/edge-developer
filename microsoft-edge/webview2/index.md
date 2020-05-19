@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/18/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -131,16 +131,13 @@ For more detailed information on how to build and deploy WebView2 applications, 
 
 #### Concepts  
 
-*   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)  <!--*   [Distributing WebView2 Applications](./concepts/distribution.md)  -->  
-
-<!--todo: add distribution when available  -->  
-
-<!--  
+*   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)
+*   [Distributing WebView2 Applications](./concepts/distribution.md)  
+ 
 #### How-To Guides  
 
-*   [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./how-to/debugging.md)  
-*   [Automating and Debugging WebView2 with Microsoft EdgeDriver](./how-to/webdriver.md)  
--->  
+*   [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./howto/debug.md)  
+*   [Automating and Debugging WebView2 with Microsoft EdgeDriver](./howto/webdriver.md)  
 
 <!--todo: add how-tos when available  -->  
 

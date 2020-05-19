@@ -10,10 +10,14 @@
       href: gettingstarted/winforms.md
 - name: Concepts
   items:
+    - name: Distributing My App
+      href: concepts/distribution.md
     - name: Versioning
-      href: concepts/versioning.md    
+      href: concepts/versioning.md
 - name: Release notes
   href: releasenotes.md
+- name: Roadmap
+  href: roadmap.md
 - name: How To
   items:
     - name: Debug WebView2
