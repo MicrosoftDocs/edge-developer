@@ -99,7 +99,7 @@ A developer preview is available on the following programming environments.
 *   .NET Core 3.0 or later  
 *   [WinUI 3.0](/uwp/toolkits/winui3/)  
 
-You mun run Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, or Windows Server 2008 R2.   
+You must run Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012/2012R2, or Windows Server 2008 R2.   
 
 ## Next Steps  
 
