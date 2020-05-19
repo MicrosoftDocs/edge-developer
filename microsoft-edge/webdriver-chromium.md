@@ -88,6 +88,14 @@ var driver = new EdgeDriver();
 driver = Edge()
 ```  
 
+#### [JavaScript](#tab/javascript/)
+
+<a id="basic-usage-code" />  
+
+```javascript
+let driver = edge.Driver.createSession();
+```  
+
 * * *  
 
 ### Driving Microsoft Edge (Chromium)  
@@ -96,7 +104,7 @@ To use with Microsoft Edge \(Chromium\) instead, create a new `EdgeDriver` class
 
 #### [C#](#tab/c-sharp/)  
 
-<a id="diving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code" />  
 
 ```csharp
 var options = new EdgeOptions();
@@ -107,13 +115,24 @@ var driver = new EdgeDriver(options);
 
 #### [Python](#tab/python/)  
 
-<a id="diving-microsoft-edge-chromium-code" />  
+<a id="driving-microsoft-edge-chromium-code" />  
 
 ```python
 options = EdgeOptions()
 options.use_chromium = True
 
 driver = Edge(options)
+```  
+
+#### [JavaScript](#tab/javascript/)  
+
+<a id="driving-microsoft-edge-chromium-code" />  
+
+```javascript
+let options = new edge.Options();
+options.setEdgeChromium(true);
+
+let driver = edge.Driver.createSession(options);
 ```  
 
 * * *  
@@ -144,6 +163,18 @@ options.use_chromium = True
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
 
 driver = Edge(options)
+```  
+
+#### [JavaScript](#tab/javascript/)  
+
+<a id="choosing-specific-browser-binaries-chrome-only-code" />  
+
+```javascript
+let options = new edge.Options();
+options.setEdgeChromium(true);
+options.setBinaryPath("C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe");
+
+let driver = edge.Driver.createSession(options);
 ```  
 
 * * *  
@@ -183,6 +214,19 @@ service_args = ['--verbose']
 driver = Edge(service_args = service_args)
 ```  
 
+#### [JavaScript](#tab/javascript/)  
+
+<a id="customizing-microsoft-edge-driver-services-code" />  
+
+When using JavaScript, the `edge` object has a `ServiceBuilder` method that returns a `service` you may optionally pass to the `edge.driver` object, which creates and starts the service for you. 
+
+To configure the `EdgeService`, run additional methods within `edge.ServiceBuilder()` before calling the `build()` method and then pass the service as a parameter in the `edge.Driver.createSession()` method.
+
+```javascript
+let service = new edge.ServiceBuilder().enableVerboseLogging().build();
+let driver = edge.Driver.createSession(options, service);
+```
+
 * * *  
 
 ### Using Chromium-Specific Options  
@@ -207,10 +251,20 @@ options.AddArgument("disable-gpu");
 ```python
 options = EdgeOptions()
 options.use_chromium = True
-options.add_argument('headless')
-options.add_argument('disable-gpu')
+options.add_argument("headless")
+options.add_argument("disable-gpu")
 ```  
 
+#### [JavaScript](#tab/javascript/)  
+
+<a id="using-chromium-specific-options-code" />  
+
+```javascript
+let options = new edge.Options();
+options.setEdgeChromium(true);
+options.addArguments("headless");
+options.addArguments("disable-gpu");
+```
 * * *  
 
 > [!NOTE]
