@@ -28,7 +28,7 @@ The WebView2 team has a few major efforts underway:
 3.  General Availability 
     *   Win32 C/C++ (Q4 2020)
     *   .NET (Q4 2020)
-    *   WinUI 3.0 (Q2 2021)
+    *   [WinUI 3.0](https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md)
 
 ## WebView2 Runtime & Installer
 
