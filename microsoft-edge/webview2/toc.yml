@@ -12,12 +12,18 @@
   items:
     - name: Distributing My App
       href: concepts/distribution.md
+    - name: Versioning
+      href: concepts/versioning.md
 - name: Release notes
   href: releasenotes.md
-- name: Tooling
+- name: Roadmap
+  href: roadmap.md
+- name: How To
   items:
-    - name: WebDriver
-      href: tooling/webdriver.md
+    - name: Debug WebView2
+      href: howto/Debug.md
+    - name: Automate with Edge Driver
+      href: howto/webdriver.md
 - name: Reference
   href: webview2-api-reference.md
   items:
