@@ -47,7 +47,7 @@ The rest of this article will focus mostly on Chromium extensions.
 
 ## Browser compatibility and extension testing
 
-Occasionally, API parity may not exist between Chromium browsers. For example, there are differences in the identity and payment APIs. To ensure your extension meets customer expectations, review API statuses through official browser documentation such as [Chrome APIs](https://developer.chrome.com/extensions/api_index), [Extension APIs Supported in Opera](https://dev.opera.com/extensions/apis/), and [Port Chrome Extension To Microsoft (Chromium) Edge](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension).
+Occasionally, API parity may not exist between Chromium browsers. For example, there are differences in the identity and payment APIs. To ensure your extension meets customer expectations, review API statuses through official browser documentation such as [Chrome APIs](https://developer.chrome.com/extensions/api_index), [Extension APIs Supported in Opera](https://dev.opera.com/extensions/apis/), and [Port Chrome Extension To Microsoft (Chromium) Edge](https://docs.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension).
 
 Depending on the APIs you need, these differences may mean that you need to create slightly different code packages with small differences in the code for each store.
 
@@ -69,7 +69,7 @@ Extensions could have overlapping audiences that often use multiple browsers, or
 
 If you already developed an extension for another Chromium browser and want to offer it and ensure it works through Microsoft Edge, you do not have to rewrite your extension. Migrating existing Chromium extensions to other Chromium browsers is straightforward as long as the APIs you use are available on different browsers or there are other APIs that provide the needed functionality.
 
-For more information on porting your Chrome extension, see [Port Chrome extensions to Microsoft (Chromium) Edge](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension). Once you have ported your extension to the target browser, the next step is to publish it.
+For more information on porting your Chrome extension, see [Port Chrome extensions to Microsoft (Chromium) Edge](https://docs.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension). Once you have ported your extension to the target browser, the next step is to publish it.
 
 ### Publishing to the Microsoft Edge add-ons website
 
@@ -83,7 +83,7 @@ To submit your extension to the store, you’ll need:
 *	Information that describes your extension such as the name, short description, long description, and a link to your privacy policy. 
 
 >[!NOTE]
-> Different stores may have different submission requirements. The above list summarizes the [requirements](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/publish-extension) for publishing an extension to Microsoft Edge.
+> Different stores may have different submission requirements. The above list summarizes the [requirements](https://docs.microsoft.com/microsoft-edge/extensions-chromium/publish/publish-extension) for publishing an extension to Microsoft Edge.
 
 After you complete the submission process, your extension is reviewed and will either pass or fail the certification process. Owners are notified of the outcome and given next steps as needed. If a developer submits an updated extension to the store, including updates to the extension listing details, a new review process is started. 
 
@@ -100,7 +100,7 @@ After you complete the submission process, your extension is reviewed and will e
 
 [Getting Started (Opera)](https://dev.opera.com/extensions/getting-started/)
 
-[Getting Started With Microsoft Edge (Chromium) Extensions](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/)
+[Getting Started With Microsoft Edge (Chromium) Extensions](https://docs.microsoft.com/microsoft-edge/extensions-chromium/getting-started/)
 
  
 
