@@ -173,9 +173,9 @@ To try a demo, see [Locale-dependent code example][MathiasByensLocaleDemo].
 
 Chromium issue [#1051822][crbug1051822]
 
-### Cross-Origin Opener Policy \(COOP\) and Cross-Origin Embedder Policy \(COEP\) debugging   
+### Cross-Origin Embedder Policy \(COEP\) debugging   
 
-The Network panel now provides [Cross-Origin Opener Policy][COOP] and [Cross-Origin Embedder Policy][COEP] debugging information.  
+The Network panel now provides [Cross-Origin Embedder Policy][COEP] debugging information.  
 
 The **Status** column now provides a quick explanation of why a request was blocked as well as a link to view the headers of that request for further debugging:  
 
@@ -347,7 +347,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/ "Update on Stable channel releases for Microsoft Edge"
 
- [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language"
 [MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
@@ -371,7 +371,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/updates/2020/03/devtools) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/updates/2020/03/devtools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
