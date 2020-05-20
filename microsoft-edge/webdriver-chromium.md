@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/18/2020
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -88,7 +88,7 @@ var driver = new EdgeDriver();
 driver = Edge()
 ```  
 
-#### [JavaScript](#tab/javascript/)
+#### [JavaScript](#tab/javascript/)  
 
 <a id="basic-usage-code" />  
 
@@ -218,14 +218,14 @@ driver = Edge(service_args = service_args)
 
 <a id="customizing-microsoft-edge-driver-services-code" />  
 
-When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class. You may optionally pass this `Service` object to the `Driver` object which will start and stop the service for you.
+When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  You may optionally pass the `Service` object to the `Driver` object which starts and stops the service for you.  
 
-To configure the `Service`, run additional methods within the `ServiceBuilder` class before calling the `build()` method and then pass the service as a parameter in the `Driver.createSession()` method.
+To configure the `Service`, run additional methods in the `ServiceBuilder` class before using the `build()` method and  then pass the `service` as a parameter in the `Driver.createSession()` method.  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
 let driver = edge.Driver.createSession(options, service);
-```
+```  
 
 * * *  
 
