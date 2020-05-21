@@ -30,10 +30,10 @@ Some of the most popular browsers to build for include Safari, Firefox, Chrome, 
 |:--- |:--- |:--- |
 | Safari |	No	| https://developer.apple.com/documentation/safariservices/safari_app_extensions |
 Firefox	| No |	https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions |
-Chrome |	Yes	|https://developer.chrome.com/extensions |
-Opera | Yes	|https://dev.opera.com/extensions/ |
-Brave |	Yes	|Uses Chrome Web Store |
-Microsoft Edge |	Yes |	https://developer.microsoft.com/en-us/microsoft-edge/extensions/
+Chrome |	Yes	| https://developer.chrome.com/extensions |
+Opera | Yes	| https://dev.opera.com/extensions/ |
+Brave |	Yes	| Uses Chrome Web Store |
+Microsoft Edge |	Yes |	https://developer.microsoft.com/en-us/microsoft-edge/extensions/ |
 
 >[!NOTE]
 > Important to note is that many of these sites’ tutorials (available as links in the [See Also](#see-also) section of this article) will use browser-specific APIs that might not match the browser for which you are developing. In most cases, Chromium extensions will work as-is in different Chromium browsers and their APIs will work as expected. Only some less common APIs will be strictly browser-specific.
