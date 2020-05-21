@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
@@ -182,7 +182,7 @@ On the right side of the address bar, Microsoft Edge indicates when your locatio
 
 ![Location](./media/whitepaper-media/geolocation2.png)  
 
-If you allow sharing of your location with a site, Microsoft Edge sends local network information such as your IP address and nearby Wi-Fi access points to the Microsoft location service.  The Microsoft service uses the info to estimate your geolocation coordinates.  This geolocation estimate is then shared with the site with which you agreed to share your location.  On Windows 10, Microsoft Edge only uses the Microsoft location service if you turned on your [Windows location setting](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
+If you allow your location to be shared with a site, Microsoft Edge sends local network information such as your IP address and nearby Wi-Fi access points to the Microsoft location service.  The Microsoft service uses this info to estimate your geolocation coordinates.  This geolocation estimate is then shared with the site with which you agreed to share your location.  On Windows 10, if you turn on **Allow access to location on this device** and **Allow apps to access your location** in Location settings in the Windows settings, Microsoft Edge can provide sites with a more precise location.  If **Allow access to location on this device** and **Allow apps to access your location** are turned off, an approximate location can be provided to sites. This information will only be shared with sites you’ve allowed to see your location. [Windows location setting](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 A new randomly generated ID is used when making requests to the Microsoft location service.  Microsoft Edge location service does not store your geolocation coordinates for any period of time.  
 
