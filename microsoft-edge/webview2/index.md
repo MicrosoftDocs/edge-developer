@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
