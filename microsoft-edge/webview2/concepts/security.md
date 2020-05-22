@@ -20,7 +20,7 @@ When used correctly, hosting web content inside your native application offers c
 
 2. Design specific web messages and host object interactions instead of using generic proxies.
 
-3. Modify **CoreWebView2Settings** to restrict web content functionality as much as possible
+3. Restrict web content functionality by modifying `CoreWebView2Settings` as follows:
     - Set **AreHostObjectsAllowed** to `false`, if you don’t expect the web content to access host objects
     - Set **IsWebMessageEnabled** to `false`, if you don’t expect the web content to post web messages to the app
     - Set **IsScriptEnabled** to `false`, if you don’t expect the web content to run script (i.e. showing static html like EULA)
