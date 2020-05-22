@@ -28,6 +28,6 @@ When used correctly, hosting web content inside your native application offers c
 
 4.	Use the **NavigationStarting** and **FrameNavigationStarting** events to update settings according to the origin of the new page.
     1.	To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation. 
-    2.	Adjust **CoreWebView2Settings** according to the needs and trustworthiness of the new page in accordance with the principles above.
+    2.	When navigating to a new page, you may need to adjust the property values on `CoreWebView2Settings` as described above.
 
 5.	Use the **ContentLoading** event, which fires when the WebView2 switches to a new document, to add and remove host objects using **AddHostObjectToScript** and **RemoveHostObjectFromScript** to minimize the number of exposed host objects.
