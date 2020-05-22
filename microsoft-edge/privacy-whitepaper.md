@@ -65,9 +65,7 @@ Every 24 hours Microsoft Edge downloads a list of supported sites for which spec
 
 The templates stored on the device may be deleted by clearing the cache data under the **Clear browsing data** setting in `edge://settings/privacy`.
 
-<!--  
 If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
 
 Collections is not available when using InPrivate browsing or Guest mode.  
 
