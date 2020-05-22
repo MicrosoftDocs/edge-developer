@@ -1,5 +1,5 @@
 ---
-description: Learn about how to build a secure WebView2 application
+description: Understand how to develop secure WebView2 applications
 title: WebView2 Security Best Practicies
 author: MSEdgeTeam
 ms.author: msedgedevrel
