@@ -14,8 +14,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 When used correctly, hosting web content inside your native application offers certain advantages, such as ___. To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application. 
 
-## Best Practices
-
 1. Treat all web content as insecure
     - Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and cause the app to behave unexpectedly.
     - Always check the origin of the document running inside WebView2 and assess the trustworthiness of the content. 
