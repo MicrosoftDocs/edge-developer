@@ -22,7 +22,7 @@ When used correctly, hosting web content inside your native application offers c
 
 3. Restrict web content functionality by modifying `CoreWebView2Settings` as follows:
     - Set `AreHostObjectsAllowed` to `false`, if you don’t expect the web content to access host objects.
-    - Set **IsWebMessageEnabled** to `false`, if you don’t expect the web content to post web messages to the app
+    - Set `IsWebMessageEnabled` to `false`, if you don’t expect the web content to post web messages to your native application. 
     - Set **IsScriptEnabled** to `false`, if you don’t expect the web content to run script (i.e. showing static html like EULA)
     - Set **AreDefaultScriptDialogsEnabled** to `false`, if you don’t expect the web content to show `alert` or `prompt` popups
 
