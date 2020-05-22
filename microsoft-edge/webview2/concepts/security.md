@@ -18,7 +18,7 @@ When used correctly, hosting web content inside your native application offers c
     - Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and cause the app to behave unexpectedly.
     - Always check the origin of the document running inside WebView2 and assess the trustworthiness of the content. 
 
-2.	Design sepcific web message and host object interactions instead of using generic proxies. This will minimize potential vulnerabilities.
+2. Design specific web messages and host object interactions instead of using generic proxies.
 
 3. Modify **CoreWebView2Settings** to restrict web content functionality as much as possible
     - Set **AreHostObjectsAllowed** to `false`, if you don’t expect the web content to access host objects
