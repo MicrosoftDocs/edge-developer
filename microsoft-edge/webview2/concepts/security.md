@@ -27,7 +27,7 @@ When used correctly, hosting web content inside your native application offers c
     - Set **AreDefaultScriptDialogsEnabled** to `false`, if you don’t expect the web content to show `alert` or `prompt` popups
 
 4.	Use the **NavigationStarting** and **FrameNavigationStarting** events to update settings according to the origin of the new page.
-    1.	Block the navigation to pages and frames that you don't want your application to navigate to. 
+    1.	To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation. 
     2.	Adjust **CoreWebView2Settings** according to the needs and trustworthiness of the new page in accordance with the principles above.
 
 5.	Use the **ContentLoading** event, which fires when the WebView2 switches to a new document, to add and remove host objects using **AddHostObjectToScript** and **RemoveHostObjectFromScript** to minimize the number of exposed host objects.
