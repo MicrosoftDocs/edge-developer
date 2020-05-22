@@ -241,13 +241,9 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!--[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Find And Fix Problems With The Microsoft Edge DevTools Issues Tab | Microsoft Docs"  -->  
 <!--[DevtoolsWhatsNew201901Inspect]: /microsoft-edge/devtools-guide-chromium/whats-new/2019/01/devtools#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->  
 
-[WindowsSupportHC]: https://support.microsoft.com/en-us/help/4026951/windows-10-turn-high-contrast-mode-on-or-off "Turn high contrast mode on or off in Windows | Windows support"
+[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Space-separated functional color notations - MDN | Can I Use"  
 
 [Crbug]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
-[VSCode]: https://code.visualstudio.com/ "Visual Studio Code"
-[VSCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows"
-
-[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Space-separated functional color notations - MDN | Can I Use"  
 
 [CR1040019]: https://crbug.com/1040019 "DevTools: easily preview images and background images in Styles pane | Chromium bugs"  
 [CR1040025]: https://crbug.com/1040025 "DevTools: show basic a11y info in element popover | Chromium bugs"  
@@ -255,19 +251,25 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR1068116]: https://crbug.com/1068116 "Ship issues panel | Chromium bugs"  
 [CR1072952]: https://crbug.com/1072952 "DevTools: color picker should produce modern CSS color syntax | Chromium bugs"  
 [CR1075437]: https://crbug.com/1075437 "DevTools: add support for the CSS `revert` keyword/value | Chromium bugs"  
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus should be "fulfilled", not "resolved" | V8 bugs"  
+[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus should be 'fulfilled', not 'resolved' | V8 bugs"  
 [CR1048378]: https://crbug.com/1048378 "Issue 1048378: DevTools UI support for High Contrast mode | Chromium bugs"
+[CR174309]: https://crbug.com/174309 "Issue 174309: DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"
 
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Changes from Colors 3 - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"  
-[CSSWGColor]: https://drafts.csswg.org/css-color/#the-color-property "https://drafts.csswg.org/css-color/#the-color-property" "3. Foreground Color: the 'color' property"
+[CSSWGColor]: https://drafts.csswg.org/css-color/#the-color-property "3. Foreground Color: the 'color' property"
 
 [GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "States and Fates - domenic/promises-unwrapping | GitHub"  
 
 [MDNRevert]: https://developer.mozilla.org/docs/Web/CSS/revert "revert | MDN"  
 [MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Browser compatibility | MDN"  
 
+[VSCode]: https://code.visualstudio.com/ "Visual Studio Code"
+[VSCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows"
+
 [webhintLabelsText]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Axe: Name Role Value"
 [webhintControlFocus]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Axe: Keyboard"
+
+[WindowsSupportHC]: https://support.microsoft.com/en-us/help/4026951/windows-10-turn-high-contrast-mode-on-or-off "Turn high contrast mode on or off in Windows | Windows support"
 
 [PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"  
