@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Best practices for developing secure WebView2 applications
 
-The WebView2 control hosts web content. While there are many advantages of hosting web content inside your native application, when used incorrectly, web content can create vulnerabilities. Therefore, we recommend designing your WebView2 appication to closely monitor the interactions between the web content and the host application in line with the following practices.
+When used correctly, hosting web content inside your native application offers certain advantages, such as ___. To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application. 
 
 ## Best Practices
 
