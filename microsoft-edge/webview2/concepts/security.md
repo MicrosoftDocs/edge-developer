@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html, security
 ---
 
-# Security Best Practices
+# Best practices for developing secure WebView2 applications
 
 The WebView2 control hosts web content. While there are many advantages of hosting web content inside your native application, when used incorrectly, web content can create vulnerabilities. Therefore, we recommend designing your WebView2 appication to closely monitor the interactions between the web content and the host application in line with the following practices.
 
