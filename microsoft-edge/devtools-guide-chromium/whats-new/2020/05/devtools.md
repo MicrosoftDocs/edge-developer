@@ -47,7 +47,7 @@ From your [feedback](#getting-in-touch-with-Microsoft-Edge-Devtools-team) and th
    The Microsoft Edge DevTools in high contrast mode  
 :::image-end:::  
 
-To try the experiment, open DevTools Settings by pressing `?` or selecting the  :::image type="icon" border="false" source="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png":::  icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
+To try the experiment, open DevTools Settings by pressing `?` or selecting the ![Settings](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png) icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
 
 Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in VS Code.  
 
@@ -97,7 +97,7 @@ Chromium issue [#1076112][CR1076112]
 
 ### Screencasting navigation buttons display focus  
 
-When remote debugging an [Android device][DevToolsRemoteDebugAndroid], a [Windows 10 device][DevToolsRemoteDebugWindows], or a [Surface Duo emulator][DevToolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screecast](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png)  :::image type="icon" border="false" source="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png"::: icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.  
+When remote debugging an [Android device][DevToolsRemoteDebugAndroid], a [Windows 10 device][DevToolsRemoteDebugWindows], or a [Surface Duo emulator][DevToolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screecast](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.  
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Pressing Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Pressing `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
