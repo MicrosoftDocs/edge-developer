@@ -258,7 +258,7 @@ The **Properties** pane in the **Elements** panel is deprecated.  Run `console.d
 
 ### App shortcuts support in the Manifest pane  
 
-App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for Progressive Web Apps that are installed on the user's desktop or mobile device.  
+App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for [Progressive Web Apps][PwaIndex] that are installed on the user's desktop or mobile device.  
 
 <!--For more information, see [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->  
 
@@ -267,8 +267,6 @@ App shortcuts help users quickly start common or recommended tasks within a web 
 :::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App shortcuts in the Manifest pane" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   App shortcuts in the **Manifest** pane  
 :::image-end:::  
-
-<!--todo: replace image  -->  
 
 ## Getting in touch with Microsoft Edge Devtools team  
 
