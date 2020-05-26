@@ -47,7 +47,7 @@ From your [feedback](#getting-in-touch-with-Microsoft-Edge-Devtools-team) and th
    The Microsoft Edge DevTools in high contrast mode  
 :::image-end:::  
 
-To try the experiment, open DevTools Settings by pressing `?` or selecting the ![Settings](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png) icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
+To try the experiment, open DevTools Settings by pressing `?` or selecting the ![ImageSettingsIcon][ImageSettingsIcon] icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
 
 Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in VS Code.  
 
@@ -156,13 +156,9 @@ After recording your load performance, the **Performance** panel now shows Total
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 
-To get Total Blocking Time information, do not use the **Refresh Page** workflow for recording page load performance.  
+To get Total Blocking Time information, do not use the **Refresh Page** ![ImageRefreshPageIcon][ImageRefreshPageIcon] workflow for recording page load performance.  
 
-:::image type="icon" border="false" source="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png":::
-
-Instead, select **Record**, manually reload the page, wait for the page to load, and then stop recording.  
-
-:::image type="icon" border="false" source="https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png":::
+Instead, select **Record** ![ImageRecordIcon][ImageRecordIcon], manually reload the page, wait for the page to load, and then stop recording.  
 
 If you see `Total Blocking Time: Unavailable`, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.  
 
@@ -287,6 +283,10 @@ To discuss the new features and changes in the post, or anything else related to
 :::image-end:::  
 
 <!-- image links -->  
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools Settings icon"
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "DevTools Toggle Screencasting icon"
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "DevTools Performance panel Refresh Page icon"
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png "DevTools Performance panel Record icon"
 
 <!-- links -->  
 
