@@ -123,8 +123,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 The new **Issues** tool in the DevTools Drawer was built to help reduce the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way, links to affected resources within Microsoft Edge DevTools, and provides guidance on how to fix the issues.  Over time, you should see more and more warnings in Microsoft Edge surfacing in the **Issues** tool rather than the **Console**, which should help reduce the clutter in the **Console**.  
 
-<!--To get started, see [Find And Fix Problems With The Microsoft Edge DevTools Issues Tab][DevtoolsIssuesIndex].  -->  
-<!--todo:  add when section is live  -->  
+To get started, see [Find And Fix Problems With The Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].   
 
 :::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="The Issues Drawer tab" lightbox="../../media/2020/05/issues.msft.png":::
    The **Issues** tool in the DevTools Drawer
@@ -292,7 +291,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!-- links -->  
 
 [DualScreensAndroidEmulator]: /dual-screen/android/use-emulator "Use the Surface Duo emulator | Microsoft Docs"
-
+[DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Find And Fix Problems With The Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevtoolsConsoleApiDir]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir - Console API Reference | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesDom]: /microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Recently Selected Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS Reference | Microsoft Docs"  
