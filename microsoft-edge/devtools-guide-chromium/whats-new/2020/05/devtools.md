@@ -35,7 +35,10 @@ The Microsoft Edge DevTools are now displayed in high contrast mode when Windows
    The Microsoft Edge DevTools in high contrast mode  
 :::image-end:::  
 
-[Follow the instructions to turn on high contrast mode in Windows][MicrosoftSupportWindows10HighContrastMode].  Open the DevTools in Microsoft Edge by pressing `F12` or `Ctrl`+`Shift`+`I` \(`Command`+`Option`+`I` on macOS\).  The DevTools are displayed in high contrast mode.  
+[Follow the instructions to turn on high contrast mode in Windows][MicrosoftSupportWindows10HighContrastMode].  Open the DevTools in Microsoft Edge by pressing `F12` or `Ctrl`+`Shift`+`I`.  The DevTools are displayed in high contrast mode.  
+
+> [!NOTE]
+> The Microsoft Edge DevTools currently support high contrast mode on Windows but not on macOS. 
 
 Chromium issue [#1048378][CR1048378]  
 
@@ -77,7 +80,7 @@ Selecting **inspect** for the tab or PWA that you want to debug opens the [Micro
 
 ### Resize the DevTools drawer more easily  
 
-In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering on the Drawer.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see resizing in action.  
+In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the Drawer's toolbar.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see resizing in action.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
