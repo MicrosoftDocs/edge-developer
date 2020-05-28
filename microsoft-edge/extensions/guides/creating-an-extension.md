@@ -3,36 +3,39 @@ description: Learn how to create a Microsoft Edge extension
 title: Creating an extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 05/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Creating a Microsoft Edge extension  
+# Creating A Microsoft Edge Extension  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-In this guide, you will learn to create an extension for Microsoft Edge.  This example extension will allow you to manipulate specific CSS for [docs.microsoft.com](https://docs.microsoft.com) pages -- walking you through creation of a manifest file, the user interface, and background and content scripts.
+In this guide, learn to create an extension for Microsoft Edge.  This example extension allows you to manipulate specific CSS for [docs.microsoft.com][MicrosoftDocs] pages including walking you through creation of a manifest file, the user interface, and background and content scripts.  
 
-![Docs.microsoft.com body changed to blue](../media/color-changer_header.png)
+:::image type="complex" source="../media/color-changer_header.png" alt-text="Docs.microsoft.com body changed to blue":::
+   Docs.microsoft.com body changed to blue
+:::image-end:::
 
-This tutorial assumes you have basic understanding of what browser extensions are and how they work. Unfamiliar with the building blocks for extensions? Check out [*Anatomy of an extension*](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension).
+<!--![Docs.microsoft.com body changed to blue][ImageColorChangerHeader]  -->  
 
-The code for the full sample is here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).
+This tutorial assumes you have basic understanding of what a browser extension is and how it work.  For more imformation about the building blocks for extensions, see [Anatomy of an extension][MDNAnatomyExtension].  
 
- 
-## Building the manifest file
+Download the code for the [full sample on GitHub][GithubMicrosoftEdgeExtensionsDemosColorChanger].  
 
-To begin, create a directory for your extension and name it "color-changer". 
+## Building the manifest file  
 
-Inside the "color-changer" folder, create a file named "manifest.json".  The "manifest.json" file is required for all extensions and provides important information for the extension, ranging from the extension name to its permissions.
+To begin, create a directory for your extension and name it `color-changer`.  
+
+Inside the `color-changer` folder, create a file named `manifest.json`.  The `manifest.json` file is required for all extensions and provides important information for the extension, ranging from the extension name to the permissions.  
 
 > [!NOTE] 
-> This guide will walk you through all the manifest keys you'll need for this tutorial, but for a list of all supported and recommended manifest keys, see [Supported manifest keys](../api-support/supported-manifest-keys.md). 
+> This guide walks you through all the manifest keys you must use in this guide, but for a list of all supported and recommended manifest keys, see [Supported manifest keys][ExtensionsApisupportManifestKeys].  
 
-Inside "manifest.json", include the following code.
+Inside `manifest.json`, add the following code.  
 
 ```json
 {
@@ -53,50 +56,61 @@ Inside "manifest.json", include the following code.
     "default_popup": "popup.html"
   }
 }
-```
+```  
 
-**Manifest key definitions:**
-* [`name`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/name): the name of the extension
-* [`author`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/author): the author of the extension
-* [`version`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/version): the extension version number
-* [`description`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/description): a description of the extension displayed in the About section of the extension menu in Microsoft Edge
-* [`permissions`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions): an array of strings requesting permissions for the extension. For this extension, we're requesting permissions to see the websites visited ("`tabs`") and to read and change content on URLs matching "`*://docs.microsoft.com/*`".
-* [`browser_action`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/browser_action): places an icon on the Microsoft Edge toolbar, to the right of the address bar
-    * `default_icon`: specifies which icon is used in the toolbar
-    * `default_title`: the text that is displayed when a user hovers over the icon in the toolbar
-    * `default_popup`: The path to the HTML file for the popup
+### Manifest key definitions  
 
-Now that we've created the manifest file, we need a user interface for the extension. 
+| Key | Details |  
+|:--- |:--- |  
+| [name][MDNManifestjsonName] | The name of the extension.  |  
+| [author][MDNManifestjsonAuthor] | The author of the extension.  |  
+| [version][MDNManifestjsonVersion] | The extension version number.  |  
+| [description][MDNManifestjsonDescription] | The description of the extension displayed in the About section of the extension menu in Microsoft Edge.  |  
+| [permissions][MDNManifestjsonPermissions] | An array of strings requesting permissions for the extension.  For your extension, you are requesting permissions to see the websites visited \("tabs"\) and to update content on URLs matching "`*://docs.microsoft.com/*`".  |  
+| [browser_action][MDNManifestjsonBrowserAction] | Contains the information for an icon. The icon is placed on the Microsoft Edge toolbar, to the right of the address bar.  |  
 
+#### browser_action Key definitions  
 
-## Creating the popup
+| Key | Details |  
+|:--- |:--- |  
+| `default_icon` | The icon that is used in the toolbar.  |  
+| `default_title` | The text that is displayed when a user hovers over the icon in the toolbar.  |  
+| `default_popup` | The path to the HTML file for the pop-up window.  |  
 
-For this extension, we will create a popup for the user interface, like below.
+Now that you have created the manifest file, you need a user interface for the extension.  
 
-![The popup interface of the extension](../media/color-changer_popup.png)
+## Creating the pop-up  
 
-To do this, create a file called "popup.html" in the root of your "color-changer" folder. Paste the following code into "popup.html":
+For your extension, create a pop-up for the user interface, like below.  
+
+:::image type="complex" source="../media/color-changer_popup.png" alt-text="The pop-up interface of the extension":::
+   The pop-up interface of the extension
+:::image-end:::
+
+<!--![The pop-up interface of the extension][ImageColorChangerPopup]  -->  
+
+Create a file named `popup.html` in the root of your `color-changer` folder.  Paste the following code into `popup.html`.  
 
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
-  <body>
-    <h1>Creating a Microsoft Edge Extension</h1>
-    <p>Color Changer</p>
-    <input id="aliceblue" type="button" value="Aliceblue" />
-    <input id="cornsilk" type="button" value="Cornsilk" />
-    <input id="reset" type="button" value="Reset" />
-    <script src="js/popup.js"></script>
-  </body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <h1>Creating a Microsoft Edge Extension</h1>
+        <p>Color Changer</p>
+        <input id="aliceblue" type="button" value="Aliceblue" />
+        <input id="cornsilk" type="button" value="Cornsilk" />
+        <input id="reset" type="button" value="Reset" />
+        <script src="js/popup.js"></script>
+    </body>
 </html>
-```
+```  
 
-In "popup.html", we create a title, a paragraph, and three buttons (Aliceblue, Cornsilk, and Reset).
+In `popup.html`, you create a title, a paragraph, and three buttons \(Aliceblue, Cornsilk, and Reset\).  
 
-Now create a folder called "css" and inside create a file called "styles.css".  Add the styles below.
+Now create a folder named `css` and inside create a file named `styles.css`.  Add the styles below.  
 
 ```css
 /* main styles */
@@ -114,11 +128,11 @@ p {
     font-size: .8em;
     margin-bottom: 10px;  
 }
-```
+```  
 
-This CSS gives our extension some basic styles.  Feel free to add more styles to customize your extension. 
+This CSS gives our extension some basic styles.  Feel free to add more styles to customize your extension.  
 
-Next, we need to create the JavaScript file that interacts with the popup. Create a "js" folder and a file called "popup.js" inside. Update "popup.js" with the code below. 
+Next, you must create the JavaScript file that interacts with the pop-up.  Create a `js` folder and a file named `popup.js` inside.  Update `popup.js` with the following code.  
 
 ```JavaScript
 // get the buttons by id
@@ -142,55 +156,72 @@ cornsilk.onclick = () => {
 reset.onclick = () => {
   browser.tabs.insertCSS({code: "body { background: none !important; }"});
 };
-```
+```  
 
-In "popup.js", the [tabs](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs) API allows us to interact with the browser's tabs and inject script and styles into their page content. Using the [`tabs.insertCSS()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs/insertCSS) method, we inject the specified CSS into the page which changes the header on [docs.microsoft.com](https://docs.microsoft.com) to a different color when the specified button is clicked.
+In `popup.js`, the [tabs][MDNApiTabs] API allows you to interact with the tabs of the browser and inject script and styles into the page content.  Using the [tabs.insertCSS()][MDNApiTabsInsertcss] method, you inject the specified CSS into the page which changes the header on [docs.microsoft.com][MicrosoftDocs] to a different color when the specified button is clicked.  
 
-Now that we have the basic popup functionality, let's add icons to the extension. 
+Now that you have the basic pop-up functionality, add icons to the extension.  
 
-## Adding icons
+## Adding icons  
 
-Icons are used to represent the extension in the browser toolbar, the extensions menu, and other places.  The icons you need for this extension are here on GitHub: [images](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer/images). Visit the [Design](./design.md#icons) guide to read more about extension icons in Microsoft Edge.
+Icons are used to represent the extension in the browser toolbar, the extensions menu, and other places.  Download the [icons for your extension on GitHub][GithubMicrosoftEdgeExtensionsDemosColorChangerImages]. For more information about extension icons in Microsoft Edge, see [Design Guide][ExtensionsGuidesDesignIcons].  
 
-After you've downloaded the extension icons, save them in an "images" folder inside "color-changer". 
+After you download the extension icons, save the icons in an `images` folder inside `color-changer`.  
 
-The icon that appears in the toolbar is set using `default_icon` inside of the [`browser_action`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/browser_action) key, which we already added to our manifest file in an earlier section.
+The icon that appears in the toolbar is set using `default_icon` inside of the [browser_action][MDNManifestjsonBrowserAction] key, which you already added to your manifest file in an earlier section.  
 
-The `icons` key defines which icons should be used in the Extensions settings menus. Below, we are specifying multiple icons with different sizes to account for different screen resolutions.  The name of the icons, "25" and "48" are the icons' heights in pixels. 
+The `icons` key defines which icons should be used in the Extensions settings menus.  Below, you are specifying multiple icons with different sizes to account for different screen resolutions.  The name of the icons, `25` and `48` are the heights in pixels of the icons.  
 
-In ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json), include a top-level key for `icons`:
+In the [manifest.json][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] file, include a top-level key for `icons`.  
 
 ```json
   "icons": {
     "25": "images/color-changer25.png",
     "48": "images/color-changer48.png"
   }
-```
+```  
 
-**Key definitions:**
-* [`icons`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/icons): specifies the icons for your extenion with key-value pairs of image size in `px` and image path relative to the root directory of the extension.
+### Manifest Key definitions  
 
-You'll noticed icons named "inactive##.png" included in the images folder -- we will use these later in this guide.
+| Key | Details |  
+|:--- |:--- |  
+| [icons][MDNManifestjsonIcons] | The icons for your extension with key-value pairs of image size in `px` and image path relative to the root directory of the extension. |  
 
-## Testing the extension
+> [!NOTE]
+> Use the icons named `inactive##.png` located in the images folder later in this guide.  
 
-Now that we've added the user interface and created icons, let's test the extension. Walk through the steps for [Adding an extension](./adding-and-removing-extensions.md#adding-an-extension) to Microsoft Edge. Then, come back to this guide.
+## Testing the extension  
 
-After you've added your extension, navigate to any [docs.microsoft.com](https://docs.microsoft.com/) page. You should see the following popup after clicking on the browser action. The color of the [docs.microsoft.com](https://docs.microsoft.com/) body should also change color.
+Now that you have added the user interface and created icons, test your extension.  Walk through the steps for [Adding an extension][ExtensionsGuidesAddingRemovingExtensionsAdding] to Microsoft Edge.  Afterwards, return to this guide.  
 
-![Docs.microsoft.com header changed to Aliceblue](../media/color-changer_header_aliceblue.png)
+After you add your extension, navigate to any [docs.microsoft.com][MicrosoftDocs] page.  You should see the following pop-up after clicking on the browser action.  The color of the [docs.microsoft.com][MicrosoftDocs] body should also change color.  
 
-![Docs.microsoft.com header changed to Cornsilk](../media/color-changer_header_cornsilk.png)
+:::row:::
+   :::column span="1":::
+      :::image type="complex" source="../media/color-changer_header_aliceblue.png" alt-text="Docs.microsoft.com header changed to Aliceblue":::
+         Docs.microsoft.com header changed to Aliceblue
+      :::image-end:::
+      
+      <!--![Docs.microsoft.com header changed to Aliceblue][ImageColorChangerHeaderAliceblue]  -->
+   :::column-end:::
+   :::column span="1":::
+      :::image type="complex" source="../media/color-changer_header_cornsilk.png" alt-text="Docs.microsoft.com header changed to Cornsilk":::
+         Docs.microsoft.com header changed to Cornsilk
+      :::image-end:::
+      
+      <!--![Docs.microsoft.com header changed to Cornsilk][ImageColorChangerHeaderCornsilk]  -->
+   :::column-end:::
+:::row-end:::
 
-If you encounter any errors or functionality that's not working, check out the [Debugging extensions](https://docs.microsoft.com/microsoft-edge/extensions/guides/debugging-extensions) guide or download the full sample here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).
+If you encounter any errors or functionality that does not work, see the [Debugging extensions][ExtensionsGuidesDebuggingExtensions] guide or download the [full sample on GitHub][GithubMicrosoftEdgeExtensionsDemosColorChanger].  
 
-## Adding content and background scripts 
+## Adding content and background scripts  
 
-Let's go one step further and add logic to disable the extension from working on pages outside the [docs.microsoft.com](https://docs.microsoft.com/) domain. 
+Go one step further and add logic to disable the extension from working on pages outside the [docs.microsoft.com][MicrosoftDocs] domain.  
 
-To do this, we first need to create a [content script](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts). Content scripts run in the context of a particular web page, can access the content of a web page, and can communicate with background scripts, which we will create shortly. Inside of your "js" directory, create a file called "content.js".  Add the following code. 
+You must first create a [content script][MDNContentScripts].  Next, you must create content scripts that run in the context of a particular web page, are able to access the content of a web page, and are able to communicate with background scripts.  Inside of your `js` directory, create a file named `content.js` and add the following code.  
 
-```JavaScript
+```javascript
 // get the URL of the page
 var url = document.location.href;
 
@@ -202,11 +233,11 @@ if (url.indexOf("//docs.microsoft.com") === -1) {
         "iconPath40": "images/inactive40.png"
     });
 }
-```
+```  
 
-This script gets the URL of the current page through `document.location.href` and checks whether or not the current page is on a [docs.microsoft.com](https://docs.microsoft.com) domain. If the page is not on a [docs.microsoft.com](https://docs.microsoft.com) domain (e.g. [https://www.bing.com/](https://www.bing.com/)), the paths to the inactive icons (grayed out icons) are sent to the background script using [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage).
+This script gets the URL of the current page through `document.location.href` and verifies whether the current page is on the [docs.microsoft.com][MicrosoftDocs] domain.  If the page is not on the [docs.microsoft.com][MicrosoftDocs] domain \(for example  [https://www.bing.com/][Bing]\), the paths to the inactive icons \(grayed out icons\) are sent to the background script using [runtime.sendMessage()][MDNApiRuntimeSendmessage].  
 
-You also need to update ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json) to include this `content_scripts` key:
+You must update the [manifest.json][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] file to include the following `content_scripts` key.  
 
 ```json
   "content_scripts": [{
@@ -216,19 +247,27 @@ You also need to update ["manifest.json"](https://github.com/MicrosoftEdge/Micro
     "js": ["js/content.js"],
     "run_at": "document_end"
 }]
-```
+```  
 
-**Key definitions:**
-* [`content_scripts`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts): specifies which content scripts the browser should load
-   * `matches` (required): specifies the URL pattern to be matched in order for the content script to be loaded 
-   * `js`: the script that should be loaded on matching URLs
-   * `run_at`: specifies where the JavaScript files from the `js` key are injected
+### Manifest Key definitions  
 
-Next, we need to create a [background script](https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Background_scripts). Background scripts run in the background of the browser, run independently of the lifetime of a web page or browser window, and can communicate with content scripts.
+| Key | Details |  
+|:--- |:---- |  
+| [content_scripts][MDNManifestjsonContentScripts] | Contains the information about which content scripts the browser should load. |  
 
-Inside of your "js" folder, create a file called "background.js" and add this code:
+#### content_scripts Key definitions  
 
-```JavaScript
+| Key | Details |  
+|:--- |:---- |  
+| `matches` \(required\) | The URL pattern to match prior to loading the content script. |  
+| `js` | The script that should be loaded on matching URLs. |  
+| `run_at` | Specifies where the JavaScript files from the `js` key are injected. |  
+
+Next, you must create a [background script][MDNAnatomyExtensionBackgroundScripts].  Background scripts run in the background of the browser, run independently of the lifetime of a web page or browser window, and are able to communicate with content scripts.  
+
+Inside of your `js` folder, create a file named `background.js` and add the following code.  
+
+```javascript
 // listen for sendMessage() from content script
 browser.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
@@ -243,54 +282,114 @@ browser.runtime.onMessage.addListener(
         // disable browser action for the current tab
         browser.browserAction.disable(sender.tab.id);
     });
-```
+```  
 
- The [`runtime.onMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/onmessage) method listens for [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage) from the content script.  If the page's domain is not [docs.microsoft.com](https://docs.microsoft.com), then [`browserAction.setIcon()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/setIcon) sets the icon paths to the inactive images. 
+The [runtime.onMessage][MDNApiRuntimeOnmessage] method listens for [runtime.sendMessage()][MDNApiRuntimeSendmessage] from the content script.  If the domain of the page is not [docs.microsoft.com][MicrosoftDocs], then [browserAction.setIcon()][MDNApiBrowseractionSeticon] method sets the icon paths to the inactive images.  
 
-This script also disables the browser action ([`browserAction.disable`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/disable)), so that users cannot click on the browser action outside of a [docs.microsoft.com](https://docs.microsoft.com) page. 
+The script also disables the browser action \([browserAction.disable][MDApiBrowseractionDisable]\), so that users are not able to click on the browser action outside of a [docs.microsoft.com][MicrosoftDocs] page.  
 
-We need to add the background script to ["manifest.json"](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json). Add the following `background` key to your manifest:
+You must add the background script to the [manifest.json][GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson] file.  Add the following `background` key to your manifest.  
 
 ```json
 "background": {
     "scripts": ["js/background.js"],
     "persistent": true
   }
-```
+```  
 
-**Key definitions:**
-* [`background`](https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/background): specifies any background scripts
-   * `scripts`: a path to a JavaScript file
-   * `persistent` (required): This can be either set to `true` or `false`. If set as `true`, the background script will be loaded and continue to persist for the entire browsing section. If set as `false`, the background script will be **loaded with a delay** and will then persist for the browsing session. 
+### Manifest Key definitions  
 
-Reload your extension and test again. To reload your extension: click the "..." for settings and more in Microsoft Edge, click "Extensions", click on your extension, "Color Changer", and click "Reload extension".
+| Key | Details|  
+|:--- |:--- |  
+| [background][MDNManifestjsonBackground] | Contains the background scripts. |  
 
-Now, open a new tab or refresh an existing tab that's not a [docs.microsoft.com](https://docs.microsoft.com) page.  You should see the inactive icon and not be able to click on the browser action.
+#### background Key definitions  
 
-Congratulations! You've created an extension for Microsoft Edge! View the full sample here on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer).  Continue reading to learn more about extensions.
+| Key | Details |  
+|:--- |:--- |  
+| `scripts` | The path to a JavaScript file. |  
+| `persistent` (required) | This must be set to `true` or `false`.  If set to `true`, the background script is loaded and persists for the entire browsing section.  If set to `false`, the background script is loaded with a delay and persists for the browsing session. |  
 
-## Writing a more complex extension
+Reload your extension and test again.  To reload your extension: click the **...** for settings and more in Microsoft Edge, click **Extensions**, click on your extension \(**Color Changer**\), and click **Reload extension**.  
 
-Want to write a more complex extension? Take a look at MDN's Beastify extension in the article, [Your second extension](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension). Microsoft Edge's extension model differs slightly from Firefox's, so we've adapted the Beasify extension created in [Your second extension](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension) to function in Microsoft Edge.  Check it out on [GitHub](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/beastify_edge). 
+Now, open a new tab or refresh an existing tab that is not a [docs.microsoft.com][MicrosoftDocs] page.  You should see the inactive icon and not be able to click on the browser action.  
 
-While walking through MDN's article, [Your second extension](https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension), keep in mind the following sections. 
+Congratulations!  You created an extension for Microsoft Edge!  View the [full sample on GitHub][GithubMicrosoftEdgeExtensionsDemosColorChanger].  Continue reading to learn more about extensions.  
 
-### APIs 
-See the [Supported APIs](../api-support/supported-apis.md) page for a list of supported extensions APIs in Microsoft Edge.
+## Writing a more complex extension  
 
-### Icon sizes
-Preferred extension icon sizes for Microsoft Edge are 20px, 25px, 30px, 40px. Other supported sizes are 19px, 35px, 38px. For more info on icon sizes and best practices, see the [Design](./design.md) guide.
+Want to write a more complex extension?  Take a look at the Beastify extension on MDN in the article, [Your second extension][MDNYourSecondWebextension].  The extension model for Microsoft Edge differs slightly from the extension model for Firefox, the Beastify extension created in [Your second extension][MDNYourSecondWebextension] was adapted to function in Microsoft Edge.  Check it out on [GitHub][GithubMicrosoftEdgeExtensionsDemosBeastify].  
 
-### JavaScript
-Microsoft Edge's extension model does not support JavaScript Promises.  Instead, use callbacks. For more examples of using callbacks in an extension, take a look at the  [Quick Print](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/quick_print) and [Text Swap](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/text_swap) demos.
+While walking through the article on MDN, [Your second extension][MDNYourSecondWebextension], keep in mind the following sections.  
 
-You can walk through the [Quick Print](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/quick_print) example in the video below.  
+### APIs  
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Adding-a-Background-Script-to-you-Edge-Extension/player]
+See the [Supported APIs][ExtensionsAPIsupportApis] page for a list of supported extensions APIs in Microsoft Edge.  
 
-### Manifest.json
+### Icon sizes  
 
-* The `author` key is required in Microsoft Edge
-* The `activeTab` key is not supported in Microsoft Edge
+Preferred extension icon sizes for Microsoft Edge are `20px`, `25px`, `30px`, and `40px`.  Other supported sizes are `19px`, `35px`, and `38px`.  For more info on icon sizes and best practices, see the [Design][ExtensionsGuidesDesign] guide.  
 
-Head over to [MDN web docs](https://developer.mozilla.org/) for more information on [Browser Extensions](https://developer.mozilla.org/Add-ons/WebExtensions). 
+### JavaScript  
+
+The extension model for Microsoft Edge does not support JavaScript Promises.  Instead, use callbacks.  For more examples of using callbacks in an extension, take a look at the  [Quick Print][GithubMicrosoftEdgeExtensionsDemosQuickPrint] and [Text Swap][GithubMicrosoftEdgeExtensionsDemosTextSwap] demos.  
+
+Walk through the [Quick Print][GithubMicrosoftEdgeExtensionsDemosQuickPrint] example in the following video.  
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Adding-a-Background-Script-to-you-Edge-Extension/player]  
+
+### Manifest.json  
+
+*   The `author` key is required in Microsoft Edge  
+*   The `activeTab` key is not supported in Microsoft Edge  
+
+For more information on [Browser Extensions][MDNBrowserExtensions], see [MDN web docs][MDNWebDocs].  
+
+<!-- image links -->  
+
+<!--[ImageColorChangerHeader]: ../media/color-changer_header.png "Docs.microsoft.com body changed to blue"  -->  
+<!--[ImageColorChangerPopup]: ../media/color-changer_popup.png "The pop-up interface of the extension"  -->  
+<!--[ImageColorChangerHeaderAliceblue]: ../media/color-changer_header_aliceblue.png "[Docs.microsoft.com header changed to Aliceblue"  -->  
+<!--[ImageColorChangerHeaderCornsilk]: ../media/color-changer_header_cornsilk.png "Docs.microsoft.com header changed to Cornsilk"  -->  
+
+<!-- links -->  
+
+[ExtensionsGuidesAddingRemovingExtensionsAdding]: ./adding-and-removing-extensions.md#adding-an-extension "Adding an Extension - Adding, moving, And Removing Extensions For Microsoft Edge | Microsoft Docs"  
+[ExtensionsGuidesDebuggingExtensions]: ./debugging-extensions.md "Debugging Extensions | Microsoft Docs"  
+[ExtensionsGuidesDesign]: ./design.md "Design Guidelines For Microsoft Edge Extensions | Microsoft Docs"  
+[ExtensionsGuidesDesignIcons]: ./design.md#icons "Icons - Design Guidelines For Microsoft Edge Extensions | Microsoft Docs"  
+[ExtensionsAPIsupportApis]: ../api-support/supported-apis.md " Supported APIs | Microsoft Docs"  
+[ExtensionsApisupportManifestKeys]: ../api-support/supported-manifest-keys.md "Supported Manifest Keys | Microsoft Docs"  
+
+[MicrosoftDocs]: https://docs.microsoft.com "Microsoft Docs"  
+
+[MDNWebDocs]: https://developer.mozilla.org "MDN Web Docs"  
+[MDNBrowserExtensions]: https://developer.mozilla.org/Add-ons/WebExtensions "Browser Extensions | MDN"  
+[MDNAnatomyExtension]: https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension "Anatomy of an extension | MDN"  
+[MDNAnatomyExtensionBackgroundScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Anatomy_of_a_WebExtension#Background_scripts "Background scripts - Anatomy of an extension | MDN"  
+[MDApiBrowseractionDisable]: https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/disable "browserAction.disable() - API | MDN" 
+[MDNApiBrowseractionSeticon]: https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/setIcon "browserAction.setIcon() - API | MDN"  
+[MDNApiRuntimeOnmessage]: https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/onmessage "runtime.onMessage - API | MDN"  
+[MDNApiRuntimeSendmessage]: https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage "runtime.sendMessage() - API | MDN"  
+[MDNApiTabs]: https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs "tabs - API | MDN"  
+[MDNApiTabsInsertcss]: https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs/insertCSS "tabs.insertCSS() - API | MDN"  
+[MDNContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts "Content scripts | MDN"  
+[MDNManifestjsonAuthor]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/author "author - manifest.json | MDN"  
+[MDNManifestjsonBackground]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/background "background - manifest.json | MDN"  
+[MDNManifestjsonBrowserAction]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/browser_action "browser_action - manifest.json | MDN"  
+[MDNManifestjsonContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/content_scripts "content_scripts - manifest.json | MDN"  
+[MDNManifestjsonDescription]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/description "description - manifest.json | MDN"  
+[MDNManifestjsonIcons]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/icons "icons - manifest.json | MDN"  
+[MDNManifestjsonName]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/name "name - manifest.json | MDN"  
+[MDNManifestjsonPermissions]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/permissions "permissions - manifest.json | MDN"  
+[MDNManifestjsonVersion]: https://developer.mozilla.org/Add-ons/WebExtensions/manifest.json/version "version - manifest.json | MDN"  
+[MDNYourSecondWebextension]: https://developer.mozilla.org/Add-ons/WebExtensions/Your_second_WebExtension "Your second extension | MDN"  
+
+[Bing]: https://www.bing.com "Bing"  
+
+[GithubMicrosoftEdgeExtensionsDemosBeastify]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/beastify_edge "Beastify - MicrosoftEdge/MicrosoftEdge-Extensions-Demos | GitHub"  
+[GithubMicrosoftEdgeExtensionsDemosColorChanger]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer "Color Changer - MicrosoftEdge/MicrosoftEdge-Extensions-Demos | GitHub"  
+[GithubMicrosoftEdgeExtensionsDemosColorChangerImages]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/color_changer/images "Images - Color Changer - MicrosoftEdge/MicrosoftEdge-Extensions-Demos | GitHub"  
+[GithubMicrosoftEdgeExtensionsDemosColorChangerManifestjson]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/blob/master/color_changer/manifest.json "Manifest.json - Color Changer - MicrosoftEdge/MicrosoftEdge-Extensions-Demos | GitHub"  
+[GithubMicrosoftEdgeExtensionsDemosQuickPrint]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/quick_print "Quick Print - MicrosoftEdge/MicrosoftEdge-Extensions-Demos | GitHub"  
+[GithubMicrosoftEdgeExtensionsDemosTextSwap]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/text_swap "Text Swap - MicrosoftEdge/MicrosoftEdge-Extensions-Demos | GitHub"  
