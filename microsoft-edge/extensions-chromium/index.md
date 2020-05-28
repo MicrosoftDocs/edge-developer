@@ -3,7 +3,7 @@ description: The overview for the Microsoft Edge (Chromium) Extensions as well a
 title: Microsoft Edge (Chromium) Extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 05/28/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
@@ -13,7 +13,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 
 An extension is a small program that you \(the developer\) may use to add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  
 
-> You may create extensions if your idea or product depends on the availability of a specific web browser or augments the browsing experience where the functionality that you want to provide extends existing websites.  Examples of companion experiences include adblockers and password managers.  
+You may create extensions if your idea or product depends on the availability of a specific web browser or augments the browsing experience where the functionality that you want to provide extends existing websites.  Examples of companion experiences include adblockers and password managers.  
 
 An extension is structured similar to a regular web app.  At a minimum, it includes an app manifest JSON file that contains basic platform information, a JavaScript file to define functionality, and a HTML and CSS file to determine the look of the user interface \(as required\).  To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.  
 
