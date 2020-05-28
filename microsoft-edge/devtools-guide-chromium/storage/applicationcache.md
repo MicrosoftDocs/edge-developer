@@ -2,7 +2,7 @@
 title: View Application Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/13/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,7 +36,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View Application Cache Data   
 
-1.  Click the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
     
     > ##### Figure 1  
     > The Manifest pane  
@@ -50,36 +50,42 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 Each row of the table represents a cached resource.  
 
-The **Type** column represents the [category of the resource][MDNHTMLResourcesInAnApplicationCache]:  
+The **Type** column represents the [category of the resource][MDNHTMLResourcesInAnApplicationCache].  
 
-*   **Master**.  The `manifest` attribute on the resource indicated that this cache is the parent of the resource.  
-*   **Explicit**.  This resource was explicitly listed in the manifest.  
-*   **Network**.  The manifest specified that this resource must come from the network.  
-*   **Fallback**.  The URL is a fallback for another resource.  The URL of the other resource is not listed in DevTools.  
+| Category | Details |  
+|:--- |:--- |  
+| `Explicit` | This resource was explicitly listed in the manifest. |  
+| `Fallback` | The URL is a fallback for another resource.  The URL of the other resource is not listed in DevTools. |  
+| `Master` | The `manifest` attribute on the resource indicated that this cache is the parent of the resource. |  
+| `Network` | The manifest specified that this resource must come from the network. |  
 
-At the bottom of the table there are status icons indicating your network connection and the status of the Application Cache.  The Application Cache may have the following states:  
+At the bottom of the table there are status icons indicating your network connection and the status of the Application Cache.  The Application Cache may have the following states.  
 
-*   **IDLE**.  The cache has no new changes.  
-*   **CHECKING**.  The manifest is being fetched and checked for updates.  
-*   **DOWNLOADING**.  Resources are being added to the cache.  
-*   **UPDATEREADY**.  A new version of the cache is available.  
-*   **OBSOLETE**.  The cache is being deleted.  
+| State | Details |  
+|:--- |:--- |  
+| `CHECKING` | The manifest is being fetched and checked for updates. |  
+| `DOWNLOADING` | Resources are being added to the cache. |  
+| `IDLE` | The cache has no new changes. |  
+| `OBSOLETE` | The cache is being deleted. |  
+| `UPDATEREADY` |  A new version of the cache is available. |  
 
- 
+<!--   -->  
 
 
 
 <!-- image links -->  
 
-[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
-[ImageManifestPane]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/storage-cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
 
 <!-- links -->  
 
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline Web applications - HTML Standard"  
+
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Resources in an application cache | MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache - Web APIs | MDN"  
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

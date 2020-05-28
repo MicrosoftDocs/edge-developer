@@ -2,7 +2,7 @@
 title: View And Edit Session Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,7 +33,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View sessionStorage keys and values   
 
-1.  Click the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
+1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
     
     > ##### Figure 1  
     > The Manifest pane  
@@ -45,13 +45,13 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     > The **Session Storage** Menu  
     > ![The Session Storage Menu][ImageSessionStorageMenu]  
 
-1.  Click a domain to view its key-value pairs.  
+1.  Select a domain to view the key-value pairs.  
     
     > ##### Figure 3  
     > The sessionStorage key-value pairs  
     > ![The `sessionStorage` key-value pairs][ImageSessionStorage]  
 
-1.  Click a row of the table to view the value in the viewer below the table.  
+1.  Select a row of the table to view the value in the viewer below the table.  
     
     > ##### Figure 4  
     > Viewing the value of the `x-sid` key  
@@ -78,7 +78,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 ## Delete sessionStorage key-value pairs   
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
+1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
 
 1.  Press the `Delete` key or click **Delete Selected** ![Delete Selected][ImageDeleteIcon].  
 
@@ -86,7 +86,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
 
-1.  Click **Clear All** ![Clear All][ImageClearIcon].  
+1.  Select **Clear All** ![Clear All][ImageClearIcon].  
 
 ## Interact with sessionStorage from the Console   
 
@@ -110,21 +110,21 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 <!-- image links -->  
 
-[ImageClearIcon]: images/clear-icon.msft.png  
-[ImageDeleteIcon]: images/delete-icon.msft.png  
+[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
+[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
 
-[ImageManifest]: images/application-manifest.msft.png "Figure 1: The Manifest pane"  
-[ImageSessionStorageMenu]: images/application-storage-session-storage.msft.png "Figure 2: The Session Storage Menu: "  
-[ImageSessionStorage]: images/application-storage-session-storage-domain.msft.png "Figure 3: The sessionStorage key-value pairs"  
-[ImageSessionStorageViewer]: images/application-storage-session-storage-domain-key-value-selected.msft.png "Figure 4: Viewing the value of the x-sid key"  
-[ImageSessionStorageCreate]: images/application-storage-session-storage-domain-key-value-new.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
-[ImageSessionStorageEdit]: images/application-storage-session-storage-domain-key-value-edit.msft.png "Figure 6: Editing a sessionStorage key"  
-[ImageJSContext]: images/console-domain-selection.msft.png "Figure 7: Changing the JavaScript context of the Console"  
-[ImageSessionStorageConsole]: images/console-session-storage-keys.msft.png "Figure 8: Interacting with sessionStorage from the Console"  
+[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: The Manifest pane"  
+[ImageSessionStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage.msft.png "Figure 2: The Session Storage Menu"  
+[ImageSessionStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain.msft.png "Figure 3: The sessionStorage key-value pairs"  
+[ImageSessionStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-selected.msft.png "Figure 4: Viewing the value of the x-sid key"  
+[ImageSessionStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-new.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
+[ImageSessionStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-session-storage-domain-key-value-edit.msft.png "Figure 6: Editing a sessionStorage key"  
+[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-domain-selection.msft.png "Figure 7: Changing the JavaScript context of the Console"  
+[ImageSessionStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-session-storage-keys.msft.png "Figure 8: Interacting with sessionStorage from the Console"  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium "Microsoft Edge \(Chromium\) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
 
