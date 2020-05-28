@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/26/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -80,7 +80,7 @@ Selecting **inspect** for the tab or PWA that you want to debug opens the [Micro
 
 ### Resize the DevTools drawer more easily  
 
-In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the Drawer's toolbar.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see how resizing the Drawer worked in Microsoft Edge 83 and older versions of Microsoft Edge.  
+In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the Drawer's toolbar.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see how resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
@@ -224,7 +224,7 @@ Chromium issue [#1040019][CR1040019]
 
 #### Color Picker now uses space-separated functional color notation  
 
-[CSS Color Module Level 4][CSSWGDraftsColor4Changes3] specifies that color functions, like `rgb()`, should support space-separated
+[CSS Color Module Level 4][CSSWGDraftsColor4Changes3] specifies that color functions, such as `rgb()`, should support space-separated
 arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.  
 
 When you choose colors with the [Color Picker][DevtoolsCssReferenceColorPicker] or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, you should see the space-separated argument syntax.  
@@ -235,7 +235,7 @@ When you choose colors with the [Color Picker][DevtoolsCssReferenceColorPicker] 
 
 You should also see the syntax in the **Computed** pane and the **Inspect Mode** tooltip.  
 
-Microsoft Edge DevTools is using the new syntax because upcoming CSS features like [color()][CSSWGDraftsColor4Property] do not support the deprecated comma-separated argument syntax.  
+Microsoft Edge DevTools is using the new syntax because upcoming CSS features such as [color()][CSSWGDraftsColor4Property] do not support the deprecated comma-separated argument syntax.  
 
 The space-separated argument syntax has been supported in most browsers for a while.  For more information, see [Can I use: Space-separated functional color notations?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
 
@@ -286,6 +286,7 @@ To discuss the new features and changes in the post, or anything else related to
 :::image-end:::  
 
 <!-- image links -->  
+
 [ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-icon.msft.png "DevTools Settings icon"
 [ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png "DevTools Toggle Screencasting icon"
 [ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-page-icon.msft.png "DevTools Performance panel Refresh Page icon"

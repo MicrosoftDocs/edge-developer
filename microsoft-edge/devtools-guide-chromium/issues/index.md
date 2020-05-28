@@ -1,7 +1,7 @@
 ---
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/26/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
