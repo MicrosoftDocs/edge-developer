@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/14/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
@@ -65,9 +65,7 @@ Every 24 hours Microsoft Edge downloads a list of supported sites for which spec
 
 The templates stored on the device may be deleted by clearing the cache data under the **Clear browsing data** setting in `edge://settings/privacy`.
 
-<!--  
 If you turn on **Show suggestions from Pinterest in Collections**, Collections perform a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  You may remove the suggestions and stop searches for Pinterest Topic pages by going to `edge://settings/privacy` and turning off **Show suggestions from Pinterest in Collections**.  
--->  
 
 Collections is not available when using InPrivate browsing or Guest mode.  
 
@@ -83,7 +81,7 @@ Crash dumps are sent to Microsoft and stored on secure Microsoft servers for up 
 
 Crash diagnostic data stored locally on the device may be cleared from the file system in `edge://crashes`.  
 
-To turn off crash diagnostic data collection on Windows 10, go to **Diagnostics \& feedback** in Windows Diagnostics \& feedback settings.  For versions of Microsoft Edge on all other platforms go to `edge://settings/privacy` and turn off the **Improve Microsoft products by sending crash reports and data about how you use the browser** setting.  This diagnostic data collection may also be turned off for enterprises through [group policies managed by your organization](/deployedge/microsoft-edge-privacy-policy).  
+To turn off crash diagnostic data collection on Windows 10, go to **Diagnostics \& feedback** in Windows Diagnostics \& feedback settings.  For versions of Microsoft Edge on all other platforms go to `edge://settings/privacy` and turn off the **Improve Microsoft products by sending crash reports and data about how you use the browser** setting.  This diagnostic data collection may also be turned off for enterprises through [group policies managed by your organization](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 ## Diagnostic data about how you use the browser  
 
@@ -184,7 +182,7 @@ On the right side of the address bar, Microsoft Edge indicates when your locatio
 
 ![Location](./media/whitepaper-media/geolocation2.png)  
 
-If you allow sharing of your location with a site, Microsoft Edge sends local network information such as your IP address and nearby Wi-Fi access points to the Microsoft location service.  The Microsoft service uses the info to estimate your geolocation coordinates.  This geolocation estimate is then shared with the site with which you agreed to share your location.  On Windows 10, Microsoft Edge only uses the Microsoft location service if you turned on your [Windows location setting](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
+If you allow sharing of your location with a site, Microsoft Edge sends local network information such as your IP address and nearby Wi-Fi access points to the Microsoft location service.  The Microsoft service uses the info to estimate your geolocation coordinates.  The geolocation estimate is shared with the site with which you agreed to share your location.  On Windows 10, if you turn on **Allow access to location on this device** and **Allow apps to access your location** in the **Location** settings in the **Windows** settings, Microsoft Edge provides sites with a more precise location.  If you turn off **Allow access to location on this device** and **Allow apps to access your location**, an approximate location is provided to sites.  The information is only shared with sites that you previously allowed to see your location.  [Windows location setting](https://support.microsoft.com/help/4468240/windows-10-location-service-and-privacy).  
 
 A new randomly generated ID is used when making requests to the Microsoft location service.  Microsoft Edge location service does not store your geolocation coordinates for any period of time.  
 
