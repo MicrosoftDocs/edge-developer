@@ -80,7 +80,7 @@ Selecting **inspect** for the tab or PWA that you want to debug opens the [Micro
 
 ### Resize the DevTools drawer more easily  
 
-In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the Drawer's toolbar.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see how resizing the Drawer worked in older versions of Microsoft Edge.  
+In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the Drawer's toolbar.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see how resizing the Drawer worked in Microsoft Edge 83 and older versions of Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
