@@ -19,7 +19,7 @@ In this article, get started creating your first WebView2 app and learn about th
 Ensure you installed the following list of pre-requisites before proceeding:  
 
 * [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2015 or later.
+* [Visual Studio](https://visualstudio.microsoft.com/) 2017 or later.
 
 > [!NOTE]
 > If developing with **Windows Forms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
@@ -286,9 +286,12 @@ Select `F5` to build and run the app.  Confirm that the address bar displays the
 
 Congratulations, you built your first WebView2 app!  
 
-## Next Steps  
+## Next Steps 
 
-For more information on WebView2 features not covered in this walkthrough, see the [API reference](../reference/dotnet/0-9-515-reference-webview2.md).
+* Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
+* Checkout [API reference](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) for more detailed information about our APIs
+* Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
+
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
