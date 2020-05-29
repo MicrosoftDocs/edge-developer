@@ -1,5 +1,5 @@
 ---
-title: What's New in DevTools (Microsoft Edge 84)
+title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/28/2020
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# What's New in DevTools (Microsoft Edge 84)  
+# What's new in DevTools (Microsoft Edge 84)  
 
 ## Announcements from the Microsoft Edge DevTools team  
 
