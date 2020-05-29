@@ -144,9 +144,35 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 > Changing the left-margin of the element  
 > ![Changing the left-margin of the element][ImageChangeMargin]  
 
- 
+## Debugging Media Queries 
 
+[Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your web product react to changes in your end users's configuration. The biggest use case is to give your product a different CSS layout depending on the dimension of the viewport. This allows for a one column layout for mobile devices and multi-column layouts when there is more screen estate available.
 
+If you want to debug or test the Media Queries you defined in your CSS, take the following steps: 
+
+1. Open the developer tools and select the `Toggle device toolbar` icon second on the top left. You can also press `CTRL + SHIFT + M` (or `CMD + SHIFT + M` on a Mac). 
+
+> ##### Figure 8  
+> Opening the device toolbar  
+> ![Opening the device toolbar][MediaQueriesOpenDeviceToolbar]  
+
+1. With the device toolbar open, select the `...` menu on the top right and choose `View Media Queries`. You will now get coloured bars above the display of the page that represent the different media queries. 
+
+> ##### Figure 9  
+> Showing Media Queries in Device Toolbar  
+> ![Showing Media Queries in Device Toolbar][MediaQueriesShowMediaQueries]  
+
+1. You can roll over the boundaries in these bars to see the values of the different media queries. Clicking them will resize the web page accordingly. 
+
+> ##### Figure 10  
+> Selecting Media Query from preview bar  
+> ![Selecting Media Query from preview bar][MediaQueriesSelectBar]  
+
+1. To debug media queries, you can right-click any of the bar segments and select `reveal in source code`. This will open the CSS file in the `Sources` editor.
+
+> ##### Figure 11  
+> Revealing Media Queries in Sources Editor  
+> ![Revealing Media Queries in Sources Editor][MediaQueriesRevealInSources]  
 
 <!-- image links -->  
 
@@ -157,6 +183,10 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 [ImageSetHover]: /microsoft-edge/devtools-guide-chromium/media/css-elements-hover-over-me-styles-hov-hover.msft.png "Figure 5: Toggling the hover pseudostate on an element"  
 [ImageShowPadding]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-padding.msft.png "Figure 6: Hovering over the padding of the element"  
 [ImageChangeMargin]: /microsoft-edge/devtools-guide-chromium/media/css-elements-change-my-margin-styles-margin-edit.msft.png "Figure 7: Changing the left-margin of the element"  
+[MediaQueriesOpenDeviceToolbar]: /microsoft-edge/devtools-guide-chromium/media/css-elements-media-queries-open-device-toolbar.msft.png "Figure 8: Opening the device toolbar"  
+[MediaQueriesShowMediaQueries]: /microsoft-edge/devtools-guide-chromium/media/css-elements-media-queries-showing-mq.msft.png "Figure 9: Showing Media Queries in Device Toolbar"  
+[MediaQueriesSelectBar]: /microsoft-edge/devtools-guide-chromium/media/css-elements-media-queries-select-bar.msft.png "Figure 10: Selecting Media Query from preview bar"  
+[MediaQueriesRevealInSources]: /microsoft-edge/devtools-guide-chromium/media/css-elements-media-queries-reveal-in-sources.msft.png "Figure 11:  Revealing Media Queries in Sources Editor"  
 
 <!-- links -->  
 
