@@ -108,7 +108,7 @@ When remote debugging an [Android device][DevToolsRemoteDebugAndroid], a [Window
 
 Chromium issue [#1081486][CR1081486]  
 
-### Network panel Details pane takes focus  
+### Network panel Details pane is now accessible  
 
 In Microsoft Edge 84, the [Details pane][DevToolsNetworkDetails] in the **Network** panel now takes focus when you open it for a resource in the [Network Log][DevToolsNetworkLog].  This change allows screen readers to read out and interact with the content of the **Details** pane.  
 
