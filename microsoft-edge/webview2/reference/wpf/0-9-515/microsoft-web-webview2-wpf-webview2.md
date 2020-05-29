@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -45,16 +45,6 @@ A control to embed web content in a WPF application.
 [Reload](#reload) | Reloads the current page.
 [Stop](#stop) | Stops all navigations and pending resource fetches.
 [WebView2](#webview2) | Creates a new instance of a WebView2 control.
-[BuildWindowCore](#buildwindowcore) | This is overridden from HwndHost and is called to instruct us to create our HWND.
-[DestroyWindowCore](#destroywindowcore) | This is overridden from HwndHost and is called to instruct us to destroy our HWND.
-[Dispose](#dispose) | This is called by our base class according to the typical implementation of the IDispose pattern.
-[HasFocusWithinCore](#hasfocuswithincore) | This is overridden from HwndHost and is called when WPF needs to know if the focus is in our control/window.
-[OnKeyDown](#onkeydown) | This is overridden from UIElement and called to allow us to handle key press input.
-[OnKeyUp](#onkeyup) | See OnKeyDown.
-[OnPreviewKeyDown](#onpreviewkeydown) | This is the "Preview" (i.e.
-[OnPreviewKeyUp](#onpreviewkeyup) | See OnPreviewKeyDown.
-[OnWindowPositionChanged](#onwindowpositionchanged) | This is overridden from HwndHost and called when our control's location has changed.
-[TabIntoCore](#tabintocore) | This is overridden from HwndHost and is called to inform us that tabbing has caused the focus to move into our control/window.
 
 This control is effectively a wrapper around the WebView2 COM API, which you can find documentation for here: [https://aka.ms/webview2](https://aka.ms/webview2) You can directly access the underlying ICoreWebView2 interface and all of its functionality by accessing the CoreWebView2 property. Some of the most common COM functionality is also accessible directly through wrapper methods/properties/events on the control.
 
@@ -286,97 +276,4 @@ Creates a new instance of a WebView2 control.
 > public [WebView2](#webview2)()
 
 Note that the control's CoreWebView2 will be null until initialized. See the WebView2 class documentation for an initialization overview.
-
-#### BuildWindowCore 
-
-This is overridden from HwndHost and is called to instruct us to create our HWND.
-
-> protected override HandleRef [BuildWindowCore](#buildwindowcore)(HandleRef hwndParent)
-
-##### Parameters
-* `hwndParent` The HWND that we should use as the parent of the one we create.
-
-##### Returns
-The HWND that we created.
-
-#### DestroyWindowCore 
-
-This is overridden from HwndHost and is called to instruct us to destroy our HWND.
-
-> protected override void [DestroyWindowCore](#destroywindowcore)(HandleRef hwnd)
-
-##### Parameters
-* `hwnd` Our HWND that we need to destroy.
-
-#### Dispose 
-
-This is called by our base class according to the typical implementation of the IDispose pattern.
-
-> protected override void [Dispose](#dispose)(bool disposing)
-
-We implement it by releasing all of our underlying COM resources, including our CoreWebView2.
-
-##### Parameters
-* `disposing` True if a caller is explicitly calling Dispose, false if we're being finalized.
-
-#### HasFocusWithinCore 
-
-This is overridden from HwndHost and is called when WPF needs to know if the focus is in our control/window.
-
-> protected override bool [HasFocusWithinCore](#hasfocuswithincore)()
-
-WPF can't know on its own since we're hosting a non-WPF window, so instead it asks us by calling this. To answer, we just track state based on CoreWebView2 events that fire when it gains or loses focus.
-
-##### Returns
-True if the focus is in our control/window, false if it isn't.
-
-#### OnKeyDown 
-
-This is overridden from UIElement and called to allow us to handle key press input.
-
-> protected override void [OnKeyDown](#onkeydown)(KeyEventArgs e)
-
-WPF should never actually call this in response to keyboard events because we're hosting a non-WPF window. When our window has focus Windows will send the input directly to it rather than to WPF's top-level window and input system. This override should only be called when we're explicitly forwarding accelerator key input from the CoreWebView2 to WPF (in CoreWebView2Controller_AcceleratorKeyPressed). Even then, this KeyDownEvent is only triggered because our PreviewKeyDownEvent implementation explicitly triggers it, matching WPF's usual system. So the process is: CoreWebView2Controller_AcceleratorKeyPressed -> raise PreviewKeyDownEvent -> OnPreviewKeyDown -> raise KeyDownEvent -> OnKeyDown
-
-#### OnKeyUp 
-
-See OnKeyDown.
-
-> protected override void [OnKeyUp](#onkeyup)(KeyEventArgs e)
-
-#### OnPreviewKeyDown 
-
-This is the "Preview" (i.e.
-
-> protected override void [OnPreviewKeyDown](#onpreviewkeydown)(KeyEventArgs e)
-
-tunneling) version of OnKeyDown, so it actually happens first. Like OnKeyDown, this will only ever be called if we're explicitly forwarding key presses from the CoreWebView2. In order to mimic WPF's standard input handling, when we receive this we turn around and fire off the standard bubbling KeyDownEvent. That way others in the WPF tree see the same standard pair of input events that WPF itself would have triggered if it were handling the key press.
-
-#### OnPreviewKeyUp 
-
-See OnPreviewKeyDown.
-
-> protected override void [OnPreviewKeyUp](#onpreviewkeyup)(KeyEventArgs e)
-
-#### OnWindowPositionChanged 
-
-This is overridden from HwndHost and called when our control's location has changed.
-
-> protected override void [OnWindowPositionChanged](#onwindowpositionchanged)(Rect rcBoundingBox)
-
-The HwndHost takes care of updating the HWND we created. What we need to do is move our CoreWebView2 to match the new location.
-
-#### TabIntoCore 
-
-This is overridden from HwndHost and is called to inform us that tabbing has caused the focus to move into our control/window.
-
-> protected override bool [TabIntoCore](#tabintocore)(TraversalRequest request)
-
-Since WPF can't manage the transition of focus to a non-WPF HWND, it delegates the transition to us here. So our job is just to place the focus in our external HWND.
-
-##### Parameters
-* `request` Information about how the focus is moving.
-
-##### Returns
-True to indicate that we handled the navigation, or false to indicate that we didn't.
 

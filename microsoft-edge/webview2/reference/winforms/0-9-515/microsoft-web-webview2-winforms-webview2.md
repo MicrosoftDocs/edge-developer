@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 05/27/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -45,9 +45,6 @@ Control to embed WebView2 in WinForms.
 [Reload](#reload) | Reload the top level document of the WebView2.
 [Stop](#stop) | Stop any in progress navigation in the WebView2.
 [WebView2](#webview2) | Create a new WebView2 WinForms control.
-[OnEnter](#onenter) | Protected focus handler.
-[OnSizeChanged](#onsizechanged) | Protected SizeChanged handler.
-[OnVisibleChanged](#onvisiblechanged) | Protected VisibilityChanged handler.
 
 ## Members
 
@@ -211,22 +208,4 @@ Create a new WebView2 WinForms control.
 > public [WebView2](#webview2)()
 
 After construction the CoreWebView2 property is null. Call [EnsureCoreWebView2Async](#ensurecorewebview2async) to initialize the underlying CoreWebView2.
-
-#### OnEnter 
-
-Protected focus handler.
-
-> protected override void [OnEnter](#onenter)(EventArgs e)
-
-#### OnSizeChanged 
-
-Protected SizeChanged handler.
-
-> protected override void [OnSizeChanged](#onsizechanged)(EventArgs e)
-
-#### OnVisibleChanged 
-
-Protected VisibilityChanged handler.
-
-> protected override void [OnVisibleChanged](#onvisiblechanged)(EventArgs e)
 
