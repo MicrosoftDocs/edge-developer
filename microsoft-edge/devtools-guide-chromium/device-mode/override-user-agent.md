@@ -2,7 +2,7 @@
 title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/30/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -52,8 +52,8 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
 
 <!-- image links -->  
 
-[ImageCommandMenu]: images/console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageUserAgentDisableSelectAutomatically]: images/console-network-conditions-user-agent-select-automatically-deselected.msft.png "Figure 2: Disabling Select automatically"  
+[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
+[ImageUserAgentDisableSelectAutomatically]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png "Figure 2: Disabling Select automatically"  
 
 <!-- links -->  
 

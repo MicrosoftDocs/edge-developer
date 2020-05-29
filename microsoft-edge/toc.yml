@@ -68,6 +68,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+            - name: Microsoft Edge 84
+              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
         - name: IE mode
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D View
@@ -132,6 +134,8 @@
               href: devtools-guide-chromium/storage/websql.md
             - name: Cache
               href: devtools-guide-chromium/storage/cache.md
+        - name: Issues
+          href: devtools-guide-chromium/issues/index.md
         - name: Command Menu
           href: devtools-guide-chromium/command-menu/index.md
         - name: Mobile Simulation
@@ -206,6 +210,8 @@
               href: devtools-guide-chromium/remote-debugging/index.md
             - name: Access Local Servers
               href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Surface Duo Emulators
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Windows 10 Devices
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memory
@@ -448,7 +454,15 @@
       href: privacy-whitepaper.md
     - name: Progressive Web Apps (Chromium)
       href: progressive-web-apps-chromium/index.md
-      # items: 
+      items:
+        - name: Get started with PWAs (Chromium)
+          href: progressive-web-apps-chromium/get-started.md
+        - name: Offline scenarios
+          href: progressive-web-apps-chromium/offline.md
+        - name: Service Workers
+          href: progressive-web-apps-chromium/serviceworker.md
+        - name: Web App Manifests
+          href: progressive-web-apps-chromium/webappmanifests.md
     - name: Progressive Web Apps (EdgeHTML)
       href: progressive-web-apps-edgehtml/index.md
       items: 
@@ -486,8 +500,10 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
+    - name: WebView2 (Chromium) (preview)
+      href: webview2/toc.yml
     - name: WebVR Developer Guide
-      href: https://docs.microsoft.com/microsoft-edge/webvr/
+      href: /microsoft-edge/webvr/index
     - name: Windows Runtime (WinRT)
       href: windows-runtime/toc.yml
       topicHref: windows-runtime/index.md
