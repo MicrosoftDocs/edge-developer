@@ -1,5 +1,5 @@
 ---
-title: Find and fix problems with the Microsoft Edge DevTools Issues tool
+title: Find and fix problems with the Microsoft Edge DevTools Issues tool 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/28/2020
