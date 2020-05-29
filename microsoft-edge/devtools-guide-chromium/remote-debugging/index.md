@@ -109,7 +109,7 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### More actions: reload, focus, or close a tab   
+### More actions: focus, reload, or close a tab   
 
 Select **focus tab**, **reload**, or **close** next to the tab that you want to focus, reload, or close.  
 
