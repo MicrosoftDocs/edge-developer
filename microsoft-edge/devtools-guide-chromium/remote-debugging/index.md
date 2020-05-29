@@ -54,28 +54,21 @@ The workflow below works for most users.  See [Troubleshooting: DevTools is not 
 1.  Open the **Developer Options** screen on your Android.  See [Configure On-Device Developer Options](https://developer.android.com/studio/debug/dev-options.html).  
 1.  Select **Enable USB Debugging**.  
 1.  On your development machine, open Microsoft Edge.  
-1.  [Open DevTools][DevToolsOpen].  
-1.  In DevTools, select the **Main Menu** `...` then select **More tools** > **Remote devices**.  
-    
+1.  Navigate to the `edge://inspect` page in Microsoft Edge.
     > ##### Figure 1  
-    > Opening the **Remote Devices** tab via the **Main Menu**  
-    > ![Opening the Remote Devices tab via the Main Menu][ImageOpenRemoteDevices]  
+    > The `edge://inspect` page in Microsoft Edge
+    > ![The edge://inspect page in Microsoft Edge][ImageEdgeInspect]  
+1.  Connect your Android device directly to your development machine using a USB cable.  The first time you do this, you usually see that DevTools has detected an unknown device. Accept the **Allow USB Debugging** permission prompt on your Android device.
 
-1.  In DevTools, open the **Settings** tab.  
-
-1.  Make sure that the **Discover USB devices** checkbox is enabled.  
-    
     > ##### Figure 2  
-    > The **Discover USB Devices** checkbox is enabled  
-    > ![The Discover USB Devices checkbox is enabled][ImageDiscoverUSBDevices]  
+    > The **Allow USB Debugging** permission prompt on an Android device
+    > ![The Allow USB Debugging permission prompt on an Android device][ImageAndroidPermissionPrompt]  
 
-1.  Connect your Android device directly to your development machine using a USB cable.  The first time you do this, you usually see that DevTools has detected an unknown device.  If you see a green dot and the text **Connected** below the model name of your Android device, then DevTools has successfully established the connection to your device.  Continue to [Step 2](#step-2-debug-content-on-your-android-device-from-your-development-machine).  
+1. If you see the model name of your Android device, then Microsoft Edge has successfully established the connection to your device.  Continue to [Step 2](#step-2-debug-content-on-your-android-device-from-your-development-machine).  
     <!--
     > ##### Figure 4  
     > The **Remote Devices** tab has successfully detected an unknown device that is pending authorization  
     > ![The Remote Devices tab has successfully detected an unknown device that is pending authorization][ImageUnknownDevice]  -->
-
-1.  If your device is showing up as **Unknown**, accept the **Allow USB Debugging** permission prompt on your Android device.  
 
 ### Troubleshooting: DevTools is not detecting the Android device   
 
@@ -104,25 +97,25 @@ If you find a solution that is not mentioned in this section or in [DevTools Dev
 
 1.  Open Microsoft Edge on your Android device.  
 
-1.  In the **Remote Devices** tab, select the tab that matches your Android device model name.  
-    At the top of this page, you see the model name of your Android device, followed by its serial number.  Below that, you should see the version of Microsoft Edge running on the device, with the version number in parentheses.  Each open Microsoft Edge tab gets its own section.  You may interact with that tab from this section.  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
-    <!--
-    > ##### Figure 5  
+1.  From the `edge://inspect` page, you see the model name of your Android device, followed by its serial number.  Below that, you should see the version of Microsoft Edge running on the device, with the version number in parentheses.  Each open Microsoft Edge tab gets its own section.  You may interact with that tab from this section.  <!--If there are any apps using WebView, you see a section for each of those apps, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
+    
+    > ##### Figure 3
     > A connected remote device  
-    > ![A connected remote device][ImageConnectedRemoteDevice]  -->
+    > ![A connected remote device][ImageConnectedRemoteDevice] 
 
-1.  In the **New tab** text box, enter a URL and then select **Open**.  The page opens in a new tab on your Android device.  
+1.  In the **Open tab with url** text box, enter a URL and then select **Open**.  The page opens in a new tab on your Android device.  
 
-1.  Select **Inspect** next to the URL that you just opened.  A new DevTools instance opens.  The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
-    So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.  
+1.  Select **inspect** next to the URL that you just opened.  A new DevTools instance opens.  
+<!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
+    So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
 ### More actions: reload, focus, or close a tab   
 
-Select **More Options** `...` next to the tab that you want to reload, focus, or close.  
-<!--
-> ##### Figure 6  
-> The menu for reloading, focusing, or closing a tab  
-> ![The menu for reloading, focusing, or closing a tab][ImageReload]  -->
+Select **focus tab**, **reload**, or **close** next to the tab that you want to focus, reload, or close.  
+
+> ##### Figure 4  
+> The buttons for focusing, reloading, or closing a tab  
+> ![The buttons for focusing, reloading, or closing a tab][ImageReload] 
 
 ### Inspect elements   
 
@@ -160,15 +153,13 @@ Some notes on screencasts:
 [ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!--[ImageRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--remote-debugging.msft.png "old Figure 1:  Remote Debugging lets you inspect a page running on an Android device from your development machine"  -->  
-[ImageOpenRemoteDevices]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-more-tools-remote-devices.msft.png "Figure 1: Opening the Remote Devices tab via the Main Menu"  
-[ImageDiscoverUSBDevices]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-remote-devices-tab.msft.png "Figure 2:  The Discover USB Devices checkbox is enabled"  
+[ImageEdgeInspect]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-no-targets.msft.png "Figure 1: The edge://inspect page in Microsoft Edge"
+[ImageAndroidPermissionPrompt]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-android-permissions-prompt.msft.png "Figure 2: The Allow USB Debugging permission prompt on an Android device"
+[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 3: A connected remote device"
+[ImageReload]:  /microsoft-edge/devtools-guide-chromium/media/remote-debugging-edge-inspect-with-targets.msft.png "Figure 4: The buttons for focusing, reloading, or closing a tab" 
 <!--[ImageUnknownDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--unknown-device.msft.png "old Figure 4:  The Remote Devices tab has successfully detected an unknown device that is pending authorization"  -->  
-<!--[ImageConnectedRemoteDevice]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--connected-remote-device.msft.png "old Figure 5:  A connected remote device"  -->
-<!--[ImageReload]: /microsoft-edge/devtools-guide-chromium/media/remote-debugging--reload.msft.png "old Figure 6: The menu for reloading, focusing, or closing a tab"  -->
 
 <!-- links -->  
-
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 
 [AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
 
