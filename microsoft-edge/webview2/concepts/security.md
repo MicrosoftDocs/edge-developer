@@ -24,7 +24,7 @@ When used correctly, hosting web content inside your native application offers c
     - Set `AreHostObjectsAllowed` to `false`, if you don’t expect the web content to access host objects.
     - Set `IsWebMessageEnabled` to `false`, if you don’t expect the web content to post web messages to your native application. 
     - Set `IsScriptEnabled` to `false`, if you don’t expect the web content to run scripts (for example, when showing static html content).
-    - Set **AreDefaultScriptDialogsEnabled** to `false`, if you don’t expect the web content to show `alert` or `prompt` popups
+    - Set `AreDefaultScriptDialogsEnabled` to `false`, if you don’t expect the web content to show `alert` or `prompt` dialog boxes.
 
 4.	Use the **NavigationStarting** and **FrameNavigationStarting** events to update settings according to the origin of the new page.
     1.	To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation. 
