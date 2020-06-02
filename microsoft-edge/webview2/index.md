@@ -103,19 +103,19 @@ You mun run Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, 
 
 ## Next Steps  
 
-For more detailed information on how to build and deploy WebView2 applications, checkout our conceptual documentation<!-- and how-to guides-->.  
+For more detailed information on how to build and deploy WebView2 applications, checkout our conceptual documentation.  
 
 #### Concepts  
 
 *   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)
 *   [Distributing WebView2 Applications](./concepts/distribution.md)  
+*   [Security Best Practices for WebView2 Applications](./concepts/security.md)
+*   [Handling User Data in WebView2 Applications](./concepts/userdatafolder.md)
  
 #### How-To Guides  
 
 *   [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./howto/debug.md)  
 *   [Automating and Debugging WebView2 with Microsoft EdgeDriver](./howto/webdriver.md)  
-
-<!--todo: add how-tos when available  -->  
 
 ## Getting in touch with the WebView2 team  
 
