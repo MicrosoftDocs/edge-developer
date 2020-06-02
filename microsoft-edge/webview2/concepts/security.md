@@ -26,7 +26,7 @@ When used correctly, hosting web content inside your native application offers c
     - Set `IsScriptEnabled` to `false`, if you don’t expect the web content to run scripts (for example, when showing static html content).
     - Set `AreDefaultScriptDialogsEnabled` to `false`, if you don’t expect the web content to show `alert` or `prompt` dialog boxes.
 
-4.	Use the **NavigationStarting** and **FrameNavigationStarting** events to update settings according to the origin of the new page.
+4.	Use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page as follows:
     1.	To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation. 
     2.	When navigating to a new page, you may need to adjust the property values on `CoreWebView2Settings` as described above.
 
