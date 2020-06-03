@@ -3,7 +3,7 @@ description: Learn how to manage user data folders in WebView2 applications
 title: Manage user data folder in WebView2 applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
