@@ -23,9 +23,13 @@ To specify the location of the user data folder, include the `userDataFolder` pa
 
 ## Delete user data folders
 
-When uninstalled, the application should delete the user data folder. For packaged Windows Store apps, this is done automatically by Windows.
+Your application may need to delete user data folders:
 
-The app could also delete the user data folder to clean up all browsing data, to recover from possible data corruption, or to remove traces of past sessions. 
+* When uninstalling your app. If you are uninstalling packaged Windows Store apps, Windows deletes user data folders automatically. 
+* To clean up all browsing data history.
+* To recover from data corruption.
+* To remove previous session data. 
+
 
 > [!NOTE]
 > Files in the user data folder can still be in use for a short while after WebView2 is closed. In this situation, wait for the associated browser process and all of its child process to exit before retry deleting of the folder. The process id of the browser process can be retrieved as **BrowserProcessId** property of the WebView2.
