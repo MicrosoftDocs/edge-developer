@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET, windows forms
 ---
 
-# Getting Started with WebView2 in Windows Forms apps (Preview)  
+# Getting started with WebView2 in Windows Forms apps (Preview)  
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/hosting/webview2/index).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
 

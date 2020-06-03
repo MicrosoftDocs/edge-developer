@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# Getting Started with WebView2 (developer preview)
+# Getting started with WebView2 (developer preview)
 
 This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](../reference/win32/0-9-488-reference-webview2.md) to learn more about individual APIs.  
 
