@@ -32,7 +32,7 @@ Your application may need to delete user data folders:
 
 
 > [!NOTE]
-> Files in the user data folder can still be in use for a short while after WebView2 is closed. In this situation, wait for the associated browser process and all of its child process to exit before retry deleting of the folder. The process id of the browser process can be retrieved as **BrowserProcessId** property of the WebView2.
+> Files in user data folders may still be in use after the WebView2 application is closed. In this situation, wait for the browser process and all child processes to exit before deleting the folder. You may retrieve the process id of the browser process using the `BrowserProcessId` property of the WebView2.
 
 ## Share user data folders
 
