@@ -30,7 +30,7 @@ The app could also delete the user data folder to clean up all browsing data, to
 > [!NOTE]
 > Files in the user data folder can still be in use for a short while after WebView2 is closed. In this situation, wait for the associated browser process and all of its child process to exit before retry deleting of the folder. The process id of the browser process can be retrieved as **BrowserProcessId** property of the WebView2.
 
-## Management
+## Share user data folders
 
 All WebView2s associated with the same user data folder will run in the same browser process and share the same browsing history and cache. As a result:
 Consider the following when sharing user data folders: 
