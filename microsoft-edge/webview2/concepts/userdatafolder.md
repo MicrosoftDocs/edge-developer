@@ -19,7 +19,7 @@ WebView2 applications interact with user data folders to store browser data, suc
 To specify the location of the user data folder, include the `userDataFolder` parameter when calling `CoreWebView2Environment`. After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`. When `userDataFolder` is not specified, WebView2 creates user data folders at default locations as follows:
 
 * For packaged Windows Store apps, the default user folder is the `ApplicationData\LocalFolder` subfolder in the package’s  folder.
-- For legacy desktop apps, the default user data folder is the **exe path + “.WebView2”**. For legacy desktop apps, we highly recommend you specify a user data folder when creating **CoreWebView2Environment.** This folder should be in the same folder all other app data is stored. 
+* For legacy desktop apps, the default user data folder is the exe path of your application + `.WebView2`. Instead of using the default, we recommend that you specify a user data folder, and that you create it in the same folder where all other app data is stored.
 
 ## Deletion
 
