@@ -21,7 +21,7 @@ To specify the location of the user data folder, include the `userDataFolder` pa
 * For packaged Windows Store apps, the default user folder is the `ApplicationData\LocalFolder` subfolder in the package’s  folder.
 * For legacy desktop apps, the default user data folder is the exe path of your application + `.WebView2`. Instead of using the default, we recommend that you specify a user data folder, and that you create it in the same folder where all other app data is stored.
 
-## Deletion
+## Delete user data folders
 
 When uninstalled, the application should delete the user data folder. For packaged Windows Store apps, this is done automatically by Windows.
 
