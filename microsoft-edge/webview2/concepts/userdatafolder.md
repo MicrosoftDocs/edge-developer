@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Handling the User Data Folder
 
-Each WebView2 instance is associated with a user data folder which stores all browser data, like cookies and network cache. 
+WebView2 applications interact with user data folders to store browser data, such as cookies and cached resources. Each instance of a WebView2 control works with a separate user data folder. If your native application comprises of several WebView2 controls, each control may use a separate user data folder.
 
 ## Create user data folders
 
