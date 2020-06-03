@@ -30,9 +30,9 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and select **CSS Examples** to open in a new window.  
     
     [CSS Examples][GlitchDevToolsCssExamples]  
-
-> [!NOTE]
-> If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in [Figure 1](#figure-1)\), select **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
+    
+    > [!NOTE]
+    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in [Figure 1](#figure-1)\), select **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
     
 ## View the CSS for an element  
 
