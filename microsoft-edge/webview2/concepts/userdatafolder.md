@@ -1,5 +1,5 @@
 ---
-description: Learn about how to manage the user data folder in your WebView2 application
+description: Learn how to manage user data folders in WebView2 applications
 title: WebView2 Handling User Data Folder
 author: MSEdgeTeam
 ms.author: msedgedevrel
