@@ -37,7 +37,7 @@ The app could also delete the user data folder to clean up all browsing data, to
 All WebView2s associated with the same user data folder will run in the same browser process and share the same browsing history and cache. As a result:
 Consider the following when sharing user data folders: 
 
-1. When handling the **NewBrowserVersionAvailable** event to recreate WebView2 with the newer browser version, wait for the old browser process to exit and close all WebView2s sharing the same user data folder before recreating WebView2 to run from newer version. The process id of the browser process can be retrieved by **BrowserProcessId** property of the WebView2.
+1. When re-creating WebView2 controls to update browser versions using `NewBrowserVersionAvailable` events, ensure browser processes exit and close WebView2 controls that share the same user data folder. To retrieve the process id of the browser process, use the `BrowserProcessId` property of the WebView2 control.
 
 2. WebView2s sharing the same user data folder must use the same options for **CoreWebView2Environment**. If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`. For example, if the first WebView2 is created by **CoreWebView2Environment** with a certain **AdditionalBrowserArguments**, trying to create WebView2 from **CoreWebView2Environment** with different **AdditionalBrowserArguments** will fail.
 
