@@ -35,6 +35,7 @@ The app could also delete the user data folder to clean up all browsing data, to
 ## Management
 
 All WebView2s associated with the same user data folder will run in the same browser process and share the same browsing history and cache. As a result:
+Consider the following when sharing user data folders: 
 
 1. When handling the **NewBrowserVersionAvailable** event to recreate WebView2 with the newer browser version, wait for the old browser process to exit and close all WebView2s sharing the same user data folder before recreating WebView2 to run from newer version. The process id of the browser process can be retrieved by **BrowserProcessId** property of the WebView2.
 
