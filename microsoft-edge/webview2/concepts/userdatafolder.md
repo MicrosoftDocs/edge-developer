@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Each WebView2 instance is associated with a user data folder which stores all browser data, like cookies and network cache. 
 
-## Creation
+## Create user data folders
 
 Specify the user data folder using the **userDataFolder** parameter when creating **CoreWebView2Environment.** WebView2 stores browser data in a subfolder of the specified folder.
 
