@@ -41,9 +41,7 @@ Consider the following when sharing user data folders:
 
 2. WebView2s sharing the same user data folder must use the same options for **CoreWebView2Environment**. If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`. For example, if the first WebView2 is created by **CoreWebView2Environment** with a certain **AdditionalBrowserArguments**, trying to create WebView2 from **CoreWebView2Environment** with different **AdditionalBrowserArguments** will fail.
 
-3. Applications can use different user data folders to isolate different contexts. WebView2s with different user data folders don’t share data with each other. 
-
-For example, an application may use a different user data folder for hosting ads than for hosting application content. If the application supports different contexts (i.e. Work vs. Home) the app might also use different user data folders for each distinct context. 
+To isolate different parts of your application or when sharing data between WebView2 controls is not needed, you may choose to use different user data folders. For example, an application may consist of two WebView2 controls, one for displaying ads and the other for displaying application content. In this scenario, developers may opt to use different user data folders for each WebView2 control. 
 
 > [!NOTE]
 > Each WebView2 browser process consumes additional memory and disk space. Therefore, we recommend not running WebView2s with too many different user data folders at the same time. 
