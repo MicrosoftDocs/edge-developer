@@ -32,7 +32,11 @@ The app could also delete the user data folder to clean up all browsing data, to
 
 ## Share user data folders
 
-All WebView2s associated with the same user data folder will run in the same browser process and share the same browsing history and cache. As a result:
+WebView2 controls may share the same user data folders to:
+
+* Optimize system resources by running in one browser process.
+* Share browser history and cached resources. 
+
 Consider the following when sharing user data folders: 
 
 1. When re-creating WebView2 controls to update browser versions using `NewBrowserVersionAvailable` events, ensure browser processes exit and close WebView2 controls that share the same user data folder. To retrieve the process id of the browser process, use the `BrowserProcessId` property of the WebView2 control.
