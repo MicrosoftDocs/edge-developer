@@ -72,7 +72,7 @@ productDirectory:
       links:
         - url: /deployedge/security-overview
           text: Security
-        - url: /deployedge/microsoft-edge-privacy-policy
+        - url: /deployedge/microsoft-edge-enterprise-privacy-settings
           text: Privacy
     # Card
     - title: Policy reference
