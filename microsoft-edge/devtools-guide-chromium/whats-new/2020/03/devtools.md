@@ -165,6 +165,10 @@ DevTools modifies the current default locale, affecting the following:
 - DOM APIs such as `navigator.language` and `navigator.languages`
 - the [`Accept-Language`][MDNAcceptLanguage] HTTP request header
 
+Note: updates to `navigator.language` and `navigator.languages` are not visible immediately, but only
+after the next navigation or page reload. Changes to the `Accept-Language` HTTP header are only
+reflected for subsequent requests.
+
 > ##### Figure 10  
 > Emulating a locale  
 > ![Emulating a locale][ImageEmulatingLocales]  
