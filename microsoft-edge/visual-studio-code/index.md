@@ -50,6 +50,8 @@ Search the Marketplace for the specific extension and select **Install**.
       
       <!--![Elements for Edge VS Code extension in action][ImageGifElementsEdge]  -->  
    :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="1":::
       ### webhint
       
