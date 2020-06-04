@@ -22,7 +22,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
 * [Visual Studio](https://visualstudio.microsoft.com/) 2017 or later.
 
 > [!NOTE]
-> If developing with **Windows Forms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
+> WebView2 does not currently support the .NET Core 3.0's [designer (preview)](https://visualstudio.microsoft.com/vs/preview/).
 
 ## Step 1 - Create a single window application
 
