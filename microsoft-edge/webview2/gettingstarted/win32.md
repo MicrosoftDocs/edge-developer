@@ -214,9 +214,9 @@ There are plenty of WebView2 functionalities that are not covered in this walkth
 
 To learn more:
 
-* Checkout [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for a comprehensive example of our SDKs capabilities.
+* Checkout [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for a comprehensive example of WebView2's capabilities.
 * Checkout [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) an application built using WebView2.
-* Please explore [API reference](../reference/win32/0-9-488-reference-webview2.md) for detailed information about out API.  
+* Please explore [API reference](../reference/win32/0-9-488-reference-webview2.md) for detailed information about our API.  
 
 ## Getting in touch with the WebView2 team  
 
