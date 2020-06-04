@@ -3,7 +3,7 @@ description: Host web content in your Windows Forms app with the Microsoft Edge 
 title: Microsoft Edge WebView 2 for Windows Forms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 06/04/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,7 +22,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
 * [Visual Studio](https://visualstudio.microsoft.com/) 2017 or later.
 
 > [!NOTE]
-> If developing with **Windows Forms .NET Core 3.0 or .NET 5**, download [Visual Studio (Preview)](https://visualstudio.microsoft.com/vs/preview/)
+> WebView2 does not currently support the .NET Core 3.0's [designer (preview)](https://visualstudio.microsoft.com/vs/preview/).
 
 ## Step 1 - Create a single window application
 
@@ -30,11 +30,11 @@ Start with a basic desktop project containing a single main window.
 
 1. Open **Visual Studio.**
 
-2. Choose **Windows Forms .NET Framework App** or **Windows Forms .NET Core App**, and then choose **Next**.
+2. Choose **Windows Forms .NET Framework App** and then choose **Next**.
 
     ![newproject](./media/winforms-newproject.png)
 
-3. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later, or **.NET Core 3.0** or later.  
+3. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later.  
 
     ![startproject](./media/winforms-startproj.png)
 
