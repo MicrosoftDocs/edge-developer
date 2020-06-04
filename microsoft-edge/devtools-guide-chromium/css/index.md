@@ -144,7 +144,7 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
     
 ## Debugging Media Queries  
 
-[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your web product react to changes in your end users's configuration.  The biggest use case is to provide your product a different CSS layout depending on the dimension of the viewport.  Using separate layouts allows for a one column layout for mobile devices and multi-column layouts when there is more screen estate available.  
+[Media Queries][MDNUsingMediaGueries] are a way to make your web product react to changes in your end users's configuration.  The biggest use case is to provide your product a different CSS layout depending on the dimension of the viewport.  Using separate layouts allows for a one column layout for mobile devices and multi-column layouts when there is more screen estate available.  
 
 If you want to debug or test the Media Queries you defined in your CSS, use the following steps.  
 
@@ -154,7 +154,7 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
        Figure 8:  Opening the device toolbar  
     :::image-end:::  
     
-1.  With the device toolbar open, select the `...` menu on the top-right and choose **View Media Queries**.  You should see colored bars above the display of the page that represent the different media queries.  
+1.  With the device toolbar open, select the `...` menu on the top-right and select **View Media Queries**.  You should see colored bars above the display of the page that represent the different media queries.  
     
     :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Showing Media Queries in Device Toolbar" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
        Figure 9:  Showing Media Queries in Device Toolbar  
@@ -178,6 +178,8 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge (Chromium) DevTools | Glitch"  
+
+[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

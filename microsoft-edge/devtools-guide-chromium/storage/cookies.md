@@ -50,15 +50,29 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The **Cookies** table contains the following fields:  
 
-*   **Name**.  The name of the cookie.  
-*   **Value**.  The value of the cookie.  
-*   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope].  
-*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope].  
-*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent].  For [session cookies][MDNHTTPCookiesSession] this value is always `Session`.  
-*   **Size**.  The size, in bytes, of the cookie.  
-*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure].  
-*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies][MDNHTTPCookiesSecure].  
-*   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.  
+[scope]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Scope_of_cookies
+[permanent]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Permanent_cookies
+[session]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Session_cookies
+[secure]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies
+[samesite]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies
+[priority]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693
+
+* **Name**. The cookie's name.
+* **Value**. The cookie's value.
+* **Domain**. The hosts that are allowed to receive the cookie. See [Scope of cookies][scope].
+* **Path**. The URL that must exist in the requested URL in order to send the `Cookie` header.
+  See [Scope of cookies][scope].
+* **Expires / Max-Age**. The cookie's expiration date or maximum age. See
+  [Permanent cookies][permanent]
+  this value is always `Session`.
+* **Size**. The cookie's size, in bytes.
+* **HTTP**. If true, this field indicates that the cookie should only be used over HTTP, and
+  JavaScript modification is not allowed. See [HttpOnly cookies][secure].
+* **Secure**. If true, this field indicates that the cookie can only be sent to the server
+  over a secure, HTTPS connection. See [Secure cookies][secure].
+* **SameSite**. Contains `strict` or `lax` if the cookie is using the experimental
+  [SameSite][samesite] attribute.
+* **Priority**. Contains `low`, `medium` (default), or `high` if using depreciated [cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.  
 
 ## Filter cookies   
 
