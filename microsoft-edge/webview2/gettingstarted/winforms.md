@@ -30,11 +30,11 @@ Start with a basic desktop project containing a single main window.
 
 1. Open **Visual Studio.**
 
-2. Choose **Windows Forms .NET Framework App** or **Windows Forms .NET Core App**, and then choose **Next**.
+2. Choose **Windows Forms .NET Framework App** and then choose **Next**.
 
     ![newproject](./media/winforms-newproject.png)
 
-3. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later, or **.NET Core 3.0** or later.  
+3. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later.  
 
     ![startproject](./media/winforms-startproj.png)
 
