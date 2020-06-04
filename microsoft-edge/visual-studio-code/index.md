@@ -47,48 +47,29 @@ Search the Marketplace for the specific extension and select **Install**.
 :::row-end:::
 :::row:::
    :::column span="1":::
+      ### webhint
+      
+      Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  It checks your code for best practices and common errors. The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  <!--Select the following image to see the extension in action.  -->  
+      
+      :::image type="content" source="./media/webhint-extension.png" alt-text="Screenshot of webhint VS Code extension" lightbox="./media/webhint-extension.png":::  
+      
+      Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for VS Code][VisualstudioMarketplaceWebhint].  Hints appear as inline underlines and are summarized in the **Problems** pane.  
+      
+      For more information, see [How to use webhint in Visual Studio Code][VscodeWebhint].  
+   :::column-end:::
+   :::column span="1":::
+      ### Debugger for Microsoft Edge  
+
+      With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
+      
+      Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].  Select the following image to see the extension in action.  
+
+      :::image type="content" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge VS Code extension in action" lightbox="./media/debugger-for-edge.gif":::  
+   :::column-end:::
+   :::column span="1":::
       <!--Empty to retain grid  -->  
    :::column-end:::
 :::row-end:::
-
-<!--  
-## Debugger for Microsoft Edge  
-
-With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
-
-This extensions gives you the ability to launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from VS Code and sample `launch.json` configurations, see [Debugger For Microsoft Edge VS Code Extension][VscodeDebuggerEdge].  
-
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension in action":::
-   Debugger for Edge VS Code extension in action  
-:::image-end:::
--->  
-<!--  
-## Elements for Microsoft Edge  
-
-With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
-
-For more information, see [Elements for Microsoft Edge VS Code extension][VscodeElementsEdge].  
-
-:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elements for Edge VS Code extension in action":::
-   Elements for Edge VS Code extension in action  
-:::image-end:::
--->  
-
-<!--
-## webhint
-
-Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  It checks your code for best practices and common errors.  This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  
-
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Screenshot of webhint VS Code extension":::
-   Screenshot of webhint VS Code extension  
-:::image-end:::
--->  
-
-<!--  
-Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for VS Code][VisualstudioMarketplaceWebhint]. Hints appear as inline underlines and are summarized in the Problems pane.  
-
-For more information, see [How to use webhint in Visual Studio Code][VscodeWebhint].  
--->  
 
 <!-- image links -->  
 
