@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 
 The W3C [WebDriver][W3CWebdriver] API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser, like Microsoft Edge \(Chromium\).  
 
-WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser does not, and WebDrive is able to more accurately simulate user events or OS-level events.  WebDriver is able to manage testing across multiple windows, tabs and webpages in a single test session.  
+WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser does not, and WebDriver is able to more accurately simulate user events or OS-level events.  WebDriver is able to manage testing across multiple windows, tabs and webpages in a single test session.  WebDriver is even able to run multiple sessions of Microsoft Edge on a given machine.
 
 Here is how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
@@ -136,6 +136,9 @@ let driver = edge.Driver.createSession(options);
 ```  
 
 * * *  
+
+>[!NOTE]
+> If the [DeveloperToolsAvailability][DeveloperToolsAvailabilityDocs] Microsoft Edge policy is set to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] will no longer be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge]. Microsoft Edge Driver requires the [Microsoft Edge DevTools][DevToolsDocs] to be available. Set the [DeveloperToolsAvailability][DeveloperToolsAvailabilityDocs] policy to `0` or `1` for Microsoft Edge Driver to successfully automate Microsoft Edge (Chromium).
 
 ### Choosing Specific Browser Binaries (Chromium-Only)  
 
@@ -309,6 +312,9 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 
 [Chocolatey]: https://chocolatey.org "Chocolatey | Chocolatey Software"  
 [ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Selenium Chromium Edge Driver | Chocolatey"  
+
+[DeveloperToolsAvailabilityDocs]: https://docs.microsoft.com/deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability | Microsoft Edge - Policies"
+[DevToolsDocs]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"  
