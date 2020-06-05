@@ -12,7 +12,30 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Release notes for WebView2 SDK  
 
-Release notes for [WebView2 SDK][WebView2NuGetGallery].  
+The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGetGallery] on a 6 week cadence. This page will keep you up to date with: product announcements, additions and modifications to the API surface, and breaking changes. 
+
+## 0.X.XXX
+
+[NuGet package][WebView2NuGetGallery0.X.XXX] | minimum Microsoft Edge version XX.X.XXX.X.
+
+**Re-compile your app after updating the NuGet package.**
+
+#### General
+* Dropping support for SDK Version [0.8.149](https://docs.microsoft.com/en-us/microsoft-edge/webview2/releasenotes#08149). We recommend staying up to date with the latest version of WebView2.
+
+#### Win32 C/C++
+* Updated [NewWindowRequested]() to include windowfeatures. Now, ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70 ))
+* **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails]() has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions]()
+* **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interface:
+  * [AreRemoteObjectsAllowed]() is now [AreHostObjectsAllowed]()
+* Updated [AddRemoteObject]() to ensure original host object serializer markers are set to the proxy objects and serialized back as host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
+
+#### .NET
+* Released WinForms and WPF WebView2API Samples - comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples)!
+* Added support for the following [experimental APIs](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/versioning#experimental-apis): 
+* **Breaking Change:** The following deferrals now implement IDisposable: [ScriptDialogOpening](), [NewWindowRequested](), [WebResourceRequested](), and [PermissionRequested]().
+* Added [GetAvailableBrowserVersionString]() and [CompareBrowserVersions]() as [CoreWebView2Environment]() statics.
+* Updated group policy to account for when the profile path of Edge is modified  ([#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179))
 
 ## 0.9.515-prerelease
 
