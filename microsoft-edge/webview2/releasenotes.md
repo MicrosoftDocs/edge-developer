@@ -22,6 +22,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 
 #### General
 * Dropping support for SDK Version [0.8.149](https://docs.microsoft.com/en-us/microsoft-edge/webview2/releasenotes#08149). We recommend staying up to date with the latest version of WebView2.
+* Updated group policy to account for when the profile path of Edge is modified  ([#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179))
 
 #### Win32 C/C++
 * Updated [NewWindowRequested]() to include windowfeatures. Now, ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70 ))
@@ -35,7 +36,6 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 * Added support for the following [experimental APIs](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/versioning#experimental-apis): 
 * **Breaking Change:** The following deferrals now implement IDisposable: [ScriptDialogOpening](), [NewWindowRequested](), [WebResourceRequested](), and [PermissionRequested]().
 * Added [GetAvailableBrowserVersionString]() and [CompareBrowserVersions]() as [CoreWebView2Environment]() statics.
-* Updated group policy to account for when the profile path of Edge is modified  ([#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179))
 
 ## 0.9.515-prerelease
 
