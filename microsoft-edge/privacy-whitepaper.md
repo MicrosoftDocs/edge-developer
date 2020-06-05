@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/03/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
@@ -472,22 +472,29 @@ Microsoft Edge is committed to protecting and respecting your privacy while givi
 
 <!-- links -->  
 
-[DeployedgePoliciesComponentupdatesenabled]: https://docs.microsoft.com/deployedge/microsoft-edge-policies#componentupdatesenabled "ComponentUpdatesEnabled - Microsoft Edge - Policies | Microsoft Docs"  
-[DeployedgeUpdatePoliciesUpdate]: https://docs.microsoft.com/deployedge/microsoft-edge-update-policies#update "Update - Microsoft Edge - Update policies | Microsoft Docs"  
-[DeployedgeEnterprisePrivacySettings]: https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings "Configure Microsoft Edge policies to support enterprise privacy | Microsoft Docs"  
-[DeployedgePrivacyOverviewControls]: https://docs.microsoft.com/deployoffice/privacy/overview-privacy-controls "Overview of privacy controls for Microsoft 365 Apps for enterprise | Microsoft Docs"  
+[DeployedgeConfigurationExperiments]: /deployedge/edge-configuration-and-experiments "Microsoft Edge configurations and experimentation | Microsoft Docs"  
+[DeployedgePoliciesComponentupdatesenabled]: /deployedge/microsoft-edge-policies#componentupdatesenabled "ComponentUpdatesEnabled - Microsoft Edge - Policies | Microsoft Docs"  
+[DeployedgeUpdatePoliciesUpdate]: /deployedge/microsoft-edge-update-policies#update "Update - Microsoft Edge - Update policies | Microsoft Docs"  
+[DeployedgeEnterprisePrivacySettings]: /deployedge/microsoft-edge-enterprise-privacy-settings "Configure Microsoft Edge policies to support enterprise privacy | Microsoft Docs"  
+[DeployedgePrivacyOverviewControls]: /deployoffice/privacy/overview-privacy-controls "Overview of privacy controls for Microsoft 365 Apps for enterprise | Microsoft Docs"  
 
-[InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery]: https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery "Collect data using Enterprise Site Discovery | Microsoft Docs"  
+[InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery]: /internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery "Collect data using Enterprise Site Discovery | Microsoft Docs"  
 
-[PlayreadyOverviewSimpleEndSystem]: https://docs.microsoft.com/playready/overview/simple-end-to-end-system "Simple End to End System | Microsoft Docs"  
-[Learn more about PlayReady][PlayreadyOverviewSimpleEndSystem]
+[PlayreadyOverviewSimpleEndSystem]: /playready/overview/simple-end-to-end-system "Simple End to End System | Microsoft Docs"  
 
-[WindowsPrivacyConfigureDiagnosticDataOrganization]: https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization "Configure Windows diagnostic data in your organization | Microsoft Docs"  
+[WindowsPrivacyConfigureDiagnosticDataOrganization]: /windows/privacy/configure-windows-diagnostic-data-in-your-organization "Configure Windows diagnostic data in your organization | Microsoft Docs"  
 
-[WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: https://docs.microsoft.com/windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "Potentially unwanted application (PUA) - How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
-[WindowsSecurityThreatProtectionWindowsDefender]: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "Detect and block potentially unwanted applications | Microsoft Docs"  
+[WindowsSecurityInformationProtectionCollectAuditEventLogs]: /windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs "How to collect Windows Information Protection (WIP) audit event logs | Microsoft Docs"  
+[WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "Potentially unwanted application (PUA) - How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
+[WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "Detect and block potentially unwanted applications | Microsoft Docs"  
 
 [BingMain]: https://bing.com "Bing"  
+
+[ChromiumMain]: https://www.chromium.org "The Chromium Projects"  
+
+[GithubW3cIncubatorCommunityGroupSpeechApi]: https://wicg.github.io/speech-api "Web Speech API Draft Report | W3C Incubator Community Group" 
+
+[GoogleChromePrivacyWhitepaper]: https://www.google.com/chrome/privacy/whitepaper.html "Google Chrome Privacy Whitepaper"  
 
 [MicrosoftAccountDevices]: https://account.microsoft.com/devices "Devices | Microsoft Account"  
 [MicrosoftAccountFamilyMain]: https://account.microsoft.com/family "Family | Microsoft Account"  
@@ -508,17 +515,7 @@ Microsoft Edge is committed to protecting and respecting your privacy while givi
 
 [OfficeSupport4c83a8d8748642f78e462b0fdf753130]: https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130 "Download voices for Immersive Reader, Read Mode, and Read Aloud | Office support"  
 
-[GithubW3cIncubatorCommunityGroupSpeechApi]: (https://wicg.github.io/speech-api "Web Speech API Draft Report | W3C Incubator Community Group" 
-
 [W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. Privacy - Encrypted Media Extensions | W3C"  
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "Geolocation API Specification 2nd Edition | W3C"  
-
-[DeployedgeConfigurationExperiments]: https://docs.microsoft.com/deployedge/edge-configuration-and-experiments "Microsoft Edge configurations and experimentation | Microsoft Docs"  
-
-[WindowsSecurityInformationProtectionCollectAuditEventLogs]: https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs "How to collect Windows Information Protection (WIP) audit event logs | Microsoft Docs"  
-
-[ChromiumMain]: https://www.chromium.org "The Chromium Projects"  
-
-[GoogleChromePrivacyWhitepaper]: https://www.google.com/chrome/privacy/whitepaper.html "Google Chrome Privacy Whitepaper"  
 
 [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
