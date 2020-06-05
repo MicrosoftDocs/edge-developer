@@ -102,19 +102,12 @@ Resets a count.
 ```javascript
 console.countReset();
 console.countReset('coffee');
-```  
 
-## debug  
+## console.debug(object [, object, ...]) 
 
-```javascript
-console.debug(object [, object, ...])
-```  
+[Log level][level]: `Verbose`
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
-
-Identical to the [log](#log) method.  
-
-```javascript
+Identical to [`console.log(object [, object, ...])`](#log) except different log level.
 console.debug('debug');  
 ```  
 

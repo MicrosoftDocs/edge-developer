@@ -126,14 +126,14 @@ A DOM node is only garbage collected when there are no references to the node fr
 Here is a simple example of detached DOM nodes.  
 
 ```javascript
-var detachedNodes;
+    var detachedTree;
 function create() {
     var ul = document.createElement('ul');
     for (var i = 0; i < 10; i++) {
         var li = document.createElement('li');
         ul.appendChild(li);
     }
-    detachedNodes = ul;
+      detachedTree = ul;
 }
 document.getElementById('create').addEventListener('click', create);
 ```  

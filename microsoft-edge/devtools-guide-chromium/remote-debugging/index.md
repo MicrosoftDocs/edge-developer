@@ -35,6 +35,10 @@ Remote debug live content on an Android device from your Windows or macOS comput
 :::image-end:::  
 -->  
 
+> [!NOTE]
+> Remote debugging the Microsoft Edge app on iOS devices is not currently supported. This guide is specifically for remote debugging Microsoft Edge on Android devices.
+> If you have a macOS device, follow [this guide][iOSRemoteDebuggingGuide] to remotely debug Microsoft Edge on an iOS device with Safari. You can learn more about Safari's Web Inspector tool in [their documentation][SafariWebInspectorDocs].
+
 ## Step 1: Discover your Android device  
 
 The workflow below works for most users.  See [Troubleshooting: DevTools is not detecting the Android device](#troubleshooting-devtools-is-not-detecting-the-android-device) for more help.  
@@ -154,7 +158,12 @@ You are able to interact with the screencast in the following ways.
 
 [AndroidUSBDrivers]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
 
-<!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->  
+[iOSRemoteDebuggingGuide]: https://support.brightcove.com/debugging-mobile-devices "Debugging on Mobile Devices | Brightcove Support"
+
+<!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->
+
+[SafariWebInspectorDocs]: https://developer.apple.com/safari/tools/ "Safari Web Development Tools | Apple Developer"
+
 [StackOverflowDevicesNotDetected]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"  
 
 [StackExchangeGalaxyS4DoesNotShowDialogBox]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"  

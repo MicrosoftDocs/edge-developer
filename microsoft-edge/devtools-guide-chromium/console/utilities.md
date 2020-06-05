@@ -477,6 +477,16 @@ The result appears as a Heap Snapshot in the **Memory** panel.
 > [!NOTE]
 > Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
 
+## queryObjects(Constructor) 
+
+Call `queryObjects(Constructor)` from the console to return an array of objects that were created with the specified constructor. For example:
+
+- `queryObjects(Promise)`. Returns all Promises.
+- `queryObjects(HTMLElement)`. Returns all HTML elements.
+- `queryObjects(foo)`, where `foo` is a function name. Returns all objects that were instantiated via `new foo()`.
+
+The scope of `queryObjects()` is the currently-selected runtime context in the console.
+
 ## table  
 
 ```console
