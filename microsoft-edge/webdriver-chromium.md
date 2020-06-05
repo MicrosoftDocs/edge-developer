@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/01/2020
+ms.date: 06/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 
 The W3C [WebDriver][W3CWebdriver] API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser, like Microsoft Edge \(Chromium\).  
 
-WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser does not, and WebDriver is able to more accurately simulate user events or OS-level events.  WebDriver is able to manage testing across multiple windows, tabs and webpages in a single test session.  WebDriver is even able to run multiple sessions of Microsoft Edge on a given machine.
+WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser does not, and WebDriver is able to more accurately simulate user events or OS-level events.  WebDriver is able to manage testing across multiple windows, tabs, and webpages in a single test session.  WebDriver is even able to run multiple sessions of Microsoft Edge on a specific machine.  
 
 Here is how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
@@ -28,7 +28,7 @@ WebDriver requires a browser-specific driver to automate each browser.  For Micr
 
 To find your correct build number, use the following steps.  
 
-1.  Launch Microsoft Edge 
+1.  Launch Microsoft Edge  
 1.  View the Microsoft Edge \(Chromium\) version.  
     *   Navigate to `edge://settings/help`  
     *   Select `...` > **Settings** >  **About Microsoft Edge**  
@@ -138,7 +138,7 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 >[!NOTE]
-> If the [DeveloperToolsAvailability][DeveloperToolsAvailabilityDocs] Microsoft Edge policy is set to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] will no longer be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge]. Microsoft Edge Driver requires the [Microsoft Edge DevTools][DevToolsDocs] to be available. Set the [DeveloperToolsAvailability][DeveloperToolsAvailabilityDocs] policy to `0` or `1` for Microsoft Edge Driver to successfully automate Microsoft Edge (Chromium).
+> If the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] Microsoft Edge policy is set to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is no longer able to drive [Microsoft Edge (Chromium)][MicrosoftEdge].  Microsoft Edge Driver requires the [Microsoft Edge DevTools][DevToolsMain] to be available.  For Microsoft Edge Driver to successfully automate Microsoft Edge \(Chromium\), set the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy to `0` or `1` .  
 
 ### Choosing Specific Browser Binaries (Chromium-Only)  
 
@@ -234,7 +234,7 @@ let driver = edge.Driver.createSession(options, service);
 
 ### Using Chromium-Specific Options  
 
-Using the `EdgeOptions` class with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available in the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code.  
+Using the `EdgeOptions` class with the `UseChromium` property set to `true` gives you access to all of the same methods and properties that are available in the [ChromeOptions][SeleniumWebDriverChromeoptionsClass] class in Selenium.  For example, just like with other Chromium browsers, use the `EdgeOptions.AddArguments()` method to run Microsoft Edge \(Chromium\) in [headless mode][WikiHeadlessBrowser] in the following code sample.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -268,6 +268,7 @@ options.setEdgeChromium(true);
 options.addArguments("headless");
 options.addArguments("disable-gpu");
 ```
+
 * * *  
 
 > [!NOTE]
@@ -287,7 +288,7 @@ For more information, see [Selenium Chromium Edge Driver on Chocolatey][Chocolat
 
 ### Docker  
 
-If you are using [Docker][DockerHub], download a pre-configured image with Microsoft Edge \(Chromium\) and [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] already installed by running the following command.  
+If you are using [Docker][DockerHub], download a pre-configured image with Microsoft Edge \(Chromium\) and [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] pre-installed by running the following command.  
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -295,7 +296,7 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 For more information, see [container on Docker Hub][DockerHubMsedgedriver].  
 
-## Getting in touch with the Microsoft Edge DevTools team    
+## Getting in touch with the Microsoft Edge DevTools team  
 
 The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge!  Use the **Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterTweetEdgeDevTools] to let the team know what you think.  
 
@@ -308,13 +309,13 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 
 <!-- links -->  
 
+[DevToolsMain]: ./devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 [Webdriver]: ./webdriver.md "WebDriver (EdgeHTML) | Microsoft Docs"  
+
+[DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
 
 [Chocolatey]: https://chocolatey.org "Chocolatey | Chocolatey Software"  
 [ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Selenium Chromium Edge Driver | Chocolatey"  
-
-[DeveloperToolsAvailabilityDocs]: https://docs.microsoft.com/deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability | Microsoft Edge - Policies"
-[DevToolsDocs]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"  
