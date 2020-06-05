@@ -12,9 +12,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2Environment class 
 
-> [!NOTE]
-> This reference may be altered or unavailable for releases after SDK version 0.9.515. Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.
-
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 
@@ -27,8 +24,11 @@ This represents the WebView2 Environment.
 [BrowserVersionString](#browserversionstring) | The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
 [CreateAsync](#createasync) | Creates an evergreen WebView2 Environment using the installed Edge version.
+[CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously create a new WebView for use with visual hosting.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty CoreWebView2ExperimentalPointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
+[GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
 
@@ -65,6 +65,18 @@ Creates an evergreen WebView2 Environment using the installed Edge version.
 
 * `options` Options used to create WebView2 Environment.
 
+#### CreateCoreWebView2CompositionControllerAsync 
+
+Asynchronously create a new WebView for use with visual hosting.
+
+> public async Task< [CoreWebView2CompositionController](microsoft-web-webview2-core-corewebview2compositioncontroller.md) > [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync)(IntPtr ParentWindow)
+
+parentWindow is the HWND in which the app will connect the visual tree of the WebView. This will be the HWND that the app will receive pointer/ mouse input meant for the WebView (and will need to use SendMouseInput/ SendPointerInput to forward). If the app moves the WebView visual tree to underneath a different window, then it needs to set CoreWebView2CompositionController.ParentWindow to update the new parent HWND of the visual tree.
+
+Set RootVisualTarget property on the created CoreWebView2CompositionController to provide a visual to host the browser's visual tree.
+
+It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow.
+
 #### CreateCoreWebView2ControllerAsync 
 
 Asynchronously create a new WebView.
@@ -75,6 +87,14 @@ parentWindow is the HWND in which the WebView should be displayed and from which
 
 It is recommended that the application set Application User Model ID for the process or the application window. If none is set, during WebView creation a generated Application User Model ID is set to root window of parentWindow.
 
+#### CreateCoreWebView2PointerInfo 
+
+Create an empty CoreWebView2ExperimentalPointerInfo.
+
+> public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
+
+The returned CoreWebView2ExperimentalPointerInfo needs to be populated with all of the relevant info before calling SendPointerInput.
+
 #### CreateWebResourceResponse 
 
 Create a new web resource response object.
@@ -82,4 +102,10 @@ Create a new web resource response object.
 > public HttpResponseMessage [CreateWebResourceResponse](#createwebresourceresponse)(Stream Content, int StatusCode, string ReasonPhrase, string Headers)
 
 The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the CoreWebView2HttpResponseHeaders to construct the headers line by line. For information on other parameters see CoreWebView2WebResourceResponse.
+
+#### GetProviderForHwnd 
+
+Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
+
+> public object [GetProviderForHwnd](#getproviderforhwnd)(IntPtr hwnd)
 

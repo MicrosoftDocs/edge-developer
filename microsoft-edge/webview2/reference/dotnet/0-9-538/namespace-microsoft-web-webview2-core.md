@@ -12,24 +12,25 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core namespace 
 
-> [!NOTE]
-> This reference may be altered or unavailable for releases after SDK version 0.9.515. Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.
-
 ## Summary
 
  Members                        | Descriptions
 --------------------------------|---------------------------------------------
 [CoreWebView2CapturePreviewImageFormat](#corewebview2capturepreviewimageformat) | Image format used by the CoreWebView2CapturePreview method.
 [CoreWebView2KeyEventKind](#corewebview2keyeventkind) | The type of key event that triggered an AcceleratorKeyPressed event.
+[CoreWebView2MouseEventKind](#corewebview2mouseeventkind) | Mouse event type used by SendMouseInput to convey the type of mouse event being sent to WebView.
+[CoreWebView2MouseEventVirtualKeys](#corewebview2mouseeventvirtualkeys) | Mouse event virtual keys associated with a CoreWebView2MouseEventKind for SendMouseInput.
 [CoreWebView2MoveFocusReason](#corewebview2movefocusreason) | Reason for moving focus.
 [CoreWebView2PermissionKind](#corewebview2permissionkind) | The type of a permission request.
 [CoreWebView2PermissionState](#corewebview2permissionstate) | Response to a permission request.
+[CoreWebView2PointerEventKind](#corewebview2pointereventkind) | Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
 [CoreWebView2ProcessFailedKind](#corewebview2processfailedkind) | Kind of process failure used in the CoreWebView2ProcessFailedEventHandler class.
 [CoreWebView2ScriptDialogKind](#corewebview2scriptdialogkind) | Kind of JavaScript dialog used in the CoreWebView2ScriptDialogOpeningEventHandler class.
 [CoreWebView2WebErrorStatus](#corewebview2weberrorstatus) | Error status values for web navigations.
 [CoreWebView2WebResourceContext](#corewebview2webresourcecontext) | Enum for web resource request contexts.
 CoreWebView2 | WebView2 enables you to host web content using the latest Edge web browser technology.
 CoreWebView2AcceleratorKeyPressedEventArgs | Event args for the AcceleratorKeyPressed event.
+CoreWebView2CompositionController | This class is an extension of the CoreWebView2Controller class to support visual hosting.
 CoreWebView2ContentLoadingEventArgs | Event args for the ContentLoading event.
 CoreWebView2Controller | This class is the owner of the CoreWebView2 object, and provides support for resizing, showing and hiding, focusing, and other functionality related to windowing and composition.
 CoreWebView2Deferral | This class is used to complete deferrals on event args that support getting deferrals via their GetDeferral method.
@@ -42,18 +43,23 @@ CoreWebView2NavigationCompletedEventArgs | Event args for the NavigationComplete
 CoreWebView2NavigationStartingEventArgs | Event args for the NavigationStarting event.
 CoreWebView2NewWindowRequestedEventArgs | Event args for the NewWindowRequested event.
 CoreWebView2PermissionRequestedEventArgs | Event args for the PermissionRequested event.
+CoreWebView2PointerInfo | This mostly represents a combined win32 POINTER_INFO/POINTER_TOUCH_INFO/POINTER_PEN_INFO object.
 CoreWebView2ProcessFailedEventArgs | Event args for the ProcessFailed event.
 CoreWebView2ScriptDialogOpeningEventArgs | Event args for the ScriptDialogOpening event.
 CoreWebView2Settings | Defines properties that enable, disable, or modify WebView features.
 CoreWebView2SourceChangedEventArgs | Event args for the SourceChanged event.
 CoreWebView2WebMessageReceivedEventArgs | Event args for the WebMessageReceived event.
 CoreWebView2WebResourceRequestedEventArgs | Event args for the WebResourceRequested event.
+CoreWebView2WindowFeatures | Window features for a WebView popup window.
 EdgeNotFoundException | The exception that is thrown when an Edge installation is missing.
+CoreWebView2Matrix4x4 | This transform is used to calculate correct coordinates when calling CreateCoreWebView2PointerInfoFromPointerId.
 CoreWebView2PhysicalKeyStatus | A structure representing the information packed into the LPARAM given to a Win32 key event.
 
 ## Members
 
 #### CoreWebView2CapturePreviewImageFormat 
+
+Image format used by the CoreWebView2CapturePreview method.
 
 > enum [CoreWebView2CapturePreviewImageFormat](#corewebview2capturepreviewimageformat)
 
@@ -62,9 +68,9 @@ CoreWebView2PhysicalKeyStatus | A structure representing the information packed 
 Png            | PNG image format.
 Jpeg            | JPEG image format.
 
-Image format used by the CoreWebView2CapturePreview method.
-
 #### CoreWebView2KeyEventKind 
+
+The type of key event that triggered an AcceleratorKeyPressed event.
 
 > enum [CoreWebView2KeyEventKind](#corewebview2keyeventkind)
 
@@ -75,9 +81,51 @@ KeyUp            | Correspond to window message WM_KEYUP.
 SystemKeyDown            | Correspond to window message WM_SYSKEYDOWN.
 SystemKeyUp            | Correspond to window message WM_SYSKEYUP.
 
-The type of key event that triggered an AcceleratorKeyPressed event.
+#### CoreWebView2MouseEventKind 
+
+Mouse event type used by SendMouseInput to convey the type of mouse event being sent to WebView.
+
+> enum [CoreWebView2MouseEventKind](#corewebview2mouseeventkind)
+
+ Values                         | Descriptions
+--------------------------------|---------------------------------------------
+HorizontalWheel            | Mouse horizontal wheel scroll event, WM_MOUSEHWHEEL.
+LeftButtonDoubleClick            | Left button double click mouse event, WM_LBUTTONDBLCLK.
+LeftButtonDown            | Left button down mouse event, WM_LBUTTONDOWN.
+LeftButtonUp            | Left button up mouse event, WM_LBUTTONUP.
+Leave            | Mouse leave event, WM_MOUSELEAVE.
+MiddleButtonDoubleClick            | Middle button double click mouse event, WM_MBUTTONDBLCLK.
+MiddleButtonDown            | Middle button down mouse event, WM_MBUTTONDOWN.
+MiddleButtonUp            | Middle button up mouse event, WM_MBUTTONUP.
+Move            | Mouse move event, WM_MOUSEMOVE.
+RightButtonDoubleClick            | Right button double click mouse event, WM_RBUTTONDBLCLK.
+RightButtonDown            | Right button down mouse event, WM_RBUTTONDOWN.
+RightButtonUp            | Right button up mouse event, WM_RBUTTONUP.
+Wheel            | Mouse wheel scroll event, WM_MOUSEWHEEL.
+XButtonDoubleClick            | First or second X button double click mouse event, WM_XBUTTONDBLCLK.
+XButtonDown            | First or second X button down mouse event, WM_XBUTTONDOWN.
+XButtonUp            | First or second X button up mouse event, WM_XBUTTONUP.
+
+#### CoreWebView2MouseEventVirtualKeys 
+
+Mouse event virtual keys associated with a CoreWebView2MouseEventKind for SendMouseInput.
+
+> enum [CoreWebView2MouseEventVirtualKeys](#corewebview2mouseeventvirtualkeys)
+
+ Values                         | Descriptions
+--------------------------------|---------------------------------------------
+None            | No additional keys pressed.
+LeftButton            | Left mouse button is down, MK_LBUTTON.
+RightButton            | Right mouse button is down, MK_RBUTTON.
+Shift            | SHIFT key is down, MK_SHIFT.
+Control            | CTRL key is down, MK_CONTROL.
+MiddleButton            | Middle mouse button is down, MK_MBUTTON.
+XButton1            | First X button is down, MK_XBUTTON1.
+XButton2            | Second X button is down, MK_XBUTTON2.
 
 #### CoreWebView2MoveFocusReason 
+
+Reason for moving focus.
 
 > enum [CoreWebView2MoveFocusReason](#corewebview2movefocusreason)
 
@@ -87,9 +135,9 @@ Programmatic            | Code setting focus into WebView.
 Next            | Moving focus due to Tab traversal forward.
 Previous            | Moving focus due to Tab traversal backward.
 
-Reason for moving focus.
-
 #### CoreWebView2PermissionKind 
+
+The type of a permission request.
 
 > enum [CoreWebView2PermissionKind](#corewebview2permissionkind)
 
@@ -103,9 +151,9 @@ Notifications            | Permission to send web notifications.
 OtherSensors            | Permission to access generic sensor.
 ClipboardRead            | Permission to read system clipboard without a user gesture.
 
-The type of a permission request.
-
 #### CoreWebView2PermissionState 
+
+Response to a permission request.
 
 > enum [CoreWebView2PermissionState](#corewebview2permissionstate)
 
@@ -115,9 +163,24 @@ Default            | Use default browser behavior, which normally prompt users f
 Allow            | Grant the permission request.
 Deny            | Deny the permission request.
 
-Response to a permission request.
+#### CoreWebView2PointerEventKind 
+
+Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
+
+> enum [CoreWebView2PointerEventKind](#corewebview2pointereventkind)
+
+ Values                         | Descriptions
+--------------------------------|---------------------------------------------
+Activate            | Corresponds to WM_POINTERACTIVATE.
+Down            | Corresponds to WM_POINTERDOWN.
+Enter            | Corresponds to WM_POINTERENTER.
+Leave            | Corresponds to WM_POINTERLEAVE.
+Up            | Corresponds to WM_POINTERUP.
+Update            | Corresponds to WM_POINTERUPDATE.
 
 #### CoreWebView2ProcessFailedKind 
+
+Kind of process failure used in the CoreWebView2ProcessFailedEventHandler class.
 
 > enum [CoreWebView2ProcessFailedKind](#corewebview2processfailedkind)
 
@@ -127,9 +190,9 @@ BrowserProcessExited            | Indicated the browser process terminated unexp
 RenderProcessExited            | Indicated the render process terminated unexpectedly.
 RenderProcessUnresponsive            | Indicated the render process becomes unresponsive.
 
-Kind of process failure used in the CoreWebView2ProcessFailedEventHandler class.
-
 #### CoreWebView2ScriptDialogKind 
+
+Kind of JavaScript dialog used in the CoreWebView2ScriptDialogOpeningEventHandler class.
 
 > enum [CoreWebView2ScriptDialogKind](#corewebview2scriptdialogkind)
 
@@ -140,9 +203,9 @@ Confirm            | A dialog invoked via the window.confirm JavaScript function
 Prompt            | A dialog invoked via the window.prompt JavaScript function.
 Beforeunload            | A dialog invoked via the window.beforeunload JavaScript function.
 
-Kind of JavaScript dialog used in the CoreWebView2ScriptDialogOpeningEventHandler class.
-
 #### CoreWebView2WebErrorStatus 
+
+Error status values for web navigations.
 
 > enum [CoreWebView2WebErrorStatus](#corewebview2weberrorstatus)
 
@@ -166,9 +229,9 @@ OperationCanceled            | The operation was canceled.
 RedirectFailed            | The request redirect failed.
 UnexpectedError            | An unexpected error occurred.
 
-Error status values for web navigations.
-
 #### CoreWebView2WebResourceContext 
+
+Enum for web resource request contexts.
 
 > enum [CoreWebView2WebResourceContext](#corewebview2webresourcecontext)
 
@@ -191,6 +254,4 @@ SignedExchange            | Signed HTTP Exchanges.
 Ping            | Ping requests.
 CspViolationReport            | CSP Violation Reports.
 Other            | Other resources.
-
-Enum for web resource request contexts.
 

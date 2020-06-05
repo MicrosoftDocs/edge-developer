@@ -12,9 +12,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs class 
 
-> [!NOTE]
-> This reference may be altered or unavailable for releases after SDK version 0.9.515. Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.
-
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 
@@ -28,6 +25,7 @@ Event args for the NewWindowRequested event.
 [IsUserInitiated](#isuserinitiated) | IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
 [NewWindow](#newwindow) | Gets the new window.
 [Uri](#uri) | The target uri of the NewWindowRequest.
+[WindowFeatures](#windowfeatures) | Window features specified by the window.open call.
 [GetDeferral](#getdeferral) | Obtain a CoreWebView2Deferral object and put the event into a deferred state.
 
 The event is fired when content inside webview requested to a open a new window (through window.open() and so on.)
@@ -61,6 +59,14 @@ The target uri of the NewWindowRequest.
 > public string [Uri](#uri)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
+
+#### WindowFeatures 
+
+Window features specified by the window.open call.
+
+> public CoreWebView2WindowFeatures [WindowFeatures](#windowfeatures)
+
+These features can be considered for positioning and sizing of new webview windows.
 
 #### GetDeferral 
 
