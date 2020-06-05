@@ -326,7 +326,7 @@ Press `F5` to build and run the app.  Now the address bar displays the URI in th
 
 Congratulations, you built your first WebView2 app!  
 
-## Next Steps  
+## Next steps  
 
 * Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
 * Checkout [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) for more detailed information about our APIs

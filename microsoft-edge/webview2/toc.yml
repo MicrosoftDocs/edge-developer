@@ -1,6 +1,6 @@
 - name: WebView2 (Chromium) (preview)
   href: index.md
-- name: Getting Started
+- name: Getting started
   items:
     - name: Win32
       href: gettingstarted/win32.md
@@ -10,7 +10,7 @@
       href: gettingstarted/winforms.md
 - name: Concepts
   items:
-    - name: Distributing My App
+    - name: Distributing my app
       href: concepts/distribution.md
     - name: Versioning
       href: concepts/versioning.md
@@ -18,7 +18,7 @@
   href: releasenotes.md
 - name: Roadmap
   href: roadmap.md
-- name: How To
+- name: How to
   items:
     - name: Debug WebView2
       href: howto/Debug.md

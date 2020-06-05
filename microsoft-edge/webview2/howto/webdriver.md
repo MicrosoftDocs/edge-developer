@@ -126,7 +126,7 @@ You can copy and paste the following code underneath `edgeOptions`. Make sure to
 
 Congratulations! You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.
 
-## Next Steps
+## Next steps
 
 To learn more:
 
