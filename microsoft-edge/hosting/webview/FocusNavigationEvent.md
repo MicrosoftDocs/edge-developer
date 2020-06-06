@@ -93,4 +93,3 @@ var originWidth = FocusNavigationEvent.originWidth;
 
 #### Property value
 Type: **float**
-

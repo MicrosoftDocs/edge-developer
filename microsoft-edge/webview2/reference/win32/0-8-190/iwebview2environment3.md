@@ -92,4 +92,3 @@ Because a user data folder can only be used by one browser process at a time, if
 Remove an event handler previously added with add_NewVersionAvailable.
 
 > public HRESULT [remove_NewVersionAvailable](#remove_newversionavailable)(EventRegistrationToken token)
-

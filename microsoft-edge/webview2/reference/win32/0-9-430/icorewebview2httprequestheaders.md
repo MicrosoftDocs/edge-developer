@@ -72,4 +72,3 @@ Removes header that matches the name.
 Gets an iterator over the collection of request headers.
 
 > public HRESULT [GetIterator](#getiterator)([ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
-

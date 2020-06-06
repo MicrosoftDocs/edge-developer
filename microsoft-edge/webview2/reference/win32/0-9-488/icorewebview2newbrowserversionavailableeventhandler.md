@@ -32,4 +32,3 @@ The caller implements this interface to receive NewBrowserVersionAvailable event
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2Environment](icorewebview2environment.md) * webviewEnvironment, IUnknown * args)
-

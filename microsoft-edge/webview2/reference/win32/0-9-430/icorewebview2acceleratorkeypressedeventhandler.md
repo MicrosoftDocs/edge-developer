@@ -35,4 +35,3 @@ The caller implements this interface to receive the AcceleratorKeyPressed event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2Host](ICoreWebView2Host.md) * sender,[ICoreWebView2AcceleratorKeyPressedEventArgs](ICoreWebView2AcceleratorKeyPressedEventArgs.md) * args)
-

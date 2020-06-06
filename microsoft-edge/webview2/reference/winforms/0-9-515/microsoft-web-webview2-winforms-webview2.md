@@ -208,4 +208,3 @@ Create a new WebView2 WinForms control.
 > public [WebView2](#webview2)()
 
 After construction the CoreWebView2 property is null. Call [EnsureCoreWebView2Async](#ensurecorewebview2async) to initialize the underlying CoreWebView2.
-

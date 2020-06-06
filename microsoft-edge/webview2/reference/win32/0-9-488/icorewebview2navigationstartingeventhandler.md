@@ -32,4 +32,3 @@ The caller implements this interface to receive the NavigationStarting event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) * sender, [ICoreWebView2NavigationStartingEventArgs](icorewebview2navigationstartingeventargs.md) * args)
-

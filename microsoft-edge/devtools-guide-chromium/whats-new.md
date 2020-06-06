@@ -59,7 +59,6 @@ In the next version of Microsoft Edge, any methods that are prefixed with `ms` w
 
 Many links from the Microsoft Edge (Chromium) DevTools to content hosted on third-party sites have been removed temporarily. As soon as we can replace these links, we will add them back to the DevTools.
 
-
 When debugging web content on an Android device from Microsoft Edge (Chromium), the version of the DevTools that launches when you click the **Inspect** button from the **Remote devices** tool may not match the version of the browser on your Android device. As a result, you may see new features in the DevTools that will not work against the browser on your Android device. If this is something you encounter, we'd love to hear about it so please [file feedback](../devtools-guide-chromium.md#getting-in-touch-with-the-microsoft-edge-devtools-team)!
 
 Finally, Visual Studio on Windows and Mac does not yet support Microsoft Edge (Chromium). Sign up [here](https://visualstudio.microsoft.com/vs/preview/) to be the first to know when we have a preview version of Visual Studio that supports JavaScript debugging inside Microsoft Edge (Chromium) for ASP.NET projects!  

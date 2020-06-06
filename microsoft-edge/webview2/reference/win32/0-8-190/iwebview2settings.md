@@ -153,4 +153,3 @@ It is true by default.
 Set the AreDevToolsEnabled property.
 
 > public HRESULT [put_AreDevToolsEnabled](#put_aredevtoolsenabled)(BOOL areDevToolsEnabled)
-

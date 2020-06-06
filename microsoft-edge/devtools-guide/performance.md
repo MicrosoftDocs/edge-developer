@@ -71,7 +71,6 @@ HtmlParsing | New HTML content was encountered that needed to be parsed into nod
 HttpRequest | A remote resource was encountered in the DOM or an XMLHttpRequest was created that required an HTTP request to be made.
 HtmlSpeculativeDownloading | The page's HTML content was being searched for required resources so that the HTTP requests for them could be scheduled as quickly as possible.
 
-
 #### Scripting
 Indicates time spent parsing and executing JavaScript. This includes DOM events, timers, script evaluation, and animation frame callbacks. The following associated events are logged in the [Timeline](#timeline-details):
 

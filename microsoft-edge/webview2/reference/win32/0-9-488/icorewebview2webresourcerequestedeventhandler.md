@@ -34,4 +34,3 @@ The host can override request, response headers and response content.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) * sender, [ICoreWebView2WebResourceRequestedEventArgs](icorewebview2webresourcerequestedeventargs.md) * args)
-

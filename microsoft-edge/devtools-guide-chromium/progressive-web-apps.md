@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Debug Progressive Web Apps   
-
-
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
 
@@ -185,10 +179,6 @@ Related Guides:
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
 
 <!--TODO  -->
-
- 
-
-
 
 <!-- image links -->  
 

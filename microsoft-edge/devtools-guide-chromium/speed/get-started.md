@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Optimize Website Speed With Microsoft Edge DevTools   
-
-
 
 ## Goal of tutorial  
 
@@ -519,8 +513,6 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 -->  
 
 <!--    -->  
-
-
 
 <!-- image links -->  
 

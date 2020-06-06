@@ -79,4 +79,3 @@ Set the Content property.
 The mutable HTTP request headers.
 
 > public HRESULT [get_Headers](#get_headers)([IWebView2HttpRequestHeaders](IWebView2HttpRequestHeaders.md) ** headers)
-

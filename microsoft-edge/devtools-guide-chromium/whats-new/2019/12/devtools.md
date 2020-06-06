@@ -21,16 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-
 # What's new in DevTools (Microsoft Edge 80)   
-
-
 
 ## Announcements from the Microsoft Edge DevTools team  
 
@@ -322,8 +313,6 @@ Chromium issue [#1004203][crbug1004203]
 
 ## Feedback   
 
-
-
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  
@@ -345,8 +334,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!--<<../../_shared/canary.md>> -->
 
 <!--<<../../_shared/discover.md>> -->
-
-
 
 <!-- image links -->  
 

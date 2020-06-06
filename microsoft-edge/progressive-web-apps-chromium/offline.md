@@ -88,7 +88,6 @@ Sometimes you may need to store small amounts of data in order to provide a bett
 > [!IMPORTANT]
 > Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application. 
 
-
 There are 2 types of Web Storage: `localStorage` and `sessionStorage`. Each is maintained as a separate data store isolated to the domain that created it. `sessionStorage` persists only for the duration of the browsing session (for example, while the browser is open, which includes refresh and restores). `localStorage` persists until the data is removed by the code, the user, or the browser (for example, when there is limited storage available). The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
 
 ```javascript

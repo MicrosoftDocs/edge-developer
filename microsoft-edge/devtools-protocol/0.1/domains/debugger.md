@@ -22,12 +22,10 @@ Debugger domain exposes JavaScript debugging capabilities. It allows setting and
 ### enable
 Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.
 
-
 ---
 
 ### disable
 Disables debugger for given page.
-
 
 ---
 
@@ -232,30 +230,25 @@ Removes JavaScript breakpoint.
 ### stepOver
 Steps over the statement.
 
-
 ---
 
 ### stepInto
 Steps into the function call.
-
 
 ---
 
 ### stepOut
 Steps out of the function call.
 
-
 ---
 
 ### pause
 Stops on the next JavaScript statement.
 
-
 ---
 
 ### resume
 Resumes JavaScript execution.
-
 
 ---
 
@@ -604,7 +597,6 @@ Fired when the debuggers breaks for a breakpoint or exception.
 ### resumed
 Fired when the debugger resumes execution.
 
-
 ---
 
 ## Types
@@ -613,13 +605,11 @@ Fired when the debugger resumes execution.
 
 Breakpoint identifier.
 
-
 ---
 
 ### <a name="callframeid"></a> CallFrameId `string`
 
 Call frame identifier.
-
 
 ---
 

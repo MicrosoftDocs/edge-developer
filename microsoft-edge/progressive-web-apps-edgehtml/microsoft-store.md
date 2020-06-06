@@ -46,7 +46,6 @@ Here's how to do it.
 - **A Windows APPX packaging tool for PWAs**. Here's how to [build and run your PWA on Windows](./windows-features.md) using Visual Studio. You can also use [PWA Builder](https://www.pwabuilder.com/) to build a Windows package.
 - [**Microsoft Store app developer account**](/windows/uwp/publish/opening-a-developer-account). There is a [one-time fee](/windows/uwp/publish/account-types-locations-and-fees) depending on your chosen account type and location, and registration requires a valid [Microsoft Account](https://account.microsoft.com/).
 
-
 ### Store submission through *Visual Studio* 
 
 Follow these steps to [create an app package upload file](/windows/uwp/packaging/packaging-uwp-apps#create-an-app-package-upload-file) for your PWA in Visual Studio. See [*Package a UWP app with Visual Studio*](/windows/uwp/packaging/packaging-uwp-apps) for a more general overview of this process.

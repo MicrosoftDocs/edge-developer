@@ -37,4 +37,3 @@ The result is written to the stream provided in the CapturePreview method call.
 Called to provide the implementer with the completion status of the corresponding asynchronous method call.
 
 > public HRESULT [Invoke](#invoke)(HRESULT result)
-

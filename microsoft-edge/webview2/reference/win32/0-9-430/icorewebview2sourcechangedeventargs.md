@@ -35,4 +35,3 @@ Event args for the SourceChanged event.
 True if the page being navigated to is a new document.
 
 > public HRESULT [get_IsNewDocument](#get_isnewdocument)(BOOL * isNewDocument)
-

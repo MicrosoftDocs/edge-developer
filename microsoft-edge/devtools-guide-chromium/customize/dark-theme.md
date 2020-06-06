@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Enable Dark Theme In Microsoft Edge DevTools   
-
-  
 
 You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the [Command Menu](#set-up-dark-theme-from-the-command-menu).  
 
@@ -57,10 +51,6 @@ You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the
 > ##### Figure 4  
 > The dark theme command  
 > ![The dark theme command][ImageDarkThemeCommand]  
-
-   
-
-
 
 <!-- image links -->  
 

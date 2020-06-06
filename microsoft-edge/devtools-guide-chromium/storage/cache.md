@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # View Cache Data With Microsoft Edge DevTools   
-
-
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect
 [Cache][MDNCache] data.  
@@ -114,8 +108,6 @@ Look for the information in the **Size** column of the **Network Log**.  See [Lo
     > ![The Clear Site Data button][ImageCacheClearSite]  
 
 <!--  -->  
-
-
 
 <!-- image links -->  
 

@@ -74,4 +74,3 @@ If set, it will be as if the navigation never happened and the current page's co
 Set the Cancel property.
 
 > public HRESULT [put_Cancel](#put_cancel)(BOOL cancel)
-

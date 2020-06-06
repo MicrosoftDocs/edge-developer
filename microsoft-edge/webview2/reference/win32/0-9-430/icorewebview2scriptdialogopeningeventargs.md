@@ -96,4 +96,3 @@ GetDeferral can be called to return an [ICoreWebView2Deferral](ICoreWebView2Defe
 > public HRESULT [GetDeferral](#getdeferral)([ICoreWebView2Deferral](ICoreWebView2Deferral.md) ** deferral)
 
 You can use this to complete the event at a later time.
-

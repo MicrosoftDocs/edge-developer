@@ -69,4 +69,3 @@ Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 The uri of the requested navigation.
 
 > public string [Uri](#uri)
-

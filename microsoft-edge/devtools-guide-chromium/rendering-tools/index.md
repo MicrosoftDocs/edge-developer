@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Analyze Runtime Performance   
-
-
-
 
 Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.  
 
@@ -184,8 +177,6 @@ The following table describes some common paint and composite problems and poten
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

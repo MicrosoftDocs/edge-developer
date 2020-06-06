@@ -32,4 +32,3 @@ The caller implements this interface to receive the PermissionRequested event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) * sender, [ICoreWebView2PermissionRequestedEventArgs](icorewebview2permissionrequestedeventargs.md) * args)
-

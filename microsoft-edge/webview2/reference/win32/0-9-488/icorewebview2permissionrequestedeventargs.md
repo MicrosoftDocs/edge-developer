@@ -73,4 +73,3 @@ Developer can use the deferral object to make the permission decision at a later
 Set the State property.
 
 > public HRESULT [put_State](#put_state)(COREWEBVIEW2_PERMISSION_STATE value)
-

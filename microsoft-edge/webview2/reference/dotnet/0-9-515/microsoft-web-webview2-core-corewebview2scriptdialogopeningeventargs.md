@@ -84,4 +84,3 @@ GetDeferral can be called to return a CoreWebView2Deferral object.
 > public CoreWebView2Deferral [GetDeferral](#getdeferral)()
 
 You can use this to complete the event at a later time.
-

@@ -53,4 +53,3 @@ Obtain a CoreWebView2Deferral object and put the event into a deferred state.
 > public [CoreWebView2Deferral](microsoft-web-webview2-core-corewebview2deferral.md) [GetDeferral](#getdeferral)()
 
 You can use the CoreWebView2Deferral object to complete the network request at a later time.
-

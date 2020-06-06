@@ -117,4 +117,3 @@ The title for the current top level document.
 > public HRESULT [get_DocumentTitle](#get_documenttitle)(LPWSTR * title)
 
 If the document has no explicit title or is otherwise empty, a default that may or may not match the URI of the document will be used.
-

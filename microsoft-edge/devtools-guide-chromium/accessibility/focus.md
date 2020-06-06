@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Track Which Element Has Focus   
-
-
 
 Suppose that you are testing the keyboard navigation accessibility of a page.  When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.  To track the focused element in DevTools:  
 
@@ -49,8 +43,6 @@ Since that expression always represents the focused element, you now have a way 
 *   Right-click the result and select **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

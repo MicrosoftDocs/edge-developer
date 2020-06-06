@@ -37,4 +37,3 @@ Use the get_NewVersion method of [ICoreWebView2NewBrowserVersionAvailableEventAr
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2Environment](ICoreWebView2Environment.md) * webviewEnvironment,[ICoreWebView2NewBrowserVersionAvailableEventArgs](ICoreWebView2NewBrowserVersionAvailableEventArgs.md) * args)
-

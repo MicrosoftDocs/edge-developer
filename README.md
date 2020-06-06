@@ -95,7 +95,6 @@ For multi-line blockquote notes, use a > in front of each line of the notes as s
 
 ```
 
-
 ### Images
 
 Images should be stored in a `media` folder and referenced with a relative path:

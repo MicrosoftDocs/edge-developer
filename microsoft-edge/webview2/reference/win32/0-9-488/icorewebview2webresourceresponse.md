@@ -76,4 +76,3 @@ Set the ReasonPhrase property.
 Set the StatusCode property.
 
 > public HRESULT [put_StatusCode](#put_statuscode)(int statusCode)
-

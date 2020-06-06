@@ -173,7 +173,6 @@ webview.removeEventListener("MSWebViewContentLoading", handler);
 
 Indicates that the main DOM elements have finished loading.
 
-
 ```js
 function handler(eventInfo) { /* Your code */ }
  
@@ -233,7 +232,6 @@ webview.removeEventListener("MSWebViewFrameDOMContentLoaded", handler);
 |**Bubbles**     |No |   
 |**Cancelable**  |No |    
 
-
 ### MSWebViewFrameNavigationCompleted
 
 Indicates the navigation is complete, and all media elements are rendered in the `<iframe>`.
@@ -258,7 +256,6 @@ webview.removeEventListener("MSWebViewFrameNavigationCompleted", handler);
 ### MSWebViewFrameNavigationStarting
 
 Indicates a `<iframe>` within a **webview** is starting to navigate. This is fired before obtaining any resources from the network for the navigation. The navigation is not started until all MSWebViewFrameNavigationStarting event handlers complete. This event is cancellable via calling `eventArgs.preventDefault()`. If cancelled, the WebView will not perform the navigation.
-
 
 ```js
 function frameNavigationStartingHandler(navigationEventArgs) {
@@ -343,11 +340,9 @@ webview.removeEventListener("MSWebViewNavigationCompleted", handler);
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
          
-
 ### MSWebViewNavigationStarting
 
 Indicates the **webview** is starting to navigate. This is fired before obtaining any resources from the network for the navigation. The navigation is not started until all MSWebViewNavigationStarting event handlers complete. This event is cancellable via calling `eventArgs.preventDefault()`. If cancelled, the WebView will not perform the navigation.
-
 
 ```js
 function navigationStartingHandler(navigationEventArgs) {
@@ -401,7 +396,6 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 |**Bubbles**     |No |   
 |**Cancelable**  |Yes |                 
            
-
 ### MSWebViewPermissionRequested
 
 Indicates that content in the **webview**  is trying to access functionality (such as geolocation, or pointer lock access) that normally requires end-user permissions. If no event handler is registered or if the event handler doesn't call eventArgs.permissionRequest.allow(), defer(), or deny(), then by default the permission request will be denied. If you need to decide if permission is allowed or denied asynchronously for instance if you need to prompt the user, use eventArgs.permissionRequest.defer(). The permission request will be deferred until you use webview.getDeferredPermissionRequestById or webview.getDeferredPermissionRequests and call allow() or deny() on the DeferredPermissionRequest with the corresponding id value.
@@ -457,7 +451,6 @@ webview.removeEventListener("MSWebViewPermissionRequested", handler);
 |**Bubbles**     |No |   
 |**Cancelable**  |No |    
 
-
 ### MSWebViewProcessExited
 
 Indicates that the **webview** component process crashsed. This is only relevant for an out-of-process WebView. See the Remarks section for how to create an out-of-process WebView as opposed to an in-process WebView. After this event fires, the corresponding WebView is put into a crashed state. Calling most WebView specific methods or accessing most WebView specific properties on a crashed WebView will throw an exception. To recover from this event, remove the crashed WebView from the DOM and replace it with a new WebView.
@@ -478,7 +471,6 @@ webview.removeEventListener("MSWebViewProcessExited", handler);
 |**Synchronous** |Yes |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |      
-
 
 ### MSWebViewWebResourceRequested
 
@@ -535,7 +527,6 @@ webview.removeEventListener("MSWebViewWebResourceRequested", handler);
 |**Synchronous** |Yes |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |      
-
 
 ### MSWebViewScriptNotify
 
@@ -634,7 +625,6 @@ webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
 |**Bubbles**     |No |   
 |**Cancelable**  |No |                 
          
-
 ## Methods
 
 ### addWebAllowedObject
@@ -818,7 +808,6 @@ The specified deferred permission request.
 |**Minimum supported server** |None supported|   
 |**Minimum supported phone**  |None supported |    
 
-
 ### getDeferredPermissionRequestById
 
 Returns the specified deferred permission request. 
@@ -977,7 +966,6 @@ This method does not return a value.
 > [!WARNING]
 > If you add additional headers to this request, such as authentication credentials, remember that those headers will also be included with any subsequent child requests. Use caution to prevent accidental disclosure of confidential or personal information. 
 
-
 ### refresh 
 
 Reloads the current content in the **webview**. 
@@ -992,7 +980,6 @@ This method has no parameters.
 #### Return value
 This method does not return a value.
 
-
 ### stop
 
 Halts the current **webview** navigation or download. 
@@ -1006,7 +993,6 @@ This method has no parameters.
 
 #### Return value
 This method does not return a value.
-
 
 ## Properties
 
@@ -1055,7 +1041,6 @@ Type: **Boolean**
 
 **True** if the **webview** contains an element that supports full screen; otherwise, **false**.
 
-
 ### documentTitle
 
 Gets the title of the page currently displayed in the **webview**. 
@@ -1086,7 +1071,6 @@ Type: **Number**
 
 The height of the **webview**. 
 
-
 ### process
 
 Gets the **webview** process.
@@ -1100,7 +1084,6 @@ webview.process = process;
 
 #### Property value
 Type: [MSWebViewProcess](./webview/MSWebViewProcess.md)
-
 
 ### settings
 
@@ -1131,7 +1114,6 @@ webview.src = src;
 Type: **String**
 
 The URI source of the HTML content to display in the **webview** control. 
-
 
 ### width
 

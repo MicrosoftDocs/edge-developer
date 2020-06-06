@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Understand Security Issues With Microsoft Edge DevTools   
-
-  
 
 <!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  See **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
 
@@ -96,10 +90,6 @@ Click one of the entries in the left-hand nav to view the details of the origin.
 > Main origin details  
 > ![Main origin details][ImageOriginDetails]  
 
- 
-
-
-
 <!-- image links -->  
 
 [ImageSecurityPanel]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure.msft.png "Figure 1: The Security panel"  
@@ -113,7 +103,6 @@ Click one of the entries in the left-hand nav to view the details of the origin.
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
-
 
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  
 

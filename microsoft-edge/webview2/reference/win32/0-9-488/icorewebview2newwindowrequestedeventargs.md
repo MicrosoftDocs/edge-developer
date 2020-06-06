@@ -82,4 +82,3 @@ Sets a WebView as a result of the NewWindowRequest.
 > public HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * newWindow)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
-

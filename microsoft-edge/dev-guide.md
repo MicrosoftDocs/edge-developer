@@ -16,7 +16,6 @@ ms.custom: RS5
 > [!TIP]
 > We've [partnered](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/) with other browsers and the web community in adopting [MDN Web Docs](https://developer.mozilla.org/) as the definitive place for useful, unbiased, browser-agnostic documentation for current and emerging standards-based web technologies. You can find details about EdgeHTML API support directly in each page of the [MDN web reference library](https://developer.mozilla.org/docs/Web). Visit Microsoft Edge's [Platform status](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release) for the latest features supported in Microsoft Edge. 
 
-
 ## What's new in EdgeHTML 18
 
 EdgeHTML 18 includes the following new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) (10/2018, Build 17763). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
@@ -41,7 +40,6 @@ We've made further progress on our experimental [CSS Masking](https://developer.
 
 Additionally, Microsoft Edge now has support for [overflow-wrap](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
 ) and partial support for [overscroll-behavior](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) (`auto` and `contain` values).
-
 
 ### Developer Tools
 
@@ -140,7 +138,6 @@ Lastly, power users might notice the apppearance of the *Desktop App Web Viewer*
 - In the device access settings UI (*Settings->Privacy->Camera/Location/Microphone*). Disabling any of these settings denies access from all WebViews hosted in Win32 apps.
 
 ![Desktop App Web Viewer device access setting](./dev-guide/media/desktop-app-web-viewer.png)
-
 
 ## Deprecated features
 

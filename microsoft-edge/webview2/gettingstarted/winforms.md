@@ -292,7 +292,6 @@ Congratulations, you built your first WebView2 app!
 * Checkout [API reference](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) for more detailed information about our APIs
 * Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
 
-
 ## Getting in touch with the Microsoft Edge WebView team  
 
 Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebView [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.  

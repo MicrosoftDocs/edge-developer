@@ -35,4 +35,3 @@ The caller implements this method to receive the MoveFocusRequested event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2Host](ICoreWebView2Host.md) * sender,[ICoreWebView2MoveFocusRequestedEventArgs](ICoreWebView2MoveFocusRequestedEventArgs.md) * args)
-

@@ -526,4 +526,3 @@ Set the TouchPressure of the pointer event.
 > public HRESULT [put_TouchPressure](#put_touchpressure)(UINT32 touchPressure)
 
 This corresponds to the pressure property of the POINTER_TOUCH_INFO struct as defined in the Windows SDK (winuser.h).
-

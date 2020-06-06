@@ -30,4 +30,3 @@ Event args for the DevToolsProtocolEventReceived event.
 The parameter object of the corresponding DevToolsProtocol event represented as a JSON string.
 
 > public string [ParameterObjectAsJson](#parameterobjectasjson)
-

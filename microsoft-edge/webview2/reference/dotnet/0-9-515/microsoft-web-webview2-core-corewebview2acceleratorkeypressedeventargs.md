@@ -64,4 +64,3 @@ The Win32 virtual key code of the key that was pressed or released.
 > public uint [VirtualKey](#virtualkey)
 
 This will be one of the Win32 virtual key constants such as VK_RETURN or an (uppercase) ASCII value such as 'A'. You can check whether Ctrl or Alt are pressed by calling GetKeyState(VK_CONTROL) or GetKeyState(VK_MENU).
-

@@ -272,8 +272,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 ## Getting in touch with Microsoft Edge Devtools team  
 
-  
-
 To discuss the new features and changes in the post, or anything else related to DevTools:  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  

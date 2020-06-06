@@ -48,4 +48,3 @@ The reason for WebView to fire the MoveFocus Requested event.
 Set the Handled property.
 
 > public HRESULT [put_Handled](#put_handled)(BOOL value)
-

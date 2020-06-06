@@ -21,12 +21,10 @@ Runtime domain exposes JavaScript runtime by means of remote evaluation and mirr
 ### enable
 Enables reporting of the <code>executionContextsCleared</code> event.
 
-
 ---
 
 ### disable
 Disables reporting of the <code>executionContextsCleared</code> event.
-
 
 ---
 
@@ -204,7 +202,6 @@ Returns properties of a given object. Object group of the result is inherited fr
 ### executionContextsCleared
 Issued when all executionContexts were cleared in browser
 
-
 ---
 
 ### exceptionThrown
@@ -240,13 +237,11 @@ Issued when exception was thrown and unhandled.
 
 Unique script identifier.
 
-
 ---
 
 ### <a name="remoteobjectid"></a> RemoteObjectId `string`
 
 Unique object identifier.
-
 
 ---
 
@@ -427,7 +422,6 @@ Represents function call argument. Either remote object id <code>objectId</code>
 
 Id of an execution context.
 
-
 ---
 
 ### <a name="exceptiondetails"></a> ExceptionDetails `object`
@@ -496,7 +490,6 @@ Detailed information about exception (or error) that was thrown during script co
 ### <a name="timestamp"></a> Timestamp `integer`
 
 Number of milliseconds since epoch.
-
 
 ---
 

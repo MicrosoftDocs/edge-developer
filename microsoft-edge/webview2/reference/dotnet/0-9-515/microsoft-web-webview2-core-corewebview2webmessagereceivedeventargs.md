@@ -64,4 +64,3 @@ postMessage({'a': 'b'})      E_INVALIDARG
 postMessage(1.2)             E_INVALIDARG
 postMessage('example')       L"example"
 ```
-

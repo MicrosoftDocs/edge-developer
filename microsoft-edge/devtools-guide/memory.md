@@ -23,14 +23,12 @@ Use the **Memory** panel to measure your use of system resources and compare hea
 
 ![The Microsoft Edge  DevTools Memory panel](./media/memory.png)
 
-
 ## Toolbar
 
 1. **Start/Stop profiling session (Ctrl+E)**: Turning on the profiler enables you to track memory usage and take snapshots of the heap.
 2. **Import profiling session (Ctrl+O)**: Load a saved  DevTools memory diagnostic session.
 3. **Export profiling session (Ctrl+S)**: Save the current diagnostic session to disk.
 4. **Take heap snapshot (Ctrl+Shift+T)**: Record current memory allocations for a given point of time.
-
 
 ## Memory usage timeline
 
@@ -138,7 +136,6 @@ You can use the **Scope** dropdown to filter differential info between snapshots
 By default, the *Show non-matching references* filter is applied to the comparison view to indicate object references that don't match the current Scope filter. You can turn it off from the dropdown menu:
 
 ![Non-matching references filter for snapshot comparisons](./media/memory_comparison_matching_filter.png)
-
 
 ## Shortcuts
 

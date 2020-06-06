@@ -28,7 +28,6 @@ Users can then adjust the page contrast and font size from the Microsoft Edge **
 
 ## Metadata extraction
 
-
 Here are details of the page metadata rendered by reading view.
 
 ### Title
@@ -92,7 +91,6 @@ Reading view extracts and displays copyright information denoted by meta tags wi
 ```
 
 ## Opting out of Reading View
-
 
 If you feel your content is not a good fit for Reading view, you can use the following meta tag to opt out of this feature:
 

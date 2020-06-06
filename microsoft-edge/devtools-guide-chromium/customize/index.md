@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Customize Microsoft Edge DevTools   
-
-  
 
 This page lists the ways to customize Microsoft Edge DevTools.  
 
@@ -96,10 +90,6 @@ To enable DevTools experiments:
 1.  Click **Relaunch Now**, at the bottom of the page.  
 
 The next time you open DevTools, a new page is displayed called **Experiments** in [Settings](#settings).  
-
-   
-
-  
 
 <!-- image links -->  
 

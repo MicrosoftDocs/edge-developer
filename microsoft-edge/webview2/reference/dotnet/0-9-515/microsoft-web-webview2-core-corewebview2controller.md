@@ -167,4 +167,3 @@ Update Bounds and ZoomFactor properties at the same time.
 > public void [SetBoundsAndZoomFactor](#setboundsandzoomfactor)(Rect Bounds, double ZoomFactor)
 
 This operation is atomic from the host's perspective. After returning from this function, the Bounds and ZoomFactor properties will have both been updated if the function is successful, or neither will be updated if the function fails. If Bounds and ZoomFactor are both updated by the same scale (i.e. Bounds and ZoomFactor are both doubled), then the page will not see a change in window.innerWidth/innerHeight and the WebView will render the content at the new size and zoom without intermediate renderings. This function can also be used to update just one of ZoomFactor or Bounds by passing in the new value for one and the current value for the other.
-

@@ -85,4 +85,3 @@ Obtain an [IWebView2Deferral](IWebView2Deferral.md) object and put the event int
 > public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
 You can use the [IWebView2Deferral](IWebView2Deferral.md) object to complete the window open request at a later time. While this event is deferred the opener window will be returned a WindowProxy to an unnavigated window, which will navigate when the deferral is complete.
-

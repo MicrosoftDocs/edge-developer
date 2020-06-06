@@ -48,4 +48,3 @@ Move the iterator to the next HTTP header in the collection.
 > public HRESULT [MoveNext](#movenext)(BOOL * has_next)
 
 The has_next parameter will be set to FALSE if there are no more HTTP headers. After this occurs the GetCurrentHeader method will fail if called.
-

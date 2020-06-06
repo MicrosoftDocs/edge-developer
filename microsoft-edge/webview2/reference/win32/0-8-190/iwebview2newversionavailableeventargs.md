@@ -35,4 +35,3 @@ Event args for the NewVersionAvailable event.
 The browser version info of the current [IWebView2Environment](IWebView2Environment.md).
 
 > public HRESULT [get_NewVersion](#get_newversion)(LPWSTR * newVersion)
-

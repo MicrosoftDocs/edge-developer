@@ -32,4 +32,3 @@ The caller implements this interface to receive the SourceChanged event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2](icorewebview2.md) * webview, [ICoreWebView2SourceChangedEventArgs](icorewebview2sourcechangedeventargs.md) * args)
-

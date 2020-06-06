@@ -39,4 +39,3 @@ True if the loaded content is an error page.
 The ID of the navigation.
 
 > public HRESULT [get_NavigationId](#get_navigationid)(UINT64 * navigation_id)
-

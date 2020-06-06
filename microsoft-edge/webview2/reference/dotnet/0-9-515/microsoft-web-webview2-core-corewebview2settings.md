@@ -106,4 +106,3 @@ The IsZoomControlEnabled property is used to prevent the user from impacting the
 > public bool [IsZoomControlEnabled](#iszoomcontrolenabled)
 
 Defaults to TRUE. When disabled, user will not be able to zoom using ctrl+/- or ctrl+mouse wheel, but the zoom can be set via ZoomFactor API.
-

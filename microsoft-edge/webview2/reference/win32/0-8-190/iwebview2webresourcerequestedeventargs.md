@@ -58,4 +58,3 @@ Obtain an [IWebView2Deferral](IWebView2Deferral.md) object and put the event int
 > public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
 You can use the [IWebView2Deferral](IWebView2Deferral.md) object to complete the network request at a later time.
-

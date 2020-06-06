@@ -76,4 +76,3 @@ GetDeferral can be called to return an [IWebView2Deferral](IWebView2Deferral.md)
 > public HRESULT [GetDeferral](#getdeferral)([IWebView2Deferral](IWebView2Deferral.md) ** deferral)
 
 Developer can use the deferral object to make the permission decision at a later time.
-

@@ -37,4 +37,3 @@ Completes the associated deferred event.
 > public HRESULT [Complete](#complete)()
 
 Complete should only be called once for each deferral taken.
-

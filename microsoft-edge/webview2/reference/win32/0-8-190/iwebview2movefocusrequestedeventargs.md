@@ -51,4 +51,3 @@ If the app has moved the focus to its desired location, it should set Handled pr
 Set the Handled property.
 
 > public HRESULT [put_Handled](#put_handled)(BOOL value)
-

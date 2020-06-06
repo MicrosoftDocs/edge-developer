@@ -39,4 +39,3 @@ If the app has moved the focus to its desired location, it should set Handled pr
 The reason for WebView to fire the MoveFocus Requested event.
 
 > public CoreWebView2MoveFocusReason [Reason](#reason)
-

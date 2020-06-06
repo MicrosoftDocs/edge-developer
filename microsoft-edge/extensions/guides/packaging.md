@@ -21,9 +21,7 @@ The extension packaging guide is comprehensive in that it covers everything you'
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we’ll consider you for a future update.
 
-
 Use the process outline below to map out your packaging adventure!
-
 
 ## [Extensions in the Windows Dev Center](./packaging/extensions-in-the-windows-dev-center.md)
 
@@ -33,7 +31,6 @@ Once you've done this, you can either move on to [Creating and testing extension
 
 > [!NOTE]
 > Once you've reached out to us and have been approved to have your extension in the Microsoft Store, check out the [app submission checklist](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
-
 
 ## [Creating and testing extension packages](./packaging/creating-and-testing-extension-packages.md)
 
@@ -52,7 +49,6 @@ You can jump to [Localizing name and description for the Microsoft Store](./pack
 The tool route for packaging your extension, ManifoldJS will package up your extension in a snap with minimal effort on your end. Provide a few Windows/Microsoft Store assets after filling out some AppXManifest properties and your extension will be packaged in no time.
 
 Once your extension is packaged, see the [testing](./packaging/creating-and-testing-extension-packages.md#testing-an-appx-package) section of Creating and testing your Microsoft Edge extension to learn how to sideload or unpack it.
-
 
 ## [Running the Windows App Certification Kit](./packaging/running-the-windows-app-certification-kit.md)
 

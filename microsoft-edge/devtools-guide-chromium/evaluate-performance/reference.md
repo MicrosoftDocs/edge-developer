@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
 # Performance Analysis Reference   
-
-
 
 This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.  
 
@@ -562,10 +554,7 @@ To view scroll performance issues:
     > **Scrolling Performance Issues** indicates that non-layer viewport-constrained objects may harm scroll performance  
     > ![Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance][ImageScrollingPerformanceIssues]  
     
-
 <!--    -->  
-
-
 
 <!-- image links -->  
 

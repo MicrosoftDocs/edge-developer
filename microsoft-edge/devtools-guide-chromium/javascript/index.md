@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-
-
 # Get Started with Debugging JavaScript in Microsoft Edge DevTools   
-
-
 
 This tutorial teaches you the basic workflow for debugging any JavaScript issue in DevTools.  
 
@@ -225,10 +217,6 @@ This tutorial only showed you two ways to set breakpoints.  DevTools offers many
 <!-- See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
 <!--There are a couple of code stepping controls that were not explained in this tutorial.  See [Step over line of code][JSReferenceStepping] to learn more.  -->  
-
- 
-
-
 
 <!-- image links -->  
 

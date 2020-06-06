@@ -30,4 +30,3 @@ Event args for the ProcessFailed event.
 The kind of process failure that has occurred.
 
 > public CoreWebView2ProcessFailedKind [ProcessFailedKind](#processfailedkind)
-

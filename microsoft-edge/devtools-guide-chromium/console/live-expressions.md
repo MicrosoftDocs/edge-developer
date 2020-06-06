@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Watch JavaScript Expression Values In Real-Time With Live Expressions   
-
-  
 
 If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
 
@@ -43,10 +37,6 @@ If you find yourself typing the same JavaScript expression in the Console repeat
 1.  Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.  
 
 <!--todo: add reference open console (open the console) section when available  -->  
-
- 
-
-
 
 <!-- image links -->  
 

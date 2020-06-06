@@ -112,7 +112,6 @@ A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirement
 #### [HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0/)
 This W3C mappings document explains how HTML5.1 element and attributes map to platform accessibility APIs.
 
-
 #### [Quick Tips](http://a11yproject.com/#Quick-tips)
 A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com/).
 

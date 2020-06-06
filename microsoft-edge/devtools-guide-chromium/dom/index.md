@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Get Started With Viewing And Changing The DOM   
-
-
 
 Complete these interactive tutorials to learn the basics of viewing and changing the DOM of a page using Microsoft Edge DevTools.  
 
@@ -321,8 +315,6 @@ That covers most of the DOM-related features in DevTools.  You are able to disco
 Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.  
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->  
-
-
 
 ## Appendix: HTML versus the DOM   
 

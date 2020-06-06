@@ -296,8 +296,6 @@ Fired whenever an active document stylesheet is removed.
 
 ### <a name="stylesheetid"></a> StyleSheetId `string`
 
-
-
 </p>
 
 ---
@@ -528,8 +526,6 @@ Text range within a resource. All numbers are zero-based.
 ---
 
 ### <a name="shorthandentry"></a> ShorthandEntry `object`
-
-
 
 <table>
     <thead>
@@ -895,8 +891,6 @@ stylesheet rules) this rule came from.</td>
 ---
 
 ### <a name="csscomputedstyleproperty"></a> CSSComputedStyleProperty `object`
-
-
 
 <table>
     <thead>

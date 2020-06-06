@@ -93,4 +93,3 @@ You can use this to complete the event at a later time.
 Set the ResultText property.
 
 > public HRESULT [put_ResultText](#put_resulttext)(LPCWSTR resultText)
-

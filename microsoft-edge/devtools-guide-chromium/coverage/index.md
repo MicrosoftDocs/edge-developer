@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools   
-
-
 
 The Coverage tab in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.  
 
@@ -88,10 +82,6 @@ The table in the **Coverage** tab shows you what resources were analyzed, and ho
 *   The **Total Bytes** column is the total size of the resource in bytes.  
 *   The **Unused Bytes** column is the number of bytes that were not used.  
 *   The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes.  
-
- 
-
-
 
 <!-- image links -->  
 

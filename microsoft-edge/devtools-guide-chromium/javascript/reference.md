@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-
-
 # JavaScript Debugging Reference   
-
-
 
 Discover new debugging workflows with this comprehensive reference of Microsoft Edge DevTools debugging features.  
 
@@ -323,8 +315,6 @@ To edit a script:
 See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable].  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Accessibility Reference   
-
-
 
 This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.  It is intended for web developers who:  
 
@@ -185,8 +179,6 @@ The Color Picker helps you verify that your text meets recommended contrast rati
     > ![The Contrast Ratio Line in the visual picker][ImageContrastRatioLine]  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

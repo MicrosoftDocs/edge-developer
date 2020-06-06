@@ -34,7 +34,6 @@ Message type  | &nbsp;   |
 [**info()**](https://developer.mozilla.org/docs/Web/API/Console/info) | Useful, but non-critical information
 [**log()**](https://developer.mozilla.org/docs/Web/API/Console/log) and [**debug()**](https://developer.mozilla.org/docs/Web/API/Console/log) | General debugging (without generating a system alert icon in the console)
 
-   
 You can group and filter these along with the other messages generated from Microsoft Edge from the  Console panel. All custom message methods require a string (message) parameter and optional format substitution parameters. Microsoft Edge supports the following formatting options:
 
 Format parameter | &nbsp;

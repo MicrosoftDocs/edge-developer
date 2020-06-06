@@ -78,8 +78,6 @@ See the [WebVR API reference](https://msdn.microsoft.com/library/mt806281(v=vs.8
  > [!NOTE] 
  > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.
 
-
-
 ## Updated features
 
 ### Content Security Policy (Level 2)

@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Get Started With Viewing And Changing CSS   
-
-
 
 Complete these interactive tutorials to learn the basics of viewing and changing the CSS for a page using Microsoft Edge DevTools.  
 
@@ -143,10 +137,6 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 > ##### Figure 7  
 > Changing the left-margin of the element  
 > ![Changing the left-margin of the element][ImageChangeMargin]  
-
- 
-
-
 
 <!-- image links -->  
 

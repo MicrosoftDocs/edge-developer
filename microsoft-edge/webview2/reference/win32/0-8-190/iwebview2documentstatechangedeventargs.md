@@ -42,4 +42,3 @@ True if the page being navigated to is a new document.
 True if the loaded content is an error page.
 
 > public HRESULT [get_IsErrorPage](#get_iserrorpage)(BOOL * isErrorPage)
-

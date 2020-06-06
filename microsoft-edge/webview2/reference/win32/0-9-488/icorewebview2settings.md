@@ -267,4 +267,3 @@ Set the IsWebMessageEnabled property.
 Set the IsZoomControlEnabled property.
 
 > public HRESULT [put_IsZoomControlEnabled](#put_iszoomcontrolenabled)(BOOL enabled)
-

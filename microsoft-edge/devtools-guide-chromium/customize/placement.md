@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)   
-
-
 
 By default DevTools is docked to the right of your viewport.  You may also dock to bottom, dock to left, or undock the DevTools to a separate window.  
 
@@ -63,10 +57,6 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
     > ##### Figure 6  
     > The undock command  
     > ![The undock command][ImageUndockCommand]  
-
- 
-
-
 
 <!-- image links -->  
 

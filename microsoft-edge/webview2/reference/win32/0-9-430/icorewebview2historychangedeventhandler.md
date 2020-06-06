@@ -35,4 +35,3 @@ The caller implements this interface to receive the HistoryChanged event.
 There are no event args and the args parameter will be null.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) * webview,IUnknown * args)
-

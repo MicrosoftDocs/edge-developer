@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
 # CSS Reference   
-
-
 
 Discover new workflows in this comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.  
 
@@ -448,10 +440,6 @@ When you open the **Color Picker**, the **Eyedropper** ![Eyedropper][ImageEyedro
     > Using the Eyedropper  
     > ![Using the Eyedropper][ImageUsingEyedropper]  
     
- 
-
-
-
 <!-- image links -->  
 
 [ImageAddBackgroundColorIcon]: /microsoft-edge/devtools-guide-chromium/media/add-background-color-icon.msft.png  

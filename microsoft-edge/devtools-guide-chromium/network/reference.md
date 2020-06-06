@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
 # Network Analysis Reference   
-
-
 
 Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.  
 
@@ -625,8 +617,6 @@ Deselect the **Show Overview** checkbox to hide it.
 > ![The Show Overview checkbox][ImageHideOverviewCheckbox]  
 
 <!-->   -->  
-
-  
 
 <!-- image links -->  
 

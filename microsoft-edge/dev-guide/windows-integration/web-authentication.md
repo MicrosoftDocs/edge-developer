@@ -29,7 +29,6 @@ The following dev guide will walk you through this flow using the [WebAuthn Samp
 
 Acting as an *identity provider*, you will first need to create a Web Authentication credential for your user with the navigator.credentials.**create** method. Before you register that credential to the user on your server, you will need to confirm the identity of the user. This can be done by sending the user an email confirmation or asking them to use their traditional login method.
 
-
 The `create` method takes the following parameters:
 
  - **relying party information**
@@ -244,12 +243,10 @@ A few things to note when using the Windows Hello authenticator:
     - Windows Hello hardware authenticator: `08987058-CADC-4B81-B6E1-30DE50DCBE96`
     - Windows Hello VBS hardware authenticator: `9DDD1817-AF5A-4672-A2B9-3E3DD95000A9`
 
-
 ### API surface
 - Microsoft Edge has a complete implementation of the Candidate Recommendation version of the core Web Authentication specification.
 - The [AppID extension](https://w3c.github.io/webauthn/#sctn-appid-extension) is supported. 
 - No other extensions are supported.
-
 
 ## Demos
 

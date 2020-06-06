@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)   
-
-
 
 The [print media query][MDNUsingMediaQueries] controls how your page looks when printed.  To force your page into print preview mode:  
 
@@ -45,10 +39,6 @@ The [print media query][MDNUsingMediaQueries] controls how your page looks when 
     > ![Print preview mode][ImagePrintMode]  
     
 From here, you can view and change your CSS, like any other web page.  See [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].  
-
- 
-
-
 
 <!-- image links -->  
 

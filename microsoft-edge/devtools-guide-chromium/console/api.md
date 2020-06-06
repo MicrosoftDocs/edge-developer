@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Console API Reference   
-
-  
 
 Use the Console API methods to write messages to the Console from your JavaScript.  See [Get Started With Logging Messages To The Console][DevtoolsConsoleLog] for an interactive introduction to the topic.  See [Console Utilities API Reference] [DevtoolConsoleUtilities] if you are looking for the convenience methods like `debug()` or `monitorEvents()` which are only available from the Console.  
 
@@ -351,10 +345,6 @@ console.warn('warn');
 > ##### Figure 13  
 > The result of the `console.warn()` example  
 > ![The result of the console.warn() example][ImageWarn]  
-
-   
-
-  
 
 <!-- image links -->  
 

@@ -24,7 +24,6 @@ This property is read-only.
 #### Property value
 Type: **DOMString**
 
-
 ```js
 var referer = NavigationEventWithReferrer.referer;
 ```

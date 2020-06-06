@@ -48,7 +48,6 @@ Now you're ready to deploy your app for testing using either *PWA Builder* or *V
 
 4. Step through the wizard to complete the installation process. Once installed. you'll be able to see and launch your PWA from the Xbox One dashboard.
 
-
 ### Option 2: Visual Studio
 
 The free, full-featured [Visual Studio Community 2017](https://visualstudio.microsoft.com/vs/community/) includes Windows 10 developer tools, universal app templates, a code editor, a powerful debugger, Windows Mobile emulators, rich language support and much more—all ready to use in production. The [*Professional* and *Enterprise*](https://visualstudio.microsoft.com/vs/compare/) versions provide even more features.
@@ -145,8 +144,6 @@ If your app is a media app, it is important that your app responds to the media 
 ### PlayReady content encryption
 
 At the time of this writing, [`cbcs` encoding support is limited](/playready/packaging/content-encryption-modes#support-for-the-cbcs-aes-cbc-encryption-scheme) to the PlayReady client for XBox One (version 1709 or higher). If the media for your PWA only supports *cbcs* encryption, be aware that your app's functionality will be likely be limited (or completely unavailable) on Windows.
-
-
 
 ## See also
 [South Ridge Video](https://github.com/Microsoft/uwp-experiences/tree/master/apps/video): A sample video app for Xbox built with React.js and hosted on a web server.

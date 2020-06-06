@@ -60,4 +60,3 @@ Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2En
 Creates a new instance of CoreWebView2CreationProperties with default data for all properties.
 
 > public  [CoreWebView2CreationProperties](#corewebview2creationproperties)()
-

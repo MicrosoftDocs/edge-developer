@@ -30,10 +30,8 @@ To see the Payment Request API in action, as well as get an overview of how to u
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Using-the-Payments-Request-API/player]
 
-
 > [!NOTE]
 > The Payment Request API is supported in Microsoft Edge build 14992+.
-
 
 ## Creating a Payment Request 
 Web pages create a **Payment Request** typically when the user initiates a payment process by clicking a "buy" button.  The **Payment Request** [constructor](https://msdn.microsoft.com/library/mt790440) includes methodData, details, and options. 
@@ -69,7 +67,6 @@ Each [`detail`](https://msdn.microsoft.com/library/mt790440#PaymentRequest_param
 > [!NOTE]
 > The **Payment Request** does not calculate the sum or total of these amounts.  It is the responsibility of the merchant's website to ensure that the line items total correctly.   
 
-
 ![Subtotal, shipping, taxes, and total details](./../media/show_details.png)
 
 ```js
@@ -95,7 +92,6 @@ The browser will render the labels as you define them and automatically render t
 The [`options`](https://msdn.microsoft.com/library/mt790440#PaymentRequest_params) parameter defines data the web page wants returned from the **Payment Request**. This also defines the data that needs to be collected, including if shipping, email address, and/or phone number are required.
 
 ![Email address drop down](./../media/email_snippet.png)
-
 
 ```js
 var options =

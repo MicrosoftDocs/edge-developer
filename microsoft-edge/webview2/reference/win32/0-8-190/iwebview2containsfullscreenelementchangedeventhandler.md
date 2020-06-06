@@ -39,4 +39,3 @@ Called to provide the implementer with the event args for the corresponding even
 > public HRESULT [Invoke](#invoke)([IWebView2WebView5](IWebView2WebView5.md) * webview,IUnknown * args)
 
 There are no event args and the args parameter will be null.
-

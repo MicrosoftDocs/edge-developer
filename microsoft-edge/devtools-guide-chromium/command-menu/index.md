@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Run Commands With The Microsoft Edge DevTools Command Menu   
-
-  
 
 The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].  You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.  
 
@@ -56,10 +50,6 @@ Delete the `>` character and type `?` to see other actions that are available fr
 > ##### Figure 4  
 > Other available actions  
 > ![Other available actions][ImageActions]  
-
- 
-
-
 
 <!-- image links -->  
 

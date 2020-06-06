@@ -18,14 +18,12 @@ The Web Notifications API allows websites to send users notifications outside th
 
 The CodePen below creates a mock Skype notification by making a [`Notification`](https://msdn.microsoft.com/library/mt710818) object with the [`title`](https://msdn.microsoft.com/library/mt710826), [`icon`](https://msdn.microsoft.com/library/mt710814), and [`body`](https://msdn.microsoft.com/library/mt710811) options set:
 
-
 <iframe height='295' scrolling='no' title='Web notifications' src='//codepen.io/MicrosoftEdgeDocumentation/embed/RGbxWW/?height=295&theme-id=23761&default-tab=result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/MicrosoftEdgeDocumentation/pen/RGbxWW/'>Web notifications</a> by Microsoft Edge Docs (<a href='https://codepen.io/MicrosoftEdgeDocumentation'>@MicrosoftEdgeDocumentation</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 It is strongly recommended that an `icon` be specified for each notification. This not only improves a notification from a UI point of view, but also helps alert users of where the notification is being sent from.
 
 Watch the video below for a walkthrough on creating a web notification and to see it's behavior within Windows 10!
-
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Implementing-Web-Notifications/player]
 
@@ -66,9 +64,6 @@ Method | Description
 ## Notification permissions
 
 Microsoft Edge allows users to manage notifications permissions for each specific website domain. It's up to the user to either select "Yes" or "No" when asked by the domain to let it show notifications. The [`requestPermission`](https://msdn.microsoft.com/library/mt710824) method is used to signal the permission state as either `granted`, `denied`, or `default`. A value of `default` indicates that the user hasn't made a decision, which is seen as the equivalent of `denied`.
-
-
-
 
 ## API reference
 

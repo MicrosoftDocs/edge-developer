@@ -39,8 +39,6 @@ browser_specific_settings | | Indicates the extension's preferred state in the b
 [icons](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/icons) | | |
 [manifest_version](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/manifest_version) | | Currently ignored in Microsoft Edge.
 
-
-
 ## browser_action or page_action keys
 
 You can only include one of the following keys (or none):
@@ -68,7 +66,6 @@ short_name  | | |
 
 ### Supported permissions
 The following [permissions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions) are supported:
-
 
 | Permission         | Description                                                                                                                                                                                                                                                                         |
 |:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

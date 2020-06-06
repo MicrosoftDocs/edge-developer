@@ -20,13 +20,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Debug Background Services With Microsoft Edge DevTools   
-
-
 
 The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the JavaScript APIs that enables your website to send and receive updates even when a user does not have your website open.  
 A background service is functionally similar to a [background process][WikiBackgroundProcess].  
@@ -148,10 +142,6 @@ To display a push notification to a user, a **service worker** must first use th
     > Viewing the details of an event in the Push Messaging pane  
     > ![Viewing the details of an event in the Push Messaging pane][PushDetails2]  
     
- 
-
-
-
 <!-- image links -->  
 
 [ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  

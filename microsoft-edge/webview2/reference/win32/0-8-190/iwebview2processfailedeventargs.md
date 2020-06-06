@@ -35,4 +35,3 @@ Event args for the ProcessFailed event.
 The kind of process failure that has occurred.
 
 > public HRESULT [get_ProcessFailedKind](#get_processfailedkind)(WEBVIEW2_PROCESS_FAILED_KIND * processFailedKind)
-

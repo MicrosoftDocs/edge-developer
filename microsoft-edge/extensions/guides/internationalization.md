@@ -17,7 +17,6 @@ In order to make your extension accessible to a variety of different people, it 
 
 For more information on internationalizing your extension, check out MDN's [Internationalization guide](https://developer.mozilla.org/Add-ons/WebExtensions/Internationalization).
 
-
 ## Testing languages
 
 To test your language strings, you first need to set the Windows display language to the language that you want to test for.

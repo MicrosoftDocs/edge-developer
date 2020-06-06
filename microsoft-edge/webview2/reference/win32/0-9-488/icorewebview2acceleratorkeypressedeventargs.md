@@ -73,4 +73,3 @@ This will be one of the Win32 virtual key constants such as VK_RETURN or an (upp
 Sets the Handled property.
 
 > public HRESULT [put_Handled](#put_handled)(BOOL handled)
-

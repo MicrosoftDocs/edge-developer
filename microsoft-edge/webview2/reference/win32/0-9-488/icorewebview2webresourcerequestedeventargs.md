@@ -62,4 +62,3 @@ You can use the [ICoreWebView2Deferral](icorewebview2deferral.md) object to comp
 Set the Response property.
 
 > public HRESULT [put_Response](#put_response)([ICoreWebView2WebResourceResponse](icorewebview2webresourceresponse.md) * response)
-

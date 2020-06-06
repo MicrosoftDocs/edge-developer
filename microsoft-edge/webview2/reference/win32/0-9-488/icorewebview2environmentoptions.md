@@ -86,4 +86,3 @@ Set the Language property.
 Set the TargetCompatibleBrowserVersion.
 
 > public HRESULT [put_TargetCompatibleBrowserVersion](#put_targetcompatiblebrowserversion)(LPCWSTR value)
-

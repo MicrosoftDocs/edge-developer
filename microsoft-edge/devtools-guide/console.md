@@ -55,5 +55,3 @@ Clear the Console of all messages                 | **Ctrl** + **L**
 Filter logs (set focus to search box)             | **Ctrl** + **F**           
 Accept auto-completion suggestion (when in focus) | **Enter** or **Tab**       
 Previous/next auto-completion suggestion          | **Up arrow key**/**Down arrow key**   
-
-

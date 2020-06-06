@@ -46,4 +46,3 @@ The ID of the navigation.
 The error code if the navigation failed.
 
 > public CoreWebView2WebErrorStatus [WebErrorStatus](#weberrorstatus)
-

@@ -21,13 +21,7 @@ keywords:  microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Console Utilities API Reference   
-
-
 
 The Console Utilities API contains a collection of convenience commands for performing common tasks:  selecting and inspecting DOM elements, displaying data in readable format, stopping and starting the profiler, and monitoring DOM events.  
 
@@ -559,8 +553,6 @@ values(object);
 ```  
 
 <!--   -->  
-
-
 
 <!-- image links -->  
 

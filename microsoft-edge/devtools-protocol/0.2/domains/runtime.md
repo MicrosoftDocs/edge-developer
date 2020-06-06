@@ -429,7 +429,6 @@ Issued when exception was thrown and unhandled.
 
 ### consoleAPICalled
 
-
 <table>
     <thead>
         <tr>

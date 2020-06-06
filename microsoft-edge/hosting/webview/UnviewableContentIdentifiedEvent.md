@@ -34,7 +34,6 @@ The Uniform Resource Identifier (URI) of the page in the [webview](../webview.md
 
 This property is read-only.
 
-
 ```js
 var referer = NavigationEventWithReferrer.referer;
 ```

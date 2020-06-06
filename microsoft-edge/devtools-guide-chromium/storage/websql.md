@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # View Web SQL Data With Microsoft Edge DevTools   
-
-
 
 > [!WARNING]
 > The Web SQL specification is [not being maintained][W3CWebSQLStatus].  
@@ -98,10 +92,6 @@ DevTools does not update tables in real-time.  To update the data in a table:
     > ##### Figure 7  
     > The **Clear Site Data** button  
     > ![The Clear Site Data button][ImageClearWebSQL]  
-
- 
-
-
 
 <!-- image links -->  
 

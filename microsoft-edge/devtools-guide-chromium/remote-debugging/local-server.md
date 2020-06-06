@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Access Local Servers   
-
-
-
 
 Host a site on a development machine web server, then access the content from an Android device.  
 
@@ -111,8 +104,6 @@ If your web server is running off of a non-standard port, remember to specify th
 > To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.  
 
 <!--  -->  
-
-
 
 <!-- image links -->  
 

@@ -75,8 +75,6 @@ A helper function to convert a pointerId received from the system into an [ICore
 
 parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The COREWEBVIEW2_MATRIX_4X4 is the transform from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
 
-
-
 #### get_Cursor 
 
 The current cursor that WebView thinks it should be.
@@ -327,4 +325,3 @@ COREWEBVIEW2_POINTER_EVENT_KIND_UP            | Corresponds to WM_POINTERUP.
 COREWEBVIEW2_POINTER_EVENT_KIND_UPDATE            | Corresponds to WM_POINTERUPDATE.
 
 The values of this enum align with the matching WM_POINTER* window messages.
-

@@ -78,4 +78,3 @@ The uri of the requested navigation.
 Set the Cancel property.
 
 > public HRESULT [put_Cancel](#put_cancel)(BOOL cancel)
-

@@ -37,4 +37,3 @@ You can QueryInterface for this interface from the object that implements [IWebV
 Stop all navigations and pending resource fetches.
 
 > public HRESULT [Stop](#stop)()
-

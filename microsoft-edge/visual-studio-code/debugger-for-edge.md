@@ -82,7 +82,6 @@ Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDebug2NewIssue]
 
 To help make the Elements for Microsoft Edge VS Code extension better, your contributions are welcome!  Find everything you need to get started in [GitHub repo][GithubMicrosoftVscodeEdgeDebug2] of the extension.  
 
-
 <!-- image links -->  
 
 <!--[ImageGifDebuggerEdge]: ./media/debugger-for-edge.gif "Debugger for Edge VS Code extension in action"  -->  

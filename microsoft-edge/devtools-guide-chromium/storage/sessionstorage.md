@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # View And Edit Session Storage With Microsoft Edge DevTools   
-
-  
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [`sessionStorage`][MDNSessionStorage] key-value pairs.  
 
@@ -103,10 +97,6 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
     > ##### Figure 8  
     > Interacting with `sessionStorage` from the **Console**  
     > ![Interacting with sessionStorage from the Console][ImageSessionStorageConsole]  
-
-   
-
-  
 
 <!-- image links -->  
 

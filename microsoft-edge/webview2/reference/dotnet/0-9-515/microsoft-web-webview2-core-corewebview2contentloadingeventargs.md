@@ -37,4 +37,3 @@ True if the loaded content is an error page.
 The ID of the navigation.
 
 > public ulong [NavigationId](#navigationid)
-

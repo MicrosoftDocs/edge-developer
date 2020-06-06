@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Map Preprocessed Code to Source Code   
-
-
-
 
 Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your source code to your compiled code.  
 
@@ -113,8 +106,6 @@ If you expand the **_Sources_** sub-panel you now see a new file with the custom
 > ![Working with sourceURL][ImageCoffeeScript]  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

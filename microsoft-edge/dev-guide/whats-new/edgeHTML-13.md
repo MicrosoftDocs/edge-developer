@@ -56,7 +56,6 @@ The following features introduced in EdgeHTML 13 improve user input:
 ### Pointer Lock
 Microsoft Edge now supports the Pointer Lock API (previously called Mouse Lock) for access to raw mouse movement, locking the target of mouse events to a single element, eliminating limits of how far mouse movement can go in a single direction, and removing the cursor from view. 
 
-
 ## New APIs in EdgeHTML 13""""
 
 Here's the full list of new APIs in EdgeHTML 13. They are listed in the format of **[interface name].[api name]**.

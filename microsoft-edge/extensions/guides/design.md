@@ -89,7 +89,6 @@ You should specify the following icon sizes.
 | `128px` | Icon for high resolution displays. |  
 | `176px` | Icon for even higher resolution displays. |  
 
-
 ```json
 "icons": {
     "48": "images/icon_48.png",
@@ -113,7 +112,6 @@ Once your extension is ready for packaging, you must have three additional icon 
 | 44px | Used in the Windows UI \(**App List**, **Settings** \> **System** \> **Apps & features**\). |  
 | 50px | Packaging requirement \(not visible anywhere\). |  
 | 150px | Used as the icon for the Microsoft Store. |  
-
 
 See either the [manual packaging guide][ExtensionsGuidesPackagingCreatingTestingPackagesAssetsFolder] or the [ManifoldJS packaging guide][ExtensionsGuidesPackagingUsingManifoldjsPackagePackagingManifoldjs] to determine where these icons is placed.  This depends upon which packaging method you choose.  
 

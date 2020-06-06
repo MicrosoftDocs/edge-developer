@@ -17,7 +17,6 @@ Here are the changes shipped with EdgeHTML 12 in the initial release of [Windows
 
 Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_12](https://aka.ms/devguide_edgehtml_12).
 
-
 ## New Features
 
 ### Content Security Policy 1.0
@@ -67,7 +66,6 @@ Microsoft Edge introduces support for the [W3C Web Audio API](https://go.microso
 
 ### Web Driver 
 The [W3C WebDriver API](https://w3.org/TR/webdriver/) is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser. WebDriver enables developers to create automated tests that simulate user interaction. This is different from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser doesn't, and it can more accurately simulate user events or OS-level events. WebDriver can also manage testing across multiple windows, tabs and webpages in a single test session.  For more information on how to get started with WebDriver for Microsoft Edge, check out [WebDriver](https://docs.microsoft.com/microsoft-edge/dev-guide/tools/webdriver). 
-
 
 ## New APIs in EdgeHTML 12
 

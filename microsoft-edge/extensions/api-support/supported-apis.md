@@ -19,7 +19,6 @@ The following is a detailed list of API members that are supported. Development 
 >  - For Microsoft Edge, all extension APIs are under the `browser` namespace, e.g. `browser.browserAction.disable()`.
 >  - Microsoft Edge extension APIs use callbacks, not promises.
 
-
 ## Overarching issues
 
 The following known issues span across the extension platform and will be fixed in the near future:
@@ -29,7 +28,6 @@ The following known issues span across the extension platform and will be fixed 
 - Shared cookies are supported, however the extension background script will not have access to session cookies set in the tab before the extension is enabled. This issue does not affect persistent cookies.
 - If only unsupported permissions are specified for an extension, i.e `activeTab`, attempting to sideload the extension will result in the extension being uninstalled with the following message displayed: "Something went wrong with your extensions, so we had to reinstall them. You'll need to turn them on again."
 - Triggering a download via a hidden anchor tag will fail from background scripts. This should be done from an extension page instead.
-
 
 ## bookmarks
 
@@ -44,7 +42,6 @@ The following `bookmarks` APIs are supported:
 | [bookmarks.move](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/move) | | |
 | [bookmarks.removeTree](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/removeTree) | | |
 | [bookmarks.update](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/bookmarks/update)            | | |
-
 
 ## browserAction
 
@@ -93,8 +90,6 @@ The following `cookies` APIs are supported:
 | [cookies.remove](https://developer.mozilla.org/Add-ons/WebExtensions/API/cookies/remove) |  | |
 | [cookies.set](https://developer.mozilla.org/Add-ons/WebExtensions/API/cookies/set)    |  | |
 
-
-
 ## extension
 
 The following `extension` APIs are supported:
@@ -107,8 +102,6 @@ The following `extension` APIs are supported:
 [extension.getViews](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/getViews) | | |
 [extension.isAllowedIncognitoAccess](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/isAllowedIncognitoAccess) | | | 
 [extension.inIncognitoContext](https://developer.mozilla.org/Add-ons/WebExtensions/API/extension/inIncognitoContext) | | | 
-
-
 
 ## i18n
 
@@ -165,8 +158,6 @@ API | Known issues | Chrome incompatibilities
 [pageAction.setPopup](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setPopup) | | |
 [pageAction.setTitle](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/setTitle) | | |
 [pageAction.show](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/pageAction/show) | | |
-
-
 
 ## runtime
 
@@ -238,11 +229,9 @@ API | Known issues | Chrome incompatibilities
 [tabs.Tab](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/Tab) | `audible`, `mutedInfo`, `inPrivate`, `width`, and `height` properties are not yet supported. | `openerTabId`, `selected`, and `highlighted` properties are not supported. |
 [tabs.update](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/update) | `pinned` and `muted` are not yet supported. | `highlighted` and `selected` are not supported. |
 
-
 ## webNavigation
 
 The following `webNavigation` APIs are supported:
-
 
 | API                                                                                                                                                           | Known issues                                | Chrome incompatibilities                                                                                                    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
@@ -282,7 +271,6 @@ API | Known issues | Chrome incompatibilities
 ## windows
 
 The following `windows` APIs are supported:
-
 
 | API                                                                                                                               | Known issues                                                   | Chrome incompatibilities                                                                                        |
 |:----------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|

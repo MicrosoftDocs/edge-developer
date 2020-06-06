@@ -28,4 +28,3 @@ var request = args.request;
 
 #### Property value
 Type: **any**
-

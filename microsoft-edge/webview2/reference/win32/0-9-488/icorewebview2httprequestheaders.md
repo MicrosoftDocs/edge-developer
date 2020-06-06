@@ -69,4 +69,3 @@ Removes header that matches the name.
 Adds or updates header that matches the name.
 
 > public HRESULT [SetHeader](#setheader)(LPCWSTR name, LPCWSTR value)
-

@@ -23,7 +23,6 @@ The Microsoft Edge rendering engine (EdgeHTML) builds an accessible projection o
    * [Working draft](https://w3.org/TR/html-aam-1.0/) - stable version of the specification
    * [Editor's draft](https://w3c.github.io/html-aam/) - work in progress. Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
 
-
 2. The [Core Accessibility API Mappings](https://w3.org/TR/core-aam-1.1/) specification defines general principles for building the accessibility tree and mapping ARIA elements and attributes to UI Automation objects.
    * [Working draft](https://w3.org/TR/core-aam-1.1/) - stable version of the specification
    * [Editor's draft](https://w3c.github.io/core-aam/) - work in progress. Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.  

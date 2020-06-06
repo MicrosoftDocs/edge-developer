@@ -65,4 +65,3 @@ Gets the header values matching the name.
 Gets an iterator over the collection of entire response headers.
 
 > public HRESULT [GetIterator](#getiterator)([ICoreWebView2HttpHeadersCollectionIterator](ICoreWebView2HttpHeadersCollectionIterator.md) ** iterator)
-

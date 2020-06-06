@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Console Reference   
-
-
 
 This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, see [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
@@ -253,10 +247,6 @@ You may use any of the following workflows to clear the Console:
 *   Type `clear()` in the Console and then press `Enter`.  
 *   Call `console.clear()` from the JavaScript for your webpage.  
 *   Press `Control`+`L` while the Console is in focus.  
-
- 
-
-
 
 <!-- image links -->  
 

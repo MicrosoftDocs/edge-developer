@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
 # What's New In DevTools (Microsoft Edge 81)   
-
-
 
 ## Announcements from the Microsoft Edge DevTools team  
 
@@ -196,8 +188,6 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 [Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
 
-
-
 ## Announcements from the Chromium project  
 
 The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.  
@@ -310,8 +300,6 @@ Open [Settings][Settings] and then disable **Preferences** > **Sources** > **All
 
 ## Feedback   
 
-
-
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  
@@ -333,8 +321,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <<../../_shared/canary.md>>
 
 <<../../_shared/discover.md>> -->
-
-
 
 <!-- image links -->  
 
@@ -359,7 +345,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageSettings]: ../../images/2020/01/settings.msft.png "Figure 19: Disabling Allow scrolling past end of file in Settings"
 [ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Figure 20: Scrolling past the end of a file is now disabled in the Sources panel"
 [ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Figure 21: The **Feedback** icon in the Microsoft Edge DevTools"
-
 
 <!-- links -->  
 

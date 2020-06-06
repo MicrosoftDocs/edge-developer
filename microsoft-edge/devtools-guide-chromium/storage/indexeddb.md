@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # View And Change IndexedDB Data With Microsoft Edge DevTools   
-
-  
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, see [Using IndexedDB][MDNUsingIndexedDB].  
 
@@ -149,10 +143,6 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
     > ##### Figure 13  
     > The **Clear storage** pane
     > ![The Clear storage pane][ImageIndexedDBClearStorage]  
-
- 
-
-
 
 <!-- image links -->  
 

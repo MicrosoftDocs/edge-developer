@@ -66,4 +66,3 @@ Initializes a new instance of the CoreWebView2EnvironmentOptions class.
 * `language` The default language that WebView will run with. 
 
 * `targetCompatibleBrowserVersion` The version of the Edge WebView2 Runtime binaries required to be compatible with the calling application.
-

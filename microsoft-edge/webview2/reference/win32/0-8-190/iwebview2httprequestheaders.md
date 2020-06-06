@@ -65,4 +65,3 @@ Removes header that matches the name.
 Gets an iterator over the collection of request headers.
 
 > public HRESULT [GetIterator](#getiterator)([IWebView2HttpHeadersCollectionIterator](IWebView2HttpHeadersCollectionIterator.md) ** iterator)
-

@@ -26,5 +26,4 @@ Before learning about how to use the kit, make sure you meet the following prere
 - You must [enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development).
 - You must have a [packaged](../packaging.md) extension.
 
-
 If you meet the prerequisites, see the [Windows App Certification Kit](https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit#validate-your-windows-app-using-the-windows-app-certification-kit-interactively) documentation for info on how to use the Windows App Certification Kit either interactively or with the command line to test your extension.

@@ -47,4 +47,3 @@ This matches the format of the GetWebView2BrowserVersionInfo API. Channel names 
             m_mainWindow, version_info.get(), L"Browser Version Info After WebView Creation",
             MB_OK);
 ```
-

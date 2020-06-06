@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Memory Terminology   
-
-
 
 This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.  
 
@@ -164,7 +158,6 @@ When there are a small number of properties, the properties are stored internall
 
 **Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access][V8FastProperties].  
 
-
 ### Object groups  
 
 Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, thus forming a connected graph.  Note that native objects are not represented in the JavaScript heap  —  that is why native objects have zero size. Instead, wrapper objects are created.  
@@ -172,8 +165,6 @@ Each **native objects** group is made up of objects that hold mutual references 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

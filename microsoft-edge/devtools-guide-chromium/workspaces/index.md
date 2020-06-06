@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
 # Edit Files With Workspaces   
-
-
 
 > [!NOTE]
 > The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
@@ -143,7 +135,6 @@ Complete this tutorial to get hands-on experience with Workspaces.
     > Viewing `styles.css` in a text editor  
     > ![Viewing styles.css in a text editor][ImageStylesFuchsia]  
 
-
 1.  Click the **Elements** tab.  
 1.  Change the value of the `color` property of the `<h1>` element to your favorite color.  
     Remember that you need to click the `<h1>` element in the **DOM Tree** in order to see the CSS rules applied to it in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.  
@@ -252,8 +243,6 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
  <!--  -->
-
-
 
 <!-- 
 If you have more feedback on these topics or anything else, please use any of the channels below:

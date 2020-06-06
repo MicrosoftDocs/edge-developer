@@ -39,7 +39,6 @@ Manifest parsing error: `"background"` must define value for `"persistent"` prop
 Manifest parsing error: Only one `"browser_action"` or `"page_action"` can be defined. | An extension cannot define both a page action and a browser action at the same time. To resolve the issue, remove either one of the definitions.
 Unspecified error: `<error>` | Generic catch-all error message. `<error>` will be replaced by the specified error.
 
-
 ## 2. I don't see the "Load extension" button
 Until extensions are available via the Microsoft Store, this button *should* be visible by default. If you open the "More" (...) menu, select the "Extensions" menu item and don't see the button, follow these steps:
 

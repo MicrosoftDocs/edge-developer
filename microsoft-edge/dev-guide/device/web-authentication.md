@@ -175,7 +175,6 @@ var fidoAuthenticator = {
 > [!NOTE]
 > When trying out the Web Authentication API with Windows Hello in Microsoft Edge, we recommend using the Webauthn.js polyfill as shown above to avoid having to account for the discrepancies listed here. We'll update this polyfill for every major published version of the specification.
 
-
 The current Microsoft Edge implementation is based on an earlier draft of the Web Authentication specification and is likely to change in future builds and as the spec evolves. The current differences include:
 
 - Microsoft Edge APIs are MS- prefixed.
@@ -243,8 +242,6 @@ interface Credential { // MSCredentialSpec
 dictionary WebAuthnExtensions { // Not supported
 };
 ```
-
-
 
 ## API Reference
 

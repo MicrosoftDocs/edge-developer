@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # How to Use Allocation Instrumentation on Timeline  
-
-
 
 Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.  
 
@@ -85,8 +79,6 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 You are able to view memory allocation by JavaScript function.  See [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] for more information.  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

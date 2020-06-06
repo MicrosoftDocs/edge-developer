@@ -36,7 +36,6 @@ MSWebViewAsyncOperation.removeEventListener("complete", handler);
 |**Bubbles**     |No |   
 |**Cancelable**  |No |        
 
-
 ### error
 
 Indicates that there was an error with the operation.
@@ -57,7 +56,6 @@ MSWebViewAsyncOperation.removeEventListener("error", handler);
 |**Synchronous** |Yes |    
 |**Bubbles**     |No |   
 |**Cancelable**  |No |            
-
 
 ## Methods
 

@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Network Issues Guide   
-
-
-
 
 This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.  
 
@@ -109,8 +102,6 @@ Do you have a network issue that should be added to this guide?
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  
 
 <!--   -->  
-
-
 
 <!-- image links -->  
 

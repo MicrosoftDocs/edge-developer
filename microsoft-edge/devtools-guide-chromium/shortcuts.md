@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Microsoft Edge DevTools Keyboard Shortcuts   
-
-
-
-
 
 This page is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
@@ -155,10 +147,6 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Force a multi-line entry. Note that DevTools should detect multi-line scenarios by default, so this shortcut is now usually unnecessary | `Shift`+`Enter` | `Command`+`Return` |  
 | Run | `Enter` | `Return` |  
 | Expand all sub-properties of an object that are logged to the Console | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] |  
-
- 
-
-
 
 <!-- image links -->  
 

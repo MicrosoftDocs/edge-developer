@@ -66,4 +66,3 @@ Obtain a CoreWebView2Deferral object and put the event into a deferred state.
 > public CoreWebView2Deferral [GetDeferral](#getdeferral)()
 
 You can use the CoreWebView2Deferral object to complete the window open request at a later time. While this event is deferred the opener window will be returned a WindowProxy to an unnavigated window, which will navigate when the deferral is complete.
-

@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # View Application Cache Data With Microsoft Edge DevTools   
-
-
 
 > [!WARNING]
 > The Application Cache API is [being removed from the web platform][HTMLStandardOfflineWebApplications].  
@@ -70,8 +64,6 @@ At the bottom of the table there are status icons indicating your network connec
 | `UPDATEREADY` |  A new version of the cache is available. |  
 
 <!--   -->  
-
-
 
 <!-- image links -->  
 

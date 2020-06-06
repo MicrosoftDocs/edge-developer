@@ -420,4 +420,3 @@ Stop all navigations and pending resource fetches.
 > public void [Stop](#stop)()
 
 Does not stop scripts.
-

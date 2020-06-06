@@ -35,4 +35,3 @@ Event args for the WebResourceRequested event.
 The web resource request contexts.
 
 > public HRESULT [get_ResourceContext](#get_resourcecontext)(WEBVIEW2_WEB_RESOURCE_CONTEXT * context)
-

@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
 # Speed Up JavaScript Runtime   
-
-
-
 
 Identify expensive functions using the **Memory** panel.  
 
@@ -142,8 +135,6 @@ Hover over a function to display the name and timing data.  The following inform
 > ![Viewing functions details in chart][ImageFunctionsDetails]  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

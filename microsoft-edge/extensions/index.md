@@ -19,7 +19,6 @@ Microsoft Edge (EdgeHTML) supports a new HTML, JavaScript and CSS based extensio
 
 To get an overview of the end to end journey of creating a Microsoft Edge (EdgeHTML) extension from development to publishing, check out the [Getting started guide](./getting-started.md)!
 
-
 ## Popular articles
 
 <table>

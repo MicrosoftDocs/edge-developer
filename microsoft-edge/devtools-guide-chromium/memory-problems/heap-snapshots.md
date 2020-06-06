@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # How to Record Heap Snapshots   
-
-
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.  
 
@@ -252,8 +246,6 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
 <!--## Feedback   -->  
-
-
 
 <!-- image links -->  
 

@@ -18,7 +18,6 @@ Whether you're currently working on a Microsoft Edge extension or have already p
 ## Get a direct link to your extension in the Microsoft Store
 In the Windows Dev Center dashboard, you can find a direct link to your extension in the Microsoft Store. This link can be useful for advertising and sharing out your extension.
 
-
 After logging in to the Windows Dev Center and navigating to your extension through the dashboard, on the App identity page you’ll find the link in the **Store protocol link** row:
 
 ![store protocol link](./media/store-link.png)

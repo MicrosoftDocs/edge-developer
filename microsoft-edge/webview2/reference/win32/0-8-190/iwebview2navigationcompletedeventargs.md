@@ -44,4 +44,3 @@ This is false for a navigation that ended up in an error page (failures due to n
 The error code if the navigation failed.
 
 > public HRESULT [get_WebErrorStatus](#get_weberrorstatus)(WEBVIEW2_WEB_ERROR_STATUS * WEBVIEW2_WEB_ERROR_STATUS)
-

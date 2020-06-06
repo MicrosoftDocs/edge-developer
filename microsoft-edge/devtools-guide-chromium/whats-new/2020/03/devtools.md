@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
 # What's New In DevTools (Microsoft Edge 83)   
-
-  
 
 Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post][WindowsBlogStableRelease] for more info.
 
@@ -270,8 +262,6 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 ## Feedback   
 
-  
-
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  
@@ -292,8 +282,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <<../../_shared/canary.md>>
 
 <<../../_shared/discover.md>> -->
-
-  
 
 <!-- image links -->  
 

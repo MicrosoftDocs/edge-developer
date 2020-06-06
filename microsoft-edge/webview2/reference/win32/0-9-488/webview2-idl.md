@@ -142,4 +142,3 @@ First we check with Root as HKLM and then HKCU. AppId is first set to the Applic
 Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 
 Channel names are beta, dev, and canary. If an override exists for the browserExecutableFolder or the channel preference, the override will be used. If there isn't an override, then the parameter passed to GetAvailableCoreWebView2BrowserVersionString is used.
-

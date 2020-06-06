@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools   
-
-
 
 If you find yourself running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [**Sources** panel][DevToolsSourcesPanel].  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
 Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
@@ -151,10 +145,6 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
 1.  Right-click the Snippet name and select **Remove**.  
-
- 
-
-
 
 <!-- image links -->  
 

@@ -35,4 +35,3 @@ The caller implements this interface to receive the NavigationStarting event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([IWebView2WebView](IWebView2WebView.md) * webview,[IWebView2NavigationStartingEventArgs](IWebView2NavigationStartingEventArgs.md) * args)
-

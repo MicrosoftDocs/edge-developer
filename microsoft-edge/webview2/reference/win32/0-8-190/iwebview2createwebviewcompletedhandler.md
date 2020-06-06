@@ -35,4 +35,3 @@ The caller implements this interface to receive the WebView created via CreateWe
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
 > public HRESULT [Invoke](#invoke)(HRESULT result,[IWebView2WebView](IWebView2WebView.md) * webView)
-

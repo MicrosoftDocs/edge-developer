@@ -79,4 +79,3 @@ The HTTP response reason phrase.
 Set the ReasonPhrase property.
 
 > public HRESULT [put_ReasonPhrase](#put_reasonphrase)(LPCWSTR reasonPhrase)
-

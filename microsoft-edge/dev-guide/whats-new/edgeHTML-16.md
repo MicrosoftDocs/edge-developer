@@ -22,10 +22,8 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 Microsoft Edge now supports the unprefixed implementation of [CSS Grid Layout](https://www.w3.org/TR/css-grid-1/). [Grid Layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) defines a two-dimensional grid-based layout system which enables more layout fluidity than possible with positioning using floats or scripts. The example below uses CSS Grid Layout to create the structure for a basic web page.
 
-
 <iframe height='303' scrolling='no' title='CSS Grid Layout' src='//codepen.io/MSEdgeDev/embed/mMQqZX/?height=303&theme-id=23761&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true'>See the Pen <a href='https://codepen.io/MSEdgeDev/pen/mMQqZX/'>CSS Grid Layout</a>by MSEdgeDev (<a href='https://codepen.io/MSEdgeDev'>@MSEdgeDev</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 
 ### CSS `object-fit` and `object-position`
 

@@ -35,4 +35,3 @@ The caller implements this interface to receive the ContentLoading event.
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([ICoreWebView2](ICoreWebView2.md) * webview,[ICoreWebView2ContentLoadingEventArgs](ICoreWebView2ContentLoadingEventArgs.md) * args)
-

@@ -35,4 +35,3 @@ Event args for the NewBrowserVersionAvailable event.
 The browser version info of the current [ICoreWebView2Environment](ICoreWebView2Environment.md).
 
 > public HRESULT [get_NewVersion](#get_newversion)(LPWSTR * newVersion)
-

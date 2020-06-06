@@ -48,4 +48,3 @@ The ID of the navigation.
 The error code if the navigation failed.
 
 > public HRESULT [get_WebErrorStatus](#get_weberrorstatus)(COREWEBVIEW2_WEB_ERROR_STATUS * COREWEBVIEW2_WEB_ERROR_STATUS)
-

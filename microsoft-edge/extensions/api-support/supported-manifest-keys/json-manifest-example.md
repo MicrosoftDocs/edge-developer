@@ -63,6 +63,3 @@ The following snippet provides an example of a Microsoft Edge JSON manifest file
 
 } 
 ```
-
-
-

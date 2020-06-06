@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
 # Inspect Network Activity In Microsoft Edge DevTools   
-
-
 
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.  
@@ -298,7 +292,6 @@ The **Filter** text box supports many different types of filtering.
 
     See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.  
     
-    
 1.  Clear the **Filter** text box of any text.  
 
 ### Filter by resource type   
@@ -360,16 +353,7 @@ How does a page look and behave when some of the page resources are not availabl
 
 Congratulations, you have completed the tutorial.  You now know how to use the Network panel in the Microsoft Edge DevTools!
 
-
-
-
-
-
 Check out the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.  
-
- 
-
-
 
 <!-- image links -->  
 
@@ -417,7 +401,6 @@ Check out the [Network Reference][DevtoolsNetworkReference] to discover more Dev
 [ImagesTutorialBlockedStyles]: /microsoft-edge/devtools-guide-chromium/media/network-glitch-network-cli-block-main-css.msft.png "Figure 32: main.css has been blocked"  
 
 <!-- links -->  
-
 
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
 

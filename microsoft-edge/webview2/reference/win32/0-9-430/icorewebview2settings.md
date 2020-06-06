@@ -235,4 +235,3 @@ Defaults to TRUE. When disabled, user will not be able to zoom using ctrl+/- or 
 Set the IsZoomControlEnabled property.
 
 > public HRESULT [put_IsZoomControlEnabled](#put_iszoomcontrolenabled)(BOOL enabled)
-

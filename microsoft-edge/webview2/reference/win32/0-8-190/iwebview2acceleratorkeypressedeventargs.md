@@ -71,4 +71,3 @@ Calling this will allow the browser process to continue.
 > public HRESULT [Handle](#handle)(BOOL handled)
 
 Passing TRUE will prevent the browser from performing the default action for this accelerator key. If the event handler returns without calling [Handle()](#handle), it is equivalent to calling Handle(FALSE). Calling [Handle()](#handle) after it has already been called or the event handler has returned will do nothing.
-

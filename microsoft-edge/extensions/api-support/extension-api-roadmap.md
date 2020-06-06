@@ -16,7 +16,6 @@ ms.custom: seodec18
 
 In addition to web APIs, the extension API allows extensions to achieve deeper integration with the browser host. This API gives developers access to Microsoft Edge’s browser features such as tab and window manipulation. The following table details what APIs are supported/in development for Windows 10 publicly released builds of Microsoft Edge.
 
-
 |     Class     |                                                              Description                                                              |                Status — Build Number                 |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 |   bookmarks   |                                          Used to create, organize, and manipulate bookmarks.                                          | Supported — Microsoft Edge (40) / Windows 10 (15063) |
@@ -40,4 +39,3 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 | webNavigation |                           Used to receive notifications about the status of navigation requests in-flight.                            | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |  webRequest   |        Enables use of the webRequest API to observe and analyze traffic and to intercept, block, or modify requests in-flight.        | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |    windows    |                              Interacts with the browser by creating, modifying, and rearranging windows.                              | Supported — Microsoft Edge (38) / Windows 10 (14393) |
-

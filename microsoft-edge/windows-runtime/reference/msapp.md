@@ -159,7 +159,6 @@ var retVal = MSApp.createFileFromStorageFile(storageFile);
 
 Creates an [`MSStream`](https://msdn.microsoft.com/library/hh772328) from an [`InputStream`](https://msdn.microsoft.com/library/hh772327).  
 
-
 ```javascript
 var msStream = MSApp.createStreamFromInputStream("image/jpeg", inputStream);
 ```
@@ -441,7 +440,6 @@ The restriction to not allow secondary windows to open could change in the futur
 
 ##### Same Origin Communication Restrictions 
 There is a difficult technical issue preventing proper support for synchronous, same-origin, cross-window, script calls. When you open a window that is same origin, script in one window is allowed to directly call functions in the other window, and some of these calls will fail. `postMessage` calls work just fine and is the recommended way to do things if possible. Work to improve this issue is in progress.
-
 
 ### isTaskScheduledAtPriorityOrHigher 
 Returns a Boolean value indicating whether there is pending work at the given priority level or higher.

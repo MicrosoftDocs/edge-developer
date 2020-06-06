@@ -76,4 +76,3 @@ If the Handled property is set to TRUE then this will prevent the WebView from p
 Sets the Handled property.
 
 > public HRESULT [put_Handled](#put_handled)(BOOL handled)
-

@@ -529,4 +529,3 @@ void ViewComponent::SetScale(float scale)
     m_controller->SetBoundsAndZoomFactor(bounds, scale);
 }
 ```
-

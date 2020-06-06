@@ -43,7 +43,6 @@ Also included are details on how to change your extension icon's location in the
    > [!NOTE]
    > If you encounter an error message when loading your extension, refer to the [troubleshooting](./../troubleshooting.md) page for guidance.
 
-
 **You're all set! You should now see the extension listed in Microsoft Edge's extension pane.**
 
 ![extension in extension pane](./../media/sideload-extension-installed.png)
@@ -51,13 +50,10 @@ Also included are details on how to change your extension icon's location in the
 > [!NOTE]
 > Unsigned extensions are automatically turned off on subsequent launches of Microsoft Edge. When the browser enters an idle state (after approximately 10 seconds of inactivity) you will see the following notification at the bottom of the window. ![risky notification](./../media/riskynotification.png) To turn on the unsigned extensions, click "Turn on anyway".
 
-
-
 ## Moving the extension button
 Depending on your extension's settings, it could appear in the **More (...)** menu.
 
    ![actions menu](./../media/browseraction.png)  
-
 
 If you want to move the button out of this menu for easier access:
 
@@ -76,7 +72,6 @@ Alternatively, you may do this from the extensions details page:
 
 > [!NOTE]
 > You can always move the button back to the **More (...)** menu by right-clicking it and unselecting **Show next to address bar** or by going to the extension details page and toggling **Show button next to address bar** to off.
-
 
 ## Removing an extension
 

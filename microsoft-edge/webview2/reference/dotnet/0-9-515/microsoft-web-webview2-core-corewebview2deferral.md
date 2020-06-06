@@ -32,4 +32,3 @@ Completes the associated deferred event.
 > public void [Complete](#complete)()
 
 Complete should only be called once for each deferral taken.
-

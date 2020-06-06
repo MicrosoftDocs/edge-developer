@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-
-
 # Get Started With Running JavaScript In The Console   
-
-
 
 This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  See [Get Started With Debugging JavaScript][DevToolsJavascriptIndex] to learn how to pause JavaScript code and step through it one line at a time.  
 
@@ -112,10 +104,6 @@ The **Console** also has a set of convenience functions that make it easier to i
 <!--See [Console Utilities API Reference][DevToolsConsoleUtilities] to explore all the convenience functions.  -->  
 
 <!--todo: add console utilities api reference section when available  -->  
-
- 
-
-
 
 <!-- image links -->  
 

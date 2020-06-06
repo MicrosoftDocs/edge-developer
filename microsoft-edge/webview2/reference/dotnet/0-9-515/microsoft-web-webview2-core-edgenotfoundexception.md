@@ -67,4 +67,3 @@ Initializes a new instance of the EdgeNotFoundException class with a specified e
 * `message` The error message that explains the reason for the exception. 
 
 * `inner` The exception that is the cause of the current exception.
-

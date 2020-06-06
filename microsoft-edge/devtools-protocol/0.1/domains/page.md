@@ -20,12 +20,10 @@ Actions and events related to the inspected page belong to the page domain.
 ### enable
 Enables page domain notifications.
 
-
 ---
 
 ### disable
 Disables page domain notifications.
-
 
 ---
 
@@ -72,6 +70,5 @@ Navigates current page to the given URL.
 ### <a name="frameid"></a> FrameId `string`
 
 Unique frame identifier.
-
 
 ---

@@ -32,4 +32,3 @@ The caller implements this interface to receive the CoreWebView2Controller creat
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
 > public HRESULT [Invoke](#invoke)(HRESULT result, [ICoreWebView2Controller](icorewebview2controller.md) * createdController)
-

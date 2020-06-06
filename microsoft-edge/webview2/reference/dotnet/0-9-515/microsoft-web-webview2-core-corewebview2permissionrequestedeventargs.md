@@ -66,4 +66,3 @@ GetDeferral can be called to return a CoreWebView2Deferral object.
 > public CoreWebView2Deferral [GetDeferral](#getdeferral)()
 
 Developer can use the deferral object to make the permission decision at a later time.
-

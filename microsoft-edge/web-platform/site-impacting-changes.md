@@ -41,7 +41,6 @@ The web is constantly evolving to improve the user experience, security, and pri
    :::column-end:::
 :::row-end:::
 
-
 <!-- image links -->  
 
 <!-- links -->  

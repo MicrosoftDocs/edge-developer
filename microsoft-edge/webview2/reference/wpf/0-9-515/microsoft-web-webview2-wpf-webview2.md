@@ -276,4 +276,3 @@ Creates a new instance of a WebView2 control.
 > public [WebView2](#webview2)()
 
 Note that the control's CoreWebView2 will be null until initialized. See the WebView2 class documentation for an initialization overview.
-

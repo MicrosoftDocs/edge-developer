@@ -28,7 +28,6 @@ The Microsoft Edge (EdgeHTML) implementation of WebDriver supports both the W3C 
 > [!NOTE]
 > You can find help, report issues, and file feature requests at [Microsoft Edge (EdgeHTML) Feedback & Support](https://developer.microsoft.com/microsoft-edge/support/).
 
-
 ## Using WebDriver
 To get started using WebDriver with Microsoft Edge (EdgeHTML), check out these samples:
 

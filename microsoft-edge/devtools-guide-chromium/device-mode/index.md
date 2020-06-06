@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools   
-
-  
 
 Use Device Mode to approximate how your page looks and performs on a mobile device.  
 
@@ -260,10 +254,6 @@ Select one of the presets from the **Orientation** list or select **Custom orien
 > ##### Figure 27  
 > Orientation  
 > ![Orientation][ImageOrientation]  
-
- 
-
-
 
 <!--See [Join the DevTools community][DevToolsCommunity] for other ways to leave feedback.  -->  
 

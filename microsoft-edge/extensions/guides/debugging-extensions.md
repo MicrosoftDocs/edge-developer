@@ -20,10 +20,8 @@ The following video goes through a buggy Microsoft Edge extension, walking thoug
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]
 
-
 > [!NOTE]
 > In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](./adding-and-removing-extensions.md) for details on how to do this.
-
 
 ## Background script debugging
 To start debugging the background script of your extension:
@@ -40,7 +38,6 @@ To start debugging the background script of your extension:
 7. Select the **Console** tab and execute the command "`location.reload()`". This will re-execute the background script, allowing you to step through your code.  
  ![console with location.reload entered](./../media/debug-f12-background-console.png)
 
-
 ## Content script debugging
 To start debugging the content script of your extension:
 
@@ -54,16 +51,12 @@ To start debugging the content script of your extension:
  ![f12 with content script being debugged](./../media/debug-content-f12.png)
 4. Refresh the browser tab to begin stepping though your code.
 
-
-
-
 ## Extension page debugging
 
 There are two methods that can be used for accessing the source code of your extension page for debugging. One method applies to a variety of pages while the other only works for popup pages.
 
 ### Debugging any extension page
 The following method works for all extension pages like the options page and popups:
-
 
 1. Right-click on the background of your page.
 2. Select **"View source"**.

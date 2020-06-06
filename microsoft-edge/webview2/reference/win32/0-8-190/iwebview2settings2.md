@@ -64,4 +64,3 @@ Defaults to TRUE.
 Set the AreDefaultContextMenusEnabled property.
 
 > public HRESULT [put_AreDefaultContextMenusEnabled](#put_aredefaultcontextmenusenabled)(BOOL enabled)
-

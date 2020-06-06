@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # Navigate Microsoft Edge DevTools With Assistive Technology   
-
-
 
 This guide aims to help users who primarily rely on assistive technology like screen readers access and use Microsoft Edge DevTools.  Microsoft Edge DevTools is a suite of web developer tools built into the Microsoft Edge browser.  <!--See [Accessibility Reference][DevtoolsAccessibilityReference] if you are looking for DevTools features related to improving the accessibility of a web page.  -->
 

@@ -186,4 +186,3 @@ The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpoi
 Returns the UI Automation Provider for the ICoreWebView2CompositionController that corresponds with the given HWND.
 
 > public HRESULT [GetProviderForHwnd](#getproviderforhwnd)(HWND hwnd, IUnknown ** provider)
-

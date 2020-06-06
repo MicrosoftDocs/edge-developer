@@ -296,7 +296,6 @@ For more information, see [container on Docker Hub][DockerHubMsedgedriver].
 
 The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge!  Use the **Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterTweetEdgeDevTools] to let the team know what you think.  
 
-
 :::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="The Feedback icon in the Microsoft Edge DevTools":::
    The **Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  

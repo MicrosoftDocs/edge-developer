@@ -45,7 +45,6 @@ The [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] covers t
 
 The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an effort to help improve the accessibility of the web.  The site provides a variety of resources for [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview], [Designing for Inclusion][W3CWaiFundamentals], [tutorials and presentations][W3CWaiTeachAdvocate], and more.  
 
-
 <!-- image links -->  
 
 <!--[ImageAccessibilityArchitecture]: ./media/accessibilityarchitecture.png "Figure 1: Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation"  -->  
@@ -69,4 +68,3 @@ The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an e
 [W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate "Teach and Advocate Overview | Web Accessibility Initiative (WAI) | W3C"  
 
 [WHODisabilities]: https://who.int/topics/disabilities "Disabilities | WHO"  
-

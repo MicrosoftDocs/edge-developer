@@ -35,4 +35,3 @@ The caller implements this interface to receive the CoreWebView2Host created via
 Called to provide the implementer with the completion status and result of the corresponding asynchronous method call.
 
 > public HRESULT [Invoke](#invoke)(HRESULT result,[ICoreWebView2Host](ICoreWebView2Host.md) * created_host)
-

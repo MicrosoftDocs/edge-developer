@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-
 # Sources Panel Overview 
-
-
 
 Use the Microsoft Edge DevTools **Sources** panel to:
 
@@ -107,7 +100,6 @@ To run a **Snippet**:
 
 See [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.
 
-
 ## Debug JavaScript 
 
 Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead. The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time. As you step through the code, you may view and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
@@ -124,10 +116,6 @@ basics of debugging in DevTools.
 By default, when you edit a file in the **Sources** panel, those changes are lost when you reload the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, this lets you use DevTools as your code editor.
 
 See [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to get started.
-
- 
-
-
 
 <!-- image links -->  
 

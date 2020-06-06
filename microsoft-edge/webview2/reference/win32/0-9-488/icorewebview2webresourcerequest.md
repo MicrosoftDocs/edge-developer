@@ -76,4 +76,3 @@ Set the Method property.
 Set the Uri property.
 
 > public HRESULT [put_Uri](#put_uri)(LPCWSTR uri)
-

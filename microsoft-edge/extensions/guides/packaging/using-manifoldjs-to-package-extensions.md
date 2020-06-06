@@ -27,7 +27,6 @@ Before getting started, you will still need to read up on the following articles
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
-
 ## Installing Node.js and ManifoldJS
 
 The first things you'll need to do is install [Node.js LTS](https://nodejs.org/en/download/).
@@ -48,19 +47,15 @@ For example:
 > [!NOTE]
 > ManifoldJS will output in the current directory and can overwrite content.
 
-
-
 Now that you're in your destination folder, run the following command:
 
 `manifoldjs -l debug -p edgeextension -f edgeextension -m <EXTENSION LOCATION>\manifest.json`
-
 
 This command can be broken down into the following parts:
  -    **-l debug**: Changes the log level to "debug" to get a full print out.
  -    **-p edgeextension**: Sets the only platform to run the conversion on to edgeextension.
  -    **-f edgeextension**: Tells the program that the format of the manifest is an edgeextension format and not to care if it fails validation.
  -    **-m \<EXTENSION LOCATION>\manifest.json**: The path to the extension manifest that you want to convert.
-
 
 After ManifoldJS has finished running, you'll have a folder with the following contents:
 
@@ -80,7 +75,6 @@ After ManifoldJS has finished running, you'll have a folder with the following c
                 ...
 
 The generationInfo.json file is a log produced by running ManifoldJS and won't be included in your extension package. Only the contents of the **manifest** folder will be packaged. Within the manifest folder, the Assets folder contains the images that will be used in the Windows and Microsoft Store UI, while the Extension folder has the contents of your extension within it.
-
 
 Now that you have the correct files, you'll need to edit the generated AppXManifest file within the **manifest** folder. If the extension’s manifest.json file has an internationalized string for the "name" field, once ManifoldJS is run, the most top layer folder’s name will have no underscores and include "MSG".
 

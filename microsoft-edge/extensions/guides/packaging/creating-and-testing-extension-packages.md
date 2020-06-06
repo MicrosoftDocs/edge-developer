@@ -22,8 +22,6 @@ If you already know how Microsoft Edge extension AppXs are created, you can skip
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
-
-
 ## Preparing the submission folder
 
 To prepare your extension for submission, you need to create a folder with the following structure:
@@ -115,9 +113,7 @@ You can access your App identity page using the following steps:
 
    ![app identity page](./../../media/app-identity.png)
 
-
 You can now populate the AppXManifest template with values from the App identity page, as indicated in the template:
-
 
 ```xml
 <Identity
@@ -157,7 +153,6 @@ Some values in the AppXManifest need to match those that are defined in the JSON
   </uap:VisualElements>
   ```
 
-
 ### Assets folder
 
 Within the Assets folder you will need three different icon sizes. These icons will be used in the Microsoft Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
@@ -184,12 +179,10 @@ Once you've created the necessary UI assets, update AppXManifest.xml to point to
   Square150x150Logo="Assets/icon_150.png"
   ```
 
-
 ### Extension folder
 Copy your extension files (keeping the folder structure) into the Extension folder. Make sure `manifest.json` is at the root your Extension folder.
 
 ![extension folder with all extension files in it](./../../media/extension-folder.png)
-
 
 ### Supporting more than one locale
 If your extension supports more than one language, you may want to configure the AppX package with all the locales that you need so that the correct localized icon and description appear in the Microsoft Store. See [Localizing extension packages](./localizing-extension-packages.md) for more information.
@@ -218,10 +211,6 @@ To do this, you can execute the following command to unpack the AppX package of 
 This should look something like this when filled out:
 
 `C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe unpack /v /p "C:\Extension\MyExtension.appx" /d "C:\Extension\My Extension"`
-
-
-
-
 
 ## Testing an AppX package
 

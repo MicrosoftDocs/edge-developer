@@ -67,4 +67,3 @@ The scan code.
 The previous key state.
 
 > public int [WasKeyDown](#waskeydown)
-

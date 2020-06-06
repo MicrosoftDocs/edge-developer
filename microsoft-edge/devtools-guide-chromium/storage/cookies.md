@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
 # View, Edit, And Delete Cookies With Microsoft Edge DevTools   
-
-  
 
 [HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  They are also the cause of all of those annoying "this page uses cookies" consent forms that you see across the web.  This guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
@@ -92,8 +86,6 @@ Select **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.
 > ![Clearing all cookies][ImageClearAllCookies]  
 
 <!--    -->  
-
-  
 
 <!-- image links -->  
 

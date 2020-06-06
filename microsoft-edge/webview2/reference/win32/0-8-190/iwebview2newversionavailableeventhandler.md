@@ -37,4 +37,3 @@ Use the get_NewVersion method of [IWebView2NewVersionAvailableEventArgs](IWebVie
 Called to provide the implementer with the event args for the corresponding event.
 
 > public HRESULT [Invoke](#invoke)([IWebView2Environment](IWebView2Environment.md) * webviewEnvironment,[IWebView2NewVersionAvailableEventArgs](IWebView2NewVersionAvailableEventArgs.md) * args)
-

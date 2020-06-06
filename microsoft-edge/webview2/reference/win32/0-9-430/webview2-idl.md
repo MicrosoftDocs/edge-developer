@@ -136,4 +136,3 @@ Channel names are beta, dev, and canary. If an override exists for the browserEx
 This method is for anyone want to compare version correctly to determine which version is newer, older or same.
 
 It can be used to determine whether to use webview2 or certain feature base on version. Sets the value of result to -1, 0 or 1 if version1 is less than, equal or greater than version2 respectively. Returns E_INVALIDARG if it fails to parse any of the version strings or any input parameter is null. Input can directly use the versionInfo obtained from GetCoreWebView2BrowserVersionInfo, channel info will be ignored.
-

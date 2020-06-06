@@ -284,4 +284,3 @@ This matches the format of the GetAvailableCoreWebView2BrowserVersionString API.
 Remove an event handler previously added with add_NewBrowserVersionAvailable.
 
 > public HRESULT [remove_NewBrowserVersionAvailable](#remove_newbrowserversionavailable)(EventRegistrationToken token)
-

@@ -17,19 +17,14 @@ Object Real-Time Communications (ORTC) enables media (audio and/or video) to be 
 > [!NOTE]
 > Microsoft Edge now implements ORTC for Windows 10 devices. However, this implementation differs from the most recent version of the [ORTC API](https://go.microsoft.com/fwlink/p/?LinkID=690096). ORTC has continued to evolve since the development and release of Microsoft Edge -- the browser does not implement every object or method within the ORTC API, and includes extensions not currently incorporated within the specification. Further development will continue with the goal to enable developers around the world to build experiences that include the ability to talk to Skype users and other WebRTC compatible communication services.
 
-
-
 To get a hands-on experience with ORTC, try out these demos on Test Drive:
 -  [SimpleWebRTC](https://developer.microsoft.com/microsoft-edge/testdrive/demos/simplewebrtc/)
 -  [ORTC phone call](https://developer.microsoft.com/microsoft-edge/testdrive/demos/twilioortc/)
 -  [ORTC demo](https://developer.microsoft.com/microsoft-edge/testdrive/demos/ortcdemo/)
 
-
 For more information about ORTC, check out [ORTC API is now available in Microsoft Edge](https://go.microsoft.com/fwlink/p/?LinkID=627564) on the Microsoft Edge dev blog.
 
-
 ## Overview Diagram
-
 
 The diagram below provides a summary describing relationships between ORTC objects. Horizontal or slanted arrows denote the flow of media or data, whereas vertical arrows denote interactions via methods and events.
 
@@ -45,11 +40,7 @@ Several other objects also play a role. The [`RTCIceGatherer`](https://msdn.micr
 > [!NOTE]
 > Since Microsoft Edge does not implement the data channel, the `RTCDataChannel` and `RTCSctpTransport` objects are not supported.
 
-
-
-
 ## Components supported in the initial Microsoft Edge implementation
-
 
 * **ORTC API support.** Audio/video communications is the primary focus, including the following objects: [`RTCIceGatherer`](https://msdn.microsoft.com/library/Mt433107), [`RTCIceTransport`](https://msdn.microsoft.com/library/Mt433112), [`RTCDtlsTransport`](https://msdn.microsoft.com/library/Mt502495), [`RTCRtpSender`](https://msdn.microsoft.com/library/Mt502516), [`RTCRtpReceiver`](https://msdn.microsoft.com/library/Mt502508), as well as the [`RTCStats`](https://msdn.microsoft.com/library/Mt589726) interfaces that are not shown directly in the diagram.
 * **RTP/RTCP multiplexing support.** [`RTP/RTCP multiplexing`](https://msdn.microsoft.com/library/Mt502503) is required for use with the [`DtlsTransport`](https://msdn.microsoft.com/library/Mt502495). A/V multiplexing is also supported.
@@ -59,11 +50,7 @@ Several other objects also play a role. The [`RTCIceGatherer`](https://msdn.micr
 > [!NOTE]
 > If you are familiar with WebRTC 1.0 implementations, and are interested in the evolution of object support within WebRTC 1.0 and ORTC, we recommend the following presentation by Google, Microsoft, and Hookflash from the 2014 IIT RTC Conference: "[ORTC API Update](http://www.rtc-conference.com/2016/wp-content/uploads/gravity_forms/2-2f7a537445fa703985ab4d2372ac42ca/2014/10/ORTC_API_Update.pdf)."
 
-
-
-
 ## App level code flow for 1:1 communications
-
 
 For this scenario, two Windows 10 machines will act as two peers with a webserver as the signaling channel to exchange information between the peers so that a connection may be established between them.
 
@@ -213,7 +200,6 @@ Once familiar with setting up 1:1 calls, apply the same principles to set up sma
 
 ## Implementation details in Microsoft Edge
 
-
 The ORTC spec has been relatively stable since the ORTC Community Group issued the "Call for Implementations," and significant challenges at the JavaScript API level are not expected. Based on this, Microsoft Edge implementation has been released for cross-browser interoperability testing at the protocol level.
 
 A few limitations in the Microsoft Edge implementation should be noted:
@@ -229,8 +215,6 @@ A few limitations in the Microsoft Edge implementation should be noted:
 #### Looking forward
 
 Microsoft Edge implementation is still early, expect the feature set to continue to grow in the coming months. The goal for Microsoft Edge implementation is interoperability across the web today as well as with the real-time communications industry in the long term.
-
-
 
 ## API reference
 

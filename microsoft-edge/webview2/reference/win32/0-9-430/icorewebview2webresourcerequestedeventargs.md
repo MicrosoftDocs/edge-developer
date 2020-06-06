@@ -65,4 +65,3 @@ You can use the [ICoreWebView2Deferral](ICoreWebView2Deferral.md) object to comp
 The web resource request contexts.
 
 > public HRESULT [get_ResourceContext](#get_resourcecontext)(CORE_WEBVIEW2_WEB_RESOURCE_CONTEXT * context)
-

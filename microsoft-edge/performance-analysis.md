@@ -15,14 +15,11 @@ keywords: edge, web development, html, css, javascript, developer
 If you're new to performance, you should check out the [F12 DevTools guide](./devtools-guide.md).
 The [F12 tools](./devtools-guide.md) built into Microsoft Edge can be used to analyze the general performance of a web site. It provides similar (but more limited) capabilities to the [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/index) from right within the browser.
 
-
-
 If you want a deeper analysis of browser performance, the Microsoft Edge team uses the [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/index) (WPT). WPT was created by the Windows team to conduct in-depth program performance analysis. It straddles the boundaries between website JavaScript and Microsoft Edge native code, allowing both to be viewed within the same tool. WPT can be used to:
  - Measure CPU time taken for software to complete work
  - Calculate the memory allocated by software
  - Show the details of downloading files from remote servers
  - Measure frame rate.
-
 
 To get started with using the Windows Performance Toolkit to analyze your website, you'll first need to download the [Windows 10 Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Select the *Windows Performance Toolkit* option during installation:
 
@@ -60,7 +57,6 @@ The WPR tool will indicate that your trace information was saved successfully:
 
 ![Windows Performance Record Start](./media/wprui-savecomplete.png)
 
-
 ## Analyzing a trace
 Now that you've gathered your performance data, you can analyze the trace using Windows Performance Analyzer to see what optimizations can be made.
 Here's how to analyze your web scenario performance data.
@@ -84,7 +80,6 @@ The profile will load several graphs and tables for your analysis. For nearly al
 
 ![Big Picture](./media/wpa-bigpicture.png)
 
-
 #### The Html Responsiveness Analysis Profile
 The *Html Responsiveness* analysis profile provides four tabs:
 
@@ -96,7 +91,6 @@ The *Html Responsiveness* analysis profile provides four tabs:
 
 **Thread Delay Analysis** - This tab is often used by Microsoft Edge developers to investigate when one thread is blocked and waiting on another. On rare occasions it might also be useful to web developers.
 
-
 ### 3. Zoom to remove trace rundown
 You can focus your analysis by removing the empty trailing *Trace Rundown* sections of your graphs. From any of the graphs currently showing:
  - Left-click at the start of the graph data you wish to investigate
@@ -106,7 +100,6 @@ You can focus your analysis by removing the empty trailing *Trace Rundown* secti
 The zoom will apply to all graphs and charts on the active tab.
 
 ![Post Zoom](./media/wpa-postzoom.png)
-
 
 ### 4. Investigate what's taking up CPU cycles
  The **CPU Usage (Sampled)** table in the **Frame Analysis** tab is where most of your analysis will likely happen. You can expand the various processes to identify the most compute intensive JavaScript and browser code. Often a single bit of JavaScript is responsible for a performance issue, and taking the time to optimize it can make a significant difference.

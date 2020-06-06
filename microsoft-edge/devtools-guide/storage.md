@@ -52,7 +52,6 @@ From the *Storage list* table you can:
  - **Delete** (`Del`) an entry from the right-click context menu option, *Delete item*.
  - **Add** a new key/value pair by clicking on the empty row at the bottom of the table.
 
-
 ### Shortcuts
 
 | Action              | Shortcut      |
@@ -61,7 +60,6 @@ From the *Storage list* table you can:
 | Delete item         | `Del`         |
 | Copy selected items | `Ctrl` + `C`  |
 | Select all          | `Ctrl` + `A`  |
-
 
 ## IndexedDB manager
 

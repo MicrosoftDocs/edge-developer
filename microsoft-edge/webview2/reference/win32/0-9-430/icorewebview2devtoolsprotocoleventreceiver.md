@@ -91,4 +91,3 @@ void ScriptComponent::SubscribeToCdpEvent()
 Remove an event handler previously added with add_DevToolsProtocolEventReceived.
 
 > public HRESULT [remove_DevToolsProtocolEventReceived](#remove_devtoolsprotocoleventreceived)(EventRegistrationToken token)
-
