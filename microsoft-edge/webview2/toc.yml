@@ -28,130 +28,257 @@
   href: webview2-api-reference.md
   items:
     - name: Win32 C++
-      href: reference/win32/0-9-488-reference-webview2.md
+      href: reference/win32/0-9-538-reference-webview2.md
       items:
         - name: ICoreWebView2
-          href: reference/win32/0-9-488/icorewebview2.md
+          href: reference/win32/0-9-538/icorewebview2.md
         - name: ICoreWebView2Controller
-          href: reference/win32/0-9-488/icorewebview2controller.md
+          href: reference/win32/0-9-538/icorewebview2controller.md
         - name: ICoreWebView2Deferral
-          href: reference/win32/0-9-488/icorewebview2deferral.md
+          href: reference/win32/0-9-538/icorewebview2deferral.md
         - name: ICoreWebView2DevToolsProtocolEventReceiver
-          href: reference/win32/0-9-488/icorewebview2devtoolsprotocoleventreceiver.md
+          href: reference/win32/0-9-538/icorewebview2devtoolsprotocoleventreceiver.md
         - name: ICoreWebView2Environment
-          href: reference/win32/0-9-488/icorewebview2environment.md
+          href: reference/win32/0-9-538/icorewebview2environment.md
         - name: ICoreWebView2EnvironmentOptions
-          href: reference/win32/0-9-488/icorewebview2environmentoptions.md
+          href: reference/win32/0-9-538/icorewebview2environmentoptions.md
         - name: ICoreWebView2HttpHeadersCollectionIterator
-          href: reference/win32/0-9-488/icorewebview2httpheaderscollectioniterator.md
+          href: reference/win32/0-9-538/icorewebview2httpheaderscollectioniterator.md
         - name: ICoreWebView2HttpRequestHeaders
-          href: reference/win32/0-9-488/icorewebview2httprequestheaders.md
+          href: reference/win32/0-9-538/icorewebview2httprequestheaders.md
         - name: ICoreWebView2HttpResponseHeaders
-          href: reference/win32/0-9-488/icorewebview2httpresponseheaders.md
+          href: reference/win32/0-9-538/icorewebview2httpresponseheaders.md
         - name: ICoreWebView2Settings
-          href: reference/win32/0-9-488/icorewebview2settings.md
+          href: reference/win32/0-9-538/icorewebview2settings.md
         - name: ICoreWebView2WebResourceRequest
-          href: reference/win32/0-9-488/icorewebview2webresourcerequest.md
+          href: reference/win32/0-9-538/icorewebview2webresourcerequest.md
         - name: ICoreWebView2WebResourceResponse
-          href: reference/win32/0-9-488/icorewebview2webresourceresponse.md
+          href: reference/win32/0-9-538/icorewebview2webresourceresponse.md
         - name: Globals
-          href: reference/win32/0-9-488/webview2-idl.md
+          href: reference/win32/0-9-538/webview2-idl.md
         - name: Event arguments
           items:
             - name: ICoreWebView2AcceleratorKeyPressedEventArgs
-              href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2acceleratorkeypressedeventargs.md
             - name: ICoreWebView2ContentLoadingEventArgs
-              href: reference/win32/0-9-488/icorewebview2contentloadingeventargs.md
+              href: reference/win32/0-9-538/icorewebview2contentloadingeventargs.md
             - name: ICoreWebView2DevToolsProtocolEventReceivedEventArgs
-              href: reference/win32/0-9-488/icorewebview2devtoolsprotocoleventreceivedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2devtoolsprotocoleventreceivedeventargs.md
             - name: ICoreWebView2MoveFocusRequestedEventArgs
-              href: reference/win32/0-9-488/icorewebview2movefocusrequestedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2movefocusrequestedeventargs.md
             - name: ICoreWebView2NavigationCompletedEventArgs
-              href: reference/win32/0-9-488/icorewebview2navigationcompletedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2navigationcompletedeventargs.md
             - name: ICoreWebView2NavigationStartingEventArgs
-              href: reference/win32/0-9-488/icorewebview2navigationstartingeventargs.md
+              href: reference/win32/0-9-538/icorewebview2navigationstartingeventargs.md
             - name: ICoreWebView2NewWindowRequestedEventArgs
-              href: reference/win32/0-9-488/icorewebview2newwindowrequestedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2newwindowrequestedeventargs.md
             - name: ICoreWebView2PermissionRequestedEventArgs
-              href: reference/win32/0-9-488/icorewebview2permissionrequestedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2permissionrequestedeventargs.md
             - name: ICoreWebView2ProcessFailedEventArgs
-              href: reference/win32/0-9-488/icorewebview2processfailedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2processfailedeventargs.md
             - name: ICoreWebView2ScriptDialogOpeningEventArgs
-              href: reference/win32/0-9-488/icorewebview2scriptdialogopeningeventargs.md
+              href: reference/win32/0-9-538/icorewebview2scriptdialogopeningeventargs.md
             - name: ICoreWebView2SourceChangedEventArgs
-              href: reference/win32/0-9-488/icorewebview2sourcechangedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2sourcechangedeventargs.md
             - name: ICoreWebView2WebMessageReceivedEventArgs
-              href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2webmessagereceivedeventargs.md
             - name: ICoreWebView2WebResourceRequestedEventArgs
-              href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventargs.md
+              href: reference/win32/0-9-538/icorewebview2webresourcerequestedeventargs.md
         - name: Delegates
           items:
             - name: ICoreWebView2AcceleratorKeyPressedEventHandler
-              href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2acceleratorkeypressedeventhandler.md
             - name: ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md
             - name: ICoreWebView2CallDevToolsProtocolMethodCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2calldevtoolsprotocolmethodcompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2calldevtoolsprotocolmethodcompletedhandler.md
             - name: ICoreWebView2CapturePreviewCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2capturepreviewcompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2capturepreviewcompletedhandler.md
             - name: ICoreWebView2ContainsFullScreenElementChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2containsfullscreenelementchangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2containsfullscreenelementchangedeventhandler.md
             - name: ICoreWebView2ContentLoadingEventHandler
-              href: reference/win32/0-9-488/icorewebview2contentloadingeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2contentloadingeventhandler.md
             - name: ICoreWebView2CreateCoreWebView2ControllerCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2createcorewebview2controllercompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2createcorewebview2controllercompletedhandler.md
             - name: ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2createcorewebview2environmentcompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2createcorewebview2environmentcompletedhandler.md
             - name: ICoreWebView2DevToolsProtocolEventReceivedEventHandler
-              href: reference/win32/0-9-488/icorewebview2devtoolsprotocoleventreceivedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2devtoolsprotocoleventreceivedeventhandler.md
             - name: ICoreWebView2DocumentTitleChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2documenttitlechangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2documenttitlechangedeventhandler.md
             - name: ICoreWebView2ExecuteScriptCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2executescriptcompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2executescriptcompletedhandler.md
             - name: ICoreWebView2FocusChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2focuschangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2focuschangedeventhandler.md
             - name: ICoreWebView2HistoryChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2historychangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2historychangedeventhandler.md
             - name: ICoreWebView2MoveFocusRequestedEventHandler
-              href: reference/win32/0-9-488/icorewebview2movefocusrequestedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2movefocusrequestedeventhandler.md
             - name: ICoreWebView2NavigationCompletedEventHandler
-              href: reference/win32/0-9-488/icorewebview2navigationcompletedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2navigationcompletedeventhandler.md
             - name: ICoreWebView2NavigationStartingEventHandler
-              href: reference/win32/0-9-488/icorewebview2navigationstartingeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2navigationstartingeventhandler.md
             - name: ICoreWebView2NewBrowserVersionAvailableEventHandler
-              href: reference/win32/0-9-488/icorewebview2newbrowserversionavailableeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2newbrowserversionavailableeventhandler.md
             - name: ICoreWebView2NewWindowRequestedEventHandler
-              href: reference/win32/0-9-488/icorewebview2newwindowrequestedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2newwindowrequestedeventhandler.md
             - name: ICoreWebView2PermissionRequestedEventHandler
-              href: reference/win32/0-9-488/icorewebview2permissionrequestedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2permissionrequestedeventhandler.md
             - name: ICoreWebView2ProcessFailedEventHandler
-              href: reference/win32/0-9-488/icorewebview2processfailedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2processfailedeventhandler.md
             - name: ICoreWebView2ScriptDialogOpeningEventHandler
-              href: reference/win32/0-9-488/icorewebview2scriptdialogopeningeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2scriptdialogopeningeventhandler.md
             - name: ICoreWebView2SourceChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2sourcechangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2sourcechangedeventhandler.md
             - name: ICoreWebView2WebMessageReceivedEventHandler
-              href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2webmessagereceivedeventhandler.md
             - name: ICoreWebView2WebResourceRequestedEventHandler
-              href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2webresourcerequestedeventhandler.md
             - name: ICoreWebView2WindowCloseRequestedEventHandler
-              href: reference/win32/0-9-488/icorewebview2windowcloserequestedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2windowcloserequestedeventhandler.md
             - name: ICoreWebView2ZoomFactorChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2zoomfactorchangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2zoomfactorchangedeventhandler.md
         - name: Experimental
           items:
             - name: ICoreWebView2ExperimentalCompositionController
-              href: reference/win32/0-9-488/icorewebview2experimentalcompositioncontroller.md
+              href: reference/win32/0-9-538/icorewebview2experimentalcompositioncontroller.md
             - name: ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
-              href: reference/win32/0-9-488/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md
+              href: reference/win32/0-9-538/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md
             - name: ICoreWebView2ExperimentalCursorChangedEventHandler
-              href: reference/win32/0-9-488/icorewebview2experimentalcursorchangedeventhandler.md
+              href: reference/win32/0-9-538/icorewebview2experimentalcursorchangedeventhandler.md
             - name: ICoreWebView2ExperimentalEnvironment
-              href: reference/win32/0-9-488/icorewebview2experimentalenvironment.md
+              href: reference/win32/0-9-538/icorewebview2experimentalenvironment.md
+            - name: ICoreWebView2ExperimentalNewWindowRequestedEventArgs
+              href: reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md
             - name: ICoreWebView2ExperimentalPointerInfo
-              href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
+              href: reference/win32/0-9-538/icorewebview2experimentalpointerinfo.md
+            - name: ICoreWebView2ExperimentalWindowFeatures
+              href: reference/win32/0-9-538/icorewebview2experimentalwindowfeatures.md
         - name: Archived
           items:
+            - name: 0.9.515 - Reference (WebView2)
+              href: reference/win32/0-9-488-reference-webview2.md
+              items:
+                - name: ICoreWebView2
+                  href: reference/win32/0-9-488/icorewebview2.md
+                - name: ICoreWebView2Controller
+                  href: reference/win32/0-9-488/icorewebview2controller.md
+                - name: ICoreWebView2Deferral
+                  href: reference/win32/0-9-488/icorewebview2deferral.md
+                - name: ICoreWebView2DevToolsProtocolEventReceiver
+                  href: reference/win32/0-9-488/icorewebview2devtoolsprotocoleventreceiver.md
+                - name: ICoreWebView2Environment
+                  href: reference/win32/0-9-488/icorewebview2environment.md
+                - name: ICoreWebView2EnvironmentOptions
+                  href: reference/win32/0-9-488/icorewebview2environmentoptions.md
+                - name: ICoreWebView2HttpHeadersCollectionIterator
+                  href: reference/win32/0-9-488/icorewebview2httpheaderscollectioniterator.md
+                - name: ICoreWebView2HttpRequestHeaders
+                  href: reference/win32/0-9-488/icorewebview2httprequestheaders.md
+                - name: ICoreWebView2HttpResponseHeaders
+                  href: reference/win32/0-9-488/icorewebview2httpresponseheaders.md
+                - name: ICoreWebView2Settings
+                  href: reference/win32/0-9-488/icorewebview2settings.md
+                - name: ICoreWebView2WebResourceRequest
+                  href: reference/win32/0-9-488/icorewebview2webresourcerequest.md
+                - name: ICoreWebView2WebResourceResponse
+                  href: reference/win32/0-9-488/icorewebview2webresourceresponse.md
+                - name: Globals
+                  href: reference/win32/0-9-488/webview2-idl.md
+                - name: Event arguments
+                  items:
+                    - name: ICoreWebView2AcceleratorKeyPressedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventargs.md
+                    - name: ICoreWebView2ContentLoadingEventArgs
+                      href: reference/win32/0-9-488/icorewebview2contentloadingeventargs.md
+                    - name: ICoreWebView2DevToolsProtocolEventReceivedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2devtoolsprotocoleventreceivedeventargs.md
+                    - name: ICoreWebView2MoveFocusRequestedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2movefocusrequestedeventargs.md
+                    - name: ICoreWebView2NavigationCompletedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2navigationcompletedeventargs.md
+                    - name: ICoreWebView2NavigationStartingEventArgs
+                      href: reference/win32/0-9-488/icorewebview2navigationstartingeventargs.md
+                    - name: ICoreWebView2NewWindowRequestedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2newwindowrequestedeventargs.md
+                    - name: ICoreWebView2PermissionRequestedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2permissionrequestedeventargs.md
+                    - name: ICoreWebView2ProcessFailedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2processfailedeventargs.md
+                    - name: ICoreWebView2ScriptDialogOpeningEventArgs
+                      href: reference/win32/0-9-488/icorewebview2scriptdialogopeningeventargs.md
+                    - name: ICoreWebView2SourceChangedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2sourcechangedeventargs.md
+                    - name: ICoreWebView2WebMessageReceivedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventargs.md
+                    - name: ICoreWebView2WebResourceRequestedEventArgs
+                      href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventargs.md
+                - name: Delegates
+                  items:
+                    - name: ICoreWebView2AcceleratorKeyPressedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventhandler.md
+                    - name: ICoreWebView2AddScriptToExecuteOnDocumentCreatedCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2addscripttoexecuteondocumentcreatedcompletedhandler.md
+                    - name: ICoreWebView2CallDevToolsProtocolMethodCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2calldevtoolsprotocolmethodcompletedhandler.md
+                    - name: ICoreWebView2CapturePreviewCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2capturepreviewcompletedhandler.md
+                    - name: ICoreWebView2ContainsFullScreenElementChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2containsfullscreenelementchangedeventhandler.md
+                    - name: ICoreWebView2ContentLoadingEventHandler
+                      href: reference/win32/0-9-488/icorewebview2contentloadingeventhandler.md
+                    - name: ICoreWebView2CreateCoreWebView2ControllerCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2createcorewebview2controllercompletedhandler.md
+                    - name: ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2createcorewebview2environmentcompletedhandler.md
+                    - name: ICoreWebView2DevToolsProtocolEventReceivedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2devtoolsprotocoleventreceivedeventhandler.md
+                    - name: ICoreWebView2DocumentTitleChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2documenttitlechangedeventhandler.md
+                    - name: ICoreWebView2ExecuteScriptCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2executescriptcompletedhandler.md
+                    - name: ICoreWebView2FocusChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2focuschangedeventhandler.md
+                    - name: ICoreWebView2HistoryChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2historychangedeventhandler.md
+                    - name: ICoreWebView2MoveFocusRequestedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2movefocusrequestedeventhandler.md
+                    - name: ICoreWebView2NavigationCompletedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2navigationcompletedeventhandler.md
+                    - name: ICoreWebView2NavigationStartingEventHandler
+                      href: reference/win32/0-9-488/icorewebview2navigationstartingeventhandler.md
+                    - name: ICoreWebView2NewBrowserVersionAvailableEventHandler
+                      href: reference/win32/0-9-488/icorewebview2newbrowserversionavailableeventhandler.md
+                    - name: ICoreWebView2NewWindowRequestedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2newwindowrequestedeventhandler.md
+                    - name: ICoreWebView2PermissionRequestedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2permissionrequestedeventhandler.md
+                    - name: ICoreWebView2ProcessFailedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2processfailedeventhandler.md
+                    - name: ICoreWebView2ScriptDialogOpeningEventHandler
+                      href: reference/win32/0-9-488/icorewebview2scriptdialogopeningeventhandler.md
+                    - name: ICoreWebView2SourceChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2sourcechangedeventhandler.md
+                    - name: ICoreWebView2WebMessageReceivedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2webmessagereceivedeventhandler.md
+                    - name: ICoreWebView2WebResourceRequestedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2webresourcerequestedeventhandler.md
+                    - name: ICoreWebView2WindowCloseRequestedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2windowcloserequestedeventhandler.md
+                    - name: ICoreWebView2ZoomFactorChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2zoomfactorchangedeventhandler.md
+                - name: Experimental
+                  items:
+                    - name: ICoreWebView2ExperimentalCompositionController
+                      href: reference/win32/0-9-488/icorewebview2experimentalcompositioncontroller.md
+                    - name: ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
+                      href: reference/win32/0-9-488/icorewebview2experimentalcreatecorewebview2compositioncontrollercompletedhandler.md
+                    - name: ICoreWebView2ExperimentalCursorChangedEventHandler
+                      href: reference/win32/0-9-488/icorewebview2experimentalcursorchangedeventhandler.md
+                    - name: ICoreWebView2ExperimentalEnvironment
+                      href: reference/win32/0-9-488/icorewebview2experimentalenvironment.md
+                    - name: ICoreWebView2ExperimentalPointerInfo
+                      href: reference/win32/0-9-488/icorewebview2experimentalpointerinfo.md
             - name: 0.9.430 - Reference (WebView2)
               href: reference/win32/0-9-430-reference-webview2.md
               items:
