@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Getting started with WebView2 (developer preview)
 
-This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](../reference/win32/0-9-488-reference-webview2.md) to learn more about individual APIs.  
+This walkthrough goes over the commonly used functionalities of [WebView2 (developer preview)](https://aka.ms/webview) and gets you started on creating your first WebView2 app. Visit [API reference](../reference/win32/0-9-538-reference-webview2.md) to learn more about individual APIs.  
 
 ## Prerequisites
 
@@ -119,7 +119,7 @@ Press F5 to build and run the app. Now you have a WebView window displaying Bing
 
 ## Step 4 - Navigation events
 
-We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](../reference/win32/0-9-488/ICoreWebView2.md#navigation-events) to learn more.
+We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](../reference/win32/0-9-538/ICoreWebView2.md#navigation-events) to learn more.
 
 ![navigation-events](../media/navigation-events.png)
 
@@ -216,7 +216,7 @@ To learn more:
 
 * Checkout [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample) for a comprehensive example of WebView2's capabilities.
 * Checkout [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) an application built using WebView2.
-* Please explore [API reference](../reference/win32/0-9-488-reference-webview2.md) for detailed information about our API.  
+* Please explore [API reference](../reference/win32/0-9-538-reference-webview2.md) for detailed information about our API.  
 
 ## Getting in touch with the WebView2 team  
 

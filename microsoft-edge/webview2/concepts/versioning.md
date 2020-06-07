@@ -3,7 +3,7 @@ description: Versioning Models used for Microsoft Edge WebView2
 title: Versioning of Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -31,7 +31,6 @@ After WebView2 reaches a stable general available state and we release the 1.0.0
 
 [Webview2Distibution]: ./distribution.md "Distribution of Applications using WebView2 | Microsoft Docs"  
 [Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 Runtime - Distribution of Applications using WebView2 | Microsoft Docs"  
-53]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Experimental - Reference (WebView2) | Microsoft Docs"  
 [Webview2ReferenceWin3209538Experimental]: ../reference/win32/0-9-538-reference-webview2.md#experimental "Experimental - Reference (WebView2) | Microsoft Docs"  
 [Webview2Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
