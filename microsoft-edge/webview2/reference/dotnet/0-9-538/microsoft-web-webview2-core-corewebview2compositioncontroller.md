@@ -12,6 +12,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2CompositionController class 
 
+> [NOTE!]
+> This is an [experimental API](../../../concepts/versioning#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes#0.9.538).
+
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
 

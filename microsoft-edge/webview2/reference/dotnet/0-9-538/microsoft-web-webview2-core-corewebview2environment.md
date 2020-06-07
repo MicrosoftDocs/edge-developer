@@ -67,6 +67,9 @@ Creates an evergreen WebView2 Environment using the installed Edge version.
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
+> [NOTE!]
+> This is an [experimental API](../../../concepts/versioning#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes#0.9.538).
+
 Asynchronously create a new WebView for use with visual hosting.
 
 > public async Task< [CoreWebView2CompositionController](microsoft-web-webview2-core-corewebview2compositioncontroller.md) > [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync)(IntPtr ParentWindow)
@@ -89,6 +92,9 @@ It is recommended that the application set Application User Model ID for the pro
 
 #### CreateCoreWebView2PointerInfo 
 
+> [NOTE!]
+> This is an [experimental API](../../../concepts/versioning#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes#0.9.538).
+
 Create an empty CoreWebView2ExperimentalPointerInfo.
 
 > public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
@@ -104,6 +110,9 @@ Create a new web resource response object.
 The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the CoreWebView2HttpResponseHeaders to construct the headers line by line. For information on other parameters see CoreWebView2WebResourceResponse.
 
 #### GetProviderForHwnd 
+
+> [NOTE!]
+> This is an [experimental API](../../../concepts/versioning#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes#0.9.538).
 
 Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 

@@ -62,6 +62,9 @@ The target webview should not be navigated. If the NewWindow is set, its top lev
 
 #### WindowFeatures 
 
+> [NOTE!]
+> This is an [experimental API](../../../concepts/versioning#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes#0.9.538).
+
 Window features specified by the window.open call.
 
 > public CoreWebView2WindowFeatures [WindowFeatures](#windowfeatures)

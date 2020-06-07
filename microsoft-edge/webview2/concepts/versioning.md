@@ -21,7 +21,7 @@ In the future, the Microsoft Edge WebView team plans to change the distribution 
 
 ## Experimental APIs  
 
-While WebView2 is a preview, the APIs in the SDK are expected to remain the same at GA.  There are [experimental APIs][Webview2ReferenceWin3209488Experimental] included in the SDK.  Please evaluate the experimental APIs and send your feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
+While WebView2 is a preview, the APIs in the SDK are expected to remain the same at GA.  There are [experimental APIs][Webview2ReferenceWin3209538Experimental] included in the SDK.  Please evaluate the experimental APIs and send your feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
 
 ### Roadmap  
 
@@ -31,7 +31,8 @@ After WebView2 reaches a stable general available state and we release the 1.0.0
 
 [Webview2Distibution]: ./distribution.md "Distribution of Applications using WebView2 | Microsoft Docs"  
 [Webview2IndexEdgeRuntime]: ./distribution.md#microsoft-edge-webview2-runtime "Microsoft Edge WebView2 Runtime - Distribution of Applications using WebView2 | Microsoft Docs"  
-[Webview2ReferenceWin3209488Experimental]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Experimental - Reference (WebView2) | Microsoft Docs"  
+53]: ../reference/win32/0-9-488-reference-webview2.md#experimental "Experimental - Reference (WebView2) | Microsoft Docs"  
+[Webview2ReferenceWin3209538Experimental]: ../reference/win32/0-9-538-reference-webview2.md#experimental "Experimental - Reference (WebView2) | Microsoft Docs"  
 [Webview2Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  
