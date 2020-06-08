@@ -11,7 +11,7 @@ ms.author: "msedgedevrel"
 ---
 # Reference (JavaScript runtime)  
 
-[!INCLUDE [deprecation-note](includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 JavaScript Runtime (JsRT) APIs enable you to add scripting capabilities to desktop and server-side applications running on Windows.  
 
