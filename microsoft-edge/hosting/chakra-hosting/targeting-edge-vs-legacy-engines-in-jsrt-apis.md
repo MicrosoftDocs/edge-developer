@@ -90,7 +90,7 @@ If you're using .NET and P/Invoke, you must change your JsRT API [DllImport] dec
 
 For the legacy engine, use the following code.  
 
-```c-sharp
+```csharp
 [DllImport("jscript9.dll")]
 public static extern JsErrorCode JsCreateRuntime(
     JsRuntimeAttributes attributes,
@@ -114,7 +114,7 @@ public static extern JsErrorCode JsStartDebugging(
 
 For the Microsoft Edge engine, use the following code.  
 
-```c-sharp
+```csharp
 [DllImport("chakra.dll")]
 public static extern JsErrorCode JsCreateRuntime(
     JsRuntimeAttributes attributes,
