@@ -56,7 +56,7 @@ Because a user data folder can only be used by one browser process at a time, if
 
 Creates an evergreen WebView2 Environment using the installed Edge version.
 
-> public async Task< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md) > [CreateAsync](#createasync)(string browserExecutableFolder, string userDataFolder, CoreWebView2EnvironmentOptions options)
+> public static async Task< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md) > [CreateAsync](#createasync)(string browserExecutableFolder, string userDataFolder, CoreWebView2EnvironmentOptions options)
 
 ##### Parameters
 * `browserExecutableFolder` The relative path to the folder that contains the embedded Edge. 
