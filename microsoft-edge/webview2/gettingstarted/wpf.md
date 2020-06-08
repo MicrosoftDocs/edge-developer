@@ -329,7 +329,7 @@ Congratulations, you built your first WebView2 app!
 ## Next steps  
 
 * Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
-* Checkout [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) for more detailed information about our APIs
+* Checkout [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md) for more detailed information about our APIs
 * Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
 
 ## Getting in touch with the Microsoft Edge WebView team  
