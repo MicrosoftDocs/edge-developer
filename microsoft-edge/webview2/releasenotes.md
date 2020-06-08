@@ -29,7 +29,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 #### Win32 C/C++
 * Added [CoreWebView2NewWindowRequestedEventArgs.WindowFeatures]() which fires when window.open() is called. ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70 ))
 * **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails]() has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions]()
-* **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interface:
+* **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following:
   * [AreRemoteObjectsAllowed]() is now [AreHostObjectsAllowed]()
 * Updated [AddRemoteObject]() to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
