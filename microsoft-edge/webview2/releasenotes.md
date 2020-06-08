@@ -18,7 +18,6 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 
 [NuGet package][WebView2NuGetGallery0.X.XXX] | minimum Microsoft Edge version XX.X.XXX.X.
 
-**Re-compile your app after updating the NuGet package.**
 
 #### General
 * Dropping support for SDK Version [0.8.149](https://docs.microsoft.com/en-us/microsoft-edge/webview2/releasenotes#08149). We recommend staying up to date with the latest version of WebView2.
