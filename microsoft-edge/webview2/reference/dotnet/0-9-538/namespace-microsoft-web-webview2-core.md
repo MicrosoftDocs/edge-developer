@@ -83,7 +83,7 @@ SystemKeyUp            | Correspond to window message WM_SYSKEYUP.
 
 #### CoreWebView2MouseEventKind 
 
-> [NOTE!]
+> [!NOTE]
 > This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#0.9.538).
 
 Mouse event type used by SendMouseInput to convey the type of mouse event being sent to WebView.
@@ -111,7 +111,7 @@ XButtonUp            | First or second X button up mouse event, WM_XBUTTONUP.
 
 #### CoreWebView2MouseEventVirtualKeys 
 
-> [NOTE!]
+> [!NOTE]
 > This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#0.9.538).
 
 Mouse event virtual keys associated with a CoreWebView2MouseEventKind for SendMouseInput.
@@ -171,7 +171,7 @@ Deny            | Deny the permission request.
 
 #### CoreWebView2PointerEventKind 
 
-> [NOTE!]
+> [!NOTE]
 > This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#0.9.538).
 
 Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.

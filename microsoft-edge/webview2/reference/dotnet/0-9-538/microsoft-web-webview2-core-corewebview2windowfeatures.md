@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures class 
 
-> [NOTE!]
+> [!NOTE]
 > This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#0.9.538).
 
 Namespace: Microsoft.Web.WebView2.Core\
