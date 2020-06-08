@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,11 +23,13 @@ This represents the WebView2 Environment.
 --------------------------------|---------------------------------------------
 [BrowserVersionString](#browserversionstring) | The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | The NewBrowserVersionAvailable event fires when a newer version of the Edge browser is installed and available to use via WebView2.
+[CompareBrowserVersions](#comparebrowserversions) | Compare browser versions correctly to determine which version is newer, older or same.
 [CreateAsync](#createasync) | Creates an evergreen WebView2 Environment using the installed Edge version.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously create a new WebView for use with visual hosting.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty CoreWebView2ExperimentalPointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
@@ -52,11 +54,24 @@ To use the newer version of the browser you must create a new environment and We
 
 Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
 
+#### CompareBrowserVersions 
+
+Compare browser versions correctly to determine which version is newer, older or same.
+
+> public static int [CompareBrowserVersions](#comparebrowserversions)(string version1, string version2)
+
+Returns -1, 0 or 1 depending on whether version1 is less than, equal to or greater than version2, respectively.
+
+##### Parameters
+* `version1` One of the version strings to compare. 
+
+* `version2` The other version string to compare.
+
 #### CreateAsync 
 
 Creates an evergreen WebView2 Environment using the installed Edge version.
 
-> public async Task< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md) > [CreateAsync](#createasync)(string browserExecutableFolder, string userDataFolder, CoreWebView2EnvironmentOptions options)
+> public static async Task< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md) > [CreateAsync](#createasync)(string browserExecutableFolder, string userDataFolder, CoreWebView2EnvironmentOptions options)
 
 ##### Parameters
 * `browserExecutableFolder` The relative path to the folder that contains the embedded Edge. 
@@ -108,6 +123,15 @@ Create a new web resource response object.
 > public HttpResponseMessage [CreateWebResourceResponse](#createwebresourceresponse)(Stream Content, int StatusCode, string ReasonPhrase, string Headers)
 
 The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the CoreWebView2HttpResponseHeaders to construct the headers line by line. For information on other parameters see CoreWebView2WebResourceResponse.
+
+#### GetAvailableBrowserVersionString 
+
+Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
+
+> public static string [GetAvailableBrowserVersionString](#getavailablebrowserversionstring)(string browserExecutableFolder)
+
+##### Parameters
+* `browserExecutableFolder` The relative path to the folder that contains the embedded Edge.
 
 #### GetProviderForHwnd 
 
