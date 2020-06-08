@@ -44,14 +44,16 @@ If you have not already, [install Microsoft Edge (Chromium)][MicrosoftEdge].  If
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.  
 
-1.  Navigating to edge://settings/help to get the version of Edge.  
+1.  Go to `edge://settings/help` to get the version of Edge.  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="The build number for Microsoft Edge Canary on January 14, 2020"::: Figure 1.  The build number for Microsoft Edge Canary on January 14, 2020
+    :::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="The build number for Microsoft Edge Canary on January 14, 2020":::
+       Figure 1.  The build number for Microsoft Edge Canary on January 14, 2020
     :::image-end:::  
     
 1.  Navigate to the [Microsoft Edge Driver downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] page and download the driver that matches the Edge version number.  
     
-    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page"::: Figure 2.  The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page
+    :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page":::
+       Figure 2.  The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page
     :::image-end:::  
     
     > [!NOTE] 
