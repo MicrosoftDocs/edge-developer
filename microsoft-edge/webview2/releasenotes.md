@@ -31,7 +31,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 * Breaking Change: [CreateCoreWebView2EnvironmentWithDetails]() has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions]()
 * Breaking Change: In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following interface:
   * [AreRemoteObjectsAllowed]() is now [AreHostObjectsAllowed]()
-* Updated [AddRemoteObject]() to ensure original host object serializer markers are set to the proxy objects and serialized back as host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
+* Updated [AddRemoteObject]() to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
 #### .NET
 * Released WinForms and WPF WebView2API Samples - comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples)!
