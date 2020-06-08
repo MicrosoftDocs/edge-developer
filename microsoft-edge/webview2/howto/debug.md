@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# How to Debug when developing with WebView2 controls  
+# How to debug when developing with WebView2 controls  
 
 The goal of the Microsoft Edge WebView2 control is combining the best of both the web and native application development features and developer tools.  This article outlines the different tools to use when developing with WebView2 controls.  
 

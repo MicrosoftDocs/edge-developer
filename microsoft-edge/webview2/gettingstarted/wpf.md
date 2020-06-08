@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
-# Getting Started with WebView2 in WPF (Preview)  
+# Getting started with WebView2 in WPF (Preview)  
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/hosting/webview2/index).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
 
@@ -326,10 +326,10 @@ Press `F5` to build and run the app.  Now the address bar displays the URI in th
 
 Congratulations, you built your first WebView2 app!  
 
-## Next Steps  
+## Next steps  
 
 * Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
-* Checkout [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2) for more detailed information about our APIs
+* Checkout [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md) for more detailed information about our APIs
 * Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
 
 ## Getting in touch with the Microsoft Edge WebView team  

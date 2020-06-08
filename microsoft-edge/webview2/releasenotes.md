@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,13 +12,38 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Release notes for WebView2 SDK  
 
-Release notes for [WebView2 SDK][WebView2NuGetGallery].  
+The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGetGallery] on a 6 week cadence. This page will keep you up to date with: product announcements, additions and modifications to the API surface, and breaking changes.
+
+> [!IMPORTANT]
+> Re-compile your app after updating the NuGet package.
+
+## 0.9.538
+
+[NuGet package][WebView2NuGetGallery0.9.538] | minimum Microsoft Edge version 85.0.538.0.
+
+#### General
+
+* Dropping support for SDK Version [0.8.149](#08149). We recommend staying up to date with the latest version of WebView2.
+* Updated group policy to account for when the profile path of the Microsoft Edge browser is modified  ([#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179))
+
+#### Win32 C/C++
+
+* Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures](reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md#get_windowfeatures) which fires when window.open() is called and associated [ICoreWebView2ExperimentalWindowFeatures](reference/win32/0-9-538/icorewebview2experimentalwindowfeatures.md). ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70))
+* **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithdetails) has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions)
+* **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following:
+  * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) is now [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
+* Updated [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
+
+#### .NET
+
+* Released WinForms and WPF WebView2API Samples, which are comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
+* Added support for visual hosting and window features [experimental APIs](./concepts/versioning.md#experimental-apis)
+* **Breaking Change:** The following deferrals now implement IDisposable: [ScriptDialogOpening](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#scriptdialogopening), [NewWindowRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#newwindowrequested), [WebResourceRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#webresourcerequested), and [PermissionRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#permissionrequested).
+* Added [GetAvailableBrowserVersionString](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#getavailablebrowserversionstring) and [CompareBrowserVersions](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#comparebrowserversions) as [CoreWebView2Environment](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) statics.
 
 ## 0.9.515-prerelease
 
 [NuGet package][WebView2NuGetGallery0.9.515-prerelease] | minimum Microsoft Edge version 84.0.515.0.
-
-**Re-compile your app after updating the NuGet package.**
 
 * **Announcement:** WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**
 * Checkout the [WPF Getting Started Guide](./gettingstarted/wpf.md) to get started building WPF applications and our [WPF Reference](./reference/wpf/0-9-515-reference-webview2.md) for WPF specific APIs
@@ -31,8 +56,6 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 ## 0.9.488
 
 [NuGet package][WebView2NuGetGallery0.9.488] | minimum Microsoft Edge version 84.0.488.0.
-
-**Re-compile your app after updating the NuGet package.**
 
 * **Announcement:** Starting with the upcoming Microsoft Edge version 83, evergreen WebView will no longer target the Stable browser channel. Instead, it will target another set of binaries, branded [Microsoft Edge WebView2 Runtime](./concepts/distribution.md#microsoft-edge-webview2-runtime), that can be chain-installed through an installer we are currently developing. More details in [App-Distribution](./concepts/distribution.md).
 * **Announcement:** Moving forward, we will release two packages: a pre-release package with experimental APIs (for you to try out) and a stable release package with stable APIs (you can depend on). Checkout [Microsoft Edge WebView2 SDK](./concepts/versioning.md) to learn about the differences.
@@ -64,8 +87,6 @@ Release notes for [WebView2 SDK][WebView2NuGetGallery].
 
 [NuGet package][WebView2NuGetGallery0.9.430] | minimum Microsoft Edge version 82.0.430.0.
 
-**Re-compile your app after updating the NuGet package.**
-
 This SDK is our official Win32 C++ Beta version, which incorporates several feature requests we have received. We have tried to limit the number of releases with breaking changes, but as we approach our general availability we are using our Beta release to incorporate several major breaking changes in one go.
 
 * **Breaking Change:**  As we approach our final release we renamed the prefix *IWebView2WebView* to *ICoreWebView2* in order to make sure that our API aligns with the Windows API naming convention. Additionally, in order to make our SDK extensible to be used by UI frameworks, we have separated ICoreWebView2 into [ICoreWebView2](reference/win32/0-9-430/icorewebview2.md) and [ICoreWebView2Host](reference/win32/0-9-430/icorewebview2host.md). ICoreWebView2Host supports resizing, showing and hiding, focusing, and other functionality related to windowing and composition. ICoreWebView2 supports all other WebView2 functionality. To learn more about incorporating these changes, checkout our [pull request](https://github.com/MicrosoftEdge/WebView2Samples/pull/17) in our [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples) project.
@@ -90,8 +111,6 @@ This SDK is our official Win32 C++ Beta version, which incorporates several feat
 
 [NuGet package][WebView2NuGetGallery0.8.355] | minimum Microsoft Edge version 80.0.355.0.
 
-**Re-compile your app after updating the NuGet package.**
-
 * Released WebView2API Sample - a comprehensive guide of our SDK. Check it out [here](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample)!
 * Added IME support for all languages besides English. ([#30](https://github.com/MicrosoftEdge/WebViewFeedback/issues/30))
 * Updated the API surface of the WebResourceRequested event in response to bug reports.  Simultaneously specifying a filter and an event on creation is now deprecated.  To create a web resource requested event, use [add_WebResourceRequested](reference/win32/0-8-190/iwebview2webview5.md#add_webresourcerequested) to add the event and [AddWebResourceRequestedFilter](reference/win32/0-8-190/iwebview2webview5.md#addwebresourcerequestedfilter) to add a filter.  [RemoveWebResourceRequestedFilter](reference/win32/0-8-190/iwebview2webview5.md#removewebresourcerequestedfilter) removes the filter.  ([#36](https://github.com/MicrosoftEdge/WebViewFeedback/issues/36)) ([#74](https://github.com/MicrosoftEdge/WebViewFeedback/issues/74))  
@@ -100,8 +119,6 @@ This SDK is our official Win32 C++ Beta version, which incorporates several feat
 ## 0.8.314
 
 [NuGet package][WebView2NuGetGallery0.8.314] | minimum Microsoft Edge version 80.0.314.0.
-
-**Re-compile your app after updating the NuGet package.**
 
 * Added support for Windows 7, Windows 8/8.1.
 * Added Visual Studio and Visual Studio Code debug support for WebView2. Now, you can debug your script in the WebView2 right from your IDE. Click [here](/microsoft-edge/hosting/webview2#debugging-webview2) for more details.  
@@ -114,8 +131,6 @@ This SDK is our official Win32 C++ Beta version, which incorporates several feat
 ## 0.8.270  
 
 [NuGet package][WebView2NuGetGallery0.8.270] | minimum Microsoft Edge version 78.0.270.0.  
-
-**Re-compile your app after updating the NuGet package.**
 
 * Added `DocumentTitleChanged` event to indicate document title change \([\#27][MicrosoftEdgeWebViewFeedbackIssue27]\).  
 * Added `GetWebView2BrowserVersionInfo` API \([\#18][MicrosoftEdgeWebViewFeedbackIssue18]\).  
@@ -130,8 +145,6 @@ This SDK is our official Win32 C++ Beta version, which incorporates several feat
 
 [NuGet package][WebView2NuGetGallery0.8.230] | minimum Microsoft Edge version 77.0.230.0.  
 
-**Re-compile your app after updating the NuGet package.**
-
 * Added `Stop` API to stop all navigation and pending resource fetches \([\#28][MicrosoftEdgeWebViewFeedbackIssue28]\).  
 * Added .tlb file to the Nuget package \([\#22][MicrosoftEdgeWebViewFeedbackIssue22]\).  
 * Added .NET projects to the installer list in the NuGet package \([\#32][MicrosoftEdgeWebViewFeedbackIssue32]\).  
@@ -139,8 +152,6 @@ This SDK is our official Win32 C++ Beta version, which incorporates several feat
 ## 0.8.190  
 
 [NuGet package][WebView2NuGetGallery0.8.190] | minimum Microsoft Edge version 77.0.190.0.  
-
-**Re-compile your app after updating the NuGet package.**
 
 * Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users are able to open DevTools \([\#16][MicrosoftEdgeWebViewFeedbackIssue16]\).  
 * Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][MicrosoftEdgeWebViewFeedbackIssue19]\).  
@@ -182,5 +193,6 @@ Initial developer preview release.
 [WebView2NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.430"
 [WebView2NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.488"
 [WebView2NuGetGallery0.9.515-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.515 prerelease"
+[WebView2NuGetGallery0.9.538]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.538"
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/win32/0-8-190/webview2-idl.md#createwebview2environmentwithdetails "WebView Globals - CreateWebView2EnvironmentWithDetails function"  
