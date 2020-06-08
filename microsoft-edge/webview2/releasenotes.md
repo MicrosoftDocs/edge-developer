@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/19/2020
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Release notes for WebView2 SDK  
 
-The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGetGallery] on a 6 week cadence. This page will keep you up to date with: product announcements, additions and modifications to the API surface, and breaking changes. 
+The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGetGallery] on a 6 week cadence. This page will keep you up to date with: product announcements, additions and modifications to the API surface, and breaking changes.
 
 > [!IMPORTANT]
 > Re-compile your app after updating the NuGet package.
@@ -21,23 +21,25 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 
 [NuGet package][WebView2NuGetGallery0.9.538] | minimum Microsoft Edge version 85.0.538.0.
 
-
 #### General
+
 * Dropping support for SDK Version [0.8.149](#08149). We recommend staying up to date with the latest version of WebView2.
 * Updated group policy to account for when the profile path of the Microsoft Edge browser is modified  ([#179](https://github.com/MicrosoftEdge/WebViewFeedback/issues/179))
 
 #### Win32 C/C++
-* Added [CoreWebView2NewWindowRequestedEventArgs.WindowFeatures]() which fires when window.open() is called. ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70 ))
-* **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails]() has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions]()
+
+* Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures](reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md#get_windowfeatures) which fires when window.open() is called and associated [ICoreWebView2ExperimentalWindowFeatures](reference/win32/0-9-538/icorewebview2experimentalwindowfeatures). ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70))
+* **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithdetails) has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions)
 * **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following:
-  * [AreRemoteObjectsAllowed]() is now [AreHostObjectsAllowed]()
-* Updated [AddHostObjectToScript](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
+  * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings#get_areremoteobjectsallowed) is now [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings#get_arehostobjectsallowed)
+* Updated [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
 #### .NET
+
 * Released WinForms and WPF WebView2API Samples, which are comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
 * Added support for visual hosting and window features [experimental APIs](./concepts/versioning.md#experimental-apis)
-* **Breaking Change:** The following deferrals now implement IDisposable: [ScriptDialogOpening](), [NewWindowRequested](), [WebResourceRequested](), and [PermissionRequested]().
-* Added [GetAvailableBrowserVersionString]() and [CompareBrowserVersions]() as [CoreWebView2Environment]() statics.
+* **Breaking Change:** The following deferrals now implement IDisposable: [ScriptDialogOpening](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#scriptdialogopening), [NewWindowRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#newwindowrequested), [WebResourceRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#webresourcerequested), and [PermissionRequested](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#permissionrequested).
+* Added [GetAvailableBrowserVersionString](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#getavailablebrowserversionstring) and [CompareBrowserVersions](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#comparebrowserversions) as [CoreWebView2Environment](reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md) statics.
 
 ## 0.9.515-prerelease
 
