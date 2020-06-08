@@ -34,7 +34,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 * Updated [AddRemoteObject]() to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
 #### .NET
-* Released WinForms and WPF WebView2API Samples - comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples)!
+* Released WinForms and WPF WebView2API Samples, which are comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
 * Added support for the following [experimental APIs](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/versioning#experimental-apis): 
 * **Breaking Change:** The following deferrals now implement IDisposable: [ScriptDialogOpening](), [NewWindowRequested](), [WebResourceRequested](), and [PermissionRequested]().
 * Added [GetAvailableBrowserVersionString]() and [CompareBrowserVersions]() as [CoreWebView2Environment]() statics.
