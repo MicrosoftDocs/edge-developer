@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 06/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -18,8 +18,8 @@ Select the Languages and Framework of WebView2 you would like to use below:
 
 ## Languages and Frameworks
 
-* [Win32 C++](reference/win32/0-9-488-reference-webview2.md)
+* [Win32 C++](reference/win32/0-9-538-reference-webview2.md)
 * .NET
-  * [Core](reference/dotnet/0-9-515-reference-webview2.md)
+  * [Core](reference/dotnet/0-9-538-reference-webview2.md)
   * [Windows Forms](reference/winforms/0-9-515-reference-webview2.md)
   * [WPF](reference/wpf/0-9-515-reference-webview2.md)
