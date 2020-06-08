@@ -28,11 +28,11 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 
 #### Win32 C/C++
 
-* Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures](reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md#get_windowfeatures) which fires when window.open() is called and associated [ICoreWebView2ExperimentalWindowFeatures](reference/win32/0-9-538/icorewebview2experimentalwindowfeatures). ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70))
+* Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures](reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md#get_windowfeatures) which fires when window.open() is called and associated [ICoreWebView2ExperimentalWindowFeatures](reference/win32/0-9-538/icorewebview2experimentalwindowfeatures.md). ([#70](https://github.com/MicrosoftEdge/WebViewFeedback/issues/70))
 * **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails](reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithdetails) has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions](reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions)
 * **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following:
-  * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings#get_areremoteobjectsallowed) is now [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings#get_arehostobjectsallowed)
-* Updated [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
+  * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) is now [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
+* Updated [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
 #### .NET
 

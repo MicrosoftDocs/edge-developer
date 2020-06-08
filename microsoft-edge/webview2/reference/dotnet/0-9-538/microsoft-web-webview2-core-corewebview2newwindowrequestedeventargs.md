@@ -63,7 +63,7 @@ The target webview should not be navigated. If the NewWindow is set, its top lev
 #### WindowFeatures 
 
 > [!NOTE]
-> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#0.9.538).
+> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).
 
 Window features specified by the window.open call.
 
