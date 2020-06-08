@@ -31,7 +31,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 * **Breaking Change:** [CreateCoreWebView2EnvironmentWithDetails]() has been deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions]()
 * **Breaking Change:** In order to ensure that our API aligns with the Windows API naming conventions, we have updated the names of the following:
   * [AreRemoteObjectsAllowed]() is now [AreHostObjectsAllowed]()
-* Updated [AddRemoteObject]() to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
+* Updated [AddHostObjectToScript](./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
 #### .NET
 * Released WinForms and WPF WebView2API Samples, which are comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
@@ -191,5 +191,6 @@ Initial developer preview release.
 [WebView2NuGetGallery0.9.430]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.430 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.430"
 [WebView2NuGetGallery0.9.488]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.488"
 [WebView2NuGetGallery0.9.515-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.515 prerelease"
+[WebView2NuGetGallery0.9.538]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.538"
 
 [WebViewsGlobalsCreateWebView2EnvironmentWithDetails]: reference/win32/0-8-190/webview2-idl.md#createwebview2environmentwithdetails "WebView Globals - CreateWebView2EnvironmentWithDetails function"  
