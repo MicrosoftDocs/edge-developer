@@ -14,6 +14,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGetGallery] on a 6 week cadence. This page will keep you up to date with: product announcements, additions and modifications to the API surface, and breaking changes. 
 
+> [!IMPORTANT]
+> Re-compile your app after updating the NuGet package.
+
 ## 0.X.XXX
 
 [NuGet package][WebView2NuGetGallery0.X.XXX] | minimum Microsoft Edge version XX.X.XXX.X.
