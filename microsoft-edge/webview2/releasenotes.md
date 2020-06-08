@@ -17,9 +17,9 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 > [!IMPORTANT]
 > Re-compile your app after updating the NuGet package.
 
-## 0.X.XXX
+## 0.9.538
 
-[NuGet package][WebView2NuGetGallery0.X.XXX] | minimum Microsoft Edge version XX.X.XXX.X.
+[NuGet package][WebView2NuGetGallery0.9.538] | minimum Microsoft Edge version 85.0.538.0.
 
 
 #### General
