@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/03/2020
+ms.date: 06/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -144,7 +144,7 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
     
 ## Debugging Media Queries  
 
-[Media Queries][MDNUsingMediaGueries] are a way to make your web product react to changes in your end users's configuration.  The biggest use case is to provide your product a different CSS layout depending on the dimension of the viewport.  Using separate layouts allows for a one column layout for mobile devices and multi-column layouts when there is more screen estate available.  
+[Media Queries][MDNUsingMediaGueries] are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.  Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.  
 
 If you want to debug or test the Media Queries you defined in your CSS, use the following steps.  
 
@@ -172,7 +172,6 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
        Figure 11:  Revealing Media Queries in Sources Editor  
     :::image-end:::  
     
-<!-- image links -->  
 <!-- links -->  
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
