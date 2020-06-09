@@ -670,7 +670,7 @@ This method does not return a value.
 
 |  |  |  
 |:--- |:--- |  
-| **Minimum supported client** | Windows 10 [Windows Store apps only] |    
+| **Minimum supported client** | Windows 10 (Windows Store apps only) |    
 | **Minimum supported server** | None supported |   
 | **Minimum supported phone** | None supported |  
 
@@ -819,7 +819,7 @@ The specified deferred permission request.
 
 |  | |  
 |:--- |:--- |  
-| **Minimum supported client** | Windows 10 [Windows Store apps only] |  
+| **Minimum supported client** | Windows 10 (Windows Store apps only) |  
 | **Minimum supported server** | None supported |  
 | **Minimum supported phone** | None supported |  
 
@@ -849,7 +849,7 @@ The specified deferred permission request.
 
 |  |  |  
 |:--- |:--- |  
-| **Minimum supported client** | Windows 10 [Windows Store apps only] |  
+| **Minimum supported client** | Windows 10 (Windows Store apps only) |  
 | **Minimum supported server** | None supported |  
 | **Minimum supported phone** | None supported |  
 
