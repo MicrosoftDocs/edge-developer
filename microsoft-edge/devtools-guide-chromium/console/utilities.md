@@ -2,7 +2,7 @@
 title:  Console Utilities API Reference
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date: 06/09/2020
+ms.date: 06/10/2020
 ms.topic:  article
 ms.prod:  microsoft-edge
 keywords:  microsoft edge, web development, f12 tools, devtools
@@ -116,7 +116,7 @@ In the following figure, a reference to the first `<img>` element in the documen
    Figure 5:  The `$('img')`  
 :::image-end:::  
 
-Right-click on the returned result and select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.  
+Hover on the returned result, open the contextual menu \(right-click\), and select **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.  
 
 In the following figure, a reference to the currently selected element is returned and the src property is displayed.  
 
