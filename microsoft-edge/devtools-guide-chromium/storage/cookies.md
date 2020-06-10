@@ -2,7 +2,7 @@
 title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,110 +21,82 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# View, edit, and delete cookies with Microsoft Edge DevTools  
 
+[HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  Cookies are also the cause of all of the annoying "this page uses cookies" consent forms that you see across the web.  The following guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
-
-
-# View, Edit, And Delete Cookies With Microsoft Edge DevTools   
-
-  
-
-[HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  They are also the cause of all of those annoying "this page uses cookies" consent forms that you see across the web.  This guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
-
-## Open the Cookies pane   
+## Open the Cookies pane  
 
 1.  [Open DevTools][DevToolsOpen].  
 1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane should open.  
     
-    > ##### Figure 1  
-    > The Manifest pane  
-    > ![The Manifest pane][ImageManifest]  
+    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest-empty.msft.png":::
+       Figure 1:  The Manifest pane  
+    :::image-end:::  
 
 1.  Under **Storage** expand **Cookies**, then select an origin.  
     
-    > ##### Figure 2  
-    > The Cookies pane  
-    > ![The Cookies pane][ImageCookies]  
+    :::image type="complex" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="The Cookies pane" lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
+       Figure 2:  The Cookies pane  
+    :::image-end:::  
 
-## Fields   
+## Fields  
 
-The **Cookies** table contains the following fields:  
+The **Cookies** table contains the following fields.  
 
-[scope]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Scope_of_cookies
-[permanent]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Permanent_cookies
-[session]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Session_cookies
-[secure]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies
-[samesite]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies
-[priority]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693
+*   **Name**.  The name of the cookie.  
+*   **Value**.  The value of the cookie.  
+*   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent].  For [session cookies][MDNHTTPCookiesSession] this value is always `Session`.  
+*   **Size**.  The size, in bytes, of the cookie.  
+*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure].  
+*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies][MDNHTTPCookiesSecure].  
+*   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.  
+*   **Priority**.  Contains `low`, `medium` \(default\), or `high` if the cookie is using the depreciated [cookie Priority][ChromiumIssue232693] attribute.
 
-* **Name**. The cookie's name.
-* **Value**. The cookie's value.
-* **Domain**. The hosts that are allowed to receive the cookie. See [Scope of cookies][scope].
-* **Path**. The URL that must exist in the requested URL in order to send the `Cookie` header.
-  See [Scope of cookies][scope].
-* **Expires / Max-Age**. The cookie's expiration date or maximum age. See
-  [Permanent cookies][permanent]
-  this value is always `Session`.
-* **Size**. The cookie's size, in bytes.
-* **HTTP**. If true, this field indicates that the cookie should only be used over HTTP, and
-  JavaScript modification is not allowed. See [HttpOnly cookies][secure].
-* **Secure**. If true, this field indicates that the cookie can only be sent to the server
-  over a secure, HTTPS connection. See [Secure cookies][secure].
-* **SameSite**. Contains `strict` or `lax` if the cookie is using the experimental
-  [SameSite][samesite] attribute.
-* **Priority**. Contains `low`, `medium` (default), or `high` if using depreciated [cookie Priority](https://bugs.chromium.org/p/chromium/issues/detail?id=232693) attribute.  
-
-## Filter cookies   
+## Filter cookies  
 
 Use the **Filter** text box to filter cookies by **Name** or **Value**.  Filtering by other fields is not supported.  
 
-> ##### Figure 3  
-> Filtering out any cookies that do not contain the text `ID`  
-> ![Filtering out any cookies that do not contain the text ID][ImageCookiesFilter]  
+:::image type="complex" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtering out any cookies that do not contain the text ID" lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+   Figure 3:  Filtering out any cookies that do not contain the text `ID`  
+:::image-end:::  
 
-## Edit a cookie   
+## Edit a cookie  
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  
 Double-click a field to edit it.  
 
-> ##### Figure 4  
-> Setting the name of a cookie to `DEVTOOLS!`  
-> ![Setting the name of a cookie to DEVTOOLS!][ImageEditCookie]  
+:::image type="complex" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Setting the name of a cookie to DEVTOOLS!" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
+   Figure 4:  Setting the name of a cookie to `DEVTOOLS!`  
+:::image-end:::  
 
-## Delete cookies   
+## Delete cookies  
 
-Select a cookie and then click **Delete Selected** ![Delete Selected][ImageDeleteIcon]  to delete that one cookie.  
+Select a cookie and select **Delete Selected** ![Delete Selected][ImageDeleteIcon]  to delete the specific cookie.  
 
-> ##### Figure 5  
-> Deleting a specific cookie  
-> ![Deleting a specific cookie][ImageDeleteCookie]  
+:::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Deleting a specific cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
+   Figure 5:  Deleting a specific cookie  
+:::image-end:::  
 
 Select **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.  
 
-> ##### Figure 6  
-> Clearing all cookies  
-> ![Clearing all cookies][ImageClearAllCookies]  
-
-<!--    -->  
-
-  
+:::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Clearing all cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
+   Figure 6:  Clearing all cookies  
+:::image-end:::  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest-empty.msft.png "Figure 1: The Manifest pane"  
-[ImageCookies]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-selected.msft.png "Figure 2: The Cookies pane"  
-[ImageCookiesFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-filter-id.msft.png "Figure 3: Filtering out any cookies that do not contain the text ID"  
-[ImageEditCookie]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-rename.msft.png "Figure 4: Setting the name of a cookie to DEVTOOLS!"  
-[ImageDeleteCookie]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-delete-selected.msft.png "Figure 5: Deleting a specific cookie"  
-[ImageClearAllCookies]: /microsoft-edge/devtools-guide-chromium/media/storage-application-storage-cookies-clear-all.msft.png "Figure 6: Clearing all cookies"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
+
+[ChromiumIssue232693]: https://bugs.chromium.org/p/chromium/issues/detail?id=232693 "Chromium Issue 232693: Implementing Priority Field for Cookies | Chromium Bugs"  
 
 [MDNHTTPCookies]: https://developer.mozilla.org/docs/Web/HTTP/Cookies "HTTP cookies | MDN"  
 [MDNHTTPCookiesPermanent]: https://developer.mozilla.org/docs/Web/HTTP/Cookies#Permanent_cookies "HTTP cookies - Permanent cookies | MDN"  
