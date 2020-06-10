@@ -510,10 +510,10 @@ Return an array of objects created with the specified constructor.  The scope of
    :::column-end:::
    :::column span="1":::
       ```console
-      queryObjects(functionsName)
+      queryObjects(functionName)
       ```  
       
-      Returns all objects that were instantiated using `new functionsName()`.  
+      Returns all objects that were instantiated using `new functionName()`.  
    :::column-end:::
 :::row-end:::  
 
