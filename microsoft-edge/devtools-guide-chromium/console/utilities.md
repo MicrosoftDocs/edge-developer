@@ -248,7 +248,7 @@ debug("debug");
 ```  
 
 :::image type="complex" source="../media/console-debug-text.msft.png" alt-text="Breaking inside a method with debug()" lightbox="../media/console-debug-text.msft.png":::
-   Figure 13:  Breaking inside a method with debug()  
+   Figure 13:  Breaking inside a method with `debug()`  
 :::image-end:::  
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to disable all breakpoints.  

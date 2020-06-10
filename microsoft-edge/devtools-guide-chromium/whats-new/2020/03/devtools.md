@@ -248,8 +248,8 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->  
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="The "Show only the minimum safe area for maskable icons" checkbox" lightbox="../../media/2020/03/maskable-icons.msft.png":::
-   Figure 17:  The "Show only the minimum safe area for maskable icons" checkbox  
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="The Show only the minimum safe area for maskable icons checkbox" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+   Figure 17:  The **Show only the minimum safe area for maskable icons** checkbox  
 :::image-end:::  
 
 > [!NOTE]
