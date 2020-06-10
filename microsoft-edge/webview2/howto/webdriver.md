@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
 ---
 
-# Automating and Testing WebView2 with Microsoft Edge Driver
+# Automating and testing WebView2 with Microsoft Edge Driver
 
 Because WebView2 utilizes the Chromium web platform, WebView2 developers can take advantage of standard web tooling for debugging and automation. One such tool is Selenium, which implements the W3C [WebDriver](https://www.w3.org/TR/webdriver2/) API, which can be used to create automated tests that simulate user interactions.
 
@@ -126,7 +126,7 @@ You can copy and paste the following code underneath `edgeOptions`. Make sure to
 
 Congratulations! You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.
 
-## Next Steps
+## Next steps
 
 To learn more:
 
