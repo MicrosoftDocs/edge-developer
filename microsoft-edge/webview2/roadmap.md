@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Microsoft Edge WebView2 Roadmap
+# Microsoft Edge WebView2 roadmap
 
 ##### Last Updated: May 2020
 
@@ -34,11 +34,11 @@ The WebView2 team has a few major efforts underway:
 
 WebView2 [Evergreen](./concepts/distribution.md#microsoft-edge-webview2-runtime) distribution model will allow you to target or chain install the WebView2 Runtime onto your user's machine. A preview of the WebView2 Runtime and installer is expected to be available Q3 2020 and GA in Q4 2020.
 
-## Fixed Version
+## Fixed version
 
 WebView2 [Fixed](./concepts/distribution.md#roadmap) distribution model allows you to package the Microsoft Edge binaries inside your native application. Engineering work is currently under way with a preview anticipated to be ready towards the end of  Q3 2020 and GA Q4 2020.
 
-## General Availability 
+## General availability 
 
 ### Win32 C/C++
 
