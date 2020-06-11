@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -151,7 +151,7 @@ Emulate locales by setting a location in **Sensors** > **Location**. [Open the *
 *   The [`Accept-Language`][MDNAcceptLanguage] HTTP request header  
 
 > [!NOTE]
-> Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page reload.  Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.  
+> Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page refresh.  Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.  
 
 :::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulating a locale" lightbox="../../media/2020/03/locale.msft.png":::
    Figure 10:  Emulating a locale  

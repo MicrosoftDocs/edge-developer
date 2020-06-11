@@ -466,7 +466,8 @@ More information about each of the phases you may see in the **Timing** tab.
 *   **Request sent**.  The request is being sent.  
 *   **ServiceWorker Preparation**.  The browser is starting up the service worker.  
 *   **Request to ServiceWorker**.  The request is being sent to the service worker.  
-*   **Waiting \(TTFB\)**.  The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
+*   **Waiting \(TTFB\)**.  The browser is waiting for the first byte of a response.  
+  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
 *   **Content Download**.  The browser is receiving the response.  
 *   **Receiving Push**.  The browser is receiving data for this response via HTTP/2 Server Push.  
 *   **Reading Push**.  The browser is reading the local data previously received.  
