@@ -2,7 +2,7 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -68,7 +68,7 @@ Capture screenshots to analyze what users see as they wait for your page to load
 
 To enable screenshots, select **Network settings** and select **Capture screenshots** checkbox on the **Network** panel.  
 
-Reload the page while the **Network** panel is in focus to capture screenshots.  
+Refresh the page while the **Network** panel is in focus to capture screenshots.  
 
 After capturing a screenshot, you interact with it in the following ways.  
 

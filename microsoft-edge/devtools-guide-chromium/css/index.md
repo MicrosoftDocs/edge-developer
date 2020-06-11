@@ -2,7 +2,7 @@
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/09/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -32,7 +32,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
     [CSS Examples][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in [Figure 1](#figure-1)\), select **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
+    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in the following figure\), select **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
     
 ## View the CSS for an element  
 
