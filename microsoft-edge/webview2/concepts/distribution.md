@@ -26,13 +26,13 @@ We recognize that the Edge browser may not be available on all user machines whe
 
 Below is a suggested workflow for developers, and depending on the exact scenario, app can choose to do some variation of it, such as pulling the evergreen WebView2 installer dynamically from CDN rather than carried with the app installer.
 
-1. The app installer/updater carries the evergreen installer, and checks if any platform is already installed.
+1. The app installer/updater carries the evergreen installer, and checks if the Runtime is already installed.
 2. If none is installed, invoke the installer.
 3. After WebView2 runtime is successfully installed, start the app and create WebView2 windows.
 
 **Insert sample code or step-by-step guides**
 
-**Note**: currently evergreen WebView2 Runtime and its installer is **under preview**, which has a limited initial scope - Win10-only, x64-only, per-machine-install-only, standalone-installer-only. Over time, more support such as Win7 and x86/ARM64 will be added to the preview. During preview, the platform Runtime contains is currently in sync with Edge Dev (as in, Runtime and Edge Dev ship/update  on the same cadence roughly and have the same builds) so that we can get early changes to developers and iterate on the product faster. The Runtime will migrate to be in sync with Edge Beta later, and eventually Edge Stable when WebView2 GA. This transition on the Runtime happens automatically without any effort or re-deployment from the developer. In teh future when WebView2 GA and apps goes into production, WebView2 Runtime should be the platform evergreen apps target, rather than non-stable browser channels.
+**Note**: currently evergreen WebView2 Runtime and its installer is **under preview**, which has a limited initial scope - Win10-only, x64-only, per-machine-install-only, standalone-installer-only. Over time, more support such as Win7 and x86/ARM64 will be added to the preview. During preview, the platform Runtime contains is currently in sync with Edge Dev (as in, Runtime and Edge Dev ship/update  on the same cadence roughly and have the same builds) so that we can get early changes to developers and iterate on the product faster. The Runtime will migrate to be in sync with Edge Beta later, and eventually Edge Stable when WebView2 GA. This transition on the Runtime happens automatically without any effort or re-deployment from the developer. In the future when WebView2 GA and apps goes into production, WebView2 Runtime should be the platform evergreen apps target, rather than non-stable browser channels.
 
 During WebView2 preview phrase, we recommend developers to at least use the WebView2 Runtime and installer to develop/test your app setup pipeline. You can also develop your WebView2 app targeting the Runtime, but beware that as Runtime begins to stabilize and be in sync with Beta and Stable, it may not always satisfy the minimum build requirement when a new preview SDK is released. If you always want to use the latest preview SDK WebView2 provides, consider using Edge Canary.
 
