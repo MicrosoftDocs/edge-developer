@@ -46,8 +46,6 @@ productDirectory:
       links:
         - url: /deployedge/microsoft-edge-channels
           text: Microsoft Edge channel overview
-        - url: https://www.microsoftedgeinsider.com/download
-          text: Download a Microsoft Edge channel
         - url: /deployedge/edge-ie-mode
           text: Use enterprise features
     # Card
@@ -74,7 +72,7 @@ productDirectory:
       links:
         - url: /deployedge/security-overview
           text: Security
-        - url: /deployedge/microsoft-edge-privacy-policy
+        - url: /deployedge/microsoft-edge-enterprise-privacy-settings
           text: Privacy
     # Card
     - title: Policy reference
@@ -270,13 +268,13 @@ conceptualContent:
     # Card
     - title: WebView2
       links:
-        - url: /microsoft-edge/hosting/webview2
+        - url: /microsoft-edge/webview2/index
           itemType: reference
           text: Overview
-        - url: /microsoft-edge/hosting/webview2/gettingstarted
+        - url: /microsoft-edge/webview2/gettingstarted/win32
           itemType: reference
           text: Getting Started with WebView2
-        - url: /microsoft-edge/hosting/webview2/reference-webview2
+        - url: /microsoft-edge/webview2/webview2-api-reference
           itemType: reference
           text: Reference
           
@@ -316,7 +314,7 @@ additionalContent:
             - text: JavaScript Runtime Hosting
               url: /microsoft-edge/hosting/javascript-runtime-hosting
             - text: WebVR Developer Guide
-              url: /webvr/webvr-docs/index
+              url: /microsoft-edge/webvr/index
             - text: Windows Runtime (WinRT)
               url: /microsoft-edge/windows-runtime
     - title: Help & Support # < 60 chars (optional)

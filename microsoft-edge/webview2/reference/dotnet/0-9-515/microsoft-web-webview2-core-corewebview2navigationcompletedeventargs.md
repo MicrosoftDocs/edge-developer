@@ -1,0 +1,52 @@
+---
+description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+title: Microsoft Edge WebView2 for Win32 apps
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/12/2020
+ms.topic: reference
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+---
+
+# Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs class 
+
+> [!NOTE]
+> This reference may be altered or unavailable for releases after SDK version 0.9.515. Please refer to [WebView2 API reference](../../../webview2-api-reference.md) for the latest API reference.
+
+Namespace: Microsoft.Web.WebView2.Core\
+Assembly: Microsoft.Web.WebView2.Core.dll
+
+Event args for the NavigationCompleted event.
+
+## Summary
+
+ Members                        | Descriptions
+--------------------------------|---------------------------------------------
+[IsSuccess](#issuccess) | True when the navigation is successful.
+[NavigationId](#navigationid) | The ID of the navigation.
+[WebErrorStatus](#weberrorstatus) | The error code if the navigation failed.
+
+## Members
+
+#### IsSuccess 
+
+True when the navigation is successful.
+
+> public bool [IsSuccess](#issuccess)
+
+This is false for a navigation that ended up in an error page (failures due to no network, DNS lookup failure, HTTP server responds with 4xx), but could also be false for additional things such as window.stop() called on navigated page.
+
+#### NavigationId 
+
+The ID of the navigation.
+
+> public ulong [NavigationId](#navigationid)
+
+#### WebErrorStatus 
+
+The error code if the navigation failed.
+
+> public CoreWebView2WebErrorStatus [WebErrorStatus](#weberrorstatus)
+

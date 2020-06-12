@@ -12,6 +12,10 @@ keywords: microsoft edge, web development, f12 tools, devtools, remote debugging
 
 In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app][AndroidEdge] on a [Surface Duo][SurfaceDuo] emulator from a desktop instance of [Microsoft Edge][DesktopEdge]. For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices][RemoteDebuggingAndroid].
 
+## Before you Begin
+
+Install the [Surface Duo SDK][DuoSdk] before running the [Surface Duo emulator][DuoEmulator]. For more information, see [Get the Surface Duo SDK][DuoSdkdocs].
+
 ## Step 1: Navigate to edge://inspect
 
 Open a desktop instance of [Microsoft Edge][DesktopEdge], and navigate to `edge://inspect`.
@@ -21,14 +25,11 @@ Open a desktop instance of [Microsoft Edge][DesktopEdge], and navigate to `edge:
 > ![The edge://inspect page in Microsoft Edge on the desktop][ImageEdgeInspect]
 
 > [!NOTE]
-> The `edge://inspect` page may not recognize the [Surface Duo emulator][DuoEmulator] if you launch the emulator first and then navigate to the `edge://inspect` page. Follow the steps in order to avoid having to restart the emulator.
+> If the `edge://inspect` page does not recognize the [Surface Duo emulator][DuoEmulator], restart the emulator.
 
 ## Step 2: Launch the Surface Duo emulator
 
-> [!IMPORTANT]
-> You must get the [Surface Duo SDK][DuoSdk] in order to successfully run the [Surface Duo emulator][DuoEmulator]. Check out [this guide for the Surface Duo SDK][DuoSdkdocs] first before trying the remaining steps.
-
-Launch the [Surface Duo emulator][DuoEmulator].
+Launch the [Surface Duo emulator][DuoEmulator]. Notice that the emulator displays 2 different screens running on the emulator.
 
 > ##### Figure 2
 > The Surface Duo emulator
@@ -36,7 +37,7 @@ Launch the [Surface Duo emulator][DuoEmulator].
 
 ## Step 3: Load your web content in Microsoft Edge on the Surface Duo emulator
 
-Drag the Favorites Tray up on either screen of the [Surface Duo emulator][DuoEmulator] to pull up the Apps Drawer. Click **Edge** to launch the [Microsoft Edge app][AndroidEdge] app on the emulator.
+On either screen, swipe up on the Favorites Tray of the [Surface Duo emulator][DuoEmulator] to display the Apps Drawer. Choose **Edge** to launch the [Microsoft Edge app][AndroidEdge].
 
 > ##### Figure 3
 > The Microsoft Edge app on the Surface Duo emulator
@@ -44,7 +45,7 @@ Drag the Favorites Tray up on either screen of the [Surface Duo emulator][DuoEmu
 
 Navigate to the website or app that you want to debug in the [Microsoft Edge app][AndroidEdge].
 
-## Step 4: Debug your web content from the Surface Duo emulator in desktop Microsoft Edge
+## Step 4: Debug your web content from the Surface Duo emulator 
 
 Switch back to the desktop instance of [Microsoft Edge][DesktopEdge]. The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs][PwaDocs] that are running on the [Surface Duo emulator][DuoEmulator].
 
