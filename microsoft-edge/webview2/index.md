@@ -21,7 +21,7 @@ The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML
 > [!NOTE]
 > The WebView2 Preview is intended for early prototyping and to gather feedback to help to shape the API.  The Microsoft Edge WebView team does not recommend that you use the preview in your production apps because there may be [breaking changes](./releasenotes.md).  
 
-## Hybrid Application Approach  
+## Hybrid application approach  
 
 Developers often have to choose between building a web application or a native application.  The decision hinges on the trade-off between reach and power.  Web applications allow for a broad reach.  As a Web developer, you may reuse most, if not all of your code, across all different platforms.  Native applications, however, utilize the capabilities of the entire native platform.  
 
@@ -31,7 +31,7 @@ Developers often have to choose between building a web application or a native a
 
 Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid application developers benefit from the ubiquity and strength of the web platform, and the power and full capabilities of the native platform.  
 
-## WebView2 Benefits   
+## WebView2 benefits   
 
 :::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="WebView reasons":::
    WebView reasons  
@@ -43,11 +43,11 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.  
    :::column-end:::
    :::column span="1":::
-      **Rapid Innovation**  
+      **Rapid innovation**  
       Web development allows for faster deployment and iteration.  
    :::column-end:::
    :::column span="1":::
-      **Windows 7, 8, 10 Support**  
+      **Windows 7, 8, 10 support**  
       Support for a consistent user experience across Windows 7, 8, and 10.  
    :::column-end:::
 :::row-end:::
@@ -78,9 +78,9 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       **Incremental adoption**  
       Add web components piece by piece to your application.  
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
-## Getting Started  
+## Getting started  
 
 To build and test your application using the WebView2 control, you need to have both [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com/download) and the [WebView2 SDK](https://aka.ms/webviewnuget) installed.  Select one of the following options to get started.  
 
@@ -90,7 +90,7 @@ To build and test your application using the WebView2 control, you need to have 
 
 The [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repository contains samples that demonstrate all of the WebView2 SDKs features and API usage patterns. As more features are added to the WebView2 SDK, the sample applications will be updated.   
 
-## Supported Platforms  
+## Supported platforms  
 
 A developer preview is available on the following programming environments.  
 
@@ -110,7 +110,7 @@ You are able to run WebView2 applications on the following versions of Windows.
 *   Windows Server 2012R2  
 *   Windows Server 2008 R2  
 
-## Next Steps  
+## Next steps  
 
 For more detailed information on how to build and deploy WebView2 applications, checkout the conceptual documentation and how-to guides.  
 
@@ -121,10 +121,10 @@ For more detailed information on how to build and deploy WebView2 applications, 
 *   [Security Best Practices for WebView2 Applications](./concepts/security.md)
 *   [Handling User Data in WebView2 Applications](./concepts/userdatafolder.md)
  
-#### How-To Guides  
+#### How-To guides  
 
-*   [Debugging WebView2 with DevTools and Visual Studio Script Debugging](./howto/debug.md)  
-*   [Automating and Debugging WebView2 with Microsoft EdgeDriver](./howto/webdriver.md)  
+*   [Debugging WebView2 with DevTools and Visual Studio script debugging](./howto/debug.md)  
+*   [Automating and debugging WebView2 with Microsoft EdgeDriver](./howto/webdriver.md)  
 
 ## Getting in touch with the WebView2 team  
 
