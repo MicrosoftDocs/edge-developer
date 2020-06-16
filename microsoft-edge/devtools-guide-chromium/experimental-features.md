@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, experiment
 
 # Experimental features
 
-The Edge DevTools periodically offers experimental features that are released while still in development. By enabling an experiment, you are able to test and [provide early feedback]() on these features before they are released broadly.
+The Edge DevTools periodically offers experimental features that are released while still in development. By enabling an experiment, you are able to test and [provide early feedback](#Providing-feedback-on-experimental-features) on these features before they are released broadly.
 
 Experiments are available in all channels of Edge. Use the Edge Canary channel to get the very latest experiments.
 
@@ -59,7 +59,7 @@ This experiment is available in Edge 85 and later.
 
 ## Previous experimental features
 
- - [3D View](3D View), now on by default as of Edge 83.
+ - [3D View](3D-view), now on by default as of Edge 83.
 
 ## Providing feedback on experimental features
 
