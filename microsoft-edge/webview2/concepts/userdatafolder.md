@@ -46,7 +46,7 @@ Your application may need to delete user data folders:
 
 WebView2 controls may share the same user data folders to:
 
-* Optimize system resources by running in one browser process.
+* [Optimize system resources](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#process-model) by running in one browser process.
 * Share browser history and cached resources. 
 
 Consider the following when sharing user data folders: 
