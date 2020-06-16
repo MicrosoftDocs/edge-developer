@@ -41,7 +41,7 @@ This experiment is available in Edge 85 and later.
 
 Normally, tools such as Elements and Network can only be open in the main (top) panel of DevTools. Likewise, tools such as 3D View and Issues can only be open in the drawer (bottom) panel of DevTools. However, when this experiment is enabled, you are able to move tools between the top and bottoms panels by right-clicking the tab and choosing "Move to top" or "Move to bottom." This allows you to better customize your DevTools layout.
 
-![Moving tabs between panels](./media/experiments-move-panes.png)
+![Moving tabs between panels](./media/experiments-move-panels.png)
 
 The bottom panel can be hidden and shown by pressing ``Ctrl + ` ``.
 
