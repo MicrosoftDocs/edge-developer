@@ -611,6 +611,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
+      "redirect_url": "https://ortc.org",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/security.md",
       "redirect_url": "https://developer.mozilla.org/docs/Web/API",
       "redirect_document_id": false
