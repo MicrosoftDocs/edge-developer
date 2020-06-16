@@ -204,6 +204,8 @@
               items: 
                 - name: Track Which Element Has Focus
                   href: devtools-guide-chromium/accessibility/focus.md
+                - name: Dark/Light Color Scheme Simulation
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
         - name: Remote Debugging
           items: 
             - name: Android Devices
