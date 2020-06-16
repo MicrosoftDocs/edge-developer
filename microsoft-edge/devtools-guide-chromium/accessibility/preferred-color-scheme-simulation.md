@@ -39,7 +39,7 @@ Operating systems have a way to display any application in darker or lighter col
     > ![Color scheme selection from Command Menu][ImageSelectColorModeFromCommandMenu]  
     
 > [!IMPORTANT]
-> Simply typing `dark` or `light` will not get you to the right tool, as there is also a way to choose a theme of developer tools themselves. If you're wondering what to choose, make sure that you are selecting a `rendering` menu item, and not `appearance`. 
+> Simply typing `dark` or `light` will not get you to the right tool, as there is also a way to [choose a theme of developer tools][DevToolsThemeing] themselves. If you're wondering what to choose, make sure that you are selecting a `rendering` menu item, and not `appearance`. 
 
 1. Once you selected a color scheme, reload the current document to see the simulated mode. 
 
@@ -56,9 +56,12 @@ From here, you can view and change your CSS, like any other web page.  See [Get 
 
 <!-- links -->  
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"  
+[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"
+[DevToolsThemeing]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Enable Dark Theme In Microsoft Edge DevTools"
 [DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+
 [MDNPrefersColorScheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
