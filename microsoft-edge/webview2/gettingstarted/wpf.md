@@ -102,7 +102,7 @@ Next add a WebView to your application.
             Title="MainWindow"
             Height="450"
             Width="800"
-    />
+    >
         <Grid>
         
         </Grid>

@@ -2,7 +2,7 @@
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 06/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -68,7 +68,7 @@ Capture screenshots to analyze what users see as they wait for your page to load
 
 To enable screenshots, select **Network settings** and select **Capture screenshots** checkbox on the **Network** panel.  
 
-Reload the page while the **Network** panel is in focus to capture screenshots.  
+Refresh the page while the **Network** panel is in focus to capture screenshots.  
 
 After capturing a screenshot, you interact with it in the following ways.  
 
@@ -466,7 +466,8 @@ More information about each of the phases you may see in the **Timing** tab.
 *   **Request sent**.  The request is being sent.  
 *   **ServiceWorker Preparation**.  The browser is starting up the service worker.  
 *   **Request to ServiceWorker**.  The request is being sent to the service worker.  
-*   **Waiting \(TTFB\)**.  The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
+*   **Waiting \(TTFB\)**.  The browser is waiting for the first byte of a response.  
+  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
 *   **Content Download**.  The browser is receiving the response.  
 *   **Receiving Push**.  The browser is receiving data for this response via HTTP/2 Server Push.  
 *   **Reading Push**.  The browser is reading the local data previously received.  
