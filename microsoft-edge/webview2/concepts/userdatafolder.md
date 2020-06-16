@@ -52,7 +52,7 @@ Consider the following when sharing user data folders:
 
 1. When re-creating WebView2 controls to update browser versions using `NewBrowserVersionAvailable` events, ensure browser processes exit and close WebView2 controls that share the same user data folder. To retrieve the process id of the browser process, use the `BrowserProcessId` property of the WebView2 control.
 
-2. WebView2s sharing the same user data folder must use the same options for **CoreWebView2Environment**. If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`. For example, if the first WebView2 is created by **CoreWebView2Environment** with a certain **AdditionalBrowserArguments**, trying to create WebView2 from **CoreWebView2Environment** with different **AdditionalBrowserArguments** will fail.
+2. WebView2 controls that share the same user data folder must use the same options for **CoreWebView2Environment**. If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`. For example, if the first WebView2 is created by **CoreWebView2Environment** with certain **AdditionalBrowserArguments**, trying to create WebView2 from **CoreWebView2Environment** with different **AdditionalBrowserArguments** will fail.
 
 To isolate different parts of your application or when sharing data between WebView2 controls is not needed, you may choose to use different user data folders. For example, an application may consist of two WebView2 controls, one for displaying ads and the other for displaying application content. In this scenario, developers may opt to use different user data folders for each WebView2 control. 
 
