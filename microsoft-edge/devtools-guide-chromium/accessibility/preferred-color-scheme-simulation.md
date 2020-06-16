@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Force Microsoft Edge DevTools Into Color Scheme Preview Mode (CSS Prefers Color Scheme)   
 
-Operating systems have a way to display any application in darker or lighter colors. Having a web product that has a light background in a dark mode operating system is grating and can be an accessibiity issue for some users . On the web, you can use the [prefers-color-scheme][MDNPrefersColorScheme] CSS Media Query to detect if users prefer to see your product in a darker or lighter colour scheme. Using the [Microsoft Edge DevTools][MicrosoftEdgeDevTools] you can simulate a change from dark to light mode without having to change your whole operating system. 
+Operating systems have a way to display any application in darker or lighter colors. Having a web product that has a light theme in a dark mode operating system is grating and can be an accessibiity issue for some users . On the web, you can use the [prefers-color-scheme][MDNPrefersColorScheme] CSS Media Query to detect if users prefer to see your product in a darker or lighter colour scheme. Using the [Microsoft Edge DevTools][MicrosoftEdgeDevTools] you can simulate a change from dark to light mode without having to change your whole operating system. 
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
@@ -48,8 +48,8 @@ From here, you can view and change your CSS, like any other web page.  See [Get 
 
 <!-- image links -->  
 [ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 1: The Command Menu"  
-[ImageSelectColorModeFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png "Figure 2: Select which color scheme to emulate"  
-[ImageDocsInSimulatedLightMode]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-simulated-light-mode.msft.png "Figure 3: Forcing the "light mode" display of a product in a "dark mode" operating system."  
+[ImageSelectColorModeFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-renderingmode-command-menu.msft.png "Figure 2: Select which color scheme to emulate"
+[ImageDocsInSimulatedLightMode]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-simulated-light-mode.msft.png "Figure 3: Forcing the "light mode" display of a product in a "dark mode" operating system."
 
 <!-- links -->  
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
