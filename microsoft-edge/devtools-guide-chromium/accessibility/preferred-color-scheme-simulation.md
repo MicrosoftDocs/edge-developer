@@ -38,6 +38,9 @@ Operating systems have a way to display any application in darker or lighter col
     > Select which color scheme to emulate  
     > ![Color scheme selection from Command Menu][ImageSelectColorModeFromCommandMenu]  
     
+> [!IMPORTANT]
+> Simply typing `dark` or `light` will not get you to the right tool, as there is also a way to choose a theme of developer tools themselves. If you're wondering what to choose, make sure that you are selecting a `rendering` menu item, and not `appearance`. 
+
 1. Once you selected a color scheme, reload the current document to see the simulated mode. 
 
     > ##### Figure 3  
