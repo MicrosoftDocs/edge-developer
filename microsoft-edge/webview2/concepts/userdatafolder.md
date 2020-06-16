@@ -18,9 +18,8 @@ WebView2 applications interact with user data folders to store browser data, suc
 
 User data folders are created automatically by WebView2. WebView2 developers control the lifetime of the user data folder. If your application re-uses user data from application sessions, consider saving the user data folders, otherwise you may delete them. Consider the following scenarios when deciding how to manage your user data folders:
 
-*   If the application is repeatedly used by the same user and the web content of the application relies on the user's data, it is best if the user data folder persists.
-*   If the application does not have any repeat users, it is best to create a new user data folder for each incoming user and delete the previous user data folder.
-*   If the application has multiple repeat users, it is best to create a new user data folder for each incoming user and allow the existing user data folders to persist.
+*   If the same user uses your application repeatedly, and the web content of the application relies on the user’s data, save the user data folder. If multiple users use your application repeatedly, create a new user data folder for each new user, and save the user data folder of the previous user.
+*   If your application does not have repeat users, create a new user data folder for each user, and delete the previous user data folder.
 
 ## Create user data folders
 
