@@ -194,7 +194,7 @@ Initial developer preview release.
 [ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsDistributionMicrosoftEdgeRuntime]: ./concepts/distribution.md#deploy-evergreen-webview2-runtime "Deploy evergreen WebView2 Runtime - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
-[ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis.md "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
+[ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  
 [GettingstartedWpf]: ./gettingstarted/wpf.md "Getting started with WebView2 in WPF | Microsoft Docs"  
 [HowtoDebug]: ./howto/debug.md "How to debug when developing with WebView2 controls | Microsoft Docs"  
