@@ -321,7 +321,7 @@ Execute JavaScript code from the javascript parameter in the current top level d
 > public async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
 
 ##### Returns
-Returns the result of evaluating the provided JavaScript as a JSON encoded string. 
+Returns a JSON encoded string that represents the result of running the provided JavaScript. 
 
 This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
 
