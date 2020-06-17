@@ -24,26 +24,26 @@ If you have concerns or questions about the Roadmap, please leave feedback in th
 The WebView2 team is planning the following major efforts for future updates.  
 
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       WebView2 Runtime Installer  
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       *   Q4 2020
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       Fixed Version  
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       *   Q4 2020  
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="1":::
       General Availability  
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       *   Win32 C/C++ \(Q4 2020\)  
       *   .NET \(Q4 2020\)  
       *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
@@ -78,7 +78,6 @@ You are able to access WebView2 in your UWP applications using [Win UI 3.0][UwpT
 [ConceptsDistributionFixedVersionWebviews]: ./concepts/distribution.md#fixed-version-webview2 "Fixed version WebView2 - Distribution of applications using WebView2 | Microsoft Docs"  
 
 [UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
-[UwpToolkitsWinui3Index]
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
 
