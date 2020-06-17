@@ -59,13 +59,7 @@ From here, you can view and change your CSS, like any other web page.  See [Get 
 [RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"
 [DevToolsThemeing]: /microsoft-edge/devtools-guide-chromium/customize/dark-theme "Enable Dark Theme In Microsoft Edge DevTools"
 [DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
-
 [MDNPrefersColorScheme]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  
-
-
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
