@@ -323,7 +323,7 @@ Execute JavaScript code from the javascript parameter in the current top level d
 ##### Returns
 Returns a JSON encoded string that represents the result of running the provided JavaScript. 
 
-This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
+This method runs the provided JavaScript asynchronously and will return the result of the provided JavaScript. If the result of the provided JavaScript is `undefined`, contains a reference cycle, or otherwise cannot be encoded into JSON, the string 'null' is returned. If a called function in the provided JavaScript has no explicit return value, `undefined` is returned. If the provided JavaScript throws an unhandled exception, 'null' is returned. If this method is called after a `NavigationStarting` event, the provided JavaScript is run on the new document when it loads, around the same time that `ContentLoading` is triggered. `ExecuteScript` will work even if `IsScriptEnabled` is set to `FALSE`.
 
 #### GetDevToolsProtocolEventReceiver 
 
