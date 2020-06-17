@@ -18,12 +18,12 @@ WebView2 applications interact with user data folders to store browser data, suc
 
 User data folders are created automatically by WebView2. WebView2 developers control the lifetime of the user data folder. If your application re-uses user data from application sessions, consider saving the user data folders, otherwise you may delete them. Consider the following scenarios when deciding how to manage your user data folders:
 
-*   If the same user uses your application repeatedly, and the web content of the application relies on the user’s data, save the user data folder. If multiple users use your application repeatedly, create a new user data folder for each new user, and save the user data folder of the previous user.
+*   If the same user uses your application repeatedly, and the web content of the application relies on the user’s data, save the user data folder. If multiple users use your application repeatedly, create a new user data folder for each new user, and save the user data folder of each user.
 *   If your application does not have repeat users, create a new user data folder for each user, and delete the previous user data folder.
 
 ## Create user data folders
 
-To specify the location of the user data folder, include the `userDataFolder` parameter when calling `CoreWebView2Environment`. After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`. When `userDataFolder` is not specified, WebView2 creates user data folders at default locations as follows:
+To specify the location of the user data folder, include the `userDataFolder` parameter when calling [ICoreWebView2Environment](../reference/win32/0-9-538/icorewebview2environment) (Win32) or [CoreWebView2Environment](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2) (.NET). After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`. When `userDataFolder` is not specified, WebView2 creates user data folders at default locations as follows:
 
 * For packaged Windows Store apps, the default user folder is the `ApplicationData\LocalFolder` subfolder in the package’s  folder.
 * For existing desktop apps, the default user data folder is the exe path of your application + `.WebView2`. Instead of using the default, we recommend that you specify a user data folder, and that you create it in the same folder where all other app data is stored.
