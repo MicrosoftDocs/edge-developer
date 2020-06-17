@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -46,6 +46,8 @@ Gets whether the NewWindowRequestedEvent is handled by host.
 IsUserInitiated is true when the new window request was initiated through a user gesture such as clicking an anchor tag with target.
 
 > public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(BOOL * isUserInitiated)
+
+The Edge popup blocker is disabled for WebView so the app can use this flag to block non-user initiated popups.
 
 #### get_NewWindow 
 

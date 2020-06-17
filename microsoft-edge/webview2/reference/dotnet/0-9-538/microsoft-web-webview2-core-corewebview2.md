@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -60,7 +60,7 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [PostWebMessageAsString](#postwebmessageasstring) | This is a helper for posting a message that is a simple string rather than a JSON string representation of a JavaScript object.
 [Reload](#reload) | Reload the current page.
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated with the specified script id.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
 [Stop](#stop) | Stop all navigations and pending resource fetches.
 
@@ -280,6 +280,9 @@ Add the provided JavaScript to a list of scripts that should be executed after t
 
 > public async Task< string > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)(string javaScript)
 
+##### Returns
+Returns a script id that is used when [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) is called. 
+
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
 Note that if an HTML document has sandboxing of some kind via [sandbox](https://developer.mozilla.org/docs/Web/HTML/Element/iframe#attr-sandbox) properties or the [Content-Security-Policy HTTP header](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy) this will affect the script run here. So, for example, if the 'allow-modals' keyword is not set then calls to the `alert` function will be ignored.
@@ -298,6 +301,9 @@ Call an asynchronous DevToolsProtocol method.
 
 > public async Task< string > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(string methodName, string parametersAsJson)
 
+##### Returns
+Returns the method's return object as a JSON string. 
+
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
 #### CapturePreviewAsync 
@@ -314,7 +320,10 @@ Execute JavaScript code from the javascript parameter in the current top level d
 
 > public async Task< string > [ExecuteScriptAsync](#executescriptasync)(string javaScript)
 
-This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. The result value is a JSON encoded string. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
+##### Returns
+Returns the result of evaluating the provided JavaScript as a JSON encoded string. 
+
+This will execute asynchronously and when complete, if a handler is provided in the ExecuteScriptCompletedHandler parameter, its Invoke method will be called with the result of evaluating the provided JavaScript. If the result is undefined, contains a reference cycle, or otherwise cannot be encoded into JSON, the JSON null value will be returned as the string 'null'. Note that a function that has no explicit return value returns undefined. If the executed script throws an unhandled exception, then the result is also 'null'. This method is applied asynchronously. If the method is called after NavigationStarting event during a navigation, the script will be executed in the new document when loading it, around the time ContentLoading is fired. ExecuteScript will work even if IsScriptEnabled is set to FALSE.
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -401,7 +410,7 @@ While new access attempts will be denied, if the object is already obtained by J
 
 #### RemoveScriptToExecuteOnDocumentCreated 
 
-Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
+Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated with the specified script id.
 
 > public void [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated)(string id)
 
