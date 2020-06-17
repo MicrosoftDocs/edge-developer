@@ -281,7 +281,7 @@ Add the provided JavaScript to a list of scripts that should be executed after t
 > public async Task< string > [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync)(string javaScript)
 
 ##### Returns
-Returns a script id that is used when [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) is called. 
+Returns a script id that may be passed when calling [RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated). 
 
 The injected script will apply to all future top level document and child frame navigations until removed with RemoveScriptToExecuteOnDocumentCreated. This is applied asynchronously and you must wait for the completion handler to run before you can be sure that the script is ready to execute on future navigations.
 
@@ -429,4 +429,3 @@ Stop all navigations and pending resource fetches.
 > public void [Stop](#stop)()
 
 Does not stop scripts.
-
