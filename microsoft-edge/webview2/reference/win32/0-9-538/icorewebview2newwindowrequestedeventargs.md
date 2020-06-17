@@ -47,7 +47,7 @@ IsUserInitiated is true when the new window request was initiated through a user
 
 > public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(BOOL * isUserInitiated)
 
-The Edge popup blocker is disabled for WebView so the app can use this flag to block non-user initiated popups.
+WebView2 controls may display pop-up windows because the Pop-Up blocker is turned off. To block non-user initiated pop-up windows from being displayed, use `get_IsUserInitiated`.
 
 #### get_NewWindow 
 
@@ -84,4 +84,3 @@ Sets a WebView as a result of the NewWindowRequest.
 > public HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * newWindow)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
-
