@@ -3,54 +3,58 @@ description: Indicates the webview is attempting to download an unsupported file
 title: UnviewableContentIdentifiedEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/25/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# UnviewableContentIdentifiedEvent object
+# UnviewableContentIdentifiedEvent object  
 
-Indicates the [webview](../webview.md) is attempting to navigate to a file of an unsupported content type. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Properties
+Indicates the [webview](../webview.md) is attempting to navigate to a file of an unsupported content type.  
 
-### mediaType
+## Properties  
 
-Gets the content type of the unviewable content.
+### mediaType  
 
-This property is read-only
+Gets the content type of the unviewable content.  
 
-```js
+This property is read-only  
+
+```javascript
 var mediaType = UnviewableContentIdentifiedEvent.mediaType;
-```
+```  
 
-#### Property value
-Type: **DOMString**
+#### Property value  
 
-### referer
+Type: **DOMString**  
 
-The Uniform Resource Identifier (URI) of the page in the [webview](../webview.md) requesting navigation.
+### referer  
 
-This property is read-only.
+The Uniform Resource Identifier (URI) of the page in the [webview](../webview.md) requesting navigation.  
 
+This property is read-only.  
 
-```js
+```javascript
 var referer = NavigationEventWithReferrer.referer;
-```
+```  
 
-#### Property value
-Type: **DOMString**
+#### Property value  
 
-### uri
+Type: **DOMString**  
 
-The Uniform Resource Identifier (URI) of the destination of the navigation.
+### uri  
 
-This property is read-only.
+The Uniform Resource Identifier (URI) of the destination of the navigation.  
 
-```js
+This property is read-only.  
+
+```javascript
 var uri = NavigationEventWithReferrer.uri;
-```
+```  
 
-#### Property value
-Type: **DOMString**
+#### Property value  
+
+Type: **DOMString**  
