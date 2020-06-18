@@ -1,7 +1,7 @@
 ---
 description: "Learn how to target the different Windows 10 JavaScript engines. "
 title: "Targeting Microsoft Edge vs. Legacy engines in JsRT APIs"
-ms.date: "06/08/2020"
+ms.date: "06/18/2020"
 ms.prod: microsoft-edge
 ms.topic: "article"
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
@@ -141,16 +141,16 @@ In Windows 10, the JavaScript Runtime Hosting APIs are splitting into two. These
 
 *   Your app can support only one version of JsRT per process.  
     
-    > For example, you can't create a Microsoft Edge engine runtime and then a legacy engine runtime and expect them to run correctly in the same process. This is unsupported and may result in undocumented behavior, such as failure to load the second DLL.  
+    For example, you can't create a Microsoft Edge engine runtime and then a legacy engine runtime and expect them to run correctly in the same process. This is unsupported and may result in undocumented behavior, such as failure to load the second DLL.  
     
 *   When targeting the Microsoft Edge engine, your app may unexpectedly acquire new features when the underlying platform is automatically updated.  
     
-    > For example, the Internet Explorer 11 mode of the legacy runtime supports block-scoping variable declarations such as `let` and `const`. If the Microsoft Edge engine automatic versioning behavior had been the standard previously, code that had worked in Internet Explorer 10 mode, which did not have block-scoping rules, may have started failing when the platform had automatically upgraded. This must be a consideration when choosing which runtime model to use. While we believe you should target the Microsoft Edge engine whenever possible, you must be careful about using JavaScript code structures that may become invalid in the future.  
+    For example, the Internet Explorer 11 mode of the legacy runtime supports block-scoping variable declarations such as `let` and `const`. If the Microsoft Edge engine automatic versioning behavior had been the standard previously, code that had worked in Internet Explorer 10 mode, which did not have block-scoping rules, may have started failing when the platform had automatically upgraded. This must be a consideration when choosing which runtime model to use. While we believe you should target the Microsoft Edge engine whenever possible, you must be careful about using JavaScript code structures that may become invalid in the future.  
     
 *   JsRT for the Windows Store only supports the Microsoft Edge engine (chakra.dll). Apps attempting to link against any JsRT API in jscript9.dll will fail certification.  
 *   It is critical that you do not confuse the declaration of `JsCreateRuntime`, `JsCreateContext`, and `JsStartDebugging` between jscript9.dll and chakra.dll, because it will result in imbalancing the stack.  
     
-    > When using C and C++, you will receive a linker error if you try to use the wrong declaration, as long as you're not doing something like calling `LoadLibrary` and then `GetProcAddress`. .NET developers may not find this problem as easily, so double-check your code when using this feature.  
+    When using C and C++, you will receive a linker error if you try to use the wrong declaration, as long as you're not doing something like calling `LoadLibrary` and then `GetProcAddress`. .NET developers may not find this problem as easily, so double-check your code when using this feature.  
     
 ## See also  
 

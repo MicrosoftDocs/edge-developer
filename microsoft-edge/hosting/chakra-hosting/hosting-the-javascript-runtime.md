@@ -1,7 +1,7 @@
 ---
 description: "Use the standards-based Chakra JavaScript engine to add scripting capabilities to your Windows application."
 title: "Hosting the JavaScript Runtime"
-ms.date: 06/08/2020
+ms.date: 06/18/2020
 ms.prod: microsoft-edge
 ms.topic: "article"
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
@@ -56,14 +56,14 @@ The JsRT APIs expose a number of way to monitor and modify the way runtimes use 
 *   **Thread Usage**. By default, each runtime will create a dedicated JIT compiler thread and a dedicated GC thread that service that runtime. If a runtime is created with the `JsRuntimeAttributeDisableBackgroundWork` flag, then the JIT and GC work will be performed on the runtime thread itself instead of separate background threads for each one of them. A host can also supply a thread service callback to the `JsCreateRuntime` call, which will allow the host to schedule JIT and GC work in any way it sees fit.
 *   **Memory Usage**. There are several ways to monitor and modify the memory usage of a runtime. If the runtime will be running for a long time, the host can specify the `JsRuntimeAttributeEnableIdleProcessing` flag when creating the runtime and then call `JsIdle` when the host is in an idle state. This allows the engine to defer some memory cleanup and bookkeeping work until idle time.  
     
-    > The host can monitor garbage collections by calling `JsSetRuntimeBeforeCollectCallback`. It can also monitor allocations made by the heap by calling `JsSetRuntimeMemoryAllocationCallback`. Note that this API does not call back on every JavaScript allocation, just when the runtime's heap needs more space from which to allocate. The memory allocation callback is allowed to deny the request, which will trigger a garbage collection and, if no memory is available, an out of memory error in the runtime.  
-    > 
-    > The host can also call `JsSetRuntimeMemoryLimit` to set a limit for how much memory a runtime can use. When a runtime hits a limit, it will trigger a garbage collection and, if no memory is available, an out of memory error will be thrown by the runtime.  
+    The host can monitor garbage collections by calling `JsSetRuntimeBeforeCollectCallback`. It can also monitor allocations made by the heap by calling `JsSetRuntimeMemoryAllocationCallback`. Note that this API does not call back on every JavaScript allocation, just when the runtime's heap needs more space from which to allocate. The memory allocation callback is allowed to deny the request, which will trigger a garbage collection and, if no memory is available, an out of memory error in the runtime.  
+    
+    The host can also call `JsSetRuntimeMemoryLimit` to set a limit for how much memory a runtime can use. When a runtime hits a limit, it will trigger a garbage collection and, if no memory is available, an out of memory error will be thrown by the runtime.  
     
 *   **Script Interruption and Evaluation**. The host can call `JsDisableRuntimeExecution` to terminate execution within a runtime. This call can be made at any time and from any thread. Because script termination depends on reaching guard points inserted into the code, a script may not terminate at the exact moment, but will do so very shortly afterwards. By default, termination guard points are placed in the generated code conservatively and may not cover every situation, such as an infinite loop. Creating the runtime with the `JsRuntimeAttributeAllowScriptInterrupt` flag causes the runtime to insert additional checks for infinite loops, often at the cost of a small performance overhead.  
-
-> If a host wishes to disallow generation of native code by the JIT compiler, it can specify the `JsRuntimeAttributeDisableNativeCodeGeneration` flag. A host can also disallow scripts from dynamically running scripts itself by specifying the `JsRuntimeAttributeDisableEval` flag.  
-
+    
+    If a host wishes to disallow generation of native code by the JIT compiler, it can specify the `JsRuntimeAttributeDisableNativeCodeGeneration` flag. A host can also disallow scripts from dynamically running scripts itself by specifying the `JsRuntimeAttributeDisableEval` flag.  
+    
 ## Debugging and profiling  
 
 JsRT APIs supports debugging and profiling via the Active Scripting technology.  
