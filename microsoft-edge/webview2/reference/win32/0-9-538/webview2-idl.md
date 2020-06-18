@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -45,7 +45,7 @@ This is equivalent to calling CreateCoreWebView2EnvironmentWithOptions with null
 
 DLL export to create a WebView2 environment with a custom version of Edge, user data directory and/or additional options.
 
-browserExecutableFolder is the relative path to the folder that contains the embedded Edge. The embedded Edge can be obtained by copying the version named folder of an installed Edge, like 73.0.52.0 sub folder of an installed 73.0.52.0 Edge. The folder should have msedge.exe, msedge.dll, and so on. Use null or empty string for browserExecutableFolder to create WebView using Edge installed on the machine, in which case the API will try to find a compatible version of Edge installed on the machine according to the channel preference trying to find first per user install and then per machine install.
+Use `browserExecutableFolder` to specify whether WebView2 controls use an embedded version of Edge, or the installed version of Edge that exists on a client machine. To use an embedded version of Edge, pass the relative path of the folder that contains the embedded version of Edge to `browserExecutableFolder`. To obtain the embedded version of Edge, copy the versioned folder name from your installed version of Edge on a client machine. For example, copy the `73.0.52.0` folder from the folder where Edge version 73.0.52.0 was installed. Ensure that the folder has both the **msedgewebview2.exe** and **msedge.dll** files. To create WebView2 controls that use the installed version of Edge that exists on client machines, pass a null or empty string to `browserExecutableFolder`. In this scenario, the API tries to find a compatible version of Edge that is installed on the client machine (first at the machine level, and then per user) using the selected channel preference. 
 
 The default channel search order is stable, beta, dev, and canary. When there is an override WEBVIEW2_RELEASE_CHANNEL_PREFERENCE environment variable or applicable releaseChannelPreference registry value with the value of 1, the channel search order is reversed.
 
@@ -133,4 +133,3 @@ First we check with Root as HKLM and then HKCU. AppId is first set to the Applic
 Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 
 Channel names are beta, dev, and canary. If an override exists for the browserExecutableFolder or the channel preference, the override will be used. If there isn't an override, then the parameter passed to GetAvailableCoreWebView2BrowserVersionString is used.
-
