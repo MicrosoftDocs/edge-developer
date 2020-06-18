@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 06/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -47,6 +47,8 @@ IsUserInitiated is true when the new window request was initiated through a user
 
 > public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(BOOL * isUserInitiated)
 
+WebView2 controls may display pop-up windows because the Pop-Up blocker is turned off. To block non-user initiated pop-up windows from being displayed, use `get_IsUserInitiated`.
+
 #### get_NewWindow 
 
 Gets the new window.
@@ -82,4 +84,3 @@ Sets a WebView as a result of the NewWindowRequest.
 > public HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * newWindow)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
-

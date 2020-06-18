@@ -226,6 +226,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-edge/dev-guide/device/web-authentication.md",
+      "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-authentication",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/device/web-notifications-api.md",
       "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-notifications-api",
       "redirect_document_id": true
@@ -608,6 +613,11 @@
     {
       "source_path": "microsoft-edge/dev-guide/realtime-communication/message-channels.md",
       "redirect_url": "https://developer.mozilla.org/docs/Web/API/MessageChannel/MessageChannel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
+      "redirect_url": "https://ortc.org",
       "redirect_document_id": false
     },
     {
