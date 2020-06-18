@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
-# Getting started with WebView2 in WPF (Preview)  
+# Getting started with WebView2 in WPF (Preview)
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
 
