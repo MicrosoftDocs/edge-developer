@@ -3,7 +3,7 @@ description: Learn about what's coming next for WebView2
 title: Roadmap for Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/17/2020
+ms.date: 06/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -52,11 +52,11 @@ The WebView2 team is planning the following major efforts for future updates.
 
 ## WebView2 Runtime and Installer  
 
-[WebView2 Evergreen][ConceptDistributionEvergreenWebview2] distribution model allows you to target or chain install the WebView2 Runtime onto your user's machine.  A preview of the WebView2 Runtime and installer is expected to be available Q3 2020 and GA in Q4 2020.  
+[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  A preview of the WebView2 Runtime and installer is expected to be available Q3 2020 and GA in Q4 2020.  
 
 ## Fixed version  
 
-[WebView2 Fixed][ConceptsDistributionFixedVersionWebviews] distribution model allows you to package the Microsoft Edge binaries inside your native application.  Engineering work is currently under way with a preview anticipated to be ready towards the end of Q3 2020 and GA Q4 2020.  
+[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  Engineering work is currently under way with a preview anticipated to be ready towards the end of Q3 2020 and GA Q4 2020.  
 
 ## General availability  
 
@@ -74,8 +74,8 @@ You are able to access WebView2 in your UWP applications using [Win UI 3.0][UwpT
 
 <!-- links -->  
 
-[ConceptDistributionEvergreenWebview2]: ./concepts/distribution.md#evergreen-webview2 "Evergreen WebView2 - Distribution of applications using WebView2 | Microsoft Docs"  
-[ConceptsDistributionFixedVersionWebviews]: ./concepts/distribution.md#fixed-version-webview2 "Fixed version WebView2 - Distribution of applications using WebView2 | Microsoft Docs"  
+[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-model "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
+[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-model "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 
 [UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
 

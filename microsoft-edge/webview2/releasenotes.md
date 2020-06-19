@@ -3,7 +3,7 @@ description:  Host web content in your Win32 app with the Microsoft Edge WebView
 title:  Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  06/17/2020
+ms.date:  06/19/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -192,7 +192,7 @@ Initial developer preview release.
 <!-- Links -->  
 
 [ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
-[ConceptsDistributionMicrosoftEdgeRuntime]: ./concepts/distribution.md#deploy-evergreen-webview2-runtime "Deploy evergreen WebView2 Runtime - Distribution of applications using WebView2 | Microsoft Docs"  
+[ConceptsDistributionMicrosoftEdgeRuntime]: ./concepts/distribution.md#deploy-webview2-runtime "Deploy WebView2 Runtime - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  
