@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Distribution of applications using WebView2  
 
-The WebView2 control utilizes the Microsoft Edge \(Chromium\) platform.  When distributing your app, make sure a copy of the web platform is present before the app starts.  The following page describes how you, the developer, verify the web platform is present and the two modes of distribution WebView2 supports:  [Evergreen](#evergreen-webview2) and [Fixed version](#fixed-version-webview2).  
+The WebView2 control utilizes the Microsoft Edge \(Chromium\) platform.  When distributing your app, make sure a copy of the web platform is present before the app starts.  The following page describes how you, the developer, verify the web platform is present and the two modes of distribution WebView2 supports:  [Evergreen](#evergreen-distribution-model) and [Fixed version](#fixed-version-distribution-model).  
 
 ## Evergreen distribution model  
 
@@ -62,7 +62,7 @@ The WebView team recommends the following workflow when deploying WebView2 Runti
 After WebView2 Runtime is successfully installed, the user is able to use your WebView2 application.  Depending on your scenario, you may need to change the deployment workflow.  For example, you may want to download and install the WebView2 Runtime installer from a CDN rather than include it in your application installer.  
 
 > [!IMPORTANT]
-> Both the WebView2 Runtime and WebView2 Runtime installer are available as part of the preview.  The preview has a limited initial scope and is only available as a standalone, per-machine installs on Windows 10 on x64 machines.  In the future, support for Windows 7, and x86 or ARM64 machines is planned.  
+> Both the WebView2 Runtime and WebView2 Runtime installer are available as part of the preview.  The preview has a limited initial scope and is only available as a standalone, per-machine installs on Windows 10 on x64 machines.  In the future, the WebView team plans to support Windows 7, x86 machines, and ARM64 machines for the WebView2 Runtime and WebView2 Runtime installer.  
 
 <!--  Insert sample code or step-by-step guide to package the webview2 runtime in Visual Studio  -->  
 
