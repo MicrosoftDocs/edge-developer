@@ -36,7 +36,7 @@ To enable an experiment.
 > [!NOTE]
 > Some experimental features are "works in progress" and may cause performance issues.  To remove an experiment, de-select the checkbox next to the experiment and reloading the DevTools again.  
 
-## Current experimental features  
+## Selected experimental features  
 
 | Experiment | Stable Channel | Experimentation | Additional information |  
 |:--- |:--- |:--- |:--- |  
