@@ -20,7 +20,7 @@ Experiments are available in all channels of Microsoft Edge.  Use the Microsoft 
 To enable an experiment.  
 
 1.  Open DevTools.  
-    *   Press `Control`+`Shift`+`I` on Windows or `Command`+`Option`+`I`  on macOS.  
+    *   Press `F12`.
 1.  Open **Settings**.  
     *   Select the gear icon at the top-right corner.  
     *   Press `F1`.  
