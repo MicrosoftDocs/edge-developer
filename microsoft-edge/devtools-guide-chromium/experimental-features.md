@@ -86,7 +86,7 @@ Select the issue to see documentation on how to fix the issue as well as a list 
 
 ## Providing feedback on experimental features  
 
-To provide feedback on Edge DevTools experiments, or anything else related to DevTools. 
+To provide feedback on Edge DevTools experiments, or anything else related to DevTools:
 
 *   Send your feedback using the Feedback icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
