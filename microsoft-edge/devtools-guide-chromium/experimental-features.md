@@ -38,11 +38,11 @@ To enable an experiment.
 
 ## Selected experimental features  
 
-| Experiment | Stable Channel | Experimentation | Additional information |  
-|:--- |:--- |:--- |:--- |  
-| [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | Edge v85 |  |  |  
-| [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | Edge v85 |  |  |  
-| [Enable webhint](#enable-webhint) | Edge v85 |  |  |  
+| Experiment | Edge version
+|:--- |:--- | 
+| [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 and up 
+| [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 and up
+| [Enable webhint](#enable-webhint) | 85 and up
 
 The following sections outline some of the experimental features currently available in Microsoft Edge.  
 
