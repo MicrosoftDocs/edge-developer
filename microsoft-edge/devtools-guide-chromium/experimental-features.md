@@ -43,7 +43,6 @@ To enable an experiment.
 | [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | Edge v85 |  |  |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | Edge v85 |  |  |  
 | [Enable webhint](#enable-webhint) | Edge v85 |  |  |  
-| [3D View][3DView] | Edge v83 |  | On by default. |  
 
 The following sections outline some of the experimental features currently available in Microsoft Edge.  
 
