@@ -91,6 +91,9 @@ To provide feedback on Edge DevTools experiments, or anything else related to De
 *   Send your feedback using the Feedback icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
 
+:::image type="complex" source="./media/devtools-feedback.png" alt-text="Feedback icon in the Edge DevTools" lightbox="./media/devtools-feedback.png":::
+   Feedback icon in the Edge DevTools
+:::image-end:::
 <!-- links -->  
 
 [3DView]: ./3D-view.md "3D View | Microsoft Docs"  
