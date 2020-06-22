@@ -28,7 +28,13 @@ The **release package** contains:
 
 The **pre-release package** contains:
 *   .NET APIs: [WPF](../reference/wpf/0-9-515-reference-webview2), [WinForms](../reference/winforms/0-9-515-reference-webview2), and [Core](../reference/dotnet/0-9-538-reference-webview2)
-*   APIs marked as `Experimental` in the SDK. Please evaluate these APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
+*   APIs marked as `Experimental` in the SDK.  
+
+### Experimental APIs
+Experimental APIs are APIs the WebView team is testing that represent functionality we plan to add in the future. These APIs are likely to change before shipping as fully stable APIs in the release package. Please evaluate these APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback]. 
+
+> [!IMPORTANT]
+> It is strongly advised not to ship an application that has a dependency on an Experimental API.
 
 ### Roadmap  
 
