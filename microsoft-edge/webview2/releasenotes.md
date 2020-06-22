@@ -18,7 +18,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
 > Re-compile your app after updating the NuGet package.
 
 > [!IMPORTANT]
-> While WebView2 is in Preview, .NET packages will be in the **pre-release package**
+> While WebView2 is in Preview, .NET APIs will be in the **pre-release package**.
 
 ## 0.9.538
 
