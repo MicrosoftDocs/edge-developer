@@ -3,17 +3,19 @@ description: Represents a deferred request for user permission to access device 
 title: DeferredPermissionRequest object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# DeferredPermissionRequest object
+# DeferredPermissionRequest object  
 
-Represents a deferred request by the content of the [webview](../webview.md) for end-user permission to access specialized device functionality (such as geolocation, or pointer lock).
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Represents a deferred request by the content of the [webview](../webview.md) for end-user permission to access specialized device functionality (such as geolocation, or pointer lock).  
+
+```javascript
 // In this sample, when we receive a permission request we construct some basic UI to ask the
 // user if they want to give permission.
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
@@ -53,98 +55,98 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
 
     permissionRequest.defer();
 });
-```
+```  
 
-## Methods
+## Methods  
 
-### allow
+### allow  
 
-Allows the request for permission.
+Allows the request for permission.  
 
-```js
+```javascript
 deferredPermissionRequest.allow();
-```
+```  
 
-#### Parameters
+#### Parameters  
 
-This method has no parameters.
+This method has no parameters.  
 
-#### Return value
+#### Return value  
 
-This method does not return a value.
+This method does not return a value.  
 
-### deny
+### deny  
 
-Denies the request for permission.
+Denies the request for permission.  
 
-```js
+```javascript
 deferredPermissionRequest.deny();
-```
+```  
 
-#### Parameters
+#### Parameters  
 
-This method has no parameters.
+This method has no parameters.  
 
-#### Return value
+#### Return value  
 
-This method does not return a value.
+This method does not return a value.  
 
-## Properties
+## Properties  
 
-### id
+### id  
 
-A unique ID that can be used to correlate the current DeferredPermissionRequest with a PermissionRequest object from a previous MSWebViewPermissionRequested event. See the **PermissionRequested.defer** method.
+A unique ID that can be used to correlate the current DeferredPermissionRequest with a PermissionRequest object from a previous MSWebViewPermissionRequested event. See the **PermissionRequested.defer** method.  
 
-This property is read-only.
+This property is read-only.  
 
-```js
+```javascript
 var id = deferredPermissionRequest.id;
-```
+```  
 
-##### Property value
+##### Property value  
 
-Type: **Unsigned long**
+Type: **Unsigned long**  
 
-### type
+### type  
 
-The type of permission being requested. This may be one of the following string values:
+The type of permission being requested. This may be one of the following string values:  
 
-- **geolocation**: access to location data via navigator.geolocation.
-- **unlimitedIndexedDBQuota**: allow IndexedDB APIs to ignore the usual stored data size limit.
-- **media**: access to the microphone and camera via navigator.getUserMedia.
-- **pointerlock**: ability to lock and control the mouse pointer via Element.requestPointerLock.
-- **webnotifications**: ability to show desktop notifications via window.Notification.
-- **screen**: ability to take screen shots via the Media Capture API.
-- **immersiveview**: ability to control a VR display.
+*   **geolocation**: access to location data via navigator.geolocation.  
+*   **unlimitedIndexedDBQuota**: allow IndexedDB APIs to ignore the usual stored data size limit.  
+*   **media**: access to the microphone and camera via navigator.getUserMedia.  
+*   **pointerlock**: ability to lock and control the mouse pointer via Element.requestPointerLock.  
+*   **webnotifications**: ability to show desktop notifications via window.Notification.  
+*   **screen**: ability to take screen shots via the Media Capture API.  
+*   **immersiveview**: ability to control a VR display.  
 
-This property is read-only.
+This property is read-only.  
 
-```js
+```javascript
 var type = deferredPermissionRequest.type;
-```
+```  
 
-#### Property value
+#### Property value  
 
-Type: **String**
+Type: **String**  
 
-### uri
+### uri  
 
-The Uniform Resource Identifier (URI) of the document requesting permission.
+The Uniform Resource Identifier (URI) of the document requesting permission.  
 
-This property is read-only.
+This property is read-only.  
 
-```js
+```javascript
 var uri = deferredPermissionRequest.uri;
-```
+```  
 
-##### Property value
+##### Property value  
 
-Type: **String**
+Type: **String**  
 
-## Requirements
+## Requirements  
 
-|                                           |                                      |
-|-------------------------------------------|--------------------------------------|
-| <strong>Minimum supported client</strong> | Windows 10 [Windows Store apps only] |
-| <strong>Minimum supported server</strong> |            Not supported             |
-| <strong>Minimum supported phone</strong>  |            Not supported             |
+|  |  |  
+|:--- |:--- |  
+| **Minimum supported client** | Windows 10 [Windows Store apps only] |  
+| **Minimum supported server** | Not supported |  
+| **Minimum supported phone** | Not supported |  

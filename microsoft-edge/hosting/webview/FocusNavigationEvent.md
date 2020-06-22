@@ -3,94 +3,100 @@ description: The dispatched object from a focus event containing the navigation 
 title: FocusNavigationEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# FocusNavigationEvent object
+# FocusNavigationEvent object  
 
-The dispatched object from [**NavigateFocus**](../webview.md#navigatefocus)/[**DepartingFocus**](../webview.md#departingfocus) containing the [**NavigationReason**](#navigationreason) and location. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Methods
+The dispatched object from [**NavigateFocus**](../webview.md#navigatefocus)/[**DepartingFocus**](../webview.md#departingfocus) containing the [**NavigationReason**](#navigationreason) and location.  
 
-### requestFocus
+## Methods  
 
-Called to move focus from the app to the webview.
+### requestFocus  
 
-### Parameters
+Called to move focus from the app to the webview.  
 
-This method does not have parameters.
+### Parameters  
 
-### Return value
+This method does not have parameters.  
 
-This method does not return a value.
+### Return value  
 
-## Properties
-    
-### navigationReason
+This method does not return a value.  
 
-Enumerated type **NavigationReason**, either "left", "up", "right", or "down". 
+## Properties  
 
-This property is read-only.
+### navigationReason  
 
-```js
+Enumerated type **NavigationReason**, either "left", "up", "right", or "down".  
+
+This property is read-only.  
+
+```javascript
 var navigationReason = FocusNavigationEvent.navigationReason;
-```
+```  
 
-#### Property value
-Type: **NavigationReason**
+#### Property value  
 
-### originHeight
+Type: **NavigationReason**  
 
-The origin height location of the element to be given focus.
+### originHeight  
 
-This property is read-only.
+The origin height location of the element to be given focus.  
 
-```js
+This property is read-only.  
+
+```javascript
 var originWoriginHeightidth = FocusNavigationEvent.originHeight;
-```
+```  
 
-#### Property value
-Type: **float**
+#### Property value  
 
-### originLeft
+Type: **float**  
 
-The origin left location of the element to be given focus.
+### originLeft  
 
-This property is read-only.
+The origin left location of the element to be given focus.  
 
-```js
+This property is read-only.  
+
+```javascript
 var originLeft = FocusNavigationEvent.originLeft;
-```
+```  
 
-#### Property value
-Type: **float**
+#### Property value  
 
-### originTop
+Type: **float**  
 
-The origin top location of the element to be given focus.
+### originTop  
 
-This property is read-only.
+The origin top location of the element to be given focus.  
 
-```js
+This property is read-only.  
+
+```javascript
 var originTop = FocusNavigationEvent.originTop;
-```
+```  
 
-#### Property value
-Type: **float**
+#### Property value  
 
-### originWidth
+Type: **float**  
 
-The origin width location of the element to be given focus.
+### originWidth  
 
-This property is read-only.
+The origin width location of the element to be given focus.  
 
-```js
+This property is read-only.  
+
+```javascript
 var originWidth = FocusNavigationEvent.originWidth;
-```
+```  
 
-#### Property value
-Type: **float**
+#### Property value  
 
+Type: **float**  

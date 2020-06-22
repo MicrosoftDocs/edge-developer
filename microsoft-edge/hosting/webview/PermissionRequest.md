@@ -3,17 +3,19 @@ description: Provides information about a permission request
 title: PermissionRequest object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/15/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# PermissionRequest object
+# PermissionRequest object  
 
-Provides information about a permission request. This object is available from the permissionRequest property of the event args from the [MSWebViewPermissionRequested](../webview.md#mswebviewpermissionrequested) webview event.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Provides information about a permission request. This object is available from the permissionRequest property of the event args from the [MSWebViewPermissionRequested](../webview.md#mswebviewpermissionrequested) webview event.  
+
+```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
     const permissionRequest = permissionRequestedEventArgs.permissionRequest;
     switch (permissionRequest.type) {
@@ -49,92 +51,92 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
             break;
     }
 });
-```
+```  
 
-## Methods
+## Methods  
 
-### allow
+### allow  
 
-Allows the request for permission.
+Allows the request for permission.  
 
-#### Parameters
+#### Parameters  
 
-This method has no parameters.
+This method has no parameters.  
 
-#### Return value
+#### Return value  
 
-This method does not return a value.
+This method does not return a value.  
 
-### defer
+### defer  
 
-If instead of synchronously allowing or disallowing a PermissionRequest, you require time to interact with the user or take some other asynchronous action, call defer() on the PermissionRequest. The PermissionRequest will now be available as a DeferredPermissionRequest from getDeferredPermissionRequests and getDeferredPermissionRequestById. You can correlate the current PermissionRequest with the corresponding DeferredPermissionRequest via the matching id property.
+If instead of synchronously allowing or disallowing a PermissionRequest, you require time to interact with the user or take some other asynchronous action, call defer() on the PermissionRequest.  The PermissionRequest will now be available as a DeferredPermissionRequest from getDeferredPermissionRequests and getDeferredPermissionRequestById.  You can correlate the current PermissionRequest with the corresponding DeferredPermissionRequest via the matching id property.  
 
-#### Parameters
+#### Parameters  
 
-This method has no parameters.
+This method has no parameters.  
 
-#### Return value
+#### Return value  
 
-This method does not return a value.
+This method does not return a value.  
 
-### deny
+### deny  
 
-Denies the request for permission.
+Denies the request for permission.  
 
-#### Parameters
+#### Parameters  
 
-This method has no parameters.
+This method has no parameters.  
 
-#### Return value
+#### Return value  
 
-This method does not return a value.
+This method does not return a value.  
 
-## Properties
+## Properties  
 
-### id
+### id  
 
-A unique ID that can be used to correlate the current PermissionRequest with a corresponding DeferredPermissionRequest if the defer method is used. See the defer method.
+A unique ID that can be used to correlate the current PermissionRequest with a corresponding DeferredPermissionRequest if the defer method is used.  See the defer method.  
 
-This property is read-only.
+This property is read-only.  
 
-##### Property value
+##### Property value  
 
-Type: **Unsigned long**
+Type: **Unsigned long**  
 
-### state
+### state  
 
-Returns "unknown", "defer", "allow", or "deny" to indicate the current state of permission request. The state string will correspond to whichever method allow, deny, or defer was called last or "unknown" if none of the methods have been called.
+Returns "unknown", "defer", "allow", or "deny" to indicate the current state of permission request.  The state string will correspond to whichever method allow, deny, or defer was called last or "unknown" if none of the methods have been called.  
 
-This property is read-only.
+This property is read-only.  
 
-#### Property value
+#### Property value  
 
-Type: **String**
+Type: **String**  
 
-### type
+### type  
 
-The type of permission being requested. This may be one of the following string values:
+The type of permission being requested. This may be one of the following string values:  
 
-- **geolocation**: access to location data via navigator.geolocation.
-- **unlimitedIndexedDBQuota**: allow IndexedDB APIs to ignore the usual stored data size limit.
-- **media**: access to the microphone and camera via navigator.getUserMedia.
-- **pointerlock**: ability to lock and control the mouse pointer via Element.requestPointerLock.
-- **webnotifications**: ability to show desktop notifications via window.Notification.
-- **screen**: ability to take screen shots via the Media Capture API.
-- **immersiveview**: ability to control a VR display.
+*   **geolocation**: access to location data via navigator.geolocation.  
+*   **unlimitedIndexedDBQuota**: allow IndexedDB APIs to ignore the usual stored data size limit.  
+*   **media**: access to the microphone and camera via navigator.getUserMedia.  
+*   **pointerlock**: ability to lock and control the mouse pointer via Element.requestPointerLock.  
+*   **webnotifications**: ability to show desktop notifications via window.Notification.  
+*   **screen**: ability to take screen shots via the Media Capture API.  
+*   **immersiveview**: ability to control a VR display.  
 
-This property is read-only.
+This property is read-only.  
 
-#### Property value
+#### Property value  
 
-Type: **String**
+Type: **String**  
 
-### uri
+### uri  
 
-The Uniform Resource Identifier (URI) of the document requesting permission.
+The Uniform Resource Identifier (URI) of the document requesting permission.  
 
-This property is read-only.
+This property is read-only.  
 
-#### Property value
+#### Property value  
 
-Type: **String**
+Type: **String**  

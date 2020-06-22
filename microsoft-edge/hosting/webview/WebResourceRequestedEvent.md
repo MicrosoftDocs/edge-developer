@@ -3,29 +3,31 @@ description: An event that is fired when an HTTP request is made.
 title: WebResourceRequestedEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# WebResourceRequestedEvent object
+# WebResourceRequestedEvent object  
 
-An event that is fired when an HTTP request is made.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Properties
+An event that is fired when an HTTP request is made.  
 
-### args
+## Properties  
 
-Information about the resource request. This is a [Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).
+### args  
 
-This property is read-only.
+Information about the resource request.  This is a [Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolwebresourcerequestedeventargs).  
 
-```js
+This property is read-only.  
+
+```javascript
 var args = webResourceRequestedEventArgs.args;
 var request = args.request;
-```
+```  
 
-#### Property value
-Type: **any**
+#### Property value  
 
+Type: **any**  
