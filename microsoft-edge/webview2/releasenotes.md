@@ -14,8 +14,11 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGetGallery] on a 6 week cadence. This page will keep you up to date with: product announcements, additions and modifications to the API surface, and breaking changes.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Re-compile your app after updating the NuGet package.
+
+> [!IMPORTANT]
+> While WebView2 is in Preview, .NET packages will be in the **pre-release package**
 
 ## 0.9.538
 
@@ -34,7 +37,7 @@ The WebView2 team will be delivering updates to the [WebView2 SDK][WebView2NuGet
   * [AreRemoteObjectsAllowed](reference/win32/0-9-488/icorewebview2settings.md#get_areremoteobjectsallowed) is now [AreHostObjectsAllowed](reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed)
 * Updated [AddHostObjectToScript](reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript) to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback. ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148))
 
-#### .NET
+#### .NET (0.9.538 pre-release)
 
 * Released WinForms and WPF WebView2API Samples, which are comprehensive guides of our SDK. Check out the [WebView2 Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
 * Added support for visual hosting and window features [experimental APIs](./concepts/versioning.md#experimental-apis)
