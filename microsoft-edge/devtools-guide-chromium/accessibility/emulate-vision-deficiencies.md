@@ -1,5 +1,5 @@
 ---
-title: Force Microsoft Edge DevTools Into Color Scheme Preview Mode (CSS Prefers Color Scheme)
+title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/16/2020
