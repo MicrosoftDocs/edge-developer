@@ -2,66 +2,48 @@
 title: Force Microsoft Edge DevTools Into Color Scheme Preview Mode (CSS Prefers Color Scheme)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+# Reduced Motion Simulation  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Animation in web products may be an accessibility problem.  Operating Systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.  On the web, you may use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not see any animations.  In your product, you may wrap your animation code in a test to avoid animations showing up for the affected users.  
 
-       https://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
-
-# Reduced Motion Simulation   
-
-Animation in web products can be an accessibility problem. That's why Operating Systems have an option to turn animations off to avoid confusing users or in a worst case scenario trigger seizures. On the web, you can use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not see any animations. In your product you can wrap your animation code in a test to avoid animations showing up for these users: 
-
-```CSS
+```css
 @media (prefers-reduced-motion: reduce) {
   /* in case the .header element has an animation, turn it off */
   .header {
-    animation: none;
+  animation: none;
   }
 }
-```
-Using the [Microsoft Edge DevTools][MicrosoftEdgeDevTools] you can simulate this reduced motion setting without having to change your operating system. 
+```  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
-    
-    > ##### Figure 1  
-    > The **Command Menu**  
-    > ![The Command Menu][ImageCommandMenu]  
-    
-1.  Type `reduced`, to turn the simulation on and off. Select the option and press `Enter`.  
-    
-    > ##### Figure 2  
-    > Turn the `prefers reduced motion` setting on or off
-    > ![Toggle reduced motion setting from Command Menu][ImageToggleReducedMotionFromCommandMenu]  
-    
-1. Reload the current document to test if your animations are turned off or visible.
+Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate this reduced motion setting without having to change your operating system.  
 
+1.  Open the **Command Menu**.  
+    1.  Press `Control`+`Shift`+`P`  on Windows or `Command`+`Shift`+`P` on macOS.  
+        
+        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+           The **Command Menu**  
+        :::image-end:::   
+        
+1.  Type `reduced`, to turn the simulation on and off.  Select the option and press `Enter`.  
+    
+    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Turn on or off the prefers reduced motion setting from Command Menu" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
+       Turn on or off the **prefers reduced motion** setting from **Command Menu**  
+    :::image-end:::  
+    
+1.  Refresh the current page to test whether your animations are turned off or visible.  
+    
 <!-- image links -->  
+
 [ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 1: The Command Menu"  
 [ImageToggleReducedMotionFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png "Figure 2: Toggle reduced motion from command palette"
 
 <!-- links -->  
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
+
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  
-
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
