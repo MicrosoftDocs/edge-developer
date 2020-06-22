@@ -93,8 +93,8 @@ You can also reach the different emulations without going through the various me
 [ImageRenderingTools]: /microsoft-edge/devtools-guide-chromium/media/getting-to-the-rendering-tools.msft.png "Figure 1: Getting to the rendering tools"  
 [ImageRenderingToolsVisionDeficienciesMenu]: /microsoft-edge/devtools-guide-chromium/media/accessibility-emulate-vision-menu.msft.png "Figure 2: The vision deficiencies option in the rendering menu"  
 [ImageRenderingToolsVisionDeficienciesMenuOpen]: /microsoft-edge/devtools-guide-chromium/media/accessibility-emulate-vision-menu-options.msft.png "Figure 3: Available options to simulation vision deficiencies"  
-[ImageAccessibilityBlurredEmulation]: /microsoft-edge/devtools-guide-chromium/media/accessibility-emulate-vision-menu-options.msft.png "Figure 4: Displaying a web site in blurred vision emulation"  
-[ImageAccessibilityAchromatopsiaEmulation]: /microsoft-edge/devtools-guide-chromium/media/accessibility-emulate-vision-menu-options.msft.png "Figure 5: Displaying a web site in Achromatopsia vision emulation"  
+[ImageAccessibilityBlurredEmulation]: /microsoft-edge/devtools-guide-chromium/media/accessibility-blurred-vision-emulation.msft.png "Figure 4: Displaying a web site in blurred vision emulation"  
+[ImageAccessibilityAchromatopsiaEmulation]: /microsoft-edge/devtools-guide-chromium/media/accessibility-achromatopsia-emulation.msft.png "Figure 5: Displaying a web site in Achromatopsia vision emulation"  
 [ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 6: The Command Menu"  
 [ImageCommandMenuEmulationOptions]: /microsoft-edge/devtools-guide-chromium/media/accessibility-emulation-command-menu-results.msft.png "Figure 7: The different emulation options available in the Command Menu"
 
