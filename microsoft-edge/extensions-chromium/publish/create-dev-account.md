@@ -1,6 +1,6 @@
 ---
-description: The steps to create Microsoft Edge Addons developer account on Partner center.
-title: Open A New Developer Account
+description: The steps to create Microsoft Edge add-ons developer account on Partner center.
+title: Register as a Microsoft Edge extension developer
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/22/2020
@@ -26,11 +26,11 @@ There is no registration fee involved to submit extensions to the Microsoft Edge
 
 Once logged into the account, fill out the following fields of the registration form. 
     
-1.  Account country/region
+1. **Account country/region**
 
 The country/region is where you either live or your business is located. You cannot change the value of this field later. 
 
-2. Account type 
+2. **Account type** 
 
 The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts. Both account types allow you to publish extensions to the Microsoft Edge add-ons catalog. 
 
@@ -45,17 +45,17 @@ You cannot change the account type later once the selection is made; ensure you 
 | Individual account is appropriate for developers representing themselves only. | Company account is intended for organizations and businesses. |  
 | Shorter account verification process | Greater account verification to confirm you have authorization to set up an account for your company |  
 
-3. Publisher display name 
+3. **Publisher display name** 
 
 The name used across all your extensions submitted to the Microsoft Edge add-ons website. This name will be visible to the users browsing through the extensions catalog.  
 
 The name must be 50 characters or fewer. You may use a name only if it is available and you have the rights to use it. For company accounts, make sure to use the registered business name of your organization. 
 
-4. Contact details
+4. **Contact details**
 
 Microsoft uses these details to contact you regarding account-related matters. You’ll receive an email confirmation once you complete the registration process. For company accounts, ensure you are using the registered email address of your organization.  
 
-5. Company approver 
+5. **Company approver** 
 
 If you are registering as a company, fill out the contact details (name, email address and phone number) of your company approver. These details will be used to contact the approver as a part of the vetting process to ensure your extensions represent your organization. This could either be a superior in the company or your own details if you are one of the founders of the company. 
 
