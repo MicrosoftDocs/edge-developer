@@ -119,7 +119,7 @@ For more detailed information on how to build and deploy WebView2 applications, 
 *   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)
 *   [Distribute WebView2 Applications](./concepts/distribution.md)  
 *   [Security Best Practices for WebView2 Applications](./concepts/security.md)
-*   [Manage User Data in WebView2 Applications](./concepts/userdatafolder.md)
+*   [Manage User Data Folder in WebView2 Applications](./concepts/userdatafolder.md)
  
 #### How-To guides  
 
