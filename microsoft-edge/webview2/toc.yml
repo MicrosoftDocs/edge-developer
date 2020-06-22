@@ -12,6 +12,10 @@
   items:
     - name: Distributing my app
       href: concepts/distribution.md
+    - name: Managing User Data Folders
+      href: concepts/userdatafolder.md
+    - name: Security Best Practices
+      href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
 - name: Release notes

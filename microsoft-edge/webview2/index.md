@@ -116,15 +116,15 @@ For more detailed information on how to build and deploy WebView2 applications, 
 
 #### Concepts  
 
-*   [WebView2 SDK and Microsoft Edge versioning](./concepts/versioning.md)
-*   [Distributing WebView2 applications](./concepts/distribution.md)  
+*   [WebView2 SDK and Microsoft Edge Versioning](./concepts/versioning.md)
+*   [Distribute WebView2 Applications](./concepts/distribution.md)  
+*   [Security Best Practices for WebView2 Applications](./concepts/security.md)
+*   [Manage User Data Folder in WebView2 Applications](./concepts/userdatafolder.md)
  
 #### How-To guides  
 
 *   [Debugging WebView2 with DevTools and Visual Studio script debugging](./howto/debug.md)  
 *   [Automating and debugging WebView2 with Microsoft EdgeDriver](./howto/webdriver.md)  
-
-<!--todo: add how-tos when available  -->  
 
 ## Getting in touch with the WebView2 team  
 
