@@ -56,9 +56,10 @@ When you visit a webpage and submit a form, Microsoft Edge sends info about the 
 When you use Guest mode, autofill is not available and new autofill entries are not added.  When you browse InPrivate, Microsoft Edge offers autofill entries, but new autofill entries are not added.  
 
 ## Cast  
-Cast in Microsoft Edge allows you to display your media to another screen using Google Cast.  You can access this feature from **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension that is not included in Microsoft Edge by default.  When first using Cast, Microsoft Edge will prompt for permission to install the Media Router extension.  
 
-Clicking on restart will install the Media Router extensions from the Chrome Web Store.  To keep the Media Router extension up to date, on startup of Microsoft Edge and at regular intervals, Microsoft Edge will ping the Chrome Web Store looking for updates with basic data about your version of Microsoft Edge.  Google may collect some data associated with the Media Router extension.  To uninstall the Media Router extension you can disable the Edge-On-Demand-Media-Router flag from edge://flags. This will stop updates from the Chrome Web Store.  This extension is hidden from the edge://extensions page.  
+Cast in Microsoft Edge allows you to display your media to another screen using Google Cast.  You may access the feature from **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension that is not included in Microsoft Edge by default.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.  
+
+Select **restart** to install the Media Router extensions from the Chrome Web Store.  To keep the Media Router extension up to date, on startup of Microsoft Edge and at regular intervals, Microsoft Edge send update requests to the Chrome Web Store that include basic data about your version of Microsoft Edge.  Google may collect some data associated with the Media Router extension.  To uninstall the Media Router extension, go to `edge://flags` and disable the **Edge-On-Demand-Media-Router**.  This also stops the updates from the Chrome Web Store.  The extension is hidden and does not appear on the **Installed extensions** list.  For the **Installed extensions** list, go to `edge://extensions`.  
 
 ## Collections  
 
