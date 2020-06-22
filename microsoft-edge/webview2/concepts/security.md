@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Best practices for developing secure WebView2 applications
 
-The [WebView2 control](aka.ms/webview2) allows developers to host web content in their native applications. When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on. To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application. 
+The [WebView2 control](https://docs.microsoft.com/microsoft-edge/webview2/) allows developers to host web content in their native applications. When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on. To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application. 
 
 1. Treat all web content as insecure
     - Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and cause the app to behave unexpectedly.
