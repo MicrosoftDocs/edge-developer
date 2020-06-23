@@ -17,7 +17,7 @@ WebView2 depends on Microsoft Edge to function. Each WebView2 SDK requires that 
 > [!NOTE]
 > WebView2 is currently in preview.  While, the Microsoft Edge WebView team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed as some newer versions of the browser may not support older SDK versions.  If there are breaking changes between browser versions and SDKs, the Microsoft Edge WebView team specifies the changes in the [release notes][Webview2Releasenotes].  
 
-In the future, the Microsoft Edge WebView team plans to change the distribution model.  The Microsoft Edge WebView team plans to remove the direct dependency on the Microsoft Edge browser from WebView2.  For more information, see [WebView2 Runtime][Webview2IndexEdgeRuntime].  
+In the future, the distribution model for WebView2 applications will change. For more information, see [WebView2 Runtime][Webview2IndexEdgeRuntime].  
  
 ## Release and pre-release package  
 
