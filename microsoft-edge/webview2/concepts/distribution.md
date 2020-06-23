@@ -60,9 +60,9 @@ Depending on your scenario, you may need to change the above workflow.  For exam
 
 Consider the following recommendations during the preview.  
 
-1.  Make sure to use the [Evergreen WebView2 Runtime and Installer][Webview2Installer] to develop or test your packaging and distribution pipeline.  In the future, your production application should include the installer.  
-1.  For developing your application, you may use the Evergreen WebView2 Runtime.  However, as the runtime shifts from the Dev Channel to the Beta Channel or Stable Channel, the runtime build number may not meet the most recent preview WebView2 SDK minimum version requirements.  If you wish to use the most recent SDK, install the Microsoft Edge Canary channel to ensure a compatible build is available on the device.  For more information about versioning, see [Versioning][ConceptsVersioning].  
-1.  To test your web content for compatibility with changes to the platform not available in the Stable Channel, use the appropriate non-Stable Channel as required.  
+*   Make sure to use the [Evergreen WebView2 Runtime and Installer][Webview2Installer] to develop or test your packaging and distribution pipeline.  In the future, your production application should include the installer.  
+*   For developing your application, you may use the Evergreen WebView2 Runtime.  However, as the runtime shifts from the Dev Channel to the Beta Channel or Stable Channel, the runtime build number may not meet the most recent preview WebView2 SDK minimum version requirements.  If you wish to use the most recent SDK, install the Microsoft Edge Canary channel to ensure a compatible build is available on the device.  For more information about versioning, see [Versioning][ConceptsVersioning].  
+*   To test your web content for compatibility with changes to the platform not available in the Stable Channel, use the appropriate non-Stable Channel as required.  
 
 ## Fixed version distribution mode  
 
