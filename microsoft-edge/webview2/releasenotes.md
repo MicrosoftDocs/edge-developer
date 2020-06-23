@@ -63,7 +63,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 [NuGet package][NuGetGallery0.9.488] \| minimum Microsoft Edge version 84.0.488.0.  
 
 *   > [!IMPORTANT]
-    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Microsoft Edge WebView2 Runtime][ConceptsDistributionMicrosoftEdgeRuntime], that you may chain-install through an installer the WebView team is currently developing.  For more information, see [App-Distribution][ConceptsDistribution].  
+    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Evergreen WebView2 Runtime][ConceptsDistributionEvergreenMode], that you may chain-install through an installer the WebView team is currently developing.  For more information, see [App-Distribution][ConceptsDistribution].  
 *   > [!IMPORTANT]
     > **Announcement**:  Moving forward, the WebView team releases two packages:  a pre-release package with experimental APIs \(for you to try out\) and a stable release package with stable APIs \(for your confidence\).  To learn about the differences, see [Understanding browser versions and WebView2][ConceptsVersioning].  
 *   > [!IMPORTANT]
@@ -192,7 +192,7 @@ Initial developer preview release.
 <!-- Links -->  
 
 [ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
-[ConceptsDistributionMicrosoftEdgeRuntime]: ./concepts/distribution.md#deploy-webview2-runtime "Deploy WebView2 Runtime - Distribution of applications using WebView2 | Microsoft Docs"  
+[ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  
