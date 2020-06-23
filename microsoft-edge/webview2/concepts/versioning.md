@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Understand WebView2 SDK versions  
 
-WebView2 depends on Microsoft Edge to function. Each WebView2 SDK requires that a minimum browser version is installed.  The minimum version reflected in the package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install Microsoft Edge with a build number of 488 or later. The browser version is also specified in the WebView2 [Release Notes][Webview2Releasenotes].  For more information on the latest releases of the browser, see [Browser Channels][DeployedgeChannels].  
+WebView2 depends on Microsoft Edge to function. Each WebView2 SDK requires that a minimum browser version is installed.  The minimum version is reflected in the package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install Microsoft Edge with a build number of 488 or later. The browser version is also specified in the WebView2 [Release Notes][Webview2Releasenotes].  For more information on the latest releases of the browser, see [Browser Channels][DeployedgeChannels].  
 
 > [!NOTE]
 > WebView2 is currently in preview.  While, the Microsoft Edge WebView team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed as some newer versions of the browser may not support older SDK versions.  If there are breaking changes between browser versions and SDKs, the Microsoft Edge WebView team specifies the changes in the [release notes][Webview2Releasenotes].  
