@@ -3,7 +3,7 @@ description: Learn about what's coming next for WebView2
 title: Roadmap for Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/19/2020
+ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -74,8 +74,8 @@ You are able to access WebView2 in your UWP applications using [Win UI 3.0][UwpT
 
 <!-- links -->  
 
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-model "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-model "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
+[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
+[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 
 [UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
 

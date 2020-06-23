@@ -30,7 +30,7 @@ After WebView2 reaches a stable general available state and we release the 1.0.0
 <!--links -->
 
 [Distibution]: ./distribution.md "Distribution of Applications using WebView2 | Microsoft Docs"  
-[DistributionEvergreenModel]: ./distribution.md#evergreen-distribution-model "Evergreen distribution model - Distribution of Applications using WebView2 | Microsoft Docs"  
+[DistributionEvergreenModel]: ./distribution.md#evergreen-distribution-mode "Evergreen distribution model - Distribution of Applications using WebView2 | Microsoft Docs"  
 [ReferenceWin3209538Experimental]: ../reference/win32/0-9-538-reference-webview2.md#experimental "Experimental - Reference (WebView2) | Microsoft Docs"  
 [Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
