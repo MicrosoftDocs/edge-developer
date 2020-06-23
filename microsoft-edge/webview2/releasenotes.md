@@ -3,7 +3,7 @@ description:  Host web content in your Win32 app with the Microsoft Edge WebView
 title:  Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  06/19/2020
+ms.date:  06/23/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -14,8 +14,11 @@ keywords:  IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, ed
 
 The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a 6-week cadence.  Review the following content for up to date information about product announcements, additions and modifications to the API surface, and breaking changes.  
 
-> [!IMPORTANT]
+> [!NOTE]
 > Re-compile your app after updating the NuGet package.  
+
+> [!IMPORTANT]
+> While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
 ## 0.9.538  
 
@@ -28,7 +31,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 #### Win32 C/C++  
 
-*   Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures] which fires when window.open() is called and associated [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
+*   Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures] which fires when `window.open()` is called and associated [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
 *   > [!IMPORTANT]
     > **Breaking Change**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] is deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209538Webview2IdlCreatecorewebview2environmentwithoptions].  
 *   > [!IMPORTANT]
@@ -36,7 +39,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
     > *   [AreRemoteObjectsAllowed][ReferenceWin3209488Icorewebview2settingsGetAreremoteobjectsallowed] is now [AreHostObjectsAllowed][ReferenceWin3209538Icorewebview2settingsGetArehostobjectsallowed].  
 *   Updated [AddHostObjectToScript][ReferenceWin3209538Icorewebview2Addhostobjecttoscript] to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback \([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\).  
 
-#### .NET  
+#### .NET (0.9.538 pre-release)  
 
 *   Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK.  For more information, see [ Samples Repo][GithubMicrosoftedgeWebview2samplesMain].  
 *   Added support for visual hosting and window features [experimental APIs][ConceptsVersioningExperimentalApis].  
