@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 Application
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 06/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Distribution of applications using WebView2  
 
-The WebView2 control utilizes the Microsoft Edge \(Chromium\) platform.  When packaging and distributing your app, make sure a copy of the platform or the WebView2 Runtime is present before the app starts.  The following page describes how you \(the developer\)are able to ensure that the WebView2 Runtime is installed and use of the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed version](#fixed-version-distribution-mode).  
+The WebView2 control utilizes the Microsoft Edge \(Chromium\) platform.  When packaging and distributing your app, make sure a copy of the platform or the WebView2 Runtime is present before the app starts.  The following page describes how you \(the developer\) are able to ensure that the WebView2 Runtime is installed and use of the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed version](#fixed-version-distribution-mode).  
 
 ## Evergreen distribution mode  
 
@@ -31,12 +31,12 @@ There are multiple channels WebView2 that applications may use as the web platfo
 > [!NOTE]
 > The evergreen distribution model is recommended for most developers.  
 
-Microsoft Edge Stable Channel runtime is not a valid target for WebView2, and the reasons are described later.  
+> [!IMPORTANT]
+> Microsoft Edge Stable Channel is not a valid target for WebView2, and the reasons are described later.  
 
 For more information about versioning, see [Versioning][ConceptsVersioning] and [Globals][ReferenceWin3209538WebviewIdl].  
 
 ### Understand the WebView2 Runtime and installer (Preview)  
-
 
 Microsoft Edge Stable Channel may not be installed on all user machines where your application runs.  Instead of requiring that users install Microsoft Edge, your application may use the Evergreen WebView2 Runtime and Installer \(Preview\).  The WebView2 Runtime is a customized copy of the Microsoft Edge binaries that is used to run your WebView2 applications .  When the WebView2 Runtime is installed, users are not able to use it as a normal browser.  For example, there is no desktop shortcut, start menu entry, users are not able to open a browser window using the Runtime binaries, and so on.  All Evergreen WebView2 applications on the device may use a single Evergreen WebView2 Runtime installation.  
 
@@ -60,7 +60,7 @@ Depending on your scenario, you may need to change the above workflow.  For exam
 
 Consider the following recommendations during the preview.  
 
-1.  Make sure to use the [Evergreen WebView2 Runtime and Installer ][Webview2Installer] to develop or test your packaging and distribution pipeline.  In the future, your production application must include the installer.  
+1.  Make sure to use the [Evergreen WebView2 Runtime and Installer][Webview2Installer] to develop or test your packaging and distribution pipeline.  In the future, your production application should include the installer.  
 1.  For developing your application, you may use the Evergreen WebView2 Runtime.  However, as the runtime shifts from the Dev Channel to the Beta Channel or Stable Channel, the runtime build number may not meet the most recent preview WebView2 SDK minimum version requirements.  If you wish to use the most recent SDK, install the Microsoft Edge Canary channel to ensure a compatible build is available on the device.  For more information about versioning, see [Versioning][ConceptsVersioning].  
 1.  To test your web content for compatibility with changes to the platform not available in the Stable Channel, use the appropriate non-Stable Channel as required.  
 
@@ -69,16 +69,11 @@ Consider the following recommendations during the preview.
 > [!NOTE]
 > The fixed version distribution model is currently not available.  
 
-For constrained environments, the WebView team plans to support a fixed version \(previously called bring-your-own\) distribution model.  The fixed version distribution model has the following benefits and limitations.  
-
-*   Allows you to select and package a specific version of the WebView2 Runtime in your application installer.  
-*   Allows you to control which version of the WebView2 Runtime is used by your application, and when user machines are updated.  
-*   Does not support automatic updates to the WebView2 Runtime.  
-*   Requires you to re-package and re-distribute your WebView2 application when updates are available.  
+For constrained environments, there are plans to support a fixed version \(previously named bring-your-own\) distribution mode.  The fixed version distribution mode allows you to select and package a specific version of the WebView2 Runtime.  The fixed version distribution mode allows you to control which version of the WebView2 Runtime is used by your application, and when user machines are updated.  The fixed version distribution mode does not receive any automatic updates, and you should plan to manually apply updates.  
 
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globals | Microsoft Docs"  
 
-[Webview2Installer]: https://aka.ms/webview2installer "WebView2 Installer"  
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  
