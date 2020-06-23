@@ -21,7 +21,7 @@ The evergreen distribution mode ensures that your app is taking advantage of the
 *   The web platform updates automatically without additional effort from you.  
 *   All applications that leverage the evergreen distribution mode use a shared copy of the platform binaries, which saves disk space.  
 
-You may choose from multiple channels WebView2 for applications to use as the web platform.  By default, WebView2 targets the most stable channel available on the device that meets the minimum version requirement of the WebView2 SDK.  The following channels are listed in order from most to least stable channel.  
+There are multiple channels WebView2 that applications may use as the web platform.  By default, WebView2 targets the most stable channel available on the device that meets the minimum version requirement of the WebView2 SDK.  The following channels are listed in order from most to least stable channel.  
 
 1.  WebView2 Runtime \(Preview\)  
 1.  Microsoft Edge Beta Channel  
