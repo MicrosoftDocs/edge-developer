@@ -3,165 +3,172 @@ description: Exposes whether the operation completed successfully or failed
 title: MSWebViewAsyncOperation object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# MSWebViewAsyncOperation object
+# MSWebViewAsyncOperation object  
 
-Exposes whether the operation completed successfully or failed. 
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Events
+Exposes whether the operation completed successfully or failed.  
 
-### complete
+## Events  
 
-Indicates that the operation completed. 
+### complete  
 
-```js
+Indicates that the operation completed.  
+
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("complete", handler);
 MSWebViewAsyncOperation.removeEventListener("complete", handler);
-```
+```  
 
-#### Event Information
+#### Event Information  
 
-|            |      |
-|------------|------|
-|**Interface** | **Event**
-|**Synchronous** |Yes |    
-|**Bubbles**     |No |   
-|**Cancelable**  |No |        
+|  |  |  
+|:--- |:--- |  
+| **Interface** | **Event** |  
+| **Synchronous** |Yes |  
+| **Bubbles** |No |   
+| **Cancelable** |No |  
 
+### error  
 
-### error
+Indicates that there was an error with the operation.  
 
-Indicates that there was an error with the operation.
-
-```js
+```javascript
 function handler(eventInfo) { /* Your code */ }
  
 // addEventListener syntax
 MSWebViewAsyncOperation.addEventListener("error", handler);
 MSWebViewAsyncOperation.removeEventListener("error", handler);
-```
+```  
 
-#### Event Information
+#### Event Information  
 
-|            |      |
-|------------|------|
-|**Interface** | **Event**
-|**Synchronous** |Yes |    
-|**Bubbles**     |No |   
-|**Cancelable**  |No |            
+|  |  |  
+|:--- |:--- |  
+| **Interface** | **Event** |  
+| **Synchronous** | Yes |  
+| **Bubbles** | No |  
+| **Cancelable** | No |  
 
+## Methods  
 
-## Methods
+### start  
 
-### start
+Called to start the async task.  
 
-Called to start the async task. 
-
-```js
+```javascript
 MSWebViewAsyncOperation.start();
-```
+```  
 
-### Parameters
+### Parameters  
 
-This method does not have parameters.
+This method does not have parameters.  
 
-### Return value
+### Return value  
 
-This method does not return a value.
+This method does not return a value.  
 
-## Properties
+## Properties  
 
-### error
+### error  
 
-The error that occured.
+The error that occurred.  
 
-This property is read-only.
+This property is read-only.  
 
-```js
+```javascript
 var error = MSWebViewAsyncOperation.error;
-```
+```  
 
-#### Property value
-Type: **DOMError**
+#### Property value  
 
-### oncomplete
+Type: **DOMError**  
 
-The **complete** event handler. 
+### oncomplete  
 
-```js
+The **complete** event handler.  
+
+```javascript
 var oncomplete = MSWebViewAsyncOperation.oncomplete;
-```
+```  
 
-#### Property value
-Type: **EventHandler**
+#### Property value  
 
-### onerror
+Type: **EventHandler**  
 
-The **error** event handler. 
+### onerror  
 
-```js
+The **error** event handler.  
+
+```javascript
 var onerror = MSWebViewAsyncOperation.onerror;
-```
+```  
 
-#### Property value
-Type: **EventHandler**
+#### Property value  
 
-### readyState
+Type: **EventHandler**  
 
-Describes the ready state of the object.
+### readyState  
 
-This property is read-only.
+Describes the ready state of the object.  
 
-```js
+This property is read-only.  
+
+```javascript
 var readyState = MSWebViewAsyncOperation.readyState;
-```
+```  
 
-#### Property value
-Type: **unsigned short**
+#### Property value  
 
-### result
+Type: **unsigned short**  
 
-The result of the operation.
+### result  
 
-This property is read-only.
+The result of the operation.  
 
-```js
+This property is read-only.  
+
+```javascript
 var result = MSWebViewAsyncOperation.result;
-```
+```  
 
-#### Property value
-Type: any
+#### Property value  
 
-### target
+Type: any  
 
-The target of the operation. 
+### target  
 
-This property is read-only.
+The target of the operation.  
 
-```js
+This property is read-only.  
+
+```javascript
 var target = MSWebViewAsyncOperation.target;
-```
+```  
 
-#### Property value
-Type: [**MSHTMLWebViewElement**](../webview.md)
+#### Property value  
 
-### type
+Type: [**MSHTMLWebViewElement**](../webview.md)  
 
-The type of the operation.
+### type  
 
-This property is read-only.
+The type of the operation.  
 
-```js
+This property is read-only.  
+
+```javascript
 var type = MSWebViewAsyncOperation.type;
-```
+```  
 
-#### Property value
-Type: **unsigned short**
+#### Property value  
+
+Type: **unsigned short**  
