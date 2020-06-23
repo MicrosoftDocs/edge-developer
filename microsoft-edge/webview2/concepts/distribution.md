@@ -37,7 +37,7 @@ For more information about versioning, see [Versioning][ConceptsVersioning].
 
 For more information about global methods, see [Globals][ReferenceWin3209538WebviewIdl].  
 
-### Understand the WebView2 Runtime and installer  
+### Understand the WebView2 Runtime and installer (Preview)  
 
 
 Microsoft Edge Stable Channel may not be installed on all user machines where your application runs.  Instead of requiring that users install Microsoft Edge, your application may use the Evergreen WebView2 Runtime and Installer \(Preview\).  The WebView2 Runtime is a customized copy of the Microsoft Edge binaries that is used to run your WebView2 applications .  When the WebView2 Runtime is installed, users are not able to use it as a normal browser.  For example, there is no desktop shortcut, start menu entry, users are not able to open a browser window using the Runtime binaries, and so on.  All Evergreen WebView2 applications on the device may use a single Evergreen WebView2 Runtime installation.  
