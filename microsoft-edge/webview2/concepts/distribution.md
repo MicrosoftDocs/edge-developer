@@ -71,7 +71,7 @@ Consider the following recommendations during the preview.
 ## Fixed version distribution mode  
 
 > [!NOTE]
-> The following information supports the fixed version distribution model.  The fixed version distribution model is currently not available.  
+> The fixed version distribution model is currently not available.  
 
 For constrained environments, the WebView team plans to support a fixed version \(previously called bring-your-own\) distribution model.  The fixed version distribution model has the following benefits and limitations.  
 
