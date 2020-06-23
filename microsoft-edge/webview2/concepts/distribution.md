@@ -33,9 +33,7 @@ You may choose from multiple channels WebView2 for applications to use as the we
 
 Microsoft Edge Stable Channel runtime is not a valid target for WebView2, and the reasons are described later.  
 
-For more information about versioning, see [Versioning][ConceptsVersioning].  
-
-For more information about global methods, see [Globals][ReferenceWin3209538WebviewIdl].  
+For more information about versioning, see [Versioning][ConceptsVersioning] and [Globals][ReferenceWin3209538WebviewIdl].  
 
 ### Understand the WebView2 Runtime and installer (Preview)  
 
