@@ -45,7 +45,7 @@ Today during the preview, the Evergreen WebView2 Runtime and Microsoft Edge Dev 
 > [!IMPORTANT]
 > Do not ship WebView2 applications in production during the preview.  
 
-The WebView team recommends the following workflow to ensure the Evergreen WebView2 Runtime is available.  
+Please use the following workflow to ensure the Evergreen WebView2 Runtime is available.  
 
 1.  Download the latest [Evergreen WebView2 Runtime Installer][Webview2Installer].  
 1.  Include the installer in your application installer or updater.  
