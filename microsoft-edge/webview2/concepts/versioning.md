@@ -35,7 +35,7 @@ In preview, the pre-release package contains the following.
 The WebView Team is testing APIs that represent future functionality named Experimental APIs.  The Experimental APIs are marked as `experimental` in the SDK.  Some Experimental APIs may ship as fully stable APIs in the release package.  You should expect all experimental APIs to change before release.  Please evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].   
 
 > [!CAUTION]
-> Do not to ship an application that has a dependency on an Experimental API.  
+> Avoid using the experimental APIs in production applications.  
 
 ### Roadmap  
 
