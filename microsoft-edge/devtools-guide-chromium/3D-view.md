@@ -18,6 +18,8 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 - [Clear some of the clutter in the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration)
 - [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type)
 
+**If you want to explore an early prototype of 3D View project and run the code yourself, check out the [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView)**
+
 There are two panes that you can use for your debugging experience.
 
 1. **Z-index** Navigate through the different elements in the web application with the z-index context in mind. This is the default pane.
