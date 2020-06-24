@@ -2,26 +2,26 @@
 title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 06/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Emulate vision deficiencies
 
-Worldwide approximately 8% of men and 0.5% of women have a [color vision deficiency][ColorblindawarenessMain] commonly named "Color Blindness".  [Microsoft Edge DevTools][MicrosoftEdgeDevTools] enables you to emulate various known deficiencies and provide a preview of your product for you to review.  
+To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
 
-| Color Deficiency | Details |  
+| Color vision deficiency | Details |  
 |:--- |:--- |  
-| Blurred vision |  |   
-| Protanopia | The inability to perceive any red light. |  
-| Deuteranopia | The inability to perceive any green light. |  
-| Tritanopia | The inability to perceive any blue light. |  
-| Achromatopsia | The inability to perceive any color, except for shades of grey. |  
+| Blurred vision | The user has difficulty focusing on fine details. |   
+| Protanopia | The user is unable to perceive any red light. |  
+| Deuteranopia | The user is unable to perceive any green light. |  
+| Tritanopia | The user is unable to perceive any blue light. |  
+| Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |  
 
 ## Navigate to the Rendering Tools  
 
-To test your current web product for color deficiencies, open the [Rendering Tools][RenderingTools].  
+To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][RenderingTools].  
 
 1.  Open the Rendering Tools by selecting the `...` menu item in the toolbar  
 1.  Select `More tools`  
@@ -31,38 +31,38 @@ To test your current web product for color deficiencies, open the [Rendering Too
        Opening the **Rendering Tools**  
     :::image-end:::  
 
-The **Rendering** menu appears in the bottom half of the DevTools.  
+The **Rendering** menu appears in the drawer.  
 
-1.  Scroll down to the `Emulate Vision deficiencies` menu item and select from the options.  
+1.  Scroll down to the `Emulate vision deficiencies` menu item and select the drop-down menu to display the options.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="The Emulate Vision Deficiencies menu of the Rendering tools" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       The **Emulate Vision Deficiencies** menu of the **Rendering** tools  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="The Emulate Vision Deficiencies menu on the Rendering drawer" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       The **Emulate vision deficiencies** menu on the **Rendering** drawer  
     :::image-end:::  
     
-1.  Choose any of the options  
+1.  Choose an option.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="The Emulate Vision Deficiencies menu options" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       The **Emulate Vision Deficiencies** menu options  
+       The **Emulate vision deficiencies** menu options  
     :::image-end:::  
     
-1.  The current page is displayed in a simulation of how it may appear to a user with the chosen deficiency.  
-
+1.  The main windows displays the simulation of your selected option applied to the current page.  
+    
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Microsoft Edge Developer Tools Documentation in Blurred Vision emulation" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Displayed using **Blurred Vision** emulation  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Display using **Blurred Vision** simulation" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Display using **Blurred Vision** simulation  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Microsoft Edge Developer Tools Documentation in Achromatopsia Vision emulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Display using **Achromatopsia Vision** emulation 
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Display using **Achromatopsia** simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+             Display using **Achromatopsia** simulation 
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
-## Using the command menu  
+## Use the Command Menu  
 
-You may also reach the different emulations without going through the various menus using the **Command Menu**.  
+You may also use **Command Menu** to access the the different simulations.  
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
@@ -72,12 +72,12 @@ You may also reach the different emulations without going through the various me
     
 1.  Type `emulate`, choose what you want to simulate and press `Enter`.  
     
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="The different emulation options available in the Command Menu" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       The different emulation options available in the **Command Menu**  
+    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="The different simulation options available in the Command Menu" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
+       The different simulation options available in the **Command Menu**  
     :::image-end:::  
     
 > [!IMPORTANT]
-> The emulation tools are approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The emulation tools are not a full assessment of the accessibility of your product, but you should have a good first step towards avoiding the biggest deficiencies.  
+> The **Emulate vision deficiencies** tool simulates approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tool is not a full assessment of the accessibility of your product, but you should have a good first step towards avoiding the biggest deficiencies.  
 
 <!-- links -->  
 
