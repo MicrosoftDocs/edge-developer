@@ -17,7 +17,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 
 ## Turn on experimental features  
 
-To select a experimental feature to use in Microsoft Edge, use the following steps.  
+Use the following steps to turn on \(or off\) experimental features in Microsoft Edge.  
 
 1.  [Open DevTools][DevtoolsOpen].  
     *   Press `F12`.  
