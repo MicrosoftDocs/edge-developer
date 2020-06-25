@@ -15,7 +15,7 @@ Animation in web products may be an accessibility problem.  Operating Systems de
 @media (prefers-reduced-motion: reduce) {
   /* in case the .header element has an animation, turn it off */
   .header {
-  animation: none;
+    animation: none;
   }
 }
 ```  
