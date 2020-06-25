@@ -55,7 +55,7 @@ Thie feature improves on-page visualizations when debugging websites that have C
 
 ### Enable support to move tabs between panels  
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as `3D View` and `Issues` may only opened in the drawer \(bottom\) panel of DevTools.  When this experiment is selected, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and selecting **Move to top** or **Move to bottom**.   This experiment allows you to better customize your DevTools layout.  To show or hide the bottom panel, press `Escape`.  
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only opened in the drawer \(bottom\) panel of DevTools.  When this experiment is selected, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and selecting **Move to top** or **Move to bottom**.   This experiment allows you to better customize your DevTools layout.  To show or hide the bottom panel, press `Escape`.  
 
 :::image type="complex" source="./media/experiments-move-panels.png" alt-text="Moving tabs between panels" lightbox="./media/experiments-move-panels.png":::
    Moving tabs between panels  
