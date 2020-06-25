@@ -35,7 +35,7 @@ To select a experimental feature to use in Microsoft Edge, use the following ste
 1.  Close and reopen Microsoft Edge DevTools.  
 
 > [!NOTE]
-> Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **Experiments** page and remove the checkbox of the experimental feature you want to turn off.  
+> Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.  
 
 ## Highlighted experimental features  
 
