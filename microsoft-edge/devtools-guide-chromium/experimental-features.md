@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/25/2020
+ms.date: 06/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -20,12 +20,10 @@ While experimental features are available in all channels of Microsoft Edge, you
 Use the following steps to turn on \(or off\) experimental features in Microsoft Edge.  
 
 1.  [Open DevTools][DevtoolsOpen].  
-    *   Press `F12`.  
-1.  Open **Settings**.  
-    *   Select the gear icon at the top-right corner.  
-    *   Press `F1`.  
-    *   Press `Shift`+`?`.  
-1.  On the left side of the **Settings** panel, select the **Experiments** section.    
+     *   Press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+1.  Open the **Settings** pane.  
+    *   Press `Shift`+`?`.  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+1.  On the left side of the **Settings** pane, select the **Experiments** section.  
     
     :::image type="complex" source="./media/experiments-devtools.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-devtools.png":::
        List of experiments in DevTools Settings  
@@ -96,6 +94,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 [Devtools3DView]: ./3D-view.md "3D View | Microsoft Docs"  
 [DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts - Microsoft Docs"  
 [DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
