@@ -27,19 +27,19 @@ There are many ways to open Microsoft Edge DevTools, because different users wan
 
 ## Open the Elements panel to inspect the DOM or CSS  
 
-### [DevTools UI](#tab/ui/)  
+### [DevTools UI](#tab/devtools-ui/)  
 
 <a id="elements-inspection"></a>  
 
 To inspect the styles or attributes of a DOM node, hover on the element, open the contextual menu \(right-click\), and select **Inspect**.  
 
-### [Keyboard shortcut (Windows)](#tab/winkey/)  
+### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
 
 <a id="elements-inspection"></a>  
 
 To inspect the styles or attributes of a DOM node, press `Control`+`Shift`+`C`.  
 
-### [Keyboard shortcut (macOS)](#tab/mackey/)  
+### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
 
 <a id="elements-inspection"></a>  
 
@@ -57,7 +57,7 @@ To inspect the styles or attributes of a DOM node, press `Command`+`Option`+`C`.
 
 Open the [Console][DevToolsConsoleIndex] pane to view logged messages or run JavaScript.  
 
-### [DevTools UI](#tab/ui/)  
+### [DevTools UI](#tab/devtools-ui/)  
 
 <a id="console-inspection"></a>  
 
@@ -66,13 +66,13 @@ Use the following steps to open [Console][DevToolsConsoleIndex] pane.
 1.  [Open DevTools](#open-microsoft-edge-devtools).  
 1.  Select the [Console][DevToolsConsoleIndex] pane.  
 
-### [Keyboard shortcut (Windows)](#tab/winkey/)  
+### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
 
 <a id="console-inspection"></a>  
 
 To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Control`+`Shift`+`J`.  
 
-### [Keyboard shortcut (macOS)](#tab/mackey/)  
+### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
 
 <a id="console-inspection"></a>  
 
@@ -84,13 +84,13 @@ To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Command`+
 
 ## Open the previous panel  
 
-### [Keyboard shortcut (Windows)](#tab/winkey/)  
+### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
 
 <a id="open-previous"></a>  
 
 To jump to the previous panel that you had open, press `Control`+`Shift`+`I`.  
 
-### [Keyboard shortcut (macOS)](#tab/mackey/)  
+### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
 
 <a id="open-previous"></a>  
 
@@ -102,7 +102,7 @@ To jump to the previous panel that you had open, press `Command`+`Option`+`I`.
 
 Open DevTools from the Microsoft Edge main menu.  
 
-### [DevTools UI](#tab/ui/)  
+### [DevTools UI](#tab/devtools-ui/)  
 
 <a id="open-devtools-task"></a>  
 
@@ -112,13 +112,13 @@ Use the following steps to open Microsoft Edge DevTools.
 1.  Select **More Tools**.  
 1.  Select **Developer Tools**.  
 
-### [Keyboard shortcut (Windows)](#tab/winkey/)  
+### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
 
 <a id="open-devtools-task"></a>  
 
 To open Microsoft Edge DevTools, press `F12` or `Control`+`Shift`+`I`.  
 
-### [Keyboard shortcut (macOS)](#tab/mackey/)  
+### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
 
 <a id="open-devtools-task"></a>  
 
@@ -134,7 +134,7 @@ To open Microsoft Edge DevTools, press `F12` or `Command`+`Option`+`I`.
 
 To auto-open DevTools on every new tab, open Microsoft Edge from the command-line and pass the `--auto-open-devtools-for-tabs` flag.  
 
-#### [CMD (Windows)](#tab/cmd/)  
+#### [CMD (Windows)](#tab/cmd-windows/)  
 
 <a id="selenium-tools-install"></a>  
 
@@ -142,7 +142,7 @@ To auto-open DevTools on every new tab, open Microsoft Edge from the command-lin
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-#### [PowerShell (Windows)](#tab/powershell/)  
+#### [PowerShell (Windows)](#tab/powershell-windows/)  
 
 <a id="selenium-tools-install"></a>  
 
@@ -150,7 +150,7 @@ start msedge --auto-open-devtools-for-tabs
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 ```  
 
-#### [bash (macOS)](#tab/bash/)  
+#### [bash (macOS)](#tab/bash-macos/)  
 
 <a id="selenium-tools-install"></a>  
 
