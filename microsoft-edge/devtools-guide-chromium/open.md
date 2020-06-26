@@ -33,17 +33,11 @@ There are many ways to open Microsoft Edge DevTools, because different users wan
 
 To inspect the styles or attributes of a DOM node, hover on the element, open the contextual menu \(right-click\), and select **Inspect**.  
 
-### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
+### [Keyboard shortcut](#tab/windows-keyboard/)  
 
 <a id="elements-inspection"></a>  
 
-To inspect the styles or attributes of a DOM node, press `Control`+`Shift`+`C`.  
-
-### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
-
-<a id="elements-inspection"></a>  
-
-To inspect the styles or attributes of a DOM node, press `Command`+`Option`+`C`.  
+To inspect the styles or attributes of a DOM node, press `Control`+`Shift`+`C` \(Windows\) or `Command`+`Option`+`C` \(macOS\).  
 
 * * *  
 
@@ -66,17 +60,11 @@ Use the following steps to open [Console][DevToolsConsoleIndex] pane.
 1.  [Open DevTools](#open-microsoft-edge-devtools).  
 1.  Select the [Console][DevToolsConsoleIndex] pane.  
 
-### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
+### [Keyboard shortcut](#tab/keyboard-shortcut/)  
 
 <a id="console-inspection"></a>  
 
-To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Control`+`Shift`+`J`.  
-
-### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
-
-<a id="console-inspection"></a>  
-
-To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Command`+`Option`+`J`.  
+To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  
 
 * * *  
 
@@ -84,17 +72,11 @@ To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Command`+
 
 ## Open the previous panel  
 
-### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
+### [Keyboard shortcut](#tab/keyboard-shortcut/)  
 
 <a id="open-previous"></a>  
 
-To jump to the previous panel that you had open, press `Control`+`Shift`+`I`.  
-
-### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
-
-<a id="open-previous"></a>  
-
-To jump to the previous panel that you had open, press `Command`+`Option`+`I`.  
+To jump to the previous panel that you had open, press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  
 
 * * *  
 
@@ -112,17 +94,11 @@ Use the following steps to open Microsoft Edge DevTools.
 1.  Select **More Tools**.  
 1.  Select **Developer Tools**.  
 
-### [Keyboard shortcut (Windows)](#tab/windows-keyboard-shortcut/)  
+### [Keyboard shortcut](#tab/keyboard-shortcut/)  
 
 <a id="open-devtools-task"></a>  
 
-To open Microsoft Edge DevTools, press `F12` or `Control`+`Shift`+`I`.  
-
-### [Keyboard shortcut (macOS)](#tab/macos-keyboard-shortcut/)  
-
-<a id="open-devtools-task"></a>  
-
-To open Microsoft Edge DevTools, press `F12` or `Command`+`Option`+`I`.  
+To open Microsoft Edge DevTools, press `F12` or `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  
 
 * * *  
 
