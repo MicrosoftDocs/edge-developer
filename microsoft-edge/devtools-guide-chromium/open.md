@@ -72,13 +72,13 @@ To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Control`+
 
 ## Open the previous panel  
 
-### [Keyboard shortcut](#tab/keyboard-shortcut/)  
+<!--### [Keyboard shortcut](#tab/keyboard-shortcut/)  -->  
 
-<a id="open-previous"></a>  
+<!--<a id="open-previous"></a>  -->  
 
 To jump to the previous panel that you had open, press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  
 
-* * *  
+<!--* * *  -->  
 
 ## Open Microsoft Edge DevTools  
 
