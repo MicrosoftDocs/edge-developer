@@ -159,7 +159,7 @@ Expand the carats to investigate a detached tree.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Select a node to investigate it further.  In the **Objects** pane you are able to see more information about the code that is referencing it.  For example, in the following figure you are able to see that the `detachedNodes` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses the `detachedNodes` variable and ensure that the reference to the node is removed when it is no longer needed.  
+Select a node to investigate it further.  In the **Objects** pane you are able to see more information about the code that is referencing it.  For example, in the following figure you are able to see that the `detachedNodes` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses the `detachedUNode` variable and ensure that the reference to the node is removed when it is no longer needed.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigating a node" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figure 7:  Investigating a node  

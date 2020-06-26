@@ -161,6 +161,8 @@ The browser logs messages to the Console, too.  This usually happens when there 
     > ![A TypeError in the Console][ImageConsoleLogTypeError]  
     
 1.  Click the **Log Levels** dropdown and enable the **Verbose** option if it is disabled.  You learn more about filtering in the next section.  You need to do this to make sure that the next message you log is visible.  
+    **Note:** If the Default Levels dropdown is disabled, you may need to close the Console Sidebar. Filter
+    by Message Source below for more information about the Console Sidebar.
     
     > ##### Figure 16  
     > Enabling the **Verbose** log level  
