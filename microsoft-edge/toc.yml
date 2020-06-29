@@ -70,6 +70,8 @@
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
+        - name: Experimental features
+          href: devtools-guide-chromium/experimental-features.md
         - name: IE mode
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D View
