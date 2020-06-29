@@ -4,74 +4,103 @@ description: Safely experiment for a fixed period of time and provide feedback o
 title: Origin Trials
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/23/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, origin trials, developer
 ---
 
-# Microsoft Edge Origin Trials Guide
+# Use Origin Trials in Microsoft Edge  
 
-The Origin Trials framework is a great way for Web developers to connect with browser engineers and the Web standards community, it enables Web developers to experiment in new web platform capabilities and offers a medium where they can continuously provide feedback on various APIs shape, usability and effectiveness after experimenting with them for a limited period of time in real production sites.
+Developers may use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you do not need to go to `edge://flags`and turn on feature flags.  For more information, see [experimental APIs][DeveloperMicrsoftEdgeOriginTrials].  Additionally, you may provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.  
 
-Once you have registered your website for an experiment, you will be able to use the experimental API without requiring your beta testers to turn a feature flag in [edge://flags](about://flags).
+## Get started using Origin Trials  
 
-## Getting Started
-### Browse Available Experiments
+For more information about the experimental APIs available in Microsoft Edge, see [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Ensure that you review the minimum version requirements for Microsoft Edge, and the trial end date to assess suitability of using the experimental APIs on your website.  
 
-You can visit the [Edge Origin Trials Developer Console](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials) to see a list of the experimental APIs Edge browser engineers are offering and would like to you try and give them feedback on.
+> [!NOTE]
+> An experiment may end earlier than planned if any of the following situations occur.  
+> *   A major security incident.  
+> *   If sufficient feedback is collected that indicates a major redesign is needed to meet the needs of web developers.  
+> In either case, a notification email is sent to all developers currently enrolled in the experiment.  
 
-### Register for an Experiment
-Our framework is consistent with [Chrome Origin Trials](https://developers.chrome.com/origintrials/#/trials/active), simply click the `register` button for any of the available experiments in our Origin Trials Developer console, provide your website's origin, and we will instantly generate a token once you agree to our terms and conditions and submit the form.
+### Register for a trial of an experimental API  
 
-There are 2 ways to use the tokens provide in your page:
+Use the following steps to register for a trial of an experimental API.  
 
-#### Option 1: Using a `<meta>` Tag
-Add an origin-trial <meta> tag to the head of any page, example:
+1.  Visit the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  
+1.  Choose the Register button on any of the available experiments.  
+1.  Sign into the Developer Console using your GitHub username and password.  
+1.  Choose **Authorize MicrosoftEdge**.  
+1.  Complete the form.  
+    
+    > [!NOTE]
+    > To enroll a single or all subdomains, choose set the `Do you need to match all subdomains for the provided origin?` setting to `Yes`.  For example, `https://dev.contoso.com` is a single domain, and `https://*.contoso.com` uses a wildcard to represent all subdomains.  
+    
+    > [!IMPORTANT]
+    > The following origin formats are not allowed.  
+    > *   Specifying a subfolder on the origin.  
+    >     
+    >     ```https
+    >     https://contoso.com/path/subfolder
+    >     ```  
+    > 
+    > *   Using an origin with query string parameters.  
+    >     
+    >     ```https
+    >     https://contoso.com/path/feature?test_id=12345
+    >     ```  
+    
+1.  Choose **ACCEPT and REGISTER**.  
 
-```html
-<meta http-equiv="origin-trial" content="your-token-gues-here">
-```
+### Apply your token  
 
-#### Option 2: Using a HTTP Header
-Another option is to add `Origin-Trial` to your HTTP server response headers, example:
+A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  To begin using the trial on your website, use either of the following methods to apply the token to your page.  
 
-```json
-Origin-Trial: your-token-goes-here
-```
+*   Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.  
+    
+    ```html
+    <meta http-equiv="origin-trial" content="replace-with-your-token">
+    ```  
+    
+*   Add `Origin-Trial` to the HTTP response header of your server.  
+    
+    ```json
+    Origin-Trial: replace-with-your-token
+    ```  
+    
+> [!NOTE]
+> Your token is valid for 6 weeks.  Before your trial ends, reminder emails are sent to you that ask for your feedback and ask you to consider renewing your trial before your token expires.  
 
-## Web Developer Guidelines
+### Opt out of an experiment  
 
-### Allowed Origins
+To opt out of an experiment, use one of the following methods to remove your token.  
 
-The Edge Origin Trials portal today **only supports SSL Enabled Origins**, websites wanting to register for an experiment must have `HTTPS` properly implemented. However, in future portal releases we are looking to enable more secure origins such as:
+*   Remove the `meta` tag from every page that used the experimental API.  
+    
+    ```html
+    <meta http-equiv="origin-trial" content="your-token">
+    ```  
+    
+*   Remove `Origin-Trial` from the HTTP response header of your server.  
+    
+    ```json
+    Origin-Trial: your-token
+    ```  
+    
+### Detect experimental features and provide a fallback  
 
-- Localhost: it's going to be possible to register `http://localhost` in experiments, today developer can *enable* the appropriate feature flag in [edge://flags](about://flags).
-- Extensions: it's going to be possible for `extensions://` prefixed origins to enroll in experiments.
+When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that do not support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available which may result in errors.  To avoid this situation, ensure you detect features available in your browser.  For more information, see [Implementing feature detection][MDNImplementingFeatureDetection].
 
-### Subdomains, URL Paths and Query Params
+### Roadmap for Allowed Origins  
 
-It is possible to only enroll a specific subdomain such as `https://dev.example.com` or an origin with wild-card match to all it's subdomains by answering *Yes* to the "Do you need to match all subdomains for the provided origin?" question in the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials). However, the following scenarios are **not** possible:
+The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins, which means that websites must have HTTPS properly implemented to register for an experiment.  In the future, the following secure origins are planned.  
 
-- `https://example.com/path/new-feature`
-- `https://example.com/path/new-feature?test_id=12345`
+*   Register `http://localhost` as the origin for your experiments.  To use `http://localhost` today, go to `edge://flags` and set the experiment to **Enabled**.  
+*   Use extensions with `extensions://` prefixed origins to enroll in experiments.  
+    
+<!-- links -->  
 
-### Registered Trial Duration
+[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials Developer Console | Microsoft Docs"  
 
-Once you have registered for a trial, your token will be valid for **6 weeks**, which this is the standard duration for a trial cycle, and the end of each cycle, you are eligible to renew after providing your feedback on the API you are experimenting with.
-
-We will send out emails reminding you to provide feedback and renew before your token expires.
-
-### Experiment duration
-
-The duration of an experiment is usually longer than 6 weeks, the standard duration for a trial cycle. When browsing available experiments you will be able to see which versions of Edge the experiment will be available for as well as the estimated end date.
-
-NOTE ⚠️: a browser feature team may decide to early-end an experiment in case of any major security incidents caused by the feature, or they have collected enough feedback and concluded the currently proposed API does not meet the web developer needs, and a major redesign need to happen. We will be sending out emails to all developers enrolled in an experiment in the case of early-end.
-
-### Opting out of an experiment
-
-To opt out of an experiment, you can simply remove the token we have provided from your page's HEAD `meta` tag or server's response HTTP header.   
-
-### Experimental feature implementation best practices
-
-MDN has a great resource on best practices for feature detection, you can [view it here](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection). In summary, it is important to always provide a working experience if the feature your website is using does not exist in the browser your visitor is running, this is extremely applicable when relying on an experimental feature using a token that needs to be renewed every 6 weeks.
+[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementing feature detection | MDN"  
