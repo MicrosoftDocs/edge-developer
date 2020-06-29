@@ -39,17 +39,9 @@ Use the following steps to register for a trial of an experimental API.
     
     > [!IMPORTANT]
     > The following origin formats are not allowed.  
-    > *   Specifying a subfolder on the origin.  
-    >     
-    >     ```https
-    >     https://contoso.com/path/subfolder
-    >     ```  
+    > *   Specifying a subfolder on the origin.  For example, `https://contoso.com/path/subfolder`  
     > 
-    > *   Using an origin with query string parameters.  
-    >     
-    >     ```https
-    >     https://contoso.com/path/feature?test_id=12345
-    >     ```  
+    > *   Using an origin with query string parameters.  For example, `https://contoso.com/path/feature?query_parameter=12345`  
     
 1.  Choose **ACCEPT and REGISTER**.  
 
