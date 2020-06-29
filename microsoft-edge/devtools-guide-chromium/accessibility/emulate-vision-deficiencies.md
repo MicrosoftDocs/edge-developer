@@ -2,7 +2,7 @@
 title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/24/2020
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -77,7 +77,7 @@ You may also use **Command Menu** to access the the different simulations.
     :::image-end:::  
     
 > [!IMPORTANT]
-> The **Emulate vision deficiencies** tool simulates approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tool is not a full assessment of the accessibility of your product, but you should have a good first step towards avoiding the biggest deficiencies.  
+> The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.  
 
 <!-- links -->  
 
