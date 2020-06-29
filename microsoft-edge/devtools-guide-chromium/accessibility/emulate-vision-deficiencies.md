@@ -62,7 +62,7 @@ The **Rendering** menu appears in the drawer.
     
 ## Use the Command Menu  
 
-You may also use **Command Menu** to access the the different simulations.  
+You may also use **Command Menu** to access the different simulations.  
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
