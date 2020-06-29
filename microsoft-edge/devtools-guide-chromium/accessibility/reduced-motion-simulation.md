@@ -1,5 +1,5 @@
 ---
-title: Force Microsoft Edge DevTools Into Color Scheme Preview Mode (CSS Prefers Color Scheme)
+title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/18/2020
@@ -15,7 +15,7 @@ Animation in web products may be an accessibility problem.  Operating Systems de
 @media (prefers-reduced-motion: reduce) {
   /* in case the .header element has an animation, turn it off */
   .header {
-  animation: none;
+    animation: none;
   }
 }
 ```  
