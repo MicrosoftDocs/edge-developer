@@ -455,7 +455,7 @@
     - name: Hosting
       href: hosting/toc.md
     - name: Origin Trials
-      href: origin-trials.md
+      href: origin-trials/index.md
     - name: Performance analysis
       href: performance-analysis.md
     - name: Privacy Whitepaper
