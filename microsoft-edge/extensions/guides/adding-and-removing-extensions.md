@@ -3,12 +3,12 @@ description: Learn how to add and remove extensions, as well as move an extensio
 title: Adding and removing extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2019
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extension
 ms.custom: seodec18
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Adding, moving, and removing extensions for Microsoft Edge  
