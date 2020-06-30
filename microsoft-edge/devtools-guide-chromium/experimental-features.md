@@ -107,7 +107,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 [Devtools3DView]: ./3D-view.md "3D View | Microsoft Docs"  
 [DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-[DevToolsSettings]: ./devtools-guide-chromium/customize/#settings "Settings | Microsoft Docs"
+[DevToolsSettings]: ./devtools-guide-chromium/customize/index#settings "Settings | Microsoft Docs"
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
