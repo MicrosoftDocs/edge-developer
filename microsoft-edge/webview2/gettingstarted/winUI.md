@@ -114,8 +114,12 @@ Next add a WebView to your application.
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
 
-        <controls:WebView2 x:Name="MyWebView" Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" />
+        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
     ```  
@@ -136,10 +140,8 @@ Add the ability to allow users to change the URL that the WebView2 control displ
 1.  In **MainWindow.xaml**, add an address bar by copying and pasting the following code snippet inside the DockPanel that contains the WebView.  
     
     ```xml
-     <StackPanel Orientation="Horizontal">
-            <TextBox Name="addressBar" Width="1300" />
-            <Button x:Name="myButton" Click="myButton_Click">Go</Button>
-     </StackPanel>
+        <TextBox Name="addressBar" Grid.Column="0"/>
+        <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
     ```  
     
     Confirm that the `Grid` section of `MainWindow.xaml` looks like the following code snippet.  
@@ -151,13 +153,15 @@ Add the ability to allow users to change the URL that the WebView2 control displ
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+    
+        <TextBox Name="addressBar" Grid.Column="0"/>
+        <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
 
-        <StackPanel Orientation="Horizontal">
-            <TextBox Name="addressBar" Width="1300" />
-            <Button x:Name="myButton" Click="myButton_Click">Go</Button>
-        </StackPanel>
-        
-        <controls:WebView2 x:Name="MyWebView" Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" />
+        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
     ```  

@@ -9,7 +9,7 @@
     - name: Windows Forms
       href: gettingstarted/winforms.md
     - name: WinUI 3.0
-      href: gettingstarted/winUI.md
+      href: gettingstarted/winui.md
 - name: Concepts
   items:
     - name: Distributing my app
