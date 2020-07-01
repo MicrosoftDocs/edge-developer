@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 04/23/2020
+  ms.date: 07/01/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -28,6 +28,22 @@ highlightedContent:
     - title: "Download Microsoft Edge Insider Channels"
       itemType: download
       url: https://www.microsoft.com/edge/business/download
+    # Card
+    - title: "Microsoft Edge for Consumers"
+      itemType: overview
+      url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-consumers
+    # Card
+    - title: "Microsoft Edge for Enterprise"
+      itemType: overview
+      url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-enterprise
+    # Card
+    - title: "Microsoft Edge for Developers"
+      itemType: overview
+      url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-developers
+    # Card
+    - title: "Support"
+      itemType: deploy
+      url: https://support.microsoft.com/microsoft-edge
     # Card
     - title: "What's new"
       itemType: whats-new
@@ -113,7 +129,7 @@ conceptualContent:
     - title: Getting Started with DevTools
       links:
         - url: /microsoft-edge/devtools-guide-chromium
-          itemType: reference
+          itemType: overview
           text: DevTools Overview
         - url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
           itemType: reference
@@ -164,7 +180,7 @@ conceptualContent:
     - title: Customize DevTools
       links:
         - url: /microsoft-edge/devtools-guide-chromium/customize/index
-          itemType: reference
+          itemType: overview
           text: Overview
         - url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
           itemType: reference
@@ -203,7 +219,7 @@ conceptualContent:
     - title: Extensions Overview
       links:
         - url: /microsoft-edge/extensions-chromium/index
-          itemType: reference
+          itemType: overview
           text: Extensions Overview
     # Card
     - title: "Extensions: Getting started tutorial"
@@ -233,19 +249,19 @@ conceptualContent:
     - title: "Extensions: Publish to the Microsoft Store"
       links:
         - url: /microsoft-edge/extensions-chromium/publish/publish-extension
-          itemType: reference
+          itemType: how-to-guide
           text: Step-wise publishing process
         - url: /microsoft-edge/extensions-chromium/publish/create-dev-account
-          itemType: reference
+          itemType: how-to-guide
           text: Open developer account
         - url: /microsoft-edge/extensions-chromium/publish/upload-video
-          itemType: reference
+          itemType: how-to-guide
           text: Upload YouTube Video
         - url: /microsoft-edge/extensions-chromium/publish/update
-          itemType: reference
+          itemType: how-to-guide
           text: Update Extension Listing
         - url: /microsoft-edge/extensions-chromium/publish/manage-settings
-          itemType: reference
+          itemType: how-to-guide
           text: Manage account settings
     # Card
     - title: "Extensions: Microsoft Edge Addons Policies"
@@ -260,8 +276,11 @@ conceptualContent:
     - title: Progressive Web Apps
       links:
         - url: /microsoft-edge/progressive-web-apps-chromium/index
-          itemType: reference
+          itemType: overview
           text: Overview (Chromium)
+        - url: /microsoft-edge/devtools-guide-chromium/get-started
+          itemType: get-started
+          text: Get started with Progressive Web Apps (Chromium)
         - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
           itemType: reference
           text: Using DevTools with Progressive Web Apps
@@ -269,11 +288,17 @@ conceptualContent:
     - title: WebView2
       links:
         - url: /microsoft-edge/webview2/index
-          itemType: reference
+          itemType: overview
           text: Overview
         - url: /microsoft-edge/webview2/gettingstarted/win32
-          itemType: reference
+          itemType: get-started
           text: Getting Started with WebView2
+        - url: /microsoft-edge/webview2/gettingstarted/wpf
+          itemType: get-started
+          text: Getting started with WebView2 in WPF
+        - url: /microsoft-edge/webview2/gettingstarted/winforms
+          itemType: get-started
+          text: Getting started with WebView2 in Windows Forms apps
         - url: /microsoft-edge/webview2/webview2-api-reference
           itemType: reference
           text: Reference
