@@ -2,7 +2,7 @@
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 06/26/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,80 +21,90 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Open Microsoft Edge DevTools   
-
-
+# Open Microsoft Edge DevTools  
 
 There are many ways to open Microsoft Edge DevTools, because different users want fast access to different parts of the DevTools UI.  
 
-## Open the Elements panel to inspect the DOM or CSS   
+## Open the Elements panel to inspect the DOM or CSS  
 
-When you want to inspect the styles or attributes of a DOM node, right-click the element and select **Inspect**.  
+Each of the following tasks enable you to inspect the styles or attributes of a DOM node.
 
-> ##### Figure 1  
-> The **Inspect** option  
-> ![The Inspect option][ImageInspectOption]  
+*   Hover on the element, open the contextual menu \(right-click\), and select **Inspect**.  
+*   Press `Control`+`Shift`+`C` \(Windows\) or `Command`+`Option`+`C` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 
-Or press `Control`+`Shift`+`C` \(Windows\) or `Command`+`Option`+`C` \(macOS\).  
+:::image type="complex" source="./media/bing-right-click-inspect.msft.png" alt-text="The **Inspect** option" lightbox="./media/bing-right-click-inspect.msft.png":::
+   The **Inspect** option  
+:::image-end:::  
 
 <!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
-## Open the Console panel to view logged messages or run JavaScript   
+## Open the Console panel  
 
-Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to jump straight into the **Console** panel.  
+Each of the following tasks enable you to open the [Console][DevToolsConsoleIndex] pane to view logged messages or run JavaScript.  
+
+*   Use the following steps to open [Console][DevToolsConsoleIndex] pane.  
+    
+    1.  [Open DevTools](#open-microsoft-edge-devtools).  
+    1.  Select the [Console][DevToolsConsoleIndex] pane.  
+
+*   To jump straight into the [Console][DevToolsConsoleIndex] pane, press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 
 <!--See [Get Started With The Console][ConsoleGetStarted].  -->
 
-## Open the last panel you had open   
+## Open the previous panel  
 
-Press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  
+To jump to the previous panel that you had open, press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 
-## Open DevTools from the Microsoft Edge main menu  
+## Open Microsoft Edge DevTools  
 
-Click **Settings and more \(Alt+F\)** `...` and then select **More Tools** > **Developer Tools**.  
+Each of the following tasks enable you to open DevTools.  
 
-> ##### Figure 2  
-> Opening DevTools from the Microsoft Edge main menu  
-> ![Opening DevTools from the Microsoft Edge main menu][ImageOpenFromMain]  
+*   Use the following steps to open Microsoft Edge DevTools.  
+    
+    1.  Select the  `...` icon \(the **Settings and more** icon\).  
+    1.  Select **More Tools**.  
+    1.  Select **Developer Tools**.  
+    
+*   To open Microsoft Edge DevTools, press `F12` or `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 
-## Auto-open DevTools on every new tab   
+:::image type="complex" source="./media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="./media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+   Open DevTools from the Microsoft Edge main menu  
+:::image-end:::  
 
-Open Microsoft Edge from the command line and pass the `--auto-open-devtools-for-tabs` flag.  
+## Auto-open DevTools on every new tab  
 
-Windows \(CMD\):  
+To auto-open DevTools on every new tab, open Microsoft Edge from the command-line and pass the `--auto-open-devtools-for-tabs` flag.  
+
+#### [CMD (Windows)](#tab/cmd-windows/)  
+
+<a id="selenium-tools-install"></a>  
 
 ```cmd
 start msedge --auto-open-devtools-for-tabs
 ```  
 
-Windows \(PowerShell\):  
+#### [PowerShell (Windows)](#tab/powershell-windows/)  
+
+<a id="selenium-tools-install"></a>  
 
 ```powershell
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 ```  
 
-macOS:  
+#### [bash (macOS)](#tab/bash-macos/)  
+
+<a id="selenium-tools-install"></a>  
 
 ```bash
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```  
 
- 
-
-
-
-<!-- image links -->  
-
-[ImagesMainIcon]: /microsoft-edge/devtools-guide-chromium/media/main-menu-icon.msft.png  
-
-[ImageInspectOption]: /microsoft-edge/devtools-guide-chromium/media/bing-right-click-inspect.msft.png "Figure 1: The Inspect option"  
-[ImageOpenFromMain]: /microsoft-edge/devtools-guide-chromium/media/bing-customize-more-tools-developer-tools-transparent.msft.png "Figure 2: Opening DevTools from the Microsoft Edge main menu"  
+* * *  
 
 <!-- links -->  
+
+[DevToolsConsoleIndex]: ./console/index.md "Console Overview | Microsoft Docs"  
+[DevtoolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts - Microsoft Docs"  
 
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->  
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
