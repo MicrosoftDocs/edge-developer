@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 Application
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/23/2020
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -38,7 +38,7 @@ For more information about versioning, see [Versioning][ConceptsVersioning] and 
 
 ### Understand the WebView2 Runtime and installer (Preview)  
 
-Microsoft Edge Stable Channel may not be installed on all user machines where your application runs.  Instead of requiring that users install Microsoft Edge, your application may use the Evergreen WebView2 Runtime and Installer \(Preview\).  The WebView2 Runtime is a customized copy of the Microsoft Edge binaries that is used to run your WebView2 applications .  When the WebView2 Runtime is installed, users are not able to use it as a normal browser.  For example, there is no desktop shortcut, start menu entry, users are not able to open a browser window using the Runtime binaries, and so on.  All Evergreen WebView2 applications on the device may use a single Evergreen WebView2 Runtime installation.  
+Microsoft Edge Stable Channel may not be installed on all user machines where your application runs.  Instead of requiring that users install Microsoft Edge, your application may use the Evergreen WebView2 Runtime and Installer \(Preview\).  The WebView2 Runtime is a customized copy of the Microsoft Edge binaries that is used to run your WebView2 applications.  When the WebView2 Runtime is installed, users are not able to use it as a normal browser.  For example, there is no desktop shortcut, start menu entry, users are not able to open a browser window using the Runtime binaries, and so on.  All Evergreen WebView2 applications on the device may use a single Evergreen WebView2 Runtime installation.  
 
 Today during the preview, the Evergreen WebView2 Runtime and Microsoft Edge Dev Channel are updated at the same time and have the same build.  In the future during the Preview, the WebView2 Team plans to update the WebView2 Runtime and match the same build as the Microsoft Edge Beta Channel.  In the future when WebView2 reaches General Availability \(GA\), the WebView2 Team plans to update the WebView2 Runtime and match the same build as the Microsoft Edge Stable Channel.  After GA, applications should use the WebView2 Runtime in production.  
 
