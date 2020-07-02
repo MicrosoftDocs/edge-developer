@@ -3,78 +3,82 @@ description: Represents a webview process.
 title: MSWebViewProcess object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# MSWebViewProcess object
+# MSWebViewProcess object  
 
-Represents a [webview](../webview.md) process.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Represents a [webview](../webview.md) process.  
+
+```javascript
 var wvprocess = new MSWebViewProcess();
-```
+```  
 
-## Properties
+## Properties  
 
-### enterpriseId
+### enterpriseId  
 
-The enterprise ID of the process.
+The enterprise ID of the process.  
 
 ```js
 var enterpriseId = wvprocess.enterpriseId;
-```
+```  
 
-This property is read-only.
+This property is read-only.  
 
-#### Property value
-Type: **DOMString**
+#### Property value  
 
-### isPrivateNetworkClientServerCapabilityEnabled
+Type: **DOMString**  
 
-Gets a value indicating whether the [webview](../webview.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.
+### isPrivateNetworkClientServerCapabilityEnabled  
 
-```js
+Gets a value indicating whether the [webview](../webview.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.  
+
+```javascript
 var privateNetwork = wvprocess.isPrivateNetworkClientServerCapabilityEnabled;
-```
+```  
 
-This property is read-only.
+This property is read-only.  
 
-#### Property value
-Type: **Boolean**
+#### Property value  
 
-## Methods
+Type: **Boolean**  
 
-### CreateWebViewAsync
+## Methods  
 
-Creates a [webview](../webview.md) in a specific process.
+### CreateWebViewAsync  
 
-```js
+Creates a [webview](../webview.md) in a specific process.  
+
+```javascript
 wvprocess.createWebviewAsync();
-```
+```  
 
-#### Return value
+#### Return value  
 
-Type: **`Promise<MSHTMLWebViewElement>`**
+Type: **`Promise<MSHTMLWebViewElement>`**  
 
-### GetWebViews
+### GetWebViews  
 
-Returns a sequence of **MSWebViewProcess** objects hosted within the process.
+Returns a sequence of **MSWebViewProcess** objects hosted within the process.  
 
-#### Return value
+#### Return value  
 
-Type: **`sequence<MSHTMLWebViewElement>`**
+Type: **`sequence<MSHTMLWebViewElement>`**  
 
-### Terminate
+### Terminate  
 
-Terminates the process.
+Terminates the process.  
 
-```js
+```javascript
 wvprocess.terminate();
-```
+```  
 
-#### Return value
+#### Return value  
 
-This method does not return a value.
+This method does not return a value.  

@@ -7,7 +7,7 @@ ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 ms.assetid: be90aa6a-b001-4a6f-90c5-c2135e913be0
 caps.latest.revision: 4
 author: "MSEdgeTeam"
