@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView 2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -119,7 +119,7 @@ Press F5 to build and run the app. Now you have a WebView window displaying Bing
 
 ## Step 4 - Navigation events
 
-We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](../reference/win32/0-9-538/ICoreWebView2.md#navigation-events) to learn more.
+We already covered navigating to URL using `ICoreWebView2::Navigate` in the last step. During navigation, WebView fires a sequence of events that the host can listen to - `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`. Click [here](../concepts/navigation.md) to learn more.
 
 ![navigation-events](../media/navigation-events.png)
 

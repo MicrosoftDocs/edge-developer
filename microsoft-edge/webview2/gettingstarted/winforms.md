@@ -3,7 +3,7 @@ description: Host web content in your Windows Forms app with the Microsoft Edge 
 title: Microsoft Edge WebView 2 for Windows Forms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2020
+ms.date: 07/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -156,7 +156,7 @@ The application that hosts WebView2 controls listens to the following events tha
 * `HistoryChanged`  
 * `NavigationCompleted`  
 
-For more information, see [Navigation Events](../reference/win32/0-9-488/icorewebview2.md#navigation-events).  
+For more information, see [Navigation Events](../concepts/navigation.md).  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
    Navigation events
