@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/02/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -91,16 +91,6 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Error status values for web navigations.
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Enum for web resource request contexts.
-
-## Navigation events
-
-The normal sequence of navigation events is NavigationStarting, SourceChanged, ContentLoading and then NavigationCompleted. The following events describe the state of WebView during each navigation: NavigationStarting: WebView is starting to navigate and the navigation will result in a network request. The host can disallow the request at this time. SourceChanged: The source of WebView is changed to a new URL. This may also be due to a navigation that doesn't cause a network request such as a fragment navigation. HistoryChanged: WebView's history has been updated as a result of the navigation. ContentLoading: WebView has started loading new content. NavigationCompleted: WebView has completed loading content on the new page. Developers can track navigations to each new document by the navigation ID. WebView's navigation ID changes every time there is a successful navigation to a new document.
-
-![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
-
-Note that this is for navigation events with the same NavigationId event arg. Navigations events with different NavigationId event args may overlap. For instance, if you start a navigation wait for its NavigationStarting event and then start another navigation you'll see the NavigationStarting for the first navigate followed by the NavigationStarting of the second navigate, followed by the NavigationCompleted for the first navigation and then all the rest of the appropriate navigation events for the second navigation. In error cases there may or may not be a ContentLoading event depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple NavigationStarting events in a row, with ones following the first will have their IsRedirect flag set, however navigation ID remains the same. Same document navigations do not result in NavigationStarting event and also do not increment the navigation ID.
-
-To monitor or cancel navigations inside subframes in the WebView, use FrameNavigationStarting.
 
 ## Process model
 
