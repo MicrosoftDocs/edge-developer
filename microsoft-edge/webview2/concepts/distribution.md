@@ -45,7 +45,7 @@ Today during the preview, the Evergreen WebView2 Runtime and Microsoft Edge Dev 
 > [!IMPORTANT]
 > Do not ship WebView2 applications in production during the preview.  
 
-Applications are recommended to ensure that the Evergreen WebView2 Runtime is installed before launch. Below is an example workflow.  
+Applications are recommended to ensure that the Evergreen WebView2 Runtime is installed before application launches. Below is an example workflow.  
 
 1.  Download the latest [Evergreen WebView2 Runtime Installer][Webview2Installer].  
 1.  Include the installer in your application installer or updater.  
