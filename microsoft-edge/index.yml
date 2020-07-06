@@ -37,15 +37,15 @@ highlightedContent:
       itemType: deploy
       url: https://support.microsoft.com/microsoft-edge
     # Card
-    - title: "Microsoft Edge for Consumers"
+    - title: "Docs for Consumers"
       itemType: overview
       url: https://support.microsoft.com/microsoft-edge
     # Card
-    - title: "Microsoft Edge for Administrators"
+    - title: "Docs for Administrators"
       itemType: overview
       url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-enterprise
     # Card
-    - title: "Microsoft Edge for Developers"
+    - title: "Docs for Developers"
       itemType: overview
       url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-developers
       
