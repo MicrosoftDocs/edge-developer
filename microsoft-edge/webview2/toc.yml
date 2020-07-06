@@ -18,6 +18,8 @@
       href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
+    - name: Data types
+      href: concepts/data-types.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
