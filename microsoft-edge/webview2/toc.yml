@@ -18,6 +18,8 @@
       href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
+    - name: Process model
+      href: concepts/process-model.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
