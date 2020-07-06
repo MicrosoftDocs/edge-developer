@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/01/2020
+  ms.date: 07/06/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -29,9 +29,17 @@ highlightedContent:
       itemType: download
       url: https://www.microsoft.com/edge/business/download
     # Card
+    - title: "What's new"
+      itemType: whats-new
+      url: https://www.microsoftedgeinsider.com/whats-new
+    # Card
+    - title: "Support"
+      itemType: deploy
+      url: https://support.microsoft.com/microsoft-edge
+    # Card
     - title: "Microsoft Edge for Consumers"
       itemType: overview
-      url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-consumers
+      url: https://support.microsoft.com/microsoft-edge
     # Card
     - title: "Microsoft Edge for Enterprise"
       itemType: overview
@@ -40,14 +48,6 @@ highlightedContent:
     - title: "Microsoft Edge for Developers"
       itemType: overview
       url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-developers
-    # Card
-    - title: "Support"
-      itemType: deploy
-      url: https://support.microsoft.com/microsoft-edge
-    # Card
-    - title: "What's new"
-      itemType: whats-new
-      url: https://www.microsoftedgeinsider.com/whats-new
       
       
 # productDirectory section (optional)
