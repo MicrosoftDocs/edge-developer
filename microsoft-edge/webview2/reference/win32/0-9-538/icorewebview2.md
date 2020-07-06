@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -101,26 +101,6 @@ The normal sequence of navigation events is NavigationStarting, SourceChanged, C
 Note that this is for navigation events with the same NavigationId event arg. Navigations events with different NavigationId event args may overlap. For instance, if you start a navigation wait for its NavigationStarting event and then start another navigation you'll see the NavigationStarting for the first navigate followed by the NavigationStarting of the second navigate, followed by the NavigationCompleted for the first navigation and then all the rest of the appropriate navigation events for the second navigation. In error cases there may or may not be a ContentLoading event depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple NavigationStarting events in a row, with ones following the first will have their IsRedirect flag set, however navigation ID remains the same. Same document navigations do not result in NavigationStarting event and also do not increment the navigation ID.
 
 To monitor or cancel navigations inside subframes in the WebView, use FrameNavigationStarting.
-
-## Process model
-
-WebView2 uses the same process model as the Edge web browser. There is one Edge browser process per specified user data directory in a user session that will serve any WebView2 calling process that specifies that user data directory. This means one Edge browser process may be serving multiple calling processes and one calling process may be using multiple Edge browser processes.
-
-![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
-
-Off of a browser process there will be some number of renderer processes. These are created as necessary to service potentially multiple frames in different WebViews. The number of renderer processes varies based on the site isolation browser feature and the number of distinct disconnected origins rendered in associated WebViews.
-
-![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
-
-You can react to crashes and hangs in these browser and renderer processes using the ProcessFailure event.
-
-You can safely shutdown associated browser and renderer processes using the Close method.
-
-## Threading model
-
-The WebView2 must be created on a UI thread. Specifically a thread with a message pump. All callbacks will occur on that thread and calls into the WebView must be done on that thread. It is not safe to use the WebView from another thread.
-
-Callbacks including event handlers and completion handlers execute serially. That is, if you have an event handler running and begin a message loop no other event handlers or completion callbacks will begin executing reentrantly.
 
 ## Security
 
