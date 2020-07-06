@@ -41,7 +41,7 @@ highlightedContent:
       itemType: overview
       url: https://support.microsoft.com/microsoft-edge
     # Card
-    - title: "Microsoft Edge for Enterprise"
+    - title: "Microsoft Edge for Administrators"
       itemType: overview
       url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-enterprise
     # Card
