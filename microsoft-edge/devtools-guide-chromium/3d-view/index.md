@@ -29,7 +29,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 ## Navigating the canvas  
 
-:::image type="complex" source="./media/canvas.png" alt-text="Canvas of 3D View" lightbox="./media/canvas.png":::
+:::image type="complex" source="../media/canvas.png" alt-text="Canvas of 3D View" lightbox="../media/canvas.png":::
    Canvas of 3D View  
 :::image-end:::  
 
@@ -46,7 +46,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 ### On-screen controls  
 
-:::image type="complex" source="./media/controls-small.png" alt-text="On-screen controls" lightbox="./media/controls-small.png":::
+:::image type="complex" source="../media/controls-small.png" alt-text="On-screen controls" lightbox="../media/controls-small.png":::
    On-screen controls  
 :::image-end:::  
 
@@ -55,7 +55,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 ## Z-index  
 
-:::image type="complex" source="./media/z-index-view-box.png" alt-text="Z-index view" lightbox="./media/z-index-view-box.png":::
+:::image type="complex" source="../media/z-index-view-box.png" alt-text="Z-index view" lightbox="../media/z-index-view-box.png":::
    Z-index view  
 :::image-end:::  
 
@@ -89,7 +89,7 @@ The are the different visualizations you may use for the DOM in your canvas.  Wh
 
 ## 3D DOM  
 
-:::image type="complex" source="./media/dom-purple-box.png" alt-text="DOM view" lightbox="./media/dom-purple-box.png":::
+:::image type="complex" source="../media/dom-purple-box.png" alt-text="DOM view" lightbox="../media/dom-purple-box.png":::
    DOM view  
 :::image-end:::  
 
