@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/02/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -94,7 +94,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ## Providing feedback on experimental features  
 
-To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools:  
+To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
 *   Send your feedback using the Feedback icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
@@ -105,7 +105,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "3D View | Microsoft Docs"  
+[Devtools3dViewIndex]: ./3d-view/index.md "3D View | Microsoft Docs"  
 [DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsCustomizeSettings]: ./customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
