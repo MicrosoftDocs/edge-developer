@@ -3,7 +3,7 @@ description: All about 3D View and how to use it.
 title: 3D View
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/30/2019
+ms.date: 07/07/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -105,7 +105,7 @@ A slider on the control pane titled **Nesting level for page** with a number nex
 
 In addition to the **Heatmap - Purple to White**, **Heatmap - Blue to Yellow**, **Heatmap - Rainbow**, and **Use background color** radio buttons, there is **Use screen texture**.  The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements.  On the **3D DOM** pane, the  **color type** setting is still a work in progress, since some websites have a harder time rendering screen texture in the 3D View.  
 
-## Next steps  
+## Getting in touch with the Microsoft Edge Devtools team  
 
 The Microsoft Edge Devtools team is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback to help improve the Microsoft Edge DevTools.  Simply select the feedback icon in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or press `Option`+`Shift`+`I` \(macOS\) and enter any feedback or feature requests you have for the DevTools.  
 
