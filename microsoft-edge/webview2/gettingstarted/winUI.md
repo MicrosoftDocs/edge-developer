@@ -19,12 +19,17 @@ In this article, get started creating your first WebView2 app and learn about th
 Ensure you installed the following list of pre-requisites before proceeding:  
 
 * Make sure that your development computer has Windows 10, version 1803 (build 17134), or a later version installed. WinUI 3 for desktop apps requires 1803 or a later OS version.
+* [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.
 * Install Visual Studio 2019, version 16.7 Preview 1. For details, see these [instructions](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/#configure-your-dev-environment).
 * Install both x64 and x86 versions of .NET 5 Preview 4:
     * [x64](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x64.exe) 
     * [x86](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x86.exe)
 * Install the VSIX extension that includes the WinUI 3.0 Preview 1 project templates for Visual Studio 2019. Link [here](https://aka.ms/winui3/previewdownload).
+* Enable [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) to ensure full Visual Studio feature functionality.
 
+    :::image type="complex" source="./media/winui-gettingstarted-devmode.png" alt-text="DevMode":::
+       DevMode
+    :::image-end:::  
 
 ## Step 1 - Create Project  
 
@@ -65,12 +70,7 @@ Start with a basic desktop project containing a single main window.
     * **Project name (Package)**: This is a [Windows Application Packaging Project](https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) that is configured to build the app into an MSIX package for deployment. This project contains the [package manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/schema-root) for your app, and it is the startup project for your solution by default.
 
     
-    > [!NOTE]
-    >Ensure your computer settings are on Developer Mode.
-     
-    :::image type="complex" source="./media/winui-gettingstarted-devmode.png" alt-text="DevMode":::
-       DevMode
-    :::image-end:::  
+    
     
 8. Double click the MainWindow.xml file in the Solution Explorer to view the code. Click F5 to build the project. The project should run a small example of a button in a window.
     
@@ -119,7 +119,8 @@ Next lets add a WebView to your application.
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" 
+        Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
     ```  
@@ -161,7 +162,8 @@ Add the ability to allow users to change the URL that the WebView2 control displ
         <TextBox Name="addressBar" Grid.Column="0"/>
         <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
 
-        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" 
+        Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
     ```  
@@ -270,27 +272,20 @@ Press `F5` to build and run your project.  Confirm that the application displays
    HTTPS
 :::image-end:::  
 
-## Step 7 - Communication between host and web content  
 
-The host and web content may communicate with each other using `postMessage` as follows:  
-
-*   Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageReceived` on the host.  
-*   Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
-
-This communication mechanism allows web content to pass messages to the host using native capabilities.  
-
-    
-> [!NOTE]
-> Our team is currently working on building out our APIs to provide further functionality! For further information of our current APIs click [here](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)! 
 
 
 **Congratulations, you built your first WebView2 app!**
   
-## Next steps  
+## Future Plans  
+
+Our team is currently working on building out our APIs to provide full WebView2 functionality! For more information of the current state of our API click [here](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md). 
+
+> [!NOTE]
+> This API may ship before the WinRT CoreWebView2 object, meaning functionality of the Webview2 would be limited to the APIs included in the above document for some interim period of time. 
 
 
 *   For a comprehensive example of WebView2 capabilities, see [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.  
-*   For more detailed information about WebView2 APIs, see [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md).  
 *   For more information about  WebView2, see [WebView2 Resources](../index.md#next-steps).  
 
 ## Getting in touch with the Microsoft Edge WebView team  
