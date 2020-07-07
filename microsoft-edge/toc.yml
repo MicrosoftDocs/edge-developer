@@ -75,7 +75,7 @@
         - name: IE mode
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D View
-          href: devtools-guide-chromium/3D-view.md
+          href: devtools-guide-chromium/3d-view/index.md
         - name: DevTools for Beginners
           items: 
             - name: HTML and the DOM
@@ -456,6 +456,8 @@
           href: extensions/troubleshooting.md
     - name: Hosting
       href: hosting/toc.md
+    - name: Origin Trials
+      href: origin-trials/index.md
     - name: Performance analysis
       href: performance-analysis.md
     - name: Privacy Whitepaper
