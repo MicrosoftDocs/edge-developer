@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView2
 title: Microsoft Edge WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/06/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -122,14 +122,6 @@ The WebView2 must be created on a UI thread. Specifically a thread with a messag
 
 Callbacks including event handlers and completion handlers execute serially. That is, if you have an event handler running and begin a message loop no other event handlers or completion callbacks will begin executing reentrantly.
 
-## Security
-
-Always check the Source property of the WebView before using ExecuteScript, PostWebMessageAsJson, PostWebMessageAsString, or any other method to send information into the WebView. The WebView may have navigated to another page via the end user interacting with the page or script in the page causing navigation. Similarly, be very careful with AddScriptToExecuteOnDocumentCreated. All future navigations will run this script and if it provides access to information intended only for a certain origin, any HTML document may have access.
-
-When examining the result of an ExecuteScript method call, a WebMessageReceived event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView validate the URI of the HTML document is what you expect.
-
-When constructing a message to send into a WebView, prefer using PostWebMessageAsJson and construct the JSON string parameter using a JSON library. This will avoid any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script.
-
 ## String types
 
 String out parameters are LPWSTR null terminated strings. The callee allocates the string using CoTaskMemAlloc. Ownership is transferred to the caller and it is up to the caller to free the memory using CoTaskMemFree.
@@ -143,20 +135,6 @@ Various methods provide or accept URIs and JSON as strings. Please use your own 
 If WinRT is available for your app you can use `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` to parse or produce JSON strings or `RuntimeClass_Windows_Foundation_Uri` and `IUriRuntimeClassFactory` to parse and produce URIs. Both of these work in Win32 apps.
 
 If you use IUri and CreateUri to parse URIs you may want to use the following URI creation flags to have CreateUri behavior more closely match the URI parsing in the WebView: `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
-
-## Debugging
-
-Open DevTools with the normal shortcuts: `F12` or `Ctrl+Shift+I`. You can use the `--auto-open-devtools-for-tabs` command argument switch to have the DevTools window open immediately when first creating a WebView. See CreateCoreWebView2Controller documentation for how to provide additional command line arguments to the browser process. Check out the LoaderOverride registry key for trying out different builds of WebView2 without modifying your application in the CreateCoreWebView2Controller documentation.
-
-## Versioning
-
-After you've used a particular version of the SDK to build your app, your app may end up running with an older or newer version of installed browser binaries. Until version 1.0.0.0 of WebView2 there may be breaking changes during updates that will prevent your SDK from working with different versions of installed browser binaries. After version 1.0.0.0 different versions of the SDK can work with different versions of the installed browser by following these best practices:
-
-To account for breaking changes to the API be sure to check for failure when calling the DLL export CreateCoreWebView2Environment and when calling QueryInterface on any CoreWebView2 object. A return value of E_NOINTERFACE can indicate the SDK is not compatible with the Edge browser binaries.
-
-Checking for failure from QueryInterface will also account for cases where the SDK is newer than the version of the Edge browser and your app attempts to use an interface of which the Edge browser is unaware.
-
-When an interface is unavailable, you can consider disabling the associated feature if possible, or otherwise informing the end user they need to update their browser.
 
 ## Members
 
