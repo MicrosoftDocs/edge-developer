@@ -90,7 +90,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ## Previous experimental features  
 
-*   [3D View][Devtools3DView] is now available and turned on by default in Microsoft Edge version 83 or later.  
+*   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
 
 ## Providing feedback on experimental features  
 
