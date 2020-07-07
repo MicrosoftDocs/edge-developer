@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/26/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -21,7 +21,7 @@ Use the following steps to turn on \(or off\) experimental features in Microsoft
 
 1.  [Open DevTools][DevtoolsOpen].  
      *   Press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
-1.  Open the **Settings** pane.  
+1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
     *   Press `Shift`+`?`.  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  On the left side of the **Settings** pane, select the **Experiments** section.  
     
@@ -41,9 +41,22 @@ The following sections describe the new experimental features that are available
 
 | Experimental feature | Microsoft Edge version |  
 |:--- |:--- |  
+| [Enable custom keyboard shortcuts settings tab](#enable-custom-keyboard-shortcuts-settings-tab) | 84 or later |
 | [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later |  
+
+### Enable custom keyboard shortcuts settings tab
+
+Provides a new **Shortcuts** page in [DevTools Settings][DevToolsCustomizeSettings] that enables matching [keyboard shortcuts][DevToolsShortcuts] in the DevTools to [VS Code][VisualstudioCode].  
+
+Once you have enabled this experiment, open [DevTools Settings][DevToolsCustomizeSettings] again by pressing `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in VS Code.  
+
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Match keyboard shortcuts in the DevTools to VS Code" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Match keyboard shortcuts in the DevTools to VS Code
+:::image-end:::  
+
+For example, on Windows the keyboard shortcut for pausing or continuing running a script in [VS Code][VisualstudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.  
 
 ### Enable new CSS grid debugging features  
 
@@ -77,11 +90,11 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ## Previous experimental features  
 
-*   [3D View][Devtools3DView] is now available and turned on by default in Microsoft Edge version 83 or later.  
+*   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
 
 ## Providing feedback on experimental features  
 
-To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools:  
+To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
 *   Send your feedback using the Feedback icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
@@ -92,11 +105,15 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 <!-- links -->  
 
-[Devtools3DView]: ./3D-view.md "3D View | Microsoft Docs"  
+[Devtools3dViewIndex]: ./3d-view/index.md "3D View | Microsoft Docs"  
 [DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts - Microsoft Docs"  
+[DevToolsCustomizeSettings]: ./customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Visual Studio Code"  
 
 [WebhintMain]: https://webhint.io "webhint" 

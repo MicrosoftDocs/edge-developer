@@ -52,7 +52,25 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-Change `executablePath` to point to your installation of Microsoft Edge \(Chromium\).  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version`.  Save your changes.  
+Change `executablePath` to point to your installation of Microsoft Edge \(Chromium\).  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version` and copy the **Executable path** on that page or install the [edge-paths][npmEdgePaths] package with one of the following commands.  
+
+```shell
+npm i edge-paths
+```  
+
+```shell
+yarn add edge-paths
+```  
+ 
+The code sample below uses the [edge-paths][npmEdgePaths] package to programmatically find the path to your installation of Microsoft Edge \(Chromium\) on your OS.
+
+```javascript
+const edgePaths = require("edge-paths");
+
+const EDGE_PATH = edgePaths.getEdgePath();
+```
+
+Finally, set `executablePath: EDGE_PATH` in `example.js`.  Save your changes.  
 
 > [!NOTE]
 > Microsoft Edge \(EdgeHTML\) does not work with `puppeteer-core`.  You must install the [Microsoft Edge Insider channels][MicrosoftedgeinsiderDownload] to continue following this example.  
@@ -122,6 +140,8 @@ The Edge Developer team is eager to hear your feedback about using Puppeteer, `p
 [ChromiumHome]: https://www.chromium.org/Home "Chromium | The Chromium Projects"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
+
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "npm | Edge Paths"
 
 [PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer vs. puppeteer-core | Puppeteer"  
