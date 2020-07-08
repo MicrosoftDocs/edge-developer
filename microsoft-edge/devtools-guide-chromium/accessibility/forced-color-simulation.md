@@ -89,10 +89,10 @@ View and change your CSS like any other web page.  For more information, see [Ge
 
 <!-- links --> 
 
-[CSSSystemColors]: https://drafts.csswg.org/css-color/#css-system-colors
+[CSSSystemColors]: https://drafts.csswg.org/css-color/#css-system-colors "CSS System Colors"
 [MediaQuerySpecification]: https://drafts.csswg.org/mediaqueries-5/#forced-colors "CSS Media Queries Specification on forced colors"
 [WebAimSurvey]: https://webaim.org/projects/lowvisionsurvey2/#contrastMode "WebAim Survey on low vision"
-[WindowsHighContrastMode]: https://support.microsoft.com/en-us/help/13862/ windows-10-use-high-contrast-mode "How to enable high contrast mode in Windows 10"
+[WindowsHighContrastMode]: https://support.microsoft.com/en-us/help/13862/windows-10-use-high-contrast-mode "How to enable high contrast mode in Windows 10"
 [DyslexiaLink]: https://en.wikipedia.org/wiki/Dyslexia "Dyslexia"
 [IrlenSyndromeLink]: https://en.wikipedia.org/wiki/Irlen_syndrome "Irlen Syndrome (Wikipedia)"
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
