@@ -212,6 +212,8 @@
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
                 - name: Emulate Vision Deficiencies
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+                - name: Simulate High Contrast
+                  href: devtools-guide-chromium/accessibility/forced-color-simulation.md
         - name: Remote Debugging
           items: 
             - name: Android Devices
