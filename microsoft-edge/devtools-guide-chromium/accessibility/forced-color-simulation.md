@@ -12,9 +12,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Windows and other Operating Systems have a [setting that allows users to show the interface with a set of reduced colors][WindowsHighContrastMode]. These could be either pre-set color schemes or defined by the user. This helps people with several needs: those with limited vision, those suffering from Migraine, [Irlen Syndrome][IrlenSyndromeLink] or [Dyslexia][DyslexiaLink]. 
 
-Whilst exact numbers aren't available, roughly 4% of all Windows users (roughly 55 million people) have their display set up using these reduced colors, commonly known as "High Contrast Mode".According to WebAIM’s 2018 “[Survey of Users with low Vision][WebAimSurvey]”, more than 50% of the low vision users use High Contrast Mode.
+Whilst exact numbers aren't available, roughly 4% of all Windows users (roughly 55 million people) have their display set up using these reduced colors, commonly known as "High Contrast Mode". According to WebAIM’s 2018 “[Survey of Users with low Vision][WebAimSurvey]”, more than half of low vision users use High Contrast Mode.
 
-To make it easier for developers to test what their products look like in high contrast mode, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] have a way to simulate high contrast mode without having to change your Operating System settings. This also helps users of other operating systems that don't have the same functionality and therefore can't test it.
+To make it easier for developers to test what their products look like in High Contrast Mode, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] have a way to simulate it without having to change your Operating System settings. This also helps users of other operating systems that don't have the same functionality and therefore can't test it.
+
+The [CSS Media Queries Level 5 specification][MediaQuerySpecification] also defines a programatic way for developers to react to this setting. 
+
+```css
+@media (forced-colors: active) {
+  /* Apply these overrides in high contrast mode */
+}
+```  
+
+    > [!IMPORTANT]
+    > It is tempting to define your own settings for high contrast mode, but it is important to remember that users need these settings to be exactly how they defined them. Instead of defining your own colors, you can use the [CSS System Color keywords][CSSSystemColors].
+
 
 ## Navigate to the Rendering Tools  
 
@@ -77,8 +89,10 @@ View and change your CSS like any other web page.  For more information, see [Ge
 
 <!-- links --> 
 
-[WebAimSurvey]: https://webaim.org/projects/lowvisionsurvey2/#contrastMode
-[WindowsHighContrastMode]: https://support.microsoft.com/en-us/help/13862/windows-10-use-high-contrast-mode "How to enable high contrast mode in Windows 10"
+[CSSSystemColors]: https://drafts.csswg.org/css-color/#css-system-colors
+[MediaQuerySpecification]: https://drafts.csswg.org/mediaqueries-5/#forced-colors "CSS Media Queries Specification on forced colors"
+[WebAimSurvey]: https://webaim.org/projects/lowvisionsurvey2/#contrastMode "WebAim Survey on low vision"
+[WindowsHighContrastMode]: https://support.microsoft.com/en-us/help/13862/ windows-10-use-high-contrast-mode "How to enable high contrast mode in Windows 10"
 [DyslexiaLink]: https://en.wikipedia.org/wiki/Dyslexia "Dyslexia"
 [IrlenSyndromeLink]: https://en.wikipedia.org/wiki/Irlen_syndrome "Irlen Syndrome (Wikipedia)"
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
