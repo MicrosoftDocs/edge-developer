@@ -24,8 +24,8 @@ The [CSS Media Queries Level 5 specification][MediaQuerySpecification] also defi
 }
 ```  
 
-    > [!IMPORTANT]
-    > It is tempting to define your own settings for high contrast mode, but it is important to remember that users need these settings to be exactly how they defined them. Instead of defining your own colors, you can use the [CSS System Color keywords][CSSSystemColors].
+> [!IMPORTANT]
+> It is tempting to define your own settings for high contrast mode, but it is important to remember that users need these settings to be exactly how they defined them. Instead of defining your own colors, you can use the [CSS System Color keywords][CSSSystemColors].
 
 
 ## Navigate to the Rendering Tools  
