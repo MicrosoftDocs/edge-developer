@@ -10,11 +10,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # High Contrast simulation  
 
-Operating systems have a way to display any application in darker or lighter colors.  Having a web product that has a light theme in a dark mode operating system is grating and can be an accessibility issue for some users.  On the web, you may use the [prefers-color-scheme][MDNPrefersColorScheme] CSS Media Query to detect if users prefer to see your product in a darker or lighter colour scheme.  Use [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] to simulate a change from dark to light mode without having to change the entire operating system.  
+Windows and other Operating Systems have a [setting that allows users to show the interface with a set of reduced colors][WindowsHighContrastMode]. These could be either pre-set color schemes or defined by the user. This helps people with several needs: those with limited vision, those suffering from Migraine, [Irlen Syndrome][IrlenSyndromeLink] or [Dyslexia][DyslexiaLink]. 
+
+Whilst exact numbers aren't available, roughly 4% of all Windows users (roughly 55 million people) have their display set up using these reduced colors, commonly known as "High Contrast Mode".According to WebAIM’s 2018 “[Survey of Users with low Vision][WebAimSurvey]”, more than 50% of the low vision users use High Contrast Mode.
+
+To make it easier for developers to test what their products look like in high contrast mode, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] have a way to simulate high contrast mode without having to change your Operating System settings. This also helps users of other operating systems that don't have the same functionality and therefore can't test it.
 
 ## Navigate to the Rendering Tools  
 
-To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][RenderingTools].  
+To simulate what your web product looks like in forced color mode, open the [Rendering Tools][RenderingTools].  
 
 1.  Open the Rendering Tools by selecting the `...` menu item in the toolbar  
 1.  Select `More tools`  
@@ -71,7 +75,12 @@ The **Rendering** menu appears in the drawer.
     
 View and change your CSS like any other web page.  For more information, see [Get Started With Viewing And Changing CSS][DevtoolsGuideChromiumCssIndex].  
 
-<!-- links -->  
+<!-- links --> 
 
+[WebAimSurvey]: https://webaim.org/projects/lowvisionsurvey2/#contrastMode
+[WindowsHighContrastMode]: https://support.microsoft.com/en-us/help/13862/windows-10-use-high-contrast-mode "How to enable high contrast mode in Windows 10"
+[DyslexiaLink]: https://en.wikipedia.org/wiki/Dyslexia "Dyslexia"
+[IrlenSyndromeLink]: https://en.wikipedia.org/wiki/Irlen_syndrome "Irlen Syndrome (Wikipedia)"
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
 [DevtoolsGuideChromiumCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"  
