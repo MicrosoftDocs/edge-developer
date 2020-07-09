@@ -3,12 +3,13 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
 keywords: microsoft edge, privacy, whitepaper, trust
 localization_priority: Priority
+no-loc: [Cast, Google Cast]
 ---
 
 # Microsoft Edge Privacy Whitepaper  
@@ -57,7 +58,9 @@ When you use Guest mode, autofill is not available and new autofill entries are 
 
 ## Cast  
 
-Cast in Microsoft Edge allows you to display your media to another screen using Google Cast.  You may access the feature from **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast does not use any Microsoft or Google services. 
+Cast in Microsoft Edge allows you to display your media to another screen using Google Cast.  You may access the feature from **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension that is not included in Microsoft Edge by default.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.  
+
+Select **restart** to install the Media Router extensions from the Chrome Web Store.  To keep the Media Router extension up to date, on startup of Microsoft Edge and at regular intervals, Microsoft Edge send update requests to the Chrome Web Store that include basic data about your version of Microsoft Edge.  Google may collect some data associated with the Media Router extension.  To uninstall the Media Router extension, go to `edge://flags` and disable the **Edge-On-Demand-Media-Router**.  This also stops the updates from the Chrome Web Store.  The extension is hidden and does not appear on the **Installed extensions** list.  For the **Installed extensions** list, go to `edge://extensions`.  
 
 ## Collections  
 

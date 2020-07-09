@@ -149,7 +149,6 @@ See [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState] for an i
 ### View a page in print mode   
 
 To view a page in print mode:  
-
 1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `Rendering` and select `Show Rendering`.  
 1.  For the **Emulate CSS Media** dropdown, select **print**.  
