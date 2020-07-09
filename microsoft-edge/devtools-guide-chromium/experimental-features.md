@@ -45,7 +45,6 @@ The following sections describe the new experimental features that are available
 | [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later | 
-| [Enable Network Console](#enable-network-console) | 85 or later |
 
 ### Enable custom keyboard shortcuts settings tab
 
@@ -86,18 +85,6 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.png":::
    webhint feedback in the Issues panel  
 :::image-end:::      
-
-<!--Available in Microsoft Edge version 85 and later.  -->  
-
-### Enable Network Console
-
-Network Console (working title) is an experimental component for Chromium-based DevTools for making synthetic network requests over HTTP. It can be used during the dev-test loop for web APIs. We know that Network Console isn't going to be feature-complete with our initial pass; we want to have the flexibility to iterate rapidly, experiment in the open, and get great ideas for what will be going into Network Console in the future.
-
-Once you enable the experiment, restart your Developer Tools. Navigate to the Network pane and right-click on the network request you're interested in changing and sending again. This will open a context menu containing the option **Edit and Replay**, which you will click on in order to access the Network Console. Your network request information will be pre-loaded for you to then edit and send.
-
-:::image type="complex" source="./media/network-network-console.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.png":::
-   Network Console in the Console drawer  
-:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
