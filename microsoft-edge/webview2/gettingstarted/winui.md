@@ -25,7 +25,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
     * [x64](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x64.exe) 
     * [x86](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x86.exe)
 * Install the VSIX extension that includes the WinUI 3.0 Preview 1 project templates for Visual Studio 2019. Link [here](https://aka.ms/winui3/previewdownload).
-* Enable [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) to ensure full Visual Studio feature functionality.
+* Enable [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) to ensure full Visual Studio feature functionality.
 
 
 
