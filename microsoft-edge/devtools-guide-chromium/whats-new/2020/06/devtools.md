@@ -14,48 +14,53 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team!  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
+### Service worker respondWith events in the Timing tab  
+
+The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event is the time immediately before the service worker `fetch` event handler runs to the time when the `respondWith` promise of the `fetch` handler is settled.  
+
+:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="The respondWith service worker event in the Timing tab of the Network panel" lightbox="../../media/2020/06/timing-tab.msft.png":::
+   The `respondWith` service worker event in the **Timing** tab of the **Network** panel
+:::image-end:::  
+
+Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.
+
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to see additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+   Expand **Response received** to see additional information from the `fetch` response  
+:::image-end:::  
+
+Chromium issue [#1066579][CR1066579]  
+
 ## Announcements from the Chromium project  
 
 The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.  
 
-## Style editing for CSS-in-JS frameworks  
+### Style editing for CSS-in-JS frameworks  
 
 The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.  Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.  
 
-You may also edit styles added in JavaScript using **Constructable Stylesheets** now.  Constructable Stylesheets are a new way to create and distribute reusable styles when using **Shadow DOM**.  
-
-<!--todo: add Shadow DOM when available  -->  
-<!--todo: add Constructable Stylesheets when available  -->  
+You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].  
 
 For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.  The styles are editable now in the **Styles** pane.  
 
-<!--<video autoplay loop muted playsinline>
-  <source src="/microsoft-edge/devtools-guide-chromium/whats-new/images/2020/06/css-in-js.mp4" type="video/mp4">
-</video>-->  
+:::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
+   Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
+:::image-end:::  
 
-<!--todo: replace video  -->  
+Give this feature a try with a [sample that uses CSS-in-JS][CodePenCSSinJSSample].
 
 Chromium issue [#946975][CR946975]  
 
-## Lighthouse 6 in the Lighthouse panel  
+### Lighthouse 6 in the Lighthouse panel  
 
-The **Lighthouse** panel is now running Lighthouse 6.  <!--For a summary of all the changes, see [What's New in Lighthouse 6.0][WebDevLighthouseWhatsNew60].  -->  For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].  
+The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].  
 
-<!--todo: add What's New in Lighthouse 6.0 when available   -->  
-
-Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).  LCP and CLS are 2 of the new **Core Web Vitals**.  TBT is a lab measurement proxy for another Core Web Vital, First Input Delay.  
-
-<!--todo: add Core Web Vitals when available  -->  
+Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).  
 
 The performance score formula has also been reweighted to better reflect the loading experience of the user.  
 
-:::image type="complex" source="../../media/2020/06/lighthouse.msft.png" alt-text="New performance metrics in Lighthouse 6.0" lightbox="../../media/2020/06/lighthouse.msft.png":::
-   New performance metrics in Lighthouse 6.0  
-:::image-end:::  
-
 Chromium issue [#772558][CR772558]  
 
-### First Meaningful Paint deprecation  
+#### First Meaningful Paint deprecation  
 
 First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the *Performance* panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
 
@@ -64,7 +69,7 @@ First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also be
 
 Chromium issue [#1096008][CR1096008]  
 
-## Support for new JavaScript features  
+### Support for new JavaScript features  
 
 DevTools now has better support for some of the latest JavaScript language features.  
 
@@ -95,7 +100,7 @@ DevTools now has better support for some of the latest JavaScript language featu
 
 Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR1083797]  
 
-## New app shortcut warnings in the Manifest pane  
+### New app shortcut warnings in the Manifest pane  
 
 **App shortcuts** help users quickly start common or recommended tasks within a web app.  
 
@@ -112,64 +117,46 @@ The **Manifest** pane now shows warnings for the following conditions.
 
 Chromium issue [#955497][CR955497]  
 
-## Service worker respondWith events in the Timing tab  
-
-The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event is the time immediately before the service worker `fetch` event handler runs to the time when the `respondWith` promise of the `fetch` handler is settled.  
-
-:::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="respondWith service worker" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   `respondWith` service worker  
-:::image-end:::  
-
-Chromium issue [#1066579][CR1066579]  
-
-## Consistent display of the Computed pane  
+### Consistent display of the Computed pane  
 
 The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.  Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.  
 
-<!--<video autoplay loop muted playsinline>
-  <source src="/microsoft-edge/devtools-guide-chromium/whats-new/images/2020/06/computed-pane.mp4" type="video/mp4">
-</video>-->  
-
-<!--todo: replace video  -->  
+:::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="The Computed pane consistently displays as a separate pane even when the DevTools are narrow" lightbox="../../media/2020/06/computed-pane.msft.png":::
+   The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.
+:::image-end:::  
 
 Chromium issue [#1073899][CR1073899]  
 
-## Bytecode offsets for WebAssembly files  
+### Bytecode offsets for WebAssembly files  
 
 DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.  
 The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.  
 
-:::image type="complex" source="../../media/2020/06/bytecode-offset.msft.png" alt-text="Bytecode offsets" lightbox="../../media/2020/06/bytecode-offset.msft.png":::
-   Bytecode offsets  
-:::image-end:::  
-
 Chromium issue [#1071432][CR1071432]  
 
-## Line-wise copy and cut in Sources Panel  
+### Line-wise copy and cut in Sources Panel  
 
-When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  <!--For example, in the video below, the cursor is at the end of line 1.  After pressing the cut keyboard shortcut, the entire line is copied to the clipboard and deleted.  -->  
+When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  
 
-<!--<video autoplay loop muted playsinline>
-  <source src="/microsoft-edge/devtools-guide-chromium/whats-new/images/2020/06/line-wise-cut.mp4" type="video/mp4">
-</video>-->  
-
-<!--todo: replace video  -->  
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in VS Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [VS Code][VSCode].
+:::image-end:::  
 
 Chromium issue [#800028][CR800028]
 
-## Console Settings updates  
+### Console Settings updates  
 
-### Ungroup same console messages  
+#### Ungroup same console messages  
 
 The **Group similar** toggle in Console Settings now applies to duplicate messages.  Previously it just applied to similar messages.  
 
-For example, previously, DevTools did not ungroup the messages `hello` even though **Group similar** is unchecked.  Now, the `hello` messages are ungrouped.  
+For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.  Now, the `hello` messages are ungrouped.  
 
-<!--<video autoplay loop muted playsinline>
-  <source src="/microsoft-edge/devtools-guide-chromium/whats-new/images/2020/06/ungroup-similar.mp4" type="video/mp4">
-</video>-->  
+:::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="When Group similar is unchecked, the hello messages are ungrouped" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
+   When **Group similar** is unchecked, the `hello` messages are ungrouped.
+:::image-end:::  
 
-<!--todo: replace video  -->  
+Give this feature a try with a [sample that sends duplicate messages to the Console][CodePenDuplicateMessagesSample].  
 
 Chromium issue [#1082963][CR1082963]  
 
@@ -209,7 +196,7 @@ Chromium issue [#974550][CR974550]
 
 ## New icons for breakpoints, conditional breakpoints, and logpoints  
 
-The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints get a refreshed flag design with brighter and friendlier colors.  Icons are added to differentiate conditional breakpoints and logpoints.  
+The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [VS Code][VSCode] and [Visual Studio][VS].  Icons are added to differentiate conditional breakpoints and logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Breakpoints" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Breakpoints  
@@ -235,6 +222,8 @@ Us the following options to discuss the new features and changes in the post, or
 :::image-end:::  
 
 <!-- links -->  
+[CodePenCSSinJSSample]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
+[CodePenDuplicateMessagesSample]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Send duplicate messages to Console | CodePen"
 
 [DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
@@ -259,14 +248,15 @@ Us the following options to discuss the new features and changes in the post, or
 [CR1096008]: https://crbug.com/1096008 "Remove FMP | Chromium bugs"  
 
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "Introducing the new Microsoft Edge"  
-
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"  
 
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer"  
 
+[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Using shadow DOM | MDN"
+
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge Preview Channels"  
 
+[VS]: https://visualstudio.microsoft.com/ "Visual Studio"
 [VSCode]: https://code.visualstudio.com/ "Visual Studio Code"  
 
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"  
@@ -278,6 +268,8 @@ Us the following options to discuss the new features and changes in the post, or
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Code caching for JavaScript developers | V8.Dev"  
 [V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish coalescing | V8.Dev"  
 [V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Optional chaining | V8.Dev"  
+
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
 
 <!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->  
 <!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->  
