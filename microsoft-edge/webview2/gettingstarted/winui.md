@@ -65,7 +65,7 @@ Start with a basic desktop project containing a single main window.
 7.  At this point, Visual Studio generates two projects (Located in the Solution Explorer):
     * **Project name (Desktop)**: This project contains your app's code. The App.xaml.cs code file defines an Application class that represents your app instance, and the MainWindow.xaml.cs code file defines a MainWindow class that represents the main window displayed by your app. These classes derive from types in the Microsoft.UI.Xaml namespace provided by WinUI.
   
-    * **Project name (Package)**: This is a [Windows Application Packaging Project](https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) that is configured to build the app into an MSIX package for deployment. This project contains the [package manifest](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/schema-root) for your app, and it is the startup project for your solution by default.
+    * **Project name (Package)**: This is a [Windows Application Packaging Project](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) that is configured to build the app into an MSIX package for deployment. This project contains the [package manifest](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/schema-root) for your app, and it is the startup project for your solution by default.
 
     
     
