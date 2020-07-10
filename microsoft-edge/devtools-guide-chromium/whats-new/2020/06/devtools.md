@@ -170,9 +170,9 @@ The **Selected context only** settings in Console Settings is now persisted.  Pr
 
 Chromium issue [#1055875][CR1055875]  
 
-## Performance panel updates  
+### Performance panel updates  
 
-### JavaScript compilation cache information in Performance panel  
+#### JavaScript compilation cache information in Performance panel  
 
 [JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.  Previously, DevTools did not show anything related to code caching if code caching did not happen.  
 
@@ -182,7 +182,7 @@ Chromium issue [#1055875][CR1055875]
 
 Chromium issue [#912581][CR912581]  
 
-### Navigation timing alignment in the Performance panel  
+#### Navigation timing alignment in the Performance panel  
 
 The **Performance** panel used to show times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.  
 
@@ -194,7 +194,7 @@ The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Large
 
 Chromium issue [#974550][CR974550]  
 
-## New icons for breakpoints, conditional breakpoints, and logpoints  
+### New icons for breakpoints, conditional breakpoints, and logpoints  
 
 The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [VS Code][VSCode] and [Visual Studio][VS].  Icons are added to differentiate conditional breakpoints and logpoints.  
 
