@@ -12,7 +12,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 
 # Getting started with WebView2 in WinUI3 (Preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-538-reference-webview2.md).  
 
 ## Prerequisites  
 
