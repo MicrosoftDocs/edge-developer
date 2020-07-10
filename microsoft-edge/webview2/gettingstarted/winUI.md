@@ -117,7 +117,7 @@ Next let's add a WebView to your application.
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" 
+        <controls:WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2" 
             Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
