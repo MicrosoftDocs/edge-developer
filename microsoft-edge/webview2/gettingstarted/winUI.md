@@ -27,9 +27,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
 * Install the VSIX extension that includes the WinUI 3.0 Preview 1 project templates for Visual Studio 2019. Link [here](https://aka.ms/winui3/previewdownload).
 * Enable [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) to ensure full Visual Studio feature functionality.
 
-    :::image type="complex" source="./media/winui-gettingstarted-devmode.png" alt-text="DevMode":::
-       DevMode
-    :::image-end:::  
+
 
 ## Step 1 - Create Project  
 
@@ -50,7 +48,7 @@ Start with a basic desktop project containing a single main window.
 4.  Select the **Blank App, Packaged (WinUI in Desktop)** project type and click Next.
 1. Enter a project name, choose any other options as desired, and click Create.
 1. In the following dialog box, set the: 
-    * Target version to **Windows 10, version 1903 (build 18362)**
+    * Target version to **Windows 10, version 1903 (build 18362)** or later
     * Minimum version to **Windows 10, version 1803 (build 17134)** 
     * Click OK.
 
@@ -72,11 +70,11 @@ Start with a basic desktop project containing a single main window.
     
     
     
-8. Double click the MainWindow.xml file in the Solution Explorer to view the code. Click F5 to build the project. The project should run a small example of a button in a window.
+8. Double click the MainWindow.xaml file in the Solution Explorer to view the code. Click F5 to build the project. The project should run a small example of a button in a window.
     
 ## Step 2 - Create WebView
 
-Next lets add a WebView to your application.  
+Next let's add a WebView to your application.  
 
 1.  Open `MainWindow.xaml`.  Add the WebView2 XAML namespace by inserting the following line inside the `<Window/>` tag.  
     
@@ -120,11 +118,11 @@ Next lets add a WebView to your application.
         </Grid.ColumnDefinitions>
 
         <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" 
-        Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
     ```  
-3.  Additionally, open `MainWindow.xaml.cs` and comment out the following line:
+3.  Additionally, open `MainWindow.xaml.cs` and comment out the following line for now:
     ```xml
         //myButton.Content = "Clicked";     
     ```   
@@ -134,7 +132,7 @@ Next lets add a WebView to your application.
        Microsoft.com
     :::image-end:::  
     
-## Step 4 - Navigation Control
+## Step 3 - Navigation Control
 
 Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
 
@@ -162,8 +160,8 @@ Add the ability to allow users to change the URL that the WebView2 control displ
         <TextBox Name="addressBar" Grid.Column="0"/>
         <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
 
-        <controls:WebView2 x:Name="MyWebView"  controls:Grid.Row="1" controls:Grid.ColumnSpan="2" 
-        Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <WebView2 x:Name="MyWebView"  Grid.Row="1" Grid.ColumnSpan="2" 
+            Source="https://www.microsoft.com" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
 
     </Grid>
     ```  
@@ -195,7 +193,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
        Bing
     :::image-end:::
     
-## Step 5 - Navigation events  
+## Step 4 - Navigation events  
 
 The application that hosts WebView2 controls listens to the following events that are raised by the WebView2 control during navigation to web pages.  
 
@@ -223,7 +221,7 @@ In `MainWindow.xaml.cs`, modify the constructor as shown below and add the `Ensu
 public MainWindow()
 {
     InitializeComponent();
-    webView.NavigationStarting += EnsureHttps;
+    MyWebView.NavigationStarting += EnsureHttps;
 }
 
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -244,7 +242,7 @@ In the constructor, EnsureHttps is registered as the event handler on the `Navig
 
 Press `F5` to build and run your project.  Confirm that when navigating to an HTTP site, the WebView **remains unchanged**.  However, the WebView navigates to HTTPS sites.  
 
-## Step 6 - Scripting  
+## Step 5 - Scripting  
 
 You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
 
