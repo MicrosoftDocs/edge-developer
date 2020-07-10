@@ -20,7 +20,7 @@ Ensure you installed the following list of pre-requisites before proceeding:
 
 * Make sure that your development computer has Windows 10, version 1803 (build 17134), or a later version installed. WinUI 3 for desktop apps requires 1803 or a later OS version.
 * [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.
-* Install Visual Studio 2019, version 16.7 Preview 1. For details, see these [instructions](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/#configure-your-dev-environment).
+* Install Visual Studio 2019, version 16.7 Preview 1. For details, see these [instructions](https://docs.microsoft.com/windows/apps/winui/winui3/#configure-your-dev-environment).
 * Install both x64 and x86 versions of .NET 5 Preview 4:
     * [x64](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x64.exe) 
     * [x86](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x86.exe)
