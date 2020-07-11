@@ -5,7 +5,7 @@ summary: Explore documentation resources for Microsoft Edge.
 brand: m365
 metadata:
   title: Microsoft Edge documentation
-  description: Microsoft Edge information for developers, IT admins, and browser end users; including DevTools, Extensions, PWAs, WebDriver, and more.
+  description: Microsoft Edge information for developers, IT admins, and browser users; including DevTools, Extensions, PWAs, WebDriver, and more.
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
@@ -35,7 +35,7 @@ highlightedContent:
     # Card
     - title: "Get support"
       itemType: reference
-      url: /microsoft-edge/index#help---support
+      url: /microsoft-edge/index#help-and-support
     # Card
     - title: "Docs for Users"
       itemType: overview
@@ -53,71 +53,81 @@ highlightedContent:
       itemType: learn
       url: https://support.microsoft.com/help/17171/microsoft-edge-get-to-know
       
-# productDirectory section (optional)
-productDirectory:
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | 
+#           get-started | how-to-guide | learn | overview | 
+#           quickstart | reference | tutorial | video | 
+#           whats-new
   title: Microsoft Edge for Enterprise # < 60 chars (optional)
-  # summary: Microsoft Edge for Enterprise # < 160 chars (optional)
+  summary: Explore Microsoft Edge documentation.  Learn to use Microsoft Edge by browsing documentation, tutorials, and samples for developers, administrators, and users.  # < 160 chars (optional)
   items:
     # Card
     - title: Learn about Microsoft Edge in the enterprise
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /media/common/i_learn-about.svg
       links:
         - url: /deployedge/microsoft-edge-channels
+          itemType: overview
           text: Microsoft Edge channel overview
         - url: /deployedge/edge-ie-mode
+          itemType: reference
           text: Use enterprise features
     # Card
     - title: Deploy and update Microsoft Edge
-      imageSrc: /media/common/i_reference.svg
       links:
         - url: /deployedge/microsoft-edge-video-deploy
+          itemType: reference
           text: Video - Deploy Microsoft Edge
         - url: /configmgr/apps/deploy-use/deploy-edge
+          itemType: reference
           text: Deploy to Windows
         - url: /intune/apps/apps-edge-macos
+          itemType: reference
           text: Deploy to macOS
     # Card
     - title: Configure Microsoft Edge
-      imageSrc: /media/common/i_reference.svg
       links:
         - url: /deployedge/configure-microsoft-edge
+          itemType: reference
           text: Configure Microsoft Edge on Windows and macOS
         - url: /deployedge/edge-default-browser
+          itemType: reference
           text: Set Microsoft Edge as the default browser
     # Card
     - title: Manage security and privacy
-      imageSrc: /media/common/i_reference.svg
       links:
         - url: /deployedge/security-overview
+          itemType: reference
           text: Security
         - url: /deployedge/microsoft-edge-enterprise-privacy-settings
+          itemType: reference
           text: Privacy
     # Card
     - title: Policy reference
-      imageSrc: /media/common/i_policy.svg
       links:
         - url: /deployedge/microsoft-edge-policies
+          itemType: reference
           text: Browser policy reference
         - url: /deployedge/microsoft-edge-update-policies
+          itemType: reference
           text: Update policy reference
     # Card
     - title: Engage with enterprise community
-      imageSrc: /media/common/i_support.svg
       links:
         - url: https://techcommunity.microsoft.com/t5/Enterprise/bd-p/EdgeInsiderEnterprise
+          itemType: reference
           text: Enterprise tech community (Insider Focused)
         # - url: /deployedge/microsoft-edge-troubleshooting
+        #   itemType: reference
         #   text: Troubleshoot Microsoft Edge
     # Card
     - title: Extensions for enterprise
-      imageSrc: /media/common/i_extensions.svg
       links:
         - url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
+          itemType: reference
           text: Match Patterns
         - url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
+          itemType: reference
           text: Hosting and Updating
-          
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -315,7 +325,7 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Help & Support # < 60 chars (optional)
+    - title: Help and Support # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
@@ -324,17 +334,17 @@ additionalContent:
           url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
         # Card
         - title: Get no-cost help via App Assure
-          summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft will help you fix them at no additional cost. See offer details for eligibility requirements.
+          summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix you apps and websites at no additional cost.  See offer details for eligibility requirements.
           url: https://aka.ms/AppAssureEdge
         # Card
         - title: Microsoft Support for Business
-          summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available via a variety of plans to help you get the level of support you need.
+          summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
         # Card
-        - title: End User Support
-          summary: Helpful support resources for end users is available.
+        - title: User Support
+          summary: Helpful support resources for users is available.
           url: https://support.microsoft.com/microsoft-edge
-    - # title: sectiontitle # < 60 chars (optional)
+    - title: Reference and Legacy Docs # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
