@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/06/2020
+  ms.date: 07/10/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -30,14 +30,14 @@ highlightedContent:
       url: https://www.microsoft.com/edge/business/download
     # Card
     - title: "What's new"
-      itemType: whats-new
+      itemType: learn
       url: https://www.microsoftedgeinsider.com/whats-new
     # Card
-    - title: "Support"
-      itemType: deploy
-      url: https://support.microsoft.com/microsoft-edge
+    - title: "Get support"
+      itemType: reference
+      url: /microsoft-edge/index#help---support
     # Card
-    - title: "Docs for Consumers"
+    - title: "Docs for Users"
       itemType: overview
       url: https://support.microsoft.com/microsoft-edge
     # Card
@@ -48,7 +48,10 @@ highlightedContent:
     - title: "Docs for Developers"
       itemType: overview
       url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-developers
-      
+    # Card
+    - title: "Learn how to use Edge"
+      itemType: learn
+      url: 
       
 # productDirectory section (optional)
 productDirectory:
@@ -216,23 +219,17 @@ conceptualContent:
           itemType: reference
           url: /microsoft-edge/performance-analysis
     # Card
-    - title: Extensions Overview
+    - title: Get started with Extensions
       links:
         - url: /microsoft-edge/extensions-chromium/index
           itemType: overview
           text: Extensions Overview
-    # Card
-    - title: "Extensions: Getting started tutorial"
-      links:
         - url: /microsoft-edge/extensions-chromium/getting-started/index
           itemType: reference
           text: Getting started tutorial
         - url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
           itemType: reference
           text: Create a simple extension – part 1
-        - url: /microsoft-edge/extensions-chromium/getting-started/part2-content-scripts
-          itemType: reference
-          text: Create a simple extension – part 2
     # Card
     - title: "Extensions: Developer Guide"
       links:
@@ -284,6 +281,15 @@ conceptualContent:
         - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
           itemType: reference
           text: Using DevTools with Progressive Web Apps
+        - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/offline
+          itemType: reference
+          text: Offline scenarios
+        - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/serviceworker
+          itemType: reference
+          text: Service Workers
+        - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/webappmanifests
+          itemType: reference
+          text: Web App Manifests
     # Card
     - title: WebView2
       links:
@@ -309,6 +315,25 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
+    - title: Help & Support # < 60 chars (optional)
+      # summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: Community Support
+          summary: Get advice and answers from a community of experts via StackOverflow.
+          url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+        # Card
+        - title: Get no-cost help via App Assure
+          summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft will help you fix them at no additional cost. See offer details for eligibility requirements.
+          url: https://aka.ms/AppAssureEdge
+        # Card
+        - title: Microsoft Support for Business
+          summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available via a variety of plans to help you get the level of support you need.
+          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
+        # Card
+        - title: End User Support
+          summary: Helpful support resources for end users is available.
+          url: https://support.microsoft.com/microsoft-edge
     - # title: sectiontitle # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
@@ -342,22 +367,3 @@ additionalContent:
               url: /microsoft-edge/webvr/index
             - text: Windows Runtime (WinRT)
               url: /microsoft-edge/windows-runtime
-    - title: Help & Support # < 60 chars (optional)
-      # summary: sectionsummary # < 160 chars (optional)
-      items:
-        # Card
-        - title: Community Support
-          summary: Get advice and answers from a community of experts via StackOverflow.
-          url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
-        # Card
-        - title: Get no-cost help via App Assure
-          summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft will help you fix them at no additional cost. See offer details for eligibility requirements.
-          url: https://aka.ms/AppAssureEdge
-        # Card
-        - title: Microsoft Support for Business
-          summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available via a variety of plans to help you get the level of support you need.
-          url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-        # Card
-        - title: End User Support
-          summary: Helpful support resources for end users is available.
-          url: https://support.microsoft.com/microsoft-edge
