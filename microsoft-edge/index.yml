@@ -51,7 +51,7 @@ highlightedContent:
     # Card
     - title: "Learn how to use Edge"
       itemType: learn
-      url: 
+      url: https://support.microsoft.com/help/17171/microsoft-edge-get-to-know
       
 # productDirectory section (optional)
 productDirectory:
