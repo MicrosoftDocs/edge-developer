@@ -50,7 +50,9 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
        Nuget
     :::image-end:::
 
-2. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  Set the package version to **pre-release**, and then choose **Install**.  
+2. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  
+
+3. Check **Include prerelease**, select a **prerelease** package version, and then choose **Install**.  
 
     ![nuget](./media/installnuget.png)
 
