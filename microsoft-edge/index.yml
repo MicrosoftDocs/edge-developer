@@ -47,7 +47,8 @@ highlightedContent:
     # Card
     - title: "Docs for Developers"
       itemType: overview
-      url: /microsoft-edge/index#microsoft-edge-for-developers
+      url: /microsoft-edge/developer/index
+      # url: /microsoft-edge/index#microsoft-edge-for-developers #alt-link  
     # Card
     - title: "Learn how to use Edge"
       itemType: learn
