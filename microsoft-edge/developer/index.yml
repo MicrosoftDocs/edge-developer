@@ -27,43 +27,64 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: DevTools Overview
+          - text: Microsoft Edge (Chromium) Developer Tools
             url: /microsoft-edge/devtools-guide-chromium
       - linkListType: whats-new
         links:
           - text: "What's New"
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/05/devtools
+      - linkListType: get-started
+        links:
+          - text: "DevTools for Beginners: Get Started with HTML and the DOM"
+            url: /microsoft-edge/devtools-guide-chromium/beginners/html
+          - text: Get Started With Viewing And Changing CSS
+            url: /microsoft-edge/devtools-guide-chromium/css/index
       - linkListType: concept
         links:
-          - text: Open DevTools
+          - text: Open Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/open
-          - text: DevTools for Beginners
-            url: /microsoft-edge/devtools-guide-chromium/beginners/html
-          - text: CSS
-            url: /microsoft-edge/devtools-guide-chromium/css/index
-          - text: Guides
+          - text: Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)
             url: /microsoft-edge/devtools-guide-chromium/css/print-preview
-          - text: Resources
+          - text: View Page Resources With Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/resources/index
 
   # Card (optional)
   - title: Individual Tool Guides
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Console Overview
+            url: /microsoft-edge/devtools-guide-chromium/console/index
+      - linkListType: get-started
+        links:
+          - text: Get Started with Debugging JavaScript in Microsoft Edge DevTools
+            url: /microsoft-edge/devtools-guide-chromium/javascript/index
+          - text: Get Started With Analyzing Runtime Performance
+            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
+          - text: Get started with remote debugging Android devices
+            url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
       - linkListType: concept
         links:
-          - text: Console
-            url: /microsoft-edge/devtools-guide-chromium/console/index
-          - text: Network
+          - text: Inspect Network Activity In Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/network/index
-          - text: Storage
+          - text: View, edit, and delete cookies with Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/storage/cookies
-          - text: Command Menu
+          - text: Run Commands With The Microsoft Edge DevTools Command Menu
             url: /microsoft-edge/devtools-guide-chromium/command-menu/index
-          - text: JavaScript
-            url: /microsoft-edge/devtools-guide-chromium/javascript/index
-          - text: Performance
-            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
-          - text: Remote Debugging
-            url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
-          - text: Security
+          - text: Understand Security Issues With Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/security/index
+
+  # Card (optional)
+  - title: Customize DevTools
+    linkLists:
+      - linkListType: concept
+        links:
+            - text: Customize Microsoft Edge DevTools
+              url: /microsoft-edge/devtools-guide-chromium/customize/index
+            - text: Enable Dark Theme In Microsoft Edge DevTools
+              url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
+            - text: Edit Files With Workspaces
+              url: /microsoft-edge/devtools-guide-chromium/workspaces/index
+            - text: Microsoft Edge DevTools Keyboard Shortcuts
+              url: /microsoft-edge/devtools-guide-chromium/shortcuts
+              
