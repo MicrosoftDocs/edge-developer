@@ -14,6 +14,42 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team!  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
+### New CSS grid debugging features
+
+The Microsoft Edge DevTools team is collaborating with the Chromium community to add new CSS grid debugging features to the DevTools!
+
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+   CSS grid debugging feature
+:::image-end:::  
+
+These are experimental features so [follow these steps in our documentation][DevToolsExperimentalFeatures] to give them a try and send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team)!
+
+Chromium issue [#1047356][CR1047356]  
+
+### Introducing the Network Console
+
+Use the **Network Console** to create and send HTTP requests directly from the DevTools!  
+
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="The Network Console panel" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+   The **Network Console** panel
+:::image-end:::  
+
+This is a new panel the Microsoft Edge DevTools team is working on so [follow these steps in our documentation][DevToolsExperimentalFeatures] and select the checkbox next to **Enable Network Console** to turn on this experiment.  Close and reopen the Microsoft Edge DevTools.  Open the [Command Menu][DevToolsCommandMenu], enter **Network Console**, and run the **Show Network Console** command to access the new **Network Console** panel.  
+
+Chromium issue [#1093687][CR1093687]  
+
+#### Edit and Replay
+
+With the **Enable Network Console** experiment turned on, you are now able to **Edit and Replay** requests in the [Network Log][DevToolsNetwork] using the **Network Console**.  Open the contextual menu (right-click) in the [Network Log][DevToolsNetwork] and select **Edit and Replay**.  
+
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+   **Edit and Replay** a request in the [NetworkLog][DevToolsNetwork] with the **Network Console**
+:::image-end:::  
+
+The **Network Console** opens in the [DevTools Drawer][DevToolsDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.
+
+This an experimental panel so try it out and send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team)!  
+
 ### Service worker respondWith events in the Timing tab  
 
 The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event is the time immediately before the service worker `fetch` event handler runs to the time when the `respondWith` promise of the `fetch` handler is settled.  
@@ -29,6 +65,45 @@ Expand **Response received** to see additional information from the `fetch` resp
 :::image-end:::  
 
 Chromium issue [#1066579][CR1066579]  
+
+### webhint feedback in the Issues panel
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To see feedback from webhint in the [Issues][DevToolsIssues] panel, [follow these steps in our documentation][DevToolsExperimentalFeatures] and select the checkbox next to **Enable webhint**.  
+
+:::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
+   webhint feedback in the Issues panel  
+:::image-end:::     
+
+You may select the issue to see documentation on how to fix the issue and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** panel in DevTools.  
+
+Chromium issue [#1070378][CR1070378]  
+
+### Improved Initiator tooltip in the Network panel
+
+In Microsoft Edge 84 or earlier, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevToolsNetwork] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
+
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84 and earlier" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   The Initiator tooltip in Microsoft Edge 84 and earlier
+:::image-end:::  
+
+Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.  
+
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
+   The Initiator tooltip in Microsoft Edge 85
+:::image-end:::  
+
+Chromium issue [#1069404][CR1069404]  
+
+### Move tools between panels
+
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  With the **Enable support to move tabs between panels** experiment turned on, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and selecting **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, press `Escape`.  
+
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Moving tabs between panels  
+:::image-end:::  
+
+[Follow these steps in our documentation][DevToolsExperimentalFeatures] to try this experiment and send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team)!
+
+Chromium issue [#897944][CR897944]
 
 ## Announcements from the Chromium project  
 
@@ -62,7 +137,7 @@ Chromium issue [#772558][CR772558]
 
 #### First Meaningful Paint deprecation  
 
-First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the *Performance* panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
@@ -226,7 +301,12 @@ Us the following options to discuss the new features and changes in the post, or
 [CodePenDuplicateMessagesSample]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Send duplicate messages to Console | CodePen"
 
 [DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
+[DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/#drawer "Drawer | Microsoft Docs"
+[DevToolsExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features | Microsoft Docs"  
+[DevToolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
+[DevToolsNetwork]: /microsoft-edge/devtools-guide-chromium/network/#log-network-activity "Log network activity | Microsoft Docs"
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 
@@ -246,7 +326,11 @@ Us the following options to discuss the new features and changes in the post, or
 [CR1083214]: https://crbug.com/1083214 "acorn doesn't support optional chaining | Chromium bugs"  
 [CR1083797]: https://crbug.com/1083797 "Pretty printing broken for nullish coalescing | Chromium bugs"  
 [CR1096008]: https://crbug.com/1096008 "Remove FMP | Chromium bugs"  
-
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium bugs"  
+[CR1093687]: https://crbug.com/1093687 "Create tool for creating and replaying synthetic network requests | Chromium bugs"  
+[CR1070378]: https://crbug.com/1070378 "Integrate webhint into DevTools | Chromium bugs"  
+[CR1069404]: https://crbug.com/1069404 "[Dev Tools] widget popups are too all narrow | Chromium bugs"  
+[CR897944]: https://crbug.com/897944 "Draggable devtool panels | Chromium bugs"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"  
 
@@ -268,6 +352,8 @@ Us the following options to discuss the new features and changes in the post, or
 [V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Code caching for JavaScript developers | V8.Dev"  
 [V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish coalescing | V8.Dev"  
 [V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Optional chaining | V8.Dev"  
+
+[WebhintMain]: https://webhint.io "webhint" 
 
 [WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
 
