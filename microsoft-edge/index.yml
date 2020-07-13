@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Edge documentation
-summary: Explore documentation resources for Microsoft Edge.
+summary: Explore Microsoft Edge documentation.  Learn to use Microsoft Edge by browsing documentation, tutorials, and samples for developers, administrators, and users.
 brand: m365
 metadata:
   title: Microsoft Edge documentation
@@ -43,11 +43,11 @@ highlightedContent:
     # Card
     - title: "Docs for Administrators"
       itemType: overview
-      url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-enterprise
+      url: /deployedge/index
     # Card
     - title: "Docs for Developers"
       itemType: overview
-      url: https://docs.microsoft.com/microsoft-edge/index#microsoft-edge-for-developers
+      url: /microsoft-edge/index#microsoft-edge-for-developers
     # Card
     - title: "Learn how to use Edge"
       itemType: learn
@@ -60,7 +60,7 @@ conceptualContent:
 #           quickstart | reference | tutorial | video | 
 #           whats-new
   title: Microsoft Edge for Enterprise # < 60 chars (optional)
-  summary: Explore Microsoft Edge documentation.  Learn to use Microsoft Edge by browsing documentation, tutorials, and samples for developers, administrators, and users.  # < 160 chars (optional)
+  # summary:  # < 160 chars (optional)
   items:
     # Card
     - title: Learn about Microsoft Edge in the enterprise
@@ -135,7 +135,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Microsoft Edge for Developers # < 60 chars (optional)
-      summary: Cross-platform DevTools, Extensions, and Web Apps. # < 160 chars (optional)
+      # summary: # < 160 chars (optional)
       items:
         # Card
         - title: Getting Started with DevTools
@@ -244,15 +244,15 @@ additionalContent:
           links:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               text: Overview (Chromium)
-            - url: /microsoft-edge/devtools-guide-chromium/get-started
+            - url: /microsoft-edge/progressive-web-apps-chromium/get-started
               text: Get started with Progressive Web Apps (Chromium)
             - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               text: Using DevTools with Progressive Web Apps
-            - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/offline
+            - url: /microsoft-edge/progressive-web-apps-chromium/offline
               text: Offline scenarios
-            - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/serviceworker
+            - url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
               text: Service Workers
-            - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/webappmanifests
+            - url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
               text: Web App Manifests
         # Card
         - title: WebView2
