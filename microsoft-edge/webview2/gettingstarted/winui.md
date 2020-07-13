@@ -12,19 +12,19 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 
 # Getting started with WebView2 in WinUI3 (Preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-538-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md).  
 
 ## Prerequisites  
 
 Ensure you installed the following list of pre-requisites before proceeding:  
 
-* Make sure that your development computer has Windows 10, version 1803 (build 17134), or a later version installed. WinUI 3 for desktop apps requires 1803 or a later OS version.
+* Make sure that your development computer has Windows 10, version 1803 (build 17134), or a later version installed. WinUI 3 for desktop apps requires 1803 or a later OS version. For more information read our [FAQ](https://support.microsoft.com/en-us/help/12373/windows-update-faq).
 * [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.
 * Install Visual Studio 2019, version 16.7 Preview 1. For details, see these [instructions](https://docs.microsoft.com/windows/apps/winui/winui3/#configure-your-dev-environment).
 * Install both x64 and x86 versions of .NET 5 Preview 4:
     * [x64](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x64.exe) 
     * [x86](https://aka.ms/dotnet/net5/preview4/Sdk/dotnet-sdk-win-x86.exe)
-* Install the VSIX extension that includes the WinUI 3.0 Preview 1 project templates for Visual Studio 2019. Link [here](https://aka.ms/winui3/previewdownload).
+* [Install](https://aka.ms/winui3/previewdownload) the VSIX extension that includes the WinUI 3.0 Preview 1 project templates for Visual Studio 2019.
 * Enable [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) to ensure full Visual Studio feature functionality.
 
 
@@ -63,7 +63,7 @@ Start with a basic desktop project containing a single main window.
            
     
 7.  At this point, Visual Studio generates two projects (Located in the Solution Explorer):
-    * **Project name (Desktop)**: This project contains your app's code. The App.xaml.cs code file defines an Application class that represents your app instance, and the MainWindow.xaml.cs code file defines a MainWindow class that represents the main window displayed by your app. These classes derive from types in the Microsoft.UI.Xaml namespace provided by WinUI.
+    * **Project name (Desktop)**: This project contains your app's code. The ``App.xaml.cs`` code file defines an Application class that represents your app instance, and the MainWindow.xaml.cs code file defines a MainWindow class that represents the main window displayed by your app. These classes derive from types in the Microsoft.UI.Xaml namespace provided by WinUI.
   
     * **Project name (Package)**: This is a [Windows Application Packaging Project](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) that is configured to build the app into an MSIX package for deployment. This project contains the [package manifest](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/schema-root) for your app, and it is the startup project for your solution by default.
 
@@ -275,7 +275,7 @@ Press `F5` to build and run your project.  Confirm that the application displays
 
 **Congratulations, you built your first WebView2 app!**
   
-## Future Plans  
+## Next Steps  
 
 Our team is currently working on building out our APIs to provide full WebView2 functionality! For more information of the current state of our API click [here](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md). 
 
