@@ -6,10 +6,8 @@ summary: Cross-platform DevTools, Extensions, and Web Apps. # < 160 chars
 metadata:
   title: Microsoft Edge Developer documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Cross-platform DevTools, Extensions, and Web Apps. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.  
   ms.topic: landing-page # Required
-  ms.collection: collection # Optional; Remove if no collection is used.
   author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
   ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
   ms.date: 07/13/2020 #Required; mm/dd/yyyy format.
@@ -107,4 +105,57 @@ landingContent:
             url: https://webhint.io/docs/user-guide
           - text: Performance analysis
             url: /microsoft-edge/performance-analysis
-              
+
+  # Card (optional)
+  - title: Get started with Extensions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Extensions Overview
+            url: /microsoft-edge/extensions-chromium/index
+      - linkListType: get-started
+        links:
+          - text: Getting started tutorial
+            url: /microsoft-edge/extensions-chromium/getting-started/index
+      - linkListType: tutorial
+        links:
+          - text: Create a simple extension
+            url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+
+  # Card (optional)
+  - title: "Extensions: Developer Guide"
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Port Chromium extension to Microsoft Edge
+            url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+          - text: Alternate methods of distributing extensions
+            url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+          - text: Native messaging
+            url: /microsoft-edge/extensions-chromium/developer-guide/native-messaging
+
+  # Card (optional)
+  - title: "Extensions: Publish to the Microsoft Store"
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Step-wise publishing process
+            url: /microsoft-edge/extensions-chromium/publish/publish-extension
+          - text: Open developer account
+            url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+          - text: Upload YouTube Video
+            url: /microsoft-edge/extensions-chromium/publish/upload-video
+          - text: Update Extension Listing
+            url: /microsoft-edge/extensions-chromium/publish/update
+          - text: Manage account settings
+            url: /microsoft-edge/extensions-chromium/publish/manage-settings
+
+  # Card (optional)
+  - title: "Extensions: Microsoft Edge Addons Policies"
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Content Security Policy
+            url: /microsoft-edge/extensions-chromium/store-policies/csp
+          - text: Microsoft Edge Addons Catalog Developer Policies
+            url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
