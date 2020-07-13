@@ -1,0 +1,94 @@
+### YamlMime:Landing
+
+title: Microsoft Edge Developer documentation # < 60 chars
+summary: Cross-platform DevTools, Extensions, and Web Apps. # < 160 chars
+
+metadata:
+  title: Microsoft Edge Developer documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Cross-platform DevTools, Extensions, and Web Apps. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
+  ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/13/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Getting Started with DevTools
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: DevTools Overview
+            url: /microsoft-edge/devtools-guide-chromium
+          - text: "What's New"
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+          - text: Open DevTools
+            url: /microsoft-edge/devtools-guide-chromium/open
+          - text: DevTools for Beginners
+            url: /microsoft-edge/devtools-guide-chromium/beginners/html
+          - text: CSS
+            url: /microsoft-edge/devtools-guide-chromium/css/index
+          - text: Guides
+            url: /microsoft-edge/devtools-guide-chromium/css/print-preview
+          - text: Resources
+            url: /microsoft-edge/devtools-guide-chromium/resources/index
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card
+  - title: cardtitle3
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card
+  - title: cardtitle4
+    linkLists:
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: linkListType
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
