@@ -44,7 +44,7 @@ The following sections describe the new experimental features that are available
 | [Enable custom keyboard shortcuts settings tab](#enable-custom-keyboard-shortcuts-settings-tab) | 84 or later |
 | [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
-| [Enable webhint](#enable-webhint) | 85 or later |  
+| [Enable webhint](#enable-webhint) | 85 or later | 
 
 ### Enable custom keyboard shortcuts settings tab
 
