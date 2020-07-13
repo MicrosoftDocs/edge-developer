@@ -159,3 +159,47 @@ landingContent:
             url: /microsoft-edge/extensions-chromium/store-policies/csp
           - text: Microsoft Edge Addons Catalog Developer Policies
             url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
+
+  # Card (optional)
+  - title: Progressive Web Apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview (Chromium)
+            url: /microsoft-edge/progressive-web-apps-chromium/index
+      - linkListType: get-started
+        links:
+          - text: Get started with Progressive Web Apps (Chromium)
+            url: /microsoft-edge/progressive-web-apps-chromium/get-started
+      - linkListType: how-to-guide
+        links:
+          - text: Using DevTools with Progressive Web Apps
+            url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+      - linkListType: concept
+        links:
+          - text: Offline scenarios
+            url: /microsoft-edge/progressive-web-apps-chromium/offline
+          - text: Service Workers
+            url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+          - text: Web App Manifests
+            url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+
+  # Card (optional)
+  - title: WebView2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: /microsoft-edge/webview2/index
+      - linkListType: get-started
+        links:
+          - text: Getting Started with WebView2
+            url: /microsoft-edge/webview2/gettingstarted/win32
+          - text: Getting started with WebView2 in WPF
+            url: /microsoft-edge/webview2/gettingstarted/wpf
+          - text: Getting started with WebView2 in Windows Forms apps
+            url: /microsoft-edge/webview2/gettingstarted/winforms
+      - linkListType: reference
+        links:
+          - text: Reference
+            url: /microsoft-edge/webview2/webview2-api-reference
