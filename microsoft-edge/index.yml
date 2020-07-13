@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/10/2020
+  ms.date: 07/13/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -135,7 +135,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Microsoft Edge for Developers # < 60 chars (optional)
-      summary: Cross-platform DevTools, Extensions, and Web Apps # < 160 chars (optional)
+      summary: Cross-platform DevTools, Extensions, and Web Apps. # < 160 chars (optional)
       items:
         # Card
         - title: Getting Started with DevTools
@@ -209,7 +209,7 @@ additionalContent:
             - url: /microsoft-edge/extensions-chromium/getting-started/index
               text: Getting started tutorial
             - url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
-              text: Create a simple extension – part 1
+              text: Create a simple extension
         # Card
         - title: "Extensions: Developer Guide"
           links:
