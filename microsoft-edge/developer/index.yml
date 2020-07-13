@@ -14,7 +14,10 @@ metadata:
   ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
   ms.date: 07/13/2020 #Required; mm/dd/yyyy format.
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+# linkListType: architecture | concept | deploy | download 
+#             | get-started | how-to-guide | learn | overview 
+#             | quickstart | reference | sample | tutorial 
+#             | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -26,8 +29,12 @@ landingContent:
         links:
           - text: DevTools Overview
             url: /microsoft-edge/devtools-guide-chromium
+      - linkListType: whats-new
+        links:
           - text: "What's New"
             url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+      - linkListType: conceptual
+        links:
           - text: Open DevTools
             url: /microsoft-edge/devtools-guide-chromium/open
           - text: DevTools for Beginners
@@ -38,57 +45,25 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/css/print-preview
           - text: Resources
             url: /microsoft-edge/devtools-guide-chromium/resources/index
-      - linkListType: linkListType
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
 
   # Card (optional)
-  - title: Get started
+  - title: Individual Tool Guides
     linkLists:
-      - linkListType: linkListType
+      - linkListType: how-to-guide
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: linkListType
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-
-  # Card
-  - title: cardtitle3
-    linkLists:
-      - linkListType: linkListType
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: linkListType
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-
-  # Card
-  - title: cardtitle4
-    linkLists:
-      - linkListType: linkListType
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: linkListType
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
+          - text: Console
+            url: /microsoft-edge/devtools-guide-chromium/console/index
+          - text: Network
+            url: /microsoft-edge/devtools-guide-chromium/network/index
+          - text: Storage
+            url: /microsoft-edge/devtools-guide-chromium/storage/cookies
+          - text: Command Menu
+            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+          - text: JavaScript
+            url: /microsoft-edge/devtools-guide-chromium/javascript/index
+          - text: Performance
+            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
+          - text: Remote Debugging
+            url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
+          - text: Security
+            url: /microsoft-edge/devtools-guide-chromium/security/index
