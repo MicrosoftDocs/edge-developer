@@ -87,4 +87,25 @@ landingContent:
               url: /microsoft-edge/devtools-guide-chromium/workspaces/index
             - text: Microsoft Edge DevTools Keyboard Shortcuts
               url: /microsoft-edge/devtools-guide-chromium/shortcuts
+
+  # Card (optional)
+  - title: Test and Automation
+    linkLists:
+      - linkListType: concept
+        links:
+          links:
+            - text: Accessibility
+              url: /microsoft-edge/accessibility
+            - text: Microsoft Edge (Chromium) DevTools Protocol
+              url: /microsoft-edge/devtools-protocol-chromium
+            - text: Use WebDriver (Chromium) for test automation
+              url: /microsoft-edge/webdriver-chromium
+            - text: Puppeteer
+              url: /microsoft-edge/puppeteer
+            - text: Site compatibility-impacting changes coming to Microsoft Edge
+              url: /microsoft-edge/web-platform/site-impacting-changes
+            - text: User Guide | webhint
+              url: https://webhint.io/docs/user-guide
+            - text: Performance analysis
+              url: /microsoft-edge/performance-analysis
               
