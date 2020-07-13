@@ -33,7 +33,7 @@ landingContent:
         links:
           - text: "What's New"
             url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
-      - linkListType: conceptual
+      - linkListType: concept
         links:
           - text: Open DevTools
             url: /microsoft-edge/devtools-guide-chromium/open
@@ -49,7 +49,7 @@ landingContent:
   # Card (optional)
   - title: Individual Tool Guides
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
           - text: Console
             url: /microsoft-edge/devtools-guide-chromium/console/index
