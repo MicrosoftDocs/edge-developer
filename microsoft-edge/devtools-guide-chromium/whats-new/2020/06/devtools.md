@@ -82,8 +82,8 @@ Chromium issue [#1070378][CR1070378]
 
 In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevToolsNetwork] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
 
-:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84 and earlier" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
-   The Initiator tooltip in Microsoft Edge 84 and earlier
+:::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
+   The Initiator tooltip in Microsoft Edge 84  
 :::image-end:::  
 
 Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.  
