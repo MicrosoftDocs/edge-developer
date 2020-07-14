@@ -1,6 +1,6 @@
 ---
 description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+title: 0.9.515 - WebView2 Win32 C++ ICoreWebView2ExperimentalCompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2020
@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# interface ICoreWebView2ExperimentalCompositionController 
+# 0.9.515 - interface ICoreWebView2ExperimentalCompositionController 
 
 > [!NOTE]
 > This an experimental API that is shipped with our prerelease SDK version 0.9.488.
