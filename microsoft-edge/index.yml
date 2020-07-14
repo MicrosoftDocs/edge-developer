@@ -37,11 +37,11 @@ highlightedContent:
       itemType: reference
       url: /microsoft-edge/index#help-and-support
     # Card
-    - title: "Learn how to use Edge"
+    - title: "Learn how to use Microsoft Edge"
       itemType: learn
       url: https://support.microsoft.com/help/17171/microsoft-edge-get-to-know
     # Card
-    - title: "Administer Edge in the Enterprise"
+    - title: "Administer Microsoft Edge in the Enterprise"
       itemType: overview
       url: /deployedge/index
     # Card
