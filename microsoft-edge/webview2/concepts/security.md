@@ -3,7 +3,7 @@ description: Understand how to develop secure WebView2 applications
 title: Best practices for developing secure WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/21/2020
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
