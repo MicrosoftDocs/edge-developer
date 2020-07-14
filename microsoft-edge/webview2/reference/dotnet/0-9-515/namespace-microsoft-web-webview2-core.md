@@ -1,6 +1,6 @@
 ---
 description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+tilte: 0.9.515 - Microsoft.Web.WebView2.Core
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/05/2020
