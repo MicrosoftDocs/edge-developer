@@ -16,7 +16,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ### CSS grid debugging features  
 
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to the DevTools!
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to the DevTools. With this feature enabled, you may display grid line numbers, grid gaps, and extended grid lines as an on-page overlay. Plus, more improvements to the grid tools are coming soon!
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS grid debugging feature
@@ -26,7 +26,7 @@ These are experimental features so [follow these steps in our documentation][Dev
 
 Chromium issue [#1047356][CR1047356]  
 
-Contributed to Chromium ([#1047356][CR1047356])
+Contributed to Chromium: Issue [#1047356][CR1047356]  
 
 ### Edit and Replay requests with the Network Console  
 
@@ -49,7 +49,7 @@ You may also use the **Network Console** to create and send HTTP requests direct
 
 Chromium issue [#1093687][CR1093687]  
 
-Contributed to Chromium ([#1093687][CR1093687])
+Contributed to Chromium: Issue [#1093687][CR1093687]  
 
 ### Service worker respondWith events in the Timing tab  
 
@@ -67,7 +67,7 @@ Expand **Response received** to see additional information from the `fetch` resp
 
 Chromium issue [#1066579][CR1066579]  
 
-Contributed to Chromium ([#1066579][CR1066579])
+Contributed to Chromium: Issue [#1066579][CR1066579]  
 
 ### webhint feedback in the Issues panel
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To see feedback from webhint in the [Issues][DevToolsIssues] panel, [follow these steps in our documentation][DevToolsExperimentalFeatures] and select the checkbox next to **Enable webhint**.  
