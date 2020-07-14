@@ -29,7 +29,7 @@ highlightedContent:
       itemType: download
       url: https://www.microsoft.com/edge/business/download
     # Card
-    - title: "What's new"
+    - title: "Find out what's new"
       itemType: learn
       url: https://www.microsoftedgeinsider.com/whats-new
     # Card
@@ -37,22 +37,18 @@ highlightedContent:
       itemType: reference
       url: /microsoft-edge/index#help-and-support
     # Card
-    - title: "Docs for Users"
-      itemType: overview
-      url: https://support.microsoft.com/microsoft-edge
-    # Card
-    - title: "Docs for Administrators"
-      itemType: overview
-      url: /deployedge/index
-    # Card
-    - title: "Docs for Developers"
-      itemType: overview
-      url: /microsoft-edge/developer/index
-      # url: /microsoft-edge/index#microsoft-edge-for-developers #alt-link  
-    # Card
     - title: "Learn how to use Edge"
       itemType: learn
       url: https://support.microsoft.com/help/17171/microsoft-edge-get-to-know
+    # Card
+    - title: "Administer Edge in the Enterprise"
+      itemType: overview
+      url: /deployedge/index
+    # Card
+    - title: "Discover web developer features"
+      itemType: overview
+      url: /microsoft-edge/developer/index
+      # url: /microsoft-edge/index#microsoft-edge-for-developers #alt-link  
 
 # conceptualContent section (optional)
 conceptualContent:
