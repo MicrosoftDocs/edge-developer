@@ -1,6 +1,6 @@
 ---
 description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-tilte: 0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs
+title: 0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/05/2020
