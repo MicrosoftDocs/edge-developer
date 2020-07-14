@@ -1,9 +1,9 @@
 ---
-description: This page provides a summary of high-impact changes that could impact site compatibility
+description: Provides a summary of high-impact changes that may impact site compatibility
 title: Site compatibility-impacting changes coming to Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform
@@ -17,11 +17,11 @@ The web is constantly evolving to improve the user experience, security, and pri
 |:--- |:--- |:--- |:--- |
 | Cookies default to `SameSite=Lax` | [Chrome or Chrome+1](#release-comments)  | Canary v82, Dev v82 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, please review the [Chrome Platform Status entry][ChromePlatformStatus5088147346030592].  |  
 | Referrer Policy: Default to `strict-origin-when-cross-origin` | [Chrome or Chrome+1](#release-comments)  | Canary v79, Dev v79 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, please review the [Chrome Platform Status entry][ChromePlatformStatus6251880185331712].  |  
-| Disallow synchronous XmlHttpRequest in page dismissal | [Chrome+1](#release-comments) \(Edge v83\) |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  Matching Chrome, Microsoft Edge offers a Group Policy to disable this change until Edge 88.  For more information, including the planned timeline by Google for this change, please review the [Chrome Platform Status entry][ChromePlatformStatus4664843055398912].  |  
-| Display subtle prompt for notification permissions requests | Edge v84 |  | Quiet notification requests display a subtle request icon in the address bar for site notification permissions requested using the `Notifications` or `Push` API, replacing the full or standard permission flyout prompt UI. This feature is currently enabled for all users, who may opt out of quiet notification requests at `edge://settings/content/notifications`. In the future, the Microsoft Edge team may explore re-enabling the full flyout notification prompt in some scenarios.  |  
+| Disallow synchronous XmlHttpRequest in page dismissal | [Chrome+1](#release-comments) \(Edge v83\) |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  Matching Chrome, Microsoft Edge offers a Group Policy to disable this change until Edge v88.  For more information, including the planned timeline by Google for this change, please review the [Chrome Platform Status entry][ChromePlatformStatus4664843055398912].  |  
+| Display subtle prompt for notification permissions requests | Edge v84 |  | Quiet notification requests display a subtle request icon in the address bar for site notification permissions requested using the `Notifications` or `Push` API, replacing the full or standard permission flyout prompt UI.  This feature is currently enabled for all users.  To opt out of quiet notification requests, go to `edge://settings/content/notifications`.  In the future, the Microsoft Edge team may explore re-enabling the full flyout notification prompt in some scenarios.  |  
 | Disable TLS/1.0 and TLS/1.1 by default | Edge v84 |  | To help discover impacted sites, you may set the `edge://flags/#display-legacy-tls-warnings` flag to cause Microsoft Edge to display a non-blocking "Not Secure" notice when loading pages that require legacy TLS protocols.  The [SSLMinVersion][DeployedEdgePoliciesSSLMinVersion] Group Policy permits re-enabling of TLS/1.0 and TLS/1.1; the policy remains available until Edge 88.  |  
 | Block mixed content downloads | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, please review the [Google security blog entry][GoogleBlogSecurity20200206].  The Microsoft rollout schedule on file types to warn or block is planned for one release after Chrome.  |  
-| Deprecate AppCache | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, please review the [WebDev documentation][WebDevAppCacheRemoval].  The Microsoft rollout schedule for deprecation is planned for one release after Chrome.  Requesting an [AppCache OriginTrial Token][AppCacheOriginTrial] allows sites to continue to use the deprecated API until Edge v90. |  
+| Deprecate AppCache | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, please review the [WebDev documentation][WebDevAppCacheRemoval].  The Microsoft rollout schedule for deprecation is planned for one release after Chrome.  Requesting an [AppCache OriginTrial Token][AppCacheOriginTrial] allows sites to continue to use the deprecated API until Edge v90.  |  
 | Removal of Adobe Flash | Edge v88  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, please review the [Adobe Flash Chromium Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
 ##### Release comments  
 
@@ -42,16 +42,13 @@ The web is constantly evolving to improve the user experience, security, and pri
    :::column-end:::
 :::row-end:::
 
-
-<!-- image links -->  
-
 <!-- links -->  
 
-[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin - Microsoft Edge - Policies"  
+[DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin - Microsoft Edge - Policies | Microsoft Docs"  
 
-[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Disallow sync XHR in page dismissal JavaScript - Chrome Platform Status"  
-[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies default to SameSite=Lax - Chrome Platform Status"  
-[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin - Chrome Platform Status"  
+[ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Disallow sync XHR in page dismissal JavaScript | Chrome Platform Status"  
+[ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies default to SameSite=Lax | Chrome Platform Status"  
+[ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin | Chrome Platform Status"  
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash Support Removed from Chromium (Target: Chrome 88+ - Jan 2021) - Flash Roadmap | Chromium Projects"  
 
