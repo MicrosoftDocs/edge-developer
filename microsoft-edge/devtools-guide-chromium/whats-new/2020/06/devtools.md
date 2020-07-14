@@ -14,41 +14,42 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team!  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
-### New CSS grid debugging features
+### CSS grid debugging features  
 
-The Microsoft Edge DevTools team is collaborating with the Chromium community to add new CSS grid debugging features to the DevTools!
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to the DevTools!
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS grid debugging feature
 :::image-end:::  
 
-These are experimental features so [follow these steps in our documentation][DevToolsExperimentalFeatures] to give them a try and send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team)!
+These are experimental features so [follow these steps in our documentation][DevToolsExperimentalFeatures] to enable the experiment and give them a try with a [sample that uses CSS grid][CssGridSample]!  
 
 Chromium issue [#1047356][CR1047356]  
 
-### Introducing the Network Console
+Contributed to Chromium ([#1047356][CR1047356])
 
-Use the **Network Console** to create and send HTTP requests directly from the DevTools!  
+### Edit and Replay requests with the Network Console  
 
-:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="The Network Console panel" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   The **Network Console** panel
-:::image-end:::  
-
-This is a new panel the Microsoft Edge DevTools team is working on so [follow these steps in our documentation][DevToolsExperimentalFeatures] and select the checkbox next to **Enable Network Console** to turn on this experiment.  Close and reopen the Microsoft Edge DevTools.  Open the [Command Menu][DevToolsCommandMenu], enter **Network Console**, and run the **Show Network Console** command to access the new **Network Console** panel.  
-
-Chromium issue [#1093687][CR1093687]  
-
-#### Edit and Replay
-
-With the **Enable Network Console** experiment turned on, you are now able to **Edit and Replay** requests in the [Network Log][DevToolsNetwork] using the **Network Console**.  Open the contextual menu (right-click) in the [Network Log][DevToolsNetwork] and select **Edit and Replay**.  
+You are now able to **Edit and Replay** requests in the [Network Log][DevToolsNetwork] using the **Network Console**.  [Follow these steps in our documentation][DevToolsExperimentalFeatures] to turn on the **Enable Network Console** experiment.  Open the contextual menu (right-click) in the [Network Log][DevToolsNetwork] and select **Edit and Replay**.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    **Edit and Replay** a request in the [NetworkLog][DevToolsNetwork] with the **Network Console**
 :::image-end:::  
 
-The **Network Console** opens in the [DevTools Drawer][DevToolsDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.
+A new panel, the **Network Console** opens in the [DevTools Drawer][DevToolsDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.  
 
-This an experimental panel so try it out and send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team)!  
+> [!TIP]
+> If you want to see **Network Console** in the main \(top\) panel instead of in the [DevTools Drawer][DevToolsDrawer], check out [moving tools between panels](#move-tools-between-panels).
+
+You may also use the **Network Console** to create and send HTTP requests directly from the DevTools!  
+
+:::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="The Network Console panel" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
+   The **Network Console** panel
+:::image-end:::  
+
+Chromium issue [#1093687][CR1093687]  
+
+Contributed to Chromium ([#1093687][CR1093687])
 
 ### Service worker respondWith events in the Timing tab  
 
@@ -66,6 +67,8 @@ Expand **Response received** to see additional information from the `fetch` resp
 
 Chromium issue [#1066579][CR1066579]  
 
+Contributed to Chromium ([#1066579][CR1066579])
+
 ### webhint feedback in the Issues panel
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To see feedback from webhint in the [Issues][DevToolsIssues] panel, [follow these steps in our documentation][DevToolsExperimentalFeatures] and select the checkbox next to **Enable webhint**.  
 
@@ -73,13 +76,11 @@ Chromium issue [#1066579][CR1066579]
    webhint feedback in the Issues panel  
 :::image-end:::     
 
-You may select the issue to see documentation on how to fix the issue and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** panel in DevTools.  
-
 Chromium issue [#1070378][CR1070378]  
 
 ### Improved Initiator tooltip in the Network panel
 
-In Microsoft Edge 84 or earlier, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevToolsNetwork] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
+In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevToolsNetwork] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84 and earlier" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    The Initiator tooltip in Microsoft Edge 84 and earlier
@@ -101,7 +102,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
    Moving tabs between panels  
 :::image-end:::  
 
-[Follow these steps in our documentation][DevToolsExperimentalFeatures] to try this experiment and send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team)!
+[Follow these steps in our documentation][DevToolsExperimentalFeatures] to try this experiment!
 
 Chromium issue [#897944][CR897944]
 
@@ -283,7 +284,7 @@ Chromium issue [#1041830][CR1041830]
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
-## Getting in touch with Microsoft Edge Devtools team  
+## Getting in touch with Microsoft Edge DevTools team  
 
 Us the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
@@ -331,6 +332,8 @@ Us the following options to discuss the new features and changes in the post, or
 [CR1070378]: https://crbug.com/1070378 "Integrate webhint into DevTools | Chromium bugs"  
 [CR1069404]: https://crbug.com/1069404 "[Dev Tools] widget popups are too all narrow | Chromium bugs"  
 [CR897944]: https://crbug.com/897944 "Draggable devtool panels | Chromium bugs"
+
+[CssGridSample]: https://stephaniestimac.com/css-grid-experiments/project6/ "CSS Grid Experiment"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"  
 
