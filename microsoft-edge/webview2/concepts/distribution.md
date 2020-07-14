@@ -49,7 +49,7 @@ Developers are recommended to ensure that the Evergreen WebView2 Runtime is inst
 
 1.  Download the latest [Evergreen WebView2 Runtime Installer][Webview2Installer].  
 1.  Include the installer in your application installer or updater.  
-1.  During your application installation or update, check if the Evergreen WebView2 Runtime is already installed on the user machine, by using the [GetAvailableCoreWebView2BrowserVersionString](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#getavailablecorewebview2browserversionstring) API and checking whether the versionInfo is NULL. If not installed, the application installer/updater can silently invoke the runtime installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install`. 
+1.  During your application installation or update, check if the Evergreen WebView2 Runtime is already installed on the user machine, by using the [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) API and checking whether the versionInfo is NULL. If not installed, the application installer/updater can silently invoke the runtime installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install`. 
 
 Depending on your scenario, you may need to change the above workflow.  For example, your application installer may download the Evergreen WebView2 Runtime Installer instead of including it in your application package.  
 

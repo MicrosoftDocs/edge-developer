@@ -20,14 +20,14 @@ The [WebView2 control](https://docs.microsoft.com/microsoft-edge/webview2/) allo
 
 2. Design specific web messages and host object interactions instead of using generic proxies.
 
-3. Restrict web content functionality by modifying [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) or [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.NET) as follows:
+3. Restrict web content functionality by modifying [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings.md) (Win32) or [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md) (.NET) as follows:
     - Set `AreHostObjectsAllowed` to `false`, if you don’t expect the web content to access host objects.
     - Set `IsWebMessageEnabled` to `false`, if you don’t expect the web content to post web messages to your native application. 
     - Set `IsScriptEnabled` to `false`, if you don’t expect the web content to run scripts (for example, when showing static html content).
     - Set `AreDefaultScriptDialogsEnabled` to `false`, if you don’t expect the web content to show `alert` or `prompt` dialog boxes.
 
-4.	Use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page as follows:
-    1.	To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation. 
-    2.	When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings) (Win32) or [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings) (.NET)` as described above.
+4. Use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page as follows:
+    1. To prevent your application from navigating to certain pages, use these events to check and then block page or frame navigation. 
+    2. When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings](../reference/win32/0-9-538/icorewebview2settings.md) (Win32) or [CoreWebView2Settings](../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md) (.NET)` as described above.
 
 5. When navigating to a new document, use the `ContentLoading` event to remove exposed host objects using `RemoveHostObjectFromScript`. 
