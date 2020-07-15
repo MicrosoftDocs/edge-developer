@@ -37,9 +37,6 @@ If you do not have an account or if you have an existing commercial account with
           > [!IMPORTANT]
           > After enrollment, you are not able to change the value of this field.  
        :::column-end:::
-       :::column span="2":::
-          &nbsp; 
-       :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
@@ -50,19 +47,12 @@ If you do not have an account or if you have an existing commercial account with
           
           > [!IMPORTANT]
           > After enrollment, you are not able to change the value of this field.  
-       :::column-end:::
-       :::column span="2":::
+          
           *   `Individual account`  
-
-              An individual account is appropriate for a developer not associated with a company.  
-              
-              The account verification process is shorter, and involves verifying that the publisher display name is available.  
+              An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter, and involves verifying that the publisher display name is available.  
 
           *   `Company account`  
-              
-              A company accounts is associated with an organization or business.  
-
-              The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process may range from a few days to a few weeks.  Your company may receive phone calls from Microsoft verification partners.  
+              A company account is associated with an organization or business.  The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process may range from a few days to a few weeks.  Your company may receive phone calls from Microsoft verification partners.  
        :::column-end:::
     :::row-end:::  
     :::row:::
@@ -71,8 +61,7 @@ If you do not have an account or if you have an existing commercial account with
        :::column-end:::
        :::column span="2":::
           This field is the name shown to users in the Microsoft Edge add-ons catalog.  You may use a name only if it is available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
-       :::column-end:::
-       :::column span="2":::
+          
           > [!NOTE]
           > The maximum length for this field is 50 characters.  
        :::column-end:::
@@ -84,19 +73,13 @@ If you do not have an account or if you have an existing commercial account with
        :::column span="2":::
           This field contains any contact information that Microsoft may use to contact you regarding any account issues.  After registration is complete, an email confirmation is sent to you.  For a company account, you must use the registered email address associated with your organization.  
        :::column-end:::
-       :::column span="2":::
-          &nbsp; 
-       :::column-end:::
     :::row-end:::  
     :::row:::
        :::column span="1":::
           **Company approver**  
        :::column-end:::
        :::column span="2":::
-          For a company account, you must provide the contact information of your company approver.  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extension belong to your organization.  
-       :::column-end:::
-       :::column span="2":::
-          \[name\], \[email address\], and \[phone number\]
+          For a company account, you must provide the contact information of your company approver \(name, email address, and phone number\).  Microsoft contacts the company approver specified as a part of the verification process to ensure that the extension belong to your organization.  
        :::column-end:::
     :::row-end:::  
     <!-- -->
