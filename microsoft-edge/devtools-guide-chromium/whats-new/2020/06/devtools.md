@@ -26,8 +26,6 @@ These are experimental features.  To enable the experiment, see [Turn on experim
 
 Chromium issue [#1047356][CR1047356]  
 
-Contributed to Chromium: Issue [#1047356][CR1047356]  
-
 <!--todo: edit pass delay - start -  -->
 
 ### Edit and Replay requests with the Network Console  
@@ -51,8 +49,6 @@ You may also use the **Network Console** to create and send HTTP requests direct
 
 Chromium issue [#1093687][CR1093687]  
 
-Contributed to Chromium: Issue [#1093687][CR1093687]  
-
 <!--todo: edit pass delay - end -  -->
 
 ### Service worker respondWith events in the Timing tab  
@@ -70,8 +66,6 @@ Expand **Response received** to see additional information from the `fetch` resp
 :::image-end:::  
 
 Chromium issue [#1066579][CR1066579]  
-
-Contributed to Chromium: Issue [#1066579][CR1066579]  
 
 ### webhint feedback in the Issues panel  
 
@@ -191,8 +185,8 @@ Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR10837
 
 The **Manifest** pane now shows warnings for the following conditions.  
 
-*   The app shortcut icons are smaller than 96x96 pixels  
-*   The app shortcut icons and manifest icons are not square \(since the icons are ignored\)  
+* The app shortcut icons are smaller than 96x96 pixels  
+* The app shortcut icons and manifest icons are not square \(since the icons are ignored\)  
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="App shortcut warnings" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    App shortcut warnings  
@@ -295,10 +289,10 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
-*   Send your feedback using the **Feedback** icon in the DevTools  
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
-*   File bugs on this page in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
+* Send your feedback using the **Feedback** icon in the DevTools  
+* Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
+* Submit a suggestion to [The Web We Want][TheWebWeWant]  
+* File bugs on this page in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
 :::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="The Feedback icon in the Microsoft Edge DevTools" lightbox="../../media/2020/05/feedback-icon.msft.png":::
   The **Feedback** icon in the Microsoft Edge DevTools  
