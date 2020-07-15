@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/30/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -12,34 +12,36 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team!  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow Microsoft Edge on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### CSS grid debugging features  
 
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to the DevTools. With this feature enabled, you may display grid line numbers, grid gaps, and extended grid lines as an on-page overlay. Plus, more improvements to the grid tools are coming soon!
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-   CSS grid debugging feature
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+   CSS grid debugging features
 :::image-end:::  
 
-These are experimental features so [follow these steps in our documentation][DevToolsExperimentalFeatures] to enable the experiment and give them a try with a [sample that uses CSS grid][CssGridSample]!  
+These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn].  To try out the experiment with a sample, see [Bullet Journal with CSS Grid and Subgrid Fallbacks][StephaniestimacCssGridExperimentProject6].  
 
 Chromium issue [#1047356][CR1047356]  
 
 Contributed to Chromium: Issue [#1047356][CR1047356]  
 
+<!--todo: edit pass delay - start -  -->
+
 ### Edit and Replay requests with the Network Console  
 
-You are now able to **Edit and Replay** requests in the [Network Log][DevToolsNetwork] using the **Network Console**.  [Follow these steps in our documentation][DevToolsExperimentalFeatures] to turn on the **Enable Network Console** experiment.  Open the contextual menu (right-click) in the [Network Log][DevToolsNetwork] and select **Edit and Replay**.  
+You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  [Follow these steps in our documentation][DevtoolsExperimentalFeaturesTurnOn] to turn on the **Enable Network Console** experiment.  Open the contextual menu (right-click) in the [Network Log][DevtoolsNetworkIndexLogActivity] and select **Edit and Replay**.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
-   **Edit and Replay** a request in the [NetworkLog][DevToolsNetwork] with the **Network Console**
+   **Edit and Replay** a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**
 :::image-end:::  
 
-A new panel, the **Network Console** opens in the [DevTools Drawer][DevToolsDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.  
+A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.  
 
 > [!TIP]
-> If you want to see **Network Console** in the main \(top\) panel instead of in the [DevTools Drawer][DevToolsDrawer], check out [moving tools between panels](#move-tools-between-panels).
+> If you want to see **Network Console** in the main \(top\) panel instead of in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], check out [moving tools between panels](#move-tools-between-panels).
 
 You may also use the **Network Console** to create and send HTTP requests directly from the DevTools!  
 
@@ -51,9 +53,11 @@ Chromium issue [#1093687][CR1093687]
 
 Contributed to Chromium: Issue [#1093687][CR1093687]  
 
+<!--todo: edit pass delay - end -  -->
+
 ### Service worker respondWith events in the Timing tab  
 
-The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event is the time immediately before the service worker `fetch` event handler runs to the time when the `respondWith` promise of the `fetch` handler is settled.  
+The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event is specified as the the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="The respondWith service worker event in the Timing tab of the Network panel" lightbox="../../media/2020/06/timing-tab.msft.png":::
    The `respondWith` service worker event in the **Timing** tab of the **Network** panel
@@ -69,18 +73,21 @@ Chromium issue [#1066579][CR1066579]
 
 Contributed to Chromium: Issue [#1066579][CR1066579]  
 
-### webhint feedback in the Issues panel
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To see feedback from webhint in the [Issues][DevToolsIssues] panel, [follow these steps in our documentation][DevToolsExperimentalFeatures] and select the checkbox next to **Enable webhint**.  
+### webhint feedback in the Issues panel  
+
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint feedback in the Issues panel  
-:::image-end:::     
+:::image-end:::  
+
+This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.  Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.  
 
 Chromium issue [#1070378][CR1070378]  
 
-### Improved Initiator tooltip in the Network panel
+### Improved Initiator tooltip in the Network panel  
 
-In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevToolsNetwork] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
+In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    The Initiator tooltip in Microsoft Edge 84  
@@ -96,13 +103,13 @@ Chromium issue [#1069404][CR1069404]
 
 ### Move tools between panels
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  With the **Enable support to move tabs between panels** experiment turned on, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and selecting **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, press `Escape`.  
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  This feature allows you to customize your DevTools layout.  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    Moving tabs between panels  
 :::image-end:::  
 
-[Follow these steps in our documentation][DevToolsExperimentalFeatures] to try this experiment!
+This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  After you tun on the **Enable support to move tabs between panels** experiment, you may move tools between the top and bottom panels by hovering on the tab by opening the contextual menu \(right-click\) and selecting **Move to top** or **Move to bottom**.  To show or hide the bottom panel, press `Escape`.  
 
 Chromium issue [#897944][CR897944]
 
@@ -122,7 +129,7 @@ For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not 
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
 :::image-end:::  
 
-Give this feature a try with a [sample that uses CSS-in-JS][CodePenCSSinJSSample].
+Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
 
 Chromium issue [#946975][CR946975]  
 
@@ -232,7 +239,7 @@ For example, previously, DevTools did not ungroup the `hello` messages even thou
    When **Group similar** is unchecked, the `hello` messages are ungrouped.
 :::image-end:::  
 
-Give this feature a try with a [sample that sends duplicate messages to the Console][CodePenDuplicateMessagesSample].  
+Give this feature a try with a [sample that sends duplicate messages to the Console][CodepenZoherghadyaliZyrjgdJ].  
 
 Chromium issue [#1082963][CR1082963]  
 
@@ -286,7 +293,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 ## Getting in touch with Microsoft Edge DevTools team  
 
-Us the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
+Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
 *   Send your feedback using the **Feedback** icon in the DevTools  
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
@@ -298,16 +305,17 @@ Us the following options to discuss the new features and changes in the post, or
 :::image-end:::  
 
 <!-- links -->  
-[CodePenCSSinJSSample]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
-[CodePenDuplicateMessagesSample]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Send duplicate messages to Console | CodePen"
 
-[DevToolsChromiumGuide]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevToolsDrawer]: /microsoft-edge/devtools-guide-chromium/customize/#drawer "Drawer | Microsoft Docs"
-[DevToolsExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features | Microsoft Docs"  
-[DevToolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
+[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
+[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
+[DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
-[DevToolsNetwork]: /microsoft-edge/devtools-guide-chromium/network/#log-network-activity "Log network activity | Microsoft Docs"
+[DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"
+
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
+[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Send duplicate messages to Console | CodePen"
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 
@@ -333,7 +341,7 @@ Us the following options to discuss the new features and changes in the post, or
 [CR1069404]: https://crbug.com/1069404 "[Dev Tools] widget popups are too all narrow | Chromium bugs"  
 [CR897944]: https://crbug.com/897944 "Draggable devtool panels | Chromium bugs"
 
-[CssGridSample]: https://stephaniestimac.com/css-grid-experiments/project6/ "CSS Grid Experiment"
+[StephaniestimacCssGridExperimentProject6]: https://stephaniestimac.com/css-grid-experiments/project6 "Bullet Journal with CSS Grid and Subgrid Fallbacks"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"  
 
