@@ -67,7 +67,7 @@ For more information, see **Extension publishing** process documentation. For in
 
 <!-- links -->  
 
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
+[MicrosoftAppDeveloperAgreement]: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4o4bH "App Developer Agreement | Microsoft Docs"  
 
 [MicrosoftAccount]: https://account.microsoft.com/account/Account "Microsoft account"  
 
