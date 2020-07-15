@@ -81,6 +81,9 @@ When you build a Progressive Web App targeting web standard APIs, your applicati
 > [!IMPORTANT]
 > To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, see the [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
+> [!NOTE]
+> Check out the Build 2020 PWA [session here][BuildVideo] for an overview of PWA benefits, upcoming features and short demos. 
+
 ## Requirements  
 
 To run as a PWA, your server-hosted web app should include following minimum requirements.  
@@ -102,12 +105,7 @@ To be a great PWA, your app must also meet the following requirements.
 | X | [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
 
 If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, head to the [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore] documentation.  
-
-## Current availability  
-
-Browser engine support for Progressive Web App requests for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  
-
-For Microsoft Edge \(Chromium\), the browser platform includes full support for these features that work across devices where Microsoft Edge \(Chromium\) is supported.  
+  
 
 <!-- image links -->  
 
@@ -176,6 +174,8 @@ For Microsoft Edge \(Chromium\), the browser platform includes full support for 
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA video"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 
