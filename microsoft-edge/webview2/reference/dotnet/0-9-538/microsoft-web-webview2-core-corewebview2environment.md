@@ -82,8 +82,7 @@ Creates an evergreen WebView2 Environment using the installed Edge version.
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
-> [!NOTE]
-> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Asynchronously create a new WebView for use with visual hosting.
 
@@ -107,8 +106,7 @@ It is recommended that the application set Application User Model ID for the pro
 
 #### CreateCoreWebView2PointerInfo 
 
-> [!NOTE]
-> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Create an empty CoreWebView2ExperimentalPointerInfo.
 
@@ -135,8 +133,7 @@ Get the browser version info including channel name if it is not the stable chan
 
 #### GetProviderForHwnd 
 
-> [!NOTE]
-> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 

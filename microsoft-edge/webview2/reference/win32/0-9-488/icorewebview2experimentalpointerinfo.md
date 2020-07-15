@@ -12,8 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # 0.9.515 - interface ICoreWebView2ExperimentalPointerInfo 
 
-> [!NOTE]
-> This an experimental API that is shipped with our prerelease SDK version 0.9.488.
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 ```
 interface ICoreWebView2ExperimentalPointerInfo
