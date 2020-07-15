@@ -6,7 +6,7 @@ ms.topic: include
 ms.date: 07/15/2020
 ---
 > [!NOTE]
-> This reference or no longer being maintained. For the latest API reference, see [WebView2APIReference](../../../webview2-api-reference.md).
+> This reference is no longer being maintained. For the latest API reference, see [WebView2 API Reference][WebView2APIReference].
 
 <!-- image links -->  
 
