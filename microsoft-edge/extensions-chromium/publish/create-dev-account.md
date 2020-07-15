@@ -40,7 +40,7 @@ The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers bo
 | Individual accounts are appropriate for developers not associated with a company. | Company accounts are associated with organizations and businesses. |  
 | The account verification process is shorter, and involves verifying that the publisher display name is available. | The account verification process is longer, and involves confirmation that you are authorized to set up the account for your company. The duration of this process may range from a few days to a few weeks. Your company may receive phone calls from our verification partners.  |  
 
-**3. Publisher display name**(max. length 50 characters)
+**3. Publisher display name** (max. length 50 characters)
 
 This is the display name that is shown to users in the Microsoft Edge add-ons catalog. You may use a name only if it’s available, and you have the rights to use it. Company accounts must use your organization’s registered business name.
 
