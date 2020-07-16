@@ -1,14 +1,15 @@
 ---
 description: Reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
-title: Runtime Domain - DevTools Protocol Version 0.1
-author: pelavall
-ms.author: pelavall
-ms.date: 12/15/2017
+title: Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
 ---
-# Runtime
+# Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)  
+
 Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
 
 | | |

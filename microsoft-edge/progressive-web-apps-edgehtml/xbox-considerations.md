@@ -1,15 +1,15 @@
 ---
 description: Ensure your PWA provides a great experience for Xbox
-title: Tailor your PWA for Windows
+title: Progressive Web Apps for Xbox One
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
 ---
 
-# Progressive Web Apps for Xbox One
+# Progressive Web Apps for Xbox One  
 
 You can extend a web application and make it available as an Xbox One app via Microsoft Store while still continuing to use your existing frameworks, CDN and server backend.  And like all Universal Windows Platform (UWP) apps, Progressive Web Apps (PWAs) running on Xbox One can also call native Windows 10 APIs.  There are already a number of PWAs available for the Xbox One, particularly in the category of [media playback apps](#media-pwas-on-xbox).  
 
