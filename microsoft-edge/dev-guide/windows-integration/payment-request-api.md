@@ -10,7 +10,10 @@ ms.technology: windows-integration
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Payment Request API
+# Payment Request API (EdgeHTML)
+
+> [!NOTE]
+> The workflow described in this article is not supported in Microsoft Edge (Chromium).
 
 E-commerce sales continue growing at a rapid pace. According to [eMarketer](https://www.emarketer.com/), by 2018 digital sales are forecasted to increase by 23% from the levels measured in 2013.  While consumers and businesses enjoy the convenience of e-commerce sales, challenges remain.  Today each e-commerce website owner needs to invest time to develop high quality payment checkout flows and validation rules.  Consumers need to navigate different payment checkout flows and re-enter the same payment and shipping information on every site where they shop.  This can be time consuming and frustrating for consumers, leading to a high rate of shopping cart abandonment and decreased sales for merchants. Merchants [estimate](http://baymard.com/lists/cart-abandonment-rate) between 60% and 70% of shopping carts are abandoned.      
 
