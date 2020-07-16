@@ -1,5 +1,5 @@
 ---
-title: Match Browser Language
+title: Change DevTools language settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/16/2020
