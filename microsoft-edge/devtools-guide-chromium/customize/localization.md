@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, localization, loc, language
 ---
 
-# Match Browser Language  
+# Change DevTools language settings  
 
 Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).  
 
