@@ -1,8 +1,8 @@
 ---
-title: DevTools for Beginners
+title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -21,7 +21,7 @@ keywords: microsoft edge, web developement, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# DevTools for Beginners: Get Started with HTML and the DOM   
+# DevTools for beginners: Get started with HTML and the DOM   
 
 This is the first in a series of tutorials that teach you the basics of web development.  You will also learn about a set of web developer tools called Microsoft Edge DevTools that can increase your productivity.  
 

@@ -1,16 +1,16 @@
 ---
 ms.assetid: c4544a19-de78-4c69-a042-c0415726548f
 description: To ensure your extension’s icon is visible while in both light and dark mode, follow the accessibility guide.
-title: Extensions - Accessibility
+title: Accessibility - Extensions (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
 
-# Accessibility  
+# Accessibility - Extensions (EdgeHTML)  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
