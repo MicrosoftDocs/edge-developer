@@ -1,15 +1,15 @@
 ---
 description: Microsoft Edge DevTools Protocol Version 0.1 supports the following tooling clients.
-title: DevTools Protocol Version 0.1 Clients
+title: DevTools Protocol Version 0.1 Clients (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
 ---
 
-# DevTools Protocol Clients
+# DevTools Protocol Version 0.1 Clients (EdgeHTML)  
 
 > [!NOTE]
 > The Microsoft Edge DevTools Protocol works only on [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
