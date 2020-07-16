@@ -88,21 +88,21 @@ When you build a Progressive Web App targeting web standard APIs, your applicati
 
 To run as a PWA, your server-hosted web app should include following minimum requirements.  
 
-|  | Requirement | Details | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | Protect your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  |  
-| X | [Service Workers][MDNServiceWorkerApi] | Use Service Worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  |  
-| X | [Web App Manifest][MDNWebAppManifest] | Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\), so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  |  
+| Requirement | Details | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | Protect your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  |  
+| [Service Workers][MDNServiceWorkerApi] | Use Service Worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  |  
+| [Web App Manifest][MDNWebAppManifest] | Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\), so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  |  
 
 To be a great PWA, your app must also meet the following requirements.  
 
-|  | Requirement | Details | 
-|:--- |:--- |:--- |  
-| X | [Cross-browser compatibility][MDNCrossBrowserTesting] | Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  |  
-| X | [Responsive design][WikiResponsiveWebDesign] | Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout], [flexbox][MDNCssFlexibleBoxLayout], CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout] , [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  |  
-| X | [Deep linking][WikiDeepLinking] | Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  |  
-| X | [Best practices][Webhint] | Use code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  |  
-| X | [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
+| Requirement | Details | 
+|:--- |:--- |  
+| [Cross-browser compatibility][MDNCrossBrowserTesting] | Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  |  
+| [Responsive design][WikiResponsiveWebDesign] | Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout], [flexbox][MDNCssFlexibleBoxLayout], CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout] , [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  |  
+| [Deep linking][WikiDeepLinking] | Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  |  
+| [Best practices][Webhint] | Use code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  |  
+| [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
 
 If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, head to the [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore] documentation.  
   
