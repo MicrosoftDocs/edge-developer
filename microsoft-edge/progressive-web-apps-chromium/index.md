@@ -82,7 +82,7 @@ When you build a Progressive Web App targeting web standard APIs, your applicati
 > To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, see the [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
 > [!NOTE]
-> Check out the Build 2020 PWA [session here][BuildVideo] for an overview of PWA benefits, upcoming features and short demos. 
+> Check out the [Build 2020 PWA session][BuildVideo] for an overview of PWA benefits, upcoming features and short demos. 
 
 ## Requirements  
 
