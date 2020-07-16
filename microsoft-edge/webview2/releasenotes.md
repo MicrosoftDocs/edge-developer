@@ -20,6 +20,32 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > [!IMPORTANT]
 > While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
+## 0.9.579  
+[NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
+
+
+#### General  
+
+*   > [!IMPORTANT]
+    > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. The WebView team recommends staying up to date with the latest version of WebView2.
+
+*   Added ICoreWebView2EnvironmentOptions::IsSingleSignOnUsingOSPrimaryAccountEnabled to enable conditional access for WebView.
+*   Added WebResourceResponseReceived event API for authentication request and include authentication headers.
+
+*   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).
+
+*   Disabled popup blocker in WebView, see [ICoreWebView2NewWindowRequestedEventArgs::get_IsUserInitiated](reference/win32/0-9-538/icorewebview2newwindowrequestedeventargs.md#get_isuserinitiated) for more details.
+
+*  Updated WebMessageReceived event to handle null web messages.
+
+#### .NET  
+
+*   Improved WPF focus handling.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).
+
+  
+*   Added ZoomFactor property on WPF Webview2 Controller.  
+
+
 ## 0.9.538  
 
 [NuGet package][NuGetGallery0.9.538] \| minimum Microsoft Edge version 85.0.538.0.  
@@ -86,7 +112,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
     > *   `applyRemote` is now `applyHostFunction`.  
 *   > [!IMPORTANT]
     > **Breaking Change**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] is deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithoptions].  
-*   Added [FrameNavigationCompleted][ReferenceWin3209488Icorewebview2AddFramenavigationcompleted] Event.  Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.  
+*   Added [FrameNavigationCompleted][ReferenceWin3209488Icorewebview2AddFramenavigationcompleted] event.  Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.  
 *   Added [ICoreWebView2EnvironmentOptions][ReferenceWin3209488Icorewebview2environmentoptions] interface, which may be used to determine the version of the WebView2 Runtime the application targets.  
 *   Added [IsBuiltInErrorPageEnabled][ReferenceWin3209488Icorewebview2settingsGetIsbuiltinerrorpageenabled] setting.  Now, you may choose to enable or disable the built in error page for navigation failure and render process failure.  
 *   Updated Remote Object Injection to support .NET IDispatch implementations \([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
@@ -297,6 +323,8 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue119]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/119 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 119" 
 [GithubMicrosoftedgeWebviewfeedbackIssue148]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/148 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 148"  
 [GithubMicrosoftedgeWebviewfeedbackIssue179]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/179 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 179"  
+[GithubMicrosoftedgeWebviewfeedbackIssue185]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/185 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 185"
+[GithubMicrosoftedgeWebviewfeedbackIssue318]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/318 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 318"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesPr17]: https://github.com/MicrosoftEdge/WebView2Samples/pull/17 "Move project to use latest WebView2 SDK 0.9.430 - MicrosoftEdge/WebView2Samples | GitHub"  
@@ -313,3 +341,4 @@ Initial developer preview release.
 [NuGetGallery0.9.488]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.488 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.488"  
 [NuGetGallery0.9.515-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.515 prerelease"  
 [NuGetGallery0.9.538]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.538"  
+[NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.579"
