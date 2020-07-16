@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: WebView2 Win32 C++ ICoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -33,8 +33,10 @@ Options used to create WebView2 Environment.
 A default implementation is provided in WebView2EnvironmentOptions.h.
 
 ```cpp
-    auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    if(!m_language.empty())
+    auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
+    CHECK_FAILURE(options->put_IsSingleSignOnUsingOSPrimaryAccountEnabled(
+        m_AADSSOEnabled ? TRUE : FALSE));
+    if (!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
         subFolder, nullptr, options.Get(),
