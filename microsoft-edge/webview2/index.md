@@ -118,7 +118,7 @@ For more information on how to build and deploy WebView2 applications, review th
 #### Concepts  
 
 *   [Understand WebView2 SDK versions][Webview2ConceptsVersioning]
-*   [Distribute WebView2 Applications][Webview2ConceptsDistribution]  
+*   [Distribution of applications using WebView2][Webview2ConceptsDistribution]  
 *   [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity]
 *   [Manage User Data Folder in WebView2 Applications][Webview2ConceptsUserdatafolder]
  
