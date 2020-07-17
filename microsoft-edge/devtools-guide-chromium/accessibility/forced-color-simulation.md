@@ -3,7 +3,7 @@ description: Display the current web site in high contrast mode (CSS Forced Colo
 title: High Contrast simulation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 07/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -32,7 +32,7 @@ The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColo
 
 To simulate what your web product looks like in forced color mode, open the [Rendering Tools][DevtoolsGuideChromiumRenderingTools].  
 
-1.  To open the Rendering Tools, select the `...` menu item in the toolbar  
+1.  To open the **Rendering Tools**, select the `...` menu item in the toolbar  
 1.  Select `More tools`  
 1.  Select `Rendering`  
     
@@ -54,12 +54,12 @@ The **Rendering** menu appears in the drawer.
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-rendering-no-modification.msft.png" alt-text="Displaying a web site without high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-no-modification.msft.png":::
+          :::image type="complex" source="../media/accessibility-forced-colors-rendering-no-modification.msft.png" alt-text="Display a web site without high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-no-modification.msft.png":::
              Display without simulated High Contrast  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png" alt-text="Displaying a web site in high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png":::
+          :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png" alt-text="Display a web site in high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png":::
              Display in simulated High Contrast  
           :::image-end:::  
        :::column-end:::
@@ -71,13 +71,13 @@ The **Rendering** menu appears in the drawer.
 1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then press `Enter`.  
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turning on High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
-              Turning on forced colors simulation using the **Command** Menu  
+          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turn on High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
+              Turn on forced colors simulation using the **Command** Menu  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turning off High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
-             Turning off forced colors simulation using the **Command** Menu  
+          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turn off High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
+             Turn off forced colors simulation using the **Command** Menu  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -86,7 +86,7 @@ View and change your CSS like any other web page.  For more information, see [Ge
 
 <!-- links --> 
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsGuideChromiumCommandMenuIndexOpen]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsGuideChromiumCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevtoolsGuideChromiumRenderingTools]: ../rendering-tools/index.md "Microsoft Edge (Chromium) Rendering Tools | Microsoft Docs"  
