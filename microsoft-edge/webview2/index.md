@@ -89,7 +89,7 @@ To build and test your application using the WebView2 control, you need to have 
 *   [Getting Started with WinForms][Webview2GettingstartedWinforms]  
 *   [Getting Started with WinUI3][Webview2GettingstartedWinui]  
 
-The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains samples that demonstrate all of the WebView2 SDKs features and API usage patterns.  As more features are added to the WebView2 SDK, the sample applications is updated.  
+The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.  As more features are added to the WebView2 SDK, the sample applications will be updated.  
 
 ## Supported platforms  
 
