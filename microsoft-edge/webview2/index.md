@@ -113,7 +113,7 @@ You are able to run WebView2 applications on the following versions of Windows.
 
 ## Next steps  
 
-For more detailed information on how to build and deploy WebView2 applications, review the conceptual documentation and how-to guides.  
+For more information on how to build and deploy WebView2 applications, review the conceptual documentation and how-to guides.  
 
 #### Concepts  
 
