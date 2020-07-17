@@ -129,7 +129,7 @@ For more information on how to build and deploy WebView2 applications, review th
 
 ## Getting in touch with the WebView2 team  
 
-Help build a richer WebView2 experience by sharing your feedback.  to submit feature requests or bug reports, see [WebView feedback repo][GithubMicrosoftedgeWebviewfeddback] .  It is also a good place to search for known issues.  
+Help build a richer WebView2 experience by sharing your feedback.  To submit feature requests or bug reports, see [WebView feedback repo][GithubMicrosoftedgeWebviewfeddback] .  It's also a good place to search for known issues.  
 
 > [!NOTE]
 > During developer preview, the Microsoft Edge WebView team also collects data to help build a better WebView.  To turn off WebView data collection, go to `edge://settings/privacy` and turn off browser data collection.  
