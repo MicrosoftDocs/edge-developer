@@ -125,7 +125,7 @@ For more information on how to build and deploy WebView2 applications, review th
 #### How-To guides  
 
 *   [How to Debug with WebView2][Webview2HowtoDebug]  
-*   [Automating and debugging WebView2 with Microsoft EdgeDriver][Webview2HowtoWebdriver]  
+*   [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowtoWebdriver]  
 
 ## Getting in touch with the WebView2 team  
 
