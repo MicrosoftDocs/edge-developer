@@ -148,7 +148,7 @@ Help build a richer WebView2 experience by sharing your feedback.  To submit fea
 [Webview2HowtoWebdriver]: ./howto/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"  
 [Webview2Releasenotes]: ./releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
-[UwpToolkitsWinui3]: /uwp/toolkits/winui3 "Windows UI Library 3 Preview 2 (July 2020) | Microsoft Docs"  
+[UwpToolkitsWinui3]: ./gettingstarted/winui.md "Windows UI Library 3 Preview 2 (July 2020) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub" 
