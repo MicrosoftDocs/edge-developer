@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,7 +27,7 @@ This represents the WebView2 Environment.
 [CreateAsync](#createasync) | Creates an evergreen WebView2 Environment using the installed Edge version.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously create a new WebView for use with visual hosting.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
-[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty CoreWebView2PointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
 [GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
@@ -108,11 +108,11 @@ It is recommended that the application set Application User Model ID for the pro
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
-Create an empty CoreWebView2ExperimentalPointerInfo.
+Create an empty CoreWebView2PointerInfo.
 
 > public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo)()
 
-The returned CoreWebView2ExperimentalPointerInfo needs to be populated with all of the relevant info before calling SendPointerInput.
+The returned CoreWebView2PointerInfo needs to be populated with all of the relevant info before calling SendPointerInput.
 
 #### CreateWebResourceResponse 
 

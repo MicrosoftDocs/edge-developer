@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -50,6 +50,7 @@ CoreWebView2Settings | Defines properties that enable, disable, or modify WebVie
 CoreWebView2SourceChangedEventArgs | Event args for the SourceChanged event.
 CoreWebView2WebMessageReceivedEventArgs | Event args for the WebMessageReceived event.
 CoreWebView2WebResourceRequestedEventArgs | Event args for the WebResourceRequested event.
+CoreWebView2WebResourceResponseReceivedEventArgs | Event args for the WebResourceResponseReceived event.
 CoreWebView2WindowFeatures | Window features for a WebView popup window.
 EdgeNotFoundException | The exception that is thrown when an Edge installation is missing.
 CoreWebView2Matrix4x4 | This transform is used to calculate correct coordinates when calling CreateCoreWebView2PointerInfoFromPointerId.
