@@ -23,7 +23,6 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 ## 0.9.579  
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
-
 #### General  
 
 *   > [!IMPORTANT]
@@ -42,9 +41,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 *   Improved WPF focus handling.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).
 
-  
 *   Added ZoomFactor property on WPF Webview2 Controller.  
-
 
 ## 0.9.538  
 
