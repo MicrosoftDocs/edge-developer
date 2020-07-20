@@ -21,7 +21,7 @@ Ensure you install the following list of pre-requisites before proceeding with t
 *   Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
 *   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
 *   Visual Studio 2019, version 16.7 Preview 1.  For more information, see [Windows UI Library 3 Preview 2 (July 2020)][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-*   Install both x64 and x86 versions of .NET 5 Preview 4.  
+*   Both the [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] and [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] versions of .NET 5 Preview 4.  
     *   [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]  
     *   [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]  
 *   [Install][VisualstudioMarketplaceWinUiprojecttemplates] the VSIX extension that includes the WinUI 3.0 Preview 1 project templates for Visual Studio 2019.  
