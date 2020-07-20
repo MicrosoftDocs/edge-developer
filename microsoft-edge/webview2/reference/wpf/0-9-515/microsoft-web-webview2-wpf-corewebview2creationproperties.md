@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -59,5 +59,5 @@ Gets or sets the value to pass as the userDataFolder parameter of CoreWebView2En
 
 Creates a new instance of CoreWebView2CreationProperties with default data for all properties.
 
-> public  [CoreWebView2CreationProperties](#corewebview2creationproperties)()
+> public [CoreWebView2CreationProperties](#corewebview2creationproperties)()
 

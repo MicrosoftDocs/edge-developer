@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,8 +12,7 @@ keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms
 
 # Microsoft.Web.WebView2.Core.CoreWebView2WindowFeatures class 
 
-> [!NOTE]
-> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll

@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: WebView2 Win32 C++ ICoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -53,13 +53,13 @@ Because a user data folder can only be used by one browser process at a time, if
                 std::wstring message = L"We detected there is a new version for the browser.";
                 if (m_webView)
                 {
-                    message += L"Do you want to restart the app \n\n";
+                    message += L"Do you want to restart the app? \n\n";
                     message += L"Click No if you only want to re-create the webviews. \n";
                     message += L"Click Cancel for no action. \n";
                 }
                 int response = MessageBox(
                     m_mainWindow, message.c_str(), L"New available version",
-                    m_webView  MB_YESNOCANCEL : MB_OK);
+                    m_webView ? MB_YESNOCANCEL : MB_OK);
 
                 if (response == IDYES)
                 {
@@ -129,8 +129,10 @@ void AppWindow::InitializeWebView()
             return;
         }
     }
-    auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    if(!m_language.empty())
+    auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
+    CHECK_FAILURE(options->put_IsSingleSignOnUsingOSPrimaryAccountEnabled(
+        m_AADSSOEnabled ? TRUE : FALSE));
+    if (!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
         subFolder, nullptr, options.Get(),
