@@ -31,14 +31,14 @@ Track `navigations` to each new document using the `NavigationId`.  The `Navigat
 > [!NOTE]
 > The image above represents navigation events with the same `NavigationId` property on their event arg.
 
- `Navigations` events with different `NavigationId` event args may overlap.  For instance, if you start a navigation wait for the related `NavigationStarting` event and then start another navigation you should see the `NavigationStarting` for the first navigate followed by the `NavigationStarting` of the second navigate, followed by the `NavigationCompleted` for the first navigation and then all the rest of the appropriate navigation events for the second navigation.  
+ `Navigations` events with different `NavigationId`'s may overlap.  For instance, if you start a navigation, wait for the related `NavigationStarting` event, and then start another navigation you should see the `NavigationStarting` for the first navigate followed by the `NavigationStarting` of the second navigate, followed by the `NavigationCompleted` for the first navigation and then all the rest of the appropriate navigation events for the second navigation.  
  
  In error cases there may or may not be a `ContentLoading` event depending on whether the navigation is continued to an error page.  
  
- In case of an HTTP redirect, there are multiple `NavigationStarting` events in a row, with ones following the first is the associated `IsRedirect` flag set, however navigation ID remains the same.  
+ In the case of an HTTP redirect, there are multiple `NavigationStarting` events in a row, where subsequent event args have the `IsRedirect` property set, however the navigation ID remains the same.  
  
- Same document `navigations` do not result in `NavigationStarting` event and also do not increment the navigation ID.  
+ Same document `navigations`, for instance navigating to a fragment, do not result in the `NavigationStarting` event and do not increment the navigation ID.  
 
-To monitor or cancel `navigations` inside subframes in the WebView, use `FrameNavigationStarting`.  
+To monitor or cancel `navigations` inside subframes in the WebView, use the `FrameNavigationStarting` and the `FrameNavigationCompleted` events which act just like their non-frame counterpart events.  
 
 <!-- links -->  
