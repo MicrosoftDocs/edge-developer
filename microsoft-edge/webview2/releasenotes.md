@@ -3,7 +3,7 @@ description:  Host web content in your Win32 app with the Microsoft Edge WebView
 title:  Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  06/23/2020
+ms.date:  07/20/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -31,12 +31,14 @@ Release Date: 07/20/2020
     > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview. See [Distribution of WebView2](./concepts/distribution#understand-the-webview2-runtime-and-installer-preview) for more details. 
 * > [!IMPORTANT]
     > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. WebView2 recommends staying up to date with the latest version of WebView2.
-* Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
-*   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request. Authentication headers, if any, are included in the response object.
+
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).
 *   Disabled popup blocker in WebView, see [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in NewWindowRequested event for more details.
 *   Ensured WebView navigation starting event is fired for about:blank. Now, NavigationStarting events are fired for all navigations, but cancellations for about:blank or iframe srcdoc is not supported and ignored.
 *   Blocked `edge:// URI` scheme in WebView.
+* Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
+*   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request. Authentication headers, if any, are included in the response object.
+
 #### .NET  
 
 *   Improved WPF focus handling.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).
