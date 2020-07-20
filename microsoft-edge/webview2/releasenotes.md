@@ -21,7 +21,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
 ## 0.9.579  
-Release Date: 7/20/2020
+Release Date: 07/20/2020
 
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
