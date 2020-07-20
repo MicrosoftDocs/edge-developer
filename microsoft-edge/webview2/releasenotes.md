@@ -28,7 +28,7 @@ Release Date: 07/20/2020
 #### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview. See [Distribution of WebView2](./concepts/distribution#understand-the-webview2-runtime-and-installer-preview) for more details. 
+    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview. See [Distribution of WebView2](./concepts/distribution.md#understand-the-webview2-runtime-and-installer-preview) for more details. 
 * > [!IMPORTANT]
     > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. WebView2 recommends staying up to date with the latest version of WebView2.
 
