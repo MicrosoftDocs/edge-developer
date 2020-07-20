@@ -258,8 +258,7 @@ Press `F5` to build and run your project.  Confirm that your application display
    HTTP alert  
 :::image-end:::  
 
-> [!NOTE]
-> Congratulations, you built your first WebView2 app.  
+Congratulations, you built your first WebView2 app.  
 
 ## Next Steps  
 
