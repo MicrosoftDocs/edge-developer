@@ -42,8 +42,8 @@ Start with a basic desktop project containing a single main window.
     *   Target version: **Windows 10, version 1903 (build 18362)** or later.  
     *   Minimum version: **Windows 10, version 1803 (build 17134)**.  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Create core" lightbox="./media/winui-gettingstarted-projecttype.png":::
-       Create core  
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version." lightbox="./media/winui-gettingstarted-projecttype.png":::
+       The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version.
     :::image-end:::  
     
 1.  In the Solution Explorer, two projects are generated.  
