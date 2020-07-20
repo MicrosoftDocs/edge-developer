@@ -21,26 +21,22 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
 ## 0.9.579  
+
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
 #### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. The WebView team recommends staying up to date with the latest version of WebView2.
-
-*   Added ICoreWebView2EnvironmentOptions::IsSingleSignOnUsingOSPrimaryAccountEnabled to enable conditional access for WebView.
-*   Added WebResourceResponseReceived event API for authentication request and include authentication headers.
-
+    > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. WebView2 recommends staying up to date with the latest version of WebView2.
+*   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
+*   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request. Authentication headers, if any, are included in the response object.
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).
-
-*   Disabled popup blocker in WebView, see [ICoreWebView2NewWindowRequestedEventArgs::get_IsUserInitiated](reference/win32/0-9-538/icorewebview2newwindowrequestedeventargs.md#get_isuserinitiated) for more details.
-
-*  Updated WebMessageReceived event to handle null web messages.
+*   Disabled popup blocker in WebView, see [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in NewWindowRequested event for more details.
+*   Updated WebMessageReceived event to handle null web messages.
 
 #### .NET  
 
 *   Improved WPF focus handling.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).
-
 *   Added ZoomFactor property on WPF Webview2 Controller.  
 
 ## 0.9.538  
@@ -49,7 +45,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 #### General  
 
-*   Dropping support for WebView2 SDK Version [0.8.149](#08149).  The WebView team recommends staying up to date with the latest version of WebView2.  
+*   Dropping support for WebView2 SDK Version [0.8.149](#08149).  WebView2 recommends staying up to date with the latest version of WebView2.  
 *   Updated group policy to account for when the profile path of the Microsoft Edge browser is modified  ([#179][GithubMicrosoftedgeWebviewfeedbackIssue179]).  
 
 #### Win32 C/C++  
@@ -64,7 +60,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 #### .NET (0.9.538 pre-release)  
 
-*   Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK.  For more information, see [ Samples Repo][GithubMicrosoftedgeWebview2samplesMain].  
+*   Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK. For more information, see [Samples Repo][GithubMicrosoftedgeWebview2samplesMain].  
 *   Added support for visual hosting and window features [experimental APIs][ConceptsVersioningExperimentalApis].  
 *   > [!IMPORTANT]
     > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Scriptdialogopening], [NewWindowRequested][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Newwindowrequested], [WebResourceRequested][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Webresourcerequested], and [PermissionRequested][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Permissionrequested].  
@@ -292,8 +288,11 @@ Initial developer preview release.
 [ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Scriptdialogopening]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#scriptdialogopening "ScriptDialogOpening - Microsoft.Web.WebView2.Core.CoreWebView2 class | Microsoft Docs"  
 [ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Webresourcerequested]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#webresourcerequested "WebResourceRequested - Microsoft.Web.WebView2.Core.CoreWebView2 class | Microsoft Docs"  
 [ReferenceWin3209538Icorewebview2Addhostobjecttoscript]: ./reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript "AddHostObjectToScript - interface ICoreWebView2 | Microsoft Docs"  
+[ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived]: ./reference/win32/0-9-538/icorewebview2experimental.md#add_webresourceresponsereceived "add_WebResourceResponseReceived - interface ICoreWebView2Experimental | Microsoft Docs"  
+[ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled]: ./reference/win32/0-9-538/icorewebview2experimentalenvironmentoptions.md#get_issinglesignonusingosprimaryaccountenabled "get_IsSingleSignOnUsingOSPrimaryAccountEnabled - interface ICoreWebView2ExperimentalEnvironmentOptions | Microsoft Docs"  
 [ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures]: ./reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md#get_windowfeatures "get_WindowFeatures - interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs | Microsoft Docs"  
 [ReferenceWin3209538Icorewebview2experimentalwindowfeatures]: ./reference/win32/0-9-538/icorewebview2experimentalwindowfeatures.md "interface ICoreWebView2ExperimentalWindowFeatures | Microsoft Docs"  
+[ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated]: ./reference/win32/0-9-538/icorewebview2newwindowrequestedeventargs.md#get_isuserinitiated "get_IsUserInitiated interface ICoreWebView2NewWindowRequestedEventArgs | Microsoft Docs"  
 [ReferenceWin3209538Icorewebview2settingsGetArehostobjectsallowed]: ./reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed "get_AreHostObjectsAllowed - interface ICoreWebView2Settings | Microsoft Docs"  
 [ReferenceWin3209538Webview2IdlCreatecorewebview2environmentwithoptions]: ./reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 
@@ -325,7 +324,7 @@ Initial developer preview release.
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesPr17]: https://github.com/MicrosoftEdge/WebView2Samples/pull/17 "Move project to use latest WebView2 SDK 0.9.430 - MicrosoftEdge/WebView2Samples | GitHub"  
-[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [NuGetGallery]:  https://www.nuget.org/packages/Microsoft.Web.WebView2 "NuGet Gallery | Microsoft.Web.WebView2"  
 [NuGetGallery0.8.149]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.149 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.149"  
