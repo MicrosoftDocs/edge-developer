@@ -32,8 +32,8 @@ Start with a basic desktop project containing a single main window.
 1.  In Visual Studio, select **Create a new project**.  
 1.  In the project drop-down, select **C#**, **Windows**, and **WinUI** respectively.  
     
-    :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="WPF core" lightbox="./media/winui-gettingstarted-selections.png":::
-       WPF core  
+    :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="Visual studio project creation dialog for  WinUI" lightbox="./media/winui-gettingstarted-selections.png":::
+       Visual studio project creation dialog for WinUI  
     :::image-end:::  
     
 1.  Choose **Blank App, Packaged (WinUI in Desktop)**, and then choose **Next**.  
