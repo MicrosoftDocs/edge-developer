@@ -21,19 +21,23 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
 ## 0.9.579  
+Release Date: 7/20/2020
 
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
 #### General  
 
 *   > [!IMPORTANT]
+    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview. See [Distribution of WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution#understand-the-webview2-runtime-and-installer-preview) for more details. 
+* > [!IMPORTANT]
     > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. WebView2 recommends staying up to date with the latest version of WebView2.
-*   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
+* Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
 *   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request. Authentication headers, if any, are included in the response object.
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).
 *   Disabled popup blocker in WebView, see [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in NewWindowRequested event for more details.
 *   Updated WebMessageReceived event to handle null web messages.
-
+* Ensured WebView navigation starting event is fired for about:blank. Now, NavigationStarting events are fired for all navigations, but cancellations for about:blank or iframe srcdoc is not supported and ignored.
+* Blocked edge:// URI scheme in WebView.
 #### .NET  
 
 *   Improved WPF focus handling.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).
