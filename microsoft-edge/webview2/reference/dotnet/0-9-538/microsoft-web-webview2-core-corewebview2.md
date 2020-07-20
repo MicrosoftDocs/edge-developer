@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -43,6 +43,7 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [SourceChanged](#sourcechanged) | SourceChanged fires when the Source property changes.
 [WebMessageReceived](#webmessagereceived) | This event fires when the IsWebMessageEnabled setting is set and the top level document of the webview calls `window.chrome.webview.postMessage`.
 [WebResourceRequested](#webresourcerequested) | Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter.
+[WebResourceResponseReceived](#webresourceresponsereceived) | WebResourceResponseReceived event fires after the WebView has received and processed the response for a WebResource request.
 [WindowCloseRequested](#windowcloserequested) | Fires when content inside the WebView requested to close the window, such as after window.close is called.
 [AddHostObjectToScript](#addhostobjecttoscript) | Add the provided host object to script running in the WebView with the specified name.
 [AddScriptToExecuteOnDocumentCreatedAsync](#addscripttoexecuteondocumentcreatedasync) | Add the provided JavaScript to a list of scripts that should be executed after the global object has been created, but before the HTML document has been parsed and before any other script included by the HTML document is executed.
@@ -226,6 +227,16 @@ Fires when the WebView is performing an HTTP request to a matching URL and resou
 
 At least one filter must be added for the event to fire.
 
+#### WebResourceResponseReceived 
+
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
+
+WebResourceResponseReceived event fires after the WebView has received and processed the response for a WebResource request.
+
+> public event EventHandler< [CoreWebView2WebResourceResponseReceivedEventArgs](microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md) > [WebResourceResponseReceived](#webresourceresponsereceived)
+
+The event args include the WebResourceRequest as sent by the wire and WebResourceResponse received, including any additional headers added by the network stack that were not be included as part of the associated WebResourceRequested event, such as Authentication headers.
+
 #### WindowCloseRequested 
 
 Fires when content inside the WebView requested to close the window, such as after window.close is called.
@@ -302,7 +313,7 @@ Call an asynchronous DevToolsProtocol method.
 > public async Task< string > [CallDevToolsProtocolMethodAsync](#calldevtoolsprotocolmethodasync)(string methodName, string parametersAsJson)
 
 ##### Returns
-A JSON string that represents the method's return object.
+A JSON string that represents the method's return object. 
 
 See the [DevTools Protocol Viewer](https://aka.ms/DevToolsProtocolDocs) for a list and description of available methods. The methodName parameter is the full name of the method in the format `{domain}.{method}`. The parametersAsJson parameter is a JSON formatted string containing the parameters for the corresponding method. The handler's Invoke method will be called when the method asynchronously completes. Invoke will be called with the method's return object as a JSON string.
 
@@ -323,7 +334,7 @@ Execute JavaScript code from the javascript parameter in the current top level d
 ##### Returns
 Returns a JSON encoded string that represents the result of running the provided JavaScript. 
 
-This method runs the provided JavaScript asynchronously and will return the result of the provided JavaScript. If the result of the provided JavaScript is `undefined`, contains a reference cycle, or otherwise cannot be encoded into JSON, the string 'null' is returned. If a called function in the provided JavaScript has no explicit return value, `undefined` is returned. If the provided JavaScript throws an unhandled exception, 'null' is returned. If this method is called after a `NavigationStarting` event, the provided JavaScript is run on the new document when it loads, around the same time that `ContentLoading` is triggered. `ExecuteScript` will work even if `IsScriptEnabled` is set to `FALSE`.
+This method runs the provided JavaScript asynchronously and will return the result of the provided JavaScript. If the result of the provided JavaScript is `undefined`, contains a reference cycle, or otherwise cannot be encoded into JSON, the string 'null' is returned. If a called function in the provided JavaScript has no explicit return value, `undefined` is returned. If the provided JavaScript throws an unhandled exception, 'null' is returned. If this method is called after a NavigationStarting event, the provided JavaScript is run on the new document when it loads, around the same time that ContentLoading is triggered. ExecuteScriptAsync will work even if IsScriptEnabled is set to `FALSE`.
 
 #### GetDevToolsProtocolEventReceiver 
 
@@ -429,3 +440,4 @@ Stop all navigations and pending resource fetches.
 > public void [Stop](#stop)()
 
 Does not stop scripts.
+

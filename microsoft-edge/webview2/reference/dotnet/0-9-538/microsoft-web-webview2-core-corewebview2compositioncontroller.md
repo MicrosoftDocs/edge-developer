@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2CompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,8 +12,7 @@ keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms
 
 # Microsoft.Web.WebView2.Core.CoreWebView2CompositionController class 
 
-> [!NOTE]
-> This is an [experimental API](../../../concepts/versioning.md#experimental-apis) that shipped with our SDK version [0.9.538-prerelease](../../../releasenotes.md#09538).
+[!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
@@ -28,7 +27,7 @@ This class is an extension of the CoreWebView2Controller class to support visual
 [CursorChanged](#cursorchanged) | The event fires when WebView thinks the cursor should be changed.
 [RootVisualTarget](#rootvisualtarget) | The RootVisualTarget is a visual in the hosting app's visual tree.
 [UIAProvider](#uiaprovider) | Returns the UI Automation Provider for the WebView.
-[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | A helper function to convert a pointerId received from the system into a CoreWebView2ExperimentalPointerInfo.
+[CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid) | A helper function to convert a pointerId received from the system into a CoreWebView2PointerInfo.
 [SendMouseInput](#sendmouseinput) | If eventKind is CoreWebView2MouseEventKind.HorizontalWheel or CoreWebView2MouseEventKind.Wheel, then mouseData specifies the amount of wheel movement.
 [SendPointerInput](#sendpointerinput) | SendPointerInput accepts touch or pen pointer input of types defined in CoreWebView2PointerEventKind.
 
@@ -66,11 +65,11 @@ Returns the UI Automation Provider for the WebView.
 
 #### CreateCoreWebView2PointerInfoFromPointerId 
 
-A helper function to convert a pointerId received from the system into a CoreWebView2ExperimentalPointerInfo.
+A helper function to convert a pointerId received from the system into a CoreWebView2PointerInfo.
 
 > public [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(uint PointerId, IntPtr ParentWindow, Matrix4x4 transform)
 
-parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The CoreWebView2Matrix4x4 is the transform from that HWND to the webview. The returned CoreWebView2ExperimentalPointerInfo is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
+parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The CoreWebView2Matrix4x4 is the transform from that HWND to the webview. The returned CoreWebView2PointerInfo is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
 
 #### SendMouseInput 
 
@@ -86,5 +85,5 @@ SendPointerInput accepts touch or pen pointer input of types defined in CoreWebV
 
 > public void [SendPointerInput](#sendpointerinput)([CoreWebView2PointerEventKind](./namespace-microsoft-web-webview2-core.md) eventType, [CoreWebView2PointerInfo](microsoft-web-webview2-core-corewebview2pointerinfo.md) pointerInfo)
 
-Any pointer input from the system must be converted into a CoreWebView2ExperimentalPointerInfo first.
+Any pointer input from the system must be converted into a CoreWebView2PointerInfo first.
 

@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,6 +17,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 ## Microsoft.Web.WebView2.Core
 *   [Microsoft.Web.WebView2.Core](0-9-538/namespace-microsoft-web-webview2-core.md) namespace
 *   [CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md)
+*   [CoreWebView2CompositionController](0-9-538/microsoft-web-webview2-core-corewebview2compositioncontroller.md)
 *   [CoreWebView2Controller](0-9-538/microsoft-web-webview2-core-corewebview2controller.md)
 *   [CoreWebView2Deferral](0-9-538/microsoft-web-webview2-core-corewebview2deferral.md)
 *   [CoreWebView2DevToolsProtocolEventReceiver](0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md)
@@ -26,7 +27,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [CoreWebView2PhysicalKeyStatus](0-9-538/microsoft-web-webview2-core-corewebview2physicalkeystatus.md)
 *   [CoreWebView2PointerInfo](0-9-538/microsoft-web-webview2-core-corewebview2pointerinfo.md)
 *   [CoreWebView2Settings](0-9-538/microsoft-web-webview2-core-corewebview2settings.md)
-*   [CoreWebView2windowFeatures](0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md)
+*   [CoreWebView2WindowFeatures](0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md)
 *   [EdgeNotFoundException](0-9-538/microsoft-web-webview2-core-edgenotfoundexception.md)
 
 ### Event arguments
@@ -44,3 +45,4 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [CoreWebView2SourceChangedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md)
 *   [CoreWebView2WebMessageReceivedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md)
 *   [CoreWebView2WebResourceRequestedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md)
+*   [CoreWebView2WebResourceResponseReceivedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)
