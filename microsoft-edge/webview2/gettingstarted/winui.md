@@ -20,7 +20,7 @@ Ensure you install the following list of pre-requisites before proceeding with t
 
 *   Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
 *   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
-*   Install Visual Studio 2019, version 16.7 Preview 1.  For for information, see [Configure your dev environment][WindowsAppsWinui3ConfigureYourDevEnvironment].  
+*   Visual Studio 2019, version 16.7 Preview 1.  For more information, see [Windows UI Library 3 Preview 2 (July 2020)][WindowsAppsWinui3ConfigureYourDevEnvironment].  
 *   Install both x64 and x86 versions of .NET 5 Preview 4.  
     *   [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]  
     *   [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]  
