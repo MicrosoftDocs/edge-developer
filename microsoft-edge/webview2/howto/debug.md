@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Debugging WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 07/20/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,16 +17,17 @@ The goal of the Microsoft Edge WebView2 control is combining the best of both th
 ## Microsoft Edge DevTools  
 
 Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsMain] to debug web content displayed in WebView2 controls, in the same way that you would if you were using Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions.  
-*   Press `F12`.  
-*   Press `Ctrl`+`Shift`+`I`.  
-*   Open the context menu \(right-click\) > select `Inspect`.  
+
+*   Select `F12`.  
+*   Select `Ctrl`+`Shift`+`I`.  
+*   Open the context menu \(right-click\) and select `Inspect`.  
 
 :::image type="complex" source="../media/f12.png" alt-text="Microsoft Edge DevTools" lightbox="../media/f12.png":::
    Microsoft Edge DevTools  
 :::image-end:::  
 
 > [!IMPORTANT]
-> When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
+> When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
 
 ## Visual Studio  
 
@@ -41,7 +42,7 @@ Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to
 
 Set up the debugger.  
 
-* Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
+*   Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
     
     1.  Navigate to **Apps & features** settings in Windows.  Search for it using the Windows task bar.  
     1.  Choose **Modify**.  
@@ -75,7 +76,7 @@ To Debug, complete the following actions.
 1.  Run Code  
     *   Select your appropriate build flavor and runtime environment and then start the local windows debugger.  
 1.  View Debug Console  
-    *   You application runs and the debugger connects after the first webview2 is created.  Any pending debug spew is displayed.  
+    *   You application runs and the debugger connects after the first webview2 is created.  Any pending debug output is displayed.  
         
         > [!NOTE]
         > This method of debugging is currently restricted to Win32 applications and Office add-ins.  
