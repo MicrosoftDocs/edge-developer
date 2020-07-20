@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Wpf.WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,11 +32,13 @@ A control to embed web content in a WPF application.
 [NavigationStarting](#navigationstarting) | A wrapper around the CoreWebView2.NavigationStarting event of CoreWebView2.
 [SourceChanged](#sourcechanged) | A wrapper around the CoreWebView2.SourceChanged event of CoreWebView2.
 [WebMessageReceived](#webmessagereceived) | A wrapper around the CoreWebView2.WebMessageReceived event of CoreWebView2.
+[ZoomFactorChanged](#zoomfactorchanged) | The event fires when the ZoomFactor property of the WebView changes.
 [CanGoBack](#cangoback) | Returns true if the WebView can navigate to a previous page in the navigation history.
 [CanGoForward](#cangoforward) | Returns true if the WebView can navigate to a next page in the navigation history.
 [CoreWebView2](#corewebview2) | Access the complete functionality of the underlying Core.CoreWebView2 COM API.
 [CreationProperties](#creationproperties) | Gets or sets a bag of options which are used during initialization of the control's CoreWebView2.
 [Source](#source) | The top-level Uri which the WebView is currently displaying (or will display once initialization of its CoreWebView2 is finished).
+[ZoomFactor](#zoomfactor) | The zoom factor for the WebView.
 [EnsureCoreWebView2Async](#ensurecorewebview2async) | Explicitly trigger initialization of the control's CoreWebView2.
 [ExecuteScriptAsync](#executescriptasync) | Executes JavaScript code from the javaScript parameter in the current top level document rendered in the WebView.
 [GoBack](#goback) | Navigates the WebView to the previous page in the navigation history.
@@ -114,6 +116,14 @@ A wrapper around the CoreWebView2.WebMessageReceived event of CoreWebView2.
 
 The only difference between this event and CoreWebView2.WebMessageReceived is the first parameter that's passed to handlers. Handlers of this event will receive the WebView2 control, whereas handlers of CoreWebView2.WebMessageReceived will receive the CoreWebView2 instance.
 
+#### ZoomFactorChanged 
+
+The event fires when the ZoomFactor property of the WebView changes.
+
+> public event EventHandler< EventArgs > [ZoomFactorChanged](#zoomfactorchanged)
+
+This event directly exposes CoreWebView2Controller.ZoomFactorChanged, see its documentation for more info.
+
 #### CanGoBack 
 
 Returns true if the WebView can navigate to a previous page in the navigation history.
@@ -157,10 +167,20 @@ The top-level Uri which the WebView is currently displaying (or will display onc
 
 > public Uri [Source](#source)
 
-Generally speaking, getting this property is equivalent to getting the CoreWebView2.Source property of CoreWebView2 and setting this property is equivalent to calling the CoreWebView2.Navigate method on CoreWebView2. Getting this property before the CoreWebView2 has been initialized will retrieve the last Uri which was set to it. Setting this property before the CoreWebView2 has been initialized will cause initialization to start in the background (if not already in progress), after which the WebView2 will navigate to the specified Uri. See the WebView2 class documentation for an initialization overview.
+Generally speaking, getting this property is equivalent to getting the CoreWebView2.Source property of CoreWebView2 and setting this property (to a different value) is equivalent to calling the CoreWebView2.Navigate method on CoreWebView2. A value of null has the same meaning as "about:blank" (see remarks for more info). Getting this property before the CoreWebView2 has been initialized will retrieve the last Uri which was set to it, or null (the default) if none has been. Setting this property before the CoreWebView2 has been initialized will cause initialization to start in the background (if not already in progress), after which the WebView2 will navigate to the specified Uri. See the WebView2 class documentation for an initialization overview.
+
+If this property is null then the CoreWebView2 will be showing "about:blank" (or if set to null then the CoreWebView2 will be navigated to "about:blank"). It is also possible for this property to have (or be set to) the explicit value "about:blank", which has the same effect on the CoreWebView2. In other words, if the CoreWebView2 is showing "about:blank", then this property's value might be either null or "about:blank". However, null and "about:blank" are distinct values of this property and not treated as equal to each other. This is important for control initialization because it means that changing the value from null (its default) to "about:blank" is still a change and will still trigger implicit initialization. 
 
 ##### Exceptions
 * `ObjectDisposedException` Thrown if Dispose has already been called on the control.
+
+#### ZoomFactor 
+
+The zoom factor for the WebView.
+
+> public double [ZoomFactor](#zoomfactor)
+
+This property directly exposes CoreWebView2Controller.ZoomFactor, see its documentation for more info. Getting this property before the CoreWebView2 has been initialized will retrieve the last value which was set to it, or 1.0 (the default) if none has been. The most recent value set to this property before the CoreWebView2 has been initialized will be set on it after initialization.
 
 #### EnsureCoreWebView2Async 
 
