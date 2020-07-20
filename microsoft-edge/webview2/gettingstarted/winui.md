@@ -38,10 +38,9 @@ Start with a basic desktop project containing a single main window.
     
 1.  Choose **Blank App, Packaged (WinUI in Desktop)**, and then choose **Next**.  
 1.  Enter a project name, choose other options as needed, and then select **Create**.  
-1.  In the dialog box, set the following options.  
-    *   Target version to **Windows 10, version 1903 (build 18362)** or later  
-    *   Minimum version to **Windows 10, version 1803 (build 17134)**   
-    *   Select **OK**.  
+1.  In **New Universal Windows Platform Project**, select the following values, and then choose **OK**:  
+    *   Target version: **Windows 10, version 1903 (build 18362)** or later.  
+    *   Minimum version: **Windows 10, version 1803 (build 17134)**.  
     
     :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="Create core" lightbox="./media/winui-gettingstarted-projecttype.png":::
        Create core  
