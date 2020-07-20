@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,11 +19,11 @@ The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML
 :::image-end:::  
 
 > [!NOTE]
-> The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.  We do not recommend that you use the preview in your production apps because there may be breaking changes. For more information, see [Webview2Releasenotes].  
+> The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.  You should not use the preview in your production apps because there may be breaking changes.  For more information, see [Webview2Releasenotes].  
 
 ## Hybrid application approach  
 
-Developers often have to choose between building a web application or a native application.  The decision hinges on the trade-off between reach and power.  Web applications allow for a broad reach.  As a Web developer, you may reuse most, if not all of your code, across all different platforms.  Native applications, however, utilize the capabilities of the entire native platform.  
+Developers often have to decide between building a web application or a native application.  The decision hinges on the trade-off between reach and power.  Web applications allow for a broad reach.  As a Web developer, you may reuse most, if not all of your code, across all different platforms.  Native applications, however, utilize the capabilities of the entire native platform.  
 
 :::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web native" lightbox="./media/WebView2/webnative.png":::
    Web native  
