@@ -35,7 +35,7 @@ Release Date: 07/20/2020
 *   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request. Authentication headers, if any, are included in the response object.
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).
 *   Disabled popup blocker in WebView, see [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in NewWindowRequested event for more details.
-* Ensured WebView navigation starting event is fired for about:blank. Now, NavigationStarting events are fired for all navigations, but cancellations for about:blank or iframe srcdoc is not supported and ignored.
+*   Ensured WebView navigation starting event is fired for about:blank. Now, NavigationStarting events are fired for all navigations, but cancellations for about:blank or iframe srcdoc is not supported and ignored.
 *   Blocked `edge:// URI` scheme in WebView.
 #### .NET  
 
