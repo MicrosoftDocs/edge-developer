@@ -3,7 +3,7 @@ description:  Host web content in your WinUI app with the Microsoft Edge WebView
 title:  Microsoft Edge WebView2 for WinUI apps
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  07/15/2020
+ms.date:  07/20/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -16,7 +16,7 @@ In this article, get started creating your first WebView2 app with WinUI3 and le
 
 ## Prerequisites  
 
-Ensure you install the following list of pre-requisites before proceeding with this article.  
+Ensure you install the following list of pre-requisites before proceeding with the following article.  
 
 *   Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
 *   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
@@ -220,14 +220,13 @@ private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs ar
 }
 ```  
 
-
 Select `F5` to build and run your project.  Confirm that navigation is blocked to HTTP sites, and allowed for HTTPS sites.  
 
 ## Step 5 - Scripting  
 
 Host applications may inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
 
-As an example, add scripts to alert users when they navigate to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content using [ExecuteScriptAsync][Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync].  
+As an example, add scripts send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content using [ExecuteScriptAsync][Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync].  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -258,7 +257,7 @@ Congratulations, you built your first WebView2 app.
 Our team is currently building more WebView2 APIs.  For more information on the current state of WebView2 APIs, see the [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2].  
 
 > [!NOTE]
-> The WinRT CoreWebView2 object may not be available at the time we ship the WebView2 APIs. To understand which APIs are available to WebView2 controls, see [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available. 
+> The WinRT CoreWebView2 object may not be available at the time the WebView2 APIs ship. To understand which APIs are available to WebView2 controls, see [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available. 
 
 For more information about WebView2 capabilities, see [WebView2 Concepts and How-To guides][Webview2IndexNextSteps], and the [WebView2 samples repo][GithubMicrosoftedgeWebview2samplesMain].  
 
