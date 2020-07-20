@@ -22,7 +22,7 @@ The normal sequence of navigation events is `NavigationStarting`, `SourceChanged
 | 4 | `ContentLoading`  |  WebView has started loading content for the new page.  |  
 | 5 | `NavigationCompleted`  |  WebView2 has completed loading content on the new page.    |  
 
-You, the developer, are able to track `navigations` to each new document using the navigation ID.  The navigation ID of WebView changes every time there is a successful navigation to a new document.
+Track `navigations` to each new document using the `NavigationId`.  The `NavigationId` of WebView changes every time there is a successful navigation to a new document.
 
 :::image type="complex" source="../media/dot-inline-dotgraph-1.png" alt-text="dot inline dotgraph" lightbox="../media/dot-inline-dotgraph-1.png":::
    The Microsoft Edge WebView2 Navigation Events  
