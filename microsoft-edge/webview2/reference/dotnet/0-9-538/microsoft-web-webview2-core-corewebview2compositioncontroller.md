@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2CompositionController
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/17/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
