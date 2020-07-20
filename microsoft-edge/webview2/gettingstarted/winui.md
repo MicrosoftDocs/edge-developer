@@ -258,7 +258,7 @@ Congratulations, you built your first WebView2 app.
 Our team is currently building more WebView2 APIs.  For more information on the current state of WebView2 APIs, see the [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2].  
 
 > [!NOTE]
-> The current set of APIs may ship before the WinRT CoreWebView2 object, meaning functionality of the Webview2 would be limited to the APIs included in the above document for some interim period of time.  
+> The WinRT CoreWebView2 object may not be available at the time we ship the WebView2 APIs. To understand which APIs are available to WebView2 controls, see [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available. 
 
 For more information about WebView2 capabilities, see [WebView2 Concepts and How-To guides][Webview2IndexNextSteps], and the [WebView2 samples repo][GithubMicrosoftedgeWebview2samplesMain].  
 
