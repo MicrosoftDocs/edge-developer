@@ -19,7 +19,7 @@ In this article, get started creating your first WebView2 app with WinUI3 and le
 Ensure you installed the following list of pre-requisites before proceeding.  
 
 *   Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
-*   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] installed on Windows 10, Windows 8.1, or Windows 7.  
+*   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
 *   Install Visual Studio 2019, version 16.7 Preview 1.  For for information, see [Configure your dev environment][WindowsAppsWinui3ConfigureYourDevEnvironment].  
 *   Install both x64 and x86 versions of .NET 5 Preview 4.  
     *   [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]  
