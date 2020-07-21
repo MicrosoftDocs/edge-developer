@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -20,9 +20,9 @@ While experimental features are available in all channels of Microsoft Edge, you
 Use the following steps to turn on \(or off\) experimental features in Microsoft Edge.  
 
 1.  [Open DevTools][DevtoolsOpen].  
-     *   Press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+     *   Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
-    *   Press `Shift`+`?`.  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+    *   Select `Shift`+`?`.  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  On the left side of the **Settings** pane, select the **Experiments** section.  
     
     :::image type="complex" source="./media/experiments-devtools.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-devtools.png":::
@@ -51,13 +51,13 @@ The following sections describe the new experimental features that are available
 
 Provides a new **Shortcuts** page in [DevTools Settings][DevToolsCustomizeSettings] that enables matching [keyboard shortcuts][DevToolsShortcuts] in the DevTools to [VS Code][VisualstudioCode].  
 
-Once you have enabled this experiment, open [DevTools Settings][DevToolsCustomizeSettings] again by pressing `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in VS Code.  
+Once you have enabled the experiment, open [DevTools Settings][DevToolsCustomizeSettings] again by select `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in VS Code.  
 
 :::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Match keyboard shortcuts in the DevTools to VS Code" lightbox="./media/experiments-keyboard-shortcut.png":::
    Match keyboard shortcuts in the DevTools to VS Code
 :::image-end:::  
 
-For example, on Windows the keyboard shortcut for pausing or continuing running a script in [VS Code][VisualstudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.  
+For example, on Windows the keyboard shortcut for pausing or continuing running a script in [VS Code][VisualstudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, the same shortcut in the DevTools is `F8`.  With the **Visual Studio Code** preset, the shortcut is also `F5`.  
 
 ### Enable new CSS grid debugging features  
 
@@ -71,7 +71,7 @@ Improves on-page visualizations when you debug websites that have CSS grid layou
 
 ### Enable support to move tabs between panels  
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  When this experiment is selected, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and selecting **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, press `Escape`.  
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  When you choose the experiment, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, select `Escape`.  
 
 :::image type="complex" source="./media/experiments-move-panels.png" alt-text="Moving tabs between panels" lightbox="./media/experiments-move-panels.png":::
    Moving tabs between panels  
@@ -81,7 +81,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ### Enable webhint  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  This experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  You may select the issue to see documentation on how to fix the issue and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  The [webhint][WebhintMain] experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  You may select the issue to see documentation on how to fix the issue and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.png":::
    webhint feedback in the Issues panel  
@@ -91,15 +91,15 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ### Enable Network Console
 
-Network Console (working title) is an experimental component for Chromium-based DevTools for making synthetic network requests over HTTP. It can be used during the dev-test loop for web APIs. We know that Network Console isn't going to be feature-complete with our initial pass; we want to have the flexibility to iterate rapidly, experiment in the open, and get great ideas for what will be going into Network Console in the future.
+**Network Console** is the working title for an experimental component for Chromium-based DevTools for making synthetic network requests over HTTP.  You may use the **Network Console** experiment during the dev-test loop for web APIs.  The **Network Console** experiment is not feature-complete during the initial release.  Early availability during the dev-test loop enables you to receive rapid iterations, experiment in the open, and see your ideas for the **Network Console** implemented quickly.  
 
-Once you enable the experiment, restart your Developer Tools. Navigate to the Network pane and right-click on the network request you're interested in changing and sending again. This will open a context menu containing the option **Edit and Replay**, which you will click on in order to access the Network Console. Your network request information will be pre-loaded for you to then edit and send.
+Once you enable the experiment, restart your DevTools.  Open the **Network** pane, hover on the network request you are interested in changing and sending again, open the contextual menu \(right-click\), and choose **Edit and Replay**.  The **Network Console** opens and your network request information is pre-loaded for you to then edit and send.  
 
 :::image type="complex" source="./media/network-network-console.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.png":::
 Network Console in the Console drawer 
 :::image-end::: 
 
-<!--Available in Microsoft Edge version 85 and later. --> 
+<!--Available in Microsoft Edge version 85 and later.  --> 
 
 ## Previous experimental features  
 
