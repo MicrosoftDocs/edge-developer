@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 experimental: false
 experiment_id: "51fe4b97-3e55-41"
 ---
-
+test
 # Microsoft Edge Developer Tools  
 
 > [!NOTE]
