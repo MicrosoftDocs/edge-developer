@@ -3,40 +3,44 @@ description: Represents a notification string passed from webview content to the
 title: ScriptNotifyEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# ScriptNotifyEvent object
+# ScriptNotifyEvent object  
 
-An object that represents an event fired when content contained in the [webview](../webview.md) passes a string to the application by using JavaScript.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Properties
-    
-### callingUri
+An object that represents an event fired when content contained in the [webview](../webview.md) passes a string to the application by using JavaScript.  
 
-Gets the Uniform Resource Identifier (URI) of the page containing the script that raised the **ScriptNotifyEvent**.
+## Properties  
 
-This property is read-only.
+### callingUri  
 
-```js
+Gets the Uniform Resource Identifier (URI) of the page containing the script that raised the **ScriptNotifyEvent**.  
+
+This property is read-only.  
+
+```javascript
 var callingUri = ScriptNotifyEvent.callingUri;
-```
+```  
 
-#### Property value
-Type: **DOMString**
+#### Property value  
 
-### value
+Type: **DOMString**  
 
-The method name as passed to the application.
+### value  
 
-This property is read-only.
+The method name as passed to the application.  
 
-```js
+This property is read-only.  
+
+```javascript
 var value = ScriptNotifyEvent.value;
-```
+```  
 
-#### Property value
-Type: **DOMString**
+#### Property value  
+
+Type: **DOMString**  

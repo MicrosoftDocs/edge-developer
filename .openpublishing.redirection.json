@@ -226,6 +226,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-edge/dev-guide/device/web-authentication.md",
+      "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-authentication",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/device/web-notifications-api.md",
       "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-notifications-api",
       "redirect_document_id": true
@@ -611,6 +616,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
+      "redirect_url": "https://ortc.org",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/security.md",
       "redirect_url": "https://developer.mozilla.org/docs/Web/API",
       "redirect_document_id": false
@@ -726,8 +736,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/hosting/gettingstarted.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/win32",
+      "source_path": "microsoft-edge/hosting/webview2/gettingstarted.md",
+      "redirect_url": "/microsoft-edge/webview2/gettingstarted/win32",
       "redirect_document_id": true
     },
     {

@@ -53,7 +53,7 @@ Now browse to `http://localhost:3000` to view your new web app.
 
 ## Get started building a PWA  
 
-Now that you have a simple web app, extend it as a PWA by adding the [3 requirements for PWAs][PwaEdgehtmlIndexRequirements]: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).  
+Now that you have a simple web app, extend it as a PWA by adding the 3 requirements for PWAs<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).  
 
 ### Step 1 - Use HTTPS  
 
@@ -312,7 +312,7 @@ The following is a list of additional tasks to learn when building real-world PW
 
 <!-- links -->  
 
-[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  
+<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: https://docs.microsoft.com/en-us/azure/javascript/tutorial-vscode-azure-app-service-node-03 "Deploy a Node.js app to Azure with VS Code | Microsoft Docs"  
 

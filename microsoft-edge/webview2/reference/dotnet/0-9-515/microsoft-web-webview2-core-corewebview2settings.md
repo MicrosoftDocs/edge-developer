@@ -1,16 +1,18 @@
 ---
 description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+title: 0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2Settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/12/2020
+ms.date: 07/20/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# Microsoft.Web.WebView2.Core.CoreWebView2Settings class 
+# 0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2Settings class 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
@@ -24,7 +26,7 @@ Defines properties that enable, disable, or modify WebView features.
 [AreDefaultContextMenusEnabled](#aredefaultcontextmenusenabled) | The AreDefaultContextMenusEnabled property is used to prevent default context menus from being shown to user in webview.
 [AreDefaultScriptDialogsEnabled](#aredefaultscriptdialogsenabled) | AreDefaultScriptDialogsEnabled is used when loading a new HTML document.
 [AreDevToolsEnabled](#aredevtoolsenabled) | AreDevToolsEnabled controls whether the user is able to use the context menu or keyboard shortcuts to open the DevTools window.
-[AreRemoteObjectsAllowed](#areremoteobjectsallowed) | The AreRemoteObjectsAllowed property is used to control whether remote objects are accessible from the page in webview.
+[AreHostObjectsAllowed](#arehostobjectsallowed) | The AreHostObjectsAllowed property is used to control whether host objects are accessible from the page in webview.
 [IsBuiltInErrorPageEnabled](#isbuiltinerrorpageenabled) | The IsBuiltInErrorPageEnabled property is used to disable built in error page for navigation failure and render process failure.
 [IsScriptEnabled](#isscriptenabled) | Controls if JavaScript execution is enabled in all future navigations in the WebView.
 [IsStatusBarEnabled](#isstatusbarenabled) | IsStatusBarEnabled controls whether the status bar will be displayed.
@@ -59,11 +61,11 @@ AreDevToolsEnabled controls whether the user is able to use the context menu or 
 
 It is true by default.
 
-#### AreRemoteObjectsAllowed 
+#### AreHostObjectsAllowed 
 
-The AreRemoteObjectsAllowed property is used to control whether remote objects are accessible from the page in webview.
+The AreHostObjectsAllowed property is used to control whether host objects are accessible from the page in webview.
 
-> public bool [AreRemoteObjectsAllowed](#areremoteobjectsallowed)
+> public bool [AreHostObjectsAllowed](#arehostobjectsallowed)
 
 Defaults to TRUE.
 
