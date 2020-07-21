@@ -11,9 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 experimental: false
 experiment_id: "51fe4b97-3e55-41"
 ---
-test
-# Microsoft Edge Developer Tools  
 
+# Microsoft Edge Developer Tools  
+test
 > [!NOTE]
 > The Microsoft Edge DevTools help web developers build and test websites.  If you accidentally opened the DevTools, just press `F12` to close.  
 
