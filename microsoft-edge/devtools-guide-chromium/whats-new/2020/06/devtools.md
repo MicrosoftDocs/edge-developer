@@ -14,7 +14,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow Microsoft Edge on Twitter][EdgeDevToolsTwitterAccount].  
 
-### CSS grid debugging features <sup>Experimental</sup>
+### CSS grid debugging features
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
@@ -38,14 +40,14 @@ You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNe
 
 A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.  
 
-> [!TIP]
-> If you want to see **Network Console** in the main \(top\) panel instead of in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], check out [moving tools between panels](#move-tools-between-panels).
-
 You may also use the **Network Console** to create and send HTTP requests directly from the DevTools!  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="The Network Console panel" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
    The **Network Console** panel
 :::image-end:::  
+
+> [!TIP]
+> If you want to see **Network Console** in the main \(top\) panel instead of in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], check out [moving tools between panels](#move-tools-between-panels).
 
 Chromium issue [#1093687][CR1093687]  
 
@@ -69,7 +71,7 @@ Chromium issue [#1066579][CR1066579]
 
 ### webhint feedback in the Issues panel  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  This experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint feedback in the Issues panel  
@@ -78,6 +80,18 @@ Chromium issue [#1066579][CR1066579]
 This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.  Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.  
 
 Chromium issue [#1070378][CR1070378]  
+
+### Move tools between panels
+
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  This feature allows you to customize your DevTools layout by moving tools between the top and bottom panels.  
+
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Moving tabs between panels  
+:::image-end:::  
+
+This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  
+
+Chromium issue [#897944][CR897944]
 
 ### Improved Initiator tooltip in the Network panel  
 
@@ -94,18 +108,6 @@ Starting with Microsoft Edge 85, you are now able to see the Initiator call stac
 :::image-end:::  
 
 Chromium issue [#1069404][CR1069404]  
-
-### Move tools between panels
-
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  This feature allows you to customize your DevTools layout.  
-
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   Moving tabs between panels  
-:::image-end:::  
-
-This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  After you tun on the **Enable support to move tabs between panels** experiment, you may move tools between the top and bottom panels by hovering on the tab by opening the contextual menu \(right-click\) and selecting **Move to top** or **Move to bottom**.  To show or hide the bottom panel, press `Escape`.  
-
-Chromium issue [#897944][CR897944]
 
 ## Announcements from the Chromium project  
 
