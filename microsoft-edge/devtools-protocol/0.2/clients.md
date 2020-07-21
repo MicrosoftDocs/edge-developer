@@ -1,15 +1,15 @@
 ---
 description: Microsoft Edge DevTools Protocol Version 0.2 supports the following tooling clients.
-title: Microsoft Edge DevTools Protocol Version 0.2 Clients
+title: Microsoft Edge DevTools Protocol Version 0.2 Clients (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
 ---
 
-# DevTools Protocol Clients
+# Microsoft Edge DevTools Protocol Version 0.2 Clients (EdgeHTML)  
 
 > [!NOTE]
 > Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.  
