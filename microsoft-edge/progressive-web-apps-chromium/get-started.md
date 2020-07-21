@@ -120,7 +120,7 @@ To build a service worker in your project, use the **Cache-first network** servi
 1.  In VS Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
     ```html
-    <script src="/pwabuilder-sw-register.js"></script>
+    <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
 Your web app now has a service worker that uses the cache-first strategy, which fetches resources like images, JS, CSS, and HTML from the cache first, and falls back to the network as needed.  
