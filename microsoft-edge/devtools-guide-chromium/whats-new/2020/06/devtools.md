@@ -53,7 +53,7 @@ Chromium issue [#1093687][CR1093687]
 
 ### Service worker respondWith events in the Timing tab  
 
-The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event is specified as the the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
+The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="The respondWith service worker event in the Timing tab of the Network panel" lightbox="../../media/2020/06/timing-tab.msft.png":::
    The `respondWith` service worker event in the **Timing** tab of the **Network** panel
@@ -358,7 +358,7 @@ Use the following options to discuss the new features and changes in the post, o
 [V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish coalescing | V8.Dev"  
 [V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Optional chaining | V8.Dev"  
 
-[WebhintMain]: https://webhint.io "webhint" 
+[WebhintMain]: https://webhint.io "webhint"  
 
 [WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
 
