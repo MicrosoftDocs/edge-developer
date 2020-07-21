@@ -1,13 +1,13 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
+title: WebView2 Win32 C++ ICoreWebView2EnvironmentOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html, ICoreWebView2EnvironmentOptions
 ---
 
 # interface ICoreWebView2EnvironmentOptions 
@@ -33,8 +33,10 @@ Options used to create WebView2 Environment.
 A default implementation is provided in WebView2EnvironmentOptions.h.
 
 ```cpp
-    auto options = Microsoft::WRL::Make<CoreWebView2EnvironmentOptions>();
-    if(!m_language.empty())
+    auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
+    CHECK_FAILURE(options->put_IsSingleSignOnUsingOSPrimaryAccountEnabled(
+        m_AADSSOEnabled ? TRUE : FALSE));
+    if (!m_language.empty())
         CHECK_FAILURE(options->put_Language(m_language.c_str()));
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
         subFolder, nullptr, options.Get(),
