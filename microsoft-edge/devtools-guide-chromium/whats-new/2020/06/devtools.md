@@ -22,7 +22,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
    CSS grid debugging features
 :::image-end:::  
 
-These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn].  To try out the experiment with a sample, see [Bullet Journal with CSS Grid and Subgrid Fallbacks][StephaniestimacCssGridExperimentProject6].  
+These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn].  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
 Chromium issue [#1047356][CR1047356]  
 
@@ -310,6 +310,7 @@ Use the following options to discuss the new features and changes in the post, o
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
 [CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Send duplicate messages to Console | CodePen"
+[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "CSS Grid planner example | CodePen"
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 
@@ -334,8 +335,6 @@ Use the following options to discuss the new features and changes in the post, o
 [CR1070378]: https://crbug.com/1070378 "Integrate webhint into DevTools | Chromium bugs"  
 [CR1069404]: https://crbug.com/1069404 "[Dev Tools] widget popups are too all narrow | Chromium bugs"  
 [CR897944]: https://crbug.com/897944 "Draggable devtool panels | Chromium bugs"
-
-[StephaniestimacCssGridExperimentProject6]: https://stephaniestimac.com/css-grid-experiments/project6 "Bullet Journal with CSS Grid and Subgrid Fallbacks"
 
 [GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"  
 
