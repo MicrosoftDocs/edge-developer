@@ -30,7 +30,7 @@ In preview, the pre-release package contains the following components.
 *   .NET APIs: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515], and [Core][ReferenceDotnet09538]  
 *   Experimental APIs.  For more information, see the [Experimental APIs](#experimental-apis) section.  
 
-### Experimental APIs  
+## Experimental APIs  
 
 The WebView Team is testing APIs that represent future functionality named Experimental APIs.  The Experimental APIs are marked as `experimental` in the SDK.  Some Experimental APIs may ship as fully stable APIs in the release package.  You should expect all experimental APIs to change before release.  Please evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].   
 
