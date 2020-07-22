@@ -114,6 +114,43 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 ---  
 
+**Begin: thinner image direct figure staggered 1/3 columns text on left**  
+
+### CSS grid debugging features  
+
+:::row:::
+   :::column span="1":::
+      :::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
+         Experimental feature  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="2":::
+      <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
+      
+      The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+      
+      :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+         CSS grid debugging features
+      :::image-end:::  
+      
+      These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
+      
+      Chromium issue [#1047356][CR1047356]  
+   :::column-end:::
+:::row-end:::  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+**End: thinner image direct figure staggered 1/3 columns text on left**  
+
+---  
+
+&nbsp;  
+
+---  
+
 **original**  
 
 ### CSS grid debugging features  
