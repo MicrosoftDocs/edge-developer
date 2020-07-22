@@ -20,7 +20,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ---  
 
-**thicker image direct figure**  
+**Begin: thicker image direct figure**  
 
 ### CSS grid debugging features  
 
@@ -32,13 +32,15 @@ The following sections are a list of announcements you may have missed from the 
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
+**End: thicker image direct figure**  
+
 ---  
 
 &nbsp;  
 
 ---  
 
-**thinner image direct figure**  
+**Begin: thinner image direct figure**  
 
 ### CSS grid debugging features  
 
@@ -50,37 +52,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
----  
-
-&nbsp;  
-
----  
-
-**thicker version of include**  
-
-### CSS grid debugging features  
-
-[!INCLUDE [Experimental feature](../../includes/experimental-note.md)]  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-
----  
-
-&nbsp;  
-
----  
-
-**thinner version of include**  
-
-### CSS grid debugging features  
-
-[!INCLUDE [Experimental feature](../../includes/experimental-note-thin.md)]  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+**End: thinner image direct figure**  
 
 ---  
 
