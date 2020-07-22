@@ -60,7 +60,7 @@ To enable WebView2 script debugging, open the context menu \(right-click\) on yo
     1.  On **Configuration Properties**, select **Debugging**.  	
     1.  On the **Debugger Type** property, search the the list of options, and select **JavaScript (WebView2)**.  	
 
-To Debug, you may complete the following actions.  
+You are ready to debug! Now you may:
 
 1.  Set Breakpoints  
     *   Open the file you are trying to debug and set a breakpoint by clicking left on the line number.  
@@ -85,8 +85,7 @@ To Debug, you may complete the following actions.
             Visual Studio Code Debug Output  
         :::image-end:::
 
-        > [!NOTE]
-        > This method of debugging is currently restricted to Win32 applications and Office add-ins.  
+
         
 ## Visual Studio Code  
 
@@ -123,12 +122,12 @@ There are 5 basic steps for debugging within VSCode:
         Visual Studio Code Debug Output  
         :::image-end:::
 
-    1. Create Launch.json file with the following metadata: (This step is required to debug a WebView Control.)
+    1. Ensure you have a VSCode Launch.json file. If not create a Launch.json file with the following metadata: (This step is required to debug a WebView Control)
     
         ```csharp
         {
             "name": "Scenario 1: Script debugging (first) (old adapter)",  
-            "type": "edge",  
+            "type": "pwa-msedge”   
             "port": 9222, // Optional defaults to 9222  
             "request": "launch", // optionally “attach”  
             "runtimeExecutable": "E:/YourPath/YourApplication.exe",  
@@ -151,6 +150,8 @@ There are 5 basic steps for debugging within VSCode:
     > [!NOTE]
         >  VSCode does not do source mapping you so MUST ensure you have opened and set breakpoints in the same file path as the WebView will be using.  If the paths are not exact VSCode can’t resolve the breakpoint. 
 1. **Run code**
+    1. Select the launch configuration from the dropdown menu.
+    1. Start debugging by clicking the green run button.        
 
         :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/runvs.png":::
         Visual Studio Code Debug Output  
