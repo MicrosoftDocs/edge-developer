@@ -24,6 +24,9 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 > [!IMPORTANT]	
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  	
 ## Visual Studio  	
+:::image type="complex" source="./media/f12.png" alt-text="Microsoft Edge DevTools" lightbox="../media/f12.png":::
+   Microsoft Edge DevTools  
+:::image-end:::  
 
 > [!NOTE]
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
@@ -57,15 +60,111 @@ To enable WebView2 script debugging, open the context menu \(right-click\) on yo
     1.  On **Configuration Properties**, select **Debugging**.  	
     1.  On the **Debugger Type** property, search the the list of options, and select **JavaScript (WebView2)**.  	
 
-        :::image type="complex" source="../media/enbjs.png" alt-text="Visual Studio JavaScript Debugger" lightbox="../media/enbjs.png":::	
-           Visual Studio JavaScript Debugger  	
-        :::image-end:::  	
+To Debug, you may complete the following actions.  
 
-<!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  	
+1.  Set Breakpoints  
+    *   Open the file you are trying to debug and set a breakpoint by clicking left on the line number.  
+        
+        :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio Code Adding Breakpoints" lightbox="/media/breakpoint.png":::
+           Visual Studio Adding Breakpoints  
+        :::image-end::: 
+
+        > [!NOTE]
+        > The JS/TS debug adapter does not do source path mapping.  You must open the exact same path associated with your WebView2.  
+        
+1.  Run Code  
+    *   Select the appropriate build flavor and runtime environment and then run the local windows debugger by clicking the green play button.
+
+        :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Code Run" lightbox="/media/run.png":::
+            Visual Studio Code Run  
+        :::image-end:::   
+1.  View Debug Console  
+    *   The application will run and the debugger will connect after the first webview2 is created.  Any pending debug output will be displayed.  
+
+                :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/console.png":::
+            Visual Studio Code Debug Output  
+        :::image-end:::
+
+        > [!NOTE]
+        > This method of debugging is currently restricted to Win32 applications and Office add-ins.  
+        
+## Visual Studio Code  
 
 You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
 
-To Debug, complete the following actions.  	
+
+There are 5 basic steps for debugging within VSCode:
+
+1. **Install the debug adapter**
+    1. Navigate to VSCode's Extensions
+    1. Search for JavaScript Debugger (shown in screenshot)
+    1. Install any version of the adapter later than 2020.6.208
+    
+        :::image type="complex" source="./media/jsdebugger.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/jsdebugger.png":::
+            Visual Studio Code Debug Output  
+        :::image-end:::
+    1. Navigate to VSCode's Settings Tab > Extensions > JavaScript Debugger
+    1. Ensure the "Use the new in-preview JavaScript debugger for Node.js and Chrome." box is checked.
+    
+        :::image type="complex" source="./media/previewbox.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/previewbox.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+1. **Configure the debug adapter**
+    1. Select the Run tab on the left side of VS Code.
+    
+        :::image type="complex" source="./media/runbutton.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/runbutton.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+    1. Within the dropdown menu select a project to run
+    
+        :::image type="complex" source="./media/scenario.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/scenario.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+    1. Create Launch.json file with the following metadata: (This step is required to debug a WebView Control.)
+    
+        ```csharp
+        {
+            "name": "Scenario 1: Script debugging (first) (old adapter)",  
+            "type": "edge",  
+            "port": 9222, // Optional defaults to 9222  
+            "request": "launch", // optionally “attach”  
+            "runtimeExecutable": "E:/YourPath/YourApplication.exe",  
+            "env": {  
+                    // customize for your build location if needed  
+                    "Path": "%path%;e:/YourNeededPath; "  
+            }  
+            "useWebView": true, // optionally “advanced”  
+            //"urlFilter": "*DebugTrigger", // Only used when useWebView == “Advanced”  
+        } 
+        ```  
+
+1. **Set breakpoints**
+    1. Open the file you want to debug in VSCode.  And then set the breakpoint (select the line and press F9, or click the breakpoint column in the editor).  
+
+        :::image type="complex" source="./media/breakpointvs.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/breakpointvs.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+    > [!NOTE]
+        >  VSCode does not do source mapping you so MUST ensure you have opened and set breakpoints in the same file path as the WebView will be using.  If the paths are not exact VSCode can’t resolve the breakpoint. 
+1. **Run code**
+
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/runvs.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+1. **View Results**
+
+        :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/resultsvs.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+For a list of other JavaScript Debugging features in Visual Studio Code, visit [this](https://github.com/microsoft/vscode-js-debug/#whats-new)
+
+<!--todo:  add See also heading  -->  
 
 1.  Set Breakpoints  	
     *   Open the script file and set the breakpoint where you want it.  	
