@@ -24,7 +24,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
    CSS grid debugging features
 :::image-end:::  
 
-These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn].  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
+These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
 Chromium issue [#1047356][CR1047356]  
 
@@ -32,7 +32,7 @@ Chromium issue [#1047356][CR1047356]
 
 ### Edit and Replay requests with the Network Console  
 
-You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  [Follow these steps in our documentation][DevtoolsExperimentalFeaturesTurnOn] to turn on the **Enable Network Console** experiment.  Open the contextual menu (right-click) in the [Network Log][DevtoolsNetworkIndexLogActivity] and select **Edit and Replay**.  
+You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  Open the contextual menu (right-click) in the [Network Log][DevtoolsNetworkIndexLogActivity] and select **Edit and Replay**.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    **Edit and Replay** a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**
