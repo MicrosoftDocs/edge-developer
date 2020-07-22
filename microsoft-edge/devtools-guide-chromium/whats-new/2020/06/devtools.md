@@ -16,11 +16,49 @@ The following sections are a list of announcements you may have missed from the 
 
 ---  
 
+&nbsp;  
+
+---  
+
+**thicker image direct figure**  
+
+### CSS grid debugging features  
+
+:::image type="complex" source="../../media/includes/experimental-tag-20px.msft.png" alt-text="Experimental feature":::
+   Experimental feature
+:::image-end:::  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->  
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+---  
+
+&nbsp;  
+
+---  
+
+**thinner image direct figure**  
+
+### CSS grid debugging features  
+
+:::image type="complex" source="../../media/includes/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
+   Experimental feature
+:::image-end:::  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+---  
+
+&nbsp;  
+
 ---  
 
 **thicker version of include**  
 
-### CSS grid debugging features
+### CSS grid debugging features  
 
 [!INCLUDE [Experimental feature](../../includes/experimental-note.md)]  
 
@@ -28,25 +66,31 @@ The following sections are a list of announcements you may have missed from the 
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
-:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-   CSS grid debugging features
-:::image-end:::  
-
-These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
-
-Chromium issue [#1047356][CR1047356]  
-
-<!--todo: edit pass delay - start -  -->
-
 ---  
+
+&nbsp;  
 
 ---  
 
 **thinner version of include**  
 
-### CSS grid debugging features
+### CSS grid debugging features  
 
 [!INCLUDE [Experimental feature](../../includes/experimental-note-thin.md)]  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+---  
+
+&nbsp;  
+
+---  
+
+**original**  
+
+### CSS grid debugging features  
 
 <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
 
@@ -60,11 +104,13 @@ These are experimental features.  To enable the experiment, see [Turn on experim
 
 Chromium issue [#1047356][CR1047356]  
 
+---  
+
+&nbsp;  
+
+---  
+
 <!--todo: edit pass delay - start -  -->
-
----  
-
----  
 
 ### Edit and Replay requests with the Network Console  
 
