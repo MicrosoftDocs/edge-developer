@@ -25,7 +25,7 @@ The following sections are a list of announcements you may have missed from the 
 ### CSS grid debugging features  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-20px.msft.png" alt-text="Experimental feature":::
-   Experimental feature
+   Experimental feature  
 :::image-end:::  
 
 <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->  
@@ -45,7 +45,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 ### CSS grid debugging features  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
-   Experimental feature
+   Experimental feature  
 :::image-end:::  
 
 <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
@@ -53,6 +53,60 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
 **End: thinner image direct figure**  
+
+---  
+
+&nbsp;  
+
+---  
+
+**Begin: thicker image direct figure staggered 1/3 columns**  
+
+### CSS grid debugging features  
+
+:::row:::
+   :::column span="1":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="2":::
+      :::image type="complex" source="../../media/2020/06/experimental-tag-20px.msft.png" alt-text="Experimental feature":::
+         Experimental feature  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->  
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+**End: thicker image direct figure staggered 1/3 columns**  
+
+---  
+
+&nbsp;  
+
+---  
+
+**Begin: thinner image direct figure staggered 1/3 columns**  
+
+### CSS grid debugging features  
+
+:::row:::
+   :::column span="1":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="2":::
+      :::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
+         Experimental feature  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+**End: thinner image direct figure staggered 1/3 columns**  
 
 ---  
 
