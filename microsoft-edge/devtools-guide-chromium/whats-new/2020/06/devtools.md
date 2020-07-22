@@ -26,7 +26,9 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
    CSS grid debugging features
 :::image-end:::  
 
-These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
+> [!NOTE]
+> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
+> To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
 Chromium issue [#1047356][CR1047356]  
 
