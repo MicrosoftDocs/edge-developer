@@ -24,7 +24,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ### CSS grid debugging features  
 
-:::image type="complex" source="../../media/includes/experimental-tag-20px.msft.png" alt-text="Experimental feature":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-20px.msft.png" alt-text="Experimental feature":::
    Experimental feature
 :::image-end:::  
 
@@ -44,7 +44,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 ### CSS grid debugging features  
 
-:::image type="complex" source="../../media/includes/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
+:::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
    Experimental feature
 :::image-end:::  
 
