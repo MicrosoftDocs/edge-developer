@@ -139,10 +139,6 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
    :::column-end:::
 :::row-end:::  
 
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-
 **End: thinner image direct figure staggered 1/3 columns text on left**  
 
 ---  
