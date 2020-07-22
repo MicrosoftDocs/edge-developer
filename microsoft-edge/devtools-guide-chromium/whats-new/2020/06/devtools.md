@@ -20,7 +20,7 @@ The following sections are a list of announcements you may have missed from the 
    Experimental feature  
 :::image-end:::  
 
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
 :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
    CSS grid debugging features
@@ -28,11 +28,10 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 > [!NOTE]
 > To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
+> 
 > To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
 Chromium issue [#1047356][CR1047356]  
-
-<!--todo: edit pass delay - start -  -->
 
 ### Edit and Replay requests with the Network Console  
 
@@ -57,11 +56,12 @@ You may also use the **Network Console** to create and send HTTP requests direct
 > [!TIP]
 > To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).  
 
-This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.  
+> [!NOTE]
+> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  
+> 
+> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.  
 
 Chromium issue [#1093687][CR1093687]  
-
-<!--todo: edit pass delay - end -  -->
 
 ### Service worker respondWith events in the Timing tab  
 
@@ -85,13 +85,16 @@ Chromium issue [#1066579][CR1066579]
    Experimental feature  
 :::image-end:::  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  This experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You are now able to see the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint feedback in the Issues panel  
 :::image-end:::  
 
-This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.  Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.  
+> [!NOTE]
+> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.  
+> 
+> Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.  
 
 Chromium issue [#1070378][CR1070378]  
 
@@ -101,13 +104,14 @@ Chromium issue [#1070378][CR1070378]
    Experimental feature  
 :::image-end:::  
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  This feature allows you to customize your DevTools layout by moving tools between the top and bottom panels.  
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.  
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    Moving tabs between panels  
 :::image-end:::  
 
-This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  
+> [!NOTE]
+> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  
 
 Chromium issue [#897944][CR897944]  
 
