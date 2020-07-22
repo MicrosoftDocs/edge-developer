@@ -15,9 +15,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 WebView2 depends on Microsoft Edge to function.  Each WebView2 SDK requires that a minimum browser version is installed.  The minimum version is reflected in the package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install Microsoft Edge with a build number of 488 or later.  The browser version is also specified in the WebView2 [Release Notes][Releasenotes].  For more information on the latest releases of the browser, see [Browser Channels][DeployedgeChannels].  
 
 > [!NOTE]
-> WebView2 is currently in preview.  While the WebView team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed since newer versions of the browser may not support older SDK versions.  If there are breaking changes between browser versions and SDKs, the WebView team specifies the changes in the [release notes][Releasenotes].  
+> WebView2 is currently in preview.  While the WebView team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed because newer versions of the browser may not support previous SDK versions.  If there are breaking changes between browser versions and SDKs, we specify the changes in the [Release Notes][Releasenotes].  
 
-In the future, the  WebView team plans to change the distribution model for WebView2 applications.  For more information, see see [Evergreen distribution mode][DistributionEvergreenMode].  
+In the future, we plan to change the distribution model for WebView2 applications.  For more information, see [Evergreen distribution mode][DistributionEvergreenMode].  
  
 ## Release and pre-release package  
 
@@ -32,7 +32,7 @@ In preview, the pre-release package contains the following components.
 
 ## Experimental APIs  
 
-The WebView Team is testing APIs that represent future functionality named Experimental APIs.  The Experimental APIs are marked as `experimental` in the SDK.  Some Experimental APIs may ship as fully stable APIs in the release package.  You should expect all experimental APIs to change before release.  Please evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].   
+We are testing experimental APIs that may represent future functionality.  The experimental APIs are marked as `experimental` in the SDK.  Experimental APIs may ship as fully stable APIs in the release package.  You should expect all experimental APIs to change before release.  Please evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].   
 
 > [!CAUTION]
 > Avoid using the experimental APIs in production applications.  
