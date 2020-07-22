@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -14,7 +14,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow Microsoft Edge on Twitter][EdgeDevToolsTwitterAccount].  
 
+---  
+
+---  
+
+**thicker version of include**  
+
 ### CSS grid debugging features
+
+[!INCLUDE [Experimental feature](../../includes/experimental-note.md)]  
 
 <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
 
@@ -29,6 +37,34 @@ These are experimental features.  To enable the experiment, see [Turn on experim
 Chromium issue [#1047356][CR1047356]  
 
 <!--todo: edit pass delay - start -  -->
+
+---  
+
+---  
+
+**thinner version of include**  
+
+### CSS grid debugging features
+
+[!INCLUDE [Experimental feature](../../includes/experimental-note-thin.md)]  
+
+<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
+
+:::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
+   CSS grid debugging features
+:::image-end:::  
+
+These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
+
+Chromium issue [#1047356][CR1047356]  
+
+<!--todo: edit pass delay - start -  -->
+
+---  
+
+---  
 
 ### Edit and Replay requests with the Network Console  
 
