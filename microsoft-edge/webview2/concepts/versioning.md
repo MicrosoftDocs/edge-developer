@@ -37,7 +37,7 @@ The WebView Team is testing APIs that represent future functionality named Exper
 > [!CAUTION]
 > Avoid using the experimental APIs in production applications.  
 
-### Roadmap  
+## Roadmap  
 
 After WebView2 reaches a stable general available state, the release package contains all of the stable, supported Win32 C/C++ and .NET APIs.  The pre-release package contains experimental APIs that are subject to change based upon developer feedback and shared insights.  
 
