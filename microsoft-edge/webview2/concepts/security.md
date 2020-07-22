@@ -23,7 +23,7 @@ The [WebView2 control][Webview2Main] allows developers to host web content in th
     *   Set `IsWebMessageEnabled` to `false`, if you do not expect the web content to post web messages to your native application.  
     *   Set `IsScriptEnabled` to `false`, if you do not expect the web content to run scripts \(for example, when showing static html content\).  
     *   Set `AreDefaultScriptDialogsEnabled` to `false`, if you do not expect the web content to show `alert` or `prompt` dialog boxes.  
-1.	In the following steps, use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page  
+1.	In the following steps, use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page.  
     1.	To prevent your application from navigating to certain pages, use the events to check and then block page or frame navigation.  
     1.	When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209538Icorewebview2settings] or [CoreWebView2Settings (.NET)][Webview2ReferenceWin3209538MicrosoftWebWebview2CoreCorewebview2settings] as previously described.  
 1.  When navigating to a new document, use the `ContentLoading` event to remove exposed host objects using `RemoveHostObjectFromScript`.  
