@@ -14,177 +14,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow Microsoft Edge on Twitter][EdgeDevToolsTwitterAccount].  
 
----  
-
-&nbsp;  
-
----  
-
-**Begin: 14px image direct figure**  
-
 ### CSS grid debugging features  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
    Experimental feature  
 :::image-end:::  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->  
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-
-**End: 14px image direct figure**  
-
----  
-
-&nbsp;  
-
----  
-
-**Begin: 15px image direct figure**  
-
-### CSS grid debugging features  
-
-:::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
-   Experimental feature  
-:::image-end:::  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-
-**End: 16px image direct figure**  
-
----  
-
-&nbsp;  
-
----  
-
-**Begin: 14px image direct figure staggered 1/3 columns**  
-
-### CSS grid debugging features  
-
-:::row:::
-   :::column span="1":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="2":::
-      :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
-         Experimental feature  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->  
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-
-**End: 14px image direct figure staggered 1/3 columns**  
-
----  
-
-&nbsp;  
-
----  
-
-**Begin: 16px image direct figure staggered 1/3 columns**  
-
-### CSS grid debugging features  
-
-:::row:::
-   :::column span="1":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="2":::
-      :::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
-         Experimental feature  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-
-**End: 16px image direct figure staggered 1/3 columns**  
-
----  
-
-&nbsp;  
-
----  
-
-**Begin: 14px image direct figure staggered 1/3 columns text on left**  
-
-### CSS grid debugging features  
-
-:::row:::
-   :::column span="1":::
-      :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
-         Experimental feature  
-      :::image-end:::  
-   :::column-end:::  
-   :::column span="2":::
-      <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-      
-      The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-      
-      :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-         CSS grid debugging features
-      :::image-end:::  
-      
-      These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
-      
-      Chromium issue [#1047356][CR1047356]  
-   :::column-end:::
-:::row-end:::  
-
-**End: 14px image direct figure staggered 1/3 columns text on left**  
-
----  
-
-&nbsp;  
-
----  
-
-**Begin: 16px image direct figure staggered 1/3 columns text on left**  
-
-### CSS grid debugging features  
-
-:::row:::
-   :::column span="1":::
-      :::image type="complex" source="../../media/2020/06/experimental-tag-16px.msft.png" alt-text="Experimental feature":::
-         Experimental feature  
-      :::image-end:::  
-   :::column-end:::  
-   :::column span="2":::
-      <!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
-      
-      The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
-      
-      :::image type="complex" source="../../media/2020/06/experiments-grid.msft.png" alt-text="CSS grid debugging features" lightbox="../../media/2020/06/experiments-grid.msft.png":::
-         CSS grid debugging features
-      :::image-end:::  
-      
-      These are experimental features.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
-      
-      Chromium issue [#1047356][CR1047356]  
-   :::column-end:::
-:::row-end:::  
-
-**End: 16px image direct figure staggered 1/3 columns text on left**  
-
----  
-
-&nbsp;  
-
----  
-
-**original**  
-
-### CSS grid debugging features  
-
-<!--add something that looks like metadata to indicate that this is an experimental feature, make a piece of text look like it's highlighted. Inline style like bold, have background-color. Most people don't read, we want it to stand out. -->
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  With these features enabled, you are able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.  
 
@@ -196,32 +30,32 @@ These are experimental features.  To enable the experiment, see [Turn on experim
 
 Chromium issue [#1047356][CR1047356]  
 
----  
-
-&nbsp;  
-
----  
-
 <!--todo: edit pass delay - start -  -->
 
 ### Edit and Replay requests with the Network Console  
 
-You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  Open the contextual menu (right-click) in the [Network Log][DevtoolsNetworkIndexLogActivity] and select **Edit and Replay**.  
-
-:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
-   **Edit and Replay** a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
+   Experimental feature  
 :::image-end:::  
 
-A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  Edit the request if needed and click **Send** to see the response returned from the server.  
+You are now able to Edit and Replay requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  
 
-You may also use the **Network Console** to create and send HTTP requests directly from the DevTools!  
+:::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
+   Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**  
+:::image-end:::  
+
+A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To see the response returned from the server, edit the request if needed, and select **Send**.  
+
+You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="The Network Console panel" lightbox="../../media/2020/06/experiments-network-console.msft.png":::
-   The **Network Console** panel
+   The **Network Console** panel  
 :::image-end:::  
 
 > [!TIP]
-> If you want to see **Network Console** in the main \(top\) panel instead of in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], check out [moving tools between panels](#move-tools-between-panels).
+> To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).  
+
+This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.  
 
 Chromium issue [#1093687][CR1093687]  
 
@@ -232,10 +66,10 @@ Chromium issue [#1093687][CR1093687]
 The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="The respondWith service worker event in the Timing tab of the Network panel" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   The `respondWith` service worker event in the **Timing** tab of the **Network** panel
+   The `respondWith` service worker event in the **Timing** tab of the **Network** panel  
 :::image-end:::  
 
-Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.
+Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to see additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
    Expand **Response received** to see additional information from the `fetch` response  
@@ -244,6 +78,10 @@ Expand **Response received** to see additional information from the `fetch` resp
 Chromium issue [#1066579][CR1066579]  
 
 ### webhint feedback in the Issues panel  
+
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
+   Experimental feature  
+:::image-end:::  
 
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  This experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  
 
@@ -255,7 +93,11 @@ This is an experimental feature.  To enable the experiment, see [Turn on experim
 
 Chromium issue [#1070378][CR1070378]  
 
-### Move tools between panels
+### Move tools between panels  
+
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
+   Experimental feature  
+:::image-end:::  
 
 Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  This feature allows you to customize your DevTools layout by moving tools between the top and bottom panels.  
 
@@ -265,7 +107,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 This is an experimental feature.  To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  
 
-Chromium issue [#897944][CR897944]
+Chromium issue [#897944][CR897944]  
 
 ### Improved Initiator tooltip in the Network panel  
 
