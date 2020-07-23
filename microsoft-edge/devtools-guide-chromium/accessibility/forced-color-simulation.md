@@ -26,7 +26,7 @@ The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColo
 ```  
 
 > [!IMPORTANT]
-> You may be tempted to define your own settings for **High Contrast Mode**, but you should remember that each user must be able to define the setting exactly as needed.  Instead of defining your own colors, you may use the [CSS System Color keywords][CsswgDraftsColorsSystem].  
+> While defining your own settings for High Contrast Mode is allowed, we recommend using the colors defined in [CSS System Color keywords][CsswgDraftsColorsSystem].  
 
 ## Navigate to the Rendering Tools  
 
