@@ -1,13 +1,14 @@
 ---
 description: Reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
-title: Page Domain - DevTools Protocol Version 0.2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+title: Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
-# Page
+# Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)  
+
 Actions and events related to the inspected page belong to the page domain.
 
 | | |

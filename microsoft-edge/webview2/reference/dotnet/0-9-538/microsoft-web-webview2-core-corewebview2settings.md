@@ -1,13 +1,13 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
+title: Microsoft.Web.WebView2.Core.CoreWebView2Settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms, app, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, Microsoft.Web.WebView2.Core.CoreWebView2Settings
 ---
 
 # Microsoft.Web.WebView2.Core.CoreWebView2Settings class 
