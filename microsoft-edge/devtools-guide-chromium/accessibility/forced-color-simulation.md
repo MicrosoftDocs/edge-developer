@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Windows and other operating systems \(OSs\) contain a [setting that allows users to show the interface with a set of reduced colors][WindowsHighContrastMode].  The setting may be either pre-set color schemes or defined by the user.  The setting helps people with several needs including those with limited vision, suffering from migraines, suffering from [Irlen Syndrome][WikiIrlenSyndrome], or living with [Dyslexia][WikiDyslexia].  
 
-The exact numbers are not available, but roughly 4% of all Windows users \(roughly 55 million people\) have display settings using the reduced colors setting, commonly known as **High Contrast Mode**.  According to the [2018 Survey of Users with low Vision][WebaimProjectsLowvisionsurvey2Contrastmode] provided by WebAIM, more than half of low vision users use **High Contrast Mode**.  
+The exact numbers are not available, but roughly 4% of all Windows users use display settings with reduced color settings.  According to the [2018 Survey of Users with low Vision][WebaimProjectsLowvisionsurvey2Contrastmode] provided by WebAIM, more than half of low vision users use **High Contrast Mode**.  
 
 To make it easier for you \(the developer\) to test how your products appear in **High Contrast Mode**, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] include a way to simulate it without changing your Operating System settings.  The simulation also helps users of other OSs that do not have the same functionality and therefore are not able to test it.  
 
