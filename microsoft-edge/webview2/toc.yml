@@ -18,8 +18,8 @@
       href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
-    - name: Data types
-      href: concepts/data-types.md
+    - name: Win32 API conventions
+      href: concepts/win32-api-conventions.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
