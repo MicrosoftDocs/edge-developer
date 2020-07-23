@@ -17,7 +17,7 @@ The exact numbers are not available, but roughly 4% of all Windows users \(rough
 
 To make it easier for you \(the developer\) to test how your products appear in **High Contrast Mode**, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] include a way to simulate it without changing your Operating System settings.  The simulation also helps users of other OSs that do not have the same functionality and therefore are not able to test it.  
 
-The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColors] also defines a programmatic way for you to react to the setting.  
+The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColors] also defines a programmatic way for you to cater for scenarios when the setting is active.  
 
 ```css
 @media (forced-colors: active) {
