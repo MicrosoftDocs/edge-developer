@@ -71,7 +71,7 @@ The **Rendering** menu appears in the drawer.
 1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then select `Enter`.  
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turn on High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
+          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turn on high contrast simulation using the command menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
               Turn on forced colors simulation using the **Command** Menu  
           :::image-end:::  
        :::column-end:::
