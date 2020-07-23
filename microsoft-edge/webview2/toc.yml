@@ -20,6 +20,8 @@
       href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
+    - name: Navigation events
+      href: concepts/navigation-events.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
