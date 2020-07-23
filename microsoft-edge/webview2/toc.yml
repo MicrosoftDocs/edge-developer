@@ -22,6 +22,8 @@
       href: concepts/versioning.md
     - name: Process model
       href: concepts/process-model.md
+    - name: Threading model
+      href: concepts/threading-model.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
