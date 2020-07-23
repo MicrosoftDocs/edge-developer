@@ -47,8 +47,8 @@ highlightedContent:
     # Card
     - title: "Discover web developer features"
       itemType: overview
-      url: /microsoft-edge/developer/index
-      # url: /microsoft-edge/index#microsoft-edge-for-developers #alt-link  
+      # url: /microsoft-edge/developer/index #alt-link
+      url: /microsoft-edge/index#microsoft-edge-for-developers
 
 # conceptualContent section (optional)
 conceptualContent:
