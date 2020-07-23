@@ -81,33 +81,31 @@ When you build a Progressive Web App targeting web standard APIs, your applicati
 > [!IMPORTANT]
 > To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, see the [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
+> [!NOTE]
+> Check out the [Build 2020 PWA session][BuildVideo] for an overview of PWA benefits, upcoming features and short demos. 
+
 ## Requirements  
 
 To run as a PWA, your server-hosted web app should include following minimum requirements.  
 
-|  | Requirement | Details | 
-|:--- |:--- |:--- |  
-| X | [HTTPS][WikiHttps] | Protect your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  |  
-| X | [Service Workers][MDNServiceWorkerApi] | Use Service Worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  |  
-| X | [Web App Manifest][MDNWebAppManifest] | Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\), so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  |  
+| Requirement | Details | 
+|:--- |:--- |  
+| [HTTPS][WikiHttps] | Protect your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  |  
+| [Service Workers][MDNServiceWorkerApi] | Use Service Worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and  page load perf optimizations.  |  
+| [Web App Manifest][MDNWebAppManifest] | Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\), so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  |  
 
 To be a great PWA, your app must also meet the following requirements.  
 
-|  | Requirement | Details | 
-|:--- |:--- |:--- |  
-| X | [Cross-browser compatibility][MDNCrossBrowserTesting] | Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  |  
-| X | [Responsive design][WikiResponsiveWebDesign] | Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout], [flexbox][MDNCssFlexibleBoxLayout], CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout] , [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  |  
-| X | [Deep linking][WikiDeepLinking] | Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  |  
-| X | [Best practices][Webhint] | Use code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  |  
-| X | [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
+| Requirement | Details | 
+|:--- |:--- |  
+| [Cross-browser compatibility][MDNCrossBrowserTesting] | Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  |  
+| [Responsive design][WikiResponsiveWebDesign] | Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout], [flexbox][MDNCssFlexibleBoxLayout], CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout] , [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages] to adapt your UX to your user's device.  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  |  
+| [Deep linking][WikiDeepLinking] | Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  |  
+| [Best practices][Webhint] | Use code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  |  
+| [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
 
 If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, head to the [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore] documentation.  
-
-## Current availability  
-
-Browser engine support for Progressive Web App requests for a number of architectural components, the most significant being the networking infrastructure underlying the [Fetch API][MDNFetchApi].  
-
-For Microsoft Edge \(Chromium\), the browser platform includes full support for these features that work across devices where Microsoft Edge \(Chromium\) is supported.  
+  
 
 <!-- image links -->  
 
@@ -176,6 +174,8 @@ For Microsoft Edge \(Chromium\), the browser platform includes full support for 
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"  
+
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA video"
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 
