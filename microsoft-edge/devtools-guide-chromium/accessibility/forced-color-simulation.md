@@ -68,7 +68,7 @@ The **Rendering** menu appears in the drawer.
 ## Use the Command Menu  
 
 1.  [Open the Command Menu][DevtoolsGuideChromiumCommandMenuIndexOpen].  
-1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then press `Enter`.  
+1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then select `Enter`.  
     :::row:::
        :::column span="":::
           :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turn on High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
