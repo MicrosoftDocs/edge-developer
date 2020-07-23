@@ -30,15 +30,15 @@ Start with a basic desktop project containing a single main window.
 
 1. Open **Visual Studio.**
 
-2. Choose **Windows Forms .NET Framework App** and then choose **Next**.
+1. Choose **Windows Forms .NET Framework App** and then choose **Next**.
 
     ![newproject](./media/winforms-newproject.png)
 
-3. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later.  
+1. Enter values for **Project name** and **Location**.  Select **.NET Framework 4.6.2** or later.  
 
     ![startproject](./media/winforms-startproj.png)
 
-4. Choose **Create** to create your project.
+1. Choose **Create** to create your project.
 
 ## Step 2 - Install WebView2 SDK
 
@@ -50,10 +50,10 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
        Nuget
     :::image-end:::
 
-2. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  
+1. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  
 
-> [!IMPORTANT]
-> Ensure you check **Include prerelease**, select a prerelease package in **Version**, and then choose **Install**.  
+    > [!IMPORTANT]
+    > Ensure you check **Include prerelease**, select a prerelease package in **Version**, and then choose **Install**.  
 
     ![nuget](./media/installnuget.png)
 
@@ -66,15 +66,15 @@ You are all set to start developing applications using the WebView2 API.  Select
 Next add a WebView to your application.  
 
 1. Open the **Windows Forms Designer**.  
-2. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App
+1. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App
 
     ![toolbox](./media/winforms-toolbox.png)
 
-3. Change the `Name` property to `webView`.
+1. Change the `Name` property to `webView`.
 
     ![toolbox](./media/winforms-properties.png)
 
-4. The `Source` property sets the initial URI displayed in the WebView2 control. Set the Source property to <https://www.microsoft.com>
+1. The `Source` property sets the initial URI displayed in the WebView2 control. Set the Source property to <https://www.microsoft.com>
 
     ![toolbox](./media/winforms-source.png)
 
@@ -90,14 +90,14 @@ Select `F5` to build and run your project.  Confirm that your WebView2 control d
 Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.
 
 1. In the **Windows Forms Designer** open the **Toolbox**
-2. Drag and Drop a **TextBox** into the Windows Forms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
-3. Drag and Drop a **Button** into the Windows Forms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
+1. Drag and Drop a **TextBox** into the Windows Forms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
+1. Drag and Drop a **Button** into the Windows Forms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
 
-The app should look like the following in the designer:
+    The app should look like the following in the designer:
+    
+    ![designer](./media/winforms-designer.png)
 
-![designer](./media/winforms-designer.png)
-
-4. In **Form1.cs** define `Form_Resize` to keep the controls in place when the App Window is resized.
+1. In **Form1.cs** define `Form_Resize` to keep the controls in place when the App Window is resized.
 
 ```csharp
 public Form1()
@@ -128,7 +128,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     using Microsoft.Web.WebView2.Core;
     ```
 
-2. In the **Windows Forms Designer**, double-click on the `Go!` button to create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar.
+1. In the **Windows Forms Designer**, double-click on the `Go!` button to create the `goButton_Click` method in `Form1.cs`. Copy and paste the following snippet inside the function. Now, the `goButton_Click` function navigates the WebView to the URL entered in the address bar.
 
     ```csharp
     private void goButton_Click(object sender, EventArgs e)
@@ -248,7 +248,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
 
-2. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In `Form1.cs` update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
+1. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In `Form1.cs` update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
 
     ```csharp
     async void InitializeAsync()
@@ -265,10 +265,10 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
 
-3. In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host injects a script in the web content to:  
+1. In order for the WebView to send and respond to the web message, after `CoreWebView2` is initialized, the host injects a script in the web content to:  
 
     1. Send the URL to the host using `postMessage`.
-    2. Register an event handler to print a message sent from the host.  
+    1. Register an event handler to print a message sent from the host.  
 
 In `Form1.cs`, update `InitializeAsync` as shown in the following code snippet.  
 
