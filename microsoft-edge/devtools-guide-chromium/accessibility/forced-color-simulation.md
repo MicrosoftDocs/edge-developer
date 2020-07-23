@@ -60,7 +60,7 @@ The **Rendering** menu appears in the drawer.
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png" alt-text="Display a web site in high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png":::
-             Display in simulated High Contrast  
+             Display a web site in high contrast simulation  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
