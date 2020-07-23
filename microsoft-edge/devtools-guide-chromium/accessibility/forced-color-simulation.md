@@ -72,7 +72,7 @@ The **Rendering** menu appears in the drawer.
     :::row:::
        :::column span="":::
           :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turn on high contrast simulation using the command menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
-              Turn on forced colors simulation using the **Command** Menu  
+              Turn on high contrast simulation using the command menu  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
