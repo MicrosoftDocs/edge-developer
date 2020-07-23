@@ -93,7 +93,12 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 **Network Console** is the working title for an experimental component for Chromium-based DevTools for making synthetic network requests over HTTP.  You may use the **Network Console** experiment during the dev-test loop for web APIs.  The **Network Console** experiment is not feature-complete during the initial release.  Early availability during the dev-test loop enables you to receive rapid iterations, experiment in the open, and see your ideas for the **Network Console** implemented quickly.  
 
-Once you enable the experiment, restart your DevTools.  Open the **Network** pane, hover on the network request you are interested in changing and sending again, open the contextual menu \(right-click\), and choose **Edit and Replay**.  The **Network Console** opens and your network request information is pre-loaded for you to then edit and send.  
+After enabling the experiment, ensure you restart the DevTools. To use the Network Console:
+1.  Open the **Network** pane.
+1.  Find the network request that you want to change and resend.
+1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**. 
+1.  When the **Network Console** opens, edit the network request information.
+1.  Select **Send**.  
 
 :::image type="complex" source="./media/network-network-console.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.png":::
 Network Console in the Console drawer 
