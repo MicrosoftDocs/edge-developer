@@ -76,8 +76,8 @@ The **Rendering** menu appears in the drawer.
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turn off High Contrast simulation using the Command Menu" lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
-             Turn off forced colors simulation using the **Command** Menu  
+          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turn off high contrast simulation using the command menu" lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
+             Turn off high contrast simulation using the command menu  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
