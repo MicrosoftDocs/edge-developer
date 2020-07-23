@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/13/2020
+  ms.date: 07/23/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -39,7 +39,7 @@ highlightedContent:
     # Card
     - title: "Learn how to use Microsoft Edge"
       itemType: learn
-      url: https://support.microsoft.com/help/17171/microsoft-edge-get-to-know
+      url: https://support.microsoft.com/microsoft-edge?ocid=DMC-End-User-Support
     # Card
     - title: "Administer Microsoft Edge in the Enterprise"
       itemType: overview
@@ -268,13 +268,13 @@ additionalContent:
       # summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
-        - title: Community Support
-          summary: Get advice and answers from a community of experts via StackOverflow.
-          url: https://stackoverflow.com/questions/tagged/microsoft-edge+Microsoft-edge-extension
+        - title: Community Support on Microsoft Q&A
+          summary: Get advice and answers from community experts on Microsoft Q&A
+          url: /answers/topics/ms-edge.html
         # Card
         - title: Get no-cost help via App Assure
           summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix you apps and websites at no additional cost.  See offer details for eligibility requirements.
-          url: https://aka.ms/AppAssureEdge
+          url: /fasttrack/win-10-microsoft-edge
         # Card
         - title: Microsoft Support for Business
           summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
