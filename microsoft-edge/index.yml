@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 07/23/2020
+  ms.date: 07/24/2020
   localization_priority: Priority
 
 # highlightedContent section (optional)
@@ -47,8 +47,8 @@ highlightedContent:
     # Card
     - title: "Discover web developer features"
       itemType: overview
-      # url: /microsoft-edge/developer/index #alt-link
-      url: /microsoft-edge/index#microsoft-edge-for-developers
+      url: /microsoft-edge/developer/index
+      # url: /microsoft-edge/index#microsoft-edge-for-developers #alt-link
 
 # conceptualContent section (optional)
 conceptualContent:
