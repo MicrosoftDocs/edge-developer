@@ -47,7 +47,7 @@ To simulate what your web product looks like in High Contrast mode, open the [Re
        The forced colors menu on the **Rendering** drawer  
     :::image-end:::  
     
-1.  Choose to either `No emulation` or `forced-colors: active`.  
+1.  Choose either `No emulation` or `forced-colors: active`.  
     
 1.  The current page in the main window now displays the selected simulation.  
     
