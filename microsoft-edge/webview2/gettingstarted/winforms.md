@@ -3,7 +3,7 @@ description: Host web content in your Windows Forms app with the Microsoft Edge 
 title: Microsoft Edge WebView 2 for Windows Forms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 07/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -18,11 +18,11 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you installed the following list of pre-requisites before proceeding:  
 
-* [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download/) installed on Windows 10, Windows 8.1, or Windows 7. 
-* [Visual Studio](https://visualstudio.microsoft.com/) 2017 or later.
+* [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7. 
+* [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.
 
 > [!NOTE]
-> WebView2 does not currently support the .NET Core 3.0's [designer (preview)](https://visualstudio.microsoft.com/vs/preview/).
+> WebView2 does not currently support the .NET Core 3.0's [designer (preview)](https://visualstudio.microsoft.com/vs/preview).
 
 ## Step 1 - Create a single window application
 
@@ -83,7 +83,7 @@ Select `F5` to build and run your project.  Confirm that your WebView2 control d
 ![hellowebview](./media/winforms-hellowebview.png)
 
 > [!NOTE]
-> If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+> If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 ## Step 4 - Handle Window Resize Events
 
