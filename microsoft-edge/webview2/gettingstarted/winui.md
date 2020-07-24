@@ -3,7 +3,7 @@ description:  Host web content in your WinUI app with the Microsoft Edge WebView
 title:  Microsoft Edge WebView2 for WinUI apps
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  07/20/2020
+ms.date:  07/23/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -187,7 +187,7 @@ Applications that host WebView2 controls listen for the following events that ar
 *   `NavigationCompleted`  
 > [!NOTE]
 > HTTP redirects raise multiple `NavigationStarting` events.  
-For more information, see [Navigation Events][Webviews2ReferenceWin3209488Icorewebview2NavigationEvents].  
+For more information, see [Navigation Events][Webviews2ConceptsNavigationEvents].  
 
 When errors occur, the following events are raised and may navigate to an error page.  
 
@@ -269,7 +269,7 @@ Help build a richer WebView2 experience by sharing your feedback.  Visit the Mic
 
 [Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webviews2ReferenceWin3209488Icorewebview2NavigationEvents]: ../reference/win32/0-9-488/icorewebview2.md#navigation-events "Navigation events - interface ICoreWebView2 | Microsoft Docs"  
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 [Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync - Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Package manifest schema reference for Windows 10 | Microsoft Docs"  
