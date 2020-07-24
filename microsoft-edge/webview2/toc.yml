@@ -16,12 +16,14 @@
       href: concepts/distribution.md
     - name: Managing User Data Folders
       href: concepts/userdatafolder.md
+    - name: Navigation events
+      href: concepts/navigation-events.md
     - name: Security Best Practices
       href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
-    - name: Navigation events
-      href: concepts/navigation-events.md
+    - name: Win32 API conventions
+      href: concepts/win32-api-conventions.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
