@@ -43,8 +43,8 @@ To simulate what your web product looks like in High Contrast mode, open the [Re
 The **Rendering** menu appears in the drawer.  
 
     
-    :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The Forced Colors menu on the Rendering drawer" lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
-       The **Forced Colors** menu on the **Rendering** drawer  
+    :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The forced colors menu on the Rendering drawer" lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
+       The forced colors menu on the **Rendering** drawer  
     :::image-end:::  
     
 1.  Choose to either `No emulation` or `forced-colors: active`.  
