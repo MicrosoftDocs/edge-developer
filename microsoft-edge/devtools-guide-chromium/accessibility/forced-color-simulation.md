@@ -40,7 +40,7 @@ To simulate what your web product looks like in High Contrast mode, open the [Re
        Open the **Rendering Tools**  
     :::image-end:::  
 
-The **Rendering** menu appears in the drawer.  
+1.  In **Rendering**, choose the drop down in **Emulate CSS media feature forced-colors**.  
 
     
     :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The forced colors menu on the Rendering drawer" lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
