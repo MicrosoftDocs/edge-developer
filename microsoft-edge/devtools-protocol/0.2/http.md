@@ -1,14 +1,14 @@
 ---
 description: Microsoft Edge DevTools Protocol Version 0.2 supports the following HTTP endpoints.
-title: Microsoft Edge DevTools Protocol Version 0.2 HTTP Endpoints
+title: Microsoft Edge DevTools Protocol Version 0.2 HTTP Endpoints (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
 
-# DevTools Protocol HTTP Endpoints
+# Microsoft Edge DevTools Protocol Version 0.2 HTTP Endpoints (EdgeHTML)  
 
 > [!NOTE]
 > Version 0.2 of the Microsoft Edge DevTools Protocol works only on the [Windows 10 October 2018 Update]() and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.

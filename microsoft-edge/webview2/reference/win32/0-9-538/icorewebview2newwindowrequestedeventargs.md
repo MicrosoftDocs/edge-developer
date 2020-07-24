@@ -1,13 +1,13 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
+title: WebView2 Win32 C++ ICoreWebView2NewWindowRequestedEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/16/2020
+ms.date: 07/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html, ICoreWebView2NewWindowRequestedEventArgs
 ---
 
 # interface ICoreWebView2NewWindowRequestedEventArgs 
@@ -47,7 +47,7 @@ IsUserInitiated is true when the new window request was initiated through a user
 
 > public HRESULT [get_IsUserInitiated](#get_isuserinitiated)(BOOL * isUserInitiated)
 
-WebView2 controls may display pop-up windows because the Pop-Up blocker is turned off. To block non-user initiated pop-up windows from being displayed, use `get_IsUserInitiated`.
+The Edge popup blocker is disabled for WebView so the app can use this flag to block non-user initiated popups.
 
 #### get_NewWindow 
 
@@ -84,3 +84,4 @@ Sets a WebView as a result of the NewWindowRequest.
 > public HRESULT [put_NewWindow](#put_newwindow)([ICoreWebView2](icorewebview2.md) * newWindow)
 
 The target webview should not be navigated. If the NewWindow is set, its top level window will return as the opened WindowProxy.
+

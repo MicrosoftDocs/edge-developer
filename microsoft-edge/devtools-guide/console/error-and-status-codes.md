@@ -4,12 +4,12 @@ description: Reference to common Console codes and suggested fixes
 title: DevTools - Console error and status codes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
 ms.custom: seodec18
-localization_priority: Priority
+ms.localizationpriority: high
 ---
 
 # Console error and status codes  

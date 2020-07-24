@@ -1,22 +1,23 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Win32 apps
+description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
+title: Microsoft.Web.WebView2.Core Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
+ms.date: 07/15/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms, app, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html
 ---
 
-# Reference (WebView2)  
+# Reference (WebView2 Core)  
 
 The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge \(Chromium\)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, see [Overview of Microsoft Edge WebView2](../../index.md)) and [Getting Started with WebView2](../../gettingstarted/win32.md).  [Microsoft.Web.WebView2.Core.CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md) is a great place to start learning the details of the API.  
 
 ## Microsoft.Web.WebView2.Core
 *   [Microsoft.Web.WebView2.Core](0-9-538/namespace-microsoft-web-webview2-core.md) namespace
 *   [CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md)
+*   [CoreWebView2CompositionController](0-9-538/microsoft-web-webview2-core-corewebview2compositioncontroller.md)
 *   [CoreWebView2Controller](0-9-538/microsoft-web-webview2-core-corewebview2controller.md)
 *   [CoreWebView2Deferral](0-9-538/microsoft-web-webview2-core-corewebview2deferral.md)
 *   [CoreWebView2DevToolsProtocolEventReceiver](0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md)
@@ -26,7 +27,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [CoreWebView2PhysicalKeyStatus](0-9-538/microsoft-web-webview2-core-corewebview2physicalkeystatus.md)
 *   [CoreWebView2PointerInfo](0-9-538/microsoft-web-webview2-core-corewebview2pointerinfo.md)
 *   [CoreWebView2Settings](0-9-538/microsoft-web-webview2-core-corewebview2settings.md)
-*   [CoreWebView2windowFeatures](0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md)
+*   [CoreWebView2WindowFeatures](0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md)
 *   [EdgeNotFoundException](0-9-538/microsoft-web-webview2-core-edgenotfoundexception.md)
 
 ### Event arguments
@@ -44,3 +45,4 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 *   [CoreWebView2SourceChangedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md)
 *   [CoreWebView2WebMessageReceivedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md)
 *   [CoreWebView2WebResourceRequestedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md)
+*   [CoreWebView2WebResourceResponseReceivedEventArgs](0-9-538/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md)

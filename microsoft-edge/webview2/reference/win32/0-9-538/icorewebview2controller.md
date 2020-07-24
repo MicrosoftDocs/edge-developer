@@ -1,13 +1,13 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
-title: Microsoft Edge WebView2 for Win32 apps
+description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
+title: WebView2 Win32 C++ ICoreWebView2Controller
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/05/2020
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html, ICoreWebView2Controller
 ---
 
 # interface ICoreWebView2Controller 
@@ -184,12 +184,12 @@ The event fires when the ZoomFactor property of the WebView changes. The event c
                 CHECK_FAILURE(sender->get_ZoomFactor(&zoomFactor));
 
                 std::wstring message = L"WebView2APISample (Zoom: " +
-                                       std::to_wstring(int(zoomFactor * 100)) + L"%)";
+                    std::to_wstring(int(zoomFactor * 100)) + L"%)";
                 SetWindowText(m_appWindow->GetMainWindow(), message.c_str());
                 return S_OK;
             })
-            .Get(),
-        &m_zoomFactorChangedToken));
+        .Get(),
+                &m_zoomFactorChangedToken));
 ```
 
 #### Close 
@@ -223,11 +223,11 @@ void AppWindow::CloseWebView(bool cleanupUserDataFolder)
         // developers specify userDataFolder during WebView environment
         // creation, they would need to pass in that explicit value here.
         // For more information about userDataFolder:
-        // https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#createwebview2environmentwithoptions
+        // https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#createcorewebview2environmentwithoptions
         WCHAR userDataFolder[MAX_PATH] = L"";
         // Obtain the absolute path for relative paths that include "./" or "../"
         _wfullpath(
-            userDataFolder, GetLocalPath(L"WebView2APISample.exe.WebView2").c_str(), MAX_PATH);
+            userDataFolder, GetLocalPath(L".WebView2", true).c_str(), MAX_PATH);
         std::wstring userDataFolderPath(userDataFolder);
 
         std::wstring message = L"Are you sure you want to clean up the user data folder at\n";
