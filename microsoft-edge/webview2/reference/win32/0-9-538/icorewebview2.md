@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 07/23/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -91,26 +91,6 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Error status values for web navigations.
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Enum for web resource request contexts.
-
-## Process model
-
-WebView2 uses the same process model as the Edge web browser. There is one Edge browser process per specified user data directory in a user session that will serve any WebView2 calling process that specifies that user data directory. This means one Edge browser process may be serving multiple calling processes and one calling process may be using multiple Edge browser processes.
-
-![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
-
-Off of a browser process there will be some number of renderer processes. These are created as necessary to service potentially multiple frames in different WebViews. The number of renderer processes varies based on the site isolation browser feature and the number of distinct disconnected origins rendered in associated WebViews.
-
-![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
-
-You can react to crashes and hangs in these browser and renderer processes using the ProcessFailure event.
-
-You can safely shutdown associated browser and renderer processes using the Close method.
-
-## Threading model
-
-The WebView2 must be created on a UI thread. Specifically a thread with a message pump. All callbacks will occur on that thread and calls into the WebView must be done on that thread. It is not safe to use the WebView from another thread.
-
-Callbacks including event handlers and completion handlers execute serially. That is, if you have an event handler running and begin a message loop no other event handlers or completion callbacks will begin executing reentrantly.
 
 ## Members
 
