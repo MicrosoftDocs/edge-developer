@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 WebView2 uses the same process model as the Microsoft Edge browser.  For more information about the browser process model, see [Browser Architecture - Inside look at modern web browser][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]. 
 
-One browser process is associated with the renderer processes and other utility processes as described in that article.  Additionally, in the case of WebView2, there are host app requesting processes using the WebView2.  
+One browser process is associated with the renderer processes and other utility processes as described in that article.  Additionally, in the case of WebView2, there are host app requesting processes using WebView2.  
 
 :::image type="complex" source="../media/process-model-1.png" alt-text="Process 1" lightbox="../media/process-model-1.png":::
    Process 1  
