@@ -26,7 +26,7 @@ One browser process is specified per user data folder in a user session that ser
    Process 2  
 :::image-end:::  
 
-A browser process has some number of associated renderer processes.  The browser processes are created as required to service potentially multiple frames in different instances of WebView2.  The number of renderer processes varies based on the site isolation browser feature and the number of distinct disconnected origins rendered in associated instances of WebView2.  The site isolation browser feature is described in the above article.  
+A browser process has some number of associated renderer processes.  The browser processes are created as required to service potentially multiple frames in different instances of WebView2.  The number of renderer processes varies based on the site isolation browser feature and the number of distinct disconnected origins rendered in associated instances of WebView2.  The site isolation browser feature is described in the previous content.  
 
 The `CoreWebView2Environment` represents a user data folder and browser process.  The `CoreWebView2` does not directly correspond to any one set of processes since various renderer processes are used by a WebView2 depending on site isolation as previously described.  
 
