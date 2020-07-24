@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow Microsoft Edge on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### CSS grid debugging features  
 
@@ -39,7 +39,7 @@ Chromium issue [#1047356][CR1047356]
    Experimental feature  
 :::image-end:::  
 
-You are now able to Edit and Replay requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  
+You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**  
@@ -85,7 +85,7 @@ Chromium issue [#1066579][CR1066579]
    Experimental feature  
 :::image-end:::  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You are now able to see the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint feedback in the Issues panel  
