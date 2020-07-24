@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,7 +39,7 @@ Chromium issue [#1047356][CR1047356]
    Experimental feature  
 :::image-end:::  
 
-You are now able to **Edit and Replay** requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  
+You are now able to use **Edit and Replay** on requests in the [Network Log][DevtoolsNetworkIndexLogActivity] using the **Network Console**.  
 
 :::image type="complex" source="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png" alt-text="Edit and Replay a request in the NetworkLog with the Network Console" lightbox="../../media/2020/06/experiments-network-console-edit-and-replay.msft.png":::
    Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**  
