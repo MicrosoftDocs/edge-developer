@@ -49,7 +49,7 @@ The **Rendering** menu appears in the drawer.
     
 1.  Choose to either `No emulation` or `forced-colors: active`.  
     
-1.  The main windows displays the simulation of your selected option applied to the current page.  
+1.  The current page in the main window now displays the selected simulation.  
     
     :::row:::
        :::column span="":::
