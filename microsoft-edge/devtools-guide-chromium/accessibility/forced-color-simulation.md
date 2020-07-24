@@ -54,7 +54,7 @@ To simulate what your web product looks like in High Contrast mode, open the [Re
     :::row:::
        :::column span="":::
           :::image type="complex" source="../media/accessibility-forced-colors-rendering-no-modification.msft.png" alt-text="Display a web site without high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-no-modification.msft.png":::
-             Display without simulated High Contrast  
+             Display a web site without high contrast simulation  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
