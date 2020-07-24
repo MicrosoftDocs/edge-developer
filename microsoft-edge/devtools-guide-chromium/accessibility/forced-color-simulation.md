@@ -21,7 +21,7 @@ The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColo
 
 ```css
 @media (forced-colors: active) {
-  /* Apply these overrides in high contrast mode */
+  /* Apply these overrides in high contrast mode. */
 }
 ```  
 
