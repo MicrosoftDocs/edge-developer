@@ -30,7 +30,7 @@ The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColo
 
 ## Use the Rendering Tools  
 
-To simulate what your web product looks like in forced color mode, open the [Rendering Tools][DevtoolsGuideChromiumRenderingTools].  
+To simulate what your web product looks like in High Contrast mode, open the [Rendering Tools][DevtoolsGuideChromiumRenderingTools].  
 
 1.  To open the **Rendering Tools**, select the `...` menu item in the toolbar  
 1.  Select `More tools`  
