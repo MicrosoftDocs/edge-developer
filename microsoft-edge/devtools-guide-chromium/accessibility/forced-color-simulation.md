@@ -36,8 +36,8 @@ To simulate what your web product looks like in High Contrast mode, open the [Re
 1.  Select `More tools`  
 1.  Select `Rendering`  
     
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Opening the **Rendering Tools**  
+    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Open the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+       Open the **Rendering Tools**  
     :::image-end:::  
 
 The **Rendering** menu appears in the drawer.  
