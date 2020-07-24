@@ -28,7 +28,7 @@ The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColo
 > [!IMPORTANT]
 > While defining your own settings for High Contrast Mode is allowed, we recommend using the colors defined in [CSS System Color keywords][CsswgDraftsColorsSystem].  
 
-## Navigate to the Rendering Tools  
+## Use the Rendering Tools  
 
 To simulate what your web product looks like in forced color mode, open the [Rendering Tools][DevtoolsGuideChromiumRenderingTools].  
 
