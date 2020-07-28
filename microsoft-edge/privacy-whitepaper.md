@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: browser
@@ -89,6 +89,10 @@ Crash dumps are sent to Microsoft and stored on secure Microsoft servers for up 
 To clear the crash diagnostic data stored locally from the file system on the device, go to `edge://crashes` and select the **Clear all** button.  
 
 To turn off crash diagnostic data collection on Windows 10, go to **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**.  For versions of Microsoft Edge on all other platforms, go to `edge://settings/privacy` and turn off the **Improve Microsoft products by sending crash reports and data about how you use the browser** setting.  The diagnostic data collection feature may also be turned off for enterprises through [group policies managed by your organization][DeployedgeEnterprisePrivacySettings].  
+
+## Developer tools
+
+Microsoft Edge Developer Tools provide tools for website debugging and testing. You can access Developer Tools through **Settings and more (…)** > **More tools** > **Developer tools**. When you turn on certain features in Developer Tools, Microsoft Edge will request modules from Microsoft servers and download them to your device. The request for the modules sent is over a secure HTTPS connection and contains a non-unique identifier representing the version of Microsoft Edge being used. Specific experiences that require this remote download include 3D View and the Elements tool Accessibility pane. Webhint integration requires a remote module that is automatically requested when Developer Tools is opened.
 
 ## Diagnostic data about how you use the browser  
 
@@ -233,7 +237,9 @@ Microsoft Edge downloads the list of sites from a location defined by the admini
 
 If your administrator turned on Enterprise Site Discovery, browsing history data is collected periodically to help administrators review the sites that users visit and ensure that any system upgrades continue to support those sites.  For more information about Enterprise Site Discovery in IE11, see [Collect data using Enterprise Site Discovery][InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery].  
 
-Internet Explorer browsing data is stored locally in Microsoft Edge and Internet Explorer.  To clear the browsing data, got to `edge://settings/privacy` and  select **Clear browsing data**.  
+Non-enterprise users on Windows devices can also access IE mode.  You can turn on IE mode by going to `edge://settings/defaultBrowser` and turning on Allow sites to be reloaded in Internet Explorer mode.  You can then open tabs in IE mode by going to **Settings and more (...)** > **More tools** > **Reload in Internet Explorer mode**.  When Allow sites to be reloaded in Internet Explorer mode is turned on in `edge://setttings/defaultBrowser`, Microsoft Edge will periodically request a list of unsupported sites from a Microsoft service.  This request is sent over HTTPS and does not contain any identifiers.   
+
+Internet Explorer browsing data is stored locally in Microsoft Edge and Internet Explorer.  To delete browsing data while browsing in IE mode, you must go to `edge://settings/privacy` and clear the data from both **Clear browsing data** and **Clear browsing data for Internet Explorer**.  
 
 ## Intrusive ads  
 
@@ -389,6 +395,12 @@ SmartScreen is turned on by default for Microsoft Edge.  To disable SmartScreen,
 
 Optionally, SmartScreen checks the URLs of files you download to see if any are categorized as potentially unwanted apps.  Blocking potentially unwanted apps helps deliver more productive, performant, and delightful Windows experiences.  The setting is turned off by default and is only available on Windows 10 devices.  To enable the feature, go to `edge://settings/privacy` and turn on the **Block potentially unwanted apps** setting.  For more information about how potentially unwanted apps are categorized, see [Potentially unwanted application (PUA)][WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted].  For more information about how to configure the setting, see [Detect and block potentially unwanted applications][WindowsSecurityThreatProtectionWindowsDefender].  
 
+## Speech Recognition
+
+To convert your speech into text Microsoft Edge supports the [Web Speech API](https://wicg.github.io/speech-api/).  If a website prompts for access to your microphone and requires your speech to be translated to text for the web feature to function, Microsoft Edge will send the audio to a Microsoft service to be translated into text.  The audio is sent with a randomly generated token over a secure HTTPS connection to the Microsoft Azure Cognitive Services.  The audio content is not stored for any purposes.  The text is sent back to your device and then sent to the website.  
+
+To not have your speech translated to text you can deny Microphone access from any site that prompts for permission.  You can also turn off the Microphone permission for all sites from `edge://settings/content/microphone`.  
+
 ## Spellcheck  
 
 Microsoft Edge checks your spelling as you type in the browser.  The spellcheck service is completed locally on the device; Microsoft Edge does not send info about your typing to Microsoft for spellcheck.  To turn off the feature, go to `edge://settings/languages` and under **Check Spelling** turn off the setting for each language.  
@@ -401,7 +413,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 ## Sync  
 
-Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  Sync configurations may be managed in `edge://settings/profiles/sync`.  
+Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  Sync configurations may be managed in `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.  
 
 :::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
    Sync  
