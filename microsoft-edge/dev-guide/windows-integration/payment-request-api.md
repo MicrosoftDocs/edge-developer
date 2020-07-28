@@ -54,8 +54,8 @@ The [methodData](/previous-versions/mt790440(v=vs.85)#PaymentRequest_params) par
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/pay_with.png" alt-text="The "pay with" list in the Microsoft Wallet user experience" lightbox="../media/pay_with.png":::
-         The "pay with" list in the Microsoft Wallet user experience  
+      :::image type="complex" source="../media/pay_with.png" alt-text="The pay with list in the Microsoft Wallet user experience" lightbox="../media/pay_with.png":::
+         The **pay with** list in the Microsoft Wallet user experience  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
