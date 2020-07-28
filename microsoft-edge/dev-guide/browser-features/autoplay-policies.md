@@ -11,7 +11,7 @@ ms.custom: seodec18
 ---
 # Autoplay Policies  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and conserve bandwidth.  Additionally, Microsoft Edge automatically suppresses autoplay of media in background tabs.  
 

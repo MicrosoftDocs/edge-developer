@@ -11,7 +11,7 @@ ms.custom: seodec18
 ---
 # What's new in EdgeHTML 15  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 Here are the changes shipped with the current release of the Microsoft Edge platform,
  as of the [Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/#MMhK2OdcrR12Vi6u.97) \(04/2017, Build 15063\).  For an overview of changes to the overall Microsoft Edge browser, see [What's new in Microsoft Edge in the Windows 10 Creators Update](https://blogs.windows.com/msedgedev/2017/04/11).  

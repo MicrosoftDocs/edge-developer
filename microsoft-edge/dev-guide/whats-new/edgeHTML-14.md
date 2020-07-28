@@ -10,7 +10,7 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 # What's new in EdgeHTML 14  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 Here are the changes shipped with EdgeHTML 14, as of the [Windows 10 Anniversary Update](https://blogs.windows.com/windowsexperience/2016/06/29) \(08/2016, Build 14393\).  For an overview of changes to the overall Microsoft Edge browser, see [Introducing EdgeHTML 14 with the Windows 10 Anniversary Update](https://blogs.windows.com/msedgedev/2016/08/04).  
 

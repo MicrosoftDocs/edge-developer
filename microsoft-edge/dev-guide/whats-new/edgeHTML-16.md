@@ -11,7 +11,7 @@ keywords:  edge, web development, html, css, javascript, developer
 ---
 # What's new in EdgeHTML 16  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 Here's a list of the new and updated features shipped in [EdgeHTML 16](https://blogs.windows.com/msedgedev/2017/10/17) web platform, as part of the [Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update) \(10/2017, Build 16299\).  For changes in specific Windows Insider Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) and [What's New in EdgeHTML](../whats-new.md).  
 

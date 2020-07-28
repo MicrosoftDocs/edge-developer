@@ -10,7 +10,7 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 # What's new in EdgeHTML 12  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 Microsoft Edge introduces EdgeHTML, a new "living" engine designed with interoperability at its core, to ensure that you are always getting the latest and greatest Windows web platform.  Microsoft Edge presents a clean break from the past, free from the legacy code needed to support ActiveX controls, Browser Helper Objects \(BHOs\), and other bygone web development practices.  Additionally, Microsoft Edge provides native PDF support.  As of IE11, legacy document modes have been deprecated, and with Microsoft Edge, the browser infrastructure to support them does not exist.  Check out the [IEBlog](/archive/blogs/ie/living-on-the-edge-our-next-step-in-interoperability) for more info.  
 

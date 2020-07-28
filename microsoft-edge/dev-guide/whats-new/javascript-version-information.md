@@ -11,7 +11,7 @@ ms.custom: seodec18
 ---
 # JavaScript version information  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 JavaScript support varies across Microsoft Edge, Microsoft Store apps, and different document modes of Internet Explorer \(IE\). For more information about IE document code versioning, see [Defining Document Compatibility](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 

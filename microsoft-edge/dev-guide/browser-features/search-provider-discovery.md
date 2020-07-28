@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 # Search provider discovery  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites.  Microsoft Edge follows the [OpenSearch 1.1](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) specification to discover and use web search providers.  If you are a search provider, here's how to ensure that Microsoft Edge supports your service.  
 

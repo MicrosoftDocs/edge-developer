@@ -11,7 +11,7 @@ keywords: edge, web development, html, css, javascript, developer
 ---
 # Web Notifications API  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 The Web Notifications API allows websites to send users notifications outside the context of a webpage within the Microsoft Edge browser.  An example of this feature in action would be with a messaging application like Skype.  When a user would receive a new message, a notification would appear on their desktop, alerting them of the message.  Web Notifications are fully integrated with the Notification Platform and the Action Center within Windows 10.  
 
