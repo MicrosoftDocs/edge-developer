@@ -3,7 +3,7 @@ description: Learn what a Chromium Extension is as well as progressively build a
 title: Getting Started With Microsoft Edge (Chromium) Extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/05/2019
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
@@ -46,7 +46,7 @@ Each tab essentially uses the URL \(also known as the uniform resource locator\)
 
 ### All communication from each tab is to remote servers  
 
-Understanding that each tab runs in an isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript as their programming language, communicate back to the server, that should be thought of as the originating server for that first GET request that was entered into the URL bar at the top of the browser tab.  
+Understanding that each tab runs in an isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript as the defined programming language, communicate back to the server, that should be thought of as the originating server for that first GET request that was entered into the URL bar at the top of the browser tab.  
 
 ## The Extension model turns everything upside down  
 
@@ -76,7 +76,7 @@ The extension serves the files all from the URL \(uniform resource locator\) at 
 
 ### Extensions manage and communicate with tabs and the browser toolbar  
 
-Extensions interact with the browser's toolbar, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser is a message API that allows for communications between the Extensions and the tab pages to allow this to happen gracefully.  This API, also known as the Extensions API gives a lots of capabilities including notification management, storage management, and much more.  
+Extensions interact with the toolbar of the browser, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages.  Built into the Chromium browser is a message API that allows for communications between the Extensions and the tab pages to allow this to happen gracefully.  This API, also known as the Extensions API gives a lots of capabilities including notification management, storage management, and much more.  
 
 Just like web servers, Extensions are able to continually run \(or sleep waiting for notifications\) all the time that the browser is running.  You may think of an Extension as an orchestrator for the browser.  Again, the Extension runs completely isolated from the tab pages, but through the Extensions API, and opt-in permissions granted to the Extension, each Extension is able to virtually control any and all tab pages running in the browser.  
 
