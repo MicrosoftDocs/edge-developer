@@ -10,7 +10,7 @@ keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
 ---
 # MSApp  
 
-[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
 
 The MSApp object and its members are supported only for Windows apps using JavaScript \(including PWAs accessing Windows API features\).  The MSApp object only exists in the local context of an HTML document in a Windows app loaded via the ms-appx URI scheme; otherwise, the object doesn't exist (and consequently, none of its methods and properties are available).  
 
