@@ -1118,7 +1118,7 @@ Synchronous API that has been deprecated.  For Windows 10, see `getHtmlPrintDocu
    :::column span="":::
       **Requirements**  
       
-      |  |  |  
+      | Type | Description |  
       |:---- |:--- |  
       | IDL | Mshtml.idl |  
    :::column-end:::
