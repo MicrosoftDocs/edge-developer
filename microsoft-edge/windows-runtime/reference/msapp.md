@@ -1065,7 +1065,7 @@ Synchronous API that has been deprecated.  For Windows 10, see `getHtmlPrintDocu
       Allowed priority values associated with `execAsyncAtPriority`, `execAtPriority`, `getCurrentPriority`, and `isTaskScheduldAtPriorityOrHigher`.  
    :::column-end:::
    :::column span="":::
-      **Current**  
+      #### Current  
       
       `current`  
       
@@ -1076,7 +1076,7 @@ Synchronous API that has been deprecated.  For Windows 10, see `getHtmlPrintDocu
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **High**  
+      #### High  
       
       `high`  
       
@@ -1085,7 +1085,7 @@ Synchronous API that has been deprecated.  For Windows 10, see `getHtmlPrintDocu
       | DOMString | When `high` is used with the appropriate method \(See also section\), the method will use higher than normal priority when executing the requested operation and will be dispatch the operation before any existing normal priority work.  |  
    :::column-end:::
    :::column span="":::
-      **Idle**  
+      #### Idle  
       
       `idle`  
       
@@ -1096,7 +1096,7 @@ Synchronous API that has been deprecated.  For Windows 10, see `getHtmlPrintDocu
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Normal**  
+      #### Normal  
       
       `normal`  
       
