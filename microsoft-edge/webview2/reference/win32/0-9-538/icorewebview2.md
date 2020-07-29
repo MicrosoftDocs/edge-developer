@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: WebView2 Win32 C++ ICoreWebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 07/23/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -78,7 +78,7 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [remove_WebResourceRequested](#remove_webresourcerequested) | Remove an event handler previously added with add_WebResourceRequested.
 [remove_WindowCloseRequested](#remove_windowcloserequested) | Remove an event handler previously added with add_WindowCloseRequested.
 [RemoveHostObjectFromScript](#removehostobjectfromscript) | Remove the host object specified by the name so that it is no longer accessible from JavaScript code in the WebView.
-[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Remove the corresponding JavaScript added via AddScriptToExecuteOnDocumentCreated.
+[RemoveScriptToExecuteOnDocumentCreated](#removescripttoexecuteondocumentcreated) | Remove the corresponding JavaScript added using `AddScriptToExecuteOnDocumentCreated` with the specified script id.
 [RemoveWebResourceRequestedFilter](#removewebresourcerequestedfilter) | Removes a matching WebResource filter that was previously added for the WebResourceRequested event.
 [Stop](#stop) | Stop all navigations and pending resource fetches.
 [COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT](#corewebview2_capture_preview_image_format) | Image format used by the ICoreWebView2::CapturePreview method.
@@ -91,72 +91,6 @@ WebView2 enables you to host web content using the latest Edge web browser techn
 [COREWEBVIEW2_SCRIPT_DIALOG_KIND](#corewebview2_script_dialog_kind) | Kind of JavaScript dialog used in the ICoreWebView2ScriptDialogOpeningEventHandler interface.
 [COREWEBVIEW2_WEB_ERROR_STATUS](#corewebview2_web_error_status) | Error status values for web navigations.
 [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](#corewebview2_web_resource_context) | Enum for web resource request contexts.
-
-## Navigation events
-
-The normal sequence of navigation events is NavigationStarting, SourceChanged, ContentLoading and then NavigationCompleted. The following events describe the state of WebView during each navigation: NavigationStarting: WebView is starting to navigate and the navigation will result in a network request. The host can disallow the request at this time. SourceChanged: The source of WebView is changed to a new URL. This may also be due to a navigation that doesn't cause a network request such as a fragment navigation. HistoryChanged: WebView's history has been updated as a result of the navigation. ContentLoading: WebView has started loading new content. NavigationCompleted: WebView has completed loading content on the new page. Developers can track navigations to each new document by the navigation ID. WebView's navigation ID changes every time there is a successful navigation to a new document.
-
-![dot-inline-dotgraph-1.png](media/dot-inline-dotgraph-1.png)
-
-Note that this is for navigation events with the same NavigationId event arg. Navigations events with different NavigationId event args may overlap. For instance, if you start a navigation wait for its NavigationStarting event and then start another navigation you'll see the NavigationStarting for the first navigate followed by the NavigationStarting of the second navigate, followed by the NavigationCompleted for the first navigation and then all the rest of the appropriate navigation events for the second navigation. In error cases there may or may not be a ContentLoading event depending on whether the navigation is continued to an error page. In case of an HTTP redirect, there will be multiple NavigationStarting events in a row, with ones following the first will have their IsRedirect flag set, however navigation ID remains the same. Same document navigations do not result in NavigationStarting event and also do not increment the navigation ID.
-
-To monitor or cancel navigations inside subframes in the WebView, use FrameNavigationStarting.
-
-## Process model
-
-WebView2 uses the same process model as the Edge web browser. There is one Edge browser process per specified user data directory in a user session that will serve any WebView2 calling process that specifies that user data directory. This means one Edge browser process may be serving multiple calling processes and one calling process may be using multiple Edge browser processes.
-
-![dot-inline-dotgraph-2.png](media/dot-inline-dotgraph-2.png)
-
-Off of a browser process there will be some number of renderer processes. These are created as necessary to service potentially multiple frames in different WebViews. The number of renderer processes varies based on the site isolation browser feature and the number of distinct disconnected origins rendered in associated WebViews.
-
-![dot-inline-dotgraph-3.png](media/dot-inline-dotgraph-3.png)
-
-You can react to crashes and hangs in these browser and renderer processes using the ProcessFailure event.
-
-You can safely shutdown associated browser and renderer processes using the Close method.
-
-## Threading model
-
-The WebView2 must be created on a UI thread. Specifically a thread with a message pump. All callbacks will occur on that thread and calls into the WebView must be done on that thread. It is not safe to use the WebView from another thread.
-
-Callbacks including event handlers and completion handlers execute serially. That is, if you have an event handler running and begin a message loop no other event handlers or completion callbacks will begin executing reentrantly.
-
-## Security
-
-Always check the Source property of the WebView before using ExecuteScript, PostWebMessageAsJson, PostWebMessageAsString, or any other method to send information into the WebView. The WebView may have navigated to another page via the end user interacting with the page or script in the page causing navigation. Similarly, be very careful with AddScriptToExecuteOnDocumentCreated. All future navigations will run this script and if it provides access to information intended only for a certain origin, any HTML document may have access.
-
-When examining the result of an ExecuteScript method call, a WebMessageReceived event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView validate the URI of the HTML document is what you expect.
-
-When constructing a message to send into a WebView, prefer using PostWebMessageAsJson and construct the JSON string parameter using a JSON library. This will avoid any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script.
-
-## String types
-
-String out parameters are LPWSTR null terminated strings. The callee allocates the string using CoTaskMemAlloc. Ownership is transferred to the caller and it is up to the caller to free the memory using CoTaskMemFree.
-
-String in parameters are LPCWSTR null terminated strings. The caller ensures the string is valid for the duration of the synchronous function call. If the callee needs to retain that value to some point after the function call completes, the callee must allocate its own copy of the string value.
-
-## URI and JSON parsing
-
-Various methods provide or accept URIs and JSON as strings. Please use your own preferred library for parsing and generating these strings.
-
-If WinRT is available for your app you can use `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` to parse or produce JSON strings or `RuntimeClass_Windows_Foundation_Uri` and `IUriRuntimeClassFactory` to parse and produce URIs. Both of these work in Win32 apps.
-
-If you use IUri and CreateUri to parse URIs you may want to use the following URI creation flags to have CreateUri behavior more closely match the URI parsing in the WebView: `Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO`
-
-## Debugging
-
-Open DevTools with the normal shortcuts: `F12` or `Ctrl+Shift+I`. You can use the `--auto-open-devtools-for-tabs` command argument switch to have the DevTools window open immediately when first creating a WebView. See CreateCoreWebView2Controller documentation for how to provide additional command line arguments to the browser process. Check out the LoaderOverride registry key for trying out different builds of WebView2 without modifying your application in the CreateCoreWebView2Controller documentation.
-
-## Versioning
-
-After you've used a particular version of the SDK to build your app, your app may end up running with an older or newer version of installed browser binaries. Until version 1.0.0.0 of WebView2 there may be breaking changes during updates that will prevent your SDK from working with different versions of installed browser binaries. After version 1.0.0.0 different versions of the SDK can work with different versions of the installed browser by following these best practices:
-
-To account for breaking changes to the API be sure to check for failure when calling the DLL export CreateCoreWebView2Environment and when calling QueryInterface on any CoreWebView2 object. A return value of E_NOINTERFACE can indicate the SDK is not compatible with the Edge browser binaries.
-
-Checking for failure from QueryInterface will also account for cases where the SDK is newer than the version of the Edge browser and your app attempts to use an interface of which the Edge browser is unaware.
-
-When an interface is unavailable, you can consider disabling the associated feature if possible, or otherwise informing the end user they need to update their browser.
 
 ## Members
 
@@ -306,8 +240,8 @@ Use HistoryChange to check if CanGoBack/CanGoForward value has changed. HistoryC
                 BOOL canGoForward;
                 sender->get_CanGoBack(&canGoBack);
                 sender->get_CanGoForward(&canGoForward);
-                EnableWindow(m_toolbar->backWindow, canGoBack);
-                EnableWindow(m_toolbar->forwardWindow, canGoForward);
+                m_toolbar->SetItemEnabled(Toolbar::Item_BackButton, canGoBack);
+                m_toolbar->SetItemEnabled(Toolbar::Item_ForwardButton, canGoForward);
 
                 return S_OK;
             })
@@ -344,7 +278,8 @@ NavigationCompleted event fires when the WebView has completely loaded (body.onl
                         // display its own error page automatically.
                     }
                 }
-                EnableWindow(m_toolbar->cancelWindow, FALSE);
+                m_toolbar->SetItemEnabled(Toolbar::Item_CancelButton, false);
+                m_toolbar->SetItemEnabled(Toolbar::Item_ReloadButton, true);
                 return S_OK;
             })
             .Get(),
@@ -452,9 +387,9 @@ Fires when content inside the WebView requested to open a new window, such as th
                 CHECK_FAILURE(windowFeatures->get_Toolbar(&shouldHaveToolbar));
 
                 windowRect.left = left;
-                windowRect.right = left + (width < s_minNewWindowSize  s_minNewWindowSize : width);
+                windowRect.right = left + (width < s_minNewWindowSize ? s_minNewWindowSize : width);
                 windowRect.top = top;
-                windowRect.bottom = top + (height < s_minNewWindowSize  s_minNewWindowSize : height);
+                windowRect.bottom = top + (height < s_minNewWindowSize ? s_minNewWindowSize : height);
 
                 if (!useDefaultWindow)
                 {
@@ -508,15 +443,15 @@ Fires when content in a WebView requests permission to access some privileged re
         message += uri.get();
         message += L"?\n\n";
         message += (userInitiated
-             L"This request came from a user gesture."
+            ? L"This request came from a user gesture."
             : L"This request did not come from a user gesture.");
 
         int response = MessageBox(nullptr, message.c_str(), L"Permission Request",
                                    MB_YESNOCANCEL | MB_ICONWARNING);
 
         COREWEBVIEW2_PERMISSION_STATE state =
-              response == IDYES  COREWEBVIEW2_PERMISSION_STATE_ALLOW
-            : response == IDNO   COREWEBVIEW2_PERMISSION_STATE_DENY
+              response == IDYES ? COREWEBVIEW2_PERMISSION_STATE_ALLOW
+            : response == IDNO  ? COREWEBVIEW2_PERMISSION_STATE_DENY
             :                     COREWEBVIEW2_PERMISSION_STATE_DEFAULT;
         CHECK_FAILURE(args->put_State(state));
 
@@ -668,7 +603,7 @@ SourceChanged fires for navigating to a different site or fragment navigations. 
                 {
                     uri = wil::make_cotaskmem_string(L"");
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                SetWindowText(GetAddressBar(), uri.get());
 
                 return S_OK;
             })
@@ -748,7 +683,7 @@ Add an event handler for the WebResourceRequested event.
 
 > public HRESULT [add_WebResourceRequested](#add_webresourcerequested)([ICoreWebView2WebResourceRequestedEventHandler](icorewebview2webresourcerequestedeventhandler.md) * eventHandler, EventRegistrationToken * token)
 
-Fires when the WebView is performing an HTTP request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
+Fires when the WebView is performing a URL request to a matching URL and resource context filter that was added with AddWebResourceRequestedFilter. At least one filter must be added for the event to fire.
 
 ```cpp
         if (m_blockImages)
@@ -962,6 +897,7 @@ For example, suppose you have a COM object with the following interface
         });
         });
 ```
+Exposing host objects to script has security risk. Please follow [best practices](https://docs.microsoft.com/microsoft-edge/webview2/concepts/security).
 
 #### AddScriptToExecuteOnDocumentCreated 
 
@@ -1038,7 +974,7 @@ void ScriptComponent::CallCdpMethod()
         std::wstring methodName = dialog.input.substr(0, delimiterPos);
         std::wstring methodParams =
             (delimiterPos < dialog.input.size()
-                 dialog.input.substr(delimiterPos + 1)
+                ? dialog.input.substr(delimiterPos + 1)
                 : L"{}");
 
         m_webView->CallDevToolsProtocolMethod(
@@ -1198,7 +1134,7 @@ This value potentially changes as a part of the SourceChanged event firing for s
                 {
                     uri = wil::make_cotaskmem_string(L"");
                 }
-                SetWindowText(m_toolbar->addressBarWindow, uri.get());
+                SetWindowText(GetAddressBar(), uri.get());
 
                 return S_OK;
             })
@@ -1282,10 +1218,10 @@ See the navigation events for more information. Note that this starts a navigati
 ```cpp
 void ControlComponent::NavigateToAddressBar()
 {
-    int length = GetWindowTextLength(m_toolbar->addressBarWindow);
+    int length = GetWindowTextLength(GetAddressBar());
     std::wstring uri(length, 0);
     PWSTR buffer = const_cast<PWSTR>(uri.data());
-    GetWindowText(m_toolbar->addressBarWindow, buffer, length + 1);
+    GetWindowText(GetAddressBar(), buffer, length + 1);
 
     HRESULT hr = m_webView->Navigate(uri.c_str());
     if (hr == E_INVALIDARG)
@@ -1677,3 +1613,4 @@ COREWEBVIEW2_WEB_RESOURCE_CONTEXT_SIGNED_EXCHANGE            | Signed HTTP Excha
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_PING            | Ping requests.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_CSP_VIOLATION_REPORT            | CSP Violation Reports.
 COREWEBVIEW2_WEB_RESOURCE_CONTEXT_OTHER            | Other resources.
+

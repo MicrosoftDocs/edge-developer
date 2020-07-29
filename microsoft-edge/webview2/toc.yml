@@ -8,16 +8,26 @@
       href: gettingstarted/wpf.md
     - name: Windows Forms
       href: gettingstarted/winforms.md
+    - name: WinUI 3.0
+      href: gettingstarted/winui.md
 - name: Concepts
   items:
     - name: Distributing my app
       href: concepts/distribution.md
     - name: Managing User Data Folders
       href: concepts/userdatafolder.md
+    - name: Navigation events
+      href: concepts/navigation-events.md
+    - name: Process model
+      href: concepts/process-model.md
     - name: Security Best Practices
       href: concepts/security.md
     - name: Versioning
       href: concepts/versioning.md
+    - name: Threading model
+      href: concepts/threading-model.md
+    - name: Win32 API conventions
+      href: concepts/win32-api-conventions.md
 - name: Release notes
   href: releasenotes.md
 - name: Roadmap
@@ -144,6 +154,8 @@
               href: reference/win32/0-9-538/icorewebview2zoomfactorchangedeventhandler.md
         - name: Experimental
           items:
+            - name: ICoreWebView2Experimental
+              href: reference/win32/0-9-538/icorewebview2experimental.md
             - name: ICoreWebView2ExperimentalCompositionController
               href: reference/win32/0-9-538/icorewebview2experimentalcompositioncontroller.md
             - name: ICoreWebView2ExperimentalCreateCoreWebView2CompositionControllerCompletedHandler
@@ -152,10 +164,18 @@
               href: reference/win32/0-9-538/icorewebview2experimentalcursorchangedeventhandler.md
             - name: ICoreWebView2ExperimentalEnvironment
               href: reference/win32/0-9-538/icorewebview2experimentalenvironment.md
+            - name: ICoreWebView2ExperimentalEnvironmentOptions
+              href: reference/win32/0-9-538/icorewebview2experimentalenvironmentoptions.md
             - name: ICoreWebView2ExperimentalNewWindowRequestedEventArgs
               href: reference/win32/0-9-538/icorewebview2experimentalnewwindowrequestedeventargs.md
             - name: ICoreWebView2ExperimentalPointerInfo
               href: reference/win32/0-9-538/icorewebview2experimentalpointerinfo.md
+            - name: ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs
+              href: reference/win32/0-9-538/icorewebview2experimentalwebresourceresponsereceivedeventargs.md
+            - name: ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgsPopulateResponseContentCompletedHandler
+              href: reference/win32/0-9-538/icorewebview2experimentalwebresourceresponsereceivedeventargspopulateresponsecontentcompletedhandler.md
+            - name: ICoreWebView2ExperimentalWebResourceResponseReceivedEventHandler
+              href: reference/win32/0-9-538/icorewebview2experimentalwebresourceresponsereceivedeventhandler.md
             - name: ICoreWebView2ExperimentalWindowFeatures
               href: reference/win32/0-9-538/icorewebview2experimentalwindowfeatures.md
         - name: Archived
@@ -568,6 +588,8 @@
                   href: reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md
                 - name: CoreWebView2WebResourceRequestedEventArgs
                   href: reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md
+                - name: CoreWebView2WebResourceResponseReceivedEventArgs
+                  href: reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md
             - name: Archived
               items:
                 - name: 0-9-515 - Reference (WebView2)
