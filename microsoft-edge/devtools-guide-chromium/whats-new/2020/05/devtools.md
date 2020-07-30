@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -276,13 +276,13 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 To discuss the new features and changes in the post, or anything else related to DevTools:  
 
-*   Send your feedback using the **Feedback** icon in the DevTools  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]  
 *   File bugs on this page in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
-:::image type="complex" source="../../media/2020/05/feedback-icon.msft.png" alt-text="The Feedback icon in the Microsoft Edge DevTools" lightbox="../../media/2020/05/feedback-icon.msft.png":::
-  The **Feedback** icon in the Microsoft Edge DevTools  
+:::image type="complex" source="../../media/2020/05/bing-devtools-send-feedback.msft.png" alt-text="The Feedback icon in the Microsoft Edge DevTools" lightbox="../../media/2020/05/bing-devtools-send-feedback.msft.png":::
+  The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- image links -->  

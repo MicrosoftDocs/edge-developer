@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -45,7 +45,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][crbug963183]  
 
@@ -114,7 +114,7 @@ If you want Microsoft Edge to be in one language and your DevTools to remain in 
 
 **Console** messages are not localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.  
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
 
 Chromium issue [#941561][crbug941561]  
 
@@ -138,7 +138,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](#feedback).  
+We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 Chromium issue [#987787][crbug987787]  
 
@@ -308,17 +308,17 @@ Open [Settings][Settings] and then disable **Preferences** > **Sources** > **All
 > Scrolling past the end of a file is now disabled in the Sources panel  
 > ![Scrolling past the end of a file is now disabled in the Sources panel][ImageScroll]  
 
-## Feedback   
+## Getting in touch with Microsoft Edge DevTools team  
 
 
 
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
-*   Send your feedback using the **Feedback** icon in the DevTools  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
 
 > ##### Figure 21  
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
+> The **Send Feedback** icon in the Microsoft Edge DevTools  
+> ![The **Send Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]  
@@ -358,7 +358,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Figure 18: A source map loading error in the Console"
 [ImageSettings]: ../../images/2020/01/settings.msft.png "Figure 19: Disabling Allow scrolling past end of file in Settings"
 [ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Figure 20: Scrolling past the end of a file is now disabled in the Sources panel"
-[ImageFeedbackIcon]: ../../images/2020/01/feedback-icon.msft.png "Figure 21: The **Feedback** icon in the Microsoft Edge DevTools"
+[ImageFeedbackIcon]: ../../images/2020/01/bing-devtools-send-feedback.msft.png "Figure 21: The **Send Feedback** icon in the Microsoft Edge DevTools"
 
 
 <!-- links -->  

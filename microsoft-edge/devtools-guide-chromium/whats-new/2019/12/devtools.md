@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -46,7 +46,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][crbug963183]  
 
@@ -111,7 +111,7 @@ Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
 
 Chromium issue [#941561][crbug941561]  
 
@@ -135,7 +135,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).  
+We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 Chromium issue [#987787][crbug987787]
 
@@ -320,17 +320,17 @@ Toggling code coverage without a page reload has been removed because the covera
 
 Chromium issue [#1004203][crbug1004203]  
 
-## Feedback   
+## Getting in touch with Microsoft Edge DevTools team  
 
 
 
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
-*   Send your feedback using the **Feedback** icon in the DevTools  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
 
 > ##### Figure 18
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
+> The **Send Feedback** icon in the Microsoft Edge DevTools  
+> ![The **Send Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
 
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]  
@@ -367,7 +367,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figure 15: The User Agent menu in the Network Conditions tab"  
 [ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figure 16: The new configuration UI"  
 [ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figure 17: The coverage mode dropdown menu"  
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png "Figure 18: The **Feedback** icon in the Microsoft Edge DevTools"
+[ImageFeedbackIcon]: ../../images/2019/12/bing-devtools-send-feedback.msft.png "Figure 18: The **Send Feedback** icon in the Microsoft Edge DevTools"
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 

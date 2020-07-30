@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,7 +39,7 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
    Figure 1:  The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 ### New ways to access Settings  
 
@@ -107,7 +107,7 @@ When you have made a change to a minified file, the **Changes tool** enables you
    Figure 8:  In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
 :::image-end:::  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][crbug963183]  
 
@@ -137,7 +137,7 @@ For example, protanomaly is a reduced sensitivity to red light (as opposed to pr
 
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1003700][crbug1003700]  
 
@@ -177,7 +177,7 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
    Figure 12:  More guidance in the Response Headers section  
 :::image-end:::  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1051466][crbug1051466]  
 
@@ -199,7 +199,7 @@ Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` com
 > [!NOTE]
 > The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [**Main Menu**][MainMenuDoc].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1011679][crbug1011679]  
 
@@ -222,7 +222,7 @@ After setting up **Local Overrides** you may right-click a folder and select the
    Figure 15:  Delete all overrides  
 :::image-end:::  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1016501][crbug1016501]  
 
@@ -236,7 +236,7 @@ You have been able to [visualize Long Tasks in the Performance panel][LongTasksI
    Figure 16:  The new Long Task UI  
 :::image-end:::  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1054447][crbug1054447]  
 
@@ -255,17 +255,17 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 > [!NOTE]
 > This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
 
-## Feedback  
+## Getting in touch with Microsoft Edge DevTools team  
 
 To discuss the new features and changes in this post, or anything else related to DevTools:  
 
-*   Send your feedback using the **Feedback** icon in the DevTools  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant]  
 *   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
 
-:::image type="complex" source="../../media/2020/03/feedback-icon.msft.png" alt-text="The **Feedback** icon in the Microsoft Edge DevTools" lightbox="../../media/2020/03/feedback-icon.msft.png":::
-   Figure 18:  The **Feedback** icon in the Microsoft Edge DevTools  
+:::image type="complex" source="../../media/2020/03/bing-devtools-send-feedback.msft.png" alt-text="The **Send Feedback** icon in the Microsoft Edge DevTools" lightbox="../../media/2020/03/bing-devtools-send-feedback.msft.png":::
+   Figure 18:  The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
 ## Download the Microsoft Edge preview channels  
