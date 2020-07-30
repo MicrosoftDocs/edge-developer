@@ -10,11 +10,13 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
+
 # How to Debug with WebView2  	
 
 The goal of the Microsoft Edge WebView2 control is combining the best of both the web and native application development features and developer tools.  The following page outlines the different tools to use when developing with WebView2 controls.  	
 
-## Microsoft Edge DevTools  	
+# [Microsoft Edge DevTools](#tab/devtools)
+	
 
 Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you use Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions.  
 *   Select `F12`.  
@@ -23,8 +25,8 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 
 > [!IMPORTANT]	
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  	
-## Visual Studio  	
 
+# [Visual Studio ](#tab/visualstudio)
 
 > [!NOTE]
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
@@ -85,7 +87,7 @@ You are ready to debug! Now you may:
 
 
         
-## Visual Studio Code  
+# [Visual Studio Code](#tab/visualstudiocode) 
 
 You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
 
