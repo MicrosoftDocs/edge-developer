@@ -11,17 +11,20 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 
 
-# How to Debug with WebView2  	
+# Debugging a WebView2 Control  	
 
-The goal of the Microsoft Edge WebView2 control is combining the best of both the web and native application development features and developer tools.  The following page outlines the different tools to use when developing with WebView2 controls.  	
+The goal of the Microsoft Edge WebView2 control is combining the best of both the web and native application development features and developer tools.  The following page outlines the different tools to use when developing with WebView2 controls.
 
 # [Microsoft Edge DevTools](#tab/devtools)
-	
 
 Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you use Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions.  
 *   Select `F12`.  
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) > select `Inspect`.  
+
+:::image type="complex" source="./media/f12.jpg" alt-text="Visual Studio JavaScript diagnostics":::
+   Visual Studio JavaScript diagnostics  
+:::image-end:::  
 
 > [!IMPORTANT]	
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  	
@@ -38,9 +41,7 @@ Keep the following things in mind.
 
 Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
 
-:::image type="complex" source="../media/vs-js-diagnostics.jpg" alt-text="Visual Studio JavaScript diagnostics":::
-   Visual Studio JavaScript diagnostics  
-:::image-end:::  
+
 
 <!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
 
