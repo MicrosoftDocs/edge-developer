@@ -17,19 +17,25 @@ The goal of the Microsoft Edge WebView2 control is combining the best of both th
 
 # [Microsoft Edge DevTools](#tab/devtools)
 
-Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you use Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions.  
+Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you use Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions. 
+ 
 *   Select `F12`.  
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) > select `Inspect`.  
 
-:::image type="complex" source="./media/f12.jpg" alt-text="Visual Studio JavaScript diagnostics":::
-   Visual Studio JavaScript diagnostics  
-:::image-end:::  
+    :::image type="complex" source="./media/f12.png" alt-text="Visual Studio Code Adding Breakpoints" lightbox="/media/breakpoint.png":::
+        Visual Studio Adding Breakpoints  
+    :::image-end::: 
+
+# [Visual Studio ](#tab/visualstudio)
+	
+
+Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
+
 
 > [!IMPORTANT]	
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  	
 
-# [Visual Studio ](#tab/visualstudio)
 
 > [!NOTE]
 > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
@@ -37,11 +43,7 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 > [!NOTE]
 > You may use the `--auto-open-devtools-for-tabs` command-line argument to open a new DevTools window when you first create a WebView.  <!--See `CreateCoreWebView2Controller` documentation for how to provide additional command-line arguments to the browser process.  See `LoaderOverride` registry key to examine different builds of WebView2 without modifying your application in the `CreateCoreWebView2Controller` documentation.  -->  
 
-Keep the following things in mind.  	
-
-Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
-
-
+Keep the following things in mind.  
 
 <!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
 
