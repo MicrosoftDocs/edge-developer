@@ -91,7 +91,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ### Enable Network Console
 
-**Network Console** is the working title for an experimental component for Chromium-based DevTools for making synthetic network requests over HTTP.  You may use the **Network Console** experiment during the dev-test loop for web APIs.  The **Network Console** experiment is not feature-complete during the initial release.  Early availability during the dev-test loop enables you to receive rapid iterations, experiment in the open, and see your ideas for the **Network Console** implemented quickly.  
+**Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
 After enabling the experiment, ensure you restart the DevTools. To use the Network Console:
 1.  Open the **Network** pane.
