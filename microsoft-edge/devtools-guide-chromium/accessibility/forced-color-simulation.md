@@ -3,7 +3,7 @@ description: Display the current web site in high contrast mode (CSS Forced Colo
 title: High Contrast simulation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/17/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # High Contrast simulation  
 
-Windows and other operating systems \(OSs\) contain a [setting that allows users to show the interface with a set of reduced colors][WindowsHighContrastMode].  The setting may be either pre-set color schemes or defined by the user.  The setting helps people with several needs including those with limited vision, suffering from migraines, suffering from [Irlen Syndrome][WikiIrlenSyndrome], or living with [Dyslexia][WikiDyslexia].  
+Windows and other operating systems \(OSs\) contain a [setting that allows users to show the interface with a set of reduced colors][WindowsHighContrastMode].  The setting is called **High Contrast Mode**.  The setting may use either pre-set color schemes or settings that are defined by the user.  The setting helps people with several needs including those with limited vision, suffering from migraines, suffering from [Irlen Syndrome][WikiIrlenSyndrome], or living with [Dyslexia][WikiDyslexia].  
 
 The exact numbers are not available, but roughly 4% of all Windows users use display settings with reduced color settings.  According to the [2018 Survey of Users with low Vision][WebaimProjectsLowvisionsurvey2Contrastmode] provided by WebAIM, more than half of low vision users use **High Contrast Mode**.  
 
