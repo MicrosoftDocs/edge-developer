@@ -41,7 +41,6 @@ To simulate what your web product looks like in High Contrast mode, open the [Re
     :::image-end:::  
 
 1.  In **Rendering**, choose the drop down in **Emulate CSS media feature forced-colors**.  
-
     
     :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The forced colors menu on the Rendering drawer" lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
        The forced colors menu on the **Rendering** drawer  
@@ -91,7 +90,7 @@ View and change your CSS like any other web page.  For more information, see [Ge
 [DevtoolsGuideChromiumRenderingTools]: ../rendering-tools/index.md "Microsoft Edge (Chromium) Rendering Tools | Microsoft Docs"  
 
 [CsswgDraftsColorsSystem]: https://drafts.csswg.org/css-color#css-system-colors "CSS System Colors"  
-[CsswgDraftsMediaqueries5ForcedColors]: https://drafts.csswg.org/mediaqueries-5#forced-colors "CSS Media Queries Specification on forced colors "  
+[CsswgDraftsMediaqueries5ForcedColors]: https://drafts.csswg.org/mediaqueries-5#forced-colors "CSS Media Queries Specification on forced colors"  
 
 [WebaimProjectsLowvisionsurvey2Contrastmode]: https://webaim.org/projects/lowvisionsurvey2#contrastMode "High Contrast Modes - Survey of Users with Low Vision #2 Results | WebAIM"  
 
