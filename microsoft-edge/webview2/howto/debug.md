@@ -230,13 +230,14 @@ There are 5 basic steps for debugging within VSCode:
     * Breakpoints not hit but you have debug spew:
         * Solution: Ensure that the file you have opened and set the breakpoint in is the exact same path that you opened in the WebView2.  The adapters do not do source path mapping.  
     * Attach never does and you get a timeout error:
-        * Solution: The WebView is probably not opening the CDP port.  Ensure your additionalBroweserArguments registry value is correct or that your application code is configuring the options correctly.   
+        * Solution: The WebView is probably not opening the CDP port.  Ensure your additionalBroweserArguments registry value is correct or that your application code is configuring the options correctly.
+
+For a list of other JavaScript Debugging features in Visual Studio Code, visit [this](https://github.com/microsoft/vscode-js-debug/#whats-new)
 
 --- 
 
 Help build a richer WebView2 experience by sharing your feedback.  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain] to submit feature requests or bug reports.  
 
-For a list of other JavaScript Debugging features in Visual Studio Code, visit [this](https://github.com/microsoft/vscode-js-debug/#whats-new)
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools"  
 
