@@ -195,7 +195,7 @@ If you want to save a change to the HTML of the page, do it using the **Sources*
 1.  Choose the **Sources** tab.  
 1.  Choose the **Page** tab.  
 1.  Choose **(index)**.  The HTML for the page opens.  
-1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See [Figure 8](#figure-8).  
+1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See the following figure.  
 1.  Select `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Reload the page.  The `<h1>` element is still displaying the new text.  
     
@@ -217,7 +217,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
        Opening the **Quick Source** tab using the **Command Menu**  
     :::image-end:::  
     
-1.  Select `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See [Figure 10](#figure-10).  
+1.  Select `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See the following figure.  
 1.  Type `script`, then select **app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Opening script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -257,7 +257,7 @@ If you have more feedback on these topics or anything else, please use any of th
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+[DevToolsCssIndex]: ../css/index.md# "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
