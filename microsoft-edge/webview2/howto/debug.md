@@ -70,7 +70,7 @@ To Debug, you may perform the following actions.
     *   Open the file you are trying to debug and set a breakpoint by clicking to the left of the line number.
         
         :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio Code Adding Breakpoints" lightbox="/media/breakpoint.png":::
-           Visual Studio Adding Breakpoints  
+        Visual Studio Adding Breakpoints  
         :::image-end::: 
 
         > [!NOTE]
@@ -80,17 +80,17 @@ To Debug, you may perform the following actions.
     *   Select the appropriate build flavor and runtime environment and then run the local windows debugger by clicking the green play button.
 
         :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Code Run" lightbox="/media/run.png":::
-            Visual Studio Code Run  
+        Visual Studio Code Run  
         :::image-end:::   
 1.  View Debug Console  
     *   The application will run and the debugger will connect after the first webview2 is created.  Any pending debug output will be displayed.  
 
-                :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/console.png":::
-            Visual Studio Code Debug Output  
+        :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/console.png":::
+        Visual Studio Code Debug Output  
         :::image-end:::
 
-> [!NOTE]
-> When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
+        > [!NOTE]
+        > When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
 
     
 # [Visual Studio Code](#tab/visualstudiocode) 
@@ -152,17 +152,18 @@ There are 5 basic steps for debugging within VSCode:
         Visual Studio Code Debug Output  
         :::image-end:::
 
-    > [!NOTE]
+        > [!NOTE]
         >  VSCode does not do source mapping you so MUST ensure you have opened and set breakpoints in the same file path as the WebView will be using.  If the paths are not exact VSCode can’t resolve the breakpoint. 
 1. **Run code**
     1. Select the launch configuration from the dropdown menu.
-    1. Start debugging by clicking the green run button.        
+    1. Start debugging by clicking the green run button.
 
         :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/runvs.png":::
         Visual Studio Code Debug Output  
         :::image-end:::
 
 1. **View Results**
+    * Observe Debug Output
 
         :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/resultsvs.png":::
         Visual Studio Code Debug Output  
@@ -202,7 +203,8 @@ There are 5 basic steps for debugging within VSCode:
              ```
 
     * Ensure that the WebView will open the CDP Port. 
-    > [!NOTE] There is not any way to filter which WebView it will find and connect to.  It is recommended you ensure there is only one WebView currently with the CDP port open before starting attach.  
+    > [!NOTE] 
+    > There is not any way to filter which WebView it will find and connect to.  It is recommended you ensure there is only one WebView currently with the CDP port open before starting attach.  
 
 * Debug Tracing:
     * In `launch.json`:
