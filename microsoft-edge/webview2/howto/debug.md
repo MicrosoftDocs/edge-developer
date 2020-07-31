@@ -23,50 +23,51 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) > select `Inspect`.  
 
-    :::image type="complex" source="./media/f12.png" alt-text="Visual Studio Code Adding Breakpoints" lightbox="/media/breakpoint.png":::
-        Visual Studio Adding Breakpoints  
-    :::image-end::: 
+:::image type="complex" source="./media/f12.png" alt-text="Devtools debugging" lightbox="/media/breakpoint.png":::
+    Devtools debugging  
+:::image-end::: 
 
 # [Visual Studio ](#tab/visualstudio)
-	
 
-Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
+You may use Visual Studio to develop application code and debug scripts at the same time.
+
+Keep the following things in mind.
+
+* Visual Studio only supports debugging scripts when the app is launched from within Visual Studio. (Attaching a running process for debugging is not supported.)
+* The targeted WebView debugging scenario is not supported.
+
+> [!Important]
+> This method of debugging is currently restricted to Win32 applications and Office add-ins.
+
+Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.
+
+To set up the debugger:  
+
+*   Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
+    
+    1.  Navigate to **Apps & features** settings in Windows.  Search for it using the Windows task bar.  
+    1.  Choose **Modify**.  
+    1.  Verify the **Javascript diagnostics** and **Desktop Development in C++** checkboxes are selected.  
+        
+        :::image type="complex" source="./media/appsandfeatures.png" alt-text="Apps & Features" lightbox="./media/appsandfeatures.png":::
+           Apps & Features  
+        :::image-end:::  
+        
+*   Enable WebView2 script debugging.  
+    1.  Hover on your project, open the context menu \(right-click\), and select **Properties**.  
+    1.  On **Configuration Properties**, select **Debugging**.  
+    1.  On the **Debugger Type** property, search the the list of options, and select **JavaScript (WebView2)**.  
+        
+        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio JavaScript Debugger" lightbox="./media/enbjs.png":::
+           Visual Studio JavaScript Debugger  
+        :::image-end:::  
+        
+You are all set up and ready to debug!
 
 
-> [!IMPORTANT]	
-> When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  	
-
-
-> [!NOTE]
-> When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
-
-> [!NOTE]
-> You may use the `--auto-open-devtools-for-tabs` command-line argument to open a new DevTools window when you first create a WebView.  <!--See `CreateCoreWebView2Controller` documentation for how to provide additional command-line arguments to the browser process.  See `LoaderOverride` registry key to examine different builds of WebView2 without modifying your application in the `CreateCoreWebView2Controller` documentation.  -->  
-
-Keep the following things in mind.  
-
-<!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
-
-To enable WebView2 script debugging, open the context menu \(right-click\) on your project > select **Properties**.  
-
-*   On **Configuration Properties**, select **Debugging**.  
-*   On the **Debugger Type** property, select **JavaScript (WebView2)** from the list of options. 
-
-:::image type="complex" source="../media/vs-script-debugger.jpg" alt-text="Visual Studio JavaScript Debugger":::
-   Visual Studio JavaScript Debugger  
-:::image-end:::  
-
-<!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
-
-*   Enable WebView2 script debugging.  	
-    1.  Hover on your project, open the context menu \(right-click\), and select **Properties**.  	
-    1.  On **Configuration Properties**, select **Debugging**.  	
-    1.  On the **Debugger Type** property, search the the list of options, and select **JavaScript (WebView2)**.  	
-
-You are ready to debug! Now you may:
-
+To Debug, you may perform the following actions.  
 1.  Set Breakpoints  
-    *   Open the file you are trying to debug and set a breakpoint by clicking left on the line number.  
+    *   Open the file you are trying to debug and set a breakpoint by clicking to the left of the line number.
         
         :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio Code Adding Breakpoints" lightbox="/media/breakpoint.png":::
            Visual Studio Adding Breakpoints  
@@ -74,7 +75,7 @@ You are ready to debug! Now you may:
 
         > [!NOTE]
         > The JS/TS debug adapter does not do source path mapping.  You must open the exact same path associated with your WebView2.  
-        
+ 
 1.  Run Code  
     *   Select the appropriate build flavor and runtime environment and then run the local windows debugger by clicking the green play button.
 
@@ -88,8 +89,10 @@ You are ready to debug! Now you may:
             Visual Studio Code Debug Output  
         :::image-end:::
 
+> [!NOTE]
+> When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
 
-        
+    
 # [Visual Studio Code](#tab/visualstudiocode) 
 
 You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
@@ -142,7 +145,6 @@ There are 5 basic steps for debugging within VSCode:
             //"urlFilter": "*DebugTrigger", // Only used when useWebView == “Advanced”  
         } 
         ```  
-
 1. **Set breakpoints**
     1. Open the file you want to debug in VSCode.  And then set the breakpoint (select the line and press F9, or click the breakpoint column in the editor).  
 
@@ -166,23 +168,78 @@ There are 5 basic steps for debugging within VSCode:
         Visual Studio Code Debug Output  
         :::image-end:::
 
-For a list of other JavaScript Debugging features in Visual Studio Code, visit [this](https://github.com/microsoft/vscode-js-debug/#whats-new)
+**Advanced Settings:**
 
-<!--todo:  add See also heading  -->  
+* Targeted Webview debugging (For multiple WebViews):
+    * In `launch.json`:
+        1. Change useWebview parameter to "Advanced"
+        1. Add urlFilter parameter. urlFilter is used as a string comparison paramater on the URL that each WebView is navigated to.
+        ```csharp
+        "useWebview": "Advanced",
+        "urlFilter": "file://C:/myfile/index.ts",
 
-1.  Set Breakpoints  	
-    *   Open the script file and set the breakpoint where you want it.  	
+        //Other options
+
+        urlFilter="*index.ts"    //Match any url that ends in index.ts (ignore any leading anything)
+        urlFilter="*index*"      //Match any url that contains index (ignore leading and trailing anything)  
+        urlFilter="*?=debugme*"  //Match any url that has a parameter segment matching “?urlFilter=debugme" (ignoring anything leading or trailing)  
+        urlFilter="*debug*"      //Match any url that contains debug anywhere in the path.
+        urlFilter="About:Blank"  //The default url all WebView’s navigate to on creation.  This will behave just like using the non-targeted debugging mode.  
+        ```
+        > [!NOTE]
+        >  * “*” is used as a wildcard for leading or trailing matches. 
+             Using the ?=value parameter syntax for a match can be useful because most webpages will ignore any unrecognized parameters. 
+
+        > [!Important]
+        > Once the first match is found filtering is stopped for subsequent matches.  As a result, you can’t actively debug two WebView’s at once from within one instance of VSCode.  Using two instances also won’t let you debug two WebView’s as the CDP port is only opened on a single port number. 
+* Attaching debugger to a running process:
+    * In `launch.json`:
+        1. Change the request parameter to "attach"
+             ```csharp
+            "request": “attach”,  
+            "port": 9222, // Optional defaults to 9222  
+            "timeout": 10000,  
+             ```
+
+    * Ensure that the WebView will open the CDP Port. 
+    > [!NOTE] There is not any way to filter which WebView it will find and connect to.  It is recommended you ensure there is only one WebView currently with the CDP port open before starting attach.  
+
+* Debug Tracing:
+    * In `launch.json`:
+        1. Add 'trace' parameter.
+            ```csharp
+            ,"trace": true
+            ,"trace": “verbose”  //verbose option
+            ```
+        :::image type="complex" source="./media/tracelog.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/tracelog.png":::
+        Visual Studio Code Debug Output  
+        :::image-end:::
+
+        :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="/media/verbose.png":::
+        Verbose Output
+        :::image-end:::
+* Add-In Debugging:
+
+    * If you need to debug the add in more deeply you can load the source project in a second instance of VSCode and debug the add in.  
+
+    1. Set the debugServer parameter for that cross-process communication port.    
+        ```csharp
+        ,"debugServer": 4711
+        ```
+* Troubleshooting:
+    * Breakpoints not hit but you have debug spew:
+        * Solution: Ensure that the file you have opened and set the breakpoint in is the exact same path that you opened in the WebView2.  The adapters do not do source path mapping.  
+    * Attach never does and you get a timeout error:
+        * Solution: The WebView is probably not opening the CDP port.  Ensure your additionalBroweserArguments registry value is correct or that your application code is configuring the options correctly.   
+
+--- 
 
 Help build a richer WebView2 experience by sharing your feedback.  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain] to submit feature requests or bug reports.  
 
-<!--## Debugging  
-
-Open DevTools with the normal shortcuts: `F12` or `Ctrl+Shift+I`. You can use the `--auto-open-devtools-for-tabs` command argument switch to have the DevTools window open immediately when first creating a WebView. See CreateCoreWebView2Controller documentation for how to provide additional command line arguments to the browser process. Check out the LoaderOverride registry key for trying out different builds of WebView2 without modifying your application in the CreateCoreWebView2Controller documentation.  -->  
-
-<!--todo:  add See also heading  -->  	
+For a list of other JavaScript Debugging features in Visual Studio Code, visit [this](https://github.com/microsoft/vscode-js-debug/#whats-new)
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView applications - VS Code - Debugger for Microsoft Edge - microsoft/vscode-edge-debug2 | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView applications - VS Code - Debugger for Microsoft Edge - microsoft/vscode-edge-debug2 | GitHub"
