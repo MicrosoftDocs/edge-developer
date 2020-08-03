@@ -29,17 +29,21 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 
 ## [Visual Studio](#tab/visualstudio)  
 
-You may use Visual Studio to develop application code and debug scripts at the same time.  
+Use Visual Studio to develop application code and debug scripts at the same time.  
 
 Keep the following things in mind.  
 
-*   Visual Studio only supports debugging scripts when the app is launched from within Visual Studio.  \(Attaching a running process for debugging is not supported.\)  
+*   Visual Studio only supports debugging scripts when the app is launched from within Visual Studio.  
+    
+    > [!IMPORTANT]
+    > Attaching a running process for debugging is not supported.  
+    
 *   The targeted WebView debugging scenario is not supported.  
-
+    
 > [!IMPORTANT]
 > The following method of debugging is currently restricted to Win32 applications and Office add-ins.  
 
-Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or newer to debug your script in Visual Studio.  
+Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  
 
 Set up the debugger. 
 
@@ -47,7 +51,7 @@ Set up the debugger.
     
     1.  Navigate to **Apps & features** settings in Windows.  Search for it using the Windows task bar.  
     1.  Choose **Modify**.  
-    1.  Ensure the **Javascript diagnostics** and **Desktop Development in C++** checkboxes are chosen.  
+    1.  Turn on the **Javascript diagnostics** and **Desktop Development in C++** setting.  
         
         :::image type="complex" source="./media/appsandfeatures.png" alt-text="Apps & Features in Windows Settings" lightbox="./media/appsandfeatures.png":::
            **Apps & Features** in Windows **Settings**  
@@ -64,7 +68,7 @@ Set up the debugger.
         
 You are all set up and ready to debug.  
 
-To Debug, you may perform the following actions.  
+To Debug, complete the following actions.  
 
 1.  Set Breakpoints  
     *   Open the file you are trying to debug, hover to the left of the line number, and choose to set a breakpoint.
@@ -73,8 +77,8 @@ To Debug, you may perform the following actions.
            Visual Studio add breakpoint  
         :::image-end:::  
         
-        > [!NOTE]
-        > The JS/TS debug adapter does not do source path mapping.  You must open the exact same path associated with your WebView2.  
+        > [!IMPORTANT]
+        > The JS/TS debug adapter does not perform source path mapping.  You must open the exact same path associated with your WebView2.  
         
 1.  Run code.  
     *   To run the **Local Windows Debugger**, choose the appropriate build flavor and runtime environment and choose the green play button.  
@@ -90,26 +94,26 @@ To Debug, you may perform the following actions.
            Visual Studio **Debug Console**  
         :::image-end:::  
         
-        > [!NOTE]
+        > [!IMPORTANT]
         > When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
         
 ## [Visual Studio Code](#tab/visualstudiocode)  
 
-You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
+Use Visual Studio Code \(VS Code\) to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
 
 In VS Code, there are 5 basic steps for debugging.  
 
 1.  Install the debug adapter.  
     1.  In VS Code, open the **Extensions**.  
     1.  Search for JavaScript Debugger.  See the following figure.  
-    1.  Install any version of the adapter newer than 2020.6.208  
+    1.  Install the adapter version 2020.6.208 or later.  
         
         :::image type="complex" source="./media/jsdebugger.png" alt-text=" Visual Studio Code JavaScript Debugger extension" lightbox="./media/jsdebugger.png":::
             Visual Studio Code **JavaScript Debugger** extension  
         :::image-end:::  
         
     1.  In VS Code, open the **Settings** tab > **Extensions** and choose **JavaScript Debugger**.  
-    1.  Ensure the **Use the new in-preview JavaScript debugger for Node.js and Chrome.** checkbox is chosen.  
+    1.  Turn on the **Use the new in-preview JavaScript debugger for Node.js and Chrome.** setting.  
         
         :::image type="complex" source="./media/previewbox.png" alt-text=" Visual Studio Code JavaScript Debugger extension settings" lightbox="./media/previewbox.png":::
            Visual Studio Code **JavaScript Debugger** extension settings  
@@ -122,7 +126,7 @@ In VS Code, there are 5 basic steps for debugging.
            Visual Studio Code navigation  
         :::image-end:::  
 
-    1.  Within the dropdown menu choose a project to run.  
+    1.  On the **Run** tab, choose a project to run.  
         
         :::image type="complex" source="./media/scenario.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/scenario.png":::
            Visual Studio Code Run tab  
@@ -157,10 +161,10 @@ In VS Code, there are 5 basic steps for debugging.
         :::image-end:::
         
         > [!NOTE]
-        >  VS Code does not do source mapping, you must ensure you have opened and set breakpoints in the same file path that the WebView is using.  If the paths are not exact, VS Code is not able to resolve the breakpoint.  
+        > VS Code does not perform source mapping, you must ensure you have opened and set breakpoints in the same file path that the WebView is using.  If the paths are not exact, VS Code is not able to resolve the breakpoint.  
         
 1.  Run code.  
-    1.  Choose the launch configuration from the dropdown menu.  
+    1.  On the **Run** tab, choose the launch configuration.  
     1.  To start debugging, choose the green run button.  
         
         :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/runvs.png":::
@@ -176,7 +180,11 @@ In VS Code, there are 5 basic steps for debugging.
         
 **Advanced Settings**:  
 
-*   Targeted Webview debugging. \(For multiple WebView instances\)  
+*   Targeted Webview debugging.  
+    
+    > [!NOTE]
+    > Use for multiple WebView instances.  
+      
     *   Open `launch.json` file and complete the following steps.  
         1.  Change `useWebview` parameter value to `Advanced`.  
         1.  Add `urlFilter` parameter.  The `urlFilter` parameter is used as a string comparison parameter on the URL to which each WebView is navigated.  
@@ -239,7 +247,7 @@ In VS Code, there are 5 basic steps for debugging.
         :::row-end:::  
         
 *   Add-In Debugging.  
-    *   If you need to debug the add-in more deeply, you may load the source project in a second instance of VS Code and debug the add-in.  
+    *   If you need to debug the add-in more deeply, load the source project in a second instance of VS Code and debug the add-in.  
         1.  Set the debugServer parameter for that cross-process communication port.  
             
             ```csharp
