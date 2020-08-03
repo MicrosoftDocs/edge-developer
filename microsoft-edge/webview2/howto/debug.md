@@ -23,7 +23,7 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) and choose `Inspect`.  
     
-:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="/media/breakpoint.png":::
+:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/breakpoint.png":::
     DevTools debugging  
 :::image-end:::  
 
@@ -69,7 +69,7 @@ To Debug, you may perform the following actions.
 1.  Set Breakpoints  
     *   Open the file you are trying to debug, hover to the left of the line number, and choose to set a breakpoint.
         
-        :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio add breakpoint" lightbox="/media/breakpoint.png":::
+        :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio add breakpoint" lightbox="./media/breakpoint.png":::
            Visual Studio add breakpoint  
         :::image-end:::  
         
@@ -79,14 +79,14 @@ To Debug, you may perform the following actions.
 1.  Run code.  
     *   To run the **Local Windows Debugger**, choose the appropriate build flavor and runtime environment and choose the green play button.  
         
-        :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Local Windows Debugger" lightbox="/media/run.png":::
+        :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Local Windows Debugger" lightbox="./media/run.png":::
            Visual Studio **Local Windows Debugger**  
         :::image-end:::  
 
 1.  View **Debug Console**.  
     *   The application runs and the debugger connects after the first webview2 is created.  Any pending debug output is displayed.  
         
-        :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console" lightbox="/media/console.png":::
+        :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console" lightbox="./media/console.png":::
            Visual Studio **Debug Console**  
         :::image-end:::  
         
@@ -104,27 +104,27 @@ In VS Code, there are 5 basic steps for debugging.
     1.  Search for JavaScript Debugger.  See the following figure.  
     1.  Install any version of the adapter newer than 2020.6.208  
         
-        :::image type="complex" source="./media/jsdebugger.png" alt-text=" Visual Studio Code JavaScript Debugger extension" lightbox="/media/jsdebugger.png":::
+        :::image type="complex" source="./media/jsdebugger.png" alt-text=" Visual Studio Code JavaScript Debugger extension" lightbox="./media/jsdebugger.png":::
             Visual Studio Code **JavaScript Debugger** extension  
         :::image-end:::  
         
     1.  In VS Code, open the **Settings** tab > **Extensions** and choose **JavaScript Debugger**.  
     1.  Ensure the **Use the new in-preview JavaScript debugger for Node.js and Chrome.** checkbox is chosen.  
         
-        :::image type="complex" source="./media/previewbox.png" alt-text=" Visual Studio Code JavaScript Debugger extension settings" lightbox="/media/previewbox.png":::
+        :::image type="complex" source="./media/previewbox.png" alt-text=" Visual Studio Code JavaScript Debugger extension settings" lightbox="./media/previewbox.png":::
            Visual Studio Code **JavaScript Debugger** extension settings  
         :::image-end:::  
 
 1.  Configure the debug adapter.  
     1.  In VS Code, open the **Run** tab.  
     
-        :::image type="complex" source="./media/runbutton.png" alt-text=" Visual Studio Code navigation" lightbox="/media/runbutton.png":::
+        :::image type="complex" source="./media/runbutton.png" alt-text=" Visual Studio Code navigation" lightbox="./media/runbutton.png":::
            Visual Studio Code navigation  
         :::image-end:::  
 
     1.  Within the dropdown menu choose a project to run.  
         
-        :::image type="complex" source="./media/scenario.png" alt-text=" Visual Studio Code Run tab" lightbox="/media/scenario.png":::
+        :::image type="complex" source="./media/scenario.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/scenario.png":::
            Visual Studio Code Run tab  
         :::image-end:::
         
@@ -152,7 +152,7 @@ In VS Code, there are 5 basic steps for debugging.
 1.  Set breakpoints.  
     1.  In VS Code, open the file you want to debug.  Set the breakpoint \(either hover on the line and select `F9` or choose the breakpoint column in the editor\).  
         
-        :::image type="complex" source="./media/breakpointvs.png" alt-text="Visual Studio Code Debug Output for launch.json " lightbox="/media/breakpointvs.png":::
+        :::image type="complex" source="./media/breakpointvs.png" alt-text="Visual Studio Code Debug Output for launch.json " lightbox="./media/breakpointvs.png":::
            Visual Studio Code Debug Output for `launch.json`  
         :::image-end:::
         
@@ -163,14 +163,14 @@ In VS Code, there are 5 basic steps for debugging.
     1.  Choose the launch configuration from the dropdown menu.  
     1.  To start debugging, choose the green run button.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Run tab" lightbox="/media/runvs.png":::
+        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/runvs.png":::
            Visual Studio Code Run tab  
         :::image-end:::  
         
 1.  View results.  
     *   Observe Debug Output  
         
-        :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="/media/resultsvs.png":::
+        :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/resultsvs.png":::
            Visual Studio Code Debug Console  
         :::image-end:::  
         
@@ -227,12 +227,12 @@ In VS Code, there are 5 basic steps for debugging.
             
         :::row:::
            :::column span="":::
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Visual Studio Code Debug Output" lightbox="/media/tracelog.png":::
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Visual Studio Code Debug Output" lightbox="./media/tracelog.png":::
                  Visual Studio Code Debug Output  
               :::image-end:::  
            :::column-end:::
            :::column span="":::
-              :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="/media/verbose.png":::
+              :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="./media/verbose.png":::
                  Verbose Output  
               :::image-end:::  
            :::column-end:::
