@@ -181,12 +181,6 @@ Guest mode and InPrivate browsing are disabled if web filtering or activity repo
 
 The family group organizer may stop the data collection from the family safety portal.  For more information about Microsoft family safety features, see [What is a Microsoft family group?][MicrosoftSupport12413]  
 
-## Feedback  
-
-The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, open **Settings and more** > **Help and feedback** and select **Send feedback**.  For Progressive Web Apps \(PWAs\), open **Settings and more (...)** and select **Send feedback to Microsoft**.  You must provide details about the feedback, but all other information is optional.  If an email is detected from your Microsoft Edge profile, it is pre-populated, along with the current URL of the site you are on and relevant diagnostic data.  The diagnostic data may include data about Microsoft Edge features you turned on and your usage of the browser.  A screenshot, files from your device, and recording of your browser may also be optionally included.  The optional screenshot, files, or recording you provide may include personally identifiable information.  The data is only used for diagnostic and product improvement purposes.  
-
-User feedback is securely sent to Microsoft using HTTPS and stored on secure Microsoft servers.  If you include your email address and the **Improve Microsoft products by sending crash reports and data about how you use the browser** setting is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device is associated with your feedback.  All diagnostic data, including diagnostic logs, recordings, and attachments, are stored for up to 30 days.  The remaining feedback data, including an optional screenshot, is stored for up to 15 months.  Make a [request][MicrosoftConcernPrivacy] to delete your feedback if you provided an email with your feedback item.  
-
 ## Geolocation  
 
 Microsoft Edge supports the [Geolocation API][W3cGeolocationApiMain], which allows websites to access your location information with your permission.  Websites may ask for your location, for example, when trying to find the closest coffee shop near you.  Microsoft Edge always asks for your permission before granting websites access to your location.  To manage the permission or to always block sites from accessing your location, go to `edge://settings/content/location`.  
@@ -482,9 +476,15 @@ If WIP is turned on for your version of Microsoft Edge, the browser collects eve
 
 ## Thank you!  
 
-Microsoft Edge is made possible by the [Chromium][ChromiumMain] open source project and other open source software.  To view all of the software credits, go to `edge://credits/`.  [Google Chrome's Privacy Whitepaper][GoogleChromePrivacyWhitepaper] was used as a source for gathering related information about the Chromium open source project.  
+Microsoft Edge is made possible by the [Chromium][ChromiumMain] open source project and other open source software.  To view all of the software credits, go to `edge://credits`.  [Google Chrome Privacy Whitepaper][GoogleChromePrivacyWhitepaper] was used as a source for gathering related information about the Chromium open source project.  
 
-Microsoft Edge is committed to protecting and respecting your privacy while giving you the transparency and control you deserve.  Reach out to [@MSEdgeDev][TwitterMsedgedev] on Twitter or submit feedback by opening **Settings and more (...)** > **Help and feedback** and selecting **Send feedback** with questions or comments.  
+<!--Microsoft Edge is committed to protecting and respecting your privacy while giving you the transparency and control you deserve.  Reach out to [@MSEdgeDev][TwitterMsedgedev] on Twitter or submit feedback by opening **Settings and more (...)** > **Help and feedback** and selecting **Send feedback** with questions or comments.  -->  
+
+## Getting in touch with the Microsoft Edge team  
+
+The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, open **Settings and more** > **Help and feedback** and select **Send feedback**.  For Progressive Web Apps \(PWAs\), open **Settings and more (...)** and select **Send feedback to Microsoft**.  You must provide details about the feedback, but all other information is optional.  If an email is detected from your Microsoft Edge profile, it is pre-populated, along with the current URL of the site you are on and relevant diagnostic data.  The diagnostic data may include data about Microsoft Edge features you turned on and your usage of the browser.  A screenshot, files from your device, and recording of your browser may also be optionally included.  The optional screenshot, files, or recording you provide may include personally identifiable information.  The data is only used for diagnostic and product improvement purposes.  
+
+User feedback is securely sent to Microsoft using HTTPS and stored on secure Microsoft servers.  If you include your email address and the **Improve Microsoft products by sending crash reports and data about how you use the browser** setting is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device is associated with your feedback.  All diagnostic data, including diagnostic logs, recordings, and attachments, are stored for up to 30 days.  The remaining feedback data, including an optional screenshot, is stored for up to 15 months.  Make a [request][MicrosoftConcernPrivacy] to delete your feedback if you provided an email with your feedback item.  
 
 <!-- links -->  
 
