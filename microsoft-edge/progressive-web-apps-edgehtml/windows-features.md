@@ -36,7 +36,7 @@ Set up your Windows app development environment in Visual Studio.
 
 1.  In your Windows Settings, turn on [Developer mode][WindowsUWPGetStartedEnable].  \(Type `developer mode` in the Windows searchbar to find it.\)  
 1.  Launch Visual Studio and **Create a new project...**  
-1.  Select the C# **Windows Application Packaging Project** template.  If you are using a previous version of Visual Studio, find the equivalent template under **Hosted Web App (Universal Windows)** or **Progressive Web App (Universal Windows)**.  
+1.  Select the Javascript **Progressive Web App (Universal Windows)** template within Visual Studio 2017.  
 1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and click **OK**.  
 
     ![Visual Studio selection dialog for UWP project target builds](media/vs-target-min-version.png)  
