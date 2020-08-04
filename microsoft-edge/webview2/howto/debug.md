@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Debugging WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 07/22/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,51 +16,40 @@ The goal of the Microsoft Edge WebView2 control is combining the best of both th
 
 ## Microsoft Edge DevTools  
 
-Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsMain] to debug web content displayed in WebView2 controls, in the same way that you would if you were using Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions.  
-
+Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you use Microsoft Edge.  To open the DevTools, set focus on the WebView window and then use any of the following actions.  
 *   Select `F12`.  
 *   Select `Ctrl`+`Shift`+`I`.  
-*   Open the context menu \(right-click\) and select `Inspect`.  
+*   Open the context menu \(right-click\) > select `Inspect`.  
 
 :::image type="complex" source="../media/f12.png" alt-text="Microsoft Edge DevTools" lightbox="../media/f12.png":::
    Microsoft Edge DevTools  
 :::image-end:::  
 
-> [!IMPORTANT]
-> When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Use `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
+> [!NOTE]
+> When you debug your application in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  Press `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
+
+> [!NOTE]
+> You may use the `--auto-open-devtools-for-tabs` command-line argument to open a new DevTools window when you first create a WebView.  <!--See `CreateCoreWebView2Controller` documentation for how to provide additional command-line arguments to the browser process.  See `LoaderOverride` registry key to examine different builds of WebView2 without modifying your application in the `CreateCoreWebView2Controller` documentation.  -->  
 
 ## Visual Studio  
 
-You may use Visual Studio to develop application code and debug scripts at the same time.  
+Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
 
-Keep the following things in mind.  
+:::image type="complex" source="../media/vs-js-diagnostics.jpg" alt-text="Visual Studio JavaScript diagnostics":::
+   Visual Studio JavaScript diagnostics  
+:::image-end:::  
 
-*   Visual Studio only supports debugging scripts when the app is launched from within Visual Studio.  \(Attaching a running process for debugging is not supported.\)  
-*   The targeted WebView debugging scenario is not supported.  
+<!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
 
-Use the script debugger in Visual Studio 2019 version 16.4 Preview 2 or later to debug your script in Visual Studio.  
+To enable WebView2 script debugging, open the context menu \(right-click\) on your project > select **Properties**.  
 
-Set up the debugger.  
+*   On **Configuration Properties**, select **Debugging**.  
+*   On the **Debugger Type** property, select **JavaScript (WebView2)** from the list of options. 
 
-*   Verify the **JavaScript diagnostics** component in **Desktop development with C++** workload is installed.  
-    
-    1.  Navigate to **Apps & features** settings in Windows.  Search for it using the Windows task bar.  
-    1.  Choose **Modify**.  
-    1.  Verify the **Javascript diagnostics** and **Desktop Development in C++** checkboxes are selected.  
-        
-        :::image type="complex" source="../media/appsandfeatures.png" alt-text="Apps & Features" lightbox="../media/appsandfeatures.png":::
-           Apps & Features  
-        :::image-end:::  
-        
-*   Enable WebView2 script debugging.  
-    1.  Hover on your project, open the context menu \(right-click\), and select **Properties**.  
-    1.  On **Configuration Properties**, select **Debugging**.  
-    1.  On the **Debugger Type** property, search the the list of options, and select **JavaScript (WebView2)**.  
-        
-        :::image type="complex" source="../media/enbjs.png" alt-text="Visual Studio JavaScript Debugger" lightbox="../media/enbjs.png":::
-           Visual Studio JavaScript Debugger  
-        :::image-end:::  
-        
+:::image type="complex" source="../media/vs-script-debugger.jpg" alt-text="Visual Studio JavaScript Debugger":::
+   Visual Studio JavaScript Debugger  
+:::image-end:::  
+
 <!--todo: Please update the image to use a red rectangle to outline the portion of the screen to highlight  -->  
 
 You are all set up and ready to debug.  
@@ -83,18 +72,22 @@ To Debug, complete the following actions.
         
 ## Visual Studio Code  
 
-You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2MainChromiumWebviewApplications].  
+You may use Visual Studio Code to debug scripts that run in WebView2 controls.  For more information, see [Microsoft Edge (Chromium) WebView Applications][GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications].  
 
 <!--todo:  add See also heading  -->  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback.  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedback] to submit feature requests or bug reports.  
+Help build a richer WebView2 experience by sharing your feedback.  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain] to submit feature requests or bug reports.  
+
+<!--## Debugging  
+
+Open DevTools with the normal shortcuts: `F12` or `Ctrl+Shift+I`. You can use the `--auto-open-devtools-for-tabs` command argument switch to have the DevTools window open immediately when first creating a WebView. See CreateCoreWebView2Controller documentation for how to provide additional command line arguments to the browser process. Check out the LoaderOverride registry key for trying out different builds of WebView2 without modifying your application in the CreateCoreWebView2Controller documentation.  -->  
 
 <!-- links -->  
 
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools"  
 
-[GithubMicrosoftVscodeEdgeDebug2MainChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView applications - VS Code - Debugger for Microsoft Edge | GitHub"  
+[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
+[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView applications - VS Code - Debugger for Microsoft Edge - microsoft/vscode-edge-debug2 | GitHub"  

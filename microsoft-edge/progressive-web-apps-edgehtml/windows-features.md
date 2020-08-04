@@ -18,9 +18,13 @@ PWAs installed on Windows 10 enjoy [all the benefits][PwaIndexWindows10] of runn
 *   Launching / navigating your app through Cortana voice commands  
 *   Integrating with the Windows OS \(through the Windows Action Center, desktop taskbar, and context menus\)  
 
-... and these are only a few of the added possibilities for your PWA \(EdgeHTML\) on Windows!  
+These are only a few of the added possibilities for your PWA \(EdgeHTML\) on Windows.  
 
-This guide shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.  
+This article shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.  
+
+> [!IMPORTANT]
+> The examples and steps in this article require Visual Studio 2017. Visual Studio 2019 does not include the template used in this article. To download Visual Studio 2017, see [Visual Studio Downloads - 2017, 2015 & Previous Versions][PreviousVSDownloads]  
+
 
 ## Prerequisites  
 
@@ -337,3 +341,4 @@ And when you are ready, here is how \(and why!\) to [Submit your PWA to the Micr
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "App permissions"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Downloads"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visual Studio Preview"  
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio downloads"
