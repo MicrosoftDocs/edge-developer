@@ -3,7 +3,7 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA (EdgeHTML) for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
@@ -39,9 +39,9 @@ A PWA \(EdgeHTML\) installed as a Windows 10 app runs independently from the bro
 Set up your Windows app development environment in Visual Studio.  
 
 1.  In your Windows Settings, turn on [Developer mode][WindowsUWPGetStartedEnable].  \(Type `developer mode` in the Windows searchbar to find it.\)  
-1.  Launch Visual Studio and **Create a new project...**  
-1.  Select **Javascript** > **Windows Universal** > **Progressive Web App (Universal Windows)** from the list of project types in Visual Studio 2017.  
-1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and click **OK**.  
+1.  Launch Visual Studio and select **Create a new project...**.  
+1.  Choose **Javascript** > **Windows Universal** and select **Progressive Web App (Universal Windows)** from the list of project types in Visual Studio 2017.  
+1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and choose **OK**.  
 
     ![Visual Studio selection dialog for UWP project target builds](media/vs-target-min-version.png)  
 
@@ -94,7 +94,7 @@ Here is how to set up debugging for your PWA \(EdgeHTML\).
     
     This returns the global `Windows Runtime` object containing all of the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis).  This is your PWA \(EdgeHTML\) entrypoint to the [Universal Windows Platform][WindowsUWPIndex], and only exposed to web apps that run as Windows 10 apps (running outside the browser, in a `WWAHost.exe` process).  
     
-## Find Windows Runtime \(WinRT\) APIs  
+## Find Windows Runtime (WinRT) APIs  
 
 As an installed Windows app, your [PWA \(EdgeHTML\) has full access to native Windows Runtime APIs][WindowsRuntime]; identify what you need to use, obtain the requisite permissions, and employ feature detection to send that API request on supported environments.  Walk through this process to add a progressive enhancement for Windows desktop users of your PWA.  
 
