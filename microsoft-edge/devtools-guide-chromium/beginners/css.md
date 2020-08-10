@@ -2,7 +2,7 @@
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/07/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -32,13 +32,13 @@ The following article is the second tutorial in a series of tutorials that teach
 
 At the beginning of the tutorial, your site should look like the following figure.  
 
-:::image type="complex" type="content" source="../media/beginners-css-intro1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-intro1.msft.png":::
+:::image type="complex" source="../media/beginners-css-intro1.msft.png" alt-text="What your site currently looks like" lightbox="../media/beginners-css-intro1.msft.png":::
    What your site currently looks like  
 :::image-end:::  
 
 After you complete the tutorial, you site should look like the following figure.  
 
-:::image type="complex" type="content" source="../media/beginners-css-intro2.msft.png" alt-text="What your site should look like at the end of the tutorial" lightbox="../media/beginners-css-intro2.msft.png":::
+:::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="What your site should look like at the end of the tutorial" lightbox="../media/beginners-css-intro2.msft.png":::
    What your site should look like at the end of the tutorial  
 :::image-end:::  
 
@@ -68,13 +68,13 @@ To create your site, you must first complete the following actions to set up you
 
 1.  Open the [source code][GlitchCookedAmphibianIndex].  The in-focus tab of your browser is referenced as the **editing tab**.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-setup1.msft.png" alt-text="The editing tab" lightbox="../media/beginners-css-setup1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="The editing tab" lightbox="../media/beginners-css-setup1.msft.png":::
        The **editing** tab  
     :::image-end:::  
     
 1.  Choose **cooked-amphibian**.  A menu pops up.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-setup2.msft.png" alt-text="The Project Options menu" lightbox="../media/beginners-css-setup2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="The Project Options menu" lightbox="../media/beginners-css-setup2.msft.png":::
        The Project Options menu  
     :::image-end:::  
 
@@ -85,7 +85,7 @@ To create your site, you must first complete the following actions to set up you
     
 1.  Choose **Show** and select **In a New Window**.  Another tab opens with a live view of your site.  The in-focus tab of your browser is referenced as the **live tab**.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-setup3.msft.png" alt-text="The live tab" lightbox="../media/beginners-css-setup3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="The live tab" lightbox="../media/beginners-css-setup3.msft.png":::
        The **live tab**  
     :::image-end:::  
 
@@ -93,7 +93,7 @@ To create your site, you must first complete the following actions to set up you
 
 **CSS** is a computer language that determines the layout and styling of web pages.  The following figure is a paragraph with a border.  
 
-:::image type="complex" type="content" source="../media/beginners-css-red_paragraph.msft.png" alt-text="The text has been styled with CSS" lightbox="../media/beginners-css-red_paragraph.msft.png":::
+:::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="The text has been styled with CSS" lightbox="../media/beginners-css-red_paragraph.msft.png":::
    The text has been styled with CSS  
 :::image-end:::  
 
@@ -113,7 +113,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
 
 1.  Go back to the editing tab and open `index.html`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
        `index.html`  
     :::image-end:::  
     
@@ -133,7 +133,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
     
 1.  Go to the **live tab** to see the changes!  The background of the `<nav>` section is now blue.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-inline2.msft.png" alt-text="The background color behind the Home and Contact links is now blue" lightbox="../media/beginners-css-inline2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="The background color behind the Home and Contact links is now blue" lightbox="../media/beginners-css-inline2.msft.png":::
        The background color behind the **Home** and **Contact** links is now blue  
     :::image-end:::  
     
@@ -151,7 +151,7 @@ What if you wanted all of the `<p>` elements on your webpage to be styled the sa
 
 1.  In the live tab, choose **Contact** to go to the contact page.  Notice the font of **Home** and **Contact**.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-internal1.msft.png" alt-text="The Contact page" lightbox="../media/beginners-css-internal1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="The Contact page" lightbox="../media/beginners-css-internal1.msft.png":::
        The Contact page  
     :::image-end:::  
     
@@ -177,7 +177,7 @@ What if you wanted all of the `<p>` elements on your webpage to be styled the sa
 1.  Go back to the **live tab**.  
 1.  Choose **Contact** to go back to the contact page.  The font of **Home** and **Contact** has changed.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-internal2.msft.png" alt-text="The font of the Home and Contact links has changed" lightbox="../media/beginners-css-internal2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="The font of the Home and Contact links has changed" lightbox="../media/beginners-css-internal2.msft.png":::
        The font of the **Home** and **Contact** links has changed  
     :::image-end:::  
     
@@ -255,7 +255,7 @@ Complete the following actions to use commas to add multiple selectors to a rule
 1.  Go to the **live tab**.  
 1.  Choose the **Contact** link to go back to the contact page.  Now, **Contact Me!** has the same font as the navigation links.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-multiple1.msft.png" alt-text="The text Contact Me!  now has the same font as the Home and Contact links" lightbox="../media/beginners-css-multiple1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="The text Contact Me!  now has the same font as the Home and Contact links" lightbox="../media/beginners-css-multiple1.msft.png":::
        The text **Contact Me!** now has the same font as the **Home** and **Contact** links  
     :::image-end:::  
     
@@ -269,7 +269,7 @@ Complete the following actions to iterate on the style of an existing element, a
 
 1.  Hover on the **Home** link, open the contextual menu \(right-click\), and select **Inspect**.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link" lightbox="../media/beginners-css-add1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link" lightbox="../media/beginners-css-add1.msft.png":::
        Inspect the Home link  
     :::image-end:::  
     
@@ -279,14 +279,14 @@ Complete the following actions to iterate on the style of an existing element, a
        :::column span="":::
           In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is seen in the **Styles** tab below the DOM Tree.  
           
-          :::image type="complex" type="content" source="../media/beginners-css-add2.msft.png" alt-text="The Styles tab is below the DOM Tree" lightbox="../media/beginners-css-add2.msft.png":::
+          :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="The Styles tab is below the DOM Tree" lightbox="../media/beginners-css-add2.msft.png":::
              The **Styles** tab is below the DOM Tree  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           If your DevTools window is wide, the Styles tab is to the right of the DOM Tree.  
           
-          :::image type="complex" type="content" source="../media/beginners-css-add3.msft.png" alt-text="The Styles tab is to the right of the DOM Tree" lightbox="../media/beginners-css-add3.msft.png":::
+          :::image type="complex" source="../media/beginners-css-add3.msft.png" alt-text="The Styles tab is to the right of the DOM Tree" lightbox="../media/beginners-css-add3.msft.png":::
              The **Styles** tab is to the right of the DOM Tree  
           :::image-end:::  
        :::column-end:::
@@ -294,19 +294,19 @@ Complete the following actions to iterate on the style of an existing element, a
     
 1.  Choose the whitespace below `font-family: 'Courier New', Courier, Serif` to add a new declaration.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-add4.msft.png" alt-text="Add a new declaration" lightbox="../media/beginners-css-add4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="Add a new declaration" lightbox="../media/beginners-css-add4.msft.png":::
        Add a new declaration  
     :::image-end:::  
     
 1.  Type `color` and select `Enter`.  The autocomplete UI suggests options as you type.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-add5.msft.png" alt-text="Type color" lightbox="../media/beginners-css-add5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add5.msft.png" alt-text="Type color" lightbox="../media/beginners-css-add5.msft.png":::
        Type `color`  
     :::image-end:::  
     
 1.  Type `magenta` and select `Enter`.  All of the text on the contact page is now magenta.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-add6.msft.png" alt-text="Type magenta" lightbox="../media/beginners-css-add6.msft.png":::
+    :::image type="complex" source="../media/beginners-css-add6.msft.png" alt-text="Type magenta" lightbox="../media/beginners-css-add6.msft.png":::
        Type `magenta`  
     :::image-end:::  
     
@@ -316,13 +316,13 @@ Complete the following actions to edit existing declarations in DevTools.
 
 1.  Choose the magenta square next to `magenta`.  A color picker pops up.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-edit1.msft.png" alt-text="The Color Picker" lightbox="../media/beginners-css-edit1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="The Color Picker" lightbox="../media/beginners-css-edit1.msft.png":::
        The Color Picker  
     :::image-end:::  
     
 1.  Use the color picker to change the font text to a color that you like.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-edit2.msft.png" alt-text="Change the font color to purple with the Color Picker" lightbox="../media/beginners-css-edit2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-edit2.msft.png" alt-text="Change the font color to purple with the Color Picker" lightbox="../media/beginners-css-edit2.msft.png":::
        Change the font color to purple with the Color Picker  
     :::image-end:::  
     
@@ -332,13 +332,13 @@ Complete the following actions to add new rulesets in DevTools.
 
 1.  Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule" lightbox="../media/beginners-css-rule1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule" lightbox="../media/beginners-css-rule1.msft.png":::
        Add a new rule  
     :::image-end:::  
     
 1.  Replace `a` with `a:hover`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-rule2.msft.png" alt-text="Replace a with a:hover" lightbox="../media/beginners-css-rule2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule2.msft.png" alt-text="Replace a with a:hover" lightbox="../media/beginners-css-rule2.msft.png":::
        Replace `a` with `a:hover`  
     :::image-end:::  
     
@@ -347,19 +347,19 @@ Complete the following actions to add new rulesets in DevTools.
 1.  Choose between the brackets to add a new declaration.  
 1.  Type `background-color` for the declaration name and select `Enter`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-rule3.msft.png" alt-text="Type background-color" lightbox="../media/beginners-css-rule3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Type background-color" lightbox="../media/beginners-css-rule3.msft.png":::
        Type `background-color`  
     :::image-end:::  
     
 1.  Type `green` for the declaration value and select `Enter`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-rule4.msft.png" alt-text="Type green" lightbox="../media/beginners-css-rule4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule4.msft.png" alt-text="Type green" lightbox="../media/beginners-css-rule4.msft.png":::
        Type `green`  
     :::image-end:::  
     
 1.  Hover your mouse over the **Home** link.  The background of the link turns green.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-rule5.msft.png" alt-text="Hover over the Home link to reveal its green background" lightbox="../media/beginners-css-rule5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Hover over the Home link to reveal its green background" lightbox="../media/beginners-css-rule5.msft.png":::
        Hover over the Home link to reveal its green background  
     :::image-end:::  
     
@@ -385,37 +385,37 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
 
 1.  First, reload the live tab to remove the changes that you made in DevTools.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external1.msft.png" alt-text=" After you refresh the page, the changes that were made in DevTools are gone" lightbox="../media/beginners-css-external1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" After you refresh the page, the changes that were made in DevTools are gone" lightbox="../media/beginners-css-external1.msft.png":::
         After you refresh the page, the changes that were made in DevTools are gone  
     :::image-end:::  
     
 1.  Go back to the **editor tab** and open `contact.html`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external2.msft.png" alt-text="contact.html" lightbox="../media/beginners-css-external2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external2.msft.png" alt-text="contact.html" lightbox="../media/beginners-css-external2.msft.png":::
        contact.html  
     :::image-end:::  
     
 1.  Delete everything between `<style>` and `</style>`, including `<style>` and `</style>`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external3.msft.png" alt-text="The style tag has been removed" lightbox="../media/beginners-css-external3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external3.msft.png" alt-text="The style tag has been removed" lightbox="../media/beginners-css-external3.msft.png":::
        The style tag has been removed  
     :::image-end:::  
     
 1.  Go to `index.html` and remove `style="background-color: aliceblue;"` from the `<nav>` tag.  You have now removed all of the CSS that you previously added to your site.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external4.msft.png" alt-text="The inline style has been removed from the nav element" lightbox="../media/beginners-css-external4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="The inline style has been removed from the nav element" lightbox="../media/beginners-css-external4.msft.png":::
        The inline style has been removed from the nav element  
     :::image-end:::  
     
 1.  Choose **New File**.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external5.msft.png" alt-text="The new file dialog" lightbox="../media/beginners-css-external5.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="The new file dialog" lightbox="../media/beginners-css-external5.msft.png":::
        The new file dialog  
     :::image-end:::  
     
 1.  Replace `cool-file.js` with `style.css` and choose **Add File**.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external6.msft.png" alt-text="Type style.css" lightbox="../media/beginners-css-external6.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="Type style.css" lightbox="../media/beginners-css-external6.msft.png":::
        Type `style.css`  
     :::image-end:::  
     
@@ -433,7 +433,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
     }
     ```  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external7.msft.png" alt-text="Add code to style.css" lightbox="../media/beginners-css-external7.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external7.msft.png" alt-text="Add code to style.css" lightbox="../media/beginners-css-external7.msft.png":::
        Add code to `style.css`  
     :::image-end:::  
     
@@ -450,25 +450,25 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
     </head>
     ```  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external8.msft.png" alt-text="Link to style.css" lightbox="../media/beginners-css-external8.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external8.msft.png" alt-text="Link to style.css" lightbox="../media/beginners-css-external8.msft.png":::
        Link to `style.css`  
     :::image-end:::  
     
 1.  Open the `contact.html` file and add the link there.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external9.msft.png" alt-text="Link to style.css in contact.html" lightbox="../media/beginners-css-external9.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="Link to style.css in contact.html" lightbox="../media/beginners-css-external9.msft.png":::
        Link to `style.css` in `contact.html` 
     :::image-end:::  
     
 1.  Go to the **live tab**.  The home page now has the same font from the last section and a blue navigation section.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external10.msft.png" alt-text="The home page" lightbox="../media/beginners-css-external10.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="The home page" lightbox="../media/beginners-css-external10.msft.png":::
        The home page  
     :::image-end:::  
     
 1.  Choose the **Contact** link to go to the contact page.  The contact page has the same formatting as the home page.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-external11.msft.png" alt-text="The contact page" lightbox="../media/beginners-css-external11.msft.png":::
+    :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="The contact page" lightbox="../media/beginners-css-external11.msft.png":::
        The contact page  
     :::image-end:::  
     
@@ -484,19 +484,19 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
     
 1.  Go to the editing tab and paste the code into `contact.html`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-framework1.msft.png" alt-text="Link to the framework in contact.html" lightbox="../media/beginners-css-framework1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="Link to the framework in contact.html" lightbox="../media/beginners-css-framework1.msft.png":::
        Link to the framework in `contact.html`  
     :::image-end:::  
     
 1.  Open the `index.html` file and add the code there.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-framework2.msft.png" alt-text="Link to the framework in index.html" lightbox="../media/beginners-css-framework2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-framework2.msft.png" alt-text="Link to the framework in index.html" lightbox="../media/beginners-css-framework2.msft.png":::
        Link to the framework in `index.html`  
     :::image-end:::  
     
 1.  Go back to the live tab to view your changes.  While the background color of the `<nav>` element and the font of the `<li>` and `<a>` elements are the same, the font of the other elements has changed.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-framework3.msft.png" alt-text="Some of the font on the home page changed because of the framework" lightbox="../media/beginners-css-framework3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-framework3.msft.png" alt-text="Some of the font on the home page changed because of the framework" lightbox="../media/beginners-css-framework3.msft.png":::
        Some of the font on the home page changed because of the framework  
     :::image-end:::  
     
@@ -512,19 +512,19 @@ In the last section, you added Bootstrap to your web pages, which changed the fo
     
 1.  Add the previous code snippet to your `<header>` tag in `index.html`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-jumbotron1.msft.png" alt-text="Add classes in index.html" lightbox="../media/beginners-css-jumbotron1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron1.msft.png" alt-text="Add classes in index.html" lightbox="../media/beginners-css-jumbotron1.msft.png":::
        Add classes in `index.html`  
     :::image-end:::  
     
 1.  Add the code to your `<header>` tag in `contact.html`.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-jumbotron2.msft.png" alt-text="Add classes in contact.html" lightbox="../media/beginners-css-jumbotron2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron2.msft.png" alt-text="Add classes in contact.html" lightbox="../media/beginners-css-jumbotron2.msft.png":::
        Add classes in `contact.html`  
     :::image-end:::  
     
 1.  View your changes in the live tab.  There is a big, grey box around your header.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-jumbotron3.msft.png" alt-text="The header now has a big, grey box around it" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="The header now has a big, grey box around it" lightbox="../media/beginners-css-jumbotron3.msft.png":::
        The header now has a big, grey box around it  
     :::image-end:::  
     
@@ -565,25 +565,25 @@ Complete the following actions to bootstrap and provide classes for aligning ele
 1.  Go back to the editor tab and open `index.html`.  
 1.  Add `class="container-fluid"` to your `<body>` tag.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-align1.msft.png" alt-text="Add the container-fluid class" lightbox="../media/beginners-css-align1.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align1.msft.png" alt-text="Add the container-fluid class" lightbox="../media/beginners-css-align1.msft.png":::
        Add the `container-fluid` class  
     :::image-end:::  
     
 1.  Wrap your `<nav>` and `<main>` elements in `<div class="row">`.  Make sure to put `</div>` after `</main>` in order to properly close the new tag.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-align2.msft.png" alt-text="Add a row" lightbox="../media/beginners-css-align2.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="Add a row" lightbox="../media/beginners-css-align2.msft.png":::
        Add a row  
     :::image-end:::  
     
 1.  Add `class="col-3"` to your `<nav>` tag and `class="col-9"` to your `<main>` tag.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-align3.msft.png" alt-text="Add the col-3 and col-9 classes" lightbox="../media/beginners-css-align3.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align3.msft.png" alt-text="Add the col-3 and col-9 classes" lightbox="../media/beginners-css-align3.msft.png":::
        Add the `col-3` and `col-9` classes  
     :::image-end:::  
     
 1.  View your changes in the live tab.  
     
-    :::image type="complex" type="content" source="../media/beginners-css-align4.msft.png" alt-text="The nav content is now to the left of the main content" lightbox="../media/beginners-css-align4.msft.png":::
+    :::image type="complex" source="../media/beginners-css-align4.msft.png" alt-text="The nav content is now to the left of the main content" lightbox="../media/beginners-css-align4.msft.png":::
        The nav content is now to the left of the main content  
     :::image-end:::  
     
