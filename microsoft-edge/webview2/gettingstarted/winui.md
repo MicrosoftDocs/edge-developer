@@ -3,7 +3,7 @@ description:  Host web content in your WinUI app with the Microsoft Edge WebView
 title:  Microsoft Edge WebView2 for WinUI apps
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  07/23/2020
+ms.date:  08/10/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -263,7 +263,7 @@ For more information about WebView2 capabilities, see [WebView2 Concepts and How
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback.  Visit the Microsoft Edge WebView [feedback repo][GithubMicrosoftedgeWebviewfeedback] to submit feature requests or bug reports, or to search for known issues.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
