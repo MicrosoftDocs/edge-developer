@@ -21,28 +21,26 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Override The User Agent String From Microsoft Edge DevTools   
-
-
+# Override The User Agent String From Microsoft Edge DevTools  
 
 To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:  
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
+    :::image-end:::  
     
 1.  Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.  
 1.  In the **User agent** section, disable the **Select automatically** checkbox.  
     
-    ![Disabling Select automatically](../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Disable Select automatically" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Disable **Select automatically**  
+    :::image-end:::  
     
 1.  Select a user agent string from the list, or enter your own custom string.  
 
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

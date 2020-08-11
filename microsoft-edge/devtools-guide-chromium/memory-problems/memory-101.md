@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Memory Terminology   
-
-
+# Memory Terminology  
 
 This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.  
 
@@ -37,20 +31,20 @@ The terms and notions described here refer to the [Memory panel][DevtoolsMemoryP
 
 Think of memory as a graph with primitive types \(like numbers and strings\) and objects \(associative arrays\).  It might visually be represented as a graph with a number of interconnected points as follows:  
 
-> ##### Figure 1  
-> Visual representation of memory  
->![Visual representation of memory](../media/memory-problems-thinkgraph.msft.png)  
+:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+   Visual representation of memory  
+:::image-end:::  
 
 An object may hold memory in two ways:  
 
 *   Directly by the object.  
 *   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector \(**GC** for short\).  
 
-When working with the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in DevTools \(a tool for investigating memory issues found under "Memory"\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
+When working with the [Memory][DevtoolsMemoryProblemsHeapSnapshots] panel in DevTools \(a tool for investigating memory issues found under **Memory**\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
 
-> ##### Figure 2  
-> Shallow and Retained Size  
->![Shallow and Retained Size](../media/memory-problems-shallow-retained.msft.png)  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Shallow and Retained Size" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Shallow and Retained Size  
+:::image-end:::  
 
 ### Shallow size  
 
@@ -77,9 +71,9 @@ There are lots of internal GC roots, most of which are not interesting for the u
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected (GCd).  
 
-> ##### Figure 3  
-> You are not able to control how the root object is garbage collected \(GCd\).  
->![You are not able to control how the root object is garbage collected (GCd).](../media/memory-problems-dontcontrol.msft.png)  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="You are not able to control how the root object is garbage collected." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   You are not able to control how the root object is garbage collected.  
+:::image-end:::  
 
 Whatever is not reachable from the root gets garbage collected \(GCd\).  
 
@@ -90,14 +84,14 @@ Whatever is not reachable from the root gets garbage collected \(GCd\).
 
 The heap is a network of interconnected objects.  In the mathematical world, this structure is called a **graph** or memory graph.  A graph is constructed from **nodes** connected by means of **edges**, both of which are given labels.  
 
-*   **Nodes**  \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
-*   **Edges**  are labelled using the names of **properties**.  
+*   **Nodes** \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
+*   **Edges** are labelled using the names of **properties**.  
 
 Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
-> ##### Figure 4  
-> Distance from root  
->![Distance from root](../media/memory-problems-root.msft.png)  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance from root" lightbox="../media/memory-problems-root.msft.png":::
+   Distance from root  
+:::image-end:::  
 
 ## Dominators  
 
@@ -111,15 +105,15 @@ In the following figure, the following statement are true.
 *   Node 5 dominates node 8  
 *   Node 6 dominates node 7  
 
-> ##### Figure 5  
-> Dominator tree structure  
->![Dominator tree structure](../media/memory-problems-dominatorsspanning.msft.png)  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Dominator tree structure" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Dominator tree structure  
+:::image-end:::  
 
 In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
 
-> ##### Figure 6  
-> Animated dominator illustration  
->![Animated dominator illustration](../media/memory-problems-dominators.msft.gif)  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Animated dominator illustration" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Animated dominator illustration  
+:::image-end:::  
 
 ## V8 specifics  
 
@@ -164,14 +158,13 @@ When there are a small number of properties, the properties are stored internall
 
 **Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access][V8FastProperties].  
 
-
 ### Object groups  
 
 Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, thus forming a connected graph.  Note that native objects are not represented in the JavaScript heap  —  that is why native objects have zero size. Instead, wrapper objects are created.  
 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Find and fix problems with the Microsoft Edge DevTools Issues tool   
-
-
+# Find and fix problems with the Microsoft Edge DevTools Issues tool  
 
 The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.  Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.  
 
@@ -39,7 +33,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
 > 
 > The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.  
 
-## Open the Issues tool in the DevTools drawer   
+## Open the Issues tool in the DevTools drawer  
 
 1.  Visit a page, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.  
 1.  [Open DevTools][DevtoolsOpen].  
@@ -72,7 +66,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
        **Issues** tool in the DevTools Drawer with three cookie issues  
     :::image-end:::  
     
-## View items in the Issues tool   
+## View items in the Issues tool  
 
 The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.  
 
@@ -95,12 +89,12 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
        Affected resources open in the **Issues** tool in the DevTools Drawer  
     :::image-end:::  
     
-## View issues in context   
+## View issues in context  
 
 1.  Select a resource link to view the item in the appropriate context within DevTools.  In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.  
     
     :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="View the affected cookie in the DevTools Network panel" lightbox="../media/issues-tab-view-request.msft.png":::
-       View the affected cookie in the DevTools Network panel  
+       View the affected cookie in the DevTools **Network** panel  
     :::image-end:::  
 
 1.  Scroll to view the item with a problem: for the following example, the `ck02` cookie.  Hover over the **SameSite** column to see the `None` value that the issue detected.  
@@ -109,7 +103,7 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
        `None` value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel  
     :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

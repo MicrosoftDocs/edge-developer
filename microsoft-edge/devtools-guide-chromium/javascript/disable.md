@@ -21,28 +21,28 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Disable JavaScript With Microsoft Edge DevTools  
 
-
-
-
-# Disable JavaScript With Microsoft Edge DevTools   
-
-
-
-To see how a web page looks and behaves when JavaScript is disabled:  
+Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.  
 
 1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    ![The Command Menu](../media/javascript-console-command.msft.png)  
+    :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
+       The **Command Menu**  
+    :::image-end:::  
     
 1.  Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.  
     
-    ![Selecting Disable JavaScript in the Command Menu](../media/javascript-console-command-javascript.msft.png)  
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Selecting Disable JavaScript in the Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
+       Select **Disable JavaScript** in the **Command Menu**  
+    :::image-end:::  
     
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.  
     
-    ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.msft.png)  
+    :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The warning icon next to Sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+       The warning icon next to **Sources**  
+    :::image-end:::  
 
 JavaScript remains disabled in this tab for as long as you have DevTools open.  
 
@@ -53,9 +53,10 @@ Complete the following actions to re-enable JavaScript.
 1.  Open the **Command Menu** again and run the `Enable JavaScript` command.  
 1.  Close DevTools.  
 
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  

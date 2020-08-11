@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Mark Content Scripts as Library Code   
-
-
+# Mark Content Scripts as Library Code  
 
 When using the **Sources** panel of Microsoft Edge DevTools to [step through code][DevToolsJavascriptStepThroughCode], sometimes you pause on code that you do not recognize.  You probably paused on code for one of the Microsoft Edge Extensions that you installed.  Complete the following steps to not pause on extension code.  
 
@@ -36,9 +30,11 @@ When using the **Sources** panel of Microsoft Edge DevTools to [step through cod
 1.  Select the **Library code** tab which opens the **Framework Library Code** section of **Settings**.  
 1.  Enable the **Mark content scripts as Library code** checkbox.  
     
-    ![Enable the Mark content scripts as Library code checkbox](../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)  
+    :::image type="complex" source="../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enable the Mark content scripts as Library code checkbox" lightbox="../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+       Enable the **Mark content scripts as Library code** checkbox  
+    :::image-end:::  
     
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 

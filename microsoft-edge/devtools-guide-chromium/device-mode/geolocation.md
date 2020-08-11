@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Override Geolocation With Microsoft Edge DevTools   
-
-
+# Override Geolocation with Microsoft Edge DevTools  
 
 Many websites take advantage of user location in order to provide a more relevant experience for the users.  For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.  
 
@@ -37,12 +31,16 @@ If you are building a UI that changes depending on where the user is located, yo
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
+    :::image-end:::  
     
 1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
 1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.  
     
-    ![Selecting Tokyo from the Geolocation list](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Select Tokyo from the Geolocation list" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       Select `Tokyo` from the **Geolocation** list  
+    :::image-end:::  
     
 ## Getting in touch with the Microsoft Edge DevTools team
 

@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Map Preprocessed Code to Source Code   
-
-
-
+# Map Preprocessed Code to Source Code  
 
 Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your source code to your compiled code.  
 
@@ -71,7 +64,9 @@ When running Source Maps in DevTools, you should notice that the JavaScript is n
 
 Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, click the **Customize and control DevTools** \(`...`\) button, and select **Settings**.  On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.  You may also check **Enable CSS Source Maps**.  
 
-![Enable Source Maps](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)  
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enable Source Maps" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+   **Enable JavaScript Source Maps**  
+:::image-end:::  
 
 ### Debugging with Source Maps  
 
@@ -97,7 +92,7 @@ Navigate to the following page.
 
 *   [demo][CssNinjaDemoSourceMapping]
 
-Follow these steps.  
+Complete the following actions.  
 
 1.  Open the DevTools and go to the **Sources** panel.  
 1.  Enter in a filename into the **_Name your code:_** input field.  
@@ -106,9 +101,9 @@ Follow these steps.
 
 If you expand the **_Sources_** sub-panel you now see a new file with the custom filename you entered earlier.  If you double-click to view this file it contains the compiled JavaScript for the original source.  On the last line, however, is a `// @sourceURL` comment indicating the original source file.  This may help you with debugging while working with language abstractions.  
 
-> ##### Figure 2
-> Working with sourceURL  
-> ![Working with sourceURL](../media/javascript-sources-page-coffeeeeeeee.msft.png)  
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Working with sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+   Working with `sourceURL`  
+:::image-end:::  
 
 ## Getting in touch with the Microsoft Edge DevTools team
 

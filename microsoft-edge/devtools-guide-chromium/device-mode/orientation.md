@@ -21,35 +21,35 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Simulate Device Orientation With Microsoft Edge DevTools  
 
-
-
-
-# Simulate Device Orientation With Microsoft Edge DevTools   
-
-
-
-To simulate different device orientations from Microsoft Edge DevTools:  
+Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
+    :::image-end:::  
     
 1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
 1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.  
     
-    ![Selecting Portrait upside down from the Orientation list](../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Select Portrait upside down from the Orientation list" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+       Select `Portrait upside down` from the **Orientation** list  
+    :::image-end:::  
     
     After selecting **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.  
     <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
     <!--todo: update links to alpha, beta, and gamma section when available -->  
     You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.  
     
-    ![The Orientation Model](../media/device-mode-console-sensors-orientation-custom.msft.png)  
+    :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Orientation Model" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+       The **Orientation Model**  
+    :::image-end:::  
     
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

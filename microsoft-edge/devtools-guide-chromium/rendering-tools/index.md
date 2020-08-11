@@ -21,14 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Analyze Runtime Performance   
-
-
-
+# Analyze Runtime Performance 
 
 Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.  
 
@@ -129,7 +122,9 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 
 The **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.  
 
-![Forced synchronous layout](../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png)  
+:::image type="complex" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Forced synchronous layout" lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+   Forced synchronous layout  
+:::image-end:::  
 
 "Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See the previous figure.  
 
@@ -157,9 +152,9 @@ Compositing is where the painted parts of the page are put together for displayi
 Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.  
 
 <!--
-> ##### Old Figure 3  
-> Long paint times in timeline recording  
-> ![Long paint times in timeline recording](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png)  
+:::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+   Long paint times in timeline recording  
+:::image-end:::  
 -->  
 
 <!--
@@ -179,7 +174,7 @@ The following table describes some common paint and composite problems and poten
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
