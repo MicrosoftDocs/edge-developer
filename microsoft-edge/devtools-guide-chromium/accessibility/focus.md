@@ -2,7 +2,7 @@
 title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -32,11 +32,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 Suppose that you are testing the keyboard navigation accessibility of a page.  When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.  To track the focused element in DevTools:  
 
 1.  Open the **Console**.  
-1.  Click **Create Live Expression** ![Create Live Expression][ImageCreateIcon].  
-
-    > ##### Figure 1  
-    > Creating a **Live Expression**  
-    > ![Creating a Live Expression][ImageLiveExpression]  
+1.  Click **Create Live Expression** \(![Create Live Expression][ImageCreateIcon]\).  
+    
+    ![Creating a Live Expression](../media/accessibility-console-create-live-expression-empty.msft.png)  
     
 1.  Type `document.activeElement`.
 1.  Click outside of the **Live Expression** UI to save.
@@ -48,15 +46,13 @@ Since that expression always represents the focused element, you now have a way 
 *   Right-click the result and select **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
 *   Right-click the result and select **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
-[ImageCreateIcon]: /microsoft-edge/devtools-guide-chromium/media/create-live-expression-icon.msft.png  
-
-[ImageLiveExpression]: /microsoft-edge/devtools-guide-chromium/media/accessibility-console-create-live-expression-empty.msft.png "Figure 1: Creating a Live Expression"  
+[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 

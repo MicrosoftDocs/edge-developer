@@ -2,7 +2,7 @@
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,11 +49,9 @@ Once your code is paused, step through it, one line at a time, investigating con
 
 ### Step over line of code   
 
-When paused on a line of code containing a function that is not relevant to the problem you are debugging, click on the **Step over** ![Step over][ImageStepOverIcon] icon to run the function without stepping into it.  
+When paused on a line of code containing a function that is not relevant to the problem you are debugging, click the **Step over** \(![Step over][ImageStepOverIcon]\) button to run the function without stepping into it.  
 
-> ##### Figure 1  
-> Selecting **Step over**  
-> ![Selecting Step over][ImageSelectingStepOver]  
+![Selecting Step over](../media/javascript-source-page-debugger-step-over-next-function-call.msft.png)  
 
 For example, suppose you are debugging the following code:  
 
@@ -73,11 +71,9 @@ You are paused on `A`.  By pressing **Step over**, DevTools runs all the code in
 
 ### Step into line of code   
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, click on the **Step into** ![Step into][ImageStepIntoIcon] icon to investigate that function further.  
+When paused on a line of code containing a function call that is related to the problem you are debugging, click the **Step into** \(![Step into][ImageStepIntoIcon]\) button to investigate that function further.  
 
-> ##### Figure 2  
-> Selecting **Step into**  
-> ![Selecting Step into][ImageSelectingStepInto]  
+![Selecting Step into](../media/javascript-source-page-debugger-step-into-next-function-call.msft.png)  
 
 For example, suppose you are debugging the following code:  
 
@@ -97,11 +93,9 @@ You are paused on `A`.  By pressing **Step into**, DevTools runs this line of co
 
 ### Step out of line of code   
 
-When paused inside of a function that is not related to the problem you are debugging, click on the **Step out** ![Step out][ImageStepOutIcon] icon to run the rest of the code of the function.  
+When paused inside of a function that is not related to the problem you are debugging, click the **Step out** \(![Step out][ImageStepOutIcon]\) button to run the rest of the code of the function.  
 
-> ##### Figure 3  
-> Selecting **Step out**  
-> ![Selecting Step out][ImageSelectingStepOut]  
+![Selecting Step out](../media/javascript-source-page-debugger-step-out-of-current-function.msft.png)  
 
 For example, suppose you are debugging the following code:  
 
@@ -123,13 +117,11 @@ You are paused on `A`.  By pressing **Step out**, DevTools runs the rest of the 
 
 When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.  
 
-You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then click on the **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] icon, but there is a faster way.  
+You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then click the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button, but there is a faster way.  
 
 Right-click the line of code in which you are interested, and select **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.  
 
-> ##### Figure 4  
-> Selecting **Continue to here**  
-> ![Selecting Continue to here][ImageSelectingContinueToHere]  
+![Selecting Continue to here](../media/javascript-source-page-continue-to-here.msft.png)  
 
 ### Restart the top function of the call stack   
 
@@ -149,33 +141,25 @@ function factorial(n) {
 
 You are paused on `A`.  After clicking **Restart Frame**, you should be paused on `B`, without ever setting a breakpoint or pressing **Resume script execution**.  
 
-> ##### Figure 5  
-> Selecting **Restart Frame**  
-> ![Selecting Restart Frame][ImageSelectingRestartFrame]  
+![Selecting Restart Frame](../media/javascript-source-page-debugger-restart-frame.msft.png)  
 
 ### Resume script runtime   
 
-To continue the runtime after a pause of your script, click on the **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] icon.  DevTools runs the script up until the next breakpoint, if any.  
+To continue the runtime after a pause of your script, click the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button.  DevTools runs the script up until the next breakpoint, if any.  
 
-> ##### Figure 6  
-> Selecting **Resume script execution**  
-> ![Selecting Resume script execution][ImageSelectingResumeScriptExecution]  
+![Selecting Resume script execution](../media/javascript-sources-get-started-js-resume-script-runtime.msft.png)  
 
 #### Force script runtime   
 
-To ignore all breakpoints and force your script to resume running, click and hold the **Resume Script Execution** ![Resume Script Execution][ImageResumeScriptExecutionIcon] icon and then select **Force script execution** ![Force script execution][ImageForceScriptExecutionIcon].  
+To ignore all breakpoints and force your script to resume running, click and hold the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button and then select the **Force script execution** \(![Force script execution][ImageForceScriptExecutionIcon]\) button.  
 
-> ##### Figure 7  
-> Selecting **Force script execution**  
-> ![Selecting Force script execution][ImageSelectingForceScriptExecution]  
+![Selecting Force script execution](../media/javascript-sources-get-started-js-force-script-runtime.msft.png)  
 
 ### Change thread context   
 
 When working with web workers or service workers, click on a context listed in the **Threads** pane to switch to that context.  The blue arrow icon represents which context is currently selected.  
 
-> ##### Figure 8  
-> The **Threads** pane  
-> ![The Threads pane][ImageThreadsPane]  
+![The Threads pane](../media/javascript-sources-main-min-js-threads.msft.png)  
 
 For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** panel is showing the main script context.  By clicking on the service worker entry in the **Threads** pane, you should be able to switch to that context.  
 
@@ -186,9 +170,7 @@ While paused on a line of code, use the **Scope** pane to view and edit the valu
 *   Double-click a property value to change it.  
 *   Non-enumerable properties are greyed out.  
 
-> ##### Figure 9  
-> The **Scope** pane  
-> ![The Scope pane][ImageScopePane]  
+![The Scope pane](../media/javascript-sources-get-started-js-scope.msft.png)  
 
 ## View the current call stack   
 
@@ -198,9 +180,7 @@ While paused on a line of code, use the **Call Stack** pane to view the call sta
 
 Click on an entry to jump to the line of code where that function was called.  The blue arrow icon represents which function DevTools is currently highlighting.  
 
-> ##### Figure 10  
-> The **Call Stack** pane  
-> ![The Call Stack pane][ImageCallStackPane]  
+![The Call Stack pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png)  
 
 > [!NOTE]
 > When not paused on a line of code, the **Call Stack** pane is empty.  
@@ -213,9 +193,7 @@ This should be moved to an "Export debug data" H2 section when there is enough c
 
 Right-click anywhere in the **Call Stack** pane and select **Copy stack trace** to copy the current call stack to the clipboard.  
 
-> ##### Figure 11  
-> Selecting **Copy Stack Trace**  
-> ![Selecting Copy Stack Trace][ImageSelectingCopyStackTrace]  
+![Selecting Copy Stack Trace](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png)  
 
 Below is an example of the output:  
 
@@ -249,9 +227,7 @@ To mark a script as **Library code** from the **Editor** pane:
 1.  Right-click anywhere.  
 1.  Select **Mark as Library code**.  
 
-> ##### Figure 12  
-> Marking a script as **Library code** from the **Editor** pane  
-> ![Marking a script as Library code from the Editor pane][ImageMarkEditorPane]  
+![Marking a script as Library code from the Editor pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png)  
 
 ### Mark a script as Library code from the Call Stack pane  
 
@@ -260,9 +236,7 @@ To mark a script as **Library code** from the **Call Stack** pane:
 1.  Right-click on a function from the script.  
 1.  Select **Mark as Library code**.  
 
-> ##### Figure 13  
-> Marking a script as **Library code** from the **Call Stack** pane  
-> ![Marking a script as Library code from the Call Stack pane][ImageMarkCallStackPane]  
+![Marking a script as Library code from the Call Stack pane](../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png)  
 
 ### Mark a script as Library code from Settings  
 
@@ -274,9 +248,7 @@ To mark a single script or pattern of scripts from Settings:
 1.  Enter the script name or a regex pattern of script names to mark as **Library code**.  
 1.  Click **Add**.  
 
-> ##### Figure 14  
-> Marking a script as **Library code** from Settings  
-> ![Marking a script as Library code from Settings][ImageMarkScriptSettings]  
+![Marking a script as Library code from Settings](../media/javascript-framework-library-code.msft.png)  
 
 ## Run snippets of debug code from any page   
 
@@ -288,21 +260,17 @@ See [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets] to learn mo
 
 Use the **Watch** pane to watch the values of custom expressions.  You may watch any valid JavaScript expression.  
 
-> ##### Figure 15  
-> The **Watch** pane  
-> ![The Watch pane][ImageWatchPane]  
+![The Watch pane](../media/javascript-sources-get-started-js-watch.msft.png)  
 
-*   Click on the **Add Expression** ![Add Expression][ImageAddExpressionIcon] icon to create a new watch expression.  
-*   Click on the **Refresh** ![Refresh][ImageRefreshIcon] icon to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover over an expression and click on the **Delete Expression** ![Delete Expression][ImageDeleteExpressionIcon] icon to delete it.  
+*   Click the **Add Expression** \(![Add Expression][ImageAddExpressionIcon]\) button to create a new watch expression.  
+*   Click the **Refresh** \(![Refresh][ImageRefreshIcon]\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
+*   Hover over an expression and click the **Delete Expression** \(![Delete Expression][ImageDeleteExpressionIcon]\) button to delete it.  
 
 ## Make a minified file readable   
 
-Click on the **Format** ![Format][ImageFormatIcon] icon to make a minified file human-readable.  
+Click the **Format** \(![Format][ImageFormatIcon]\) button to make a minified file human-readable.  
 
-> ##### Figure 16  
-> The **Format** button  
-> ![The Format button][ImageFormat]  
+![The Format button](../media/javascript-sources-html-non-minified.msft.png)  
 
 ## Edit a script   
 
@@ -314,55 +282,34 @@ To edit a script:
 1.  Make your changes in the **Editor** pane.  
 1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
 
-> ##### Figure 17  
-> The **Editor** pane  
-> ![The Editor pane][ImageEditorPane]  
+![The Editor pane](../media/javascript-sources-html-minified.msft.png)  
 
 ## Disable JavaScript   
 
 See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable].  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
-[ImageStepOverIcon]: /microsoft-edge/devtools-guide-chromium/media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: /microsoft-edge/devtools-guide-chromium/media/step-into-icon.msft.png  
-[ImageStepOutIcon]: /microsoft-edge/devtools-guide-chromium/media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: /microsoft-edge/devtools-guide-chromium/media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: /microsoft-edge/devtools-guide-chromium/media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: /microsoft-edge/devtools-guide-chromium/media/format-icon.msft.png  
-
-[ImageSelectingStepOver]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-over-next-function-call.msft.png "Figure 1: Selecting Step over"  
-[ImageSelectingStepInto]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-into-next-function-call.msft.png "Figure 2: Selecting Step into"  
-[ImageSelectingStepOut]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-step-out-of-current-function.msft.png "Figure 3: Selecting Step out"  
-[ImageSelectingContinueToHere]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-continue-to-here.msft.png "Figure 4: Selecting Continue to here"  
-[ImageSelectingRestartFrame]: /microsoft-edge/devtools-guide-chromium/media/javascript-source-page-debugger-restart-frame.msft.png "Figure 5: Selecting Restart Frame"  
-[ImageSelectingResumeScriptExecution]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-resume-script-runtime.msft.png "Figure 6: Selecting Resume script execution"  
-[ImageSelectingForceScriptExecution]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-force-script-runtime.msft.png "Figure 7: Selecting Force script execution"  
-[ImageThreadsPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-main-min-js-threads.msft.png "Figure 8: The Threads pane"  
-[ImageScopePane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-scope.msft.png "Figure 9: The Scope pane"  
-[ImageCallStackPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty.msft.png "Figure 10: The Call Stack pane"  
-[ImageSelectingCopyStackTrace]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png "Figure 11: Selecting Copy Stack Trace"  
-[ImageMarkEditorPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png "Figure 12: Marking a script as Library code from the Editor pane"  
-[ImageMarkCallStackPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png "Figure 13: Marking a script as Library code from the Call Stack pane"  
-[ImageMarkScriptSettings]: /microsoft-edge/devtools-guide-chromium/media/javascript-framework-library-code.msft.png "Figure 14: Marking a script as Library code from Settings"  
-[ImageWatchPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-get-started-js-watch.msft.png "Figure 15: The Watch pane"  
-[ImageFormat]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-html-non-minified.msft.png "Figure 16: The Format button"  
-[ImageEditorPane]: /microsoft-edge/devtools-guide-chromium/media/javascript-sources-html-minified.msft.png "Figure 17: The Editor pane"  
+[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
+[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
+[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
+[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
+[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
+[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
+[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
+[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsJavascriptDisable]: disable.md "Disable JavaScript With Microsoft Edge DevTools"  
-[DevToolsJavascriptGetStarted]: index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
-[DevToolsJavascriptSnippets]: snippets.md "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools"  
-
-[DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools"  
+[DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript With Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptGetStarted]: ./index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

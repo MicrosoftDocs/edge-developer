@@ -2,7 +2,7 @@
 title: Disable JavaScript With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,44 +34,31 @@ To see how a web page looks and behaves when JavaScript is disabled:
 1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    > ##### Figure 1  
-    > The Command Menu  
-    > ![The Command Menu][ImageCommandMenu]  
+    ![The Command Menu](../media/javascript-console-command.msft.png)  
     
 1.  Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.  
     
-    > ##### Figure 2  
-    > Selecting **Disable JavaScript** in the Command Menu  
-    > ![Selecting Disable JavaScript in the Command Menu][ImageDisableJS]  
+    ![Selecting Disable JavaScript in the Command Menu](../media/javascript-console-command-javascript.msft.png)  
     
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.  
     
-    > ##### Figure 3  
-    > The warning icon next to **Sources**  
-    > ![The warning icon next to Sources][ImageDisableJSWarning]  
+    ![The warning icon next to Sources](../media/javascript-console-javascript-disabled-warning.msft.png)  
 
 JavaScript remains disabled in this tab for as long as you have DevTools open.  
 
 You may want to reload the page to see if and how the page depends on JavaScript while loading.  
 
-To re-enable JavaScript:  
+Complete the following actions to re-enable JavaScript.  
 
-*   Open the **Command Menu** again and run the `Enable JavaScript` command.  
-*   Close DevTools.  
+1.  Open the **Command Menu** again and run the `Enable JavaScript` command.  
+1.  Close DevTools.  
 
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team
 
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command.msft.png "Figure 1: The Command Menu"  
-[ImageDisableJS]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-command-javascript.msft.png "Figure 2: Selecting Disable JavaScript in the Command Menu"  
-[ImageDisableJSWarning]: /microsoft-edge/devtools-guide-chromium/media/javascript-console-javascript-disabled-warning.msft.png "Figure 3: The warning icon next to Sources"  
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 <!-- links -->  
 
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
+[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

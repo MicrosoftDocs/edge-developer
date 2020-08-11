@@ -2,7 +2,7 @@
 title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,7 +39,7 @@ Think of memory as a graph with primitive types \(like numbers and strings\) and
 
 > ##### Figure 1  
 > Visual representation of memory  
->![Visual representation of memory][ImageThinkGraph]  
+>![Visual representation of memory](../media/memory-problems-thinkgraph.msft.png)  
 
 An object may hold memory in two ways:  
 
@@ -50,7 +50,7 @@ When working with the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in Dev
 
 > ##### Figure 2  
 > Shallow and Retained Size  
->![Shallow and Retained Size][ImageShallowRetained]  
+>![Shallow and Retained Size](../media/memory-problems-shallow-retained.msft.png)  
 
 ### Shallow size  
 
@@ -79,7 +79,7 @@ The memory graph starts with a root, which may be the `window` object of the bro
 
 > ##### Figure 3  
 > You are not able to control how the root object is garbage collected \(GCd\).  
->![You are not able to control how the root object is garbage collected (GCd).][ImageDontControl]  
+>![You are not able to control how the root object is garbage collected (GCd).](../media/memory-problems-dontcontrol.msft.png)  
 
 Whatever is not reachable from the root gets garbage collected \(GCd\).  
 
@@ -93,17 +93,17 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 *   **Nodes**  \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
 *   **Edges**  are labelled using the names of **properties**.  
 
-Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  Some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in [Figure 4](#figure-4) include distance: the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
 > ##### Figure 4  
 > Distance from root  
->![Distance from root][ImageRoot]  
+>![Distance from root](../media/memory-problems-root.msft.png)  
 
 ## Dominators  
 
 Dominator objects are comprised of a tree structure because each object has exactly one dominator.  A dominator of an object may lack direct references to an object it dominates; that is, the tree of the dominator is not a spanning tree of the graph.  
 
-In [Figure 5](#figure-5):  
+In the following figure, the following statement are true.  
 
 *   Node 1 dominates node 2  
 *   Node 2 dominates nodes 3, 4 and 6  
@@ -113,13 +113,13 @@ In [Figure 5](#figure-5):
 
 > ##### Figure 5  
 > Dominator tree structure  
->![Dominator tree structure][ImageDominatorsSpanning]  
+>![Dominator tree structure](../media/memory-problems-dominatorsspanning.msft.png)  
 
-In [Figure 6](#figure-6), node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
+In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
 
 > ##### Figure 6  
 > Animated dominator illustration  
->![Animated dominator illustration][ImageDominators]  
+>![Animated dominator illustration](../media/memory-problems-dominators.msft.gif)  
 
 ## V8 specifics  
 
@@ -171,22 +171,13 @@ Each **native objects** group is made up of objects that hold mutual references 
 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team
 
-
-
-<!-- image links -->  
-
-[ImageThinkGraph]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-thinkgraph.msft.png "Figure 1: Visual representation of memory"  
-[ImageShallowRetained]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-shallow-retained.msft.png "Figure 2: Shallow and Retained Size"  
-[ImageDontControl]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dontcontrol.msft.png "Figure 3: You are not able to control how the root object is garbage collected (GCd)."  
-[ImageRoot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-root.msft.png "Figure 4: Distance from root"  
-[ImageDominatorsSpanning]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominatorsspanning.msft.png "Figure 5: Dominator tree structure"  
-[ImageDominators]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominators.msft.gif "Figure 6: Animated dominator illustration"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems/heap-snapshots "/microsoft-edge/devtools-guide-chromium/media/memory-problems"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ../media/memory-problems/heap-snapshots "../media/memory-problems"  
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"  
 

@@ -2,7 +2,7 @@
 title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,27 +33,18 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    > ##### Figure 1  
-    > The Command Menu  
-    > ![The Command Menu][ImageCommandMenu]  
+    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)  
     
 1.  Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.  
 1.  In the **User agent** section, disable the **Select automatically** checkbox.  
     
-    > ##### Figure 2  
-    > Disabling **Select automatically**  
-    > ![Disabling Select automatically][ImageUserAgentDisableSelectAutomatically]  
+    ![Disabling Select automatically](../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png)  
     
 1.  Select a user agent string from the list, or enter your own custom string.  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team
 
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageUserAgentDisableSelectAutomatically]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png "Figure 2: Disabling Select automatically"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

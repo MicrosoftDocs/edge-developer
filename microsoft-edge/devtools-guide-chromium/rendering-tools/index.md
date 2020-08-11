@@ -2,7 +2,7 @@
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -84,9 +84,7 @@ Take a recording in the **Performance** panel.  Check the recording for large `R
 
 Click on a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.  
 
-> ##### Figure 1  
-> Long recalculate style  
-> ![Long recalculate style][ImageLongRecalculateStyle]
+![Long recalculate style](../media/rendering-tools-performance-recalculate-style-summary.msft.png)
 
 To reduce the impact of `Recalculate Style` events:  
 
@@ -131,11 +129,9 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 
 The **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.  
 
-> ##### Figure 2  
-> Forced synchronous layout  
-> ![Forced synchronous layout][ImageForcedSynchronousLayout]  
+![Forced synchronous layout](../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png)  
 
-"Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See [Figure 2](#figure-2).  
+"Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See the previous figure.  
 
 ### Layout: Problems  
 
@@ -163,7 +159,7 @@ Want to know how long painting takes or how often painting occurs?  Check the [E
 <!--
 > ##### Old Figure 3  
 > Long paint times in timeline recording  
-> ![Long paint times in timeline recording][ImageLongPaintTimes]  
+> ![Long paint times in timeline recording](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png)  
 -->  
 
 <!--
@@ -183,29 +179,23 @@ The following table describes some common paint and composite problems and poten
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team
 
-
-
-<!-- image links -->  
-
-[ImageLongRecalculateStyle]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-performance-recalculate-style-summary.msft.png "Figure 1: Long recalculate style"  
-[ImageForcedSynchronousLayout]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-recalculate-style-summary.msft.png "Figure 2: Forced synchronous layout"  
-<!--[ImageLongPaintTimes]: /microsoft-edge/devtools-guide-chromium/media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png "Old Figure 3: Long paint times in timeline recording"  -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Speed Up JavaScript Runtime"  
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed Up JavaScript Runtime | Microsoft Docs"  
 
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#enable-advanced-paint-instrumentation "Enable advanced paint instrumentation - Performance Analysis Reference"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Enable advanced paint instrumentation - Performance Analysis Reference | Microsoft Docs"
 
-<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: /microsoft-edge/devtools-guide-chromium/rendering-tools/forced-synchronous-layouts "Diagnose Forced Synchronous Layouts"  -->  
+<!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
 <!-- The Timeline Tool page is deprecated  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-javascript "Profile JavaScript - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#profile-painting "Profile painting - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#make-a-recording "Make a recording - How to Use the Timeline Tool"  -->  
-<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/timeline-tool#rendering-settings "Rendering settings - How to Use the Timeline Tool"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfileJavascript]: ../evaluate-performance/timeline-tool#profile-javascript "Profile JavaScript - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolProfilePainting]: ../evaluate-performance/timeline-tool#profile-painting "Profile painting - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRecording]: ../evaluate-performance/timeline-tool#make-a-recording "Make a recording - How to Use the Timeline Tool | Microsoft Docs"  -->  
+<!--[DevtoolsEvaluatePerformanceTimelineToolRenderingSettings]: ../evaluate-performance/timeline-tool#rendering-settings "Rendering settings - How to Use the Timeline Tool | Microsoft Docs"  -->  
 
 <!--[WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing "Avoid Large, Complex Layouts, and Layout Thrashing"  -->  
 <!--[WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime]: /web/fundamentals/performance/rendering/optimize-javascript-execution "Optimize JavaScript Runtime"  -->  

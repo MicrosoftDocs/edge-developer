@@ -2,7 +2,7 @@
 title: Navigate Microsoft Edge DevTools With Assistive Technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/11/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -248,28 +248,25 @@ The audit report is organized into sections that correspond with each of the aud
 
 To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perform An Audit** button.  
 
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team
 
-*   Send DevTools bug reports or feature requests to [Chromium Issue Tracker][MonorailChromiumIssues].  
-*   Send any feedback related to this document to [GitHub][GithubEdgeDeveloperNewIssue].  
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-<!--[DevtoolsAccessibilityReference]: reference.md "Accessibility Reference"  -->  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference"  -->  
+<!--[DevtoolsAccessibilityReference]: ./reference.md "Accessibility Reference | Microsoft Docs"  -->  
+<!--[DevtoolsAccessibilityReferencePane]: ./reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
 
-<!--[MicrosoftEdgeDevtoolsIndex]: ../index.md "Microsoft Edge DevTools"  -->  
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevtoolsConsoleIndex]: ../console/index.md "Console Overview"  
-[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS"  
-<!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element"  -->  
-<!--[DevtoolsDomIndex]: ../dom/index.md "Get Started With Viewing And Changing The DOM"  -->  
-<!--[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get Started With Viewing And Changing The DOM"  -->
-[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools"  
-[DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools Keyboard Shortcuts"  
-[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts"  
+<!--[MicrosoftEdgeDevtoolsIndex]: ../index.md "Microsoft Edge DevTools | Microsoft Docs"  -->  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
+[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+<!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS Reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->  
+<!--[DevtoolsDomIndex]: ../dom/index.md "Get Started With Viewing And Changing The DOM | Microsoft Docs"  -->  
+<!--[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get Started With Viewing And Changing The DOM | Microsoft Docs"  -->
+[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"  
 [GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "New Issue - MicrosoftDocs/edge-developer | GitHub"  

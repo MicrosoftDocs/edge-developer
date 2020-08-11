@@ -2,7 +2,7 @@
 title: Override Geolocation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,25 +37,16 @@ If you are building a UI that changes depending on where the user is located, yo
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    > ##### Figure 1  
-    > The Command Menu  
-    > ![The Command Menu][ImageCommandMenu]  
+    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)  
     
 1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
 1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or select **Custom location** to enter custom longitude and latitude coordinates, or select **Location unavailable** to see how your site behaves when the user's location is not available.  
     
-    > ##### Figure 2  
-    > Selecting `Tokyo` from the **Geolocation** list  
-    > ![Selecting Tokyo from the Geolocation list][ImageGeolocationTokyo]  
+    ![Selecting Tokyo from the Geolocation list](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)  
     
-<!--## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team
 
-  -->  
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageGeolocationTokyo]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-geolocation-tokyo.msft.png "Figure 2: Selecting Tokyo from the Geolocation list"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

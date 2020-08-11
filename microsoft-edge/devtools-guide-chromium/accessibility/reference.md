@@ -2,7 +2,7 @@
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -66,9 +66,7 @@ To audit a page:
 1.  Go to the URL that you want to audit.  
 1.  In DevTools, click the **Audits** tab.  DevTools shows you various configuration options.  
     
-    > ##### Figure 1  
-    > Configuring audits  
-    > ![Configuring audits][ImageConfiguringAudits]  
+    ![Configuring audits](../media/accessibility-audits-pane.msft.png)  
     
     > [!NOTE]
     > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
@@ -79,21 +77,15 @@ To audit a page:
 1.  The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.  This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.  
 1.  Click **Run Audits**. After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
     
-    > ##### Figure 2  
-    > A report  
-    > ![A report][ImageReport]  
+    ![A report](../media/accessibility-audits-run-audits-result.msft.png)  
     
 1.  Click an audit to learn more about it.  
     
-    > ##### Figure 3  
-    > More information about an audit  
-    > ![More information about an audit][ImageAttributes]  
+    ![More information about an audit](../media/accessibility-audits-run-audits-result-issues-expanded.msft.png)  
     
-1.  Click **Learn More** to view the documentation of that audit.
+1.  Click **Learn More** to view the documentation of that audit.  
     
-    > ##### Figure 4  
-    > Viewing the documentation of an audit  
-    > ![Viewing the documentation of an audit][ImageAuditDocumentation]  
+    ![Viewing the documentation of an audit](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)  
     
 ### See also: aXe extension   
 
@@ -101,9 +93,7 @@ You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **A
 The aXe extension generally provides the same information, since it is the underlying engine that powers the Audits panel.  The aXe extension has a different UI and describes audits slightly differently.  
 One advantage that the aXe extension has over the **Audits** panel is that it enables you to inspect and highlight failing nodes.  
 
-> ##### Figure 5  
-> The aXe extension  
-> ![The aXe extension][ImageAxeExtension]  
+![The aXe extension](../media/accessibility-devtools-extension-axe-panel.msft.png)  
 
 ## The Accessibility pane   
 
@@ -113,11 +103,9 @@ To open the **Accessibility** pane:
 
 1.  Click the **Elements** tab.  
 1.  In the **DOM Tree**, select the element which you want to inspect.  
-1.  Click the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** ![More Tabs][ImageMoreTabsIcon] button.  
+1.  Click the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
 
-> ##### Figure 6  
-> Inspecting the `h1` element of the DevTools homepage in the **Accessibility** pane  
-> ![Inspecting the h1 element of the DevTools homepage in the Accessibility pane][ImageA11yPane]  
+![Inspecting the h1 element of the DevTools homepage in the Accessibility pane](../media/accessibility-elements-accessibility.msft.png)  
 
 ### View the position of an element in the accessibility tree   
 
@@ -125,9 +113,7 @@ The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  It 
 
 Inspect the position of an element in the accessibility tree from the [Accessibility pane](#the-accessibility-pane).  
 
-> ##### Figure 7  
-> The Accessibility Tree section  
-> ![The Accessibility Tree section][ImageAllyTree]  
+![The Accessibility Tree section](../media/accessibility-elements-accessibility-tree.msft.png)  
 
 ### View the ARIA attributes of an element   
 
@@ -135,9 +121,7 @@ ARIA attributes ensure that screen readers have all of the information that they
 
 View the ARIA attributes of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-> ##### Figure 8  
-> The ARIA Attributes section  
-> ![The ARIA Attributes section][ImageAriaAttributesSection]  
+![The ARIA Attributes section](../media/accessibility-elements-accessibility-aria-attributes.msft.png)  
 
 ### View the computed accessibility properties of an element   
 
@@ -148,9 +132,7 @@ Some accessibility properties are dynamically calculated by the browser.  These 
 
 View the computed accessibility properties of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-> ##### Figure 9  
-> The Computed (Accessibility) Properties section  
-> ![The Computed (Accessibility) Properties section][ImageComputedA11yPropertiesSection]  
+![The Computed (Accessibility) Properties section](../media/accessibility-elements-accessibility-computed-properties.msft.png)  
 
 ## View the contrast ratio of a text element in the Color Picker   
 
@@ -162,53 +144,32 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 1.  Click the **Elements** tab.  
 1.  In the **DOM Tree**, select the text element that you want to inspect.  
     
-    > ##### Figure 10  
-    > Inspecting a paragraph in the DOM Tree  
-    > ![Inspecting a paragraph in the DOM Tree][ImageInspectDomTree]  
+    ![Inspecting a paragraph in the DOM Tree](../media/accessibility-elements-paragraph-highlight.msft.png)  
     
 1.  In the **Styles** pane, click the color square next to the `color` value of the element.  
     
-    > ##### Figure 11  
-    > The `color` property of the element  
-    > ![The color property of the element][ImageColorElement]  
+    ![The color property of the element](../media/accessibility-elements-styles-paragraph-highlight-color.msft.png)  
     
-1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
+1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
     
-    > ##### Figure 12  
-    > The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of `13.97`  
-    > ![The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97][ImageColorPickerContrastRatio]  
+    ![The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97](../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png)  
     
 1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
     
-    > ##### Figure 13  
-    > The Contrast Ratio Line in the visual picker  
-    > ![The Contrast Ratio Line in the visual picker][ImageContrastRatioLine]  
+    ![The Contrast Ratio Line in the visual picker](../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png)  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
-[ImageMoreTabsIcon]: /microsoft-edge/devtools-guide-chromium/media/more-tabs-icon.msft.png  
+[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
-[ImageConfiguringAudits]: /microsoft-edge/devtools-guide-chromium/media/accessibility-audits-pane.msft.png "Figure 1: Configuring audits"  
-[ImageReport]: /microsoft-edge/devtools-guide-chromium/media/accessibility-audits-run-audits-result.msft.png "Figure 2: A figure"  
-[ImageAttributes]: /microsoft-edge/devtools-guide-chromium/media/accessibility-audits-run-audits-result-issues-expanded.msft.png "Figure 3: More information about an audit"  
-[ImageAuditDocumentation]: /microsoft-edge/devtools-guide-chromium/media/accessibility-web-dev-accessibility-audits-learn-more.msft.png "Figure 4: Viewing the documentation of an audit"  
-[ImageAxeExtension]: /microsoft-edge/devtools-guide-chromium/media/accessibility-devtools-extension-axe-panel.msft.png "Figure 5: The aXe extension"  
-[ImageA11yPane]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility.msft.png "Figure 6: Inspecting the h1 element of the DevTools homepage in the Accessibility pane"  
-[ImageAllyTree]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility-tree.msft.png "Figure 7: The Accessibility Tree section"  
-[ImageAriaAttributesSection]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility-aria-attributes.msft.png "Figure 8: The ARIA Attributes section"  
-[ImageComputedA11yPropertiesSection]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-accessibility-computed-properties.msft.png "Figure 9: The Computed (Accessibility) Properties section"  
-[ImageInspectDomTree]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-paragraph-highlight.msft.png "Figure 10: Inspecting a paragraph in the DOM Tree"  
-[ImageColorElement]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-styles-paragraph-highlight-color.msft.png "Figure 11: The color property of the element"  
-[ImageColorPickerContrastRatio]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png "Figure 12: The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97"  
-[ImageContrastRatioLine]: /microsoft-edge/devtools-guide-chromium/media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png "Figure 13: The Contrast Ratio Line in the visual picker"  
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology"  
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  
 

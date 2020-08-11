@@ -2,7 +2,7 @@
 title: Simulate Device Orientation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -35,42 +35,30 @@ To simulate different device orientations from Microsoft Edge DevTools:
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    > ##### Figure 1  
-    > The Command Menu  
-    > ![The Command Menu][ImageCommandMenu]  
+    ![The Command Menu](../media/device-mode-console-command-menu.msft.png)  
     
 1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
 1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.  
     
-    > ##### Figure 2  
-    > Selecting `Portrait upside down` from the **Orientation** list  
-    > ![Selecting Portrait upside down from the Orientation list][ImageOrientationPortraitUpsideDown]  
+    ![Selecting Portrait upside down from the Orientation list](../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png)  
     
     After selecting **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.  
     <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
     <!--todo: update links to alpha, beta, and gamma section when available -->  
     You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.  
     
-    > ##### Figure 3  
-    > The **Orientation Model**  
-    > ![The Orientation Model][ImageOrientationModel]  
+    ![The Orientation Model](../media/device-mode-console-sensors-orientation-custom.msft.png)  
+    
+## Getting in touch with the Microsoft Edge DevTools team
 
-<!--## Feedback   -->  
-
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageOrientationPortraitUpsideDown]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png "Figure 2: Selecting Portrait upside down from the Orientation list"  
-[ImageOrientationModel]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-sensors-orientation-custom.msft.png "Figure 3: The Orientation Model"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation \& Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
