@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Debugging WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2020
+ms.date: 08/10/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -78,7 +78,7 @@ You may use Visual Studio Code to debug scripts that run in WebView2 controls.  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback.  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain] to submit feature requests or bug reports.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!--## Debugging  
 
