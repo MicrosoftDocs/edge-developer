@@ -14,12 +14,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native application development features and tools.  When you develop your WebView2 application, you should debug your application.  This article outlines the different tools to use to debug both your web and native code in your WebView2 application.  
 
-> [!NOTE]
-> To debug multiple WebView2 controls in your application, use targeted WebView2 debugging.  Targeted WebView2 debugging is only supported in Visual Studio Code.  
-
-> [!IMPORTANT]
-> When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
-
 ## [Microsoft Edge DevTools](#tab/devtools)  
 
 Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.  
@@ -37,6 +31,9 @@ For more information, see [DevTools overview][DevtoolsGuideChromiumMain].
 ## [Visual Studio](#tab/visualstudio)  
 
 Visual Studio provides various debugging tools for web and native code in WebView2 applications.  In the Visual Studio section, the primarily focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 applications or Office add-ins only.  
+
+> [!IMPORTANT]
+> When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
 
 Before you begin, ensure the following requirements are met.  
 
@@ -95,6 +92,8 @@ Complete the following actions to debug your WebView2 application.
        Visual Studio **Debug Console**  
     :::image-end:::  
     
+* * *  
+
 ## See also  
 
 *   To get started using WebView2, see [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
