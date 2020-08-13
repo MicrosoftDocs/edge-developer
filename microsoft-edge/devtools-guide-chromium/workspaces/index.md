@@ -46,21 +46,20 @@ With Workspaces enabled, the CSS changes that you make within DevTools are saved
 ## Limitations  
 
 If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.  
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each uses source maps.  Devtools simply does support all the variations.  
+
+Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each uses source maps.  Devtools simply does support all of the variations.  
 
 Workspaces is known to not work with the following framework.  
 
 *   Create React App  
-
-<!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
-
+    
 ## Related feature: Local overrides  
 
 **Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a page, and you need to see those changes across page loads, but you do not care about mapping your changes to the source code of the page.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Step 1: Set up  
+## Step 1: Set-up  
 
 Complete the following actions, to get hands-on experience with Workspaces.  
 
@@ -77,7 +76,8 @@ Complete the following actions, to get hands-on experience with Workspaces.
     
     :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
        The Download Project button  
-    :::image-end:::    
+    :::image-end:::  
+
     -->  
     <!--1.  Close the tab.  -->  
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the directory is referred to as `~/Desktop/app`.  -->  
@@ -99,7 +99,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
           ``` 
        :::column-end:::
     :::row-end:::  
-
+    
 1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
@@ -122,7 +122,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
     :::image-end:::  
     
 1.  Choose **Add Folder To Workspace**.  
-1.  Select `~/Desktop/app`.  
+1.  Type `~/Desktop/app`.  
 1.  Choose **Allow** to give DevTools permission to read and write to the directory.  
     In the **Filesystem** tab, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.  These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.  
     
@@ -135,7 +135,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
 1.  Open `styles.css`.  
     
     > [!NOTE]
-    >The `color` property of `h1` elements is set to `fuchsia`.  
+    > The `color` property of `h1` elements is set to `fuchsia`.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="View styles.css in a text editor" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        View `styles.css` in a text editor  
@@ -150,16 +150,17 @@ Complete the following actions, to get hands-on experience with Workspaces.
     :::image-end:::  
     
 1.  Open `styles.css` in a text editor again.  The `color` property is now set to your favorite color.  
-1.  Refresh the page.  The color of the `<h1>` element is still set to your favorite color.  This works because when you made the change, DevTools saved the change to disk.  And then, when you refreshed the page, your local server served the modified copy of the file from disk.  
+1.  Refresh the page.  The color of the `<h1>` element is still set to your favorite color.  The process works because when you made the change, DevTools saved the change to disk.  And afterwars, when you refreshed the page, your local server served the modified copy of the file from disk.  
     
-## Step 3: Save an html change to disk  
+## Step 3: Save an HTML change to disk  
 
-### Change html from the Elements Panel  
+### Change HTML from the Elements Panel  
 
 You may make changes to the html from the Element Panel, but your changes to the DOM tree are not saved to disk and only effect the current browser session.  
+
 The DOM tree is not html.  
 
-<!--### Try changing html from the Elements panel  
+<!--### Try changing HTML from the Elements panel  
 
 > [!WARNING]
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
@@ -167,13 +168,13 @@ The DOM tree is not html.
 1.  Choose the **Elements** tab.  
 1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements tab" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
-       Attempt to change html from the DOM Tree of the **Elements** tab  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+       Attempt to change html from the DOM Tree of the **Elements** panel  
     :::image-end:::  
-
+    
 1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.  
-1.  Refresh the page.  The page reverts to its original title.  
-
+1.  Refresh the page.  The page reverts to the original title.  
+    
 #### Optional: Why it is not working  
 
 > [!NOTE]
@@ -184,26 +185,26 @@ The DOM tree is not html.
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
 *   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
-*   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by html, JavaScript, and CSS.  
+*   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
-In short, the **DOM Tree** `!==` html.  
+In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### Change html from the Sources panel  
+### Change HTML from the Sources panel  
 
 If you want to save a change to the html of the page, do it using the **Sources** panel.  
 
 1.  Choose the **Sources** tab.  
 1.  Choose the **Page** tab.  
-1.  Choose **(index)**.  The html for the page opens.  
+1.  Choose **(index)**.  The HTML for the page opens.  
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See the following figure.  
 1.  Select `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Refresh the page.  The `<h1>` element is still displaying the new text.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change html from the Sources panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Change html from the **Sources** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Change HTML from the **Sources** panel  
     :::image-end:::  
-
+    
 1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.  
     
 ## Step 4: Save a JavaScript change to disk  
@@ -222,7 +223,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 1.  Type `script`, then select **app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       Open `script.js` using the Open File dialog  
+       Open `script.js` using the **Open File** dialog  
     :::image-end:::  
     
     > [!NOTE]
@@ -239,10 +240,10 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 1.  Refresh the page.  
     
     > [!NOTE]
-    > The link on the page is now italic.  
+    > The link on the page is now italicized.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="The link on the page is now italic" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
-       The link on the page is now italic  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="The link on the page is now italicized" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+       The link on the page is now italicized  
     :::image-end:::  
     
 ## Next steps  
@@ -250,14 +251,15 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
-If you have more feedback on these topics or anything else, please use any of the channels below:
+If you have more feedback on these topics or anything else, please use any of the channels below:  
+
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  
--->  
+    -->  
 
 <!-- links -->  
 
-[DevToolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+[DevToolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  
 
