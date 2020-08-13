@@ -46,7 +46,7 @@ Before you begin, ensure the following requirements are met.
 
 Install and set up the script debugger tools in Visual Studio.  
 
-1.  Complete the following actions to install the JavaScript diagnostics component in Desktop development with C++.  
+1.  Complete the following actions to install the **JavaScript diagnostics** component in **Desktop development with C++**.  
     1.  In Windows, search using the Windows task bar for **Apps & features**.  
     1.  Choose the installed version of Visual Studio 2019, and then choose **Modify**.  
         
