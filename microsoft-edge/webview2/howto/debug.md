@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Get started debugging WebView2 applications  
+# Getting started debugging WebView2 applications  
 
 The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native application development features and tools.  When you develop your WebView2 application, you should debug your application.  This article outlines the different tools to use to debug both your web and native code in your WebView2 application.  
 
@@ -30,8 +30,7 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 
 For more information, see [DevTools overview][DevtoolsGuideChromiumMain].  
     
-:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/breakpoint.png":::
-   DevTools debugging  
+:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::DevTools debugging  
 :::image-end:::  
 
 ## [Visual Studio](#tab/visualstudio)  
