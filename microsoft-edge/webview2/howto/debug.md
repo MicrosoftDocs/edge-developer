@@ -153,71 +153,73 @@ In Visual Studio Code, complete the following actions to debug your code.
         :::image-end:::  
         
 1.  Open the **Debug Console**, and view any errors from the debugger.  
-        
-        :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/resultsvs.png":::
-           Visual Studio Code Debug Console  
-        :::image-end:::  
-        
+    
+    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/resultsvs.png":::
+       Visual Studio Code Debug Console  
+    :::image-end:::  
+    
 **Advanced Settings**:  
 
 *   Targeted Webview debugging.  
     
     Open `launch.json` and complete the following actions to use targeted Webview debugging.  
     
-        1.  Change `useWebview` parameter value to `Advanced`.  
-        1.  Add the `urlFilter` parameter.  When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.  
-        
-        ```json
-        "useWebview": "Advanced",
-        "urlFilter": "file://C:/path/to/my/index.ts",
-        
-        //Other options
-        
-        urlFilter="*index.ts"    //Match any url that ends in index.ts (ignore any leading anything)
-        urlFilter="*index*"      //Match any url that contains index (ignore leading and trailing anything)  
-        urlFilter="*?=debugme*"  //Match any url that has a parameter segment matching "?urlFilter=debugme" (ignoring anything leading or trailing)  
-        urlFilter="*debug*"      //Match any url that contains debug anywhere in the path.
-        urlFilter="About:Blank"  //The default url all WebView instances navigate when created.  The parameter behaves like using the non-targeted debugging mode.  
-        ```  
-        
-        Use the `?=value` syntax to debug pages displayed in WebView2 controls, because webpages ignore unrecognized parameters.  
-        
-        > [!IMPORTANT]
-        > After the first match is found, the filtering is stopped for subsequent matches.  As a result, you are not able to debug two or more WebView2 controls at the same time in the same instance of Visual Studio Code.  Using two Visual Studio Code instances also does not let you debug two WebView instances since the CDP port is shared and only open on a single port number.  
-        
+    1.  Change `useWebview` parameter value to `Advanced`.  
+    1.  Add the `urlFilter` parameter.  When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.  
+    
+    ```json
+    "useWebview": "Advanced",
+    "urlFilter": "file://C:/path/to/my/index.ts",
+    
+    //Other options
+    
+    urlFilter="*index.ts"    //Match any url that ends in index.ts (ignore any leading anything)
+    urlFilter="*index*"      //Match any url that contains index (ignore leading and trailing anything)  
+    urlFilter="*?=debugme*"  //Match any url that has a parameter segment matching "?urlFilter=debugme" (ignoring anything leading or trailing)  
+    urlFilter="*debug*"      //Match any url that contains debug anywhere in the path.
+    urlFilter="About:Blank"  //The default url all WebView instances navigate when created.  The parameter behaves like using the non-targeted debugging mode.  
+    ```  
+    
+    Use the `?=value` syntax to debug pages displayed in WebView2 controls, because webpages ignore unrecognized parameters.  
+    
+    > [!IMPORTANT]
+    > After the first match is found, the filtering is stopped for subsequent matches.  As a result, you are not able to debug two or more WebView2 controls at the same time in the same instance of Visual Studio Code.  Using two Visual Studio Code instances also does not let you debug two WebView instances since the CDP port is shared and only open on a single port number.  
+    
 *   Attaching debugger to a running process.  
     
     Open `launch.json` and update the code to set the `request` parameter value to `attach` to attach the JavaScript debugger to running processes.
-        1.  Change the `request` parameter value to `attach`.  
-            
-            ```csharp
-            {
-                "name": "Hello debugging world",
-                "type": "pwa-msedge",
-                "port": 9222, // This value is optional, and the default value is 9222.
-                "request": "attach",
-                "runtimeExecutable": "C:/Folder_Path/Your_WebView2_Application.exe",
-                "env": {
-                    // Customize for your build location if needed
-                    "Path": "%path%;e:/YourNeededPath; "
-                },
-                "useWebView": true,
-                "timeout": 10000
-            }
-            ```  
-            
+    
+    1.  Change the `request` parameter value to `attach`.  
+        
+        ```csharp
+        {
+            "name": "Hello debugging world",
+            "type": "pwa-msedge",
+            "port": 9222, // This value is optional, and the default value is 9222.
+            "request": "attach",
+            "runtimeExecutable": "C:/Folder_Path/Your_WebView2_Application.exe",
+            "env": {
+                // Customize for your build location if needed
+                "Path": "%path%;e:/YourNeededPath; "
+            },
+            "useWebView": true,
+            "timeout": 10000
+        }
+        ```  
+        
     Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before sending an attach request.  
     
 *   Debug tracing.  
     
     Add the `trace` parameter to launch.json to enable debug tracing.  
-        1.  Add `trace` parameter.  
-            
-            ```csharp
-            ,"trace": true
-            ,"trace": "verbose"  //verbose option
-            ```  
-            
+    
+    1.  Add `trace` parameter.  
+        
+        ```csharp
+        ,"trace": true
+        ,"trace": "verbose"  //verbose option
+        ```  
+        
         :::row:::
            :::column span="":::
               ```csharp
@@ -273,9 +275,6 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 [DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools"  
 
-
-
-
 [Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: ../reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2environmentoptions.md#additionalbrowserarguments "AdditionalBrowserArguments - 0.9.515 - Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions class | Microsoft Docs"  
 [Webview2ReferenceWin3209538Webview2IdlParameters]: ../reference/win32/0-9-538/webview2-idl.md#createcorewebview2environment  "CreateCoreWebView2Environment - Globals | Microsoft Docs"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
@@ -283,7 +282,6 @@ In Visual Studio Code, complete the following actions to debug your code.
 [Webview2MainGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
-
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "What's new? - JavaScript debugger for Visual Studio Code - microsoft/vscode-js-debug | GitHub"  
