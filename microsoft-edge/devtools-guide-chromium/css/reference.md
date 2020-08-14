@@ -2,7 +2,7 @@
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/07/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -38,9 +38,9 @@ The **Elements** panel of DevTools lets you view or change the CSS of one elemen
    An example of a selected element  
 :::image-end:::  
 
-The following list shows many ways to select an element.  
+Use one the following actions to select an element.  
 
-*   In your viewport, hove on the element, open the contextual menu \(right-click\), and select **Inspect**.  
+*   In your viewport, hover on the element, open the contextual menu \(right-click\), and select **Inspect**.  
 *   In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.  
 *   In DevTools, choose the element in the **DOM Tree**.  
 *   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and select **Reveal in Elements panel**.  
@@ -93,7 +93,7 @@ Check the **Show All** checkbox in the **Computed** tab.  See [View only the CSS
 
 To view [the box model][MDNBoxModel] of an element, go to the **Styles** tab.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.  
 
-To change a value, double-click on it.  
+Choose and edit on a value to change a value.  
 
 > [!NOTE]
 > In the following figure, the **Box Model** diagram in the **Styles** tab shows the box model for the currently selected `h1` element.  
@@ -233,7 +233,7 @@ Complete the following actions to add a declaration to an existing style rule.
 
 ### Change a declaration name or value  
 
-Double-click the name or value of a declaration to change it.  See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units.  
+Choose and edit the name or value of a declaration to change it.  See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units.  
 
 :::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Changing the value of a declaration" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
    Change the value of the `border-bottom-style` declaration  

@@ -2,7 +2,7 @@
 title: Edit files with Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -55,11 +55,11 @@ Workspaces is known to not work with the following framework.
     
 ## Related feature: Local overrides  
 
-**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a page, and you need to see those changes across page loads, but you do not care about mapping your changes to the source code of the page.  
+**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a page, and you need to see the changes across page loads, but you do not care about mapping your changes to the source code of the page.  
 
 <!--Todo: add section when content is ready  -->  
 
-## Step 1: Set-up  
+## Step 1: Set up  
 
 Complete the following actions, to get hands-on experience with Workspaces.  
 
@@ -166,7 +166,7 @@ The DOM tree is not html.
 > The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.  
 
 1.  Choose the **Elements** tab.  
-1.  Double-click the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
+1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
        Attempt to change html from the DOM Tree of the **Elements** panel  
@@ -251,7 +251,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
 
 <!--  
-If you have more feedback on these topics or anything else, please use any of the channels below:  
+If you have more feedback on the topics or anything else, please use any of the channels below:  
 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  

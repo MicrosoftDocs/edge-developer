@@ -2,7 +2,7 @@
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -44,7 +44,7 @@ After you complete the tutorial, you site should look like the following figure.
 
 ## Goals  
 
-By the end of the tutorial, you should understand the following concepts and tasks.  
+Follow this tutorial to better understand the following concepts and tasks.  
 
 *   How to use CSS to style a web page.  
 *   How to use Microsoft Edge DevTools to experiment with CSS.  
@@ -54,7 +54,7 @@ You are building a real website.
 
 ## Prerequisites  
 
-Before attempting the tutorial in this article, complete the following prerequisites.  
+Before attempting this tutorial, complete the following prerequisites.  
 
 *   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have an understanding of HTML and the DOM similar to what is taught in that tutorial.  
 *   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.  
@@ -114,7 +114,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
 1.  Go back to the editing tab and open `index.html`.  
     
     :::image type="complex" source="../media/beginners-css-inline1.msft.png" alt-text="index.html" lightbox="../media/beginners-css-inline1.msft.png":::
-       `index.html`  
+       Open `index.html` in the editing tab  
     :::image-end:::  
     
 1.  Add `style="background-color: aliceblue;"` to your `<nav>`.  In the code block below, the fourth line of code is the one you need to change.  The rest is just there, so you are able to ensure that you are putting the new code in the right place.  
@@ -139,7 +139,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
     
 ## Re-use styles on a single page with internal stylesheets  
 
-In a previous code snippet, you saw an inline style that applied a style to a single `<p>` tag.  
+In a previous code snippet, an inline style applied a style to a single `<p>` tag.  
 
 ```html
 <p style="border: 1px dashed red; padding: 5px;">
@@ -261,7 +261,7 @@ Complete the following actions to use commas to add multiple selectors to a rule
     
 ## Experiment with DevTools  
 
-As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You may write some CSS and expect it to display one way, but the browser does something completely different.  Microsoft Edge DevTools makes it easy to experiment with changes and immediately see how those changes affect the page.  
+As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You may write some CSS and expect it to display one way, but the browser does something completely different.  Microsoft Edge DevTools makes it easy to experiment with changes and immediately see how the changes affect the page.  
 
 ### Add a declaration to an existing rulest in DevTools  
 
@@ -292,7 +292,7 @@ Complete the following actions to iterate on the style of an existing element, a
        :::column-end:::
     :::row-end:::  
     
-1.  Choose the whitespace below `font-family: 'Courier New', Courier, Serif` to add a new declaration.  
+1.  Choose the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration.  
     
     :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="Add a new declaration" lightbox="../media/beginners-css-add4.msft.png":::
        Add a new declaration  
@@ -457,7 +457,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
 1.  Open the `contact.html` file and add the link there.  
     
     :::image type="complex" source="../media/beginners-css-external9.msft.png" alt-text="Link to style.css in contact.html" lightbox="../media/beginners-css-external9.msft.png":::
-       Link to `style.css` in `contact.html` 
+       Link to `style.css` in `contact.html`  
     :::image-end:::  
     
 1.  Go to the **live tab**.  The home page now has the same font from the last section and a blue navigation section.  

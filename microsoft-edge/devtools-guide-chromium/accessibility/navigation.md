@@ -2,7 +2,7 @@
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/07/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -57,7 +57,7 @@ To get started, see [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a n
 
 **Known issues**  
 
-*   Some panels, such as the **Console** and **Performance** panels, may move focus into their content area as soon as they are activated.  This may make navigating by arrow keys difficult.  
+*   Some panels, such as the **Console** and **Performance** panels, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
 *   The name of the selected panel is announced, but only after it has read the focused content in the panel.  This may make it very easy to miss.  
 
 ### Navigate by Command Menu  
@@ -69,13 +69,13 @@ To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
-For example, to open the **Elements** panel:  
+Complete the following actions to open the **Elements** panel.  
 
 1.  Open the **Command Menu**.  
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
 1.  Select `Enter` to run the command that opens the panel.  
 
-Opening a panel this way directs focus to the contents of the panel.  In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
+Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
 
 ## Elements panel  
 
@@ -107,7 +107,7 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 *   When you type into the text input you get no feedback.  If you make a typo and use the arrow keys to explore your input you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.  
 
-### Edit the html of an element in the DOM Tree  
+### Edit the HTML of an element in the DOM Tree  
 
 *   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.  
 *   Select `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you are inside of a text input and may change the type of the element.  
@@ -143,7 +143,7 @@ Because all of the style tools connect in one way or another back to the **Style
   announced as `element.style {}`.  
 *   Select `Down Arrow` to navigate the list of styles in order of specificity.  A screen reader announces each style starting with the name of the CSS file, the line number on which the style appears, and the name of the style.  For example, `main.css:233 .card__img {}`.  
 *   Select `Enter` to inspect a style in more detail.  Focus begins on an editable version of the style name.  
-*   Select `Tab` to move between editable versions of each CSS property and their corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
+*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
 *   You may continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
 
 For additional shortcuts, see [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].  

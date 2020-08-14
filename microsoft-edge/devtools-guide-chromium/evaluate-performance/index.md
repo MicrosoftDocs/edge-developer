@@ -2,7 +2,7 @@
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -41,7 +41,7 @@ In the following tutorial, you open DevTools on a live page and use the **Perfor
 1.  Load the following page in your InPrivate window.  The page is the demo that you are going to profile.  The page shows a bunch of little icons moving up and down.  
     
     ```https
-    https://microsoft-edge-chromium-devtools.glitch.me/jank
+    https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
 1.  Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\) to open DevTools.  
@@ -51,7 +51,7 @@ In the following tutorial, you open DevTools on a live page and use the **Perfor
     :::image-end:::  
     
     > [!NOTE]
-    > For the rest of the screenshots; DevTools is [undocked to a separate window][DevtoolsCustomizePlacement], so that you are able to better see the contents.  
+    > For the rest of the figures, DevTools is [undocked to a separate window][DevtoolsCustomizePlacement] to better focus on the contents.  
     
 ### Simulate a mobile CPU  
 
@@ -78,10 +78,10 @@ ensure that your experience is relatively consistent with the screenshots and de
 1.  Choose **Optimize**.  The blue icons should move faster and more smoothly.  
     
     > [!NOTE]
-    > If you do not see a noticeable difference between the optimized and un-optimized versions, choose the **Subtract 10** button a few times and try again.  
-    > If you add too many blue icons, you are just going to max out the CPU and you are not going to see a major difference in the results for the two versions.  
+    > To better display a difference between the optimized and un-optimized versions, choose the **Subtract 10** button a few times and try again.  
+    > If you add too many blue icons, you may max out the CPU and then you may not observe a major difference in the results for the two versions.  
     
-1.  Choose **Un-Optimize**.  The blue icons move slower and with more jank again.  
+1.  Choose **Un-Optimize**.  The blue icons move slower and with more sluggishness again.  
     
 ### Record runtime performance  
 
@@ -134,7 +134,7 @@ The main metric for measuring the performance of any animation is frames per sec
        Hover on a frame  
     :::image-end:::  
     
-Of course, you should see that the page is not performing well.  But in real scenarios, it may not be so clear, so having all of these tools to make measurements comes in handy.  
+Of course, you should see that the page is not performing well.  But in real scenarios, it may not be so clear, so having all of the tools to make measurements comes in handy.  
 
 #### Bonus: Open the FPS meter  
 
@@ -148,7 +148,7 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
        The **FPS meter**  
         :::image-end:::  
     
-1.  Disable the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not be using it in this tutorial.  
+1.  Disable the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not using **FPS Meter** in this tutorial.  
     
 ### Find the bottleneck  
 
@@ -203,7 +203,7 @@ After you measured and verified that the animation is not performing well, the n
     
 <!-- todo: add layouts section when available -->
 
-Phew, that was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.  
+That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.  
 
 ### Bonus: Analyze the optimized version  
 
