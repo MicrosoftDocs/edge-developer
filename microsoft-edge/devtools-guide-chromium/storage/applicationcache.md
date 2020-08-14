@@ -2,7 +2,7 @@
 title: View Application Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,32 +21,26 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# View Application Cache Data With Microsoft Edge DevTools   
-
-
+# View Application Cache data with Microsoft Edge DevTools  
 
 > [!WARNING]
 > The Application Cache API is [being removed from the web platform][HTMLStandardOfflineWebApplications].  
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Application Cache][MDNWebAPIsWindowApplicationCache] resources.  
 
-## View Application Cache Data   
+## View Application Cache data  
 
 1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
     
-    > ##### Figure 1  
-    > The Manifest pane  
-    > ![The Manifest pane][ImageManifestPane]  
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
+       The **Manifest** pane  
+    :::image-end:::  
 
-1.  Expand the **Application Cache** section and click a cache to view the resources.  
+1.  Expand the **Application Cache** section and choose a cache to view the resources.  
     
-    > ##### Figure 2  
-    > The Application Cache pane  
-    > ![The Application Cache pane][ImageApplicationCachePane]  
+    :::image type="complex" source="../media/storage-cache-pane-cache-storage-resources.msft.png" alt-text="The Application Cache pane" lightbox="../media/storage-cache-pane-cache-storage-resources.msft.png":::
+       The **Application Cache** pane  
+    :::image-end:::  
 
 Each row of the table represents a cached resource.  
 
@@ -56,10 +50,12 @@ The **Type** column represents the [category of the resource][MDNHTMLResourcesIn
 |:--- |:--- |  
 | `Explicit` | This resource was explicitly listed in the manifest. |  
 | `Fallback` | The URL is a fallback for another resource.  The URL of the other resource is not listed in DevTools. |  
-| `Master` | The `manifest` attribute on the resource indicated that this cache is the parent of the resource. |  
-| `Network` | The manifest specified that this resource must come from the network. |  
+| `Master` | The `manifest` attribute on the resource indicates that the cache is the parent of the resource. |  
+| `Network` | The manifest specified that the resource must come from the network. |  
 
-At the bottom of the table there are status icons indicating your network connection and the status of the Application Cache.  The Application Cache may have the following states.  
+<!--todo:  replace "Master" phrasing if possible.  -->  
+
+At the bottom of the table there are status icons indicating your network connection and the status of the **Application Cache**.  The **Application Cache** may have the following states.  
 
 | State | Details |  
 |:--- |:--- |  
@@ -69,18 +65,9 @@ At the bottom of the table there are status icons indicating your network connec
 | `OBSOLETE` | The cache is being deleted. |  
 | `UPDATEREADY` |  A new version of the cache is available. |  
 
-<!--   -->  
-
-
-
-<!-- image links -->  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: The Manifest pane"  
-[ImageApplicationCachePane]: /microsoft-edge/devtools-guide-chromium/media/storage-cache-pane-cache-storage-resources.msft.png "Figure 2: The Application Cache pane"  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline Web applications - HTML Standard"  
 
