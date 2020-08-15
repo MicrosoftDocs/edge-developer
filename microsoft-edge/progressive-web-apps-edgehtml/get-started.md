@@ -135,12 +135,17 @@ For this tutorial, use the Offline page service worker script on [PWA Builder][P
     
     Save the files to the `public` folder of your Visual Studio web app project.  \(From Visual Studio, use `Ctrl`+`O` to open file explorer to your project and navigate to the `public` folder\).  
     
+    In Solution Explorer, open the `public/pwabuilder-sw.js` file, and change the value of `offlineFallbackPage` to `offline.html`.
+    ```js
+    const offlineFallbackPage = "offline.html";
+    ````
+
     It is worth reviewing the code in both of these files, to get the gist of how to register a service worker that caches a designated page \(`offline.html`\) and serves it when a network fetch fails.  Next, create a simple `offline.html` page as a placeholder for the offline functionality of your app.  
     
 1.  In Solution Explorer, open the `views/layout.pug` file, and add the following line below your link tags.  
     
     ```html
-    script(src='/pwabuilder-sw-register.js')
+    script(src='/pwabuilder-sw-register.js' type='module')
     ```  
     
     Your site loads and runs your service worker registration script.  
