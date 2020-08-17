@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/31/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -267,22 +267,13 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 > [!NOTE]
 > This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].  
 
-## Getting in touch with Microsoft Edge DevTools team  
-
-To discuss the new features and changes in this post, or anything else related to DevTools:  
-
-*   Send your feedback using the **Send Feedback** icon in the DevTools  
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
-*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
-
-:::image type="complex" source="../../media/2020/03/bing-devtools-send-feedback.msft.png" alt-text="The **Send Feedback** icon in the Microsoft Edge DevTools" lightbox="../../media/2020/03/bing-devtools-send-feedback.msft.png":::
-   Figure 18:  The **Send Feedback** icon in the Microsoft Edge DevTools  
-:::image-end:::  
-
 ## Download the Microsoft Edge preview channels  
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
+
+## Getting in touch with Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
 

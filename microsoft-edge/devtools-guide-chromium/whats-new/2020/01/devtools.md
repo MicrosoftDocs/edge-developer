@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,15 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-# What's New In DevTools (Microsoft Edge 81)   
-
-
+# What's New In DevTools (Microsoft Edge 81)  
 
 ## Announcements from the Microsoft Edge DevTools team  
 
@@ -194,15 +186,13 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 > Messages in the Console when tracking prevention blocks access to storage for a tracker  
 > ![Messages in the Console when tracking prevention blocks access to storage for a tracker][ImageTrackingPrevention]  
 
-[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
-
-
+[Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].  
 
 ## Announcements from the Chromium project  
 
 The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.  
 
-### Moto G4 support in Device Mode 
+### Moto G4 support in Device Mode  
 
 After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a Moto G4 viewport from the **Device** list.  
 
@@ -223,9 +213,9 @@ Related features:
 
 Chromium issue [#924693][crbug924693]  
 
-### Cookie-related updates   
+### Cookie-related updates  
 
-#### Blocked cookies in the Cookies pane   
+#### Blocked cookies in the Cookies pane  
 
 The Cookies pane in the Application panel now displays blocked cookies with a yellow background.  
 
@@ -235,7 +225,7 @@ The Cookies pane in the Application panel now displays blocked cookies with a ye
 
 Chromium issue [#1030258][crbug1030258]  
 
-#### Cookie priority in the Cookie pane   
+#### Cookie priority in the Cookie pane  
 
 The Cookies tables in the Network and Application panels now include a **Priority** column.  
 
@@ -244,7 +234,7 @@ The Cookies tables in the Network and Application panels now include a **Priorit
 
 Chromium issue [#1026879][crbug1026879]  
 
-#### Edit all cookie values   
+#### Edit all cookie values  
 
 All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  See [Fields][CookiesFields] for an explanation of each column.  
 
@@ -252,7 +242,7 @@ All cells in the Cookie tables are editable now, except cells in the **Size** co
 > Editing a cookie value  
 > ![Editing a cookie value][ImageEditCookie]  
 
-#### Copy as Node.js fetch to include cookie data   
+#### Copy as Node.js fetch to include cookie data  
 
 Right-click a network request and select **Copy** > **Copy as Node.js fetch** to get a `fetch` expression that includes cookie data.  
 
@@ -262,17 +252,17 @@ Right-click a network request and select **Copy** > **Copy as Node.js fetch** to
 
 Chromium issue [#1029826][crbug1029826]  
 
-### More accurate web app manifest icons   
+### More accurate web app manifest icons  
 
 Previously, the Manifest pane in the Application panel sent its own requests in order to display web app manifest icons.  DevTools now shows the exact same manifest icon that Microsoft Edge uses.  
 
 > ##### Figure 15  
 > Icons in the Manifest pane  
-> ![Icons in the Manifest pane][ImageManifestIcon]   
+> ![Icons in the Manifest pane][ImageManifestIcon]  
 
 Chromium issue [#985402][crbug985402]  
 
-### Hover over CSS content properties to see unescaped values   
+### Hover over CSS content properties to see unescaped values  
 
 Hover over the value of a `content` property to see the unescaped version of the value.  
 
@@ -280,15 +270,15 @@ For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseu
 
 > ##### Figure 16  
 > The escaped string  
-> ![The escaped string][ImageEscapedString]   
+> ![The escaped string][ImageEscapedString]  
 
 When you hover over the `content` value you see the unescaped value:  
 
 > ##### Figure 17  
 > The unescaped value  
-> ![The unescaped value][ImageUnescapedString]   
+> ![The unescaped value][ImageUnescapedString]  
 
-### More detailed source map errors in the Console   
+### More detailed source map errors in the Console  
 
 The Console now provides more detail on why a source map failed to load or parse.  Previously it just provided an error without explaining what went wrong.  
 
@@ -296,7 +286,7 @@ The Console now provides more detail on why a source map failed to load or parse
 > A source map loading error in the Console  
 > ![A source map loading error in the Console][ImageSourcemapError]  
 
-### Setting for disabling scrolling past the end of a file   
+### Setting for disabling scrolling past the end of a file  
 
 Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.  
 
@@ -308,33 +298,19 @@ Open [Settings][Settings] and then disable **Preferences** > **Sources** > **All
 > Scrolling past the end of a file is now disabled in the Sources panel  
 > ![Scrolling past the end of a file is now disabled in the Sources panel][ImageScroll]  
 
-## Getting in touch with Microsoft Edge DevTools team  
-
-
-
-To discuss the new features and changes in this post, or anything else related to DevTools:  
-
-*   Send your feedback using the **Send Feedback** icon in the DevTools  
-
-> ##### Figure 21  
-> The **Send Feedback** icon in the Microsoft Edge DevTools  
-> ![The **Send Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
-
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
-*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
-
-## Download the Microsoft Edge preview channels   
+## Download the Microsoft Edge preview channels  
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
-<!-- <<../../_shared/devtools-feedback.md>>
+## Getting in touch with Microsoft Edge DevTools team  
 
-<<../../_shared/canary.md>>
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<<../../_shared/discover.md>> -->
+<!-- <<../../_shared/devtools-feedback.md>>  
 
+<<../../_shared/canary.md>>  
 
+<<../../_shared/discover.md>> -->  
 
 <!-- image links -->  
 
