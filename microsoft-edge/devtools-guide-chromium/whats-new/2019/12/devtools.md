@@ -344,7 +344,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figure 15: The User Agent menu in the Network Conditions tab"  
 [ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figure 16: The new configuration UI"  
 [ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figure 17: The coverage mode dropdown menu"  
-[ImageFeedbackIcon]: ../../images/2019/12/bing-devtools-send-feedback.msft.png "Figure 18: The **Send Feedback** icon in the Microsoft Edge DevTools"
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 

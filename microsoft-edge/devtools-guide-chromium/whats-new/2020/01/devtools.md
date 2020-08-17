@@ -334,8 +334,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageSourcemapError]: ../../images/2020/01/sourcemap.msft.png "Figure 18: A source map loading error in the Console"
 [ImageSettings]: ../../images/2020/01/settings.msft.png "Figure 19: Disabling Allow scrolling past end of file in Settings"
 [ImageScroll]: ../../images/2020/01/scrollingsources.msft.png "Figure 20: Scrolling past the end of a file is now disabled in the Sources panel"
-[ImageFeedbackIcon]: ../../images/2020/01/bing-devtools-send-feedback.msft.png "Figure 21: The **Send Feedback** icon in the Microsoft Edge DevTools"
-
 
 <!-- links -->  
 
