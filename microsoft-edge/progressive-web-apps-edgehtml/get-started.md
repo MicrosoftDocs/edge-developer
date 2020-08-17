@@ -3,7 +3,7 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/17/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -135,11 +135,12 @@ For this tutorial, use the Offline page service worker script on [PWA Builder][P
     
     Save the files to the `public` folder of your Visual Studio web app project.  \(From Visual Studio, use `Ctrl`+`O` to open file explorer to your project and navigate to the `public` folder\).  
     
-    In Solution Explorer, open the `public/pwabuilder-sw.js` file, and change the value of `offlineFallbackPage` to `offline.html`.
-    ```js
+    In Solution Explorer, open the `public/pwabuilder-sw.js` file, and change the value of `offlineFallbackPage` to `offline.html`.  
+    
+    ```javascript
     const offlineFallbackPage = "offline.html";
-    ````
-
+    ```
+    
     It is worth reviewing the code in both of these files, to get the gist of how to register a service worker that caches a designated page \(`offline.html`\) and serves it when a network fetch fails.  Next, create a simple `offline.html` page as a placeholder for the offline functionality of your app.  
     
 1.  In Solution Explorer, open the `views/layout.pug` file, and add the following line below your link tags.  
