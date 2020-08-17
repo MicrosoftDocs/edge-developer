@@ -3,7 +3,7 @@ description:  Host web content in your WinUI app with the Microsoft Edge WebView
 title:  Microsoft Edge WebView2 for WinUI apps
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  08/10/2020
+ms.date:  08/17/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -185,8 +185,10 @@ Applications that host WebView2 controls listen for the following events that ar
 *   `ContentLoading`  
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
+
 > [!NOTE]
 > HTTP redirects raise multiple `NavigationStarting` events.  
+
 For more information, see [Navigation Events][Webviews2ConceptsNavigationEvents].  
 
 When errors occur, the following events are raised and may navigate to an error page.  
@@ -194,10 +196,8 @@ When errors occur, the following events are raised and may navigate to an error 
 *   `SourceChanged`  
 *   `ContentLoading`  
 *   `HistoryChanged`  
-    
-
+     
 As an example of how to use the events, register a handler for `NavigationStarting` that cancels any requests that don't use HTTPS. In `MainWindow.xaml.cs`, modify the constructor to register `EnsureHttps`, and add the `EnsureHttps` function so that it matches the following code snippet.  
-
 
 ```csharp
 public MainWindow()
