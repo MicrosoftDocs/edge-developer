@@ -4,14 +4,16 @@ description: See how to package your Microsoft Edge extension in a snap with Man
 title: Using ManifoldJS to package extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2017
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
 ---
 
-# Using ManifoldJS to create extension AppX packages
+# Using ManifoldJS to create extension AppX packages  
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  
 
 ManifoldJS is an open source Node.js tool that allows you to quickly and painlessly create a package that you can then use for submission to the Microsoft Store.
 
@@ -23,7 +25,7 @@ Before getting started, you will still need to read up on the following articles
 - [Localizing extension packages](./localizing-extension-packages.md)
 
 > [!NOTE]
-> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](http://aka.ms/extension-request).
+> Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
 
 
 ## Installing Node.js and ManifoldJS
@@ -54,10 +56,10 @@ Now that you're in your destination folder, run the following command:
 
 
 This command can be broken down into the following parts:
- -	**-l debug**: Changes the log level to "debug" to get a full print out.
- -	**-p edgeextension**: Sets the only platform to run the conversion on to edgeextension.
- -	**-f edgeextension**: Tells the program that the format of the manifest is an edgeextension format and not to care if it fails validation.
- -	**-m \<EXTENSION LOCATION>\manifest.json**: The path to the extension manifest that you want to convert.
+ -    **-l debug**: Changes the log level to "debug" to get a full print out.
+ -    **-p edgeextension**: Sets the only platform to run the conversion on to edgeextension.
+ -    **-f edgeextension**: Tells the program that the format of the manifest is an edgeextension format and not to care if it fails validation.
+ -    **-m \<EXTENSION LOCATION>\manifest.json**: The path to the extension manifest that you want to convert.
 
 
 After ManifoldJS has finished running, you'll have a folder with the following contents:
@@ -66,7 +68,7 @@ After ManifoldJS has finished running, you'll have a folder with the following c
         edgeextension
             generationInfo.json
             manifest
-            	   appxmanifest.xml
+                   appxmanifest.xml
                 Assets
                     Square150x150Logo.png
                     Square44x44Logo.png
@@ -89,8 +91,8 @@ For example, a manifest.json file with the following `"name"` field:
 will have a manifest folder that lives in `\<CURRENT DIRECTORY>\MSGappName\edgeextension\manifest`.
 
 In the AppXManifest file, you'll need to:
- -	Replace the required Identity fields and PublisherDisplayName field as outlined [here](./creating-and-testing-extension-packages.md#app-identity-template-values). Note that if you're only packaging for testing purposes or for enterprise distribution, you can use placeholder values instead of registering for a Windows Dev Center account.
- -	Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design.md#icons-for-packaging) guide for information about where these icons are used.
+ -    Replace the required Identity fields and PublisherDisplayName field as outlined [here](./creating-and-testing-extension-packages.md#app-identity-template-values). Note that if you're only packaging for testing purposes or for enterprise distribution, you can use placeholder values instead of registering for a Windows Dev Center account.
+ -    Replace the placeholder icons in the Assets folder with icons for your extension with the same sizes (150x150, 50x50, 44x44) and names. See the [Design](./../design.md#icons-for-packaging) guide for information about where these icons are used.
  - If your extension is localized, follow the entire [Localizing Microsoft Edge extensions](./localizing-extension-packages.md) guide. If it isn't localized, only read the [Localizing name and description in the Microsoft Store](./localizing-extension-packages.md#localizing-name-and-description-in-the-microsoft-store) section.
 
 Once your appxmanifest.xml file is sorted out, run the following command to create your package:
@@ -99,4 +101,4 @@ Once your appxmanifest.xml file is sorted out, run the following command to crea
 
 Your package will now be in the **package** folder located within the edgeextension folder. See Creating and testing extension packages' [testing](./creating-and-testing-extension-packages.md#testing-an-appx-package) section for info on how to sideload your new package.
 
-Once your package has been tested, feel free to submit a request on our [extension submission form](http://aka.ms/extension-request) in order to be considered for publication to the Microsoft Store.
+Once your package has been tested, feel free to submit a request on our [extension submission form](https://aka.ms/extension-request) in order to be considered for publication to the Microsoft Store.

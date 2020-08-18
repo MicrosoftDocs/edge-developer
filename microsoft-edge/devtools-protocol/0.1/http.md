@@ -1,15 +1,15 @@
 ---
 description: Microsoft Edge DevTools Protocol Version 0.1 supports the following HTTP endpoints.
-title: DevTools Protocol Version 0.1 HTTP Endpoints
+title: DevTools Protocol Version 0.1 HTTP Endpoints (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/02/2018
+ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
 ---
 
-# DevTools Protocol HTTP Endpoints
+# DevTools Protocol Version 0.1 HTTP Endpoints (EdgeHTML)  
 
 > [!NOTE]
 > The Microsoft Edge DevTools Protocol works only on [Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/how-to-get-the-windows-10-april-2018-update/#5VXkQMU41CJzZPER.97) and later [Windows Insider Preview](https://insider.windows.com/en-us/getting-started/) builds.
@@ -60,7 +60,7 @@ Provides a candidate list of page targets for debugging.
     "id":"000001F5-87EE-4D55-0091-C4C08A1F30C8",
     "title":"Microsoft Edge Developer website - Microsoft Edge Development",
     "type":"Page",
-    "url":"https://developer.microsoft.com/en-us/microsoft-edge/",
+    "url":"https://developer.microsoft.com/microsoft-edge/",
     "webSocketDebuggerUrl":"ws://localhost:9222/target/000001F5-87EE-4D55-0091-C4C08A1F30C8"
 }, … ]
 ```
@@ -76,5 +76,5 @@ Target ID
 **Return object**
 
 ```
-String(“Target is closing”)
+String("Target is closing")
 ```

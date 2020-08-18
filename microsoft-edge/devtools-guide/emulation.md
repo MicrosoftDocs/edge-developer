@@ -3,7 +3,7 @@ description: Use the Emulation panel to test different browser profiles, screen 
 title: DevTools - Emulation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, device emulation, responsive design, geolocation, resolution
@@ -59,7 +59,7 @@ Choose from a preset list of popular device resolutions, or specify your own *Cu
 
 ## Geolocation
 
-If your site uses the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
+If your site uses the [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
 
 As with any usage of personal data on the web, your users will first need to grant your site permission to use their location. You can test how your site behaves with and without location permissions from the Microsoft Edge *Settings* panel:
 
@@ -72,4 +72,3 @@ As with any usage of personal data on the web, your users will first need to gra
 | Action                   | Shortcut               |
 |:-------------------------|:-----------------------|
 | Reset Emulation settings | `CTRL` + `SHIFT` + `L` |
-

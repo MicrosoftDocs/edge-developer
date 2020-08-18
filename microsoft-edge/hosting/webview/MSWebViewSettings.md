@@ -3,56 +3,61 @@ description: Defines properties that enable or disable webview features
 title: MSWebViewSettings object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/10/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# MSWebViewSettings object
+# MSWebViewSettings object  
 
-Defines properties that enable or disable [webview](../webview.md) features.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-## Properties
+Defines properties that enable or disable [webview](../webview.md) features.  
 
-### isIndexedDBEnabled
+## Properties  
 
-Gets or sets a value that indicates whether the use of IndexedDB is allowed in the [webview](../webview.md).
+### isIndexedDBEnabled  
 
-```js
+Gets or sets a value that indicates whether the use of IndexedDB is allowed in the [webview](../webview.md).  
+
+```javascript
 var isIndexedDBEnabled = MSWebViewSettings.isIndexedDBEnabled;
 MSWebViewSettings.isIndexedDBEnabled = isIndexedDBEnabled;
-```
+```  
 
-#### Property value
-Type: **boolean**
+#### Property value  
 
-**True** if IndexedDB is allowed in the **webview**; otherwise, **false**. 
+Type: **boolean**  
 
-### isJavaScriptEnabled
+**True** if IndexedDB is allowed in the **webview**; otherwise, **false**.  
 
-Gets or sets a value that indicates whether the use of JavaScript is allowed in the [webview](../webview.md).
+### isJavaScriptEnabled  
 
-```js
+Gets or sets a value that indicates whether the use of JavaScript is allowed in the [webview](../webview.md).  
+
+```javascript
 var isJavaScriptEnabled = MSWebViewSettings.isJavaScriptEnabled;
 MSWebViewSettings.isJavaScriptEnabled = isJavaScriptEnabled;
-```
+```  
 
-#### Property value
-Type: **boolean**
+#### Property value  
 
-**True** JavaScript is allowed in the [webview](../webview.md); otherwise, **false**. 
+Type: **boolean**  
 
-### isScriptNotifyAllowed
+**True** JavaScript is allowed in the [webview](../webview.md); otherwise, **false**.  
 
-Gets or sets a value that indicates whether the use of [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md).
+### isScriptNotifyAllowed  
 
-```js
+Gets or sets a value that indicates whether the use of [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md).  
+
+```javascript
 var isScriptNotifyAllowed = MSWebViewSettings.isScriptNotifyAllowed;
 MSWebViewSettings.isScriptNotifyAllowed = isScriptNotifyAllowed;
-```
+```  
 
-#### Property value
-Type: **boolean**
+#### Property value  
 
-**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md); otherwise, **false**. 
+Type: **boolean**  
+
+**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md); otherwise, **false**.  

@@ -3,7 +3,7 @@ description: Use DOM breakpoints to visually debug layout glitches on your page
 title: DevTools - Elements - DOM breakpoints
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, dom breakpoints, dom mutation
@@ -34,7 +34,7 @@ The **DOM breakpoints** pane will then list the selected element (by generating 
 
 ## Breakpoint persistence
 
-Breakpoints are stored (and scoped to the URL of the page they’re set within) as part of your DevTools settings. When the page is reloaded or the tools are closed and reopened, DevTools will attempt to rebind your breakpoints to their associated elements.
+Breakpoints are stored (and scoped to the URL of the page they're set within) as part of your DevTools settings. When the page is reloaded or the tools are closed and reopened, DevTools will attempt to rebind your breakpoints to their associated elements.
 
 Breakpoints that couldn't be automatically rebinded are indicated with a warning icon on the breakpoint circle. For these, you can wait to rebind the element manually (using the **Rebind breakpoint** button and/or context menu option) once a corresponding element appears in the DOM (and the breakpoint icon no longer shows the warning indicator), or **Delete** the breakpoint altogether.
 
@@ -46,8 +46,8 @@ In addition to this *DOM breakpoints* pane, you can also manage your [DOM breakp
 
 Please be aware of the following limitations of DOM breakpoint debugging in Edge DevTools:
 
- - Edge DevTools don't currently support rebinding breakpoints inside of [`<iframe>`s](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). If you set a breakpoint in an iframe and close Edge DevTools or refresh the page, the breakpoint will be lost.
+- Edge DevTools don't currently support rebinding breakpoints inside of [`<iframe>`s](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). If you set a breakpoint in an iframe and close Edge DevTools or refresh the page, the breakpoint will be lost.
 
- - If your script encounters a synchronously-executed breakpoint before the DOM [`readyState`](https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState) is completed, you won’t be able to set a DOM breakpoint while the debugger is paused. You can typically remedy this situation by setting the [`defer`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Attributes) or [`async`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#Attributes) script attributes.
+- If your script encounters a synchronously-executed breakpoint before the DOM [`readyState`](https://developer.mozilla.org/docs/Web/API/Document/readyState) is completed, you won't be able to set a DOM breakpoint while the debugger is paused. You can typically remedy this situation by setting the [`defer`](https://developer.mozilla.org/docs/Web/HTML/Element/script#Attributes) or [`async`](https://developer.mozilla.org/docs/Web/HTML/Element/script#Attributes) script attributes.
 
-- For synchronous scripts, we trigger automatic rebinding of breakpoints when the [`window.onload`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload) event is called. In this case, we may miss binding breakpoints that would trigger during initial script-driven build-up of the DOM. For asynchronous scripts, we trigger a rebind attempt before the first script executes, so your breakpoints may rebind and trigger as desired.
+- For synchronous scripts, we trigger automatic rebinding of breakpoints when the [`window.onload`](https://developer.mozilla.org/docs/Web/API/GlobalEventHandlers/onload) event is called. In this case, we may miss binding breakpoints that would trigger during initial script-driven build-up of the DOM. For asynchronous scripts, we trigger a rebind attempt before the first script executes, so your breakpoints may rebind and trigger as desired.

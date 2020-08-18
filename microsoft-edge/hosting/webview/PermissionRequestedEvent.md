@@ -3,17 +3,19 @@ description: Provides event information about the current permission request
 title: PermissionRequestedEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2018
+ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
 
-# PermissionRequestedEvent object
+# PermissionRequestedEvent object  
 
-Provides event information about the current permission request.
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-```js
+Provides event information about the current permission request.  
+
+```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {
     const permissionRequest = permissionRequestedEventArgs.permissionRequest;
     switch (permissionRequest.type) {
@@ -49,12 +51,12 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
             break;
     }
 });
-```
+```  
 
-## Properties
+## Properties  
 
-### permissionRequest
+### permissionRequest  
 
-Returns a **[PermissionRequest](permissionrequest.md)** object that represents the end-user permission request made by content of the [webview](../webview.md).
+Returns a **[PermissionRequest](permissionrequest.md)** object that represents the end-user permission request made by content of the [webview](../webview.md).  
 
-This property is read-only.
+This property is read-only.  

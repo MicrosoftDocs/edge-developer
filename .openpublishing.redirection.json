@@ -2,23 +2,23 @@
   "redirections": [
     {
       "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/microsoft-browser-extension-policy",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/devtools-preview_software-license-terms",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/devtools_software-license-terms.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
-      "redirect_document_id": true
+      "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
+      "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps.md",
+      "source_path": "microsoft-edge/devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/service-workers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/devtools-guide/debugger/indexeddb.md",
@@ -71,9 +71,9 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps.md",
+      "source_path": "microsoft-edge/f12-devtools-guide/debugger/progressive-web-apps/index.md",
       "redirect_url": "/microsoft-edge/devtools-guide/debugger/progressive-web-apps",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/f12-devtools-guide/debugger/web-storage.md",
@@ -163,7 +163,7 @@
     {
       "source_path": "microsoft-edge/f12-devtools-guide/developer-tools-keyboard-shortcuts.md",
       "redirect_url": "/microsoft-edge/devtools-guide#general-shortcuts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-edge/dev-guide/browser/flash.md",
@@ -226,6 +226,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-edge/dev-guide/device/web-authentication.md",
+      "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-authentication",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/device/web-notifications-api.md",
       "redirect_url": "/microsoft-edge/dev-guide/windows-integration/web-notifications-api",
       "redirect_document_id": true
@@ -233,6 +238,31 @@
     {
       "source_path": "microsoft-edge/dev-guide/tools/webdriver.md",
       "redirect_url": "/microsoft-edge/webdriver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/index.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/get-started.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/microsoft-store.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/microsoft-store",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/windows-features.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/windows-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/progressive-web-apps/xbox-considerations.md",
+      "redirect_url": "/microsoft-edge/progressive-web-apps-edgehtml/xbox-considerations",
       "redirect_document_id": true
     },
     {
@@ -586,6 +616,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-edge/dev-guide/realtime-communication/object-rtc-api.md",
+      "redirect_url": "https://ortc.org",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-edge/dev-guide/security.md",
       "redirect_url": "https://developer.mozilla.org/docs/Web/API",
       "redirect_document_id": false
@@ -698,6 +733,31 @@
     {
       "source_path": "microsoft-edge/webview/WebResourceRequestedEvent.md",
       "redirect_url": "/microsoft-edge/hosting/webview/WebResourceRequestedEvent",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/gettingstarted.md",
+      "redirect_url": "/microsoft-edge/webview2/gettingstarted/win32",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2.md",
+      "redirect_url": "/microsoft-edge/webview2/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/reference/icorewebview2.md",
+      "redirect_url": "/microsoft-edge/webview2/reference/win32/0-9-488/icorewebview2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
+      "redirect_url": "/microsoft-edge/webview2/releasenotes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-edge/hosting/webview2/reference-webview2.md",
+      "redirect_url": "/microsoft-edge/webview2/webview2-api-reference",
       "redirect_document_id": true
     }
   ]

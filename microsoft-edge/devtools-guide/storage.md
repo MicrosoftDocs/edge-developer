@@ -3,7 +3,7 @@ description: Use the Storage panel to inspect your web storage, IndexedDB, cooki
 title: DevTools - Storage
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2018
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, web storage, local storage, session storage, indexeddb, cookies, service worker, cache
@@ -25,7 +25,7 @@ Expand any of those categories and click on a child entry to open its resource m
 
 Use the *Local Storage manager* and *Session Storage manager* to inspect and manage the web storage for  your page. 
 
-The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](./debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
+The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](./debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
 ![DevTools Cookies manager](./media/storage_web_storage.png)
 
@@ -68,7 +68,7 @@ From the *Storage list* table you can:
 Use the **IndexedDB** tab to inspect and manage the structured data stored locally on a client machine. Specifically, you can inspect/sort and refresh your object stores and indices, and also delete individual key-value entries.
 
 > [!TIP]
-> You can use our [Audio Mixer](https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *IndexedDB manager* in Microsoft Edge DevTools.
+> You can use our [Audio Mixer](https://developer.microsoft.com/microsoft-edge/testdrive/demos/audiomixer/) demo to test drive the *IndexedDB manager* in Microsoft Edge DevTools.
 
 To delete all the IndexedDB data stored for the current user in Microsoft Edge, use the Microsoft Edge *Settings* menu:
 
@@ -99,10 +99,10 @@ The columns of the *Object store* or *Index* table are sortable:
 Column | Description
 :------------ | :-------------
 Key | Name of the key-value pair (same as *Primary Key*) when iterating over an object store; Name of the index key (cursor's current key) when iterating over an index
-Primary Key | Name of the key-value pair (see *MDN web docs* for more on IDB [keys](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database))
+Primary Key | Name of the key-value pair (see *MDN web docs* for more on IDB [keys](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Structuring_the_database))
 Value | Value of the key-value pair
 
-Check out *MDN web docs* for more on [IndexedDB concepts and usage](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API).
+Check out *MDN web docs* for more on [IndexedDB concepts and usage](https://developer.mozilla.org/docs/Web/API/IndexedDB_API).
 
 ### Context menu
 
@@ -121,7 +121,7 @@ Select all | `Ctrl` + `A`
 
 Use the *Cookies manager* to inspect and manage the cookies for the given domain. 
 
-The **Cookies** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie).
+The **Cookies** folder inside the Debugger's [*Resource picker*](./debugger.md#resource-picker) displays a list of origins from the resources loaded by the page. Selecting one of these frames opens up a table representing the current cookies set by either [HTTP](https://developer.mozilla.org/docs/Web/HTTP/Cookies) header or via script with [Document.cookie](https://developer.mozilla.org/docs/Web/API/Document/cookie).
 
 ![DevTools Cookies manager](./media/storage_cookies.png)
 
@@ -154,7 +154,7 @@ Expires | Maximum lifetime of the cookie as an HTTP-date timestamp. If no `Expir
 HTTP only | Indicates if the cookie was set with `HttpOnly` directive, indicating that it is inaccessible from JavaScript
 Secure | Indicates if the cookie was set with the `Secure` directive, indicating it will only be sent to the server from a request using SSL and the HTTPS protocol.
 
-See the **MDN web docs** [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) reference for further details on cookie properties.
+See the **MDN web docs** [Set-Cookie](https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie) reference for further details on cookie properties.
 
 ### Context menu
 
@@ -187,4 +187,3 @@ Clicking on a specific cache entry will open up the service worker **Cache** man
 | Delete item         | `Del`         |
 | Copy selected items | `Ctrl` + `C`  |
 | Select all          | `Ctrl` + `A`  |
-
