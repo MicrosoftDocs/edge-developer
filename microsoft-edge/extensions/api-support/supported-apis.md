@@ -3,7 +3,7 @@ description: Find information on current and future APIs as well their known iss
 title: Extensions - Supported APIs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/18/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
