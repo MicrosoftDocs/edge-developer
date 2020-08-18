@@ -3,7 +3,7 @@ description: Find information on current and future APIs as well their known iss
 title: Extensions - Supported APIs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 03/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -223,7 +223,7 @@ API | Known issues | Chrome incompatibilities
 [tabs.executeScript](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/executeScript) | `runAt` is ignored, though checked. Executing script in a specific frame is not yet supported. | |
 [tabs.get](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/get) | Options pages, when asking about a tab not in their window, fail this call. | |
 [tabs.getCurrent](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/getCurrent) | | |
-[tabs.insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` is ignored, though checked. | |
+[tabs.insertCSS](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/insertCSS) | `runAt` is ignored, though checked. | `cssOrigin` is not supported. |
 [tabs.onActivated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onActivated) | | |
 [tabs.onAttached](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onAttached) | | |
 [tabs.onCreated](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/API/tabs/onCreated) | | |
