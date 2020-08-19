@@ -321,8 +321,8 @@ additionalContent:
       # summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
-        - title: Community Support on Microsoft Q and A 
-          summary: Get advice and answers from community experts on Microsoft Q and A
+        - title: Community Support on Microsoft Q&A 
+          summary: Get advice and answers from community experts on Microsoft Q&A
           url: /answers/topics/ms-edge.html            
         # Card
         - title: Get no-cost help via App Assure
