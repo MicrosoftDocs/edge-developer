@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/21/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -46,6 +46,7 @@ The following sections describe the new experimental features that are available
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later | 
 | [Enable Network Console](#enable-network-console) | 85 or later |
+| [Enable Source Order Viewer](#enable-source-order) | 86 or later |
 
 ### Enable custom keyboard shortcuts settings tab
 
@@ -105,6 +106,22 @@ Network Console in the Console drawer
 :::image-end::: 
 
 <!--Available in Microsoft Edge version 85 and later.  --> 
+
+### Enable Source Order Viewer
+
+**Source Order Viewer** is the working title of an experiment to display the order of elements in the page source. The **Source Order Viewer** experiment helps you find accessibility issues in your documents as the display order on screen can differ from the order of the document, which confuses screen reader users.  
+
+After enabling the experiment, ensure you restart the DevTools. To use Source Order Viewer:
+1.  Open the **Elements** pane.
+1.  Select the **Accessibility** pane in the bottom panel.
+1.  Click the **Show Source Order** checkbox.
+1.  Select any HTML element and you will see an overlay showing the order in the page source 
+
+:::image type="complex" source="./media/experiments-source-order-viewer.png" alt-text="Source Order Viewer in the Accessibility Drawer" lightbox="./media/experiments-source-order-viewer.png":::
+Source Order Viewer in the Accessibility Drawer 
+:::image-end::: 
+
+<!--Available in Microsoft Edge version 86 and later.  --> 
 
 ## Previous experimental features  
 
