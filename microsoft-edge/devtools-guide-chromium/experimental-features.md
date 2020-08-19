@@ -46,7 +46,7 @@ The following sections describe the new experimental features that are available
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later | 
 | [Enable Network Console](#enable-network-console) | 85 or later |
-| [Enable Source Order Viewer](#enable-source-order) | 86 or later |
+| [Enable Source Order Viewer](#enable-source-order-viewer) | 86 or later |
 
 ### Enable custom keyboard shortcuts settings tab
 
