@@ -2,7 +2,7 @@
 title: Edit files with Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -52,6 +52,8 @@ Workspaces is usually able to map the optimized code back to your original sourc
 Workspaces is known to not work with the following framework.  
 
 *   Create React App  
+
+    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->  
     
 ## Related feature: Local overrides  
 
@@ -96,7 +98,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
           ```bash
           cd ~/Desktop/app
           python -m http.server # Python 3
-          ``` 
+          ```  
        :::column-end:::
     :::row-end:::  
     
@@ -122,7 +124,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
     :::image-end:::  
     
 1.  Choose **Add Folder To Workspace**.  
-1.  Enter `~/Desktop/app`.  
+1.  Type `~/Desktop/app`.  
 1.  Choose **Allow** to give DevTools permission to read and write to the directory.  
     In the **Filesystem** tab, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.  These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.  
     
@@ -202,7 +204,7 @@ If you want to save a change to the html of the page, do it using the **Sources*
 1.  Refresh the page.  The `<h1>` element is still displaying the new text.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Line 12 is set to `I ❤️  Cake`  
+       Change HTML from the **Sources** panel  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.  
