@@ -2,7 +2,7 @@
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -93,7 +93,7 @@ After you [record a Sampling Profile](#record-a-sampling-profile), view the reco
 
 The flame chart is split into two parts.  
 
-| | Part | Description |  
+| index | Part | Description |  
 | --- |:--- |:--- |  
 | 1 | Overview | A birds-eye view of the entire recording.  The height of the bars correspond to the depth of the call stack.  So, the higher the bar, the deeper the call stack.  |  
 | 2 | Call Stacks | This is an in-depth view of the functions that were called during the recording.  The horizontal axis is time and vertical axis is the call stack.  The stacks are organized top-down.  So, the function on top called the one below it, and so on.  |  
@@ -141,8 +141,8 @@ Hover over a function to display the name and timing data.  The following inform
 <!-- image links -->  
 
 [ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/images/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/images/restore-icon.msft.png  
+[ImageFocusIcon]: ../media/focus-icon.msft.png  
+[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

@@ -2,7 +2,7 @@
 title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -160,7 +160,10 @@ When there are a small number of properties, the properties are stored internall
 
 ### Object groups  
 
-Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, thus forming a connected graph.  Note that native objects are not represented in the JavaScript heap  —  that is why native objects have zero size. Instead, wrapper objects are created.  
+Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, therefore forming a connected graph.  
+
+> [!NOTE]
+> Native objects are not represented in the JavaScript heap.  The lack of representation is why native objects have zero size. Instead, wrapper objects are created.  
 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
@@ -170,7 +173,7 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: ../media/memory-problems/heap-snapshots "../media/memory-problems"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"  
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"  
 
