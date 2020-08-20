@@ -3,7 +3,7 @@ description: Learn how the Payment Request API enables Microsoft Edge to act a
 title: Payment Request API - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
@@ -243,8 +243,6 @@ var options = {
 ## API Reference  
 
 [Payment Request API](/previous-versions/mt790447(v=vs.85))  
-
-## Specification  
 
 ## Specification
 [Payment Request API](https://w3.org/TR/payment-request)
