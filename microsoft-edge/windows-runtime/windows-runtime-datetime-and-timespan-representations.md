@@ -1,7 +1,7 @@
 ---
 title: "Windows Runtime DateTime and TimeSpan Representations"
 ms.custom: ""
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -14,27 +14,27 @@ helpviewer_keywords:
   - "DateTime [JavaScript]"
 ms.assetid: 9743e9ac-9054-463e-8264-427183e4905f
 caps.latest.revision: 9
-author: "MSEdgeTeam"
-ms.author: "msedgedevrel"
+author: MSEdgeTeam
+ms.author: msedgedevrel
 manager: ""
 ---
-# Windows Runtime DateTime and TimeSpan Representations  
+# Windows Runtime DateTime and TimeSpan representations  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 The JavaScript representation of dates and times is different from the Windows Runtime version.  The Windows Runtime [DateTime][UwpWindowsFoundationDatetime] structure is represented in JavaScript as a [Date][MDNDate] that has a backing store that matches the `DateTime` data \(and has a different range and precision from the JavaScript `Date`\).  If you modify this custom `Date` object, it becomes a standard JavaScript `Date` and loses precision.  JavaScript `Date` values can be passed to a Windows Runtime `DateTime` and will be range-checked, which might result in marshaling exceptions.  
 
  The Windows Runtime [TimeSpan][UwpWindowsFoundationTimespan] structure is converted to milliseconds and returned as a JavaScript number.  
 
-## See Also  
+## See also  
 
 [Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Using the Windows Runtime in JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
 
-[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime Struct"  
-[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "TimeSpan Struct"  
+[UwpWindowsFoundationDatetime]: /uwp/api/Windows.Foundation.DateTime "DateTime Struct | Microsoft Docs"  
+[UwpWindowsFoundationTimespan]: /uwp/api/windows.foundation.timespan "TimeSpan Struct | Microsoft Docs"  
 
 [MDNDate]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date "Date | MDN"  

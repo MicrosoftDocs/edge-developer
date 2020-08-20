@@ -85,7 +85,7 @@ Open a panel this way directs focus to the contents of the panel.  In the case o
 1.  Simulate a right-click using a mouse on the element to open the context menu.  
 1.  Choose the **Inspect** option.  This [opens the Elements panel and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
 
-The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, see [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
+The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, see [Navigate the DOM Tree with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
 ### Copy the code for an element in the DOM Tree  
 

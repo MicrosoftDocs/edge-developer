@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -127,12 +127,12 @@ For more information on how to build and deploy WebView2 applications, review th
 *   [How to Debug with WebView2][Webview2HowtoDebug]  
 *   [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowtoWebdriver]  
 
-## Getting in touch with the WebView2 team  
+## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback.  To submit feature requests or bug reports, see [WebView feedback repo][GithubMicrosoftedgeWebviewfeddback] .  It's also a good place to search for known issues.  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> During the preview, we collect data to help build a better product.  To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.  
+> During the preview, the collected data helps build a better product.  To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.  
 
 <!-- links -->  
 

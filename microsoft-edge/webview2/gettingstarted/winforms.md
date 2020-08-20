@@ -3,7 +3,7 @@ description: Host web content in your Windows Forms app with the Microsoft Edge 
 title: Microsoft Edge WebView 2 for Windows Forms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -298,4 +298,4 @@ Congratulations, you built your first WebView2 app!
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebView [feedback repo](https://aka.ms/webviewfeedback) to submit feature requests or bug reports or search for known issues.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
