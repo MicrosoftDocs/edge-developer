@@ -1,7 +1,7 @@
 ---
 title: "Error codes for Windows Runtime apps using JavaScript"
 ms.custom: ""
-ms.date: 04/01/2020
+ms.date: 07/29/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -33,11 +33,13 @@ f1_keywords:
   - "VS.WebClient.Help.APPHOST9626"
 ms.assetid: 4c6d4e90-602a-4b56-ae74-3458929da442
 caps.latest.revision: 1
-author: "MSEdgeTeam"
-ms.author: "msedgedevrel"
+author: MSEdgeTeam
+ms.author: msedgedevrel
 manager: ""
 ---
 # Error codes for Windows Runtime apps using JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 Here are the error codes displayed by the Microsoft Visual Studio console when developing Windows Runtime apps using JavaScript.  
 
@@ -71,25 +73,23 @@ Here are the error codes displayed by the Microsoft Visual Studio console when d
 | APPHOST9624: "The app can't use script to load the *url* url because the url launches another app.  Only direct user interaction can launch another app." | Apps can't launch other apps directly.  Other apps can be launched by the  user when the app implements certain contracts.  For more info, see [App contracts and extensions][PreviousVersionsWindowsAppsHh464906].  |  
 | APPHOST9626: "A direct reference to resource file `ms-appx://1d33240b-0b00-40e4-a416-a4750c48787f/ja-jp\images\logo.scale-140.png` was detected.  This reference causes failures when used outside of the debugging environment." | Due to the file path of `logo.scale-140.png`, this PNG file is treated as a localized resource, causing the error in that localized resources cannot be referenced directly.  See [Globalizing your app (HTML)][PreviousVersionsWindowsAppsHh465006] if you intend to use this file as a language resource.  Otherwise, try renaming the problematic directory.  |  
 
-## See Also  
+## See also  
 
 [Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Using the Windows Runtime in JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class | Microsoft Docs"  
 
-[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "addPublicLocalApplicationUri method"  
+[PreviousVersionsHh771917]: /previous-versions/hh771917(v=vs.85) "addPublicLocalApplicationUri method | Microsoft Docs"  
 
-[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "How to require an HTTPS connection (HTML)"  
-[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "App contracts and extensions (Windows Runtime apps)"  
-[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalizing your app (HTML)"  
-[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Features and restrictions by context (HTML)"  
-[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "HTML, CSS, and JavaScript features and differences (HTML)"  
-[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "How to link to external web pages (HTML)"  
+[PreviousVersionsWindowsAppsHh452771]: /previous-versions/windows/apps/hh452771(v=win.10) "How to require an HTTPS connection (HTML) | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh464906]: /previous-versions/windows/apps/hh464906(v=win.10) "App contracts and extensions (Windows Runtime apps) | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh465006]: /previous-versions/windows/apps/hh465006(v=win.10) "Globalizing your app (HTML) | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh465373]: /previous-versions/windows/apps/hh465373(v=win.10) "Features and restrictions by context (HTML) | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh465380]: /previous-versions/windows/apps/hh465380(v=win.10) "HTML, CSS, and JavaScript features and differences (HTML) | Microsoft Docs"  
+[PreviousVersionsWindowsAppsHh780594]: /previous-versions/windows/apps/hh780594(v=win.10) "How to link to external web pages (HTML) | Microsoft Docs"  
 
 [MDNIframe]: https://developer.mozilla.org/docs/Web/HTML/Element/iframe "<iframe>: The Inline Frame element | MDN"  

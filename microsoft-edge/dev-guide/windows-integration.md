@@ -1,22 +1,26 @@
 ---
 description: Guides for Windows integration features in Microsoft Edge.
-title: Dev guide - Windows integration features
+title: Windows integration features - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.technology: windows-integration
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ---
+# Windows integration features  
 
-# Windows integration features
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
-## Payment Request API
-The [Payment Request API](./windows-integration/Payment-Request-API.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods (e.g. credit cards) that consumers have stored in the cloud.
+## Payment Request API  
 
-## Web Authentication and Windows Hello
-The [Web Authentication API](./windows-integration/web-authentication.md) in Microsoft Edge enables web applications to use [Windows Hello](https://go.microsoft.com/fwlink/p/?LinkID=624961) biometrics for user authentication.
+The [Payment Request API](./windows-integration/payment-request-api.md) is an open, cross-browser standard that enables browsers to act as an intermediary between merchants, consumers, and the payment methods \(such as credit cards\) that consumers have stored in the cloud.  
 
-## Web Notifications API
-The [Web Notifications API](./windows-integration/web-Notifications-API.md) allows websites to send users notifications outside the context of the Microsoft Edge browser.
+## Web Authentication and Windows Hello  
+
+The [Web Authentication API](./windows-integration/web-authentication.md) in Microsoft Edge enables web applications to use [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics for user authentication.  
+
+## Web Notifications API  
+
+The [Web Notifications API](./windows-integration/web-notifications-api.md) allows websites to send users notifications outside the context of the Microsoft Edge browser.  
