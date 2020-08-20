@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/21/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -114,11 +114,11 @@ Network Console in the Console drawer
 
 To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
-*   Send your feedback using the Feedback icon in the DevTools  
-*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
+*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]   
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Feedback icon in the Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
-   Feedback icon in the Microsoft Edge DevTools  
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+   The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- links -->  
