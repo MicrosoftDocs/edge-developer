@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Getting started with WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/07/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -277,9 +277,9 @@ Many of the WebView2 functionalities that are not covered on this page, the foll
 *   For a sample application built using WebView2, see [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   For detailed information about the WebView2 API, see [API reference][Webview2ReferenceWin3209538].  
 
-## Getting in touch with the WebView2 team  
+## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback!  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedback] on GitHub to submit feature requests or bug reports or search for known issues.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
@@ -294,7 +294,7 @@ Help build a richer WebView2 experience by sharing your feedback!  Visit the [fe
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
 
-[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows Implementation Libraries (WIL) - microsoft/wil | GitHub"  
