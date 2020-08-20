@@ -3,14 +3,15 @@ description: Use the Windows Runtime (WinRT) to call native Windows APIs from yo
 title: Windows Runtime (WinRT) for JavaScript
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2020
+ms.date: 07/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: Windows Runtime, WinRT, PWA, JavaScript
 ---
-
 # Windows Runtime (WinRT) for JavaScript  
+
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
 
 The [Windows Runtime](/windows/uwp/get-started/universal-application-platform-guide#how-the-universal-windows-platform-relates-to-windows-runtime-apis) \(or simply WinRT\) is the collection of native APIs that power the [Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) \(UWP\) apps that run across all [Windows 10 device families](/uwp/extension-sdks/device-families-overview).  WinRT APIs are projected into a number of different languages, including C#, C++, Visual Basic, and JavaScript.  
 
@@ -29,13 +30,13 @@ Here are the top-level WinRT namespace areas available to all Windows 10 apps:
 | [Globalization](/uwp/api/windows.globalization) | Provides globalization support for language profiles, geographic regions, and international calendars.  |  
 | [Graphics](/uwp/api/windows.graphics) | Provides basic data types that contain info on how to draw graphics.  These data structs are commonly used to define how large surfaces are drawn when using the CompositionVirtualDrawingSurface class.  |  
 | [Management](/uwp/api/windows.management) | Provides capabilities to force a sync from an Mobile Device Management \(MDM\) device to the server.  This MDM sync protocol is based on the Open Mobile Alliance - Device Management standard.  |  
-| [Media](/uwp/api/windows.media) |Provides classes for creating and working with media such as photos, audio recordings and videos.  |  
-| [Networking](/uwp/api/windows.networking) |Provides access to hostnames and endpoints used by network apps.  |  
-| [Perception](/uwp/api/windows.perception) |Contains classes for perceiving the user's surroundings, letting apps locate and reason about the device relative to the surfaces and holograms around the user.  |  
+| [Media](/uwp/api/windows.media) | Provides classes for creating and working with media such as photos, audio recordings and videos.  |  
+| [Networking](/uwp/api/windows.networking) | Provides access to hostnames and endpoints used by network apps.  |  
+| [Perception](/uwp/api/windows.perception) | Contains classes for perceiving the user's surroundings, letting apps locate and reason about the device relative to the surfaces and holograms around the user.  |  
 | [Security](/uwp/api/windows.security.authentication.identity) | Provides classes for user authentication, credentials management, cryptographic operations and enterprise data protection features.  |  
-| [Services](/uwp/api/windows.services.cortana) |Provides access to Microsoft services for Cortana, Maps, Microsoft Store and Targeted \(subscription\) content.  |  
-| [Storage](/uwp/api/windows.storage) |Provides classes for managing files, folders, and application settings.  |  
-| [System](/uwp/api/windows.system) |Enables system functionality such as launching apps, obtaining information about a user, and memory profiling.  |  
+| [Services](/uwp/api/windows.services.cortana) | Provides access to Microsoft services for Cortana, Maps, Microsoft Store and Targeted \(subscription\) content.  |  
+| [Storage](/uwp/api/windows.storage) | Provides classes for managing files, folders, and application settings.  |  
+| [System](/uwp/api/windows.system) | Enables system functionality such as launching apps, obtaining information about a user, and memory profiling.  |  
 | [UI](/uwp/api/windows.ui) | Provides an app with access to core system functionality and run-time information about the UI.  **NOTE**:  APIs in the `Windows.UI.Xaml` namespace are not available for JavaScript apps \(which may use the equivalent web standards-based technologies\).  |  
 | [Web](/uwp/api/windows.web) | Provides information on errors resulting from web service operations.  |  
 

@@ -10,7 +10,7 @@ metadata:
   author: MSEdgeTeam
   ms.author: msedgedevrel
   ms.date: 08/20/2020
-  localization_priority: Priority
+  ms.localizationpriority: high
 
 # highlightedContent section (optional)
 # Maximum of 8 items

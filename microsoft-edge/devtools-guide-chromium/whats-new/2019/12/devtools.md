@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,16 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-
-
-
-# What's new in DevTools (Microsoft Edge 80)   
-
-
+# What's new in DevTools (Microsoft Edge 80)  
 
 ## Announcements from the Microsoft Edge DevTools team  
 
@@ -46,7 +37,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][crbug963183]  
 
@@ -111,7 +102,7 @@ Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag
 > The DevTools in German  
 > ![The DevTools in German][ImageLocalizedGerman]  
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Feedback](#feedback) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
 
 Chromium issue [#941561][crbug941561]  
 
@@ -135,7 +126,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#feedback).  
+We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 Chromium issue [#987787][crbug987787]
 
@@ -196,7 +187,7 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 The following sections announce additional features available in Microsoft Edge 80 that were contributed to the open source Chromium project.  
 
-### Support for let and class redeclarations in the Console   
+### Support for let and class redeclarations in the Console  
 
 The Console now supports redeclarations of `let` and `class` statements.  The inability to redeclare was a common annoyance for web developers who use the Console to experiment with new JavaScript code.  
 
@@ -217,7 +208,7 @@ Now, the Console allows the redeclaration:
 
 Chromium issue [#1004193][crbug1004193]  
 
-### Improved WebAssembly debugging   
+### Improved WebAssembly debugging  
 
 DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
 
@@ -231,9 +222,9 @@ DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which
 > ![The new DWARF-powered WebAssembly debugging][ImageDwarfPoweredWebAssemblyDebugging]  
 -->  
 
-### Network panel updates   
+### Network panel updates  
 
-#### Request Initiator Chains in the Initiator tab   
+#### Request Initiator Chains in the Initiator tab  
 
 You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
 
@@ -252,7 +243,7 @@ After [logging network activity in the Network panel][DevToolsNetworkIndex], cli
 
 Chromium issue [#842488][crbug842488]  
 
-#### Highlight the selected network request in the Overview   
+#### Highlight the selected network request in the Overview  
 
 After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
 
@@ -262,7 +253,7 @@ After you click a network resource in order to inspect it, the Network panel now
 
 Chromium issue [#988253][crbug988253]  
 
-#### URL and path columns in the Network panel   
+#### URL and path columns in the Network panel  
 
 Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
 
@@ -274,7 +265,7 @@ Right-click the **Waterfall** table header and select **Path** or **URL** to sho
 
 Chromium issue [#993366][crbug993366]  
 
-#### Updated User-Agent strings   
+#### Updated User-Agent strings  
 
 DevTools supports setting a custom User-Agent string through the **Network Conditions** tab.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
 
@@ -291,9 +282,9 @@ To access **Network Conditions**, [open the Command Menu][DevToolsCommandMenuInd
 
 Chromium issue [#1029031][crbug1029031]  
 
-### Audits panel updates   
+### Audits panel updates  
 
-#### New configuration UI   
+#### New configuration UI  
 
 The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
 
@@ -301,9 +292,9 @@ The configuration UI has a new, responsive design, and the throttling configurat
 > The new configuration UI  
 > ![The new configuration UI][ImageConfigurationUI]  
 
-### Coverage tab updates   
+### Coverage tab updates  
 
-#### Per-function or per-block coverage modes   
+#### Per-function or per-block coverage modes  
 
 The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
 
@@ -314,39 +305,25 @@ The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you 
 > The coverage mode dropdown menu  
 > ![The coverage mode dropdown menu][ImageCoverageMode]  
 
-#### Coverage must now be initiated by a page reload   
+#### Coverage must now be initiated by a page reload  
 
 Toggling code coverage without a page reload has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
 
 Chromium issue [#1004203][crbug1004203]  
 
-## Feedback   
-
-
-
-To discuss the new features and changes in this post, or anything else related to DevTools:  
-
-*   Send your feedback using the **Feedback** icon in the DevTools  
-
-> ##### Figure 18
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]  
-
-*   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools]  
-*   Submit a suggestion to [The Web We Want][TheWebWeWant]  
-*   File bugs on this document in the [edge-developer][GitHubMicrosoftDocsEdgeDeveloperNewIssue] repository  
-
-## Download the Microsoft Edge preview channels   
+## Download the Microsoft Edge preview channels  
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
+
+## Getting in touch with Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!--<<../../_shared/devtools-feedback.md>> -->
 
 <!--<<../../_shared/canary.md>> -->
 
 <!--<<../../_shared/discover.md>> -->
-
-
 
 <!-- image links -->  
 
@@ -367,7 +344,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [ImageUserAgentNetworkConditionsTab]: ../../images/2019/12/useragent.msft.png "Figure 15: The User Agent menu in the Network Conditions tab"  
 [ImageConfigurationUI]: ../../images/2019/12/start.msft.png "Figure 16: The new configuration UI"  
 [ImageCoverageMode]: ../../images/2019/12/modes.msft.png "Figure 17: The coverage mode dropdown menu"  
-[ImageFeedbackIcon]: ../../images/2019/12/feedback-icon.msft.png "Figure 18: The **Feedback** icon in the Microsoft Edge DevTools"
 
 <!--[ImageDwarfPoweredWebAssemblyDebugging]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
 

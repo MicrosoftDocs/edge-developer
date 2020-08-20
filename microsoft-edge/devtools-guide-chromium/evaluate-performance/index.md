@@ -2,7 +2,7 @@
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,100 +21,90 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-
-
-# Get Started With Analyzing Runtime Performance   
-
-
+# Get started with analyzing Runtime performance  
 
 > [!NOTE]
-> See [Optimize Website Speed][DevtoolsSpeedGetStarted] to learn how to make your pages load faster.  
+> To learn how to make your pages load faster, see [Optimize Website Speed][DevtoolsSpeedGetStarted].  
 
-Runtime performance is how your page performs when it is running, as opposed to loading.  This tutorial teaches you how to use the Microsoft Edge DevTools Performance panel to analyze runtime performance.  In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.  
+Runtime performance is how your page performs when it is running, as opposed to loading.  The following tutorial article teaches you how to use the Microsoft Edge DevTools Performance panel to analyze runtime performance.  In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.  
 
 <!--todo: add rail link when section is ready -->  
 
-## Get started   
+## Get started  
 
-In this tutorial, you open DevTools on a live page and use the Performance panel to find a performance bottleneck on the page.  
+In the following tutorial, you open DevTools on a live page and use the **Performance** panel to find a performance bottleneck on the page.  
 
-1.  Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, those extensions might create noise in your performance measurements.  
+1.  Open Microsoft Edge in **InPrivate Mode**.  InPrivate Mode ensures that Microsoft Edge runs in a clean state.  For example, if you have a lot of extensions installed, the extensions may create noise in your performance measurements.  
     
     <!--TODO: replace section when updated for new Edge  -->
     
-1.  Load the following page in your InPrivate window.  This is the demo that you're going to profile.  The page shows a bunch of little icons moving up and down.  
+1.  Load the following page in your InPrivate window.  The page is the demo that you are going to profile.  The page shows a bunch of little icons moving up and down.  
     
     ```https
-    https://microsoft-edge-chromium-devtools.glitch.me/jank/
+    https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```  
     
-1.  Press `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\) to open DevTools.  
+1.  Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\) to open DevTools.  
     
-    > ###### Figure 1  
-    > The demo on the left, and DevTools on the right  
-    > ![The demo on the left, and DevTools on the right][ImageGetStarted]  
+    :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
+       The demo on the left, and DevTools on the right  
+    :::image-end:::  
     
     > [!NOTE]
-    > For the rest of the screenshots, DevTools is [undocked to a separate window][DevtoolsCustomizePlacement] so that you can see the contents better.  
+    > For the rest of the figures, DevTools is [undocked to a separate window][DevtoolsCustomizePlacement] to better focus on the contents.  
     
 ### Simulate a mobile CPU  
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.  
 
-1.  In DevTools, click the **Performance** tab.  
+1.  In DevTools, choose the **Performance** tab.  
 1.  Make sure that the **Screenshots** checkbox is enabled.  
-1.  Click **Capture Settings** ![Capture Settings][ImageCaptureSettingsIcon].  DevTools reveals settings related to how it captures performance metrics.  
+1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureSettingsIcon]\).  DevTools reveals settings related to how it captures performance metrics.  
 1.  For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.  
     
-    > ###### Figure 2  
-    > CPU throttling  
-    > ![CPU throttling][ImageCPUThrottling]  
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU throttle" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
+       CPU throttle  
+    :::image-end:::  
     
     > [!NOTE]
-    > When testing other pages, if you want to ensure that they work well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  This demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.  
+    > When testing other pages; if you want to ensure that each page works well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  The demo does not work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.  
     
 ### Set up the demo  
 
-It is hard to create a runtime performance demo that works consistently for all readers of this website.  This section lets you customize the demo to
-ensure that your experience is relatively consistent with the screenshots and descriptions you see in this tutorial, regardless of your particular setup.
+It is hard to create a runtime performance demo that works consistently for all readers of the website.  The following section lets you customize the demo to
+ensure that your experience is relatively consistent with the screenshots and descriptions, regardless of your particular set up.
 
-1.  Keep clicking **Add 10** until the blue icons move noticeably slower than before.  On a high-end machine, it may take about 20 clicks.  
-1.  Click **Optimize**.  The blue icons should move faster and more smoothly.  
-
-    > [!NOTE]
-    > If you don't see a noticeable difference between the optimized and un-optimized versions, try clicking **Subtract 10** a few times and trying again.  
-    > If you add too many blue icons, you're just going to max out the CPU and you're not going to see a major difference in the results for the two versions.  
-
-1.  Click **Un-Optimize**.  The blue icons move slower and with more jank again.  
-
-### Record runtime performance   
-
-When you ran the optimized version of the page, the blue icons move faster.  
-Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the Performance panel to learn how to detect the performance bottleneck in the un-optimized version.  
-
-1.  In DevTools, click **Record** ![Record][ImageRecordIcon].  
-    DevTools captures performance metrics as the page runs.  
+1.  Choose the **Add 10** button until the blue icons move noticeably slower than before.  On a high-end machine, you may to choose it about 20 times.  
+1.  Choose **Optimize**.  The blue icons should move faster and more smoothly.  
     
-    > ###### Figure 3 
-    > Profiling the page  
-    > ![Profiling the page][ImagePageProfiling]  
+    > [!NOTE]
+    > To better display a difference between the optimized and un-optimized versions, choose the **Subtract 10** button a few times and try again.  
+    > If you add too many blue icons, you may max out the CPU and then you may not observe a major difference in the results for the two versions.  
+    
+1.  Choose **Un-Optimize**.  The blue icons move slower and with more sluggishness again.  
+    
+### Record runtime performance  
+
+When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the Performance panel to learn how to detect the performance bottleneck in the un-optimized version.  
+
+1.  In DevTools, choose **Record** \(![Record][ImageRecordIcon]\).  DevTools captures performance metrics as the page runs.  
+    
+    :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profile the page" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
+       Profile the page  
+    :::image-end:::  
     
 1.  Wait a few seconds.  
-1.  Click **Stop**.  DevTools stops recording, processes the data, then displays the results on the Performance panel.  
+1.  Choose **Stop**.  DevTools stops recording, processes the data, then displays the results on the Performance panel.  
     
-    > ###### Figure 4  
-    > The results of the profile  
-    > ![The results of the profile][ImageProfileResults]  
+    :::image type="complex" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="The results of the profile" lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
+       The results of the profile  
+    :::image-end:::  
+    
+Wow, that is an overwhelming amount of data.  do not worry, soon the process makes more sense.  
 
-Wow, that is an overwhelming amount of data.  Don't worry, it'll all make more sense shortly.  
+## Analyze the results  
 
-## Analyze the results   
-
-Once you've got a recording the performance of the page, you can measure how poor the performance of the page is, and find the any causes.  
+After you record the performance of the page, measure the quality of the performance of the page and find the any causes.  
 
 ### Analyze frames per second  
 
@@ -122,122 +112,122 @@ The main metric for measuring the performance of any animation is frames per sec
 
 1.  Look at the **FPS** chart.  Whenever you see a red bar above **FPS**, it means that the framerate dropped so low that it is probably harming the user experience.  In general, the higher the green bar, the higher the FPS.  
     
-    > ###### Figure 5  
-    > The FPS chart  
-    > ![The FPS chart][ImageFPSChart]  
-
+    :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="The FPS chart" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
+       The **FPS** chart  
+    :::image-end:::  
+    
 1.  Below the **FPS** chart you see the **CPU** chart.  The colors in the **CPU** chart correspond to the colors in the **Summary** tab, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever you see the CPU maxed out for long periods, it is a cue to find ways to do less work.  
     
-    > ###### Figure 6  
-    > The CPU chart and Summary tab  
-    > ![The CPU chart and Summary tab][ImageCPUSummary]  
-
-1.  Hover your mouse over the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  This is called scrubbing, and it is useful for manually analyzing the progression of animations.  
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary tab" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+       The **CPU** chart and **Summary** tab  
+    :::image-end:::  
     
-    > ###### Figure 7  
-    > Viewing a screenshot of the page around the 2500ms mark of the recording  
-    > ![Viewing a screenshot of the page around the 2500ms mark of the recording][ImageViewingScreenshot]  
-
-1.  In the **Frames** section, hover your mouse over one of the green squares.  DevTools shows you the FPS for that particular frame.  Each frame is probably well below the target of 60 FPS.  
+1.  Hover on the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is referenced as scrubbing, and it is useful for manually analyzing the progression of animations.  
     
-    > ###### Figure 8  
-    > Hovering over a frame  
-    > ![Hovering over a frame][ImageFrameHover]  
-
-Of course, with this demo, it is pretty obvious that the page is not performing well.  But in real scenarios, it may not be so clear, so having all of these tools to make measurements comes in handy.  
+    :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="View a screenshot of the page around the 2500ms mark of the recording" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
+       View a screenshot of the page around the 2500ms mark of the recording  
+    :::image-end:::  
+    
+1.  In the **Frames** section, hover on one of the green squares.  DevTools shows you the FPS for that particular frame.  Each frame is probably well below the target of 60 FPS.  
+    
+    :::image type="complex" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Hover on a frame" lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
+       Hover on a frame  
+    :::image-end:::  
+    
+Of course, you should see that the page is not performing well.  But in real scenarios, it may not be so clear, so having all of the tools to make measurements comes in handy.  
 
 #### Bonus: Open the FPS meter  
 
 Another handy tool is the FPS meter, which provides real-time estimates for FPS as the page runs.  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Start typing `Rendering` in the Command Menu and select **Show Rendering**.  
+1.  Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Start typing `Rendering` in the **Command Menu** and select **Show Rendering**.  
 1.  In the **Rendering** tab, enable **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
     
-    > ###### Figure 9  
-    > The FPS meter  
-    > ![The FPS meter][ImageFPSMeter]  
-
-1.  Disable the **FPS Meter** and press `Escape` to close the **Rendering** tab.  You won't be using it in this tutorial.  
-
+    :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The FPS meter" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+       The **FPS meter**  
+        :::image-end:::  
+    
+1.  Disable the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not using **FPS Meter** in this tutorial.  
+    
 ### Find the bottleneck  
 
-Now that you've measured and verified that the animation is not performing well, the next question to answer is:  why?  
+After you measured and verified that the animation is not performing well, the next step is to answer the question "why?".  
 
-1.  Note the summary tab.  When no events are selected, this tab shows you a breakdown of activity.  The page spent most of its time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
+1.  When no events are selected, the **Summary** tab shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
     
-    > ###### Figure 10  
-    > The Summary tab  
-    > ![The Summary tab][ImageSummaryTab]  
-
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The Summary tab" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+       The **Summary** tab  
+    :::image-end:::  
+    
 1.  Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When you see events stacked on top of each other, it means the upper events caused the lower events.  
     
-    > ##### Figure 11  
-    > The Main section  
-    > ![The Main section][ImageMainSection]  
-
-1.  There is a lot of data in the recording.  Zoom in on a single event by clicking, holding, and dragging your mouse over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** tab only display information for the selected portion of the recording.  
+    :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="The Main section" lightbox="../media/evaluate-performance-performance-main.msft.png":::
+       The **Main** section  
+    :::image-end:::  
     
-    > ###### Figure 12  
-    > Zoomed in on a single event  
-    > ![Zoomed in on a event][ImageZoomedAnimation]  
+1.  There is a lot of data in the recording.  To Zoom into a single event; choose, hold, and dragg your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** tab only display information for the selected portion of the recording.  
+    
+    :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoom into an event" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+       Zoom into an event  
+    :::image-end:::  
     
     > [!NOTE]
-    > Another way to zoom is to focus the **Main** section by clicking its background or selecting an event, and then press the `W`, `A`, `S`, and `D` keys.  
+    > Another way to zoom, focus the **Main** section, choose the background or an event, and select `W`, `A`, `S`, or `D`.  
     
-    1.  Note the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever you see a red triangle, it is a warning that there may be an issue related to this event.  
+    1.  Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever you see a red triangle, it is a warning that there may be an issue related to the event.  
     
     > [!NOTE]
     > The **Animation Frame Fired** event occurs whenever a [`requestAnimationFrame()` callback][MDNWebRequestAnimationFrame] is run.  
     
-1.  Click the **Animation Frame Fired** event.  The **Summary** tab now shows you information about that event.  Note the **Reveal** link.  Clicking that causes DevTools to highlight the event that initiated the **Animation Frame Fired** event.  Also note the **app.js:95** link.  Clicking that jumps you to the relevant line in the source code.
+1.  Choose the **Animation Frame Fired** event.  The **Summary** tab now shows you information about that event.  Note the **Reveal** link.  After you choose it, DevTools to highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you choose it, the relevant line in the source code is displayed.
     
-    > ##### Figure 13  
-    > More information about the Animation Frame Fired event  
-    > ![More information about the Animation Frame Fired event][ImageAnimationFrameFired]  
+    :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="More information about the Animation Frame Fired event" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
+       More information about the **Animation Frame Fired** event  
+    :::image-end:::  
     
     > [!NOTE]
     > After selecting an event, use the arrow keys to select the events next to it.  
-
-1.  Under the **app.update** event, there is a bunch of purple events.  If they were wider, it looks as though each one might have a red triangle on it.  Click one of the purple **Layout** events now.  DevTools provides more information about the event in the **Summary** tab.  Indeed, there is a warning about forced reflows \(another word for layout\).  
-
-1.  In the **Summary** tab, click the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.  
     
-    > ##### Figure 14  
-    > The line of code that caused the forced layout  
-    > ![The line of code that caused the forced layout][ImageForcedLayoutSRC]  
+1.  Under the **app.update** event, there is a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.  
+1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** tab.  Indeed, there is a warning about forced reflows \(another word for layout\).  
+    
+1.  In the **Summary** tab, choose the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.  
+    
+    :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="The line of code that caused the forced layout" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
+       The line of code that caused the forced layout  
+    :::image-end:::  
     
     > [!NOTE]
-    > The problem with this code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute its position.  <!--  See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
-
+    > The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser does not know if each icon position changed, so it has to re-layout the icon in order to compute the new position.  <!--  > See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
+    
 <!-- todo: add layouts section when available -->
 
-Phew!  That was a lot to take in, but you now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.  
+That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.  
 
 ### Bonus: Analyze the optimized version  
 
-Using the workflows and tools that you just learned, click **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, you can see that the optimized version of the app does much less work, resulting in better performance.  
+Using the workflows and tools that you just learned, choose **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, you are able to see that the optimized version of the app does much less work, resulting in better performance.  
 
 > [!NOTE]
-> Even this "optimized" version isn't that great, because it still manipulates the `top` property of each icon.  A better approach is to stick to properties that only affect compositing.  
-<!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
+> Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
 
 <!--todo: add rendering section when available -->
 
 ## Next steps
 
-<!--The foundation for understanding performance is the RAIL model.  This model teaches you the performance metrics that are most important to your users.  
+<!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
 
-To get more comfortable with the Performance panel, practice makes perfect.  Try profiling your own pages and analyzing the results.  If you have any questions about your results, use the **Feedback** icon, press `Alt` + `Shift` + `I` on Windows (`Option` + `Shift` + `I` on macOS), or [tweet at us][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.
+To get more comfortable with the Performance panel, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` \(Windows\), select `Option`+`Shift`+`I` \(macOS\), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.  
 
-> ##### Figure 15
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The **Feedback** icon in the Microsoft Edge DevTools][ImageFeedbackIcon]
+:::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="The **Feedback** icon in the Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+   The **Send Feedback** icon in the Microsoft Edge DevTools  
+:::image-end:::  
 
-<!-- To really master runtime performance, you've got to learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
+<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->  
 
-Last, there are many ways to improve runtime performance.  This tutorial focused on one particular animation bottleneck to give you a focused tour through the Performance panel, but it is only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
+Last, there are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour through the Performance panel, but it is only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
 *   [Optimizing JS Execution][RenderingOptimizeJS]  
@@ -248,31 +238,10 @@ Last, there are many ways to improve runtime performance.  This tutorial focused
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
 
-<!-- image links -->  
-
-[ImageCaptureSettingsIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-settings-icon.msft.png  
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-
-[ImageGetStarted]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-get-started-side-by-side.msft.png "Figure 1: The demo on the left, and DevTools on the right"  
-[ImageCPUThrottling]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-capture-settings.msft.png "Figure 2: CPU throttling"  
-[ImagePageProfiling]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-profiling.msft.png "Figure 3: Profiling the page"  
-[ImageProfileResults]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-capture-results.msft.png "Figure 4: The results of the profile"  
-[ImageFPSChart]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-fps-chart.msft.png "Figure 5: The FPS chart"  
-[ImageCPUSummary]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-cpu-chart.msft.png "Figure 6: The CPU chart and Summary tab, outlined in blue"  
-[ImageViewingScreenshot]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-screenshot-hover.msft.png "Figure 7: Viewing a screenshot of the page around the 2500ms mark of the recording"  
-[ImageFrameHover]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-frame-hover.msft.png "Figure 8: Hovering over a frame"  
-[ImageFPSMeter]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-fps-meter-overlay.msft.png "Figure 9: The FPS meter"  
-[ImageSummaryTab]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-summary-tab.msft.png "Figure 10: The Summary tab"  
-[ImageMainSection]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-main.msft.png "Figure 11: The Main section"  
-[ImageZoomedAnimation]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-main-zoomed.msft.png "Figure 12: Zoomed in on a single Animation Frame Fired event"  
-[ImageAnimationFrameFired]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-performance-animation-frame-fired.msft.png "Figure 13: More information about the Animation Frame Fired event"  
-[ImageForcedLayoutSRC]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-sources-app-update.msft.png "Figure 14: The line of code that caused the forced layout"  
-[ImageFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/media/evaluate-performance-feedback-icon.msft.png "Figure 15: The **Feedback** icon in the Microsoft Edge DevTools"
-
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
-[DevtoolsSpeedGetStarted]: /microsoft-edge/devtools-guide-chromium/speed/get-started "Optimize Website Speed With Microsoft Edge DevTools"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize Website Speed With Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - Post a Tweet | Twitter"  
 
