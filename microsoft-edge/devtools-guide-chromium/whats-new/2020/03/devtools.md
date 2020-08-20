@@ -2,7 +2,7 @@
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,29 +33,29 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Remotely debug Microsoft Edge on Windows 10 Devices  
 
-The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].  Using this app, which extends the [Windows Device Portal][WindowsDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, see a list of targets \(all tabs in Microsoft Edge and [PWAs][PWADoc] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.  
+The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].  Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, see a list of targets \(all tabs in Microsoft Edge and [PWAs][PprgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
    Figure 1:  The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][RemoteDebuggingWin10].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
 ### New ways to access Settings  
 
-There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings][OverviewSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.  
+There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings][DevtoolsCustomizeIndexSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="The gear icon opens Settings in the DevTools" lightbox="../../media/2020/03/settings.msft.png":::
    Figure 2:  The gear icon opens **Settings** in the DevTools  
 :::image-end:::  
 
-You are also able to open [Settings][OverviewSettings] from the **Main Menu** under **More tools**.
+You are also able to open [Settings][DevtoolsCustomizeIndexSettings] from the **Main Menu** under **More tools**.
 
 :::image type="complex" source="../../media/2020/03/settings2.msft.png" alt-text="Main Menu > More tools > Settings" lightbox="../../media/2020/03/settings2.msft.png":::
    Figure 3:  **Main Menu** > **More tools** > **Settings**  
 :::image-end:::  
 
-Chromium issue [#1050855][crbug1050855]
+Chromium issue [#1050855][CR1050855]
 
 ### New and improved infobars
 
@@ -65,23 +65,23 @@ Informational notification bars \(infobars\) in DevTools now have an improved lo
    Figure 4:  Infobar for pretty-printing a minified file in Microsoft Edge Version 83  
 :::image-end:::  
 
-Chromium issue [#1056348][crbug1056348]
+Chromium issue [#1056348][CR1056348]
 
 ### Navigate the Color Picker with your keyboard  
 
-The [Color Picker][ColorPicker] is a GUI in the [Elements panel][ElementsDoc] for changing `color` and `background-color` declarations.  In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][ColorPicker] with the keyboard.  
+The [Color Picker][DevtoolsCssReferenceColorPicker] is a GUI in the [Elements panel][DevtoolsCssIndex] for changing `color` and `background-color` declarations.  In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker] with the keyboard.  
 
 :::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="You are now able to use your keyboard to move the selector in the Shades section of the Color Picker" lightbox="../../media/2020/03/color-picker.msft.png":::
-   Figure 5:  You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][ColorPicker]  
+   Figure 5:  You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker][DevtoolsCssReferenceColorPicker]  
 :::image-end:::  
 
 In Microsoft Edge 83, you are now able to use the keyboard to move the selector in the **Shades** section of the Color Picker.  
 
-Chromium issue [#963183][crbug963183]  
+Chromium issue [#963183][CR963183]  
 
 ### Properties tab now populates after a page refresh  
 
-In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][ElementsDoc] was broken by page refreshes.  When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.  
+In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel][DevtoolsCssIndex] was broken by page refreshes.  When you refreshed the page, the **Properties tab** did not populate the properties of the currently-selected element.  
 
 :::image type="complex" source="../../media/2020/03/properties-in-81.msft.png" alt-text="In Microsoft Edge 81 and earlier, the Properties tab was blank after a page refresh" lightbox="../../media/2020/03/properties-in-81.msft.png":::
    Figure 6:  In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh  
@@ -93,7 +93,7 @@ In Microsoft Edge 83, you are now able to see the properties of the currently-se
    Figure 7:  In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh  
 :::image-end:::  
 
-Chromium issue [#1050999][crbug1050999]  
+Chromium issue [#1050999][CR1050999]  
 
 ### Use the arrow keys to scroll in the Changes tool  
 
@@ -109,7 +109,7 @@ When you have made a change to a minified file, the **Changes tool** enables you
 
 If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#963183][crbug963183]  
+Chromium issue [#963183][CR963183]  
 
 ## Announcements from the Chromium project  
 
@@ -117,7 +117,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 ### Emulate vision deficiencies  
 
-Open the [Rendering tab][RenderingDoc] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
+Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulating blurred vision" lightbox="../../media/2020/03/vision.msft.png":::
    Figure 9:  Emulating blurred vision  
@@ -139,7 +139,7 @@ By designing for the more extreme simulations in DevTools, your web apps are gua
 
 Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#1003700][crbug1003700]  
+Chromium issue [#1003700][CR1003700]  
 
 ### Emulate locales  
 
@@ -159,7 +159,7 @@ Emulate locales by setting a location in **Sensors** > **Location**. [Open the *
 
 To try a demo, see [Locale-dependent code example][MathiasByensLocaleDemo].
 
-Chromium issue [#1051822][crbug1051822]
+Chromium issue [#1051822][CR1051822]
 
 ### Cross-Origin Embedder Policy (COEP) debugging  
 
@@ -179,13 +179,25 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
 
 Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#1051466][crbug1051466]  
+Chromium issue [#1051466][CR1051466]  
+
+### New icons for breakpoints, conditional breakpoints, and logpoints  
+
+The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:  
+
+*   Breakpoints \(![Breakpoint](../../media/2020/03/breakpoint.msft.png)\) are represented by red circles.  
+*   Conditional Breakpoints \(![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)\) are represented by half-red half-white circles.  
+*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) are represented by red circles with Console icons.  
+
+The motivation for the new icons was to make the UI more consistent with other GUI debugging tools \(which usually color breakpoints red\) and to make it easier to distinguish between the 3 features at a glance.  
+
+Chromium issue [#1041830][CR1041830]  
 
 ### View network requests that set a specific cookie path  
 
 Use the new `cookie-path` filter keyword in the **Network** panel to focus on the network requests that set a specific [cookie path][MDNCookiePath].  
 
-Check out [Filter requests by properties][NetworkProperties] to discover more keywords
+Check out [Filter requests by properties][DevtoolsNetworkReferenceFilterRequestsProperties] to discover more keywords
 like `cookie-path`.
 
 ### Dock to left from the Command Menu  
@@ -197,11 +209,11 @@ Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` com
 :::image-end:::  
 
 > [!NOTE]
-> The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [**Main Menu**][MainMenuDoc].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
+> The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [**Main Menu**][DevtoolsCustomizePlacementsChangeMainMenu].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
 
 Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#1011679][crbug1011679]  
+Chromium issue [#1011679][CR1011679]  
 
 ### The Audits panel is now the Lighthouse panel  
 
@@ -224,13 +236,13 @@ After setting up **Local Overrides** you may right-click a folder and select the
 
 Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#1016501][crbug1016501]  
+Chromium issue [#1016501][CR1016501]  
 
 ### Updated Long tasks UI  
 
 A **Long Task** is JavaScript code that monopolizes the main thread for a long time, causing a web page to freeze.  
 
-You have been able to [visualize Long Tasks in the Performance panel][LongTasksInPerformancePanel] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.  The Long Task portion of a task is now colored with a striped red background.  
+You have been able to [visualize Long Tasks in the Performance panel][DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity] for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.  The Long Task portion of a task is now colored with a striped red background.  
 
 :::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="The new Long Task UI" lightbox="../../media/2020/03/long-task.msft.png":::
    Figure 16:  The new Long Task UI  
@@ -238,11 +250,11 @@ You have been able to [visualize Long Tasks in the Performance panel][LongTasksI
 
 Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Feedback](#feedback) icon!  
 
-Chromium issue [#1054447][crbug1054447]  
+Chromium issue [#1054447][CR1054447]  
 
 ### Maskable icon support in the Manifest pane  
 
-Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.  **Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA][PWADoc] icon looks good on devices that support the maskable icons standard.  
+Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.  **Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA][PprgressiveWebAppsChromiumIndex] icon looks good on devices that support the maskable icons standard.  
 
 Enable the new **Show only the minimum safe area for maskable icons** checkbox in the **Manifest** pane to check that your maskable icon looks good on Android Oreo devices.  
 
@@ -274,48 +286,53 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- links -->  
 
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"  
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"  
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"  
-[TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"  
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
 
-[WhatsNew81]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/01/devtools "What's New In DevTools (Microsoft Edge 81)"  
+[WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[ColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Change colors with the Color Picker"  
-[ElementsDoc]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
-[MainMenuDoc]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Change placement from the main menu"  
-[LongTasksInPerformancePanel]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "View main thread activity"  
-[RenderingDoc]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab"  
-[PWADoc]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows"  
-[RemoteDebuggingWin10]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices"  
-[LineOfCodeBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints"
-[NetworkProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties
-[OverviewSettings]: /microsoft-edge/devtools-guide-chromium/customize/#settings
+[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"  
+[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Change placement from the main menu | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "View main thread activity | Microsoft Docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab | Microsoft Docs"  
+[PprgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
+[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools  | Microsoft Docs"  
 
-[WindowsDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
 
 [RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta)"  
 [MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"  
-[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20/update-stable-channel-releases/ "Update on Stable channel releases for Microsoft Edge"
 
-[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/ "Types of Colour Blindness"  
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update on Stable channel releases for Microsoft Edge"
+
+[MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
+
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Types of Colour Blindness"  
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language"
 [MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives
 
-[crbug963183]: https://crbug.com/963183 "Issue 963183: DevTools are not WCAG compliant"  
-[crbug1003700]: https://crbug.com/1003700 "Issue 1003700: Add DevTools support for Color Vision Deficiency simulation"  
-[crbug1011679]: https://crbug.com/1011679 "Issue 1011679: Introduce 'Dock to Left' using the Command Menu"  
-[crbug1016501]: https://crbug.com/1016501 "Issue 1016501: Feature Request: Button to delete all local overrides"  
-[crbug1050999]: https://crbug.com/1050999 "Issue 1050999: Properties Tab"  
-[crbug1051466]: https://crbug.com/1051466 "Issue 1051466: Support COOP/COEP debugging in DevTools"  
-[crbug1054447]: https://crbug.com/1054447 "Issue 1054447: Update performance metrics in DevTools Timeline"  
-[crbug1051822]: https://crbug.com/1051822 "Issue 1051822: DevTools: add UI to emulate locale"
-[crbug1041830]: https://crbug.com/1041830 "Issue 1041830: Improve colors for breakpoints"
-[crbug1050855]: https://crbug.com/1050855 "Issue 1050855: Settings view is difficult to discover"
-[crbug1056348]: https://crbug.com/1056348 "Issue 1056348: Infobar Component Refresh"
+[CR963183]: https://crbug.com/963183 "Issue 963183: DevTools are not WCAG compliant"  
+[CR1003700]: https://crbug.com/1003700 "Issue 1003700: Add DevTools support for Color Vision Deficiency simulation"  
+[CR1011679]: https://crbug.com/1011679 "Issue 1011679: Introduce 'Dock to Left' using the Command Menu"  
+[CR1016501]: https://crbug.com/1016501 "Issue 1016501: Feature Request: Button to delete all local overrides"  
+[CR1050999]: https://crbug.com/1050999 "Issue 1050999: Properties Tab"  
+[CR1051466]: https://crbug.com/1051466 "Issue 1051466: Support COOP/COEP debugging in DevTools"  
+[CR1054447]: https://crbug.com/1054447 "Issue 1054447: Update performance metrics in DevTools Timeline"  
+[CR1051822]: https://crbug.com/1051822 "Issue 1051822: DevTools: add UI to emulate locale"
+[CR1041830]: https://crbug.com/1041830 "Issue 1041830: Improve colors for breakpoints"
+[CR1050855]: https://crbug.com/1050855 "Issue 1050855: Settings view is difficult to discover"
+[CR1056348]: https://crbug.com/1056348 "Issue 1056348: Infobar Component Refresh"
 
 [COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP and COEP explained - Cross-Origin Opener Policy"  
 [COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP and COEP explained - Cross-Origin Embedder Policy"  
