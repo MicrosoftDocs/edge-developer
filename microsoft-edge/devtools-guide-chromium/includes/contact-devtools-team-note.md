@@ -3,11 +3,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 08/10/2020
+ms.date: 08/20/2020
 ---
 Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
-*   Send your feedback using the **Send Feedback** icon in DevTools.  
+*   Send your feedback using the **Send Feedback** icon or select `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) in DevTools.  
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant].  
 *   File bugs on this article using the [Feedback](#feedback) section.  

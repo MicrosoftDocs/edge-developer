@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 When using the **Sources** panel of Microsoft Edge DevTools to [step through code][DevToolsJavascriptStepThroughCode], sometimes you pause on code that you do not recognize.  You probably paused on code for one of the Microsoft Edge Extensions that you installed.  Complete the following steps to not pause on extension code.  
 
-1.  Open DevTools, select **Customize and control DevTools** `...` and click **Settings**.  You may also open **Settings** by pressing `F1`.  
+1.  Open DevTools, select **Customize and control DevTools** \(`...`\) and choose **Settings**.  You may also open **Settings** by selecting `F1`.  
 
 1.  Select the **Library code** tab which opens the **Framework Library Code** section of **Settings**.  
 1.  Enable the **Mark content scripts as Library code** checkbox.  
