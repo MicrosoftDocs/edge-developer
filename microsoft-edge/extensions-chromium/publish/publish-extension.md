@@ -118,9 +118,9 @@ The information provided in this section is displayed to users that visit your l
 
 Ensure your video meets the following requirements: 
 
-1.  Verify that the content of YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies]. 
-1.  Turn off advertisements on your video. For more information, see [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596] pages.  
-1.  Turn on embedding for your videos.  For more information, see [Embed videos \& playlists][GoogleYoutubeAnswer171780] page.
+*   Verify that the content of YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies]. 
+*   Turn off advertisements on your video. For more information, see [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596] pages.  
+*   Turn on embedding for your videos.  For more information, see [Embed videos \& playlists][GoogleYoutubeAnswer171780] page.
 
 Perform the following steps to submit the YouTube URL of your video. 
 
@@ -134,8 +134,8 @@ Perform the following steps to submit the YouTube URL of your video.
 
 Search terms must meet the following requirements. 
 
-1.  You may enter search terms to use up to a maximum of 21 words. Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.
-1.  Up to a maximum of 7 search terms – single word or phrases. Each search term has a character limit of 30 characters. 
+*   You may enter search terms to use up to a maximum of 21 words. Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.
+*   Up to a maximum of 7 search terms – single word or phrases. Each search term has a character limit of 30 characters. 
  
 
 #### Step 6: Complete your submission
@@ -160,7 +160,7 @@ When your submission passes certification, your extension is published in the Mi
 
 
 > [!NOTE]
-> If you are facing any issues in the submission or registration process, you can file a ticket here or write to us at ext_dev_support@microsoft.com
+> If you are facing any issues in the submission or registration process, you can file a support ticket [here][ExtensionsSupportForm] or write to us at *ext_dev_support@microsoft.com*
 
 
 <!-- image links -->  
@@ -184,3 +184,5 @@ When your submission passes certification, your extension is published in the Mi
 [GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"
 
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos \& playlists - YouTube Help"  
+
+[ExtensionsSupportForm]: https://support.microsoft.com/en-us/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request"
