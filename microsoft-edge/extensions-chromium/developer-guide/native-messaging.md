@@ -66,7 +66,7 @@ The host manifest must be a valid json file containing the following fields:
 
 
 > [!NOTE]
-> **How do I generate the extension ID?**
+> How do I generate the extension ID?
 >
 > While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Go to edge://extensions page and enable the **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
 
@@ -104,7 +104,8 @@ The location of the host manifest file is platform dependent.
 
     Microsoft Edge on macOS \(user-specific, default path\):  
     `~/Library/Application Support/Microsoft Edge <ChannelName>/NativeMessagingHosts/com.my_company.my_application.json`
-    <ChannelName> may be Canary, Dev, or Beta. For Stable channel, only `Microsoft Edge` should be used, <ChannelName> is not required.
+
+    *ChannelName* may be Canary, Dev, or Beta. For Stable channel, only `Microsoft Edge` should be used, *ChannelName* is not required.
 
 
 3. On **Linux** the paths can be found here: 
