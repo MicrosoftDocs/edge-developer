@@ -68,7 +68,7 @@ The host manifest must be a valid json file containing the following fields:
 > [!NOTE]
 > How do I generate the extension ID?
 >
-> While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Visit "edge://extensions" page and enable **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
+> While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Visit Extension management page at "edge://extensions" and enable **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
 
 
 ### Native messaging host location 
