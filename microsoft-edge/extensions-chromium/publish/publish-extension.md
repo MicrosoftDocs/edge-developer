@@ -34,21 +34,21 @@ The following fields in the manifest are automatically included in your store li
 
 * Description field in the manifest file as the short description on the store details page. Provide a short, catchy description to display at the top of the listing for your extension. When included, the short description specified in the extension manifest file is displayed in your store listing. If a short description is not included in the manifest file, the first few lines of Description is displayed. We recommend providing a brief description to avoid content repetition on your store list page. 
 
-# Submit your extension to the Microsoft Edge add-ons catalog
+## Submit your extension to the Microsoft Edge add-ons catalog
 
 To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps. 
 
-## Step 1: Start a new submission  
+### Step 1: Start a new submission  
 
 Go to the [developer dashboard][MicrosoftPartnerCenter] and select **Create new extension** on the Overview page.
 
-## Step 2: Upload the extension package
+### Step 2: Upload the extension package
 
 Use the **Packages** page to upload the zip file of your extension package. You are only able to upload one package at a time. You are not able to proceed with the submission if the package upload is not successful at this page. 
 
 Upload the package by either dragging the package to the upload field, or by selecting **Browse your files**. Once the package is uploaded, your package is validated. Once validation succeeds, review the extension details, select **Next to proceed**. If there are validation errors, resolve the issues and try uploading again.
 
-## Step 3: Provide Availability details
+### Step 3: Provide Availability details
 
 On the **Availability** page, enter the following information about the availability of your extension. 
 
@@ -74,7 +74,7 @@ You must define the specific markets in which you plan to offer your extension. 
 
 Click **Save** to proceed to the **Properties** section.  
 
-## Step 4: Select Properties for your extension  
+### Step 4: Select Properties for your extension  
 
 On the **Properties page**, enter the following information to specify properties of your extension. These properties are displayed to users in the Microsoft Edge add-ons catalog.
 
@@ -90,7 +90,7 @@ On the **Properties page**, enter the following information to specify propertie
 
 Select **Save** to proceed to the **Store listings** section.
 
-## Step 5: Add Store listing details for your extension 
+### Step 5: Add Store listing details for your extension 
 
 The information provided in this section is displayed to users that visit your listing on the Microsoft Edge add-ons catalog. Even though some fields are optional, we recommend providing as much information as possible. The minimum required information for your extension to be listed in the store, for each language mentioned in your extension package, are **Description** and **Extension Store logo**.
 
@@ -98,6 +98,7 @@ The information provided in this section is displayed to users that visit your l
 > The store listing mandatory details need to be filled out for each language mentioned in your extension zip package. To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and re-upload it. 
 
 | Store listing property name | Description |
+|:--- |:--- |
 | Store listing languages (required) | Select a language from **Languages** dropdown and enter the store listing details for that language. Extensions that support multiple languages must provide a store listing page for each supported language. |
 | Display name (required) | The name of your extension specified in the manifest file of your extension. To change the store display name after submission, you may update the name in the manifest file, create a new extension package, and then re-upload it. |
 | Description (required) | The description field may focus on explaining what your extension does and why users should install it, or any other relevant information users should know about your extension. It should be less than 10,000 characters. |
@@ -110,7 +111,7 @@ The information provided in this section is displayed to users that visit your l
 | Search terms (optional) | Search terms are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog. These search terms are not displayed to users. | 
 
 
-### YouTube video URL requirements 
+#### YouTube video URL requirements 
 
 Ensure your video meets the following requirements: 
 
@@ -126,7 +127,7 @@ Perform the following steps to submit the YouTube URL of your video.
 1.  On the store listing details page, paste the HTML code in the YouTube URL field. 
 
 
-### Search terms requirements
+#### Search terms requirements
 
 Search terms must meet the following requirements. 
 
@@ -134,11 +135,11 @@ Search terms must meet the following requirements.
 1.  Up to a maximum of 7 search terms – single word or phrases. Each search term has a character limit of 30 characters. 
  
 
-## Step 6: Complete your submission
+### Step 6: Complete your submission
 
 The **Submit your extension** page allows you to include notes for certification to help test your extension.
 
-### Notes for certification (Optional)
+#### Notes for certification (Optional)
 
 As you submit your extension, you have the option to use the **Notes for certification** page to provide additional information to the certification testers. This information helps ensure that your extension is tested correctly. If your extension is not fully tested, it may fail certification. 
 
