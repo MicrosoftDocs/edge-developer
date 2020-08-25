@@ -3,7 +3,7 @@ description: Native messaging documentation
 title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 26/08/2020
+ms.date: 08/26/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
