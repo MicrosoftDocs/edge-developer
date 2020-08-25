@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -44,21 +44,21 @@ The following sections describe the new experimental features that are available
 | [Enable custom keyboard shortcuts settings tab](#enable-custom-keyboard-shortcuts-settings-tab) | 84 or later |
 | [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
-| [Enable webhint](#enable-webhint) | 85 or later | 
-| [Enable Network Console](#enable-network-console) | 85 or later |
-| [Enable Source Order Viewer](#enable-source-order-viewer) | 86 or later |
+| [Enable webhint](#enable-webhint) | 85 or later |  
+| [Enable Network Console](#enable-network-console) | 85 or later |  
+| [Enable Source Order Viewer](#enable-source-order-viewer) | 86 or later |  
 
-### Enable custom keyboard shortcuts settings tab
+### Enable custom keyboard shortcuts settings tab  
 
-Provides a new **Shortcuts** page in [DevTools Settings][DevToolsCustomizeSettings] that enables matching [keyboard shortcuts][DevToolsShortcuts] in the DevTools to [VS Code][VisualstudioCode].  
+Provides a new **Shortcuts** page in [DevTools Settings][DevToolsCustomizeSettings] that enables matching [keyboard shortcuts][DevToolsShortcuts] in the DevTools to [Microsoft Visual Studio Code][VisualstudioCode].  
 
-Once you have enabled the experiment, open [DevTools Settings][DevToolsCustomizeSettings] again using select `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in VS Code.  
+Once you have enabled the experiment, open [DevTools Settings][DevToolsCustomizeSettings] again using select `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
 
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Match keyboard shortcuts in the DevTools to VS Code" lightbox="./media/experiments-keyboard-shortcut.png":::
-   Match keyboard shortcuts in the DevTools to VS Code
+:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="./media/experiments-keyboard-shortcut.png":::
+   Match keyboard shortcuts in the DevTools to Visual Studio Code  
 :::image-end:::  
 
-For example, on Windows the keyboard shortcut for pausing or continuing running a script in [VS Code][VisualstudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, the same shortcut in the DevTools is `F8`.  With the **Visual Studio Code** preset, the shortcut is also `F5`.  
+For example, on Windows the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualstudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, the same shortcut in the DevTools is `F8`.  With the **Visual Studio Code** preset, the shortcut is also `F5`.  
 
 ### Enable new CSS grid debugging features  
 
@@ -85,43 +85,45 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  The [webhint][WebhintMain] experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  You may select the issue to see documentation on how to fix the issue and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.png":::
-   webhint feedback in the Issues panel  
-:::image-end:::      
+   webhint feedback in the **Issues** panel  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Enable Network Console
+### Enable Network Console  
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-After enabling the experiment, ensure you restart the DevTools. To use the Network Console:
-1.  Open the **Network** pane.
-1.  Find the network request that you want to change and resend.
-1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**. 
-1.  When the **Network Console** opens, edit the network request information.
+After enabling the experiment, ensure you restart the DevTools.  To use the Network Console:  
+
+1.  Open the **Network** pane.  
+1.  Find the network request that you want to change and resend.  
+1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**.  
+1.  When the **Network Console** opens, edit the network request information.  
 1.  Select **Send**.  
 
 :::image type="complex" source="./media/network-network-console.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.png":::
-Network Console in the Console drawer 
-:::image-end::: 
+   **Network Console** in the **Console** drawer  
+:::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  --> 
 
-### Enable Source Order Viewer
+### Enable Source Order Viewer  
 
-**Source Order Viewer** is the working title of an experiment to display the order of elements in the page source. The **Source Order Viewer** experiment helps you find accessibility issues in your documents as the display order on screen can differ from the order of the document, which confuses screen reader users.  
+**Source Order Viewer** is the working title of an experiment to display the order of elements in the page source.  You may use the **Source Order Viewer** experiment to find accessibility issues in your pages since the display order on-screen may differ from the order of the source, which confuses screen reader users.  
 
-After enabling the experiment, ensure you restart the DevTools. To use Source Order Viewer:
-1.  Open the **Elements** pane.
-1.  Select the **Accessibility** pane in the bottom panel.
-1.  Click the **Show Source Order** checkbox.
-1.  Select any HTML element and you will see an overlay showing the order in the page source 
+After enabling the experiment, ensure you restart the DevTools.  To use Source Order Viewer:  
 
-:::image type="complex" source="./media/experiments-source-order-viewer.png" alt-text="Source Order Viewer in the Accessibility Drawer" lightbox="./media/experiments-source-order-viewer.png":::
-Source Order Viewer in the Accessibility Drawer 
-:::image-end::: 
+1.  Open the **Elements** pane.  
+1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
+1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.  
+1.  Highlight any HTML element to display an overlay that the order in the page source.  
 
-<!--Available in Microsoft Edge version 86 and later.  --> 
+:::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="./media/experiments-source-order-viewer.msft.png":::
+   **Source Order Viewer** in the **Accessibility** pane  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 86 and later.  -->  
 
 ## Previous experimental features  
 
@@ -131,11 +133,11 @@ Source Order Viewer in the Accessibility Drawer
 
 To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
-*   Send your feedback using the Feedback icon in the DevTools  
+*   Send your feedback using the **Send Feedback** icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Feedback icon in the Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
-   Feedback icon in the Microsoft Edge DevTools  
+:::image type="complex" source="./media/devtools-feedback.png" alt-text="Send Feedback icon in the Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
+   **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- links -->  
@@ -148,7 +150,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
-[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Visual Studio Code"  
+[VisualstudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Code"  
+[VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Microsoft Visual Studio Code"  
 
 [WebhintMain]: https://webhint.io "webhint" 
