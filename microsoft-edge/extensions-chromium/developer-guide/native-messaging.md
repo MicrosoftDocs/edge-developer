@@ -68,7 +68,7 @@ The host manifest must be a valid json file containing the following fields:
 > [!NOTE]
 > How do I generate the extension ID?
 >
-> While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Go to edge://extensions page and enable the **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
+> While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Visit [Edge extensions management][ExtensionsManagementPage] page and enable **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
 
 
 ### Native messaging host location 
@@ -105,7 +105,7 @@ The location of the host manifest file is platform dependent.
     Microsoft Edge on macOS \(user-specific, default path\):  
     `~/Library/Application Support/Microsoft Edge <ChannelName>/NativeMessagingHosts/com.my_company.my_application.json`
 
-    *ChannelName* may be Canary, Dev, or Beta. For Stable channel, only `Microsoft Edge` should be used, *ChannelName* is not required.
+    `ChannelName` may be Canary, Dev, or Beta. For Stable channel, only `Microsoft Edge` should be used, `ChannelName` is not required.
 
 
 3. On **Linux** the paths can be found here: 
@@ -121,12 +121,6 @@ The location of the host manifest file is platform dependent.
 > Please ensure that you provide read permission to the manifest file and execute permission to the host executable, otherwise it may not work. Use chmod +r host.json and chmod +x host.
 
 
-
-<!-- image links -->  
-
-<!-- links -->  
-
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developer.chrome.com/extensions/nativeMessaging).  
@@ -134,6 +128,12 @@ The location of the host manifest file is platform dependent.
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
+
+<!-- image links -->  
+
+<!-- links -->  
+
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[ExtensionsManagementPage]: edge://extensions/ "Edge extensions management page"
