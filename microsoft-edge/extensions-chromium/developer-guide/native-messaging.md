@@ -1,12 +1,12 @@
 ---
-description: Native messaging difference from the Chrome documentation
+description: Native messaging documentation
 title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/31/2019
+ms.date: 26/08/2020
 ms.topic: article
 ms.prod: microsoft-edge-chromium
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 
 # Native Messaging  
@@ -19,7 +19,7 @@ Refer to the steps below to setup your extension for using native messaging to c
 
 Extensions can use native messaging by adding *nativeMessaging* permission in the extension’s **manifest.json** file. Below is an example of extension manifest.json:
 
-    ```xml
+```xml
     {
           "name": "Native Messaging Example",
           "version": "1.0",
@@ -33,7 +33,7 @@ Extensions can use native messaging by adding *nativeMessaging* permission in th
               "128": "icon-128.png"}, 
           "permissions": ["nativeMessaging"] 
     }
-    ```
+```
 
 ### Native messaging host
     
@@ -41,7 +41,7 @@ Native applications must provide a **native messaging host manifest** file that 
 
 The host manifest must be a valid json file containing the following fields: 
     
-    ```xml
+```xml
     {
         "name": "com.my_company.my_application",
         "description": "My Application",
@@ -51,7 +51,7 @@ The host manifest must be a valid json file containing the following fields:
             "chrome-extension://knldjmfmopnpolahpmmgbagdohdnhkik/"
         ]
     }
-    ```  
+```  
 
 
 
@@ -69,11 +69,11 @@ The host manifest must be a valid json file containing the following fields:
 > While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Go to edge://extensions page and enable the **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
 
 
-### Native messaging host location**  
+### Native messaging host location 
 
 The location of the host manifest file is platform dependent.
     
-1.  On **Windows**, the manifest file may be located anywhere in the file system. The application installer must create registry key and set default value of that key to the full path to the manifest file.
+1. On **Windows**, the manifest file may be located anywhere in the file system. The application installer must create registry key and set default value of that key to the full path to the manifest file.
     
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`  
     or  
@@ -92,22 +92,19 @@ The location of the host manifest file is platform dependent.
     [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
     @="C:\\path\\to\\nmh-manifest.json"
     ```  
-    
-   When Microsoft Edge looks for native messaging hosts, the 32-bit registry is queried first, then the 64-bit registry. If you are running it as part of batch script, ensure that you are running it in an admin command prompt.
+    When Microsoft Edge looks for native messaging hosts, the 32-bit registry is queried first, then the 64-bit registry. If you are running it as part of batch script, ensure that you are running it in an admin command prompt.
 
 
-2.  On **macOS**, the system-wide native messaging hosts are looked up at a fixed location, while the user-level native messaging hosts are looked up in a subdirectory within the user profile directory called `NativeMessagingHosts`.  
+2. On **macOS**, the system-wide native messaging hosts are looked up at a fixed location, while the user-level native messaging hosts are looked up in a subdirectory within the user profile directory called `NativeMessagingHosts`.
 
 Microsoft Edge on macOS \(system-wide\) :  
-`/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`  
+`/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`
 
 Microsoft Edge on macOS \(user-specific, default path\):  
-`~/Library/Application Support/Microsoft Edge <ChannelName>/ NativeMessagingHosts/com.my_company.my_application.json`  
-
-`<ChannelName>` may be Canary, Dev, or Beta. For stable channel, only `Microsoft Edge` should be used, `<ChannelName`>` is not required.
+`~/Library/Application Support/Microsoft Edge <ChannelName>/ NativeMessagingHosts/com.my_company.my_application.json` `<ChannelName>` may be Canary, Dev, or Beta. For stable channel, only `Microsoft Edge` should be used, `<ChannelName`>` is not required.
 
 
-3.  On Linux the paths can be found here: 
+3. On **Linux** the paths can be found here: 
 
 Microsoft Edge on macOS \(system-wide\) :
 `~/.config/microsoft-edge/NativeMessagingHosts`
