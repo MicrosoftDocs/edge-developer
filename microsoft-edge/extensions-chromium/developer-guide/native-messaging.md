@@ -55,6 +55,7 @@ The host manifest must be a valid json file containing the following fields:
 
 
 
+
 | Name | Description |  
 |:--- |:--- |  
 | `name` | Name of the native messaging host. Clients pass this string to `runtime.connectNative` or `runtime.sendNativeMessage`.  This name must only contain lowercase alphanumeric characters, underscores, and dots.  The name must not start or end with a dot, and a dot must not be followed by another dot. |  
@@ -66,6 +67,7 @@ The host manifest must be a valid json file containing the following fields:
 
 > [!NOTE]
 > **How do I generate the extension ID?**
+>
 > While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Go to edge://extensions page and enable the **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
 
 
@@ -97,20 +99,21 @@ The location of the host manifest file is platform dependent.
 
 2. On **macOS**, the system-wide native messaging hosts are looked up at a fixed location, while the user-level native messaging hosts are looked up in a subdirectory within the user profile directory called `NativeMessagingHosts`.
 
-Microsoft Edge on macOS \(system-wide\) :  
-`/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`
+    Microsoft Edge on macOS \(system-wide\) :  
+    `/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`
 
-Microsoft Edge on macOS \(user-specific, default path\):  
-`~/Library/Application Support/Microsoft Edge <ChannelName>/ NativeMessagingHosts/com.my_company.my_application.json` `<ChannelName>` may be Canary, Dev, or Beta. For stable channel, only `Microsoft Edge` should be used, `<ChannelName`>` is not required.
+    Microsoft Edge on macOS \(user-specific, default path\):  
+    `~/Library/Application Support/Microsoft Edge <ChannelName>/NativeMessagingHosts/com.my_company.my_application.json`
+    <ChannelName> may be Canary, Dev, or Beta. For Stable channel, only `Microsoft Edge` should be used, <ChannelName> is not required.
 
 
 3. On **Linux** the paths can be found here: 
 
-Microsoft Edge on macOS \(system-wide\) :
-`~/.config/microsoft-edge/NativeMessagingHosts`
+    Microsoft Edge on macOS \(system-wide\) :
+    `~/.config/microsoft-edge/NativeMessagingHosts`
 
-Microsoft Edge on macOS \(user-specific, default path\): 
-`/etc/opt/edge/native-messaging-hosts`
+    Microsoft Edge on macOS \(user-specific, default path\): 
+    `/etc/opt/edge/native-messaging-hosts`
 
 
 > [!NOTE]
