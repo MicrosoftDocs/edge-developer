@@ -1,6 +1,6 @@
 ---
-description: Extensions Getting Started Part 1
-title: Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts
+description: Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts
+title: Create an extension tutorial Part 2  
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020

@@ -1,6 +1,6 @@
 ---
-description: Extensions Getting Started Part 1
-title: BCreate an extension tutorial Part 1
+description: Build A Simple Extension That Pops Up NASA Picture Of The Day
+title: Create an extension tutorial Part 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020

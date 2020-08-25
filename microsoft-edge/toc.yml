@@ -362,9 +362,9 @@
           items: 
             - name: Extension architecture
               href: extensions-chromium/getting-started/index.md
-            - name: Create a Simple Extension - Part I
+            - name: Create an extension tutorial Part 1
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Create a Simple Extension - Part II
+            - name: Create an extension tutorial Part 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Test your extension
               href: extensions-chromium/getting-started/extension-sideloading.md

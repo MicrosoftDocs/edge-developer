@@ -1,6 +1,6 @@
 ---
-description: Extensions Getting Started Part 1
-title: BCreate an extension tutorial Part 1
+description: Test your extension by sideloading it on the browser
+title: Test your extension (Extension sideloading)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020
@@ -9,13 +9,13 @@ ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# Test your extension
+# Test your extension (Extension sideloading)
 
 
-The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your extensions while you are developing. This article explains how to load the extension \(also called side-loading\) into the Microsoft Edge \(Chromium\) browser to test it.
+The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your extensions while you are developing. This article explains how to load the extension \(also called sideloading\) into the Microsoft Edge \(Chromium\) browser to test it.
 
 
-To run your extension locally in your browser while developing it \(side-loading\), follow the steps below.
+To run your extension locally in your browser while developing it \(sideloading\), follow the steps below.
 
 1. Choose the three dots at the top of your browser.
 
