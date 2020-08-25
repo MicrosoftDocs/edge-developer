@@ -1,6 +1,6 @@
 ---
 description: Extensions Getting Started Part 1
-title: Build A Simple Extension That Pops Up NASA Picture Of The Day
+title: BCreate an extension tutorial Part 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/08/2020
@@ -9,13 +9,13 @@ ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# Build A Simple Extension That Pops Up NASA Picture Of The Day  
+# Create an extension tutorial Part 1  
 
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
 
 ## Overview  
 
-In part 1, the goal is to build a very simple Edge Chromium Extension starting with an empty directory.  The goal for this Extension is to complete the following tasks.  
+In this tutorial, the goal is to build a very simple Edge Chromium Extension starting with an empty directory. We will build a simple extension which pops up NASA picture of the day. The goal for this Extension is to complete the following tasks.  
 
 *   Create icons for the Extension that may be used in multiple places and in different sizes  
 *   Create a simple `manifest.json` file  
@@ -159,47 +159,8 @@ The directory structure for the example Extension is displayed in the following 
 > [!NOTE]
 > The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
 
-That is everything you need to build a working Extension.  All that is left to is test it.  
+That is everything you need to build a working Extension.  You may go ahead and [test your extension][TestExtensionSideload].  
 
-The next section explains how to load the Extension \(sometimes called side loading\) into the Microsoft Edge \(Chromium\) browser to test it.  
-
-## Run your Extension locally in your browser while developing it \(side-loading\)  
-
-The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your Extensions while you are developing.  
-
-The process is quite simple.  You must first select the three dots at the top of your browser.  Next, choose `Extensions` from the context menu as shown in the following image.  
-
-:::image type="complex" source="./media/part1-threedots.png" alt-text="Choose Extensions":::
-   Choose Extensions
-:::image-end:::
-
-<!--![Choose Extensions][ImagePart1Threedots]  -->  
-
-When you are on the **Extensions** page as shown in the following image, enable the **Developer mode** by enabling the toggle at the bottom left of the page as shown in the following image.  
-
-:::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Enable Developer Mode":::
-   Enable Developer Mode
-:::image-end:::
-
-<!--![Enable Developer Mode][ImagePart1DevelopermodeToggle]  -->  
-
-## Installing and updating side-loaded Extensions  
-
-The first time you want to install your Extension, you choose the `Load Unpacked` option as shown in the following image.  This prompts you for a directory where you have your Extension assets file by file.  This installs the Extension as if you had downloaded it from a store.  
-
-:::image type="complex" source="./media/part1-installed-extension.png" alt-text="Installed Extensions":::
-   Installed Extensions
-:::image-end:::
-
-<!--![Installed Extensions][ImagePart1InstalledExtension]  -->  
-
-After you install your Extension, you may update it by selecting the `Reload` button under your Extension listing.  
-
-To remove the Extension from your browser, click the `Remove` button on the bottom of the Extension listing.  
-
-## Debugging Extensions  
-
-Debugging Extensions is quite easy and supports all of the features in Edge Chromium DevTools.  Those details however are not covered in this getting started guide but are very important to successfully build Extensions.  
 
 <!-- image links -->  
 
@@ -212,4 +173,6 @@ Debugging Extensions is quite easy and supports all of the features in Edge Chro
 
 <!-- links -->  
 
-[ArchiveExtensionGettingStartedPart1]: ./extension-source/extension-getting-started-part1.zip "Completed Extension Package Source for This Part | Microsoft Docs"  
+[ArchiveExtensionGettingStartedPart1]: ./extension-source/extension-getting-started-part1.zip "Completed Extension Package Source for This Part | Microsoft Docs"
+
+[TestExtensionSideload]: ./getting-started/extension-sideloading.md "Test your extension (Sideloading) | Microsoft Docs"

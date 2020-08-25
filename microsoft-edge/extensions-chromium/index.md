@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
 ---
 
-# Microsoft Edge (Chromium) Extensions  
+# Extensions overview
 
 An extension is a small program that you \(the developer\) may use to add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  
 
@@ -32,12 +32,12 @@ Some of the most popular browsers to build for include Safari, Firefox, Chrome, 
 | Chrome | Yes | [developer.chrome.com/extensions][ChromeDeveloperExtensions] |  
 | Opera | Yes | [dev.opera.com/extensions][OperaDevExtensions] |  
 | Brave | Yes | Uses [Chrome Web Store][GoogleChromeWebstoreCategoryExtensions] |  
-| new Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
+| Microsoft Edge (Chromium) | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
 
 > [!IMPORTANT]
 > Many of the tutorials of the sites use browser-specific APIs that may not match the browser for which you are developing.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Only some less common APIs may be strictly browser-specific.  For links to the tutorials, see [See also](#see-also).  
 
-## Why Chromium  
+## Why Chromium?
 
 If your goal is to publish your extension to as many browser extensions stores as possible, it must be modified for multiple versions in order to target and run in each distinct browser environment.  [Safari extensions][AppleDeveloperSafariservicesAppExtensions], unlike other extension types, may leverage both web and native code to communicate with counterpart native applications.  [Firefox extensions][MDNWebextensions] share more in common with the other extension types but there are also some [differences][ExtensionworkshopPorting] to consider.  However, there is some good news; the last four browsers in the chart above are able to leverage the same code package and minimize the requirement to alter and maintain parallel versions.  That is because the browsers are based on the [Chromium open-source project][ChromiumHome].  
 
