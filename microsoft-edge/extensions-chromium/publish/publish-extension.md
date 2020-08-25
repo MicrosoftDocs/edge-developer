@@ -11,14 +11,14 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Publish your extension  
 
-After you have completed development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog. Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may port your existing Chromium extension to Microsoft Edge. 
+After you have completed development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog. Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may [port your existing Chromium extension][PortChromiumExtension] to Microsoft Edge. 
 
 Publishing your extension to the Microsoft Edge add-ons catalog increases the reach of your extension and makes it available for end users. This article provides a walkthrough of the process involved in submitting your extension to the Microsoft Edge add-ons catalog.
 
 
 ## Before you begin  
 
-At this point, you should have a working prototype of your extension ready. For information on how to create an extension, refer to [Getting started tutorial][ExtensionsGettingStarted]. 
+At this point, you should have a working prototype of your extension ready. For information on how to create an extension, refer [Getting started tutorial][ExtensionsGettingStarted]. 
 
 To publish your extension to Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter]. To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide. 
 
@@ -30,11 +30,11 @@ Create a zip file that represents your extension package. Your extension package
 
 The following fields in the manifest are automatically included in your store listing details and cannot be modified from the store listings page (described later in this article). Ensure they are filled out as you would like to see them on the store details page, prior to uploading your package to Partner Center. For an example of the code required for the manifest file, see the manifest file basics.  
 
-* Name field in the manifest file as the display name on the store details page 
+* Name field in the manifest file as the **display name** on the store details page 
 
-* Description field in the manifest file as the short description on the store details page. Provide a short, catchy description to display at the top of the listing for your extension. When included, the short description specified in the extension manifest file is displayed in your store listing. If a short description is not included in the manifest file, the first few lines of Description is displayed. We recommend providing a brief description to avoid content repetition on your store list page. 
+* Description field in the manifest file as the **short description** on the store details page. Provide a short, catchy description to display at the top of the listing for your extension. When included, the short description specified in the extension manifest file is displayed in your store listing. If a short description is not included in the manifest file, the first few lines of Description is displayed. We recommend providing a brief description to avoid content repetition on your store list page. 
 
-## Submit your extension to the Microsoft Edge add-ons catalog
+## Submit your extension to Microsoft Edge add-ons store
 
 To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps. 
 
@@ -79,6 +79,7 @@ Click **Save** to proceed to the **Properties** section.
 On the **Properties page**, enter the following information to specify properties of your extension. These properties are displayed to users in the Microsoft Edge add-ons catalog.
 
 
+
 | Extension property name | Description |
 |:--- |:--- |
 | Category (required) | The category that best describes your extension. Listing your extension in the right category helps users find your extension easily and understand more about it. |
@@ -96,6 +97,7 @@ The information provided in this section is displayed to users that visit your l
 
 > [!NOTE]
 > The store listing mandatory details need to be filled out for each language mentioned in your extension zip package. To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and re-upload it. 
+
 
 
 | Store listing property name  | Description |
@@ -168,6 +170,8 @@ When your submission passes certification, your extension is published in the Mi
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge \(Chromium\) Extensions | Microsoft Docs"
 
 [DeveloperRegistration]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/create-dev-account "Register as a Microsoft Edge extensions developer | Microsoft Docs"
+
+[PortChromiumExtension]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension "Port your Chromium extension to Microsoft Edge | Microsoft Docs"
 
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
