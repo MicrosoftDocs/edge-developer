@@ -2,7 +2,7 @@
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -55,7 +55,7 @@ By default the Device Toolbar opens in Responsive Viewport Mode.
 
 ### Responsive Viewport Mode   
 
-Drag the handles to resize the viewport to whatever dimensions you need.  Or, enter specific values in the width and height boxes.  In [Figure 2](#figure-2), the width is set to `626` and the height is set to `516`.  
+Drag the handles to resize the viewport to whatever dimensions you need.  Or, enter specific values in the width and height boxes.  In the image below, the width is set to `626` and the height is set to `516`.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png" alt-text="The handles for changing the dimensions of the viewport when in Responsive Viewport Mode" lightbox="../media/device-mode-toggle-device-toolbar-handles-highlighted.msft.png":::
     The handles for changing the dimensions of the viewport when in Responsive Viewport Mode  
@@ -178,8 +178,8 @@ Use the **Zoom** list to zoom in or out.
 
 To throttle the network and CPU, select **Mid-tier mobile** or **Low-end mobile** from the **Throttle** list.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="The Throttle list" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
-    The Throttle list  
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="The Throttle list in the Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+    The Throttle list in the Device Toolbar  
 :::image-end:::  
 
 **Mid-tier mobile** simulates fast 3G and throttles your CPU so that it is 4 times slower than normal.  **Low-end mobile** simulates slow 3G and throttles your CPU 6 times slower than normal.  Keep in mind that the throttling is relative to the normal capability of your laptop or desktop.  
@@ -203,8 +203,8 @@ To throttle the CPU only and not the network, go to the **Performance** panel, c
 
 To throttle the network only and not the CPU, go the **Network** panel and select **Fast 3G** or **Slow 3G** from the **Throttle** list.  
 
-:::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list" lightbox="../media/device-mode-network-throttle.msft.png":::
-    The Throttle list  
+:::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list in the Network tool" lightbox="../media/device-mode-network-throttle.msft.png":::
+    The Throttle list in the Network tool  
 :::image-end:::  
 
 Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `3G`, and select **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
