@@ -29,7 +29,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, emulation, devic
 
   
 
-Use **Device emulation** to approximate how your page looks and performs on a mobile device.  A collection of features in Microsoft Edge DevTools help you emulate mobile devices.  These features include:
+Use **Device emulation** to approximate how your page looks and performs on a mobile device.  The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.  These features include:
 
 *   [Simulating a mobile viewport](#simulate-a-mobile-viewport)  
 *   [Throttling the network](#throttle-the-network-only)  
