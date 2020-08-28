@@ -80,6 +80,7 @@ In addition to [enabling this experiment](#turn-on-experimental-features) in the
 
 > [!NOTE]
 > If you are using [CSS media queries or the JavaScript Windows Segment Enumeration API][GitHubFoldablesExplainer] to enhance your website or app for the [Surface Duo][SurfaceDuo], you must also enable the **Experimental Web Platform features** flag in the [Android Microsoft Edge app][AndroidEdge] on your [Surface Duo][SurfaceDuo] device.
+> 
 > If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge][DesktopEdge] and disabled in the [Android Microsoft Edge app][AndroidEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge will not match with the [Android Microsoft Edge app][AndroidEdge] on [Surface Duo][SurfaceDuo]. Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][DesktopEdge].
 
 #### Testing on foldable and dual-screen devices  
