@@ -63,7 +63,7 @@ For example, on Windows the keyboard shortcut for pausing or continuing running 
 
 ### Emulation: Support dual screen mode  
 
-Provides additional features for emulating 2 new dual-screen and foldable devices: [Surface Duo](SurfaceDuo) and [Samsung Galaxy Fold](SamsungGalaxyFold) in Microsoft Edge.  When emulating these devices, toggle between a single-screen or folded posture and a dual-screen or unfolded posture.  [Enable experimental APIs](#enable-experimental-apis) in Microsoft Edge to enhance your website or app for these devices, using [CSS media queries and the JavaScript Windows Segment Enumeration API](GitHubFoldablesExplainer).  
+Provides additional features for emulating 2 new dual-screen and foldable devices: [Surface Duo][SurfaceDuo] and [Samsung Galaxy Fold][SamsungGalaxyFold] in Microsoft Edge.  When emulating these devices, toggle between a single-screen or folded posture and a dual-screen or unfolded posture.  [Enable experimental APIs](#enable-experimental-apis) in Microsoft Edge to enhance your website or app for these devices, using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubFoldablesExplainer].  
 
 <!-- This image was taken in Chrome Canary since we don't yet have an Edge Canary that has Stan's changes -->
 :::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Emulating Surface Duo in Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
@@ -72,21 +72,21 @@ Provides additional features for emulating 2 new dual-screen and foldable device
 
 #### Enable experimental APIs  
 
-In addition to [enabling this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools, open a new tab in Microsoft Edge and navigate to `edge://flags`.  In the **Search flags** textbox, enter **Experimental Web Platform features**, select **Disabled**, and set this flag to **Enabled**.  Restart Microsoft Edge.  You are now able to enhance your website or app for dual-screen and foldable devices using [CSS media queries and the JavaScript Windows Segment Enumeration API](GitHubFoldablesExplainer).  
+In addition to [enabling this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools, open a new tab in Microsoft Edge and navigate to `edge://flags`.  In the **Search flags** textbox, enter **Experimental Web Platform features**, select **Disabled**, and set this flag to **Enabled**.  Restart Microsoft Edge.  You are now able to enhance your website or app for dual-screen and foldable devices using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubFoldablesExplainer].  
 
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Enabling the Experimental Web Platform features flag" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Enabling the Experimental Web Platform features flag  
 :::image-end:::  
 
 > [!NOTE]
-> If you are using [CSS media queries or the JavaScript Windows Segment Enumeration API](GitHubFoldablesExplainer) to enhance your website or app for the [Surface Duo](SurfaceDuo), you must also enable the **Experimental Web Platform features** flag in the [Android Microsoft Edge app](AndroidEdge) on your [Surface Duo](SurfaceDuo) device.
-> If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge](DesktopEdge) and disabled in the [Android Microsoft Edge app](AndroidEdge), the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge will not match with the [Android Microsoft Edge app](AndroidEdge) on [Surface Duo](SurfaceDuo). Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge](DesktopEdge).
+> If you are using [CSS media queries or the JavaScript Windows Segment Enumeration API][GitHubFoldablesExplainer] to enhance your website or app for the [Surface Duo][SurfaceDuo], you must also enable the **Experimental Web Platform features** flag in the [Android Microsoft Edge app][AndroidEdge] on your [Surface Duo][SurfaceDuo] device.
+> If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge][DesktopEdge] and disabled in the [Android Microsoft Edge app][AndroidEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge will not match with the [Android Microsoft Edge app][AndroidEdge] on [Surface Duo][SurfaceDuo]. Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][DesktopEdge].
 
 #### Testing on foldable and dual-screen devices  
 
-When emulating the [Surface Duo](SurfaceDuo) in a dual-screen posture in Microsoft Edge, the *seam* (the space between the two screens) is drawn over your website or app. This is an accurate representation of the way your website or app will render in the [Microsoft Edge Android app](AndroidEdge) on [Surface Duo](SurfaceDuo) so you may need to adjust your content to display better along the seam. [Learn about adapting your website or app to the seam in our Surface Duo documentation](SurfaceDuoSeamDocs).  
+When emulating the [Surface Duo][SurfaceDuo] in a dual-screen posture in Microsoft Edge, the *seam* (the space between the two screens) is drawn over your website or app. This is an accurate representation of the way your website or app will render in the [Microsoft Edge Android app][AndroidEdge] on [Surface Duo][SurfaceDuo] so you may need to adjust your content to display better along the seam. [Learn about adapting your website or app to the seam in our Surface Duo documentation][SurfaceDuoSeamDocs].  
 
-The [Device Toolbar](DevToolsDocsDeviceToolbar) has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** ![Rotate][ImageRotateIcon] to rotate the viewport to landscape orientation.  Combine this feature with **Span** ![Span][ImageSpanIcon] to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, these features enable testing your website or app in all four possible postures and orientations.  
+The [Device Toolbar][DevToolsDocsDeviceToolbar] has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** ![Rotate][ImageRotateIcon] to rotate the viewport to landscape orientation.  Combine this feature with **Span** ![Span][ImageSpanIcon] to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, these features enable testing your website or app in all four possible postures and orientations.  
 
 :::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matrix of postures and orientations for dual-screen and foldable devices" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
    Matrix of postures and orientations for dual-screen and foldable devices  
@@ -95,8 +95,8 @@ The [Device Toolbar](DevToolsDocsDeviceToolbar) has additional features to help 
 The **Experimental Web Platform features** ![ExperimentalApis][ImageExperimentalApisIcon] icon displays the state of the **Experimental Web Platform features** flag.  If the flag is enabled, the icon is highlighted. If the flag is disabled, the icon is not highlighted.  Click the icon to navigate to `edge://flags` and enable or disable the flag.  
 
 #### Additional resources  
--  [More info on developing dual-screen web experiences in Surface Duo documentation](SurfaceDuoWebDocs)  
--  [Install the Surface Duo emulator](SurfaceDuoEmulatorDocs), a different emulator from the one in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio](AndroidStudio)  
+-  [More info on developing dual-screen web experiences in Surface Duo documentation][SurfaceDuoWebDocs]  
+-  [Install the Surface Duo emulator][SurfaceDuoEmulatorDocs], a different emulator from the one in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidStudio]  
 
 ### Enable new CSS grid debugging features  
 
