@@ -46,8 +46,8 @@ Finding a series of actions that consistently reproduces a bug is always the fir
 1.  Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  This is the bug you are going to fix.  
     
     :::image type="complex" source="../media/javascript-js-demo-bad.msft.png" alt-text="The result of 5 + 1 is 51, but should be 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
-   The result of `5 + 1` is `51`, but should be `6`  
-:::image-end:::  
+       The result of `5 + 1` is `51`, but should be `6`  
+    :::image-end:::  
     
 ## Step 2: Get familiar with the Sources panel UI   
 
@@ -71,9 +71,9 @@ The **Sources** panel UI has 3 parts.
    The 3 parts of the **Sources** panel UI  
 :::image-end:::  
 
-1.  The **File Navigator** pane \(Section 1 in [Figure 4](#figure-4)\).  Every file that the page requests is listed here.  
-1.  The **Code Editor** pane \(Section 2 in [Figure 4](#figure-4)\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
-1.  The **JavaScript Debugging** pane \(Section 3 in [Figure 4](#figure-4)\).  Various tools for inspecting the JavaScript for the page.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
+1.  The **File Navigator** pane \(Section 1 in the previous figure\).  Every file that the page requests is listed here.  
+1.  The **Code Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
+1.  The **JavaScript Debugging** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the page.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
     
 ## Step 3: Pause the code with a breakpoint   
 
@@ -179,7 +179,7 @@ The **Watch Expressions** tab lets you monitor the values of variables over time
 1.  Press `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
     
 > [!NOTE]
-> In the Watch Expression pane \(bottom-right\) in [Figure 8](#figure-8), the `typeof sum` Watch Expression is displayed.  If your DevTools window is large, the Watch Expression pane is on the right above the **Event Listener Breakpoints** pane.  
+> In the Watch Expression pane \(bottom-right\) in in the following figure, the `typeof sum` Watch Expression is displayed.  If your DevTools window is large, the Watch Expression pane is on the right above the **Event Listener Breakpoints** pane.  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch Expression pane" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    The **Watch Expression** pane  

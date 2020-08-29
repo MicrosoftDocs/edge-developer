@@ -42,7 +42,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        The **Manifest** pane  
     :::image-end:::  
     
-1.  Expand the **Web SQL** section to view databases and tables.  In [Figure 2](#figure-2) below **html5meetup** is a database and **rooms** is a table.  
+1.  Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="The Web SQL pane" lightbox="../media/storage-application-storage-web-sql.msft.png":::
        The **Web SQL** pane  

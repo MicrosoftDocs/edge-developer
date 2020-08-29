@@ -150,8 +150,8 @@ Hover over a function to display the name and timing data.  The following inform
 <!-- image links -->  
 
 [ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/images/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/images/restore-icon.msft.png  
+[ImageFocusIcon]: ../media/focus-icon.msft.png  
+[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

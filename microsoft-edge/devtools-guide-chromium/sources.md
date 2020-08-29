@@ -43,7 +43,7 @@ Use the Microsoft Edge DevTools **Sources** panel to perform the folowing action
 
 Use the **Page** pane to view all of the resources that the page has loaded.
 
-:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
+:::image type="complex" source="./media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="./media/sources-page-pane.msft.png":::
    The **Page** pane  
 :::image-end:::  
 
@@ -54,7 +54,7 @@ How the **Page** pane is organized:
     
 Click a file in the **Page** pane to view the contents in the **Editor** pane.  You may view any type of file.  For images, you see a preview of the image.  
 
-:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="View the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
+:::image type="complex" source="./media/sources-editor-pane.msft.png" alt-text="View the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="./media/sources-editor-pane.msft.png":::
    View the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
 :::image-end:::  
 
@@ -70,13 +70,13 @@ Use the **Editor** pane to edit CSS and JavaScript.  DevTools updates the page t
 
 You should see that change take effect immediately.
 
-:::image type="complex" source="../media/edit-css.msft.png" alt-text="Edit CSS in the Editor pane to change the text color of the subtitle to red" lightbox="../media/edit-css.msft.png":::
+:::image type="complex" source="./media/edit-css.msft.png" alt-text="Edit CSS in the Editor pane to change the text color of the subtitle to red" lightbox="./media/edit-css.msft.png":::
    Edit CSS in the **Editor** pane to change the text color of the subtitle to red  
 :::image-end:::  
 
 CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` would have been logged to the **Console**.  
 
-:::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
+:::image type="complex" source="./media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="./media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
 :::image-end:::  
 
@@ -96,7 +96,7 @@ document.head.appendChild(script);
 
 Instead, you may save this code in a **Snippet** and run it with a couple of button clicks, any time you need it.  DevTools saves the **Snippet** to your file system.  
 
-:::image type="complex" source="../media/snippet.msft.png" alt-text="A Snippet that inserts the jQuery library into a page" lightbox="../media/snippet.msft.png":::
+:::image type="complex" source="./media/snippet.msft.png" alt-text="A Snippet that inserts the jQuery library into a page" lightbox="./media/snippet.msft.png":::
    A **Snippet** that inserts the jQuery library into a page  
 :::image-end:::  
 
@@ -113,7 +113,7 @@ Rather than using `console.log()` to infer where your JavaScript is going wrong,
 
 See [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] to learn the basics of debugging in DevTools.
 
-:::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
+:::image type="complex" source="./media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="./media/debugging.msft.png":::
    Debug JavaScript  
 :::image-end:::  
 
@@ -131,7 +131,7 @@ See [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to get st
 
 <!-- image links -->  
 
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
+[ImageRunIcon]: ./media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

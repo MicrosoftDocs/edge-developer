@@ -109,9 +109,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 Click **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation.  
 
-> ##### Figure 7  
-> Landscape orientation  
-> :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Landscape orientation" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Landscape orientation" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
    Landscape orientation  
 :::image-end:::  
 
