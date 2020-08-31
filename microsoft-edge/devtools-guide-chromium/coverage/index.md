@@ -2,7 +2,7 @@
 title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,9 +31,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The Coverage tab in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.  
 
-> ##### Figure 1  
-> Analyzing code coverage  
-> ![Analyzing code coverage][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+   Analyzing code coverage  
+:::image-end:::  
 
 > [!WARNING]
 > Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.  
@@ -56,7 +56,7 @@ This stylesheet does not just include the code for the button component.  It con
 
 *   The extra code slows down your page load.  <!--See [Render-Blocking CSS][render].  -->  
 *   If a user accesses the page on a mobile device, the extra code uses up their cellular data.  
-
+    
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
 ## Open the Coverage tab   
@@ -64,48 +64,46 @@ This stylesheet does not just include the code for the button component.  It con
 1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `coverage`, select the **Show Coverage** command, and then press `Enter` to run the command.  The **Coverage** tab opens in the **Drawer**.  
 
-    > ##### Figure 2  
-    > The **Coverage** tab  
-    > ![The Coverage tab][ImageCoverage]  
-
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tab" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       The **Coverage** tab  
+    :::image-end:::  
+    
 ## Record code coverage   
 
 1.  Click one of the following buttons in the **Coverage** tab:  
-    *   Click **Start Instrumenting Coverage And Reload Page** ![Start Instrumenting Coverage And Reload Page][ImageReloadIcon] if you want to see what code is needed to load the page.  
-    *   Click **Instrument Coverage** ![Instrument Coverage][ImageRecordIcon] if you want to see what code is used after interacting with the page.  
-1.  Click **Stop Instrumenting Coverage And Show Results** ![Stop Instrumenting Coverage And Show Results][ImageStopIcon] when you want to stop recording code coverage.  
-
+    *   Click **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to see what code is needed to load the page.  
+    *   Click **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to see what code is used after interacting with the page.  
+1.  Click **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
+    
 ## Analyze code coverage   
 
-The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource. Click a row to open that resource in the **Sources** panel and see a line-by-line breakdown of used code and unused code.  
+The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource.  Click a row to open that resource in the **Sources** panel and see a line-by-line breakdown of used code and unused code.  
 
-> ##### Figure 3  
-> A code coverage report  
-> ![A code coverage report][ImageExample]  
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+   A code coverage report  
+:::image-end:::  
 
 *   The **URL** column is the URL of the resource that was analyzed.  
 *   The **Type** column says whether the resource contains CSS, JavaScript, or both.  
 *   The **Total Bytes** column is the total size of the resource in bytes.  
 *   The **Unused Bytes** column is the number of bytes that were not used.  
 *   The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes.  
-
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageReloadIcon]: /microsoft-edge/devtools-guide-chromium/media/reload-icon.msft.png  
-[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/media/record-icon.msft.png  
-[ImageStopIcon]: /microsoft-edge/devtools-guide-chromium/media/stop-icon.msft.png  
-
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage.msft.png "Figure 1: Analyzing code coverage"  
-[ImageCoverage]: /microsoft-edge/devtools-guide-chromium/media/coverage-console-drawer-coverage-empty.msft.png "Figure 2: The Coverage tab"  
-[ImageExample]: /microsoft-edge/devtools-guide-chromium/media/coverage-sources-resource-drawer-coverage-selected.msft.png "Figure 3: A code coverage report"  
+[ImageReloadIcon]: ../media/reload-icon.msft.png  
+[ImageRecordIcon]: ../media/record-icon.msft.png  
+[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 
 [BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Buttons - Bootstrap"  
 
