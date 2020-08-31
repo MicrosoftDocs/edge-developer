@@ -21,7 +21,7 @@ Open [Settings][DevToolsCustomizeSettings] by pressing `Shift`+`?`.  Navigate to
 
 ## Match keyboard shortcuts in the DevTools to VS Code
 
-From the **Shortcuts** page, select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in [Visual Studio Code](VisualStudioCode).  
+From the **Shortcuts** page, select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in [Visual Studio Code][VisualStudioCode].  
 
 :::image type="complex" source="../media/match-keyboard-shortcuts-vs-code.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../media/match-keyboard-shortcuts-vs-code.png":::
    Match keyboard shortcuts in the DevTools to Visual Studio Code  
