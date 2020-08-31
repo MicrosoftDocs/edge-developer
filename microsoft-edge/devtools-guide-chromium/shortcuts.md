@@ -56,7 +56,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Focus the next panel | `Control`+`]` | `Command`+`]` |  
 | Focus the previous panel | `Control`+`[` | `Command`+`[` |  
 | Switch back to whatever [docking position][DevtoolsCustomizeIndexPlacement] you last used.  If DevTools has been in its default position for the entire session, then this shortcut undocks DevTools into a separate window | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
-| Toggle [DeviceMode][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
+| Toggle [Device emulation][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Open the [Command Menu][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  

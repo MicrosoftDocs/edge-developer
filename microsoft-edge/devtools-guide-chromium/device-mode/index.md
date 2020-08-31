@@ -259,6 +259,26 @@ Select one of the presets from the **Orientation** list or select **Custom orien
     Orientation  
 :::image-end::: 
 
+## Set User Agent String
+
+To open the User Agent String UI click **Customize and control DevTools** `...` and then select **More tools** > **Network conditions**.  
+
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+    Network conditions  
+:::image-end::: 
+
+Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `Network conditions`, and then select **Show Network conditions**.  
+
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+    Show Network conditions  
+:::image-end::: 
+
+Next to **User agent**, Clear the **Select automatically** check box.  Select **Custom...** to open a list of predefined User Agent Strings or provide a custom User Agent String in the **Enter a custom user agent** text box.
+
+:::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Setting the User Agent String to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+    Setting the User Agent String to Microsoft Edge on macOS  
+:::image-end::: 
+
  
 
 
