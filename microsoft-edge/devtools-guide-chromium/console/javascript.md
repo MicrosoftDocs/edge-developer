@@ -2,7 +2,7 @@
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,11 +31,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools Console.  See [Get Started With Logging Messages][DevToolsConsoleLoggingMessages] to learn how to log messages to the Console.  See [Get Started With Debugging JavaScript][DevToolsJavascriptIndex] to learn how to pause JavaScript code and step through it one line at a time.  
+This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools **Console**.  For more information about how to log messages to the **Console**, see [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].  For more information about how to pause JavaScript code and step through it one line at a time, see [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
-> ##### Figure 1  
-> The **Console**  
-> ![The Console][ImageConsole]  
+:::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+   The **Console**  
+:::image-end:::  
 
 ## Overview   
 
@@ -48,12 +48,12 @@ This tutorial is designed for you to open up the demo and try all the workflows 
 1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
 1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **Console Javascript Example** to open in a new window.  
     
-    [Console Javascript Example][GlitchConsoleJavascriptExample]  
+    *   [Console Javascript Example][GlitchConsoleJavascriptExample]  
     
-    > ##### Figure 2  
-    > The Console JavaScript Example page on the left, and DevTools on the right  
-    > ![The Console JavaScript Example page on the left, and DevTools on the right][ImageTutorialDevToolsJs]  
-
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="The Console JavaScript Example page on the left, and DevTools on the right" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       The Console JavaScript Example page on the left, and DevTools on the right  
+    :::image-end:::  
+    
 ## View and change the JavaScript or DOM of the page   
 
 When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.  
@@ -61,9 +61,9 @@ When building or debugging a page, it is often useful to run statements in the *
 1.  Notice the text in the button.  
 1.  Type `document.getElementById('hello').textContent = 'Hello, Console!'` in the **Console** and then press `Enter` to evaluate the expression.  Notice how the text inside the button changes.  
     
-    > ##### Figure 3  
-    > How the Console looks after evaluating the expression  
-    > ![How the Console looks after evaluating the expression][ImageConsoleAfterEvaluating]  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="How the Console looks after evaluating the expression" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       How the **Console** looks after evaluating the expression  
+    :::image-end:::  
     
     Below the code that you evaluated you see `"Hello, Console!"`.  Recall the 4 steps of REPL: read, evaluate, print, loop.  After evaluating your code, a REPL prints the result of the expression.  So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.  
     
@@ -71,27 +71,30 @@ When building or debugging a page, it is often useful to run statements in the *
 
 Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.  The Console is a perfect place for these kinds of experiments.  
 
-1.  Type `5 + 15` in the Console and press `Enter` to evaluate the expression. The Console prints out the result of the expression below your code.  **Figure 4** below shows how your Console should look after evaluating this expression.  
+1.  Type `5 + 15` in the Console and press `Enter` to evaluate the expression. The Console prints out the result of the expression below your code.  In the following figure, your **Console** should display the result after evaluating the expression.  
 
 1.  Type the following code into the **Console**.  Try typing it out, character-by-character, rather than copy-pasting it.  
     
     ```javascript
-    function add(a, b=20) {
-        return a + b;
-    }
+    function add(a, b=20) { return a + b; }
     ```  
     
-    See [define default values for function arguments][Esma6DefaultParameterValues] if you are unfamiliar with the `b=20` syntax.  
+    If you are unfamiliar with the `b=20` syntax, see [define default values for function arguments][Esma6DefaultParameterValues].  
     
-1.  Now, call the function that you just defined.  
+1.  Now, run the function that you just defined.  
     
-    ```javascript
-    add(25);
-    ```  
-    
-    > ##### Figure 4  
-    > How the Console looks after evaluating the expressions above  
-    > ![How the Console looks after evaluating the expressions above][ImagePlayground]  
+    :::row:::
+       :::column span="":::
+          ```javascript
+          add(25);
+          ```  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console displays after evaluating the expressions in the code snippet" lightbox="../media/console-javascript-example-console-playground.msft.png":::
+             The **Console** displays after evaluating the expressions in the code snippet  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::
     
     `add(25)` evaluates to `45` because when the `add` function is called without a second argument, `b` defaults to `20`.  
 
@@ -101,7 +104,7 @@ Sometimes, you just want a code playground where you are able to test some code,
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  This makes for a powerful debugging workflow.  See [Get Started With Debugging JavaScript][DevToolsJavascriptIndex] for an interactive tutorial.  
+DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  The workflow makes for a powerful debugging workflow.  For an interactive tutorial, see [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
 The **Console** also has a set of convenience functions that make it easier to interact with a page.  For example:  
 
@@ -117,20 +120,12 @@ The **Console** also has a set of convenience functions that make it easier to i
 
 
 
-<!-- image links -->  
-
-[ImageConsole]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-playground.msft.png "Figure 1: The Console"  
-[ImageTutorialDevToolsJs]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-empty.msft.png "Figure 2: The Console JavaScript Example page on the left, and DevTools on the right"  
-[ImageConsoleAfterEvaluating]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-change-button-text.msft.png "Figure 3: How the Console looks after evaluating the expression"  
-[ImagePlayground]: /microsoft-edge/devtools-guide-chromium/media/console-javascript-example-console-playground.msft.png "Figure 4: How the Console looks after evaluating the expressions above"  
-
 <!-- links -->  
 
-[DevToolsConsoleLoggingMessages]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
-[DevToolsConsoleReference]: /microsoft-edge/devtools-guide-chromium/console/reference#run-javascript "Console Reference"  
-[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium//console/utilities "Console Utilities API Reference"  
-
-[DevToolsJavascriptIndex]: /microsoft-edge/devtools-guide-chromium/javascript/index "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
+[DevToolsConsoleLoggingMessages]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
+[DevToolsConsoleReference]: ./reference.md#run-javascript "Console reference | Microsoft Docs"  
+[DevToolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
 

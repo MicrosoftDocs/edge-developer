@@ -2,7 +2,7 @@
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, see [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
-If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()` see [Console Utilities API Reference][DevToolsConsoleUtilities].  
+If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, see [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
 ## Open the Console   
 
@@ -41,43 +41,43 @@ You may open the Console as a [panel](#open-the-console-panel) or as a [tab in t
 
 Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  
 
-> ##### Figure 1  
-> The Console panel  
-> ![The Console panel][ImageConsolePanel]  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console panel" lightbox="../media/console-hello-console.msft.png":::
+   The **Console** panel  
+:::image-end:::  
 
 To open the Console panel from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Panel** badge next to it.  
 
-> ##### Figure 2  
-> The command for showing the Console panel  
-> ![The command for showing the Console panel][ImageCommandShowConsole]  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the Console panel" lightbox="../media/console-command-menu-show-console.msft.png":::
+   The command to show the **Console** panel  
+:::image-end:::  
 
 ### Open the Console tab in the Drawer   
 
-Press `Escape` or click **Customize And Control DevTools** `...` and then select **Show console drawer**.  
+Press `Escape` or click **Customize And Control DevTools** \(`...`\) and then select **Show console drawer**.  
 
-> ##### Figure 3  
-> Show console drawer  
-> ![Show console drawer][ImageShowConsoleDrawer]  
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+   **Show console drawer**  
+:::image-end:::  
 
 The Drawer pops up at the bottom of your DevTools window, with the **Console** tab open.  
 
-> ##### Figure 4  
-> The Console tab in the Drawer  
-> ![The Console tab in the Drawer][ImageDrawerConsole]  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tab in the Drawer" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   The **Console** tab in the **Drawer**  
+:::image-end:::  
 
 To open the Console tab from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.  
 
-> ##### Figure 5  
-> The command for showing the Console tab in the Drawer  
-> ![The command for showing the Console tab in the Drawer][ImageShowDrawerCommand]  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the Console tab in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
+   The command to show the **Console** tab in the **Drawer**  
+:::image-end:::  
 
 ### Open Console Settings   
 
-Click **Console Settings** ![Console Settings][ImageSettingsButtonIcon].  
+Click **Console Settings** \(![Console Settings][ImageSettingsButtonIcon]\).  
 
-> ##### Figure 6  
-> Console Settings  
-> ![Console Settings][ImageConsoleSettings]  
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+   **Console Settings**  
+:::image-end:::  
 
 The links below explain each setting:  
 
@@ -88,14 +88,14 @@ The links below explain each setting:
 *   [**Log XmlHttpRequests**](#log-xhr-and-fetch-requests)  
 *   [**Eager Evaluation**](#disable-eager-evaluation)  
 *   [**Autocomplete From History**](#disable-autocomplete-from-history)  
-
+    
 ### Open the Console Sidebar   
 
-Click **Show Console Sidebar** ![Show Console Sidebar][ImageShowConsoleSidebarIcon] to show the Sidebar, which is useful for filtering.  
+Click **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\) to show the Sidebar, which is useful for filtering.  
 
-> ##### Figure 7  
-> Console Sidebar  
-> ![Console Sidebar][ImageConsoleSidebar]  
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+   **Console** Sidebar  
+:::image-end:::  
 
 ## View messages   
 
@@ -109,19 +109,18 @@ This section contains features that change how messages are presented in the Con
 
 [Open Console Settings](#open-console-settings) and enable **Log XMLHttpRequests** to log all `XMLHttpRequest` and `Fetch` requests to the Console as they happen.  
 
-> ##### Figure 8  
-> Logging `XMLHttpRequest` and `Fetch` requests  
-> ![Logging XMLHttpRequest and Fetch requests][ImageXhrGrouped]  
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Log XMLHttpRequest and Fetch requests" lightbox="../media/console-xhr-fetch.msft.png":::
+   Log `XMLHttpRequest` and `Fetch` requests  
+:::image-end:::  
+The top message in previous figure displays the default grouping behavior of the **Console**.  <!--  In the following figure, the same log is displayed after [disabling message grouping](#disable-message-grouping).  -->  
 
-The top message in [Figure 8](#figure-8) shows the default grouping behavior of the Console.  <!--  [Figure 9](#figure-9) shows how the same log looks after [disabling message grouping](#disable-message-grouping).  -->  
-
-<!--
-
+<!--  
 > ##### Old Figure 9  
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping  
-> ![How the logged XMLHttpRequest and Fetch requests look after ungrouping][ImageXhrUngrouped]  
-
--->
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
+>    How the logged XMLHttpRequest and Fetch requests look after ungrouping  
+> :::image-end:::  
+-->  
 
 <!--todo: add example for ungrouping console items  -->  
 
@@ -131,18 +130,16 @@ By default the Console clears whenever you load a new page.  To persist messages
 
 ### Hide network messages   
 
-By default the browser logs network messages to the **Console**.  For example, the selected message
-in [Figure 9](#figure-9) represents a status code of `429`.  
+By default the browser logs network messages to the **Console**.  In the following figure, the selected message represents an HTTP status code of `429`.  
 
-> ##### Figure 9  
-> A 429 message in the Console  
-> ![A 429 message in the Console][Image429Message]  
-
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="A 429 message in the Console" lightbox="../media/console-show-network.msft.png":::
+   A `429` message in the **Console**  
+:::image-end:::  
 To hide network messages:  
 
 1.  [Open Console Settings](#open-console-settings).  
 1.  Enable the **Hide Network** checkbox.  
-
+    
 ## Filter messages   
 
 There are many ways to filter out messages in the Console.  
@@ -151,9 +148,9 @@ There are many ways to filter out messages in the Console.
 
 [Open the Console Sidebar](#open-the-console-sidebar) and click **User Messages** to only show messages that came from the JavaScript of the page.  
 
-> ##### Figure 10  
-> Viewing user messages  
-> ![Viewing user messages][ImageUserMessages]  
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="View user messages" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+   View user messages  
+:::image-end:::  
 
 ### Filter by log level   
 
@@ -161,35 +158,35 @@ DevTools assigns each `console.*` method a severity level.  There are 4 levels: 
 
 Click the **Log Levels** dropdown to enable or disable `Verbose`, `Info`, `Warning` or `Error` messages.  
 
-> ##### Figure 11  
-> The **Log Levels** dropdown  
-> ![The Log Levels dropdown][ImageLogLevels]  
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown" lightbox="../media/console-log-level-default-levels.msft.png":::
+   The **Log Levels** dropdown  
+:::image-end:::  
 
 You may also filter by log level by [opening the Console Sidebar](#open-the-console-sidebar) and then clicking **Errors**, **Warnings**, **Info**, or **Verbose**.  
 
-> ##### Figure 12  
-> Using the Sidebar to view warnings  
-> ![Using the Sidebar to view warnings][ImageSidebarWarnings]  
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings" lightbox="../media/console-sidebar-warnings.msft.png":::
+   Use the Sidebar to view warnings  
+:::image-end:::  
 
 ### Filter messages by URL   
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:` DevTools shows all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` enables you to focus on the messages from these 2 scripts.  
 
-> ##### Figure 13  
-> A URL filter  
-> ![A URL filter][ImageUrlFilter]  
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="A URL filter" lightbox="../media/console-filter-text.msft.png":::
+   A URL filter  
+:::image-end:::  
 
 Type `-url:` to hide messages from that URL.  This is called a negative URL filter.  
 
-> ##### Figure 14  
-> A negative URL filter that hides all messages matching the URL `https://b.wal.co`  
-> ![A negative URL filter that hides all messages matching the URL https://b.wal.co][ImageNegativeUrlFilter1]  
+:::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="A negative URL filter that hides all messages that match the https://b.wal.co URL" lightbox="../media/console-negative-filter-text.msft.png":::
+   A negative URL filter that hides all messages that match the `https://b.wal.co` URL
+:::image-end:::  
 
 You may also show messages from a single URL by [opening the Console Sidebar](#open-the-console-sidebar), expanding the **User Messages** section, and then clicking the URL of the script containing the messages on which you want to focus.  
 
-> ##### Figure 15  
-> Viewing the messages that came from `wp-ad.min.js`  
-> ![Viewing the messages that came from wp-ad.min.js][ImageNegativeUrlFilter2]  
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="View the messages that came from wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+   View the messages that came from `wp-ad.min.js`  
+:::image-end:::  
 
 ### Filter out messages from different contexts   
 
@@ -199,9 +196,9 @@ Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded 
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that do not match that pattern.  DevTools checks if the pattern is found in the message text or the script that caused the message to be logged.  
 
-> ##### Figure 16  
-> Filtering out any messages that do not match `/[gm][ta][mi]/`  
-> ![Filtering out any messages that do not match regex expression][ImageRegExFilter]  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Filter out any messages that do not match regex expression" lightbox="../media/console-filter-regex.msft.png":::
+   Filter out any messages that do not match the `/[gm][ta][mi]/` regex expression  
+:::image-end:::  
 
 ## Run JavaScript   
 
@@ -224,77 +221,58 @@ As you type JavaScript expressions in the Console, **Eager Evaluation** shows a 
 As you type out an expression, the autocomplete popup window for the Console shows expressions that you ran earlier.  These expressions are prepended with the `>` character.  [Open Console Settings](#open-console-settings) and disable the **Autocomplete From History** checkbox to stop showing expressions from your history.  
 
 > [!NOTE]
-> In [Figure 17](#figure-17), `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.  
+> In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.  
 
-> ##### Figure 17  
-> The autocomplete popup showing expressions from history  
-> ![The autocomplete popup showing expressions from history][ImageHistoryAutocomplete]  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup displays expressions from history" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   The autocomplete popup displays expressions from history  
+:::image-end:::  
 
 ### Select JavaScript context   
 
 By default the **JavaScript Context** dropdown is set to **top**, which represents the [browsing context][MDNBrowsingContext] of the main document.  
 
-> ##### Figure 18  
-> The **JavaScript Context** dropdown  
-> ![The JavaScript Context dropdown][ImageJavascriptContext]  
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown" lightbox="../media/console-dom-level-top.msft.png":::
+   The **JavaScript Context** dropdown  
+:::image-end:::  
 
 Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run JavaScript in order to tweak the DOM of the ad.  You should first select the browsing context of the ad from the **JavaScript Context** dropdown.  
 
-> ##### Figure 19  
-> Selecting a different JavaScript context  
-> ![Selecting a different JavaScript context][ImageSelectContext]  
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Select a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
+   Select a different JavaScript context  
+:::image-end:::  
 
 ## Clear the Console   
 
 You may use any of the following workflows to clear the Console:  
 
-*   Click **Clear Console** ![Clear Console][ImageClearConsoleIcon].  
+*   Click **Clear Console** \(![Clear Console][ImageClearConsoleIcon]\).  
 *   Right-click a message and then select **Clear Console**.  
 *   Type `clear()` in the Console and then press `Enter`.  
 *   Call `console.clear()` from the JavaScript for your webpage.  
 *   Press `Control`+`L` while the Console is in focus.  
-
+    
+<!--
  
 
-
+  
+-->  
 
 <!-- image links -->  
 
-[ImageClearConsoleIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: /microsoft-edge/devtools-guide-chromium/media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: /microsoft-edge/devtools-guide-chromium/media/show-console-sidebar-icon.msft.png  
-
-[ImageConsolePanel]: /microsoft-edge/devtools-guide-chromium/media/console-hello-console.msft.png "Figure 1: The Console panel"  
-[ImageCommandShowConsole]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Figure 2: The command for showing the Console panel"  
-[ImageShowConsoleDrawer]: /microsoft-edge/devtools-guide-chromium/media/console-elements-customize-control-devtools-show-console-drawer.msft.png "Figure 3: Show console drawer"  
-[ImageDrawerConsole]: /microsoft-edge/devtools-guide-chromium/media/console-elements-console-drawer-hello-world.msft.png "Figure 4: The Console tab in the Drawer"  
-[ImageShowDrawerCommand]: /microsoft-edge/devtools-guide-chromium/media/console-command-menu-show-console.msft.png "Figure 5: The command for showing the Console tab in the Drawer"  
-[ImageConsoleSettings]: /microsoft-edge/devtools-guide-chromium/media/console-settings-group-similar-empty.msft.png "Figure 6: Console Settings"  
-[ImageConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-drawer-empty.msft.png "Figure 7: Console Sidebar"  
-[ImageXhrGrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch.msft.png "Figure 8: Logging XMLHttpRequest and Fetch requests"  
-<!--[ImageXhrUngrouped]: /microsoft-edge/devtools-guide-chromium/media/console-xhr-fetch-all.msft.png "Figure old 9: How the logged XMLHttpRequest and Fetch requests look after ungrouping"  -->  
-[Image429Message]: /microsoft-edge/devtools-guide-chromium/media/console-show-network.msft.png "Figure 9: A 429 message in the Console"  
-[ImageUserMessages]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-drawer-user-messages.msft.png "Figure 10: Viewing user messages"  
-[ImageLogLevels]: /microsoft-edge/devtools-guide-chromium/media/console-log-level-default-levels.msft.png "Figure 11: The Log Levels dropdown"  
-[ImageSidebarWarnings]: /microsoft-edge/devtools-guide-chromium/media/console-sidebar-warnings.msft.png "Figure 12: Using the Sidebar to view warnings"  
-[ImageUrlFilter]: /microsoft-edge/devtools-guide-chromium/media/console-filter-text.msft.png "Figure 13: A URL filter"  
-[ImageNegativeUrlFilter1]: /microsoft-edge/devtools-guide-chromium/media/console-negative-filter-text.msft.png "Figure 14: A negative URL filter that hides all messages matching the URL https://b.wal.co"  
-[ImageNegativeUrlFilter2]: /microsoft-edge/devtools-guide-chromium/media/console-filter-text-specified.msft.png "Figure 15: Viewing the messages that came from wp-ad.min.js"  
-[ImageRegExFilter]: /microsoft-edge/devtools-guide-chromium/media/console-filter-regex.msft.png "Figure 16: Filtering out any messages that do not match regex expression"  
-[ImageHistoryAutocomplete]: /microsoft-edge/devtools-guide-chromium/media/console-filter-text-autofilter-history.msft.png "Figure 17: The autocomplete popup showing expressions from history"  
-[ImageJavascriptContext]: /microsoft-edge/devtools-guide-chromium/media/console-dom-level-top.msft.png "Figure 18: The JavaScript Context dropdown"  
-[ImageSelectContext]: /microsoft-edge/devtools-guide-chromium/media/console-dom-level-multiple.msft.png "Figure 19: Selecting a different JavaScript context"  
+[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
+[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 
-[DevToolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevToolsConsoleViewMessages]: /microsoft-edge/devtools-guide-chromium/console/index#viewing-logged-messages "Viewing logged messages - Console Overview"  
-[DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Console API Reference"  
-[DevToolsConsoleOverviewJavascript]: /microsoft-edge/devtools-guide-chromium/console/index#running-javascript "Running JavaScript - Console Overview"  
-[DevToolsConsoleJavascript]: /microsoft-edge/devtools-guide-chromium/console/javascript "Get Started With Running JavaScript In The Console"  
-[DevToolsConsoleLiveExpressions]: /microsoft-edge/devtools-guide-chromium/console/live-expressions "Watch JavaScript Expression Values In Real-Time With Live Expressions"  
-[DevToolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
-[DevToolsConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
+[DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
+[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Viewing logged messages - Console overview | Microsoft Docs"  
+[DevToolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
+[DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Running JavaScript - Console overview | Microsoft Docs"  
+[DevToolsConsoleJavascript]: ./javascript.md "Get started with running JavaScript in the Console | Microsoft Docs"  
+[DevToolsConsoleLiveExpressions]: ./live-expressions.md "Watch JavaScript expression values in real-time with Live Expressions | Microsoft Docs"  
+[DevToolsConsoleLog]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
+[DevToolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
 [MDNBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browsing context | MDN"  
 

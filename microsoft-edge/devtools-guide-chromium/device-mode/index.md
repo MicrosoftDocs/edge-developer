@@ -2,7 +2,7 @@
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -36,6 +36,7 @@ Use **Device emulation** to approximate how your page looks and performs on a mo
 *   [Throttling the CPU](#throttle-the-cpu-only)  
 *   [Simulating geolocation](#override-geolocation)  
 *   [Setting orientation](#set-orientation)  
+*   [Setting the User Agent String](#set-user-agent-string)
 
 ## Limitations   
 
@@ -45,7 +46,7 @@ There are some aspects of mobile devices that DevTools will never be able to emu
 
 ## Simulate a mobile viewport   
 
-Click **Toggle device emulation** ![Toggle Device Toolbar][ImageDeviceToolbarIcon] or click **Customize and control DevTools** `...` and then select **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
+Click **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or click **Customize and control DevTools** `...` and then select **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     The Device Toolbar  
@@ -66,13 +67,13 @@ Drag the handles to resize the viewport to whatever dimensions you need.  Or, en
 To show media query breakpoints above your viewport, click **More options** and then select **Show media queries**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png" alt-text="Show media queries" lightbox="../media/device-mode-toggle-device-toolbar-more-options-show-media-queries.msft.png":::
-    Show media queries  
+   **Show media queries**  
 :::image-end:::  
 
 Click a breakpoint to change the width of the viewport so that the breakpoint gets triggered.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png" alt-text="Click a breakpoint to change the width of the viewport" lightbox="../media/device-mode-toggle-device-toolbar-click-breakpoint.msft.png":::
-    Click a breakpoint to change the width of the viewport  
+   Click a breakpoint to change the width of the viewport  
 :::image-end:::  
 
 #### Set the device type   
@@ -80,7 +81,7 @@ Click a breakpoint to change the width of the viewport so that the breakpoint ge
 Use the **Device Type** list to simulate a mobile device or desktop device.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png" alt-text="The Device Type list" lightbox="../media/device-mode-toggle-device-toolbar-device-type-list.msft.png":::
-    The Device Type list  
+   The **Device Type** list  
 :::image-end:::  
 
 The table below describes the differences between the options.  **Rendering method** refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.  **Cursor icon** refers to what type of cursor you see when you hover over the page.  **Events fired** refers to whether the page fires `touch` or `click` events when you interact with the page.  
@@ -100,22 +101,22 @@ The table below describes the differences between the options.  **Rendering meth
 To simulate the dimensions of a specific mobile device, select the device from the **Device** list.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="The Device list" lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
-    The Device list  
+   The **Device** list  
 :::image-end:::  
 
 #### Rotate the viewport to landscape orientation   
 
-Click **Rotate** ![Rotate][ImageRotateIcon] to rotate the viewport to landscape orientation.  
+Click **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Landscape orientation" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
-    Landscape orientation  
+   Landscape orientation  
 :::image-end:::  
 
 > [!NOTE]
 > The **Rotate** button disappears if your **Device Toolbar** is narrow.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-    The Device Toolbar  
+   The **Device Toolbar**  
 :::image-end:::  
 
 See also [Set orientation](#set-orientation).  
@@ -127,13 +128,18 @@ When simulating the dimensions of a specific mobile device like an iPhone 6, ope
 > [!NOTE]
 > If you do not see a device frame for a particular device, it probably means that DevTools just does not have art for that specific option.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Show device frame" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
-    Show device frame  
-:::image-end:::  
-
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="The device frame for the iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
-    The device frame for the iPhone 6  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="Show device frame" lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
+         Show device frame  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png" alt-text="The device frame for the iPhone 6" lightbox="../media/device-mode-toggle-device-toolbar-options-device-frame-iphone-6.msft.png":::
+         The device frame for the iPhone 6  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 #### Add a custom mobile device   
 
@@ -141,37 +147,41 @@ To add a custom device:
 
 1.  Click the **Device** list and then select **Edit**.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Selecting Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-    Selecting Edit  
-:::image-end:::  
-
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Select Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+       Select **Edit**  
+    :::image-end:::  
+    
 1.  Click **Add custom device**.  
-
 1.  Enter a name, width, and height for the device.  The [device pixel ratio][MDNWindowDevicePixelRatio], [user agent string][MDNUserAgent], and [device type](#set-the-device-type) fields are optional.  The device type field is the list that is set to **Mobile** by default.  
-
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Creating a custom device" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
-    Creating a custom device  
-:::image-end:::  
+    
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Create a custom device" lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+       Create a custom device  
+    :::image-end:::  
 
 ### Show rulers   
 
 Click **More options** and then select **Show rulers** to see rulers above and to the left
 of your viewport.  The sizing unit of the rulers is pixels.  
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Show rulers" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
-    Show rulers  
-:::image-end:::  
-
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Rulers above and to the left of the viewport" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
-    Rulers above and to the left of the viewport  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="Show rulers" lightbox="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png":::
+         **Show rulers**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Rulers above and to the left of the viewport" lightbox="../media/device-mode-toggle-device-toolbar-rulers.msft.png":::
+         Rulers above and to the left of the viewport  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 ### Zoom the viewport   
 
 Use the **Zoom** list to zoom in or out.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-zoom.msft.png" alt-text="Zoom" lightbox="../media/device-mode-toggle-device-toolbar-zoom.msft.png":::
-    Zoom  
+   **Zoom**  
 :::image-end:::  
 
 ## Throttle the network and CPU   
@@ -179,24 +189,24 @@ Use the **Zoom** list to zoom in or out.
 To throttle the network and CPU, select **Mid-tier mobile** or **Low-end mobile** from the **Throttle** list.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="The Throttle list in the Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
-    The Throttle list in the Device Toolbar  
+   The **Throttle** list in the Device Toolbar  
 :::image-end:::  
 
 **Mid-tier mobile** simulates fast 3G and throttles your CPU so that it is 4 times slower than normal.  **Low-end mobile** simulates slow 3G and throttles your CPU 6 times slower than normal.  Keep in mind that the throttling is relative to the normal capability of your laptop or desktop.  
 
 > [!NOTE]
-> The **Throttle** list will be hidden if your **Device Toolbar** is narrow.  
+> The **Throttle** list is hidden if your **Device Toolbar** is narrow.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
-    The Device Toolbar  
+   The **Device Toolbar**  
 :::image-end:::  
 
 ### Throttle the CPU only   
 
-To throttle the CPU only and not the network, go to the **Performance** panel, click **Capture Settings** ![Capture Settings][ImageCaptureIcon], and then select **4x slowdown** or **6x slowdown** from the **CPU** list.  
+To throttle the CPU only and not the network, go to the **Performance** panel, click **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\), and then select **4x slowdown** or **6x slowdown** from the **CPU** list.  
 
 :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The CPU list" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
-    The CPU list  
+   The **CPU** list  
 :::image-end:::  
 
 ### Throttle the network only   
@@ -204,98 +214,109 @@ To throttle the CPU only and not the network, go to the **Performance** panel, c
 To throttle the network only and not the CPU, go the **Network** panel and select **Fast 3G** or **Slow 3G** from the **Throttle** list.  
 
 :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list in the Network tool" lightbox="../media/device-mode-network-throttle.msft.png":::
-    The Throttle list in the Network tool  
+   The **Throttle** list in the Network tool  
 :::image-end:::  
 
-Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `3G`, and select **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
+Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and select **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
 
 :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
-    The Command Menu  
+   The **Command Menu**  
 :::image-end:::  
 
-You can also set network throttling from the **Performance** panel.  Click **Capture Settings** ![Capture Settings][ImageCaptureIcon] and then select **Fast 3G** or **Slow 3G** from the **Network** list.  
+You can also set network throttling from the **Performance** panel.  Click **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\) and then select **Fast 3G** or **Slow 3G** from the **Network** list.  
 
-:::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Setting network throttling from the Performance panel" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
-    Setting network throttling from the Performance panel  
+:::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Set network throttling from the Performance panel" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+   Set network throttling from the **Performance** panel  
 :::image-end:::  
 
 ## Override geolocation   
 
-To open the geolocation overriding UI click **Customize and control DevTools** `...` and then select **More tools** > **Sensors**.  
+To open the geolocation overriding UI click **Customize and control DevTools** \(`...`\) and then select **More tools** > **Sensors**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-    Sensors  
-:::image-end::: 
+   **Sensors**  
+:::image-end:::  
 
 Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `Sensors`, and then select **Show Sensors**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-    Show Sensors  
-:::image-end::: 
+   **Show Sensors**  
+:::image-end:::  
 
 Select one of the presets from the **Geolocation** list, or select **Custom location** to enter your own coordinates, or select **Location unavailable** to test out how your page behaves when geolocation is in an error state.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Geolocation" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
-    Geolocation  
+    **Geolocation**  
 :::image-end:::
 
 ## Set orientation   
 
-To open the orientation UI click **Customize and control DevTools** `...` and then select **More tools** > **Sensors**.  
-
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
-    Sensors  
-:::image-end::: 
-
-Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `Sensors`, and then select **Show Sensors**.  
-
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-    Show Sensors  
-:::image-end::: 
+:::row:::
+   :::column span="":::
+      To open the orientation UI click **Customize and control DevTools** `...` and then select **More tools** > **Sensors**.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+         **Sensors**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `Sensors`, and then select **Show Sensors**.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+         **Show Sensors**  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 Select one of the presets from the **Orientation** list or select **Custom orientation** to set your own alpha, beta, and gamma values.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Orientation" lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
-    Orientation  
+    **Orientation**  
 :::image-end::: 
 
 ## Set User Agent String
 
-To open the User Agent String UI click **Customize and control DevTools** `...` and then select **More tools** > **Network conditions**.  
+:::row:::
+   :::column span="":::
+      To open the User Agent String UI click **Customize and control DevTools** `...` and then select **More tools** > **Network conditions**.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+         **Network conditions**  
+      :::image-end::: 
+   :::column-end:::
+   :::column span="":::
+      Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `Sensors`, and then select **Show Sensors**.  
+      
+      :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+         **Show Network conditions**  
+      :::image-end::: 
+   :::column-end:::
+:::row-end:::
 
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
-    Network conditions  
-:::image-end::: 
-
-Or press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, type `Network conditions`, and then select **Show Network conditions**.  
-
-:::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
-    Show Network conditions  
-:::image-end::: 
-
-Next to **User agent**, Clear the **Select automatically** check box.  Select **Custom...** to open a list of predefined User Agent Strings or provide a custom User Agent String in the **Enter a custom user agent** text box.
+Next to **User agent**, clear the **Select automatically** check box.  Select **Custom...** to open a list of predefined User Agent Strings or provide a custom User Agent String in the **Enter a custom user agent** text box.
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Setting the User Agent String to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Setting the User Agent String to Microsoft Edge on macOS  
 :::image-end::: 
 
+<!--  
  
 
 
+-->  
 
 <!--See [Join the DevTools community][DevToolsCommunity] for other ways to leave feedback.  -->  
 
 <!-- image links -->  
 
 [ImageCaptureIcon]: /microsoft-edge/devtools-guide-chromium/media/capture-settings-icon.msft.png  
-[ImageCustomizeIcon]: /microsoft-edge/devtools-guide-chromium/media/customize-and-control-devtools-icon.msft.png  
 [ImageDeviceToolbarIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-device-toolbar-dark-icon.msft.png  
 [ImageRotateIcon]: /microsoft-edge/devtools-guide-chromium/media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 
-<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community"  -->
-[DevToolsRemoteDebugging]: /microsoft-edge/devtools-guide-chromium/remote-debugging/index "Get Started with Remote Debugging Android Devices"  
+<!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
+[DevToolsRemoteDebugging]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 
 [MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"  
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User Agent | MDN"  

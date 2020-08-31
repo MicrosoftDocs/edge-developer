@@ -2,7 +2,7 @@
 title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Override The User Agent String From Microsoft Edge DevTools   
+# Override the user agent string from Microsoft Edge DevTools   
 
 
 
@@ -33,27 +33,24 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    > ##### Figure 1  
-    > The Command Menu  
-    > ![The Command Menu][ImageCommandMenu]  
+    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+       The **Command Menu**  
+    :::image-end:::  
     
 1.  Type `network conditions`, select **Show Network conditions**, and press `Enter` to open the **Network conditions** tab.  
 1.  In the **User agent** section, disable the **Select automatically** checkbox.  
     
-    > ##### Figure 2  
-    > Disabling **Select automatically**  
-    > ![Disabling Select automatically][ImageUserAgentDisableSelectAutomatically]  
+    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Disable Select automatically" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
+       Disable **Select automatically**  
+    :::image-end:::  
     
 1.  Select a user agent string from the list, or enter your own custom string.  
+    
+<!--  
+## Feedback   
 
-<!--## Feedback   -->  
 
-
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-command-menu.msft.png "Figure 1: The Command Menu"  
-[ImageUserAgentDisableSelectAutomatically]: /microsoft-edge/devtools-guide-chromium/media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png "Figure 2: Disabling Select automatically"  
+-->  
 
 <!-- links -->  
 
