@@ -2,7 +2,7 @@
 title: Understand Security Issues With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Understand Security Issues With Microsoft Edge DevTools   
+# Understand security issues with Microsoft Edge DevTools   
 
   
 
@@ -38,12 +38,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 The **Security** panel is the main place in DevTools for inspecting the security of a page.  
 
 1.  [Open DevTools][DevToolsOpen].  
-
 1.  Click the **Security** tab to open the **Security** panel.  
     
-    > ##### Figure 1  
-    > The Security panel  
-    > ![The Security panel][ImageSecurityPanel]  
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel" lightbox="../media/security-security-overview-secure.msft.png":::
+       The **Security** panel  
+    :::image-end:::  
     
 ## Common problems   
 
@@ -51,9 +50,9 @@ The **Security** panel is the main place in DevTools for inspecting the security
 
 When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.  
 
-> ##### Figure 2  
-> A non-secure page  
-> ![A non-secure page][ImageNonSecurePage]  
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="A non-secure page" lightbox="../media/security-security-overview-non-secure.msft.png":::
+   A non-secure page  
+:::image-end:::  
 
 This problem occurs when the URL that you visited was requested over HTTP.  To make it secure you need to request it over HTTPS.  For example, if you look at the URL in your address bar, it probably looks similar to `http://example.com`.  To make it secure the URL should be `https://example.com`.  
 
@@ -68,15 +67,15 @@ If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provid
 
 **Mixed content** means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.  
 
-> ##### Figure 3  
-> Mixed content  
-> ![Mixed content][ImageMixedContent]  
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Mixed content" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+   Mixed content  
+:::image-end:::  
 
-In [Figure 3](#figure-3), click **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
+In the previous figure, click **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
 
-> ##### Figure 4  
-> Mixed resources in the Network Log  
-> ![Mixed resources in the Network Log][ImageMixedResourcesNetworkLog]  
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log" lightbox="../media/security-network-filter.msft.png":::
+   Mixed resources in the **Network Log**  
+:::image-end:::  
 
 ## View details   
 
@@ -84,35 +83,28 @@ In [Figure 3](#figure-3), click **View 1 request in Network panel** to open the 
 
 From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.  
 
-> ##### Figure 5  
-> A main origin certificate  
-> ![A main origin certificate][ImageCertificate]  
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="A main origin certificate" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+   A main origin certificate  
+:::image-end:::  
 
 ### View origin details   
 
 Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you are able to view connection and certificate information.  Certificate transparency information is also shown when available.  
 
-> ##### Figure 6  
-> Main origin details  
-> ![Main origin details][ImageOriginDetails]  
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+   Main origin details  
+:::image-end:::  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageSecurityPanel]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure.msft.png "Figure 1: The Security panel"  
-[ImageNonSecurePage]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-non-secure.msft.png "Figure 2: A non-secure page"  
-[ImageMixedContent]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure.msft.png "Figure 3: Mixed content"  
-[ImageMixedResourcesNetworkLog]: /microsoft-edge/devtools-guide-chromium/media/security-network-filter.msft.png "Figure 4: Mixed resources in the Network Log"  
-[ImageCertificate]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-secure-view-certificate.msft.png "Figure 5: A main origin certificate"  
-[ImageOriginDetails]: /microsoft-edge/devtools-guide-chromium/media/security-security-overview-mixed-secure-main-origin.msft.png "Figure 6: Main origin details"  
+-->  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  

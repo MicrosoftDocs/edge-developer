@@ -2,7 +2,7 @@
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# How to Use Allocation Instrumentation on Timeline  
+# How to use Allocation instrumentation on timeline  
 
 
 
@@ -40,9 +40,9 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 
 **Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms!\) and one final snapshot at the end of the recording.  
 
-> ##### Figure 1  
-> **Allocation instrumentation on timeline**  
-> ![Allocation instrumentation on timeline][ImageObjectTracker]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+   **Allocation instrumentation on timeline**  
+:::image-end:::  
 
 > [!NOTE]
 > The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.  
@@ -54,29 +54,29 @@ Follow these steps to begin using **Allocation instrumentation on timeline**.
 1.  [Open the DevTools][DevtoolsOpenIndex].  
 1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.  
 1.  Start recording.  
-
-> ##### Figure 2  
-> Record heap allocations profiler  
-> ![Record heap allocations profiler][ImageRecordHeap]  
-
+    
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Record heap allocations profiler  
+    :::image-end:::  
+    
 ## Read a heap allocation timeline  
 
-The heap allocation timeline shows where objects are being created and identifies the retaining path.  In [Figure 3](#figure-3), the bars at the top indicate when new objects are found in the heap.  
+The heap allocation timeline shows where objects are being created and identifies the retaining path.  In the following figure, the bars at the top indicate when new objects are found in the heap.  
 
 The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.  
 
-> ##### Figure 3  
-> **Allocation instrumentation on timeline** snapshot  
-> ![Allocation instrumentation on timeline snapshot][ImageCollected]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Allocation instrumentation on timeline snapshot" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
+   **Allocation instrumentation on timeline** snapshot  
+:::image-end:::  
 
-<!--In [Figure 4](#figure-4), an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
+<!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
 You are able to use the sliders in the timeline above to zoom into that particular snapshot and see the objects that were recently allocated at that point:  
 
-> ##### Figure 4  
-> Zoom into snapshot  
-> ![Zoom into snapshot][ImageSliders]  
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoom into snapshot" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
+   Zoom into snapshot  
+:::image-end:::  
 
 Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.  
 
@@ -84,23 +84,18 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 
 You are able to view memory allocation by JavaScript function.  See [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] for more information.  
 
-<!--## Feedback   -->  
+<!--
+## Feedback   
 
 
-
-<!-- image links -->  
-
-[ImageObjectTracker]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png "Figure 1: Allocation instrumentation on timeline"  
-[ImageRecordHeap]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png "Figure 2: Record heap allocations profiler"  
-[ImageCollected]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timelines-snapshot.msft.png "Figure 3: Allocation instrumentation on timeline snapshot"  
-[ImageSliders]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png "Figure 4: Zoom into snapshot"  
+-->  
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge (Chromium) DevTools"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: /microsoft-edge/devtools-guide-chromium/memory-problems/index#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems"  
+[DevToolsOpenIndex]: ../open.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"  
 
-<!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
+<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Download a Microsoft Edge Channel"  
