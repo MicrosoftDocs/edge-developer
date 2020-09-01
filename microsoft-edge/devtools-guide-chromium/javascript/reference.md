@@ -285,7 +285,7 @@ Use the **Watch** pane to watch the values of custom expressions.  You may watch
 *   Click the **Add Expression** \(![Add Expression][ImageAddExpressionIcon]\) button to create a new watch expression.  
 *   Click the **Refresh** \(![Refresh][ImageRefreshIcon]\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
 *   Hover over an expression and click the **Delete Expression** \(![Delete Expression][ImageDeleteExpressionIcon]\) button to delete it.  
-    
+
 ## Make a minified file readable  
 
 Click the **Format** \(![Format][ImageFormatIcon]\) button to make a minified file human-readable.  
@@ -307,7 +307,7 @@ Complete the following actions to edit a script.
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
        The **Editor** pane  
     :::image-end:::  
-    
+     
 ## Disable JavaScript   
 
 See [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].  
