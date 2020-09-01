@@ -9,7 +9,7 @@ ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 
-# Native Messaging  
+# Native messaging  
 
 Extensions can communicate with a native Win32 application installed on user’s device using message passing APIs. The native application host exchange messages with the extension using standard input and standard output. The extensions using native messaging are installed on the Edge browser like any other extension from Microsoft Edge add-ons store. However, the native application is not installed or managed by the browser. Either both the extension and the host are packaged together and when the user installs the package, both are installed, or the extension is installed by the user from the Store and the extension prompts the user to install the host. 
 
@@ -68,7 +68,7 @@ The host manifest must be a valid json file containing the following fields:
 > [!NOTE]
 > How do I generate the extension ID?
 >
-> While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Visit Extension management page at "edge://extensions" and enable **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. 
+> While you are developing the native messaging host and extension, you can sideload the extension to test native messaging. Visit Extension management page at "edge://extensions" and enable **Developer mode** toggle button. Then, load your extension by clicking on the **Load unpacked** button. Once you load the extension, you will be able to see the extension id on the same page. You can use this ID to specify in “allowed_origins” when you install the host manifest file. You may then test your native messaging host and extension. You may use this to get an extension ID for testing native messaging but when the extension is submitted and published to Microsoft Edge add-ons store, the extension ID of the published extension may be different and it will have to be updated accordingly in the “allowed_origins” of the host manifest file.
 
 
 ### Native messaging host location 
