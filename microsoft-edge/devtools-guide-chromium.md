@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -131,8 +131,6 @@ These shortcuts control the main DevTools window, work across all tools, or both
 [!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 If you want to preview the [latest features coming to the DevTools][DevtoolsGuideChromiumWhatsNewIndex], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
-
-<!-- image links -->  
 
 <!-- links -->  
 
