@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# How to record heap snapshots   
-
-
+# How to record heap snapshots  
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.  
 
@@ -92,7 +86,7 @@ To switch between views, use the selector at the top of the view.
 Initially, a snapshot opens in the Summary view, displaying object totals, which may be expanded to show instances:  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Summary view" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
-   Summary view  
+   **Summary** view  
 :::image-end:::  
 
 Top-level entries are "total" lines.  
@@ -113,7 +107,7 @@ Remember that yellow objects have JavaScript references and red objects are deta
 **What do the various constructor \(group\) entries in the Heap profiler correspond to?**  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Constructor groups" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
-   Constructor groups  
+   **Constructor** groups  
 :::image-end:::  
 
 | Constructor \(group\) entry | Description |  
@@ -251,11 +245,9 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--  
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

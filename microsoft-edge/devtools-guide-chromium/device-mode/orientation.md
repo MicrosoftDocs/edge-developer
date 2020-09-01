@@ -21,15 +21,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Simulate device orientation with Microsoft Edge DevTools  
 
-
-
-
-# Simulate device orientation with Microsoft Edge DevTools   
-
-
-
-To simulate different device orientations from Microsoft Edge DevTools:  
+Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.  
 
 <!--todo: update device orientation section when available -->  
 
@@ -50,7 +44,7 @@ To simulate different device orientations from Microsoft Edge DevTools:
        :::column-end:::
        :::column span="":::
           After you select **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.  
-          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how these axes work.  -->  
+          <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
           You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.  
           
@@ -60,18 +54,16 @@ To simulate different device orientations from Microsoft Edge DevTools:
        :::column-end:::
     :::row-end:::
     
-<!--  
-## Feedback 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation \& Motion"  -->  
-<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation \& Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndex]: /web/fundamentals/native-hardware/device-orientation/index "Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexAlpha]: /web/fundamentals/native-hardware/device-orientation/index#alpha "Alpha - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexBeta]: /web/fundamentals/native-hardware/device-orientation/index#beta "Beta - Device Orientation & Motion"  -->  
+<!--[WebFundamentasNativeHardwareDeviceOrientationIndexGamma]: /web/fundamentals/native-hardware/device-orientation/index#gamma "Gamma - Device Orientation & Motion"  -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

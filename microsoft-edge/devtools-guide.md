@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -41,7 +41,7 @@ The Microsoft Edge \(EdgeHTML\) DevTools include:
 *   A [Service Workers][DevtoolsGuideEdgehtmlServiceworkers] panel for managing and debugging your service workers  
 *   An [Emulation][DevtoolsGuideEdgehtmlEmulation] panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates  
 
-Please keep sending your [feedback and feature requests](#feedback)!  
+Please keep sending your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team)!  
 
 > [!TIP]
 > [Test on Microsoft Edge \(EdgeHTML\) free from any browser][BrowserstackEdgehtml].  
@@ -112,7 +112,7 @@ These shortcuts control the main DevTools window and should work across all tool
 > [!NOTE]
 > If you are debugging and paused at a breakpoint, the **Refresh the page** action resumes the runtime first.  
 
-## Feedback  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 Please send your feedback to help improve the Microsoft Edge \(EdgeHTML\) DevTools for you!  Simply open the tools \(`F12`\) and select the [Send feedback](#microsoft-edge-edgehtml-developer-tools) button.  
 
