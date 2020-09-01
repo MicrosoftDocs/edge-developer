@@ -2,7 +2,7 @@
 title: Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)   
+# Force Microsoft Edge DevTools into Print Preview mode (CSS Print Media Type)   
 
 
 
@@ -33,32 +33,29 @@ The [print media query][MDNUsingMediaQueries] controls how your page looks when 
 
 1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
-    > ##### Figure 1  
-    > The **Command Menu**  
-    > ![The Command Menu][ImageCommandMenu]  
+    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
+       The **Command Menu**  
+    :::image-end:::  
     
 1.  Type `rendering`, select **Show Rendering**, and then press `Enter`.  
 1.  Under **Emulate CSS media** select **print**.  
     
-    > ##### Figure 2  
-    > Print preview mode  
-    > ![Print preview mode][ImagePrintMode]  
+    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Print preview mode" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
+       Print preview mode  
+    :::image-end:::  
     
 From here, you can view and change your CSS, like any other web page.  See [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 1: The Command Menu"  
-[ImagePrintMode]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png "Figure 2: Print preview mode"  
+-->  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[DevToolsCSSGetStarted]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevToolsCSSGetStarted]: ./index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"  
 

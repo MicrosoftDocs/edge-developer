@@ -2,7 +2,7 @@
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,7 +27,7 @@ This page is a comprehensive reference of accessibility features in Microsoft Ed
 
 *   Have a basic understanding of DevTools, such as how to open it.  
 *   Are familiar with [accessibility principles and best practices][MDNAccessibility].  
-
+    
 The purpose of this reference is to help you discover all of the tools available in DevTools that help you examine the accessibility of a page.  
 
 See [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation] if you are looking for help on navigating DevTools with an assistive technology like a screen reader.  
@@ -40,7 +40,7 @@ When determining whether a page is accessible, you need to have 2 general questi
 
 1.  Are you able to navigate the page with a keyboard or [screen reader][MDNScreenReader]?  
 1.  Are the elements of the page properly marked up for screen readers?  
-
+    
 In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
@@ -130,7 +130,7 @@ ARIA attributes ensure that screen readers have all of the information that they
 View the ARIA attributes of an element in the [Accessibility pane](#the-accessibility-pane).  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   The ARIA Attributes section  
+   The **ARIA Attributes** section  
 :::image-end:::  
 
 ### View the computed accessibility properties of an element  
@@ -142,8 +142,8 @@ Some accessibility properties are dynamically calculated by the browser.  These 
 
 View the computed accessibility properties of an element in the [Accessibility pane](#the-accessibility-pane).  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section in the Accessibility pane" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   The **Computed Properties** section in the **Accessibility** pane  
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility pane" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+   The **Computed Properties** section of the **Accessibility** pane  
 :::image-end:::  
 
 ## View the contrast ratio of a text element in the Color Picker  
@@ -170,7 +170,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of 13.97  
+       The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
     :::image-end:::  
     
 1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
@@ -179,7 +179,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
        The **Contrast Ratio** Line in the visual picker  
     :::image-end:::  
     
-## Getting in touch with the Microsoft Edge DevTools team
+<!--## Feedback   -->  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

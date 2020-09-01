@@ -2,7 +2,7 @@
 title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Override The User Agent String From Microsoft Edge DevTools  
+# Override the user agent string from Microsoft Edge DevTools  
 
 To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:  
 

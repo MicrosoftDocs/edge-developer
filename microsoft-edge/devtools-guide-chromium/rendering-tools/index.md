@@ -2,7 +2,7 @@
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Analyze Runtime Performance 
+# Analyze runtime performance 
 
 Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.  
 
@@ -31,7 +31,7 @@ Users expects interactive and smooth pages.  Each stage in the pixel pipeline re
 *   Do not over-complicate your CSS.  Use less CSS and keep your CSS selectors simple.  
 *   Avoid layout as much as possible.  Choose CSS that does not trigger layout at all.  
 *   Painting may take up more time than any other rendering activity.  Watch out for paint bottlenecks.  
-
+    
 ## JavaScript  
 
 JavaScript calculations, especially ones that trigger extensive visual changes, may stall application performance.  Do not let badly-timed or long-running JavaScript interfere with user interactions.  
@@ -77,13 +77,15 @@ Take a recording in the **Performance** panel.  Check the recording for large `R
 
 Click on a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.  
 
-![Long recalculate style](../media/rendering-tools-performance-recalculate-style-summary.msft.png)
+:::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Long recalculate style" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+   Long recalculate style  
+:::image-end:::  
 
 To reduce the impact of `Recalculate Style` events:  
 
 *   Use the [CSS Triggers][CssTriggers] to learn which CSS properties trigger layout, paint, and composite.  These properties have the worst impact on rendering performance.  
 *   Switch to properties that have less impact.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
-
+    
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
 ### Style: Problems  
@@ -180,9 +182,8 @@ The following table describes some common paint and composite problems and poten
 
 <!-- links -->  
 
-[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed Up JavaScript Runtime | Microsoft Docs"  
-
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Enable advanced paint instrumentation - Performance Analysis Reference | Microsoft Docs"
+[DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"  
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Enable advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 

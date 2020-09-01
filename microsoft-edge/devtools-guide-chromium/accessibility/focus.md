@@ -2,7 +2,7 @@
 title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,7 +36,7 @@ Complete the following actions to track the focused element in DevTools.
     
 1.  Type `document.activeElement`.  
 1.  Click outside of the **Live Expression** UI to save.  
-
+    
 The value that you see below `document.activeElement` is the result of the expression.  
 
 Since that expression always represents the focused element, you now have a way to always keep track of which element has focus.  

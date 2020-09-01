@@ -2,7 +2,7 @@
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# How to Use Allocation Instrumentation on Timeline  
+# How to use Allocation instrumentation on Timeline  
 
 Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.  
 
@@ -48,11 +48,11 @@ Complete the following actions to begin using **Allocation instrumentation on ti
 1.  [Open the DevTools][DevtoolsOpenIndex].  
 1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.  
 1.  Start recording.  
-
-:::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
-   Record heap allocations profiler  
-:::image-end:::  
-
+    
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+       Record heap allocations profiler  
+    :::image-end:::  
+    
 ## Read a heap allocation timeline  
 
 The heap allocation timeline shows where objects are being created and identifies the retaining path.  In the following figure, the bars at the top indicate when new objects are found in the heap.  
@@ -60,7 +60,7 @@ The heap allocation timeline shows where objects are being created and identifie
 The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Allocation instrumentation on timeline snapshot" lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   Allocation instrumentation on timeline snapshot  
+   **Allocation instrumentation on timeline** snapshot  
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
@@ -85,9 +85,9 @@ You are able to view memory allocation by JavaScript function.  For more informa
 <!-- links -->  
 
 [DevToolsOpenIndex]: ../open.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ../memory-problems/index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"  
+[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"  
 
-<!--[HeapProfiler]: ../profile/memory-problems/heap-snapshots ""  -->  
+<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->  
 
 [MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Download a Microsoft Edge Channel"  

@@ -1,8 +1,8 @@
 ---
-title: Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)
+title: Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,65 +25,69 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)   
+# Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)   
 
 
 
 By default DevTools is docked to the right of your viewport.  You may also dock to bottom, dock to left, or undock the DevTools to a separate window.  
 
-> ##### Figure 1  
-> Dock To Left  
-> ![Dock To Left][ImageDockLeft]  
-
-> ##### Figure 2  
-> Dock To Bottom  
-> ![Dock To Bottom][ImageDockBottom]  
-
-> ##### Figure 3  
-> Browser in separate window  
-> ![Browser in separate window][ImageUndockBrowser]  
-
-> ##### Figure 4  
-> Undocked DevTools in separate window  
-> ![Undocked DevTools in separate window][ImageUndockDevTools]  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Select Dock To Left" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
+         Select `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Select Dock To Bottom" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+         Select `Dock To Bottom`  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Browser in separate window" lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+         Browser in separate window  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="Undocked DevTools in separate window" lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+         Undocked DevTools in separate window  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Change placement from the main menu   
 
-1.  Click **Customize And Control DevTools** `...` and select **Undock Into Separate Window** ![Undock][ImageUndockIcon], **Dock To Bottom** ![Dock To Bottom][ImageBottomIcon], or **Dock To Left** ![Dock To Left][ImageLeftIcon].  
+1.  Click **Customize And Control DevTools** \(`...`\) and select **Undock Into Separate Window** \(![Undock][ImageUndockIcon]\), **Dock To Bottom** \(![Dock To Bottom][ImageBottomIcon]\), or **Dock To Left** \(![Dock To Left][ImageLeftIcon]\).  
     
-    > ##### Figure 5  
-    > Selecting **Undock Into Separate Window**  
-    > ![Selecting Undock Into Separate Window][ImageUndockSettings]  
+    :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Select Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+       Select **Undock Into Separate Window**  
+    :::image-end:::  
     
 ## Change placement from the Command Menu   
 
 1.  [Open the Command Menu][DevtoolsCommandMenu].  
 1.  Run one of the following commands: `Dock To Bottom`, `Undock Into Separate Window`.  Currently there is no command for docking to left, but you may access it from the [main menu](#change-placement-from-the-main-menu).  
     
-    > ##### Figure 6  
-    > The undock command  
-    > ![The undock command][ImageUndockCommand]  
-
+    :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The undock command" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+       The undock command  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageUndockIcon]: /microsoft-edge/devtools-guide-chromium/media/undock-icon.msft.png  
-[ImageBottomIcon]: /microsoft-edge/devtools-guide-chromium/media/bottom-icon.msft.png  
-[ImageLeftIcon]: /microsoft-edge/devtools-guide-chromium/media/left-icon.msft.png  
-
-[ImageDockLeft]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-right-docked.msft.png "Figure 1: Dock To Left"  
-[ImageDockBottom]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-bottom-docked.msft.png "Figure 2: Dock To Bottom"  
-[ImageUndockBrowser]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-browser.msft.png "Figure 3: Browser in separate window"  
-[ImageUndockDevTools]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png "Figure 4: Undocked DevTools in separate window"  
-[ImageUndockSettings]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-options-dock-side-highlight.msft.png "Figure 5: Selecting Undock Into Separate Window"  
-[ImageUndockCommand]: /microsoft-edge/devtools-guide-chromium/media/customize-elements-styles-command-menu-undo.msft.png "Figure 6: The undock command"  
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

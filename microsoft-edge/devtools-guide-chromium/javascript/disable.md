@@ -2,7 +2,7 @@
 title: Disable JavaScript With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,7 +34,7 @@ Complete the following actions to see how a web page looks and behaves when Java
     
 1.  Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.  
     
-    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Selecting Disable JavaScript in the Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
+    :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Select Disable JavaScript in the Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
        Select **Disable JavaScript** in the **Command Menu**  
     :::image-end:::  
     
@@ -43,15 +43,15 @@ Complete the following actions to see how a web page looks and behaves when Java
     :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The warning icon next to Sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
        The warning icon next to **Sources**  
     :::image-end:::  
-
-JavaScript remains disabled in this tab for as long as you have DevTools open.  
+    
+JavaScript remains disabled in the tab for as long as you have DevTools open.  
 
 You may want to reload the page to see if and how the page depends on JavaScript while loading.  
 
-Complete the following actions to re-enable JavaScript.  
+To re-enable JavaScript, complete the following actions.  
 
-1.  Open the **Command Menu** again and run the `Enable JavaScript` command.  
-1.  Close DevTools.  
+*   Open the **Command Menu** again and run the `Enable JavaScript` command.  
+*   Close DevTools.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

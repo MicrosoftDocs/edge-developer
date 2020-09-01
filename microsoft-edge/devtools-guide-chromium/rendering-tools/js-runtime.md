@@ -2,7 +2,7 @@
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Speed Up JavaScript Runtime  
+# Speed up JavaScript runtime  
 
 Identify expensive functions using the **Memory** panel.  
 
@@ -33,7 +33,7 @@ Identify expensive functions using the **Memory** panel.
 
 *   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** panel.  
 *   Visualize your profiles as a flame chart.  
-
+    
 ## Record a Sampling Profile  
 
 If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.  
@@ -43,7 +43,7 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 1.  Select **Start**.  
 1.  Depending on what you are trying to analyze, you may either reload the page, interact with the page, or just let the page run.  
 1.  Select the **Stop** button when you are finished.  
-
+    
 > [!NOTE]
 > You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.  
 
@@ -77,7 +77,7 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 ### Exclude functions  
 
-To exclude a function from your Sampling Profile, select it to select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
+To exclude a function from your Sampling Profile, select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
 
 Select the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) button to restore all excluded functions back into the recording.  
 
@@ -101,8 +101,8 @@ The flame chart is split into two parts.
 Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations so that you are able to see patterns in each runtime.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Annotated flame chart" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
-           Annotated flame chart  
-        :::image-end:::  
+   Annotated flame chart  
+:::image-end:::  
 
 A tall call stack is not necessarily significant, it just means that a lot of functions were called.  But a wide bar means that a function took a long time to complete.  These are candidates for optimization.  
 
@@ -146,13 +146,13 @@ Hover over a function to display the name and timing data.  The following inform
 
 <!-- links -->  
 
-[DevtoolsConsoleUtilities]: ../console/utilities.md "Console Utilities API Reference | Microsoft Docs"  
-[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile - Console Utilities API Reference | Microsoft Docs"  
-[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - Console Utilities API Reference | Microsoft Docs"  
+[DevtoolsConsoleUtilities]: ../console/utilities.md "Console utilities API reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile - Console utilities API reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - Console utilities API reference | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  

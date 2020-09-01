@@ -2,7 +2,7 @@
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,9 +21,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# JavaScript Debugging Reference  
+# JavaScript febugging reference  
 
-Discover new debugging workflows with this comprehensive reference of Microsoft Edge DevTools debugging features.  
+Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
 
 See [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] to learn the basics of debugging.  
 
@@ -32,8 +32,6 @@ See [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJ
 Set a breakpoint so that you are able to pause your code in the middle of the runtime.  
 
 See [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints] to learn how to set breakpoints.  
-
-[DevToolsJavascriptBreakpoints]: breakpoints.md "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
 
 ## Step through code  
 
@@ -125,7 +123,7 @@ Right-click the line of code in which you are interested, and select **Continue 
 
 ### Restart the top function of the call stack  
 
-While paused on a line of code, right-click anywhere in the **Call Stack** pane and select **Restart Frame** to pause on the first line of the top function in your call stack.  The top function is the last function that was called.  
+While paused on a line of code, right-click anywhere in the **Call Stack** pane and select **Restart Frame** to pause on the first line of the top function in your call stack.  The top function is the last function that was run.  
 
 The following code snippet is an example for you to step-through.  
 
@@ -240,22 +238,22 @@ Complete the following actions to mark a script as **Library code** from the **E
 1.  Open the file.  
 1.  Right-click anywhere.  
 1.  Select **Mark as Library code**.  
-
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Editor pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
-   Mark a script as **Library code** from the **Editor** pane  
-:::image-end:::  
-
+    
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Editor pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
+       Mark a script as **Library code** from the **Editor** pane  
+    :::image-end:::  
+    
 ### Mark a script as Library code from the Call Stack pane  
 
 Compelte the folliwng actions to mark a script as **Library code** from the **Call Stack** pane.  
 
 1.  Right-click on a function from the script.  
 1.  Select **Mark as Library code**.  
-
-:::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marking a script as Library code from the Call Stack pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
-   Mark a script as **Library code** from the **Call Stack** pane  
-:::image-end:::  
-
+    
+    :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Call Stack pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+       Mark a script as **Library code** from the **Call Stack** pane  
+    :::image-end:::  
+    
 ### Mark a script as Library code from Settings  
 
 Complete the following actions to mark a single script or pattern of scripts from **Settings**.  
@@ -265,12 +263,12 @@ Complete the following actions to mark a single script or pattern of scripts fro
 1.  Click **Add pattern**.  
 1.  Enter the script name or a regex pattern of script names to mark as **Library code**.  
 1.  Click **Add**.  
-
-:::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Mark a script as Library code from Settings" lightbox="../media/javascript-framework-library-code.msft.png":::
-   Mark a script as **Library code** from **Settings**  
-:::image-end:::  
-
-## Run snippets of debug code from any page  
+    
+    :::image type="complex" source="../media/javascript-framework-library-code.msft.png" alt-text="Mark a script as Library code from Settings" lightbox="../media/javascript-framework-library-code.msft.png":::
+       Mark a script as **Library code** from **Settings**  
+    :::image-end:::  
+    
+## Run snippets of debug code from any page   
 
 If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.  
 
@@ -305,14 +303,14 @@ Complete the following actions to edit a script.
 1.  Open the file in the **Editor** pane of the **Sources** panel.  
 1.  Make your changes in the **Editor** pane.  
 1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
+    
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
+       The **Editor** pane  
+    :::image-end:::  
+     
+## Disable JavaScript   
 
-:::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
-   The **Editor** pane  
-:::image-end:::  
-
-## Disable JavaScript  
-
-See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable].  
+See [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -332,9 +330,10 @@ See [Disable JavaScript With Microsoft Edge DevTools][DevToolsJavascriptDisable]
 
 <!-- links -->  
 
-[DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript With Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptGetStarted]: ./index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsJavascriptSnippets]: ./snippets.md "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript with Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptGetStarted]: ./index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptSnippets]: ./snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]

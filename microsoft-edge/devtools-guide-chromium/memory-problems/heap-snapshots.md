@@ -2,7 +2,7 @@
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 08/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# How to Record Heap Snapshots  
+# How to record heap snapshots  
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.  
 
@@ -129,7 +129,7 @@ Find leaked objects by comparing multiple snapshots to each other.  To verify th
 1.  Perform an operation \(interact with a page in some way that you believe to be causing a leak\).  
 1.  Perform a reverse operation \(do the opposite interaction and repeat it a few times\).  
 1.  Take a second heap snapshot and change the view of this one to **Comparison**, comparing it to **Snapshot 1**.  
-
+    
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Comparison view" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
@@ -167,7 +167,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > }
 > ```  
 > 
-> This example uses named functions:  
+> The followingcode snippet uses named functions.  
 > 
 > ```javascript
 > function createLargeClosure() {
