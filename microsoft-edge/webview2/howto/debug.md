@@ -96,25 +96,11 @@ Complete the following actions to debug your WebView2 application.
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  
 
-In Visual Studio Code, complete the following actions to debug your code.  
+In Visual Studio Code, complete the following actions to debug your code. 
 
-1.  Install and configure the JavaScript Debugger extension.  
-    1.  In Visual Studio Code, on the left toolbar, choose **Extensions**.  
-    1.  In the search box, enter **JavaScript Debugger**.  
-    1.  Confirm that the version of the JavaScript debugger is 2020.6.208 or later, and choose **Install**.  
-        
-        :::image type="complex" source="./media/jsdebugger.png" alt-text=" Visual Studio Code JavaScript Debugger extension" lightbox="./media/jsdebugger.png":::
-            Visual Studio Code **JavaScript Debugger** extension  
-        :::image-end:::  
-        
-    1.  In Visual Studio Code, on the left toolbar, open **Settings** by choosing the gear icon.
-    1.  In the list of options choose **Extensions** and then choose **JavaScript Debugger**.
-    1.  Choose the **Use the new in-preview JavaScript debugger for Node.js and Chrome** setting, and then close the **Settings** tab. 
-        
-        :::image type="complex" source="./media/previewbox.png" alt-text=" Visual Studio Code JavaScript Debugger extension settings" lightbox="./media/previewbox.png":::
-           Visual Studio Code **JavaScript Debugger** extension settings  
-        :::image-end:::  
-        
+> [!NOTE]
+> Requires at least build [insert build here]. 
+
 1.  Configure the JavaScript debugger.  
     1.  In Visual Studio Code, open the **Run** tab.  
         
@@ -168,11 +154,11 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     Open `launch.json` and complete the following actions to use targeted Webview debugging.  
     
-    1.  Change `useWebview` parameter value to `Advanced`.  
+    1.  Change `useWebview` parameter value to `true`.  
     1.  Add the `urlFilter` parameter.  When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.  
     
     ```json
-    "useWebview": "Advanced",
+    "useWebview": "true",
     "urlFilter": "file://C:/path/to/my/index.ts",
     
     //Other options
@@ -181,7 +167,6 @@ In Visual Studio Code, complete the following actions to debug your code.
     urlFilter="*index*"      //Match any url that contains index (ignore leading and trailing anything)  
     urlFilter="*?=debugme*"  //Match any url that has a parameter segment matching "?urlFilter=debugme" (ignoring anything leading or trailing)  
     urlFilter="*debug*"      //Match any url that contains debug anywhere in the path.
-    urlFilter="About:Blank"  //The default url all WebView instances navigate when created.  The parameter behaves like using the non-targeted debugging mode.  
     ```  
     
     Use the `?=value` syntax to debug pages displayed in WebView2 controls, because webpages ignore unrecognized parameters.  
