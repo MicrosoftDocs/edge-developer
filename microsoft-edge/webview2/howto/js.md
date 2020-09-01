@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Using JavaScript in WebView2
 
-The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native application development features and tools.  When you develop your WebView2 application, you should debug your application.  This article outlines the different tools to use to debug both your web and native code in your WebView2 application.  
+The ability to use JavaScript in a WebView2 context allows you to customize any app to fit your app's needs. In this guide we will explore some important functions as well as walk through a couple examples of how you can use these functions to empower your app. 
 
 ## Starter Code
 
