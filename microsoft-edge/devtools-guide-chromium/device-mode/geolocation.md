@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Override geolocation with Microsoft Edge DevTools   
-
-
+# Override geolocation with Microsoft Edge DevTools  
 
 Many websites take advantage of user location in order to provide a more relevant experience for the users.  For example, a weather website may show the local forecast in a user's area, after the user has granted the website permission to access the current user location.  
 
@@ -48,11 +42,9 @@ If you are building a UI that changes depending on where the user is located, yo
        Select `Tokyo` from the **Geolocation** list  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
