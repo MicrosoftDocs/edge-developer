@@ -177,4 +177,4 @@ That is everything you need to build a working Extension.  You may go ahead and 
 
 [ArchiveExtensionGettingStartedPart1]: ./extension-source/extension-getting-started-part1.zip "Completed Extension Package Source for This Part | Microsoft Docs"
 
-[TestExtensionSideload]: ./getting-started/extension-sideloading.md "Test your extension (Sideloading) | Microsoft Docs"
+[TestExtensionSideload]: ./extension-sideloading.md "Test your extension (Sideloading) | Microsoft Docs"
