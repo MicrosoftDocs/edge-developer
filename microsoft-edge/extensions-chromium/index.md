@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
 ---
 
-# Extensions overview
+# Microsoft Edge (Chromium) Extensions 
 
 An extension is a small program that you \(the developer\) may use to add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  
 
@@ -32,7 +32,7 @@ Some of the most popular browsers to build for include Safari, Firefox, Chrome, 
 | Chrome | Yes | [developer.chrome.com/extensions][ChromeDeveloperExtensions] |  
 | Opera | Yes | [dev.opera.com/extensions][OperaDevExtensions] |  
 | Brave | Yes | Uses [Chrome Web Store][GoogleChromeWebstoreCategoryExtensions] |  
-| Microsoft Edge (Chromium) | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
+| new Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
 
 > [!IMPORTANT]
 > Many of the tutorials of the sites use browser-specific APIs that may not match the browser for which you are developing.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Only some less common APIs may be strictly browser-specific.  For links to the tutorials, see [See also](#see-also).  

@@ -15,15 +15,17 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 ## Overview  
 
-In this tutorial, the goal is to build a very simple Edge Chromium Extension starting with an empty directory. We will build a simple extension which pops up NASA picture of the day. The goal for this Extension is to complete the following tasks.  
+The goal for this tutorial is to build a very simple Edge Chromium extension starting with an empty directory. We will build a simple extension which pops up NASA picture of the day. 
+In this tutorial, you will learn how to create a simple extension with the following tasks.
 
-*   Create icons for the Extension that may be used in multiple places and in different sizes  
-*   Create a simple `manifest.json` file  
-*   Display a launch icon that when selected displays a pop-up window containing the NASA picture of the day  
+*   Create `manifest.json` file
+*   Extension icons setup 
+*   Adding a default pop-up dialog 
 
-## The manifest file basics  
 
-Every Extension package must have a `manifest.json` file at the root.  You should think of this as the blueprint for the Extension.  It tells the browser engine what version of the Extension API the Extension expects, the name and description of the Extension, and lots of other details, many of which are discussed in this multi-part Extension Getting Started guide.  
+### Create `manifest.json` file
+
+Every extension package must have a `manifest.json` file at the root.  You should think of this as the blueprint for the extension.  It tells the browser engine what version of the extension API the extension expects, the name and description of the extension, and lots of other details, many of which are discussed in this multi-part Extension Getting Started guide.  
 
 Below is the simple  `manifest.json`  
 
@@ -36,7 +38,7 @@ Below is the simple  `manifest.json`
 }
 ```  
 
-## Extension icons setup  
+### Extension icons setup  
 
 Next add some icons to `manifest.json` file \(and create a new `/icons` directory with the icons files\).  The icons are used for the background image of the button the user selects to launch the extension \(if there is one\), and other places that are appropriate.  
 
@@ -82,7 +84,7 @@ Your updated `manifest.json` file should appear as follows.
 > [!NOTE]
 > The icon `png` files listed previous code are available in the zip download mentioned at the top of this page.  
 
-## Adding a default pop-up dialog  
+### Adding a default pop-up dialog  
 
 Now, create an `HTML` file that is automatically run when the user selects on the extension icon.  
 

@@ -15,15 +15,15 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 ## Overview  
 
-In part 2, you learn to update your pop-up menu to not show the static stars image you had before, but to replace that image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the Extension, to the content page.  That image, is inserted into the active browser tab.  
+This tutorial covers the following extension technologies.
+*   Injecting JavaScript libraries into extension  
+*   Exposing extension assets to browser tabs  
+*   Including content pages in existing browser tabs  
+*   Having content pages listen for messages from pop-ups and respond  
 
-*   Extension technologies covered in this guide  
-    *   Injecting JavaScript libraries into Extension  
-    *   Exposing Extension assets to browser tabs  
-    *   Including content pages in existing browser tabs  
-    *   Having content pages listen for messages from pop-ups and respond  
+You will learn to update your pop-up menu to replace your static starts image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the extension, to the content page.  That image, is inserted into the active browser tab. Follow the below steps for further details.
 
-## Remove the image from the pop-up and replace it with a button  
+1.  Remove the image from the pop-up and replace it with a button  
 
 First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.  
 
@@ -54,7 +54,7 @@ First, update your `popup.html` file with some straight forward markup that disp
 </html>
 ```  
 
-After updating your Extension and selecting the Extension launch icon, the have the following pop-up includes a display button.  
+After updating your extension and selecting the extension launch icon, the have the following pop-up includes a display button.  
 
 :::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after pressing the Extension icon":::
    popup.html display after pressing the Extension icon
@@ -62,13 +62,13 @@ After updating your Extension and selecting the Extension launch icon, the have 
 
 <!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
 
-## Updated strategy to display image at the top of the browser tab  
+2.  Update strategy to display image at the top of the browser tab  
 
 After adding the button, the next task is to make it bring up the `images/stars.jpeg` image file at the top of the active tab page.  
 
-Remember, each tab page has a unique own thread and the Extension has a separate thread.  So, you must first create a content script and inject that content script into the tab page.  Once you do that, you must send a message from your pop-up to that content script running on the tab page telling that content script what image to show, and how to show it.  
+Remember, each tab page has a unique own thread and the extension has a separate thread.  So, you must first create a content script and inject that content script into the tab page.  Once you do that, you must send a message from your pop-up to that content script running on the tab page telling that content script what image to show, and how to show it.  
 
-## Creating the pop-up JavaScript to send a message  
+3. Create the pop-up JavaScript to send a message  
 
 First, create `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button.  
 
@@ -114,7 +114,7 @@ if (sendMessageId) {
 }
 ```  
 
-## Making your stars.jpeg available from any browser tab  
+4. Make your stars.jpeg available from any browser tab  
 
 You are probably wondering why, when you pass the `images/stars.jpeg` must you use the `chrome.extension.getURL` chrome Extension API instead of just passing in the relative URL without the extra prefix like in the previous section.  By the way, that extra prefix, returned by `getUrl` with the image attached looks something like the following.  
 
@@ -134,7 +134,7 @@ To do that, you must add another entry in the `manifest.json` file.  You must de
 
 You have now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you have not created and injected that content page.  Do that now.  
 
-## Updating your manifest.json for content and web access  
+5.  Update your manifest.json for content and web access  
 
 The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows.  
 
@@ -143,7 +143,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
     "name": "NASA Picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium Extension to show the NASA Picture of the Day.",
+    "description": "A Chromium extension to show the NASA Picture of the Day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",
@@ -169,13 +169,13 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 
 The section you added is `content_scripts`.  The attribute `matches` set to `<all_urls>` means that all the files mention in the **content_scripts** section is injected into all browser tab pages when each are loaded.  The allowable types of files that are able to be injected here are javascript and css.  You also added `libjquery.min.js`.  You are able to include that from the download mentioned at the top of the section.  
 
-## Adding jQuery and understanding the associated thread  
+6. Add jQuery and understanding the associated thread  
 
 In the content scripts you are injecting, plan on using jQuery \(`$`\).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in an individual sandbox of sorts, which means that the jQuery injected into the `popup.js` page does not share with the content.  
 
 Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content injected does not have access to that.  That injected JavaScript just has access to the actual DOM loaded in that browser tab.  
 
-## Adding the content script message listener  
+7. Add the content script message listener  
 
 Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section.  
 
@@ -210,7 +210,7 @@ When an event is processed by the listener, the function that is the first param
 *   The second, appends an `img` element right below the `body` of your browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.  
 *   The third adds a `click` event that covers the entire image allowing the user to select any place on the image and that image is be removed from the page \(along with it is event listener\).  
 
-## Adding functionality to remove the displayed image when selected  
+8. Add functionality to remove the displayed image when selected  
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.  
 

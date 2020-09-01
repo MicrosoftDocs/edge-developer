@@ -9,7 +9,7 @@ ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# Test your extension (Extension sideloading)
+# Sideload an extension
 
 
 The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your extensions while you are developing. This article explains how to load the extension \(also called sideloading\) into the Microsoft Edge \(Chromium\) browser to test it.
