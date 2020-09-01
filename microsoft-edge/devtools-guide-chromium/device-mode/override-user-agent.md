@@ -39,7 +39,7 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
     :::image-end:::  
     
 1.  Select a user agent string from the list, or enter your own custom string.  
-
+    
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
