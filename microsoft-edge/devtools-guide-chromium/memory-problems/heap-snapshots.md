@@ -1,8 +1,9 @@
 ---
+description: Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

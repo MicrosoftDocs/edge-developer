@@ -3,7 +3,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 08/20/2020
+ms.date: 09/01/2020 
 ---
 Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
