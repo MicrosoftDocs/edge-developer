@@ -1,4 +1,5 @@
 ---
+description: Host a site on a development machine web server, and then access the content from an Android device.
 
 title: Access Local Servers
 author: MSEdgeTeam

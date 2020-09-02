@@ -1,4 +1,5 @@
 ---
+description: Learn how to save changes made within DevTools to disk.
 title: Edit files with Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel

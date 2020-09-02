@@ -1,4 +1,5 @@
 ---
+description: The canonical documentation for Microsoft Edge DevTools keyboard shortcuts.
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -1,4 +1,5 @@
 ---
+description: Use the DevTools in Windows high contrast mode, match keyboard shortcuts in the DevTools to VS Code, and more.
 title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel

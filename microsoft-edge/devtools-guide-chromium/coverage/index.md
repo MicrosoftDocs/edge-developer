@@ -1,4 +1,5 @@
 ---
+description: How to find and analyze unused JavaScript and CSS code in Microsoft Edge DevTools.
 title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

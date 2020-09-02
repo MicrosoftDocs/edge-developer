@@ -1,8 +1,9 @@
 ---
+description: Enable "Mark content scripts as Library code" from Settings > Framework Library Code.
 title: Mark Content Scripts as Library Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,17 +22,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Mark content scripts as Library code   
-
-
+# Mark content scripts as Library code  
 
 When using the **Sources** panel of Microsoft Edge DevTools to [step through code][DevToolsJavascriptStepThroughCode], sometimes you pause on code that you do not recognize.  You probably paused on code for one of the Microsoft Edge Extensions that you installed.  Complete the following steps to not pause on extension code.  
 
-1.  Open DevTools, select **Customize and control DevTools** \(`...`\) and click **Settings**.  You may also open **Settings** by pressing `F1`.  
+1.  Open DevTools, select **Customize and control DevTools** \(`...`\) and choose **Settings**.  You may also open **Settings** by selecting `F1`.  
 
 1.  Select the **Library code** tab which opens the **Framework Library Code** section of **Settings**.  
 1.  Enable the **Mark content scripts as Library code** checkbox.  
@@ -40,11 +35,9 @@ When using the **Sources** panel of Microsoft Edge DevTools to [step through cod
        Enable the **Mark content scripts as Library code** checkbox  
     :::image-end:::  
     
-<!--  
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
@@ -52,7 +45,7 @@ When using the **Sources** panel of Microsoft Edge DevTools to [step through cod
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools & Lighthouse\).  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/guides/blackbox-chrome-extension-scripts) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  

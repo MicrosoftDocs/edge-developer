@@ -1,4 +1,5 @@
 ---
+description: A guide on how to open the Command Menu, run commands, see other actions, and more.
 title: Run Commands With The Microsoft Edge DevTools Command Menu
 author: MSEdgeTeam
 ms.author: msedgedevrel

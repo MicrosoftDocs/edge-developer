@@ -1,4 +1,5 @@
 ---
+description: Learn how to evaluate runtime performance in Microsoft Edge DevTools.
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel

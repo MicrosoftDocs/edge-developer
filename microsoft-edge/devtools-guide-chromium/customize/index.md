@@ -1,4 +1,5 @@
 ---
+description: A list of ways to customize Microsoft Edge DevTools
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

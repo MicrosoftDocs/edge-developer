@@ -1,4 +1,5 @@
 ---
+description: Inspect and modify animations with the Microsoft Edge DevTools  Animation Inspector.
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel

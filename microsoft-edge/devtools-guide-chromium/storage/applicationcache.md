@@ -1,4 +1,5 @@
 ---
+description: How to view Application Cache data from the Application panel of Microsoft Edge DevTools.
 title: View Application Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

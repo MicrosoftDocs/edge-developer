@@ -1,4 +1,5 @@
 ---
+description: Identify expensive functions using the Microsoft Edge DevTools Memory panel.
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,19 +22,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Speed up JavaScript runtime   
-
-
-
+# Speed up JavaScript runtime  
 
 Identify expensive functions using the **Memory** panel.  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sampling Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Sampling Profiles  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
+   Sample Profiles  
 :::image-end:::  
 
 ### Summary  
@@ -60,7 +54,7 @@ When you finish recording, DevTools automatically populates the **Memory** panel
 
 The default view is **Heavy \(Bottom Up\)**.  This view enables you to see which functions had the most impact on performance and examine the calling paths to those functions.  
 
-### Change sort order   
+### Change sort order  
 
 To change the sorting order, select the dropdown menu next to the **focus selected function** \(![focus selected function][ImageFocusIcon]\) icon and then choose one of the following options.
 
@@ -82,13 +76,13 @@ To change the sorting order, select the dropdown menu next to the **focus select
    Tree chart  
 :::image-end:::  
 
-### Exclude functions   
+### Exclude functions  
 
-To exclude a function from your Sampling Profile, select it to select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) icon.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
+To exclude a function from your Sampling Profile, select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
 
-Select the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) icon to restore all excluded functions back into the recording.  
+Select the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) button to restore all excluded functions back into the recording.  
 
-## View Sampling Profile as Chart   
+## View Sampling Profile as Chart  
 
 The Chart view provides a visual representation of the Sampling Profile over time.  
 
@@ -100,7 +94,7 @@ After you [record a Sampling Profile](#record-a-sampling-profile), view the reco
 
 The flame chart is split into two parts.  
 
-| | Part | Description |  
+| index | Part | Description |  
 | --- |:--- |:--- |  
 | 1 | Overview | A birds-eye view of the entire recording.  The height of the bars correspond to the depth of the call stack.  So, the higher the bar, the deeper the call stack.  |  
 | 2 | Call Stacks | This is an in-depth view of the functions that were called during the recording.  The horizontal axis is time and vertical axis is the call stack.  The stacks are organized top-down.  So, the function on top called the one below it, and so on.  |  
@@ -113,7 +107,7 @@ Functions are colored randomly.  There is no correlation to the colors used in t
 
 A tall call stack is not necessarily significant, it just means that a lot of functions were called.  But a wide bar means that a function took a long time to complete.  These are candidates for optimization.  
 
-### Zoom in on specific parts of recording   
+### Zoom in on specific parts of recording  
 
 Select, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.  
 
@@ -121,7 +115,7 @@ Select, hold, and drag your mouse left and right across the overview to zoom in 
    Chart zoomed  
 :::image-end:::  
 
-### View function details   
+### View function details  
 
 Select on a function to view the definition in the **Sources** panel.  
 
@@ -137,15 +131,13 @@ Hover over a function to display the name and timing data.  The following inform
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->  
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->  
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="Viewing functions details in chart" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   Viewing functions details in chart  
+:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="View functions details in chart" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
+   View functions details in chart  
 :::image-end:::  
 
-<!--  
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

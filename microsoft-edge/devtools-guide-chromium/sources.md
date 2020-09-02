@@ -1,4 +1,5 @@
 ---
+description: View and edit files, create Snippets, debug JavaScript, and set up Workspaces in the Sources panel of Microsoft Edge DevTools.
 title: Sources Panel Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -1,4 +1,5 @@
 ---
+description: Learn how to run JavaScript in the Console.
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel

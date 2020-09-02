@@ -1,4 +1,5 @@
 ---
+description: Open the Network conditions tab, disable Select automatically, and choose from the list or enter a custom string.
 title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Override the user agent string from Microsoft Edge DevTools   
-
-
+# Override the user agent string from Microsoft Edge DevTools  
 
 To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:  
 
@@ -45,12 +40,10 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
     :::image-end:::  
     
 1.  Select a user agent string from the list, or enter your own custom string.  
-    
-<!--  
-## Feedback   
 
+## Getting in touch with the Microsoft Edge DevTools team  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

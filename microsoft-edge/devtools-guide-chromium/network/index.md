@@ -1,4 +1,5 @@
 ---
+description: A tutorial on the most popular network-related features in Microsoft Edge DevTools.  
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

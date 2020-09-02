@@ -1,4 +1,5 @@
 ---
+description: Use Allocation instrumentation on timeline to find objects that are not being properly garbage collected, and continue to retain memory.
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# How to use Allocation instrumentation on timeline  
-
-
+# How to use Allocation instrumentation on Timeline  
 
 Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.  
 
@@ -38,7 +33,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 <!--todo: add profile memory problems (heap profiler) section when available  -->  
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->  
 
-**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms!\) and one final snapshot at the end of the recording.  
+**Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording \(as frequently as every 50 ms\) and one final snapshot at the end of the recording.  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Allocation instrumentation on timeline**  
@@ -49,7 +44,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 
 ## Enable Allocation Instrumentation on Timeline  
 
-Follow these steps to begin using **Allocation instrumentation on timeline**.  
+Complete the following actions to begin using **Allocation instrumentation on timeline**.  
 
 1.  [Open the DevTools][DevtoolsOpenIndex].  
 1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.  
@@ -80,15 +75,13 @@ You are able to use the sliders in the timeline above to zoom into that particul
 
 Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.  
 
-## View memory allocation by function   
+## View memory allocation by function  
 
-You are able to view memory allocation by JavaScript function.  See [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction] for more information.  
+You are able to view memory allocation by JavaScript function.  For more information, see [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-<!--
-## Feedback   
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

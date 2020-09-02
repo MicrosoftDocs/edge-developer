@@ -1,4 +1,5 @@
 ---
+description: Learn how to use Microsoft Edge DevTools to find ways to make your websites load faster.
 title: Optimize Website Speed With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -1,4 +1,5 @@
 ---
+description: Use the Security Panel to make sure that a page is fully protected by HTTPS.
 title: Understand Security Issues With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

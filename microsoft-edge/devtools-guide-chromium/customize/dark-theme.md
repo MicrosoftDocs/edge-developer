@@ -1,4 +1,5 @@
 ---
+description: How to turn on the dark theme in Microsoft Edge DevTools.
 title: Enable Dark Theme In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

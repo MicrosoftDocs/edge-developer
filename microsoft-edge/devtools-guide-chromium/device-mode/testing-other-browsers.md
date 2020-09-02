@@ -1,4 +1,5 @@
 ---
+description: Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel

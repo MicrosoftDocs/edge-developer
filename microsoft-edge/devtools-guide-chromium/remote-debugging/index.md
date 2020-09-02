@@ -1,4 +1,5 @@
 ---
+description: Remote debug live content on an Android device from a Windows or macOS computer.
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel

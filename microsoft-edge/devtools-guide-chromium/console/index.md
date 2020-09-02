@@ -1,4 +1,5 @@
 ---
+description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
 title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel

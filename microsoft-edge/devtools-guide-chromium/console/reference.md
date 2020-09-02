@@ -1,4 +1,5 @@
 ---
+description: A comprehensive reference on every feature and behavior related to the Console UI in Microsoft Edge DevTools.
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel

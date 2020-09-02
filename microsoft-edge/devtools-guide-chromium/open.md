@@ -1,4 +1,5 @@
 ---
+description: All of the ways that you open the Microsoft Edge DevTools.
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

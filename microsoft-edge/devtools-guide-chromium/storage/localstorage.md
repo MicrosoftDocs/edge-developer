@@ -1,4 +1,5 @@
 ---
+description: How to view and edit localStorage with the Local Storage pane and the Console.
 title: View And Edit Local Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

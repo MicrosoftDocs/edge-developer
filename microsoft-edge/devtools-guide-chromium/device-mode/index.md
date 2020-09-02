@@ -1,4 +1,5 @@
 ---
+description: Use virtual devices in Microsoft Edge to build mobile-first websites.
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

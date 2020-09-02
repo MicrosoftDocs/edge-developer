@@ -1,4 +1,5 @@
 ---
+description: Use the Console API to write messages to the Console.
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel

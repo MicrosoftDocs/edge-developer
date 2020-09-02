@@ -1,4 +1,5 @@
 ---
+description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel

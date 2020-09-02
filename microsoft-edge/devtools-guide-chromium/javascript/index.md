@@ -1,4 +1,5 @@
 ---
+description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript bugs.
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

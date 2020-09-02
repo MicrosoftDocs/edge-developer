@@ -1,4 +1,5 @@
 ---
+description:  A reference of convenience commands available in the Microsoft Edge DevTools Console.
 title:  Console Utilities API Reference
 author:  MSEdgeTeam
 ms.author:  msedgedevrel

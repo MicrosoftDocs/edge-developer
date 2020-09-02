@@ -1,4 +1,5 @@
 ---
+description: How to view Web SQL data from the Application panel of Microsoft Edge DevTools.
 title: View Web SQL Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

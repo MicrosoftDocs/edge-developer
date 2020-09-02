@@ -1,8 +1,9 @@
 ---
+description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -231,11 +232,14 @@ The audit report is organized into sections that correspond with each of the aud
 
 To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perform An Audit** button.  
 
+## Getting in touch with the Microsoft Edge DevTools team
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
-<!--[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  -->  
-
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  

@@ -1,4 +1,5 @@
 ---
+description: Get Started with CSS
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel

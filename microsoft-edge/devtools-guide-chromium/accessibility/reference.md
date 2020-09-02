@@ -1,4 +1,5 @@
 ---
+description: A comprehensive reference of accessibility features in Microsoft Edge DevTools.
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Accessibility Reference   
-
-
+# Accessibility reference  
 
 This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.  It is intended for web developers who:  
 
@@ -38,7 +33,7 @@ The purpose of this reference is to help you discover all of the tools available
 
 See [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation] if you are looking for help on navigating DevTools with an assistive technology like a screen reader.  
 
-## Overview of accessibility features in Microsoft Edge DevTools   
+## Overview of accessibility features in Microsoft Edge DevTools  
 
 This section explains how DevTools fits into your overall accessibility toolkit.  
 
@@ -51,7 +46,7 @@ In general, DevTools should help you fix errors related to question #2, because 
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Audit the accessibility of a page   
+## Audit the accessibility of a page  
 
 > [!NOTE]
 > The **Audits** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
@@ -59,8 +54,8 @@ In general, DevTools should help you fix errors related to question #2, because 
 In general, use the Audits panel to determine if:  
 
 *   A page is properly marked up for screen readers.  
-*   The text elements on a page have sufficient contrast ratios. See also [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
-    
+*   The text elements on a page have sufficient contrast ratios.  See [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+
 To audit a page:  
 
 1.  Go to the URL that you want to audit.  
@@ -89,13 +84,13 @@ To audit a page:
        More information about an audit  
     :::image-end:::  
     
-1.  Click **Learn More** to view the documentation of that audit.
+1.  Click **Learn More** to view the documentation of that audit.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an audit" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        View the documentation of an audit  
     :::image-end:::  
     
-### See also: aXe extension   
+### See also: aXe extension  
 
 You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Audits** panel.  
 The aXe extension generally provides the same information, since it is the underlying engine that powers the Audits panel.  The aXe extension has a different UI and describes audits slightly differently.  
@@ -105,7 +100,7 @@ One advantage that the aXe extension has over the **Audits** panel is that it en
    The aXe extension  
 :::image-end:::  
 
-## The Accessibility pane   
+## The Accessibility pane  
 
 The **Accessibility** pane is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
 
@@ -113,13 +108,13 @@ To open the **Accessibility** pane:
 
 1.  Click the **Elements** tab.  
 1.  In the **DOM Tree**, select the element which you want to inspect.  
-1.  Click the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** ![More Tabs][ImageMoreTabsIcon] button.  
+1.  Click the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility pane" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspect the `h1` element of the DevTools homepage in the **Accessibility** pane  
 :::image-end:::  
 
-### View the position of an element in the accessibility tree   
+### View the position of an element in the accessibility tree  
 
 The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
 
@@ -129,7 +124,7 @@ Inspect the position of an element in the accessibility tree from the [Accessibi
    The **Accessibility Tree** section  
 :::image-end:::  
 
-### View the ARIA attributes of an element   
+### View the ARIA attributes of an element  
 
 ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
 
@@ -139,7 +134,7 @@ View the ARIA attributes of an element in the [Accessibility pane](#the-accessib
    The **ARIA Attributes** section  
 :::image-end:::  
 
-### View the computed accessibility properties of an element   
+### View the computed accessibility properties of an element  
 
 > [!NOTE]
 > If you are looking for computed CSS properties, see the [Computed tab][DevtoolsCssReferenceViewActuallyAppliedElements].  
@@ -152,9 +147,10 @@ View the computed accessibility properties of an element in the [Accessibility p
    The **Computed Properties** section of the **Accessibility** pane  
 :::image-end:::  
 
-## View the contrast ratio of a text element in the Color Picker   
+## View the contrast ratio of a text element in the Color Picker  
 
 Some people with low vision do not see areas as very bright or very dark.  Everything tends to appear at about the same brightness, which makes it hard to distinguish outlines and edges.  
+
 Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then these low vision users may literally experience your site as a blank screen.  
 
 The Color Picker helps you verify that your text meets recommended contrast ratio levels:  
@@ -162,8 +158,8 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 1.  Click the **Elements** tab.  
 1.  In the **DOM Tree**, select the text element that you want to inspect.  
     
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecting a paragraph in the DOM Tree" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Inspecting a paragraph in the DOM Tree  
+    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspect a paragraph in the DOM Tree" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
+       Inspect a paragraph in the **DOM Tree**  
     :::image-end:::  
     
 1.  In the **Styles** pane, click the color square next to the `color` value of the element.  
@@ -172,7 +168,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
        The `color` property of the element  
     :::image-end:::  
     
-1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
+1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
@@ -181,12 +177,12 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 1.  Click the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The Contrast Ratio Line in the visual picker" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       The Contrast Ratio Line in the visual picker  
+       The **Contrast Ratio** Line in the visual picker  
     :::image-end:::  
     
 <!--## Feedback   -->  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
@@ -194,7 +190,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 
 <!-- links -->  
 
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
 
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  

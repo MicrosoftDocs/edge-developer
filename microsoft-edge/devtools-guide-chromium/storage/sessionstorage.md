@@ -1,4 +1,5 @@
 ---
+description: How to view and edit sessionStorage with the Session Storage pane and the Console.
 title: View And Edit Session Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -1,4 +1,5 @@
 ---
+description: If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
 title: Watch JavaScript Expression Values In Real-Time With Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel

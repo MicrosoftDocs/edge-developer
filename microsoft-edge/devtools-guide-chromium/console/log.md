@@ -1,4 +1,5 @@
 ---
+description: Learn how to log messages to the Console.
 title: Get Started With Logging Messages In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel

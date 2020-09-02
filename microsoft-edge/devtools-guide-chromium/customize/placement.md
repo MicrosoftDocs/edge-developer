@@ -1,4 +1,5 @@
 ---
+description: How to move Microsoft Edge DevTools to the bottom or left of your viewport, or to a separate window.
 title: Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -1,4 +1,5 @@
 ---
+description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel

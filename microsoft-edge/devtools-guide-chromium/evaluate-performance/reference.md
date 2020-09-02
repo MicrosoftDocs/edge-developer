@@ -1,4 +1,5 @@
 ---
+description: A reference on all the ways to record and analyze performance in Microsoft Edge DevTools.
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel

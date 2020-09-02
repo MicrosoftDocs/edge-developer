@@ -1,4 +1,5 @@
 ---
+description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -1,4 +1,5 @@
 ---
+description: Organize resources by frame, domain, type, or other criteria.
 title: View Page Resources With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
