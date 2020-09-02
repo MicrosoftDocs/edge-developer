@@ -1,8 +1,9 @@
 ---
+description: How to view and change IndexedDB data with the Application panel and Snippets.
 title: View And Change IndexedDB Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

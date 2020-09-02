@@ -1,8 +1,9 @@
 ---
+description: Use virtual devices in Device Mode for Microsoft Edge to build mobile-first websites.
 title: Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
