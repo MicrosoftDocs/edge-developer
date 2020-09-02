@@ -1,8 +1,9 @@
 ---
+description: Keep your client-side code readable and debuggable even after you combine, minify, or compile it.
 title: Map Preprocessed Code to Source Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
