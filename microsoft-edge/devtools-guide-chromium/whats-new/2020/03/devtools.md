@@ -1,5 +1,5 @@
 ---
-description: Remotely debug Microsoft Edge on Windows 10 devices, new ways to access Settings, and more.
+description: Emulate color vision deficiencies, Dock To Left in the Command Menu, and more.
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel

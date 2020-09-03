@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2020
+ms.date: 08/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -42,6 +42,7 @@ The following sections describe the new experimental features that are available
 | Experimental feature | Microsoft Edge version |  
 |:--- |:--- |  
 | [Enable custom keyboard shortcuts settings tab](#enable-custom-keyboard-shortcuts-settings-tab) | 84 or later |
+| [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode) | 84 or later |  
 | [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later |  
@@ -59,6 +60,46 @@ Once you have enabled the experiment, open [DevTools Settings][DevToolsCustomize
 :::image-end:::  
 
 For example, on Windows the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualstudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, the same shortcut in the DevTools is `F8`.  With the **Visual Studio Code** preset, the shortcut is also `F5`.  
+
+### Emulation: Support dual screen mode  
+
+Provides additional features for emulating 2 new dual-screen and foldable devices: [Surface Duo][SurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  When emulating these devices, toggle between a single-screen or folded posture and a dual-screen or unfolded posture.  [Enable experimental APIs](#enable-experimental-apis) in Microsoft Edge to enhance your website or app for these devices, using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
+
+<!-- This image was taken in Chrome Canary since we don't yet have an Edge Canary that has Stan's changes -->  
+
+:::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Emulating Surface Duo in Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
+   Emulating Surface Duo in Microsoft Edge  
+:::image-end:::  
+
+#### Enable experimental APIs  
+
+In addition to [enabling this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools, open a new tab in Microsoft Edge and navigate to `edge://flags`.  In the **Search flags** textbox, enter **Experimental Web Platform features**, select **Disabled**, and set this flag to **Enabled**.  Restart Microsoft Edge.  You are now able to enhance your website or app for dual-screen and foldable devices using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
+
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Enabling the Experimental Web Platform features flag" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+   Enabling the Experimental Web Platform features flag  
+:::image-end:::  
+
+> [!NOTE]
+> If you are using [CSS media queries or the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables] to enhance your website or app for the [Surface Duo][SurfaceDevicesDuo], you must also enable the **Experimental Web Platform features** flag in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on your [Surface Duo][SurfaceDevicesDuo] device.
+> 
+> If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge][MicrosoftEdge] and disabled in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge will not match with the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo]. Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][MicrosoftEdge].  
+
+#### Testing on foldable and dual-screen devices  
+
+When emulating the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the *seam* (the space between the two screens) is drawn over your website or app. This is an accurate representation of the way your website or app will render in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo] so you may need to adjust your content to display better along the seam. [Learn about adapting your website or app to the seam in our Surface Duo documentation][DualScreenIntroductionHowWorkSeam].  
+
+The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation.  Combine this feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, these features enable testing your website or app in all four possible postures and orientations.  
+
+:::image type="complex" source="./media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matrix of postures and orientations for dual-screen and foldable devices" lightbox="./media/experiments-dual-screen-emulation-rotate-span.msft.png":::
+   Matrix of postures and orientations for dual-screen and foldable devices  
+:::image-end:::  
+
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is enabled, the icon is highlighted. If the flag is disabled, the icon is not highlighted.  Click the icon to navigate to `edge://flags` and enable or disable the flag.  
+
+#### Additional resources  
+
+*   [More info on developing dual-screen web experiences in Surface Duo documentation][DualScreenWebIndex]   
+*   [Install the Surface Duo emulator][DualScreenAndroidGetDuoSdk], a different emulator from the one in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio]   
 
 ### Enable new CSS grid debugging features  
 
@@ -106,7 +147,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the Netw
    **Network Console** in the **Console** drawer  
 :::image-end:::  
 
-<!--Available in Microsoft Edge version 85 and later.  --> 
+<!--Available in Microsoft Edge version 85 and later.  -->  
 
 ### Enable Source Order Viewer  
 
@@ -134,23 +175,46 @@ After enabling the experiment, ensure you restart the DevTools.  To use Source O
 To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
 *   Send your feedback using the **Send Feedback** icon in the DevTools  
-*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]   
+*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
 
 :::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 
+<!-- image links -->  
+
+[ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
+[ImageSpanIcon]: ./media/span-dark-icon.msft.png  
+[ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+
 <!-- links -->  
 
 [Devtools3dViewIndex]: ./3d-view/index.md "3D View | Microsoft Docs"  
-[DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsCustomizeSettings]: ./customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ./device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
-[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
+[DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
+[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo emulator | Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Introduction to dual-screen devices | Microsoft Docs"  
+
+[MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
+
+[SurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Surface Duo | Microsoft Surface"  
 
 [VisualstudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Code"  
 [VisualstudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Microsoft Visual Studio Code"  
 
-[WebhintMain]: https://webhint.io "webhint" 
+[GitHubMicrosoftedgeMsedgeexplainerFoldables]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md "Web Platform Primitives for Enlightened Experiences on Foldable Devices | GitHub"  
+
+[AndroidDeveloperStudio]: https://developer.android.com/studio/ "Android Studio"  
+
+[GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge | Google Play"  
+
+[SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "Galaxy Fold | Samsung"  
+
+[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
+
+[WebhintMain]: https://webhint.io "webhint"  
