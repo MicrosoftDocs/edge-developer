@@ -19,7 +19,7 @@ IE mode is a mechanism by which enterprises may specify a set of web sites that,
 
 Within IE mode, the rendering process is entirely based in Internet Explorer 11.  The Microsoft Edge \(Chromium\) manager process manages the lifetime of the rendering process, but it is constrained to the lifetime of the tab on a given site or application.  When a tab is rendering in IE mode, a badge appears in the address bar for the specific tab:  
 
-:::image type="complex" source="./media/ie-mode-badge.png" alt-text="IE mode badge in the address bar" lightbox="./media/ie-mode-badge.png":::
+:::image type="complex" source="./media/ie-mode-badge.msft.png" alt-text="IE mode badge in the address bar" lightbox="./media/ie-mode-badge.msft.png":::
    IE mode badge in the address bar  
 :::image-end:::  
 
@@ -29,7 +29,7 @@ IE mode is currently available on Windows 10 Version 1903 \(May 2019 Update\) bu
 
 If you are trying to view the document mode of a web site in IE mode, click the badge in the address bar.  
 
-:::image type="complex" source="./media/ie-mode-badge-doc-mode.png" alt-text="View document mode using IE mode badge" lightbox="./media/ie-mode-badge-doc-mode.png":::
+:::image type="complex" source="./media/ie-mode-badge-doc-mode.msft.png" alt-text="View document mode using IE mode badge" lightbox="./media/ie-mode-badge-doc-mode.msft.png":::
    View document mode using IE mode badge  
 :::image-end:::  
 
@@ -37,7 +37,7 @@ While on a tab in IE mode, the DevTools do not work.  Pressing `F12` or `Ctrl`+`
 
 The result is because a number of components in the DevTools \(like the Network and Performance tools\) would break when the rendering engine switches from Chromium to Internet Explorer 11 in IE mode.  To provide feedback, click the `:)` icon.  
 
-:::image type="complex" source="./media/ie-mode-devtools.png" alt-text="DevTools launched in IE mode" lightbox="./media/ie-mode-devtools.png":::
+:::image type="complex" source="./media/ie-mode-devtools.msft.png" alt-text="DevTools launched in IE mode" lightbox="./media/ie-mode-devtools.msft.png":::
    DevTools launched in IE mode  
 :::image-end:::  
 

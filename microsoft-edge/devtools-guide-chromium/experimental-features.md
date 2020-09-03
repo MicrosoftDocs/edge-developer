@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/02/2020
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -22,10 +22,10 @@ Use the following steps to turn on \(or off\) experimental features in Microsoft
 1.  [Open DevTools][DevtoolsOpen].  
      *   Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
-    *   Select `Shift`+`?`.  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
-1.  On the left side of the **Settings** pane, select the **Experiments** section.  
+    *   Select `Shift`+`?`.  For more information, go to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+1.  On the left side of the **Settings** pane, choose the **Experiments** section.  
     
-    :::image type="complex" source="./media/experiments-devtools.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-devtools.png":::
+    :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-devtools.msft.png":::
        List of experiments in DevTools Settings  
     :::image-end:::  
     
@@ -55,7 +55,7 @@ Provides a new **Shortcuts** page in [DevTools Settings][DevToolsCustomizeSettin
 
 Once you have enabled the experiment, open [DevTools Settings][DevToolsCustomizeSettings] again using select `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
 
-:::image type="complex" source="./media/experiments-keyboard-shortcut.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="./media/experiments-keyboard-shortcut.png":::
+:::image type="complex" source="./media/experiments-keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="./media/experiments-keyboard-shortcut.msft.png":::
    Match keyboard shortcuts in the DevTools to Visual Studio Code  
 :::image-end:::  
 
@@ -67,16 +67,16 @@ Provides additional features for emulating 2 new dual-screen and foldable device
 
 <!-- This image was taken in Chrome Canary since we don't yet have an Edge Canary that has Stan's changes -->  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Emulating Surface Duo in Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
-   Emulating Surface Duo in Microsoft Edge  
+:::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Emulate Surface Duo in Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
+   Emulate Surface Duo in Microsoft Edge  
 :::image-end:::  
 
 #### Enable experimental APIs  
 
 In addition to [enabling this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools, open a new tab in Microsoft Edge and navigate to `edge://flags`.  In the **Search flags** textbox, enter **Experimental Web Platform features**, select **Disabled**, and set this flag to **Enabled**.  Restart Microsoft Edge.  You are now able to enhance your website or app for dual-screen and foldable devices using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
 
-:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Enabling the Experimental Web Platform features flag" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
-   Enabling the Experimental Web Platform features flag  
+:::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Enable the Experimental Web Platform features flag" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
+   Enable the Experimental Web Platform features flag  
 :::image-end:::  
 
 > [!NOTE]
@@ -86,7 +86,7 @@ In addition to [enabling this experiment](#turn-on-experimental-features) in the
 
 #### Testing on foldable and dual-screen devices  
 
-When emulating the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the *seam* (the space between the two screens) is drawn over your website or app. This is an accurate representation of the way your website or app will render in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo] so you may need to adjust your content to display better along the seam. [Learn about adapting your website or app to the seam in our Surface Duo documentation][DualScreenIntroductionHowWorkSeam].  
+When emulating the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the **seam** \(the space between the two screens\) is drawn over your website or app. This is an accurate representation of the way your website or app renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo], so you may need to adjust your content to display better along the seam. [Learn about adapting your website or app to the seam in the Surface Duo documentation][DualScreenIntroductionHowWorkSeam].  
 
 The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation.  Combine this feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, these features enable testing your website or app in all four possible postures and orientations.  
 
@@ -98,14 +98,14 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 
 #### Additional resources  
 
-*   [More info on developing dual-screen web experiences in Surface Duo documentation][DualScreenWebIndex]   
-*   [Install the Surface Duo emulator][DualScreenAndroidGetDuoSdk], a different emulator from the one in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio]   
+*   [More info on developing dual-screen web experiences in Surface Duo documentation][DualScreenWebIndex]  
+*   [Install the Surface Duo emulator][DualScreenAndroidGetDuoSdk], a different emulator from the one in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio]  
 
 ### Enable new CSS grid debugging features  
 
 Improves on-page visualizations when you debug websites that have CSS grid layouts.  You may further customize the overlays in DevTools Settings.  
 
-:::image type="complex" source="./media/experiments-grid.png" alt-text="CSS grid debugging feature" lightbox="./media/experiments-grid.png":::
+:::image type="complex" source="./media/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="./media/experiments-grid.msft.png":::
    CSS grid debugging feature  
 :::image-end:::  
 
@@ -113,9 +113,9 @@ Improves on-page visualizations when you debug websites that have CSS grid layou
 
 ### Enable support to move tabs between panels  
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  When you choose the experiment, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, select `Escape`.  
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  When you choose the experiment, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.  This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, select `Escape`.  
 
-:::image type="complex" source="./media/experiments-move-panels.png" alt-text="Moving tabs between panels" lightbox="./media/experiments-move-panels.png":::
+:::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="./media/experiments-move-panels.msft.png":::
    Moving tabs between panels  
 :::image-end:::  
 
@@ -125,7 +125,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  The [webhint][WebhintMain] experiment brings the webhint feedback into DevTools in the [Issues][DevtoolsIssues] panel.  You may select the issue to see documentation on how to fix the issue and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
 
-:::image type="complex" source="./media/experiments-webhint.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.png":::
+:::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.msft.png":::
    webhint feedback in the **Issues** panel  
 :::image-end:::  
 
@@ -143,7 +143,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the Netw
 1.  When the **Network Console** opens, edit the network request information.  
 1.  Select **Send**.  
 
-:::image type="complex" source="./media/network-network-console.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.png":::
+:::image type="complex" source="./media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.msft.png":::
    **Network Console** in the **Console** drawer  
 :::image-end:::  
 
