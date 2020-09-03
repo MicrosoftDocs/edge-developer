@@ -3,7 +3,7 @@ description: New Media panel, capture node screenshot, Issues Drawer pane update
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/02/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -17,10 +17,10 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Match keyboard shortcuts in DevTools to Visual Studio Code  
 
-From your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) and the [Chromium public issue tracker][CRIssuesList], the ability to customize keyboard shortcuts in the DevTools was a highly requested.  In Microsoft Edge 86, you are now able to match keyboard shortcuts in the DevTools to [Visual Studio Code][VisualStudioCode], which is just one of the features the team is developing for shortcut customization.  
+From your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) and the [Chromium public issue tracker][CRIssuesList], the ability to customize keyboard shortcuts in the DevTools was a highly requested feature.  In Microsoft Edge 86, you are now able to match keyboard shortcuts in the DevTools to [Visual Studio Code][VisualStudioCode], which is just one of the features the team is developing for shortcut customization.  
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
-   The Microsoft Edge DevTools in high contrast mode  
+   Match keyboard shortcuts in the DevTools to Visual Studio Code  
 :::image-end:::  
 
 To activate this feature, complete the following actions.  
@@ -31,7 +31,9 @@ To activate this feature, complete the following actions.
 
 The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
 
-For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.  After choosing the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but with the **Visual Studio Code** preset, that shortcut is now also `F5`.  
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.  
+
+For more information about customizing keyboard shortcuts in the DevTools, go to [][].
 
 Chromium issue [#174309][CR174309]  
 
@@ -41,9 +43,9 @@ Chromium issue [#174309][CR174309]
    Experimental feature  
 :::image-end:::  
 
-You are now able to test how your website or app should appear on the new class of dual-screen and foldable devices.  
+You are now able to test the look and feel of your website or app on 2 new devices:  [Surface Duo][MicrosoftSurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  
 
-Additional features like [spanning][DevtoolsDualScreenIntroductionDevices1], [visualizing the seam][DevtoolsDualScreenIntroductionDevices2], and [enabling experimental web platform APIs][DevtoolsExperimentalFeatures].  
+When emulating the devices, additional features like [spanning][DevtoolsDualScreenIntroductionDevices1], [rendering the seam][DevtoolsDualScreenIntroductionDevices2] \(the space between the two screens\), and [enabling experimental Web Platform APIs][DevtoolsExperimentalFeatures] have been added to the DevTools to help you enhance your website or app for the new class of dual-screen and foldable devices.  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Device emulation for Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Device emulation for Surface Duo  
@@ -56,13 +58,13 @@ To activate this experimental feature, complete the following actions.
 1.  Open the DevTools **Settings** again.  
 1.  Go to `edge://flags` and choose the **Experimental Web Platform features** flag.  
 
-The feature is currently available in Microsoft Edge 86 as an experiment, so please share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team.  
+The feature is currently available as an experiment, so please share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team.  
 
 Chromium issue: [#1054281][CR1054281]  
 
 ### CSS grid overlay improvements and new experimental grid features  
 
-You provided positive feedback about the improved CSS grid overlays, so it is now the default experience and no longer behind an experimental flag.  
+Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and do not require you to activate an experiment.  
 
 :::row:::
    :::column span="":::
@@ -145,7 +147,7 @@ To activate this experimental feature, complete the following actions.
 
 Chromium issue: [#1094406][CR1094406]  
 
-### Your feedback enhances localized DevTools  
+### DevTools language enhancements  
 
 Your feedback and internal discoveries uncovered which text strings used in the Microsoft Edge feedback should remain untranslated or create confusion when translated.  
 
@@ -574,6 +576,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code "  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows"  
 
+[MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "The new Surface Duo"  
+
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
@@ -612,6 +616,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v6.2.0 - GoogleChrome/lighthouse | GitHub"  
 
 [GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Protocol Buffers | Google Developers"  
+
+[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"  
 
 [V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Logical assignment | V8"  
 [V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "Numeric separators | V8"  
