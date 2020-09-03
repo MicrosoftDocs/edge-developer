@@ -65,7 +65,7 @@ For example, on Windows the keyboard shortcut for pausing or continuing running 
 
 Provides additional features for emulating 2 new dual-screen and foldable devices: [Surface Duo][SurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  When emulating these devices, toggle between a single-screen or folded posture and a dual-screen or unfolded posture.  [Enable experimental APIs](#enable-experimental-apis) in Microsoft Edge to enhance your website or app for these devices, using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
 
-<!-- This image was taken in Chrome Canary since we don't yet have an Edge Canary that has Stan's changes -->  
+<!-- This image was taken in Chromium Canary since we don't yet have an Edge Canary that has Stan's changes -->  
 
 :::image type="complex" source="./media/experiments-dual-screen-emulation.msft.png" alt-text="Emulate Surface Duo in Microsoft Edge" lightbox="./media/experiments-dual-screen-emulation.msft.png":::  
    Emulate Surface Duo in Microsoft Edge  
