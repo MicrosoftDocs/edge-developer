@@ -1,9 +1,9 @@
 ---
 description: Microsoft Edge (Chromium) and Visual Studio
 title: Visual Studio
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/12/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 08/20/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studi
 
 # Visual Studio
 
-[Visual Studio](https://visualstudio.microsoft.com/vs/) is an integrated development environment (IDE) that you can use to edit, debug, build, and publish your web applications. It is a feature-rich program that can be used for many aspects of your web development. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to ease your development process. Head to [this page](https://visualstudio.microsoft.com/downloads/) to download Visual Studio if you aren't using it yet.
+Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) is an integrated development environment (IDE) that you can use to edit, debug, build, and publish your web applications. It is a feature-rich program that can be used for many aspects of your web development. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to ease your development process. Head to [this page](https://visualstudio.microsoft.com/downloads/) to download Visual Studio if you aren't using it yet.
 
 Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP\.NET Framework and ASP\.NET Core applications. Follow the steps below to debug Microsoft Edge from Visual Studio.
 
@@ -104,8 +104,9 @@ Click **Select…** and check **JavaScript (Microsoft Edge – Chromium)**. You 
 
 The Visual Studio debugger is now attached to Microsoft Edge! You can pause execution of JavaScript, set breakpoints, and see `console.log()` statements directly in the Debug Output window in Visual Studio.
 
-## Feedback
-We're eager to learn more about how you work with JavaScript in Visual Studio! Please send us feedback by clicking the **Feedback** icon in Visual Studio or by tweeting [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
+## Getting in touch with the Microsoft Visual Studio team  
+
+We're eager to learn more about how you work with JavaScript in Visual Studio!  Please send us feedback by clicking the **Feedback** icon in Visual Studio or by tweeting [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).  
 
 > ##### Figure 11
 > The **Feedback** icon in Visual Studio
