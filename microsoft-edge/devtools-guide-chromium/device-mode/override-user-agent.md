@@ -3,7 +3,7 @@ description: Open the Network conditions tab, disable Select automatically, and 
 title: Override The User Agent String From Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

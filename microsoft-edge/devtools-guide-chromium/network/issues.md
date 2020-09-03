@@ -3,7 +3,7 @@ description: Learn how to detect network issues in the Network panel of Microsof
 title: Network Issues Guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/28/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

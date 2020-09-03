@@ -3,7 +3,7 @@ description: Discover new workflows for viewing and changing CSS in Microsoft Ed
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/14/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

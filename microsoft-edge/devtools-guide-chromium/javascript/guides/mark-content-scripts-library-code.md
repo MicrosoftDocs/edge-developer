@@ -3,7 +3,7 @@ description: Enable "Mark content scripts as Library code" from Settings > Frame
 title: Mark Content Scripts as Library Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

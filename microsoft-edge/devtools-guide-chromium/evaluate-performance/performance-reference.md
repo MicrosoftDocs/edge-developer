@@ -3,7 +3,7 @@ description: The timeline events mode displays all events triggered while making
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

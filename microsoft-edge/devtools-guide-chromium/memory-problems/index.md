@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge and DevTools to find memory issues 
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

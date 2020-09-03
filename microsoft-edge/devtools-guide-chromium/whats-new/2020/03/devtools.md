@@ -3,7 +3,7 @@ description: Remotely debug Microsoft Edge on Windows 10 devices, new ways to ac
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
