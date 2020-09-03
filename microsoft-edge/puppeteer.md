@@ -3,7 +3,7 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -95,13 +95,13 @@ node example.js
 
 This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, see [Puppeteer][PuppeteerMain].  
 
-## Send Feedback  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-The Edge Developer team is eager to hear your feedback about using Puppeteer, `puppeteer-core`, and Microsoft Edge.  Use the **Send Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools] to let the Microsoft Edge team know what you think.  
+The Microsoft Edge Developer team is eager to hear your feedback about using Puppeteer, `puppeteer-core`, and Microsoft Edge.  Use the **Send Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools] to let the Microsoft Edge team know what you think.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="The Feedback icon in the Microsoft Edge DevTools":::
-   Figure 2:  The **Feedback** icon in the Microsoft Edge DevTools  
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools":::
+   The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
 <!--  

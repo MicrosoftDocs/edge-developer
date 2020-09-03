@@ -121,10 +121,10 @@ After enabling the experiment, ensure you restart the DevTools.  To use Source O
 To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
 *   Send your feedback using the **Send Feedback** icon in the DevTools  
-*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
+*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]   
 
-:::image type="complex" source="./media/devtools-feedback.png" alt-text="Send Feedback icon in the Microsoft Edge DevTools" lightbox="./media/devtools-feedback.png":::
-   **Send Feedback** icon in the Microsoft Edge DevTools  
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+   The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 
 <!-- links -->  
