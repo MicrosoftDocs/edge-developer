@@ -35,13 +35,13 @@ Use **Device emulation** to approximate how your page looks and performs on a mo
 
 ## Limitations  
 
-**Device emulation** is a [first-order approximation][WikiApproximation]{:.external} of the look and feel of your page on a mobile device.  **Device emulation** does not actually run your code on a mobile device.  Instead you simulate the mobile user experience from your laptop or desktop.  
+**Device emulation** is a [first-order approximation][WikiApproximation] of the look and feel of your page on a mobile device.  **Device emulation** does not actually run your code on a mobile device.  Instead you simulate the mobile user experience from your laptop or desktop.  
 
 There are some aspects of mobile devices that DevTools will never be able to emulate.  For example, the architecture of mobile CPUs is very different than the architecture of laptop or desktop CPUs.  When in doubt, your best bet is to actually run your page on a mobile device.  Use [Remote Debugging][DevToolsRemoteDebugging] to view, change, debug, and profile the code of a page from your laptop or desktop while it actually runs on a mobile device.  
 
 ## Simulate a mobile viewport  
 
-Choose **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or choose **Customize and control DevTools** \(`...`\) and then choose **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
+Choose **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     The Device Toolbar  
