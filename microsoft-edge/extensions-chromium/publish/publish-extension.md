@@ -89,7 +89,7 @@ On the **Properties page**, enter the following information to specify propertie
 | Support contact detail | The URL to your support webpage, or the email address to contact your support team. |
 | Mature content | Checkbox to specify if your extension includes mature content. Extension rating helps determine the appropriate age group of the target audience of your extension. To help determine if your extension has mature content, see [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies]. |
 
-Select **Save** to proceed to the **Store listings** section.
+Select **Save** to continue to the **Store listings** section.
 
 #### Step 5: Add Store listing details for your extension 
 
