@@ -160,7 +160,7 @@ When your submission passes certification, your extension is published in the Mi
 
 
 > [!NOTE]
-> If you are facing any issues in the submission or registration process, you can file a support ticket [here][ExtensionsSupportForm] or write to us at *ext_dev_support@microsoft.com*
+> If you are facing any issues in the submission or registration process, you can file a support ticket [here][ExtensionsSupportForm] or write to us at ext_dev_support@microsoft.com.
 
 
 <!-- image links -->  
