@@ -102,7 +102,7 @@ The information provided in this section is displayed to users that visit your l
 
 | Store listing property name  | Description |
 |:--- |:--- |
-| Store listing languages (required) | Select a language from **Languages** dropdown and enter the store listing details for that language. Extensions that support multiple languages must provide a store listing page for each supported language. |
+| Store listing languages (required) | Select a language from the **Languages** dropdown and enter the store listing details for that language. Extensions that support multiple languages must provide a store listing page for each supported language. |
 | Display name (required) | The name of your extension specified in the manifest file of your extension. To change the store display name after submission, you may update the name in the manifest file, create a new extension package, and then reupload it. |
 | Description (required) | The description field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know. It should be less than 10,000 characters. |
 | Extension Store logo (required) | An image that represents your company or extension logo with an aspect ratio of 1 and recommended size of 300 x 300 pixels. |
