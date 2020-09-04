@@ -32,7 +32,7 @@ The following fields in the manifest are automatically included in your store li
 
 * Name field in the manifest file, which is the **Display name** on the store details page.  
 
-* Description field in the manifest file as the **short description** on the store details page. Provide a short, catchy description to display at the top of the listing for your extension. When included, the short description specified in the extension manifest file is displayed in your store listing. If a short description is not included in the manifest file, the first few lines of Description is displayed. We recommend providing a brief description to avoid content repetition on your store list page. 
+* Description field in the manifest file, which is the **Short description** on the store details page. Provide a short, catchy description to display at the top of the listing for your extension. When included, the short description specified in the extension manifest file is displayed in your store listing. If a short description isn't included in the manifest file, the first few lines of Description are displayed. We recommend providing a brief description to avoid content repetition on your store listing page. 
 
 ## Submit your extension to Microsoft Edge add-ons store
 
