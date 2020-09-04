@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 09/04/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,22 +22,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Microsoft Edge DevTools Keyboard Shortcuts   
-
-
-
-
+# Microsoft Edge DevTools Keyboard shortcuts  
 
 This page is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
 You can also find shortcuts in tooltips. Hover over a UI element of DevTools
 to display its tooltip. If the element has a shortcut, the tooltip includes it.
 
-## Keyboard shortcuts for opening DevTools   
+## Keyboard shortcuts for opening DevTools  
 
 To open DevTools, press the following keyboard shortcuts while your cursor is focused on the browser viewport:
 
@@ -47,7 +39,7 @@ To open DevTools, press the following keyboard shortcuts while your cursor is fo
 | Open the **Console** panel | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
 | Open the **Elements** panel | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |  
 
-## Global keyboard shortcuts   
+## Global keyboard shortcuts  
 
 The following keyboard shortcuts are available in most, if not all, DevTools panels.
 
@@ -74,7 +66,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Elements panel keyboard shortcuts   
+## Elements panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -89,7 +81,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Hide the currently-selected element | `H` | `H` |  
 | Toggle **Edit as HTML** mode on the currently-selected element | `Function`+`F2` | `F2` |  
 
-### Styles pane keyboard shortcuts   
+### Styles pane keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -101,7 +93,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Increment / decrement a property value by 10 | Click a value, then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Click a value, then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
 | Increment / decrement a property value by 100 | Click a value, then press `Control`+`Up Arrow` / `Control`+`Down Arrow` | Click a value, then press `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
-## Sources panel keyboard shortcuts   
+## Sources panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -119,7 +111,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Go to a function declaration \(if currently-open file is HTML or a script\), or a rule set \(if currently-open file is a stylesheet\) | Press `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
 | Close the active tab | `Alt`+`W` | `Option`+`W` |  
 
-### Code Editor keyboard shortcuts   
+### Code Editor keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -129,7 +121,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Toggle single-line comment. If multiple lines are selected, DevTools adds a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
 | Select / de-select the next occurrence of whatever word the cursor is on. Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 
-## Performance panel keyboard shortcuts   
+## Performance panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -137,13 +129,13 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Save recording | `Control`+`S` | `Command`+`S` |  
 | Load recording | `Control`+`O` | `Command`+`O` |  
 
-## Memory panel keyboard shortcuts 
+## Memory panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
 | Start / stop recording | `Control`+`E` | `Command`+`E` |  
 
-## Console panel keyboard shortcuts   
+## Console panel keyboard shortcuts  
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
@@ -157,21 +149,21 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Run | `Enter` | `Return` |  
 | Expand all sub-properties of an object that are logged to the Console | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] | Hold `Alt`, then click **Expand**![Expand][ImageExpandIcon] |  
 
- 
+## Getting in touch with Microsoft Edge DevTools team  
 
-
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
-[ImageExpandIcon]: /microsoft-edge/devtools-guide-chromium/media/expand-icon.msft.png  
+[ImageExpandIcon]: ./media/expand-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools"  
-[DevtoolsCustomizeIndexPlacement]: /microsoft-edge/devtools-guide-chromium/customize/index#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools"  
-[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools"  
-[DevtoolsJavascriptBreakpointsLOC]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
+[DevtoolsCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ./customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexPlacement]: ./customize/index.md#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ./device-mode/index.md "Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLOC]: ./javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 
