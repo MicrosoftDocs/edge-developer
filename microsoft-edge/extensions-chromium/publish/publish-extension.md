@@ -156,7 +156,7 @@ Ensure you include the following information, as necessary:
 
 After providing the information, select **Publish** to submit your extension to the Microsoft Edge add-ons catalog. Your submission proceeds to the certification step. This process may take up to seven business days after your submission.  
 
-When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog and the status of your extension in the Partner Center dashboard changes to In the Store.  `In the Store`.
+When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog. The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 
 > [!NOTE]
