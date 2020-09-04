@@ -46,7 +46,7 @@ Go to the [developer dashboard][MicrosoftPartnerCenter] and select **Create new 
 
 Use the **Packages** page to upload the zip file of your extension package. You're only able to upload one package at a time. You can't continue with the submission if the package upload isn't successful on this page. 
 
-Upload the package by either dragging the package to the upload field, or by selecting **Browse your files**. Once the package is uploaded, your package is validated. Once validation succeeds, review the extension details, select **Next** to proceed. If there are validation errors, resolve the issues and try uploading again.
+Upload the package by either dragging the package to the upload field, or by selecting **Browse your files**. Once the package is uploaded, your package is validated. Once validation succeeds, review the extension details, and then select **Next** to continue. If there are validation errors, resolve the issues and try uploading again.
 
 #### Step 3: Provide Availability details
 
