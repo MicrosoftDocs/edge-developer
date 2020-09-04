@@ -20,6 +20,46 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > [!IMPORTANT]
 > While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
+
+## 0.9.627-prerelease  
+Release Date: 09/08/2020
+
+[NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
+
+   > [!IMPORTANT]
+    > **Announcement**: This prerelease will continue to release out of Edge 87 Branch. In the future, pre-release SDK releases will match the Edge Canary builds, whereas our normal releases will be in sync with Edge Stable.
+
+#### General  
+* 
+#### .NET  
+
+*   .NET Binaries are now [Strongly Named]().  \([\#181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).
+
+
+## 0.9.622  
+Release Date: 09/08/2020
+
+[NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
+
+#### General  
+
+*   > [!IMPORTANT]
+    > **Announcement**: This SDK release is a candidate for WebView2 Win32 C++ GA. 
+* > [!IMPORTANT]
+    > **Announcement**:  Visual Hosting is now in preview.
+
+*   Disconnected [browser policies](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies). 
+*   Added [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
+*   Added 
+*   Fixed System.Windows.Rect.  \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).
+*   Updated the Windows.open() function to handle "no parameter" case.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).
+
+
+#### .NET  
+
+*   Updated Nuget Target to include WebViewLoader.dll.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) & \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).
+*   Updated WebResourceRequested to expose HttpRequestMessage and HttpResponseMessage APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).
+
 ## 0.9.579  
 Release Date: 07/20/2020
 
@@ -319,12 +359,18 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue70]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/70 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 70"  
 [GithubMicrosoftedgeWebviewfeedbackIssue74]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/74 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 74"  
 [GithubMicrosoftedgeWebviewfeedbackIssue95]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/95 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 95"  
-[GithubMicrosoftedgeWebviewfeedbackIssue108]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/108 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 108"  
+[GithubMicrosoftedgeWebviewfeedbackIssue108]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/108 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 108"
 [GithubMicrosoftedgeWebviewfeedbackIssue113]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/113 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 113"  
-[GithubMicrosoftedgeWebviewfeedbackIssue119]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/119 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 119" 
+[GithubMicrosoftedgeWebviewfeedbackIssue119]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/119 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 119"
+[GithubMicrosoftedgeWebviewfeedbackIssue131]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/131 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 131"
 [GithubMicrosoftedgeWebviewfeedbackIssue148]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/148 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 148"  
-[GithubMicrosoftedgeWebviewfeedbackIssue179]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/179 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 179"  
+[GithubMicrosoftedgeWebviewfeedbackIssue179]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/179 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 179"
+[GithubMicrosoftedgeWebviewfeedbackIssue181]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/181 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 181"
+[GithubMicrosoftedgeWebviewfeedbackIssue183]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/183 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 183"
 [GithubMicrosoftedgeWebviewfeedbackIssue185]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/185 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 185"
+[GithubMicrosoftedgeWebviewfeedbackIssue228]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/228 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 228"
+[GithubMicrosoftedgeWebviewfeedbackIssue235]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/235 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 235"
+[GithubMicrosoftedgeWebviewfeedbackIssue293]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/293 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 293"
 [GithubMicrosoftedgeWebviewfeedbackIssue318]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/318 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 318"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
