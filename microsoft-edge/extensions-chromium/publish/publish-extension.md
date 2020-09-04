@@ -151,7 +151,7 @@ Ensure you include the following information, as necessary:
 *   Usernames and passwords for test accounts.  
 *   Steps to access hidden or locked features.  
 *   Expected differences in functionality based on region or other user settings.
-*   If this is an update to an existing extension, information about the changes made to the extension. 
+*   If this submission is an update to an existing extension, include information about the changes made to the extension.  
 *   Any additional information that testers must understand about your submission.
 
 After providing the information, select **Publish** to submit your extension to the Microsoft Edge add-ons catalog. Your submission proceeds to the certification step. This process may take up to 7 business days of your submission.  
