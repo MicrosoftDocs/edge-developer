@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/02/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -53,7 +53,7 @@ The following sections describe the new experimental features that are available
 
 Provides a new **Shortcuts** page in [DevTools Settings][DevToolsCustomizeSettings] that enables matching [keyboard shortcuts][DevToolsShortcuts] in the DevTools to [Microsoft Visual Studio Code][VisualstudioCode].  
 
-Once you have enabled the experiment, open [DevTools Settings][DevToolsCustomizeSettings] again using select `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
+After you enable the experiment, open [DevTools Settings][DevToolsCustomizeSettings] again using select `Shift`+`?`.  Navigate to the new **Shortcuts** page.  Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
 
 :::image type="complex" source="./media/experiments-keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="./media/experiments-keyboard-shortcut.msft.png":::
    Match keyboard shortcuts in the DevTools to Visual Studio Code  
@@ -63,7 +63,7 @@ For example, on Windows the keyboard shortcut for pausing or continuing running 
 
 ### Emulation: Support dual screen mode  
 
-Provides additional features for emulating 2 new dual-screen and foldable devices: [Surface Duo][SurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  When emulating these devices, toggle between a single-screen or folded posture and a dual-screen or unfolded posture.  [Enable experimental APIs](#enable-experimental-apis) in Microsoft Edge to enhance your website or app for these devices, using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
+Provides additional features for emulating 2 new dual-screen and foldable devices:  [Surface Duo][SurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  When you emulate the devices, toggle between a single-screen or folded posture and a dual-screen or unfolded posture.  [Enable experimental APIs](#enable-experimental-apis) in Microsoft Edge to enhance your website or app for these devices, using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
 
 <!-- This image was taken in Chromium Canary since we don't yet have an Edge Canary that has Stan's changes -->  
 
@@ -82,11 +82,11 @@ In addition to [enabling this experiment](#turn-on-experimental-features) in the
 > [!NOTE]
 > If you are using [CSS media queries or the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables] to enhance your website or app for the [Surface Duo][SurfaceDevicesDuo], you must also enable the **Experimental Web Platform features** flag in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on your [Surface Duo][SurfaceDevicesDuo] device.
 > 
-> If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge][MicrosoftEdge] and disabled in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge will not match with the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo]. Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][MicrosoftEdge].  
+> If the **Experimental Web Platform features** flag is enabled in [desktop Microsoft Edge][MicrosoftEdge] and disabled in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge will not match with the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][MicrosoftEdge].  
 
 #### Testing on foldable and dual-screen devices  
 
-When emulating the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the **seam** \(the space between the two screens\) is drawn over your website or app. This is an accurate representation of the way your website or app renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo], so you may need to adjust your content to display better along the seam. [Learn about adapting your website or app to the seam in the Surface Duo documentation][DualScreenIntroductionHowWorkSeam].  
+When you emulate the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the **seam** \(the space between the two screens\) is drawn over your website or app.  This is an accurate representation of the way your website or app renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo], so you may need to adjust your content to display better along the seam.  [Learn about adapting your website or app to the seam in the Surface Duo documentation][DualScreenIntroductionHowWorkSeam].  
 
 The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation.  Combine this feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, these features enable testing your website or app in all four possible postures and orientations.  
 
@@ -94,7 +94,7 @@ The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has addition
    Matrix of postures and orientations for dual-screen and foldable devices  
 :::image-end:::  
 
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is enabled, the icon is highlighted. If the flag is disabled, the icon is not highlighted.  Click the icon to navigate to `edge://flags` and enable or disable the flag.  
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is enabled, the icon is highlighted.  If the flag is disabled, the icon is not highlighted.  Click the icon to navigate to `edge://flags` and enable or disable the flag.  
 
 #### Additional resources  
 
@@ -113,7 +113,7 @@ Improves on-page visualizations when you debug websites that have CSS grid layou
 
 ### Enable support to move tabs between panels  
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  When you choose the experiment, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.  This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, select `Escape`.  
+Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  After you enable the experiment, you may move tools between the top and bottom panels by hovering on the tab, opening the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.  This experiment allows you to customize your DevTools layout.  To show or hide the bottom panel, select `Escape`.  
 
 :::image type="complex" source="./media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="./media/experiments-move-panels.msft.png":::
    Moving tabs between panels  
