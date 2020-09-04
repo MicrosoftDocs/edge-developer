@@ -110,7 +110,7 @@ The information provided in this section is displayed to users that visit your l
 | Screenshots (optional) | You can submit a maximum of 10 screenshots describing the functionality of your extension in detail. The size of the screenshots must be either 640 x 480 pixels, or 1280 x 800 pixels. |
 | Large promotional tile (optional) | Large promotion tiles will be used in the store to feature extensions more prominently in the Microsoft Edge add-ons website. These images, if submitted, will be visible to the users soon. The size of these PNG files must be 1400 x 560 pixels.  |
 | YouTube video URL (optional) | You may include a promotional YouTube video of your extension. This video is displayed on the store listing page of your extension. |
-| Short description (required) | To edit the short description, you must update the description field in your manifest file of your extension package and re-upload it. |
+| Short description (required) | To edit the short description, you must update the description field in your manifest file of your extension package and reupload it. |
 | Search terms (optional) | Search terms are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog. These search terms are not displayed to users. | 
 
 
