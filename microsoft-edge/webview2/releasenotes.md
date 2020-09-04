@@ -49,8 +49,8 @@ Release Date: Sept 08, 2020
     > **Announcement**:  Visual Hosting is now in preview.
 
 *   Disconnected [browser policies](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies). 
-*   Added [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
-*   Added 
+*   Added [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
+*   Updated ICoreWebView2NewWindowRequestedEventArgs to include WindowFeatures property, and its associated ICoreWebView2WindowFeatures.
 *   Fixed System.Windows.Rect.  \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).
 *   Updated the Windows.open() function to handle "no parameter" case.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).
 
