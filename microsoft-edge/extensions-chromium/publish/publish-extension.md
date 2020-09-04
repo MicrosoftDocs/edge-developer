@@ -72,7 +72,7 @@ Define the specific markets in which you plan to offer your extension. By defaul
 > [!NOTE]
 > You may change the markets where your extension is offered. Users who installed your extension while it was available in their market will continue to have access to your extension. However, they will not receive any future updates submitted to the Microsoft Edge add-ons catalog.
 
-Click **Save** to proceed to the **Properties** section.  
+Select **Save** to continue to the **Properties** section.  
 
 #### Step 4: Select Properties for your extension  
 
