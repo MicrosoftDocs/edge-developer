@@ -1,5 +1,5 @@
 ---
-description: Publish Edge (Chromium) extensions to Microsoft Edge add-ons Store.
+description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-ons Store.
 title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
