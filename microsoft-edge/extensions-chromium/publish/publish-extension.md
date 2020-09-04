@@ -119,8 +119,8 @@ The information provided in this section is displayed to users that visit your l
 Ensure your video meets the following requirements: 
 
 *   Verify that the content of YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies document][MicrosoftEdgeAddonsCatalogDeveloperPolicies]. 
-*   Turn off advertisements on your video. For more information, see [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596] pages.  
-*   Turn on embedding for your videos.  For more information, see [Embed videos \& playlists][GoogleYoutubeAnswer171780] page.
+*   Turn off advertisements on your video. For more information, see [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
+*   Turn on embedding for your videos.  For more information, see [Embed videos \& playlists][GoogleYoutubeAnswer171780].
 
 Perform the following steps to submit the YouTube URL of your video. 
 
