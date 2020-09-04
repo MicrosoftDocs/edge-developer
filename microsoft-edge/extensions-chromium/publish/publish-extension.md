@@ -11,7 +11,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Publish your extension  
 
-After you have completed development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog. Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may [port your existing Chromium extension][PortChromiumExtension] to Microsoft Edge. 
+After completing development and testing of your extension, you may be ready to distribute your extension using the Microsoft Edge add-ons catalog. Alternatively, if you have an existing chromium extension that you want to make available to Microsoft Edge users, you may [port your existing Chromium extension][PortChromiumExtension] to Microsoft Edge. 
 
 Publishing your extension to the Microsoft Edge add-ons catalog increases the reach of your extension and makes it available for end users. This article provides a walkthrough of the process to submit your extension to the Microsoft Edge add-ons catalog.
 
