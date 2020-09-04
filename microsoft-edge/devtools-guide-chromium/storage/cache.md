@@ -1,8 +1,9 @@
 ---
+description: How to view Cache data from the Application panel of Microsoft Edge DevTools.
 title: View Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,118 +26,107 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# View Cache Data With Microsoft Edge DevTools   
+# View cache data with Microsoft Edge DevTools   
 
 
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect
-[Cache][MDNCache] data.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.  
 
-If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  
-Look for the information in the **Size** column of the **Network Log**.  See [Log network activity][DevtoolsNetworkLogActivity].  
+If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  See [Log network activity][DevtoolsNetworkLogActivity].  
 
 ## View cache data   
 
 1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
     
-    > ##### Figure 1  
-    > The Manifest pane  
-    > ![The Manifest pane][ImageManifestPane]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
+       The **Manifest** pane  
+    :::image-end:::  
+    
 1.  Expand the **Cache Storage** section to view available caches.  
     
-    > ##### Figure 2  
-    > Available caches  
-    > ![Available caches][ImageCache]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage.msft.png" alt-text="Available caches" lightbox="../media/storage-application-cache-storage.msft.png":::
+       Available caches  
+    :::image-end:::  
+    
 1.  Select a cache to view the contents.  
     
-    > ##### Figure 3  
-    > Viewing the contents of a cache  
-    > ![Viewing the contents of a cache][ImageCacheView]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="View the contents of a cache" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
+       View the contents of a cache  
+    :::image-end:::  
+    
 1.  Select a resource to view the HTTP headers in the section below the table.  
     
-    > ##### Figure 4  
-    > Viewing the HTTP headers of a resource  
-    > ![Viewing the HTTP headers of a resource][ImageViewCacheResource]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="View the HTTP headers of a resource" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
+       View the HTTP headers of a resource  
+    :::image-end:::  
+    
 1.  Select **Preview** to view the content of a resource.  
     
-    > ##### Figure 5  
-    > Viewing the content of a resource  
-    > ![Viewing the content of a resource][ImageCacheContent]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="View the content of a resource" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
+       View the content of a resource  
+    :::image-end:::  
+    
 ## Refresh a resource   
 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
     
-    > ##### Figure 6  
-    > Selecting a resource  
-    > ![Selecting a resource][ImageCacheSelected]  
-
-1.  Select **Refresh** ![Refresh][ImageRefreshIcon].  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Select a resource" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Select a resource  
+    :::image-end:::  
+    
+1.  Select **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+    
 ## Filter resources   
 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Use the **Filter by Path** text box to filter out any resources that do not match the path that you provide.  
     
-    > ##### Figure 7  
-    > Filtering out resources that do not match the specified path  
-    > ![Filtering out resources that do not match the specified path][ImageCacheFilter]  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-filter.msft.png" alt-text="Filter out resources that do not match the specified path" lightbox="../media/storage-application-cache-storage-filter.msft.png":::
+       Filter out resources that do not match the specified path  
+    :::image-end:::  
+    
 ## Delete a resource   
 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
-    > ##### Figure 8  
-    > Selecting a resource  
-    > ![Selecting a resource][ImageCacheSelected2]  
-
-1.  Select **Delete Selected** ![Delete Selected][ImageDeleteIcon].  
-
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Select a resource" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Select a resource  
+    :::image-end:::  
+    
+1.  Select **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+    
 ## Delete all cache data   
 
 1.  Open **Application** > **Clear Storage**.  
 1.  Make sure that the **Cache Storage** checkbox is enabled.  
     
-    > ##### Figure 9  
-    > The **Cache Storage** checkbox  
-    > ![The Cache Storage checkbox][ImageCacheCheckbox]  
-
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png" alt-text="The Cache Storage checkbox" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox.msft.png":::
+       The **Cache Storage** checkbox  
+    :::image-end:::  
+    
 1.  Select **Clear site data**.  
     
-    > ##### Figure 10  
-    > The **Clear Site Data** button  
-    > ![The Clear Site Data button][ImageCacheClearSite]  
+    :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="The Clear Site Data button" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
+       The **Clear Site Data** button  
+    :::image-end:::  
+    
+<!--  
+  
 
-<!--  -->  
 
-
+-->  
 
 <!-- image links -->  
 
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-[ImageRefreshIcon]: /microsoft-edge/devtools-guide-chromium/media/refresh-icon.msft.png  
-
-[ImageManifestPane]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: The Manifest pane"  
-[ImageCache]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage.msft.png "Figure 2: Available caches"  
-[ImageCacheView]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-domain-root-headers.msft.png "Figure 3: Viewing the contents of a cache"  
-[ImageViewCacheResource]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-index-headers.msft.png "Figure 4: Viewing the HTTP headers of a resource"  
-[ImageCacheContent]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-domain-js-preview.msft.png "Figure 5: Viewing the content of a resource"  
-[ImageCacheSelected]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-domain-refresh.msft.png "Figure 6: Selecting a resource"  
-[ImageCacheFilter]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-filter.msft.png "Figure 7: Filtering out resources that do not match the specified path"  
-[ImageCacheSelected2]: /microsoft-edge/devtools-guide-chromium/media/storage-application-cache-storage-delete-selected.msft.png "Figure 8: Selecting a resource"  
-[ImageCacheCheckbox]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-cache-storage-checkbox.msft.png "Figure 9: The Cache Storage checkbox"  
-[ImageCacheClearSite]: /microsoft-edge/devtools-guide-chromium/media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png "Figure 10: The Clear Site Data button"  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
-[DevtoolsNetworkLogActivity]: /microsoft-edge/network/index#log-network-activity  "Log network activity"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
 [MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"  

@@ -1,8 +1,9 @@
 ---
+description: The canonical documentation for Microsoft Edge DevTools keyboard shortcuts.
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/24/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
