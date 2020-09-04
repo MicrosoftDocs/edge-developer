@@ -169,9 +169,9 @@ When your submission passes certification, your extension is published in the Mi
 
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge \(Chromium\) Extensions | Microsoft Docs"
 
-[DeveloperRegistration]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/create-dev-account "Register as a Microsoft Edge extensions developer | Microsoft Docs"
+[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"
 
-[PortChromiumExtension]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension "Port your Chromium extension to Microsoft Edge | Microsoft Docs"
+[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"
 
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
