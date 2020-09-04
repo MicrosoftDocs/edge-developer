@@ -28,7 +28,7 @@ Create a zip file that represents your extension package. Your extension package
 * The extension manifest specifying details like the name of the extension, short description, permissions, and default language. 
 * Images and other files required by your extension.
 
-The following fields in the manifest are automatically included in your store listing details and cannot be modified from the store listings page (described later in this article). Ensure they are filled out as you would like to see them on the store details page, prior to uploading your package to Partner Center. For an example of the code required for the manifest file, see the manifest file basics.  
+The following fields in the manifest are automatically included in your store listing details and can't be modified from the store listings page, which is described later in this article. Ensure they're filled out as you would like them to display on the store details page, before uploading your package to Partner Center. For an example of the code required for the manifest file, see the manifest file basics.  
 
 * Name field in the manifest file as the **display name** on the store details page 
 
