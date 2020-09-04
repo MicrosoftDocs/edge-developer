@@ -7,7 +7,7 @@
     },
     {
       "source_path": "microsoft-edge/extensions-chromium/publish/upload-video.md",
-      "redirect_url": "microsoft-edge/extensions-chromium/publish/publish-extension",
+      "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
       "redirect_document_id": true
     },
     {
