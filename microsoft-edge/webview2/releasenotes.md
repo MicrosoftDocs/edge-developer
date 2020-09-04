@@ -21,7 +21,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > While WebView2 is a preview, the .NET APIs are in the `pre-release package`.  
 
 
-## 0.9.627-prerelease  
+## 0.9.628-prerelease  
 Release Date: Sept 09, 2020
 
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
@@ -30,7 +30,6 @@ Release Date: Sept 09, 2020
     > **Announcement**: This prerelease will continue to release out of Edge 87 Branch. In the future, pre-release SDK releases will match the Edge Canary builds, whereas our normal releases will be in sync with Edge Stable.
 #### General
 * Added the CompositionController as an experimental interface. This lets your app connect WebView2 to Dcomp visual or WinComp ContainerVisual and provides API that allows the app to forward mouse and touch inputs to the WebView.
-
 
 #### .NET  
 
@@ -56,11 +55,7 @@ Release Date: Sept 09, 2020
 *   Updated ICoreWebView2NewWindowRequestedEventArgs to include WindowFeatures property, and its associated ICoreWebView2WindowFeatures.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).
 *   Updated System.Windows.Rect. to use System.Drawing.Rectangle instead of System.Windows.Rect \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).
 *   Updated the Windows.open() function to handle "no parameter" case.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).
-
-
-#### .NET  
-
-
+*   [AdditionalBrowserArguments](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2environmentoptions#put_additionalbrowserarguments) set via ICoreWebView2EnvironmentOptions will not be overridden with environment variable nor registry value. See [CreateCoreWebView2EnvironmentWithOptions](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl#createcorewebview2environmentwithoptions) for more details.
 
 ## 0.9.579  
 Release Date: July 20, 2020
