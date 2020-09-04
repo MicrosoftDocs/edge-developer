@@ -14,7 +14,7 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0,
-      "moniker_ranges": [">= webview2-0.9.430 <= webview2-0.9.538-prerelease"]
+      "moniker_ranges": [">= webview2-0.9.430"]
     }
   ],
   "notification_subscribers": [],

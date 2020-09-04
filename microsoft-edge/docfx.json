@@ -8,7 +8,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "**/includes/**",
+          "webview2-test"
         ]
       },
       {
@@ -17,8 +18,7 @@
           "**/*.yml"
         ],
         "group": "webview2",
-        "src": "webview2",
-        "dest": "webview2",
+        "src": "webview2-test",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -85,8 +85,8 @@
     "dest": "microsoft-edge",
     "groups": {
       "webview2": {
-        "dest": "webview2",
-        "moniker_range": ">= webview2-0.9.430 <= webview2-0.9.538-prerelease"
+        "dest": "webview2-dest",
+        "moniker_range": ">= webview2-0.9.430"
       }
     },
     "markdownEngineName": "markdig"
