@@ -20,7 +20,7 @@ Publishing your extension to the Microsoft Edge add-ons catalog increases the re
 
 At this point, you should have a working prototype of your extension ready. For information on how to create an extension, refer [Getting started tutorial][ExtensionsGettingStarted]. 
 
-To publish your extension to Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter]. To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide. 
+To publish your extension to the Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter]. To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide. 
 
 Create a zip file that represents your extension package. Your extension package must include the following files: 
 
