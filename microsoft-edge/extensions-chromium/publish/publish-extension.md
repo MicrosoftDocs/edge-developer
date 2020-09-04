@@ -134,7 +134,7 @@ Perform the following steps to submit the YouTube URL of your video.
 
 Search terms must meet the following requirements. 
 
-*   You may enter search terms to use up to a maximum of 21 words. Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.
+*   You may enter search terms to use up to a maximum of 21 words. Whether used as single words, phrases, or a combination of both, you're only allowed a maximum of 21 words.
 *   Up to a maximum of seven search terms – single word or phrases. Each search term has a character limit of 30 characters. 
  
 
