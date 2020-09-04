@@ -3,7 +3,7 @@ description: New Media panel, capture node screenshot, Issues Drawer pane update
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/03/2020
+ms.date: 09/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -124,7 +124,7 @@ In Microsoft Edge 86 or later, when you copy a table from the **Console**, the f
 
 Chromium issue: [#1115011][CR1115011]  
 
-### Source Order Viewer enhances accessibility  
+### Source Order Viewer for easier accessibility testing  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
    Experimental feature  
@@ -136,7 +136,7 @@ The new accessibility helper displays the order of elements in the source.
    Activate **Show source order**  
 :::image-end:::  
 
-The feature should help you avoid confusion when testing for user of screen reader.  
+The feature should make it easier to test the experience of screen reader and keyboard users of your product.  Screen readers and keyboard navigation are dependant on content that is placed in a sensible order in the source, and the Source Order Viewer displays possible problems.  
 
 To activate this experimental feature, complete the following actions.  
 
