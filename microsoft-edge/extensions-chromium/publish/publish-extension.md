@@ -67,7 +67,7 @@ Hidden removes extensions from search results or browsing in the Microsoft Edge 
 
 ##### Markets  
 
-You must define the specific markets in which you plan to offer your extension. By default, all markets have been selected including any future markets that may be added later. Alternatively, you may choose specific markets by selecting **Change markets**. You may deselect individual markets to exclude them, or you may select **Unselect all** and then add individual markets of your choice.
+Define the specific markets in which you plan to offer your extension. By default, all markets have been selected including any future markets that are added later. Alternatively, choose specific markets by selecting **Change markets**. Deselect individual markets to exclude them, or select **Unselect all** and then add individual markets of your choice.
 
 > [!NOTE]
 > You may change the markets where your extension is offered. Users who installed your extension while it was available in their market will continue to have access to your extension. However, they will not receive any future updates submitted to the Microsoft Edge add-ons catalog.
