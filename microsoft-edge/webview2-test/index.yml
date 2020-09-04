@@ -1,0 +1,27 @@
+### YamlMime:Landing
+
+title: WebView Test documentation # < 60 chars
+summary: WebView Test is good. # < 160 chars
+
+metadata:
+  title: WebView Test documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: WebView Test is good. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: microsoft-edge
+  ms.technology: webview
+  ms.topic: landing-page # Required
+  author: msedgedevrel #Required; your GitHub user alias, with correct capitalization.
+  ms.author: MSEdgeTeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/03/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About WebView Test
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is ICoreWebView2
+            url: test.md
