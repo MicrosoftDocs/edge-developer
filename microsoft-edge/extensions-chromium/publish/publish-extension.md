@@ -169,9 +169,9 @@ When your submission passes certification, your extension is published in the Mi
 
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge \(Chromium\) Extensions | Microsoft Docs"
 
-[DeveloperRegistration]: https://docs.microsoft.com/microsoft-edge/extensions-chromium/publish/create-dev-account "Register as a Microsoft Edge extensions developer | Microsoft Docs"
+[DeveloperRegistration]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/create-dev-account "Register as a Microsoft Edge extensions developer | Microsoft Docs"
 
-[PortChromiumExtension]: https://docs.microsoft.com/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension "Port your Chromium extension to Microsoft Edge | Microsoft Docs"
+[PortChromiumExtension]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension "Port your Chromium extension to Microsoft Edge | Microsoft Docs"
 
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
 
@@ -185,4 +185,4 @@ When your submission passes certification, your extension is published in the Mi
 
 [GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos \& playlists - YouTube Help"  
 
-[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request"
+[ExtensionsSupportForm]: https://support.microsoft.com/en-us/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request"
