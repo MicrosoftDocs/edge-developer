@@ -1,5 +1,5 @@
 ---
-description: New Media panel, capture node screenshot, Issues Drawer pane updates, emulate missing local fonts, inactive users and prefers-reduced-data.
+description: New Media panel, capture node screenshot, Issues tool updates, emulate missing local fonts, inactive users and prefers-reduced-data.
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -33,7 +33,7 @@ The keyboard shortcuts in the DevTools now match the shortcuts for equivalent ac
 
 For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.  
 
-For more information about customizing keyboard shortcuts in the DevTools, go to [][].
+For more information about customizing keyboard shortcuts in the DevTools, go to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
 Chromium issue [#174309][CR174309]  
 
@@ -45,18 +45,13 @@ Chromium issue [#174309][CR174309]
 
 You are now able to test the look and feel of your website or app on 2 new devices:  [Surface Duo][MicrosoftSurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  
 
-When emulating the devices, additional features like [spanning][DevtoolsDualScreenIntroductionDevices1], [rendering the seam][DevtoolsDualScreenIntroductionDevices2] \(the space between the two screens\), and [enabling experimental Web Platform APIs][DevtoolsExperimentalFeatures] have been added to the DevTools to help you enhance your website or app for the new class of dual-screen and foldable devices.  
+When emulating the devices, additional features like [spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], [rendering the seam][DualScreenIntroductionHowWorkSeam] \(the space between the two screens\), and [enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] have been added to the DevTools to help you enhance your website or app for the new class of dual-screen and foldable devices.  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Device emulation for Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Device emulation for Surface Duo  
 :::image-end:::  
 
-To activate this experimental feature, complete the following actions.  
-
-1.  Under the **Experiments** section, choose the **Emulation: Support dual screen mode** checkbox.  
-1.  Reload the DevTools.  
-1.  Open the DevTools **Settings** again.  
-1.  Go to `edge://flags` and choose the **Experimental Web Platform features** flag.  
+To turn on this experimental feature, go to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
 
 The feature is currently available as an experiment, so please share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team.  
 
@@ -64,7 +59,7 @@ Chromium issue: [#1054281][CR1054281]
 
 ### CSS grid overlay improvements and new experimental grid features  
 
-Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and do not require you to activate an experiment.  
+Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.  
 
 :::row:::
    :::column span="":::
@@ -84,9 +79,7 @@ Thank you for the positive feedback about the improved CSS grid overlays.  The C
 
 The Microsoft Edge DevTools team and the Chrome DevTools team are collaborating on additional features.  The new features include multiple, persistent overlays that are configurable from a new **Layout** pane on the **Elements** panel.  
 
-To preview the latest experimental features, complete the following actions.  
-
-1.  Under the **Experiments** section, choose the **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)** checkbox.  
+To turn on the new experimental features, go to [Enable new CSS Grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
 
 Chromium issue: [#1047356][CR1047356]  
 
@@ -153,25 +146,13 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="../../media/2020/08/media/localization-improvements-chinese-complex.msft.png":::
-         Microsoft Edge DevTools in Traditional Chinese  
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+         Microsoft Edge DevTools 85 and earlier in Traditional Chinese  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-japanese.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-japanese.msft.png":::
-         Microsoft Edge DevTools in Japanese  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-russian.msft.png" alt-text="Microsoft Edge DevTools in Russian" lightbox="../../media/2020/08/localization-improvements-russian.msft.png":::
-         Microsoft Edge DevTools in Russian  
-      :::image-end:::  
-   :::column-end:::  
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-english.msft.png" alt-text="Microsoft Edge DevTools in English" lightbox="../../media/2020/08/localization-improvements-english.msft.png":::
-         Microsoft Edge DevTools in English  
+      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
+         Microsoft Edge DevTools 86  or later in Traditional Chinese  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -180,30 +161,17 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 
 The current effort to improve translation quality enables easier support for more languages in the future.  
 
-Chromium issue: **n/a**  
-
 ### Highlight all search results in Elements tool  
 
 In Microsoft Edge 84 and 85, the first search result in the **Elements** panel did not highlight.  The remaining search results were highlighted correctly.  
 
-Your feedback uncovered a bug in the open source Chromium project.  
+Thank you for sending your feedback and helping improve Chromium.  Your feedback uncovered Issue [#1103316][CR1103316] in the open source Chromium project.  
 
-:::row:::
-   :::column span="":::
-      <!--todo: this figure need to be updated  -->  
-      
-      :::image type="complex" source="../../media/2020/08/null.msft.png" alt-text="Un-highlighted first search result on Elements panel in Microsoft Edge 83 or earlier" lightbox="../../media/2020/08/null.msft.png":::
-         Un-highlighted first search result on **Elements** panel in Microsoft Edge 83 or earlier
-      :::image-end:::  
-   :::column-end:::  
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Highlighted first search result on Elements panel in Microsoft Edge 84 or later" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-         Highlighted first search result on **Elements** panel in Microsoft Edge 84 or later  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
+:::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Highlighted first search result on Elements panel in Microsoft Edge 84 or later" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
+   Highlighted first search result on **Elements** panel in Microsoft Edge 84 or later  
+:::image-end:::  
 
-The update originated in Microsoft Edge 86 and is now available in Microsoft Edge 84 or later.  
+The issue is now fixed in all versions of Microsoft Edge.  
 
 Chromium issue: [#1103316][CR1103316]  
 
@@ -213,7 +181,6 @@ The following sections announce additional features available in Microsoft Edge 
 
 <!-- The CRbug assocaited with the new media panel is locked.  -->  
 
-<!--
 ### New Media panel  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
@@ -222,16 +189,17 @@ The following sections announce additional features available in Microsoft Edge 
 
 DevTools now displays media players information in the [Media][DevtoolsMediaIndex] panel.  
 
-:::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="New Media panel" lightbox="../../media/2020/08/media-panel.msft.png":::
-   New **Media** panel  
-:::image-end:::  
+To open the new **media** panel, complete the following step.  
 
-Prior to the new **Media** panel in DevTools, you found the logging and debug information about video players was located on the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals`.  
+1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.  
+    
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="New Media panel" lightbox="../../media/2020/08/media-panel.msft.png":::
+       New **Media** panel  
+    :::image-end:::  
 
-The new **Media** panel provides an easier way to view events, logs, properties, and a timeline of frame decodes in the same browser tab as the video player.  You view the live content and inspect on potential issues quicker \(for example, why dropped frames are occurring, why is JavaScript interacting with the player in an unexpected way\).  
+Prior to the new **Media** panel in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals` and choose the **Players** tab.  
 
-Chromium issue: [#1018414][CR1018414]  
--->  
+View live content and inspect potential issues more quickly.  For example, why frames are dropped or why is JavaScript interacting with the player in an unexpected way.  
 
 ### Capture node screenshots using Elements panel context menu  
 
@@ -245,7 +213,7 @@ For example, to take a screenshot of the table of contents, hover on the element
 
 Chromium issue: [#1100253][CR1100253]  
 
-### Issues Drawer pane updates  
+### Issues tool updates  
 
 The Issues warning bar on the **Console** panel is now replaced with a regular message.  
 
@@ -255,7 +223,7 @@ The Issues warning bar on the **Console** panel is now replaced with a regular m
    Issues in console message  
 :::image-end:::  
 
-Third-party cookie issues are now hidden by default in the **Issues** Drawer pane.  Enable the new **Include third-party cookie issues** checkbox to view each.  
+Third-party cookie issues are now hidden by default in the **Issues** tool.  Enable the new **Include third-party cookie issues** checkbox to view the issues.  
 
 :::image type="complex" source="../../media/2020/08/third-party-cookies.msft.png" alt-text="third-party cookie issues checkbox" lightbox="../../media/2020/08/third-party-cookies.msft.png":::
    third-party cookie issues checkbox  
@@ -267,7 +235,7 @@ Chromium issues: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589
 
 Open the [Rendering tab][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] and use the new **Disable local fonts** feature to emulate missing `local()` sources in `@font-face` rules.  
 
-For example, when the font named `Rubik` is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.  
+For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.  
 
 When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts and fetches each from the network.  
 
@@ -275,7 +243,7 @@ When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts an
    Emulate missing local fonts  
 :::image-end:::  
 
-As a developer or designer you may use two different copies of the same font during development.
+If you use two different copies of the same font during development, such as the following examples.  
 
 *   A local font for your design tools.  
 *   A web font for your code.  
@@ -284,13 +252,13 @@ Use **Disable local fonts** to make it easier for you to perform the following t
 
 *   Debug and measure loading performance and optimization of web fonts.  
 *   Verify accuracy of your CSS `@font-face` rules.  
-*   Discover differences between a web font and any local versions of a font.  
+*   Discover differences between local versions installed on your device and a web font.  
 
 Chromium issue: [#384968][CR384968]  
 
 ### Emulate inactive users  
 
-The [Idle Detection API][WebDevIdleDetection] allows developers to detect inactive users and react on idle state changes.  You are now able to use DevTools to emulate idle state changes in the **Sensors** Drawer pane for both the user state and the screen state instead of waiting for the actual idle state to change.  You may open the **Sensors** Drawer pane from the [drawer][DevtoolsCustomizeIndexDrawer].  
+The [Idle Detection API][WebDevIdleDetection] allows developers to detect inactive users and react on idle state changes.  You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You may open the **Sensors** tool from the [Drawer][DevtoolsCustomizeIndexDrawer].  
 
 :::image type="complex" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Emulate inactive users" lightbox="../../media/2020/08/emulate-idle.msft.png":::
    Emulate inactive users  
@@ -328,6 +296,7 @@ DevTools now has better support the following JavaScript language features.
 
 Chromium issues: [1086817][CR1086817], [1080569][CR1080569]  
 
+<!--  
 ### Lighthouse 6.2 in the Lighthouse panel  
 
 The **Lighthouse** panel is now running Lighthouse 6.2.  For a full list of changes, go to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
@@ -391,10 +360,11 @@ The following audit was updated in Lighthouse 6.2.
 :::row-end:::  
 
 Chromium issue: [#772558][CR772558]  
+-->  
 
 ### Deprecation of other origins listing in the Service Workers pane  
 
-DevTools now provides a link to view the full list of service workers from other origins in the new ServiceWorker setting.  To access it, go to `edge://serviceworker-internals/?devtools`.  
+DevTools now provides a link from the **Service workers** pane \(**Application** panel > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, go to `edge://service-worker-internals/?devtools`.  
 
 Previously DevTools displayed a list nested under the **Application** panel > **Service workers** pane.  
 
@@ -406,7 +376,7 @@ Chromium issue: [#807440][CR807440]
 
 ### Show coverage summary for filtered items  
 
-DevTools now recalculates and displays a summary of coverage information dynamically when filters are applied in the [Coverage][DevtoolsCoverageIndex] Drawer pane.  Previously, the **Coverage** Drawer pane always displayed a summary of all coverage information.  
+DevTools now recalculates and displays a summary of coverage information dynamically when filters are applied in the [Coverage][DevtoolsCoverageIndex] tool.  Previously, the **Coverage** tool always displayed a summary of all coverage information.  
 
 In the 1st of the following figures, the summary initially displays `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` and in the 2nd of the following figures, the summary displays `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` after CSS filtering is applied.  
 
@@ -417,7 +387,7 @@ In the 1st of the following figures, the summary initially displays `344 kB of 1
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Coverage summary for filtered items" lightbox="../../media/2020/08/coverage-compare-filter.msft.png":::
+      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Coverage summary for filtered items" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
          Coverage summary for filtered items  
       :::image-end:::  
    :::column-end:::
@@ -429,15 +399,15 @@ Chromium issue: [#1061385][CR1090802]
 
 DevTools now show a detailed view for each frame.  To access it, choose a frame under the **Frames** menu in the **Application** panel.  
 
-:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="New frame detailed view in Application panel" lightbox="../../media/2020/08/frame-details.msft.png":::
-   New frame detailed view in **Application** panel  
+:::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="New detailed view for a frame in Application panel" lightbox="../../media/2020/08/frame-details.msft.png":::
+   New detailed view for a frame in **Application** panel  
 :::image-end:::  
 
 Chromium issue: [#1093247][CR1093247]  
 
 #### Frame details for opened windows  
 
-Open windows and pop-up windows now display under the frame tree as well.  The frame detailed view of the opened windows includes additional security information.  
+Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.  
 
 <!--todo: this figure need to be updated  -->  
 
@@ -445,21 +415,17 @@ Open windows and pop-up windows now display under the frame tree as well.  The f
    New frame detailed view for opened windows  
 :::image-end:::  
 
-In the near future, more security information is planned to be added to the frame detailed view.  
-
 Chromium issue: [#1107766][CR1107766]  
 
 #### Security and isolation information  
 
-Display security and isolation information \(COEP and COOP\).  
-
-Secure context is now displayed, [Cross-Origin-Embedder-Policy (COEP) and Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] in the frame details.  
+Secure context is now displayed, [Cross-Origin-Embedder-Policy (COEP) and Cross-Origin-Opener-Policy (COOP)][WebDevCoopCoep] in the detailed view of the frame.  
 
 :::image type="complex" source="../../media/2020/08/coep-coop.msft.png" alt-text="Security and isolation information" lightbox="../../media/2020/08/coep-coop.msft.png":::
    Security and isolation information  
 :::image-end:::  
 
-In the near future, more security information is planned to be added to the frame detailed view.  
+In the near future, more security information is planned to be added to the detailed view of the frame.  
 
 Chromium issue: [#1051466][CR1051466]  
 
@@ -481,7 +447,7 @@ Chromium issue: [#1093227][CR1093227]
 
 #### Reinstate Properties pane in the Elements panel  
 
-The **Properties** pane is back, it was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  In the near future, improvements are planned for the workflow for inspecting properties of elements.  
+The **Properties** pane is back. It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  The Microsoft Edge DevTools team and Chrome DevTools team are planning improvements for inspecting properties of elements.  
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Properties pane in the Elements panel" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **Properties** pane in the **Elements** panel  
@@ -505,7 +471,7 @@ Chromium issue: [#1103854][CR1103854]
 
 Imported font faces are now added to the list of CSS auto-completion when editing the `font-family` property in the **Styles** pane.  
 
-For example, if `monospace` is a custom font installed on the local machine, it is displayed in the CSS completion list.  For previous versions, the font was not displayed.  
+For example, if `monospace` is a custom font installed on the local machine, it is displayed in the CSS completion list.  In previous versions of Microsoft Edge, the font was not displayed.  
 
 :::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Auto-complete custom fonts" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    Auto-complete custom fonts  
@@ -561,15 +527,18 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Deprecation of the Properties pane in the Elements panel - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsDualScreenIntroductionDevices1]: /microsoft-edge/devtools-guide-chromium/dual-screen/index "Introduction to dual-screen devices - Dual-screen | Microsoft Docs"  
-[DevtoolsDualScreenIntroductionDevices2]: /microsoft-edge/devtools-guide-chromium/dual-screen/index "Introduction to dual-screen devices - Dual-screen | Microsoft Docs"  
-[DevtoolsExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features "Experimental features - Microsoft Edge Development | Microsoft Docs"  
-
+[DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "table - Console API reference | Microsoft Docs"  
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
+
+[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
@@ -587,7 +556,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR772558]: https://crbug.com/772558 "DevTools: Update to latest version of Lighthouse | Chromium bugs"  
 [CR807440]: https://crbug.com/807440 "Chrome locks up with large numbers of SWs | Chromium bugs"  
 [CR997694]: https://crbug.com/997694 "XHR requests with 302 status are not shown under the \"xhr\" filter in network panel | Chromium bugs"  
-<!--  [CR1018414]: https://crbug.com/1018414 "Issue 1018414 | Chromium bugs"  -->  
 [CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling"  
 [CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"  
 [CR1054281]: https://crbug.com/1054281 "Feature Request: DevTools should emulate foldable and dual-screen devices | Chromium bugs"  

@@ -109,6 +109,10 @@ Improves on-page visualizations when you debug websites that have CSS grid layou
    CSS grid debugging feature  
 :::image-end:::  
 
+To preview the latest experimental features, complete the following actions.  
+
+1.  Under the **Experiments** section, choose the **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)** checkbox.  
+
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
 ### Enable support to move tabs between panels  
