@@ -30,7 +30,7 @@ Create a zip file that represents your extension package. Your extension package
 
 The following fields in the manifest are automatically included in your store listing details and can't be modified from the store listings page, which is described later in this article. Ensure they're filled out as you would like them to display on the store details page, before uploading your package to Partner Center. For an example of the code required for the manifest file, see the manifest file basics.  
 
-* Name field in the manifest file as the **display name** on the store details page 
+* Name field in the manifest file, which is the **Display name** on the store details page.  
 
 * Description field in the manifest file as the **short description** on the store details page. Provide a short, catchy description to display at the top of the listing for your extension. When included, the short description specified in the extension manifest file is displayed in your store listing. If a short description is not included in the manifest file, the first few lines of Description is displayed. We recommend providing a brief description to avoid content repetition on your store list page. 
 
