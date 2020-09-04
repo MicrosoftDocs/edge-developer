@@ -144,7 +144,7 @@ The **Submit your extension** page allows you to include notes for certification
 
 ##### Notes for certification (Optional)
 
-As you submit your extension, you have the option to use the **Notes for certification** page to provide additional information to the certification testers. This information helps ensure that your extension is tested correctly. If your extension is not fully tested, it may fail certification. 
+When submitting your extension, you can use the **Notes for certification** page to provide additional information to the certification testers. This information helps ensure that your extension is tested correctly. If your extension isn't fully tested, it may fail certification. 
 
 Ensure you include the following information, as necessary:
 
