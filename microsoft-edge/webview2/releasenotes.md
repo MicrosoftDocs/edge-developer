@@ -12,7 +12,7 @@ keywords:  IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, ed
 
 # Release notes for WebView2 SDK  
 
-The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a 6-week cadence.  Review the following content for up to date information about product announcements, additions and modifications to the API surface, and breaking changes.  
+The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a six week cadence.  Review the following content for up-to-date information about product announcements, additions and modifications to the API surface, and breaking changes.  
 
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
@@ -22,7 +22,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 
 ## 0.9.627-prerelease  
-Release Date: 09/08/2020
+Release Date: Sept 08, 2020
 
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
@@ -37,7 +37,7 @@ Release Date: 09/08/2020
 
 
 ## 0.9.622  
-Release Date: 09/08/2020
+Release Date: Sept 08, 2020
 
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
@@ -57,24 +57,24 @@ Release Date: 09/08/2020
 
 #### .NET  
 
-*   Updated Nuget Target to include WebViewLoader.dll.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) & \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).
+*   Updated NuGet Target to include WebViewLoader.dll.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) & \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).
 *   Updated WebResourceRequested to expose HttpRequestMessage and HttpResponseMessage APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).
 
 ## 0.9.579  
-Release Date: 07/20/2020
+Release Date: July 20, 2020
 
 [NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
 
 #### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview. See [Distribution of WebView2](./concepts/distribution.md#understand-the-webview2-runtime-and-installer-preview) for more details. 
+    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview. For more information, see [Distribution of WebView2](./concepts/distribution.md#understand-the-webview2-runtime-and-installer-preview) for more details. 
 * > [!IMPORTANT]
     > **Announcement**:  Support for WebView2 SDK Versions [0.8.190](#08190), [0.8.230](#08230), [0.8.270](#08270), [0.8.314](#08314), and [0.8.355](#08355) will be dropped after the next SDK release. These versions are also marked deprecated on nuget.org. WebView2 recommends staying up to date with the latest version of WebView2.
 
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).
-*   Disabled popup blocker in WebView, see [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in NewWindowRequested event for more details.
-*   Ensured WebView navigation starting event is fired for about:blank. Now, NavigationStarting events are fired for all navigations, but cancellations for about:blank or iframe srcdoc is not supported and ignored.
+*   Disabled popup blocker in WebView. For more information, see the [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in the NewWindowRequested event.
+*   Ensured WebView navigation starting event is fired for about:blank. Now, NavigationStarting events are fired for all navigation, but cancellations for about:blank or iframe srcdoc isn't supported and ignored.
 *   Blocked `edge:// URI` scheme in WebView.
 * Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.
 *   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request. Authentication headers, if any, are included in the response object.
@@ -95,7 +95,7 @@ Release Date: 07/20/2020
 
 #### Win32 C/C++  
 
-*   Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures] which fires when `window.open()` is called and associated [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
+*   Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures], which fires when `window.open()` is called and associated with [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
 *   > [!IMPORTANT]
     > **Breaking Change**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] is deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209538Webview2IdlCreatecorewebview2environmentwithoptions].  
 *   > [!IMPORTANT]
@@ -152,13 +152,13 @@ Release Date: 07/20/2020
     > **Breaking Change**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] is deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithoptions].  
 *   Added [FrameNavigationCompleted][ReferenceWin3209488Icorewebview2AddFramenavigationcompleted] event.  Now, when an iframe completes navigation, an event is fired and returns the success of the navigation and the navigation id.  
 *   Added [ICoreWebView2EnvironmentOptions][ReferenceWin3209488Icorewebview2environmentoptions] interface, which may be used to determine the version of the WebView2 Runtime the application targets.  
-*   Added [IsBuiltInErrorPageEnabled][ReferenceWin3209488Icorewebview2settingsGetIsbuiltinerrorpageenabled] setting.  Now, you may choose to enable or disable the built in error page for navigation failure and render process failure.  
+*   Added [IsBuiltInErrorPageEnabled][ReferenceWin3209488Icorewebview2settingsGetIsbuiltinerrorpageenabled] setting.  Now, you may choose to enable or disable the built-in error page for navigation failure and render process failure.  
 *   Updated Remote Object Injection to support .NET IDispatch implementations \([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
 *   Updated [NewWindowRequested][ReferenceWin3209488Icorewebview2AddNewwindowrequested] event to handle requests from context menus \([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\).  
 *   Released the first separate WebView2 pre-release package where you may access visual hosting APIs.  The WebView team updated [APISample][GithubMicrosoftedgeWebview2samplesMain] to include the new experimental APIs.  
-    *   Added [ICoreWebView2ExperimentalCompositionController][ReferenceWin3209488Icorewebview2experimentalcompositioncontroller] interface, which is used to connect to a composition tree and provide input meant for the WebView.  
-    *   Added [ICoreWebView2ExperimentalPointerInfo][ReferenceWin3209488Icorewebview2experimentalpointerinfo] which contains all the information from a `POINTER_INFO`.  It is passed to SendPointerInput to inject pointer input into the WebView.  
-    *   Added [ICoreWebView2ExperimentalCursorChangedEventHandler][ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler] which tells the app when the mouse cursor over the WebView should be changed.  When mouse is over a text box in the WebView, the cursor changes from the arrow to the selector.  The cursor property on the `CompositionController` tells the app what the mouse cursor should currently be for the WebView.  
+    *   Added [ICoreWebView2ExperimentalCompositionController][ReferenceWin3209488Icorewebview2experimentalcompositioncontroller] interface, to connect to a composition tree and provide input for the WebView.  
+    *   Added [ICoreWebView2ExperimentalPointerInfo][ReferenceWin3209488Icorewebview2experimentalpointerinfo], which contains all the information from a `POINTER_INFO`.  This object is passed to SendPointerInput to inject pointer input into the WebView.  
+    *   Added [ICoreWebView2ExperimentalCursorChangedEventHandler][ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler], which tells the app when the mouse cursor over the WebView should be changed.  When mouse is over a text box in the WebView, the cursor changes from the arrow to the selector.  The cursor property on the `CompositionController` tells the app what the mouse cursor should currently be for the WebView.  
 
 ## 0.9.430  
 
@@ -233,7 +233,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 [NuGet package][NuGetGallery0.8.230] \| minimum Microsoft Edge version 77.0.230.0.  
 
 *   Added `Stop` API to stop all navigation and pending resource fetches \([\#28][GithubMicrosoftedgeWebviewfeedbackIssue28]\).  
-*   Added .tlb file to the Nuget package \([\#22][GithubMicrosoftedgeWebviewfeedbackIssue22]\).  
+*   Added .tlb file to the NuGet package \([\#22][GithubMicrosoftedgeWebviewfeedbackIssue22]\).  
 *   Added .NET projects to the installer list in the NuGet package \([\#32][GithubMicrosoftedgeWebviewfeedbackIssue32]\).  
 
 ## 0.8.190  
