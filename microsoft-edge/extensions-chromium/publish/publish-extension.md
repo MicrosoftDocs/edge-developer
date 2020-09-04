@@ -96,7 +96,7 @@ Select **Save** to continue to the **Store listings** section.
 The information provided in this section is displayed to users that visit your listing on the Microsoft Edge add-ons catalog. Even though some fields are optional, we recommend providing as much information as possible. The minimum required information for your extension to be listed in the store, for each language mentioned in your extension package, are **Description** and **Extension Store logo**.
 
 > [!NOTE]
-> The store listing mandatory details need to be filled out for each language mentioned in your extension zip package. To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and re-upload it. 
+> The minimum required store listing details need to be filled out for each language mentioned in your extension zip package. To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, you must modify the list of languages supported by your extension in the extension package, create a new extension package, and reupload it. 
 
 
 
