@@ -8,7 +8,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "microsoft-edge/**",
+          // "microsoft-edge/**",
           "**/includes/**"
         ]
       },
