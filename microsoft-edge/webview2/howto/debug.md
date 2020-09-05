@@ -99,7 +99,7 @@ Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.
 In Visual Studio Code, complete the following actions to debug your code. 
 
 > [!NOTE]
-> Requires at least build [insert build here]. 
+> Requires at least build [insert build here].
 
 1.  Configure the JavaScript debugger.  
     1.  In Visual Studio Code, open the **Run** tab.  
