@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -127,7 +127,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 #### Additional resources  
 
 *   [More info on developing dual-screen web experiences in Surface Duo documentation][DualScreenWebIndex]  
-*   [Install the Surface Duo emulator][DualScreenAndroidGetDuoSdk].  It differs from the emulator in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio]   
+*   [Install the Surface Duo emulator][DualScreenAndroidGetDuoSdk].  It differs from the emulator in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio]  
 
 ### Enable new CSS grid debugging features  
 
@@ -218,7 +218,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 *   Send your feedback using the **Send Feedback** icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
 
-:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
+:::image type="complex" source="./media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="./media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 

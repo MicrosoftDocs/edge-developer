@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020 
+ms.date: 09/08/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Microsoft Edge DevTools keyboard shortcuts  
 
-This page is a reference of keyboard shortcuts in Microsoft Edge DevTools.
+This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
 You can also find shortcuts in tooltips. Hover over a UI element of DevTools
 to display its tooltip. If the element has a shortcut, the tooltip includes it.
