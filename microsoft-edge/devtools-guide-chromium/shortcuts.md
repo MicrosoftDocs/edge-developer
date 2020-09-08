@@ -27,7 +27,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
 You can also find shortcuts in tooltips. Hover over a UI element of DevTools
-to display its tooltip. If the element has a shortcut, the tooltip includes it.
+to display the tooltip. If the element has a shortcut, the tooltip includes it.
 
 ## Keyboard shortcuts for opening DevTools  
 
@@ -48,7 +48,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |  
 | Focus the next panel | `Control`+`]` | `Command`+`]` |  
 | Focus the previous panel | `Control`+`[` | `Command`+`[` |  
-| Switch back to whatever [docking position][DevtoolsCustomizeIndexPlacement] you last used.  If DevTools have been in its default position for the entire session, then this shortcut undocks DevTools into a separate window | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
+| Switch back to whatever [docking position][DevtoolsCustomizeIndexPlacement] you last used.  If DevTools have been in the default position for the entire session, then this shortcut undocks DevTools into a separate window | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |  
 | Toggle [Device emulation][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |  
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Open the [Command Menu][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
@@ -72,12 +72,12 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 |:--- |:--- |:--- |  
 | Undo change | `Control`+`Z` | `Command`+`Z` |  
 | Redo change | `Control`+`Y` | `Command`+`Shift`+`Z` |  
-| Choose the element above / below the currently selected element | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
+| Select the element above / below the currently selected element | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
 | Expand the currently selected node. If the node is already expanded, this shortcut selects the element below it | `Right Arrow` | `Right Arrow` |  
 | Collapse the currently selected node. If the node is already collapsed, this shortcut selects the element above it | `Left Arrow` | `Left Arrow` |  
-| Expand or collapse the currently selected node and all of its children | Hold `Control`+`Alt`, then choose the **arrow** icon next to the name of the element | Hold `Option`, then choose the **arrow** icon next to the name of the element |  
+| Expand or collapse the currently selected node and all of the children | Hold `Control`+`Alt`, then choose the **arrow** icon next to the name of the element | Hold `Option`, then choose the **arrow** icon next to the name of the element |  
 | Toggle **Edit Attributes** mode on the currently selected element | `Enter` | `Enter` |  
-| Choose the next / previous attribute after entering **Edit Attributes** mode | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
+| Select the next / previous attribute after entering **Edit Attributes** mode | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
 | Hide the currently selected element | `H` | `H` |  
 | Toggle **Edit as HTML** mode on the currently selected element | `Function`+`F2` | `F2` |  
 
@@ -85,7 +85,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 | Action | Windows | macOS |  
 |:--- |:--- |:--- |  
-| Go to the line where a property value is declared | Hold `Control`, then choose the property value | Hold `Command`, then choose the property value |  
+| Go to the line where a property value is declared | Hold `Control`, then select the property value | Hold `Command`, then select the property value |  
 | Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then choose the **Color Preview** box next to the value | Hold `Shift`, then choose the **Color Preview** box next to the value |  
 | Select the next / previous property or value | Choose a property name or value, then select `Tab` / `Shift`+`Tab` | Choose a property name or value, then select `Tab` / `Shift`+`Tab` |  
 | Increment / decrement a property value by 0.1 | Choose a value, then select `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Choose a value, then select `Option`+`Up Arrow` / Option+Down Arrow |  
@@ -145,9 +145,9 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Get next statement | `Down Arrow` | `Down Arrow` |  
 | Focus the **Console** | `Control`+ `` ` `` | `Control`+`` ` `` |  
 | Clear the **Console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
-| Force a multi-line entry.  DevTools should detect multi-line scenarios by default, so this shortcut is mostly unnecessary | `Shift`+`Enter` | `Command`+`Return` |  
+| Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+`Enter` | `Command`+`Return` |  
 | Run | `Enter` | `Return` |  
-| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then choose **Expand** \(![Expand][ImageExpandIcon]\) | Hold `Alt`, then choose **Expand** \(![Expand][ImageExpandIcon]\) |  
+| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then select **Expand** \(![Expand][ImageExpandIcon]\) | Hold `Alt`, then select **Expand** \(![Expand][ImageExpandIcon]\) |  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
