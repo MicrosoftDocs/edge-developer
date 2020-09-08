@@ -165,7 +165,7 @@ Chromium issue: [#1103316][CR1103316]
 
 ## Announcements from the Chromium project  
 
-[!INCLUDE [contact DevTools team note](../../includes/chromimu-whats-new-note.md)]  
+[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
 ### New Media panel  
 
