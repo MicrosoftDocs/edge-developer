@@ -83,18 +83,21 @@ Use the [enable experimental APIs](#enable-experimental-apis) to enhance your we
 
 #### Enable experimental APIs  
 
+In addition to enabling this experiment in the Microsoft Edge DevTools, open a new tab in Microsoft Edge and navigate to edge://flags. In the Search flags textbox, enter Experimental Web Platform features, select Disabled, and set this flag to Enabled. Restart Microsoft Edge. You're now able to enhance your website or app for dual-screen and foldable devices using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].
+
 To [enable this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools, complete the following steps.  
 
-1.  navigate to `edge://flags`.  
+1.  Navigate to `edge://flags`.  
 1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.  
 1.  Restart Microsoft Edge.  
 
 To enhance your website or app for dual-screen and foldable devices, navigate to [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].
 
-[Turn on this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools. 
+[Turn on this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools.  
 
 1.  Open a new tab in Microsoft Edge and navigate to `edge://flags`.  
-1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose **Experimental Web Platform features**, and change **Disabled** to **Enabled**.  1.  1.  Restart Microsoft Edge.  
+1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose **Experimental Web Platform features**, and change **Disabled** to **Enabled**.  
+1.  Restart Microsoft Edge.  
 
 For more information about enhancing your website \(or app\) for dual-screen and foldable devices, navigate to [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].  
 
@@ -114,7 +117,7 @@ When you emulate the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture i
 > [!NOTE]
 > The **seam** is the space between the two screens.  
 
-The emulated display for your website \(or app\) is a correct representation.  It matches the display in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  Update the content to display better along the **seam**.  For more information about adapting your website \(or app\) to the **seam**, navigate to [Introduction to dual-screen devices][DualScreenIntroductionHowWorkSeam] in the Surface Duo documentation.  
+The emulated display for your website \(or app\) is a correct representation.  It matches the display in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  Update the content to display better along the **seam**.  For more information about adapting your website \(or app\) to the **seam**, navigate to [How to work with the seam][DualScreenIntroductionHowWorkSeam] in the Surface Duo documentation.  
 
 The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has additional features to help you test your website or app in multiple postures and orientations.  Choose **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation. Combine the feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features enable testing your website or app in all four possible postures and orientations.  
 
@@ -125,9 +128,8 @@ The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has addition
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is available, the icon is highlighted.  If the flag is not available, the icon is not highlighted.  To turn on \(or off\) the experiment, either choose the icon or navigate to `edge://flags` and toggle the flag.  
 
 #### Additional resources  
-
-*   [More info on developing dual-screen web experiences in Surface Duo documentation][DualScreenWebIndex]  
-*   [Install the Surface Duo emulator][DualScreenAndroidGetDuoSdk].  It differs from the emulator in Microsoft Edge that emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio]  
+*   For more information about developing, navigate to [Dual-screen web experiences][DualScreenWebIndex].  
+*   Install the Surface Duo emulator].  It is different from the emulator in Microsoft Edge.  It emulates the Surface Duo running Android and integrates with [Android Studio][AndroidDeveloperStudio].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 
 ### Enable new CSS grid debugging features  
 
@@ -192,7 +194,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 
 ### Enable Source Order Viewer  
 
-**Source Order Viewer** is the working title of an experiment.  It displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
+**Source Order Viewer** is an experiment that displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
 After enabling the experiment, ensure you restart the DevTools.  To use Source Order Viewer:  
 
@@ -222,6 +224,12 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
    The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
 
+<!--  
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+-->  
+
 <!-- image links -->  
 
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
@@ -239,7 +247,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo emulator | Microsoft Docs"  
-[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "Introduction to dual-screen devices | Microsoft Docs"  
+[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"  
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 

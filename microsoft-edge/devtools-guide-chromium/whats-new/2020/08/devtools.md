@@ -1,5 +1,5 @@
 ---
-description: New Media panel, capture node screenshot, Issues tool updates, emulate missing local fonts, inactive users, and prefers-reduced-data.
+description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo and Samsung Galaxy Fold, CSS grid overlay improvements, and more.
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
