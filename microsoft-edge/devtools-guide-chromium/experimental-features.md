@@ -29,7 +29,7 @@ Use the following steps to turn on \(or off\) experimental features in Microsoft
        List of experiments in DevTools Settings  
     :::image-end:::  
     
-1.  On the **Experiments** page, scroll through the list of all available experimental features and select the checkbox next to each feature that you want to test.  
+1.  On the **Experiments** page, scroll through the list of all available experimental features and choose the checkbox next to each feature that you want to test.  
 1.  Close and reopen Microsoft Edge DevTools.  
 
 > [!NOTE]
@@ -83,8 +83,6 @@ Use the [enable experimental APIs](#enable-experimental-apis) to enhance your we
 
 #### Enable experimental APIs  
 
-In addition to enabling this experiment in the Microsoft Edge DevTools, open a new tab in Microsoft Edge and navigate to edge://flags. In the Search flags textbox, enter Experimental Web Platform features, select Disabled, and set this flag to Enabled. Restart Microsoft Edge. You're now able to enhance your website or app for dual-screen and foldable devices using [CSS media queries and the JavaScript Windows Segment Enumeration API][GitHubMicrosoftedgeMsedgeexplainerFoldables].
-
 To [enable this experiment](#turn-on-experimental-features) in the Microsoft Edge DevTools, complete the following steps.  
 
 1.  Navigate to `edge://flags`.  
@@ -125,7 +123,7 @@ The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has addition
    Matrix of postures and orientations for dual-screen and foldable devices  
 :::image-end:::  
 
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is available, the icon is highlighted.  If the flag is not available, the icon is not highlighted.  To turn on \(or off\) the experiment, either choose the icon or navigate to `edge://flags` and toggle the flag.  
+The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.  
 
 #### Additional resources  
 *   For more information about developing, navigate to [Dual-screen web experiences][DualScreenWebIndex].  

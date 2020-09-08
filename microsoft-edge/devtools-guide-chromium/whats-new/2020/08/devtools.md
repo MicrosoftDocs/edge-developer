@@ -17,23 +17,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ### Match keyboard shortcuts in DevTools to Visual Studio Code  
 
-From your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) and the [Chromium public issue tracker][CRIssuesList], customizing keyboard shortcuts in the DevTools was a highly requested feature.  In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Visual Studio Code][VisualStudioCode].  This feature is one of the features that the team is developing for shortcut customization.  
+In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Visual Studio Code][VisualStudioCode].  
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    Match keyboard shortcuts in the DevTools to Visual Studio Code  
 :::image-end:::  
 
-To activate this feature, complete the following actions.  
-
-1.  Open **DevTools**.  
-1.  To open **Settings**, select `?` or choose the **Settings** \(![DevTools Settings icon][ImageSettingsIcon]\) icon in the top-right corner of the DevTools.  
-1.  On the **Shortcuts** section, choose the **Match shortcuts from preset** and change **DevTools (Default)** to **Visual Studio Code**.  
-
-The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
+To activate this feature, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
 For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.  
-
-For more information about customizing keyboard shortcuts in the DevTools, go to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
 Chromium issue [#174309][CR174309]  
 
@@ -45,19 +37,19 @@ Chromium issue [#174309][CR174309]
 
 You are now able to test the look and feel of your website or app on two new devices:  [Surface Duo][MicrosoftSurfaceDevicesDuo] and [Samsung Galaxy Fold][SamsungMobileGalaxyFold] in Microsoft Edge.  
 
-To help enhance your website or app for the dual-screen and foldable devices, use the following features when emulating the device.  
+To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].  
 
-*   [Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices].
+*   [Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.
 *   [Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.
-*   [Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis].  
+*   [Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Device emulation for Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Device emulation for Surface Duo  
 :::image-end:::  
 
-To turn on this experimental feature, go to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
+To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Emulation: Support dual screen mode**.  
 
-This feature is currently available as an experiment, share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team.  
+For more information about this experiment, navigate to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
 
 Chromium issue: [#1054281][CR1054281]  
 
@@ -65,31 +57,24 @@ Chromium issue: [#1054281][CR1054281]
 
 Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.  
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/css-grid-overlay-main.msft.png" alt-text="CSS grid overlay for main element" lightbox="../../media/2020/08/css-grid-overlay-main.msft.png":::
-         CSS grid overlay for `main` element  
-      :::image-end:::  
-   :::column-end:::  
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="CSS grid overlay for article element" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
-         CSS grid overlay for `article` element  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
+:::image type="complex" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="CSS grid overlay for article element" lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
+   CSS grid overlay for `article` element  
+:::image-end:::  
 
 > [!NOTE]
 > For more information about grid overlays, go to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
 
 The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** panel.  
 
-To turn on the new experimental features, go to [Enable new CSS Grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
+To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.  
+
+For more information about this experiment, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
 
 Chromium issue: [#1047356][CR1047356]  
 
 ### Table copied from the Console preserves formatting  
 
-In Microsoft Edge 85 or earlier, the formatting of a copied `console.table` was lost.  If you copied the output from the [table][DevtoolsConsoleApiTable] Console API, and pasting it, only the text of the table was kept.  
+In Microsoft Edge 85 or earlier, the formatting of a copied `console.table` was lost.  If you copied the output from the [table][DevtoolsConsoleApiTable] Console API, and pasted it, only the text of the table was kept.  
 
 :::row:::
    :::column span="":::
@@ -135,15 +120,13 @@ The new accessibility helper displays the order of elements in the source.
 
 This feature should make it easier to test the experience of screen reader and keyboard users of your product.  Screen readers and keyboard navigation are dependent upon the order of content in the sources.  If display layout differs from a sensible order in the source, the Source Order Viewer displays possible problems.  
 
-To activate this experimental feature, complete the following actions.  
+To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Source Order Viewer**.  
 
-1.  Under the **Experiments** section, choose the **Source Order Viewer** checkbox.  
-1.  Reload the DevTools.  
-1.  On the **Elements** panel, choose the **Accessibility** pane.  
-1.  On the **Accessibility** pane, in the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
+For more information about this experiment, navigate to [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
 
 Chromium issue: [#1094406][CR1094406]  
 
+<!--
 ### DevTools language enhancements  
 
 Your feedback and internal discoveries uncovered which text strings used in the Microsoft Edge feedback should remain untranslated or create confusion when translated.  
@@ -164,6 +147,7 @@ Your feedback and internal discoveries uncovered which text strings used in the 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.  
 
 The current effort to improve translation quality enables easier support for more languages in the future.  
+-->  
 
 ### Highlight all search results in Elements tool  
 
@@ -185,10 +169,6 @@ Chromium issue: [#1103316][CR1103316]
 
 ### New Media panel  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
-   Experimental feature  
-:::image-end:::  
-
 DevTools now displays media players information in the [Media][DevtoolsMediaIndex] panel.  
 
 To open the new **Media** panel, complete the following step.  
@@ -201,7 +181,10 @@ To open the new **Media** panel, complete the following step.
 
 Before the new **Media** panel in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals` and choose the **Players** tab.  
 
-View live content and inspect potential issues more quickly.  For example, why frames are dropped or why is JavaScript interacting with the player in an unexpected way.  
+View live content and inspect potential issues more quickly, including the following examples.  
+
+*   Why frames are dropped?  
+*   Why JavaScript is interacting with the player in an unexpected way?  
 
 ### Capture node screenshots using the Elements panel context menu  
 
@@ -235,7 +218,7 @@ Chromium issues: [1096481][CR1096481], [1068116][CR1068116], [1080589][CR1080589
 
 ### Emulate missing local fonts  
 
-Open the [Rendering tab][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] and use the new **Disable local fonts** feature to emulate missing `local()` sources in `@font-face` rules.  
+Open the [Rendering tool][DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance] and use the new **Disable local fonts** feature to emulate missing `local()` sources in `@font-face` rules.  
 
 For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.  
 
@@ -270,10 +253,6 @@ Chromium issue: [#1090802][CR1090802]
 
 ### Emulate prefers-reduced-data  
 
-:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
-   Experimental feature  
-:::image-end:::  
-
 > [!NOTE]
 > In Microsoft Edge 86, to enable this feature, go to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.  The emulation option is only displayed if the flag is enabled.  
 
@@ -298,71 +277,11 @@ DevTools now have better supported the following JavaScript language features.
 
 Chromium issues: [1086817][CR1086817], [1080569][CR1080569]  
 
-<!--  
 ### Lighthouse 6.2 in the Lighthouse panel  
 
 The **Lighthouse** panel is now running Lighthouse 6.2.  For a full list of changes, go to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
 
-:::image type="complex" source="../../media/2020/08/lighthouse-unsize-img.msft.png" alt-text="Unsize image" lightbox="../../media/2020/08/lighthouse-unsize-img.msft.png":::
-   Unsize image  
-:::image-end:::  
-
-The following new audits are available in Lighthouse 6.2.  
-
-:::row:::
-   :::column span="":::
-      **Avoid long main thread tasks**  
-   :::column-end:::
-   :::column span="":::
-      Reports the longest tasks on the main thread, useful for identifying worst contributors to input delay.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      **Links are crawlable**  
-   :::column-end:::
-   :::column span="":::
-      Check if the `href` attribute of anchor elements links to an appropriate destination, so the links may be discovered.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      **Unsized image elements**  
-   :::column-end:::
-   :::column span="":::
-      Check if an explicit `width` and `height` is set on image elements.  Explicit image size may reduce layout shifts and improve CLS.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      **Avoid non-composited animations**  
-   :::column-end:::
-   :::column span="":::
-      Reports [non-composited animations][WebDevNonCompositedAnimations] that appear to be slow or perform poorly and reduce CLS.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      **Listens for the `unload` events**  
-   :::column-end:::
-   :::column span="":::
-      Reports the `unload` event.  Consider using the `pagehide` or `visibilitychange` events instead as the `unload` event does not fire reliably.  
-   :::column-end:::
-:::row-end:::  
-
-The following audit was updated in Lighthouse 6.2.  
-
-:::row:::
-   :::column span="":::
-      **Remove unused JavaScript**  
-   :::column-end:::
-   :::column span="":::
-      The audit is now enhanced, if a page has publicly-accessible JavaScript source maps.  
-   :::column-end:::
-:::row-end:::  
-
 Chromium issue: [#772558][CR772558]  
--->  
 
 ### Deprecation of other origins listing in the Service Workers pane  
 
@@ -411,7 +330,7 @@ Chromium issue: [#1093247][CR1093247]
 
 Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.  
 
-<!--todo: this figure need to be updated  -->  
+<!--comments detail i=mage  -->  
 
 :::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="New frame detailed view for opened windows" lightbox="../../media/2020/08/window-opener.msft.png":::
    New frame detailed view for opened windows  
@@ -434,6 +353,8 @@ Chromium issue: [#1051466][CR1051466]
 ### Elements and Network panel updates  
 
 #### Accessible color suggestion in the Styles pane  
+
+<!--Use the codepen to capture-->
 
 DevTools now provides color suggestions for low color contrast text.  
 
@@ -538,18 +459,23 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Deprecation of the Properties pane in the Elements panel - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
+[DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: /microsoft-edge/devtools-guide-chromium/experimental-features#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "table - Console API reference | Microsoft Docs"  
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features?branch=user/zoghadya/dual-screen-experiment#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"  
+[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"  
+[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
