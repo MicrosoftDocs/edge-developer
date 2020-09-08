@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
+[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
 ### Match keyboard shortcuts in DevTools to Visual Studio Code  
 
@@ -181,9 +181,7 @@ Chromium issue: [#1103316][CR1103316]
 
 ## Announcements from the Chromium project  
 
-The following sections announce additional features available in Microsoft Edge 86 that were contributed to the open-source Chromium project.  
-
-<!-- The CRbug assocaited with the new media panel is locked.  -->  
+[!INCLUDE [contact DevTools team note](../../includes/chromimu-whats-new-note.md)]  
 
 ### New Media panel  
 
