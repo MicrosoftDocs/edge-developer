@@ -118,7 +118,7 @@ The new accessibility helper displays the order of elements in the source.
    Activate **Show source order**  
 :::image-end:::  
 
-This feature should make it easier to test the experience of screen reader and keyboard users of your product.  Screen readers and keyboard navigation are dependent upon the order of content in the sources.  If display layout differs from a sensible order in the source, the Source Order Viewer displays possible problems.  
+This feature makes it easier to test the way screen reader and keyboard users experience your website or app.  Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.  The Source Order Viewer displays potential differences in order between the rendered page and the source code.  
 
 To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Source Order Viewer**.  
 
@@ -330,7 +330,7 @@ Chromium issue: [#1093247][CR1093247]
 
 Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.  
 
-<!--comments detail i=mage  -->  
+<!--comments - detail image  -->  
 
 :::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="New frame detailed view for opened windows" lightbox="../../media/2020/08/window-opener.msft.png":::
    New frame detailed view for opened windows  
@@ -354,7 +354,7 @@ Chromium issue: [#1051466][CR1051466]
 
 #### Accessible color suggestion in the Styles pane  
 
-<!--Use the codepen to capture-->
+<!-- Use the codepen to capture-->
 
 DevTools now provides color suggestions for low color contrast text.  
 
