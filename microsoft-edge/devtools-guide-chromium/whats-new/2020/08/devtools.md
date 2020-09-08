@@ -429,7 +429,7 @@ Secure context, [Cross-Origin-Embedder-Policy (COEP)][WebDevCoopCoep], and [Cros
    Security and isolation information  
 :::image-end:::  
 
-In the future, the Microsoft Edge DevTools team and Chrome DevTools team are planning to add more security information to the frame details.  
+In the future, the Microsoft Edge DevTools team and the Chrome DevTools team are planning to add more security information to the frame details.  
 
 Chromium issue: [#1051466][CR1051466]  
 
@@ -451,7 +451,7 @@ Chromium issue: [#1093227][CR1093227]
 
 #### Reinstate Properties pane in the Elements panel  
 
-The **Properties** pane is back.  It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  The Microsoft Edge DevTools team and Chrome DevTools team are planning improvements for inspecting properties of elements.  
+The **Properties** pane is back.  It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.  
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Properties pane in the Elements panel" lightbox="../../media/2020/08/properties-pane.msft.png":::
    **Properties** pane in the **Elements** panel  
