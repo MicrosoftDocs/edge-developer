@@ -330,8 +330,6 @@ Chromium issue: [#1093247][CR1093247]
 
 Open windows and pop-up windows now display under the frame tree as well.  The detailed view of the opened windows includes additional security information.  
 
-<!--comments - detail image  -->  
-
 :::image type="complex" source="../../media/2020/08/window-opener.msft.png" alt-text="New frame detailed view for opened windows" lightbox="../../media/2020/08/window-opener.msft.png":::
    New frame detailed view for opened windows  
 :::image-end:::  
@@ -354,17 +352,13 @@ Chromium issue: [#1051466][CR1051466]
 
 #### Accessible color suggestion in the Styles pane  
 
-<!-- Use the codepen to capture-->
-
 DevTools now provides color suggestions for low color contrast text.  
 
 In the example below, `h1` has low contrast text.  To fix it, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color to apply the color.  
 
-<!--  
-<video autoplay loop muted playsinline>
-  <source src="../../media/2020/08/contrast-color-suggestion.mp4" type="video/mp4">
-</video>  
--->  
+:::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Color picker suggests AA and AAA color suggestions" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
+   Color picker suggests AA and AAA color suggestions  
+:::image-end:::  
 
 Chromium issue: [#1093227][CR1093227]  
 
@@ -396,9 +390,7 @@ Chromium issue: [#1103854][CR1103854]
 
 Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.  
 
-For example, if monospace is a custom font installed on the local machine, it's displayed in the CSS completion list. In previous versions of Microsoft Edge, the font wasn't displayed.
-
-For example, if `monospace` is a custom font installed on the local machine, it is displayed in the CSS completion list.  In previous versions of Microsoft Edge, the font was not displayed.  
+For example, if `monospace` is a custom font installed on the local machine, it's displayed in the CSS completion list. In previous versions of Microsoft Edge, the font wasn't displayed.
 
 :::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Autocomplete custom fonts" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    Autocomplete custom fonts  
