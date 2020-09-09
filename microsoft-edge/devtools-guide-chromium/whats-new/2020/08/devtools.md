@@ -17,7 +17,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ### Match keyboard shortcuts in DevTools to Visual Studio Code  
 
-In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Visual Studio Code][VisualStudioCode].  
+In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Visual Studio Code][VisualStudioCode]. 
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    Match keyboard shortcuts in the DevTools to Visual Studio Code  
