@@ -39,7 +39,7 @@ This interface is an extension of the [ICoreWebView2Controller](icorewebview2con
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | Mouse event virtual keys associated with a COREWEBVIEW2_MOUSE_EVENT_KIND for SendMouseInput.
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
 
-An object implementing the [ICoreWebView2ExperimentalCompositionController](#icorewebview2experimentalcompositioncontroller) interface will also implement [ICoreWebView2Controller](icorewebview2controller.md). Callers are expected to use [ICoreWebView2Controller](icorewebview2controller.md) for resizing, visibility, focus, and so on, and then use [ICoreWebView2ExperimentalCompositionController](#icorewebview2experimentalcompositioncontroller) to connect to a composition tree and provide input meant for the WebView.
+An object implementing the ICoreWebView2ExperimentalCompositionController interface will also implement [ICoreWebView2Controller](icorewebview2controller.md). Callers are expected to use [ICoreWebView2Controller](icorewebview2controller.md) for resizing, visibility, focus, and so on, and then use ICoreWebView2ExperimentalCompositionController to connect to a composition tree and provide input meant for the WebView.
 
 ## Members
 
