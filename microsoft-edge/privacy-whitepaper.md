@@ -3,9 +3,10 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/09/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
+ms.technology: browser
 keywords: microsoft edge, privacy, whitepaper, trust
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
@@ -68,8 +69,6 @@ You may collect sites, text and images on the web, and organize the content with
 Every 24 hours Microsoft Edge downloads a list of supported sites for which special entity extraction templates exists.  The templates are specific to each website.  When you create a new item in your collection, Microsoft Edge verifies that the site from which you are creating the new collection item is on the list of supported sites.  If the site is on the list, Microsoft Edge pings the entity extraction service for the template of the specific site.  No user identifiers are associated with the request to the service.  The template attempts to identify the name, price, ratings, primary image, and other data about the item being collected.  If the site from which you are creating a new collection item is not on the supported list site, Microsoft Edge does not download a template.  The templates enable the creation of all collection items locally on the device.  No data about the collection items are sent to the service to create the collection.  
 
 To delete the templates stored on the device and clear the cache data, go to `edge://settings/privacy` and under **Clear browsing data** next to **Clear browsing data now** select the **Choose what to clear** button, select the desired time range and type of data, then select the **Clear now** button.  Another way to delete cached data, go to `edge://settings/clearBrowserData` select the desired time range and type of data, then select the **Clear now** button.  
-
-To help you get the best deal while shopping and using Collections, if you add products to your Collections, Microsoft Edge will offer the ability to compare the product price to other retailers.  If you select Compare price to other retailers Microsoft Edge will send the product name, shopping domain, price and other product details about the product to Bing to compare prices to other retailers.  The product information in Collections will be sent over HTTPS. These HTTPS calls do not contain any user identifiers.  
 
 To If you turn on the **Show suggestions from Pinterest in Collections** setting, If you want to see Collections performs a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  To remove the suggestions and stop searches for Pinterest Topic pages, go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.  
 
@@ -251,9 +250,7 @@ Microsoft Edge uses a Microsoft network time service to track time from an exter
 
 ## New tab page  
 
-Microsoft Edge provides an engaging and user-centric new tab page experience with a search box powered by [Bing][BingMain], quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365.  Customize the appearance of the new tab page by selecting the customize button.  Your new tab page preferences are set for each profile and stored locally on your device, and the preferences are not synced across devices.
-
-To enhance the load times of the new tab page, the Microsoft new tab page may be loaded in the background to make it faster. The content that is loaded might include cookies, if you allow cookies. To disable loading the Microsoft new tab page in the background, go to `edge://settings/newTabPage` and turn off the setting **Preload the new tab page for a faster experience**. 
+Microsoft Edge provides an engaging and user-centric new tab page experience with a search box powered by [Bing][BingMain], quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365.  Customize the appearance of the new tab page by selecting the customize button.  Your new tab page preferences are set for each profile and stored locally on your device, and the preferences are not synced across devices.  
 
 :::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="New tab page" lightbox="./media/whitepaper-media/n-t-p1.png":::
    New tab page  
@@ -413,8 +410,8 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Image of sync setting being set to on" lightbox="./media/whitepaper-media/sync.png":::
-   Sync setting is on
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
+   Sync  
 :::image-end:::  
 
 For sync to function, additional device connectivity and configuration data necessary to provide the sync experience, such as the name of your device, make and model, is sent.  The data may be deleted from the [Microsoft device dashboard][MicrosoftAccountDevices].  To manage your synced favorites, go to `edge://favorites`.  To manage all other data types, go to `edge://settings/profiles`.  
@@ -422,12 +419,6 @@ For sync to function, additional device connectivity and configuration data nece
 All synced data is encrypted in transit over HTTPS when transferred between the browser and Microsoft servers.  The synced data is also stored in an encrypted state in Microsoft servers.  Sensitive data types such as addresses and passwords are further encrypted on the device before being synced.  If you are using a work or school account, all data types are further encrypted before being synced using Microsoft Information Protection.  All other synced data types are stored until you delete the data, the account is deleted, or the account becomes inactive.  An account ID is attached to all synced data, as the ID is necessary to perform sync across multiple devices. 
 
 InPrivate and Guest mode browsing data does not sync to your Microsoft account.  However, favorites created during InPrivate sessions are synced across your signed-in versions of Microsoft Edge where sync is turned on.  
-
-## Tips and recommendations
-
-Microsoft Edge wants to provide you with relevant tips and recommendations to get the best experience using the browser.  Microsoft Edge uses available device connectivity and configuration data to provide relevant tips and recommendations.  This data will consist of your operating system, locale, browser settings and other device connectivity and configuration data.  This data is sent over a secure HTTPS connection with a resettable identifier unique to your browser.  For Windows 10 devices while Microsoft Edge is being set up, we honor tailored experiences in Windows.  [Learn more about tailored experiences in Windows][https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy].  
-
-This data is not sent during InPrivate browsing or Guest mode.  
 
 ## Tracking prevention  
 
