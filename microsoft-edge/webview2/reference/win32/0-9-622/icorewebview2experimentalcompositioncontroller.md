@@ -39,7 +39,7 @@ This interface is an extension of the [ICoreWebView2Controller](icorewebview2con
 [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](#corewebview2_mouse_event_virtual_keys) | Mouse event virtual keys associated with a COREWEBVIEW2_MOUSE_EVENT_KIND for SendMouseInput.
 [COREWEBVIEW2_POINTER_EVENT_KIND](#corewebview2_pointer_event_kind) | Pointer event type used by SendPointerInput to convey the type of pointer event being sent to WebView.
 
-An object implementing the [ICoreWebView2ExperimentalCompositionController](#icorewebview2experimentalcompositioncontroller) interface will also implement [ICoreWebView2Controller](icorewebview2controller.md). Callers are expected to use [ICoreWebView2Controller](icorewebview2controller.md) for resizing, visibility, focus, and so on, and then use [ICoreWebView2ExperimentalCompositionController](#icorewebview2experimentalcompositioncontroller) to connect to a composition tree and provide input meant for the WebView.
+An object implementing the ICoreWebView2ExperimentalCompositionController interface will also implement [ICoreWebView2Controller](icorewebview2controller.md). Callers are expected to use [ICoreWebView2Controller](icorewebview2controller.md) for resizing, visibility, focus, and so on, and then use ICoreWebView2ExperimentalCompositionController to connect to a composition tree and provide input meant for the WebView.
 
 ## Members
 
@@ -77,9 +77,9 @@ It is expected for the developer to send COREWEBVIEW2_MOUSE_EVENT_KIND_LEAVE mes
 
 A helper function to convert a pointerId received from the system into an [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md).
 
-> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct [COREWEBVIEW2_MATRIX_4X4](icorewebview2experimentalcompositioncontroller-corewebview2_matrix_4x4.md) transform, [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) ** pointerInfo)
+> public HRESULT [CreateCoreWebView2PointerInfoFromPointerId](#createcorewebview2pointerinfofrompointerid)(UINT pointerId, HWND parentWindow, struct COREWEBVIEW2_MATRIX_4X4 transform, [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) ** pointerInfo)
 
-parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The [COREWEBVIEW2_MATRIX_4X4](icorewebview2experimentalcompositioncontroller-corewebview2_matrix_4x4.md) is the transform from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
+parentWindow is the HWND that contains the webview. This can be any HWND in the hwnd tree that contains the webview. The COREWEBVIEW2_MATRIX_4X4 is the transform from that HWND to the webview. The returned [ICoreWebView2ExperimentalPointerInfo](icorewebview2experimentalpointerinfo.md) is used in SendPointerInfo. The pointer type must be either pen or touch or the function will fail.
 
 #### get_Cursor 
 
