@@ -44,7 +44,7 @@ Release Date: Sept 10, 2020
 
 Release Date: Sept 10, 2020  
 
-[NuGet package][NuGetGallery0.9.622.11] \| minimum Microsoft Edge version 86.0.622.11.  
+[NuGet package][NuGetGallery0.9.622.11] \| minimum WebView2 Runtime version 86.0.622.11.  
 
 #### General  
 
