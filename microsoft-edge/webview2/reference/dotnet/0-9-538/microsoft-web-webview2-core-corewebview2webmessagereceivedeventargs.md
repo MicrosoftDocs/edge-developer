@@ -10,7 +10,7 @@ ms.technology: webview
 keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms, app, edge, CoreWebView2, CoreWebView2Controller, browser control, edge html, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs
 ---
 
-# Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs class 
+# 0.9.579 - Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs class 
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
