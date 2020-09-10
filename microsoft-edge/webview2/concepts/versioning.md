@@ -27,8 +27,8 @@ In preview, the release package contains the following.
 
 In preview, the prerelease package contains the following components.  
 
-*   .NET APIs: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515], and [Core][ReferenceDotnet09538]  
-*   Experimental APIs.  For more information, navigate to the [Experimental APIs](#experimental-apis) section.  
+*   .NET APIs: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515], and [Core][ReferenceDotnet09628]  
+*   Experimental APIs.  For more information, see the [Experimental APIs](#experimental-apis) section.  
 
 ## Experimental APIs  
 
