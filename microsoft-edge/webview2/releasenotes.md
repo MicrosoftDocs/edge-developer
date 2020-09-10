@@ -55,7 +55,7 @@ Release Date: Sept 10, 2020
 *   Added [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin3209622Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] property on WebView2 environment options to enable conditional access for WebView.  
 *   Updated `ICoreWebView2NewWindowRequestedEventArgs` to include [WindowFeatures][ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures] property, and the associated [ICoreWebView2WindowFeatures][ReferenceWin3209622Icorewebview2windowfeatures].  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   Updated `System.Windows.Rect`  to use `System.Drawing.Rectangle` instead of `System.Windows.Rect` \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).  
-*   Updated NewWindowRequested event to handle `window.open()` call without parameters.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
+*   Updated NewWindowRequested event to handle `window.open()` request without parameters.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   [AdditionalBrowserArguments][ReferenceWin3209622Icorewebview2environmentoptionsPutAdditionalbrowserarguments] set using `ICoreWebView2EnvironmentOptions` are not overridden with environment variable nor registry value.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions].  
 
 ## 0.9.579  
@@ -80,8 +80,8 @@ Release Date: July 20, 2020
     > The WebView2 SDK Versions are also marked deprecated on nuget.org.  WebView2 recommends staying up to date with the latest version of WebView2.  
 
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).  
-*   Disabled popup blocker in WebView.  For more information, navigate to the [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in the NewWindowRequested event.  
-*   Ensured WebView navigation starting event is fired for about:blank.  Now, NavigationStarting events are fired for all navigation, but cancellations for about:blank or iframe srcdoc isn't supported and ignored.  
+*   Disabled popup blocker in WebView.  For more information, navigate to the [IsUserInitiated][ReferenceWin3209538Icorewebview2newwindowrequestedeventargsGetIsuserinitiated] property in the `NewWindowRequested` event.  
+*   Ensured WebView navigation starting event is fired for `about:blank`.  Now, `NavigationStarting` events are fired for all navigation, but cancellations for `about:blank` or iframe srcdoc is not supported and ignored.  
 *   Blocked `edge:// URI` scheme in WebView.  
 *   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.  
 *   Added experimental [WebResourceResponseReceived][ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived] event that fires after the WebView has received and processed the response for a WebResource request.  Authentication headers, if any, are included in the response object.  
@@ -102,7 +102,7 @@ Release Date: July 20, 2020
 
 #### Win32 C/C++  
 
-*   Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures], which fires when `window.open()` is called and associated with [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
+*   Added [ICoreWebView2ExperimentalNewWindowRequestedEventArgs::get_WindowFeatures][ReferenceWin3209538Icorewebview2experimentalnewwindowrequestedeventargsGetWindowfeatures], which fires when `window.open()` is run and associated with [ICoreWebView2ExperimentalWindowFeatures][ReferenceWin3209538Icorewebview2experimentalwindowfeatures] \([#70][GithubMicrosoftedgeWebviewfeedbackIssue70]\).  
 *   > [!IMPORTANT]
     > **Breaking Change**:  [CreateCoreWebView2EnvironmentWithDetails][ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails] is deprecated and replaced with [CreateCoreWebView2EnvironmentWithOptions][[ReferenceWin3209538IdlCreatecorewebview2environmentwithoptions]].  
 *   > [!IMPORTANT]
@@ -176,7 +176,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   > [!IMPORTANT]
     > **Breaking Change**:  As the final release approaches the WebView team renamed the prefix *IWebView2WebView*   to *ICoreWebView2*   in order to make sure the WebView2 API aligns with the Windows API naming convention.  Additionally, in order to leverage the WebView2 SDK from UI frameworks, the WebView team separated `ICoreWebView2` into [ICoreWebView2][ReferenceWin3209430Icorewebview2] and [ICoreWebView2Host][ReferenceWin3209430Icorewebview2host].  `ICoreWebView2Host` supports resizing, showing and hiding, focusing, and other functionality related to windowing and composition.  ICoreWebView2 supports all other WebView2 functionality.  To learn more about incorporating the changes, navigate to the WebView2 [pull request][GithubMicrosoftedgeWebview2samplesPr17] in the WebView2 [APISample][GithubMicrosoftedgeWebview2samplesMain] project.  
 *   > [!IMPORTANT]
-    > **Breaking Change**:  Split [DocumentStateChanged][ReferenceWin3208190Iwebview2webviewAddDocumentstatechanged] into three components:  [SourceChanged][ReferenceWin3209430Icorewebview2AddSourcechanged], [ContentLoading][ReferenceWin3209430Icorewebview2AddContentloading], and [HistoryChanged][ReferenceWin3209430Icorewebview2AddHistorychanged].  Now, when the source URL changes the `SourceChanged` event is fired.  When the history state is changed the HistoryChanged event is fired.  The `ContentLoading` event is fired before the initial script when a new document is being loaded.  
+    > **Breaking Change**:  Split [DocumentStateChanged][ReferenceWin3208190Iwebview2webviewAddDocumentstatechanged] into three components:  [SourceChanged][ReferenceWin3209430Icorewebview2AddSourcechanged], [ContentLoading][ReferenceWin3209430Icorewebview2AddContentloading], and [HistoryChanged][ReferenceWin3209430Icorewebview2AddHistorychanged].  Now, when the source URL changes the `SourceChanged` event is fired.  When the history state is changed the `HistoryChanged` event is fired.  The `ContentLoading` event is fired before the initial script when a new document is being loaded.  
 *   Added support for ARM64 architecture.  
 *   Added Soft Input Panel \(SIP\) support for touch screen devices.  
 *   Added support for Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.  
@@ -187,14 +187,14 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   Hid ZoomView UI for WebView \([#95][GithubMicrosoftedgeWebviewfeedbackIssue95]\).  
 *   Added [SetBoundsAndZoomFactor][ReferenceWin3209430Icorewebview2hostSetboundsandzoomfactor].  Now, you may set the zoom factor and bounds of a WebView at the same time.  
 *   Added [WindowCloseRequested][ReferenceWin3209430Icorewebview2AddWindowcloserequested] event.  For more information, navigate to [add_WindowCloseRequested][ReferenceWin3209430Icorewebview2AddWindowcloserequested] \([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
-*   Added support for the beforeunload dialog type for javascript dialog events and added [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin3209430Icorewebview2CoreWebview2ScriptDialogKind] enum entry.  
+*   Added support for the `beforeunload` dialog type for javascript dialog events and added [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin3209430Icorewebview2CoreWebview2ScriptDialogKind] enum entry.  
 *   Added [GetHeaders][ReferenceWin3209430Icorewebview2httprequestheadersGetheaders] to HttpRequestHeaders, [GetHeader][ReferenceWin3209430Icorewebview2httpresponseheadersGetheader] to HttpResponseHeaders, and [get_HasCurrentHeader][ReferenceWin3209430Icorewebview2httpheaderscollectioniteratorGetHascurrentheader] property to HttpHeadersCollectionIterator.  
 *   > [!IMPORTANT]
-    > **Breaking Change**:  Modified DevToolsProtocolEventReceived behavior.  Now, you may create a [DevToolsProtocolEventReceiver][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiver] for a particular DevTools Protocol event and subscribe/unsubscribe to such event using [add_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived]/[remove_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived].
+    > **Breaking Change**:  Modified `DevToolsProtocolEventReceived` behavior.  Now, you may create a [DevToolsProtocolEventReceiver][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiver] for a particular DevTools Protocol event and subscribe/unsubscribe to such event using [add_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived]/[remove_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived].
 *   > [!IMPORTANT]
     > **Breaking Change**:  Changed WebMessageReceivedEventArgs' [get_WebMessageAsString][ReferenceWin3208190Iwebview2webmessagereceivedeventargsGetWebmessageasstring] property to a [TryGetWebMessageAsString][ReferenceWin3209430Icorewebview2webmessagereceivedeventargsTrygetwebmessageasstring] method.  
 *   > [!IMPORTANT]
-    > **Breaking Change**:  Changed AcceleratorKeyPressedEventArgs' [Handle][ReferenceWin3208190Iwebview2acceleratorkeypressedeventargsHandle] method to a [get_Handled][ReferenceWin3209430Icorewebview2acceleratorkeypressedeventargsGetHandled] property.  
+    > **Breaking Change**:  Changed `AcceleratorKeyPressedEventArgs` [Handle][ReferenceWin3208190Iwebview2acceleratorkeypressedeventargsHandle] method to a [get_Handled][ReferenceWin3209430Icorewebview2acceleratorkeypressedeventargsGetHandled] property.  
 
 ## 0.8.355
 
@@ -202,7 +202,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 *   Released WebView2API Sample, a comprehensive guide of the WebView2 SDK.  For more information, navigate to [APISample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Added IME support for all languages besides English \([#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\).  
-*   Updated the API surface of the WebResourceRequested event in response to bug reports.  Simultaneously specifying a filter and an event on creation is now deprecated.  To create a web resource requested event, use [add_WebResourceRequested][ReferenceWin3208190Iwebview2webview5AddWebresourcerequested] to add the event and [AddWebResourceRequestedFilter][ReferenceWin3208190Iwebview2webview5Addwebresourcerequestedfilter] to add a filter.  [RemoveWebResourceRequestedFilter][ReferenceWin3208190Iwebview2webview5Removewebresourcerequestedfilter] removes the filter \([#36][GithubMicrosoftedgeWebviewfeedbackIssue36]\) \([#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\).  
+*   Updated the API surface of the `WebResourceRequested` event in response to bug reports.  Simultaneously specifying a filter and an event on creation is now deprecated.  To create a web resource requested event, use [add_WebResourceRequested][ReferenceWin3208190Iwebview2webview5AddWebresourcerequested] to add the event and [AddWebResourceRequestedFilter][ReferenceWin3208190Iwebview2webview5Addwebresourcerequestedfilter] to add a filter.  [RemoveWebResourceRequestedFilter][ReferenceWin3208190Iwebview2webview5Removewebresourcerequestedfilter] removes the filter \([#36][GithubMicrosoftedgeWebviewfeedbackIssue36]\) \([#74][GithubMicrosoftedgeWebviewfeedbackIssue74]\).  
 *   > [!IMPORTANT]
     > **Breaking Change**:  Modified fullscreen behavior.  Deprecated [IsFullScreenAllowed][ReferenceWin3208190Iwebview2settingsGetIsfullscreenallowedDeprecated].  Now, by default, if an element within a WebView \(such as a video\) is set to full screen, it fills the bounds of the WebView.  Use the [ContainsFullScreenElementChanged][ReferenceWin3208190Iwebview2containsfullscreenelementchangedeventhandler] event and [get_ContainsFullScreenElement][ReferenceWin3208190Iwebview2webview5GetContainsfullscreenelement] to specify how the app should resize the WebView if an element wants to enter fullscreen mode.  
 
@@ -255,7 +255,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   Added WebView IDL to the SDK \([\#14][GithubMicrosoftedgeWebviewfeedbackIssue14]\).  
 *   Added lib to support `IID\_\*` interface id objects \([\#12][GithubMicrosoftedgeWebviewfeedbackIssue12]\).  
 *   Added include path, linking, and auto-copying of DLL files to NuGet `TARGET` file in SDK.  
-*   Enabled requesting `window.open` in script.  
+*   Enabled requesting `window.open()` in script.  
 
 ## 0.8.149  
 
