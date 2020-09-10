@@ -1,9 +1,9 @@
 ---
 description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
-title: Microsoft.Web.WebView2.Core.CoreWebView2Deferral
+title: 0.9.579 - Microsoft.Web.WebView2.Core.CoreWebView2Deferral
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/08/2020
+ms.date: 09/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,6 +11,8 @@ keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms
 ---
 
 # Microsoft.Web.WebView2.Core.CoreWebView2Deferral class 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 Namespace: Microsoft.Web.WebView2.Core\
 Assembly: Microsoft.Web.WebView2.Core.dll
