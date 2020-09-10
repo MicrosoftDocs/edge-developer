@@ -3,7 +3,7 @@ description:  Host web content in your Win32 app with the Microsoft Edge WebView
 title:  Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  07/20/2020
+ms.date:  09/10/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -22,9 +22,9 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 ## 0.9.628-prerelease  
 
-Release Date: Sept 09, 2020  
+Release Date: Sept 10, 2020  
 
-[NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
+[NuGet package][NuGetGallery0.9.628-prerelease] \| minimum Microsoft Edge version 87.0.628.0.  
 
 > [!IMPORTANT]
 > **Announcement**:  This prerelease continues to release out of Microsoft Edge 87 Branch.  In the future, pre-release SDK releases match the Edge Canary builds, whereas the normal releases are synchronized with Edge Stable.  
@@ -32,20 +32,19 @@ Release Date: Sept 09, 2020
 #### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**:  Visual Hosting is now in preview.  
-*   Added the CompositionController as an experimental interface.  This lets your app connect WebView2 to Dcomp visual or WinComp ContainerVisual and provides API that allows the app to forward mouse and touch inputs to the WebView.  
+    > **Announcement**:  Visual Hosting APIs are now under preview. Visual Hosting allows WebView2 to be used alongside WinComp/DComp visuals as opposed to HWNDs. The interfaces are in Experimental. See [ICoreWebView2ExperimentalEnvironment][ReferenceWin3209622Icorewebview2experimentalenvironment].  
 
 #### .NET  
 
-*   .NET Binaries are now [Strongly Named]().  \([\#181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).  
-*   Updated NuGet Target to include `WebViewLoader.dll`.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) and \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).  
-*   Updated `WebResourceRequested` to expose `HttpRequestMessage` and `HttpResponseMessage` APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
+*   .NET Binaries are now [strongly-named](https://docs.microsoft.com/dotnet/standard/assembly/strong-named).  \([\#181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).  
+*   Updated NuGet Target to include `WebViewLoader2.dll`.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) and \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).  
+*   Updated `WebResourceRequested` to expose [HttpRequestHeaders][ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httprequestheaders] and [HttpResponseHeaders][ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httpresponseheaders] APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
 
 ## 0.9.622  
 
-Release Date: Sept 09, 2020  
+Release Date: Sept 10, 2020  
 
-[NuGet package][NuGetGallery0.9.579] \| minimum Microsoft Edge version 86.0.579.0.  
+[NuGet package][NuGetGallery0.9.622.11] \| minimum WebView2 Runtime version 86.0.622.11.  
 
 #### General  
 
@@ -53,11 +52,11 @@ Release Date: Sept 09, 2020
     > **Announcement**: This SDK is the Release Candidate for WebView2 Win32 C/C++ GA.  The GA version should use same API interface and functionality.  
 
 *   Disconnected [browser policies][DeployedgeMicrosoftEdgePolicies].  
-*   Added [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.  
-*   Updated `ICoreWebView2NewWindowRequestedEventArgs` to include `WindowFeatures` property, and the associated `ICoreWebView2WindowFeatures`.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
+*   Added [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin3209622Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] property on WebView2 environment options to enable conditional access for WebView.  
+*   Updated `ICoreWebView2NewWindowRequestedEventArgs` to include [WindowFeatures][ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures] property, and the associated [ICoreWebView2WindowFeatures][ReferenceWin3209622Icorewebview2windowfeatures].  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   Updated `System.Windows.Rect`  to use `System.Drawing.Rectangle` instead of `System.Windows.Rect` \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).  
-*   Updated the `Windows.open` function to handle "no parameter" case.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
-*   [AdditionalBrowserArguments][ReferenceWin3209638Icorewebview2environmentoptionsPutAdditionalbrowserarguments] set using `ICoreWebView2EnvironmentOptions` are not overridden with environment variable nor registry value.  See [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209638IdlCreatecorewebview2environmentwithoptions] for more details.  
+*   Updated NewWindowRequested event to handle `window.open()` call without parameters.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
+*   [AdditionalBrowserArguments][ReferenceWin3209622Icorewebview2environmentoptionsPutAdditionalbrowserarguments] set using `ICoreWebView2EnvironmentOptions` are not overridden with environment variable nor registry value.  See [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions] for more details.  
 
 ## 0.9.579  
 
@@ -342,8 +341,15 @@ Initial developer preview release.
 [ReferenceWin3209538Icorewebview2settingsGetArehostobjectsallowed]: ./reference/win32/0-9-538/icorewebview2settings.md#get_arehostobjectsallowed "get_AreHostObjectsAllowed - interface ICoreWebView2Settings | Microsoft Docs"  
 [ReferenceWin3209538Webview2IdlCreatecorewebview2environmentwithoptions]: ./reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 
-[ReferenceWin3209638Icorewebview2environmentoptionsPutAdditionalbrowserarguments]: ./reference/win32/0-9-538/icorewebview2environmentoptions.md#put_additionalbrowserarguments "put_AdditionalBrowserArguments - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"  
-[ReferenceWin3209638IdlCreatecorewebview2environmentwithoptions]: ./reference/win32/0-9-538/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Edge"  
+[ReferenceWin3209622Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: ./reference/win32/0-9-622/icorewebview2environmentoptions.md#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"  
+[ReferenceWin3209622Icorewebview2environmentoptionsPutAdditionalbrowserarguments]: ./reference/win32/0-9-622/icorewebview2environmentoptions.md#put_additionalbrowserarguments "put_AdditionalBrowserArguments - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"  
+[ReferenceWin3209622Icorewebview2experimentalenvironment]: ./reference/win32/0-9-622/icorewebview2experimentalenvironment.md "interface ICoreWebView2ExperimentalEnvironment | Microsoft Docs"  
+[ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures]: ./reference/win32/0-9-622/icorewebview2newwindowrequestedeventargs.md#get_windowfeatures "get_WindowFeatures - interface ICoreWebView2NewWindowRequestedEventArgs | Microsoft Docs"  
+[ReferenceWin3209622Icorewebview2windowfeatures]: ./reference/win32/0-9-622/icorewebview2windowfeatures.md "interface ICoreWebView2WindowFeatures | Microsoft Docs"  
+[ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions]: ./reference/win32/0-9-622/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Edge"  
+
+[ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httprequestheaders]: ./reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httprequestheaders.md "Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders class | Microsoft Docs"  
+[ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httpresponseheaders]: ./reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httpresponseheaders.md "Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders class | Microsoft Docs"  
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Policies | Microsoft Docs"  
 
@@ -395,3 +401,5 @@ Initial developer preview release.
 [NuGetGallery0.9.515-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.515-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.515 prerelease"  
 [NuGetGallery0.9.538]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.538 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.538"  
 [NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.579"
+[NuGetGallery0.9.622.11]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.622.11"
+[NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.628 prerelease"  
