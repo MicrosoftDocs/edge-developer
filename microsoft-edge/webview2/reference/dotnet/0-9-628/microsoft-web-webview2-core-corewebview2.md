@@ -197,7 +197,7 @@ This event only fires if the CoreWebView2Settings.AreDefaultScriptDialogsEnabled
 
 The CoreWebView2Settings object contains various modifiable settings for the running
 
-> public [CoreWebView2Settings](microsoft-web-webview2-core-corewebview2settings.md)? [Settings](#settings)
+> public [CoreWebView2Settings](microsoft-web-webview2-core-corewebview2settings.md) [Settings](#settings)
 
 #### Source 
 

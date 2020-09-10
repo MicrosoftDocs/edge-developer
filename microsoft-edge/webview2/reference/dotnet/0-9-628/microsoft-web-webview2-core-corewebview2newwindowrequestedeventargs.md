@@ -50,7 +50,7 @@ IsUserInitiated is true when the new window request was initiated through a user
 
 Gets the new window.
 
-> public CoreWebView2? [NewWindow](#newwindow)
+> public CoreWebView2 [NewWindow](#newwindow)
 
 #### Uri 
 
@@ -64,7 +64,7 @@ The target WebView should not be navigated. If the NewWindow is set, its top lev
 
 Window features specified by the window.open call.
 
-> public CoreWebView2WindowFeatures? [WindowFeatures](#windowfeatures)
+> public CoreWebView2WindowFeatures [WindowFeatures](#windowfeatures)
 
 These features can be considered for positioning and sizing of new WebView windows.
 

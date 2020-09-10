@@ -32,7 +32,7 @@ An HTTP request used with the WebResourceRequested event.
 
 The HTTP request message body as stream.
 
-> public Stream? [Content](#content)
+> public Stream [Content](#content)
 
 POST data would be here. If a stream is set, which will override the message body, the stream must have all the content data available by the time this response's WebResourceRequested event deferral is completed. Stream should be agile or be created from a background STA to prevent performance impact to the UI thread. Null means no content data. IStream semantics apply (return S_OK to Read calls until all data is exhausted).
 
@@ -40,7 +40,7 @@ POST data would be here. If a stream is set, which will override the message bod
 
 The mutable HTTP request headers.
 
-> public [CoreWebView2HttpRequestHeaders](microsoft-web-webview2-core-corewebview2httprequestheaders.md)? [Headers](#headers)
+> public [CoreWebView2HttpRequestHeaders](microsoft-web-webview2-core-corewebview2httprequestheaders.md) [Headers](#headers)
 
 #### Method 
 
