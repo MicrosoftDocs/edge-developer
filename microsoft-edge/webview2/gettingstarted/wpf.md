@@ -3,7 +3,7 @@ description: Host web content in your WPF app with the Microsoft Edge WebView 2 
 title: Microsoft Edge WebView 2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 
 # Getting started with WebView2 in WPF (Preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-628-reference-webview2.md).  
 
 ## Prerequisites  
 

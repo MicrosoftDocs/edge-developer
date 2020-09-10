@@ -34,7 +34,7 @@ An HTTP response used with the WebResourceRequested event.
 
 HTTP response content as stream.
 
-> public Stream? [Content](#content)
+> public Stream [Content](#content)
 
 Stream must have all the content data available by the time this response's WebResourceRequested event deferral is completed. Stream should be agile or be created from a background thread to prevent performance impact to the UI thread. Null means no content data. IStream semantics apply (return S_OK to Read calls until all data is exhausted).
 
@@ -42,7 +42,7 @@ Stream must have all the content data available by the time this response's WebR
 
 Overridden HTTP response headers.
 
-> public [CoreWebView2HttpResponseHeaders](microsoft-web-webview2-core-corewebview2httpresponseheaders.md)? [Headers](#headers)
+> public [CoreWebView2HttpResponseHeaders](microsoft-web-webview2-core-corewebview2httpresponseheaders.md) [Headers](#headers)
 
 #### ReasonPhrase 
 

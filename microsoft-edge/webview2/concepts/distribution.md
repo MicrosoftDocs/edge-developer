@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 Application
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/14/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -34,7 +34,7 @@ There are multiple channels WebView2 that applications may use as the web platfo
 > [!IMPORTANT]
 > Microsoft Edge Stable Channel is not a valid target for WebView2, and the reasons are described later.  
 
-For more information about versioning, see [Versioning][ConceptsVersioning] and [Globals][ReferenceWin3209538WebviewIdl].  
+For more information about versioning, see [Versioning][ConceptsVersioning] and [Globals][ReferenceWin3209622WebviewIdl].  
 
 ### Understand the WebView2 Runtime and installer (Preview)  
 
@@ -49,7 +49,7 @@ Developers are recommended to ensure that the Evergreen WebView2 Runtime is inst
 
 1.  Download the latest [Evergreen WebView2 Runtime Installer][Webview2Installer].  
 1.  Include the installer in your application installer or updater.  
-1.  During your application installation or update, check if the Evergreen WebView2 Runtime is already installed on the user machine, by using the [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-538/webview2-idl.md#getavailablecorewebview2browserversionstring) API and checking whether the versionInfo is NULL. If not installed, the application installer/updater can silently invoke the runtime installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install`. 
+1.  During your application installation or update, check if the Evergreen WebView2 Runtime is already installed on the user machine, by using the [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) API and checking whether the versionInfo is NULL. If not installed, the application installer/updater can silently invoke the runtime installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install`. 
 
 Depending on your scenario, you may need to change the above workflow.  For example, your application installer may download the Evergreen WebView2 Runtime Installer instead of including it in your application package.  
 
@@ -74,6 +74,6 @@ For constrained environments, there are plans to support a fixed version \(previ
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
-[ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globals | Microsoft Docs"  
+[ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals | Microsoft Docs"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  

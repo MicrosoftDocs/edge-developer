@@ -76,7 +76,7 @@ Bounds are relative to the parent HWND. The app has two ways it can position a W
 
 Gets the CoreWebView2 associated with this CoreWebView2Controller.
 
-> public [CoreWebView2](microsoft-web-webview2-core-corewebview2.md)? [CoreWebView2](#corewebview2)
+> public [CoreWebView2](microsoft-web-webview2-core-corewebview2.md) [CoreWebView2](#corewebview2)
 
 #### GotFocus 
 

@@ -23,7 +23,7 @@ In the future, the WebView team plans to change the distribution model for WebVi
 
 In preview, the release package contains the following.  
 
-*   [Win32 C/C++ APIs][ReferenceWin3209538]: APIs in the SDK that are expected to remain the same at GA.  
+*   [Win32 C/C++ APIs][ReferenceWin3209622]: APIs in the SDK that are expected to remain the same at GA.  
 
 In preview, the prerelease package contains the following components.  
 
@@ -64,9 +64,9 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->
 
 [DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of Applications using WebView2 | Microsoft Docs"  
-[ReferenceDotnet09538]: ../reference/dotnet/0-9-538-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[ReferenceDotnet09628]: ../reference/dotnet/0-9-628-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
 [ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
-[ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
 [ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
 [Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 

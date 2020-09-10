@@ -32,7 +32,7 @@ Event args for the WebResourceRequested event.
 
 The Web resource request.
 
-> public [CoreWebView2WebResourceRequest](microsoft-web-webview2-core-corewebview2webresourcerequest.md)? [Request](#request)
+> public [CoreWebView2WebResourceRequest](microsoft-web-webview2-core-corewebview2webresourcerequest.md) [Request](#request)
 
 The request object may be missing some headers that are added by network stack later on.
 
@@ -46,7 +46,7 @@ The web resource request context.
 
 A placeholder for the web resource response object.
 
-> public [CoreWebView2WebResourceResponse](microsoft-web-webview2-core-corewebview2webresourceresponse.md)? [Response](#response)
+> public [CoreWebView2WebResourceResponse](microsoft-web-webview2-core-corewebview2webresourceresponse.md) [Response](#response)
 
 If this object is set, the web resource request will be completed with this response. An empty Web resource response object can be created with CreateWebResourceResponse and then modified to construct the response.
 

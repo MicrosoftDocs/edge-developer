@@ -60,7 +60,7 @@ The ID of the navigation.
 
 The HTTP request headers for the navigation.
 
-> public CoreWebView2HttpRequestHeaders? [RequestHeaders](#requestheaders)
+> public CoreWebView2HttpRequestHeaders [RequestHeaders](#requestheaders)
 
 Note, you cannot modify the HTTP request headers in a NavigationStarting event.
 

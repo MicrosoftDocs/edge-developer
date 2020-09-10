@@ -31,7 +31,7 @@ Event args for the WebResourceResponseReceived event.
 
 Web resource request object.
 
-> public [CoreWebView2WebResourceRequest](microsoft-web-webview2-core-corewebview2webresourcerequest.md)? [Request](#request)
+> public [CoreWebView2WebResourceRequest](microsoft-web-webview2-core-corewebview2webresourcerequest.md) [Request](#request)
 
 Any modifications to this object will be ignored.
 
@@ -39,7 +39,7 @@ Any modifications to this object will be ignored.
 
 Web resource response object.
 
-> public [CoreWebView2WebResourceResponse](microsoft-web-webview2-core-corewebview2webresourceresponse.md)? [Response](#response)
+> public [CoreWebView2WebResourceResponse](microsoft-web-webview2-core-corewebview2webresourceresponse.md) [Response](#response)
 
 Any modifications to this object will be ignored.
 
