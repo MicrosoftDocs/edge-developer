@@ -12,7 +12,7 @@ keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms
 
 # 0.9.579 - Reference (WebView2 Core)  
 
-[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]
 
 The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge \(Chromium\)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, see [Overview of Microsoft Edge WebView2](../../index.md)) and [Getting Started with WebView2](../../gettingstarted/win32.md).  [Microsoft.Web.WebView2.Core.CoreWebView2](0-9-538/microsoft-web-webview2-core-corewebview2.md) is a great place to start learning the details of the API.  
 
