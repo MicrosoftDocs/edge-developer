@@ -28,7 +28,10 @@ Release Date: Sept 09, 2020
 
    > [!IMPORTANT]
     > **Announcement**: This prerelease will continue to release out of Edge 87 Branch. In the future, pre-release SDK releases will match the Edge Canary builds, whereas our normal releases will be in sync with Edge Stable.
+
 #### General
+*   > [!IMPORTANT]
+    > **Announcement**:  Visual Hosting is now in preview.
 * Added the CompositionController as an experimental interface. This lets your app connect WebView2 to Dcomp visual or WinComp ContainerVisual and provides API that allows the app to forward mouse and touch inputs to the WebView.
 
 #### .NET  
@@ -46,9 +49,8 @@ Release Date: Sept 09, 2020
 #### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**: This SDK release is a candidate for WebView2 Win32 C++ GA. 
-*   > [!IMPORTANT]
-    > **Announcement**:  Visual Hosting is now in preview.
+    > **Announcement**: This SDK is the Release Candidate for WebView2 Win32 C/C++ GA. The GA version will likely have the same API interface and functionality.
+
 
 *   Disconnected [browser policies](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies). 
 *   Added [AllowSingleSignOnUsingOSPrimaryAccount][ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to enable conditional access for WebView.

@@ -37,6 +37,20 @@ We are testing experimental APIs that may represent future functionality.  The e
 > [!CAUTION]
 > Avoid using the experimental APIs in production applications.  
 
+## Matching WebView2 Runtime versions
+
+When writing a WebView2 application using a particular SDK version, your application’s end users may run your application with various compatible versions of the WebView2 Runtime. A newer compatible WebView2 Runtime version will contain all the non-experimental APIs from an older compatible WebView2 Runtime version plus additional new non-experimental APIs. 
+
+
+	
+- **Win32 C/C++** developers, when using QueryInterface to obtain a new interface, should check for a return value of E_NOINTERFACE, which can indicate that the WebView2 Runtime is older and does not support that particular interface.
+- **.NET and WinUI**  developers should check for a `No such interface supported` exception when using methods, properties, and events added in later SDKs which can similarly occur when the WebView2 Runtime is older and does not support those particular APIs.
+
+
+If an API is unavailable, consider disabling the associated feature, if possible, or otherwise informing the end user they need to update their WebView2 Runtime version.
+
+Experimental APIs may be introduced, modified, and removed from SDK to SDK. When attempting to use an experimental API that isn’t available in the WebView2 Runtime you will see the same behavior described above.
+
 ## Roadmap  
 
 After WebView2 reaches a stable general available state, the release package contains all of the stable, supported Win32 C/C++ and .NET APIs.  The pre-release package contains experimental APIs that are subject to change based upon developer feedback and shared insights.  
