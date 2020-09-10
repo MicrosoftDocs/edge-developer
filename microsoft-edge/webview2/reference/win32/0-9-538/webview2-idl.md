@@ -1,9 +1,9 @@
 ---
 description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
-title: Globals
+title: 0.9.579 - Globals
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 09/09/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,6 +11,8 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 
 # Globals 
+
+[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
 ## Summary
 
