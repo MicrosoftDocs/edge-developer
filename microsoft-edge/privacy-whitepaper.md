@@ -253,7 +253,7 @@ Microsoft Edge uses a Microsoft network time service to track time from an exter
 
 Microsoft Edge provides an engaging and user-centric new tab page experience with a search box powered by [Bing][BingMain], quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365.  Customize the appearance of the new tab page by selecting the customize button.  Your new tab page preferences are set for each profile and stored locally on your device, and the preferences are not synced across devices.
 
-To enhance the load times of the new tab page, the Microsoft new tab page may be loaded in the background to make it faster. The content that is loaded might include cookies, if you allow cookies. To disable loading the Microsoft new tab page in the background, go to `edge://settings/newTabPage` and disable the setting **Preload the new tab page for a faster experience**. 
+To enhance the load times of the new tab page, the Microsoft new tab page may be loaded in the background to make it faster. The content that is loaded might include cookies, if you allow cookies. To disable loading the Microsoft new tab page in the background, go to `edge://settings/newTabPage` and turn off the setting **Preload the new tab page for a faster experience**. 
 
 :::image type="complex" source="./media/whitepaper-media/n-t-p1.png" alt-text="New tab page" lightbox="./media/whitepaper-media/n-t-p1.png":::
    New tab page  
