@@ -14,8 +14,6 @@ keywords: Microsoft.Web.WebView2, Core, webview2, webview, dotnet, wpf, winforms
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
 
-[!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]
-
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
 
 Namespace: Microsoft.Web.WebView2.Core\
