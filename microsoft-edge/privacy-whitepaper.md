@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.date: 09/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
-ms.technology: browser
 keywords: microsoft edge, privacy, whitepaper, trust
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
@@ -414,7 +413,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
-:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Sync" lightbox="./media/whitepaper-media/sync.png":::
+:::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="image of sync being on" lightbox="./media/whitepaper-media/sync.png":::
    Sync  
 :::image-end:::  
 
