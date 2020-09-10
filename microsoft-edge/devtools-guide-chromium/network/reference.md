@@ -1,8 +1,9 @@
 ---
+description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
