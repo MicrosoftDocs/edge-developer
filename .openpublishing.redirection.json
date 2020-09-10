@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-edge/extensions-chromium/publish/upload-video.md",
+      "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-edge/devtools-guide/devtools-preview_software-license-terms.md",
       "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/devtools-preview_software-license-terms",
       "redirect_document_id": false
