@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,13 +23,13 @@ This represents the WebView2 Environment.
 --------------------------------|---------------------------------------------
 [BrowserVersionString](#browserversionstring) | The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | NewBrowserVersionAvailable fires when a newer version of the Edge browser is installed and available for use via WebView2.
-[CompareBrowserVersions](#comparebrowserversions) | Compare browser versions correctly to determine which version is newer, older or same.
+[CompareBrowserVersions](#comparebrowserversions) | Compare browser versions to determine if they match or are different.
 [CreateAsync](#createasync) | Creates an evergreen WebView2 Environment using the installed version of Microsoft Edge.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously create a new WebView for use with visual hosting.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty CoreWebView2PointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
-[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Get the browser version information.
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail. 
@@ -56,11 +56,13 @@ Because a user data folder can only be used by one browser process at a time, if
 
 #### CompareBrowserVersions 
 
-Compare browser versions correctly to determine which version is newer, older or same.
+Compare browser versions to determine if they match or are different.
 
 > public static int [CompareBrowserVersions](#comparebrowserversions)(string version1, string version2)
 
-Returns -1, 0 or 1 depending on whether version1 is less than, equal to or greater than version2, respectively.
+Returns -1, 0 or 1 depending on whether the first version is less than, equal to or greater than the second version being compared.
+
+Input can directly use the versionInfo obtained from GetAvailableCoreWebView2BrowserVersionString, channel info will be ignored.
 
 ##### Parameters
 * `version1` The first version to compare. 
@@ -124,9 +126,11 @@ The headers is the raw response header string delimited by newline. It's also po
 
 #### GetAvailableBrowserVersionString 
 
-Get the browser version info including channel name if it is not the stable channel or the Embedded Edge.
+Get the browser version information.
 
 > public static string [GetAvailableBrowserVersionString](#getavailablebrowserversionstring)(string browserExecutableFolder)
+
+You also get the channel name if the channel is not a stable channel. If you use the WebView2 Runtime, no channel name is returned.
 
 ##### Parameters
 * `browserExecutableFolder` The relative path to the folder that contains the fixed version of the WebView2 Runtime.
