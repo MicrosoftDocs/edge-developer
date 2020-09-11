@@ -10,7 +10,8 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Threading model  
+# Threading model 
+The WebView2 control is based on the [Component Object Model (COM)](https://docs.microsoft.com/en-us/windows/win32/com/the-component-object-model) and must run on a [Single Threaded Apartments (STA)](https://docs.microsoft.com/en-us/windows/win32/com/single-threaded-apartments) thread.
 
 ## Thread safety  
 
