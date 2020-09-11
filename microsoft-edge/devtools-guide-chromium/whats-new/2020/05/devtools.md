@@ -277,10 +277,10 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- image links -->  
 
-[ImageSettingsIcon]: ../../media/settings-icon.msft.png  
-[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/images/toggle-screencast-icon.msft.png  
-[ImageRefreshPageIcon]: ../../media/refresh-page-icon.msft.png  
-[ImageRecordIcon]: ../../media/record-icon.msft.png  
+[ImageSettingsIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/settings-icon.msft.png  
+[ImageScreencastingIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/toggle-screencast-icon.msft.png  
+[ImageRefreshPageIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/refresh-page-icon.msft.png  
+[ImageRecordIcon]: /microsoft-edge/devtools-guide-chromium/remote-debugging/media/record-icon.msft.png  
 
 <!-- links -->  
 
