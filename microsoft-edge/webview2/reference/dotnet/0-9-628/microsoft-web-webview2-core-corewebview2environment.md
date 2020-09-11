@@ -71,7 +71,7 @@ Input can directly use the versionInfo obtained from GetAvailableCoreWebView2Bro
 
 #### CreateAsync 
 
-Creates an evergreen WebView2 Environment using the installed Edge version.
+Creates an evergreen WebView2 Environment using the installed version of Microsoft Edge.
 
 > public static async Task< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md) > [CreateAsync](#createasync)(string browserExecutableFolder, string userDataFolder, CoreWebView2EnvironmentOptions options)
 
