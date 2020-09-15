@@ -10,8 +10,10 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 ---
 
 # Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts  
-  
+
+<!--  
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Overview  
 
