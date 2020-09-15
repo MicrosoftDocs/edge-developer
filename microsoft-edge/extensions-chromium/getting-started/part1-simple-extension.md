@@ -9,9 +9,11 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# Build A Simple Extension That Pops Up NASA Picture Of The Day  
-
+# Build A Simple Extension That Pops Up NASA Picture Of The Day 
+ 
+<!--  
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
+-->  
 
 ## Overview  
 
@@ -156,8 +158,10 @@ The directory structure for the example Extension is displayed in the following 
         └── popup.html
 ```  
 
+<!--  
 > [!NOTE]
 > The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
+-->  
 
 That is everything you need to build a working Extension.  All that is left to do is test it.  
 
