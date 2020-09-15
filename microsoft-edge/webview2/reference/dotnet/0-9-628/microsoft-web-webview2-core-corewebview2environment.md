@@ -3,7 +3,7 @@ description: Embed web technologies (HTML, CSS, and JavaScript) in your native a
 title: Microsoft.Web.WebView2.Core.CoreWebView2Environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/11/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,15 +23,16 @@ This represents the WebView2 Environment.
 --------------------------------|---------------------------------------------
 [BrowserVersionString](#browserversionstring) | The browser version info of the current CoreWebView2Environment, including channel name if it is not the stable channel.
 [NewBrowserVersionAvailable](#newbrowserversionavailable) | NewBrowserVersionAvailable fires when a newer version of the Edge browser is installed and available for use via WebView2.
+[CompareBrowserVersions](#comparebrowserversions) | Compare browser versions to determine if they match or are different.
+[CreateAsync](#createasync) | Creates an evergreen WebView2 Environment using the installed version of Microsoft Edge.
 [CreateCoreWebView2CompositionControllerAsync](#createcorewebview2compositioncontrollerasync) | Asynchronously create a new WebView for use with visual hosting.
 [CreateCoreWebView2ControllerAsync](#createcorewebview2controllerasync) | Asynchronously create a new WebView.
 [CreateCoreWebView2PointerInfo](#createcorewebview2pointerinfo) | Create an empty CoreWebView2PointerInfo.
 [CreateWebResourceResponse](#createwebresourceresponse) | Create a new web resource response object.
+[GetAvailableBrowserVersionString](#getavailablebrowserversionstring) | Get the browser version information.
 [GetProviderForHwnd](#getproviderforhwnd) | Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 
 WebViews created from an environment run on the Browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail. 
-
-WebViews created from an environment run on the browser process specified with environment parameters and objects created from an environment should be used in the same environment. Using it in different environments are not guaranteed to be compatible and may fail.
 
 ## Members
 
@@ -52,6 +53,34 @@ NewBrowserVersionAvailable fires when a newer version of the Edge browser is ins
 To use the newer version of the browser you must create a new environment and WebView. This event will only be fired for new version from the same Edge channel that the code is running from. When not running with installed Edge, no event will be fired.
 
 Because a user data folder can only be used by one browser process at a time, if you want to use the same user data folder in the WebViews using the new version of the browser, you must close the environment and WebViews that are using the older version of the browser first. Or simply prompt the user to restart the app.
+
+#### CompareBrowserVersions 
+
+Compare browser versions to determine if they match or are different.
+
+> public static int [CompareBrowserVersions](#comparebrowserversions)(string version1, string version2)
+
+Returns -1, 0 or 1 depending on whether the first version is less than, equal to or greater than the second version being compared.
+
+Input can directly use the versionInfo obtained from GetAvailableCoreWebView2BrowserVersionString, channel info will be ignored.
+
+##### Parameters
+* `version1` The first version to compare. 
+
+* `version2` The second version to compare.
+
+#### CreateAsync 
+
+Creates an evergreen WebView2 Environment using the installed version of Microsoft Edge.
+
+> public static async Task< [CoreWebView2Environment](microsoft-web-webview2-core-corewebview2environment.md) > [CreateAsync](#createasync)(string browserExecutableFolder, string userDataFolder, CoreWebView2EnvironmentOptions options)
+
+##### Parameters
+* `browserExecutableFolder` The relative path to the folder that contains the fixed version of the WebView2 Runtime. 
+
+* `userDataFolder` userDataFolder can be specified to change the default user data folder location for WebView2. 
+
+* `options` Options used to create WebView2 Environment.
 
 #### CreateCoreWebView2CompositionControllerAsync 
 
@@ -95,6 +124,17 @@ Create a new web resource response object.
 
 The headers is the raw response header string delimited by newline. It's also possible to create this object with empty headers string and then use the CoreWebView2HttpResponseHeaders to construct the headers line by line. For information on other parameters see CoreWebView2WebResourceResponse.
 
+#### GetAvailableBrowserVersionString 
+
+Get the browser version information.
+
+> public static string [GetAvailableBrowserVersionString](#getavailablebrowserversionstring)(string browserExecutableFolder)
+
+You also get the channel name if the channel is not a stable channel. If you use the WebView2 Runtime, no channel name is returned.
+
+##### Parameters
+* `browserExecutableFolder` The relative path to the folder that contains the fixed version of the WebView2 Runtime.
+
 #### GetProviderForHwnd 
 
 [!INCLUDE [prerelease-note](../../includes/prerelease-note.md)]
@@ -102,4 +142,3 @@ The headers is the raw response header string delimited by newline. It's also po
 Returns the UI Automation Provider for the CoreWebView2CompositionController that corresponds with the given HWND.
 
 > public object [GetProviderForHwnd](#getproviderforhwnd)(IntPtr hwnd)
-
