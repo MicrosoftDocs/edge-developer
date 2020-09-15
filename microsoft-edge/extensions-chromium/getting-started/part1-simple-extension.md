@@ -159,7 +159,7 @@ The directory structure for the example Extension is displayed in the following 
 > [!NOTE]
 > The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
 
-That is everything you need to build a working Extension.  All that is left to is test it.  
+That is everything you need to build a working Extension.  All that is left to do is test it.  
 
 The next section explains how to load the Extension \(sometimes called side loading\) into the Microsoft Edge \(Chromium\) browser to test it.  
 
