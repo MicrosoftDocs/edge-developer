@@ -27,7 +27,7 @@ In part 2, you learn to update your pop-up menu to not show the static stars ima
 
 ## Remove the image from the pop-up and replace it with a button  
 
-First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.  
+First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You will program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.  
 
 ```html
 <html>
