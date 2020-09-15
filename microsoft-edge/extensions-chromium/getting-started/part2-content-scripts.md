@@ -3,9 +3,9 @@ description: Extensions Getting Started Part 1
 title: Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
