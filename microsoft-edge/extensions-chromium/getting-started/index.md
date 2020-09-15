@@ -3,9 +3,9 @@ description: Learn what a Chromium Extension is as well as progressively build a
 title: Getting Started With Microsoft Edge (Chromium) Extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
