@@ -30,7 +30,7 @@ For more information, see [DevTools overview][DevtoolsGuideChromiumMain].
 
 ## [Visual Studio](#tab/visualstudio)  
 
-Visual Studio provides various debugging tools for web and native code in WebView2 applications.  In the Visual Studio section, the primarily focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 applications or Office add-ins only.  
+Visual Studio provides various debugging tools for web and native code in WebView2 applications.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 applications or Office Add-ins only.  
 
 > [!IMPORTANT]
 > When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
@@ -108,7 +108,7 @@ In Visual Studio Code, complete the following actions to debug your code.
            Visual Studio Code navigation  
         :::image-end:::  
         
-    1.  Your project is required to have a `launch.json` file.  If you project does not have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.  
+    1.  Your project is required to have a `launch.json` file.  If your project does not have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.  
         
         ```json
         {
@@ -232,7 +232,7 @@ In Visual Studio Code, complete the following actions to debug your code.
            :::column-end:::
         :::row-end:::  
         
-*   Office Add-In Debugging.  
+*   Office Add-in Debugging.  
     
     If you are debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json and ad the following code snippet to enable cross-process communication.  
     
