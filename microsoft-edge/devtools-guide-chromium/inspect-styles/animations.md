@@ -3,7 +3,7 @@ description: Inspect and modify animations with the Microsoft Edge DevTools  Ani
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 09/15/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Inspect animations   
-
-
+# Inspect animations  
 
 Inspect and modify animations with the Microsoft Edge DevTools Animation Inspector.  
 
@@ -42,7 +36,7 @@ Inspect and modify animations with the Microsoft Edge DevTools Animation Inspect
 *   Inspect animations by slowing down each one, replaying each one, or viewing the source code.  
 *   Modify animations by changing the timing, delay, duration, or keyframe offsets.  
 
-## Overview   
+## Overview  
 
 The Microsoft Edge DevTools Animation Inspector has two main purposes.  
 
@@ -79,8 +73,8 @@ The Animation Inspector opens up as a tab next to the Console Drawer.  Since the
 
 The Animation Inspector is grouped into four main sections \(or panes\).  This guide refers to each pane as follows:  
 
-| | Pane | Description |  
-| --- |:--- |:--- |  
+| Index | Pane | Description |  
+|:--- |:--- |:--- |  
 | 1 | **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
 | 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
 | 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
@@ -98,7 +92,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->  
 
-## Inspect animations   
+## Inspect animations  
 
 After you capture an animation, there are a few ways to replay it:  
 
@@ -132,7 +126,7 @@ If two elements have the same animation applied, the Animation Inspector assigns
    Color-coded animations  
 :::image-end:::  
 
-## Modify animations   
+## Modify animations  
 
 There are three ways you are able to modify an animation with the Animation Inspector.  
 
@@ -164,11 +158,9 @@ To add a delay to an animation, click and drag it anywhere except the circles.
    Modified delay  
 :::image-end:::  
 
-<!--  
-  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
