@@ -109,11 +109,11 @@ Here are additional resources that may help you enhance your website \(or app\) 
 > *   When using a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into this issue, [send feedback](#providing-feedback-on-experimental-features).  
 
 ### Enable new CSS grid debugging features  
-This experimental feature provides a number of new visualizations to help you debug CSS grid layouts. To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  
+This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Edge 87 and later.
 
 #### Viewing on-hover grid overlays with the Inspect tool
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse. Click the **Inspect** (![Inspect].(/media/inspect-icon.msft.png)) icon in the top-left corner of DevTools. Then, hover over a Grid element on the website you are debugging. Outlines appear around the grid, and shading indicates the location of grid gaps if present.
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Click the **Inspect** (![Inspect](./media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines appear around the grid, and shading indicates the location of grid gaps if present.
 
 :::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="./media/grid-insepct.msft.png":::
    Viewing grids with the Inspect tool 
@@ -121,7 +121,7 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Grid lay
 
 #### Viewing persistent grid overlays
 
-In Edge 86 and later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays. These persistent overlays provide several benefits. 
+In Edge 86 and later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  These persistent overlays provide several benefits. 
 
 *  The persistent overlays will remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.
 *  Multiple persistent overlays can be enabled at the same time, allowing you to see numerous grid layouts at once.
@@ -146,8 +146,6 @@ The new **Layout** panel, located in the **Elements** tool alongside the **Style
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="./media/experiments-grid.msft.png":::
    CSS grid debugging feature  
 :::image-end:::  
-
-Additional configuration options, such as the ability to customize grid line color, are coming soon.
 
 ### Enable support to move tabs between panels  
 
