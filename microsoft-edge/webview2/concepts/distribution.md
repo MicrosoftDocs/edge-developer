@@ -3,11 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 Application
 author: MSEdgeTeam
 ms.author: msedgedevrel
-<<<<<<< HEAD
 ms.date: 09/15/2020
-=======
-ms.date: 09/10/2020
->>>>>>> 64a7c30125322940daca3a4969d047b00d441cb2
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Distribution of applications using WebView2  
 
-When distributing your WebView2 application, make sure the backing web platform - the [WebView2 Runtime](#understanding-the-WebView2-Runtime) is present before the app starts. The following page describes how you (the developer) are able to ensure that the WebView2 Runtime is installed and use of the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).  
+When distributing your WebView2 application, make sure the backing web platform - the [WebView2 Runtime](#understanding-the-webView2-Runtime) is present before the app starts. The following page describes how you (the developer) are able to ensure that the WebView2 Runtime is installed and use of the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).  
 
 ## Evergreen distribution mode  
 
@@ -34,13 +30,9 @@ WebView2 Runtime is a redistributable runtime and serves as the backing web plat
 
 For development and testing, developer may use the Runtime or any non-stable Microsoft Edge (Chromium) browser channel as the backing platform. In production environment, developer should make sure the Runtime is present on user device before the application starts, as opposed to taking a dependency on the browser, because
 
-<<<<<<< HEAD
 * Microsoft Edge (Chromium) is not guaranteed to be present on all user devices. For example, devices disconnected from Windows Update or not managed by Microsoft directly (a large portion of the Enterprise/EDU market) may not to have the browser. Allowing developers to distribute the WebView2 Runtime avoids having the browser as a pre-requisite for apps.
 * Browser and apps are different use cases and therefore browser may have unintended side-effects for apps. For example, IT admin may version-control the browser for internal website compatibility, and WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.
 * As opposed to the browser, the Runtime is developed and tested for application scenarios and in some cases may include bug fixes not yet available in the browser.
-=======
-For more information about versioning, see [Versioning][ConceptsVersioning] and [Globals][ReferenceWin3209622WebviewIdl].  
->>>>>>> 64a7c30125322940daca3a4969d047b00d441cb2
 
 The Stable browser channel is currently disabled for WebView2 usage to prevent apps from taking dependency on the browser in production.
 
@@ -54,13 +46,7 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
 * FWLink for Bootstrapper (to be released shortly) - a FWLink for developers to programmatically download the bootstrapper.
 * WebView2 Runtime Standalone Installer - a full-blown installer that can install the Evergreen Runtime in offline environment.
 
-<<<<<<< HEAD
 Currently, both bootstrapper and standalone installer only support per-machine install, which requires elevation. When run without elevation, a Windows User Account Control prompt will appear to ask permission from user to elevate.
-=======
-1.  Download the latest [Evergreen WebView2 Runtime Installer][Webview2Installer].  
-1.  Include the installer in your application installer or updater.  
-1.  During your application installation or update, check if the Evergreen WebView2 Runtime is already installed on the user machine, by using the [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) API and checking whether the versionInfo is NULL. If not installed, the application installer/updater can silently invoke the runtime installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstallerX64.exe /silent /install`. 
->>>>>>> 64a7c30125322940daca3a4969d047b00d441cb2
 
 We recommend the following workflows to ensure the Runtime is already installed before application launches. You may adjust your workflow depending on your scenario. We will also expose sample code in the future.
 
@@ -98,10 +84,6 @@ For constrained environments, there are plans to support a Fixed Version \(previ
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
-<<<<<<< HEAD
-[ReferenceWin3209538WebviewIdl]: ../reference/win32/0-9-538/webview2-idl.md  "Globals | Microsoft Docs"  
-=======
 [ReferenceWin3209622WebviewIdl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals | Microsoft Docs"  
 
->>>>>>> 64a7c30125322940daca3a4969d047b00d441cb2
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  
