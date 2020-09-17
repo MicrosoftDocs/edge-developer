@@ -16,7 +16,7 @@ Extensions can communicate with a native Win32 application installed on a userâ€
 To acquire the extension and native application host, you can:
 
 1. Package the extension and the host together. When users install the package, both the extension and the host are installed.
-1. Install the extension from the Microsoft Edge Add-ons store, and have your extension prompt users to install the host. 
+1. Install the extension from the [Microsoft Edge Add-ons store][EdgeAddons], and have your extension prompt users to install the host. 
 
 Refer to the steps below to setup your extension to send and receive messages with native application hosts.
 
@@ -143,6 +143,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- links -->  
 
+[EdgeAddons]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Add-ons"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
