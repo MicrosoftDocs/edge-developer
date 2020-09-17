@@ -267,7 +267,7 @@ Initial developer preview release.
 
 [ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webView2-Runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
+[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webview2-Runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  

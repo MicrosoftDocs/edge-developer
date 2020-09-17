@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Distribution of applications using WebView2  
 
-When distributing your WebView2 application, make sure the backing web platform - the [WebView2 Runtime](#understanding-the-webView2-Runtime) is present before the app starts. The following page describes how you (the developer) are able to ensure that the WebView2 Runtime is installed and use of the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).  
+When distributing your WebView2 application, make sure the backing web platform - the [WebView2 Runtime](#understanding-the-webview2-Runtime) is present before the app starts. The following page describes how you (the developer) are able to ensure that the WebView2 Runtime is installed and use of the two distribution modes for your WebView2 application:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).  
 
 ## Evergreen distribution mode  
 
