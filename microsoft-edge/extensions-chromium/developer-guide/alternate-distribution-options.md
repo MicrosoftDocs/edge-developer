@@ -3,9 +3,9 @@ description: The process of distributing extension by mechanism other than verif
 title: Alternate Method of Distributing Extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2019
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 

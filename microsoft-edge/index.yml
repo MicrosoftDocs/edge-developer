@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 08/20/2020
+  ms.date: 09/08/2020
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -140,7 +140,7 @@ additionalContent:
             - text: DevTools Overview
               url: /microsoft-edge/devtools-guide-chromium
             - text: What's New
-              url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
+              url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools
             - text: Open DevTools
               url: /microsoft-edge/devtools-guide-chromium/open
             - text: DevTools for Beginners
@@ -223,8 +223,6 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
             - text: Open developer account
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
-            - text: Upload YouTube Video
-              url: /microsoft-edge/extensions-chromium/publish/upload-video
             - text: Update Extension Listing
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: Manage account settings
