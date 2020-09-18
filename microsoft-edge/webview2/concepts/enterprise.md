@@ -1,9 +1,9 @@
 ---
-description: Understand how to develop secure WebView2 applications
-title: Best practices for developing secure WebView2 applications
+description: Understand how to manage WebView2 applications
+title: Managing WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 09/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,8 +25,12 @@ IT admins may use group policy objects (GPO) to configure policy settings for We
 <!-- Links -->  
 
 [Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
-[EdgeUpdatePolicies]: https://docs.microsoft.com/en-us/deployedge/microsoft-edge-update-policies "Microsoft Edge - Update policies"
-[EdgeBrowserPolicies]: https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies "Microsoft Edge - Browser policies"
-[ConfigureMicrosoftEdge]: https://docs.microsoft.com/en-us/deployedge/configure-microsoft-edge "Configure Microsoft Edge policy settings on Windows"
-[WebView2Landing]: ../index "WebView2 docs"
-[GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub" 
+
+[EdgeUpdatePolicies]: https://docs.microsoft.com/deployedge/microsoft-edge-update-policies "Microsoft Edge - Update policies"  
+
+[EdgeBrowserPolicies]: https://docs.microsoft.com/deployedge/microsoft-edge-policies "Microsoft Edge - Browser policies"  
+
+[ConfigureMicrosoftEdge]: https://docs.microsoft.com/deployedge/configure-microsoft-edge "Configure Microsoft Edge policy settings on Windows"  
+
+[WebView2Landing]: ../index.md "WebView2 docs"
+[GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
