@@ -108,7 +108,7 @@ In Visual Studio Code, complete the following actions to debug your code.
            Visual Studio Code navigation  
         :::image-end:::  
         
-    1.  Your project is required to have a `launch.json` file.  If your project does not have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.  
+    1.  Your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.  
         
         ```json
         {
