@@ -234,7 +234,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         
 *   Office Add-in Debugging.  
     
-    If you are debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json and ad the following code snippet to enable cross-process communication.  
+    If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json and add the following code snippet to enable cross-process communication.  
     
     ```csharp
     ,"debugServer": 4711
