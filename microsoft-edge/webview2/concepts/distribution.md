@@ -26,23 +26,23 @@ The Evergreen distribution mode ensures that your app is taking advantage of the
 
 ### Understanding the WebView2 Runtime  
 
-WebView2 Runtime is a redistributable runtime and serves as the backing web platform for WebView2 applications, similar in concept to VC++ or .NET Runtime for C++/.NET apps. Under the hood, the Runtime is modified Microsoft Edge (Chromium) binaries that are fine-tuned and tested for applications. The Runtime will not appear as a user-visible browser upon installation, e.g. users will not see any browser desktop shortcut or start menu entry.
+WebView2 Runtime is a redistributable runtime and serves as the backing web platform for WebView2 applications, similar in concept to VC++ or .NET Runtime for C++/.NET apps. Under the hood, the Runtime is modified Microsoft Edge (Chromium) binaries that are fine-tuned and tested for applications. The Runtime will not appear as a user-visible browser upon installation, for example, users will not see any browser desktop shortcut or start menu entry.
 
 For development and testing, developer may use the Runtime or any non-stable Microsoft Edge (Chromium) browser channel as the backing platform. In production environment, developer should make sure the Runtime is present on user device before the application starts, as opposed to taking a dependency on the browser, because
 
-* Microsoft Edge (Chromium) is not guaranteed to be present on all user devices. For example, devices disconnected from Windows Update or not managed by Microsoft directly (a large portion of the Enterprise/EDU market) may not to have the browser. Allowing developers to distribute the WebView2 Runtime avoids having the browser as a pre-requisite for apps.
+* Microsoft Edge (Chromium) is not guaranteed to be present on all user devices. For example, devices disconnected from Windows Update or not managed by Microsoft directly (a large portion of the Enterprise/EDU market) may not have the browser. Allowing developers to distribute the WebView2 Runtime avoids having the browser as a pre-requisite for apps.
 * Browser and apps are different use cases and therefore browser may have unintended side-effects for apps. For example, IT admin may version-control the browser for internal website compatibility, and WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.
 * As opposed to the browser, the Runtime is developed and tested for application scenarios and in some cases may include bug fixes not yet available in the browser.
 
 The Stable browser channel is currently disabled for WebView2 usage to prevent apps from taking dependency on the browser in production.
 
-The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Windows. Before the Runtime becomes more universally available, developer are strongly recommended to deploy the Runtime along with their production application.
+The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Windows. Before the Runtime becomes more universally available, developers are strongly recommended to deploy the Runtime along with their production application.
 
 ### Deploying the Evergreen WebView2 Runtime
 
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device. There are a number of tools available on the [WebView2 Runtime download page][Webview2Installer] to help developers deploy the Evergreen Runtime, namely
 
-* WebView2 Runtime Bootstrapper (to be released shortly) - a tiny (~2MB) installer that downloads the Evergreen Runtime matching device architecture from Microsoft Server and installs it locally.
+* WebView2 Runtime Bootstrapper (to be released shortly) - a tiny (approximately 2 MB) installer that downloads the Evergreen Runtime matching device architecture from Microsoft Server and installs it locally.
 * Link to download the Bootstrapper (to be released shortly) - a link for developers to programmatically download the bootstrapper.
 * WebView2 Runtime Standalone Installer - a full-blown installer that can install the Evergreen Runtime in offline environment.
 
