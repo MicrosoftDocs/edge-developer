@@ -43,7 +43,7 @@ The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Wi
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device. There are a number of tools available on the [WebView2 Runtime download page][Webview2Installer] to help developers deploy the Evergreen Runtime, namely
 
 * WebView2 Runtime Bootstrapper (to be released shortly) - a tiny (~2MB) installer that downloads the Evergreen Runtime matching device architecture from Microsoft Server and installs it locally.
-* FWLink for Bootstrapper (to be released shortly) - a FWLink for developers to programmatically download the bootstrapper.
+* Link to download the Bootstrapper (to be released shortly) - a link for developers to programmatically download the bootstrapper.
 * WebView2 Runtime Standalone Installer - a full-blown installer that can install the Evergreen Runtime in offline environment.
 
 Currently, both bootstrapper and standalone installer only support per-machine install, which requires elevation. When run without elevation, a Windows User Account Control prompt will appear to ask permission from user to elevate.
@@ -57,7 +57,7 @@ If you have an online-only deployment scenario where end users are assumed to ha
 * During your application setup, check if the Runtime is already installed by either
     * Inspect if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or
     * Call WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) and check whether the versionInfo is NULL.
-* If not installed, use the FWLink to programmatically download the bootstrapper.
+* If not installed, use the Link to programmatically download the bootstrapper.
 * Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent` for silent install. Not including the `/silent` flag with trigger install UI.
 
 In this workflow, you're installing the Runtime only when needed, are not required to package any installer or do architecture detection, and can install silently. You may also choose to package the bootstrapper with your application instead of programmatically downloading it on demand.
