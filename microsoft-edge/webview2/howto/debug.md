@@ -188,7 +188,7 @@ In Visual Studio Code, complete the following actions to debug your code.
             "request": "attach",
             "runtimeExecutable": "C:/Folder_Path/Your_WebView2_Application.exe",
             "env": {
-                "Path": "%path%;e:/YourNeededPath; "
+                "Path": "%path%;e:/path/to/your/build/location; "  
             },
             "useWebView": true,
             "timeout": 10000
