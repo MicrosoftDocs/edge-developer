@@ -232,7 +232,7 @@ In Visual Studio Code, complete the following actions to debug your code.
            :::column-end:::
         :::row-end:::  
         
-*   Office Add-in Debugging.  
+*   Debug Office Add-ins.
     
     If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json and add the following code snippet to enable cross-process communication.  
     
