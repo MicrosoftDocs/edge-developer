@@ -211,7 +211,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         :::row:::
            :::column span="":::
               ```json
-              ,"trace": true
+              ,"trace": true  // Turn on debug tracing, and save the output to a log file.
               // ,"trace": "verbose"  //verbose option
               ```  
               
