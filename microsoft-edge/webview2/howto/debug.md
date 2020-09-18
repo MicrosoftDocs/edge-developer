@@ -125,22 +125,22 @@ In Visual Studio Code, complete the following actions to debug your code.
         
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Visual Studio Code Debug Output for launch.json " lightbox="./media/breakpointvs.png":::
-       Visual Studio Code Debug Output for `launch.json`  
+    :::image type="complex" source="./media/breakpointvs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpointvs.png":::
+       Breakpoint is set in Visual Studio Code  
     :::image-end:::
     
     > [!NOTE]
-    > Visual Studio Code does not perform source mapping, you must ensure you have opened and set breakpoints in the same file path that your WebView is using.  If the paths do not match, Visual Studio Code does not pause the running code at the breakpoint.  
+    > Because Visual Studio Code does not perform source mapping, ensure you set breakpoints in the same file that WebView2 uses.  If the paths do not match, Visual Studio Code does not pause the running code at the breakpoint.  
     
-1.  Run code.  
+1.  Run the code.  
     1.  On the **Run** tab, choose the launch configuration from the dropdown menu.  
-    1.  To start debugging, choose the green **run** button.  
+    1.  To start debugging your application, choose Start Debugging, which is the green triangle next to the launch configuration drop down.  
         
         :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/runvs.png":::
            Visual Studio Code Run tab  
         :::image-end:::  
         
-1.  Open the **Debug Console**, and view any errors from the debugger.  
+1.  Open **Debug Console** to view the debug output and errors.  
     
     :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/resultsvs.png":::
        Visual Studio Code Debug Console  
@@ -152,39 +152,38 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     Open `launch.json` and complete the following actions to use targeted Webview debugging.  
     
-    1.  Change `useWebview` parameter value to `true`.  
+    1.  Confirm that the `useWebview` parameter is set to `true`.  
     1.  Add the `urlFilter` parameter.  When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.  
     
     ```json
     "useWebview": "true",
     "urlFilter": "file://C:/path/to/my/index.ts",
     
-    //Other options
+    // Other urlFilter options.
     
-    urlFilter="*index.ts"    //Match any url that ends in index.ts (ignore any leading anything)
-    urlFilter="*index*"      //Match any url that contains index (ignore leading and trailing anything)  
+    urlFilter="*index.ts"    // Match any url that ends with index.ts, and ignore all leading characters. 
+    urlFilter="*index*"      // Match any url that contains the string index anywhere in the URL.  
     urlFilter="*?=debugme*"  //Match any url that has a parameter segment matching "?urlFilter=debugme" (ignoring anything leading or trailing)  
-    urlFilter="*debug*"      //Match any url that contains debug anywhere in the path.
     ```  
     
-    Use the `?=value` syntax to debug pages displayed in WebView2 controls, because webpages ignore unrecognized parameters.  
+    When debugging your application, you may need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.   
     
     > [!IMPORTANT]
-    > After the first match is found, the filtering is stopped for subsequent matches.  As a result, you are not able to debug two or more WebView2 controls at the same time in the same instance of Visual Studio Code.  Using two Visual Studio Code instances also does not let you debug two WebView instances since the CDP port is shared and only open on a single port number.  
+    > After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time because the CDP port is shared by all WebView2 controls, and uses a single port number.  
     
-*   Attaching debugger to a running process.  
+*   Debug running processes  
     
-    Open `launch.json` and update the code to set the `request` parameter value to `attach` to attach the JavaScript debugger to running processes.
+    You may need to attach the debugger to running WebView2 processes. To do that, in `launch.json`, update the `request` parameter to `attach`.
     
     1.  Change the `request` parameter value to `attach`.  
         
-        ```csharp
+        ```json
         {
             "name": "Hello debugging world",
             "type": "pwa-msedge",
-            "port": 9222, // This value is optional, and the default value is 9222.
+            "port": 9222, 
             "request": "attach",
-            "runtimeExecutable": "C:/Folder_Path/Your_WebView2_Application.exe",
+            "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
             "env": {
                 "Path": "%path%;e:/path/to/your/build/location; "  
             },
@@ -195,36 +194,32 @@ In Visual Studio Code, complete the following actions to debug your code.
         
     Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a CDP port open, before sending an attach request.  
     
-*   Debug tracing.  
+*   Debug tracing options  
     
     Add the `trace` parameter to launch.json to enable debug tracing.  
     
     1.  Add `trace` parameter.  
         
-        ```csharp
-        ,"trace": true
-        ,"trace": "verbose"  //verbose option
-        ```  
+ 
         
         :::row:::
            :::column span="":::
               ```json
               ,"trace": true  // Turn on debug tracing, and save the output to a log file.
-              // ,"trace": "verbose"  //verbose option
+              
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Visual Studio Code Debug Output" lightbox="./media/tracelog.png":::
-                 Visual Studio Code Debug Output  
+              :::image type="complex" source="./media/tracelog.png" alt-text=" Save debug output to a log file." lightbox="./media/tracelog.png":::
+                 Save debug output to a log file  
               :::image-end:::  
            :::column-end:::
            :::column span="":::
-              ```csharp
-              // ,"trace": true
-              ,"trace": "verbose"  //verbose option
+              ```json
+              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
               ```  
               
               :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="./media/verbose.png":::
-                 Visual Studio Code Debug Verbose Output  
+                 Visual Studio Code Debug Output with verbose tracing turned on  
               :::image-end:::  
            :::column-end:::
         :::row-end:::  
@@ -242,7 +237,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     You may encounter the following scenarios when using the debugger.  
 
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.  
-    *   You are not able to attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet][Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin3209538Webview2IdlParameters].  
+    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet][Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin3209538Webview2IdlParameters].  
     
 * * *  
 
