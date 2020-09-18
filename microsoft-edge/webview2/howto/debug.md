@@ -243,7 +243,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     You may encounter the following scenarios when using the debugger.  
 
-    *   The debugger does not stop at the breakpoint, and you have debug output.  To solve the issue, ensure that the file where the breakpoint is set is the same one that the WebView2 control uses.  The debugger does not perform source path mapping.  
+    *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.  
     *   You are not able to attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet][Webview2ReferenceDotnet09515MicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin3209538Webview2IdlParameters].  
     
 * * *  
