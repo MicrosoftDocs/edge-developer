@@ -188,7 +188,6 @@ In Visual Studio Code, complete the following actions to debug your code.
             "request": "attach",
             "runtimeExecutable": "C:/Folder_Path/Your_WebView2_Application.exe",
             "env": {
-                // Customize for your build location if needed
                 "Path": "%path%;e:/YourNeededPath; "
             },
             "useWebView": true,
