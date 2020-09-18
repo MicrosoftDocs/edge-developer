@@ -94,7 +94,7 @@ Complete the following actions to debug your WebView2 application.
     
 ## [Visual Studio Code](#tab/visualstudiocode)  
 
-Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  
+Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  Ensure that you're using Visual Studio Code version [insert build here] or later. 
 
 In Visual Studio Code, complete the following actions to debug your code. 
 
