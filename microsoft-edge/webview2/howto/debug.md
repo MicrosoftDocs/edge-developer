@@ -210,7 +210,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         
         :::row:::
            :::column span="":::
-              ```csharp
+              ```json
               ,"trace": true
               // ,"trace": "verbose"  //verbose option
               ```  
