@@ -43,7 +43,7 @@ The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Wi
 
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device. There are a number of tools available on the [WebView2 Runtime download page][Webview2Installer] to help developers deploy the Evergreen Runtime, such as:
 
-* WebView2 Runtime Bootstrapper (to be released shortly) - a tiny (approximately 2 MB) installer that downloads the Evergreen Runtime that matches the device architecture from Microsoft servers and installs it locally.
+* WebView2 Runtime Bootstrapper (to be released soon) is a tiny (approximately 2 MB) installer. This installer downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.
 * Link to download the Bootstrapper (to be released shortly) - a link for developers to programmatically download the bootstrapper.
 * WebView2 Runtime Standalone Installer - a full installer that can install the Evergreen WebView2 Runtime in offline environments.
 
