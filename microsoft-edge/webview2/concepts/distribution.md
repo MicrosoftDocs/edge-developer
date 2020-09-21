@@ -47,7 +47,7 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
 * Link to download the Bootstrapper (to be released soon) is a link for developers to programmatically download the bootstrapper.
 * WebView2 Runtime Standalone Installer is a full installer that can install the Evergreen WebView2 Runtime in offline environments.
 
-Currently, both the bootstrapper and standalone installer only support per-machine install, which requires elevation. When run without elevation, a Windows User Account Control prompt will appear to ask permission from users to elevate permissions.
+Currently, both the bootstrapper and standalone installer only support per-machine install, which requires elevation. When run without elevation, a Windows User Account Control prompt appears to ask users to elevate permissions.
 
 We recommend the following workflows to ensure the Runtime is already installed before your application launches. You may adjust your workflow depending on your scenario. We'll also provide sample code in the future.
 
