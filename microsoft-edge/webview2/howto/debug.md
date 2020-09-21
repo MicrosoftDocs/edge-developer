@@ -169,19 +169,17 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     You may need to attach the debugger to running WebView2 processes. To do that, in `launch.json`, update the `request` parameter to `attach`.
         
-        ```json
-        {
-            "name": "Hello debugging world",
-            "type": "pwa-msedge",
-            "port": 9222, 
-            "request": "attach",
-            "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
-            "env": {
-                "Path": "%path%;e:/path/to/your/build/location; "  
-            },
-            "useWebView": true
-        }
-        ```  
+    ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222, 
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+        "env": {
+            "Path": "%path%;e:/path/to/your/build/location; "  
+        },
+        "useWebView": true
+    ```  
         
     Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.  
     
