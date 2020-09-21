@@ -28,7 +28,9 @@ The Evergreen distribution mode ensures that your app is taking advantage of the
 
 WebView2 Runtime is a redistributable runtime and serves as the backing web platform for WebView2 applications. This concept is similar to VC++ or .NET Runtime for C++/.NET apps. Under the hood, the Runtime is modified Microsoft Edge (Chromium) binaries that are fine-tuned and tested for applications. The Runtime won't appear as a user-visible browser upon installation, for example, users won't have a browser desktop shortcut or start menu entry.
 
-For development and testing, developers may use the Runtime or any non-stable Microsoft Edge (Chromium) browser channel as the backing platform. In production environments, developers must ensure the Runtime is present on user devices before the application starts, instead of taking a dependency on the browser, because:
+For development and testing, developers may use the Runtime or any non-stable Microsoft Edge (Chromium) browser channel for the backing web platform. In production environments, developers must ensure the Runtime is present on user devices before the application starts. The Microsoft Edge Stable channel is unavailable for WebView2 usage to prevent apps from taking a dependency on the browser in production. 
+
+Developers must not take a dependency on the browser because:
 
 * Microsoft Edge (Chromium) isn't guaranteed to be present on all user devices. For example, devices disconnected from Windows Update or not managed by Microsoft directly (a large portion of the Enterprise/EDU market) may not have the browser. Allowing developers to distribute the WebView2 Runtime avoids having the browser as a pre-requisite for apps.
 * Browsers and apps have different use cases and therefore browsers may have unintended side-effects for apps. For example, IT admins may version-control the browser for internal website compatibility, and WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.
