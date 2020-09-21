@@ -100,20 +100,18 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 1.  Your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.  
         
-        ```json
-        {
-            "name": "Hello debug world",
-            "type": "pwa-msedge",
-            "port": 9222, // The port value is optional, and the default value is 9222.
-            "request": "launch",
-            "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
-            "env": {
-                // Customize for your application location if needed
-                "Path": "%path%;e:/path/to/your/application/location; "
-            },
-            "useWebView": true,
-        }
-        ```  
+    ```json
+        "name": "Hello debug world",
+        "type": "pwa-msedge",
+        "port": 9222, // The port value is optional, and the default value is 9222.
+        "request": "launch",
+        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
+        "env": {
+            // Customize for your application location if needed
+            "Path": "%path%;e:/path/to/your/application/location; "
+        },
+        "useWebView": true,
+    ```  
         
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
     
