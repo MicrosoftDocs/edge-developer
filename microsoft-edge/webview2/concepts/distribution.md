@@ -61,7 +61,7 @@ If you have an online-only deployment scenario where end users are assumed to ha
 * If the Runtime isn't installed, use the link to programmatically download the bootstrapper.
 * Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install. 
 
-In this workflow, you're installing the Runtime only when needed, aren't required to package any installer or do architecture detection, and can install silently. You may also choose to package the bootstrapper with your application instead of programmatically downloading it on demand.
+This workflow ensures you install the Runtime only when it's needed, you're not required to package installers or detect the architecture of user devices, and can install the Runtime silently. You may also choose to package the bootstrapper with your application instead of programmatically downloading it on demand.
 
 #### Offline deployment
 
