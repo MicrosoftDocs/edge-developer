@@ -36,7 +36,6 @@ Developers must not take a dependency on the browser because:
 * Browsers and apps have different use cases and therefore browsers may have unintended side-effects for apps. For example, IT admins may version-control the browser for internal website compatibility, and WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.
 * As opposed to the browser, the Runtime is developed and tested for application scenarios and in some cases may include bug fixes not yet available in the browser.
 
-The Stable browser channel is currently unavailable for WebView2 usage to prevent apps from taking a dependency on the browser in production.
 
 The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Windows. Before the Runtime becomes more universally available, developers are recommended to deploy the Runtime along with their production application.
 
