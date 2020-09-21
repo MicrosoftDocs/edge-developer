@@ -72,7 +72,7 @@ If you have an offline deployment scenario where app deployment has to work enti
 * During your application setup, check if the Runtime is already installed by either:
     * Inspecting if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or
     * Calling WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) and check whether the versionInfo is NULL.
-* If the Runtime is not installed, invoke the standalone installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` for silent install. Not including the `/silent` flag with trigger install UI.
+* If the Runtime isn't installed, invoke the standalone installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` for silent install. 
 
 ## Fixed Version distribution mode  
 
