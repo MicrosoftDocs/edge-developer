@@ -1,13 +1,13 @@
 ---
-description:  Release notes for Microsoft Edge WebView2 SDK
-title:  Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
-author:  MSEdgeTeam
-ms.author:  msedgedevrel
-ms.date:  09/10/2020
-ms.topic:  conceptual
-ms.prod:  microsoft-edge
-ms.technology:  webview
-keywords:  IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+description: Release notes for Microsoft Edge WebView2 SDK
+title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 09/21/2020
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # Release notes for WebView2 SDK  
