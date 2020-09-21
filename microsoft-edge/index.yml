@@ -223,8 +223,6 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
             - text: Open developer account
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
-            - text: Upload YouTube Video
-              url: /microsoft-edge/extensions-chromium/publish/upload-video
             - text: Update Extension Listing
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: Manage account settings
