@@ -14,10 +14,10 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 
 ## Context
-What is the loader?
-- The WebView2 SDK contains a header file, loader.dll., and the IDL file. Generally, the Loader DLL is a file that interacts with an app to find the WebView runtime, or edge binary on the box. 
+What is the WebView2Loader.dll?
+- The WebView2 SDK contains a header file, WebView2Loader.dll., and the IDL file. WebView2Loader.dll is a small component that helps apps locate the WebView2 Runtime (or non-stable Microsoft Edge channels) on the device.
 
-For apps that have a single executable, and do not want to ship a loader.dll, follow the process below.
+For apps that have a single executable, and do not want to ship a WebView2Loader.dll, follow the process below.
 
 ## Procedure
 
@@ -32,19 +32,19 @@ For apps that have a single executable, and do not want to ship a loader.dll, fo
     ```csharp
     <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
     ```
-    :::image type="complex" source="./media/staticlib.png" alt-text="Project Files Snippet" lightbox="./media/staticlib.png"::: 
-       Project Files Snippet 
+    :::image type="complex" source="./media/staticlib.png" alt-text="Inserted Snippet" lightbox="./media/staticlib.png"::: 
+       Inserted Snippet 
     :::image-end:::  
 
-1. Next we must edit the app's build configuration's additional dependencies. To begin, find all the < AdditionalDependencies > tags.
-1. Add 'version.lib' as an additional dependency to every different build configuration in the app's `.vcxproj` file.
+1. Next we must edit the app's build configuration's additional dependencies. To begin, find all the < AdditionalDependencies > tags.  
+1. Add 'version.lib' as an additional dependency to every different build configuration in the app's `.vcxproj` file.  
 
-    :::image type="complex" source="./media/versionlib.png" alt-text="" lightbox="./media/versionlib.png"::: 
-        
-    :::image-end:::     
+    :::image type="complex" source="./media/versionlib.png" alt-text="Adding version.lib to ItemDefinitionGroups" lightbox="./media/versionlib.png"::: 
+       Adding version.lib to ItemDefinitionGroups 
+    :::image-end:::  
 
     > [!NOTE]
-    > The WebView2 team aims to complete this step automatically in future releases.
+    > The WebView2 team aims to complete this step automatically in future releases.  
 
 Compile and deploy your app! Success! 
 
@@ -55,7 +55,7 @@ Compile and deploy your app! Success!
 *   For more detailed information about WebView2 APIs, see [API reference][Webview2ApiReference].
 *   For more information about WebView2, see [WebView2 Resources][Webview2MainNextSteps].
 
-## Getting in touch with the Microsoft Edge WebView team  
+## Getting in touch with the WebView2 team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
