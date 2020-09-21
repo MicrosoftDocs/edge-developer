@@ -32,7 +32,7 @@ For development and testing, developers may use the Runtime or any non-stable Mi
 
 Developers must not take a dependency on the browser because:
 
-* Microsoft Edge (Chromium) isn't guaranteed to be present on all user devices. For example, devices disconnected from Windows Update or not managed by Microsoft directly (a large portion of the Enterprise/EDU market) may not have the browser. Allowing developers to distribute the WebView2 Runtime avoids having the browser as a pre-requisite for apps.
+* Microsoft Edge (Chromium) isn't guaranteed to be present on all user devices. For example, devices disconnected from Windows Update or not managed by Microsoft directly (a large portion of the Enterprise/EDU market) may not have the browser. Allowing developers to distribute the WebView2 Runtime avoids taking a dependency on the browser as a pre-requisite for apps.
 * Browsers and apps have different use cases and therefore browsers may have unintended side-effects for apps. For example, IT admins may version-control the browser for internal website compatibility, and WebView2 Runtime allows apps to stay evergreen while browser updates are being actively managed.
 * As opposed to the browser, the Runtime is developed and tested for application scenarios and in some cases may include bug fixes not yet available in the browser.
 
