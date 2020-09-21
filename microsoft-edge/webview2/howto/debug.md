@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/13/2020
+ms.date: 08/21/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -94,7 +94,7 @@ Complete the following actions to debug your WebView2 application.
     
 ## [Visual Studio Code](#tab/visualstudiocode)  
 
-Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  Ensure that you're using Visual Studio Code version [insert build here] or later. 
+Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
 
 In Visual Studio Code, complete the following actions to debug your code. 
 
