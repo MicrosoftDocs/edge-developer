@@ -58,7 +58,7 @@ If you have an online-only deployment scenario where end users are assumed to ha
 * During your application setup, check if the Runtime is already installed by either:
     * Inspecting if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or
     * Calling WebView2 API [GetAvailableCoreWebView2BrowserVersionString](../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring) and check whether the versionInfo is NULL.
-* If the Runtime is not installed, use the link to programmatically download the bootstrapper.
+* If the Runtime isn't installed, use the link to programmatically download the bootstrapper.
 * Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install. Not including the `/silent` flag with trigger install UI.
 
 In this workflow, you're installing the Runtime only when needed, aren't required to package any installer or do architecture detection, and can install silently. You may also choose to package the bootstrapper with your application instead of programmatically downloading it on demand.
