@@ -24,11 +24,11 @@ For apps that have a single executable, and do not want to ship a WebView2Loader
 1. Open up your app's `.vcxproj` project file in a text editor, like VSCode.
     > [!NOTE]
     > The .vcproj project file may be a hidden file, meaning you wouldn't see it in Visual Studio. Use a terminal to find this file.
-1. Locate the section in the code where you would include the WebView2 NuGet package target files. This section can be found after the < /target > tag.
+1. Locate the section in the code where you would include the WebView2 NuGet package target files. (Highlighted in the image below.)
     :::image type="complex" source="./media/inserthere.png" alt-text="Project Files Snippet" lightbox="./media/inserthere.png"::: 
        Project Files Snippet 
     :::image-end:::  
-1. Insert the following code snippet below the target section.
+1. Insert the following code snippet anywhere after where the Microsoft.Web.WebView2.targets is included. For this example, we will include it after the < target > tag.
     ```csharp
     <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
     ```
