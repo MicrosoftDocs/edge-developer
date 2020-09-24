@@ -1,58 +1,57 @@
 ---
-description: Build A Simple Extension That Pops Up NASA Picture Of The Day
-title: Create an extension tutorial Part 1
+description: Build an extension that pops up the NASA picture of the day
+title: Create an extension tutorial - Part 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
-ms.topic: article
+ms.date: 09/23/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge-chromium
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
-# Create an extension tutorial Part 1  
-
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart1]  
+# Create an extension tutorial - Part 1  
 
 ## Overview  
 
-The goal for this tutorial is to build a very simple Edge Chromium extension starting with an empty directory. We will build a simple extension which pops up NASA picture of the day. 
-In this tutorial, you will learn how to create a simple extension with the following tasks.
+The goal for this tutorial is to build a Microsoft Edge (Chromium) extension starting with an empty directory. We'll build an extension that pops up the NASA picture of the day. 
+In this tutorial, you'll learn how to create an extension by:
 
-*   Create `manifest.json` file
-*   Extension icons setup 
-*   Adding a default pop-up dialog 
+*   Creating a `manifest.json` file.  
+*   Adding icons.  
+*   Opening a default pop-up dialog.  
 
+## Before you Begin
 
-### Create `manifest.json` file
+If you'd like to test out the completed extension that you'll build in this tutorial, you can download the finished [source code][ArchiveExtensionGettingStartedPart1].  
 
-Every extension package must have a `manifest.json` file at the root.  You should think of this as the blueprint for the extension.  It tells the browser engine what version of the extension API the extension expects, the name and description of the extension, and lots of other details, many of which are discussed in this multi-part Extension Getting Started guide.  
+## Step 1: Create a `manifest.json` file
 
-Below is the simple  `manifest.json`  
+Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the version of the extension API to use, the extension name and description, and so on.  
+
+The following code snippet outlines the basic information needed in your `manifest.json` file.  
 
 ```json
 {
-    "name": "NASA Picture of the day viewer",
+    "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium Extension to show the NASA Picture of the Day."
+    "description": "A Chromium extension to displays the NASA picture of the day."
 }
 ```  
 
-### Extension icons setup  
+## Step 2: Add icons  
 
-Next add some icons to `manifest.json` file \(and create a new `/icons` directory with the icons files\).  The icons are used for the background image of the button the user selects to launch the extension \(if there is one\), and other places that are appropriate.  
+Next add some icons to the `manifest.json` file. Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button the user selects to launch the extension.  
 
-`PNG` is the recommended format, but you may also use `BMP`, `GIF`, `ICO` and `JPEG`.  It is recommended to always have at least a 128x128 pixels size icon and the browser automatically resizes it as necessary.  
-
-Your directory structure should look like the following diagram.  
-
-<!--  
-:::image type="complex" source="./media/part1-heirarchy.png" alt-text="Directory Structure":::
-   Directory Structure
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Icon on the toolbar to open your extension":::
+   Icon on the toolbar to open your extension
 :::image-end:::
--->  
 
-<!--![Directory Structure][ImagePart1Heirarchy]  -->  
+For icons, we recommend using: 
+*   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG`.  
+*   Icons that are 128 x 128 px, which are resized by the browser if necessary.  
+
+The directories of your project should be similar to the following structure.   
 
 ```shell
 └── part1
@@ -64,14 +63,14 @@ Your directory structure should look like the following diagram.
         └── nasapod128x128.png
 ```  
 
-Your updated `manifest.json` file should appear as follows.  
+Update your `manifest.json` file with the icons information so that it matches the following code snippet. The `png` files listed in the following code are available in the download file mentioned earlier in this article.  
 
 ```json
 {
-    "name": "NASA Picture of the day viewer",
+    "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A chromium extension to show the NASA Picture of the Day.",
+    "description": "A chromium extension to show the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",
@@ -81,68 +80,27 @@ Your updated `manifest.json` file should appear as follows.
 }
 ```  
 
-> [!NOTE]
-> The icon `png` files listed previous code are available in the zip download mentioned at the top of this page.  
+## Step 3: Adding a default pop-up dialog  
 
-### Adding a default pop-up dialog  
+Now, create a `HTML` file that's run when the user chooses the icon to launch your extension.  Create the HTML file called `popup.html` in a directory called `popup`.  When users select the icon, `popup/popup.html` is displayed as a modal dialog.  
 
-Now, create an `HTML` file that is automatically run when the user selects on the extension icon.  
-
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Toolbar Badge Icon":::
-   Toolbar Badge Icon
-:::image-end:::
-
-<!--![Toolbar Badge Icon][ImagePart1Badge1]  -->  
-
-The HTML file is named `popup/popup.html`.  Selecting the Extension icon launches `popup/popup.html` as modal dialog that stays up until you select outside the dialog.  
-
-For this, register the file as a default pop-up in the `manifest.json` under `browser_action` in the following code.  
-
-```json
-{
-    "name": "NASA Picture of the day viewer",
-    "version": "0.0.0.1",
-    "manifest_version": 2,
-    "description": "A chromium Extension to show the NASA Picture of the Day.",
-    "icons": {
-        "16": "icons/nasapod16x16.png",
-        "32": "icons/nasapod32x32.png",
-        "48": "icons/nasapod48x48.png",
-        "128": "icons/nasapod128x128.png"
-    },
-    "browser_action": {
-        "default_popup": "popup/popup.html"
-    }
-}
-```  
-
-In the `popup` directory , add the file `popup.html` and have it render the stars image.  Here is the `popup.html` file.  
+Add the code from the following code snippet to `popup.html` to display the stars image.  
 
 ```html
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>NASA Picture of the Day</title>
+        <title>NASA picture of the day</title>
     </head>
     <body>
         <div>
-            <img src="/images/stars.jpeg" alt="stars" />
+            <img src="/images/stars.jpeg" alt="Display the stars image" />
         </div>
     </body>
 </html>
 ```  
 
- Also, add an image file `images/stars.jpeg` that is referenced in the `popup.html` file.  
-
-The directory structure for the example Extension is displayed in the following diagram.  
-
-<!--  
-:::image type="complex" source="./media/part1-heirarchy1.png" alt-text="Directory Structure for Extension":::
-   Directory Structure for Extension
-:::image-end:::
--->  
-
-<!--![Directory Structure for Extension][ImagePart1Heirarchy1]  -->  
+Ensure that you add the image file `images/stars.jpeg` to the images folder.  The directories of your project should be similar to the following structure.   
 
 ```shell
 └── part1
@@ -158,10 +116,28 @@ The directory structure for the example Extension is displayed in the following 
         └── popup.html
 ```  
 
-> [!NOTE]
-> The `images/stars.jpeg` file listed in the previous image is available in the [zip download][ArchiveExtensionGettingStartedPart1].  
+Finally, ensure you register the pop-up in the `manifest.json` under `browser_action`, as shown in the following code snippet.  
 
-That is everything you need to build a working Extension.  You may go ahead and [test your extension][TestExtensionSideload].  
+```json
+{
+    "name": "NASA picture of the day viewer",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "A chromium extension to display the NASA picture of the day.",
+    "icons": {
+        "16": "icons/nasapod16x16.png",
+        "32": "icons/nasapod32x32.png",
+        "48": "icons/nasapod48x48.png",
+        "128": "icons/nasapod128x128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    }
+}
+```  
+
+## Next steps
+That's everything you need to develop a working extension. Now, go ahead and [test your extension][TestExtensionSideload].  
 
 
 <!-- image links -->  
