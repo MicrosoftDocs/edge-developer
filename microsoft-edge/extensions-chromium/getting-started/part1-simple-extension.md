@@ -22,7 +22,7 @@ In this tutorial, you'll learn how to create an extension by:
 
 ## Before you Begin
 
-If you'd like to test out the completed extension that you'll build in this tutorial, you can download the finished [source code][ArchiveExtensionGettingStartedPart1].  
+If you'd like to test out the completed extension that you'll build in this tutorial, download the [source code][ArchiveExtensionGettingStartedPart1].  
 
 ## Step 1: Create a `manifest.json` file
 
@@ -48,7 +48,7 @@ Next add some icons to the `manifest.json` file. Start by creating the `icons` d
 :::image-end:::
 
 For icons, we recommend using: 
-*   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG`.  
+*   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG` formats.  
 *   Icons that are 128 x 128 px, which are resized by the browser if necessary.  
 
 The directories of your project should be similar to the following structure.   

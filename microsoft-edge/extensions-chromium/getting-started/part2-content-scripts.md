@@ -3,15 +3,16 @@ description: Dynamically Insert NASA Picture Below The Page Body Tag Using Conte
 title: Create an extension tutorial Part 2  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
 # Create an extension tutorial Part 2  
   
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
+-->  
 
 ## Overview  
 
@@ -25,7 +26,7 @@ You will learn to update your pop-up menu to replace your static starts image wi
 
 1.  Remove the image from the pop-up and replace it with a button  
 
-First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.  
+First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You will program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.  
 
 ```html
 <html>
