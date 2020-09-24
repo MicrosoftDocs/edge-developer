@@ -137,7 +137,7 @@ Finally, ensure you register the pop-up in the `manifest.json` under `browser_ac
 ```  
 
 ## Next steps
-That's everything you need to develop a working extension. Now, go ahead and [test your extension][TestExtensionSideload].  
+That's everything you need to develop a working extension. Now, continue on to sideload and run your extension. For more information, see [Sideload an extension][TestExtensionSideload].  
 
 
 <!-- image links -->  
