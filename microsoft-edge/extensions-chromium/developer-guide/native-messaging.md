@@ -87,9 +87,9 @@ The final step involves copying the native messaging host manifest file to your 
     
 **Windows**. The manifest file may be located anywhere in the file system. The application installer must create registry key and set default value of that key to the full path to the manifest file. The following commands are examples of registry keys.
     
-    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`  
-    or  
-    `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`,  
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`  
+    or
+`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`,  
     
     Run the following command at a command prompt to add a registry key to the folder with the manifest file.
     
