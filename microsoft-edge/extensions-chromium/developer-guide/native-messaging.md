@@ -88,22 +88,23 @@ The final step involves copying the native messaging host manifest file to your 
 **Windows**. The manifest file may be located anywhere in the file system. The application installer must create registry key and set default value of that key to the full path to the manifest file. The following commands are examples of registry keys.
     
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`  
-    or
+    or  
 `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`,  
     
     Run the following command at a command prompt to add a registry key to the folder with the manifest file.
     
-    ```shell
-    REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
-    ```  
+```shell
+REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
+```  
     
     Alternatively, copy the following command to a .reg file and run it to add the registry key. 
     
-    ```shell
-    Windows Registry Editor Version 5.00
-    [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
-    @="C:\\path\\to\\nmh-manifest.json"
-    ```  
+```shell
+Windows Registry Editor Version 5.00
+[HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
+@="C:\\path\\to\\nmh-manifest.json"
+``` 
+
   Microsoft Edge queries the 32-bit registry first, and then the 64-bit registry to identify native messaging hosts. If you run the above .reg file as part of a batch script, ensure you run it using an administrator command prompt.
 
 
