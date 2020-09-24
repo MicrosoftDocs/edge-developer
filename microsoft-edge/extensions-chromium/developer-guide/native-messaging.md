@@ -91,13 +91,13 @@ The final step involves copying the native messaging host manifest file to your 
     or  
 `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`,  
     
-    Run the following command at a command prompt to add a registry key to the folder with the manifest file.
+Run the following command at a command prompt to add a registry key to the folder with the manifest file.
     
 ```shell
 REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
 ```  
     
-    Alternatively, copy the following command to a .reg file and run it to add the registry key. 
+Alternatively, copy the following command to a .reg file and run it to add the registry key. 
     
 ```shell
 Windows Registry Editor Version 5.00
