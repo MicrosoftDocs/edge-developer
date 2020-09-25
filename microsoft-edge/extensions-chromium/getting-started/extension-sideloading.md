@@ -21,13 +21,13 @@ To sideload your extension, follow these steps.
    Open the edge://extensions page
 :::image-end:::
 
-1. On the extension management page at `edge://extensions`, turn on **Developer mode** using the toggle at the bottom left of the page.
+2. On the extension management page at `edge://extensions`, turn on **Developer mode** using the toggle at the bottom left of the page.
 
 :::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Turn on Developer Mode":::
    Turn on Developer Mode
 :::image-end:::
 
-1. When installing your extension for the first time, choose **Load Unpacked**.  You'll be prompted for the directory with your extension source files.  Your extension is installed in your browser, similar to extensions installed from the store.  
+3. When installing your extension for the first time, choose **Load Unpacked**.  You'll be prompted for the directory with your extension source files.  Your extension is installed in your browser, similar to extensions installed from the store.  
 
 :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Installed extensions page showing a sideloaded extension":::
    Installed extensions page showing a sideloaded extension
