@@ -1,8 +1,9 @@
 ---
+description: Learn how to detect network issues in the Network panel of Microsoft Edge DevTools.
 title: Network Issues Guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,104 +26,102 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Network Issues Guide   
+# Network issues guide   
 
 
 
 
 This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.  
 
-See [Get Started][NetworkPerformance] to learn the basics of the Network panel.  
+See [Get Started][NetworkPerformance] to learn the basics of the **Network** panel.  
 
 ## Queued or stalled requests   
 
-### Symptoms  
+**Symptoms**  
 
 Six requests are downloading simultaneously.  After that, a series of requests are queued or stalled.  Once one of the first six requests finishes, one of the requests in the queue starts.  
 
-In the **Waterfall** in [Figure 1](#figure-1), the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.  
+In the **Waterfall** in the following figure, the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.  
 
-> ##### Figure 1  
-> An example of a queued or stalled series in the Network panel  
-> ![An example of a queued or stalled series in the Network panel][ImageStalled]  
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+   An example of a queued or stalled series in the **Network** panel  
+:::image-end:::  
 
-### Causes  
+**Causes**  
 
 Too many requests are being made on a single domain.  On HTTP/1.0 or HTTP/1.1 connections, Microsoft Edge allows a maximum of six simultaneous TCP connections per host.  
 
-### Fixes  
+**Fixes**  
 
 *   Implement domain sharding if you must use HTTP/1.0 or HTTP/1.1.  
 *   Use HTTP/2.  Do not use domain sharding with HTTP/2.  
 *   Remove or defer unnecessary requests so that critical requests download earlier.  
-
+    
 ## Slow Time To First Byte (TTFB)   
 
-### Symptoms  
+**Symptoms**  
 
 A request spends a long time waiting to receive the first byte from the server.  
 
-In [Figure 2](#figure-2), the long, green bar in the **Waterfall** indicates that the request was waiting a long time.  This was simulated using a profile to restrict network speed and add a delay.  
+In the following figure, the long, green bar in the **Waterfall** indicates that the request was waiting a long time.  This was simulated using a profile to restrict network speed and add a delay.  
 
-> ##### Figure 2  
-> An example of a request with a slow Time To First Byte  
-> ![An example of a request with a slow Time To First Byte][ImageSlowTimeToFirstByte]  
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="An example of a request with a slow Time To First Byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+   An example of a request with a slow Time To First Byte  
+:::image-end:::  
 
-### Causes  
+**Causes**  
 
 *   The connection between the client and server is slow.  
 *   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte \(TTFB\) when accessing a local server, then the server is slow.  
-
-### Fixes  
+    
+**Fixes**  
 
 *   If the connection is slow, consider hosting your content on a CDN or changing hosting providers.  
 *   If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.  
-
+    
 ## Slow content download   
 
-### Symptoms  
+**Symptoms**  
 
 A request takes a long time to download.  
 
-In [Figure 3](#figure-3), the long, blue bar in the **Waterfall** next to the png means it took a long time to download.  
+In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.  
 
-> ##### Figure 3  
-> An example of a request that takes a long time to download  
-> ![An example of a request that takes a long time to download][ImageSlowContentDownload]  
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="An example of a request that takes a long time to download" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+   An example of a request that takes a long time to download  
+:::image-end:::  
 
-### Causes  
+**Causes**  
 
 *   The connection between the client and server is slow.  
 *   A lot of content is being downloaded.  
-
-### Fixes  
+    
+**Fixes**  
 
 *   Consider hosting your content on a CDN or changing hosting providers.  
 *   Send fewer bytes by optimizing your requests.  
-
+    
 ## Contribute knowledge  
 
 Do you have a network issue that should be added to this guide?  
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Select **Send Feedback** ![Send Feedback][ImageSendFeedbackIcon] in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   Select **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  
+    
+<!--  
+  
 
-<!--   -->  
 
-
+-->  
 
 <!-- image links -->  
 
-[ImageSendFeedbackIcon]: /microsoft-edge/devtools-guide-chromium/media/smile-icon.msft.png  
-
-[ImageStalled]: /microsoft-edge/devtools-guide-chromium/media/network-network-disabled-cache-resources-queue.msft.png "Figure 1: An example of a queued or stalled series in the Network panel"  
-[ImageSlowTimeToFirstByte]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-using-dial-up-profile.msft.png "Figure 2: An example of a request with a slow Time To First Byte"  
-[ImageSlowContentDownload]: /microsoft-edge/devtools-guide-chromium/media/network-network-resources-edge-devtools.msft.png "Figure 3: An example of a request that takes a long time to download"  
+[ImageSendFeedbackIcon]: ../media/smile-icon.msft.png  
 
 <!-- links -->  
 
-[NetworkPerformance]: /microsoft-edge/devtools-guide-chromium/network/index "Inspect Network Activity In Microsoft Edge DevTools"  
+[NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  
 

@@ -1,8 +1,9 @@
 ---
+description: How to view and edit localStorage with the Local Storage pane and the Console.
 title: View And Edit Local Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,106 +26,97 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# View And Edit Local Storage With Microsoft Edge DevTools   
+# View and edit local storage with Microsoft Edge DevTools   
 
 
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [`localStorage`][MDNWindowsLocalStorage] key-value pairs.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.  
 
 ## View localStorage keys and values   
 
 1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
     
-    > ##### Figure 1  
-    > The Manifest pane  
-    > ![The Manifest pane][ImageManifest]  
-
+    :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
+       The **Manifest** pane  
+    :::image-end:::  
+    
 1.  Expand the **Local Storage** menu.  
     
-    > ##### Figure 2  
-    > The **Local Storage** menu shows two domains: `https://business.bing.com` and `https://www.bing.com`  
-    > ![The Local Storage menu][ImageLocalStorageMenu]  
-
+    :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="The Local Storage menu" lightbox="../media/storage-application-local-storage.msft.png":::
+       The **Local Storage** menu  
+    :::image-end:::  
+    
 1.  Select a domain to view the key-value pairs.  
     
-    > ##### Figure 3  
-    > The `localStorage` key-value pairs for the `https://www.bing.com` domain  
-    > ![The localStorage key-value pairs for the https://www.bing.com domain][ImageLocalStorage]  
-
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="The localStorage key-value pairs for the https://www.bing.com domain" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+       The `localStorage` key-value pairs for the `https://www.bing.com` domain  
+    :::image-end:::  
+    
 1.  Select a row of the table to view the value in the viewer below the table.  
     
-    > ##### Figure 4  
-    > Viewing the value of the `eventLogQueue_Online` key  
-    > ![Viewing the value of the eventLogQueue_Online key][ImageLocalStorageViewer]  
-
-## Create a new `localStorage` key-value pair   
+    :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="View the value of the eventLogQueue_Online key" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+       View the value of the `eventLogQueue_Online` key  
+    :::image-end:::  
+    
+## Create a new localStorage key-value pair   
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
 1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
     
-    > ##### Figure 5  
-    > The empty part of the table to double-click in order to create a new key-value pair  
-    > ![The empty part of the table to double-click in order to create a new key-value pair][ImageLocalStorageCreate]  
-
-## Edit `localStorage` keys or values   
+    :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+       The empty part of the table to double-click in order to create a new key-value pair  
+    :::image-end:::  
+    
+## Edit localStorage keys or values   
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
 1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
     
-    > ##### Figure 6  
-    > Editing a `localStorage` key  
-    > ![Editing a localStorage key][ImageLocalStorageEdit]  
-
-## Delete `localStorage` key-value pairs   
+    :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Edit a localStorage key" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+       Edit a `localStorage` key  
+    :::image-end:::  
+    
+## Delete localStorage key-value pairs   
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
 1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-
-1.  Press the `Delete` key or click **Delete Selected** ![Delete Selected][ImageDeleteIcon].  
-
+1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+    
 ## Delete all `localStorage` key-value pairs for a domain   
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-
-1.  Select **Clear All** ![Clear All][ImageClearIcon].  
-
-## Interact with `localStorage` from the Console   
+1.  Select **Clear All** \(![Clear All][ImageClearIcon]\).  
+    
+## Interact with localStorage from the Console   
 
 Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.  
 
 1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.  
     
-    > ##### Figure 7  
-    > Changing the JavaScript context of the **Console**  
-    > ![Changing the JavaScript context of the Console][ImageJSContext]  
-
+    :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Change the JavaScript context of the Console" lightbox="../media/storage-console-local-storage.msft.png":::
+       Change the JavaScript context of the Console  
+    :::image-end:::  
+    
 1.  Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.  
     
-    > ##### Figure 8  
-    > Interacting with `localStorage` from the **Console**  
-    > ![Interacting with localStorage from the Console][ImageLocalStorageConsole]  
-
+    :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interact with localStorage from the Console" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+       Interact with `localStorage` from the **Console**  
+    :::image-end:::  
+    
+<!--  
  
 
 
+-->  
 
 <!-- image links -->  
 
-[ImageClearIcon]: /microsoft-edge/devtools-guide-chromium/media/clear-icon.msft.png  
-[ImageDeleteIcon]: /microsoft-edge/devtools-guide-chromium/media/delete-icon.msft.png  
-
-[ImageManifest]: /microsoft-edge/devtools-guide-chromium/media/storage-application-manifest.msft.png "Figure 1: The Manifest pane"  
-[ImageLocalStorageMenu]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage.msft.png "Figure 2: The Local Storage menu"  
-[ImageLocalStorage]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value.msft.png "Figure 3: The localStorage key-value pairs for the https://www.bing.com domain"  
-[ImageLocalStorageViewer]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-view-key-value-selected.msft.png "Figure 4: Viewing the value of the eventLogQueue_Online key"  
-[ImageLocalStorageCreate]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-new-key-value.msft.png "Figure 5: The empty part of the table to double-click in order to create a new key-value pair"  
-[ImageLocalStorageEdit]: /microsoft-edge/devtools-guide-chromium/media/storage-application-local-storage-edit-key-value.msft.png "Figure 6: Editing a localStorage key"  
-[ImageJSContext]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage.msft.png "Figure 7: Changing the JavaScript context of the Console"  
-[ImageLocalStorageConsole]: /microsoft-edge/devtools-guide-chromium/media/storage-console-local-storage-interaction.msft.png "Figure 8: Interacting with localStorage from the Console"  
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
 

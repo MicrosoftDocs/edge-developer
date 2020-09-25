@@ -1,13 +1,13 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
+description: Host web content in your Win32, .NET, UWP applications with the Microsoft Edge WebView2 control
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
 ---
 
 # Introduction to Microsoft Edge WebView2 (Preview)  
@@ -106,6 +106,7 @@ You are able to run WebView2 applications on the following versions of Windows.
 *   Windows 8.1  
 *   Windows 8  
 *   Windows 7  
+*   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012R2  
@@ -127,12 +128,12 @@ For more information on how to build and deploy WebView2 applications, review th
 *   [How to Debug with WebView2][Webview2HowtoDebug]  
 *   [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowtoWebdriver]  
 
-## Getting in touch with the WebView2 team  
+## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback.  To submit feature requests or bug reports, see [WebView feedback repo][GithubMicrosoftedgeWebviewfeddback] .  It's also a good place to search for known issues.  
+[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 > [!NOTE]
-> During the preview, we collect data to help build a better product.  To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.  
+> During the preview, the collected data helps build a better product.  To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.  
 
 <!-- links -->  
 

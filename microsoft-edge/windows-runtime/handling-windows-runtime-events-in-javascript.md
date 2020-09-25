@@ -1,25 +1,27 @@
 ---
-title:  "Handling Windows Runtime Events in JavaScript"
-ms.custom:  ""
-ms.date:  "04/01/2017"
-ms.prod:  microsoft-edge
-ms.reviewer:  ""
-ms.suite:  ""
-ms.technology:  "windows-integration"
-ms.tgt_pltfrm:  ""
-ms.topic:  "article"
-helpviewer_keywords:  
+title: "Handling Windows Runtime Events in JavaScript"
+ms.custom: ""
+ms.date: 07/29/2020
+ms.prod: microsoft-edge
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: "windows-integration"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
   - "JavaScript, Windows Runtime events"
   - "Windows Runtime events [JavaScript]"
-ms.assetid:  d9436aff-2c30-4846-b8df-eaa3e63fd75c
-caps.latest.revision:  6
-author:  "MSEdgeTeam"
-ms.author:  "msedgedevrel"
-manager:  ""
+ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
+caps.latest.revision: 6
+author: MSEdgeTeam
+ms.author: msedgedevrel
+manager: ""
 ---
-# Handling Windows Runtime Events in JavaScript  
+# Handling Windows Runtime events in JavaScript  
 
-Windows Runtime events are not represented in the same way in JavaScript as they are in C++ or the .NET Framework.  They are not class properties, but rather are represented as \(lowercase\) string identifiers that are passed to the class's `addEventListener` and `removeEventListener` methods.  For example, you can add an event handler for the [Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] event by passing the string "positionchanged" to the `Geolocator.addEventListener` method:  
+[!INCLUDE [deprecation-note](../includes/legacy-edge-note.md)]  
+
+Windows Runtime events are not represented in the same way in JavaScript as they are in C++ or the .NET Framework.  They are not class properties, but rather are represented as \(lowercase\) string identifiers that are passed to the class's `addEventListener` and `removeEventListener` methods.  For example, you can add an event handler for the [Geolocator.PositionChanged][UwpWindowsGeolocationGeolocatorDevicesPositionChanged] event by passing the string `positionchanged` to the `Geolocator.addEventListener` method:  
 
 ```javascript  
 var locator = new Windows.Devices.Geolocation.Geolocator();
@@ -43,8 +45,8 @@ Another difference between .NET/C++ and JavaScript is the number of parameters t
 
 ```javascript
 function (ev) {
-    console.log("Sender:  " + ev.target);
-    console.log("Position:  " +
+    console.log("Sender: " + ev.target);
+    console.log("Position: " +
         ev.position.latitude + "," +
         ev.position.longitude);
 };
@@ -53,14 +55,12 @@ function (ev) {
 > [!IMPORTANT]
 > Windows Runtime features are not available for apps that run in Internet Explorer.  
 
-## See Also  
+## See also  
 
 [Using the Windows Runtime in JavaScript][WindowsRuntimeJavascript]  
 
- <!-- image links -->  
-
  <!-- links -->  
 
-[WindowsRuntimeJavascript]: /microsoft-edge/windows-runtime/using-the-windows-runtime-in-javascript "Using the Windows Runtime in JavaScript"  
+[WindowsRuntimeJavascript]: ./using-the-windows-runtime-in-javascript.md "Using the Windows Runtime in JavaScript | Microsoft Docs"  
 
-[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class"  
+[UwpWindowsGeolocationGeolocatorDevicesPositionChanged]: /uwp/api/Windows.Devices.Geolocation.Geolocator#Windows_Devices_Geolocation_Geolocator_PositionChanged "Geolocator Class | Microsoft Docs"  

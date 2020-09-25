@@ -1,8 +1,9 @@
 ---
+description: Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/26/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 
-# Emulate and Test Other Browsers   
+# Emulate and test other browsers   
 
 
 
@@ -46,7 +47,7 @@ Browser emulators are great for testing the responsiveness of a site, but each d
 
 Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes or your own size by dragging the edges.  
 
-### EdgeHTML Emulation  
+### EdgeHTML emulation  
 
 To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][DevToolsEdgeHtmlEmulation].  
 
@@ -56,28 +57,28 @@ Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look 
 
 Device simulators and emulators simulate not just the browser environment but the entire device.  Each are useful to test things that require OS integration, for example form input with virtual keyboards.  
 
-### Android Emulator  
+### Android emulator  
 
-<!--
-> ##### Figure old 1  
-> Stock Browser in Android Emulator  
-> ![Stock Browser in Android Emulator][ImageAndroidEmulatorStockBrowser]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
+   Stock Browser in Android Emulator  
+:::image-end:::  
+-->  
 
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
 The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].  
 Once your emulator is booted, click on the Browser icon, and test your site on the old Stock Browser for Android.  
 
-#### Chromium Content Shell on Android  
+#### Chromium content shell on Android  
 
-<!--
-> ##### Figure old 2  
-> Android Emulator Content Shell  
-> ![Android Emulator Content Shell][ImageAndroidEmulatorContentShell]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+   Android Emulator Content Shell  
+:::image-end:::  
+-->  
 
-To install the Chromium Content Shell for Android, leave your emulator running and run the following commands at a command prompt:  
+To install the Chromium Content Shell for Android, leave your emulator running and run the following command.  
 
 ```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
@@ -89,23 +90,23 @@ Now you are able to test your site with the Chromium Content Shell.
 
 #### Firefox on Android  
 
-<!--
-> ##### Figure old 3  
-> Firefox Icon on Android Emulator  
-> ![Firefox Icon on Android Emulator][ImageAndroidEmulatorFirefoxBrowser]  
--->
+<!--  
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+   Firefox Icon on Android Emulator  
+:::image-end:::  
+-->  
 
 Similar to the Chromium Content Shell, you are able to get an APK to install Firefox onto the emulator.  
 
 [Download the correct .apk file][MozillaFirefoxDownload].  
 
-From here, you are able to install the file onto an open emulator or connected Android device with the following command:  
+To install the file onto an open emulator or connected Android device, run the following command.  
 
 ```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```  
 
-### iOS Simulator  
+### iOS simulator  
 
 The iOS simulator for Mac OS X comes with Xcode, which you [install from the App Store][MacAppStoreXcode].  
 
@@ -116,9 +117,9 @@ When you are done, learn how to work with the simulator through [Apple Developer
 
 ###  Microsoft Edge (EdgeHTML)  
 
-> ##### Figure 1  
-> Modern IE VM  
-> ![Modern IE VM][ImageVMModernIe]  
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Modern IE VM" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+   Modern IE VM  
+:::image-end:::  
 
 Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).  Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].  
 
@@ -130,22 +131,17 @@ If you are not able to use the emulators and do not have access to real devices,
 *   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
 *   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.  
 
+<!--  
  
 
 
-
-<!-- image links -->  
-
-<!--[ImageAndroidEmulatorStockBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-emulator-stock-browser.msft.png "Figure old 1: Stock Browser in Android Emulator"  -->  
-<!--[ImageAndroidEmulatorContentShell]: /microsoft-edge/devtools-guide-chromium/media/device-mode-android-avd-contentshell.msft.png "Figure old 2: Android Emulator Content Shell"  -->  
-<!--[ImageAndroidEmulatorFirefoxBrowser]: /microsoft-edge/devtools-guide-chromium/media/device-mode-ff-on-android-emulator.msft.png "Figure old 3: Firefox Icon on Android Emulator"  -->  
-[ImageVMModernIe]: /microsoft-edge/devtools-guide-chromium/media/device-mode-modern-ie-vm.msft.png "Figure 1: Modern IE VM"  
+-->  
 
 <!-- links -->  
 
-[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) - Emulation"  
+[DevToolsEdgeHtmlEmulation]: /microsoft-edge/devtools-guide/emulation "DevTools (EdgeHTML) - Emulation | Microsoft Docs"  
 
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations"  
+[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations | Microsoft Docs"  
 
 [MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Download virtual machines"  
 

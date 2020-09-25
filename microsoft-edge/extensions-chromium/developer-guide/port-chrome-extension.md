@@ -3,9 +3,9 @@ description: Process of porting Chrome Extension to Microsoft Edge.
 title: Port Chrome Extension To Microsoft (Chromium)Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/26/2020
+ms.date: 09/15/2020
 ms.topic: article
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 

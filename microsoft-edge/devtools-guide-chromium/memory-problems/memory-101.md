@@ -1,8 +1,9 @@
 ---
+description: This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.
 title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 09/01/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-
-
-
-
-# Memory Terminology   
-
-
+# Memory Terminology  
 
 This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.  
 
@@ -37,20 +32,20 @@ The terms and notions described here refer to the [Memory panel][DevtoolsMemoryP
 
 Think of memory as a graph with primitive types \(like numbers and strings\) and objects \(associative arrays\).  It might visually be represented as a graph with a number of interconnected points as follows:  
 
-> ##### Figure 1  
-> Visual representation of memory  
->![Visual representation of memory][ImageThinkGraph]  
+:::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-thinkgraph.msft.png":::
+   Visual representation of memory  
+:::image-end:::  
 
 An object may hold memory in two ways:  
 
 *   Directly by the object.  
 *   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector \(**GC** for short\).  
 
-When working with the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in DevTools \(a tool for investigating memory issues found under "Memory"\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
+When working with the [Memory][DevtoolsMemoryProblemsHeapSnapshots] panel in DevTools \(a tool for investigating memory issues found under **Memory**\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?  
 
-> ##### Figure 2  
-> Shallow and Retained Size  
->![Shallow and Retained Size][ImageShallowRetained]  
+:::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Shallow and Retained Size" lightbox="../media/memory-problems-shallow-retained.msft.png":::
+   Shallow and Retained Size  
+:::image-end:::  
 
 ### Shallow size  
 
@@ -77,9 +72,9 @@ There are lots of internal GC roots, most of which are not interesting for the u
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected (GCd).  
 
-> ##### Figure 3  
-> You are not able to control how the root object is garbage collected \(GCd\).  
->![You are not able to control how the root object is garbage collected (GCd).][ImageDontControl]  
+:::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="You are not able to control how the root object is garbage collected." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+   You are not able to control how the root object is garbage collected.  
+:::image-end:::  
 
 Whatever is not reachable from the root gets garbage collected \(GCd\).  
 
@@ -90,20 +85,20 @@ Whatever is not reachable from the root gets garbage collected \(GCd\).
 
 The heap is a network of interconnected objects.  In the mathematical world, this structure is called a **graph** or memory graph.  A graph is constructed from **nodes** connected by means of **edges**, both of which are given labels.  
 
-*   **Nodes**  \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
-*   **Edges**  are labelled using the names of **properties**.  
+*   **Nodes** \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
+*   **Edges** are labelled using the names of **properties**.  
 
-Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  Some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] in [Figure 4](#figure-4) include distance: the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
-> ##### Figure 4  
-> Distance from root  
->![Distance from root][ImageRoot]  
+:::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance from root" lightbox="../media/memory-problems-root.msft.png":::
+   Distance from root  
+:::image-end:::  
 
 ## Dominators  
 
 Dominator objects are comprised of a tree structure because each object has exactly one dominator.  A dominator of an object may lack direct references to an object it dominates; that is, the tree of the dominator is not a spanning tree of the graph.  
 
-In [Figure 5](#figure-5):  
+In the following figure, the following statement are true.  
 
 *   Node 1 dominates node 2  
 *   Node 2 dominates nodes 3, 4 and 6  
@@ -111,15 +106,15 @@ In [Figure 5](#figure-5):
 *   Node 5 dominates node 8  
 *   Node 6 dominates node 7  
 
-> ##### Figure 5  
-> Dominator tree structure  
->![Dominator tree structure][ImageDominatorsSpanning]  
+:::image type="complex" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Dominator tree structure" lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+   Dominator tree structure  
+:::image-end:::  
 
-In [Figure 6](#figure-6), node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
+In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector \(GC\) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.  
 
-> ##### Figure 6  
-> Animated dominator illustration  
->![Animated dominator illustration][ImageDominators]  
+:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Animated dominator illustration" lightbox="../media/memory-problems-dominators.msft.gif":::
+   Animated dominator illustration  
+:::image-end:::  
 
 ## V8 specifics  
 
@@ -164,29 +159,22 @@ When there are a small number of properties, the properties are stored internall
 
 **Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access][V8FastProperties].  
 
-
 ### Object groups  
 
-Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, thus forming a connected graph.  Note that native objects are not represented in the JavaScript heap  —  that is why native objects have zero size. Instead, wrapper objects are created.  
+Each **native objects** group is made up of objects that hold mutual references to each other.  Consider, for example, a DOM subtree where every node has a link to the relative parent and links to the next child and next sibling, therefore forming a connected graph.  
+
+> [!NOTE]
+> Native objects are not represented in the JavaScript heap.  The lack of representation is why native objects have zero size. Instead, wrapper objects are created.  
 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector \(GC\) is smart enough to release object groups whose wrappers are no longer referenced. But forgetting to release a single wrapper holds the whole group and associated wrappers.  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
-
-<!-- image links -->  
-
-[ImageThinkGraph]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-thinkgraph.msft.png "Figure 1: Visual representation of memory"  
-[ImageShallowRetained]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-shallow-retained.msft.png "Figure 2: Shallow and Retained Size"  
-[ImageDontControl]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dontcontrol.msft.png "Figure 3: You are not able to control how the root object is garbage collected (GCd)."  
-[ImageRoot]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-root.msft.png "Figure 4: Distance from root"  
-[ImageDominatorsSpanning]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominatorsspanning.msft.png "Figure 5: Dominator tree structure"  
-[ImageDominators]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-dominators.msft.gif "Figure 6: Animated dominator illustration"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblemsHeapSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems/heap-snapshots "/microsoft-edge/devtools-guide-chromium/media/memory-problems"  
+[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"  
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"  
 

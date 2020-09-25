@@ -3,7 +3,7 @@ description: Host web content in your WPF app with the Microsoft Edge WebView 2 
 title: Microsoft Edge WebView 2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,14 +12,14 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 
 # Getting started with WebView2 in WPF (Preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-628-reference-webview2.md).  
 
 ## Prerequisites  
 
 Ensure you installed the following list of pre-requisites before proceeding:  
 
 * [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.  
-* [Visual Studio](https://visualstudio.microsoft.com/) 2017 or later.  
+* [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.  
 
 ## Step 1 - Create a single window application  
 
@@ -68,13 +68,14 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
        Nuget
     :::image-end:::
     
-2.  Enter `Microsoft.Web.WebView2` in the search bar.  Select **Microsoft.Web.WebView2** from the search results.  
+1.  Enter `Microsoft.Web.WebView2` in the search bar.  Select **Microsoft.Web.WebView2** from the search results.  
 
-3. Check **Include prerelease**, select a **prerelease** package version, and then choose **Install**.  
+    > [!IMPORTANT]
+    > Ensure you check **Include prerelease**, select a prerelease package in **Version**, and then choose **Install**.  
   
      ![nuget](./media/installnuget.PNG)
     
-    You are all set to start developing applications using the WebView2 API.  Press `F5` to build and run the project.  The running project displays an empty window.  
+    You are all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Empty app":::
        Empty app
@@ -195,7 +196,7 @@ The application that hosts WebView2 controls listens to the following events tha
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-For more information, see [Navigation Events](../reference/win32/0-9-488/icorewebview2.md#navigation-events).  
+For more information, see [Navigation Events](../concepts/navigation-events.md).  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
    Navigation events
@@ -336,4 +337,4 @@ Congratulations, you built your first WebView2 app!
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebView [feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback) to submit feature requests or bug reports or search for known issues.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
