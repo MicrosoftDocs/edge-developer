@@ -35,13 +35,13 @@ The following code snippet outlines the basic information needed in your `manife
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium extension to displays the NASA picture of the day."
+    "description": "A Chromium extension to display the NASA picture of the day."
 }
 ```  
 
 ## Step 2: Add icons  
 
-Next add some icons to the `manifest.json` file. Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button the user selects to launch the extension.  
+Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.  
 
 :::image type="complex" source="./media/part1-badge1.png" alt-text="Icon on the toolbar to open your extension":::
    Icon on the toolbar to open your extension
@@ -49,7 +49,7 @@ Next add some icons to the `manifest.json` file. Start by creating the `icons` d
 
 For icons, we recommend using: 
 *   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG` formats.  
-*   Icons that are 128 x 128 px, which are resized by the browser if necessary.  
+*   Images that are 128 x 128 px, which are resized by the browser if necessary.  
 
 The directories of your project should be similar to the following structure.   
 
@@ -63,7 +63,7 @@ The directories of your project should be similar to the following structure.
         └── nasapod128x128.png
 ```  
 
-Update your `manifest.json` file with the icons information so that it matches the following code snippet. The `png` files listed in the following code are available in the download file mentioned earlier in this article.  
+Next, add the icons to the `manifest.json` file. Update your `manifest.json` file with the icons information so that it matches the following code snippet. The `png` files listed in the following code are available in the download file mentioned earlier in this article.  
 
 ```json
 {
@@ -80,9 +80,9 @@ Update your `manifest.json` file with the icons information so that it matches t
 }
 ```  
 
-## Step 3: Adding a default pop-up dialog  
+## Step 3: Open a default pop-up dialog  
 
-Now, create a `HTML` file that's run when the user chooses the icon to launch your extension.  Create the HTML file called `popup.html` in a directory called `popup`.  When users select the icon, `popup/popup.html` is displayed as a modal dialog.  
+Now, create a `HTML` file that's run when the user launches your extension.  Create the HTML file called `popup.html` in a directory called `popup`.  When users select the icon to launch the extension, `popup/popup.html` is displayed as a modal dialog.  
 
 Add the code from the following code snippet to `popup.html` to display the stars image.  
 
@@ -116,7 +116,7 @@ Ensure that you add the image file `images/stars.jpeg` to the images folder.  Th
         └── popup.html
 ```  
 
-Finally, ensure you register the pop-up in the `manifest.json` under `browser_action`, as shown in the following code snippet.  
+Finally, ensure you register the pop-up in `manifest.json` under `browser_action`, as shown in the following code snippet.  
 
 ```json
 {

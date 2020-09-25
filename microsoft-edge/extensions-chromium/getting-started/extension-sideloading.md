@@ -1,9 +1,9 @@
 ---
-description: Test your extension by sideloading it on the browser
-title: Test your extension (Extension sideloading)
+description: Test your extension by sideloading it in the browser
+title: Sideload your extension 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
+ms.date: 09/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
@@ -11,15 +11,14 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Sideload an extension
 
-
-The Microsoft Edge \(Chromium\) browser provides a safe and simple way for you to run as well as debug your extensions while you are developing. This article explains how to load the extension \(also called sideloading\) into the Microsoft Edge \(Chromium\) browser to test it.
+During development, you may use the Microsoft Edge \(Chromium\) browser to run and debug your extension safely. This article explains how to load the extension, also called sideloading, into Microsoft Edge to test it.
 
 
 To run your extension locally in your browser while developing it \(sideloading\), follow the steps below.
 
 1. Choose the three dots at the top of your browser.
 
-2. Select `Extensions` from the context menu as shown in the following image which will take you to the Extension management page.
+2. Select `Extensions` from the context menu as shown in the following image, which will take you to the Extension management page.
 
 :::image type="complex" source="./media/part1-threedots.png" alt-text="Choose Extensions":::
    Choose Extensions
@@ -28,16 +27,16 @@ To run your extension locally in your browser while developing it \(sideloading\
 <!--![Choose Extensions][ImagePart1Threedots]  -->  
 
 
-3. On Extension management page, enable the **Developer mode** by enabling the toggle at the bottom left of the page as shown in the following image.
+3. On Extension management page, turn on **Developer mode** using the toggle at the bottom left of the page, as shown in the following image.
 
-:::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Enable Developer Mode":::
-   Enable Developer Mode
+:::image type="complex" source="./media/part1-developermode-toggle.png" alt-text="Turn on Developer Mode":::
+   Turn on Developer Mode
 :::image-end:::
 
 <!--![Enable Developer Mode][ImagePart1DevelopermodeToggle]  -->  
 
 
-4. The first time you want to install your Extension, you choose the `Load Unpacked` option as shown in the following image.  This prompts you for a directory where you have your Extension assets file by file.  This installs the Extension as if you had downloaded it from a store.  
+4. The first time you want to install your extension, choose the `Load Unpacked` option as shown in the following image.  You'll be prompted for the directory with your extension asset files.  Your extension installs in the browser, similar to installing extensions from the store.  
 
 :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Installed Extensions":::
    Installed Extensions
@@ -48,7 +47,7 @@ To run your extension locally in your browser while developing it \(sideloading\
 
 5. After you install your Extension, you may update it by selecting the `Reload` button under your Extension listing.  
 
-6. To remove the Extension from your browser, click the `Remove` button on the bottom of the Extension listing.  
+6. To remove the Extension from your browser, select the `Remove` button on the bottom of the Extension listing.  
 
 
 <!-- image links -->  
