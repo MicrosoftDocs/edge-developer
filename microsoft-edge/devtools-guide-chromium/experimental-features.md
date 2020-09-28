@@ -20,7 +20,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 Use the following steps to turn on \(or off\) experimental features in Microsoft Edge.  
 
 1.  [Open DevTools][DevtoolsOpen].  
-     *   Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+     *   Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
     *   Select `Shift`+`?`.  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  On the left side of the **Settings** pane, choose the **Experiments** section.  
@@ -115,7 +115,7 @@ This experimental feature provides a number of new visualizations to help you de
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines appear around the grid, and shading indicates the location of grid gaps if present.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
 :::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="./media/grid-insepct.msft.png":::
    Viewing grids with the Inspect tool  
@@ -126,7 +126,7 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Grid lay
 In Edge 86 and later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
 
 *   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
-*   Multiple persistent overlays can be enabled at the same time, allowing you to see numerous grid layouts at once.  
+*   Multiple persistent overlays can be enabled at the same time, allowing you to review numerous grid layouts at once.  
 *   Persistent overlays offer many configuration options, such as hiding or showing grid area names, grid gaps, track sizes, and more.  
 
 The two ways to toggle a persistent grid overlay.  
