@@ -115,7 +115,7 @@ This experimental feature provides a number of new visualizations to help you de
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Click the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines appear around the grid, and shading indicates the location of grid gaps if present.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines appear around the grid, and shading indicates the location of grid gaps if present.  
 
 :::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="./media/grid-insepct.msft.png":::
    Viewing grids with the Inspect tool  
@@ -131,13 +131,13 @@ In Edge 86 and later, the experimental CSS grid feature also offers the option t
 
 The two ways to toggle a persistent grid overlay.  
 
-*   Click the **Grid** lozenge next to any Grid element shown in the DOM tree of the **Elements** tool.  
+*   Choose the **Grid** lozenge next to any Grid element shown in the DOM tree of the **Elements** tool.  
     
     :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Grid lozenge in Elements tool" lightbox="./media/grid-adorner.msft.png":::
        Grid lozenge in Elements tool  
     :::image-end:::  
     
-*   Open the new **Layout** panel located in the Elements tool, and click the checkbox next to each Grid element you want to highlight.  
+*   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each Grid element you want to highlight.  
     
     :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Layout panel" lightbox="./media/grid-layout-zoom.msft.png":::
        Layout panel  
@@ -184,7 +184,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, use the following steps.    
+After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, use the following steps.  
 
 1.  Open the **Network** pane.  
 1.  Find the network request that you want to change and resend.  
@@ -202,7 +202,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 
 **Source Order Viewer** is an experiment that displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use Source Order Viewer:  
+After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, use the following steps.  
 
 1.  Open the **Elements** pane.  
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
