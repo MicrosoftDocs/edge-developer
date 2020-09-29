@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
@@ -35,7 +35,7 @@ The Microsoft Edge DevTools include:
  - A [**Memory**](./devtools-guide/memory.md) panel to measure your use of memory resources and compare heap snapshots at different states of code execution
  - An [**Emulation**](./devtools-guide/emulation.md) panel to test your site with different browser profiles, screen resolutions, and GPS location coordinates
 
-Please keep sending your [feedback and feature requests](#feedback)!
+Please keep sending your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team).
 
 > [!TIP]
 > **[Test on Microsoft Edge free from any browser](https://developer.microsoft.com/microsoft-edge/tools/remote/)**:
@@ -58,12 +58,6 @@ The *Microsoft Edge DevTools* app introduces basic support for debugging pages o
 To get started, check out the [*Microsoft Edge DevTools*](./devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview) section of the [DevTools Protocol](./devtools-protocol/index.md) docs.
 
 ![DevTools app Remote panel](./devtools-guide/media/chooser_remote.png)
-
-## Feedback
-
-Please send us your feedback so we can continue improving the Microsoft Edge DevTools for you! Simply open the tools (`F12`) and click the [**Send feedback**](#microsoft-edge-developer-tools) button.
-
-You can also add and upvote tooling requests to our [UserVoice forum](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/84475-f12-developer-tools) and become a [Windows Insider](https://insider.windows.com/) to preview the [latest features coming to the DevTools](./devtools-guide/whats-new.md). Use the Windows **Feedback Hub** app to post, upvote, track and get support for general Windows suggestions and problems.
 
 ## General Shortcuts
 
@@ -96,3 +90,7 @@ Give focus to console at the bottom | Alt+Shift+I
 Dock/undock tools (toggle docking) | Ctrl+P  
 Launch DevTools to Console | Ctrl+Shift+J
 Refresh the page. **Note:** if you're debugging and paused at a breakpoint, this resumes execution first. | Ctrl+Shift+F5 or Ctrl+R
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  

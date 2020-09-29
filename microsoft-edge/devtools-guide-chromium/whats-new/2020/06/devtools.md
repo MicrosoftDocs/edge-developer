@@ -1,8 +1,9 @@
 ---
+description: CSS grid debugging features, Edit and Replay requests with the Network Console, and more.
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/17/2020
+ms.date: 09/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -12,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, VS Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### CSS grid debugging features  
 
@@ -239,8 +240,8 @@ Chromium issue [#1071432][CR1071432]
 
 When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  
 
-:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in VS Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [VS Code][VSCode].
+:::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
+   With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VSCode].
 :::image-end:::  
 
 Chromium issue [#800028][CR800028]
@@ -254,7 +255,7 @@ The **Group similar** toggle in Console Settings now applies to duplicate messag
 For example, previously, DevTools did not ungroup the `hello` messages even though **Group similar** is unchecked.  Now, the `hello` messages are ungrouped.  
 
 :::image type="complex" source="../../media/2020/06/ungroup-similar.msft.png" alt-text="When Group similar is unchecked, the hello messages are ungrouped" lightbox="../../media/2020/06/ungroup-similar.msft.png":::
-   When **Group similar** is unchecked, the `hello` messages are ungrouped.
+   When **Group similar** is unchecked, the `hello` messages are ungrouped
 :::image-end:::  
 
 Give this feature a try with a [sample that sends duplicate messages to the Console][CodepenZoherghadyaliZyrjgdJ].  
@@ -297,7 +298,7 @@ Chromium issue [#974550][CR974550]
 
 ### New icons for breakpoints, conditional breakpoints, and logpoints  
 
-The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [VS Code][VSCode] and [Visual Studio][VS].  Icons are added to differentiate conditional breakpoints and logpoints.  
+The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code][VSCode] and [Visual Studio][VS].  Icons are added to differentiate conditional breakpoints and logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Breakpoints" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Breakpoints  

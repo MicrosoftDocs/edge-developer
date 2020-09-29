@@ -64,6 +64,8 @@
           href: devtools-guide-chromium/open.md
         - name: What's new
           items: 
+            - name: Microsoft Edge 86
+              href: devtools-guide-chromium/whats-new/2020/08/devtools.md
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
             - name: Microsoft Edge 84
@@ -256,6 +258,8 @@
               href: devtools-guide-chromium/customize/placement.md
             - name: Match Browser Language
               href: devtools-guide-chromium/customize/localization.md
+            - name: Shortcuts
+              href: devtools-guide-chromium/customize/shortcuts.md
     - name: DevTools (EdgeHTML)
       href: devtools-guide.md
       items: 
@@ -371,16 +375,14 @@
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Alternate Methods of Distributing Extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
-            - name: Native Messaging
+            - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publish to Microsoft Store
           items: 
-            - name: Step-wise Publishing Process
+            - name: Publish your extension
               href: extensions-chromium/publish/publish-extension.md
-            - name: Open Developer Account
+            - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Upload YouTube Video
-              href: extensions-chromium/publish/upload-video.md
             - name: Update Extension Listing
               href: extensions-chromium/publish/update.md
             - name: Submission states
