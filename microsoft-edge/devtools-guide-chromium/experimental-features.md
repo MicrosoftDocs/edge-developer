@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -117,7 +117,7 @@ This experimental feature provides a number of new visualizations to help you de
 
 The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
-:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="./media/grid-insepct.msft.png":::
+:::image type="complex" source="./media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="./media/grid-inspect.msft.png":::
    Viewing grids with the Inspect tool  
 :::image-end:::  
 
