@@ -36,6 +36,8 @@
   href: roadmap.md
 - name: How to
   items:
+    - name: Use JavaScript in WebView2
+      href: howto/js.md
     - name: Debug WebView2
       href: howto/Debug.md
     - name: Automate with Edge Driver
