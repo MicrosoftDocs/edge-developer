@@ -1,13 +1,13 @@
 ---
-description:  Release notes for Microsoft Edge WebView2 SDK
-title:  Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
-author:  MSEdgeTeam
-ms.author:  msedgedevrel
-ms.date:  09/10/2020
-ms.topic:  conceptual
-ms.prod:  microsoft-edge
-ms.technology:  webview
-keywords:  IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+description: Release notes for Microsoft Edge WebView2 SDK
+title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 09/21/2020
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: webview
+keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
 # Release notes for WebView2 SDK  
@@ -267,7 +267,7 @@ Initial developer preview release.
 
 [ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understand-the-webview2-runtime-and-installer-preview "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
+[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  

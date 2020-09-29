@@ -16,6 +16,8 @@
       href: concepts/distribution.md
     - name: Managing User Data Folders
       href: concepts/userdatafolder.md
+    - name: Managing WebView2 applications
+      href: concepts/enterprise.md
     - name: Navigation events
       href: concepts/navigation-events.md
     - name: Process model
