@@ -3,7 +3,7 @@ description: Native messaging documentation
 title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -66,7 +66,7 @@ The host manifest must be a valid json file containing the following fields.
 | `name` | Name of the native messaging host. Clients pass this string to `runtime.connectNative` or `runtime.sendNativeMessage`.  This name must only contain lowercase alphanumeric characters, underscores, and dots.  The name must not start or end with a dot, and a dot must not be followed by another dot. |  
 | `description` | Brief description of the application. |  
 | `path` | Path to the native messaging host binary. On Windows devices, you may use relative paths to the directory that contains the manifest file. On macOS and Linux, the path must be absolute. The host process is started with the current directory set to the directory that contains the host binary. For example, if this parameter is set to `C:\Application\nm_host.exe`, the binary is started using the current directory `C:\Application\`. |  
-| `type` | Type of the interface used to communicate with the native messaging host.  Currently there is only one possible value for this parameter: `stdio`.  This value indicates that Edge should use `stdin` and `stdout` to communicate with the host. |  
+| `type` | Type of the interface used to communicate with the native messaging host.  Currently there's only one possible value for this parameter: `stdio`.  This value indicates that Microsoft Edge should use `stdin` and `stdout` to communicate with the host. |  
 | `allowed_origins` |  List of extensions that may have access to the native messaging host.  Enable your application to identify and communicate with an extension, set `allowed_origins` to `chrome-extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file. |  
 
 
@@ -77,7 +77,7 @@ While developing, you can sideload your extension to test native messaging with 
 1. Verify the `edge://extensions` page now lists your extension. 
 1. Copy the key from ID from the extension listing on the page.
 
-When you are ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store [publish documentation link]. The extension ID of the published extension may be different to the ID used while sideloading your extension. If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension. 
+When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store [publish documentation link]. The extension ID of the published extension may be different to the ID used while sideloading your extension. If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension. 
 
 
 
@@ -113,10 +113,10 @@ Windows Registry Editor Version 5.00
 1. System-wide native messaging hosts, which are available to all users, are stored in a fixed location. For example, the manifest file must be stored in
     `/Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json`
 
-1. User-specific native messaging hosts, which is available to the current user only, are located in the NativeMessagingHosts  subdirectory in the user profile directory. For example, the manifest file must be stored in  
+1. User-specific native messaging hosts, which are available to the current user only, are located in the NativeMessagingHosts  subdirectory in the user profile directory. For example, the manifest file must be stored in  
     `~/Library/Application Support/Microsoft Edge <ChannelName>/NativeMessagingHosts/com.my_company.my_application.json`
 
-    where `ChannelName` may be Canary, Dev, or Beta. When using the Stable channel, `ChannelName` is not required.
+    where `ChannelName` may be Canary, Dev, or Beta. When using the Stable channel, `ChannelName` isn't required.
 
 
 **Linux** The manifest file must be stored as follows:
