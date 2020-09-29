@@ -42,8 +42,8 @@ Add the nativeMessaging permission to the extension’s **manifest.json** file. 
 
 ### Step 2: Create your native messaging host manifest file
     
-Native applications must provide a **native messaging host manifest** file. This manifest file contains the path to the native messaging host executable, the method of communication with the extension, and a list of allowed extensions it can communicate with. Browsers read and validate the native messaging host manifest, but it’s never installed or managed by the browser. 
-The host manifest must be a valid json file containing the following fields.
+Native applications must provide a native messaging host manifest file. This manifest file contains the path to the native messaging host executable, the method of communication with the extension, and a list of allowed extensions it can communicate with. Browsers read and validate the native messaging host manifest, but it’s never installed or managed by the browser. 
+The host manifest file must be a valid json file containing the following fields.
 
     
 ```xml
@@ -67,7 +67,7 @@ The host manifest must be a valid json file containing the following fields.
 | `description` | Brief description of the application. |  
 | `path` | Path to the native messaging host binary. On Windows devices, you may use relative paths to the directory that contains the manifest file. On macOS and Linux, the path must be absolute. The host process is started with the current directory set to the directory that contains the host binary. For example, if this parameter is set to `C:\Application\nm_host.exe`, the binary is started using the current directory `C:\Application\`. |  
 | `type` | Type of the interface used to communicate with the native messaging host.  Currently there's only one possible value for this parameter: `stdio`.  This value indicates that Microsoft Edge should use `stdin` and `stdout` to communicate with the host. |  
-| `allowed_origins` |  List of extensions that may have access to the native messaging host.  Enable your application to identify and communicate with an extension, set `allowed_origins` to `chrome-extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file. |  
+| `allowed_origins` |  List of extensions that may have access to the native messaging host.  To enable your application to identify and communicate with an extension, set `allowed_origins` to `chrome-extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file. |  
 
 
 While developing, you can sideload your extension to test native messaging with the host by:
@@ -77,7 +77,7 @@ While developing, you can sideload your extension to test native messaging with 
 1. Verify the `edge://extensions` page now lists your extension. 
 1. Copy the key from ID from the extension listing on the page.
 
-When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store [publish documentation link]. The extension ID of the published extension may be different to the ID used while sideloading your extension. If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension. 
+When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store. The extension ID of the published extension may be different to the ID used while sideloading your extension. If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension. 
 
 
 
@@ -85,7 +85,7 @@ When you're ready to distribute your extension to users, publish your extension 
 
 The final step involves copying the native messaging host manifest file to your computer, and ensuring it’s configured correctly. Follow the steps below to ensure the native messaging host file is placed in the expected location because it varies by platform.
     
-**Windows**. The manifest file may be located anywhere in the file system. The application installer must create registry key and set default value of that key to the full path to the manifest file. The following commands are examples of registry keys.
+**Windows**. The manifest file may be located anywhere in the file system. The application installer must create a registry key and set the default value of that key to the full path of the manifest file. The following commands are examples of registry keys.
     
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application`  
     or  
