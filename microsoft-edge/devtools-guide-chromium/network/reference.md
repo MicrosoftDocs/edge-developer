@@ -48,7 +48,7 @@ To stop recording requests, complete the following steps.
 
 ### Clear requests  
 
-Select **Clear** ![Clear][ImageClearIcon] on the Network panel to clear all requests from the Requests table.  
+Select **Clear** \(![Clear][ImageClearIcon]\) on the Network panel to clear all requests from the Requests table.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button" lightbox="../media/network-network-clear-button.msft.png":::
    The **Clear** button  
@@ -587,7 +587,7 @@ You may expand or collapse sections of the Network panel UI to focus important i
 ### Hide the Filters pane  
 
 By default, DevTools shows the **Filters pane**.  
-Select **Filter** ![Filter][ImageFilterIcon] to hide it.  
+Select **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    The Hide Filters button  
