@@ -24,7 +24,7 @@ Refer to the steps below to setup your extension to send and receive messages wi
 
 Add the nativeMessaging permission to the extension’s **manifest.json** file. Below is an example of manifest.json:
 
-```xml
+```json
     {
           "name": "Native Messaging Example",
           "version": "1.0",
@@ -46,7 +46,7 @@ Native applications must provide a native messaging host manifest file. This man
 The host manifest file must be a valid json file containing the following fields.
 
     
-```xml
+```json
     {
         "name": "com.my_company.my_application",
         "description": "My Application",
