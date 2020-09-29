@@ -17,8 +17,8 @@ The ability to use JavaScript in a WebView2 context allows you to customize any 
 ## Important Functions
 Following are some basic functions to begin embedding JavaScript within your WebView application.
 
-1. [**ExecuteScriptAsync**](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2#executescriptasync): In the Getting Started tutorial, we used this function to run JavaScript within our WebView context. 
-1. [**OnDocumentCreatedAsync**](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#addscripttoexecuteondocumentcreated): This function is executed when the DOM is created.
+1. [**ExecuteScriptAsync**](https://docs.microsoft.com/microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2#executescriptasync): In the Getting Started tutorial, we used this function to run JavaScript within our WebView context. 
+1. [**OnDocumentCreatedAsync**](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#addscripttoexecuteondocumentcreated): This function is executed when the DOM is created.
 
 
 ## Running a dedicated script file
