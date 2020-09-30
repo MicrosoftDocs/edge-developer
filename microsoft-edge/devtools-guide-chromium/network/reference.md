@@ -393,47 +393,53 @@ The Requests table displays the following columns by default.
    :::column span="2":::
       The filename of, or an identifier for, the resource.  
    :::column-end:::
-:::row-end::::::row:::
+:::row-end:::  
+:::row:::
    :::column span="1":::
       **Status**  
    :::column-end:::
    :::column span="2":::
       The HTTP status code.  
    :::column-end:::
-:::row-end::::::row:::
+:::row-end:::  
+:::row:::
    :::column span="1":::
       **Type**  
    :::column-end:::
    :::column span="2":::
       The MIME type of the requested resource.  
    :::column-end:::
-:::row-end::::::row:::
+:::row-end:::  
+:::row:::
    :::column span="1":::
       **Initiator**  
    :::column-end:::
    :::column span="2":::
       The following objects or processes initiate requests.  
       
-      *   **Parser**.  The HTML parser for Microsoft Edge.  
-      *   **Redirect**.  An HTTP redirect.  
-      *   **Script**.  A JavaScript function.  
-      *   **Other**.  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.  
+      *   **Parser**  The HTML parser for Microsoft Edge.  
+      *   **Redirect**  An HTTP redirect.  
+      *   **Script**  A JavaScript function.  
+      *   **Other**  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.  
    :::column-end:::
-:::row-end::::::row:::
+:::row-end:::  
+:::row:::
    :::column span="1":::
       **Size**  
    :::column-end:::
    :::column span="2":::
       The combined size of the response headers plus the response body, as delivered by the server.  
    :::column-end:::
-:::row-end::::::row:::
+:::row-end:::  
+:::row:::
    :::column span="1":::
       **Time**  
    :::column-end:::
    :::column span="2":::
       The total duration, from the start of the request to the receipt of the final byte in the response.  
    :::column-end:::
-:::row-end::::::row:::
+:::row-end:::  
+:::row:::
    :::column span="1":::
       [Waterfall](#view-the-timing-relationship-of-requests)  
    :::column-end:::
