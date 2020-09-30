@@ -1,6 +1,6 @@
 ---
 description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
-title: Network Analysis Reference
+title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/30/2020 
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Network Analysis Reference  
+# Network Analysis reference  
 
 Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.  
 
@@ -181,8 +181,7 @@ For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane
    The **Filter** text box  
 :::image-end:::  
 
-You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays
-all PNGs that are larger than one kilobyte.  These multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
+You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than one kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
 
 The complete list of supported properties.  
 
@@ -244,11 +243,46 @@ Select the header of any column in the Requests to sort requests by that column.
 
 To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu \(right-click\), hover over **Waterfall**, and select one of the following options.  
 
-*   **Start Time**.  The first request that was initiated is at the top.  
-*   **Response Time**.  The first request that started downloading is at the top.  
-*   **End Time**.  The first request that finished is at the top.  
-*   **Total Duration**.  The request with the shortest connection setup and request / response is at the top.  
-*   **Latency**.  The request that waited the shortest time for a response is at the top.  
+:::row:::
+   :::column span="1":::
+      **Start Time**  
+   :::column-end:::
+   :::column span="2":::
+      The first request that was initiated is at the top.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Response Time**  
+   :::column-end:::
+   :::column span="2":::
+      The first request that started downloading is at the top.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **End Time**  
+   :::column-end:::
+   :::column span="2":::
+      The first request that finished is at the top.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Total Duration**  
+   :::column-end:::
+   :::column span="2":::
+      The request with the shortest connection settings and request or response is at the top.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Latency**  
+   :::column-end:::
+   :::column span="2":::
+      The request that waited the shortest time for a response is at the top.  
+   :::column-end:::
+:::row-end:::  
 
 These descriptions assume that each respective option is ranked from shortest to longest.  Selecting the header of the **Waterfall** column reverses the order.  
 
@@ -271,17 +305,61 @@ Use the Requests table to view a log of all requests made while DevTools has bee
 
 The Requests table displays the following columns by default.  
 
-*   **Name**.  The filename of, or an identifier for, the resource.  
-*   **Status**.  The HTTP status code.  
-*   **Type**.  The MIME type of the requested resource.  
-*   **Initiator**.  The following objects or processes initiate requests.  
-    *   **Parser**.  The HTML parser for Microsoft Edge.  
-    *   **Redirect**.  An HTTP redirect.  
-    *   **Script**.  A JavaScript function.  
-    *   **Other**.  Some other process or action, such as navigating to a page via a link or entering a URL in the address bar.  
-*   **Size**.  The combined size of the response headers plus the response body, as delivered by the server.  
-*   **Time**.  The total duration, from the start of the request to the receipt of the final byte in the response.  
-*   [**Waterfall**](#view-the-timing-of-requests-in-relation-to-one-another).  A visual breakdown of the activity for each request.  
+:::row:::
+   :::column span="1":::
+      **Name**  
+   :::column-end:::
+   :::column span="2":::
+      The filename of, or an identifier for, the resource.  
+   :::column-end:::
+:::row-end::::::row:::
+   :::column span="1":::
+      **Status**  
+   :::column-end:::
+   :::column span="2":::
+      The HTTP status code.  
+   :::column-end:::
+:::row-end::::::row:::
+   :::column span="1":::
+      **Type**  
+   :::column-end:::
+   :::column span="2":::
+      The MIME type of the requested resource.  
+   :::column-end:::
+:::row-end::::::row:::
+   :::column span="1":::
+      **Initiator**  
+   :::column-end:::
+   :::column span="2":::
+      The following objects or processes initiate requests.  
+      
+      *   **Parser**.  The HTML parser for Microsoft Edge.  
+      *   **Redirect**.  An HTTP redirect.  
+      *   **Script**.  A JavaScript function.  
+      *   **Other**.  Some other process or action, such as navigating to a page via a link or entering a URL in the address bar.  
+   :::column-end:::
+:::row-end::::::row:::
+   :::column span="1":::
+      **Size**  
+   :::column-end:::
+   :::column span="2":::
+      The combined size of the response headers plus the response body, as delivered by the server.  
+   :::column-end:::
+:::row-end::::::row:::
+   :::column span="1":::
+      **Time**  
+   :::column-end:::
+   :::column span="2":::
+      The total duration, from the start of the request to the receipt of the final byte in the response.  
+   :::column-end:::
+:::row-end::::::row:::
+   :::column span="1":::
+      [Waterfall](#view-the-timing-of-requests-in-relation-to-one-another)  
+   :::column-end:::
+   :::column span="2":::
+      A visual breakdown of the activity for each request.  
+   :::column-end:::
+:::row-end:::  
 
 #### Add or remove columns  
 
@@ -455,21 +533,105 @@ For more information about how to access the data that does not require hovering
 
 More information about each of the phases that may display in the **Timing** tab.  
 
-*   **Queueing**.  The browser queues requests when:  
-    *   There are higher priority requests.  
-    *   There are already six TCP connections open for this origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
-    *   The browser is briefly allocating space in the disk cache.  
-*   **Stalled**.  The request could be stalled for any of the reasons described in **Queueing**.  
-*   **DNS Lookup**.  The browser is resolving the IP address for the request.  
-*   **Initial connection**.  The browser is establishing a connection including TCP handshakes, TCP retries, and negotiating an SSL.
-*   **Proxy negotiation**.  The browser is negotiating the request with a [proxy server][WikiProxyServer].  
-*   **Request sent**.  The request is being sent.  
-*   **ServiceWorker Preparation**.  The browser is starting up the service worker.  
-*   **Request to ServiceWorker**.  The request is being sent to the service worker.  
-*   **Waiting \(TTFB\)**.  The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
-*   **Content Download**.  The browser is receiving the response.  
-*   **Receiving Push**.  The browser is receiving data for this response via HTTP/2 Server Push.  
-*   **Reading Push**.  The browser is reading the local data previously received.  
+:::row:::
+   :::column span="1":::
+      **Queueing**  
+   :::column-end:::
+   :::column span="2":::
+      The browser queues requests when the any of the following are true.  
+      *   There are higher priority requests.  
+      *   There are already six TCP connections open for this origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
+      *   The browser is briefly allocating space in the disk cache.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Stalled**  
+   :::column-end:::
+   :::column span="2":::
+      The request is stalled for any of the reasons described in **Queueing**.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **DNS Lookup**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is resolving the IP address for the request.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Initial connection**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is establishing a connection including TCP handshakes, TCP retries, and negotiating an SSL.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Proxy negotiation**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is negotiating the request with a [proxy server][WikiProxyServer].  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Request sent**  
+   :::column-end:::
+   :::column span="2":::
+      The request is being sent.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **ServiceWorker Preparation**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is starting the service worker.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Request to ServiceWorker**  
+   :::column-end:::
+   :::column span="2":::
+      The request is being sent to the service worker.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Waiting \(TTFB\)**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Content Download**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is receiving the response.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Receiving Push**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is receiving data for this response via HTTP/2 Server Push.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Reading Push**  
+   :::column-end:::
+   :::column span="2":::
+      The browser is reading the local data previously received.  
+   :::column-end:::
+:::row-end:::  
 
 ### View initiators and dependencies  
 
@@ -568,13 +730,62 @@ Once you save a HAR file, you may import it back into DevTools for analysis.  Ju
 
 Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover over **Copy**, and select one of the following options.  
 
-*   **Copy Link Address**.  Copy the URL of the request to the clipboard.  
-*   **Copy Response**.  Copy the response body to the clipboard.  
-*   **Copy as Fetch**.  
-*   **Copy as cURL**.  Copy the request as a cURL command.  
-*   **Copy All as Fetch**.  
-*   **Copy All as cURL**.  Copy all requests as a chain of cURL commands.  
-*   **Copy All as HAR**.  Copy all requests as HAR data.  
+:::row:::
+   :::column span="1":::
+      **Copy Link Address**  
+   :::column-end:::
+   :::column span="2":::
+      Copy the URL of the request to the clipboard.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Copy Response**  
+   :::column-end:::
+   :::column span="2":::
+      Copy the response body to the clipboard.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Copy as Fetch**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Copy as cURL**  
+   :::column-end:::
+   :::column span="2":::
+      Copy the request as a cURL command.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Copy All as Fetch**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Copy All as cURL**  
+   :::column-end:::
+   :::column span="2":::
+      Copy all requests as a chain of cURL commands.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Copy All as HAR**  
+   :::column-end:::
+   :::column span="2":::
+      Copy all requests as HAR data.  
+   :::column-end:::
+:::row-end:::  
 
 :::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Selecting Copy Response" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Selecting **Copy Response**  
