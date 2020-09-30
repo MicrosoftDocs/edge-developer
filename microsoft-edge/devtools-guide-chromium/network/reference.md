@@ -33,7 +33,7 @@ Discover new ways to analyze how your page loads in this comprehensive reference
 
 ## Record network requests  
 
-By default, DevTools records all network requests in the Network panel, so long as DevTools is open.  
+By default, DevTools record all network requests in the Network panel, so long as DevTools is open.  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="The Network panel" lightbox="../media/network-network-panel.msft.png":::
    The **Network** panel  
@@ -94,7 +94,7 @@ After capturing a screenshot, you interact with it in the following ways.
 
 ### Emulate a first-time visitor by disabling the browser cache  
 
-To emulate how a first-time user experiences your site, check the **Disable cache** checkbox.  DevTools disables the browser cache.  This more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.  
+To emulate how a first-time user experiences your site, check the **Disable cache** checkbox.  DevTools disables the browser cache.  This feature more accurately emulates a first-time user's experience, because requests are served from the browser cache on repeat visits.  
 
 :::image type="complex" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="The Disable Cache checkbox" lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
    The **Disable Cache** checkbox  
@@ -123,7 +123,7 @@ A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Select the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate a completely offline network experience.  
+Select the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate an offline network experience.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Offline dropdown menu" lightbox="../media/network-network-offline-dropdown.msft.png":::
    The **Offline** dropdown menu  
@@ -137,7 +137,7 @@ Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdo
    The **Throttling** dropdown menu  
 :::image-end:::  
 
-You may select from a variety of presets, such as Slow 3G or Fast 3G.  You may also add your own custom presets by opening the Throttling menu and selecting **Custom** > **Add**.  
+You may select from different presets, such as Slow 3G or Fast 3G.  You may also add your own custom presets by opening the Throttling menu and selecting **Custom** > **Add**.  
 
 DevTools displays a warning icon next to the **Network** tab to remind you that throttling is enabled.  
 
@@ -146,7 +146,7 @@ DevTools displays a warning icon next to the **Network** tab to remind you that 
 If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.  
 
 1.  Open the **Network Conditions** drawer.  
-1.  Select your desired connection speed from the **Throttling** menu.  
+1.  Select your connection speed from the **Throttling** menu.  
 
 <!--todo: add network condition section when available -->  
 
@@ -181,30 +181,111 @@ For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane
    The **Filter** text box  
 :::image-end:::  
 
-You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than one kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
+You may use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.  
 
 The complete list of supported properties.  
 
 | Property | Details |  
 |:--- | :--- |  
-| `domain` | Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populates the autocomplete dropdown menu with all of the domains it has encountered. |  
-| `has-response-header` | Show the resources that contain the specified HTTP response header.  DevTools populates the autocomplete dropdown with all of the response headers that it has encountered. |  
+| `domain` | Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populate the autocomplete dropdown menu with all of the domains that are found. |  
+| `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populate the autocomplete dropdown with all of the response headers that are found. |  
 | `is` | Use `is:running` to find `WebSocket` resources. |  
-| `larger-than` | Show resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |  
-| `method` | Show resources that were retrieved over a specified HTTP method type.  DevTools populates the dropdown with all of the HTTP methods it has encountered. |  
-| `mime-type` | Show resources of a specified MIME type.  DevTools populates the dropdown with all MIME types it has encountered. |  
+| `larger-than` | Displays resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |  
+| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populate the dropdown with all of the HTTP methods  that are found. |  
+| `mime-type` | Displays resources of a specified MIME type.  DevTools populate the dropdown with all MIME types  that are found. |  
 | `mixed-content` | Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\). |  
-| `scheme` | Show resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\). |  
-| `set-cookie-domain` | Show the resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populates the autocomplete with all of the cookie domains that it has encountered. |  
-| `set-cookie-name` | Show the resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populates the autocomplete with all of the cookie names that it has encountered. |  
-| `set-cookie-value` | Show the resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populates the autocomplete with all of the cookie values that it has encountered. |  
-| `status-code` | Show only the resources for which the HTTP status code matches the specified code.  DevTools populates the autocomplete dropdown menu with all of the status codes it has encountered. |  
+| `scheme` | Displays resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\). |  
+| `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |  
+| `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populate the autocomplete with all of the cookie names that are found. |  
+| `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |  
+| `status-code` | Displays resources that match the specific HTTP status code.  DevTools populates the autocomplete dropdown menu with all of the status codes that are found. |  
 
 ### Filter requests by type  
 
-To filter requests by request type, select the **XHR**, **JS**, **CSS**, **Img**, **Media**, **Font**, **Doc**, **WS** \(WebSocket\), **Manifest**, or **Other** \(any other type not listed here\) buttons on the Network panel.  
+To filter requests by request type, select the one of the following buttons on the **Network** panel.  
 
-If the buttons do not display, the **Filters** pane is probably hidden.  
+:::row:::
+   :::column span="1":::
+      **XHR**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **JS**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **CSS**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Img**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Media**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Font**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Doc**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **WS**  
+   :::column-end:::
+   :::column span="2":::
+      WebSocket.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Manifest**  
+   :::column-end:::
+   :::column span="2":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Other**  
+   :::column-end:::
+   :::column span="2":::
+      Any other type not listed.  
+   :::column-end:::
+:::row-end:::  
+
+If the buttons do not display, the **Filters** pane may be hidden.  
 For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
 
 To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then select.  
@@ -217,8 +298,8 @@ To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `C
 
 Select and drag left or right on the Overview pane to only display requests that were active during that time frame.  The filter is inclusive.  Any request that was active during the highlighted time is shown.  
 
-:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtering out any requests that were inactive around 300ms" lightbox="../media/network-network-overview-filter.msft.png":::
-   Filtering out any requests that were inactive around 300ms  
+:::image type="complex" source="../media/network-network-overview-filter.msft.png" alt-text="Filtering out any requests that were inactive around 300 ms" lightbox="../media/network-network-overview-filter.msft.png":::
+   Filtering out any requests that were inactive around 300 ms  
 :::image-end:::  
 
 ### Hide data URLs  
@@ -292,12 +373,12 @@ These descriptions assume that each respective option is ranked from shortest to
 
 ## Analyze requests  
 
-So long as DevTools is open, it logs all requests in the Network panel.  
+So long as DevTools are open, it logs all requests in the Network panel.  
 Use the Network panel to analyze requests.  
 
 ### View a log of requests  
 
-Use the Requests table to view a log of all requests made while DevTools has been open.  Selecting or hovering over requests reveals more information about each item.  
+Use the Requests table to view a log of all requests made while DevTools have been open.  Selecting or hovering over requests reveals more information about each item.  
 
 :::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="The Requests table" lightbox="../media/network-network-requests-table.msft.png":::
    The Requests table  
@@ -336,7 +417,7 @@ The Requests table displays the following columns by default.
       *   **Parser**.  The HTML parser for Microsoft Edge.  
       *   **Redirect**.  An HTTP redirect.  
       *   **Script**.  A JavaScript function.  
-      *   **Other**.  Some other process or action, such as navigating to a page via a link or entering a URL in the address bar.  
+      *   **Other**.  Some other process or action, such as navigating to a page using a link or entering a URL in the address bar.  
    :::column-end:::
 :::row-end::::::row:::
    :::column span="1":::
@@ -377,11 +458,11 @@ To add a custom column to the Requests table, hover on the header of the Request
    Adding a custom column to the Requests table  
 :::image-end:::  
 
-### View the timing of requests in relation to one another  
+### View the timing relationship of requests  
 
-Use the Waterfall to view the timing of requests in relation to one another.  
-By default, the Waterfall is organized by the start time of the requests.  
-So, requests that are farther to the left started earlier than those that are farther to the right.  
+Use the Waterfall to view the timing relationships of requests.  
+The default organization of the Waterfall uses the start time of the requests.  
+So, requests that are farther to the left started earlier than the requests that are farther to the right.  
 
 To review the different ways that you may sort the Waterfall, navigate to [Sort by activity phase](#sort-by-activity-phase).  
 
@@ -521,9 +602,9 @@ For more information about accessing the view, navigate to [View timing breakdow
 
 #### Preview a timing breakdown  
 
-To view a preview of the timing breakdown of a request, hover over the entry for the request in the **Waterfall** column of the Requests table.  
+To view a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.  
 
-For more information about how to access the data that does not require hovering, navigate to [View the timing breakdown of a request](#view-the-timing-breakdown-of-a-request).  
+For more information about how to access the data without hovering, navigate to [View the timing breakdown of a request](#view-the-timing-breakdown-of-a-request).  
 
 :::image type="complex" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="> Previewing the timing breakdown of a request" lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
    Previewing the timing breakdown of a request  
@@ -538,7 +619,7 @@ More information about each of the phases that may display in the **Timing** tab
       **Queueing**  
    :::column-end:::
    :::column span="2":::
-      The browser queues requests when the any of the following are true.  
+      The browser queues requests when any of the following are true.  
       *   There are higher priority requests.  
       *   There are already six TCP connections open for this origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
       *   The browser is briefly allocating space in the disk cache.  
@@ -565,7 +646,7 @@ More information about each of the phases that may display in the **Timing** tab
       **Initial connection**  
    :::column-end:::
    :::column span="2":::
-      The browser is establishing a connection including TCP handshakes, TCP retries, and negotiating an SSL.
+      The browser establishes a connection including TCP handshakes, TCP retries, and negotiates a Secure Socket Layer.
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -605,7 +686,7 @@ More information about each of the phases that may display in the **Timing** tab
       **Waiting \(TTFB\)**  
    :::column-end:::
    :::column span="2":::
-      The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes 1 round trip of latency and the time the server took to prepare the response.  
+      The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes one round trip of latency and the time the server took to prepare the response.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -641,7 +722,7 @@ To view the initiators and dependencies of a request, hold `Shift`and hover over
    Viewing the initiators and dependencies of a request  
 :::image-end:::  
 
-When the Requests table is ordered chronologically, the first green request above the one you are hovering is the initiator of the dependency.  If another green request is displays above that, that higher request is the initiator of the initiator.  And so on.  
+When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.  
 
 ### View load events  
 
@@ -658,8 +739,8 @@ The total number of requests is listed in the Summary pane, at the bottom of the
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.  
 
-:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="The total number of requests since DevTools was opened" lightbox="../media/network-network-total-requests.msft.png":::
-   The total number of requests since DevTools was opened  
+:::image type="complex" source="../media/network-network-total-requests.msft.png" alt-text="The total number of requests since DevTools were opened" lightbox="../media/network-network-total-requests.msft.png":::
+   The total number of requests since DevTools were opened  
 :::image-end:::  
 
 ### View the total download size  
@@ -714,7 +795,7 @@ Select the **Use large request rows** checkbox and then look at the bottom value
 To save all network requests to a HAR file, complete the following steps.  
 
 1.  Hover on any request in the Requests table and open the contextual menu \(right-click\).  
-1.  Select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  There is no way to filter requests, or to save just a single request.  
+1.  Select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.  
 
 Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.  
 <!--See also [HAR Analyzer][HARAnalyzer].  -->  
@@ -797,7 +878,7 @@ You may expand or collapse sections of the Network panel UI to focus important i
 
 ### Hide the Filters pane  
 
-By default, DevTools shows the **Filters pane**.  
+By default, DevTools show the **Filters pane**.  
 Select **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
@@ -820,7 +901,7 @@ Select the **Use large request rows** checkbox to enable large rows.
 
 ### Hide the Overview pane  
 
-By default, DevTools shows the **Overview pane**.  Deselect the **Show Overview** checkbox to hide it.  
+By default, DevTools show the **Overview pane**.  Deselect the **Show Overview** checkbox to hide it.  
 
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="The Show Overview checkbox" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    The **Show Overview** checkbox  
