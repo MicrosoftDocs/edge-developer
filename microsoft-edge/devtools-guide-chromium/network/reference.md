@@ -435,7 +435,7 @@ The Requests table displays the following columns by default.
    :::column-end:::
 :::row-end::::::row:::
    :::column span="1":::
-      [Waterfall](#view-the-timing-of-requests-in-relation-to-one-another)  
+      [Waterfall](#view-the-timing-relationship-of-requests)  
    :::column-end:::
    :::column span="2":::
       A visual breakdown of the activity for each request.  
