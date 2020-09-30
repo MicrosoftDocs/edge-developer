@@ -543,14 +543,14 @@ To view HTTP header data about a request, use the following steps.
 
 By default, the Headers tab shows header names alphabetically.  To view the HTTP header names in the order received, use the following steps.  
 
-1.  Open the **Headers** tab for the request that interests you.  See [View HTTP headers](#view-http-headers).  
+1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
 1.  Select **view source**, next to the **Request Header** or **Response Header** section.  
 
 ### View query string parameters  
 
 To view the query string parameters of a URL in a human-readable format, use the following steps.  
 
-1.  Open the **Headers** tab for the request that interests you.  See [View HTTP headers](#view-http-headers).  
+1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
 1.  Go to the **Query String Parameters** section.  
 
 :::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Query String Parameters section" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
@@ -561,14 +561,14 @@ To view the query string parameters of a URL in a human-readable format, use the
 
 To view the query string parameter source of a request, use the following steps.  
 
-1.  Go to the Query String Parameters section.  See [View query string parameters](#view-query-string-parameters).  
+1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
 1.  Select **view source**.  
 
 #### View URL-encoded query string parameters  
 
 To view query string parameters in a human-readable format, but with encodings preserved, use the following steps.  
 
-1.  Go to the Query String Parameters section.  See [View query string parameters](#view-query-string-parameters).  
+1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
 1.  Select **view URL encoded**.  
 
 ### View cookies  
@@ -578,10 +578,10 @@ To view the cookies sent in the HTTP header of a request, use the following step
 1.  Select the URL of the request, under the **Name** column of the Requests table.  
 1.  Select the **Cookies** tab.  
 
-<!--See [Fields][ManageDataCookiesFields] for a description of each of the columns.  -->
+<!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
-<!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
-<!--TODO: add link when section is available -->
+<!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
+<!--TODO: add link when section is available -->  
 
 :::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Cookies tab" lightbox="../media/network-network-resources-cookies.msft.png":::
    The Cookies tab  
@@ -626,8 +626,8 @@ More information about each of the phases that may display in the **Timing** tab
    :::column-end:::
    :::column span="2":::
       The browser queues requests when any of the following are true.  
-      *   There are higher priority requests.  
-      *   There are already six TCP connections open for this origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
+      *   Higher priority requests exist.  
+      *   Six TCP connections are open for the same origin, which is the limit.  Applies to HTTP/1.0 and HTTP/1.1 only.  
       *   The browser is briefly allocating space in the disk cache.  
    :::column-end:::
 :::row-end:::  
@@ -804,7 +804,7 @@ To save all network requests to a HAR file, complete the following steps.
 1.  Select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.  
 
 Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.  
-<!--See also [HAR Analyzer][HARAnalyzer].  -->  
+<!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
 
 <!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->  
 <!--Todo: add section link when content is available  -->  
