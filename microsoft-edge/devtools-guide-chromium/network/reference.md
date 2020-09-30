@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2020 
+ms.date: 09/30/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -72,7 +72,7 @@ Refresh the page while the **Network** panel is in focus to capture screenshots.
 
 After capturing a screenshot, you interact with it in the following ways.  
 
-*   Hover over a screenshot to view the point at which that screenshot was captured.  A yellow line display on the **Overview** pane.  
+*   Hover over a screenshot to view the point at which that screenshot was captured.  A yellow line is displayed on the **Overview** pane.  
 *   Select the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.  
 *   Double-click a thumbnail to zoom into it.  
 
