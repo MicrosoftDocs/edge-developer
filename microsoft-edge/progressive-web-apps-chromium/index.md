@@ -16,64 +16,54 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 :::row:::
     :::column:::
-        :::image type="complex" source="./media/i_search.png" alt-text="Discoverable icon" lightbox="./media/i_search.png":::
-           Discoverable icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_search.png":::
         ### [Discoverable][MDNPwaAdvantagesDiscoverable]
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_package.png" alt-text="Installable icon" lightbox="./media/i_package.png":::
-           Installable icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_package.png":::
         ### [Installable][MDNPwaAdvantagesInstallable]
         Pin and launch from the home screen, Start Menu, Taskbar, and so on
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_push-notification.png" alt-text="Re-engageable icon" lightbox="./media/i_push-notification.png":::
-           Re-engageable icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_push-notification.png":::
         ### [Re-engageable][MDNPwaAdvantagesReEngageable]
         Send push notifications, even when the app is not active
     :::column-end:::
+:::row-end:::  
+:::row:::
     :::column:::
-        :::image type="complex" source="./media/i_offline.png" alt-text="Network Independent icon" lightbox="./media/i_offline.png":::
-           Network Independent icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_offline.png":::
         ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]
         Works offline and in low-network conditions
     :::column-end:::
-:::row-end:::
-:::row:::
     :::column:::
-        :::image type="complex" source="./media/i_progressive.png" alt-text="Progressive icon" lightbox="./media/i_progressive.png":::
-           Progressive icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_progressive.png":::
         ### [Progressive][MDNPwaAdvantagesProgressive]
         Experience scales up (or down) with device capabilities
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_security.png" alt-text="Safe icon" lightbox="./media/i_security.png":::
-           Safe icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_security.png":::
         ### [Safe][MDNPwaAdvantagesSafe]
         Provides a secure HTTPS endpoint and other user safeguards
     :::column-end:::
+:::row-end:::  
+:::row:::
     :::column:::
-        :::image type="complex" source="./media/i_responsive.png" alt-text="Responsive icon" lightbox="./media/i_responsive.png":::
-           Responsive icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_responsive.png":::
         ### [Responsive][MDNPwaAdvantagesResponsive]
         Adapts to the user's screen size or orientation and input method
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_link.png" alt-text="Linkable icon" lightbox="./media/i_link.png":::
-           Linkable icon  
-        :::image-end:::
+        :::image type="icon" source="./media/i_link.png":::
         ### [Linkable][MDNPwaAdvantagesLinkable]
         Share and launch from a standard hyperlink
     :::column-end:::
-:::row-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
+
 
 Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.  Enhancements include push notifications, app-like integration, and offline support.  Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.  Best of all, your app is updated in using your web server code.  
 
@@ -114,23 +104,82 @@ Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) i
 
 To run as a PWA, your server-hosted web app should include following minimum requirements.  
 
-| Requirement | Details | 
-|:--- |:--- |  
-| [HTTPS][WikiHttps] | Protect your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  |  
-| [Service Workers][MDNServiceWorkerApi] | Use Service Worker threads to act as network proxies between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.  |  
-| [Web App Manifest][MDNWebAppManifest] | Provide a JSON-based metadata file describing key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience. Key information includes icons, language, and URL entry point. |  
+:::row:::
+   :::column span="1":::
+      [HTTPS][WikiHttps]  
+   :::column-end:::
+   :::column span="2":::
+      Protects your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Service Workers][MDNServiceWorkerApi]  
+   :::column span="2":::
+      Use Service Worker threads to act as network proxies between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Web App Manifest][MDNWebAppManifest]  
+   :::column-end:::
+   :::column span="2":::
+      Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.  Key information includes icons, language, and URL entry point. 
+   :::column-end:::
+:::row-end:::  
 
 To be a great PWA, your app must also meet the following requirements.  
 
-| Requirement | Details | 
-|:--- |:--- |  
-| [Cross-browser compatibility][MDNCrossBrowserTesting] | Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  |  
-| [Responsive design][WikiResponsiveWebDesign] | Employ fluid layouts and flexible images.  Responsive design includes the following elements  that adapt your UX to your user's device:  CSS [grid][MDNCssGridLayout], [flexbox][MDNCssFlexibleBoxLayout], CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout], [media queries][MDNMediaQueries], and [responsive images][MDNResponsiveImages].  Use [device emulation tools][DevToolsGuideEmulation] from your browser to test locally, or create a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  |  
-| [Deep linking][WikiDeepLinking] | Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  |  
-| [Validation and testing practices][Webhint] | Use code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  |  
-| [Chromium PWA Checklist][WebDevGoodPwaChecklist] | Check your PWA against the Google baseline PWA checklist.  |  
+:::row:::
+   :::column span="1":::
+      [Cross-browser compatibility][MDNCrossBrowserTesting]  
+   :::column-end:::
+   :::column span="2":::
+      Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Responsive design][WikiResponsiveWebDesign]  
+   :::column-end:::
+   :::column span="2":::
+      Employs fluid layouts and flexible images.  Responsive design includes the following elements that adapt your UX to your user's device.  
+      
+      *   CSS [grid][MDNCssGridLayout]  
+      *   [flexbox][MDNCssFlexibleBoxLayout]  
+      *   CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout]  
+      *   [media queries][MDNMediaQueries]  
+      *   [responsive images][MDNResponsiveImages]  
+      
+      Uses [device emulation tools][DevToolsGuideEmulation] from your browser to locally test, or create a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Deep linking][WikiDeepLinking]  
+   :::column-end:::
+   :::column span="2":::
+      Routes each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Validation and testing practices][Webhint]  
+   :::column-end:::
+   :::column span="2":::
+      Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Chromium PWA Checklist][WebDevGoodPwaChecklist]  
+   :::column-end:::
+   :::column span="2":::
+      Verifies your PWA against the Google baseline PWA checklist.  
+   :::column-end:::
+:::row-end:::  
 
-If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, head to the [Progressive Web Apps (EdgeHTML)][PwaEdgehtmlMicrosoftStore] documentation.  
+If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, navigate to [Progressive Web Apps (EdgeHTML) in the Microsoft Store][PwaEdgehtmlMicrosoftStore].  
   
 ## See also  
 
