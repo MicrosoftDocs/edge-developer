@@ -115,8 +115,9 @@ To run as a PWA, your server-hosted web app should include following minimum req
 :::row:::
    :::column span="1":::
       [Service Workers][MDNServiceWorkerApi]  
+   :::column-end:::
    :::column span="2":::
-      Use Service Worker threads to act as network proxies between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.  
+      Uses Service Worker threads to act as network proxies between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.    
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -179,7 +180,8 @@ To be a great PWA, your app must also meet the following requirements.
    :::column-end:::
 :::row-end:::  
 
-If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, navigate to [Progressive Web Apps (EdgeHTML) in the Microsoft Store][PwaEdgehtmlMicrosoftStore].  
+> [!NOTE]
+> To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, navigate to [Progressive Web Apps (EdgeHTML) in the Microsoft Store][PwaEdgehtmlMicrosoftStore].  
   
 ## See also  
 
