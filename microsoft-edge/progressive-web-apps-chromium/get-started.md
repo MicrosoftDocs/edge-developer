@@ -3,7 +3,7 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/01/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -133,7 +133,7 @@ To build a service worker in your project, use the **Cache-first network** servi
     
 Your web app now has a service worker that uses the cache-first strategy.  You new service worker fetches resources from the cache first, and from the network only as needed.  Cached resources include images, JavaScript, CSS, and HTML.
 
-    Use the following steps to confirm that your service worker runs.  
+Use the following steps to confirm that your service worker runs.  
 
 1.  Navigate to your web app using `http://localhost:3000`.  If your web app is not available, run the following command.   
     
@@ -171,7 +171,7 @@ You may create PWAs that support push notifications by completing the following 
 
 1.  Subscribe to a messaging service using the [Push API][MDNPushApi]  
 1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi]  
-
+    
 Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].  
 
 The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.  
@@ -187,7 +187,7 @@ Service workers handle push events and toast notification interactions in your P
 *   Your PWA is installed, active, and registered  
 *   Your code to complete the subscription task is on the main UI thread of the PWA  
 *   You have network connectivity  
-
+    
 Before a new push subscription is created, Microsoft Edge checks if the user granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
 
 In your `pwabuilder-sw-register.js` file, append the following code snippet.  
@@ -306,13 +306,13 @@ To test push notifications for your PWA, complete the following steps.
 
 The following steps include additional tasks to help you understand building real-world PWAs.  
 
-*  Manage and store push subscriptions  
-*  [Encrypt][NPMWebPushEncrypt] payload data  
-*  Responsive design  
-*  Deep-linking  
-*  [Cross-browser testing][BrowserStackTestEdgeBrowser]  
-*  Implement validation and testing practices such as [Webhint][Webhint]  
-
+*   Manage and store push subscriptions  
+*   [Encrypt][NPMWebPushEncrypt] payload data  
+*   Responsive design  
+*   Deep-linking  
+*   [Cross-browser testing][BrowserStackTestEdgeBrowser]  
+*   Implement validation and testing practices such as [Webhint][Webhint]  
+   
 ## See also  
 
 *   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps]  
@@ -327,7 +327,7 @@ The following steps include additional tasks to help you understand building rea
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
-
+    
 <!-- image links -->  
 
 [ImagePwa]: ./media/pwa.png  
