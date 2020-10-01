@@ -3,7 +3,7 @@ description: Progressive Web Apps run natively on Windows 10.  Here is everythin
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
@@ -84,7 +84,7 @@ When you build a Progressive Web App targeting web standard APIs, your applicati
 *   Your app is built on a standards-based web platform.  
 *   Enables your users to install your app directly from the browser.  
 *   Enables your users to install your app without a Store-based deployment or registration.  
-
+    
 Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available. Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.  The following benefits are included.  
 
 *   Applications may be installed directly from within the browser using the **Install** icon in the navigation bar.  
@@ -103,7 +103,7 @@ Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) i
 *   Shared cookie store with the browser profile that installed the app  
 *   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions  
 *   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app  
-
+    
 > [!IMPORTANT]
 > To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, navigate to [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
 
@@ -143,7 +143,7 @@ If you want to turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] a
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
-
+    
 <!-- links -->  
 
 [DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
