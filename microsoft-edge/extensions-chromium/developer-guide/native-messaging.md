@@ -141,46 +141,43 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.m
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application
 ```
 
-:::row:::
-   :::column span="1":::
-      To add a registry key to the directory with the manifest file.  
-      
-      1.  Run the following command at a command prompt.  
-          
-          ```shell
-          REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
-          ```  
-   :::column-end:::
-   :::column span="2":::
-      An alternative method to add the registry key.  
-      
-      1.  Copy the following command into a `.reg` file.  
-          
-          ```shell
-          Windows Registry Editor Version 5.00
-          [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
-          @="C:\\path\\to\\nmh-manifest.json"
-          ```  
-          
-      1.  Run the `.reg` file.  
-   :::column-end:::
-:::row-end:::
+To add a registry key to the directory with the manifest key.  
 
+*   Run command in command prompt.    
+    
+    1.  Run the following command.  
+        
+        ```shell
+        REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
+        ```  
+    
+*   Create a `.reg` file and run it.  
+    
+    1.  Copy the following command into a `.reg` file.  
+        
+        ```shell
+        Windows Registry Editor Version 5.00
+        [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_application]
+        @="C:\\path\\to\\nmh-manifest.json"
+        ```  
+        
+    1.  Run the `.reg` file.  
+    
 Microsoft Edge queries the 32-bit registry first, and then the 64-bit registry to identify native messaging hosts.  If you run the above `.reg` file as part of a batch script, ensure you run it using an administrator command prompt.  
 
 #### [macOS](#tab/macos/)  
 
 <a id="copy-manifest-file"></a>  
 
-To store the manifest file, complete the following steps.  
+To store the manifest file, complete one of the following actions.  
 
-1.  System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the manifest file must be stored in following location. 
+*   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the manifest file must be stored in following location. 
     
     ```bash
     /Library/Microsoft/Edge/NativeMessagingHosts/com.my_company.my_application.json
     ```  
     
-1.  User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  For example, the manifest file must be stored in following location.  
+*   User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  For example, the manifest file must be stored in following location.  
     
     ```bash
     ~/Library/Application Support/Microsoft Edge {Channel_Name}/NativeMessagingHosts/com.my_company.my_application.json
@@ -198,20 +195,20 @@ To store the manifest file, complete the following steps.
 
 <a id="copy-manifest-file"></a>  
 
-The manifest file must be stored as follows:  
+To store the manifest file, complete one of the following actions.  
 
-1.  System-wide native messaging hosts:  
+*   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  The manifest file must be stored in following location.  
+    
+    ```bash
+    /etc/opt/edge/native-messaging-hosts
+    ```
+    
+*   User-specific native messaging hosts, which are available to the current user only, are located in the `NativeMessagingHosts` subdirectory in the user profile directory.  The manifest file must be stored in following location.  
     
     ```bash
     ~/.config/microsoft-edge/NativeMessagingHosts
     ```  
     
-1.  User-specific native messaging hosts:  
-    
-    ```bash
-    /etc/opt/edge/native-messaging-hosts
-    ```
-
 * * *  
 
 > [!NOTE]
