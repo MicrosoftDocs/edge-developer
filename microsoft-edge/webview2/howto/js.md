@@ -1,61 +1,65 @@
 ---
-description: Learn how to use JavaScript in WebView2 applications
-title: Use JavaScript in WebView2
+description: Learn how to use JavaScript in complex scenarios in WebView2 applications
+title: Use JavaScript in WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2020
+ms.date: 10/01/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# JavaScript Extended Features in WebView2
+# Use JavaScript in WebView for complex scenarios
 
-The ability to use JavaScript in a WebView2 context allows you to customize any app to fit your app's needs. In this article, we'll explore some important functions as well as provide a couple examples of how you can use these functions to improve your app. 
+Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. In this article, we'll explore the most common functions to use with WebView2. We'll also discuss examples of how to use those functions to improve your app. 
 
-## Important Functions
-Following are some basic functions to begin embedding JavaScript within your WebView application.
+## Before you begin
+<!-- TODO: 
+Can we list the steps to perform before continuing with the rest of the how-to topic? For example, create a project in Visual Studio? Or, complete the Getting Started topic first? 
+-->
 
-1. [**ExecuteScriptAsync**](https://docs.microsoft.com/microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2#executescriptasync): In the Getting Started tutorial, we used this function to run JavaScript within our WebView context. 
-1. [**OnDocumentCreatedAsync**](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#addscripttoexecuteondocumentcreated): This function is executed when the DOM is created.
+## Basic WebView2 Functions
+Use the following functions to begin embedding JavaScript in your WebView application.
+
+1. [ExecuteScriptAsync](https://docs.microsoft.com/microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2#executescriptasync): In the Getting Started tutorial, we used this function to run JavaScript in the WebView control. 
+1. [OnDocumentCreatedAsync](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#addscripttoexecuteondocumentcreated): This function is called when the Document Object Model (DOM) is created.
 
 
-## Running a dedicated script file
+## Scenario: Running a dedicated script file
 
-Although writing JavaScript inline can be efficient for quick JavaScript commands, we lose JavaScript color themes and line formatting that can make it difficult to write bigger sections of code.
+Although writing JavaScript inline can be efficient for quick JavaScript commands, we lose JavaScript color themes and line formatting that can make it difficult to write large sections of code in Visual Studio.
 
-We can solve this problem by creating a separate JavaScript file, and pointing to it within the parameters of ExecuteScriptAsync. 
+To solve this problem, create a separate JavaScript file with your code, and then pass a reference to that file using the `ExecuteScriptAsync` parameters.
 
-1. Create a .js file. Ex. "script.js"
-1. Write any JavaScript code here. 
-1. We must convert the JavaScript file to a string in order to pass it into ExecuteScriptAsync. To convert your .js file into a string, insert the following code in `MainWindow.xaml.cs`:
+1. Create a .js file in your project, and add the JavaScript code that you'd like to run. For example, create a file called `script.js`.
+1. Convert the JavaScript file to a string that's passed to `ExecuteScriptAsync`. To convert your JavaScript file into a string, insert the following code in `MainWindow.xaml.cs`.
+
     ```csharp
-    string text = System.IO.File.ReadAllText(@"C:\Users\PATH_TO_YOUR_FILE\script.js"); //get text from .js file
+    string text = System.IO.File.ReadAllText(@"C:\PATH_TO_YOUR_FILE\script.js"); 
     ```
-1. Pass your text variable into ExecuteScriptAsync. It should look like the following.
+
+1. Pass your text variable into `ExecuteScriptAsync`. 
+
     ```csharp
     await webView.CoreWebView2.ExecuteScriptAsync(text);
     ```
 
-## Scenario: Disabling Drag and Drop
+## Scenario: Remove drag and drop functionality
 
-In this section, we'll use JavaScript to disable WebView's drag and drop feature.
+In this section, we'll use JavaScript to remove the drag and drop functionality from your WebView2 control.
 
-Lets experiment drag and drops current functionality. 
+To begin, let's explore the current drag and drop functionality. 
 
-1. Create a file you would like to drag and drop. For this example, I created a .txt file with some random text.
-1. Run the sample project code. 
+1. Create a file you would like to drag and drop. For this example, create `contoso.txt` and then add some text to that file.
+1. Run the sample code. 
+<!--TODO: Can we add a link to the sample code in the Before you Begin section -->
+1. Drag and drop `contoso.txt` onto the WebView control. A new window  pops up, which is what the code in the sample project is expected to do. 
+<!-- TODO:
+Can we an image showing the pop-up? -->
+Now let's add code that removes the drag and drop functionality from the WebView2 control.
 
-    :::image type="complex" source="./media/start_dd.png" alt-text="Test file and Webview" lightbox="./media/start_dd.png":::
-   Test file and Webview  
-    :::image-end:::  
-
-1. Attempt to drag and drop the test file onto the WebView control. A new window should pop up, which means that the drag and drop functionality works as expected.
-
-Now let's add some code to disable this functionality.
-
-1. In the InitializeAsync() method add the following code:
+1. In `InitializeAsync()`, add the following code:
 
     ```c#   
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
@@ -66,32 +70,37 @@ Now let's add some code to disable this functionality.
     "console.log(e.dataTransfer.files[0])" +
     "}, false);");
     ```
-1. Run your app. 
-1. Attempt drag and drop, and notice that it's no longer available. Success.
 
-## Scenario: Disabling Context Menu
+1. Run your project. 
+1. Try to drag and drop `contoso.txt`. Notice that an error message is displayed because the functionality is no longer available.
+<!-- TODO:
+Is there an error message that's displayed? Would showing a screenshot be helpful?-->
 
-In this section, we will learn how to disable the default context menu.
+## Scenario: Removing the Context Menu
 
-**Disabling Context Menu**
-1. To start, run your app as-is and open the contenxt menu, or right-click, anywhere in the webview. The context menu displays the default choices.
+In this section, we'll learn how to remove the default context menu. Perform the following steps:
 
-    :::image type="complex" source="./media/contextmenu.png" alt-text="The default context menu" lightbox="./media/contextmenu.png":::
-   The default context menu  
+1. Run your project.
+1. Open the context menu, or right-click, anywhere on the WebView2 control. The context menu displays the default choices.
+
+    :::image type="complex" source="./media/contextmenu.png" alt-text="The context menu showing the default choices" lightbox="./media/contextmenu.png":::
+   The context menu showing the default choices  
     :::image-end:::  
 
-1. Now lets disable this menu by inserting this line of code into the InitializeAsync() function inside `MainWindow.xaml.cs`.    
+1. Now lets remove the context menu by inserting this line of code into `InitializeAsync()` in `MainWindow.xaml.cs`.    
+
     ```c#   
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```
-1. Run the code. Confirm that opening the context menu isn't available. 
+
+1. Run the code again. Confirm that opening the context menu isn't available. 
 
 ## See also  
 
-*   To get started using WebView2, see [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
+*   For more information on getting started using WebView2, see [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
 *   For a comprehensive example of WebView2 capabilities, see the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
-*   For more detailed information about WebView2 APIs, see [API reference][Webview2ApiReference].
-*   For more information about WebView2, see [WebView2 Resources][Webview2MainNextSteps].
+*   For detailed information on WebView2 APIs, see [API reference][Webview2ApiReference].
+*   For more information on WebView2, see [WebView2 Resources][Webview2MainNextSteps].
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
