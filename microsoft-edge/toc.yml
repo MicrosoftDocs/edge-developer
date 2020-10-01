@@ -378,7 +378,7 @@
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Alternate Methods of Distributing Extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
-            - name: Native Messaging
+            - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publish to Microsoft Store
           items: 
