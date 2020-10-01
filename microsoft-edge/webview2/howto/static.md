@@ -33,7 +33,14 @@ For apps that have a single runtime, and do not want to ship a `WebView2Loader.d
        Project Files code snippet  
     :::image-end:::  
     
-1.  Copy the following code snippet and paste it everywhere the `Microsoft.Web.WebView2.targets` is included.  For example, include it after the `<target>` tag. 
+1.  Copy the following code snippet and paste it everywhere the `Microsoft.Web.WebView2.targets` is included.  
+
+    > [!NOTE]
+    > For example, include it after the following code block.  
+    > 
+    > ```csharp
+    > <Import Project="..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets')" />
+    > ```  
     
     ```csharp
     <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
