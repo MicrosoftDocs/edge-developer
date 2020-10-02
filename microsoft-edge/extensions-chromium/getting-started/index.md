@@ -1,73 +1,52 @@
 ---
-description: Learn what a Chromium Extension is, progressively build a picture viewing extension with options, content injection, background scripts, storage and more.
-title: Getting Started With Microsoft Edge (Chromium) Extensions
+description: Learn about Chromium Extensions, and core concepts to build extensions.
+title: Microsoft Edge (Chromium) Extensions concepts and architecture
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
-ms.topic: article
+ms.date: 10/01/2020
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
 
 # Extension concepts and architecture
 
-This article provides a brief introduction to extension concepts and architecture to help you build extensions. To understand what a Microsoft Edge \(Chromium\) extension is, we first need to fully understand how a multi-tab browser, like Microsoft Edge works.
+This article provides a brief introduction to concepts that help when building extensions. To understand Microsoft Edge \(Chromium\) extensions, we first discuss how multi-tab browsers work.
 
 
-### How a browser works?
+## Understand how browsers work
 
-1.  Each browser tab is isolated from every other tab  
+The following list outlines helpful information to understand before building your extension.
 
-    To start, each browser tab runs in an individual thread that effectively isolates it from other browser tabs \(or threads\).
+1.  Each browser tab is isolated from every other tab.  Each tab runs in its own thread that's isolated from other browser tabs and threads.
 
     ![One thread per browser tab](media/index-image1-browsertabs.png)  
 
-2.  Each tab handles one GET request  
+2.  Each tab handles one GET request.  Each tab uses a URL to get a single stream of data, which is normally an HTML document.  That single stream or page, includes instructions like JavaScript include tags, image references, CSS references, and more.  All resources are downloaded to that one tab page, and then the page is rendered in the tab.  
 
-    Each tab essentially uses the URL to get a single stream of data, which is normally an HTML document.  That single stream or page, includes instructions like JavaScript include tags, image references, CSS references, and more.  All resources are downloaded to that one tab page, and then the page is rendered in the tab.  
+3.  Communication occurs between each tab and remote servers.  Each tab runs in an isolated environment. They're still connected to the internet but they're isolated from other tabs.  Tabs may run JavaScript to communicate with servers. These servers are the originating server for the first GET request that was entered into the URL bar of the tab.  
 
-3.  All communication happens from each tab to remote servers
+4.  The extension model uses a different communication model.  Similar to tab pages, extensions run in individual threads that are isolated from all tab page threads.  Tabs issue single GET requests to remote servers, and then renders the page. However, extensions function similar to a remote server. Installing extensions in your browser creates a standalone web server in the browser. The extension is isolated from all tab pages.  
 
-    Understanding that each tab runs in an isolated environment means that these tabs are isolated from each other, but not the greater internet.  Typically, these tabs, running JavaScript as the defined programming language, communicate back to the server, that should be thought of as the originating server for that first GET request that was entered into the URL bar at the top of the browser tab.  
+    ![Extensions use a different communication model](media/index-image3-upsidedown.png)  
 
-4.  The extension model turns everything upside down  
+## Extension architecture
 
-    An extension, just like tab pages, runs in an individual thread that is isolated from all tab page threads.  Tabs issue single GET requests to remote servers, and then renders the page. However, extensions function similar to a remote server. 
+The following list outlines helpful information as it relates to the architecture of an extension.  
 
-    ![Extension model turns server model upside down](media/index-image3-upsidedown.png)  
+1.  The Extension web server bundle.  An extension is a bundle of web resources. These web resources are similar to other resources that web developers publish to web servers. Developers bundle these web resources into a zip file when building an extension.
+    
+    The zip file includes HTML, CSS, JavaScript, and image files.  There's one additional file that is required in the root of the zip file. This file is the manifest file, and is named `manifest.json`.  It's the blueprint of  your extension and includes the version of your extension, the title, permissions needed for the extension to run, and so on.
 
-> [!IMPORTANT]
-> Installing extensions in your browser creates a standalone web server in the browser. The extension is isolated from all tab pages.  
+2.  Launching the extension server.  Web servers contain your web bundle. Browsers navigate to URLs on the server, and download the file to render in the browser. Browsers navigate using certificates, configuration files, and so on.  If there's an `index.html` file, that's stored at a special location on the web server.  
 
+    When we use extensions, the tab page of your browser gets to the web bundle of your extension using the extension runtime.  The extension runtime serves the files from the URL `extension://{some-long-unique-identifier}/index.html`, where `{some-long-unique-identifier}` is a unique identifier assigned to the extension when it's installed.  Each extension uses a different unique identifier. Each identifier points to the web bundle that's installed in your browser.   
 
-### Extension architecture
+3.  Extensions can communicate with tabs and the browser toolbar.   Extensions can interact with the toolbar of your browser. Each extension manages running tab pages in separate threads, and DOM manipulation on each tab page is isolated.  Extensions use the extensions API to communicate between the extension and tab pages.  This extension API provides additional capabilities that include notification management, storage management, and so on.  
 
-1.  The Extension web server bundle  
+    Just like web servers, extensions wait on notifications when the browser is open.  Extensions and tab pages run in threads that are isolated from each other. However, developers can use the extensions API, and permissions in the manifest file to allow an extension to work with any tab page.  
 
-    An extension is a bundle \(or referred to as a zip file\) of web resources that are no different than what a web developer publishes to a web server.
-
-    That zip file includes HTML, CSS, JavaScript, images and all the necessary assets to make a web page.  There is however, one extra file that is required in the root of this zip file, and that file is named `manifest.json`.  It is the blueprint for your extension that includes things like what is the version of your extension, what is the title, what privileges does it need to run and lots more.
-
-    ![View of files in zip](media/index-image5-filemanager-view.png)  
-
-2.  Launching the extension server  
-
-    When you deploy to a web server, that web server, whether it is Apache, IIS, NGINX or any other, contains your web bundle.  When a browser navigates to a URL on a server, the `index.html` file on the web server is downloaded.  The browser navigated using certificates, configuration files, and more.  The `index.html` file is stored at some special location on the web server.   How does your extension do the same thing?  Particularly, how is the tab page of your browser able to get to this zip file \(your extension\)?  That is what the extension runtime does for you.  
-
-    The extension serves the files all from the URL \(uniform resource locator\) at the name `extension://{some-long-unique-identifier}/index.html`.  The name I put in brackets, `{some-long-unique-identifier}` is a unique identifier assigned to the extension that you installed.  That means, if you have 10 unique Extensions installed on your browser, each extension has a unique identifier that points at the zip file \(or extension bundle\) installed inside your browser.  
-
-    <!--![Unique URLS for Extensions](media/index-image4-uniqueurls.png)  -->  
- 
-
-3.  Extensions manage and communicate with tabs and the browser toolbar  
-
-    Extensions interact with the toolbar of the browser, each is able to manage all the other running tab pages in a safe way, as well as manipulating the DOM of all those tab pages. Built into the Chromium browser is a message API that allows for communications between the extensions and the tab pages to allow this to happen gracefully.  This API, also known as the extensions API provides many capabilities including notification management, storage management, and much more.  
-
-    Just like web servers, extensions are able to continually run \(or sleep waiting for notifications\) all the time that the browser is running.  You may think of an extension as an orchestrator for the browser.  Again, the extension runs completely isolated from the tab pages, but through the extensions API, and opt-in permissions granted to the extension, each extension is able to virtually control any and all tab pages running in the browser.  
-
-4. Extensions provide an opt-in at install time security model  
-
-    Each extension, through a declaration in the `manifest.json` file allows the person installing the extension to give it different levels of authority.  This authority allows extensions, when installed by a user, to opt-in so that the extension is able to extract any information, and process that data through the extension.
+4. Extensions provide opt-in permissions at install time.  Extension permissions are specified by the developer in the `manifest.json` file. When installing extensions, users are presented with information on the permissions that the extensions needs to run. Based on the type of permission required, the extension may extract and use information from the browser.
 
 
 ## Next steps
