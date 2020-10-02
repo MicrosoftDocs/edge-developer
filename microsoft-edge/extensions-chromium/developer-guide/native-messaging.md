@@ -3,7 +3,7 @@ description: Native messaging documentation
 title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -20,7 +20,7 @@ To acquire the extension and native application host, you have two distribution 
 
 To create your extension to send and receive messages with native application hosts, refer to the following steps.  
 
-### Step 1 - Add permissions to the extension manifest  
+## Step 1 - Add permissions to the extension manifest  
 
 Add the `nativeMessaging` permission to the **manifest.json** file of the extension.  The following code snippet is an example of **manifest.json**.  
 
@@ -40,7 +40,7 @@ Add the `nativeMessaging` permission to the **manifest.json** file of the extens
     }
 ```  
 
-### Step 2 - Create your native messaging host manifest file  
+## Step 2 - Create your native messaging host manifest file  
     
 Native applications must provide a native messaging host manifest file.  the manifest file contains the path to the native messaging host runtime, the method of communication with the extension, and a list of allowed extensions to which it communicates.  The browser reads and validates the native messaging host manifest.  The browser does not install or manage the manifest file.  
     
@@ -123,11 +123,11 @@ To sideload of your extension during development, complete the following steps.
 
 When you are ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
 
-### Step 3 - Copy the native messaging host manifest file to your system  
+## Step 3 - Copy the native messaging host manifest file to your system  
 
 The final step involves copying the native messaging host manifest file to your computer, and ensuring it is configured correctly.  To ensure your manifest file is placed in the expected location, complete the following the steps.  The location varies by platform.  
 
-#### [Windows](#tab/windows/)  
+### [Windows](#tab/windows/)  
 
 <a id="copy-manifest-file"></a>  
 
@@ -165,7 +165,7 @@ To add a registry key to the directory with the manifest key.
     
 Microsoft Edge queries the 32-bit registry first, and then the 64-bit registry to identify native messaging hosts.  If you run the above `.reg` file as part of a batch script, ensure you run it using an administrator command prompt.  
 
-#### [macOS](#tab/macos/)  
+### [macOS](#tab/macos/)  
 
 <a id="copy-manifest-file"></a>  
 
@@ -191,7 +191,7 @@ To store the manifest file, complete one of the following actions.
 
     When using the Stable channel, `{Channel_Name}` is not required.  
 
-#### [Linux](#tab/linux/)  
+### [Linux](#tab/linux/)  
 
 <a id="copy-manifest-file"></a>  
 
