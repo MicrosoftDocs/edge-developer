@@ -135,7 +135,7 @@ additionalContent:
       # summary: # < 160 chars (optional)
       items:
         # Card
-        - title: Getting Started with DevTools
+        - title: Get Started with DevTools
           links:
             - text: DevTools Overview
               url: /microsoft-edge/devtools-guide-chromium
