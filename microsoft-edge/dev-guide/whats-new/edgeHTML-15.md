@@ -3,7 +3,7 @@ description: This guide provides an overview of the developer features and stand
 title: New features and APIs in EdgeHTML 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
@@ -112,7 +112,7 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
       Inline scripts and styles  
    :::column-end:::
    :::column span="2":::
-      CSP 2 allows for the execution of inline scripts and style blocks by providing nonces and hashes as a whitelisting mechanism.  Nonces are random base-64 values generated on each page load that appears in both the CSP policy and in the script tags in the page.  When the page is dynamically generated on load, the server generates a nonce value, inserts it into the NonceToken in the page and also declares it in the Content Security Policy HTTP header.  Hashes are static values generated \(via sha256, sha384 or sha512 algorithms\) from the content of a `<script>` or `<style>` element that are then specified \(via `script-src` or `style-src` directives\) in the CSP policy.  
+      CSP 2 allows for the execution of inline scripts and style blocks by providing nonces and hashes as a allow-listing mechanism.  Nonces are random base-64 values generated on each page load that appears in both the CSP policy and in the script tags in the page.  When the page is dynamically generated on load, the server generates a nonce value, inserts it into the NonceToken in the page and also declares it in the Content Security Policy HTTP header.  Hashes are static values generated \(using sha256, sha384 or sha512 algorithms\) from the content of a `<script>` or `<style>` element that are then specified \(using `script-src` or `style-src` directives\) in the CSP policy.  
    :::column-end:::
 :::row-end:::  
 :::row:::
