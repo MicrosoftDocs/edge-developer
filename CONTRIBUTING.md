@@ -1,6 +1,6 @@
 # Contributing to the Microsoft Edge documentation  
 
-Thank you for your interest in the Microsoft Edge documentation.  The Microsoft Edge team appreciates your feedback, edits, additions, and help with improving the Microsoft Edge docs.  This page covers the basic steps and guidelines for contributing.  
+Thank you for your interest in the Microsoft Edge documentation. The Microsoft Edge team appreciates your feedback, edits, additions, and help with improving the Microsoft Edge docs.  This page covers the basic steps and guidelines for contributing.  
 
 ## Sign a CLA  
 
