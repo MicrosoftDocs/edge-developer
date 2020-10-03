@@ -3,7 +3,7 @@ description: Host web content in your WPF app with the Microsoft Edge WebView 2 
 title: Microsoft Edge WebView 2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 
 # Getting started with WebView2 in WPF (Preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-628-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).  
 
 ## Prerequisites  
 
@@ -239,7 +239,7 @@ Press `F5` to build and run your project.  Confirm that when navigating to an HT
 
 You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
 
-You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync) method.  
+You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) method.  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -270,7 +270,7 @@ This communication mechanism allows web content to pass messages to the host usi
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.  
 
-1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
+1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
     
     ```csharp
     public MainWindow()
@@ -332,7 +332,7 @@ Congratulations, you built your first WebView2 app!
 ## Next steps  
 
 *   For a comprehensive example of WebView2 capabilities, see [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.  
-*   For more detailed information about WebView2 APIs, see [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md).  
+*   For more detailed information about WebView2 APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   For more information about  WebView2, see [WebView2 Resources](../index.md#next-steps).  
 
 ## Getting in touch with the Microsoft Edge WebView team  

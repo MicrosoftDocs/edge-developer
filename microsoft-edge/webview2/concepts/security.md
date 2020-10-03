@@ -3,7 +3,7 @@ description: Understand how to develop secure WebView2 applications
 title: Best practices for developing secure WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,7 +25,7 @@ The [WebView2 control][Webview2Main] allows developers to host web content in th
     *   Set `AreDefaultScriptDialogsEnabled` to `false`, if you do not expect the web content to show `alert` or `prompt` dialog boxes.  
 1.	In the following steps, use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page.  
     1.	To prevent your application from navigating to certain pages, use the events to check and then block page or frame navigation.  
-    1.	When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209622Icorewebview2settings] or [CoreWebView2Settings (.NET)][Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings] as previously described.  
+    1.	When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)][Webview2ReferenceWin3209622Icorewebview2settings] or [CoreWebView2Settings (.NET)][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings] as previously described.  
 1.  When navigating to a new document, use the `ContentLoading` event to remove exposed host objects using `RemoveHostObjectFromScript`.  
 
 <!--## Security
@@ -42,4 +42,4 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 [Webview2ReferenceWin3209622Icorewebview2settings]: ../reference/win32/0-9-622/icorewebview2settings.md "interface ICoreWebView2Settings | Microsoft Docs"  
 
-[Webview2ReferenceWin3209628MicrosoftWebWebview2CoreCorewebview2settings]: ../reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2settings.md "Microsoft.Web.WebView2.Core.CoreWebView2Settings class | Microsoft Docs"  
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "CoreWebView2Settings Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  

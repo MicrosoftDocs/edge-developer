@@ -3,7 +3,7 @@ description: Host web content in your Windows Forms app with the Microsoft Edge 
 title: Microsoft Edge WebView 2 for Windows Forms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, C
 
 # Getting started with WebView2 in Windows Forms apps (Preview)  
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/hosting/webview2/index).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-628-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/webview2/index).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).  
 
 ## Prerequisites  
 
@@ -292,7 +292,7 @@ Congratulations, you built your first WebView2 app!
 ## Next steps 
 
 * Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
-* Checkout [API reference](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) for more detailed information about our APIs
+* Checkout [API reference](/dotnet/api/microsoft.web.webview2.winformswebview2) for more detailed information about our APIs
 * Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
 
 

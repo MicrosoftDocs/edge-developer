@@ -3,7 +3,7 @@ description: Host web content in your Win32 app with the Microsoft Edge WebView 
 title: Microsoft Edge WebView2 API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/02/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -20,6 +20,10 @@ Select the Languages and Framework of WebView2 you would like to use form the fo
 
 *   [Win32 C++](reference/win32/0-9-622-reference-webview2.md)  
 *   .NET  
-    *   [Core](reference/dotnet/0-9-628-reference-webview2.md)  
-    *   [Windows Forms](reference/winforms/0-9-515-reference-webview2.md)  
-    *   [WPF](reference/wpf/0-9-515-reference-webview2.md)  
+    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
+    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
+    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"

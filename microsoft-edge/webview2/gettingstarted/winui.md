@@ -3,7 +3,7 @@ description:  Host web content in your WinUI app with the Microsoft Edge WebView
 title:  Microsoft Edge WebView2 for WinUI apps
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  08/17/2020
+ms.date:  10/02/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview
@@ -226,7 +226,7 @@ Select `F5` to build and run your project.  Confirm that navigation is blocked t
 
 Host applications may inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
 
-As an example, add scripts send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content using [ExecuteScriptAsync][Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync].  
+As an example, add scripts send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content using [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -270,7 +270,7 @@ For more information about WebView2 capabilities, see [WebView2 Concepts and How
 [Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
-[Webviews2ReferenceWpf09515MicrosoftWebExecutescriptasync]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync "ExecuteScriptAsync - Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
+[Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Package manifest schema reference for Windows 10 | Microsoft Docs"  
 

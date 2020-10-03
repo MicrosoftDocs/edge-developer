@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 10/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -38,7 +38,7 @@ Release Date: Sept 10, 2020
 
 *   .NET Binaries are now [strongly-named][DotnetStandardAssemblyStrongNamed].  \([\#181][GithubMicrosoftedgeWebviewfeedbackIssue181]\).  
 *   Updated NuGet Target to include `WebViewLoader2.dll`.  \([\#228][GithubMicrosoftedgeWebviewfeedbackIssue228]\) and \([\#183][GithubMicrosoftedgeWebviewfeedbackIssue183]\).  
-*   Updated `WebResourceRequested` to expose [HttpRequestHeaders][ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httprequestheaders] and [HttpResponseHeaders][ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httpresponseheaders] APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
+*   Updated `WebResourceRequested` to expose [HttpRequestHeaders][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httprequestheaders] and [HttpResponseHeaders][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httpresponseheaders] APIs in .NET.  \([\#131][GithubMicrosoftedgeWebviewfeedbackIssue131]\).  
 
 ## 0.9.622  
 
@@ -115,8 +115,8 @@ Release Date: July 20, 2020
 *   Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK.  For more information, navigate to [Samples Repo][GithubMicrosoftedgeWebview2samplesMain].  
 *   Added support for visual hosting and window features [experimental APIs][ConceptsVersioningExperimentalApis].  
 *   > [!IMPORTANT]
-    > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Scriptdialogopening], [NewWindowRequested][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Newwindowrequested], [WebResourceRequested][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Webresourcerequested], and [PermissionRequested][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Permissionrequested].  
-*   Added [GetAvailableBrowserVersionString][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring] and [CompareBrowserVersions][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions] as [CoreWebView2Environment][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environment] statics.  
+    > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening], [NewWindowRequested][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Newwindowrequested], [WebResourceRequested][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Webresourcerequested], and [PermissionRequested][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Permissionrequested].  
+*   Added [GetAvailableBrowserVersionString][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring] and [CompareBrowserVersions][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions] as [CoreWebView2Environment][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environment] statics.  
 
 ## 0.9.515-prerelease  
 
@@ -124,9 +124,9 @@ Release Date: July 20, 2020
 
 *   > [!IMPORTANT]
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
-*   For more information about building WPF applications and the WebView2 [WPF Reference][ReferenceWpf09515Reference] for WPF-specific APIs, navigate to [WPF Getting Started Guide][GettingstartedWpf].  
-*   For more information about building Windows Forms applications and the WebView2 [Windows Forms Reference][ReferenceWinforms09515Reference] for Windows Forms specific APIs, navigate to [Windows Forms Getting Started Guide][GettingstartedWinforms].  
-*   For more information about the CoreWebView2 APIs, navigate to [.NET Reference][ReferenceDotnet09515Reference].  
+*   For more information about building WPF applications and the WebView2 [WPF Reference][ReferenceWpfReference] for WPF-specific APIs, navigate to [WPF Getting Started Guide][GettingstartedWpf].  
+*   For more information about building Windows Forms applications and the WebView2 [Windows Forms Reference][ReferenceWinformsReference] for Windows Forms specific APIs, navigate to [Windows Forms Getting Started Guide][GettingstartedWinforms].  
+*   For more information about the CoreWebView2 APIs, navigate to [.NET Reference][ReferenceDotnetReference].  
 *   > [!CAUTION]
     > **Known Issues**:  The WebView team is aware of some issues in the pre-release that are being resolved in future releases.  
     > *   **DPI Awareness**:  WebView2 for WPF is currently not DPI aware.  When initializing WebView2 on high DPI monitors, there is a known issue where the WebView at first initializes as a fraction of the window until the window is resized.  
@@ -329,18 +329,21 @@ Initial developer preview release.
 [ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithoptions]: ./reference/win32/0-9-488/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 [ReferenceWin3209488Webview2IdlGetavailablecorewebview2browserversionstring]: ./reference/win32/0-9-488/webview2-idl.md#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
 
-[ReferenceDotnet09515Reference]: ./reference/dotnet/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
-[ReferenceWinforms09515Reference]: ./reference/winforms/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
-[ReferenceWpf09515Reference]: ./reference/wpf/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[ReferenceDotnetReference]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"  
+[ReferenceWpfReference]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"  
+[ReferenceWinformsReference]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"  
 
 
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environment]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md "Microsoft.Web.WebView2.Core.CoreWebView2Environment class | Microsoft Docs"  
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#comparebrowserversions "CompareBrowserVersions - Microsoft.Web.WebView2.Core.CoreWebView2Environment class | Microsoft Docs"
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#getavailablebrowserversionstring "GetAvailableBrowserVersionString - Microsoft.Web.WebView2.Core.CoreWebView2Environment class | Microsoft Docs"  
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Newwindowrequested]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#newwindowrequested "NewWindowRequested - Microsoft.Web.WebView2.Core.CoreWebView2 class | Microsoft Docs"  
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Permissionrequested]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#permissionrequested "PermissionRequested - Microsoft.Web.WebView2.Core.CoreWebView2 class | Microsoft Docs"  
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Scriptdialogopening]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#scriptdialogopening "ScriptDialogOpening - Microsoft.Web.WebView2.Core.CoreWebView2 class | Microsoft Docs"  
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2Webresourcerequested]: ./reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md#webresourcerequested "WebResourceRequested - Microsoft.Web.WebView2.Core.CoreWebView2 class | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environment]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment "CoreWebView2Environment Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions "CoreWebView2Environment.CompareBrowserVersions(String, String) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring "CoreWebView2Environment.GetAvailableBrowserVersionString(String) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Newwindowrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested "CoreWebView2.NewWindowRequested Event (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Permissionrequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested "CoreWebView2.PermissionRequested Event (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Scriptdialogopening]: /dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening "CoreWebView2.ScriptDialogOpening Event (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Webresourcerequested]: /dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested "CoreWebView2.WebResourceRequested Event (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httprequestheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders "CoreWebView2HttpRequestHeaders Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2httpresponseheaders]: /dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders.md "CoreWebView2HttpResponseHeaders Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
+
 [ReferenceWin3209538Icorewebview2Addhostobjecttoscript]: ./reference/win32/0-9-538/icorewebview2.md#addhostobjecttoscript "AddHostObjectToScript - interface ICoreWebView2 | Microsoft Docs"  
 [ReferenceWin3209538Icorewebview2experimentalAddWebresourceresponsereceived]: ./reference/win32/0-9-538/icorewebview2experimental.md#add_webresourceresponsereceived "add_WebResourceResponseReceived - interface ICoreWebView2Experimental | Microsoft Docs"  
 [ReferenceWin3209538Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled]: ./reference/win32/0-9-538/icorewebview2experimentalenvironmentoptions.md#get_issinglesignonusingosprimaryaccountenabled "get_IsSingleSignOnUsingOSPrimaryAccountEnabled - interface ICoreWebView2ExperimentalEnvironmentOptions | Microsoft Docs"  
@@ -356,9 +359,6 @@ Initial developer preview release.
 [ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures]: ./reference/win32/0-9-622/icorewebview2newwindowrequestedeventargs.md#get_windowfeatures "get_WindowFeatures - interface ICoreWebView2NewWindowRequestedEventArgs | Microsoft Docs"  
 [ReferenceWin3209622Icorewebview2windowfeatures]: ./reference/win32/0-9-622/icorewebview2windowfeatures.md "interface ICoreWebView2WindowFeatures | Microsoft Docs"  
 [ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions]: ./reference/win32/0-9-622/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Edge"  
-
-[ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httprequestheaders]: ./reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httprequestheaders.md "Microsoft.Web.WebView2.Core.CoreWebView2HttpRequestHeaders class | Microsoft Docs"  
-[ReferenceDotnet09628MicrosoftWebWebview2CoreCorewebview2httpresponseheaders]: ./reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httpresponseheaders.md "Microsoft.Web.WebView2.Core.CoreWebView2HttpResponseHeaders class | Microsoft Docs"  
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Policies | Microsoft Docs"  
 

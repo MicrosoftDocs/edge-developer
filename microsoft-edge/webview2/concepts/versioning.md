@@ -3,7 +3,7 @@ description: Versioning Models used for Microsoft Edge WebView2
 title: Versioning of Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -27,7 +27,7 @@ In preview, the release package contains the following.
 
 In preview, the prerelease package contains the following components.  
 
-*   .NET APIs: [WPF][ReferenceWpf09515], [WinForms][ReferenceWinforms09515], and [Core][ReferenceDotnet09628]  
+*   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
 *   Experimental APIs.  For more information, see the [Experimental APIs](#experimental-apis) section.  
 
 ## Experimental APIs  
@@ -64,10 +64,10 @@ After you have used a particular version of the SDK to build your app, your app 
 <!--links -->
 
 [DistributionEvergreenMode]: ./distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of Applications using WebView2 | Microsoft Docs"  
-[ReferenceDotnet09628]: ../reference/dotnet/0-9-628-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
-[ReferenceWinforms09515]: ../reference/winforms/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
 [ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
-[ReferenceWpf09515]: ../reference/wpf/0-9-515-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
 [Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  
