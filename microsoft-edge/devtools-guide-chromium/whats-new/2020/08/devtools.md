@@ -3,7 +3,7 @@ description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -485,7 +485,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR772558]: https://crbug.com/772558 "DevTools: Update to latest version of Lighthouse | Chromium bugs"  
 [CR807440]: https://crbug.com/807440 "Chrome locks up with large numbers of SWs | Chromium bugs"  
 [CR997694]: https://crbug.com/997694 "XHR requests with 302 status are not shown under the \"xhr\" filter in network panel | Chromium bugs"  
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling"  
+[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium bugs"  
 [CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"  
 [CR1054281]: https://crbug.com/1054281 "Feature Request: DevTools should emulate foldable and dual-screen devices | Chromium bugs"  
 [CR1067184]: https://crbug.com/1067184 "Feature Request: Clear filter button on Network & Elements -> Style Filter inputs | Chromium bugs"  
