@@ -14,7 +14,8 @@ ms.custom: seodec18
 
 > [!NOTE]
 > The new Microsoft Edge is built using Chromium, and starts at version 75.  For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].  
-> To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge DevTools][DevtoolsDeviceMode].
+> 
+> To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge DevTools][DevtoolsDeviceMode].  
 
 <!-- links -->  
 
