@@ -40,6 +40,6 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 
 [Webview2Main]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 
-[Webview2ReferenceWin3209622Icorewebview2settings]: ../reference/win32/0-9-622/icorewebview2settings.md "interface ICoreWebView2Settings | Microsoft Docs"  
+[Webview2ReferenceWin3209622Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings | Microsoft Docs"  
 
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "CoreWebView2Settings Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  

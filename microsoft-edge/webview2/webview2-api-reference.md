@@ -18,7 +18,7 @@ Select the Languages and Framework of WebView2 you would like to use form the fo
 
 ## Languages and Frameworks  
 
-*   [Win32 C++](reference/win32/0-9-622-reference-webview2.md)  
+*   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)  
 *   .NET  
     *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
     *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  

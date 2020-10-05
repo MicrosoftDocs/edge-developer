@@ -67,7 +67,7 @@ After you have used a particular version of the SDK to build your app, your app 
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
-[ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[ReferenceWin3209622]: /microsoft-edge/webview2/reference/win32 "Reference (WebView2) | Microsoft Docs"  
 [Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  

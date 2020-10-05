@@ -284,7 +284,7 @@ Many of the WebView2 functionalities that are not covered on this page, the foll
 <!-- links -->  
 
 [Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[Webview2ReferenceWin3209622]: /microsoft-edge/webview2/reference/win32 "Reference (WebView2) | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"  
