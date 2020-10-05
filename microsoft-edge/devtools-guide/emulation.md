@@ -12,6 +12,18 @@ ms.custom: seodec18
 
 # Emulation
 
+> [!NOTE]
+> The new Microsoft Edge is built using Chromium, and starts at version 75.  For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].  
+> To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge DevTools][DevtoolsDeviceMode].
+
+<!-- links -->  
+
+[MicrosoftNewEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+
+[DevtoolsDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools"
+
 The *Emulation* panel helps you to:
  - Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)
  - Test different [geolocation settings and coordinates](#geolocation)
