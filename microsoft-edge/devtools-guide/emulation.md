@@ -3,85 +3,104 @@ description: Use the Emulation panel to test different browser profiles, screen 
 title: DevTools - Emulation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, device emulation, responsive design, geolocation, resolution
 ms.custom: seodec18
 ---
-
-# Emulation
+# Emulation  
 
 > [!NOTE]
-> The new Microsoft Edge is built using Chromium, and starts at version 75.  For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge \(Chromium\) Developer Tools][DevtoolsGuideChromium].  
+> The new Microsoft Edge is built using Chromium, and starts at version 75.  For more information, [download the new Microsoft Edge][MicrosoftNewEdge], and try out the new [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromium].  
 > 
-> To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge \(Chromium\) DevTools][DevtoolsDeviceMode].  
+> To emulate different devices, browsers, screen sizes, and resolutions in the new DevTools, navigate to [Emulate Mobile Devices in Microsoft Edge \(Chromium\) DevTools][DevtoolsGuideChromiumDeviceMode].  
 
-<!-- links -->  
+The **Emulation** panel helps with the following activities.    
 
-[MicrosoftNewEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
+*   Simulate various [device profiles](#device), [browsers](#browser-profile), and [screen sizes and resolutions](#display)  
+*   Test different [geolocation settings and coordinates](#geolocation)  
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+:::image type="complex" source="./media/emulation.png" alt-text="The Microsoft Edge DevTools Emulation panel" lightbox="./media/emulation.png":::
+   The Microsoft Edge DevTools **Emulation** panel  
+:::image-end:::    
 
-[DevtoolsDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools"
+1.  The **Persist Emulation settings** button saves any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools.  
 
-The *Emulation* panel helps you to:
- - Simulate various [device profiles](#device), [browsers](#browser-profile), [screen sizes and resolutions](#display)
- - Test different [geolocation settings and coordinates](#geolocation)
+1.  The **Reset Emulation settings** button resets your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.  
 
-![The Microsoft Edge DevTools Emulation panel](./media/emulation.png)
+1.  When any of these options are changed from the default, the **Emulation** tab displays an informational alert to indicate that some aspect of the behavior of your browser is being emulated.  
 
-1. The **Persist Emulation settings** button will save any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools. 
+## Device  
 
-2. The **Reset Emulation settings** button will reset your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.
+Pick from a preset list of Windows device profiles that automatically configure the other emulation options or specify your own **Custom** configuration.  Switch back to **Default** to reset all the emulation tools.  
 
-3. When any of these options are changed from the default, the **Emulation** tab will show an informational alert to indicate that some aspect of your browser's behavior is being emulated.
+## Mode  
 
-## Device
+### Browser profile  
 
-Pick from a preset list of Windows device profiles which  automatically configure the other emulation options or specify your own *Custom* configuation. Switch back to *Default* to reset all the emulation tools.
+A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to **Windows Phone**.
 
-## Mode
+#### User agent string  
 
-### Browser profile
-A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to *Windows Phone*.
+Modifying your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge.  
 
-#### User agent string
+Scripts use the user agent string to detect which browser is used.  Script may be front-end, back-end, or front-end and back-end.  Although your code does not use browser detection, your code may inherit it from a third-party JavaScript library or server-side script.  
 
-Modifying your user agent string to mimic another browser is a good first step in debugging errors that are only happening in Microsoft Edge. 
+The problem with browser detection is that you may scale-back \(or change\) features in your webpage using assumptions about browser capabilities. Instead, you should consider using feature detection to detect the capabilities of your browser.  Unexpected behavior may occur because of one of the following situations.  
 
-Front end and/or back end scripts sometimes use the user agent string  to detect which browser you're using. And even when you're not using browser detection in your own code, you may be using a third-party JavaScript library or server-side script that does.
+*   Code targeted at Windows Internet Explorer 8 may run differently in Microsoft Edge.  
+*   A feature that your browser should support is disabled, because of an assumption made by the developer.  
 
-The problem with browser detection is that it's often used to scale back or change the features in a webpage based on what the developer writing the script thinks your browser can do, rather than detecting what your browser can actually do using feature detection. This can cause unexpected behavior, because code targeted at Windows Internet Explorer 8 can run very differently in Microsoft Edge; or a feature your browser is perfectly capable of supporting might be disabled because of an assumption made by the developer.
+If changing your user agent string clears up the problem, browser detection is likely culprit.  
 
-If changing your user agent string clears up the problem, browser detection is likely culprit.
+## Display  
 
-## Display
+Display emulation to preview your site on different screen sizes and resolutions.  
 
-Display emulation lets you preview your site on different screen sizes and resolutions: from conventional desktop monitors to smaller mobile screens or newer high-resolution displays.
+*   conventional desktop monitors  
+*   smaller mobile screens  
+*   newer high-resolution displays  
 
-Emulations are adapted to try and match the physical dimensions of the screens being emulated. Emulated pixels might appear compressed or expanded, and emulation is not recommended if you need to test pixel-perfect positioning of HTML elements. Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.
+Emulations are adapted to try to match the physical dimensions of the screens being emulated.  Emulated pixels may appear compressed or expanded. Emulation is not recommended if you need to test pixel-perfect positioning of HTML elements.  Emulation is, however, good for testing responsive designs and identifying larger element positioning issues.  
 
-### Orientation
+### Orientation  
 
-Choose from *Landscape* or *Portrait* mode.
+Choose from **Landscape** or **Portrait** mode.  
 
-### Resolution
+### Resolution  
 
-Choose from a preset list of popular device resolutions, or specify your own *Custom* config. Resolutions of up to 80 inches and 3820 x 2160 are supported.
+Choose from a preset list of popular device resolutions, or specify your own *Custom* config.  Resolutions of up to 80 inches and 3820 x 2160 are supported.  
 
-## Geolocation
+## Geolocation  
 
-If your site uses the [Geolocation API](https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation) to provide location-based services, you can easily test different GPS coordinates and sensor states from the convenience of your desktop. These settings will override any actual GPS coordinates and the sensor state on machines that support geolocation. 
+If your website uses the [Geolocation API][MdnGeolocationUsing] to provide location-based services, the following activities are available from the convenience of your desktop.  
 
-As with any usage of personal data on the web, your users will first need to grant your site permission to use their location. You can test how your site behaves with and without location permissions from the Microsoft Edge *Settings* panel:
+*   easily test different GPS coordinates  
+*   easily test different sensor states  
 
-**...** > **Settings** > **View advanced settings** > **Website permissions** > **Manage**
+The settings override any actual GPS coordinates and the sensor state on devices that support geolocation.  
 
-![Manage website permissions from the Microsoft Edge Settings panel](./media/settings_manage_permissions.png)
+Your website must request and be granted permission from a user before using the device location.  Test how your site behaves with and without location permissions from the Microsoft Edge **Settings** panel.  
+
+**...** > **Settings** > **View advanced settings** > **Website permissions** > **Manage**  
+
+:::image type="complex" source="./media/settings_manage_permissions.png" alt-text="Manage website permissions from the Microsoft Edge Settings panel" lightbox="./media/settings_manage_permissions.png":::
+   Manage website permissions from the Microsoft Edge **Settings** panel  
+:::image-end:::    
 
 ## Shortcuts
 
-| Action                   | Shortcut               |
-|:-------------------------|:-----------------------|
-| Reset Emulation settings | `CTRL` + `SHIFT` + `L` |
+| Action  | Shortcut  |  
+|:--- |:--- |  
+| Reset Emulation settings | `Ctrl`+`Shift`+`L` |  
+
+<!-- links -->  
+
+
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromiumDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+
+[MicrosoftNewEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
+
+[MdnGeolocationUsing]: https://developer.mozilla.org/docs/Web/API/Geolocation/Using_geolocation "Geolocation API | MDN"  
