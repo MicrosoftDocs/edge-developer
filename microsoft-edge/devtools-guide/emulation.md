@@ -23,11 +23,11 @@ The **Emulation** panel helps with the following activities.
 
 :::image type="complex" source="./media/emulation.png" alt-text="The Microsoft Edge DevTools Emulation panel" lightbox="./media/emulation.png":::
    The Microsoft Edge DevTools **Emulation** panel  
-:::image-end:::    
+:::image-end:::  
 
 1.  The **Persist Emulation settings** button saves any changes you made from the default desktop emulation settings, even when you close and reopen the DevTools.  
 
-1.  The **Reset Emulation settings** button resets your emulation settings back to the default *Desktop* browser profile and Microsoft Edge user agent string with GPS turned off.  
+1.  The **Reset Emulation settings** button resets your emulation settings back to the default Desktop browser profile and Microsoft Edge user agent string with GPS turned off.  
 
 1.  When any of these options are changed from the default, the **Emulation** tab displays an informational alert to indicate that some aspect of the behavior of your browser is being emulated.  
 
@@ -39,7 +39,7 @@ Pick from a preset list of Windows device profiles that automatically configure 
 
 ### Browser profile  
 
-A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to **Windows Phone**.
+A quick way to simulate your page running on a Windows Phone device is to change the **Browser profile** setting to **Windows Phone**.  
 
 #### User agent string  
 
@@ -70,7 +70,7 @@ Choose from **Landscape** or **Portrait** mode.
 
 ### Resolution  
 
-Choose from a preset list of popular device resolutions, or specify your own *Custom* config.  Resolutions of up to 80 inches and 3820 x 2160 are supported.  
+Choose from a preset list of popular device resolutions, or specify your own **Custom** config.  Resolutions of up to 80 inches and 3820 x 2160 are supported.  
 
 ## Geolocation  
 
@@ -87,7 +87,7 @@ Your website must request and be granted permission from a user before using the
 
 :::image type="complex" source="./media/settings_manage_permissions.png" alt-text="Manage website permissions from the Microsoft Edge Settings panel" lightbox="./media/settings_manage_permissions.png":::
    Manage website permissions from the Microsoft Edge **Settings** panel  
-:::image-end:::    
+:::image-end:::  
 
 ## Shortcuts
 
