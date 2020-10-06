@@ -3,7 +3,7 @@ description: Native messaging documentation
 title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -41,9 +41,9 @@ Add the `nativeMessaging` permission to the **manifest.json** file of the extens
 ```  
 
 ## Step 2 - Create your native messaging host manifest file  
-    
-Native applications must provide a native messaging host manifest file.  the manifest file contains the path to the native messaging host runtime, the method of communication with the extension, and a list of allowed extensions to which it communicates.  The browser reads and validates the native messaging host manifest.  The browser does not install or manage the manifest file.  
-    
+
+Native applications must provide a native messaging host manifest file.  The manifest file contains the path to the native messaging host runtime, the method of communication with the extension, and a list of allowed extensions to which it communicates.  The browser reads and validates the native messaging host manifest.  The browser does not install or manage the native messaging host manifest file.  
+
 ```json
     {
         "name": "com.my_company.my_application",
@@ -113,13 +113,13 @@ The host manifest file must be a valid JSON file that contains the following key
 :::row-end:::  
 
 Sideload your extension to test native messaging with the host.  
-To sideload of your extension during development, complete the following steps.  
+To sideload your extension during development and retrieve `microsoft_catalog_extension_id`, complete the following steps.  
 
 1.  Navigate to `edge://extensions`, and then turn on the Developer mode toggle button.  
 1.  Choose **Load unpacked**, and then select your extension package to sideload.  
 1.  Choose **OK**.
 1.  Navigate to `edge://extensions` page and verify your extension is listed.  
-1.  Copy the key from ID from the extension listing on the page.
+1.  Copy the key from `microsoft_catalog_extension_id` \(ID\) from the extension listing on the page.
 
 When you are ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
 
