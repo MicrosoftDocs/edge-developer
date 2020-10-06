@@ -51,7 +51,7 @@ The following list outlines helpful information as it relates to the architectur
 
 ## Next steps
 
- For information on getting started with extensions, see [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex]. 
+ For information on getting started with extensions, see [Create an extension tutorial][CreateAnExtensionPart1]. 
 
 
 
@@ -59,4 +59,4 @@ The following list outlines helpful information as it relates to the architectur
 
 <!-- links -->  
 
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Microsoft Docs"  
+[CreateAnExtensionPart1]: ./part1-simple-extension.md "Create an extension tutorial - Part 1 | Microsoft Docs"  

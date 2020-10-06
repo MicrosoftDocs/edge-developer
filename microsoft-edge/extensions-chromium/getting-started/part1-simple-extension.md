@@ -26,7 +26,7 @@ If you'd like to test out the completed extension that you'll build in this tuto
 
 ## Step 1: Create a `manifest.json` file
 
-Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the version of the extension API to use, the extension name and description, and so on.  
+Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.  
 
 The following code snippet outlines the basic information needed in your `manifest.json` file.  
 
@@ -137,7 +137,7 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
 ```  
 
 ## Next steps
-That's everything you need to develop a working extension. Now, continue on to sideload and run your extension. For more information, see [Sideload an extension][TestExtensionSideload].  
+That's everything you need to develop a working extension. Now, continue on to sideload and test your extension. For more information, see [Sideload an extension][TestExtensionSideload].  
 
 
 <!-- image links -->  
