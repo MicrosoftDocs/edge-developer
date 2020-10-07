@@ -28,7 +28,7 @@ The **Media** panel is the main place in DevTools for inspecting the media playe
 
 1.  Navigate to a webpage with a media player, such as the following webpage.  
     
-    *   [https://youtu.be/e1gAyQuIFQo](https://youtu.be/e1gAyQuIFQo)  
+    *   [https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
 1.  Under the **Players** menu, a media player is displayed.  
 1.  Select the player.  The **Properties** tab displays the properties of the media player.  
@@ -102,6 +102,8 @@ Choose to hide \(or show\) each media player for easier debugging experience.
 <!-- links -->  
 
 [DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools"  
+
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizing Productivity with the Edge Developer Tools | Bing Video"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
