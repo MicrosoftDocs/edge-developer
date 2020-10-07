@@ -1,9 +1,9 @@
 ---
-description:  Host web content in your WinUI app with the Microsoft Edge WebView 2 control
-title:  Microsoft Edge WebView2 for WinUI apps
+description:  Getting started guide with WebView2 for WinUI apps
+title: Getting started with WebView2 for WinUI apps
 author:  MSEdgeTeam
 ms.author:  msedgedevrel
-ms.date:  10/02/2020
+ms.date: 10/07/2020
 ms.topic:  conceptual
 ms.prod:  microsoft-edge
 ms.technology:  webview

@@ -3,7 +3,7 @@ description: Versioning Models used for Microsoft Edge WebView2
 title: Versioning of Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 10/07/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -23,7 +23,7 @@ In the future, the WebView team plans to change the distribution model for WebVi
 
 In preview, the release package contains the following.  
 
-*   [Win32 C/C++ APIs][ReferenceWin3209622]: APIs in the SDK that are expected to remain the same at GA.  
+*   [Win32 C/C++ APIs][ReferenceWin32]: APIs in the SDK that are expected to remain the same at GA.  
 
 In preview, the prerelease package contains the following components.  
 
@@ -67,7 +67,7 @@ After you have used a particular version of the SDK to build your app, your app 
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
-[ReferenceWin3209622]: /microsoft-edge/webview2/reference/win32 "Reference (WebView2) | Microsoft Docs"  
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
 [Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  
