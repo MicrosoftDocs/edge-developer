@@ -35,8 +35,4 @@ To sideload your extension, follow these steps.
 
 During development, you may also need to perform the following tasks.
 * Update the extension. Navigate to `edge://extensions`, and then select **Reload** to update your extension.  
-* Remove the extension from your browser. Navigate to `edge://extensions`, and then select `Remove` on your extension.  
-
-<!-- links -->  
-
-[ArchiveExtensionGettingStartedPart1]: ./extension-source/extension-getting-started-part1.zip "Completed Extension Package Source for This Part | Microsoft Docs"  
+* Remove the extension from your browser. Navigate to `edge://extensions`, and then select `Remove` on your extension.

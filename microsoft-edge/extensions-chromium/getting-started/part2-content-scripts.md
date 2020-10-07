@@ -234,4 +234,4 @@ You've created an Extension that successfully sends a message from the extension
 
 <!-- links -->  
 
-[ArchiveExtensionGettingStartedPart2]: ./extension-source/extension-getting-started-part2.zip "Completed Extension Package Source for This Part | Microsoft Docs"  
+[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "Completed extension package source | Microsoft Docs"  
