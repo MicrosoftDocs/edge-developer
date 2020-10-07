@@ -13,25 +13,31 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## High contrast simulation  
-
-<!-- insert Edge-specific announcement:  High contrast simulation  -->  
-
 ## Improving DevTools localization with your feedback  
 
-<!-- insert Edge-specific announcement:  Improving DevTools localization with your feedback  -->  
+To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.
 
-## 3D View CSS entry-point and layers  
+We locked in strings that do not need to be localized, such as the Lighthouse strings, the term `service worker`, and some of the **Network** pane filters such as `URL`, `XHR`, `JS`, and `CSS`.  
 
-<!-- insert Edge-specific announcement:  3D View CSS entry-point + Layers  -->  
+![Network screenshot]()  
+
+We have also made some more detailed decisions to ensure that the Developer Tools are localized accurately. One example is that we replaced a placeholder for $0, since this is both important for the console and a special character used for localization.  
+
+Your feedback and internal discoveries uncovered areas where text strings should not be localized. We really appreciate all the insight our global developer community provides us, and it’s especially impactful with features such as localization. Please continue to send us feedback on our localization quality so that we can work together to make the locales we support more accurate.  
 
 ## Save and export using Network Console experiment  
 
-<!-- insert Edge-specific announcement:  Network Console experiment can now Save and Export  -->  
+*   Network Console now has a new system for saving and exporting Collections and Environments  
+*   Sets of environment variables can now be edited within the Network Console window, and then exported  
+*   This addition should bring improved compatibility with Postman v2.1 schema and OpenAPI v2 schema  
 
 ## Grid tooling v2  
 
-<!-- insert Edge-specific announcement:  Grid tooling v2  -->  
+*   The **CSS Grid tooling** experiment is now on by default in Microsoft Edge version 87.  
+*   Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
+*   To enable persistent grids, select the grid lozenge next to a grid element in the **Elements** pane or choose the grid in the **Layout** pane.  
+*   You may enable persistent overlays for as many grids as you like.  
+*   The new **Layout** pane allows you to easily toggle grid overlays and configure the appearance and the content for each.  
 
 ## Customize keyboard shortcuts in Settings  
 
@@ -39,15 +45,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Elements for Microsoft Edge Visual Studio Code extension  
 
-<!-- insert Edge-specific announcement:  Elements for Microsoft Edge Visual Studio Code extension announcement  -->  
+The experimental **Elements for Visual Studio Code** and "Network for VS Code" extensions are now merged into "Edge Developer Tools for VS Code" https://aka.ms/devtools-for-code. This means you can debug the DOM, edit CSS and inspect Network traffic using developer tools without leaving Visual Studio Code. You can choose to launch a full browser instance, connect to an existing one or have a headless browser fully integrated into VS Code. In addition to merging the extensions we also made it easier to contribute and improved the build process to make newer versions easier to roll out. 
 
-<!--  
 ## Announcements from the Chromium project  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
--->  
 
-## New CSS Grid debugging tools  
+<!--  
+### New CSS Grid debugging tools  
 
 This announcement originated with the Chromium team.  
 
@@ -64,8 +69,9 @@ The new **Layout** pane has a **Grid** section offering you a number of options 
 For more information, navigate to [CSS grid](/microsoft-edge/devtools-guide-chromium/css/grid).  
 
 For more discussion and history about this feature, navigate to [Chromium issue #1047356][CR1047356].  
+-->  
 
-## New WebAuthn tab  
+### New WebAuthn tab  
 
 This announcement originated with the Chromium team.  
 
@@ -85,7 +91,8 @@ For more information about the WebAuthn feature, navigate to [documentation](/mi
 
 For more discussion and history about this feature, navigate to [Chromium issue #1034663][CR1034663].  
 
-## Move tools between top and bottom panel  
+<!--  
+### Move tools between top and bottom panel  
 
 This announcement originated with the Chromium team.  
 
@@ -104,12 +111,13 @@ To move any bottom tab to the top, hover on a tab, open the contextual menu \(ri
 :::image-end:::  
 
 For more discussion and history about this feature, navigate to [Chromium issue #1075732][CR1075732].  
+-->  
 
-## Elements panel updates  
+### Elements panel updates  
 
 This announcement originated with the Chromium team.  
 
-### View the Computed sidebar pane in the Styles pane  
+#### View the Computed sidebar pane in the Styles pane  
 
 Toggle the **Computed sidebar** pane in the **Styles** pane.  
 
@@ -121,7 +129,7 @@ The **Computed sidebar** pane in the **Styles** pane is collapsed by default.  C
 
 For more discussion and history about this feature, navigate to [Chromium issue #1073899][CR1073899].  
 
-### Grouping CSS properties in the Computed pane  
+#### Grouping CSS properties in the Computed pane  
 
 Group the CSS properties by categories in the **Computed** pane.  
 
@@ -135,12 +143,13 @@ On the **Elements** panel, choose an element.  Toggle the **Group** checkbox to 
 
 For more discussion and history about this feature, navigate to [Chromium issue #1096230][CR1096230], [Chromium issue #1084673][CR1084673], and [Chromium issue #1106251][CR1106251].  
 
-## Lighthouse 6.4 in the Lighthouse panel  
+### Lighthouse 6.4 in the Lighthouse panel  
 
 This announcement originated with the Chromium team.  
 
 The **Lighthouse** panel is now running Lighthouse 6.4.  For more information about release changes, navigate to [release notes](https://github.com/GoogleChrome/lighthouse/releases).  
 
+<!--
 :::image type="complex" source="../../media/2020/10/lighthouse.msft.png" alt-text="Lighthouse" lightbox="../../media/2020/10/lighthouse.msft.png":::
    Lighthouse  
 :::image-end:::  
@@ -150,10 +159,11 @@ New audits in Lighthouse 6.4:
 *   **Preload fonts**.  Validates if all fonts that use `font-display: optional` were preloaded.  
 *   **Valid sourcemaps**.  Audits if a page has valid sourcemaps for large, first-party JavaScript.  
 *   **[Experimental] Large JavaScript library**.  Large JavaScript libraries may lead to poor performance.  This audit suggests cheaper alternatives to common, large JavaScript libraries like `moment.js`.  
-    
+-->  
+
 For more discussion and history about this feature, navigate to [Chromium issue #772558][CR772558].  
 
-## performance.mark() events in the Timings section  
+### performance.mark() events in the Timings section  
 
 This announcement originated with the Chromium team.  
 
@@ -163,7 +173,7 @@ The **Timings section** of a Performance recording now marks `performance.mark()
    Performance.mark events  
 :::image-end:::  
 
-## New resource-type and url filters in the Network panel  
+### New resource-type and url filters in the Network panel  
 
 This announcement originated with the Chromium team.  
 
@@ -179,11 +189,11 @@ Check out [filter requests by properties](/microsoft-edge/devtools-guide-chromiu
 
 For more discussion and history about this feature, navigate to [Chromium issue #1121141][CR1121141] and [Chromium issue #1104188][CR1104188].  
 
-## Frame details view updates  
+### Frame details view updates  
 
 This announcement originated with the Chromium team.  
 
-### Display COEP and COOP reporting to endpoint  
+#### Display COEP and COOP reporting to endpoint  
 
 View the Cross-Origin Embedder Policy \(COEP\)  and Cross-Origin Opener Policy \(COOP\) `reporting to` endpoint under the **Security & Isolation** section.  
 
@@ -197,7 +207,7 @@ For more information about how to enable COEP and COOP and make your website "cr
 
 For more discussion and history about this feature, navigate to [Chromium issue #1051466][CR1051466].  
 
-### Display COEP and COOP report-only mode  
+#### Display COEP and COOP report-only mode  
 
 DevTools now displays `report-only` label for COEP and COOP that are set to `report-only` mode.  
 
@@ -209,7 +219,8 @@ For more information about how to prevent information leaks and enable COOP and 
 
 For more discussion and history about this feature, navigate to [Chromium issue #1051466][CR1051466].  
 
-## Deprecation of Settings in the More tools menu  
+<!--  
+### Deprecation of Settings in the More tools menu  
 
 This announcement originated with the Chromium team.  
 
@@ -220,15 +231,16 @@ The `Settings` in the More tools menu is deprecated.  Open the **Settings** from
 :::image-end:::  
 
 For more discussion and history about this feature, navigate to [Chromium issue #1121312][CR1121312].  
+-->  
 
-## Experimental features  
+### Experimental features  
 
 This announcement originated with the Chromium team.  
 
 > [!CAUTION]
 > Experimental features are still under development and subject to change.  
 
-### View and fix color contrast issues in the CSS Overview panel  
+#### View and fix color contrast issues in the CSS Overview panel  
 
 > [!NOTE]
 > To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  
@@ -245,7 +257,8 @@ Choose an element in the list to open the element in **Elements** panel.  DevToo
 
 For more discussion and history about this feature, navigate to [Chromium issue #1120316][CR1120316].  
 
-### Customize keyboard shortcuts in DevTools  
+<!--
+#### Customize keyboard shortcuts in DevTools  
 
 > [!NOTE]
 > To enable this experiment, check the **Enable keyboard shortcut editor** checkbox under **Settings** > **Experiments**.  
@@ -261,6 +274,7 @@ To customize the keyboard shortcut, choose **Settings** > **Shortcuts**, hover o
 To reset all shortcuts, choose **Restore default shortcuts**.  
 
 For more discussion and history about this feature, navigate to [Chromium issue #174309][CR174309].  
+-->  
 
 ## Download the Microsoft Edge preview channels  
 
