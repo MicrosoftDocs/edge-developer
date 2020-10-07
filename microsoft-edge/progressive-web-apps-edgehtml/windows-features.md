@@ -1,9 +1,9 @@
 ---
 description: Progressively enhance your PWA for Windows with native app features
-title: Tailor your PWA for Windows
+title: Tailor your PWA (EdgeHTML) for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
@@ -18,9 +18,13 @@ PWAs installed on Windows 10 enjoy [all the benefits][PwaIndexWindows10] of runn
 *   Launching / navigating your app through Cortana voice commands  
 *   Integrating with the Windows OS \(through the Windows Action Center, desktop taskbar, and context menus\)  
 
-... and these are only a few of the added possibilities for your PWA \(EdgeHTML\) on Windows!  
+These are only a few of the added possibilities for your PWA \(EdgeHTML\) on Windows.  
 
-This guide shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.  
+This article shows you how to install, run, and enhance your PWA \(EdgeHTML\) as a Windows 10 app, while still ensuring cross-browser and cross-platform compatibility.  
+
+> [!IMPORTANT]
+> The examples and steps in this article require Visual Studio 2017. Visual Studio 2019 does not include the template used in this article. To download Visual Studio 2017, see [Visual Studio Downloads - 2017, 2015 & Previous Versions][PreviousVSDownloads]  
+
 
 ## Prerequisites  
 
@@ -35,9 +39,9 @@ A PWA \(EdgeHTML\) installed as a Windows 10 app runs independently from the bro
 Set up your Windows app development environment in Visual Studio.  
 
 1.  In your Windows Settings, turn on [Developer mode][WindowsUWPGetStartedEnable].  \(Type `developer mode` in the Windows searchbar to find it.\)  
-1.  Launch Visual Studio and **Create a new project...**  
-1.  Select the C# **Windows Application Packaging Project** template.  If you are using a previous version of Visual Studio, find the equivalent template under **Hosted Web App (Universal Windows)** or **Progressive Web App (Universal Windows)**.  
-1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and click **OK**.  
+1.  Launch Visual Studio and select **Create a new project...**.  
+1.  Choose **Javascript** > **Windows Universal** and select **Progressive Web App (Universal Windows)** from the list of project types in Visual Studio 2017.  
+1.  Select the default Windows 10 `Target version` \(most recent release\) and `Minimum version` \(build 10586 or higher\) and choose **OK**.  
 
     ![Visual Studio selection dialog for UWP project target builds](media/vs-target-min-version.png)  
 
@@ -90,7 +94,7 @@ Here is how to set up debugging for your PWA \(EdgeHTML\).
     
     This returns the global `Windows Runtime` object containing all of the [top-level WinRT namespaces](#find-windows-runtime-winrt-apis).  This is your PWA \(EdgeHTML\) entrypoint to the [Universal Windows Platform][WindowsUWPIndex], and only exposed to web apps that run as Windows 10 apps (running outside the browser, in a `WWAHost.exe` process).  
     
-## Find Windows Runtime \(WinRT\) APIs  
+## Find Windows Runtime (WinRT) APIs  
 
 As an installed Windows app, your [PWA \(EdgeHTML\) has full access to native Windows Runtime APIs][WindowsRuntime]; identify what you need to use, obtain the requisite permissions, and employ feature detection to send that API request on supported environments.  Walk through this process to add a progressive enhancement for Windows desktop users of your PWA.  
 
@@ -337,3 +341,4 @@ And when you are ready, here is how \(and why!\) to [Submit your PWA to the Micr
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "App permissions"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Downloads"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visual Studio Preview"  
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio downloads"
