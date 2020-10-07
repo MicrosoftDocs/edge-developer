@@ -3,7 +3,7 @@ description: Emulate Authenticators and Debug WebAuthn in Microsoft Edge DevTool
 title: Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/06/2020 
+ms.date: 10/07/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -15,10 +15,10 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
 
 ## Open the WebAuthn tab  
 
-1.  Navigate to a webpage that uses WebAuthn, such as the following demo page \(sign into the webpage\).  
-    *   [webauthndemo.appspot.com](https://webauthndemo.appspot.com)  
-1.  [Open DevTools](/chrome-devtools/open).  
-1.  Select **More Options** \(![More](../media/more-icon.msft.png)\) > **More tools** > **WebAuthn** to open the WebAuthn tab.  
+1.  Navigate to a webpage that uses WebAuthn, such as the following demo webpage \(sign into the webpage\).  
+    *   [webauthndemo.appspot.com][AppspotWebauthndemo]  
+1.  [Open DevTools][DevtoolsGuideChromiumOpen].  
+1.  Select **More Options** \(![More][ImageMoreIcon]\) > **More tools** > **WebAuthn** to open the WebAuthn tab.  
 
 :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tab" lightbox="../media/webauthn-webauthn-tab.msft.png":::
    **WebAuthn** tab  
@@ -51,16 +51,18 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
 
 ### Register a new credential  
 
-To register a new credential, you need to have a web page that uses WebAuthn, for example our demo page here - [webauthndemo.appspot.com](https://webauthndemo.appspot.com).  
+To register a new credential, you need to have a webpage that uses WebAuthn, for example the following demo webpage.  
 
-1.  On the demo page, select **Register new credential** to register a new credential.
+*   [webauthndemo.appspot.com][AppspotWebauthndemo]  
+
+1.  On the demo webpage, select **Register new credential** to register a new credential.
 1.  A new credential is now added to the **Credentials** table in the WebAuthn tab.  
 
 :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="View credentials" lightbox="../media/webauthn-view-cred.msft.png":::
    View credentials  
 :::image-end:::  
 
-On the demo page, select the **Authenticate** button multiple times, observe the **Credentials** table, and notice that the **Sign Count** of the credential increases.  
+On the demo webpage, select the **Authenticate** button multiple times, observe the **Credentials** table, and notice that the **Sign Count** of the credential increases.  
 
 ### Export and remove credentials  
 
@@ -83,7 +85,7 @@ To export or remove a credential, select the **Export** or **Remove** button.
 
 A newly created authenticator is automatically activated.  DevTools supports only one active virtual authenticator at any point of time.  
 
-Removing the currently active authenticator results in no authenticator being active.  
+If you remove the currently active authenticator, the result is no active authenticator.  
 
 To set an authenticator as the active authenticator, select the **Active** radio button of an authenticator.  
 
@@ -103,7 +105,15 @@ To remove a virtual authenticator, select the **Remove** button of the authentic
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
+<!-- image -->  
+
+[ImageMoreIcon]:  ../media/more-icon.msft.png
+
 <!-- links -->  
+
+[DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+
+[AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
