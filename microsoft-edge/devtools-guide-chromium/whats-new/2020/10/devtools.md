@@ -3,7 +3,7 @@ description: New CSS Grid debugging tools, Web Authn tab, moveable tools and Com
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 10/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -11,31 +11,47 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # What's New In DevTools (Microsoft Edge 87)  
 
-## Announcements from the Microsoft Edge DevTools team  
-
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
+
+## High contrast simulation  
 
 <!-- insert Edge-specific announcement:  High contrast simulation  -->  
 
+## Improving DevTools localization with your feedback  
+
 <!-- insert Edge-specific announcement:  Improving DevTools localization with your feedback  -->  
+
+## 3D View CSS entry-point and layers  
 
 <!-- insert Edge-specific announcement:  3D View CSS entry-point + Layers  -->  
 
+## Save and export using Network Console experiment  
+
 <!-- insert Edge-specific announcement:  Network Console experiment can now Save and Export  -->  
+
+## Grid tooling v2  
 
 <!-- insert Edge-specific announcement:  Grid tooling v2  -->  
 
+## Customize keyboard shortcuts in Settings  
+
 <!-- insert Edge-specific announcement:  Customize keyboard shortcuts in Settings  -->  
+
+## Elements for Microsoft Edge Visual Studio Code extension  
 
 <!-- insert Edge-specific announcement:  Elements for Microsoft Edge Visual Studio Code extension announcement  -->  
 
+<!--  
 ## Announcements from the Chromium project  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
+-->  
 
-### New CSS Grid debugging tools  
+## New CSS Grid debugging tools  
 
-DevTools now has better support for CSS grid debugging!  
+This announcement originated with the Chromium team.  
+
+DevTools now has better support for CSS grid debugging.  
 
 :::image type="complex" source="../../media/2020/10/css-grid.msft.png" alt-text="CSS grid debugging" lightbox="../../media/2020/10/css-grid.msft.png":::
    CSS grid debugging  
@@ -47,9 +63,11 @@ The new **Layout** pane has a **Grid** section offering you a number of options 
 
 For more information, navigate to [CSS grid](/microsoft-edge/devtools-guide-chromium/css/grid).  
 
-Chromium issue:  [#1047356][CR1047356]  
+For more discussion and history about this feature, navigate to [Chromium issue #1047356][CR1047356].  
 
-### New WebAuthn tab  
+## New WebAuthn tab  
+
+This announcement originated with the Chromium team.  
 
 Emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn/) with the new [WebAuthn tab](/microsoft-edge/devtools-guide-chromium/webauthn).  
 
@@ -65,9 +83,11 @@ With the new **WebAuthn** tab, emulate the authenticators, customize the capabil
 
 For more information about the WebAuthn feature, navigate to [documentation](/microsoft-edge/devtools-guide-chromium/webauthn).  
 
-Chromium issue:  [#1034663][CR1034663]  
+For more discussion and history about this feature, navigate to [Chromium issue #1034663][CR1034663].  
 
-### Move tools between top and bottom panel  
+## Move tools between top and bottom panel  
+
+This announcement originated with the Chromium team.  
 
 DevTools now support moving tools in DevTools between the top and bottom panel.  View any combination of two tools at the same time.  
 
@@ -83,11 +103,13 @@ To move any bottom tab to the top, hover on a tab, open the contextual menu \(ri
    Move to top  
 :::image-end:::  
 
-Chromium issue:  [#1075732][CR1075732]  
+For more discussion and history about this feature, navigate to [Chromium issue #1075732][CR1075732].  
 
-### Elements panel updates  
+## Elements panel updates  
 
-#### View the Computed sidebar pane in the Styles pane  
+This announcement originated with the Chromium team.  
+
+### View the Computed sidebar pane in the Styles pane  
 
 Toggle the **Computed sidebar** pane in the **Styles** pane.  
 
@@ -97,9 +119,9 @@ The **Computed sidebar** pane in the **Styles** pane is collapsed by default.  C
    Computed sidebar pane  
 :::image-end:::  
 
-Chromium issue:  [#1073899][CR1073899]  
+For more discussion and history about this feature, navigate to [Chromium issue #1073899][CR1073899].  
 
-#### Grouping CSS properties in the Computed pane  
+### Grouping CSS properties in the Computed pane  
 
 Group the CSS properties by categories in the **Computed** pane.  
 
@@ -111,9 +133,11 @@ On the **Elements** panel, choose an element.  Toggle the **Group** checkbox to 
    Grouping CSS properties  
 :::image-end:::  
 
-Chromium issue:  [#1096230][CR1096230], [#1084673][CR1084673], [#1106251][CR1106251]  
+For more discussion and history about this feature, navigate to [Chromium issue #1096230][CR1096230], [Chromium issue #1084673][CR1084673], and [Chromium issue #1106251][CR1106251].  
 
-### Lighthouse 6.4 in the Lighthouse panel  
+## Lighthouse 6.4 in the Lighthouse panel  
+
+This announcement originated with the Chromium team.  
 
 The **Lighthouse** panel is now running Lighthouse 6.4.  For more information about release changes, navigate to [release notes](https://github.com/GoogleChrome/lighthouse/releases).  
 
@@ -127,9 +151,11 @@ New audits in Lighthouse 6.4:
 *   **Valid sourcemaps**.  Audits if a page has valid sourcemaps for large, first-party JavaScript.  
 *   **[Experimental] Large JavaScript library**.  Large JavaScript libraries may lead to poor performance.  This audit suggests cheaper alternatives to common, large JavaScript libraries like `moment.js`.  
     
-Chromium issue:  [#772558][CR772558]  
+For more discussion and history about this feature, navigate to [Chromium issue #772558][CR772558].  
 
-### performance.mark() events in the Timings section  
+## performance.mark() events in the Timings section  
+
+This announcement originated with the Chromium team.  
 
 The **Timings section** of a Performance recording now marks `performance.mark()` events.
 
@@ -137,7 +163,9 @@ The **Timings section** of a Performance recording now marks `performance.mark()
    Performance.mark events  
 :::image-end:::  
 
-### New resource-type and url filters in the Network panel  
+## New resource-type and url filters in the Network panel  
+
+This announcement originated with the Chromium team.  
 
 Use the new `resource-type` and `url` keywords in the **Network panel** to filter network requests.  
 
@@ -149,11 +177,13 @@ For example, use `resource-type:image` to focus on the network requests that are
 
 Check out [filter requests by properties](/microsoft-edge/devtools-guide-chromium/network/reference#filter-by-property) to discover more special keywords like `resource-type` and `url`.  
 
-Chromium issue:  [#1121141][CR1121141],  [#1104188][CR1104188]  
+For more discussion and history about this feature, navigate to [Chromium issue #1121141][CR1121141] and [Chromium issue #1104188][CR1104188].  
 
-### Frame details view updates  
+## Frame details view updates  
 
-#### Display COEP and COOP reporting to endpoint  
+This announcement originated with the Chromium team.  
+
+### Display COEP and COOP reporting to endpoint  
 
 View the Cross-Origin Embedder Policy \(COEP\)  and Cross-Origin Opener Policy \(COOP\) `reporting to` endpoint under the **Security & Isolation** section.  
 
@@ -165,9 +195,9 @@ The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a w
 
 For more information about how to enable COEP and COOP and make your website "cross-origin isolated", navigate to [Making your website "cross-origin isolated" using COOP and COEP][WebDevCoopCoep].  
 
-Chromium issue:  [#1051466][CR1051466]  
+For more discussion and history about this feature, navigate to [Chromium issue #1051466][CR1051466].  
 
-#### Display COEP and COOP report-only mode  
+### Display COEP and COOP report-only mode  
 
 DevTools now displays `report-only` label for COEP and COOP that are set to `report-only` mode.  
 
@@ -177,9 +207,11 @@ DevTools now displays `report-only` label for COEP and COOP that are set to `rep
 
 For more information about how to prevent information leaks and enable COOP and COEP in your website, navigate to [video](https://youtu.be/XLNJYhjA-0c).  
 
-Chromium issue:  [#1051466][CR1051466]  
+For more discussion and history about this feature, navigate to [Chromium issue #1051466][CR1051466].  
 
-### Deprecation of Settings in the More tools menu  
+## Deprecation of Settings in the More tools menu  
+
+This announcement originated with the Chromium team.  
 
 The `Settings` in the More tools menu is deprecated.  Open the **Settings** from the main panel instead.  
 
@@ -187,14 +219,16 @@ The `Settings` in the More tools menu is deprecated.  Open the **Settings** from
    Settings in the main panel  
 :::image-end:::  
 
-Chromium issue:  [#1121312][CR1121312]  
+For more discussion and history about this feature, navigate to [Chromium issue #1121312][CR1121312].  
 
-### Experimental features  
+## Experimental features  
+
+This announcement originated with the Chromium team.  
 
 > [!CAUTION]
 > Experimental features are still under development and subject to change.  
 
-#### View and fix color contrast issues in the CSS Overview panel  
+### View and fix color contrast issues in the CSS Overview panel  
 
 > [!NOTE]
 > To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  
@@ -209,9 +243,9 @@ In this example, the [demo page](https://jec.fyi/demo/accessible-color-multi) ha
 
 Choose an element in the list to open the element in **Elements** panel.  DevTools [provides auto color suggestion](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane) to help you fix the low contrast text.  
 
-Chromium issue:  [#1120316][CR1120316]  
+For more discussion and history about this feature, navigate to [Chromium issue #1120316][CR1120316].  
 
-#### Customize keyboard shortcuts in DevTools  
+### Customize keyboard shortcuts in DevTools  
 
 > [!NOTE]
 > To enable this experiment, check the **Enable keyboard shortcut editor** checkbox under **Settings** > **Experiments**.  
@@ -226,7 +260,7 @@ To customize the keyboard shortcut, choose **Settings** > **Shortcuts**, hover o
 
 To reset all shortcuts, choose **Restore default shortcuts**.  
 
-Chromium issue:  [#174309][CR174309]  
+For more discussion and history about this feature, navigate to [Chromium issue #174309][CR174309].  
 
 ## Download the Microsoft Edge preview channels  
 
