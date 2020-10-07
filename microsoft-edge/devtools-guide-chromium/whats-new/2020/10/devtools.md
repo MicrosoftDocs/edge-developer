@@ -21,9 +21,9 @@ We locked in strings that do not need to be localized, such as the Lighthouse st
 
 ![Network screenshot]()  
 
-We have also made some more detailed decisions to ensure that the Developer Tools are localized accurately. One example is that we replaced a placeholder for $0, since this is both important for the console and a special character used for localization.  
+Detailed decisions were made to ensure that the Developer Tools are localized accurately.  For example, a placeholder was replaced for $0, since this is both important for the console and a special character used for localization.  
 
-Your feedback and internal discoveries uncovered areas where text strings should not be localized. We really appreciate all the insight our global developer community provides us, and it’s especially impactful with features such as localization. Please continue to send us feedback on our localization quality so that we can work together to make the locales we support more accurate.  
+Your feedback and internal discoveries uncovered areas where text strings should not be localized.  All the insight provided by the global developer community is appreciated, and especially the impact for features such as localization.  Please continue to send feedback on localization quality, so that we can work together to make the locales we support more accurate.  
 
 ## Save and export using Network Console experiment  
 
