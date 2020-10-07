@@ -3,7 +3,7 @@ description: This page provides documentation on the Microsoft Edge user agent s
 title: Microsoft Edge User Agent String
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user agent string, ua string, ua overrides
@@ -20,13 +20,13 @@ For cases where feature detection is not applicable and UA detection must be use
 The `User-Agent` request header is in the following format:
 
 ```http
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 Edg/85.0.564.70
 ``` 
 
 The return value from `navigator.userAgent` is in the following format:
 
 ```javascript
-"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43"
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 Edg/85.0.564.70"
 ```  
 
 Platform identifiers change based on the operating system being used, and version numbers also increment as time passes.  This format is the same as the Chromium UA with the addition of a new `Edg` token at the end.  Microsoft selected the `Edg` token to avoid compatibility issues that may be caused by using the string `Edge`, which is used by the version of Microsoft Edge based on EdgeHTML.  The `Edg` token is also consistent with [existing tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer/) used on iOS and Android.
