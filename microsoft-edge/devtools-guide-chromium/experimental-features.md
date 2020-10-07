@@ -215,6 +215,21 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
+### Enable Composited Layers in 3D View
+
+You can now visualize Layers alongside z-indexes and the Document Object Model (DOM) to debug without switching contexts as often. We recognize that reducing context-switching is a major pain point, and we know it’s not always straightforward how the code we write affects our web applications.  We decided to combine 3D View with Composited Layers for a comprehensive visual debugging experience. 
+
+:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers feature" lightbox="./media/experiments-layers.msft.png":::
+  Composited Layers feature  
+:::image-end:::  
+
+After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, use the following steps.  
+  
+1.  Open the **3D View** pane in the drawer \(bottom\) panel.  
+1.  Select the **Composited Layers** pane.    
+
+<!--Available in Microsoft Edge version 87 and later.  -->
+
 ## Previous experimental features  
 
 *   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
