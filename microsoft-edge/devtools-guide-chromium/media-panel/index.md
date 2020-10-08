@@ -51,11 +51,9 @@ The **Media** panel is the main place in DevTools for inspecting the media playe
     
 1.  On the **Timeline** tab, the media playback and buffer status is displayed live.  
     
-    <!--  
-    <video autoplay loop muted playsinline>
-        <source src="/microsoft-edge/devtools-guide-chromium/media-panel/images/05-timeline.mp4" type="video/mp4">
-    </video>
-    -->  
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline" lightbox="../media/media-panel-timeline.msft.png":::
+       Media timeline  
+    :::image-end:::  
     
 ### Remote debugging  
 
