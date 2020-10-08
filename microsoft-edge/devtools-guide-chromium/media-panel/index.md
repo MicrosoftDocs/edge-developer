@@ -64,6 +64,7 @@ View the media players information on an Android device from your Windows or mac
 1.  To set up remote debugging, navigate to [Get started with remote debugging Android devices](../remote-debugging/index.md).  
 1.  View the media players information remotely.  
     
+    <!-- TODO: recreate image using an Android device -->  
     <!--  
     :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging" lightbox="../media/media-panel-remote-debug.msft.png":::
        Remote debugging  
