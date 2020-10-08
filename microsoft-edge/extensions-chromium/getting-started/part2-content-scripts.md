@@ -11,8 +11,7 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Create an extension tutorial Part 2  
   
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]  
--->  
+[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]    
 
 ## Overview  
 
