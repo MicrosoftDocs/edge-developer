@@ -46,7 +46,7 @@ The following list outlines helpful information as it relates to the architectur
 
     Just like web servers, extensions wait on notifications when the browser is open.  Extensions and tab pages run in threads that are isolated from each other. However, developers can use the extensions API, and permissions in the manifest file to allow an extension to work with any tab page.  
 
-4. Extensions provide opt-in permissions at install time.  Extension permissions are specified by the developer in the `manifest.json` file. When installing extensions, users are presented with information on the permissions that the extensions needs to run. Based on the type of permission required, the extension may extract and use information from the browser.
+4. Extensions provide opt-in permissions at install time.  Extension permissions are specified by the developer in the `manifest.json` file. When installing extensions, users are presented with information on the permissions that the extension needs to run. Based on the type of permission required, the extension may extract and use information from the browser.
 
 
 ## Next steps
