@@ -20,7 +20,7 @@ The goals behind the DevTools Protocol are three-fold:
 
  - Provide a public API for our DevTools app to attach to Microsoft Edge
  - Expand access of DevTools functionality to external tooling clients
- - Enable remote debugging across the range of Windows 10 devices running Micrsoft Edge 
+ - Enable remote debugging across the range of Windows 10 devices running Microsoft Edge 
 
 This preliminary release provides core debugging functionality, such as setting breakpoints, stepping through code, and exploring stack traces. In the Edge DevTools UI, this translates to functionality available in the [**Debugger**](../../devtools-guide/debugger.md) panel, minus cache inspection (for Web storage, Service worker, Cache API, and IndexedDB). 
 
