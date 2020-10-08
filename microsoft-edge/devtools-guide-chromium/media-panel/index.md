@@ -15,7 +15,7 @@ Use the **Media** panel in Microsoft Edge DevTools to view information and debug
 
 ## Open the Media panel  
 
-The **Media** panel is the main place in DevTools for inspecting the media player of a page.
+The **Media** panel is the main place in DevTools for inspecting the media player of a webpage.
 
 1.  [Open DevTools][DevtoolsGuideChromiumOpen].  
 1.  To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.  
@@ -61,7 +61,7 @@ The **Media** panel is the main place in DevTools for inspecting the media playe
 
 View the media players information on an Android device from your Windows or macOS computer.  
 
-1.  To set up remote debugging, navigate to [Get started with remote debugging Android devices](../remote-debugging/index.md).  
+1.  To set up remote debugging, navigate to [Get started with remote debugging Android devices][DevtoolsGuideChromiumRemoteDebuggingIndex].  
 1.  View the media players information remotely.  
     
     <!-- TODO: recreate image using an Android device -->  
@@ -73,11 +73,11 @@ View the media players information on an Android device from your Windows or mac
     
 ## Hide and show media players  
 
-Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different pages, each with media players.
+Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different webpages, each with media players.
 
 You may choose to hide \(or show\) each media player for an easier debugging experience.  
 
-1.  Browse to several different video pages using the same browser tab.  
+1.  Browse to several different video webpages using the same browser tab.  
 1.  To hide media players, complete one of the following actions.  
     *   To hide one media player, hover on a media player, open the contextual menu \(right-click\), and choose **Hide player**.  
     *   To hide all of the other media players, hover on a media player, open the contextual menu \(right-click\), and choose **Hide all others**.  
@@ -101,6 +101,8 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 <!-- links -->  
 
 [DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools"  
+
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 
 [BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizing Productivity with the Edge Developer Tools | Bing Video"  
 
