@@ -107,7 +107,7 @@ Microsoft Edge collects a set of required diagnostic data that's necessary to ke
 
 Additionally, you may choose to share optional diagnostic data. As you use Microsoft Edge features and services or other applications that use the Microsoft Edge web platform, Microsoft Edge sends optional diagnostic data about how you use those features and the websites you visit. With your permission, this optional diagnostic data is sent to Microsoft to improve Microsoft products and services for everyone. This data is not collected or stored with your Microsoft account.  
 
-Optional diagnostic data includes information like your feature usage, performance data, site load times, memory usage and websites you visit. For example, if you favorite a website, optional diagnostic data includes info that the favorite button was clicked and a favorite was successfully added, but not which site was set as a favorite.  
+Optional diagnostic data includes information like your feature usage, performance data, site load times, memory usage and websites you visit. For example, if you favorite a website, optional diagnostic data includes info that the favorite button was selected and a favorite was successfully added, but not which site was set as a favorite.  
 
 Information about websites you visit in Microsoft Edge helps us understand how quickly sites load and increases the relevance of search results for all users. The data includes information about the website such as the URL of the page you visit, website metrics, title of the page, how you accessed the page, info about the content of the page, and other relevant info about the page navigation.  
 
