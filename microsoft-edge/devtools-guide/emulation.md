@@ -98,8 +98,8 @@ Your website must request and be granted permission from a user before using the
 <!-- links -->  
 
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-[DevtoolsGuideChromiumDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromiumDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftNewEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
 
