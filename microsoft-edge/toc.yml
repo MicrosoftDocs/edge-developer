@@ -238,6 +238,8 @@
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
             - name: Use Allocation Instrumentation on Timeline
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+        - name: Media
+          href: devtools-guide-chromium/media-panel/index.md
         - name: Workspaces
           href: devtools-guide-chromium/workspaces/index.md
         - name: Progressive Web Apps
