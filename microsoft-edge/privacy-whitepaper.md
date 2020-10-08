@@ -371,7 +371,7 @@ To navigate to a website, the browser needs to look up the network address (e.g.
 
 By default, your current DNS service provider is used to avoid disruptions to your browsing. Not all service providers offer secure DNS. To avoid any disruption to your browsing, if the secure DNS connection fails, Microsoft Edge will fallback and perform an unencrypted DNS lookup with your current DNS service provider. Microsoft Edge allows you to use a specific secure DNS provider. If a secure DNS provider is chosen, then Microsoft Edge will not fallback to regular DNS lookup if the secure lookup fails. You can choose your secure DNS settings in `edge://setting/privacy`.  
 
-Secure DNS is off by default for managed machines part of an organization but it can be configured using administrative policies. InPrivate browsing uses the secure DNS setting of the profile from which the InPrivate session was launched. Guest mode will always use your current service provider.
+Secure DNS is off by default for managed machines that are part of an organization but it can be configured using administrative policies. InPrivate browsing uses the secure DNS setting of the profile from which the InPrivate session was launched. Guest mode will always use your current service provider.
 
 ## Sign in and Identity  
 
