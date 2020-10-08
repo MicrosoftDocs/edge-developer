@@ -146,7 +146,7 @@
           href: devtools-guide-chromium/issues/index.md
         - name: Command Menu
           href: devtools-guide-chromium/command-menu/index.md
-        - name: Mobile Simulation
+        - name: Emulation
           items: 
             - name: Overview
               href: devtools-guide-chromium/device-mode/index.md
