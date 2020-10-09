@@ -133,9 +133,9 @@ This announcement originated with the Chromium team.
 
 Emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn/) with the new [WebAuthn tab](/microsoft-edge/devtools-guide-chromium/webauthn).  
 
-To open the WebAuthn tab, choose **More options** > **More tools** > **WebAuthn**.  
+To open the WebAuthn tab, choose the the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
-:::image type="complex" source="../../media/2020/10/webauthn.msft.png" alt-text="WebAuthn tab" lightbox="../../media/2020/10/webauthn.msft.png":::
+:::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tab" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
    **WebAuthn** tab  
 :::image-end:::  
 
