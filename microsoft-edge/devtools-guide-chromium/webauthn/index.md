@@ -41,7 +41,7 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
 1.  Choose the **Add** button.  
 1.  A new section of your newly created authenticator is displayed.  
 
-:::image type="complex" source="../media/webauthn-authenticor.msft.png" alt-text="Authenticator" lightbox="../media/webauthn-authenticor.msft.png":::
+:::image type="complex" source="../media/webauthn-authenticator.msft.png" alt-text="Authenticator" lightbox="../media/webauthn-authenticator.msft.png":::
    Authenticator  
 :::image-end:::  
 
@@ -53,7 +53,7 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
 
 ### Register a new credential  
 
-To register a new credential, you need to have a webpage that uses WebAuthn, for example the following demo webpage.  
+To register a new credential, you must visit a webpage that uses WebAuthn, for example the following demo webpage.  
 
 [webauthndemo.appspot.com][AppspotWebauthndemo]  
 
@@ -87,7 +87,7 @@ To export or remove a credential, choose the **Export** or **Remove** button.
 
 A newly created authenticator is automatically activated.  DevTools supports only one active virtual authenticator at any point of time.  
 
-If you remove the currently active authenticator, the result is no active authenticator.  
+If you remove the currently active authenticator, you have no active authenticator.  
 
 To set an authenticator as the active authenticator, choose the **Active** radio button of an authenticator.  
 
@@ -99,17 +99,13 @@ To set an authenticator as the active authenticator, choose the **Active** radio
 
 To remove a virtual authenticator, chose the **Remove** button of the authenticator.  
 
-:::image type="complex" source="../media/webauthn-remove-authenticor.msft.png" alt-text="Remove authenticator" lightbox="../media/webauthn-remove-authenticor.msft.png":::
+:::image type="complex" source="../media/webauthn-remove-authenticator.msft.png" alt-text="Remove authenticator" lightbox="../media/webauthn-remove-authenticator.msft.png":::
    Remove authenticator  
 :::image-end:::  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image -->  
-
-[ImageMoreIcon]:  ../media/more-icon.msft.png
 
 <!-- links -->  
 
