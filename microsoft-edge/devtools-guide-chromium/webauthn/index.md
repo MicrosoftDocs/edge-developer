@@ -20,7 +20,7 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
     [webauthndemo.appspot.com][AppspotWebauthndemo]  
     
 1.  [Open DevTools][DevtoolsGuideChromiumOpen].  
-1.  Select **More Options** \(![More][ImageMoreIcon]\) > **More tools** > **WebAuthn** to open the WebAuthn tab.  
+1.  Choose the the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn** to open the WebAuthn tab.  
 
 :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tab" lightbox="../media/webauthn-webauthn-tab.msft.png":::
    **WebAuthn** tab  
@@ -28,7 +28,7 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
 
 ## Enable the virtual authenticator environment  
 
-1. On the **WebAuthn** tab, select the **Enable virtual authenticator environment** checkbox to enable it.  
+1. On the **WebAuthn** tab, choose the checkbox next to **Enable virtual authenticator environment**.  
 1. After it is enabled, a new section named **New authenticator** is displayed.  
 
 :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Enable virtual authenticator environment" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
@@ -38,7 +38,7 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
 ## Add a virtual authenticator  
 
 1.  On the **New authenticator** section, configure the options.  
-1.  Select the **Add** button.  
+1.  Choose the **Add** button.  
 1.  A new section of your newly created authenticator is displayed.  
 
 :::image type="complex" source="../media/webauthn-authenticor.msft.png" alt-text="Authenticator" lightbox="../media/webauthn-authenticor.msft.png":::
@@ -57,18 +57,18 @@ To register a new credential, you need to have a webpage that uses WebAuthn, for
 
 [webauthndemo.appspot.com][AppspotWebauthndemo]  
 
-1.  On the demo webpage, select **Register new credential** to register a new credential.
+1.  On the demo webpage, choose **Register new credential** to register a new credential.
 1.  A new credential is now added to the **Credentials** table in the WebAuthn tab.  
 
 :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="View credentials" lightbox="../media/webauthn-view-cred.msft.png":::
    View credentials  
 :::image-end:::  
 
-On the demo webpage, select the **Authenticate** button multiple times, observe the **Credentials** table, and notice that the **Sign Count** of the credential increases.  
+On the demo webpage, choose the **Authenticate** button multiple times, observe the **Credentials** table, and notice that the **Sign Count** of the credential increases.  
 
 ### Export and remove credentials  
 
-To export or remove a credential, select the **Export** or **Remove** button.  
+To export or remove a credential, choose the **Export** or **Remove** button.  
 
 :::image type="complex" source="../media/webauthn-export-remove.msft.png" alt-text="Export or remove a credential" lightbox="../media/webauthn-export-remove.msft.png":::
    Export or remove a credential  
@@ -76,8 +76,8 @@ To export or remove a credential, select the **Export** or **Remove** button.
 
 ## Rename an authenticator  
 
-1.  To rename an authenticator, select the **Edit** button beside the authenticator name.  
-1.  Edit the name, then select **Enter** to save the changes.  
+1.  To rename an authenticator, choose the **Edit** button beside the authenticator name.  
+1.  Edit the name, then choose **Enter** to save the changes.  
 
 :::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Rename an authenticator" lightbox="../media/webauthn-rename.msft.png":::
    Rename an authenticator  
@@ -89,7 +89,7 @@ A newly created authenticator is automatically activated.  DevTools supports onl
 
 If you remove the currently active authenticator, the result is no active authenticator.  
 
-To set an authenticator as the active authenticator, select the **Active** radio button of an authenticator.  
+To set an authenticator as the active authenticator, choose the **Active** radio button of an authenticator.  
 
 :::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Set active authenticator" lightbox="../media/webauthn-set-active.msft.png":::
    Set active authenticator  
@@ -97,7 +97,7 @@ To set an authenticator as the active authenticator, select the **Active** radio
 
 ## Remove a virtual authenticator  
 
-To remove a virtual authenticator, select the **Remove** button of the authenticator.  
+To remove a virtual authenticator, chose the **Remove** button of the authenticator.  
 
 :::image type="complex" source="../media/webauthn-remove-authenticor.msft.png" alt-text="Remove authenticator" lightbox="../media/webauthn-remove-authenticor.msft.png":::
    Remove authenticator  

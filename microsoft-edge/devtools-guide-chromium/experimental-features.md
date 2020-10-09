@@ -228,7 +228,7 @@ To customize the keyboard shortcut for a specific action, complete the following
     *   Select `Shift`+`?`.  
 1.  Navigate to the **Shortcuts** page.  
 1.  Choose the action you want to customize.  
-1.  Choose **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\).  
+1.  Choose the **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\) icon.  
     
     :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Choose the action to customize from the Shortcuts page in Settings" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Choose the action to customize from the **Shortcuts** page in [Settings][DevToolsCustomizeSettings]
