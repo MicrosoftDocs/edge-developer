@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Inspect CSS Grid in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020 
+ms.date: 10/09/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

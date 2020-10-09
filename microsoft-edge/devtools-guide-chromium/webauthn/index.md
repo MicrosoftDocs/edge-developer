@@ -3,7 +3,7 @@ description: Emulate Authenticators and Debug WebAuthn in Microsoft Edge DevTool
 title: Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/07/2020 
+ms.date: 10/09/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -16,7 +16,9 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
 ## Open the WebAuthn tab  
 
 1.  Navigate to a webpage that uses WebAuthn, such as the following demo webpage \(sign into the webpage\).  
-    *   [webauthndemo.appspot.com][AppspotWebauthndemo]  
+    
+    [webauthndemo.appspot.com][AppspotWebauthndemo]  
+    
 1.  [Open DevTools][DevtoolsGuideChromiumOpen].  
 1.  Select **More Options** \(![More][ImageMoreIcon]\) > **More tools** > **WebAuthn** to open the WebAuthn tab.  
 
@@ -53,7 +55,7 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
 
 To register a new credential, you need to have a webpage that uses WebAuthn, for example the following demo webpage.  
 
-*   [webauthndemo.appspot.com][AppspotWebauthndemo]  
+[webauthndemo.appspot.com][AppspotWebauthndemo]  
 
 1.  On the demo webpage, select **Register new credential** to register a new credential.
 1.  A new credential is now added to the **Credentials** table in the WebAuthn tab.  
