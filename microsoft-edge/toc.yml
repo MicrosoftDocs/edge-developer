@@ -375,7 +375,9 @@
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Developer Guide
-          items: 
+          items:
+            - name: API support
+              href: extensions-chromium/developer-guide/api-support.md
             - name: Port Chromium Extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Alternate Methods of Distributing Extensions
