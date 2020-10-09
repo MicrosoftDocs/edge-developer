@@ -3,7 +3,7 @@ description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -169,7 +169,7 @@ Chromium issue: [#1103316][CR1103316]
 
 ### New Media panel  
 
-DevTools now displays media players information in the [Media][DevtoolsMediaIndex] panel.  
+DevTools now displays media players information in the [Media][DevtoolsMediaPanelIndex] panel.  
 
 To open the new **Media** panel, complete the following step.  
 
@@ -463,7 +463,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
-[DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
+[DevtoolsMediaPanelIndex]: /microsoft-edge/devtools-guide-chromium/media-panel/index "View and debug media players information | Microsoft Docs"  
 
 [DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"  
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"  
