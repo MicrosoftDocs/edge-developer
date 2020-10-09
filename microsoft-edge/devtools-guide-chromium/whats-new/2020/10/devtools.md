@@ -136,14 +136,14 @@ Emulate authenticators and debug the [Web Authentication API](https://w3c.github
 To open the WebAuthn tab, choose **More options** > **More tools** > **WebAuthn**.  
 
 :::image type="complex" source="../../media/2020/10/webauthn.msft.png" alt-text="WebAuthn tab" lightbox="../../media/2020/10/webauthn.msft.png":::
-   WebAuthn tab  
+   **WebAuthn** tab  
 :::image-end:::  
 
 Prior to the new **WebAuthn** tab, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  
 
 With the new **WebAuthn** tab, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
 
-For more information about the WebAuthn feature, navigate to [documentation](/microsoft-edge/devtools-guide-chromium/webauthn).  
+For more information about the WebAuthn feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/webauthn/index).  
 
 For background information and discussion included in the Chromium Bug, navigate to [#1034663][CR1034663].  
 
@@ -203,7 +203,7 @@ For background information and discussion included in the Chromium Bug, navigate
 
 This announcement originated with the Chromium team.  
 
-The **Lighthouse** panel is now running Lighthouse 6.4.  For more information about release changes, navigate to [release notes](https://github.com/GoogleChrome/lighthouse/releases).  
+The **Lighthouse** panel is now running Lighthouse 6.4.  For more information about Lighthouse release changes, navigate to [release notes](https://github.com/GoogleChrome/lighthouse/releases).  
 
 <!--
 :::image type="complex" source="../../media/2020/10/lighthouse.msft.png" alt-text="Lighthouse" lightbox="../../media/2020/10/lighthouse.msft.png":::
