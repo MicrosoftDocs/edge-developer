@@ -20,7 +20,7 @@ Use the **WebAuthn** tab in Microsoft Edge DevTools to create and interact with 
     [webauthndemo.appspot.com][AppspotWebauthndemo]  
     
 1.  [Open DevTools][DevtoolsGuideChromiumOpen].  
-1.  Choose the the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn** to open the WebAuthn tab.  
+1.  Choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn** to open the WebAuthn tab.  
 
 :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tab" lightbox="../media/webauthn-webauthn-tab.msft.png":::
    **WebAuthn** tab  
