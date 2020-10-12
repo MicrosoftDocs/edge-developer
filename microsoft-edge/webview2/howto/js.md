@@ -15,7 +15,7 @@ Using JavaScript in WebView2 controls allows you to customize native apps to mee
 
 ## Before you begin  
 
-This article assumes that you already have a working project.  If you do not have a project and want like to follow along, navigate to [WebView2 Getting Started Guide][Webview2GettingstartedWpf].  
+This article assumes that you already have a working project.  If you do not have a project and want to follow along, navigate to [WebView2 Getting Started Guide][Webview2GettingstartedWpf].  
 
 ## Basic WebView2 Functions  
 
