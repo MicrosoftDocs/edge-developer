@@ -70,8 +70,8 @@ In this section, use JavaScript to remove the drag-and-drop functionality from y
 To begin, explore the current drag-and-drop functionality.  
 
 1.  Create a `.txt` file in order to drag-and-drop.  For example, create a file named `contoso.txt` and add text to it.  
-1.  Run your program.  
-1.  Drag-and-drop the `contoso.txt` file onto the WebView control.  A new window opens, which is the result of the code in the sample project.  
+1.  Run your project.  
+1.  Drag-and-drop the `contoso.txt` file onto the WebView control.  A new window opens, which is the result of the code in your sample project.  
     
     :::image type="complex" source="./media/dragtext.png" alt-text="Result of dragging and dropping contoso.txt" lightbox="./media/dragtext.png":::
        Result of dragging and dropping contoso.txt  
@@ -79,19 +79,20 @@ To begin, explore the current drag-and-drop functionality.
 
 Now add code to remove the drag-and-drop functionality from the WebView2 control.  
 
-1.  Copy the following code snippet.   
-    
-    ```csharp   
-    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
-    
-    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
-    "e.preventDefault();" +
-    "console.log(e.dataTransfer);" +
-    "console.log(e.dataTransfer.files[0])" +
-    "}, false);");
-    ```  
- 
-1.  Past the code into `InitializeAsync()` in `MainWindow.xaml.cs`.  
+1.  Now remove the context menu.  
+    1.  Copy the following code snippet.   
+        
+        ```csharp   
+        await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
+        
+        await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
+        "e.preventDefault();" +
+        "console.log(e.dataTransfer);" +
+        "console.log(e.dataTransfer.files[0])" +
+        "}, false);");
+        ```  
+        
+    1.  Paste the code into `InitializeAsync()` in `MainWindow.xaml.cs`.  
 1.  Run your project.  
 1.  Try to drag-and-drop `contoso.txt`.  Confirm that you are not able to drag-and-drop.  
 
