@@ -1,5 +1,5 @@
 ---
-description: New CSS Grid debugging tools, Web Authn tab, moveable tools and Computed sidebar pane.
+description: New CSS Grid debugging tools, Web Authn tab, moveable tools, and Computed sidebar pane.
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -26,11 +26,11 @@ The Microsoft Edge DevTools team identified and locked in strings that do not re
 
 The Microsoft Edge DevTools team made detailed decisions to ensure that the Microsoft Edge Developer Tools are localized accurately.  For example, a placeholder was replaced for `$0`, since the placeholder is important for the **Console** and as a special character used for localization.  
 
-Your feedback and internal discoveries uncovered areas where text strings should not be localized.  All of the insight provided by the global developer community is appreciated, and especially the impact for features such as localization.  Please continue to [send feedback on localization quality][#getting-in-touch-with-microsoft-edge-devtools-team], so together the support for locales becomes more accurate.  
+Your feedback and internal discoveries uncovered areas where text strings should not be localized.  All of the insight provided by the global developer community is appreciated, and especially the impact for features such as localization.  Continue to [send feedback on localization quality][#getting-in-touch-with-microsoft-edge-devtools-team], so together the support for locales becomes clearer and correct.  
 
 ## Save and export using Network Console experiment  
 
-The **Network Console** experiments now supports the following scenarios.  
+The **Network Console** experiments now support the following scenarios.  
 
 *   Save and export Collections and Environments using a new system.  
 *   Edit and export sets of environment variables within the **Network Console** tool.  
@@ -96,13 +96,13 @@ The **CSS Grid tooling** experiment is now turned on by default in Microsoft Edg
     
 ## Customize keyboard shortcuts in Settings  
 
-In Microsoft Edge 87 or later, you are able to customize the keyboard shortcut for any action in the DevTools.  In addition to choosing between the **Visual Studio Code** and **DevTools (default)** presets, you may further customize keyboard shortcuts by turning on the **Enable keyboard shortcut editor** experiment.
+In Microsoft Edge 87 or later, you may customize the keyboard shortcut for any action in the DevTools.  You may choose between the **Visual Studio Code** and **DevTools (default)** presets.  To further customize keyboard shortcuts, turn on the **Enable keyboard shortcut editor** experiment.
 
 To enable the experiment, navigate to [Turn on experimental features](/microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features) and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  
 
 ## Elements for Microsoft Edge Visual Studio Code extension  
 
-The experimental **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  You are now able to debug the DOM, edit CSS, and inspect network traffic using developer tools without leaving Visual Studio Code.  You may choose to launch a full browser instance, connect to an existing one,or have a headless browser fully integrated into Visual Studio Code.  In addition to merging the extensions, contributing is now easier and the build process was improved to make newer versions easier to release.  
+The experimental **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  You are now able to debug the DOM, edit CSS, and inspect network traffic using developer tools without leaving Visual Studio Code.  You may choose to launch a full browser instance, connect to an existing one, or have a headless browser fully integrated into Visual Studio Code.  Contributing is now easier and the build process was improved to make newer versions easier to release.  
 
 :::row:::
    :::column span="":::
@@ -181,13 +181,13 @@ This announcement originated with the Chromium team.
 
 Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn tab][DevtoolsWebauthnIndex].  
 
-To open the WebAuthn tab, choose the the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
+To open the WebAuthn tab, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
 :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tab" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
    **WebAuthn** tab  
 :::image-end:::  
 
-Prior to the new **WebAuthn** tab, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  
+Before the new **WebAuthn** tab was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  
 
 With the new **WebAuthn** tab, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
 
@@ -237,9 +237,9 @@ For background information and discussion included in the Chromium Bug, navigate
 
 Group the CSS properties by categories in the **Computed** pane.  
 
-Use this new grouping feature to more easily navigate in the **Computed** pane \(less scrolling\) and selectively focus on a set of related properties for CSS inspection.  
+Use this grouping feature to more easily navigate in the **Computed** pane \(less scrolling\).  You may also selectively focus on a set of related properties for CSS inspection.  
 
-On the **Elements** panel, choose an element.  Toggle the **Group** checkbox to group \(or un-group\) the CSS properties.  
+On the **Elements** panel, choose an element.  Toggle the **Group** checkbox to group \(or ungroup\) the CSS properties.  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Grouping CSS properties" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Grouping CSS properties  
@@ -314,7 +314,7 @@ For background information and discussion included in the Chromium Bug, navigate
 
 #### Display COEP and COOP report-only mode  
 
-DevTools now displays `report-only` label for COEP and COOP that are set to `report-only` mode.  
+DevTools now display `report-only` label for COEP and COOP that are set to `report-only` mode.  
 
 <!--TODO replace with edge demo -->  
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-2.png" alt-text="report-only label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-2.png":::
