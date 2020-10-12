@@ -36,7 +36,7 @@
   href: roadmap.md
 - name: How to
   items:
-    - name: Use JavaScript in WebView2
+    - name: Extended JavaScript scenarios in WebView2 
       href: howto/js.md
     - name: Statically link loader
       href: howto/static.md
