@@ -10,14 +10,12 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# Use JavaScript in WebView for complex scenarios
+# Use JavaScript in WebView for extended scenarios
 
-Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. In this article, we'll explore the most common functions to use with WebView2. We'll also discuss examples of how to use those functions to improve your app. 
+Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. In this article, we'll explore how we can use JavaScript in a WebView2 context to develop further WebView2 features and functionality.  
 
 ## Before you begin
-<!-- TODO: 
-Can we list the steps to perform before continuing with the rest of the how-to topic? For example, create a project in Visual Studio? Or, complete the Getting Started topic first? 
--->
+This topic assumes that there's already a working project to add code to. If you don't have a project yet, and would like to follow along please visit the [WebView2 Getting Started Guide](https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/wpf) page.
 
 ## Basic WebView2 Functions
 Use the following functions to begin embedding JavaScript in your WebView application.
@@ -52,11 +50,13 @@ In this section, we'll use JavaScript to remove the drag and drop functionality 
 To begin, let's explore the current drag and drop functionality. 
 
 1. Create a file you would like to drag and drop. For this example, create `contoso.txt` and then add some text to that file.
-1. Run the sample code. 
-<!--TODO: Can we add a link to the sample code in the Before you Begin section -->
+1. Run your program.
 1. Drag and drop `contoso.txt` onto the WebView control. A new window  pops up, which is what the code in the sample project is expected to do. 
-<!-- TODO:
-Can we an image showing the pop-up? -->
+
+    :::image type="complex" source="./media/dragtext.png" alt-text="Result of dragging and dropping contoso.txt" lightbox="./media/dragtext.png":::
+   Result of dragging and dropping contoso.txt  
+    :::image-end:::  
+
 Now let's add code that removes the drag and drop functionality from the WebView2 control.
 
 1. In `InitializeAsync()`, add the following code:
@@ -72,9 +72,7 @@ Now let's add code that removes the drag and drop functionality from the WebView
     ```
 
 1. Run your project. 
-1. Try to drag and drop `contoso.txt`. Notice that an error message is displayed because the functionality is no longer available.
-<!-- TODO:
-Is there an error message that's displayed? Would showing a screenshot be helpful?-->
+1. Try to drag and drop `contoso.txt`. Notice that drag and drop is no longer available.
 
 ## Scenario: Removing the Context Menu
 
