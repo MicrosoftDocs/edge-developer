@@ -3,7 +3,7 @@ description: New CSS Grid debugging tools, Web Authn tab, moveable tools and Com
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -97,7 +97,7 @@ To enable the experiment, navigate to [Turn on experimental features](/microsoft
 
 ## Elements for Microsoft Edge Visual Studio Code extension  
 
-The experimental **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Edge Developer Tools for Visual Studio Code](https://aka.ms/devtools-for-code) extension.  You are now able to debug the DOM, edit CSS, and inspect network traffic using developer tools without leaving Visual Studio Code.  You may choose to launch a full browser instance, connect to an existing one,or have a headless browser fully integrated into Visual Studio Code.  In addition to merging the extensions, contributing is now easier and the build process was improved to make newer versions easier to release.  
+The experimental **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  You are now able to debug the DOM, edit CSS, and inspect network traffic using developer tools without leaving Visual Studio Code.  You may choose to launch a full browser instance, connect to an existing one,or have a headless browser fully integrated into Visual Studio Code.  In addition to merging the extensions, contributing is now easier and the build process was improved to make newer versions easier to release.  
 
 :::row:::
    :::column span="":::
@@ -146,8 +146,6 @@ The experimental **Elements for Visual Studio Code** and **Network for Visual St
    :::column-end:::
 :::row-end:::  
 
-
-
 ## Announcements from the Chromium project  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
@@ -176,7 +174,7 @@ For background information and discussion included in the Chromium Bug, navigate
 
 This announcement originated with the Chromium team.  
 
-Emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn/) with the new [WebAuthn tab](/microsoft-edge/devtools-guide-chromium/webauthn).  
+Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn tab][DevtoolsGuideChromiumWebauthnIndex].  
 
 To open the WebAuthn tab, choose the the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
@@ -248,7 +246,7 @@ For background information and discussion included in the Chromium Bug, navigate
 
 This announcement originated with the Chromium team.  
 
-The **Lighthouse** panel is now running Lighthouse 6.4.  For more information about Lighthouse release changes, navigate to [release notes](https://github.com/GoogleChrome/lighthouse/releases).  
+The **Lighthouse** panel is now running Lighthouse 6.4.  For more information about Lighthouse release changes, navigate to [release notes][GithubGoogleChromeLighthouseReleasesV641].  
 
 <!--
 :::image type="complex" source="../../media/2020/10/lighthouse.msft.png" alt-text="Lighthouse" lightbox="../../media/2020/10/lighthouse.msft.png":::
@@ -316,7 +314,7 @@ DevTools now displays `report-only` label for COEP and COOP that are set to `rep
    report-only label  
 :::image-end:::  
 
-For more information about how to prevent information leaks and enable COOP and COEP in your website, navigate to [video](https://youtu.be/XLNJYhjA-0c).  
+For more information about how to prevent information leaks and enable COOP and COEP in your website, navigate to [video][YoutubeXlnjyhja-0c].  
 
 For background information and discussion included in the Chromium Bug, navigate to [#1051466][CR1051466].  
 
@@ -348,7 +346,7 @@ This announcement originated with the Chromium team.
 
 **CSS Overview** panel now displays a list of low color contrast texts of your page.  
 
-In this example, the [demo page](https://jec.fyi/demo/accessible-color-multi) has a low color contrast issue.  Choose the issue, view a list of elements that have the issue.  
+In this example, the [demo page][JecFyiDemoAccessibleAolorMulti] has a low color contrast issue.  Choose the issue, view a list of elements that have the issue.  
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Low color contrast issues" lightbox="../../media/2020/10/css-overview.msft.png":::
    Low color contrast issues  
@@ -403,10 +401,13 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
+[DevtoolsGuideChromiumWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+
+[VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Code"  
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 
@@ -417,7 +418,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"  
 [CR1073899]: https://crbug.com/1073899 "Computed style tab disappears in responsive mode | Chromium bugs"  
 [CR1075732]: https://crbug.com/1075732 "DevTools personalization - Movable tabs | Chromium bugs"  
-[CR1084673]: https://crbug.com/1084673 "DevTools: improve the way we present CSS custom properties (aka. CSS variables) and their values"  
+[CR1084673]: https://crbug.com/1084673 "DevTools: improve the way we present CSS custom properties ((aka). CSS variables) and their values"  
 [CR1096230]: https://crbug.com/1096230 "Group CSS properties by categories in Computed Styles pane | Chromium bugs"  
 [CR1104188]: https://crbug.com/1104188 "Network panel search does not find results when searching for full URL | Chromium bugs"  
 [CR1106251]: https://crbug.com/1106251 "☂ DevTools: improve Computed Styles tab | Chromium bugs"  
@@ -425,7 +426,15 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR1121141]: https://crbug.com/1121141 "Allow filtering by resource type in network log | Chromium bugs"  
 [CR1121312]: https://crbug.com/1121312 "Settings should be removed from More Tools menu | Chromium bugs"  
 
+[GithubGoogleChromeLighthouseReleasesV641]: https://github.com/GoogleChrome/lighthouse/releases/v6.4.1 "v6.4.1 - GoogleChrome/lighthouse | GitHub"  
+
+[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication | GitHub"  
+
+[JecFyiDemoAccessibleAolorMulti]: https://jec.fyi/demo/accessible-color-multi "Accessible color suggestion"  
+
 [WebDevCoopCoep]: https://web.dev/coop-coep "Making your website \"cross-origin isolated\" using COOP and COEP | web.dev"  
+
+[YoutubeXlnjyhja-0c]: https://youtu.be/XLNJYhjA-0c "Prevent Info leaks and enable powerful features: COOP and COEP | YouTube"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
