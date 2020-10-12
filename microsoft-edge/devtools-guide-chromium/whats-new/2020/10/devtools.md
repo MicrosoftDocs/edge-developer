@@ -18,7 +18,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.
 
 The Microsoft Edge DevTools team identified and locked in strings that do not require localization, such as content in the **Lighthouse** pane, the term `service worker`, and some of the **Network** pane filters such as `URL`, `XHR`, `JS`, and `CSS`.  
-The **Lighthouse** pane was not localized since it is an independent project.  
+<!-- The **Lighthouse** pane was not localized since it is an independent project.  -->  
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network pane with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Network** pane with non-localized filters  
@@ -83,12 +83,17 @@ The **Network Console** experiments now supports the following scenarios.
 
 ## Grid tooling v2  
 
-*   The **CSS Grid tooling** experiment is now on by default in Microsoft Edge version 87.  
+The **CSS Grid tooling** experiment is now turned on by default in Microsoft Edge version 87.  
+
 *   Displays a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
 *   To enable persistent grids, choose the grid icon next to a grid element in the **Elements** pane or choose the grid in the **Layout** pane.  
-*   You may enable persistent overlays for as many grids as you like.  
+*   You may enable persistent overlays for multiple grids.  
 *   The new **Layout** pane allows you to easily toggle grid overlays and configure the appearance and the content for each.  
 
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout pane with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.pngg":::
+   **Layout** pane with grids  
+:::image-end:::  
+    
 ## Customize keyboard shortcuts in Settings  
 
 In Microsoft Edge 87 or later, you are able to customize the keyboard shortcut for any action in the DevTools.  In addition to choosing between the **Visual Studio Code** and **DevTools (default)** presets, you may further customize keyboard shortcuts by turning on the **Enable keyboard shortcut editor** experiment.
@@ -174,7 +179,7 @@ For background information and discussion included in the Chromium Bug, navigate
 
 This announcement originated with the Chromium team.  
 
-Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn tab][DevtoolsGuideChromiumWebauthnIndex].  
+Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn tab][DevtoolsWebauthnIndex].  
 
 To open the WebAuthn tab, choose the the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
@@ -269,7 +274,7 @@ This announcement originated with the Chromium team.
 The **Timings section** of a Performance recording now marks `performance.mark()` events.
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark events" lightbox="../../media/2020/10/perf-mark.msft.png":::
-   Performance.mark events  
+   `performance.mark` events  
 :::image-end:::  
 
 ### New resource-type and url filters in the Network panel  
@@ -280,11 +285,11 @@ Use the new `resource-type` and `url` keywords in the **Network panel** to filte
 
 For example, use `resource-type:image` to focus on the network requests that are images.  
 
-:::image type="complex" source="../../media/2020/10/filter.msft.png" alt-text="resource-type filter" lightbox="../../media/2020/10/filter.msft.png":::
+:::image type="complex" source="../../media/2020/10/network-resource-type-filter.msft.png" alt-text="resource-type filter" lightbox="../../media/2020/10/network-resource-type-filter.msft.png":::
    resource-type filter  
 :::image-end:::  
 
-To discover more special keywords such as `resource-type` and `url`, navigate to [filter requests by properties](/microsoft-edge/devtools-guide-chromium/network/reference#filter-by-property).  
+To discover more special keywords such as `resource-type` and `url`, navigate to [filter requests by properties][DevtoolsNetworkReferenceFilterRequestsProperties].  
 
 For background information and discussion included in the Chromium Bug, navigate to [#1121141][CR1121141] and [#1104188][CR1104188].  
 
@@ -296,9 +301,10 @@ This announcement originated with the Chromium team.
 
 View the Cross-Origin Embedder Policy \(COEP\)  and Cross-Origin Opener Policy \(COOP\) `reporting to` endpoint under the **Security & Isolation** section.  
 
-The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a way to specify server endpoints for the browser to which to send warnings and errors.
+The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a way to specify server endpoints for the browser to which to send warnings and errors.  
 
-:::image type="complex" source="../../media/2020/10/reporting-endpoint.msft.png" alt-text="reporting to endpoint" lightbox="../../media/2020/10/reporting-endpoint.msft.png":::
+<!--TODO replace with edge demo -->  
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-1.png" alt-text="reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-1.png":::
    reporting to endpoint  
 :::image-end:::  
 
@@ -310,11 +316,12 @@ For background information and discussion included in the Chromium Bug, navigate
 
 DevTools now displays `report-only` label for COEP and COOP that are set to `report-only` mode.  
 
-:::image type="complex" source="../../media/2020/10/report-only.msft.png" alt-text="report-only label" lightbox="../../media/2020/10/report-only.msft.png":::
+<!--TODO replace with edge demo -->  
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-2.png" alt-text="report-only label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-2.png":::
    report-only label  
 :::image-end:::  
 
-For more information about how to prevent information leaks and enable COOP and COEP in your website, navigate to [video][YoutubeXlnjyhja-0c].  
+For more information about how to prevent information leaks and enable COOP and COEP in your website, navigate to [Prevent Info leaks and enable powerful features: COOP and COEP][YoutubeXlnjyhja-0c] on YouTube.  
 
 For background information and discussion included in the Chromium Bug, navigate to [#1051466][CR1051466].  
 
@@ -346,7 +353,11 @@ This announcement originated with the Chromium team.
 
 **CSS Overview** panel now displays a list of low color contrast texts of your page.  
 
-In this example, the [demo page][JecFyiDemoAccessibleAolorMulti] has a low color contrast issue.  Choose the issue, view a list of elements that have the issue.  
+In this example, the following demo page has a low color contrast issue.  
+
+[Accessible color suggestion][JecFyiDemoAccessibleColorMulti]  
+
+Choose the issue, view a list of elements that have the issue.  
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Low color contrast issues" lightbox="../../media/2020/10/css-overview.msft.png":::
    Low color contrast issues  
@@ -401,7 +412,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
-[DevtoolsGuideChromiumWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filter requests by properties - Network Analysis reference | Microsoft Docs"  
+[DevtoolsWebauthnIndex]: /microsoft-edge/devtools-guide-chromium/webauthn/index "Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
@@ -430,7 +442,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication | GitHub"  
 
-[JecFyiDemoAccessibleAolorMulti]: https://jec.fyi/demo/accessible-color-multi "Accessible color suggestion"  
+[JecFyiDemoAccessibleColorMulti]: https://jec.fyi/demo/accessible-color-multi "Accessible color suggestion"  
 
 [WebDevCoopCoep]: https://web.dev/coop-coep "Making your website \"cross-origin isolated\" using COOP and COEP | web.dev"  
 
