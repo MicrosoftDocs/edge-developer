@@ -99,9 +99,54 @@ To enable the experiment, navigate to [Turn on experimental features](/microsoft
 
 The experimental **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Edge Developer Tools for Visual Studio Code](https://aka.ms/devtools-for-code) extension.  You are now able to debug the DOM, edit CSS, and inspect network traffic using developer tools without leaving Visual Studio Code.  You may choose to launch a full browser instance, connect to an existing one,or have a headless browser fully integrated into Visual Studio Code.  In addition to merging the extensions, contributing is now easier and the build process was improved to make newer versions easier to release.  
 
-:::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png":::
-   Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png" alt-text="Windows Blog introduction for Elements for Microsoft Edge Visual Studio Code extension" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png":::
+         Windows Blog introduction for **Elements for Microsoft Edge Visual Studio Code** extension  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-02.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-02.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension screenshot  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-03.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension Why embed developer tools in an editor" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-03.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Why embed developer tools in an editor  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-04.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-04.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Read this next  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-05.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - New headless and full-browser modes" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-05.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - New headless and full-browser modes  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in full browser mode screenshot  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in headless mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in headless mode screenshot  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+
+
 
 ## Announcements from the Chromium project  
 
@@ -243,7 +288,7 @@ For example, use `resource-type:image` to focus on the network requests that are
 
 To discover more special keywords such as `resource-type` and `url`, navigate to [filter requests by properties](/microsoft-edge/devtools-guide-chromium/network/reference#filter-by-property).  
 
-For background information and discussion included in the Chromium Bug, navigate to [#1121141][CR1121141] and [Chromium issue #1104188][CR1104188].  
+For background information and discussion included in the Chromium Bug, navigate to [#1121141][CR1121141] and [#1104188][CR1104188].  
 
 ### Frame details view updates  
 
