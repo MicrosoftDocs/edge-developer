@@ -1,6 +1,6 @@
 ---
 description: Learn how to statically link the WebView2 loader library.
-title: How to Statically link the WebView2 loader library
+title: How to statically link the WebView2 loader library
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/01/2020
@@ -10,15 +10,16 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# How to Statically link the WebView2 loader library  
+# How to statically link the WebView2 loader library  
 
 ## Context  
-
 What is the WebView2Loader.dll?  
 
 *   The WebView2 SDK contains a header file, `WebView2Loader.dll.`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime (or non-stable Microsoft Edge channels) on the device.  
 
-For apps that have a single runtime, and do not want to ship a `WebView2Loader.dll`, complete the following **Procedure** steps.  
+Some applications want a single executable, not a package of many files. For creating single executable applications, or simply reducing packaging, the WebView2Loader files can be statically linked.
+
+For apps that do not want to ship a `WebView2Loader.dll`, complete the following **Procedure** steps.  
 
 ## Procedure  
 
@@ -38,11 +39,11 @@ For apps that have a single runtime, and do not want to ship a `WebView2Loader.d
     > [!NOTE]
     > For example, include it after the following code block.  
     > 
-    > ```csharp
+    > ```xaml
     > <Import Project="..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets')" />
     > ```  
     
-    ```csharp
+    ```xaml
     <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
     ```
     
@@ -60,7 +61,7 @@ For apps that have a single runtime, and do not want to ship a `WebView2Loader.d
     > [!NOTE]
     > The WebView2 team aims to automate the additional dependency step in future releases.  
     
-Compile and deploy your app.  Success.  
+1. Compile and run your app.
 
 ## See also  
 
