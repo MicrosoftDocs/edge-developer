@@ -1,5 +1,5 @@
 ---
-description: New CSS Grid debugging tools, Web Authn tab, moveable tools, and Computed sidebar pane.
+description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar pane.
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -212,39 +212,21 @@ To start contributing and filing issues with your feedback, navigate to the [Mic
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-<!--  
-### New CSS Grid debugging tools  
+### New WebAuthn tool  
 
-DevTools now has better support for CSS grid debugging.  
+Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  
 
-:::image type="complex" source="../../media/2020/10/css-grid.msft.png" alt-text="CSS grid debugging" lightbox="../../media/2020/10/css-grid.msft.png":::
-   CSS grid debugging  
+To open the WebAuthn tool, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
+
+:::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+   **WebAuthn** tool  
 :::image-end:::  
 
-When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge displays next to it in the **Elements** pane.  Choose the badge to toggle the display of a grid overlay on the page.  
+Before the new **WebAuthn** tool was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  
 
-The new **Layout** pane has a **Grid** section offering you a number of options for viewing the grids.  
+With the new **WebAuthn** tool, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
 
-For more information, navigate to [CSS grid](/microsoft-edge/devtools-guide-chromium/css/grid).  
-
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1047356][CR1047356].
--->  
-
-### New WebAuthn tab  
-
-Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn tab][DevtoolsWebauthnIndex].  
-
-To open the WebAuthn tab, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
-
-:::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tab" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
-   **WebAuthn** tab  
-:::image-end:::  
-
-Before the new **WebAuthn** tab was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  
-
-With the new **WebAuthn** tab, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
-
-For more information about the WebAuthn feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools](/microsoft-edge/devtools-guide-chromium/webauthn/index).  
+For more information about the WebAuthn feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1034663][CR1034663].  
 
@@ -325,7 +307,7 @@ View the Cross-Origin Embedder Policy \(COEP\)  and Cross-Origin Opener Policy \
 The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a way to specify server endpoints for the browser to which to send warnings and errors.  
 
 <!--TODO replace with edge demo -->  
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-1.png" alt-text="reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-1.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    reporting to endpoint  
 :::image-end:::  
 
@@ -338,7 +320,7 @@ To review real-time updates on this feature in the Chromium open-source project,
 DevTools now display `report-only` label for COEP and COOP that are set to `report-only` mode.  
 
 <!--TODO replace with edge demo -->  
-:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-2.png" alt-text="report-only label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop.msft-2.png":::
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="report-only label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    report-only label  
 :::image-end:::  
 
