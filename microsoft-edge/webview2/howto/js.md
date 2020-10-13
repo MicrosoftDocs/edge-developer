@@ -21,24 +21,11 @@ This article assumes that you already have a working project.  If you do not hav
 
 Use the following functions to begin embedding JavaScript in your WebView app.  
 
-:::row:::
-   :::column span="1":::
-      [ExecuteScriptAsync][Webview2ReferenceWpf09515MicrosoftWebExecutescriptasync]  
-   :::column-end:::
-   :::column span="2":::
-      Used for an example in the Getting Started tutorial.  
-      Run JavaScript in the WebView control.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      [OnDocumentCreatedAsync][Webview2ReferenceWin3209538Icorewebview2Addscripttoexecuteondocumentcreated]  
-   :::column-end:::
-   :::column span="2":::
-      Runs when the Document Object Model \(DOM\) is created.  
-   :::column-end:::
-:::row-end:::  
-
+| API  | Description  |
+|:--- |:--- |  
+| [ExecuteScriptAsync][Webview2ReferenceWpf09515MicrosoftWebExecutescriptasync] | Run JavaScript in the WebView control. For more information, navigate to the Getting Started tutorial. |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin3209538Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model \(DOM\) is created. |
+      
 ## Scenario:  Running a dedicated script file  
 
 In this section, access a dedicated JavaScript file from your WebView2 control.  
