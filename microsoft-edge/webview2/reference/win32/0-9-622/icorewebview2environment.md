@@ -219,7 +219,7 @@ HRESULT AppWindow::OnCreateEnvironmentCompleted(
 ```
  When the application retries CreateCoreWebView2Controller upon failure, it is recommended that the application restarts from creating a new WebView2 Environment. If an Edge update happens, the version associated with a WebView2 Environment could have been removed and causing the object to no longer work. Creating a new WebView2 Environment will work as it uses the latest version.
 
-WebView creation will fail if there is already a running instance using the same user data folder, and the Environment objects have different EnvironmentOptions. For example, if there is already a WebView created with one language, trying to create a WebView with a different language using the same user data folder will fail.
+WebView creation will fail if there is already a running instance using the same user data folder, and the Environment objects have different EnvironmentOptions or the HWND parentWindows have different DPI awareness. For example, if there is already a WebView created with one language, trying to create a WebView with a different language using the same user data folder will fail.
 
 #### CreateWebResourceResponse 
 
