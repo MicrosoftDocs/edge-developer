@@ -2006,11 +2006,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-edge/webview2/reference/win32/0-9-622/icorewebview2environment.md",
-      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2environment",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-edge/webview2/reference/win32/0-9-622/icorewebview2environmentoptions.md",
       "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions",
       "redirect_document_id": false
