@@ -222,15 +222,13 @@ To start contributing and filing issues with your feedback, navigate to the [Mic
 
 ### New WebAuthn tool  
 
-Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  
-
-To open the **WebAuthn** tool, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
+Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  To open the **WebAuthn** tool, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
 :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
    **WebAuthn** tool  
 :::image-end:::  
 
-Before the new **WebAuthn** tool was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  With the new **WebAuthn** tool, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
+Before the new **WebAuthn** tool was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the [Web Authentication API][GithubW3cWebauthn].  With the new **WebAuthn** tool, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
 
 For more information about the **WebAuthn** feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
