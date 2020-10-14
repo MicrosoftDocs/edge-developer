@@ -394,7 +394,7 @@
               href: extensions-chromium/publish/submission-states.md
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
-        - name: Microsoft Edge addons policies
+        - name: Microsoft Edge Add-ons policies
           items: 
             - name: Content security policy
               href: extensions-chromium/store-policies/csp.md
