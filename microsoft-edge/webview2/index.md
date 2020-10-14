@@ -10,16 +10,13 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
 ---
 
-# Introduction to Microsoft Edge WebView2 (Preview)  
+# Introduction to Microsoft Edge WebView2  
 
 The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.  With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.  For information on how to start building a WebView2 application, see [Get Started](#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="What is WebView" lightbox="./media/WebView2/whatwebview.png":::
    What is WebView  
 :::image-end:::  
-
-> [!NOTE]
-> The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.  You should not use the preview in your production apps because there may be breaking changes.  For more information, see [Webview2Releasenotes].  
 
 ## Hybrid application approach  
 
@@ -93,12 +90,12 @@ The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains s
 
 ## Supported platforms  
 
-A developer preview is available on the following programming environments.  
+A General Availability (GA) or Preview version is available on the following programming environments.  
 
-*   Win32 C/C++  
-*   .NET Framework 4.6.2 or later  
-*   .NET Core 3.0 or later  
-*   [WinUI 3.0][UwpToolkitsWinui3]  
+*   Win32 C/C++ (GA)
+*   .NET Framework 4.6.2 or later (Preview) 
+*   .NET Core 3.0 or later (Preview)
+*   [WinUI 3.0][UwpToolkitsWinui3] (Preview)
 
 You are able to run WebView2 applications on the following versions of Windows.  
 
@@ -131,9 +128,6 @@ For more information on how to build and deploy WebView2 applications, review th
 ## Getting in touch with the Microsoft Edge WebView team  
 
 [!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
-
-> [!NOTE]
-> During the preview, the collected data helps build a better product.  To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.  
 
 <!-- links -->  
 

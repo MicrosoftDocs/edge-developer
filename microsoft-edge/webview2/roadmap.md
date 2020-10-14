@@ -52,17 +52,17 @@ The WebView2 team is planning the following major efforts for future updates.
 
 ## WebView2 Runtime and Installer  
 
-[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  A preview of the WebView2 Runtime and installer is expected to be available Q3 2020 and GA in Q4 2020.  
+[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  
 
 ## Fixed version  
 
-[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  Engineering work is currently under way with a preview anticipated to be ready towards the end of Q3 2020 and GA Q4 2020.  
+[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  It is currently under preview and targeted to GA Q4 2020.  
 
 ## General availability  
 
 ### Win32 C/C++  
 
-The Win32 C/C++ SDK is expected to GA in Q4 2020, shortly after the WebView2 Runtime and installer GA.  
+The Win32 C/C++ SDK has reached GA.  
 
 ### .NET  
 

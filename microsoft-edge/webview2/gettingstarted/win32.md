@@ -10,13 +10,13 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# Getting started with WebView2 (developer preview)  
+# Getting started with WebView2  
 
-The following content walks you through the commonly used functionalities of [WebView2 (developer preview)][Webview2Index] and provides a starting  point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin3209622].  
+The following content walks you through the commonly used functionalities of [WebView2][Webview2Index] and provides a starting  point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin3209622].  
 
 ## Prerequisites  
 
-*   [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
@@ -37,7 +37,7 @@ Visual Studio may show some errors due to missing WebView2 header file, which sh
 
 ## Step 2 - Install WebView2 SDK  
 
-Add the WebView2 SDK into the project.  For the developer preview, you may install the Win32 SDK using Nuget.  
+Add the WebView2 SDK into the project.  You may install the Win32 SDK using Nuget.  
 
 1.  Hover on the project, open the contextual menu \(right-click\), and select **Manage Nuget Packages**.  
     
@@ -302,3 +302,5 @@ Many of the WebView2 functionalities that are not covered on this page, the foll
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  
