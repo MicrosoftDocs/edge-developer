@@ -60,7 +60,7 @@ We'll continue publishing updates on our blog. You can provide your feedback on 
 [SandboxingEval]: https://developer.chrome.com/apps/sandboxingEval "Using eval in Chrome Extensions. Safely."
 [CORS]: https://www.chromium.org/Home/chromium-security/extension-content-script-fetches "Changes to Cross-Origin Requests in Extension Content Scripts"
 [WebRequestAPI]: https://developer.chrome.com/extensions/webRequest "Web Request API"  
-[DeclarativeNetRequestAPI]: https://microsoftedge.microsoft.com/addons/ "Declarative Net Request API"
+[DeclarativeNetRequestAPI]: https://developer.chrome.com/extensions/declarativeNetRequest/ "Declarative Net Request API"
 [ServiceWorkers]:  https://developers.chrome.com/extensions/migrating_to_service_workers
 
 
