@@ -87,7 +87,7 @@ Non-stable Microsoft Edge channels (Beta/Dev/Canary) provide a sneak peek into w
 For constrained environments with strict compatibility requirements, developers may want to consider the Fixed Version distribution mode, previously named bring-your-own.  The Fixed Version distribution mode allows developers to select and package a specific version of the WebView2 Runtime.  The Fixed Version distribution mode allows you to control which version of the WebView2 Runtime is used by your application, and when user machines are updated.  The Fixed Version distribution mode doesn't receive any automatic updates, and developers should plan to apply updates themselves.  
 
 To use the Fixed Version mode,
-*  ls [Download][Webview2Installer] the Fixed Version package, and decompress the package.
+*   [Download][Webview2Installer] the Fixed Version package, and decompress the package.
 *   Include the decompressed Fixed Version binaries in your project.
 *   Indicate the path to the Fixed Version binaries when creating the WebView2 environment.
     *   For Win32 C/C++, you may create the environment via the [CreateCoreWebView2EnvironmentWithOptions](../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environmentwithoptions) function. Use the `browserExecutableFolder` param to indicate the path to the Fixed Version binaries.
