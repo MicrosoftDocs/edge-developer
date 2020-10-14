@@ -99,7 +99,7 @@
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Force DevTools into Print Preview mode
-                  href: devtools-guide-chromium/css/print-preview.md
+              href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items: 
             - name: Overview
