@@ -53,7 +53,7 @@ We'll continue publishing updates on our blog. You can provide your feedback on 
 [MicrosoftBlog]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/  
 [MicrosoftEdgePolicies]: https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensions 
 
-[TechCommunity]: https://microsoftedge.microsoft.com/addons/ "Tech Community"  
+[TechCommunity]: https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254 "Tech Community"  
 
 
 [Google_Migrate_to_MV3]: https://developer.chrome.com/extensions/migrating_to_manifest_v3   
