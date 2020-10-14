@@ -46,8 +46,8 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
 
 1. Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
 
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
-       Nuget
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Manage NuGet Packages":::
+       Manage NuGet Packages
     :::image-end:::
 
 1. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  
@@ -66,17 +66,23 @@ You are all set to start developing applications using the WebView2 API.  Select
 Next add a WebView to your application.  
 
 1. Open the **Windows Forms Designer**.  
-1. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App
-
-    ![toolbox](./media/winforms-toolbox.png)
+1. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App.
+    
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2":::
+       Toolbox displaying WebView2
+    :::image-end:::  
 
 1. Change the `Name` property to `webView`.
-
-    ![toolbox](./media/winforms-properties.png)
+    
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control":::
+       Properties of the WebView2 control
+    :::image-end:::
 
 1. The `Source` property sets the initial URI displayed in the WebView2 control. Set the Source property to <https://www.microsoft.com>
-
-    ![toolbox](./media/winforms-source.png)
+    
+    :::image type="complex" source="./media/winforms-source.png" alt-text="The Source property of the WebView2 control":::
+       The Source property of the WebView2 control
+    :::image-end:::
 
 Select `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 

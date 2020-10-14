@@ -58,8 +58,8 @@ Add the WebView2 SDK into the project.  For the developer preview, you may insta
 1.  Install the WebView2 SDK.  
     1.  Enter `Microsoft.Web.WebView2` in the search bar, select **Microsoft.Web.WebView2** from the results, and select **Install** in the right-hand side window.  Nuget downloads the SDK to your machine.  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Nuget":::
-           Nuget
+        :::image type="complex" source="../media/nuget.png" alt-text="Nuget Package Manager":::
+           Nuget Package Manager
         :::image-end:::  
         
 1.  Add WebView2 header to your project.  
