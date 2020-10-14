@@ -15,7 +15,7 @@ This document lists important changes that's being implemented as part of Manife
 
 ## Remotely hosted code  
 
-Today, extensions can host parts of their code remotely, and not include it as part of the extension package during the validation process. While this offers flexibility for developers to change parts of their code without needing to re-submit the extension, the code can be exploited to change execution after installation. As part of our overall efforts to offer validated extensions through [Microsoft Edge Add-ons][EdgeAddons], we'll disallow extensions from using remotely hosted code. This change makes extensions more secure. Because of this change, developers will be required to package all code required by the extension at the time of submission, or use the eval() function in a [sandboxed environment][sandboxingEval]. 
+Today, extensions can host parts of their code remotely, and not include it as part of the extension package during the validation process. While this offers flexibility to change code without resubmitting the extension to the store, the code can be exploited after installation. To ensure [Microsoft Edge Add-ons][EdgeAddons] lists validated extensions, we're disallowing extensions from using remotely hosted code. This change makes extensions more secure. Developers will need to package and submit all code that's used by the extension for validation. Alternatively, developers can use the eval() function in a [sandboxed environment][sandboxingEval]. 
 
 ## Run-time host permissions  
 
@@ -27,8 +27,8 @@ Today content scripts can request access to any origin including origins that ar
 
 ## Web Request API  
 
-We're replacing [Web Request API][WebRequestAPI] with [Declarative Net Request API][DeclarativeNetRequestAPI], but will continue to keep Web Request API's observational capabilities. Except in some specific scenarios where observational capabilities of Web Request API is required by the extension, we recommend using the DNR APIs only. As extensions transition to this change, we believe this change will have positive impact on extensions that use feature-rich declarative capabilities. This change also improves user privacy, which contributes toward enhancing trust amongst extensions in general.
-Enterprises can continue to use the blocking behavior of the Web Request API, which are managed through enterprise policies. For more information about extension policies, navigate to [Microsoft Edge – Policies][MicrosoftEdgePolicies]. 
+We're replacing [Web Request API][WebRequestAPI] with [Declarative Net Request API][DeclarativeNetRequestAPI], but will continue to keep Web Request API's observational capabilities. Except in some specific scenarios where observational capabilities of the Web Request API are required by the extension, we recommend using the DNR APIs only. As extensions transition to this change, we believe this change will have positive impact on extensions that use feature-rich declarative capabilities. This change improves user privacy, which contributes to enhancing trust in the use of extensions.
+Enterprises can continue to use the blocking behavior of the Web Request API, which is managed through enterprise policies. For more information about extension policies, navigate to [Microsoft Edge – Policies][MicrosoftEdgePolicies]. 
 
 ## Background service workers  
  
