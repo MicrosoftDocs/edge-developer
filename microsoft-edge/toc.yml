@@ -400,7 +400,7 @@
               href: extensions-chromium/store-policies/csp.md
             - name: Microsoft Edge developer ADA addendum
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Microsoft Edge addons catalog developer policies
+            - name: Microsoft Edge Add-ons catalog developer policies
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensions for enterprise
           items: 
