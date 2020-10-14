@@ -35,7 +35,7 @@ Thank you to the global developer community for helping improve localization of 
 
 DevTools now support moving tools in DevTools between the top and bottom panels.  View any combination of two tools at the same time.  
 
-For example, to view **Elements** and **Sources** tools at once \(by moving the **Sources** tool to the bottom\).  
+For example, view **Elements** and **Sources** tools at once \(by moving the **Sources** tool to the bottom\).  
 
 :::row:::
    :::column span="":::
@@ -64,7 +64,7 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 <!--TODO  ask Rob (@ropaveza) to clarify  -->  
 
-The experimental **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationv2] schemas.  This experiment now supports the following actions.  
+The experimental **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationV2] schemas.  This experiment now supports the following actions.  
 
 *   Save and export Collections and Environments using a new system.  
 *   Edit and export sets of environment variables within the **Network Console** tool.  
@@ -128,7 +128,7 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 <!--TODO Ask Rachel to verify  -->  
 
-In Microsoft Edge version 87, new **CSS grid tooling** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.  
+In Microsoft Edge version 87, new **CSS grid tooling** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your [CSS grids][DevtoolsCssGrid].  
 
 *   Displays a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
 *   To enable persistent grids, choose the grid icon next to a grid element in the **Elements** pane or choose the grid in the **Layout** pane.  
@@ -384,6 +384,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsConsoleApiTable]: /microsoft-edge/devtools-guide-chromium/console/api#table "table - Console API reference | Microsoft Docs"  
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Inspect CSS Grid | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
@@ -423,7 +424,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [PostmanSchemaJsonCollectionv210Index]: https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html "Postman Collection Format v2.1.0 | Postman"  
 
-[SwaggerSpecificationv2]: https://swagger.io/specification/v2 "OpenAPI Specification | Swagger"  
+[SwaggerSpecificationV2]: https://swagger.io/specification/v2 "OpenAPI Specification | Swagger"  
 
 [WebDevCoopCoep]: https://web.dev/coop-coep "Making your website \"cross-origin isolated\" using COOP and COEP | web.dev"  
 
