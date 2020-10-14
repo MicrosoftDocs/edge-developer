@@ -378,6 +378,8 @@
           items: 
             - name: Port Chromium Extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
+            - name: Migrate your extension from Manifest V2 to V3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: Alternate Methods of Distributing Extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Native messaging
