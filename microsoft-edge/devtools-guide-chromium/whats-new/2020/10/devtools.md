@@ -23,8 +23,6 @@ In Microsoft Edge version 87, several strings and terms are locked and do not ch
 *   The term `service worker`.  
 *   Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.  
 
-<!-- The **Lighthouse** pane was not localized since it is an independent project.  -->  
-
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network pane with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Network** pane with non-localized filters  
 :::image-end:::  
@@ -64,11 +62,12 @@ To review real-time updates on this feature in the Chromium open-source project,
    Experimental feature  
 :::image-end:::  
 
-The experimental **Network Console** tool now supports the following actions.  
+<!--TODO  ask Rob (@ropaveza) to clarify  -->  
+
+The experimental **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationv2] schemas.  This experiment now supports the following actions.  
 
 *   Save and export Collections and Environments using a new system.  
 *   Edit and export sets of environment variables within the **Network Console** tool.  
-*   Improved compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationv2] schemas.  
     
 <!--TODO  The following images are presented for your review, please proved feedback.  -->  
 :::row:::
@@ -116,7 +115,7 @@ The experimental **Network Console** tool now supports the following actions.
    :::column-end:::
 :::row-end:::  
 
-<!--TODO provide the CR is available -->  
+<!--TODO provide the CR when it is available -->  
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #][CR].  
 
 <!--[]:  ""  -->  
@@ -127,14 +126,16 @@ To review real-time updates on this feature in the Chromium open-source project,
    Experimental feature  
 :::image-end:::  
 
-In Microsoft Edge version 87, new CSS grid tooling features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.  
+<!--TODO Ask Rachel to verify  -->  
+
+In Microsoft Edge version 87, new **CSS grid tooling** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.  
 
 *   Displays a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
 *   To enable persistent grids, choose the grid icon next to a grid element in the **Elements** pane or choose the grid in the **Layout** pane.  
 *   You may enable persistent overlays for multiple grids.  
 *   The new **Layout** pane allows you to easily toggle grid overlays and configure the appearance and the content for each.  
 
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout pane with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.pngg":::
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout pane with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **Layout** pane with grids  
 :::image-end:::  
 
@@ -154,13 +155,31 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 ## Introducing the Microsoft Edge Tools for Visual Studio Code extension  
 
-The **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  You are now able to debug the DOM, edit CSS, and inspect network traffic using developer tools without leaving Visual Studio Code.  
+The **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new Microsoft [Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  Use the Microsoft Edge DevTools for the following activities without leaving Visual Studio Code.  
+
+*   Debug the DOM  
+*   Edit CSS  
+*   Inspect network traffic  
 
 With the extension, launch Microsoft Edge, connect to an existing instance of the browser, or use a headless browser directly from your editor.  
+
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in full browser mode screenshot  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in headless mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png":::
+         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in headless mode screenshot  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 To start contributing and filing issues with your feedback, navigate to the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] repo on GitHub.  
 
 <!--TODO  The following images are presented for your review, please proved feedback.  -->  
+<!--  
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png" alt-text="Windows Blog introduction for Elements for Microsoft Edge Visual Studio Code extension" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png":::
@@ -192,21 +211,10 @@ To start contributing and filing issues with your feedback, navigate to the [Mic
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in full browser mode screenshot  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in headless mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in headless mode screenshot  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
       &nbsp;  
    :::column-end:::
 :::row-end:::  
+-->  
 
 ## Announcements from the Chromium project  
 
@@ -216,17 +224,15 @@ To start contributing and filing issues with your feedback, navigate to the [Mic
 
 Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  
 
-To open the WebAuthn tool, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
+To open the **WebAuthn** tool, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
 :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
    **WebAuthn** tool  
 :::image-end:::  
 
-Before the new **WebAuthn** tool was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  
+Before the new **WebAuthn** tool was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the Web Authentication API.  With the new **WebAuthn** tool, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
 
-With the new **WebAuthn** tool, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
-
-For more information about the WebAuthn feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
+For more information about the **WebAuthn** feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1034663][CR1034663].  
 
@@ -234,9 +240,7 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 #### View the Computed sidebar pane in the Styles pane  
 
-Toggle the **Computed sidebar** pane in the **Styles** pane.  
-
-The **Computed sidebar** pane in the **Styles** pane is collapsed by default.  Choose the button to toggle it.  
+Toggle the **Computed sidebar** pane in the **Styles** pane.  The **Computed sidebar** pane in the **Styles** pane is collapsed by default.  Choose the button to toggle it.  
 
 :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
    Computed sidebar pane  
@@ -246,11 +250,7 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 #### Grouping CSS properties in the Computed pane  
 
-Group the CSS properties by categories in the **Computed** pane.  
-
-Use this grouping feature to more easily navigate in the **Computed** pane \(less scrolling\).  You may also selectively focus on a set of related properties for CSS inspection.  
-
-On the **Elements** pane, choose an element.  Toggle the **Group** checkbox to group \(or ungroup\) the CSS properties.  
+Group the CSS properties by categories in the **Computed** pane.  Use this grouping feature to more easily navigate in the **Computed** pane \(less scrolling\).  You may also selectively focus on a set of related properties for CSS inspection.  On the **Elements** pane, choose an element.  Toggle the **Group** checkbox to group \(or ungroup\) the CSS properties.  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Grouping CSS properties" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Grouping CSS properties  
@@ -261,18 +261,6 @@ To review real-time updates on this feature in the Chromium open-source project,
 ### Lighthouse 6.4 in the Lighthouse pane  
 
 The **Lighthouse** pane is now running Lighthouse 6.4.  For more information about Lighthouse release changes, navigate to [release notes][GithubGoogleChromeLighthouseReleasesV641].  
-
-<!--
-:::image type="complex" source="../../media/2020/10/lighthouse.msft.png" alt-text="Lighthouse" lightbox="../../media/2020/10/lighthouse.msft.png":::
-   Lighthouse  
-:::image-end:::  
-
-New audits in Lighthouse 6.4:  
-
-*   **Preload fonts**.  Validates if all fonts that use `font-display: optional` were preloaded.  
-*   **Valid sourcemaps**.  Audits if a page has valid sourcemaps for large, first-party JavaScript.  
-*   **[Experimental] Large JavaScript library**.  Large JavaScript libraries may lead to poor performance.  This audit suggests cheaper alternatives to common, large JavaScript libraries like `moment.js`.  
--->  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #772558][CR772558].  
 
@@ -328,24 +316,11 @@ For more information about how to prevent information leaks and enable COOP and 
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1051466][CR1051466].  
 
-<!--  
-### Deprecation of Settings in the More tools menu  
+### View and fix color contrast issues in the CSS Overview tool  
 
-The `Settings` in the More tools menu is deprecated.  Open the **Settings** from the main tool instead.  
-
-:::image type="complex" source="../../media/2020/10/settings.msft.png" alt-text="Settings in the main tool" lightbox="../../media/2020/10/settings.msft.png":::
-   Settings in the main tool  
+:::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
+   Experimental feature  
 :::image-end:::  
-
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1121312][CR1121312].  
--->  
-
-### Experimental features  
-
-> [!CAUTION]
-> Experimental features are still under development and subject to change.  
-
-#### View and fix color contrast issues in the CSS Overview tool  
 
 > [!NOTE]
 > To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  
