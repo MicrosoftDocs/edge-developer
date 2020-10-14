@@ -312,7 +312,7 @@
           href: devtools-guide/emulation.md
     - name: DevTools Protocol (Chromium)
       href: devtools-protocol-chromium.md
-    - name: DevTools protocol (EdgeHTML)
+    - name: DevTools Protocol (EdgeHTML)
       href: devtools-protocol/index.md
       items: 
         - name: 0.1
