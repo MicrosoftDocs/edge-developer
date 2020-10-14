@@ -1,9 +1,9 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
+description: Getting started guide with WebView2 for Win32 apps
 title: Getting started with WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/14/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Getting started with WebView2 (developer preview)  
 
-The following content walks you through the commonly used functionalities of [WebView2 (developer preview)][Webview2Index] and provides a starting  point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin3209622].  
+The following content walks you through the commonly used functionalities of [WebView2 (developer preview)][Webview2Index] and provides a starting  point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin32].  
 
 ## Prerequisites  
 
@@ -58,8 +58,8 @@ Add the WebView2 SDK into the project.  For the developer preview, you may insta
 1.  Install the WebView2 SDK.  
     1.  Enter `Microsoft.Web.WebView2` in the search bar, select **Microsoft.Web.WebView2** from the results, and select **Install** in the right-hand side window.  Nuget downloads the SDK to your machine.  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Nuget":::
-           Nuget
+        :::image type="complex" source="../media/nuget.png" alt-text="Nuget Package Manager":::
+           Nuget Package Manager
         :::image-end:::  
         
 1.  Add WebView2 header to your project.  
@@ -275,7 +275,7 @@ Many of the WebView2 functionalities that are not covered on this page, the foll
 
 *   For a comprehensive example of WebView2 capabilities, see [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   For a sample application built using WebView2, see [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
-*   For detailed information about the WebView2 API, see [API reference][Webview2ReferenceWin3209622].  
+*   For detailed information about the WebView2 API, see [API reference][Webview2ReferenceWin32].  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
@@ -284,11 +284,11 @@ Many of the WebView2 functionalities that are not covered on this page, the foll
 <!-- links -->  
 
 [Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2ReferenceWin3209622]: ../reference/win32/0-9-622-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"  
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"  
+[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"  
 
