@@ -473,7 +473,7 @@
       href: performance-analysis.md
     - name: Privacy whitepaper
       href: privacy-whitepaper.md
-    - name: Progressive web apps (Chromium)
+    - name: Progressive Web Apps (Chromium)
       href: progressive-web-apps-chromium/index.md
       items:
         - name: Get started with PWAs (Chromium)
