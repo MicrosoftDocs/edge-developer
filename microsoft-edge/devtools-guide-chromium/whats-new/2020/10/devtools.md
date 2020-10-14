@@ -149,6 +149,10 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 You are now able to customize the keyboard shortcut for any action in the DevTools.  Starting in Microsoft Edge version 84, you may choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  In Microsoft Edge version 87, you may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
+:::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Custom shortcut for pausing a script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
+   Custom shortcut for pausing a script  
+:::image-end:::  
+
 To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
