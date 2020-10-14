@@ -1,16 +1,16 @@
 ---
-description: The process of distributing extension by mechanism other than verified stores
-title: Extensions - Supported APIs
+description: List of supported APIs to use when building Microsoft Edge extensions.
+title: Supported APIs for Microsoft Edge extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/09/2020
+ms.date: 10/14/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
 ---
 
 
-# API support
+# Supported APIs for Microsoft Edge extensions
 
 The following is a detailed list of API members that are supported on Edge Chromium browser.
 
