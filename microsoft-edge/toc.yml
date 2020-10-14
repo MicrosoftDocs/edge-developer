@@ -455,7 +455,7 @@
                   href: extensions/guides/packaging/localizing-extension-packages.md
                 - name: Using ManifoldJS to package extensions
                   href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
-                - name: Running the Windows app certification kit
+                - name: Running the Windows App Certification Kit
                   href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
             - name: Porting Chrome extensions
               href: extensions/guides/porting-Chrome-extensions.md
