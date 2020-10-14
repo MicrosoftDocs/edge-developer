@@ -67,6 +67,23 @@ The following is a detailed list of API members that are supported on Edge Chrom
 
 
 
+## Unsupported extension APIs
+
+Microsoft Edge does not support the following Extension APIs:
+
+* chrome.gcm
+* chrome.identity.getAccounts
+* chrome.identity.getAuthToken - The getAuthToken API does not work with Microsoft Edge, however you may use launchWebAuthFlow to fetch an OAuth2 token to authenticate users.
+* chrome.instanceID
+
+
+### Other considerations
+
+* The user must be signed into Microsoft Edge using an MSA or AAD account in order to use the chrome.identity.getProfileUserInfo API. If the user is signed into Microsoft Edge using On-premise AD, the API returns null for the email and ID values.
+
+* Microsoft Edge does not directly support an extension that uses Chrome Web Store payments due to the requirement to use the identity.getAuthtoken request to get the token for signed-in users to send the REST-based licensing API request. 
+
+
 <!-- links -->  
 
 > [!NOTE]
