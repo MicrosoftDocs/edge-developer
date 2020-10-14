@@ -310,7 +310,7 @@
           href: devtools-guide/service-workers.md
         - name: Emulation
           href: devtools-guide/emulation.md
-    - name: DevTools protocol (Chromium)
+    - name: DevTools Protocol (Chromium)
       href: devtools-protocol-chromium.md
     - name: DevTools protocol (EdgeHTML)
       href: devtools-protocol/index.md
