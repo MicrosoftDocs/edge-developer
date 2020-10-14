@@ -366,7 +366,7 @@
           items: 
             - name: Extension architecture
               href: extensions-chromium/getting-started/index.md
-            - name: Create an extension tutorial part 1
+            - name: Create an extension tutorial (part 1)
               href: extensions-chromium/getting-started/part1-simple-extension.md
             - name: Create an extension tutorial part 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
