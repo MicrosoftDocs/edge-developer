@@ -1,6 +1,6 @@
 ---
-description: Learn how to migrate your extension from Manifest V2 to V3
-title: Migrate extensions from Manifest V2 to V3
+description: Learn about updating your extension from Manifest V2 to V3
+title: Prepare to update your extensions from Manifest V2 to V3
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/13/2020
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, edge extensions, browser extensions, addons, developer, manifest v3, migrate to manifest v3
 ---
 
-# Migrate extensions from Manifest v2 to v3 
+# Prepare to update your extensions from Manifest v2 to v3 
 
 This document lists important changes that's being implemented as part of Manifest v3, which is the next version of the Chromium Extensions platform. We'll update this document as the implementation progresses. For detailed guidance on migrating your extension to Manifest v3, navigate to [Migrating to Manifest V3][Google_Migrate_to_MV3]. 
 
@@ -27,8 +27,8 @@ Today content scripts can request access to any origin including origins that ar
 
 ## Web Request API  
 
-We're replacing [Web Request API][WebRequestAPI] with [Declarative Net Request API][DeclarativeNetRequestAPI], but will continue to keep Web Request API's observational capabilities. Except in some specific scenarios where observational capabilities of the Web Request API are required by the extension, we recommend using the DNR APIs only. As extensions transition to this change, we believe this change will have positive impact on extensions that use feature-rich declarative capabilities. This change improves user privacy, which contributes to enhancing trust in the use of extensions.
-Enterprises can continue to use the blocking behavior of the Web Request API, which is managed through enterprise policies. For more information about extension policies, navigate to [Microsoft Edge – Policies][MicrosoftEdgePolicies]. 
+We're replacing [Web Request API][WebRequestAPI] with [Declarative Net Request API][DeclarativeNetRequestAPI], but will continue to keep Web Request API's observational capabilities. Except in some specific scenarios where observational capabilities of the Web Request API are required by the extension, we recommend using the DNR APIs only. We believe this change will have positive impact on extensions that use feature-rich declarative capabilities. As more extensions transition to the DNR APIs, this change will improve user privacy, which contributes to enhancing trust in the use of extensions.
+Enterprises can continue to use the blocking behavior of the Web Request API for extensions managed through enterprise policies. For more information about extension policies, navigate to [Microsoft Edge – Policies][MicrosoftEdgePolicies]. 
 
 ## Background service workers  
  
