@@ -1,48 +1,57 @@
 ---
-description: Reference documentation for you to migrate your extension from Manifest V2 to V3
-title: Migrate your extension from Manifest V2 to V3
+description: Learn how to migrate your extension from Manifest V2 to V3
+title: Migrate extensions from Manifest V2 to V3
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, edge extensions, browser extensions, addons, developer, manifest v3, migrate to manifest v3
 ---
 
-# Migrate your extension from Manifest v2 to v3 
+# Migrate extensions from Manifest v2 to v3 
 
-This document lists the key changes being implemented as part of Manifest v3 – the next version of the Chromium Extensions platform. We will update this document as the implementation work progresses. For detailed guidance on migrating your extension to Manifest v3, see [Migrating to Manifest V3][Google_Migrate_to_MV3]. 
+This document lists important changes that's being implemented as part of Manifest v3, which is the next version of the Chromium Extensions platform. We'll update this document as the implementation progresses. For detailed guidance on migrating your extension to Manifest v3, navigate to [Migrating to Manifest V3][Google_Migrate_to_MV3]. 
 
-## Key Changes
+## Remotely hosted code  
 
-The following list describes the key changes and Microsoft’s point of view. 
+Today, extensions can host parts of their code remotely, and not include it as part of the extension package during the validation process. While this offers flexibility for developers to change parts of their code without needing to re-submit the extension, the code can be exploited to change execution after installation. As part of our overall efforts to offer validated extensions through [Microsoft Edge Add-ons][EdgeAddons], we'll disallow extensions from using remotely hosted code. This change makes extensions more secure. Because of this change, developers will be required to package all code required by the extension at the time of submission, or use the eval() function in a [sandboxed environment][sandboxingEval]. 
 
-**Remotely hosted code**: Extensions today can host parts of their code remotely & not include it as part of the package during submission. While this offers flexibility to developers to dynamically update parts of their code without republishing extensions for every change, this potentially can be exploited to change execution after installation which cannot be validated. As part of our overall efforts to offer verified extensions through [Microsoft Edge Add-ons][EdgeAddons], we will disallow extensions from using remotely hosted code, thus making extensions more secure. As a result of this change, developers will be required to package all code required by extension at time of submission or use eval() function in a [sandboxed environment][sandboxingEval]. 
+## Run-time host permissions  
 
-**Run-time host permissions** : Allowing blanket permissions to access all sites and content, at the time of installation, allows extensions to operate with minimum intervention. However, this poses a risk to user privacy and security. We are bringing more transparency by giving control to users to decide whether to allow an extension on a website at runtime. 
-Cross-origin request in content scripts: Today content scripts can request access to any origin including to those that are not allowed by the website. This breaks cross-origin principles. We will require content scripts to have the same permissions as the page they are injected into, closing a potential security loophole. If a cross-origin requests need to be performed, they would be required to be done through background scripts which will relay the response back to content scripts. These changes are already available and behind a flag. Additional guidance is available in this [document][CORS]. 
+At installation time, extensions may request blanket permissions to access all sites and content. These permissions allow extensions to operate with minimum intervention, and create a risk to user privacy and security. To improve transparency, we're providing controls for users to allow or restrict access to websites at runtime. 
 
-**Web Request API**: We will replace [Web Request API][WebRequestAPI] with [Declarative Net Request API][DeclarativeNetRequestAPI] but continue to retain Web Request API's observational capabilities. Except very specific scenarios where observational capabilities of Web Request API will be required to offer extension's functionality; we encourage developers to use only DNR APIs. As more extensions transition, we believe this will have a positive impact towards building feature rich declarative capabilities as well as improve user privacy which will contribute towards enhancing trust in the extension ecosystem.
-Enterprises can continue to use the blocking behaviour of Web Request API for extensions managed through enterprise policies. For more information about extension policies refer to the [Microsoft Edge – Policies][MicrosoftEdgePolicies]. 
+## Cross-origin requests in content scripts  
 
-**Background service workers**: Service workers are available for testing in Canary. To migrate your extensions from background pages to service workers refer to [Migrating from Background Pages to Service Workers][ServiceWorkers]. We are evaluating & investigating the impact that this change brings to both developers as well as users. We will follow up with additional details on this. 
+Today content scripts can request access to any origin including origins that aren't allowed by the website. This behavior breaks cross-origin principles. Going forward, we'll require content scripts to have the same permissions as the page they're injected into, closing a potential security loophole. To perform cross-origin requests, you'll need to use background scripts to relay responses back to content scripts. These changes are available and behind a flag. For more information, navigate to this [document][CORS]. 
+
+## Web Request API  
+
+We're replacing [Web Request API][WebRequestAPI] with [Declarative Net Request API][DeclarativeNetRequestAPI], but will continue to keep Web Request API's observational capabilities. Except in some specific scenarios where observational capabilities of Web Request API is required by the extension, we recommend using the DNR APIs only. As extensions transition to this change, we believe this change will have positive impact on extensions that use feature-rich declarative capabilities. This change also improves user privacy, which contributes toward enhancing trust amongst extensions in general.
+Enterprises can continue to use the blocking behavior of the Web Request API, which are managed through enterprise policies. For more information about extension policies, navigate to [Microsoft Edge – Policies][MicrosoftEdgePolicies]. 
+
+## Background service workers  
+ 
+Service workers are available for testing in Canary. To migrate your extensions from background pages to service workers, refer to [Migrating from Background Pages to Service Workers][ServiceWorkers]. We're evaluating & investigating the impact that this change brings to both developers and users. We'll add  additional details on this change to this document in the future. 
 
 ## When will these changes be available in Microsoft Edge?
 
-The current declarative net request API implementation is available in our stable and beta channels for developers to test and provide feedback. We will be contributing to development efforts as well as investigating further changes. 
+The current declarative net request API implementation is available in our Stable and Beta channels. Developers can test these changes, and provide feedback. We'll contribute to development efforts and investigate further changes. 
 
-|Edge 84 Stable |DNR API is available for testing |
+| Channel name | Description |
 |:--- |:--- |  
-|Edge 85 Beta |	Header modification support is available| 
+| Microsoft Edge 84 Stable | DNR API is available for testing |  
+| Microsoft Edge 85 Beta | Header modification support is available| 
 
-Once the changes are finalized in Chromium, we will post our timelines & provide sufficient time for developers to make the necessary changes to their extension & publish to our store. 
-Please continue to visit our blog for updates & provide your feedback through [TechCommunity][TechCommunity].
+When the changes are made to Chromium, we'll share timelines so that developers can update their code and republish extensions to the store. 
+
+We'll continue publishing updates on our blog. You can provide your feedback on these changes through [TechCommunity][TechCommunity].
 
 <!-- links -->  
 
 [EdgeAddons]: https://microsoftedge.microsoft.com/addons/ "Microsoft Edge Add-ons"  
 [MicrosoftBlog]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/  
-[MicrosoftEdgePolicies]: https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensions 
+[MicrosoftEdgePolicies]: https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensions 
 
 [TechCommunity]: https://microsoftedge.microsoft.com/addons/ "Tech Community"  
 
