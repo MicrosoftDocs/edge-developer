@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/07/2020
+ms.date: 10/14/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
