@@ -1332,7 +1332,7 @@
     },
     {
       "source_path": "microsoft-edge/webview2/reference/win32/0-9-488/icorewebview2acceleratorkeypressedeventargs.md",
-      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs",
+      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs?view=webview2-0.9.488",
       "redirect_document_id": false
     },
     {
@@ -1652,7 +1652,7 @@
     },
     {
       "source_path": "microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2controller.md",
-      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2controller",
+      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-0.9.538",
       "redirect_document_id": false
     },
     {
@@ -1922,7 +1922,7 @@
     },
     {
       "source_path": "microsoft-edge/webview2/reference/win32/0-9-622/icorewebview2.md",
-      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2",
+      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.622",
       "redirect_document_id": false
     },
     {
