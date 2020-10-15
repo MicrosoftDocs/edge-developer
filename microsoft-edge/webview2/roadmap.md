@@ -19,7 +19,7 @@ The WebView2 control allows developers to embed web technologies in their native
 > [!NOTE]
 > WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback, so please note that the plans outlined here are not exhaustive and are subject to change.  
 
-If you have concerns or questions about the Roadmap, please leave feedback in the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain].  
+If you have concerns or questions about the Roadmap, provide your feedback in the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain].  
 
 The WebView2 team is planning the following major efforts for future updates.  
 
@@ -52,7 +52,7 @@ The WebView2 team is planning the following major efforts for future updates.
 
 ## WebView2 Runtime and Installer  
 
-[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  
+[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).  
 
 ## Fixed version  
 
