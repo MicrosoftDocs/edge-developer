@@ -61,7 +61,7 @@ If you have an online-only deployment scenario where end users are assumed to ha
 
 *   During your app creation, check if the Runtime is already installed by either:  
     *   Inspecting if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or  
-    *   Run the WebView2 API [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin3209622Webview2IdlGetavailablecorewebview2browserversionstring] and check whether the `versionInfo` is `NULL`.  
+    *   Run the WebView2 API [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and check whether the `versionInfo` is `NULL`.  
 *   If the Runtime isn't installed, use the link to programmatically download the bootstrapper.  
 *   Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install.  
     
@@ -81,7 +81,7 @@ If you have an offline deployment scenario where app deployment has to work enti
 *   Include the installer in your app installer or updater.  
 *   During your app creation, check if the Runtime is already installed by either:  
     *   Inspecting if regkey `pv (REG_SZ)` exists under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\ClientState\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}`, or  
-    *   Calling WebView2 API [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin3209622Webview2IdlGetavailablecorewebview2browserversionstring] and check whether the `versionInfo` is `NULL`.  
+    *   Calling WebView2 API [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and check whether the `versionInfo` is `NULL`.  
 *   If the Runtime isn't installed, invoke the standalone installer from an elevated process or command prompt with `MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install` for silent install.  
     
 ### Stay compatible in Evergreen mode
@@ -123,7 +123,7 @@ To use the Fixed Version mode,
 
 [ReferenceWin3209622Webview2Idl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals | Microsoft Docs"  
 [ReferenceWin3209622Webview2IdlCreatecorewebview2environmentwithoptions]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
-[ReferenceWin3209622Webview2IdlGetavailablecorewebview2browserversionstring]: ../reference/win32/0-9-622/webview2-idl.md#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
+[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
 
 [ReferenceWinforms09515MicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: ../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md#ensurecorewebview2async "EnsureCoreWebView2Async - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
 
