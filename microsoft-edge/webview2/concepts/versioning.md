@@ -12,34 +12,37 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Understand WebView2 SDK versions  
 
-WebView2 depends on Microsoft Edge to function.  Each WebView2 SDK requires that a minimum browser version is installed.  The minimum version is reflected in the package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install Microsoft Edge with a build number of 488 or later.  The browser version is also specified in the WebView2 [Release Notes][Releasenotes].  For more information about the latest release of the Microsoft Edge browser, navigate to [Browser Channels][DeployedgeChannels].  
+To develop a WebView2 application, a minimum version of [WebView2 Runtime]() or a [non-stable Microsoft Edge channel]() must be installed.  The minimum version is reflected in the package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install [WebView2 Runtime]() or a [non-stable Microsoft Edge channel]() with a build number of 488 or later.  The browser version is also specified in the WebView2 [Release Notes][Releasenotes].  For more information about the latest release of the Microsoft Edge browser, navigate to [Browser Channels][DeployedgeChannels].    
 
-> [!NOTE]
-> WebView2 is currently in preview.  While the WebView team strives to ensure backward compatibility between browser versions and SDKs, it is not guaranteed because newer versions of the browser may not support previous SDK versions.  If there are breaking changes between browser versions and SDKs, the changes are specified in the [Release Notes][Releasenotes].  
+New versions of the WebView2 SDK are shipped at the same cadence as the Microsoft Edge (Chromium) browser, which is approximately every 6 weeks. When a new SDK is shipped, it is compatible with the latest version of Microsoft Edge. Therefore, the WebView2 team recommends developing against the Microsoft Edge canary channel or the WebView2 Runtime. 
 
-In the future, the WebView team plans to change the distribution model for WebView2 apps.  For more information, navigate to [Evergreen distribution mode][DistributionEvergreenMode].  
+> [!IMPORTANT]
+> When developing WebView2 applications, regularly test your application against the latest versions of the WebView2 SDK. Because the web platform is constantly evolving, regular testing is the best way to ensure your application is performing as intended.
 
 ## Release and prerelease package  
 
-In preview, the release package contains the following.  
+The WebView2 Nuget package contains both a release and pre-release package.
 
-*   [Win32 C/C++ APIs][ReferenceWin32]: APIs in the SDK that are expected to remain the same at GA.  
+The release package contains the following.  
 
-In preview, the prerelease package contains the following components.  
+*   [Win32 C/C++ APIs][ReferenceWin32]: APIs in the SDK that are supported and forward compatible.  
+
+The prerelease package contains the following components.  
 
 *   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
 *   Experimental APIs.  For more information, see the [Experimental APIs](#experimental-apis) section.  
 
+
 ## Experimental APIs  
 
-The WebView team is testing experimental APIs that may represent future functionality.  The experimental APIs are marked as `experimental` in the SDK.  Experimental APIs may ship as fully stable APIs in the release package.  You should expect all experimental APIs to change before release.  Please evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
+The WebView team is testing experimental APIs that may represent future functionality.  The experimental APIs are marked as `experimental` in the SDK.  Experimental APIs may ship as fully stable APIs in the release package. Please evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
 
 > [!CAUTION]
 > Avoid using the experimental APIs in production apps.  
 
 ## Matching WebView2 Runtime versions  
 
-When writing a WebView2 app using a particular SDK version, the users fo you app may run your it with various compatible versions of the WebView2 Runtime.  In the future, a newer compatible WebView2 Runtime version contains all the non-experimental APIs from an older compatible WebView2 Runtime version plus additional new non-experimental APIs.  
+When writing a WebView2 app using a particular SDK version, the users of you app may run your it with various compatible versions of the WebView2 Runtime.  In the future, a newer compatible WebView2 Runtime version contains all the non-experimental APIs from an older compatible WebView2 Runtime version plus additional new non-experimental APIs.  
 
 *   **Win32 C/C++** developers, when using `QueryInterface` to obtain a new interface, should check for a return value of `E_NOINTERFACE`, which may indicate that the WebView2 Runtime is older and does not support that particular interface.  
 *   **.NET and WinUI** developers should check for a `No such interface supported` exception when using methods, properties, and events added in later SDKs which may occur when the WebView2 Runtime is older and does not support those particular APIs.  
@@ -50,7 +53,7 @@ Experimental APIs may be introduced, modified, and removed from SDK to SDK.  Whe
 
 ## Roadmap  
 
-After WebView2 reaches a stable general available state, the release package contains all of the stable, supported Win32 C/C++ and .NET APIs.  The prerelease package contains experimental APIs that are subject to change based upon your feedback and shared insights.  
+The release package contains all of the stable, supported Win32 C/C++ and .NET APIs.  The prerelease package contains experimental APIs that are subject to change based upon your feedback and shared insights.  
 
 <!--## Versioning  
 
