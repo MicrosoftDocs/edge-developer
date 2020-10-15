@@ -3,7 +3,7 @@ description: Learn how to use JavaScript in complex scenarios in WebView2 apps
 title: Use JavaScript in WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/12/2020
+ms.date: 10/14/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
