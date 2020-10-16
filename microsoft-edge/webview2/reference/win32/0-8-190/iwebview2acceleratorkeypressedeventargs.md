@@ -17,4 +17,4 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 > Update your bookmarks with the new location.  
 > [https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/iwebview2acceleratorkeypressedeventargs][Webview2ReferenceIwebview2acceleratorkeypressedeventargs].  
 
-[Webview2ReferenceIwebview2acceleratorkeypressedeventargs]: /microsoft-edge/webview2/reference/win32/iwebview2acceleratorkeypressedeventargs "interface IWebView2AcceleratorKeyPressedEventArgs | Microsoft Docs"
+[Webview2ReferenceIwebview2acceleratorkeypressedeventargs]: /microsoft-edge/webview2/reference/win32/iwebview2acceleratorkeypressedeventargs "interface IWebView2AcceleratorKeyPressedEventArgs | Microsoft Docs"  
