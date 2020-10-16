@@ -20,6 +20,50 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > [!IMPORTANT]
 > While WebView2 is a preview, the .NET APIs are in the `prerelease package`.  
 
+## 1.0.627-prerelease  
+
+Release Date: Oct 19, 2020  
+
+[NuGet package][NuGetGallery1.0.672-prerelease] \| minimum Microsoft Edge version 88.0.672.0.
+
+#### General
+
+*    Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies]. Navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2] for best practice.
+*    Added [NavigateWithWebResourceRequest][ReferenceWin3210672Icorewebview2experimentalNavigateWithWebResourceRequest] method that lets you provide post data or additional request headers during navigation.
+*    Added [DOMContentLoaded][ReferenceWin3210672Icorewebview2experimentalAddDomcontentloaded] event that fires when the initial html document has been parsed.
+*    Added [Environment][ReferenceWin3210672Icorewebview2experimentalGetEnvironment] property on WebView2 to expose the WebView2 environment used to create such WebView2.
+*    Added [cookie management][ReferenceWin3210672Icorewebview2experimentalGetCookiemanager] APIs that allows end developers to authenticating the WebView session, or retrieving cookies from WebView to authenticate other tools. We are planning to make language/framework specific improvements; please navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2] for more information.
+*    Updated [WebResourceResponseReceived][ReferenceWin3210672Icorewebview2experimentalAddWebresourceresponsereceived] event including adding immutable [WebResourceResponseView][ReferenceWin3210672Icorewebview2experimentalwebresourceresponseview] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin3209628Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent] becoming [WebResourceResponseView::GetContent][ReferenceWin3210672Icorewebview2experimentalwebresourceresponseviewGetcontent].
+*    Disabled [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.
+* Added [SystemCursorId](link to ICoreWebView2Controller.SystemCursorId) for Visual Hosting.
+* Bug fixes for IME issues in Visual Hosting.
+
+#### .NET  
+
+* Updated ICoreWebView2 to expose environment variable. 
+* Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to be subclasses of `System.EventArgs` or `System.CancelEventArgs`. \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\).  
+* Added support for CoreWebView2CreationProperties in WinForms.
+* Added .NET WebResourceRequested APIs.  \([\#219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
+* Updated WinForms Designer Source property to default/reset to null. \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
+* Updated WebView2 bounds in WebView2.Init() to support non-100% DPI modes.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
+* Updated BuildWindowCore and DestroyWindowCore to be more robust.  \([\#382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
+* Updated .NET Loader base to load on process bit instead of OS arch. \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
+* Added CreationProperties support to WinForms?? \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\).  
+ 
+## 1.0.622  
+
+Release Date: Oct 19, 2020  
+
+[NuGet package][NuGetGallery0.9.622.11] \| minimum WebView2 Runtime version 86.0.622.11.  
+
+#### General  
+
+*   > [!IMPORTANT]
+    > **Announcement**: GA!!
+
+* [Evergreen WebView2 Runtime and installer](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#understanding-the-webview2-runtim) reach GA. Bootstrapepr, downlink link for the Bootstraper, and Standalone Installer for the Evergreen Runtime are available [here](https://developer.microsoft.com/microsoft-edge/webview2/). Sample code for the installation workflow is also available in [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps). 
+* [Fixed Version mode](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#fixed-version-distribution-mode) is available for developer preview.
+
 ## 0.9.628-prerelease  
 
 Release Date: Sept 10, 2020  
@@ -268,6 +312,7 @@ Initial developer preview release.
 [ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
+[Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  
@@ -319,6 +364,7 @@ Initial developer preview release.
 [ReferenceWin3209488Icorewebview2AddNewwindowrequested]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.488&preserve-view=true#add_newwindowrequested "add_NewWindowRequested - interface ICoreWebView2 | Microsoft Docs"  
 [ReferenceWin3209488Icorewebview2environmentGetBrowserversionstring]: /microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-0.9.488&preserve-view=true#get_browserversionstring " | Microsoft Docs"  
 [ReferenceWin3209488Icorewebview2environmentoptions]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions?view=webview2-0.9.488&preserve-view=true "interface ICoreWebView2EnvironmentOptions | Microsoft Docs"  
+[ReferenceWin3209488Icorewebview2experimentalcompositioncontroller]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCompositionController | Microsoft Docs"
 [ReferenceWin3209488Icorewebview2experimentalcompositioncontroller]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller?view=webview2-0.9.488-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCompositionController | Microsoft Docs"  
 [ReferenceWin3209488Icorewebview2experimentalcursorchangedeventhandler]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcursorchangedeventhandler?view=webview2-0.9.488-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCursorChangedEventHandler | Microsoft Docs"  
 [ReferenceWin3209488Icorewebview2experimentalpointerinfo]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalpointerinfo?view=webview2-0.9.488-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalPointerInfo | Microsoft Docs"  
@@ -328,6 +374,7 @@ Initial developer preview release.
 [ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithdetails]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithdetails "CreateCoreWebView2EnvironmentWithDetails - Globals | Microsoft Docs"  
 [ReferenceWin3209488Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 [ReferenceWin3209488Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.488&preserve-view=true#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
+
 
 [ReferenceDotnetReference]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"  
 [ReferenceWpfReference]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"  
@@ -358,8 +405,20 @@ Initial developer preview release.
 [ReferenceWin3209622Icorewebview2newwindowrequestedeventargsGetWindowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs?view=webview2-0.9.622&preserve-view=true#get_windowfeatures "get_WindowFeatures - interface ICoreWebView2NewWindowRequestedEventArgs | Microsoft Docs"  
 [ReferenceWin3209622Icorewebview2windowfeatures]: /microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures?view=webview2-0.9.622&preserve-view=true "interface ICoreWebView2WindowFeatures | Microsoft Docs"  
 [ReferenceWin3209622IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.9.622&preserve-view=true#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Edge"  
+[ReferenceWin3209628Icorewebview2experimentalenvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment?view=webview2-0.9.628-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment | Microsoft Docs"  
+[ReferenceWin3209628Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponsereceivedeventargs?view=webview2-0.9.628-prerelease&preserve-view=true#populateresponsecontent "PopulateResponseContent - interface ICoreWebView2ExperimentalWebResourceResponseReceivedEventArgs | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalAddDomcontentloaded]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.672-prerelease&preserve-view=true#add_domcontentloaded "add_DOMContentLoaded - interface ICoreWebView2Experimental | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalGetCookiemanager]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.672-prerelease&preserve-view=true#get_cookiemanager "get_CookieManager - interface ICoreWebView2Experimental | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalGetEnvironment]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.672-prerelease&preserve-view=true#get_environment "get_Environment - interface ICoreWebView2Experimental | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalNavigateWithWebResourceRequest]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.672-prerelease&preserve-view=true#navigatewithwebresourcerequest "NavigateWithWebResourceRequest - interface ICoreWebView2Experimental | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalAddWebresourceresponsereceived]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental?view=webview2-1.0.672-prerelease&preserve-view=true#add_webresourceresponsereceived "add_WebResourceResponseReceived - interface ICoreWebView2Experimental | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalwebresourceresponseview]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.672-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalWebResourceResponseView | Microsoft Docs"  
+[ReferenceWin3210672Icorewebview2experimentalwebresourceresponseviewGetcontent]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.672-prerelease&preserve-view=true#getcontent "GetContent - interface ICoreWebView2ExperimentalWebResourceResponseView | Microsoft Docs"  
 
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Policies | Microsoft Docs"  
+[DeployedgeMicrosoftEdgeWebviewPolicies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2 - Policies | Microsoft Docs"  
+
+[WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Microsoft Defender Application Guard (Windows 10) - Windows security | Microsoft Docs"
 
 [DotnetStandardAssemblyStrongNamed]: /dotnet/standard/assembly/strong-named "Strong-named assemblies | Microsoft Docs"  
 
@@ -386,14 +445,24 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue119]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/119 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 119"
 [GithubMicrosoftedgeWebviewfeedbackIssue131]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/131 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 131"
 [GithubMicrosoftedgeWebviewfeedbackIssue148]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/148 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 148"  
+[GithubMicrosoftedgeWebviewfeedbackIssue177]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/177 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 177"
 [GithubMicrosoftedgeWebviewfeedbackIssue179]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/179 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 179"
 [GithubMicrosoftedgeWebviewfeedbackIssue181]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/181 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 181"
 [GithubMicrosoftedgeWebviewfeedbackIssue183]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/183 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 183"
 [GithubMicrosoftedgeWebviewfeedbackIssue185]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/185 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 185"
+[GithubMicrosoftedgeWebviewfeedbackIssue204]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/204 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 204"
+[GithubMicrosoftedgeWebviewfeedbackIssue219]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/219 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 219"
 [GithubMicrosoftedgeWebviewfeedbackIssue228]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/228 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 228"
 [GithubMicrosoftedgeWebviewfeedbackIssue235]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/235 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 235"
+[GithubMicrosoftedgeWebviewfeedbackIssue250]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/250 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 250"
 [GithubMicrosoftedgeWebviewfeedbackIssue293]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/293 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 293"
 [GithubMicrosoftedgeWebviewfeedbackIssue318]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/318 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 318"  
+[GithubMicrosoftedgeWebviewfeedbackIssue382]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/382 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 382"  
+[GithubMicrosoftedgeWebviewfeedbackIssue431]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/431 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 431"  
+[GithubMicrosoftedgeWebviewfeedbackIssue432]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/432 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 432"  
+
+
+[GithubMicrosoftedgeWebview2AnnouncementIssue2]:  https://github.com/MicrosoftEdge/WebView2Announcement/issues/2 "Announcement repo for MicrosoftEdge/WebViewAnnouncement Issue 2"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesPr17]: https://github.com/MicrosoftEdge/WebView2Samples/pull/17 "Move project to use latest WebView2 SDK 0.9.430 - MicrosoftEdge/WebView2Samples | GitHub"  
@@ -413,3 +482,4 @@ Initial developer preview release.
 [NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.579"
 [NuGetGallery0.9.622.11]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.622.11"
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.628 prerelease"  
+[NuGetGallery1.0.672-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.672-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.672 prerelease"  
