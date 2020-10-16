@@ -1,5 +1,5 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+description: 0.9.430 - WebView2 Win32 C++ ICoreWebView2FocusChangedEventHandler
 title: 0.9.430 - WebView2 Win32 C++ ICoreWebView2FocusChangedEventHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel

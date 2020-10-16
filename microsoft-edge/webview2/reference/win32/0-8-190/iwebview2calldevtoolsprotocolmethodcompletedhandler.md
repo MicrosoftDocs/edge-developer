@@ -1,5 +1,5 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView2 control
+description: 0.8.355 - WebView2 Win32 C++ IWebView2CallDevToolsProtocolMethodCompletedHandler
 title: 0.8.355 - WebView2 Win32 C++ IWebView2CallDevToolsProtocolMethodCompletedHandler
 author: MSEdgeTeam
 ms.author: msedgedevrel

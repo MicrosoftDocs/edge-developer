@@ -1,5 +1,5 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
+description: 0.9.430 - WebView2 Win32 C++ Reference
 title: 0.9.430 - WebView2 Win32 C++ Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel

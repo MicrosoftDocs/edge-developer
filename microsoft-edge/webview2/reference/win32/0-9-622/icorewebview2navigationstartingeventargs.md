@@ -1,5 +1,5 @@
 ---
-description: Embed web technologies (HTML, CSS, and JavaScript) in your native applications with the Microsoft Edge WebView2 control
+description: WebView2 Win32 C++ ICoreWebView2NavigationStartingEventArgs
 title: WebView2 Win32 C++ ICoreWebView2NavigationStartingEventArgs
 author: MSEdgeTeam
 ms.author: msedgedevrel
