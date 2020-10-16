@@ -10,69 +10,56 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
 
-# How to statically link the WebView2 loader library  
+# Statically link the WebView2 loader library  
 
-## Context  
-What is the WebView2Loader.dll?  
+You may want to distribute your application with a single executable file, instead of a package of many files. To create a single executable file, or to reduce the size of your package, you should statically link the WebView2Loader files. The WebView2 SDK contains a header file, `WebView2Loader.dll`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime, or non-stable channels of Microsoft Edge, on the device.  
 
-*   The WebView2 SDK contains a header file, `WebView2Loader.dll.`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime (or non-stable Microsoft Edge channels) on the device.  
-
-Some applications want a single executable, not a package of many files. For creating single executable applications, or simply reducing packaging, the WebView2Loader files can be statically linked.
-
-For apps that do not want to ship a `WebView2Loader.dll`, complete the following **Procedure** steps.  
-
-## Procedure  
+For apps that don't want to ship a `WebView2Loader.dll`, complete the following steps.  
 
 1.  Open the `.vcxproj` project file for your app in a text editor, such as Visual Studio Code.  
     
     > [!NOTE]
-    > The `.vcproj` project file may be a hidden file, meaning it does not display in Visual Studio.  Use the command-line to find a hidden file.  
+    > The `.vcproj` project file may be a hidden file, meaning it does not display in Visual Studio.  Use the command-line to find hidden files.  
     
 1.  Locate the section in the code where you include the WebView2 NuGet package target files.  The location in the code is highlighted in the following figure.  
-    
-    :::image type="complex" source="./media/inserthere.png" alt-text="Project Files code snippet" lightbox="./media/inserthere.png"::: 
-       Project Files code snippet  
-    :::image-end:::  
-    
-1.  Copy the following code snippet and paste it everywhere the `Microsoft.Web.WebView2.targets` is included.  
 
-    > [!NOTE]
-    > For example, include it after the following code block.  
-    > 
-    > ```xaml
-    > <Import Project="..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.0.9.579-prerelease\build\native\Microsoft.Web.WebView2.targets')" />
-    > ```  
-    
+    :::image type="complex" source="./media/inserthere.png" alt-text="Project Files code snippet" lightbox="./media/inserthere.png":::
+       Project Files code snippet   
+    :::image-end:::  
+  
+1.  Copy the following code snippet and paste it where the `Microsoft.Web.WebView2.targets` is included.  
+
     ```xaml
-    <PropertyGroup> <WebView2LoaderPreference>Static</WebView2LoaderPreference> </PropertyGroup>
+    <PropertyGroup> 
+        <WebView2LoaderPreference>Static</WebView2LoaderPreference> 
+    </PropertyGroup>
     ```
-    
-    :::image type="complex" source="./media/staticlib.png" alt-text="Inserted code snippet" lightbox="./media/staticlib.png"::: 
+      
+    :::image type="complex" source="./media/staticlib.png" alt-text="Inserted code snippet" lightbox="./media/staticlib.png":::
        Inserted code snippet  
     :::image-end:::  
     
-1.  Edit the additional dependencies of the build configuration for your app.  To begin, find all of the `<AdditionalDependencies>` tags.  
-1.  Add `version.lib` as an additional dependency to every different build configuration in the `.vcxproj` file for your app.  
+1.  Edit the additional dependencies of the build configuration for your app.  To begin, find all of the `<AdditionalDependencies>` tags. For each, add `version.lib` as an additional dependency to every different build configuration in the `.vcxproj` file.  
     
-    :::image type="complex" source="./media/versionlib.png" alt-text="Adding version.lib to ItemDefinitionGroups" lightbox="./media/versionlib.png"::: 
+    :::image type="complex" source="./media/versionlib.png" alt-text="Adding version.lib to ItemDefinitionGroups" lightbox="./media/versionlib.png":::
        Adding `version.lib` to `ItemDefinitionGroups`  
     :::image-end:::  
     
     > [!NOTE]
-    > The WebView2 team aims to automate the additional dependency step in future releases.  
+    > The WebView2 team aims to automate adding the additional dependency in future releases.  
     
 1. Compile and run your app.
 
-## See also  
+### Getting in touch with the WebView2 team  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+### See also  
 
 *   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samples] on GitHub.
 *   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
-
-## Getting in touch with the WebView2 team  
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
