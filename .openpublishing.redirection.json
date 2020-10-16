@@ -1,10 +1,20 @@
 {
-  "redirections": [
+"redirections": [
     {
       "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
       "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
       "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-edge/visual-studio-code/elements-for-edge.md",
+      "redirect_url": "microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension.md",
+      "redirect_document_id": false
+    },
+
+    - name: Microsoft Edge Devtools extension
+    href: visual-studio-code/microsoft-edge-devtools.md
+  - name: Elements for Edge
+    href: visual-studio-code/elements-for-edge.md
     {
       "source_path": "microsoft-edge/extensions-chromium/publish/upload-video.md",
       "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
