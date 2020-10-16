@@ -15,7 +15,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 To develop a WebView2 application, you must install either the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) or a [non-stable Microsoft Edge channel](https://www.microsoftedgeinsider.com/en-us/download).  The minimum version is reflected in the NuGet package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install either the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) or a [non-stable Microsoft Edge channel](https://www.microsoftedgeinsider.com/en-us/download) with a build number of 488 or later.  The minimum version required is also specified in the WebView2 [Release Notes][Releasenotes]. New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge (Chromium) browser, which is approximately every 6 weeks.  
 
 > [!IMPORTANT]
-> When developing WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers. Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.
+> When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers. Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.
 
 ## Release and prerelease package  
 
@@ -25,10 +25,10 @@ The release package is forward compatible and contains the following.
 
 *   [Win32 C/C++ APIs][ReferenceWin32]: APIs in the SDK that are fully supported.  
 
-The prerelease package contains the following components.  
+The prerelease package is a superset of the release package with the additional components listed below.  
 
-*   `.NET APIs`: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
-*   `Win32 C/C++` and `.NET Experimental APIs`.  For more information, see the [Experimental APIs](#experimental-apis) section.  
+*   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
+*   Experimental APIs:  For more information, see the [Experimental APIs](#experimental-apis) section.  
 
 
 ## Experimental APIs  
