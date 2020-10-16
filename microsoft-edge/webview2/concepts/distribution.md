@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 # Distribution of apps using WebView2  
 
-When distributing your WebView2 app, make sure the backing web platform - the [WebView2 Runtime](#understanding-the-webview2-runtime) is present before the app starts.  This article describes how you can install the WebView2 Runtime, and use the two distribution modes for your WebView2 app:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).  
+When distributing your WebView2 app, make sure the backing web platform - the [WebView2 Runtime][Webview2Installer] is present before the app starts.  This article describes how you can install the WebView2 Runtime, and use the two distribution modes for your WebView2 app:  [Evergreen](#evergreen-distribution-mode) and [Fixed Version](#fixed-version-distribution-mode).  
 
 ## Evergreen distribution mode  
 
@@ -102,7 +102,7 @@ If you have an offline deployment scenario where app deployment has to work enti
 
 Web is constantly evolving. The Evergreen WebView2 Runtime stays up to date to provide you with the latest features and security fixes.  To ensure your app stays compatible with the web, we recommend you set up some testing infrastructure.
 
-Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into what is coming next into WebView2 Runtime.  Just like developing websites for Microsoft Edge, we recommend that you test your WebView2 app regularly.  Test your WebView2 app against one of the non-stable channels, and update your app to adjust or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise. Typically Dev and Betas are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variable to indicate the channel preference for your testing app.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209622Webview2IdlCreatecorewebview2environmentwithoptions].  You may also use [WebDriver][HowtoWebdriver] to automate WebView2 testing.
+Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into what is coming next into WebView2 Runtime.  Just like developing websites for Microsoft Edge, we recommend that you test your WebView2 app regularly.  Test your WebView2 app against one of the non-stable channels, and update your app to adjust or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise. Typically Dev and Betas are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variable to indicate the channel preference for your testing app.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  You may also use [WebDriver][HowtoWebdriver] to automate WebView2 testing.
 
 ## Fixed Version distribution mode  
 
@@ -118,14 +118,14 @@ To use the Fixed Version mode,
 *   [Download][Webview2Installer] the Fixed Version package, and decompress the package.  
 *   Include the decompressed Fixed Version binaries in your project.  
 *   Indicate the path to the Fixed Version binaries when creating the WebView2 environment.  
-    *   For Win32 C/C++, you may create the environment using the [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin3209622Webview2IdlCreatecorewebview2environmentwithoptions] function.  Use the `browserExecutableFolder` parameter to indicate the path to the Fixed Version binaries.  
+    *   For Win32 C/C++, you may create the environment using the [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions] function.  Use the `browserExecutableFolder` parameter to indicate the path to the Fixed Version binaries.  
     *   For .NET, you may do either of the below to specify the environment.  
         
         > [!NOTE]
         > You must be specify the environment before the WebView2 `Source` property is set to take effect.  
         
-        *   Set the `CreationProperties` \([WPF][ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2Creationproperties]\) property on the WebView2 element.  Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` \([WPF][ReferenceWpf09515MicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsCorewebview2creationpropertiesCorewebview2creationproperties]\) class to indicate the path to the Fixed Version binaries.  
-        *   Use `EnsureCoreWebView2Async` \([WPF][ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinforms09515MicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.  
+        *   Set the `CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2Creationproperties]\) property on the WebView2 element.  Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsCorewebview2creationpropertiesCorewebview2creationproperties]\) class to indicate the path to the Fixed Version binaries.  
+        *   Use `EnsureCoreWebView2Async` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.  
 *   Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.  
     
 <!-- links -->  
@@ -134,23 +134,23 @@ To use the Fixed Version mode,
 
 [HowtoWebdriver]: ../howto/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"  
 
-[ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: ../reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md#createasync "CreateAsync - 0.9.579 - Microsoft.Web.WebView2.Core.CoreWebView2Environment class | Microsoft Docs"  
+[ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "CreateAsync - Microsoft.Web.WebView2.Core.CoreWebView2Environment class | Microsoft Docs"  
 
-[ReferenceWin3209622Webview2Idl]: ../reference/win32/0-9-622/webview2-idl.md  "Globals | Microsoft Docs"  
-[ReferenceWin3209622Webview2IdlCreatecorewebview2environmentwithoptions]: ../reference/win32/0-9-622/webview2-idl.md#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
-[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
+[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 
-[ReferenceWinforms09515MicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: ../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md#ensurecorewebview2async "EnsureCoreWebView2Async - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
+[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
 
-[ReferenceWpf09515MicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-corewebview2creationproperties.md#corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties class | Microsoft Docs"  
+[ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
+
+[ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "EnsureCoreWebView2Async - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
+
+[ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties class | Microsoft Docs"  
 
 [ReferenceWinFormsMicrosoftWebWebview2WinFormsCorewebview2creationpropertiesCorewebview2creationproperties]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.WinForms.CoreWebView2CreationProperties class | Microsoft Docs"  
 
-[ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Creationproperties]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#creationproperties "CreationProperties - Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
+[ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties "CreationProperties - Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
 
 [ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2Creationproperties]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.winforms.webview2.creationproperties "CreationProperties - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
-
-[ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async "EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
 
 [DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  
 
