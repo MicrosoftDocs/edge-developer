@@ -47,7 +47,7 @@ The Evergreen WebView2 Runtime is planned to ship inbox in future releases of Wi
 
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  There are a number of tools available on the [WebView2 Runtime download page][Webview2Installer].  The following tools help you deploy the Evergreen Runtime.  
 
-*   WebView2 Runtime Bootstrapper is a tiny \(approximately 2 MB\) installer.  WebView2 Runtime Bootstrapper installer downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.  
+*   WebView2 Runtime Bootstrapper is a tiny \(approximately 2 MB\) installer.  WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.  
 *   Link to download the Bootstrapper is a link for you to programmatically download the bootstrapper.  
 *   WebView2 Runtime Standalone Installer is a full installer that can install the Evergreen WebView2 Runtime in offline environments.  
     
@@ -124,7 +124,7 @@ To use the Fixed Version mode,
         > [!NOTE]
         > You must be specify the environment before the WebView2 `Source` property is set to take effect.  
         
-        *   Set the [CreationProperties][ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Creationproperties] property on the WPF WebView2 element.  Use the `BrowserExecutableFolder` member in the [CoreWebView2CreationProperties][ReferenceWpf09515MicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties] class to indicate the path to the Fixed Version binaries.  Equivalent functionality is planned for WinForms soon.  
+        *   Set the `CreationProperties` \([WPF][ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2Creationproperties]\) property on the WebView2 element.  Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` \([WPF][ReferenceWpf09515MicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsCorewebview2creationpropertiesCorewebview2creationproperties]\) class to indicate the path to the Fixed Version binaries.  
         *   Use `EnsureCoreWebView2Async` \([WPF][ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinforms09515MicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnet09538MicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.  
 *   Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.  
     
@@ -143,7 +143,13 @@ To use the Fixed Version mode,
 [ReferenceWinforms09515MicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: ../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md#ensurecorewebview2async "EnsureCoreWebView2Async - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
 
 [ReferenceWpf09515MicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-corewebview2creationproperties.md#corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties class | Microsoft Docs"  
+
+[ReferenceWinFormsMicrosoftWebWebview2WinFormsCorewebview2creationpropertiesCorewebview2creationproperties]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.WinForms.CoreWebView2CreationProperties class | Microsoft Docs"  
+
 [ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Creationproperties]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#creationproperties "CreationProperties - Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
+
+[ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2Creationproperties]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.winforms.webview2.creationproperties "CreationProperties - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
+
 [ReferenceWpf09515MicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: ../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async "EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
 
 [DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  
