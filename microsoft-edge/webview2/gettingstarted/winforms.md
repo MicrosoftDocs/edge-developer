@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for WinForms apps
 title: Getting started with WebView2 for WinForms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -298,7 +298,7 @@ Congratulations, you built your first WebView2 app!
 ## Next steps 
 
 * Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
-* Checkout [API reference](/dotnet/api/microsoft.web.webview2.winformswebview2) for more detailed information about our APIs
+* Checkout [API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2) for more detailed information about our APIs
 * Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
 
 
