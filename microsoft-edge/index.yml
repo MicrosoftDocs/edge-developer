@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 09/08/2020
+  ms.date: 10/14/2020
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -135,52 +135,20 @@ additionalContent:
       # summary: # < 160 chars (optional)
       items:
         # Card
-        - title: Getting Started with DevTools
+        - title: DevTools
           links:
-            - text: DevTools Overview
+            - text: DevTools overview
               url: /microsoft-edge/devtools-guide-chromium
-            - text: What's New
-              url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools
+            - text: DevTools for beginners
+              url: /microsoft-edge/devtools-guide-chromium/beginners/html
+            - text: Keyboard shortcuts
+              url: /microsoft-edge/devtools-guide-chromium/shortcuts
+            - text: Command menu
+              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
             - text: Open DevTools
               url: /microsoft-edge/devtools-guide-chromium/open
-            - text: DevTools for Beginners
-              url: /microsoft-edge/devtools-guide-chromium/beginners/html
             - text: CSS
               url: /microsoft-edge/devtools-guide-chromium/css/index
-            - text: Guides
-              url: /microsoft-edge/devtools-guide-chromium/css/print-preview
-            - text: Resources
-              url: /microsoft-edge/devtools-guide-chromium/resources/index
-        # Card
-        - title: Individual Tool Guides
-          links:
-            - text: Console
-              url: /microsoft-edge/devtools-guide-chromium/console/index
-            - text: Network
-              url: /microsoft-edge/devtools-guide-chromium/network/index
-            - text: Storage
-              url: /microsoft-edge/devtools-guide-chromium/storage/cookies
-            - text: Command Menu
-              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
-            - text: JavaScript
-              url: /microsoft-edge/devtools-guide-chromium/javascript/index
-            - text: Performance
-              url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
-            - text: Remote Debugging
-              url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
-            - text: Security
-              url: /microsoft-edge/devtools-guide-chromium/security/index
-        # Card
-        - title: Customize DevTools
-          links:
-            - text: Overview
-              url: /microsoft-edge/devtools-guide-chromium/customize/index
-            - text: Dark Theme
-              url: /microsoft-edge/devtools-guide-chromium/customize/dark-theme
-            - text: Workspaces
-              url: /microsoft-edge/devtools-guide-chromium/workspaces/index
-            - text: Keyboard Shortcuts
-              url: /microsoft-edge/devtools-guide-chromium/shortcuts
         # Card
         - title: Test & Automation
           links:

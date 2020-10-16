@@ -49,7 +49,7 @@
         "extensions-chromium/**.md": "extensions",
         "hosting/chakra-hosting/**.md": "chakra",
         "hosting/webview/**.md": "webview",
-        "hosting/webview2/**.md": "webview2",
+        "webview2/**.md": "webview2",
         "progressive-web-apps-edgehtml/**.md": "pwa",
         "progressive-web-apps-chromium/**.md": "pwa",
         "windows-runtime/**.md": "windows-integration"
