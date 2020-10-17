@@ -3,7 +3,7 @@ description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Co
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/13/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,16 +22,20 @@ In Microsoft Edge version 87, several strings and terms are locked and do not ch
 *   The strings in the **Lighthouse** tool.  
 *   The term `service worker`.  
 *   Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.  
-
+*   The correct console placeholder \([$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]\) on localized version of the DevTools.  
+    
+    > [!NOTE]
+    > Fixed a bug that prevented the correct console placeholder \([$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]\) from displaying for some users on localized versions of the DevTools.  
+    
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network pane with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Network** pane with non-localized filters  
 :::image-end:::  
 
-For example, a placeholder was replaced for `$0`, since the placeholder is important for the **Console** and as a special character used for localization.  
-
 Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  
 
-### Move tools between top and bottom tool  
+To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1136655][CR1136655].  
+
+## Move tools between top and bottom panel  
 
 DevTools now support moving tools in DevTools between the top and bottom panels.  View any combination of two tools at the same time.  
 
@@ -115,12 +119,9 @@ The experimental **Network Console** tool improves compatibility with the [Postm
    :::column-end:::
 :::row-end:::  
 
-<!--TODO provide the CR when it is available -->  
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #][CR].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1093687][CR1093687].  
 
-<!--[]:  ""  -->  
-
-## Grid tooling v2  
+## Improved CSS Grid tooling  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
    Experimental feature  
@@ -128,17 +129,17 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 <!--TODO Ask Rachel to verify  -->  
 
-In Microsoft Edge version 87, new **CSS grid tooling** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your [CSS grids][DevtoolsCssGrid].  
+In Microsoft Edge version 87, the new **CSS grid debugging** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your [CSS grids][DevtoolsCssGrid].  
 
-*   Displays a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
-*   To enable persistent grids, choose the grid icon next to a grid element in the **Elements** pane or choose the grid in the **Layout** pane.  
+*   Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
+*   To enable persistent grid overlays, choose the grid icon next to a grid container element in the **Elements** pane or choose the grid in the **Layout** pane.  
 *   You may enable persistent overlays for multiple grids.  
 *   The new **Layout** pane allows you to easily toggle grid overlays and configure the appearance and the content for each.  
-
-:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout pane with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
-   **Layout** pane with grids  
-:::image-end:::  
-
+    
+    :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout pane with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+       **Layout** pane with grids  
+    :::image-end:::  
+    
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1047356][CR1047356].  
 
 ## Customize keyboard shortcuts in Settings  
@@ -182,58 +183,24 @@ With the extension, launch Microsoft Edge, connect to an existing instance of th
 
 To start contributing and filing issues with your feedback, navigate to the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] repo on GitHub.  
 
-<!--TODO  The following images are presented for your review, please proved feedback.  -->  
-<!--  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png" alt-text="Windows Blog introduction for Elements for Microsoft Edge Visual Studio Code extension" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-01.msft.png":::
-         Windows Blog introduction for **Elements for Microsoft Edge Visual Studio Code** extension  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-02.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-02.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension screenshot  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-03.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension Why embed developer tools in an editor" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-03.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Why embed developer tools in an editor  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-04.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-04.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Read this next  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-05.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - New headless and full-browser modes" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-05.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - New headless and full-browser modes  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
-
 ## Announcements from the Chromium project  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
 ### New WebAuthn tool  
 
-Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  To open the **WebAuthn** tool, choose the **Settings and more** \(`...`\) icon > **More tools** > **WebAuthn**.  
+Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
 :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
    **WebAuthn** tool  
 :::image-end:::  
 
-Before the new **WebAuthn** tool was added, there was no native WebAuthn debugging support on Microsoft Edge.  You needed physical authenticators to test your web application with the [Web Authentication API][GithubW3cWebauthn].  With the new **WebAuthn** tool, emulate the authenticators, customize the capabilities, and inspect the states, without the use of any physical authenticators.  This feature simplifies the debugging experience.  
+In earlier versions of Microsoft Edge, there was no native WebAuthn debugging support.  You needed physical authenticators to test your web application with the [Web Authentication API][GithubW3cWebauthn].  With the new **WebAuthn** tool, you are able to do the following actions without the use of any physical authenticators.  
 
+*   Emulate authenticators  
+*   Customize attributes of authenticators  
+*   Inspect states of authenticators  
+    
 For more information about the **WebAuthn** feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1034663][CR1034663].  
@@ -242,17 +209,17 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 #### View the Computed sidebar pane in the Styles pane  
 
-Toggle the **Computed sidebar** pane in the **Styles** pane.  The **Computed sidebar** pane in the **Styles** pane is collapsed by default.  Choose the button to toggle it.  
+Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To toggle it, choose the button.  
 
 :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
-   Computed sidebar pane  
+   **Computed sidebar** pane  
 :::image-end:::  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1073899][CR1073899].  
 
 #### Grouping CSS properties in the Computed pane  
 
-Group the CSS properties by categories in the **Computed** pane.  Use this grouping feature to more easily navigate in the **Computed** pane \(less scrolling\).  You may also selectively focus on a set of related properties for CSS inspection.  On the **Elements** pane, choose an element.  Toggle the **Group** checkbox to group \(or ungroup\) the CSS properties.  
+To more easily view your applied CSS \(less scrolling\), group the CSS properties by categories in the **Computed** pane.  You may also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, choose an element.  To group \(or ungroup\) the CSS properties, toggle the **Group** checkbox.  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Grouping CSS properties" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Grouping CSS properties  
@@ -262,13 +229,13 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 ### Lighthouse 6.4 in the Lighthouse pane  
 
-The **Lighthouse** pane is now running Lighthouse 6.4.  For more information about Lighthouse release changes, navigate to [release notes][GithubGoogleChromeLighthouseReleasesV641].  
+The **Lighthouse** pane is now running Lighthouse 6.4.  For a full list of changes, navigate to the [Lighthouse release notes][GithubGoogleChromeLighthouseReleasesV641].  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #772558][CR772558].  
 
 ### performance.mark() events in the Timings section  
 
-The **Timings section** of a Performance recording now marks `performance.mark()` events.
+The **Timings section** of a recording in the [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] tool now marks `performance.mark()` events.  
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark events" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` events  
@@ -294,14 +261,14 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 View the Cross-Origin Embedder Policy \(COEP\)  and Cross-Origin Opener Policy \(COOP\) `reporting to` endpoint under the **Security & Isolation** section.  
 
+The [Reporting API][MdnReportingApi] defines, `Report-To`, a new HTTP header. The `Report-To` header specifies the server endpoints for warnings and errors.  The browser uses the specified endpoints as the targets for warning and errors.  
+
 The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a way to specify server endpoints for the browser to which to send warnings and errors.  
 
 <!--TODO replace with edge demo -->  
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    reporting to endpoint  
 :::image-end:::  
-
-For more information about how to enable COEP and COOP and make your website "cross-origin isolated", navigate to [Making your website "cross-origin isolated" using COOP and COEP][WebDevCoopCoep].  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1051466][CR1051466].  
 
@@ -314,8 +281,6 @@ DevTools now display `report-only` label for COEP and COOP that are set to `repo
    report-only label  
 :::image-end:::  
 
-For more information about how to prevent information leaks and enable COOP and COEP in your website, navigate to [Prevent Info leaks and enable powerful features: COOP and COEP][YoutubeXlnjyhja-0c] on YouTube.  
-
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1051466][CR1051466].  
 
 ### View and fix color contrast issues in the CSS Overview tool  
@@ -324,43 +289,20 @@ To review real-time updates on this feature in the Chromium open-source project,
    Experimental feature  
 :::image-end:::  
 
-> [!NOTE]
-> To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  
+The **CSS Overview** tool now displays a list of elements on your page that have color contrast issues.  The following demo page has an example of a color contrast issue.  
 
-**CSS Overview** tool now displays a list of low color contrast texts of your page.  
+[CSS Overview Accessible Colors Demo][GlitchCssOverviewAccessibleColorsDemo]  
 
-In this example, the following demo page has a low color contrast issue.  
-
-[Accessible color suggestion][JecFyiDemoAccessibleColorMulti]  
-
-Choose the issue, view a list of elements that have the issue.  
+To view a list of elements that have a color contrast issue, under **Contrast issues**, choose **Text**.  To open the element in **Elements** tool, choose an element in the list.  To help you fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Low color contrast issues" lightbox="../../media/2020/10/css-overview.msft.png":::
    Low color contrast issues  
 :::image-end:::  
 
-Choose an element in the list to open the element in **Elements** tool.  DevTools [provides auto color suggestion](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane) to help you fix the low contrast text.  
+> [!NOTE]
+> To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1120316][CR1120316].  
-
-<!--
-#### Customize keyboard shortcuts in DevTools  
-
-> [!NOTE]
-> To enable this experiment, check the **Enable keyboard shortcut editor** checkbox under **Settings** > **Experiments**.  
-
-Customize the keyboard shortcuts for your favorite commands in DevTools.  
-
-To customize the keyboard shortcut, choose **Settings** > **Shortcuts**, hover on a command and choose the **Edit** button \(pen icon\).  
-
-:::image type="complex" source="../../media/2020/10/keyboard-shortcut.msft.png" alt-text="Customize keyboard shortcuts" lightbox="../../media/2020/10/keyboard-shortcut.msft.png":::
-   Customize keyboard shortcuts  
-:::image-end:::  
-
-To reset all shortcuts, choose **Restore default shortcuts**.  
-
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
--->  
 
 ## Download the Microsoft Edge preview channels  
 
@@ -374,9 +316,12 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Deprecation of the Properties pane in the Elements tool - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
+[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Accessible color suggestion in the Styles pane - What's New In DevTools (Microsoft Edge 86) | Microsoft Docs"  
 
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities#recently-selected-element-or-javascript-object "Recently Selected Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumEvaluatePerformanceReference]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference "Performance analysis reference | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: /microsoft-edge/devtools-guide-chromium/experimental-features#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  
@@ -408,13 +353,17 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"  
 [CR1073899]: https://crbug.com/1073899 "Computed style tab disappears in responsive mode | Chromium bugs"  
 [CR1075732]: https://crbug.com/1075732 "DevTools personalization - Movable tabs | Chromium bugs"  
-[CR1084673]: https://crbug.com/1084673 "DevTools: improve the way we present CSS custom properties ((aka). CSS variables) and their values"  
+[CR1084673]: https://crbug.com/1084673 "DevTools: improve the way we present CSS custom properties ((aka). CSS variables) and their values | Chromium bugs"  
+[CR1093687]: https://crbug.com/1093687 "Create tool for creating and replaying synthetic network requests | Chromium bugs"  
 [CR1096230]: https://crbug.com/1096230 "Group CSS properties by categories in Computed Styles pane | Chromium bugs"  
 [CR1104188]: https://crbug.com/1104188 "Network tool search does not find results when searching for full URL | Chromium bugs"  
 [CR1106251]: https://crbug.com/1106251 "☂ DevTools: improve Computed Styles tab | Chromium bugs"  
 [CR1120316]: https://crbug.com/1120316 "Highlight bad contrast under CSS Overview > Colors | Chromium Bugs"  
 [CR1121141]: https://crbug.com/1121141 "Allow filtering by resource type in network log | Chromium bugs"  
 [CR1121312]: https://crbug.com/1121312 "Settings should be removed from More Tools menu | Chromium bugs"  
+[CR1136655]: https://crbug.com/1136655 "Devtools: Localization V2 | Chromium bugs"  
+
+[MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "Reporting API | MDN"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
@@ -422,15 +371,11 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication | GitHub"  
 
-[JecFyiDemoAccessibleColorMulti]: https://jec.fyi/demo/accessible-color-multi "Accessible color suggestion"  
+[GlitchCssOverviewAccessibleColorsDemo]: https://css-overview-accessible-colors-demo.glitch.me "Hello! | Glitch"  
 
 [PostmanSchemaJsonCollectionv210Index]: https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html "Postman Collection Format v2.1.0 | Postman"  
 
 [SwaggerSpecificationV2]: https://swagger.io/specification/v2 "OpenAPI Specification | Swagger"  
-
-[WebDevCoopCoep]: https://web.dev/coop-coep "Making your website \"cross-origin isolated\" using COOP and COEP | web.dev"  
-
-[YoutubeXlnjyhja-0c]: https://youtu.be/XLNJYhjA-0c "Prevent Info leaks and enable powerful features: COOP and COEP | YouTube"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
