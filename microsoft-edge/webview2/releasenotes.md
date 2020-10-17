@@ -28,27 +28,27 @@ Release Date: Oct 19, 2020
 
 #### General
 
-*    Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies]. Navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2] for best practice.
+*    Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies]. For more information on best practices, navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].
 *    Added [NavigateWithWebResourceRequest][ReferenceWin3210672Icorewebview2experimentalNavigateWithWebResourceRequest] method that lets you provide post data or additional request headers during navigation.
-*    Added [DOMContentLoaded][ReferenceWin3210672Icorewebview2experimentalAddDomcontentloaded] event that fires when the initial html document has been parsed.
-*    Added [Environment][ReferenceWin3210672Icorewebview2experimentalGetEnvironment] property on WebView2 to expose the WebView2 environment used to create such WebView2.
-*    Added [cookie management][ReferenceWin3210672Icorewebview2experimentalGetCookiemanager] APIs that allows end developers to authenticating the WebView session, or retrieving cookies from WebView to authenticate other tools. We are planning to make language/framework specific improvements; please navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2] for more information.
-*    Updated [WebResourceResponseReceived][ReferenceWin3210672Icorewebview2experimentalAddWebresourceresponsereceived] event including adding immutable [WebResourceResponseView][ReferenceWin3210672Icorewebview2experimentalwebresourceresponseview] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin3209628Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent] becoming [WebResourceResponseView::GetContent][ReferenceWin3210672Icorewebview2experimentalwebresourceresponseviewGetcontent].
-*    Disabled [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.
+*    Added [DOMContentLoaded][ReferenceWin3210672Icorewebview2experimentalAddDomcontentloaded] event that runs when the initial HTML document is parsed.
+*    Added the [Environment][ReferenceWin3210672Icorewebview2experimentalGetEnvironment] property on WebView2. This property exposes the WebView2 environment where an instance of WebView2 was created.
+*    Added [cookie management][ReferenceWin3210672Icorewebview2experimentalGetCookiemanager] APIs that allow developers to authenticate the WebView2 session, or retrieve cookies from WebView to authenticate other tools. We're planning to make language/framework specific improvements. For more information, navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2].
+*    Updated the [WebResourceResponseReceived][ReferenceWin3210672Icorewebview2experimentalAddWebresourceresponsereceived] event, and added immutable [WebResourceResponseView][ReferenceWin3210672Icorewebview2experimentalwebresourceresponseview] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin3209628Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent] to become [WebResourceResponseView::GetContent][ReferenceWin3210672Icorewebview2experimentalwebresourceresponseviewGetcontent].
+*    Turned off [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.
 * Added [SystemCursorId](link to ICoreWebView2Controller.SystemCursorId) for Visual Hosting.
 * Bug fixes for IME issues in Visual Hosting.
 
 #### .NET  
 
-* Updated ICoreWebView2 to expose environment variable. 
+* Updated ICoreWebView2 to expose environment variables. 
 * Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to be subclasses of `System.EventArgs` or `System.CancelEventArgs`. \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\).  
 * Added support for CoreWebView2CreationProperties in WinForms.
 * Added .NET WebResourceRequested APIs.  \([\#219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
-* Updated WinForms Designer Source property to default/reset to null. \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
-* Updated WebView2 bounds in WebView2.Init() to support non-100% DPI modes.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
+* Updated WinForms Designer Source property to default or reset to null. \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
+* Updated WebView2 bounds in WebView2.Init() to support DPI modes that are less than 100%.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
 * Updated BuildWindowCore and DestroyWindowCore to be more robust.  \([\#382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
-* Updated .NET Loader base to load on process bit instead of OS arch. \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
-* Added CreationProperties support to WinForms?? \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\).  
+* Updated .NET Loader base to load on process bit instead of operating system architecture. \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
+* Added CreationProperties support to WinForms \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\).  
  
 ## 1.0.622  
 
@@ -58,10 +58,10 @@ Release Date: Oct 19, 2020
 
 #### General  
 
-*   > [!IMPORTANT]
-    > **Announcement**: GA!!
+> [!IMPORTANT]
+> **Announcement**: This release is now Generally Available (GA).
 
-* [Evergreen WebView2 Runtime and installer](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#understanding-the-webview2-runtim) reach GA. Bootstrapepr, downlink link for the Bootstraper, and Standalone Installer for the Evergreen Runtime are available [here](https://developer.microsoft.com/microsoft-edge/webview2/). Sample code for the installation workflow is also available in [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps). 
+* [Evergreen WebView2 Runtime and installer](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#understanding-the-webview2-runtim) is GA. Bootstrapper, downlink link for the Bootstrapper, and Standalone Installer for the Evergreen Runtime are available [here](https://developer.microsoft.com/microsoft-edge/webview2/). Sample code for the installation workflow is also available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps). 
 * [Fixed Version mode](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#fixed-version-distribution-mode) is available for developer preview.
 
 ## 0.9.628-prerelease  
@@ -231,7 +231,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   Hid ZoomView UI for WebView \([#95][GithubMicrosoftedgeWebviewfeedbackIssue95]\).  
 *   Added [SetBoundsAndZoomFactor][ReferenceWin3209430Icorewebview2hostSetboundsandzoomfactor].  Now, you may set the zoom factor and bounds of a WebView at the same time.  
 *   Added [WindowCloseRequested][ReferenceWin3209430Icorewebview2AddWindowcloserequested] event.  For more information, navigate to [add_WindowCloseRequested][ReferenceWin3209430Icorewebview2AddWindowcloserequested] \([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
-*   Added support for the `beforeunload` dialog type for javascript dialog events and added [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin3209430Icorewebview2CoreWebview2ScriptDialogKind] enum entry.  
+*   Added support for the `beforeunload` dialog type for JavaScript dialog events and added [CORE_WEBVIEW2_SCRIPT_DIALOG_KIND_BEFOREUNLOAD][ReferenceWin3209430Icorewebview2CoreWebview2ScriptDialogKind] enum entry.  
 *   Added [GetHeaders][ReferenceWin3209430Icorewebview2httprequestheadersGetheaders] to HttpRequestHeaders, [GetHeader][ReferenceWin3209430Icorewebview2httpresponseheadersGetheader] to HttpResponseHeaders, and [get_HasCurrentHeader][ReferenceWin3209430Icorewebview2httpheaderscollectioniteratorGetHascurrentheader] property to HttpHeadersCollectionIterator.  
 *   > [!IMPORTANT]
     > **Breaking Change**:  Modified `DevToolsProtocolEventReceived` behavior.  Now, you may create a [DevToolsProtocolEventReceiver][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiver] for a particular DevTools Protocol event and subscribe/unsubscribe to such event using [add_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverAddDevtoolsprotocoleventreceived]/[remove_DevToolsProtocolEventReceived][ReferenceWin3209430Icorewebview2devtoolsprotocoleventreceiverRemoveDevtoolsprotocoleventreceived].
