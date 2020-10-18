@@ -36,11 +36,12 @@ Release Date: Oct 19, 2020
 *   Updated the [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived10674] event, and added immutable [WebResourceResponseView][ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent09628] to become [WebResourceResponseView::GetContent][ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674].
 *   Turned off [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.
 *   Added [SystemCursorId][ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674] for Visual Hosting.
-*   Bug fixes for IME issues in Visual Hosting.
-
+*   Input Method Header is now supported in visual hosting.
+*   Developers no longer have to include version.lib when using WebView2 static lib
+ 
 #### .NET  
 
-*   Updated [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] class to expose environment variables. 
+*   Updated [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] class to expose CoreWebView2Environment variables.  
 *   Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to be subclasses of [System.EventArgs][DotnetApiSystemEventargs] or [System.ComponentModel.CancelEventArgs][DotnetApiSystemComponentmodelCancelEventargs]. \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
 *   Added support for [CoreWebView2CreationProperties][DotnetApiMicrosoftWebWebview2WinformsCorewebview2creationproperties] in WinForms. \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\)
 *   Added .NET [WebResourceRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested] APIs.  \([\#219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
