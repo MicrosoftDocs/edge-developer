@@ -28,15 +28,14 @@ Release Date: Oct 19, 2020
 
 #### General
 
-*   Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies]. For more information on best practices, navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].
 *   Added [NavigateWithWebResourceRequest][ReferenceWin32Icorewebview2experimentalNavigatewithwebresourcerequest10674] method that lets you provide post data or additional request headers during navigation.
-*   Added [DOMContentLoaded][ReferenceWin32Icorewebview2experimentalAddDomcontentloaded10674] event that runs when the initial HTML document is parsed.
+*   Added [DOMContentLoaded][ReferenceWin32Icorewebview2experimentalAddDomcontentloaded10674] event that runs when the initial HTML document is loaded and parsed.
 *   Added the [Environment][ReferenceWin32Icorewebview2experimentalGetEnvironment10674] property on WebView2. This property exposes the WebView2 environment where an instance of WebView2 was created.
 *   Added [cookie management][ReferenceWin32Icorewebview2experimentalGetCookiemanager10674] APIs that allow developers to authenticate the WebView2 session, or retrieve cookies from WebView to authenticate other tools. We're planning to make language/framework specific improvements. For more information, navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2].
 *   Updated the [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived10674] event, and added immutable [WebResourceResponseView][ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent09628] to become [WebResourceResponseView::GetContent][ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674].
 *   Turned off [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.
 *   Added [SystemCursorId][ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674] for Visual Hosting.
-*   Input Method Header is now supported in visual hosting.
+*   Added bug fixed for Input Method in Visual Hosting.
 *   Developers no longer have to include version.lib when using WebView2 static lib
  
 #### .NET  
@@ -59,7 +58,7 @@ Release Date: Oct 19, 2020
 #### General  
 
 > [!IMPORTANT]
-> **Announcement**: This release is now Generally Available (GA).
+> **Announcement**: Win32 C/C++ WebView2 is now Generally Available (GA). Starting with this release, Release SDKs will be forward-compatible. See [GA announcement blog post](https://aka.ms/wv2gablogpost) for more details.
 
 * [Evergreen WebView2 Runtime and installer][Webview2ConceptsDistributionUnderstandRuntimeInstaller] is GA. Bootstrapper, downlink link for the Bootstrapper, and Standalone Installer for the Evergreen Runtime are available [here](https://developer.microsoft.com/microsoft-edge/webview2/). Sample code for the installation workflow is also available in the [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain]. 
 * [Fixed Version mode][Webview2ConceptsDistributionFixedVersionMode] is available for developer preview.
@@ -313,7 +312,6 @@ Initial developer preview release.
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionFixedVersionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer - Distribution of applications using WebView2 | Microsoft Docs"  
-[Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  
