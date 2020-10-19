@@ -37,7 +37,8 @@ Release Date: Oct 19, 2020
 *   Added [SystemCursorId][ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674] for Visual Hosting.
 *   Added bug fixed for Input Method in Visual Hosting.
 *   Developers no longer have to include version.lib when using WebView2 static library.
- 
+
+
 #### .NET  
 
 *   Updated [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] class to expose the CoreWebView2Environment variable.  
@@ -48,6 +49,7 @@ Release Date: Oct 19, 2020
 *   Updated WebView2 bounds in WebView2.Init() to support DPI modes that are less than 100%.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
 *   Updated [BuildWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore] and [DestroyWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore] to be more robust.  \([\#382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
 *   Updated .NET Loader base to load on process bit instead of operating system architecture. \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
+*   Renamed EdgeNotFoundExpection to [WebView2RuntimeNotFoundException][WebView2RuntimeNotFoundException].
  
 ## 1.0.622.22  
 
@@ -379,6 +381,7 @@ Initial developer preview release.
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"  
 
+[WebView2RuntimeNotFoundException]: /dotnet/api/microsoft.web.webview2.core.webview2runtimenotfoundexception "CoreWebView2.WebView2RuntimeNotFound (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2]: /dotnet/api/microsoft.web.webview2.core.corewebview2 "CoreWebView2 Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2environment]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment "CoreWebView2Environment Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions "CoreWebView2Environment.CompareBrowserVersions(String, String) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"
@@ -392,6 +395,7 @@ Initial developer preview release.
 
 [DotnetApiMicrosoftWebWebview2WinformsCorewebview2creationproperties]: /dotnet/api/microsoft.web.webview2.winforms.corewebview2creationproperties "CoreWebView2CreationProperties Class (Microsoft.Web.WebView2.Winforms) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Source]: /dotnet/api/microsoft.web.webview2.winforms.webview2.source "Webview2.Source Class (Microsoft.Web.WebView2.Winforms) | Microsoft Docs"  
+
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.buildwindowcore "WebView2.BuildWindowCore(HandleRef) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore]: /dotnet/api/microsoft.web.webview2.wpf.webview2.destroywindowcore "WebView2.DestroyWindowCore(HandleRef) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
