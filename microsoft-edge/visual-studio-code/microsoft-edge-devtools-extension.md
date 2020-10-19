@@ -15,9 +15,10 @@ With the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplac
 
 By default, the extension will launch a browser instance in an own window and give you the "Elements" functionality of the browser.
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools for Visual Studio Code running with a full browser window" lightbox="./media/edge-devtools-for-vscode-windowed.png" ":::
+:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools for Visual Studio Code running with a full browser window" lightbox="./media/edge-devtools-for-vscode-windowed.png":::
    Microsoft Edge DevTools for Visual Studio Code running with a full browser window  
 :::image-end:::
+
 
 In the extension settings you can enable more functionality like "Headless Mode" and "Network".
 
