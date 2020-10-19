@@ -27,7 +27,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.  
 
 1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
        The **Command Menu**  

@@ -46,8 +46,8 @@ The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evalu
 
 This tutorial is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.
 
-1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
-1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **Console Javascript Example** to open in a new window.  
+1.  Press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and click **Console Javascript Example** to open in a new window.  
     
     *   [Console Javascript Example][GlitchConsoleJavascriptExample]  
     

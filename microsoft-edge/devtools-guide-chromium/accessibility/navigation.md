@@ -52,8 +52,8 @@ To get started, see [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a n
 
 ### Navigate by keyboard  
 
-*   With DevTools open, select `Control`+`]` \(Windows\) or `Command`+`]` \(macOS\) to focus the next panel.  
-*   Select `Control`+`[` \(Windows\) or `Command`+`[` \(macOS\) to focus the previous panel.  
+*   With DevTools open, select `Control`+`]` \(Windows, Linux\) or `Command`+`]` \(macOS\) to focus the next panel.  
+*   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) to focus the previous panel.  
 *   It is also possible to use `Shift`+`Tab` to move focus into the [ARIA tablist][W3CWaiAriaTablist] of a panel and use the arrow keys to change panels, though it may be faster to use the previously mentioned shortcuts.  
 
 **Known issues**  
@@ -65,7 +65,7 @@ To get started, see [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a n
 
 To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:  
 
-1.  With DevTools open, select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  With DevTools open, select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     The **Command Menu** is a fuzzy search autocomplete combobox.  
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
@@ -102,7 +102,7 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 *   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.  
 *   Select `Tab` to move between attribute values.  When you hear "space" you are inside of an empty text input and are able to type a new attribute value.  
-*   Select `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to accept the change and hear the entire contents of the element.  
+*   Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to accept the change and hear the entire contents of the element.  
 
 **Known issues**  
 
@@ -112,9 +112,9 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 *   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.  
 *   Select `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you are inside of a text input and may change the type of the element.  
-*   Select `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to accept the change.  
+*   Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to accept the change.  
 
-For example, when you type `h3` and select `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\), the start and end tags of the `h3` element change.  
+For example, when you type `h3` and select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\), the start and end tags of the `h3` element change.  
 
 ## Elements panel tabs  
 

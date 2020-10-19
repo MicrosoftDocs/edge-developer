@@ -42,7 +42,7 @@ The **Elements** panel of DevTools lets you view or change the CSS of one elemen
 Use one the following actions to select an element.  
 
 *   In your viewport, hover on the element, open the contextual menu \(right-click\), and select **Inspect**.  
-*   In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.  
+*   In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.  
 *   In DevTools, choose the element in the **DOM Tree**.  
 *   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and select **Reveal in Elements panel**.  
 
@@ -153,7 +153,7 @@ Complete the following actions to view a page in print mode.
 
 The Coverage tab shows you what CSS a page actually uses.  
 
-1.  Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `coverage` and select **Show Coverage**.  The Coverage tab appears.  
     
     :::row:::
@@ -244,10 +244,10 @@ Choose and edit the name or value of a declaration to change it.  See [Change de
 
 While editing the value of a declaration, you may use the following keyboard shortcuts to increment the value by a specific amount.  
 
-*   Select `Alt`+`Up` \(Windows\) or `Option`+`Up` \(macOS\) to increment by `0.1`.  
+*   Select `Alt`+`Up` \(Windows, Linux\) or `Option`+`Up` \(macOS\) to increment by `0.1`.  
 *   Select `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.  
 *   Select `Shift`+`Up` to increment by `10`.  
-*   Select `Shift`+`Page Up` \(Windows\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.  
+*   Select `Shift`+`Page Up` \(Windows, Linux\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.  
 
 Decrementing also works.  Just replace each instance of `Up` mentioned above with `Down`.  
 

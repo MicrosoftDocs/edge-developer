@@ -70,7 +70,7 @@ To get the most out of this tutorial, open up the demo and try out the features 
     :::image-end:::  
     -->
     
-1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows\) or
+1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or
    `Command`+`Option`+`J` \(macOS\).  The **Console** panel opens.  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
@@ -311,7 +311,7 @@ To focus in on a certain type of file, such as stylesheets:
        Show CSS files only  
     :::image-end:::  
     
-1.  To also see scripts, hold `Control` \(Windows\) or `Command` \(macOS\) and then select **JS**.  
+1.  To also see scripts, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then select **JS**.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Show CSS and JS files only  
@@ -325,7 +325,7 @@ See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workfl
 
 How does a page look and behave when some of the page resources are not available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="The Command Menu" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
        The **Command Menu**  

@@ -242,7 +242,7 @@ try DevTools.
        :::column-end:::
     :::row-end:::  
     
-1.  Press `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
+1.  Press `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
     
     :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page" lightbox="../media/beginners-html-edit3.msft.png":::
        The new content shows up immediately on the page  

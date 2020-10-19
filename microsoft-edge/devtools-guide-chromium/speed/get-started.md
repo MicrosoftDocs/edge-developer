@@ -78,13 +78,13 @@ First, you must set up the site so that you are able to make changes to it later
        The demo tab  
     :::image-end:::  
     
-1.  Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  Microsoft Edge DevTools opens up alongside the demo.  
+1.  Press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  Microsoft Edge DevTools opens up alongside the demo.  
     
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools and the demo" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools and the demo  
     :::image-end:::  
     
-For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.  
+For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.  
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="Undocked DevTools" lightbox="../media/speed-console.msft.png":::
    Undocked DevTools  
@@ -343,7 +343,7 @@ The first task, then, is to find code that you do not need to run on page load.
        More information about the **Eliminate render-blocking resources** opportunity  
     :::image-end:::  
     
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage**.  
+1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Open the Command Menu from the Audits panel" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        Open the Command Menu from the **Audits** panel  
@@ -372,7 +372,7 @@ In short, when you are working with your own code, the Coverage tab helps you an
 Are the `jquery.js` and `lodash.js` files even needed to load the page?  The Request Blocking tab displays what happens when resources are not available.  
 
 1.  Select the **Network** tab.  
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu again.  
+1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu again.  
 1.  Start typing `blocking` and then select **Show Request Blocking**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="The Request Blocking tab" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::

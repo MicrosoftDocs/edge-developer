@@ -111,7 +111,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
     
 ### Set up DevTools  
 
-1.  Select `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.  
+1.  Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        The **Console** panel  
@@ -201,7 +201,7 @@ If you want to save a change to the html of the page, do it using the **Sources*
 1.  Choose the **Page** tab.  
 1.  Choose **(index)**.  The HTML for the page opens.  
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See the following figure.  
-1.  Select `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
+1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Refresh the page.  The `<h1>` element is still displaying the new text.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -215,14 +215,14 @@ If you want to save a change to the html of the page, do it using the **Sources*
 The **Sources** panel is also the place to make changes to JavaScript.  But sometimes you need to access other panels, such as the **Elements** panel or the **Console** panel, while making changes to your site.  There is a way to have the **Sources** panel open alongside other panels.  
 
 1.  Choose the **Elements** tab.  
-1.  Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
 1.  Type `QS`, then select **Show Quick Source**.  At the bottom of your DevTools window there is now a **Quick Source** tab.  The tab is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.  The **Quick Source** tab gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tab using Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Open the **Quick Source** tab using **Command Menu**  
     :::image-end:::  
     
-1.  Select `Control`+`P` \(Windows\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See the following figure.  
+1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See the following figure.  
 1.  Type `script`, then select **app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -239,7 +239,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     document.querySelector('a').style = 'font-style:italic';
     ```  
     
-1.  Select `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save the change.  
+1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Refresh the page.  
     
     > [!NOTE]

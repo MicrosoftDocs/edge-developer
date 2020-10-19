@@ -42,7 +42,7 @@ This tutorial is intended to be completed in order.  It assumes that you underst
 
 This tutorial is designed so that you are able to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.  
 
-1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **Console Log Examples** to open in a new tab.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and click **Console Log Examples** to open in a new tab.  
     
     [Console Log Examples][GlitchDevToolsConsoleLogExamples]
     
@@ -55,7 +55,7 @@ This tutorial is designed so that you are able to open up the demo and try all t
     > :::image-end:::  
     -->
     
-1.  Focus the demo and then press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) to open DevTools.  By default DevTools opens to the right of the demo.  
+1.  Focus the demo and then press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open DevTools.  By default DevTools opens to the right of the demo.  
     
     :::row:::
        :::column span="":::
@@ -110,7 +110,7 @@ Most messages that you see in the Console come from the web developers who wrote
 1.  Navigate back to the **Console** using any of the following workflows:  
     
     *   Click the **Console** tab.  
-    *   Press `Control`+`[` \(Windows\) or `Command`+`[` \(macOS\) until the Console panel is in focus.  
+    *   Press `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) until the Console panel is in focus.  
     *   [Open the Command Menu][DevToolsCommandMenu], start typing `Console`, select the **Show Console Panel** command, and then press `Enter`.  
     
 1.  Click the **Log Warning** button in the demo.  `Abandon Hope All Ye Who Enter` gets logged to the Console.  Messages formatted like this are warnings.  

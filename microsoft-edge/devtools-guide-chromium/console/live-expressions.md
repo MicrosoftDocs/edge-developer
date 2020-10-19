@@ -41,7 +41,7 @@ If you find yourself typing the same JavaScript expression in the Console repeat
        Typing `document.activeElement` into the **Live Expression** text box  
     :::image-end:::  
     
-1.  Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.  
+1.  Type `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.  
 
 <!--todo: add reference open console (open the console) section when available  -->  
 

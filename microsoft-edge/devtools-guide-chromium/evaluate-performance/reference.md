@@ -195,7 +195,7 @@ To scroll a long flame chart in the **Main** section or any of the neighbors, cl
 
 ### Search activities   
 
-Press `Control`+`F` \(Windows\) or `Command`+`F` \(macOS\) to open the search box at the bottom of the **Performance** panel.  
+Press `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\) to open the search box at the bottom of the **Performance** panel.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="The search box" lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
    The search box  
