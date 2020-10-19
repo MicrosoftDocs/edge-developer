@@ -93,8 +93,6 @@ To review real-time updates on this feature in the Chromium open-source project,
    Experimental feature  
 :::image-end:::  
 
-<!--TODO Ask Rachel to verify  -->  
-
 In Microsoft Edge version 87, the new **CSS grid debugging** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your [CSS grids][DevtoolsCssGrid].  
 
 *   Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
@@ -118,8 +116,6 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 You are now able to customize the keyboard shortcut for any action in the DevTools.  Starting in Microsoft Edge version 84, you may choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  In Microsoft Edge version 87, you may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
-
-<!-- todo redo w/o nav -->  
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Custom shortcut for pausing a script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Custom shortcut for pausing a script  
 :::image-end:::  
@@ -137,7 +133,6 @@ The **Elements for Visual Studio Code** and **Network for Visual Studio Code** e
 *   Inspect network traffic  
 
 With the extension, launch Microsoft Edge, connect to an existing instance of the browser, or use a headless browser directly from your editor.  
-
 
 <!--reproduce both image in visual studio code -->  
 :::row:::
@@ -163,10 +158,18 @@ To start contributing and filing issues with your feedback, navigate to the [Mic
 
 Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
-<!--todo: side by side  of open tool -->  
-:::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
-   **WebAuthn** tool  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Open the WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+         Open the **WebAuthn** tool  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
+         **WebAuthn** tool  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 In earlier versions of Microsoft Edge, there was no native WebAuthn debugging support.  You needed physical authenticators to test your web application with the [Web Authentication API][GithubW3cWebauthn].  With the new **WebAuthn** tool, you are able to do the following actions without the use of any physical authenticators.  
 
@@ -184,10 +187,18 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 Toggle the **Computed** pane in the **Styles** tool.  The **Computed** pane in the **Styles** tool is collapsed by default.  To toggle it, choose the button.  
 
-<!--todo: side by side  of open toll -->  
-:::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
-   **Computed sidebar** pane  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Open the Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+         Open the **Computed sidebar** pane  
+      :::image-end:::  
+   :::column-end:::  
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
+         **Computed sidebar** pane  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1073899][CR1073899].  
 
@@ -212,7 +223,7 @@ To review real-time updates on this feature in the Chromium open-source project,
 The **Timings section** of a recording in the [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] tool now marks `performance.mark()` events.  
 
 <!--todo Zoher clarification -->  
-In order to use this feature, you must add `performance.mark()` to your project.  
+To use this feature, you must add `performance.mark()` to your project.  
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark events" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` events  
@@ -242,7 +253,6 @@ The [Reporting API][MdnReportingApi] defines, `Report-To`, a new HTTP header. Th
 
 The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a way to specify server endpoints for the browser to which to send warnings and errors.  
 
-<!--TODO replace with edge demo -->  
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
    reporting to endpoint  
 :::image-end:::  
@@ -252,8 +262,6 @@ To review real-time updates on this feature in the Chromium open-source project,
 #### Display COEP and COOP report-only mode  
 
 DevTools now display `report-only` label for COEP and COOP that are set to `report-only` mode.  
-
-<!--TODO replace with edge demo -->  
 :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="report-only label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
    report-only label  
 :::image-end:::  
