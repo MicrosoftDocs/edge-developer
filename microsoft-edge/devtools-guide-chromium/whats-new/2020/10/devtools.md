@@ -22,10 +22,7 @@ In Microsoft Edge version 87, several strings and terms are locked and do not ch
 *   The strings in the **Lighthouse** tool.  
 *   The term `service worker`.  
 *   Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.  
-*   The correct console placeholder \([$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]\) on localized version of the DevTools.  
-    
-    > [!NOTE]
-    > Fixed a bug that prevented the correct console placeholder \([$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]\) from displaying for some users on localized versions of the DevTools.  
+*   The [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API on localized version of the DevTools.  Fixed a bug that prevented the [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API from displaying for some users on localized versions of the DevTools.  
     
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network tool with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Network** pane with non-localized filters  
@@ -39,18 +36,18 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 DevTools now support moving tools in DevTools between the top and bottom panels.  View any combination of two tools at the same time.  
 
-For example, view **Elements** and **Sources** tools at once \(by moving the **Sources** tool to the bottom\).  
+For example, view the **Elements** and thew **Sources** tools at the same time \(by moving the **Sources** tool to the bottom\).  
 
 :::row:::
    :::column span="":::
-      To move any top tab the bottom, hover on a tab, open the contextual menu \(right-click\), and choose **Move to bottom**.  
+      To move any top tool the bottom, hover on a tab, open the contextual menu \(right-click\), and choose **Move to bottom**.  
       
       :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Move to bottom" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Move to bottom  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      To move any bottom tab to the top, hover on a tab, open the contextual menu \(right-click\), and choose **Move to top**.  
+      To move any bottom tool to the top, hover on a tab, open the contextual menu \(right-click\), and choose **Move to top**.  
       
       :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Move to top" lightbox="../../media/2020/10/move-to-top.msft.png":::
          Move to top  
@@ -65,8 +62,6 @@ To review the history of this feature in the Chromium open-source project, navig
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
    Experimental feature  
 :::image-end:::  
-
-<!--TODO  ask Rob (@ropaveza) to clarify  -->  
 
 The experimental **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationV2] schemas.  This experiment now supports the following actions.  
 
@@ -85,6 +80,10 @@ The experimental **Network Console** tool improves compatibility with the [Postm
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
+
+To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about the **Network Console**, navigate to [Network Console in the Microsoft Edge DevTools][experimental-features#enable-network-console].  
+
+[DevtoolsGuideChromiumExperimentalFeaturesEnableNetworkConsole]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-network-console " | Microsoft Docs"
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687][CR1093687].  
 
@@ -119,6 +118,8 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 
 You are now able to customize the keyboard shortcut for any action in the DevTools.  Starting in Microsoft Edge version 84, you may choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  In Microsoft Edge version 87, you may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
+
+<!-- todo redo w/o nav -->  
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Custom shortcut for pausing a script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Custom shortcut for pausing a script  
 :::image-end:::  
@@ -137,6 +138,8 @@ The **Elements for Visual Studio Code** and **Network for Visual Studio Code** e
 
 With the extension, launch Microsoft Edge, connect to an existing instance of the browser, or use a headless browser directly from your editor.  
 
+
+<!--reproduce both image in visual studio code -->  
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png":::
@@ -160,6 +163,7 @@ To start contributing and filing issues with your feedback, navigate to the [Mic
 
 Emulate authenticators and debug the [Web Authentication API][GithubW3cWebauthn] with the new [WebAuthn][DevtoolsWebauthnIndex] tool.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** \(`...`\) icon > **More tools** > **WebAuthn**.  
 
+<!--todo: side by side  of open tool -->  
 :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
    **WebAuthn** tool  
 :::image-end:::  
@@ -176,12 +180,13 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 ### Elements tool updates  
 
-#### View the Computed sidebar panel in the Styles tool  
+#### View the Computed sidebar pane in the Styles tool  
 
-Toggle the **Computed** panel in the **Styles** tool.  The **Computed** panel in the **Styles** tool is collapsed by default.  To toggle it, choose the button.  
+Toggle the **Computed** pane in the **Styles** tool.  The **Computed** pane in the **Styles** tool is collapsed by default.  To toggle it, choose the button.  
 
-:::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar panel" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
-   **Computed sidebar** panel  
+<!--todo: side by side  of open toll -->  
+:::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+   **Computed sidebar** pane  
 :::image-end:::  
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1073899][CR1073899].  
@@ -205,6 +210,9 @@ To review real-time updates on this feature in the Chromium open-source project,
 ### performance.mark() events in the Timings section  
 
 The **Timings section** of a recording in the [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] tool now marks `performance.mark()` events.  
+
+<!--todo Zoher clarification -->  
+In order to use this feature, you must add `performance.mark()` to your project.  
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark events" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` events  
