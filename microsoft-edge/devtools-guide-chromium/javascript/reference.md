@@ -303,7 +303,7 @@ Complete the following actions to edit a script.
 
 1.  Open the file in the **Editor** pane of the **Sources** panel.  
 1.  Make your changes in the **Editor** pane.  
-1.  Press `Ctrl`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
+1.  Press `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
        The **Editor** pane  

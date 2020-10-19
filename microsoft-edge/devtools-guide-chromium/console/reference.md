@@ -40,7 +40,7 @@ You may open the Console as a [panel](#open-the-console-panel) or as a [tab in t
 
 ### Open the Console panel   
 
-Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  
+Press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
 
 :::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console panel" lightbox="../media/console-hello-console.msft.png":::
    The **Console** panel  

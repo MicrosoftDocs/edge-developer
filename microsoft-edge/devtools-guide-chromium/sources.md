@@ -75,7 +75,7 @@ You should see that change take effect immediately.
    Edit CSS in the **Editor** pane to change the text color of the subtitle to red  
 :::image-end:::  
 
-CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` would have been logged to the **Console**.  
+CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, press `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` would have been logged to the **Console**.  
 
 :::image type="complex" source="./media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="./media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  

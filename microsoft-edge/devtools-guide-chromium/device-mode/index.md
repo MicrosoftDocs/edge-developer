@@ -228,7 +228,7 @@ To throttle the network only, complete the following steps.
        The **Throttle** list in the Network panel  
     :::image-end:::  
     
-    Or select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
+    Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        The **Command Menu**  
@@ -256,7 +256,7 @@ You may also set network throttling from the **Performance** panel.
    :::column-end:::
    :::column span="":::
       1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
       1. Type `Sensors`, and choose **Show Sensors**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for geolocation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -285,7 +285,7 @@ On the **Sensors** panel, you may select one of the preset locations included in
    :::column-end:::
    :::column span="":::
       1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
       1. Type `Sensors`, and choose **Show Sensors**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -314,7 +314,7 @@ On the **Sensors** panel, you may select a preset orientation from the **Orienta
    :::column-end:::
    :::column span="":::
       1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
       1. Type `Network conditions`, and choose **Show Network conditions**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::

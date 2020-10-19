@@ -38,7 +38,7 @@ This tutorial teaches you the basic workflow for debugging any JavaScript issue 
 
 Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
 
-1.  Click **Open Demo**.  Hold `Control` \(Windows\) or `Command` \(macOS\) and open the demo in a new tab.  
+1.  Click **Open Demo**.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and open the demo in a new tab.  
     
     [Open Demo][OpenDebugJSDemo]  
     
@@ -54,7 +54,7 @@ Finding a series of actions that consistently reproduces a bug is always the fir
 
 DevTools provides a lot of different tools for different tasks, such as changing CSS, profiling page load performance, and monitoring network requests.  The **Sources** panel is where you debug JavaScript.  
 
-1.  Open DevTools by pressing `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\) .  This shortcut opens the **Console** panel.  
+1.  Open DevTools by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) .  This shortcut opens the **Console** panel.  
     
     :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="The Console panel" lightbox="../media/javascript-console-empty.msft.png":::
        The **Console** panel  
@@ -206,7 +206,7 @@ If you find a fix for the bug, try out your fix by editing the code and re-runni
 
 1.  Click **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  
 1.  In the **Code Editor**, replace line 32, `var sum = addend1 + addend2`, with `var sum = parseInt(addend1) + parseInt(addend2)`.  
-1.  Press `Control`+`S` \(Windows\) or `Command`+`S` \(macOS\) to save your change.  
+1.  Press `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save your change.  
 1.  Click **Deactivate breakpoints** \(![Deactivate breakpoints][ImageDeactivateIcon]\).  It changes blue to indicate that it is active.  While this is set, DevTools ignores any breakpoints you set.  
 1.  Try out the demo with different values.  The demo now calculates correctly.  
     

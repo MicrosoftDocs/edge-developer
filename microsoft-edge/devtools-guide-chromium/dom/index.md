@@ -36,7 +36,7 @@ This tutorial assumes that you know the difference between the DOM and HTML.  Se
 
 ## Open DOM examples  
 
-1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and click **DOM Examples** to open in a new tab.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and click **DOM Examples** to open in a new tab.  
     
     [DOM Examples][GlitchDomExamples]  
     
@@ -112,7 +112,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 You may search the DOM Tree by string, CSS selector, or XPath selector.  
 
 1.  Focus your cursor on the **Elements** panel.  
-1.  Press `Control`+`F` \(Windows\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.  
+1.  Press `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.  
 1.  Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Highlight the query in the Search bar" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
@@ -216,7 +216,7 @@ Press `Delete` to delete a node.
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Delete a Node**, right-click **Foundation** and select **Inspect**.  
     1.  Press the `Delete` key.  The node is deleted.  
-    1.  Press `Control`+`Z` \(Windows\) or `Command`+`Z` \(macOS\).  The last action is undone and the node reappears.  
+    1.  Press `Control`+`Z` \(Windows, Linux\) or `Command`+`Z` \(macOS\).  The last action is undone and the node reappears.  
 
 ## Access nodes in the Console   
 
@@ -262,7 +262,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Copy JS path**, right-click **The Brothers Karamazov** and select **Inspect**.  
     1.  Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree and select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.  
-    1.  Press `Control`+`V` \(Windows\) or `Command`+`V` \(macOS\) to paste the expression into the Console.  
+    1.  Press `Control`+`V` \(Windows, Linux\) or `Command`+`V` \(macOS\) to paste the expression into the Console.  
     1.  Press `Enter` to evaluate the expression.
         
         :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="The result of the Copy JS Path expression" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::

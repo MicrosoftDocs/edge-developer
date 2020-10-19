@@ -31,7 +31,7 @@ of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze mem
 
 ## Take a snapshot  
 
-On the **Memory** panel, choose **Take snapshot**, then click **Start**.  You may also press `Ctrl`+`E` \(Windows\) or `Cmd`+`E` \(macOS\).  
+On the **Memory** panel, choose **Take snapshot**, then click **Start**.  You may also press `Ctrl`+`E` \(Windows, Linux\) or `Cmd`+`E` \(macOS\).  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Select profiling type" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
    Select profiling type  

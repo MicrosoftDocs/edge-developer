@@ -28,7 +28,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 ## Open CSS Examples  
 
-1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and select **CSS Examples** to open in a new window.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and select **CSS Examples** to open in a new window.  
     
     [CSS Examples][GlitchDevToolsCssExamples]  
     

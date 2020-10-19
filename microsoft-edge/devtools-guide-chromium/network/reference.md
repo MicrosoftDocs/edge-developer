@@ -43,8 +43,8 @@ By default, DevTools record all network requests in the Network panel, so long a
 
 To stop recording requests, complete the following steps.  
 
-1.  Select **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\) on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
-1.  Press `Control`+`E` \(Windows\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
+1.  Select **Stop recording network log** ![Stop recording network log][ImageRecordOnIcon] on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
+1.  Press `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
 
 ### Clear requests  
 
@@ -288,7 +288,7 @@ To filter requests by request type, select the one of the following buttons on t
 If the buttons do not display, the **Filters** pane may be hidden.  
 For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
 
-To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then select.  
+To enable multiple type filters simultaneously, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then select.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Using the Type filters to display JS, CSS, and Document resources" lightbox="../media/network-network-type-filters.msft.png":::
    Using the Type filters to display JS, CSS, and Document resources  
