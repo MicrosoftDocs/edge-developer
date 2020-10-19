@@ -13,15 +13,30 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 With the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] VS Code extension, you can use the Elements and Network tools of the Microsoft Edge browser from within [Visual Studio Code][VisualstudioCode].  You can either launch or attach an instance of Microsoft Edge and once you are connected you can displays the runtime HTML structure, alter the layout, fix styling issues and inspect the network traffic.  
 
-:::image type="complex" source="./media/elements-for-edge.gif" alt-text="Elements for Edge VS Code extension at work":::
-   Elements for Edge VS Code extension at work  
+:::image type="complex" source="./media/edge-devtools-for-vscode-windowed.png" alt-text="Microsoft Edge DevTools for Visual Studio Code running with a full browser window":::
+   Microsoft Edge DevTools for Visual Studio Code running with a full browser window  
 :::image-end:::
+
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-headless.png" alt-text="Microsoft Edge DevTools for Visual Studio Code running with a headless":::
+   Microsoft Edge DevTools for Visual Studio Code running with a headless browser
+:::image-end:::
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-network.png" alt-text="Network inspection in Microsoft Edge DevTools for Visual Studio Code":::
+    Network inspection in Microsoft Edge DevTools for Visual Studio Code
+:::image-end:::
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-settings.png" alt-text="Enabling or disabling headless mode and Network inspection in the extension settings":::
+    Enabling or disabling headless mode and Network inspection in the extension settings
+:::image-end:::
+
+
 
 <!--![Elements for Edge VS Code extension at work][ImageGifElementsEdge]  -->  
 
 ## Launching Microsoft Edge From the Elements extension  
 
-Navigate to Elements in the **Activity Bar**.  Next to where it says **Elements for Microsoft Edge: Targets,** there is a plus sign that opens the browser for your app.  If you selected the **about:blank** option, you must navigate to your web app in the browser for it to appear in the Elements panel in VS Code.  
+Navigate to Elements in the **Activity Bar**.  Next to where it says **Elements for Microsoft Edge: Targets,** there is a plus sign that opens the browser for your app.  If you selected the **about:very blank** option, you must navigate to your web app in the browser for it to appear in the Elements panel in VS Code.  
 
 ## Launching Microsoft Edge from the Debug view  
 
