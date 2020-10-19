@@ -3,7 +3,7 @@ description: Learn about what's coming next for WebView2
 title: Roadmap for Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,14 +12,14 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Microsoft Edge WebView2 roadmap  
 
-##### Last Updated: May 2020  
+##### Last Updated: Oct 2020  
 
 The WebView2 control allows developers to embed web technologies in their native applications.  The following page outlines the prospective roadmap for WebView2.  
 
 > [!NOTE]
 > WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback, so please note that the plans outlined here are not exhaustive and are subject to change.  
 
-If you have concerns or questions about the Roadmap, please leave feedback in the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain].  
+If you have concerns or questions about the Roadmap, provide your feedback in the [feedback repo][GithubMicrosoftedgeWebviewfeedbackMain].  
 
 The WebView2 team is planning the following major efforts for future updates.  
 
@@ -52,17 +52,17 @@ The WebView2 team is planning the following major efforts for future updates.
 
 ## WebView2 Runtime and Installer  
 
-[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  A preview of the WebView2 Runtime and installer is expected to be available Q3 2020 and GA in Q4 2020.  
+[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).  
 
 ## Fixed version  
 
-[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  Engineering work is currently under way with a preview anticipated to be ready towards the end of Q3 2020 and GA Q4 2020.  
+[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  It is currently under preview and targeted to GA Q4 2020.  
 
 ## General availability  
 
 ### Win32 C/C++  
 
-The Win32 C/C++ SDK is expected to GA in Q4 2020, shortly after the WebView2 Runtime and installer GA.  
+The Win32 C/C++ SDK has reached GA.  
 
 ### .NET  
 
