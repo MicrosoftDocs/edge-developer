@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,7 +33,7 @@ to display the tooltip. If the element has a shortcut, the tooltip includes it.
 
 To open DevTools, select the following keyboard shortcuts while your cursor is focused on the browser viewport.
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Open whatever panel you used last | `F12` or `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Open the **Console** panel | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -43,7 +43,7 @@ To open DevTools, select the following keyboard shortcuts while your cursor is f
 
 The following keyboard shortcuts are available in most, if not all, DevTools panels.
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |  
 | Focus the next panel | `Control`+`]` | `Command`+`]` |  
@@ -68,7 +68,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ## Elements panel keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Undo change | `Control`+`Z` | `Command`+`Z` |  
 | Redo change | `Control`+`Y` | `Command`+`Shift`+`Z` |  
@@ -83,7 +83,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ### Styles pane keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Go to the line where a property value is declared | Hold `Control`, then select the property value | Hold `Command`, then select the property value |  
 | Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then choose the **Color Preview** box next to the value | Hold `Shift`, then choose the **Color Preview** box next to the value |  
@@ -95,7 +95,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ## Sources panel keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Pause script runtime \(if currently running\) or resume \(if currently paused\) | `F8` or `Control`+`\` | `F8` or `Command`+`\` |  
 | Step over next function call | `F10` or `Control`+`'` | `F10` or `Command`+`'` |  
@@ -113,7 +113,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ### Code Editor keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Delete all characters in the last word, up to the cursor | `Control`+`Delete` | `Option`+`Delete` |  
 | Add or remove a [line-of-code breakpoint][DevtoolsJavascriptBreakpointsLOC] | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |  
@@ -123,7 +123,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ## Performance panel keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Start / stop recording | `Control`+`E` | `Command`+`E` |  
 | Save recording | `Control`+`S` | `Command`+`S` |  
@@ -131,13 +131,13 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ## Memory panel keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Start / stop recording | `Control`+`E` | `Command`+`E` |  
 
 ## Console panel keyboard shortcuts  
 
-| Action | Windows/Linux | macOS |  
+| Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Accept autocomplete suggestion | `Right Arrow` or `Tab` | `Right Arrow` or `Tab` |  
 | Reject autocomplete suggestion | `Escape` | `Escape` |  
@@ -147,7 +147,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Clear the **Console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+`Enter` | `Command`+`Return` |  
 | Run | `Enter` | `Return` |  
-| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then select **Expand** \(![Expand][ImageExpandIcon]\) | Hold `Alt`, then select **Expand** \(![Expand][ImageExpandIcon]\) |  
+| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then choose **Expand** \(![Expand][ImageExpandIcon]\) | Hold `Alt`, then choose **Expand** \(![Expand][ImageExpandIcon]\) |  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

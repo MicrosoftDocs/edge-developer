@@ -3,7 +3,7 @@ description: How to view and change IndexedDB data with the Application panel an
 title: View And Change IndexedDB Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,17 +22,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
+# View and change IndexedDB data with Microsoft Edge DevTools  
 
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, navigate to [Using IndexedDB][MDNUsingIndexedDB].  
 
-
-
-# View and change IndexedDB data with Microsoft Edge DevTools   
-
-  
-
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, see [Using IndexedDB][MDNUsingIndexedDB].  
-
-## View IndexedDB data   
+## View IndexedDB data  
 
 1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
     
@@ -83,19 +77,19 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        Sort an object store by an index  
     :::image-end:::  
     
-## Refresh IndexedDB data   
+## Refresh IndexedDB data  
 
-IndexedDB values in the **Application** panel do not update in real-time.  Select **Refresh** \(![Refresh][ImageReloadIcon]\) when viewing an object store to refresh the data, or view a database and click **Refresh database** to refresh all data.  
+IndexedDB values in the **Application** panel do not update in real-time.  Choose **Refresh** \(![Refresh][ImageReloadIcon]\) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="View a database" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    View a database  
 :::image-end:::  
 
-## Edit IndexedDB data   
+## Edit IndexedDB data  
 
 IndexedDB keys and values are not editable from the **Application** panel.  Since DevTools has access to page context, however, you may run JavaScript code within DevTools to edit IndexedDB data.  
 
-### Edit IndexedDB data with Snippets   
+### Edit IndexedDB data with Snippets  
 
 [Snippets][DevtoolsJavascriptSnippets] are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.  
 
@@ -103,9 +97,9 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
    Use a Snippet to interact with IndexedDB  
 :::image-end:::  
 
-## Delete IndexedDB data   
+## Delete IndexedDB data  
 
-### Delete an IndexedDB key-value pair   
+### Delete an IndexedDB key-value pair  
 
 1.  [View an IndexedDB object store](#view-indexeddb-data).  
 1.  Select the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.  
@@ -114,13 +108,13 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
        Select a key-value pair in order to delete it  
     :::image-end:::  
     
-1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Press the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="How the object store looks after the key-value pair has been deleted" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        How the object store looks after the key-value pair has been deleted  
     :::image-end:::  
     
-### Delete all key-value pairs in an object store   
+### Delete all key-value pairs in an object store  
 
 1.  [View an IndexedDB object store](#view-indexeddb-data).  
     
@@ -128,32 +122,30 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
        View an object store  
     :::image-end:::  
     
-1.  Select **Clear object store** \(![Clear object store][ImageClearIcon]\).  
+1.  Choose **Clear object store** \(![Clear object store][ImageClearIcon]\).  
     
-### Delete an IndexedDB database   
+### Delete an IndexedDB database  
 
 1.  [View the IndexedDB database](#view-indexeddb-data) that you want to delete.  
-1.  Select **Delete database**.  
+1.  Choose **Delete database**.  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Delete database button" lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
        The **Delete database** button  
     :::image-end:::  
     
-### Delete all IndexedDB storage   
+### Delete all IndexedDB storage  
 
 1.  Open the **Clear storage** pane.  
 1.  Make sure that the **IndexedDB** checkbox is enabled.  
-1.  Select **Clear site data**.  
+1.  Choose **Clear site data**.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
        The **Clear storage** pane  
     :::image-end:::  
     
-<!--  
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

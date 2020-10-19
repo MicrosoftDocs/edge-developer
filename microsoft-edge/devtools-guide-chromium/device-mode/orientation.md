@@ -3,7 +3,7 @@ description: Open the Sensors tab and go to the Orientation section.
 title: Simulate Device Orientation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,14 +28,14 @@ Complete the following actions to simulate different device orientations from Mi
 
 <!--todo: update device orientation section when available -->  
 
-1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
        The **Command Menu**  
     :::image-end:::  
     
-1.  Type `sensors`, select **Show Sensors**, and press `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
-1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.  
+1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
+1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.  
     
     :::row:::
        :::column span="":::
@@ -44,7 +44,7 @@ Complete the following actions to simulate different device orientations from Mi
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          After you select **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.  
+          After you choose **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.  
           <!--See [Alpha][alpha], [Beta][beta], and [Gamma][gamma] to understand how each axis works.  -->  
           <!--todo: update links to alpha, beta, and gamma section when available -->  
           You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.  

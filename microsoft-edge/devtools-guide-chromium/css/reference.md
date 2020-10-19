@@ -3,7 +3,7 @@ description: Discover new workflows for viewing and changing CSS in Microsoft Ed
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -41,10 +41,10 @@ The **Elements** panel of DevTools lets you view or change the CSS of one elemen
 
 Use one the following actions to select an element.  
 
-*   In your viewport, hover on the element, open the contextual menu \(right-click\), and select **Inspect**.  
+*   In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.  
 *   In DevTools, choose **Select an element** \(![Select an element][ImageSelectAnElementIcon]\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.  
 *   In DevTools, choose the element in the **DOM Tree**.  
-*   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and select **Reveal in Elements panel**.  
+*   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.  
 
 ## View CSS  
 
@@ -52,7 +52,7 @@ Use one the following actions to select an element.
 
 In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  
 
-If the stylesheet is minified, see [Make a minified file readable][DevToolsJavascriptReferenceFormat].  
+If the stylesheet is minified, navigate to [Make a minified file readable][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.  
@@ -139,7 +139,7 @@ Complete the following actions to toggle a pseudo-class like `:active`, `:focus`
    Toggle the `:hover` pseudo-class  
 :::image-end:::  
 
-For an interactive tutorial, see [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].  
+For an interactive tutorial, navigate to [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].  
 
 ### View a page in print mode  
 
@@ -147,14 +147,14 @@ Complete the following actions to view a page in print mode.
 
 1.  [Open the Command Menu][DevToolsCommandMenu].  
 1.  Start typing `Rendering` and select `Show Rendering`.  
-1.  For the **Emulate CSS Media** dropdown, select **print**.  
+1.  For the **Emulate CSS Media** dropdown, choose **print**.  
 
 ### View used and unused CSS with the Coverage tab  
 
 The Coverage tab shows you what CSS a page actually uses.  
 
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].  
-1.  Start typing `coverage` and select **Show Coverage**.  The Coverage tab appears.  
+1.  Start typing `coverage` and choose **Show Coverage**.  The Coverage tab appears.  
     
     :::row:::
        :::column span="":::
@@ -199,7 +199,7 @@ The order of declarations affects how an element is styled, use the following li
 *   [Add a inline declaration](#add-an-inline-declaration).  Equivalent to adding a `style` attribute to the HTML of an element.  
 *   [Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).  
 
-**What workflow should you use?** For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.  For more information about specificity, see [Selector Types][MDNSelectorTypes].  
+**What workflow should you use?** For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.  For more information about specificity, navigate to [Selector Types][MDNSelectorTypes].  
 
 If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.  
 
@@ -443,7 +443,7 @@ The following figure and list descries of each of the UI elements of the **Color
       **Eyedropper**  
    :::column-end:::
    :::column span="2":::
-      For more information, see [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).  
+      For more information, navigate to [Sample a color off the page with the Eyedropper](#sample-a-color-off-the-page-with-the-eyedropper).  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -538,6 +538,10 @@ When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper][ImageEyed
        Using the Eyedropper  
     :::image-end:::  
     
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- image links -->  
 
 [ImageAddBackgroundColorIcon]: ../media/add-background-color-icon.msft.png  

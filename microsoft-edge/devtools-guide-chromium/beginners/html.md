@@ -3,7 +3,7 @@ description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -61,20 +61,20 @@ You are going to build your site in an online code editor called Glitch.
        The editor tab  
     :::image-end:::  
     
-1.  Click **alluring-shock**.  The Project Options menu opens in the top-left corner.  
+1.  Choose **alluring-shock**.  The Project Options menu opens in the top-left corner.  
     
     :::image type="complex" source="../media/beginners-html-setup2.msft.png" alt-text="The Project Options menu" lightbox="../media/beginners-html-setup2.msft.png":::
        The Project Options menu  
     :::image-end:::  
     
-1.  Click **Remix Project**.  Glitch creates a copy of the project that you can edit and randomly generates a new name for the project.  The content is the same as before.  
+1.  Choose **Remix Project**.  Glitch creates a copy of the project that you can edit and randomly generates a new name for the project.  The content is the same as before.  
     
     :::image type="complex" source="../media/beginners-html-setup3.msft.png" alt-text="The remixed project" lightbox="../media/beginners-html-setup3.msft.png":::
        The remixed project  
     :::image-end:::  
     
-1.  If you plan on completing the next tutorial in this series, click **Sign In** and sign in to Glitch with your GitHub or Facebook account.  If you don't sign in you will lose the ability to edit this project once you close the editing tab.  
-1.  Click **Show** and select **In a New Window**.  A new tab opens, showing you the live page.  This tab will be called the **live tab** throughout this tutorial.  
+1.  If you plan on completing the next tutorial in this series, choose **Sign In** and sign in to Glitch with your GitHub or Facebook account.  If you don't sign in you will lose the ability to edit this project once you close the editing tab.  
+1.  Choose **Show** and choose **In a New Window**.  A new tab opens, showing you the live page.  This tab will be called the **live tab** throughout this tutorial.  
     
     :::image type="complex" source="../media/beginners-html-setup4.msft.png" alt-text="The live tab" lightbox="../media/beginners-html-setup4.msft.png":::
        The live tab  
@@ -193,7 +193,7 @@ Before you start editing your content from Microsoft Edge DevTools, it's helpful
        The mystery text `A new element!?!` is nowhere to be found in `index.html`  
     :::image-end:::  
     
-1.  Go back to the **live tab**, right-click `A new element!?!`, and select **Inspect**.  
+1.  Go back to the **live tab**, right-click `A new element!?!`, and choose **Inspect**.  
     
     :::image type="complex" source="../media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="../media/beginners-html-dom3.msft.png":::
        Inspecting some text  
@@ -212,7 +212,7 @@ When your page loads, the browser takes your HTML to create the *initial* conten
 If you want to quickly experiment with content changes without ever leaving the live tab,
 try DevTools.  
 
-1.  In DevTools, right-click `Your site!` and select **Edit as HTML**.  
+1.  In DevTools, right-click `Your site!` and choose **Edit as HTML**.  
     
     :::image type="complex" source="../media/beginners-html-edit1.msft.png" alt-text="Editing the node as HTML" lightbox="../media/beginners-html-edit1.msft.png":::
        Editing the node as HTML  
@@ -242,7 +242,7 @@ try DevTools.
        :::column-end:::
     :::row-end:::  
     
-1.  Press `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
+1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside of the box.  Your changes automatically show up in the live view of your page.  The text `Your site!` has been replaced with the new content.  
     
     :::image type="complex" source="../media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page" lightbox="../media/beginners-html-edit3.msft.png":::
        The new content shows up immediately on the page  
@@ -348,6 +348,10 @@ You're almost done.  You've made a few changes to your page in DevTools, but the
 *   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.  
 *   Read [Introduction to the DOM][MDNIntroductionDom] to learn more about the DOM.  
 *   Check out a course like [Introduction to Web Development][CourseraIntroductionToWebDevelopment] to get more hands-on web development experience.  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!--- links --->  
 

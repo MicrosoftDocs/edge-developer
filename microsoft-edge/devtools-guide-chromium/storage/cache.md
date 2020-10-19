@@ -3,7 +3,7 @@ description: How to view Cache data from the Application panel of Microsoft Edge
 title: View Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,19 +22,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# View cache data with Microsoft Edge DevTools   
-
-
+# View cache data with Microsoft Edge DevTools  
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.  
 
 If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  See [Log network activity][DevtoolsNetworkLogActivity].  
 
-## View cache data   
+## View cache data  
 
 1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
     
@@ -60,13 +54,13 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        View the HTTP headers of a resource  
     :::image-end:::  
     
-1.  Select **Preview** to view the content of a resource.  
+1.  Choose **Preview** to view the content of a resource.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-js-preview.msft.png" alt-text="View the content of a resource" lightbox="../media/storage-application-cache-storage-domain-js-preview.msft.png":::
        View the content of a resource  
     :::image-end:::  
     
-## Refresh a resource   
+## Refresh a resource  
 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
@@ -75,9 +69,9 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Select a resource  
     :::image-end:::  
     
-1.  Select **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
     
-## Filter resources   
+## Filter resources  
 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Use the **Filter by Path** text box to filter out any resources that do not match the path that you provide.  
@@ -86,7 +80,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Filter out resources that do not match the specified path  
     :::image-end:::  
     
-## Delete a resource   
+## Delete a resource  
 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
@@ -95,9 +89,9 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Select a resource  
     :::image-end:::  
     
-1.  Select **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
-## Delete all cache data   
+## Delete all cache data  
 
 1.  Open **Application** > **Clear Storage**.  
 1.  Make sure that the **Cache Storage** checkbox is enabled.  
@@ -106,17 +100,15 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        The **Cache Storage** checkbox  
     :::image-end:::  
     
-1.  Select **Clear site data**.  
+1.  Choose **Clear site data**.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="The Clear Site Data button" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
        The **Clear Site Data** button  
     :::image-end:::  
     
-<!--  
-  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

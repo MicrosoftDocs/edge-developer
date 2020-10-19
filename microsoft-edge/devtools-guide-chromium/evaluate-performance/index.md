@@ -3,7 +3,7 @@ description: Learn how to evaluate runtime performance in Microsoft Edge DevTool
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Get started with analyzing Runtime performance  
 
 > [!NOTE]
-> To learn how to make your pages load faster, see [Optimize Website Speed][DevtoolsSpeedGetStarted].  
+> To learn how to make your pages load faster, navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].  
 
 Runtime performance is how your page performs when it is running, as opposed to loading.  The following tutorial article teaches you how to use the Microsoft Edge DevTools Performance panel to analyze runtime performance.  In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.  
 
@@ -61,7 +61,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 1.  In DevTools, choose the **Performance** tab.  
 1.  Make sure that the **Screenshots** checkbox is enabled.  
 1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureSettingsIcon]\).  DevTools reveals settings related to how it captures performance metrics.  
-1.  For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.  
+1.  For **CPU**, choose **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU throttle" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
        CPU throttle  
@@ -142,7 +142,7 @@ Of course, you should see that the page is not performing well.  But in real sce
 Another handy tool is the FPS meter, which provides real-time estimates for FPS as the page runs.  
 
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
-1.  Start typing `Rendering` in the **Command Menu** and select **Show Rendering**.  
+1.  Start typing `Rendering` in the **Command Menu** and choose **Show Rendering**.  
 1.  In the **Rendering** tab, enable **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The FPS meter" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
@@ -238,6 +238,10 @@ Last, there are many ways to improve runtime performance.  This article focused 
 *   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]  
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]  
 -->
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

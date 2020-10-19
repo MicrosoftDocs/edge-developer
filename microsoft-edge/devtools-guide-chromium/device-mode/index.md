@@ -3,7 +3,7 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -148,7 +148,7 @@ If the mobile device option that you need is not included on the default list, y
 1.  Choose the **Device** list > **Edit**.  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Select Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       Select **Edit**  
+       Choose **Edit**  
     :::image-end:::  
     
 1.  Choose **Add custom device**.  
@@ -323,7 +323,7 @@ On the **Sensors** panel, you may select a preset orientation from the **Orienta
    :::column-end:::
 :::row-end:::  
 
-Next to **User agent**, clear the **Select automatically** checkbox.  Then, select **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
+Next to **User agent**, clear the **Select automatically** checkbox.  Then, choose **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Set the user agent string to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Set the user agent string to Microsoft Edge on macOS  

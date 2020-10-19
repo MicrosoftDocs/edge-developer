@@ -3,7 +3,7 @@ description: How to view and edit sessionStorage with the Session Storage pane a
 title: View And Edit Session Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,17 +22,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# View and edit Session Storage with Microsoft Edge DevTools   
-
-  
+# View and edit Session Storage with Microsoft Edge DevTools  
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [`sessionStorage`][MDNSessionStorage] key-value pairs.  
 
-## View sessionStorage keys and values   
+## View sessionStorage keys and values  
 
 1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
     
@@ -58,7 +52,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        View the value of the `x-sid` key  
     :::image-end:::  
     
-## Create a new sessionStorage key-value pair   
+## Create a new sessionStorage key-value pair  
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
 1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
@@ -67,7 +61,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        The empty part of the table to double-click in order to create a new key-value pair  
     :::image-end:::  
     
-## Edit sessionStorage keys or values   
+## Edit sessionStorage keys or values  
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
 1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
@@ -76,18 +70,18 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        Edit a `sessionStorage` key  
     :::image-end:::  
     
-## Delete sessionStorage key-value pairs   
+## Delete sessionStorage key-value pairs  
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
 1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Press the `Delete` key or click **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Press the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
-## Delete all sessionStorage key-value pairs for a domain   
+## Delete all sessionStorage key-value pairs for a domain  
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Select **Clear All** \(![Clear All][ImageClearIcon]\).  
+1.  Choose **Clear All** \(![Clear All][ImageClearIcon]\).  
     
-## Interact with sessionStorage from the Console   
+## Interact with sessionStorage from the Console  
 
 Since you can run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.  
 
@@ -103,11 +97,9 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
        Interact with `sessionStorage` from the **Console**  
     :::image-end:::  
     
-<!--  
-   
+## Getting in touch with the Microsoft Edge DevTools team  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

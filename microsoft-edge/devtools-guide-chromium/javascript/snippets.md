@@ -3,7 +3,7 @@ description: Snippets are small scripts that you can author and run within the S
 title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Run snippets of JavaScript on any page with Microsoft Edge DevTools   
-
-
+# Run snippets of JavaScript on any page with Microsoft Edge DevTools  
 
 If you find yourself running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources][DevToolsSourcesPanel] panel.  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
 Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
@@ -55,7 +49,7 @@ In the following figure, the page appears after running the Snippet.  The **Cons
    How the page looks after running the Snippet  
 :::image-end:::  
 
-## Open the Snippets pane   
+## Open the Snippets pane  
 
 The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** pane.  
 
@@ -63,7 +57,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
    The **Snippets** pane  
 :::image-end:::  
 
-### Open the Snippets pane with a mouse   
+### Open the Snippets pane with a mouse  
 
 1.  Click the **Sources** tab to open the **Sources** panel.  The **Page** pane usually opens by default.  
     
@@ -71,35 +65,35 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
        The **Sources** panel with the **Page** pane open on the left  
     :::image-end:::  
     
-1.  Click the **Snippets** tab to open the **Snippets** pane.  You might need to click **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) in order to access the **Snippets** option.  
+1.  Click the **Snippets** tab to open the **Snippets** pane.  You might need to choose **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) in order to access the **Snippets** option.  
     
-### Open the Snippets pane with the Command Menu   
+### Open the Snippets pane with the Command Menu  
 
 1.  Focus your cursor somewhere inside of DevTools.  
-1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Start typing `Snippets`, select **Show Snippets**, and then press `Enter` to run the command.  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
+1.  Start typing `Snippets`, choose **Show Snippets**, and then select `Enter` to run the command.  
     
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="The Show Snippets command" lightbox="../media/javascript-search-show-snippets.msft.png":::
        The **Show Snippets** command  
     :::image-end:::  
     
-## Create Snippets   
+## Create Snippets  
 
-### Create a Snippet through the Sources panel   
+### Create a Snippet through the Sources panel  
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Click **New snippet**.  
-1.  Enter a name for your Snippet then press `Enter` to save.  
+1.  Choose **New snippet**.  
+1.  Enter a name for your Snippet then select `Enter` to save.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Name a Snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Name a Snippet  
     :::image-end:::  
     
-### Create a Snippet through the Command Menu   
+### Create a Snippet through the Command Menu  
 
 1.  Focus your cursor somewhere inside of DevTools.  
-1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Start typing `Snippet`, select **Create new snippet**, then press `Enter` to run the command.  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
+1.  Start typing `Snippet`, choose **Create new snippet**, then select `Enter` to run the command.  
     
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="The command for creating a new Snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        The command for creating a new Snippet  
@@ -107,7 +101,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
     
 See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a custom name.  
 
-## Edit Snippets   
+## Edit Snippets  
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
 1.  In the **Snippets** pane click the name of the Snippet that you want to edit in order to open it in the **Code Editor**.  
@@ -117,47 +111,45 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
     :::image-end:::  
     
 1.  Use the **Code Editor** to add JavaScript to your Snippet.  
-1.  When an asterisk appears next to the name of your Snippet it means you have unsaved code. Press `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  
+1.  When an asterisk appears next to the name of your Snippet it means you have unsaved code. Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="An asterisk next to the Snippet name, which indicates unsaved code" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        An asterisk next to the Snippet name, which indicates unsaved code  
     :::image-end:::  
     
-## Run Snippets   
+## Run Snippets  
 
-### Run a Snippet from the Sources panel   
+### Run a Snippet from the Sources panel  
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
 1.  Click the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.  
-1.  Click **Run Snippet** \(![Run Snippet][ImageRunSnippetIcon]\), or press `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).  
+1.  Choose **Run Snippet** \(![Run Snippet][ImageRunSnippetIcon]\), or select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).  
     
-### Run a Snippet with the Command Menu   
+### Run a Snippet with the Command Menu  
 
 1.  Focus your cursor somewhere inside of DevTools.  
-1.  Press `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
 1.  Delete the `>` character and type the `!` character followed by the name of the Snippet that you want to run.  
     
     :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Running a Snippet from the Command Menu" lightbox="../media/javascript-search-run-command.msft.png":::
        Running a Snippet from the **Command Menu**  
     :::image-end:::  
     
-1.  Press `Enter` to run the Snippet.  
+1.  Select `Enter` to run the Snippet.  
 
-## Rename Snippets   
-
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Right-click the Snippet name and select **Rename**.  
-    
-## Delete Snippets   
+## Rename Snippets  
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  Right-click the Snippet name and select **Remove**.  
+1.  Right-click the Snippet name and choose **Rename**.  
     
-<!--  
- 
+## Delete Snippets  
 
+1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
+1.  Right-click the Snippet name and choose **Remove**.  
+    
+## Getting in touch with the Microsoft Edge DevTools team  
 
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

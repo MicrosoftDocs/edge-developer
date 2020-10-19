@@ -2,7 +2,7 @@
 title: Find and fix problems with the Microsoft Edge DevTools Issues tool 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -46,7 +46,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          Alternatively, select **Issues** from the **More tools** menu.  
+          Alternatively, choose **Issues** from the **More tools** menu.  
           
           :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Issues tool in More tools menu" lightbox="../media//issues-more-tools-menu.msft.png":::
              **Issues** tool in **More tools** menu  

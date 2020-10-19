@@ -3,7 +3,7 @@ description: A comprehensive reference of accessibility features in Microsoft Ed
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -68,11 +68,11 @@ To audit a page:
     > [!NOTE]
     > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
     
-1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option could have a significant effect on the results of your audit.  
+1.  For **Device**, choose **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option could have a significant effect on the results of your audit.  
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
 1.  The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.  This option should be irrelevant to your accessibility score, so you may use whatever you prefer.  
 1.  The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.  This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.  
-1.  Click **Run Audits**. After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
+1.  Choose **Run Audits**. After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="A report" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        A report  
@@ -84,7 +84,7 @@ To audit a page:
        More information about an audit  
     :::image-end:::  
     
-1.  Click **Learn More** to view the documentation of that audit.  
+1.  Choose **Learn More** to view the documentation of that audit.  
     
     :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an audit" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
        View the documentation of an audit  
@@ -137,7 +137,7 @@ View the ARIA attributes of an element in the [Accessibility pane](#the-accessib
 ### View the computed accessibility properties of an element  
 
 > [!NOTE]
-> If you are looking for computed CSS properties, see the [Computed tab][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> If you are looking for computed CSS properties, navigate to [Computed tab][DevtoolsCssReferenceViewActuallyAppliedElements].  
 
 Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** pane.  
 
@@ -180,7 +180,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
        The **Contrast Ratio** Line in the visual picker  
     :::image-end:::  
     
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 

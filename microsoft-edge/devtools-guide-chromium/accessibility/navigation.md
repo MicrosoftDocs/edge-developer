@@ -3,7 +3,7 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -46,7 +46,7 @@ The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful chea
 
 ## Open DevTools  
 
-To get started, see [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
+To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
 
 ## Navigate between panels  
 
@@ -86,13 +86,13 @@ Open a panel this way directs focus to the contents of the panel.  In the case o
 1.  Simulate a right-click using a mouse on the element to open the context menu.  
 1.  Choose the **Inspect** option.  This [opens the Elements panel and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
 
-The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, see [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
+The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
 ### Copy the code for an element in the DOM Tree  
 
 1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu \(right-click\).  
 1.  Expand the **Copy** option.  
-1.  Select **Copy outerHTML**.  
+1.  Choose **Copy outerHTML**.  
 
 **Known issues**  
 
@@ -147,7 +147,7 @@ Because all of the style tools connect in one way or another back to the **Style
 *   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
 *   You may continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
 
-For additional shortcuts, see [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].  
+For additional shortcuts, navigate to [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].  
 
 **Known issues**  
 
@@ -232,7 +232,7 @@ The audit report is organized into sections that correspond with each of the aud
 
 To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perform An Audit** button.  
 
-## Getting in touch with the Microsoft Edge DevTools team
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
