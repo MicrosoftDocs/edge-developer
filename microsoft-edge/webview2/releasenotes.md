@@ -36,13 +36,13 @@ Release Date: Oct 19, 2020
 *   Turned off [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.
 *   Added [SystemCursorId][ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674] for Visual Hosting.
 *   Added bug fixed for Input Method in Visual Hosting.
-*   Developers no longer have to include version.lib when using WebView2 static lib
+*   Developers no longer have to include version.lib when using WebView2 static library.
  
 #### .NET  
 
-*   Updated [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] class to expose CoreWebView2Environment variables.  
+*   Updated [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] class to expose the CoreWebView2Environment variable.  
 *   Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to be subclasses of [System.EventArgs][DotnetApiSystemEventargs] or [System.ComponentModel.CancelEventArgs][DotnetApiSystemComponentmodelCancelEventargs]. \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
-*   Added support for [CoreWebView2CreationProperties][DotnetApiMicrosoftWebWebview2WinformsCorewebview2creationproperties] in WinForms. \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\)
+*   Added support for [CoreWebView2CreationProperties][DotnetApiMicrosoftWebWebview2Winforms] in WinForms. \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\)
 *   Added .NET [WebResourceRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested] APIs.  \([\#219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
 *   Updated WinForms Designer [Source][DotnetApiMicrosoftWebWebview2WinformsWebview2Source] property to default or reset to null. \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
 *   Updated WebView2 bounds in WebView2.Init() to support DPI modes that are less than 100%.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
