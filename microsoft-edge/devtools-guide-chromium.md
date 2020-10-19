@@ -38,11 +38,11 @@ all directly within the browser.  These are just examples of some of the feature
 To open the DevTools  
 
 *   press `F12` 
-*   press `Ctrl`+`Shift`+`I` on Windows \(`Command`+`Option`+`I` on macOS\)  
+*   press `Ctrl`+`Shift`+`I` on Windows/Linux \(`Command`+`Option`+`I` on macOS\)  
 
-If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
+If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows/Linux \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
 
-If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows or `Command`+`Option`+`J` on macOS to launch the Console panel in the DevTools.  
+If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on macOS to launch the Console panel in the DevTools.  
 
 ## Core tools  
 
@@ -94,7 +94,7 @@ Select **Add to Chrome** to add your DevTools extension to Microsoft Edge!
 
 These shortcuts control the main DevTools window, work across all tools, or both.  
 
-| Action | Windows | macOS |  
+| Action | Windows/Linux | macOS |  
 |:--- |:--- | :--- |  
 | Show/Hide DevTools \(opens to last viewed panel\) | `F12` or `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Show the Console panel | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
