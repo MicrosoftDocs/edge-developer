@@ -3,23 +3,20 @@ description: Host web content in your Win32, .NET, UWP applications with the Mic
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
 ---
 
-# Introduction to Microsoft Edge WebView2 (Preview)  
+# Introduction to Microsoft Edge WebView2  
 
-The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.  With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.  For information on how to start building a WebView2 application, see [Get Started](#getting-started).  
+The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.  With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.  For information on how to start building a WebView2 application, navigate to [Get Started](#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="What is WebView" lightbox="./media/WebView2/whatwebview.png":::
    What is WebView  
 :::image-end:::  
-
-> [!NOTE]
-> The WebView2 Preview is intended for early prototyping and to gather feedback to help shape the API.  You should not use the preview in your production apps because there may be breaking changes.  For more information, see [Webview2Releasenotes].  
 
 ## Hybrid application approach  
 
@@ -50,7 +47,7 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       **Windows 7, 8, 10 support**  
       Support for a consistent user experience across Windows 7, 8, and 10.  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 :::row:::
    :::column span="1":::
       **Native capabilities**  
@@ -64,7 +61,7 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       **Microsoft support**  
       Microsoft provides support and adds new feature requests when WebView2 is release as GA.  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 :::row:::
    :::column span="1":::
       **Evergreen distribution**  
@@ -78,7 +75,7 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
       **Incremental adoption**  
       Add web components piece by piece to your application.  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 
 ## Getting started  
 
@@ -93,12 +90,12 @@ The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains s
 
 ## Supported platforms  
 
-A developer preview is available on the following programming environments.  
+A General Availability \(GA\) or Preview version is available on the following programming environments.  
 
-*   Win32 C/C++  
-*   .NET Framework 4.6.2 or later  
-*   .NET Core 3.0 or later  
-*   [WinUI 3.0][UwpToolkitsWinui3]  
+*   Win32 C/C++ \(GA\)
+*   .NET Framework 4.6.2 or later \(Preview\) 
+*   .NET Core 3.0 or later \(Preview\)
+*   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)
 
 You are able to run WebView2 applications on the following versions of Windows.  
 
@@ -132,16 +129,13 @@ For more information on how to build and deploy WebView2 applications, review th
 
 [!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
-> [!NOTE]
-> During the preview, the collected data helps build a better product.  To turn off WebView2 data collection, go to `edge://settings/privacy` and turn off browser data collection.  
-
 <!-- links -->  
 
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsUserdatafolder]: ./concepts/userdatafolder.md "Managing the User Data Folder | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"  
-[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Getting started with WebView2 (developer preview) | Microsoft Docs"   
+[Webview2GettingstartedWin32]: ./gettingstarted/win32.md "Getting started with WebView2 | Microsoft Docs"   
 [Webview2GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps (Preview) | Microsoft Docs"  
 [Webview2GettingstartedWinui]: ./gettingstarted/winui.md "Getting started with WebView2 in WinUI3 (Preview) | Microsoft Docs"  
 [Webview2GettingstartedWpf]: ./gettingstarted/wpf.md "Getting started with WebView2 in WPF (Preview) | Microsoft Docs"  
