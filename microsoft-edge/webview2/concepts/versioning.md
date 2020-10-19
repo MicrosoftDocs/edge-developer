@@ -25,7 +25,7 @@ The release package is forward compatible and contains the [Win32 C/C++ APIs][Re
 The prerelease package is a superset of the release package with the additional components listed below.  
 
 *   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
-*   Experimental APIs:  For more information, see the [Experimental APIs](#experimental-apis) section.  
+*   Experimental APIs:  For more information, navigate to the [Experimental APIs](#experimental-apis) section.  
 
 ## Experimental APIs  
 
@@ -36,7 +36,7 @@ The WebView team is testing experimental APIs that may be included in future rel
 
 ## Matching WebView2 Runtime versions  
 
-When writing a WebView2 app using a particular SDK version, users of your app may run it with several compatible versions of the WebView2 Runtime.  In the future, there will be a compatible WebView2 Runtime version that contains both non-experimental APIs from previous versions of the Runtime, and new non-experimental APIs.  
+When writing a WebView2 app using a particular SDK version, users of your app may run it with several compatible versions of the WebView2 Runtime.  The WebView team is working on a compatible WebView2 Runtime version that contains non-experimental APIs from previous versions of the Runtime and new non-experimental APIs.  
 
 Depending on which SDK you use, consider the following items: 
 
