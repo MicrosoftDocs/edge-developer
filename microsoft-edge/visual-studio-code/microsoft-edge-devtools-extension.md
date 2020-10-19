@@ -34,7 +34,7 @@ In headless mode the extension will not launch a full browser window to debug, b
 > [!NOTE]
 > If you work on a Macintosh computer, it might be best to turn on headless mode as we had a few reports about the browser window reporting itself as "Not Active" if the window isn't visible.  
 
-If you also want to inspect the network traffic of your application, you can turn on the ***Network*** tab in the settings.
+If you also want to inspect the network traffic of your application, you can turn on the **Network** tab in the settings.
 
 :::image type="complex" source="./media/edge-devtools-for-vscode-network.png" alt-text="Network inspection in Microsoft Edge DevTools for Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-network.png":::
     Network inspection in Microsoft Edge DevTools for Visual Studio Code
