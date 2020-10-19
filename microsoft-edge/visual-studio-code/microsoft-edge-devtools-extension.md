@@ -56,7 +56,7 @@ If you do not have any configurations in VS Code, press `F5` on Windows or macOS
     "configurations": [
         {
             
-            "name": "Launch Microsoft Edge and open the Elements tool",
+            "name": "Launch Microsoft Edge and open the developer tools",
             "request": "launch",
             "type": "vscode-edge-devtools.debug",
             "url": "http://localhost:3000"
@@ -80,20 +80,20 @@ Once the app has launched, add the configuration below to your **launch.json** f
 {
     "type": "vscode-edge-devtools.debug",
     "request": "attach",
-    "name": "Attach to Microsoft Edge and open the Elements tool",
+    "name": "Attach to Microsoft Edge and open the developer tools",
     "url": "http://localhost:3000/",
     "webRoot": "${workspaceFolder}/out",
     "port": 9222
 }
 ```  
 
-Select **Attach to Microsoft Edge and open the Elements tool** from the Debugger drop-down menu.  Next, either press `F5` on Windows or macOS or select the green **Play** button.  VS Code launches the Elements tool, allowing you to access a screencast of your browser, inspect the DOM, and the styling of the components on your page.  
+Select **Attach to Microsoft Edge and open the developer tools** from the Debugger drop-down menu.  Next, either press `F5` on Windows or macOS or select the green **Play** button.  VS Code launches the Elements tool, allowing you to access a screencast of your browser, inspect the DOM, and the styling of the components on your page.  
 
-## Getting in touch with the Elements for Microsoft Edge VS Code extension team  
+## Getting in touch with the Microsoft Edge DevTools for Visual Studio Code extension team  
 
 Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] against the [GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.  
 
-If you want to help make the Elements for Microsoft Edge VS Code extension better, your contributions are welcome!  Find everything you need to get started in the [GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.  
+If you want to help make the Microsoft Edge DevTools for Visual Studio Code extension better, your contributions are welcome!  Find everything you need to get started in the [GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.  
 
 <!-- image links -->  
 
