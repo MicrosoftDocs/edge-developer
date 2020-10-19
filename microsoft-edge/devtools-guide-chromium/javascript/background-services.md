@@ -41,7 +41,7 @@ This can help you make sure that events are being sent and received as expected.
 
 ## Background Fetch  
 
-The *Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
+The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -126,8 +126,8 @@ To display a push notification to a user, a **service worker** must first use th
 1.  Open the **Application** panel.  
 1.  Open the **Push Messaging** pane.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="The Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       The **Push Messaging** pane  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Open the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       Open the **Push Messaging** pane  
     :::image-end:::  
     
 1.  Choose **Record** \(![Record][ImageRecordIcon]\).  
