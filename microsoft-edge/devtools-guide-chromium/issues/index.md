@@ -1,4 +1,5 @@
 ---
+description: Use the Issues tool to find and fix problems with your website.
 title: Find and fix problems with the Microsoft Edge DevTools Issues tool 
 author: MSEdgeTeam
 ms.author: msedgedevrel

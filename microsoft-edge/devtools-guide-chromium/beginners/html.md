@@ -22,13 +22,13 @@ keywords: microsoft edge, web developement, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# DevTools for beginners: Get started with HTML and the DOM   
+# DevTools for beginners: Get started with HTML and the DOM  
 
 This is the first in a series of tutorials that teach you the basics of web development.  You will also learn about a set of web developer tools called Microsoft Edge DevTools that can increase your productivity.  
 
 In this particular tutorial, you learn about HTML and the DOM.  HTML is one of the core technologies of web development.  It is the language that controls the structure and content of webpages.  The DOM is also related to the structure and content of webpages, but you'll learn more about that later.  
 
-## Goals   
+## Goals  
 
 You are going to learn web development by actually building your own website.  By the time you complete all of the tutorials in the *DevTools for Beginners* series, your finished site will look like in the following figure.  
 
@@ -44,14 +44,14 @@ By the end of this tutorial, you will understand:
 
 You'll also have a real website!  You can use this site to host your resume or blog.  
 
-## Prerequisites   
+## Prerequisites  
 
 Before attempting this tutorial, complete the following prerequisites:  
 
 *   If you are unfamiliar with HTML, read [Getting Started with HTML][MDNGettingStartedHtml].  
 *   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.  
 
-## Set up your code   
+## Set up your code  
 
 You are going to build your site in an online code editor called Glitch.  
 
@@ -80,7 +80,7 @@ You are going to build your site in an online code editor called Glitch.
        The live tab  
     :::image-end:::  
     
-## Add content   
+## Add content  
 
 Your site is pretty empty.  Follow the steps below to add some content to it!  
 
@@ -133,8 +133,8 @@ Your site is pretty empty.  Follow the steps below to add some content to it!
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="The new code is highlighted in the editor tab" lightbox="../media/beginners-html-add3.msft.png":::
-             The new code is highlighted in the editor tab  
+          :::image type="complex" source="../media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab" lightbox="../media/beginners-html-add3.msft.png":::
+             The updated code is highlighted in the editor tab  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -161,8 +161,8 @@ Your site is pretty empty.  Follow the steps below to add some content to it!
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="The new code is highlighted in the editor tab" lightbox="../media/beginners-html-add4.msft.png":::
-             The new code is highlighted in the editor tab  
+          :::image type="complex" source="../media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab" lightbox="../media/beginners-html-add4.msft.png":::
+             The updated code is also highlighted in the editor tab  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -173,11 +173,11 @@ Your site is pretty empty.  Follow the steps below to add some content to it!
        The new list is visible in the live tab  
     :::image-end:::  
     
-## Experiment with content changes in Microsoft Edge DevTools   
+## Experiment with content changes in Microsoft Edge DevTools  
 
 If you were developing a big page with a lot of HTML, you can imagine that it might be somewhat tedious to go back-and-forth between the editor tab and the live tab hundreds of times in order to see your changes, especially if you weren't sure what exactly to put on the page.  Microsoft Edge DevTools can help you experiment with content changes without ever leaving the live tab.  
 
-### Learn the difference between HTML and the DOM   
+### Learn the difference between HTML and the DOM  
 
 Before you start editing your content from Microsoft Edge DevTools, it's helpful to understand the difference between HTML and the DOM.  The best way to learn is by example:  
 
@@ -207,7 +207,7 @@ Before you start editing your content from Microsoft Edge DevTools, it's helpful
     
 When your page loads, the browser takes your HTML to create the *initial* content of the page.  The DOM represents the *current* content of the page, which can change over time.  The mysterious `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML.  This tag causes some JavaScript code to run.  You'll learn more about JavaScript in a later tutorial, but for now think of it as a programming language that can change the content of your page.  In this particular case, JavaScript code adds `<div>A new element!?!</div>` to your page.  That is why this mystery text is visible on your live page, but not in your HTML.  
 
-### Edit the DOM   
+### Edit the DOM  
 
 If you want to quickly experiment with content changes without ever leaving the live tab,
 try DevTools.  
@@ -236,8 +236,8 @@ try DevTools.
           ```  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Editing the node as HTML" lightbox="../media/beginners-html-edit2.msft.png":::
-             Editing the node as HTML  
+          :::image type="complex" source="../media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML" lightbox="../media/beginners-html-edit2.msft.png":::
+             Updating the node as HTML  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -250,7 +250,7 @@ try DevTools.
     
 This workflow is only good for experimenting with content changes.  If you reload the page or close the tab, your changes will be gone forever.  If you're using this workflow and you want to save your changes, you need to manually copy those changes over to your HTML.  The next couple of sections show you some more ways that you can change content from the DOM Tree.  
 
-## Reorder nodes   
+## Reorder nodes  
 
 You can also change the order of DOM nodes.  For example, on your web page the navigation menu is near the bottom.  To move it to the top:  
 
@@ -277,7 +277,7 @@ You can also change the order of DOM nodes.  For example, on your web page the n
        :::column-end:::
    :::row-end:::  
     
-### Delete a node   
+### Delete a node  
 
 You can also remove nodes from the DOM Tree.  
 
@@ -293,7 +293,7 @@ You can also remove nodes from the DOM Tree.
        The node has been deleted  
     :::image-end:::  
     
-## Copy your changes   
+## Copy your changes  
 
 You're almost done.  You've made a few changes to your page in DevTools, but they're not yet saved to your source code.  
 
@@ -343,7 +343,7 @@ You're almost done.  You've made a few changes to your page in DevTools, but the
        How your `index.html` file should look  
     :::image-end:::  
     
-## Next steps   
+## Next steps  
 
 *   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.  
 *   Read [Introduction to the DOM][MDNIntroductionDom] to learn more about the DOM.  

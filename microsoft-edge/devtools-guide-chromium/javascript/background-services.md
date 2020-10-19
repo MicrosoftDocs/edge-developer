@@ -35,8 +35,8 @@ Microsoft Edge DevTools considers each of the following APIs to be a background 
 Microsoft Edge DevTools can log background service events for 3 days, even when DevTools is not open.  
 This can help you make sure that events are being sent and received as expected.  You may also inspect the details of each event.  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="View the details of an event in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   View the details of an event in the **Push Messaging** pane  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="The Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   The **Push Messaging** pane  
 :::image-end:::  
 
 ## Background Fetch  
@@ -137,7 +137,7 @@ To display a push notification to a user, a **service worker** must first use th
        A log of events in the **Push Messaging** pane  
     :::image-end:::  
     
-1.  Click an event to view its details in the space below the table.  
+1.  Click an event to view the details in the space below the table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="View the details of an event in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        View the details of an event in the **Push Messaging** pane  

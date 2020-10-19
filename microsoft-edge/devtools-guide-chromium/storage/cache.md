@@ -65,8 +65,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Select a resource" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Select a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Select a resource to refresh" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Select a resource to refresh  
     :::image-end:::  
     
 1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
@@ -85,8 +85,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 1.  [View the data for a cache](#view-cache-data).  
 1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Select a resource" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Select a resource  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Select a resource to delete" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Select a resource to delete  
     :::image-end:::  
     
 1.  Choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  

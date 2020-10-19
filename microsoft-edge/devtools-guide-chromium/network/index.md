@@ -77,10 +77,10 @@ To get the most out of this tutorial, open up the demo and try out the features 
        DevTools docked to the bottom of the window  
     :::image-end:::  
     
-1.  Select the **Network** tab.  The Network panel opens.  
+1.  Select the **Network** tab.  The **Network** panel opens.  
     
-    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="DevTools docked to the bottom of the window" lightbox="../media/network-glitch-network-bottom.msft.png":::
-       DevTools docked to the bottom of the window  
+    :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Console tool in the DevTools docked to the bottom of the window" lightbox="../media/network-glitch-network-bottom.msft.png":::
+       **Console** tool in the DevTools docked to the bottom of the window  
     :::image-end:::  
     
 Right now the Network panel is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.  

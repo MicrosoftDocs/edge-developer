@@ -300,7 +300,7 @@ Complete the following actions to add a style rule to a specific location in the
 
 1.  Hover over the style rule that is directly above where you want to add your new style rule.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
-1.  Choose **Insert Style Rule Below** \(![Insert Style Rule Below][ImageNewStyleRuleIcon]\).  
+1.  Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon][ImageNewStyleRuleIcon]\).  
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Insert Style Rule Below" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Insert Style Rule Below**  
@@ -354,7 +354,7 @@ Complete the following actions to add a `background-color` declaration to an ele
 
 1.  Hover over the style rule that you want to add the `background-color` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
-1.  Choose **Add Background Color** \(![Add Background Color][ImageAddBackgroundColorIcon]\).  
+1.  Choose **Add Background Color** \(![Add Background Color icon][ImageAddBackgroundColorIcon]\).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Add Background Color" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Add Background Color**  
@@ -366,7 +366,7 @@ Complete the following actions to add a `color` declaration to an element.
 
 1.  Hover over the style rule that you want to add the `color` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
-1.  Choose **Add Color** \(![Add Color][ImageAddColorIcon]\).  
+1.  Choose **Add Color** \(![Add Color icon][ImageAddColorIcon]\).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Add Color" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Add Color**  
@@ -378,7 +378,7 @@ Complete the follwoing actions to add a `box-shadow` declaration to an element.
 
 1.  Hover over the style rule that you want to add the `box-shadow` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
-1.  Choose **Add Box Shadow** \(![Add Box Shadow][ImageAddBoxShadowIcon]\).  
+1.  Choose **Add Box Shadow** \(![Add Box Shadow icon][ImageAddBoxShadowIcon]\).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Add Box Shadow" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Add Box Shadow**  
@@ -390,7 +390,7 @@ Complete the following actions to add a `text-shadow` declaration to an element.
 
 1.  Hover over the style rule that you want to add the `text-shadow` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
-1.  Choose **Add Text Shadow** \(![Add Text Shadow][ImageAddTextShadowIcon]\).  
+1.  Choose **Add Text Shadow** \(![Add Text Shadow icon][ImageAddTextShadowIcon]\).  
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Add Text Shadow" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Add Text Shadow**  

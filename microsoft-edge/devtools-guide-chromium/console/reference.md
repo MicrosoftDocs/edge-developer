@@ -68,7 +68,7 @@ To open the Console tab from the [Command Menu][DevToolsCommandMenu], start typi
 
 ### Open Console Settings  
 
-Choose **Console Settings** \(![Console Settings][ImageSettingsButtonIcon]\).  
+Choose **Console Settings** \(![Console Settings icon][ImageSettingsButtonIcon]\).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Settings**  
@@ -248,7 +248,7 @@ You may use any of the following workflows to clear the Console:
     
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

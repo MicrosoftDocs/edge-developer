@@ -36,7 +36,7 @@ Record runtime performance when you want to analyze the performance of a page as
 
 1.  Go to the page that you want to analyze.  
 1.  Click the **Performance** tab in DevTools.  
-1.  Choose **Record** \(![Record][ImageRecordIcon]\).  
+1.  Choose **Record** \(![Record icon][ImageRecordIcon]\).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**  
@@ -75,7 +75,7 @@ Navigate to [View a screenshot](#view-a-screenshot) to learn how to interact wit
 
 ### Force garbage collection while recording  
 
-While you are recording a page, choose **Collect garbage** \(![Collect garbage][ImageCollectGarbageIcon]\) to force garbage collection.  
+While you are recording a page, choose **Collect garbage** \(![Collect garbage icon][ImageCollectGarbageIcon]\) to force garbage collection.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Collect garbage" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Collect garbage  
@@ -155,7 +155,7 @@ To load a recording, right-click and choose **Load Profile**.
 
 ## Clear the previous recording  
 
-After making a recording, press **Clear recording** \(![Clear recording][ImageClearRecordingIcon]\) to clear that recording from the **Performance** panel.  
+After making a recording, press **Clear recording** \(![Clear recording icon][ImageClearRecordingIcon]\) to clear that recording from the **Performance** panel.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Clear recording" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Clear recording**  
@@ -410,9 +410,9 @@ In the 1st of the following figures, the request for `www.bing.com` is represent
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="The Network section" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
-         The **Network** section  
-:      ::image-end:::  
+      :::image type="complex" source="../media/evaluate-performance-bing-network-timing.msft.png" alt-text="The Network tool" lightbox="../media/evaluate-performance-bing-network-timing.msft.png":::
+         The **Network** tool  
+:     ::image-end:::  
    :::column-end:::
 :::row-end:::
 
