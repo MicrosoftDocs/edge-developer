@@ -1,9 +1,9 @@
 ---
-description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar pane.
+description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar panel.
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/16/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,13 +27,13 @@ In Microsoft Edge version 87, several strings and terms are locked and do not ch
     > [!NOTE]
     > Fixed a bug that prevented the correct console placeholder \([$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject]\) from displaying for some users on localized versions of the DevTools.  
     
-:::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network pane with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
+:::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network tool with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Network** pane with non-localized filters  
 :::image-end:::  
 
 Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1136655][CR1136655].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136655][CR1136655].  
 
 ## Move tools between top and bottom panel  
 
@@ -58,7 +58,7 @@ For example, view **Elements** and **Sources** tools at once \(by moving the **S
    :::column-end:::
 :::row-end:::
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1075732][CR1075732].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [#1075732][CR1075732].
 
 ## Save and export using the Network Console  
 
@@ -73,53 +73,20 @@ The experimental **Network Console** tool improves compatibility with the [Postm
 *   Save and export Collections and Environments using a new system.  
 *   Edit and export sets of environment variables within the **Network Console** tool.  
     
-<!--TODO  The following images are presented for your review, please proved feedback.  -->  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-more-tools.msft.png" alt-text="Open Network Console from menu" lightbox="../../media/2020/10/network-console-more-tools.msft.png":::
-         Open **Network Console** from menu  
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Enter name for the new environment" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+         Enter name for the new environment  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-network-edit-resend.msft.png" alt-text="Open Network Console from Network pane" lightbox="../../media/2020/10/network-console-network-edit-resend.msft.png":::
-         Open **Network Console** from **Network** pane  
+      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Choose format for the new environment" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
+         Choose format for the new environment  
       :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-empty.msft.png" alt-text="Network Console" lightbox="../../media/2020/10/network-console-empty.msft.png":::
-         **Network Console**  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new.msft.png" alt-text="Network Console new environment" lightbox="../../media/2020/10/network-console-environments-new.msft.png":::
-         **Network Console** new environment  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Network Console new environment name" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
-         **Network Console** new environment name
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="**Network Console** new environment format" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
-         **Network Console** new environment format  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;
    :::column-end:::
 :::row-end:::  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1093687][CR1093687].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687][CR1093687].  
 
 ## Improved CSS Grid tooling  
 
@@ -132,15 +99,17 @@ To review real-time updates on this feature in the Chromium open-source project,
 In Microsoft Edge version 87, the new **CSS grid debugging** features are now available.  The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your [CSS grids][DevtoolsCssGrid].  
 
 *   Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
-*   To enable persistent grid overlays, choose the grid icon next to a grid container element in the **Elements** pane or choose the grid in the **Layout** pane.  
+*   To enable persistent grid overlays, choose the grid icon next to a grid container element in the **Elements** tool or choose the grid in the **Layout** tool.  
 *   You may enable persistent overlays for multiple grids.  
-*   The new **Layout** pane allows you to easily toggle grid overlays and configure the appearance and the content for each.  
+*   The new **Layout** tool allows you to easily toggle grid overlays and configure the appearance and the content for each.  
     
-    :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout pane with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
-       **Layout** pane with grids  
+    :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout tool with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+       **Layout** tool with grids  
     :::image-end:::  
     
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1047356][CR1047356].  
+To review the history of this feature in the Chromium open-source project, navigate to Issue [#1047356][CR1047356].  
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136394][CR1136394].  
 
 ## Customize keyboard shortcuts in Settings  
 
@@ -156,7 +125,7 @@ You are now able to customize the keyboard shortcut for any action in the DevToo
 
 To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309][CR174309].  
 
 ## Introducing the Microsoft Edge Tools for Visual Studio Code extension  
 
@@ -203,35 +172,35 @@ In earlier versions of Microsoft Edge, there was no native WebAuthn debugging su
     
 For more information about the **WebAuthn** feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools][DevtoolsWebauthnIndex].  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1034663][CR1034663].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1034663][CR1034663].  
 
 ### Elements tool updates  
 
-#### View the Computed sidebar pane in the Styles pane  
+#### View the Computed sidebar panel in the Styles tool  
 
-Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To toggle it, choose the button.  
+Toggle the **Computed** panel in the **Styles** tool.  The **Computed** panel in the **Styles** tool is collapsed by default.  To toggle it, choose the button.  
 
-:::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
-   **Computed sidebar** pane  
+:::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Computed sidebar panel" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+   **Computed sidebar** panel  
 :::image-end:::  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1073899][CR1073899].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1073899][CR1073899].  
 
-#### Grouping CSS properties in the Computed pane  
+#### Grouping CSS properties in the Computed panel  
 
-To more easily view your applied CSS \(less scrolling\), group the CSS properties by categories in the **Computed** pane.  You may also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, choose an element.  To group \(or ungroup\) the CSS properties, toggle the **Group** checkbox.  
+To more easily view your applied CSS \(less scrolling\), group the CSS properties by categories in the **Computed** panel.  You may also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, choose an element.  To group \(or ungroup\) the CSS properties, toggle the **Group** checkbox.  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Grouping CSS properties" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Grouping CSS properties  
 :::image-end:::  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1096230][CR1096230], [Issue #1084673][CR1084673], and [Issue #1106251][CR1106251].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [#1096230][CR1096230], [#1084673][CR1084673], and [#1106251][CR1106251].  
 
-### Lighthouse 6.4 in the Lighthouse pane  
+### Lighthouse 6.4 in the Lighthouse tool  
 
-The **Lighthouse** pane is now running Lighthouse 6.4.  For a full list of changes, navigate to the [Lighthouse release notes][GithubGoogleChromeLighthouseReleasesV641].  
+The **Lighthouse** tool is now running Lighthouse 6.4.  For a full list of changes, navigate to the [Lighthouse release notes][GithubGoogleChromeLighthouseReleasesV641].  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #772558][CR772558].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#772558][CR772558].  
 
 ### performance.mark() events in the Timings section  
 
@@ -253,7 +222,7 @@ For example, use `resource-type:image` to focus on the network requests that are
 
 To discover more special keywords such as `resource-type` and `url`, navigate to [filter requests by properties][DevtoolsNetworkReferenceFilterRequestsProperties].  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1121141][CR1121141] and [Issue #1104188][CR1104188].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [#1121141][CR1121141] and [#1104188][CR1104188].  
 
 ### Frame details view updates  
 
@@ -270,7 +239,7 @@ The **Reporting API** defines a new HTTP header, `Report-To`, that gives you a w
    reporting to endpoint  
 :::image-end:::  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1051466][CR1051466].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1051466][CR1051466].  
 
 #### Display COEP and COOP report-only mode  
 
@@ -281,7 +250,7 @@ DevTools now display `report-only` label for COEP and COOP that are set to `repo
    report-only label  
 :::image-end:::  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1051466][CR1051466].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1051466][CR1051466].  
 
 ### View and fix color contrast issues in the CSS Overview tool  
 
@@ -302,7 +271,7 @@ To view a list of elements that have a color contrast issue, under **Contrast is
 > [!NOTE]
 > To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  
 
-To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #1120316][CR1120316].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1120316][CR1120316].  
 
 ## Download the Microsoft Edge preview channels  
 
@@ -361,6 +330,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR1120316]: https://crbug.com/1120316 "Highlight bad contrast under CSS Overview > Colors | Chromium Bugs"  
 [CR1121141]: https://crbug.com/1121141 "Allow filtering by resource type in network log | Chromium bugs"  
 [CR1121312]: https://crbug.com/1121312 "Settings should be removed from More Tools menu | Chromium bugs"  
+[CR1136394]: https://crbug.com/1136394 "Flexbox tooling | Chromium Bugs"  
 [CR1136655]: https://crbug.com/1136655 "Devtools: Localization V2 | Chromium bugs"  
 
 [MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "Reporting API | MDN"  
