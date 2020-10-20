@@ -134,16 +134,15 @@ The **Elements for Visual Studio Code** and **Network for Visual Studio Code** e
 
 With the extension, launch Microsoft Edge, connect to an existing instance of the browser, or use a headless browser directly from your editor.  
 
-<!--reproduce both image in visual studio code -->  
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-06.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in full browser mode screenshot  
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+         Using the extension in full browser mode screenshot  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png" alt-text="Windows Blog for Elements for Microsoft Edge Visual Studio Code extension - Using the extension in headless mode screenshot" lightbox="../../media/2020/10/blogs-microsoft-edge-tools-07.msft.png":::
-         Windows Blog for **Elements for Microsoft Edge Visual Studio Code** extension - Using the extension in headless mode screenshot  
+      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Using the extension in headless mode screenshot" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
+         Using the extension in headless mode screenshot  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
