@@ -3,7 +3,7 @@ description: Use Allocation instrumentation on timeline to find objects that are
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -67,7 +67,7 @@ The height of each bar corresponds to the size of the recently allocated objects
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
 <!--todo: redo figure 4 with multiple click actions  -->  
 
-You are able to use the sliders in the timeline above to zoom into that particular snapshot and see the objects that were recently allocated at that point:  
+You are able to use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:  
 
 :::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoom into snapshot" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
    Zoom into snapshot  
@@ -77,7 +77,7 @@ Clicking on a specific object in the heap shows the retaining tree in the bottom
 
 ## View memory allocation by function  
 
-You are able to view memory allocation by JavaScript function.  For more information, see [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
+You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

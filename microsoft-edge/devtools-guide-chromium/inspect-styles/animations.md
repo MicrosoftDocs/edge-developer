@@ -3,7 +3,7 @@ description: Inspect and modify animations with the Microsoft Edge DevTools  Ani
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -56,7 +56,7 @@ There are two ways to open the Animation Inspector:
 
 *   Open the **Customize and Control DevTools** menu  
     1.  Navigate to the **More tools** sub-menu.  
-    1.  Select **Animations**:  
+    1.  Choose **Animations**:  
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations using Main Menu" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animations** using Main Menu  

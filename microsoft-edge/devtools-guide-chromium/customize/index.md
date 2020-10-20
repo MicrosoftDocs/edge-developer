@@ -3,7 +3,7 @@ description: A list of ways to customize Microsoft Edge DevTools
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,46 +22,42 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Customize Microsoft Edge DevTools   
+# Customize Microsoft Edge DevTools  
 
   
 
 This page lists the ways to customize Microsoft Edge DevTools.  
 
-## Settings   
+## Settings  
 
 **Settings** > **Preferences** contains many options for customizing DevTools.  
 
 To open Settings, do one of the following:  
 
-*   Press `F1` while DevTools is in focus.  
-*   Open the **Main Menu** and then select **Settings**.  
+*   Select `F1` while DevTools is in focus.  
+*   Open the **Main Menu** and then choose **Settings**.  
     
     :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
        **Settings**  
     :::image-end:::  
     
-## Drawer   
+## Drawer  
 
 The **Drawer** contains many hidden features.  
 
-Press `Escape` to open or close the **Drawer**.  
+Select `Escape` to open or close the **Drawer**.  
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
    The **Drawer**  
 :::image-end:::  
 
-Click **More** \(![More][ImageMoreIcon]\) to open other **Drawer** tabs.  
+Choose **More** \(![More][ImageMoreIcon]\) to open other **Drawer** tabs.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open Drawer tabs" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    The button to open **Drawer** tabs  
 :::image-end:::  
 
-## Reorder panels   
+## Reorder panels  
 
 Click and drag a panel tab to change its ordering.  Your custom tab order persists across DevTools sessions.  
 
@@ -72,7 +68,7 @@ Click and drag a panel tab to change its ordering.  Your custom tab order persis
    A DevTools window with a custom panel tab ordering  
 :::image-end:::  
 
-## Change DevTools placement   
+## Change DevTools placement  
 
 See [Microsoft Edge DevTools Placement][DevToolsPlacement].  
 
@@ -80,7 +76,7 @@ See [Microsoft Edge DevTools Placement][DevToolsPlacement].
    Undocked DevTools  
 :::image-end:::  
 
-## Dark theme   
+## Dark theme  
 
 See [Enable Dark Theme][DarkTheme].  
 
@@ -88,21 +84,19 @@ See [Enable Dark Theme][DarkTheme].
    The dark theme  
 :::image-end:::  
 
-## Experiments   
+## Experiments  
 
 To enable DevTools experiments, complete the following actions.  
 
-1.  Go to `edge://flags/#enable-devtools-experiments`.  
-1.  Click **Enable**.  
-1.  Click **Relaunch Now**, at the bottom of the page.  
+1.  Navigate to `edge://flags/#enable-devtools-experiments`.  
+1.  Choose **Enable**.  
+1.  Choose **Relaunch Now**, at the bottom of the page.  
 
-The next time you open DevTools, a new page is displayed called **Experiments** in [Settings](#settings).  
+The next time you open DevTools, a new page named **Experiments** is displayed in [Settings](#settings).  
 
-<!--  
-   
+## Getting in touch with the Microsoft Edge DevTools team  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

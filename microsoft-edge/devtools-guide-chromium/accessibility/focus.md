@@ -3,7 +3,7 @@ description: Open the Console, create a Live Expression, and set the expression 
 title: Track Which Element Has Focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,7 +29,7 @@ Suppose that you are testing the keyboard navigation accessibility of a page.  W
 Complete the following actions to track the focused element in DevTools.  
 
 1.  Open the **Console**.  
-1.  Click **Create Live Expression** \(![Create Live Expression][ImageCreateIcon]\).  
+1.  Choose **Create Live Expression** \(![Create Live Expression][ImageCreateIcon]\).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Create a Live Expression  
@@ -43,8 +43,8 @@ The value that you see below `document.activeElement` is the result of the expre
 Since that expression always represents the focused element, you now have a way to always keep track of which element has focus.  
 
 *   Hover over the result to highlight the focused element in the viewport.  
-*   Right-click the result and select **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
-*   Right-click the result and select **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
+*   Right-click the result and choose **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
+*   Right-click the result and choose **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

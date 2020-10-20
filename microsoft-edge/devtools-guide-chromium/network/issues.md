@@ -3,7 +3,7 @@ description: Learn how to detect network issues in the Network panel of Microsof
 title: Network Issues Guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,20 +22,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Network issues guide   
-
-
-
+# Network issues guide  
 
 This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.  
 
 See [Get Started][NetworkPerformance] to learn the basics of the **Network** panel.  
 
-## Queued or stalled requests   
+## Queued or stalled requests  
 
 **Symptoms**  
 
@@ -57,7 +50,7 @@ Too many requests are being made on a single domain.  On HTTP/1.0 or HTTP/1.1 co
 *   Use HTTP/2.  Do not use domain sharding with HTTP/2.  
 *   Remove or defer unnecessary requests so that critical requests download earlier.  
     
-## Slow Time To First Byte (TTFB)   
+## Slow Time To First Byte (TTFB)  
 
 **Symptoms**  
 
@@ -79,7 +72,7 @@ In the following figure, the long, green bar in the **Waterfall** indicates that
 *   If the connection is slow, consider hosting your content on a CDN or changing hosting providers.  
 *   If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.  
     
-## Slow content download   
+## Slow content download  
 
 **Symptoms**  
 
@@ -101,19 +94,17 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 *   Consider hosting your content on a CDN or changing hosting providers.  
 *   Send fewer bytes by optimizing your requests.  
     
-## Contribute knowledge  
+<!--   ## Contribute knowledge  
 
 Do you have a network issue that should be added to this guide?  
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Select **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
-*   [Open an issue][WebFundamentalsIssue] on the docs repo.  
+*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
-<!--  
-  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

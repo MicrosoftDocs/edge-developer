@@ -3,7 +3,7 @@ description: Your job does not end with ensuring your site runs great across Mic
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,14 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Emulate and test other browsers   
-
-
-
+# Emulate and test other browsers  
 
 Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.  
 
@@ -113,7 +106,7 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].  
 
 > [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and select **Keep in Dock**.  Now just click this icon whenever you need it.  
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and choose **Keep in Dock**.  Now just click this icon whenever you need it.  
 
 ###  Microsoft Edge (EdgeHTML)  
 
@@ -131,11 +124,9 @@ If you are not able to use the emulators and do not have access to real devices,
 *   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
 *   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.  
 
-<!--  
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

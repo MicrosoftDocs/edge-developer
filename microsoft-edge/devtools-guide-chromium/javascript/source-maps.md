@@ -3,7 +3,7 @@ description: Keep your client-side code readable and debuggable even after you c
 title: Map Preprocessed Code to Source Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -44,7 +44,7 @@ This article explains how to interact with JavaScript Source Maps in the DevTool
 
 ## Use a supported preprocessor  
 
-You need to use a minifier that is capable of creating source maps.  <!--For the most popular options, see the preprocessor support section.  -->  For an extended view, see the [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.  
+You need to use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.  
 
 <!--todo: add link to see the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
@@ -63,7 +63,7 @@ When running Source Maps in DevTools, you should notice that the JavaScript is n
 
 ### Enable Source Maps in settings  
 
-Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, click the **Customize and control DevTools** \(`...`\) button, and select **Settings**.  On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.  You may also check **Enable CSS Source Maps**.  
+Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, click the **Customize and control DevTools** \(`...`\) button, and choose **Settings**.  On the **Preferences** pane, under **Sources**, check **Enable JavaScript Source Maps**.  You may also check **Enable CSS Source Maps**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enable Source Maps" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **Enable JavaScript Source Maps**  

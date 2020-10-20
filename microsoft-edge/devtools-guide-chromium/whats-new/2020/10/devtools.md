@@ -3,7 +3,7 @@ description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Co
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -102,6 +102,8 @@ In Microsoft Edge version 87, the new **CSS grid debugging** features are now av
        **Layout** tool with grids  
     :::image-end:::  
     
+The [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures] is turned on by default.  If you encounter performance issues due to this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings], under the  **Experiments** section, turn off this experiment.  
+
 To review the history of this feature in the Chromium open-source project, navigate to Issue [#1047356][CR1047356].  
 
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136394][CR1136394].  
@@ -219,8 +221,17 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 The **Timings section** of a recording in the [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] tool now marks `performance.mark()` events.  
 
-<!--todo Zoher clarification -->  
-To use this feature, you must add `performance.mark()` to your project.  
+To try this feature and measure your JavaScript code, add `performance.mark()` events to your JavaScript code.  Copy and paste the following code snippet to add markers before and after a `for` loop that iterate from 0 to 1000 using increments of 7.  
+
+```javascript
+performance.mark('start');
+for (var i = 0; i < 1000; i+=7;){
+  console.log(i);
+}
+performance.mark('end');
+```  
+
+Then, open the **Performance** tool and navigate to the **Timings section** to record of your JavaScript code.  The `performance.mark()` events you added are now displayed in the recording.
 
 :::image type="complex" source="../../media/2020/10/perf-mark.msft.png" alt-text="Performance.mark events" lightbox="../../media/2020/10/perf-mark.msft.png":::
    `performance.mark` events  
@@ -316,6 +327,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCssGrid]:  /microsoft-edge/devtools-guide-chromium/css/grid "Inspect CSS Grid | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"  
 [DevtoolsMediaIndex]: /microsoft-edge/devtools-guide-chromium/media/index "View and debug media players information | Microsoft Docs"  
 [DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties  "Filter requests by properties - Network Analysis reference | Microsoft Docs"  
