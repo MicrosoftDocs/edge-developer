@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,17 +28,17 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 ## Open CSS Examples  
 
-1.  Hold `Control` \(Windows\) or `Command` \(macOS\) and select **CSS Examples** to open in a new window.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **CSS Examples** to open in a new window.  
     
     [CSS Examples][GlitchDevToolsCssExamples]  
     
     > [!NOTE]
-    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in the following figure\), select **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.  
+    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in the following figure\), choose **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.  
     
 ## View the CSS for an element  
 
 1.  [Open CSS Examples](#open-css-examples).  
-1.  Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and select **Inspect**.  
+1.  Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
     1.  In DevTools, on the **Elements** panel, in the **DOM Tree** tab, the `Inspect Me!` element is highlighted.  
         
         :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="The inspected element is highlighted in the DOM Tree" lightbox="../media/css-elements-inspect-me.msft.png":::
@@ -47,7 +47,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
         
     1.  In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.  
 1.  On the page, in the **Value of `data-message`:** textbox, enter the value.  
-1.  Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and select **Inspect**.  
+1.  Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
     1.  In DevTools, on the **Elements** panel, select the **Styles** tab.  
     1.  In the **Styles** tab, the `Inspect Me!` element is highlighted.  
     1.  In the `Inspect Me!` element, find the `aloha` class rule.  
@@ -71,10 +71,10 @@ Use the **Styles** tab when you want to change or add CSS declarations to an ele
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
 1.  [Open CSS Examples](#open-css-examples).  
-1.  Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and select **Inspect**.  
+1.  Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
 1.  Select `element.style` near the top of the **Styles** tab.  
-1.  Type `background-color` and press `Enter`.  
-1.  Type `honeydew` and press `Enter`.  In the **DOM Tree** you should see that an inline style declaration was applied to the element.  
+1.  Type `background-color` and select `Enter`.  
+1.  Type `honeydew` and select `Enter`.  In the **DOM Tree** you should see that an inline style declaration was applied to the element.  
     
     :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Adding a CSS declaration to the element using the Styles tab" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        Figure 3:  The `background-color:honeydew` declaration has been applied to the element using the `element.style` section of the **Styles** tab  
@@ -88,9 +88,9 @@ Use the **Styles** tab to see how an element looks when a CSS class is applied t
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
 1.  [Open CSS Examples](#open-css-examples).  
-1.  Hover on the `Add A Class To Me!` text, open the contextual menu \(right-click\), and select **Inspect**.  
-1.  Select **.cls**.  DevTools reveals a text box where you may add classes to the selected element.  
-1.  Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.  
+1.  Hover on the `Add A Class To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
+1.  Choose **.cls**.  DevTools reveals a text box where you may add classes to the selected element.  
+1.  Type `color_me` in the **Add new class** text box and then select `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.  
     
     :::image type="complex" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Applying the color_me class to the element" lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
        Figure 4:  The `color_me` class has been applied to the element using the **.cls** section of the **Styles** tab  
@@ -105,8 +105,8 @@ Use the **Styles** tab to permanently apply a CSS pseudostate to an element.  De
 
 1.  [Open CSS Examples](#open-css-examples).  
 1.  Hover over the `Hover Over Me!` text.  The background color changes.  
-1.  Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and select **Inspect**.  
-1.  In the **Styles** tab, select **:hov**.  
+1.  Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
+1.  In the **Styles** tab, choose **:hov**.  
 1.  Check the **:hover** checkbox.  The background color changes like before, even though you are not actually hovering over the element.  
     
     :::image type="complex" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Toggling the hover pseudostate on an element" lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
@@ -121,14 +121,14 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
 1.  [Open CSS Examples](#open-css-examples).  
-1.  Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and select **Inspect**.  
+1.  Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
 1.  In the **Box Model** diagram in the **Styles** tab, hover over **padding**.  The padding of an element is highlighted in the viewport.  
 
     > [!NOTE]
     > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to see the **Box Model**.  
 
 1.  Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a left-margin.  
-1.  Type `100px` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.  
+1.  Type `100px` and select `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.  
     
     :::row:::
        :::column span="":::
@@ -149,13 +149,13 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 
 If you want to debug or test the Media Queries you defined in your CSS, use the following steps.  
 
-1.  Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or press `Ctrl`+`Shift`+`M` \(`Cmd`+`Shift`+`M` on macOS\).  
+1.  Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or select `Ctrl`+`Shift`+`M` \(`Cmd`+`Shift`+`M` on macOS\).  
     
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Opening the device toolbar" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        Figure 8:  Opening the device toolbar  
     :::image-end:::  
     
-1.  With the device toolbar open, select the `...` menu on the top-right and select **View Media Queries**.  You should see colored bars above the display of the page that represent the different media queries.  
+1.  With the device toolbar open, select the `...` menu on the top-right and choose **View Media Queries**.  You should see colored bars above the display of the page that represent the different media queries.  
     
     :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Showing Media Queries in Device Toolbar" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
        Figure 9:  Showing Media Queries in Device Toolbar  
@@ -173,6 +173,10 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
        Figure 11:  Revealing Media Queries in Sources Editor  
     :::image-end:::  
     
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 <!-- links -->  
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  

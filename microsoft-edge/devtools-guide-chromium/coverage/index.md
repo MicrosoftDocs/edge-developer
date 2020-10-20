@@ -3,7 +3,7 @@ description: How to find and analyze unused JavaScript and CSS code in Microsoft
 title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools   
-
-
+# Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools  
 
 The Coverage tab in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.  
 
@@ -39,7 +33,7 @@ The Coverage tab in Microsoft Edge DevTools helps you find unused JavaScript and
 > [!WARNING]
 > Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.  
 
-## Overview   
+## Overview  
 
 Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use [Bootstrap button component][BootstrapButtons] on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:  
 
@@ -60,23 +54,23 @@ This stylesheet does not just include the code for the button component.  It con
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Open the Coverage tab   
+## Open the Coverage tab  
 
 1.  [Open the Command Menu][DevToolsCommandMenu].  
-1.  Start typing `coverage`, select the **Show Coverage** command, and then press `Enter` to run the command.  The **Coverage** tab opens in the **Drawer**.  
+1.  Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.  The **Coverage** tab opens in the **Drawer**.  
 
     :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tab" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        The **Coverage** tab  
     :::image-end:::  
     
-## Record code coverage   
+## Record code coverage  
 
 1.  Click one of the following buttons in the **Coverage** tab:  
-    *   Click **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to see what code is needed to load the page.  
-    *   Click **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to see what code is used after interacting with the page.  
-1.  Click **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
+    *   Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to see what code is needed to load the page.  
+    *   Choose **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to see what code is used after interacting with the page.  
+1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
     
-## Analyze code coverage   
+## Analyze code coverage  
 
 The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource.  Click a row to open that resource in the **Sources** panel and see a line-by-line breakdown of used code and unused code.  
 
@@ -90,11 +84,9 @@ The table in the **Coverage** tab shows you what resources were analyzed, and ho
 *   The **Unused Bytes** column is the number of bytes that were not used.  
 *   The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes.  
     
-<!--  
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

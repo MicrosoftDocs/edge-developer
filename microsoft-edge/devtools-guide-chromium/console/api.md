@@ -3,7 +3,7 @@ description: Use the Console API to write messages to the Console.
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Console API Reference  
 
-Use the Console API methods to write messages to the Console from your JavaScript.  For an interactive introduction to the topic, see [Get Started With Logging Messages To The Console][DevtoolsConsoleLog].  For the convenience methods like `debug()` or `monitorEvents()` which are only available from the **Console** pane, see [Console Utilities API Reference][DevtoolConsoleUtilities].  
+Use the Console API methods to write messages to the Console from your JavaScript.  For an interactive introduction to the topic, navigate to [Get Started With Logging Messages To The Console][DevtoolsConsoleLog].  For the convenience methods like `debug()` or `monitorEvents()` which are only available from the **Console** pane, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].  
 
 ---  
 
@@ -384,6 +384,10 @@ console.warn('warn');
 :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
    Figure 13:  The result of the `console.warn()` example  
 :::image-end:::  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

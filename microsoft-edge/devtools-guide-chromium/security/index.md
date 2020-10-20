@@ -3,7 +3,7 @@ description: Use the Security Panel to make sure that a page is fully protected 
 title: Understand Security Issues With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,11 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Understand security issues with Microsoft Edge DevTools   
+# Understand security issues with Microsoft Edge DevTools  
 
   
 
@@ -34,20 +30,20 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!--todo: add section when why-https is available -->  
 
-## Open the Security panel   
+## Open the Security panel  
 
 The **Security** panel is the main place in DevTools for inspecting the security of a page.  
 
 1.  [Open DevTools][DevToolsOpen].  
-1.  Click the **Security** tab to open the **Security** panel.  
+1.  Choose the **Security** tab to open the **Security** panel.  
     
     :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel" lightbox="../media/security-security-overview-secure.msft.png":::
        The **Security** panel  
     :::image-end:::  
     
-## Common problems   
+## Common problems  
 
-### Non-secure main origins   
+### Non-secure main origins  
 
 When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.  
 
@@ -64,7 +60,7 @@ If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provid
 > [!TIP]
 > The [Use HTTPS][WebhintUseHttps] hint in [webhint][Webhint] may help automate the process of making sure that all HTTP requests are directed to HTTPS.  
 
-### Mixed content   
+### Mixed content  
 
 **Mixed content** means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.  
 
@@ -72,23 +68,23 @@ If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provid
    Mixed content  
 :::image-end:::  
 
-In the previous figure, click **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
+In the previous figure, choose **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log" lightbox="../media/security-network-filter.msft.png":::
    Mixed resources in the **Network Log**  
 :::image-end:::  
 
-## View details   
+## View details  
 
-### View main origin certificate   
+### View main origin certificate  
 
-From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.  
+From the **Security Overview**, choose **View certificate** to quickly inspect the certificate for the main origin.  
 
 :::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="A main origin certificate" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    A main origin certificate  
 :::image-end:::  
 
-### View origin details   
+### View origin details  
 
 Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you are able to view connection and certificate information.  Certificate transparency information is also shown when available.  
 
@@ -96,18 +92,14 @@ Click one of the entries in the left-hand nav to view the details of the origin.
    Main origin details  
 :::image-end:::  
 
-<!--  
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-
-
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  
 
 [Webhint]: https://webhint.io "webhint"  

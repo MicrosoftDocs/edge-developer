@@ -3,7 +3,7 @@ description: How to debug Background Fetch, Background Sync, Notifications, and 
 title: Debug Background Services With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,13 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Debug Background Services With Microsoft Edge DevTools   
-
-
+# Debug Background Services With Microsoft Edge DevTools  
 
 The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the JavaScript APIs that enables your website to send and receive updates even when a user does not have your website open.  
 A background service is functionally similar to a [background process][WikiBackgroundProcess].  
@@ -41,13 +35,13 @@ Microsoft Edge DevTools considers each of the following APIs to be a background 
 Microsoft Edge DevTools can log background service events for 3 days, even when DevTools is not open.  
 This can help you make sure that events are being sent and received as expected.  You may also inspect the details of each event.  
 
-:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="View the details of an event in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
-   View the details of an event in the **Push Messaging** pane  
+:::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="The Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   The **Push Messaging** pane  
 :::image-end:::  
 
-## Background Fetch   
+## Background Fetch  
 
-The *Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
+The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools is not open:  
 
 <!--Todo: add background fetch api section when available -->  
 
@@ -59,7 +53,7 @@ The *Background Fetch API** enables a **service worker** to reliably download la
        The **Background Fetch** pane  
     :::image-end:::  
     
-1.  Click **Record** \(![Record][ImageRecordIcon]\).  
+1.  Choose **Record** \(![Record][ImageRecordIcon]\).  
    After triggering some Background Fetch activity, DevTools logs the events to the table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="A log of events in the Background Fetch pane" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -72,7 +66,7 @@ The *Background Fetch API** enables a **service worker** to reliably download la
        View the details of an event in the **Background Fetch** pane  
     :::image-end:::  
     
-## Background Sync   
+## Background Sync  
 
 The **Background Sync API** enables an offline **service worker** to send data to a server once it has re-established a reliable internet connection.  To log Background Sync events for 3 days, even when DevTools is not open:  
 
@@ -86,7 +80,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
        The **Background Sync** pane  
     :::image-end:::  
     
-1.  Click **Record** \(![Record][ImageRecordIcon]\).  
+1.  Choose **Record** \(![Record][ImageRecordIcon]\).  
    After triggering some Background Sync activity, DevTools logs the events to the table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="A log of events in the Background Sync pane" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -99,7 +93,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
        View the details of an event in the **Background Sync** pane  
     :::image-end:::  
     
-## Notifications 
+## Notifications  
 
 After a **service worker** has received a [Push Message][MDNPush] from a server, the service worker uses the [Notifications API][MDNNotifications] to display the data to a user.  To log Notifications for 3 days, even when DevTools is not open:  
 
@@ -111,7 +105,7 @@ After a **service worker** has received a [Push Message][MDNPush] from a server,
        The **Notifications** pane  
     :::image-end:::  
     
-1.  Click **Record** \(![Record][ImageRecordIcon]\).  
+1.  Choose **Record** \(![Record][ImageRecordIcon]\).  
    After triggering some Notifications activity, DevTools logs the events to the table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="A log of events in the Notifications pane" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -124,7 +118,7 @@ After a **service worker** has received a [Push Message][MDNPush] from a server,
        View the details of an event in the **Notifications** pane  
     :::image-end:::  
     
-## Push Messages 
+## Push Messages  
 
 To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].  To log Push Messages for 3 days, even when DevTools is not open:  
 
@@ -132,28 +126,26 @@ To display a push notification to a user, a **service worker** must first use th
 1.  Open the **Application** panel.  
 1.  Open the **Push Messaging** pane.  
     
-    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="The Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
-       The **Push Messaging** pane  
+    :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Open the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+       Open the **Push Messaging** pane  
     :::image-end:::  
     
-1.  Click **Record** \(![Record][ImageRecordIcon]\).  
+1.  Choose **Record** \(![Record][ImageRecordIcon]\).  
     After triggering some Push Message activity, DevTools logs the events to the table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="A log of events in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
        A log of events in the **Push Messaging** pane  
     :::image-end:::  
     
-1.  Click an event to view its details in the space below the table.  
+1.  Click an event to view the details in the space below the table.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="View the details of an event in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
        View the details of an event in the **Push Messaging** pane  
     :::image-end:::  
     
-<!--  
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

@@ -3,7 +3,7 @@ description: Get Started with CSS
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -29,7 +29,7 @@ In this tutorial, you learn how to use CSS to style a web page.  You also learn 
 The following article is the second tutorial in a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You do not have to complete the first tutorial before following the second.  [Set up your code](#set-up-your-code) shows you how to get set up.  
 
 > [!NOTE]
-> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, see [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
+> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
 
 At the beginning of the tutorial, your site should look like the following figure.  
 
@@ -84,7 +84,7 @@ To create your site, you must first complete the following actions to set up you
     > [!NOTE]
     > Glitch generates a random name for the new project.  
     
-1.  Choose **Show** and select **In a New Window**.  Another tab opens with a live view of your site.  The in-focus tab of your browser is referenced as the **live tab**.  
+1.  Choose **Show** and choose **In a New Window**.  Another tab opens with a live view of your site.  The in-focus tab of your browser is referenced as the **live tab**.  
     
     :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="The live tab" lightbox="../media/beginners-css-setup3.msft.png":::
        The **live tab**  
@@ -268,7 +268,7 @@ As you continue your journey to become an expert in web development, you may fin
 
 Complete the following actions to iterate on the style of an existing element, add a declaration to an existing ruleset.  
 
-1.  Hover on the **Home** link, open the contextual menu \(right-click\), and select **Inspect**.  
+1.  Hover on the **Home** link, open the contextual menu \(right-click\), and choose **Inspect**.  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link" lightbox="../media/beginners-css-add1.msft.png":::
        Inspect the Home link  
@@ -593,8 +593,12 @@ Complete the following actions to bootstrap and provide classes for aligning ele
 Congratulations, you are done.  
 
 *   The best way to get better at web development is to build more sites.  Do not worry about breaking stuff.  Just have fun and learn as much as possible along the way.  
-*   To learn more about styling web pages, see [Introduction to CSS][MDNCssFirstSteps].  
-*   To learn more about how to use DevTools to experiment with the CSS of a page, see [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
+*   To learn more about styling web pages, navigate to [Introduction to CSS][MDNCssFirstSteps].  
+*   To learn more about how to use DevTools to experiment with the CSS of a page, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!--- image links --->  
 

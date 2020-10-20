@@ -22,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Debug Progressive Web Apps   
-
-
+# Debug Progressive Web Apps  
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
 
@@ -49,7 +43,7 @@ This guide only discusses the Progressive Web App features of the **Application*
 *   View your service worker cache from the **Cache Storage** pane.  
 *   Unregister a service worker and clear all storage and caches with a single button click from the **Clear storage** pane.  
     
-## Web app manifest   
+## Web app manifest  
 
 If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.  
 
@@ -71,7 +65,7 @@ After you have your manifest set up, you can use the **Manifest** pane of the **
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.  
 *   The **Icons** section displays every icon that you've specified.  
     
-<!--### Simulate Add to Homescreen events   -->
+<!--### Simulate Add to Homescreen events  -->
 
 <!--A web app can only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, this criteria can be inconvenient.  
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -96,7 +90,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
-## Service workers   
+## Service workers  
 
 Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a web page or user interaction, like push notifications, background sync, and offline experiences.  
 
@@ -137,7 +131,7 @@ up.
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
-## Service worker caches 
+## Service worker caches  
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][MDNWebCacheAPI].  
 
@@ -154,7 +148,7 @@ If you have two or more caches open, you'll see them listed below the **Cache St
    The **Cache Storage** dropdown  
 :::image-end:::  
 
-## Quota usage 
+## Quota usage  
 
 Some responses within the **Cache Storage** pane may be flagged as being "opaque".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][FetchHttpCorsProtocol] is not enabled.  
 
@@ -174,7 +168,7 @@ Related Guides:
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
-## Clear storage 
+## Clear storage  
 
 The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button click.  <!--Check out the section below to learn more.  -->
 
@@ -184,7 +178,7 @@ The **Clear Storage** pane is a very useful feature when developing progressive 
     
 <!--TODO:  Link to sections when available. -->
 
-<!--## Other Application panel guides 
+<!--## Other Application panel guides   
 
 Check out the guides below for more help on the other panes of the **Application** panel.  
 
@@ -193,13 +187,9 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
-<!--TODO  -->
+## Getting in touch with the Microsoft Edge DevTools team  
 
-<!--  
- 
-
-
--->  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

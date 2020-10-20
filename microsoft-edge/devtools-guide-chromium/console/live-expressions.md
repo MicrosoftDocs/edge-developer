@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript Expression Values In Real-Time With Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,32 +22,24 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Watch JavaScript Expression Values In Real-Time With Live Expressions   
-
-  
+# Watch JavaScript Expression Values In Real-Time With Live Expressions  
 
 If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
 
-## Create a Live Expression   
+## Create a Live Expression  
 
 1.  [Open the Console][DevToolsConsoleReferenceOpenConsole].  
-1.  Click **Create Live Expression** \(![Create Live Expression][ImageCreateLiveExpressionIcon]\).  The **Live Expression** text box appears.  
+1.  Choose **Create Live Expression** \(![Create Live Expression][ImageCreateLiveExpressionIcon]\).  The **Live Expression** text box appears.  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Typing document.activeElement into the Live Expression text box" lightbox="../media/console-create-live-expression.msft.png":::
        Typing `document.activeElement` into the **Live Expression** text box  
     :::image-end:::  
     
-1.  Type `Control`+`Enter` \(Windows\) or `Command`+`Enter` \(macOS\) to save the expression, or click outside of the **Live Expression** text box.  
+1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save the expression, or choose outside of the **Live Expression** textbox.  
 
-<!--todo: add reference open console (open the console) section when available  -->  
+## Getting in touch with the Microsoft Edge DevTools team  
 
- 
-
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

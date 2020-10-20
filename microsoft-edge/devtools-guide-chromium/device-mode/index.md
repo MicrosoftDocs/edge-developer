@@ -3,7 +3,7 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/04/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -148,7 +148,7 @@ If the mobile device option that you need is not included on the default list, y
 1.  Choose the **Device** list > **Edit**.  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Select Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
-       Select **Edit**  
+       Choose **Edit**  
     :::image-end:::  
     
 1.  Choose **Add custom device**.  
@@ -228,7 +228,7 @@ To throttle the network only, complete the following steps.
        The **Throttle** list in the Network panel  
     :::image-end:::  
     
-    Or select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
+    Or select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**, type `3G`, and choose **Enable fast 3G throttling** or **Enable slow 3G throttling**.  
     
     :::image type="complex" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-command-menu-throttle.msft.png":::
        The **Command Menu**  
@@ -256,7 +256,7 @@ You may also set network throttling from the **Performance** panel.
    :::column-end:::
    :::column span="":::
       1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
       1. Type `Sensors`, and choose **Show Sensors**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for geolocation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -285,7 +285,7 @@ On the **Sensors** panel, you may select one of the preset locations included in
    :::column-end:::
    :::column span="":::
       1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
       1. Type `Sensors`, and choose **Show Sensors**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
@@ -314,7 +314,7 @@ On the **Sensors** panel, you may select a preset orientation from the **Orienta
    :::column-end:::
    :::column span="":::
       1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\).  
+          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
       1. Type `Network conditions`, and choose **Show Network conditions**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
@@ -323,7 +323,7 @@ On the **Sensors** panel, you may select a preset orientation from the **Orienta
    :::column-end:::
 :::row-end:::  
 
-Next to **User agent**, clear the **Select automatically** checkbox.  Then, select **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
+Next to **User agent**, clear the **Select automatically** checkbox.  Then, choose **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Set the user agent string to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Set the user agent string to Microsoft Edge on macOS  
